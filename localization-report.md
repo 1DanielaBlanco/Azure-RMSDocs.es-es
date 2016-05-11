@@ -5,11 +5,11 @@
  -------- | ----- 
  Total Files | 434
 [ Handoff Failed Files ](#handoff-failed-list)| 2
-[ Handoff Success Files ](#handoff-success-list)| 136
+[ Handoff Success Files ](#handoff-success-list)| 132
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 35
 [ Handback Failed Files ](#handback-failed-list)| 0
-[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 171
+[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 175
 [ In Sync Handback Files ](#insync-handback-success-list)| 25
 [ Ignored Files ](#ignored-list)| 65
 
@@ -152,10 +152,6 @@
  [Azure-RMSDocs\media\wpsetup-addref.png](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/998316566fb9dc8269a543e6dd322cfd8eef45ef/Azure-RMSDocs/media/wpsetup-addref.png) | HandedOffSuccess | [Details](#d5abf6672cbcfc8349a2ce6467ffdc57a4b3cb45336)
  [Azure-RMSDocs\media\wpsetup-newproj.png](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/998316566fb9dc8269a543e6dd322cfd8eef45ef/Azure-RMSDocs/media/wpsetup-newproj.png) | HandedOffSuccess | [Details](#6e00024ec5eefc8da90b458bb6ea62aacf08e7bc337)
  [Azure-RMSDocs\media\wpsetup-refmngr.png](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/998316566fb9dc8269a543e6dd322cfd8eef45ef/Azure-RMSDocs/media/wpsetup-refmngr.png) | HandedOffSuccess | [Details](#530aed5439b0c6bce77de3010dfd9c63a1435002338)
- [Azure-RMSDocs\rms-client\sharing-app-protect-by-email.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c611fa8a846612fed238e59e5077be67f6f9531a/Azure-RMSDocs/rms-client/sharing-app-protect-by-email.md) | HandedOffSuccess | [Details](#ea7f186e01606ca5e487bdfaab87d1eb0f2f41d3370)
- [Azure-RMSDocs\rms-client\sharing-app-protect-in-place.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c611fa8a846612fed238e59e5077be67f6f9531a/Azure-RMSDocs/rms-client/sharing-app-protect-in-place.md) | HandedOffSuccess | [Details](#7cf6ecb95374c080b9b2e94f948ec53ea5e6bb46371)
- [Azure-RMSDocs\rms-client\sharing-app-remove-protection.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c611fa8a846612fed238e59e5077be67f6f9531a/Azure-RMSDocs/rms-client/sharing-app-remove-protection.md) | HandedOffSuccess | [Details](#78ceb74a3dd8492ac5c754eea179525cae819fd0372)
- [Azure-RMSDocs\rms-client\sharing-app-track-revoke.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c611fa8a846612fed238e59e5077be67f6f9531a/Azure-RMSDocs/rms-client/sharing-app-track-revoke.md) | HandedOffSuccess | [Details](#9d5c9558e809779940fac095a789730d5e5924e6373)
  [Azure-RMSDocs\scratch.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/4aa72824efd231285a1941ff1335437d24c83233/Azure-RMSDocs/scratch.md) | HandedOffSuccess | [Details](#47e2d48aeba95aba232a1c8a7f02df31d2604a6e380)
  [scratch\media\150x150.png](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0a4f8aa90f7cf79099922ea7d128a0e1a34f38d1/scratch/media/150x150.png) | HandedOffSuccess | [Details](#84421bf7f4ba657e685239fb27f4798a46485f71419)
 
@@ -351,6 +347,10 @@
  [Azure-RMSDocs\rms-client\sharing-app-admin-guide-technical.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/rms-client/sharing-app-admin-guide-technical.md) | OutofSyncHandedBackSuccess | [Details](#3be36a844584fd1d7e90bf405e4d5d1844e11fd3366)
  [Azure-RMSDocs\rms-client\sharing-app-dialog-box.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c611fa8a846612fed238e59e5077be67f6f9531a/Azure-RMSDocs/rms-client/sharing-app-dialog-box.md) | OutofSyncHandedBackSuccess | [Details](#771a80843ca5ab01cd06bd4e76c827469b0e9f00368)
  [Azure-RMSDocs\rms-client\sharing-app-keyboard-shortcuts.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c611fa8a846612fed238e59e5077be67f6f9531a/Azure-RMSDocs/rms-client/sharing-app-keyboard-shortcuts.md) | OutofSyncHandedBackSuccess | [Details](#1ff6f1c788d95efa534e22935f2f13ac0cc598d7369)
+ [Azure-RMSDocs\rms-client\sharing-app-protect-by-email.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c611fa8a846612fed238e59e5077be67f6f9531a/Azure-RMSDocs/rms-client/sharing-app-protect-by-email.md) | OutofSyncHandedBackSuccess | [Details](#ea7f186e01606ca5e487bdfaab87d1eb0f2f41d3370)
+ [Azure-RMSDocs\rms-client\sharing-app-protect-in-place.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c611fa8a846612fed238e59e5077be67f6f9531a/Azure-RMSDocs/rms-client/sharing-app-protect-in-place.md) | OutofSyncHandedBackSuccess | [Details](#7cf6ecb95374c080b9b2e94f948ec53ea5e6bb46371)
+ [Azure-RMSDocs\rms-client\sharing-app-remove-protection.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c611fa8a846612fed238e59e5077be67f6f9531a/Azure-RMSDocs/rms-client/sharing-app-remove-protection.md) | OutofSyncHandedBackSuccess | [Details](#78ceb74a3dd8492ac5c754eea179525cae819fd0372)
+ [Azure-RMSDocs\rms-client\sharing-app-track-revoke.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c611fa8a846612fed238e59e5077be67f6f9531a/Azure-RMSDocs/rms-client/sharing-app-track-revoke.md) | OutofSyncHandedBackSuccess | [Details](#9d5c9558e809779940fac095a789730d5e5924e6373)
  [Azure-RMSDocs\rms-client\sharing-app-user-guide.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/rms-client/sharing-app-user-guide.md) | OutofSyncHandedBackSuccess | [Details](#46e5d3c9ea001d2fa157187a8b78c2dc3e6516f3374)
  [Azure-RMSDocs\rms-client\sharing-app-version-release-history.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/rms-client/sharing-app-version-release-history.md) | OutofSyncHandedBackSuccess | [Details](#6e76769d7083959b2aff2efa4e0a00fba2487123375)
  [Azure-RMSDocs\rms-client\sharing-app-view-use-files.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c611fa8a846612fed238e59e5077be67f6f9531a/Azure-RMSDocs/rms-client/sharing-app-view-use-files.md) | OutofSyncHandedBackSuccess | [Details](#c243ad02bdbd5bd46ba1b2a4818839df8a7deb7b376)
@@ -5482,7 +5482,7 @@
 * [Back to Top](#report-top)
 
 ##### <a name='ea7f186e01606ca5e487bdfaab87d1eb0f2f41d3370'></a> Source: [Azure-RMSDocs\rms-client\sharing-app-protect-by-email.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c611fa8a846612fed238e59e5077be67f6f9531a/Azure-RMSDocs/rms-client/sharing-app-protect-by-email.md)
-* Status: HandedOffSuccess
+* Status: OutofSyncHandedBackSuccess
 * Target File: 
 * Handoff File: [sharing-app-protect-by-email.60ccc68f471a9df891c683bc98ecdc180e8a231b.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/6ea41795213ef07dbb1db1d0ae51b65c0902e741/ol-handoff/Microsoft/Azure-RMSDocs-pr.es-es/master/sharing-app-protect-by-email.60ccc68f471a9df891c683bc98ecdc180e8a231b.es-es.xlf)
 * Handoff Datetime: 2016-05-09 17:02:20
@@ -5491,10 +5491,13 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [Azure-RMSDocs\rms-client\sharing-app-protect-by-email.md](https://github.com/Microsoft/Azure-RMSDocs-pr.es-es/blob/78e3a23989446a57a78a4e0a767e5c1b196d6900/Azure-RMSDocs/rms-client/sharing-app-protect-by-email.md)
+* Current Handback File: [sharing-app-protect-by-email.60ccc68f471a9df891c683bc98ecdc180e8a231b.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/f73fa2cb68dc5f2977f054316c9e6ba243ded055/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/sharing-app-protect-by-email.60ccc68f471a9df891c683bc98ecdc180e8a231b.es-es.xlf)
+* Current Handback Datetime: 2016-05-11 16:54:52
 * [Back to Top](#report-top)
 
 ##### <a name='7cf6ecb95374c080b9b2e94f948ec53ea5e6bb46371'></a> Source: [Azure-RMSDocs\rms-client\sharing-app-protect-in-place.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c611fa8a846612fed238e59e5077be67f6f9531a/Azure-RMSDocs/rms-client/sharing-app-protect-in-place.md)
-* Status: HandedOffSuccess
+* Status: OutofSyncHandedBackSuccess
 * Target File: 
 * Handoff File: [sharing-app-protect-in-place.319486bc6ae97fa5149e590d076a2ed0ce8024ad.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/6ea41795213ef07dbb1db1d0ae51b65c0902e741/ol-handoff/Microsoft/Azure-RMSDocs-pr.es-es/master/sharing-app-protect-in-place.319486bc6ae97fa5149e590d076a2ed0ce8024ad.es-es.xlf)
 * Handoff Datetime: 2016-05-09 17:02:20
@@ -5503,10 +5506,13 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [Azure-RMSDocs\rms-client\sharing-app-protect-in-place.md](https://github.com/Microsoft/Azure-RMSDocs-pr.es-es/blob/78e3a23989446a57a78a4e0a767e5c1b196d6900/Azure-RMSDocs/rms-client/sharing-app-protect-in-place.md)
+* Current Handback File: [sharing-app-protect-in-place.319486bc6ae97fa5149e590d076a2ed0ce8024ad.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/f73fa2cb68dc5f2977f054316c9e6ba243ded055/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/sharing-app-protect-in-place.319486bc6ae97fa5149e590d076a2ed0ce8024ad.es-es.xlf)
+* Current Handback Datetime: 2016-05-11 16:54:52
 * [Back to Top](#report-top)
 
 ##### <a name='78ceb74a3dd8492ac5c754eea179525cae819fd0372'></a> Source: [Azure-RMSDocs\rms-client\sharing-app-remove-protection.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c611fa8a846612fed238e59e5077be67f6f9531a/Azure-RMSDocs/rms-client/sharing-app-remove-protection.md)
-* Status: HandedOffSuccess
+* Status: OutofSyncHandedBackSuccess
 * Target File: 
 * Handoff File: [sharing-app-remove-protection.71eb7d61f0b09dc1f1dc78b3595fbca5184f8149.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/6ea41795213ef07dbb1db1d0ae51b65c0902e741/ol-handoff/Microsoft/Azure-RMSDocs-pr.es-es/master/sharing-app-remove-protection.71eb7d61f0b09dc1f1dc78b3595fbca5184f8149.es-es.xlf)
 * Handoff Datetime: 2016-05-09 17:02:20
@@ -5515,10 +5521,13 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [Azure-RMSDocs\rms-client\sharing-app-remove-protection.md](https://github.com/Microsoft/Azure-RMSDocs-pr.es-es/blob/78e3a23989446a57a78a4e0a767e5c1b196d6900/Azure-RMSDocs/rms-client/sharing-app-remove-protection.md)
+* Current Handback File: [sharing-app-remove-protection.71eb7d61f0b09dc1f1dc78b3595fbca5184f8149.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/f73fa2cb68dc5f2977f054316c9e6ba243ded055/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/sharing-app-remove-protection.71eb7d61f0b09dc1f1dc78b3595fbca5184f8149.es-es.xlf)
+* Current Handback Datetime: 2016-05-11 16:54:52
 * [Back to Top](#report-top)
 
 ##### <a name='9d5c9558e809779940fac095a789730d5e5924e6373'></a> Source: [Azure-RMSDocs\rms-client\sharing-app-track-revoke.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c611fa8a846612fed238e59e5077be67f6f9531a/Azure-RMSDocs/rms-client/sharing-app-track-revoke.md)
-* Status: HandedOffSuccess
+* Status: OutofSyncHandedBackSuccess
 * Target File: 
 * Handoff File: [sharing-app-track-revoke.56e3fe7d396e46fc57bc6d4a041fdad5cb5c7374.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/6ea41795213ef07dbb1db1d0ae51b65c0902e741/ol-handoff/Microsoft/Azure-RMSDocs-pr.es-es/master/sharing-app-track-revoke.56e3fe7d396e46fc57bc6d4a041fdad5cb5c7374.es-es.xlf)
 * Handoff Datetime: 2016-05-09 17:02:20
@@ -5527,6 +5536,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [Azure-RMSDocs\rms-client\sharing-app-track-revoke.md](https://github.com/Microsoft/Azure-RMSDocs-pr.es-es/blob/78e3a23989446a57a78a4e0a767e5c1b196d6900/Azure-RMSDocs/rms-client/sharing-app-track-revoke.md)
+* Current Handback File: [sharing-app-track-revoke.56e3fe7d396e46fc57bc6d4a041fdad5cb5c7374.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/f73fa2cb68dc5f2977f054316c9e6ba243ded055/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/sharing-app-track-revoke.56e3fe7d396e46fc57bc6d4a041fdad5cb5c7374.es-es.xlf)
+* Current Handback Datetime: 2016-05-11 16:54:52
 * [Back to Top](#report-top)
 
 ##### <a name='46e5d3c9ea001d2fa157187a8b78c2dc3e6516f3374'></a> Source: [Azure-RMSDocs\rms-client\sharing-app-user-guide.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/rms-client/sharing-app-user-guide.md)
