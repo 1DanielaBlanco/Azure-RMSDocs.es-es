@@ -1203,9 +1203,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [Azure-RMSDocs\develop\authentication-integration.md](https://github.com/Microsoft/Azure-RMSDocs-pr.es-es/blob/d75be4e2309d58fb15a990b4d1b77ccc251b48e8/Azure-RMSDocs/develop/authentication-integration.md)
-* Current Handback File: [authentication-integration.f57bd011e38dd7ece967615f51b238f7f03b3dea.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/ae5216c2ac1881fec68714bdda0930e04d1787fa/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/authentication-integration.f57bd011e38dd7ece967615f51b238f7f03b3dea.es-es.xlf)
-* Current Handback Datetime: 2016-05-11 09:48:55
+* Current Target File: [Azure-RMSDocs\develop\authentication-integration.md](https://github.com/Microsoft/Azure-RMSDocs-pr.es-es/blob/d9bcb16d60ba89ea27386da51a729de4cbc3d716/Azure-RMSDocs/develop/authentication-integration.md)
+* Current Handback File: [authentication-integration.f57bd011e38dd7ece967615f51b238f7f03b3dea.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/017ad2666678c8c6b9b4535a7a5bf5a89bdd28c9/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/master/authentication-integration.f57bd011e38dd7ece967615f51b238f7f03b3dea.es-es.xlf)
+* Current Handback Datetime: 2016-05-16 19:08:28
 * [Back to Top](#report-top)
 
 ##### <a name='4a5c1a0b420b9db20cca237e2170b6479c565ee653'></a> Source: [Azure-RMSDocs\develop\built-in-rights-usage-restriction-reference.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/79e58b8092ea7cb057229d4c464d79f3694296e6/Azure-RMSDocs/develop/built-in-rights-usage-restriction-reference.md)

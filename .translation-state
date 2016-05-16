@@ -1,6 +1,6 @@
 {
   "LastProcessedCommit": "bdf0f8a49c71de827eea5abb10864b9e96df2080",
-  "LastTranslatedCommit": "6b9e6d6b090b80149661d88ced52512f2b3895d9",
+  "LastTranslatedCommit": "d9bcb16d60ba89ea27386da51a729de4cbc3d716",
   "Items": {
     "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a": {
       "FileHash": "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a",
@@ -44679,14 +44679,14 @@
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
-      "TargetFileCommit": "d75be4e2309d58fb15a990b4d1b77ccc251b48e8",
+      "TargetFileCommit": "d9bcb16d60ba89ea27386da51a729de4cbc3d716",
       "TargetFilePath": "Azure-RMSDocs\\develop\\authentication-integration.md",
-      "HandbackFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.es-es\\master\\authentication-integration.f57bd011e38dd7ece967615f51b238f7f03b3dea.es-es.xlf",
-      "HandbackFileCommit": "ae5216c2ac1881fec68714bdda0930e04d1787fa",
-      "HandbackDateTime": "2016-05-11T09:48:55.1952195Z",
+      "HandbackFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.es-es\\master\\master\\authentication-integration.f57bd011e38dd7ece967615f51b238f7f03b3dea.es-es.xlf",
+      "HandbackFileCommit": "017ad2666678c8c6b9b4535a7a5bf5a89bdd28c9",
+      "HandbackDateTime": "2016-05-16T19:08:28.9842621Z",
       "HandbackException": null,
       "HandbackFailureTimes": 0,
-      "UpdatedDateTime": "2016-05-11T09:48:55.1952195Z",
+      "UpdatedDateTime": "2016-05-16T19:08:28.9842621Z",
       "ArchiveFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.es-es\\master\\archive\\authentication-integration.f57bd011e38dd7ece967615f51b238f7f03b3dea.es-es.xlf",
       "ArchiveFileCommit": "c1e23ff875d4663c3910087f0d42f9568ce3918e",
       "ArchiveFileDateTime": "2016-04-26T03:13:18.3530473Z",
