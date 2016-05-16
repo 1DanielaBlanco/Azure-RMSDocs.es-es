@@ -31,7 +31,7 @@ ms.suite: ems
 En este tema se describen los conceptos básicos de la autenticación de usuario de la aplicación habilitada para RMS.
 
 ## ¿Qué es la autenticación del usuario?
-La autenticación de usuario es un paso esencial para establecer la comunicación entre la aplicación del dispositivo y la infraestructura de RMS. En este proceso de autenticación se usa el protocolo OAuth 2.0 estándar, donde son necesarios los siguientes datos sobre el usuario actual y su solicitud de autenticación: **autoridad**, **recurso** e **identificador de usuario**.
+La autenticación de usuario es un paso esencial para establecer la comunicación entre la aplicación del dispositivo y la infraestructura de RMS. En este proceso de autenticación se usa el protocolo OAuth 2.0 estándar, donde son necesarios los siguientes datos sobre el usuario actual y su solicitud de autenticación: **authority**, **resource** e **userId**.
 
 **Nota:** el ámbito no se usa actualmente, pero no se descarta, de modo que está reservado para un futuro uso.
 
