@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: caf031ca-4876-4d42-9fbc-8638f579fb38
-
+ms.assetid: 6F6C7651-6A6E-45DD-A0C5-F036F803249B
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # Depuración de una aplicación con derechos habilitados
 
 En el siguiente tema se muestra cómo depurar la aplicación y utilizar el registro de eventos de Windows.
@@ -72,7 +70,7 @@ Por ejemplo, el siguiente comando habilitará el registro de eventos de MSIPC y 
 
  
 
-### Temas relacionados
+## Temas relacionados
 
 * [Procedimiento](how-to-use-msipc.md)
  
@@ -83,6 +81,6 @@ Por ejemplo, el siguiente comando habilitará el registro de eventos de MSIPC y 
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

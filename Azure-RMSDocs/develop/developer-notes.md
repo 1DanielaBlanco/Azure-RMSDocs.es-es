@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 65c2f3d1-0852-41fa-a95a-53dcec787680
-
+ms.assetid: 5A9F04FD-0FCD-482F-8671-36FE93B783B0
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,7 @@ ms.suite: ems
 
 ---
 
-﻿# Notas para el desarrollador
+# Notas para el desarrollador
 
 En esta sección se incluyen instrucciones específicas para varios escenarios de desarrollo importantes. Los escenarios de esta sección son específicos de esta versión de Rights Management Services SDK 2.1 y podrían modificarse en versiones posteriores.
 
@@ -49,6 +48,6 @@ En esta sección se incluyen instrucciones específicas para varios escenarios d
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

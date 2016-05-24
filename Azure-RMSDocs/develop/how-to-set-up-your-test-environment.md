@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 4d32682c-754d-4e30-977d-95b08e0662cc
-
+ms.assetid: E480D8D6-F070-43D1-B2B0-6921459C3437
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # Configuración del entorno de pruebas
 
 Puede probar la aplicación con derechos habilitados con diferentes opciones de servidor.
@@ -51,7 +49,7 @@ Hay dos opciones disponibles para probar la aplicación en un servidor RMS:
 -   **Puede ejecutar la aplicación en el entorno ISV de AD RMS de 1 cuadro**. Si está ejecutando Windows Server 2012, Windows Server 2008 R2 o Windows Server 2008 y tiene Hyper-V instalado, puede implementar el entorno ISV de AD RMS de 1 cuadro creando una máquina virtual mediante VHD de 1 cuadro de AD RMS. El entorno ISV de AD RMS de 1 cuadro proporciona un servidor RMS configurado para preproducción y también tiene Active Directory Rights Management Services Client 2.1 instalado. La configuración de registro para el cliente y servidor RMS ya está definida. Para probar la aplicación, se ejecútela en la máquina virtual en el que se implementa el entorno de cuadro 1.
 -   **Puede ejecutar la aplicación en un servidor RMS configurado para preproducción y que se implemente en la red**. En este caso, también debe instalar y configurar el Cliente 2.1 de AD RMS en el equipo donde se ejecutará la aplicación. Para obtener información sobre cómo hacer esto, consulte [Configure client](how-to-configure-the-ad-rms-client-2-0.md) (Configuración del cliente). Para obtener información sobre cómo implementar un servidor RMS y configurarlo para preproducción, consulte [Install and configure the server](how-to-install-and-configure-an-rms-server.md) (Instalación y configuración del servidor).
 
-### Temas relacionados
+## Temas relacionados
 
 * [Procedimiento](how-to-use-msipc.md)
 * [Página de descarga colateral del seminario web de AD RMS SDK](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440)
@@ -67,6 +65,6 @@ Hay dos opciones disponibles para probar la aplicación en un servidor RMS:
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 
