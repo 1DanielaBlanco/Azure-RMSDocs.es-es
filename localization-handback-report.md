@@ -1,26 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [Azure-RMSDocs\develop\release-notes.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/acc140931b5f834ce1d70c851d90c334a03010dc/Azure-RMSDocs/develop/release-notes.md) | InSyncHandedBackSuccess | [Details](#a12be14d42b0d3212ac61038591701a7a4a23ff590)
 
 ## Item Details
-##### <a name='a12be14d42b0d3212ac61038591701a7a4a23ff590'></a> Source: [Azure-RMSDocs\develop\release-notes.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/acc140931b5f834ce1d70c851d90c334a03010dc/Azure-RMSDocs/develop/release-notes.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [Azure-RMSDocs\develop\release-notes.md](https://github.com/Microsoft/Azure-RMSDocs-pr.es-es/blob/026fdf37733fbfd9b8e8e5c42dc3f311f36619e8/Azure-RMSDocs/develop/release-notes.md)
-* Handoff File: [release-notes.826b77f06ae23f3a7f33ec7bfe221db9d73fa87b.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/8cdff5064e470a3b2a18f941a50023981f75fcde/ol-handoff/Microsoft/Azure-RMSDocs-pr.es-es/master/release-notes.826b77f06ae23f3a7f33ec7bfe221db9d73fa87b.es-es.xlf)
-* Handoff Datetime: 2016-04-26 21:01:39
-* Handoff Reason: Include
-* Archive File: [release-notes.826b77f06ae23f3a7f33ec7bfe221db9d73fa87b.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/dc307d2c98696cb68eb91632c96c6adb18913c9c/ol-handoff/Microsoft/Azure-RMSDocs-pr.es-es/master/archive/release-notes.826b77f06ae23f3a7f33ec7bfe221db9d73fa87b.es-es.xlf)
-* Archive Datetime: 2016-05-21 18:39:12
-* Handback File: [release-notes.826b77f06ae23f3a7f33ec7bfe221db9d73fa87b.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/0cbffafb06debb08ec35ccd3f4fea22c059d1c93/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/release-notes.826b77f06ae23f3a7f33ec7bfe221db9d73fa87b.es-es.xlf)
-* Handback Datetime: 2016-05-24 10:42:58
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
