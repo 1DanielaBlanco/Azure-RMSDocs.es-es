@@ -401,12 +401,6 @@
   "8c186a71befdce2d9671d32aabdeb8d1fe57ee35": [
     "Azure-RMSDocs\\develop\\add-explicit-owner-rights.md"
   ],
-  "6ffb69281e3a8726e92d63fe40c21f55c9777b92": [
-    "Azure-RMSDocs\\develop\\add-explicit-owner-rights.md"
-  ],
-  "10b39f1885f5c11eb0ce8b61af565246b62dbda7": [
-    "Azure-RMSDocs\\develop\\add-explicit-owner-rights.md"
-  ],
   "2560325d140ebc4cd06db318c4e0676ee8151b8f": [
     "Azure-RMSDocs\\develop\\ad-rms-client.md"
   ],
@@ -419,12 +413,6 @@
   "b1aede1ac483fca0cfbb61694485520a335695b3": [
     "Azure-RMSDocs\\develop\\ad-rms-concepts-nav.md"
   ],
-  "1892377a6efbcc38bbd7a1cf8315d0b9d0207a9b": [
-    "Azure-RMSDocs\\develop\\ad-rms-concepts-nav.md"
-  ],
-  "1724b28400400b05df30784a014221dcc00100d1": [
-    "Azure-RMSDocs\\develop\\ad-rms-concepts-nav.md"
-  ],
   "8471f0f2682a721d839a18bf1bbc3b937c2d113e": [
     "Azure-RMSDocs\\develop\\ad-rms-overview.md"
   ],
@@ -435,9 +423,6 @@
     "Azure-RMSDocs\\develop\\ad-rms-overview.md"
   ],
   "906c83731188838ca516b8159581b64c60a4a42e": [
-    "Azure-RMSDocs\\develop\\ad-rms-server.md"
-  ],
-  "da4e4d76fe1feab901231b74c70ea198f80a5b1c": [
     "Azure-RMSDocs\\develop\\ad-rms-server.md"
   ],
   "acd0692102c43baff0a92360e0ddbe1259ad9b4f": [
@@ -503,15 +488,6 @@
   "1500714b36a1c3881d158e31e87cec39f99cd7f7": [
     "Azure-RMSDocs\\develop\\application-types.md"
   ],
-  "2f9f549cf731c46b92dae3584f3a260cdad9ddf6": [
-    "Azure-RMSDocs\\develop\\application-types.md"
-  ],
-  "804ccc1285b1b4567d5f8b765741b5ceb17404e3": [
-    "Azure-RMSDocs\\develop\\application-types.md"
-  ],
-  "bd2085f16afa59b2c48a273c6656bd136a5eaa87": [
-    "Azure-RMSDocs\\develop\\application-types.md"
-  ],
   "261abdeaa0aa70ae7240b6ceddc9d09440f0b48e": [
     "Azure-RMSDocs\\develop\\authentication-integration.md"
   ],
@@ -545,12 +521,6 @@
   "3b935953f9e8da1ecb1359f91176d0297a3ee66e": [
     "Azure-RMSDocs\\develop\\common-error-conditions-and-solutions.md"
   ],
-  "2a90d8f7a9265532668e5f7d5bd4289474afeb3f": [
-    "Azure-RMSDocs\\develop\\common-error-conditions-and-solutions.md"
-  ],
-  "5d2bd8b33882edd748de760ff1fb11309527bb05": [
-    "Azure-RMSDocs\\develop\\common-error-conditions-and-solutions.md"
-  ],
   "1476cfafbc3ecf619e66fee22f657c1714deffe8": [
     "Azure-RMSDocs\\develop\\community-resources.md"
   ],
@@ -561,12 +531,6 @@
     "Azure-RMSDocs\\develop\\community-resources.md"
   ],
   "7832f87febd6d9f87a3975c2084caca7aa73b9fc": [
-    "Azure-RMSDocs\\develop\\core-concepts.md"
-  ],
-  "091e05c354b36e15bb8d000edb8f7cd5e0e828db": [
-    "Azure-RMSDocs\\develop\\core-concepts.md"
-  ],
-  "2e95e3f1be444671d9057b0902f089ee5f341a25": [
     "Azure-RMSDocs\\develop\\core-concepts.md"
   ],
   "ee4cc0f741921f6e4bfcc216281cc6b63deb4ad1": [
@@ -584,15 +548,6 @@
   "1dff81897c6fda95a248b18cf71f3dc9e0e03cd0": [
     "Azure-RMSDocs\\develop\\debugging-applications-that-use-ad-rms.md"
   ],
-  "bf164cd730a9e2c7c401d2d148686ebca4346d66": [
-    "Azure-RMSDocs\\develop\\debugging-applications-that-use-ad-rms.md"
-  ],
-  "975f6aff494c4b29412efb21f582fa416c5e21b4": [
-    "Azure-RMSDocs\\develop\\debugging-applications-that-use-ad-rms.md"
-  ],
-  "ce5f67fda8a7486ad84b1271fb16f8fd055ccb04": [
-    "Azure-RMSDocs\\develop\\debugging-applications-that-use-ad-rms.md"
-  ],
   "96d04f5003e04f3e8346579ef4251329fee51f87": [
     "Azure-RMSDocs\\develop\\deploying-your-application.md"
   ],
@@ -603,12 +558,6 @@
     "Azure-RMSDocs\\develop\\deploying-your-application.md"
   ],
   "e90bbe3ea7e77d56f1baf64e455086fbd2d78105": [
-    "Azure-RMSDocs\\develop\\developer-notes.md"
-  ],
-  "efae413d37999a95ee5492592ab215b53807b87e": [
-    "Azure-RMSDocs\\develop\\developer-notes.md"
-  ],
-  "b247da41774924342fe1c77c198748fa1d4ff9a2": [
     "Azure-RMSDocs\\develop\\developer-notes.md"
   ],
   "50fe3072ccc2ae9b867f84da3f7f1094ab601dc9": [
@@ -656,46 +605,13 @@
   "398132769d64ab56c354a5f159b7df257bee5c2e": [
     "Azure-RMSDocs\\develop\\getting-started-with-ad-rms-2-0.md"
   ],
-  "ed57eb7d6a4c76edb88a69e5122d60ba047e1f0a": [
-    "Azure-RMSDocs\\develop\\getting-started-with-ad-rms-2-0.md"
-  ],
-  "a52855f0d810e4afa244b56acaa4eb63a701c115": [
-    "Azure-RMSDocs\\develop\\getting-started-with-ad-rms-2-0.md"
-  ],
-  "513ca8f478b24688bcf26de1742778335280833d": [
-    "Azure-RMSDocs\\develop\\getting-started-with-ad-rms-2-0.md"
-  ],
   "ee9285bbcd7c26b2f635ab78d084183614c6b1d1": [
-    "Azure-RMSDocs\\develop\\how-to-build-your-first-application.md"
-  ],
-  "1697d16971744db769638629422b0153522df81a": [
-    "Azure-RMSDocs\\develop\\how-to-build-your-first-application.md"
-  ],
-  "c06293226acf414026fe31d6478be5041f70912d": [
     "Azure-RMSDocs\\develop\\how-to-build-your-first-application.md"
   ],
   "b834178c6d104f72b4ddc4cca5752baca51e3c47": [
     "Azure-RMSDocs\\develop\\how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md"
   ],
-  "96a3158a186b2f7f63b545bc9ec9d8df41be8495": [
-    "Azure-RMSDocs\\develop\\how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md"
-  ],
-  "ea715e5cf8f3b46e6c96cd97a5a70d122718f382": [
-    "Azure-RMSDocs\\develop\\how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md"
-  ],
-  "6f633d2e7b4850c1985a50c6b3a7a03bbbe8a027": [
-    "Azure-RMSDocs\\develop\\how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md"
-  ],
   "b62f18a5d58a63bd20eae8e12ea17b9938f32805": [
-    "Azure-RMSDocs\\develop\\how-to-configure-the-ad-rms-client-2-0.md"
-  ],
-  "3fa08273d9cabb728db067c2ca7995814795a15e": [
-    "Azure-RMSDocs\\develop\\how-to-configure-the-ad-rms-client-2-0.md"
-  ],
-  "b5bcd2858415ebf8dad2aea21f75a3625ec8fbdc": [
-    "Azure-RMSDocs\\develop\\how-to-configure-the-ad-rms-client-2-0.md"
-  ],
-  "880246c0e2f1a852699f98d90ec46d26877930f5": [
     "Azure-RMSDocs\\develop\\how-to-configure-the-ad-rms-client-2-0.md"
   ],
   "451d3dc162f98b33cb762c795de29a15c0c0be97": [
@@ -732,15 +648,6 @@
     "Azure-RMSDocs\\develop\\how-to-set-up-the-pre-production-development-environment.md"
   ],
   "c8f9dbb6579fa029d650f5be254c6bffd9c3eecd": [
-    "Azure-RMSDocs\\develop\\how-to-set-up-your-test-environment.md"
-  ],
-  "81507fa6baf5eae3238485e117fe6ed41b1f0648": [
-    "Azure-RMSDocs\\develop\\how-to-set-up-your-test-environment.md"
-  ],
-  "1557f2dfdab4f9b1afbd66ca3ef4d6863c42c988": [
-    "Azure-RMSDocs\\develop\\how-to-set-up-your-test-environment.md"
-  ],
-  "e1f7eb97f2a90a4819ae9048ce2d1fc79e11e56c": [
     "Azure-RMSDocs\\develop\\how-to-set-up-your-test-environment.md"
   ],
   "df55cb44e7101e8e12ceeb4c0cc1e8e9b9f975dc": [
@@ -833,12 +740,6 @@
   "d6920b8ce09b39d98da9e9c197b17a1f13d21c8e": [
     "Azure-RMSDocs\\develop\\linux-setup.md"
   ],
-  "e116c1c7fc5e268895aed032f559bf8fece92e0f": [
-    "Azure-RMSDocs\\develop\\linux-setup.md"
-  ],
-  "c18c1dff241e9d357447eed6ed278cd3d93e429b": [
-    "Azure-RMSDocs\\develop\\linux-setup.md"
-  ],
   "4ec214203fa6e27ec75cdc0c2b2d46b1e0ab58df": [
     "Azure-RMSDocs\\develop\\microsoft-information-protection-and-control-client-portal.md"
   ],
@@ -864,12 +765,6 @@
     "Azure-RMSDocs\\develop\\obtaining-a-production-license.md"
   ],
   "e9a3f95c8ff289380dc62994e4f719bc174c4900": [
-    "Azure-RMSDocs\\develop\\overview.md"
-  ],
-  "dabfd39de6471682a77e736088f47c4da870cd6b": [
-    "Azure-RMSDocs\\develop\\overview.md"
-  ],
-  "547704e622d81391cd4bc050f07ad10f6195d4a7": [
     "Azure-RMSDocs\\develop\\overview.md"
   ],
   "a12be14d42b0d3212ac61038591701a7a4a23ff5": [
@@ -909,12 +804,6 @@
     "Azure-RMSDocs\\develop\\samples.md"
   ],
   "3d6e7c2b40ba80988e93186fd68a12e6216b477d": [
-    "Azure-RMSDocs\\develop\\sdk-elements.md"
-  ],
-  "005fa7d6a6d63c99023c990690bd80903ca67f2b": [
-    "Azure-RMSDocs\\develop\\sdk-elements.md"
-  ],
-  "f9d6c7bea54ad90777d092a5846b0a56c3360ebf": [
     "Azure-RMSDocs\\develop\\sdk-elements.md"
   ],
   "b4de8458ace7a70b27120189ee821729836cc97e": [
@@ -984,12 +873,6 @@
     "Azure-RMSDocs\\develop\\switching-to-the-production-environment.md"
   ],
   "cb8c91db044eb8cee39661994191c261bdbdb8ce": [
-    "Azure-RMSDocs\\develop\\terms.md"
-  ],
-  "f272eba64959517092f1fa562df6a9d3257ada39": [
-    "Azure-RMSDocs\\develop\\terms.md"
-  ],
-  "33365455f071d87b0f987b4fb48469b401e7de01": [
     "Azure-RMSDocs\\develop\\terms.md"
   ],
   "20caaf80b7a4fdd47c9583cdb0c1451cc16a531c": [
