@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 3b482c5f-fd40-47d5-acdc-13d2e80d5171
-
+ms.assetid: 4fa1c686-b00b-4734-9abb-141ce582a6af
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # Novedades y notas de la versión
 
 ## Novedades
@@ -172,7 +170,7 @@ En esta sección se detalla información sobre las versiones actuales y anterior
 
     Los siguientes métodos no se deben ejecutar al mismo tiempo. Para supervisar la finalización de la ejecución, use el método de bloqueo de finalización, según se indica.
 
-    - [**protectedDataWithProtectedFile**](https://stage.docs.microsoft.com/en-us/rights-management/sdk/4.2/api/iOS/msprotecteddata#msipcthin2_msprotecteddata_protecteddatawithprotectedfile_completionblock_method_objc)
+    - [**protectedDataWithProtectedFile**](/rights-management/sdk/4.2/api/iOS/msprotecteddata#msipcthin2_msprotecteddata_protecteddatawithprotectedfile_completionblock_method_objc)
     - [**customProtectedDataWithPolicy**](/rights-management/sdk/4.2/api/iOS/mscustomprotecteddata#msipcthin2_mscustomprotecteddata_customprotecteddatawithpolicy_protecteddata_contentstartposition_contentsize_completionblock_method_objc)
 
 
@@ -229,6 +227,6 @@ En esta sección se detalla información sobre las versiones actuales y anterior
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 
