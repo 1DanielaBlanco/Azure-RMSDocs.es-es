@@ -1,11 +1,39 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 2
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [Azure-RMSDocs\develop\how-to-use-msipc.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/32f1f7779e214b5d8848da5a4771b585862ff7eb/Azure-RMSDocs/develop/how-to-use-msipc.md) | InSyncHandedBackSuccess | [Details](#e696d5c73233959038becc81abe770cb1bad589578)
+ [Azure-RMSDocs\develop\supported-platforms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/6b5bc9612ac17a2d6905200383d9b8df4c504efe/Azure-RMSDocs/develop/supported-platforms.md) | InSyncHandedBackSuccess | [Details](#baf08d04f836e5aa406f125a7029bc43297f5df198)
 
 ## Item Details
+##### <a name='e696d5c73233959038becc81abe770cb1bad589578'></a> Source: [Azure-RMSDocs\develop\how-to-use-msipc.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/32f1f7779e214b5d8848da5a4771b585862ff7eb/Azure-RMSDocs/develop/how-to-use-msipc.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [Azure-RMSDocs\develop\how-to-use-msipc.md](https://github.com/Microsoft/Azure-RMSDocs-pr.es-es/blob/d124cbe0914059f71d9a698087f65450879ba4a0/Azure-RMSDocs/develop/how-to-use-msipc.md)
+* Handoff File: [how-to-use-msipc.efe675420f9d0fb0e2376950826138cb7cf1dd20.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/ba99d41c3631b54fdd5cd80a2524ef8f3e4644c7/ol-handoff/Microsoft/Azure-RMSDocs-pr.es-es/master/how-to-use-msipc.efe675420f9d0fb0e2376950826138cb7cf1dd20.es-es.xlf)
+* Handoff Datetime: 2016-04-26 02:03:52
+* Handoff Reason: Include
+* Archive File: [how-to-use-msipc.efe675420f9d0fb0e2376950826138cb7cf1dd20.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/dc307d2c98696cb68eb91632c96c6adb18913c9c/ol-handoff/Microsoft/Azure-RMSDocs-pr.es-es/master/archive/how-to-use-msipc.efe675420f9d0fb0e2376950826138cb7cf1dd20.es-es.xlf)
+* Archive Datetime: 2016-05-21 18:39:12
+* Handback File: [how-to-use-msipc.efe675420f9d0fb0e2376950826138cb7cf1dd20.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/d9cbe6724e7af037a19bf9487c8d6376a988a763/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/how-to-use-msipc.efe675420f9d0fb0e2376950826138cb7cf1dd20.es-es.xlf)
+* Handback Datetime: 2016-05-24 04:01:38
+* [Back to Top](#report-top)
+
+##### <a name='baf08d04f836e5aa406f125a7029bc43297f5df198'></a> Source: [Azure-RMSDocs\develop\supported-platforms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/6b5bc9612ac17a2d6905200383d9b8df4c504efe/Azure-RMSDocs/develop/supported-platforms.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [Azure-RMSDocs\develop\supported-platforms.md](https://github.com/Microsoft/Azure-RMSDocs-pr.es-es/blob/d124cbe0914059f71d9a698087f65450879ba4a0/Azure-RMSDocs/develop/supported-platforms.md)
+* Handoff File: [supported-platforms.521728d1fd781be9af5c33a205e0e09ffe27b979.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/45ef369cdf3a54dbb7b69b4ff9a92e474cf23217/ol-handoff/Microsoft/Azure-RMSDocs-pr.es-es/master/supported-platforms.521728d1fd781be9af5c33a205e0e09ffe27b979.es-es.xlf)
+* Handoff Datetime: 2016-04-26 01:31:39
+* Handoff Reason: Include
+* Archive File: [supported-platforms.521728d1fd781be9af5c33a205e0e09ffe27b979.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/dc307d2c98696cb68eb91632c96c6adb18913c9c/ol-handoff/Microsoft/Azure-RMSDocs-pr.es-es/master/archive/supported-platforms.521728d1fd781be9af5c33a205e0e09ffe27b979.es-es.xlf)
+* Archive Datetime: 2016-05-21 18:39:12
+* Handback File: [supported-platforms.521728d1fd781be9af5c33a205e0e09ffe27b979.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/d9cbe6724e7af037a19bf9487c8d6376a988a763/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/supported-platforms.521728d1fd781be9af5c33a205e0e09ffe27b979.es-es.xlf)
+* Handback Datetime: 2016-05-24 04:01:38
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
