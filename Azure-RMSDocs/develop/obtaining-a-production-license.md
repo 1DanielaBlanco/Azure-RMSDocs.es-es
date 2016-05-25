@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 013f9d75-0b66-44a8-9b01-d05b44a5ea0c
-
+ms.assetid: 6749817E-FF34-4384-BF63-39AEA5C372CA
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # Obtener una licencia de producción
 
 Para poder distribuir una aplicación desarrollada con Rights Management Services SDK 2.1, debe pedir un contrato de licencia de producción que le permita obtener un certificado de producción.
@@ -43,8 +41,6 @@ Para más información sobre claves, vea [Probar aplicaciones con derechos habil
 Para obtener el certificado, solicite un contrato de licencia de producción.
 
 ## Solicitar un contrato de licencia de producción
-
-![](../media/wedge.gif)
 
 -   Envíe un mensaje de correo a [RMLA@microsoft.com](mailto:rmla@microsoft.com) e incluya la siguiente información:
 
@@ -83,8 +79,8 @@ Para obtener el certificado, solicite un contrato de licencia de producción.
 
 ## Temas relacionados
 
-* [Procedimientos](how-to-use-msipc.md)
-* [Probar la aplicación con derechos habilitados](running-your-first-application.md)
+* [Procedimiento](how-to-use-msipc.md)
+* [Prueba de la aplicación con derechos habilitados](running-your-first-application.md)
  
 
  
@@ -93,6 +89,6 @@ Para obtener el certificado, solicite un contrato de licencia de producción.
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

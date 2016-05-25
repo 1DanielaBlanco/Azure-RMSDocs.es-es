@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 43b611a8-2cc0-49a8-9db9-e81321c38f7a
-
+ms.assetid: 834B7242-31D3-4275-A892-CFE95A61E29E
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # Probar la aplicación con derechos habilitados
 
 En este tema se describen los pasos necesarios para probar la aplicación con derechos habilitados de Rights Management Services SDK 2.1.
@@ -38,7 +36,7 @@ Para publicar y consumir contenido protegido, una aplicación de Rights Manageme
 Se recomienda usar la jerarquía de preproducción al desarrollar una aplicación. Al hacerlo, podrá trabajar sin tener que firmar un contrato de licencia de producción con Microsoft.
 
 > [!IMPORTANT]
-> Este es un procedimiento recomendado para probar primero la aplicación de RMS SDK 2.1 en el entorno de preproducción de RMS, en un servidor RMS. Luego, si quiere que su cliente tenga la posibilidad de usar la aplicación con el servicio de Azure RMS, pase a las pruebas con ese entorno. Para más información, vea [Enable your service application to work with cloud based RMS](how-to-use-file-api-with-aadrm-cloud.md) (Permitir que la aplicación de servicio funcione con RMS en la nube).
+> Este es un procedimiento recomendado para probar primero la aplicación de RMS SDK 2.1 en el entorno de preproducción de RMS, en un servidor RMS. Luego, si quiere que su cliente tenga la posibilidad de usar la aplicación con el servicio de Azure RMS, pase a las pruebas con ese entorno. Para más información, consulte [Enable your service application to work with cloud based RMS](how-to-use-file-api-with-aadrm-cloud.md) (Permitir que la aplicación de servicio funcione con RMS en la nube).
 
  
 
@@ -107,7 +105,7 @@ Puede ejecutar la aplicación desde cualquier directorio, pero el manifiesto de 
 
     Para más información sobre cómo configurar el cliente en el equipo, vea [Configure the client](how-to-configure-the-ad-rms-client-2-0.md) (Configurar el cliente). Para más información sobre cómo instalar un servidor RMS, vea [Install and configure the server](how-to-install-and-configure-an-rms-server.md) (Instalar y configurar el servidor).
 
-### Temas relacionados
+## Temas relacionados
 
 * [How-to use (Procedimientos)](how-to-use-msipc.md)
 * [Configure the client (Configurar el cliente)](how-to-configure-the-ad-rms-client-2-0.md)
@@ -125,6 +123,6 @@ Puede ejecutar la aplicación desde cualquier directorio, pero el manifiesto de 
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

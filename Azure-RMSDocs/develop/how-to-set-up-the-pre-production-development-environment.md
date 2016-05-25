@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: bdb24446-d69f-435b-be39-a036540f7378
-
+ms.assetid: 4629ACAA-2A83-4697-B769-D649114D35E1
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # Configuración del entorno de desarrollo de preproducción
 
 Esta sección le guiará a través del proceso de configuración y ejecución de su aplicación con derechos habilitados en un entorno de prueba o preproducción. Los temas siguientes describen cómo configurar el entorno de desarrollo de preproducción y se muestran de forma que sugieren un orden en el que podría realizar las tareas.
@@ -41,7 +39,7 @@ Esta sección le guiará a través del proceso de configuración y ejecución de
 |[Depuración de una aplicación con derechos habilitados](debugging-applications-that-use-ad-rms.md)|En el siguiente tema se muestra cómo depurar la aplicación y utilizar el registro de eventos de Windows.|
 
 
-### Temas relacionados
+## Temas relacionados
 
 * [Información general](ad-rms-overview.md)
 * [Procedimiento](how-to-use-msipc.md)
@@ -50,6 +48,6 @@ Esta sección le guiará a través del proceso de configuración y ejecución de
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

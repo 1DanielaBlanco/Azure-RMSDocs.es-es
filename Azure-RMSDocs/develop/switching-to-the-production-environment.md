@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 376c08d9-51e8-46c9-b2d2-426f648f7e4d
-
+ms.assetid: F5CD72F6-D49A-4121-866F-3182CD980875
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # Cambio al entorno de producción
 
 Esta sección le guiará por el proceso de lanzamiento de la aplicación probada en un entorno de producción.
@@ -53,7 +51,7 @@ Los temas siguientes lo guiarán por el proceso.
   En este tema se describen las opciones y el proceso de implementación de la aplicación con derechos habilitados.
  
 
-### Temas relacionados
+## Temas relacionados
 
 * [Información general](ad-rms-overview.md)
 * [Procedimiento](how-to-use-msipc.md)
@@ -62,6 +60,6 @@ Los temas siguientes lo guiarán por el proceso.
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

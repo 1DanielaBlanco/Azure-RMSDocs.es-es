@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: c73fde39-6e16-470c-800e-59ab04c78f5f
-
+ms.assetid: 09BA148C-7D1E-43C8-92EA-24BBB6EFDB19
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # Firma de la aplicación para producción
 
 Este tema le guiará por el proceso de firma de la aplicación para el modo de producción.
@@ -67,7 +65,7 @@ Colóquelos en el mismo directorio con *GenManifest.exe* y el archivo binario de
 
     -   *YourAppName*. exe.man siempre se debe colocar en el mismo directorio que *YourAppName*.exe.
 
-### Temas relacionados
+## Temas relacionados
 
 * [Procedimiento](how-to-use-msipc.md)
 * [Prueba de la aplicación con derechos habilitados](running-your-first-application.md)
@@ -79,6 +77,6 @@ Colóquelos en el mismo directorio con *GenManifest.exe* y el archivo binario de
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

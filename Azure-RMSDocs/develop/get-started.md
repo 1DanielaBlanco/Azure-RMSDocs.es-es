@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 1a2ae9f2-709f-47fe-b16c-76140dd27740
-
+ms.assetid: 9f4cbd16-58e5-421f-a472-8d279e952760
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # Introducción
 
 Para esta versión de Microsoft Rights Management SDK 4.2, el enfoque del inicio rápido para una aplicación es a través de guías de configuración del entorno de desarrollo para cada uno de los sistemas operativos y plataformas. Comience a crear la aplicación con derechos habilitados haciendo lo siguiente:
@@ -61,6 +59,6 @@ Para esta versión de Microsoft Rights Management SDK 4.2, el enfoque del inicio
   |[Recursos de la Comunidad](community-resources.md)|Active Directory Rights Management Services es compatible con la creciente comunidad de desarrolladores en varias plataformas.|
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 
