@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/09/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Descargar e instalar la aplicación para uso compartido de Rights Management
+
+*Se aplica a: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 con SP1, Windows 8, Windows 8.1*
+
 No hace falta que sea un administrador local para instalar la aplicación RMS sharing. Sin embargo, si no lo es y usa Office 2010, hay algunas limitaciones. Para más información, consulte la sección [Si no es un administrador local y usa Office 2010](#if-you-are-not-a-local-administrator-and-use-office-2010) de esta página.
 
 ## Para descargar e instalar la aplicación Rights Management sharing
@@ -34,9 +37,9 @@ No hace falta que sea un administrador local para instalar la aplicación RMS sh
 
 2.  En la sección **Equipos** , haga clic en el icono de la **aplicación RMS para Windows** y guarde el archivo **Setup.exe** para instalar la aplicación Microsoft Rights Management sharing.
 
-3.  Haga doble clic en el archivo Setup.exe que se descargó. Si el sistema le pregunta si desea continuar, haga clic en **Sí**.
+3.  Haga doble clic en el archivo Setup.exe que se descargó. Si el sistema le pregunta si desea continuar, haga clic en **Sí**..
 
-4.  En la página **Instalar Microsoft RMS** , haga clic en **siguiente**y espere a que finalice la instalación.
+4.  En la página **Instalar Microsoft RMS** , haga clic en **Siguiente**y espere a que finalice la instalación.
 
     > [!NOTE]
     > La aplicación RMS sharing requiere Microsoft .NET Framework, versión mínima 4.0. El programa de instalación comprueba si está instalado y, si no es así, verá un mensaje con un vínculo para instalarlo.
@@ -65,13 +68,13 @@ Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de 
 
 -   [Ejemplos de uso de la aplicación RMS sharing](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [¿Qué desea hacer?](sharing-app-user-guide.md##what-do-you-want-to-do-)
+-   [¿Qué desea hacer?](sharing-app-user-guide.md#what-do-you-want-to-do-)
 
 ## Véase también
 [Guía de usuario de la aplicación de uso compartido Rights Management](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

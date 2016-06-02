@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Notas de la implementación del cliente de RMS
+
+*Se aplica a: Active Directory Rights Management Services, Azure Rights Management, Windows 7 con SP1, Windows 8, Windows 8.1, Windows Server 2008, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, Windows Vista*
+
 La versión de cliente (cliente de RMS) de Rights Management Service 2 también se conoce como cliente MSIPC. Es el software para equipos Windows que se comunica con Microsoft Rights Management Services en el entorno local o en la nube para ayudar a proteger el acceso a la información que fluye a través de aplicaciones y dispositivos, y el uso de esta, dentro de los límites de su organización, o fuera de esos límites administrados. Además de incluirse con la [aplicación de uso compartido de Rights Management para Windows](sharing-app-windows.md), el cliente RMS está disponible [como descarga opcional](http://www.microsoft.com/download/details.aspx?id=38396) que, con la confirmación y la aceptación de su contrato de licencia, se puede distribuir libremente con software de terceros para que los clientes puedan proteger y consumir contenido protegido con Rights Management Services.
 
 
@@ -37,10 +40,9 @@ El cliente RMS se puede redistribuir libremente e incluirse con otras aplicacion
 -   Convierta el cliente RMS en un requisito previo para la aplicación. Con esta opción, tendrá que proporcionar a los usuarios instrucciones adicionales para que obtengan, instalen y actualicen sus equipos con el cliente para poder usar la aplicación.
 
 ## Instalación del cliente RMS
-El cliente RMS está incluido en un archivo ejecutable de instalador denominado **setup_msipc_***&lt;arch&gt;***.exe**, donde*&lt;arch&gt;* es **x86** (para equipos cliente de 32 bits) o **x64** (para equipos cliente de 64 bits). El paquete del instalador de 64 bits (x 64) instala un ejecutable de tiempo de ejecución de 32 bits para la compatibilidad con las aplicaciones de 32 bits que se ejecutan en una instalación de sistema operativo de 64 bit, y un archivo ejecutable de tiempo de ejecución de 64 bits para la compatibilidad con aplicaciones nativas de 64 bits. No se ejecutará el programa de instalación de 32 bits (x 86) en una instalación de Windows de 64 bits.
+El cliente RMS está incluido en un archivo ejecutable de instalador denominado **setup_msipc_***<arch>***.exe**, donde *<arch>* es **x86** (para equipos cliente de 32 bits) o **x64** (para equipos cliente de 64 bits). El paquete del instalador de 64 bits (x 64) instala un ejecutable de tiempo de ejecución de 32 bits para la compatibilidad con las aplicaciones de 32 bits que se ejecutan en una instalación de sistema operativo de 64 bit, y un archivo ejecutable de tiempo de ejecución de 64 bits para la compatibilidad con aplicaciones nativas de 64 bits. No se ejecutará el programa de instalación de 32 bits (x 86) en una instalación de Windows de 64 bits.
 
-> [!NOTE]
-> Necesita privilegios elevados para instalar el cliente RMS, como ser miembro del grupo Administradores en el equipo local.
+> [!NOTE] Necesita privilegios elevados para instalar el cliente RMS, como ser miembro del grupo Administradores en el equipo local.
 
 Puede instalar al cliente RMS mediante cualquiera de los siguientes métodos de instalación:
 
@@ -50,7 +52,7 @@ Puede instalar al cliente RMS mediante cualquiera de los siguientes métodos de 
     setup_msipc_x64.exe /quiet
     ```
 
--   **Modo interactivo.** Como alternativa, puede instalar al cliente RMS mediante el programa de instalación basado en GUI proporcionado por el Asistente para la instalación del cliente RMS. Para ello, haga doble clic en el paquete del instalador del cliente RMS (**setup_msipc_***&lt;arch&gt;***.exe**) en la carpeta del equipo local en la que se copió o descargó.
+-   **Modo interactivo.** Como alternativa, puede instalar al cliente RMS mediante el programa de instalación basado en GUI proporcionado por el Asistente para la instalación del cliente RMS. Para ello, haga doble clic en el paquete del instalador del cliente RMS (**setup_msipc_***<arch>***.exe**) en la carpeta del equipo local en la que se copió o descargó.
 
 ## Preguntas y respuestas sobre el cliente RMS
 La siguiente sección contiene las preguntas más frecuentes sobre el cliente RMS y las respuestas a ellas.
@@ -69,7 +71,7 @@ El cliente RMS es compatible con los siguientes sistemas operativos:
 El cliente RMS es compatible con plataformas informáticas x86 y x64.
 
 ### ¿Donde está instalado el cliente RMS?
-De forma predeterminada, el cliente RMS se instala en %ProgramFiles%\Active Directory Rights Management Services Client 2.&lt;número de versión secundario&gt;.
+De forma predeterminada, el cliente RMS se instala en %ProgramFiles%\Active Directory Rights Management Services Client 2.<minor version number>.
 
 ### ¿Qué archivos están asociados con el software cliente de RMS?
 Los siguientes archivos se instalan como parte del software cliente de RMS:
@@ -101,23 +103,23 @@ El cliente RMS almacena las licencias en el disco local y también almacena en c
 
 |Descripción|Rutas de acceso de modo cliente|Rutas de acceso de modo servidor|
 |---------------|---------------------|---------------------|
-|Ubicación del almacén de licencias|%localappdata%\Microsoft\MSIPC|%allusersprofile%\Microsoft\MSIPC\Server\*&lt;SID&gt;*\|
-|Ubicación del almacén de plantillas|%localappdata%\Microsoft\MSIPC\Templates|%allusersprofile%\Microsoft\MSIPC\Server\Templates\*&lt;SID&gt;*\|
-|Ubicación del Registro|HKEY_CURRENT_USER<br /> \Software<br /> \Classes<br /> \Local Settings<br /> \Software<br /> \Microsoft<br /> \MSIPC|HKEY_CURRENT_USER<br /> \Software<br /> \Microsoft<br /> \MSIPC<br /> \Server<br /> \*&lt;SID&gt;*|
+|Ubicación del almacén de licencias|%localappdata%\Microsoft\MSIPC|%allusersprofile%\Microsoft\MSIPC\Server\*<SID>*\|
+|Ubicación del almacén de plantillas|%localappdata%\Microsoft\MSIPC\Templates|%allusersprofile%\Microsoft\MSIPC\Server\Templates\*<SID>*\|
+|Ubicación del Registro|HKEY_CURRENT_USER<br /> \Software<br /> \Classes<br /> \Local Settings<br /> \Software<br /> \Microsoft<br /> \MSIPC|HKEY_CURRENT_USER<br /> \Software<br /> \Microsoft<br /> \MSIPC<br /> \Server<br /> \*<SID>*|
 > [!NOTE]
-> *&lt;SID&gt;* es el identificador de seguridad (SID) de la cuenta con la que se ejecuta la aplicación de servidor. Por ejemplo, si la aplicación se ejecuta con la cuenta integrada de Servicio de red, reemplace *&lt;SID&gt;* por el valor del SID conocido de esa cuenta (S-1-5-20).
+> *<SID>* es el identificador seguro (SID) de la cuenta en la que se ejecuta la aplicación de servidor. Por ejemplo, si la aplicación se ejecuta con la cuenta integrada de servicio de red, reemplace *<SID>* por el valor del SID conocido de esa cuenta (S-1-5-20).
 
 ### Configuración del Registro de Windows para el cliente RMS
 Puede usar las claves del Registro de Windows para establecer o modificar algunas configuraciones del cliente RMS. Por ejemplo, como administrador de aplicaciones habilitadas para RMS que se comunican con servidores de AD RMS, podría actualizar la ubicación de servicio empresarial (reemplazar el servidor de AD RMS seleccionado actualmente para publicación) en función de la ubicación actual del equipo cliente dentro de la topología de Active Directory. O bien, podría habilitar el seguimiento de RMS en el equipo cliente, para ayudar a solucionar un problema con una aplicación habilitada para RMS. Use la tabla siguiente para identificar la configuración del Registro que puede cambiar para el cliente RMS.
 
 |Tarea|Configuración|
 |--------|------------|
-|Solo AD RMS: Para actualizar la ubicación del servicio de empresa para un equipo cliente|Actualice las siguientes claves del Registro:<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\EnterpriseCertification<br />REG_SZ: default<br /><br />**Valor:**&lt;http o https&gt;:// *RMS_Cluster_Name*/_wmcs/Certification<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\EnterprisePublishing<br />REG_SZ: default<br /><br />**Valor:** &lt;http o https&gt;:// *RMS_Cluster_Name*/_wmcs/Licensing|
+|Solo AD RMS: Para actualizar la ubicación del servicio de empresa para un equipo cliente|Actualice las siguientes claves del Registro:<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\EnterpriseCertification<br />REG_SZ: default<br /><br />**Valor:**<http or https>:// *RMS_Cluster_Name*/_wmcs/Certification<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\EnterprisePublishing<br />REG_SZ: default<br /><br />**Valor:** <http or https>:// *RMS_Cluster_Name*/_wmcs/Licensing|
 |Para habilitar y deshabilitar el seguimiento|Actualice la siguiente clave del Registro:<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC<br />REG_DWORD: Trace<br /><br />**Valor:** 1 para habilitar el seguimiento, 0 para deshabilitar el seguimiento (valor predeterminado)|
-|Para cambiar la frecuencia en días de actualización de las plantillas|Los siguientes valores del Registro especifican la frecuencia con que se actualizan las plantillas en el equipo del usuario si no se establece el valor TemplateUpdateFrequencyInSeconds.  Si ninguno de estos valores se establecen, el intervalo de actualización predeterminado para las aplicaciones que usan el cliente RMS (versión 1.0.1784.0) para descargar las plantillas es de 1 día. Las versiones anteriores a esta tienen un valor predeterminado de cada 7 días.<br /><br />**Modo cliente:**<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC<br />REG_DWORD: TemplateUpdateFrequency<br /><br />**Valor:** Valor entero que especifica el número de días (mínimo de 1) entre descargas.<br /><br />**Modo servidor:**<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\Server\*&lt;SID&gt;*<br />REG_DWORD: TemplateUpdateFrequency<br /><br />**Valor:** valor entero que especifica el número de días (mínimo de 1) entre descargas.|
-|Para cambiar la frecuencia en segundos de actualización de las plantillas<br /><br />Importante: si se especifica, se omite el valor para actualizar la frecuencia de las plantillas en días. Especifique una o la otra, no ambas.|Los siguientes valores del Registro especifican la frecuencia con que se actualizan las plantillas en el equipo del usuario. Si este valor, o el valor para cambiar la frecuencia en días (TemplateUpdateFrequency) no se establece, el intervalo de actualización predeterminado para las aplicaciones que usan el cliente RMS (versión 1.0.1784.0) para descargar las plantillas es de 1 día. Las versiones anteriores a esta tienen un valor predeterminado de cada 7 días.<br /><br />**Modo cliente:**<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC<br />REG_DWORD: TemplateUpdateFrequencyInSeconds<br /><br />**Valor:** Valor entero que especifica el número de segundos (mínimo de 1) entre descargas.<br /><br />**Modo servidor:**<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\Server\*&lt;SID&gt;*<br />REG_DWORD: TemplateUpdateFrequencyInSeconds<br /><br />**Valor:** valor entero que especifica el número de segundos (mínimo de 1) entre descargas.|
-|Solo AD RMS: Para descargar plantillas de inmediato en la siguiente solicitud de publicación|Durante las pruebas y evaluaciones, puede usar el cliente RMS para descargar plantillas lo antes posible. Para ello, quite la siguiente clave del Registro y el cliente RMS descargará las plantillas inmediatamente en la siguiente solicitud de publicación en lugar de esperar el tiempo especificado por el valor del Registro TemplateUpdateFrequency:<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC\&lt;Server Name&gt;\Template<br /><br />**Nota**: &lt;Server Name&gt; podría tener URL externas (corprights.contoso.com) e internas (corprights) y, por lo tanto, dos entradas diferentes.|
-|Solo AD RMS: Para habilitar la compatibilidad con la autenticación federada|Si el equipo cliente RMS se conecta a un clúster de AD RMS mediante una confianza federada, debe configurar el dominio de inicio de la federación.<br /><br />HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\Federation<br />REG_SZ: FederationHomeRealm<br /><br />**Valor:** el valor de esta entrada del Registro es el identificador uniforme de recursos (URI) para el servicio de federación (por ejemplo, "https://fs-01.contoso.com").|
+|Para cambiar la frecuencia en días de actualización de las plantillas|Los siguientes valores del Registro especifican la frecuencia con que se actualizan las plantillas en el equipo del usuario si no se establece el valor TemplateUpdateFrequencyInSeconds.  Si ninguno de estos valores se establecen, el intervalo de actualización predeterminado para las aplicaciones que usan el cliente RMS (versión 1.0.1784.0) para descargar las plantillas es de 1 día. Las versiones anteriores a esta tienen un valor predeterminado de cada 7 días.<br /><br />**Modo cliente:**<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC<br />REG_DWORD: TemplateUpdateFrequency<br /><br />**Valor:** Valor entero que especifica el número de días (mínimo de 1) entre descargas.<br /><br />**Modo servidor:**<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\Server\\*\<SID\>\*<br />REG_DWORD: TemplateUpdateFrequency<br /><br />**Valor:** valor entero que especifica el número de días (mínimo 1) entre descargas.|
+|Para cambiar la frecuencia en segundos de actualización de las plantillas<br /><br />Importante: si se especifica, se omite el valor para actualizar la frecuencia de las plantillas en días. Especifique una o la otra, no ambas.|Los siguientes valores del Registro especifican la frecuencia con que se actualizan las plantillas en el equipo del usuario. Si este valor, o el valor para cambiar la frecuencia en días (TemplateUpdateFrequency) no se establece, el intervalo de actualización predeterminado para las aplicaciones que usan el cliente RMS (versión 1.0.1784.0) para descargar las plantillas es de 1 día. Las versiones anteriores a esta tienen un valor predeterminado de cada 7 días.<br /><br />**Modo cliente:**<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC<br />REG_DWORD: TemplateUpdateFrequencyInSeconds<br /><br />**Valor:** Valor entero que especifica el número de segundos (mínimo de 1) entre descargas.<br /><br />**Modo servidor:**<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\Server\\*\<SID\>\*<br />REG_DWORD: TemplateUpdateFrequencyInSeconds<br /><br />**Valor:** valor entero que especifica el número de segundos (mínimo 1) entre descargas.|
+|Solo AD RMS: Para descargar plantillas de inmediato en la siguiente solicitud de publicación|Durante las pruebas y evaluaciones, puede usar el cliente RMS para descargar plantillas lo antes posible. Para ello, quite la siguiente clave del Registro y el cliente RMS descargará las plantillas inmediatamente en la siguiente solicitud de publicación en lugar de esperar el tiempo especificado por el valor del Registro TemplateUpdateFrequency:<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC\\<Server Name>\Template<br /><br />**Nota**: <Server Name> podría tener URL externas (corprights.contoso.com) e internas (corprights) y, por lo tanto, dos entradas diferentes.|
+|Solo AD RMS: para habilitar la compatibilidad con la autenticación federada|Si el equipo cliente RMS se conecta a un clúster de AD RMS mediante una confianza federada, debe configurar el dominio de inicio de la federación.<br /><br />HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\Federation<br />REG_SZ: FederationHomeRealm<br /><br />**Valor:** el valor de esta entrada del Registro es el identificador uniforme de recursos (identificador URI) para el servicio de federación (por ejemplo, "http://TreyADFS.trey.net/adfs/services/trust").<br /><br /> **Nota**: Es importante que especifique http y no https para este valor. Además, si su aplicación de 32 bits basada en MSIPC se ejecuta en una versión de 64 bits de Windows, la ubicación será HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC\Federation. Para obtener un ejemplo de configuración, vea [Implementación de Active Directory Rights Management Services con Servicios de federación de Active Directory (AD FS)](https://technet.microsoft.com/library/dn758110.aspx).|
 |Solo AD RMS: para admitir servidores de federación asociados que requieren autenticación basada en formularios para la entrada de usuario|De forma predeterminada, el cliente RMS funciona en modo silencioso y no es necesaria la intervención del usuario. Los servidores de federación asociados, sin embargo, pueden configurarse para requerir la entrada del usuario, como la autenticación basada en formularios. En este caso, debe configurar el modo silencioso para omitir al cliente RMS, de modo que el formulario de autenticación federado aparezca en una ventana del explorador y se promueva la autenticación del usuario.<br /><br />HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\Federation<br />REG_DWORD: EnableBrowser<br /><br />**Nota**: si el servidor de federación está configurado para usar la autenticación basada en formularios, esta clave es obligatoria. Si el servidor de federación está configurado para usar la autenticación integrada de Windows, esta clave no es obligatoria.|
 |Solo AD RMS: Para bloquear el consumo del servicio ILS|De forma predeterminada, el cliente RMS permite el consumo de contenido protegido por el servicio ILS, pero puede configurar el cliente para bloquear este servicio mediante la configuración de la siguiente clave del Registro. Si esta clave del Registro se configura para bloquear el servicio ILS, cualquier intento de abrir y consumir contenido protegido por el servicio ILS devolverá el siguiente error:<br />HRESULT_FROM_WIN32(ERROR_ACCESS_DISABLED_BY_POLICY)<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC<br />REG_DWORD: **DisablePassportCertification**<br /><br />**Valor:** 1 para bloquear el consumo de ILS, 0 para permitir el consumo de ILS (valor predeterminado)|
 
@@ -126,7 +128,7 @@ Las plantillas facilitan a los usuarios y administradores la aplicación de prot
 
 **Modo cliente:** %localappdata%\Microsoft\MSIPC\UnmanagedTemplates
 
-**Modo servidor:** %allusersprofile%\Microsoft\MSIPC\Server\UnmanagedTemplates\*&lt;SID&gt;*
+**Modo servidor:** %allusersprofile%\Microsoft\MSIPC\Server\UnmanagedTemplates\\*\<SID\>\*
 
 Cuando use esta carpeta, no hay ninguna convención de nomenclatura especial necesaria, excepto que las plantillas debe emitirlas el servidor o servicio RMS y que deben tener la extensión de nombre de archivo .xml. Por ejemplo, Contoso-Confidential.xml o Contoso-ReadOnly.xml son nombres válidos.
 
@@ -143,7 +145,7 @@ El cliente RMS se puede limitar a usar únicamente servidores de AD RMS de confi
 **Para agregar a miembros a la lista de servidores de AD RMS de confianza**
 
 -   HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\TrustedServers\
-    REG_SZ: *&lt;URL_or_HostName&gt;*
+    REG_SZ: *<URL_or_HostName>*
 
     **Valor:** los valores de cadena que agregó en esta ubicación de la clave del Registro pueden tener un formato de nombre de dominio DNS (por ejemplo, **adrms.contoso.com**) o URL completas a servidores de AD RMS de confianza (por ejemplo, **https://adrms.contoso.com**). Si una URL especificada comienza con **https://**, el cliente RMS usará SSL o TLS para ponerse en contacto con el servidor de AD RMS especificado.
 
@@ -190,19 +192,17 @@ Como alternativa al uso de un SCP o en aquellos casos en los que no exista uno, 
 
 2.  En el Editor del Registro, desplácese hasta **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC**.
 
-    > [!IMPORTANT]
-    > Si está ejecutando una aplicación de 32 bits en un equipo de 64 bits, la ruta de acceso será la siguiente: 
-    > **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC**
+    > [!IMPORTANT] Si está ejecutando una aplicación de 32 bits en un equipo de 64 bits, la ruta de acceso será la siguiente: **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC**
 
 3.  Para crear la subclave ServiceLocation, haga clic con el botón derecho en **MSIPC**, seleccione **Nuevo**, haga clic en **Clave** y luego escriba **ServiceLocation**.
 
 4.  Para crear la subclave EnterpriseCertification, haga clic con el botón derecho en **ServiceLocation**, seleccione **Nuevo**, haga clic en **Clave** y luego escriba **EnterpriseCertification**.
 
-5.  Para establecer la dirección URL de certificación de empresa, haga doble clic en el valor **(Predeterminado)**, en la subclave **EnterpriseCertification** y, cuando aparezca el cuadro de diálogo **Editar cadena**, en **Información del valor**, escriba &lt;http o https&gt;://*AD RMS_cluster_name*/_wmcs/Certification y luego haga clic en **Aceptar**.
+5.  Para establecer la dirección URL de certificación de empresa, haga doble clic en el valor **(Predeterminado)**, en la subclave **EnterpriseCertification** y, cuando aparezca el cuadro de diálogo **Editar cadena**, en **Información del valor**, escriba <http or https>://*AD RMS_cluster_name*/_wmcs/Certification y luego haga clic en **Aceptar**.
 
 6.  Para crear la subclave EnterprisePublishing, haga clic con el botón derecho en **ServiceLocation**, seleccione **Nuevo**, haga clic en **Clave** y luego escriba EnterprisePublishing.
 
-7.  Para configurar la URL de publicación de empresa, haga doble clic en **(Predeterminado)**, en la subclave **EnterprisePublishing**, y cuando aparezca el cuadro de diálogo **Editar cadena**, escriba en **Información del valor** &lt;http o https&gt;://*AD RMS_cluster_name*/_wmcs/Licensing y luego haga clic en **Aceptar**.
+7.  Para configurar la URL de publicación de empresa, haga doble clic en **(Predeterminado)**, en la subclave **EnterprisePublishing**, y cuando aparezca el cuadro de diálogo **Editar cadena**, escriba en **Información del valor** <http or https>://*AD RMS_cluster_name*/_wmcs/Licensing y luego haga clic en **Aceptar**.
 
 8.  Cierre el Editor del Registro.
 
@@ -233,8 +233,7 @@ En algunos casos, deberá redirigir el tráfico durante la detección de servici
 
     **Valor:** https://fabrikam.com/_wmcs/licensing
 
-    > [!NOTE]
-    > Si el servidor de licencias anterior tiene especificadas direcciones de intranet y extranet, se debe definir una nueva asignación de nombre y valor para ambas URL en la clave LicensingRedirection.
+    > [!NOTE] Si el servidor de licencias anterior tiene especificadas direcciones URL de intranet y extranet, se debe definir una nueva asignación de nombre y valor para ambas URL en la clave LicensingRedirection.
 
 5.  Repita el paso anterior para todos los servidores que deben redirigirse.
 
@@ -242,6 +241,6 @@ En algunos casos, deberá redirigir el tráfico durante la detección de servici
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO3-->
 
 

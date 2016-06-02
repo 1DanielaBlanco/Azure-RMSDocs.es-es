@@ -6,8 +6,8 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
-ms.topic: article
+ms.date: 05/20/2016
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Escenario: Configurar carpetas de trabajo para la protección persistente
+
+*Se aplica a: Azure Rights Management, Office 365*
+
 En este escenario y en la documentación de usuario correspondiente se usa Azure Rights Management para aplicar protección persistente a documentos de Office en [Carpetas de trabajo](https://technet.microsoft.com/library/dn265974.aspx). Carpetas de trabajo emplea un servicio de rol para servidores de archivos que ejecutan Windows Server que proporciona a los usuarios una forma coherente de tener acceso a sus archivos de trabajo desde sus equipos y dispositivos. Carpetas de trabajo dispone de un cifrado propio para proteger los archivos, pero esta protección se pierde si los archivos se mueven fuera del entorno de Carpetas de trabajo. Esto ocurre, por ejemplo, cuando un usuario copia los archivos sincronizados y los guarda en un almacenamiento que no está bajo el control del departamento de TI, o cuando los archivos se envían por correo electrónico a otros usuarios.
 
 La protección extra que Azure Rights Management aporta contribuye a evitar la pérdida accidental de datos, ya que impide que personas ajenas a su organización puedan ver los archivos. Para ello, puede usar una de las plantillas de directiva de permisos predeterminadas integradas. Pero, antes de implementar este escenario, tenga en cuenta si los usuarios van a necesitar compartir legítimamente cualquiera de estos archivos con personas ajenas a la organización. Podría ser el caso de un usuario que, tras trabajar en el borrador de una lista de precios, envíe por correo electrónico la versión final a sus clientes de otra organización. Si usa la plantilla de Rights Management predeterminada para Carpetas de trabajo, esos clientes de la otra organización no podrán leer el documento enviado por correo electrónico. Para dar cabida a este requisito, se puede crear una plantilla personalizada que permita a los usuarios aplicar una nueva directiva de permisos al archivo, de forma que se reemplace la restricción original de todos los empleados por las personas que se especifiquen en el correo electrónico.
@@ -46,7 +49,7 @@ Las instrucciones son adecuadas para el conjunto de circunstancias siguiente:
 -   En cuanto a los archivos que se deben compartir con personas no especificadas en la plantilla de directiva de permisos (por ejemplo, los usuarios de otra organización), habrá que aplicar una nueva directiva de permisos que reemplace la protección de la directiva de permisos original.
 
 ## Instrucciones de implementación
-![](../media/AzRMS_AdminBanner.png)
+![Instrucciones para el administrador para la implementación rápida de Azure RMS](../media/AzRMS_AdminBanner.png)
 
 Asegúrese de que se cumplen los siguientes requisitos y, luego, siga las instrucciones de los procedimientos correspondientes antes de pasar a la documentación del usuario.
 
@@ -57,7 +60,7 @@ Para que las instrucciones de este escenario funcionen, debe cumplir lo siguient
 |---------------|--------------------------------|
 |Azure Rights Management no está activado|[Activar Rights Management de Azure](https://technet.microsoft.com/library/jj658941.aspx)|
 |Ha sincronizado sus cuentas de usuario de Active Directory locales con Azure Active Directory u Office 365, incluyendo su dirección de correo electrónico. Esto es necesario para todos los usuarios que usa Carpetas de trabajo.|[Preparación de Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
-|Uno de los siguientes:<br /><br />Para usar una plantilla predeterminada para todos los usuarios que les impida aplicar una nueva directiva de permisos: no se ha almacenado la plantilla predeterminada, **&lt;nombre de la organización&gt; - Confidencial**<br /><br />Para usar una plantilla personalizada que permita a los usuarios aplicar una nueva directiva de permisos: use las siguientes instrucciones para crear una plantilla personalizada|[Configuración de plantillas personalizadas para Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)|
+|Uno de los siguientes:<br /><br />- Para usar una plantilla predeterminada para todos los usuarios que les impida aplicar una nueva directiva de permisos: no se ha archivado la plantilla predeterminada, **&lt;nombre de la organización&gt; - Confidencial**<br /><br />- Para usar una plantilla personalizada que permita a los usuarios aplicar una nueva directiva de permisos: use las siguientes instrucciones para crear una plantilla personalizada|[Configuración de plantillas personalizadas para Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)|
 |El conector de Rights Management está instalado, autorizado para el equipo de Windows Server y configurado para el rol de **servidor FCI**.|[Implementación del conector de Azure Rights Management](https://technet.microsoft.com/library/dn375964.aspx)|
 |La aplicación Rights Management sharing se implementa en los equipos de los usuarios que ejecutan Windows|[Implementación automática de la aplicación Microsoft Rights Management sharing](https://technet.microsoft.com/library/dn339003%28v=ws.10%29.aspx)|
 
@@ -125,6 +128,6 @@ Si ha configurado la plantilla personalizada según lo descrito en este escenari
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO3-->
 
 

@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/20/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Planeamiento e implementación de la clave de inquilino de Azure Rights Management
+
+*Se aplica a: Azure Rights Management, Office 365*
+
 Use la información de este artículo para tratar de planificar y administrar la clave de inquilino de Rights Management (RMS) para Azure RMS. Por ejemplo, en lugar de que Microsoft administre su clave de inquilino (valor predeterminado), podría administrar su propia clave de inquilino para cumplir con las normas específicas que se aplican a su organización.  La administración de su propia clave de inquilino también se conoce aportar su propia clave, o BYOK, por sus siglas del inglés.
 
 > [!NOTE]
@@ -42,7 +45,7 @@ Si implementa Azure RMS mediante una clave de inquilino administrada por Microso
 |Las claves las crea el usuario y están protegidas en un módulo de seguridad de hardware (HSM).|BYOK<br /><br />Actualmente, esta configuración dará lugar a funcionalidad reducida de IRM en Exchange Online. Para más información, consulte [Precio y restricciones de BYOK](byok-price-restrictions.md).|
 
 ## Elija su topología de clave de inquilino: Administrada por Microsoft (opción predeterminada) o por usted (BYOK)
-Decide qué topología de clave de inquilino es la mejor para su organización. De forma predeterminada, Azure RMS genera su clave de inquilino y administra la mayoría de aspectos del ciclo de vida de la clave de inquilino. Esta es la opción más simple con las mínimas sobrecargas administrativas. En la mayoría de casos, no es necesario ni tan siquiera que sepa que tiene una clave de inquilino. Simplemente regístresee para Azure RMS y el resto del proceso de administración de la clave será manejado por Microsoft.
+Decide qué topología de clave de inquilino es la mejor para su organización. De forma predeterminada, Azure RMS genera su clave de inquilino y administra la mayoría de aspectos del ciclo de vida de la clave de inquilino. Esta es la opción más simple con las mínimas sobrecargas administrativas. En la mayoría de casos, no es necesario ni tan siquiera que sepa que tiene una clave de inquilino. Simplemente regístrese para Azure RMS y el resto del proceso de administración de la clave será manejado por Microsoft.
 
 De otra forma, podría querer poseer control absoluto sobre tu clave de inquilino, lo que implica la creación de su clave de inquilino y mantener la copia maestra en su infraestructura local. Con frecuencia este escenario también se conoce como Aportar tu propia clave (BYOK). Con esta opción, el proceso es:
 
@@ -62,11 +65,11 @@ Si decide que Microsoft debe encargarse de administrar su clave de inquilino, se
 
 Los diagramas siguientes muestran y comparan estas dos opciones. El primer diagrama muestra las pocas sobrecargas de administrador que se dan en la configuración predeterminada cuando Microsoft administra la clave de inquilino.
 
-![](../media/RMS_BYOK_cloud.png)
+![Ciclo de vida de la clave de inquilino de Azure RMS: administrado por Microsoft, valor predeterminado.](../media/RMS_BYOK_cloud.png)
 
 El segundo diagrama muestra los pasos adicionales necesarios cuando eres tú el que administra su propia clave de inquilino.
 
-![](../media/RMS_BYOK_onprem.png)
+![Ciclo de vida de la clave de inquilino de Azure RMS: administrado por el usuario, BYOK.](../media/RMS_BYOK_onprem.png)
 
 Si decide dejar que Microsoft administre su clave de inquilino, no se necesita hacer nada más para generar la clave y puede ir directamente a [Pasos siguientes](plan-implement-tenant-key.md#next-steps).
 
@@ -90,7 +93,7 @@ Consulte la tabla siguiente para consultar una lista de requisitos previos para 
 |Una suscripción que admita Azure RMS.|Para más información sobre las suscripciones disponibles, consulte [Suscripciones en la nube que son compatibles con Azure RMS](../get-started/requirements-subscriptions.md).|
 |No use RMS para individuos o Exchange Online. O bien, si usa Exchange Online, comprenda y acepte las limitaciones de uso de BYOK con esta configuración.|Para más información sobre las restricciones y limitaciones actuales para BYOK, vea [Precio y restricciones de BYOK](byok-price-restrictions.md).<br /><br />**Importante**: actualmente, BYOK no es compatible con Exchange Online.|
 |HSM de Thales, tarjetas inteligentes y software de soporte.<br /><br />**Nota**: Si migra de AD RMS a Azure RMS mediante una clave de software a una clave de hardware, debe tener como mínimo una versión 11.62 de los controladores de Thales.|Debe tener acceso al módulo de seguridad de hardware de Thales y al conocimiento operacional básico de los HSM de Thales. Vea [Módulo de seguridad de hardware de Thales](http://www.thales-esecurity.com/msrms/buy) para ver la lista de modelos compatibles o para comprar un HSM si no tiene ninguno.|
-|Si quiere transferir su clave de inquilino a través de Internet en lugar de encontrarse presente físicamente en Redmond, EE. UU., hay tres requisitos:<br /><br />Requisito 1: una estación de trabajo x64 sin conexión con un sistema operativo Windows 7 como mínimo y un software Thales nShield que sea como mínimo la versión 11.62.<br /><br />Si esta estación de trabajo funciona con Windows 7, debe [instalar Microsoft .NET Framework 4.5](http://go.microsoft.com/fwlink/?LinkId=225702).<br /><br />Requisito 2: una estación de trabajo que esté conectada a Internet y tenga como mínimo un sistema operativo Windows 7.<br /><br />Requisito 3: una unidad USB u otro dispositivo de almacenamiento portátil que tenga al menos un espacio libre de 16 MB.|Estos requisitos previos no son necesarios si viajas a Redmond y transfiere su clave de inquilino en persona.<br /><br />Por motivos de seguridad, recomendamos que la primera estación de trabajo no esté conectada a una red. Sin embargo, esto no es de obligado cumplimiento.<br /><br />Nota: En las instrucciones que se indican a continuación, a esta primera estación de trabajo se la conoce como la **estación de trabajo desconectada**.<br /><br />Además, si la clave de inquilino es para una red de producción, es recomendable que use una segunda estación de trabajo independiente para descargar el conjunto de herramientas y cargar la clave de inquilino. Sin embargo, con el fin de realizar una prueba, puede usar la misma estación de trabajo como la primera.<br /><br />Nota: En las instrucciones que se indican a continuación, a esta segunda estación de trabajo se la conoce como la **estación de trabajo conectada a Internet**.|
+|Si quiere transferir su clave de inquilino a través de Internet en lugar de encontrarse presente físicamente en Redmond, EE. UU., hay tres requisitos:<br /><br />1: Una estación de trabajo sin conexión x64 con un sistema operativo Windows 7 como mínimo y un software Thales nShield que sea como mínimo la versión 11.62.<br /><br />Si esta estación de trabajo funciona con Windows 7, debe [instalar Microsoft .NET Framework 4.5](http://go.microsoft.com/fwlink/?LinkId=225702).<br /><br />2: Una estación de trabajo que esté conectada a Internet y tenga un sistema operativo Windows 7 como mínimo.<br /><br />3: Una unidad USB u otro dispositivo de almacenamiento portátil que tenga al menos un espacio libre de 16 MB.|Estos requisitos previos no son necesarios si viajas a Redmond y transfiere su clave de inquilino en persona.<br /><br />Por motivos de seguridad, recomendamos que la primera estación de trabajo no esté conectada a una red. Sin embargo, esto no es de obligado cumplimiento.<br /><br />Nota: En las instrucciones que se indican a continuación, a esta primera estación de trabajo se la conoce como la **estación de trabajo desconectada**.<br /><br />Además, si la clave de inquilino es para una red de producción, es recomendable que use una segunda estación de trabajo independiente para descargar el conjunto de herramientas y cargar la clave de inquilino. Sin embargo, con el fin de realizar una prueba, puede usar la misma estación de trabajo como la primera.<br /><br />Nota: En las instrucciones que se indican a continuación, a esta segunda estación de trabajo se la conoce como la **estación de trabajo conectada a Internet**.|
 
 Los procedimientos para generar y usar su propia clave de inquilino dependen de si desea hacerlo a través de Internet o en persona:
 
@@ -129,13 +132,13 @@ Ahora que ha realizado la planeación, y si es necesario, ha generado su clave d
 
         Para más información sobre la activación, consulte [Activación de Azure Rights Management](../deploy-use/activate-service.md).
 
-    -   Si ya hasactivado Rights Management y, a continuación, ha decidido administrar su propia clave de inquilino, los usuarios harán la transición gradualmente desde la clave de inquilino antigua hacia la clave de inquilino nueva, y esta transición escalonada puede tardar en acabarse unas cuantas semanas. Documentos y archivos que se protegieron con la clave de inquilino antiguo siguen siendo accesibles a usuarios autorizados.
+    -   Si ya has activado Rights Management y, a continuación, ha decidido administrar su propia clave de inquilino, los usuarios harán la transición gradualmente desde la clave de inquilino antigua hacia la clave de inquilino nueva, y esta transición escalonada puede tardar en acabarse unas cuantas semanas. Documentos y archivos que se protegieron con la clave de inquilino antiguo siguen siendo accesibles a usuarios autorizados.
 
 2.  Considere la utilización del registro de uso, que registra todas las transacciones que lleva a cabo RMS.
 
     Si ha decidido administrar tu propia clave de inquilino, el registro incluye información acerca del uso de su clave de inquilino. Vea el ejemplo siguiente de un archivo de registro que se muestra en Excel, donde los tipos de solicitud **Decrypt** y **SignDigest** muestran que se está usando la clave de inquilino.
 
-    ![](../media/RMS_Logging.gif)
+    ![archivo de registro en Excel donde se usa la clave de inquilino](../media/RMS_Logging.gif)
 
     Para más información sobre el registro de uso, consulte [Registro y análisis del uso de Azure Rights Management](../deploy-use/log-analyze-usage.md).
 
@@ -145,6 +148,6 @@ Ahora que ha realizado la planeación, y si es necesario, ha generado su clave d
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO3-->
 
 

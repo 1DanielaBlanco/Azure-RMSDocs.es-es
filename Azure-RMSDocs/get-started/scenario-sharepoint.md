@@ -7,7 +7,7 @@ keywords:
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Escenario: Mantener el control de los documentos almacenados en SharePoint
+
+*Se aplica a: Azure Rights Management, Office 365*
+
 En este escenario y en la documentación de usuario correspondiente se usa Azure Rights Management para garantizar que los documentos de Office almacenados en SharePoint siguen bajo su control mediante el uso de las bibliotecas protegidas. Por ejemplo, los documentos están protegidos automáticamente frente a filtraciones accidentales o intencionadas por parte de los usuarios y puede bloquear el acceso al contenido incluso después de descargarlo o sincronizarlo. Los archivos que quiere proteger podrían usarse para colaborar internamente en documentos o planes de diseño, o bien para otras entregas. Al configurar bibliotecas protegidas para SharePoint, los archivos de Office almacenados en ellas estarán protegidos con Azure Rights Management.
 
 Las instrucciones son adecuadas para el conjunto de circunstancias siguiente:
@@ -37,7 +40,7 @@ Las instrucciones son adecuadas para el conjunto de circunstancias siguiente:
 -   Los empleados no tienen que compartir estos documentos con personas ajenas a la organización.
 
 ## Instrucciones de implementación
-![](../media/AzRMS_AdminBanner.png)
+![Instrucciones para el administrador para la implementación rápida de Azure RMS](../media/AzRMS_AdminBanner.png)
 
 Asegúrese de que se cumplen los siguientes requisitos y los procedimientos correspondientes antes de pasar a la documentación del usuario.
 
@@ -73,13 +76,13 @@ Con la siguiente plantilla, copie y pegue el anuncio en una comunicación dirigi
 
 2.  Si configuró la opción **Permitir la protección de grupos. Grupo predeterminado**, reemplace *&lt;nombre de grupo&gt;* por el nombre del grupo que ha configurado e indique el motivo para &lt;motivo por el que este grupo tiene permisos de acceso para colaborar en los archivos, pero no mediante la biblioteca de SharePoint&gt;. Si no configuró esta opción, borre esta frase.
 
-3.  Reemplace *&lt;detalles de contacto&gt;* por instrucciones sobre cómo los usuarios pueden ponerse en contacto con el departamento de soporte técnico como, por ejemplo, un vínculo de sitio web, una dirección de correo electrónico o un número de teléfono.
+3.  Reemplace *&lt;detalles de contacto&gt;* por instrucciones sobre cómo los usuarios pueden ponerse en contacto con el departamento de soporte técnico, por ejemplo, un vínculo de sitio web, una dirección de correo electrónico o un número de teléfono.
 
 4.  Haga los cambios que quiera en este anuncio y, después, envíelo a estos usuarios.
 
 En la documentación de ejemplo se muestra cómo ven los usuarios este anuncio tras las personalizaciones.
 
-![](../media/AzRMS_UsersBanner.png)
+![Documentación de usuario de la plantilla para la implementación rápida de Azure RMS](../media/AzRMS_UsersBanner.png)
 
 ### Anuncio de TI: Cambios en el sitio de &lt;nombre de la biblioteca de SharePoint&gt;
 El sitio de SharePoint, **&lt;nombre de la biblioteca de SharePoint&gt;**, está configurado ahora para poder colaborar de forma segura. Por ahora, solo los miembros de &lt;nombre de grupo&gt; pueden abrir estos documentos desde este sitio, aunque los guarde localmente o los envíe por correo electrónico a otra persona. La excepción reside en que estos documentos se pueden compartir con los miembros de &lt;nombre de grupo&gt; tras descargarlos, de forma que &lt;motivo por el que este grupo tiene permisos de acceso para colaborar en los archivos, pero no mediante la biblioteca de SharePoint&gt;. Al editar los archivos, verá un banner informativo amarillo en la parte superior del documento en el que se le indicará que tiene esta protección y quién puede acceder.
@@ -93,7 +96,7 @@ No podrá cargar documentos en el sitio &lt;nombre del sitio de SharePoint&gt; s
 -   Póngase en contacto con el departamento de soporte técnico: &lt;detalles de contacto&gt;
 
 ### Documentación de usuario de ejemplo
-![](../media/AzRMS_ExampleBanner.png)
+![Documentación de usuario de ejemplo para la implementación rápida de Azure RMS](../media/AzRMS_ExampleBanner.png)
 
 #### Anuncio de TI: Cambios en el sitio de informes y previsiones de ventas
 El sitio de SharePoint **Previsiones e informes de ventas**ahora está configurado para poder colaborar de forma segura. Por ahora, solo los miembros de nuestro equipo de ventas y marketing pueden abrir estos documentos desde este sitio, incluso aunque los guarde localmente o los envíe por correo electrónico a otra persona. La excepción es que, después de descargar los documentos, puede compartirlos con los miembros del equipo de finanzas para que puedan extraer las cifras de las previsiones mensuales. Al editar los archivos, verá un banner informativo amarillo en la parte superior del documento en el que se le indicará que tiene esta protección y quién puede acceder.
@@ -108,6 +111,6 @@ No podrá cargar documentos en el sitio de informes y previsiones de ventas si e
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO2-->
 
 

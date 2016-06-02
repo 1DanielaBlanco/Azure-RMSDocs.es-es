@@ -6,13 +6,12 @@ description: Microsoft Rights Management SDK 4.2 es compatible con varios sistem
 keywords:
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/04/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 6a8df1d8-1279-4189-b17d-f128b7ca5643
-
 # optional metadata
 
 #ROBOTS:
@@ -27,17 +26,21 @@ ms.suite: ems
 
 # Referencia de API
 
-Microsoft Rights Management SDK 4.2 admite varios sistemas operativos. Para más información sobre plataformas específicas, consulte [Novedades](release-notes.md).
+Microsoft Rights Management SDK 4.2 admite varios sistemas operativos. Para obtener más información sobre los detalles, consulte [Novedades](release-notes.md).
 
-[Referencia de la API de Android](https://stage.docs.microsoft.com/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement): referencia de la API para el sistema operativo Android.
+### Apple
+- [Referencia de la API de iOS/OS X](/rights-management/sdk/4.2/api/iOS/iOS): referencia de la API para los sistemas operativos iOS y OS X de Apple.
 
-[Referencia de la API de Linux](linux-c-api-reference.md): la referencia de la API para el soporte técnico del sistema operativo de la versión Linux se hospeda en Github: [RMS SDK para C++](http://azuread.github.io/rms-sdk-for-cpp/annotated.html).
+### Google
+- [Espacios de nombres de Android](android-namespaces.md)
 
-[Referencia de la API de iOS/OS X](https://stage.docs.microsoft.com/rights-management/sdk/4.2/api/iOS/iOS): referencia de la API para los sistemas de operativos OS X y Apple iOS.
+### Linux
+- [Referencia de la API de Linux](linux-c-api-reference.md): la referencia de la API para el soporte técnico del sistema operativo de la versión Linux se hospeda en Github: [RMS SDK para C++](http://azuread.github.io/rms-sdk-for-cpp/annotated.html).
 
-[Referencia de la API de Windows](https://stage.docs.microsoft.com/rights-management/sdk/4.2/api/winrt/Microsoft.RightsManagement): referencia de la API para los SDK de aplicaciones de Tienda Windows y Windows Phone.
+### Microsoft
+- [Referencia de la API de Windows](/rights-management/sdk/4.2/api/winrt/Microsoft.RightsManagement): referencia de la API para los SDK de aplicaciones de Tienda Windows y Windows Phone.
 
-## Temas relacionados ##
+## Temas relacionados
 
 * [Introducción](get-started.md)
  
@@ -45,6 +48,6 @@ Microsoft Rights Management SDK 4.2 admite varios sistemas operativos. Para más
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

@@ -27,6 +27,9 @@ ms.suite: ems
 
 
 # Cómo averiguar si los usuarios se suscribieron para obtener RMS para usuarios
+
+*Se aplica a: Azure Rights Management*
+
 Como administrador, ¿cómo sabes si tus usuarios se han registrado para RMS para usuarios? Puede usar uno de estos métodos o combinarlos según su criterio:
 
 -   Pregunte a los usuarios cómo protegen archivos muy confidenciales, especialmente cuando colaboran con otras personas de fuera de la organización.
@@ -35,10 +38,10 @@ Como administrador, ¿cómo sabes si tus usuarios se han registrado para RMS par
 
 -   Use una solución de administración de sistemas, como System Center Configuration Manager, para inventariar el software instalado y el software en uso. La aplicación de Rights Management sharing se ejecuta mediante el programa **ipviewer.exe** y se puede [descargar e instalar la aplicación](http://go.microsoft.com/fwlink/?LinkId=303970) gratis para identificar otras características sobre esta aplicación que luego usará para el inventario de software.
 
--   Manténgase atento a las extensiones de nombre de archivos creadas por la aplicación de uso compartido Rights Management. Las extensiones del nombre de archivo .pfile y .ppdf son el ejemplo más notorio, pero hay otros archivos que cambian su extensión de nombre de archivo cuando están protegidos de forma nativa por Rights Management. Para más información, consulte la sección [Tipos de archivo y extensiones de nombre de archivo compatibles](../rms-client/sharing-app-admin-guide-technical.md#supported-file-types-and-file-name-extensions) en la [Guía del administrador de la aplicación de Rights Management sharing](http://technet.microsoft.com/library/dn339003.aspx).
+-   Manténgase atento a las extensiones de nombre de archivos creadas por la aplicación de uso compartido Rights Management. Las extensiones del nombre de archivo .pfile y .ppdf son el ejemplo más notorio, pero hay otros archivos que cambian su extensión de nombre de archivo cuando están protegidos de forma nativa por Rights Management. Para obtener más información, consulte la sección [Supported file types and file name extensions](../rms-client/sharing-app-admin-guide-technical.md#supported-file-types-and-file-name-extensions) (Tipos de archivo y extensiones de nombre de archivo compatibles) en la [Rights Management sharing application administrator guide](http://technet.microsoft.com/library/dn339003.aspx) (Guía de administrador de la aplicación Rights Management sharing)..
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

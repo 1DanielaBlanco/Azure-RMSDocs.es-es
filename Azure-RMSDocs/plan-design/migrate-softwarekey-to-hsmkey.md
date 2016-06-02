@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Paso 2; Migración de claves protegidas por software a claves protegidas por HSM| Azure RMS
+title: Paso 2&colon; Migración de clave protegida por software a clave protegida por HSM | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Paso 2: Migración de clave protegida por software a clave protegida por HSM
+
+*Se aplica a: Active Directory Rights Management Services, Azure Rights Management*
+
 
 Estas instrucciones son parte de la [ruta de acceso de la migración de AD RMS a Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md), y se aplican solo si la clave de AD RMS está protegida por software y desea migrar a Azure Rights Management con una clave de inquilino protegida por HSM. 
 
@@ -105,11 +108,11 @@ Ahora que ha transferido su clave de HSM a Azure RMS, está listo para importar 
     Disconnect-AadrmService
     ```
 
-Ahora puede ir al [paso 3. Active el inquilino de RMS](migrate-from-ad-rms-to-azure-rms.md#BKMK_Step3Migration).
+Ahora puede ir al [paso 3. Active el inquilino de RMS](migrate-from-ad-rms-to-azure-rms.md#BKMK_Step3Migration)..
 
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

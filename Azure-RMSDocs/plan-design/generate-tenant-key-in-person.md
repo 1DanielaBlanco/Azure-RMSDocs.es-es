@@ -27,6 +27,9 @@ ms.suite: ems
 
 # Generar y transferir su clave de inquilino en persona
 
+*Se aplica a: Azure Rights Management, Office 365*
+
+
 Use los procedimientos siguientes si ha decidido [administrar su propia clave de inquilino](plan-implement-tenant-key.md#choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok-) y no quiere transferirla a través de Internet, sino que prefiere transferirla en persona.
 
 ## Generar su clave de inquilino
@@ -39,7 +42,7 @@ Para generar su propia clave de inquilino, siga estos 3 pasos:
 -   [Paso 3: Crear una clave nueva](#step-3-create-a-new-key)
 
 ### Paso 1: Preparar una estación de trabajo con HSM de Thales
-Instale el software de soporte nCipher (Thales) en un equipo con Windows. Conecte un HSM de Thales a ese equipo. Asegúrese de que las herramientas de Thales se encuentran en su ruta de acceso. Para obtener más información, consulte la guía de usuario incluida en el HSM de Thales o visite el sitio web de Thales para Azure RMS en [http://www.thales-esecurity.com/msrms/cloud](http://www.thales-esecurity.com/msrms/cloud).
+Instale el software de soporte nCipher (Thales) en un equipo con Windows. Conecte un HSM de Thales a ese equipo. Asegúrese de que las herramientas de Thales se encuentran en su ruta de acceso. Para obtener más información, consulte la guía de usuario incluida en el HSM de Thales o visite el sitio web de Thales para Azure RMS en [http://www.thales-esecurity.com/msrms/cloud](http://www.thales-esecurity.com/msrms/cloud)..
 
 ### Paso 2: Crear un mundo de seguridad
 Inicie un símbolo de comando y ejecute el programa del nuevo mundo de Thales.
@@ -153,6 +156,6 @@ Ahora ha completado las instrucciones obligatorias para aportar su propia clave 
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

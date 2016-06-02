@@ -26,9 +26,12 @@ ms.suite: ems
 ---
 
 # Comprobación de Azure Rights Management
+
+*Se aplica a: Azure Rights Management, Office 365*
+
 Después de haber activado [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS) y realizado los pasos de configuración adicionales necesarios en su organización, puede comprobar que el servicio funciona como se esperaba; para ello, proteja un archivo o mensaje de correo electrónico mediante una cuenta de usuario y, luego, intente abrirlo y usar ese contenido protegido desde otra cuenta de usuario.
 
-Para hacer esta prueba, puede utilizar la información de [Ayuda a los usuarios para proteger archivos mediante Azure Rights Management](help-users.md).
+Para hacer esta prueba, puede usar la información de [Helping users to protect files by Using Azure Rights Management](help-users.md) (Ayuda a los usuarios para proteger archivos mediante Azure Rights Management)..
 
 Si la prueba es correcta, revise los pasos de configuración que se indican en [Azure Rights Management deployment roadmap](../plan-design/deployment-roadmap.md) (Plan para la implementación de Azure Rights Management) y use la [herramienta RMS Analyzer](http://www.microsoft.com/en-us/download/details.aspx?id=46437) para ayudar a identificar y corregir posibles problemas. También puede ejecutar esta herramienta periódicamente, como una comprobación de mantenimiento general.
 
@@ -37,12 +40,12 @@ Si la prueba es correcta, revise los pasos de configuración que se indican en [
 
 ## Pasos siguientes
 
-También puede supervisar cómo usa la organización la protección de la información mediante el registro de uso. Para más información, consulte [Registro y análisis del uso de Azure Rights Management](log-analyze-usage.md).
+También puede supervisar cómo usa la organización la protección de la información mediante el registro de uso. Para obtener más información, consulte [Logging and analyzing Azure Rights Management usage](log-analyze-usage.md) (Registro y análisis del uso de Azure Rights Management)..
 
 
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: afe062d5-a507-45e5-a4ec-613f9c46772e
-
+ms.assetid: 58CC2E50-1E4D-4621-A947-25312C3FF519
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # Código de ejemplo de Android
 
 Este tema le presentará los elementos de código importantes para la versión de Android de RMS SDK.
@@ -43,11 +41,11 @@ La aplicación de ejemplo, *MSIPCSampleApp*, está disponible para su uso con es
 
 ### Escenario: consumo de un archivo protegido RMS
 
--   **Paso 1**: Creación de [**ProtectedFileInputStream**](https://stage.docs.microsoft.com/en-us/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_protectedfileinputstream_class_java)
+-   **Paso 1**: Creación de [**ProtectedFileInputStream**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_protectedfileinputstream_class_java)
 
     **Origen**: *MsipcAuthenticationCallback.java*
 
-    **Descripción**: creación de instancias de un objeto [**ProtectedFileInputStream**](https://stage.docs.microsoft.com/en-us/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_protectedfileinputstream_class_java) , mediante un método de creación que implementa la autenticación de servicios con [**AuthenticationRequestCallback**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_authenticationrequestcallback_interface_java) para obtener un token pasando una instancia de **AuthenticationRequestCallback**, como el parámetro *mRmsAuthCallback*, a la API de MSIPC. Consulte la llamada a [**ProtectedFileInputStream.create**](/rights-management/sdk/4.2/api/android/protectedfileinputstream#msipcthin2_protectedfileinputstream_create_method) cerca del final de la sección de código de ejemplo siguiente.
+    **Descripción**: creación de instancias de un objeto [**ProtectedFileInputStream**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_protectedfileinputstream_class_java), mediante un método de creación que implementa la autenticación de servicios con [**AuthenticationRequestCallback**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_authenticationrequestcallback_interface_java) para obtener un token pasando una instancia de **AuthenticationRequestCallback**, como el parámetro *mRmsAuthCallback*, a la API de MSIPC. Consulte la llamada a [**ProtectedFileInputStream.create**](/rights-management/sdk/4.2/api/android/protectedfileinputstream#msipcthin2_protectedfileinputstream_create_method) cerca del final de la sección de código de ejemplo siguiente.
 
         public void startContentConsumptionFromPtxtFileFormat(InputStream inputStream)
         {
@@ -534,7 +532,7 @@ Este escenario comienza con la obtención de una lista de plantillas, la selecci
 
     **Origen**: *MsipcTaskFragment.java*
 
-    **Descripción**: en la práctica, los siguientes objetos se crearían con entradas de usuario desde la interfaz de dispositivo [**UserRights**](/rights-management/sdk/4.2/api/android/userrights#msipcthin2_userrights_class_java) y [**PolicyDescriptor**](https://stage.docs.microsoft.com/en-us/rights-management/sdk/4.2/api/android/policydescriptor#msipcthin2_policydescriptor_interface_java).
+    **Descripción**: en la práctica, los siguientes objetos se crearían con entradas de usuario desde la interfaz de dispositivo [**UserRights**](/rights-management/sdk/4.2/api/android/userrights#msipcthin2_userrights_class_java) y [**PolicyDescriptor**](/rights-management/sdk/4.2/api/android/policydescriptor#msipcthin2_policydescriptor_interface_java).
 
 
 
@@ -639,6 +637,6 @@ Este escenario comienza con la obtención de una lista de plantillas, la selecci
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

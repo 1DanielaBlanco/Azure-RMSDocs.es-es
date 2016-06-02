@@ -2,7 +2,7 @@
 # required metadata
 
 title: Seguimiento de contenido | Azure RMS
-description:
+description: Guía básica para la implementación del seguimiento de documentos
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: ca08e01f-690d-46f4-ae0f-a880cc29dabc
-
+ms.assetid: F5089765-9D94-452B-85E0-00D22675D847
 # optional metadata
 
 #ROBOTS:
@@ -25,9 +24,7 @@ ms.suite: ems
 
 ---
 
-﻿# Seguimiento de contenido
-
-\[Parte de la información está relacionada con productos preliminares que pueden sufrir cambios sustanciales en su versión comercial. Microsoft no otorga ninguna garantía, ni expresa ni implícita, con respecto a la información suministrada aquí. \]
+# Seguimiento de contenido
 
 En este tema se abordan las instrucciones básicas para implementar el seguimiento de documentos con contenido protegido con Rights Management Services SDK 2.1.
 
@@ -120,7 +117,7 @@ El siguiente es un fragmento de código que muestra un ejemplo de cómo establec
                               sendLicenseRegistrationNotificationEmail);
 
 
-### Temas relacionados
+## Temas relacionados
 
 
 * [**Tipos de propiedades de metadatos de licencias**](/rights-management/sdk/2.1/api/win/license%20metadata%20property%20types#msipc_license_metadata_property_types)
@@ -137,6 +134,6 @@ El siguiente es un fragmento de código que muestra un ejemplo de cómo establec
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

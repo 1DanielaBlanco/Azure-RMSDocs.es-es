@@ -27,6 +27,9 @@ ms.suite: ems
 
 
 # Administración de cliente: Operaciones de ciclo de vida de clave de inquilino
+
+*Se aplica a: Azure Rights Management, Office 365*
+
 Si administra su clave de inquilino para Azure Rights Management (el escenario Aportar tu propia clave, o BYOK), use las siguientes secciones para más información acerca de las operaciones del ciclo de vida que son relevantes para esta topología.
 
 ## Revocar su clave de inquilino
@@ -60,7 +63,7 @@ Si tiene una infracción, la mejor acción que usted o Microsoft puede llevar a 
 
 |Descripción del incidente|Respuesta probable|
 |------------------------|-------------------|
-|Se ha filtrado su clave de inquilino.|Vuelva a introducir su clave de inquilino. Vea [Regeneración de la clave de inquilino](#re-key-your-tenant-key).|
+|Se ha filtrado su clave de inquilino.|Vuelva a introducir su clave de inquilino. Vea [Vuelva a introducir su clave de inquilino](#re-key-your-tenant-key)..|
 |Un individuo no autorizado o malware han tenido derechos de uso de su clave de inquilino, pero la clave en sí no se ha filtrado.|La nueva introducción de la clave de inquilino no resulta útil aquí y requiere el análisis de la causa principal. Si un error de software o de proceso ha sido el responsable de que un individuo no autorizado obtuviera acceso, dicha situación se debe resolver.|
 |Vulnerabilidad descubierta en la tecnología HSM de generación actual.|Microsoft debe actualizar los HSM. Si no hay motivos para creer que la vulnerabilidad afectó a las claves, Microsoft indicará a todos los clientes que renueven sus claves de inquilino.|
 |Vulnerabilidad descubierta en el algoritmo de RSA, o longitud de clave, o ataques por fuerza bruta se hacen factibles computacionalmente.|Microsoft debe actualizar Azure RMS para que admita nuevos algoritmos y longitudes de clave más largas que sean resistentes, e indica a todos los clientes que renueven sus claves de inquilino.|
@@ -68,6 +71,6 @@ Si tiene una infracción, la mejor acción que usted o Microsoft puede llevar a 
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

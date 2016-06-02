@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/06/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -26,13 +26,16 @@ ms.suite: ems
 ---
 
 # Migración desde AD RMS a Azure Rights Management
+
+*Se aplica a: Active Directory Rights Management Services, Azure Rights Management*
+
 Use el siguiente conjunto de instrucciones para migrar su implementación de Active Directory Rights Management Services (AD RMS) en Azure Rights Management (Azure RMS). Después de la migración, los usuarios seguirán teniendo acceso a documentos y mensajes de correo electrónico que su organización protege mediante AD RMS, mientras que el contenido protegido recientemente usará Azure RMS.
 
 ¿No está seguro de si esta migración de AD RMS es conveniente para su organización?
 
 -   Para obtener una introducción a Azure RMS, los problemas empresariales que puede resolver, cómo lo ven administradores y usuarios y cómo funciona, consulte [¿Qué es Azure Rights Management?](../understand-explore/what-is-azure-rms.md).
 
--   Para obtener una comparación de Azure RMS con AD RMS, consulte [Comparación de Azure Rights Management y AD RMS](../understand-explore/compare-azure-rms-ad-rms.md).
+-   Para obtener una comparación de Azure RMS con AD RMS, consulte [Comparing Azure Rights Management and AD RMS](../understand-explore/compare-azure-rms-ad-rms.md) (Comparación de Azure Rights Management y AD RMS)..
 
 ## Requisitos previos para la migración desde AD RMS a Azure RMS.
 Antes de iniciar la migración a Azure RMS, asegúrese de que se cumplen los siguientes requisitos previos y de que conoce las limitaciones.
@@ -63,7 +66,7 @@ Antes de iniciar la migración a Azure RMS, asegúrese de que se cumplen los sig
 
 - **Todos los requisitos para ejecutar Azure RMS, lo que incluye un inquilino de Azure RMS (no activado)**
 
-    Consulte [Requisitos de Azure Rights Management](../get-started/requirements-azure-rms.md).
+    Consulte [Requirements for Azure Rights Management](../get-started/requirements-azure-rms.md) (Requisitos de Azure Rights Management)..
 
     Aunque debe tener un inquilino de Azure RMS para poder migrar desde AD RMS, se recomienda que no active el servicio Rights Management antes de la migración. El proceso de migración incluye este paso después de exportar las claves y plantillas de AD RMS e importarlas en Azure RMS. Sin embargo, aunque esté activado Azure RMS, puede migrar desde AD RMS.
 
@@ -74,7 +77,7 @@ Antes de iniciar la migración a Azure RMS, asegúrese de que se cumplen los sig
 
     - Grupos habilitados para correo en Azure Active Directory
 
-    Consulte [Preparación de Azure Rights Management](prepare.md).
+    Consulte [Preparing for Azure Rights Management](prepare.md) (Preparación de Azure Rights Management)..
 
 
 - **Si ha usado la funcionalidad Information Rights Management (IRM) de Exchange Server** (por ejemplo, las reglas de transporte y Outlook Web Access) o SharePoint Server con AD RMS:
@@ -167,7 +170,7 @@ Los 9 pasos de migración se pueden dividir en 4 fases que se pueden realizar en
 
 [**FASE 4: TAREAS POSTERIORES A LA MIGRACIÓN**](migrate-from-ad-rms-phase4.md )
 
-- **Paso: Retirada de AD RMS**
+- **Paso 8. Retire AD RMS**
 
     Cuando haya confirmado que todos los clientes usan Azure RMS y ya no obtienen acceso a los servidores de AD RMS, puede retirar la implementación de AD RMS.
 
@@ -178,10 +181,10 @@ Los 9 pasos de migración se pueden dividir en 4 fases que se pueden realizar en
 
 
 ## Pasos siguientes
-Para iniciar la migración, vaya a [Fase 1: Configuración del lado servidor](migrate-from-ad-rms-phase1.md).
+Para iniciar la migración, vaya a [Fase 1: Configuración del lado servidor](migrate-from-ad-rms-phase1.md)..
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO1-->
 
 

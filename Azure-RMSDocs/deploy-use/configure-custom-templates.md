@@ -26,17 +26,20 @@ ms.suite: ems
 ---
 
 # Configuración de plantillas personalizadas para Azure Rights Management
+
+*Se aplica a: Azure Rights Management, Office 365*
+
 Tras [activar Azure Rights Management](activate-service.md) (Azure RMS), los usuarios pueden automáticamente usar dos plantillas predeterminadas, lo que les facilita la aplicación de directivas para archivos confidenciales para los que desean restringir el acceso solamente a usuarios autorizados de su organización. Estas dos plantillas presentan las restricciones de directivas de derechos siguientes:
 
 -   Visualización de solo lectura para el contenido protegido
 
-    -   Nombre para mostrar: **&lt;nombre de organización&gt; - Solo vista confidencial**
+    -   Nombre para mostrar: **&lt;nombre de la organización&gt; - Solo vista confidencial**
 
     -   Permiso específico: Ver contenido
 
 -   Lectura o modificación de permisos de contenido protegido
 
-    -   Nombre para mostrar: **&lt;nombre de organización&gt; - Confidencial**
+    -   Nombre para mostrar: **&lt;nombre de la organización&gt; - Confidencial**
 
     -   Permisos específicos: Ver contenido, Guardar archivo, Editar contenido, Ver derechos asignados, Permitir macros, Reenviar, Responder y Responder a todos
 
@@ -69,6 +72,6 @@ Use la información siguiente para tratar de configurar y usar plantillas person
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

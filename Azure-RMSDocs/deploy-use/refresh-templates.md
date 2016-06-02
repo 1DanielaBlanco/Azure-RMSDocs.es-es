@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/06/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -27,21 +27,24 @@ ms.suite: ems
 
 
 # Actualización de plantillas para usuarios
+
+*Se aplica a: Azure Rights Management, Office 365*
+
 Cuando usas Azure RMS, se descargan de forma automática plantillas a los ordenadores cliente para que los usuarios puedan seleccionarlas desde sus aplicaciones. Sin embargo, es posible que tengas que tomar medidas adicionales si quieres efectuar cambios en las plantillas:
 
 |Aplicación o servicio|Cómo se actualizan las plantillas tras los cambios|
 |--------------------------|---------------------------------------------|
-|Exchange Online|Configuración manual precisa para actualizar plantillas.<br /><br />En los pasos de configuración, consulte la sección siguiente, [Solamente Exchange Online: Cómo configurar Exchange para descargar las plantillas personalizadas que se han cambiado](#exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates).|
+|Exchange Online|Configuración manual precisa para actualizar plantillas.<br /><br />En los pasos de configuración, consulte la sección siguiente: [Solamente Exchange Online: Cómo configurar Exchange para descargar las plantillas personalizadas que se han cambiado](#exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates)..|
 |Office 365|Actualización automática: no se requieren pasos adicionales.|
-|Office 2016 y Office 2013<br /><br />Aplicaciones de uso compartido de RMS para Windows|Actualización automática: programada:<br /><br />Para estas versiones posteriores de Office: el intervalo de actualización predeterminado es cada siete días.<br /><br />Para la aplicación RMS sharing para Windows: a partir de la versión 1.0.1784.0, el intervalo de actualización predeterminado es cada día. Las versiones anteriores tienen un intervalo de actualización predeterminado de 7 días.<br /><br />Para forzar una actualización antes de esta programación, consulte la sección siguiente, [Office 2016, Office 2013 y la aplicación RMS sharing para Windows: Cómo forzar una actualización de una plantilla personalizada que se ha cambiado](#office-2016-office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template).|
-|Office 2010|Se actualiza cuando los usuarios inician sesión.<br /><br />Para forzar una actualización, pide u obliga a los usuarios a cerrar sesión y volver a iniciar la sesión. O bien, vea la sección siguiente: [Solamente para Office 2010: Cómo forzar una actualización de una plantilla personalizada que se ha cambiado](#office-2010-only-how-to-force-a-refresh-for-a-changed-custom-template).|
+|Office 2016 y Office 2013<br /><br />Aplicaciones de uso compartido de RMS para Windows|Actualización automática: programada:<br /><br />Para estas versiones posteriores de Office: el intervalo de actualización predeterminado es cada siete días.<br /><br />Para la aplicación RMS sharing para Windows: a partir de la versión 1.0.1784.0, el intervalo de actualización predeterminado es cada día. Las versiones anteriores tienen un intervalo de actualización predeterminado de 7 días.<br /><br />Para forzar una actualización antes de esta programación, consulte la sección siguiente: [Office 2016, Office 2013 y la aplicación RMS sharing para Windows: Cómo forzar una actualización de una plantilla personalizada que se ha cambiado](#office-2016-office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template)..|
+|Office 2010|Se actualiza cuando los usuarios inician sesión.<br /><br />Para forzar una actualización, pide u obliga a los usuarios a cerrar sesión y volver a iniciar la sesión. O bien, vea la sección siguiente: [Solamente para Office 2010: Cómo forzar una actualización de una plantilla personalizada que se ha cambiado](#office-2010-only-how-to-force-a-refresh-for-a-changed-custom-template)..|
 Para los dispositivos móviles que usan la aplicación de uso compartido de RMS, se descargan automáticamente plantillas (y se actualizan si es necesario) sin que sea precisa una nueva configuración.
 
 ## Solamente Exchange Online: Cómo configurar Exchange para descargar las plantillas personalizadas que se han cambiado
 Si ya has configurado Information Rights Management (IRM) para Exchange Online, no se descargarán plantillas personalizadas para usuarios hasta que realices los cambios siguientes mediante Windows PowerShell en Exchange Online.
 
 > [!NOTE]
-> Para más información sobre cómo usar Windows PowerShell en Exchange Online, consulte [Usar PowerShell con Exchange Online](https://technet.microsoft.com/library/jj200677%28v=exchg.160%29.aspx).
+> Para obtener más información sobre cómo usar Windows PowerShell en Exchange Online, consulte [Usar PowerShell con Exchange Online](https://technet.microsoft.com/library/jj200677%28v=exchg.160%29.aspx)..
 
 Debes efectuar este procedimiento cada vez que cambies una plantilla.
 
@@ -108,7 +111,7 @@ Si modifica el Registro de los equipos que ejecutan Office 2016, Office 2013 o l
 
 1.  Con un editor del Registro, cree y establezca uno de los valores del Registro siguientes:
 
-    - Para establecer una frecuencia de actualización en días (mínimo de 1 día):  cree un nuevo valor del Registro denominado **TemplateUpdateFrequency** y defina un valor entero para los datos, que especifique la frecuencia en días para descargar los cambios en una plantilla descargada. Use la tabla siguiente para localizar la ruta de acceso del Registro y crear este nuevo valor del Registro.
+    - Para establecer una frecuencia de actualización en días (mínimo de 1 día):  cree un nuevo valor del Registro denominado **TemplateUpdateFrequency** y defina un valor entero para los datos, que especifique la frecuencia en días para descargar los cambios en una plantilla descargada. Use la información siguiente para localizar la ruta de acceso del Registro y crear este nuevo valor del Registro.
 
         **Ruta de acceso del Registro:** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC
 
@@ -116,16 +119,15 @@ Si modifica el Registro de los equipos que ejecutan Office 2016, Office 2013 o l
 
         **Valor:** TemplateUpdateFrequency
 
+    - Para establecer una frecuencia de actualización en segundos (mínimo de 1 segundo):  cree un nuevo valor del Registro denominado **TemplateUpdateFrequencyInSeconds** y defina un valor entero para los datos, que especifique la frecuencia en segundos para descargar los cambios en una plantilla descargada. Use la información siguiente para localizar la ruta de acceso del Registro y crear este nuevo valor del Registro.
 
-    - To set an update frequency in seconds (minimum of 1 second):  Create a new registry value named **TemplateUpdateFrequencyInSeconds** and define an integer value for the data, which specifies the frequency in seconds to download any changes to a downloaded template. Use the following table to locate the registry path to create this new registry value.
+        **Ruta de acceso del Registro:** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC
 
-        **Registry path:** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC
+        **Escriba:** REG_DWORD
 
-        **Type:** REG_DWORD
+        **Valor:** TemplateUpdateFrequencyInSeconds
 
-        **Value:** TemplateUpdateFrequencyInSeconds
-
-    Make sure that you create and set one of these registry values, not both. If both are present, **TemplateUpdateFrequency** is ignored.
+    Asegúrese de crear y establecer uno de estos valores del Registro, no ambos. Si ambos están presentes, **TemplateUpdateFrequency** se omite.
 
 2.  Si desea forzar una actualización inmediata de las plantillas, vaya al procedimiento siguiente. En caso contrario, reinicie ahora las aplicaciones de Office y las instancias del Explorador de archivos.
 
@@ -142,7 +144,7 @@ Si modifica el Registro de los equipos que ejecutan Office 2016, Office 2013 o l
     > [!TIP]
         > En la ruta de acceso del Registro, <*MicrosoftRMS_FQDN*> hace referencia al FQDN de servicio de Microsoft RMS. Si desea comprobar este valor:
 
-    > 1.  Ejecute el cmdlet [Get-AadrmConfiguration](https://msdn.microsoft.com/library/windowsazure/dn629410.aspx) para Azure RMS. Si aún no ha instalado el módulo de Windows PowerShell para Azure RMS, consulte [Instalación de Windows PowerShell para Azure Rights Management](install-powershell.md).
+    > 1.  Ejecute el cmdlet [Get-AadrmConfiguration](https://msdn.microsoft.com/library/windowsazure/dn629410.aspx) para Azure RMS. Si aún no ha instalado el módulo de Windows PowerShell para Azure RMS, consulte [Installing Windows PowerShell for Azure Rights Management](install-powershell.md) (Instalación de Windows PowerShell para Azure Rights Management)..
     > 2.  En la salida, identifique el valor **LicensingIntranetDistributionPointUrl** .
     > 
     >     Por ejemplo: **LicensingIntranetDistributionPointUrl   : https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing**
@@ -190,6 +192,6 @@ Si modifica el Registro de los equipos que ejecutan Office 2010, puede establece
 ## Véase también
 [Configuración de plantillas personalizadas para Azure Rights Management](configure-custom-templates.md)
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO1-->
 
 

@@ -28,7 +28,10 @@ ms.suite: ems
 
 # Fase de migración 3: Configuración de servicios auxiliares
 
-Use la siguiente información para la fase 3 de migración desde AD RMS a Azure Rights Management (Azure RMS). Estos procedimientos incluyen los pasos 6 y 7 del tema [Migración desde AD RMS a Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md).
+*Se aplica a: Active Directory Rights Management Services, Azure Rights Management*
+
+
+Use la siguiente información para la fase 3 de migración desde AD RMS a Azure Rights Management (Azure RMS). Estos procedimientos incluyen los pasos 6 y 7 del tema [Migrating from AD RMS to Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md) (Migración desde AD RMS a Azure Rights Management)..
 
 
 ## Paso 6. Configure la integración de IRM en Exchange Online.
@@ -49,7 +52,7 @@ Si ha utilizado la funcionalidad Information Rights Management (IRM) de Exchange
 Por último, para este paso, si ha importado varios TPD en Azure RMS que se usaron para proteger los mensajes de correo electrónico, debe editar manualmente el registro en los equipos de Exchange Server para redirigir todas las direcciones URL de TPD al conector RMS.
 
 > [!NOTE]
-> Antes de empezar, compruebe las versiones de los servidores locales que son compatibles con Azure RMS desde [Servidores locales compatibles con Azure RMS](../get-started/requirements-servers.md).
+> Antes de empezar, compruebe las versiones de los servidores locales que son compatibles con Azure RMS desde [On-premises servers that support Azure RMS](../get-started/requirements-servers.md) (Servidores locales compatibles con Azure RMS)..
 
 ### Deshabilitar IRM en servidores de Exchange y quitar la configuración de AD RMS
 
@@ -79,19 +82,19 @@ Por último, para este paso, si ha importado varios TPD en Azure RMS que se usar
     Set-IRMConfiguration -RefreshServerCertificates
     ```
 
-6.  En cada Exchange Server, restablezca ahora IIS, por ejemplo, mediante la ejecución de un símbolo del sistema como administrador y escriba **iisreset**.
+6.  En cada Exchange Server, restablezca ahora IIS, por ejemplo, mediante la ejecución de un símbolo del sistema como administrador y escriba **iisreset**..
 
 ### Deshabilitar IRM en servidores de SharePoint y quitar la configuración de AD RMS
 
 1.  Asegúrese de que no hay ningún documento desprotegido desde bibliotecas protegidas con RMS. Si hay, quedarán inaccesibles al final de este procedimiento.
 
-2.  En el sitio web de Administración central de SharePoint, en la sección **Inicio rápido** , haga clic en **Seguridad**.
+2.  En el sitio web de Administración central de SharePoint, en la sección **Inicio rápido**, haga clic en **Seguridad**..
 
-3.  En la página **Seguridad** , en la página **Directiva de información** , haga clic en **Configurar Information Rights Management**.
+3.  En la página **Seguridad**, en la sección **Directiva de información**, haga clic en **Configurar Information Rights Management**..
 
-4.  En la página **Information Rights Management** , en la sección **Information Rights Management** , seleccione **No use IRM en este servidor**y luego haga clic en **Aceptar**.
+4.  En la página **Information Rights Management**, en la sección **Information Rights Management**, seleccione **No use IRM en este servidor** y luego haga clic en **Aceptar**..
 
-5.  En cada uno de los equipos de SharePoint Server, elimine el contenido de la carpeta \ProgramData\Microsoft\MSIPC\Server\*&lt;SID de la cuenta que ejecuta SharePoint Server&gt;*.
+5.  En cada uno de los equipos de SharePoint Server, elimine el contenido de la carpeta \ProgramData\Microsoft\MSIPC\Server\*&lt;SID de la cuenta que ejecuta SharePoint Server.&gt;*.
 
 #### Instalar y configurar el conector RMS
 
@@ -103,7 +106,7 @@ Por último, para este paso, si ha importado varios TPD en Azure RMS que se usar
 
     Al realizar estas modificaciones del registro, utilice las siguientes instrucciones:
 
-    -   Reemplace *ConnectorFQDN* por el nombre que definió en el DNS para el conector. Por ejemplo, **rmsconnector.contoso.com**.
+    -   Reemplace *ConnectorFQDN* por el nombre que definió en el DNS para el conector. Por ejemplo, **rmsconnector.contoso.com**..
 
     -   Use el prefijo HTTP o HTTPS para la dirección URL del conector, en función de si ha configurado el conector para usar HTTP o HTTPS para comunicarse con los servidores locales.
 
@@ -216,8 +219,8 @@ Una de las siguientes, en función de si usas HTTP o HTTPS desde tu servidor Exc
 Después de completar estos procedimientos, asegúrese de leer la sección **Pasos siguientes** del artículo [Implementación del conector de Azure Rights Management](../deploy-use/deploy-rms-connector.md).
 
 ## Pasos siguientes
-Para continuar con la migración, vaya a [Fase 4: Tareas posteriores a la migración](migrate-from-ad-rms-phase4.md).
+Para continuar con la migración, vaya a [Fase 4: Tareas posteriores a la migración](migrate-from-ad-rms-phase4.md)..
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

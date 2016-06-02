@@ -7,7 +7,7 @@ keywords:
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Guía de implementación rápida de Azure Rights Management
+
+*Se aplica a: Azure Rights Management, Office 365*
+
 Esta guía complementa la información de configuración de la sección **Implementación y uso**, y le ayuda a implementar y usar rápidamente Azure Rights Management (Azure RMS), ya que le permite elegir una opción de una lista de escenarios específicos para implementar.
 
 Los escenarios contienen instrucciones para el administrador y documentación complementaria para el usuario final. Antes de proporcionarles la documentación (instrucciones o anuncios) a los usuarios finales, tendrá primero que personalizarla en función de sus necesidades empresariales y su flujo de trabajo. Un conjunto de instrucciones o un anuncio de ejemplo muestran el aspecto definitivo de la documentación para el usuario final.
@@ -36,8 +39,7 @@ Los escenarios aquí mencionados son una muestra de los más comunes. Dado que A
 
 Antes de implementar estas soluciones, puede enviar un anuncio general a los usuarios finales informándoles de los cambios que se producirán en materia de protección de los datos de la empresa, así como de las posibles modificaciones que deban realizar por su parte. Después de la tabla siguiente encontrará un ejemplo de este tipo de comunicación.
 
-> [!NOTE]
-> Si tiene preguntas y comentarios sobre esta guía, use los mecanismos de comentarios de esta página o envíe un correo a [AskIPTeam@Microsoft.com](mailto:%20askipteam@microsoft.com?subject=Rapid%20Deployment%20Guide%20feedback).
+> [!NOTE] Si tiene preguntas y comentarios sobre esta guía, use los mecanismos de comentarios de esta página o envíe un correo a [AskIPTeam@Microsoft.com](mailto:%20askipteam@microsoft.com?subject=Rapid%20Deployment%20Guide%20feedback).
 
 ## Escenarios de Azure RMS
 Para ayudarle a implementar Azure RMS más rápidamente con el fin de abordar problemas empresariales específicos, elija los escenarios que se acerquen más a sus objetivos empresariales y adáptelos en lo necesario.
@@ -130,7 +132,7 @@ Vea [Escenario: Configurar carpetas de trabajo para protección persistente](sce
 ## Anuncio para los usuarios antes de la implementación
 Puede usar el siguiente mensaje de comunicación de ejemplo para que los usuarios sepan que la implementación de Azure RMS supone algunos cambios futuros. Copie y pegue el texto siguiente para que alguien del equipo directivo de su empresa (preferiblemente el director ejecutivo) lo envíe por correo electrónico a todos los usuarios. Puede modificar el texto del mensaje para que sea más relevante para los usuarios y la organización.
 
-![](../media/AzRMS_ExampleBanner.png)
+![Banner de documentación de usuario de ejemplo para la implementación rápida de Azure RMS](../media/AzRMS_ExampleBanner.png)
 
 ### Cambios en la protección de nuestros datos
 ¿Alguna vez ha querido bloquear el acceso a un documento que envió a sus socios por error? ¿Le gustaría saber si los clientes han leído la información que les ha remitido sobre algún producto? ¿Necesita compartir información confidencial sobre un producto sin preocuparse de que se envíe a gente que no debería verla?
@@ -139,7 +141,7 @@ Pronto podrá hacer todas esas cosas: el departamento de TI está efectuando alg
 
 Por ejemplo, para realizar un seguimiento de los documentos que comparta (o revocarlos, en caso necesario), usará un sitio de seguimiento de documentos:
 
-![](../media/AzRMS_Tutorial_5_Screenshots.png)
+![Capturas de pantalla de seguimiento de documentos de Azure RMS](../media/AzRMS_Tutorial_5_Screenshots.png)
 
 Para un ver un anticipo de su funcionamiento, eche un vistazo a este breve vídeo: [Azure RMS Document Tracking and Revocation](https://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation) (Revocación y seguimiento de documentos de Azure RMS)
 
@@ -149,6 +151,6 @@ Las soluciones que estamos implementando nos ayudarán a proteger nuestra valios
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

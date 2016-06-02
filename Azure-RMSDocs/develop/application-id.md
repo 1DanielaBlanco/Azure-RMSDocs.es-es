@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 834c5943-a724-4322-9035-060c1112fe22
-
+ms.assetid: 0fe9dc-bc91-4018-b28d-2db293a3eaa2
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # Procedimiento para obtener un identificador de aplicación de Azure
 
 La creación de una aplicación habilitada para RMS con Microsoft Rights Management SDK 4.2 requiere la creación a su vez de un acuerdo con el equipo de RMS.
@@ -39,14 +37,14 @@ La creación y publicación de una aplicación habilitada para RMS con MS RMS SD
 Use los pasos siguientes para crear el id. de su aplicación y firme su acuerdo de uso con el equipo de RMS.
 
 -   Siga las instrucciones del tema [Creación de un id. de la aplicación en Azure](https://msdn.microsoft.com/en-us/library/azure/dn132599.aspx) para crear el id. de su aplicación.
--   Escriba al equipo de RMS para iniciar su proceso de RMLA, enviando el "id. de la aplicación" a <askipteam@microsoft.com>.
+-   Escriba al equipo de RMS para iniciar su proceso de RMLA, enviando el "id. de la aplicación" a <askipteam@microsoft.com>..
 -   Firme RMLA y devuélvalo al equipo de RMS.
 -   Ahora que ha firmado RMLA, debe pasar el id. de la aplicación al llamar a la biblioteca de autenticación a través del parámetro *clientID*.
 
     Este es el aspecto que presenta la llamada de autenticación en nuestro tema [iOS/OS X code examples](ios-os-x-code-examples.md) (Ejemplos de código iOS/OS X).
 
 
-    // Retrieve token using ADAL
+    // Recuperar token mediante ADAL
         [context acquireTokenWithResource:authenticationParameters.resource
                                  clientId:appClientId
                               redirectUri:redirectURI
@@ -64,6 +62,6 @@ Use los pasos siguientes para crear el id. de su aplicación y firme su acuerdo 
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

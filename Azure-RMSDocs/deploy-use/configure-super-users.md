@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Configuración de superusuarios para Azure Rights Management y los servicios de detección o la recuperación de datos
+
+*Se aplica a: Azure Rights Management, Office 365*
+
 La característica de superusuario de Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS) garantiza que personas y servicios autorizados pueden siempre leer e inspeccionar los datos que protege Azure RMS en su organización. Y, si es necesario, quitar la protección o cambiar la protección que se aplicó anteriormente. Un superusuario siempre tiene derechos completos de propietario para todas las licencias de uso que le ha concedido el inquilino de RMS de la organización. Esta capacidad se denomina a menudo “razonamiento encima de los datos” y es un elemento crucial en el mantenimiento del control de los datos de su organización. Por ejemplo, podría usar esta característica en cualquiera de las siguientes situaciones:
 
 -   Un empleado deja la organización y usted necesita leer los archivos que dicho empleado protegió.
@@ -43,13 +46,13 @@ De forma predeterminada, la característica de superusuario no está habilitada,
 Si necesita habilitar manualmente la característica de superusuario, use el cmdlet de Windows PowerShell [Enable-AadrmSuperUserFeature](https://msdn.microsoft.com/library/azure/dn629400.aspx) y, luego, asigne los usuarios (o cuentas de servicio), según sea necesario, mediante el cmdlet [Add-AadrmSuperUser](https://msdn.microsoft.com/library/azure/dn629411.aspx) o el cmdlet [Set-AadrmSuperUserGroup](https://msdn.microsoft.com/library/azure/mt653943.aspx) y agregue usuarios (u otros grupos), según sea necesario para este grupo. 
 
 > [!NOTE]
-> Si aún no ha instalado el módulo de Windows PowerShell para [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)], consulte [Instalación de Windows PowerShell para Azure Rights Management](install-powershell.md).
+> Si aún no ha instalado el módulo de Windows PowerShell para [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)], consulte [Installing Windows PowerShell for Azure Rights Management](install-powershell.md) (Instalación de Windows PowerShell para Azure Rights Management)..
 
 Prácticas de seguridad recomendadas para la característica de superusuario:
 
 -   Restrinja y supervise qué administradores se asignan como administrador global para el inquilino de Office 365 o Azure RMS, o quién está asignado al rol GlobalAdministrator mediante el cmdlet [Add-AadrmRoleBasedAdministrator](https://msdn.microsoft.com/library/azure/dn629417.aspx) . Estos usuarios pueden habilitar la característica de superusuario y asignar usuarios (y a ellos mismos) como superusuarios y posiblemente descifrar todos los archivos que protege su organización.
 
--   Para ver qué usuarios y cuentas de servicio están asignados individualmente como superusuarios, use el cmdlet [Get-AadrmSuperUser](https://msdn.microsoft.com/library/azure/dn629408.aspx). Para ver si se ha configurado un grupo de superusuarios, use el cmdlet [Get-AadrmSuperUser](https://msdn.microsoft.com/library/azure/mt653942.aspx) y sus herramientas de administración de usuarios estándar para comprobar qué usuarios forman parte de este grupo. Al igual que todas las acciones de administración, habilitar o deshabilitar la característica de superusuarios y agregar o quitar superusuarios se registran y se pueden auditar mediante el comando [Get-AadrmAdminLog](https://msdn.microsoft.com/library/azure/dn629430.aspx) . Cuando los superusuarios descifrar archivos, esta acción se registra y se puede auditar con el [registro de uso](log-analyze-usage.md).
+-   Para ver qué usuarios y cuentas de servicio están asignados individualmente como superusuarios, use el cmdlet [Get-AadrmSuperUser](https://msdn.microsoft.com/library/azure/dn629408.aspx). Para ver si se ha configurado un grupo de superusuarios, use el cmdlet [Get-AadrmSuperUser](https://msdn.microsoft.com/library/azure/mt653942.aspx) y sus herramientas de administración de usuarios estándar para comprobar qué usuarios forman parte de este grupo. Al igual que todas las acciones de administración, habilitar o deshabilitar la característica de superusuarios y agregar o quitar superusuarios se registran y se pueden auditar mediante el comando [Get-AadrmAdminLog](https://msdn.microsoft.com/library/azure/dn629430.aspx) . Cuando los superusuarios descifran archivos, esta acción se registra y se puede auditar con el [registro de uso](log-analyze-usage.md)..
 
 -   Si no necesita la característica de superusuario para los servicios diarios, habilítela solo cuando lo necesite y deshabilítela de nuevo con el cmdlet [Disable-AadrmSuperUserFeature](https://msdn.microsoft.com/library/azure/dn629428.aspx) .
 
@@ -66,7 +69,7 @@ El siguiente extracto del registro muestra algunas entradas de ejemplo de uso de
 ## Opciones de script para superusuarios
 Con frecuencia, alguien asignado como superusuario para [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] deberá quitar la protección de varios archivos, en varias ubicaciones. Aunque es posible hacerlo manualmente, resulta más eficaz (y a menudo más fiable) mediante scripts. Para ello, [descargue la herramienta de protección de RMS](http://www.microsoft.com/en-us/download/details.aspx?id=47256). Luego, use el cmdlet  [Unprotect-RMSFile](https://msdn.microsoft.com/library/azure/mt433200.aspx) y el cmdlet [Protect-RMSFile](https://msdn.microsoft.com/library/azure/mt433201.aspx) , según sea necesario.
 
-Para obtener más información sobre estos cmdlets, consulte [Cmdlets de protección de RMS](https://msdn.microsoft.com/library/azure/mt433195.aspx).
+Para obtener más información sobre estos cmdlets, consulte [RMS Protection Cmdlets](https://msdn.microsoft.com/library/azure/mt433195.aspx) (Cmdlets de protección de RMS)..
 
 > [!NOTE]
 > El módulo de protección de RMS de PowerShell que se suministra con la herramienta de protección de RMS es diferente del [módulo de Windows PowerShell para Azure Rights Management](administer-powershell.md)y lo complementa. El módulo de protección de RMS admite Azure RMS y AD RMS.
@@ -74,6 +77,6 @@ Para obtener más información sobre estos cmdlets, consulte [Cmdlets de protecc
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

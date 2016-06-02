@@ -2,7 +2,7 @@
 # required metadata
 
 title: Programa de instalación de la Tienda Windows | Azure RMS
-description:
+description: Las aplicaciones de la Tienda Windows pueden usar Microsoft Rights Management SDK 4.2 para habilitar la protección de información integrada en la aplicación.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: c2684152-7d52-4636-916d-15720f4e3346
-
+ms.assetid: 2720aa0e-0d37-469f-be99-678bf95a9c51
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # Programa de instalación de la Tienda Windows
 
 Las aplicaciones de la Tienda Windows pueden usar Microsoft Rights Management SDK 4.2 para habilitar la protección de información integrada en sus aplicaciones mediante Azure Active Directory Rights Management (AAD RM).
@@ -34,8 +32,8 @@ Este tema sirve de guía por el proceso de configuración del entorno para crear
 
 -   [Requisitos previos](#prerequisites)
 -   [Opcional](#optional)
--   [Configuración del entorno de desarrollo](#configuring_your_development_environment)
--   [Véase también](#see_also)
+-   [Configuración del entorno de desarrollo](#configuring-your-development-environment)
+-   [Véase también](#see-also)
 
 ## Requisitos previos
 
@@ -61,16 +59,16 @@ Nuestra biblioteca de UI proporciona una interfaz de usuario reutilizable para o
 -   Haga clic en **Archivo**, **Nuevo** y a continuación haga clic en **Proyecto**.
 -   En el cuadro de diálogo **Nuevo proyecto**, haga clic en **Visual C#** y seleccione **Aplicación vacía (Windows)**; a continuación, haga clic en **Aceptar**.
 
-    ![](../media/winrtsetup-newproj.png)
+    ![Crear proyecto](../media/winrtsetup-newproj.png)
 
 -   En el **Explorador de soluciones**, haga clic en el proyecto y seleccione **Agregar referencia** para abrir el cuadro de diálogo **Agregar referencia**.
 
-    ![](../media/winrtsetup-addref.png)
+    ![Agregar referencia](../media/winrtsetup-addref.png)
 
 -   En el cuadro de diálogo **Agregar referencia**, haga clic en **Examinar** y seleccione el archivo *Microsoft.RightsManagement.dll* que se encuentra en la carpeta en la que extrajo el paquete del SDK.
--   **Aplicaciones administradas**: para la creación de una aplicación administrada, tendrá que agregar esta referencia; seleccione **Windows 8.1**-& gt;**Extensiones** y active la casilla de **Windows Visual C++ Runtime Package for Windows** (Paquete de Windows Visual C++ en tiempo de ejecución para Windows).
+-   **Aplicaciones administradas**: para la creación de una aplicación administrada, tendrá que agregar esta referencia; seleccione **Windows 8.1**-&gt;**Extensiones** y active la casilla de **Windows Visual C++ Runtime Package for Windows** (Paquete de Windows Visual C++ en tiempo de ejecución para Windows).
 
-    ![](../media/winrtsetup-refmngr.png)
+    ![Agregar extensiones](../media/winrtsetup-refmngr.png)
 
 -   **Adición de funciones**: la aplicación necesitará la funcionalidad de "Internet (cliente y servidor)" para usar el SDK. Para agregar esta funcionalidad a la aplicación, abra el archivo *Package.appxmanifest* en el proyecto y navegue hasta la pestaña **Capacidades**.
 
@@ -91,6 +89,6 @@ Ya está listo para crear sus propias aplicaciones nuevas de la Tienda Windows.
 [Referencia de la API de Windows](/rights-management/sdk/4.2/api/winrt/Microsoft.RightsManagement)
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

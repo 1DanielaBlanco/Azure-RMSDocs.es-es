@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 23f64fc8-d0f3-49ee-8d8a-b34ef26878a7
-
+ms.assetid: b31e5b72-e65e-450a-b1b8-d46e81e9fb34
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,7 @@ ms.suite: ems
 
 ---
 
-﻿# Configuración de iOS y OS X
+# Configuración de iOS y OS X
 
 Las aplicaciones de iOS y OS X pueden usar Microsoft Rights Management SDK 4.2 para habilitar la protección de información integrada en sus aplicaciones mediante Azure Active Directory Rights Management (AAD RM).
 
@@ -67,41 +66,41 @@ Nuestra biblioteca de interfaz de usuario proporciona una interfaz de usuario re
 -   Para crear un proyecto nuevo, abra el menú **Archivo** y haga clic en **Nuevo** y luego en **Proyecto**.
 -   Seleccione **Single View Application** (Aplicación de vista única).
 
-    ![](../media/iOS-Project.png)
+    ![Crear un nuevo proyecto](../media/iOS-Project.png)
 
 -   Escriba un nombre y un identificador para el nuevo proyecto.
 
-    ![](../media/iOS-project-options.png)
+    ![Asígnele un nombre al proyecto](../media/iOS-project-options.png)
 
 -   Haga clic en **Siguiente** y seleccione la ubicación para el proyecto.
 -   Para agregar el marco **MSRightsManagement** para marcos de trabajo de iOS, arrastre la carpeta .framework desde la carpeta de instalación del SDK hasta la sección **Frameworks** (Marcos) del **Project Navigator** (Navegador de proyectos).
 
-    ![](../media/ios-add-dependencies-01a.png)
+    ![Establezca una ubicación](../media/ios-add-dependencies-01a.png)
 
 -   Seleccione el botón de opción **Create groups for any added folders** (Crear grupos para las carpetas agregadas) y desactive la casilla **Copy items into destination group's folder (if needed)** (Copiar elementos en la carpeta del grupo de destino [si es necesario]).
 
     En lugar de crear una copia, esta acción mantiene la referencia a la carpeta de instalación del SDK.
 
-    ![](../media/iOS-create-groups.png)
+    ![Establezca la referencia a la carpeta de instalación del SDK](../media/iOS-create-groups.png)
 
 -   Para agregar el MS RMS SDK 4.2 para la agrupación de recursos, arrastre el archivo MSRightsManagementResources.bundle desde la carpeta MSRightsManagement.framework/Resources hasta la sección **Frameworks** (Marcos) de Project Navigator (Navegador de proyectos).
 
-    ![](../media/iOS-add-resource-bundle-02a.png)
+    ![Agregue la agrupación de recursos](../media/iOS-add-resource-bundle-02a.png)
 
 -   Al igual que hizo cuando copió el marco, seleccione el botón de opción **Create groups for any added folders** (Crear grupos para las carpetas agregadas) y desactive la casilla **Copy items into destination group's folder (if needed)** (Copiar elementos en la carpeta del grupo de destino [si es necesario]).
 -   El SDK se basa en otros marcos, como: **CoreData**, **MessageUI**, **SystemConfiguration**, **Libresolv** y **Security**. Para agregar estos marcos, navegue a la sección **Linked Frameworks and Libraries** (Marcos y bibliotecas vinculados) del panel **Summary** (Resumen) del destino y expanda esa sección para agregarlos.
 
     Los marcos **UIKit** y **Foundation** son obligatorios y, por lo general, están presentes de forma predeterminada.
 
-    ![](../media/iOS-add-libraries.png)
+    ![Agregue recursos](../media/iOS-add-libraries.png)
 
 -   Agregue la marca **-ObjC** a **Other Linker Flags** (Otras marcas de vinculador) en **Build Settings** (Configuración de compilación) de destino.
 
-    ![](../media/iOS-linker-flags.png)
+    ![Agregue la configuración de compilación](../media/iOS-linker-flags.png)
 
 -   El **Project Navigator** (Navegador de proyectos) debería tener ahora un aspecto similar al de este árbol.
 
-    ![](../media/iOS-verify-setup-01a.png)
+    ![Revise el proyecto](../media/iOS-verify-setup-01a.png)
 
 -   Ya está listo para crear sus propias aplicaciones iOS/OS X.
 
@@ -123,6 +122,6 @@ Nuestra biblioteca de interfaz de usuario proporciona una interfaz de usuario re
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

@@ -1,32 +1,20 @@
 ---
-# required metadata
+# metadatos necesarios
 
-title: Tutorial de inicio rápido de Azure RMS - Paso 5 | Azure RMS
-description: El último paso de un tutorial para probar rápidamente Microsoft Azure Rights Management para su organización en solo 5 pasos que deberían tomarle menos de 15 minutos.
-keywords:
-author: Cabailey
-manager: mbaldwin
-ms.date: 04/28/2016
-ms.topic: get-started-article
-ms.prod: azure
-ms.service: rights-management
-ms.assetid: aa06826d-c227-449b-93ea-6ce394608997
+título: Tutorial de inicio rápido de Azure RMS: paso 5 | Azure RMS descripción: Último paso de un tutorial para probar rápidamente Microsoft Azure Rights Management para su organización en solo 5 pasos que deberían tomarle menos de 15 minutos.
+palabras clave: autor: cabailey administrador: mbaldwin ms.date: 09/05/2016 ms.topic: get-started-article ms.prod: azure ms.service: rights-management ms.technology: techgroup-identity ms.assetid: aa06826d-c227-449b-93ea-6ce394608997
 
-# optional metadata
+# metadatos opcionales
 
-ROBOTS: 
-audience:
-ms.devlang:
-ms.reviewer: esaggese
-ms.suite: ems
-ms.tgt_pltfrm:
-ms.technology:
-ms.custom:
+ROBOTS: destinatarios: ms.devlang: ms.reviewer: esaggese ms.suite: ems ms.tgt_pltfrm: ms.technology: ms.custom:
 
 ---
 
 
 # Inicio rápido de Azure RMS, Paso 5: Seguimiento del documento protegido
+
+*Se aplica a: Azure Rights Management, Office 365*
+
 
 Saltar a: 
 > [!div class="op_single_selector"]
@@ -37,7 +25,7 @@ Saltar a:
 - [Paso 4: El destinatario lee el documento](tutorial-step4.md)
 - [Paso 5: Seguimiento del documento](tutorial-step5.md)
 
-![](../media/AzRMS_QuickStartSteps5.PNG)
+![Paso 5 del tutorial de inicio rápido de Azure RMS](../media/AzRMS_QuickStartSteps5.PNG)
 
 > [!NOTE]
 > Para este paso, debe tener una suscripción que admita el seguimiento de documentos. Para comprobar si la suscripción incluye el seguimiento de documentos, vea [Comparación de ofertas de Rights Management Services (RMS)](https://technet.microsoft.com/dn858608.aspx).
@@ -48,7 +36,7 @@ Este paso es opcional, pero a la mayoría de las personas les gusta saber si se 
 
 -   Después de ver que alguien ha abierto el documento, le pregunta si tiene dudas o si necesita información adicional.
 
-![](../media/AzRMS_Tutorial_5_Screenshots.png)
+![Capturas de pantalla del paso 5 del tutorial](../media/AzRMS_Tutorial_5_Screenshots.png)
 
 ### Para hacer un seguimiento de un documento protegido
 
@@ -77,8 +65,9 @@ En este tutorial se repasó un caso de cómo Azure RMS puede ayudar a proteger l
 
 Si está listo para comenzar a implementar Azure RMS, consulte [Plan para la implementación de Azure Rights Management](../plan-design/deployment-roadmap.md) para ver los pasos de implementación y los vínculos con instrucciones de procedimiento.
 
->[!div class="step-by-step"]
-[Introducción](quick-start-tutorial.md)
+Para obtener una lista de escenarios específicos y los pasos de configuración asociada, así como documentación para el usuario final, consulte la [Rapid deployment guide for Azure Rights Management](../get-started/rapid-deployment-guide.md) (Guía de implementación rápida de Azure Rights Management).
+
+>[!div class="step-by-step"] [Introducción](quick-start-tutorial.md)
 [Paso 1](tutorial-step1.md)
 [Paso 2](tutorial-step2.md)
 [Paso 3](tutorial-step3.md)
@@ -86,6 +75,6 @@ Si está listo para comenzar a implementar Azure RMS, consulte [Plan para la im
 *Paso 5*
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

@@ -7,7 +7,7 @@ keywords:
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -27,6 +27,9 @@ ms.suite: ems
 
 
 # Requisitos de Azure RMS: Suscripciones en la nube que son compatibles con Azure RMS
+
+*Se aplica a: Azure Rights Management, Office 365*
+
 Para usar Azure Rights Management (Azure RMS), su organización debe tener al menos una de las siguientes suscripciones con un número suficiente de licencias para usuarios y servicios que protegerán archivos y mensajes de correo electrónico. Si tiene un servicio que aplicará protección para los usuarios (propietarios de los archivos o mensajes de correo electrónico), esos usuarios necesitan una de estas licencias. Los usuarios que solo consumen (por ejemplo, leen y editan) estos datos protegidos no necesita una licencia.
 
 -   Office 365
@@ -94,6 +97,6 @@ Para más información, consulte [RMS para usuarios y Azure Rights Management](.
 ## Pasos siguientes
 Para buscar otros requisitos, consulte [Requisitos de Azure Rights Management](requirements-azure-rms.md).
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO2-->
 
 

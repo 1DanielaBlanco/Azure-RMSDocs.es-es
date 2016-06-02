@@ -26,18 +26,21 @@ ms.suite: ems
 ---
 
 # Administración de Azure Rights Management mediante Windows PowerShell
+
+*Se aplica a: Azure Rights Management, Office 365*
+
 Aunque puede activar Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS) mediante el centro de administración de [!INCLUDE[o365_2](../includes/o365_2_md.md)] o en el Portal de Azure clásico, también puede usar el módulo de Windows PowerShell para que [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (AADRM) lo haga.
 
-Tras haber activado [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)], no será necesario seguir con la administración de este servicio. Sin embargo, puede que algunos escenarios de configuración avanzada precisen que uses el módulo Windows PowerShell para [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]. La tabla siguiente enumera algunos de los escenarios de configuración avanzada que usan Windows PowerShell. Para una lista completa de los cmdlets disponibles con más información acerca de cada uno de ellos, consulte [Cmdlets de Azure Rights Management](http://msdn.microsoft.com/library/azure/dn629398.aspx).
+Tras haber activado [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)], no será necesario seguir con la administración de este servicio. Sin embargo, puede que algunos escenarios de configuración avanzada precisen que uses el módulo Windows PowerShell para [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]. La tabla siguiente enumera algunos de los escenarios de configuración avanzada que usan Windows PowerShell. Para ver una lista completa de los cmdlets disponibles con más información sobre cada uno de ellos, consulte [Cmdlets de Azure Rights Management](http://msdn.microsoft.com/library/azure/dn629398.aspx)..
 
 > [!NOTE]
-> Si es necesario instalar el módulo de Windows PowerShell para [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)], consulte [Instalación de Windows PowerShell para Azure Rights Management](install-powershell.md).
+> Si es necesario instalar el módulo de Windows PowerShell para [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)], consulte [Installing Windows PowerShell for Azure Rights Management](install-powershell.md) (Instalación de Windows PowerShell para Azure Rights Management)..
 
 También hay un módulo complementario de Windows PowerShell, **RMSProtection**, que admite Azure RMS y AD RMS. Este módulo permite proteger y desproteger varios archivos para que, por ejemplo, pueda proteger masivamente todos los archivos de una carpeta. Para más información, consulte la sección [Opciones de script para superusuarios](configure-super-users.md#scripting-options-for-super-users) del artículo [Configuración de superusuarios para Azure Rights Management y los servicios de detección o la recuperación de datos](configure-super-users.md).
 
 |Si tienes que…|…usar los cmdlets siguientes|
 |-------------------|------------------------------|
-|Migrar de Rights Management local (AD RMS o Windows RMS) a [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)].|[Import-AadrmTpd](http://msdn.microsoft.com/library/azure/dn857523.aspx)|
+|Migrar de Rights Management local (AD RMS o Windows RMS) a [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)].|[Import-AadrmTpd](http://msdn.microsoft.com/library/azure/dn857523.aspx)|
 |Conéctate o desconéctate desde el servicio [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] para tu organización.|[Connect-AadrmService](http://msdn.microsoft.com/library/azure/dn629415.aspx)<br /><br />[Disconnect-AadrmService](http://msdn.microsoft.com/library/azure/dn629416.aspx)|
 |Genera y administra tu propia clave de inquilino; el escenario Aportar tu propia clave (BYOK).|[Add-AadrmKey](http://msdn.microsoft.com/library/azure/dn629418.aspx)<br /><br />[Get-AadrmKeys](http://msdn.microsoft.com/library/azure/dn629420.aspx)|
 |Activa o desactiva el servicio [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] para tu organización.|[Enable-Aadrm](http://msdn.microsoft.com/library/azure/dn629412.aspx)<br /><br />[Disable-Aadrm](http://msdn.microsoft.com/library/azure/dn629422.aspx)|
@@ -56,6 +59,6 @@ También hay un módulo complementario de Windows PowerShell, **RMSProtection**,
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

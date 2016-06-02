@@ -27,11 +27,14 @@ ms.suite: ems
 
 # ¿Qué es Rights Management de Azure?
 
+*Se aplica a: Azure Rights Management, Office 365*
+
+
 Administración de los derechos de Azure (Azure RMS) es una solución de protección de información para organizaciones que desean proteger sus datos en el desafiante entorno de trabajo actual.
 
 Entre estos desafíos se encuentra la necesidad de estar conectado a Internet, con usuarios que llevan su dispositivo personal al trabajo, que acceden a datos de la compañía en casa y en desplazamientos y que comparten información confidencial con importantes socios empresariales. Como parte de su trabajo diario, los usuarios comparten información mediante correo electrónico, sitios de uso compartido de archivos y servicios en la nube. En estos escenarios, los controles de seguridad tradicionales (como las listas de control de acceso y los permisos NTFS) y los firewalls tienen una eficacia limitada si desea proteger los datos de su compañía a la vez que se permite a los usuarios trabajar con eficiencia.
 
-En comparación, Azure RMS puede proteger la información confidencial de la compañía en todos estos escenarios. Usa directivas de cifrado, identidad y autorización para ayudar a proteger sus archivos y correo electrónico y funciona en varios dispositivos (teléfonos, tabletas y PC). La información se puede proteger tanto dentro como fuera de su organización porque dicha protección permanece con los datos, incluso cuando sale de los límites de su organización. 
+En comparación, Azure RMS puede proteger la información confidencial de la compañía en todos estos escenarios. Usa directivas de cifrado, identidad y autorización para ayudar a proteger sus archivos y correo electrónico y funciona en varios dispositivos (teléfonos, tabletas y PC). La información se puede proteger tanto dentro como fuera de su organización porque dicha protección permanece con los datos, incluso cuando sale de los límites de su organización.
 
 Por ejemplo, los empleados podrían enviar un documento por correo electrónico a una empresa asociada o guardar un documento en su unidad en la nube. La protección persistente que ofrece Azure no solo ayuda a proteger los datos de su compañía, sino que también puede ser legalmente obligatoria para requisitos de cumplimiento y descubrimiento legal, o simplemente como buenas prácticas de administración de la información.
 
@@ -39,7 +42,10 @@ Sin embargo, lo que es muy importante, las personas y los servicios autorizados 
 
 La siguiente imagen muestra de qué manera Azure RMS funciona como una solución de Rights Management para Office 365 así como para servicios y servidores locales. Asimismo, verá que admite populares dispositivos de usuario final que ejecutan Windows, Mac OS, iOS, Android y Windows Phone.
 
-![](../media/AzRMS_elements.png)
+> [!NOTE]
+Puede usar Azure RMS con diferentes suscripciones en la nube que incluyan Office 365, Enterprise Mobility Suite y Azure RMS Premium. Para obtener más información, consulte la sección [Cloud subscriptions that support Azure RMS](../get-started/requirements-subscriptions.md) (Suscripciones en la nube que son compatibles con Azure RMS)..
+
+![Cómo funciona Azure RMS](../media/AzRMS_elements.png)
 
 ## Pasos siguientes
 
@@ -53,17 +59,14 @@ Para más información acerca de Azure RMS:
 
 
 
-Si quiere algo más rápido y probar Azure RMS usted mismo, consulte [Quick start tutorial for Azure Rights Management](../get-started/quick-start-tutorial.md) (Tutorial de inicio rápido de Azure Rights Management).
+Si quiere algo más rápido y probar Azure RMS usted mismo, consulte [Quick start tutorial for Azure Rights Management](../get-started/quick-start-tutorial.md) (Tutorial de inicio rápido de Azure Rights Management)..
 
 Sin embargo, si está listo para comenzar a implementar Azure RMS para su organización, consulte [Azure Rights Management deployment roadmap](../plan-design/deployment-roadmap.md) (Plan para la implementación de Azure Rights Management) para ver los pasos de implementación y los vínculos con instrucciones de procedimiento.
 
 > [!TIP]
-> Para obtener información adicional y ayuda, use los recursos y vínculos que aparecen en [Information and support for Azure Rights Management](../get-started/information-support.md) (Información y soporte de Azure Rights Management).
+> Para obtener más información y ayuda, use los recursos y vínculos que aparecen en [Information and support for Azure Rights Management](../get-started/information-support.md) (Información y servicio de atención de Azure Rights Management)..
 
 
-
-
-
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO1-->
 
 

@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Registro y análisis del uso de Azure Rights Management
+
+*Se aplica a: Azure Rights Management, Office 365*
+
 Use la información de este tema para comprender cómo puede usar el registro de uso con Azure Rights Management (Azure RMS). El servicio Azure Rights Management permite registrar todas las solicitudes que realice para su organización, lo que incluye solicitudes de usuarios, acciones llevadas a cabo por administradores de Rights Management en su organización y acciones llevadas a cabo por operadores de Microsoft para admitir su implementación de Azure Rights Management.
 
 A continuación, puede usar estos registros de Azure Rights Management para admitir los siguientes escenarios empresariales:
@@ -44,8 +47,7 @@ A continuación, puede usar estos registros de Azure Rights Management para adm
 
     Si tiene una pérdida de información, es probable que se le pregunte quién accedió recientemente a documentos específicos y a qué información accedió la persona sospechosa. Puede responder a este tipo de preguntas con Azure Rights Management y los registros, porque las personas que usan el contenido protegido siempre deben obtener una licencia de Azure Rights Management para abrir documentos e imágenes que estén protegidos con Azure Rights Management, incluso en el caso de que dichos archivos se muevan por correo electrónico o se copien en unidades USB u otras unidades de almacenamiento. Esto significa que puede usar los registros de Azure Rights Management como el origen fundamental de la información para realizar el análisis forense cuando protege sus datos con Azure Rights Management.
 
-> [!NOTE]
-> Si solo está interesado en el registro de las tareas administrativas para Azure Rights Management y no desea realizar un seguimiento del modo en que los usuarios usan Rights Management, puede usar el cmdlet [Get-AadrmAdminLog](https://msdn.microsoft.com/library/azure/dn629430.aspx) de Windows PowerShell de Azure Rights Management.
+> [!NOTE] Si solo está interesado en el registro de las tareas administrativas para Azure Rights Management y no quiere realizar un seguimiento del modo en que los usuarios usan Rights Management, puede usar el cmdlet [Get-AadrmAdminLog](https://msdn.microsoft.com/library/azure/dn629430.aspx) de Windows PowerShell de Azure Rights Management.
 > 
 > También puede usar el Portal de Azure clásico para ver informes de uso de alto nivel que incluyen **Resumen de RMS**, **Usuarios activos de RMS**, **Plataformas de dispositivos RMS** y **Uso de aplicaciones de RMS**. Para tener acceso a estos informes desde el Portal de Azure clásico, haga clic en **Active Directory**, seleccione un directorio y ábralo y, luego, haga clic en **INFORMES**.
 
@@ -54,8 +56,7 @@ Use las secciones siguientes para más información sobre el registro de uso de 
 ## Habilitación del registro de uso de Azure Rights Management
 A partir de febrero de 2016, el registro de uso de Azure Rights Management se habilita de forma predeterminada para todos los clientes. Esto se aplica a los clientes que han activado su servicio de Azure RMS antes de febrero de 2016 y a los clientes que han activado el servicio después de febrero de 2016. 
 
-> [!NOTE]
-> Ni el almacenamiento de registro ni la funcionalidad de la característica de registro generan costos adicionales.
+> [!NOTE] Ni el almacenamiento de registro ni la funcionalidad de la característica de registro generan costos adicionales.
 > 
 > Si usó el registro de uso para Azure RMS antes de febrero de 2016, precisó de una suscripción a Azure y de almacenamiento suficiente en Azure, lo que ya no sucede.
 
@@ -151,7 +152,7 @@ Cada una de las líneas posteriores es un registro. Los valores de los campos se
 |owner-email|Cadena|Dirección de correo electrónico del propietario del documento.|alice@contoso.com|
 |issuer|Cadena|Dirección de correo electrónico del emisor del documento.|alice@contoso.com (o) FederatedEmail.4c1f4d-93bf-00a95fa1e042@contoso.onmicrosoft.com'|
 |Template-id|Cadena|Identificador de la plantilla que se usa para proteger el documento.|{6d9371a6-4e2d-4e97-9a38-202233fed26e}|
-|File-name|Cadena|Nombre de archivo del documento que se ha protegido.|TopSecretDocument.docx|
+|File-name|Cadena|Nombre de archivo del documento que se ha protegido. <br /><br />Actualmente, algunos archivos (como documentos de Office) se muestran como GUID en lugar del nombre de archivo real.|TopSecretDocument.docx|
 |Date-published|Fecha|Fecha en la que se ha protegido el documento.|2015-10-15T21:37:00|
 |c-info|Cadena|Información acerca de la plataforma del cliente que está realizando la solicitud.<br /><br />La cadena específica varía, en función de la aplicación (por ejemplo, el sistema operativo o el explorador).|'MSIPC;version=1.0.623.47;AppName=WINWORD.EXE;AppVersion=15.0.4753.1000;AppArch=x86;OSName=Windows;OSVersion=6.1.7601;OSArch=amd64'|
 |c-ip|Address|Dirección IP del cliente que realiza la solicitud.|64.51.202.144|
@@ -228,6 +229,6 @@ Para más información acerca de cómo usar Windows PowerShell para Azure Rights
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO3-->
 
 

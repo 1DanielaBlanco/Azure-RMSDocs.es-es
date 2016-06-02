@@ -6,8 +6,8 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
-ms.topic: article
+ms.date: 05/20/2016
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Escenario: Proteger (algunos) archivos de gran valor
+
+*Se aplica a: Azure Rights Management, Office 365*
+
 En este escenario y en la documentación de usuario correspondiente se usa Azure Rights Management para proteger manualmente y de forma personalizada unos pocos archivos que se han identificado como los más valiosos, lo que garantiza el máximo nivel de protección frente a accesos no autorizados. Suelen ser archivos a los que solo algunas personas deben poder tener acceso. Así, recetas detalladas de productos alimenticios de la firma de su empresa o planes de adquisición que no deben hacerse públicos hasta una fecha concreta.
 
 Las instrucciones son adecuadas para el conjunto de circunstancias siguiente:
@@ -43,7 +46,7 @@ Las instrucciones son adecuadas para el conjunto de circunstancias siguiente:
 -   El administrador debe poder realizar un seguimiento de quién tiene acceso a los archivos y cuándo para, de este modo, revocar el acceso si fuera necesario.
 
 ## Instrucciones de implementación
-![](../media/AzRMS_AdminBanner.png)
+![Instrucciones para el administrador para la implementación rápida de Azure RMS](../media/AzRMS_AdminBanner.png)
 
 Asegúrese de que se cumplen los siguientes requisitos y, luego, siga las instrucciones de los procedimientos correspondientes antes de pasar a la documentación del usuario.
 
@@ -52,7 +55,7 @@ Para que este escenario funcione, debe disponer de lo siguiente:
 
 |Requisito|Si necesita más información|
 |---------------|--------------------------------|
-|Preparó las cuentas y los grupos para Office 365 o Azure Active Directory:<br /><br />Un grupo habilitado para correo denominado **Acceso con privilegios**, compuesto por las pocas personas que deben tener acceso a estos documentos altamente confidenciales.<br /><br />Un grupo habilitado para correo denominado **Administradores de cumplimiento de TI**, compuesto por las personas encargadas de las tareas de exhibición de documentos electrónicos, auditoría y supervisión.<br /><br />Un grupo habilitado para correo denominado **Administradores de RMS**, del que todos los administradores que configuran Azure RMS son miembros|[Preparación de Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
+|Preparó las cuentas y los grupos para Office 365 o Azure Active Directory:<br /><br />- Un grupo habilitado para correo denominado **Acceso con privilegios**, compuesto por las pocas personas que deben tener acceso a estos documentos altamente confidenciales<br /><br />- Un grupo habilitado para correo denominado **Administradores de cumplimiento de TI**, compuesto por las personas encargadas de las tareas de exhibición de documentos electrónicos, auditoría y supervisión<br /><br />- Un grupo habilitado para correo denominado **Administradores de RMS**, del que todos los administradores que configuran Azure RMS son miembros|[Preparación de Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
 |Azure Rights Management no está activado|[Activar Rights Management de Azure](https://technet.microsoft.com/library/jj658941.aspx)|
 |Configuró una plantilla personalizada tal y como se describe a continuación|[Configuración de plantillas personalizadas para Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)|
 |La aplicación Rights Management sharing se implementa en el equipo de Windows para que estos archivos se puedan proteger de forma local, como se describe en la siguiente sección.|[Descargar e instalar la aplicación para uso compartido de Rights Management](https://technet.microsoft.com/library/dn574734%28v=ws.10%29.aspx)|
@@ -91,8 +94,7 @@ Para que este escenario funcione, debe disponer de lo siguiente:
 
 Para más información sobre cómo proteger archivos localmente, vea [Proteger un archivo en un dispositivo (protección en contexto) mediante la aplicación de uso compartido Rights Management](https://technet.microsoft.com/library/dn574733%28v=ws.10%29.aspx).
 
-> [!TIP]
-> Si el número de archivos que va a proteger es demasiado elevado para hacerlo manualmente, sopese la posibilidad de usar la [herramienta de protección de RMS](https://www.microsoft.com/en-us/download/details.aspx?id=47256) para protegerlos masivamente con la plantilla.
+> [!TIP] Si el número de archivos que va a proteger es demasiado elevado para hacerlo manualmente, sopese la posibilidad de usar la [herramienta de protección de RMS](https://www.microsoft.com/en-us/download/details.aspx?id=47256) para protegerlos masivamente con la plantilla.
 
 ### Para supervisar (y, si es necesario, revocar) el acceso a archivos
 
@@ -115,7 +117,7 @@ Con la siguiente plantilla, copie y pegue el anuncio en una comunicación dirigi
 
 En la documentación de ejemplo se muestra cómo ven los usuarios este anuncio tras las personalizaciones.
 
-![](../media/AzRMS_UsersBanner.png)
+![Documentación de usuario de la plantilla para la implementación rápida de Azure RMS](../media/AzRMS_UsersBanner.png)
 
 ### Anuncio de TI: Protección de documentos ultrasecretos de &lt;nombre de la organización&gt;
 Ahora los siguientes archivos tienen aplicado un nivel muy alto de protección, de forma que solo los &lt;usuarios restringidos&gt; pueden tener acceso a ellos y modificarlos. Para proteger estos archivos frente a un acceso no autorizado, las aplicaciones le pedirán una autorización cada vez que los abra, por lo que ahora debe tener una conexión a Internet para abrirlos y es posible que se le pidan las credenciales:
@@ -131,7 +133,7 @@ Ahora los siguientes archivos tienen aplicado un nivel muy alto de protección, 
 -   Si no se puede tener acceso a estos archivos o si nota cambios sospechosos en ellos, &lt;acción y detalles de contacto&gt;.
 
 #### Documentación de usuario personalizada de ejemplo
-![](../media/AzRMS_ExampleBanner.png)
+![Documentación de usuario de ejemplo para la implementación rápida de Azure RMS](../media/AzRMS_ExampleBanner.png)
 
 ##### Anuncio de TI: Proteger documentos ultrasecretos de VanArsdel
 Ahora los siguientes archivos tienen aplicado un nivel muy alto de protección, de forma que solo los usuarios incluidos en la línea Para de este mensaje pueden tener acceso a ellos y modificarlos. Para proteger estos archivos frente a un acceso no autorizado, las aplicaciones le pedirán una autorización cada vez que los abra, por lo que ahora debe tener una conexión a Internet para abrirlos y es posible que se le pidan las credenciales:
@@ -150,6 +152,6 @@ Ahora los siguientes archivos tienen aplicado un nivel muy alto de protección, 
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO3-->
 
 

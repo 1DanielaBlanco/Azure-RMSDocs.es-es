@@ -6,8 +6,8 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
-ms.topic: article
+ms.date: 05/20/2016
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Escenario: Proteger archivos en un recurso compartido de servidor de archivos
+
+*Se aplica a: Azure Rights Management, Office 365*
+
 En este escenario y en la documentación de usuario correspondiente se usa Azure Rights Management para proteger masivamente todos los archivos que quiere proteger en un servidor de archivos, a fin de procurar que solo los empleados de la organización puedan tener acceso a ellos, incluso si se copian y se guardan en un almacenamiento fuera del control del departamento de TI o se envían por correo electrónico a otros usuarios.
 
 En estas instrucciones se emplea una de las plantillas predeterminadas, que restringe el acceso a todos los empleados con todos los derechos de uso. Pero, en caso necesario, puede restringir aún más los derechos de acceso y de uso si configura una plantilla personalizada en lugar de usar una plantilla predeterminada.
@@ -39,7 +42,7 @@ Las instrucciones son adecuadas para el conjunto de circunstancias siguiente:
 -   La protección se vuelve a aplicar en todos los archivos de forma programada; así, se asegura que los cambios realizados en las plantillas de directiva de permisos surten efecto en esos archivos protegidos.
 
 ## Instrucciones de implementación
-![](../media/AzRMS_AdminBanner.png)
+![Instrucciones para el administrador para la implementación rápida de Azure RMS](../media/AzRMS_AdminBanner.png)
 
 Asegúrese de que se cumplen los siguientes requisitos y, luego, siga las instrucciones de los procedimientos correspondientes antes de pasar a la documentación del usuario.
 
@@ -50,7 +53,7 @@ Para que las instrucciones de este escenario funcionen, debe cumplir lo siguient
 |---------------|--------------------------------|
 |Azure Rights Management no está activado|[Activar Rights Management de Azure](https://technet.microsoft.com/library/jj658941.aspx)|
 |Ha sincronizado sus cuentas de usuario de Active Directory locales con Azure Active Directory u Office 365, incluyendo su dirección de correo electrónico. Esto es necesario para todos los usuarios que necesiten tener acceso a los archivos después de que se hayan protegido mediante FCI y Azure Rights Management.|[Preparación de Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
-|Uno de los siguientes:<br /><br />Para usar una plantilla predeterminada para todos los usuarios: no se ha almacenado la plantilla predeterminada, &lt;nombre de la organización&gt; - Confidencial.<br /><br />Para usar una plantilla personalizada para usuarios específicos: ha creado y publicado esa plantilla personalizada.|[Configuración de plantillas personalizadas para Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)|
+|Uno de los siguientes:<br /><br />- Para usar una plantilla predeterminada para todos los usuarios: no se ha archivado la plantilla predeterminada, &lt;nombre de la organización&gt; - Confidencial.<br /><br />- Para usar una plantilla personalizada para usuarios específicos: ha creado y publicado esa plantilla personalizada.|[Configuración de plantillas personalizadas para Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)|
 |La aplicación Rights Management sharing se implementa en los equipos de los usuarios que ejecutan Windows|[Implementación automática de la aplicación Microsoft Rights Management sharing](https://technet.microsoft.com/library/dn339003%28v=ws.10%29.aspx)|
 |Ha descargado la herramienta de protección de RMS y ha configurado los requisitos previos de Azure RMS.|Para obtener instrucciones para descargar la herramienta y los requisitos previos: [RMS Protection Cmdlets](https://msdn.microsoft.com/library/mt433195.aspx) (Cmdlets de protección de RMS).<br /><br />Para configurar más requisitos previos para Azure RMS, como la cuenta de entidad de servicio: [about_RMSProtection_AzureRMS](https://msdn.microsoft.com/library/mt433202.aspx).|
 
@@ -97,15 +100,15 @@ Con la siguiente plantilla, copie y pegue las instrucciones dirigidas a los usua
 
 -   Haga los cambios que quiera en este conjunto de instrucciones y, después, envíelo a estos usuarios.
 
-En la documentación de ejemplo se muestra cómo ven los usuarios este conjunto de instrucciones tras las personalizaciones.
+En la documentación de ejemplo se muestra el aspecto de estas instrucciones para los usuarios tras sus personalizaciones.
 
-![](../media/AzRMS_UsersBanner.png)
+![Documentación de usuario de la plantilla para la implementación rápida de Azure RMS](../media/AzRMS_UsersBanner.png)
 
 ### Procedimiento para editar &lt;tipo de archivo&gt; desde el &lt;recurso compartido de servidor de archivos&gt;
 
 1.  Haga doble clic en el archivo para abrirlo. Puede que se le pidan las credenciales.
 
-2.  Verá un cuadro de diálogo de **archivo protegido** de la aplicación Microsoft Rights Management sharing, lo que significa que se espera que se respeten los permisos de **&lt;nombre de la organización&gt; - Confidencial**. Dicho de otro modo: no comparta este documento con otras personas si no trabajan para &lt;nombre de la organización&gt;.
+2.  Verá un cuadro de diálogo de **archivo protegido** de la aplicación Microsoft Rights Management sharing que le indicará que se espera que se respeten los permisos de **&lt;nombre de la organización&gt; - Confidencial**. Dicho de otro modo: no comparta este documento con otras personas si no trabajan para &lt;nombre de la organización&gt;.
 
 3.  Haga clic en **Abrir**.
 
@@ -128,7 +131,7 @@ Cada cierto tiempo, el archivo se volverá a proteger, lo que hace que se agregu
     -   *&lt;detalles de contacto&gt;*
 
 ### Documentación de usuario personalizada de ejemplo
-![](../media/AzRMS_ExampleBanner.png)
+![Documentación de usuario de ejemplo para la implementación rápida de Azure RMS](../media/AzRMS_ExampleBanner.png)
 
 #### Procedimiento para editar dibujos de CAD desde el recurso compartido ProjectNextGen
 
@@ -158,6 +161,6 @@ Cada cierto tiempo, el archivo se volverá a proteger, lo que hace que se agregu
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO3-->
 
 

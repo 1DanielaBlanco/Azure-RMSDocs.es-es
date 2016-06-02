@@ -6,8 +6,8 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
-ms.topic: article
+ms.date: 05/20/2016
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Escenario: Los ejecutivos intercambian información confidencial de forma segura
+
+*Se aplica a: Azure Rights Management, Office 365*
+
 En este escenario y en la documentación de usuario correspondiente se usa Azure Rights Management para que los ejecutivos puedan intercambiar entre ellos mensajes de correo y datos adjuntos por correo electrónico de forma segura, y para que las directivas restrinjan automáticamente el acceso a los ejecutivos sin que tengan que realizar ninguna acción especial. Los correos electrónicos y los datos adjuntos estarán protegidos automáticamente con Azure Rights Management.
 
 Si lo precisa, puede agregar una excepción a la regla, como la abreviatura NP ("no proteger") en el asunto del mensaje de correo, de forma que los ejecutivos puedan especificarla si necesitan enviar un correo electrónico no protegido a otros ejecutivos (por ejemplo, para revisar el mensaje antes de reenviarlo a otros usuarios).
@@ -39,7 +42,7 @@ Las instrucciones son adecuadas para el conjunto de circunstancias siguiente:
 -   Los ejecutivos tienen una manera de invalidar la regla por sí mismos en caso de que alguna vez necesiten enviar un mensaje de correo no protegido a otros ejecutivos.
 
 ## Instrucciones de implementación
-![](../media/AzRMS_AdminBanner.png)
+![Instrucciones para el administrador para la implementación rápida de Azure RMS](../media/AzRMS_AdminBanner.png)
 
 Asegúrese de que se cumplen los siguientes requisitos y, luego, siga las instrucciones de los procedimientos correspondientes antes de pasar a la documentación del usuario.
 
@@ -48,10 +51,10 @@ Para que las instrucciones de este escenario funcionen, debe cumplir lo siguient
 
 |Requisito|Si necesita más información|
 |---------------|--------------------------------|
-|Preparó las cuentas y los grupos para Office 365 o Azure Active Directory:<br /><br />Un grupo habilitado para correo denominado **Ejecutivos** del que todos los ejecutivos son miembros<br /><br />Un grupo habilitado para correo denominado **Administradores de RMS**, del que todos los administradores que configuran Azure RMS son miembros|[Preparación de Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
+|Preparó las cuentas y los grupos para Office 365 o Azure Active Directory:<br /><br />- Un grupo habilitado para correo denominado **Ejecutivos** del que todos los ejecutivos son miembros<br /><br />- Un grupo habilitado para correo denominado **Administradores de RMS**, del que todos los administradores que configuran Azure RMS son miembros|[Preparación de Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
 |Microsoft administra su clave de inquilino de Azure Rights Management; no se usa BYOK|[Planeación e implementación de la clave de inquilino de Azure Rights Management](https://technet.microsoft.com/library/dn440580.aspx)|
 |Azure Rights Management no está activado|[Activar Rights Management de Azure](https://technet.microsoft.com/library/jj658941.aspx)|
-|Una de estas configuraciones:<br /><br />Exchange Online está habilitado para Azure Rights Management<br /><br />El conector RMS está instalado y configurado para Exchange local|Para Exchange Online: expanda la sección **Exchange Online: IRM Configuration** (Exchange Online: Configuración de IRM) del tema [Configuring Applications for Azure Rights Management](https://technet.microsoft.com/library/jj585031.aspx) (Configuración de aplicaciones para Azure Rights Management).<br /><br />Para Exchange local: [Deploying the Azure Rights Management connector](https://technet.microsoft.com/library/dn375964.aspx) (Implementación del conector de Azure Rights Management).|
+|Una de estas configuraciones:<br /><br />- Exchange Online está habilitado para Azure Rights Management<br /><br />- El conector RMS está instalado y configurado para Exchange local|Para Exchange Online: expanda la sección **Exchange Online: IRM Configuration** (Exchange Online: Configuración de IRM) del tema [Configuring Applications for Azure Rights Management](https://technet.microsoft.com/library/jj585031.aspx) (Configuración de aplicaciones para Azure Rights Management).<br /><br />Para Exchange local: [Deploying the Azure Rights Management connector](https://technet.microsoft.com/library/dn375964.aspx) (Implementación del conector de Azure Rights Management).|
 |Configuró una plantilla personalizada tal y como se describe a continuación|[Configuración de plantillas personalizadas para Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)|
 |Ha configurado una regla de protección de transporte para IRM, tal y como se describe luego en este artículo|Para Exchange Online: [Crear una regla de protección de transporte](https://technet.microsoft.com/library/dd302432.aspx)<br /><br />Para Exchange 2013: [Crear una regla de protección de transporte](https://technet.microsoft.com/en-us/library/dd302432%28v=exchg.150%29.asp)<br /><br />Para Exchange 2010: [Crear una regla de protección de transporte](https://technet.microsoft.com/en-us/library/dd302432%28v=exchg.141%29.aspx)|
 
@@ -100,27 +103,27 @@ Con la siguiente plantilla, copie y pegue el anuncio en una comunicación dirigi
 
 3.  Reemplace *&lt;dominio de correo&gt;* por el nombre de dominio de correo electrónico de su organización.
 
-4.  Reemplace *&lt;detalles de contacto&gt;* por instrucciones sobre cómo los usuarios pueden ponerse en contacto con el departamento de soporte técnico como, por ejemplo, un vínculo de sitio web, una dirección de correo electrónico o un número de teléfono.
+4.  Reemplace *&lt;detalles de contacto&gt;* por instrucciones sobre cómo los usuarios pueden ponerse en contacto con el departamento de soporte técnico, por ejemplo, un vínculo de sitio web, una dirección de correo electrónico o un número de teléfono.
 
 5.  Haga los cambios que quiera en este anuncio y, después, envíelo a estos usuarios.
 
 En la documentación de ejemplo se muestra cómo ven los usuarios este anuncio tras las personalizaciones.
 
-![](../media/AzRMS_UsersBanner.png)
+![Documentación de usuario de la plantilla para la implementación rápida de Azure RMS](../media/AzRMS_UsersBanner.png)
 
 ### Anuncio de TI: Ahora los correos electrónicos de &lt;nombre de la organización&gt; se protegerán automáticamente
 De ahora en adelante, siempre que se envíen correos electrónicos a otro ejecutivo de &lt;nombre de la organización&gt;, el contenido de los correos y los datos adjuntos se protegerán automáticamente, de modo que solo otro ejecutivo de la empresa pueda tener acceso a ellos para leer la información, imprimirlos, copiarlos, etc. Esta restricción se aplica incluso si se reenvía el mensaje de correo electrónico a otros usuarios o si se guardan los datos adjuntos. Con esta protección, es más fácil evitar la pérdida de datos confidenciales o importantes.
 
 No olvide que, si quiere que otros usuarios que no sean ejecutivos de &lt;nombre de la organización&gt; puedan leer y editar la información de estos correos, deberá enviarla por separado. O bien, para invalidar la protección automática, escriba **NP** (abreviatura de "No proteger") en cualquier parte del asunto del mensaje de correo.
 
-Al enviar información confidencial de la empresa a otro ejecutivo de &lt;nombre de la organización&gt;, recuerde que debe enviarla a su dirección de correo electrónico de trabajo (*name*@&lt;dominio de correo&gt;) y no a una dirección de correo electrónico personal.
+Al enviar información confidencial de la empresa a otro ejecutivo de &lt;nombre de la organización&gt;, recuerde que debe enviarla a su dirección de correo electrónico de trabajo (*nombre*@&lt;dominio de correo&gt;) y no a una dirección de correo electrónico personal.
 
 **¿Necesita ayuda?**
 
 -   Póngase en contacto con el departamento de soporte técnico: &lt;detalles de contacto&gt;
 
 ### Documentación de usuario de ejemplo
-![](../media/AzRMS_ExampleBanner.png)
+![Documentación de usuario de ejemplo para la implementación rápida de Azure RMS](../media/AzRMS_ExampleBanner.png)
 
 #### Anuncio de TI: Ahora los correos electrónicos de VanArsdel se protegerán automáticamente
 De ahora en adelante, siempre que se envíen correos electrónicos a otro ejecutivo de VanArsdel, el contenido de los correos electrónicos y los datos adjuntos se protegerán automáticamente de modo que solo otro ejecutivo de la empresa pueda tener acceso a ellos para leer la información, imprimirlos, copiarlos, etc. Esta restricción se aplica incluso si se reenvía el mensaje de correo electrónico a otros usuarios o si se guardan los datos adjuntos. Con esta protección, es más fácil evitar la pérdida de datos confidenciales o importantes.
@@ -135,6 +138,6 @@ Al enviar información confidencial de la empresa a otro ejecutivo de VanArsdel,
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO3-->
 
 

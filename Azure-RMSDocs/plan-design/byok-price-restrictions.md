@@ -27,13 +27,16 @@ ms.suite: ems
 
 # Precio y restricciones de BYOK
 
+*Se aplica a: Azure Rights Management, Office 365*
+
+
 Las organizaciones que tienen una suscripción a Azure administrada por TI pueden usar BYOK y registrar su uso sin cargos adicionales. Las organizaciones que usan RMS para usuarios no pueden utilizar BYOK ni el registro, porque no tienen un administrador inquilino para configurar estas características.
 
 
 > [!NOTE]
-> Para más información sobre RMS para usuarios, consulte [RMS para usuarios y Azure Rights Management](../understand-explore/rms-for-individuals.md).
+> Para obtener más información sobre RMS para usuarios, consulte [RMS for individuals and Azure Rights Management](../understand-explore/rms-for-individuals.md) (RMS para usuarios y Azure Rights Management)..
 
-![](../media/RMS_BYOK_noExchange.png)
+![BYOK no es compatible con Exchange Online.](../media/RMS_BYOK_noExchange.png)
 
 BYOK y el registro funcionan sin problemas con todas las aplicaciones que se integran con Azure RMS. Aquí se incluyen servicios en la nube, como SharePoint Online, servidores locales que ejecutan Exchange y SharePoint que funcionan con Azure RMS mediante el conector RMS y aplicaciones cliente como Office 2013. Obtendrá los registros de uso de claves independientemente de la aplicación que realiza solicitudes de Azure RMS.
 
@@ -57,12 +60,12 @@ A veces, la excepción de BYOK de Azure RMS para Exchange Online no es un proble
 
 ## Pasos siguientes
 
-Si ha tomado la decisión de administrar su propia clave, vaya a [Implementing your Azure Rights Management tenant key](plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key) (Implementación de su clave de inquilino de Azure Rights Management).
+Si ha tomado la decisión de administrar su propia clave, vaya a [Implementing your Azure Rights Management tenant key](plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key) (Implementación de su clave de inquilino de Azure Rights Management)..
 
 Si ha decidido permanecer con la configuración predeterminada con la que Microsoft administra su clave, consulte la sección [Pasos siguientes](plan-implement-tenant-key.md#next-steps) del artículo Planeamiento e implementación de la clave de inquilino de Azure Rights Management
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

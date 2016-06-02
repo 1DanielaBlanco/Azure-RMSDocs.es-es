@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/19/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Configuración de los derechos de uso para Azure Rights Management
+
+*Se aplica a: Azure Rights Management, Office 365*
+
 Cuando establece la protección en archivos o correos electrónicos con Azure Rights Management (Azure RMS) y no usa ninguna plantilla, debe configurar los derechos de uso usted mismo. Además, al configurar plantillas personalizadas para Azure RMS, se seleccionan los derechos de uso que se aplicarán automáticamente cuando los usuarios, administradores o servicios configurados seleccionen la plantilla. Por ejemplo, en el Portal de Azure clásico, puede seleccionar los roles que configuran una agrupación lógica de derechos de uso o puede configurar los derechos individuales.
 
 Use este artículo como ayuda para configurar los derechos de uso que quiere para la aplicación que esté usando y para entender cómo las aplicaciones interpretan estos derechos.
@@ -47,8 +50,6 @@ Permite al usuario modificar, reorganizar, formatear o filtrar el contenido dent
 **Nombre en las plantillas de AD RMS**: *Editar*
 
 **Constante o valor de API**: *no aplicable*
-
-En las aplicaciones de Office, este derecho también permite al usuario guardar el documento.
 
 ---
 
@@ -90,7 +91,7 @@ Este derecho está disponible en el SDK como directiva ad hoc en el módulo de p
 
 ### Guardar como, Exportar
 
-Habilita la opción para guardar el contenido con un nombre de archivo diferente (Guardar como). Según la aplicación, el archivo puede guardarse sin protección.
+Habilita la opción para guardar el contenido con un nombre de archivo diferente (Guardar como). En el caso de los documentos de Office, el archivo puede guardarse sin protección.
 
 **Codificación en la directiva**: EXPORT
 
@@ -108,7 +109,7 @@ Este derecho también permite al usuario realizar otras opciones de exportación
 
 ### Reenviar
 
-Habilita la opción para reenviar un mensaje de correo electrónico y agregar destinatarios a las líneas *Para* y *CO*.
+Habilita la opción para reenviar un mensaje de correo electrónico y agregar destinatarios a las líneas *Para* y *CO*. Este derecho no se aplica a documentos, solo a mensajes de correo electrónico.
 
 **Codificación en la directiva:** FORWARD
 
@@ -206,55 +207,24 @@ Permite al usuario abrir el documento y ver el contenido.
 
 ---
 
-### Ver derechos
+### Copiar
 
-Permite al usuario ver la directiva que se aplica al documento.
+Habilita las opciones para copiar los datos (incluidas las capturas de pantalla) del documento en el mismo documento o en otro documento.
 
-**Codificación en la directiva**: VIEWRIGHTSDATA
+**Codificación en la directiva**: EXTRACT
 
-**Implementación en los derechos personalizados de Office**: no implementado.
+**Implementación en los derechos personalizados de Office:** como la opción de directiva personalizada *Permitir que los usuarios con acceso de lectura copien el contenido*.
 
-**Nombre en el Portal de Azure clásico**: *Ver derechos asignados*
+**Nombre en el Portal de Azure clásico**: *Copiar y extraer contenido*
 
-**Nombre en las plantillas de AD RMS:** *Ver derechos*
+**Nombre en las plantillas de AD RMS**: *Extraer*
 
-**Constante o valor de API:** IPC_READ_RIGHTSL"VIEWRIGHTSDATA"
+**Constante o valor de API:** IPC_GENERIC_EXTRACTL"EXTRACT"
 
----
-
-### Nombre común: Ver derechos
-
-Permite al usuario ver la directiva que se aplica al documento.
-
-**Codificación en la directiva**: VIEWRIGHTSDATA
-
-**Implementación en los derechos personalizados de Office**: no implementado.
-
-**Nombre en el Portal de Azure clásico**: *Ver derechos asignados*
-
-**Nombre en las plantillas de AD RMS:** *Ver derechos*
-
-**Constante o valor de API:** IPC_READ_RIGHTSL"VIEWRIGHTSDATA"
-
-Algunas aplicaciones no lo tienen en cuenta.
+En algunas aplicaciones, también permite que todo el documento se guarde en sin protección.
 
 ---
 
-### Cambiar derechos
-
-Permite al usuario cambiar la directiva que se aplica al documento. Incluye la eliminación de la protección.
-
-**Codificación en la directiva**: EDITRIGHTSDATA
-
-**Implementación en los derechos personalizados de Office**: no implementado.
-
-**Nombre en el Portal de Azure clásico:** *Cambiar derechos*
-
-**Nombre en las plantillas de AD RMS**: *Editar derechos*
-
-**Constante o valor de API:** IPC_WRITE_RIGHTSL"EDITRIGHTSDATA"
-
----
 
 ### Permitir macros
 
@@ -302,6 +272,6 @@ Los derechos que se incluyen con las plantillas predeterminadas son los siguient
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO3-->
 
 

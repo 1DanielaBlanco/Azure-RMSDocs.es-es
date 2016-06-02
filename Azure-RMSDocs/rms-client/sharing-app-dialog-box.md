@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/09/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Opciones del cuadro de diálogo para la aplicación de uso compartido Rights Management
+
+*Se aplica a: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 con SP1, Windows 8, Windows 8.1*
+
 Use esta información para especificar las opciones en el cuadro de diálogo **Agregar protección** o en el cuadro de diálogo **Uso compartido seguro** de la aplicación de uso compartido de RMS. Verá este cuadro de diálogo cuando [proteja un archivo para compartirlo](sharing-app-protect-by-email.md) o cuando [proteja un archivo en contexto](sharing-app-protect-in-place.md) y elija permisos personalizados.
 
 > [!IMPORTANT]
@@ -42,7 +45,7 @@ Además de las opciones que puede elegir, es posible que también se pregunte lo
 |Opción|Descripción|
 |----------|---------------|
 |**USUARIOS**|Si todavía no especificó una dirección de correo electrónico de Outlook, escriba las direcciones de correo electrónico de las personas que desea que puedan abrir el archivo.<br /><br />Tenga en cuenta que la aplicación RMS sharing no admite todas las direcciones de correo electrónico.<br /><br />Si su organización usa la versión local de Rights Management (AD RMS), las direcciones de correo electrónico que puede especificar se limitan a personas de su organización. En este caso, cuando intente especificar direcciones de correo electrónico externas, verá un mensaje que indica que la configuración de la empresa permite el uso compartido de contenido protegido únicamente dentro de la empresa. <br /><br /> Si la organización usa Azure RMS, estas direcciones de correo electrónico pueden ser de personas de la organización o de personas de otra organización.<br /><br />Por ejemplo: **janetm@contoso.com; p.dover@fabrikam.com**<br /><br />La aplicación RMS sharing no admite actualmente direcciones de correo electrónico personal|
-|**Protección genérica**|Si está seleccionada esta opción, significa que el archivo seleccionado no se puede proteger de forma nativa. Para obtener más información, vea. [¿Cuál es la diferencia entre la protección genérica y la protección incorporada (nativa)?](#what-s-the-difference-between-generic-protection-and-built-in-native-protection-) en esta página.|
+|**Protección genérica**|Si está seleccionada esta opción, significa que el archivo seleccionado no se puede proteger de forma nativa. Para obtener más información, vea. [¿Cuál es la diferencia entre la protección genérica y la protección integrada (nativa)?](#what-s-the-difference-between-generic-protection-and-built-in-native-protection-) en esta página.|
 |**Visor – Solo ver**<br /><br />**Revisor – Ver y editar**<br /><br />**Coautor – Ver, editar, copiar e imprimir**<br /><br />**Copropietario – Todos los permisos**<br /><br />Nota: Todas estas opciones tienen un icono redondo antes del nombre, que representa un globo terráqueo. Se usa este icono porque, normalmente, se selecciona una de estas opciones cuando se envía un archivo adjunto a una persona de otra organización.|Seleccione una de estas opciones si desea definir los derechos del documento protegido. Haga clic en cada opción para ver una descripción.<br /><br />Cuando elija una de estas opciones, solo las personas que indique en **USUARIOS** tienen los derechos que especifique para abrir y usar el documento. Por ejemplo, si reenvían el documento a otra persona, no se abrirá.|
 |Plantillas de directiva que configura el administrador.<br /><br />Por ejemplo, si el nombre de la organización es Contoso, Ltd: **Contoso, Ltd - Solo vista confidencial**.<br /><br />Todas estas opciones tienen un icono cuadrado antes del nombre, que representa un edificio de oficinas. Se usa este icono porque, normalmente, se selecciona una de estas opciones cuando se envía un archivo adjunto a una persona de la misma organización.|Al compartir un documento con personas que trabajan en su organización, verá las plantillas de directiva disponibles que configura el administrador. Elija una de estas plantillas cuando no se deba compartir el documento fuera de su organización.<br /><br />Cuando se elija una de estas opciones, el administrador definirá los derechos del documento y quién puede abrirlo.|
 |**Estos documentos expiran el**|Seleccione esta opción solo para los archivos sujetos a limitación temporal que los usuarios seleccionados no deben poder abrir después de la fecha que especifique. Usted seguirá pudiendo abrir el archivo original, pero después de la medianoche (de su zona horaria actual) del día que especifique, nadie más podrá abrir el archivo.<br /><br />Esta opción no está disponible si selecciona una plantilla de directiva configurada por el administrador.|
@@ -54,11 +57,11 @@ Además de las opciones que puede elegir, es posible que también se pregunte lo
 -   Cuando se **protege genéricamente un archivo**, las personas no autorizadas no pueden abrir el archivo. Sin embargo, cuando una persona autorizada abre el archivo, puede reenviarlo desprotegido a otras personas o guardarlo en una ubicación a la que podrían acceder otros usuarios. A pesar de ello, verán un mensaje que les informa de los permisos que tienen para el archivo y se les solicitará que los respeten, aunque no es posible obligar al cumplimiento de esta protección. Además, al proteger un archivo de forma genérica, no es posible restringir los permisos más allá de la autorización. Por ejemplo, no se puede restringir el contenido a Solo ver, o a No imprimir.
 
     > [!NOTE]
-    > Un archivo protegido genéricamente siempre tiene la extensión de nombre de archivo **.pfile**.
+    > Un archivo protegido genéricamente siempre tiene la extensión de nombre de archivo **.pfile**..
 
 -   En cambio, cuando se usa la **protección integrada (nativa)** de Rights Management con aplicaciones que la admiten (por ejemplo, archivos de Office), la protección se aplica al archivo aunque este se envíe a otra persona o se guarde en otra ubicación. Además, al proteger estos archivos, puede usar permisos restrictivos, como el permiso de solo lectura o el permiso para editar pero no imprimir ni copiar. Por ejemplo, puede seleccionar **Visor – Solo ver**, de modo que el contenido no se pueda editar, imprimir ni copiar.
 
-Para obtener información técnica adicional, consulte la sección [Niveles de protección: nativa y genérica](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) de la [Guía del administrador de la aplicación Microsoft Rights Management sharing](sharing-app-admin-guide.md).
+Para obtener información técnica adicional, consulte la sección [Levels of protection – native and generic](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) (Niveles de protección: nativo y genérico) de la [Rights Management sharing application administrator guide](sharing-app-admin-guide.md) (Guía de administrador de la aplicación Rights Management sharing)..
 
 ## ¿Qué es el archivo .ppdf que se crea automáticamente?
 
@@ -74,13 +77,13 @@ Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de 
 
 -   [Ejemplos de uso de la aplicación RMS sharing](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [¿Qué desea hacer?](sharing-app-user-guide.md##what-do-you-want-to-do-)
+-   [¿Qué desea hacer?](sharing-app-user-guide.md#what-do-you-want-to-do-)
 
 ## Véase también
 [Guía de usuario de la aplicación de uso compartido Rights Management](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

@@ -26,7 +26,12 @@ ms.suite: ems
 ---
 
 # Cliente de Rights Management (RMS)
-Use la siguiente documentación para obtener información sobre el cliente de Rights Management (RMS), que se puede usar con los servicios de Rights Management locales (AD RMS) y en la nube (Azure RMS) para ayudar a proteger los datos de su organización:
+
+*Se aplica a: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 con SP1, Windows 8, Windows 8.1*
+
+Microsoft Rights Management Services es una solución de cliente-servidor en la que el cliente de RMS se integra con aplicaciones que se ejecutan en equipos y dispositivos móviles. El servicio RMS reside en la nube (Azure RMS) o local (AD RMS). El cliente de RMS se instala automáticamente con algunas aplicaciones, como aplicaciones de Office, la aplicación de RMS sharing y las aplicaciones habilitadas para RMS de proveedores de software. Sin embargo, también puede instalarse por sí mismo, en cuyo caso es compatible con diversos escenarios, como desarrolladores que quieren integrar la protección de RMS en sus aplicaciones de línea de negocio y administradores o usuarios avanzados que quieren proteger archivos masivamente mediante la herramienta de protección de RMS.
+
+Use la siguiente documentación si necesita obtener más información sobre la implementación y el uso del cliente de Rights Management (RMS), que se puede usar con Azure RMS o AD RMS para ayudar a proteger los datos de su organización:
 
 - [Notas de la implementación del cliente de RMS](client-deployment-notes.md)
 
@@ -39,9 +44,10 @@ Use la siguiente documentación para obtener información sobre el cliente de Ri
 
 Para obtener recursos adicionales, como opciones de soporte técnico y de la comunidad, visite el sitio web de [servicios de Microsoft Rights Management](https://www.microsoft.com/rms).
 
+## Consulte también
+[Comparación de Azure RMS y AD RMS](../understand-explore/compare-azure-rms-ad-rms.md)
 
 
-
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

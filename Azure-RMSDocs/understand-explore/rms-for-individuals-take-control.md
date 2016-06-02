@@ -29,6 +29,9 @@ ms.suite: ems
 
 # Cómo pueden los administradores controlar las cuentas creadas para RMS para usuarios
 
+*Se aplica a: Azure Rights Management*
+
+
 Si no desea convertir su suscripción de RMS para usuarios de la organización en una suscripción de pago, todavía puede controlar las cuentas de usuario del directorio de Azure que creó para su organización de los modos que se indican a continuación:
 
 -   Implemente soluciones de integración de directorio para Azure Active Directory y su infraestructura de servicios de dominio de Active Directory. Puede sincronizar cuentas y contraseñas para que los usuarios no tengan que crear nuevas cuentas para utilizar Rights Management y se aplicarán sus políticas de contraseñas locales a las cuentas nuevas de Azure. También puede sincronizar contraseñas para que los usuarios no tengan que recordar una contraseña diferente para utilizar Rights Management.
@@ -46,9 +49,9 @@ Para controlar las cuentas de usuario en el directorio de Azure, o para impedir 
 
 ## Pasos siguientes
 
-Si los usuarios en lugar de los administradores pueden crear sus cuentas en Azure Active Directory para RMS para personas, ¿cómo puede saber si lo han realizado?  Consulte [Cómo averiguar si los usuarios se suscribieron para obtener RMS para usuarios](rms-for-individuals-identify-sign-up.md).
+Si los usuarios en lugar de los administradores pueden crear sus cuentas en Azure Active Directory para RMS para personas, ¿cómo puede saber si lo han realizado?  Consulte [How to find out if your users have signed up for RMS for individuals](rms-for-individuals-identify-sign-up.md) (Cómo averiguar si los usuarios se suscribieron para obtener RMS para usuarios)..
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

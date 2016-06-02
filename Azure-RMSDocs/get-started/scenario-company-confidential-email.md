@@ -6,8 +6,8 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
-ms.topic: article
+ms.date: 05/20/2016
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Escenario: Enviar un correo electrónico confidencial de la empresa
+
+*Se aplica a: Azure Rights Management, Office 365*
+
 En este escenario y en la documentación de usuario correspondiente se usa Azure Rights Management para que cualquier usuario de la organización pueda enviar de forma segura comunicaciones de correo electrónico que no se pueden leer fuera de la organización. Por ejemplo, si el mensaje de correo se reenviara a alguien de otra organización o a una cuenta de correo electrónico personal. Los correos electrónicos y los datos adjuntos estarán protegidos por Azure Rights Management y por una plantilla que los usuarios seleccionan en el cliente de correo electrónico.
 
 La forma más sencilla de reproducir este escenario consiste en usar una de las plantillas predeterminadas integradas que restringen automáticamente el acceso a todos los usuarios de la organización. Pero, si fuera necesario restringir más aún, puede crear una plantilla personalizada que, por ejemplo, limite el acceso a un subconjunto de usuarios o que tenga otras restricciones, como que sea de solo lectura, que tenga una fecha de caducidad o que tenga el botón Reenviar deshabilitado en el cliente de correo electrónico.
@@ -44,7 +47,7 @@ Las instrucciones son adecuadas para el conjunto de circunstancias siguiente:
 -   Los usuarios deben seleccionar manualmente la plantilla desde sus clientes de correo electrónico.
 
 ## Instrucciones de implementación
-![](../media/AzRMS_AdminBanner.png)
+![Instrucciones para el administrador para la implementación rápida de Azure RMS](../media/AzRMS_AdminBanner.png)
 
 Asegúrese de que se cumplen los siguientes requisitos antes de pasar a la documentación del usuario.
 
@@ -56,7 +59,7 @@ Para que las instrucciones de este escenario funcionen, debe cumplir lo siguient
 |Ha preparado cuantas y grupos para Office 365 o Azure Active Directory|[Preparación de Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
 |Microsoft administra su clave de inquilino de Azure Rights Management; no se usa BYOK|[Planeación e implementación de la clave de inquilino de Azure Rights Management](https://technet.microsoft.com/library/dn440580.aspx)|
 |Azure Rights Management no está activado|[Activar Rights Management de Azure](https://technet.microsoft.com/library/jj658941.aspx)|
-|Uno de los siguientes:<br /><br />Exchange Online está habilitado para Azure Rights Management<br /><br />El conector RMS está instalado y configurado para Exchange local|Para Exchange Online: expanda la sección **Exchange Online: IRM Configuration** (Exchange Online: Configuración de IRM) del tema [Configuring Applications for Azure Rights Management](https://technet.microsoft.com/library/jj585031.aspx) (Configuración de aplicaciones para Azure Rights Management).<br /><br />Para Exchange local: [Deploying the Azure Rights Management connector](https://technet.microsoft.com/library/dn375964.aspx) (Implementación del conector de Azure Rights Management).|
+|Uno de los siguientes:<br /><br />- Exchange Online está habilitado para Azure Rights Management<br /><br />- El conector RMS está instalado y configurado para Exchange local|Para Exchange Online: expanda la sección **Exchange Online: IRM Configuration** (Exchange Online: Configuración de IRM) del tema [Configuring Applications for Azure Rights Management](https://technet.microsoft.com/library/jj585031.aspx) (Configuración de aplicaciones para Azure Rights Management).<br /><br />Para Exchange local: [Deploying the Azure Rights Management connector](https://technet.microsoft.com/library/dn375964.aspx) (Implementación del conector de Azure Rights Management).|
 |No ha archivado la plantilla predeterminada de Azure Rights Management **&lt;organización&gt; - Confidencial**. O bien, ha configurado una plantilla personalizada para este propósito, porque necesita una configuración más restrictiva o que solo un subconjunto de usuarios de la organización pueda leer los mensajes de correo electrónico protegidos.|[Configuración de plantillas personalizadas para Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)<br /><br />Sugerencia: si necesita una configuración de directiva de uso más restrictiva para todos los usuarios de la organización, copie y modifique una de las plantillas predeterminadas, en lugar de crear una plantilla desde cero.<br /><br />Las plantillas actualizadas no se actualizan inmediatamente para los clientes de correo electrónico en este escenario. Para más información, vea la sección sobre cómo [actualizar plantillas para usuarios](https://technet.microsoft.com/library/dn642472.aspx) del artículo de configuración de plantillas.|
 |Los usuarios que envían el correo electrónico protegido tienen Outlook 2013, Outlook 2016 u Outlook Web Access.<br /><br />Los usuarios que reciben el correo electrónico tienen un cliente de correo electrónico que admite Azure Rights Management.|Puede usar Outlook 2010, pero deberá [instalar la aplicación Rights Management sharing para Windows](https://technet.microsoft.com/library/dn339003.aspx) y ajustar las instrucciones de usuario según corresponda.<br /><br />Para ver una lista de clientes de correo electrónico que admiten Azure Rights Management, vea la columna de **correo electrónico** de la tabla de [funciones de dispositivos de cliente](https://technet.microsoft.com/library/dn655136.aspx) del artículo [Requirements for Azure Rights Management](https://technet.microsoft.com/library/dn655136.aspx) (Requisitos de Azure Rights Management).|
 
@@ -69,7 +72,7 @@ Con la siguiente plantilla, copie y pegue las instrucciones de usuario en una co
 
 3.  Reemplace las capturas de pantalla para que muestren los nombres de plantilla de su organización.
 
-4.  Reemplace *&lt;detalles de contacto&gt;* por instrucciones sobre cómo los usuarios pueden ponerse en contacto con el departamento de soporte técnico como, por ejemplo, un vínculo de sitio web, una dirección de correo electrónico o un número de teléfono.
+4.  Reemplace *&lt;detalles de contacto&gt;* por instrucciones sobre cómo los usuarios pueden ponerse en contacto con el departamento de soporte técnico, por ejemplo, un vínculo de sitio web, una dirección de correo electrónico o un número de teléfono.
 
 5.  **Otras modificaciones que pueden interesarle:**
 
@@ -91,17 +94,17 @@ Con la siguiente plantilla, copie y pegue las instrucciones de usuario en una co
 
     Para más información sobre los clientes de correo electrónico, vea la columna de **correo electrónico** de la tabla de [funciones de dispositivos de cliente](https://technet.microsoft.com/library/dn655136.aspx) del artículo [Requirements for Azure Rights Management](https://technet.microsoft.com/library/dn655136.aspx) (Requisitos de Azure Rights Management).
 
-En la documentación de ejemplo se muestra cómo ven los usuarios este conjunto de instrucciones tras las personalizaciones.
+En la documentación de ejemplo se muestra el aspecto de estas instrucciones para los usuarios tras sus personalizaciones.
 
-![](../media/AzRMS_UsersBanner.png)
+![Documentación de usuario de la plantilla para la implementación rápida de Azure RMS](../media/AzRMS_UsersBanner.png)
 
 ### Procedimiento para enviar correos electrónicos que contienen información confidencial de la empresa mediante Outlook
 
 1.  En Outlook, cree un mensaje de correo, agregue los datos adjuntos que quiera incluir y, después, seleccione usuarios o grupos de *&lt;nombre de la organización&gt;*.
 
-2.  En la pestaña **OPCIONES** haga clic en **Permiso** y, después, seleccione **&lt;nombre de la organización - Confidencial&gt;**:
+2.  En la pestaña **OPCIONES**, haga clic en **Permiso** y seleccione **&lt;nombre de la organización - Confidencial&gt;**:
 
-    ![](../media/AzRMS_OutlookTemplate.PNG)
+    ![Captura de pantalla sobre cómo enviar correos electrónicos que contienen información confidencial de la empresa mediante Outlook](../media/AzRMS_OutlookTemplate.PNG)
 
 3.  Envíe el mensaje.
 
@@ -111,7 +114,7 @@ En la documentación de ejemplo se muestra cómo ven los usuarios este conjunto 
 
 2.  Haga clic en **…**, elija **Establecer permisos** y, después, seleccione **&lt;nombre de la organización - Confidencial&gt;**:
 
-    ![](../media/AzRMS_OWATemplate.png)
+    ![Captura de pantalla sobre cómo enviar correos electrónicos que contienen información confidencial de la empresa mediante Outlook Web App](../media/AzRMS_OWATemplate.png)
 
 3.  Envíe el mensaje.
 
@@ -126,7 +129,7 @@ Los destinatarios a los que envíe el correo electrónico podrán reenviarlo a o
     -   *&lt;detalles de contacto&gt;*
 
 ### Documentación de usuario personalizada de ejemplo
-![](../media/AzRMS_ExampleBanner.png)
+![Documentación de usuario de ejemplo para la implementación rápida de Azure RMS](../media/AzRMS_ExampleBanner.png)
 
 #### Procedimiento para enviar correos electrónicos que contienen información confidencial de la empresa mediante Outlook
 
@@ -134,7 +137,7 @@ Los destinatarios a los que envíe el correo electrónico podrán reenviarlo a o
 
 2.  En la pestaña **OPCIONES**, haga clic en **Permiso** y, luego, seleccione **VanArsdel, Ltd - Confidencial**:
 
-    ![](../media/AzRMS_OutlookTemplate.PNG)
+    ![Captura de pantalla sobre cómo enviar correos electrónicos que contienen información confidencial de la empresa mediante Outlook](../media/AzRMS_OutlookTemplate.PNG)
 
 3.  Envíe el mensaje.
 
@@ -144,7 +147,7 @@ Los destinatarios a los que envíe el correo electrónico podrán reenviarlo a o
 
 2.  Haga clic en **…**, haga clic en **Establecer permisos** y, después, seleccione **VanArsdel, Ltd - Confidencial**:
 
-    ![](../media/AzRMS_OWATemplate.png)
+    ![Captura de pantalla sobre cómo enviar correos electrónicos que contienen información confidencial de la empresa mediante Outlook Web App](../media/AzRMS_OWATemplate.png)
 
 3.  Envíe el mensaje.
 
@@ -160,6 +163,6 @@ Los destinatarios a los que envíe el correo electrónico podrán reenviarlo a o
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO3-->
 
 

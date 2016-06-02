@@ -4,29 +4,32 @@
 title: Tutorial de inicio rápido de Azure RMS - Paso 3 | Azure RMS
 description: El tercer paso de un tutorial para probar rápidamente Microsoft Azure Rights Management para su organización en solo 5 pasos que deberían tomarle menos de 15 minutos.
 keywords:
-author: Cabailey
+author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
+ms.technology: techgroup-identity
 ms.assetid: c604e749-8918-40e8-8148-6bd000cb2be2
 
 # optional metadata
 
-ROBOTS: 
-audience:
-ms.devlang:
+#ROBOTS:
+#audience:
+#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-ms.tgt_pltfrm:
-ms.technology:
-ms.custom:
+#ms.tgt_pltfrm:
+#ms.custom:
 
 ---
 
 
 # Inicio rápido de Azure RMS; paso 3: enviar el documento que desea proteger por correo electrónico
+
+*Se aplica a: Azure Rights Management, Office 365*
+
 
 Saltar a: 
 > [!div class="op_single_selector"]
@@ -42,7 +45,7 @@ Para este paso, primero use Word para crear y guardar el documento que desea pro
 
 A continuación, estará listo para compartir de forma segura este documento por correo electrónico.
 
-![](../media/AzRMS_Tutorial_3_Screenshots.png)
+![Paso 3 del tutorial de inicio rápido de Azure RMS](../media/AzRMS_Tutorial_3_Screenshots.png)
 
 ### Para compartir de forma segura el documento por correo electrónico
 
@@ -80,10 +83,9 @@ Ahora que ha enviado el documento protegido, está listo para pedir a los destin
 |Acerca de las opciones del cuadro de diálogo **Uso compartido seguro**|[Opciones del cuadro de diálogo para la aplicación de uso compartido Rights Management](../rms-client/sharing-app-dialog-box.md)|
 
 
->[!div class="step-by-step"]
-[« Paso 2](tutorial-step2.md)
+>[!div class="step-by-step"] [« Paso 2](tutorial-step2.md)
 [Paso 4 »](tutorial-step4.md)
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

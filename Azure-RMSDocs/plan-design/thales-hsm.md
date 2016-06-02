@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Más información acerca de los HSM de Thales y las adiciones de Microsoft
+
+*Se aplica a: Azure Rights Management, Office 365*
+
 Azure RMS usa módulos HSM de Thales para proteger las claves cuando administra su propia clave de inquilino (escenario "traiga su propia clave" o BYOK).
 
 Thales e-Security es uno de los principales proveedores mundiales de soluciones de cifrado de datos y ciberseguridad para servicios financieros, tecnología punta, industria manufacturera, gobierno y sectores tecnológicos. Las soluciones de Thales cuentan con una trayectoria de 40 años en la protección de información corporativa y gubernamental, son las elegidas por cuatro de las cinco compañías más grandes en el sector energético y aeroespacial, 22 países de la OTAN y aseguran más del 80 % de las operaciones de pago en todo el mundo.
@@ -36,6 +39,6 @@ Para obtener más información, vea [HSM de Thales y Azure RMS](http://www.thale
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

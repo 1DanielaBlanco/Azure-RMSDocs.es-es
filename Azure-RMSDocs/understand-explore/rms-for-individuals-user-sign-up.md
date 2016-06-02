@@ -26,28 +26,31 @@ ms.suite: ems
 ---
 
 # Cómo se registran los usuarios a RMS para individuos
+
+*Se aplica a: Azure Rights Management*
+
 Para registrarse en esta cuenta gratuita, los usuarios lo solicitan visitando la [página de Microsoft Rights Management](https://portal.aadrm.com/)y proporcionan su dirección de correo electrónico profesional o educativa. 
 
 La forma más habitual de redirigir a los usuarios a esta página de suscripción es mediante un mensaje de correo electrónico con un archivo adjunto protegido, que contiene instrucciones sobre cómo suscribirse. Recibirán un correo electrónico de respuesta de Microsoft. Después de eso podrán completar el proceso de suscripción especificando los detalles para crear la cuenta. Cuando reciban una confirmación por correo electrónico de Microsoft, este mensaje de correo electrónico final les enviará a una página donde podrán descargar la aplicación de uso compartido para diferentes dispositivos y se incluirá un vínculo en la guía del usuario.
 
 ## Para registrarse en RMS como usuarios
 
-1.  Con un equipo Windows o Mac, vaya a la [página de Microsoft Rights Management](https://portal.aadrm.com).
+1.  Con un equipo Windows o Mac, vaya a la [página de Microsoft Rights Management](https://portal.aadrm.com)..
 
-2.  Escriba la dirección de correo electrónico que usa para la empresa, como **janetm@contoso.com** o **p.dover@fabrikam.com**.
+2.  Escriba la dirección de correo electrónico que usa para la empresa, como **janetm@contoso.com** o **p.dover@fabrikam.com**..
 
     > [!IMPORTANT]
     > No se admiten cuentas de correo electrónico personales, de modo que no se puede introducir una cuenta Microsoft (conocida anteriormente como Microsoft Live ID) u otra cuenta personal que pueda usar en casa perteneciente a tu proveedor de Internet.
 
-3.  Haga clic en **Introducción**.
+3.  Haga clic en **Introducción**..
 
     Microsoft usa su dirección de correo electrónico para comprobar si su organización ya tiene una [suscripción de pago que incluya Azure RMS](../get-started/requirements-subscriptions.md). Si ese es el caso, no necesita RMS para usuarios, por lo que iniciará sesión inmediatamente y se cancelará la suscripción de autoservicio de RMS para usuarios. Si no se encuentra una suscripción de pago a Azure RMS, continuará con el paso siguiente.
 
-4.  Espere un mensaje de correo electrónico de confirmación, que se enviará a la dirección que haya suministrado. Procederá de Microsoft (DoNotReply@microsoft.com) y en el asunto se leerá **Microsoft RMS**.
+4.  Espere un mensaje de correo electrónico de confirmación, que se enviará a la dirección que haya suministrado. Procederá de Microsoft (DoNotReply@microsoft.com) y en el asunto se leerá **Microsoft RMS**..
 
 5.  Cuando reciba el correo electrónico, haga clic en el vínculo de las instrucciones para finalizar el proceso de registro.
 
-6.  El vínculo le lleva a una página de **Microsoft Rights Management** nueva para que suministre los detalles de su cuenta. Escriba su nombre y su apellido, escriba y confirme una contraseña de su elección, seleccione su país en la lista desplegable (o el país más cercano si el suyo no aparece) y, a continuación, haga clic en **Crear**.
+6.  El vínculo le lleva a una página de **Microsoft Rights Management** nueva para que suministre los detalles de su cuenta. Escriba su nombre y apellidos, escriba y confirme una contraseña de su elección, seleccione su país en la lista desplegable (o el país más cercano si el suyo no aparece) y, después, haga clic en **Crear**..
 
 7.  Espere recibir otro mensaje de correo electrónico de Microsoft que confirmará que la cuenta ya está lista para usarse.
 
@@ -67,7 +70,7 @@ Esto es lo que sucede en segundo plano cuando un usuario se suscribe a RMS para 
 
     Si se encuentra un inquilino, se comprueba si ya tiene una suscripción para Azure RMS. Si no se encuentra ninguna suscripción, puede agregarse la suscripción a RMS para usuarios gratuita.
 
-2.  A la organización se le concede una suscripción a RMS para individuos. Ahora, este usuario puede ser autenticado por Azure, por lo que ya puede proteger archivos y leer los que otros usuarios protegiesen mediante Azure Rights Management. Para proteger archivos y leer los protegidos, el usuario debe tener una aplicación habilitada para RMS, como la [aplicación para uso compartido de Rights Management](../rms-client/sharing-app-windows.md) gratuita.
+2.  A la organización se le concede una suscripción a RMS para individuos. Ahora, este usuario puede ser autenticado por Azure, por lo que ya puede proteger archivos y leer los que otros usuarios protegiesen mediante Azure Rights Management. Para proteger archivos y leer archivos protegidos, el usuario debe tener una aplicación habilitada para RMS, como la [aplicación Rights Management sharing](../rms-client/sharing-app-windows.md) gratuita..
 
 3.  Cuando un segundo usuario de la misma organización solicita una suscripción a RMS para usuarios, se agregará una nueva cuenta de usuario al directorio de Azure creado anteriormente, mediante la suscripción a RMS para usuarios de la organización. Este segundo usuario podrá hacer lo mismo que puede hacer el primer usuario (proteger archivos y leer los protegidos), pero, además, estos dos usuarios podrán colaborar desde este momento con más facilidad y seguridad, ya que podrán aplicar plantillas predeterminadas de forma muy rápida a archivos que limitan el acceso a cuentas del directorio de Azure de su organización.
 
@@ -77,7 +80,7 @@ A lo largo de este proceso, no hay cargos adicionales para la organización y no
 
 -   **Administración de las cuentas y proceso de registro**: los administradores de TI pueden asumir la titularidad de las cuentas y el directorio creados automáticamente en Azure. Pueden administrar las cuentas mediante la implementación de soluciones de integración del directorio, como sincronización de contraseña e inicio de sesión único. O bien, pueden impedir que los usuarios creen cuentas o se suscriban a RMS para usuarios.
 
-    Para más información, consulte [Cómo pueden los administradores controlar las cuentas creadas para RMS para individuos](rms-for-individuals-take-control.md).
+    Para obtener más información, consulte [How administrators can control the accounts created for RMS for individuals](rms-for-individuals-take-control.md) (Cómo pueden los administradores controlar las cuentas creadas para RMS para usuarios)..
 
 -   **Administrar Rights Management**: Los administradores de TI pueden convertir la suscripción a RMS para usuarios de la organización a una suscripción de pago que incluya Azure Rights Management. Cuando lleven a cabo esta conversión, el directorio y las cuentas existentes de Azure no podrán ser objeto de una transición sencilla para usuarios existentes que estén usando RMS para usuarios. Cualquier archivo que los usuarios hayan protegido con anterioridad permanecerá protegido con las mismas directivas y las personas a las que les garantizaron permisos para usar los archivos todavía podrán usar los archivos del mismo modo.
 
@@ -89,21 +92,21 @@ A lo largo de este proceso, no hay cargos adicionales para la organización y no
 
         -   [Implementación del conector de Azure Rights Management](../deploy-use/deploy-rms-connector.md)
 
-    -   Llevar a cabo descubrimientos electrónicos en los datos pertenecientes a una compañía, de modo que pueda, si es necesario, descifrar archivos que estuviesen protegidos usando Rights Management. Para más información, consulte [Configuración de superusuarios para Azure Rights Management y los servicios de detección o la recuperación de datos](../deploy-use/configure-super-users.md).
+    -   Llevar a cabo descubrimientos electrónicos en los datos pertenecientes a una compañía, de modo que pueda, si es necesario, descifrar archivos que estuviesen protegidos usando Rights Management. Para obtener más información, consulte [Configuring super users for Azure Rights Management and discovery services or data recovery](../deploy-use/configure-super-users.md) (Configuración de superusuarios para Azure Rights Management y los servicios de detección o la recuperación de datos)..
 
-    -   Registrar toda la actividad de cómo se ha usado Rights Management en su organización. Esta es una acción muy potente, ya que no solo puede supervisar qué archivos están protegidos y quién está accediendo a esos archivos protegidos, sino que también puede identificar comportamientos sospechosos potenciales procedentes de personas no autorizadas, que estén intentando acceder a los archivos protegidos. Para más información, consulte [Registro y análisis del uso de Azure Rights Management](../deploy-use/log-analyze-usage.md).
+    -   Registrar toda la actividad de cómo se ha usado Rights Management en su organización. Esta es una acción muy potente, ya que no solo puede supervisar qué archivos están protegidos y quién está accediendo a esos archivos protegidos, sino que también puede identificar comportamientos sospechosos potenciales procedentes de personas no autorizadas, que estén intentando acceder a los archivos protegidos. Para obtener más información, consulte [Logging and analyzing Azure Rights Management usage](../deploy-use/log-analyze-usage.md) (Registro y análisis del uso de Azure Rights Management)..
 
-    -   Proporcionar a los usuarios la capacidad de realizar un seguimiento de sus documentos protegidos y revocarlos, si estas características son compatibles con su [suscripción a Azure RMS](https://technet.microsoft.com/dn858608). Para más información, consulte [Realizar un seguimiento de los archivos y revocarlos](../rms-client/sharing-app-track-revoke.md) en la [guía de usuario de la aplicación RMS sharing](../rms-client/sharing-app-user-guide.md).
+    -   Proporcionar a los usuarios la capacidad de realizar un seguimiento de sus documentos protegidos y revocarlos, si estas características son compatibles con su [suscripción a Azure RMS](https://technet.microsoft.com/dn858608). Para obtener más información, consulte [Track and revoke your files](../rms-client/sharing-app-track-revoke.md) (Realizar un seguimiento de los archivos y revocarlos) en la [RMS sharing application user guide](../rms-client/sharing-app-user-guide.md) (Guía de usuario de la aplicación RMS sharing)..
 
-    -   Implemente una solución "Aporta tu propia clave" (BYOK) para que la clave de inquilino para Azure Rights Management se genere de forma local, siguiendo las políticas de TI y se transfiera de modo seguro a Microsoft mediante un módulo de seguridad de hardware (HSM). Para más información, consulte [Planeamiento e implementación de la clave de inquilino de Azure Rights Management](../plan-design/plan-implement-tenant-key.md).
+    -   Implemente una solución "Aporta tu propia clave" (BYOK) para que la clave de inquilino para Azure Rights Management se genere de forma local, siguiendo las políticas de TI y se transfiera de modo seguro a Microsoft mediante un módulo de seguridad de hardware (HSM). Para obtener más información, consulte [Planning and implementing your Azure Rights Management tenant key](../plan-design/plan-implement-tenant-key.md) (Planeación e implementación de la clave de inquilino de Azure Rights Management)..
 
 
 ## Pasos siguientes
-Consulte [Cómo pueden los administradores controlar las cuentas creadas para RMS para usuarios](rms-for-individuals-take-control.md).
+Consulte [How administrators can control the accounts created for RMS for individuals](rms-for-individuals-take-control.md) (Cómo pueden los administradores controlar las cuentas creadas para RMS para usuarios)..
 
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

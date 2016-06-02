@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 705942bb-639d-4582-942e-0ec061843d48
-
+ms.assetid: 7E12EBF2-5A19-4A8D-AA99-531B09DA256A
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # Código de ejemplo de iOS/OS X
 
 Este tema le presentará los elementos de código importantes para la versión de iOS/OS X de RMS SDK.
@@ -44,7 +42,7 @@ A continuación se muestran ejemplos de código **Objective C** desde una aplica
 
 - **Paso 1**: creación de un objeto [**MSProtectedData**](/rights-management/sdk/4.2/api/iOS/msprotectedd)
 
- **Descripción**: creación de instancias de un objeto [**MSProtectedData**](/rights-management/sdk/4.2/api/iOS/msprotectedd) , mediante la creación de un método que implementa la autenticación de servicios con [**MSAuthenticationCallback**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc) para obtener un token pasando una instancia de **MSAuthenticationCallback**, como el parámetro *authenticationCallback*, a la API de MSIPC. Consulte la llamada a [**protectedDataWithProtectedFile**](https://stage.docs.microsoft.com/en-us/rights-management/sdk/4.2/api/iOS/msprotecteddata#msipcthin2_msprotecteddata_protecteddatawithprotectedfile_completionblock_method_objc) en la sección de código de ejemplo siguiente.
+ **Descripción**: creación de instancias de un objeto [**MSProtectedData**](/rights-management/sdk/4.2/api/iOS/msprotectedd) , mediante la creación de un método que implementa la autenticación de servicios con [**MSAuthenticationCallback**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc) para obtener un token pasando una instancia de **MSAuthenticationCallback**, como el parámetro *authenticationCallback*, a la API de MSIPC. Consulte la llamada a [**protectedDataWithProtectedFile**](/rights-management/sdk/4.2/api/iOS/msprotecteddata#msipcthin2_msprotecteddata_protecteddatawithprotectedfile_completionblock_method_objc) en la sección de código de ejemplo siguiente.
 
         + (void)consumePtxtFile:(NSString *)path authenticationCallback:(id<MSAuthenticationCallback>)authenticationCallback
         {
@@ -117,7 +115,7 @@ A continuación se muestran ejemplos de código **Objective C** desde una aplica
 
 ### Escenario: Creación de un nuevo archivo protegido mediante una plantilla
 
-Este escenario comienza con la obtención de una lista de plantillas, [**MSTemplateDescriptor**](https://stage.docs.microsoft.com/en-us/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_mstemplatedescriptor_interface_objc), la selección de la primera de ellas para crear una directiva y, a continuación, con la creación y escritura en el nuevo archivo protegido.
+Este escenario comienza con la obtención de una lista de plantillas, [**MSTemplateDescriptor**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_mstemplatedescriptor_interface_objc), la selección de la primera de ellas para crear una directiva y, después, la creación y escritura en el nuevo archivo protegido.
 
 -   **Paso 1**: Obtención de una lista de las plantillas
 
@@ -290,6 +288,6 @@ Este escenario comienza con la obtención de una lista de plantillas, [**MSTempl
 
  
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

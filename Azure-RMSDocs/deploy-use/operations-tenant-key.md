@@ -26,9 +26,12 @@ ms.suite: ems
 ---
 
 # Operaciones para la clave de inquilino de Administración de permisos de Azure
+
+*Se aplica a: Azure Rights Management, Office 365*
+
 En función de la topología de la clave de inquilino (administrada por Microsoft o por el cliente), tiene diferentes niveles de control y responsabilidad para su clave de inquilino de Microsoft Azure Rights Management (Azure RMS) una vez implementada.
 
-Cuando administra su propia clave de inquilino, esto a menudo se denomina aportar tu propia clave (BYOK). Para más información sobre este escenario y acerca de cómo elegir entre las dos topologías clave, vea [Planeamiento e implementación de la clave de inquilino de Azure Rights Management](../plan-design/plan-implement-tenant-key.md).
+Cuando administra su propia clave de inquilino, esto a menudo se denomina aportar tu propia clave (BYOK). Para obtener más información sobre este escenario y sobre cómo elegir entre las dos topologías clave, vea [Planning and implementing your Azure Rights Management tenant key](../plan-design/plan-implement-tenant-key.md) (Planeación e implementación de la clave de inquilino de Azure Rights Management)..
 
 La tabla siguiente identifica qué operaciones puede realizar en función de la topología que eligió para su clave de inquilino de Azure RMS.
 
@@ -51,6 +54,6 @@ Una vez que identifique qué topología implementó, seleccione una de las sigui
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

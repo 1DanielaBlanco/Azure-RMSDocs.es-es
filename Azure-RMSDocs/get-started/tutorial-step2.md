@@ -4,30 +4,33 @@
 title: Tutorial de inicio rápido de Azure RMS - Paso 2 | Azure RMS
 description: El segundo paso de un tutorial para probar rápidamente Microsoft Azure Rights Management para su organización en solo 5 pasos que deberían tomarle menos de 15 minutos.
 keywords:
-author: Cabailey
+author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
+ms.technology: techgroup-identity
 ms.assetid: f32cf2f3-29e2-429c-a0fd-b16cc482484a
 
 # optional metadata
 
-ROBOTS: 
-audience:
-ms.devlang:
+#ROBOTS:
+#audience:
+#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-ms.tgt_pltfrm:
-ms.technology:
-ms.custom:
+#ms.tgt_pltfrm:
+#ms.custom:
 
 ---
 
 
 
 # Inicio rápido de Azure RMS, Paso 2: instalación de la aplicación Rights Management sharing
+
+*Se aplica a: Azure Rights Management, Office 365*
+
 
 Saltar a: 
 > [!div class="op_single_selector"]
@@ -39,13 +42,13 @@ Saltar a:
 - [Paso 5: Seguimiento del documento](tutorial-step5.md)
 
 
-![](../media/AzRMS_QuickStartSteps2.PNG)
+![Paso 2 del tutorial de inicio rápido de Azure RMS](../media/AzRMS_QuickStartSteps2.PNG)
 
 La aplicación de uso compartido Rights Management (también conocida como “aplicación de uso compartido RMS”) no es un requisito para Azure Rights Management, pero se recomienda para todos los equipos y dispositivos móviles compatibles con Azure Rights Management. La aplicación de uso compartido RMS se integra con aplicaciones de Office mediante la instalación de un complemento de Office para que los usuarios puedan proteger fácilmente los archivos directamente desde la cinta. También permite proteger todos los tipos de archivos mediante la aplicación de la protección genérica para los archivos que no son compatibles de forma nativa con Azure Rights Management y un sitio de seguimiento de documentos para que los usuarios controlen y revoquen los archivos que hayan protegido. Usaremos el sitio de seguimiento de documentos más tarde en este tutorial.
 
 Esta aplicación se descarga de forma gratuita y ofrece una instalación con script para entornos de producción. Sin embargo, en este tutorial la instalaremos de forma local.
 
-![](../media/AzRMS_Tutorial_2_Screenshots.png)
+![Capturas de pantalla del paso 2 del tutorial](../media/AzRMS_Tutorial_2_Screenshots.png)
 
 ### Para descargar e instalar la aplicación Rights Management sharing
 
@@ -68,10 +71,9 @@ Ya está listo para empezar a proteger los archivos que contienen la informació
 |Para comprender la diferencia entre la protección nativa y la protección genérica|[¿Cuál es la diferencia entre la protección genérica y la protección incorporada (nativa)?](../rms-client/sharing-app-dialog-box.md#what-s-the-difference-between-generic-protection-and-built-in-native-protection-)|
 
 
->[!div class="step-by-step"]
-[« Paso 1](quick-start-tutorial.md)
+>[!div class="step-by-step"] [« Paso 1](quick-start-tutorial.md)
 [Paso 3 »](tutorial-step3.md)
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

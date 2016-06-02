@@ -28,6 +28,9 @@ ms.suite: ems
 
 # Creación, configuración y publicación de una plantilla personalizada
 
+*Se aplica a: Azure Rights Management, Office 365*
+
+
 En el Portal de Azure clásico puede crear y administrar plantillas personalizada. Puede hacerlo directamente desde el Portal de Azure clásico o puede iniciar sesión en el Centro de administración de Office 365 y elegir **Características avanzadas** para Rights Management, lo que le redirigirá al Portal de Azure clásico.
 
 Usa los procedimientos siguientes para crear, configurar y publicar plantillas personalizadas para Rights Management.
@@ -38,16 +41,16 @@ Usa los procedimientos siguientes para crear, configurar y publicar plantillas p
 
     -   En el [Centro de administración de Office 365](https://portal.office.com/):
 
-        1.  En el panel izquierdo, haga clic en **Configuración del servicio**.
+        1.  En el panel izquierdo, haga clic en **Configuración del servicio**..
 
-        2.  En la página **Configuración del servicio** , haga clic en **Rights Management**.
+        2.  En la página **Configuración del servicio**, haga clic en **Rights Management**..
 
-        3.  En la sección **Proteja su información** , haga clic en **Administrar**.
+        3.  En la sección **Proteja su información**, haga clic en **Administrar**..
 
-        4.  En la sección **Rights Management** , haga clic en **Características avanzadas**.
+        4.  En la sección **Rights Management**, haga clic en **Características avanzadas**..
 
             > [!NOTE]
-            > Si no ha activado todavía Rights Management, haga clic primero en **Activar** y confirme la acción. Para más información, consulte [Activación de Azure Rights Management](activate-service.md).
+            > Si no ha activado todavía Rights Management, haga clic primero en **Activar** y confirme la acción. Para obtener más información, consulte [Activating Azure Rights Management](activate-service.md) (Activar Azure Rights Management)..
             > 
             > Si no ha hecho clic en **Características avanzadas** antes, después de activar Rights Management, siga las instrucciones que aparecen en pantalla para obtener una suscripción gratuita de Azure, necesaria para poder acceder al Portal de Azure clásico.
 
@@ -55,20 +58,20 @@ Usa los procedimientos siguientes para crear, configurar y publicar plantillas p
 
     -   Desde el [Portal de Azure clásico](http://go.microsoft.com/fwlink/p/?LinkID=275081):
 
-        1.  En el panel izquierdo, haga clic en **ACTIVE DIRECTORY**.
+        1.  En el panel izquierdo, haga clic en **ACTIVE DIRECTORY**..
 
-        2.  En la página **Active Directory** , haga clic en **RIGHTS MANAGEMENT**.
+        2.  En la página **Active Directory**, haga clic en **RIGHTS MANAGEMENT**..
 
         3.  Selecciona el directorio que administrarás para Rights Management.
 
         4.  Si no ha activado todavía Rights Management, haga clic en **ACTIVAR** y confirme la acción.
 
             > [!NOTE]
-            > Para más información, consulte [Activación de Azure Rights Management](activate-service.md).
+            > Para obtener más información, consulte [Activating Azure Rights Management](activate-service.md) (Activar Azure Rights Management)..
 
 2.  Crea una plantilla nueva:
 
-    -   En el Portal de Azure clásico, en la página de inicio rápido **Introducción a Rights Management**, haga clic en **Crear una nueva plantilla de directiva de permisos**.
+    -   En el Portal de Azure clásico, en la página de inicio rápido **Introducción a Rights Management**, haga clic en **Crear una nueva plantilla de directiva de permisos**..
 
         Si no ve inmediatamente esta página tras seguir las instrucciones de Office 365, use las instrucciones de navegación del Portal de Azure clásico, enumeradas anteriormente.
 
@@ -85,7 +88,7 @@ En la página de inicio rápido **Empiece a trabajar con Rights Management** , h
     > [!NOTE]
     > Los usuarios o grupos que selecciones deben disponer de una dirección de correo electrónico. En un entorno productivo, no será un problema, pero en un entorno de pruebas simple, es posible que tengas que agregar direcciones de correo electrónico para cuentas de usuario o grupos.
 
-    Se recomienda usar grupos más que usuarios, lo cual simplifica la administración de las plantillas. Si tiene Active Directory localmente y está sincronizando con Azure AD, puede usar grupos habilitados para correo electrónico que sean grupos de seguridad o grupos de distribución. Sin embargo, si desea conceder derechos a todos los usuarios de la organización, resultará más eficiente copiar una de las plantillas predeterminadas en lugar de especificar varios grupos. Para más información, consulte el [Procedimiento para copiar una plantilla](copy-template.md).
+    Se recomienda usar grupos más que usuarios, lo cual simplifica la administración de las plantillas. Si tiene Active Directory localmente y está sincronizando con Azure AD, puede usar grupos habilitados para correo electrónico que sean grupos de seguridad o grupos de distribución. Sin embargo, si desea conceder derechos a todos los usuarios de la organización, resultará más eficiente copiar una de las plantillas predeterminadas en lugar de especificar varios grupos. Para obtener más información, consulte el [Procedimiento para copiar una plantilla](copy-template.md)..
 
     > [!TIP]
     > Más tarde puede agregar usuarios de fuera de su organización a la plantilla mediante el [módulo Windows PowerShell para Azure Rights Management](install-powershell.md) y uno de los métodos siguientes:
@@ -114,25 +117,25 @@ En la página de inicio rápido **Empiece a trabajar con Rights Management** , h
 
 7.  En la página **VISIBILIDAD DE PLANTILLA**, seleccione los usuarios y grupos que podrán ver y seleccionar la plantilla desde las aplicaciones habilitadas para RMS. Como antes, como procedimiento recomendado, utilice grupos en lugar de usuarios, y los grupos o usuarios que seleccione deben tener una dirección de correo electrónico.
 
-8.  Haga clic en el botón Siguiente y decida si es necesario configurar la compatibilidad de aplicaciones para la plantilla de departamento. Si lo hace, haga clic en **COMPATIBILIDAD DE APLICACIÓN**, active la casilla y haga clic en **Completa**.
+8.  Haga clic en el botón Siguiente y decida si es necesario configurar la compatibilidad de aplicaciones para la plantilla de departamento. Si lo hace, haga clic en **COMPATIBILIDAD DE APLICACIÓN**, active la casilla y haga clic en **Completar**..
 
     ¿Por qué debe configurar la compatibilidad de aplicaciones? No todas las aplicaciones pueden admitir plantillas de departamento. Para ello, la aplicación debe autenticarse primero con el servicio RMS antes de descargar las plantillas. Si el proceso de autenticación no se realiza, de forma predeterminada, ninguna de las plantillas de departamento se descargan. Puede invalidar este comportamiento especificando que se deberían descargar todas las plantillas departamentales. Para ello, configure la compatibilidad de aplicaciones y active la casilla **Mostrar esta plantilla a todos los usuarios cuando las aplicaciones no admiten la identidad de usuario** .
 
     Por ejemplo, si no configura la compatibilidad de aplicaciones para la plantilla de departamento en nuestro ejemplo de recursos humanos, solo los usuarios del departamento de recursos humanos verán la plantilla de departamento cuando utilizan la aplicación de uso compartido de RMS, pero ningún usuario verá la plantilla de departamento al usar Outlook Web Access (OWA) de Exchange Server 2013 porque Exchange OWA y Exchange ActiveSync no son compatibles actualmente con las plantillas de departamento. Si invalida este comportamiento predeterminado mediante la configuración de la compatibilidad de aplicaciones, solo los usuarios del departamento de recursos humanos verán la plantilla de departamento cuando usen la aplicación de uso compartido de RMS, pero todos los usuarios podrán ver la plantilla de departamento al usar Outlook Web Access (OWA). Si los usuarios utilizan OWA o Exchange ActiveSync desde Exchange Online, las plantillas de departamento las verán todos los usuarios o bien ninguno, en función del estado de la plantilla (archivado o publicado) en Exchange Online.
 
-    Office 2016 admite de forma nativa plantillas de departamento y Office 2013 también a partir de la versión 15.0.4727.1000, lanzada en junio de 2015 como parte de ([KB 3054853](https://support.microsoft.com/kb/3054853)).
+    Office 2016 admite de forma nativa plantillas de departamento y Office 2013 también a partir de la versión 15.0.4727.1000, lanzada en junio de 2015 como parte de ([KB 3054853](https://support.microsoft.com/kb/3054853)).).
 
     > [!NOTE]
     > Si tiene aplicaciones que aún no admiten de forma nativa plantillas departamentales, utilice un script personalizado de descarga de plantillas de RMS u otras herramientas para implementar estas plantillas en la carpeta local del cliente de RMS. A continuación, estas aplicaciones mostrarán correctamente las plantillas de departamento solo a los usuarios y grupos que ha seleccionado para el ámbito de la plantilla:
     > 
-    > -   En Office 2010, la carpeta de cliente es **%localappdata%\Microsoft\DRM\Templates**.
+    > -   En Office 2010, la carpeta de cliente es **%localappdata%\Microsoft\DRM\Templates**..
     > -   Desde un equipo cliente que ha descargado todas las plantillas, puede copiar los archivos de plantilla y pegarlos en otros equipos.
     > 
     > Puede [descargar el script personalizado de plantillas de RMS desde el sitio de Microsoft Connect](http://go.microsoft.com/fwlink/?LinkId=524506). Si ve un error al hacer clic en este vínculo, probablemente no se haya registrado en Microsoft Connect.   Para registrarse:
     > 
     > 1.  Vaya al [sitio de Microsoft Connect](http://www.connect.microsoft.com) e inicie sesión con su cuenta de Microsoft.
     > 2.  Haga clic en **Directorio** y seleccione la categoría **Ver los productos Connect que no aceptan comentarios**.
-    > 3.  Busque **Rights Management Services** y, para el programa **Microsoft RMS Enterprise Features**, haga clic en **Unirse**.
+    > 3.  Busque **Rights Management Services** y, para el programa **Microsoft RMS Enterprise Features**, haga clic en **Unirse**..
 
 9. Haz clic en **CONFIGURAR** y agrega los idiomas adicionales que usen los usuarios, junto con el nombre y la descripción de esta plantilla en ese idioma. Si tiene usuarios multilingües, es importante agregar todos los idiomas que usen; además, debe proporcionar un nombre y una descripción en ese idioma. Los usuarios verán entonces el nombre y la descripción de la plantilla en el mismo idioma que su sistema operativo, lo cual garantiza que entenderán la directiva que se aplica a un documento o a un mensaje de correo electrónico. Si no coinciden con el idioma del sistema operativo cliente, el nombre y la descripción que ven se cambiarán al idioma y la descripción que tú hayas definido cuando creaste por primera vez la plantilla.
 
@@ -143,28 +146,28 @@ En la página de inicio rápido **Empiece a trabajar con Rights Management** , h
     |**expiración de contenido**|Define una fecha o un número de días para esta plantilla cuando los archivos que están protegidos por dicha plantilla no deben abrirse. Puedes especificar una fecha o un número de días a partir del momento en que se aplica la protección al archivo.<br /><br />Cuando se especifica una fecha, entra en vigor a medianoche en su zona horaria actual.|
     |**acceso sin conexión**|Use esta configuración para equilibrar los requisitos de seguridad que tenga frente al requisito de que los usuarios deben poder abrir archivos protegidos cuando no disponen de conexión a Internet.<br /><br />Si especificas que el contenido no está disponible sin conexión a Internet o que el contenido está disponible solamente durante un número concreto de días, cuando se supere ese umbral, los usuarios deberán volver a autenticarse y se registrará su acceso. Cuando esto sucede, si sus credenciales no se han almacenado en la memoria caché, se pedirá a los usuarios que inicien sesión antes de que puedan abrir el archivo.<br /><br />Además de la reautenticación, también se vuelve a evaluar la directiva y la pertenencia al grupos de usuarios. De modo que los usuarios podrían experimentar diferentes resultados de acceso para el mismo archivo si se producen cambios en la directiva o la pertenencia al grupo desde la última vez que se accedió al archivo.|
 
-10. Cuando esté seguro de que la plantilla está configurada correctamente para los usuarios, haga clic en **PUBLICAR** para que la plantilla esté visible para los usuarios y elija **GUARDAR**.
+10. Cuando esté seguro de que la plantilla está configurada correctamente para los usuarios, haga clic en **PUBLICAR** para que la plantilla esté visible para los usuarios y elija **GUARDAR**..
 
-11. En el Portal clásico, haga clic en el botón Atrás para volver a la página **PLANTILLAS**, donde la plantilla tiene ahora el estado actualizado de **Publicada**.
+11. En el Portal clásico, haga clic en el botón Atrás para volver a la página **PLANTILLAS**, donde la plantilla tiene ahora el estado actualizado de **Publicada**..
 
 Para realizar cualquier cambio en tu plantilla, selecciónala y, a continuación, usa los pasos de inicio rápido otra vez. O selecciona una de las opciones siguientes:
 
--   Para agregar más usuarios y grupos, y definir sus derechos: Haga clic en **PERMISOS**y elija **AGREGAR**.
+-   Para agregar más usuarios y grupos, y definir sus derechos: haga clic en **PERMISOS** y después en elija **AGREGAR**..
 
--   Para quitar los usuarios o grupos que has seleccionado anteriormente: Haga clic en **PERMISOS**, seleccione el usuario o grupo en la lista y elija **ELIMINAR**.
+-   Para quitar los usuarios o grupos que ha seleccionado anteriormente: haga clic en **PERMISOS**, seleccione el usuario o grupo de la lista y elija **ELIMINAR**..
 
--   Para cambiar qué usuarios pueden ver las plantillas para seleccionarlas desde las aplicaciones: Haga clic en **ÁMBITO**, elija **AGREGAR** , **ELIMINAR**o **COMPATIBILIDAD DE APLICACIÓN**.
+-   Para cambiar qué usuarios pueden ver las plantillas para seleccionarlas desde las aplicaciones: haga clic en **ÁMBITO** y después en **AGREGAR**, **ELIMINAR** o **COMPATIBILIDAD DE APLICACIÓN**..
 
--   Para que la plantilla ya no sea visible para todos los usuarios: Haga clic en **CONFIGURAR**, elija **ARCHIVO**y haga clic en **GUARDAR**.
+-   Para que la plantilla ya no sea visible para todos los usuarios: haga clic en **CONFIGURAR**, en **ARCHIVO** y en **GUARDAR**..
 
--   Para realizar otros cambios de configuración: Haga clic en **CONFIGURAR**, realice los cambios y elija **GUARDAR**.
+-   Para realizar otros cambios de configuración: haga clic en **CONFIGURAR**, realice los cambios y haga clic en **GUARDAR**..
 
 > [!WARNING]
-> Cuando realices cambios en una plantilla que has guardado antes, los clientes no verán dichos cambios en la plantilla hasta que se actualicen en sus equipos. Para más información, consulte [Actualización de plantillas para usuarios](refresh-templates.md).
+> Cuando realices cambios en una plantilla que has guardado antes, los clientes no verán dichos cambios en la plantilla hasta que se actualicen en sus equipos. Para obtener más información, consulte [Refreshing templates for users](refresh-templates.md) (Actualización de plantillas para usuarios)..
 
 ## Véase también
 [Configuración de plantillas personalizadas para Azure Rights Management](configure-custom-templates.md)
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

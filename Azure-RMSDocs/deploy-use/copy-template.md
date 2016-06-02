@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/20/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -27,6 +27,9 @@ ms.suite: ems
 
 
 # Copia de una plantilla
+
+*Se aplica a: Azure Rights Management, Office 365*
+
 Si desea crear una plantilla nueva que tenga una configuración muy similar a una plantilla existente, seleccione la plantilla original en la página **PLANTILLAS** , haga clic en **COPIAR**, especifique un nombre único y haga los cambios necesarios.
 
 > [!IMPORTANT]
@@ -39,6 +42,6 @@ Puedes copiar plantillas personalizadas y plantillas predeterminadas. Como prác
 ## Véase también
 [Configuración de plantillas personalizadas para Azure Rights Management](configure-custom-templates.md)
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO3-->
 
 

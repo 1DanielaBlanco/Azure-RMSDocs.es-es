@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: b0aafe75-19c9-47dc-bbba-cf4287399c6e
-
+ms.assetid: F5AD3826-2292-4A25-AF5C-D17D083F5742
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # Procedimiento para habilitar el registro de rendimiento y errores
 El SDK 4.2 de Microsoft Rights Management administra la carga de registro de rendimiento y diagnóstico mediante una única propiedad de dispositivo.
 
@@ -85,7 +83,7 @@ Habilitar el registro automático
 
     CustomerExperienceConfiguration::Option = CustomerExperienceOptions::LoggingEnabledNow;
 
-Para más información sobre los valores de configuración opcionales, consulte [CustomerExperienceOptions](/rights-management/sdk/4.2/api/winrt/Microsoft.RightsManagement#msipcthin2_customerexperienceoptionss).
+Para obtener más información sobre los valores de configuración opcionales, consulte [CustomerExperienceOptions](/rights-management/sdk/4.2/api/winrt/Microsoft.RightsManagement#msipcthin2_customerexperienceoptions).
 
 Obtener el valor de marca de control del registro actual
 
@@ -101,6 +99,6 @@ Obtener el valor de marca de control del registro actual
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

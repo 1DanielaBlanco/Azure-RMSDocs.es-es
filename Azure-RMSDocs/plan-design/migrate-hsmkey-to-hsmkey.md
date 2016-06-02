@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Paso 2; Migración entre claves protegidas por HSM | Azure RMS
+title: Paso 2&colon; Migración entre claves protegidas por HSM | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -27,12 +27,15 @@ ms.suite: ems
 
 # Paso 2: Migración entre claves protegidas por HSM
 
+*Se aplica a: Active Directory Rights Management Services, Azure Rights Management*
+
+
 Estas instrucciones son parte de la [ruta de acceso de la migración de AD RMS a Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md), y se aplican solo si la clave de AD RMS está protegida por HSM y desea migrar a Azure Rights Management con una clave de inquilino protegida por HSM. 
 
 Si no es el escenario de configuración elegido, vuelva al [paso 2. Exporte los datos de configuración de AD RMS e impórtelos en Azure RMS](migrate-from-ad-rms-to-azure-rms.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-rms) y elija una configuración distinta.
 
 > [!NOTE]
-> Estas instrucciones asumen que su clave de AD RMS tiene la protección del módulo. Se trata del caso común. Si la clave de AD RMS tiene la protección de OCS, póngase en contacto con [AskIPTeam@microsoft.com](mailto: askipteam@microsoft.com?subject=AD%20RMS%20migration%20with%20OCS-protected%20key) antes de seguir estas instrucciones.
+> Estas instrucciones asumen que su clave de AD RMS tiene la protección del módulo. Se trata del caso común. Si su clave de AD RMS tiene la protección de OCS, póngase en contacto con [AskIPTeam@microsoft.com](mailto: askipteam@microsoft.com?subject=AD%20RMS%20migration%20with%20OCS-protected%20key) antes de seguir estas instrucciones.
 
 Es un procedimiento de dos partes para importar la clave HSM y la configuración de AD RMS a Azure RMS, que tiene como resultado la clave de inquilino de Azure RMS que administra el propio usuario (BYOK).
 
@@ -69,10 +72,10 @@ Ahora que ha preparado su clave HSM para Azure RMS, está listo para importar el
     Disconnect-AadrmService
     ```
 
-Ahora puede ir al [paso 3. Active el inquilino de RMS](migrate-from-ad-rms-to-azure-rms.md#BKMK_Step3Migration).
+Ahora puede ir al [paso 3. Active el inquilino de RMS](migrate-from-ad-rms-to-azure-rms.md#BKMK_Step3Migration)..
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/20/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Fase 1 de migración: configuración del lado servidor para AD RMS
+
+*Se aplica a: Active Directory Rights Management Services, Azure Rights Management*
+
 Use la siguiente información para la fase 1 de migración desde AD RMS a Azure Rights Management (Azure RMS). Estos procedimientos incluyen los pasos del 1 al 4 del tema [Migración desde AD RMS a Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md).
 
 
@@ -44,8 +47,7 @@ Este paso es un proceso de dos fases:
 ### Exportar los datos de configuración de AD RMS
 Siga este procedimiento en todos los clústeres de AD RMS, para todos los dominios de publicación confianza que tienen contenido protegido de su organización. No es necesario ejecutar esto en clústeres solo para licencias.
 
-> [!NOTE]
-> Si usa Windows Server 2003 Rights Management, en lugar de estas instrucciones, siga el procedimiento [Export SLC, TUD, TPD and RMS private key](http://technet.microsoft.com/library/jj835767%28v=ws.10%29.aspx) (Exportar clave privada de SLC, TUD, TPD y RMS) del artículo [Exportar clave privada de SLC, TUD, TPD y RMS](http://technet.microsoft.com/library/jj835767%28v=ws.10%29.aspx) (Migración de Windows RMS a AD RMS en una infraestructura distinta).
+> [!NOTE] Si usa Windows Server 2003 Rights Management, en lugar de estas instrucciones, siga el procedimiento [Export SLC, TUD, TPD and RMS private key](http://technet.microsoft.com/library/jj835767%28v=ws.10%29.aspx) (Exportar clave privada de SLC, TUD, TPD y RMS) del artículo [Migrating from Windows RMS to AD RMS in a Different Infrastructure](http://technet.microsoft.com/library/jj835767%28v=ws.10%29.aspx) (Migración de Windows RMS a AD RMS en una infraestructura distinta).
 
 #### Para exportar los datos de configuración (información del dominio de publicación de confianza)
 
@@ -78,8 +80,7 @@ La implementación de AD RMS actual usará una de las siguientes configuraciones
 
 -   Contraseña protegida mediante un proveedor criptográfico externo.
 
-> [!NOTE]
-> Para obtener más información acerca del uso de módulos de seguridad de hardware con AD RMS, consulte [Uso de AD RMS con módulos de seguridad de hardware](http://technet.microsoft.com/library/jj651024.aspx).
+> [!NOTE] Para obtener más información sobre el uso de módulos de seguridad de hardware con AD RMS, consulte [Uso de AD RMS con módulos de seguridad de hardware](http://technet.microsoft.com/library/jj651024.aspx).
 
 Las dos opciones de topología de clave de inquilino de Azure RMS son: Microsoft administra su clave de inquilino (**administrada por Microsoft**), o bien es el usuario quien se encarga de ello (**administrada por el cliente**). Cuando administra su propia clave de inquilino de Azure RMS, esto se conoce a veces como "aporte su propia clave" (BYOK) y requiere un módulo de seguridad de hardware (HSM) de Thales. Para más información, vea [Planning and implementing your Azure Rights Management tenant keyt](plan-implement-tenant-key.md) (Planeación e implementación de la clave de inquilino de Azure Rights Managemen).
 
@@ -97,8 +98,7 @@ Utilice la tabla siguiente para identificar qué procedimiento se utilizará par
 |Contraseña protegida mediante un proveedor criptográfico externo.|Administrada por el cliente (BYOK)|Póngase en contacto con el proveedor criptográfico para obtener instrucciones sobre cómo transferir su clave a un módulo de seguridad de hardware (HSM) de Thales nShield. Después, siga las instrucciones del procedimiento **Migración entre claves protegidas por HSM** después de esta tabla.|
 Antes de iniciar estos procedimientos, asegúrese de que puede tener acceso a los archivos .xml que creó anteriormente cuando exportó los dominios de publicación de confianza. Por ejemplo, estos podrían estar guardados en una unidad USB que se transfiere desde el servidor de AD RMS a la estación de trabajo conectada a Internet.
 
-> [!NOTE]
-> Independientemente de cómo almacene estos datos, aplique las prácticas de seguridad recomendadas para protegerlos, ya que estos incluyen la clave privada.
+> [!NOTE] Independientemente de cómo almacene estos archivos, aplique las prácticas de seguridad recomendadas para protegerlos, ya que estos incluyen la clave privada.
 
 
 Para completar el paso 2, elija y seleccione las instrucciones para la ruta de migración: 
@@ -109,13 +109,9 @@ Para completar el paso 2, elija y seleccione las instrucciones para la ruta de m
 - [Clave de software a clave de HSM](migrate-softwarekey-to-hsmkey.md)
 
 
-<<<<<<< HEAD
-## Paso 3: Activar el inquilino de Azure RMS
-Las instrucciones de este paso se incluyen íntegramente en el artículo [Activating Azure Rights Management](../deploy-use/activate-azure-classic.md) (Activar Azure Rights Management).
-=======
 ## Paso 3: Active el inquilino de RMS.
 Las instrucciones de este paso se incluyen íntegramente en el artículo [Activating Azure Rights Management](../deploy-use/activate-service.md) (Activar Azure Rights Management).
->>>>>>> 32b7eccb741760c33bf45a2ce253454827c6d6ba
+
 
 > [!TIP]
 > Si tiene una suscripción de Office 365, puede activar Azure RMS desde el centro de administración de Office 365 o el Portal de Azure clásico. Se recomienda usar el Portal de Azure clásico, ya que usará este portal de administración para completar el paso siguiente.
@@ -135,10 +131,9 @@ Puede ver el grupo de su organización creado automáticamente si copia una de l
 
 -   Use el cmdlet [New-AadrmRightsDefinition](https://msdn.microsoft.com/library/azure/dn727080.aspx) de PowerShell para definir el grupo "AllStaff" y los derechos como un objeto de definición de derechos, y ejecute de nuevo este comando para cada uno de los demás grupos o usuarios a los que ya se les ha otorgado derechos en la plantilla original además de para el grupo CUALQUIERA. Después, agregue estos objetos de definición de derechos a las plantillas mediante el cmdlet [Set-AadrmTemplateProperty](https://msdn.microsoft.com/en-us/library/azure/dn727076.aspx).
 
--   Use el cmdlet [Export-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727078.aspx) para exportar la plantilla a un archivo .XML que pueda editar para agregar el grupo "AllStaff" y los derechos a los grupos y derechos existentes y, después, use el cmdlet [Import-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727077.aspx) para importar este cambio de nuevo en Azure RMS.
+-   Use el cmdlet [Export-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727078.aspx) para exportar la plantilla a un archivo .XML que pueda editar para agregar el grupo "AllStaff" y los derechos a los grupos y derechos existentes y después use el cmdlet [Import-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727077.aspx) para importar este cambio de nuevo en Azure RMS.
 
-> [!NOTE]
-> Este grupo equivalente "AllStaff" no es exactamente igual que el grupo ANYONE de AD RMS: el grupo "AllStaff" incluye a todos los usuarios de su inquilino de Azure, mientras que el grupo CUALQUIERA incluye a todos los usuarios autenticados, que podrían estar fuera de su organización.
+> [!NOTE] Este grupo equivalente "AllStaff" no es exactamente igual que el grupo CUALQUIERA de AD RMS: el grupo "AllStaff" incluye a todos los usuarios de su inquilino de Azure, mientras que el grupo CUALQUIERA incluye a todos los usuarios autenticados, que podrían estar fuera de su organización.
 > 
 > Debido a esta diferencia entre los dos grupos, puede que tenga que agregar también usuarios externos además del grupo "AllStaff". Actualmente no se admiten direcciones de correo electrónico externas para grupos.
 
@@ -190,6 +185,6 @@ Vaya a [Fase 2: Configuración del lado cliente](migrate-from-ad-rms-phase2.md).
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO3-->
 
 

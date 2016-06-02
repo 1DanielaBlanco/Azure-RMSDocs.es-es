@@ -2,7 +2,7 @@
 # required metadata
 
 title: Descripción de cadenas de certificados | Azure RMS
-description:
+description: Una aplicación habilitada para derechos requiere un par de claves públicas y una cadena de certificados que remita a un certificado de Microsoft en la raíz de confianza.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 14694cb0-adc4-4c2f-aff5-22aa132777df
-
+ms.assetid: 6AEA2162-82BF-4867-9285-111CD3FCD2F6
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,7 @@ ms.suite: ems
 
 ---
 
-﻿# Descripción de cadenas de certificados
+# Descripción de cadenas de certificados
 
 Desarrollar una aplicación habilitada para derechos requiere un par de claves públicas y una cadena de certificados que remita a un certificado de Microsoft en la raíz de confianza.
 
@@ -49,7 +48,7 @@ Independientemente de que haya utilizado un certificado de preproducción durant
 
 Para más información sobre cómo trabajar con cadenas de certificados y la firma de la aplicación, consulte [Cambio al entorno de producción](switching-to-the-production-environment.md).
 
-### Temas relacionados
+## Temas relacionados
 
 * [Conceptos para desarrolladores](ad-rms-concepts-nav.md)
 * [Cambio al entorno de producción](switching-to-the-production-environment.md)
@@ -58,6 +57,6 @@ Para más información sobre cómo trabajar con cadenas de certificados y la fir
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

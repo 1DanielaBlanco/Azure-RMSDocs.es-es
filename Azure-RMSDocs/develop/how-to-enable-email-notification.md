@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: fcaa5643-64a9-4181-b29b-90211fce7ab5
-
+ms.assetid: 5FB975EE-E4E5-4089-B8E1-CAFD5B9B34EC
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # Habilitar la notificación de correo electrónico
 
 Las notificaciones de correo electrónico avisan al propietario de contenido protegido si alguien tiene acceso a su contenido.
@@ -73,6 +71,6 @@ La siguiente tabla contiene los campos de datos de la aplicación y los pares de
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

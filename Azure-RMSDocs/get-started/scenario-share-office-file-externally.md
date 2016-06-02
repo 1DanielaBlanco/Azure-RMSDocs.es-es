@@ -7,7 +7,7 @@ keywords:
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Escenario: Compartir un archivo de Office con usuarios de otra organización
+
+*Se aplica a: Azure Rights Management, Office 365*
+
 En este escenario y en la documentación de usuario correspondiente se usa Azure Rights Management para que los usuarios puedan enviar por correo electrónico de forma segura un archivo de Office a personas de otra organización. Por ejemplo, el archivo de Office puede ser un documento de Word, una hoja de cálculo de Excel o una presentación de PowerPoint que contenga información de lista de precios para un asociado, una lista de productos para un distribuidor o una lista de escalas de tiempo de entrega con clientes potenciales. Cuando los usuarios siguen las instrucciones, el archivo adjuntado al mensaje de correo electrónico lo protegerá Azure Rights Management.
 
 Este escenario es adecuado para el conjunto de circunstancias siguiente:
@@ -39,7 +42,7 @@ Este escenario es adecuado para el conjunto de circunstancias siguiente:
 -   Puede que el empleado esté interesado en saber cuándo el usuario externo abre este documento.
 
 ## Instrucciones de implementación
-![](../media/AzRMS_AdminBanner.png)
+![Instrucciones para el administrador para la implementación rápida de Azure RMS](../media/AzRMS_AdminBanner.png)
 
 Asegúrese de que se cumplen los siguientes requisitos antes de pasar a la documentación del usuario.
 
@@ -71,38 +74,37 @@ Con la siguiente plantilla, copie y pegue las instrucciones de usuario en una co
 
     -   Los pasos no incluyen el establecimiento de una fecha de expiración. Si no debe usarse la información después de una fecha concreta, agregue otro paso para establecer un tiempo de expiración adecuado, como 90 días desde el envío del mensaje de correo electrónico.
 
-    > [!NOTE]
-    > Para obtener más información sobre las opciones que pueden seleccionar los usuarios, consulte [Opciones del cuadro de diálogo para la aplicación Rights Management sharing](https://technet.microsoft.com/library/dn574738.aspx)
+    > [!NOTE] Para obtener más información sobre las opciones que pueden seleccionar los usuarios, consulte [Dialog box options for the Rights Management sharing application](https://technet.microsoft.com/library/dn574738.aspx) (Opciones de cuadro de diálogo para la aplicación Rights Management sharing)
 
 4.  Realice cualquier otro cambio que desee en este conjunto de instrucciones y, después, envíelo a estos usuarios.
 
 En la documentación de ejemplo se muestra el aspecto de estas instrucciones para los usuarios tras sus personalizaciones.
 
-![](../media/AzRMS_UsersBanner.png)
+![Documentación de usuario de la plantilla para la implementación rápida de Azure RMS](../media/AzRMS_UsersBanner.png)
 
 ### Cómo compartir un &lt;nombre de tipo de documento de Office&gt;
 
 1.  Cree el mensaje de correo electrónico especificando la dirección o direcciones de correo electrónico, escriba el mensaje y adjunte el *&lt;nombre de tipo de documento de Office&gt;* al mensaje de correo electrónico. A continuación, en la pestaña **MENSAJE** , en el grupo **RMS** , haga clic en **Compartir protegido** y después otra vez en **Compartir protegido** :
 
-    ![](../media/AzRMSUserInstructions_ShareProtectedRibbon2013.png)
+    ![Captura de pantalla sobre cómo compartir un documento de Office mediante Outlook](../media/AzRMSUserInstructions_ShareProtectedRibbon2013.png)
 
 2.  En el cuadro de diálogo **compartir protegido** , seleccione **Visor: solo ver**:
 
-    ![](../media/AzRMS_SharedProtected_ViewerOnly.PNG)
+    ![cuadro de diálogo uso compartido seguro, Visor: solo ver](../media/AzRMS_SharedProtected_ViewerOnly.PNG)
 
 3.  Seleccione **Permítame revocar el acceso a estos documentos de forma instantánea**:
 
-    ![](../media/AzRMS_SharedProtected_InstantRevoke.PNG)
+    ![cuadro de diálogo uso compartido seguro, revocar de forma instantánea](../media/AzRMS_SharedProtected_InstantRevoke.PNG)
 
 4.  Seleccione **Enviarme un correo electrónico cuando alguien intente abrir estos documentos**:
 
-    ![](../media/AzRMS_SharedProtected_EmailMe.PNG)
+    ![cuadro de diálogo uso compartido seguro, enviarme un correo electrónico](../media/AzRMS_SharedProtected_EmailMe.PNG)
 
 5.  Haga clic en **Enviar ahora**.
 
-Cuando alguien en las líneas **Para**, **CC**o **CCO** recibe este correo electrónico, ve un mensaje que le da las instrucciones de cómo leer el archivo adjunto *&lt;nombre de tipo de documento de Office&gt;*. Se puede leer el documento en varios dispositivos, como tabletas y teléfonos iPad, iPhone y Android, equipos Mac y equipos Windows.
+Cuando alguien en las líneas **Para**, **CC** o **CCO** recibe este correo electrónico, ve un mensaje que le da las instrucciones de cómo leer el archivo adjunto *&lt;nombre de tipo de documento de Office&gt;*. Se puede leer el documento en varios dispositivos, como tabletas y teléfonos iPad, iPhone y Android, equipos Mac y equipos Windows.
 
-Utilice el [portal de seguimiento de documentos](https://track.azurerms.com/) para realizar el seguimiento cuando abran el &lt;nombre de tipo de documento de Office&gt; adjunto. Considere la posibilidad de ponerse en contacto por teléfono poco después de ver que han abierto el &lt;nombre de tipo de documento de Office&gt;.
+Use el [portal de seguimiento de documentos](https://track.azurerms.com/) para realizar el seguimiento cuando abran el &lt;nombre de tipo de documento de Office&gt; adjunto. Considere la posibilidad de ponerse en contacto por teléfono poco después de ver que han abierto el &lt;nombre de tipo de documento de Office&gt;.
 
 **¿Necesita ayuda?**
 
@@ -117,25 +119,25 @@ Utilice el [portal de seguimiento de documentos](https://track.azurerms.com/) pa
     -   *&lt;detalles de contacto&gt;*
 
 ### Documentación de usuario personalizada de ejemplo
-![](../media/AzRMS_ExampleBanner.png)
+![Documentación de usuario de ejemplo para la implementación rápida de Azure RMS](../media/AzRMS_ExampleBanner.png)
 
 #### Cómo compartir una lista de precios con el cliente
 
 1.  Cree el mensaje de correo electrónico especificando la dirección o direcciones de correo electrónico, escriba el mensaje y adjunte la lista de precios más reciente al mensaje de correo electrónico. A continuación, en la pestaña **MENSAJE** , en el grupo **RMS** , haga clic en **Compartir protegido** y después otra vez en **Compartir protegido** :
 
-    ![](../media/AzRMSUserInstructions_ShareProtectedRibbon2013.png)
+    ![Captura de pantalla sobre cómo compartir un documento de Office mediante Outlook](../media/AzRMSUserInstructions_ShareProtectedRibbon2013.png)
 
 2.  En el cuadro de diálogo **compartir protegido** , seleccione **Visor: solo ver**:
 
-    ![](../media/AzRMS_SharedProtected_ViewerOnly.PNG)
+    ![cuadro de diálogo uso compartido seguro, Visor: solo ver](../media/AzRMS_SharedProtected_ViewerOnly.PNG)
 
 3.  Seleccione **Permítame revocar el acceso a estos documentos de forma instantánea**:
 
-    ![](../media/AzRMS_SharedProtected_InstantRevoke.PNG)
+    ![cuadro de diálogo uso compartido seguro, revocar de forma instantánea](../media/AzRMS_SharedProtected_InstantRevoke.PNG)
 
 4.  Seleccione **Enviarme un correo electrónico cuando alguien intente abrir estos documentos**:
 
-    ![](../media/AzRMS_SharedProtected_EmailMe.PNG)
+    ![cuadro de diálogo uso compartido seguro, enviarme un correo electrónico](../media/AzRMS_SharedProtected_EmailMe.PNG)
 
 5.  Haga clic en **Enviar ahora**.
 
@@ -157,6 +159,6 @@ Utilice el [portal de seguimiento de documentos](https://track.azurerms.com/) pa
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO2-->
 
 
