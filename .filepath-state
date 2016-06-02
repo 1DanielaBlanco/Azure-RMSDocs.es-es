@@ -620,18 +620,6 @@
   "19f536e8d0353c7b0ccbd4de3df646352dc2d748": [
     "Azure-RMSDocs\\get-started\\tutorial-step4.md"
   ],
-  "cd07620ae0b30f62fcc291836b2563f3273c5050": [
-    "Azure-RMSDocs\\get-started\\tutorial-step4.md"
-  ],
-  "55c0b3c30c2d00cef2dbbf92e27a9f984d77574f": [
-    "Azure-RMSDocs\\get-started\\tutorial-step4.md"
-  ],
-  "de7e76e03e08240f329ec85b47bafd47c0aa1e36": [
-    "Azure-RMSDocs\\get-started\\tutorial-step4.md"
-  ],
-  "3737f3c0437e8610e66a49a92b5b65a32ee2ee05": [
-    "Azure-RMSDocs\\get-started\\tutorial-step4.md"
-  ],
   "9c335e054d4aed1a8cca654420a580d02a4c849f": [
     "Azure-RMSDocs\\get-started\\tutorial-step5.md"
   ],
@@ -657,9 +645,6 @@
     "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase3.md"
   ],
   "590825c8d180604426482a55f7edcd5e3c6d0243": [
-    "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase4.md"
-  ],
-  "50f2f7f407864a1e898295b3df10a29260e62868": [
     "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase4.md"
   ],
   "44241219d6d699d1c6ac208bf753fe6cad35b36a": [
@@ -741,9 +726,6 @@
     "Azure-RMSDocs\\understand-explore\\compare-azure-rms-ad-rms.md"
   ],
   "839be5a8a45c2322127694dc0bdc306ff445c314": [
-    "Azure-RMSDocs\\understand-explore\\file-server-support.md"
-  ],
-  "de2be4a6bc82c73a3f96455e6e2a99adbf047ef7": [
     "Azure-RMSDocs\\understand-explore\\file-server-support.md"
   ],
   "c6c0e2e3afa416f343f23613db4b3ca228426c01": [
