@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Encabezado de primer nivel
 
-Consulte Markdown para este archivo [en Github](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/master/Azure-RMSDocs/scratch.md); consulte la referencia de Markdown en [la guía de estilo de EM Pilot](https://worldready.cloudapp.net/Styleguide/Edit?id=2781&topicid=36931). 
+Consulte Markdown para este archivo [en Github](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/master/Azure-RMSDocs/scratch.md); consulte la referencia de Markdown en la [guía de estilo de EM Pilot](https://worldready.cloudapp.net/Styleguide/Edit?id=2781&topicid=36931).. 
 
 ## encabezado de segundo nivel
 ### Encabezado de tercer nivel
@@ -165,6 +165,18 @@ Este es un ejemplo de `in-line code`.
 [vínculos del botón](/azure-rms/index.html)
 
 ### Selector
+
+Texto de introducción: [!div class="op_single_selector"]
+- [foo](./develop/developers-guide.md)
+- [barra](./develop/developer-notes.md)
+
+Texto de introducción: > [!div class="op_single_selector"]
+- [foo](./develop/developers-guide.md)
+- [barra](./develop/developer-notes.md)
+
+
+
+
 > [!div class="op_single_selector"]
 - [foo](./develop/developers-guide.md)
 - [barra](./develop/developer-notes.md)
@@ -179,6 +191,6 @@ Este es un ejemplo de `in-line code`.
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 
