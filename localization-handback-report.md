@@ -1,39 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 2
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [Azure-RMSDocs\deploy-use\help-users.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/deploy-use/help-users.md) | InSyncHandedBackSuccess | [Details](#562c6deb97c86cf8bd19be62902387c4b82498d925)
- [Azure-RMSDocs\scratch.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/4aa72824efd231285a1941ff1335437d24c83233/Azure-RMSDocs/scratch.md) | InSyncHandedBackSuccess | [Details](#47e2d48aeba95aba232a1c8a7f02df31d2604a6e379)
 
 ## Item Details
-##### <a name='562c6deb97c86cf8bd19be62902387c4b82498d925'></a> Source: [Azure-RMSDocs\deploy-use\help-users.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/deploy-use/help-users.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [Azure-RMSDocs\deploy-use\help-users.md](https://github.com/Microsoft/Azure-RMSDocs-pr.es-es/blob/568bffdce6b5cac27cc43c6ce84691795a175446/Azure-RMSDocs/deploy-use/help-users.md)
-* Handoff File: [help-users.ef625c9825183cbee7c061bcc4e8aa415965344e.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/b456d2300d147ad2c620d7b6bbbc8cf42f1e75d0/ol-handoff/Microsoft/Azure-RMSDocs-pr.es-es/master/help-users.ef625c9825183cbee7c061bcc4e8aa415965344e.es-es.xlf)
-* Handoff Datetime: 2016-04-27 21:26:51
-* Handoff Reason: Include
-* Archive File: [help-users.ef625c9825183cbee7c061bcc4e8aa415965344e.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/dc307d2c98696cb68eb91632c96c6adb18913c9c/ol-handoff/Microsoft/Azure-RMSDocs-pr.es-es/master/archive/help-users.ef625c9825183cbee7c061bcc4e8aa415965344e.es-es.xlf)
-* Archive Datetime: 2016-05-21 18:39:12
-* Handback File: [help-users.ef625c9825183cbee7c061bcc4e8aa415965344e.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/be509a3c1c8189a7a60c5ccd93460e2b72dc5aca/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/help-users.ef625c9825183cbee7c061bcc4e8aa415965344e.es-es.xlf)
-* Handback Datetime: 2016-06-03 00:48:23
-* [Back to Top](#report-top)
-
-##### <a name='47e2d48aeba95aba232a1c8a7f02df31d2604a6e379'></a> Source: [Azure-RMSDocs\scratch.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/4aa72824efd231285a1941ff1335437d24c83233/Azure-RMSDocs/scratch.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [Azure-RMSDocs\scratch.md](https://github.com/Microsoft/Azure-RMSDocs-pr.es-es/blob/568bffdce6b5cac27cc43c6ce84691795a175446/Azure-RMSDocs/scratch.md)
-* Handoff File: [scratch.fa4cad53100d924953d6bbe13ddd392558d629de.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/b456d2300d147ad2c620d7b6bbbc8cf42f1e75d0/ol-handoff/Microsoft/Azure-RMSDocs-pr.es-es/master/scratch.fa4cad53100d924953d6bbe13ddd392558d629de.es-es.xlf)
-* Handoff Datetime: 2016-04-27 21:26:51
-* Handoff Reason: Include
-* Archive File: [scratch.fa4cad53100d924953d6bbe13ddd392558d629de.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/dc307d2c98696cb68eb91632c96c6adb18913c9c/ol-handoff/Microsoft/Azure-RMSDocs-pr.es-es/master/archive/scratch.fa4cad53100d924953d6bbe13ddd392558d629de.es-es.xlf)
-* Archive Datetime: 2016-05-21 18:39:12
-* Handback File: [scratch.fa4cad53100d924953d6bbe13ddd392558d629de.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/be509a3c1c8189a7a60c5ccd93460e2b72dc5aca/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/scratch.fa4cad53100d924953d6bbe13ddd392558d629de.es-es.xlf)
-* Handback Datetime: 2016-06-03 00:48:23
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
