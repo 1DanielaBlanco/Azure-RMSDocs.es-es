@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** El contenido de este SDK no es actual. Durante un breve periodo podrá encontrar la [versión actual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) de la documentación en MSDN. **
 # Información general
 
 Rights Management Services (RMS) es una tecnología de protección de la información que ayuda a proteger la información digital frente al uso no autorizado. Con aplicaciones habilitadas para derechos, los propietarios de contenido tendrán la capacidad de definir quién puede abrir, modificar, imprimir, reenviar o realizar otras acciones con su contenido.
@@ -62,6 +62,6 @@ Para comenzar, consulte, [Introducción](getting-started-with-ad-rms-2-0.md).
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

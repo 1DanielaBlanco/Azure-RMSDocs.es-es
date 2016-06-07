@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** El contenido de este SDK no es actual. Durante un breve periodo podrá encontrar la [versión actual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) de la documentación en MSDN. **
 # Descripción de cadenas de certificados
 
 Desarrollar una aplicación habilitada para derechos requiere un par de claves públicas y una cadena de certificados que remita a un certificado de Microsoft en la raíz de confianza.
@@ -57,6 +57,6 @@ Para más información sobre cómo trabajar con cadenas de certificados y la fir
  
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

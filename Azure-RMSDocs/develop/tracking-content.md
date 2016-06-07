@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** El contenido de este SDK no es actual. Durante un breve periodo podrá encontrar la [versión actual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) de la documentación en MSDN. **
 # Seguimiento de contenido
 
 En este tema se abordan las instrucciones básicas para implementar el seguimiento de documentos con contenido protegido con Rights Management Services SDK 2.1.
@@ -39,27 +39,27 @@ Use estas API para agregar o actualizar una licencia de contenido con metadatos 
 
     Para más información, consulte [**Tipos de propiedades de metadatos de licencias**](/rights-management/sdk/2.1/api/win/license%20metadata%20property%20types#msipc_license_metadata_property_types).
 
-    -   **IPC\_MD\_CONTENT\_PATH**
+    -   **IPC\_MD\_CONTENIDO\_RUTA DE ACCESO**
 
         Se usa para identificar el documento cuyo seguimiento se realiza. En aquellos casos en los que no sea posible especificar una ruta de acceso completa, basta con que proporcione el nombre de archivo.
 
-    -   **IPC\_MD\_CONTENT\_NAME**
+    -   **IPC\_MD\_CONTENIDO\_NOMBRE**
 
         Se usa para identificar el nombre del documento cuyo seguimiento se realiza.
 
-    -   **IPC\_MD\_NOTIFICATION\_TYPE**
+    -   **IPC\_MD\_NOTIFICACIÓN\_TIPO**
 
         Se usa para especificar cuándo se enviará la notificación. Para más información, consulte [**Tipo de notificación**](/rights-management/sdk/2.1/api/win/notification%20type#msipc_notification_type).
 
-    -   **IPC\_MD\_NOTIFICATION\_PREFERENCE**
+    -   **IPC\_MD\_NOTIFICACIÓN\_PREFERENCIA**
 
         Se usa para especificar el tipo de notificación. Para más información, consulte [**Preferencia de notificación**](/rights-management/sdk/2.1/api/win/constants#msipc_notification_preference).
 
-    -   **IPC\_MD\_DATE\_MODIFIED**
+    -   **IPC\_MD\_FECHA\_MODIFICADO**
 
         Se recomienda establecer esta fecha cada vez que el usuario hace clic en **Guardar**.
 
-    -   **IPC\_MD\_DATE\_CREATED**
+    -   **IPC\_MD\_FECHA\_CREADO**
 
         Fecha de creación del archivo.
 
@@ -134,6 +134,6 @@ El siguiente es un fragmento de código que muestra un ejemplo de cómo establec
  
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

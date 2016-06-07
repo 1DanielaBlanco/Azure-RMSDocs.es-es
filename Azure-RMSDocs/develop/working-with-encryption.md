@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** El contenido de este SDK no es actual. Durante un breve periodo podrá encontrar la [versión actual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) de la documentación en MSDN. **
 # Uso del cifrado
 
 En este tema se le brinda información relacionada con los paquetes de cifrado y se muestran algunos recortes de código para su uso.
@@ -44,13 +44,13 @@ A partir de la [actualización de marzo de 2015](release-notes-rtm.md), hemos in
 -   IPC\_ENCRYPTION\_PACKAGE \_AES128\_CBC4K
 -   IPC\_ENCRYPTION\_PACKAGE \_AES128\_ECB (también conocido como modo de algoritmos desusados)
 
-Las marcas de paquete de cifrado (véase [**Preferred encryption**](/rights-management/sdk/2.1/api/win/constants#msipc_preferred_encryption) (cifrado preferido)), pueden utilizarse junto con nuestra nueva marca de propiedad de la licencia **IPC\_LI\_PREFERRED\_ENCRYPTION\_PACKAGE**.
+Las marcas de paquete de cifrado (véase [**Preferred encryption (cifrado preferido)**](/rights-management/sdk/2.1/api/win/constants#msipc_preferred_encryption)), pueden usarse junto con la nueva marca de propiedad de la licencia **IPC\_LI\_PREFERRED\_ENCRYPTION\_PACKAGE**.
 
 Los siguientes son algunos fragmentos de código simple que muestran cómo utilizar la nueva propiedad de la licencia.
 
 ## Algoritmos desusados
 
-La marca **IPC\_LI\_DEPRECATED\_ENCRYPTION\_ALGORITHMS** dejará de exponerse en nuestra API. Esto significa que las aplicaciones futuras ya no se compilarán si hacen referencia a esta marca, pero las ya desarrolladas con ella seguirán funcionando dado que respetaremos la marca de forma privada en el código de la API.
+La marca **IPC\_LI\_DEPRECATED\_ENCRYPTION\_ALGORITHMS** dejará de exponerse en la API. Esto significa que las aplicaciones futuras ya no se compilarán si hacen referencia a esta marca, pero las ya desarrolladas con ella seguirán funcionando dado que respetaremos la marca de forma privada en el código de la API.
 
 Todavía será posible beneficiarse de la antigua marca de algoritmos de cifrado desusados si se cambia una marca. Consulte los fragmentos de código siguientes para obtener ejemplos.
 
@@ -106,6 +106,6 @@ Este ejemplo también muestra la nueva forma de admitir *algoritmos desusados*.
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

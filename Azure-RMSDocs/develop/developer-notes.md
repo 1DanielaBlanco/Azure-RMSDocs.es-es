@@ -23,12 +23,12 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** El contenido de este SDK no es actual. Durante un breve periodo podrá encontrar la [versión actual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) de la documentación en MSDN. **
 # Notas para el desarrollador
 
 En esta sección se incluyen instrucciones específicas para varios escenarios de desarrollo importantes. Los escenarios de esta sección son específicos de esta versión de Rights Management Services SDK 2.1 y podrían modificarse en versiones posteriores.
 
-- [Agregar derechos de propiedad explícitos](add-explicit-owner-rights.md): su aplicación debe agregar explícitamente derechos de &quot;propietario;Owner&quot; al crear una licencia desde el principio ([IpcCreateLicenseFromScratch](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch)).
+- [Agregar derechos de propiedad explícitos](add-explicit-owner-rights.md): la aplicación debe agregar explícitamente derechos de &quot;Propietario&quot; al crear una licencia desde el principio ([IpcCreateLicenseFromScratch](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch)).
 - [Condiciones de error comunes y soluciones](common-error-conditions-and-solutions.md): los mensajes de error más comunes que pueden surgir al usar las herramientas para desarrolladores del SDK 2.1 de RMS.
 - [Habilitación de notificaciones por correo electrónico](how-to-enable-email-notification.md): las notificaciones por correo electrónico permiten que el propietario de contenido protegido reciba una notificación cuando se acceda a su contenido.
 - [Configuración de la API de archivos](file-api-configuration.md): el comportamiento de la API de archivos se puede configurar mediante el Registro.
@@ -48,6 +48,6 @@ En esta sección se incluyen instrucciones específicas para varios escenarios d
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

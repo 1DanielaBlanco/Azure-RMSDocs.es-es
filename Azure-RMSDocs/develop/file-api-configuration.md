@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** El contenido de este SDK no es actual. Durante un breve periodo podrá encontrar la [versión actual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) de la documentación en MSDN. **
 # Configuración de la API de archivo
 
 
@@ -75,7 +75,7 @@ Establezca el valor *Encryption* en la clave para especificar el comportamiento 
 - *PFile*: se usa el cifrado PFile. El archivo cifrado tendrá anexado .pfile a la extensión original. Por ejemplo, después del cifrado, un archivo .txt tendrá una extensión .txt.pfile.
 
 
-> [AZURE.NOTE] Esta configuración no afecta a los formatos de archivo de Office. Por ejemplo, si el valor `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\DOCX\Encryption` se establece en &quot;Pfile”, los archivos .docx seguirán cifrándose con la protección nativa y el archivo cifrado seguirá teniendo una extensión .docx.
+> [AZURE.NOTE] Esta configuración no afecta a los formatos de archivo de Office. Por ejemplo, si el valor `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\DOCX\Encryption` se establece en &quot;Pfile", los archivos .docx seguirán cifrándose con la protección nativa y el archivo cifrado seguirá teniendo una extensión .docx.
 
 Si se establece otro valor o si no se establece ningún valor, el resultado será el comportamiento predeterminado.
 
@@ -151,7 +151,7 @@ HKEY_LOCAL_MACHINE
 
 ## Temas relacionados
 
-* [Notas de desarrollador](developer-notes.md)
+* [Notas para el desarrollador](developer-notes.md)
 * [**IPCERROR\_FILE\_ENCRYPT\_BLOCKED**](/rights-management/sdk/2.1/api/win/error%20codes)
  
 
@@ -161,6 +161,6 @@ HKEY_LOCAL_MACHINE
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

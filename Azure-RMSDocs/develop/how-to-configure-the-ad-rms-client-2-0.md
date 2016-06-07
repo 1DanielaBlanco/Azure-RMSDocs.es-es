@@ -23,8 +23,8 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
-# Configurar el cliente
+** El contenido de este SDK no es actual. Durante un breve periodo podrá encontrar la [versión actual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) de la documentación en MSDN. **
+# Configuración del cliente
 
 Este tema contiene instrucciones sobre cómo configurar Active Directory Rights Management Services Client 2.1.
 
@@ -53,9 +53,9 @@ Instrucciones
 
 Los pasos siguientes explica cómo instalar el runtime del desarrollador, cómo configurar el cliente para usar la jerarquía de certificados (preproducción) de ISV y cómo configurar la detección de servicios en el cliente.
 
-1.  Copie el runtime de desarrollador, Ipcsecproc\_isv.dll, desde %MSIPCSDKDIR%\\bin\\x86 (para versiones de Windows de 32 bits) o %MSIPCSDKDIR\\bin\\x64 (para versiones de Windows de 64 bits) a C:\\Archivos de programa\\Active Directory Rights Management Services Client 2.1.
+1.  Copie Developer Runtime, Ipcsecproc\_isv.dll, desde %MSIPCSDKDIR%\\bin\\x86 (para versiones de Windows de 32 bits) o %MSIPCSDKDIR\\bin\\x64 (para versiones de Windows de 64 bits) en C:\\Archivos de programa\\Active Directory Rights Management Services Client 2.1.
 
-    **Importante**  Si ejecuta una aplicación de 32 bits en una versión de Windows de 64 bits, deberá copiar Ipcsecproc\_isv.dll desde %MSIPCSDKDIR%\\bin\\x86 a C:\\Archivos de programa (x86)\\Active Directory Rights Management Services Client 2.1.
+    **Importante**: Si ejecuta una aplicación de 32 bits en una versión de Windows de 64 bits, deberá copiar Ipcsecproc\_isv.dll desde %MSIPCSDKDIR%\\bin\\x86 en C:\\Archivos de programa(x86)\\Active Directory Rights Management Services Client 2.1.
 
      
 
@@ -129,6 +129,6 @@ Las instrucciones de este tema no son exhaustivas. Para información detallada s
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

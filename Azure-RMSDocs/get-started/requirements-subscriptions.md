@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/25/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
@@ -86,17 +86,18 @@ Una excepción a la pérdida de acceso tras la expiración es si su organizació
 ## Suscripción a Enterprise Mobility Suite
 [Prueba gratuita de 30 días](http://go.microsoft.com/fwlink/?LinkId=615385)
 
-Esta suscripción está diseñada para organizaciones que quieran usar una combinación de Azure Active Directory Premium, Windows Intune y Azure Rights Management. La compatibilidad para el uso de Azure Rights Management con Office es la misma que al usar la suscripción a Azure Rights Management Premium. 
-Para más información sobre la suscripción a Enterprise Mobility Suite, consulte la [Introducción a la movilidad empresarial Microsoft](http://go.microsoft.com/fwlink/?LinkId=615386).
+Esta suscripción está diseñada para organizaciones que quieran usar una combinación de Azure Active Directory Premium, Windows Intune y Azure Rights Management. La compatibilidad para el uso de Azure Rights Management con Office es la misma que al usar la suscripción a Azure Rights Management Premium. Para más información sobre la suscripción a Enterprise Mobility Suite, consulte la [Introducción a la movilidad empresarial Microsoft](http://go.microsoft.com/fwlink/?LinkId=615386).
 
 ## Suscripción a RMS para usuarios
 Esta suscripción está diseñada para usuarios de una organización que no hayan implementado Azure RMS o AD RMS. Permite que estas personas lean contenido que se ha protegido por una organización que usa Azure RMS, a la vez que pueden proteger su propio contenido.
 
-Para más información, consulte [RMS para usuarios y Azure Rights Management](../understand-explore/rms-for-individuals.md).
+Es posible que la vea en el portal de administración de Office 365 como **Rights Management Adhoc** y asignada automáticamente a los usuarios. No asigne manualmente esta licencia a los usuarios ni la use para administrar Azure RMS para la organización. 
+
+Para obtener más información, consulte [RMS for individuals and Azure Rights Management](../understand-explore/rms-for-individuals.md) (RMS para usuarios y Azure Rights Management).
 
 ## Pasos siguientes
 Para buscar otros requisitos, consulte [Requisitos de Azure Rights Management](requirements-azure-rms.md).
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO5-->
 
 

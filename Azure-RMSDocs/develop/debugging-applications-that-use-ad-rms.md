@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** El contenido de este SDK no es actual. Durante un breve periodo podrá encontrar la [versión actual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) de la documentación en MSDN. **
 # Depuración de una aplicación con derechos habilitados
 
 En el siguiente tema se muestra cómo depurar la aplicación y utilizar el registro de eventos de Windows.
@@ -46,7 +46,7 @@ HKEY_LOCAL_MACHINE
 
 ### Registro de aplicaciones mediante el registro de eventos de Windows
 
-El nombre del registro de eventos es "Microsoft-RMS-MSIPC/Debug". Esto significa que en el Visor de eventos de Windows, el registro aparece como "Registros de aplicaciones y servicios\\Microsoft\\RMS\\MSIPC\\Debug".
+El nombre del registro de eventos es "Microsoft-RMS-MSIPC/Debug". Esto significa que, en el Visor de eventos de Windows, el registro aparece como "Registros de aplicaciones y servicios\\Microsoft\\RMS\\MSIPC\\Debug".
 
 **Nota:** El registro está habilitado de forma predeterminada y establecido en el nivel de detalle 3.
 
@@ -81,6 +81,6 @@ Por ejemplo, el siguiente comando habilitará el registro de eventos de MSIPC y 
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

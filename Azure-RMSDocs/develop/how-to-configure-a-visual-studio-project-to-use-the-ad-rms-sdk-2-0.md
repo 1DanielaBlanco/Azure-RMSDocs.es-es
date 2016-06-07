@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** El contenido de este SDK no es actual. Durante un breve periodo podrá encontrar la [versión actual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) de la documentación en MSDN. **
 # Configuración de Visual Studio
 
 Este tema contiene instrucciones sobre cómo configurar un proyecto de Visual Studio para usar Rights Management Services SDK 2.1.
@@ -42,7 +42,7 @@ Estas instrucciones se aplican a la creación de una aplicación nativa de 32 bi
 
 1.  Agregue el directorio de inclusión de RMS SDK 2.1 a su proyecto de Visual Studio 2010.
 
-    En **Propiedades de configuración** seleccione **Directorios de VC ++** y agregue el directorio de inclusión de RMS SDK 2.1, **$(MSIPCSDKDIR)\\inc**, al campo **Directorios de inclusión**.
+    En **Propiedades de configuración**, seleccione **Directorios de VC ++** y agregue el directorio de inclusión de RMS SDK 2.1, **$(MSIPCSDKDIR)\\inc**, al campo **Directorios de inclusión**.
 
     ![Campo Directorios de inclusión de Propiedades de configuración](../media/include_directories.png)
 
@@ -50,14 +50,14 @@ Estas instrucciones se aplican a la creación de una aplicación nativa de 32 bi
 
     En **Propiedades de configuración** seleccione **Directorios de VC ++** y agregue el directorio de bibliotecas de RMS SDK 2.1 al campo **Directorios de bibliotecas**.
 
-    -   Para Win32, utilice **$(MSIPCSDKDIR)\\lib**
-    -   Para x64, utilice **$(MSIPCSDKDIR)\\lib\\x64**
+    -   Para Win32, use **$(MSIPCSDKDIR)\\lib**
+    -   Para x64, use **$(MSIPCSDKDIR)\\lib\\x64**
 
     ![Campo Directorios de bibliotecas de Propiedades de configuración](../media/library_directories.png)
 
 3.  Agregue los archivos de biblioteca de RMS SDK 2.1 como dependencias de Visual Studio 2010.
 
-    Bajo **Enlazador**, seleccione **Entrada** y agregue los archivos de biblioteca de RMS SDK 2.1, **Msipc.lib** y **Msipc\_s.lib**, al campo **Dependencias adicionales**.
+    En **Enlazador**, seleccione **Entrada** y agregue los archivos de biblioteca de RMS SDK 2.1, **Msipc.lib** y **Msipc\_s.lib**, al campo **Dependencias adicionales**.
 
     ![Campo Dependencias de biblioteca del enlazador](../media/additional_dependencies.png)
 
@@ -85,6 +85,6 @@ Estas instrucciones se aplican a la creación de una aplicación nativa de 32 bi
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 
