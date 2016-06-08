@@ -158,9 +158,6 @@
   "9a13a1e5a9102bd968d7dbd326f370c679952798": [
     "Azure-RMSDocs\\develop\\understanding-usage-restrictions.md"
   ],
-  "6e9dd25fe9c6173dfa93570e511c47d5d9fa3c1d": [
-    "Azure-RMSDocs\\develop\\understanding-usage-restrictions.md"
-  ],
   "3227bba7b43e6200ed9214d22ce265f02b8d216e": [
     "Azure-RMSDocs\\develop\\usage-restriction-reference.md"
   ],
@@ -179,13 +176,7 @@
   "0d787b4eb345d1fead6024613b99c808a376750c": [
     "Azure-RMSDocs\\develop\\add-explicit-owner-rights.md"
   ],
-  "8c186a71befdce2d9671d32aabdeb8d1fe57ee35": [
-    "Azure-RMSDocs\\develop\\add-explicit-owner-rights.md"
-  ],
   "c54f32c21d311673682e9cf0b79cd10f16c4cb45": [
-    "Azure-RMSDocs\\develop\\ad-rms-client.md"
-  ],
-  "2560325d140ebc4cd06db318c4e0676ee8151b8f": [
     "Azure-RMSDocs\\develop\\ad-rms-client.md"
   ],
   "e8502a0f0ac12a738e7113007ae2477c4ec8f119": [
@@ -236,16 +227,10 @@
   "fc94156c377720e44ad3d24f30b55fd921c635f0": [
     "Azure-RMSDocs\\develop\\create-your-first-rights-aware-application.md"
   ],
-  "ee4cc0f741921f6e4bfcc216281cc6b63deb4ad1": [
-    "Azure-RMSDocs\\develop\\create-your-first-rights-aware-application.md"
-  ],
   "6b4a5bbc88aa695abc7c0b94120be3a797a2f69f": [
     "Azure-RMSDocs\\develop\\debugging-applications-that-use-ad-rms.md"
   ],
   "f4ef711085d2a029ab951b30b4929358e774028d": [
-    "Azure-RMSDocs\\develop\\deploying-your-application.md"
-  ],
-  "96d04f5003e04f3e8346579ef4251329fee51f87": [
     "Azure-RMSDocs\\develop\\deploying-your-application.md"
   ],
   "d3a8f5f2a97920f35e261bf6f444a1ecce4c5302": [
@@ -269,9 +254,6 @@
   "e75ec6c04afd171552697f79deb33ad2cfe2c4e1": [
     "Azure-RMSDocs\\develop\\how-to-build-your-first-application.md"
   ],
-  "ee9285bbcd7c26b2f635ab78d084183614c6b1d1": [
-    "Azure-RMSDocs\\develop\\how-to-build-your-first-application.md"
-  ],
   "9af22d5ab941c79c14caeaa3aa0ff37d39ff4934": [
     "Azure-RMSDocs\\develop\\how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md"
   ],
@@ -287,9 +269,6 @@
   "3d3c24401249ddaf7522468e3d24abac66773276": [
     "Azure-RMSDocs\\develop\\how-to-install-and-configure-an-rms-server.md"
   ],
-  "5b55c9e6e1c68eb5ad14a701dd1a139d1b4328ff": [
-    "Azure-RMSDocs\\develop\\how-to-install-and-configure-an-rms-server.md"
-  ],
   "dcd7a81c02c49b459a0aee97f61a909d403171fa": [
     "Azure-RMSDocs\\develop\\how-to-set-up-the-pre-production-development-environment.md"
   ],
@@ -300,9 +279,6 @@
     "Azure-RMSDocs\\develop\\how-to-use-document-tracking.md"
   ],
   "25eb5342687a44d5f80ed8a06d83f1c5cfc1e24e": [
-    "Azure-RMSDocs\\develop\\how-to-use-file-api-with-aadrm-cloud.md"
-  ],
-  "e9c975ca055f84ef20f0cc7a32ba11bb901cc984": [
     "Azure-RMSDocs\\develop\\how-to-use-file-api-with-aadrm-cloud.md"
   ],
   "32c942a71b1858bb76e3179d7f910e857a9b7601": [
@@ -339,9 +315,6 @@
     "Azure-RMSDocs\\develop\\release-notes.md"
   ],
   "f505c23fd1be01acbc7214eef13dc87d2eb16652": [
-    "Azure-RMSDocs\\develop\\running-your-first-application.md"
-  ],
-  "8acf3326db854683ee22b91c92e7cae2b95f5e95": [
     "Azure-RMSDocs\\develop\\running-your-first-application.md"
   ],
   "9c1eb2122e2237a895ed931561ead754c3287244": [
