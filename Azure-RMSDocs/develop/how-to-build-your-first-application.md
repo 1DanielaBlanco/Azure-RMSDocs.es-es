@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** El contenido de este SDK no es actual. Durante un breve periodo podrá encontrar la [versión actual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) de la documentación en MSDN. **
 # IPCHelloWorld: una aplicación de ejemplo
 
 Este tema contiene instrucciones para crear una aplicación con derechos habilitados.
@@ -71,7 +71,7 @@ El fragmento de código siguiente enumera las plantillas de RMS disponibles en e
 
 
 
-Mediante esta llamada se recuperan las plantillas de RMS que están instaladas en el servidor predeterminado. Los resultados se cargan en la estructura [**IPC\_TIL**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize), a la que apunta la variable *pcTil*, y luego se muestran las plantillas
+Mediante esta llamada se recuperan las plantillas de RMS que están instaladas en el servidor predeterminado y los resultados se cargan en la estructura [**IPC\_TIL**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize), a la que apunta la variable *pcTil*. Luego se muestran las plantillas.
 
 
 
@@ -222,6 +222,6 @@ Antes de acabar, hay que liberar todos los recursos asignados.
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

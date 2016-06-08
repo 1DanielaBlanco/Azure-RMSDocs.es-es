@@ -23,8 +23,8 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
-# Probar la aplicación con derechos habilitados
+** El contenido de este SDK no es actual. Durante un breve periodo podrá encontrar la [versión actual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) de la documentación en MSDN. **
+# Prueba de la aplicación con derechos habilitados
 
 En este tema se describen los pasos necesarios para probar la aplicación con derechos habilitados de Rights Management Services SDK 2.1.
 
@@ -55,7 +55,7 @@ Cree y compile una aplicación con derechos habilitados. Consulte la sección de
 
 Para poder ejecutar la aplicación, debe generar un manifiesto de aplicación.
 
-**Nota:** si la aplicación usa el modo de API de servidor (**IPC\_API\_MODE\_SERVER**), el manifiesto de aplicación no será necesario. Podrá probar la aplicación en un servidor de AD RMS de producción y no será necesario obtener una licencia de producción cuando pase al entorno de producción. Para más información sobre las aplicaciones de modo de servidor, vea [Application types](application-types.md) (Tipos de aplicación).
+**Nota:** Si la aplicación usa el modo de API de servidor (**IPC\_API\_MODE\_SERVER**), el manifiesto de aplicación no será necesario. Podrá probar la aplicación en un servidor de AD RMS de producción y no será necesario obtener una licencia de producción cuando pase al entorno de producción. Para más información sobre las aplicaciones de modo de servidor, vea [Application types](application-types.md) (Tipos de aplicación).
 
  
 
@@ -81,7 +81,7 @@ Para generar el manifiesto de aplicación con la cadena de certificados de prepr
 
 2.  En la carpeta de la aplicación, cambie el nombre del archivo de configuración del manifiesto (YourAppName.isv.mcf) por el nombre de la aplicación con la extensión de nombre de archivo .mcf anexada. Por ejemplo, si la aplicación se llama MyApp.exe, cambie el nombre YourAppName.isv.mcf por MyApp.exe.mcf.
 
-3.  Use un editor de texto para agregar la aplicación al archivo de configuración del manifiesto. Para ello, reemplace el texto de marcador &lt;nombreDeSuAplicación&gt;.exe en la lista de módulos del archivo .mcf por el nombre de la aplicación (por ejemplo, MyApp.exe).
+3.  Use un editor de texto para agregar la aplicación al archivo de configuración del manifiesto. Para ello, reemplace el texto de marcador &lt;nombreDeLaAplicación&gt;.exe en la lista de módulos del archivo .mcf por el nombre de la aplicación (por ejemplo, MyApp.exe).
 
     El proceso de firma generará un error si el archivo .mcf se usa sin modificarlo.
 
@@ -123,6 +123,6 @@ Puede ejecutar la aplicación desde cualquier directorio, pero el manifiesto de 
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

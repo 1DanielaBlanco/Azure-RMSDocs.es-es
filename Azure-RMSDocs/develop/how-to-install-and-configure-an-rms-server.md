@@ -23,8 +23,8 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
-# Instalar y configurar el servidor
+** El contenido de este SDK no es actual. Durante un breve periodo podrá encontrar la [versión actual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) de la documentación en MSDN. **
+# Instalación y configuración del servidor
 
 En este tema se explica cómo instalar y configurar un servidor RMS para probar la aplicación con derechos habilitados.
 
@@ -102,6 +102,6 @@ Los siguientes pasos le guiarán en la configuración del servidor de RMS e incl
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 
