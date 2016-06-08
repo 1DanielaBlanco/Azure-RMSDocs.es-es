@@ -1,26 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [Azure-RMSDocs\develop\how-to-enable-email-notification.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ac6afddc2b39d6209ef1b89d8d84011942cdba5a/Azure-RMSDocs/develop/how-to-enable-email-notification.md) | InSyncHandedBackSuccess | [Details](#a81578b3d4c5ed3a0be4ab4bcd7b0f84b7f0da1c72)
 
 ## Item Details
-##### <a name='a81578b3d4c5ed3a0be4ab4bcd7b0f84b7f0da1c72'></a> Source: [Azure-RMSDocs\develop\how-to-enable-email-notification.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ac6afddc2b39d6209ef1b89d8d84011942cdba5a/Azure-RMSDocs/develop/how-to-enable-email-notification.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [Azure-RMSDocs\develop\how-to-enable-email-notification.md](https://github.com/Microsoft/Azure-RMSDocs-pr.es-es/blob/4152a50e27c2fc770e50bfaca3896e9f161311b0/Azure-RMSDocs/develop/how-to-enable-email-notification.md)
-* Handoff File: [how-to-enable-email-notification.c2f4d3a38ff7c52da92beba7acda36c3bbc88d24.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/8507aa8509b5489e4a39f140dff57988dbbe9572/ol-handoff/Microsoft/Azure-RMSDocs-pr.es-es/master/how-to-enable-email-notification.c2f4d3a38ff7c52da92beba7acda36c3bbc88d24.es-es.xlf)
-* Handoff Datetime: 2016-06-02 02:14:10
-* Handoff Reason: Include
-* Archive File: [how-to-enable-email-notification.c2f4d3a38ff7c52da92beba7acda36c3bbc88d24.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/2856719029a682a6ff0321124880184134579e1e/ol-handoff/Microsoft/Azure-RMSDocs-pr.es-es/master/archive/how-to-enable-email-notification.c2f4d3a38ff7c52da92beba7acda36c3bbc88d24.es-es.xlf)
-* Archive Datetime: 2016-06-02 03:14:24
-* Handback File: [how-to-enable-email-notification.c2f4d3a38ff7c52da92beba7acda36c3bbc88d24.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/abd59344b744bd85bc6a6c8114346aea29c1c186/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/how-to-enable-email-notification.c2f4d3a38ff7c52da92beba7acda36c3bbc88d24.es-es.xlf)
-* Handback Datetime: 2016-06-08 08:33:08
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
