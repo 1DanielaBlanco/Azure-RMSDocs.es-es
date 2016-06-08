@@ -1,6 +1,6 @@
 {
   "LastProcessedCommit": "0e4ab8853d889d8a03cd5220ef966d9f843d2aa5",
-  "LastTranslatedCommit": "c8f467effd93cad8fb605487d088d15def479d74",
+  "LastTranslatedCommit": "4152a50e27c2fc770e50bfaca3896e9f161311b0",
   "Items": {
     "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a": {
       "FileHash": "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a",
@@ -72476,14 +72476,14 @@
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
-      "TargetFileCommit": null,
-      "TargetFilePath": null,
-      "HandbackFilePath": null,
-      "HandbackFileCommit": null,
-      "HandbackDateTime": "0001-01-01T00:00:00",
+      "TargetFileCommit": "4152a50e27c2fc770e50bfaca3896e9f161311b0",
+      "TargetFilePath": "Azure-RMSDocs\\develop\\how-to-enable-email-notification.md",
+      "HandbackFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.es-es\\master\\how-to-enable-email-notification.c2f4d3a38ff7c52da92beba7acda36c3bbc88d24.es-es.xlf",
+      "HandbackFileCommit": "abd59344b744bd85bc6a6c8114346aea29c1c186",
+      "HandbackDateTime": "2016-06-08T08:33:08.7480264Z",
       "HandbackException": null,
       "HandbackFailureTimes": 0,
-      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "UpdatedDateTime": "2016-06-08T08:33:08.7480264Z",
       "ArchiveFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.es-es\\master\\archive\\how-to-enable-email-notification.c2f4d3a38ff7c52da92beba7acda36c3bbc88d24.es-es.xlf",
       "ArchiveFileCommit": "2856719029a682a6ff0321124880184134579e1e",
       "ArchiveFileDateTime": "2016-06-02T03:14:24.7912687Z",
