@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** El contenido de este SDK no es actual. Durante un breve periodo podrá encontrar la [versión actual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) de la documentación en MSDN. **
 # Condiciones de error comunes y soluciones
 Este tema incluye los mensajes de error más comunes que pueden surgir al usar las herramientas de desarrollador de Rights Management Services SDK 2.1. También proporciona una acción recomendada para corregir el error, si procede.
 
@@ -34,7 +34,7 @@ Este tema incluye los mensajes de error más comunes que pueden surgir al usar l
 ## Error y acción ##
 La lista siguiente contiene una lista de constantes de error, su descripción asociada y una acción recomendada para tratar la condición de error.
 
-**ERROR** - *IPCERROR_DEBUGGER_DETECTED*: se ha detectado un depurador por RMS SDK 2.1
+**ERROR** - *IPCERROR_DEBUGGER_DETECTED*: RMS SDK 2.1 detectó un depurador
 
 **ACCIÓN**: la versión para programadores de RMS SDK 2.1 no comprueba la presencia de un depurador. Si es posible, depure la aplicación con esta versión de RMS SDK 2.1.
 Si debe depurar la versión de producción de RMS SDK 2.1, siga las instrucciones que se presentan a continuación.
@@ -45,7 +45,7 @@ Algunas funciones de RMS SDK 2.1 están diseñadas para producir un error en un 
 - [IpcGetTemplateIssuerList](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplateissuerlist)
 
 Para depurar código con base en estas llamadas de función, debe interrumpir el proceso y adjuntar un depurador una vez que se hayan completado dichas llamadas de función. Uno de los métodos para ello es usar una instrucción assert para interrumpir el depurador. La macro ASSERTE se incluye en el encabezado *Crtdbg.h*.
-Para más información sobre \_ASSERTE, consulte [_ASSERT, _ASSERTE (Macros)](https://msdn.microsoft.com/en-us/library/ezb1wyez.aspx).
+Para obtener más información sobre \_ASSERTE, consulte [\_ASSERT, \_ASSERTE (Macros)](https://msdn.microsoft.com/en-us/library/ezb1wyez.aspx)
 
 **ERROR** - *IPCERROR_BROKEN_CERT_CHAIN*: la cadena de certificados no coincide.
 
@@ -68,12 +68,12 @@ Estas son las claves de firma y sus valores asociados (jerarquía **DWORD**):
 * [IpcGetKey](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgetkey)
 * [IpcGetTemplateList](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist)
 * [IpcGetTemplateIssuerList](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplateissuerlist)
-* [_ASSERT, _ASSERTE (Macros)](https://msdn.microsoft.com/en-us/library/ezb1wyez.aspx)
+* [\_ASSERT, \_ASSERTE (Macros)](https://msdn.microsoft.com/en-us/library/ezb1wyez.aspx)
  
 
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 
