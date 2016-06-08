@@ -1,26 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [Azure-RMSDocs\develop\common-error-conditions-and-solutions.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ac6afddc2b39d6209ef1b89d8d84011942cdba5a/Azure-RMSDocs/develop/common-error-conditions-and-solutions.md) | InSyncHandedBackSuccess | [Details](#b20969360029c616360f525bacf5f74d32ba450955)
 
 ## Item Details
-##### <a name='b20969360029c616360f525bacf5f74d32ba450955'></a> Source: [Azure-RMSDocs\develop\common-error-conditions-and-solutions.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ac6afddc2b39d6209ef1b89d8d84011942cdba5a/Azure-RMSDocs/develop/common-error-conditions-and-solutions.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [Azure-RMSDocs\develop\common-error-conditions-and-solutions.md](https://github.com/Microsoft/Azure-RMSDocs-pr.es-es/blob/9cd3c9e0d6c3ac484c405f8590eba027bf2037c5/Azure-RMSDocs/develop/common-error-conditions-and-solutions.md)
-* Handoff File: [common-error-conditions-and-solutions.55a191b04631a3ac0ec1560b1ee0e5af723d6773.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/8507aa8509b5489e4a39f140dff57988dbbe9572/ol-handoff/Microsoft/Azure-RMSDocs-pr.es-es/master/common-error-conditions-and-solutions.55a191b04631a3ac0ec1560b1ee0e5af723d6773.es-es.xlf)
-* Handoff Datetime: 2016-06-02 02:14:10
-* Handoff Reason: Include
-* Archive File: [common-error-conditions-and-solutions.55a191b04631a3ac0ec1560b1ee0e5af723d6773.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/2856719029a682a6ff0321124880184134579e1e/ol-handoff/Microsoft/Azure-RMSDocs-pr.es-es/master/archive/common-error-conditions-and-solutions.55a191b04631a3ac0ec1560b1ee0e5af723d6773.es-es.xlf)
-* Archive Datetime: 2016-06-02 03:14:24
-* Handback File: [common-error-conditions-and-solutions.55a191b04631a3ac0ec1560b1ee0e5af723d6773.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/ec81103303fa7c155aa25619cac840204c244681/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/common-error-conditions-and-solutions.55a191b04631a3ac0ec1560b1ee0e5af723d6773.es-es.xlf)
-* Handback Datetime: 2016-06-08 10:07:25
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
