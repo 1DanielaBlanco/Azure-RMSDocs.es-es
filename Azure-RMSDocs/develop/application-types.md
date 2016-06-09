@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-** El contenido de este SDK no es actual. Durante un breve periodo podrá encontrar la [versión actual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) de la documentación en MSDN. **
+
 # Tipos de aplicación
 
 
@@ -36,7 +36,6 @@ Los siguientes tipos de aplicación son compatibles actualmente con Rights Manag
 Una aplicación sencilla podría ser una herramienta de línea de comandos creada para cifrar un archivo proporcionado. Para ver un ejemplo de una aplicación con derechos habilitados sencilla, consulte [IPCHelloWorld - an example application](how-to-build-your-first-application.md) (IPCHelloWorld: una aplicación de ejemplo).
 
 ### Aplicaciones en modo servidor
-
 
 El *modo servidor* está pensado para aplicaciones no interactivas que consumen, protegen o procesan contenido con protección de RMS. Un ejemplo sería una aplicación de *prevención de pérdida de datos* que se ejecute como servicio en un servidor de archivos y proteja documentos confidenciales. Consulte [IpcDlp sample](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d) (ejemplo IpcDlp) para ver un ejemplo de este tipo de aplicación.
 
@@ -60,19 +59,12 @@ Para más información sobre la protección de su aplicación, consulte [Underst
 
 ## Temas relacionados
 
-* [Conceptos para desarrolladores](ad-rms-concepts-nav.md)
 * [Ejemplo IpcDlp](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d)
 * [IPCHelloWorld: una aplicación de ejemplo](how-to-build-your-first-application.md)
 * [Establecimiento del modo de seguridad de API](setting-the-api-security-mode-api-mode.md)
 * [Descripción de las restricciones de uso](understanding-usage-restrictions.md)
- 
-
- 
 
 
-
-
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

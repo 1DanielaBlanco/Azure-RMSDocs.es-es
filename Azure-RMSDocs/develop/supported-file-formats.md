@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-** El contenido de este SDK no es actual. Durante un breve periodo podrá encontrar la [versión actual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) de la documentación en MSDN. **
+
 # Formatos de archivo compatibles
 
 La API de archivo admite formatos nativo y Pfile.
@@ -46,9 +46,6 @@ Los administradores pueden establecer claves del Registro para configurar si los
  
 
 
-
-
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 
