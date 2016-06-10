@@ -1,11 +1,26 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [Azure-RMSDocs\deploy-use\configure-office-apps.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/deploy-use/configure-office-apps.md) | InSyncHandedBackSuccess | [Details](#607de5e4699d654a4b7895bacde8f18a9707f8a112)
 
 ## Item Details
+##### <a name='607de5e4699d654a4b7895bacde8f18a9707f8a112'></a> Source: [Azure-RMSDocs\deploy-use\configure-office-apps.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/deploy-use/configure-office-apps.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [Azure-RMSDocs\deploy-use\configure-office-apps.md](https://github.com/Microsoft/Azure-RMSDocs-pr.es-es/blob/c1eea5ba43252dc97465864ebc1be838ac97a078/Azure-RMSDocs/deploy-use/configure-office-apps.md)
+* Handoff File: [configure-office-apps.7d4d9ecf4a780b1fbfb3e7d639c2ea1244fbefff.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/b456d2300d147ad2c620d7b6bbbc8cf42f1e75d0/ol-handoff/Microsoft/Azure-RMSDocs-pr.es-es/master/configure-office-apps.7d4d9ecf4a780b1fbfb3e7d639c2ea1244fbefff.es-es.xlf)
+* Handoff Datetime: 2016-04-27 21:26:51
+* Handoff Reason: Include
+* Archive File: [configure-office-apps.7d4d9ecf4a780b1fbfb3e7d639c2ea1244fbefff.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/dc307d2c98696cb68eb91632c96c6adb18913c9c/ol-handoff/Microsoft/Azure-RMSDocs-pr.es-es/master/archive/configure-office-apps.7d4d9ecf4a780b1fbfb3e7d639c2ea1244fbefff.es-es.xlf)
+* Archive Datetime: 2016-05-21 18:39:12
+* Handback File: [configure-office-apps.7d4d9ecf4a780b1fbfb3e7d639c2ea1244fbefff.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/609c4a1c5231dd88415832a859bbb7037e34cdd3/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/configure-office-apps.7d4d9ecf4a780b1fbfb3e7d639c2ea1244fbefff.es-es.xlf)
+* Handback Datetime: 2016-06-10 20:18:53
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
