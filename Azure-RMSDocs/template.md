@@ -172,7 +172,7 @@ Este es un ejemplo de `in-line code`.
 
 ## Blockquotes
 
-> The drought had lasted now for ten million years, and the reign of the terrible lizards had long since ended. Here on the Equator, in the continent which would one day be known as Africa, the battle for existence had reached a new climax of ferocity, and the victor was not yet in sight. In this barren and desiccated land, only the small or the swift or the fierce could flourish, or even hope to survive.
+> La sequía dura desde hace diez millones de años y el reino de los terribles lagartos había terminado hace ya mucho. Aquí en el ecuador, en el continente que un día se conocería como África, la batalla por la existencia había alcanzado un nuevo clímax de ferocidad y aún no se había definido el vencedor. En esta tierra seca y estéril, solo el pequeño, el rápido o el fiero podría salir adelante o incluso esperar sobrevivir.
 
 ## Imágenes
 
