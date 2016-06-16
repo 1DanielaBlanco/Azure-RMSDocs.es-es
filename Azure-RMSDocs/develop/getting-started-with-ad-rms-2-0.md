@@ -23,25 +23,33 @@ ms.suite: ems
 #ms.custom:
 
 ---
-** El contenido de este SDK no es actual. Durante un breve periodo podrá encontrar la [versión actual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) de la documentación en MSDN. **
 # Introducción
 
-La plataforma Rights Management Services SDK 2.1 permite a los desarrolladores crear aplicaciones que aprovechan la protección de la información de RMS. La plataforma controla prácticas de seguridad complejas como la administración de claves, el procesamiento de cifrado y descifrado, y ofrece una API simplificada para el desarrollo sencillo de aplicaciones.
+La plataforma Rights Management Services SDK 2.1 permite a los desarrolladores crear aplicaciones que aprovechan la protección de la información de RMS a través de un servidor RMS o Azure RMS. La plataforma controla prácticas de seguridad complejas como la administración de claves, el procesamiento de cifrado y descifrado, y ofrece una API simplificada para el desarrollo sencillo de aplicaciones.
 
 ## Introducción a RMS SDK 2.1
 
-Lea estas secciones (abajo):
+Este tema le guiará a través del proceso de configuración y ejecución de su aplicación con derechos habilitados en un entorno de prueba. Los temas siguientes describen cómo configurar el entorno de desarrollo y se muestran de forma que sugieren un orden en el que podría realizar las tareas.
 
--   ¿Por qué usar RMS SDK 2.1 para proteger el contenido?
--   Principios básicos
+## En esta sección
+
+| Tema | Descripción |
+|-------|-------------|
+| [Notas de la versión](release-notes-rtm.md) | Este tema contiene información importante sobre esta versión y versiones anteriores de RMS SDK 2.1.|
+| [Instalar el SDK](install-the-rms-sdk.md) | Este tema le guiará en el proceso de instalación de las herramientas para desarrolladores.|
+| [Configurar Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md) | Este tema contiene instrucciones sobre cómo configurar un proyecto de Visual Studio para usar RMS SDK 2.1.|
+| [Desarrollo de la aplicación](developing-your-application.md) | Este tema contiene instrucciones esenciales sobre los principales aspectos de una aplicación habilitada para RMS y puede servir como base para el desarrollo de su propia aplicación.|
+| [Prueba de la aplicación](running-your-first-application.md) |Este tema contiene instrucciones sobre cómo configurar la prueba de la aplicación.|
+| [Implementación en el entorno de producción](deploying-your-application.md) |En este tema se describen las opciones de implementación de la aplicación con derechos habilitados.|
+
+Cuando haya empezado, revise algunos de nuestros otros [ejemplos de RMS](samples.md). Después, manténgase informado a través de nuestro [Rincón del desarrollador de RMS](http://blogs.msdn.com/b/rms/).
+
 
 Pruebe a utilizar RMS SDK 2.1 siguiendo las guías de estos temas:
 
--   [Instalar el SDK](create-your-first-rights-aware-application.md)
+-   [Instalar el SDK](install-the-rms-sdk.md)
 -   [Prueba de la aplicación con derechos habilitados](running-your-first-application.md)
 -   [IPCHelloWorld: una aplicación de ejemplo](how-to-build-your-first-application.md)
-
-Cuando haya empezado, revise algunos de nuestros otros [ejemplos de RMS](samples.md). Después, manténgase informado a través de nuestro [Rincón del desarrollador de RMS](http://blogs.msdn.com/b/rms/).
 
 ### ¿Por qué usar RMS SDK 2.1 para proteger el contenido?
 
@@ -65,19 +73,15 @@ El RMS SDK 2.1 es compatible con diversas plataformas de cliente y servidor impo
 
 * [Ejemplos de AD RMS](samples.md)
 * [Rincón del desarrollador de AD RMS](http://blogs.msdn.com/b/rms/)
-* [Instalar el SDK](create-your-first-rights-aware-application.md)
+* [Instalar el SDK](install-the-rms-sdk.md)
 * [IPCHelloWorld: una aplicación de ejemplo](how-to-build-your-first-application.md)
 * [Información general](ad-rms-overview.md)
 * [Plataformas compatibles](supported-platforms.md)
-* [Prueba de la aplicación con derechos habilitados](running-your-first-application.md)
  
 
  
 
 
-
-
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 
