@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/03/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -54,7 +54,7 @@ Puede exportar su configuración de Azure RMS y su clave de inquilino siguiendo 
 
 ### Paso 1: Iniciar exportación
 
--   Para ello, póngase en contacto con el Soporte de servicio al cliente (CSS) de Microsoft. Debe probar que es un administrador para su inquilino de Azure RMS.
+-   Para ello, póngase en contacto con el Soporte de servicio al cliente (CSS) de Microsoft para abrir un **caso de soporte técnico de Azure Rights Management con una solicitud para una exportación de claves de Azure RMS**. Debe demostrar que es un administrador del inquilino de Azure RMS y comprender que este proceso tarda varios días en confirmarse. Se aplican cargos de soporte técnico estándar; la exportación de la clave de inquilino no es un servicio de soporte técnico gratuito.
 
 ### Paso 2: Esperar comprobación
 
@@ -67,7 +67,7 @@ Puede exportar su configuración de Azure RMS y su clave de inquilino siguiendo 
     ```
     AadrmTpd.exe -createkey
     ```
-    Esto genera un plan de claves RSA y guarda las mitades públicas y privadas como archivos en la carpeta actual. Por ejemplo: **PublicKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt** y **PrivateKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt**..
+    Esto genera un plan de claves RSA y guarda las mitades públicas y privadas como archivos en la carpeta actual. Por ejemplo: **PublicKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt** y **PrivateKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt**.
 
     Responda al correo electrónico de CSS, adjuntando el archivo que tiene un nombre que comienza por **PublicKey**. CSS le enviará un archivo TPD como archivo .xml que está cifrado con su clave de RSA. Copie este archivo en la misma carpeta en la que ejecutó la herramienta AadrmTpd originalmente y ejecute la herramienta de nuevo, con el archivo que comienza por **PrivateKey** y el archivo de CSS. Por ejemplo:
 
@@ -86,7 +86,7 @@ Puede exportar su configuración de Azure RMS y su clave de inquilino siguiendo 
 
 -   Cuando haya recibido su clave de inquilino, manténgala a buen recaudo, ya que si alguien consigue acceso a ella, podrá descifrar todos los documentos que se hayan protegido con esa clave.
 
-    Si el motivo por el que desea exportar la clave de inquilino es porque no quiere usar más Azure RMS, como procedimiento recomendado, desactive en este momento su inquilino de RMS. No se demore en hacerlo después de recibir su clave de inquilino, ya que esta precaución le ayudará a minimizar las consecuencias si alguien que no debería tener su clave de inquilino consigue acceso a ella. Para obtener más instrucciones, consulte [Decommissioning and Deactivating Azure Rights Management](decommission-deactivate.md) (Retirada y desactivación de Azure Rights Management)..
+    Si el motivo por el que desea exportar la clave de inquilino es porque no quiere usar más Azure RMS, como procedimiento recomendado, desactive en este momento su inquilino de RMS. No se demore en hacerlo después de recibir su clave de inquilino, ya que esta precaución le ayudará a minimizar las consecuencias si alguien que no debería tener su clave de inquilino consigue acceso a ella. Para obtener más instrucciones, consulte [Retirada y desactivación de Azure Rights Management](decommission-deactivate.md).
 
 ## Responder a una infracción
 Ningún sistema de seguridad, por seguro que sea, está completo sin un proceso de respuesta a infracción. Puede que se haya robado o puesto en peligro su clave de inquilino. Aunque esté bien protegido, se pueden encontrar vulnerabilidades en la tecnología HSM de la generación actual o algoritmos y longitudes de clave actuales.
@@ -104,6 +104,6 @@ Si tiene una infracción, la mejor acción que usted o Microsoft puede llevar a 
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

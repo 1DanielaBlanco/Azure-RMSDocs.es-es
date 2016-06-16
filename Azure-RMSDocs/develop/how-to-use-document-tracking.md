@@ -1,75 +1,158 @@
 ---
-# required metadata
+# metadatos necesarios
 
-title: Procedimiento para&#58;usar el seguimiento de documentos | Azure RMS
-description: El uso de la característica de seguimiento de documentos requiere algunos conocimientos sencillos sobre la administración de los metadatos asociados y el registro en el servicio.
-keywords:
-author: bruceperlerms
-manager: mbaldwin
-ms.date: 04/28/2016
-ms.topic: article
-ms.prod: azure
-ms.service: rights-management
-ms.technology: techgroup-identity
-ms.assetid: 70E10936-7953-49B0-B0DC-A5E7C4772E60
-# optional metadata
+título: Habilitación de la revocación y el seguimiento de documentos | Azure RMS descripción: El uso de la característica de seguimiento de documentos requiere algunos conocimientos sencillos sobre la administración de los metadatos asociados y el registro en el servicio.
+palabras clave: autor: bruceperlerms administrador: mbaldwin ms.date: 28/04/2016 ms.topic: artículo ms.prod: azure ms.service: rights-management ms.technology: techgroup-identity ms.assetid: 70E10936-7953-49B0-B0DC-A5E7C4772E60
+# metadatos opcionales
 
 #ROBOTS:
-audience: developer
+destinatarios: desarrolladores
 #ms.devlang:
-ms.reviewer: shubhamp
-ms.suite: ems
+ms.reviewer: shubhamp ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
 ---
 
-# Uso del seguimiento de documentos
+# Habilitación de la revocación y el seguimiento de documentos
 
-El uso de la característica de seguimiento de documentos requiere algunos conocimientos sencillos sobre la administración de los metadatos asociados y el registro en el servicio.
+En este tema se abordan las instrucciones básicas para implementar el seguimiento de documentos, así como código de ejemplo para las actualizaciones de metadatos y para la creación de un botón **Hacer seguimiento de uso** para la aplicación.
 
-## Administración de metadatos de seguimiento de documentos
+## Pasos para implementar el seguimiento de documentos
 
-Cada uno de los sistemas operativos que admite el seguimiento de documentos tiene implementaciones similares. Puede tratarse como conjunto de propiedades que representan los metadatos, un nuevo parámetro agregado a los métodos de creación de directiva de usuario y un método para registrar la directiva que se va a seguir con el servicio de seguimiento de documentos.
+Los pasos 1 y 2 permiten que se realice un seguimiento del documento. El paso 3 permite que los usuarios de la aplicación lleguen al sitio de seguimiento de documentos para realizar un seguimiento de los documentos protegidos y revocarlos.
+
+1. Incorporación de metadatos de seguimiento de documentos
+2. Registro del documento con el servicio de RMS
+3. Incorporación del botón Hacer seguimiento de uso a la aplicación
+
+A continuación se indican los detalles de implementación de estos pasos.
+
+## 1. Incorporación de metadatos de seguimiento de documentos
+
+El seguimiento de documentos es una característica del sistema Rights Management. Al agregar metadatos específicos durante el proceso de protección de documentos, se puede registrar un documento con el seguimiento de portal de servicio de seguimiento que ofrece varias opciones de seguimiento.
+
+Use estas API para agregar o actualizar una licencia de contenido con metadatos de seguimiento de documentos.
+
 
 Funcionalmente, solo las propiedades **content name** y **notification type** son necesarias para el seguimiento de documentos.
 
-La secuencia de pasos que se va a utilizar para configurar el seguimiento de documentos para una parte determinada del contenido es:
 
--   Cree un objeto **license metadata**.
+- [IpcCreateLicenseMetadataHandle](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensemetadatahandle)
+- [IpcSetLicenseMetadataProperty](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicensemetadataproperty)
 
-    Consulte [**LicenseMetadata**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_licensemetadata_interface_java) o [**MSLicenseMetadata**](/rights-management/sdk/4.2/api/iOS/mslicensemetadata#msipcthin2_mslicensemetadata_class_objc) para más información.
+  Se espera que establezca todas las propiedades de metadatos. Aquí están, mostradas por tipo.
 
--   Establezca las propiedades **content name** y **notification type**. Estas son las únicas propiedades necesarias.
+  Para obtener más información, consulte [License metadata property types](/rights-management/sdk/2.1/api/win/constants#msipc_license_metadata_property_types) (Tipos de propiedades de metadatos de licencias).
 
-    Para más información, consulte los métodos de acceso de la propiedad para la clase de metadatos de licencia apropiada de la plataforma, ya sea [**LicenseMetadata**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_licensemetadata_interface_java) o [**MSLicenseMetadata**](/rights-management/sdk/4.2/api/iOS/mslicensemetadata#msipcthin2_mslicensemetadata_class_objc).
+  - **IPC_MD_CONTENT_PATH**
 
--   Por tipo de directiva; plantilla o ad hoc:
+    Se usa para identificar el documento cuyo seguimiento se realiza. En aquellos casos en los que no sea posible especificar una ruta de acceso completa, basta con que proporcione el nombre de archivo.
 
-    -   Para el seguimiento de documentos basado en plantillas, cree un objeto **user policy** pasando los metadatos de licencia como un parámetro.
+  - **IPC_MD_CONTENT_NAME**
 
-        Para más información, consulte [**UserPolicy.create**](/rights-management/sdk/4.2/api/android/userpolicy#msipcthin2_userpolicy_class_java) y [**MSUserPolicy.userPolicyWithTemplateDescriptor**](/rights-management/sdk/4.2/api/iOS/msuserpolicy#msipcthin2_msuserpolicy_templatedescriptor_property_objc).
+    Se usa para identificar el nombre del documento cuyo seguimiento se realiza.
 
-    -   Para el seguimiento de documentos basado en ad hoc, establezca la propiedad **license metadata** en el objeto **policy descriptor**.
+  - **IPC_MD_NOTIFICATION_TYPE**
 
-        Para obtener más información, consulte [**PolicyDescriptor.getLicenseMetadata**](/rights-management/sdk/4.2/api/android/policydescriptor#msipcthin2_policydescriptor_interface_java), [**PolicyDescriptor.setLicenseMetadata**](/rights-management/sdk/4.2/api/android/policydescriptor#msipcthin2_policydescriptor_setlicensemetadata_java) y [**MSPolicyDescriptor.licenseMetadata**](/rights-management/sdk/4.2/api/iOS/mspolicydescriptor#msipcthin2_mspolicydescriptor_licensemetadata_property_objc).
+    Se usa para especificar cuándo se enviará la notificación. Para obtener más información, consulte Tipo de notificación.
 
-    **Nota**: solo se puede obtener acceso al objeto license metadata directamente durante el proceso de configuración del seguimiento de documentos para la directiva de usuario determinada. Una vez creado el objeto user policy, no se puede obtener acceso a los metadatos de la licencia asociados, es decir, el cambio de los valores de los metadatos de licencia no tiene ningún efecto.
+  - **IPC_MD_NOTIFICATION_PREFERENCE**
 
-     
+    Se usa para especificar el tipo de notificación. Para obtener más información, consulte Preferencia de notificación.
 
--   Llame al método de registro de la plataforma para el seguimiento de documentos.
+  - **IPC_MD_DATE_MODIFIED**
 
-    Consulte [**MSUserPolicy.registerForDocTracking**](/rights-management/sdk/4.2/api/iOS/msuserpolicy#msipcthin2_msuserpolicy_registerfordoctracking_userid_authenticationcallback_completionblock_method_objc) o [**UserPolicy.registerForDocTracking**](/rights-management/sdk/4.2/api/iOS/msuserpolicy#msipcthin2_msuserpolicy_registerfordoctracking_userid_authenticationcallback_completionblock_method_objc).
+    Se recomienda establecer esta fecha cada vez que el usuario hace clic en Guardar.
 
- 
+  - **IPC_MD_DATE_CREATED**
 
- 
+    Se usa para establecer la fecha de creación del archivo.
+
+- [IpcSerializeLicenseWithMetadata](/rights-management/sdk/2.1/api/win/functions#msipc_ipcserializelicensemetadata)
+
+De estas API, use la adecuada para agregar los metadatos al archivo o la secuencia.
+
+- [IpcfEncryptFileWithMetadata](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfencryptfilewithmetadata)
+- [IpcfEncryptFileStreamWithMetadata](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfencryptfilestreamwithmetadata)
+
+Por último, use esta API para registrar el documento cuyo seguimiento se realiza en el sistema de seguimiento.
+
+- [IpcRegisterLicense](/rights-management/sdk/2.1/api/win/functions#msipc_ipcregisterlicense)
 
 
+## 2. Registro del documento con el servicio de RMS
+
+El siguiente es un fragmento de código que muestra un ejemplo de cómo establecer metadatos de seguimiento de documentos y la llamada al registro en el sistema de seguimiento.
+
+      C++
+      HRESULT hr = S_OK;
+      LPCWSTR wszOutputFile = NULL;
+      wstring wszWorkingFile;
+      IPC_LICENSE_METADATA md = {0};
+
+      md.cbSize = sizeof(IPC_LICENSE_METADATA);
+      md.dwNotificationType = IPCD_CT_NOTIFICATION_TYPE_ENABLED;
+      md.dwNotificationPreference = IPCD_CT_NOTIFICATION_PREF_DIGEST;
+      //file origination date, current time for this example
+      md.ftDateCreated = GetCurrentTime();
+      md.ftDateModified = GetCurrentTime();
+
+      LOGSTATUS_EX(L"Encrypt file with official template...");
+
+      hr =IpcfEncryptFileWithMetadata( wszWorkingFile.c_str(),
+                               m_wszTestTemplateID.c_str(),
+                               IPCF_EF_TEMPLATE_ID,
+                               0,
+                               NULL,
+                               NULL,
+                               &md,
+                               &wszOutputFile);
+
+     /* This will contain the serialized license */
+     PIPC_BUFFER pSerializedLicense;
+
+     /* the context to use for the call */
+     PCIPC_PROMPT_CTX pContext;
+
+     wstring wstrContentName(“MyDocument.txt”);
+     bool sendLicenseRegistrationNotificationEmail = FALSE;
+
+     hr = IpcRegisterLicense( pSerializedLicense,
+                        0,
+                        pContext,
+                        wstrContentName.c_str(),
+                        sendLicenseRegistrationNotificationEmail);
+
+## Incorporación del botón **Hacer seguimiento de uso** a la aplicación
+
+Agregar a la aplicación un elemento de interfaz de usuario **Hacer seguimiento de uso** es tan sencillo como usar uno de los siguientes formatos de dirección URL:
+
+- Mediante el identificador de contenido
+  - Obtenga el identificador de contenido mediante [IpcGetLicenseProperty](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgetlicenseproperty) o [IpcGetSerializedLicenseProperty](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgetserializedlicenseproperty) si la licencia está serializada y use la propiedad de la licencia **IPC_LI_CONTENT_ID**. Para obtener más información, vea [License property types](/rights-management/sdk/2.1/api/win/constants#msipc_license_property_types) (Tipos de propiedades de licencias).
+  - Con los metadatos **ContentId** e **Issuer**, use el siguiente formato: `https://track.azurerms.com/#/{ContentId}/{Issuer}`
+
+    Ejemplo: `https://track.azurerms.com/#/summary/05405df5-8ad6-4905-9f15-fc2ecbd8d0f7/janedoe@microsoft.com`
+
+- Si no tiene acceso a esos metadatos (es decir, si está examinando la versión no protegida del documento), puede usar **Content_Name** en el formato siguiente: `https://track.azurerms.com/#/?q={ContentName}`
+
+  Ejemplo: https://track.azurerms.com/#/?q=Secret!.txt
+
+El cliente solo tiene que abrir un explorador con la dirección URL apropiada. El portal de seguimiento de documentos de RMS controlará la autenticación y los redireccionamientos necesarios.
+
+## Temas relacionados
+
+* [Tipos de propiedades de metadatos de licencias](/rights-management/sdk/2.1/api/win/constants#msipc_license_metadata_property_types)
+* [Preferencia de notificación](/rights-management/sdk/2.1/api/win/constants#msipc_notification_preference)
+* [Tipo de notificación](/rights-management/sdk/2.1/api/win/constants#msipc_notification_type)
+* [IpcCreateLicenseMetadataHandle](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensemetadatahandle)
+* [IpcSetLicenseMetadataProperty](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicensemetadataproperty)
+* [IpcSerializeLicenseWithMetadata](/rights-management/sdk/2.1/api/win/functions#msipc_ipcserializelicensemetadata)
+* [IpcfEncryptFileWithMetadata](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfencryptfilewithmetadata)
+* [IpcfEncryptFileStreamWithMetadata](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfencryptfilestreamwithmetadata)
+* [IpcRegisterLicense](/rights-management/sdk/2.1/api/win/functions#msipc_ipcregisterlicense)
 
 
-
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

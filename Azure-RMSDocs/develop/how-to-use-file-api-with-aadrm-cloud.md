@@ -1,37 +1,25 @@
 ---
-# required metadata
+# metadatos necesarios
 
-title: Habilitar la aplicación de servicio para que funcione con RMS basado en la nube | Azure RMS
-description: En este tema se describe cómo configurar la aplicación de servicio para que use Azure Rights Management.
-keywords:
-author: bruceperlerms
-manager: mbaldwin
-ms.date: 04/28/2016
-ms.topic: article
-ms.prod: azure
-ms.service: rights-management
-ms.technology: techgroup-identity
-ms.assetid: EA1457D1-282F-4CF3-A23C-46793D2C2F32
-# optional metadata
+título: Habilitación de la aplicación de servicio para que funcione con RMS basado en la nube | Azure RMS descripción: En este tema se describe cómo configurar la aplicación de servicio para que use Azure Rights Management.
+palabras clave: autor: bruceperlerms administrador: mbaldwin ms.date: 28/04/2016 ms.topic: artículo ms.prod: azure ms.service: rights-management ms.technology: techgroup-identity ms.assetid: EA1457D1-282F-4CF3-A23C-46793D2C2F32
+# metadatos opcionales
 
 #ROBOTS:
-audience: developer
+destinatarios: desarrolladores
 #ms.devlang:
-ms.reviewer: shubhamp
-ms.suite: ems
+ms.reviewer: shubhamp ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
 ---
-** El contenido de este SDK no es actual. Durante un breve periodo podrá encontrar la [versión actual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) de la documentación en MSDN. **
-# Habilitar la aplicación de servicio para que funcione con RMS basado en la nube
+
+# Habilitación de la aplicación de servicio para que funcione con RMS basado en la nube
 
 En este tema se describe cómo configurar la aplicación de servicio para que use Azure Rights Management. Para más información, vea [Getting started with Azure Rights Management](https://technet.microsoft.com/en-us/library/jj585016.aspx) (Introducción a Azure Rights Management).
 
 **Importante**  
-Este es un procedimiento recomendado para una primera prueba de la aplicación de Rights Management Services SDK 2.1 en el entorno de preproducción de RMS y en un servidor RMS. Luego, si quiere que su cliente tenga la posibilidad de usar la aplicación con el servicio de Azure RMS, pruébela con ese entorno.
-
-Para usar la aplicación de servicio de RMS SDK 2.1 con Azure RMS, debe pedir un inquilino de Azure RMS, si aún no lo tiene. Envíe un correo electrónico a <rmcstbeta@microsoft.com> con su solicitud de inquilino.
+Para usar la aplicación de servicio de Rights Management Services SDK 2.1 con Azure RMS, debe crear sus propios inquilinos. Para obtener más información, vea [Azure RMS requirements: Cloud subscriptions that support Azure RMS](/rights-management/get-started/requirements-subscriptions.md) (Requisitos de Azure RMS: Suscripciones en la nube que son compatibles con Azure RMS).
 
 ## Requisitos previos
 
@@ -43,18 +31,18 @@ Para usar la aplicación de servicio de RMS SDK 2.1 con Azure RMS, debe pedir un
 -   Llame a [**IpcInitialize**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize).
 -   Establezca [**IpcSetGlobalProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty).
 
+        C++
+        int mode = IPC_API_MODE_SERVER;
+        IpcSetGlobalProperty(IPC_EI_API_MODE, &(mode));
 
-    int mode = IPC_API_MODE_SERVER; IpcSetGlobalProperty(IPC_EI_API_MODE, &(mode));
 
-
-**Nota**  Para más información, vea [Establecer el modo de seguridad de API](setting-the-api-security-mode-api-mode.md)
+  **Nota**  Para más información, vea [Establecer el modo de seguridad de API](setting-the-api-security-mode-api-mode.md)
 
      
-
 -   En los pasos siguientes se realiza la configuración para crear una instancia de una estructura [**IPC\_PROMPT\_CTX**](/rights-management/sdk/2.1/api/win/ipc_prompt_ctx#msipc_ipc_prompt_ctx) con el miembro **pcCredential** ([**IPC\_CREDENTIAL**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential)) rellenado con información de conexión de Azure Rights Management Service.
 -   Use la información obtenida en la creación de la identidad de servicio de clave simétrica (vea los requisitos previos mencionados anteriormente en este tema) para establecer los parámetros **wszServicePrincipal**, **wszBposTenantId** y **cbKey** cuando cree una instancia de una estructura [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key).
 
-**Nota**   Debido a una condición existente en nuestro servicio de detección, las credenciales de clave simétrica solo se aceptan si está en Norteamérica. Por lo tanto, si se encuentra en otra región, deberá especificar directamente las URL de inquilino. Esto se hace mediante el parámetro [**IPC\_CONNECTION\_INFO**](/rights-management/sdk/2.1/api/win/ipc_connection_info#msipc_ipc_connection_info) de [**IpcGetTemplateList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist) o [**IpcGetTemplateIssuerList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplateissuerlist).
+**Nota** Debido a una condición existente en nuestro servicio de detección, las credenciales de clave simétrica solo se aceptan si está en Norteamérica. Por lo tanto, si se encuentra en otra región, deberá especificar directamente las URL de inquilino. Esto se hace mediante el parámetro [**IPC\_CONNECTION\_INFO**](/rights-management/sdk/2.1/api/win/ipc_connection_info#msipc_ipc_connection_info) de [**IpcGetTemplateList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist) o [**IpcGetTemplateIssuerList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplateissuerlist).
 
 ## Generar una clave simétrica y recopilar la información necesaria
 
@@ -65,17 +53,14 @@ Para usar la aplicación de servicio de RMS SDK 2.1 con Azure RMS, debe pedir un
 
 **Nota**  Debe ser administrador de inquilinos para poder usar los cmdlets de PowerShell.
 
-
 -   Inicie Powershell y ejecute los comandos siguientes para generar una clave         `Import-Module MSOnline`
             `Connect-MsolService` (escriba las credenciales de administrador)         `New-MsolServicePrincipal` (escriba un nombre para mostrar)
 -   Una vez generada la clave simétrica, se mostrará la propia clave e información como **AppPrincipalId**.
 
 
-
     Se creó la siguiente clave simétrica porque no se proporcionó ninguna ZYbF/lTtwE28qplQofCpi2syWd11D83+A3DRlb2Jnv8=
 
     DisplayName : RMSTestApp ServicePrincipalNames : {7d9c1f38-600c-4b4d-8249-22427f016963} ObjectId : 0ee53770-ec86-409e-8939-6d8239880518 AppPrincipalId : 7d9c1f38-600c-4b4d-8249-22427f016963
-
 
 
 ### Instrucciones para conocer **TenantBposId** y **Urls**
@@ -103,7 +88,7 @@ Para obtener más información, consulte [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/
 
 -   Cree una instancia de una estructura [**IPC\_CREDENTIAL**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential) que contenga su instancia de [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key).
 
-**Nota**  Los miembros *conectionInfo* se establecen con las direcciones URL de la llamada anterior a `Get-AadrmConfiguration` y se anotan aquí con esos nombres de campo.
+**Nota** Los miembros *connectionInfo* se establecen con las direcciones URL de la llamada anterior a `Get-AadrmConfiguration` y se anotan aquí con esos nombres de campo.
 
     // Create a credential structure.
     IPC_CREDENTIAL cred = {0};
@@ -162,7 +147,6 @@ Ha completado todos los pasos necesarios para que la aplicación pueda usar Azur
 
 ## Temas relacionados
 
-* [Conceptos de desarrollador](ad-rms-concepts-nav.md)
 * [Introducción a Azure Rights Management](https://technet.microsoft.com/en-us/library/jj585016.aspx)
 * [Introducción a RMS SDK 2.1](getting-started-with-ad-rms-2-0.md)
 * [Crear una identidad de servicio a través de ACS](https://msdn.microsoft.com/en-us/library/gg185924.aspx)
@@ -182,6 +166,6 @@ Ha completado todos los pasos necesarios para que la aplicación pueda usar Azur
  
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 05/19/2016
+ms.date: 06/08/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -43,7 +43,7 @@ Permite al usuario modificar, reorganizar, formatear o filtrar el contenido dent
 
 **Codificación en la directiva**: DOCEDIT
 
-**Implementación en los derechos personalizados de Office**: como parte de las opciones *Cambiar* y *Control total*.**
+**Implementación en los derechos personalizados de Office**: como parte de las opciones *Cambiar* y *Control total*.
 
 **Nombre en el Portal de Azure clásico**: *Editar contenido*
 
@@ -267,11 +267,32 @@ Los derechos que se incluyen con las plantillas predeterminadas son los siguient
 |&lt;*nombre de organización*&gt; *- Solo vista confidencial*|Ver, Abrir, Leer|
 |&lt;*nombre de organización*&gt; *- Confidencial*|Ver, Abrir, Leer; Guardar; Editar contenido, Editar; Ver derechos; Permitir macros; Reenviar; Responder; Responder a todos|
 
+## Opción No reenviar para correos electrónicos
+
+Los clientes y servicios de Exchange (por ejemplo, el cliente de Outlook, la aplicación Outlook Web Access y las reglas de transporte de Exchange) tienen su propia opción de protección de derechos de información para correos electrónicos: **No reenviar**. 
+
+Aunque esta opción aparece para los usuarios (y los administradores de Exchange) como si fuera una plantilla predeterminada de Rights Management que se puede seleccionar, **No reenviar** no es una plantilla. Esto explica por qué no se ve en el Portal de Azure clásico cuando se visualizan y se administran las plantillas de Azure RMS. En realidad, la opción **No reenviar** es un conjunto de derechos que los usuarios aplican dinámicamente a los destinatarios de correo electrónico.
+
+Cuando se aplica la opción **No reenviar** a un correo electrónico, los destinatarios no pueden reenviarlo, imprimirlo, copiar contenido, guardar datos adjuntos ni guardarlo con un nombre diferente. Por ejemplo, en el cliente de Outlook, el botón Reenviar no está disponible, tampoco están disponibles las opciones de menú **Guardar como**, **Guardar datos adjuntos** e **Imprimir**, y no se pueden agregar ni cambiar destinatarios de los cuadros **Para**, **CC** o **CCO**.
+
+Hay una diferencia importante entre aplicar la opción **No reenviar** y aplicar una plantilla que no concede el derecho Reenviar a un correo electrónico: la opción **No reenviar** usa una lista dinámica de usuarios autorizados basada en los destinatarios del mensaje original que elige el usuario, mientras que los derechos de la plantilla tienen una lista estática de usuarios autorizados que el administrador ha especificado anteriormente. ¿Cuál es la diferencia? Veamos un ejemplo: 
+
+Un usuario quiere enviar información por correo electrónico a personas concretas del departamento de marketing que no debe compartirse con nadie más. ¿Debe proteger el correo electrónico con una plantilla que restringe los derechos (ver, responder y guardar) al departamento de marketing?  ¿O debe elegir la opción **No reenviar**? Ambas opciones harían que los destinatarios no pudieran reenviar el correo electrónico. 
+
+- Si aplica la plantilla, los destinatarios pueden seguir compartiendo la información con otros usuarios del departamento de marketing. Por ejemplo, un destinatario puede usar el Explorador para arrastrar y colocar el correo electrónico en una ubicación compartida o en una unidad USB. De este modo, cualquier persona del departamento de marketing (y el propietario del correo electrónico) que tenga acceso a esta ubicación podrá ver la información del correo electrónico.
+ 
+- Si aplica la opción **No reenviar**, los destinatarios no podrán compartir la información con ninguna persona del departamento de marketing si mueven el correo electrónico a otra ubicación. En este caso, solo los destinatarios originales (y el propietario del correo electrónico) podrán ver la información del correo electrónico.
+
+> [!NOTE] Use **No reenviar** cuando sea importante que solo los destinatarios que elige el remitente puedan ver la información del correo electrónico. Use una plantilla para correos electrónicos para restringir los derechos a un grupo de personas especificadas de antemano por el administrador, independientemente de los destinatarios que elija el remitente.
+
+
+
+
 ## Véase también
 [Configuración de plantillas personalizadas para Azure Rights Management](configure-custom-templates.md)
 
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

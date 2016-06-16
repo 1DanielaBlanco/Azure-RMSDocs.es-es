@@ -23,16 +23,28 @@ ms.suite: ems
 #ms.custom:
 
 ---
-** El contenido de este SDK no es actual. Durante un breve periodo podrá encontrar la [versión actual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) de la documentación en MSDN. **
+
 # Notas de la versión
 
 Este tema contiene información importante sobre esta versión y versiones anteriores de RMS SDK 2.1.
+
+- [Novedades de la actualización de documentación del SDK de febrero de 2016](#new-for-the-february-2016-sdk-documentation-update)
+- [Actualización de diciembre de 2015](#december-2015-update)
+- [Actualización de mayo de 2015](#may-2015-update)
+- [Actualización de abril de 2015](#april-2015-update)
+- [Actualización de enero de 2015](#january-2015-update)
+- [Actualizaciones de octubre de 2014](#october-2014-update)
+- [Actualización de julio de 2014](#july-2014-update)
+- [Notas importantes para desarrolladores](#important-developer-notes)
+- [Preguntas más frecuentes](#frequently-asked-questions)
+- [Temas relacionados](#related-topics)
 
 ## Novedades de la actualización de documentación del SDK de febrero de 2016
 
 >[!Note]  Las actualizaciones de la documentación de características de esta sección se aplican a la descarga del SDK con fecha de 11/12/2015.
 
-- **Flujo de autenticación mejorado** gracias a la autenticación de OAuth2 basada en token mediante la [biblioteca de autenticación de Azure Active Directory (ADAL)](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-libraries/). Para obtener más información sobre este proceso y sus extensiones de API, consulte [ADAL authentication for your RMS enabled application (Autenticación de ADAL de la aplicación habilitada para RMS)](https://msdn.microsoft.com/en-us/library/windows/desktop/mt661865(v=vs.85).aspx).
+- **Flujo de autenticación mejorado** gracias a la autenticación de OAuth2 basada en token mediante la [biblioteca de autenticación de Azure Active Directory (ADAL)](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-libraries/). Para obtener más información sobre este proceso y sus extensiones de API, consulte [ADAL authentication for your RMS enabled application](how-to-use-adal-authentication.md) (Autenticación de ADAL de la aplicación habilitada para RMS).
+
 - **Actualización de ADAL**. Si actualiza la aplicación para que use la autenticación de ADAL en lugar del Ayudante para el inicio de sesión de Microsoft Online, usted y sus clientes podrán:
 
  - Usar Multi-Factor Authentication.
@@ -44,14 +56,13 @@ Este tema contiene información importante sobre esta versión y versiones anter
 
 ## Actualización de diciembre de 2015
 
--   Se han implementado mejoras de rendimiento en varias áreas como:
+- Se han implementado mejoras de rendimiento en varias áreas como:
+    - Publicar desde el servidor de licencias principal cuando se usan servidores de solo licencia.
+    - Se producen errores en RMS SDK 2.1 mucho antes cuando no hay conexión de red.
 
-    Publicar desde el servidor de licencias principal cuando se usan servidores de solo licencia.
-
-    Se producen errores en RMS SDK 2.1 mucho antes cuando no hay conexión de red.
-
--   Actualizaciones para mejorar la experiencia de mensajería de errores y solución de problemas.
--   Observe que también se ha actualizado la lista de [plataformas compatibles](supported-platforms.md).
+- Actualizaciones para mejorar la experiencia de mensajería de errores y solución de problemas.
+- Observe que también se ha actualizado la lista de [plataformas compatibles](supported-platforms.md).
+- Se ha eliminado de RMS SDK 2.1 la necesidad del entorno de preproducción y el uso de manifiestos de aplicación. Se han quitado estas secciones de este conjunto de documentación para desarrolladores y se ha simplificado y reorganizado la documentación en general.
 
 ## Actualización de mayo de 2015
 
@@ -64,15 +75,13 @@ Este tema contiene información importante sobre esta versión y versiones anter
 
     **Nota**: La marca **IPC\_LI\_DEPRECATED\_ENCRYPTION\_ALGORITHMS** dejará de exponerse en la API. Esto significa que las aplicaciones futuras ya no se compilarán si hacen referencia a esta marca, pero las ya desarrolladas seguirán funcionando dado que respetaremos la marca de forma privada en el código de la API. Todavía será posible beneficiarse de la antigua marca de algoritmos de cifrado: solo es necesario cambiar una marca. Para más información, vea [Working with encryption](working-with-encryption.md) (Uso de cifrado).
 
-     
-
 -   Las **aplicaciones en modo de servidor** que usen un [**valor del modo de API**](/rights-management/sdk/2.1/api/win/api%20mode%20values#msipc_api_mode_values_IPC_API_MODE_SERVER) de **IPC\_API\_MODE\_SERVER** ya no necesitan un manifiesto de aplicación. Podrá probar la aplicación en un servidor RMS de producción y no será necesario obtener una licencia de producción cuando pase al entorno de producción. Para más información sobre las aplicaciones de modo de servidor, vea [Application types](application-types.md) (Tipos de aplicación).
 -   El **registro** ahora se implementa a través de archivo y de métodos de seguimiento de eventos para Windows.
 -   Si está usando una **máquina con Windows 7 SP1 o Windows Server 2008 R2**, vea la nota que sigue a "Notas importantes para desarrolladores".
 
 ## Actualización de enero de 2015
 
--   **Aumento del tamaño de los archivos protegidos compatibles (pfile)**: ahora se admiten tamaños de archivo pfile superiores a un giga (1 GB). Para más información sobre archivos pfile, vea [Support File Formats](supported-file-formats.md) (Compatibilidad con formatos de archivo).
+-   **Aumento del tamaño de los archivos protegidos compatibles (pfile)**: ahora se admiten tamaños de archivo pfile superiores a un giga (1 GB). Para obtener más información sobre los archivos pfile, vea [Supported File Formats](supported-file-formats.md) (Formatos de archivo compatibles).
 -   **Registro mejorado para un mejor diagnóstico**: los niveles de registro mostrarán **ERROR** o **WARNING** en los mensajes que deban revisarse. El resto de los mensajes, incluidas las excepciones que se siguen mostrando, se registrarán como **INFO**.
 
     Elegimos este enfoque para que no pierda ningún detalle. Ahora, solo los mensajes importantes se muestran con el nivel WARNING.
@@ -96,8 +105,6 @@ Los componentes de la API de archivo del SDK se han ampliado y ofrecen las sigui
 
     **Nota**  Para las extensiones de API de archivo, se han agregado más tipos y estructuras de datos compatibles aparte de los aquí mencionados. Todos los temas que se han actualizado para esta versión está marcados como **preliminar y sujeto a cambios**.
 
-     
-
     -   [**IpcfOpenFileOnHandle**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfopenfileonhandle)
     -   [**IpcfOpenFileOnILockBytes**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfopenfileonilockbytes)
     -   [**IpcfGetFileProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfgetfileproperty)
@@ -112,8 +119,6 @@ Los componentes de la API de archivo del SDK se han ampliado y ofrecen las sigui
 -   El **identificador de contenido** se puede escribir ahora mediante la propiedad **IPC\_LI\_CONTENT\_ID**. Para más información, vea [**License property types**](/rights-management/sdk/2.1/api/win/License%20property%20types#msipc_license_property_types_IPC_LI_APP_SPECIFIC_DATA) (Tipos de propiedades de licencias).
 -   **Requisito de manifiesto de producción**: cuando la aplicación o el servicio habilitados para RMS se ejecutan en modo de servidor, ya no se pide ningún manifiesto. Para más información, vea [Application types](application-types.md) (Tipos de aplicación).
 -   **Actualizaciones de la documentación**
-
-    **Reorganización** - [Procedimientos](how-to-use-msipc.md) para aclarar el orden de los pasos para la configuración del entorno y para las pruebas de la aplicación.
 
     **Práctica recomendada de pruebas**: guía agregada para el uso de un servidor local antes de las pruebas con Azure RMS. Para más información, vea [Enable your service application to work with cloud based RMS](how-to-use-file-api-with-aadrm-cloud.md) (Habilitar la aplicación de servicio para que funcione con RMS basado en la nube).
 
@@ -135,11 +140,15 @@ Los componentes de la API de archivo del SDK se han ampliado y ofrecen las sigui
 
     La API de archivo de Active Directory Rights Management Services, con la adición de la API de archivo, ofrece las siguientes ventajas y capacidades.
 
-    Puede proteger los datos confidenciales de forma automática sin necesidad de conocer los detalles de la implementación de Information Rights Management (IRM) usados por los distintos formatos de archivo.
+      - Puede proteger los datos confidenciales de forma automática sin necesidad de conocer los detalles de la implementación de Information Rights Management (IRM) usados por los distintos formatos de archivo.
 
-    Los archivos de Microsoft Office, los archivos Portable Document Format (PDF) y otros tipos de archivo determinados pueden protegerse con la protección nativa. Para ver una lista completa de los tipos de archivo que pueden protegerse mediante protección nativa, vea [File API configuration](file-api-configuration.md) (Configuración de la API de archivo).
+      - Los archivos de Microsoft Office, los archivos Portable Document Format (PDF) y otros tipos de archivo determinados pueden protegerse con la protección nativa. Para ver una lista completa de los tipos de archivo que pueden protegerse mediante protección nativa, vea [File API configuration](file-api-configuration.md) (Configuración de la API de archivo).
 
-    Todos los archivos, excepto los archivos del sistema y los archivos de Office, se pueden proteger con el formato de archivo protegido de RMS (PFile).
+      - Todos los archivos, excepto los archivos del sistema y los archivos de Office, se pueden proteger con el formato de archivo protegido de RMS (PFile).
+
+    La API de archivo se implementa a través de estas cuatro funciones nuevas: [IpcfDecryptFile](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfdecryptfile), [IpcfEncryptFile](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfencryptfile), [IpcfGetSerializedLicenseFromFile](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfgetserializedlicensefromfile) y [IpcfIsFileEncrypted](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfisfileencrypted).
+
+    La API de archivo requiere que el cliente de Rights Management Services 2.1 esté instalado en el equipo cliente y que el equipo tenga conectividad con un servidor RMS. Para obtener más información sobre el servidor RMS, el cliente de RMS y su funcionalidad, consulte el contenido de TechNet sobre la [documentación para profesionales de TI para RMS](https://technet.microsoft.com/en-us/library/cc771234(v=ws.10).aspx).
 
 -   **Problema**: al crear una licencia desde cero, se deben conceder explícitamente derechos de propiedad.
 
@@ -159,9 +168,10 @@ Los componentes de la API de archivo del SDK se han ampliado y ofrecen las sigui
 
 **R**: Use 0 para la configuración regional predeterminada. En este caso, AD RMS Client 2.1 busca nombres y descripciones en la siguiente secuencia y recupera el primer resultado disponible:
 
-1 - LCID preferido del usuario.
-2 - LCID de la configuración regional del sistema.
-3 - El primer idioma disponible especificado en la plantilla de Rights Management Server (RMS).
+    1 - User preferred LCID.
+    2 - System locale LCID.
+    3 - The first available language specified in the Rights Management Server (RMS) template.
+
 Si no se puede recuperar ningún nombre ni ninguna descripción, se devuelve un error. Solo puede haber un nombre y una descripción para un LCID específico.
 
 ## Temas relacionados
@@ -181,6 +191,6 @@ Si no se puede recuperar ningún nombre ni ninguna descripción, se devuelve un 
  
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -1,29 +1,19 @@
 ---
-# required metadata
+# metadatos necesarios
 
-title: Depuración de una aplicación con derechos habilitados | Azure RMS
-description: En el siguiente tema se muestra cómo depurar la aplicación y utilizar el registro de eventos de Windows.
-keywords:
-author: bruceperlerms
-manager: mbaldwin
-ms.date: 04/28/2016
-ms.topic: article
-ms.prod: azure
-ms.service: rights-management
-ms.technology: techgroup-identity
-ms.assetid: 6F6C7651-6A6E-45DD-A0C5-F036F803249B
-# optional metadata
+título: Depuración de una aplicación con derechos habilitados | Azure RMS descripción: En el tema siguiente se muestra cómo depurar la aplicación y usar el registro de eventos de Windows.
+palabras clave: autor: bruceperlerms administrador: mbaldwin ms.date: 28/04/2016 ms.topic: artículo ms.prod: azure ms.service: rights-management ms.technology: techgroup-identity ms.assetid: 6F6C7651-6A6E-45DD-A0C5-F036F803249B
+# metadatos opcionales
 
 #ROBOTS:
-audience: developer
+destinatarios: desarrolladores
 #ms.devlang:
-ms.reviewer: shubhamp
-ms.suite: ems
+ms.reviewer: shubhamp ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
 ---
-** El contenido de este SDK no es actual. Durante un breve periodo podrá encontrar la [versión actual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) de la documentación en MSDN. **
+
 # Depuración de una aplicación con derechos habilitados
 
 En el siguiente tema se muestra cómo depurar la aplicación y utilizar el registro de eventos de Windows.
@@ -33,6 +23,7 @@ En el siguiente tema se muestra cómo depurar la aplicación y utilizar el regis
 En Rights Management Services SDK 2.1, las comprobaciones contra la depuración en la versión de desarrollador de nuestro tiempo de ejecución están deshabilitadas.
 
 Puede activar el seguimiento de depuración utilizando la siguiente clave del Registro. (Para desactivar el seguimiento de depuración, cambie el valor a 0). No se necesita nada más para la depuración en esta versión.
+
 
 ```
 HKEY_LOCAL_MACHINE
@@ -72,15 +63,11 @@ Por ejemplo, el siguiente comando habilitará el registro de eventos de MSIPC y 
 
 ## Temas relacionados
 
-* [Procedimiento](how-to-use-msipc.md)
  
 
  
 
 
-
-
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

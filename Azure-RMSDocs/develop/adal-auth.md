@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Autenticación de ADAL de la aplicación habilitada para RMS | Azure RMS
-description: Describe el proceso para la autenticación con AAL
+title: Configuración de Azure RMS para la autenticación ADAL | Azure RMS
+description: Describe los pasos para configurar la autenticación basada en Azure ADAL
 keywords: authentication, RMS, ADAL
 author: bruceperlerms
 manager: mbaldwin
@@ -24,37 +24,19 @@ ms.suite: ems
 #ms.custom:
 
 ---
-** El contenido de este SDK no es actual. Durante un breve periodo podrá encontrar la [versión actual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) de la documentación en MSDN. **
-# Autenticación de ADAL de la aplicación habilitada para RMS
 
-La autenticación con Azure RMS de la aplicación mediante Azure ADAL ahora forma parte del cliente de RMS 2.1.
+# Configuración de Azure RMS para la autenticación ADAL
 
-Si actualiza la aplicación para que use la autenticación de ADAL en lugar del Ayudante para el inicio de sesión de Microsoft Online, usted y sus clientes podrán:
+En este tema se describe cómo configurar la autenticación basada en Azure ADAL.
 
-- Usar Multi-Factor Authentication.
-- Instalar el cliente de RMS 2.1 sin necesidad de tener privilegios administrativos en el equipo.
-- Certificar la aplicación para Windows 10
-
-## Dos enfoques para la autenticación
-
-En este tema se describen dos métodos de autenticación con sus ejemplos de código correspondientes.
-
-- **Autenticación interna**: autenticación de OAuth administrada por RMS SDK. Use este método si quiere que el cliente de RMS muestre un mensaje de autenticación de ADAL cuando sea necesaria la autenticación. Para obtener más información sobre cómo configurar la aplicación, consulte la sección "Autenticación interna".
-
-> [!NOTE] Si la aplicación usa actualmente AD RMS SDK 2.1 con el Ayudante para el inicio de sesión, se recomienda que use el método de autenticación interna como ruta de acceso de la migración de la aplicación.
-
-- **Autenticación externa**: autenticación de OAuth administrada por la aplicación. Use este método si quiere que la aplicación administre su propia autenticación de OAuth. Con este método, el cliente de RMS realizará una devolución de llamada definida por la aplicación cuando sea necesaria la autenticación. Para obtener un ejemplo detallado, consulte "Autenticación externa" al final de este tema.
-
-> [!NOTE] La autenticación externa no permite cambiar los usuarios; el cliente de RMS usa siempre el usuario predeterminado para un inquilino de RMS determinado.
-
-### Autenticación interna
+## Autenticación interna
 
 Necesitará lo siguiente:
 
 - Una [suscripción de Microsoft Azure](https://azure.microsoft.com/en-us/) (una evaluación gratuita es suficiente).
 - Una suscripción de Microsoft Azure Rights Management (una cuenta gratuita de [RMS para usuarios](https://technet.microsoft.com/en-us/library/dn592127.aspx) es suficiente).
 
-> [!NOTE] Pregúntele al administrador de TI si dispone de una suscripción a Microsoft Azure Rights Management y solicítele que realice los pasos siguientes. Si la organización no tiene una suscripción, pídale al administrador de TI que cree una. Además, el administrador de TI debe suscribirse con una cuenta profesional o educativa, en lugar de con una cuenta de Microsoft (es decir, Hotmail).
+> [!NOTE] Pregúntele al administrador de TI si dispone de una suscripción a Microsoft Azure Rights Management y solicítele que realice los pasos siguientes. Si la organización no tiene una suscripción, pídale al administrador de TI que cree una. Además, el administrador de TI debe suscribirse con una *cuenta profesional o educativa*, en lugar de con una *cuenta de Microsoft* (es decir, Hotmail).
 
 Después de suscribirse a Microsoft Azure:
 
@@ -78,7 +60,7 @@ Después de suscribirse a Microsoft Azure:
 
 ![Seleccione APLICACIONES](../media/CreateNativeApp.png)
 
-- Después, elija el botón **AGREGAR** situado en la parte inferior central del portal.
+- Después, elija el botón **Agregar** situado en la parte inferior central del portal.
 
 ![Seleccione AGREGAR](../media/AddAppBtn.png)
 
@@ -90,7 +72,8 @@ Después de suscribirse a Microsoft Azure:
 
 ![Asígnele un nombre a la aplicación](../media/TellUsInput.png)
 
-- Agregue un identificador URI de redireccionamiento y elija Siguiente. El identificador URI de redireccionamiento debe ser un identificador URI válido y único para su directorio. Por ejemplo, podría usar algo parecido a `com.mycompany.myapplication://authorize`.
+- Agregue un identificador URI de redireccionamiento y elija Siguiente.
+  El identificador URI de redireccionamiento debe ser un identificador URI válido y único para su directorio. Por ejemplo, podría usar algo parecido a `com.mycompany.myapplication://authorize`.
 
 ![Agregue un identificador URI de redireccionamiento](../media/RedirectURI.png)
 
@@ -102,13 +85,15 @@ Después de suscribirse a Microsoft Azure:
 
 - Vaya a la parte inferior de los ajustes de configuración de la aplicación y elija el botón **Agregar aplicación**, situado bajo **permisos para otras aplicaciones**.
 
+>[!NOTE] Los **permisos delegados** que se muestran para Windows Azure Active Directory son correctos de forma predeterminada. Solo debe seleccionarse una opción, y dicha opción es **Iniciar sesión y leer el perfil del usuario**.
+
 ![Seleccione Agregar aplicación](../media/PermissionsToOtherBtn.png)
 
 - Ahora, agregue el GUID `00000012-0000-0000-c000-000000000000` al cuadro de edición **EMPEZANDO POR** y elija el botón de comprobación.
 
 ![Agregue el GUID](../media/AddGUID.png)
 
-- Elija el botón de signo más (+) situado junto a **Microsoft Rights Management**.
+- Elija el botón de signo más situado junto a **Microsoft Rights Management**.
 
 ![Seleccione el botón +](../media/ChoosePlusBtn.png)
 
@@ -120,70 +105,11 @@ Después de suscribirse a Microsoft Azure:
 
 ![Configuración de permisos](../media/AddDependency.png)
 
-- Guarde la aplicación para conservar los cambios. Para ello, elija el icono **GUARDAR** ubicado en la parte inferior central del portal.
+- Guarde la aplicación para conservar los cambios. Para ello, elija el icono **Guardar** ubicado en la parte inferior central del portal.
 
 ![Seleccione GUARDAR](../media/SaveApplication.png)
 
-- Ahora ya puede configurar la aplicación para que use la autenticación de ADAL interna proporcionada por RMS SDK 2.1. Para configurar el cliente de RMS, agregue una llamada a [IpcSetGlobalProperty](/rights-management/sdk/2.1/api/win/IpcSetGlobalProperty) justo después de llamar a [IpcInitialize](/rights-management/sdk/2.1/api/win/IpcInitialize) para configurar el cliente de RMS. Use como ejemplo el fragmento de código siguiente.
 
-
-    IpcInitialize();
-
-    IPC_AAD_APPLICATION_ID applicationId = { 0 };   applicationId.cbSize = sizeof(IPC_AAD_APPLICATION_ID);   applicationId.wszClientId = L"GUID-provided-by-AAD-for-your-app-(no-brackets)";   applicationId.wszRedirectUri = L"RedirectionUriWeProvidedAADForOurApp://authorize";
-
-    HRESULT hr = IpcSetGlobalProperty(IPC_EI_APPLICATION_ID, &amp;applicationId);
-
-    if (FAILED(hr)) {    //Handle the error   }
-
-### Autenticación externa
-
-- Use este código como ejemplo sobre cómo administrar sus propios tokens de autenticación.
-
-
-    extern HRESULT GetADALToken(LPVOID pContext, const IPC_NAME_VALUE_LIST&amp; Parameters, __out wstring wstrToken) throw();
-
-    HRESULT GetLicenseKey(PCIPC_BUFFER pvLicense, __in LPVOID pContextForAdal, __out IPC_KEY_HANDLE &amp;hKey) { IPC_OAUTH2_CALLBACK pfGetADALToken =         [](LPVOID pvContext, PIPC_NAME_VALUE_LIST pParameters, IPC_AUTH_TOKEN_HANDLE* phAuthToken) -&gt; HRESULT { wstring wstrToken; HRESULT hr = GetADALToken(pvContext, *pParameters, wstrToken); return SUCCEEDED(hr) ? IpcCreateOAuth2Token(wstrToken.c_str(), OUT phAuthToken) : hr; };
-
-      IPC_OAUTH2_CALLBACK_INFO callbackCredentialContext =
-      {
-          sizeof(IPC_OAUTH2_CALLBACK_INFO),
-          pfGetADALToken,
-          pContextForAdal
-      };
-
-      IPC_CREDENTIAL credentialContext =
-      {
-          IPC_CREDENTIAL_TYPE_OAUTH2,
-          NULL
-      };
-      credentialContext.pcOAuth2 = &amp;callbackCredentialContext;
-
-      IPC_PROMPT_CTX promptContext =
-      {
-        sizeof(IPC_PROMPT_CTX),
-        NULL,
-        IPC_PROMPT_FLAG_SILENT | IPC_PROMPT_FLAG_HAS_USER_CONSENT,
-        NULL,
-        &amp;credentialContext
-      };
-
-      hKey = 0L;
-      return IpcGetKey(pvLicense, 0, &amp;promptContext, NULL, &amp;hKey);
-  }
-
-### Temas relacionados
-- [Tipos de datos](/rights-management/sdk/2.1/api/win/Data%20types)
-- [Propiedades del entorno](/rights-management/sdk/2.1/api/win/Environment%20properties)
-- [IpcCreateOAuth2Token](/rights-management/sdk/2.1/api/win/IpcCreateOAuth2Token)
-- [IpcGetKey](/rights-management/sdk/2.1/api/win/IpcGetKey)
-- [IpcInitialize](/rights-management/sdk/2.1/api/win/IpcInitialize)
-- [IPC_CREDENTIAL](/rights-management/sdk/2.1/api/win/IPC\_CREDENTIAL)
-- [IPC_NAME_VALUE_LIST](/rights-management/sdk/2.1/api/win/IPC\_NAME\_VALUE\_LIST)
-- [IPC_OAUTH2_CALLBACK_INFO](/rights-management/sdk/2.1/api/win/IPC\_OAUTH2\_CALLBACK\_INFO)
-- [IPC_PROMPT_CTX](/rights-management/sdk/2.1/api/win/IPC\_PROMPT\_CTX)
-- [IPC_AAD_APPLICATION_ID](/rights-management/sdk/2.1/api/win/IPC\_AAD\_APPLICATION\_ID)
-
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 
