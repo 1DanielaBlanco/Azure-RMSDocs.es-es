@@ -1026,8 +1026,8 @@
 * Current Target File: [Azure-RMSDocs\develop\add-explicit-owner-rights.md](https://github.com/Microsoft/Azure-RMSDocs-pr.es-es/blob/f45be2ce9e0944e04f822c07241613325d8d2ff2/Azure-RMSDocs/develop/add-explicit-owner-rights.md)
 * Current Handback File: [add-explicit-owner-rights.41e1f4a20dbc614b802dc2a924abbf773d143285.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/9bd6e645ee7e5b24246048b87e154688be109512/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/add-explicit-owner-rights.41e1f4a20dbc614b802dc2a924abbf773d143285.es-es.xlf)
 * Current Handback Datetime: 2016-06-16 18:33:11
-* Bilingual File: [add-explicit-owner-rights.41e1f4a20dbc614b802dc2a924abbf773d143285.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/a0257641ec5dbb67ec34d22752c6a7347ffa0243/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/add-explicit-owner-rights.41e1f4a20dbc614b802dc2a924abbf773d143285.es-es.xlf)
-* Bilingual Datetime: 2016-06-16 10:18:53
+* Bilingual File: [add-explicit-owner-rights.41e1f4a20dbc614b802dc2a924abbf773d143285.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/9bd6e645ee7e5b24246048b87e154688be109512/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/add-explicit-owner-rights.41e1f4a20dbc614b802dc2a924abbf773d143285.es-es.xlf)
+* Bilingual Datetime: 2016-06-16 18:38:51
 * [Back to Top](#report-top)
 
 ##### <a name='85613d5444bcba3c0d3f1dc808fa16f5a84c7e6d40'></a> Source: [Azure-RMSDocs\develop\ad-rms-client.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ad47143f61ca7bee2e6905637ebd0d1a827846b8/Azure-RMSDocs/develop/ad-rms-client.md)
@@ -1324,6 +1324,8 @@
 * Current Target File: [Azure-RMSDocs\develop\developing-your-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr.es-es/blob/f45be2ce9e0944e04f822c07241613325d8d2ff2/Azure-RMSDocs/develop/developing-your-application.md)
 * Current Handback File: [developing-your-application.8fd29906a628e7dc3c644e93f1a14b01523f9aa6.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/9bd6e645ee7e5b24246048b87e154688be109512/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/developing-your-application.8fd29906a628e7dc3c644e93f1a14b01523f9aa6.es-es.xlf)
 * Current Handback Datetime: 2016-06-16 18:33:11
+* Bilingual File: [developing-your-application.8fd29906a628e7dc3c644e93f1a14b01523f9aa6.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/9bd6e645ee7e5b24246048b87e154688be109512/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/developing-your-application.8fd29906a628e7dc3c644e93f1a14b01523f9aa6.es-es.xlf)
+* Bilingual Datetime: 2016-06-16 18:38:51
 * [Back to Top](#report-top)
 
 ##### <a name='9e571aaf1690788cbf07eca6f46c7161c0f0dd7c62'></a> Source: [Azure-RMSDocs\develop\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/6200c8da7c04f0ee2c962986c142da12f29e2248/Azure-RMSDocs/develop/docfx.json)
@@ -1393,8 +1395,8 @@
 * Archive Datetime: 2016-06-09 02:38:05
 * Handback File: [getting-started-with-ad-rms-2-0.ea2db894ddfb123d7a11829d073480489c257733.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/9bd6e645ee7e5b24246048b87e154688be109512/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/getting-started-with-ad-rms-2-0.ea2db894ddfb123d7a11829d073480489c257733.es-es.xlf)
 * Handback Datetime: 2016-06-16 18:33:11
-* Bilingual File: [getting-started-with-ad-rms-2-0.ea2db894ddfb123d7a11829d073480489c257733.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/50bd8f23d9edcf0fd432924c3e8078a4b95173b3/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/getting-started-with-ad-rms-2-0.ea2db894ddfb123d7a11829d073480489c257733.es-es.xlf)
-* Bilingual Datetime: 2016-06-16 10:18:53
+* Bilingual File: [getting-started-with-ad-rms-2-0.ea2db894ddfb123d7a11829d073480489c257733.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/9bd6e645ee7e5b24246048b87e154688be109512/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/getting-started-with-ad-rms-2-0.ea2db894ddfb123d7a11829d073480489c257733.es-es.xlf)
+* Bilingual Datetime: 2016-06-16 18:38:51
 * [Back to Top](#report-top)
 
 ##### <a name='e75ec6c04afd171552697f79deb33ad2cfe2c4e167'></a> Source: [Azure-RMSDocs\develop\how-to-build-your-first-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ac6afddc2b39d6209ef1b89d8d84011942cdba5a/Azure-RMSDocs/develop/how-to-build-your-first-application.md)

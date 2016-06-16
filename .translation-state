@@ -73480,9 +73480,9 @@
       "ArchiveFileCommit": "869efcf2a718d47ca3ee5443714aee9df72d41ca",
       "ArchiveFileDateTime": "2016-06-09T02:38:05.0281078Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.es-es\\master\\add-explicit-owner-rights.41e1f4a20dbc614b802dc2a924abbf773d143285.es-es.xlf",
+      "BilingualFileCommit": "9bd6e645ee7e5b24246048b87e154688be109512",
+      "BilingualDateTime": "2016-06-16T18:38:51.343429Z",
       "BilingualException": null
     },
     "85613d5444bcba3c0d3f1dc808fa16f5a84c7e6d": {
@@ -73752,9 +73752,9 @@
       "ArchiveFileCommit": "869efcf2a718d47ca3ee5443714aee9df72d41ca",
       "ArchiveFileDateTime": "2016-06-09T02:38:05.0281078Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.es-es\\master\\developing-your-application.8fd29906a628e7dc3c644e93f1a14b01523f9aa6.es-es.xlf",
+      "BilingualFileCommit": "9bd6e645ee7e5b24246048b87e154688be109512",
+      "BilingualDateTime": "2016-06-16T18:38:51.343429Z",
       "BilingualException": null
     },
     "c5d6a25073c8c1797b5581e3af375141351cfc22": {
@@ -73820,9 +73820,9 @@
       "ArchiveFileCommit": "869efcf2a718d47ca3ee5443714aee9df72d41ca",
       "ArchiveFileDateTime": "2016-06-09T02:38:05.0281078Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.es-es\\master\\getting-started-with-ad-rms-2-0.ea2db894ddfb123d7a11829d073480489c257733.es-es.xlf",
+      "BilingualFileCommit": "9bd6e645ee7e5b24246048b87e154688be109512",
+      "BilingualDateTime": "2016-06-16T18:38:51.343429Z",
       "BilingualException": null
     },
     "9747c39742c66735b9619036cb77a914563ecf29": {
