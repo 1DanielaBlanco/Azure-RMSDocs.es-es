@@ -1,29 +1,42 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 1
+ Total Files | 2
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [Azure-RMSDocs\deploy-use\configure-usage-rights.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/3883a46440f016138dd50d061a58089253721719/Azure-RMSDocs/deploy-use/configure-usage-rights.md) | OutofSyncHandedBackSuccess | [Details](#21b92fae5fd00d80f9afd2e80d21c08bfa47b7b218)
+ [Azure-RMSDocs\deploy-use\monitor-rms-connector.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/e8b54c8d26d1a94c7e9c566d00bbb0f1a92874df/Azure-RMSDocs/deploy-use/monitor-rms-connector.md) | HandedOffSuccess | [Details](#6a418a057fc922d578f4112fcea3a8dbdc5b61dc30)
+ [Azure-RMSDocs\rms-client\sharing-app-version-release-history.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b19eadd408837ebcd77b3ae2f9520f5286fcf41f/Azure-RMSDocs/rms-client/sharing-app-version-release-history.md) | OutofSyncHandedBackSuccess | [Details](#cad9d01735d8e649875bc6bba73d29573891e1d8367)
 
 ## Item Details
-##### <a name='21b92fae5fd00d80f9afd2e80d21c08bfa47b7b218'></a> Source: [Azure-RMSDocs\deploy-use\configure-usage-rights.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/3883a46440f016138dd50d061a58089253721719/Azure-RMSDocs/deploy-use/configure-usage-rights.md)
-* Status: OutofSyncHandedBackSuccess
+##### <a name='6a418a057fc922d578f4112fcea3a8dbdc5b61dc30'></a> Source: [Azure-RMSDocs\deploy-use\monitor-rms-connector.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/e8b54c8d26d1a94c7e9c566d00bbb0f1a92874df/Azure-RMSDocs/deploy-use/monitor-rms-connector.md)
+* Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [configure-usage-rights.d1491a3e6b5496052f09d333e0ed56875eebb824.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/3512ecd9bcbf13eeb8a3910262e22c1bcb886065/ol-handoff/Microsoft/Azure-RMSDocs-pr.es-es/master/configure-usage-rights.d1491a3e6b5496052f09d333e0ed56875eebb824.es-es.xlf)
-* Handoff Datetime: 2016-06-16 20:49:24
+* Handoff File: [monitor-rms-connector.f938a97caf781680ad1036c38a0d1535b4565e92.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/e5c0aaf8f723ca46a48402612053b5bb9c5ec2df/ol-handoff/Microsoft/Azure-RMSDocs-pr.es-es/master/monitor-rms-connector.f938a97caf781680ad1036c38a0d1535b4565e92.es-es.xlf)
+* Handoff Datetime: 2016-06-17 16:46:45
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [Azure-RMSDocs\deploy-use\configure-usage-rights.md](https://github.com/Microsoft/Azure-RMSDocs-pr.es-es/blob/a1f668ca0120f4abc15cd646965072e5a2ec198d/Azure-RMSDocs/deploy-use/configure-usage-rights.md)
-* Current Handback File: [configure-usage-rights.d1491a3e6b5496052f09d333e0ed56875eebb824.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/92117d6b0edbbc0432371aa037b4bb611baf6885/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/configure-usage-rights.d1491a3e6b5496052f09d333e0ed56875eebb824.es-es.xlf)
-* Current Handback Datetime: 2016-06-16 17:01:02
-* Bilingual File: [configure-usage-rights.d1491a3e6b5496052f09d333e0ed56875eebb824.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/92117d6b0edbbc0432371aa037b4bb611baf6885/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/configure-usage-rights.d1491a3e6b5496052f09d333e0ed56875eebb824.es-es.xlf)
-* Bilingual Datetime: 2016-06-16 17:02:52
+* [Back to Top](#report-top)
+
+##### <a name='cad9d01735d8e649875bc6bba73d29573891e1d8367'></a> Source: [Azure-RMSDocs\rms-client\sharing-app-version-release-history.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b19eadd408837ebcd77b3ae2f9520f5286fcf41f/Azure-RMSDocs/rms-client/sharing-app-version-release-history.md)
+* Status: OutofSyncHandedBackSuccess
+* Target File: 
+* Handoff File: [sharing-app-version-release-history.d583d7f7a589b8ebbf1ed472a53a2d640f9519ef.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/e5c0aaf8f723ca46a48402612053b5bb9c5ec2df/ol-handoff/Microsoft/Azure-RMSDocs-pr.es-es/master/sharing-app-version-release-history.d583d7f7a589b8ebbf1ed472a53a2d640f9519ef.es-es.xlf)
+* Handoff Datetime: 2016-06-17 16:46:45
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [Azure-RMSDocs\rms-client\sharing-app-version-release-history.md](https://github.com/Microsoft/Azure-RMSDocs-pr.es-es/blob/e74a24a94a9f6e01f1baf35750420a315513b1e4/Azure-RMSDocs/rms-client/sharing-app-version-release-history.md)
+* Current Handback File: [sharing-app-version-release-history.d583d7f7a589b8ebbf1ed472a53a2d640f9519ef.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/9f7912f9cb1c9c3cf83bbcae0e442ad31d628bd7/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/sharing-app-version-release-history.d583d7f7a589b8ebbf1ed472a53a2d640f9519ef.es-es.xlf)
+* Current Handback Datetime: 2016-06-02 07:32:43
+* Bilingual File: [sharing-app-version-release-history.d583d7f7a589b8ebbf1ed472a53a2d640f9519ef.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/9f7912f9cb1c9c3cf83bbcae0e442ad31d628bd7/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/sharing-app-version-release-history.d583d7f7a589b8ebbf1ed472a53a2d640f9519ef.es-es.xlf)
+* Bilingual Datetime: 2016-06-16 10:18:53
 * [Back to Top](#report-top)
 
 
