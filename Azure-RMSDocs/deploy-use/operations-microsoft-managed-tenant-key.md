@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 06/03/2016
+ms.date: 06/14/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -42,7 +42,7 @@ La acción de volver a introducir la clave también se le conoce como revertir s
 
 -   Cree que la copia maestra de su clave de inquilino (la copia en su posesión) se ha puesto en peligro.
 
-Puede volver a introducir su clave de inquilino llamando a los servicios de soporte al cliente de Microsoft (CSS) y demostrando que es el administrador inquilino.
+Puede volver a escribir la clave de inquilino al [ponerse en contacto con el soporte técnico de Microsoft](../get-started/information-support#to-contact-microsoft-support) para abrir un **caso de soporte técnico de Azure Rights Management con una solicitud para volver a escribir la clave de inquilino de Azure RMS**. Debe demostrar que es un administrador del inquilino de Azure RMS y comprender que este proceso tarda varios días en confirmarse. Se aplican cargos de soporte técnico Standard; la acción de volver a escribir la clave de inquilino no es un servicio de soporte técnico gratuito.
 
 Cuando vuelve a introducir su clave de inquilino, el nuevo contenido está protegido usando la nueva clave de inquilino. Esto sucede en fases, por lo que para un período de tiempo, algún contenido nuevo continuará siendo protegido por la antigua clave de inquilino. El contenido protegido anteriormente permanece protegido para su antigua clave de inquilino. Para admitir este escenario, Azure RMS retiene su clave de inquilino antigua para que pueda emitir licencias para contenido antiguo.
 
@@ -54,7 +54,7 @@ Puede exportar su configuración de Azure RMS y su clave de inquilino siguiendo 
 
 ### Paso 1: Iniciar exportación
 
--   Para ello, póngase en contacto con el Soporte de servicio al cliente (CSS) de Microsoft para abrir un **caso de soporte técnico de Azure Rights Management con una solicitud para una exportación de claves de Azure RMS**. Debe demostrar que es un administrador del inquilino de Azure RMS y comprender que este proceso tarda varios días en confirmarse. Se aplican cargos de soporte técnico estándar; la exportación de la clave de inquilino no es un servicio de soporte técnico gratuito.
+-   Para ello, [póngase en contacto con el soporte técnico de Microsoft](../get-started/information-support#to-contact-microsoft-support) para abrir un **caso de soporte técnico de Azure Rights Management con una solicitud para una exportación de claves de Azure RMS**. Debe demostrar que es un administrador del inquilino de Azure RMS y comprender que este proceso tarda varios días en confirmarse. Se aplican cargos de soporte técnico estándar; la exportación de la clave de inquilino no es un servicio de soporte técnico gratuito.
 
 ### Paso 2: Esperar comprobación
 
@@ -97,13 +97,13 @@ Si tiene una infracción, la mejor acción que usted o Microsoft puede llevar a 
 
 |Descripción del incidente|Respuesta probable|
 |------------------------|-------------------|
-|Se ha filtrado su clave de inquilino.|Vuelva a introducir su clave de inquilino. Vea la sección [Vuelva a introducir su clave de inquilino](operations-tenant-key.md#re-key-your-tenant-key) de este artículo.|
+|Se ha filtrado su clave de inquilino.|Vuelva a introducir su clave de inquilino. Vea la sección [Vuelva a introducir su clave de inquilino](operations-tenant-key#re-key-your-tenant-key) de este artículo.|
 |Un individuo no autorizado o malware han tenido derechos de uso de su clave de inquilino, pero la clave en sí no se ha filtrado.|La nueva introducción de la clave de inquilino no resulta útil aquí y requiere el análisis de la causa principal. Si un error de software o de proceso ha sido el responsable de que un individuo no autorizado obtuviera acceso, dicha situación se debe resolver.|
 |Vulnerabilidad descubierta en el algoritmo de RSA, o longitud de clave, o ataques por fuerza bruta se hacen factibles computacionalmente.|Microsoft debe actualizar Azure RMS para que admita nuevos algoritmos y longitudes de clave más largas que sean resistentes, e indica a todos los clientes que renueven sus claves de inquilino.|
 
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

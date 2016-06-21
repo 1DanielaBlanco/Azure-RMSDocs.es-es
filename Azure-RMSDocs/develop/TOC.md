@@ -21,11 +21,10 @@
 #### [Código de ejemplo de iOS/OS X](ios-os-x-code-examples.md)
 #### [Recursos de la Comunidad](community-resources.md)
 ### [Instrucciones para desarrolladores y condiciones](core-concepts.md)
-#### [How to: Add authentication to your app (Incorporación de autenticación a la aplicación)](authentication-integration.md)
-#### [Procedimiento para habilitar el registro de rendimiento y errores](enabling-logging.md)
-#### [Procedimiento para obtener un identificador de aplicación de Azure](application-id.md)
-#### [How to: Use built-in rights (Uso de derechos integrados)](built-in-rights-usage-restriction-reference.md)
-#### [Uso del seguimiento de documentos](how-to-use-document-tracking.md)
+#### [Cómo registrar y habilitar para RMS la aplicación con Azure AD](authentication-integration.md)
+#### [Cómo habilitar el registro de rendimiento y errores](enabling-logging.md)
+#### [Cómo usar los derechos integrados](built-in-rights-usage-restriction-reference.md)
+#### [Cómo usar el seguimiento de documentos](how-to-use-document-tracking.md)
 #### [Términos](terms.md)
 ### [Referencia de API](api-reference-4-2.md)
 #### [Referencia de la API de Android](android-namespaces.md)
@@ -60,8 +59,14 @@
 #### [Plataformas compatibles](supported-platforms.md)
 #### [Descripción de las restricciones de uso](understanding-usage-restrictions.md)
 #### [Usage restriction reference (Referencia de restricción de uso).](usage-restriction-reference.md)
+### [Referencia de API](api-reference-2-1.md)
+#### [Constantes](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/constants)
+#### [Tipos de datos](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/data types)
+#### [Funciones](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/functions)
+#### [Estructuras](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/structures)
+#### [Códigos de error](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/Error codes)
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jun16_HO3-->
 
 

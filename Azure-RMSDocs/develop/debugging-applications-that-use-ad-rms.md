@@ -1,14 +1,24 @@
 ---
-# metadatos necesarios
+# required metadata
 
-título: Depuración de una aplicación con derechos habilitados | Azure RMS descripción: En el tema siguiente se muestra cómo depurar la aplicación y usar el registro de eventos de Windows.
-palabras clave: autor: bruceperlerms administrador: mbaldwin ms.date: 28/04/2016 ms.topic: artículo ms.prod: azure ms.service: rights-management ms.technology: techgroup-identity ms.assetid: 6F6C7651-6A6E-45DD-A0C5-F036F803249B
-# metadatos opcionales
+title: Cómo depurar una aplicación con derechos habilitados | Azure RMS
+description: En el siguiente tema se muestra cómo depurar la aplicación y utilizar el registro de eventos de Windows.
+keywords:
+author: bruceperlerms
+manager: mbaldwin
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod: azure
+ms.service: rights-management
+ms.technology: techgroup-identity
+ms.assetid: 6F6C7651-6A6E-45DD-A0C5-F036F803249B
+# optional metadata
 
 #ROBOTS:
-destinatarios: desarrolladores
+audience: developer
 #ms.devlang:
-ms.reviewer: shubhamp ms.suite: ems
+ms.reviewer: shubhamp
+ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 

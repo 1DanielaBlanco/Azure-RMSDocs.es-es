@@ -1,14 +1,24 @@
 ---
-# metadatos necesarios
+# required metadata
 
-título: Incorporación de derechos de propiedad explícitos | Azure RMS descripción: La aplicación debe agregar explícitamente derechos de "Propietario" al crear una licencia desde el principio.
-palabras clave: autor: bruceperlerms administrador: mbaldwin ms.date: 28/04/2016 ms.topic: artículo ms.prod: azure ms.service: rights-management ms.technology: techgroup-identity ms.assetid: EF43FAC4-ABB4-459D-B173-972B5716F816
-# metadatos opcionales
+title: Cómo incorporar derechos de propiedad explícitos | Azure RMS
+description: La aplicación debe agregar explícitamente derechos de propietario al crear una licencia desde cero.
+keywords:
+author: bruceperlerms
+manager: mbaldwin
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod: azure
+ms.service: rights-management
+ms.technology: techgroup-identity
+ms.assetid: EF43FAC4-ABB4-459D-B173-972B5716F816
+# optional metadata
 
 #ROBOTS:
-destinatarios: desarrolladores
+audience: developer
 #ms.devlang:
-ms.reviewer: shubhamp ms.suite: ems
+ms.reviewer: shubhamp
+ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 

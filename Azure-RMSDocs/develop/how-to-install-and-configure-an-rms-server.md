@@ -1,14 +1,24 @@
 ---
-# metadatos necesarios
+# required metadata
 
-título: Instalación, configuración y prueba con un servidor RMS | Azure RMS descripción: Instale y configure un servidor RMS para probar la aplicación con derechos habilitados.
-palabras clave: autor: bruceperlerms administrador: mbaldwin ms.date: 28/04/2016 ms.topic: artículo ms.prod: azure ms.service: rights-management ms.technology: techgroup-identity ms.assetid: 32C7F387-CF7E-4CE0-AFC9-4C63FE1E134A
-# metadatos opcionales
+title: Cómo instalar, configurar y probar con un servidor RMS |Azure RMS
+description: Instalar y configurar un servidor RMS para probar la aplicación con derechos habilitados.
+keywords:
+author: bruceperlerms
+manager: mbaldwin
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod: azure
+ms.service: rights-management
+ms.technology: techgroup-identity
+ms.assetid: 32C7F387-CF7E-4CE0-AFC9-4C63FE1E134A
+# optional metadata
 
 #ROBOTS:
-destinatarios: desarrolladores
+audience: developer
 #ms.devlang:
-ms.reviewer: shubhamp ms.suite: ems
+ms.reviewer: shubhamp
+ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
@@ -55,7 +65,7 @@ Los siguientes pasos le guiarán en la configuración del servidor de RMS e incl
 
     Para realizar una prueba con un servidor RMS, configure la detección del lado servidor o del lado cliente para permitir que el cliente de Rights Management Services 2.1 pueda detectar y establecer comunicación con el servidor RMS.
 
-    >![NOTA] La prueba con Azure RMS no requiere la configuración de detección.
+    > [!Note] La prueba con Azure RMS no requiere la configuración de detección.
 
   - En la detección del lado servidor, un administrador registra un punto de conexión de servicio (SCP) para el clúster raíz de RMS con Active Directory, y el cliente consulta a Active Directory para detectar el SCP y establecer una conexión con el servidor.
   - En la detección del lado cliente, la detección de servicios de RMS se configura en el Registro del equipo donde se ejecuta el cliente de RMS 2.1. En esta configuración, el cliente de RMS 2.1 apunta al servidor RMS que se va a usar. Cuando están presentes, no se realiza la detección del lado servidor.

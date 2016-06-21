@@ -1,14 +1,24 @@
 ---
-# metadatos necesarios
+# required metadata
 
-título: Habilitación de la aplicación de servicio para que funcione con RMS basado en la nube | Azure RMS descripción: En este tema se describe cómo configurar la aplicación de servicio para que use Azure Rights Management.
-palabras clave: autor: bruceperlerms administrador: mbaldwin ms.date: 28/04/2016 ms.topic: artículo ms.prod: azure ms.service: rights-management ms.technology: techgroup-identity ms.assetid: EA1457D1-282F-4CF3-A23C-46793D2C2F32
-# metadatos opcionales
+title: Cómo habilitar la aplicación de servicio para que funcione con RMS basado en la nube | Azure RMS
+description: En este tema se describe cómo configurar la aplicación de servicio para que use Azure Rights Management.
+keywords:
+author: bruceperlerms
+manager: mbaldwin
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod: azure
+ms.service: rights-management
+ms.technology: techgroup-identity
+ms.assetid: EA1457D1-282F-4CF3-A23C-46793D2C2F32
+# optional metadata
 
 #ROBOTS:
-destinatarios: desarrolladores
+audience: developer
 #ms.devlang:
-ms.reviewer: shubhamp ms.suite: ems
+ms.reviewer: shubhamp
+ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 

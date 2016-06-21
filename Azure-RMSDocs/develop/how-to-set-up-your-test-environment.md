@@ -34,7 +34,7 @@ Este tema contiene instrucciones sobre cómo configurar la prueba de la aplicaci
 
 Puede realizar la prueba con Azure RMS o un servidor RMS que se ejecute en Windows Server. Se recomienda que comience la prueba en Azure RMS y después, si es necesario para la implementación, realice la prueba con el servidor RMS.
 
-1. Para realizar la prueba con Azure RMS, consulte [Uso de la autenticación ADAL](how-to-use-adal-authentication,md).
+1. Para realizar la prueba con Azure RMS, vea [Uso de la autenticación ADAL](how-to-use-adal-authentication.md).
 2. Para realizar la prueba con el servidor RMS, consulte [Instalación y configuración de un servidor RMS](how-to-install-and-configure-an-rms-server.md).
 3. A continuación se describe cómo instalar Developer Runtime.
 

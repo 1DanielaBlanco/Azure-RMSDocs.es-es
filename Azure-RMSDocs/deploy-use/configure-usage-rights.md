@@ -269,7 +269,7 @@ Los derechos que se incluyen con las plantillas predeterminadas son los siguient
 
 ## Opción No reenviar para correos electrónicos
 
-Los clientes y servicios de Exchange (por ejemplo, el cliente de Outlook, la aplicación Outlook Web Access y las reglas de transporte de Exchange) tienen su propia opción de protección de derechos de información para correos electrónicos: **No reenviar**. 
+Los clientes y servicios de Exchange (por ejemplo, el cliente de Outlook, la aplicación Outlook Web Access y las reglas de transporte de Exchange) tienen una opción adicional de protección de derechos de información para correos electrónicos: **No reenviar**. 
 
 Aunque esta opción aparece para los usuarios (y los administradores de Exchange) como si fuera una plantilla predeterminada de Rights Management que se puede seleccionar, **No reenviar** no es una plantilla. Esto explica por qué no se ve en el Portal de Azure clásico cuando se visualizan y se administran las plantillas de Azure RMS. En realidad, la opción **No reenviar** es un conjunto de derechos que los usuarios aplican dinámicamente a los destinatarios de correo electrónico.
 
