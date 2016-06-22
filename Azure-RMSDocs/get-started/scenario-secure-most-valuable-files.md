@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Escenario: Proteger (algunos) archivos de gran valor | Azure RMS
+title: "Escenario: Proteger (algunos) archivos de gran valor | Azure RMS"
 description:
 keywords:
 author: cabailey

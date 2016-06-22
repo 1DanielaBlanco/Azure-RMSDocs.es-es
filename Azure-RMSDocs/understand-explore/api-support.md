@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Otras aplicaciones compatibles con las API de RMS: Instalación y configuración | Azure RMS
+title: "Otras aplicaciones compatibles con las API de RMS: Instalación y configuración | Azure RMS"
 description:
 keywords:
 author: cabailey

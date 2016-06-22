@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Escenario: Enviar un correo electrónico confidencial de la empresa | Azure RMS
+title: "Escenario: Enviar un correo electrónico confidencial de la empresa | Azure RMS"
 description:
 keywords:
 author: cabailey

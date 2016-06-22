@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Escenario: Los ejecutivos intercambian información confidencial de forma segura | Azure RMS
+title: "Escenario: Los ejecutivos intercambian información confidencial de forma segura | Azure RMS"
 description:
 keywords:
 author: cabailey

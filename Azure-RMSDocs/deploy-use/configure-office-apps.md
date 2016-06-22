@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Aplicaciones de Office: configuración para clientes | Azure RMS
+title: "Aplicaciones de Office: configuración para clientes | Azure RMS"
 description:
 keywords:
 author: cabailey

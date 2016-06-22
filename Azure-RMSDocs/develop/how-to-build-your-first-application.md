@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: IPCHelloWorld: una aplicación de ejemplo | Azure RMS
+title: "IPCHelloWorld: una aplicación de ejemplo | Azure RMS"
 description: Este tema contiene instrucciones para crear una aplicación con derechos habilitados.
 keywords:
 author: bruceperlerms

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Administración de Microsoft: Operaciones de ciclo de vida de clave de inquilino | Azure RMS
+title: "Administración de Microsoft: Operaciones de ciclo de vida de clave de inquilino | Azure RMS"
 description:
 keywords:
 author: cabailey

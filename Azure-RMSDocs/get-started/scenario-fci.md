@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Escenario: Proteger archivos en un recurso compartido de servidor de archivos | Azure RMS
+title: "Escenario: Proteger archivos en un recurso compartido de servidor de archivos | Azure RMS"
 description:
 keywords:
 author: cabailey

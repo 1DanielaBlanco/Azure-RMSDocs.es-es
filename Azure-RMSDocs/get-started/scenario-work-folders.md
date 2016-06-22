@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Escenario: Configurar carpetas de trabajo para la protección persistente | Azure RMS
+title: "Escenario: Configurar carpetas de trabajo para la protección persistente | Azure RMS"
 description:
 keywords:
 author: cabailey

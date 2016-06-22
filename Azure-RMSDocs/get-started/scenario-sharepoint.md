@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Escenario: Mantener el control de los documentos almacenados en SharePoint | Azure RMS
+title: "Escenario: Mantener el control de los documentos almacenados en SharePoint | Azure RMS"
 description:
 keywords:
 author: cabailey
