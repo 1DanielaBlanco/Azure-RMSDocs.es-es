@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/08/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -30,7 +30,7 @@ ms.suite: ems
 *Se aplica a: Azure Rights Management, Windows Server 2012, Windows Server 2012 R2*
 
 
-Utilice la siguiente información para configurar los servidores locales que utilizarán el conector de Azure Rights Management (RMS). Estos procedimientos incluyen el paso 5 de [Deploying the Azure Rights Management connector](deploy-rms-connector.md) (Implementación del conector de Azure Rights Management)..
+Utilice la siguiente información para configurar los servidores locales que utilizarán el conector de Azure Rights Management (RMS). Estos procedimientos incluyen el paso 5 de la [implementación del conector de Azure Rights Management](deploy-rms-connector.md).
 
 Antes de comenzar, asegúrese de que ha instalado y configurado el conector de RMS y que ha comprobado que se cumplen los [requisitos previos](deploy-rms-connector.md#prerequisites-for-the-rms-connector) que son aplicables a los servidores que utilizarán el conector.
 
@@ -83,8 +83,7 @@ Desventajas:
 
 ---
 
-> [!IMPORTANT]
-> En ambos casos, debe instalar los requisitos previos manualmente y configurar Exchange, SharePoint y la infraestructura de clasificación de archivos para utilizar Rights Management.
+> [!IMPORTANT] En ambos casos, debe instalar los requisitos previos manualmente y configurar Exchange, SharePoint y la infraestructura de clasificación de archivos para usar Rights Management.
 
 Para la mayoría de organizaciones, la configuración automática mediante la herramienta de configuración del servidor para el conector RMS de Microsoft será la mejor opción, ya que proporciona mayor eficacia y fiabilidad que la configuración manual.
 
@@ -92,7 +91,7 @@ Después de realizar los cambios de configuración en estos servidores, debe rei
 
 ### Cómo usar la herramienta de configuración del servidor para el conector de Microsoft RMS
 
-1.  Si todavía no ha descargado el script para la herramienta de configuración del servidor para el conector de Microsoft RMS (GenConnectorConfig.ps1), descárguelo desde el [Centro de descarga de Microsoft](http://go.microsoft.com/fwlink/?LinkId=314106)..
+1.  Si no ha descargado ya el script para la herramienta de configuración del servidor para el conector de Microsoft RMS (GenConnectorConfig.ps1), descárguela desde el [Centro de descarga de Microsoft](http://go.microsoft.com/fwlink/?LinkId=314106).
 
 2.  Guarde el archivo GenConnectorConfig.ps1 en el equipo en que ejecutará la herramienta. Si va a ejecutar la herramienta localmente, debe ser el servidor que desea configurar para comunicarse con el conector RMS. De otro modo, puede guardarla en cualquier equipo.
 
@@ -115,8 +114,7 @@ Después de realizar los cambios de configuración en estos servidores, debe rei
 
 Para ejecutar el script, debe escribir la dirección URL del conector RMS para la organización. Escriba el prefijo del protocolo (HTTP:// o HTTPS://) y el nombre del conector que ha definido en DNS para la dirección equilibrada de carga de su conector. Por ejemplo, https://connector.contoso.com. Entonces la herramienta usa esa URL para poner en contacto los servidores que ejecutan el conector RMS y obtener otros parámetros que se usan para crear las configuraciones requeridas.
 
-> [!IMPORTANT]
-> Al ejecutar esta herramienta, asegúrese de especificar el nombre del conector RMS de carga equilibrada para su organización y no el nombre de un único servidor que ejecuta el servicio del conector RMS.
+> [!IMPORTANT] Al ejecutar esta herramienta, asegúrese de especificar el nombre del conector RMS de carga equilibrada para su organización y no el nombre de un único servidor que ejecuta el servicio del conector RMS.
 
 Use las secciones siguientes para obtener información específica para cada tipo de servicio:
 
@@ -188,10 +186,9 @@ Para usar el conector RMS, estos servidores con SharePoint deben ejecutar una de
 
 -   SharePoint Server 2010
 
-Un servidor que ejecute SharePoint 2016 o SharePoint 2013 también debe ejecutar una versión del cliente MSIPC 2.1 que sea compatible con el conector RMS. Para asegurarse de que tiene una versión compatible, descargue el cliente más reciente desde el [Centro de descarga de Microsoft](http://www.microsoft.com/download/details.aspx?id=38396)..
+Un servidor que ejecute SharePoint 2016 o SharePoint 2013 también debe ejecutar una versión del cliente MSIPC 2.1 que sea compatible con el conector RMS. Para asegurarse de que tiene una versión compatible, descargue el cliente más reciente desde el [Centro de descarga de Microsoft](http://www.microsoft.com/download/details.aspx?id=38396).
 
-> [!WARNING]
-> Hay varias versiones del cliente MSIPC 2.1, de modo que asegúrese de que tiene la versión 1.0.2004.0 o posterior.
+> [!WARNING] Hay varias versiones del cliente MSIPC 2.1, de modo que asegúrese de que tiene la versión 1.0.2004.0 o posterior.
 >
 > Para ello, compruebe el número de versión de MSIPC.dll, que se encuentra en **\Archivos de programa\Active Directory Rights Management Services Client 2.1**. El cuadro de diálogo Propiedades muestra el número de la versión del cliente MSIPC 2.1.
 
@@ -248,19 +245,13 @@ Para usar el conector RMS y la Infraestructura de la clasificación de archivos 
 3.  Cree reglas de clasificación y tareas de administración de archivos para proteger los documentos con el cifrado de RMS y, a continuación, especifique una plantilla de RMS para aplicar automáticamente las directivas de RMS. Para obtener más información, consulte [Información general sobre el Administrador de recursos del servidor de archivos](http://technet.microsoft.com/library/hh831701.aspx) en la biblioteca de documentación de Windows Server.
 
 ## Pasos siguientes
-Ahora que ya está instalado y configurado el conector RMS, y sus servidores están configurados para usarlo, los administradores informáticos y los usuarios pueden proteger y consumir mensajes de correo electrónico y documentos mediante Azure RMS. Para facilitar este proceso a los usuarios, implemente la aplicación de uso compartido RMS, que instala un complemento para Office y agrega nuevas opciones de menú contextual al Explorador de archivos. Para obtener más información, vea [Rights Management sharing application administrator guide](../rms-client/sharing-app-admin-guide.md) (Guía de administrador de la aplicación Rights Management sharing)..
+Ahora que ya está instalado y configurado el conector RMS, y sus servidores están configurados para usarlo, los administradores informáticos y los usuarios pueden proteger y consumir mensajes de correo electrónico y documentos mediante Azure RMS. Para facilitar este proceso a los usuarios, implemente la aplicación de uso compartido RMS, que instala un complemento para Office y agrega nuevas opciones de menú contextual al Explorador de archivos. Para más información, vea [Rights Management sharing application administrator guide](../rms-client/sharing-app-admin-guide.md) (Guía de administrador de la aplicación Rights Management sharing).
 
-Además, debería considerar los siguientes aspectos para facilitar la supervisión del conector RMS y de cómo se usa Azure RMS en la organización:
+Puede utilizar el [mapa de ruta de implementación de Azure Rights Management](../plan-design/deployment-roadmap.md) para comprobar si existen otros pasos de configuración que podría querer hacer antes de implementar [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] para usuarios y administradores.
 
--   Los contadores de rendimiento integrados del **conector de Microsoft Rights Management**.
-
--   La herramienta [RMS Analyzer](https://www.microsoft.com/en-us/download/details.aspx?id=46437), con la opción del conector de RMS para ayudarle a supervisar el estado del conector y a identificar cualquier problema de configuración.
-
--   [Registro y análisis del uso de Azure Rights Management](log-analyze-usage.md)
-
-Puede utilizar el [mapa de ruta de implementación de Azure Rights Management](../plan-design/deployment-roadmap.md) para comprobar si existen otros pasos de configuración que podría querer hacer antes de implementar [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] para usuarios y administradores. 
+Para supervisar el conector de RMS, vea [Monitor the Azure Rights Management connector (Supervisión del conector de Azure Rights Management)](monitor-rms-connector.md). 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

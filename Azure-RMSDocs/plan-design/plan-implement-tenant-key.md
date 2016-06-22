@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 06/14/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -81,9 +81,9 @@ Usa la información y los procedimientos de esta sección si ha decidido generar
 
 
 > [!IMPORTANT]
-> Si ya ha empezado a usar [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (el servicio está activado) y tiene usuarios que ejecutan Office 2010, póngase en contacto con los Servicios de soporte al cliente (CSS) de Microsoft antes de ejecutar estos procedimientos. En función del escenario y las solicitudes, aún puede usar BYOK pero con algunas limitaciones o pasos adicionales.
+> Si ya ha empezado a usar [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (el servicio está activado) y tiene usuarios que ejecutan Office 2010, [póngase en contacto con el soporte técnico de Microsoft](../get-started/information-support#to-contact-microsoft-support) antes de ejecutar estos procedimientos. En función del escenario y las solicitudes, aún puede usar BYOK pero con algunas limitaciones o pasos adicionales.
 > 
-> Póngase en contacto con CSS también si su organización tiene políticas específicas para el manejo de claves.
+> [Póngase en contacto con el soporte técnico de Microsoft](../get-started/information-support#to-contact-microsoft-support) también si su organización tiene directivas específicas para el manejo de claves.
 
 ### Requisitos previos para BYOK
 Consulte la tabla siguiente para consultar una lista de requisitos previos para Aportar tu propia clave (BYOK).
@@ -114,7 +114,7 @@ Los procedimientos para generar y usar su propia clave de inquilino dependen de 
     > [!NOTE]
     > Su clave de inquilino se puede transferir con seguridad a través de equipos y redes que no son de confianza porque está cifrada y es segura con permisos de nivel de control de acceso, que hacen que solo se pueda usar dentro de tus HSM y los HSM de Microsoft para Azure RMS. Puede usar los scripts proporcionados en el conjunto de herramientas para comprobar las medidas de seguridad y leer más información acerca de cómo funciona en Thales: [Administración de la clave de hardware en la nube de RMS Cloud](https://www.thales-esecurity.com/knowledge-base/white-papers/hardware-key-management-in-the-rms-cloud).
 
--   **En persona:** Este método precisa que se ponga en contacto con los Servicios de soporte al cliente de Microsoft (CSS) para programar una cita a fin de transferir la clave para Azure RMS. Debe viajar a la oficina de Microsoft en Redmond, Washington, Estados Unidos de América, para transferir su clave de inquilino al universo de seguridad de Azure RMS.
+-   **En persona:** este método precisa que se [ponga en contacto con el soporte técnico de Microsoft](../get-started/information-support#to-contact-microsoft-support) para programar una cita a fin de transferir la clave para Azure RMS. Debe viajar a la oficina de Microsoft en Redmond, Washington, Estados Unidos de América, para transferir su clave de inquilino al universo de seguridad de Azure RMS.
 
 Para obtener instrucciones sobre procedimientos, seleccione si va a generar y transferir la clave de inquilino a través de Internet o en persona: 
 
@@ -148,6 +148,6 @@ Ahora que ha realizado la planeación, y si es necesario, ha generado su clave d
 
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

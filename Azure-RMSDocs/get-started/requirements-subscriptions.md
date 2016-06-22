@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 05/25/2016
+ms.date: 06/09/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
@@ -49,6 +49,8 @@ Para ver una comparación de las licencias de las funcionalidades de Azure RMS c
 ## Suscripción a Office 365
 [Evaluación gratuita de 30 días: Enterprise E3](http://go.microsoft.com/fwlink/p/?LinkID=403802)
 
+[Evaluación gratuita de 30 días: Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279)
+
 Esta suscripción está diseñada para organizaciones que quieran usar los servicios en línea de Office y usar su característica Information Rights Management (IRM), que utiliza Azure RMS. Sin embargo, no todas las suscripciones de Office 365 incluyen Azure RMS.
 
 Suscripción  |Incluye IRM 
@@ -84,7 +86,7 @@ Si su suscripción de prueba expira, perderá acceso al contenido protegido al u
 Una excepción a la pérdida de acceso tras la expiración es si su organización usó Azure RMS con el RMS para la suscripción de individuos antes de que obtuviera la suscripción de prueba. A continuación, permanece el acceso al contenido anteriormente protegido, incluso después de que expire la suscripción de prueba.
 
 ## Suscripción a Enterprise Mobility Suite
-[Prueba gratuita de 30 días](http://go.microsoft.com/fwlink/?LinkId=615385)
+[Prueba gratuita de 30 días](https://portal.office.com/Signup/Signup.aspx?OfferId=2E63A04D-BE0B-4A0F-A8CF-407C1C299221&dl=EMS)
 
 Esta suscripción está diseñada para organizaciones que quieran usar una combinación de Azure Active Directory Premium, Windows Intune y Azure Rights Management. La compatibilidad para el uso de Azure Rights Management con Office es la misma que al usar la suscripción a Azure Rights Management Premium. Para más información sobre la suscripción a Enterprise Mobility Suite, consulte la [Introducción a la movilidad empresarial Microsoft](http://go.microsoft.com/fwlink/?LinkId=615386).
 
@@ -98,6 +100,6 @@ Para obtener más información, consulte [RMS for individuals and Azure Rights M
 ## Pasos siguientes
 Para buscar otros requisitos, consulte [Requisitos de Azure Rights Management](requirements-azure-rms.md).
 
-<!--HONumber=May16_HO5-->
+<!--HONumber=Jun16_HO2-->
 
 

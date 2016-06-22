@@ -29,11 +29,10 @@ El enfoque de Microsoft Rights Management SDK 4.2 es ayudarle a compilar aplicac
 
 Los temas siguientes tienen como fin ayudarle en el proceso de diseño en el desarrollo de aplicaciones habilitadas para RMS.
 
-- [Procedimiento para agregar autenticación a la aplicación](authentication-integration.md): describe los conceptos básicos de la autenticación de usuarios en la aplicación habilitada para RMS.
-- [Procedimiento para habilitar el registro de rendimiento y errores](enabling-logging.md): RMS SDK 4.2 administra la carga de registros de diagnóstico y rendimiento mediante una única propiedad de dispositivo.
-- [Procedimiento para obtener un identificador de aplicación de Azure](application-id.md): para crear una aplicación habilitada para RMS con el SDK 4.2 de MS RMS es necesario crear un acuerdo con el equipo de RMS.
-- [Procedimiento para usar los derechos integrados](built-in-rights-usage-restriction-reference.md): describe los derechos integrados que proporciona el SDK 4.2 de RMS y las restricciones de uso que una aplicación debe exigir para cumplir con esas restricciones.
-- [Uso del seguimiento de documentos](how-to-use-document-tracking.md): el uso de la característica de seguimiento de documentos requiere algunos conocimientos sencillos sobre la administración de los metadatos asociados y el registro en el servicio.
+- [How to register and RMS enable your app with Azure AD (Procedimiento para registrar y habilitar su aplicación para RMS con Azure AD)](authentication-integration.md): describe los conceptos básicos de la autenticación de usuarios en la aplicación habilitada para RMS.
+- [How to enable error and performance logging (Procedimiento para habilitar el registro de rendimiento y errores)](enabling-logging.md): RMS SDK 4.2 administra la carga de registros de diagnóstico y rendimiento mediante una única propiedad de dispositivo.
+- [How to use built-in rights (Procedimiento para usar los derechos integrados)](built-in-rights-usage-restriction-reference.md): describe los derechos integrados que proporciona RMS SDK 4.2 y las restricciones de uso que una aplicación debe exigir para cumplir con esas restricciones.
+- [How to use document tracking (Procedimiento para usar el seguimiento de documentos)](how-to-use-document-tracking.md): el uso de la característica de seguimiento de documentos requiere algunos conocimientos sencillos sobre la administración de los metadatos asociados y el registro en el servicio.
 - [Condiciones](terms.md): colección de definiciones de terminología específicas de Rights Management Services.
 
  
@@ -43,6 +42,6 @@ Los temas siguientes tienen como fin ayudarle en el proceso de diseño en el des
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO3-->
 
 

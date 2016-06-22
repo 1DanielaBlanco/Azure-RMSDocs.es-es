@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/14/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -33,10 +33,9 @@ Use este artículo para obtener instrucciones y un script para utilizar el clien
 
 Esta solución le permite proteger automáticamente todos los archivos en una carpeta de un servidor de archivos que ejecuta Windows Server o bien proteger automáticamente archivos que cumplen criterios específicos. Por ejemplo, los archivos que se han clasificado como poseedores de información confidencial. Esta solución usa Azure Rights Management (Azure RMS) para proteger los archivos, de modo que debe tener esta tecnología implementada en su organización.
 
-> [!NOTE]
-> Aunque Azure RMS incluye un [conector](../deploy-use/deploy-rms-connector.md) que admite la infraestructura de clasificación de archivos, dicha solución admite solo la protección nativa (por ejemplo, archivos de Office).
+> [!NOTE] Aunque Azure RMS incluye un [conector](../deploy-use/deploy-rms-connector.md) que admite la infraestructura de clasificación de archivos, dicha solución admite solo la protección nativa (por ejemplo, archivos de Office).
 > 
-> Para admitir todos los tipos de archivo con infraestructura de clasificación de archivos, debe usar el módulo **Protección de RMS** de Windows PowerShell, tal como se describe en este artículo. Los cmdlets de protección de RMS, al igual que la aplicación de uso compartido de RMS, admite protección genérica, así como protección nativa, lo que significa que se pueden proteger todos los archivos. Para obtener más información sobre los diferentes niveles de protección, consulte la sección [Levels of protection – native and generic](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) (Niveles de protección: nativo y genérico) en la [Rights Management sharing application administrator guide](sharing-app-admin-guide.md) (Guía de administrador de la aplicación Rights Management sharing)..
+> Para admitir todos los tipos de archivo con infraestructura de clasificación de archivos, debe usar el módulo **Protección de RMS** de Windows PowerShell, tal como se describe en este artículo. Los cmdlets de protección de RMS, al igual que la aplicación de uso compartido de RMS, admite protección genérica, así como protección nativa, lo que significa que se pueden proteger todos los archivos. Para más información acerca de los diferentes niveles de protección, consulte la sección [Niveles de protección: nativo y genérico](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) en la [Guía de administrador de la aplicación de uso compartido Rights Management](sharing-app-admin-guide.md).
 
 Las instrucciones siguientes sirven para Windows Server 2012 R2 o Windows Server 2012. Si ejecuta otras versiones compatibles de Windows, es posible que tenga que adaptar algunos de los pasos por las diferencias entre la versión de su sistema operativo y la descrita en este artículo.
 
@@ -49,7 +48,7 @@ Requisitos previos de estas instrucciones:
 
     -   Ha identificado una carpeta local que contiene archivos para proteger con Rights Management. Por ejemplo, C:\FileShare.
 
-    -   Ha instalado la herramienta de protección de RMS, incluidos los requisitos previos de la herramienta (como el cliente RMS) y de Azure RMS (como la cuenta principal de servicio). Para obtener más información, consulte [RMS Protection Cmdlets](https://msdn.microsoft.com/library/azure/mt433195.aspx) (Cmdlets de protección de RMS)..
+    -   Ha instalado la herramienta de protección de RMS, incluidos los requisitos previos de la herramienta (como el cliente RMS) y de Azure RMS (como la cuenta principal de servicio). Para obtener más información, consulte [Cmdlets de protección de RMS](https://msdn.microsoft.com/library/azure/mt433195.aspx).
 
     -   Si desea cambiar el nivel predeterminado de protección de RMS (nativo o genérico) para las extensiones de nombre de archivo específicas, ha editado el registro como se describe en la página [Configuración de API de archivo](https://msdn.microsoft.com/library/dn197834%28v=vs.85%29.aspx) .
 
@@ -63,7 +62,7 @@ Requisitos previos de estas instrucciones:
 
     -   Clave simétrica
 
--   Ha sincronizado sus cuentas de usuario de Active Directory locales con Azure Active Directory u Office 365, incluyendo su dirección de correo electrónico. Esto es necesario para todos los usuarios que puedan necesitar acceder a los archivos después de que FCI y Azure RMS los hayan protegido. Si no realiza este paso (por ejemplo, en un entorno de prueba), existe la posibilidad de que se bloquee el acceso de los usuarios a estos archivos. Si necesita más información sobre la configuración de esta cuenta, consulte [Preparing for Azure Rights Management](../plan-design/prepare.md) (Preparación de Azure Rights Management)..
+-   Ha sincronizado sus cuentas de usuario de Active Directory locales con Azure Active Directory u Office 365, incluyendo su dirección de correo electrónico. Esto es necesario para todos los usuarios que puedan necesitar acceder a los archivos después de que FCI y Azure RMS los hayan protegido. Si no realiza este paso (por ejemplo, en un entorno de prueba), existe la posibilidad de que se bloquee el acceso de los usuarios a estos archivos. Si necesita más información sobre la configuración de esta cuenta, consulte [Preparing for Azure Rights Management](../plan-design/prepare.md) (Preparación de Azure Rights Management).
 
 -   Ha identificado la plantilla Rights Management para su utilización, que protegerá los archivos. Asegúrese de que conoce el identificador de esta plantilla usando el cmdlet [Get-RMSTemplate](https://msdn.microsoft.com/library/azure/mt433197.aspx) .
 
@@ -129,7 +128,7 @@ Al final de estas instrucciones, todos los archivos de su carpeta seleccionada s
         Import-Module "C:\Program Files\WindowsPowerShell\Modules\RMSProtection\RMSProtection.dll"
         ```
 
-3.  Firme el script. Si no firma el script (más seguro), debe configurar Windows PowerShell en los servidores que lo ejecutan. Por ejemplo, ejecute una sesión de Windows PowerShell mediante la opción **Ejecutar como administrador** y escriba: **Set-ExecutionPolicy Unrestricted**. Sin embargo, esta configuración permite la ejecución de todos los scripts sin firmar (menos seguro).
+3.  Firme el script. Si no firma el script (más seguro), debe configurar Windows PowerShell en los servidores que lo ejecutan. Por ejemplo, ejecute una sesión de Windows PowerShell mediante la opción **Ejecutar como administrador** y escriba: **Set-ExecutionPolicy RemoteSigned**. Sin embargo, esta configuración permite la ejecución de todos los scripts sin firmar cuando se almacenan en este servidor (menos seguro).
 
     Para obtener más información acerca de la firma de scripts de Windows PowerShell, consulte [about_Signing](https://technet.microsoft.com/library/hh847874.aspx) en la biblioteca de documentación de PowerShell.
 
@@ -161,11 +160,11 @@ Ahora podemos crear una regla de clasificación que usa esta propiedad.
 
         -   **Habilitado**: Mantenga el valor predeterminado, que es por lo que esta casilla de verificación está seleccionada.
 
-        -   **Descripción**: escriba **Clasificar todos los archivos en la carpeta &lt;nombre de carpeta&gt; para Rights Management**..
+        -   **Descripción**: escriba **Clasificar todos los archivos en la carpeta &lt;nombre de carpeta&gt; para Rights Management**.
 
             Reemplace *&lt;nombre de carpeta&gt;* por su nombre elegido para la carpeta. Por ejemplo, **clasifique todos los archivos en la carpeta C:\FileShare para Rights Management**.
 
-        -   **Ámbito**: Agregue su carpeta elegida. Por ejemplo, **C:\FileShare**..
+        -   **Ámbito**: Agregue su carpeta elegida. Por ejemplo, **C:\FileShare**.
 
             No seleccione las casillas de verificación.
 
@@ -207,7 +206,7 @@ Ahora que ha completado la configuración de clasificación, está listo para co
 
             Reemplace *&lt;nombre de carpeta&gt;* por su nombre elegido para la carpeta. Por ejemplo, **Proteger archivos en C:\FileShare con Rights Management y una plantilla mediante un script de Windows PowerShell**.
 
-        -   **Ámbito**: Seleccione su carpeta elegida. Por ejemplo, **C:\FileShare**..
+        -   **Ámbito**: Seleccione su carpeta elegida. Por ejemplo, **C:\FileShare**.
 
             No seleccione las casillas de verificación.
 
@@ -262,25 +261,24 @@ Ahora que ha completado la configuración de clasificación, está listo para co
 
 1.  Ejecute la regla de clasificación:
 
-    1.  Haga clic en **Reglas de clasificación** &gt; **Ejecutar clasificación con todas las reglas ahora**
+    1.  Haga clic en **Reglas de clasificación** &gt; **Ejecutar clasificación con todas las reglas ahora**.
 
-    2.  Haga clic en **Esperar a que termine la clasificación** y, después, haga clic en **Aceptar**..
+    2.  Haga clic en **Esperar a que termine la clasificación**y, a continuación, haga clic en **Aceptar**.
 
-2.  Espere a que se cierre el cuadro de diálogo **Ejecutando clasificación** para cerrar y, a continuación, ver los resultados en el informe que se muestra automáticamente. Debe ver **1** para el campo **Propiedades** y el número de archivos de su carpeta. Confírmelo mediante el Explorador de archivos y comprobando las propiedades de archivos de su carpeta elegida. En la pestaña **Clasificación** ficha, debe ver **RMS** como nombre de la propiedad y **Sí** para su **Valor**..
+2.  Espere a que se cierre el cuadro de diálogo **Ejecutando clasificación** para cerrar y, a continuación, ver los resultados en el informe que se muestra automáticamente. Debe ver **1** para el campo **Propiedades** y el número de archivos de su carpeta. Confírmelo mediante el Explorador de archivos y comprobando las propiedades de archivos de su carpeta elegida. En la pestaña **Clasificación** ficha, debe ver **RMS** como nombre de la propiedad y **Sí** para su **Valor**.
 
 3.  Ejecute la tarea de administración de archivos:
 
     1.  Haga clic en **Tareas de administración de archivos** &gt; **Proteger archivos con RMS** &gt; **Ejecutar tarea de administración de archivos ahora**.
 
-    2.  Haga clic en **Esperar a que termine la tarea** y, después, haga clic en **Aceptar**..
+    2.  Haga clic en **Esperar a que termine la clasificación**y, a continuación, haga clic en **Aceptar**.
 
 4.  Espere a que se cierre el cuadro de diálogo **Ejecutando tarea de administración de archivos** para cerrar y, a continuación, ver los resultados en el informe que se muestra automáticamente. Debe ver el número de archivos que se encuentran en su carpeta elegida en el campo **Archivos** . Confirme que los archivos de su carpeta elegida están actualmente protegidos por RMS. Por ejemplo, si su carpeta elegida es C:\FileShare, escriba lo siguiente en una sesión de Windows PowerShell y confirme que no hay ningún archivo con el estado **Sin proteger**:
 
     ```
     foreach ($file in (Get-ChildItem -Path C:\FileShare -Force | where {!$_.PSIsContainer})) {Get-RMSFileStatus -f $file.PSPath}
     ```
-    > [!TIP]
-    > Algunas sugerencias para la solución de problemas:
+    > [!TIP] Algunas sugerencias para la solución de problemas:
     > 
     > -   Si ve **0** en el informe, en lugar del número de archivos de su carpeta, esto indica que el script no se ha ejecutado. En primer lugar, compruebe el propio script cargándolo en ISE de Windows PowerShell para validar el contenido del script e intenta ejecutarlo para ver si se muestra algún error. Sin argumentos especificados, el script intentará conectarse y autenticarse en Azure RMS.
     > 
@@ -302,12 +300,12 @@ Cuando haya confirmado que estas tareas se ejecutan satisfactoriamente, puede ce
 ## Modificar las instrucciones para proteger archivos de forma selectiva
 Cuando tenga las instrucciones anteriores funcionando, será muy fácil modificarlas para obtener una configuración más sofisticada. Por ejemplo, proteja archivos mediante el uso del mismo script, pero solo para los archivos que contienen información de identificación personal y seleccione quizás una plantilla con permisos más restrictivos.
 
-Para ello, utilice una de las propiedades de clasificación integradas (por ejemplo, **Información de identificación personal**) o cree su propia nueva propiedad. A continuación, cree una nueva regla que utilice esta propiedad. Por ejemplo, puede seleccionar **Clasificador de contenido**, elegir la propiedad **Información de identificación personal** con un valor de **Alto** y configurar el modelo de expresiones o cadenas que identifica el archivo que se va a configurar para esta propiedad (como la cadena "**Fecha de nacimiento**").").
+Para ello, utilice una de las propiedades de clasificación integradas (por ejemplo, **Información de identificación personal**) o cree su propia nueva propiedad. A continuación, cree una nueva regla que utilice esta propiedad. Por ejemplo, puede seleccionar **Clasificador de contenido**, elija la propiedad **Información de identificación personal** con un valor de **Alto**y configure el modelo de expresiones o cadenas que identifica el archivo que se va a configurar para esta propiedad (como la cadena "**Fecha de nacimiento**").
 
-Ahora todo lo que debe hacer es crear una nueva tarea de administración de archivos que utilice el mismo script, aunque quizás con una plantilla diferente, así como configurar la condición para la propiedad de clasificación que acaba de configurar. Por ejemplo, en lugar de la condición que hemos configurado previamente (propiedad**RMS**, **Igual**, **Sí**), seleccione la propiedad **Información de identificación personal** con el valor **Operador** establecido en **Igual** y el **Valor** de **Alto**..
+Ahora todo lo que debe hacer es crear una nueva tarea de administración de archivos que utilice el mismo script, aunque quizás con una plantilla diferente, así como configurar la condición para la propiedad de clasificación que acaba de configurar. Por ejemplo, en lugar de la condición que hemos configurado previamente (propiedad**RMS** , **Igual**, **Sí**), seleccione la propiedad **Información de identificación personal** con el valor **Operador** establecido en **Igual** y el **Valor** de **Alto**.
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -22,6 +22,7 @@
 ### [Instalación y configuración del conector RMS](install-configure-rms-connector.md)
 ### [Configurar servidores](configure-servers-rms-connector.md)
 #### [Configuración del Registro](rms-connector-registry-settings.md)
+### [Supervisar el conector](monitor-rms-connector.md)
 ## [Comprobación de Azure RMS](verify.md)
 ## [Ayuda a los usuarios para proteger archivos](help-users.md)
 ## [Registro y análisis de uso](log-analyze-usage.md)
@@ -35,6 +36,6 @@
 # [Desarrollo y personalización de aplicaciones](/rights-management/develop/developers-guide)
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 
