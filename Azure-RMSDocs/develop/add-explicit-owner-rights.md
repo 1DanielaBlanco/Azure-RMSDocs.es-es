@@ -1,26 +1,22 @@
 ---
-# required metadata
-
-title: Cómo incorporar derechos de propiedad explícitos | Azure RMS
-description: La aplicación debe agregar explícitamente derechos de propietario al crear una licencia desde cero.
-keywords:
+title: "Cómo incorporar derechos de propiedad explícitos | Azure RMS"
+description: "La aplicación debe agregar explícitamente derechos de propietario al crear una licencia desde cero."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: EF43FAC4-ABB4-459D-B173-972B5716F816
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
+ms.openlocfilehash: b4eec28ef5e0a44c5c60f88558b6168bce9718b2
+
 
 ---
 
@@ -32,7 +28,8 @@ La aplicación debe agregar explícitamente derechos de propietario al crear una
 
 Cuando la aplicación está creando un controlador de licencia utilizando [**IpcCreateLicenseFromScratch**](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch), debe conceder al propietario todos los derechos explícitamente.
 
->[!NOTE] Si configura un usuario como "propietario" con [**IpcSetLicenseProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty) con la propiedad **IPC\_LI\_OWNER**, no le concede todos los permisos.
+>[!NOTE] 
+> Si configura un usuario como "propietario" con [**IpcSetLicenseProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty) con la propiedad **IPC\_LI\_OWNER**, no le concede todos los permisos.
 
 En el ejemplo de código siguiente solo se muestran los pasos necesarios para crear y agregar derechos específicos a una licencia determinada.
 
@@ -118,6 +115,7 @@ Estos usuarios se agregan los dos derechos siguientes:
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
