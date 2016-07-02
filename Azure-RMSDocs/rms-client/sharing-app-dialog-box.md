@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Opciones de cuadro de diálogo para la aplicación Rights Management sharing | Azure RMS
-description:
-keywords:
+title: "Opciones de cuadro de diálogo para la aplicación Rights Management sharing | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7b91ab30-6363-4929-bcbd-4dfbd05f644a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
+ms.openlocfilehash: 771a80843ca5ab01cd06bd4e76c827469b0e9f00
+
 
 ---
 
@@ -57,11 +51,11 @@ Además de las opciones que puede elegir, es posible que también se pregunte lo
 -   Cuando se **protege genéricamente un archivo**, las personas no autorizadas no pueden abrir el archivo. Sin embargo, cuando una persona autorizada abre el archivo, puede reenviarlo desprotegido a otras personas o guardarlo en una ubicación a la que podrían acceder otros usuarios. A pesar de ello, verán un mensaje que les informa de los permisos que tienen para el archivo y se les solicitará que los respeten, aunque no es posible obligar al cumplimiento de esta protección. Además, al proteger un archivo de forma genérica, no es posible restringir los permisos más allá de la autorización. Por ejemplo, no se puede restringir el contenido a Solo ver, o a No imprimir.
 
     > [!NOTE]
-    > Un archivo protegido genéricamente siempre tiene la extensión de nombre de archivo **.pfile**..
+    > Un archivo protegido genéricamente siempre tiene la extensión de nombre de archivo **.pfile**.
 
 -   En cambio, cuando se usa la **protección integrada (nativa)** de Rights Management con aplicaciones que la admiten (por ejemplo, archivos de Office), la protección se aplica al archivo aunque este se envíe a otra persona o se guarde en otra ubicación. Además, al proteger estos archivos, puede usar permisos restrictivos, como el permiso de solo lectura o el permiso para editar pero no imprimir ni copiar. Por ejemplo, puede seleccionar **Visor – Solo ver**, de modo que el contenido no se pueda editar, imprimir ni copiar.
 
-Para obtener información técnica adicional, consulte la sección [Levels of protection – native and generic](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) (Niveles de protección: nativo y genérico) de la [Rights Management sharing application administrator guide](sharing-app-admin-guide.md) (Guía de administrador de la aplicación Rights Management sharing)..
+Para obtener información técnica adicional, consulte la sección [Niveles de protección: nativa y genérica](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) de la [Guía del administrador de la aplicación Microsoft Rights Management sharing](sharing-app-admin-guide.md).
 
 ## ¿Qué es el archivo .ppdf que se crea automáticamente?
 
@@ -84,6 +78,7 @@ Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de 
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

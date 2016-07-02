@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Implementación de la aplicación | Azure RMS
-description: En este tema se describen las opciones y el proceso de implementación de la aplicación con derechos habilitados
-keywords:
+title: "Implementación de la aplicación | Azure RMS"
+description: "En este tema se describen las opciones y el proceso de implementación de la aplicación con derechos habilitados"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4B785564-6839-49ED-A243-E2A6DFF88B2E
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 872bb0c20db2ef8d661d321598a2b1fe61d69316
+ms.openlocfilehash: 902721ae3e69afd144c552b8ee0a916958e80afc
+
 
 ---
 
@@ -84,7 +80,8 @@ El cliente de RMS 2.1. es un software diseñado para los equipos cliente con el 
 El cliente de RMS 2.1 no es un componente del sistema operativo Windows. El cliente de RMS 2.1 se distribuye como una descarga opcional que, con la confirmación y la aceptación de su contrato de licencia, se puede distribuir libremente con el software de terceros para habilitar el contenido de acceso de cliente que está protegido por derechos mediante el uso y la implementación de servidores de RMS en su entorno.
 
 
-> [!IMPORTANT] El cliente de AD RMS 2.1 es específico de la arquitectura y debe coincidir con la arquitectura del sistema operativo de destino.
+> [!IMPORTANT]
+> El cliente de AD RMS 2.1 es específico de la arquitectura y debe coincidir con la arquitectura del sistema operativo de destino.
 
 
 ## Opciones de instalación del cliente de RMS 2.1
@@ -137,6 +134,7 @@ Para obtener más información sobre cómo habilitar la aplicación para que use
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

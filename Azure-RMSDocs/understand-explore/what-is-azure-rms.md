@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: ¿Qué es Rights Management de Azure? | Azure RMS
-description:
-keywords:
+title: "¿Qué es Rights Management de Azure? | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: aeeebcd7-6646-4405-addf-ee1cc74df5df
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: e2de70fcbe0b284368b1e52c34f42d1cf4554edd
+ms.openlocfilehash: 6fe5759a790a728da7a16453e5b3ab5d523bb9fd
+
 
 ---
 
@@ -43,7 +37,7 @@ Sin embargo, lo que es muy importante, las personas y los servicios autorizados 
 La siguiente imagen muestra de qué manera Azure RMS funciona como una solución de Rights Management para Office 365 así como para servicios y servidores locales. Asimismo, verá que admite populares dispositivos de usuario final que ejecutan Windows, Mac OS, iOS, Android y Windows Phone.
 
 > [!NOTE]
-Puede usar Azure RMS con diferentes suscripciones en la nube que incluyan Office 365, Enterprise Mobility Suite y Azure RMS Premium. Para obtener más información, consulte la sección [Cloud subscriptions that support Azure RMS](../get-started/requirements-subscriptions.md) (Suscripciones en la nube que son compatibles con Azure RMS)..
+Puede usar Azure RMS con diferentes suscripciones en la nube que incluyan Office 365, Enterprise Mobility Suite y Azure RMS Premium. Para información, consulte la sección [Suscripciones en la nube que son compatibles con Azure RMS](../get-started/requirements-subscriptions.md).
 
 ![Cómo funciona Azure RMS](../media/AzRMS_elements.png)
 
@@ -59,14 +53,15 @@ Para más información acerca de Azure RMS:
 
 
 
-Si quiere algo más rápido y probar Azure RMS usted mismo, consulte [Quick start tutorial for Azure Rights Management](../get-started/quick-start-tutorial.md) (Tutorial de inicio rápido de Azure Rights Management)..
+Si quiere algo más rápido y probar Azure RMS usted mismo, consulte [Quick start tutorial for Azure Rights Management](../get-started/quick-start-tutorial.md) (Tutorial de inicio rápido de Azure Rights Management).
 
 Sin embargo, si está listo para comenzar a implementar Azure RMS para su organización, consulte [Azure Rights Management deployment roadmap](../plan-design/deployment-roadmap.md) (Plan para la implementación de Azure Rights Management) para ver los pasos de implementación y los vínculos con instrucciones de procedimiento.
 
 > [!TIP]
-> Para obtener más información y ayuda, use los recursos y vínculos que aparecen en [Information and support for Azure Rights Management](../get-started/information-support.md) (Información y servicio de atención de Azure Rights Management)..
+> Para obtener información adicional y ayuda, use los recursos y vínculos que aparecen en [Information and support for Azure Rights Management](../get-started/information-support.md) (Información y soporte de Azure Rights Management).
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 
