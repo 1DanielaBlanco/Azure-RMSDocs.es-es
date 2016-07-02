@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Información general técnica de la aplicación Microsoft Rights Management sharing | Azure RMS
-description:
-keywords:
+title: "Información general técnica de la aplicación Microsoft Rights Management sharing | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/20/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f7b13fa4-4f8e-489a-ba46-713d7a79f901
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
+ms.openlocfilehash: 4f63cb7911661104113d19ecd84ef7c80a874408
+
 
 ---
 
@@ -66,7 +60,8 @@ Además, cuando la aplicación RMS sharing protege de forma nativa un archivo de
 
 En el caso de los archivos que están protegidos de manera genérica, la extensión del nombre de archivo original siempre se cambia a .pfile.
 
-> [!WARNING] Si dispone de firewalls, servidores proxy web o software de seguridad que inspeccionan o realizan acciones en función de las extensiones de nombre de archivo, puede que tenga que volver a configurarlos para que admitan las nuevas extensiones de nombre de archivo.
+> [!WARNING]
+> Si dispone de firewalls, servidores proxy web o software de seguridad que inspeccionan o realizan acciones en función de las extensiones de nombre de archivo, puede que tenga que volver a configurar estos para admitir las nuevas extensiones de nombre de archivo.
 
 |Extensión de nombre de archivo original|Extensión de nombre de archivo con protección de RMS|
 |--------------------------------|-------------------------------------|
@@ -144,6 +139,7 @@ Puede realizar modificaciones parecidas en el Registro para otras situaciones ca
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

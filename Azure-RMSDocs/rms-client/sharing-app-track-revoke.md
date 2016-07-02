@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Seguimiento y revocación de documentos cuando se usa la aplicación RMS sharing | Azure RMS
-description:
-keywords:
+title: "Seguimiento y revocación de documentos cuando se usa la aplicación RMS sharing | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 61f349ce-bdd2-45c1-acc5-bc83937fb187
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
+ms.openlocfilehash: 9d5c9558e809779940fac095a789730d5e5924e6
+
 
 ---
 
@@ -43,11 +37,11 @@ Cuando tenga acceso a este sitio, inicie sesión para hacer un seguimiento de su
 
 -   Si quiere configurar notificaciones por correo electrónico: Haga clic en **Configuración** y seleccione cómo, y si, se le notificará por correo electrónico cuando se acceda al documento.
 
--   Si tiene alguna pregunta o quiere proporcionar comentarios sobre el sitio de seguimiento de documentos: haga clic en el icono de ayuda para obtener acceso a [FAQ for Document Tracking](http://go.microsoft.com/fwlink/?LinkId=523977) (Preguntas más frecuentes sobre el seguimiento de documentos)..
+-   Si tiene alguna pregunta o quiere proporcionar comentarios sobre el sitio de seguimiento de documentos: Haga clic en el icono de ayuda para obtener acceso a [P+F sobre el seguimiento de documentos](http://go.microsoft.com/fwlink/?LinkId=523977).
 
 ## Uso de Office para tener acceso al sitio de seguimiento de documentos
 
--   Para las aplicaciones de Office, Word, Excel y PowerPoint: en la pestaña **Inicio** del grupo **RMS** , haga clic en **Uso compartido seguro** y luego haga clic en **Hacer seguimiento de uso**..
+-   Para las aplicaciones de Office, Word, Excel y PowerPoint: En la pestaña **Inicio** del grupo **RMS** , haga clic en **Uso compartido seguro**y luego haga clic en **Hacer seguimiento de uso**.
 
     ![Seguimiento de uso desde aplicaciones de Office cuando se usa la aplicación RMS sharing ](../media/ADRMS_MSRMSApp_OfficeToolbarTrackUsage.png)
 
@@ -55,7 +49,7 @@ Cuando tenga acceso a este sitio, inicie sesión para hacer un seguimiento de su
 
     ![Selección del seguimiento de uso desde Outlook al usar la aplicación RMS sharing ](../media/ADRMS_MSRMSApp_OutlookTrackUsage.png)
 
-Si no ve estas opciones de RMS, es probable que la aplicación RMS sharing no esté instalada en el equipo, que no esté instalada la última versión o que el equipo deba reiniciarse para completar la instalación. Para obtener más información sobre cómo instalar la aplicación de uso compartido, consulte [Download and install the Rights Management sharing application](install-sharing-app.md) (Descarga e instalación de la aplicación Rights Management sharing)..
+Si no ve estas opciones de RMS, es probable que la aplicación RMS sharing no esté instalada en el equipo, que no esté instalada la última versión o que el equipo deba reiniciarse para completar la instalación. Para más información sobre cómo instalar la aplicación de uso compartido, consulte [Descarga e instalación de la aplicación Rights Management sharing](install-sharing-app.md).
 
 ### Otras maneras de realizar el seguimiento de los documentos y revocarlos
 Además de realizar el seguimiento de los documentos en equipos Windows mediante aplicaciones de Office, también puede usar estas alternativas:
@@ -68,7 +62,7 @@ Además de realizar el seguimiento de los documentos en equipos Windows mediante
 
 #### Uso de un explorador web para obtener acceso al sitio de seguimiento de documentos
 
--   Mediante un explorador compatible, vaya al [sitio de seguimiento de documentos](http://go.microsoft.com/fwlink/?LinkId=529562)..
+-   Mediante un explorador compatible, vaya al [sitio de seguimiento de documentos](http://go.microsoft.com/fwlink/?LinkId=529562).
 
     Exploradores admitidos: Se recomienda usar por lo menos la versión 10 de Internet Explorer, pero puede usar cualquiera de los siguientes exploradores para el sitio de seguimiento de documentos:
 
@@ -105,6 +99,7 @@ Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de 
 [Guía de usuario de la aplicación de uso compartido Rights Management](sharing-app-user-guide.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

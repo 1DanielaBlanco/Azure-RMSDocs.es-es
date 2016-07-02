@@ -1,27 +1,22 @@
 ---
-# required metadata
-
-title: Autenticación de ADAL de la aplicación habilitada para RMS | Azure RMS
-description: Describe el proceso para la autenticación con AAL
+title: "Autenticación de ADAL de la aplicación habilitada para RMS | Azure RMS"
+description: "Describe el proceso para la autenticación con AAL"
 keywords: authentication, RMS, ADAL
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f89f59b7-33d1-4ab3-bb64-1e9bda269935
-
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 4c3625676c7e794ef133c75881f666bae80e0513
+ms.openlocfilehash: 9200ea44671776ced8781c1e13e71871f5bdf014
+
 
 ---
 
@@ -43,13 +38,15 @@ En este tema se describen dos métodos de autenticación con sus ejemplos de có
 
   Use este método si quiere que el cliente de RMS muestre un mensaje de autenticación de ADAL cuando sea necesaria la autenticación. Para obtener más información sobre cómo configurar la aplicación, consulte la sección "Autenticación interna".
 
-  > [!Note] Si la aplicación usa actualmente AD RMS SDK 2.1 con el Ayudante para el inicio de sesión, se recomienda que use el método de autenticación interna como ruta de acceso de la migración de la aplicación.
+  > [!Note] 
+  > Si la aplicación usa actualmente AD RMS SDK 2.1 con el Ayudante para el inicio de sesión, se recomienda que use el método de autenticación interna como ruta de acceso de la migración de la aplicación.
 
 - **Autenticación externa**: autenticación de OAuth administrada por la aplicación.
 
   Use este método si quiere que la aplicación administre su propia autenticación de OAuth. Con este método, el cliente de RMS realizará una devolución de llamada definida por la aplicación cuando sea necesaria la autenticación. Para obtener un ejemplo detallado, consulte "Autenticación externa" al final de este tema.
 
-  > [!Note] La autenticación externa no permite cambiar los usuarios; el cliente de RMS usa siempre el usuario predeterminado para un inquilino de RMS determinado.
+  > [!Note] 
+  > La autenticación externa no permite cambiar los usuarios; el cliente de RMS usa siempre el usuario predeterminado para un inquilino de RMS determinado.
 
 ## Autenticación interna
 
@@ -114,18 +111,19 @@ C++ extern HRESULT GetADALToken(LPVOID pContext, const IPC_NAME_VALUE_LIST& Para
 
 ## Temas relacionados
 
-* [Tipos de datos](/rights-management/sdk/2.1/api/win/datatypes)
-* [Propiedades del entorno](/rights-management/sdk/2.1/api/win/environmentproperties)
+* [Tipos de datos](/rights-management/sdk/2.1/api/win/data%20types)
+* [Propiedades del entorno](/rights-management/sdk/2.1/api/win/environment%20properties#msipc_environment_properties)
 * [IpcCreateOAuth2Token](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreateoauth2token)
 * [IpcGetKey](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgetkey)
 * [IpcInitialize](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize)
 * [IPC_CREDENTIAL](/rights-management/sdk/2.1/api/win/IPC_CREDENTIAL)
 * [IPC_NAME_VALUE_LIST](/rights-management/sdk/2.1/api/win/IPC_NAME_VALUE_LIST)
-* [IPC_OAUTH2_CALLBACK_INFO](/rights-management/sdk/2.1/api/win/IIPC_OAUTH2_CALLBACK_INFO)
+* [IPC_OAUTH2_CALLBACK_INFO](/rights-management/sdk/2.1/api/win/ipc_oauth2_callback_info#msipc_ipc_oath2_callback_info)
 * [IPC_PROMPT_CTX](/rights-management/sdk/2.1/api/win/IPC_PROMPT_CTX)
-* [IPC_AAD_APPLICATION_ID](/rights-management/sdk/2.1/api/win/IIPC_AAD_APPLICATION_ID)
+* [IPC_AAD_APPLICATION_ID](/rights-management/sdk/2.1/api/win/ipc_aad_application_id#msipc_ipc_aad_application_id)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO1-->
 
 
