@@ -6,21 +6,21 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [Azure-RMSDocs\rms-client\sharing-app-protect-by-email.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c611fa8a846612fed238e59e5077be67f6f9531a/Azure-RMSDocs/rms-client/sharing-app-protect-by-email.md) | InSyncHandedBackSuccess | [Details](#ea7f186e01606ca5e487bdfaab87d1eb0f2f41d3362)
+ [Azure-RMSDocs\includes\rms-quickstart-intro-include.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5b56229ad5e234663a23812b09a7f934d6738e5a/Azure-RMSDocs/includes/rms-quickstart-intro-include.md) | InSyncHandedBackSuccess | [Details](#20715a7298d29bcf817ddbfc809eb84ead8d97ef145)
 
 ## Item Details
-##### <a name='ea7f186e01606ca5e487bdfaab87d1eb0f2f41d3362'></a> Source: [Azure-RMSDocs\rms-client\sharing-app-protect-by-email.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c611fa8a846612fed238e59e5077be67f6f9531a/Azure-RMSDocs/rms-client/sharing-app-protect-by-email.md)
+##### <a name='20715a7298d29bcf817ddbfc809eb84ead8d97ef145'></a> Source: [Azure-RMSDocs\includes\rms-quickstart-intro-include.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5b56229ad5e234663a23812b09a7f934d6738e5a/Azure-RMSDocs/includes/rms-quickstart-intro-include.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [Azure-RMSDocs\rms-client\sharing-app-protect-by-email.md](https://github.com/Microsoft/Azure-RMSDocs-pr.es-es/blob/7cd7eaf5ea54a99fcd52bccdcae64fb05057dab2/Azure-RMSDocs/rms-client/sharing-app-protect-by-email.md)
-* Handoff File: [sharing-app-protect-by-email.60ccc68f471a9df891c683bc98ecdc180e8a231b.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/8ff02263b8f9a75300eff2f69c23b2c9a4ac6265/ol-handoff/Microsoft/Azure-RMSDocs-pr.es-es/master/sharing-app-protect-by-email.60ccc68f471a9df891c683bc98ecdc180e8a231b.es-es.xlf)
+* Target File: [Azure-RMSDocs\includes\rms-quickstart-intro-include.md](https://github.com/Microsoft/Azure-RMSDocs-pr.es-es/blob/53b12e2f155466b2a3dbc04134e1bf4a202d25a6/Azure-RMSDocs/includes/rms-quickstart-intro-include.md)
+* Handoff File: [rms-quickstart-intro-include.31997a23f9b8ff765da303310452d81dda7d65b4.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/8ff02263b8f9a75300eff2f69c23b2c9a4ac6265/ol-handoff/Microsoft/Azure-RMSDocs-pr.es-es/master/rms-quickstart-intro-include.31997a23f9b8ff765da303310452d81dda7d65b4.es-es.xlf)
 * Handoff Datetime: 2016-06-27 12:33:46
 * Handoff Reason: Include
-* Archive File: [sharing-app-protect-by-email.60ccc68f471a9df891c683bc98ecdc180e8a231b.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/8640f4d7ef01618daceb13d6651d8b73f695e52a/ol-handoff/Microsoft/Azure-RMSDocs-pr.es-es/master/archive/sharing-app-protect-by-email.60ccc68f471a9df891c683bc98ecdc180e8a231b.es-es.xlf)
+* Archive File: [rms-quickstart-intro-include.31997a23f9b8ff765da303310452d81dda7d65b4.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/8640f4d7ef01618daceb13d6651d8b73f695e52a/ol-handoff/Microsoft/Azure-RMSDocs-pr.es-es/master/archive/rms-quickstart-intro-include.31997a23f9b8ff765da303310452d81dda7d65b4.es-es.xlf)
 * Archive Datetime: 2016-07-01 23:46:12
-* Handback File: [sharing-app-protect-by-email.60ccc68f471a9df891c683bc98ecdc180e8a231b.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/91e18917e2144869a55fc2a21e83694a8609ae21/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/sharing-app-protect-by-email.60ccc68f471a9df891c683bc98ecdc180e8a231b.es-es.xlf)
-* Handback Datetime: 2016-07-04 09:26:28
-* Bilingual File: [sharing-app-protect-by-email.60ccc68f471a9df891c683bc98ecdc180e8a231b.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/91e18917e2144869a55fc2a21e83694a8609ae21/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/sharing-app-protect-by-email.60ccc68f471a9df891c683bc98ecdc180e8a231b.es-es.xlf)
-* Bilingual Datetime: 2016-07-04 09:34:21
+* Handback File: [rms-quickstart-intro-include.31997a23f9b8ff765da303310452d81dda7d65b4.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/acda04744488a289f246d425c9a601ebe091a429/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/rms-quickstart-intro-include.31997a23f9b8ff765da303310452d81dda7d65b4.es-es.xlf)
+* Handback Datetime: 2016-07-04 10:00:50
+* Bilingual File: [rms-quickstart-intro-include.31997a23f9b8ff765da303310452d81dda7d65b4.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/acda04744488a289f246d425c9a601ebe091a429/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/rms-quickstart-intro-include.31997a23f9b8ff765da303310452d81dda7d65b4.es-es.xlf)
+* Bilingual Datetime: 2016-07-04 10:02:40
 * [Back to Top](#report-top)
 
 
