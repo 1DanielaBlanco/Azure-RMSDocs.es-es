@@ -1,6 +1,6 @@
 {
   "LastProcessedCommit": "4eaf4ac2707a8b1a8f18ddefbe7563fa6f1807ae",
-  "LastTranslatedCommit": "0a0300019724438394c27662971b74e6abaef34a",
+  "LastTranslatedCommit": "7cd7eaf5ea54a99fcd52bccdcae64fb05057dab2",
   "Items": {
     "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a": {
       "FileHash": "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a",
@@ -71356,14 +71356,14 @@
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
-      "TargetFileCommit": "e74a24a94a9f6e01f1baf35750420a315513b1e4",
+      "TargetFileCommit": "7cd7eaf5ea54a99fcd52bccdcae64fb05057dab2",
       "TargetFilePath": "Azure-RMSDocs\\rms-client\\sharing-app-protect-by-email.md",
       "HandbackFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.es-es\\master\\sharing-app-protect-by-email.60ccc68f471a9df891c683bc98ecdc180e8a231b.es-es.xlf",
-      "HandbackFileCommit": "9f7912f9cb1c9c3cf83bbcae0e442ad31d628bd7",
-      "HandbackDateTime": "2016-06-02T07:32:43.706936Z",
+      "HandbackFileCommit": "91e18917e2144869a55fc2a21e83694a8609ae21",
+      "HandbackDateTime": "2016-07-04T09:26:28.8788964Z",
       "HandbackException": null,
       "HandbackFailureTimes": 0,
-      "UpdatedDateTime": "2016-06-02T07:32:43.706936Z",
+      "UpdatedDateTime": "2016-07-04T09:26:28.8788964Z",
       "ArchiveFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.es-es\\master\\archive\\sharing-app-protect-by-email.60ccc68f471a9df891c683bc98ecdc180e8a231b.es-es.xlf",
       "ArchiveFileCommit": "8640f4d7ef01618daceb13d6651d8b73f695e52a",
       "ArchiveFileDateTime": "2016-07-01T23:46:12.049738Z",
