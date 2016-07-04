@@ -62008,8 +62008,8 @@
       "ArchiveFileDateTime": "2016-07-01T23:46:12.049738Z",
       "ArchiveException": null,
       "BilingualFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.es-es\\master\\get-started.15e5b67aa21ece2270b38ef3ff377da7d1fad977.es-es.xlf",
-      "BilingualFileCommit": "4da43e06a345f9c360b2a6d92c200a7defaf4dea",
-      "BilingualDateTime": "2016-06-16T10:18:53.9474075Z",
+      "BilingualFileCommit": "8691832d1cdebd6a19d478c41f9166ee6b50c8fc",
+      "BilingualDateTime": "2016-07-04T08:22:21.8495247Z",
       "BilingualException": null
     },
     "ed57eb7d6a4c76edb88a69e5122d60ba047e1f0a": {
@@ -66796,8 +66796,8 @@
       "ArchiveFileDateTime": "2016-07-01T23:46:12.049738Z",
       "ArchiveException": null,
       "BilingualFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.es-es\\master\\configure-applications.e08ca405c9a31f83ab8418d9ef05e8a6b0797135.es-es.xlf",
-      "BilingualFileCommit": "9f7912f9cb1c9c3cf83bbcae0e442ad31d628bd7",
-      "BilingualDateTime": "2016-06-16T10:18:53.9474075Z",
+      "BilingualFileCommit": "8691832d1cdebd6a19d478c41f9166ee6b50c8fc",
+      "BilingualDateTime": "2016-07-04T08:22:21.8495247Z",
       "BilingualException": null
     },
     "149100dd0abbf84bb012060f20b34b02bcd912ba": {
@@ -72145,8 +72145,8 @@
       "ArchiveFileDateTime": "2016-07-01T23:46:12.049738Z",
       "ArchiveException": null,
       "BilingualFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.es-es\\master\\quick-start-tutorial.f20f78d5eed490447e5e39392c197bd43887a284.es-es.xlf",
-      "BilingualFileCommit": "9f7912f9cb1c9c3cf83bbcae0e442ad31d628bd7",
-      "BilingualDateTime": "2016-06-16T10:18:53.9474075Z",
+      "BilingualFileCommit": "8691832d1cdebd6a19d478c41f9166ee6b50c8fc",
+      "BilingualDateTime": "2016-07-04T08:22:21.8495247Z",
       "BilingualException": null
     },
     "01c2436218e0d7fd80a31cdc037d9dc8933e42f2": {
@@ -79238,9 +79238,9 @@
       "ArchiveFileCommit": "8640f4d7ef01618daceb13d6651d8b73f695e52a",
       "ArchiveFileDateTime": "2016-07-01T23:46:12.049738Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.es-es\\master\\index.a61cb583487d493a2f466b67dabd23a946990ed9.es-es.xlf",
+      "BilingualFileCommit": "8691832d1cdebd6a19d478c41f9166ee6b50c8fc",
+      "BilingualDateTime": "2016-07-04T08:22:21.8495247Z",
       "BilingualException": null
     },
     "821fe1c361dc38b1e33ac66208122de165d02020": {
@@ -80771,9 +80771,9 @@
       "ArchiveFileCommit": "8640f4d7ef01618daceb13d6651d8b73f695e52a",
       "ArchiveFileDateTime": "2016-07-01T23:46:12.049738Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.es-es\\master\\developing-your-application.8fd29906a628e7dc3c644e93f1a14b01523f9aa6.es-es.xlf",
+      "BilingualFileCommit": "8691832d1cdebd6a19d478c41f9166ee6b50c8fc",
+      "BilingualDateTime": "2016-07-04T08:22:21.8495247Z",
       "BilingualException": null
     },
     "46b1fe5a0c4f138db65072d14489a5d588015df7": {
