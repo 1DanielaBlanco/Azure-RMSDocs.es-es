@@ -5386,8 +5386,8 @@
 * Archive Datetime: 2016-07-01 23:46:12
 * Handback File: [sharing-app-protect-by-email.60ccc68f471a9df891c683bc98ecdc180e8a231b.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/91e18917e2144869a55fc2a21e83694a8609ae21/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/sharing-app-protect-by-email.60ccc68f471a9df891c683bc98ecdc180e8a231b.es-es.xlf)
 * Handback Datetime: 2016-07-04 09:26:28
-* Bilingual File: [sharing-app-protect-by-email.60ccc68f471a9df891c683bc98ecdc180e8a231b.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/9f7912f9cb1c9c3cf83bbcae0e442ad31d628bd7/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/sharing-app-protect-by-email.60ccc68f471a9df891c683bc98ecdc180e8a231b.es-es.xlf)
-* Bilingual Datetime: 2016-06-16 10:18:53
+* Bilingual File: [sharing-app-protect-by-email.60ccc68f471a9df891c683bc98ecdc180e8a231b.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/91e18917e2144869a55fc2a21e83694a8609ae21/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/sharing-app-protect-by-email.60ccc68f471a9df891c683bc98ecdc180e8a231b.es-es.xlf)
+* Bilingual Datetime: 2016-07-04 09:34:21
 * [Back to Top](#report-top)
 
 ##### <a name='7cf6ecb95374c080b9b2e94f948ec53ea5e6bb46363'></a> Source: [Azure-RMSDocs\rms-client\sharing-app-protect-in-place.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c611fa8a846612fed238e59e5077be67f6f9531a/Azure-RMSDocs/rms-client/sharing-app-protect-in-place.md)
