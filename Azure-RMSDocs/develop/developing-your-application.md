@@ -1,26 +1,22 @@
 ---
-# required metadata
-
-title: Desarrollo de la aplicación | Azure RMS
-description: Instrucciones sobre cómo desarrollar una aplicación mediante RMS SDK 2.1.
-keywords:
+title: "Desarrollo de la aplicación | Azure RMS"
+description: "Instrucciones sobre cómo desarrollar una aplicación mediante RMS SDK 2.1."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 396A2C19-3A00-4E9A-9088-198A48B15289
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
+ms.openlocfilehash: f995da0698ec5fb4a8e46865b70506ced92f73db
+
 
 ---
 
@@ -32,7 +28,8 @@ Este tema contiene instrucciones esenciales sobre los principales aspectos de un
 
 Las instrucciones de este tema se basan en la aplicación de ejemplo, IPCHelloWorld, que le servirá para conocer los conceptos básicos y el código de una aplicación con derechos habilitados. Puede descargar la aplicación de ejemplo IPCHellowWorld completa, como [Webinar_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440), desde Microsoft Connect.
 
-> [!Note] El proyecto IPCHelloWorld ya está configurado para Rights Management Services SDK 2.1. Si quiere información sobre cómo configurar un proyecto nuevo para usar RMS SDK 2.1, vea [Configure Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md) (Configurar Visual Studio).
+> [!Note] 
+> El proyecto IPCHelloWorld ya está configurado para Rights Management Services SDK 2.1. Si quiere información sobre cómo configurar un proyecto nuevo para usar RMS SDK 2.1, vea [Configure Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md) (Configurar Visual Studio).
 
 ## Carga de MSIPC.dll
 
@@ -187,6 +184,7 @@ Antes de acabar, hay que liberar todos los recursos asignados.
 - [Webinar_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
