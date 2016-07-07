@@ -1,35 +1,27 @@
 ---
-# required metadata
-
-title: Migración desde AD RMS a Azure Rights Management - Fase 2 | Azure RMS
-description:
-keywords:
+title: "Migración desde AD RMS a Azure Rights Management - Fase 2 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/23/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
-
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: a9dc45fb5146b0a4d2f013bff9d090723ce95ee5
+ms.openlocfilehash: 1016ecdd77e818840f2a2cfab8212e908291bb89
+
 
 ---
 # Fase 2 de migración: Configuración del lado cliente
 
 *Se aplica a: Active Directory Rights Management Services, Azure Rights Management*
 
-Use la siguiente información para la fase 2 de migración desde AD RMS a Azure Rights Management (Azure RMS). Estos procedimientos incluyen el paso 5 del tema [Migrating from AD RMS to Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md) (Migración desde AD RMS a Azure Rights Management)..
+Use la siguiente información para la fase 2 de migración desde AD RMS a Azure Rights Management (Azure RMS). Estos procedimientos incluyen el paso 5 del tema [Migración desde AD RMS a Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md).
 
 
 ## Paso 5. Vuelva a configurar los clientes para usar Azure RMS.
@@ -45,11 +37,42 @@ Para los clientes de Windows:
 
 2.  Siga las instrucciones del script de redireccionamiento (Redirect_OnPrem.cmd) para modificarlo de forma que apunte al nuevo inquilino de Azure RMS.
 
-3.  En los equipos Windows, ejecute estos scripts con privilegios elevados en el contexto del usuario.
+    > [!IMPORTANT]
+    > Las instrucciones incluyen reemplazar las direcciones de ejemplo de **adrms** y **adrms.contoso.com** con las direcciones de sus propios servidores de AD RMS. Al hacerlo, asegúrese de que no haya ningún espacio adicional antes o después de las direcciones, ya que interrumpirá el script de migración y es muy difícil de identificar como la causa principal del problema. Algunas herramientas de edición agregan automáticamente un espacio después de pegar texto.
 
-Para clientes de dispositivos móviles y equipos Mac:
+3. Si los usuarios tienen Office 2016: aún no se han actualizado los scripts para incluir la configuración de Office 2016, por lo que, si los usuarios tienen esta versión de Office, debe actualizar manualmente los scripts:
 
--   Quite los registros de DNS SRV que creó cuando implementó la [extensión de AD RMS para dispositivos móviles](http://technet.microsoft.com/library/dn673574.aspx)..
+    - Para **CleanUpRMS.cmd**: busque la línea `reg delete HKCU\Software\Microsoft\Office\15.0\Common\DRM /f` e, inmediatamente después de ella, agregue la siguiente línea:
+
+            reg delete HKCU\Software\Microsoft\Office\16.0\Common\DRM /f
+
+    - Para **Redirect_Onprem.cmd**: busque la línea `reg add "HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\DRM" /t REG_SZ /v "DefaultServer" /d "%CloudRMS%" /F1` e, inmediatamente después de ella, agregue las siguientes dos líneas:
+
+            reg add "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\DRM" /t REG_SZ /v "DefaultServerUrl" /d "https://%CloudRMS%/_wmcs/licensing" /F 
+
+            reg add "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\DRM" /t REG_SZ /v "DefaultServer" /d "%CloudRMS%" /F
+
+    Opcional: los scripts no hacen referencia a Office 2016 en los comentarios. Si quiere actualizar los comentarios para reflejar estas adiciones para Office 2016, realice los siguientes cambios para **Redirect_Onprem.cmd**:
+
+    - Busque `::     or MSIPC (Office 2013) with on-premises AD RMS` y reemplácelo con lo siguiente:
+    
+            ::     or MSIPC (Office 2013 and 2016) with on-premises AD RMS
+
+    - Busque `echo Redirect SCP for Office 2013` y reemplácelo con lo siguiente:
+    
+            echo Redirect SCP for Office versions based on MSIPC
+
+    - Busque `echo Redirect MSIPC for Office 2013` y reemplácelo con lo siguiente:
+    
+            echo Redirect MSIPC for Office versions based on MSIPC
+
+4.  En equipos Windows:
+
+    - Ejecute estos scripts con privilegios elevados en el contexto del usuario.
+
+    Para clientes de dispositivos móviles y equipos Mac:
+
+    -  Quite los registros de DNS SRV que creó cuando implementó la [extensión de AD RMS para dispositivos móviles](http://technet.microsoft.com/library/dn673574.aspx).
 
 #### Cambios realizados por los scripts de migración
 En esta sección se documentan los cambios que hacen los scripts de migración. Puede utilizar esta información sólo con fines de referencia o para solucionar problemas o si prefiere hacer estos cambios usted mismo.
@@ -74,7 +97,7 @@ CleanUpRMS_RUN_Elevated.cmd:
 
     -   HKEY_LOCAL_MACHINE\Software\Microsoft\MSDRM\ServiceLocation
 
--   Elimine los siguientes valores del Registro:
+-   Agregue los siguientes valores del Registro:
 
     -   HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\DRM\DefaultServerURL
 
@@ -94,10 +117,10 @@ Redirect_OnPrem.cmd:
 
     -   HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC\LicensingRedirection
 
-    Cada entrada tiene un valor REG_SZ de **https://OldRMSserverURL/_wmcs/licensing** con los datos en el siguiente formato: **https://&lt;YourTenantURL&gt;/_wmcs/licensing**..
+    Cada entrada tiene un valor REG_SZ de **https://DirecciónURLAntiguaServidorRMS/_wmcs/licensing** con los datos en el siguiente formato: **https://&lt;DirecciónURLInquilino&gt;/_wmcs/licensing**.
 
     > [!NOTE]
-    > *&lt;YourTenantURL&gt;* tiene el formato siguiente: **{GUID}.rms.[Region].aadrm.com**..
+    > *&lt;DirecciónURLInquilino&gt;* tiene el formato siguiente: **{GUID}.rms.[Region].aadrm.com**.
     > 
     > Por ejemplo: 5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com
     > 
@@ -105,8 +128,9 @@ Redirect_OnPrem.cmd:
 
 
 ## Pasos siguientes
-Para continuar con la migración, vaya a [Fase 3: Configuración de servicios auxiliares](migrate-from-ad-rms-phase3.md)..
+Para continuar con la migración, vaya a [Fase 3: Configuración de servicios auxiliares](migrate-from-ad-rms-phase3.md).
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 
