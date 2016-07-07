@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Aplicación Rights Management sharing&colon; Historial de publicación de versiones | Azure RMS
-description:
-keywords:
+title: "Aplicación Rights Management sharing&colon; Historial de publicación de versiones | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 6751bd90-959f-4eba-91ed-6588ac983762
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: b19eadd408837ebcd77b3ae2f9520f5286fcf41f
+ms.openlocfilehash: cad9d01735d8e649875bc6bba73d29573891e1d8
+
 
 ---
 
@@ -33,8 +26,21 @@ El equipo de Rights Management actualiza periódicamente la aplicación para uso
 
 No se enumeran las versiones anteriores al 1 de enero de 2015.
 
-> [!NOTE]
-> Si tiene comentarios o alguna pregunta sobre la aplicación RMS sharing, envíe un mensaje de correo electrónico a [AskIPTeam](mailto:AskIPTeam@microsoft.com?subject=RMS%20sharing%20app:%20Feedback%20or%20question)..
+> [!NOTE] Si tiene comentarios o alguna pregunta sobre la aplicación RMS sharing, envíe un mensaje de correo a [AskIPTeam](mailto:AskIPTeam@microsoft.com?subject=RMS%20sharing%20app:%20Feedback%20or%20question).
+
+## Versión 1.0.2191.0
+**Lanzamiento**: 16/06/2016
+
+**Correcciones**:
+
+- Ahora, el sitio de seguimiento de documentos muestra el número correcto de vistas de cada documento al que se realiza el seguimiento.
+
+- Ahora se muestran como disponibles a los usuarios las plantillas para todas las configuraciones regionales.
+
+- Después de usar el uso compartido seguro de un archivo de PowerPoint, los cambios en la versión local del archivo se guardan correctamente.
+
+- Pequeño número de errores menores y mejoras de los mensajes de error.
+
 
 ## Versión 1.0.2004.0
 **Lanzamiento**: 11/12/2015
@@ -62,7 +68,7 @@ No se enumeran las versiones anteriores al 1 de enero de 2015.
 
 -   Compatibilidad con Multi-Factor Authentication (MFA) para Azure RMS, que también elimina la dependencia del Ayudante para el inicio de sesión de Microsoft en aplicaciones que usan la autenticación moderna.
 
-    Para obtener más información, consulte la sección [Multi-factor authentication (MFA) and Azure RMS](../get-started/requirements-azure-ad.md#multi-factor-authentication-mfa-and-azure-rms) (Multi-Factor Authentication [MFA] y Azure RMS) en [Requirements for Azure Rights Management](../get-started/requirements-azure-rms.md) (Requisitos de Azure Rights Management)..
+    Para más información, consulte la sección [Multi-Factor Authentication (MFA) y Azure RMS](../get-started/requirements-azure-ad.md#multi-factor-authentication-mfa-and-azure-rms) en [Requisitos de Azure Rights Management](../get-started/requirements-azure-rms.md).
 
 ## Versión 1.0.1784.0
 **Lanzamiento**: 30/07/2015
@@ -84,7 +90,7 @@ No se enumeran las versiones anteriores al 1 de enero de 2015.
 
 **Nuevas características**:
 
--   Compatibilidad con la revocación y el seguimiento de documentos. Para obtener más información, consulte [Track and revoke your documents when you use the RMS sharing application](sharing-app-track-revoke.md) (Seguimiento y revocación de documentos cuando se usa la aplicación RMS sharing)..
+-   Compatibilidad con la revocación y el seguimiento de documentos. Para más información, consulte [Seguimiento y revocación de documentos cuando se usa la aplicación RMS sharing](sharing-app-track-revoke.md).
 
 -   Compatibilidad con plantillas al elegir **Uso compartido seguro**:
 
@@ -94,7 +100,7 @@ No se enumeran las versiones anteriores al 1 de enero de 2015.
 
     -   Ya no verá las opciones **Permitir consumo en todos los dispositivos** y **Aplicar restricciones de uso**. En su lugar, se activa automáticamente **Protección genérica** , en función del tipo de archivo.
 
-    Para obtener más información, consulte [Dialog box options for the Rights Management sharing application](sharing-app-dialog-box.md) (Opciones de cuadro de diálogo para la aplicación Rights Management sharing)..
+    Para más información, consulte [Opciones de cuadro de diálogo para la aplicación Rights Management sharing](sharing-app-dialog-box.md).
 
 ## Versión 1.0.1667.0
 **Lanzamiento**: 19/01/2015
@@ -109,10 +115,11 @@ No se enumeran las versiones anteriores al 1 de enero de 2015.
 
 **Nuevas características**:
 
--   **Compatibilidad con varios dominios de correo electrónico dentro de su organización**: Si usa AD RMS y los usuarios de su organización tienen varios dominios de correo electrónico, esta actualización permite que los usuarios consuman contenido que protegieron los usuarios de la organización en otros dominios. Para obtener más información, consulte la sección [AD RMS only: Support for multiple email domains within your organization](sharing-app-admin-guide.md#ad-rms-only-support-for-multiple-email-domains-within-your-organization) (Solo AD RMS: Compatibilidad con varios dominios de correo electrónico dentro de su organización) de la [Rights Management sharing application administrator guide](sharing-app-admin-guide.md) (Guía de administrador de la aplicación Rights Management sharing)..
+-   **Compatibilidad con varios dominios de correo electrónico dentro de su organización**: Si usa AD RMS y los usuarios de su organización tienen varios dominios de correo electrónico, esta actualización permite que los usuarios consuman contenido que protegieron los usuarios de la organización en otros dominios. Para más información, consulte la sección [Solo AD RMS: Compatibilidad con varios dominios de correo electrónico dentro de su organización](sharing-app-admin-guide.md#ad-rms-only-support-for-multiple-email-domains-within-your-organization) de la [Guía del administrador de la aplicación Microsoft Rights Management sharing](sharing-app-admin-guide.md).
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO3-->
 
 

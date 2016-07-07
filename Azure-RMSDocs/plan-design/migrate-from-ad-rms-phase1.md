@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Migración desde AD RMS a Azure Rights Management - Fase 1 | Azure RMS
-description:
-keywords:
+title: "Migración desde AD RMS a Azure Rights Management - Fase 1 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 06/23/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: defe008a9b78026ccac584bb06762228456a2916
+
 
 ---
 
@@ -35,7 +28,7 @@ Use la siguiente información para la fase 1 de migración desde AD RMS a Azure 
 ## Paso 1: descargue la herramienta de administración de Azure Rights Management
 Vaya al Centro de descarga de Microsoft y descargue la [herramienta de administración de Azure Rights Management](http://go.microsoft.com/fwlink/?LinkId=257721), que contiene el módulo de administración de Azure RMS para Windows PowerShell.
 
-Instale la herramienta. Para obtener instrucciones, vea [Instalación de Windows PowerShell para Azure Rights Management](../deploy-use/install-powershell.md).
+Instale la herramienta. Para obtener instrucciones, vea [Instalación de Windows PowerShell para Azure Rights Management](../deploy-use/install-powershell.md).
 
 ## Paso 2. Exporte los datos de configuración de AD RMS e impórtelos en Azure RMS.
 Este paso es un proceso de dos fases:
@@ -47,7 +40,8 @@ Este paso es un proceso de dos fases:
 ### Exportar los datos de configuración de AD RMS
 Siga este procedimiento en todos los clústeres de AD RMS, para todos los dominios de publicación confianza que tienen contenido protegido de su organización. No es necesario ejecutar esto en clústeres solo para licencias.
 
-> [!NOTE] Si usa Windows Server 2003 Rights Management, en lugar de estas instrucciones, siga el procedimiento [Export SLC, TUD, TPD and RMS private key](http://technet.microsoft.com/library/jj835767%28v=ws.10%29.aspx) (Exportar clave privada de SLC, TUD, TPD y RMS) del artículo [Migrating from Windows RMS to AD RMS in a Different Infrastructure](http://technet.microsoft.com/library/jj835767%28v=ws.10%29.aspx) (Migración de Windows RMS a AD RMS en una infraestructura distinta).
+> [!NOTE]
+> Si usa Windows Server 2003 Rights Management, en lugar de estas instrucciones, siga el procedimiento [Export SLC, TUD, TPD and RMS private key](http://technet.microsoft.com/library/jj835767%28v=ws.10%29.aspx) (Exportar clave privada de SLC, TUD, TPD y RMS) del artículo [Exportar clave privada de SLC, TUD, TPD y RMS](http://technet.microsoft.com/library/jj835767%28v=ws.10%29.aspx) (Migración de Windows RMS a AD RMS en una infraestructura distinta).
 
 #### Para exportar los datos de configuración (información del dominio de publicación de confianza)
 
@@ -80,7 +74,8 @@ La implementación de AD RMS actual usará una de las siguientes configuraciones
 
 -   Contraseña protegida mediante un proveedor criptográfico externo.
 
-> [!NOTE] Para obtener más información sobre el uso de módulos de seguridad de hardware con AD RMS, consulte [Uso de AD RMS con módulos de seguridad de hardware](http://technet.microsoft.com/library/jj651024.aspx).
+> [!NOTE]
+> Para obtener más información acerca del uso de módulos de seguridad de hardware con AD RMS, consulte [Uso de AD RMS con módulos de seguridad de hardware](http://technet.microsoft.com/library/jj651024.aspx).
 
 Las dos opciones de topología de clave de inquilino de Azure RMS son: Microsoft administra su clave de inquilino (**administrada por Microsoft**), o bien es el usuario quien se encarga de ello (**administrada por el cliente**). Cuando administra su propia clave de inquilino de Azure RMS, esto se conoce a veces como "aporte su propia clave" (BYOK) y requiere un módulo de seguridad de hardware (HSM) de Thales. Para más información, vea [Planning and implementing your Azure Rights Management tenant keyt](plan-implement-tenant-key.md) (Planeación e implementación de la clave de inquilino de Azure Rights Managemen).
 
@@ -98,7 +93,8 @@ Utilice la tabla siguiente para identificar qué procedimiento se utilizará par
 |Contraseña protegida mediante un proveedor criptográfico externo.|Administrada por el cliente (BYOK)|Póngase en contacto con el proveedor criptográfico para obtener instrucciones sobre cómo transferir su clave a un módulo de seguridad de hardware (HSM) de Thales nShield. Después, siga las instrucciones del procedimiento **Migración entre claves protegidas por HSM** después de esta tabla.|
 Antes de iniciar estos procedimientos, asegúrese de que puede tener acceso a los archivos .xml que creó anteriormente cuando exportó los dominios de publicación de confianza. Por ejemplo, estos podrían estar guardados en una unidad USB que se transfiere desde el servidor de AD RMS a la estación de trabajo conectada a Internet.
 
-> [!NOTE] Independientemente de cómo almacene estos archivos, aplique las prácticas de seguridad recomendadas para protegerlos, ya que estos incluyen la clave privada.
+> [!NOTE]
+> Independientemente de cómo almacene estos datos, aplique las prácticas de seguridad recomendadas para protegerlos, ya que estos incluyen la clave privada.
 
 
 Para completar el paso 2, elija y seleccione las instrucciones para la ruta de migración: 
@@ -120,27 +116,51 @@ Las instrucciones de este paso se incluyen íntegramente en el artículo [Activa
 
 Si ya está activado el inquilino de Azure RMS y puede identificar estos equipos, asegúrese de que ejecuta el script CleanUpRMS_RUN_Elevated.cmd en estos equipos, tal como se describe en el paso 5. La ejecución de este script les obliga a reinicializar el entorno de usuario, así descargan la clave de inquilino y las plantillas importadas actualizadas.
 
+Además, si ha creado plantillas personalizadas que quiera usar después de la migración, debe exportarlas e importarlas. Este procedimiento se explica en el paso siguiente. 
+
 ## Paso 4. Configure las plantillas importadas.
 Dado que las plantillas que importó tienen un estado predeterminado de **Archivada**, debe cambiar este estado a **Publicada** si desea que los usuarios puedan utilizar estas plantillas con Azure RMS.
 
-Además, si sus plantillas de AD RMS usaban el grupo **CUALQUIERA**, este grupo desaparecerá automáticamente al importar las plantillas a Azure RMS. Debe agregar manualmente el grupo o usuarios equivalentes y los mismos derechos a las plantillas importadas. El grupo equivalente para Azure RMS se denomina **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@<tenant_name>.onmicrosoft.com**. Por ejemplo, este grupo podría tener un aspecto similar al siguiente grupo de Contoso: **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**.
+Las plantillas que se importan de AD RMS tienen el mismo aspecto y comportamiento que las plantillas personalizadas que se pueden crear en el Portal de Azure clásico. Para cambiar las plantillas importadas para publicarlas de modo que los usuarios puedan verlas y seleccionarlas desde las aplicaciones, consulte [Configuración de plantillas personalizadas para Azure Rights Management](../deploy-use/configure-custom-templates.md).
 
-Si no está seguro de si las plantillas de AD RMS incluyen el grupo CUALQUIERA, puede usar el script de Windows PowerShell de ejemplo para identificar estas plantillas. Para más información sobre el uso de Windows PowerShell con AD RMS, vea [Using Windows PowerShell to Administer AD RMS](https://technet.microsoft.com/library/ee221079%28v=ws.10%29.aspx) (Uso de Windows PowerShell para administrar AD RMS).
+Además de publicar las plantillas recién importadas, hay dos cambios importantes para las plantillas que debe realizar antes de continuar con la migración. Para obtener una experiencia más coherente para los usuarios durante el proceso de migración, no realice cambios adicionales en las plantillas importadas y no publique las dos plantillas predeterminadas que vienen con Azure RMS ni cree plantillas nuevas en este momento. En su lugar, espere hasta que se complete el proceso de migración y haya dado de baja los servidores de AD RMS.
+
+Los cambios en la plantilla que debe realizar para este paso:
+
+- Si ha creado plantillas personalizadas en Azure RMS antes de la migración, debe exportarlas e importarlas manualmente.
+
+- Si las plantillas de AD RMS usan el grupo **CUALQUIERA**, debe agregar manualmente el grupo y los derechos equivalentes.
+
+## Procedimiento si ha creado plantillas personalizadas antes de la migración
+
+Si ha creado plantillas personalizadas antes de la migración, ya sea antes o después de activar Azure RMS, las plantillas no estarán disponibles para los usuarios después de la migración, incluso si se habían establecido en **Publicada**. Para que estén disponibles para los usuarios, primero debe hacer lo siguiente: 
+
+1. Identificar estas plantillas y anotar el identificador de plantilla, al ejecutar [Get-AadrmTemplate](https://msdn.microsoft.com/library/dn727079.aspx). 
+
+2. Exportar las plantillas mediante el cmdlet de PowerShell de Azure RMS [Export-AadrmTemplate](https://msdn.microsoft.com/library/dn727078.aspx).
+
+3. Importar las plantillas mediante el cmdlet de PowerShell de Azure RMS [Import-AadrmTemplate](https://msdn.microsoft.com/library/dn727077.aspx).
+
+Después puede publicar o archivar estas plantillas como lo haría con cualquier otra plantilla que cree después de la migración.
+
+
+## Procedimiento si las plantillas de AD RMS usan el grupo **CUALQUIERA**
+
+Si sus plantillas de AD RMS usaban el grupo **CUALQUIERA**, este grupo desaparecerá automáticamente al importar las plantillas a Azure RMS. Debe agregar manualmente el grupo o usuarios equivalentes y los mismos derechos a las plantillas importadas. El grupo equivalente para Azure RMS se denomina **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@<tenant_name>.onmicrosoft.com**. Por ejemplo, este grupo podría tener un aspecto similar al siguiente grupo de Contoso: **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**.
+
+Si no está seguro de si las plantillas de AD RMS incluyen el grupo CUALQUIERA, puede usar el siguiente script de Windows PowerShell de ejemplo para identificar estas plantillas. Para más información sobre el uso de Windows PowerShell con AD RMS, vea [Using Windows PowerShell to Administer AD RMS](https://technet.microsoft.com/library/ee221079%28v=ws.10%29.aspx) (Uso de Windows PowerShell para administrar AD RMS).
 
 Puede ver el grupo de su organización creado automáticamente si copia una de las plantillas predeterminadas de directiva de permisos en el Portal de Azure clásico e identifica el **NOMBRE DE USUARIO** en la página **PERMISOS**. Sin embargo, no puede usar el portal clásico para agregar este grupo a una plantilla que se creó o importó manualmente; en su lugar, debe usar una de las siguientes opciones de Azure RMS PowerShell:
 
--   Use el cmdlet [New-AadrmRightsDefinition](https://msdn.microsoft.com/library/azure/dn727080.aspx) de PowerShell para definir el grupo "AllStaff" y los derechos como un objeto de definición de derechos, y ejecute de nuevo este comando para cada uno de los demás grupos o usuarios a los que ya se les ha otorgado derechos en la plantilla original además de para el grupo CUALQUIERA. Después, agregue estos objetos de definición de derechos a las plantillas mediante el cmdlet [Set-AadrmTemplateProperty](https://msdn.microsoft.com/en-us/library/azure/dn727076.aspx).
+-   Use el cmdlet [New-AadrmRightsDefinition](https://msdn.microsoft.com/library/azure/dn727080.aspx) de PowerShell para definir el grupo "AllStaff" y los derechos como un objeto de definición de derechos, y ejecute de nuevo este comando para cada uno de los demás grupos o usuarios a los que ya se les ha otorgado derechos en la plantilla original además de para el grupo CUALQUIERA. Después, agregue estos objetos de definición de derechos a las plantillas mediante el cmdlet [Set-AadrmTemplateProperty](https://msdn.microsoft.com/library/azure/dn727076.aspx).
 
 -   Use el cmdlet [Export-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727078.aspx) para exportar la plantilla a un archivo .XML que pueda editar para agregar el grupo "AllStaff" y los derechos a los grupos y derechos existentes y después use el cmdlet [Import-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727077.aspx) para importar este cambio de nuevo en Azure RMS.
 
-> [!NOTE] Este grupo equivalente "AllStaff" no es exactamente igual que el grupo CUALQUIERA de AD RMS: el grupo "AllStaff" incluye a todos los usuarios de su inquilino de Azure, mientras que el grupo CUALQUIERA incluye a todos los usuarios autenticados, que podrían estar fuera de su organización.
+> [!NOTE]
+> Este grupo equivalente "AllStaff" no es exactamente igual que el grupo ANYONE de AD RMS: el grupo "AllStaff" incluye a todos los usuarios de su inquilino de Azure, mientras que el grupo CUALQUIERA incluye a todos los usuarios autenticados, que podrían estar fuera de su organización.
 > 
 > Debido a esta diferencia entre los dos grupos, puede que tenga que agregar también usuarios externos además del grupo "AllStaff". Actualmente no se admiten direcciones de correo electrónico externas para grupos.
 
-Las plantillas que se importan de AD RMS tienen el mismo aspecto y comportamiento que las plantillas personalizadas que se pueden crear en el Portal de Azure clásico. Para cambiar las plantillas importadas para publicarlas de modo que los usuarios puedan verlas y seleccionarlas desde las aplicaciones o para realizar otros cambios en las plantillas, vea [Configuring custom templates for Azure Rights Management](../deploy-use/configure-custom-templates.md) (Configuración de plantillas personalizadas para Azure Rights Management).
-
-> [!TIP]
-> Para obtener una experiencia más coherente para los usuarios durante el proceso de migración, no realice cambios en las plantillas importadas aparte de estos dos y no publique las dos plantillas predeterminadas que vienen con Azure RMS ni cree plantillas nuevas en este momento. En su lugar, espere hasta que se complete el proceso de migración y haya dado de baja los servidores de AD RMS.
 
 ### Script de ejemplo de Windows PowerShell para identificar plantillas de AD RMS que incluyen el grupo CUALQUIERA
 Esta sección contiene el script de ejemplo que le ayuda a identificar plantillas de AD RMS que tienen definido el grupo CUALQUIERA, tal como se ha descrito en la sección anterior.
@@ -185,6 +205,7 @@ Vaya a [Fase 2: Configuración del lado cliente](migrate-from-ad-rms-phase2.md).
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

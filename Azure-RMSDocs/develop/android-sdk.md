@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Configuración de Android | Azure RMS
-description: Las aplicaciones de Android pueden usar Microsoft Rights Management SDK 4.2 para habilitar la protección de información integrada en sus aplicaciones.
-keywords:
+title: "Configuración de Android | Azure RMS"
+description: "Las aplicaciones de Android pueden usar Microsoft Rights Management SDK 4.2 para habilitar la protección de información integrada en sus aplicaciones."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 986f6932-159b-4791-bd1a-7640a83ee792
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: 30fad88ff664e2df935c8f2cfd28f8b1fe251f67
+
 
 ---
 
@@ -50,7 +45,7 @@ Se recomienda tener el siguiente software en el sistema de desarrollo:
 
     Este SDK se puede usar para desarrollar para Android 4.0.3 (nivel de API 15) y versiones posteriores.
 
--   Biblioteca de autenticación: se recomienda usar la [biblioteca de autenticación de Azure AD (ADAL)](https://msdn.microsoft.com/en-us/library/jj573266.aspx). Con todo, también puede usar otras bibliotecas de autenticación que admiten OAuth 2.0.
+-   Biblioteca de autenticación: se recomienda usar la [biblioteca de autenticación de Azure AD (ADAL)](https://msdn.microsoft.com/library/jj573266.aspx). Con todo, también puede usar otras bibliotecas de autenticación que admiten OAuth 2.0.
 
     Para más información, vea [ADAL for Android](https://github.com/MSOpenTech/azure-activedirectory-library-for-android) (ADAL para Android).
 
@@ -99,14 +94,14 @@ Nuestra biblioteca de interfaz de usuario proporciona una interfaz de usuario re
 
 **Referencia al SDK**
 
--   Vaya a la carpeta donde extrajo *adrms\_android\_sdk.zip*. En la carpeta "SDK > com > microsoft > rightsmanagement", asegúrese de que los archivos *.classpath*, *.project* y *project.properties* no están marcados como de solo lectura.
+-   Vaya a la carpeta donde ha extraído *adrms\_android\_sdk.zip*. En la carpeta "SDK > com > microsoft > rightsmanagement", asegúrese de que los archivos *.classpath*, *.project* y *project.properties* no están marcados como de solo lectura.
 -   Para poder hacer referencia al SDK, hay que importarlo al área de trabajo.
 
     En Eclipse, haga clic en **File** (Archivo). En el menú **File** (Archivo), haga clic en **Import** (Importar). En el cuadro de diálogo **Import** (Importar), seleccione **Android / Existing Android Code into Workspace** (Android/Código de Android existente a área de trabajo).
 
     ![Impórtelo al área de trabajo.](../media/Android-setup-07.png)
 
--   Haga clic en **Siguiente**. Vaya a la carpeta donde extrajo *adrms\_android\_sdk.zip*. El SDK debe aparecer en la lista como **com.microsoft.rightsmanagement**.
+-   Haga clic en **Siguiente**. Seleccione la carpeta donde ha extraído *adrms\_android\_sdk.zip*. El SDK debe aparecer en la lista como **com.microsoft.rightsmanagement**.
 
     ![Desplácese para seleccionar la carpeta.](../media/Android-setup-08c.jpg)
 
@@ -122,7 +117,7 @@ Nuestra biblioteca de interfaz de usuario proporciona una interfaz de usuario re
 
 -   Haga clic en **Aceptar**.
 
-    Dado que MS RMS SDK 4.2 se conecta a AAD RM, la aplicación debe tener los permisos **INTERNET** y **ACCESS\_NETWORK\_STATE**. Para ello, abra el archivo *AndroidManifest.xml* en la raíz del proyecto.
+    Como MS RMS SDK 4.2 se conecta a AAD RM, la aplicación debe tener los permisos **INTERNET** y **ACCESS\_NETWORK\_STATE**. Para ello, abra el archivo *AndroidManifest.xml* en la raíz del proyecto.
 
     Para agregar los permisos, haga clic en **Add** (Agregar) y, luego, seleccione **Uses Permissions** (Permisos de uso).
 
@@ -131,12 +126,7 @@ Nuestra biblioteca de interfaz de usuario proporciona una interfaz de usuario re
 -   Para comprobar que el paso del manifiesto es correcto, abra el manifiesto en un editor de texto. Asegúrese de que aparecen las siguientes líneas:
 
 
-    <uses-sdk
-         android:minSdkVersion="15"
-         android:targetSdkVersion="19"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission/>
+    <uses-sdk      android:minSdkVersion="15"      android:targetSdkVersion="19"/> <uses-permission android:name="android.permission.INTERNET"/> <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> <uses-permission/>
 
 
 **Note** The SDK uses the *android.support.v4*
@@ -158,6 +148,7 @@ Nuestra biblioteca de interfaz de usuario proporciona una interfaz de usuario re
  
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

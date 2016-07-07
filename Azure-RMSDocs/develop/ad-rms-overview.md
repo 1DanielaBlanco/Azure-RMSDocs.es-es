@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Información general | Azure RMS
-description: Rights Management Services (RMS) es una tecnología de protección de la información que ayuda a proteger la información digital frente al uso no autorizado.
-keywords:
+title: "Información general | Azure RMS"
+description: "Rights Management Services (RMS) es una tecnología de protección de la información que ayuda a proteger la información digital frente al uso no autorizado."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: B546B6C1-ADC1-4EBD-95E2-B4A74E4E980B
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: 37f3bc2308caaa8fd5e5c7fc8c56b6dc4d076b97
+
 
 ---
 
@@ -44,7 +39,7 @@ Estos son algunos de los escenarios en los que se pueden aplicar las aplicacione
 -   Los propietarios de una biblioteca de documentos en línea desean habilitar derechos para ver, imprimir o editar documentos basados en la identidad del usuario.
 -   Una gran compañía desea publicar información confidencial de sus empleados en un sitio web interno con limitación de los privilegios de visualización y edición a determinados usuarios.
 
-Para más información sobre el servidor de AD RMS, el cliente de AD RMS y su funcionalidad, consulte el contenido de TechNet para [Documentación para profesionales de TI para AD RMS](https://TechNet.Microsoft.Com/en-us/library/cc771234.aspx).
+Para más información sobre el servidor de AD RMS, el cliente de AD RMS y su funcionalidad, consulte el contenido de TechNet para [Documentación para profesionales de TI para AD RMS](https://TechNet.Microsoft.Com/library/cc771234.aspx).
 
 Los demás temas de esta sección tratan sobre la arquitectura de RMS y sus implementaciones.
 
@@ -66,6 +61,7 @@ Los demás temas de esta sección tratan sobre la arquitectura de RMS y sus impl
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

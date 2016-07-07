@@ -1,28 +1,26 @@
 ---
-# required metadata
-
-title: "Tutorial de inicio rápido de Azure RMS: paso 5 | AZURE RMS"
-description: "Último paso de un tutorial para probar rápidamente Microsoft Azure Rights Management para su organización en solo 5 pasos que deberían tomarle menos de 15 minutos."
-keywords:
+title: "Tutorial de inicio rápido de Azure RMS - Paso 5 | Azure RMS"
+description: "El último paso de un tutorial para probar rápidamente Microsoft Azure Rights Management para su organización en solo 5 pasos que deberían tomarle menos de 15 minutos."
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
-ms.technology: techgroup-identity
+ms.technology: 
 ms.assetid: aa06826d-c227-449b-93ea-6ce394608997
-
-# optional metadata
-
-ROBOTS:
-audience:
-ms.devlang:
+ROBOTS: 
+audience: 
+ms.devlang: 
 ms.reviewer: esaggese
 ms.suite: ems
-ms.tgt_pltfrm:
-ms.technology:
-ms.custom:
+ms.tgt_pltfrm: 
+ms.custom: 
+translationtype: Human Translation
+ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
+ms.openlocfilehash: 9c335e054d4aed1a8cca654420a580d02a4c849f
+
 
 ---
 
@@ -79,11 +77,12 @@ Puede volver a este sitio para realizar un seguimiento de más actividad relacio
 ### Pasos siguientes
 En este tutorial se repasó un caso de cómo Azure RMS puede ayudar a proteger los datos. Para ver otros usos comunes, consulte [Azure RMS in action](../understand-explore/what-admins-users-see.md) (Azure RMS en acción) en el artículo [What is Azure Rights Management?](../understand-explore/what-is-azure-rms.md) (¿Qué es Azure Rights Management?). Hay otras secciones en este artículo que también pueden ser útiles, por ejemplo, la que explica cómo funciona Azure RMS y qué problemas empresariales puede resolver.
 
-Si está listo para comenzar a implementar Azure RMS, consulte [Plan para la implementación de Azure Rights Management](../plan-design/deployment-roadmap.md) para ver los pasos de implementación y los vínculos con instrucciones de procedimiento.
+Si está listo para comenzar a implementar Azure RMS, consulte [Plan para la implementación de Azure Rights Management](../plan-design/deployment-roadmap.md) para ver los pasos de implementación y los vínculos con instrucciones de procedimiento.
 
 Para obtener una lista de escenarios específicos y los pasos de configuración asociada, así como documentación para el usuario final, consulte la [Rapid deployment guide for Azure Rights Management](../get-started/rapid-deployment-guide.md) (Guía de implementación rápida de Azure Rights Management).
 
->[!div class="step-by-step"] [Introducción](quick-start-tutorial.md)
+>[!div class="step-by-step"]
+[Introducción](quick-start-tutorial.md)
 [Paso 1](tutorial-step1.md)
 [Paso 2](tutorial-step2.md)
 [Paso 3](tutorial-step3.md)
@@ -91,6 +90,7 @@ Para obtener una lista de escenarios específicos y los pasos de configuración 
 *Paso 5*
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

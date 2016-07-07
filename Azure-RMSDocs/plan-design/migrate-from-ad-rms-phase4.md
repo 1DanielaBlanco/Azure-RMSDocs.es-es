@@ -1,28 +1,21 @@
 ---
-# required metadata
-
-title: Migración desde AD RMS a Azure Rights Management - Fase 4 | Azure RMS
-description:
-keywords:
+title: "Migración desde AD RMS a Azure Rights Management - Fase 4 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/14/2016
+ms.date: 06/29/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
-
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ea4dd88ed749092fd02135d8ca25b621f74fe72f
+ms.openlocfilehash: 7ed3569475362272ace055862fe8bb3ee072036a
+
 
 ---
 
@@ -49,7 +42,7 @@ Este paso es opcional pero se recomienda cuando la migración se ha completado i
 
 Vuelva a definir la clave del inquilino de Azure RMS:
 
--   Si Microsoft administra su clave de inquilino de Azure RMS: para hacer esto, [póngase en contacto con el soporte técnico de Microsoft](../get-started/information-support#to-contact-microsoft-support) para abrir un **caso de soporte técnico de Azure Rights Management con una solicitud para volver a escribir la clave de inquilino de Azure RMS**. Debe demostrar que es un administrador del inquilino de Azure RMS y comprender que este proceso tarda varios días en confirmarse. Se aplican cargos de soporte técnico Standard; la acción de volver a escribir la clave de inquilino no es un servicio de soporte técnico gratuito.
+-   Si Microsoft administra su clave de inquilino de Azure RMS: para hacer esto, [póngase en contacto con el soporte técnico de Microsoft](../get-started/information-support.md#to-contact-microsoft-support) para abrir un **caso de soporte técnico de Azure Rights Management con una solicitud para volver a escribir la clave de inquilino de Azure RMS**. Debe demostrar que es un administrador del inquilino de Azure RMS y comprender que este proceso tarda varios días en confirmarse. Se aplican cargos de soporte técnico Standard; la acción de volver a escribir la clave de inquilino no es un servicio de soporte técnico gratuito.
 
 -   Si el usuario (BYOK) administra la clave de inquilino de Azure RMS: repita el procedimiento BYOK para generar y crear una nueva clave a través de Internet o en persona.
 
@@ -61,6 +54,7 @@ Ahora que ha completado la migración, revise el [mapa de ruta de implementació
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

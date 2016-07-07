@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Visualización y uso de archivos protegidos por Rights Management | Azure RMS
-description:
-keywords:
+title: "Visualización y uso de archivos protegidos por Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
+ms.openlocfilehash: c243ad02bdbd5bd46ba1b2a4818839df8a7deb7b
+
 
 ---
 
@@ -36,10 +30,10 @@ Cuando la [aplicación Rights Management sharing (RMS) está instalada en el equ
 >
 > Si su organización no usa Azure Rights Management (Azure RMS) o AD RMS, puede solicitar una cuenta gratuita que acepte sus credenciales para que pueda abrir los archivos protegidos mediante RMS:
 >
-> -   Para solicitar esta cuenta, haga clic en el vínculo para solicitar [RMS para usuarios](http://go.microsoft.com/fwlink/?LinkId=309469)..
+> -   Para solicitar esta cuenta, haga clic en el vínculo para solicitar [RMS para usuarios](http://go.microsoft.com/fwlink/?LinkId=309469).
 >
 >     Al suscribirse, use la dirección de correo electrónico de su empresa en lugar de una dirección de correo electrónico personal. Si va a suscribirse porque le enviaron un archivo adjunto protegido por correo electrónico, use la misma dirección de correo electrónico que se usó para enviarle el mensaje de correo electrónico.
-> -   Para obtener más información, consulte [RMS for individuals and Azure Rights Management](../understand-explore/rms-for-individuals.md) (RMS para usuarios y Azure Rights Management)..
+> -   Para más información, consulte [RMS para usuarios y Azure Rights Management](../understand-explore/rms-for-individuals.md).
 
 ## Para ver un archivo protegido
 Usando el Explorador de archivos o el mensaje de correo electrónico que contiene el archivo adjunto, haga doble clic en el archivo protegido y escriba sus credenciales si se le solicita que lo haga.
@@ -59,7 +53,7 @@ La manera en que se abre el archivo depende de cómo se protegió, lo que se pue
 
     ![Cuadro de diálogo de un archivo pfile compartido por correo electrónico cuando se usa la aplicación RMS sharing](../media/ADRMS_MSRMSApp_PfilePermission.png)
 
-- **El archivo tiene una extensión de nombre de archivo *.ppdf* o es un archivo de texto o imagen protegido (como *.ptxt* o *.pjpg*).)**
+- **El archivo tiene una extensión de nombre de archivo *.ppdf* o es un archivo de texto o imagen protegido (como *.ptxt* o *.pjpg*)**
 
     El archivo se protegió de forma nativa como una copia de solo lectura.
 
@@ -89,9 +83,9 @@ Si, tras abrir el archivo protegido, desea hacer algo más que simplemente leerl
 
     Por ejemplo, si un archivo se protegió con el nombre de archivo document.vsdx.pfile, visualice el archivo y, en el Explorador de archivos, guárdelo como document.vsdx.
 
-    El nuevo archivo ya no está protegido. Si desea protegerlo, debe hacerlo manualmente. Para obtener instrucciones, consulte [Protect a file on a device (protect in-place) by using the Rights Management sharing application](sharing-app-protect-in-place.md) (Protección de un archivo en un dispositivo [proteger en contexto] mediante la aplicación Rights Management sharing)..
+    El nuevo archivo ya no está protegido. Si desea protegerlo, debe hacerlo manualmente. Para obtener instrucciones, consulte [Protección de un archivo en un dispositivo (proteger en contexto) mediante la aplicación Rights Management sharing](sharing-app-protect-in-place.md).
 
-- **El archivo tiene una extensión de nombre de archivo *.ppdf* o es un archivo de texto o imagen protegido (como *.ptxt* o *.pjpg*).)**
+- **El archivo tiene una extensión de nombre de archivo *.ppdf* o es un archivo de texto o imagen protegido (como *.ptxt* o *.pjpg*)**
 
     Solo puede ver el archivo, y si le cambia el nombre o si lo mueve, el archivo sigue estando protegido.
 
@@ -113,6 +107,7 @@ Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de 
 [Guía de usuario de la aplicación de uso compartido Rights Management](sharing-app-user-guide.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

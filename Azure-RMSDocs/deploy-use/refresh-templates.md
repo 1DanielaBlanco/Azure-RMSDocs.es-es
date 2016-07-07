@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Actualización de plantillas | Azure RMS
-description:
-keywords:
+title: "Actualización de plantillas | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/06/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 771f4139b09cccc05f2d1ee52c76b99467c70446
+ms.openlocfilehash: 13c2b79558202d59ec49da3a189a58356518718d
+
 
 ---
 
@@ -34,23 +28,23 @@ Cuando usas Azure RMS, se descargan de forma automática plantillas a los ordena
 
 |Aplicación o servicio|Cómo se actualizan las plantillas tras los cambios|
 |--------------------------|---------------------------------------------|
-|Exchange Online|Configuración manual precisa para actualizar plantillas.<br /><br />En los pasos de configuración, consulte la sección siguiente: [Solamente Exchange Online: Cómo configurar Exchange para descargar las plantillas personalizadas que se han cambiado](#exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates)..|
+|Exchange Online|Configuración manual precisa para actualizar plantillas.<br /><br />En los pasos de configuración, consulte la sección siguiente, [Solamente Exchange Online: Cómo configurar Exchange para descargar las plantillas personalizadas que se han cambiado](#exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates).|
 |Office 365|Actualización automática: no se requieren pasos adicionales.|
-|Office 2016 y Office 2013<br /><br />Aplicaciones de uso compartido de RMS para Windows|Actualización automática: programada:<br /><br />Para estas versiones posteriores de Office: el intervalo de actualización predeterminado es cada siete días.<br /><br />Para la aplicación RMS sharing para Windows: a partir de la versión 1.0.1784.0, el intervalo de actualización predeterminado es cada día. Las versiones anteriores tienen un intervalo de actualización predeterminado de 7 días.<br /><br />Para forzar una actualización antes de esta programación, consulte la sección siguiente: [Office 2016, Office 2013 y la aplicación RMS sharing para Windows: Cómo forzar una actualización de una plantilla personalizada que se ha cambiado](#office-2016-office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template)..|
-|Office 2010|Se actualiza cuando los usuarios inician sesión.<br /><br />Para forzar una actualización, pide u obliga a los usuarios a cerrar sesión y volver a iniciar la sesión. O bien, vea la sección siguiente: [Solamente para Office 2010: Cómo forzar una actualización de una plantilla personalizada que se ha cambiado](#office-2010-only-how-to-force-a-refresh-for-a-changed-custom-template)..|
+|Office 2016 y Office 2013<br /><br />Aplicaciones de uso compartido de RMS para Windows|Actualización automática: programada:<br /><br />Para estas versiones posteriores de Office: el intervalo de actualización predeterminado es cada siete días.<br /><br />Para la aplicación RMS sharing para Windows: a partir de la versión 1.0.1784.0, el intervalo de actualización predeterminado es cada día. Las versiones anteriores tienen un intervalo de actualización predeterminado de 7 días.<br /><br />Para forzar una actualización antes de esta programación, consulte la sección siguiente, [Office 2016, Office 2013 y la aplicación RMS sharing para Windows: Cómo forzar una actualización de una plantilla personalizada que se ha cambiado](#office-2016-office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template).|
+|Office 2010|Se actualiza cuando los usuarios inician sesión.<br /><br />Para forzar una actualización, pide u obliga a los usuarios a cerrar sesión y volver a iniciar la sesión. O bien, vea la sección siguiente: [Solamente para Office 2010: Cómo forzar una actualización de una plantilla personalizada que se ha cambiado](#office-2010-only-how-to-force-a-refresh-for-a-changed-custom-template).|
 Para los dispositivos móviles que usan la aplicación de uso compartido de RMS, se descargan automáticamente plantillas (y se actualizan si es necesario) sin que sea precisa una nueva configuración.
 
 ## Solamente Exchange Online: Cómo configurar Exchange para descargar las plantillas personalizadas que se han cambiado
 Si ya has configurado Information Rights Management (IRM) para Exchange Online, no se descargarán plantillas personalizadas para usuarios hasta que realices los cambios siguientes mediante Windows PowerShell en Exchange Online.
 
 > [!NOTE]
-> Para obtener más información sobre cómo usar Windows PowerShell en Exchange Online, consulte [Usar PowerShell con Exchange Online](https://technet.microsoft.com/library/jj200677%28v=exchg.160%29.aspx)..
+> Para más información sobre cómo usar Windows PowerShell en Exchange Online, consulte [Usar PowerShell con Exchange Online](https://technet.microsoft.com/library/jj200677%28v=exchg.160%29.aspx).
 
 Debes efectuar este procedimiento cada vez que cambies una plantilla.
 
 ### Para actualizar plantillas para Exchange Online
 
-1.  Conéctese al servicio mediante Windows PowerShell en Exchange Online:
+1.  Conéctese al servicio mediante Windows PowerShell en Exchange Online:
 
     1.  Especifique el nombre de usuario y la contraseña de Office 365:
 
@@ -68,7 +62,7 @@ Debes efectuar este procedimiento cada vez que cambies una plantilla.
         Import-PSSession $Session
         ```
 
-2.  Use el cmdlet [Import-RMSTrustedPublishingDomain](http://technet.microsoft.com/library/jj200724%28v=exchg.160%29.aspx) para volver a importar el Dominio de publicación de confianza (TPD) desde Azure RMS:
+2.  Use el cmdlet [Import-RMSTrustedPublishingDomain](http://technet.microsoft.com/library/jj200724%28v=exchg.160%29.aspx) para volver a importar el Dominio de publicación de confianza (TPD) desde Azure RMS:
 
     ```
     Import-RMSTrustedPublishingDomain -Name "<TPD name>" -RefreshTemplates -RMSOnline
@@ -144,7 +138,7 @@ Si modifica el Registro de los equipos que ejecutan Office 2016, Office 2013 o l
     > [!TIP]
         > En la ruta de acceso del Registro, <*MicrosoftRMS_FQDN*> hace referencia al FQDN de servicio de Microsoft RMS. Si desea comprobar este valor:
 
-    > 1.  Ejecute el cmdlet [Get-AadrmConfiguration](https://msdn.microsoft.com/library/windowsazure/dn629410.aspx) para Azure RMS. Si aún no ha instalado el módulo de Windows PowerShell para Azure RMS, consulte [Installing Windows PowerShell for Azure Rights Management](install-powershell.md) (Instalación de Windows PowerShell para Azure Rights Management)..
+    > 1.  Ejecute el cmdlet [Get-AadrmConfiguration](https://msdn.microsoft.com/library/windowsazure/dn629410.aspx) para Azure RMS. Si aún no ha instalado el módulo de Windows PowerShell para Azure RMS, consulte [Instalación de Windows PowerShell para Azure Rights Management](install-powershell.md).
     > 2.  En la salida, identifique el valor **LicensingIntranetDistributionPointUrl** .
     > 
     >     Por ejemplo: **LicensingIntranetDistributionPointUrl   : https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing**
@@ -192,6 +186,7 @@ Si modifica el Registro de los equipos que ejecutan Office 2010, puede establece
 ## Véase también
 [Configuración de plantillas personalizadas para Azure Rights Management](configure-custom-templates.md)
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

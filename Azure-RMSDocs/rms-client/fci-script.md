@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Script de Windows PowerShell para la protección de Azure RMS con FCI del Administrador de recursos del servidor de archivos | Azure RMS
-description:
-keywords:
+title: "Script de Windows PowerShell para la protección de Azure RMS con FCI del Administrador de recursos del servidor de archivos | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ae6d8d0f-4ebc-43fe-a1f6-26b690fd83d0
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: a1771c37bffa2af60773a5befdd35c14f684c942
+
 
 ---
 
@@ -29,10 +23,10 @@ ms.suite: ems
 
 *Se aplica a: Azure Rights Management, Windows Server 2012, Windows Server 2012 R2*
 
-Esta página contiene el script de ejemplo para copiar y editar, como se describe en [RMS protection with Windows Server File Classification Infrastructure](configure-fci.md) (Protección de RMS con la infraestructura de clasificación de archivos de Windows Server)..
+Esta página contiene el script de ejemplo para copiar y editar, como se describe en [RMS protection with Windows Server File Classification Infrastructure](configure-fci.md) (Protección de RMS con la infraestructura de clasificación de archivos de Windows Server).
 
-*&#42;&#42;Aviso de declinación de responsabilidades&#42;&#42;: Este script de ejemplo no es compatible con ningún servicio o programa de soporte técnico estándar de Microsoft. Este script de*
-*ejemplo se proporciona TAL CUAL sin garantía de ningún tipo.*
+*&#42;&#42;Aviso de declinación de responsabilidades&#42;&#42;: este script de ejemplo no es compatible con ningún servicio o programa de soporte técnico estándar de Microsoft. Este script*
+*de ejemplo se proporciona TAL CUAL sin garantía de ningún tipo.*
 
 ```
 <#
@@ -177,9 +171,10 @@ if (!$Script:isScriptProcess) { exit(-1) } else {exit(0)}
 
 ---
 
-Volver a [RMS protection with Windows Server File Classification Infrastructure](configure-fci.md) (Protección de RMS con la infraestructura de clasificación de archivos de Windows Server)..
+Volver a [RMS protection with Windows Server File Classification Infrastructure](configure-fci.md) (Protección de RMS con la infraestructura de clasificación de archivos de Windows Server).
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

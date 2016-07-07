@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Generar y transferir su clave de inquilino a través de Internet | Azure RMS
-description:
-keywords:
+title: "Generar y transferir su clave de inquilino a través de Internet | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1bff9b06-8c5a-4b1d-9962-6668219210e6
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 7a9c8b531ec342e7d5daf0cbcacd6597a79e6a55
+ms.openlocfilehash: 20cfa722f7008c52f4fbc219a4de04c50ee3548d
+
 
 ---
 
@@ -43,12 +37,12 @@ Para preparar su estación de trabajo conectada a Internet, siga estos 3 pasos:
 -   [Paso 3: Descargue el conjunto de herramientas de BYOK.](#step-3-download-the-byok-toolset)
 
 ### Paso 1: Instale Windows PowerShell para Azure Rights Management.
-En la estación de trabajo conectada a Internet, descargue e instale el módulo Windows PowerShell para Azure Rights Management.
+En la estación de trabajo conectada a Internet, descargue e instale el módulo Windows PowerShell para Azure Rights Management.
 
 > [!NOTE]
 > Si ha descargado anteriormente este módulo de Windows PowerShell, ejecute el siguiente comando para comprobar que su número de versión es 2.1.0.0 como mínimo: `(Get-Module aadrm -ListAvailable).Version`
 
-Para obtener instrucciones de instalación, consulte [Installing Windows PowerShell for Azure Rights Management](../deploy-use/install-powershell.md) (Instalación de Windows PowerShell para Azure Rights Management)..
+Para obtener instrucciones de instalación, consulte [Instalación de Windows PowerShell para Azure Rights Management](../deploy-use/install-powershell.md).
 
 ### Paso 2: Obtén tu id. de inquilino de Azure Active Directory.
 Inicie Windows PowerShell con la opción **Ejecutar como administrador** y, a continuación, ejecute los comandos siguientes:
@@ -85,15 +79,15 @@ Vaya al Centro de descarga de Microsoft y [descargue el conjunto de herramientas
 |Asia|AzureRMS-BYOK-tools-AsiaPacific.zip|
 El conjunto de herramientas incluye los siguientes elementos:
 
--   Un paquete de clave de intercambio de claves (KEK) cuyo nombre comienza por **BYOK-KEK-pkg-**..
+-   Un paquete de clave de intercambio de claves (KEK) cuyo nombre comienza por **BYOK-KEK-pkg-**.
 
--   Un paquete de mundo de seguridad cuyo nombre comienza por **BYOK-SecurityWorld-pkg-**..
+-   Un paquete de mundo de seguridad cuyo nombre comienza por **BYOK-SecurityWorld-pkg-**.
 
--   Un script Python llamado **verifykeypackage.py**..
+-   Un script Python llamado **verifykeypackage.py**.
 
 -   Un archivo ejecutable de la línea de comandos llamado **KeyTransferRemote.exe**, un archivo de metadatos llamado **KeyTransferRemote.exe.config** y archivos DLL asociados.
 
--   Un paquete redistribuible de Visual C++, llamado **vcredist_x64.exe**..
+-   Un paquete Visual C++ Redistributable, llamado **vcredist_x64.exe**.
 
 Copia el paquete a la unidad de USB o a otro almacenamiento portátil.
 
@@ -112,7 +106,7 @@ Asegúrese de que las herramientas de Thales se encuentran en la ruta de acceso 
 ```
 set PATH=%PATH%;”%nfast_home%\bin”;”%nfast_home%\python\bin”
 ```
-Para obtener más información, consulte la guía de usuario incluida en el HSM de Thales o visite el sitio web de Thales para Azure RMS en [http://www.thales-esecurity.com/msrms/cloud](http://www.thales-esecurity.com/msrms/cloud)..
+Para obtener más información, consulte la guía de usuario incluida en el HSM de Thales o visite el sitio web de Thales para Azure RMS en [http://www.thales-esecurity.com/msrms/cloud](http://www.thales-esecurity.com/msrms/cloud).
 
 ### Paso 2: Instalar el conjunto de herramientas BYOK en la estación de trabajo desconectada
 Copie el paquete del conjunto de herramientas de BYOK de la unidad USB o de otra unidad de almacenamiento portátil y, a continuación, haga lo siguiente:
@@ -121,7 +115,7 @@ Copie el paquete del conjunto de herramientas de BYOK de la unidad USB o de otra
 
 2.  Desde esa carpeta, ejecute vcredist_x64.exe.
 
-3.  Siga las instrucciones para instalar los componentes de tiempo de ejecución de Visual C++ para Visual Studio 2012.
+3.  Siga las instrucciones para instalar los componentes de tiempo de ejecución de Visual C++ para Visual Studio 2012.
 
 ## Generar su clave de inquilino
 En la estación de trabajo desconectada, siga estos 3 pasos para generar tus propias claves de inquilino:
@@ -188,7 +182,7 @@ Este paso es opcional, pero es recomendable para que pueda validar estas caracte
 
 2.  Confirme que ve lo que se indica a continuación, lo cual significa que la validación es correcta: **Resultado:  CORRECTO**
 
-Este script valida la cadena del firmante hasta la clave de la raíz de Thales. El hash de esta clave de la raíz está incrustada en el script y su valor debe ser **59178a47 de508c3f 291277ee 184f46c4 f1d9c639**. También puede confirmar este valor de forma independiente visitando el [sitio web de Thales](http://www.thalesesec.com/)..
+Este script valida la cadena del firmante hasta la clave de la raíz de Thales. El hash de esta clave de la raíz está incrustada en el script y su valor debe ser **59178a47 de508c3f 291277ee 184f46c4 f1d9c639**. También puede confirmar este valor de forma independiente visitando el [sitio web de Thales](http://www.thalesesec.com/).
 
 Ahora está listo para crear una clave nueva que será su clave de inquilino de RMS.
 
@@ -269,11 +263,11 @@ Para reducir los permisos en su clave de inquilino, haga lo siguiente:
         KeyTransferRemote.exe -ModifyAcls -KeyAppName simple -KeyIdentifier contosokey -ExchangeKeyPackage BYOK-KEK-pkg-AP-1 -NewSecurityWorldPackage BYOK-SecurityWorld-pkg-AP-1
         ```
 
-Cuando ejecute este comando, reemplace *contosokey* por el mismo valor que especificó en [Paso 1: Crear un mundo de seguridad](##step-1-create-a-security-world) en la sección *Generar su clave de inquilino*.
+Cuando ejecute este comando, reemplace *contosokey* por el mismo valor que ha especificado en [Paso 1: Crear un mundo de seguridad](#step-1-create-a-security-world) en la sección *Generar su clave de inquilino*.
 
 Se le pedirá que conecte sus tarjetas de ACS del mundo de seguridad y, si se especifica, su contraseña o PIN.
 
-Cuando el comando finalice, verá **Resultado: CORRECTO** y la copia de su clave de inquilino con permisos reducidos estará en el archivo llamado key_xferacId_*&lt;contosokey&gt;*..
+Cuando el comando finalice, verá **Resultado: CORRECTO** y la copia de su clave de inquilino con permisos reducidos estará en el archivo llamado key_xferacId_*&lt;contosokey&gt;*.
 
 ### Paso 2: Inspeccionar la nueva copia de la clave
 De forma opcional, ejecute las utilidades de Thales para confirmar los permisos mínimos en la nueva clave de inquilino:
@@ -290,7 +284,7 @@ De forma opcional, ejecute las utilidades de Thales para confirmar los permisos 
     "%nfast_home%\bin\kmfile-dump.exe" "%NFAST_KMDATA%\local\key_xferacld_contosokey"
     ```
 
-Cuando ejecute estos comandos, reemplace *contosokey* por el mismo valor que especificó en [Paso 1: Crear un mundo de seguridad](##step-1-create-a-security-world) en la sección *Generar su clave de inquilino*.
+Cuando ejecute este comando, reemplace *contosokey* por el mismo valor que ha especificado en [Paso 1: Crear un mundo de seguridad](#step-1-create-a-security-world) en la sección *Generar su clave de inquilino*.
 
 ### Paso 3: Cifrar su clave mediante la Clave de intercambio de claves de Microsoft
 Ejecute uno de los siguientes comandos, en función de su región:
@@ -315,7 +309,7 @@ Ejecute uno de los siguientes comandos, en función de su región:
 
 Cuando ejecute este comando, siga estas instrucciones:
 
--   Reemplace *contosokey* por el identificador que usó para generar la clave en [Paso 1: Crear un mundo de seguridad](##step-1-create-a-security-world) en la sección *Generar su clave de inquilino*.
+-   Reemplace *contosokey* por el identificador que ha usado para generar la clave en [Paso 1: Crear un mundo de seguridad](#step-1-create-a-security-world) en la sección *Generar su clave de inquilino*.
 
 -   Reemplace *GUID* por el identificador de inquilino de Azure Active Directory que recuperó en [Paso 2: Obtener el identificador de inquilino de Azure Active Directory](#step-2-get-your-azure-active-directory-tenant-id) en la sección *Preparar la estación de trabajo conectada a Internet*.
 
@@ -383,6 +377,7 @@ Ahora ha completado todos los pasos obligatorios para aportar su propia clave a 
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Migración desde AD RMS a Azure Rights Management - Fase 3 | Azure RMS
-description:
-keywords:
+title: "Migración desde AD RMS a Azure Rights Management - Fase 3 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,17 +10,11 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
-
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: 75cce1d0e5a1cff0d4f6609d0f084fda1af62951
+
 
 ---
 
@@ -31,12 +23,12 @@ ms.suite: ems
 *Se aplica a: Active Directory Rights Management Services, Azure Rights Management*
 
 
-Use la siguiente información para la fase 3 de migración desde AD RMS a Azure Rights Management (Azure RMS). Estos procedimientos incluyen los pasos 6 y 7 del tema [Migrating from AD RMS to Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md) (Migración desde AD RMS a Azure Rights Management)..
+Use la siguiente información para la fase 3 de migración desde AD RMS a Azure Rights Management (Azure RMS). Estos procedimientos incluyen los pasos 6 y 7 del tema [Migración desde AD RMS a Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md).
 
 
 ## Paso 6. Configure la integración de IRM en Exchange Online.
 
-Si ha importado anteriormente el TDP desde AD RMS a Exchange Online, debe quitarlo para evitar conflictos de plantillas y directivas después de haber migrado a Azure RMS. Para ello, use el cmdlet [Remove-RMSTrustedPublishingDomain](https://technet.microsoft.com/en-us/library/jj200720%28v=exchg.150%29.aspx) de Exchange Online.
+Si ha importado anteriormente el TDP desde AD RMS a Exchange Online, debe quitarlo para evitar conflictos de plantillas y directivas después de haber migrado a Azure RMS. Para ello, use el cmdlet [Remove-RMSTrustedPublishingDomain](https://technet.microsoft.com/library/jj200720%28v=exchg.150%29.aspx) de Exchange Online.
 
 Si eligió una topología de clave de inquilino de Azure RMS de **administrada por Microsoft**:
 
@@ -52,7 +44,7 @@ Si ha utilizado la funcionalidad Information Rights Management (IRM) de Exchange
 Por último, para este paso, si ha importado varios TPD en Azure RMS que se usaron para proteger los mensajes de correo electrónico, debe editar manualmente el registro en los equipos de Exchange Server para redirigir todas las direcciones URL de TPD al conector RMS.
 
 > [!NOTE]
-> Antes de empezar, compruebe las versiones de los servidores locales que son compatibles con Azure RMS desde [On-premises servers that support Azure RMS](../get-started/requirements-servers.md) (Servidores locales compatibles con Azure RMS)..
+> Antes de empezar, compruebe las versiones de los servidores locales que son compatibles con Azure RMS desde [Servidores locales compatibles con Azure RMS](../get-started/requirements-servers.md).
 
 ### Deshabilitar IRM en servidores de Exchange y quitar la configuración de AD RMS
 
@@ -82,19 +74,19 @@ Por último, para este paso, si ha importado varios TPD en Azure RMS que se usar
     Set-IRMConfiguration -RefreshServerCertificates
     ```
 
-6.  En cada Exchange Server, restablezca ahora IIS, por ejemplo, mediante la ejecución de un símbolo del sistema como administrador y escriba **iisreset**..
+6.  En cada Exchange Server, restablezca ahora IIS, por ejemplo, mediante la ejecución de un símbolo del sistema como administrador y escriba **iisreset**.
 
 ### Deshabilitar IRM en servidores de SharePoint y quitar la configuración de AD RMS
 
 1.  Asegúrese de que no hay ningún documento desprotegido desde bibliotecas protegidas con RMS. Si hay, quedarán inaccesibles al final de este procedimiento.
 
-2.  En el sitio web de Administración central de SharePoint, en la sección **Inicio rápido**, haga clic en **Seguridad**..
+2.  En el sitio web de Administración central de SharePoint, en la sección **Inicio rápido** , haga clic en **Seguridad**.
 
-3.  En la página **Seguridad**, en la sección **Directiva de información**, haga clic en **Configurar Information Rights Management**..
+3.  En la página **Seguridad** , en la página **Directiva de información** , haga clic en **Configurar Information Rights Management**.
 
-4.  En la página **Information Rights Management**, en la sección **Information Rights Management**, seleccione **No use IRM en este servidor** y luego haga clic en **Aceptar**..
+4.  En la página **Information Rights Management** , en la sección **Information Rights Management** , seleccione **No use IRM en este servidor**y luego haga clic en **Aceptar**.
 
-5.  En cada uno de los equipos de SharePoint Server, elimine el contenido de la carpeta \ProgramData\Microsoft\MSIPC\Server\*&lt;SID de la cuenta que ejecuta SharePoint Server.&gt;*.
+5.  En cada uno de los equipos de SharePoint Server, elimine el contenido de la carpeta \ProgramData\Microsoft\MSIPC\Server\*&lt;SID de la cuenta que ejecuta SharePoint Server&gt;*.
 
 #### Instalar y configurar el conector RMS
 
@@ -106,7 +98,7 @@ Por último, para este paso, si ha importado varios TPD en Azure RMS que se usar
 
     Al realizar estas modificaciones del registro, utilice las siguientes instrucciones:
 
-    -   Reemplace *ConnectorFQDN* por el nombre que definió en el DNS para el conector. Por ejemplo, **rmsconnector.contoso.com**..
+    -   Reemplace *ConnectorFQDN* por el nombre que definió en el DNS para el conector. Por ejemplo, **rmsconnector.contoso.com**.
 
     -   Use el prefijo HTTP o HTTPS para la dirección URL del conector, en función de si ha configurado el conector para usar HTTP o HTTPS para comunicarse con los servidores locales.
 
@@ -219,8 +211,9 @@ Una de las siguientes, en función de si usas HTTP o HTTPS desde tu servidor Exc
 Después de completar estos procedimientos, asegúrese de leer la sección **Pasos siguientes** del artículo [Implementación del conector de Azure Rights Management](../deploy-use/deploy-rms-connector.md).
 
 ## Pasos siguientes
-Para continuar con la migración, vaya a [Fase 4: Tareas posteriores a la migración](migrate-from-ad-rms-phase4.md)..
+Para continuar con la migración, vaya a [Fase 4: Tareas posteriores a la migración](migrate-from-ad-rms-phase4.md).
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

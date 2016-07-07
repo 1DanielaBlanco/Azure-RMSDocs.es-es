@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Introducción a Azure Rights Management | Azure RMS
-description:
-keywords:
+title: "Introducción a Azure Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/03/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 965581c8-be3c-43b4-8145-5cefd29c7636
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: fdedb0f1064e98500d3b4edcee283c514851d446
+ms.openlocfilehash: a8c9a55977a285cd30872beeb160b07ce02edcce
+
 
 ---
 
@@ -35,16 +29,17 @@ Rights Management usa directivas de cifrado, identidad y autorización para ayud
 
 Por ejemplo, puedes configurar un archivo para que solamente puedan acceder a él personas de tu organización, o controlar si se puede editar el archivo o restringirlo a solo lectura, o evitar que se pueda imprimir. Puedes configurar los correos electrónicos de forma similar y, además, evitar que se puedan reenviar o evitar que se use la opción Responder a todos. Estas tareas de protección se pueden simplificar mediante el uso de plantillas de políticas estandarizadas.
 
-¿Se conoce a Azure Rights Management por otro nombre? Consulte [nuestra lista de términos alternativos para el servicio](azure-rms-aka.md)..
+¿Se conoce a Azure Rights Management por otro nombre? Consulte [nuestra lista de términos alternativos para el servicio](azure-rms-aka.md).
 
 # Pasos siguientes
 Para obtener una comprensión más profunda y algunos ejemplos, consulte [¿Qué es Azure Rights Management?](what-is-azure-rms.md)
 
-Si está listo para implementar Azure RMS para su organización, use [Azure Rights Management deployment roadmap](../plan-design/deployment-roadmap.md) (Plan para la implementación de Azure Rights Management)..
+Si está listo para implementar Azure RMS para su organización, use [Plan para la implementación de Azure Rights Management](../plan-design/deployment-roadmap.md).
 
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 
