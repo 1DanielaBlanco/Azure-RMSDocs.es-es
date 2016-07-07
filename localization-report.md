@@ -808,8 +808,8 @@
 * Archive Datetime: 2016-07-01 23:46:12
 * Handback File: [install-configure-rms-connector.c9e952e8e10978fb2e7261d60fa4b885fd8afce2.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/ca2bdeadff42e4f880c06776526327939c86b2df/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/install-configure-rms-connector.c9e952e8e10978fb2e7261d60fa4b885fd8afce2.es-es.xlf)
 * Handback Datetime: 2016-07-07 14:07:10
-* Bilingual File: [install-configure-rms-connector.c9e952e8e10978fb2e7261d60fa4b885fd8afce2.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/9f7912f9cb1c9c3cf83bbcae0e442ad31d628bd7/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/install-configure-rms-connector.c9e952e8e10978fb2e7261d60fa4b885fd8afce2.es-es.xlf)
-* Bilingual Datetime: 2016-06-16 10:18:53
+* Bilingual File: [install-configure-rms-connector.c9e952e8e10978fb2e7261d60fa4b885fd8afce2.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/ca2bdeadff42e4f880c06776526327939c86b2df/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/install-configure-rms-connector.c9e952e8e10978fb2e7261d60fa4b885fd8afce2.es-es.xlf)
+* Bilingual Datetime: 2016-07-07 14:08:24
 * [Back to Top](#report-top)
 
 ##### <a name='590148218fdd10e88ba764b2dc523a2213e2c8bb27'></a> Source: [Azure-RMSDocs\deploy-use\install-powershell.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/deploy-use/install-powershell.md)
@@ -1379,8 +1379,8 @@
 * Archive Datetime: 2016-07-01 23:46:12
 * Handback File: [getting-started-with-ad-rms-2-0.ea2db894ddfb123d7a11829d073480489c257733.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/ca2bdeadff42e4f880c06776526327939c86b2df/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/getting-started-with-ad-rms-2-0.ea2db894ddfb123d7a11829d073480489c257733.es-es.xlf)
 * Handback Datetime: 2016-07-07 14:07:10
-* Bilingual File: [getting-started-with-ad-rms-2-0.ea2db894ddfb123d7a11829d073480489c257733.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/9bd6e645ee7e5b24246048b87e154688be109512/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/getting-started-with-ad-rms-2-0.ea2db894ddfb123d7a11829d073480489c257733.es-es.xlf)
-* Bilingual Datetime: 2016-06-16 18:38:51
+* Bilingual File: [getting-started-with-ad-rms-2-0.ea2db894ddfb123d7a11829d073480489c257733.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/ca2bdeadff42e4f880c06776526327939c86b2df/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/getting-started-with-ad-rms-2-0.ea2db894ddfb123d7a11829d073480489c257733.es-es.xlf)
+* Bilingual Datetime: 2016-07-07 14:08:24
 * [Back to Top](#report-top)
 
 ##### <a name='e75ec6c04afd171552697f79deb33ad2cfe2c4e166'></a> Source: [Azure-RMSDocs\develop\how-to-build-your-first-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ac6afddc2b39d6209ef1b89d8d84011942cdba5a/Azure-RMSDocs/develop/how-to-build-your-first-application.md)
@@ -1659,8 +1659,8 @@
 * Archive Datetime: 2016-07-01 23:46:12
 * Handback File: [overview.6e2f032650d36c4e8bc88afe03974bb08b242502.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/ca2bdeadff42e4f880c06776526327939c86b2df/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/overview.6e2f032650d36c4e8bc88afe03974bb08b242502.es-es.xlf)
 * Handback Datetime: 2016-07-07 14:07:10
-* Bilingual File: [overview.6e2f032650d36c4e8bc88afe03974bb08b242502.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/19291a52fec6f8451e9325aeb88478792f1d4ca1/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/overview.6e2f032650d36c4e8bc88afe03974bb08b242502.es-es.xlf)
-* Bilingual Datetime: 2016-06-16 10:18:53
+* Bilingual File: [overview.6e2f032650d36c4e8bc88afe03974bb08b242502.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/ca2bdeadff42e4f880c06776526327939c86b2df/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/overview.6e2f032650d36c4e8bc88afe03974bb08b242502.es-es.xlf)
+* Bilingual Datetime: 2016-07-07 14:08:24
 * [Back to Top](#report-top)
 
 ##### <a name='eccc0ba9c13e0c35c8d0c8877ce92f9b99e8383586'></a> Source: [Azure-RMSDocs\develop\release-notes.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/f7dd88d90357c99c69fe4fdde67c1544595e02f8/Azure-RMSDocs/develop/release-notes.md)
@@ -1980,8 +1980,8 @@
 * Archive Datetime: 2016-07-01 23:46:12
 * Handback File: [requirements-applications.0609c293c5627771667916524593402b34fff036.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/ca2bdeadff42e4f880c06776526327939c86b2df/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/requirements-applications.0609c293c5627771667916524593402b34fff036.es-es.xlf)
 * Handback Datetime: 2016-07-07 14:07:10
-* Bilingual File: [requirements-applications.0609c293c5627771667916524593402b34fff036.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/9f7912f9cb1c9c3cf83bbcae0e442ad31d628bd7/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/requirements-applications.0609c293c5627771667916524593402b34fff036.es-es.xlf)
-* Bilingual Datetime: 2016-06-16 10:18:53
+* Bilingual File: [requirements-applications.0609c293c5627771667916524593402b34fff036.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/ca2bdeadff42e4f880c06776526327939c86b2df/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/requirements-applications.0609c293c5627771667916524593402b34fff036.es-es.xlf)
+* Bilingual Datetime: 2016-07-07 14:08:24
 * [Back to Top](#report-top)
 
 ##### <a name='75b2414cc360704deb6107d6c0038f5b0bf7fa70107'></a> Source: [Azure-RMSDocs\get-started\requirements-azure-ad.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ed50d87138c428fadfd22cd5b3ef3c7f7e421848/Azure-RMSDocs/get-started/requirements-azure-ad.md)
@@ -5006,8 +5006,8 @@
 * Archive Datetime: 2016-07-01 23:46:12
 * Handback File: [migrate-from-ad-rms-phase2.318d35db066c49206b0ca3bcb905627474043548.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/ca2bdeadff42e4f880c06776526327939c86b2df/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/migrate-from-ad-rms-phase2.318d35db066c49206b0ca3bcb905627474043548.es-es.xlf)
 * Handback Datetime: 2016-07-07 14:07:10
-* Bilingual File: [migrate-from-ad-rms-phase2.318d35db066c49206b0ca3bcb905627474043548.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/9f7912f9cb1c9c3cf83bbcae0e442ad31d628bd7/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/migrate-from-ad-rms-phase2.318d35db066c49206b0ca3bcb905627474043548.es-es.xlf)
-* Bilingual Datetime: 2016-06-16 10:18:53
+* Bilingual File: [migrate-from-ad-rms-phase2.318d35db066c49206b0ca3bcb905627474043548.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/ca2bdeadff42e4f880c06776526327939c86b2df/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/migrate-from-ad-rms-phase2.318d35db066c49206b0ca3bcb905627474043548.es-es.xlf)
+* Bilingual Datetime: 2016-07-07 14:08:24
 * [Back to Top](#report-top)
 
 ##### <a name='75cce1d0e5a1cff0d4f6609d0f084fda1af62951338'></a> Source: [Azure-RMSDocs\plan-design\migrate-from-ad-rms-phase3.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/f7dd88d90357c99c69fe4fdde67c1544595e02f8/Azure-RMSDocs/plan-design/migrate-from-ad-rms-phase3.md)
