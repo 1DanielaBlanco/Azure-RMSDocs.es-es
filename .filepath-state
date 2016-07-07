@@ -239,15 +239,6 @@
   "81541dbadabe3417299f47447384934373275e75": [
     "Azure-RMSDocs\\develop\\getting-started-with-ad-rms-2-0.md"
   ],
-  "db1817835963d49e1f3608489a7a7f730ff60bd9": [
-    "Azure-RMSDocs\\develop\\getting-started-with-ad-rms-2-0.md"
-  ],
-  "5e8415d165e6105c2592ba10332b8fd4f5e4e725": [
-    "Azure-RMSDocs\\develop\\getting-started-with-ad-rms-2-0.md"
-  ],
-  "7d362d91736d5167808a88d487de45049b3b4883": [
-    "Azure-RMSDocs\\develop\\getting-started-with-ad-rms-2-0.md"
-  ],
   "e75ec6c04afd171552697f79deb33ad2cfe2c4e1": [
     "Azure-RMSDocs\\develop\\how-to-build-your-first-application.md"
   ],
@@ -312,9 +303,6 @@
     "Azure-RMSDocs\\develop\\microsoft-information-protection-and-control-client-portal.md"
   ],
   "417888c5445d702b1f700a8e717fbb746593efc6": [
-    "Azure-RMSDocs\\develop\\overview.md"
-  ],
-  "e9a3f95c8ff289380dc62994e4f719bc174c4900": [
     "Azure-RMSDocs\\develop\\overview.md"
   ],
   "eccc0ba9c13e0c35c8d0c8877ce92f9b99e83835": [
@@ -455,9 +443,6 @@
   "165292482349e4a233ab4030f49a297f57b041ac": [
     "Azure-RMSDocs\\deploy-use\\install-configure-rms-connector.md"
   ],
-  "4595cb16b84c29d67fa28524ee12386fbf09ab4a": [
-    "Azure-RMSDocs\\deploy-use\\install-configure-rms-connector.md"
-  ],
   "590148218fdd10e88ba764b2dc523a2213e2c8bb": [
     "Azure-RMSDocs\\deploy-use\\install-powershell.md"
   ],
@@ -560,12 +545,6 @@
   "61d18747011435773e16b3c8d2a8ac2104997484": [
     "Azure-RMSDocs\\get-started\\requirements-applications.md"
   ],
-  "adc0c3724139eaedd1b50972a22877437f17e4ea": [
-    "Azure-RMSDocs\\get-started\\requirements-applications.md"
-  ],
-  "9739df74a999efef879fb537eee730af7520b0fa": [
-    "Azure-RMSDocs\\get-started\\requirements-applications.md"
-  ],
   "75b2414cc360704deb6107d6c0038f5b0bf7fa70": [
     "Azure-RMSDocs\\get-started\\requirements-azure-ad.md"
   ],
@@ -639,12 +618,6 @@
     "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase1.md"
   ],
   "1016ecdd77e818840f2a2cfab8212e908291bb89": [
-    "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase2.md"
-  ],
-  "3ac6ffac17770828a24bbac703ad8aa73b5740eb": [
-    "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase2.md"
-  ],
-  "589cd61d24788538ec9a013a236d22cd103ab8ec": [
     "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase2.md"
   ],
   "75cce1d0e5a1cff0d4f6609d0f084fda1af62951": [
