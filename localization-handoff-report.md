@@ -1,31 +1,11 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [Azure-RMSDocs\deploy-use\monitor-rms-connector.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/f8e23e8bcbfb25092cb31f7af76d17239f3063a7/Azure-RMSDocs/deploy-use/monitor-rms-connector.md) | OutofSyncHandedBackSuccess | [Details](#32c3c93d55bd82f45fa7a081e55ae7ebe8f5956f30)
 
 ## Item Details
-##### <a name='32c3c93d55bd82f45fa7a081e55ae7ebe8f5956f30'></a> Source: [Azure-RMSDocs\deploy-use\monitor-rms-connector.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/f8e23e8bcbfb25092cb31f7af76d17239f3063a7/Azure-RMSDocs/deploy-use/monitor-rms-connector.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [monitor-rms-connector.f938a97caf781680ad1036c38a0d1535b4565e92.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/b996f0c9c1d16e949ad7b1cf71e7a93171ccfffe/ol-handoff/Microsoft/Azure-RMSDocs-pr.es-es/master/monitor-rms-connector.f938a97caf781680ad1036c38a0d1535b4565e92.es-es.xlf)
-* Handoff Datetime: 2016-07-08 17:26:38
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [Azure-RMSDocs\deploy-use\monitor-rms-connector.md](https://github.com/Microsoft/Azure-RMSDocs-pr.es-es/blob/f3ba48618c6e8df12766c0c7d5359df13abb33fc/Azure-RMSDocs/deploy-use/monitor-rms-connector.md)
-* Current Handback File: [monitor-rms-connector.f938a97caf781680ad1036c38a0d1535b4565e92.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/74646156d6794828196f658e9a6e23be108330e0/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/monitor-rms-connector.f938a97caf781680ad1036c38a0d1535b4565e92.es-es.xlf)
-* Current Handback Datetime: 2016-07-07 17:22:13
-* Bilingual File: [monitor-rms-connector.f938a97caf781680ad1036c38a0d1535b4565e92.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/74646156d6794828196f658e9a6e23be108330e0/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/monitor-rms-connector.f938a97caf781680ad1036c38a0d1535b4565e92.es-es.xlf)
-* Bilingual Datetime: 2016-07-07 17:27:43
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
