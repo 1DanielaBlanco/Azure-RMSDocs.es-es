@@ -2122,7 +2122,7 @@
 * Archive File: [scenario-work-folders.37c46518ddc0b687611245d91f30625060e41197.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/8640f4d7ef01618daceb13d6651d8b73f695e52a/ol-handoff/Microsoft/Azure-RMSDocs-pr.es-es/master/archive/scenario-work-folders.37c46518ddc0b687611245d91f30625060e41197.es-es.xlf)
 * Archive Datetime: 2016-07-01 23:46:12
 * Handback File: [scenario-work-folders.37c46518ddc0b687611245d91f30625060e41197.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/362cc61c37b472183b67c68e1d49f18f6b0bbad4/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/scenario-work-folders.37c46518ddc0b687611245d91f30625060e41197.es-es.xlf)
-* Handback Datetime: 2016-07-13 12:50:37
+* Handback Datetime: 2016-07-13 13:28:35
 * Handback Error: [handback_transform_failed](#35ad445e229eac3feeca5522a41b9e3b25fd1180117handback_transform_failed)
 * Bilingual File: [scenario-work-folders.37c46518ddc0b687611245d91f30625060e41197.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/362cc61c37b472183b67c68e1d49f18f6b0bbad4/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/scenario-work-folders.37c46518ddc0b687611245d91f30625060e41197.es-es.xlf)
 * Bilingual Datetime: 2016-06-22 12:23:47
