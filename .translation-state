@@ -1,6 +1,6 @@
 {
   "LastProcessedCommit": "ab97a58053c34edbda0d3fb089840b20f9f33ffe",
-  "LastTranslatedCommit": "914d406fa020838bec49722a64472f99cfcd89b9",
+  "LastTranslatedCommit": "568ed68386ca1548a8bdcf152b00bc869cb7e053",
   "Items": {
     "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a": {
       "FileHash": "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a",
@@ -79441,7 +79441,7 @@
       "TargetFilePath": null,
       "HandbackFilePath": null,
       "HandbackFileCommit": null,
-      "HandbackDateTime": "2016-07-13T21:25:07.4058791Z",
+      "HandbackDateTime": "2016-07-13T21:48:53.0652638Z",
       "HandbackException": {
         "internal_error_code": "handback_transform_failed",
         "internal_error_message": "Handback file: C:\\ol\\master\\EM.handback\\06462f\\ol-handback\\Microsoft\\Azure-RMSDocs-pr.es-es\\master\\scenario-executives-email.02fb32c7a1e5b62754681e4d720db2d250184079.es-es.xlf failed.",
@@ -79451,7 +79451,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Transformer.TransformerClient.XliffToMarkdown(Stream xliffStream, Stream skeletonStream, Stream targetStream) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Transformer.Core\\TransformerClient.cs:line 119\r\n   at Microsoft.OpenLocalization.Helper.XliffTransformUtil.XliffToMarkdown(String skeletonFile, String xliffFile, String mdfile, Boolean useJavascriptTransformer) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Helper\\XliffTransformUtil.cs:line 92\r\n   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass5_0.<GetHandbackFiles>b__0(String file) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandbackCore.cs:line 406",
         "extended_information": null
       },
-      "HandbackFailureTimes": 2,
+      "HandbackFailureTimes": 3,
       "UpdatedDateTime": "0001-01-01T00:00:00",
       "ArchiveFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.es-es\\master\\archive\\scenario-executives-email.02fb32c7a1e5b62754681e4d720db2d250184079.es-es.xlf",
       "ArchiveFileCommit": "8640f4d7ef01618daceb13d6651d8b73f695e52a",
