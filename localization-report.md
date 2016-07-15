@@ -2029,7 +2029,7 @@
 * Archive File: [scenario-company-confidential-email.941ecd986725f9a245c1ffa40415d2788103096e.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/8640f4d7ef01618daceb13d6651d8b73f695e52a/ol-handoff/Microsoft/Azure-RMSDocs-pr.es-es/master/archive/scenario-company-confidential-email.941ecd986725f9a245c1ffa40415d2788103096e.es-es.xlf)
 * Archive Datetime: 2016-07-01 23:46:12
 * Handback File: [scenario-company-confidential-email.941ecd986725f9a245c1ffa40415d2788103096e.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/362cc61c37b472183b67c68e1d49f18f6b0bbad4/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/scenario-company-confidential-email.941ecd986725f9a245c1ffa40415d2788103096e.es-es.xlf)
-* Handback Datetime: 2016-07-15 13:57:28
+* Handback Datetime: 2016-07-15 15:33:59
 * Handback Error: [handback_transform_failed](#b6f3b06485dda81be2a36035fea7477f4061a8e9111handback_transform_failed)
 * Bilingual File: [scenario-company-confidential-email.941ecd986725f9a245c1ffa40415d2788103096e.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/362cc61c37b472183b67c68e1d49f18f6b0bbad4/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/scenario-company-confidential-email.941ecd986725f9a245c1ffa40415d2788103096e.es-es.xlf)
 * Bilingual Datetime: 2016-06-22 12:23:47
@@ -5752,7 +5752,7 @@
 * Archive File: [api-support.8de1be3c76f16a8ca6e8670d817059480b73fb74.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/8640f4d7ef01618daceb13d6651d8b73f695e52a/ol-handoff/Microsoft/Azure-RMSDocs-pr.es-es/master/archive/api-support.8de1be3c76f16a8ca6e8670d817059480b73fb74.es-es.xlf)
 * Archive Datetime: 2016-07-01 23:46:12
 * Handback File: [api-support.8de1be3c76f16a8ca6e8670d817059480b73fb74.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/362cc61c37b472183b67c68e1d49f18f6b0bbad4/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/api-support.8de1be3c76f16a8ca6e8670d817059480b73fb74.es-es.xlf)
-* Handback Datetime: 2016-07-15 13:57:28
+* Handback Datetime: 2016-07-15 15:33:59
 * Handback Error: [handback_transform_failed](#bb69cda94bf611712eb5b4a74d9ec25d1749da3a392handback_transform_failed)
 * Bilingual File: [api-support.8de1be3c76f16a8ca6e8670d817059480b73fb74.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/362cc61c37b472183b67c68e1d49f18f6b0bbad4/ol-handback/Microsoft/Azure-RMSDocs-pr.es-es/master/api-support.8de1be3c76f16a8ca6e8670d817059480b73fb74.es-es.xlf)
 * Bilingual Datetime: 2016-06-22 12:23:47
