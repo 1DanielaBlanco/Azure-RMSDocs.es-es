@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/20/2016
+ms.date: 07/08/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 8a1b3e54-f788-4f84-b9d7-5d5079e50b4e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 04fbac4389671ed32f64c0840d81723f8314869c
-ms.openlocfilehash: 4509126c61c4e37d9655d9bd080be3e097cd103f
+ms.sourcegitcommit: f8e23e8bcbfb25092cb31f7af76d17239f3063a7
+ms.openlocfilehash: 32c3c93d55bd82f45fa7a081e55ae7ebe8f5956f
 
 
 ---
@@ -100,7 +100,7 @@ Advertencia **2001**
 
 **Intento de acceso no autorizado al conector Microsoft RMS.**
 
-Este evento se registra cuando una cuenta intenta conectarse al conector RMS, pero se produce un error. El motivo más habitual es porque la cuenta que realiza la conexión no está en la lista descargada de cuentas autorizadas que descarga el conector RMS de Azure RMS.  Por ejemplo, la lista más reciente aún no se ha descargado (esto ocurre cada 15 minutos) o la cuenta no está en la lista. 
+Este evento se registra cuando una cuenta intenta conectarse al conector RMS, pero se produce un error. El motivo más habitual es porque la cuenta que realiza la conexión no está en la lista descargada de cuentas autorizadas que descarga el conector RMS de Azure RMS. Por ejemplo, la lista más reciente aún no se ha descargado (esto ocurre cada 15 minutos) o la cuenta no está en la lista. 
 
 Otra razón puede ser si ha instalado el conector RMS en el mismo servidor que está configurado para usar el conector. Por ejemplo, si instala el conector RMS en un servidor que ejecuta Exchange Server y autoriza una cuenta de Exchange para que use el conector. Esta configuración no se admite porque el conector RMS no puede identificar correctamente la cuenta cuando se intenta conectar.
 
@@ -140,6 +140,8 @@ Error **3000**
 
 Este evento se registra cada vez que el conector RMS encuentra un error inesperado, con los detalles del error en el mensaje de evento.
 
+Una posible causa puede identificarse mediante el texto **Error de solicitud con una respuesta vacía** del mensaje de evento. Si ve este texto, puede ser porque tiene un dispositivo de red que está realizando la inspección de SSL en los paquetes entre los servidores locales y el servidor del conector de RMS. Esto no se admite y generará un error de comunicación y este mensaje del registro de eventos.
+
 ----
 
 Error **3001**
@@ -147,6 +149,8 @@ Error **3001**
 **Se ha producido una excepción mientras se descargaba la información de autorización.**
 
 Este evento se registra si el conector RMS no puede descargar la lista más reciente de cuentas que tienen autorización para usar el conector RMS, con los detalles del error en el mensaje de evento.
+
+
 
 ----
 
@@ -191,6 +195,6 @@ Si necesita un registro más detallado para fines de diagnóstico, puede usar [D
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO2-->
 
 
