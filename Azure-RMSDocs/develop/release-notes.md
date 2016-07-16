@@ -1,26 +1,22 @@
 ---
-# required metadata
-
-title: Novedades y notas de la versión | Azure RMS
-description: Se describen las características y los  cambios importantes de esta nueva versión de RMS SDK.
-keywords:
+title: "Novedades y notas de la versión | Azure RMS"
+description: "Se describen las características y los  cambios importantes de esta nueva versión de RMS SDK."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/16/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4fa1c686-b00b-4734-9abb-141ce582a6af
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: eccc0ba9c13e0c35c8d0c8877ce92f9b99e83835
+
 
 ---
 
@@ -29,7 +25,8 @@ ms.suite: ems
 ## Novedades
 Microsoft Rights Management SDK 4.2 lleva las posibilidades de la aplicación de RMS a un nuevo nivel de flexibilidad y facilidad. En este tema se describen las características y los cambios importantes de esta nueva versión de RMS SDK.
 
--   [Novedades de la actualización de diciembre de 2015](#new_for_our_december_2015_update)
+-   [Novedades de junio de 2016](#new_for_June_2016)
+-   [Actualización de diciembre de 2015](#december_2015_update)
 -   [Actualización de julio de 2015: se agrega compatibilidad con el desarrollo de C++ y Linux](#july_2015_update_-_adds_support_for_linux___c___development)
 -   [Actualización de mayo de 2015: se agrega control de registro](#may_2015_update_-_adds_logging_control)
 -   [Actualización de febrero de 2015: se agrega compatibilidad con la aplicación de la Tienda Windows](#february_2015_update_-_adds_windows_store_application_support)
@@ -38,7 +35,15 @@ Microsoft Rights Management SDK 4.2 lleva las posibilidades de la aplicación de
 -   [Notas de la versión](#release-notes)
 -   [Preguntas más frecuentes](#frequently_asked_questions)
 
-### Novedades de la actualización de diciembre de 2015
+### Novedades de junio de 2016
+
+- **Compatibilidad con la autenticación moderna**: proporciona inicio de sesión basado en la biblioteca de autenticación de Active Directory (ADAL) para las aplicaciones con RMS habilitado. Permite características de inicio de sesión como Multi-Factor Authentication (MFA), los proveedores de identidades de terceros basados en SAML con aplicaciones cliente de RMS y la autenticación con tarjetas inteligentes y basada en certificados. También elimina la necesidad de usar el protocolo de autenticación básica con las aplicaciones con RMS habilitado.
+- **Compatibilidad con Seguimiento de documentos**: ahora los desarrolladores pueden habilitar el seguimiento de documentos al proteger los documentos en sus aplicaciones. 
+- Mejoras en el rendimiento
+- Correcciones de errores
+
+
+### Actualización de diciembre de 2015
 
 Con esta versión, RMS SDK para dispositivos pasa a la versión 4.2 y agrega lo siguiente:
 
@@ -124,7 +129,7 @@ En esta sección se detalla información sobre las versiones actuales y anterior
 
 -   **Compatibilidad de AD RMS:** los administradores de TI pueden usar aplicaciones habilitadas para RMS en los dispositivos móviles gracias a las nuevas extensiones para dispositivo móvil del servidor de AD RMS.
 -   **Uso sin conexión:** los usuarios finales pueden tener acceso sin conexión a los datos protegidos mediante RMS.
--   **Autenticación por separado:** los desarrolladores pueden usar su propia biblioteca de autenticación para Azure RMS y AD RMS (o usar, como se recomienda, la [biblioteca de autenticación de Azure AD [ADAL]](https://MSDN.Microsoft.Com/en-us/library/jj573266.aspx)).
+-   **Autenticación segregada**: los desarrolladores pueden usar su propia biblioteca de autenticación para Azure RMS y AD RMS, o bien usar, tal como se recomienda, la [biblioteca de autenticación de Azure AD (ADAL)](https://MSDN.Microsoft.Com/library/jj573266.aspx).
 -   **Interfaz de usuario por separado:** los desarrolladores pueden crear sus propias interfaces de usuario para proteger y usar documentos protegidos con RMS.
 -   **API rediseñada:** ahora los desarrolladores pueden disfrutar de una API de cifrado y descifrado sencilla y sin trabas que proporciona una experiencia de usuario y unos comportamientos de RMS uniformes, sin apenas esfuerzo.
 
@@ -144,7 +149,7 @@ En esta sección se detalla información sobre las versiones actuales y anterior
 
 -   Cuando uso el método [**ProtectedFileOutputStream**](/rights-management/sdk/4.2/api/android/protectedfileoutputstream#msipcthin2_protectedfileoutputstream_class_java)**.write(byte\[\] array, int offset, int length)** con una longitud distinta al valor de *array.length*, luego no puedo usar el contenido con el SDK.
 
-    **Solución:** este es un problema conocido. Para mitigarlo, pase siempre una matriz **bytes \ [\]** con el mismo valor de longitud que el parámetro de longitud o use el método [**ProtectedFileOutputStream**](/rights-management/sdk/4.2/api/android/protectedfileoutputstream#msipcthin2_protectedfileoutputstream_class_java)**.write(byte\[\] array)**.
+    **Solución:** este es un problema conocido. Para mitigarlo, pase siempre una matriz **byte \[\]** con el mismo valor de longitud que el parámetro de longitud o use el método [**ProtectedFileOutputStream**](/rights-management/sdk/4.2/api/android/protectedfileoutputstream#msipcthin2_protectedfileoutputstream_class_java)**.write(byte\[\] array)**.
 
 **iOS y OS X**
 
@@ -227,6 +232,7 @@ En esta sección se detalla información sobre las versiones actuales y anterior
  
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jul16_HO2-->
 
 

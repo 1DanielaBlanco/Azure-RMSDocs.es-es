@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Formatos de archivo compatibles | Azure RMS
-description: La versión actual de la API de archivo admite protección nativa para archivos de MS Office, PDF y protección PFile para los demás formatos de archivo.
-keywords:
+description: "La versión actual de la API de archivo admite protección nativa para archivos de MS Office, PDF y protección PFile para los demás formatos de archivo."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: EC831494-7F2C-4C70-9063-B02CDDEA14EE
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b5fbbf637a34371a676a6cba169cc0268ce5e541
+ms.openlocfilehash: 58efe60d6066f2e9761aea8d66d83711e68ab642
+
 
 ---
 
@@ -46,6 +42,7 @@ Los administradores pueden establecer claves del Registro para configurar si los
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

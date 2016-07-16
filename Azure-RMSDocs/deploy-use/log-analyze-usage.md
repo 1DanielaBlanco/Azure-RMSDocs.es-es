@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Registro y análisis del uso de Azure Rights Management | Azure RMS
-description:
-keywords:
+title: "Registro y análisis del uso de Azure Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/13/2016
+ms.date: 06/30/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5ab8d4ef132eec9991c0ff789f2b2dfa7bdf2cd8
+ms.openlocfilehash: 845a47f526754f291c27a3c2bbd80af736b44992
+
 
 ---
 
@@ -29,9 +23,9 @@ ms.suite: ems
 
 *Se aplica a: Azure Rights Management, Office 365*
 
-Use la información de este tema para comprender cómo puede usar el registro de uso con Azure Rights Management (Azure RMS). El servicio Azure Rights Management permite registrar todas las solicitudes que realice para su organización, lo que incluye solicitudes de usuarios, acciones llevadas a cabo por administradores de Rights Management en su organización y acciones llevadas a cabo por operadores de Microsoft para admitir su implementación de Azure Rights Management.
+Use la información de este tema para comprender cómo puede usar el registro de uso con Azure Rights Management (Azure RMS). El servicio Azure Rights Management permite registrar todas las solicitudes que realice para su organización, lo que incluye solicitudes de usuarios, acciones llevadas a cabo por administradores de Rights Management en su organización y acciones llevadas a cabo por operadores de Microsoft para admitir su implementación de Azure Rights Management.
 
-A continuación, puede usar estos registros de Azure Rights Management para admitir los siguientes escenarios empresariales:
+A continuación, puede usar estos registros de Azure Rights Management para admitir los siguientes escenarios empresariales:
 
 -   **Analizar enfoques empresariales**
 
@@ -39,24 +33,26 @@ A continuación, puede usar estos registros de Azure Rights Management para adm
 
 -   **Supervisar para controlar el abuso**
 
-    La información del registro de Azure Rights Management está a su disposición casi en tiempo real, de manera que puede supervisar de manera continua el uso que se haga en su empresa de Azure Rights Management. El 99,9% de los registros están disponibles en un plazo de 15 minutos de una acción iniciada por RMS.
+    La información del registro de Azure Rights Management está a su disposición casi en tiempo real, de manera que puede supervisar de manera continua el uso que se haga en su empresa de Azure Rights Management. El 99,9% de los registros están disponibles en un plazo de 15 minutos de una acción iniciada por RMS.
 
     Por ejemplo, puede que desee que se le alerte de si surge un aumento repentino de las personas que leen datos protegidos por RMS fuera de las hora laborales estándar, lo que podrían indica que un usuario malintencionado está recopilando información para venderla a competidores. O bien, si el mismo usuario aparentemente accede a los datos desde dos direcciones IP diferentes dentro de un breve intervalo de tiempo, lo que podría indicar que se ha puesto en peligro una cuenta de usuario.
 
 -   **Realizar análisis forenses**
 
-    Si tiene una pérdida de información, es probable que se le pregunte quién accedió recientemente a documentos específicos y a qué información accedió la persona sospechosa. Puede responder a este tipo de preguntas con Azure Rights Management y los registros, porque las personas que usan el contenido protegido siempre deben obtener una licencia de Azure Rights Management para abrir documentos e imágenes que estén protegidos con Azure Rights Management, incluso en el caso de que dichos archivos se muevan por correo electrónico o se copien en unidades USB u otras unidades de almacenamiento. Esto significa que puede usar los registros de Azure Rights Management como el origen fundamental de la información para realizar el análisis forense cuando protege sus datos con Azure Rights Management.
+    Si tiene una pérdida de información, es probable que se le pregunte quién accedió recientemente a documentos específicos y a qué información accedió la persona sospechosa. Puede responder a este tipo de preguntas con Azure Rights Management y los registros, porque las personas que usan el contenido protegido siempre deben obtener una licencia de Azure Rights Management para abrir documentos e imágenes que estén protegidos con Azure Rights Management, incluso en el caso de que dichos archivos se muevan por correo electrónico o se copien en unidades USB u otras unidades de almacenamiento. Esto significa que puede usar los registros de Azure Rights Management como el origen fundamental de la información para realizar el análisis forense cuando protege sus datos con Azure Rights Management.
 
-> [!NOTE] Si solo está interesado en el registro de las tareas administrativas para Azure Rights Management y no quiere realizar un seguimiento del modo en que los usuarios usan Rights Management, puede usar el cmdlet [Get-AadrmAdminLog](https://msdn.microsoft.com/library/azure/dn629430.aspx) de Windows PowerShell de Azure Rights Management.
+> [!NOTE]
+> Si solo está interesado en el registro de las tareas administrativas para Azure Rights Management y no desea realizar un seguimiento del modo en que los usuarios usan Rights Management, puede usar el cmdlet [Get-AadrmAdminLog](https://msdn.microsoft.com/library/azure/dn629430.aspx) de Windows PowerShell de Azure Rights Management.
 > 
 > También puede usar el Portal de Azure clásico para ver informes de uso de alto nivel que incluyen **Resumen de RMS**, **Usuarios activos de RMS**, **Plataformas de dispositivos RMS** y **Uso de aplicaciones de RMS**. Para tener acceso a estos informes desde el Portal de Azure clásico, haga clic en **Active Directory**, seleccione un directorio y ábralo y, luego, haga clic en **INFORMES**.
 
-Use las secciones siguientes para más información sobre el registro de uso de Azure Rights Management.
+Use las secciones siguientes para más información sobre el registro de uso de Azure Rights Management.
 
-## Habilitación del registro de uso de Azure Rights Management
+## Habilitación del registro de uso de Azure Rights Management
 A partir de febrero de 2016, el registro de uso de Azure Rights Management se habilita de forma predeterminada para todos los clientes. Esto se aplica a los clientes que han activado su servicio de Azure RMS antes de febrero de 2016 y a los clientes que han activado el servicio después de febrero de 2016. 
 
-> [!NOTE] Ni el almacenamiento de registro ni la funcionalidad de la característica de registro generan costos adicionales.
+> [!NOTE]
+> Ni el almacenamiento de registro ni la funcionalidad de la característica de registro generan costos adicionales.
 > 
 > Si usó el registro de uso para Azure RMS antes de febrero de 2016, precisó de una suscripción a Azure y de almacenamiento suficiente en Azure, lo que ya no sucede.
 
@@ -71,7 +67,7 @@ Para descargar sus registros de uso, usará el módulo de administración de Azu
 
 ### Descargar sus registros de uso mediante PowerShell
 
-1.  Inicie Windows PowerShell con la opción **Ejecutar como administrador** y use el cmdlet [Connect-AadrmService](https://msdn.microsoft.com/library/azure/dn629415.aspx) para conectarse al servicio de Azure Rights Management:
+1.  Inicie Windows PowerShell con la opción **Ejecutar como administrador** y use el cmdlet [Connect-AadrmService](https://msdn.microsoft.com/library/azure/dn629415.aspx) para conectarse al servicio de Azure Rights Management:
 
     ```
     Connect-AadrmService
@@ -143,17 +139,17 @@ Cada una de las líneas posteriores es un registro. Los valores de los campos se
 |--------------|-----------------|---------------|-----------------|
 |date|Fecha|Fecha UTC cuando se realizó el servicio de la solicitud.<br /><br />El origen es el reloj local del servidor que realizó el servicio de la solicitud.|2013-06-25|
 |time|Hora|Hora UTC en formato de 24 hora cuando se realizó el servicio de la solicitud.<br /><br />El origen es el reloj local del servidor que realizó el servicio de la solicitud.|21:59:28|
-|row-id|Texto|GUID único para este registro.<br /><br />Este valor es útil cuando agrega registros o copia registros en otro formato.|1c3fe7a9-d9e0-4654-97b7-14fafa72ea63|
+|row-id|Texto|GUID único para este registro. Si un valor no está presente, use el valor del identificador de correlación para identificar la entrada.<br /><br />Este valor es útil cuando agrega registros o copia registros en otro formato.|1c3fe7a9-d9e0-4654-97b7-14fafa72ea63|
 |request-type|Nombre|Nombre de la API de RMS que se solicitó.|AcquireLicense|
-|user-id|Cadena|El usuario que realizó la solicitud.<br /><br />El valor se incluye entre comillas únicas. Algunos tipos de solicitudes son anónimos, en cuyo caso el valor es ”.|‘joe@contoso.com’|
-|result|Cadena|‘Success’ si se realizó el servicio de la solicitud correctamente.<br /><br />El tipo de error entre comillas si se produjo un error de la solicitud.|‘Success’|
+|user-id|Cadena|El usuario que realizó la solicitud.<br /><br />El valor se incluye entre comillas únicas. Las llamadas de una clave de inquilino administrada por usted (BYOK) tienen un valor de **"**, que también se aplica cuando los tipos de solicitud son anónimos.|‘joe@contoso.com’|
+|result|String|'Success' si se ha proporcionado la solicitud correctamente.<br /><br />El tipo de error entre comillas si se produjo un error de la solicitud.|'Success'|
 |correlation-id|Texto|GUID que es común entre el registro del cliente de RMS y el registro del servidor para una solicitud proporcionada.<br /><br />Este valor puede ser útil para ayudar a solucionar problemas del cliente.|cab52088-8925-4371-be34-4b71a3112356|
 |content-id|Texto|GUID, entre llaves, que identifica el contenido protegido (por ejemplo, un documento).<br /><br />Este campo tiene un valor solo si request-type es AcquireLicense y está en blanco para todos los demás tipos de solicitudes.|{bb4af47b-cfed-4719-831d-71b98191a4f2}|
 |owner-email|Cadena|Dirección de correo electrónico del propietario del documento.|alice@contoso.com|
 |issuer|Cadena|Dirección de correo electrónico del emisor del documento.|alice@contoso.com (o) FederatedEmail.4c1f4d-93bf-00a95fa1e042@contoso.onmicrosoft.com'|
-|Template-id|Cadena|Identificador de la plantilla que se usa para proteger el documento.|{6d9371a6-4e2d-4e97-9a38-202233fed26e}|
-|File-name|Cadena|Nombre de archivo del documento que se ha protegido. <br /><br />Actualmente, algunos archivos (como documentos de Office) se muestran como GUID en lugar del nombre de archivo real.|TopSecretDocument.docx|
-|Date-published|Fecha|Fecha en la que se ha protegido el documento.|2015-10-15T21:37:00|
+|template-id|String|Identificador de la plantilla que se usa para proteger el documento.|{6d9371a6-4e2d-4e97-9a38-202233fed26e}|
+|file-name|String|Nombre de archivo del documento que se ha protegido. <br /><br />Actualmente, algunos archivos (como documentos de Office) se muestran como GUID en lugar del nombre de archivo real.|TopSecretDocument.docx|
+|date-published|Fecha|Fecha en la que se ha protegido el documento.|2015-10-15T21:37:00|
 |c-info|Cadena|Información acerca de la plataforma del cliente que está realizando la solicitud.<br /><br />La cadena específica varía, en función de la aplicación (por ejemplo, el sistema operativo o el explorador).|'MSIPC;version=1.0.623.47;AppName=WINWORD.EXE;AppVersion=15.0.4753.1000;AppArch=x86;OSName=Windows;OSVersion=6.1.7601;OSArch=amd64'|
 |c-ip|Address|Dirección IP del cliente que realiza la solicitud.|64.51.202.144|
 
@@ -166,7 +162,7 @@ Aunque el campo user-id suele indicar el usuario que hay realizado la solicitud,
 
 -   Si está usando el conector RMS.
 
-    Las solicitudes de este conector se registran con el nombre de entidad de servicio que RMS genera automáticamente al instalar el conector RMS.
+    Las solicitudes de este conector se registran con el nombre de entidad de servicio de **Aadrm_S-1-7-0**, que se genera automáticamente al instalar el conector RMS.
 
 #### Tipos de solicitudes típicas
 Hay muchos tipos de solicitudes de Azure Rights Management, pero en la tabla siguiente se identifican algunos de los tipos que normalmente se usan más.
@@ -181,7 +177,7 @@ Hay muchos tipos de solicitudes de Azure Rights Management, pero en la tabla sig
 |BECreateEndUserLicenseV1|Se realiza una llamada desde un dispositivo móvil para crear una licencia de usuario final.|
 |BEGetAllTemplatesV1|Se realiza una llamada desde un dispositivo móvil (back-end) para obtener todas las plantillas.|
 |Certify|El cliente está certificando el contenido para la protección.|
-|Decrypt|El cliente está intentando descifrar el contenido protegido con RMS.|
+|KMSPDecrypt|El cliente está intentando descifrar el contenido protegido con RMS. Solo se aplica a una clave de inquilino administrada por el cliente (BYOK).|
 |DeleteTemplateById|Se realiza una llamada desde el Portal de Azure clásico para eliminar una plantilla por identificador de plantilla.|
 |ExportTemplateById|Se realiza una llamada desde el Portal de Azure clásico para exportar una plantilla en función de un identificador de plantilla.|
 |FECreateEndUserLicenseV1|Similar a la solicitud AcquireLicense pero desde dispositivos móviles.|
@@ -199,7 +195,7 @@ Hay muchos tipos de solicitudes de Azure Rights Management, pero en la tabla sig
 |ServerCertify|Se realiza una llamada desde un cliente habilitado para RMS (como SharePoint) para certificar el servidor.|
 |SetUsageLogFeatureState|Se realiza una llamada para habilitar el registro de uso.|
 |SetUsageLogStorageAccount|Se realiza una llamada para especificar la ubicación de los registros de Azure RMS.|
-|SignDigest|Se realiza una llamada cuando se usa una clave con la intención de firmar. Suele llamarse una vez por cada elemento AcquireLicence (o FECreateEndUserLicenseV1), Certify y GetClientLicensorCert (o FECreatePublishingLicenseV1).|
+|KMSPSignDigest|Se realiza una llamada cuando se usa una clave administrada por el cliente (BYOK) con la intención de firmar. Suele llamarse una vez por cada elemento AcquireLicence (o FECreateEndUserLicenseV1), Certify y GetClientLicensorCert (o FECreatePublishingLicenseV1).|
 |UpdateTemplate|Se realiza una llamada desde el Portal de Azure clásico para actualizar una plantilla existente.|
 
 ## Referencia de Windows PowerShell
@@ -229,6 +225,7 @@ Para más información acerca de cómo usar Windows PowerShell para Azure Rights
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO5-->
 
 

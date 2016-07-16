@@ -1,26 +1,22 @@
 ---
-# required metadata
-
-title: Cómo instalar, configurar y probar con un servidor RMS |Azure RMS
-description: Instalar y configurar un servidor RMS para probar la aplicación con derechos habilitados.
-keywords:
+title: "Cómo instalar, configurar y probar con un servidor RMS |Azure RMS"
+description: "Instalar y configurar un servidor RMS para probar la aplicación con derechos habilitados."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 32C7F387-CF7E-4CE0-AFC9-4C63FE1E134A
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d56c6636cb7a33f104bc3901355c3601266ad30c
+ms.openlocfilehash: b97743d9a5c90cb46b39b4d8a462aa1acd64dfe1
+
 
 ---
 
@@ -65,12 +61,13 @@ Los siguientes pasos le guiarán en la configuración del servidor de RMS e incl
 
     Para realizar una prueba con un servidor RMS, configure la detección del lado servidor o del lado cliente para permitir que el cliente de Rights Management Services 2.1 pueda detectar y establecer comunicación con el servidor RMS.
 
-    > [!Note] La prueba con Azure RMS no requiere la configuración de detección.
+    > [!Note]
+    > La prueba con Azure RMS no requiere la configuración de detección.
 
   - En la detección del lado servidor, un administrador registra un punto de conexión de servicio (SCP) para el clúster raíz de RMS con Active Directory, y el cliente consulta a Active Directory para detectar el SCP y establecer una conexión con el servidor.
   - En la detección del lado cliente, la detección de servicios de RMS se configura en el Registro del equipo donde se ejecuta el cliente de RMS 2.1. En esta configuración, el cliente de RMS 2.1 apunta al servidor RMS que se va a usar. Cuando están presentes, no se realiza la detección del lado servidor.
 
-  Para configurar la detección del lado cliente, se pueden establecer las siguientes claves del Registro de modo que apunten al servidor RMS. Para obtener más información sobre cómo configurar la detección del lado del servicio, vea [RMS Client 2.0 Deployment Notes](https://technet.microsoft.com/en-us/library/jj159267(WS.10).aspx) (Notas de implementación del cliente de RMS 2.0).
+  Para configurar la detección del lado cliente, se pueden establecer las siguientes claves del Registro de modo que apunten al servidor RMS. Para más información sobre cómo configurar la detección del lado del servicio, consulte [Notas de la implementación del cliente de RMS 2.0](https://technet.microsoft.com/library/jj159267(WS.10).aspx).
 
 1. **EnterpriseCertification**
         HKEY_LOCAL_MACHINE        SOFTWARE          Microsoft            MSIPC              ServiceLocation                EnterpriseCertification
@@ -80,9 +77,11 @@ Los siguientes pasos le guiarán en la configuración del servidor de RMS e incl
 2. **EnterprisePublishing**
         HKEY_LOCAL_MACHINE        SOFTWARE          Microsoft            MSIPC              ServiceLocation                EnterprisePublishing **Valor**: (predeterminado): [**http|https**]://RMSClusterName/**_wmcs/Licensing**
 
->[!NOTE] De forma predeterminada, estas claves no existen en el Registro y necesitan crearse.
+>[!NOTE] 
+> De forma predeterminada, estas claves no existen en el Registro y necesitan crearse.
 
->[!IMPORTANT] Si está ejecutando una aplicación de 32 bits en una versión de Windows de 64 bits, establezca estas claves en la ubicación de claves siguiente:<p>
+>[!IMPORTANT] 
+> Si está ejecutando una aplicación de 32 bits en una versión de Windows de 64 bits, establezca estas claves en la ubicación de claves siguiente:<p>
   ```    
   HKEY_LOCAL_MACHINE
     SOFTWARE
@@ -96,6 +95,7 @@ Los siguientes pasos le guiarán en la configuración del servidor de RMS e incl
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

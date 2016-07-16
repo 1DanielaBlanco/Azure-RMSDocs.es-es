@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Eliminación de la protección de un archivo mediante la aplicación Rights Management sharing | Azure RMS
-description:
-keywords:
+title: "Eliminación de la protección de un archivo mediante la aplicación Rights Management sharing | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: da95b938-eaad-4c83-a21e-ff1d4872aae4
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
+ms.openlocfilehash: 78ceb74a3dd8492ac5c754eea179525cae819fd0
+
 
 ---
 
@@ -42,7 +36,7 @@ Para quitar la protección (es decir, desproteger) de un archivo protegido anter
 
     Puede que se le soliciten las credenciales.
 
-Nota: Si no ve estas opciones, es probable que la aplicación RMS sharing no esté instalada en el equipo, que no esté instalada la última versión o que el equipo deba reiniciarse para completar la instalación. Para obtener más información sobre cómo instalar la aplicación de uso compartido, consulte [Download and install the Rights Management sharing application](install-sharing-app.md) (Descarga e instalación de la aplicación Rights Management sharing)..
+Nota: Si no ve estas opciones, es probable que la aplicación RMS sharing no esté instalada en el equipo, que no esté instalada la última versión o que el equipo deba reiniciarse para completar la instalación. Para más información sobre cómo instalar la aplicación de uso compartido, consulte [Descarga e instalación de la aplicación Rights Management sharing](install-sharing-app.md).
 
 El archivo protegido original se elimina (por ejemplo, Sample.ptxt) y se reemplaza con un archivo que tiene el mismo nombre pero la extensión de nombre de archivo desprotegido (por ejemplo, Sample.txt).
 
@@ -57,6 +51,7 @@ Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de 
 [Guía de usuario de la aplicación de uso compartido Rights Management](sharing-app-user-guide.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

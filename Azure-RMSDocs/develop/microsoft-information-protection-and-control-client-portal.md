@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Rights Management Services SDK 2.1 | Azure RMS
-description: La plataforma RMS SDK 2.1 permite a los desarrolladores crear aplicaciones que aprovechan RMS o Azure RMS para proporcionar protección de la información.
-keywords:
+description: "La plataforma RMS SDK 2.1 permite a los desarrolladores crear aplicaciones que aprovechan RMS o Azure RMS para proporcionar protección de la información."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 44D3EB62-7A60-45D9-BA7E-45A06E7D598F
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: cbdb969e9910142f49b078069fc578059f9d8785
+ms.openlocfilehash: bbe381054648a6b68818f3964f6cfefd5da0829c
+
 
 ---
 
@@ -45,10 +41,8 @@ Para más información sobre los requisitos de tiempo de ejecución para un elem
 |Tema|Descripción|
 |-----|--------|
 |[Información general](ad-rms-overview.md)|Rights Management Services (RMS) es una tecnología de protección de la información que ayuda a proteger la información digital frente al uso no autorizado.|
-|[Mejoras de este SDK](differences-between-ad-rms-and-ad-rms-2-0.md)|RMS SDK 2.1 constituye una mejora considerable sobre el SDK original de Rights Management Services.|
 |[Introducción](getting-started-with-ad-rms-2-0.md)|La plataforma RMS SDK 2.1 permite a los desarrolladores crear aplicaciones que aprovechan la protección de la información de RMS.|
-|[Notas de la versión](release-notes-rtm.md)|Este tema contiene información importante acerca de esta versión y versiones anteriores de RMS SDK 2.1.|
-|[Ejemplos de código](samples.md)|Este tema enumera un conjunto de ejemplos con RMS SDK 2.1, disponible en el Centro de descarga de MSDN.|
+|[Notas de la versión](release-notes-rtm.md)|Este tema contiene información importante sobre esta versión y versiones anteriores de RMS SDK 2.1.|
 |[Notas para el desarrollador](developer-notes.md)|En esta sección se incluyen instrucciones específicas para varios escenarios de desarrollo importantes.|
 |[Referencia de API](api-reference-2-1.md)|Esta sección contiene temas que describen el material de referencia para todos los elementos de la API.|
 
@@ -64,6 +58,7 @@ Para más información sobre los requisitos de tiempo de ejecución para un elem
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

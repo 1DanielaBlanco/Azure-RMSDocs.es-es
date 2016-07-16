@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Guía del administrador de la aplicación Microsoft Rights Management sharing | Azure RMS
-description:
-keywords:
+title: "Guía del administrador de la aplicación Microsoft Rights Management sharing | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: e67d0ab5537aa7444940a5e7ce3a653cc6e66993
+
 
 ---
 
@@ -31,18 +25,18 @@ ms.suite: ems
 *Se aplica a: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 con SP1, Windows 8, Windows 8.1*
 
 
-Use la siguiente información si es responsable de la aplicación Microsoft Rights Management sharing en una red de empresa o si quiere obtener más información técnica que la que aparece en la [Rights Management sharing application user guide](sharing-app-user-guide.md) (Guía de usuario de la aplicación Rights Management sharing) o en [FAQ for Microsoft Rights Management Sharing Application for Windows](http://go.microsoft.com/fwlink/?LinkId=303971) (Preguntas más frecuentes sobre la aplicación Microsoft Rights Management sharing para Windows)..
+Use la siguiente información si es responsable de la aplicación Microsoft Rights Management sharing en una red de empresa, o si desea más información técnica que la que aparece en [Manual del usuario de la aplicación Rights Management sharing](sharing-app-user-guide.md) o en [FAQ for Microsoft Rights Management Sharing Application for Windows](http://go.microsoft.com/fwlink/?LinkId=303971) (Preguntas más frecuentes sobre la aplicación Microsoft Rights Management sharing para Windows):
 
-La aplicación RMS resulta más adecuada para trabajar con Azure RMS, puesto que esta configuración de implementación admite el envío de datos adjuntos protegidos a los usuarios de otra organización, así como opciones tales como notificaciones por correo electrónico y seguimiento de documentos con revocación.  Sin embargo, también funciona con la versión local, AD RMS, pero con algunas limitaciones. Para ver una comparación exhaustiva de las características que son compatibles con Azure RMS y AD RMS, consulte [Comparación entre Azure Rights Management y AD RMS](../understand-explore/compare-azure-rms-ad-rms.md). Si tiene AD RMS y quiere migrar a Azure RMS, consulte [Migrating from AD RMS to Azure Rights Management](../plan-design/migrate-from-ad-rms-to-azure-rms.md) (Migración desde AD RMS a Azure Rights Management)..
+La aplicación RMS resulta más adecuada para trabajar con Azure RMS, puesto que esta configuración de implementación admite el envío de datos adjuntos protegidos a los usuarios de otra organización, así como opciones tales como notificaciones por correo electrónico y seguimiento de documentos con revocación.  Sin embargo, también funciona con la versión local, AD RMS, pero con algunas limitaciones. Para ver una comparación exhaustiva de las características que son compatibles con Azure RMS y AD RMS, consulte [Comparación entre Azure Rights Management y AD RMS](../understand-explore/compare-azure-rms-ad-rms.md). Si tiene AD RMS y quiere migrar a Azure RMS, consulte [Migración desde AD RMS a Azure Rights Management](../plan-design/migrate-from-ad-rms-to-azure-rms.md).
 
 ## Implementación automática de la aplicación Microsoft Rights Management sharing
 La versión de Windows de la aplicación RMS sharing admite una instalación con scripts, lo que la convierte en adecuada para las implementaciones empresariales.
 
-Los únicos requisitos previos para las instalaciones son que los equipos ejecuten una versión mínima de Windows 7 Service Pack 1 y que esté instalado Microsoft Framework, versión mínima 4.0. Si necesita instalar Microsoft .NET Framework 4.0, puede [descargarlo para la instalación desde el Centro de descarga de Microsoft](http://www.microsoft.com/download/details.aspx?id=17718)..
+Los únicos requisitos previos para las instalaciones son que los equipos ejecuten una versión mínima de Windows 7 Service Pack 1 y que esté instalado Microsoft Framework, versión mínima 4.0. Si necesita instalar Microsoft .NET Framework 4.0, puede [descargarlo para la instalación desde el Centro de descarga de Microsoft](http://www.microsoft.com/download/details.aspx?id=17718).
 
 ### Para descargar la aplicación RMS sharing para la implementación automática
 
-1.  Vaya a la página [Aplicación Microsoft Rights Management sharing para Windows](http://www.microsoft.com/download/details.aspx?id=40857) en el Centro de descarga de Microsoft y haga clic en **Descargar**..
+1.  Vaya a la página [Aplicación Microsoft Rights Management sharing para Windows](http://www.microsoft.com/download/details.aspx?id=40857) en el Centro de descarga de Microsoft y haga clic en **Descargar**.
 
 2.  Seleccione y descargue los archivos que necesita. Hay dos paquetes de instalación del cliente: uno para Windows de 64 bits (Microsoft Rights Management sharing application x64.zip) y otro para Windows de 32 bits (Microsoft Rights Management sharing application x86.zip).
 
@@ -79,7 +73,7 @@ Use los siguientes procedimientos para identificar los comandos necesarios para 
 > [!NOTE]
 > En estos casos, si su organización ejecuta AD RMS, los usuarios pueden recibir contenido protegido de otras organizaciones que usan Azure RMS, pero los usuarios no pueden enviar contenido protegido a los usuarios de una organización que usa Azure RMS. Sin embargo, si su organización ejecuta Azure RMS, los usuarios pueden enviar y recibir contenido protegido de otras organizaciones.
 
-Para completar la instalación de cada procedimiento, debe reiniciar el equipo. Puede iniciar un reinicio automático con un comando como **shutdown /i**..
+Para completar la instalación de cada procedimiento, debe reiniciar el equipo. Puede iniciar un reinicio automático con un comando como **shutdown /i**.
 
 ### Para implementar la aplicación RMS sharing para Office 2016 u Office 2013 y Azure RMS o Active Directory RMS
 
@@ -97,7 +91,7 @@ Para comprobar que la instalación se realizó correctamente, consulte la secci�
 
     1.  Inicie sesión un equipo con una cuenta de administrador local.
 
-    2.  En ese equipo, [descargue e instale el Ayudante para el inicio de sesión de Microsoft Online](http://www.microsoft.com/download/details.aspx?id=28177)..
+    2.  En ese equipo, [descargue e instale el Ayudante para el inicio de sesión de Microsoft Online](http://www.microsoft.com/download/details.aspx?id=28177).
 
     3.  Ejecute el siguiente comando para mostrar en la pantalla la dirección URL del servicio de certificación, que luego puede copiar y guardar para el siguiente paso:
 
@@ -146,13 +140,13 @@ Para comprobar que la instalación se realizó correctamente, consulte la secci�
 
 2.  En cada equipo en el que vaya a instalar la aplicación RMS sharing y los componentes relacionados, ejecute el siguiente comando (no necesita privilegios elevados). Esto se puede hacer de diferentes maneras, como por ejemplo, pedir al usuario que ejecute el comando (desde un vínculo en un mensaje de correo electrónico o un vínculo en el portal del servicio de asistencia), o bien puede agregarlo a su script de inicio de sesión:
 
-    -   Para Windows 10, Windows 8.1 y Windows 8, 64 bits:
+    -   Para Windows 10, Windows 8.1 y Windows 8, 64 bits:
 
         ```
         x64\aadrmprep.exe /configureO2010
         ```
 
-    -   Para Windows 10, Windows 8.1 y Windows 8, 32 bits:
+    -   Para Windows 10, Windows 8.1 y Windows 8, 32 bits:
 
         ```
         X86\aadrmprep.exe /configureO2010
@@ -260,7 +254,7 @@ Puede usar los archivos de registro de instalación para comprobar si la instala
 
     -   [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSDRM\ServiceLocation\Activation]
 
-        @="&lt;dirección URL de certificación&gt;"
+        @="&lt;certification url&gt;"
 
     -   [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\14.0\Common\DRM]
 
@@ -322,9 +316,9 @@ No todos los comandos de instalación necesarios para estas implementaciones adm
 ## Supresión de actualizaciones automáticas
 De forma predeterminada, los usuarios reciben una notificación si hay una versión posterior de la aplicación RMS sharing y se les pide que la descarguen. Puede suprimir esta notificación realizando el siguiente cambio en el Registro:
 
-1.  Navegue a **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC** y, si no aparece ya ahí, cree una nueva clave denominada **RmsSharingApp**..
+1.  Navegue a **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC** y, si no aparece ya ahí, cree una nueva clave denominada **RmsSharingApp**.
 
-2.  Seleccione **RmsSharingApp**, cree un nuevo valor DWORD de **AllowUpdatePrompt** y establezca el valor en **0**..
+2.  Seleccione **RmsSharingApp**, cree un nuevo valor DWORD de **AllowUpdatePrompt**y establezca el valor en **0**.
 
 Dado que la aplicación RMS sharing no es compatible con WSUS, puede usar la siguiente técnica para probar las nuevas versiones de dicha aplicación antes de implementarla para todos los usuarios:
 
@@ -335,9 +329,9 @@ Dado que la aplicación RMS sharing no es compatible con WSUS, puede usar la sig
 3.  Cuando la prueba está completa y los posibles problemas se han resuelto, implemente la versión más reciente para todos los usuarios mediante las instrucciones de implementación automática de esta guía.
 
 ## Solo Azure RMS: configuración del seguimiento de documentos
-Si tiene una [suscripción que admite el seguimiento de documentos](https://technet.microsoft.com/en-us/dn858608), el sitio de seguimiento de documentos está habilitado de forma predeterminada para todos los usuarios de su organización.  El seguimiento de documentos mostrará información, como las direcciones de correo electrónico de las personas que intentaron acceder a documentos protegidos que los usuarios compartieron, cuándo estas personas intentaron obtener acceso a ellos y su ubicación. Si mostrar esta información está prohibido en su organización debido a los requisitos de privacidad, puede deshabilitar el acceso al sitio de seguimiento de documentos mediante el cmdlet [Disable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623032). Puede volver a habilitar el acceso al sitio en cualquier momento, mediante [Enable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037), así como comprobar si el acceso está actualmente habilitado o deshabilitado mediante [Get AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037)..
+Si tiene una [suscripción que admite el seguimiento de documentos](https://technet.microsoft.com/dn858608), el sitio de seguimiento de documentos está habilitado de manera predeterminada para todos los usuarios de su organización.  El seguimiento de documentos mostrará información, como las direcciones de correo electrónico de las personas que intentaron acceder a documentos protegidos que los usuarios compartieron, cuándo estas personas intentaron obtener acceso a ellos y su ubicación. Si mostrar esta información está prohibido en su organización debido a los requisitos de privacidad, puede deshabilitar el acceso al sitio de seguimiento de documentos mediante el cmdlet [Disable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623032). Puede volver a habilitar el acceso al sitio en cualquier momento, mediante [Enable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037), así como comprobar si el acceso está actualmente habilitado o deshabilitado mediante [Get AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037).
 
-Para ejecutar estos cmdlets, debe tener como mínimo la versión **2.3.0.0** del módulo Azure RMS para Windows PowerShell.  Para obtener instrucciones de instalación, consulte [Installing Windows PowerShell for Azure Rights Management](../deploy-use/install-powershell.md) (Instalación de Windows PowerShell para Azure Rights Management)..
+Para ejecutar estos cmdlets, debe tener como mínimo la versión **2.3.0.0** del módulo Azure RMS para Windows PowerShell.  Para obtener instrucciones de instalación, consulte [Instalación de Windows PowerShell para Azure Rights Management](../deploy-use/install-powershell.md).
 
 > [!TIP]
 > Si ya ha descargado e instalado el módulo anteriormente, compruebe el número de versión. Para ello, ejecute: `(Get-Module aadrm –ListAvailable).Version`
@@ -358,7 +352,7 @@ Las direcciones URL siguientes se usan para el seguimiento de documentos y se de
 ## Solo AD RMS: Compatibilidad con varios dominios de correo electrónico dentro de su organización
 Si usa AD RMS y los usuarios de su organización tienen varios dominios de correo electrónico, quizás como resultado de una fusión o adquisición, debe realizar la siguiente modificación en el Registro:
 
-1.  Navegue a **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC** y, si no aparece ya ahí, cree una nueva clave denominada **RmsSharingApp**..
+1.  Navegue a **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC** y, si no aparece ya ahí, cree una nueva clave denominada **RmsSharingApp**.
 
 2.  Seleccione **RmsSharingApp**, cree un valor de cadena múltiple denominado **FederatedDomains** y agregue los dominios y todos los subdominios que usa la organización. No se admiten caracteres comodín.
 
@@ -368,10 +362,11 @@ Si no realiza este cambio en el Registro, los usuarios no podrán consumir conte
 
 
 ## Pasos siguientes
-Para obtener información técnica adicional que incluye la explicación de la diferencia entre los niveles de protección (nativa y genérica), los tipos de archivo y las extensiones de nombre de archivo admitidos, y cómo cambiar el nivel de protección predeterminado, consulte [Technical overview for the Rights Management sharing application](sharing-app-admin-guide-technical.md) (Información general técnica de la aplicación Microsoft Rights Management sharing)..
+Para obtener información técnica adicional que incluye la explicación de la diferencia entre los niveles de protección (nativa y genérica), los tipos de archivo y las extensiones de nombre de archivo, y cómo cambiar el nivel de protección predeterminado, consulte [Technical overview for the Rights Management sharing application](sharing-app-admin-guide-technical.md) (Introducción técnica a la aplicación Rights Management sharing).
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jul16_HO2-->
 
 

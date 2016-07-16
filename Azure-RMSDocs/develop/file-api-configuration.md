@@ -1,26 +1,22 @@
 ---
-# required metadata
-
-title: Configuración de la API de archivo | Azure RMS
-description: El comportamiento de la API de archivo puede configurarse a través de los valores del Registro.
-keywords:
+title: "Configuración de la API de archivo | Azure RMS"
+description: "El comportamiento de la API de archivo puede configurarse a través de los valores del Registro."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 930878C2-D2B4-45F1-885F-64927CEBAC1D
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
+ms.openlocfilehash: 46b1fe5a0c4f138db65072d14489a5d588015df7
+
 
 ---
 
@@ -67,14 +63,16 @@ Establezca el valor **Encryption** en la clave para especificar el comportamient
 
 - **Off**: el cifrado está deshabilitado.
 
-> [!Note] Esta configuración no afecta al descifrado. Es posible descifrar cualquier archivo cifrado con la protección nativa o con la protección PFile, siempre y cuando el usuario tenga el derecho **EXTRACT**.
+> [!Note] 
+> Esta configuración no afecta al descifrado. Es posible descifrar cualquier archivo cifrado con la protección nativa o con la protección PFile, siempre y cuando el usuario tenga el derecho **EXTRACT**.
 
 - **Native**: se usa el cifrado nativo. En el caso de los archivos de Office, el archivo cifrado tendrá la misma extensión que el archivo original. Por ejemplo, un archivo con la extensión .docx se cifrará en un archivo con la extensión .docx. En el caso de otros archivos que puedan tener aplicada la protección nativa, se cifrarán en un archivo con una extensión del formato p*zzz*, donde *zzz* es la extensión de archivo original. Por ejemplo, los archivos .txt se cifrarán en un archivo con una extensión .ptxt. A continuación se incluye una lista de extensiones de archivo que pueden tener aplicada la protección nativa.
 
 - **PFile**: se usa el cifrado PFile. El archivo cifrado tendrá anexado .pfile a la extensión original. Por ejemplo, después del cifrado, un archivo .txt tendrá una extensión .txt.pfile.
 
 
-> [!Note] Esta configuración no afecta a los formatos de archivo de Office. Por ejemplo, si el valor `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\DOCX\Encryption` se establece en &quot;Pfile", los archivos .docx seguirán cifrándose con la protección nativa y el archivo cifrado seguirá teniendo una extensión .docx.
+> [!Note] 
+> Esta configuración no afecta a los formatos de archivo de Office. Por ejemplo, si el valor `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\DOCX\Encryption` se establece en &quot;Pfile", los archivos .docx seguirán cifrándose con la protección nativa y el archivo cifrado seguirá teniendo una extensión .docx.
 
 Si se establece otro valor o si no se establece ningún valor, el resultado será el comportamiento predeterminado.
 
@@ -157,6 +155,7 @@ HKEY_LOCAL_MACHINE
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

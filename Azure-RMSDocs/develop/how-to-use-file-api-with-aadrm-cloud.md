@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Cómo habilitar la aplicación de servicio para que funcione con RMS basado en la nube | Azure RMS
-description: En este tema se describe cómo configurar la aplicación de servicio para que use Azure Rights Management.
-keywords:
+title: "Cómo habilitar la aplicación de servicio para que funcione con RMS basado en la nube | Azure RMS"
+description: "En este tema se describe cómo configurar la aplicación de servicio para que use Azure Rights Management."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,24 +10,22 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: EA1457D1-282F-4CF3-A23C-46793D2C2F32
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 4c3625676c7e794ef133c75881f666bae80e0513
+ms.openlocfilehash: ad8c41c9f3f3515a817d508d8f5a8953daf4b440
+
 
 ---
 
 # Habilitación de la aplicación de servicio para que funcione con RMS basado en la nube
 
-En este tema se describe cómo configurar la aplicación de servicio para que use Azure Rights Management. Para más información, vea [Getting started with Azure Rights Management](https://technet.microsoft.com/en-us/library/jj585016.aspx) (Introducción a Azure Rights Management).
+En este tema se describe cómo configurar la aplicación de servicio para que use Azure Rights Management. Para más información, consulte [Introducción a Azure Rights Management](https://technet.microsoft.com/library/jj585016.aspx).
 
 **Importante**  
-Para usar la aplicación de servicio de Rights Management Services SDK 2.1 con Azure RMS, debe crear sus propios inquilinos. Para obtener más información, vea [Azure RMS requirements: Cloud subscriptions that support Azure RMS](/rights-management/get-started/requirements-subscriptions.md) (Requisitos de Azure RMS: Suscripciones en la nube que son compatibles con Azure RMS).
+Para usar la aplicación de servicio de Rights Management Services SDK 2.1 con Azure RMS, debe crear sus propios inquilinos. Para más información, consulte [Requisitos de Azure RMS: Suscripciones en la nube que son compatibles con Azure RMS](../get-started/requirements-subscriptions.md)
 
 ## Requisitos previos
 
@@ -176,6 +172,7 @@ Ha completado todos los pasos necesarios para que la aplicación pueda usar Azur
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO1-->
 
 

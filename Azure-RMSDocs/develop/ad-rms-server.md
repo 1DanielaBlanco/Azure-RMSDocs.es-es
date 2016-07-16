@@ -1,26 +1,22 @@
 ---
-# required metadata
-
 title: Servidor de AD RMS | Azure RMS
 description: El componente de servidor de Rights Management Services (RMS) se implementa mediante un conjunto de servicios web que se ejecutan en Microsoft Internet Information Services.
-keywords:
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 17B05780-B0EF-4805-8304-52DCDEB3AADB
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
+ms.openlocfilehash: 2b7c99e3adafde7140d7997364ec2643ba79a2ac
+
 
 ---
 
@@ -30,7 +26,8 @@ En este tema se describe el propósito y las funciones del servidor RMS para Azu
 
 **Azure RMS**: para obtener información sobre cómo usar Azure Rights Management Services, consulte [Enable your service application to work with cloud based RMS](how-to-use-file-api-with-aadrm-cloud.md) (Habilitación de la aplicación de servicio para que funcione con RMS basado en la nube).
 
-> [!IMPORTANT] Se recomienda que desarrolle y pruebe la aplicación a través de Azure RMS.
+> [!IMPORTANT] 
+> Se recomienda que desarrolle y pruebe la aplicación a través de Azure RMS.
 
 **Windows Server**: para RMS en servidores locales a partir de Windows Server 2008, puede instalar y configurar el servicio de RMS agregándolo como un rol. Para instalar el servicio en los sistemas operativos anteriores, descárguelo del Centro de descarga de Microsoft en [Microsoft Windows Rights Management Services con Service Pack 2](http://www.microsoft.com/download/en/details.aspx?id=4909).
 
@@ -60,6 +57,7 @@ De los muchos servicios web instalados, los siguientes son importantes para el d
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

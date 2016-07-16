@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Instrucciones para desarrolladores y condiciones | Azure RMS
-description: El enfoque de RMS SDK 4.2 es ayudarle a compilar aplicaciones habilitadas para AD RMS que aprovechan la protección de la información de AD RMS y simplificarle el proceso lo más posible.
-keywords:
+description: "El enfoque de RMS SDK 4.2 es ayudarle a compilar aplicaciones habilitadas para AD RMS que aprovechan la protección de la información de AD RMS y simplificarle el proceso lo más posible."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ae67523a-c094-44da-86b8-739bedba7111
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 466db75b55164b638a269816f434cf027ce666a5
+ms.openlocfilehash: ebb08fbea18473cccca5897372b97f192200acca
+
 
 ---
 
@@ -42,6 +38,7 @@ Los temas siguientes tienen como fin ayudarle en el proceso de diseño en el des
  
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -40,6 +40,6 @@ Si está listo para comenzar a implementar Azure RMS, consulte [Plan para la im
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Prueba de la aplicación | Azure RMS
-description: Instrucciones sobre cómo configurar la aplicación para las pruebas.
-keywords:
+title: "Prueba de la aplicación | Azure RMS"
+description: "Instrucciones sobre cómo configurar la aplicación para las pruebas."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: E480D8D6-F070-43D1-B2B0-6921459C3437
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b01f009ec3dffbb3fe671da8a19929e53c67fb79
+ms.openlocfilehash: cf86b07ba057d8999a156ae397ff7200b12a3f5e
+
 
 ---
 
@@ -42,7 +38,7 @@ Puede realizar la prueba con Azure RMS o un servidor RMS que se ejecute en Windo
    - Si va a probar la aplicación en un equipo que no sea el equipo de desarrollo, puede instalar el cliente de RMS 2.1 en ese equipo desde la [página de descarga del cliente de AD RMS](http://www.microsoft.com/en-us/download/details.aspx?id=38396).
    - Si va a probar la aplicación en el equipo de desarrollo, necesita tener instalado Rights Management Services SDK 2.1. A estas alturas, el cliente de RMS 2.1 ya se habrá instalado en modo silencioso.
 
-    Para más información sobre cómo instalar RMS SDK 2.1, vea [Instalar el SDK](create-your-first-rights-aware-application.md).
+    Para más información sobre cómo instalar RMS SDK 2.1, consulte [Instalar el SDK](install-the-rms-sdk.md).
 
 ## Comentarios
 
@@ -51,14 +47,15 @@ Las instrucciones de este tema no son exhaustivas. Para obtener información det
 ### Temas relacionados
 
 * [Instalación y configuración de un servidor RMS](how-to-install-and-configure-an-rms-server.md)
-* [Uso de la autenticación ADAL](how-to-use-adal-authentication,md)
-* [Instalar el SDK](create-your-first-rights-aware-application.md)
+* [Uso de la autenticación ADAL](how-to-use-adal-authentication.md)
+* [Instalar el SDK](install-the-rms-sdk.md)
 * [Notas de implementación del cliente de RMS 2.1](https://technet.microsoft.com/en-us/library/jj159267(WS.10).aspx)
  
 
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

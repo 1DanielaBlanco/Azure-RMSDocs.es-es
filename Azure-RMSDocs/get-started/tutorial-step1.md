@@ -1,26 +1,20 @@
 ---
-# required metadata
-
-title: Tutorial de inicio rápido de Azure RMS - Paso 1 | Azure RMS
-description: El primer paso de un tutorial para probar rápidamente Microsoft Azure Rights Management para su organización en solo 5 pasos que deberían tomarle menos de 15 minutos.
-keywords:
+title: "Tutorial de inicio rápido de Azure RMS - Paso 1 | Azure RMS"
+description: "El primer paso de un tutorial para probar rápidamente Microsoft Azure Rights Management para su organización en solo 5 pasos que deberían tomarle menos de 15 minutos."
+keywords: 
 author: Cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/29/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.assetid: 7c4798e6-34a0-4c3f-a47f-505764ddf322
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: fab51fefed8d3a347a52ab7c118bb40b3cc23b37
+ms.openlocfilehash: 80f2742bbaab9d3252cec6f6c709012ca81218d5
+
 
 ---
 
@@ -45,30 +39,33 @@ Saltar a:
 
 Aunque es posible que tenga una suscripción que admita la Azure Rights Management, el servicio viene desactivado de forma predeterminada. Para activarlo, puede usar el centro de administración de Office 365 o el Portal de Azure clásico:
 
--   Si tiene una suscripción de Office 365 que incluye Azure Rights Management, o una suscripción de Office 365 que excluye Azure Rights Management, pero tiene una suscripción de Azure RMS Premium: **use el centro de administración de Office 365**..
+-   Si tiene una suscripción de Office 365 que incluya Azure Rights Management, o una suscripción de Office 365 que excluya Azure Rights Management pero tiene una suscripción de Azure RMS Premium: **use el centro de administración de Office 365**.
 
--   Si no tiene una suscripción a Office 365: **use el Portal de Azure clásico**..
+-   Si no tiene una suscripción a Office 365: **use el Portal de Azure clásico**.
 
 ![Capturas de pantalla del paso 1 del tutorial](../media/AzRMS_Tutorial_1_Screenshots.png)
 
 ### Para activar Rights Management desde el centro de administración clásico de Office 365
 
-1.  Vaya al [portal de Office 365](https://portal.office.com/) e inicie sesión con su cuenta profesional o educativa.
+> [!NOTE]
+> Si usa la **versión preliminar del Centro de administración de Office 365** en lugar del centro de administración clásico de Office 365, puede usar las instrucciones de [Activación de Azure Rights Management desde la versión preliminar del Centro de administración de Office 365](../deploy-use/activate-office365-preview.md), o cambie a la versión clásica para usar estas instrucciones. Para cambiar, haga clic en **Go to the old admin center** (Ir al centro de administración antiguo) en la página **principal** después de haber iniciado sesión.
+
+1.  Vaya al [Portal de Office 365](https://portal.office.com/) e inicie sesión con su cuenta de administrador global de Office 365.
 
 2.  Si el centro de administración de Office 365 no se muestra automáticamente, seleccione el icono del iniciador de la aplicación en la parte superior izquierda y elija **Admin**. El icono **Admin** se muestra únicamente a los administradores de Office 365.
 
     > [!TIP]
-    > Para obtener ayuda con el centro de administración, consulte [Sobre el Centro de administración de Office 365: ayuda para el administrador](https://support.office.com/article/About-the-Office-365-admin-center-Admin-Help-58537702-d421-4d02-8141-e128e3703547)..
+    > Para obtener ayuda con el centro de administración, consulte [Sobre el Centro de administración de Office 365: ayuda para el administrador](https://support.office.com/article/About-the-Office-365-admin-center-Admin-Help-58537702-d421-4d02-8141-e128e3703547).
 
-3.  En el panel izquierdo, expanda **CONFIGURACIÓN DEL SERVICIO**..
+3.  En el panel izquierdo, expanda **CONFIGURACIÓN DEL SERVICIO**.
 
-4.  Haga clic en **Rights Management**..
+4.  Haga clic en **Rights Management**.
 
-5.  En la página **RIGHTS MANAGEMENT**, haga clic en **Administrar**..
+5.  En la página **RIGHTS MANAGEMENT** , haga clic en **Administrar**.
 
-6.  En la página **Rights Management**, haga clic en **Activar**..
+6.  En la página **Rights Management** , haga clic en **Activar**.
 
-7.  Cuando se le pregunte **¿Desea activar Rights Management?**, haga clic en **Activar**..
+7.  Cuando el sistema le pregunte **¿Desea activar Rights Management?**, haga clic en **Activar**.
 
 Ahora debería ver el texto **Rights Management está activada** y la opción para desactivarla (es posible que deba actualizar la página manualmente).
 
@@ -76,15 +73,15 @@ Por el momento, no haga clic en **Características avanzadas**. Esto le llevará
 
 ### Para activar Rights Management desde el Portal de Azure clásico
 
-1.  Vaya al [Portal de Azure clásico](http://go.microsoft.com/fwlink/p/?LinkID=275081) e inicie sesión.
+1.  Vaya al [Portal de Azure clásico](http://go.microsoft.com/fwlink/p/?LinkID=275081) e inicie sesión con su cuenta de administrador global de Azure Active Directory.
 
-2.  En el panel izquierdo, haga clic en **ACTIVE DIRECTORY**..
+2.  En el panel izquierdo, haga clic en **ACTIVE DIRECTORY**.
 
-3.  En la página **Active Directory**, haga clic en **RIGHTS MANAGEMENT**..
+3.  En la página **Active Directory** , haga clic en **RIGHTS MANAGEMENT**.
 
 4.  Seleccione el directorio que administrará para [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)], haga clic en **ACTIVAR** y confirme la acción.
 
-El **ESTADO DE RIGHTS MANAGEMENT** debe indicar ahora **Activo** y la opción **ACTIVAR** debe aparecer reemplazada por **DESACTIVAR**..
+El **ESTADO DE RIGHTS MANAGEMENT** debe indicar ahora **Activo** y la opción **ACTIVAR** debe aparecer reemplazada por **DESACTIVAR**.
 
 Aunque puede configurar otras opciones de Rights Management en el portal, en este tutorial no es necesario, así que puede cerrar el Portal de Azure clásico.
 
@@ -99,9 +96,10 @@ Aunque las plantillas personalizadas no se incluyen aquí, probablemente desee c
 
 
 >[!div class="step-by-step"]
-[«Introducción](quick-start-tutorial.md)
+[« Introducción](quick-start-tutorial.md)
 [Paso 2 »](tutorial-step2.md)
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO5-->
 
 
