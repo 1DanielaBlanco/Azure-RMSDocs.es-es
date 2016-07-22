@@ -242,6 +242,6 @@ Ahora que ha visto algunos ejemplos de lo que Azure RMS puede hacer, es posible 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

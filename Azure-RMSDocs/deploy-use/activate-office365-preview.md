@@ -59,6 +59,6 @@ Vuelva a [Activación de Rights Management de Azure](activate-service.md).
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

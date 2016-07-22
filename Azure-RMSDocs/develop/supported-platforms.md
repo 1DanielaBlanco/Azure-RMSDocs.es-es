@@ -46,6 +46,6 @@ En este tema se identifican las plataformas de cliente y servidor compatibles co
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

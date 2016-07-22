@@ -59,6 +59,6 @@ Para ver la compatibilidad de otras aplicaciones y servicios con Azure Rights Ma
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

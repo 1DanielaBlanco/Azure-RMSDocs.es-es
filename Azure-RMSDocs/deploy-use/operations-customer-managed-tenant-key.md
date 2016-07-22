@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: "Administración de cliente: Operaciones de ciclo de vida de clave de inquilino | Azure RMS"
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c5b19c59-812d-420c-9c54-d9776309636c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 496edca2e2323e17216858e2ab4844fdb0aa1fb0
+
 
 ---
 
@@ -63,7 +57,7 @@ Si tiene una infracción, la mejor acción que usted o Microsoft puede llevar a 
 
 |Descripción del incidente|Respuesta probable|
 |------------------------|-------------------|
-|Se ha filtrado su clave de inquilino.|Vuelva a introducir su clave de inquilino. Vea [Vuelva a introducir su clave de inquilino](#re-key-your-tenant-key)..|
+|Se ha filtrado su clave de inquilino.|Vuelva a introducir su clave de inquilino. Vea [Regeneración de la clave de inquilino](#re-key-your-tenant-key).|
 |Un individuo no autorizado o malware han tenido derechos de uso de su clave de inquilino, pero la clave en sí no se ha filtrado.|La nueva introducción de la clave de inquilino no resulta útil aquí y requiere el análisis de la causa principal. Si un error de software o de proceso ha sido el responsable de que un individuo no autorizado obtuviera acceso, dicha situación se debe resolver.|
 |Vulnerabilidad descubierta en la tecnología HSM de generación actual.|Microsoft debe actualizar los HSM. Si no hay motivos para creer que la vulnerabilidad afectó a las claves, Microsoft indicará a todos los clientes que renueven sus claves de inquilino.|
 |Vulnerabilidad descubierta en el algoritmo de RSA, o longitud de clave, o ataques por fuerza bruta se hacen factibles computacionalmente.|Microsoft debe actualizar Azure RMS para que admita nuevos algoritmos y longitudes de clave más largas que sean resistentes, e indica a todos los clientes que renueven sus claves de inquilino.|
@@ -71,6 +65,7 @@ Si tiene una infracción, la mejor acción que usted o Microsoft puede llevar a 
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jul16_HO3-->
 
 

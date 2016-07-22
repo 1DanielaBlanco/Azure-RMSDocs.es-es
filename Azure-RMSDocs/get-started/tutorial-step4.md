@@ -4,7 +4,7 @@ description: "El cuarto paso de un tutorial para probar rápidamente Microsoft A
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
@@ -18,8 +18,8 @@ ms.suite: ems
 ms.tgt_pltfrm: 
 ms.custom: 
 translationtype: Human Translation
-ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
-ms.openlocfilehash: 19f536e8d0353c7b0ccbd4de3df646352dc2d748
+ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
+ms.openlocfilehash: 07c71de207fc7af019dfeea37ca194cf85cc1760
 
 
 ---
@@ -71,7 +71,7 @@ Ahora que el destinatario ha abierto el archivo adjunto y lo ha enviado de forma
 |--------------------------------|--------------------------|
 |Instrucciones completas para ver archivos protegidos con Azure Rights Management|[Ver y usar archivos que han sido protegidos con Rights Management](../rms-client/sharing-app-view-use-files.md)|
 |Acerca de la suscripción gratuita, RMS para usuarios|[RMS para usuarios y Azure Rights Management](../understand-explore/rms-for-individuals.md)|
-|Acerca de las dos versiones del archivo que ve adjunto al mensaje de correo electrónico|[¿Qué es el archivo .ppdf que se crea automáticamente?](../rms-client/sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created-)|
+|Acerca de las dos versiones del archivo que ve adjunto al mensaje de correo electrónico|[¿Qué es el archivo .ppdf que se crea automáticamente?](../rms-client/sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created)|
 
 
 >[!div class="step-by-step"]
@@ -79,6 +79,6 @@ Ahora que el destinatario ha abierto el archivo adjunto y lo ha enviado de forma
 [Paso 5 »](tutorial-step5.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

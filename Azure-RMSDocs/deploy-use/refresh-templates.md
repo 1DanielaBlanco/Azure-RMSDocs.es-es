@@ -187,6 +187,6 @@ Si modifica el Registro de los equipos que ejecutan Office 2010, puede establece
 [Configuración de plantillas personalizadas para Azure Rights Management](configure-custom-templates.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

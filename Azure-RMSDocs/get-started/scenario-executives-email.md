@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: "Escenario: Los ejecutivos intercambian información confidencial de forma segura | Azure RMS"
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/20/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e18cf5df-859e-4028-8d19-39b0842df33d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: def8b7e98fd55a3d028978ffc9f8e41e38a5622c
+
 
 ---
 
@@ -56,7 +50,7 @@ Para que las instrucciones de este escenario funcionen, debe cumplir lo siguient
 |Azure Rights Management no está activado|[Activar Rights Management de Azure](https://technet.microsoft.com/library/jj658941.aspx)|
 |Una de estas configuraciones:<br /><br />- Exchange Online está habilitado para Azure Rights Management<br /><br />- El conector RMS está instalado y configurado para Exchange local|Para Exchange Online: expanda la sección **Exchange Online: IRM Configuration** (Exchange Online: Configuración de IRM) del tema [Configuring Applications for Azure Rights Management](https://technet.microsoft.com/library/jj585031.aspx) (Configuración de aplicaciones para Azure Rights Management).<br /><br />Para Exchange local: [Deploying the Azure Rights Management connector](https://technet.microsoft.com/library/dn375964.aspx) (Implementación del conector de Azure Rights Management).|
 |Configuró una plantilla personalizada tal y como se describe a continuación|[Configuración de plantillas personalizadas para Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)|
-|Ha configurado una regla de protección de transporte para IRM, tal y como se describe luego en este artículo|Para Exchange Online: [Crear una regla de protección de transporte](https://technet.microsoft.com/library/dd302432.aspx)<br /><br />Para Exchange 2013: [Crear una regla de protección de transporte](https://technet.microsoft.com/en-us/library/dd302432%28v=exchg.150%29.asp)<br /><br />Para Exchange 2010: [Crear una regla de protección de transporte](https://technet.microsoft.com/en-us/library/dd302432%28v=exchg.141%29.aspx)|
+|Ha configurado una regla de protección de transporte para IRM, tal y como se describe luego en este artículo|Para Exchange Online: [Crear una regla de protección de transporte](https://technet.microsoft.com/library/dd302432.aspx)<br /><br />Para Exchange 2013: [Crear una regla de protección de transporte](https://technet.microsoft.com/library/dd302432%28v=exchg.150%29.asp)<br /><br />Para Exchange 2010: [Crear una regla de protección de transporte](https://technet.microsoft.com/en-us/library/dd302432%28v=exchg.141%29.aspx)|
 
 ### Para configurar la plantilla personalizada para ejecutivos
 
@@ -138,6 +132,7 @@ Al enviar información confidencial de la empresa a otro ejecutivo de VanArsdel,
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jul16_HO3-->
 
 

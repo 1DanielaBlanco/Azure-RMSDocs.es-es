@@ -86,6 +86,6 @@ Ya está listo para crear sus propias aplicaciones nuevas de la Tienda Windows.
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

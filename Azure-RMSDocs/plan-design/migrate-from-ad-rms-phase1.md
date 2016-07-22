@@ -207,6 +207,6 @@ Vaya a [Fase 2: Configuración del lado cliente](migrate-from-ad-rms-phase2.md).
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

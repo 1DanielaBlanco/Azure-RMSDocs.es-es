@@ -58,6 +58,6 @@ Esta versión, MS RMS SDK 4.2, está disponible para los siguientes sistemas ope
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

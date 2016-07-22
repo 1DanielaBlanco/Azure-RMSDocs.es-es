@@ -4,7 +4,7 @@ description: "El segundo paso de un tutorial para probar rápidamente Microsoft 
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: f32cf2f3-29e2-429c-a0fd-b16cc482484a
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
-ms.openlocfilehash: da706bcaf52d0519706898501c563a9a03231dd9
+ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
+ms.openlocfilehash: faacd21945cd078425e85af0c5b40347ac4de65a
 
 
 ---
@@ -62,7 +62,7 @@ Ya está listo para empezar a proteger los archivos que contienen la informació
 |--------------------------------|--------------------------|
 |Acerca de una instalación local de la aplicación de uso compartido Rights Management para Windows y las instrucciones de usuario|[Guía de usuario de la aplicación de uso compartido Rights Management](../rms-client/sharing-app-user-guide.md)|
 |Acerca de la instalación con scripts de la aplicación de uso compartido Rights Management para Windows y más información técnica|[Guía de administrador de la aplicación de uso compartido Rights Management](../rms-client/sharing-app-admin-guide.md)|
-|Para comprender la diferencia entre la protección nativa y la protección genérica|[¿Cuál es la diferencia entre la protección genérica y la protección incorporada (nativa)?](../rms-client/sharing-app-dialog-box.md#what-s-the-difference-between-generic-protection-and-built-in-native-protection-)|
+|Para comprender la diferencia entre la protección nativa y la protección genérica|[¿Cuál es la diferencia entre la protección genérica y la protección incorporada (nativa)?](../rms-client/sharing-app-dialog-box.md#what-s-the-difference-between-generic-protection-and-built-in-native-protection)|
 
 
 >[!div class="step-by-step"]
@@ -70,6 +70,6 @@ Ya está listo para empezar a proteger los archivos que contienen la informació
 [Paso 3 »](tutorial-step3.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

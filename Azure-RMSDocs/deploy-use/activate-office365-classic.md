@@ -54,6 +54,6 @@ Ahora debería ver **Rights Management está activada** y la opción para desact
 Vuelva a [Activación de Rights Management de Azure](activate-service.md).
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

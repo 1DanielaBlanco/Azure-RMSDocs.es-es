@@ -59,6 +59,6 @@ Además del estado **Activo** , que indica que el servicio de Rights Management 
 Vuelva a [Activación de Rights Management de Azure](activate-service.md).
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

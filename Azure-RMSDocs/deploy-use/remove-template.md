@@ -42,6 +42,6 @@ El estado cambia de **Publicada** a **Archivada**. Si cambia de opinión, selecc
 [Configuración de plantillas personalizadas para Azure Rights Management](configure-custom-templates.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

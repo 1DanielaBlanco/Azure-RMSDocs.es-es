@@ -69,6 +69,6 @@ Ahora puede ir al [paso 3. Active el inquilino de RMS](migrate-from-ad-rms-phase
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

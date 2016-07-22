@@ -73,6 +73,6 @@ Para obtener más información acerca del uso de Azure RMS con SharePoint, vea l
 Para ver la compatibilidad de otras aplicaciones y servicios con Azure Rights Management, consulte [Compatibilidad de las aplicaciones con Azure Rights Management](applications-support.md).
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

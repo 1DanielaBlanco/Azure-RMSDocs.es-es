@@ -82,6 +82,6 @@ Ahora que ha enviado el documento protegido, está listo para pedir a los destin
 [Paso 4 »](tutorial-step4.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

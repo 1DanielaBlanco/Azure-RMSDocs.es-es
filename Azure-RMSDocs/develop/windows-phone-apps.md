@@ -93,6 +93,6 @@ Ya está listo para crear sus propias aplicaciones nuevas de Windows Phone.
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 
