@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: ¿Cómo funciona Azure RMS? | Azure RMS
-description:
-keywords:
+title: "¿Cómo funciona Azure RMS? | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 06/02/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5d825d6c8b2c8b7a9c34ac940c5a08439a9ae562
+ms.openlocfilehash: 505f2c94bb4fd056b4d2f51c147c6b0b84efac00
+
 
 ---
 
@@ -77,7 +71,8 @@ Para comprender con más detalle el funcionamiento de Azure RMS, veamos un flujo
 
 Una vez se inicializa el entorno del usuario, dicho usuario puede proteger entonces documentos o consumir documentos protegidos en dicho equipo.
 
-> [!NOTE] Si este usuario se mueve a otro equipo Windows, u otro usuario emplea este mismo equipo Windows, se repite el proceso de inicialización.
+> [!NOTE]
+> Si este usuario se mueve a otro equipo Windows, u otro usuario emplea este mismo equipo Windows, se repite el proceso de inicialización.
 
 ### Inicialización del entorno de usuario
 Para que un usuario pueda proteger contenido o consumir contenido protegido en un equipo Windows, el entorno del usuario debe estar preparado en el dispositivo. Este es un proceso único y ocurre de manera automática sin intervención del usuario cuando un usuario trata de proteger o de consumir contenido protegido:
@@ -151,9 +146,11 @@ Revise [Terminology for Azure Rights Management](../get-started/terminology.md) 
 
 Si está listo para empezar a implementar Azure RMS para su organización, vea [Azure Rights Management deployment roadmap](../plan-design/deployment-roadmap.md) (Plan para la implementación de Azure Rights Management) para ver los pasos de implementación y los vínculos con instrucciones de procedimiento.
 
-> [!TIP] Para obtener más información y ayuda, use los recursos y vínculos que aparecen en [Information and support for Azure Rights Management](../get-started/information-support.md) (Información y servicio de atención de Azure Rights Management).
+> [!TIP]
+> Para más información y ayuda, use los recursos y vínculos que aparecen en [Information and support for Azure Rights Management](../get-started/information-support.md) (Información y servicio de atención de Azure Rights Management).
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Configuración del Registro para el conector RMS | Azure RMS
-description:
-keywords:
+title: "Configuración del Registro para el conector RMS | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ed3e9a3d-0f7c-4abc-9d0b-aa3b18403d39
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: ff90f009f9fda90171bbeeb2a7bb421376d4695c
+
 
 ---
 
@@ -37,7 +31,7 @@ Instrucciones para cuando use esta configuración:
 
 -   *MicrosoftRMSURL* es la URL del servicio de Microsoft RMS de tu organización. Para encontrar este valor:
 
-    1.  Ejecute el cmdlet [Get-AadrmConfiguration](http://msdn.microsoft.com/library/windowsazure/dn629410.aspx) para Azure RMS. Si aún no ha instalado el módulo de Windows PowerShell para Azure RMS, consulte [Installing Windows PowerShell for Azure Rights Management](install-powershell.md) (Instalación de Windows PowerShell para Azure Rights Management)..
+    1.  Ejecute el cmdlet [Get-AadrmConfiguration](http://msdn.microsoft.com/library/windowsazure/dn629410.aspx) para Azure RMS. Si aún no ha instalado el módulo de Windows PowerShell para Azure RMS, consulte [Instalación de Windows PowerShell para Azure Rights Management](install-powershell.md).
 
     2.  En la salida, identifique el valor **LicensingIntranetDistributionPointUrl** .
 
@@ -47,7 +41,7 @@ Instrucciones para cuando use esta configuración:
 
         **https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
 
--   *ConnectorFQDN* es el nombre de equilibrio de carga que definió en DNS para el conector. Por ejemplo, **rmsconnector.contoso.com**..
+-   *ConnectorFQDN* es el nombre de equilibrio de carga que definió en DNS para el conector. Por ejemplo, **rmsconnector.contoso.com**.
 
 -   Use el prefijo HTTPS para la URL del conector si ha configurado el conector para usar HTTPS para comunicarte con tus servidores locales. Para más información, consulte la sección [Configuración del conector RMS para usar HTTPS](deploy-rms-connector.md#BKMK_ConfiguringHTTPS) de este tema. Las URL de Microsoft RMS usan siempre HTTPS.
 
@@ -222,6 +216,7 @@ Instrucciones para cuando use esta configuración:
 
 Vuelta a [Implementación del conector de Azure Rights Management](deploy-rms-connector.md)
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Configuración de los derechos de uso para Azure Rights Management | Azure RMS
-description:
-keywords:
+title: "Configuración de los derechos de uso para Azure Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/08/2016
+ms.date: 06/16/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 3883a46440f016138dd50d061a58089253721719
+ms.openlocfilehash: 21b92fae5fd00d80f9afd2e80d21c08bfa47b7b2
+
 
 ---
 
@@ -65,7 +59,7 @@ Permite al usuario guardar el documento en su ubicación actual.
 
 **Nombre en las plantillas de AD RMS**: *Guardar*
 
-**Constante o valor de API**: IPC_GENERIC_WRITEL"EDIT"
+**Constante o valor de API**: IPC_GENERIC_WRITE L"EDIT"
 
 En las aplicaciones de Office, este derecho también permite al usuario modificar el documento.
 
@@ -83,7 +77,7 @@ Habilita la opción para agregar anotaciones o comentarios al contenido.
 
 **Nombre en las plantillas de AD RMS:** no implementado.
 
-**Constante o valor de API:** IPC_GENERIC_COMMENTL"COMMENT
+**Constante o valor de API:** IPC_GENERIC_COMMENT L"COMMENT
 
 Este derecho está disponible en el SDK como directiva ad hoc en el módulo de protección de RMS para Windows PowerShell y se implementó en algunas aplicaciones de proveedores de software. Sin embargo, no se usa extensamente y no es compatible actualmente con las aplicaciones de Office.
 
@@ -101,7 +95,7 @@ Habilita la opción para guardar el contenido con un nombre de archivo diferente
 
 **Nombre en las plantillas de AD RMS:** *Exportar (guardar como)*
 
-**Constante o valor de API:** IPC_GENERIC_EXPORTL"EXPORT"
+**Constante o valor de API:** IPC_GENERIC_EXPORT L"EXPORT"
 
 Este derecho también permite al usuario realizar otras opciones de exportación en las aplicaciones, como *Enviar a OneNote*.
 
@@ -119,7 +113,7 @@ Habilita la opción para reenviar un mensaje de correo electrónico y agregar de
 
 **Nombre en las plantillas de AD RMS:** *Reenviar*
 
-**Constante o valor de API:** IPC_EMAIL_FORWARDL"FORWARD"
+**Constante o valor de API:** IPC_EMAIL_FORWARD L"FORWARD"
 
 No permite que el reenviador conceda derechos a otros usuarios como parte de la acción de reenvío.
 
@@ -137,7 +131,7 @@ Concede todos los derechos para el documento; se pueden realizar todas las accio
 
 **Nombre en las plantillas de AD RMS:** *Control total*
 
-**Constante o valor de API:** IPC_GENERIC_ALLL"OWNER"
+**Constante o valor de API:** IPC_GENERIC_ALL L"OWNER"
 
 Incluye la capacidad de quitar la protección.
 
@@ -155,7 +149,7 @@ Habilita las opciones para imprimir el contenido.
 
 **Nombre en las plantillas de AD RMS:** *Imprimir*
 
-**Constante o valor de API:** IPC_GENERIC_PRINTL"PRINT
+**Constante o valor de API:** IPC_GENERIC_PRINT L"PRINT
 
 ---
 
@@ -187,7 +181,7 @@ Habilita la opción *Responder a todos* en un cliente de correo electrónico, pe
 
 **Nombre en las plantillas de AD RMS:** *Responder a todos*
 
-**Constante o valor de API:** IPC_EMAIL_REPLYALLL"REPLYALL"
+**Constante o valor de API:** IPC_EMAIL_REPLYALL L"REPLYALL"
 
 ---
 
@@ -203,7 +197,7 @@ Permite al usuario abrir el documento y ver el contenido.
 
 **Nombre en las plantillas de AD RMS:** *Ver*
 
-**Constante o valor de API:** IPC_GENERIC_READL"VIEW"
+**Constante o valor de API:** IPC_GENERIC_READ L"VIEW"
 
 ---
 
@@ -219,7 +213,7 @@ Habilita las opciones para copiar los datos (incluidas las capturas de pantalla)
 
 **Nombre en las plantillas de AD RMS**: *Extraer*
 
-**Constante o valor de API:** IPC_GENERIC_EXTRACTL"EXTRACT"
+**Constante o valor de API:** IPC_GENERIC_EXTRACT L"EXTRACT"
 
 En algunas aplicaciones, también permite que todo el documento se guarde en sin protección.
 
@@ -283,7 +277,8 @@ Un usuario quiere enviar información por correo electrónico a personas concret
  
 - Si aplica la opción **No reenviar**, los destinatarios no podrán compartir la información con ninguna persona del departamento de marketing si mueven el correo electrónico a otra ubicación. En este caso, solo los destinatarios originales (y el propietario del correo electrónico) podrán ver la información del correo electrónico.
 
-> [!NOTE] Use **No reenviar** cuando sea importante que solo los destinatarios que elige el remitente puedan ver la información del correo electrónico. Use una plantilla para correos electrónicos para restringir los derechos a un grupo de personas especificadas de antemano por el administrador, independientemente de los destinatarios que elija el remitente.
+> [!NOTE] 
+> Use **No reenviar** cuando sea importante que solo los destinatarios que elige el remitente puedan ver la información del correo electrónico. Use una plantilla para correos electrónicos para restringir los derechos a un grupo de personas especificadas de antemano por el administrador, independientemente de los destinatarios que elija el remitente.
 
 
 
@@ -293,6 +288,7 @@ Un usuario quiere enviar información por correo electrónico a personas concret
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO2-->
 
 

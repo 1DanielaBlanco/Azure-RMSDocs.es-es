@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Tutorial de inicio rápido de Azure RMS - Paso 3 | Azure RMS
-description: El tercer paso de un tutorial para probar rápidamente Microsoft Azure Rights Management para su organización en solo 5 pasos que deberían tomarle menos de 15 minutos.
-keywords:
+title: "Tutorial de inicio rápido de Azure RMS - Paso 3 | Azure RMS"
+description: "El tercer paso de un tutorial para probar rápidamente Microsoft Azure Rights Management para su organización en solo 5 pasos que deberían tomarle menos de 15 minutos."
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c604e749-8918-40e8-8148-6bd000cb2be2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
+ms.openlocfilehash: efe389db839f3f70e9cdb9138f6749e2bd2e029f
+
 
 ---
 
@@ -83,9 +77,11 @@ Ahora que ha enviado el documento protegido, está listo para pedir a los destin
 |Acerca de las opciones del cuadro de diálogo **Uso compartido seguro**|[Opciones del cuadro de diálogo para la aplicación de uso compartido Rights Management](../rms-client/sharing-app-dialog-box.md)|
 
 
->[!div class="step-by-step"] [« Paso 2](tutorial-step2.md)
+>[!div class="step-by-step"]
+[« Paso 2](tutorial-step2.md)
 [Paso 4 »](tutorial-step4.md)
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

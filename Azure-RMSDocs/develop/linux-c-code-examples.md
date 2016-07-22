@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Ejemplos de código de Linux | Azure RMS
-description: En este tema se presentan escenarios importantes y elementos de código para la versión Linux de RMS SDK.
-keywords:
+title: "Ejemplos de código de Linux | Azure RMS"
+description: "En este tema se presentan escenarios importantes y elementos de código para la versión Linux de RMS SDK."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 0F7714CA-1D3E-4846-B187-739825B7DE26
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 79e58b8092ea7cb057229d4c464d79f3694296e6
+ms.openlocfilehash: ace7103cfb44d84a7dd6bf64f57c2a47530117e0
+
 
 ---
 
@@ -28,7 +24,7 @@ ms.suite: ems
 
 En este tema se presentan escenarios importantes y elementos de código para la versión Linux de RMS SDK.
 
-Los fragmentos de código siguientes pertenecen a las aplicaciones de ejemplo *rms\_sample* y *rmsauth\_sample*. Para más información, vea [samples](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples) (ejemplos) en el repositorio de GitHub.
+Los siguientes fragmentos de código pertenecen a las aplicaciones de ejemplo *rms\_sample* y *rmsauth\_sample*. Para más información, vea [samples](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples) (ejemplos) en el repositorio de GitHub.
 
 ## Escenario: Acceder a información de la directiva de protección desde un archivo protegido
 
@@ -150,7 +146,7 @@ Los fragmentos de código siguientes pertenecen a las aplicaciones de ejemplo *r
       return fsResult;
     }
 
-## Escenario: Crear un nuevo archivo protegido mediante una plantilla
+## Escenario: Creación de un nuevo archivo protegido mediante una plantilla
 
 **Protege un archivo con una plantilla seleccionada por el usuario**
 **Origen**: [rms\_sample/mainwindow.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
@@ -205,13 +201,7 @@ Los fragmentos de código siguientes pertenecen a las aplicaciones de ejemplo *r
     
     AddLog(&quot;Successfully converted to &quot;, fileOut.c_str());
     }
-   catch (const rmsauth::Exception&amp; e) {
-    AddLog(&quot;ERROR: &quot;, e.error().c_str());
-    outFile-&gt;close();
-    remove(fileOut.c_str());
-    }
-    catch (const rmscore::exceptions::RMSException&amp; e) {
-    AddLog(&quot;ERROR: &quot;, e.what());
+   catch (const rmsauth::Exception&amp; e) { AddLog(&quot;ERROR: &quot;, e.error().c_str()); outFile-&gt;close(); remove(fileOut.c_str()); } catch (const rmscore::exceptions::RMSException&amp; e) { AddLog(&quot;ERROR: &quot;, e.what());
     
     outFile-&gt;close();
     remove(fileOut.c_str());
@@ -522,8 +512,7 @@ Descripción: se puede establecer la ruta de acceso de caché o usar el valor pr
     auto FileCachePtr = std::make_shared&lt; rmsauth::FileCache&gt;();
 
 
-**Paso 2**: cree el objeto **rmsauth::AuthenticationContext**.
-Descripción: especifique el *URI de autoridad* de Azure y el objeto *FileCache*.
+**Paso 2**: cree el objeto **rmsauth::AuthenticationContext** Descripción: especifique el *URI de autoridad* de Azure y el objeto *FileCache*.
 
 **C++**:
 
@@ -533,8 +522,7 @@ Descripción: especifique el *URI de autoridad* de Azure y el objeto *FileCache*
                               FileCachePtr);
 
 
-**Paso 3**: llame al método **aquireToken** del objeto **authContext** y especifique los parámetros siguientes:
-Descripción:
+**Paso 3**: llame al método **aquireToken** del objeto **authContext** y especifique los parámetros siguientes: Descripción:
 
 -   *Recurso solicitado*: recurso protegido al que quiere acceder.
 -   *Identificador único del cliente*: usualmente un GUID.
@@ -552,8 +540,7 @@ Descripción:
                 std::string(“john.smith@msopentechtest01.onmicrosoft.com”));
 
 
-**Paso 4**: obtenga el token de acceso de los resultados.
-Descripción: llame al método **result-&gt; accessToken()**.
+**Paso 4**: obtenga el token de acceso de los resultados Descripción: llamar al método **result-&gt; accessToken()**
 
 **Nota**  Cualquiera de los métodos de la biblioteca de autenticación puede generar **rmsauth::Exception**.
 
@@ -561,16 +548,14 @@ Descripción: llame al método **result-&gt; accessToken()**.
 **Adquirir el token de autenticación de oAuth2 sin la interfaz de usuario**
 **Origen**: [rmsauth\_sample/mainwindow.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rmsauth_sample)
 
-**Paso 1**: cree un punto compartido del objeto **rmsauth::FileCache**.
-Descripción: se puede establecer la ruta de acceso de caché o usar el valor predeterminado.
+**Paso 1**: cree un punto compartido del objeto **rmsauth::FileCache** Descripción: se puede establecer la ruta de acceso de caché o usar el valor predeterminado
 
 **C++**:
 
     auto FileCachePtr = std::make_shared&lt; rmsauth::FileCache&gt;();
 
 
-**Paso 2**: cree el objeto **UserCredential**.
-Descripción: especifique las credenciales de *inicio de sesión de usuario* y *contraseña*.
+**Paso 2**: cree el objeto **UserCredential** Descripción: especifique las credenciales de *inicio de sesión de usuario* y *contraseña*
 
 **C++**:
 
@@ -578,8 +563,7 @@ Descripción: especifique las credenciales de *inicio de sesión de usuario* y *
                                                  &quot;SomePass&quot;);
 
 
-**Paso 3**: cree el objeto **rmsauth::AuthenticationContext**.
-Descripción: especifique el *URI* de autoridad de Azure y el objeto *FileCache*.
+**Paso 3**: cree el objeto **rmsauth::AuthenticationContext** Descripción: especifique el *URI* de autoridad de Azure y el objeto *FileCache*
 
 **C++**:
 
@@ -602,13 +586,13 @@ Descripción: especifique el *URI* de autoridad de Azure y el objeto *FileCache*
                 userCred);
 
 
-**Paso 5**: obtenga el token de acceso de los resultados.
-Descripción: llame al método **result-&gt; accessToken()**.
+**Paso 5**: obtenga el token de acceso de los resultados Descripción: llamar al método **result-&gt; accessToken()**
 
 **Nota**  Cualquiera de los métodos de la biblioteca de autenticación puede generar **rmsauth::Exception**.
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

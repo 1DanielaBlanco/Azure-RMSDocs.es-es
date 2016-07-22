@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Aplicación Rights Management sharing para Windows | Azure RMS
-description:
-keywords:
+title: "Aplicación Rights Management sharing para Windows | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7d8a8abe-6de1-4088-90ee-e0c4bd6deec8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 39eebe7e99fce0eae612f87726764c6810351b77
+
 
 ---
 
@@ -38,13 +32,14 @@ Rights Management sharing para Windows (también conocida simplemente como "RMS 
 -   [Guía de usuario de la aplicación de uso compartido Rights Management](sharing-app-user-guide.md)
 
 > [!TIP]
-> Existe también una aplicación de uso compartido de Rights Management para equipos Mac y dispositivos móviles. Para obtener más información, consulte [FAQ for Rights Management Sharing Application for Mobile and Mac Platforms](http://technet.microsoft.com/dn451248) (Preguntas más frecuentes sobre la aplicación Rights Management sharing para plataformas móviles y Mac)..
+> Existe también una aplicación de uso compartido de Rights Management para equipos Mac y dispositivos móviles. Para obtener más información, consulte [Preguntas más frecuentes sobre la aplicación de uso compartido de Rights Management para plataformas móviles y Mac](http://technet.microsoft.com/dn451248).
 
 ## Véase también
 [Preguntas más frecuentes sobre la aplicación de uso compartido de Rights Management para Windows](http://technet.microsoft.com/dn467883)
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

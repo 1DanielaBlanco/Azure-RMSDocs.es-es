@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Referencia de PowerShell para plantillas personalizadas | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/20/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 30ee2f77-ce16-4113-bcda-6089131849ec
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
+ms.openlocfilehash: 645f9ed4080e3b38fcda9afe148923c021046724
+
 
 ---
 
@@ -35,7 +29,8 @@ Todo lo que puede hacer en el Portal de Azure clásico para crear y administrar 
 
 También puede utilizar la exportación e importación para restaurar y hacer una copia de seguridad de sus plantillas personalizadas. Como práctica recomendada, haga una copia de seguridad de sus plantillas personalizadas periódicamente, de modo que si realiza un cambio que no pretendía, pueda revertir fácilmente a una versión anterior.
 
-> [!IMPORTANT] Para usar Windows PowerShell para crear y administrar plantillas de directiva de permisos de Azure RMS, debe tener al menos la versión 2.0.0.0 del [módulo de Windows PowerShell para Azure RMS](http://go.microsoft.com/fwlink/?LinkId=257721).
+> [!IMPORTANT]
+> Para usar Windows PowerShell para crear y administrar plantillas de directiva de permisos de Azure RMS, debe tener al menos la versión 2.0.0.0 del [módulo de Windows PowerShell para Azure RMS](http://go.microsoft.com/fwlink/?LinkId=257721).
 > 
 > Si ya instaló este módulo de PowerShell, ejecute el comando siguiente en una ventana de PowerShell para comprobar el número de versión: `(Get-Module aadrm -ListAvailable).Version`
 
@@ -64,6 +59,7 @@ Los cmdlets que admite la creación y administración de plantillas:
 ## Véase también
 [Configuración de plantillas personalizadas para Azure Rights Management](configure-custom-templates.md)
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

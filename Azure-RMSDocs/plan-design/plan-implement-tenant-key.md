@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Planeamiento e implementación de la clave de inquilino de Azure Rights Management | Azure RMS
-description:
-keywords:
+title: "Planeamiento e implementación de la clave de inquilino de Azure Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/14/2016
+ms.date: 06/30/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f01d57759ab80b4946c07a627269550c80114131
+ms.openlocfilehash: aa482dace1086222f63e9165e3089051b5de3e8c
+
 
 ---
 
@@ -81,9 +75,9 @@ Usa la información y los procedimientos de esta sección si ha decidido generar
 
 
 > [!IMPORTANT]
-> Si ya ha empezado a usar [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (el servicio está activado) y tiene usuarios que ejecutan Office 2010, [póngase en contacto con el soporte técnico de Microsoft](../get-started/information-support#to-contact-microsoft-support) antes de ejecutar estos procedimientos. En función del escenario y las solicitudes, aún puede usar BYOK pero con algunas limitaciones o pasos adicionales.
+> Si ya ha empezado a usar [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (el servicio está activado) y tiene usuarios que ejecutan Office 2010, [póngase en contacto con el soporte técnico de Microsoft](../get-started/information-support.md#to-contact-microsoft-support) antes de ejecutar estos procedimientos. En función del escenario y las solicitudes, aún puede usar BYOK pero con algunas limitaciones o pasos adicionales.
 > 
-> [Póngase en contacto con el soporte técnico de Microsoft](../get-started/information-support#to-contact-microsoft-support) también si su organización tiene directivas específicas para el manejo de claves.
+> [Póngase en contacto con el soporte técnico de Microsoft](../get-started/information-support.md#to-contact-microsoft-support) también si su organización tiene directivas específicas para el manejo de claves.
 
 ### Requisitos previos para BYOK
 Consulte la tabla siguiente para consultar una lista de requisitos previos para Aportar tu propia clave (BYOK).
@@ -114,7 +108,7 @@ Los procedimientos para generar y usar su propia clave de inquilino dependen de 
     > [!NOTE]
     > Su clave de inquilino se puede transferir con seguridad a través de equipos y redes que no son de confianza porque está cifrada y es segura con permisos de nivel de control de acceso, que hacen que solo se pueda usar dentro de tus HSM y los HSM de Microsoft para Azure RMS. Puede usar los scripts proporcionados en el conjunto de herramientas para comprobar las medidas de seguridad y leer más información acerca de cómo funciona en Thales: [Administración de la clave de hardware en la nube de RMS Cloud](https://www.thales-esecurity.com/knowledge-base/white-papers/hardware-key-management-in-the-rms-cloud).
 
--   **En persona:** este método precisa que se [ponga en contacto con el soporte técnico de Microsoft](../get-started/information-support#to-contact-microsoft-support) para programar una cita a fin de transferir la clave para Azure RMS. Debe viajar a la oficina de Microsoft en Redmond, Washington, Estados Unidos de América, para transferir su clave de inquilino al universo de seguridad de Azure RMS.
+-   **En persona:** este método precisa que se [ponga en contacto con el soporte técnico de Microsoft](../get-started/information-support.md#to-contact-microsoft-support) para programar una cita a fin de transferir la clave para Azure RMS. Debe viajar a la oficina de Microsoft en Redmond, Washington, Estados Unidos de América, para transferir su clave de inquilino al universo de seguridad de Azure RMS.
 
 Para obtener instrucciones sobre procedimientos, seleccione si va a generar y transferir la clave de inquilino a través de Internet o en persona: 
 
@@ -136,9 +130,9 @@ Ahora que ha realizado la planeación, y si es necesario, ha generado su clave d
 
 2.  Considere la utilización del registro de uso, que registra todas las transacciones que lleva a cabo RMS.
 
-    Si ha decidido administrar tu propia clave de inquilino, el registro incluye información acerca del uso de su clave de inquilino. Vea el ejemplo siguiente de un archivo de registro que se muestra en Excel, donde los tipos de solicitud **Decrypt** y **SignDigest** muestran que se está usando la clave de inquilino.
+    Si ha decidido administrar tu propia clave de inquilino, el registro incluye información acerca del uso de su clave de inquilino. Vea el siguiente fragmento de código de un archivo de registro que se muestra en Excel, donde los tipos de solicitud **KMSPDecrypt** y **KMSPSignDigest** muestran que se está usando la clave de inquilino.
 
-    ![archivo de registro en Excel donde se usa la clave de inquilino](../media/RMS_Logging.gif)
+    ![archivo de registro en Excel donde se usa la clave de inquilino](../media/RMS_Logging.png)
 
     Para más información sobre el registro de uso, consulte [Registro y análisis del uso de Azure Rights Management](../deploy-use/log-analyze-usage.md).
 
@@ -148,6 +142,7 @@ Ahora que ha realizado la planeación, y si es necesario, ha generado su clave d
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

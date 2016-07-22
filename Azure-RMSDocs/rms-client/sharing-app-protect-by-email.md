@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Protección de un archivo que comparte por correo electrónico con la aplicación Rights Management sharing | Azure RMS
-description:
-keywords:
+title: "Protección de un archivo que comparte por correo electrónico con la aplicación Rights Management sharing | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4c1cd1d3-78dd-4f90-8b37-dcc9205a6736
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
+ms.openlocfilehash: ea7f186e01606ca5e487bdfaab87d1eb0f2f41d3
+
 
 ---
 
@@ -37,7 +31,7 @@ Si su organización usa Azure RMS, puede hacer un seguimiento de los archivos qu
 
 -   Seleccione una opción para recibir mensajes de correo electrónico cuando alguien intente abrir estos archivos adjuntos protegidos. Cada vez que se tenga acceso al archivo, se le notificará qué usuarios intentaron abrir el archivo, cuándo y si se autenticaron correctamente o no.
 
--   Utilice el sitio de seguimiento de documentos. Incluso puede dejar de compartir el archivo. Para ello, revoque el acceso a él en el sitio de seguimiento de documentos. Para obtener más información, consulte [Track and revoke your documents when you use the RMS sharing application](sharing-app-track-revoke.md) (Seguimiento y revocación de documentos cuando se usa la aplicación RMS sharing)..
+-   Utilice el sitio de seguimiento de documentos. Incluso puede dejar de compartir el archivo. Para ello, revoque el acceso a él en el sitio de seguimiento de documentos. Para más información, consulte [Seguimiento y revocación de documentos cuando se usa la aplicación RMS sharing](sharing-app-track-revoke.md).
 
 ## Con Outlook: Para proteger un archivo que comparte por correo electrónico
 
@@ -45,9 +39,9 @@ Si su organización usa Azure RMS, puede hacer un seguimiento de los archivos qu
 
     ![Complemento de Outlook para la aplicación de uso compartido de RMS](../media/ADRMS_MSRMSApp_SP_OutlookToolbar.png)
 
-    Si no ve este botón, es probable que la aplicación RMS sharing no esté instalada en el equipo, que no esté instalada la versión más reciente o que el equipo deba reiniciarse para completar la instalación. Para obtener más información sobre cómo instalar la aplicación de uso compartido, consulte [Download and install the Rights Management sharing application](install-sharing-app.md) (Descarga e instalación de la aplicación Rights Management sharing)..
+    Si no ve este botón, es probable que la aplicación RMS sharing no esté instalada en el equipo, que no esté instalada la versión más reciente o que el equipo deba reiniciarse para completar la instalación. Para más información sobre cómo instalar la aplicación de uso compartido, consulte [Descarga e instalación de la aplicación Rights Management sharing](install-sharing-app.md).
 
-2.  Especifique las opciones que quiera para este archivo en el cuadro de diálogo [Uso compartido seguro](sharing-app-dialog-box.md) y haga clic en **Enviar ahora**..
+2.  Especifique las opciones que desee para este archivo en el cuadro de diálogo [Uso compartido seguro](sharing-app-dialog-box.md) y haga clic en **Enviar ahora**.
 
 ### Otras formas de proteger un archivo que comparte por correo electrónico
 Además de compartir un archivo protegido con Outlook, también puede utilizar estas alternativas:
@@ -68,9 +62,9 @@ Además de compartir un archivo protegido con Outlook, también puede utilizar e
 
         ![Complemento de barra de herramientas de Office](../media/ADRMS_MSRMSApp_SP_OfficeToolbar.png)
 
-    Si no ve estas opciones para la protección, es probable que la aplicación RMS sharing no esté instalada en el equipo, que no esté instalada la versión más reciente o que el equipo deba reiniciarse para completar la instalación. Para obtener más información sobre cómo instalar la aplicación de uso compartido, consulte [Download and install the Rights Management sharing application](install-sharing-app.md) (Descarga e instalación de la aplicación Rights Management sharing)..
+    Si no ve estas opciones para la protección, es probable que la aplicación RMS sharing no esté instalada en el equipo, que no esté instalada la versión más reciente o que el equipo deba reiniciarse para completar la instalación. Para más información sobre cómo instalar la aplicación de uso compartido, consulte [Descarga e instalación de la aplicación Rights Management sharing](install-sharing-app.md).
 
-2.  Especifique las opciones que quiera para este archivo en el cuadro de diálogo [Uso compartido seguro](sharing-app-dialog-box.md) y haga clic en **Enviar**..
+2.  Especifique las opciones que desee para este archivo en el cuadro de diálogo [Uso compartido seguro](sharing-app-dialog-box.md) y haga clic en **Enviar**.
 
 3.  Quizá vea un cuadro de dialogo rápido donde se indica que se está protegiendo el archivo y, a continuación, verá un mensaje de correo electrónico creado para usted que indica a los destinatarios que los datos adjuntos están protegidos con Microsoft RMS y que deben iniciar sesión. Cuando hagan clic en el vínculo para iniciar sesión, verán instrucciones y vínculos para garantizar que puedan abrir los datos adjuntos protegidos.
 
@@ -98,6 +92,7 @@ Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de 
 [Guía de usuario de la aplicación de uso compartido Rights Management](sharing-app-user-guide.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

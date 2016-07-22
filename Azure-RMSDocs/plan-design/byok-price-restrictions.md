@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Precio y restricciones de BYOK | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 34d5ed8ca9f5b4556429a081718fc70a789590aa
+
 
 ---
 
@@ -34,7 +28,7 @@ Las organizaciones que tienen una suscripción a Azure administrada por TI puede
 
 
 > [!NOTE]
-> Para obtener más información sobre RMS para usuarios, consulte [RMS for individuals and Azure Rights Management](../understand-explore/rms-for-individuals.md) (RMS para usuarios y Azure Rights Management)..
+> Para más información sobre RMS para usuarios, consulte [RMS para usuarios y Azure Rights Management](../understand-explore/rms-for-individuals.md).
 
 ![BYOK no es compatible con Exchange Online.](../media/RMS_BYOK_noExchange.png)
 
@@ -60,12 +54,13 @@ A veces, la excepción de BYOK de Azure RMS para Exchange Online no es un proble
 
 ## Pasos siguientes
 
-Si ha tomado la decisión de administrar su propia clave, vaya a [Implementing your Azure Rights Management tenant key](plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key) (Implementación de su clave de inquilino de Azure Rights Management)..
+Si ha tomado la decisión de administrar su propia clave, vaya a [Implementing your Azure Rights Management tenant key](plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key) (Implementación de su clave de inquilino de Azure Rights Management).
 
 Si ha decidido permanecer con la configuración predeterminada con la que Microsoft administra su clave, consulte la sección [Pasos siguientes](plan-implement-tenant-key.md#next-steps) del artículo Planeamiento e implementación de la clave de inquilino de Azure Rights Management
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

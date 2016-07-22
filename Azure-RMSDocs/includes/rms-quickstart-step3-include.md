@@ -42,6 +42,6 @@ Ahora que ha enviado el documento protegido, está listo para pedir a los destin
 |Acerca de las opciones del cuadro de diálogo **Uso compartido seguro** →|[Opciones del cuadro de diálogo para la aplicación de uso compartido Rights Management](../rms-client/sharing-app-dialog-box.md)|
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Jun16_HO4-->
 
 

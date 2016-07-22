@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Protección de RMS con la infraestructura de clasificación de archivos (FCI) de Windows Server | Azure RMS
-description:
-keywords:
+title: "Protección de RMS con la infraestructura de clasificación de archivos (FCI) de Windows Server | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 06/14/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1fc1835b60c4c75b81f106011849940ba2e77164
+ms.openlocfilehash: afb00e010df25dea5f3c3cad23824f773de59b18
+
 
 ---
 
@@ -33,7 +27,8 @@ Use este artículo para obtener instrucciones y un script para utilizar el clien
 
 Esta solución le permite proteger automáticamente todos los archivos en una carpeta de un servidor de archivos que ejecuta Windows Server o bien proteger automáticamente archivos que cumplen criterios específicos. Por ejemplo, los archivos que se han clasificado como poseedores de información confidencial. Esta solución usa Azure Rights Management (Azure RMS) para proteger los archivos, de modo que debe tener esta tecnología implementada en su organización.
 
-> [!NOTE] Aunque Azure RMS incluye un [conector](../deploy-use/deploy-rms-connector.md) que admite la infraestructura de clasificación de archivos, dicha solución admite solo la protección nativa (por ejemplo, archivos de Office).
+> [!NOTE]
+> Aunque Azure RMS incluye un [conector](../deploy-use/deploy-rms-connector.md) que admite la infraestructura de clasificación de archivos, dicha solución admite solo la protección nativa (por ejemplo, archivos de Office).
 > 
 > Para admitir todos los tipos de archivo con infraestructura de clasificación de archivos, debe usar el módulo **Protección de RMS** de Windows PowerShell, tal como se describe en este artículo. Los cmdlets de protección de RMS, al igual que la aplicación de uso compartido de RMS, admite protección genérica, así como protección nativa, lo que significa que se pueden proteger todos los archivos. Para más información acerca de los diferentes niveles de protección, consulte la sección [Niveles de protección: nativo y genérico](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) en la [Guía de administrador de la aplicación de uso compartido Rights Management](sharing-app-admin-guide.md).
 
@@ -278,7 +273,8 @@ Ahora que ha completado la configuración de clasificación, está listo para co
     ```
     foreach ($file in (Get-ChildItem -Path C:\FileShare -Force | where {!$_.PSIsContainer})) {Get-RMSFileStatus -f $file.PSPath}
     ```
-    > [!TIP] Algunas sugerencias para la solución de problemas:
+    > [!TIP]
+    > Algunas sugerencias para la solución de problemas:
     > 
     > -   Si ve **0** en el informe, en lugar del número de archivos de su carpeta, esto indica que el script no se ha ejecutado. En primer lugar, compruebe el propio script cargándolo en ISE de Windows PowerShell para validar el contenido del script e intenta ejecutarlo para ver si se muestra algún error. Sin argumentos especificados, el script intentará conectarse y autenticarse en Azure RMS.
     > 
@@ -306,6 +302,7 @@ Ahora todo lo que debe hacer es crear una nueva tarea de administración de arch
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

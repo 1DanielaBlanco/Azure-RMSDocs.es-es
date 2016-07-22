@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Guía de implementación rápida de Azure Rights Management | Azure RMS
-description:
-keywords:
+title: "Guía de implementación rápida de Azure Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c994d616-cff6-4930-9228-a7f7d198a160
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
+ms.openlocfilehash: 01c2436218e0d7fd80a31cdc037d9dc8933e42f2
+
 
 ---
 
@@ -39,7 +33,8 @@ Los escenarios aquí mencionados son una muestra de los más comunes. Dado que A
 
 Antes de implementar estas soluciones, puede enviar un anuncio general a los usuarios finales informándoles de los cambios que se producirán en materia de protección de los datos de la empresa, así como de las posibles modificaciones que deban realizar por su parte. Después de la tabla siguiente encontrará un ejemplo de este tipo de comunicación.
 
-> [!NOTE] Si tiene preguntas y comentarios sobre esta guía, use los mecanismos de comentarios de esta página o envíe un correo a [AskIPTeam@Microsoft.com](mailto:%20askipteam@microsoft.com?subject=Rapid%20Deployment%20Guide%20feedback).
+> [!NOTE]
+> Si tiene preguntas y comentarios sobre esta guía, use los mecanismos de comentarios de esta página o envíe un correo a [AskIPTeam@Microsoft.com](mailto:%20askipteam@microsoft.com?subject=Rapid%20Deployment%20Guide%20feedback).
 
 ## Escenarios de Azure RMS
 Para ayudarle a implementar Azure RMS más rápidamente con el fin de abordar problemas empresariales específicos, elija los escenarios que se acerquen más a sus objetivos empresariales y adáptelos en lo necesario.
@@ -151,6 +146,7 @@ Las soluciones que estamos implementando nos ayudarán a proteger nuestra valios
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
