@@ -13,8 +13,8 @@ ms.assetid: eaf6d02c-aa36-4915-856e-49bb71ab1484
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 46e5d3c9ea001d2fa157187a8b78c2dc3e6516f3
+ms.sourcegitcommit: 384a58f32aae8c7d908392e7fd9a1629bc05cdff
+ms.openlocfilehash: d3727eb963532e03137aea2140293fa9c5821db2
 
 
 ---
@@ -43,29 +43,31 @@ Estos son solo algunos ejemplos de cómo puede usar la aplicación RMS sharing p
 
 ## ¿Qué desea hacer?
 > [!NOTE]
-> Para más información técnica, como los tipos de archivos compatibles y cómo instalar esta aplicación en una red de empresa, consulte la [Guía del administrador de la aplicación Microsoft Rights Management sharing](sharing-app-admin-guide.md).
+> Para obtener más información técnica, como los [tipos de archivos compatibles](sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application) y [cómo instalar esta aplicación en una red de empresa](sharing-app-admin-guide.md), vea la [Guía del administrador de la aplicación Microsoft Rights Management sharing](sharing-app-admin-guide-technical.md#supported-file-types-and-file-name-extensions).
 
--   [Descargar e instalar la aplicación RMS sharing](install-sharing-app.md)
+- [Descargar e instalar la aplicación RMS sharing](install-sharing-app.md)
 
--   [Proteger un archivo en un dispositivo (protección en contexto)](sharing-app-protect-in-place.md)
+- [Proteger un archivo en un dispositivo (protección en contexto)](sharing-app-protect-in-place.md)
 
--   [Proteger un archivo que comparte por correo electrónico](sharing-app-protect-by-email.md)
+- [Proteger un archivo que comparte por correo electrónico](sharing-app-protect-by-email.md)
 
--   [Realizar un seguimiento de los documentos y revocarlos](sharing-app-track-revoke.md)
+- [Cambiar los permisos en archivos protegidos](sharing-app-reprotect-files.md)
 
--   [Ver y usar archivos protegidos](sharing-app-view-use-files.md)
+- [Realizar el seguimiento y revocar los documentos](sharing-app-track-revoke.md)
 
--   [Quitar la protección de un archivo](sharing-app-remove-protection.md)
+- [Ver y usar archivos protegidos](sharing-app-view-use-files.md)
 
--   [Usar de métodos abreviados de teclado](sharing-app-keyboard-shortcuts.md)
+- [Quitar la protección de un archivo](sharing-app-remove-protection.md)
 
--   [Especificar la configuración en el cuadro de diálogo](sharing-app-dialog-box.md)
+- [Usar de métodos abreviados de teclado](sharing-app-keyboard-shortcuts.md)
 
-
-
-
+- [Especificar la configuración en el cuadro de diálogo](sharing-app-dialog-box.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+
+
+
+<!--HONumber=Jul16_HO3-->
 
 

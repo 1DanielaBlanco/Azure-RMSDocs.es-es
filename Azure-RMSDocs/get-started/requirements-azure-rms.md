@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/17/2016
+ms.date: 07/15/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 50ebcd71336baeb68687e2d0c1ff1f0608925761
-ms.openlocfilehash: 72a75712da9efa201865440affa80461dcd7df53
+ms.sourcegitcommit: 2fab331a26e18730e9cc64a24c0501b7ae21aa1b
+ms.openlocfilehash: f225d8579e2440d2eb00a4f821a78727b6442fdd
 
 
 ---
@@ -32,7 +32,7 @@ Para implementar Microsoft Azure Rights Management (Azure RMS) en su organizaci�
 |Directorio de Azure AD|Su organización debe tener un directorio de Azure AD que admita la autenticación de usuario para RMS. Además, si desea usar sus cuentas de usuario desde su directorio local (AD DS), también deberá configurar la integración de directorios.<br /><br />Multi-Factor Authentication (MFA) es compatible con Azure RMS si tiene el software cliente necesario y la infraestructura de MFA configurada correctamente.<br /><br />Para más información, consulte [Azure Active Directory](requirements-azure-ad.md).|
 |Dispositivos cliente|Los usuarios deben tener dispositivos cliente (equipo o dispositivo móvil) que ejecuten un sistema operativo compatible con RMS.<br /><br />Para más información, consulte [Dispositivos cliente que son compatibles con Azure RMS](requirements-client-devices.md).|
 |Aplicaciones|Los usuarios deben ejecutar aplicaciones que sean compatibles con RMS.<br /><br />Para más información, consulte [Aplicaciones que son compatibles con Azure RMS](requirements-applications.md).|
-|Infraestructura compatible con la conectividad a Internet y dependiente de los servicios en la nube|Si tiene un firewall o dispositivos de red que intervengan que se deben configurar para permitir conexiones específicas, consulte [Direcciones URL e intervalos de direcciones IP de Office 365](https://support.office.com/en-US/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2).<br /><br />La lista de direcciones URL y direcciones IP en las secciones **Portal de Office 365 e infraestructura compartida** y **Autenticación e identidad de Office 365** es aplicable al Portal de Office 365, a los recursos de Azure Active Directory y a Azure Rights Management. Siga las instrucciones de este artículo para suscribirse a una fuente RSS y mantenerse así al día de los cambios que se realicen en esta información.<br /><br />Además de la información del artículo de Office específica de Azure RMS:<br /><br />- No termine la conexión TLS de cliente a servicio (por ejemplo, para realizar una inspección de los paquetes). Al hacerlo, se interrumpe la asignación de certificados que los clientes de RMS utilizan con las entidades de certificación administradas por Microsoft para ayudar a proteger su comunicación con Azure RMS.<br /><br />- Si usa un proxy web que precisa de autenticación, debe configurarlo para usar autenticación integrada de Windows con las credenciales de inicio de sesión de Active Directory del usuario.|
+|Infraestructura compatible con la conectividad a Internet y dependiente de los servicios en la nube|Si tiene un firewall o dispositivos de red de intervención similares que deban configurarse para permitir conexiones específicas, vea la información de **Azure Rights Management (RMS)** en la sección [Portal de Office 365 e infraestructura compartida](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#BKMK_Portal-identity) del siguiente artículo de Office: [URL de Office 365 e intervalos de direcciones IP](https://support.office.com/en-US/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2).<br /><br />Siga las instrucciones de este artículo de Office para suscribirse a una fuente RSS y mantenerse así al día de los cambios que se hagan en esta información.<br /><br />Además de la información del artículo de Office específica de Azure RMS:<br /><br />- No termine la conexión TLS de cliente a servicio (por ejemplo, para realizar una inspección de los paquetes). Al hacerlo, se interrumpe la asignación de certificados que los clientes de RMS utilizan con las entidades de certificación administradas por Microsoft para ayudar a proteger su comunicación con Azure RMS.<br /><br />- Si usa un proxy web que precisa de autenticación, debe configurarlo para usar autenticación integrada de Windows con las credenciales de inicio de sesión de Active Directory del usuario.|
 
 Si desea usar Azure RMS con servidores locales, se admiten los siguientes productos:
 
@@ -56,6 +56,6 @@ Para más información sobre los requisitos adicionales de Azure RMS para este e
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

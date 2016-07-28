@@ -1,7 +1,7 @@
 ---
 title: "Usar el Portal de Azure para configurar la autenticación de RMS | Azure RMS"
 description: "Describe el proceso para la autenticación con AAL"
-keywords: authentication, RMS, ADAL
+keywords: "autenticación, RMS, ADAL"
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 06/14/2016
@@ -62,6 +62,6 @@ Aquí se muestra un recorte de código del ejemplo más grande del código de cl
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

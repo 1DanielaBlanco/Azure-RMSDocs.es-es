@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/09/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 7b91ab30-6363-4929-bcbd-4dfbd05f644a
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
-ms.openlocfilehash: 771a80843ca5ab01cd06bd4e76c827469b0e9f00
+ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
+ms.openlocfilehash: ed2ab42174ce5d83fd60ace1c394515db1450e3d
 
 
 ---
@@ -32,14 +32,14 @@ Use esta información para especificar las opciones en el cuadro de diálogo **A
 
 Además de las opciones que puede elegir, es posible que también se pregunte lo siguiente:
 
--   [¿Qué es el archivo .ppdf que se crea automáticamente?](#what-s-the-ppdf-file-that-s-automatically-created-)
+-   [¿Qué es el archivo .ppdf que se crea automáticamente?](#what-s-the-ppdf-file-that-s-automatically-created)
 
--   [¿Cuál es la diferencia entre la protección genérica y la protección incorporada (nativa)?](#what-s-the-difference-between-generic-protection-and-built-in-native-protection-)
+-   [¿Cuál es la diferencia entre la protección genérica y la protección incorporada (nativa)?](#what-s-the-difference-between-generic-protection-and-built-in-native-protection)
 
 |Opción|Descripción|
 |----------|---------------|
 |**USUARIOS**|Si todavía no especificó una dirección de correo electrónico de Outlook, escriba las direcciones de correo electrónico de las personas que desea que puedan abrir el archivo.<br /><br />Tenga en cuenta que la aplicación RMS sharing no admite todas las direcciones de correo electrónico.<br /><br />Si su organización usa la versión local de Rights Management (AD RMS), las direcciones de correo electrónico que puede especificar se limitan a personas de su organización. En este caso, cuando intente especificar direcciones de correo electrónico externas, verá un mensaje que indica que la configuración de la empresa permite el uso compartido de contenido protegido únicamente dentro de la empresa. <br /><br /> Si la organización usa Azure RMS, estas direcciones de correo electrónico pueden ser de personas de la organización o de personas de otra organización.<br /><br />Por ejemplo: **janetm@contoso.com; p.dover@fabrikam.com**<br /><br />La aplicación RMS sharing no admite actualmente direcciones de correo electrónico personal|
-|**Protección genérica**|Si está seleccionada esta opción, significa que el archivo seleccionado no se puede proteger de forma nativa. Para obtener más información, vea. [¿Cuál es la diferencia entre la protección genérica y la protección integrada (nativa)?](#what-s-the-difference-between-generic-protection-and-built-in-native-protection-) en esta página.|
+|**Protección genérica**|Si está seleccionada esta opción, significa que el archivo seleccionado no se puede proteger de forma nativa. Para obtener más información, vea. [¿Cuál es la diferencia entre la protección genérica y la protección integrada (nativa)?](#what-s-the-difference-between-generic-protection-and-built-in-native-protection) en esta página.|
 |**Visor – Solo ver**<br /><br />**Revisor – Ver y editar**<br /><br />**Coautor – Ver, editar, copiar e imprimir**<br /><br />**Copropietario – Todos los permisos**<br /><br />Nota: Todas estas opciones tienen un icono redondo antes del nombre, que representa un globo terráqueo. Se usa este icono porque, normalmente, se selecciona una de estas opciones cuando se envía un archivo adjunto a una persona de otra organización.|Seleccione una de estas opciones si desea definir los derechos del documento protegido. Haga clic en cada opción para ver una descripción.<br /><br />Cuando elija una de estas opciones, solo las personas que indique en **USUARIOS** tienen los derechos que especifique para abrir y usar el documento. Por ejemplo, si reenvían el documento a otra persona, no se abrirá.|
 |Plantillas de directiva que configura el administrador.<br /><br />Por ejemplo, si el nombre de la organización es Contoso, Ltd: **Contoso, Ltd - Solo vista confidencial**.<br /><br />Todas estas opciones tienen un icono cuadrado antes del nombre, que representa un edificio de oficinas. Se usa este icono porque, normalmente, se selecciona una de estas opciones cuando se envía un archivo adjunto a una persona de la misma organización.|Al compartir un documento con personas que trabajan en su organización, verá las plantillas de directiva disponibles que configura el administrador. Elija una de estas plantillas cuando no se deba compartir el documento fuera de su organización.<br /><br />Cuando se elija una de estas opciones, el administrador definirá los derechos del documento y quién puede abrirlo.|
 |**Estos documentos expiran el**|Seleccione esta opción solo para los archivos sujetos a limitación temporal que los usuarios seleccionados no deben poder abrir después de la fecha que especifique. Usted seguirá pudiendo abrir el archivo original, pero después de la medianoche (de su zona horaria actual) del día que especifique, nadie más podrá abrir el archivo.<br /><br />Esta opción no está disponible si selecciona una plantilla de directiva configurada por el administrador.|
@@ -71,7 +71,7 @@ Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de 
 
 -   [Ejemplos de uso de la aplicación RMS sharing](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [¿Qué desea hacer?](sharing-app-user-guide.md#what-do-you-want-to-do-)
+-   [¿Qué desea hacer?](sharing-app-user-guide.md#what-do-you-want-to-do)
 
 ## Véase también
 [Guía de usuario de la aplicación de uso compartido Rights Management](sharing-app-user-guide.md)
@@ -79,6 +79,6 @@ Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

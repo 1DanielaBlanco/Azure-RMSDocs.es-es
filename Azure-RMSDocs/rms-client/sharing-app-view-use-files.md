@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/09/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
-ms.openlocfilehash: c243ad02bdbd5bd46ba1b2a4818839df8a7deb7b
+ms.sourcegitcommit: 06f615c993d54ab1e8e4a94d7414302481d919b4
+ms.openlocfilehash: cd19be1c0319a3d2a4609030c0114b07b461c1d8
 
 
 ---
@@ -41,7 +41,7 @@ Usando el Explorador de archivos o el mensaje de correo electrónico que contien
 Si ve dos versiones del archivo pero con extensiones de nombre de archivo diferentes, abra el archivo que tiene una extensión de archivo .ppdf únicamente si el otro archivo no se abre. Si tampoco puede abrir la versión .ppdf, instale primero la [aplicación RMS sharing](install-sharing-app.md), que sabe cómo abrir los archivos que tienen una extensión de nombre de archivo .ppdf.
 
 > [!NOTE]
-> Para más información, consulte "[¿Qué es el archivo .ppdf que se crea automáticamente?](sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created-)".
+> Para obtener más información, vea [¿Qué es el archivo .ppdf que se crea automáticamente?](sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created)
 
 La manera en que se abre el archivo depende de cómo se protegió, lo que se puede saber por la extensión de nombre de archivo. En cualquier caso, el proceso de abrir el archivo podría auditarse, y sigue auditándose mientras esté protegido. Además, si el archivo se envió como un archivo adjunto por correo electrónico, es posible que el remitente reciba una notificación por correo electrónico cada vez que abra el archivo.
 
@@ -101,13 +101,13 @@ Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de 
 
 -   [Ejemplos de uso de la aplicación RMS sharing](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [¿Qué desea hacer?](sharing-app-user-guide.md#what-do-you-want-to-do-)
+-   [¿Qué desea hacer?](sharing-app-user-guide.md#what-do-you-want-to-do)
 
 ## Véase también
 [Guía de usuario de la aplicación de uso compartido Rights Management](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

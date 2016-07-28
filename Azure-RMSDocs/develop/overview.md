@@ -1,10 +1,10 @@
 ---
-title: "Información general | Azure RMS"
+title: "Información general - RMS SDK 4.2 | Azure RMS"
 description: "AD RMS y Azure RMS son tecnologías de protección de la información con la que es más fácil proteger la información digital frente al uso no autorizado."
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 07/11/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -14,18 +14,15 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
-ms.openlocfilehash: 417888c5445d702b1f700a8e717fbb746593efc6
+ms.sourcegitcommit: 5afdf526fe9f8486c6a778eebf10899e0bd9f839
+ms.openlocfilehash: d55a16d7ff6f11db3c02d3494dcdd088bffc8500
 
 
 ---
 
 # Información general
 
-
-Microsoft Rights Management Services (AD RMS y Azure RMS) es una tecnología de protección de la información con la que es más fácil proteger la información digital frente al uso no autorizado. Con aplicaciones habilitadas para derechos, los propietarios de contenido tendrán la capacidad de definir quién puede abrir, modificar, imprimir, reenviar o realizar otras acciones con su contenido.
-
-Microsoft Rights Management SDK 4.2 está disponible para varias plataformas. Se trata de un marco de trabajo o kit de desarrollo de software (SDK) que está diseñado para equipos cliente y dispositivos con el objetivo de ayudar a proteger el acceso a la información que circula por aplicaciones con “derechos habilitados”, así como el uso de esa información. Los SDK de esas plataformas proporcionan una API sencilla con la que el desarrollador de una aplicación puede proteger o consumir contenido digital, recuperar plantillas y adquirir directivas de un servidor, además de otras tareas relacionadas con la administración de derechos.
+Microsoft Rights Management SDK 4.2 es una tecnología de protección de la información disponible para varias plataformas.  Se trata de un marco de trabajo o kit de desarrollo de software (SDK) que está diseñado para equipos cliente y dispositivos con el objetivo de ayudar a proteger el acceso a la información que circula por aplicaciones con “derechos habilitados”, así como el uso de esa información. Los SDK de esas plataformas proporcionan una API sencilla con la que el desarrollador de una aplicación puede proteger o consumir contenido digital, recuperar plantillas y adquirir directivas de un servidor, además de otras tareas relacionadas con la administración de derechos.
 
 Para más información sobre las plataformas compatibles actualmente, visite nuestro portal de documentación para desarrolladores de [Microsoft Rights Management SDK](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md).
 
@@ -67,6 +64,6 @@ Use la guía de [Introducción](get-started.md) para empezar un proyecto de apli
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

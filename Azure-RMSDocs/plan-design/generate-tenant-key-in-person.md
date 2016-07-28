@@ -13,8 +13,8 @@ ms.assetid: 3281e45e-cf69-4dc5-946b-3029851d3152
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 1acc66e9a73b100268ed722391a0a87651c64abc
+ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
+ms.openlocfilehash: 8e77298121a84f6feb16a992da81bd9c3bb7b20b
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: 1acc66e9a73b100268ed722391a0a87651c64abc
 *Se aplica a: Azure Rights Management, Office 365*
 
 
-Use los procedimientos siguientes si ha decidido [administrar su propia clave de inquilino](plan-implement-tenant-key.md#choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok-) y no quiere transferirla a través de Internet, sino que prefiere transferirla en persona.
+Use los procedimientos siguientes si ha decidido [administrar su propia clave de inquilino](plan-implement-tenant-key.md#choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok) y no quiere transferirla a través de Internet, sino que prefiere transferirla en persona.
 
 ## Generar su clave de inquilino
 Para generar su propia clave de inquilino, siga estos 3 pasos:
@@ -151,6 +151,6 @@ Ahora ha completado las instrucciones obligatorias para aportar su propia clave 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

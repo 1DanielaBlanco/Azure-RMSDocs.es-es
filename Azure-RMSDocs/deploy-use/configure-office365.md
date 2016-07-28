@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 7a2436a6ebb17e4336f1321b8f3742e34ea59689
+ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
+ms.openlocfilehash: 3592fb7c386eaeddc839c11a494f94d9b7564472
 
 
 ---
@@ -559,7 +559,7 @@ Aunque IRM no se puede configurar para OneDrive para la Empresa de los usuarios 
 
     3.  Busque `$webUrls` y reemplace los valores del ejemplo por las direcciones URL de la página web de OneDrive para la Empresa de los usuarios y agregue o elimine tantas entradas como necesite.
 
-        Como alternativa, vea los comentarios del script sobre cómo reemplazar esta matriz mediante la importación de un archivo .CSV que contiene todas las direcciones URL que es preciso configurar.  Hemos proporcionado otro script de ejemplo para buscar y extraer automáticamente las direcciones URL para rellenar este archivo .CSV. Cuando esté listo para ello, expanda la sección [Script adicional para enviar todas las direcciones URL de OneDrive para la Empresa a un archivo .CSV](#BKMK_Script_OD4B_URLS) inmediatamente después de estos pasos.
+        Como alternativa, vea los comentarios del script sobre cómo reemplazar esta matriz mediante la importación de un archivo .CSV que contiene todas las direcciones URL que es preciso configurar.  Hemos proporcionado otro script de ejemplo para buscar y extraer automáticamente las direcciones URL para rellenar este archivo .CSV. Cuando esté a punto, vea la sección [Script adicional para enviar todas las direcciones URL de OneDrive para la Empresa a un archivo .CSV](#additional-script-to-output-all-onedrive-for-business-urls-to-a-csv-file) justo después de estos pasos.
 
         La dirección URL de OneDrive para la Empresa del usuario tiene el siguiente formato: https://*&lt;nombre de inquilino&gt;*-my.sharepoint.com/personal/*&lt;nombre_usuario&gt;*_*&lt;nombre de inquilino&gt;*_com
 
@@ -1106,6 +1106,6 @@ Disconnect-SPOService -ErrorAction SilentlyContinue
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

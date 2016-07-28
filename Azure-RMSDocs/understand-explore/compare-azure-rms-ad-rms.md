@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 8123bd62-1814-4d79-b306-e20c1a00e264
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
-ms.openlocfilehash: 8635402989db0f83017151910013ca460011b392
+ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
+ms.openlocfilehash: ce79ec40cbd8ca3796a17920d27dc3872cd40842
 
 
 ---
@@ -54,7 +54,7 @@ Para obtener más información y conocer otras diferencias, consulte en la tabla
 |Proporciona dos plantillas de directivas de derechos predeterminadas que restringen el acceso al contenido a tu propia organización; una que proporciona vista de solo lectura de contenido protegido, y la otra que permite escribir o modificar permisos para el contenido protegido.<br /><br />También puede crear sus propias plantillas personalizadas, incluidas plantillas de departamentos, visibles tan solo para un subconjunto de usuarios. Para más información, consulte [Configuración de plantillas personalizadas para Azure Rights Management](../deploy-use/configure-custom-templates.md).<br /><br />Además, los usuarios pueden definir su propio conjunto de permisos si las plantillas no son suficientes.|No hay plantillas de directivas de derechos predeterminadas, por lo que deberá crearlas y distribuirlas. Para obtener más información, consulte [Consideraciones de la plantilla de directivas para AD RMS](http://go.microsoft.com/fwlink/?LinkId=154765).<br /><br />Además, los usuarios pueden definir su propio conjunto de permisos si las plantillas no son suficientes.|
 |La versión mínima compatible de Microsoft Office es Office 2010, que requiere la [aplicación RMS sharing](../rms-client/sharing-app-windows.md).<br /><br />Microsoft Office para Mac:<br /><br />- Microsoft Office para Mac 2016: compatible<br /><br />- Microsoft Office para Mac 2011: no compatible|La versión mínima compatible de Microsoft Office es Office 2007.<br /><br />Microsoft Office para Mac:<br /><br />- Microsoft Office para Mac 2016: compatible<br /><br />- Microsoft Office para Mac 2011: compatible|
 |Admite la [aplicación RMS sharing](../rms-client/sharing-app-windows.md) para Windows, equipos Mac y dispositivos móviles.<br /><br />Además, la aplicación de uso compartido de RMS admite lo siguiente:<br /><br />- Uso compartido con personas de otra organización.<br /><br />- Notificación por correo electrónico, que permite al remitente saber cuándo alguien intenta abrir un archivo adjunto protegido.<br /><br />- Un sitio de seguimiento de documentos para los usuarios, que incluye la capacidad de revocar un documento.|Admite la [aplicación RMS sharing](../rms-client/sharing-app-windows.md) para Windows, equipos Mac y dispositivos móviles. Sin embargo, el uso compartido no es compatible con compartir con personas de otra organización, la notificación por correo electrónico o el sitio de seguimiento de documentos y la capacidad de los usuarios de revocar documentos.|
-|Todos los tipos de archivo se pueden proteger con [protección genérica o nativa cuando se usa la aplicación RMS sharing](../rms-client/sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic).<br /><br />Para otras aplicaciones, consulte la [tabla de funcionalidades de dispositivos del cliente](../get-started/requirements-client-devices.md#client-device-capabilities).|Todos los tipos de archivo se pueden proteger con [protección genérica o nativa cuando se usa la aplicación RMS sharing](../rms-client/sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic).<br /><br />Para otras aplicaciones, consulte la [tabla de funcionalidades de dispositivos del cliente](../get-started/requirements-client-devices.md#client-device-capabilities).|
+|Todos los tipos de archivo se pueden proteger con [protección genérica o nativa cuando se usa la aplicación RMS sharing](../rms-client/sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic).<br /><br />Para otras aplicaciones, vea la tabla de [Requisitos de Azure RMS: aplicaciones](../get-started/requirements-applications.md).|Todos los tipos de archivo se pueden proteger con [protección genérica o nativa cuando se usa la aplicación RMS sharing](../rms-client/sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic).<br /><br />Para otras aplicaciones, vea la tabla de [Requisitos de Azure RMS: aplicaciones](../get-started/requirements-applications.md).|
 |La versión mínima compatible del cliente Windows es Windows 7.|La versión mínima compatible del cliente Windows es Windows Vista Service Pack 2.|
 |El dispositivo móvil es compatible, entre otros, con Windows Phone, Android, iOS y Windows RT.<br /><br />El soporte del correo electrónico mediante Exchange ActiveSync IRM también es compatible en todas las plataformas de dispositivos móviles que admiten este protocolo.|La compatibilidad de dispositivos móviles incluye Windows Phone, Android, iOS y Windows RT, y requiere la [Extensión de Active Directory Rights Management Services para dispositivos móviles](http://technet.microsoft.com/library/dn673574.aspx).<br /><br />El soporte del correo electrónico mediante Exchange ActiveSync IRM es compatible en todas las plataformas de dispositivos móviles que admiten este protocolo.|
 |Admite Multi-Factor Authentication (MFA) para equipos y dispositivos móviles.<br /><br />Para más información, consulte [Multi-factor authentication (MFA) and Azure RMS](../get-started/requirements-azure-ad.md#multi-factor-authentication-mfa-and-azure-rms) (Multi-factor Authentication (MFA) y Azure RMS).|Admite la autenticación de tarjeta inteligente si IIS está configurado para solicitar certificados.|
@@ -76,6 +76,6 @@ Si quiere migrar de AD RMS a Azure RMS, consulte [Migración desde AD RMS a Azur
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/30/2016
+ms.date: 07/15/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6a2989f4a6d919d9a2a3d301467353f052bd10ea
-ms.openlocfilehash: d67caf4ebbe19e4f67061d006da1fdedea0d5761
+ms.sourcegitcommit: 5737594c679be0702761014425e104e5eade59f3
+ms.openlocfilehash: c240502f2e88ec61bcbee6be778e77a0d5aee66b
 
 
 ---
@@ -26,6 +26,8 @@ ms.openlocfilehash: d67caf4ebbe19e4f67061d006da1fdedea0d5761
 
 
 En el Portal de Azure clásico puede crear y administrar plantillas personalizada. Puede hacerlo directamente desde el Portal de Azure clásico o puede iniciar sesión en el Centro de administración de Office 365 y elegir **Características avanzadas** para Rights Management, lo que le redirigirá al Portal de Azure clásico.
+
+Debe ser administrador global para crear y administrar plantillas en el Portal de Azure clásico. Si ha asignado el rol de administrador global de Azure RMS a otros usuarios, también podrán crear y administrar plantillas, aunque deberán usar [PowerShell](configure-templates-with-powershell.md). Para obtener más información, vea [¿Debe ser un administrador global para configurar Azure RMS o puedo delegar a otros administradores?](../get-started/faqs.md#do-you-need-to-be-a-global-admin-to-configure-azure-rms-or-can-i-delegate-to-other-administrators) 
 
 Usa los procedimientos siguientes para crear, configurar y publicar plantillas personalizadas para Rights Management.
 
@@ -165,6 +167,6 @@ Para realizar cualquier cambio en tu plantilla, selecciónala y, a continuación
 [Configuración de plantillas personalizadas para Azure Rights Management](configure-custom-templates.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 
