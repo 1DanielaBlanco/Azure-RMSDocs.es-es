@@ -3,22 +3,24 @@ title: "Tutorial de inicio rápido de Azure Information Protection | Azure Right
 description: "Un tutorial introductorio rápido para probar Microsoft Azure Information Protection para su organización en solo 4 pasos que deberían tardar menos de 15 minutos."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/16/2016
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
 translationtype: Human Translation
-ms.sourcegitcommit: cac95dec84f99d2e6caa3458dc8284defe2324bc
-ms.openlocfilehash: 7dc988365c1fa86827d1a7edc33c0a2eb6180f0e
+ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
+ms.openlocfilehash: 17670eadc7cbf6111ab7fd0a9322e51d401b86e1
 
 
 ---
 
 # Tutorial de inicio rápido de Azure Information Protection 
 
-*Se aplica a: Azure Information Protection (versión preliminar)*
+>*Se aplica a: Azure Information Protection (versión preliminar)*
+
+**[Esta información es preliminar y está sujeta a cambios. ]**
 
 Use este tutorial rápido para probar Azure Information Protection (versión preliminar) para su organización; son solo 4 pasos que deberían tardar menos de 15 minutos. Si quiere, puede activar el servicio de Azure Rights Management. Consulte y modifique la directiva predeterminada de Azure Information Protection, instale el cliente de Azure Information Protection y use un documento de Word para ver la clasificación, el etiquetado y la protección en acción.
 
@@ -38,7 +40,7 @@ Para completar este tutorial, necesitará lo siguiente:
 
 - Una cuenta de administrador global para iniciar sesión en el centro de administración de Office 365 o en el Portal de Azure clásico si tiene que activar el servicio de Rights Management. Esta cuenta también debe tener una dirección de correo electrónico y un servicio de correo electrónico de trabajo (por ejemplo, Exchange Online o Exchange Server).
 
-- Un equipo que ejecute Windows (a partir de Windows 7 con el Service Pack 1) y que tenga instalado Office 2016, Office 2013 con el Service Pack 1 u Office 2010. 
+- Un equipo con Windows (como mínimo Windows 7 con Service Pack 1) que tenga instalado Office Professional Plus 2016, Office Professional Plus 2013 con Service Pack 1, u Office Professional Plus 2010. 
 
 - Si tiene implementado Active Directory Rights Management Services (AD RMS) en su organización: el equipo debe ser un equipo de grupo de trabajo que no haya usado antes AD RMS. Este requisito es obligatorio si quiere proteger los documentos; además, garantiza que el equipo descargue plantillas únicamente de Azure Rights Management. No es válido si quiere conectar un equipo a AD RMS y Azure RMS al mismo tiempo. Si quiere obtener información sobre la migración, vea [Migración desde AD RMS a Azure Rights Management](../plan-design/migrate-from-ad-rms-to-azure-rms.md).   
 
@@ -51,6 +53,6 @@ Comencemos.
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

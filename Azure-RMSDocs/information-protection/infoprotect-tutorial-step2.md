@@ -3,26 +3,28 @@ title: "Paso 2 del tutorial de inicio rápido de Azure Information Protection | 
 description: "Paso 2 del tutorial introductorio rápido para probar Microsoft Azure Information Protection para su organización, que contiene solo 4 pasos que deberían tardar menos de 15 minutos."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/22/2016
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: 3bf9fe837c7bb268361b8004352192f0540604b9
-ms.openlocfilehash: af2f5eadf3a4993c590f72a8f44e4fea03982505
+ms.sourcegitcommit: cab45baf19af4ab548f5f112946d168d93a95d49
+ms.openlocfilehash: fa17a5b18162ca7ca1ac0cf9a1052dd01d2057aa
 
 
 ---
 
 # Paso 2: configurar y publicar la directiva de Azure Information Protection
 
-*Se aplica a: Azure Information Protection (versión preliminar)*
+>*Se aplica a: Azure Information Protection (versión preliminar)*
+
+**[Esta información es preliminar y está sujeta a cambios. ]**
 
 Aunque Azure Information Protection incluye una directiva predeterminada que se puede usar sin necesidad de configuración, echaremos un vistazo a esa directiva y haremos algunos cambios.
 
-1. Inicie sesión en el portal de Azure mediante este vínculo especial de Azure Information Protection: https://portal.azure.com/?microsoft_azure_informationprotection=true
+1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
  
 2. En el menú del concentrador, haga clic en **Examinar** y comience a escribir **Información** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
@@ -44,20 +46,22 @@ Ahora cambiaremos la configuración de una de las etiquetas, **Confidencial**:
 
 2. En la hoja **Etiqueta: Confidencial**, verá la configuración disponible para cada etiqueta. Haga los siguientes cambios:
 
-    a. Si ha activado Azure Rights Management, en **Set RMS template for protecting documents and emails containing this label** (Establecer plantilla de RMS para proteger los documentos y mensajes de correo electrónico que contengan esta etiqueta): asegúrese de que está seleccionado **Azure RMS** y, luego, haga clic en el cuadro desplegable y seleccione la plantilla predeterminada **\<el nombre de organización > - Confidencial**. Por ejemplo, si el nombre de la organización es VanArsdel, Ltd, verá **VanArsdel, Ltd - Confidencial**, opción que debe seleccionar. Si ha desactivado esta plantilla predeterminada de Azure Rights Management, seleccione una plantilla alternativa. Pero si selecciona una plantilla de departamento, asegúrese de que su cuenta esté incluida en el ámbito.
-
+    a. Si ha activado Azure Rights Management: en la sección **Set RMS template for protecting documents and emails containing this label** (Configuración de la plantilla de RMS para proteger documentos y correos electrónicos que contienen esta etiqueta), si ve **Select RMS template from**, (Seleccionar plantilla de RMS de), mantenga el valor predeterminado de **Azure RMS**. A continuación, en **Select RMS template** (Seleccionar plantilla de RMS), haga clic en el cuadro desplegable y seleccione la plantilla predeterminada **\<nombre de su organización > - Confidencial**. Por ejemplo, si el nombre de la organización es VanArsdel, Ltd, verá **VanArsdel, Ltd - Confidencial**, opción que debe seleccionar. Si ha desactivado esta plantilla predeterminada de Azure Rights Management, seleccione una plantilla alternativa. Pero si selecciona una plantilla de departamento, asegúrese de que su cuenta esté incluida en el ámbito.
+    
     Si no ha activado Azure Rights Management, no puede usar esta opción.
-
+    
     b. **Documents with this label have a watermark** (Los documentos que tienen esta etiqueta tienen una marca de agua): haga clic en **Activado** y, en el cuadro **Texto**, escriba el nombre de la organización. Por ejemplo, **VanArsdel, Ltd**. 
-
+    
     c. Haga clic en **Agregar una nueva condición** y, después, en la hoja **Condición**, seleccione lo siguiente:
-
+    
     - **Elija el tipo de condición**: **Integrada**
-
+    
     - **Seleccionar estilo integrado**: **número de tarjeta de crédito**
-
+    
     - **Número mínimo de repeticiones**: **1**
-
+    
+    - **Count occurrences with unique values only** (Contar solo las repeticiones con valores únicos): **On** (Activado)
+    
     - Haga clic en **Guardar** para volver a la hoja **Etiqueta: Confidencial**.
 
 3. En la hoja **Etiqueta: Confidencial**, verá que aparece **Número de tarjeta de crédito** como **NOMBRE DE CONDICIÓN** con **1** **REPETICIONES**.
@@ -76,12 +80,16 @@ Puede cerrar el portal de Azure o dejarlo abierto para probar opciones de config
 
 Ahora que ya ha dado un vistazo a la directiva predeterminada y ha hecho algunos cambios, el siguiente paso consiste en instalar el cliente de Azure Information Protection.
 
+|Si desea obtener más información|Información adicional|
+|--------------------------------|--------------------------|
+|Acerca de las opciones de configuración de la directiva|[Configuración de la directiva de Azure Information Protection](configure-policy.md)|
+
 
 >[!div class="step-by-step"]
 [&#171; Paso 1](infoprotect-tutorial-step1.md)
 [Paso 3 &#187;](infoprotect-tutorial-step3.md)
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 
