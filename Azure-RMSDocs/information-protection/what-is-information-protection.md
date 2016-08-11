@@ -3,22 +3,24 @@ title: "¿Qué es Azure Information Protection? | Azure Rights Management"
 description: "Información general del servicio de Azure Information Protection, ahora en vista preliminar"
 author: cabailey
 manager: mbaldwin
-ms.date: 07/14/2016
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
 translationtype: Human Translation
-ms.sourcegitcommit: 0db303b01361b3220c2e9334f84594ac86c5b069
-ms.openlocfilehash: bfb56fd4994a358d366d94b40f6c5fc889330303
+ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
+ms.openlocfilehash: d3d63a778bff62649341227b65212722e285a6be
 
 
 ---
 
 # ¿Qué es Azure Information Protection (versión preliminar)?
 
-*Se aplica a: Azure Information Protection (versión preliminar)*
+>*Se aplica a: Azure Information Protection (versión preliminar)*
+
+**[Esta información es preliminar y está sujeta a cambios. ]**
 
 Con Azure Information Protection puede clasificar, etiquetar y proteger sus documentos y correos electrónicos. Al clasificar estos datos, se agregan etiquetas persistentes para que la clasificación se pueda identificar en cualquier momento, independientemente de dónde se almacenen los datos o con quién se compartan. Las etiquetas persistentes incluyen distintivos visuales, como encabezados, pies de página o marcas de agua. Para los datos más confidenciales, también puede usar el cifrado, la identidad y las directivas de autorización de Azure Rights Management para evitar la pérdida de datos. 
 
@@ -42,6 +44,6 @@ Para los usuarios finales, Azure Information Protection se integra fácilmente c
 Comience a usar Azure Information Protection en cuatro sencillos pasos, gracias al [Tutorial de inicio rápido de Azure Information Protection](infoprotect-quick-start-tutorial.md).
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 
