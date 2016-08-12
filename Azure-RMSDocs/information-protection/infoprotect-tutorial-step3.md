@@ -3,15 +3,15 @@ title: "Paso 3 del tutorial de inicio rápido de Azure Information Protection | 
 description: "Paso 3 del tutorial introductorio para probar rápidamente Microsoft Azure Information Protection para su organización, que contiene solo 4 pasos que deberían tardar menos de 15 minutos."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 209815b9-81c9-430c-a82f-32cac991449b
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: 65596a71b07e830377c55dc04b7187251315a634
+ms.sourcegitcommit: 264f2be6c62dc7fa670171493941332fe7ff20e5
+ms.openlocfilehash: 42649148e58a8ea1baab6317d181c24e6a21d709
 
 
 ---
@@ -37,9 +37,8 @@ En este paso, instalará el cliente de Azure Information Protection de forma que
         Haga clic en **Proteger** > **Ayuda y comentarios** y, en el cuadro de diálogo **Microsoft Azure Information Protection**, confirme el estado del cliente. Debería mostrar **Information Protection policy is installed (la directiva de Information Protection se ha instalado)** y un tiempo de conexión reciente. Compruebe que el nombre de usuario que se muestra es correcto para su inquilino.
 
     - Un nueva barra se muestra debajo de la cinta de opciones; la barra de Information Protection. Muestra el título de **Confidencialidad** y la etiqueta predeterminada que hemos configurado de **Interno**. 
-
-
-![Paso 3 del tutorial de inicio rápido de Azure Information Protection: se ha instalado el cliente](../media/word2013-callouts.png)
+    
+        ![Paso 3 del tutorial de inicio rápido de Azure Information Protection: se ha instalado el cliente](../media/word2013-callouts2.png)
 
 Está listo para el paso final para ver la clasificación, el etiquetado y la protección en funcionamiento.
 
@@ -53,6 +52,6 @@ Está listo para el paso final para ver la clasificación, el etiquetado y la pr
 [Paso 4 &#187;](infoprotect-tutorial-step4.md)
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 
