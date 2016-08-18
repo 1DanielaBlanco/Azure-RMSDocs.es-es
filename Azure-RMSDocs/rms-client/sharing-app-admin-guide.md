@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/21/2016
+ms.date: 08/05/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0ac4264f20208f999c9ad9bdd2c4759e65ae021b
-ms.openlocfilehash: 5344c38a31aa0ceb894f330f363442bd2c0d9375
+ms.sourcegitcommit: f7cf74355aa39928fd66a4be13a9b65428da7480
+ms.openlocfilehash: 08226cd930f90bc7c9cda4c65315ee6472fbcf52
 
 
 ---
@@ -351,6 +351,33 @@ Las direcciones URL siguientes se usan para el seguimiento de documentos y se de
 
 -   https://&#42;.microsoftonline-p.com
 
+### Realizar un seguimiento y revocar documentos para usuarios
+
+Cuando los usuarios inician sesión en el sitio de seguimiento de documentos, pueden realizar un seguimiento y revocar documentos que han compartido mediante la aplicación RMS sharing. Al iniciar sesión como administrador de Azure RMS (administrador global), puede hacer clic en el icono de administración en la parte superior derecha de la página, que cambia al modo de administrador para que pueda ver los documentos que han compartido los usuarios de la organización.
+
+Las acciones que realiza en el modo de administrador se auditan y registran en los archivos de registro de uso y debe confirmar para continuar. Para obtener más información sobre este registro, consulte la sección siguiente.
+
+Cuando está en el modo de administrador, puede buscar por usuario o documento. Si quiere buscar por usuario, verá todos los documentos que ha compartido el usuario especificado. Si quiere buscar por documento, verá todos los usuarios de la organización que han compartido ese documento. Después, puede profundizar en los resultados de búsqueda para realizar un seguimiento de los documentos que han compartido los usuarios y revocar estos documentos, si es necesario. 
+
+Para salir del modo de administrador, haga clic en la **X** junto a **Salir del modo de administrador**.
+
+Para obtener instrucciones sobre cómo usar el sitio de seguimiento de documentos, consulte [Seguimiento y revocación de documentos](sharing-app-track-revoke.md) en el manual del usuario.
+
+
+
+### Registro de uso del sitio de seguimiento de documentos
+
+Dos campos de los archivos de registro de uso se aplican al seguimiento de documentos: **AdminAction** y **ActingAsUser**.
+
+**AdminAction**: este campo tiene un valor de true cuando un administrador usa el sitio de seguimiento de documentos en modo de administrador, por ejemplo, para revocar un documento en nombre de un usuario o para ver cuándo se ha compartido. Este campo está vacío cuando un usuario inicia sesión en el sitio de seguimiento de documentos.
+
+**ActingAsUser**: cuando el campo AdminAction es true, este campo contiene el nombre de usuario del que el administrador actúa en nombre, como la búsqueda de usuario o propietario del documento. Este campo está vacío cuando un usuario inicia sesión en el sitio de seguimiento de documentos. 
+
+También hay tipos de solicitudes que registran cómo los usuarios y administradores usan el sitio de seguimiento de documentos. Por ejemplo, **RevokeAccess** es el tipo de solicitud cuando un usuario o un administrador en nombre de un usuario ha revocado un documento en el sitio de seguimiento de documentos. Use este tipo de solicitud en combinación con el campo AdminAction para determinar si el usuario ha revocado su propio documento (el campo AdminAction está vacío) o un administrador ha revocado un documento en nombre de un usuario (el campo AdminAction es true).
+
+
+Para más información sobre el registro de uso, consulte [Registro y análisis del uso de Azure Rights Management](../deploy-use/log-analyze-usage.md)
+
 ## Solo AD RMS: Compatibilidad con varios dominios de correo electrónico dentro de su organización
 Si usa AD RMS y los usuarios de su organización tienen varios dominios de correo electrónico, quizás como resultado de una fusión o adquisición, debe realizar la siguiente modificación en el Registro:
 
@@ -369,6 +396,6 @@ Para obtener información técnica adicional que incluye la explicación de la d
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

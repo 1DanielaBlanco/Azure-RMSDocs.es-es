@@ -3,15 +3,15 @@ title: "Configuración global de directivas para Azure Information Protection | 
 description: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/08/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: 3b22cf76f03a4d36281db7e705359402dcbbde0e
+ms.sourcegitcommit: b2263c212a1b869b778767493645f10ad821828f
+ms.openlocfilehash: 508161474bf6fd7406668de3976206947de254de
 
 
 ---
@@ -29,11 +29,11 @@ Hay tres configuraciones en la directiva de Azure Information Protection que se 
 
 Para establecer la configuración:
 
-1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
- 
-2. En el menú del concentrador, haga clic en **Examinar** y comience a escribir **Información** en el cuadro Filtro. Seleccione **Azure Information Protection**.
+1. Si aún no lo ha hecho, inicie sesión en el [portal de Azure](https://portal.azure.com) y, después, navegue hasta la hoja **Azure Information Protection**. 
+    
+    Por ejemplo, en el menú del concentrador, haga clic en **Examinar** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
-3. En la hoja **Azure Information Protection**, configure estos valores globales:
+2. En la hoja **Azure Information Protection**, configure estos valores globales:
 
     - **All documents and emails must have a label** (Todos los documentos y correos electrónicos deben tener una etiqueta): cuando establece esta opción en **On** (Activado), todos los documentos guardados y correos electrónicos enviados deben tener aplicada una etiqueta. El etiquetado puede asignarlo manualmente un usuario, se puede asignar automáticamente como resultado de una [condición](configure-policy-classification.md) o asignarse de forma predeterminada (configurando la opción **Select the default label** [Seleccionar la etiqueta predeterminada]). 
 
@@ -49,9 +49,9 @@ Para establecer la configuración:
 
     Esta opción no es aplicable a las etiquetas secundarias.
 
-4. Para guardar los cambios, haga clic en **Guardar**.
+3. Para guardar los cambios, haga clic en **Guardar**.
 
-5. Para que los cambios estén disponibles para los usuarios, haga clic en **Publicar**.
+4. Para que los cambios estén disponibles para los usuarios, haga clic en **Publicar**.
 
 ## Pasos siguientes
 
@@ -68,6 +68,6 @@ Para más información sobre cómo configurar la directiva de Azure Information 
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

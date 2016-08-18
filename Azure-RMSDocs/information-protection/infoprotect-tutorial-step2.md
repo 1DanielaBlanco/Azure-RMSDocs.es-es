@@ -3,15 +3,15 @@ title: "Paso 2 del tutorial de inicio rápido de Azure Information Protection | 
 description: "Paso 2 del tutorial introductorio rápido para probar Microsoft Azure Information Protection para su organización, que contiene solo 4 pasos que deberían tardar menos de 15 minutos."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/08/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: cab45baf19af4ab548f5f112946d168d93a95d49
-ms.openlocfilehash: fa17a5b18162ca7ca1ac0cf9a1052dd01d2057aa
+ms.sourcegitcommit: 09cb56aaa0d7d97073623c518aa331d591a376e3
+ms.openlocfilehash: 65d758635b77ee7d6c423a1400a7621e8e05b14d
 
 
 ---
@@ -24,13 +24,20 @@ ms.openlocfilehash: fa17a5b18162ca7ca1ac0cf9a1052dd01d2057aa
 
 Aunque Azure Information Protection incluye una directiva predeterminada que se puede usar sin necesidad de configuración, echaremos un vistazo a esa directiva y haremos algunos cambios.
 
-1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
+1. Inicie sesión en el [Portal de Azure](https://portal.azure.com). Si quiere probar la protección, así como la clasificación y etiquetado, inicie sesión como administrador global para que pueda recuperar las plantillas de Azure Rights Management.
  
-2. En el menú del concentrador, haga clic en **Examinar** y comience a escribir **Información** en el cuadro Filtro. Seleccione **Azure Information Protection**.
+2. En el menú del concentrador: haga clic en **Nuevo** > **Seguridad e identidad** > **Azure Information Protection (versión preliminar)** > **Crear**.
 
-- Verá la hoja principal **Azure Information Protection**, en la que se muestra la directiva predeterminada de Information Protection que se ha creado automáticamente. Esta directiva predeterminada contiene las siguientes etiquetas de clasificación: **Personal**, **Público**, **Interno**, **Confidencial** y **Secreto**. Lea la información sobre herramientas de cada etiqueta para saber cómo usarlas. Tenga en cuenta que **Secreto** tiene dos etiquetas secundarias: **Todos los empleados** y **Mi grupo**, que proporciona un ejemplo de cómo una clasificación puede tener subcategorías.
+    Esto crea la hoja **Azure Information Protection** de modo que la próxima vez que inicie sesión en el portal, pueda seleccionar el servicio desde la lista **Examinar** del concentrador. 
 
-- Con sus valores predeterminados, **Interno**, **Confidencial** y **Secreto** tienen distintivos visuales configurados (por ejemplo, pie de página, encabezado, marca de agua...) y ninguna de las etiquetas tienen establecida la protección. Además, los tres valores globales no están establecidos para que ningún documento ni ningún correo electrónico deba tener una etiqueta; no hay ninguna etiqueta predeterminada y los usuarios no tienen que dar ninguna justificación si bajan el nivel de confidencialidad.
+    > [!TIP] 
+    > Seleccione **Anclar al panel** para crear un icono de **Azure Information Protection** en el panel, de modo que pueda omitir el paso de examinar la próxima vez que inicie sesión en el portal.
+
+3.  Explore la hoja principal **Azure Information Protection**, en la que se muestra la directiva predeterminada de Information Protection que se ha creado automáticamente:
+    
+    - Etiquetas de clasificación: **Personal**, **Público**, **Interno**, **Confidencial** y **Secreto**. Lea la información sobre herramientas de cada etiqueta para saber cómo usarlas. Tenga en cuenta que **Secreto** tiene dos etiquetas secundarias: **Todos los empleados** y **Mi grupo**, que proporciona un ejemplo de cómo una clasificación puede tener subcategorías.
+
+    - Con la configuración predeterminada, las etiquetas **Interno**, **Confidencial** y **Secreto** tienen distintivos visuales configurados (por ejemplo, pie de página, encabezado, marca de agua) y ninguna de las etiquetas tienen establecida la protección. Además, los tres valores globales no están establecidos para que ningún documento ni ningún correo electrónico deba tener una etiqueta; no hay ninguna etiqueta predeterminada y los usuarios no tienen que dar ninguna justificación si bajan el nivel de confidencialidad.
 
     ![Paso 3 del tutorial de inicio rápido de Azure Information Protection - Directiva predeterminada](../media/info-protect-policy.png)
 
@@ -42,7 +49,7 @@ En nuestro tutorial, cambiaremos algunos de estos valores globales para que pued
 
 Ahora cambiaremos la configuración de una de las etiquetas, **Confidencial**:
 
-1. Haga clic en la entrada de la etiqueta **Confidencial**.
+1. Haga clic en la etiqueta **Confidencial**.
 
 2. En la hoja **Etiqueta: Confidencial**, verá la configuración disponible para cada etiqueta. Haga los siguientes cambios:
 
@@ -90,6 +97,6 @@ Ahora que ya ha dado un vistazo a la directiva predeterminada y ha hecho algunos
 [Paso 3 &#187;](infoprotect-tutorial-step3.md)
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

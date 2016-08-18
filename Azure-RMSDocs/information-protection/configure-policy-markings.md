@@ -3,15 +3,15 @@ title: "Configuración de una etiqueta para marcas visuales de Azure Information
 description: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: 9f2d28e4f162891497a7b0518322338628118b9d
+ms.sourcegitcommit: b2263c212a1b869b778767493645f10ad821828f
+ms.openlocfilehash: 78b68c7a502776c6492437e9b8a5c3f1ebf27f95
 
 
 ---
@@ -36,23 +36,41 @@ Más información sobre estos marcadores visuales:
 
     - PowerPoint: las marcas de agua se aplican a la diapositiva patrón, como una imagen de fondo.
 
+- Puede especificar solo una cadena de texto o usar [variables](#using-variables-in-the-text-string) para crear dinámicamente la cadena de texto cuando se aplica el encabezado, el pie de página o la marca de agua. 
+
 Utilice las siguientes instrucciones para configurar las marcas visuales para una etiqueta.
 
-1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
- 
-2. En el menú del concentrador, haga clic en **Examinar** y comience a escribir **Información** en el cuadro Filtro. Seleccione **Azure Information Protection**.
+1. Si aún no lo ha hecho, inicie sesión en el [portal de Azure](https://portal.azure.com) y, después, navegue hasta la hoja **Azure Information Protection**. 
+    
+    Por ejemplo, en el menú del concentrador, haga clic en **Examinar** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
-3. En la hoja **Azure Information Protection**, seleccione la etiqueta que quiere configurar para marcas visuales.
+2. En la hoja **Azure Information Protection**, seleccione la etiqueta que quiere configurar para marcas visuales.
 
-4. En la hoja **Etiqueta**, en la sección **Set visual marking (such as header or footer)** (Establecer marcas visuales [como encabezado y pie de página]), configure los marcadores visuales que quiera y luego haga clic en **Guardar**:
+3. En la hoja **Etiqueta**, en la sección **Set visual marking (such as header or footer)** (Establecer marcas visuales [como encabezado y pie de página]), configure los marcadores visuales que quiera y luego haga clic en **Guardar**:
 
     - Para configurar un encabezado: en **Documents with this label have a header** (Los documentos con esta etiqueta tienen un encabezado), seleccione **On** (Activado) si quiere un encabezado y **Off** (Desactivado) si no. Si selecciona **On** (Desactivado), especifique el texto, el tamaño, el color y la alineación del encabezado.
-
+    
     - Para configurar un pie de página: en **Documents with this label have a footer** (Los documentos con esta etiqueta tienen un pie de página), seleccione **On** (Activado) si quiere un pie de página y **Off** (Desactivado) si no. Si selecciona **On** (Activado), especifique el texto, el tamaño, el color y la alineación del pie de página del encabezado.
+    
+    - Para configurar una marca de agua: en **Documents with this label have a watermark** (Los documentos con esta etiqueta tienen una marca de agua), seleccione **On** (Activado) si quiere una marca de agua y **Off** (Desactivado) si no. Si selecciona **On** (Activado), especifique el texto, el tamaño, el color y el diseño de la marca de agua del encabezado. 
 
-    - Para configurar una marca de agua: en **Documents with this label have a watermark** (Los documentos con esta etiqueta tienen una marca de agua), seleccione **On** (Activado) si quiere una marca de agua y **Off** (Desactivado) si no. Si selecciona **On** (Activado), especifique el texto, el tamaño, el color y el diseño de la marca de agua del encabezado.
+4. Para que los cambios estén disponibles para los usuarios, en la hoja **Azure Information Protection**, haga clic en **Publicar**.
 
-5. Para que los cambios estén disponibles para los usuarios, en la hoja **Azure Information Protection**, haga clic en **Publicar**.
+## Uso de variables en la cadena de texto
+
+Puede usar las siguientes variables en la cadena de texto del encabezado, del pie de página o de la marca de agua:
+
+- `${Item.Label}` para la etiqueta seleccionada
+
+- `${Item.Name}` para el asunto de correo electrónico o nombre de archivo
+
+- `${Item.Location}` para la ruta del archivo
+
+- `${User.Name}` para el propietario del documento o correo electrónico
+
+- `${Event.DateTime}` para la fecha y hora en que se ha establecido la etiqueta seleccionada 
+    
+Ejemplo: Si especifica la cadena `Document: ${item.name} Sensitivity: ${item.label}` en el pie de página de la etiqueta Secreto, el texto del pie de página aplicado a un documento denominado project.docx será **Documento: project.docx Confidencialidad: secreto**.
 
 ## Pasos siguientes
 
@@ -62,6 +80,6 @@ Para más información sobre cómo configurar la directiva de Azure Information 
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

@@ -3,15 +3,15 @@ title: "Tutorial de inicio rápido de Azure Information Protection | Azure Right
 description: "Un tutorial introductorio rápido para probar Microsoft Azure Information Protection para su organización en solo 4 pasos que deberían tardar menos de 15 minutos."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: 17670eadc7cbf6111ab7fd0a9322e51d401b86e1
+ms.sourcegitcommit: 7d599aef75272eff5527294141bb0eb98d041b1b
+ms.openlocfilehash: 419bfcde6915bd6c8db9cf5ddb268f6d70c83768
 
 
 ---
@@ -38,11 +38,9 @@ Para completar este tutorial, necesitará lo siguiente:
   > [!TIP] 
   > Si necesita obtener una o ambas suscripciones, hágalo con anticipación porque el proceso puede durar varios minutos.
 
-- Una cuenta de administrador global para iniciar sesión en el centro de administración de Office 365 o en el Portal de Azure clásico si tiene que activar el servicio de Rights Management. Esta cuenta también debe tener una dirección de correo electrónico y un servicio de correo electrónico de trabajo (por ejemplo, Exchange Online o Exchange Server).
+- Una cuenta de administrador global para iniciar sesión en el Centro de administración de Office 365 o en el Portal de Azure clásico si tiene que activar el servicio de Rights Management o seleccionar plantillas de Azure RMS en el Portal de Azure. Esta cuenta también debe tener una dirección de correo electrónico y un servicio de correo electrónico de trabajo (por ejemplo, Exchange Online o Exchange Server).
 
 - Un equipo con Windows (como mínimo Windows 7 con Service Pack 1) que tenga instalado Office Professional Plus 2016, Office Professional Plus 2013 con Service Pack 1, u Office Professional Plus 2010. 
-
-- Si tiene implementado Active Directory Rights Management Services (AD RMS) en su organización: el equipo debe ser un equipo de grupo de trabajo que no haya usado antes AD RMS. Este requisito es obligatorio si quiere proteger los documentos; además, garantiza que el equipo descargue plantillas únicamente de Azure Rights Management. No es válido si quiere conectar un equipo a AD RMS y Azure RMS al mismo tiempo. Si quiere obtener información sobre la migración, vea [Migración desde AD RMS a Azure Rights Management](../plan-design/migrate-from-ad-rms-to-azure-rms.md).   
 
 Comencemos.
 
@@ -53,6 +51,6 @@ Comencemos.
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

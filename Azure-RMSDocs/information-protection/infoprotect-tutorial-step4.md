@@ -3,15 +3,15 @@ title: "Paso 4 del tutorial de inicio rápido de Azure Information Protection | 
 description: "Paso 4 del tutorial introductorio para probar rápidamente Microsoft Azure Information Protection para su organización, que contiene solo 4 pasos que deberían tardar menos de 15 minutos."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: cdd8dee1837c34caaeb0f8a1947dea37504e422a
+ms.sourcegitcommit: d17bacf8e148622db0e2393f40d3fd37c8f086eb
+ms.openlocfilehash: a36433167462275e91059f9eb3a2141ffa2797d5
 
 
 ---
@@ -28,7 +28,7 @@ La clasificación y la protección tienen lugar cuando guarda el documento, pero
 
 ### Para cambiar de manera manual nuestra etiqueta predeterminada:
 
-- En la barra de Information Protection, haga clic en el icono Editar etiqueta junto a **Interno**. Esto muestra las etiquetas disponibles. Elija **Personal** y se le solicitará que justifique por qué está reduciendo el nivel de clasificación. Seleccione **Este archivo ya no requiere esa clasificación** y haga clic en **Confirmar**.  
+- En la barra Information Protection, seleccione la etiqueta **Personal** y se le pedirá que justifique por qué está reduciendo el nivel de clasificación. Seleccione **Este archivo ya no requiere esa clasificación** y haga clic en **Confirmar**.  
 
     Verá que el valor **Confidencialidad** cambia a **Personal**.
 
@@ -36,7 +36,7 @@ La clasificación y la protección tienen lugar cuando guarda el documento, pero
 
 ### Para quitar la clasificación completamente:
 
-- En la barra de Information Protection, haga clic en el icono Editar etiqueta junto a **Personal**. Esto muestra las etiquetas disponibles. Pero, el lugar de elegir una de las etiquetas, esta vez, haga clic en el icono Quitar etiqueta. Haga clic en **Aceptar** para confirmar y proporcionar una justificación para esta acción.  
+- En la barra de Information Protection, haga clic en el icono **Editar etiqueta** junto a **Personal**. Esto muestra las etiquetas disponibles. En lugar de elegir una de las etiquetas, esta vez, haga clic en el icono **Quitar etiqueta**. Haga clic en **Aceptar** para confirmar y después proporcionar una justificación para esta acción.  
 
     Verá que el valor **Confidencialidad** muestra **No establecido**, que es lo que los usuarios ven inicialmente si no establece una etiqueta predeterminada.
 
@@ -77,6 +77,6 @@ Cuando haya terminado su propia prueba, le puede resultar útil ver las [pregunt
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

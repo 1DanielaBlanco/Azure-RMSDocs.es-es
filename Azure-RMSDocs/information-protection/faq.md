@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: 7d5b58efb4b789ba4f3d897ae3a475cbd2c679e5
+ms.sourcegitcommit: d17bacf8e148622db0e2393f40d3fd37c8f086eb
+ms.openlocfilehash: c61e299cac50069afc119d37fd461cda88a2afd3
 
 
 ---
@@ -39,11 +39,11 @@ Pruebe nuestro tutorial de inicio rápido para ver esto en funcionamiento en uno
 
 Tenga en cuenta que la versión preliminar le permite probar el nuevo **plan de servicio Premium P2** y que algunas características avanzadas, como el etiquetado recomendado y automático, puede que no estén disponibles en su plan actual con disponibilidad general. Para obtener información sobre los diferentes planes de servicio (Azure Information Protection Premium P1 y Azure Information Protection Premium P2), vea la siguiente publicación del blog: [Introducing Enterprise Mobility + Security](https://blogs.technet.microsoft.com/enterprisemobility/2016/07/07/introducing-enterprise-mobility-security/)(Introducción a Enterprise Mobility + Security).
 
-Esta versión preliminar tiene las limitaciones siguientes: Busque anuncios en el [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services) (Blog de seguridad y movilidad empresarial).y en nuestro [sitio de Yammer](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all) para saber cuándo estarán disponibles las funcionalidades y características adicionales:
+Esta versión preliminar tiene las limitaciones siguientes: Busque anuncios en el [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection) (Blog de seguridad y movilidad empresarial) y en nuestro [sitio de Yammer](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all) para saber cuándo estarán disponibles las funcionalidades y características adicionales:
 
 - No existe un registro centralizado para la clasificación y el etiquetado.
 
-- Los nombres de las etiquetas y la información sobre herramientas solo se admite en inglés.
+- Los nombres de las etiquetas y la información sobre herramientas solo se admiten en un idioma.
 
 - Las condiciones para la clasificación automática deben ser frases o patrones.
 
@@ -61,11 +61,11 @@ Para la versión preliminar, puede usar cualquier suscripción que incluya Azure
 
 Para configurar las directivas de Azure Information Protection en el Portal de Azure, debe tener una suscripción de Azure. Si no dispone aún de una suscripción de Azure para su organización, puede obtener una si se registra para una prueba gratuita: vaya a la página [Introducción a Azure](https://account.windowsazure.com/organization) y siga las instrucciones.
 
-Cualquier cambio que se produzca en los requisitos de la suscripción se anunciará en el [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services)(Blog de seguridad y movilidad empresarial).
+Cualquier cambio que se produzca en los requisitos de la suscripción se anunciará en el [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection)(Blog de seguridad y movilidad empresarial).
 
 ## ¿Necesito ser un administrador global para probar la versión preliminar de Azure Information Protection?
 
-Solo para la versión preliminar, cualquier usuario que se autentique mediante Azure puede ver y configurar la directiva de Azure Information Protection de su inquilino en el Portal de Azure.
+Solo para la versión preliminar, cualquier usuario que se autentique mediante Azure puede ver y configurar la directiva de Azure Information Protection de su inquilino para clasificación y etiquetado en el Portal de Azure. En cambio, para configurar una etiqueta para aplicar una plantilla de Azure Rights Management, debe iniciar sesión como administrador global de Azure Active Directory.
 
 Si selecciona la opción para instalar la directiva de demostración cuando instale el [cliente de Azure Information Protection](https://www.microsoft.com/en-us/download/details.aspx?id=53018), no necesita iniciar sesión en el portal para probar la versión preliminar. La directiva de demostración instala localmente la directiva predeterminada para Azure Information Protection, de forma que pueda probar el etiquetado de documentos y correos electrónicos, pero no podrá cambiar ni agregar etiquetas nuevas sin iniciar sesión en el Portal de Azure. 
 
@@ -74,7 +74,7 @@ Si quiere proteger los documentos y los correos electrónicos que clasifica y et
 
 ## ¿Azure Information Protection admite los escenarios híbridos y locales?
 
-Azure Information Protection es una solución basada en la nube. Si está interesado en los escenarios híbridos, póngase en contacto con el equipo de Information Protection enviando un correo electrónico a askipteam@microsoft.com.
+Azure Information Protection es una solución basada en la nube. Si está interesado en implementar Azure Information Protection para un escenario híbrido, póngase en contacto con el equipo de Information Protection; para ello, envíe un correo electrónico a askipteam@microsoft.com.
 
 ## ¿Qué aplicaciones y plataformas de clientes son compatibles con Azure Information Protection?
 
@@ -85,7 +85,7 @@ Esto aparece documentado y se actualizará en [Requisitos de Azure Information P
 
 Cada vez que un usuario abre una aplicación de Office, el cliente de Azure Information Protection comprueba si existe una versión posterior de la directiva de Azure Information Protection. Si existe una versión posterior, el cliente la puede descargar mediante un vínculo HTTPS para proteger los datos. 
 
-Si se cargan varias instancias de la aplicación de Office cuando se publica una nueva directiva de Azure Information Protection, debe cerrar todas las instancias para obtener la versión más reciente de la directiva. Por ejemplo, tiene abiertos dos documentos de Word y quiere probar la directiva de Azure Information Protection actualizada solo en uno de ellos: cierre ambos documentos de Word y vuelva a abrir aquel que quiera usar con la directiva más reciente.
+Si se cargan varias instancias de la aplicación de Office cuando se publica una nueva directiva de Azure Information Protection, debe cerrar todas las instancias para obtener la última versión de la directiva. Por ejemplo, tiene abiertos dos documentos de Word y quiere probar la directiva de Azure Information Protection actualizada solo en uno de ellos: cierre ambos documentos de Word y vuelva a abrir aquel que quiera usar con la directiva más reciente.
 
 ## ¿Dónde pueden almacenarse los archivos para usar Azure Information Protection? 
 
@@ -150,7 +150,11 @@ Como Azure Information Protection usa metadatos persistentes para la clasificaci
 
 ## ¿Cómo funciona la revocación y el seguimiento de documentos en Azure Information Protection?
 
-El seguimiento de documentos para los archivos que clasifica y protege mediante Azure Information Protection funciona de la misma forma que en la actualidad para Azure Rights Management. Para obtener más información, vea [Seguimiento y revocación de documentos cuando se usa la aplicación RMS sharing](../rms-client/sharing-app-track-revoke.md).
+El seguimiento de documentos para los archivos que clasifica y protege mediante Azure Information Protection funciona de la misma forma que en la actualidad para Azure Rights Management y la aplicación RMS sharing. También puede acceder al sitio de seguimiento de documentos mediante el cliente de Azure Information Protection (versión 1.0.233 o posterior): 
+
+- En una aplicación de Office, en la pestaña **Inicio**, en el grupo **Protección**, haga clic en **Proteger** > **Hacer seguimiento de uso**. 
+
+Para obtener más información, vea [Seguimiento y revocación de documentos cuando se usa la aplicación RMS sharing](../rms-client/sharing-app-track-revoke.md).
 
 ## ¿Cómo aplica Azure Information Protection las directivas que configuro?
 
@@ -184,6 +188,6 @@ Después, visite nuestro [sitio de Yammer](https://www.yammer.com/askipteam/#/th
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

@@ -3,15 +3,15 @@ title: "Eliminación o cambio de orden de una etiqueta en Azure Information Prot
 description: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ae0f603f-a632-4ac5-a3f7-6358d4255eff
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: 50a60f8a0f8cb92aba7453e6c1dedacbe004a5ed
+ms.sourcegitcommit: b2263c212a1b869b778767493645f10ad821828f
+ms.openlocfilehash: 3b4066c8e5770e6f4a502ecaebfd961400e9df2d
 
 
 ---
@@ -36,11 +36,11 @@ Ordene las etiquetas para que los usuarios las vean en una progresión lógica e
 
 Utilice las instrucciones siguientes para realizar estos cambios.
 
-1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
+1. Si aún no lo ha hecho, inicie sesión en el [portal de Azure](https://portal.azure.com) y, después, navegue hasta la hoja **Azure Information Protection**. 
+    
+    Por ejemplo, en el menú del concentrador, haga clic en **Examinar** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
-2. En el menú del concentrador, haga clic en **Examinar** y comience a escribir **Información** en el cuadro Filtro. Seleccione **Azure Information Protection**.
-
-3. En la hoja **Azure Information Protection**, realice una de las siguientes acciones, en función de si quiere eliminar, deshabilitar o cambiar el orden de una etiqueta:
+2. En la hoja **Azure Information Protection**, realice una de las siguientes acciones, en función de si quiere eliminar, deshabilitar o cambiar el orden de una etiqueta:
 
     - Para eliminar una etiqueta: haga clic con el botón derecho o seleccione el menú contextual (**...**) de la etiqueta que quiere eliminar, haga clic en **Delete this label** (Eliminar esta etiqueta) y haga clic en **Sí** para confirmar. A continuación, haga clic en **Guardar**. 
 
@@ -48,7 +48,7 @@ Utilice las instrucciones siguientes para realizar estos cambios.
 
     - Para cambiar el orden de una etiqueta: haga clic con el botón derecho o seleccione el menú contextual (**...**) de la etiqueta cuyo orden desea cambiar y haga clic en **Subir** o **Bajar** hasta que la etiqueta se sitúe en el orden deseado. A continuación, haga clic en **Guardar**. 
 
-4. Para que los cambios estén disponibles para los usuarios, en la hoja **Azure Information Protection**, haga clic en **Publicar**.
+3. Para que los cambios estén disponibles para los usuarios, en la hoja **Azure Information Protection**, haga clic en **Publicar**.
 
 ## Pasos siguientes
 
@@ -58,6 +58,6 @@ Para más información sobre cómo configurar la directiva de Azure Information 
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

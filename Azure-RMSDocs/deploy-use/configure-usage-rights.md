@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/27/2016
+ms.date: 08/09/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e65fe3e6994352296cdf58d4b53de421389790f7
-ms.openlocfilehash: 17a423b8a5a6ec0aeb1121b9ea290ae84d809d9c
+ms.sourcegitcommit: 60f25cdcdabbfbb61072a95e39f84fed79cad871
+ms.openlocfilehash: e656729fa9ea926681e560f40c4f43ce320a0d5e
 
 
 ---
@@ -28,211 +28,24 @@ Cuando establece la protección en archivos o correos electrónicos con Azure Ri
 Use este artículo como ayuda para configurar los derechos de uso que quiere para la aplicación que esté usando y para entender cómo las aplicaciones interpretan estos derechos.
 
 ## Derechos de uso y descripciones
-En las secciones siguientes se enumeran y se describen los derechos de uso que admite Rights Management y cómo se usan y se interpretan. Se enumeran por su **Nombre común**, que es normalmente cómo se muestra o se referencia el derecho de uso, como una versión más descriptiva del valor de una sola palabra que se usa en el código (el valor **Codificación en la directiva**). **Constante o valor de API** es el nombre de SDK para una llamada de API de MSIPC, que se usa al escribir una aplicación habilitada para RMS que comprueba un derecho de uso o agrega un derecho de uso a una directiva.
+En la tabla siguiente se enumeran y se describen los derechos de uso que admite Rights Management y cómo se usan y se interpretan. Se enumeran por su **Nombre común**, que es normalmente cómo se muestra o se referencia el derecho de uso, como una versión más descriptiva del valor de una sola palabra que se usa en el código (el valor **Codificación en la directiva**). **Constante o valor de API** es el nombre de SDK para una llamada de API de MSIPC, que se usa al escribir una aplicación habilitada para RMS que comprueba un derecho de uso o agrega un derecho de uso a una directiva.
+
+
+|Right|Descripción|Implementación|
+|-------------------------------|---------------------------|-----------------|
+|Nombre común: **Editar contenido, Editar** <br /><br />Codificación en la directiva: **DOCEDIT**|Permite al usuario modificar, reorganizar, formatear o filtrar el contenido dentro de la aplicación. No concede el derecho a guardar la copia modificada.|Derechos personalizados de Office: como parte de las opciones **Cambiar** y **Control total**. <br /><br />Nombre en el Portal de Azure clásico: **Editar contenido**<br /><br />Nombre en las plantillas de AD RMS: **Editar** <br /><br />Constante o valor de API: no aplicable.|
+|Nombre común: **Guardar** <br /><br />Codificación en la directiva: **EDIT**|Permite al usuario guardar el documento en su ubicación actual.<br /><br />En las aplicaciones de Office, este derecho también permite al usuario modificar el documento.|Derechos personalizados de Office: como parte de las opciones **Cambiar** y **Control total**. <br /><br />Nombre en el Portal de Azure clásico: **Guardar archivo**<br /><br />Nombre en las plantillas de AD RMS: **Guardar** <br /><br />Constante o valor de API: `IPC_GENERIC_WRITE L"EDIT"`|
+|Nombre común: **Comentario** <br /><br />Codificación en la directiva: **COMMENT**|Habilita la opción para agregar anotaciones o comentarios al contenido.<br /><br />Este derecho está disponible en el SDK como directiva ad hoc en el módulo de protección de RMS para Windows PowerShell y se implementó en algunas aplicaciones de proveedores de software. Sin embargo, no se usa extensamente y no es compatible actualmente con las aplicaciones de Office.|Derechos personalizados de Office: no implementados. <br /><br />Nombre en el Portal de Azure clásico: no implementado.<br /><br />Nombre en las plantillas de AD RMS: no implementado. <br /><br />Constante o valor de API: `IPC_GENERIC_COMMENT L"COMMENT`|
+|Nombre común: **Guardar como, Exportar** <br /><br />Codificación en la directiva: **EXPORT**|Habilita la opción para guardar el contenido con un nombre de archivo diferente (Guardar como). En el caso de los documentos de Office, el archivo puede guardarse sin protección.<br /><br />Este derecho también permite al usuario realizar otras opciones de exportación en las aplicaciones, como **Enviar a OneNote**.|Derechos personalizados de Office: como parte de las opciones **Cambiar** y **Control total**. <br /><br />Nombre en el Portal de Azure clásico: **Exportar contenido (Guardar como)**<br /><br />Nombre en las plantillas de AD RMS: **Exportar (Guardar como)** <br /><br />Constante o valor de API: `IPC_GENERIC_EXPORT L"EXPORT"`|
+|Nombre común: **Reenviar** <br /><br />Codificación en la directiva: **FORWARD**|Habilita la opción para reenviar un mensaje de correo electrónico y agregar destinatarios a las líneas **Para** y **CO** . Este derecho no se aplica a documentos, solo a mensajes de correo electrónico.<br /><br />No permite que el reenviador conceda derechos a otros usuarios como parte de la acción de reenvío.|Derechos personalizados de Office: se deniega al usar la directiva estándar **No reenviar**.<br /><br />Nombre en el Portal de Azure clásico: **Reenviar**<br /><br />Nombre en las plantillas de AD RMS: **Reenviar** <br /><br />Constante o valor de API: `IPC_EMAIL_FORWARD L"FORWARD"`|
+|Nombre común: **Control total** <br /><br />Codificación en la directiva: **OWNER**|Concede todos los derechos para el documento; se pueden realizar todas las acciones disponibles.<br /><br />Incluye la capacidad de quitar la protección de un documento y volver a protegerlo.|Derechos personalizados de Office: como parte de la opción personalizada **Control total**.<br /><br />Nombre en el Portal de Azure clásico: **Control total**<br /><br />Nombre en las plantillas de AD RMS: **Control total** <br /><br />Constante o valor de API: `IPC_GENERIC_ALL L"OWNER"`|
+|Nombre común: **Imprimir** <br /><br />Codificación en la directiva: **PRINT**|Habilita las opciones para imprimir el contenido.|Derechos personalizados de Office: como la opción **Imprimir contenido** de los permisos personalizados. No se trata de un valor por destinatario.<br /><br />Nombre en el Portal de Azure clásico: **Imprimir**<br /><br />Nombre en las plantillas de AD RMS: **Imprimir** <br /><br />Constante o valor de API: `IPC_GENERIC_PRINT L"PRINT"`|
+|Nombre común: **Responder** <br /><br />Codificación en la directiva: **PRINT**|Habilita la opción **Responder** en un cliente de correo electrónico, sin permitir que se realicen cambios en las líneas **Para** o **CC**.|Derechos personalizados de Office: no aplicables.<br /><br />Nombre en el Portal de Azure clásico: **Responder**<br /><br />Nombre en las plantillas de AD RMS: **Responder** <br /><br />Constante o valor de API: `IPC_EMAIL_REPLY`|
+|Nombre común: **Responder a todos** <br /><br />Codificación en la directiva: **REPLYALL**|Habilita la opción **Responder a todos** en un cliente de correo electrónico, pero no permite al usuario agregar a destinatarios a las líneas **Para** o **CO** .|Derechos personalizados de Office: no aplicables.<br /><br />Nombre en el Portal de Azure clásico: **Responder a todos**<br /><br />Nombre en las plantillas de AD RMS: **Responder a todos** <br /><br />Constante o valor de API: `IPC_EMAIL_REPLYALL L"REPLYALL"`|
+|Nombre común: **Ver, Abrir, Leer** <br /><br />Codificación en la directiva: **VIEW**|Permite al usuario abrir el documento y ver el contenido.|Derechos personalizados de Office: como la opción **Ver** de la directiva personalizada **Leer**.<br /><br />Nombre en el Portal de Azure clásico: **Ver**<br /><br />Nombre en las plantillas de AD RMS: **Responder a todos** <br /><br />Constante o valor de API: `IPC_GENERIC_READ L"VIEW"`|
+|Nombre común: **Copiar** <br /><br />Codificación en la directiva: **EXTRACT**|Habilita las opciones para copiar los datos (incluidas las capturas de pantalla) del documento en el mismo documento o en otro documento.<br /><br />En algunas aplicaciones, también permite que todo el documento se guarde en sin protección.|Derechos personalizados de Office: como la opción de directiva personalizada **Permitir que los usuarios con acceso de lectura copien el contenido**.<br /><br />Nombre en el Portal de Azure clásico: **Copiar y extraer contenido**<br /><br />Nombre en las plantillas de AD RMS: **Extraer** <br /><br />Constante o valor de API: `IPC_GENERIC_EXTRACT L"EXTRACT"`|
+|Nombre común: **Permitir macros** <br /><br />Codificación en la directiva: **OBJMODEL**|Habilita la opción para ejecutar macros u obtener acceso remoto o mediante programación al contenido de un documento.|Derechos personalizados de Office: como la opción de directiva personalizada **Permitir el acceso mediante programación**. No se trata de un valor por destinatario.<br /><br />Nombre en el Portal de Azure clásico: **Permitir macros**<br /><br />Nombre en las plantillas de AD RMS: **Permitir macros** <br /><br />Constante o valor de API: no implementado.|
 
-
-### Editar contenido, Editar
-
-Permite al usuario modificar, reorganizar, formatear o filtrar el contenido dentro de la aplicación. No concede el derecho a guardar la copia modificada.
-
-**Codificación en la directiva**: DOCEDIT
-
-**Implementación en los derechos personalizados de Office**: como parte de las opciones *Cambiar* y *Control total*.
-
-**Nombre en el Portal de Azure clásico**: *Editar contenido*
-
-**Nombre en las plantillas de AD RMS**: *Editar*
-
-**Constante o valor de API**: *no aplicable*
-
----
-
-### Guardar
-
-Permite al usuario guardar el documento en su ubicación actual.
-
-**Codificación en la directiva**: EDIT
-
-**Implementación en los derechos personalizados de Office**: como parte de las opciones *Cambiar* y *Control total*.
-
-**Nombre en el Portal de Azure clásico**: *Guardar archivo*
-
-**Nombre en las plantillas de AD RMS**: *Guardar*
-
-**Constante o valor de API**: IPC_GENERIC_WRITE L"EDIT"
-
-En las aplicaciones de Office, este derecho también permite al usuario modificar el documento.
-
----
-
-### Comentario
-
-Habilita la opción para agregar anotaciones o comentarios al contenido.
-
-**Codificación en la directiva**: COMMENT
-
-**Implementación en los derechos personalizados de Office**: no implementado.
-
-**Nombre en el Portal de Azure clásico**: no implementado.
-
-**Nombre en las plantillas de AD RMS:** no implementado.
-
-**Constante o valor de API:** IPC_GENERIC_COMMENT L"COMMENT
-
-Este derecho está disponible en el SDK como directiva ad hoc en el módulo de protección de RMS para Windows PowerShell y se implementó en algunas aplicaciones de proveedores de software. Sin embargo, no se usa extensamente y no es compatible actualmente con las aplicaciones de Office.
-
----
-
-### Guardar como, Exportar
-
-Habilita la opción para guardar el contenido con un nombre de archivo diferente (Guardar como). En el caso de los documentos de Office, el archivo puede guardarse sin protección.
-
-**Codificación en la directiva**: EXPORT
-
-**Implementación en los derechos personalizados de Office**: como parte de las opciones *Cambiar* y *Control total*.
-
-**Nombre en el Portal de Azure clásico**: *Exportar contenido (guardar como)*
-
-**Nombre en las plantillas de AD RMS:** *Exportar (guardar como)*
-
-**Constante o valor de API:** IPC_GENERIC_EXPORT L"EXPORT"
-
-Este derecho también permite al usuario realizar otras opciones de exportación en las aplicaciones, como *Enviar a OneNote*.
-
----
-
-### Reenviar
-
-Habilita la opción para reenviar un mensaje de correo electrónico y agregar destinatarios a las líneas *Para* y *CO*. Este derecho no se aplica a documentos, solo a mensajes de correo electrónico.
-
-**Codificación en la directiva:** FORWARD
-
-**Implementación en los derechos personalizados de Office:** se deniega al usar la directiva estándar *No reenviar*.
-
-**Nombre en el Portal de Azure clásico:** *Reenviar*
-
-**Nombre en las plantillas de AD RMS:** *Reenviar*
-
-**Constante o valor de API:** IPC_EMAIL_FORWARD L"FORWARD"
-
-No permite que el reenviador conceda derechos a otros usuarios como parte de la acción de reenvío.
-
----
-
-### Control total
-
-Concede todos los derechos para el documento; se pueden realizar todas las acciones disponibles.
-
-**Codificación en la directiva**: OWNER
-
-**Implementación en los derechos personalizados de Office**: como parte de la opción personalizada *Control total*.
-
-**Nombre en el Portal de Azure clásico:** *Control total*
-
-**Nombre en las plantillas de AD RMS:** *Control total*
-
-**Constante o valor de API:** IPC_GENERIC_ALL L"OWNER"
-
-Incluye la capacidad de quitar la protección de un documento y volver a protegerlo.
-
----
-
-### Imprimir
-
-Habilita las opciones para imprimir el contenido.
-
-**Codificación en la directiva**: PRINT
-
-**Implementación en los derechos personalizados de Office:** como la opción *Imprimir contenido* de los permisos personalizados. No se trata de un valor por destinatario.
-
-**Nombre en el Portal de Azure clásico:** *Imprimir*
-
-**Nombre en las plantillas de AD RMS:** *Imprimir*
-
-**Constante o valor de API:** IPC_GENERIC_PRINT L"PRINT
-
----
-
-### Responder
-
-Habilita la opción Responder en un cliente de correo electrónico, sin permitir que se realicen cambios en las líneas *Para* o *CO*.
-
-**Codificación en la directiva**: REPLY
-
-**Implementación en los derechos personalizados de Office**: no aplicable.
-
-**Nombre en el Portal de Azure clásico:** *Responder*
-
-**Nombre en las plantillas de AD RMS:** *Responder*
-
-**Constante o valor de API:** IPC_EMAIL_REPLY
-
----
-
-### Responder a todos
-
-Habilita la opción *Responder a todos* en un cliente de correo electrónico, pero no permite al usuario agregar destinatarios a las líneas *Para* o *CO*.
-
-**Codificación en la directiva**: REPLYALL
-
-**Implementación en los derechos personalizados de Office**: no aplicable.
-
-**Nombre en el Portal de Azure clásico:** *Responder a todos*
-
-**Nombre en las plantillas de AD RMS:** *Responder a todos*
-
-**Constante o valor de API:** IPC_EMAIL_REPLYALL L"REPLYALL"
-
----
-
-### Ver, Abrir, Leer
-
-Permite al usuario abrir el documento y ver el contenido.
-
-**Codificación en la directiva**: VIEW
-
-**Implementación en los derechos personalizados de Office**: como la opción *Ver* de la directiva personalizada *Leer*.
-
-**Nombre en el Portal de Azure clásico**: *Ver contenido*
-
-**Nombre en las plantillas de AD RMS:** *Ver*
-
-**Constante o valor de API:** IPC_GENERIC_READ L"VIEW"
-
----
-
-### Copiar
-
-Habilita las opciones para copiar los datos (incluidas las capturas de pantalla) del documento en el mismo documento o en otro documento.
-
-**Codificación en la directiva**: EXTRACT
-
-**Implementación en los derechos personalizados de Office:** como la opción de directiva personalizada *Permitir que los usuarios con acceso de lectura copien el contenido*.
-
-**Nombre en el Portal de Azure clásico**: *Copiar y extraer contenido*
-
-**Nombre en las plantillas de AD RMS**: *Extraer*
-
-**Constante o valor de API:** IPC_GENERIC_EXTRACT L"EXTRACT"
-
-En algunas aplicaciones, también permite que todo el documento se guarde en sin protección.
-
----
-
-
-### Permitir macros
-
-Habilita la opción para ejecutar macros u obtener acceso remoto o mediante programación al contenido de un documento.
-
-**Codificación en la directiva**: OBJMODEL
-
-**Implementación en los derechos personalizados de Office**: como la opción de directiva personalizada *Permitir el acceso mediante programación*. No se trata de un valor por destinatario.
-
-**Nombre en el Portal de Azure clásico:** *Permitir macros*
-
-**Nombre en las plantillas de AD RMS:** *Permitir macros*
-
-**Constante o valor de API**: no aplicable
 
 
 ## Derechos incluidos en los niveles de permisos
@@ -289,6 +102,6 @@ Un usuario quiere enviar información por correo electrónico a personas concret
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

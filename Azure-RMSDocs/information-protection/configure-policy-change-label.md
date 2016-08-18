@@ -3,15 +3,15 @@ title: "Cambio o personalización de una etiqueta existente para Azure Informati
 description: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e3b6d95f-334b-4d17-80a9-7d5487ab5d32
 translationtype: Human Translation
-ms.sourcegitcommit: d0d926bc7b06c1136ceb2964d1e62a350a73fc56
-ms.openlocfilehash: 39d83b42ace06e6e42ad50fee90b26a2f51a142e
+ms.sourcegitcommit: b2263c212a1b869b778767493645f10ad821828f
+ms.openlocfilehash: 49f08d4180d74375a31136f7fc0c77437bcf84d5
 
 
 ---
@@ -29,17 +29,17 @@ Por ejemplo, puede cambiar el nombre de una etiqueta principal o secundaria, la 
 Para cambiar una etiqueta, utilice las instrucciones siguientes.
 
 
-1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
- 
-2. En el menú del concentrador, haga clic en **Examinar** y comience a escribir **Información** en el cuadro Filtro. Seleccione **Azure Information Protection**.
+1. Si aún no lo ha hecho, inicie sesión en el [portal de Azure](https://portal.azure.com) y, después, navegue hasta la hoja **Azure Information Protection**. 
+    
+    Por ejemplo, en el menú del concentrador, haga clic en **Examinar** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
-3. En la hoja **Azure Information Protection**, seleccione la etiqueta que quiere cambiar, realice los cambios en la hoja **Etiqueta** y en otras hojas, si es necesario.
+2. En la hoja **Azure Information Protection**, seleccione la etiqueta que quiere cambiar, realice los cambios en la hoja **Etiqueta** y en otras hojas, si es necesario.
 
     La excepción es si quiere cambiar el orden de una etiqueta. Esto lo puede hacer en la misma hoja **Azure Information Protection**; para ello, haga clic con el botón derecho en la etiqueta o seleccione el menú contextual de la etiqueta y haga clic en las opciones **Subir** o **Bajar**.
 
-4. Siempre que realice cambios en una hoja, haga clic en **Guardar** en esa hoja si desea conservar los cambios.
+3. Siempre que realice cambios en una hoja, haga clic en **Guardar** en esa hoja si desea conservar los cambios.
 
-5. Para que los cambios estén disponibles para los usuarios, en la hoja **Azure Information Protection**, haga clic en **Publicar**.
+4. Para que los cambios estén disponibles para los usuarios, en la hoja **Azure Information Protection**, haga clic en **Publicar**.
 
 > [!TIP]
 >Si quiere que alguna de las etiquetas vuelva a su valores predeterminados, use la información de [La directiva de Information Protection](configure-policy-default.md).
@@ -53,6 +53,6 @@ Para más información sobre las opciones que puede cambiar para una etiqueta, a
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

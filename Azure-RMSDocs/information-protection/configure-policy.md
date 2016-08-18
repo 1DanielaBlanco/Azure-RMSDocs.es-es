@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/22/2016
+ms.date: 08/08/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: d4b0685176407fe3a0ff14408a1381e960033afe
+ms.sourcegitcommit: 781632c5a28377339431cd6537b1b9e11d0a3259
+ms.openlocfilehash: 0e31053a83c30d8552cfb78914d0d13baac25f42
 
 
 ---
@@ -31,7 +31,7 @@ Para configurar la directiva de Azure Information Protection durante la versión
 
 1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
 
-2. En el menú del concentrador, haga clic en **Examinar** y comience a escribir **Information Protection** en el cuadro Filtro. De los resultados, seleccione **Azure Information Protection**. 
+2. Vaya a la hoja **Azure Information Protection**: por ejemplo, en el menú del concentrador, haga clic en **Examinar** y comience a escribir **Information Protection** en el cuadro Filtro. De los resultados, seleccione **Azure Information Protection**. 
 
     A continuación, verá la hoja **Azure Information Protection** donde puede configurar la directiva de Azure Information Protection que contiene los siguientes elementos:
 
@@ -81,6 +81,6 @@ Para ver un ejemplo de cómo personalizar la directiva predeterminada y ver el c
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

@@ -20,11 +20,12 @@
 ### [Eliminación o cambio de orden de una etiqueta](configure-policy-delete-reorder.md)
 ### [Cambio de una etiqueta](configure-policy-change-label.md)
 ### [Aplicación de protección](configure-policy-protection.md)
+#### [Restricciones de HYOK](configure-adrms-restrictions.md)
 ### [Configuración de marcas visuales](configure-policy-markings.md)
 ### [Configuración de condiciones](configure-policy-classification.md)
 ## [Instalación del cliente](info-protect-client.md)
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 
