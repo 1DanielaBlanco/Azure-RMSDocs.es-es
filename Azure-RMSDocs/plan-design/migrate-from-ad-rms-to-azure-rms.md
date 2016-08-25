@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
-ms.openlocfilehash: 8ef46d68594a6e559e050f846a844f566ff8770d
+ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
+ms.openlocfilehash: 65371b9a3b210743fc160dbad38333ccb12671e6
 
 
 ---
@@ -35,30 +35,31 @@ Use el siguiente conjunto de instrucciones para migrar su implementación de Act
 Antes de iniciar la migración a Azure RMS, asegúrese de que se cumplen los siguientes requisitos previos y de que conoce las limitaciones.
 
 
-- **Una implementación de RMS compatible**
+- **Una implementación de RMS compatible:**
+    
+    - Las siguientes versiones de AD RMS son compatibles con una migración a Azure RMS:
+    
+        - Windows Server 2008 R2 (x64)
+        
+        - Windows Server 2012 (x64)
+        
+        - Windows Server 2012 R2 (x64)
+        
+    - Modo criptográfico 2:
+    
+        - Es necesario que los servidores y los clientes de AD RMS se ejecuten en el modo criptográfico 2 antes de iniciar la migración a Azure RMS. Para obtener más información, vea [AD RMS Cryptographic Modes](https://technet.microsoft.com/library/hh867439(v=ws.10).aspx) (Modos criptográficos de AD RMS).
+        
+    - Se admiten todas las topologías de AD RMS válidas:
+    
+        - Bosque único, un solo clúster de RMS
+        
+        - Bosque único, varios clústeres de RMS solo con licencias
+        
+        - Varios bosques, varios clústeres de RMS
+        
+    Nota: De forma predeterminada, varios clústeres de RMS se migran a un único inquilino de Azure RMS. Si quiere usar inquilinos de Azure RMS independientes, tendrá que considerarlos como migraciones diferentes. No se puede importar una clave de un clúster de RMS a más de un inquilino de Azure RMS.
 
-    Todas las versiones de Windows Server 2008 a Windows Server 2012 R2 de AD RMS admiten una migración a Azure RMS:
-
-    - Windows Server 2008 (x86 o x64)
-
-    - Windows Server 2008 R2 (x64)
-
-    - Windows Server 2012 (x64)
-
-    - Windows Server 2012 R2 (x64)
-
-    Se admiten todas las topologías de AD RMS válidas:
-
-    - Bosque único, un solo clúster de RMS
-
-    - Bosque único, varios clústeres de RMS solo con licencias
-
-    - Varios bosques, varios clústeres de RMS
-
-    **Nota**: de forma predeterminada, varios clústeres de RMS se migran a un solo inquilino de Azure RMS. Si desea distintos inquilinos de RMS, debe tratarlos como migraciones diferentes. No se puede importar una clave de un clúster de RMS a más de un inquilino de Azure RMS.
-
-
-- **Todos los requisitos para ejecutar Azure RMS, lo que incluye un inquilino de Azure RMS (no activado)**
+- **Todos los requisitos para ejecutar Azure RMS, incluido un inquilino de Azure RMS (no activado):**
 
     Consulte [Requisitos de Azure Rights Management](../get-started/requirements-azure-rms.md).
 
@@ -82,6 +83,10 @@ Antes de iniciar la migración a Azure RMS, asegúrese de que se cumplen los sig
 
     Se trata de la única interrupción del servicio durante el proceso de migración.
 
+- **Si quiere administrar su propia clave de inquilino de Azure RMS con una clave protegida por HSM**:
+
+    - Para esta configuración opcional se necesita el Almacén de claves de Azure y una suscripción de Azure compatible con un almacén de claves con claves protegidas por HSM. Para obtener más información, consulte la [página de precios del Almacén de claves de Azure](https://azure.microsoft.com/en-us/pricing/details/key-vault/). 
+
 
 Limitaciones:
 
@@ -100,7 +105,7 @@ Limitaciones:
 ## Introducción de los pasos de migración de AD RMS a Azure RMS
 
 
-Los 9 pasos de migración se pueden dividir en 4 fases que se pueden realizar en momentos diferentes y por distintos administradores.
+Los pasos de migración se pueden dividir en cuatro fases que se pueden realizar en momentos diferentes y por distintos administradores.
 
 [**FASE 1: CONFIGURACIÓN DEL LADO SERVIDOR PARA AD RMS**](migrate-from-ad-rms-phase1.md)
 
@@ -118,11 +123,11 @@ Los 9 pasos de migración se pueden dividir en 4 fases que se pueden realizar en
 
     - **Migración entre claves protegidas por HSM**:
 
-        De claves almacenadas por un módulo de seguridad de hardware (HSM) para AD RMS a clave de inquilino de Azure RMS administrada por el cliente (el escenario "aporte su propia clave" o BYOK). Esto requiere pasos adicionales para transferir la clave de HSM de Thales local a HSM de Azure RMS. Su clave protegida por HSM existente debe tener la protección del módulo; el conjunto de herramientas de BYOK no admite las claves protegidas por OCS.
+        De claves almacenadas por un módulo de seguridad de hardware (HSM) para AD RMS a clave de inquilino de Azure RMS administrada por el cliente (el escenario "aporte su propia clave" o BYOK). Para completar este procedimiento es necesario realizar pasos adicionales para transferir la clave desde el HSM de Thales local al Almacén de claves de Azure y autorizar a Azure RMS a usar esta clave. Su clave protegida por HSM existente tiene que estar protegida por módulo, ya que Rights Management Services no admite las claves protegidas por OCS.
 
     - **Migración de clave protegida por software a clave protegida por HSM**:
 
-        Claves basadas en contraseña administradas centralmente en AD RMS para la clave del inquilino de Azure RMS administrada por clientes (el escenario "bring your own key" o "BYOK"). Aquí es necesario realizar la mayor parte de la configuración, porque debe extraer primero la clave de software e importarla a un HSM local y, a continuación, realizar los pasos adicionales para transferir la clave del HSM local de Thales al HSM de Azure RMS.
+        Claves basadas en contraseña administradas centralmente en AD RMS para la clave del inquilino de Azure RMS administrada por clientes (el escenario "bring your own key" o "BYOK"). Este procedimiento es el que necesita más configuraciones, ya que primero hay que extraer la clave de software e importarla en un HSM local y, después, completar los pasos adicionales para transferir la clave desde el HSM de Thales a un HSM del Almacén de claves de Azure y autorizar a Azure RMS a usar el almacén de claves donde se almacena la clave.
 
 - **Paso 3: Activación del inquilino de Azure RMS**
 
@@ -171,7 +176,7 @@ Los 9 pasos de migración se pueden dividir en 4 fases que se pueden realizar en
 
 - **Paso 9: Regeneración de la clave del inquilino de Azure RMS**
 
-    Este paso es necesario si no estaba realizando la ejecución en modo criptográfico 2 antes de la migración y es opcional pero recomendado para que todas las migraciones ayuden a proteger la seguridad de la clave de inquilino de Azure RMS.
+    Aunque este paso es opcional, se recomienda completarlo si la topología de claves de inquilino de Azure RMS que ha elegido en el paso 2 es administrada por Microsoft. Este paso no es válido si la topología de claves de inquilino de Azure RMS que ha elegido es administrada por el cliente (BYOK).
 
 
 ## Pasos siguientes
@@ -180,6 +185,6 @@ Para iniciar la migración, vaya a [Fase 1: Configuración del lado servidor](mi
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 

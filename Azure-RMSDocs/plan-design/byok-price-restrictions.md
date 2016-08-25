@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 34d5ed8ca9f5b4556429a081718fc70a789590aa
+ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
+ms.openlocfilehash: ece615912d69eda78107c60245620ed36c0affd2
 
 
 ---
@@ -24,7 +24,9 @@ ms.openlocfilehash: 34d5ed8ca9f5b4556429a081718fc70a789590aa
 *Se aplica a: Azure Rights Management, Office 365*
 
 
-Las organizaciones que tienen una suscripción a Azure administrada por TI pueden usar BYOK y registrar su uso sin cargos adicionales. Las organizaciones que usan RMS para usuarios no pueden utilizar BYOK ni el registro, porque no tienen un administrador inquilino para configurar estas características.
+Las organizaciones que tienen una suscripción con Azure Rights Management pueden usar claves administradas por el cliente (BYOK) en el Almacén de claves de Azure y registrar su uso sin costo adicional. Sin embargo, para usar el Almacén de claves de Azure, es necesario tener una suscripción de Azure compatible con los almacenes de claves con claves protegidas por HSM. El uso de las claves en el Almacén de claves de Azure conlleva un cargo mensual. Para obtener más información, consulte la [página de precios del Almacén de claves de Azure](https://azure.microsoft.com/en-us/pricing/details/key-vault/).
+
+Si tiene usuarios que se han registrado para obtener una cuenta gratuita de RMS de uso personal, no podrá usar BYOK ni los registros de uso, ya que esta configuración no tiene un administrador de inquilinos para configurar estas características.
 
 
 > [!NOTE]
@@ -32,9 +34,9 @@ Las organizaciones que tienen una suscripción a Azure administrada por TI puede
 
 ![BYOK no es compatible con Exchange Online.](../media/RMS_BYOK_noExchange.png)
 
-BYOK y el registro funcionan sin problemas con todas las aplicaciones que se integran con Azure RMS. Aquí se incluyen servicios en la nube, como SharePoint Online, servidores locales que ejecutan Exchange y SharePoint que funcionan con Azure RMS mediante el conector RMS y aplicaciones cliente como Office 2013. Obtendrá los registros de uso de claves independientemente de la aplicación que realiza solicitudes de Azure RMS.
+BYOK y los registros de uso funcionan sin ningún problema con todas las aplicaciones que se integran con Azure RMS. Aquí se incluyen servicios en la nube, como SharePoint Online, servidores locales que ejecutan Exchange y SharePoint y que funcionan con Azure RMS a través del conector RMS y de aplicaciones cliente como Office 2013 y Office 2016. Obtendrá los registros de uso de claves independientemente de la aplicación que realiza solicitudes de Azure RMS.
 
-Existe una sola excepción: Actualmente, **BYOK de Azure RMS no es compatible con Exchange Online**.  Si usa Exchange Online, se recomienda implementar ahora Azure RMS en el modo de administración de claves predeterminado, donde Microsoft genera y administra su clave. Tiene la opción de pasar a BYOK más adelante, por ejemplo, cuando Exchange Online no sea compatible con BYOK de Azure RMS. Sin embargo, si no puede esperar, otra opción es implementar Azure RMS con BYOK ahora, con funcionalidad reducida de RMS para Exchange Online (los correos electrónicos y datos adjuntos desprotegidos permanecen completamente funcionales):
+Existe una sola excepción: Actualmente, **BYOK de Azure RMS no es compatible con Exchange Online**. Si usa Exchange Online, se recomienda implementar ahora Azure RMS en el modo de administración de claves predeterminado, donde Microsoft genera y administra su clave. Tiene la opción de pasar a BYOK más adelante, por ejemplo, cuando Exchange Online no sea compatible con BYOK de Azure RMS. Sin embargo, si no puede esperar, otra opción es implementar Azure RMS con BYOK ahora, con funcionalidad reducida de RMS para Exchange Online (los correos electrónicos y datos adjuntos desprotegidos permanecen completamente funcionales):
 
 -   No se pueden mostrar los mensajes de correo electrónico o los datos adjuntos protegidos en Outlook Web Access.
 
@@ -48,7 +50,7 @@ Existe una sola excepción: Actualmente, **BYOK de Azure RMS no es compatible co
 
 Cuando usa BYOK de Azure RMS con funcionalidad reducida de RMS para Exchange Online, RMS funcionará con los clientes de correo electrónico de Outlook en Windows y Mac y en otros clientes de correo electrónico que no usan Exchange ActiveSync IRM.
 
-Si va a migrar a Azure RMS desde AD RMS, puede que haya importado la clave como un dominio de publicación de confianza (TPD) a Exchange Online (también denominado BYOK en la terminología de Exchange, que es independiente de Azure RMS BYOK). En este escenario, debe quitar el TDP de Exchange Online para evitar conflictos de plantillas y directivas. Para más información, consulte [Remove-RMSTrustedPublishingDomain](https://technet.microsoft.com/library/jj200720%28v=exchg.150%29.aspx) en la biblioteca de cmdlets de Exchange Online.
+Si realiza la migración a Azure RMS desde AD RMS, puede que haya importado la clave como un dominio de publicación de confianza (TPD) en Exchange Online (también denominado BYOK en la terminología de Exchange, que es independiente de BYOK del Almacén de claves de Azure). En este escenario, debe quitar el TDP de Exchange Online para evitar conflictos de plantillas y directivas. Para más información, consulte [Remove-RMSTrustedPublishingDomain](https://technet.microsoft.com/library/jj200720%28v=exchg.150%29.aspx) en la biblioteca de cmdlets de Exchange Online.
 
 A veces, la excepción de BYOK de Azure RMS para Exchange Online no es un problema en la práctica. Por ejemplo, las organizaciones que necesitan que BYOK y el registro ejecuten sus aplicaciones de datos (Exchange, SharePoint, Office) localmente y usan Azure RMS para funcionalidades que no son compatibles fácilmente con AD RMS local (por ejemplo, colaboración con otras compañías y acceso desde clientes móviles). BYOK y el registro funcionan bien en este escenario y permiten a la organización tomar el control completo sobre su suscripción de Azure RMS.
 
@@ -61,6 +63,6 @@ Si ha decidido permanecer con la configuración predeterminada con la que Micros
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 
