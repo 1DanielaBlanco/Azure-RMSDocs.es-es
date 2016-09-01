@@ -3,15 +3,15 @@ title: "Configuración de una etiqueta para marcas visuales de Azure Information
 description: 
 author: cabailey
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
 translationtype: Human Translation
-ms.sourcegitcommit: b2263c212a1b869b778767493645f10ad821828f
-ms.openlocfilehash: 78b68c7a502776c6492437e9b8a5c3f1ebf27f95
+ms.sourcegitcommit: b5e7fecca7aeb61221dc1f61aa3e202936b8c042
+ms.openlocfilehash: 2b4f464fa51e0743cb1ce0726c7feb31146b5128
 
 
 ---
@@ -60,17 +60,19 @@ Utilice las siguientes instrucciones para configurar las marcas visuales para un
 
 Puede usar las siguientes variables en la cadena de texto del encabezado, del pie de página o de la marca de agua:
 
-- `${Item.Label}` para la etiqueta seleccionada
+- `${Item.Label}` para la etiqueta seleccionada. Por ejemplo: interno
 
-- `${Item.Name}` para el asunto de correo electrónico o nombre de archivo
+- `${Item.Name}` para el asunto de correo electrónico o nombre de archivo. Por ejemplo: VentasJulio.docx
 
-- `${Item.Location}` para la ruta del archivo
+- `${Item.Location}` para la ruta de acceso y el nombre de archivo de documentos, así como el asunto de los correos electrónicos. Por ejemplo: \\\Ventas\2016\T3\InformeJulio.docx
 
-- `${User.Name}` para el propietario del documento o correo electrónico
+- `${User.Name}` para el propietario del documento o correo electrónico, por el nombre de usuario que haya iniciado sesión en Windows. Por ejemplo: rsimone
 
-- `${Event.DateTime}` para la fecha y hora en que se ha establecido la etiqueta seleccionada 
+- `${User.PrincipalName}` para el propietario del documento o correo electrónico, por la dirección de correo electrónico (UPN) que haya iniciado sesión en el cliente de Azure Information Protection. Por ejemplo: rsimone@vanarsdelltd.com
+
+- `${Event.DateTime}` para la fecha y hora en que se haya configurado la etiqueta seleccionada. Por ejemplo: 16/08/2016 13:30
     
-Ejemplo: Si especifica la cadena `Document: ${item.name} Sensitivity: ${item.label}` en el pie de página de la etiqueta Secreto, el texto del pie de página aplicado a un documento denominado project.docx será **Documento: project.docx Confidencialidad: secreto**.
+Ejemplo: si especifica la cadena `Document: ${item.name}  Classification: ${item.label}` en el pie de página de la etiqueta Secreto, el texto de pie de página aplicado a un documento denominado proyecto.docx será **Documento: proyecto.docx Clasificación: secreto**.
 
 ## Pasos siguientes
 
@@ -80,6 +82,6 @@ Para más información sobre cómo configurar la directiva de Azure Information 
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO3-->
 
 

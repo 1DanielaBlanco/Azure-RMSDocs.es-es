@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 81a5cf4f-c1f3-44a9-ad42-66e95f33ed27
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bb152f428c8e0b9a065035aaad2de6353265a562
-ms.openlocfilehash: a739da3fbebc8dfa4c6715fd64ccd72f87d2a686
+ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
+ms.openlocfilehash: 9cd66efad548a4ddef4e6032b0ce7fc817a95c31
 
 
 ---
@@ -33,7 +33,7 @@ Utilice el siguiente procedimiento para importar la configuración de AD RMS a A
 
 ## Para importar los datos de configuración a Azure RMS
 
-1.  En una estación de trabajo conectada a Internet, descargue e instale el módulo de Windows PowerShell para Azure RMS (versión mínima 2.1.0.0), que incluye el cmdlet [Import-AadrmTpd](http://msdn.microsoft.com/library/azure/dn857523.aspx).
+1.  En una estación de trabajo conectada a Internet, descargue e instale el módulo de Windows PowerShell para Azure RMS (versión mínima 2.5.0.0), donde se incluye el cmdlet [Import-AadrmTpd](http://msdn.microsoft.com/library/azure/dn857523.aspx).
 
     > [!TIP]
     > Si ya ha descargado e instalado el módulo anteriormente, compruebe el número de versión. Para ello, ejecute: `(Get-Module aadrm -ListAvailable).Version`
@@ -56,7 +56,7 @@ Utilice el siguiente procedimiento para importar la configuración de AD RMS a A
 
     Cuando se le pida, escriba la contraseña que especificó anteriormente y confirme que desea realizar esta acción.
 
-4.  Cuando se haya completado el comando, repita el paso 3 en cada archivo .xml restante que se creó mediante la exportación de los dominios de publicación de confianza. Sin embargo, en el caso de estos archivos, establezca **-Active** en **false** al ejecutar el comando Import. Por ejemplo: **Import-AadrmTpd -TpdFile E:\contosokey2.xml -ProtectionPassword -Active $false -Verbose**
+4.  Cuando se complete el comando, repita el paso 3 por cada archivo .xml restante que haya creado al exportar los dominios de publicación de confianza. Sin embargo, en el caso de estos archivos, establezca **-Active** en **false** al ejecutar el comando Import. Por ejemplo: **Import-AadrmTpd -TpdFile E:\contosokey2.xml -ProtectionPassword -Active $false -Verbose**
 
 5.  Use el cmdlet [Disconnect-AadrmService](http://msdn.microsoft.com/library/azure/dn629416.aspx) para desconectarse del servicio Azure RMS:
 
@@ -64,11 +64,13 @@ Utilice el siguiente procedimiento para importar la configuración de AD RMS a A
     Disconnect-AadrmService
     ```
 
+
 Ahora puede ir al [paso 3. Active el inquilino de RMS](migrate-from-ad-rms-phase1.md#step-3-activate-your-rms-tenant).
 
 
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO3-->
 
 

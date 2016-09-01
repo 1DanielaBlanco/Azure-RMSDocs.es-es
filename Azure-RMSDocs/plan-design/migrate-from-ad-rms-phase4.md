@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/29/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ea4dd88ed749092fd02135d8ca25b621f74fe72f
-ms.openlocfilehash: 7ed3569475362272ace055862fe8bb3ee072036a
+ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
+ms.openlocfilehash: 21fac7d684f2d544ab97f5ca6eb7faaaca3e9d26
 
 
 ---
@@ -36,25 +36,24 @@ Supervise la actividad de los servidores de AD RMS. Para ello, por ejemplo, comp
 Después de retirar los servidores de AD RMS, seguramente le interese revisar las plantillas en el Portal de Azure clásico y consolidarlas para que los usuarios tengan menos opciones entre las que elegir, volver a configurarlas o incluso agregar plantillas nuevas. También sería una buena oportunidad para publicar las plantillas predeterminadas. Para más información, consulte [Configuración de plantillas personalizadas para Azure Rights Management](../deploy-use/configure-custom-templates.md).
 
 ## Step 9. Vuelva a escribir su clave de inquilino de Azure RMS.
-Este paso es necesario cuando la migración está completa si la implementación de AD RMS usaba el modo criptográfico 1 de RMS, porque al volver a generar la clave se crea una nueva clave de inquilino que usa el modo criptográfico 2 de RMS. Se admite el uso de Azure RMS con el modo criptográfico 1 únicamente durante el proceso de migración.
+Este paso solo es válido si la topología de claves de inquilino que ha elegido es administrada por Microsoft, en lugar de ser administrada por el cliente (BYOK con el Almacén de claves de Azure).
 
-Este paso es opcional pero se recomienda cuando la migración se ha completado incluso si estuviera ejecutando el modo criptográfico 2 de RMS, porque ayuda a proteger la clave de inquilino de Azure RMS de posibles infracciones de seguridad para su clave de AD RMS. Si vuelve a definir la clave del inquilino de Azure RMS (lo que también se conoce como "revertir su clave"), se crea una nueva clave y se archiva la clave original. Sin embargo, dado que el paso de una clave a otra no es inmediato sino que requiere unas cuantas semanas, no espere hasta sospechar de una infracción de la clave original y vuelva a definir la clave de inquilino de Azure RMS en cuanto se complete la migración.
+Aunque este paso es opcional, se recomienda completarlo cuando la clave de inquilino de Azure RMS es administrada por Microsoft y se ha migrado desde AD RMS. En este escenario, si vuelve a generar la clave, protegerá su clave de inquilino de Azure RMS ante posibles infracciones de seguridad en la clave de AD RMS.
 
-Vuelva a definir la clave del inquilino de Azure RMS:
+Si vuelve a definir la clave del inquilino de Azure RMS (lo que también se conoce como "revertir su clave"), se crea una nueva clave y se archiva la clave original. Sin embargo, dado que el paso de una clave a otra no es inmediato sino que requiere unas cuantas semanas, no espere hasta sospechar de una infracción de la clave original y vuelva a definir la clave de inquilino de Azure RMS en cuanto se complete la migración.
 
--   Si Microsoft administra su clave de inquilino de Azure RMS: para hacer esto, [póngase en contacto con el soporte técnico de Microsoft](../get-started/information-support.md#to-contact-microsoft-support) para abrir un **caso de soporte técnico de Azure Rights Management con una solicitud para volver a escribir la clave de inquilino de Azure RMS**. Debe demostrar que es un administrador del inquilino de Azure RMS y comprender que este proceso tarda varios días en confirmarse. Se aplican cargos de soporte técnico Standard; la acción de volver a escribir la clave de inquilino no es un servicio de soporte técnico gratuito.
+Para volver a generar la clave de inquilino de Azure RMS administrada por Microsoft, [póngase en contacto con el soporte técnico de Microsoft](../get-started/information-support.md#to-contact-microsoft-support) y abra una **incidencia de soporte técnico de Azure Rights Management para solicitar que se vuelva a generar la clave de Azure RMS después de la migración desde AD RMS**. Debe demostrar que es un administrador del inquilino de Azure RMS y comprender que este proceso tarda varios días en confirmarse. Se aplican cargos de soporte técnico Standard; la acción de volver a escribir la clave de inquilino no es un servicio de soporte técnico gratuito.
 
--   Si el usuario (BYOK) administra la clave de inquilino de Azure RMS: repita el procedimiento BYOK para generar y crear una nueva clave a través de Internet o en persona.
-
-Para obtener más información sobre cómo administrar la clave de inquilino de Azure RMS, vea [Operations for Your Azure Rights Management Tenant Key (Operaciones para la clave de inquilino de Azure Rights Management)](../deploy-use/operations-tenant-key.md).
 
 ## Pasos siguientes
+
+Para obtener más información sobre cómo administrar la clave de inquilino de RMS, vea [Operaciones para la clave de inquilino de Azure Rights Management](../deploy-use/operations-tenant-key.md).
 
 Ahora que ha completado la migración, revise el [mapa de ruta de implementación](deployment-roadmap.md) para identificar las tareas de implementación que necesite realizar.
 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 
