@@ -3,15 +3,15 @@ title: "Configuración de una etiqueta para aplicar protección de Rights Manage
 description: 
 author: cabailey
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 08/15/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
 translationtype: Human Translation
-ms.sourcegitcommit: b2263c212a1b869b778767493645f10ad821828f
-ms.openlocfilehash: 798fb423ff8dab3e9777a33e7b2c483bceb81016
+ms.sourcegitcommit: e11a5a836d6a410ba49ac17cfe95d8530ecb785f
+ms.openlocfilehash: 60738c310a3e7c734bfe3e48e16535ed3be05bb4
 
 
 ---
@@ -63,11 +63,15 @@ Para más información sobre Azure Rights Management y cómo funciona, consulte 
     > [!NOTE] 
     > Si crea una nueva plantilla después de abrir la hoja **Etiqueta**, cierre esta hoja y vuelva al paso 2, así la plantilla recién creada se recuperará de Azure para que la seleccione.
     
-5. Si ha seleccionado AD RMS: proporcione el GUID de la plantilla y la dirección URL de administración de licencias del clúster de AD RMS.
+    Tenga en cuenta lo siguiente si selecciona una plantilla de departamento o si configura los [controles de incorporación](../deploy-use/activate-service.md#configuring-onboarding-controls-for-a-phased-deployment):
+    
+    - Los usuarios que estén fuera del ámbito configurado de la plantilla o que se excluyan al aplicar la protección de Azure Rights Management seguirán viendo la etiqueta, pero no podrán aplicarla. Si seleccionan la etiqueta, verán el mensaje siguiente: **Azure Information Protection no puede aplicar esta etiqueta. Si el problema persiste, póngase en contacto con el administrador.**
+    
+5. Si ha seleccionado AD RMS: proporcione el GUID de la plantilla y la dirección URL de administración de licencias del clúster de AD RMS. [Más información](configure-adrms-restrictions.md#locating-the-information-to-specify-ad-rms-protection-with-an-azure-information-protection-label)
 
-5. Haga clic en **Guardar**.
+6. Haga clic en **Guardar**.
 
-6. Para que los cambios estén disponibles para los usuarios, en la hoja **Azure Information Protection**, haga clic en **Publicar**.
+7. Para que los cambios estén disponibles para los usuarios, en la hoja **Azure Information Protection**, haga clic en **Publicar**.
 
 ## Pasos siguientes
 
@@ -75,6 +79,6 @@ Para más información sobre cómo configurar la directiva de Azure Information 
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO3-->
 
 
