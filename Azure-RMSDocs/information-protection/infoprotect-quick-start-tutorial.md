@@ -3,15 +3,15 @@ title: "Tutorial de inicio rápido de Azure Information Protection | Azure Right
 description: "Un tutorial introductorio rápido para probar Microsoft Azure Information Protection para su organización en solo 4 pasos que deberían tardar menos de 15 minutos."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 08/22/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
 translationtype: Human Translation
-ms.sourcegitcommit: 7d599aef75272eff5527294141bb0eb98d041b1b
-ms.openlocfilehash: 419bfcde6915bd6c8db9cf5ddb268f6d70c83768
+ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
+ms.openlocfilehash: 6fbe4bd32f1aef57b3bf42aeedea46f618fb5540
 
 
 ---
@@ -31,7 +31,7 @@ Si tiene algún problema para seguir este tutorial, para usar la versión prelim
 ## Requisitos previos 
 Para completar este tutorial, necesitará lo siguiente:
 
-- Cualquier suscripción que incluya Azure Rights Management, que le dará acceso a la versión preliminar de Azure Information Protection. Azure Information Protection está disponible en todas las regiones en las que se admite Azure Rights Management. Para obtener más información sobre las suscripciones y los vínculos disponibles para las pruebas gratuitas, vea [Requisitos de Azure RMS: Suscripciones en la nube que son compatibles con Azure RMS](../get-started/requirements-subscriptions.md).
+- Una suscripción de Office 365 que incluye la protección de documentos de Office y correos electrónicos con Azure RMS. Para obtener más información sobre las suscripciones y los vínculos disponibles para las pruebas gratuitas, vea la sección [Suscripción de Office 365](../get-started/requirements-subscriptions.md#office-365-subscription) de la documentación de requisitos de Azure RMS.
 
 - Una suscripción a Azure, para que pueda obtener acceso al portal de Azure para configurar la directiva de Azure Information Protection. Si todavía no dispone de una suscripción a Azure para su organización, puede obtener una registrándose a una prueba gratuita: vaya a la página [Introducción a Azure](https://account.windowsazure.com/organization) y siga las instrucciones.
 
@@ -51,6 +51,6 @@ Comencemos.
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

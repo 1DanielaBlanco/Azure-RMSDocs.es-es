@@ -1,27 +1,26 @@
 ---
 title: "Retirada y desactivación de Azure Rights Management | Azure RMS"
-description: 
-keywords: 
+description: "Usted siempre es quien controla que su organización proteja el contenido mediante (Azure RMS), y si decide dejar de usar esta solución de protección de la información, puede tener la certeza de que no se le bloqueará el acceso al contenido que anteriormente se protegió. Si ya no necesita tener acceso continuo al contenido protegido con anterioridad, simplemente desactive el servicio y deje que su suscripción a Azure Rights Management expire. Por ejemplo, cuando haya completado la evaluación, antes de implementarlo en un entorno de producción."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 0b1c2064-0d01-45ae-a541-cebd7fd762ad
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 8c114336551417fdbf1503ffc8350e3fc28e9c95
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 40e4997f67a078ec781f1e7800599554858777a8
 
 
 ---
 
 # Retirada y desactivación de Azure Rights Management
 
-*Se aplica a: Azure Rights Management, Office 365*
+>*Se aplica a: Azure Rights Management, Office 365*
 
 Usted siempre es quien controla que su organización proteja el contenido mediante [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS), y si decide dejar de usar esta solución de protección de la información, puede tener la certeza de que no se le bloqueará el acceso al contenido que anteriormente se protegió. Si ya no necesita tener acceso continuo al contenido protegido con anterioridad, simplemente desactive el servicio y deje que su suscripción a Azure Rights Management expire. Por ejemplo, cuando haya completado la evaluación de [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)], antes de implementarlo en un entorno de producción.
 
@@ -92,6 +91,6 @@ El **ESTADO DE RIGHTS MANAGEMENT** debe indicar ahora **Inactivo** y la opción 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

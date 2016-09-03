@@ -1,27 +1,26 @@
 ---
 title: "Otras aplicaciones compatibles con las API de RMS: Instalación y configuración | Azure RMS"
-description: 
-keywords: 
+description: "Utilice la siguiente información para ayudarle a entender cómo Azure Rights Management (Azure RMS) puede admitir otras aplicaciones para proteger los datos de su organización."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c50a8cbb-d12f-4a0e-bc29-74c463e6ac3e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: bb69cda94bf611712eb5b4a74d9ec25d1749da3a
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: d94494160df269d6a583c3152769f84ec51f886e
 
 
 ---
 
 # Otras aplicaciones compatibles con las API de RMS
 
-*Se aplica a: Azure Rights Management, Office 365*
+>*Se aplica a: Azure Rights Management, Office 365*
 
 Utilice la siguiente información para ayudarle a entender cómo Azure Rights Management (Azure RMS) puede admitir otras aplicaciones para proteger los datos de su organización.
 
@@ -34,6 +33,6 @@ De forma parecida, muchos proveedores de software suministran aplicaciones que o
 Para ver la compatibilidad de otras aplicaciones y servicios con Azure Rights Management, consulte [Compatibilidad de las aplicaciones con Azure Rights Management](applications-support.md).
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

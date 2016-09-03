@@ -1,27 +1,26 @@
 ---
 title: "Introducción a Azure Rights Management | Azure RMS"
-description: 
-keywords: 
+description: "Microsoft Azure Rights Management (Azure RMS) le ayuda a proteger la información confidencial de su organización contra el acceso no autorizado y a controlar cómo se usa dicha información. Azure Rights Management es un servicio en la nube y se integra en otros servicios en la nube de Microsoft y en las aplicaciones tales como Office 365 y Azure Active Directory. También lo puede usar con sus propias aplicaciones de línea de negocio y soluciones de protección de información de proveedores de software, tanto si estas aplicaciones y soluciones son locales como en la nube."
 author: cabailey
 manager: mbaldwin
-ms.date: 05/03/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 965581c8-be3c-43b4-8145-5cefd29c7636
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fdedb0f1064e98500d3b4edcee283c514851d446
-ms.openlocfilehash: a8c9a55977a285cd30872beeb160b07ce02edcce
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 9d6c68c01cbd410def904f7cf256ffe9a5a5417b
 
 
 ---
 
 # Introducción a Azure Rights Management
 
-*Se aplica a: Azure Rights Management, Office 365*
+>*Se aplica a: Azure Rights Management, Office 365*
 
 Microsoft Azure Rights Management (Azure RMS) le ayuda a proteger la información confidencial de su organización contra el acceso no autorizado y a controlar cómo se usa dicha información. Azure Rights Management es un servicio en la nube y se integra en otros servicios en la nube de Microsoft y en las aplicaciones tales como Office 365 y Azure Active Directory. También lo puede usar con sus propias aplicaciones de línea de negocio y soluciones de protección de información de proveedores de software, tanto si estas aplicaciones y soluciones son locales como en la nube. 
 
@@ -40,6 +39,6 @@ Si está listo para implementar Azure RMS para su organización, use [Plan para 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

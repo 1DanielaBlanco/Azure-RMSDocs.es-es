@@ -1,27 +1,26 @@
 ---
 title: "Paso 2&colon; Migración de clave protegida por software a clave protegida por HSM | Azure RMS"
-description: 
-keywords: 
+description: "Estas instrucciones forman parte de la ruta de migración de AD RMS a Azure Rights Management y solo son válidas si la clave de AD RMS está protegida por software y quiere migrar a Azure Rights Management con una clave de inquilino protegida por HSM en el Almacén de claves de Azure."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/17/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c5f4c6ea-fd2a-423a-9fcb-07671b3c2f4f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
-ms.openlocfilehash: bd93e781da7dc34c18e236a90a03dbc8fb012a1c
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: e470b5b5542536e812749f77353aaf34922d4985
 
 
 ---
 
 # Paso 2: Migración de clave protegida por software a clave protegida por HSM
 
-*Se aplica a: Active Directory Rights Management Services, Azure Rights Management*
+>*Se aplica a: Active Directory Rights Management Services, Azure Rights Management*
 
 
 Estas instrucciones forman parte de la [ruta de migración de AD RMS a Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md) y solo son válidas si la clave de AD RMS está protegida por software y quiere migrar a Azure Rights Management con una clave de inquilino protegida por HSM en el Almacén de claves de Azure. 
@@ -164,6 +163,6 @@ Ahora puede ir al [paso 3. Active el inquilino de RMS](migrate-from-ad-rms-phase
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

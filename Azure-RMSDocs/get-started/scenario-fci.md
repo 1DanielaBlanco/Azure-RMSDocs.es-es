@@ -1,33 +1,26 @@
 ---
-# required metadata
-
-title: "Escenario: Proteger archivos en un recurso compartido de servidor de archivos | Azure RMS"
-description:
-keywords:
+title: 'Escenario: Proteger archivos en un recurso compartido de servidor de archivos | Azure RMS'
+description: "En este escenario y en la documentación de usuario correspondiente se usa Azure Rights Management para proteger masivamente todos los archivos que quiere proteger en un servidor de archivos, a fin de procurar que solo los empleados de la organización puedan tener acceso a ellos, incluso si se copian y se guardan en un almacenamiento fuera del control del departamento de TI o se envían por correo electrónico a otros usuarios."
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 283c7db3-5730-439e-a215-40a1088ed506
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: adc8ebd3063d8ac4b3710c517f0177fc25a16845
+
 
 ---
 
 # Escenario: Proteger archivos en un recurso compartido de servidor de archivos
 
-*Se aplica a: Azure Rights Management, Office 365*
+>*Se aplica a: Azure Rights Management, Office 365*
 
 En este escenario y en la documentación de usuario correspondiente se usa Azure Rights Management para proteger masivamente todos los archivos que quiere proteger en un servidor de archivos, a fin de procurar que solo los empleados de la organización puedan tener acceso a ellos, incluso si se copian y se guardan en un almacenamiento fuera del control del departamento de TI o se envían por correo electrónico a otros usuarios.
 
@@ -161,6 +154,7 @@ Cada cierto tiempo, el archivo se volverá a proteger, lo que hace que se agregu
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Aug16_HO4-->
 
 

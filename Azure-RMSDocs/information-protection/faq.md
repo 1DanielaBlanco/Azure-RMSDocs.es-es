@@ -1,20 +1,19 @@
 ---
 title: "Preguntas más frecuentes de Azure Information Protection (versión preliminar) | Azure Information Protection"
-description: 
-keywords: 
+description: "¿Tiene alguna pregunta sobre la versión preliminar de Azure Information Protection? Vea si se ha resuelto aquí."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 08/22/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d17bacf8e148622db0e2393f40d3fd37c8f086eb
-ms.openlocfilehash: c61e299cac50069afc119d37fd461cda88a2afd3
+ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
+ms.openlocfilehash: 55d56786150d38b36ae8185c4a7ac4c8a5c51ba4
 
 
 ---
@@ -57,7 +56,7 @@ Esta versión preliminar tiene las limitaciones siguientes: Busque anuncios en e
 
 ## ¿Qué suscripción necesito para probar Azure Information Protection?
 
-Para la versión preliminar, puede usar cualquier suscripción que incluya Azure Rights Management. Azure Information Protection está disponible en todas las regiones. Para obtener más información sobre las suscripciones y los vínculos disponibles para las pruebas gratuitas, vea [Requisitos de Azure RMS: Suscripciones en la nube que son compatibles con Azure RMS](../get-started/requirements-subscriptions.md).
+Para la vista previa, puede usar cualquier suscripción de Office 365 que incluya la protección de correos electrónicos y documentos de Office mediante Azure Rights Management. Azure Information Protection está disponible en todas las regiones. Para obtener más información sobre las suscripciones y los vínculos disponibles para las pruebas gratuitas, vea la sección [Suscripción de Office 365](../get-started/requirements-subscriptions.md#office-365-subscription) de la documentación de requisitos de Azure RMS.
 
 Para configurar las directivas de Azure Information Protection en el Portal de Azure, debe tener una suscripción de Azure. Si no dispone aún de una suscripción de Azure para su organización, puede obtener una si se registra para una prueba gratuita: vaya a la página [Introducción a Azure](https://account.windowsazure.com/organization) y siga las instrucciones.
 
@@ -188,6 +187,6 @@ Después, visite nuestro [sitio de Yammer](https://www.yammer.com/askipteam/#/th
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

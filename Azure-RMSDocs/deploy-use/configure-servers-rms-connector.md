@@ -1,27 +1,26 @@
 ---
 title: "Configuración de servidores para el conector de Azure Rights Management | Azure RMS"
-description: 
-keywords: 
+description: "Utilice la siguiente información para configurar los servidores locales que utilizarán el conector de Azure Rights Management (RMS). Estos procedimientos incluyen el paso 5 de la implementación del conector de Azure Rights Management."
 author: cabailey
 manager: mbaldwin
 ms.date: 06/08/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0b07ecc88b1d2d344f0984d4a805cc033996cc4d
-ms.openlocfilehash: 79171b5931b69ca18d2a2cbe321d5d5887903da2
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: d2b15dac1f2b2163ff72d80c97ca0d5da44fd13c
 
 
 ---
 
 # Configuración de servidores para el conector de Azure Rights Management
 
-*Se aplica a: Azure Rights Management, Windows Server 2012, Windows Server 2012 R2*
+>*Se aplica a: Azure Rights Management, Windows Server 2012, Windows Server 2012 R2*
 
 
 Utilice la siguiente información para configurar los servidores locales que utilizarán el conector de Azure Rights Management (RMS). Estos procedimientos incluyen el paso 5 de la [implementación del conector de Azure Rights Management](deploy-rms-connector.md).
@@ -219,7 +218,7 @@ Los servidores que ejecutan SharePoint 2010 deben tener instalada una versión d
 ## Configuración de un servidor de archivos para que la Infraestructura de clasificación de archivos use el conector
 Para usar el conector RMS y la Infraestructura de la clasificación de archivos para proteger documentos de Office, el servidor de archivos debe ejecutar uno de los sistemas operativos siguientes:
 
--   Windows Server 2012 R2
+-   Windows Server 2012 R2
 
 -   Windows Server 2012
 
@@ -250,6 +249,6 @@ Para supervisar el conector de RMS, vea [Monitor the Azure Rights Management con
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

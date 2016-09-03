@@ -1,27 +1,26 @@
 ---
 title: "Aplicación Rights Management sharing&colon; Instalación y configuración para clientes | Azure RMS"
-description: 
-keywords: 
+description: "Es precisa la aplicación de uso compartido Rights Management (RMS) para equipos cliente que usen Azure RMS con Office 2010, y se es recomienda para todos los equipos y dispositivos móviles compatibles con Azure RMS. La aplicación de uso compartido RMS se integra con aplicaciones Office mediante la instalación de un complemento Office para que los usuarios puedan proteger fácilmente los archivos y correos electrónicos directamente desde la cinta. También ofrece protección genérica para tipos de archivo que no son compatibles de forma nativa con Azure RMS, y un sitio de seguimiento de documentos para que los usuarios controlen y revoquen los archivos que hayan protegido."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: b9af5dc3-73d4-4147-b7ef-f6803b0d5216
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: d3f923cf6f140c2caa75b7b0c8ac90a42be962a7
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: bf7cd8007b5423efaa13849101af5c4688cf0975
 
 
 ---
 
 # Aplicación de uso compartido Rights Management Instalación y configuración para clientes
 
-*Se aplica a: Azure Rights Management, Office 365*
+>*Se aplica a: Azure Rights Management, Office 365*
 
 Es precisa la aplicación de uso compartido Rights Management (RMS) para equipos cliente que usen Azure RMS con Office 2010, y se es recomienda para todos los equipos y dispositivos móviles compatibles con Azure RMS. La aplicación de uso compartido RMS se integra con aplicaciones Office mediante la instalación de un complemento Office para que los usuarios puedan proteger fácilmente los archivos y correos electrónicos directamente desde la cinta. También ofrece protección genérica para tipos de archivo que no son compatibles de forma nativa con Azure RMS, y un sitio de seguimiento de documentos para que los usuarios controlen y revoquen los archivos que hayan protegido.
 
@@ -43,6 +42,6 @@ Para instalar la aplicación de uso compartido de RMS en plataformas móviles, d
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 
