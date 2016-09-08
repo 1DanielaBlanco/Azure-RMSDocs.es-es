@@ -1,27 +1,26 @@
 ---
 title: "Implementación del conector de Azure Rights Management | Azure RMS"
-description: 
-keywords: 
+description: "Use esta información para aprender más sobre el conector de Azure Rights Management (RMS) y sobre cómo puede usarlo para proporcionar protección de la información con implementaciones locales existentes que usan Microsoft Exchange Server, Microsoft SharePoint Server, o servidores de archivo que ejecutan Windows Server y usan la funcionalidad de la Infraestructura de clasificación de archivos (FCI) del Administrador de recursos del servidor de archivos."
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 90e7e33f-9ecc-497b-89c5-09205ffc5066
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e31656e417a0861d33deb2436d2e4b596a7512a7
-ms.openlocfilehash: 6b9b3b039ba2de0de174a134768afd763d26b5dd
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 003dcc6a000d303fc42204d61145cf067dc16d32
 
 
 ---
 
 # Implementación del conector de Azure Rights Management
 
-*Se aplica a: Azure Rights Management, Windows Server 2012, Windows Server 2012 R2*
+>*Se aplica a: Azure Rights Management, Windows Server 2012, Windows Server 2012 R2*
 
 Use esta información para aprender más sobre el conector de Azure Rights Management (RMS) y sobre cómo puede usarlo para proporcionar protección de la información con implementaciones locales existentes que usan Microsoft Exchange Server, Microsoft SharePoint Server, o servidores de archivo que ejecutan Windows Server y usan la funcionalidad de la Infraestructura de clasificación de archivos (FCI) del Administrador de recursos del servidor de archivos.
 
@@ -84,6 +83,6 @@ Antes de instalar el conector RMS, asegúrese de que se cumplen los requisitos s
 Vaya a [Instalación y configuración del conector de Azure Rights Management](install-configure-rms-connector.md).
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

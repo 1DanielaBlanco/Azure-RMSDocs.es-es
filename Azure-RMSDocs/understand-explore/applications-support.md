@@ -1,27 +1,26 @@
 ---
 title: "¿Cómo admiten las aplicaciones Azure Rights Management? | Azure RMS"
-description: 
-keywords: 
+description: "Use la información siguiente para tratar de comprender cómo la mayoría de las aplicaciones de usuario final usadas habitualmente (como las aplicaciones de Office, Word, Excel, PowerPoint y Outlook) y los servicios (como Exchange y SharePoint) pueden utilizar Microsoft Azure Rights Management con la idea de proteger los datos de su organización."
 author: cabailey
 manager: mbaldwin
-ms.date: 05/13/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 2cdc7bde-4044-4021-b887-11476f99afd9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 16c2dbbce4234f41941bd3fd92d264df0ae685e2
-ms.openlocfilehash: 15167c4e7dbe0fd401e198c80524b39e4ded250d
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: df66b53238acecd4173b7d1bc57a611c403ec256
 
 
 ---
 
 # Cómo son compatibles las aplicaciones con Azure Rights Management
 
-*Se aplica a: Azure Rights Management, Office 365*
+>*Se aplica a: Azure Rights Management, Office 365*
 
 Use la información siguiente para tratar de comprender cómo la mayoría de las aplicaciones de usuario final usadas habitualmente (como las aplicaciones de Office, Word, Excel, PowerPoint y Outlook) y los servicios (como Exchange y SharePoint) pueden utilizar Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] con la idea de proteger los datos de su organización. 
 > [!NOTE]
@@ -63,6 +62,6 @@ Obtenga más información sobre cómo admiten RMS cada uno de los siguientes ele
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

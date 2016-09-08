@@ -1,20 +1,19 @@
 ---
 title: "Administración de cliente: Operaciones de ciclo de vida de clave de inquilino | Azure RMS"
-description: 
-keywords: 
+description: "Si administra su clave de inquilino para Azure Rights Management (el escenario Aportar tu propia clave, o BYOK), use las siguientes secciones para más información acerca de las operaciones del ciclo de vida que son relevantes para esta topología."
 author: cabailey
 manager: mbaldwin
 ms.date: 08/17/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c5b19c59-812d-420c-9c54-d9776309636c
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
-ms.openlocfilehash: 9bff4e1380dfa3fabab1e8cb9317f3dd31b05a77
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 500f9c0e4aff34aaf7b6836643a777a1cb1edc91
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: 9bff4e1380dfa3fabab1e8cb9317f3dd31b05a77
 
 # Administración de cliente: Operaciones de ciclo de vida de clave de inquilino
 
-*Se aplica a: Azure Rights Management, Office 365*
+>*Se aplica a: Azure Rights Management, Office 365*
 
 Si administra su clave de inquilino para Azure Rights Management (el escenario Aportar tu propia clave, o BYOK), use las siguientes secciones para más información acerca de las operaciones del ciclo de vida que son relevantes para esta topología.
 
@@ -69,6 +68,6 @@ Si tiene una infracción, la mejor acción que usted o Microsoft puede llevar a 
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

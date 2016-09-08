@@ -1,27 +1,26 @@
 ---
 title: "Eliminación de la protección de un archivo mediante la aplicación Rights Management sharing | Azure RMS"
-description: 
-keywords: 
+description: "Para quitar la protección (es decir, desproteger) de un archivo protegido anteriormente con la aplicación de RMS sharing, use la opción Quitar protección en el Explorador de archivos."
 author: cabailey
 manager: mbaldwin
-ms.date: 05/09/2016
+ms.date: 07/13/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: da95b938-eaad-4c83-a21e-ff1d4872aae4
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
-ms.openlocfilehash: 78ceb74a3dd8492ac5c754eea179525cae819fd0
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: b94cd999fef2186ddf67a0e6cebc3349a3586538
 
 
 ---
 
 # Quitar la protección de un archivo mediante la aplicación Rights Management sharing
 
-*Se aplica a: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 con SP1, Windows 8, Windows 8.1*
+>*Se aplica a: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 con SP1, Windows 8, Windows 8.1*
 
 Para quitar la protección (es decir, desproteger) de un archivo protegido anteriormente con la aplicación de RMS sharing, use la opción **Quitar protección** en el Explorador de archivos.
 
@@ -45,13 +44,13 @@ Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de 
 
 -   [Ejemplos de uso de la aplicación RMS sharing](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [¿Qué desea hacer?](sharing-app-user-guide.md#what-do-you-want-to-do-)
+-   [¿Qué desea hacer?](sharing-app-user-guide.md#what-do-you-want-to-do)
 
 ## Véase también
 [Guía de usuario de la aplicación de uso compartido Rights Management](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

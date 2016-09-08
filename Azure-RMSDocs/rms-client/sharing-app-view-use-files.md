@@ -1,27 +1,26 @@
 ---
 title: "Visualización y uso de archivos protegidos por Rights Management | Azure RMS"
-description: 
-keywords: 
+description: "Cuando la aplicación para uso compartido de Rights Management (RMS) está instalada en el equipo, puede ver un archivo protegido simplemente haciendo doble clic en él. El archivo puede ser un archivo adjunto en un mensaje de correo electrónico, o podría verlo al usar el Explorador de archivos."
 author: cabailey
 manager: mbaldwin
 ms.date: 07/13/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 06f615c993d54ab1e8e4a94d7414302481d919b4
-ms.openlocfilehash: cd19be1c0319a3d2a4609030c0114b07b461c1d8
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 78810a639c2360707b628423bb68b2f05e8c5b56
 
 
 ---
 
-# Ver y usar archivos que han sido protegidos con Rights Management
+# Ver y usar los archivos protegidos por Rights Management
 
-*Se aplica a: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 con SP1, Windows 8, Windows 8.1*
+>*Se aplica a: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 con SP1, Windows 8, Windows 8.1*
 
 Cuando la [aplicación Rights Management sharing (RMS) está instalada en el equipo](install-sharing-app.md), puede ver un archivo protegido simplemente haciendo doble clic en él. El archivo puede ser un archivo adjunto en un mensaje de correo electrónico, o podría verlo al usar el Explorador de archivos.
 
@@ -33,7 +32,7 @@ Cuando la [aplicación Rights Management sharing (RMS) está instalada en el equ
 > -   Para solicitar esta cuenta, haga clic en el vínculo para solicitar [RMS para usuarios](http://go.microsoft.com/fwlink/?LinkId=309469).
 >
 >     Al suscribirse, use la dirección de correo electrónico de su empresa en lugar de una dirección de correo electrónico personal. Si va a suscribirse porque le enviaron un archivo adjunto protegido por correo electrónico, use la misma dirección de correo electrónico que se usó para enviarle el mensaje de correo electrónico.
-> -   Para más información, consulte [RMS para usuarios y Azure Rights Management](../understand-explore/rms-for-individuals.md).
+> -   Para obtener más información, consulte [RMS for individuals and Azure Rights Management](../understand-explore/rms-for-individuals.md) (RMS para usuarios y Azure Rights Management).
 
 ## Para ver un archivo protegido
 Usando el Explorador de archivos o el mensaje de correo electrónico que contiene el archivo adjunto, haga doble clic en el archivo protegido y escriba sus credenciales si se le solicita que lo haga.
@@ -108,6 +107,6 @@ Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -4,9 +4,9 @@ description: "La versión actual de la API de archivo admite protección nativa 
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: EC831494-7F2C-4C70-9063-B02CDDEA14EE
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b5fbbf637a34371a676a6cba169cc0268ce5e541
-ms.openlocfilehash: 58efe60d6066f2e9761aea8d66d83711e68ab642
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: e41d8d697d7c35beef84277bc5b9fd497d79cc10
 
 
 ---
@@ -36,13 +36,13 @@ Los administradores pueden establecer claves del Registro para configurar si los
 ## Temas relacionados
 
 * [Notas para el desarrollador](developer-notes.md)
-* [File API configuration (Configuración de la API de archivo)](file-api-configuration.md)
+* [Configuración de la API de archivo](file-api-configuration.md)
  
 
  
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -1,20 +1,19 @@
 ---
 title: Requisitos de Azure RMS&#58; Suscripciones en la nube | Azure RMS
-description: 
-keywords: 
+description: "Para usar Azure Rights Management (Azure RMS), su organización debe tener al menos una de las siguientes suscripciones con un número suficiente de licencias para usuarios y servicios que protegerán archivos y mensajes de correo electrónico. Si tiene un servicio que aplicará protección para los usuarios (propietarios de los archivos o mensajes de correo electrónico), esos usuarios necesitan una de estas licencias. Los usuarios que solo consumen (por ejemplo, leen y editan) estos datos protegidos no necesita una licencia."
 author: cabailey
 manager: mbaldwin
-ms.date: 06/09/2016
+ms.date: 08/22/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 6a16e890-3c3e-4f47-80ca-176a34bdf8bc
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6dcd8bb1091e9c484e02042adbf993381581a9d
-ms.openlocfilehash: 5e68ba6942b479e9dcbf0e9ac0a3bed0c2d1869d
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 4cac0f039e69e31943bb8773d0761f7e654cc940
 
 
 ---
@@ -22,11 +21,11 @@ ms.openlocfilehash: 5e68ba6942b479e9dcbf0e9ac0a3bed0c2d1869d
 
 # Requisitos de Azure RMS: Suscripciones en la nube que son compatibles con Azure RMS
 
-*Se aplica a: Azure Rights Management, Office 365*
+>*Se aplica a: Azure Rights Management, Office 365*
 
 Para usar Azure Rights Management (Azure RMS), su organización debe tener al menos una de las siguientes suscripciones con un número suficiente de licencias para usuarios y servicios que protegerán archivos y mensajes de correo electrónico. Si tiene un servicio que aplicará protección para los usuarios (propietarios de los archivos o mensajes de correo electrónico), esos usuarios necesitan una de estas licencias. Los usuarios que solo consumen (por ejemplo, leen y editan) estos datos protegidos no necesita una licencia.
 
--   Office 365
+-   Office 365 (suscripciones específicas)
 
 -   Azure Rights Management Premium (anteriormente Azure RMS Standalone)
 
@@ -95,6 +94,6 @@ Para obtener más información, consulte [RMS for individuals and Azure Rights M
 Para buscar otros requisitos, consulte [Requisitos de Azure Rights Management](requirements-azure-rms.md).
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

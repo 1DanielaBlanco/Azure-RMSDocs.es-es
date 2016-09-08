@@ -4,9 +4,9 @@ description: "En este tema se describen las opciones y el proceso de implementac
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4B785564-6839-49ED-A243-E2A6DFF88B2E
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 982021a2e972023b04e6483348a7c27aa029e198
-ms.openlocfilehash: 8308e2db84e13c6b8c85a1a3ae6c01fc0aabee75
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 3b6ff46581921f69c47cad3d6d879c53320b9126
 
 
 ---
@@ -28,10 +28,6 @@ En este tema se describen las opciones y el proceso de implementación de la apl
 ## Solicitar un contrato de licencia de producción
 
  Para poder distribuir una aplicación desarrollada con Rights Management Services SDK 2.1, debe pedir un contrato de licencia de producción que le permita obtener un certificado de producción.
-
-> [!IMPORTANT]
-> Si va a ejecutar la aplicación cliente con RMS basado en Azure, deberá crear sus propios inquilinos. Para obtener más información, vea [Azure RMS requirements: Cloud subscriptions that support Azure RMS](../get-started/requirements-subscriptions.md) (Requisitos de Azure RMS: Suscripciones en la nube que son compatibles con Azure RMS).
-> Para más información sobre la ejecución con Azure RMS, vea [Enable your service application to work with cloud based RMS](how-to-use-file-api-with-aadrm-cloud.md) (Habilitar la aplicación de servicio para que funcione con RMS basado en la nube).
 
 Para obtener el certificado, solicite un contrato de licencia de producción.
 
@@ -116,7 +112,8 @@ Para que el usuario final aproveche Azure Rights Management Services, debe imple
 
 
 > [!IMPORTANT]
-> Para ejecutar la aplicación cliente de RMS SDK 2.1 con Azure RMS, debe crear sus propios inquilinos. Para obtener más información, vea [Azure RMS requirements: Cloud subscriptions that support Azure RMS](../get-started/requirements-subscriptions.md) (Requisitos de Azure RMS: Suscripciones en la nube que son compatibles con Azure RMS).
+> Si va a ejecutar la aplicación cliente con RMS basado en Azure, deberá crear sus propios inquilinos. Para obtener más información, vea [Azure RMS requirements: Cloud subscriptions that support Azure RMS](../get-started/requirements-subscriptions.md) (Requisitos de Azure RMS: Suscripciones en la nube que son compatibles con Azure RMS).
+> Para más información sobre la ejecución con Azure RMS, vea [Enable your service application to work with cloud based RMS](how-to-use-file-api-with-aadrm-cloud.md) (Habilitar la aplicación de servicio para que funcione con RMS basado en la nube).
 
 -   Descargue el [Asistente para el inicio de sesión de Microsoft Online Services](http://www.microsoft.com/en-us/download/details.aspx?id=28177), que podrá conseguir en el Centro de descarga de Microsoft.
 -   Asegúrese de que la implementación de una aplicación con derechos habilitados incluye una comprobación de los requisitos previos para la selección de este servicio.
@@ -135,6 +132,6 @@ Para obtener más información sobre cómo habilitar la aplicación para que use
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Aug16_HO4-->
 
 

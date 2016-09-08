@@ -1,17 +1,16 @@
 ---
 title: Directiva predeterminada de Azure Information Protection | Azure Rights Management
-description: 
-author: cabailey
+description: "Utilice la siguiente información para comprender cómo está configurada la directiva predeterminada de Azure Information Protection. Si modifica la directiva predeterminada, puede tomar estos valores como referencia para devolver la directiva a la configuración predeterminada."
 manager: mbaldwin
 ms.date: 08/08/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 671281c8-f0d1-42b6-aae3-681d1821e2cf
 translationtype: Human Translation
-ms.sourcegitcommit: 0e02a3f78f1c5986d61f73e57265b944e9d03552
-ms.openlocfilehash: 4abce96c4e1215f92211a231a187bd2de4ad3845
+ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
+ms.openlocfilehash: 89b7a8cb0ca893d4ce29540ef054e19409bd75eb
 
 
 ---
@@ -63,6 +62,6 @@ Para más información sobre cómo configurar la directiva de Azure Information 
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -1,27 +1,26 @@
 ---
 title: "Opciones de cuadro de diálogo para la aplicación Rights Management sharing | Azure RMS"
-description: 
-keywords: 
+description: "Use esta información para especificar las opciones en el cuadro de diálogo Agregar protección o en el cuadro de diálogo Uso compartido seguro de la aplicación de uso compartido de RMS. Verá este cuadro de diálogo cuando proteja un archivo para compartirlo o cuando proteja un archivo en contexto y elija permisos personalizados."
 author: cabailey
 manager: mbaldwin
 ms.date: 07/13/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7b91ab30-6363-4929-bcbd-4dfbd05f644a
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
-ms.openlocfilehash: ed2ab42174ce5d83fd60ace1c394515db1450e3d
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: aa0f5456d17564183317e3e693ae63adb8c597c5
 
 
 ---
 
 # Opciones del cuadro de diálogo para la aplicación de uso compartido Rights Management
 
-*Se aplica a: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 con SP1, Windows 8, Windows 8.1*
+>*Se aplica a: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 con SP1, Windows 8, Windows 8.1*
 
 Use esta información para especificar las opciones en el cuadro de diálogo **Agregar protección** o en el cuadro de diálogo **Uso compartido seguro** de la aplicación de uso compartido de RMS. Verá este cuadro de diálogo cuando [proteja un archivo para compartirlo](sharing-app-protect-by-email.md) o cuando [proteja un archivo en contexto](sharing-app-protect-in-place.md) y elija permisos personalizados.
 
@@ -57,7 +56,7 @@ Además de las opciones que puede elegir, es posible que también se pregunte lo
 
 Para obtener información técnica adicional, consulte la sección [Niveles de protección: nativa y genérica](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) de la [Guía del administrador de la aplicación Microsoft Rights Management sharing](sharing-app-admin-guide.md).
 
-## ¿Qué es el archivo .ppdf que se crea automáticamente?
+## ¿Qué es ese archivo .ppdf que se crea automáticamente?
 
 -   Cuando se comparte un archivo protegido por correo electrónico (uso compartido seguro), la aplicación de uso compartido de RMS crea automáticamente una versión **.ppdf** del archivo de Word, Excel, PowerPoint o PDF. Se trata de una versión protegida de solo lectura del archivo que únicamente pueden abrir las personas autorizadas, y garantiza que los destinatarios siempre puedan leer los archivos adjuntos, incluso si usan un dispositivo móvil que no tiene una aplicación que admita Rights Management de forma nativa. Estas personas podrán leer los datos adjuntos siempre y cuando tengan instalada la aplicación de uso compartido de RMS.
 
@@ -79,6 +78,6 @@ Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -1,27 +1,26 @@
 ---
 title: "Planeamiento e implementación de la clave de inquilino de Azure Rights Management | Azure RMS"
-description: 
-keywords: 
+description: "Use la información de este artículo para tratar de planificar y administrar la clave de inquilino de Rights Management (RMS) para Azure RMS. Por ejemplo, en lugar de que Microsoft administre su clave de inquilino (valor predeterminado), podría administrar su propia clave de inquilino para cumplir con las normas específicas que se aplican a su organización. La administración de su propia clave de inquilino también se conoce aportar su propia clave, o BYOK, por sus siglas del inglés."
 author: cabailey
 manager: mbaldwin
 ms.date: 08/17/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a80866576dc7d6400bcebc2fc1c37bc0367bcdf3
-ms.openlocfilehash: ee7b9b5f251856f102651f1e8f379f7bbacea77e
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 3a45a12cba766fed074d8b5fcf861164802d2441
 
 
 ---
 
 # Planeamiento e implementación de la clave de inquilino de Azure Rights Management
 
-*Se aplica a: Azure Rights Management, Office 365*
+>*Se aplica a: Azure Rights Management, Office 365*
 
 Use la información de este artículo para tratar de planificar y administrar la clave de inquilino de Rights Management (RMS) para Azure RMS. Por ejemplo, en lugar de que Microsoft administre su clave de inquilino (valor predeterminado), podría administrar su propia clave de inquilino para cumplir con las normas específicas que se aplican a su organización.  La administración de su propia clave de inquilino también se conoce aportar su propia clave, o BYOK, por sus siglas del inglés.
 
@@ -137,6 +136,6 @@ Ahora que ha realizado la planeación, y si es necesario, ha generado su clave d
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

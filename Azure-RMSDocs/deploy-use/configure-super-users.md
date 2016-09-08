@@ -1,27 +1,26 @@
 ---
 title: "Configuración de superusuarios para Azure Rights Management y los servicios de detección o la recuperación de datos | Azure RMS"
-description: 
-keywords: 
+description: "La característica de superusuario de Microsoft Azure RMS garantiza que personas y servicios autorizados pueden siempre leer e inspeccionar los datos que protege Azure RMS en su organización. Y, si es necesario, quitar la protección o cambiar la protección que se aplicó anteriormente. Un superusuario siempre tiene derechos completos de propietario para todas las licencias de uso que le ha concedido el inquilino de RMS de la organización. Esta capacidad se denomina a menudo &quot;razonamiento encima de los datos&quot; y es un elemento crucial en el mantenimiento del control de los datos de su organización."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 0ca9b8d9643f5489c100fa3aa614e89cd396df52
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 32da3f280b7dc8fa0655ae65d904864d80b9a035
 
 
 ---
 
 # Configuración de superusuarios para Azure Rights Management y los servicios de detección o la recuperación de datos
 
-*Se aplica a: Azure Rights Management, Office 365*
+>*Se aplica a: Azure Rights Management, Office 365*
 
 La característica de superusuario de Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS) garantiza que personas y servicios autorizados pueden siempre leer e inspeccionar los datos que protege Azure RMS en su organización. Y, si es necesario, quitar la protección o cambiar la protección que se aplicó anteriormente. Un superusuario siempre tiene derechos completos de propietario para todas las licencias de uso que le ha concedido el inquilino de RMS de la organización. Esta capacidad se denomina a menudo “razonamiento encima de los datos” y es un elemento crucial en el mantenimiento del control de los datos de su organización. Por ejemplo, podría usar esta característica en cualquiera de las siguientes situaciones:
 
@@ -72,6 +71,6 @@ Para obtener más información sobre estos cmdlets, consulte [Cmdlets de protecc
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -1,27 +1,26 @@
 ---
 title: "Activación de Azure Rights Management | Azure RMS"
-description: 
-keywords: 
+description: "Cuando activa (Azure RMS), su organización puede empezar a proteger datos importantes con aplicaciones y servicios que admiten esta solución de protección de información. Los administradores también pueden administrar y supervisar los correos electrónicos y archivos protegidos que posee su organización. Debe realizar la habilitación para poder empezar a usar las características de Information Rights Management (IRM) en Office, SharePoint y Exchange y proteger los archivos confidenciales o con información importante."
 author: cabailey
 manager: mbaldwin
-ms.date: 05/16/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bf5e3561ef24d8f44e791ff7bdc8450a73f79705
-ms.openlocfilehash: d66e4e6bca253bc2bf9d12ba22ed0202cba2edaf
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: d8ec823553934442ecb1e0a0b288eaa6d9c21ea6
 
 
 ---
 
 # Activar Rights Management de Azure
 
-*Se aplica a: Azure Rights Management, Office 365*
+>*Se aplica a: Azure Rights Management, Office 365*
 
 Cuando activa [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS), su organización puede empezar a proteger datos importantes con aplicaciones y servicios que admiten esta solución de protección de información. Los administradores también pueden administrar y supervisar los correos electrónicos y archivos protegidos que posee su organización. Debe habilitar [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] para poder empezar a usar las características de Information Rights Management (IRM) en Office, SharePoint y Exchange y proteger los archivos confidenciales o con información importante.
 
@@ -82,6 +81,6 @@ Servicios de Office, como Exchange Online y SharePoint Online requieren configur
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

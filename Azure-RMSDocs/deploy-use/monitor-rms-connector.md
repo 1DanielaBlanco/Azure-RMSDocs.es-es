@@ -1,27 +1,26 @@
 ---
 title: "Supervisión del conector de Azure Rights Management | Azure RMS"
-description: 
-keywords: 
+description: "Una vez que haya instalado y configurado el conector de RMS, puede usar los siguientes métodos e información para ayudarle a supervisar el conector y el uso de Azure RMS por parte de la organización."
 author: cabailey
 manager: mbaldwin
 ms.date: 07/08/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 8a1b3e54-f788-4f84-b9d7-5d5079e50b4e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f8e23e8bcbfb25092cb31f7af76d17239f3063a7
-ms.openlocfilehash: 32c3c93d55bd82f45fa7a081e55ae7ebe8f5956f
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 11079a491cf9feade86713ef02ccdce79019577a
 
 
 ---
 
 # Supervisión del conector de Azure Rights Management
 
-*Se aplica a: Azure Rights Management, Windows Server 2012, Windows Server 2012 R2*
+>*Se aplica a: Azure Rights Management, Windows Server 2012, Windows Server 2012 R2*
 
 Una vez que haya instalado y configurado el conector de RMS, puede usar los siguientes métodos e información para ayudarle a supervisar el conector y el uso de Azure RMS por parte de la organización.
 
@@ -195,6 +194,6 @@ Si necesita un registro más detallado para fines de diagnóstico, puede usar [D
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

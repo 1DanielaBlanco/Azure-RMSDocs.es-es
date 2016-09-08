@@ -1,27 +1,26 @@
 ---
 title: "Descarga e instalación de la aplicación de uso compartido de Rights Management | Azure RMS"
-description: 
-keywords: 
+description: "No hace falta que sea un administrador local para instalar la aplicación RMS sharing. Sin embargo, si no lo es y usa Office 2010, hay algunas limitaciones. Para más información, consulte la sección Si no es un administrador local y usa Office 2010 de esta página."
 author: cabailey
 manager: mbaldwin
-ms.date: 05/09/2016
+ms.date: 07/13/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
-ms.openlocfilehash: 5ec740b4de63c90c9713916dcf104316e727498b
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: bda09df1ff51565a4bbf501161c7a4f8cdbbfe22
 
 
 ---
 
-# Descargar e instalar la aplicación para uso compartido de Rights Management
+# Descargar e instalar la aplicación de uso compartido de Rights Management
 
-*Se aplica a: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 con SP1, Windows 8, Windows 8.1*
+>*Se aplica a: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 con SP1, Windows 8, Windows 8.1*
 
 No hace falta que sea un administrador local para instalar la aplicación RMS sharing. Sin embargo, si no lo es y usa Office 2010, hay algunas limitaciones. Para más información, consulte la sección [Si no es un administrador local y usa Office 2010](#if-you-are-not-a-local-administrator-and-use-office-2010) de esta página.
 
@@ -33,7 +32,7 @@ No hace falta que sea un administrador local para instalar la aplicación RMS sh
 
 3.  Haga doble clic en el archivo Setup.exe que se descargó. Si el sistema le pregunta si desea continuar, haga clic en **Sí**.
 
-4.  En la página **Instalar Microsoft RMS** , haga clic en **siguiente**y espere a que finalice la instalación.
+4.  En la página **Instalar Microsoft RMS** , haga clic en **Siguiente**y espere a que finalice la instalación.
 
     > [!NOTE]
     > La aplicación RMS sharing requiere Microsoft .NET Framework, versión mínima 4.0. El programa de instalación comprueba si está instalado y, si no es así, verá un mensaje con un vínculo para instalarlo.
@@ -62,7 +61,7 @@ Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de 
 
 -   [Ejemplos de uso de la aplicación RMS sharing](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [¿Qué desea hacer?](sharing-app-user-guide.md#what-do-you-want-to-do-)
+-   [¿Qué desea hacer?](sharing-app-user-guide.md#what-do-you-want-to-do)
 
 ## Véase también
 [Guía de usuario de la aplicación de uso compartido Rights Management](sharing-app-user-guide.md)
@@ -70,6 +69,6 @@ Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

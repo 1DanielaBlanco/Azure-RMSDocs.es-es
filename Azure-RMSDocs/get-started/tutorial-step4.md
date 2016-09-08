@@ -6,7 +6,7 @@ author: cabailey
 manager: mbaldwin
 ms.date: 07/13/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: 
 ms.assetid: f8340056-87a1-4daa-8b63-3d95fc381b9c
@@ -18,8 +18,8 @@ ms.suite: ems
 ms.tgt_pltfrm: 
 ms.custom: 
 translationtype: Human Translation
-ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
-ms.openlocfilehash: 07c71de207fc7af019dfeea37ca194cf85cc1760
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 0287f1408c7cd22d0254d135aaa267ec77246e45
 
 
 ---
@@ -27,7 +27,7 @@ ms.openlocfilehash: 07c71de207fc7af019dfeea37ca194cf85cc1760
 
 # Inicio rápido de Azure RMS; paso 4: pedir a los destinatarios que abran el documento por correo electrónico
 
-*Se aplica a: Azure Rights Management, Office 365*
+>*Se aplica a: Azure Rights Management, Office 365*
 
 
 Saltar a: 
@@ -69,9 +69,9 @@ Ahora que el destinatario ha abierto el archivo adjunto y lo ha enviado de forma
 
 |Si desea obtener más información|Información adicional|
 |--------------------------------|--------------------------|
-|Instrucciones completas para ver archivos protegidos con Azure Rights Management|[Ver y usar archivos que han sido protegidos con Rights Management](../rms-client/sharing-app-view-use-files.md)|
+|Instrucciones completas para ver archivos protegidos con Azure Rights Management|[Ver y usar los archivos protegidos por Rights Management](../rms-client/sharing-app-view-use-files.md)|
 |Acerca de la suscripción gratuita, RMS para usuarios|[RMS para usuarios y Azure Rights Management](../understand-explore/rms-for-individuals.md)|
-|Acerca de las dos versiones del archivo que ve adjunto al mensaje de correo electrónico|[¿Qué es el archivo .ppdf que se crea automáticamente?](../rms-client/sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created)|
+|Acerca de las dos versiones del archivo que ve adjunto al mensaje de correo electrónico|[¿Qué es ese archivo .ppdf que se crea automáticamente?](../rms-client/sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created)|
 
 
 >[!div class="step-by-step"]
@@ -79,6 +79,6 @@ Ahora que el destinatario ha abierto el archivo adjunto y lo ha enviado de forma
 [Paso 5 »](tutorial-step5.md)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

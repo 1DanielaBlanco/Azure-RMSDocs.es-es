@@ -1,17 +1,16 @@
 ---
 title: "Eliminación o cambio de orden de una etiqueta en Azure Information Protection | Azure Rights Management"
-description: 
-author: cabailey
+description: "Puede eliminar o cambiar el orden de las etiquetas que ven los usuarios en la barra de Information Protection; para ello, configúrelas en la directiva de Azure Information Protection."
 manager: mbaldwin
 ms.date: 08/10/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ae0f603f-a632-4ac5-a3f7-6358d4255eff
 translationtype: Human Translation
-ms.sourcegitcommit: b2263c212a1b869b778767493645f10ad821828f
-ms.openlocfilehash: 3b4066c8e5770e6f4a502ecaebfd961400e9df2d
+ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
+ms.openlocfilehash: 43b43657627135886f6d0be42fef41ba939bdae1
 
 
 ---
@@ -58,6 +57,6 @@ Para más información sobre cómo configurar la directiva de Azure Information 
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

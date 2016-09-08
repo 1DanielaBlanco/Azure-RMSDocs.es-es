@@ -6,22 +6,22 @@ author: cabailey
 manager: mbaldwin
 ms.date: 08/03/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 5ac121b3-d7a0-40e4-8fe7-90bf4cf796f1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ba029e48b540fda8474eba83322c531ff3daa7b3
-ms.openlocfilehash: a123338e34a8c4585a01782a473a400ecb58f166
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 214890cee5975c05798014ddb8d153faa9ca3998
 
 
 ---
 
 # Change permissions on files that have been protected by Rights Management (Cambiar permisos de archivos protegidos por Rights Management)
 
-*Se aplica a: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 con SP1, Windows 8, Windows 8.1*
+>*Se aplica a: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 con SP1, Windows 8, Windows 8.1*
 
 Cuando un archivo está protegido por Rights Management, puede cambiar los permisos protegiéndolo de nuevo y especificando todos los usuarios que deben tener acceso a él y los permisos que quiere otorgarles.
 
@@ -96,6 +96,6 @@ Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de 
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO4-->
 
 

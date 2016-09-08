@@ -1,27 +1,26 @@
 ---
 title: "Escenario: Enviar un correo electrónico confidencial de la empresa | Azure RMS"
-description: 
-keywords: 
+description: "En este escenario y en la documentación de usuario correspondiente se usa Azure Rights Management para que cualquier usuario de la organización pueda enviar de forma segura comunicaciones de correo electrónico que no se pueden leer fuera de la organización. Por ejemplo, si el mensaje de correo se reenviara a alguien de otra organización o a una cuenta de correo electrónico personal. Los correos electrónicos y los datos adjuntos estarán protegidos por Azure Rights Management y por una plantilla que los usuarios seleccionan en el cliente de correo electrónico."
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 950799e9-2289-48c7-b95a-f54a8ead520a
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
-ms.openlocfilehash: b6f3b06485dda81be2a36035fea7477f4061a8e9
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 4bda209d2f66bb3a3ca1639a7ddfcfc3bccf51b1
 
 
 ---
 
 # Escenario: Enviar un correo electrónico confidencial de la empresa
 
-*Se aplica a: Azure Rights Management, Office 365*
+>*Se aplica a: Azure Rights Management, Office 365*
 
 En este escenario y en la documentación de usuario correspondiente se usa Azure Rights Management para que cualquier usuario de la organización pueda enviar de forma segura comunicaciones de correo electrónico que no se pueden leer fuera de la organización. Por ejemplo, si el mensaje de correo se reenviara a alguien de otra organización o a una cuenta de correo electrónico personal. Los correos electrónicos y los datos adjuntos estarán protegidos por Azure Rights Management y por una plantilla que los usuarios seleccionan en el cliente de correo electrónico.
 
@@ -158,6 +157,6 @@ Los destinatarios a los que envíe el correo electrónico podrán reenviarlo a o
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 
