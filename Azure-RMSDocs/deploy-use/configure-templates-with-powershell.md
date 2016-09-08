@@ -1,20 +1,19 @@
 ---
 title: Referencia de PowerShell para plantillas personalizadas | Azure RMS
-description: 
-keywords: 
+description: "Todo lo que puede hacer en el Portal de Azure clásico para crear y administrar plantillas puede hacerlo desde la línea de comandos, mediante PowerShell. Además, puede exportar e importar plantillas, de manera que pueda copiar plantillas entre inquilinos o llevar a cabo ediciones en masa de propiedades complejas en plantillas, como descripciones y nombres multilingües."
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 30ee2f77-ce16-4113-bcda-6089131849ec
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
-ms.openlocfilehash: 645f9ed4080e3b38fcda9afe148923c021046724
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 4874e6061bb9b8781fc2ad02c80dba38084f4747
 
 
 ---
@@ -23,7 +22,7 @@ ms.openlocfilehash: 645f9ed4080e3b38fcda9afe148923c021046724
 
 # Referencia de PowerShell para plantillas personalizadas
 
-*Se aplica a: Azure Rights Management, Office 365*
+>*Se aplica a: Azure Rights Management, Office 365*
 
 Todo lo que puede hacer en el Portal de Azure clásico para crear y administrar plantillas puede hacerlo desde la línea de comandos, mediante PowerShell. Además, puede exportar e importar plantillas, de manera que pueda copiar plantillas entre inquilinos o llevar a cabo ediciones en masa de propiedades complejas en plantillas, como descripciones y nombres multilingües.
 
@@ -60,6 +59,6 @@ Los cmdlets que admite la creación y administración de plantillas:
 [Configuración de plantillas personalizadas para Azure Rights Management](configure-custom-templates.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

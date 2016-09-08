@@ -1,27 +1,26 @@
 ---
 title: Precio y restricciones de BYOK | Azure RMS
-description: 
-keywords: 
+description: "Las organizaciones que tienen una suscripción con Azure Rights Management pueden usar claves administradas por el cliente (BYOK) en el Almacén de claves de Azure y registrar su uso sin costo adicional. Sin embargo, para usar el Almacén de claves de Azure, es necesario tener una suscripción de Azure compatible con los almacenes de claves con claves protegidas por HSM. El uso de las claves en el Almacén de claves de Azure conlleva un cargo mensual. Para obtener más información, consulte la página de precios del Almacén de claves de Azure."
 author: cabailey
 manager: mbaldwin
 ms.date: 08/17/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
-ms.openlocfilehash: ece615912d69eda78107c60245620ed36c0affd2
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 8505032a2a12f84c245e834e71d0b7b0d12e894f
 
 
 ---
 
 # Precio y restricciones de BYOK
 
-*Se aplica a: Azure Rights Management, Office 365*
+>*Se aplica a: Azure Rights Management, Office 365*
 
 
 Las organizaciones que tienen una suscripción con Azure Rights Management pueden usar claves administradas por el cliente (BYOK) en el Almacén de claves de Azure y registrar su uso sin costo adicional. Sin embargo, para usar el Almacén de claves de Azure, es necesario tener una suscripción de Azure compatible con los almacenes de claves con claves protegidas por HSM. El uso de las claves en el Almacén de claves de Azure conlleva un cargo mensual. Para obtener más información, consulte la [página de precios del Almacén de claves de Azure](https://azure.microsoft.com/en-us/pricing/details/key-vault/).
@@ -63,6 +62,6 @@ Si ha decidido permanecer con la configuración predeterminada con la que Micros
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

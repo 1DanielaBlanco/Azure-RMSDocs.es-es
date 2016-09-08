@@ -1,20 +1,19 @@
 ---
 title: "¿Cómo funciona Azure RMS? | Azure RMS"
-description: 
-keywords: 
+description: "Una cuestión importante que hay que comprender acerca de cómo funciona Azure RMS es que el servicio de Rights Management (y Microsoft) no ve ni almacena sus datos como parte del proceso de protección de la información. La información que protege nunca se envía a Azure, ni se almacena allí, a menos que la almacene de manera explícita en Azure o use otro servicio en la nube que la almacene en Azure. Azure RMS simplemente hace que los datos de un documento sean ilegibles para cualquiera que no sea un usuario y servicio autorizado."
 author: cabailey
 manager: mbaldwin
 ms.date: 06/02/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5d825d6c8b2c8b7a9c34ac940c5a08439a9ae562
-ms.openlocfilehash: 505f2c94bb4fd056b4d2f51c147c6b0b84efac00
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 527af70532f390330fdb65bc27b04bb366289748
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: 505f2c94bb4fd056b4d2f51c147c6b0b84efac00
 
 # ¿Cómo funciona Azure RMS? En segundo plano
 
-*Se aplica a: Azure Rights Management, Office 365*
+>*Se aplica a: Azure Rights Management, Office 365*
 
 Una cuestión importante que hay que comprender acerca de cómo funciona Azure RMS es que el servicio de Rights Management (y Microsoft) no ve ni almacena sus datos como parte del proceso de protección de la información. La información que protege nunca se envía a Azure, ni se almacena allí, a menos que la almacene de manera explícita en Azure o use otro servicio en la nube que la almacene en Azure. Azure RMS simplemente hace que los datos de un documento sean ilegibles para cualquiera que no sea un usuario y servicio autorizado:
 
@@ -151,6 +150,6 @@ Si está listo para empezar a implementar Azure RMS para su organización, vea 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

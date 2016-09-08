@@ -1,27 +1,26 @@
 ---
 title: "Escenario: Configurar carpetas de trabajo para la protección persistente | Azure RMS"
-description: 
-keywords: 
+description: "En este escenario y en la documentación de usuario correspondiente se usa Azure Rights Management para aplicar protección persistente a documentos de Office en Carpetas de trabajo. Carpetas de trabajo emplea un servicio de rol para servidores de archivos que ejecutan Windows Server que proporciona a los usuarios una forma coherente de tener acceso a sus archivos de trabajo desde sus equipos y dispositivos. Carpetas de trabajo dispone de un cifrado propio para proteger los archivos, pero esta protección se pierde si los archivos se mueven fuera del entorno de Carpetas de trabajo."
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1f189345-a69e-4bf5-8a45-eb0fe5bb542b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
-ms.openlocfilehash: 35ad445e229eac3feeca5522a41b9e3b25fd1180
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: ce61f22be934ec9817a22737417514468b5c6528
 
 
 ---
 
 # Escenario: Configurar carpetas de trabajo para la protección persistente
 
-*Se aplica a: Azure Rights Management, Office 365*
+>*Se aplica a: Azure Rights Management, Office 365*
 
 En este escenario y en la documentación de usuario correspondiente se usa Azure Rights Management para aplicar protección persistente a documentos de Office en [Carpetas de trabajo](https://technet.microsoft.com/library/dn265974.aspx). Carpetas de trabajo emplea un servicio de rol para servidores de archivos que ejecutan Windows Server que proporciona a los usuarios una forma coherente de tener acceso a sus archivos de trabajo desde sus equipos y dispositivos. Carpetas de trabajo dispone de un cifrado propio para proteger los archivos, pero esta protección se pierde si los archivos se mueven fuera del entorno de Carpetas de trabajo. Esto ocurre, por ejemplo, cuando un usuario copia los archivos sincronizados y los guarda en un almacenamiento que no está bajo el control del departamento de TI, o cuando los archivos se envían por correo electrónico a otros usuarios.
 
@@ -123,6 +122,6 @@ Si ha configurado la plantilla personalizada según lo descrito en este escenari
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

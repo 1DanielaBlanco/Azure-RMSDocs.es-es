@@ -1,27 +1,26 @@
 ---
 title: 'Escenario: Proteger (algunos) archivos de gran valor | Azure RMS'
-description: 
-keywords: 
+description: "En este escenario y en la documentación de usuario correspondiente se usa Azure Rights Management para proteger manualmente y de forma personalizada unos pocos archivos que se han identificado como los más valiosos, lo que garantiza el máximo nivel de protección frente a accesos no autorizados. Suelen ser archivos a los que solo algunas personas deben poder tener acceso. Así, recetas detalladas de productos alimenticios de la firma de su empresa o planes de adquisición que no deben hacerse públicos hasta una fecha concreta."
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 95f1844a-612c-4e67-bbe6-4b6b92295221
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
-ms.openlocfilehash: d4325fb8a0b27d0a8d4fd7451b9d11d10153ed8d
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 5db916bc9eef927dc7d6a628808e9af79363e480
 
 
 ---
 
 # Escenario: Proteger (algunos) archivos de gran valor
 
-*Se aplica a: Azure Rights Management, Office 365*
+>*Se aplica a: Azure Rights Management, Office 365*
 
 En este escenario y en la documentación de usuario correspondiente se usa Azure Rights Management para proteger manualmente y de forma personalizada unos pocos archivos que se han identificado como los más valiosos, lo que garantiza el máximo nivel de protección frente a accesos no autorizados. Suelen ser archivos a los que solo algunas personas deben poder tener acceso. Así, recetas detalladas de productos alimenticios de la firma de su empresa o planes de adquisición que no deben hacerse públicos hasta una fecha concreta.
 
@@ -52,7 +51,7 @@ Para que este escenario funcione, debe disponer de lo siguiente:
 |Preparó las cuentas y los grupos para Office 365 o Azure Active Directory:<br /><br />- Un grupo habilitado para correo denominado **Acceso con privilegios**, compuesto por las pocas personas que deben tener acceso a estos documentos altamente confidenciales<br /><br />- Un grupo habilitado para correo denominado **Administradores de cumplimiento de TI**, compuesto por las personas encargadas de las tareas de exhibición de documentos electrónicos, auditoría y supervisión<br /><br />- Un grupo habilitado para correo denominado **Administradores de RMS**, del que todos los administradores que configuran Azure RMS son miembros|[Preparación de Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
 |Azure Rights Management no está activado|[Activar Rights Management de Azure](https://technet.microsoft.com/library/jj658941.aspx)|
 |Configuró una plantilla personalizada tal y como se describe a continuación|[Configuración de plantillas personalizadas para Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)|
-|La aplicación Rights Management sharing se implementa en el equipo de Windows para que estos archivos se puedan proteger de forma local, como se describe en la siguiente sección.|[Descargar e instalar la aplicación para uso compartido de Rights Management](https://technet.microsoft.com/library/dn574734%28v=ws.10%29.aspx)|
+|La aplicación Rights Management sharing se implementa en el equipo de Windows para que estos archivos se puedan proteger de forma local, como se describe en la siguiente sección.|[Descargar e instalar la aplicación de uso compartido de Rights Management](https://technet.microsoft.com/library/dn574734%28v=ws.10%29.aspx)|
 |Los usuarios autorizados tienen una versión mínima de Office 2013.|Si tienen Office 2010, también deben instalar la aplicación Rights Management sharing.|
 |La suscripción de Azure RMS incluye el seguimiento de documentos|Si la suscripción de Azure RMS no incluye la revocación y el seguimiento de documentos, no podrá usar el sitio de seguimiento de documentos para ver quién tiene acceso a ellos y revocar el acceso en caso necesario. En tal caso, adquiera una suscripción que admita el seguimiento de documentos o asuma esta limitación. Conviene considerar también el uso de las funciones de [registro de uso](https://technet.microsoft.com/library/dn529121.aspx) de Azure RMS (que proporcionan información como, por ejemplo, quién ha tenido acceso a cada archivo y cuándo) con objeto de poder detectar posibles comportamientos sospechosos.<br /><br />Para comprobar la compatibilidad de la suscripción: [Comparación de las ofertas de Rights Management Services (RMS)](https://technet.microsoft.com/dn858608).|
 
@@ -148,6 +147,6 @@ Ahora los siguientes archivos tienen aplicado un nivel muy alto de protección, 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

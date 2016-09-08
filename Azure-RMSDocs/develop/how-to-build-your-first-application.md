@@ -1,26 +1,22 @@
 ---
-# required metadata
-
 title: "IPCHelloWorld: una aplicación de ejemplo | Azure RMS"
-description: Este tema contiene instrucciones para crear una aplicación con derechos habilitados.
-keywords:
+description: "Este tema contiene instrucciones para crear una aplicación con derechos habilitados."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 581451A2-9558-4D0D-9D01-BEAB282C5A83
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: d5f84815a143dd28574c8742da1642cba7c96a62
+
 
 ---
 ** El contenido de este SDK no es actual. Durante un breve periodo podrá encontrar la [versión actual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) de la documentación en MSDN. **
@@ -208,7 +204,7 @@ Antes de acabar, hay que liberar todos los recursos asignados.
 
 ## Temas relacionados
 
-* [Notas de desarrollador](developer-notes.md)
+* [Notas para el desarrollador](developer-notes.md)
 * [Configurar Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md)
 * [**IpcEncrypt**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcencrypt)
 * [**IpcGetErrorMessageText**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgeterrormessagetext)
@@ -222,6 +218,7 @@ Antes de acabar, hay que liberar todos los recursos asignados.
  
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Aug16_HO4-->
 
 

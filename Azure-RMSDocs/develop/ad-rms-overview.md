@@ -6,7 +6,7 @@ author: bruceperlerms
 manager: mbaldwin
 ms.date: 07/11/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: B546B6C1-ADC1-4EBD-95E2-B4A74E4E980B
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5afdf526fe9f8486c6a778eebf10899e0bd9f839
-ms.openlocfilehash: 53571aff357bbc0cdcb44ce9b403c68719abbaff
+ms.sourcegitcommit: 5d2339ece646fc51410186d43facdea28ac8fdfe
+ms.openlocfilehash: df0ea8669038f458bc3d8fbf1c704bc5b6815e1d
 
 
 ---
@@ -28,7 +28,7 @@ AD RMS consta de componentes de [servidor](ad-rms-server.md) y [cliente](ad-rms-
 
 El componente de [cliente](ad-rms-client.md) se puede ejecutar en un cliente o un sistema operativo de servidor y contiene funciones que permiten que una aplicación cifre y descifre el contenido, recupere plantillas y listas de revocación, adquiera licencias y certificados de un servidor y otras tareas de administración de derechos relacionadas.
 
-Para más información, consulte [Tipos de aplicación](application-types.md).
+Para más información, vea [Application types](application-types.md) (Tipos de aplicación).
 
 Estos son algunos de los escenarios en los que se pueden aplicar las aplicaciones basadas en Rights Management Services SDK 2.1.
 
@@ -61,6 +61,6 @@ Los demás temas de esta sección tratan sobre la arquitectura de RMS y sus impl
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

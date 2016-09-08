@@ -4,17 +4,17 @@ description: "El tercer paso de un tutorial para probar rápidamente Microsoft A
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c604e749-8918-40e8-8148-6bd000cb2be2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
-ms.openlocfilehash: efe389db839f3f70e9cdb9138f6749e2bd2e029f
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 62b2303074ccf2b23e29a5770f51b003c8f97780
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: efe389db839f3f70e9cdb9138f6749e2bd2e029f
 
 # Inicio rápido de Azure RMS; paso 3: enviar el documento que desea proteger por correo electrónico
 
-*Se aplica a: Azure Rights Management, Office 365*
+>*Se aplica a: Azure Rights Management, Office 365*
 
 
 Saltar a: 
@@ -45,7 +45,7 @@ A continuación, estará listo para compartir de forma segura este documento por
 
 1.  En Outlook, cree un mensaje nuevo y adjunte el archivo que acaba de crear.
 
-2.  En el cuadro **Para** , escriba una o más direcciones de correo electrónico empresarial. Asegúrese de especificar una dirección de correo electrónico empresarial, como **janetm@contoso.com** o **p.dover@fabrikam.com** porque, actualmente, Azure Rights Management no es compatible con las direcciones de correo electrónico personales que se usan en casa con el proveedor de Internet. No se preocupe por saber si la persona a la que envía el archivo también tiene Azure Rights Management o no.
+2.  En el cuadro **Para**, escriba una o más direcciones de correo electrónico empresariales. Asegúrese de especificar una dirección de correo electrónico empresarial, como **janetm@contoso.com** o **p.dover@fabrikam.com** porque, actualmente, Azure Rights Management no es compatible con las direcciones de correo electrónico personales que se usan en casa con el proveedor de Internet. No se preocupe por saber si la persona a la que envía el archivo también tiene Azure Rights Management o no.
 
 3.  Escriba un asunto, como  **Documento confidencial** y, a continuación, escriba un mensaje breve para el correo electrónico, como **Lea este documento confidencial y no lo comparta con otros.**
 
@@ -82,6 +82,6 @@ Ahora que ha enviado el documento protegido, está listo para pedir a los destin
 [Paso 4 »](tutorial-step4.md)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

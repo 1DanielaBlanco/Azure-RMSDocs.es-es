@@ -1,27 +1,26 @@
 ---
 title: "Configuración de los derechos de uso para Azure Rights Management | Azure RMS"
-description: 
-keywords: 
+description: "Cuando establece la protección en archivos o correos electrónicos con Azure Rights Management (Azure RMS) y no usa ninguna plantilla, debe configurar los derechos de uso usted mismo. Además, al configurar plantillas personalizadas para Azure RMS, se seleccionan los derechos de uso que se aplicarán automáticamente cuando los usuarios, administradores o servicios configurados seleccionen la plantilla."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/09/2016
+ms.date: 08/25/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 60f25cdcdabbfbb61072a95e39f84fed79cad871
-ms.openlocfilehash: e656729fa9ea926681e560f40c4f43ce320a0d5e
+ms.sourcegitcommit: e1f1bef9ce87dcffb8d3da920f19198aa253e8e6
+ms.openlocfilehash: bbfb00822a03609f5b81808e1e1c4cad8c02be0b
 
 
 ---
 
 # Configuración de los derechos de uso para Azure Rights Management
 
-*Se aplica a: Azure Rights Management, Office 365*
+>*Se aplica a: Azure Rights Management, Office 365*
 
 Cuando establece la protección en archivos o correos electrónicos con Azure Rights Management (Azure RMS) y no usa ninguna plantilla, debe configurar los derechos de uso usted mismo. Además, al configurar plantillas personalizadas para Azure RMS, se seleccionan los derechos de uso que se aplicarán automáticamente cuando los usuarios, administradores o servicios configurados seleccionen la plantilla. Por ejemplo, en el Portal de Azure clásico, puede seleccionar los roles que configuran una agrupación lógica de derechos de uso o puede configurar los derechos individuales.
 
@@ -40,7 +39,7 @@ En la tabla siguiente se enumeran y se describen los derechos de uso que admite 
 |Nombre común: **Reenviar** <br /><br />Codificación en la directiva: **FORWARD**|Habilita la opción para reenviar un mensaje de correo electrónico y agregar destinatarios a las líneas **Para** y **CO** . Este derecho no se aplica a documentos, solo a mensajes de correo electrónico.<br /><br />No permite que el reenviador conceda derechos a otros usuarios como parte de la acción de reenvío.|Derechos personalizados de Office: se deniega al usar la directiva estándar **No reenviar**.<br /><br />Nombre en el Portal de Azure clásico: **Reenviar**<br /><br />Nombre en las plantillas de AD RMS: **Reenviar** <br /><br />Constante o valor de API: `IPC_EMAIL_FORWARD L"FORWARD"`|
 |Nombre común: **Control total** <br /><br />Codificación en la directiva: **OWNER**|Concede todos los derechos para el documento; se pueden realizar todas las acciones disponibles.<br /><br />Incluye la capacidad de quitar la protección de un documento y volver a protegerlo.|Derechos personalizados de Office: como parte de la opción personalizada **Control total**.<br /><br />Nombre en el Portal de Azure clásico: **Control total**<br /><br />Nombre en las plantillas de AD RMS: **Control total** <br /><br />Constante o valor de API: `IPC_GENERIC_ALL L"OWNER"`|
 |Nombre común: **Imprimir** <br /><br />Codificación en la directiva: **PRINT**|Habilita las opciones para imprimir el contenido.|Derechos personalizados de Office: como la opción **Imprimir contenido** de los permisos personalizados. No se trata de un valor por destinatario.<br /><br />Nombre en el Portal de Azure clásico: **Imprimir**<br /><br />Nombre en las plantillas de AD RMS: **Imprimir** <br /><br />Constante o valor de API: `IPC_GENERIC_PRINT L"PRINT"`|
-|Nombre común: **Responder** <br /><br />Codificación en la directiva: **PRINT**|Habilita la opción **Responder** en un cliente de correo electrónico, sin permitir que se realicen cambios en las líneas **Para** o **CC**.|Derechos personalizados de Office: no aplicables.<br /><br />Nombre en el Portal de Azure clásico: **Responder**<br /><br />Nombre en las plantillas de AD RMS: **Responder** <br /><br />Constante o valor de API: `IPC_EMAIL_REPLY`|
+|Nombre común: **Responder** <br /><br />Codificación en la directiva: **REPLY**|Habilita la opción **Responder** en un cliente de correo electrónico, sin permitir que se realicen cambios en las líneas **Para** o **CC**.|Derechos personalizados de Office: no aplicables.<br /><br />Nombre en el Portal de Azure clásico: **Responder**<br /><br />Nombre en las plantillas de AD RMS: **Responder** <br /><br />Constante o valor de API: `IPC_EMAIL_REPLY`|
 |Nombre común: **Responder a todos** <br /><br />Codificación en la directiva: **REPLYALL**|Habilita la opción **Responder a todos** en un cliente de correo electrónico, pero no permite al usuario agregar a destinatarios a las líneas **Para** o **CO** .|Derechos personalizados de Office: no aplicables.<br /><br />Nombre en el Portal de Azure clásico: **Responder a todos**<br /><br />Nombre en las plantillas de AD RMS: **Responder a todos** <br /><br />Constante o valor de API: `IPC_EMAIL_REPLYALL L"REPLYALL"`|
 |Nombre común: **Ver, Abrir, Leer** <br /><br />Codificación en la directiva: **VIEW**|Permite al usuario abrir el documento y ver el contenido.|Derechos personalizados de Office: como la opción **Ver** de la directiva personalizada **Leer**.<br /><br />Nombre en el Portal de Azure clásico: **Ver**<br /><br />Nombre en las plantillas de AD RMS: **Responder a todos** <br /><br />Constante o valor de API: `IPC_GENERIC_READ L"VIEW"`|
 |Nombre común: **Copiar** <br /><br />Codificación en la directiva: **EXTRACT**|Habilita las opciones para copiar los datos (incluidas las capturas de pantalla) del documento en el mismo documento o en otro documento.<br /><br />En algunas aplicaciones, también permite que todo el documento se guarde en sin protección.|Derechos personalizados de Office: como la opción de directiva personalizada **Permitir que los usuarios con acceso de lectura copien el contenido**.<br /><br />Nombre en el Portal de Azure clásico: **Copiar y extraer contenido**<br /><br />Nombre en las plantillas de AD RMS: **Extraer** <br /><br />Constante o valor de API: `IPC_GENERIC_EXTRACT L"EXTRACT"`|
@@ -102,6 +101,6 @@ Un usuario quiere enviar información por correo electrónico a personas concret
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -1,33 +1,26 @@
 ---
-# required metadata
-
 title: "Escenario: Compartir un archivo de Office con usuarios de otra organización | Azure RMS"
-description:
-keywords:
+description: "En este escenario y en la documentación de usuario correspondiente se usa Azure Rights Management para que los usuarios puedan enviar por correo electrónico de forma segura un archivo de Office a personas de otra organización. Por ejemplo, el archivo de Office puede ser un documento de Word, una hoja de cálculo de Excel o una presentación de PowerPoint que contenga información de lista de precios para un asociado, una lista de productos para un distribuidor o una lista de escalas de tiempo de entrega con clientes potenciales. Cuando los usuarios siguen las instrucciones, el archivo adjuntado al mensaje de correo electrónico lo protegerá Azure Rights Management."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c10a4d7b-f57a-4a43-b66e-477777be59cc
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 9615e41666a08a1d66f4e0dbdedb06f02a8efd3e
+
 
 ---
 
 # Escenario: Compartir un archivo de Office con usuarios de otra organización
 
-*Se aplica a: Azure Rights Management, Office 365*
+>*Se aplica a: Azure Rights Management, Office 365*
 
 En este escenario y en la documentación de usuario correspondiente se usa Azure Rights Management para que los usuarios puedan enviar por correo electrónico de forma segura un archivo de Office a personas de otra organización. Por ejemplo, el archivo de Office puede ser un documento de Word, una hoja de cálculo de Excel o una presentación de PowerPoint que contenga información de lista de precios para un asociado, una lista de productos para un distribuidor o una lista de escalas de tiempo de entrega con clientes potenciales. Cuando los usuarios siguen las instrucciones, el archivo adjuntado al mensaje de correo electrónico lo protegerá Azure Rights Management.
 
@@ -74,7 +67,8 @@ Con la siguiente plantilla, copie y pegue las instrucciones de usuario en una co
 
     -   Los pasos no incluyen el establecimiento de una fecha de expiración. Si no debe usarse la información después de una fecha concreta, agregue otro paso para establecer un tiempo de expiración adecuado, como 90 días desde el envío del mensaje de correo electrónico.
 
-    > [!NOTE] Para obtener más información sobre las opciones que pueden seleccionar los usuarios, consulte [Dialog box options for the Rights Management sharing application](https://technet.microsoft.com/library/dn574738.aspx) (Opciones de cuadro de diálogo para la aplicación Rights Management sharing)
+    > [!NOTE]
+    > Para obtener más información sobre las opciones que pueden seleccionar los usuarios, consulte [Opciones del cuadro de diálogo para la aplicación Rights Management sharing](https://technet.microsoft.com/library/dn574738.aspx)
 
 4.  Realice cualquier otro cambio que desee en este conjunto de instrucciones y, después, envíelo a estos usuarios.
 
@@ -159,6 +153,7 @@ Utilice el [portal de seguimiento de documentos](https://track.azurerms.com/) pa
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Aug16_HO4-->
 
 

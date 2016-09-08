@@ -1,20 +1,19 @@
 ---
 title: "Actualización de plantillas | Azure RMS"
-description: 
-keywords: 
+description: "Cuando usas Azure RMS, se descargan de forma automática plantillas a los ordenadores cliente para que los usuarios puedan seleccionarlas desde sus aplicaciones. Sin embargo, es posible que tengas que tomar medidas adicionales si quieres efectuar cambios en las plantillas."
 author: cabailey
 manager: mbaldwin
-ms.date: 05/06/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 771f4139b09cccc05f2d1ee52c76b99467c70446
-ms.openlocfilehash: 13c2b79558202d59ec49da3a189a58356518718d
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 2339643120b9e9ee24d046bf5620f68fee88b7c9
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: 13c2b79558202d59ec49da3a189a58356518718d
 
 # Actualización de plantillas para usuarios
 
-*Se aplica a: Azure Rights Management, Office 365*
+>*Se aplica a: Azure Rights Management, Office 365*
 
 Cuando usas Azure RMS, se descargan de forma automática plantillas a los ordenadores cliente para que los usuarios puedan seleccionarlas desde sus aplicaciones. Sin embargo, es posible que tengas que tomar medidas adicionales si quieres efectuar cambios en las plantillas:
 
@@ -99,7 +98,7 @@ Set-RMSTemplate -Identity "<name or GUID of the template>" -Type Archived
 Si modifica el Registro de los equipos que ejecutan Office 2016, Office 2013 o la aplicación Rights Management (RMS) sharing, puede cambiar la programación automática para que las plantillas cambiadas se actualicen en los equipos con más frecuencia que la indicada en sus valores predeterminados. También puede forzar una actualización inmediata eliminando los datos existentes en un valor del Registro.
 
 > [!WARNING]
-> Si usas el Editor del Registro de forma incorrecta, es posible que ocasiones problemas serios que puedan hacer preciso que reinstales el sistema operativo. Microsoft no puede garantizar que seas capaz de resolver problemas ocasionados por el uso inapropiado del Editor del Registro. Usa el Editor del Registro bajo tu propia responsabilidad.
+> Si usas el Editor del Registro de forma incorrecta, es posible que ocasiones problemas serios que puedan hacer preciso que reinstales el sistema operativo. Microsoft no puede garantizar que pueda resolver problemas ocasionados por un uso incorrecto del Editor del Registro. Usa el Editor del Registro bajo tu propia responsabilidad.
 
 ### Para cambiar la programación automática
 
@@ -154,7 +153,7 @@ Si modifica el Registro de los equipos que ejecutan Office 2016, Office 2013 o l
 Si modifica el Registro de los equipos que ejecutan Office 2010, puede establecer un valor para que las plantillas cambiadas se actualicen en los equipos sin esperar a que los usuarios cierren la sesión y vuelvan a iniciarla. También puede forzar una actualización inmediata eliminando los datos existentes en un valor del Registro.
 
 > [!WARNING]
-> Si usas el Editor del Registro de forma incorrecta, es posible que ocasiones problemas serios que puedan hacer preciso que reinstales el sistema operativo. Microsoft no puede garantizar que seas capaz de resolver problemas ocasionados por el uso inapropiado del Editor del Registro. Usa el Editor del Registro bajo tu propia responsabilidad.
+> Si usas el Editor del Registro de forma incorrecta, es posible que ocasiones problemas serios que puedan hacer preciso que reinstales el sistema operativo. Microsoft no puede garantizar que pueda resolver problemas ocasionados por un uso incorrecto del Editor del Registro. Usa el Editor del Registro bajo tu propia responsabilidad.
 
 ### Para cambiar la frecuencia de actualización
 
@@ -187,6 +186,6 @@ Si modifica el Registro de los equipos que ejecutan Office 2010, puede establece
 [Configuración de plantillas personalizadas para Azure Rights Management](configure-custom-templates.md)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 
