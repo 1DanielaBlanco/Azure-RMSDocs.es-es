@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5d2339ece646fc51410186d43facdea28ac8fdfe
-ms.openlocfilehash: 0dcaf13afb1802c2301c9516b2602aa2f6b7ce7e
+ms.sourcegitcommit: 4141cadf67dc479116c802f9340ba222140194a3
+ms.openlocfilehash: 2d965086fa44d98e8236a6bbd2515fb3afac3f05
 
 
 ---
@@ -26,10 +26,12 @@ Este tema contiene instrucciones esenciales sobre los principales aspectos de un
 
 ## Introducción
 
-Las instrucciones de este tema se basan en la aplicación de ejemplo, IPCHelloWorld, que le servirá para conocer los conceptos básicos y el código de una aplicación con derechos habilitados. Puede descargar la aplicación de ejemplo IPCHellowWorld completa, como [Webinar_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440), desde Microsoft Connect.
+Las instrucciones de este tema se basan en la aplicación de ejemplo, *IPCHelloWorld*, que le servirá para conocer los conceptos básicos y el código de una aplicación con derechos habilitados. El proyecto *IPCHelloWorld* ya está configurado para Rights Management Services SDK 2.1. Si quiere información sobre cómo configurar un proyecto nuevo para usar RMS SDK 2.1, vea [Configure Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md) (Configurar Visual Studio).
 
-> [!Note] 
-> El proyecto IPCHelloWorld ya está configurado para Rights Management Services SDK 2.1. Si quiere información sobre cómo configurar un proyecto nuevo para usar RMS SDK 2.1, vea [Configure Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md) (Configurar Visual Studio).
+Puede descargar la aplicación de ejemplo *IPCHellowWorld* completa, como [Webinar_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440), desde Microsoft Connect.
+> [!Note]
+> Si recibe un error al acceder a Microsoft Connect, es posible que no esté registrado. Para registrarse: vaya a [Conectar](http://connect.microsoft.com), inicie sesión con su cuenta de Microsoft > Directorio > busque Rights Management Services > Unirse.
+
 
 ## Carga de MSIPC.dll
 
@@ -185,6 +187,6 @@ Antes de acabar, hay que liberar todos los recursos asignados.
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 
