@@ -1,9 +1,9 @@
 ---
 title: Aplicaciones y servicios de Office | Azure RMS
-description: "Las aplicaciones de Office de usuario final (como Word, Excel, PowerPoint y Outlook) y los servicios de Office (como Exchange y SharePoint) pueden utilizar Microsoft Azure Rights Management con la idea de proteger los datos de su organización."
+description: "Cómo las aplicaciones de Office de usuario final (como Word, Excel, PowerPoint y Outlook) y los servicios de Office (como Exchange y SharePoint) pueden utilizar Microsoft Azure Rights Management para ayudar a proteger los datos de una organización."
 author: cabailey
 manager: mbaldwin
-ms.date: 06/30/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 93dde9494a430526ebd26e1d5123ad44901ffcbb
+ms.sourcegitcommit: 43429b44c019144744f39a1f92f144d315c2024c
+ms.openlocfilehash: 76200a27b31bc9a7afaea4ab6b2083beb3c85256
 
 
 ---

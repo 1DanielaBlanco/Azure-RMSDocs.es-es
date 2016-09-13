@@ -1,9 +1,9 @@
 ---
 title: Cliente de Rights Management (RMS) | Azure RMS
-description: "Microsoft Rights Management Services es una solución de cliente-servidor en la que el cliente de RMS se integra con aplicaciones que se ejecutan en equipos y dispositivos móviles. El servicio RMS reside en la nube (Azure RMS) o local (AD RMS). El cliente de RMS se instala automáticamente con algunas aplicaciones, como aplicaciones de Office, la aplicación de RMS sharing y las aplicaciones habilitadas para RMS de proveedores de software. Sin embargo, también puede instalarse por sí mismo, en cuyo caso es compatible con diversos escenarios, como desarrolladores que quieren integrar la protección de RMS en sus aplicaciones de línea de negocio y administradores o usuarios avanzados que quieren proteger archivos masivamente mediante la herramienta de protección de RMS."
+description: "Microsoft Rights Management Services es una solución cliente/servidor que ayuda a proteger los datos de las organizaciones. El cliente de RMS se integra con aplicaciones que se ejecutan en equipos y dispositivos móviles. El servicio RMS reside en la nube (Azure RMS) o en entornos locales (AD RMS)."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -13,8 +13,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 234095a733633462ba1a221a5ac6e1e1d47df12b
+ms.sourcegitcommit: 44541b6fe2567d23174b26cb42fec0731f5d3f58
+ms.openlocfilehash: 4561f392abb50fbebcd82a8764ec831b2fbfa746
 
 
 ---

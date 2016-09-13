@@ -3,7 +3,7 @@ title: "Preguntas más frecuentes de Azure Rights Management | Azure RMS"
 description: "Algunas de las preguntas más frecuentes sobre Microsoft Azure Rights Management, también conocido como Azure RMS."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2016
+ms.date: 09/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 906e544cc3c9be6ba475502e3cdb93f2e047da7f
+ms.sourcegitcommit: 47328bc0c3cc66e99a98b7c8abc553f25d956404
+ms.openlocfilehash: e485286a0bd42bbcfb46a8aabe4d2ee66d65b4a1
 
 
 ---
@@ -121,7 +121,7 @@ Inicialmente, Azure RMS no admitía la migración de una implementación local d
 Para obtener más información, consulte [Migrating from AD RMS to Azure Rights Management](../plan-design/migrate-from-ad-rms-to-azure-rms.md) (Migración de AD RMS a Azure Rights Management).
 
 ## Nos interesa usar BYOK con Azure RMS, pero por lo visto no es compatible con Exchange Online. ¿Qué nos aconsejan?
-No permitan que esta limitación actual retrase su implementación de Azure RMS. Si tiene Exchange Online y desea usar Aportar su propia clave (BYOK), se recomienda implementar ahora Azure RMS en el modo de administración de claves predeterminado, donde Microsoft genera y administra su clave. De este modo, obtendrá todas las ventajas que supone proteger ahora sus archivos y mensajes de correo electrónico importantes, con la opción de pasarse a BYOK más adelante (por ejemplo, cuando Exchange Online admita BYOK).
+No permitan que esta limitación actual retrase su implementación de Azure RMS. Si tiene Exchange Online y desea usar Aportar su propia clave (BYOK), se recomienda implementar ahora Azure RMS en el modo de administración de claves predeterminado, donde Microsoft genera y administra su clave. De este modo, obtendrá todas las ventajas que supone proteger ahora sus archivos y mensajes de correo electrónico importantes, con la opción de pasarse a BYOK más adelante (por ejemplo, cuando Exchange Online admita BYOK). Cuando migre a BYOK, los correos electrónicos y documentos protegidos anteriormente seguirán estando accesibles mediante el uso de una clave archivada.
 
 Sin embargo, si las directivas de la empresa requieren que se use un módulo de seguridad de hardware (HSM) y esto podría bloquear la implementación de Azure RMS, otra opción es implementar ahora Azure RMS con BYOK, con una funcionalidad de RMS reducida para Exchange. Para obtener más información, consulte [BYOK pricing and restrictions](../plan-design/byok-price-restrictions.md) (Precios y restricciones de BYOK) en [Planning and implementing your Azure Rights Management tenant key](../plan-design/plan-implement-tenant-key.md) (Planeamiento e implementación de la clave de inquilino de Azure Rights Management).
 
@@ -223,6 +223,6 @@ Esta página de Preguntas más frecuentes se actualizará regularmente, con nuev
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

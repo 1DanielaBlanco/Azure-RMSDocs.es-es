@@ -1,9 +1,9 @@
 ---
 title: "Protección de un archivo que comparte por correo electrónico con la aplicación Rights Management sharing | Azure RMS"
-description: "Cuando se protege un archivo que se comparte por correo electrónico, se crea una nueva versión del archivo original. El archivo original permanece desprotegido y se protege la nueva versión, que se adjunta automáticamente al correo electrónico que se envía a continuación."
+description: "Instrucciones sobre cómo compartir de forma segura un documento por correo electrónico."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,13 +12,13 @@ ms.assetid: 4c1cd1d3-78dd-4f90-8b37-dcc9205a6736
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 9becbab6612e49e285774e2e8742d6448b11a041
+ms.sourcegitcommit: 035c9eb6cb630cafd5bd7fc7e2371340043ddc5e
+ms.openlocfilehash: ff5dd6afaa454c20f35c237e94947dcec9e737f6
 
 
 ---
 
-# Proteger un archivo que se comparte por correo electrónico mediante la aplicación de uso compartido de Rights Management
+# Protección de un archivo que comparte por correo electrónico con la aplicación Rights Management sharing
 
 >*Se aplica a: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 con SP1, Windows 8, Windows 8.1*
 

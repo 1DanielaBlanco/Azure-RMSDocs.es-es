@@ -1,9 +1,9 @@
 ---
 title: "Paso 2&colon; Migración entre claves protegidas por HSM | Azure RMS"
-description: "Estas instrucciones forman parte de la ruta de migración de AD RMS a Azure Rights Management y solo son válidas si la clave de AD RMS está protegida por HSM y quiere migrar a Azure Rights Management con una clave de inquilino protegida con HSM en el Almacén de claves de Azure."
+description: "Instrucciones que forman parte de la ruta de migración de AD RMS a Azure Rights Management y que solo son válidas si la clave de AD RMS está protegida por HSM y quiere migrar a Azure Rights Management con una clave de inquilino protegida con HSM en Azure Key Vault."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: c5bbf37e-f1bf-4010-a60f-37177c9e9b39
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 690729d16358b7b997d9cd1fd8cabed22ce78df4
+ms.sourcegitcommit: ada00b6f6298e7d359c73eb38dfdac169eacb708
+ms.openlocfilehash: 32cedc573aa6d14c4897642789c8e58b788279f2
 
 
 ---

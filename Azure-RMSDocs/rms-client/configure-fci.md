@@ -1,9 +1,9 @@
 ---
 title: "Protección de RMS con la infraestructura de clasificación de archivos (FCI) de Windows Server | Azure RMS"
-description: "Use este artículo para obtener instrucciones y un script para utilizar el cliente de Rights Management (RMS) con la herramienta de protección de RMS para configurar el Administrador de recursos del servidor de archivos y la infraestructura de clasificación de archivos (FCI)."
+description: "Instrucciones para utilizar el cliente Rights Management (RMS) con la herramienta de protección de RMS para configurar el Administrador de recursos del servidor de archivos y la infraestructura de clasificación de archivos (FCI)."
 author: cabailey
 manager: mbaldwin
-ms.date: 06/14/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 431eb994070391a78b0b8e34b1afb668f0981f0f
+ms.sourcegitcommit: b8a7a433652e76ff1069f0f0a7465483b13c065c
+ms.openlocfilehash: b350a35d44e743de94446409b1bba4256ca38728
 
 
 ---
@@ -126,7 +126,7 @@ Al final de estas instrucciones, todos los archivos de su carpeta seleccionada s
 
     Para obtener más información acerca de la firma de scripts de Windows PowerShell, consulte [about_Signing](https://technet.microsoft.com/library/hh847874.aspx) en la biblioteca de documentación de PowerShell.
 
-4.  Guarde el archivo localmente en cada servidor de archivos que ejecute el Administrador de recursos de archivos con la infraestructura de clasificación de archivos. Por ejemplo, guarde el archivo en **C:\RMS-Protection**. Proteja este archivo mediante permisos NTFS para que los usuarios no autorizados no puedan modificarlo.
+4.  Guarde el archivo localmente en cada servidor de archivos que ejecute el Administrador de recursos de archivos con la infraestructura de clasificación de archivos. Por ejemplo, guarde el archivo en **C:\RMS-Protection**. Si utiliza una ruta de acceso diferente o el nombre de la carpeta, elija una ruta de acceso y una carpeta que no incluya espacios. Proteja este archivo mediante permisos NTFS para que los usuarios no autorizados no puedan modificarlo.
 
 Ahora está listo para empezar a configurar el Administrador de recursos del servidor de archivos.
 
@@ -302,6 +302,6 @@ Ahora todo lo que debe hacer es crear una nueva tarea de administración de arch
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 
