@@ -1,9 +1,9 @@
 ---
 title: "Creación, configuración y publicación de una plantilla personalizada | Azure RMS"
-description: "En el Portal de Azure clásico puede crear y administrar plantillas personalizada. Puede hacerlo directamente desde el Portal de Azure clásico o puede iniciar sesión en el Centro de administración de Office 365 y elegir Características avanzadas para Rights Management, lo que le redirigirá al Portal de Azure clásico."
+description: "Instrucciones para crear y administrar plantillas personalizadas en el Portal de Azure clásico. Las plantillas facilitan a los usuarios finales y otros administradores la aplicación de las directivas apropiadas que protegen documentos y correos electrónicos."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/15/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 64beb891fda54da3718a322f6628a2987ff35111
+ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
+ms.openlocfilehash: 6875d8d4755dc791879838d1f46be87e2e043a3b
 
 
 ---

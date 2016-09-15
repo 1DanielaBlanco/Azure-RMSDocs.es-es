@@ -1,16 +1,16 @@
 ---
 title: Restricciones HYOK | Azure Rights Management
-description: "Al proteger los documentos y correos electrónicos más confidenciales, normalmente lo hace mediante la aplicación de protección de Azure Rights Management para beneficiarse de las siguientes características."
+description: "Identifique las limitaciones, los requisitos previos y las recomendaciones si selecciona la protección de AD RMS con Azure Information Protection. Esta solución a veces se conoce como &quot;hold your own key&quot; (HYOK, Mantenga su propia clave)."
 manager: mbaldwin
-ms.date: 08/18/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: cb12abb4dfe96135317facf4284c0eae7ef38196
+ms.sourcegitcommit: da0145444a7d0abb6407ed2ccbb581d4dcdd10d6
+ms.openlocfilehash: 0d6a5013f953931a6bffa28e1c3c1f282a2c668b
 
 
 ---

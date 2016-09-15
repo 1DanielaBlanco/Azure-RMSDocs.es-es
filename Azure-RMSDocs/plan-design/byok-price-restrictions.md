@@ -1,9 +1,9 @@
 ---
 title: Precio y restricciones de BYOK | Azure RMS
-description: "Las organizaciones que tienen una suscripción con Azure Rights Management pueden usar claves administradas por el cliente (BYOK) en el Almacén de claves de Azure y registrar su uso sin costo adicional. Sin embargo, para usar el Almacén de claves de Azure, es necesario tener una suscripción de Azure compatible con los almacenes de claves con claves protegidas por HSM. El uso de las claves en el Almacén de claves de Azure conlleva un cargo mensual. Para obtener más información, consulte la página de precios del Almacén de claves de Azure."
+description: "Conozca las restricciones de uso de claves administradas por el cliente, conocidas como “Bring your own key” (BYOK, Traiga su propia clave) con Azure RMS."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/17/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 8505032a2a12f84c245e834e71d0b7b0d12e894f
+ms.sourcegitcommit: ada00b6f6298e7d359c73eb38dfdac169eacb708
+ms.openlocfilehash: d704f3d9357993bdb01a38cda6f434ab1583b627
 
 
 ---

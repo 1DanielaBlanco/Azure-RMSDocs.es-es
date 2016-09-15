@@ -1,17 +1,17 @@
 ---
-title: "Paso 4 del tutorial de inicio rápido de Azure Information Protection | Azure Rights Management"
+title: "Tutorial de inicio rápido de Azure Information Protection, paso 4 | Azure Information Protection"
 description: "Paso 4 del tutorial introductorio para probar rápidamente Microsoft Azure Information Protection para su organización, que contiene solo 4 pasos que deberían tardar menos de 15 minutos."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 09/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: 6d93723a6f7aaffec8d18cf289bff0752b53a2c9
+ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
+ms.openlocfilehash: 2c04c749ff73050dc8a15dd984c33f700e3e6ed5
 
 
 ---
@@ -32,7 +32,7 @@ La clasificación y la protección tienen lugar cuando guarda el documento, pero
 
     Verá que el valor **Confidencialidad** cambia a **Personal**.
 
-    ![Paso 4 del tutorial de inicio rápido de Azure Information Protection: aviso para confirmar la reducción](../media/confirm-lowering.png)
+    ![Paso 4 del tutorial de inicio rápido de Azure Information Protection: aviso para confirmar la reducción](../media/info-protect-lower-justification.png)
 
 ### Para quitar la clasificación completamente:
 
@@ -77,6 +77,6 @@ Cuando haya terminado su propia prueba, le puede resultar útil ver las [pregunt
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

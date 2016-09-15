@@ -1,9 +1,9 @@
 ---
 title: "Aplicación Rights Management sharing para Windows | Azure RMS"
-description: "Rights Management sharing para Windows es una aplicación gratuita y descargable para organizaciones que usan Active Directory Rights Management Services (AD RMS) o Azure Rights Management (Azure RMS), así como para las organizaciones que no tienen su propia infraestructura de protección de la información pero desean consumir contenido protegido por otras organizaciones que usan Azure RMS."
+description: "Recursos de información sobre la aplicación Rights Management sharing para Windows. Se trata de una aplicación gratuita y descargable para organizaciones que usan Active Directory Rights Management Services (AD RMS) o Azure Rights Management (Azure RMS), así como para las organizaciones que no tienen su propia infraestructura de protección de la información pero desean consumir contenido protegido por otras organizaciones que usan Azure RMS."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 7d8a8abe-6de1-4088-90ee-e0c4bd6deec8
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: d0c2ee02a6de78b3f324cf174f54e0227de301ed
+ms.sourcegitcommit: 035c9eb6cb630cafd5bd7fc7e2371340043ddc5e
+ms.openlocfilehash: 50d1613242033ca176466b405832975d6f76aa13
 
 
 ---

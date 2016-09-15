@@ -1,5 +1,5 @@
 ---
-title: "Configuración de una etiqueta para aplicar protección de Rights Management | Azure Rights Management"
+title: "Configuración de una etiqueta para aplicar la protección de Rights Management | Azure Information Protection"
 description: "Puede proteger sus documentos y correos electrónicos más confidenciales mediante el servicio Rights Management, que usa directivas de autorización, identidad y cifrado para ayudar a evitar la pérdida de datos. Esta protección se aplica al configurar una etiqueta para usar una plantilla de Rights Management."
 manager: mbaldwin
 ms.date: 08/15/2016
@@ -9,8 +9,8 @@ ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: 23e62c82a38e696b0708f3b599d24f3a0f337fd8
+ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
+ms.openlocfilehash: 9cf13b5b795fc5e236ee3f48914cbbd406ad3e7e
 
 
 ---
@@ -57,7 +57,7 @@ Para más información sobre Azure Rights Management y cómo funciona, consulte 
     
     En la mayoría de los casos, seleccionará **Azure RMS**. No seleccione AD RMS a menos que haya leído y comprendido los requisitos previos y restricciones que acompañan a esta configuración, que a veces se conoce como "*mantenga su propia clave*" (HYOK). Para obtener más información, consulte [Requisitos y restricciones de Mantenga su propia clave (HYOK) para la protección de AD RMS](configure-adrms-restrictions.md).
     
-4. Si ha seleccionado Azure RMS: en **Seleccionar plantilla RMS**, haga clic en el cuadro desplegable y seleccione la plantilla que quiere usar para proteger documentos y correos electrónicos con esta etiqueta.
+4. Si ha seleccionado Azure RMS: en **Seleccionar plantilla RMS**, haga clic en el cuadro desplegable y seleccione la plantilla o la opción de Rights Management que quiera usar para proteger documentos y correos electrónicos con esta etiqueta.
 
     > [!NOTE] 
     > Si crea una nueva plantilla después de abrir la hoja **Etiqueta**, cierre esta hoja y vuelva al paso 2, así la plantilla recién creada se recuperará de Azure para que la seleccione.
@@ -78,6 +78,6 @@ Para más información sobre cómo configurar la directiva de Azure Information 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

@@ -1,9 +1,9 @@
 ---
 title: "Escenario: Compartir un archivo de Office con usuarios de otra organización | Azure RMS"
-description: "En este escenario y en la documentación de usuario correspondiente se usa Azure Rights Management para que los usuarios puedan enviar por correo electrónico de forma segura un archivo de Office a personas de otra organización. Por ejemplo, el archivo de Office puede ser un documento de Word, una hoja de cálculo de Excel o una presentación de PowerPoint que contenga información de lista de precios para un asociado, una lista de productos para un distribuidor o una lista de escalas de tiempo de entrega con clientes potenciales. Cuando los usuarios siguen las instrucciones, el archivo adjuntado al mensaje de correo electrónico lo protegerá Azure Rights Management."
+description: "En este escenario y en la documentación de usuario correspondiente se usa Azure Rights Management para que los usuarios puedan enviar por correo electrónico de forma segura un archivo de Office a personas de otra organización."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: c10a4d7b-f57a-4a43-b66e-477777be59cc
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 9615e41666a08a1d66f4e0dbdedb06f02a8efd3e
+ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
+ms.openlocfilehash: 26e81330c58057aac9629690f1d4fe85e56a64f8
 
 
 ---
