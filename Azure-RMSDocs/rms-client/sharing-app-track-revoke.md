@@ -1,9 +1,9 @@
 ---
 title: "Seguimiento y revocación de documentos cuando se usa la aplicación RMS sharing | Azure RMS"
-description: "Una vez que haya protegido sus documentos mediante la aplicación de uso compartido de RMS, si su organización usa Azure Rights Management en lugar de Active Directory Rights Management Services, podrá hacer un seguimiento del uso que se hace de sus documentos protegidos. Si es necesario, también puede revocar el acceso a estos documentos cuando ya no desee seguir compartiéndolos. Para ello, use el sitio de seguimiento de documentos, al que puede tener acceso desde equipos Windows, equipos Mac e incluso tabletas y teléfonos."
+description: "Después de haber protegido los documentos mediante la aplicación RMS sharing, puede realizar el seguimiento de cuántas personas usan tales documentos protegidos. Si es necesario, también puede revocar el acceso a estos documentos cuando ya no desee seguir compartiéndolos."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 61f349ce-bdd2-45c1-acc5-bc83937fb187
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: d27a516339a9687cb5ce117b6a2aa93730863c2d
+ms.sourcegitcommit: 44541b6fe2567d23174b26cb42fec0731f5d3f58
+ms.openlocfilehash: 2117291a7204dae86b3a6d378ab6af4d84435417
 
 
 ---

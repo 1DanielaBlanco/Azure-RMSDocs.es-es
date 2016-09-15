@@ -2,15 +2,15 @@
 title: "Configuración de las condiciones para la clasificación automática y recomendada en Azure Information Protection | Azure Rights Management"
 description: "Al configurar las condiciones de una etiqueta, puede asignar automáticamente la etiqueta a un documento o a un correo electrónico. También puede indicar a los usuarios que seleccionen la etiqueta que usted recomienda."
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: 0e6baca43c7a4f2e91f45222f5f6f233b3eeb438
+ms.sourcegitcommit: 87069b73e5f8959955b9967070bd3bcb5e7dc196
+ms.openlocfilehash: 357b012bd8679d7e24bfe3ae40c3160e4b69c01f
 
 
 ---
@@ -27,7 +27,7 @@ Al configurar las condiciones de una etiqueta, puede asignar automáticamente la
  
 - La clasificación recomendada se aplica a Word, Excel y PowerPoint cuando se guardan archivos.
 
-Al configurar condiciones, puede usar patrones predefinidos, como "Números de tarjeta de crédito" o "Número de la Seguridad Social de EE. UU.". O puede definir un patrón o una cadena personalizada como condición de una clasificación automática. Para más información sobre las condiciones, consulte la sección [Información sobre las condiciones integradas](#information-about-the-built-in-conditions).
+Al configurar condiciones, puede usar patrones predefinidos, como "Números de tarjeta de crédito" o "Número de la Seguridad Social de EE. UU.". O puede definir un patrón o una cadena personalizada como condición de una clasificación automática. Estas condiciones se aplican al texto del cuerpo en documentos y correos electrónicos, así como a encabezados y pies de página. Para más información sobre las condiciones, consulte la sección [Información sobre las condiciones integradas](#information-about-the-built-in-conditions).
 
 Modo de evaluar varias condiciones cuando se aplican a más de una etiqueta:
 
@@ -224,6 +224,6 @@ Para más información sobre cómo configurar la directiva de Azure Information 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

@@ -1,9 +1,9 @@
 ---
 title: "Comprobación de Azure Rights Management | Azure RMS"
-description: "Después de haber activado (Azure RMS) y realizado los pasos de configuración adicionales necesarios en su organización, puede comprobar que el servicio funciona como se esperaba; para ello, proteja un archivo o mensaje de correo electrónico mediante una cuenta de usuario y, luego, intente abrirlo y usar ese contenido protegido desde otra cuenta de usuario."
+description: "Instrucciones para comprobar que el servicio funciona como se esperaba protegiendo un archivo o mensaje de correo electrónico mediante una cuenta de usuario y, a continuación, tratar de abrirlo y usar ese contenido protegido procedente de otra cuenta de usuario."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 08664a01-81a5-4fa5-884c-7306ee55dba0
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: b24fa3540e4e9b9cc02ba3bcd83f5864ce8674d6
+ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
+ms.openlocfilehash: aed609eb3562f670fd85ca8138bcd89cdc7800fd
 
 
 ---

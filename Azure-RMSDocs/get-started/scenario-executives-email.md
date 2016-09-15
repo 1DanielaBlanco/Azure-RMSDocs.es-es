@@ -1,9 +1,9 @@
 ---
 title: "Escenario: Los ejecutivos intercambian información confidencial de forma segura | Azure RMS"
-description: "En este escenario y en la documentación de usuario correspondiente se usa Azure Rights Management para que los ejecutivos puedan intercambiar entre ellos mensajes de correo y datos adjuntos por correo electrónico de forma segura, y para que las directivas restrinjan automáticamente el acceso a los ejecutivos sin que tengan que realizar ninguna acción especial. Los correos electrónicos y los datos adjuntos estarán protegidos automáticamente con Azure Rights Management."
+description: "En este escenario y en la documentación de usuario correspondiente se usa Azure Rights Management para que los ejecutivos puedan intercambiar entre ellos mensajes de correo y datos adjuntos por correo electrónico de forma segura, y para que las directivas restrinjan automáticamente el acceso a los ejecutivos sin que tengan que realizar ninguna acción especial."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: e18cf5df-859e-4028-8d19-39b0842df33d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 3c15175f26c5e3bc0ff824c284beedc639cf9309
+ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
+ms.openlocfilehash: 1ec54b54197471f8cccaf6ae83ae8e592da30cae
 
 
 ---

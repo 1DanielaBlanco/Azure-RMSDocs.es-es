@@ -1,17 +1,17 @@
 ---
-title: "Paso 2 del tutorial de inicio rápido de Azure Information Protection | Azure Rights Management"
+title: "Tutorial de inicio rápido de Azure Information Protection, paso 2 | Azure Information Protection"
 description: "Paso 2 del tutorial introductorio rápido para probar Microsoft Azure Information Protection para su organización, que contiene solo 4 pasos que deberían tardar menos de 15 minutos."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/08/2016
+ms.date: 09/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: 679d03c499ccdd044444c73ebef8f59b281278cd
+ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
+ms.openlocfilehash: 9125757ba2cce865d73acab341d3e3b6ff36ba57
 
 
 ---
@@ -45,7 +45,7 @@ En nuestro tutorial, cambiaremos algunos de estos valores globales para que pued
 
 -  **Select the default label** (Seleccionar la etiqueta predeterminada): establezca esta opción en **Interno**.
 
-- **Users must provide justification when lowering the sensitivity level** (Los usuarios deben proporcionar justificación al reducir el nivel de confidencialidad): establezca esta opción en **Activado**.
+- **Users must provide justification to set a lower classification label, remove a label, or remove protection** (Los usuarios deben proporcionar una justificación para establecer una etiqueta de clasificación inferior, quitar una etiqueta o quitar la protección): **active** esta opción.
 
 Ahora cambiaremos la configuración de una de las etiquetas, **Confidencial**:
 
@@ -97,6 +97,6 @@ Ahora que ya ha dado un vistazo a la directiva predeterminada y ha hecho algunos
 [Paso 3 &#187;](infoprotect-tutorial-step3.md)
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

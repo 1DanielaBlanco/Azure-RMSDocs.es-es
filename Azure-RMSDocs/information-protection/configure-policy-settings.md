@@ -1,5 +1,5 @@
 ---
-title: "Configuración global de directivas para Azure Information Protection | Azure Rights Management"
+title: "Configuración global de directivas para Azure Information Protection | Azure Information Protection"
 description: Hay tres configuraciones en la directiva de Azure Information Protection que se aplican a todos los usuarios y todos los dispositivos.
 manager: mbaldwin
 ms.date: 08/08/2016
@@ -9,8 +9,8 @@ ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: c48f5488e49a54b970f76012e0f2f17fe4158691
+ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
+ms.openlocfilehash: 872ea7da6f3b72a355a73c8b0589beda86ded20d
 
 
 ---
@@ -42,7 +42,7 @@ Para establecer la configuración:
 
     - **Select the default label** (Seleccionar la etiqueta predeterminada): cuando configure esta opción, seleccione la etiqueta que se asignará a documentos y correos electrónicos que no tienen una. No se puede configurar una etiqueta como predeterminada si tiene etiquetas secundarias. 
 
-    - **Users must provide justification when lowering the sensitivity level** (Los usuarios deben proporcionar justificación al reducir el nivel de confidencialidad): si establece esta opción en **On** (Activado) y un usuario cambia la etiqueta de un documento o de un correo electrónico existentes por otra con un nivel de confidencialidad más bajo (por ejemplo, de **Secreto** a **Público**), se pide al usuario que explique esta acción. Por ejemplo, el usuario podría explicar que el documento ya no contiene información confidencial. La acción y el motivo de justificación se registran en el registro de eventos local de Windows: **Aplicación** > **Microsoft Azure Information Protection**.  
+    - **Users must provide justification to set a lower classification label, remove a label, or remove protection** (Los usuarios deben proporcionar una justificación para establecer una etiqueta de clasificación inferior, quitar una etiqueta o quitar la protección): cuando se **activa** esta opción y un usuario realiza una de estas acciones (por ejemplo, si cambia la etiqueta **Secret** por **Personal**), se solicita al usuario que indique el motivo de esta acción. Por ejemplo, el usuario podría explicar que el documento ya no contiene información confidencial. La acción y el motivo de justificación se registran en el registro de eventos local de Windows: **Aplicación** > **Microsoft Azure Information Protection**.  
 
     ![Mensaje de Azure Information Protection si la nueva clasificación es más baja](../media/info-protect-lower-justification.png)
 
@@ -67,6 +67,6 @@ Para más información sobre cómo configurar la directiva de Azure Information 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

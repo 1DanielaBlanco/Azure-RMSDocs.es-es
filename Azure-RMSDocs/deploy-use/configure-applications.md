@@ -1,9 +1,9 @@
 ---
 title: "Configuración de aplicaciones para Azure Rights Management | Azure RMS"
-description: "Después de haber implementado Azure Rights Management (Azure RMS) en su organización, use la siguiente información para configurar aplicaciones y servicios compatibles con Azure RMS. Aquí se incluyen aplicaciones de Office, como Word 2013 y Word 2010, y servicios, como Exchange Online (reglas de transporte, prevención de pérdida de datos, no reenviar y cifrado de mensajes) y SharePoint Online (bibliotecas protegidas)."
+description: "Instrucciones para que los administradores configuren aplicaciones y servicios compatibles con Azure RMS. Por ejemplo, aplicaciones de Office, como Word 2013 y Word 2010, y servicios, como Exchange Online (reglas de transporte, prevención de pérdida de datos, no reenviar y cifrado de mensajes) y SharePoint Online (bibliotecas protegidas)."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: ea09cbc5-b98b-444e-8b60-5bc3cb199c36
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 7e592d99bcd2a143d63b35aa4afb92b1e45cb74a
+ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
+ms.openlocfilehash: e2958a2b76880025ad46421163a15d2bad5ec81c
 
 
 ---

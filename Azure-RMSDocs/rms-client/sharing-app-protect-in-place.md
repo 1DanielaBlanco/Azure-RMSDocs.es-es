@@ -1,9 +1,9 @@
 ---
 title: "Protección de un archivo en un dispositivo (proteger en contexto) mediante la aplicación Rights Management sharing | Azure RM"
-description: "Cuando se protege un archivo en contexto, se reemplaza el archivo sin protección original. A continuación, puede dejar el archivo donde se encuentra, copiarlo a otra carpeta o dispositivo, o compartir la carpeta en la que se encuentra, ya que el archivo seguirá estando protegido. También puede adjuntar el archivo protegido a un mensaje de correo electrónico, aunque la manera recomendada para compartir un archivo protegido por correo electrónico es hacerlo directamente desde el Explorador de archivos o una aplicación de Office."
+description: "Instrucciones sobre cómo almacenar un archivo de forma segura en un equipo, un servidor u otro dispositivo de almacenamiento."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/15/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 33920329-5247-4f6c-8651-6227afb4a1fa
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 55f5f9dd0dd90bfa98798b4fc0b4cb4bd3c90076
+ms.sourcegitcommit: 035c9eb6cb630cafd5bd7fc7e2371340043ddc5e
+ms.openlocfilehash: 1d719bcce253dea465be7250806385bca3c23a01
 
 
 ---

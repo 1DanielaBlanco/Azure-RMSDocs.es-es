@@ -3,7 +3,7 @@ title: "Preguntas más frecuentes de Azure Information Protection (versión prel
 description: "¿Tiene alguna pregunta sobre la versión preliminar de Azure Information Protection? Vea si se ha resuelto aquí."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/22/2016
+ms.date: 09/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: 55d56786150d38b36ae8185c4a7ac4c8a5c51ba4
+ms.sourcegitcommit: 0a66851beeedecc3bda92f840f06b56f40c0c4c1
+ms.openlocfilehash: 427b783b41d8977ff07b0fbc929bf0d7afd0721d
 
 
 ---
@@ -82,7 +82,7 @@ Esto aparece documentado y se actualizará en [Requisitos de Azure Information P
 
 ## ¿Cómo obtienen los equipos la información de la directiva de Azure Information Protection y con qué frecuencia se actualiza?
 
-Cada vez que un usuario abre una aplicación de Office, el cliente de Azure Information Protection comprueba si existe una versión posterior de la directiva de Azure Information Protection. Si existe una versión posterior, el cliente la puede descargar mediante un vínculo HTTPS para proteger los datos. 
+Cada vez que un usuario abre una aplicación de Office, el cliente de Azure Information Protection comprueba si existe una versión posterior de la directiva de Azure Information Protection. Además, las aplicaciones de Office comprueban eso mismo automáticamente cada 24 horas. Si existe una versión posterior, el cliente la puede descargar mediante un vínculo HTTPS para proteger los datos. 
 
 Si se cargan varias instancias de la aplicación de Office cuando se publica una nueva directiva de Azure Information Protection, debe cerrar todas las instancias para obtener la última versión de la directiva. Por ejemplo, tiene abiertos dos documentos de Word y quiere probar la directiva de Azure Information Protection actualizada solo en uno de ellos: cierre ambos documentos de Word y vuelva a abrir aquel que quiera usar con la directiva más reciente.
 
@@ -129,7 +129,7 @@ Sí. Para quitar la clasificación de un archivo, abra el archivo en la aplicaci
 
 ## ¿Puedo solicitar a los usuarios que justifiquen por qué están cambiando el nivel de clasificación?
 
-Sí. Para asegurarse de que los usuarios justifican su cambio de clasificación, en el Portal de Azure, establezca la opción **Users must provide justification when lowering the sensitivity level (Los usuarios deben proporcionar justificación al reducir el nivel de confidencialidad)** en **Activado**. Cuando hagan esto, su motivo de justificación y la acción se registran en su registro de eventos de Windows local: **Aplicación** > **Microsoft Azure Information Protection**.
+Sí. Para asegurarse de que los usuarios justifiquen su cambio de clasificación, en el Portal de Azure, **active** la opción **Users must provide justification to set a lower classification label, remove a label, or remove protection** (Los usuarios deben proporcionar una justificación para establecer una etiqueta de clasificación inferior, quitar una etiqueta o quitar la protección). Cuando hagan esto, su motivo de justificación y la acción se registran en su registro de eventos de Windows local: **Aplicación** > **Microsoft Azure Information Protection**.
 
 ## ¿Cómo puedo proteger automáticamente el contenido después de que se haya clasificado?
 
@@ -187,6 +187,6 @@ Después, visite nuestro [sitio de Yammer](https://www.yammer.com/askipteam/#/th
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 
