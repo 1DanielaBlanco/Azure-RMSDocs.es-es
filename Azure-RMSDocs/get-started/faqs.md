@@ -3,7 +3,7 @@ title: "Preguntas más frecuentes de Azure Rights Management | Azure RMS"
 description: "Algunas de las preguntas más frecuentes sobre Microsoft Azure Rights Management, también conocido como Azure RMS."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/29/2016
+ms.date: 09/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 47328bc0c3cc66e99a98b7c8abc553f25d956404
-ms.openlocfilehash: e485286a0bd42bbcfb46a8aabe4d2ee66d65b4a1
+ms.sourcegitcommit: 79d098e47cdfe608bc62ed385a5c8236fb7c6d3c
+ms.openlocfilehash: e0529126fefc9dec6aaa490538971a7573f79431
 
 
 ---
@@ -145,7 +145,7 @@ Para la suscripciones de pago que admiten Azure RMS (Office 365, Azure RMS Premi
 
 La suscripción gratuita compatible con Azure RMS (RMS Para individuos) admite el consumo de contenido que se ha protegido mediante Azure RMS. Para obtener más información, consulte [RMS for individuals and Azure Rights Management](../understand-explore/rms-for-individuals.md) (RMS para usuarios y Azure Rights Management).
 
-## ¿Dónde puedo obtener información técnica sobre la suscripción gratuita de Azure RMS (RMS para usuarios), por ejemplo sobre cómo funciona, cómo controlar las cuentas y qué dominios no se pueden utilizar?
+## ¿Dónde puedo obtener información técnica sobre la suscripción gratuita de Azure RMS (RMS para usuarios), por ejemplo, cómo funciona este proceso y cómo un administrador puede asumir el control de las cuentas que ha creado?
 Encontrará respuestas a estas preguntas en [RMS for individuals and Azure Rights Management](../understand-explore/rms-for-individuals.md) (RMS para usuarios y Azure Rights Management) y en artículos relacionados.
 
 ## ¿Cómo recupero el acceso a los archivos que protegió un empleado que ya no trabaja en la organización?
@@ -223,6 +223,6 @@ Esta página de Preguntas más frecuentes se actualizará regularmente, con nuev
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO1-->
 
 

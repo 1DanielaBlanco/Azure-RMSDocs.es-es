@@ -2,15 +2,15 @@
 title: "Cambio o personalización de una etiqueta existente para Azure Information Protection | Azure Information Protection"
 description: "Puede cambiar o mejorar cualquiera de las etiquetas que ven los usuarios en la barra de Information Protection; para ello, configúrelas en la directiva de Azure Information Protection."
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 09/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e3b6d95f-334b-4d17-80a9-7d5487ab5d32
 translationtype: Human Translation
-ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
-ms.openlocfilehash: 61ceff2fb2a964495d16bb5e801a5ee7bfa60832
+ms.sourcegitcommit: 801ca11da602d4acb9c398c9a89aeb33e45cb0f4
+ms.openlocfilehash: 2ee4f945307744678df8b842aab2be219f8ef582
 
 
 ---
@@ -28,9 +28,9 @@ Por ejemplo, puede cambiar el nombre de una etiqueta principal o secundaria, la 
 Para cambiar una etiqueta, utilice las instrucciones siguientes.
 
 
-1. Si aún no lo ha hecho, inicie sesión en el [portal de Azure](https://portal.azure.com) y, después, navegue hasta la hoja **Azure Information Protection**. 
+1. Si aún no lo ha hecho, en una nueva ventana del explorador, inicie sesión en [Azure Portal](https://portal.azure.com) y, después, navegue hasta la hoja **Azure Information Protection**. 
     
-    Por ejemplo, en el menú del concentrador, haga clic en **Examinar** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
+    Por ejemplo, en el menú del centro, haga clic en **Más servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
 2. En la hoja **Azure Information Protection**, seleccione la etiqueta que quiere cambiar, realice los cambios en la hoja **Etiqueta** y en otras hojas, si es necesario.
 
@@ -52,6 +52,6 @@ Para más información sobre las opciones que puede cambiar para una etiqueta, a
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

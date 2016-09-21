@@ -3,7 +3,7 @@ title: "Cómo pueden los administradores controlar las cuentas creadas para RMS 
 description: "Cómo puede controlar las cuentas de usuario de Azure Active Directory si no desea convertir la suscripción a RMS para usuarios de la organización en una suscripción de pago."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: a83880d0-f0f9-4a32-9e00-2f6635d7cc8d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 43429b44c019144744f39a1f92f144d315c2024c
-ms.openlocfilehash: eb86c9e4f83fcf42599145b10ad8f021e40c208f
+ms.sourcegitcommit: 79d098e47cdfe608bc62ed385a5c8236fb7c6d3c
+ms.openlocfilehash: 6383c1d583eb45973750305e709d8f5d792892b5
 
 
 ---
@@ -31,9 +31,9 @@ Si no desea convertir su suscripción de RMS para usuarios de la organización e
 
 -   Puede impedir que los usuarios se suscriban para usar Azure Rights Management con la suscripción a RMS para usuarios. En la mayoría de casos, existen muy pocas ventajas en hacerlo, ya que los usuarios o bien compartirán archivos sin protección (lo que podría poner a la compañía en riesgo) o bien utilizarán otro mecanismo de protección de archivos que no le dé la opción al departamento de TI de tener acceso a los datos. Sin embargo, si quiere evitar que los usuarios se suscriban para usar RMS para usuarios, lleve a cabo uno de los procedimientos siguientes después de asumir la titularidad del directorio de su organización en Azure:
 
-    -   Impida que todos los usuarios se suscriban para obtener suscripciones de autoservicio, lo que incluye RMS para individuos.  Actualmente, no puede establecer esto por servicio; la configuración se aplica a todas las suscripciones de Azure que usan el proceso de autoservicio. Para ello, establezca el parámetro **AllowAdHocSubscriptions** en False con el cmdlet [Set-MsolCompanySettings](http://technet.microsoft.com/library/dn194127.aspx) del módulo de Windows PowerShell para Azure Active Directory. Por ejemplo: **Set-MsolCompanySettings -AllowAdHocSubscriptions $false**
+    -   Impida que todos los usuarios se suscriban para obtener suscripciones de autoservicio, lo que incluye RMS para individuos.  Actualmente, no puede establecer esto por servicio; la configuración se aplica a todas las suscripciones de Azure que usan el proceso de autoservicio. Para ello, establezca el parámetro **AllowAdHocSubscriptions** en False con el cmdlet [Set-MsolCompanySettings](http://technet.microsoft.com/library/dn194127.aspx) del módulo de PowerShell para Azure Active Directory. Por ejemplo: **Set-MsolCompanySettings -AllowAdHocSubscriptions $false**
 
-    -   Impida que los usuarios creen una cuenta nueva en Azure, lo que significa que solo los usuarios que ya tienen una cuenta de Azure pueden suscribirse para obtener suscripciones de autoservicio, lo que incluye RMS para usuarios.  Para ello, establezca el parámetro **AllowEmailVerifiedUsers** en False con el cmdlet [Set-MsolCompanySettings](http://technet.microsoft.com/library/dn194127.aspx) del módulo de Windows PowerShell para Azure Active Directory. Por ejemplo: **Set-MsolCompanySettings -AllowEmailVerifiedUsers $false -AllowAdHocSubscriptions $true**
+    -   Impida que los usuarios creen una cuenta nueva en Azure, lo que significa que solo los usuarios que ya tienen una cuenta de Azure pueden suscribirse para obtener suscripciones de autoservicio, lo que incluye RMS para usuarios.  Para ello, establezca el parámetro **AllowEmailVerifiedUsers** en False con el cmdlet [Set-MsolCompanySettings](http://technet.microsoft.com/library/dn194127.aspx) del módulo de PowerShell para Azure Active Directory. Por ejemplo: **Set-MsolCompanySettings -AllowEmailVerifiedUsers $false -AllowAdHocSubscriptions $true**
 
     -   Sincronice su infraestructura de Servicios de dominio de Active Directory con Azure Active Directory. Esta acción evita que se creen cuentas nuevas cuando los usuarios se suscriben para obtener suscripciones de autoservicio como RMS para usuarios, y puede suprimir o deshabilitar cuentas creadas previamente en el directorio de Azure.
 
@@ -46,6 +46,6 @@ Si los usuarios en lugar de los administradores pueden crear sus cuentas en Azur
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 
