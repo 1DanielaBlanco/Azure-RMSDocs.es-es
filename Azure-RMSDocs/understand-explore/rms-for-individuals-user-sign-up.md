@@ -3,7 +3,7 @@ title: "Cómo se registran los usuarios en RMS para individuos | Azure RMS"
 description: "Suscríbase para recibir las instrucciones de esta cuenta gratuita e información técnica sobre cómo funciona este proceso."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: a60731bd-f78d-4f00-bb3e-354637b312ab
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 43429b44c019144744f39a1f92f144d315c2024c
-ms.openlocfilehash: 89aa3a85eedadd091c5f0d596749bb6a631716c6
+ms.sourcegitcommit: 0bd53bde0bfa9b44203b9d2f0f429265a013476c
+ms.openlocfilehash: 25c2ddac40c9eff78101cfaf42d4398be4e8a5cc
 
 
 ---
@@ -22,34 +22,30 @@ ms.openlocfilehash: 89aa3a85eedadd091c5f0d596749bb6a631716c6
 
 >*Se aplica a: Azure Rights Management*
 
-Para registrarse en esta cuenta gratuita, los usuarios lo solicitan visitando la [página de Microsoft Rights Management](https://portal.aadrm.com/)y proporcionan su dirección de correo electrónico profesional o educativa. 
-
-La forma más habitual de redirigir a los usuarios a esta página de suscripción es mediante un mensaje de correo electrónico con un archivo adjunto protegido, que contiene instrucciones sobre cómo suscribirse. Recibirán un correo electrónico de respuesta de Microsoft. Después de eso podrán completar el proceso de suscripción especificando los detalles para crear la cuenta. Cuando reciban una confirmación por correo electrónico de Microsoft, este mensaje de correo electrónico final les enviará a una página donde podrán descargar la aplicación de uso compartido para diferentes dispositivos y se incluirá un vínculo en la guía del usuario.
+Para registrarse en esta cuenta gratuita, debe solicitarla visitando la [página de Microsoft Azure Rights Management](https://portal.office.com/signup?sku=rms&ru=https%3A%2F%2Fportal.azurerms.com%2F%23%2Fdownload) y proporcionar su dirección de correo electrónico profesional. La forma más habitual de redirigirle a esta página de suscripción es mediante un mensaje de correo electrónico con un archivo adjunto protegido, que contiene instrucciones sobre cómo suscribirse. Recibirá un correo electrónico de respuesta de Microsoft, tras lo cual podrá completar el proceso de suscripción introduciendo los detalles para crear la cuenta. Cuando se complete, verá una página donde puede descargar la aplicación de uso compartido entre distintos dispositivos, un vínculo a la Guía del usuario y un vínculo para obtener una lista de aplicaciones que admiten de forma nativa la protección de Rights Management. 
 
 ## Para registrarse en RMS como usuarios
 
-1.  Con un equipo Windows o Mac, vaya a la [página de Microsoft Rights Management](https://portal.aadrm.com).
+1.  Con un equipo Windows o Mac, o un dispositivo móvil, vaya a la [página de Microsoft Rights Management](https://portal.office.com/signup?sku=rms&ru=https%3A%2F%2Fportal.azurerms.com%2F%23%2Fdownload).
 
 2.  Escriba la dirección de correo electrónico que usa para la empresa, como **janetm@contoso.com** o **p.dover@fabrikam.com**.
 
     > [!IMPORTANT]
     > No se admiten cuentas de correo electrónico personales, de modo que no se puede introducir una cuenta Microsoft (conocida anteriormente como Microsoft Live ID) u otra cuenta personal que pueda usar en casa perteneciente a tu proveedor de Internet.
 
-3.  Haga clic en **Introducción**.
+3.  Haz clic en **Iniciar sesión**.
 
     Microsoft usa su dirección de correo electrónico para comprobar si su organización ya tiene una [suscripción de pago que incluya Azure RMS](../get-started/requirements-subscriptions.md). Si ese es el caso, no necesita RMS para usuarios, por lo que iniciará sesión inmediatamente y se cancelará la suscripción de autoservicio de RMS para usuarios. Si no se encuentra una suscripción de pago a Azure RMS, continuará con el paso siguiente.
 
-4.  Espere un mensaje de correo electrónico de confirmación, que se enviará a la dirección que haya suministrado. Procederá de Microsoft (DoNotReply@microsoft.com) y en el asunto se leerá **Microsoft RMS**.
+4.  Espere un mensaje de correo electrónico de confirmación, que se enviará a la dirección que haya suministrado. Estará en el equipo de Office 365 (support@email.microsoftonline.com) y con el asunto **Finalizar la suscripción para Microsoft Azure Rights Management**.
 
-5.  Cuando reciba el correo electrónico, haga clic en el vínculo de las instrucciones para finalizar el proceso de registro.
+5.  Cuando reciba el correo electrónico, haga clic en **Sí, soy yo** para comprobar su dirección de correo electrónico y completar el proceso de suscripción.
 
-6.  El vínculo le lleva a una página de **Microsoft Rights Management** nueva para que suministre los detalles de su cuenta. Escriba su nombre y su apellido, escriba y confirme una contraseña de su elección, seleccione su país en la lista desplegable (o el país más cercano si el suyo no aparece) y, a continuación, haga clic en **Crear**.
+6.  Ahora verá una página **Una última cosa...** para proporcionar detalles de su cuenta. Escriba su nombre y su apellido, escriba y confirme una contraseña de su elección, y después haga clic en **Iniciar**.
 
-7.  Espere recibir otro mensaje de correo electrónico de Microsoft que confirmará que la cuenta ya está lista para usarse.
+7. Cuando se crea la cuenta, verá una nueva página de Microsoft Rights Management donde que puede descargar e instalar la aplicación de uso compartido o haga clic en el vínculo [Más información](../rms-client/sharing-app-user-guide.md) para leer la Guía de usuario de la aplicación de uso compartido.
 
-8.  Cuando reciba el correo electrónico, haga clic en el vínculo para iniciar sesión y lea las instrucciones para descargar e instalar la aplicación de uso compartido, o haga clic en el vínculo Ayuda para leer la guía de usuario de la aplicación de uso compartido.
-
-Una vez se ha creado la cuenta, ya puede empezar el proceso de protección de archivos y de lectura de archivos protegidos por otros usuarios. Cuando se le pida que inicie sesión para proteger o leer archivos protegidos, escriba la dirección de correo electrónico y la contraseña que ha usado para crear la cuenta para RMS para usuarios.
+Una vez se ha creado la cuenta, ya puede empezar el proceso de protección de archivos y de lectura de archivos protegidos por otros usuarios. Si se le pide que inicie sesión para proteger o leer archivos protegidos, escriba la misma dirección de correo electrónico y la contraseña que ha usado para crear la cuenta para RMS para usuarios.
 
 ## Información técnica del proceso de registro
 RMS para usuarios usa un proceso de suscripción de autoservicio empleado también por otros servicios que usan la tecnología basada en la nube de Microsoft para autenticar a los usuarios.
@@ -59,7 +55,7 @@ Esto es lo que sucede en segundo plano cuando un usuario se suscribe a RMS para 
 1.  Cuando el primer usuario de una organización solicita un suscripción de RMS para usuarios, el nombre de dominio que proporcione en su dirección de correo electrónico se comprobará para consultar si ya está asociado con un inquilino de Azure. Si no hay ningún inquilino, se crea automáticamente un nuevo inquilino y un directorio de Azure para la organización, que contiene una cuenta para este primer usuario. A diferencia de lo que sucede con una suscripción de pago de Azure, esta primera cuenta no es un administrador global, sino un usuario estándar. La nueva cuenta utiliza la dirección de correo electrónico y la contraseña que el usuario proporcionó.
 
     > [!NOTE]
-    > Algunos nombres de dominio no se pueden utilizar para crear el directorio y, por tanto, no se pueden usar en RMS para individuos. La lista de nombres de dominio bloqueados se puede ver en este archivo de Notación de objetos JavaScript: [http://portal.aadrm.com/content/blocked_domains.json](http://portal.aadrm.com/content/blocked_domains.json)
+    > Algunos nombres de dominio no se pueden utilizar para crear el directorio y, por tanto, no se pueden usar en RMS para individuos.
 
     Si se encuentra un inquilino, se comprueba si ya tiene una suscripción para Azure RMS. Si no se encuentra ninguna suscripción, puede agregarse la suscripción a RMS para usuarios gratuita.
 
@@ -101,6 +97,6 @@ Consulte [Cómo pueden los administradores controlar las cuentas creadas para RM
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

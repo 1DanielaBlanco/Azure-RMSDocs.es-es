@@ -1,16 +1,16 @@
 ---
-title: "Instalación del cliente de Azure Information Protection | Azure Rights Management"
+title: "Instalación del cliente de Azure Information Protection | Azure Information Protection"
 description: "Instrucciones para instalar el cliente que agrega una barra de Information Protection a las aplicaciones de Office para que pueda seleccionar etiquetas de clasificación de los documentos y correos electrónicos."
 manager: mbaldwin
-ms.date: 08/29/2016
+ms.date: 09/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4445adff-4c5a-450f-aff8-88bf5bd4ca78
 translationtype: Human Translation
-ms.sourcegitcommit: 15ca59f34847d20413fbfa7973567cf5ca66db96
-ms.openlocfilehash: c245d542d237216c84941f8718cb9a0cafb44a70
+ms.sourcegitcommit: 2ecdfe905694b3d14727abdb5e6176d24f675d2e
+ms.openlocfilehash: cd6684dd25a721272c073fcc972724a6b81c0c72
 
 
 ---
@@ -34,7 +34,7 @@ Antes de instalar el cliente, compruebe que tiene las versiones necesarias de si
 
 ## Para instalar el cliente de Azure Information Protection manualmente
 
-1. Cuando haya [descargado el cliente](https://www.microsoft.com/en-us/download/details.aspx?id=53018), ejecute **AzInfoProtection_v233.exe** y siga los mensajes para instalar el cliente. Esta instalación requiere permisos administrativos locales.
+1. Cuando haya [descargado el cliente](https://www.microsoft.com/en-us/download/details.aspx?id=53018), ejecute **AZInfoProtection.exe** y siga los mensajes para instalar el cliente. Esta instalación requiere permisos administrativos locales.
 
     Si no puede conectarse a Office 365 o Azure Active Directory, pero desea ver y experimentar el lado cliente de Azure Information Protection mediante una directiva local con fines de demostración, seleccione la opción para instalar una directiva de demostración. Cuando el cliente se conecta a un servicio de Azure Information Protection, esta directiva de demostración se reemplaza por la directiva de Azure Information Protection de su organización. 
 
@@ -42,14 +42,21 @@ Antes de instalar el cliente, compruebe que tiene las versiones necesarias de si
 
 ## Para instalar el cliente de Azure Information Protection para los usuarios
 
-- Puede incluir y automatizar la instalación del cliente de Azure Information Protection mediante las opciones de la línea de comandos. Para ver las opciones de instalación, ejecute `AzInfoProtection_v233.exe /help`.
+- Puede incluir y automatizar la instalación del cliente de Azure Information Protection mediante las opciones de la línea de comandos. Para ver las opciones de instalación, ejecute `AzInfoProtection.exe /help`.
 
-    Por ejemplo, para instalar el cliente de forma silenciosa: `AzInfoProtection_v233.exe /passive | quiet`
+    Por ejemplo, para instalar el cliente de forma silenciosa: `AzInfoProtection.exe /passive | quiet`
 
 
 ## Para desinstalar el cliente de Azure Information Protection
 
+Puede usar una de estas opciones:
+
 - Utilice el Panel de Control para desinstalar un programa: haga clic en **Microsoft Azure Information Protection** > **Desinstalar**
+
+- Vuelva a ejecutar **AzInfoProtection.exe** y, desde la página **Modificar instalación**, haga clic en **Desinstalar**. 
+
+- Ejecutar `AzInfoProtection.exe /uninstall`
+
 
 ## Para comprobar la instalación, el estado de la conexión o informar de un problema
 
@@ -66,6 +73,15 @@ Antes de instalar el cliente, compruebe que tiene las versiones necesarias de si
     - El vínculo **Enviar comentarios**, que se puede usar para adjuntar automáticamente los registros de cliente a un mensaje de correo electrónico que se puede enviar al equipo de Information Protection para que lo investiguen.
 
     - El vínculo **Ejecutar diagnósticos**: esta funcionalidad no está actualmente implementada.
+
+## Métodos abreviados de teclado para la barra Azure Information Protection
+
+Para acceder a la barra Azure Information Protection mediante el uso de métodos abreviados de teclado, utilice la combinación de teclas siguiente:
+
+- Presione **Ctrl** + **Mayús** + **~** 
+
+A continuación, utilice la tecla de tabulación para seleccionar las etiquetas y otros controles en la barra (el icono **Ocultar etiquetas** y el icono **Quitar etiqueta**) y la tecla Intro para seleccionarlos.
+
 
 ## Ubicaciones de archivos
 
@@ -88,6 +104,6 @@ Para ver un ejemplo de cómo personalizar la directiva predeterminada y ver el c
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

@@ -1,6 +1,6 @@
 ---
 title: Espacio de nombres Android | Azure RMS
-description: La API de Android tiene dos espacios de nombres.
+description: Se vincula a los dos espacios de nombres de la API de Android, que cubren la funcionalidad principal y las excepciones.
 keywords: RMS, Android
 author: bruceperlerms
 manager: mbaldwin
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 448393ebc7472bd55f34c0a8d6ea35b0a5055417
+ms.sourcegitcommit: 83c4eb741c484018a2837840465aca3276c785c1
+ms.openlocfilehash: 01bdc3787c4619c05ff2d2717379d99dd4cc9ea4
 
 
 ---
@@ -32,6 +32,6 @@ La API de Android tiene dos espacios de nombres que cubren la funcionalidad prin
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

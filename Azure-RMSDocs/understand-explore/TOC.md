@@ -1,7 +1,7 @@
 # [Conceptos básicos y exploración](azure-rights-management.md)
 ## [Información general](azure-rights-management.md)
 ### [También se conoce como...](azure-rms-aka.md)
-## [¿Qué es Rights Management de Azure?](what-is-azure-rms.md)
+## [¿Qué es Azure Rights Management?](what-is-azure-rms.md)
 ### [¿Qué problemas soluciona?](azure-rms-problems-it-solves.md)
 ### [¿Qué ven los administradores y los usuarios?](what-admins-users-see.md)
 ### [¿Cómo funciona?](how-does-it-work.md)
@@ -15,6 +15,7 @@
 ### [Servidores de archivos que ejecutan Windows Server y usan Infraestructura de clasificación de archivos (FCI)](file-server-support.md)
 ### [Otras aplicaciones compatibles con las API de RMS](api-support.md)
 ## [Comparación de Azure RMS y AD RMS](compare-azure-rms-ad-rms.md)
+## [Información complementaria y de cumplimiento](compliance.md)
 # [Introducción](/rights-management/get-started/requirements-azure-rms)
 # [Planificación y diseño](/rights-management/plan-design/deployment-roadmap)
 # [Implementación y uso del servicio](/rights-management/deploy-use/activate-service)
@@ -23,6 +24,6 @@
 # [Azure Information Protection (versión preliminar)](/rights-management/information-protection/what-is-information-protection)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO2-->
 
 
