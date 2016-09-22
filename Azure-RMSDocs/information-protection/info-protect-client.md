@@ -2,15 +2,15 @@
 title: "Instalación del cliente de Azure Information Protection | Azure Information Protection"
 description: "Instrucciones para instalar el cliente que agrega una barra de Information Protection a las aplicaciones de Office para que pueda seleccionar etiquetas de clasificación de los documentos y correos electrónicos."
 manager: mbaldwin
-ms.date: 08/29/2016
+ms.date: 09/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4445adff-4c5a-450f-aff8-88bf5bd4ca78
 translationtype: Human Translation
-ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
-ms.openlocfilehash: f8d4b7f154ab8b47cded0dd2f315dba33664c7ff
+ms.sourcegitcommit: 2ecdfe905694b3d14727abdb5e6176d24f675d2e
+ms.openlocfilehash: cd6684dd25a721272c073fcc972724a6b81c0c72
 
 
 ---
@@ -74,6 +74,15 @@ Puede usar una de estas opciones:
 
     - El vínculo **Ejecutar diagnósticos**: esta funcionalidad no está actualmente implementada.
 
+## Métodos abreviados de teclado para la barra Azure Information Protection
+
+Para acceder a la barra Azure Information Protection mediante el uso de métodos abreviados de teclado, utilice la combinación de teclas siguiente:
+
+- Presione **Ctrl** + **Mayús** + **~** 
+
+A continuación, utilice la tecla de tabulación para seleccionar las etiquetas y otros controles en la barra (el icono **Ocultar etiquetas** y el icono **Quitar etiqueta**) y la tecla Intro para seleccionarlos.
+
+
 ## Ubicaciones de archivos
 
 Archivos de cliente:   
@@ -95,6 +104,6 @@ Para ver un ejemplo de cómo personalizar la directiva predeterminada y ver el c
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 
