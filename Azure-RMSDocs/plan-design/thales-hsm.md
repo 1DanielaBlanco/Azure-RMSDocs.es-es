@@ -1,39 +1,32 @@
 ---
-title: "Información sobre módulos HSM de Thales e incorporaciones de Microsoft | Azure RMS"
-description: 
-keywords: 
+title: "Información sobre los HSM de Thales y adiciones de Microsoft&#58; CONTENIDO RETIRADO | Azure RMS"
+description: "La información que aparece en este artículo se ha retirado porque ya no es pertinente, ya que ahora Azure Rights Management usa el Almacén de claves de Azure para las claves de inquilino administradas por el cliente (que también se conoce como BYOK, o &quot;aporte su propia clave&quot;)."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 8c9d61e5-75da-4785-9942-1c6313879fd5
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: c56c4248ac8754c48b6f411a58c6ba93559aed7f
+ms.sourcegitcommit: 5cda55650d6dbab3876f673e2545b95ff5d4969f
+ms.openlocfilehash: 91d8ba5dd9a69088cc2566a165b782c310f10944
 
 
 ---
 
-# Más información acerca de los HSM de Thales y las adiciones de Microsoft
+# Más información sobre los HSM de Thales y adiciones de Microsoft: CONTENIDO RETIRADO
 
-*Se aplica a: Azure Rights Management, Office 365*
+>*Se aplica a: Azure Rights Management, Office 365*
 
-Azure RMS usa módulos HSM de Thales para proteger las claves cuando administra su propia clave de inquilino (escenario "traiga su propia clave" o BYOK).
-
-Thales e-Security es uno de los principales proveedores mundiales de soluciones de cifrado de datos y ciberseguridad para servicios financieros, tecnología punta, industria manufacturera, gobierno y sectores tecnológicos. Las soluciones de Thales cuentan con una trayectoria de 40 años en la protección de información corporativa y gubernamental, son las elegidas por cuatro de las cinco compañías más grandes en el sector energético y aeroespacial, 22 países de la OTAN y aseguran más del 80 % de las operaciones de pago en todo el mundo.
-
-Microsoft ha colaborado con Thales para mejorar la tecnología de vanguardia de los HSM. Estas mejoras te permiten obtener beneficios típicos de servicios hospedados sin la renuncia al control de las claves. De manera específica, estas mejoras permiten que Microsoft administre los HSM para que no lo tenga que hacer usted. Como servicio en la nube, Azure RMS se amplía en muy poco tiempo para cumplir con los picos de uso de la organización. Al mismo tiempo, su clave está protegida dentro de los HSM de Microsoft: usted mantiene el control sobre el ciclo de vida de la clave porque es quien genera la clave y la transfiere a los HSM de Microsoft.
-
-Para obtener más información, vea [HSM de Thales y Azure RMS](http://www.thales-esecurity.com/msrms/cloud) en el sitio web de Thales.
+La información que aparece en este artículo se ha retirado porque ya no es pertinente, ya que ahora Azure Rights Management usa el Almacén de claves de Azure para las claves de inquilino administradas por el cliente (que también se conoce como BYOK, o "aporte su propia clave"). 
 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO2-->
 
 

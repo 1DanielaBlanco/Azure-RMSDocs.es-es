@@ -3,15 +3,15 @@ title: "Tutorial de inicio rápido de Azure Information Protection, paso 2 | Azu
 description: "Paso 2 del tutorial introductorio rápido para probar Microsoft Azure Information Protection para su organización, que contiene solo 4 pasos que deberían tardar menos de 15 minutos."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/07/2016
+ms.date: 09/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
-ms.openlocfilehash: 9125757ba2cce865d73acab341d3e3b6ff36ba57
+ms.sourcegitcommit: ba0f05619e1d13e16b8d4f6d86231b89e9326726
+ms.openlocfilehash: 9dfbeb4c887c619d07b11be0da304ac4f4e7d4a9
 
 
 ---
@@ -24,14 +24,14 @@ ms.openlocfilehash: 9125757ba2cce865d73acab341d3e3b6ff36ba57
 
 Aunque Azure Information Protection incluye una directiva predeterminada que se puede usar sin necesidad de configuración, echaremos un vistazo a esa directiva y haremos algunos cambios.
 
-1. Inicie sesión en el [Portal de Azure](https://portal.azure.com). Si quiere probar la protección, así como la clasificación y etiquetado, inicie sesión como administrador global para que pueda recuperar las plantillas de Azure Rights Management.
+1. En una nueva ventana del explorador, inicie sesión en [Azure Portal](https://portal.azure.com). Si quiere probar la protección, así como la clasificación y etiquetado, inicie sesión como administrador global para que pueda recuperar las plantillas de Azure Rights Management.
  
 2. En el menú del concentrador: haga clic en **Nuevo** > **Seguridad e identidad** > **Azure Information Protection (versión preliminar)** > **Crear**.
 
-    Esto crea la hoja **Azure Information Protection** de modo que la próxima vez que inicie sesión en el portal, pueda seleccionar el servicio desde la lista **Examinar** del concentrador. 
+    Esto crea la hoja **Azure Information Protection** de modo que la próxima vez que inicie sesión en el portal pueda seleccionar el servicio desde la lista **Más servicios** del panel central. 
 
     > [!TIP] 
-    > Seleccione **Anclar al panel** para crear un icono de **Azure Information Protection** en el panel, de modo que pueda omitir el paso de examinar la próxima vez que inicie sesión en el portal.
+    > Seleccione **Anclar al panel** para crear un icono de **Azure Information Protection** en el panel, de modo que pueda omitir el examen del servicio la próxima vez que inicie sesión en el portal.
 
 3.  Explore la hoja principal **Azure Information Protection**, en la que se muestra la directiva predeterminada de Information Protection que se ha creado automáticamente:
     
@@ -53,7 +53,7 @@ Ahora cambiaremos la configuración de una de las etiquetas, **Confidencial**:
 
 2. En la hoja **Etiqueta: Confidencial**, verá la configuración disponible para cada etiqueta. Haga los siguientes cambios:
 
-    a. Si ha activado Azure Rights Management: en la sección **Set RMS template for protecting documents and emails containing this label** (Configuración de la plantilla de RMS para proteger documentos y correos electrónicos que contienen esta etiqueta), si ve **Select RMS template from**, (Seleccionar plantilla de RMS de), mantenga el valor predeterminado de **Azure RMS**. A continuación, en **Select RMS template** (Seleccionar plantilla de RMS), haga clic en el cuadro desplegable y seleccione la plantilla predeterminada **\<nombre de su organización > - Confidencial**. Por ejemplo, si el nombre de la organización es VanArsdel, Ltd, verá **VanArsdel, Ltd - Confidencial**, opción que debe seleccionar. Si ha desactivado esta plantilla predeterminada de Azure Rights Management, seleccione una plantilla alternativa. Pero si selecciona una plantilla de departamento, asegúrese de que su cuenta esté incluida en el ámbito.
+    a. Si ha activado Azure Rights Management: en la sección **Set RMS template for protecting documents and emails containing this label** (Configuración de la plantilla de RMS para proteger documentos y correos electrónicos que contienen esta etiqueta), en **Select RMS template from** (Seleccionar plantilla de RMS de), mantenga el valor predeterminado de **Azure RMS**. A continuación, en **Select RMS template** (Seleccionar plantilla de RMS), haga clic en el cuadro desplegable y seleccione la plantilla predeterminada **\<nombre de su organización > - Confidencial**. Por ejemplo, si el nombre de la organización es VanArsdel, Ltd, verá **VanArsdel, Ltd - Confidencial**, opción que debe seleccionar. Si ha desactivado esta plantilla predeterminada de Azure Rights Management, seleccione una plantilla alternativa. Pero si selecciona una plantilla de departamento, asegúrese de que su cuenta esté incluida en el ámbito.
     
     Si no ha activado Azure Rights Management, no puede usar esta opción.
     
@@ -97,6 +97,6 @@ Ahora que ya ha dado un vistazo a la directiva predeterminada y ha hecho algunos
 [Paso 3 &#187;](infoprotect-tutorial-step3.md)
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

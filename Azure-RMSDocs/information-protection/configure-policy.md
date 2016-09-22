@@ -12,8 +12,8 @@ ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
-ms.openlocfilehash: 1dd3c09f5bf6a38eb3d82bfa3f7a756f5237eab6
+ms.sourcegitcommit: 801ca11da602d4acb9c398c9a89aeb33e45cb0f4
+ms.openlocfilehash: ba7acf835439d059874e0512997b2b591193f0c3
 
 
 ---
@@ -28,9 +28,9 @@ Para configurar la protección, la clasificación y el etiquetado, debe configur
 
 Para configurar la directiva de Azure Information Protection durante la versión preliminar de Azure Information Protection:
 
-1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
+1. En una nueva ventana del explorador, inicie sesión en [Azure Portal](https://portal.azure.com).
 
-2. Vaya a la hoja **Azure Information Protection**: por ejemplo, en el menú del concentrador, haga clic en **Examinar** y comience a escribir **Information Protection** en el cuadro Filtro. De los resultados, seleccione **Azure Information Protection**. 
+2. Vaya a la hoja **Azure Information Protection**: por ejemplo, en el menú del centro, haga clic en **Más servicios** y comience a escribir **Information Protection** en el cuadro Filtro. De los resultados, seleccione **Azure Information Protection**. 
 
     A continuación, verá la hoja **Azure Information Protection** donde puede configurar la directiva de Azure Information Protection que contiene los siguientes elementos:
 
@@ -80,6 +80,6 @@ Para ver un ejemplo de cómo personalizar la directiva predeterminada y ver el c
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

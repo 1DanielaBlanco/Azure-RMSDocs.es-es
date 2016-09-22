@@ -3,7 +3,7 @@ title: "Preguntas más frecuentes de Azure Information Protection (versión prel
 description: "¿Tiene alguna pregunta sobre la versión preliminar de Azure Information Protection? Vea si se ha resuelto aquí."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/07/2016
+ms.date: 09/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0a66851beeedecc3bda92f840f06b56f40c0c4c1
-ms.openlocfilehash: 427b783b41d8977ff07b0fbc929bf0d7afd0721d
+ms.sourcegitcommit: 459cbe65741ea415defced844034f62cfd4654ed
+ms.openlocfilehash: 39334a5cc18f1b45eabd7cf5b4f9b891fb10a5e6
 
 
 ---
@@ -143,6 +143,10 @@ Si fuera necesario, puede crear subetiquetas para describir mejor las subcategor
 
 Aunque en estos momentos puede establecer marcas visuales, protección y condiciones en ambos niveles, cuando use los subniveles, configure estas opciones solo en el subnivel. Si configura las mismas opciones en la etiqueta principal y en su subnivel, la configuración del subnivel tiene prioridad.
 
+## Cuando se etiqueta un correo electrónico, ¿los datos adjuntos reciben automáticamente el mismo etiquetado?
+
+No. Al etiquetar un mensaje de correo electrónico que tiene datos adjuntos, dichos datos adjuntos no heredan la misma etiqueta. Los datos adjuntos siguen sin etiqueta o conservarán una etiqueta aplicada por separado. Sin embargo, si la etiqueta para el correo electrónico aplica protección, dicha protección se aplica a los datos adjuntos.
+
 ## ¿Cómo pueden las soluciones DLP y otras aplicaciones integrarse con Azure Information Protection?
 
 Como Azure Information Protection usa metadatos persistentes para la clasificación, que incluyen una etiqueta no cifrada, esta información puede leerse mediante soluciones DLP y otras aplicaciones. En los archivos, estos metadatos se almacenan en propiedades personalizadas; en los correos electrónicos, esta información se encuentra en los encabezados del correo.
@@ -187,6 +191,6 @@ Después, visite nuestro [sitio de Yammer](https://www.yammer.com/askipteam/#/th
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

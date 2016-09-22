@@ -1,17 +1,17 @@
 ---
-title: "Paso 3 del tutorial de inicio rápido de Azure Information Protection | Azure Rights Management"
+title: "Tutorial de inicio rápido de Azure Information Protection, paso 3 | Azure Information Protection"
 description: "Paso 3 del tutorial introductorio para probar rápidamente Microsoft Azure Information Protection para su organización, que contiene solo 4 pasos que deberían tardar menos de 15 minutos."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/29/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 209815b9-81c9-430c-a82f-32cac991449b
 translationtype: Human Translation
-ms.sourcegitcommit: ba6887a5c9bab18867d07cfc98e8416bf102c211
-ms.openlocfilehash: 83ee0eef8262cc1fe4d18e9d183509847adddd97
+ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
+ms.openlocfilehash: f5e15870a3a67f67261db9c3d1d735c126f48ee2
 
 
 ---
@@ -26,7 +26,7 @@ En este paso, instalará el cliente de Azure Information Protection de forma que
 
 1. En un equipo PC que tenga Office instalado (pero Word no esté abierto en estos momentos), [descargue el cliente de Azure Information Protection](https://www.microsoft.com/en-us/download/details.aspx?id=53018) del Centro de descarga de Microsoft. 
 
-2. Ejecute **AzInfoProtection_v233.exe** y siga las indicaciones para instalar el cliente.
+2. Ejecute **AZInfoProtection.exe** y siga las indicaciones para instalar el cliente.
 
     Para este tutorial, no importa si selecciona la opción para instalar una directiva de demostración, porque nuestra directiva que acabamos de configurar se descargará de Azure y reemplazará la directiva de demostración si está instalada. Pero puede usar la opción de la directiva de demostración si solo quiere probar las etiquetas predeterminadas sin conectarse a Azure Information Protection. 
 
@@ -52,6 +52,6 @@ Está listo para el paso final para ver la clasificación, el etiquetado y la pr
 [Paso 4 &#187;](infoprotect-tutorial-step4.md)
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO1-->
 
 

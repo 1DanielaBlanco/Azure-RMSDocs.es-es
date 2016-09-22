@@ -1,6 +1,6 @@
 ---
 title: "Procedimiento para habilitar la revocación y el seguimiento de documentos | Azure RMS"
-description: "Guía básica para la implementación del seguimiento de documentos"
+description: "Guía básica para implementar el seguimiento de documentos, así como código de ejemplo para las actualizaciones de metadatos y un botón Hacer seguimiento de uso para la aplicación."
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
@@ -16,8 +16,8 @@ ms.suite: ems
 experimental: true
 experiment_id: priyamo-test-20160729
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 156ffcc021fee129557d485cb80bf9c3fcb8950b
+ms.sourcegitcommit: 83c4eb741c484018a2837840465aca3276c785c1
+ms.openlocfilehash: e669c10fff99124966d3f60f5bbf28776b76f85d
 
 
 ---
@@ -166,6 +166,6 @@ El cliente solo tiene que abrir un explorador con la dirección URL apropiada. E
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 
