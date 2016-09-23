@@ -3,7 +3,7 @@ title: "Planeamiento e implementación de la clave de inquilino de Azure Rights 
 description: "Información para tratar de planificar y administrar la clave de inquilino de Rights Management (RMS) para Azure RMS. Por ejemplo, en lugar de que Microsoft administre su clave de inquilino (valor predeterminado), podría administrar su propia clave de inquilino para cumplir con las normas específicas que se aplican a su organización. La administración de su propia clave de inquilino también se conoce aportar su propia clave, o BYOK, por sus siglas del inglés."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/01/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eec7cc8b20435df11d7b8f89c4b9e9d0f039dc55
-ms.openlocfilehash: 25d47ab488474ed756b3139bb9d42d420cea25f7
+ms.sourcegitcommit: df79a02238c7cbadaae450ad8dabc03478de27e9
+ms.openlocfilehash: 0e3e77073898e2ae9f84f555183fb6fcbc7d2d8a
 
 
 ---
@@ -96,7 +96,7 @@ Cuando la clave se transfiere al almacén de claves, se le asigna un identificad
 
 Sin embargo, antes de que Azure RMS pueda usar la clave, es necesario autorizar a Azure RMS para usar la clave en el almacén de claves de la organización. Para hacerlo, el administrador del Almacén de claves de Azure usa el cmdlet de PowerShell [Set-AzureRmKeyVaultAccessPolicy](https://msdn.microsoft.com/library/mt603625.aspx) y concede permisos a la entidad de servicio de Azure RMS, **Microsoft.Azure.RMS**. Por ejemplo:
 
-    Set-AzureRmKeyVaultAccessPolicy -VaultName 'ContosoRMS-kv' -ResourceGroupName 'ContosoRMS-byok-rg' -ServicePrincipalName Microsoft.Azure.RMS -PermissionsToKeys decrypt,encrypt,unwrapkey,wrapkey,verify,sign 
+    Set-AzureRmKeyVaultAccessPolicy -VaultName 'ContosoRMS-kv' -ResourceGroupName 'ContosoRMS-byok-rg' -ServicePrincipalName Microsoft.Azure.RMS -PermissionsToKeys decrypt,encrypt,unwrapkey,wrapkey,verify,sign,get
 
 Ahora está preparado para configurar Azure RMS y usar esta clave como la clave de inquilino de Azure RMS de la organización. Con los cmdlets de Azure RMS, primero conéctese al Azure RMS e inicie sesión:
 
@@ -136,6 +136,6 @@ Ahora que ha realizado la planeación, y si es necesario, ha generado su clave d
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

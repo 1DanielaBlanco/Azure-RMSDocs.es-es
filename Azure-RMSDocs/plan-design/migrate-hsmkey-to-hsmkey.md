@@ -3,7 +3,7 @@ title: "Paso 2&colon; Migración entre claves protegidas por HSM | Azure RMS"
 description: "Instrucciones que forman parte de la ruta de migración de AD RMS a Azure Rights Management y que solo son válidas si la clave de AD RMS está protegida por HSM y quiere migrar a Azure Rights Management con una clave de inquilino protegida con HSM en Azure Key Vault."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: c5bbf37e-f1bf-4010-a60f-37177c9e9b39
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ada00b6f6298e7d359c73eb38dfdac169eacb708
-ms.openlocfilehash: 32cedc573aa6d14c4897642789c8e58b788279f2
+ms.sourcegitcommit: df79a02238c7cbadaae450ad8dabc03478de27e9
+ms.openlocfilehash: 539ad9db29f7795d3f56655a64f49532ef6ff6e8
 
 
 ---
@@ -55,7 +55,7 @@ El administrador del Almacén de claves de Azure realiza estos procedimientos.
     
     Por ejemplo, si el almacén de claves que ha creado para Azure RMS tiene el nombre contoso-byok-ky y su grupo de recursos se llama contoso-byok-rg, ejecute el comando siguiente:
     
-        Set-AzureRmKeyVaultAccessPolicy -VaultName "contoso-byok-kv" -ResourceGroupName "contoso-byok-rg" -ServicePrincipalName Microsoft.Azure.RMS -PermissionsToKeys decrypt,encrypt,unwrapkey,wrapkey,verify,sign
+        Set-AzureRmKeyVaultAccessPolicy -VaultName "contoso-byok-kv" -ResourceGroupName "contoso-byok-rg" -ServicePrincipalName Microsoft.Azure.RMS -PermissionsToKeys decrypt,encrypt,unwrapkey,wrapkey,verify,sign,get
 
 
 Después de preparar la clave de HSM en el Almacén de claves de Azure para Azure RMS, estará listo para importar el archivo de clave de HSM y los datos de configuración de AD RMS.
@@ -94,6 +94,6 @@ Ahora puede ir al [paso 3. Active el inquilino de RMS](migrate-from-ad-rms-phase
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 
