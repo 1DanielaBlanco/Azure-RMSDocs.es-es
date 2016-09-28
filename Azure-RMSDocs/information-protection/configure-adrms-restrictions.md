@@ -2,15 +2,15 @@
 title: Restricciones de HYOK | Azure Information Protection
 description: Identify the limitations, prerequisites, and recommendations if you select AD RMS protection with Azure Information Protection. This solution is sometimes referred to as "hold your own key" (HYOK).
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
 translationtype: Human Translation
-ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
-ms.openlocfilehash: fe0f492b94cbcc437c722daae9c3c56820593566
+ms.sourcegitcommit: 593ec90a781a41e3b93a4c31d22a3ca547b49bc7
+ms.openlocfilehash: faf3180ca290f1668233663099b924ff199524d9
 
 
 ---
@@ -43,6 +43,16 @@ En este escenario HYOK, las directivas de permisos y la clave privada de la orga
 > Use esta configuración solo cuando tenga que hacerlo y solo en documentos y correos electrónicos que lo requieran. La protección de AD RMS no ofrece las ventajas enumeradas que obtiene al usar la protección de Azure RMS y su finalidad es "opacidad de datos a toda costa".
 
 Los usuarios no sabrán si una etiqueta usa la protección de AD RMS en lugar de la protección de Azure RMS. Debido a las restricciones de la protección de AD RMS, asegúrese de que proporciona instrucciones claras sobre cuándo deben seleccionar los usuarios las etiquetas que aplican la protección de AD RMS.
+
+## Limitaciones
+
+Además de no poder gozar de los beneficios que se obtienen al utilizar la protección de Azure RMS, el uso de la protección de AD RMS con Azure Information Protection tiene las limitaciones siguientes:
+
+- No es compatible con Office 2010 ni Office 2007.
+
+- Si también utiliza la protección de Azure RMS: no use la opción **No reenviar** al configurar una etiqueta para la protección de Azure RMS. También debe indicar a los usuarios que no seleccionen manualmente esta opción en Outlook. 
+
+    Si una etiqueta aplica la opción No reenviar (o bien si la aplican manualmente los usuarios), es posible que la opción se aplique a través de la implementación de AD RMS, y no a través del servicio deseado de Azure Rights Management. En este caso, las personas con las que comparta contenido de forma externa no podrán abrir los mensajes de correo electrónico a los que se haya aplicado esta opción No reenviar.
 
 ## Requisitos para HYOK
 
@@ -94,6 +104,6 @@ Para configurar una etiqueta para la protección de AD RMS, consulte [Configurac
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO4-->
 
 
