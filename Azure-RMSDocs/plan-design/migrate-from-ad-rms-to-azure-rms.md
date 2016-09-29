@@ -3,7 +3,7 @@ title: "Migración desde AD RMS a Azure Rights Management | Azure RMS"
 description: "Instrucciones para migrar la implementación de Active Directory Rights Management Services (AD RMS) en Azure Rights Management (Azure RMS). Después de la migración, los usuarios seguirán teniendo acceso a documentos y mensajes de correo electrónico que su organización protege mediante AD RMS, mientras que el contenido protegido recientemente usará Azure RMS."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ada00b6f6298e7d359c73eb38dfdac169eacb708
-ms.openlocfilehash: 6aa75f5e6b326068951b3d4d65f337c15a475029
+ms.sourcegitcommit: 5c20772240961bdd3052e55a19eaca21ef7da003
+ms.openlocfilehash: 01c107979265abf0d34060eccf09ca32c0086ab8
 
 
 ---
@@ -46,7 +46,7 @@ Antes de iniciar la migración a Azure RMS, asegúrese de que se cumplen los sig
         
     - Modo criptográfico 2:
     
-        - Es necesario que los servidores y los clientes de AD RMS se ejecuten en el modo criptográfico 2 antes de iniciar la migración a Azure RMS. Para obtener más información, vea [AD RMS Cryptographic Modes](https://technet.microsoft.com/library/hh867439(v=ws.10).aspx) (Modos criptográficos de AD RMS).
+        - Es necesario que los servidores y los clientes de AD RMS se ejecuten en el modo criptográfico 2 antes de iniciar la migración a Azure RMS. Aunque la clave actual del certificado emisor de licencias de servidor (SLC) debe usar el modo criptográfico 2, las claves anteriores que se hayan configurado para el modo criptográfico 1 también se admiten en Azure RMS como claves archivadas. Para obtener más información sobre los modos criptográficos y como pasar al modo criptográfico 2, consulte [AD RMS Cryptographic Modes](https://technet.microsoft.com/library/hh867439(v=ws.10).aspx) (Modos criptográficos de AD RMS).
         
     - Se admiten todas las topologías de AD RMS válidas:
     
@@ -184,6 +184,6 @@ Para iniciar la migración, vaya a [Fase 1: Configuración del lado servidor](mi
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 
