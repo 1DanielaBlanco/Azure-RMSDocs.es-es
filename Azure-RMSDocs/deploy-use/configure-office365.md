@@ -3,7 +3,7 @@ title: "Office 365&colon; Configuración para clientes y servicios en línea | A
 description: "Información e instrucciones para que los administradores configuren Office 365 para trabajar con Azure Rights Management (Azure RMS)."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
-ms.openlocfilehash: 5e9ecbdef4adb4995199b059903902df078471e5
+ms.sourcegitcommit: 18498a6d1edac11b20842b0cca0c4559909d681e
+ms.openlocfilehash: e8e2abe6006f40f5c2e34ef0d4ac3f1ccaf66516
 
 
 ---
@@ -63,7 +63,7 @@ Los pasos siguientes proporcionan un conjunto típico de comandos que se ejecuta
 
 4.  Especifique la ubicación de la clave de inquilino de Azure RMS, según dónde se creara el inquilino de su organización:
 
-    Para Norteamérica (y las suscripciones de gobierno):
+    Para América del Norte:
 
     ```
     Set-IRMConfiguration -RMSOnlineKeySharingLocation "https://sp-rms.na.aadrm.com/TenantManagement/ServicePartner.svc"
@@ -82,6 +82,11 @@ Los pasos siguientes proporcionan un conjunto típico de comandos que se ejecuta
 
     ```
     Set-IRMConfiguration -RMSOnlineKeySharingLocation "https://sp-rms.sa.aadrm.com/TenantManagement/ServicePartner.svc"
+    ```
+    Para Office 365 Administración Pública (nube de la comunidad de administración pública):
+
+    ```
+    Set-IRMConfiguration -RMSOnlineKeySharingLocation "https://sp-rms.govus.aadrm.com/TenantManagement/ServicePartner.svc"
     ```
 
 5.  Importe datos de configuración de Azure RMS en Exchange Online, en forma del dominio de publicación de confianza (TPD). Esto incluye la clave de inquilino y las plantillas de Azure RMS:
@@ -1105,6 +1110,6 @@ Disconnect-SPOService -ErrorAction SilentlyContinue
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 
