@@ -1,4 +1,4 @@
-# [Conceptos básicos y exploración](/rights-management/understand-explore/azure-rights-management)
+# [Conceptos básicos y exploración](/rights-management/understand-explore/what-is-information-protection)
 # [Introducción](/rights-management/get-started/requirements-azure-rms)
 # [Planificación y diseño](/rights-management/plan-design/deployment-roadmap)
 # [Implementación y uso del servicio](/rights-management/deploy-use/activate-service)
@@ -10,9 +10,9 @@
 ### [Introducción](get-started.md)
 #### [Novedades](release-notes.md)
 #### [Configuración del entorno del desarrollador](setup-Developer-environment.md)
-#### [Programa de instalación de Android](android-sdk.md)
+#### [Configuración de Android](android-sdk.md)
 #### [Instalación de Linux](linux-setup.md)
-#### [Programa de instalación de iOS y OS X](ios-sdk.md)
+#### [Configuración de iOS y OS X](ios-sdk.md)
 #### [Programa de instalación de Windows Phone](windows-phone-apps.md)
 #### [Programa de instalación de la Tienda Windows](winrt-sdk.md)
 #### [Código de ejemplo](code-examples.md)
@@ -65,9 +65,8 @@
 #### [Funciones](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/functions)
 #### [Estructuras](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/structures)
 #### [Códigos de error](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/Error codes)
-# [Azure Information Protection (versión preliminar)](/rights-management/information-protection/what-is-information-protection)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 
