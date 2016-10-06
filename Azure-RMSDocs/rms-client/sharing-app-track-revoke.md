@@ -1,34 +1,34 @@
 ---
-title: "Seguimiento y revocación de documentos cuando se usa la aplicación RMS sharing | Azure RMS"
+title: "Seguimiento y revocación de documentos cuando se utiliza la aplicación RMS sharing | Azure Information Protection"
 description: "Después de haber protegido los documentos mediante la aplicación RMS sharing, puede realizar el seguimiento de cuántas personas usan tales documentos protegidos. Si es necesario, también puede revocar el acceso a estos documentos cuando ya no desee seguir compartiéndolos."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 61f349ce-bdd2-45c1-acc5-bc83937fb187
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 44541b6fe2567d23174b26cb42fec0731f5d3f58
-ms.openlocfilehash: 2117291a7204dae86b3a6d378ab6af4d84435417
+ms.sourcegitcommit: 805644a7c6dacc00519ad9ac07f39367d0784745
+ms.openlocfilehash: b8cc9dd2984f7853e1fbacebbb4f6934f918200e
 
 
 ---
 
 # Seguimiento y revocación de documentos cuando se utiliza la aplicación RMS sharing
 
->*Se aplica a: Azure Rights Management, Windows 10, Windows 7 con SP1, Windows 8, Windows 8.1*
+>*Se aplica a: Azure Information Protection, Windows 10, Windows 7 con SP1, Windows 8 y Windows 8.1*
 
-Una vez que haya protegido sus documentos mediante la aplicación de uso compartido de RMS, si su organización usa Azure Rights Management en lugar de Active Directory Rights Management Services, podrá hacer un seguimiento del uso que se hace de sus documentos protegidos. Si es necesario, también puede revocar el acceso a estos documentos cuando ya no desee seguir compartiéndolos. Para ello, use el **sitio de seguimiento de documentos**, al que puede tener acceso desde equipos Windows, equipos Mac e incluso tabletas y teléfonos.
+Una vez que haya protegido sus documentos mediante la aplicación RMS sharing, si su organización usa Azure Information Protection en lugar de Active Directory Rights Management Services, podrá realizar un seguimiento del uso que se hace de sus documentos protegidos. Si es necesario, también puede revocar el acceso a estos documentos cuando ya no desee seguir compartiéndolos. Para ello, use el **sitio de seguimiento de documentos**, al que puede tener acceso desde equipos Windows, equipos Mac e incluso tabletas y teléfonos.
 
 <div style="padding-top: 56.25%; position: relative; width: 100%;">
 <iframe style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;" width="100%" height="100%" src="https://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation/player" frameborder="0" allowfullscreen></iframe>
 </div>
 
-Cuando tenga acceso a este sitio, inicie sesión para hacer un seguimiento de sus documentos. Siempre que la organización tenga una [suscripción que admite el seguimiento y la revocación de documentos](https://technet.microsoft.com/dn858608.aspx) y usted tenga asignada una licencia para esta suscripción, puede ver quién intentó abrir los documentos que protegió y si lo lograron (se autenticaron correctamente) o no. las veces que intentaron acceder al documento y su ubicación en el tiempo. Además:
+Cuando tenga acceso a este sitio, inicie sesión para hacer un seguimiento de sus documentos. Siempre que la organización tenga una [suscripción que admite el seguimiento y la revocación de documentos](https://go.microsoft.com/fwlink/?LinkId=827589) y usted tenga asignada una licencia para esta suscripción, puede ver quién intentó abrir los documentos que protegió y si lo lograron (se autenticaron correctamente) o no. las veces que intentaron acceder al documento y su ubicación en el tiempo. Además:
 
 -   Si quiere dejar de compartir un documento: Haga clic en **Revocar el acceso**, anote el período de tiempo que el documento seguirá estando disponible y decida si va a dejar que la gente sepa que va a revocar el acceso al documento anteriormente compartido. También, proporcione un mensaje personalizado. Al revocar un documento, no elimina el documento que ha compartido, pero los usuarios autorizados ya no podrán abrirlo.
 
@@ -36,7 +36,7 @@ Cuando tenga acceso a este sitio, inicie sesión para hacer un seguimiento de su
 
 -   Si quiere configurar notificaciones por correo electrónico: Haga clic en **Configuración** y seleccione cómo, y si, se le notificará por correo electrónico cuando se acceda al documento.
 
-- Si quiere realizar un seguimiento y revocar documentos compartidos para otros usuarios: los administradores de Azure RMS pueden realizar un seguimiento y revocar documentos para otros usuarios al hacer clic en el icono de administración. Solo los administradores ven este icono.
+- Si quiere realizar un seguimiento de los documentos compartidos y revocarlos para otros usuarios: los administradores de Azure Information Protection pueden hacer clic en el icono Administrador para realizar estas acciones. Solo los administradores ven este icono.
 
 -   Si tiene alguna pregunta o quiere proporcionar comentarios sobre el sitio de seguimiento de documentos: Haga clic en el icono de ayuda para obtener acceso a [P+F sobre el seguimiento de documentos](http://go.microsoft.com/fwlink/?LinkId=523977).
 
@@ -53,7 +53,7 @@ Cuando tenga acceso a este sitio, inicie sesión para hacer un seguimiento de su
 Si no ve estas opciones de RMS, es probable que la aplicación RMS sharing no esté instalada en el equipo, que no esté instalada la última versión o que el equipo deba reiniciarse para completar la instalación. Para más información sobre cómo instalar la aplicación de uso compartido, consulte [Descarga e instalación de la aplicación Rights Management sharing](install-sharing-app.md).
 
 > [!NOTE] 
-> Si tiene instalada la versión preliminar del [cliente de Azure Information Protection](../information-protection/info-protect-client.md) (versión 1.0.233 o posterior), también puede acceder al sitio de seguimiento de documentos mediante el botón **Proteger**: 
+> Si tiene instalado el [cliente de Azure Information Protection](../rms-client/info-protect-client.md), también puede obtener acceso al sitio de seguimiento de documentos mediante el botón **Proteger**: 
 > 
 > - En una aplicación de Office, en la pestaña **Inicio**, en el grupo **Protección**, haga clic en **Proteger** > **Hacer seguimiento de uso**. 
 
@@ -106,6 +106,6 @@ Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 
