@@ -1,27 +1,27 @@
 ---
-title: Change permissions on files that have been protected by Rights Management (Cambiar permisos de archivos protegidos por Rights Management) | Azure RMS
+title: Cambiar los permisos de archivos protegidos por Rights Management | Azure Information Protection
 description: "Cuando un archivo está protegido por Rights Management, puede cambiar los permisos protegiéndolo de nuevo y especificando todos los usuarios que deben tener acceso a él y los permisos que quiere otorgarles."
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 08/03/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 5ac121b3-d7a0-40e4-8fe7-90bf4cf796f1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 214890cee5975c05798014ddb8d153faa9ca3998
+ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
+ms.openlocfilehash: 99dcbeb68cbbe363cfd1e6ded07882f01621e438
 
 
 ---
 
 # Change permissions on files that have been protected by Rights Management (Cambiar permisos de archivos protegidos por Rights Management)
 
->*Se aplica a: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 con SP1, Windows 8, Windows 8.1*
+>*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 con SP1, Windows 8 y Windows 8.1*
 
 Cuando un archivo está protegido por Rights Management, puede cambiar los permisos protegiéndolo de nuevo y especificando todos los usuarios que deben tener acceso a él y los permisos que quiere otorgarles.
 
@@ -62,9 +62,9 @@ Si quiere quitar todos los permisos para que el archivo ya no está protegido, v
     En caso de tener permisos para volver a proteger el archivo, es probable que vea un cuadro de diálogo en el que se le indica que el archivo se está protegiendo y, después, regrese al Explorador de archivos. El archivo o archivos seleccionados ahora están protegidos con sus cambios. 
 
 > [!NOTE]
-> Para poder volver a proteger el archivo, RMS debe confirmar primero que está autorizado para llevar a cabo esta acción sobre este archivo, para lo que comprueba su nombre de usuario y contraseña. En algunos casos, esto se puede almacenar en caché y no verá un mensaje que le solicite sus credenciales. En otros casos, se le pedirá que proporcione sus credenciales.
+> Para poder volver a proteger el archivo, el servicio Rights Management debe confirmar primero que está autorizado para llevar a cabo esta acción sobre este archivo. Para ello, comprobará su nombre de usuario y contraseña. En algunos casos, esto se puede almacenar en caché y no verá un mensaje que le solicite sus credenciales. En otros casos, se le pedirá que proporcione sus credenciales.
 >
-> Si su organización no usa Azure Rights Management (Azure RMS) o AD RMS, puede solicitar una cuenta gratuita que acepte sus credenciales para que pueda usar los archivos protegidos por RMS:
+> Si su organización no usa Azure Information Protection ni AD RMS, puede solicitar una cuenta gratuita que acepte sus credenciales para que pueda usar los archivos protegidos mediante RMS:
 >
 > -   Para solicitar esta cuenta, haga clic en el vínculo para solicitar [RMS para usuarios](http://go.microsoft.com/fwlink/?LinkId=309469).
 >
@@ -96,6 +96,6 @@ Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

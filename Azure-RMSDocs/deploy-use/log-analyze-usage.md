@@ -1,68 +1,68 @@
 ---
-title: "Registro y análisis del uso de Azure Rights Management | Azure RMS"
+title: "Registro y análisis del servicio Azure Rights Management | Azure Information Protection"
 description: "Información e instrucciones sobre cómo usar el registro de uso con Azure Rights Management (Azure RMS)."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
-ms.openlocfilehash: c1727f1a5d6747977da7113b6dc0ac37ebefe386
+ms.sourcegitcommit: e33f1e54c21507999d30dcee2ce63c8eb2d69895
+ms.openlocfilehash: 33520bcfc36ed0a022b87c4b2db1e6fcd7a6eb14
 
 
 ---
 
-# Registro y análisis del uso de Azure Rights Management
+# Registro y análisis del uso del servicio Azure Rights Management
 
->*Se aplica a: Azure Rights Management, Office 365*
+>*Se aplica a: Azure Information Protection y Office 365*
 
-Use la información de este tema para comprender cómo puede usar el registro de uso con Azure Rights Management (Azure RMS). El servicio Azure Rights Management permite registrar todas las solicitudes que realice para su organización, lo que incluye solicitudes de usuarios, acciones llevadas a cabo por administradores de Rights Management en su organización y acciones llevadas a cabo por operadores de Microsoft para admitir su implementación de Azure Rights Management.
+Use esta información como ayuda para comprender cómo puede usar el registro de uso del servicio Azure Rights Management de Azure Information Protection. Este servicio proporciona protección para los datos de los documentos y mensajes de correo electrónico de su organización y puede registrar todas las solicitudes para obtener acceso a ellos. Entre ellas, se incluyen las solicitudes de los usuarios, las acciones que realicen los administradores de este servicio y las que realicen los operadores de Microsoft para admitir su implementación Azure Information Protection.
 
-A continuación, puede usar estos registros de Azure Rights Management para admitir los siguientes escenarios empresariales:
+A continuación, puede usar estos registros del servicio Azure Rights Management para admitir los siguientes escenarios empresariales:
 
 -   **Analizar enfoques empresariales**
 
-    Los registros generados por Azure Rights Management se pueden importar en un repositorio que elija (como una base de datos, un sistema de procesamiento analítico en línea (OLAP) o un sistema de asignar-reducir) para analizar la información y producir informes. Por ejemplo, podría notificar quién está accediendo a sus datos protegidos con RMS. Puede determinar a qué datos protegidos con RMS está accediendo la gente y desde dónde y desde qué dispositivos. Puede averiguar si estas personas logran leer contenido protegido. También puede identificar qué personas han leído un documento importante que estaba protegido.
+    Los registros que genera el servicio Azure Rights Management se pueden importar al repositorio que elija (como una base de datos, un sistema de procesamiento analítico en línea —OLAP— o un sistema de asignar y reducir) para analizar la información y producir informes. Por ejemplo, podría identificar quién está obteniendo acceso a sus datos protegidos. Puede determinar a qué datos protegidos están obteniendo acceso los usuarios, así como desde dónde y desde qué dispositivos. Puede averiguar si estas personas logran leer contenido protegido. También puede identificar qué personas han leído un documento importante que estaba protegido.
 
 -   **Supervisar para controlar el abuso**
 
-    La información del registro de Azure Rights Management está a su disposición casi en tiempo real, de manera que puede supervisar de manera continua el uso que se haga en su empresa de Azure Rights Management. El 99,9% de los registros están disponibles en un plazo de 15 minutos de una acción iniciada por RMS.
+    La información de registro de Azure Rights Management está a su disposición casi en tiempo real, por lo que puede supervisar de manera continua el uso que se haga en su empresa del servicio Azure Rights Management. El 99,9 % de los registros están disponibles a los 15 minutos de que se realice la acción en el servicio.
 
-    Por ejemplo, puede que desee que se le alerte de si surge un aumento repentino de las personas que leen datos protegidos por RMS fuera de las hora laborales estándar, lo que podrían indica que un usuario malintencionado está recopilando información para venderla a competidores. O bien, si el mismo usuario aparentemente accede a los datos desde dos direcciones IP diferentes dentro de un breve intervalo de tiempo, lo que podría indicar que se ha puesto en peligro una cuenta de usuario.
+    Por ejemplo, puede que quiera que se le envíe una alerta si se produce un aumento repentino de los usuarios que leen los datos protegidos fuera del horario laboral estándar, lo que podría indicar que un usuario malintencionado está recopilando información para venderla a competidores. O bien, si el mismo usuario aparentemente accede a los datos desde dos direcciones IP diferentes dentro de un breve intervalo de tiempo, lo que podría indicar que se ha puesto en peligro una cuenta de usuario.
 
 -   **Realizar análisis forenses**
 
-    Si tiene una pérdida de información, es probable que se le pregunte quién accedió recientemente a documentos específicos y a qué información accedió la persona sospechosa. Puede responder a este tipo de preguntas con Azure Rights Management y los registros, porque las personas que usan el contenido protegido siempre deben obtener una licencia de Azure Rights Management para abrir documentos e imágenes que estén protegidos con Azure Rights Management, incluso en el caso de que dichos archivos se muevan por correo electrónico o se copien en unidades USB u otras unidades de almacenamiento. Esto significa que puede usar los registros de Azure Rights Management como el origen fundamental de la información para realizar el análisis forense cuando protege sus datos con Azure Rights Management.
+    Si tiene una pérdida de información, es probable que se le pregunte quién accedió recientemente a documentos específicos y a qué información accedió la persona sospechosa. Puede responder a este tipo de preguntas cuando use este registro, ya que los usuarios que usan contenido protegido siempre deben obtener una licencia de Rights Management para abrir documentos e imágenes que estén protegidos mediante el servicio Azure Rights Management, incluso en el caso de que esos archivos se muevan por correo electrónico o se copien en unidades USB u otras unidades de almacenamiento. Esto significa que podrá usar los registros como origen fundamental de la información para realizar el análisis forense cuando proteja sus datos con el servicio Azure Rights Management.
 
 > [!NOTE]
-> Si solo está interesado en el registro de las tareas administrativas para Azure Rights Management y no desea realizar un seguimiento del modo en que los usuarios usan Rights Management, puede usar el cmdlet [Get-AadrmAdminLog](https://msdn.microsoft.com/library/azure/dn629430.aspx) de Windows PowerShell de Azure Rights Management.
+> Si solo está interesado en el registro de las tareas administrativas del servicio Azure Rights Management y no quiere realizar un seguimiento del modo en que los usuarios usan el servicio Rights Management, puede usar el cmdlet [Get-AadrmAdminLog](https://msdn.microsoft.com/library/azure/dn629430.aspx) de Windows PowerShell de Azure Rights Management.
 > 
 > También puede usar el Portal de Azure clásico para ver informes de uso de alto nivel que incluyen **Resumen de RMS**, **Usuarios activos de RMS**, **Plataformas de dispositivos RMS** y **Uso de aplicaciones de RMS**. Para tener acceso a estos informes desde el Portal de Azure clásico, haga clic en **Active Directory**, seleccione un directorio y ábralo y, luego, haga clic en **INFORMES**.
 
 Use las secciones siguientes para más información sobre el registro de uso de Azure Rights Management.
 
 ## Habilitación del registro de uso de Azure Rights Management
-A partir de febrero de 2016, el registro de uso de Azure Rights Management se habilita de forma predeterminada para todos los clientes. Esto se aplica a los clientes que han activado su servicio de Azure RMS antes de febrero de 2016 y a los clientes que han activado el servicio después de febrero de 2016. 
+A partir de febrero de 2016, el registro de uso de Azure Rights Management se habilita de forma predeterminada para todos los clientes. Esto se aplica a los clientes que activaron su servicio de Azure Rights Management antes de febrero de 2016 y a los clientes que activaron el servicio después de febrero de 2016. 
 
 > [!NOTE]
 > Ni el almacenamiento de registro ni la funcionalidad de la característica de registro generan costos adicionales.
 > 
-> Si usó el registro de uso para Azure RMS antes de febrero de 2016, precisó de una suscripción a Azure y de almacenamiento suficiente en Azure, lo que ya no sucede.
+> Si utilizó el registro de uso de Azure Rights Management antes de febrero de 2016, necesitaría una suscripción a Azure y almacenamiento suficiente en Azure, lo que ya no sucede.
 
 
 
 ## Cómo acceder a los registros de uso de Azure Rights Management y usarlos
-Azure Rights Management escribe registros en su cuenta de almacenamiento de Azure como una serie de blobs. Cada blob contiene uno o más registros, en formato de registro extendido W3C. Los nombres de blob son números, en el orden en que se crearon. La sección [Cómo interpretar los registros de uso de Azure Rights Management](#how-to-interpret-your-azure-rights-management-usage-logs) que aparece más adelante en este documento contiene más información acerca del contenido del registro y su creación.
+El servicio Azure Rights Management escribe los registros en su cuenta de almacenamiento de Azure como serie de blobs. Cada blob contiene uno o más registros, en formato de registro extendido W3C. Los nombres de blob son números, en el orden en que se crearon. La sección [Cómo interpretar los registros de uso de Azure Rights Management](#how-to-interpret-your-azure-rights-management-usage-logs) que aparece más adelante en este documento contiene más información acerca del contenido del registro y su creación.
 
 Puede que los registros tarden en aparecer en su cuenta de almacenamiento después de realizar alguna acción de Azure Rights Management. La mayoría de los registros aparecen en 15 minutos. Recomendamos que descargue los registros en el almacenamiento local, como una carpeta local, una base de datos o un repositorio de asignar-reducir.
 
-Para descargar sus registros de uso, usará el módulo de administración de Azure RMS para Windows PowerShell. Para obtener instrucciones de instalación, consulte [Instalación de Windows PowerShell para Azure Rights Management](install-powershell.md). Si ha descargado anteriormente este módulo de Windows PowerShell, ejecute el siguiente comando para comprobar que su número de versión es **2.4.0.0**: como mínimo: `(Get-Module aadrm -ListAvailable).Version` 
+Para descargar sus registros de uso, deberá usar el módulo de administración de Azure Rights Management para Windows PowerShell. Para obtener instrucciones de instalación, consulte [Instalación de Windows PowerShell para Azure Rights Management](install-powershell.md). Si ha descargado anteriormente este módulo de Windows PowerShell, ejecute el siguiente comando para comprobar que su número de versión es **2.4.0.0**: como mínimo: `(Get-Module aadrm -ListAvailable).Version` 
 
 ### Descargar sus registros de uso mediante PowerShell
 
@@ -96,10 +96,10 @@ De forma predeterminada, este cmdlet usa tres subprocesos para descargar los reg
 >
 > Por ejemplo, puede ejecutar el siguiente comando para importar todas la información en un formato de archivo .log: `logparser –i:w3c –o:csv "SELECT * INTO AllLogs.csv FROM *.log"`
 
-#### Si ha habilitado manualmente el registro de uso de Azure RMS antes del cambio de registro (22 de febrero de 2016)
+#### Si habilitó manualmente el registro de uso de Azure Rights Management antes del cambio de registro (22 de febrero de 2016).
 
 
-Si ha usado el registro de uso antes del cambio de registro, tendrá registros de uso en su cuenta de almacenamiento de Azure configurada. Microsoft no copiará estos registros de su cuenta de almacenamiento a la nueva cuenta de almacenamiento administrada de Azure RMS como parte de este cambio de registro. Es responsable de administrar el ciclo de vida de los registros generados anteriormente y puede usar el cmdlet [Get-AadrmUsageLog](https://msdn.microsoft.com/library/dn629401.aspx) para descargar sus registros antiguos. Por ejemplo:
+Si ha usado el registro de uso antes del cambio de registro, tendrá registros de uso en su cuenta de almacenamiento de Azure configurada. Microsoft no copiará estos registros de su cuenta de almacenamiento a la nueva cuenta de almacenamiento administrada de Azure Rights Management como parte de este cambio de registro. Es responsable de administrar el ciclo de vida de los registros generados anteriormente y puede usar el cmdlet [Get-AadrmUsageLog](https://msdn.microsoft.com/library/dn629401.aspx) para descargar sus registros antiguos. Por ejemplo:
 
 - Para descargar todos los registros disponibles en su carpeta E:\logs: `Get-AadrmUsageLog -Path "E:\Logs"`
     
@@ -107,17 +107,17 @@ Si ha usado el registro de uso antes del cambio de registro, tendrá registros d
 
 Tenga en cuenta que no tiene que descargar registros con el cmdlet Get-AadrmUsageLog si se aplica algo de lo siguiente:
 
--  Activó Azure Rights Management el 22 de febrero de 2016 o antes, pero no habilitó la característica de registro de uso.
+-  Activó el servicio Azure Rights Management el 22 de febrero de 2016 o antes, pero no habilitó la característica de registro de uso.
 
-- Ha activado Azure Rights Management después del 22 de febrero de 2016.
+- Activó el servicio Azure Rights Management después del 22 de febrero de 2016.
 
 ## Interpretación de los registros de uso de Azure Rights Management
 Use la siguiente información como ayuda para interpretar los registros de uso de Azure Rights Management.
 
 ### La secuencia de registro
-Azure Rights Management escribe los registros como una serie de blobs. 
+El servicio Azure Rights Management escribe los registros como serie de blobs. 
 
-Cada entrada en el registro tiene una marca de tiempo UTC. Dado que Azure Rights Management se ejecuta en varios servidores de varios centros de datos, a veces puede parecer que los registros estén fuera de secuencia, aunque estén ordenados por su marca de tiempo. Sin embargo, la diferencia es mínima y generalmente se encuentra en un margen de un minuto. En la mayoría de los casos, este asunto no sería un problema para análisis de registros.
+Cada entrada en el registro tiene una marca de tiempo UTC. Dado que el servicio Azure Rights Management se ejecuta en varios servidores de varios centros de datos, a veces puede parecer que los registros estén fuera de secuencia, incluso aunque estén ordenados por su marca de tiempo. Sin embargo, la diferencia es mínima y generalmente se encuentra en un margen de un minuto. En la mayoría de los casos, este asunto no sería un problema para análisis de registros.
 
 ### El formato del blob
 Cada blob está en formato de registro extendido W3C. Empieza por las siguientes dos líneas:
@@ -165,7 +165,7 @@ Aunque el campo user-id suele indicar el usuario que hay realizado la solicitud,
     Las solicitudes de este conector se registran con el nombre de entidad de servicio de **Aadrm_S-1-7-0**, que se genera automáticamente al instalar el conector RMS.
 
 #### Tipos de solicitudes típicas
-Hay muchos tipos de solicitudes de Azure Rights Management, pero en la tabla siguiente se identifican algunos de los tipos que normalmente se usan más.
+Hay muchos tipos de solicitudes del servicio Azure Rights Management, pero en la tabla siguiente se identifican algunos de los tipos que normalmente se usan más.
 
 |Tipo de solicitud|Descripción|
 |----------------|---------------|
@@ -192,10 +192,10 @@ Hay muchos tipos de solicitudes de Azure Rights Management, pero en la tabla sig
 |GetConnectorAuthorizations|Se realiza una llamada desde los conectores de RMS para obtener su configuración de la nube.|
 |GetRecipients|Se realiza una llamada desde el sitio de seguimiento de documentos para ir a la vista de lista de un solo documento.|
 |GetSingle|Se realiza una llamada desde el sitio de seguimiento de documentos para ir a la página de un **solo documento**.|
-|GetTenantFunctionalState|El Portal de Azure clásico está comprobando si Azure RMS está activado.|
+|GetTenantFunctionalState|El Portal de Azure clásico está comprobando si el servicio Azure Rights Management está activado.|
 |GetTemplateById|Se realiza una llamada desde el Portal de Azure clásico para obtener una plantilla especificando un identificador de plantilla.|
 |KeyVaultDecryptRequest|El cliente está intentando descifrar el contenido protegido con RMS. Solo es válido para una clave de inquilino administrada por el cliente (BYOK) en el Almacén de claves de Azure.|
-|KeyVaultGetKeyInfoRequest|Se realiza una llamada para comprobar que la clave especificada que se usará en el Almacén de claves de Azure para la clave de inquilino de Azure RMS sea accesible y aún no se haya usado.|
+|KeyVaultGetKeyInfoRequest|Se realiza una llamada para comprobar si la clave especificada que se usará en Azure Key Vault para la clave de inquilino de Azure Information Protection es accesible y si se ha usado antes.|
 |KeyVaultSignDigest|Se realiza una llamada cuando se usa una clave administrada por el cliente (BYOK) del Almacén de claves de Azure para firmar. Suele llamarse una vez por cada elemento AcquireLicence (o FECreateEndUserLicenseV1), Certify y GetClientLicensorCert (o FECreatePublishingLicenseV1).|
 |KMSPDecrypt|El cliente está intentando descifrar el contenido protegido con RMS. Solo es válido para una clave de inquilino administrada por el cliente (BYOK) heredada.|
 |KMSPSignDigest|Se realiza una llamada cuando se usa una clave administrada por el cliente (BYOK) heredada para firmar. Suele llamarse una vez por cada elemento AcquireLicence (o FECreateEndUserLicenseV1), Certify y GetClientLicensorCert (o FECreatePublishingLicenseV1).|
@@ -207,15 +207,15 @@ Hay muchos tipos de solicitudes de Azure Rights Management, pero en la tabla sig
 |SearchUsers |Se realiza una llamada desde el sitio de seguimiento de documentos para buscar todos los usuarios de un inquilino.|
 |ServerCertify|Se realiza una llamada desde un cliente habilitado para RMS (como SharePoint) para certificar el servidor.|
 |SetUsageLogFeatureState|Se realiza una llamada para habilitar el registro de uso.|
-|SetUsageLogStorageAccount|Se realiza una llamada para especificar la ubicación de los registros de Azure RMS.|
+|SetUsageLogStorageAccount|Se realiza una llamada para especificar la ubicación de los registros del servicio Azure Rights Management.|
 |UpdateNotificationSettings|Se realiza una llamada desde el sitio de seguimiento de documentos para cambiar la configuración de notificaciones de un solo documento.|
 |UpdateTemplate|Se realiza una llamada desde el Portal de Azure clásico para actualizar una plantilla existente.|
 
 
 ## Referencia de Windows PowerShell
-A partir de febrero de 2016, el único cmdlet de Windows PowerShell que necesita para el registro de uso de Azure RMS es [Get-AadrmUserLog](https://msdn.microsoft.com/library/azure/mt653941.aspx). 
+Desde febrero de 2016, el único cmdlet de Windows PowerShell que se necesita para el registro de uso de Azure Rights Management es el siguiente: [Get-AadrmUserLog](https://msdn.microsoft.com/library/azure/mt653941.aspx). 
 
-Antes de este cambio, fueron necesarios los siguientes cmdlet para los registros de uso de Azure RMS y ahora están en desuso:  
+Antes de que se produjera este cambio, se necesitaban los siguientes cmdlets para los registros de uso de Azure Rights Management (ahora están en desuso):  
 
 -   [Disable-AadrmUsageLogFeature](https://msdn.microsoft.com/library/azure/dn629404.aspx)
 
@@ -231,15 +231,15 @@ Antes de este cambio, fueron necesarios los siguientes cmdlet para los registros
 
 -   [Set-AadrmUsageLogStorageAccount](https://msdn.microsoft.com/library/azure/dn629426.aspx)
 
-Si tiene registros en su propio almacenamiento de Azure desde antes del cambio de registro de Azure RMS, puede descargarlos con estos cmdlet más antiguos, usando Get-AadrmUsageLog y Get-AadrmUsageLogLastCounterValue, como antes. Sin embargo, todos los nuevos registros de uso se escribirán en el nuevo almacenamiento de Azure RMS y deben descargarse con Get-AadrmUserLog.
+Si tiene registros en su propio almacenamiento de Azure desde antes del cambio de registro de Azure Rights Management, puede descargarlos con estos cmdlets más antiguos mediante Get-AadrmUsageLog y Get-AadrmUsageLogLastCounterValue, como antes. Sin embargo, todos los nuevos registros de uso se escribirán en el nuevo almacenamiento de Azure RMS y deben descargarse con Get-AadrmUserLog.
 
-Para más información acerca de cómo usar Windows PowerShell para Azure Rights Management, consulte [Administración de Azure Rights Management mediante Windows PowerShell](administer-powershell.md).
-
-
+Para obtener más información acerca de cómo usar Windows PowerShell para el servicio Azure Rights Management, consulte [Administración del servicio Azure Rights Management mediante Windows PowerShell](administer-powershell.md).
 
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+
+<!--HONumber=Sep16_HO4-->
 
 
