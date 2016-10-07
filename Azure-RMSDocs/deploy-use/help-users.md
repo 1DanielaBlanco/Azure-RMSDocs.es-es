@@ -1,32 +1,32 @@
 ---
-title: Ayuda a los usuarios para proteger archivos mediante Azure Rights Management | Azure RMS
-description: "Información para tratar de proporcionar orientación para los usuarios, los administradores y su servicio de asistencia después de haber implementado y configurado Azure Rights Management (Azure RMS) para su organización."
+title: Ayuda a los usuarios para proteger archivos mediante Azure Rights Management | Azure Information Protection
+description: "Información para ayudarle a ofrecer instrucciones a los usuarios, administradores y al servicio de asistencia después de implementar y configurar el servicio Azure Rights Management de Azure Information Protection."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
-ms.openlocfilehash: 0ff8282d01957af1a0dd59673ae2e94a6d879f39
+ms.sourcegitcommit: 55fd22b60ad87dadce0ffb89bb658e949670f728
+ms.openlocfilehash: 56bb2e90f9d1ecb7c925ab22cf1dba16246876f7
 
 
 ---
 
 # Ayuda a los usuarios para proteger archivos mediante Azure Rights Management
 
->*Se aplica a: Azure Rights Management, Office 365*
+>*Se aplica a: Azure Information Protection, Office 365*
 
-Una vez haya implementado y configurado Azure Rights Management (RMS) para su organización, ofrezca ayuda y orientación para los usuarios, los administradores y su servicio de asistencia:
+Después de implementar y configurar Azure Information Protection para su organización, ofrezca ayuda e instrucciones a los usuarios, administradores y al servicio de asistencia:
 
 -   **Información del usuario final:**
 
-    Indique a los usuarios cómo y cuándo proteger documentos y mensajes de correo electrónico que contengan información confidencial. Siempre que sea posible, proporcione esta información en sus flujos de trabajo existentes, para que puedan incorporar los pasos adicionales a un proceso ya conocido, en lugar de introducir completamente nuevos procesos. Asegúrese de informarle de los beneficios (y de los riesgos) específicos para su negocios, así como de proporcionar orientación para cuándo deben proteger archivos y mensajes de correo electrónico. Si ha configurado [plantillas personalizadas](configure-custom-templates.md), ofrezca instrucciones sobre cuál elegir si el nombre de la plantilla y la descripción no es suficiente para que elijan la correcta.
+    Indique a los usuarios cómo y cuándo proteger documentos y mensajes de correo electrónico que contengan información confidencial. Siempre que sea posible, ofrezca esta información en sus flujos de trabajo existentes para que puedan incorporar los pasos adicionales a un proceso ya conocido, en lugar de introducir procesos que sean completamente nuevos. Asegúrese de informarle de los beneficios (y de los riesgos) específicos para su negocios, así como de proporcionar orientación para cuándo deben proteger archivos y mensajes de correo electrónico. Si ha configurado [plantillas personalizadas](configure-custom-templates.md), ofrezca instrucciones sobre cuál elegir si el nombre de la plantilla y la descripción no es suficiente para que elijan la correcta.
 
     > [!TIP]
     > Vídeos de ejemplo para usuarios finales:
@@ -36,23 +36,23 @@ Una vez haya implementado y configurado Azure Rights Management (RMS) para su or
 
 -   **Información del administrador:**
 
-    Algunas aplicaciones aplican automáticamente protección de la información, mediante directivas y configuración que los administradores establecen. Para estas aplicaciones, puede que tenga que proporcionar instrucciones para otros administradores que administran estas aplicaciones y servicios. Para más información, consulte [How applications support Azure Rights Management](../understand-explore/applications-support.md) (Compatibilidad de las aplicaciones con Azure Rights Management) y [Configuring applications for Azure Rights Management](configure-applications.md) (Configuración de las aplicaciones para Azure Rights Management).
+    Algunas aplicaciones aplican automáticamente protección de la información, mediante directivas y configuración que los administradores establecen. Para estas aplicaciones, puede que tenga que proporcionar instrucciones para otros administradores que administran estas aplicaciones y servicios. Para más información, vea [Compatibilidad de aplicaciones con el servicio Azure Rights Management](../understand-explore/applications-support.md) y [Configuración de aplicaciones para el servicio Azure Rights Management](configure-applications.md).
 
 -   **Información del servicio de asistencia**
 
     Una de las herramientas más útiles para el servicio de asistencia es [RMSAnalyzer](https://www.microsoft.com/en-us/download/details.aspx?id=46437). Los operadores del servicio de asistencia pueden ejecutarlo con la opción de administrador de Azure RMS, y pueden pedir a los usuarios que lo ejecuten con la opción de usuario de Azure RMS. Esta herramienta no solo puede ayudar a identificar problemas, sino también a corregir los problemas que encuentre y, si todavía no se han solucionado, anotar los registros de seguimiento.
 
-    Si hay solicitudes legítimas para tener derechos completos de acceso a documentos protegidos, por ejemplo, una solicitud del departamento legal o de un administrador después de que un empleado ha dejado la organización, asegúrese de que el servicio de asistencia tenga procesos para solicitar esto mediante la [característica de superusuario](configure-super-users.md)de Azure RMS.
+    Si hay solicitudes legítimas para tener derechos completos de acceso a documentos protegidos (por ejemplo, una solicitud del departamento jurídico o de un administrador después de que un empleado ha dejado la organización), asegúrese de que el servicio de asistencia tenga procesos para solicitar esto con la [característica de superusuario](configure-super-users.md) de Azure Rights Management.
 
     Además, estos son algunos de los problemas típicos que podrían notificar los usuarios:
 
     -   **Ayuda de inicio de sesión:**
 
-        A los usuarios se les puede solicitar credenciales cuando Azure RMS tenga que autenticar un usuario y no pueda usar credenciales en caché. Serán la cuenta profesional o educativa del usuario y la contraseña que están asociadas con su inquilino de Office 365 o de Azure Active Directory. No será una cuenta Microsoft (anteriormente Microsoft Live ID) o su cuenta de correo electrónico personal porque no están admitidas actualmente por Azure RMS. Proporcione a los usuarios y al servicio de asistencia instrucciones acerca de qué cuenta se utilizará cuando a los usuarios se les solicite credenciales cuando usen estas aplicaciones con Azure RMS.
+        A los usuarios se les pedirán las credenciales cuando el servicio Azure Rights Management necesite autenticar a un usuario y no pueda usar credenciales en caché. Serán la cuenta profesional o educativa del usuario y la contraseña que están asociadas con su inquilino de Office 365 o de Azure Active Directory. No será una cuenta Microsoft (anteriormente, Microsoft Live ID) o su cuenta de correo personal, ya que actualmente no son compatibles con el servicio Azure Rights Management. Ofrezca a los usuarios y al servicio de asistencia instrucciones sobre la cuenta que se usará cuando a los usuarios se les pidan credenciales al usar estas aplicaciones con el servicio Azure Rights Management.
 
     -   **Problemas de protección o consumo de contenido:**
 
-        Asegúrese de que los usuarios tengan las instrucciones apropiadas para las aplicaciones que usan y que estén usando aplicaciones y dispositivos que sean compatibles con Azure RMS. Para más información sobre dispositivos y aplicaciones compatibles, consulte [Requirements for Azure Rights Management](../get-started/requirements-azure-rms.md) (Requisitos para Azure Rights Management).
+        Asegúrese de que los usuarios tengan las instrucciones apropiadas para las aplicaciones que usan y que usen aplicaciones y dispositivos compatibles con el servicio Azure Rights Management. Para más información sobre dispositivos y aplicaciones compatibles, consulte [Requirements for Azure Rights Management](../get-started/requirements-azure-rms.md) (Requisitos para Azure Rights Management).
 
         Si los usuarios ven un error al intentar proteger o consumir contenido, pídales que ejecuten [RMS Analyzer](https://www.microsoft.com/en-us/download/details.aspx?id=46437) como usuarios de Azure RMS.
 
@@ -61,7 +61,7 @@ Una vez haya implementado y configurado Azure Rights Management (RMS) para su or
 Use las secciones siguientes para información específica de aplicación a fin de ayudar a los usuarios a proteger documentos y mensajes de correo electrónico confidenciales.
 
 ## Usar la protección de información con la aplicación de uso compartido de Rights Management
-La aplicación de uso compartido de Rights Management (RMS) se requiere para que los usuarios protejan y consuman contenido protegido si usan Office 2010 pero también se recomienda para todos los equipos y dispositivos móviles que admiten Azure RMS.
+La aplicación Rights Management (RMS) sharing se necesita para que los usuarios protejan y usen contenido protegido si usan Office 2010, pero también se recomienda para todos los equipos y dispositivos móviles compatibles con el servicio Azure Rights Management.
 
 Además de facilitar a los usuarios la protección de documentos importantes, la aplicación de uso compartido de RMS permite a los usuarios realizar el seguimiento de los documentos que han protegido y, si es necesario, revocar el acceso a ellos.
 
@@ -73,7 +73,7 @@ Para dispositivos móviles, consulte las [preguntas más frecuentes sobre la apl
 > Para ver un escenario de ejemplo de alto nivel con capturas de pantalla, consulte [Uso compartido seguro de datos adjuntos con los usuarios móviles](../understand-explore/what-admins-users-see.md#users-safely-share-attachments-with-mobile-users).
 
 ## Uso de protección de la información con Office 365, Office 2016 u Office 2013
-Si está usando Azure RMS y no ha instalado la aplicación Rights Management sharing, los usuarios no verán el botón **Uso compartido protegido** en la cinta de opciones o **Protección local** del Explorador de archivos que les facilita la protección de archivos. Para estos usuarios, debe seguir instrucciones similares a las siguientes.
+Si usa el servicio Azure Rights Management y no ha instalado la aplicación Rights Management sharing, los usuarios no verán el botón **Uso compartido protegido** en la cinta ni verán **Protección local** en el Explorador de archivos, lo que les facilita la protección de archivos. Para estos usuarios, debe seguir instrucciones similares a las siguientes.
 
 > [!TIP]
 > Para buscar ayuda específica de la aplicación e instrucciones para usar protección de la información con estas aplicaciones, busque **IRM** y el nombre y la versión de la aplicación.
@@ -115,6 +115,6 @@ De manera similar a la visualización de un documento protegido, cuando los dest
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

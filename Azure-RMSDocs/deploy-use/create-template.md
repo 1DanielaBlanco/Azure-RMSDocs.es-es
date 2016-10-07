@@ -1,19 +1,19 @@
 ---
-title: "Creación, configuración y publicación de una plantilla personalizada | Azure RMS"
+title: "Creación, configuración y publicación de una plantilla personalizada | Azure Information Protection"
 description: "Instrucciones para crear y administrar plantillas personalizadas en el Portal de Azure clásico. Las plantillas facilitan a los usuarios finales y otros administradores la aplicación de las directivas apropiadas que protegen documentos y correos electrónicos."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
-ms.openlocfilehash: 6875d8d4755dc791879838d1f46be87e2e043a3b
+ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
+ms.openlocfilehash: 30cd611e128217b2760e66b3391a0702ae0ed7a6
 
 
 ---
@@ -21,12 +21,12 @@ ms.openlocfilehash: 6875d8d4755dc791879838d1f46be87e2e043a3b
 
 # Creación, configuración y publicación de una plantilla personalizada
 
->*Se aplica a: Azure Rights Management, Office 365*
+>*Se aplica a: Azure Information Protection, Office 365*
 
 
 En el Portal de Azure clásico puede crear y administrar plantillas personalizada. Puede hacerlo directamente desde el Portal de Azure clásico o puede iniciar sesión en el Centro de administración de Office 365 y elegir **Características avanzadas** para Rights Management, lo que le redirigirá al Portal de Azure clásico.
 
-Debe ser administrador global para crear y administrar plantillas en el Portal de Azure clásico. Si ha asignado el rol de administrador global de Azure RMS a otros usuarios, también podrán crear y administrar plantillas, aunque deberán usar [PowerShell](configure-templates-with-powershell.md). Para obtener más información, vea [¿Debe ser un administrador global para configurar Azure RMS o puedo delegar a otros administradores?](../get-started/faqs.md#do-you-need-to-be-a-global-admin-to-configure-azure-rms-or-can-i-delegate-to-other-administrators) 
+Debe ser administrador global para crear y administrar plantillas en el Portal de Azure clásico. Si ha asignado el rol de administrador global del servicio Azure Rights Management a otros usuarios, también podrán crear y administrar plantillas, aunque deberán usar [PowerShell](configure-templates-with-powershell.md). Para obtener más información, vea [¿Debe ser un administrador global para configurar Azure RMS o puedo delegar a otros administradores?](../get-started/faqs.md#do-you-need-to-be-a-global-admin-to-configure-azure-rms-or-can-i-delegate-to-other-administrators) 
 
 Usa los procedimientos siguientes para crear, configurar y publicar plantillas personalizadas para Rights Management.
 
@@ -45,7 +45,7 @@ Usa los procedimientos siguientes para crear, configurar y publicar plantillas p
         4.  En la sección **Rights Management** , haga clic en **Características avanzadas**.
 
             > [!NOTE]
-            > Si no ha activado todavía Rights Management, haga clic primero en **Activar** y confirme la acción. Para más información, consulte [Activación de Azure Rights Management](activate-service.md).
+            > Si no ha activado todavía el servicio de Rights Management, haga clic primero en **Activar** y confirme la acción. Para más información, consulte [Activación de Azure Rights Management](activate-service.md).
             > 
             > Si no ha hecho clic en **Características avanzadas** antes, después de activar Rights Management, siga las instrucciones que aparecen en pantalla para obtener una suscripción gratuita de Azure, necesaria para poder acceder al Portal de Azure clásico.
 
@@ -166,6 +166,6 @@ Para realizar cualquier cambio en tu plantilla, selecciónala y, a continuación
 [Configuración de plantillas personalizadas para Azure Rights Management](configure-custom-templates.md)
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

@@ -1,19 +1,19 @@
 ---
-title: "Servidores de archivos que ejecutan Windows Server y usan la infraestructura de clasificación de archivos (FCI) | Azure RMS"
+title: "Servidores de archivos que ejecutan Windows Server y usan la infraestructura de clasificación de archivos (FCI) | Azure Information Protection"
 description: "Cómo la infraestructura de clasificación de archivos de Windows Server puede utilizarse con Azure RMS al implementar el conector RMS para proteger automáticamente los documentos de Office."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 8fdad425-5daf-4ce1-822f-9d2fb0b87df1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 43429b44c019144744f39a1f92f144d315c2024c
-ms.openlocfilehash: 43af3be5b9ff51a72a6382fe88440fd427aa0dbf
+ms.sourcegitcommit: 2c0f3b58a2f1b5233c262bb67cc4a485557ba997
+ms.openlocfilehash: 64c718f91d1d2f516bcac6dd949eef5ef379a306
 
 
 ---
@@ -21,7 +21,7 @@ ms.openlocfilehash: 43af3be5b9ff51a72a6382fe88440fd427aa0dbf
 
 # Servidores de archivos que ejecutan Windows Server y usan Infraestructura de clasificación de archivos (FCI)
 
->*Se aplica a: Azure Rights Management, Office 365*
+>*Se aplica a: Azure Information Protection, Office 365*
 
 
 Cuando configuras Windows Server para usar Infraestructura de clasificación de archivos, esta característica del administrador de recursos del servidor de archivos puede examinar archivos locales y determinar si contienen datos sensibles. Para archivos que cumplan este criterio, se etiquetan con propiedades de clasificación que define un administrador. Entonces, la Infraestructura de clasificación de archivos puede tomar medidas, según lo estipulado en la clasificación. Una de estas acciones es aplicar la protección de la información mediante [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] y la implementación del conector de Rights Management (también conocido como conector de RMS). Los archivos de Office se protegen así automáticamente con Azure RMS.
@@ -43,6 +43,6 @@ Ahora que comprende cómo las aplicaciones y los servicios admiten Azure RMS, pu
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

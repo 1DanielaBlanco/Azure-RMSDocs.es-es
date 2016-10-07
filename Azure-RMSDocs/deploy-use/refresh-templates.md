@@ -1,19 +1,19 @@
 ---
-title: "Actualización de plantillas | Azure RMS"
-description: "Cuando usas Azure RMS, se descargan de forma automática plantillas a los ordenadores cliente para que los usuarios puedan seleccionarlas desde sus aplicaciones. Sin embargo, es posible que tengas que tomar medidas adicionales si quieres efectuar cambios en las plantillas."
+title: Actualizar plantillas | Azure Information Protection
+description: "Cuando usa el servicio Azure Rights Management, se descargan de forma automática plantillas a los ordenadores cliente para que los usuarios puedan seleccionarlas desde sus aplicaciones. Sin embargo, es posible que tengas que tomar medidas adicionales si quieres efectuar cambios en las plantillas."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 2339643120b9e9ee24d046bf5620f68fee88b7c9
+ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
+ms.openlocfilehash: 2870edc314f3ee6f6e3b8937cbe5b653092c5910
 
 
 ---
@@ -21,9 +21,9 @@ ms.openlocfilehash: 2339643120b9e9ee24d046bf5620f68fee88b7c9
 
 # Actualización de plantillas para usuarios
 
->*Se aplica a: Azure Rights Management, Office 365*
+>*Se aplica a: Azure Information Protection, Office 365*
 
-Cuando usas Azure RMS, se descargan de forma automática plantillas a los ordenadores cliente para que los usuarios puedan seleccionarlas desde sus aplicaciones. Sin embargo, es posible que tengas que tomar medidas adicionales si quieres efectuar cambios en las plantillas:
+Cuando usa el servicio Azure Rights Management de Azure Information Protection, se descargan de forma automática plantillas a los ordenadores cliente para que los usuarios puedan seleccionarlas desde sus aplicaciones. Sin embargo, es posible que tengas que tomar medidas adicionales si quieres efectuar cambios en las plantillas:
 
 |Aplicación o servicio|Cómo se actualizan las plantillas tras los cambios|
 |--------------------------|---------------------------------------------|
@@ -186,6 +186,6 @@ Si modifica el Registro de los equipos que ejecutan Office 2010, puede establece
 [Configuración de plantillas personalizadas para Azure Rights Management](configure-custom-templates.md)
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

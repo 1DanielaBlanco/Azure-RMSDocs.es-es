@@ -1,32 +1,32 @@
 ---
-title: "Protección de un archivo que comparte por correo electrónico con la aplicación Rights Management sharing | Azure RMS"
+title: "Protección de un archivo que comparte por correo electrónico con la aplicación Rights Management sharing | Azure Information Protection"
 description: "Instrucciones sobre cómo compartir de forma segura un documento por correo electrónico."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4c1cd1d3-78dd-4f90-8b37-dcc9205a6736
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 035c9eb6cb630cafd5bd7fc7e2371340043ddc5e
-ms.openlocfilehash: ff5dd6afaa454c20f35c237e94947dcec9e737f6
+ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
+ms.openlocfilehash: b4467f73dd9d107681961f99ee038ed889e25b2d
 
 
 ---
 
 # Protección de un archivo que comparte por correo electrónico con la aplicación Rights Management sharing
 
->*Se aplica a: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 con SP1, Windows 8, Windows 8.1*
+>*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 con SP1, Windows 8, Windows 8.1*
 
 Cuando protege un archivo que comparte por correo electrónico, se crea una nueva versión del archivo original. El archivo original permanece sin protección y la nueva versión, que está protegida, se adjunta automáticamente a un correo electrónico que después envía.
 
-En algunos casos (para los archivos creados con Microsoft Word, Excel y PowerPoint), la aplicación RMS sharing crea dos versiones del archivo que se adjunta al mensaje de correo electrónico. La segunda versión del archivo tiene la extensión de nombre de archivo **.ppdf** y es una instantánea en formato PDF del archivo. Esta versión del archivo garantiza que los destinatarios siempre puedan leer el archivo, incluso si no tienen instalada la misma aplicación que utilizó para crearlo. Esto suele ocurrir cuando las personas leen su correo electrónico en dispositivos móviles y quieren ver datos adjuntos del correo electrónico. Todo lo que necesitan para abrir el archivo es la aplicación RMS sharing. Así pueden leer el archivo adjunto, pero no podrán cambiarlo hasta que abran la otra versión del archivo con una aplicación que admita RMS.
+En algunos casos (para los archivos creados con Microsoft Word, Excel y PowerPoint), la aplicación RMS sharing crea dos versiones del archivo que se adjunta al mensaje de correo electrónico. La segunda versión del archivo tiene la extensión de nombre de archivo **.ppdf** y es una instantánea en formato PDF del archivo. Esta versión del archivo garantiza que los destinatarios siempre puedan leer el archivo, incluso si no tienen instalada la misma aplicación que utilizó para crearlo. Esto suele ocurrir cuando las personas leen su correo electrónico en dispositivos móviles y quieren ver datos adjuntos del correo electrónico. Todo lo que necesitan para abrir el archivo es la aplicación RMS sharing. Después, pueden leer el archivo adjunto, pero no podrán cambiarlo hasta que abran la otra versión del archivo con una aplicación que compatible con el servicio Rights Management.
 
-Si su organización usa Azure RMS, puede hacer un seguimiento de los archivos que se protegen con la aplicación RMS sharing:
+Si su organización usa Azure Information Protection, puede realizar un seguimiento de los archivos que se protegen si comparte:
 
 -   Seleccione una opción para recibir mensajes de correo electrónico cuando alguien intente abrir estos archivos adjuntos protegidos. Cada vez que se tenga acceso al archivo, se le notificará qué usuarios intentaron abrir el archivo, cuándo y si se autenticaron correctamente o no.
 
@@ -69,7 +69,7 @@ Además de compartir un archivo protegido con Outlook, también puede utilizar e
 
     Ejemplo:
 
-    ![Mensaje de correo electrónico para Azure RMS](../media/ADRMS_MSRMSApp_EmailMessage.PNG)
+    ![Mensaje de correo electrónico de Azure Information Protection](../media/ADRMS_MSRMSApp_EmailMessage.PNG)
 
     Probablemente se esté preguntando: [¿Qué es el archivo .ppdf que se crea automáticamente?](sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created)
 
@@ -92,6 +92,6 @@ Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

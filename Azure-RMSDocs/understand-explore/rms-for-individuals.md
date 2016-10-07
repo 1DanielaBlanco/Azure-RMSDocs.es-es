@@ -1,35 +1,35 @@
 ---
-title: RMS para individuos y Azure Rights Management | Azure RMS
-description: "Información sobre RMS para individuos, que es una suscripción gratuita de autoservicio para usuarios de una organización a quienes se enviaron archivos confidenciales protegidos por Microsoft Azure Rights Management (Azure RMS), pero que no pueden autenticarse porque su departamento de TI no administra una cuenta para ellos en Azure."
+title: RMS para individuos y Azure Information Protection | Azure Information Protection
+description: "Información sobre RMS para individuos, una suscripción gratuita de autoservicio para los usuarios de una organización que hayan recibido archivos confidenciales protegidos por el servicio Azure Rights Management, pero que no pueden autenticarse porque su departamento de TI no administra una cuenta para ellos en Azure."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 43429b44c019144744f39a1f92f144d315c2024c
-ms.openlocfilehash: 52a76105b182c7fe6aa9a648d1a5d7ae4e4a1a20
+ms.sourcegitcommit: 9d27417bf90dab8c7e8654c68d204dad6297fa0d
+ms.openlocfilehash: 5ce322224da9052b1fa5a3e3d995bbb52e079797
 
 
 ---
 
-# RMS para individuos y Azure Rights Management
+# RMS para individuos y Azure Information Protection
 
->*Se aplica a: Azure Rights Management*
+>*Se aplica a: Azure Information Protection*
 
-RMS para individuos es una suscripción gratuita de autoservicio para usuarios de una organización a quienes se enviaron archivos confidenciales protegidos por Microsoft Azure Rights Management (Azure RMS), pero que no pueden autenticarse porque su departamento de TI no administra una cuenta para ellos en Azure. Por ejemplo, el departamento de TI no tiene Office 365 o no usa los servicios de Azure.
+RMS para individuos es una suscripción gratuita de autoservicio para los usuarios de una organización que hayan recibido archivos confidenciales protegidos por el servicio Azure Rights Management de Azure Information Protection. Si esos usuarios no se pueden autenticar porque su departamento de TI no administra una cuenta para estos en Azure, pueden usar este servicio de registro gratuito. Por ejemplo, el departamento de TI no tiene Office 365 o no usa los servicios de Azure.
 
-Estos usuarios pueden solicitar una cuenta profesional o educativa gratuita para usarla con Azure RMS y descargar e instalar la aplicación para uso compartido de Rights Management. Como resultado, los usuarios ya pueden autenticarse para demostrar que son la persona a la que se enviaron los archivos protegidos y, a continuación, leer los archivos protegidos en equipos o dispositivos móviles.
+Estos usuarios pueden registrarse para obtener una cuenta profesional o educativa gratuita para usarla con Azure Information Protection y descargar e instalar la aplicación Rights Management sharing. Como resultado, los usuarios ya podrán autenticarse para demostrar que son la persona a la que se han enviado los archivos protegidos y podrán leer los archivos protegidos en equipos o dispositivos móviles.
 
 Con la aplicación para uso compartido de Rights Management en equipos Windows, los usuarios también pueden proteger los archivos en contexto o enviarlos por correo electrónico a personas que forman parte de la organización o de fuera de esta. Si los destinatarios del correo electrónico que envían trabajan en una organización que tampoco administra cuentas de usuario en Azure, pueden registrarse para obtener una cuenta de RMS para usuarios para leer los archivos adjuntos protegidos del correo electrónico.
 
 > [!IMPORTANT]
-> Esta suscripción gratuita garantiza que las personas autorizadas siempre puedan leer archivos que se hayan protegido. Actualmente, también puede utilizar esta suscripción gratuita para proteger documentos y crear nuevos mensajes de correo electrónico protegidos, pero la capacidad de crear nuevo contenido protegido solo está prevista en modo de prueba y podría eliminarse en el futuro. Para más información y conocer cualquier cambio en el uso de RMS para individuos para proteger contenido, consulte las [Condiciones de servicio de Microsoft Rights Management](https://portal.aadrm.com/Legal/Service).
+> Esta suscripción gratuita garantiza que las personas autorizadas siempre puedan leer archivos que se hayan protegido. Actualmente, también puede utilizar esta suscripción gratuita para proteger documentos y crear nuevos mensajes de correo electrónico protegidos, pero la capacidad de crear nuevo contenido protegido solo está prevista en modo de prueba y podría eliminarse en el futuro. 
 
 Para más información sobre cómo puede proteger los archivos mediante el uso de la aplicación de Rights Management sharing gratis, consulte la [Guía de usuario de la aplicación de Rights Management sharing](../rms-client/sharing-app-user-guide.md).
 
@@ -41,6 +41,6 @@ Vea [Cómo se registran los usuarios a RMS para individuos](rms-for-individuals-
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

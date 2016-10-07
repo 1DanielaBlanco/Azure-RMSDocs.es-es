@@ -1,42 +1,42 @@
 ---
-title: "Guía de implementación rápida de Azure Rights Management | Azure RMS"
-description: "Una guía para ayudarlo a implementar y usar Azure Rights Management (Azure RMS) con más rapidez para proteger los datos de su organización. Empiece por elegir una de las opciones de una lista de escenarios de implementación específicos."
+title: "Guía de implementación rápida para Azure Information Protection | Azure Information Protection"
+description: "Una guía para que le resulte más fácil implementar y usar rápidamente Azure Information Protection para proteger los datos de la organización. Empiece por elegir una de las opciones de una lista de escenarios de implementación específicos."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: get-started-article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: c994d616-cff6-4930-9228-a7f7d198a160
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
-ms.openlocfilehash: 715290d2417df3b386d8e5b8a784e964355d4e15
+ms.sourcegitcommit: 2c0f3b58a2f1b5233c262bb67cc4a485557ba997
+ms.openlocfilehash: 914362cbabe2e929b988e0f922c3848e8ca7771f
 
 
 ---
 
 # Guía de implementación rápida de Azure Rights Management
 
->*Se aplica a: Azure Rights Management, Office 365*
+>*Se aplica a: Azure Information Protection, Office 365*
 
-Esta guía complementa la información de configuración de la sección **Implementación y uso**, y le ayuda a implementar y usar rápidamente Azure Rights Management (Azure RMS), ya que le permite elegir una opción de una lista de escenarios específicos para implementar.
+Use esta guía, además de la información sobre la configuración en la sección **Implementación y uso**, como ayuda para implementar y usar rápidamente Azure Information Protection, ya que le permite elegir entre una lista de escenarios específicos de implementación.
 
 Los escenarios contienen instrucciones para el administrador y documentación complementaria para el usuario final. Antes de proporcionarles la documentación (instrucciones o anuncios) a los usuarios finales, tendrá primero que personalizarla en función de sus necesidades empresariales y su flujo de trabajo. Un conjunto de instrucciones o un anuncio de ejemplo muestran el aspecto definitivo de la documentación para el usuario final.
 
 Cada escenario tiene una lista de requisitos con vínculos para más información, en caso de ser necesario, por lo que puede implementar estas soluciones de manera independiente y en cualquier orden.
 
-Los escenarios aquí mencionados son una muestra de los más comunes. Dado que Azure RMS puede usarse para proteger la información en un gran número de escenarios tanto dentro de una misma organización como entre varias organizaciones, puede usar este mismo modelo para definir escenarios propios e implementarlos en su entorno y en sus usuarios. Al centrarse en escenarios específicos, la implementación de Azure RMS se adaptará mucho mejor a sus objetivos empresariales. Además, nuestra experiencia es que los usuarios suelen seguir las instrucciones específicas de un escenario de forma mucho más atenta y sistemática que cuando se trata de instrucciones generales como "proteger documentos confidenciales".
+Los escenarios aquí mencionados son una muestra de los más comunes. Como Azure Information Protection se puede usar para proteger la información en un gran número de escenarios (tanto dentro de una misma organización como en varias organizaciones), puede usar este mismo modelo para definir sus propios escenarios e implementarlos en su entorno y en sus usuarios. Al centrarse en escenarios específicos, la implementación de Azure Information Protection se adaptará mejor a sus objetivos empresariales. Además, nuestra experiencia es que los usuarios suelen seguir las instrucciones específicas de un escenario de forma mucho más atenta y sistemática que cuando se trata de instrucciones generales como "proteger documentos confidenciales".
 
 Antes de implementar estas soluciones, puede enviar un anuncio general a los usuarios finales informándoles de los cambios que se producirán en materia de protección de los datos de la empresa, así como de las posibles modificaciones que deban realizar por su parte. Después de la tabla siguiente encontrará un ejemplo de este tipo de comunicación.
 
 > [!NOTE]
 > Si tiene preguntas y comentarios sobre esta guía, use los mecanismos de comentarios de esta página o envíe un correo a [AskIPTeam@Microsoft.com](mailto:%20askipteam@microsoft.com?subject=Rapid%20Deployment%20Guide%20feedback).
 
-## Escenarios de Azure RMS
-Para ayudarle a implementar Azure RMS más rápidamente con el fin de abordar problemas empresariales específicos, elija los escenarios que se acerquen más a sus objetivos empresariales y adáptelos en lo necesario.
+## Escenarios de Azure Information Protection
+Para que pueda implementar Azure Information Protection con mayor rapidez para solucionar problemas empresariales específicos, elija los escenarios que se acerquen más a sus objetivos empresariales y adáptelos según sea necesario.
 
 
 
@@ -124,14 +124,14 @@ Vea [Escenario: Configurar carpetas de trabajo para protección persistente](sce
 
 
 ## Anuncio para los usuarios antes de la implementación
-Puede usar el siguiente mensaje de comunicación de ejemplo para que los usuarios sepan que la implementación de Azure RMS supone algunos cambios futuros. Copie y pegue el texto siguiente para que alguien del equipo directivo de su empresa (preferiblemente el director ejecutivo) lo envíe por correo electrónico a todos los usuarios. Puede modificar el texto del mensaje para que sea más relevante para los usuarios y la organización.
+Puede usar el siguiente mensaje de comunicación de ejemplo para informar a los usuarios de que la implementación de Azure Information Protection supone algunos cambios futuros. Copie y pegue el texto siguiente para que alguien del equipo directivo de su empresa (preferiblemente el director ejecutivo) lo envíe por correo electrónico a todos los usuarios. Puede modificar el texto del mensaje para que sea más relevante para los usuarios y la organización.
 
 ![Banner de documentación de usuario de ejemplo para la implementación rápida de Azure RMS](../media/AzRMS_ExampleBanner.png)
 
 ### Cambios en la protección de nuestros datos
 ¿Alguna vez ha querido bloquear el acceso a un documento que envió a sus socios por error? ¿Le gustaría saber si los clientes han leído la información que les ha remitido sobre algún producto? ¿Necesita compartir información confidencial sobre un producto sin preocuparse de que se envíe a gente que no debería verla?
 
-Pronto podrá hacer todas esas cosas: el departamento de TI está efectuando algunos cambios para implementar Microsoft Azure Rights Management (Azure RMS) como solución para la protección de los datos empresariales. La protección que necesitamos se aplicará en muchas de estas soluciones sin necesidad de que usted intervenga. Pero puede que tenga que tomar medidas en algunos cambios. De ser así, el departamento de TI le enviará la información y las instrucciones pertinentes. Si tiene alguna duda o problema, cuenta con el apoyo del departamento de soporte técnico.
+Pronto podrá hacer todo esto, ya que el departamento de TI está realizando algunos cambios para implementar Microsoft Azure Information Protection como solución para la protección de datos empresariales. La protección que necesitamos se aplicará en muchas de estas soluciones sin necesidad de que usted intervenga. Pero puede que tenga que tomar medidas en algunos cambios. De ser así, el departamento de TI le enviará la información y las instrucciones pertinentes. Si tiene alguna duda o problema, cuenta con el apoyo del departamento de soporte técnico.
 
 Por ejemplo, para realizar un seguimiento de los documentos que comparta (o revocarlos, en caso necesario), usará un sitio de seguimiento de documentos:
 
@@ -146,6 +146,6 @@ Las soluciones que estamos implementando nos ayudarán a proteger nuestra valios
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

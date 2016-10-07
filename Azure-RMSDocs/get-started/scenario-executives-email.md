@@ -1,28 +1,28 @@
 ---
-title: "Escenario: Los ejecutivos intercambian información confidencial de forma segura | Azure RMS"
-description: "En este escenario y en la documentación de usuario correspondiente se usa Azure Rights Management para que los ejecutivos puedan intercambiar entre ellos mensajes de correo y datos adjuntos por correo electrónico de forma segura, y para que las directivas restrinjan automáticamente el acceso a los ejecutivos sin que tengan que realizar ninguna acción especial."
+title: "Escenario: Los ejecutivos intercambian información confidencial de forma segura | Azure Information Protection"
+description: "En este escenario y en la documentación de usuario correspondiente se usa la protección de Azure Rights Management para que los ejecutivos puedan intercambiar entre ellos mensajes de correo y datos adjuntos por correo electrónico de forma segura, y para que las directivas restrinjan automáticamente el acceso a los ejecutivos sin que tengan que realizar ninguna acción especial."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/19/2016
+ms.date: 09/25/2016
 ms.topic: get-started-article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e18cf5df-859e-4028-8d19-39b0842df33d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3b0b165f594da47c090f7822afed2a80541b71e8
-ms.openlocfilehash: 511eb0b95039bb7ee1c4a4f06778a18c1cf6c542
+ms.sourcegitcommit: b61b7068e67103c45aea139cf95dacb851fe70e2
+ms.openlocfilehash: fb25a5f97580e7d912016bbeb304e6470f8cbba0
 
 
 ---
 
 # Escenario: Los ejecutivos intercambian información confidencial de forma segura
 
->*Se aplica a: Azure Rights Management, Office 365*
+>*Se aplica a: Azure Information Protection, Office 365*
 
-En este escenario y en la documentación de usuario correspondiente se usa Azure Rights Management para que los ejecutivos puedan intercambiar entre ellos mensajes de correo y datos adjuntos por correo electrónico de forma segura, y para que las directivas restrinjan automáticamente el acceso a los ejecutivos sin que tengan que realizar ninguna acción especial. Los correos electrónicos y los datos adjuntos estarán protegidos automáticamente con Azure Rights Management.
+En este escenario y en la documentación de usuario correspondiente se usa la tecnología Azure Rights Management de Azure Information Protection para que los ejecutivos puedan intercambiar entre ellos mensajes de correo y datos adjuntos por correo electrónico de forma segura, y para que las directivas restrinjan automáticamente el acceso a los ejecutivos sin que tengan que realizar ninguna acción especial. Los correos electrónicos y los datos adjuntos estarán protegidos automáticamente con Azure Rights Management.
 
 Si lo precisa, puede agregar una excepción a la regla, como la abreviatura NP ("no proteger") en el asunto del mensaje de correo, de forma que los ejecutivos puedan especificarla si necesitan enviar un correo electrónico no protegido a otros ejecutivos (por ejemplo, para revisar el mensaje antes de reenviarlo a otros usuarios).
 
@@ -44,11 +44,11 @@ Para que las instrucciones de este escenario funcionen, debe cumplir lo siguient
 
 |Requisito|Si necesita más información|
 |---------------|--------------------------------|
-|Preparó las cuentas y los grupos para Office 365 o Azure Active Directory:<br /><br />- Un grupo habilitado para correo denominado **Ejecutivos** del que todos los ejecutivos son miembros<br /><br />- Un grupo habilitado para correo denominado **Administradores de RMS**, del que todos los administradores que configuran Azure RMS son miembros|[Preparación de Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
-|Microsoft administra su clave de inquilino de Azure Rights Management; no se usa BYOK|[Planeación e implementación de la clave de inquilino de Azure Rights Management](https://technet.microsoft.com/library/dn440580.aspx)|
-|Azure Rights Management no está activado|[Activar Rights Management de Azure](https://technet.microsoft.com/library/jj658941.aspx)|
-|Una de estas configuraciones:<br /><br />- Exchange Online está habilitado para Azure Rights Management<br /><br />- El conector RMS está instalado y configurado para Exchange local|Para Exchange Online: expanda la sección **Exchange Online: IRM Configuration** (Exchange Online: Configuración de IRM) del tema [Configuring Applications for Azure Rights Management](https://technet.microsoft.com/library/jj585031.aspx) (Configuración de aplicaciones para Azure Rights Management).<br /><br />Para Exchange local: [Deploying the Azure Rights Management connector](https://technet.microsoft.com/library/dn375964.aspx) (Implementación del conector de Azure Rights Management).|
-|Configuró una plantilla personalizada tal y como se describe a continuación|[Configuración de plantillas personalizadas para Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)|
+|Preparó las cuentas y los grupos para Office 365 o Azure Active Directory:<br /><br />- Un grupo habilitado para correo denominado **Ejecutivos** del que todos los ejecutivos son miembros<br /><br />- Un grupo habilitado para correo denominado **Administradores de RMS**, del que todos los administradores que configuran Azure RMS son miembros|[Preparación de Azure Information Protection](../plan-design/prepare.md)|
+|La clave de inquilino de Azure Information Protection está administrada por Microsoft y no usa BYOK|[Planeamiento e implementación de su clave de inquilino de Azure Information Protection](../plan-design/plan-implement-tenant-key.md)|
+|Azure Rights Management no está activado|[Activar Rights Management de Azure](../deploy-use/activate-service.md)|
+|Una de estas configuraciones:<br /><br />- Exchange Online está habilitado para Azure Rights Management<br /><br />- El conector RMS está instalado y configurado para Exchange local|Para Exchange Online, vea [Exchange Online: Configuración de IRM](../deploy-use/configure-office365.md#exchange-online-irm-configuration).<br /><br />Para Exchange local: [Deploying the Azure Rights Management connector](../deploy-use/deploy-rms-connector.md) (Implementación del conector de Azure Rights Management).|
+|Configuró una plantilla personalizada tal y como se describe a continuación|[Configuración de plantillas personalizadas para Azure Rights Management](../deploy-use/configure-custom-templates.md)|
 |Ha configurado una regla de protección de transporte para IRM, tal y como se describe luego en este artículo|Para Exchange Online: [Reglas de transporte o de flujo de correo](https://technet.microsoft.com/library/jj919238(v=exchg.150).aspx)<br /><br />Para Exchange 2013: [Crear una regla de protección de transporte](https://technet.microsoft.com/en-us/library/dd302432(v=exchg.150))<br /><br />Para Exchange 2010: [Crear una regla de protección de transporte](https://technet.microsoft.com/library/dd302432(v=exchg.141))|
 
 ### Para configurar la plantilla personalizada para ejecutivos
@@ -132,6 +132,6 @@ Al enviar información confidencial de la empresa a otro ejecutivo de VanArsdel,
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 

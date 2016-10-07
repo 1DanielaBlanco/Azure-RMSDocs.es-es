@@ -1,26 +1,26 @@
 ---
-title: "Script de Windows PowerShell para la protección de Azure RMS con FCI del Administrador de recursos del servidor de archivos | Azure RMS"
+title: "Script de Windows PowerShell para la protección de Azure RMS con FCI del Administrador de recursos del servidor de archivos | Azure Information Protection"
 description: "Script de ejemplo para copiar y editar, como se describe en las instrucciones para la protección de RMS con la infraestructura de protección de archivos de Windows Server."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ae6d8d0f-4ebc-43fe-a1f6-26b690fd83d0
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 035c9eb6cb630cafd5bd7fc7e2371340043ddc5e
-ms.openlocfilehash: 22adb8529b46a0c2072a3f1fa220e794fa702aa3
+ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
+ms.openlocfilehash: a857fd1b4f6779f6647ab122366122dbfbda7c33
 
 
 ---
 
 # Script de Windows PowerShell para la protección de Azure RMS con FCI del Administrador de recursos del servidor de archivos
 
->*Se aplica a: Azure Rights Management, Windows Server 2012, Windows Server 2012 R2*
+>*Se aplica a: Azure Information Protection, Windows Server 2012, Windows Server 2012 R2*
 
 Esta página contiene el script de ejemplo para copiar y editar, como se describe en [RMS protection with Windows Server File Classification Infrastructure](configure-fci.md) (Protección de RMS con la infraestructura de clasificación de archivos de Windows Server).
 
@@ -30,9 +30,9 @@ Esta página contiene el script de ejemplo para copiar y editar, como se describ
 ```
 <#
 .SYNOPSIS 
-     Helper script to protect all file types with Azure RMS and FCI.
+     Helper script to protect all file types using the Azure Rights Management service and FCI.
 .DESCRIPTION
-     Protect files with Azure RMS and Windows Server FCI, using an RMS template ID.   
+     Protect files with the Azure Rights Management service and Windows Server FCI, using an RMS template ID.   
 #>
 param(
             [Parameter(Mandatory = $false)]
@@ -174,6 +174,6 @@ Volver a [RMS protection with Windows Server File Classification Infrastructure]
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 
