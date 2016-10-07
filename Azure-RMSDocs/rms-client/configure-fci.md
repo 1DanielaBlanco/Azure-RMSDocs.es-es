@@ -1,39 +1,39 @@
 ---
-title: "Protección de RMS con la infraestructura de clasificación de archivos (FCI) de Windows Server | Azure RMS"
+title: "Protección de RMS con la infraestructura de clasificación de archivos (FCI) de Windows Server | Azure Information Protection"
 description: "Instrucciones para utilizar el cliente Rights Management (RMS) con la herramienta de protección de RMS para configurar el Administrador de recursos del servidor de archivos y la infraestructura de clasificación de archivos (FCI)."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/29/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b8a7a433652e76ff1069f0f0a7465483b13c065c
-ms.openlocfilehash: b350a35d44e743de94446409b1bba4256ca38728
+ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
+ms.openlocfilehash: 7e0556e99aa09d4b6f2488cb866b57488a22cacd
 
 
 ---
 
 # Protección de RMS con la infraestructura de clasificación de archivos (FCI) de Windows Server
 
->*Se aplica a: Azure Rights Management, Windows Server 2012, Windows Server 2012 R2*
+>*Se aplica a: Azure Information Protection, Windows Server 2012, Windows Server 2012 R2*
 
 Use este artículo para obtener instrucciones y un script para utilizar el cliente de Rights Management (RMS) con la herramienta de protección de RMS para configurar el Administrador de recursos del servidor de archivos y la infraestructura de clasificación de archivos (FCI).
 
-Esta solución le permite proteger automáticamente todos los archivos en una carpeta de un servidor de archivos que ejecuta Windows Server o bien proteger automáticamente archivos que cumplen criterios específicos. Por ejemplo, los archivos que se han clasificado como poseedores de información confidencial. Esta solución usa Azure Rights Management (Azure RMS) para proteger los archivos, de modo que debe tener esta tecnología implementada en su organización.
+Esta solución le permite proteger automáticamente todos los archivos en una carpeta de un servidor de archivos que ejecuta Windows Server o bien proteger automáticamente archivos que cumplen criterios específicos. Por ejemplo, los archivos que se han clasificado como poseedores de información confidencial. Esta solución usa el servicio Azure Rights Management de Azure Information Protection para proteger los archivos, por lo que debe tener esta tecnología implementada en su organización.
 
 > [!NOTE]
-> Aunque Azure RMS incluye un [conector](../deploy-use/deploy-rms-connector.md) que admite la infraestructura de clasificación de archivos, dicha solución admite solo la protección nativa (por ejemplo, archivos de Office).
+> Aunque Azure Information Protection incluye un [conector](../deploy-use/deploy-rms-connector.md) que admite la infraestructura de clasificación de archivos, dicha solución admite solo la protección nativa (por ejemplo, archivos de Office).
 > 
 > Para admitir todos los tipos de archivo con infraestructura de clasificación de archivos, debe usar el módulo **Protección de RMS** de Windows PowerShell, tal como se describe en este artículo. Los cmdlets de protección de RMS, al igual que la aplicación de uso compartido de RMS, admite protección genérica, así como protección nativa, lo que significa que se pueden proteger todos los archivos. Para más información acerca de los diferentes niveles de protección, consulte la sección [Niveles de protección: nativo y genérico](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) en la [Guía de administrador de la aplicación de uso compartido Rights Management](sharing-app-admin-guide.md).
 
 Las instrucciones siguientes sirven para Windows Server 2012 R2 o Windows Server 2012. Si ejecuta otras versiones compatibles de Windows, es posible que tenga que adaptar algunos de los pasos por las diferencias entre la versión de su sistema operativo y la descrita en este artículo.
 
-## Requisitos previos de la protección de Azure RMS con FCI de Windows Server
+## Requisitos previos de la protección de Azure Rights Management con FCI de Windows Server
 Requisitos previos de estas instrucciones:
 
 -   En cada servidor de archivos donde ejecutará el Administrador de recursos de archivos con la infraestructura de clasificación de archivos:
@@ -48,7 +48,7 @@ Requisitos previos de estas instrucciones:
 
     -   Tiene conexión a Internet, con los ajustes del equipo configurados si es necesario para un servidor proxy. Por ejemplo: `netsh winhttp import proxy source=ie`
 
--   Ha configurado los requisitos previos adicionales de la implementación de Azure Rights Management, como se describe en [about_RMSProtection_AzureRMS](https://msdn.microsoft.com/library/mt433202.aspx). En concreto, tiene los siguientes valores para conectarse a Azure RMS mediante el uso de una entidad de servicio:
+-   Ha configurado los requisitos previos adicionales de la implementación de Azure Information Protection, como se describe en [about_RMSProtection_AzureRMS](https://msdn.microsoft.com/library/mt433202.aspx). En concreto, tiene los siguientes valores para conectarse al servicio Azure Rights Management mediante el uso de una entidad de servicio:
 
     -   BposTenantId
 
@@ -56,7 +56,7 @@ Requisitos previos de estas instrucciones:
 
     -   Clave simétrica
 
--   Ha sincronizado sus cuentas de usuario de Active Directory locales con Azure Active Directory u Office 365, incluyendo su dirección de correo electrónico. Esto es necesario para todos los usuarios que puedan necesitar acceder a los archivos después de que FCI y Azure RMS los hayan protegido. Si no realiza este paso (por ejemplo, en un entorno de prueba), existe la posibilidad de que se bloquee el acceso de los usuarios a estos archivos. Si necesita más información sobre la configuración de esta cuenta, consulte [Preparing for Azure Rights Management](../plan-design/prepare.md) (Preparación de Azure Rights Management).
+-   Ha sincronizado sus cuentas de usuario de Active Directory locales con Azure Active Directory u Office 365, incluyendo su dirección de correo electrónico. Esto es necesario para todos los usuarios que necesiten tener acceso a los archivos después de que se hayan protegido mediante FCI y el servicio Azure Rights Management. Si no realiza este paso (por ejemplo, en un entorno de prueba), existe la posibilidad de que se bloquee el acceso de los usuarios a estos archivos. Si necesita más información sobre la configuración de esta cuenta, vea [Preparación de Azure Rights Management](../plan-design/prepare.md).
 
 -   Ha identificado la plantilla Rights Management para su utilización, que protegerá los archivos. Asegúrese de que conoce el identificador de esta plantilla usando el cmdlet [Get-RMSTemplate](https://msdn.microsoft.com/library/azure/mt433197.aspx) .
 
@@ -94,7 +94,7 @@ Al final de estas instrucciones, todos los archivos de su carpeta seleccionada s
 
         `[Parameter(Mandatory = $false)]             [string]$AppPrincipalId = "b5e3f76a-b5c2-4c96-a594-a0807f65bba4",`
 
-    -   Busque la siguiente cadena y reemplácela por su propia clave simétrica, que utiliza con el cmdlet [Set-RMSServerAuthentication](https://msdn.microsoft.com/library/mt433199.aspx) para conectarse a Azure RMS:
+    -   Busque la siguiente cadena y reemplácela por su propia clave simétrica, que usa con el cmdlet [Set-RMSServerAuthentication](https://msdn.microsoft.com/library/mt433199.aspx) para conectarse al servicio Azure Rights Management:
 
         ```
         <enter your key here>
@@ -105,7 +105,7 @@ Al final de estas instrucciones, todos los archivos de su carpeta seleccionada s
 
         `[string]$SymmetricKey = "zIeMu8zNJ6U377CLtppkhkbl4gjodmYSXUVwAO5ycgA="`
 
-    -   Busque la siguiente cadena y reemplácela por su propio BposTenantId (identificador de inquilino), que utiliza con el cmdlet [Set-RMSServerAuthentication](https://msdn.microsoft.com/library/mt433199.aspx) para conectarse a Azure RMS:
+    -   Busque la siguiente cadena y reemplácela por su propio BposTenantId (identificador de inquilino), que usa con el cmdlet [Set-RMSServerAuthentication](https://msdn.microsoft.com/library/mt433199.aspx) para conectarse al servicio Azure Rights Management:
 
         ```
         <enter your BposTenantId here>
@@ -302,6 +302,6 @@ Ahora todo lo que debe hacer es crear una nueva tarea de administración de arch
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

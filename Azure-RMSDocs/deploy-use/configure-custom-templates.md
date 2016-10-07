@@ -1,28 +1,28 @@
 ---
-title: "Configuración de plantillas personalizadas para Azure Rights Management | Azure RMS"
+title: "Configuración de plantillas personalizadas para el servicio Azure Rights Management | Azure Information Protection"
 description: "Información e instrucciones para que los administradores configuren y administren plantillas de derechos de uso. Las plantillas facilitan a los usuarios y otros administradores aplicar directivas a archivos confidenciales que restringen el acceso a usuarios autorizados."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1775d8d0-9a59-42c8-914f-ce285b71ac1c
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
-ms.openlocfilehash: 4f04a8b892cfb1f1ab62d1810fae172ad8bc9747
+ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
+ms.openlocfilehash: d8db7f0346fad1b9c46423875d1e559d41987686
 
 
 ---
 
-# Configuración de plantillas personalizadas para Azure Rights Management
+# Configuración de plantillas personalizadas para el servicio Azure Rights Management
 
->*Se aplica a: Azure Rights Management, Office 365*
+>*Se aplica a: Azure Information Protection, Office 365*
 
-Tras [activar Azure Rights Management](activate-service.md) (Azure RMS), los usuarios pueden automáticamente usar dos plantillas predeterminadas, lo que les facilita la aplicación de directivas para archivos confidenciales para los que desean restringir el acceso solamente a usuarios autorizados de su organización. Estas dos plantillas presentan las restricciones de directivas de derechos siguientes:
+Cuando el servicio Azure Rights Management se haya [activado](activate-service.md), los usuarios podrán automáticamente usar dos plantillas predeterminadas con las que podrán aplicar directivas de administración de derechos a archivos confidenciales y, de este modo, restringir el acceso solamente a los usuarios autorizados de su organización. Estas dos plantillas presentan las restricciones de directivas de derechos siguientes:
 
 -   Visualización de solo lectura para el contenido protegido
 
@@ -66,6 +66,6 @@ Use la información siguiente para tratar de configurar y usar plantillas person
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 
