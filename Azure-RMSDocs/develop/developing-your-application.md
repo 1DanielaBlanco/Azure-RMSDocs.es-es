@@ -4,18 +4,18 @@ description: "Instrucciones sobre cómo desarrollar una aplicación mediante RMS
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 07/06/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 396A2C19-3A00-4E9A-9088-198A48B15289
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4141cadf67dc479116c802f9340ba222140194a3
-ms.openlocfilehash: 2d965086fa44d98e8236a6bbd2515fb3afac3f05
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 6e2b85bc8069de7060211df4d53be7f24ae44e3e
 
 
 ---
@@ -35,7 +35,7 @@ Puede descargar la aplicación de ejemplo *IPCHellowWorld* completa, como [Webin
 
 ## Carga de MSIPC.dll
 
-Antes de que se puedan llamar a las funciones de RMS SDK 2.1, primero debe llamarse a la función [IpcInitialize](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize) para cargar el archivo MSIPC.dll.
+Antes de que se puedan llamar a las funciones de RMS SDK 2.1, primero debe llamarse a la función [IpcInitialize](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize) para cargar el archivo MSIPC.dll.
 
         C++
         hr = IpcInitialize();
@@ -58,7 +58,7 @@ El fragmento de código siguiente enumera las plantillas de RMS disponibles en e
         goto exit;
       }
 
-Mediante esta llamada se recuperan las plantillas de RMS que están instaladas en el servidor predeterminado, se cargan los resultados en la estructura [IPC_TIL](/rights-management/sdk/2.1/api/win/ipc_til#msipc_ipc_til), a la que apunta la variable *pcTil*, y luego se muestran las plantillas.
+Mediante esta llamada se recuperan las plantillas de RMS que están instaladas en el servidor predeterminado, se cargan los resultados en la estructura [IPC_TIL](/information-protection/sdk/2.1/api/win/ipc_til#msipc_ipc_til), a la que apunta la variable *pcTil*, y luego se muestran las plantillas.
 
       C++
       if (0 == pcTil->cTi) {
@@ -77,9 +77,9 @@ Mediante esta llamada se recuperan las plantillas de RMS que están instaladas e
 
 ## Serialización de una licencia
 
-Para poder proteger los datos, es necesario serializar una licencia y obtener una clave de contenido. La clave de contenido se usa para cifrar los datos confidenciales. Por lo general, la licencia serializada va adjunta a los datos cifrados y es usada por el consumidor de los datos protegidos. El consumidor deberá llamar a la función [IpcGetKey](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgetkey) con la licencia serializada para obtener la clave de contenido que le permita descifrar el contenido y obtener la directiva asociada con el contenido.
+Para poder proteger los datos, es necesario serializar una licencia y obtener una clave de contenido. La clave de contenido se usa para cifrar los datos confidenciales. Por lo general, la licencia serializada va adjunta a los datos cifrados y es usada por el consumidor de los datos protegidos. El consumidor deberá llamar a la función [IpcGetKey](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgetkey) con la licencia serializada para obtener la clave de contenido que le permita descifrar el contenido y obtener la directiva asociada con el contenido.
 
-Por simplicidad, use la primera plantilla de RMS devuelta por [IpcGetTemplateList](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist) para serializar una licencia.
+Por simplicidad, use la primera plantilla de RMS devuelta por [IpcGetTemplateList](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist) para serializar una licencia.
 
 Normalmente, se usaría un cuadro de diálogo de la interfaz de usuario para permitir al usuario seleccionar la plantilla que quiera.
 
@@ -97,7 +97,7 @@ Una vez hecho esto, ya tiene la clave de contenido *hContentKey*, y la licencia 
 
 ## Protección de datos
 
-Ahora está listo para cifrar los datos confidenciales mediante la función [IpcEncrypt](/rights-management/sdk/2.1/api/win/functions#msipc_ipcencrypt). En primer lugar, debe preguntar a la función **IpcEncrypt** cuál será el tamaño de los datos cifrados.
+Ahora está listo para cifrar los datos confidenciales mediante la función [IpcEncrypt](/information-protection/sdk/2.1/api/win/functions#msipc_ipcencrypt). En primer lugar, debe preguntar a la función **IpcEncrypt** cuál será el tamaño de los datos cifrados.
 
       C++
       cbText = (DWORD)(sizeof(WCHAR)*(wcslen(wszText)+1));
@@ -109,7 +109,7 @@ Ahora está listo para cifrar los datos confidenciales mediante la función [Ipc
         goto exit;
       }
 
-Aquí, wszText contiene el texto sin formato que se va a proteger. La función [IpcEncrypt](/rights-management/sdk/2.1/api/win/functions#msipc_ipcencrypt) devuelve el tamaño de los datos cifrados en el parámetro *cbEncrypted*.
+Aquí, wszText contiene el texto sin formato que se va a proteger. La función [IpcEncrypt](/information-protection/sdk/2.1/api/win/functions#msipc_ipcencrypt) devuelve el tamaño de los datos cifrados en el parámetro *cbEncrypted*.
 
 Ahora asigne la memoria para los datos cifrados.
 
@@ -151,7 +151,7 @@ En esta aplicación de ejemplo, la función *DisplayError* se usa para controlar
         }
       }
 
-La función *DisplayError* usa la función [IpcGetErrorMessageText](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgeterrormessagetext) para obtener el mensaje de error del código de error correspondiente e imprimirlo en la salida estándar.
+La función *DisplayError* usa la función [IpcGetErrorMessageText](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgeterrormessagetext) para obtener el mensaje de error del código de error correspondiente e imprimirlo en la salida estándar.
 
 ## Limpieza
 
@@ -177,16 +177,16 @@ Antes de acabar, hay que liberar todos los recursos asignados.
 ## Temas relacionados
 
 - [Instrucciones e información para desarrolladores](developer-notes.md)
-- [IpcEncrypt](/rights-management/sdk/2.1/api/win/functions#msipc_ipcencrypt)
-- [IpcGetErrorMessageText](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgeterrormessagetext)
-- [IpcGetKey](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgetkey)
-- [IpcGetTemplateList](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist)
-- [IpcInitialize](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize)
-- [IPC_TIL](/rights-management/sdk/2.1/api/win/ipc_til#msipc_ipc_til)
+- [IpcEncrypt](/information-protection/sdk/2.1/api/win/functions#msipc_ipcencrypt)
+- [IpcGetErrorMessageText](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgeterrormessagetext)
+- [IpcGetKey](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgetkey)
+- [IpcGetTemplateList](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist)
+- [IpcInitialize](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize)
+- [IPC_TIL](/information-protection/sdk/2.1/api/win/ipc_til#msipc_ipc_til)
 - [Webinar_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440)
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO5-->
 
 

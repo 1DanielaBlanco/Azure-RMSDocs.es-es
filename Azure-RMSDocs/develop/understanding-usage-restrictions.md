@@ -4,18 +4,18 @@ description: Todas las aplicaciones habilitadas para RMS deben aplicar restricci
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: E388B16C-ECDA-4696-A040-D457D3C96766
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: df210bd7aff33fda41a278e6aed1108574fe68eb
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 1d1433eb4468fd74689243c1ca63134a406e0f96
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: df210bd7aff33fda41a278e6aed1108574fe68eb
 
 Todas las aplicaciones habilitadas para RMS deben aplicar restricciones de uso. Una restricción de uso es una condición que se produce cuando un usuario intenta realizar una acción (p. ej. imprimir un documento), pero la directiva de RMS para ese documento no le concede el permiso o el derecho a realizar esa acción (p. ej. el derecho PRINT).
 
-Los permisos de un usuario en relación con un documento se pueden consultar mediante la función [**IpcAccessCheck**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcaccesscheck).
+Los permisos de un usuario en relación con un documento se pueden consultar mediante la función [**IpcAccessCheck**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcaccesscheck).
 
 ## Descripción de las restricciones de uso
 
@@ -48,7 +48,7 @@ Los permisos de un usuario en relación con un documento se pueden consultar med
 
 ## Temas relacionados
 
-* [**IpcAccessCheck**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcaccesscheck)
+* [**IpcAccessCheck**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcaccesscheck)
 * [Usage restriction reference (Referencia de restricción de uso).](usage-restriction-reference.md)
  
 
@@ -56,6 +56,6 @@ Los permisos de un usuario en relación con un documento se pueden consultar med
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO5-->
 
 
