@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: ea8ef9108afc01b5046d523cfc8394d81689638b
+ms.sourcegitcommit: b7ee098ceaa8ac6b1e0d5d6cbe090042510aa89b
+ms.openlocfilehash: ac7dd8592d6e11905744c4f4e0171fd5b5945c51
 
 
 ---
@@ -70,12 +70,26 @@ Los siguientes pasos le guiarán en la configuración del servidor de RMS e incl
   Para configurar la detección del lado cliente, se pueden establecer las siguientes claves del Registro de modo que apunten al servidor RMS. Para más información sobre cómo configurar la detección del lado del servicio, consulte [Notas de la implementación del cliente de RMS 2.0](https://technet.microsoft.com/library/jj159267(WS.10).aspx).
 
 1. **EnterpriseCertification**
-        HKEY_LOCAL_MACHINE        SOFTWARE          Microsoft            MSIPC              ServiceLocation                EnterpriseCertification
 
-  **Valor**: (predeterminado): [**http|https**]://RMSClusterName/**_wmcs/Certification**
+        HKEY_LOCAL_MACHINE
+          SOFTWARE
+            Microsoft
+              MSIPC
+                ServiceLocation
+                  EnterpriseCertification
+
+   **Valor**: (predeterminado): [**http|https**]://RMSClusterName/**_wmcs/Certification**
 
 2. **EnterprisePublishing**
-        HKEY_LOCAL_MACHINE        SOFTWARE          Microsoft            MSIPC              ServiceLocation                EnterprisePublishing **Valor**: (predeterminado): [**http|https**]://RMSClusterName/**_wmcs/Licensing**
+
+        HKEY_LOCAL_MACHINE
+          SOFTWARE
+            Microsoft
+              MSIPC
+                ServiceLocation
+                  EnterprisePublishing
+                  
+   **Valor**: (predeterminado):[**http|https**]://RMSClusterName/**_wmcs/Licensing**
 
 >[!NOTE] 
 > De forma predeterminada, estas claves no existen en el Registro y necesitan crearse.
@@ -96,6 +110,6 @@ Los siguientes pasos le guiarán en la configuración del servidor de RMS e incl
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 
