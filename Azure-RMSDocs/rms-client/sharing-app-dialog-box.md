@@ -1,26 +1,26 @@
 ---
-title: "Opciones de cuadro de diálogo para la aplicación Rights Management sharing | Azure RMS"
+title: "Opciones del cuadro de diálogo de la aplicación Rights Management sharing | Azure Information Protection"
 description: "Información útil para especificar las opciones en el cuadro de diálogo Agregar protección o en el cuadro de diálogo Uso compartido seguro de la aplicación RMS sharing. Verá este cuadro de diálogo cuando proteja un archivo para compartirlo o cuando proteja un archivo en contexto y elija permisos personalizados."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7b91ab30-6363-4929-bcbd-4dfbd05f644a
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 035c9eb6cb630cafd5bd7fc7e2371340043ddc5e
-ms.openlocfilehash: 5f652b0e75350656f446c05d2464319ba46e06ad
+ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
+ms.openlocfilehash: a3a5fc8adf725d9cca0218e788988f718bd07bab
 
 
 ---
 
 # Opciones del cuadro de diálogo para la aplicación de uso compartido Rights Management
 
->*Se aplica a: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 con SP1, Windows 8, Windows 8.1*
+>*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 con SP1, Windows 8, Windows 8.1*
 
 Use esta información para especificar las opciones en el cuadro de diálogo **Agregar protección** o en el cuadro de diálogo **Uso compartido seguro** de la aplicación de uso compartido de RMS. Verá este cuadro de diálogo cuando [proteja un archivo para compartirlo](sharing-app-protect-by-email.md) o cuando [proteja un archivo en contexto](sharing-app-protect-in-place.md) y elija permisos personalizados.
 
@@ -42,8 +42,8 @@ Además de las opciones que puede elegir, es posible que también se pregunte lo
 |**Visor – Solo ver**<br /><br />**Revisor – Ver y editar**<br /><br />**Coautor – Ver, editar, copiar e imprimir**<br /><br />**Copropietario – Todos los permisos**<br /><br />Nota: Todas estas opciones tienen un icono redondo antes del nombre, que representa un globo terráqueo. Se usa este icono porque, normalmente, se selecciona una de estas opciones cuando se envía un archivo adjunto a una persona de otra organización.|Seleccione una de estas opciones si desea definir los derechos del documento protegido. Haga clic en cada opción para ver una descripción.<br /><br />Cuando elija una de estas opciones, solo las personas que indique en **USUARIOS** tienen los derechos que especifique para abrir y usar el documento. Por ejemplo, si reenvían el documento a otra persona, no se abrirá.|
 |Plantillas de directiva que configura el administrador.<br /><br />Por ejemplo, si el nombre de la organización es Contoso, Ltd: **Contoso, Ltd - Solo vista confidencial**.<br /><br />Todas estas opciones tienen un icono cuadrado antes del nombre, que representa un edificio de oficinas. Se usa este icono porque, normalmente, se selecciona una de estas opciones cuando se envía un archivo adjunto a una persona de la misma organización.|Al compartir un documento con personas que trabajan en su organización, verá las plantillas de directiva disponibles que configura el administrador. Elija una de estas plantillas cuando no se deba compartir el documento fuera de su organización.<br /><br />Cuando se elija una de estas opciones, el administrador definirá los derechos del documento y quién puede abrirlo.|
 |**Estos documentos expiran el**|Seleccione esta opción solo para los archivos sujetos a limitación temporal que los usuarios seleccionados no deben poder abrir después de la fecha que especifique. Usted seguirá pudiendo abrir el archivo original, pero después de la medianoche (de su zona horaria actual) del día que especifique, nadie más podrá abrir el archivo.<br /><br />Esta opción no está disponible si selecciona una plantilla de directiva configurada por el administrador.|
-|**Enviarme un correo electrónico cuando alguien trate de abrir estos documentos**|Nota: Esta opción está disponible actualmente en versión preliminar.<br /><br />Seleccione esta opción si desea recibir notificaciones por correo electrónico cuando alguien intente abrir el documento que está protegiendo. El mensaje de correo electrónico dirá quién intentó abrirlo, cuándo y si lo consiguió.<br /><br />Esta opción está disponible solo si su organización usa Azure RMS. Si su organización usa la versión local de Rights Management (AD RMS), no verá esta opción.|
-|**Permítame revocar el acceso a estos documentos de forma instantánea**|Elija esta opción si necesita revocar el acceso a los documentos más adelante a través del sitio de seguimiento de documentos y si la revocación debe surtir efecto de inmediato. Sin embargo, si establece esta opción, mientras el documento no se revoque, los usuarios siempre necesitarán una conexión a Internet para leer el documento cada vez que accedan a él. Pueden darse casos en los que los usuarios no puedan conectar su dispositivo a Internet y no puedan leer el documento tal como se pretende.<br /><br />Si no elige esta opción, todavía puede revocar los documentos más adelante, a través del sitio de seguimiento de documentos. Sin embargo, dado que los usuarios no siempre necesitan una conexión a Internet para leer el documento, no sabrán inmediatamente que el documento está revocado y podrán seguir leyéndolo hasta que vuelvan a autenticarse con Azure RMS. De forma predeterminada, el número máximo de días que alguien puede seguir leyendo un documento protegido revocado es 30 días, pero un administrador puede cambiar este valor para que sea mayor o menor que 30 días.<br /><br />Esta opción está disponible solo si su organización usa Azure RMS. Si su organización usa la versión local de Rights Management (AD RMS), no verá esta opción.|
+|**Enviarme un correo electrónico cuando alguien trate de abrir estos documentos**|Nota: Esta opción está disponible actualmente en versión preliminar.<br /><br />Seleccione esta opción si desea recibir notificaciones por correo electrónico cuando alguien intente abrir el documento que está protegiendo. El mensaje de correo electrónico dirá quién intentó abrirlo, cuándo y si lo consiguió.<br /><br />Esta opción solo está disponible si su organización usa Azure Information Protection. Si su organización usa la versión local de Rights Management (AD RMS), no verá esta opción.|
+|**Permítame revocar el acceso a estos documentos de forma instantánea**|Elija esta opción si necesita revocar el acceso a los documentos más adelante a través del sitio de seguimiento de documentos y si la revocación debe surtir efecto de inmediato. Sin embargo, si establece esta opción, mientras el documento no se revoque, los usuarios siempre necesitarán una conexión a Internet para leer el documento cada vez que accedan a él. Pueden darse casos en los que los usuarios no puedan conectar su dispositivo a Internet y no puedan leer el documento tal como se pretende.<br /><br />Si no elige esta opción, todavía puede revocar los documentos más adelante, a través del sitio de seguimiento de documentos. Sin embargo, dado que los usuarios no siempre necesitan una conexión a Internet para leer el documento, no sabrán inmediatamente que el documento está revocado y podrán seguir leyéndolo hasta que vuelvan a autenticarse con Azure RMS. De forma predeterminada, el número máximo de días que alguien puede seguir leyendo un documento protegido revocado es 30 días, pero un administrador puede cambiar este valor para que sea mayor o menor que 30 días.<br /><br />Esta opción solo está disponible si su organización usa Azure Information Protection. Si su organización usa la versión local de Rights Management (AD RMS), no verá esta opción.|
 
 ## ¿Cuál es la diferencia entre la protección genérica y la protección incorporada (nativa)?
 
@@ -78,6 +78,6 @@ Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

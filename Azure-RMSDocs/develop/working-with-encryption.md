@@ -4,18 +4,18 @@ description: "Orientación para los paquetes de cifrado de Azure RMS y recortes 
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: B1D2C227-F43D-4B18-9956-767B35145792
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 83c4eb741c484018a2837840465aca3276c785c1
-ms.openlocfilehash: b128a9adf75ae8558a33181f63881e2243e840bb
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: bf27067f832f12ef66f6df92f4008a0d21cdf2aa
 
 
 ---
@@ -40,7 +40,7 @@ A partir de la [actualización de marzo de 2015](release-notes-rtm.md), hemos in
 -   IPC\_ENCRYPTION\_PACKAGE \_AES128\_CBC4K
 -   IPC\_ENCRYPTION\_PACKAGE \_AES128\_ECB (también conocido como modo de algoritmos desusados)
 
-Las marcas de paquete de cifrado (véase [**Preferred encryption (cifrado preferido)**](/rights-management/sdk/2.1/api/win/constants#msipc_preferred_encryption)), pueden usarse junto con la nueva marca de propiedad de la licencia **IPC\_LI\_PREFERRED\_ENCRYPTION\_PACKAGE**.
+Las marcas de paquete de cifrado (véase [**Preferred encryption (cifrado preferido)**](/information-protection/sdk/2.1/api/win/constants#msipc_preferred_encryption)), pueden usarse junto con la nueva marca de propiedad de la licencia **IPC\_LI\_PREFERRED\_ENCRYPTION\_PACKAGE**.
 
 Los siguientes son algunos fragmentos de código simple que muestran cómo utilizar la nueva propiedad de la licencia.
 
@@ -103,6 +103,6 @@ Este ejemplo también muestra la nueva forma de admitir *algoritmos desusados*.
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO5-->
 
 

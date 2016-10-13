@@ -1,19 +1,19 @@
 ---
-title: "¿Qué ven los administradores y los usuarios? | Azure RMS"
-description: "Vea algunos ejemplos típicos de cómo los administradores y los usuarios ven y pueden usar Azure Rights Management (Azure RMS) para ayudar a proteger la información importante o confidencial."
+title: "¿Qué ven los administradores y los usuarios? | Azure Information Protection"
+description: "Vea algunos ejemplos típicos de cómo los administradores y los usuarios ven y pueden usar la tecnología Azure Rights Management (Azure RMS) para proteger información confidencial o importante."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 013e0eb4-49a7-4e81-9e4d-f56c0ceb017f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 43429b44c019144744f39a1f92f144d315c2024c
-ms.openlocfilehash: 6fbe4841ca3ccd684dd78608d023f6d54735bcaf
+ms.sourcegitcommit: 2c0f3b58a2f1b5233c262bb67cc4a485557ba997
+ms.openlocfilehash: d1f7b24861848f536a80a8b8889a44b41049e40b
 
 
 ---
@@ -21,7 +21,7 @@ ms.openlocfilehash: 6fbe4841ca3ccd684dd78608d023f6d54735bcaf
 
 # Azure RMS en acción: Qué ven los administradores y los usuarios
 
->*Se aplica a: Azure Rights Management, Office 365*
+>*Se aplica a: Azure Information Protection, Office 365*
 
 En este artículo se muestran algunos ejemplos típicos de cómo los administradores y los usuarios ven y pueden usar Azure Rights Management (Azure RMS) para ayudar a proteger la información importante o confidencial.
 
@@ -241,6 +241,6 @@ Ahora que ha visto algunos ejemplos de lo que Azure RMS puede hacer, es posible 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

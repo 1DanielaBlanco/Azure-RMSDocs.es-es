@@ -1,28 +1,28 @@
 ---
-title: 'Escenario: Proteger archivos en un recurso compartido de servidor de archivos | Azure RMS'
-description: "En este escenario y en la documentación de usuario correspondiente se usa Azure Rights Management para proteger masivamente todos los archivos que quiere proteger en un servidor de archivos, a fin de procurar que solo los empleados de la organización puedan tener acceso a ellos, incluso si se copian y se guardan en un almacenamiento fuera del control del departamento de TI o se envían por correo electrónico a otros usuarios."
+title: 'Escenario: Proteger archivos en un recurso compartido de servidor de archivos | Azure Information Protection'
+description: "En este escenario y en la documentación de usuario correspondiente se usa la protección de Azure Rights Management para proteger de forma masiva todos los archivos que quiera proteger en un servidor de archivos con el fin de garantizar que solo los empleados de la organización puedan acceder a ellos, incluso si se copian y se guardan en un almacenamiento que está fuera del control del departamento de TI o se envían por correo electrónico a otros usuarios."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 10/05/2016
 ms.topic: get-started-article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 283c7db3-5730-439e-a215-40a1088ed506
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: adc8ebd3063d8ac4b3710c517f0177fc25a16845
+ms.sourcegitcommit: f17cf257607b0f74ca8bdaef13130da2f62dd587
+ms.openlocfilehash: 136cabfad5914fadf183e308c51b77e20f98ca4f
 
 
 ---
 
 # Escenario: Proteger archivos en un recurso compartido de servidor de archivos
 
->*Se aplica a: Azure Rights Management, Office 365*
+>*Se aplica a: Azure Information Protection, Office 365*
 
-En este escenario y en la documentación de usuario correspondiente se usa Azure Rights Management para proteger masivamente todos los archivos que quiere proteger en un servidor de archivos, a fin de procurar que solo los empleados de la organización puedan tener acceso a ellos, incluso si se copian y se guardan en un almacenamiento fuera del control del departamento de TI o se envían por correo electrónico a otros usuarios.
+En este escenario y en la documentación de usuario correspondiente se usa la tecnología Azure Rights Management de Azure Information Protection para proteger de forma masiva todos los archivos que quiera proteger en un servidor de archivos con el fin de garantizar que solo los empleados de la organización puedan acceder a ellos, incluso si se copian y se guardan en un almacenamiento que está fuera del control del departamento de TI o se envían por correo electrónico a otros usuarios.
 
 En estas instrucciones se emplea una de las plantillas predeterminadas, que restringe el acceso a todos los empleados con todos los derechos de uso. Pero, en caso necesario, puede restringir aún más los derechos de acceso y de uso si configura una plantilla personalizada en lugar de usar una plantilla predeterminada.
 
@@ -44,10 +44,10 @@ Para que las instrucciones de este escenario funcionen, debe cumplir lo siguient
 
 |Requisito|Si necesita más información|
 |---------------|--------------------------------|
-|Azure Rights Management no está activado|[Activar Rights Management de Azure](https://technet.microsoft.com/library/jj658941.aspx)|
-|Ha sincronizado sus cuentas de usuario de Active Directory locales con Azure Active Directory u Office 365, incluyendo su dirección de correo electrónico. Esto es necesario para todos los usuarios que necesiten tener acceso a los archivos después de que se hayan protegido mediante FCI y Azure Rights Management.|[Preparación de Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
-|Uno de los siguientes:<br /><br />- Para usar una plantilla predeterminada para todos los usuarios: no se ha archivado la plantilla predeterminada, &lt;nombre de la organización&gt; - Confidencial.<br /><br />- Para usar una plantilla personalizada para usuarios específicos: ha creado y publicado esa plantilla personalizada.|[Configuración de plantillas personalizadas para Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)|
-|La aplicación Rights Management sharing se implementa en los equipos de los usuarios que ejecutan Windows|[Implementación automática de la aplicación Microsoft Rights Management sharing](https://technet.microsoft.com/library/dn339003%28v=ws.10%29.aspx)|
+|Azure Rights Management no está activado|[Activar Rights Management de Azure](../deploy-use/activate-service.md)|
+|Ha sincronizado sus cuentas de usuario de Active Directory locales con Azure Active Directory u Office 365, incluyendo su dirección de correo electrónico. Esto es necesario para todos los usuarios que necesiten tener acceso a los archivos después de que se hayan protegido mediante FCI y Azure Rights Management.|[Preparación de Azure Information Protection](../plan-design/prepare.md)|
+|Uno de los siguientes:<br /><br />- Para usar una plantilla predeterminada para todos los usuarios: no se ha archivado la plantilla predeterminada, &lt;nombre de la organización&gt; - Confidencial.<br /><br />- Para usar una plantilla personalizada para usuarios específicos: ha creado y publicado esa plantilla personalizada.|[Configuración de plantillas personalizadas para el servicio Azure Rights Management](../deploy-use/configure-custom-templates.md)|
+|La aplicación Rights Management sharing se implementa en los equipos de los usuarios que ejecutan Windows|[Implementación automática de la aplicación Microsoft Rights Management sharing](../rms-client/sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)|
 |Ha descargado la herramienta de protección de RMS y ha configurado los requisitos previos de Azure RMS.|Para obtener instrucciones para descargar la herramienta y los requisitos previos: [RMS Protection Cmdlets](https://msdn.microsoft.com/library/mt433195.aspx) (Cmdlets de protección de RMS).<br /><br />Para configurar más requisitos previos para Azure RMS, como la cuenta de entidad de servicio: [about_RMSProtection_AzureRMS](https://msdn.microsoft.com/library/mt433202.aspx).|
 
 ### Configuración de un servidor de archivos para proteger todos los archivos mediante Azure RMS y el Administrador de recursos del servidor de archivos con la infraestructura de clasificación de archivos
@@ -68,7 +68,7 @@ Para que las instrucciones de este escenario funcionen, debe cumplir lo siguient
     ```
     Para usar la plantilla predeterminada que restringe el acceso a todos los empleados con todos los derechos de uso, busque el nombre de plantilla **&lt;nombre de la organización&gt; - Confidencial**. Por ejemplo, **VanArsdel, Ltd - Confidencial**.
 
-4.  Para ver instrucciones detalladas, vea [RMS Protection with Windows Server File Classification Infrastructure (FCI)](https://technet.microsoft.com/library/mt601315%28v=ws.10%29.aspx) (Protección de RMS con la infraestructura de clasificación de archivos de Windows Server [FCI]).
+4.  Para ver instrucciones detalladas, vea [RMS Protection with Windows Server File Classification Infrastructure (FCI)](../rms-client/configure-fci.md) (Protección de RMS con la infraestructura de clasificación de archivos de Windows Server [FCI]).
 
     Estas instrucciones incluyen un script de Windows PowerShell que hay que especificar para ejecutarse como un archivo ejecutable personalizado en el Administrador de recursos del servidor de archivos. También incluyen cómo comprobar que los archivos están protegidos con Azure Rights Management.
 
@@ -117,7 +117,7 @@ Cada cierto tiempo, el archivo se volverá a proteger, lo que hace que se agregu
 
 -   Para obtener información adicional:
 
-    -   [Ver y usar archivos protegidos](https://technet.microsoft.com/library/dn574741%28v=ws.10%29)
+    -   [Ver y usar archivos protegidos](../rms-client/sharing-app-view-use-files.md)
 
 -   Póngase en contacto con el departamento de soporte técnico:
 
@@ -148,13 +148,13 @@ Cada cierto tiempo, el archivo se volverá a proteger, lo que hace que se agregu
 
 -   Para obtener información adicional:
 
-    -   [Ver y usar archivos protegidos](https://technet.microsoft.com/library/dn574741%28v=ws.10%29)
+    -   [Ver y usar archivos protegidos](../rms-client/sharing-app-view-use-files.md)
 
 -   Póngase en contacto con el departamento de soporte técnico: helpdesk@vanarsdelltd.com
 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

@@ -1,35 +1,35 @@
 ---
 title: "Cómo incorporar derechos de propiedad explícitos | Azure RMS"
-description: "La aplicación debe agregar explícitamente derechos de propietario al crear una licencia desde cero."
+description: Your application should explicitly add "Owner" rights when creating a license from scratch.
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 06/28/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: EF43FAC4-ABB4-459D-B173-972B5716F816
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5d2339ece646fc51410186d43facdea28ac8fdfe
-ms.openlocfilehash: 3fae089850787391f95d7ea1448bd48418ad3ade
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 22016f824263916f5f265d818c51975d42c35799
 
 
 ---
 
 # Incorporación de derechos de propiedad explícitos
 
-La aplicación debe agregar explícitamente derechos de propietario al crear una licencia desde cero ([**IpcCreateLicenseFromScratch**](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch)).
+La aplicación debe agregar explícitamente derechos de propietario al crear una licencia desde cero ([**IpcCreateLicenseFromScratch**](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch)).
 
 ## Requisitos previos
 
-Cuando la aplicación está creando un controlador de licencia utilizando [**IpcCreateLicenseFromScratch**](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch), debe conceder al propietario todos los derechos explícitamente.
+Cuando la aplicación está creando un controlador de licencia utilizando [**IpcCreateLicenseFromScratch**](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch), debe conceder al propietario todos los derechos explícitamente.
 
 >[!NOTE] 
-> Si configura un usuario como "propietario" con [**IpcSetLicenseProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty) con la propiedad **IPC\_LI\_OWNER**, no le concede todos los permisos.
+> Si configura un usuario como "propietario" con [**IpcSetLicenseProperty**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty) con la propiedad **IPC\_LI\_OWNER**, no le concede todos los permisos.
 
 En el ejemplo de código siguiente solo se muestran los pasos necesarios para crear y agregar derechos específicos a una licencia determinada.
 
@@ -37,7 +37,7 @@ En el ejemplo de código siguiente solo se muestran los pasos necesarios para cr
  
 ## Paso 1: escenario de ejemplo
 
-En este ejemplo, se agregan los derechos necesarios a una licencia creada con [**IpcCreateLicenseFromScratch**](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch). El ejemplo muestra la creación y asignación de los derechos de la licencia a través de una lista de derechos.
+En este ejemplo, se agregan los derechos necesarios a una licencia creada con [**IpcCreateLicenseFromScratch**](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch). El ejemplo muestra la creación y asignación de los derechos de la licencia a través de una lista de derechos.
 
 Estos usuarios se agregan los dos derechos siguientes:
 
@@ -108,14 +108,14 @@ Estos usuarios se agregan los dos derechos siguientes:
 ## Temas relacionados
 
 * [Notas para el desarrollador](developer-notes.md)
-* [**IpcCreateLicenseFromScratch**](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch)
-* [**IpcSetLicenseProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty)
+* [**IpcCreateLicenseFromScratch**](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch)
+* [**IpcSetLicenseProperty**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty)
  
 
  
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO5-->
 
 

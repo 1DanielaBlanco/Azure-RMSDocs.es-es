@@ -1,28 +1,28 @@
 ---
-title: "Escenario: Configurar carpetas de trabajo para la protección persistente | Azure RMS"
-description: "En este escenario y en la documentación de usuario correspondiente se usa Azure Rights Management para aplicar protección persistente a documentos de Office en Carpetas de trabajo."
+title: "Escenario: Configurar carpetas de trabajo para la protección persistente | Azure Information Protection"
+description: "En este escenario y en la documentación de usuario correspondiente se usa protección de Azure Rights Management para aplicar protección persistente a documentos de Office en Carpetas de trabajo."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: get-started-article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1f189345-a69e-4bf5-8a45-eb0fe5bb542b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
-ms.openlocfilehash: 1fdb62af06a3011e1102df0df3f9b61bcdc67edd
+ms.sourcegitcommit: ea299f402e5e188b498bf6e3cacf9d4dc7e0f6e8
+ms.openlocfilehash: 966c1b109a02f8193de16eae6f2eacec757f533b
 
 
 ---
 
 # Escenario: Configurar carpetas de trabajo para la protección persistente
 
->*Se aplica a: Azure Rights Management, Office 365*
+>*Se aplica a: Azure Information Protection, Office 365*
 
-En este escenario y en la documentación de usuario correspondiente se usa Azure Rights Management para aplicar protección persistente a documentos de Office en [Carpetas de trabajo](https://technet.microsoft.com/library/dn265974.aspx). Carpetas de trabajo emplea un servicio de rol para servidores de archivos que ejecutan Windows Server que proporciona a los usuarios una forma coherente de tener acceso a sus archivos de trabajo desde sus equipos y dispositivos. Carpetas de trabajo dispone de un cifrado propio para proteger los archivos, pero esta protección se pierde si los archivos se mueven fuera del entorno de Carpetas de trabajo. Esto ocurre, por ejemplo, cuando un usuario copia los archivos sincronizados y los guarda en un almacenamiento que no está bajo el control del departamento de TI, o cuando los archivos se envían por correo electrónico a otros usuarios.
+En este escenario y en la documentación de usuario correspondiente se usa la tecnología de Azure Information Protection para aplicar protección persistente a documentos de Office en [Carpetas de trabajo](https://technet.microsoft.com/library/dn265974.aspx). Carpetas de trabajo emplea un servicio de rol para servidores de archivos que ejecutan Windows Server que proporciona a los usuarios una forma coherente de tener acceso a sus archivos de trabajo desde sus equipos y dispositivos. Carpetas de trabajo dispone de un cifrado propio para proteger los archivos, pero esta protección se pierde si los archivos se mueven fuera del entorno de Carpetas de trabajo. Esto ocurre, por ejemplo, cuando un usuario copia los archivos sincronizados y los guarda en un almacenamiento que no está bajo el control del departamento de TI, o cuando los archivos se envían por correo electrónico a otros usuarios.
 
 La protección extra que Azure Rights Management aporta contribuye a evitar la pérdida accidental de datos, ya que impide que personas ajenas a su organización puedan ver los archivos. Para ello, puede usar una de las plantillas de directiva de permisos predeterminadas integradas. Pero, antes de implementar este escenario, tenga en cuenta si los usuarios van a necesitar compartir legítimamente cualquiera de estos archivos con personas ajenas a la organización. Podría ser el caso de un usuario que, tras trabajar en el borrador de una lista de precios, envíe por correo electrónico la versión final a sus clientes de otra organización. Si usa la plantilla de Rights Management predeterminada para Carpetas de trabajo, esos clientes de la otra organización no podrán leer el documento enviado por correo electrónico. Para dar cabida a este requisito, se puede crear una plantilla personalizada que permita a los usuarios aplicar una nueva directiva de permisos al archivo, de forma que se reemplace la restricción original de todos los empleados por las personas que se especifiquen en el correo electrónico.
 
@@ -51,11 +51,11 @@ Para que las instrucciones de este escenario funcionen, debe cumplir lo siguient
 
 |Requisito|Si necesita más información|
 |---------------|--------------------------------|
-|Azure Rights Management no está activado|[Activar Rights Management de Azure](https://technet.microsoft.com/library/jj658941.aspx)|
-|Ha sincronizado sus cuentas de usuario de Active Directory locales con Azure Active Directory u Office 365, incluyendo su dirección de correo electrónico. Esto es necesario para todos los usuarios que usa Carpetas de trabajo.|[Preparación de Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
-|Uno de los siguientes:<br /><br />- Para usar una plantilla predeterminada para todos los usuarios que les impida aplicar una nueva directiva de permisos: no se ha archivado la plantilla predeterminada, **&lt;nombre de la organización&gt; - Confidencial**<br /><br />- Para usar una plantilla personalizada que permita a los usuarios aplicar una nueva directiva de permisos: use las siguientes instrucciones para crear una plantilla personalizada|[Configuración de plantillas personalizadas para Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)|
-|El conector de Rights Management está instalado, autorizado para el equipo de Windows Server y configurado para el rol de **servidor FCI**.|[Implementación del conector de Azure Rights Management](https://technet.microsoft.com/library/dn375964.aspx)|
-|La aplicación Rights Management sharing se implementa en los equipos de los usuarios que ejecutan Windows|[Implementación automática de la aplicación Microsoft Rights Management sharing](https://technet.microsoft.com/library/dn339003%28v=ws.10%29.aspx)|
+|Azure Rights Management no está activado|[Activar Rights Management de Azure](../deploy-use/activate-service.md)|
+|Ha sincronizado sus cuentas de usuario de Active Directory locales con Azure Active Directory u Office 365, incluyendo su dirección de correo electrónico. Esto es necesario para todos los usuarios que usa Carpetas de trabajo.|[Preparación de Azure Information Protection](../plan-design/prepare.md)|
+|Uno de los siguientes:<br /><br />- Para usar una plantilla predeterminada para todos los usuarios que les impida aplicar una nueva directiva de permisos: no se ha archivado la plantilla predeterminada, **&lt;nombre de la organización&gt; - Confidencial**<br /><br />- Para usar una plantilla personalizada que permita a los usuarios aplicar una nueva directiva de permisos: use las siguientes instrucciones para crear una plantilla personalizada|[Configuración de plantillas personalizadas para el servicio Azure Rights Management](../deploy-use/configure-custom-templates.md)|
+|El conector de Rights Management está instalado, autorizado para el equipo de Windows Server y configurado para el rol de **servidor FCI**.|[Implementación del conector de Azure Rights Management](../deploy-use/deploy-rms-connector.md)|
+|La aplicación Rights Management sharing se implementa en los equipos de los usuarios que ejecutan Windows|[Implementación automática de la aplicación Microsoft Rights Management sharing](../rms-client/sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)|
 
 ### Configuración de la plantilla de directiva de permisos personalizada para que los usuarios puedan compartir archivos de Carpetas de trabajo fuera de la organización
 
@@ -115,13 +115,13 @@ Si los archivos que protege con Azure Rights Management no tienen que compartirs
 Si ha configurado la plantilla personalizada según lo descrito en este escenario, los usuarios verán la descripción de la plantilla en la barra de información: **Este contenido está protegido por Carpetas de trabajo y está restringido a únicamente los empleados de la empresa. Para compartir este contenido con personas fuera de la organización, adjunte el documento a un mensaje de correo y use la función de uso compartido protegido.** Aunque esta descripción resume cómo compartir el archivo fuera de la organización, probablemente los usuarios necesitarán instrucciones detalladas para llevar esto a cabo, especialmente las primeras veces. Para dar cabida a este escenario de seguimiento, use las instrucciones de administrador y usuario final del [escenario para compartir un archivo de Office con usuarios de otra organización](scenario-share-office-file-externally.md).
 
 > [!TIP]
-> Si decide no usar la plantilla personalizada de estas instrucciones (porque no quiera que los usuarios puedan compartir estos archivos fuera de la organización sin supervisión de TI), informe de esto al departamento de soporte técnico para que, cuando el requisito de uso compartido sea legítimo, se pueda cumplir poniendo en marcha el mecanismo más adecuado para su negocio. Por ejemplo, alguien que sea un [superusuario](https://technet.microsoft.com/library/mt147272.aspx) podría aplicar una nueva plantilla al contenido que conceda permisos de control total al usuario que lo pida para que, así, este usuario pueda usar la función de uso compartido protegido.
+> Si decide no usar la plantilla personalizada de estas instrucciones (porque no quiera que los usuarios puedan compartir estos archivos fuera de la organización sin supervisión de TI), informe de esto al departamento de soporte técnico para que, cuando el requisito de uso compartido sea legítimo, se pueda cumplir poniendo en marcha el mecanismo más adecuado para su negocio. Por ejemplo, alguien que sea un [superusuario](../deploy-use/configure-super-users.md) podría aplicar una nueva plantilla al contenido que conceda permisos de control total al usuario que lo pida para que, así, este usuario pueda usar la función de uso compartido protegido.
 > 
-> Transcurrido un período de tiempo, si observa que hay muchas solicitudes de este tipo, podría decidir finalmente definir su propia plantilla personalizada para este escenario que conceda a usuarios específicos (como administradores o el departamento de soporte técnico) el permiso de copropietario, mientras que los usuarios estándar tienen el permiso de coautor o los [permisos](https://technet.microsoft.com/library/mt169423.aspx) que se consideren adecuados.
+> Transcurrido un período de tiempo, si observa que hay muchas solicitudes de este tipo, podría decidir finalmente definir su propia plantilla personalizada para este escenario que conceda a usuarios específicos (como administradores o el departamento de soporte técnico) el permiso de copropietario, mientras que los usuarios estándar tienen el permiso de coautor o los [permisos](../deploy-use/configure-usage-rights.md) que se consideren adecuados.
 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

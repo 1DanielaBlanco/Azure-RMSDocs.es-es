@@ -1,19 +1,19 @@
 ---
-title: "Cómo averiguar si los usuarios se suscribieron para obtener RMS para usuarios | Azure RMS"
-description: "Como administrador, puede utilizar un método descrito, o una combinación de métodos, en este artículo para identificar si los usuarios se han registrado para RMS para personas individuales."
+title: "Cómo averiguar si los usuarios se han suscrito para obtener RMS para usuarios | Azure Information Protection"
+description: "Como administrador, ¿cómo sabes si tus usuarios se han registrado para RMS para usuarios? Puede usar cualquiera de los métodos descritos en este artículo, o bien una combinación de ellos."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/01/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a36c3d99-a794-4f7a-aafb-64a950f1fcf9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 79d098e47cdfe608bc62ed385a5c8236fb7c6d3c
-ms.openlocfilehash: 6a8a6ac7aae7c8e370af47e1d39a9f69acc1e12c
+ms.sourcegitcommit: 2fd29eb6dec94535d0358fe0a2d9c9285fcd7cd1
+ms.openlocfilehash: 9233952b6a707359c8f97516b57542e5d3d1744c
 
 
 ---
@@ -21,7 +21,7 @@ ms.openlocfilehash: 6a8a6ac7aae7c8e370af47e1d39a9f69acc1e12c
 
 # Cómo averiguar si los usuarios se suscribieron para obtener RMS para usuarios
 
->*Se aplica a: Azure Rights Management*
+>*Se aplica a: Azure Information Protection*
 
 Como administrador, ¿cómo sabes si tus usuarios se han registrado para RMS para usuarios? Puede usar uno de estos métodos o combinarlos según su criterio:
 
@@ -36,6 +36,6 @@ Como administrador, ¿cómo sabes si tus usuarios se han registrado para RMS par
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO4-->
 
 

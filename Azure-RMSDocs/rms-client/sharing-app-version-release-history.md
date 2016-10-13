@@ -1,28 +1,28 @@
 ---
-title: "Aplicación Rights Management sharing&colon; Historial de publicación de versiones | Azure RMS"
+title: "Aplicación Rights Management sharing&colon; Historial de publicación de versiones | Azure Information Protection"
 description: "Conozca las novedades o los cambios de una versión de la aplicación Rights Management sharing para Windows."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 6751bd90-959f-4eba-91ed-6588ac983762
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 035c9eb6cb630cafd5bd7fc7e2371340043ddc5e
-ms.openlocfilehash: 361fde97756c24fa46df6eda16d7506b4b8aaa3a
+ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
+ms.openlocfilehash: 31b9ad27e1fc640f8fec29067794f952aa6031b6
 
 
 ---
 
 # Aplicación de uso compartido Rights Management Historial de publicación de versiones
 
->*Se aplica a: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 con SP1, Windows 8, Windows 8.1*
+>*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 con SP1, Windows 8, Windows 8.1*
 
-El equipo de Rights Management actualiza periódicamente la aplicación para uso compartido de Rights Management con correcciones y nuevas funcionalidades. Use la información siguiente para ver las novedades o los cambios de una versión. La versión más reciente aparece en primer lugar.
+El equipo de Azure Information Protection actualiza de forma periódica la aplicación Rights Management sharing para implementar correcciones y agregar nuevas funciones. Use la información siguiente para ver las novedades o los cambios de una versión. La versión más reciente aparece en primer lugar.
 
 No se enumeran las versiones anteriores al 1 de enero de 2015.
 
@@ -131,6 +131,6 @@ No se enumeran las versiones anteriores al 1 de enero de 2015.
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 
