@@ -1,19 +1,19 @@
 ---
-title: "Configuración del Registro para el conector RMS | Azure RMS"
+title: "Configuración del Registro para el conector RMS | Azure Information Protection"
 description: "Información sobre la configuración del registro de servidores mediante el conector RMS. El método recomendado para configurar estos servidores es utilizar la herramienta de configuración del servidor del conector Microsoft RMS."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ed3e9a3d-0f7c-4abc-9d0b-aa3b18403d39
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
-ms.openlocfilehash: 5ff109543685049be5e89a12ea037de941736547
+ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
+ms.openlocfilehash: 1dd1b26735732f4bef8cf73a566b0f26b7610a82
 
 
 ---
@@ -21,7 +21,7 @@ ms.openlocfilehash: 5ff109543685049be5e89a12ea037de941736547
 
 # Configuración del Registro para el conector de Rights Management
 
->*Se aplica a: Azure Rights Management, Office 365*
+>*Se aplica a: Azure Information Protection, Office 365*
 
 
 Use las tablas de las secciones siguientes solamente si quiere agregar o comprobar manualmente las configuraciones de registro en los servidores que ejecutan Exchange, SharePoint o Windows Server, lo que configura los servidores para usar el [conector RMS](deploy-rms-connector.md). El método recomendado para configurar estos servidores es utilizar la herramienta de configuración del servidor del conector RMS de Microsoft.
@@ -216,6 +216,6 @@ Instrucciones para cuando use esta configuración:
 Vuelta a [Implementación del conector de Azure Rights Management](deploy-rms-connector.md)
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

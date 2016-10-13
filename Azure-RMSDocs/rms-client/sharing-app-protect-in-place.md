@@ -1,26 +1,26 @@
 ---
-title: "Protección de un archivo en un dispositivo (proteger en contexto) mediante la aplicación Rights Management sharing | Azure RM"
+title: "Proteger un archivo en un dispositivo (protección local) con la aplicación Rights Management sharing | Azure Information Protection"
 description: "Instrucciones sobre cómo almacenar un archivo de forma segura en un equipo, un servidor u otro dispositivo de almacenamiento."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 33920329-5247-4f6c-8651-6227afb4a1fa
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 035c9eb6cb630cafd5bd7fc7e2371340043ddc5e
-ms.openlocfilehash: 1d719bcce253dea465be7250806385bca3c23a01
+ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
+ms.openlocfilehash: 3d7a4b71f32c37d3ab632114e8147382cfbbcbd1
 
 
 ---
 
 # Proteger un archivo en un dispositivo (proteger en contexto) mediante la aplicación para uso compartido de Rights Management.
 
->*Se aplica a: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 con SP1, Windows 8, Windows 8.1*
+>*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 con SP1, Windows 8, Windows 8.1*
 
 Cuando se protege un archivo en contexto, se reemplaza el archivo sin protección original. A continuación, puede dejar el archivo donde se encuentra, copiarlo a otra carpeta o dispositivo, o compartir la carpeta en la que se encuentra, ya que el archivo seguirá estando protegido. También puede adjuntar el archivo protegido a un mensaje de correo electrónico, aunque la forma recomendada de compartir un archivo protegido por correo electrónico es hacerlo directamente desde el Explorador de archivos o desde una aplicación de Office (consulte [Protección de un archivo que comparte por correo electrónico con la aplicación Rights Management sharing](sharing-app-protect-by-email.md)).
 
@@ -66,6 +66,6 @@ Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

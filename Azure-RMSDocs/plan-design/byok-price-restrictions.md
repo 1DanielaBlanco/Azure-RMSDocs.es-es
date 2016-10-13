@@ -1,26 +1,26 @@
 ---
-title: Precio y restricciones de BYOK | Azure RMS
-description: "Conozca las restricciones de uso de claves administradas por el cliente, conocidas como “Bring your own key” (BYOK, Traiga su propia clave) con Azure RMS."
+title: Precio y restricciones de BYOK | Azure Information Protection
+description: Understand the restrictions when you use customer-managed keys (known as "bring your own key", or BYOK) with Azure RMS.
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ada00b6f6298e7d359c73eb38dfdac169eacb708
-ms.openlocfilehash: d704f3d9357993bdb01a38cda6f434ab1583b627
+ms.sourcegitcommit: 36e392d7e9a2fc8cec0419a3e66f92b42137bc72
+ms.openlocfilehash: 3ed4f3c770c1c34d2bda7481d8ca405c51d3fe8c
 
 
 ---
 
 # Precio y restricciones de BYOK
 
->*Se aplica a: Azure Rights Management, Office 365*
+>*Se aplica a: Azure Information Protection, Office 365*
 
 
 Las organizaciones que tienen una suscripción con Azure Rights Management pueden usar claves administradas por el cliente (BYOK) en el Almacén de claves de Azure y registrar su uso sin costo adicional. Sin embargo, para usar el Almacén de claves de Azure, es necesario tener una suscripción de Azure compatible con los almacenes de claves con claves protegidas por HSM. El uso de las claves en el Almacén de claves de Azure conlleva un cargo mensual. Para obtener más información, consulte la [página de precios del Almacén de claves de Azure](https://azure.microsoft.com/en-us/pricing/details/key-vault/).
@@ -33,7 +33,7 @@ Si tiene usuarios que se han registrado para obtener una cuenta gratuita de RMS 
 
 ![BYOK no es compatible con Exchange Online.](../media/RMS_BYOK_noExchange.png)
 
-BYOK y los registros de uso funcionan sin ningún problema con todas las aplicaciones que se integran con Azure RMS. Aquí se incluyen servicios en la nube, como SharePoint Online, servidores locales que ejecutan Exchange y SharePoint y que funcionan con Azure RMS a través del conector RMS y de aplicaciones cliente como Office 2013 y Office 2016. Obtendrá los registros de uso de claves independientemente de la aplicación que realiza solicitudes de Azure RMS.
+BYOK y el registro de uso funcionan perfectamente con todas las aplicaciones que se integran con el servicio Azure Rights Management (Azure RMS) usado por Azure Information Protection. Aquí se incluyen servicios en la nube, como SharePoint Online, servidores locales que ejecutan Exchange y SharePoint y que funcionan con Azure RMS a través del conector RMS y de aplicaciones cliente como Office 2013 y Office 2016. Obtendrá los registros de uso de claves independientemente de la aplicación que realiza solicitudes de Azure RMS.
 
 Existe una sola excepción: Actualmente, **BYOK de Azure RMS no es compatible con Exchange Online**. Si usa Exchange Online, se recomienda implementar ahora Azure RMS en el modo de administración de claves predeterminado, donde Microsoft genera y administra su clave. Tiene la opción de pasar a BYOK más adelante, por ejemplo, cuando Exchange Online no sea compatible con BYOK de Azure RMS. Sin embargo, si no puede esperar, otra opción es implementar Azure RMS con BYOK ahora, con funcionalidad reducida de RMS para Exchange Online (los correos electrónicos y datos adjuntos desprotegidos permanecen completamente funcionales):
 
@@ -62,6 +62,6 @@ Si ha decidido permanecer con la configuración predeterminada con la que Micros
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

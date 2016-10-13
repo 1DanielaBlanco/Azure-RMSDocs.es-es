@@ -1,26 +1,26 @@
 ---
-title: "Uso de métodos abreviados de teclado en la aplicación Rights Management sharing | Azure RMS"
+title: "Uso de métodos abreviados de teclado en la aplicación Rights Management sharing | Azure Information Protection"
 description: "Instrucciones sobre cómo utilizar métodos abreviados de teclado con la aplicación RMS sharing para Windows."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 72760134-94e0-4699-b20c-07b96aa061f1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 035c9eb6cb630cafd5bd7fc7e2371340043ddc5e
-ms.openlocfilehash: 0b7e3a9afcf1e9992345abcb124990472a399f2b
+ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
+ms.openlocfilehash: 0e39640a5c48f5d924fed6ee7bf6de34bf195e56
 
 
 ---
 
 # Usar métodos abreviados de teclado en la aplicación Rights Management sharing
 
->*Se aplica a: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 con SP1, Windows 8, Windows 8.1*
+>*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 con SP1, Windows 8 y Windows 8.1*
 
 Cuando use la aplicación RMS sharing, presione la tecla **Alt** para ver las teclas de acceso disponibles y luego presione la tecla **Alt** + la clave de acceso para seleccionar una opción.
 
@@ -40,6 +40,6 @@ Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

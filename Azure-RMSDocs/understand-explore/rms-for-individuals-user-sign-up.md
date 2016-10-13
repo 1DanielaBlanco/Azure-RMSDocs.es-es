@@ -1,26 +1,26 @@
 ---
-title: "Cómo se registran los usuarios en RMS para individuos | Azure RMS"
+title: "Cómo se registran los usuarios a RMS para individuos | Azure Information Protection"
 description: "Suscríbase para recibir las instrucciones de esta cuenta gratuita e información técnica sobre cómo funciona este proceso."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/01/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a60731bd-f78d-4f00-bb3e-354637b312ab
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0bd53bde0bfa9b44203b9d2f0f429265a013476c
-ms.openlocfilehash: 25c2ddac40c9eff78101cfaf42d4398be4e8a5cc
+ms.sourcegitcommit: 2fd29eb6dec94535d0358fe0a2d9c9285fcd7cd1
+ms.openlocfilehash: 362ea0d002e25c830c9e50ac7f1956f1e9ea8bb7
 
 
 ---
 
 # Cómo se registran los usuarios a RMS para individuos
 
->*Se aplica a: Azure Rights Management*
+>*Se aplica a: Azure Information Protection*
 
 Para registrarse en esta cuenta gratuita, debe solicitarla visitando la [página de Microsoft Azure Rights Management](https://portal.office.com/signup?sku=rms&ru=https%3A%2F%2Fportal.azurerms.com%2F%23%2Fdownload) y proporcionar su dirección de correo electrónico profesional. La forma más habitual de redirigirle a esta página de suscripción es mediante un mensaje de correo electrónico con un archivo adjunto protegido, que contiene instrucciones sobre cómo suscribirse. Recibirá un correo electrónico de respuesta de Microsoft, tras lo cual podrá completar el proceso de suscripción introduciendo los detalles para crear la cuenta. Cuando se complete, verá una página donde puede descargar la aplicación de uso compartido entre distintos dispositivos, un vínculo a la Guía del usuario y un vínculo para obtener una lista de aplicaciones que admiten de forma nativa la protección de Rights Management. 
 
@@ -97,6 +97,6 @@ Consulte [Cómo pueden los administradores controlar las cuentas creadas para RM
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 

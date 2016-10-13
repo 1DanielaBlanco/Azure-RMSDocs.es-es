@@ -4,10 +4,10 @@ description: "Guía básica para la implementación del seguimiento de documento
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: F5089765-9D94-452B-85E0-00D22675D847
 audience: developer
@@ -15,8 +15,8 @@ ms.reviewer: shubhamp
 ms.suite: ems
 experiment_id: priyamo-test-20160729
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 63882ad86a3b2746e2f7c1250f8707049dee8eb7
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 7a96d113118747c76556528f94dd65d8df05e0c3
 
 
 ---
@@ -45,12 +45,12 @@ Use estas API para agregar o actualizar una licencia de contenido con metadatos 
 Funcionalmente, solo las propiedades **content name** y **notification type** son necesarias para el seguimiento de documentos.
 
 
-- [IpcCreateLicenseMetadataHandle](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensemetadatahandle)
-- [IpcSetLicenseMetadataProperty](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicensemetadataproperty)
+- [IpcCreateLicenseMetadataHandle](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreatelicensemetadatahandle)
+- [IpcSetLicenseMetadataProperty](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetlicensemetadataproperty)
 
   Se espera que establezca todas las propiedades de metadatos. Aquí están, mostradas por tipo.
 
-  Para obtener más información, consulte [License metadata property types](/rights-management/sdk/2.1/api/win/constants#msipc_license_metadata_property_types) (Tipos de propiedades de metadatos de licencias).
+  Para obtener más información, consulte [License metadata property types](/information-protection/sdk/2.1/api/win/constants#msipc_license_metadata_property_types) (Tipos de propiedades de metadatos de licencias).
 
   - **IPC_MD_CONTENT_PATH**
 
@@ -76,16 +76,16 @@ Funcionalmente, solo las propiedades **content name** y **notification type** so
 
     Se usa para establecer la fecha de creación del archivo.
 
-- [IpcSerializeLicenseWithMetadata](/rights-management/sdk/2.1/api/win/functions#msipc_ipcserializelicensemetadata)
+- [IpcSerializeLicenseWithMetadata](/information-protection/sdk/2.1/api/win/functions#msipc_ipcserializelicensemetadata)
 
 De estas API, use la adecuada para agregar los metadatos al archivo o la secuencia.
 
-- [IpcfEncryptFileWithMetadata](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfencryptfilewithmetadata)
-- [IpcfEncryptFileStreamWithMetadata](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfencryptfilestreamwithmetadata)
+- [IpcfEncryptFileWithMetadata](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfencryptfilewithmetadata)
+- [IpcfEncryptFileStreamWithMetadata](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfencryptfilestreamwithmetadata)
 
 Por último, use esta API para registrar el documento cuyo seguimiento se realiza en el sistema de seguimiento.
 
-- [IpcRegisterLicense](/rights-management/sdk/2.1/api/win/functions#msipc_ipcregisterlicense)
+- [IpcRegisterLicense](/information-protection/sdk/2.1/api/win/functions#msipc_ipcregisterlicense)
 
 
 ## 2. Registro del documento con el servicio de RMS
@@ -136,7 +136,7 @@ El siguiente es un fragmento de código que muestra un ejemplo de cómo establec
 Agregar a la aplicación un elemento de interfaz de usuario **Hacer seguimiento de uso** es tan sencillo como usar uno de los siguientes formatos de dirección URL:
 
 - Mediante el identificador de contenido
-  - Obtenga el identificador de contenido mediante [IpcGetLicenseProperty](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgetlicenseproperty) o [IpcGetSerializedLicenseProperty](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgetserializedlicenseproperty) si la licencia está serializada y use la propiedad de la licencia **IPC_LI_CONTENT_ID**. Para obtener más información, vea [License property types](/rights-management/sdk/2.1/api/win/constants#msipc_license_property_types) (Tipos de propiedades de licencias).
+  - Obtenga el identificador de contenido mediante [IpcGetLicenseProperty](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgetlicenseproperty) o [IpcGetSerializedLicenseProperty](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgetserializedlicenseproperty) si la licencia está serializada y use la propiedad de la licencia **IPC_LI_CONTENT_ID**. Para obtener más información, vea [License property types](/information-protection/sdk/2.1/api/win/constants#msipc_license_property_types) (Tipos de propiedades de licencias).
   - Con los metadatos **ContentId** e **Issuer**, use el siguiente formato: `https://track.azurerms.com/#/{ContentId}/{Issuer}`
 
     Ejemplo: `https://track.azurerms.com/#/summary/05405df5-8ad6-4905-9f15-fc2ecbd8d0f7/janedoe@microsoft.com`
@@ -149,20 +149,20 @@ El cliente solo tiene que abrir un explorador con la dirección URL apropiada. E
 
 ## Temas relacionados
 
-* [Tipos de propiedades de metadatos de licencias](/rights-management/sdk/2.1/api/win/constants#msipc_license_metadata_property_types)
-* [Preferencia de notificación](/rights-management/sdk/2.1/api/win/constants#msipc_notification_preference)
-* [Tipo de notificación](/rights-management/sdk/2.1/api/win/constants#msipc_notification_type)
-* [IpcCreateLicenseMetadataHandle](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensemetadatahandle)
-* [IpcSetLicenseMetadataProperty](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicensemetadataproperty)
-* [IpcSerializeLicenseWithMetadata](/rights-management/sdk/2.1/api/win/functions#msipc_ipcserializelicensemetadata)
-* [IpcfEncryptFileWithMetadata](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfencryptfilewithmetadata)
-* [IpcfEncryptFileStreamWithMetadata](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfencryptfilestreamwithmetadata)
-* [IpcRegisterLicense](/rights-management/sdk/2.1/api/win/functions#msipc_ipcregisterlicense)
+* [Tipos de propiedades de metadatos de licencias](/information-protection/sdk/2.1/api/win/constants#msipc_license_metadata_property_types)
+* [Preferencia de notificación](/information-protection/sdk/2.1/api/win/constants#msipc_notification_preference)
+* [Tipo de notificación](/information-protection/sdk/2.1/api/win/constants#msipc_notification_type)
+* [IpcCreateLicenseMetadataHandle](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreatelicensemetadatahandle)
+* [IpcSetLicenseMetadataProperty](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetlicensemetadataproperty)
+* [IpcSerializeLicenseWithMetadata](/information-protection/sdk/2.1/api/win/functions#msipc_ipcserializelicensemetadata)
+* [IpcfEncryptFileWithMetadata](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfencryptfilewithmetadata)
+* [IpcfEncryptFileStreamWithMetadata](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfencryptfilestreamwithmetadata)
+* [IpcRegisterLicense](/information-protection/sdk/2.1/api/win/functions#msipc_ipcregisterlicense)
 
  
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Sep16_HO5-->
 
 

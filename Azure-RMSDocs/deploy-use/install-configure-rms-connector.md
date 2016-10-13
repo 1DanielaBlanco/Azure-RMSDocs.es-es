@@ -1,26 +1,26 @@
 ---
-title: "Instalación y configuración del conector de Azure Rights Management | Azure RMS"
+title: "Instalación y configuración del conector de Azure Rights Management | Azure Information Protection"
 description: "Información para facilitar la instalación y configuración del conector Azure Rights Management (RMS). Estos procedimientos incluyen los pasos 1 a 4 del tema Implementación del conector de Azure Rights Management."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
-ms.openlocfilehash: c4c619caca525191abe6527ca8f54c37e10cf117
+ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
+ms.openlocfilehash: 4af8d8b5f95edc7bd95fda93b26da98ee00b5075
 
 
 ---
 
 # Instalación y configuración del conector de Azure Rights Management
 
->*Se aplica a: Azure Rights Management, Office 365*
+>*Se aplica a: Azure Information Protection, Office 365*
 
 Use la siguiente información como ayuda para instalar y configurar el conector de Azure Rights Management (RMS). Estos procedimientos incluyen los pasos 1 a 4 del tema [Implementación del conector de Azure Rights Management](deploy-rms-connector.md).
 
@@ -240,6 +240,6 @@ Si ya ha descargado estos archivos, puede hacerlo desde el [Centro de descarga d
 Ahora que el conector RMS está instalado y configurado, ya puede configurar los servidores locales para que usen el conector. Vaya a [Configuring servers for the Azure Rights Management connector](configure-servers-rms-connector.md) (Configuración de servidores para el conector de Azure Rights Management).
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

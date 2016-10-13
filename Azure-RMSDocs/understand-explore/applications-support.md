@@ -1,47 +1,47 @@
 ---
-title: "¿Cómo admiten las aplicaciones Azure Rights Management? | Azure RMS"
-description: "Obtenga información sobre cómo las aplicaciones de usuario final usadas habitualmente (como las aplicaciones de Office, Word, Excel, PowerPoint y Outlook) y los servicios (como Exchange y SharePoint) pueden utilizar Microsoft Azure Rights Management con la idea de proteger los datos de su organización."
+title: Compatibilidad de aplicaciones con el servicio Azure Rights Management | Azure Information Protection
+description: "Conozca cómo la mayoría de las aplicaciones de usuario final (como las aplicaciones de Office, Word, Excel, PowerPoint y Outlook) y los servicios (como Exchange y SharePoint) más usados pueden utilizar el servicio Azure Rights Management de Azure Information Protection para ayudar a proteger los documentos y correos electrónicos de su organización."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 2cdc7bde-4044-4021-b887-11476f99afd9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 43429b44c019144744f39a1f92f144d315c2024c
-ms.openlocfilehash: 00f64e1d22f9e3aba302dcef43d2041a4e4c9fab
+ms.sourcegitcommit: 9dee9e7c925258ffd3cd9e783582733e9518d3fa
+ms.openlocfilehash: 3d2f95f2a20782897be293162d901ae0ffac421a
 
 
 ---
 
-# Cómo son compatibles las aplicaciones con Azure Rights Management
+# Compatibilidad de aplicaciones con el servicio Azure Rights Management
 
->*Se aplica a: Azure Rights Management, Office 365*
+>*Se aplica a: Azure Information Protection, Office 365*
 
-Use la información siguiente para tratar de comprender cómo la mayoría de las aplicaciones de usuario final usadas habitualmente (como las aplicaciones de Office, Word, Excel, PowerPoint y Outlook) y los servicios (como Exchange y SharePoint) pueden utilizar Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] con la idea de proteger los datos de su organización. 
+Use la información siguiente para conocer cómo la mayoría de las aplicaciones de usuario final (como las aplicaciones de Office, Word, Excel, PowerPoint y Outlook) y los servicios (como Exchange y SharePoint) más usados pueden utilizar el servicio Azure Rights Management de Azure Information Protection para ayudar a proteger los documentos y correos electrónicos de su organización. 
 > [!NOTE]
-> Para comprobar las aplicaciones y versiones que son compatibles con [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS), consulte [Requisitos de Azure Rights Management](../get-started/requirements-azure-rms.md).
+> Para comprobar las aplicaciones y versiones que son compatibles con el servicio Azure Rights Management, vea [Aplicaciones compatibles con la protección de datos de Azure Rights Management](../get-started/requirements-applications.md).
 
-En algunos casos, la protección de la información se aplica de manera automática, según lo previsto en las directivas que tú mismo configuras. Por ejemplo, este es el caso con bibliotecas de SharePoint, archivos clasificados y reglas de transporte de Exchange. En otros casos, los usuarios deben aplicar ellos mismos la protección de la información desde sus aplicaciones, ya sea seleccionando una plantilla o unas opciones específicas. Por ejemplo, este es el caso cuando los usuarios comparten un archivo por correo electrónico, o protegen un archivo in situ restringiendo el acceso o el uso a usuarios seleccionados o a usuarios externos a la organización.
+En algunos casos, el servicio Azure Rights Management aplica la protección automáticamente, según las directivas que configuren los administradores. Por ejemplo, este es el caso con bibliotecas de SharePoint, archivos clasificados y reglas de transporte de Exchange. En otros casos, los usuarios finales necesitan aplicar por su cuenta la protección de la información desde sus aplicaciones, ya sea seleccionando una plantilla u opciones específicas. Por ejemplo, este es el caso cuando los usuarios comparten un archivo por correo electrónico, o protegen un archivo in situ restringiendo el acceso o el uso a usuarios seleccionados o a usuarios externos a la organización.
 
-Las plantillas facilitan a los usuarios (y a los administradores que configuran las directivas) la aplicación del nivel de protección adecuado y restringen el acceso a personas de dentro de la organización. Aunque [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] se presenta con dos plantillas predeterminadas, probablemente querrás crear plantillas personalizadas a fin de reducir las veces en que se tienen que especificar opciones individuales. Para más información, consulte [Configuración de plantillas personalizadas para Azure Rights Management](../deploy-use/configure-custom-templates.md).
+Las plantillas facilitan a los usuarios (y a los administradores que configuran las directivas) la aplicación del nivel de protección adecuado y restringen el acceso a personas de dentro de la organización. Aunque en el servicio Azure Rights Management se incluyen dos plantillas predeterminadas, es probable que quiera crear plantillas personalizadas para reducir las ocasiones en las que es necesario especificar opciones individuales. Para más información, vea [Configuración de plantillas personalizadas para el servicio Azure Rights Management](../deploy-use/configure-custom-templates.md).
 
-Para los casos en que los usuarios deban aplicar ellos mismos la protección de información, asegúrate de proporcionarles las instrucciones y las directrices sobre cómo y cuándo deben hacerlo. Las instrucciones deberían ser específicas para la aplicación y las versiones que usan y sobre cómo usarlas, y las directrices sobre cuándo y cómo es apropiado para tu negocio aplicar la protección de información. Para más información, consulte [Ayuda a los usuarios para proteger archivos mediante Azure Rights Management](../deploy-use/help-users.md).
+Para los casos en que los usuarios deban aplicar ellos mismos la protección de información, asegúrate de proporcionarles las instrucciones y las directrices sobre cómo y cuándo deben hacerlo. Las instrucciones deberían ser específicas para la aplicación y las versiones que usan y sobre cómo usarlas, y las directrices sobre cuándo y cómo es apropiado para tu negocio aplicar la protección de información. Para más información, vea [Ayuda a los usuarios para proteger archivos mediante Azure Rights Management](../deploy-use/help-users.md).
 
-Para obtener información sobre cómo configurar estas aplicaciones para Azure RMS, consulte [Configuración de aplicaciones para Azure Rights Management](../deploy-use/configure-applications.md).
+Para obtener información sobre cómo configurar estas aplicaciones para el servicio Azure Rights Management de Azure Information Protection, vea [Configurar aplicaciones para Azure Rights Management](../deploy-use/configure-applications.md).
 
 > [!TIP]
-> Para obtener ejemplos y capturas de pantalla de aplicaciones con Azure RMS, consulte [Azure RMS en acción: Qué ven los administradores y los usuarios](what-admins-users-see.md).
+> Vea ejemplos y capturas de pantalla de aplicaciones que usan el servicio Azure Rights Management en [Azure RMS en acción: Qué ven los administradores y los usuarios](what-admins-users-see.md).
 
 Los servicios de búsqueda se pueden integrar con Rights Management de maneras diferentes. Por ejemplo: 
 
 - Exchange Online y Exchange Server usan la indexación del servicio para que los mensajes de correo electrónico protegidos por RMS de un usuario se muestren automáticamente en los resultados de búsqueda. 
 
-- SharePoint Online y SharePoint Server aplican la protección RMS a los archivos solo durante la descarga, lo que significa que la indexación y los resultados de búsqueda en SharePoint no se ven afectados por esta solución de protección de documentos. Sin embargo, si tiene un documento que quiere guardar en SharePoint y no se debe devolver en los resultados de la búsqueda, proteja con RMS el archivo antes de cargarlo en SharePoint.
+- SharePoint Online y SharePoint Server aplican la protección de Rights Management a los archivos solo durante la descarga, lo que significa que la indexación y los resultados de la búsqueda en SharePoint no se verán afectados por esta solución de protección de documentos. Sin embargo, si tiene un documento que quiere guardar en SharePoint y no se debe devolver en los resultados de la búsqueda, proteja con RMS el archivo antes de cargarlo en SharePoint.
 
 - La búsqueda de escritorio de Windows usa un índice compartido entre distintos usuarios del dispositivo, por lo que para proteger los datos de los documentos protegidos, no indexa los archivos protegidos por RMS. Esto significa que, aunque los resultados de la búsqueda no incluyen los archivos que ha protegido, puede estar seguro de que los archivos que contienen datos confidenciales no se mostrarán en los resultados de la búsqueda de otros usuarios que inicien sesión o se conecten a su equipo. 
 
@@ -49,7 +49,7 @@ Los servicios de búsqueda se pueden integrar con Rights Management de maneras d
 
 ## Pasos siguientes
 
-Obtenga más información sobre cómo admiten RMS cada uno de los siguientes elementos:
+Obtenga más información sobre la compatibilidad de los elementos siguientes con el servicio Azure Rights Management:
 
 -   [Aplicación de uso compartido RMS para Windows y plataformas móviles](sharing-app-support.md)
 
@@ -62,6 +62,6 @@ Obtenga más información sobre cómo admiten RMS cada uno de los siguientes ele
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO5-->
 
 

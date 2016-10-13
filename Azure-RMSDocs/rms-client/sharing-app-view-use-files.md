@@ -1,33 +1,33 @@
 ---
-title: "Visualización y uso de archivos protegidos por Rights Management | Azure RMS"
+title: Ver y usar los archivos protegidos por Rights Management | Azure Information Protection
 description: "Instrucciones para ver y usar un archivo protegido, que requiere que tenga la aplicación Rights Management (RMS) sharing instalada."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 035c9eb6cb630cafd5bd7fc7e2371340043ddc5e
-ms.openlocfilehash: 8d93968c51ad1037e5424df4ee9b724e0c1f89a2
+ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
+ms.openlocfilehash: 3f906815da2acd8f52bd742306d9936a71229c97
 
 
 ---
 
 # Ver y usar los archivos protegidos por Rights Management
 
->*Se aplica a: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 con SP1, Windows 8, Windows 8.1*
+>*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 con SP1, Windows 8, Windows 8.1*
 
 Cuando la [aplicación Rights Management sharing (RMS) está instalada en el equipo](install-sharing-app.md), puede ver un archivo protegido simplemente haciendo doble clic en él. El archivo puede ser un archivo adjunto en un mensaje de correo electrónico, o podría verlo al usar el Explorador de archivos.
 
 > [!NOTE]
-> Para poder ver el archivo protegido, RMS debe confirmar primero que está autorizado para ver el archivo, para lo que comprueba su nombre de usuario y contraseña. En algunos casos, esto se puede almacenar en caché y no verá un mensaje que le solicite sus credenciales. En otros casos, se le pedirá que proporcione sus credenciales.
+> Para ver el archivo protegido, el servicio Rights Management necesita confirmar primero que está autorizado para ver el archivo (para hacerlo, comprobará su nombre de usuario y contraseña). En algunos casos, esto se puede almacenar en caché y no verá un mensaje que le solicite sus credenciales. En otros casos, se le pedirá que proporcione sus credenciales.
 >
-> Si su organización no usa Azure Rights Management (Azure RMS) o AD RMS, puede solicitar una cuenta gratuita que acepte sus credenciales para que pueda abrir los archivos protegidos mediante RMS:
+> Si su organización no usa Azure Information Protection o AD RMS, puede pedir una cuenta gratuita que acepte sus credenciales para poder abrir los archivos protegidos con RMS:
 >
 > -   Para solicitar esta cuenta, haga clic en el vínculo para solicitar [RMS para usuarios](http://go.microsoft.com/fwlink/?LinkId=309469).
 >
@@ -68,7 +68,7 @@ La manera en que se abre el archivo depende de cómo se protegió, lo que se pue
 
 
 
-Para obtener la lista completa de extensiones de nombre de archivo que Azure RMS admite, consulte las secciones [Tipos de archivo y extensiones de nombre de archivo admitidos](sharing-app-admin-guide-technical.md#supported-file-types-and-file-name-extensions) de la [Guía del administrador de la aplicación Microsoft Rights Management sharing](sharing-app-admin-guide.md). Si su extensión de nombre de archivo no se incluye, realice una búsqueda web para ver si es una extensión de nombre de archivo admitida por otra aplicación.
+Para obtener la lista completa de extensiones de nombres de archivo que admiten los servicios de Rights Management, vea las secciones [Tipos de archivo y extensiones de nombre de archivo admitidos](sharing-app-admin-guide-technical.md#supported-file-types-and-file-name-extensions) de la [Guía del administrador de la aplicación Rights Management sharing](sharing-app-admin-guide.md). Si su extensión de nombre de archivo no se incluye, realice una búsqueda web para ver si es una extensión de nombre de archivo admitida por otra aplicación.
 
 > [!NOTE]
 > Si después de confirmar que el archivo está protegido por Rights Management este no se abre, descargue y use la [herramienta RMS Analyzer](https://www.microsoft.com/en-us/download/details.aspx?id=46437). Siga las instrucciones de la herramienta para detectar problemas en su equipo que puedan impedir que se abra un documento protegido.
@@ -90,7 +90,7 @@ Si, tras abrir el archivo protegido, desea hacer algo más que simplemente leerl
 
 - **Otras extensiones de nombre de archivo**
 
-    El dispositivo debe tener una aplicación que entienda Rights Management para usar estos archivos. Estas aplicaciones se denominan aplicaciones habilitadas para RMS. Las aplicaciones de Office 2016, Office 2013 y Office 2010 (como Word, Excel, PowerPoint y Outlook) son ejemplos de aplicaciones que están habilitadas para Rights Management. Sin embargo, las aplicaciones que no proceden de Microsoft, como las de otras empresas de software y sus propias aplicaciones de línea de negocio, también podrían estar habilitadas para Rights Management.
+    Para poder usar estos archivos, el dispositivo necesita usar una aplicación que entienda la protección de Rights Management. Estas aplicaciones se denominan aplicaciones habilitadas para RMS. Las aplicaciones de Office 2016, Office 2013 y Office 2010 (como Word, Excel, PowerPoint y Outlook) son ejemplos de aplicaciones que están habilitadas para Rights Management. Sin embargo, las aplicaciones que no proceden de Microsoft, como las de otras empresas de software y sus propias aplicaciones de línea de negocio, también podrían estar habilitadas para Rights Management.
 
     Las aplicaciones que están habilitadas para Rights Management saben cómo abrir los archivos que se protegieron mediante otras aplicaciones habilitadas para Rights Management. Además, conservan la protección que tenían aplicada, aun cuando modifique el archivo o lo guarde con otro nombre de archivo o en otra ubicación. Estas aplicaciones permiten usar el archivo según los permisos que tenga aplicados actualmente, por lo que si tiene permisos para usar el archivo, puede hacerlo. Por ejemplo, es posible que pueda editar el archivo pero no imprimirlo.
 
@@ -107,6 +107,6 @@ Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

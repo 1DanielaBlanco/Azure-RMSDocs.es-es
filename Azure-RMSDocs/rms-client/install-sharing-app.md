@@ -1,26 +1,26 @@
 ---
-title: "Descarga e instalación de la aplicación de uso compartido de Rights Management | Azure RMS"
+title: "Descarga e instalación de la aplicación Rights Management sharing | Azure Information Protection"
 description: "Instrucciones para instalar interactivamente la aplicación RMS sharing para Windows, por lo que se pueden compartir documentos con otros de manera segura."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 44541b6fe2567d23174b26cb42fec0731f5d3f58
-ms.openlocfilehash: b01896dc49a6c581427393f9e3fc21dbbd235238
+ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
+ms.openlocfilehash: c705bfec85bb93cb03d7e3edc9f3ce5949a8b61d
 
 
 ---
 
 # Descargar e instalar la aplicación de uso compartido de Rights Management
 
->*Se aplica a: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 con SP1, Windows 8, Windows 8.1*
+>*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 con SP1, Windows 8 y Windows 8.1*
 
 No hace falta que sea un administrador local para instalar la aplicación RMS sharing. Sin embargo, si no lo es y usa Office 2010, hay algunas limitaciones. Para más información, consulte la sección [Si no es un administrador local y usa Office 2010](#if-you-are-not-a-local-administrator-and-use-office-2010) de esta página.
 
@@ -44,13 +44,13 @@ Ahora ya puede empezar a proteger sus archivos o a leer los archivos protegidos 
 ## Si no es un administrador local y usa Office 2010
 Si inicia sesión en el equipo y no tiene derechos administrativos locales y el programa de instalación detecta que tiene instalado Office 2010, verá un mensaje de advertencia en el que se le indicará que algunos escenarios no funcionarán con tal configuración. Los escenarios son los siguientes:
 
--   Si su organización usa Azure RMS en lugar de una versión local de RMS:
+-   Si su organización usa el servicio Azure Rights Management de Azure Information Protection en lugar de la versión local de Rights Management:
 
     -   Las características de Information Rights Management (IRM) de Office no estarán disponibles. Por ejemplo, la opción **No reenviar** de los mensajes de correo electrónico y los permisos **Restringir acceso** que puede establecer desde el menú **Archivo** de Word y Excel. Puede usar la opción Uso compartido protegido de la cinta y las opciones del botón derecho del Explorador de archivos.
 
--   Si su organización usa una versión local de RMS en lugar de Azure RMS:
+-   Si su organización usa una versión local de Rights Management en lugar del servicio Azure Rights Management de Azure Information Protection:
 
-    -   No podrá leer un documento protegido que le envíe alguien de otra organización que use Azure RMS.
+    -   No podrá leer un documento protegido que le envíe alguien de otra organización que use el servicio Azure Rights Management.
 
 Si no es un administrador local y usa Office 365 u Office 2013, no verá este mensaje y se admitirán estos escenarios.
 
@@ -69,6 +69,6 @@ Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

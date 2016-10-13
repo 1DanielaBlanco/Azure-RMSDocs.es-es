@@ -1,29 +1,28 @@
 ---
-title: Requisitos de Azure RMS&#58; Directorio de Azure AD | Azure RMS
-description: Identifique los requisitos de Azure AD para usar Azure Rights Management (Azure RMS), para que los usuarios puedan autenticarse correctamente.
+title: Requisitos de Azure Active Directory | Azure Information Protection
+description: Identifique los requisitos de Azure AD para usar Azure Information Protection de forma que los usuarios se puedan autenticar correctamente.
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/29/2016
 ms.topic: get-started-article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
-ms.openlocfilehash: b4ac71492ba9ad883d481149a248b919973d7386
+ms.sourcegitcommit: 976281d2b1f9c87bbb0806fef98b2520772c507c
+ms.openlocfilehash: 5be497b09ed1b1342747508611a1cc06ad0edf02
 
 
 ---
 
-# Requisitos de Azure RMS: Directorio de Azure AD
+# Requisitos de Azure Active Directory para Azure Information Protection
 
->*Se aplica a: Azure Rights Management, Office 365*
+>*Se aplica a: Azure Information Protection, Office 365*
 
-
-Debe disponer de un directorio de Azure AD para poder usar Azure Rights Management (Azure RMS). Use la cuenta de la organización para este directorio para poder iniciar sesión en el Portal de Azure clásico, en donde, por ejemplo, podrá configurar y administrar las plantillas de Rights Management.
+Para poder usar Azure Information Protection se necesita un directorio de Azure AD. Use la cuenta de la organización para este directorio para poder iniciar sesión en el Portal de Azure clásico, en donde, por ejemplo, podrá configurar y administrar las plantillas de Rights Management.
 
 Si no dispone aún de suscripción de Azure para su organización, puede obtener una si se registra para una prueba gratuita: vaya a la página [Introducción a Azure](https://account.windowsazure.com/organization) y siga las instrucciones.
 
@@ -40,8 +39,8 @@ Si desea integrar el directorio de Azure AD con los bosques de AD locales, consu
 > 
 > -   Debe usar AD FS en la versión mínima de servidor de **Windows Server 2012 R2** o un proveedor de autenticación alternativo que admita el protocolo OAuth 2.0.
 
-## Multi-Factor Authentication (MFA) y Azure RMS
-Para usar Multi-Factor Authentication (MFA) con Azure RMS hace falta como mínimo uno de los siguientes:
+## Multi-Factor Authentication (MFA) y Azure Information Protection
+Para usar Multi-Factor Authentication (MFA) con Azure Information Protection se necesita como mínimo uno de los dos requisitos siguientes:
 
 -   Office 2013 (versión mínima):
 
@@ -70,11 +69,11 @@ A continuación, configure la solución MFA:
         Para más información sobre este escenario, consulte [Programa Works with Office 365 – Identity ahora simplificado](https://blogs.office.com/2014/01/30/the-works-with-office-365-identity-program-now-streamlined/) en el blog de Office.
 
 ## Pasos siguientes
-Para buscar otros requisitos, consulte [Requisitos de Azure Rights Management](requirements-azure-rms.md).
+Para comprobar otros requisitos, vea [Requisitos para Azure Information Protection](requirements-azure-rms.md).
 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO5-->
 
 

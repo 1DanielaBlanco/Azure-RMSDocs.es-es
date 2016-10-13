@@ -1,28 +1,28 @@
 ---
-title: "Implementación del conector de Azure Rights Management | Azure RMS"
-description: "Instrucciones para implementar el conector Azure Rights Management (RMS), que ofrece protección de la información para las implementaciones locales existentes que usan Microsoft Exchange Server, Microsoft SharePoint Server o servidores de archivo que ejecutan Windows Server y la infraestructura de clasificación de archivos."
+title: "Implementación del conector de Azure Rights Management | Azure Information Protection"
+description: "Instrucciones para implementar el conector de RMS, que ofrece protección de datos para las implementaciones locales existentes que usan Exchange Server, SharePoint Server o Windows Server y la Infraestructura de clasificación de archivos (FCI)."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/09/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 90e7e33f-9ecc-497b-89c5-09205ffc5066
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a96018818f81787720021b661db10e818f388772
-ms.openlocfilehash: 2d962f168dafb1b8c207fa6b5d353a6a3ea4d1b2
+ms.sourcegitcommit: 54901b9091a87349bc9d182bf3e2924f4046b30e
+ms.openlocfilehash: 63d900232613c264e8d8481fb43bc585e7cd6886
 
 
 ---
 
 # Implementación del conector de Azure Rights Management
 
->*Se aplica a: Azure Rights Management, Windows Server 2012, Windows Server 2012 R2*
+>*Se aplica a: Azure Information Protection, Windows Server 2012, Windows Server 2012 R2*
 
-Utilice esta información para obtener información sobre el conector de Azure Rights Management y, a continuación, cómo implementarlo correctamente para su organización. Este conector ofrece protección de datos para las implementaciones locales existentes que usan **Microsoft Exchange Server**, **Microsoft SharePoint Server** o servidores de archivo que ejecutan Windows Server y la **Infraestructura de clasificación de archivos**.
+Utilice esta información para obtener información sobre el conector de Azure Rights Management y, a continuación, cómo implementarlo correctamente para su organización. Este conector ofrece protección de datos para las implementaciones locales existentes que usan Microsoft **Exchange Server**, **SharePoint Server** o servidores de archivo que ejecutan Windows Server y la **Infraestructura de clasificación de archivos** (FCI).
 
 > [!TIP]
 > Para ver un escenario de ejemplo de alto nivel con capturas de pantalla, consulte la sección [Automatically protecting files on file servers running Windows Server and File Classification Infrastructure](../understand-explore/what-admins-users-see.md#automatically-protecting-files-on-file-servers-running-windows-server-and-file-classification-infrastructure) (Protección de archivos automática en servidores de archivos que ejecutan Windows Server y la infraestructura de clasificación de archivos) del artículo [Azure RMS in action](../understand-explore/what-admins-users-see.md) (Azure RMS en acción).
@@ -30,7 +30,7 @@ Utilice esta información para obtener información sobre el conector de Azure R
 ## Visión general del conector Rights Management de Microsoft
 El conector Rights Management (RMS) de Microsoft le permite habilitar rápidamente servidores locales existentes para usar su funcionalidad de Information Rights Management (IRM) con el servicio Rights Management de Microsoft basado en la nube (Azure RMS). Con esta funcionalidad, los TI y los usuarios pueden proteger fácilmente documentos e imágenes tanto dentro como fuera de la organización, sin tener que instalar más infraestructuras o establecer relaciones de confianza con otras organizaciones. 
 
-El conector de RMS es un servicio de tamaño reducido que se instala en servidores locales que ejecutan Windows Server 2012 R2, Windows Server 2012 o Windows Server 2008 R2. Además de ejecutar el conector en equipos físicos, también puede ejecutarlo en máquinas virtuales, incluidas las máquinas virtuales de IaaS de Azure. Después de instalar y configurar el conector, actúa como una interfaz de comunicaciones (una retransmisión) entre servidores locales y el servicio en la nube, tal como se muestra en la imagen siguiente.
+El conector de RMS es un servicio de tamaño reducido que se instala en servidores locales que ejecutan Windows Server 2012 R2, Windows Server 2012 o Windows Server 2008 R2. Además de ejecutar el conector en equipos físicos, también puede ejecutarlo en máquinas virtuales, incluidas las máquinas virtuales de IaaS de Azure. Después de instalar y configurar el conector, actúa como una interfaz de comunicaciones (una retransmisión) entre servidores locales y el servicio en la nube, tal como se muestra en la imagen siguiente. Las flechas indican la dirección en la que se inician las conexiones de red.
 
 ![Introducción a la arquitectura de conector RMS](../media/RMS_connector.png)
 
@@ -97,6 +97,6 @@ El conector no comprueba automáticamente todos los [requisitos previos](deploy-
 Vaya al paso 1: [Instalación y configuración del conector de Azure Rights Management](install-configure-rms-connector.md).
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 

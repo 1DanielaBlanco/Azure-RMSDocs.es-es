@@ -1,19 +1,19 @@
 ---
-title: Copia de una plantilla | Azure RMS
+title: Copiar una plantilla | Azure Information Protection
 description: "Instrucciones para copiar una plantilla, que es una manera fácil de crear una nueva plantilla con una configuración muy similar a una plantilla existente."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f329ce49-e044-4c11-821d-5496d83c1bb3
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
-ms.openlocfilehash: a35a59f466b088d3735bef4e12327990c75952d6
+ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
+ms.openlocfilehash: 5248a7a5b90e956d4121d95e0b82a941a20d4e8f
 
 
 ---
@@ -21,7 +21,7 @@ ms.openlocfilehash: a35a59f466b088d3735bef4e12327990c75952d6
 
 # Copia de una plantilla
 
->*Se aplica a: Azure Rights Management, Office 365*
+>*Se aplica a: Azure Information Protection, Office 365*
 
 Si desea crear una plantilla nueva que tenga una configuración muy similar a una plantilla existente, seleccione la plantilla original en la página **PLANTILLAS** , haga clic en **COPIAR**, especifique un nombre único y haga los cambios necesarios.
 
@@ -36,6 +36,6 @@ Puedes copiar plantillas personalizadas y plantillas predeterminadas. Como prác
 [Configuración de plantillas personalizadas para Azure Rights Management](configure-custom-templates.md)
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

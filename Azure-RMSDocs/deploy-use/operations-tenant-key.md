@@ -1,32 +1,32 @@
 ---
-title: "Operaciones para la clave de inquilino de Administración de permisos de Azure | Azure RMS"
-description: Identifique los distintos niveles de control y la responsabilidad que tiene con la clave de inquilino de Azure Rights Management (Azure RMS).
+title: Operaciones para la clave de inquilino de Azure Rights Management | Azure Information Protection
+description: Identifique los diferentes niveles de control y responsabilidad que tiene para su clave de inquilino de Azure Information Protection.
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1284d0ee-0a72-45ba-a64c-3dcb25846c3d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
-ms.openlocfilehash: d496a99c4b05e0cf0ba5929f44cdbd1906d31341
+ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
+ms.openlocfilehash: 780c4db3e791dd427828550e428ec4ea18d55fd5
 
 
 ---
 
-# Operaciones para la clave de inquilino de Administración de permisos de Azure
+# Operaciones para la clave de inquilino de Azure Information Protection
 
->*Se aplica a: Azure Rights Management, Office 365*
+>*Se aplica a: Azure Information Protection, Office 365*
 
-En función de la topología de la clave de inquilino (administrada por Microsoft o por el cliente), tiene diferentes niveles de control y responsabilidad para su clave de inquilino de Microsoft Azure Rights Management (Azure RMS) una vez implementada.
+Según la topología de claves de inquilino (administrada por Microsoft o administrada por el cliente), puede usar diferentes niveles de control y responsabilidad para su clave de inquilino de Azure Information Protection después de su implementación.
 
 La administración de su propia clave de inquilino en el Almacén de claves de Azure se conoce como BYOK, o "aportar su propia clave". Para más información sobre este escenario y acerca de cómo elegir entre las dos topologías clave, vea [Planeamiento e implementación de la clave de inquilino de Azure Rights Management](../plan-design/plan-implement-tenant-key.md).
 
-La tabla siguiente identifica qué operaciones puede realizar en función de la topología que eligió para su clave de inquilino de Azure RMS.
+En la tabla siguiente se identifican las operaciones que puede realizar según la topología que haya elegido para su clave de inquilino de Azure Information Protection.
 
 |Operación del ciclo de vida|Administrada por Microsoft (predeterminada)|Administrada por el cliente (BYOK)|
 |-----------------------|-------------------------------|---------------------------|
@@ -36,7 +36,7 @@ La tabla siguiente identifica qué operaciones puede realizar en función de la 
 |Exportar su clave de inquilino|Sí|No|
 |Responder a una infracción|Sí|Sí|
 
-Una vez que identifique qué topología implementó, seleccione una de las siguientes secciones para más información sobre estas operaciones de su clave de inquilino de Azure RMS:
+Después de identificar la topología que ha implementado, seleccione una de las secciones siguientes para obtener más información sobre estas operaciones de su clave de inquilino de Azure Information Protection:
 
 
 - [Clave de inquilino administrada por Microsoft](operations-microsoft-managed-tenant-key.md)
@@ -48,6 +48,6 @@ Una vez que identifique qué topología implementó, seleccione una de las sigui
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

@@ -1,28 +1,28 @@
 ---
-title: "Escenario: Enviar un correo electrónico confidencial de la empresa | Azure RMS"
-description: "En este escenario y en la documentación de usuario correspondiente se usa Azure Rights Management para que cualquier usuario de la organización pueda enviar de forma segura comunicaciones de correo electrónico que no se pueden leer fuera de la organización."
+title: "Escenario: Enviar un correo electrónico confidencial de la empresa | Azure Information Protection"
+description: "En este escenario y en la documentación de usuario correspondiente se usa la protección de Azure Rights Management para que cualquier usuario de la organización pueda enviar de forma segura comunicaciones por correo electrónico que no se puedan leer fuera de la organización."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: get-started-article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 950799e9-2289-48c7-b95a-f54a8ead520a
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
-ms.openlocfilehash: e3245f7fb15f7081dbe4552eb9734a4915d1b6f1
+ms.sourcegitcommit: ea299f402e5e188b498bf6e3cacf9d4dc7e0f6e8
+ms.openlocfilehash: 9fafe78b8393ae36defeecccceb8f4a2d36a3b79
 
 
 ---
 
 # Escenario: Enviar un correo electrónico confidencial de la empresa
 
->*Se aplica a: Azure Rights Management, Office 365*
+>*Se aplica a: Azure Information Protection, Office 365*
 
-En este escenario y en la documentación de usuario correspondiente se usa Azure Rights Management para que cualquier usuario de la organización pueda enviar de forma segura comunicaciones de correo electrónico que no se pueden leer fuera de la organización. Por ejemplo, si el mensaje de correo se reenviara a alguien de otra organización o a una cuenta de correo electrónico personal. Los correos electrónicos y los datos adjuntos estarán protegidos por Azure Rights Management y por una plantilla que los usuarios seleccionan en el cliente de correo electrónico.
+En este escenario y en la documentación de usuario correspondiente se usa la tecnología Azure Rights Management de Azure Information Protection para que cualquier usuario de la organización pueda enviar de forma segura comunicaciones por correo electrónico que no se puedan leer fuera de la organización. Por ejemplo, si el mensaje de correo se reenviara a alguien de otra organización o a una cuenta de correo electrónico personal. Los correos electrónicos y los datos adjuntos estarán protegidos por Azure Rights Management y por una plantilla que los usuarios seleccionan en el cliente de correo electrónico.
 
 La forma más sencilla de reproducir este escenario consiste en usar una de las plantillas predeterminadas integradas que restringen automáticamente el acceso a todos los usuarios de la organización. Pero, si fuera necesario restringir más aún, puede crear una plantilla personalizada que, por ejemplo, limite el acceso a un subconjunto de usuarios o que tenga otras restricciones, como que sea de solo lectura, que tenga una fecha de caducidad o que tenga el botón Reenviar deshabilitado en el cliente de correo electrónico.
 
@@ -49,12 +49,12 @@ Para que las instrucciones de este escenario funcionen, debe cumplir lo siguient
 
 |Requisito|Si necesita más información|
 |---------------|--------------------------------|
-|Ha preparado cuantas y grupos para Office 365 o Azure Active Directory|[Preparación de Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
-|Microsoft administra su clave de inquilino de Azure Rights Management; no se usa BYOK|[Planeación e implementación de la clave de inquilino de Azure Rights Management](https://technet.microsoft.com/library/dn440580.aspx)|
-|Azure Rights Management no está activado|[Activar Rights Management de Azure](https://technet.microsoft.com/library/jj658941.aspx)|
-|Uno de los siguientes:<br /><br />- Exchange Online está habilitado para Azure Rights Management<br /><br />- El conector RMS está instalado y configurado para Exchange local|Para Exchange Online: expanda la sección **Exchange Online: IRM Configuration** (Exchange Online: Configuración de IRM) del tema [Configuring Applications for Azure Rights Management](https://technet.microsoft.com/library/jj585031.aspx) (Configuración de aplicaciones para Azure Rights Management).<br /><br />Para Exchange local: [Deploying the Azure Rights Management connector](https://technet.microsoft.com/library/dn375964.aspx) (Implementación del conector de Azure Rights Management).|
-|No ha archivado la plantilla predeterminada de Azure Rights Management **&lt;organización&gt; - Confidencial**. O bien, ha configurado una plantilla personalizada para este propósito, porque necesita una configuración más restrictiva o que solo un subconjunto de usuarios de la organización pueda leer los mensajes de correo electrónico protegidos.|[Configuración de plantillas personalizadas para Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)<br /><br />Sugerencia: si necesita una configuración de directiva de uso más restrictiva para todos los usuarios de la organización, copie y modifique una de las plantillas predeterminadas, en lugar de crear una plantilla desde cero.<br /><br />Las plantillas actualizadas no se actualizan inmediatamente para los clientes de correo electrónico en este escenario. Para más información, vea la sección sobre cómo [actualizar plantillas para usuarios](https://technet.microsoft.com/library/dn642472.aspx) del artículo de configuración de plantillas.|
-|Los usuarios que envían el correo electrónico protegido tienen Outlook 2013, Outlook 2016 u Outlook Web Access.<br /><br />Los usuarios que reciben el correo electrónico tienen un cliente de correo electrónico que admite Azure Rights Management.|Puede usar Outlook 2010, pero deberá [instalar la aplicación Rights Management sharing para Windows](https://technet.microsoft.com/library/dn339003.aspx) y ajustar las instrucciones de usuario según corresponda.<br /><br />Para ver una lista de clientes de correo electrónico que admiten Azure Rights Management, vea la columna de **correo electrónico** de la tabla de [funciones de dispositivos de cliente](https://technet.microsoft.com/library/dn655136.aspx) del artículo [Requirements for Azure Rights Management](https://technet.microsoft.com/library/dn655136.aspx) (Requisitos de Azure Rights Management).|
+|Ha preparado cuantas y grupos para Office 365 o Azure Active Directory|[Preparación de Azure Information Protection](../plan-design/prepare.md)|
+|La clave de inquilino de Azure Information Protection está administrada por Microsoft y no usa BYOK|[Planeamiento e implementación de su clave de inquilino de Azure Information Protection](../plan-design/plan-implement-tenant-key.md)|
+|Azure Rights Management no está activado|[Activar Rights Management de Azure](../deploy-use/activate-service.md)|
+|Uno de los siguientes:<br /><br />- Exchange Online está habilitado para Azure Rights Management<br /><br />- El conector RMS está instalado y configurado para Exchange local|Para Exchange Online, vea la sección **Exchange Online: Configuración de IRM** en el artículo [Office 365: Configuración para clientes y servicios en línea](../deploy-use/configure-office365.md).<br /><br />Para Exchange local: [Deploying the Azure Rights Management connector](../deploy-use/deploy-rms-connector.md) (Implementación del conector de Azure Rights Management).|
+|No ha archivado la plantilla predeterminada de Azure Rights Management **&lt;organización&gt; - Confidencial**. O bien, ha configurado una plantilla personalizada para este propósito, porque necesita una configuración más restrictiva o que solo un subconjunto de usuarios de la organización pueda leer los mensajes de correo electrónico protegidos.|[Configuración de plantillas personalizadas para el servicio Azure Rights Management](../deploy-use/configure-custom-templates.md)<br /><br />Sugerencia: si necesita una configuración de directiva de uso más restrictiva para todos los usuarios de la organización, copie y modifique una de las plantillas predeterminadas, en lugar de crear una plantilla desde cero.<br /><br />Las plantillas actualizadas no se actualizan inmediatamente para los clientes de correo electrónico en este escenario. Para más información, vea el artículo [Actualizar plantillas para los usuarios](../deploy-use/refresh-templates.md).|
+|Los usuarios que envían el correo electrónico protegido tienen Outlook 2013, Outlook 2016 u Outlook Web Access.<br /><br />Los usuarios que reciben el correo electrónico tienen un cliente de correo electrónico que admite Azure Rights Management.|Puede usar Outlook 2010, pero deberá [instalar la aplicación Rights Management sharing para Windows](../rms-client/sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application) y ajustar las instrucciones de usuario según corresponda.<br /><br />Para obtener una lista de los clientes de correo electrónico compatibles con Azure Rights Management, vea la columna **Correo electrónico** en la tabla de [Requisitos de Azure RMS: Aplicaciones](../get-started/requirements-applications.md).|
 
 ## Instrucciones de la documentación del usuario
 Con la siguiente plantilla, copie y pegue las instrucciones de usuario en una comunicación dirigida a sus usuarios finales y realice estas modificaciones para reflejar su entorno:
@@ -157,6 +157,6 @@ Los destinatarios a los que envíe el correo electrónico podrán reenviarlo a o
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 
