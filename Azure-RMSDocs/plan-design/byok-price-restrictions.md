@@ -3,7 +3,7 @@ title: Precio y restricciones de BYOK | Azure Information Protection
 description: Understand the restrictions when you use customer-managed keys (known as "bring your own key", or BYOK) with Azure RMS.
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 36e392d7e9a2fc8cec0419a3e66f92b42137bc72
-ms.openlocfilehash: 3ed4f3c770c1c34d2bda7481d8ca405c51d3fe8c
+ms.sourcegitcommit: d7dee4efcff4ccf76f08f9033fdaf89daf095d4e
+ms.openlocfilehash: 86e6ebac4ad8c0782fb27344c30ee1d044be33d0
 
 
 ---
@@ -23,9 +23,34 @@ ms.openlocfilehash: 3ed4f3c770c1c34d2bda7481d8ca405c51d3fe8c
 >*Se aplica a: Azure Information Protection, Office 365*
 
 
-Las organizaciones que tienen una suscripción con Azure Rights Management pueden usar claves administradas por el cliente (BYOK) en el Almacén de claves de Azure y registrar su uso sin costo adicional. Sin embargo, para usar el Almacén de claves de Azure, es necesario tener una suscripción de Azure compatible con los almacenes de claves con claves protegidas por HSM. El uso de las claves en el Almacén de claves de Azure conlleva un cargo mensual. Para obtener más información, consulte la [página de precios del Almacén de claves de Azure](https://azure.microsoft.com/en-us/pricing/details/key-vault/).
+Las organizaciones que tienen una suscripción con Azure Information Protection pueden usar claves administradas por el cliente (BYOK) en Azure Key Vault y [registrar su uso](../deploy-use/log-analyze-usage.md) sin costo adicional. 
 
-Si tiene usuarios que se han registrado para obtener una cuenta gratuita de RMS de uso personal, no podrá usar BYOK ni los registros de uso, ya que esta configuración no tiene un administrador de inquilinos para configurar estas características.
+Sin embargo, para usar el Almacén de claves de Azure, es necesario tener una suscripción de Azure compatible con los almacenes de claves con claves protegidas por HSM. El uso de las claves en el Almacén de claves de Azure conlleva un cargo mensual. Para obtener más información, consulte la [página de precios del Almacén de claves de Azure](https://azure.microsoft.com/en-us/pricing/details/key-vault/).
+
+Si usa Azure Key Vault para la clave de inquilino de Azure Information Protection, se recomienda que use un almacén de claves dedicado para esta clave con una suscripción dedicada, para asegurarse de que solo la use el servicio Azure Rights Management. 
+
+## Ventajas de usar Azure Key Vault
+
+Además de emplear el registro de uso de Azure Information Protection, para una mayor seguridad, puede hacer referencias cruzadas con el [registro de Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-logging/) para supervisar de manera independiente que solo el servicio Azure Rights Management use esta clave. Si es necesario, puede revocar de inmediato el acceso a la clave eliminando los permisos en el almacén de claves.
+
+Otras ventajas de usar Azure Key Vault para la clave de inquilino de Azure Information Protection:
+
+- Azure Key Vault proporciona una solución de administración de claves centralizada que ofrece una solución de administración coherente para muchos servicios basados en la nube e incluso servicios locales que usan cifrado.
+
+- Azure Key Vault admite diversas interfaces integradas para la administración de claves, incluidas PowerShell, CLI, API de REST y Portal de Azure. Se han integrado otros servicios y herramientas con Key Vault, con el fin de ofrecer funcionalidades optimizadas para tareas específicas, como la supervisión. Por ejemplo, puede analizar los registros de uso de claves mediante Log Analytics desde Operations Management Suite, establecer alertas cuando se cumplen los criterios especificados, etc.
+
+- Azure Key Vault proporciona la separación del rol como práctica recomendada de seguridad reconocida. Los administradores de Azure Information Protection pueden centrarse en administrar la protección y la clasificación de datos, mientras que los administradores de Azure Key Vault pueden centrarse en administrar claves de cifrado y las directivas especiales que requieran para la seguridad o el cumplimiento.
+
+- Algunas organizaciones tienen restricciones en lo que respecta al lugar en el que debe residir la clave maestra. Azure Key Vault proporciona un alto nivel de control sobre el lugar en el que se almacenará la clave maestra, ya que el servicio está disponible en muchas regiones de Azure. Actualmente puede elegir entre 28 regiones de Azure, aunque esta cifra probablemente aumentará. Para obtener más información, consulte la página [Productos disponibles por región] (https://azure.microsoft.com/regions/services/) en el sitio de Azure.
+
+Además de la administración de claves, Azure Key Vault ofrece a los administradores de seguridad la misma experiencia de administración para el almacenamiento, el acceso y la administración de certificados y secretos (por ejemplo, contraseñas) para otros servicios y aplicaciones que usan cifrado. 
+
+Para obtener más información sobre Azure Key Vault, consulte [¿Qué es el Almacén de claves de Azure?](https://azure.microsoft.com/documentation/articles/key-vault-whatis/) y visite el [blog del equipo de Azure Key Vault](https://blogs.technet.microsoft.com/kv/) para obtener la información más reciente y documentarse sobre cómo usan esta tecnología otros servicios.
+
+
+## Restricciones en el uso de BYOK
+
+Si tiene usuarios que se han registrado para obtener una cuenta gratuita de RMS para usuarios, no podrá usar BYOK ni los registros de uso, ya que esta configuración no tiene un administrador de inquilinos para configurar estas características.
 
 
 > [!NOTE]
@@ -62,6 +87,6 @@ Si ha decidido permanecer con la configuración predeterminada con la que Micros
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

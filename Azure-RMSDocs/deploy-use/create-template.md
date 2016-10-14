@@ -3,7 +3,7 @@ title: "Creación, configuración y publicación de una plantilla personalizada 
 description: "Instrucciones para crear y administrar plantillas personalizadas en el Portal de Azure clásico. Las plantillas facilitan a los usuarios finales y otros administradores la aplicación de las directivas apropiadas que protegen documentos y correos electrónicos."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: 30cd611e128217b2760e66b3391a0702ae0ed7a6
+ms.sourcegitcommit: d205e63bdd8819177493837296259c5400a76503
+ms.openlocfilehash: 906bc1e97947cf32b102fdf484b86bc30b9a383d
 
 
 ---
@@ -70,9 +70,11 @@ Usa los procedimientos siguientes para crear, configurar y publicar plantillas p
 
         Si no ve inmediatamente esta página tras seguir las instrucciones de Office 365, use las instrucciones de navegación del Portal de Azure clásico, enumeradas anteriormente.
 
-3.  En la página **Agregar una nueva plantilla de directiva de permisos** , seleccione un idioma en el que tendrá que escribir el nombre de la plantilla y la descripción que verán los usuarios (puede agregar más idiomas más adelante). A continuación, escribe un nombre y una descripción únicos, y haz clic en el botón Completado.
+3. En la página **Agregar una nueva plantilla de directiva de permisos** , seleccione un idioma en el que tendrá que escribir el nombre de la plantilla y la descripción que verán los usuarios (puede agregar más idiomas más adelante). A continuación, escribe un nombre y una descripción únicos, y haz clic en el botón Completado.
 
-En la página de inicio rápido **Empiece a trabajar con Rights Management** , haga clic en **Administrar sus plantillas de directivas de permisos**. Verá la plantilla recién creada agregada a la lista de plantillas, con el estado **Archivada**. En esta fase, la plantilla se ha creado pero no se ha configurado, y no es visible para los usuarios.
+    No incluya una coma ni un punto y coma en el nombre de la plantilla o la descripción. No todos los servicios y aplicaciones que usan plantillas de Rights Management admiten estos caracteres para estas plantillas. En este escenario, es posible que estos servicios y aplicaciones no puedan recuperar o usar estas plantillas de Azure Rights Management.
+
+4. En la página de inicio rápido **Empiece a trabajar con Rights Management** , haga clic en **Administrar sus plantillas de directivas de permisos**. Verá la plantilla recién creada agregada a la lista de plantillas, con el estado **Archivada**. En esta fase, la plantilla se ha creado pero no se ha configurado, y no es visible para los usuarios.
 
 ## Para configurar y publicar una plantilla personalizada
 
@@ -166,6 +168,6 @@ Para realizar cualquier cambio en tu plantilla, selecciónala y, a continuación
 [Configuración de plantillas personalizadas para Azure Rights Management](configure-custom-templates.md)
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 
