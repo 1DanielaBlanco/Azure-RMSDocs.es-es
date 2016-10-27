@@ -3,15 +3,15 @@ title: "Tutorial de inicio rápido | Azure Information Protection"
 description: "Un tutorial introductorio para probar rápidamente Microsoft Azure Information Protection para su organización, que debería tardar unos 30 minutos."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
 translationtype: Human Translation
-ms.sourcegitcommit: e67fe1e6b63be679ae62bb45359db98df59386da
-ms.openlocfilehash: 3022ef92a04351c76c370ed31b519425923cfa04
+ms.sourcegitcommit: 4f5f7670ce1897a6436e511057fc714c839a8f00
+ms.openlocfilehash: a8c4003d8dbae5d33712860cd1f665de234db5a0
 
 
 ---
@@ -29,8 +29,10 @@ Si tiene algún problema para seguir este tutorial, para usar Azure Information 
 ## Requisitos previos 
 Para completar este tutorial, necesitará lo siguiente:
 
-- Una suscripción que incluye Azure Information Protection para la clasificación, el etiquetado y la protección. En este tutorial se incluyen algunas características avanzadas, como la clasificación de datos automatizada con recomendaciones de usuarios, y el sitio de seguimiento de documentos. Asegúrese de que su suscripción admite estas características. Para obtener más información, vea la información sobre la suscripción en la [página de precios](https://go.microsoft.com/fwlink/?LinkId=827589) de Azure Information Protection.
-
+- Una suscripción que incluye Azure Information Protection para la clasificación, el etiquetado y la protección. En este tutorial se incluyen algunas características avanzadas, como la clasificación de datos automatizada con recomendaciones de usuarios, y el sitio de seguimiento de documentos. Asegúrese de que su suscripción admite estas características. Para obtener más detalles, consulte la [información sobre la suscripción](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing) y la [lista de características](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features) en el sitio de Azure Information Protection.
+    
+    Si no tiene una suscripción para estas características, puede registrarse para obtener una prueba gratuita de [Enterprise Mobility + Security E5](https://portal.office.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7).
+    
 - Una suscripción a Azure, para que pueda obtener acceso al portal de Azure para configurar la directiva de Azure Information Protection. Si todavía no dispone de una suscripción a Azure para su organización, puede obtener una registrándose a una prueba gratuita: vaya a la página [Introducción a Azure](https://account.windowsazure.com/organization) y siga las instrucciones.
 
   > [!TIP] 
@@ -49,6 +51,6 @@ Comencemos.
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

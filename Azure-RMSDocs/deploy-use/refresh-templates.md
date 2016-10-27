@@ -3,7 +3,7 @@ title: Actualizar plantillas | Azure Information Protection
 description: "Cuando usa el servicio Azure Rights Management, se descargan de forma automática plantillas a los ordenadores cliente para que los usuarios puedan seleccionarlas desde sus aplicaciones. Sin embargo, es posible que tengas que tomar medidas adicionales si quieres efectuar cambios en las plantillas."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: 2870edc314f3ee6f6e3b8937cbe5b653092c5910
+ms.sourcegitcommit: 67c2f47e1cc8e02c2bb4430421952a146e583e87
+ms.openlocfilehash: a823d79a9305569962ee165b6eadf1d5384c0c0b
 
 
 ---
@@ -29,7 +29,7 @@ Cuando usa el servicio Azure Rights Management de Azure Information Protection, 
 |--------------------------|---------------------------------------------|
 |Exchange Online|Configuración manual precisa para actualizar plantillas.<br /><br />En los pasos de configuración, consulte la sección siguiente, [Solamente Exchange Online: Cómo configurar Exchange para descargar las plantillas personalizadas que se han cambiado](#exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates).|
 |Office 365|Actualización automática: no se requieren pasos adicionales.|
-|Office 2016 y Office 2013<br /><br />Aplicaciones de uso compartido de RMS para Windows|Actualización automática: programada:<br /><br />Para estas versiones posteriores de Office: el intervalo de actualización predeterminado es cada siete días.<br /><br />Para la aplicación RMS sharing para Windows: a partir de la versión 1.0.1784.0, el intervalo de actualización predeterminado es cada día. Las versiones anteriores tienen un intervalo de actualización predeterminado de 7 días.<br /><br />Para forzar una actualización antes de esta programación, consulte la sección siguiente, [Office 2016, Office 2013 y la aplicación RMS sharing para Windows: Cómo forzar una actualización de una plantilla personalizada que se ha cambiado](#office-2016-office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template).|
+|Office 2016 y Office 2013<br /><br />Aplicaciones de uso compartido de RMS para Windows|Actualización automática: programada:<br /><br />Para estas versiones posteriores de Office: el intervalo de actualización predeterminado es cada siete días.<br /><br />Para la aplicación RMS sharing para Windows: a partir de la versión 1.0.1784.0, el intervalo de actualización predeterminado es cada día. Las versiones anteriores tienen un intervalo de actualización predeterminado de 7 días.<br /><br />Para forzar una actualización antes de esta programación, consulte la sección siguiente, [Office 2016, Office 2013 y la aplicación RMS sharing para Windows: Cómo forzar una actualización de una plantilla personalizada que se ha cambiado](#office-2016--office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template).|
 |Office 2010|Se actualiza cuando los usuarios inician sesión.<br /><br />Para forzar una actualización, pide u obliga a los usuarios a cerrar sesión y volver a iniciar la sesión. O bien, vea la sección siguiente: [Solamente para Office 2010: Cómo forzar una actualización de una plantilla personalizada que se ha cambiado](#office-2010-only-how-to-force-a-refresh-for-a-changed-custom-template).|
 Para los dispositivos móviles que usan la aplicación de uso compartido de RMS, se descargan automáticamente plantillas (y se actualizan si es necesario) sin que sea precisa una nueva configuración.
 
@@ -186,6 +186,6 @@ Si modifica el Registro de los equipos que ejecutan Office 2010, puede establece
 [Configuración de plantillas personalizadas para Azure Rights Management](configure-custom-templates.md)
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

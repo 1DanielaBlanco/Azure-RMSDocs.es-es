@@ -82,7 +82,7 @@ Ya está listo para crear sus propias aplicaciones nuevas de la Tienda Windows.
 
 [Visual Studio 2012](http://www.microsoft.com/visualstudio/eng/products/visual-studio-overview)
 
-[Referencia de la API de Windows](/information-protection/sdk/4.2/api/winrt/Microsoft.RightsManagement)
+[Referencia de la API de Windows](https://msdn.microsoft.com/library/dn891914.aspx)
 
 
 

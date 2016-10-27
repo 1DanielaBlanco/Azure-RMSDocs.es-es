@@ -3,7 +3,7 @@ title: "Otras aplicaciones compatibles con las API de Rights Management: Instala
 description: "Obtenga información sobre cómo el servicio Azure Rights Management de Azure Information Protection puede funcionar con otras aplicaciones para proteger los datos de su organización."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: c50a8cbb-d12f-4a0e-bc29-74c463e6ac3e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 55fd22b60ad87dadce0ffb89bb658e949670f728
-ms.openlocfilehash: 1b2a6f24824ca4efbed11403a8a863992c93ed38
+ms.sourcegitcommit: 3b5f82e495291bd48d488f44bc72c1d478a879e0
+ms.openlocfilehash: 0ee1e316310df889f87b1bc7932d8970abae140f
 
 
 ---
@@ -26,13 +26,13 @@ Use esta información para conocer cómo el servicio Azure Rights Management de 
 
 Al usar Rights Management SDK, los desarrolladores internos pueden escribir aplicaciones empresariales que sean compatibles de forma nativa con el servicio Azure Rights Management. Cómo se integre la protección de la información con estas aplicaciones depende del modo en que estén escritas. Por ejemplo, la integración se podría aplicar automáticamente con un requisito mínimo de interacción del usuario o, para una experiencia más personalizada, los usuarios podrían recibir un aviso para configurar los valores a fin de aplicar la protección de la información a los archivos. Para más información sobre el SDK, consulte la [Guía del desarrollador de](../develop/developers-guide.md).
 
-De forma similar, muchos proveedores de software desarrollan aplicaciones que ofrecen soluciones para la protección de la información, que también se conocen como productos de administración de derechos empresariales (ERM). Un ejemplo común es un lector de PDF que es compatible con el servicio Azure Rights Management para plataformas específicas. Puede usar la tabla en [Requisitos de Azure RMS: Aplicaciones](../get-started/requirements-applications.md) para identificar las aplicaciones que son compatibles con Rights Management (aplicaciones habilitadas para RMS) y, después, realizar una búsqueda en la web para comprar o descargar la aplicación.
+De forma similar, muchos proveedores de software desarrollan aplicaciones que ofrecen soluciones para la protección de la información, que también se conocen como productos de administración de derechos empresariales (ERM). Un ejemplo común es un lector de PDF que es compatible con el servicio Azure Rights Management para plataformas específicas. Puede usar la tabla en [Aplicaciones compatibles con la protección de datos de Azure Rights Management](../get-started/requirements-applications.md) para identificar las aplicaciones que son compatibles con Rights Management (aplicaciones habilitadas para RMS) y, después, realizar una búsqueda en la web para comprar o descargar la aplicación.
 
 ## Pasos siguientes
 
 Para ver la compatibilidad de otras aplicaciones y servicios con el servicio Azure Rights Management, vea [Compatibilidad de aplicaciones con el servicio Azure Rights Management](applications-support.md).
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

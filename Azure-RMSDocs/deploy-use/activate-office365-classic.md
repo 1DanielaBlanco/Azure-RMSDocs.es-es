@@ -3,7 +3,7 @@ title: "Activación de Azure Rights Management desde el Centro de administració
 description: "Instrucciones de activación para el servicio Azure Rights Management cuando tiene acceso a la versión clásica (original) del Centro de administración de Office 365."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: b6c42663-af01-49d5-94bc-98963c383379
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 805644a7c6dacc00519ad9ac07f39367d0784745
-ms.openlocfilehash: 8e2b4befc9acd2f50472169b8195d2510fa22be8
+ms.sourcegitcommit: 565f2479fe1d41aa051dd64752413eb72d644535
+ms.openlocfilehash: 69ee78823c2a0500596dec24f44ecba8329af516
 
 
 ---
@@ -39,7 +39,7 @@ Siga estas instrucciones si utiliza la versión básica (original) del Centro de
     > [!NOTE]
     >Si no ve esta opción, es posible que en su plan de servicio o versión del producto no se incluya el servicio Azure Rights Management para Azure Information Protection.
     >
-    >Use la [información de la suscripción](https://go.microsoft.com/fwlink/?LinkId=827589) para confirmar que en la suscripción se incluye Azure Rights Management. Para obtener ayuda con este problema, envíe un mensaje de correo electrónico a [askipteam](mailto:askipteam?subject=I%20cannot%20activate%20RMS).
+    >Para activar el servicio Azure Rights Management, debe disponer de un [plan Premium de Azure Information Protection](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing) o de un [plan de Office 365 que incluya Rights Management](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf). Para obtener ayuda con este problema, envíe un mensaje de correo electrónico a [askipteam](mailto:askipteam?subject=I%20cannot%20activate%20RMS).
 
 5. En la página **RIGHTS MANAGEMENT** , haga clic en **Administrar**.
 
@@ -53,6 +53,6 @@ Ahora debería ver **Rights Management está activada** y la opción para desact
 Vuelva a [Activación de Rights Management de Azure](activate-service.md).
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

@@ -3,7 +3,7 @@ title: "¿Qué es Azure Rights Management? | Azure Information Protection"
 description: "Azure Rights Management (Azure RMS) es la tecnología de protección usada por Azure Information Protection."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: aeeebcd7-6646-4405-addf-ee1cc74df5df
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2c0f3b58a2f1b5233c262bb67cc4a485557ba997
-ms.openlocfilehash: 21e8bd7bb4b749e0f086a0108bb89778f2d3ce73
+ms.sourcegitcommit: 78b975c2babad347fc5be7956d504c7283508962
+ms.openlocfilehash: 3582aaba72347e8374f6cb856f52cd129bb83d3e
 
 
 ---
@@ -52,13 +52,13 @@ Para más información acerca de Azure RMS:
 
 Si quiere algo más rápido y probar Azure RMS usted mismo, consulte [Quick start tutorial for Azure Rights Management](../get-started/quick-start-tutorial.md) (Tutorial de inicio rápido de Azure Rights Management).
 
-Pero, si está preparado para empezar a implementar Azure Information Protection en su organización, vea los pasos de implementación y los vínculos a instrucciones de procedimientos en el [Mapa de ruta de implementación de Azure Rights Management](../plan-design/deployment-roadmap.md).
+Pero, si está preparado para empezar a implementar Azure Information Protection en su organización, vea los pasos de implementación y los vínculos a instrucciones de procedimientos incluidos en el [Mapa de ruta de implementación de Azure Information Protection](../plan-design/deployment-roadmap.md).
 
 > [!TIP]
-> Para más información y ayuda, use los recursos y vínculos que aparecen en [Information and support for Azure Rights Management](../get-started/information-support.md) (Información y servicio de atención de Azure Rights Management).
+> Para obtener más información y ayuda, use los recursos y vínculos que aparecen en [Información y soporte técnico para Azure Information Protection](../get-started/information-support.md).
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

@@ -142,7 +142,7 @@ Nuestra biblioteca de interfaz de usuario proporciona una interfaz de usuario re
 
 [Conceptos y términos de desarrollador](core-concepts.md)
 
-[Referencia de API de Android](android-namespaces.md)
+[Referencia de API de Android](https://msdn.microsoft.com/library/dn758245.aspx)
 
  
 

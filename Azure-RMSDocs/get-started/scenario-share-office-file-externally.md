@@ -3,7 +3,7 @@ title: "Escenario: Compartir un archivo de Office con usuarios de otra organizac
 description: "En este escenario y en la documentación de usuario correspondiente se usa la protección de Azure Rights Management para que los usuarios puedan enviar por correo electrónico de forma segura un archivo de Office a usuarios de otra organización."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/05/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: c10a4d7b-f57a-4a43-b66e-477777be59cc
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 03bd68b03d423908e7fbe89efb6aac6773283f2f
-ms.openlocfilehash: 1e8ba22c5fdcf3f17b3cec0a99444975c03ec008
+ms.sourcegitcommit: 0f5c138b7a27c7577e5bff23d521ba36264ecc2a
+ms.openlocfilehash: 2a03ae13b269b1a7352dd81fea52fc68bed17d99
 
 
 ---
@@ -48,7 +48,7 @@ Para que funcionen las instrucciones de usuario para este escenario, debe dispon
 |Azure Rights Management no está activado|[Activar Rights Management de Azure](https://technet.microsoft.com/library/jj658941.aspx)|
 |La aplicación Rights Management sharing se implementa en los equipos de los usuarios que ejecutan Windows|[Implementación automática de la aplicación Microsoft Rights Management sharing](../rms-client/sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)|
 |Los usuarios tienen Outlook de Office 2013|Si los usuarios tienen Office 2016 u Office 2010, reemplace la captura de pantalla por una versión equivalente para que la imagen coincida con lo que ven los usuarios.|
-|En la suscripción a Azure Information Protection se incluye el seguimiento de documentos|Si en la suscripción a Azure RMS no se incluye la revocación y el seguimiento de documentos, los usuarios no podrán completar todos los pasos de las instrucciones de usuario. En este caso, compre una suscripción que admita estas características o modifique las instrucciones de usuario para quitar los pasos que utilizan estas características.<br /><br />Vea la información sobre la suscripción en la [página de precios](https://go.microsoft.com/fwlink/?LinkId=827589) de Azure Information Protection.|
+|En la suscripción a Azure Information Protection se incluye el seguimiento de documentos|Si en la suscripción a Azure RMS no se incluye la revocación y el seguimiento de documentos, los usuarios no podrán completar todos los pasos de las instrucciones de usuario. En este caso, compre una suscripción que admita estas características o modifique las instrucciones de usuario para quitar los pasos que utilizan estas características.<br /><br />Consulte la [lista de características](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features) en el sitio de Azure Information Protection.|
 
 ## Instrucciones de la documentación del usuario
 Con la siguiente plantilla, copie y pegue las instrucciones de usuario en una comunicación dirigida a sus usuarios finales y realice estas modificaciones para reflejar su entorno:
@@ -154,6 +154,6 @@ Utilice el [portal de seguimiento de documentos](https://track.azurerms.com/) pa
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 
