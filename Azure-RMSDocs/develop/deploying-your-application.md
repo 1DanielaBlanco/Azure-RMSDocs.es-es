@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: e47c5331f49c62a00617f40b1af7ffdc4a89dcfd
+ms.sourcegitcommit: 44e90a1de74d62469bd8a99a2d49d1e57d2d0f62
+ms.openlocfilehash: e1bc56fc108101d0af833a84ba52821c8b18736d
 
 
 ---
@@ -61,8 +61,6 @@ Cuando solicite un contrato, haga lo siguiente:
 El equipo de Active Directory Rights Management Licensing Agreement (ADRMLA) responderá a la solicitud remitida por correo electrónico en un plazo de tres días hábiles; el plazo es más amplio si se envía la solicitud por servicio postal. La respuesta incluirá el formulario del contrato de licencia e instrucciones adicionales. Lea, firme y devuelva todas las páginas del contrato al equipo de ADRMLA. No cambie las fuentes ni el formato de los párrafos del contrato de licencia.
 
 Asegúrese de seguir las instrucciones que reciba del equipo de ADRMLA. Las instrucciones enumeran los elementos de información digital necesarios para tramitar la solicitud de certificado. Siga las instrucciones paso a paso para evitar retrasos.
-
-El equipo de ADRMLA le remitirá el certificado de producción una vez creado. Tenga en cuenta que el equipo de ADRMLA puede tardar hasta 15 días hábiles en remitirle el certificado por correo electrónico. Este plazo se extiende si la comunicación se realiza por servicio postal.
 
 
 ## Opciones y requisitos de instalación del cliente de Rights Management Services 2.1
@@ -132,6 +130,6 @@ Para obtener más información sobre cómo habilitar la aplicación para que use
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO1-->
 
 

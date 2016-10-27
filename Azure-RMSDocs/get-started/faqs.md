@@ -3,7 +3,7 @@ title: "Preguntas más frecuentes sobre Azure Information Protection | Azure Inf
 description: "Algunas de las preguntas más frecuentes sobre Azure Information Protection y su servicio de protección de datos, Azure Rights Management (Azure RMS)."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1279e6f2420711f921a8ccae256a80d619e8566
-ms.openlocfilehash: ef4bcd4d4cadc760763d193e082b2faa99b1b2ce
+ms.sourcegitcommit: 0f5c138b7a27c7577e5bff23d521ba36264ecc2a
+ms.openlocfilehash: d869514a126302522030cfb395b49112c48442dc
 
 
 ---
@@ -31,7 +31,9 @@ Las páginas de las preguntas más frecuentes se actualizarán de forma periódi
 Azure Information Protection ofrece funciones de clasificación, etiquetado y protección para los documentos y correos electrónicos de una organización. La tecnología de protección usa el servicio Azure Rights Management, que ahora es un componente de Azure Information Protection.
 
 ## ¿Qué suscripción necesito para Azure Information Protection y qué características se incluyen?
-Vea la información sobre la suscripción en la [página de precios](https://go.microsoft.com/fwlink/?LinkId=827589) de Azure Information Protection.
+Consulte la [información sobre la suscripción](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing) y la [lista de características](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features) en el sitio de Azure Information Protection. 
+
+Si tiene una suscripción a Office 365 que incluye Rights Management, descargue la [hoja de datos de licencias de Azure Information Protection](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf) en la página **Características**.
 
 ## He escuchado que pronto estará disponible una nueva versión de Azure Information Protection, ¿cuándo se publicará?
 
@@ -49,7 +51,7 @@ Primero, revise las preguntas más frecuentes que sean específicas para la clas
 
 - [Preguntas más frecuentes sobre la protección de datos](faqs-rms.md)
 
-Si no encuentra una respuesta a su pregunta, use los vínculos y recursos que se muestran en [Información y soporte para Azure Rights Management](information-support.md).
+Si no encuentra una respuesta a su pregunta, use los vínculos y los recursos que se muestran en [Información y soporte técnico para Azure Information Protection](information-support.md).
 
 Además, hay preguntas frecuentes diseñadas para usuarios finales:
 
@@ -65,6 +67,6 @@ Además, hay preguntas frecuentes diseñadas para usuarios finales:
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 
