@@ -4,7 +4,7 @@ description: En este tema se cubren los tipos de aplicaciones que puede elegir c
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: dac322fedd1ac23660abb3b79261e8339ffd81ca
+ms.sourcegitcommit: 1ab93dc8f770e2e49b5846dd6c31f649a55175b0
+ms.openlocfilehash: 77bb95ae54ec0fb699d3b0dd2879bb14fdd3dd28
 
 
 ---
@@ -29,7 +29,7 @@ Los siguientes tipos de aplicación son compatibles actualmente con Rights Manag
 
 ## Aplicaciones sencillas
 
-Una aplicación sencilla podría ser una herramienta de línea de comandos creada para cifrar un archivo proporcionado. Para ver un ejemplo de una aplicación con derechos habilitados sencilla, consulte [IPCHelloWorld - an example application](how-to-build-your-first-application.md) (IPCHelloWorld: una aplicación de ejemplo).
+Una aplicación sencilla podría ser una herramienta de línea de comandos creada para cifrar un archivo proporcionado. Para ver un ejemplo de una aplicación sencilla habilitada para derechos, consulte nuestra implementación de *IPCHelloWorld*, que se describe en [Desarrollo de la aplicación](developing-your-application.md).
 
 ### Aplicaciones en modo servidor
 
@@ -55,13 +55,13 @@ Para más información sobre la protección de su aplicación, consulte [Underst
 
 ## Temas relacionados
 
-* [Ejemplo IpcDlp](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d)
-* [IPCHelloWorld: una aplicación de ejemplo](how-to-build-your-first-application.md)
-* [Establecimiento del modo de seguridad de API](setting-the-api-security-mode-api-mode.md)
-* [Descripción de las restricciones de uso](understanding-usage-restrictions.md)
+- [Ejemplo IpcDlp](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d)
+- [Desarrollo de la aplicación](developing-your-application.md)
+- [Establecimiento del modo de seguridad de API](setting-the-api-security-mode-api-mode.md)
+- [Descripción de las restricciones de uso](understanding-usage-restrictions.md)
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

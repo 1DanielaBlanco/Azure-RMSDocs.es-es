@@ -16,8 +16,8 @@ ms.suite: ems
 experimental: true
 experiment_id: priyamo-TableVsFlatList-20160805
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: d8fb04fd80e9a84bd7784e48b77e3aa8b045bf2d
+ms.sourcegitcommit: dc40edaf8856ece3c40d1bfc4674a357f2c055ea
+ms.openlocfilehash: 3d897f191368b7af6fd339603e183583fa9b4a27
 
 
 ---
@@ -28,111 +28,111 @@ En este tema se describen los derechos integrados que proporciona Microsoft Righ
 
 **Nota**: En el caso del SDK de Linux, consulte el archivo de origen *rights.h* para obtener más información.
 
-## Derechos comunes ##
+## Derechos comunes
 
 **All**: colección de todos los derechos comunes.
-- Android: [CommonRights.All](/information-protection/sdk/4.2/api/android/commonrights#msipcthin2_commonrights_class_java_ALL)
-- iOS y OS X: [MSCommonRights owner](/information-protection/sdk/4.2/api/iOS/mscommonrights#msipcthin2_mscommonrights_interface_objc___NSString__owner_)
-- Tienda Windows y Windows Phone: [CommonRights.All</strong>](/information-protection/sdk/4.2/api/winrt/commonrights#msipcthin2_commonrights)
+- Android: [CommonRights.All](https://msdn.microsoft.com/library/dn758258.aspx)
+- iOS y OS X: [MSCommonRights](https://msdn.microsoft.com/library/dn758314.aspx): propietario del usuario y vista para implementar **All**
+- Tienda Windows y Windows Phone: [CommonRights.All</strong>](https://msdn.microsoft.com/library/microsoft.rightsmanagement.commonrights.all.aspx)
 - Linux: [CommonRights::All](http://azuread.github.io/rms-sdk-for-cpp/classrmscore_1_1modernapi_1_1CommonRights.html)
 
-** Owner**: el derecho Owner concede control total sobre el contenido protegido.
-- Android: [<strong>CommonRights.Owner](/information-protection/sdk/4.2/api/android/commonrights#msipcthin2_commonrights_class_java_Owner)
-- iOS y OS X: [MSCommonRights owner](/information-protection/sdk/4.2/api/iOS/mscommonrights#msipcthin2_mscommonrights_interface_objc___NSString__owner_)
-- Tienda Windows y Windows Phone: [CommonRights.Owner](/information-protection/sdk/4.2/api/winrt/commonrights#msipcthin2_commonrights_owner)
+**Owner**: El derecho Owner concede control total sobre el contenido protegido.
+- Android: [<strong>CommonRights.Owner](https://msdn.microsoft.com/library/dn758258.aspx)
+- iOS y OS X: [MSCommonRights owner](https://msdn.microsoft.com/library/dn758314.aspx)
+- Tienda Windows y Windows Phone: [CommonRights.Owner](https://msdn.microsoft.com/library/microsoft.rightsmanagement.commonrights.owner.aspx)
 - Linux: [CommonRights::Owner](http://azuread.github.io/rms-sdk-for-cpp/classrmscore_1_1modernapi_1_1CommonRights.html)
 
 **View**: derecho para ver contenido protegido. Normalmente, cuando se concede este derecho, la aplicación permite al usuario abrir y ver contenido protegido. Sin embargo, se requieren derechos adicionales para modificar, extraer, reenviar o guardar el contenido.
 
-- Android: [CommonRights.View](/information-protection/sdk/4.2/api/android/commonrights#msipcthin2_commonrights_class_java_View)
-- iOS y OS X: [MSCommonRights view](/information-protection/sdk/4.2/api/iOS/mscommonrights#msipcthin2_mscommonrights_interface_objc___NSString__owner_)
-- Tienda Windows y Windows Phone: [CommonRights.View](/information-protection/sdk/4.2/api/android/commonrights#msipcthin2_commonrights_class_java_View)
+- Android: [CommonRights.View](https://msdn.microsoft.com/library/dn758258.aspx)
+- iOS y OS X: [MSCommonRights view](https://msdn.microsoft.com/library/dn758314.aspx)
+- Tienda Windows y Windows Phone: [CommonRights.View](https://msdn.microsoft.com/library/microsoft.rightsmanagement.commonrights.view.aspx)
 - Linux: [CommonRights::View](http://azuread.github.io/rms-sdk-for-cpp/classrmscore_1_1modernapi_1_1CommonRights.html)</li>
 
  
 
-## Derechos de documentos editables ##
+## Derechos de documentos editables
 **All**: colección que contiene todos los derechos de documentos editables.
-- Android: [EditableDocumentRights.All](/information-protection/sdk/4.2/api/android/editabledocumentrights#msipcthin2_editabledocumentrights_class_java_ALL)
-- iOS y OS X: [MSEditableDocumentRights all](/information-protection/sdk/4.2/api/iOS/mseditabledocumentrights#msipcthin2_mseditabledocumentrights_interface_objc)
-- Tienda Windows y Windows Phone: [EditableDocumentRights.All](/information-protection/sdk/4.2/api/winrt/editabledocumentrights#msipcthin2_editabledocumentrights_all)
+- Android: [EditableDocumentRights.All](https://msdn.microsoft.com/library/dn758284.aspx)
+- iOS y OS X: [MSEditableDocumentRights all](https://msdn.microsoft.com/library/dn758318.aspx)
+- Tienda Windows y Windows Phone: [EditableDocumentRights.All](https://msdn.microsoft.com/library/microsoft.rightsmanagement.editabledocumentrights.all.aspx)
 - Linux: [EditableDocumentRights::All](http://azuread.github.io/rms-sdk-for-cpp/classrmscore_1_1modernapi_1_1EditableDocumentRights.html)
 
 **Comment**: derecho para hacer comentarios en el documento.
-- Android: [EditableDocumentRights.Comment](/information-protection/sdk/4.2/api/android/editabledocumentrights#msipcthin2_editabledocumentrights_class_java_Comment)
-- iOS y OS X: [MSEditableDocumentRights comment](/information-protection/sdk/4.2/api/iOS/mseditabledocumentrights#msipcthin2_mseditabledocumentrights_interface_objc)
-- Tienda Windows y Windows Phone: [EditableDocumentRights.Comment](/information-protection/sdk/4.2/api/winrt/editabledocumentrights#msipcthin2_editabledocumentrights__comment)
+- Android: [EditableDocumentRights.Comment](https://msdn.microsoft.com/library/dn758284.aspx)
+- iOS y OS X: [MSEditableDocumentRights comment](https://msdn.microsoft.com/library/dn758318.aspx)
+- Tienda Windows y Windows Phone: [EditableDocumentRights.Comment](https://msdn.microsoft.com/library/microsoft.rightsmanagement.editabledocumentrights.comment.aspx)
 - Linux: [EditableDocumentRights::Comment](http://azuread.github.io/rms-sdk-for-cpp/classrmscore_1_1modernapi_1_1EditableDocumentRights.html)
 
 **Edit**: derecho para editar contenido protegido y guardarlo en el mismo formato protegido. Normalmente, cuando se concede este derecho, la aplicación permite al usuario cambiar el contenido protegido y después guardarlo en el mismo archivo.
-- Android: [EditableDocumentRights.Edit](/information-protection/sdk/4.2/api/android/editabledocumentrights#msipcthin2_editabledocumentrights_class_java_Edit)
-- iOS y OS X: [MSEditableDocumentRights edit](/information-protection/sdk/4.2/api/iOS/mseditabledocumentrights#msipcthin2_mseditabledocumentrights_interface_objc)
-- Tienda Windows y Windows Phone: [EditableDocumentRights.Edit](/information-protection/sdk/4.2/api/winrt/editabledocumentrights#msipcthin2_editabledocumentrights_edit)
+- Android: [EditableDocumentRights.Edit](https://msdn.microsoft.com/library/dn758284.aspx)
+- iOS y OS X: [MSEditableDocumentRights edit](https://msdn.microsoft.com/library/dn758318.aspx)
+- Tienda Windows y Windows Phone: [EditableDocumentRights.Edit](https://msdn.microsoft.com/library/microsoft.rightsmanagement.editabledocumentrights.edit.aspx)
 - Linux: [EditableDocumentRights::Edit](http://azuread.github.io/rms-sdk-for-cpp/classrmscore_1_1modernapi_1_1EditableDocumentRights.html)
 
 **Export**: derecho para extraer contenido de un formato protegido y colocarlo en un formato diferente protegido por AD RMS. Normalmente, cuando se concede este derecho, la aplicación permite al usuario guardar contenido protegido en otros formatos protegidos por AD RMS; por ejemplo, si la aplicación implementa una funcionalidad *Guardar como*.
 
-- Android: [EditableDocumentRights.Export](/information-protection/sdk/4.2/api/android/editabledocumentrights#msipcthin2_editabledocumentrights_class_java_Export)
-- iOS y OS X: [MSEditableDocumentRights exportable](/information-protection/sdk/4.2/api/iOS/mseditabledocumentrights#msipcthin2_mseditabledocumentrights_interface_objc)
-- Tienda Windows y Windows Phone: [EditableDocumentRights.Export](/information-protection/sdk/4.2/api/winrt/editabledocumentrights#msipcthin2_editabledocumentrights_export)
+- Android: [EditableDocumentRights.Export](https://msdn.microsoft.com/library/dn758284.aspx)
+- iOS y OS X: [MSEditableDocumentRights exportable](https://msdn.microsoft.com/library/dn758318.aspx)
+- Tienda Windows y Windows Phone: [EditableDocumentRights.Export](https://msdn.microsoft.com/library/microsoft.rightsmanagement.editabledocumentrights.export.aspx)
 - Linux: [EditableDocumentRights::Export](http://azuread.github.io/rms-sdk-for-cpp/classrmscore_1_1modernapi_1_1EditableDocumentRights.html)
 
 **Extract**: derecho para extraer contenido de un formato protegido y colocarlo en un formato sin protección. Normalmente, cuando se concede este derecho, la aplicación permite al usuario copiar y pegar información de contenido protegido. Si la aplicación implementa una funcionalidad <em>Guardar como</em>, la aplicación también podría permitir al usuario guardar contenido protegido en formatos no protegidos y otros formatos protegidos. Este derecho tiene el mismo valor que el derecho Extract para correo electrónico.
 
-- Android: [EditableDocumentRights.Extract](/information-protection/sdk/4.2/api/android/editabledocumentrights#msipcthin2_editabledocumentrights_class_java_Extract)
-- iOS y OS X: [MSEditableDocumentRights extract](/information-protection/sdk/4.2/api/iOS/mseditabledocumentrights#msipcthin2_mseditabledocumentrights_interface_objc)
-- Tienda Windows y Windows Phone: [EditableDocumentRights.Extract](/information-protection/sdk/4.2/api/winrt/editabledocumentrights#msipcthin2_editabledocumentrights_extract)
+- Android: [EditableDocumentRights.Extract](https://msdn.microsoft.com/library/dn758284.aspx)
+- iOS y OS X: [MSEditableDocumentRights extract](https://msdn.microsoft.com/library/dn758318.aspx)
+- Tienda Windows y Windows Phone: [EditableDocumentRights.Extract](https://msdn.microsoft.com/library/microsoft.rightsmanagement.editabledocumentrights.extract.aspx)
 - Linux: [EditableDocumentRights::Extract](http://azuread.github.io/rms-sdk-for-cpp/classrmscore_1_1modernapi_1_1EditableDocumentRights.html)
 
 **Print**: derecho para imprimir contenido protegido. Normalmente, cuando se concede este derecho, la aplicación permite al usuario imprimir contenido protegido. Este derecho tiene el mismo valor que el derecho Print para correo electrónico.
 
-- Android: [EditableDocumentRights.Print](/information-protection/sdk/4.2/api/android/editabledocumentrights#msipcthin2_editabledocumentrights_class_java_Print)
-- iOS y OS X: [MSEditableDocumentRights print](/information-protection/sdk/4.2/api/iOS/mseditabledocumentrights#msipcthin2_mseditabledocumentrights_interface_objc)
-- Tienda Windows y Windows Phone: [EditableDocumentRights.Print](/information-protection/sdk/4.2/api/winrt/editabledocumentrights#msipcthin2_editabledocumentrights_print)
+- Android: [EditableDocumentRights.Print](https://msdn.microsoft.com/library/dn758284.aspx)
+- iOS y OS X: [MSEditableDocumentRights print](https://msdn.microsoft.com/library/dn758318.aspx)
+- Tienda Windows y Windows Phone: [EditableDocumentRights.Print](https://msdn.microsoft.com/library/microsoft.rightsmanagement.editabledocumentrights.print.aspx)
 - Linux: [EditableDocumentRights::Print](http://azuread.github.io/rms-sdk-for-cpp/classrmscore_1_1modernapi_1_1EditableDocumentRights.html)
 
  
 
-## Derechos de correo electrónico ##
+## Derechos de correo electrónico
 
 **All**: colección que contiene todos los derechos de correo electrónico.
-- Android: [EmailRights.All](/information-protection/sdk/4.2/api/android/emailrights#msipcthin2_emailrights_class_java_ALL)
-- iOS y OS X: [MSEmailRights all](/information-protection/sdk/4.2/api/iOS/msemailrights#msipcthin2_msemailrights_interface_objc)
-- Tienda Windows y Windows Phone: [EmailRights.All](/information-protection/sdk/4.2/api/winrt/emailrights#msipcthin2_emailrights_all)
+- Android: [EmailRights.All](https://msdn.microsoft.com/library/dn758285.aspx)
+- iOS y OS X: [MSEmailRights all](https://msdn.microsoft.com/library/dn758319.aspx)
+- Tienda Windows y Windows Phone: [EmailRights.All](https://msdn.microsoft.com/library/microsoft.rightsmanagement.emailrights.all.aspx)
 - Linux: [EmailRights::All](http://azuread.github.io/rms-sdk-for-cpp/classrmscore_1_1modernapi_1_1EmailRights.html)
 
 **Extract**: derecho para extraer contenido de un formato protegido y colocarlo en un formato sin protección. Normalmente, cuando se concede este derecho, la aplicación permite al destinatario de correo electrónico copiar y pegar información de un mensaje protegido. Si la aplicación implementa una funcionalidad <em>Guardar como</em>, la aplicación también podría permitir al destinatario guardar contenido protegido en formatos no protegidos y otros formatos protegidos. Este derecho tiene el mismo valor que el derecho Extract para documentos editables.
 
-- Android: [EmailRights.Extract](/information-protection/sdk/4.2/api/android/emailrights#msipcthin2_emailrights_class_java_Extract)
-- iOS y OS X: [MSEmailRights extract](/information-protection/sdk/4.2/api/iOS/msemailrights#msipcthin2_msemailrights_interface_objc)
-- Tienda Windows y Windows Phone: [EmailRights.Extract</strong>](/information-protection/sdk/4.2/api/winrt/emailrights#msipcthin2_emailrights_extract)
+- Android: [EmailRights.Extract](https://msdn.microsoft.com/library/dn758285.aspx)
+- iOS y OS X: [MSEmailRights extract](https://msdn.microsoft.com/library/dn758319.aspx)
+- Tienda Windows y Windows Phone: [EmailRights.Extract</strong>](https://msdn.microsoft.com/library/microsoft.rightsmanagement.emailrights.extract.aspx)
 - Linux: [EmailRights::Extract](http://azuread.github.io/rms-sdk-for-cpp/classrmscore_1_1modernapi_1_1EmailRights.html)
 
 **Forward**: derecho para reenviar un mensaje protegido. Normalmente, cuando se concede este derecho, la aplicación permite al destinatario de correo electrónico reenviar un mensaje protegido.
-- Android: [<strong>EmailRights.Forward</strong>](/information-protection/sdk/4.2/api/android/emailrights#msipcthin2_emailrights_class_java_Forward)
-- iOS y OS X: [MSEmailRights forward](/information-protection/sdk/4.2/api/iOS/msemailrights#msipcthin2_msemailrights_interface_objc)
-- Tienda Windows y Windows Phone: [EmailRights.Forward](/information-protection/sdk/4.2/api/winrt/emailrights#msipcthin2_emailrights_forward)
+- Android: [<strong>EmailRights.Forward</strong>](https://msdn.microsoft.com/library/dn758285.aspx)
+- iOS y OS X: [MSEmailRights forward](https://msdn.microsoft.com/library/dn758319.aspx)
+- Tienda Windows y Windows Phone: [EmailRights.Forward](https://msdn.microsoft.com/library/microsoft.rightsmanagement.emailrights.forward.aspx)
 - Linux: [EmailRights::Forward](http://azuread.github.io/rms-sdk-for-cpp/classrmscore_1_1modernapi_1_1EmailRights.html)
 
 **Print**: derecho para imprimir contenido protegido. Normalmente, cuando se concede este derecho, la aplicación permite al destinatario de correo electrónico imprimir un mensaje protegido. Este derecho tiene el mismo valor que el derecho Print para documentos editables.
 
-- Android: [EmailRights.Print](/information-protection/sdk/4.2/api/android/emailrights#msipcthin2_emailrights_class_java_Print)
-- iOS y OS X: [MSEmailRights print](/information-protection/sdk/4.2/api/iOS/msemailrights#msipcthin2_msemailrights_interface_objc)
-- Tienda Windows y Windows Phone: [EmailRights.Print](/information-protection/sdk/4.2/api/winrt/emailrights#msipcthin2_emailrights_print)
+- Android: [EmailRights.Print](https://msdn.microsoft.com/library/dn758285.aspx)
+- iOS y OS X: [MSEmailRights print](https://msdn.microsoft.com/library/dn758319.aspx)
+- Tienda Windows y Windows Phone: [EmailRights.Print](https://msdn.microsoft.com/library/microsoft.rightsmanagement.emailrights.print.aspx)
 - Linux: [EmailRights::Print](http://azuread.github.io/rms-sdk-for-cpp/classrmscore_1_1modernapi_1_1EmailRights.html)
 
 **Reply**: normalmente, cuando se concede este derecho, la aplicación permite a un destinatario de correo electrónico responder a un mensaje protegido e incluir una copia del mensaje original.
 
-- Android: [EmailRights.Reply](/information-protection/sdk/4.2/api/android/emailrights#msipcthin2_emailrights_class_java_Reply)
-- iOS y OS X: [MSEmailRights reply](/information-protection/sdk/4.2/api/iOS/msemailrights#msipcthin2_msemailrights_interface_objc)
-- Tienda Windows y Windows Phone: [EmailRights.Reply](/information-protection/sdk/4.2/api/winrt/emailrights#msipcthin2_emailrights_reply)
+- Android: [EmailRights.Reply](https://msdn.microsoft.com/library/dn758285.aspx)
+- iOS y OS X: [MSEmailRights reply](https://msdn.microsoft.com/library/dn758319.aspx)
+- Tienda Windows y Windows Phone: [EmailRights.Reply](https://msdn.microsoft.com/library/microsoft.rightsmanagement.emailrights.reply.aspx)
 - Linux: [EmailRights::Reply](http://azuread.github.io/rms-sdk-for-cpp/classrmscore_1_1modernapi_1_1EmailRights.html)
 
 **ReplyAll**: normalmente, cuando se concede este derecho, la aplicación permite a un destinatario de correo electrónico responder a todos los destinatarios de un mensaje protegido e incluir una copia del mensaje original.
 
-- Android: [EmailRights.ReplyAll</strong>](/information-protection/sdk/4.2/api/android/emailrights#msipcthin2_emailrights_class_java_ReplyAll)
-- iOS y OS X: [MSEmailRights replyAll](/information-protection/sdk/4.2/api/iOS/msemailrights#msipcthin2_msemailrights_interface_objc)
-- Tienda Windows y Windows Phone: [EmailRights.ReplyAll](/information-protection/sdk/4.2/api/winrt/emailrights#msipcthin2_emailrights_replyall)
+- Android: [EmailRights.ReplyAll</strong>](https://msdn.microsoft.com/library/dn758285.aspx)
+- iOS y OS X: [MSEmailRights replyAll](https://msdn.microsoft.com/library/dn758319.aspx)
+- Tienda Windows y Windows Phone: [EmailRights.ReplyAll](https://msdn.microsoft.com/library/microsoft.rightsmanagement.emailrights.replyall.aspx)
 - Linux: [EmailRights::ReplyAll](http://azuread.github.io/rms-sdk-for-cpp/classrmscore_1_1modernapi_1_1EmailRights.html)
 
  
@@ -143,6 +143,6 @@ En este tema se describen los derechos integrados que proporciona Microsoft Righ
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

@@ -3,7 +3,7 @@ title: "Algunas de las preguntas más frecuentes sobre el servicio de protecció
 description: "Algunas de las preguntas más frecuentes sobre el servicio de protección de datos, Azure Rights Management (Azure RMS), desde Azure Information Protection."
 author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 10/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f17cf257607b0f74ca8bdaef13130da2f62dd587
-ms.openlocfilehash: 114dfd2a0f19205432771b5dc17ddcb60f7ec44b
+ms.sourcegitcommit: ec8609217db42a2cf0b3f89367cf4dee6ccb77de
+ms.openlocfilehash: ae25f5af9784b0de92626dbfe65d4358359b4bd9
 
 
 ---
@@ -94,7 +94,7 @@ Como indica el nombre de la opción, este nuevo tipo de grupo todavía está en 
 
 
 ## ¿Qué dispositivos y tipos de archivo admite Azure RMS?
-Para obtener una lista de dispositivos compatibles con el servicio Azure Rights Management, vea [Requisitos de Azure RMS: Dispositivos cliente que son compatibles con Azure RMS](../get-started/requirements-client-devices.md). Dado que, actualmente, no todos los dispositivos compatibles admiten todas las funcionalidades de Rights Management, vea también la tabla en [Requisitos de Azure RMS: aplicaciones](../get-started/requirements-applications.md).
+Para ver la lista de los dispositivos que admiten el servicio Azure Rights Management, consulte [Dispositivos cliente que son compatibles con la protección de datos de Azure Rights Management](../get-started/requirements-client-devices.md). Dado que, actualmente, no todos los dispositivos compatibles admiten todas las funcionalidades de Rights Management, consulte también la tabla incluida en [Aplicaciones compatibles con la protección de datos de Azure Rights Management](../get-started/requirements-applications.md).
 
 El servicio Azure Rights Management puede admitir todos los tipos de archivo. Para archivos de texto, imagen, Microsoft Office (Word, Excel, PowerPoint), archivos .pdf y otros tipos de archivo de aplicaciones, Azure Rights Management proporciona protección nativa que incluye cifrado y cumplimiento de derechos (permisos). Para las demás aplicaciones y tipos de archivo, la protección genérica proporciona encapsulación de archivos y autenticación para comprobar si un usuario está autorizado para abrir el archivo.
 
@@ -129,6 +129,18 @@ Use la característica de superusuario de Azure RMS, que permite que los usuario
 
 Para obtener más información, consulte [Configuring super users for Azure Rights Management and discovery services or data recovery](../deploy-use/configure-super-users.md) (Configuración de superusuarios para Azure Rights Management y los servicios de detección o la recuperación de datos).
 
+## Cuando pruebo la revocación en el sitio de seguimiento de documentos, aparece un mensaje que indica que los usuarios pueden seguir accediendo al documento durante un máximo de 30 días. ¿Se puede configurar este período?
+
+Sí. Este mensaje refleja la licencia de uso de ese archivo en concreto. Una licencia de uso es un certificado de cada documento que se concede a un usuario que abre un archivo protegido o un mensaje de correo electrónico. Este certificado contiene los derechos del usuario relativos al archivo o mensaje de correo electrónico y la clave de cifrado que se usó para cifrar el contenido, así como las restricciones de acceso adicionales definidas en la directiva del documento. Cuando expira el período de validez de la licencia de uso y el usuario intenta abrir el archivo o el mensaje de correo electrónico, las credenciales de usuario deben enviarse de nuevo al servicio de Azure Rights Management. 
+
+Si revoca un archivo, dicha acción solo se puede aplicar cuando el usuario se autentica en el servicio de Azure Rights Management. Así, si un archivo tiene un período de validez de licencia de uso de 30 días y el usuario ya ha abierto el documento, podrá seguir accediendo al documento durante el período de la licencia de uso. Cuando la licencia de uso caduque, el usuario deberá volver a autenticarse; en ese momento, se le denegará el acceso porque el documento ya se ha revocado.
+
+El valor predeterminado para el período de validez de la licencia de uso para un inquilino es de 30 días. Este valor se puede configurar con el cmdlet de PowerShell [Set-AadrmMaxUseLicenseValidityTime](https://msdn.microsoft.com/library/azure/dn932063.aspx). Este valor se puede reemplazar por una configuración más restrictiva en una plantilla personalizada. 
+
+Los usuarios pueden reemplazar las opciones de configuración del inquilino y de la plantilla cuando usan la aplicación de RMS sharing y seleccionan la opción **Permítame revocar el acceso a estos documentos de forma instantánea**. Esta configuración establece de forma eficaz el período de validez de la licencia de uso en 0. 
+
+Para obtener más información y ejemplos de cómo funciona la licencia de uso, consulte la descripción detallada de [Set-AadrmMaxUseLicenseValidityTime](https://msdn.microsoft.com/library/azure/dn932063.aspx).
+
 ## ¿Puede impedir Rights Management las capturas de pantalla?
 Si no se concede el [derecho de uso](../deploy-use/configure-usage-rights.md) **Copiar**, Rights Management puede impedir las capturas de pantalla de muchas de las herramientas de captura de pantalla que se usan habitualmente en las plataformas Windows (Windows 7, Windows 8.1, Windows 10, Windows Phone) y Android. Sin embargo, los dispositivos iOS y Mac no permiten a ninguna aplicación impedir las capturas de pantalla y los navegadores (por ejemplo, cuando se usan con Outlook Web App y Office Online) tampoco pueden evitar las capturas de pantalla.
 
@@ -145,6 +157,6 @@ A pesar de su nombre y su apariencia, **No reenviar** no es el contrario del der
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 

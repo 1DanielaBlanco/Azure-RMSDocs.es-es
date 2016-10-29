@@ -3,7 +3,7 @@ title: "Paso 2&colon; Migración entre claves protegidas por HSM | Azure Informa
 description: "Instrucciones que forman parte de la ruta de migración de AD RMS a Azure Information Protection y que solo son válidas si la clave de AD RMS está protegida por HSM y quiere migrar a Azure Information Protection con una clave de inquilino protegida con HSM en Azure Key Vault."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: c5bbf37e-f1bf-4010-a60f-37177c9e9b39
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a61075eb555f6cec1572851bdde6fae85e6310ed
-ms.openlocfilehash: 7db4da1a48bb24ce7680c84fe586a3f96e61c0b7
+ms.sourcegitcommit: bad084502b9b7e55c6e80dccfbd66c3f34b63c7c
+ms.openlocfilehash: 8d9538cb2663edce5fc343ed9710032505c15293
 
 
 ---
@@ -51,7 +51,7 @@ El administrador del Almacén de claves de Azure realiza estos procedimientos.
 
     Cuando se cargue la clave en el Almacén de claves de Azure, se mostrarán las propiedades de la clave, incluido el identificador de clave. Será similar a https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333. Anote esta URL, ya que el administrador de Azure Information Protection necesitará indicar al servicio Azure Rights Management que use esta clave para su clave de inquilino.
 
-2. En la estación de trabajo conectada a Internet, en una sesión de PowerShell, use el cmdlet [Set-AzureRmKeyVaultAccessPolicy](https://msdn.microsoft.com/es-es/library/mt603625(v=azure.200\).aspx) para autorizar a la entidad de servicio llamada Microsoft.Azure.RMS a acceder al almacén de claves que almacenará la clave de inquilino de Azure Information Protection. Los permisos necesarios son decrypt, encrypt, unwrapkey, wrapkey, verify y sign.
+2. En la estación de trabajo conectada a Internet, en una sesión de PowerShell, use el cmdlet [Set-AzureRmKeyVaultAccessPolicy](https://msdn.microsoft.com/es-es/library/mt603625(v=azure.300\).aspx) para autorizar a la entidad de servicio llamada Microsoft.Azure.RMS a acceder al almacén de claves que almacenará la clave de inquilino de Azure Information Protection. Los permisos necesarios son decrypt, encrypt, unwrapkey, wrapkey, verify y sign.
     
     Por ejemplo, si el almacén de claves que ha creado para Azure Information Protection tiene el nombre contoso-byok-ky y su grupo de recursos se llama contoso-byok-rg, ejecute el comando siguiente:
     
@@ -64,7 +64,7 @@ Ahora que ya ha preparado la clave de HSM en Azure Key Vault para el servicio Az
 
 El administrador necesita realizar estos procedimientos para Azure Information Protection.
 
-1.  En la estación de trabajo conectada a Internet y en la sesión de PowerShell, conéctese al servicio Azure Rights Management con el cmdlet [Connnect-AadrmService](https://msdn.microsoft.com/library/dn629415.aspx ).
+1.  En la estación de trabajo conectada a Internet y en la sesión de PowerShell, conéctese al servicio Azure Rights Management con el cmdlet [Connnect-AadrmService](https://msdn.microsoft.com/library/dn629415.aspx).
     
     Después, use el cmdlet [Import-AadrmTpd](https://msdn.microsoft.com/library/dn857523.aspx) para cargar el primer archivo del dominio de publicación de confianza (.xml) exportado. Si tiene más de un archivo .xml porque tenía varios dominios de publicación de confianza, elija el archivo que contenga el dominio de publicación de confianza exportado que corresponda a la clave HSM que desee usar en Azure RMS para proteger el contenido después de la migración. 
     
@@ -80,7 +80,7 @@ El administrador necesita realizar estos procedimientos para Azure Information P
 
 2.  Cuando se haya completado el comando, repita el paso 1 en cada archivo .xml restante que se creó mediante la exportación de los dominios de publicación de confianza. Sin embargo, en el caso de estos archivos, establezca **-Active** en **false** al ejecutar el comando Import.  
 
-3.  Use el cmdlet [Disconnect-AadrmService](http://msdn.microsoft.com/library/windowsazure/dn629416.aspx) para desconectarse del servicio Azure Rights Management:
+3.  Use el cmdlet [Disconnect-AadrmService](https://msdn.microsoft.com/library/azure/dn629416.aspx) para desconectarse del servicio Azure Rights Management:
 
     ```
     Disconnect-AadrmService
@@ -94,6 +94,6 @@ Ahora puede ir al [paso 3. Active el inquilino de Azure Information Protection](
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 
