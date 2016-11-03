@@ -3,7 +3,7 @@ title: "Compatibilidad de aplicaciones con la protección de datos | Azure Infor
 description: "Identifique las aplicaciones que usarán las API de RMS para que sean compatibles de forma nativa con el servicio Azure Rights Management de Azure Information Protection."
 author: cabailey
 manager: mbaldwin
-ms.date: 10/03/2016
+ms.date: 10/17/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 451952f7d0c293db2c9d4f5040ef0e14aa973866
-ms.openlocfilehash: a9b0fcddf9b11a8ab2d105ca5fc778831913bb72
+ms.sourcegitcommit: b6dbbfacd072d5badd69cc6ea452a86baa99cc46
+ms.openlocfilehash: 0649b4300c1bd10ddcfc0c1432144f5eaa0b7797
 
 
 ---
@@ -42,8 +42,8 @@ Información acerca de las columnas de la tabla:
 |**Sistema operativo de dispositivo**|Word, Excel, PowerPoint|PDF protegido|Correo electrónico|Otros tipos de archivo|
 |-------------------------------|---------------------------|-----------------|---------|--------------------|
 |**Windows**|Office 2010<br /><br />Office 2013<br /><br />Office 2016 <br /><br />Aplicaciones de Office Mobile (solo Azure RMS) [[1]](#footnote-1)<br /><br />Office Online [[2]](#footnote-2)|Gaaiho Doc<br /><br />GigaTrust Desktop PDF Client for Adobe<br /><br />Foxit Reader<br /><br />Nitro PDF Reader<br /><br />Aplicación RMS sharing|Outlook 2010<br /><br />Outlook 2013<br /><br />Office 2016 <br /><br />Outlook Web App (OWA) [[3]](#footnote-3)<br /><br />Correo de Windows [[4]](#footnote-4)|Aplicación RMS sharing para Windows: texto, imágenes, pfile<br /><br />Siemens JT2Go: archivos JT (solo Windows 10)|
-|**iOS**|Office para iPad y iPhone [[5]](#footnote-5)<br /><br />Office Online [[2]](#footnote-2)<br /><br />Documentos TITUS|Aplicación Azure Information Protection [[1]](#footnote-1)<br /><br /> Foxit Reader<br /><br />Documentos TITUS|Aplicación Azure Information Protection [[1]](#footnote-1)<br /><br />Citrix WorxMail [[6]](#footnote-6)<br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Outlook para iPad y iPhone [[4]](#footnote-4)<br /><br />OWA para iOS [[3]](#footnote-3)<br /><br />TITUS Mail|Aplicación Azure Information Protection [[1]](#footnote-1): texto, imágenes, pfile<br /><br />Documentos TITUS: pfile|
-|**Android**|GigaTrust App para Android<br /><br />Office Online [[2]](#footnote-2)<br /><br />Office Mobile (solo Azure RMS) [[1]](#footnote-1)|Aplicación Azure Information Protection [[1]](#footnote-1)<br /><br />GigaTrust App para Android<br /><br />Foxit Reader<br /><br />Aplicación RMS sharing [[1]](#footnote-1)|9Folders [[4]](#footnote-4)<br /><br />Aplicación Azure Information Protection [[1]](#footnote-1)<br /><br />GigaTrust App para Android [[4]](#footnote-4)<br /><br />Citrix WorxMail [[6]](#footnote-6)<br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Outlook para Android [[4]](#footnote-4)<br /><br />OWA para Android [[3]](#footnote-3) y [[7]](#footnote-7)<br /><br />Correo electrónico de Samsung (S3 y versiones posteriores) [[7]](#footnote-7)<br /><br />TITUS Classification for Mobile|Aplicación Azure Information Protection [[1]](#footnote-1): texto, imágenes, pfile|
+|**iOS**|Office para iPad y iPhone [[5]](#footnote-5)<br /><br />Office Online [[2]](#footnote-2)<br /><br />Documentos TITUS|Aplicación Azure Information Protection [[1]](#footnote-1)<br /><br /> Foxit Reader<br /><br />Documentos TITUS|Aplicación Azure Information Protection [[1]](#footnote-1)<br /><br />Citrix WorxMail [[6]](#footnote-6)<br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Outlook para iPad y iPhone [[4]](#footnote-4)<br /><br />OWA para iOS [[3]](#footnote-3)<br /><br />TITUS Mail|Aplicación Azure Information Protection [[1]](#footnote-1): texto, imágenes<br /><br />Documentos TITUS: pfile|
+|**Android**|GigaTrust App para Android<br /><br />Office Online [[2]](#footnote-2)<br /><br />Office Mobile (solo Azure RMS) [[1]](#footnote-1)|Aplicación Azure Information Protection [[1]](#footnote-1)<br /><br />GigaTrust App para Android<br /><br />Foxit Reader<br /><br />Aplicación RMS sharing [[1]](#footnote-1)|9Folders [[4]](#footnote-4)<br /><br />Aplicación Azure Information Protection [[1]](#footnote-1)<br /><br />GigaTrust App para Android [[4]](#footnote-4)<br /><br />Citrix WorxMail [[6]](#footnote-6)<br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Outlook para Android [[4]](#footnote-4)<br /><br />OWA para Android [[3]](#footnote-3) y [[7]](#footnote-7)<br /><br />Correo electrónico de Samsung (S3 y versiones posteriores) [[7]](#footnote-7)<br /><br />TITUS Classification for Mobile|Aplicación Azure Information Protection [[1]](#footnote-1): texto, imágenes|
 |**OS X**|Office 2011 (solo AD RMS)<br /><br />Office 2016 para Mac<br /><br />Office Online [[2]](#footnote-2)|Foxit Reader<br /><br />Aplicación RMS sharing [[1]](#footnote-1)|Outlook 2011 (solo AD RMS)<br /><br />Outlook 2016 para Mac<br /><br />Outlook para Mac|Aplicación RMS sharing [[1]](#footnote-1): texto, imágenes, pfile|
 |**Windows 10 Mobile**|Aplicaciones de Office Mobile (solo Azure RMS) [[1]](#footnote-1)|No compatible|Citrix WorxMail [[6]](#footnote-6)<br /><br />Correo de Outlook|No compatible|
 |**Windows RT**|Office 2013 RT<br /><br />Office Online [[2]](#footnote-2)|No compatible|Outlook 2013 RT<br /><br />Aplicación de correo para Windows<br /><br />Correo de Windows [[4]](#footnote-4)|Siemens JT2Go: archivos JT|
@@ -152,6 +152,6 @@ Para más información sobre la compatibilidad de Azure RMS con las aplicaciones
 Para más información sobre cómo configurar las aplicaciones de uso más común para Azure RMS, vea [Configuring applications for Azure Rights Management](../deploy-use/configure-applications.md) (Configuración de aplicaciones para Azure Rights Management).
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 

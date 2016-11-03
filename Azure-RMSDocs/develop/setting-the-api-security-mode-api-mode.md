@@ -14,17 +14,17 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: f10129cb907cafa0e0c717b02153bbcdea012959
+ms.sourcegitcommit: 77e2dfe7f2afb1e70de658850f83f86e9224aea6
+ms.openlocfilehash: 9235fa1c194162689b854493ea31e76c08c40ce7
 
 
 ---
 
 # Establecimiento del modo de seguridad de API
 
-Puede elegir el modo de seguridad en que se ejecuta la aplicación de la API de archivo con la función [**IpcSetGlobalProperty**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty).
+Puede elegir el modo de seguridad en que se ejecuta la aplicación de la API de archivo con la función [IpcSetGlobalProperty](https://msdn.microsoft.com/library/hh535270.aspx).
 
-A fin de inicializar la aplicación para su ejecución en *modo servidor*, llame a la función [**IpcSetGlobalProperty**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty) y establezca el modo de seguridad en [**IPC\_API\_MODE\_SERVER**](/information-protection/sdk/2.1/api/win/api%20mode%20values#msipc_api_mode_values_IPC_API_MODE_SERVER). De forma predeterminada, la aplicación se ejecutará en *modo cliente*, **IPC\_API\_MODE\_CLIENT**.
+Para iniciar la aplicación y ejecutarla en *modo servidor*, llame a la función [IpcSetGlobalProperty](https://msdn.microsoft.com/library/hh535270.aspx) y establezca el modo de seguridad en [IPC\_API\_MODE\_SERVER](https://msdn.microsoft.com/library/hh535236.aspx). De forma predeterminada, la aplicación se ejecutará en *modo cliente*, **IPC\_API\_MODE\_CLIENT**.
 
 Para más información sobre el *modo servidor*, consulte [Tipos de aplicación](application-types.md).
 
@@ -33,14 +33,14 @@ Para más información sobre el *modo servidor*, consulte [Tipos de aplicación]
 ## Temas relacionados
 
 * [Tipos de aplicación](application-types.md)
-* [**Valores del modo de API**](/information-protection/sdk/2.1/api/win/api%20mode%20values#msipc_api_mode_values_IPC_API_MODE_SERVER)
-* [**IpcSetGlobalProperty**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty)
+* [Valores del modo de API](https://msdn.microsoft.com/library/hh535236.aspx)
+* [IpcSetGlobalProperty](https://msdn.microsoft.com/library/hh535270.aspx)
  
 
  
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 
