@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: fa85dde3f578f51efa57af78e211d3e712378b61
+ms.sourcegitcommit: 4e96ba043584c5d8c140d6804c72cf63362f58c5
+ms.openlocfilehash: a251723b6c42058091d57067724e89a1816bcaa1
 
 
 ---
@@ -43,9 +43,9 @@ Rights Management Services SDK 2.1 incluye los siguientes archivos, instalados e
 |Ipcerror.h|\inc|Contiene códigos de error públicos exportados por RMS SDK 2.1.|
 |Ipcfile.h|\inc|Contiene las interfaces de API de archivo exportadas por RMS SDK 2.1.|
 |Msipc.lib|\lib|Biblioteca con la que vincular cuando se usa RMS SDK 2.1 para crear aplicaciones x86.|
-|Msipc_s.lib|\lib|Proporciona el punto de entrada para [<strong>IpcInitialize</strong>](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize) para las aplicaciones x86.|
+|Msipc_s.lib|\lib|Proporciona el punto de entrada para [IpcInitialize](https://msdn.microsoft.com/library/jj127295.aspx) para las aplicaciones x86.|
 |Msipc.lib|\lib\x64|Biblioteca con la que vincular cuando se usa RMS SDK 2.1 para crear aplicaciones x64.|
-|Msipc_s.lib|\lib\x64|Proporciona el punto de entrada para [<strong>IpcInitialize</strong>](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize) para las aplicaciones x64.|
+|Msipc_s.lib|\lib\x64|Proporciona el punto de entrada para [IpcInitialize](https://msdn.microsoft.com/library/jj127295.aspx) para las aplicaciones x64.|
 |Genmanifest.exe|\tools|Genera un manifiesto para su uso durante el desarrollo de una aplicación habilitada para RMS.|
  
 
@@ -55,6 +55,6 @@ Rights Management Services SDK 2.1 incluye los siguientes archivos, instalados e
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

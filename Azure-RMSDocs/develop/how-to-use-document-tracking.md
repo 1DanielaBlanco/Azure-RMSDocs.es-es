@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 3d5d920f628bc39c4c280afa53be0b7199433803
+ms.sourcegitcommit: 04234755fabb10794f5be7c4fc658573bebf6e70
+ms.openlocfilehash: 616d5dd088665abf6e7d435978b021b10c5ac3f5
 
 
 ---
@@ -32,38 +32,33 @@ Funcionalmente, solo las propiedades **content name** y **notification type** so
 
 La secuencia de pasos que se va a utilizar para configurar el seguimiento de documentos para una parte determinada del contenido es:
 
--   Cree un objeto **license metadata**.
+-   Cree un objeto de **metadatos de licencia** y establezca el **nombre de contenido** y el **tipo de notificación**. Estas son las únicas propiedades necesarias.
+   - Android: [LicenseMetadata](https://msdn.microsoft.com/library/mt573675.aspx)
+   -  iOS: [MSLicenseMetadata](https://msdn.microsoft.com/library/mt573683.aspx)
 
-    Consulte [**LicenseMetadata**](/information-protection/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_licensemetadata_interface_java) o [**MSLicenseMetadata**](/information-protection/sdk/4.2/api/iOS/mslicensemetadata#msipcthin2_mslicensemetadata_class_objc) para más información.
+Elija el tipo de directiva, que puede ser plantilla o ad hoc:
+- Para el seguimiento de documentos basado en plantillas, cree un objeto **user policy** pasando los metadatos de licencia como un parámetro.
+  - Android: [UserPolicy.create](https://msdn.microsoft.com/library/dn790887.aspx)
+  - iOS: [MSUserPolicy.userPolicyWithTemplateDescriptor](https://msdn.microsoft.com/library/dn790808.aspx)
 
--   Establezca las propiedades **content name** y **notification type**. Estas son las únicas propiedades necesarias.
+- Para el seguimiento de documentos basado en ad hoc, establezca la propiedad **license metadata** en el objeto **policy descriptor**.
+  - Android:  [PolicyDescriptor.setLicenseMetadata](https://msdn.microsoft.com/library/mt573698.aspx)
+  - iOS: [MSPolicyDescriptor.licenseMetadata](https://msdn.microsoft.com/library/mt573693.aspx).
 
-    Para más información, consulte los métodos de acceso de la propiedad para la clase de metadatos de licencia apropiada de la plataforma, ya sea [**LicenseMetadata**](/information-protection/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_licensemetadata_interface_java) o [**MSLicenseMetadata**](/information-protection/sdk/4.2/api/iOS/mslicensemetadata#msipcthin2_mslicensemetadata_class_objc).
-
--   Por tipo de directiva; plantilla o ad hoc:
-
-    -   Para el seguimiento de documentos basado en plantillas, cree un objeto **user policy** pasando los metadatos de licencia como un parámetro.
-
-        Para más información, consulte [**UserPolicy.create**](/information-protection/sdk/4.2/api/android/userpolicy#msipcthin2_userpolicy_class_java) y [**MSUserPolicy.userPolicyWithTemplateDescriptor**](/information-protection/sdk/4.2/api/iOS/msuserpolicy#msipcthin2_msuserpolicy_templatedescriptor_property_objc).
-
-    -   Para el seguimiento de documentos basado en ad hoc, establezca la propiedad **license metadata** en el objeto **policy descriptor**.
-
-        Para obtener más información, consulte [**PolicyDescriptor.getLicenseMetadata**](/information-protection/sdk/4.2/api/android/policydescriptor#msipcthin2_policydescriptor_interface_java), [**PolicyDescriptor.setLicenseMetadata**](/information-protection/sdk/4.2/api/android/policydescriptor#msipcthin2_policydescriptor_setlicensemetadata_java) y [**MSPolicyDescriptor.licenseMetadata**](/information-protection/sdk/4.2/api/iOS/mspolicydescriptor#msipcthin2_mspolicydescriptor_licensemetadata_property_objc).
-
-    **Nota**: solo se puede obtener acceso al objeto license metadata directamente durante el proceso de configuración del seguimiento de documentos para la directiva de usuario determinada. Una vez creado el objeto user policy, no se puede obtener acceso a los metadatos de la licencia asociados, es decir, el cambio de los valores de los metadatos de licencia no tiene ningún efecto.
+    **Nota**: solo se puede obtener acceso al objeto license metadata directamente durante el proceso de configuración del seguimiento de documentos para la directiva de usuario determinada. Una vez creado el objeto de directiva de usuario, no se puede acceder a los metadatos de la licencia asociados; es decir, el cambio de los valores de los metadatos de licencia no tiene ningún efecto.
 
      
 
--   Llame al método de registro de la plataforma para el seguimiento de documentos.
-
-    Consulte [**MSUserPolicy.registerForDocTracking**](/information-protection/sdk/4.2/api/iOS/msuserpolicy#msipcthin2_msuserpolicy_registerfordoctracking_userid_authenticationcallback_completionblock_method_objc) o [**UserPolicy.registerForDocTracking**](/information-protection/sdk/4.2/api/iOS/msuserpolicy#msipcthin2_msuserpolicy_registerfordoctracking_userid_authenticationcallback_completionblock_method_objc).
-
- 
+-   Por último, llame al método de registro de la plataforma para el seguimiento de documentos.
+  - Android: [UserPolicy.registerForDocTracking asynchronous](https://msdn.microsoft.com/library/mt573699.aspx) o [UserPolicy.registerForDocTracking synchronous](https://msdn.microsoft.com/library/mt631387.aspx)
+  - iOS: [MSUserPolicy.registerForDocTracking](https://msdn.microsoft.com/library/mt573694.aspx)
 
  
 
+ 
 
 
-<!--HONumber=Sep16_HO5-->
+
+<!--HONumber=Oct16_HO3-->
 
 

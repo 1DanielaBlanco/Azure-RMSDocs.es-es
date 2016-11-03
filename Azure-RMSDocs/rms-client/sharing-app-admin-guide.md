@@ -3,7 +3,7 @@ title: "Guía del administrador de la aplicación Rights Management sharing | Az
 description: "Instrucciones e información para administradores de una red empresarial que son responsables de implementar la aplicación Microsoft Rights Management sharing para Windows."
 author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 10/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 78b975c2babad347fc5be7956d504c7283508962
-ms.openlocfilehash: 4a551f198b0469f82c14120c0c6f2bb7d055afe9
+ms.sourcegitcommit: e5decd2df9135317f2e0da4951a177211342d7ac
+ms.openlocfilehash: e66f0ac6e596840ad940c51db41dbc6f91139e51
 
 
 ---
@@ -170,7 +170,7 @@ Para comprobar que la instalación se realizó correctamente, consulte la secci�
 
 ### Para instalar la aplicación RMS sharing y solo el complemento de Office
 
-1.  Instale el cliente de AD RMS y la aplicación RMS sharing mediante el siguiente comando:
+1.  Instale el cliente de AD RMS y la aplicación RMS sharing mediante el siguiente comando, especificando una carpeta existente para crear el archivo de registro:
 
     -   Para Windows de 64 bits:
 
@@ -185,8 +185,10 @@ Para comprobar que la instalación se realizó correctamente, consulte la secci�
         ```
 
     Por ejemplo: `\\server5\apps\rms\x64\setup_ipviewer.exe /norestart /quiet /msicl "MSIRESTARTMANAGERCONTROL=Disable" /log "C:\Log files\ipviewerinstall.log"`
+    
+    Si este comando no se ejecuta correctamente, no verá ningún mensaje de error a causa del parámetro **/quiet**. Para averiguar por qué se ha producido un error en la instalación, vuelva a ejecutar el comando sin /quiet para ver los mensajes de error.
 
-2.  Instale el complemento para Office con los siguientes comandos:
+2.  Instale el complemento de Office mediante los siguientes comandos, especificando una carpeta existente para crear el archivo de registro:
 
     -   Para la versión de 64 bits de Office:
 
@@ -201,6 +203,8 @@ Para comprobar que la instalación se realizó correctamente, consulte la secci�
         ```
 
     Por ejemplo: `\\server5\apps\rms\msiexec.exe /norestart /quiet MSIRESTARTMANAGERCONTROL=Disable /i "x64\Setup64.msi" /L*v "C:\Log files\rmsofficeinstall.log"`
+    
+    Si este comando no se ejecuta correctamente, no verá ningún mensaje de error a causa del parámetro **/quiet**. Para averiguar por qué se ha producido un error en la instalación, vuelva a ejecutar el comando sin /quiet para ver los mensajes de error.
 
 Para comprobar que la instalación se realizó correctamente, consulte la sección [Comprobación de que la instalación se ha realizado correctamente](#verifying-installation-success) de este artículo.
 
@@ -402,6 +406,6 @@ Para obtener información técnica adicional que incluye la explicación de la d
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 

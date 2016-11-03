@@ -4,7 +4,7 @@ description: "En este tema se incluyen instrucciones específicas para varios es
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: d7e718c2e982702bef16c242370771d991b29db9
+ms.sourcegitcommit: 593b8b505b8bd241c301c95ee6280f93f14901b9
+ms.openlocfilehash: 54ce450600b2a10e6889d2684ce26c9da9f9167e
 
 
 ---
@@ -24,13 +24,13 @@ ms.openlocfilehash: d7e718c2e982702bef16c242370771d991b29db9
 
 En esta sección se incluyen instrucciones específicas para varios escenarios de desarrollo importantes, así como información general sobre el desarrollo con este SDK. Los escenarios de esta sección son específicos de esta versión de Rights Management Services SDK 2.1 y podrían modificarse en versiones posteriores.
 - [Uso de la autenticación ADAL](how-to-use-adal-authentication.md): autenticación con Azure RMS para una aplicación que use la biblioteca de autenticación de Azure Active Directory (ADAL).
-- [Incorporación de derechos de propiedad explícitos](add-explicit-owner-rights.md): la aplicación debe agregar explícitamente derechos de &quot;Propietario&quot; al crear una licencia desde el principio ([IpcCreateLicenseFromScratch](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch)).
+- [Incorporación de derechos de propiedad explícitos](add-explicit-owner-rights.md): la aplicación debe agregar explícitamente derechos "Owner" al crear una licencia desde el principio ([IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx)).
 - [Depuración de una aplicación con derechos habilitados](debugging-applications-that-use-ad-rms.md): en este tema se muestra cómo depurar la aplicación y usar el registro de eventos de Windows.
 - [Habilitación de la revocación y el seguimiento de documentos](tracking-content.md): en este tema se abordan las instrucciones básicas para implementar el seguimiento de documentos, así como código de ejemplo para las actualizaciones de metadatos y para la creación de un botón **Hacer seguimiento de uso** para la aplicación.
 - [Habilitación de la notificación por correo electrónico](how-to-enable-email-notification.md): las notificaciones por correo electrónico permiten que el propietario de contenido protegido reciba una notificación cuando se acceda a su contenido.
 - [Habilitación de la aplicación de servicio para que funcione con RMS basado en la nube](how-to-use-file-api-with-aadrm-cloud.md): en este tema se describe cómo configurar la aplicación de servicio para que use Azure Rights Management.
 - [Instalación y configuración de un servidor RMS](how-to-install-and-configure-an-rms-server.md): en este tema se explica cómo conectar con un servidor RMS o Azure RMS para probar la aplicación con derechos habilitados.
-- [Establecimiento del modo de seguridad de API](setting-the-api-security-mode-api-mode.md): puede elegir en qué modo de seguridad se ejecutará la aplicación de API de archivo mediante la función [IpcSetGlobalProperty](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty).
+- [Establecimiento del modo de seguridad de API](setting-the-api-security-mode-api-mode.md): puede elegir en qué modo de seguridad se ejecutará la aplicación de API de archivo mediante la función [IpcSetGlobalProperty](https://msdn.microsoft.com/library/hh535270.aspx).
 - [Trabajo con la configuración de cifrado](working-with-encryption.md): en este tema se le orienta sobre nuestros paquetes de cifrado y se muestra el uso de algunos fragmentos de código.
 - [Tipos de aplicación](application-types.md): en este tema se cubren los tipos de aplicaciones que puede elegir crear como aplicaciones con derechos habilitados.
 - [Configuración de la API de archivos](file-api-configuration.md): el comportamiento de la API de archivos se puede configurar mediante el Registro.
@@ -40,7 +40,7 @@ En esta sección se incluyen instrucciones específicas para varios escenarios d
 - [Referencia de restricción de uso](usage-restriction-reference.md): las restricciones de uso se definen mediante las constantes indicadas en este tema.
 
  
-## Temas relacionados ##
+## Temas relacionados
 * [Introducción](ad-rms-overview.md)
  
 
@@ -48,6 +48,6 @@ En esta sección se incluyen instrucciones específicas para varios escenarios d
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

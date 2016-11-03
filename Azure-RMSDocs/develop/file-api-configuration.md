@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: d949acd4281509bbed05a14e0e26d1549b52a33a
+ms.sourcegitcommit: 734ff9735adbf5aac5824b5c823a1fdcaf245d4e
+ms.openlocfilehash: 92df5a261565b83e71a6bfd1a2d432072815bd27
 
 
 ---
@@ -63,7 +63,7 @@ Establezca el valor **Encryption** en la clave para especificar el comportamient
 
 - **Off**: el cifrado está deshabilitado.
 
-> [!Note] 
+> [!Note]
 > Esta configuración no afecta al descifrado. Es posible descifrar cualquier archivo cifrado con la protección nativa o con la protección PFile, siempre y cuando el usuario tenga el derecho **EXTRACT**.
 
 - **Native**: se usa el cifrado nativo. En el caso de los archivos de Office, el archivo cifrado tendrá la misma extensión que el archivo original. Por ejemplo, un archivo con la extensión .docx se cifrará en un archivo con la extensión .docx. En el caso de otros archivos que puedan tener aplicada la protección nativa, se cifrarán en un archivo con una extensión del formato p*zzz*, donde *zzz* es la extensión de archivo original. Por ejemplo, los archivos .txt se cifrarán en un archivo con una extensión .ptxt. A continuación se incluye una lista de extensiones de archivo que pueden tener aplicada la protección nativa.
@@ -71,7 +71,7 @@ Establezca el valor **Encryption** en la clave para especificar el comportamient
 - **PFile**: se usa el cifrado PFile. El archivo cifrado tendrá anexado .pfile a la extensión original. Por ejemplo, después del cifrado, un archivo .txt tendrá una extensión .txt.pfile.
 
 
-> [!Note] 
+> [!Note]
 > Esta configuración no afecta a los formatos de archivo de Office. Por ejemplo, si el valor `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\DOCX\Encryption` se establece en &quot;Pfile", los archivos .docx seguirán cifrándose con la protección nativa y el archivo cifrado seguirá teniendo una extensión .docx.
 
 Si se establece otro valor o si no se establece ningún valor, el resultado será el comportamiento predeterminado.
@@ -82,7 +82,7 @@ Si se establece otro valor o si no se establece ningún valor, el resultado ser�
 -   **Archivos txt, xml, jpg, jpeg, pdf, png, tiff, bmp, gif, giff, jpe, jfif, jif** Está habilitado el cifrado nativo (xxx se convierte en pxxx).
 -   **Todos los demás archivos** Está habilitado el cifrado de archivo protegido (pfile) (xxx se convierte en xxx.pfile).
 
-Si se intenta cifrar un tipo de archivo que está bloqueado, se produce el error [**IPCERROR\_FILE\_ENCRYPT\_BLOCKED**](/information-protection/sdk/2.1/api/win/error%20codes).
+Si se intenta cifrar un tipo de archivo que está bloqueado, se produce el error [IPCERROR\_FILE\_ENCRYPT\_BLOCKED](https://msdn.microsoft.com/library/hh535248.aspx).
 
 ### API de archivo: detalles sobre la compatibilidad de archivos
 
@@ -148,14 +148,14 @@ HKEY_LOCAL_MACHINE
 
 ## Temas relacionados
 
-* [Notas para el desarrollador](developer-notes.md)
-* [**IPCERROR\_FILE\_ENCRYPT\_BLOCKED**](/information-protection/sdk/2.1/api/win/error%20codes)
+- [Notas para el desarrollador](developer-notes.md)
+- [IPCERROR\_FILE\_ENCRYPT\_BLOCKED](https://msdn.microsoft.com/library/hh535248.aspx)
  
 
  
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

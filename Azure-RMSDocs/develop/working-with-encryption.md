@@ -4,7 +4,7 @@ description: "Orientación para los paquetes de cifrado de Azure RMS y recortes 
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: bf27067f832f12ef66f6df92f4008a0d21cdf2aa
+ms.sourcegitcommit: 37d9906b5df00b6ec6eeb6739766c00bd5cef37b
+ms.openlocfilehash: 0ad53fa82f288153f259870b0022378815f097a8
 
 
 ---
@@ -40,13 +40,13 @@ A partir de la [actualización de marzo de 2015](release-notes-rtm.md), hemos in
 -   IPC\_ENCRYPTION\_PACKAGE \_AES128\_CBC4K
 -   IPC\_ENCRYPTION\_PACKAGE \_AES128\_ECB (también conocido como modo de algoritmos desusados)
 
-Las marcas de paquete de cifrado (véase [**Preferred encryption (cifrado preferido)**](/information-protection/sdk/2.1/api/win/constants#msipc_preferred_encryption)), pueden usarse junto con la nueva marca de propiedad de la licencia **IPC\_LI\_PREFERRED\_ENCRYPTION\_PACKAGE**.
+Las marcas de paquete de cifrado (consulte [Preferred encryption](https://msdn.microsoft.com/library/dn974065.aspx) (cifrado preferido)) se pueden usar junto con la marca de propiedad de la licencia, *IPC\_LI\_PREFERRED\_ENCRYPTION\_PACKAGE*.
 
 Los siguientes son algunos fragmentos de código simple que muestran cómo utilizar la nueva propiedad de la licencia.
 
 ## Algoritmos desusados
 
-La marca **IPC\_LI\_DEPRECATED\_ENCRYPTION\_ALGORITHMS** dejará de exponerse en la API. Esto significa que las aplicaciones futuras ya no se compilarán si hacen referencia a esta marca, pero las ya desarrolladas con ella seguirán funcionando dado que respetaremos la marca de forma privada en el código de la API.
+La marca *IPC\_LI\_DEPRECATED\_ENCRYPTION\_ALGORITHMS* dejará de exponerse en la API. Esto significa que las aplicaciones futuras ya no se compilarán si hacen referencia a esta marca, pero las ya desarrolladas con ella seguirán funcionando dado que respetaremos la marca de forma privada en el código de la API.
 
 Todavía será posible beneficiarse de la antigua marca de algoritmos de cifrado desusados si se cambia una marca. Consulte los fragmentos de código siguientes para obtener ejemplos.
 
@@ -84,7 +84,7 @@ No se requieren cambios en el código, *AES 256* CBC4K es el valor predeterminad
 Este ejemplo también muestra la nueva forma de admitir *algoritmos desusados*.
 
     C++
-    
+
     hr = IpcCreateLicenseFromTemplateID(pcTil-&gt;aTi[0].wszID,
                                     0,
                                     NULL,
@@ -103,6 +103,6 @@ Este ejemplo también muestra la nueva forma de admitir *algoritmos desusados*.
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 
