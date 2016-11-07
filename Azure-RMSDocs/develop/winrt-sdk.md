@@ -14,13 +14,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 763e99e40bbe329305e97757e87d10b048cc62e9
+ms.sourcegitcommit: dc452dac3a86cd9cc39127d5a29106ae87ba94be
+ms.openlocfilehash: c3dfa23a4bb03aec3ad9eae835382040a5347006
 
 
 ---
 
-# Programa de instalación de la Tienda Windows
+# <a name="windows-store-setup"></a>Programa de instalación de la Tienda Windows
 
 Las aplicaciones de la Tienda Windows pueden usar Microsoft Rights Management SDK 4.2 para habilitar la protección de información integrada en sus aplicaciones mediante Azure Active Directory Rights Management (AAD RM).
 
@@ -28,10 +28,10 @@ Este tema sirve de guía por el proceso de configuración del entorno para crear
 
 -   [Requisitos previos](#prerequisites)
 -   [Opcional](#optional)
--   [Configuración del entorno de desarrollo](#configuring-your-development-environment)
--   [Consulte también](#see-also)
+-   [Configurar el entorno de desarrollo](#configuring-your-development-environment)
+-   [Ver también](#see-also)
 
-## Requisitos previos
+## <a name="prerequisites"></a>Requisitos previos
 
 
 Debe tener el siguiente software en el sistema de desarrollo:
@@ -44,11 +44,11 @@ Debe tener el siguiente software en el sistema de desarrollo:
 
 Lea el tema de [novedades](release-notes.md) para más información sobre actualizaciones, información de dispositivos y entornos, notas de la versión y preguntas más frecuentes de la API.
 
-## Opcional
+## <a name="optional"></a>Opcional
 
 Nuestra biblioteca de UI proporciona una interfaz de usuario reutilizable para operaciones de consumo y protección a aquellos desarrolladores que no quieren crear su propia interfaz de usuario personalizada: [UI Library for Windows Store apps](https://github.com/AzureAD/rms-sdk-ui-for-windowsstore) (Biblioteca de UI para aplicaciones de la Tienda Windows). También proporcionamos una aplicación de ejemplo de la aplicación de la Tienda Windows: [RMS Sample application for Windows Store](https://github.com/AzureADSamples/rms-samples-for-windowsstore) (aplicación de ejemplo de RMS para la Tienda Windows).
 
-## Configurar el entorno de desarrollo
+## <a name="configuring-your-development-environment"></a>Configurar el entorno de desarrollo
 
 
 -   Abra Visual Studio.
@@ -70,7 +70,7 @@ Nuestra biblioteca de UI proporciona una interfaz de usuario reutilizable para o
 
 Ya está listo para crear sus propias aplicaciones nuevas de la Tienda Windows.
 
-### Véase también
+### <a name="see-also"></a>Consulte también
 
 [Introducción](get-started.md)
 
@@ -86,6 +86,6 @@ Ya está listo para crear sus propias aplicaciones nuevas de la Tienda Windows.
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 
