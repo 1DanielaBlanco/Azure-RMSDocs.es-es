@@ -3,6 +3,7 @@ title: Instrucciones para desarrolladores y condiciones | Azure RMS
 description: "El enfoque de RMS SDK 4.2 es ayudarle a compilar aplicaciones habilitadas para AD RMS que aprovechan la protección de la información de AD RMS y simplificarle el proceso lo más posible."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -20,7 +21,7 @@ ms.openlocfilehash: 2ac4ca3e505d78758a01516f66f1e5f4ff4b17b6
 
 ---
 
-# Instrucciones para desarrolladores y condiciones
+# <a name="developer-guidance-and-terms"></a>Instrucciones para desarrolladores y condiciones
 El enfoque de Microsoft Rights Management SDK 4.2 es ayudarle a compilar aplicaciones habilitadas para AD RMS que aprovechan Active Directory Rights Management Services (AD RMS) y simplificarle el proceso lo más posible.
 
 Los temas siguientes tienen como fin ayudarle en el proceso de diseño en el desarrollo de aplicaciones habilitadas para RMS.

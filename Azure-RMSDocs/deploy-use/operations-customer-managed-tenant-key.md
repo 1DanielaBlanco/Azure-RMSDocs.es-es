@@ -2,6 +2,7 @@
 title: "Administración de cliente: Operaciones de ciclo de vida de clave de inquilino | Azure Information Protection"
 description: "Información sobre las operaciones del ciclo de vida que son relevantes si administra la clave de inquilino para Azure Information Protection (el escenario “aportar tu propia clave” o BYOK)."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/04/2016
 ms.topic: article

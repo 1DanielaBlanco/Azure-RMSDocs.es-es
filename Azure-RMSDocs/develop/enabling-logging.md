@@ -3,6 +3,7 @@ title: Procedimiento para&#58; habilitar el registro de rendimiento y errores | 
 description: "El SDK 4.2 de Microsoft Rights Management administra la carga de registro de rendimiento y diagnóstico mediante una única propiedad de dispositivo."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article

@@ -2,6 +2,7 @@
 title: "Comparación de Azure Information Protection y AD RMS | Azure Information Protection"
 description: "Si conoce o ha implementado con anterioridad Active Directory Rights Management Services (AD RMS), es posible que se pregunte cuáles son las diferencias de Azure Information Protection en términos de funcionalidad y requisitos."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/04/2016
 ms.topic: article

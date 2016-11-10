@@ -2,6 +2,7 @@
 title: Requisitos de Azure Information Protection | Azure RMS
 description: "Identifique los requisitos previos para implementar Azure Information Protection en su organización."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/19/2016
 ms.topic: get-started-article
