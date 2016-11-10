@@ -3,7 +3,7 @@ title: "Algunas de las preguntas más frecuentes sobre el servicio de protecció
 description: "Algunas de las preguntas más frecuentes sobre el servicio de protección de datos, Azure Rights Management (Azure RMS), desde Azure Information Protection."
 author: cabailey
 manager: mbaldwin
-ms.date: 10/18/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ec8609217db42a2cf0b3f89367cf4dee6ccb77de
-ms.openlocfilehash: ae25f5af9784b0de92626dbfe65d4358359b4bd9
+ms.sourcegitcommit: 6566e0ce901097bcf5f30d76be67522d3464f100
+ms.openlocfilehash: c92e35b0cb9f892f7859511365027c241d0f1ef6
 
 
 ---
@@ -78,7 +78,7 @@ El servicio Azure Rights Management siempre usa una cuenta de Azure Active Direc
 
 El método de autenticación de estas cuentas puede variar, en función de cómo configurase el administrador de la otra organización las cuentas de Azure Active Directory. Por ejemplo, podrían usar contraseñas creadas para estas cuentas, Multi-Factor Authentication (MFA), federación o contraseñas creadas en Servicios de dominio de Active Directory y después sincronizadas con Active Directory de Azure.
 
-## ¿Puedo agregar usuarios ajenos a mi empresa a plantillas personalizadas?
+## ¿Puedo agregar usuarios externos (personas ajenas a mi empresa) a plantillas personalizadas?
 Sí. Si crea plantillas personalizadas que los usuarios finales (y los administradores) puedan seleccionar desde las aplicaciones, hará que les resulte más rápido y sencillo aplicar la protección de la información mediante las directivas predefinidas que especifique. Uno de los valores de la plantilla define quién puede acceder al contenido, y puede especificar usuarios y grupos de su organización y usuarios ajenos a su organización.
 
 Para especificar usuarios de fuera de su organización, agréguelos como contactos a un grupo que seleccione en el Portal de Azure clásico al configurar las plantillas. O bien, use el [módulo de Windows PowerShell para Azure Rights Management](../deploy-use/install-powershell.md):
@@ -157,6 +157,6 @@ A pesar de su nombre y su apariencia, **No reenviar** no es el contrario del der
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Oct16_HO4-->
 
 

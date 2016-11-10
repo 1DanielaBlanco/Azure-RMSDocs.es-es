@@ -14,13 +14,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 80d79ead119b5dbe86d94f979742ecc2b62d1ef9
+ms.sourcegitcommit: 7c0b885c35dcac0237788a69486d8f736c97c0c4
+ms.openlocfilehash: 96b71d26461559aa8e53960e7e8f3f748b7ebb1d
 
 
 ---
 
-# Configuración de iOS y OS X
+# <a name="ios-and-os-x-setup"></a>Configuración de iOS y OS X
 
 Las aplicaciones de iOS y OS X pueden usar Microsoft Rights Management SDK 4.2 para habilitar la protección de información integrada en aplicaciones con Azure Rights Management (Azure RMS).
 
@@ -31,10 +31,10 @@ Este tema sirve de guía por el proceso de configuración del entorno para crear
 
 -   [Requisitos previos](#prerequisites)
 -   [Opcional](#optional)
--   [Configuración del entorno de desarrollo](#configuring-your-development-environment)
--   [Consulte también](#see-also)
+-   [Configurar el entorno de desarrollo](#configuring-your-development-environment)
+-   [Ver también](#see-also)
 
-## Requisitos previos
+## <a name="prerequisites"></a>Requisitos previos
 
 Se recomienda tener el siguiente software en el sistema de desarrollo:
 
@@ -53,11 +53,11 @@ Se recomienda tener el siguiente software en el sistema de desarrollo:
 
 Lea el tema de [novedades](release-notes.md) para más información sobre actualizaciones, notas de la versión y preguntas más frecuentes de la API.
 
-## Opcional
+## <a name="optional"></a>Opcional
 
 Nuestra biblioteca de interfaz de usuario proporciona una interfaz de usuario reutilizable para operaciones de consumo y protección, dirigida a desarrolladores que no quieren crear su propia interfaz de usuario personalizada: [UI Library and Sample app for iOS](https://github.com/AzureAD/rms-sdk-ui-for-ios) (Biblioteca de interfaz de usuario y aplicación de ejemplo para iOS).
 
-## Configuración del entorno de desarrollo
+## <a name="configuring-your-development-environment"></a>Configuración del entorno de desarrollo
 
 -   Para crear un proyecto nuevo, abra el menú **Archivo** y haga clic en **Nuevo** y luego en **Proyecto**.
 -   Seleccione **Single View Application** (Aplicación de vista única).
@@ -100,7 +100,7 @@ Nuestra biblioteca de interfaz de usuario proporciona una interfaz de usuario re
 
 -   Ya está listo para crear sus propias aplicaciones iOS/OS X.
 
-### Véase también
+### <a name="see-also"></a>Véase también
 
 * [Introducción](get-started.md)
 
@@ -116,6 +116,6 @@ Nuestra biblioteca de interfaz de usuario proporciona una interfaz de usuario re
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 

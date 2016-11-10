@@ -3,7 +3,7 @@ title: "Protección de un archivo que comparte por correo electrónico con la ap
 description: "Instrucciones sobre cómo compartir de forma segura un documento por correo electrónico."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,15 +12,15 @@ ms.assetid: 4c1cd1d3-78dd-4f90-8b37-dcc9205a6736
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
-ms.openlocfilehash: b4467f73dd9d107681961f99ee038ed889e25b2d
+ms.sourcegitcommit: addc24fed28cee52b57c7e3bde926d6324478e7b
+ms.openlocfilehash: 1eed5f339ede2d96b1de7e486a04416d1a22c871
 
 
 ---
 
-# Protección de un archivo que comparte por correo electrónico con la aplicación Rights Management sharing
+# <a name="protect-a-file-that-you-share-by-email-by-using-the-rights-management-sharing-application"></a>Protección de un archivo que comparte por correo electrónico con la aplicación Rights Management sharing
 
->*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 con SP1, Windows 8, Windows 8.1*
+>*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 con SP1, Windows 8 y Windows 8.1*
 
 Cuando protege un archivo que comparte por correo electrónico, se crea una nueva versión del archivo original. El archivo original permanece sin protección y la nueva versión, que está protegida, se adjunta automáticamente a un correo electrónico que después envía.
 
@@ -32,7 +32,7 @@ Si su organización usa Azure Information Protection, puede realizar un seguimie
 
 -   Utilice el sitio de seguimiento de documentos. Incluso puede dejar de compartir el archivo. Para ello, revoque el acceso a él en el sitio de seguimiento de documentos. Para obtener más información, vea [Seguimiento y revocación de documentos cuando se usa la aplicación RMS sharing](sharing-app-track-revoke.md).
 
-## Con Outlook: Para proteger un archivo que comparte por correo electrónico
+## <a name="using-outlook-to-protect-a-file-that-you-share-by-email"></a>Con Outlook: Para proteger un archivo que comparte por correo electrónico
 
 1.  Cree su mensaje de correo electrónico y adjunte el archivo. A continuación, en la pestaña **Mensaje** del grupo **RMS** , haga clic en **Uso compartido seguro** y luego haga clic en **Uso compartido seguro** nuevamente:
 
@@ -42,14 +42,14 @@ Si su organización usa Azure Information Protection, puede realizar un seguimie
 
 2.  Especifique las opciones que desee para este archivo en el cuadro de diálogo [Uso compartido seguro](sharing-app-dialog-box.md) y haga clic en **Enviar ahora**.
 
-### Otras formas de proteger un archivo que comparte por correo electrónico
+### <a name="other-ways-to-protect-a-file-that-you-share-by-email"></a>Otras formas de proteger un archivo que comparte por correo electrónico
 Además de compartir un archivo protegido con Outlook, también puede utilizar estas alternativas:
 
 -   Desde el Explorador de archivos: Este método funciona para todos los archivos.
 
 -   Desde una aplicación de Office: Este método funciona para las aplicaciones compatibles con la aplicación RMS sharing mediante el complemento de Office, para que se vea el grupo **RMS** en la cinta.
 
-#### Con el Explorador de archivos o una aplicación de Office: Para proteger un archivo que comparte por correo electrónico
+#### <a name="using-file-explorer-or-an-office-application-to-protect-a-file-that-you-share-by-email"></a>Con el Explorador de archivos o una aplicación de Office: Para proteger un archivo que comparte por correo electrónico
 
 1.  Use una de las siguientes opciones:
 
@@ -71,7 +71,7 @@ Además de compartir un archivo protegido con Outlook, también puede utilizar e
 
     ![Mensaje de correo electrónico de Azure Information Protection](../media/ADRMS_MSRMSApp_EmailMessage.PNG)
 
-    Probablemente se esté preguntando: [¿Qué es el archivo .ppdf que se crea automáticamente?](sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created)
+    Probablemente se esté preguntando: [¿Qué es el archivo .ppdf que se crea automáticamente?](sharing-app-dialog-box.md#whats-the-ppdf-file-thats-automatically-created)
 
 4.  Opcional: Puede cambiar cualquier cosa que desee en este mensaje de correo electrónico. Por ejemplo, puede agregar o cambiar el asunto o el texto del mensaje.
 
@@ -80,18 +80,18 @@ Además de compartir un archivo protegido con Outlook, también puede utilizar e
 
 5.  Envíe el mensaje de correo electrónico.
 
-## Ejemplos y otras instrucciones
+## <a name="examples-and-other-instructions"></a>Ejemplos y otras instrucciones
 Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de Rights Management e instrucciones de procedimientos, consulte las siguientes secciones de la guía de usuario de la aplicación para uso compartido de Rights Management:
 
 -   [Ejemplos de uso de la aplicación RMS sharing](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [¿Qué desea hacer?](sharing-app-user-guide.md#what-do-you-want-to-do)
+-   [¿Qué quiere hacer?](sharing-app-user-guide.md#what-do-you-want-to-do)
 
-## Véase también
-[Guía de usuario de la aplicación de uso compartido Rights Management](sharing-app-user-guide.md)
+## <a name="see-also"></a>Véase también
+[Guía de usuario de la aplicación Rights Management sharing](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

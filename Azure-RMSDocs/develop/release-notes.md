@@ -3,7 +3,7 @@ title: "Novedades y notas de la versión | Azure RMS"
 description: "Se describen las características y los  cambios importantes de esta nueva versión de RMS SDK."
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 10/20/2016
+ms.date: 10/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,28 +13,18 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 81cbe287b67e2a1598efdd2a816913f147c7ff7b
-ms.openlocfilehash: f3d4b1ba0da3530121aa81056238533f0dcbed2f
+ms.sourcegitcommit: 60e64b1fb1184aaa51b6664ecb5288d6ff861413
+ms.openlocfilehash: 04364bc5daec881fe3c55d5cd41e7be11ac91ae7
 
 
 ---
 
-# Novedades y notas de la versión
+# <a name="whats-new-and-release-notes"></a>Novedades y notas de la versión
 
-## Novedades
-Microsoft Rights Management SDK 4.2 lleva las posibilidades de la aplicación de RMS a un nuevo nivel de flexibilidad y facilidad. En este tema se describen las características y los cambios importantes de esta nueva versión de RMS SDK.
+## <a name="whats-new"></a>Novedades
+Microsoft Rights Management SDK 4.2 lleva las posibilidades de la aplicación de RMS a un nuevo nivel de flexibilidad y facilidad. En este tema se describen las características y los cambios importantes de esta versión de RMS SDK.
 
--   [Novedades de junio de 2016](#new-for-June-2016)
--   [Actualización de diciembre de 2015](#december-2015-update)
--   [Actualización de julio de 2015: se agrega compatibilidad con el desarrollo de C++ y Linux](#july-2015-update-adds-support-for-linux-c-developm)
--   [Actualización de mayo de 2015: se agrega control de registro](#may-2015-update-adds-logging-control)
--   [Actualización de febrero de 2015: se agrega compatibilidad con la aplicación de la Tienda Windows](#february-2015-update-adds-windows-store-application-support)
--   [Actualización de enero de 2015: se agrega compatibilidad con la plataforma WinPhone](#january-2015-update-adds-winphone-platform-support)
--   [Actualización de octubre de 2014: se actualiza a Microsoft RMS SDK 4.1](#october-2014-update-upgrade-to-microsoft-rms-sdk-4-1)
--   [Notas de la versión](#release-notes)
--   [Preguntas más frecuentes](#frequently-asked-questions)
-
-### Novedades de junio de 2016
+### <a name="new-for-june-2016"></a>Novedades de junio de 2016
 
 - **Compatibilidad con la autenticación moderna**: proporciona inicio de sesión basado en la biblioteca de autenticación de Active Directory (ADAL) para las aplicaciones con RMS habilitado. Permite características de inicio de sesión como Multi-Factor Authentication (MFA), los proveedores de identidades de terceros basados en SAML con aplicaciones cliente de RMS y la autenticación con tarjetas inteligentes y basada en certificados. También elimina la necesidad de usar el protocolo de autenticación básica con las aplicaciones con RMS habilitado.
 - **Compatibilidad con Seguimiento de documentos**: ahora los desarrolladores pueden habilitar el seguimiento de documentos al proteger los documentos en sus aplicaciones.
@@ -42,7 +32,7 @@ Microsoft Rights Management SDK 4.2 lleva las posibilidades de la aplicación de
 - Correcciones de errores
 
 
-### Actualización de diciembre de 2015
+### <a name="december-2015-update"></a>Actualización de diciembre de 2015
 
 Con esta versión, RMS SDK para dispositivos pasa a la versión 4.2 y agrega lo siguiente:
 
@@ -74,7 +64,7 @@ Con esta versión, RMS SDK para dispositivos pasa a la versión 4.2 y agrega lo 
 -   Actualizaciones para mejorar la experiencia de mensajería de errores y solución de problemas.
 -   Mejoras de rendimiento significativas en las operaciones criptográficas.
 
-### Actualización de julio de 2015: se agrega compatibilidad con el desarrollo de C++ y Linux
+### <a name="july-2015-update-adds-support-for-linux-c-development"></a>Actualización de julio de 2015: se agrega compatibilidad con el desarrollo de C++ y Linux
 
 Esta versión agrega lo siguiente:
 
@@ -82,7 +72,7 @@ Esta versión agrega lo siguiente:
 
     Para más información, vea [Get started](get-started.md) (Introducción).
 
-### Actualización de mayo de 2015: se agrega control de registro
+### <a name="may-2015-update-adds-logging-control"></a>Actualización de mayo de 2015: se agrega control de registro
 
 Esta versión agrega compatibilidad con lo siguiente:
 
@@ -100,15 +90,15 @@ Esta versión agrega compatibilidad con lo siguiente:
 
     Para obtener más información, consulte [MSProtection:resetStateWithCompletionBlock](https://msdn.microsoft.com/library/mt210991.aspx).
 
-### Actualización de febrero de 2015: se agrega compatibilidad con la aplicación de la Tienda Windows
+### <a name="february-2015-update-adds-windows-store-application-support"></a>Actualización de febrero de 2015: se agrega compatibilidad con la aplicación de la Tienda Windows
 
 Esta versión agrega compatibilidad con las aplicaciones de la Tienda Windows y proporciona las mismas funciones en las versiones de RMS SDK 4.1 para Windows Phone, Android e iOS/OS X.
 
-### Actualización de enero de 2015: se agrega compatibilidad con la plataforma WinPhone
+### <a name="january-2015-update-adds-winphone-platform-support"></a>Actualización de enero de 2015: se agrega compatibilidad con la plataforma WinPhone
 
 Esta versión agrega compatibilidad con el sistema operativo Windows Phone y proporciona las mismas funciones en las versiones de RMS SDK 4.1 para Android e iOS/OS X.
 
-### Actualización de octubre de 2014: se actualiza a Microsoft RMS SDK 4.1
+### <a name="october-2014-update-upgrade-to-microsoft-rms-sdk-41"></a>Actualización de octubre de 2014: se actualiza a Microsoft RMS SDK 4.1
 
 La versión 4.1 de RMS SDK agrega las siguientes características nuevas a Google Android y Apple iOS/OS X.
 
@@ -120,7 +110,7 @@ La versión 4.1 de RMS SDK agrega las siguientes características nuevas a Googl
 
     Ejemplo: MSUserPolicy.name ahora es [MSUserPolicy.policyName](https://msdn.microsoft.com/library/dn790799.aspx).
 
-## Notas de la versión
+## <a name="release-notes"></a>Notas de la versión
 
 En esta sección se detalla información sobre las versiones actuales y anteriores de las API de Microsoft Rights Management SDK 4.x que, como desarrollador, le conviene conocer.
 
@@ -181,7 +171,7 @@ En esta sección se detalla información sobre las versiones actuales y anterior
 
 **Nota:** las aplicaciones MDI no son compatibles con nuestra API de iOS.
 
-## Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 **Todas las plataformas**
 
@@ -220,7 +210,7 @@ En esta sección se detalla información sobre las versiones actuales y anterior
 
 **R:** No todas las operaciones se pueden cancelar. Una operación de cancelación se ejecuta de la mejor forma posible.
 
-**OS x**
+**OS X**
 
 **P:** El marco de la aplicación de ejemplo está adaptado a Xcode 5, ¿puedo trabajar con Xcode 4.6?
 
@@ -232,6 +222,6 @@ En esta sección se detalla información sobre las versiones actuales y anterior
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

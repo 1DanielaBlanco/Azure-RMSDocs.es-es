@@ -14,13 +14,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 90c8c97c720c624ba8f1ca7703b6c79a66f77d08
+ms.sourcegitcommit: ff3b1ce2ec5984c1e79bc9d10c5fc913b4fd3291
+ms.openlocfilehash: 1925eb3a630f61e995886989ad351a8263c9779f
 
 
 ---
 
-# Configuración de Android
+# <a name="android-setup"></a>Configuración de Android
 
 Las aplicaciones de Android pueden usar Microsoft Rights Management SDK 4.2 para habilitar la protección de información integrada en sus aplicaciones mediante Azure Active Directory Rights Management (AAD RM).
 
@@ -28,10 +28,10 @@ Este tema sirve de guía por el proceso de configuración del entorno para crear
 
 -   [Requisitos previos](#prerequisites)
 -   [Opcional](#optional)
--   [Configuración del entorno de desarrollo](#configuring-your-development-environment)
--   [Consulte también](#see-also)
+-   [Configurar el entorno de desarrollo](#configuring-your-development-environment)
+-   [Ver también](#see-also)
 
-## Requisitos previos
+## <a name="prerequisites"></a>Requisitos previos
 
 Se recomienda tener el siguiente software en el sistema de desarrollo:
 
@@ -56,11 +56,11 @@ Se recomienda tener el siguiente software en el sistema de desarrollo:
 
 Lea el tema de [novedades](release-notes.md) para más información sobre actualizaciones, notas de la versión y preguntas más frecuentes de la API.
 
-## Opcional
+## <a name="optional"></a>Opcional
 
 Nuestra biblioteca de interfaz de usuario proporciona una interfaz de usuario reutilizable para operaciones de consumo y protección, dirigida a desarrolladores que no quieren crear su propia interfaz de usuario personalizada: [UI Library and Sample app for Android](https://github.com/AzureAD/rms-sdk-ui-for-android) (Biblioteca de interfaz de usuario y aplicación de ejemplo para Android).
 
-## Configurar el entorno de desarrollo
+## <a name="configuring-your-development-environment"></a>Configurar el entorno de desarrollo
 
 **Nota sobre la versión preliminar de MS RMS SDK 4.2:** en esta versión preliminar, las capturas de pantalla no se han actualizado para reflejar el cambio en los nombres de las rutas de acceso de com/microsoft a com/microsoft/rightsmanagment. El texto sí se ha actualizado.
 
@@ -134,7 +134,7 @@ Nuestra biblioteca de interfaz de usuario proporciona una interfaz de usuario re
 
 -   Ya está listo para crear sus propias aplicaciones Android.
 
-### Véase también
+### <a name="see-also"></a>Consulte también
 
 [Introducción](get-started.md)
 
@@ -150,6 +150,6 @@ Nuestra biblioteca de interfaz de usuario proporciona una interfaz de usuario re
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 

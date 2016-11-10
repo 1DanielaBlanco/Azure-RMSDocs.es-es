@@ -3,7 +3,7 @@ title: "Paso 2&colon; Migración de clave protegida por software a clave protegi
 description: "Estas instrucciones forman parte de la ruta de migración de AD RMS a Azure Information Protection y solo son válidas si la clave de AD RMS está protegida por software y quiere migrar a Azure Information Protection con una clave de inquilino protegida por HSM en Azure Key Vault."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,20 +12,20 @@ ms.assetid: c5f4c6ea-fd2a-423a-9fcb-07671b3c2f4f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 931642ea9070a7581b428bcd04756048673fe3c0
-ms.openlocfilehash: ae530a9ae861bce8f82fa2e535e5b2281f1c9ffe
+ms.sourcegitcommit: 1fcebaaa2fbe1479e83c232d51013341977796fc
+ms.openlocfilehash: 54e759108ecca7a049190823c3874451d7104fc4
 
 
 ---
 
-# Paso 2: Migración de clave protegida por software a clave protegida por HSM
+# <a name="step-2-softwareprotected-key-to-hsmprotected-key-migration"></a>Paso 2: Migración de clave protegida por software a clave protegida por HSM
 
->*Se aplica a: Active Directory Rights Management Services y Azure Information Protection*
+>*Se aplica a: Active Directory Rights Management Services, Azure Information Protection*
 
 
 Estas instrucciones forman parte de la [ruta de migración de AD RMS a Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md) y solo son válidas si la clave de AD RMS está protegida por software y quiere migrar a Azure Information Protection con una clave de inquilino protegida por HSM en Azure Key Vault. 
 
-Si no es el escenario de configuración elegido, vuelva al [paso 2. Exporte los datos de configuración de AD RMS, impórtelos en Azure RMS](migrate-from-ad-rms-phase1.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-rms) y elija una configuración distinta.
+Si no es el escenario de configuración elegido, vuelva al [paso 2. Exporte los datos de configuración de AD RMS, impórtelos en Azure RMS](migrate-from-ad-rms-phase1.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-information-protection) y elija una configuración distinta.
 
 Es un procedimiento de cuatro partes para importar la configuración de AD RMS a Azure Information Protection y conseguir que la clave de inquilino de Azure Information Protection la administre el propio usuario (BYOK) en Azure Key Vault.
 
@@ -40,7 +40,7 @@ Antes de empezar, asegúrese de que la organización tenga un almacén de claves
 > Si va a realizar los pasos de configuración para el Almacén de claves de Azure y no está familiarizado con este servicio de Azure, puede que le resulte útil ver primero [Introducción al Almacén de claves de Azure](https://azure.microsoft.com/documentation/articles/key-vault-get-started/). 
 
 
-## Parte 1: Extraer la clave de SLC de los datos de configuración e importar la clave en el HSM local
+## <a name="part-1-extract-your-slc-key-from-the-configuration-data-and-import-the-key-to-your-onpremises-hsm"></a>Parte 1: Extraer la clave de SLC de los datos de configuración e importar la clave en el HSM local
 
 1.  Administrador del Almacén de claves de Azure: siga este procedimiento de la sección [Implementación del método Aportar tu propia clave (BYOK) en el Almacén de claves de Azure](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#implementing-bring-your-own-key-byok-for-azure-key-vault) en la documentación del Almacén de claves de Azure:
 
@@ -83,25 +83,25 @@ Antes de empezar, asegúrese de que la organización tenga un almacén de claves
 
     Esto generará una pantalla de resultados similar a la siguiente:
 
-    **key generation parameters:**
+    **parámetros de generación de claves:**
 
-    **operation &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Operation to perform &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; import**
+    **operación &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Operación a ejecutar &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; importación**
 
-    **application &nbsp;&nbsp;&nbsp;&nbsp;Application&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; simple**
+    **aplicación &nbsp;&nbsp;&nbsp;&nbsp;Aplicación&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; simple**
 
-    **verify &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Verify security of configration key&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; yes**
+    **verificar &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Verificar la seguridad de la clave de configuración&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sí**
 
-    **type &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Key type &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RSA**
+    **tipo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tipo de clave &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RSA**
 
-    **pemreadfile &nbsp;&nbsp; PEM file containing RSA key &nbsp;&nbsp; e:\ContosoTPD.pem**
+    **pemreadfile &nbsp;&nbsp; Archivo PEM que contiene una clave RSA &nbsp;&nbsp; e:\ContosoTPD.pem**
 
-    **ident &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Key identifier &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; contosobyok**
+    **identificador &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Identificador de clave &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; contosobyok**
 
-    **plainname &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Key name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ContosoBYOK**
+    **plainname &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nombre de clave &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ContosoBYOK**
 
-    **Key successfully imported.**
+    **La clave se ha importado correctamente.**
 
-    **Path to key: C:\ProgramData\nCipher\Key Management Data\local\key_simple_contosobyok**
+    **Ruta de la clave: C:\ProgramData\nCipher\Key Management Data\local\key_simple_contosobyok**
 
 Este resultado confirma que la clave privada se ha migrado al dispositivo HSM de Thales local con una copia cifrada guardada en una clave (en el ejemplo anterior, "key_simple_contosobyok"). 
 
@@ -110,13 +110,13 @@ Después de extraer la clave de SLC e importarla en el HSM local, puede crear un
 > [!IMPORTANT]
 > Después de completar este paso, borre de forma segura estos archivos PEM de la estación de trabajo desconectada para evitar que usuarios no autorizados puedan obtener acceso a ellos. Por ejemplo, ejecute "cipher /w:E" para eliminar de forma segura todos los archivos de la unidad E.
 
-## Parte 2: Crear el paquete y transferir la clave de HSM al Almacén de claves de Azure
+## <a name="part-2-package-and-transfer-your-hsm-key-to-azure-key-vault"></a>Parte 2: Crear el paquete y transferir la clave de HSM al Almacén de claves de Azure
 
 1.  Administrador del Almacén de claves de Azure: siga este procedimiento de la sección [Implementación del método Aportar tu propia clave (BYOK) en el Almacén de claves de Azure](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#implementing-bring-your-own-key-byok-for-azure-key-vault) en la documentación del Almacén de claves de Azure:
 
-    -   [Paso 4: preparación de la clave para la transferencia](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#step-4-prepare-your-key-for-transfer)
+    -   [Paso 4: Preparar la clave para la transferencia](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#step-4-prepare-your-key-for-transfer)
 
-    -   [Paso 5: transferencia de la clave al Almacén de claves de Azure](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#step-5-transfer-your-key-to-azure-key-vault)
+    -   [Paso 5: Transferir la clave a Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#step-5-transfer-your-key-to-azure-key-vault)
 
     Como ya tiene la clave, no siga los pasos para generar el par de claves. En su lugar, ejecute un comando para transferir esta clave (en el ejemplo anterior, el parámetro KeyIdentifier usa "contosobyok") del HSM local.
 
@@ -126,7 +126,7 @@ Después de extraer la clave de SLC e importarla en el HSM local, puede crear un
 
     Después de transferir la clave de HSM al Almacén de claves de Azure, estará preparado para importar los datos de configuración de AD RMS.
 
-## Parte 3: Importar los datos de configuración a Azure Information Protection
+## <a name="part-3-import-the-configuration-data-to-azure-information-protection"></a>Parte 3: Importar los datos de configuración a Azure Information Protection
 
 1.  Administrador de Azure Information Protection: en la estación de trabajo conectada a Internet y en la sesión de PowerShell, copie los nuevos archivos de datos de configuración (.xml) de los que se haya quitado la clave SLC después de ejecutar la herramienta TpdUtil.
 
@@ -146,23 +146,23 @@ Después de extraer la clave de SLC e importarla en el HSM local, puede crear un
 
 
 
-3.  Use el cmdlet [Disconnect-AadrmService](http://msdn.microsoft.com/library/windowsazure/dn629416.aspx) para desconectarse del servicio Azure Rights Management:
+3.  Use el cmdlet [Disconnect-AadrmService](https://msdn.microsoft.com/library/azure/dn629416.aspx) para desconectarse del servicio Azure Rights Management:
 
     ```
     Disconnect-AadrmService
     ```
 
     > [!NOTE]
-    > Si posteriormente necesita confirmar la clave de inquilino que Azure Information Protection usa en Azure Key Vault, use el cmdlet [Get-AadrmKeys](https://msdn.microsoft.com/library/dn629420.aspx) de Azure RMS.
+    > Si posteriormente necesita confirmar la clave de inquilino de Azure Information Protection que se usa en Azure Key Vault, use el cmdlet [Get-AadrmKeys](https://msdn.microsoft.com/library/dn629420.aspx) de Azure RMS.
 
 
-Ahora puede ir al [Paso 3. Activar su inquilino de Azure Information Protection](migrate-from-ad-rms-phase1.md#step-3-activate-your-rms-tenant).
-
-
-
+Ahora puede ir al [paso 3. Active el inquilino de Azure Information Protection](migrate-from-ad-rms-phase1.md#step-3-activate-your-azure-information-protection-tenant).
 
 
 
-<!--HONumber=Sep16_HO4-->
+
+
+
+<!--HONumber=Nov16_HO1-->
 
 

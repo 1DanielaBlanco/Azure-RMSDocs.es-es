@@ -2,20 +2,20 @@
 title: "Configuración de las condiciones para la clasificación automática y recomendada | Azure Information Protection"
 description: "Al configurar las condiciones de una etiqueta, puede asignar automáticamente la etiqueta a un documento o a un correo electrónico. También puede indicar a los usuarios que seleccionen la etiqueta que usted recomienda."
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
 translationtype: Human Translation
-ms.sourcegitcommit: ebb11148718f22c79bb49c82b9855f5e6f2a5b18
-ms.openlocfilehash: 3f7633f29760ceca0ca44fbfe5b99eb33a32c197
+ms.sourcegitcommit: d5b3f3fc473661022a4f17b6587d58a252d07d1a
+ms.openlocfilehash: bd6adab05c4f087f5441d168c3385057ce5b6355
 
 
 ---
 
-# Configuración de las condiciones para la clasificación automática y recomendada en Azure Information Protection
+# <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Configuración de las condiciones para la clasificación automática y recomendada en Azure Information Protection
 
 >*Se aplica a: Azure Information Protection*
 
@@ -44,7 +44,7 @@ Mensaje de ejemplo cuando se configura una condición para aplicar una etiqueta 
 
 En este ejemplo, el usuario puede hacer clic en **Cambiar ahora** para aplicar la etiqueta recomendada, o bien reemplazar la recomendación, cerrando la barra.
 
-## Para configurar la clasificación automática o recomendada para una etiqueta
+## <a name="to-configure-recommended-or-automatic-classification-for-a-label"></a>Para configurar la clasificación automática o recomendada para una etiqueta
 
 1. Si aún no lo ha hecho, abra una nueva ventana del explorador, inicie sesión en [Azure Portal](https://portal.azure.com) como administrador global y, después, navegue hasta la hoja **Azure Information Protection**. 
     
@@ -72,22 +72,22 @@ En este ejemplo, el usuario puede hacer clic en **Cambiar ahora** para aplicar l
 
 6. Para que los cambios estén disponibles para los usuarios, en la hoja **Azure Information Protection**, haga clic en **Publicar**.
 
-## Información sobre las condiciones integradas
+## <a name="information-about-the-builtin-conditions"></a>Información sobre las condiciones integradas
 
 Durante el período de versión preliminar, puede seleccionar las siguientes condiciones:
 
 - [Código SWIFT](#swift-code )
 
-- [Número de la tarjeta de crédito](#credit-card-number )
+- [Número de tarjeta de crédito](#credit-card-number )
 
 - [Número de enrutamiento ABA](#aba-routing-number )
 
-- [Número de la Seguridad Social (SSN) de EE. UU.](#usa-social-security-number-ssn)
+- [Número del seguro social (N.º de SS) de EE. UU.](#usa-social-security-number-ssn)
 
 - [Número de cuenta bancaria internacional (IBAN)](#international-banking-account-number-iban)
 
 
-### Código SWIFT
+### <a name="swift-code"></a>Código SWIFT
 
 Busque coincidencia con este tipo de información cuando el contenido incluya lo siguiente:  
 
@@ -113,7 +113,7 @@ Ejemplos para prueba:
 ----
 
 
-### Número de la tarjeta de crédito
+### <a name="credit-card-number"></a>Número de la tarjeta de crédito
 
 Busque coincidencia con este tipo de información cuando el contenido incluya lo siguiente:  
 
@@ -136,7 +136,7 @@ Ejemplos para prueba:
 
 ----
 
-### Número de enrutamiento ABA
+### <a name="aba-routing-number"></a>Número de enrutamiento ABA
 
 Busque coincidencia con este tipo de información cuando el contenido incluya lo siguiente:  
 
@@ -173,7 +173,7 @@ Ejemplos para prueba:
 
 ----
 
-### Número de la Seguridad Social (SSN) de EE. UU.
+### <a name="usa-social-security-number-ssn"></a>Número de la Seguridad Social (SSN) de EE. UU.
 
 Busque coincidencia con este tipo de información cuando el contenido incluya lo siguiente:  
 
@@ -192,14 +192,14 @@ Busque coincidencia con este tipo de información cuando el contenido incluya lo
 
 Ejemplos para prueba:
 
-- **SSN 123-45-6789**
+- **N.º de SS 123-45-6789**
 
 - **N.º SS 123456789** 
 
 
 ----
 
-### Número de cuenta bancaria internacional (IBAN)
+### <a name="international-banking-account-number-iban"></a>Número de cuenta bancaria internacional (IBAN)
 
 Busque coincidencia con este tipo de información cuando el contenido incluya lo siguiente:  
 
@@ -213,15 +213,15 @@ Ejemplos para prueba:
 - **GB29 NWBK 6016 1331 9268 19 IBAN**
 
 
-## Pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 
-Para más información sobre cómo configurar la directiva de Azure Information Protection, use los vínculos de la sección [Configuring your organization's policy](configure-policy.md#configuring-your-organization-s-policy) (Configuración de la directiva de la organización).  
-
-
+Para más información sobre cómo configurar la directiva de Azure Information Protection, use los vínculos de la sección [Configuring your organization's policy](configure-policy.md#configuring-your-organizations-policy) (Configuración de la directiva de la organización).  
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+
+
+<!--HONumber=Nov16_HO1-->
 
 

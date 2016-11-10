@@ -3,7 +3,7 @@ title: "Paso 2&colon; Migración entre claves protegidas por software | Azure In
 description: "Estas instrucciones forman parte de la ruta de migración de AD RMS a Azure Information Protection y solo se aplican si la clave de AD RMS está protegida por software y quiere migrar a Azure Rights Management con una clave de inquilino protegida por software."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,30 +12,30 @@ ms.assetid: 81a5cf4f-c1f3-44a9-ad42-66e95f33ed27
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 931642ea9070a7581b428bcd04756048673fe3c0
-ms.openlocfilehash: e6bffd31e7f198a767531fb343b8146246078004
+ms.sourcegitcommit: 1fcebaaa2fbe1479e83c232d51013341977796fc
+ms.openlocfilehash: 4a5e45bfef8e39d147410330b0d6b658c8d52474
 
 
 ---
 
 
-# Paso 2: Migración entre claves protegidas por software
+# <a name="step-2-softwareprotected-key-to-softwareprotected-key-migration"></a>Paso 2: Migración entre claves protegidas por software
 
 >*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Office 365*
 
 
 Estas instrucciones forman parte de la [ruta de migración de AD RMS a Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md) y solo se aplican si la clave de AD RMS está protegida por software y quiere migrar a Azure Rights Management con una clave de inquilino protegida por software. 
 
-Si no es el escenario de configuración elegido, vuelva al [paso 2. Exporte los datos de configuración de AD RMS, impórtelos en Azure RMS](migrate-from-ad-rms-phase1.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-rms) y elija una configuración distinta.
+Si no es el escenario de configuración elegido, vuelva al [paso 2. Exporte los datos de configuración de AD RMS, impórtelos en Azure RMS](migrate-from-ad-rms-phase1.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-information-protection) y elija una configuración distinta.
 
 Siga el procedimiento siguiente para importar la configuración de AD RMS en Azure Information Protection, para generar la clave de inquilino de Azure Information Protection administrada por Microsoft.
 
-## Para importar los datos de configuración en Azure Information Protection
+## <a name="to-import-the-configuration-data-to-azure-information-protection"></a>Para importar los datos de configuración en Azure Information Protection
 
 1.  En una estación de trabajo conectada a Internet, descargue e instale el módulo de Windows PowerShell para Azure Rights Management (versión mínima 2.5.0.0), donde se incluye el cmdlet [Import-AadrmTpd](http://msdn.microsoft.com/library/azure/dn857523.aspx). El servicio Azure Rights Management (Azure RMS) proporciona el servicio de protección para Azure Information Protection.
 
     > [!TIP]
-    > Si ya ha descargado e instalado el módulo anteriormente, compruebe el número de versión. Para ello, ejecute: `(Get-Module aadrm -ListAvailable).Version`
+    > Si ya descargó e instaló el módulo, compruebe el número de versión. Para ello, ejecute: `(Get-Module aadrm -ListAvailable).Version`
 
     Para obtener instrucciones de instalación, consulte [Instalación de Windows PowerShell para Azure Rights Management](../deploy-use/install-powershell.md).
 
@@ -64,12 +64,12 @@ Siga el procedimiento siguiente para importar la configuración de AD RMS en Azu
     ```
 
 
-Ahora puede ir al [paso 3. Active el inquilino de Azure Information Protection](migrate-from-ad-rms-phase1.md#step-3-activate-your-rms-tenant).
+Ahora puede ir al [paso 3. Active el inquilino de Azure Information Protection](migrate-from-ad-rms-phase1.md#step-3-activate-your-azure-information-protection-tenant).
 
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

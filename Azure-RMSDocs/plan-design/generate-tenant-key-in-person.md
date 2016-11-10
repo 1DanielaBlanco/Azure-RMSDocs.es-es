@@ -18,13 +18,13 @@ ms.openlocfilehash: 4f8b32fa7961b3d59911cc279ac30a7c497deb5f
 
 ---
 
-# Generar y transferir su clave de inquilino en persona: CONTENIDO RETIRADO
+# <a name="generate-and-transfer-your-tenant-key-in-person-retired-content"></a>Generar y transferir su clave de inquilino en persona: CONTENIDO RETIRADO
 
 >*Se aplica a: Azure Rights Management, Office 365*
 
 La información que aparece en este artículo se ha retirado porque ya no es pertinente, ya que ahora Azure Rights Management usa el Almacén de claves de Azure para las claves de inquilino administradas por el cliente (que también se conoce como BYOK, o "aporte su propia clave"). 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 
