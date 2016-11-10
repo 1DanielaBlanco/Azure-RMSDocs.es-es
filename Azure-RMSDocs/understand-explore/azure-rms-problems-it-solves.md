@@ -3,7 +3,7 @@ title: "Qué problemas resuelve Azure RMS | Azure Information Protection"
 description: "Identifique problemas o requisitos de protección de la información que puede tener su organización y obtenga información sobre cómo la tecnología de Azure RMS puede abordarlos."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,14 +12,14 @@ ms.assetid: b551c62d-5ac6-4359-85b3-90693e77b37f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2c0f3b58a2f1b5233c262bb67cc4a485557ba997
-ms.openlocfilehash: 03ada045291115a6cc47353fed36ed9db7a23668
+ms.sourcegitcommit: f1fff17f76361f8236974c6aeb21ed317c7d9883
+ms.openlocfilehash: fda0a8bbbcc0a4b09cb7098d719bb10e431e1622
 
 
 ---
 
 
-# ¿Qué problemas resuelve Azure RMS?
+# <a name="what-problems-does-azure-rms-solve"></a>¿Qué problemas resuelve Azure RMS?
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
@@ -29,7 +29,7 @@ Azure RMS es la tecnología de protección que usa [Azure Information Protection
 
 |Requisito o problema|Resuelto por Azure RMS|
 |--------------------------|-----------------------|
-|Proteger todos los tipos de archivos|√ En implementaciones anteriores de Rights Management, solo se podían proteger los archivos de Office, con la protección nativa. Ahora, la [protección genérica](../rms-client/sharing-app-dialog-box.md#what-s-the-difference-between-generic-protection-and-built-in-native-protection) significa que se admiten todos los tipos de archivos.|
+|Proteger todos los tipos de archivos|√ En implementaciones anteriores de Rights Management, solo se podían proteger los archivos de Office, con la protección nativa. Ahora, la [protección genérica](../rms-client/sharing-app-dialog-box.md#whats-the-difference-between-generic-protection-and-built-in-native-protection) significa que se admiten todos los tipos de archivos.|
 |Proteger los archivos en cualquier lugar|√ Cuando un archivo se guarda en una ubicación ([proteger en contexto](../rms-client/sharing-app-protect-in-place.md)), la protección permanece con el archivo, aunque se copia en almacenamiento que no se encuentra bajo el control de TI, como un servicio de almacenamiento en la nube.|
 |Compartir archivos de manera segura por correo electrónico|√ Cuando un archivo se comparte por correo electrónico ([uso compartido protegido](../rms-client/sharing-app-protect-by-email.md)), el archivo se protege como datos adjuntos de un mensaje de correo electrónico, con instrucciones sobre cómo abrir los datos adjuntos protegidos. El texto del mensaje de correo electrónico no está cifrado, por lo que el destinatario siempre puede leer estas instrucciones. Sin embargo, dado que el documento adjunto está protegido, solo podrán abrirlo los usuarios autorizados, aunque se reenvíe el documento o mensaje de correo electrónico a otras personas.|
 |Auditoría y supervisión|√ Puede [auditar y supervisar el uso](../deploy-use/log-analyze-usage.md) de sus archivos protegidos, incluso después de que estos archivos salgan de los límites de su organización.<br /><br />Por ejemplo, puede trabajar para Contoso, Ltd. Está trabajando en un proyecto conjunto con 3 empleados de Fabrikam, Inc. Envía por correo electrónico a estos 3 empleados un documento que protege y restringe a solo lectura. La auditoría de Azure RMS puede proporcionar la siguiente información:<br /><br />- Si las personas que ha especificado en Fabrikam han abierto el documento y cuándo.<br /><br />- Si otras personas que no ha especificado han intentado (sin éxito) abrir el documento, quizá porque se reenvió o se guardó en una ubicación compartida a la que otros usuarios podían acceder.<br /><br />- Si cualquiera de las personas especificadas ha intentado (y no ha logrado) imprimir o cambiar el documento.|
@@ -44,7 +44,7 @@ Azure RMS es la tecnología de protección que usa [Azure Information Protection
 > [!TIP]
 > Si está familiarizado con la versión local de Rights Management, Active Directory Rights Management Services (AD RMS), puede que esté interesado en la tabla de comparación de [Comparación entre Azure Rights Management y AD RMS](compare-azure-rms-ad-rms.md).
 
-## Requisitos de seguridad, normativos y regulatorios
+## <a name="security-compliance-and-regulatory-requirements"></a>Requisitos de seguridad, normativos y regulatorios
 Azure RMS admite los siguientes requisitos de seguridad, normativos y regulatorios:
 
 √ Uso de criptografía estándar del sector y admite FIPS 140-2. Para más información, consulte [Controles criptográficos usados por Azure RMS: Longitudes de clave y algoritmos](how-does-it-work.md#cryptographic-controls-used-by-azure-rms-algorithms-and-key-lengths).
@@ -67,13 +67,13 @@ Azure RMS admite los siguientes requisitos de seguridad, normativos y regulatori
 
 Para obtener más información sobre estas certificaciones externas, consulte el [Centro de confianza de Azure](http://azure.microsoft.com/support/trust-center/compliance/).
 
-## Pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 
 Para ver el aspecto de Azure RMS para los administradores y usuarios, consulte [Azure RMS en acción](what-admins-users-see.md).
 
 Si le interesa información más técnica sobre el funcionamiento de Azure RMS, consulte [¿Cómo funciona Azure RMS?](how-does-it-work.md) 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

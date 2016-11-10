@@ -3,7 +3,7 @@ title: Ver y usar los archivos protegidos por Rights Management | Azure Informat
 description: "Instrucciones para ver y usar un archivo protegido, que requiere que tenga la aplicación Rights Management (RMS) sharing instalada."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
-ms.openlocfilehash: 3f906815da2acd8f52bd742306d9936a71229c97
+ms.sourcegitcommit: 94a8729e7c7e5bb438ac2bd48789a522c8de8cc4
+ms.openlocfilehash: db8d6a9c5959139ee76f022a5cee997bab24e6c9
 
 
 ---
@@ -40,7 +40,7 @@ Usando el Explorador de archivos o el mensaje de correo electrónico que contien
 Si ve dos versiones del archivo pero con extensiones de nombre de archivo diferentes, abra el archivo que tiene una extensión de archivo .ppdf únicamente si el otro archivo no se abre. Si tampoco puede abrir la versión .ppdf, instale primero la [aplicación RMS sharing](install-sharing-app.md), que sabe cómo abrir los archivos que tienen una extensión de nombre de archivo .ppdf.
 
 > [!NOTE]
-> Para obtener más información, vea [¿Qué es el archivo .ppdf que se crea automáticamente?](sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created)
+> Para obtener más información, consulte [¿Qué es el archivo .ppdf que se crea automáticamente?](sharing-app-dialog-box.md#whats-the-ppdf-file-thats-automatically-created)
 
 La manera en que se abre el archivo depende de cómo se protegió, lo que se puede saber por la extensión de nombre de archivo. En cualquier caso, el proceso de abrir el archivo podría auditarse, y sigue auditándose mientras esté protegido. Además, si el archivo se envió como un archivo adjunto por correo electrónico, es posible que el remitente reciba una notificación por correo electrónico cada vez que abra el archivo.
 
@@ -107,6 +107,6 @@ Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

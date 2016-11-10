@@ -2,20 +2,20 @@
 title: "Cómo configurar una etiqueta para marcas visuales | Azure Information Protection"
 description: "Cuando se asigna una etiqueta a un documento o a un mensaje de correo electrónico, puede seleccionar varias opciones para hacer visible la clasificación elegida. Estos marcadores visuales son un encabezado, un pie de página y una marca de agua."
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
 translationtype: Human Translation
-ms.sourcegitcommit: ebb11148718f22c79bb49c82b9855f5e6f2a5b18
-ms.openlocfilehash: 5b00975e3e435ec3ab122c3a015a3daf93db3daf
+ms.sourcegitcommit: d5b3f3fc473661022a4f17b6587d58a252d07d1a
+ms.openlocfilehash: eca90185e6225d3f55f979f66f8225d661fe59cd
 
 
 ---
 
-# Configuración de una etiqueta para marcas visuales de Azure Information Protection
+# <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Configuración de una etiqueta para marcas visuales de Azure Information Protection
 
 >*Se aplica a: Azure Information Protection*
 
@@ -53,13 +53,13 @@ Utilice las siguientes instrucciones para configurar las marcas visuales para un
 
 4. Para que los cambios estén disponibles para los usuarios, en la hoja **Azure Information Protection**, haga clic en **Publicar**.
 
-## Uso de variables en la cadena de texto
+## <a name="using-variables-in-the-text-string"></a>Uso de variables en la cadena de texto
 
 Puede usar las siguientes variables en la cadena de texto del encabezado, del pie de página o de la marca de agua:
 
 - `${Item.Label}` para la etiqueta seleccionada. Por ejemplo: interno
 
-- `${Item.Name}` para el asunto de correo electrónico o nombre de archivo. Por ejemplo: VentasJulio.docx
+- `${Item.Name}` para el nombre de archivo o el asunto de correo electrónico. Por ejemplo: VentasJulio.docx
 
 - `${Item.Location}` para la ruta de acceso y el nombre de archivo de documentos, así como el asunto de los correos electrónicos. Por ejemplo: \\\Ventas\2016\T3\InformeJulio.docx
 
@@ -71,14 +71,14 @@ Puede usar las siguientes variables en la cadena de texto del encabezado, del pi
     
 Ejemplo: si especifica la cadena `Document: ${item.name}  Classification: ${item.label}` en el pie de página de la etiqueta Secreto, el texto de pie de página aplicado a un documento denominado proyecto.docx será **Documento: proyecto.docx Clasificación: secreto**.
 
-## Pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 
-Para más información sobre cómo configurar la directiva de Azure Information Protection, use los vínculos de la sección [Configuring your organization's policy](configure-policy.md#configuring-your-organization-s-policy) (Configuración de la directiva de la organización).  
-
-
+Para más información sobre cómo configurar la directiva de Azure Information Protection, use los vínculos de la sección [Configuring your organization's policy](configure-policy.md#configuring-your-organizations-policy) (Configuración de la directiva de la organización).  
 
 
 
-<!--HONumber=Sep16_HO4-->
+
+
+<!--HONumber=Nov16_HO1-->
 
 

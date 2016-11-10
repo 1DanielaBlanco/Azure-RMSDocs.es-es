@@ -3,7 +3,7 @@ title: "Aplicación RMS sharing para Windows y plataformas móviles | Azure Info
 description: "Cómo la aplicación RMS sharing admite Azure RMS como una aplicación gratuita y descargable que es necesaria para ofrecer compatibilidad con Office 2010, pero también se recomienda para equipos con Windows, equipos con Mac y dispositivos móviles."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,18 +12,18 @@ ms.assetid: 1da6e372-2b3f-4af7-80f7-6b9073dff7f5
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 55fd22b60ad87dadce0ffb89bb658e949670f728
-ms.openlocfilehash: e4b9a13ba29820cd7a19e0b8509966f5d8195353
+ms.sourcegitcommit: 18a222c7927ecc4394266518619941b8a4b6499f
+ms.openlocfilehash: 751422489ec4eec074764ff0417640b22a394325
 
 
 ---
 
 
-# Aplicación de uso compartido RMS para Windows y plataformas móviles
+# <a name="rms-sharing-application-for-windows-and-mobile-platforms"></a>Aplicación de uso compartido RMS para Windows y plataformas móviles
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
-La aplicación RMS sharing es una aplicación gratuita y descargable que es necesaria para admitir Office 2010, pero también se recomienda para equipos con Windows, equipos con Mac y dispositivos móviles. Una de sus ventajas es que puede aplicar protección genérica en aplicaciones y archivos que de forma nativa no son compatibles con el servicio Azure Rights Management, lo que significa que se pueden proteger todos los archivos. Para más información sobre los distintos niveles de protección, consulte la sección [Niveles de protección: nativa y genérica](../rms-client/sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) en la [Guía del administrador de la aplicación Microsoft Rights Management sharing](../rms-client/sharing-app-admin-guide.md).
+La aplicación RMS sharing es una aplicación gratuita y descargable que es necesaria para admitir Office 2010, pero también se recomienda para equipos con Windows, equipos con Mac y dispositivos móviles. Una de sus ventajas es que puede aplicar protección genérica en aplicaciones y archivos que de forma nativa no son compatibles con el servicio Azure Rights Management, lo que significa que se pueden proteger todos los archivos. Para más información sobre los distintos niveles de protección, consulte la sección [Niveles de protección: nativa y genérica](../rms-client/sharing-app-admin-guide-technical.md#levels-of-protection--native-and-generic) en la [Guía del administrador de la aplicación Microsoft Rights Management sharing](../rms-client/sharing-app-admin-guide.md).
 
 Cuando los usuarios protegen sus archivos mediante la aplicación de uso compartido de RMS, también pueden realizar el seguimiento de los documentos que han protegido y, si es necesario, revocar el acceso a ellos. Para ello, pueden utilizar el [sitio de seguimiento de documentos](http://go.microsoft.com/fwlink/?LinkId=529562).
 
@@ -39,9 +39,9 @@ Para ordenadores con Windows, la aplicación de uso compartido RMS se integra de
 
 Aunque la aplicación para uso compartido de RMS para Windows puede descargarse e instalarse en un solo equipo desde la [página de Microsoft Rights Management](http://go.microsoft.com/fwlink/?LinkId=303970), también admite una implementación empresarial para la instalación silenciosa y la configuración personalizada. Para obtener más información, vea los recursos siguientes:
 
--   [Guía del administrador de la aplicación de uso compartido de Rights Management](../rms-client/sharing-app-admin-guide.md)
+-   [Guía del administrador de la aplicación Rights Management sharing](../rms-client/sharing-app-admin-guide.md)
 
--   [Guía de usuario de la aplicación de uso compartido Rights Management](../rms-client/sharing-app-user-guide.md)
+-   [Guía de usuario de la aplicación Rights Management sharing](../rms-client/sharing-app-user-guide.md)
 
 La aplicación de uso compartido RMS para dispositivos móviles admite los dispositivos móviles más usados, como iPad e iPhone, Android, Windows Phone y Windows RT. Los usuarios pueden descargar esta aplicación desde la tienda pertinente, y se pueden encontrar enlaces a estas desde la [página de Rights Management de Microsoft](http://go.microsoft.com/fwlink/?LinkId=303970).
 
@@ -52,12 +52,12 @@ La aplicación de uso compartido RMS para dispositivos móviles admite los dispo
 -   Implemente y administre la aplicación para dispositivos iOS y Android no inscritos por Intune.
 
 
-## Pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 Para conocer otras aplicaciones y servicios compatibles con el servicio Azure Rights Management de Azure Information Protection, vea [Compatibilidad de aplicaciones con el servicio Azure Rights Management](applications-support.md).
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 
