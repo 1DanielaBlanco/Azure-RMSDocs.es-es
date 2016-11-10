@@ -19,15 +19,15 @@ ms.openlocfilehash: 8c5b7d17b5feffa07028498e8d7f201b25626478
 
 
 ---
-# Introducción
+# <a name="getting-started"></a>Introducción
 
 La plataforma Rights Management Services SDK 2.1 permite a los desarrolladores crear aplicaciones que aprovechan la protección de la información de RMS a través de un servidor RMS o Azure RMS. La plataforma controla prácticas de seguridad complejas como la administración de claves, el procesamiento de cifrado y descifrado, y ofrece una API simplificada para el desarrollo sencillo de aplicaciones.
 
-## Introducción a RMS SDK 2.1
+## <a name="get-started-with-rms-sdk-21"></a>Introducción a RMS SDK 2.1
 
 Este tema le guiará a través del proceso de configuración y ejecución de su aplicación con derechos habilitados en un entorno de prueba. Los temas siguientes describen cómo configurar el entorno de desarrollo y se muestran de forma que sugieren un orden en el que podría realizar las tareas.
 
-## En esta sección
+## <a name="in-this-sections"></a>En esta sección
 
 | Tema | Descripción |
 |-------|-------------|
@@ -47,7 +47,7 @@ Pruebe a utilizar RMS SDK 2.1 siguiendo las guías de estos temas:
 - [Prueba de la aplicación](how-to-set-up-your-test-environment.md)
 - [Implementación en el entorno de producción](deploying-your-application.md)
 
-### ¿Por qué usar RMS SDK 2.1 para proteger el contenido?
+### <a name="why-use-rms-sdk-21-for-protecting-your-content"></a>¿Por qué usar RMS SDK 2.1 para proteger el contenido?
 
 Para los desarrolladores que deseen agregar compatibilidad con RMS a sus aplicaciones nuevas y existentes, el RMS SDK 2.1 ayuda a que sea más fácil:
 
@@ -59,13 +59,13 @@ Para los desarrolladores que deseen agregar compatibilidad con RMS a sus aplicac
 
 El RMS SDK 2.1 es compatible con diversas plataformas de cliente y servidor importantes. Para más información, vea [Supported platforms](supported-platforms.md) (Plataformas admitidas).
 
-## Principios básicos
+## <a name="core-principles"></a>Principios básicos
 
 **Simplicidad**: Se han analizado patrones de uso y comentarios para el AD RMS SDK 1.0 y esos datos se han utilizado para simplificar o automatizar las tareas de programación más difíciles. Las aplicaciones de RMS creadas mediante el RMS SDK 2.1 normalmente requieren entre 5 y 10 veces menos líneas de código de RMS que las aplicaciones de RMS escritas mediante AD RMS SDK 1.0.
 **Escribir una vez**: Las aplicaciones RMS SDK 2.1 no necesitan un cambio en el código o una recompilación para funcionar con las características de RMS más recientes. Las nuevas características de RMS pasan a estar disponibles en la aplicación existente cuando se agregan al servidor RMS.
 **Coherencia**: RMS SDK 2.1 facilita la escritura de aplicaciones que respetan constantemente distintas configuraciones de RMS. También reduce considerablemente la cantidad de interfaz de usuario de RMS, ya que el desarrollador de la aplicación, necesita crear, fomentando una apariencia coherente y reduciendo la necesidad de educación del usuario.
 
-## Temas relacionados
+## <a name="related-topics"></a>Temas relacionados
 
 * [Guía de desarrolladores de RMS](developers-guide.md)
 * [Rincón del desarrollador de AD RMS](http://blogs.msdn.com/b/rms/)
@@ -76,6 +76,6 @@ El RMS SDK 2.1 es compatible con diversas plataformas de cliente y servidor impo
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 

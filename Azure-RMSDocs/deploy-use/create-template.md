@@ -3,7 +3,7 @@ title: "Creación, configuración y publicación de una plantilla personalizada 
 description: "Instrucciones para crear y administrar plantillas personalizadas en el Portal de Azure clásico. Las plantillas facilitan a los usuarios finales y otros administradores la aplicación de las directivas apropiadas que protegen documentos y correos electrónicos."
 author: cabailey
 manager: mbaldwin
-ms.date: 10/03/2016
+ms.date: 11/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,25 +12,25 @@ ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d205e63bdd8819177493837296259c5400a76503
-ms.openlocfilehash: 906bc1e97947cf32b102fdf484b86bc30b9a383d
+ms.sourcegitcommit: 0046023125fe339ed408edf47c59e36708b01783
+ms.openlocfilehash: 00661951513647add0c638e0eeb9e9fe38fa2d8d
 
 
 ---
 
 
-# Creación, configuración y publicación de una plantilla personalizada
+# <a name="create-configure-and-publish-a-custom-template"></a>Creación, configuración y publicación de una plantilla personalizada
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
 
 En el Portal de Azure clásico puede crear y administrar plantillas personalizada. Puede hacerlo directamente desde el Portal de Azure clásico o puede iniciar sesión en el Centro de administración de Office 365 y elegir **Características avanzadas** para Rights Management, lo que le redirigirá al Portal de Azure clásico.
 
-Debe ser administrador global para crear y administrar plantillas en el Portal de Azure clásico. Si ha asignado el rol de administrador global del servicio Azure Rights Management a otros usuarios, también podrán crear y administrar plantillas, aunque deberán usar [PowerShell](configure-templates-with-powershell.md). Para obtener más información, vea [¿Debe ser un administrador global para configurar Azure RMS o puedo delegar a otros administradores?](../get-started/faqs.md#do-you-need-to-be-a-global-admin-to-configure-azure-rms-or-can-i-delegate-to-other-administrators) 
+Debe ser administrador global para crear y administrar plantillas en el Portal de Azure clásico. Si ha asignado el rol de administrador global del servicio Azure Rights Management a otros usuarios, también podrán crear y administrar plantillas, aunque deberán usar [PowerShell](configure-templates-with-powershell.md). Para obtener más información, vea [¿Debe ser un administrador global para configurar Azure RMS o puedo delegar a otros administradores?](../get-started/faqs-rms.md#do-you-need-to-be-a-global-admin-to-configure-azure-rms-or-can-i-delegate-to-other-administrators) 
 
 Usa los procedimientos siguientes para crear, configurar y publicar plantillas personalizadas para Rights Management.
 
-## Para crear una plantilla personalizada
+## <a name="to-create-a-custom-template"></a>Para crear una plantilla personalizada
 
 1.  En función de que inicie sesión en el Centro de administración de Office 365 o en el Portal de Azure clásico, emplee uno de los siguientes procedimientos:
 
@@ -76,7 +76,7 @@ Usa los procedimientos siguientes para crear, configurar y publicar plantillas p
 
 4. En la página de inicio rápido **Empiece a trabajar con Rights Management** , haga clic en **Administrar sus plantillas de directivas de permisos**. Verá la plantilla recién creada agregada a la lista de plantillas, con el estado **Archivada**. En esta fase, la plantilla se ha creado pero no se ha configurado, y no es visible para los usuarios.
 
-## Para configurar y publicar una plantilla personalizada
+## <a name="to-configure-and-publish-a-custom-template"></a>Para configurar y publicar una plantilla personalizada
 
 1.  Seleccione la plantilla recién creada en la página **PLANTILLAS** del Portal de Azure clásico.
 
@@ -142,7 +142,7 @@ Usa los procedimientos siguientes para crear, configurar y publicar plantillas p
 
     |Setting|Más información|
     |-----------|--------------------|
-    |**expiración de contenido**|Define una fecha o un número de días para esta plantilla cuando los archivos que están protegidos por dicha plantilla no deben abrirse. Puedes especificar una fecha o un número de días a partir del momento en que se aplica la protección al archivo.<br /><br />Cuando se especifica una fecha, entra en vigor a medianoche en su zona horaria actual.|
+    |**expiración del contenido**|Define una fecha o un número de días para esta plantilla cuando los archivos que están protegidos por dicha plantilla no deben abrirse. Puedes especificar una fecha o un número de días a partir del momento en que se aplica la protección al archivo.<br /><br />Cuando se especifica una fecha, entra en vigor a medianoche en su zona horaria actual.|
     |**acceso sin conexión**|Use esta configuración para equilibrar los requisitos de seguridad que tenga frente al requisito de que los usuarios deben poder abrir archivos protegidos cuando no disponen de conexión a Internet.<br /><br />Si especificas que el contenido no está disponible sin conexión a Internet o que el contenido está disponible solamente durante un número concreto de días, cuando se supere ese umbral, los usuarios deberán volver a autenticarse y se registrará su acceso. Cuando esto sucede, si sus credenciales no se han almacenado en la memoria caché, se pedirá a los usuarios que inicien sesión antes de que puedan abrir el archivo.<br /><br />Además de la reautenticación, también se vuelve a evaluar la directiva y la pertenencia al grupos de usuarios. De modo que los usuarios podrían experimentar diferentes resultados de acceso para el mismo archivo si se producen cambios en la directiva o la pertenencia al grupo desde la última vez que se accedió al archivo.|
 
 10. Cuando esté seguro de que la plantilla está configurada correctamente para los usuarios, haga clic en **PUBLICAR** para que la plantilla esté visible para los usuarios y elija **GUARDAR**.
@@ -164,10 +164,10 @@ Para realizar cualquier cambio en tu plantilla, selecciónala y, a continuación
 > [!WARNING]
 > Cuando realices cambios en una plantilla que has guardado antes, los clientes no verán dichos cambios en la plantilla hasta que se actualicen en sus equipos. Para más información, consulte [Actualización de plantillas para usuarios](refresh-templates.md).
 
-## Consulte también
+## <a name="see-also"></a>Véase también
 [Configuración de plantillas personalizadas para Azure Rights Management](configure-custom-templates.md)
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

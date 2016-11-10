@@ -19,7 +19,7 @@ ms.openlocfilehash: a823d79a9305569962ee165b6eadf1d5384c0c0b
 ---
 
 
-# Actualización de plantillas para usuarios
+# <a name="refreshing-templates-for-users"></a>Actualización de plantillas para usuarios
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
@@ -33,7 +33,7 @@ Cuando usa el servicio Azure Rights Management de Azure Information Protection, 
 |Office 2010|Se actualiza cuando los usuarios inician sesión.<br /><br />Para forzar una actualización, pide u obliga a los usuarios a cerrar sesión y volver a iniciar la sesión. O bien, vea la sección siguiente: [Solamente para Office 2010: Cómo forzar una actualización de una plantilla personalizada que se ha cambiado](#office-2010-only-how-to-force-a-refresh-for-a-changed-custom-template).|
 Para los dispositivos móviles que usan la aplicación de uso compartido de RMS, se descargan automáticamente plantillas (y se actualizan si es necesario) sin que sea precisa una nueva configuración.
 
-## Solamente Exchange Online: Cómo configurar Exchange para descargar las plantillas personalizadas que se han cambiado
+## <a name="exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates"></a>Solamente Exchange Online: Cómo configurar Exchange para descargar las plantillas personalizadas que se han cambiado
 Si ya has configurado Information Rights Management (IRM) para Exchange Online, no se descargarán plantillas personalizadas para usuarios hasta que realices los cambios siguientes mediante Windows PowerShell en Exchange Online.
 
 > [!NOTE]
@@ -41,7 +41,7 @@ Si ya has configurado Information Rights Management (IRM) para Exchange Online, 
 
 Debes efectuar este procedimiento cada vez que cambies una plantilla.
 
-### Para actualizar plantillas para Exchange Online
+### <a name="to-update-templates-for-exchange-online"></a>Para actualizar plantillas para Exchange Online
 
 1.  Conéctese al servicio mediante Windows PowerShell en Exchange Online:
 
@@ -94,13 +94,13 @@ Para que los usuarios ya no vean estas plantillas, conéctese al servicio median
 Set-RMSTemplate -Identity "<name or GUID of the template>" -Type Archived
 ```
 
-## Office 2016, Office 2013 y la aplicación RMS sharing para Windows: Cómo forzar una actualización de una plantilla personalizada que se ha cambiado
+## <a name="office-2016-office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template"></a>Office 2016, Office 2013 y la aplicación RMS sharing para Windows: Cómo forzar una actualización de una plantilla personalizada que se ha cambiado
 Si modifica el Registro de los equipos que ejecutan Office 2016, Office 2013 o la aplicación Rights Management (RMS) sharing, puede cambiar la programación automática para que las plantillas cambiadas se actualicen en los equipos con más frecuencia que la indicada en sus valores predeterminados. También puede forzar una actualización inmediata eliminando los datos existentes en un valor del Registro.
 
 > [!WARNING]
 > Si usas el Editor del Registro de forma incorrecta, es posible que ocasiones problemas serios que puedan hacer preciso que reinstales el sistema operativo. Microsoft no puede garantizar que pueda resolver problemas ocasionados por un uso incorrecto del Editor del Registro. Usa el Editor del Registro bajo tu propia responsabilidad.
 
-### Para cambiar la programación automática
+### <a name="to-change-the-automatic-schedule"></a>Para cambiar la programación automática
 
 1.  Con un editor del Registro, cree y establezca uno de los valores del Registro siguientes:
 
@@ -124,7 +124,7 @@ Si modifica el Registro de los equipos que ejecutan Office 2016, Office 2013 o l
 
 2.  Si desea forzar una actualización inmediata de las plantillas, vaya al procedimiento siguiente. En caso contrario, reinicie ahora las aplicaciones de Office y las instancias del Explorador de archivos.
 
-### Para forzar una actualización inmediata
+### <a name="to-force-an-immediate-refresh"></a>Para forzar una actualización inmediata
 
 1.  Con un editor del Registro, elimine los datos del valor **LastUpdatedTime** . Por ejemplo, en los datos puede aparecer **2015-04-20T15:52**. Elimine 2015-04-20T15:52 para que no se muestre ningún dato. Use la información siguiente para localizar la ruta de acceso del Registro y eliminar estos datos del valor del Registro.
 
@@ -149,13 +149,13 @@ Si modifica el Registro de los equipos que ejecutan Office 2016, Office 2013 o l
 
 3.  Reinicie las aplicaciones de Office y las instancias del Explorador de archivos.
 
-## Solamente para Office 2010: Cómo forzar una actualización de una plantilla personalizada que se ha cambiado
+## <a name="office-2010-only-how-to-force-a-refresh-for-a-changed-custom-template"></a>Solamente para Office 2010: Cómo forzar una actualización de una plantilla personalizada que se ha cambiado
 Si modifica el Registro de los equipos que ejecutan Office 2010, puede establecer un valor para que las plantillas cambiadas se actualicen en los equipos sin esperar a que los usuarios cierren la sesión y vuelvan a iniciarla. También puede forzar una actualización inmediata eliminando los datos existentes en un valor del Registro.
 
 > [!WARNING]
 > Si usas el Editor del Registro de forma incorrecta, es posible que ocasiones problemas serios que puedan hacer preciso que reinstales el sistema operativo. Microsoft no puede garantizar que pueda resolver problemas ocasionados por un uso incorrecto del Editor del Registro. Usa el Editor del Registro bajo tu propia responsabilidad.
 
-### Para cambiar la frecuencia de actualización
+### <a name="to-change-the-update-frequency"></a>Para cambiar la frecuencia de actualización
 
 1.  Con un editor del Registro, cree un nuevo valor del Registro denominado **UpdateFrequency** y defina un valor entero para los datos, que especifique la frecuencia en días para descargar los cambios en una plantilla descargada. Use la tabla siguiente para localizar la ruta de acceso del Registro y crear este nuevo valor del Registro.
 
@@ -167,7 +167,7 @@ Si modifica el Registro de los equipos que ejecutan Office 2010, puede establece
 
 2.  Si desea forzar una actualización inmediata de las plantillas, vaya al procedimiento siguiente. En caso contrario, reinicie ahora las aplicaciones de Office.
 
-### Para forzar una actualización inmediata
+### <a name="to-force-an-immediate-refresh"></a>Para forzar una actualización inmediata
 
 1.  Con un editor del Registro, elimine los datos del valor **LastUpdatedTime** . Por ejemplo, en los datos puede aparecer **2015-04-20T15:52**. Elimine 2015-04-20T15:52 para que no se muestre ningún dato. Use la tabla siguiente para localizar la ruta de acceso del Registro y eliminar estos datos del valor del Registro.
 
@@ -182,10 +182,10 @@ Si modifica el Registro de los equipos que ejecutan Office 2010, puede establece
 
 3.  Reinicie las aplicaciones de Office.
 
-## Véase también
+## <a name="see-also"></a>Consulte también
 [Configuración de plantillas personalizadas para Azure Rights Management](configure-custom-templates.md)
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

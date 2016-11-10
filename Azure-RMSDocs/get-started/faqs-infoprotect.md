@@ -3,7 +3,7 @@ title: "Preguntas más frecuentes sobre la clasificación y el etiquetado | Azur
 description: "¿Tiene alguna pregunta sobre la versión preliminar de Azure Information Protection? Vea si se ha resuelto aquí."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ce4fc256cf80fdd2e4a8212e2f64ffc6ca6a3964
-ms.openlocfilehash: 9b341a53a85242839d737bc36c90a8f94637bae1
+ms.sourcegitcommit: b23466ee412f3e705f49083c11c2099c0cdcd2d6
+ms.openlocfilehash: b9e0a154b67bc54b7868021fb46f7d52c8b7e3bd
 
 
 ---
@@ -34,13 +34,17 @@ Pruebe nuestro tutorial de inicio rápido para ver esto en funcionamiento en uno
 
 La versión actual tiene las limitaciones siguientes. Busque anuncios en el [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection) (Blog de seguridad y movilidad empresarial) y en nuestro [sitio de Yammer](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all) para saber cuándo estarán disponibles las funcionalidades y características adicionales:
 
-- No existe un registro centralizado para la clasificación y el etiquetado.
+- Solo puede aplicar etiquetas a los tipos de archivo de Office y a los mensajes de correo electrónico de Outlook.
+
+- Las etiquetas en el complemento de Office son visibles para todos los usuarios que tienen instalado el cliente de Azure Information Protection.
 
 - Los nombres de las etiquetas y la información sobre herramientas solo se admiten en un idioma.
 
-- Las condiciones para la clasificación automática deben ser frases o patrones.
-
 - Los archivos no pueden clasificarse desde el Explorador de archivos de Windows.
+
+- No existe un registro centralizado para la clasificación y el etiquetado.
+
+- Las condiciones para la clasificación automática deben ser frases o patrones.
 
 - Las aplicaciones de Office para los dispositivos móviles (iOS y Android) y los equipos Mac, y las aplicaciones web de Office (Office Online) todavía no se admiten.
 
@@ -53,6 +57,10 @@ La versión actual tiene las limitaciones siguientes. Busque anuncios en el [Ent
 Para configurar la directiva de Azure Information Protection, debe iniciar sesión en Azure Portal como administrador global de Azure Active Directory.
 
 En cambio, si selecciona la opción para instalar la directiva de demostración cuando instale el [cliente de Azure Information Protection](https://www.microsoft.com/en-us/download/details.aspx?id=53018), no necesita iniciar sesión en el portal para ver y probar la funcionalidad de etiquetado. La directiva de demostración instala localmente la directiva predeterminada para Azure Information Protection, de forma que pueda probar el etiquetado de documentos y correos electrónicos, pero no podrá cambiar ni agregar etiquetas nuevas sin iniciar sesión en el Portal de Azure. 
+
+## ¿Qué opciones en Azure Portal son P1 o P2?
+
+Para comprobar qué características se incluyen en la suscripción **Azure Information Protection Premium 1** (P1) en comparación con la suscripción **Azure Information Protection Premium 2** (P2), consulte la [lista de características](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features) en el sitio de Azure Information Protection.
 
 ## ¿Azure Information Protection admite los escenarios híbridos y locales?
 
@@ -150,6 +158,6 @@ Si tiene un problema con Azure Information Protection y está usando la versión
 Si tiene alguna pregunta o comentario, use el [sitio de Yammer de Azure Information Protection](https://www.yammer.com/askipteam/). 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

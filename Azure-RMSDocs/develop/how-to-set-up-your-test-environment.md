@@ -20,13 +20,13 @@ ms.openlocfilehash: 719077671664dda3102949609874c569a691bbb8
 
 ---
 
-# Prueba de la aplicación
+# <a name="testing-your-application"></a>Prueba de la aplicación
 
 Este tema contiene instrucciones sobre cómo configurar la prueba de la aplicación.
 
-## Instrucciones
+## <a name="instructions"></a>Instrucciones
 
-### Paso 1: configuración para la prueba
+### <a name="step-1-setup-for-testing"></a>Paso 1: configuración para la prueba
 
 Puede realizar la prueba con Azure RMS o un servidor RMS que se ejecute en Windows Server. Se recomienda que comience la prueba en Azure RMS y después, si es necesario para la implementación, realice la prueba con el servidor RMS.
 
@@ -40,11 +40,11 @@ Puede realizar la prueba con Azure RMS o un servidor RMS que se ejecute en Windo
 
     Para más información sobre cómo instalar RMS SDK 2.1, consulte [Instalar el SDK](install-the-rms-sdk.md).
 
-## Comentarios
+## <a name="remarks"></a>Comentarios
 
 Las instrucciones de este tema no son exhaustivas. Para obtener información detallada sobre cómo configurar el cliente de RMS 2.1, vea [RMS Client 2.1 Deployment Notes](https://technet.microsoft.com/en-us/library/jj159267(WS.10).aspx) (Notas de implementación del cliente de RMS 2.1).
 
-### Temas relacionados
+### <a name="related-topics"></a>Temas relacionados
 
 * [Instalación y configuración de un servidor RMS](how-to-install-and-configure-an-rms-server.md)
 * [Uso de la autenticación ADAL](how-to-use-adal-authentication.md)
@@ -56,6 +56,6 @@ Las instrucciones de este tema no son exhaustivas. Para obtener información det
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 

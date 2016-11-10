@@ -19,7 +19,7 @@ ms.openlocfilehash: c2a272cc27a45f7fda8279394fcb681b70dea81b
 ---
 
 
-# Generar y transferir su clave de inquilino a través de Internet: CONTENIDO RETIRADO
+# <a name="generate-and-transfer-your-tenant-key-over-the-internet-retired-content"></a>Generar y transferir su clave de inquilino a través de Internet: CONTENIDO RETIRADO
 
 >*Se aplica a: Azure Rights Management, Office 365*
 
@@ -27,6 +27,6 @@ La información que aparece en este artículo se ha retirado porque ya no es per
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 

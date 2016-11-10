@@ -4,7 +4,7 @@ description: "Instrucciones sobre cómo desarrollar una aplicación mediante RMS
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -14,28 +14,35 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 6e2b85bc8069de7060211df4d53be7f24ae44e3e
+ms.sourcegitcommit: 4560a1cf3424ae4dddd3a0675b62e9c5e55de9fa
+ms.openlocfilehash: 1f46d93a47fae3b7e7de334db73b7e7b65ea6eea
 
 
 ---
 
-# Desarrollo de la aplicación
+# <a name="developing-your-application"></a>Desarrollo de la aplicación
 
 Este tema contiene instrucciones esenciales sobre los principales aspectos de una aplicación habilitada para RMS y puede servir como base para el desarrollo de su propia aplicación.
 
-## Introducción
+## <a name="introduction"></a>Introducción
 
-Las instrucciones de este tema se basan en la aplicación de ejemplo, *IPCHelloWorld*, que le servirá para conocer los conceptos básicos y el código de una aplicación con derechos habilitados. El proyecto *IPCHelloWorld* ya está configurado para Rights Management Services SDK 2.1. Si quiere información sobre cómo configurar un proyecto nuevo para usar RMS SDK 2.1, vea [Configure Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md) (Configurar Visual Studio).
+Las instrucciones de este tema se basan en la aplicación de ejemplo, *IPCHelloWorld*, que le servirá para conocer los conceptos básicos y el código de una aplicación con derechos habilitados. El proyecto *IPCHelloWorld* ya está configurado para Rights Management Services SDK 2.1.
 
-Puede descargar la aplicación de ejemplo *IPCHellowWorld* completa, como [Webinar_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440), desde Microsoft Connect.
-> [!Note]
-> Si recibe un error al acceder a Microsoft Connect, es posible que no esté registrado. Para registrarse: vaya a [Conectar](http://connect.microsoft.com), inicie sesión con su cuenta de Microsoft > Directorio > busque Rights Management Services > Unirse.
+### <a name="download-sample"></a>Descargar ejemplo
+- Compruebe que se ha registrado en el sitio de Connect:
+  - Para registrarse, vaya a [Connect](http://connect.microsoft.com)
+  - Inicie sesión con su cuenta de Microsoft
+  - Vaya al [Sitio de Rights Management Connect](https://connect.microsoft.com/site1170)
+  - Combinación 
+- Puede descargar la aplicación de ejemplo *IPCHellowWorld* completa, como [Webinar_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440)
+
+Si quiere información sobre cómo configurar un proyecto nuevo para usar RMS SDK 2.1, vea [Configure Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md) (Configurar Visual Studio).
 
 
-## Carga de MSIPC.dll
 
-Antes de que se puedan llamar a las funciones de RMS SDK 2.1, primero debe llamarse a la función [IpcInitialize](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize) para cargar el archivo MSIPC.dll.
+## <a name="loading-msipcdll"></a>Carga de MSIPC.dll
+
+Antes de que se puedan llamar a las funciones de RMS SDK 2.1, primero debe llamarse a la función [IpcInitialize](https://msdn.microsoft.com/library/jj127295.aspx) para cargar el archivo MSIPC.dll.
 
         C++
         hr = IpcInitialize();
@@ -44,7 +51,7 @@ Antes de que se puedan llamar a las funciones de RMS SDK 2.1, primero debe llama
           goto exit;
         }
 
-## Enumeración de plantillas
+## <a name="enumerating-templates"></a>Enumeración de plantillas
 
 Una plantilla de RMS define la directiva usada para proteger los datos, es decir, define los usuarios que tienen acceso a los datos y sus derechos. Las plantillas de RMS se instalan en el servidor RMS.
 
@@ -58,7 +65,7 @@ El fragmento de código siguiente enumera las plantillas de RMS disponibles en e
         goto exit;
       }
 
-Mediante esta llamada se recuperan las plantillas de RMS que están instaladas en el servidor predeterminado, se cargan los resultados en la estructura [IPC_TIL](/information-protection/sdk/2.1/api/win/ipc_til#msipc_ipc_til), a la que apunta la variable *pcTil*, y luego se muestran las plantillas.
+Mediante esta llamada se recuperan las plantillas de RMS que están instaladas en el servidor predeterminado, se cargan los resultados en la estructura [IPC_TIL](https://msdn.microsoft.com/library/hh535283.aspx), a la que apunta la variable *pcTil*, y luego se muestran las plantillas.
 
       C++
       if (0 == pcTil->cTi) {
@@ -75,11 +82,11 @@ Mediante esta llamada se recuperan las plantillas de RMS que están instaladas e
         wprintf(L"\n");
       }
 
-## Serialización de una licencia
+## <a name="serializing-a-license"></a>Serialización de una licencia
 
-Para poder proteger los datos, es necesario serializar una licencia y obtener una clave de contenido. La clave de contenido se usa para cifrar los datos confidenciales. Por lo general, la licencia serializada va adjunta a los datos cifrados y es usada por el consumidor de los datos protegidos. El consumidor deberá llamar a la función [IpcGetKey](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgetkey) con la licencia serializada para obtener la clave de contenido que le permita descifrar el contenido y obtener la directiva asociada con el contenido.
+Para poder proteger los datos, es necesario serializar una licencia y obtener una clave de contenido. La clave de contenido se usa para cifrar los datos confidenciales. Por lo general, la licencia serializada va adjunta a los datos cifrados y es usada por el consumidor de los datos protegidos. El consumidor deberá llamar a la función [IpcGetKey](https://msdn.microsoft.com/library/hh535263.aspx) con la licencia serializada para obtener la clave de contenido que le permita descifrar el contenido y obtener la directiva asociada con el contenido.
 
-Por simplicidad, use la primera plantilla de RMS devuelta por [IpcGetTemplateList](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist) para serializar una licencia.
+Por simplicidad, use la primera plantilla de RMS devuelta por [IpcGetTemplateList](https://msdn.microsoft.com/library/hh535267.aspx) para serializar una licencia.
 
 Normalmente, se usaría un cuadro de diálogo de la interfaz de usuario para permitir al usuario seleccionar la plantilla que quiera.
 
@@ -95,9 +102,9 @@ Normalmente, se usaría un cuadro de diálogo de la interfaz de usuario para per
 Una vez hecho esto, ya tiene la clave de contenido *hContentKey*, y la licencia serializada, *pSerializedLicense*, que debe asociar a los datos protegidos.
 
 
-## Protección de datos
+## <a name="protecting-data"></a>Protección de datos
 
-Ahora está listo para cifrar los datos confidenciales mediante la función [IpcEncrypt](/information-protection/sdk/2.1/api/win/functions#msipc_ipcencrypt). En primer lugar, debe preguntar a la función **IpcEncrypt** cuál será el tamaño de los datos cifrados.
+Ahora está listo para cifrar los datos confidenciales mediante la función [IpcEncrypt](https://msdn.microsoft.com/library/hh535259.aspx). En primer lugar, debe preguntar a la función **IpcEncrypt** cuál será el tamaño de los datos cifrados.
 
       C++
       cbText = (DWORD)(sizeof(WCHAR)*(wcslen(wszText)+1));
@@ -109,7 +116,7 @@ Ahora está listo para cifrar los datos confidenciales mediante la función [Ipc
         goto exit;
       }
 
-Aquí, wszText contiene el texto sin formato que se va a proteger. La función [IpcEncrypt](/information-protection/sdk/2.1/api/win/functions#msipc_ipcencrypt) devuelve el tamaño de los datos cifrados en el parámetro *cbEncrypted*.
+Aquí, *wszText* contiene el texto sin formato que se va a proteger. La función [IpcEncrypt](https://msdn.microsoft.com/library/hh535259.aspx) devuelve el tamaño de los datos cifrados en el parámetro *cbEncrypted*.
 
 Ahora asigne la memoria para los datos cifrados.
 
@@ -134,7 +141,7 @@ Por último, puede realizar el cifrado en sí.
 
 Completado este paso, ya tiene los datos cifrados, *pbEncrypted*, y la licencia serializada, *pSerializedLicense*, que los consumidores usarán para descifrar los datos.
 
-## Control de errores
+## <a name="error-handling"></a>Control de errores
 
 En esta aplicación de ejemplo, la función *DisplayError* se usa para controlar los errores.
 
@@ -151,9 +158,9 @@ En esta aplicación de ejemplo, la función *DisplayError* se usa para controlar
         }
       }
 
-La función *DisplayError* usa la función [IpcGetErrorMessageText](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgeterrormessagetext) para obtener el mensaje de error del código de error correspondiente e imprimirlo en la salida estándar.
+La función *DisplayError* usa la función [IpcGetErrorMessageText](https://msdn.microsoft.com/library/hh535261.aspx) para obtener el mensaje de error del código de error correspondiente e imprimirlo en la salida estándar.
 
-## Limpieza
+## <a name="cleaning-up"></a>Limpieza
 
 Antes de acabar, hay que liberar todos los recursos asignados.
 
@@ -174,19 +181,19 @@ Antes de acabar, hay que liberar todos los recursos asignados.
         IpcFreeMemory((LPVOID)pcTil);
       }
 
-## Temas relacionados
+## <a name="related-topics"></a>Temas relacionados
 
 - [Instrucciones e información para desarrolladores](developer-notes.md)
-- [IpcEncrypt](/information-protection/sdk/2.1/api/win/functions#msipc_ipcencrypt)
-- [IpcGetErrorMessageText](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgeterrormessagetext)
-- [IpcGetKey](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgetkey)
-- [IpcGetTemplateList](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist)
-- [IpcInitialize](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize)
-- [IPC_TIL](/information-protection/sdk/2.1/api/win/ipc_til#msipc_ipc_til)
+- [IpcEncrypt](https://msdn.microsoft.com/library/hh535259.aspx)
+- [IpcGetErrorMessageText](https://msdn.microsoft.com/library/hh535261.aspx)
+- [IpcGetKey](https://msdn.microsoft.com/library/hh535263.aspx)
+- [IpcGetTemplateList](https://msdn.microsoft.com/library/hh535267.aspx)
+- [IpcInitialize](https://msdn.microsoft.com/library/jj127295.aspx)
+- [IPC_TIL](https://msdn.microsoft.com/library/hh535283.aspx)
 - [Webinar_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440)
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 

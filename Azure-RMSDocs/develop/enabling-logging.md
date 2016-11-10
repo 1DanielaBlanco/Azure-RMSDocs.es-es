@@ -14,17 +14,25 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 118aa3e25c6be9d0bf43141585d79030fc79224a
+ms.sourcegitcommit: ac77c4e0bced244f1cec74f15cbe0d62c9ab4437
+ms.openlocfilehash: 66d24f4ed737526525c041de7aeb96de35b37032
 
 
 ---
 
-# Procedimiento para habilitar el registro de rendimiento y errores
+# <a name="how-to-enable-error-and-performance-logging"></a>Procedimiento para habilitar el registro de rendimiento y errores
 El SDK 4.2 de Microsoft Rights Management administra la carga de registro de rendimiento y diagnóstico mediante una única propiedad de dispositivo.
 
-## Información general ##
-Puede mejorar la experiencia de los usuarios y la solución de problemas mediante la habilitación de la carga de registro de rendimiento y diagnóstico en Microsoft. Para mantener la privacidad de los usuarios, los desarrolladores de aplicaciones deben pedir al usuario que den su consentimiento antes de habilitar el registro automático.
+## <a name="overview"></a>Información general ##
+Puede mejorar la experiencia de los usuarios y la solución de problemas mediante la habilitación de la carga automática de datos de registro de diagnóstico, rendimiento y telemetría en Microsoft. 
+
+> [!IMPORTANT] 
+> Para mantener la privacidad de los usuarios, los desarrolladores de aplicaciones deben pedir al usuario que den su consentimiento antes de habilitar el registro automático.
+
+> [!NOTE]
+> Como ejemplo, se muestra a continuación un mensaje estándar de Microsoft que se utiliza para la notificación de registro: 
+>
+> *Al activar el Registro de errores y rendimiento, acepta enviar datos de errores y rendimiento a Microsoft.  Microsoft recopila datos de errores y rendimiento a través de Internet («Datos»).  Microsoft usa estos datos para proporcionar y mejorar la calidad, la seguridad y la integridad de los productos y servicios de Microsoft.  Por ejemplo, analizamos el rendimiento y la confiabilidad, como qué características usa, la rapidez con que responden las características, el rendimiento del dispositivo, las interacciones con la interfaz de usuario y los problemas que tenga con el producto.  Los datos también incluyen información sobre la configuración del software, como el software que ejecuta actualmente y la dirección IP.*  
 
 Administrará el control de diagnóstico mediante dos propiedades:
 
@@ -39,7 +47,7 @@ Administrará el control de diagnóstico mediante dos propiedades:
 
 En cada uno de los fragmentos de código de ejemplo siguientes, la aplicación de llamada puede establecer o consultar la propiedad.
 
-### Android ###
+### <a name="android"></a>Android ###
 Habilitar el registro automático
 
     SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
@@ -52,7 +60,7 @@ Obtener el valor de marca de control del registro actual
     SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
     Boolean isLogUploadEnabled = preferences.getBoolean(&quot;IpcCustomerExperienceDataCollectionEnabled&quot;, false);
 
-## iOS ##
+## <a name="ios"></a>iOS ##
 Habilitar el registro automático
 
     NSUserDefaults \*prefs = [NSUserDefaults standardUserDefaults];
@@ -74,12 +82,12 @@ Obtener el valor de control de nivel de registro
     [[NSUserDefaults standardUserDefaults] boolForKey:@&quot;IpcLogLevel&quot;];
  
 
-## Windows ##
+## <a name="windows"></a>Windows ##
 Habilitar el registro automático
 
     CustomerExperienceConfiguration::Option = CustomerExperienceOptions::LoggingEnabledNow;
 
-Para obtener más información sobre los valores de configuración opcionales, consulte [CustomerExperienceOptions](/information-protection/sdk/4.2/api/winrt/Microsoft.RightsManagement#msipcthin2_customerexperienceoptions).
+Para obtener más información sobre los valores de configuración opcionales, consulte [CustomerExperienceOptions](https://msdn.microsoft.com/library/microsoft.rightsmanagement.customerexperienceoptions.aspx).
 
 Obtener el valor de marca de control del registro actual
 
@@ -96,6 +104,6 @@ Obtener el valor de marca de control del registro actual
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 

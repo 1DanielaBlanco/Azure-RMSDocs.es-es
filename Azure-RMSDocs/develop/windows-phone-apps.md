@@ -14,13 +14,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 148cefbe973eadebf942c826ac19c0ee34823c89
+ms.sourcegitcommit: dc452dac3a86cd9cc39127d5a29106ae87ba94be
+ms.openlocfilehash: 790f0d847c57b9e13d9074298b3e89584dc24760
 
 
 ---
 
-# Programa de instalación de Windows Phone
+# <a name="windows-phone-setup"></a>Programa de instalación de Windows Phone
 
 
 Las aplicaciones de Windows Phone pueden usar Microsoft Rights Management SDK 4.2 para habilitar la protección de información integrada en sus aplicaciones mediante Azure Active Directory Rights Management (AAD RM).
@@ -29,9 +29,9 @@ Este tema sirve de guía por el proceso de configuración del entorno para crear
 
 -   [Requisitos previos](#prerequisites)
 -   [Configurar el entorno de desarrollo](#configuring-your-development-environment)
--   [Consulte también](#see-also)
+-   [Ver también](#see-also)
 
-## Requisitos previos
+## <a name="prerequisites"></a>Requisitos previos
 
 
 Debe tener el siguiente software en el sistema de desarrollo:
@@ -46,7 +46,7 @@ Lea el tema de [novedades](release-notes.md) para más información sobre actual
 
 Revise la información de la guía de [desarrollo de Windows Phone](https://msdn.microsoft.com/en-us/library/windowsphone/develop/ff402535.aspx) en el centro de desarrollo de Windows Phone.
 
-## Configuración del entorno de desarrollo
+## <a name="configuring-your-development-environment"></a>Configuración del entorno de desarrollo
 
 
 -   Abra *Visual Studio*.
@@ -68,7 +68,7 @@ Revise la información de la guía de [desarrollo de Windows Phone](https://msdn
 
 Ya está listo para crear sus propias aplicaciones nuevas de Windows Phone.
 
-### Véase también
+### <a name="see-also"></a>Véase también
 
 [Introducción](get-started.md)
 
@@ -93,6 +93,6 @@ Ya está listo para crear sus propias aplicaciones nuevas de Windows Phone.
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 

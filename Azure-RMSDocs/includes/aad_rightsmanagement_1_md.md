@@ -1,5 +1,5 @@
-Administración de los derechos de Azure
+Azure Rights Management
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

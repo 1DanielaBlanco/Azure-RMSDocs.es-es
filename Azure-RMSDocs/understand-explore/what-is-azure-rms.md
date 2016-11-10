@@ -3,7 +3,7 @@ title: "¿Qué es Azure Rights Management? | Azure Information Protection"
 description: "Azure Rights Management (Azure RMS) es la tecnología de protección usada por Azure Information Protection."
 author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 10/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,13 +12,13 @@ ms.assetid: aeeebcd7-6646-4405-addf-ee1cc74df5df
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 78b975c2babad347fc5be7956d504c7283508962
-ms.openlocfilehash: 3582aaba72347e8374f6cb856f52cd129bb83d3e
+ms.sourcegitcommit: 8e731d9fe973dff7f208502b726ec154129cf7e6
+ms.openlocfilehash: f5f7be6a076c2a2eb962288712630d825edd87c3
 
 
 ---
 
-# ¿Qué es Azure Rights Management?
+# <a name="what-is-azure-rights-management"></a>¿Qué es Azure Rights Management?
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
@@ -33,32 +33,32 @@ Sin embargo, lo que es muy importante, las personas y los servicios autorizados 
 
 La siguiente imagen muestra de qué manera Azure RMS funciona como una solución de Rights Management para Office 365 así como para servicios y servidores locales. Asimismo, verá que admite populares dispositivos de usuario final que ejecutan Windows, Mac OS, iOS, Android y Windows Phone.
 
-> [!NOTE]
-La protección de Azure RMS puede usarse con diferentes suscripciones de la nube y es compatible con varias características. Para más información, vea el sitio de marketing de [Azure Information Protection](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection).
 
 ![Cómo funciona Azure RMS](../media/AzRMS_elements.png)
 
-## Pasos siguientes
+La protección de Azure RMS puede usarse con diferentes suscripciones de la nube y es compatible con varias características. Encontrará más información sobre las suscripciones disponibles y las características que se admiten en el sitio de [Azure Information Protection](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection).
 
-Para más información acerca de Azure RMS:
+## <a name="next-steps"></a>Pasos siguientes
+
+Para obtener más información acerca de este servicio de protección de datos de Azure Information Protection:
 
 -   [¿Qué problemas resuelve Azure RMS?](azure-rms-problems-it-solves.md)
 
--   [Azure RMS en acción: Qué ven los administradores y los usuarios](what-admins-users-see.md)
+-   [Azure RMS en acción: qué ven los administradores y los usuarios](what-admins-users-see.md)
 
 -   [¿Cómo funciona Azure RMS? En segundo plano](how-does-it-work.md)
 
 
 
-Si quiere algo más rápido y probar Azure RMS usted mismo, consulte [Quick start tutorial for Azure Rights Management](../get-started/quick-start-tutorial.md) (Tutorial de inicio rápido de Azure Rights Management).
+Si quiere profundizar e intentar proteger los documentos usted mismo, consulte el [Tutorial de inicio rápido de Azure Information Protection](../get-started/infoprotect-quick-start-tutorial.md). En este tutorial también se le solicita que proteja un documento cuando se detecta información confidencial. También incluye la protección de un documento que comparte por correo electrónico, del cual, a continuación, puede realizar un seguimiento para ver cómo se usa y, si fuera necesario, revocar el acceso al mismo.
 
-Pero, si está preparado para empezar a implementar Azure Information Protection en su organización, vea los pasos de implementación y los vínculos a instrucciones de procedimientos incluidos en el [Mapa de ruta de implementación de Azure Information Protection](../plan-design/deployment-roadmap.md).
+De todos modos, si está preparado para empezar a implementar Azure Information Protection en su organización para que los administradores y los usuarios puedan comenzar a proteger documentos y correos electrónicos, consulte los pasos de implementación y los vínculos a instrucciones de procedimientos incluidos en el [Mapa de ruta de implementación de Azure Information Protection](../plan-design/deployment-roadmap.md).
 
 > [!TIP]
 > Para obtener más información y ayuda, use los recursos y vínculos que aparecen en [Información y soporte técnico para Azure Information Protection](../get-started/information-support.md).
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO5-->
 
 
