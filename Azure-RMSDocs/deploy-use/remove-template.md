@@ -2,6 +2,7 @@
 title: Quitar plantillas | Azure Information Protection
 description: Las plantillas predeterminadas no se pueden eliminar, pero se pueden archivar para que los usuarios no las vean.
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,14 +13,14 @@ ms.assetid: 42935ce2-879c-4168-aef9-9a88f72b15b2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: 2597df5b95bc1aaff345804e476f48d6436d9a32
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: e9af6dcf237ec0136101835ceff56e79e01f3b3c
 
 
 ---
 
 
-# Eliminación (archivado) de plantillas
+# <a name="remove-archive-templates"></a>Eliminación (archivado) de plantillas
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
@@ -29,7 +30,7 @@ De forma similar, si ha publicado una plantilla personalizada y ya no desea que 
 
 Dado que no puede editar las plantillas predeterminadas, para archivar estas plantillas, debe utilizar la opción **ARCHIVAR** en la página **PLANTILLAS** . No se puede archivar la opción de Outlook **No reenviar** .
 
-## Para quitar una plantilla predeterminada
+## <a name="to-remove-a-default-template"></a>Para quitar una plantilla predeterminada
 
 -   En la página **PLANTILLAS** , seleccione la plantilla predeterminada y haga clic en **ARCHIVAR**.
 
@@ -37,10 +38,10 @@ El estado cambia de **Publicada** a **Archivada**. Si cambia de opinión, selecc
 
 
 
-## Véase también
+## <a name="see-also"></a>Véase también
 [Configuración de plantillas personalizadas para Azure Rights Management](configure-custom-templates.md)
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 
