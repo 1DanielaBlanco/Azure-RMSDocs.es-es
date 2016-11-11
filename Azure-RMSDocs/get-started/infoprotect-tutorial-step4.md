@@ -2,6 +2,7 @@
 title: "Paso 4 del tutorial de inicio rápido | Azure Rights Management"
 description: "Paso 3 del tutorial introductorio para probar rápidamente Microsoft Azure Information Protection para su organización, que debería tardar unos 30 minutos."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -10,13 +11,13 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
 translationtype: Human Translation
-ms.sourcegitcommit: ce1d0a700e0b69d71f5cb2e93f406124bc0ca581
-ms.openlocfilehash: c9ed50317e18e86438b4393ce629d23d433c99fe
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: dc4cf3426bca306b66e2b23c3dd63373f62c9b7c
 
 
 ---
 
-# Paso 4: ver la clasificación, el etiquetado y la protección en funcionamiento 
+# <a name="step-4-see-classification-labeling-and-protection-in-action"></a>Paso 4: ver la clasificación, el etiquetado y la protección en funcionamiento 
 
 >*Se aplica a: Azure Information Protection*
 
@@ -24,7 +25,7 @@ Ahora que tiene un documento de Word abierto con el cliente de Azure Information
 
 La clasificación y la protección tienen lugar cuando guarda el documento, pero antes de hacerlo, usaremos nuestro documento sin guardar para ver lo sencillo que es aplicar y cambiar etiquetas.
 
-## Para cambiar de manera manual nuestra etiqueta predeterminada
+## <a name="to-manually-change-our-default-label"></a>Para cambiar de manera manual nuestra etiqueta predeterminada
 
 En la barra Information Protection, seleccione la etiqueta **Personal** y se le pedirá que justifique por qué está reduciendo el nivel de clasificación:
 
@@ -32,7 +33,7 @@ En la barra Information Protection, seleccione la etiqueta **Personal** y se le 
 
 Seleccione **Ya no se aplica la etiqueta anterior** y haga clic en **Confirmar**. Verá que el valor **Confidencialidad** cambia a **Personal**.
 
-## Para quitar la clasificación completamente
+## <a name="to-remove-the-classification-completely"></a>Para quitar la clasificación completamente
 
 En la barra de Information Protection, haga clic en el icono **Editar etiqueta** junto a **Personal**. Esto muestra las etiquetas disponibles. En lugar de elegir una de las etiquetas, esta vez, haga clic en el icono **Quitar etiqueta**. Haga clic en **Aceptar** para confirmar y después proporcionar una justificación para esta acción.  
 
@@ -41,7 +42,7 @@ Verá que el valor **Confidencialidad** muestra **No establecido**, que es lo qu
 ![Paso 4 del tutorial de inicio rápido de Azure Information Protection: quitar clasificación](../media/sensitivity-not-set.png)
 
 
-## Para ver un aviso de recomendación para el etiquetado y la protección automática
+## <a name="to-see-a-recommendation-prompt-for-labeling-and-automatic-protection"></a>Para ver un aviso de recomendación para el etiquetado y la protección automática
 
 1. En el documento de Word, escriba un número de tarjeta de crédito válido, por ejemplo: **4242-4242-4242-4242**. 
 
@@ -63,6 +64,6 @@ Ahora que ha visto la clasificación, el etiquetado y la protección en funciona
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

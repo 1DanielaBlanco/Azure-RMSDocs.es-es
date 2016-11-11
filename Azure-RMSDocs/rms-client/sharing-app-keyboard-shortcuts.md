@@ -2,6 +2,7 @@
 title: "Uso de métodos abreviados de teclado en la aplicación Rights Management sharing | Azure Information Protection"
 description: "Instrucciones sobre cómo utilizar métodos abreviados de teclado con la aplicación RMS sharing para Windows."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: 72760134-94e0-4699-b20c-07b96aa061f1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
-ms.openlocfilehash: 0e39640a5c48f5d924fed6ee7bf6de34bf195e56
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: ed59b022078f73d61afcff3eff10aa338176e568
 
 
 ---
 
-# Usar métodos abreviados de teclado en la aplicación Rights Management sharing
+# <a name="use-keyboard-shortcuts-in-the-rights-management-sharing-application"></a>Usar métodos abreviados de teclado en la aplicación Rights Management sharing
 
 >*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 con SP1, Windows 8 y Windows 8.1*
 
@@ -28,18 +29,18 @@ Por ejemplo, en el cuadro de diálogo **Uso compartido seguro**, presione **Alt*
 
 ![Claves de acceso de la aplicación RMS sharing](../media/ADRMS_MSRMSApp_AccessKeys.png)
 
-## Ejemplos y otras instrucciones
+## <a name="examples-and-other-instructions"></a>Ejemplos y otras instrucciones
 Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de Rights Management e instrucciones de procedimientos, consulte las siguientes secciones de la guía de usuario de la aplicación para uso compartido de Rights Management:
 
 -   [Ejemplos de uso de la aplicación RMS sharing](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [¿Qué desea hacer?](sharing-app-user-guide.md#what-do-you-want-to-do)
+-   [¿Qué quiere hacer?](sharing-app-user-guide.md#what-do-you-want-to-do)
 
-## Véase también
-[Guía de usuario de la aplicación de uso compartido Rights Management](sharing-app-user-guide.md)
+## <a name="see-also"></a>Véase también
+[Guía de usuario de la aplicación Rights Management sharing](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 
