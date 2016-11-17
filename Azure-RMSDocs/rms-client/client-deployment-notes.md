@@ -2,6 +2,7 @@
 title: "Notas de la implementación del cliente de RMS| Azure Information Protection"
 description: "Información sobre la redistribución, instalación, sistemas operativos compatibles, configuración del registro y detección de servicios para la versión 2 de cliente (cliente RMS) de Rights Management Service, que también se conoce como el cliente MSIPC."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/28/2016
 ms.topic: article

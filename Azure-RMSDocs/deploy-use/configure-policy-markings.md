@@ -1,6 +1,8 @@
 ---
 title: "Cómo configurar una etiqueta para marcas visuales | Azure Information Protection"
 description: "Cuando se asigna una etiqueta a un documento o a un mensaje de correo electrónico, puede seleccionar varias opciones para hacer visible la clasificación elegida. Estos marcadores visuales son un encabezado, un pie de página y una marca de agua."
+author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/04/2016
 ms.topic: article

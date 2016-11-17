@@ -3,6 +3,7 @@ title: "Cómo usar los derechos integrados | Azure RMS"
 description: "Se describen los derechos integrados que proporciona RMS SDK 4.2 y las restricciones de uso que una aplicación debe exigir para cumplir con esas restricciones."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -22,13 +23,13 @@ ms.openlocfilehash: 3d897f191368b7af6fd339603e183583fa9b4a27
 
 ---
 
-# Cómo usar los derechos integrados
+# <a name="how-to-use-builtin-rights"></a>Cómo usar los derechos integrados
 
 En este tema se describen los derechos integrados que proporciona Microsoft Rights Management SDK 4.2 y las restricciones de uso que una aplicación debe exigir para cumplir con esas restricciones. A continuación se muestran los derechos integrados, los derechos comunes, los derechos de documentos editables y los derechos de correo electrónico, seguidos de una descripción y de sus valores por sistema operativo.
 
 **Nota**: En el caso del SDK de Linux, consulte el archivo de origen *rights.h* para obtener más información.
 
-## Derechos comunes
+## <a name="common-rights"></a>Derechos comunes
 
 **All**: colección de todos los derechos comunes.
 - Android: [CommonRights.All](https://msdn.microsoft.com/library/dn758258.aspx)
@@ -51,7 +52,7 @@ En este tema se describen los derechos integrados que proporciona Microsoft Righ
 
  
 
-## Derechos de documentos editables
+## <a name="editable-document-rights"></a>Derechos de documentos editables
 **All**: colección que contiene todos los derechos de documentos editables.
 - Android: [EditableDocumentRights.All](https://msdn.microsoft.com/library/dn758284.aspx)
 - iOS y OS X: [MSEditableDocumentRights all](https://msdn.microsoft.com/library/dn758318.aspx)
@@ -93,7 +94,7 @@ En este tema se describen los derechos integrados que proporciona Microsoft Righ
 
  
 
-## Derechos de correo electrónico
+## <a name="email-rights"></a>Derechos de correo electrónico
 
 **All**: colección que contiene todos los derechos de correo electrónico.
 - Android: [EmailRights.All](https://msdn.microsoft.com/library/dn758285.aspx)

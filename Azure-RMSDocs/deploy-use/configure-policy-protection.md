@@ -1,6 +1,8 @@
 ---
 title: "Configuración de una etiqueta para aplicar la protección de Rights Management | Azure Information Protection"
 description: "Puede proteger sus documentos y correos electrónicos más confidenciales mediante el servicio Rights Management, que usa directivas de autorización, identidad y cifrado para ayudar a evitar la pérdida de datos. Esta protección se aplica al configurar una etiqueta para usar una plantilla de Rights Management."
+author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/04/2016
 ms.topic: article

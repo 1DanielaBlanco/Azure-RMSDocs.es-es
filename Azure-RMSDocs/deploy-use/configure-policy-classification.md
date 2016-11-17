@@ -1,6 +1,8 @@
 ---
 title: "Configuración de las condiciones para la clasificación automática y recomendada | Azure Information Protection"
 description: "Al configurar las condiciones de una etiqueta, puede asignar automáticamente la etiqueta a un documento o a un correo electrónico. También puede indicar a los usuarios que seleccionen la etiqueta que usted recomienda."
+author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/04/2016
 ms.topic: article

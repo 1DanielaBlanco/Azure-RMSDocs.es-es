@@ -2,6 +2,7 @@
 title: "Registro y análisis del servicio Azure Rights Management | Azure Information Protection"
 description: "Información e instrucciones sobre cómo usar el registro de uso con Azure Rights Management (Azure RMS)."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article

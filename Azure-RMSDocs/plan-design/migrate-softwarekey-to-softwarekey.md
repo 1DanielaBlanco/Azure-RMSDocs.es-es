@@ -2,6 +2,7 @@
 title: "Paso 2&colon; Migración entre claves protegidas por software | Azure Information Protection"
 description: "Estas instrucciones forman parte de la ruta de migración de AD RMS a Azure Information Protection y solo se aplican si la clave de AD RMS está protegida por software y quiere migrar a Azure Rights Management con una clave de inquilino protegida por software."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/03/2016
 ms.topic: article

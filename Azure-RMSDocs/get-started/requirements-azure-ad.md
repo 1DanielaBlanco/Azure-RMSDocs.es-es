@@ -2,6 +2,7 @@
 title: Requisitos de Azure Active Directory | Azure Information Protection
 description: Identifique los requisitos de Azure AD para usar Azure Information Protection de forma que los usuarios se puedan autenticar correctamente.
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/29/2016
 ms.topic: get-started-article
@@ -12,13 +13,13 @@ ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 976281d2b1f9c87bbb0806fef98b2520772c507c
-ms.openlocfilehash: 5be497b09ed1b1342747508611a1cc06ad0edf02
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 667e1e533df6d26c9aae0aba1f889b0e6470b059
 
 
 ---
 
-# Requisitos de Azure Active Directory para Azure Information Protection
+# <a name="azure-active-directory-requirements-for-azure-information-protection"></a>Requisitos de Azure Active Directory para Azure Information Protection
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
@@ -28,7 +29,7 @@ Si no dispone aún de suscripción de Azure para su organización, puede obtener
 
 Para más información, consulte los recursos siguientes en la documentación de Azure Active Directory:
 
--   [¿Qué es un directorio de Azure AD?](/active-directory/active-directory-whatis)
+-   [¿Qué es el directorio de Azure AD?](/active-directory/active-directory-whatis)
 
 -   [Asociación de las suscripciones a Azure con Azure Active Directory](/active-directory/active-directory-how-subscriptions-associated-directory)
 
@@ -39,7 +40,7 @@ Si desea integrar el directorio de Azure AD con los bosques de AD locales, consu
 > 
 > -   Debe usar AD FS en la versión mínima de servidor de **Windows Server 2012 R2** o un proveedor de autenticación alternativo que admita el protocolo OAuth 2.0.
 
-## Multi-Factor Authentication (MFA) y Azure Information Protection
+## <a name="multifactor-authentication-mfa-and-azure-information-protection"></a>Multi-Factor Authentication (MFA) y Azure Information Protection
 Para usar Multi-Factor Authentication (MFA) con Azure Information Protection se necesita como mínimo uno de los dos requisitos siguientes:
 
 -   Office 2013 (versión mínima):
@@ -68,12 +69,12 @@ A continuación, configure la solución MFA:
 
         Para más información sobre este escenario, consulte [Programa Works with Office 365 – Identity ahora simplificado](https://blogs.office.com/2014/01/30/the-works-with-office-365-identity-program-now-streamlined/) en el blog de Office.
 
-## Pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 Para comprobar otros requisitos, vea [Requisitos para Azure Information Protection](requirements-azure-rms.md).
 
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

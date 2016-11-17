@@ -2,6 +2,7 @@
 title: "Servidores de archivos que ejecutan Windows Server y usan la infraestructura de clasificación de archivos (FCI) | Azure Information Protection"
 description: "Cómo la infraestructura de clasificación de archivos de Windows Server puede utilizarse con Azure RMS al implementar el conector RMS para proteger automáticamente los documentos de Office."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,14 +13,14 @@ ms.assetid: 8fdad425-5daf-4ce1-822f-9d2fb0b87df1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2c0f3b58a2f1b5233c262bb67cc4a485557ba997
-ms.openlocfilehash: 64c718f91d1d2f516bcac6dd949eef5ef379a306
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 1d9213aa6be382510558020411d1667fd2866ca7
 
 
 ---
 
 
-# Servidores de archivos que ejecutan Windows Server y usan Infraestructura de clasificación de archivos (FCI)
+# <a name="file-servers-that-run-windows-server-and-use-file-classification-infrastructure-fci"></a>Servidores de archivos que ejecutan Windows Server y usan Infraestructura de clasificación de archivos (FCI)
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
@@ -36,13 +37,13 @@ Para obtener instrucciones sobre cómo usar el script de Windows PowerShell para
 
 
 
-## Pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 Ahora que comprende cómo las aplicaciones y los servicios admiten Azure RMS, puede que le interese comparar Azure RMS con la versión local de Rights Management, Active Directory Rights Management Services (AD RMS). Para ver una comparación de características, requisitos y controles de seguridad, consulte [Comparing Azure Rights Management and AD RMS](compare-azure-rms-ad-rms.md) (Comparación de Azure Rights Management y AD RMS).
 
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

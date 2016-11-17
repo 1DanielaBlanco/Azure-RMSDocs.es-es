@@ -2,6 +2,7 @@
 title: Comprobar Azure Rights Management | Azure Information Protection
 description: "Instrucciones para comprobar que el servicio funciona como se esperaba protegiendo un archivo o mensaje de correo electrónico mediante una cuenta de usuario y, a continuación, tratar de abrirlo y usar ese contenido protegido procedente de otra cuenta de usuario."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/05/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: 08664a01-81a5-4fa5-884c-7306ee55dba0
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4a6d07e9a24293f054915b5598c63e118c9c1430
-ms.openlocfilehash: e39cb95419fd661be6c0f4838aafdcb02ed684cf
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 8d10bc4aeeed6f5b3d150f6e765c6457f5741409
 
 
 ---
 
-# Comprobar el servicio Azure Rights Management
+# <a name="verifying-the-azure-rights-management-service"></a>Comprobar el servicio Azure Rights Management
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
@@ -31,7 +32,7 @@ Si la prueba no es correcta, revise los pasos de configuración que se indican e
 > [!TIP]
 > Si necesita ayuda adicional, consulte la sección [Opciones de soporte y recursos de la comunidad](../get-started/information-support.md#support-options-and-community-resources) del artículo [Información y soporte técnico para Azure Information Protection](../get-started/information-support.md).
 
-## Pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 
 Con el registro de uso, puede supervisar de qué forma se está utilizando el servicio Azure Rights Management en su organización. Para obtener más información, consulte [Registro y análisis del uso del servicio Azure Rights Management](log-analyze-usage.md).
 
@@ -40,6 +41,6 @@ Con el registro de uso, puede supervisar de qué forma se está utilizando el se
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -2,6 +2,7 @@
 title: "Aplicación RMS sharing para Windows y plataformas móviles | Azure Information Protection"
 description: "Cómo la aplicación RMS sharing admite Azure RMS como una aplicación gratuita y descargable que es necesaria para ofrecer compatibilidad con Office 2010, pero también se recomienda para equipos con Windows, equipos con Mac y dispositivos móviles."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/03/2016
 ms.topic: article

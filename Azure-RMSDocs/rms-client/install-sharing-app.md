@@ -2,6 +2,7 @@
 title: "Descarga e instalación de la aplicación Rights Management sharing | Azure Information Protection"
 description: "Instrucciones para instalar interactivamente la aplicación RMS sharing para Windows, por lo que se pueden compartir documentos con otros de manera segura."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,19 +13,19 @@ ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
-ms.openlocfilehash: c705bfec85bb93cb03d7e3edc9f3ce5949a8b61d
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: f1553ebd64f174128e41f55b66582e8791ce9133
 
 
 ---
 
-# Descargar e instalar la aplicación de uso compartido de Rights Management
+# <a name="download-and-install-the-rights-management-sharing-application"></a>Descargar e instalar la aplicación de uso compartido de Rights Management
 
 >*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 con SP1, Windows 8 y Windows 8.1*
 
 No hace falta que sea un administrador local para instalar la aplicación RMS sharing. Sin embargo, si no lo es y usa Office 2010, hay algunas limitaciones. Para más información, consulte la sección [Si no es un administrador local y usa Office 2010](#if-you-are-not-a-local-administrator-and-use-office-2010) de esta página.
 
-## Para descargar e instalar la aplicación Rights Management sharing
+## <a name="to-download-and-install-the-rights-management-sharing-application"></a>Para descargar e instalar la aplicación Rights Management sharing
 
 1.  Vaya a la página de [Microsoft Rights Management](http://go.microsoft.com/fwlink/?LinkId=303970) en el sitio web de Microsoft.
 
@@ -41,7 +42,7 @@ No hace falta que sea un administrador local para instalar la aplicación RMS sh
 
 Ahora ya puede empezar a proteger sus archivos o a leer los archivos protegidos por otros usuarios.
 
-## Si no es un administrador local y usa Office 2010
+## <a name="if-you-are-not-a-local-administrator-and-use-office-2010"></a>Si no es un administrador local y usa Office 2010
 Si inicia sesión en el equipo y no tiene derechos administrativos locales y el programa de instalación detecta que tiene instalado Office 2010, verá un mensaje de advertencia en el que se le indicará que algunos escenarios no funcionarán con tal configuración. Los escenarios son los siguientes:
 
 -   Si su organización usa el servicio Azure Rights Management de Azure Information Protection en lugar de la versión local de Rights Management:
@@ -56,19 +57,19 @@ Si no es un administrador local y usa Office 365 u Office 2013, no verá este me
 
 Puede continuar la instalación con estas limitaciones conocidas. Asimismo, puede detener la instalación y volver a ejecutarla con la opción **Ejecutar como administrador** al ejecutar Setup.exe en el paso 3, o bien pedirle a un administrador que se lo instale. Los administradores pueden [crear un script para esta instalación](sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application) para que se instale automáticamente.
 
-## Ejemplos y otras instrucciones
+## <a name="examples-and-other-instructions"></a>Ejemplos y otras instrucciones
 Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de Rights Management e instrucciones de procedimientos, consulte las siguientes secciones de la guía de usuario de la aplicación para uso compartido de Rights Management:
 
 -   [Ejemplos de uso de la aplicación RMS sharing](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [¿Qué desea hacer?](sharing-app-user-guide.md#what-do-you-want-to-do)
+-   [¿Qué quiere hacer?](sharing-app-user-guide.md#what-do-you-want-to-do)
 
-## Véase también
-[Guía de usuario de la aplicación de uso compartido Rights Management](sharing-app-user-guide.md)
-
-
+## <a name="see-also"></a>Véase también
+[Guía de usuario de la aplicación Rights Management sharing](sharing-app-user-guide.md)
 
 
-<!--HONumber=Sep16_HO4-->
+
+
+<!--HONumber=Nov16_HO2-->
 
 

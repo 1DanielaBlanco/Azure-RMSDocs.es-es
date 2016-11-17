@@ -2,6 +2,7 @@
 title: "Paso 2&colon; Migración de clave protegida por software a clave protegida por HSM | Azure Information Protection"
 description: "Estas instrucciones forman parte de la ruta de migración de AD RMS a Azure Information Protection y solo son válidas si la clave de AD RMS está protegida por software y quiere migrar a Azure Information Protection con una clave de inquilino protegida por HSM en Azure Key Vault."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/03/2016
 ms.topic: article

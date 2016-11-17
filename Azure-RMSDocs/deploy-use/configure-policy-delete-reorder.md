@@ -1,6 +1,8 @@
 ---
 title: "Cómo eliminar o volver a ordenar una etiqueta | Azure Information Protection"
 description: "Puede eliminar o cambiar el orden de las etiquetas que ven los usuarios en la barra de Information Protection; para ello, configúrelas en la directiva de Azure Information Protection."
+author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/04/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: Recursos de la Comunidad | Azure RMS
 description: AD RMS es compatible con la creciente comunidad de desarrolladores en varias plataformas.
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,17 +15,17 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: dab2d84371cd2c45af617898f1694f99128551d9
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: cd203a651362564e2f2275051f61f86b3bee6703
 
 
 ---
 
-# Recursos de la Comunidad
+# <a name="community-resources"></a>Recursos de la Comunidad
 
 Active Directory Rights Management Services es compatible con la creciente comunidad de desarrolladores en varias plataformas.
 
-## Recursos de la Comunidad de AD RMS
+## <a name="ad-rms-community-resources"></a>Recursos de la Comunidad de AD RMS
 
 El blob [RMS Developer's Corner](http://blogs.msdn.com/b/rms/) (Esquina del desarrollador de RMS) es el centro activo para el desarrollador de la protección de información.
 
@@ -50,6 +51,6 @@ Si no se ha registrado en Microsoft Connect, haga lo siguiente:
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

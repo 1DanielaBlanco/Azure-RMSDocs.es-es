@@ -3,6 +3,7 @@ title: "Cómo usar el seguimiento de documentos | Azure RMS"
 description: "El uso de la característica de seguimiento de documentos requiere algunos conocimientos sencillos sobre la administración de los metadatos asociados y el registro en el servicio."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -20,11 +21,11 @@ ms.openlocfilehash: 616d5dd088665abf6e7d435978b021b10c5ac3f5
 
 ---
 
-# Uso del seguimiento de documentos
+# <a name="how-to-use-document-tracking"></a>Uso del seguimiento de documentos
 
 El uso de la característica de seguimiento de documentos requiere algunos conocimientos sencillos sobre la administración de los metadatos asociados y el registro en el servicio.
 
-## Administración de metadatos de seguimiento de documentos
+## <a name="managing-document-tracking-metadata"></a>Administración de metadatos de seguimiento de documentos
 
 Cada uno de los sistemas operativos que admite el seguimiento de documentos tiene implementaciones similares. Puede tratarse como conjunto de propiedades que representan los metadatos, un nuevo parámetro agregado a los métodos de creación de directiva de usuario y un método para registrar la directiva que se va a seguir con el servicio de seguimiento de documentos.
 
