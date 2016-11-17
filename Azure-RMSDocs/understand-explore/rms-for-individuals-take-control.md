@@ -2,6 +2,7 @@
 title: "Cómo pueden los administradores controlar las cuentas que se han creado para RMS para usuarios | Azure Information Protection"
 description: "Cómo puede controlar las cuentas de usuario de Azure Active Directory si no desea convertir la suscripción a RMS para usuarios de la organización en una suscripción de pago."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,15 +13,15 @@ ms.assetid: a83880d0-f0f9-4a32-9e00-2f6635d7cc8d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2fd29eb6dec94535d0358fe0a2d9c9285fcd7cd1
-ms.openlocfilehash: 6f26faf8a96c388a4640701a12a77e3b4ef60567
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: f9999db44758251f7b9b4c8f86549b1ee36e83d3
 
 
 ---
 
 
 
-# Cómo pueden los administradores controlar las cuentas creadas para RMS para usuarios
+# <a name="how-administrators-can-control-the-accounts-created-for-rms-for-individuals"></a>Cómo pueden los administradores controlar las cuentas creadas para RMS para usuarios
 
 >*Se aplica a: Azure Information Protection*
 
@@ -40,12 +41,12 @@ Si no desea convertir su suscripción de RMS para usuarios de la organización e
 Para controlar las cuentas de usuario en el directorio de Azure, o para impedir que los usuarios se suscriban a RMS para usuarios, debe tener una suscripción de Azure y ser titular del directorio. Si todavía no tiene una suscripción a Azure, puede obtener una sin cargo alguno. Si se creó un directorio automáticamente durante el proceso de autoservicio, asuma la titularidad del dominio que se usó para crearla. Si ya tiene un directorio en Azure pero los usuarios especificaron un dominio nuevo que se usa en su organización, combine ese dominio con el directorio existente. Para obtener más información, consulte las instrucciones de [¿Qué es la suscripción de autoservicio de Azure?](https://azure.microsoft.com/documentation/articles/active-directory-self-service-signup/)
 
 
-## Pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 
 Si los usuarios en lugar de los administradores pueden crear sus cuentas en Azure Active Directory para RMS para personas, ¿cómo puede saber si lo han realizado?  Consulte [Cómo averiguar si los usuarios se suscribieron para obtener RMS para usuarios](rms-for-individuals-identify-sign-up.md).
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

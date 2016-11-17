@@ -2,6 +2,7 @@
 title: "¿Cómo funciona Azure RMS? | Azure Information Protection"
 description: "Analice cómo funciona Azure RMS, los controles criptográficos que usa y los diagramas detallados sobre cómo funciona este proceso."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/05/2016
 ms.topic: article

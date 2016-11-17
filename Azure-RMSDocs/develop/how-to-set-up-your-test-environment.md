@@ -3,6 +3,7 @@ title: "Prueba de la aplicación | Azure RMS"
 description: "Instrucciones sobre cómo configurar la aplicación para las pruebas."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article

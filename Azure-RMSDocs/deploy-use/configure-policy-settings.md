@@ -1,6 +1,8 @@
 ---
 title: "Configuración global de directivas | Azure Information Protection"
 description: Hay tres configuraciones en la directiva de Azure Information Protection que se aplican a todos los usuarios y todos los dispositivos.
+author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/04/2016
 ms.topic: article

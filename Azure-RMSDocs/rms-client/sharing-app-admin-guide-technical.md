@@ -2,6 +2,7 @@
 title: "Información general técnica de la aplicación Rights Management sharing | Azure Information Protection"
 description: "Detalles técnicos para administradores en redes empresariales que son responsables de implementar la aplicación RMS sharing para Windows."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article

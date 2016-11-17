@@ -1,6 +1,8 @@
 ---
 title: La directiva predeterminada | Azure Information Protection
 description: "Obtenga información sobre cómo está configurada la directiva predeterminada de Azure Information Protection. Si modifica la directiva predeterminada, puede tomar estos valores como referencia para devolver la directiva a la configuración predeterminada."
+author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/04/2016
 ms.topic: article

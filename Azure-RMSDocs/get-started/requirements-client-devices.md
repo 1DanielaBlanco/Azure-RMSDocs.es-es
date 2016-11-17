@@ -2,6 +2,7 @@
 title: "Compatibilidad de dispositivos cliente para la protección de datos | Azure Information Protection"
 description: Identifique los dispositivos que son compatibles con el servicio Azure Rights Management de Azure Information Protection.
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: get-started-article
@@ -12,20 +13,20 @@ ms.assetid: 93f8021d-43c5-47fe-ad63-8a1bacff9971
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 976281d2b1f9c87bbb0806fef98b2520772c507c
-ms.openlocfilehash: 3b9c126211389dfe14bb5f1cc4ec8be1213df49d
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 587aaff16ce57cd39ce5dc7eb30fd21f37442cda
 
 
 ---
 
 
-# Dispositivos cliente que son compatibles con la protección de datos de Azure Rights Management
+# <a name="client-devices-that-support-azure-rights-management-data-protection"></a>Dispositivos cliente que son compatibles con la protección de datos de Azure Rights Management
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
 Vea las secciones siguientes para identificar los dispositivos que son compatibles con el servicio Azure Rights Management, que ofrece protección de datos para Azure Information Protection.
 
-## Equipos
+## <a name="computers"></a>Equipos
 Los siguientes sistemas operativos de equipos son compatibles con el servicio Azure Rights Management:
 
 -   **Windows 7** (x86, x64)
@@ -38,7 +39,7 @@ Los siguientes sistemas operativos de equipos son compatibles con el servicio Az
 
 -   **Mac OS X**: versión mínima de Mac OS X 10.8 (Mountain Lion)
 
-## Dispositivos móviles
+## <a name="mobile-devices"></a>Dispositivos móviles
 Los siguientes sistemas operativos de dispositivos móviles son compatibles con el servicio Azure Rights Management:
 
 -   **Windows Phone**: Windows Phone 8.1
@@ -50,12 +51,12 @@ Los siguientes sistemas operativos de dispositivos móviles son compatibles con 
 -   **Tabletas de Windows**: Windows 10 Mobile y Windows 8.1 RT
 
 
-## Pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 Para comprobar otros requisitos, vea [Requisitos para Azure Information Protection](requirements-azure-rms.md).
 
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

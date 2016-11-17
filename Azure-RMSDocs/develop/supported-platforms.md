@@ -3,6 +3,7 @@ title: Plataformas compatibles | Azure RMS
 description: En este tema se identifican las plataformas de cliente y servidor compatibles con Rights Management Services SDK 2.1.
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -20,11 +21,11 @@ ms.openlocfilehash: eb20483bd3a2be60e1b9fcee173ebeabcb5b6d93
 
 ---
 
-# Plataformas compatibles
+# <a name="supported-platforms"></a>Plataformas compatibles
 
 En este tema se identifican las plataformas de cliente y servidor compatibles con Rights Management Services SDK 2.1.
 
-## Plataformas compatibles
+## <a name="supported-platforms"></a>Plataformas compatibles
 
 -   Windows 10
 -   Windows Server 2012 R2

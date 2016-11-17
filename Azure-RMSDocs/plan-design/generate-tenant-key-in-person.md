@@ -2,6 +2,7 @@
 title: Generar y transferir su clave de inquilino en persona&#58; CONTENIDO RETIRADO | Azure RMS
 description: "La información que aparece en este artículo se ha retirado porque ya no es pertinente, ya que ahora Azure Rights Management usa el Almacén de claves de Azure para las claves de inquilino administradas por el cliente (que también se conoce como BYOK, o &quot;aporte su propia clave&quot;)."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article

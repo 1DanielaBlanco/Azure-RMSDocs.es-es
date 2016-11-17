@@ -1,6 +1,8 @@
 ---
 title: "Instalación del cliente de Azure Information Protection | Azure Information Protection"
 description: "Instrucciones para instalar el cliente que agrega una barra de Information Protection a las aplicaciones de Office para que pueda seleccionar etiquetas de clasificación de los documentos y correos electrónicos."
+author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/01/2016
 ms.topic: article

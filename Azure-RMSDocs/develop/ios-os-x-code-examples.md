@@ -3,6 +3,7 @@ title: "Código de ejemplo de iOS/OS X | Azure RMS"
 description: "Este tema le presentará los elementos de código importantes para la versión de iOS/OS X de RMS SDK."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -20,7 +21,7 @@ ms.openlocfilehash: ef311877b1deb71a62d3554e513ef6fdab443c28
 
 ---
 
-# Código de ejemplo de iOS/OS X
+# <a name="iosos-x-code-examples"></a>Código de ejemplo de iOS/OS X
 
 Este tema le presentará los elementos de código importantes para la versión de iOS/OS X de RMS SDK.
 
@@ -28,12 +29,12 @@ Este tema le presentará los elementos de código importantes para la versión d
 
 
 
-## Uso de Microsoft Rights Management SDK 4.2: escenarios clave
+## <a name="using-the-microsoft-rights-management-sdk-42-key-scenarios"></a>Uso de Microsoft Rights Management SDK 4.2: escenarios clave
 
 
 A continuación se muestran ejemplos de código **Objective C** desde una aplicación de ejemplo más grande que representa los escenarios de desarrollo importantes para la orientación de este SDK. Estos muestran; uso del formato de archivo protegido de Microsoft que se reconoce como archivo protegido, el uso de formatos de archivo protegido personalizados y el uso de controles de interfaz de usuario personalizados.
 
-### Escenario: consumo de un archivo protegido RMS
+### <a name="scenario-consume-an-rms-protected-file"></a>Escenario: consumo de un archivo protegido RMS
 
 
 - **Paso 1**: Creación de un objeto [MSProtectedData](https://msdn.microsoft.com/library/dn758348.aspx).
@@ -109,7 +110,7 @@ A continuación se muestran ejemplos de código **Objective C** desde una aplica
             }
         }
 
-### Escenario: Creación de un nuevo archivo protegido mediante una plantilla
+### <a name="scenario-create-a-new-protected-file-using-a-template"></a>Escenario: Creación de un nuevo archivo protegido mediante una plantilla
 
 Este escenario comienza con la obtención de una lista de plantillas, [MSTemplateDescriptor](https://msdn.microsoft.com/library/dn790785.aspx), la selección de la primera de ellas para crear una directiva y, después, la creación y escritura en el nuevo archivo protegido.
 
@@ -154,7 +155,7 @@ Este escenario comienza con la obtención de una lista de plantillas, [MSTemplat
             }];
         }
 
-### Escenario: Apertura de un archivo protegido personalizado
+### <a name="scenario-open-a-custom-protected-file"></a>Escenario: Apertura de un archivo protegido personalizado
 
 
 -   **Paso 1**: Creación de [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx) a partir de una *serializedContentPolicy*.
@@ -212,7 +213,7 @@ Este escenario comienza con la obtención de una lista de plantillas, [MSTemplat
             }];
          }
 
-### Escenario: Creación de un archivo protegido personalizado mediante una directiva personalizada (ad hoc)
+### <a name="scenario-create-a-custom-protected-file-using-a-custom-adhoc-policy"></a>Escenario: Creación de un archivo protegido personalizado mediante una directiva personalizada (ad hoc)
 
 
 -   **Paso 1**: con una dirección de correo electrónico proporcionada por el usuario, creación de un descriptor de la directiva

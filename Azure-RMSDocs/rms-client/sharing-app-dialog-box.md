@@ -2,6 +2,7 @@
 title: "Opciones del cuadro de diálogo de la aplicación Rights Management sharing | Azure Information Protection"
 description: "Información útil para especificar las opciones en el cuadro de diálogo Agregar protección o en el cuadro de diálogo Uso compartido seguro de la aplicación RMS sharing. Verá este cuadro de diálogo cuando proteja un archivo para compartirlo o cuando proteja un archivo en contexto y elija permisos personalizados."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/04/2016
 ms.topic: article

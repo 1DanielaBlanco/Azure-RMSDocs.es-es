@@ -2,6 +2,7 @@
 title: "Eliminación de la protección de un archivo mediante la aplicación Rights Management sharing | Azure Information Protection"
 description: "Instrucciones para quitar la protección (es decir, desproteger) de un archivo protegido anteriormente con la aplicación RMS sharing."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: da95b938-eaad-4c83-a21e-ff1d4872aae4
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
-ms.openlocfilehash: ceb726e47c4eb9413b7d7eb5b1469e2a99992dda
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 3ef47e5dea1c6b56127e231ba6dba774c31cca90
 
 
 ---
 
-# Quitar la protección de un archivo mediante la aplicación Rights Management sharing
+# <a name="remove-protection-from-a-file-by-using-the-rights-management-sharing-application"></a>Quitar la protección de un archivo mediante la aplicación Rights Management sharing
 
 >*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 con SP1, Windows 8 y Windows 8.1*
 
@@ -27,7 +28,7 @@ Para quitar la protección (es decir, desproteger) de un archivo protegido anter
 > [!IMPORTANT]
 > Debe ser propietario del archivo para quitar la protección.
 
-## Para quitar la protección de un archivo
+## <a name="to-remove-protection-from-a-file"></a>Para quitar la protección de un archivo
 
 1.  En el Explorador de archivos, haga clic con el botón derecho en el archivo (por ejemplo, Sample.ptxt), seleccione **Proteger con RMS**, haga clic en **Proteger en contexto** y, luego, en **Quitar protección**:
 
@@ -39,18 +40,18 @@ Nota: Si no ve estas opciones, es probable que la aplicación RMS sharing no est
 
 El archivo protegido original se elimina (por ejemplo, Sample.ptxt) y se reemplaza con un archivo que tiene el mismo nombre pero la extensión de nombre de archivo desprotegido (por ejemplo, Sample.txt).
 
-## Ejemplos y otras instrucciones
+## <a name="examples-and-other-instructions"></a>Ejemplos y otras instrucciones
 Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de Rights Management e instrucciones de procedimientos, consulte las siguientes secciones de la guía de usuario de la aplicación para uso compartido de Rights Management:
 
 -   [Ejemplos de uso de la aplicación RMS sharing](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [¿Qué desea hacer?](sharing-app-user-guide.md#what-do-you-want-to-do)
+-   [¿Qué quiere hacer?](sharing-app-user-guide.md#what-do-you-want-to-do)
 
-## Véase también
-[Guía de usuario de la aplicación de uso compartido Rights Management](sharing-app-user-guide.md)
+## <a name="see-also"></a>Véase también
+[Guía de usuario de la aplicación Rights Management sharing](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

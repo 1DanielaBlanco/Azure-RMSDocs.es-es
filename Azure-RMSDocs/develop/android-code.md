@@ -3,6 +3,7 @@ title: "Ejemplos de código de Android | Azure RMS"
 description: "Este tema le presentará los elementos de código importantes para la versión de Android de RMS SDK."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -20,14 +21,14 @@ ms.openlocfilehash: febc212cb6bc4b91058aa0e9f18d1e51f751b552
 
 ---
 
-# Código de ejemplo de Android
+# <a name="android-code-examples"></a>Código de ejemplo de Android
 
 Este tema le presentará los elementos de código importantes para la versión de Android de RMS SDK.
 
 **Nota**: en el código de ejemplo y las descripciones siguientes, utilizaremos el término MSIPC (protección de la información de Microsoft y Control de cliente) para hacer referencia al proceso del cliente.
 
 
-## Uso de Microsoft Rights Management SDK 4.2: escenarios clave
+## <a name="using-the-microsoft-rights-management-sdk-42-key-scenarios"></a>Uso de Microsoft Rights Management SDK 4.2: escenarios clave
 
 A continuación se muestran ejemplos de código desde una aplicación de ejemplo más grande que representa los escenarios de desarrollo importantes para la orientación de este SDK. Estos muestran; uso del formato de archivo protegido de Microsoft que se reconoce como archivo protegido, el uso de formatos de archivo protegido personalizados y el uso de controles de interfaz de usuario personalizados.
 
@@ -35,7 +36,7 @@ A continuación se muestran ejemplos de código desde una aplicación de ejemplo
 
 La aplicación de ejemplo, *MSIPCSampleApp*, está disponible para su uso con este SDK para el sistema operativo Android. Consulte [rms ui sdk para android](https://github.com/AzureAD/rms-sdk-ui-for-android) en GitHub para obtener acceso a esta aplicación de ejemplo.
 
-### Escenario: consumo de un archivo protegido RMS
+### <a name="scenario-consume-an-rms-protected-file"></a>Escenario: consumo de un archivo protegido RMS
 
 -   **Paso 1**: Creación de [ProtectedFileInputStream](https://msdn.microsoft.com/library/dn790851.aspx)
 
@@ -197,7 +198,7 @@ La aplicación de ejemplo, *MSIPCSampleApp*, está disponible para su uso con es
                 }
 
 
-### Escenario: Creación de un nuevo archivo protegido mediante una plantilla
+### <a name="scenario-create-a-new-protected-file-using-a-template"></a>Escenario: Creación de un nuevo archivo protegido mediante una plantilla
 
 Este escenario comienza con la obtención de una lista de plantillas, la selección de la primera de ellas para crear una directiva y, a continuación, con la creación y escritura en el nuevo archivo protegido.
 
@@ -321,7 +322,7 @@ Este escenario comienza con la obtención de una lista de plantillas, la selecci
 
 
 
-### Escenario: Apertura de un archivo protegido personalizado
+### <a name="scenario-open-a-custom-protected-file"></a>Escenario: Apertura de un archivo protegido personalizado
 
 -   **Paso 1**: Creación de [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx) a partir de *serializedContentPolicy*.
 
@@ -436,7 +437,7 @@ Este escenario comienza con la obtención de una lista de plantillas, la selecci
         buffer.close();    customProtectedInputStream.close();  }  catch (IOException e)  {    ...  } }
 
 
-### Escenario: Creación de un archivo protegido personalizado mediante una directiva personalizada (ad hoc)
+### <a name="scenario-create-a-custom-protected-file-using-a-custom-adhoc-policy"></a>Escenario: Creación de un archivo protegido personalizado mediante una directiva personalizada (ad hoc)
 
 -   **Paso 1**: con una dirección de correo electrónico proporcionada por el usuario, creación de un descriptor de la directiva
 

@@ -3,6 +3,7 @@ title: "Cómo habilitar la aplicación de servicio para que funcione con RMS bas
 description: "En este tema se describe cómo configurar la aplicación de servicio para que use Azure Rights Management."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article

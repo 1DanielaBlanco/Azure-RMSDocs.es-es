@@ -2,6 +2,7 @@
 title: "Otras aplicaciones compatibles con las API de Rights Management: Instalación y configuración | Azure Information Protection"
 description: "Obtenga información sobre cómo el servicio Azure Rights Management de Azure Information Protection puede funcionar con otras aplicaciones para proteger los datos de su organización."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/10/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: c50a8cbb-d12f-4a0e-bc29-74c463e6ac3e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3b5f82e495291bd48d488f44bc72c1d478a879e0
-ms.openlocfilehash: 0ee1e316310df889f87b1bc7932d8970abae140f
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 28e81e174e1b1a39928fa47f9155c40e769b633f
 
 
 ---
 
-# Otras aplicaciones compatibles con las API de Rights Management
+# <a name="other-applications-that-support-the-rights-management-apis"></a>Otras aplicaciones compatibles con las API de Rights Management
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
@@ -28,11 +29,11 @@ Al usar Rights Management SDK, los desarrolladores internos pueden escribir apli
 
 De forma similar, muchos proveedores de software desarrollan aplicaciones que ofrecen soluciones para la protección de la información, que también se conocen como productos de administración de derechos empresariales (ERM). Un ejemplo común es un lector de PDF que es compatible con el servicio Azure Rights Management para plataformas específicas. Puede usar la tabla en [Aplicaciones compatibles con la protección de datos de Azure Rights Management](../get-started/requirements-applications.md) para identificar las aplicaciones que son compatibles con Rights Management (aplicaciones habilitadas para RMS) y, después, realizar una búsqueda en la web para comprar o descargar la aplicación.
 
-## Pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 
 Para ver la compatibilidad de otras aplicaciones y servicios con el servicio Azure Rights Management, vea [Compatibilidad de aplicaciones con el servicio Azure Rights Management](applications-support.md).
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 

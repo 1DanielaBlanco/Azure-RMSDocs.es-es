@@ -2,6 +2,7 @@
 title: "Instalación del cliente de Azure Information Protection&colon; Historial de publicación de versiones | Azure Information Protection"
 description: "Consulte las novedades o los cambios en una publicación del cliente de Azure Information Protection para Windows."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/27/2016
 ms.topic: article
