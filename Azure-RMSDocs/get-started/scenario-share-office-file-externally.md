@@ -2,6 +2,7 @@
 title: "Escenario: Compartir un archivo de Office con usuarios de otra organización | Azure Information Protection"
 description: "En este escenario y en la documentación de usuario correspondiente se usa la protección de Azure Rights Management para que los usuarios puedan enviar por correo electrónico de forma segura un archivo de Office a usuarios de otra organización."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/05/2016
 ms.topic: get-started-article
@@ -12,13 +13,13 @@ ms.assetid: c10a4d7b-f57a-4a43-b66e-477777be59cc
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f5c138b7a27c7577e5bff23d521ba36264ecc2a
-ms.openlocfilehash: 2a03ae13b269b1a7352dd81fea52fc68bed17d99
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 24b4e542a437a824c6783b02bde5bfb848cdeb3a
 
 
 ---
 
-# Escenario: Compartir un archivo de Office con usuarios de otra organización
+# <a name="scenario-share-an-office-file-with-users-in-another-organization"></a>Escenario: Compartir un archivo de Office con usuarios de otra organización
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
@@ -34,12 +35,12 @@ Este escenario es adecuado para el conjunto de circunstancias siguiente:
 
 -   Puede que el empleado esté interesado en saber cuándo el usuario externo abre este documento.
 
-## Instrucciones de implementación
+## <a name="deployment-instructions"></a>Instrucciones de implementación
 ![Instrucciones para el administrador para la implementación rápida de Azure RMS](../media/AzRMS_AdminBanner.png)
 
 Asegúrese de que se cumplen los siguientes requisitos antes de pasar a la documentación del usuario.
 
-## Requisitos para este escenario
+## <a name="requirements-for-this-scenario"></a>Requisitos para este escenario
 Para que funcionen las instrucciones de usuario para este escenario, debe disponer de lo siguiente:
 
 |Requisito|Si necesita más información|
@@ -50,7 +51,7 @@ Para que funcionen las instrucciones de usuario para este escenario, debe dispon
 |Los usuarios tienen Outlook de Office 2013|Si los usuarios tienen Office 2016 u Office 2010, reemplace la captura de pantalla por una versión equivalente para que la imagen coincida con lo que ven los usuarios.|
 |En la suscripción a Azure Information Protection se incluye el seguimiento de documentos|Si en la suscripción a Azure RMS no se incluye la revocación y el seguimiento de documentos, los usuarios no podrán completar todos los pasos de las instrucciones de usuario. En este caso, compre una suscripción que admita estas características o modifique las instrucciones de usuario para quitar los pasos que utilizan estas características.<br /><br />Consulte la [lista de características](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features) en el sitio de Azure Information Protection.|
 
-## Instrucciones de la documentación del usuario
+## <a name="user-documentation-instructions"></a>Instrucciones de la documentación del usuario
 Con la siguiente plantilla, copie y pegue las instrucciones de usuario en una comunicación dirigida a sus usuarios finales y realice estas modificaciones para reflejar su entorno:
 
 1.  Reemplace *&lt;nombre de tipo de documento de Office&gt;* por el tipo de documento que van a enviar los usuarios. Use nombres que sean específicos y familiares a sus flujos de trabajo, por ejemplo, "lista de precios", "tiempos de entrega" y "propuesta de puja" en lugar de "Documento de Word" y "Hoja de cálculo de Excel". Estas palabras más específicas ayudan a aumentar la posibilidad de que sigan las instrucciones al trabajar con esos documentos.
@@ -76,7 +77,7 @@ En la documentación de ejemplo se muestra el aspecto de estas instrucciones par
 
 ![Documentación de usuario de la plantilla para la implementación rápida de Azure RMS](../media/AzRMS_UsersBanner.png)
 
-### Cómo compartir un &lt;nombre de tipo de documento de Office&gt;
+### <a name="how-to-share-a-ltname-of-office-document-typegt"></a>Cómo compartir un &lt;nombre de tipo de documento de Office&gt;
 
 1.  Cree el mensaje de correo electrónico especificando la dirección o direcciones de correo electrónico, escriba el mensaje y adjunte el *&lt;nombre de tipo de documento de Office&gt;* al mensaje de correo electrónico. A continuación, en la pestaña **MENSAJE** , en el grupo **RMS** , haga clic en **Compartir protegido** y después otra vez en **Compartir protegido** :
 
@@ -106,16 +107,16 @@ Use el [portal de seguimiento de documentos](https://track.azurerms.com/) para r
 
     -   [Proteger un archivo que comparte por correo electrónico](../rms-client/sharing-app-protect-by-email.md)
 
-    -   [Realizar el seguimiento y revocar los documentos](../rms-client/sharing-app-track-revoke.md)
+    -   [Realizar un seguimiento de los documentos y revocarlos](../rms-client/sharing-app-track-revoke.md)
 
 -   Póngase en contacto con el departamento de soporte técnico:
 
     -   *&lt;detalles de contacto&gt;*
 
-### Documentación de usuario personalizada de ejemplo
+### <a name="example-customized-user-documentation"></a>Documentación de usuario personalizada de ejemplo
 ![Documentación de usuario de ejemplo para la implementación rápida de Azure RMS](../media/AzRMS_ExampleBanner.png)
 
-#### Cómo compartir una lista de precios con el cliente
+#### <a name="how-to-share-a-price-list-with-your-customer"></a>Cómo compartir una lista de precios con el cliente
 
 1.  Cree el mensaje de correo electrónico especificando la dirección o direcciones de correo electrónico, escriba el mensaje y adjunte la lista de precios más reciente al mensaje de correo electrónico. A continuación, en la pestaña **MENSAJE** , en el grupo **RMS** , haga clic en **Compartir protegido** y después otra vez en **Compartir protegido** :
 
@@ -145,7 +146,7 @@ Utilice el [portal de seguimiento de documentos](https://track.azurerms.com/) pa
 
     -   [Proteger un archivo que comparte por correo electrónico](../rms-client/sharing-app-protect-by-email.md)
 
-    -   [Realizar el seguimiento y revocar los documentos](../rms-client/sharing-app-track-revoke.md)
+    -   [Realizar un seguimiento de los documentos y revocarlos](../rms-client/sharing-app-track-revoke.md)
 
 -   Póngase en contacto con el departamento de soporte técnico:
 
@@ -154,6 +155,6 @@ Utilice el [portal de seguimiento de documentos](https://track.azurerms.com/) pa
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

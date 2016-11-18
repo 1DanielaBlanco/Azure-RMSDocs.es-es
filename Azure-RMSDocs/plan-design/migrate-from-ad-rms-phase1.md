@@ -2,6 +2,7 @@
 title: "Migración desde AD RMS a Azure Information Protection: Fase 1 | Azure Information Protection"
 description: "La fase 1 de la migración desde AD RMS a Azure Information Protection, donde se describen los pasos 1 a 4 de la migración de AD RMS a Azure Information Protection."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,35 +13,35 @@ ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d7e21c2bb07e82bc243e5ab01c0a21aa0fe274d1
-ms.openlocfilehash: 79daf0aec75aa16884b5b395a836cfac566ce13d
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 2db4041d7839d32a4d8f0bd468aa114d45665c27
 
 
 ---
 
-# Fase 1 de migración: configuración del lado servidor para AD RMS
+# <a name="migration-phase-1-serverside-configuration-for-ad-rms"></a>Fase 1 de migración: configuración del lado servidor para AD RMS
 
 >*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Office 365*
 
 Use la información siguiente para la fase 1 de la migración desde AD RMS a Azure Information Protection. En estos procedimientos se describen los pasos del 1 al 4 del tema [Migración desde AD RMS a Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md).
 
 
-## Paso 1: descargue la herramienta de administración de Azure Rights Management
+## <a name="step-1-download-the-azure-rights-management-administration-tool"></a>Paso 1: descargue la herramienta de administración de Azure Rights Management
 Vaya al Centro de descarga de Microsoft y descargue [Azure Rights Management Administration Tool](https://go.microsoft.com/fwlink/?LinkId=257721), que contiene el módulo de administración de Azure Rights Management para Windows PowerShell. Azure Rights Management (Azure RMS) es el servicio que ofrece la protección de datos para Azure Information Protection.
 
-Instale la herramienta. Para obtener instrucciones, vea [Instalación de Windows PowerShell para Azure Rights Management](../deploy-use/install-powershell.md).
+Instale la herramienta. Para obtener instrucciones, vea [Instalación de Windows PowerShell para Azure Rights Management](../deploy-use/install-powershell.md).
 
 > [!NOTE]
 > Si anteriormente ya ha descargado este módulo de Windows PowerShell, ejecute el comando siguiente para comprobar que su número de versión sea como mínimo 2.5.0.0: `(Get-Module aadrm -ListAvailable).Version`
 
-## Paso 2. Exportar los datos de configuración de AD RMS e importarlos en Azure Information Protection
+## <a name="step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-information-protection"></a>Paso 2. Exportar los datos de configuración de AD RMS e importarlos en Azure Information Protection
 Este paso es un proceso de dos fases:
 
 1.  Exporte los datos de configuración de AD RMS mediante la exportación de los dominios de publicación de confianza (TPD) a un archivo .xml. Este proceso es el mismo para todas las migraciones.
 
 2.  Importe los datos de configuración en Azure Information Protection. Hay diferentes procesos para este paso, según la configuración de la implementación de AD RMS actual y la topología preferida para su clave de inquilino de Azure RMS.
 
-### Exportar los datos de configuración de AD RMS
+### <a name="export-the-configuration-data-from-ad-rms"></a>Exportar los datos de configuración de AD RMS
 
 > [!IMPORTANT]
 > Antes de realizar este procedimiento, primero confirme que los servidores de AD RMS se ejecuten con el modo criptográfico 2, que es un requisito de Azure Information Protection.
@@ -56,7 +57,7 @@ Este paso es un proceso de dos fases:
 
 Siga este procedimiento en todos los clústeres de AD RMS, para todos los dominios de publicación confianza que tienen contenido protegido de su organización. No es necesario ejecutar esto en clústeres solo para licencias.
 
-#### Para exportar los datos de configuración (información del dominio de publicación de confianza)
+#### <a name="to-export-the-configuration-data-trusted-publishing-domain-information"></a>Para exportar los datos de configuración (información del dominio de publicación de confianza)
 
 1.  Inicie sesión en el clúster de AD RMS como un usuario con permisos de administración de AD RMS.
 
@@ -74,7 +75,7 @@ Siga este procedimiento en todos los clústeres de AD RMS, para todos los domini
 
 Cuando haya exportado todos los dominios de publicación de confianza, estará preparado para empezar el procedimiento para importar estos datos en Azure Information Protection.
 
-### Importar los datos de configuración en Azure Information Protection
+### <a name="import-the-configuration-data-to-azure-information-protection"></a>Importar los datos de configuración en Azure Information Protection
 Los procedimientos exactos para este paso dependen de la configuración actual de la implementación de AD RMS y de la topología preferida para su clave de inquilino de Azure Information Protection.
 
 La implementación de AD RMS actual usará una de las siguientes configuraciones con la clave del certificado emisor de licencias de servidor (SLC):
@@ -118,20 +119,20 @@ Para completar el paso 2, elija y seleccione las instrucciones para la ruta de m
 - [Migración de clave protegida por software a clave protegida por HSM](migrate-softwarekey-to-hsmkey.md)
 
 
-## Paso 3: Activar el inquilino de Azure Information Protection
+## <a name="step-3-activate-your-azure-information-protection-tenant"></a>Paso 3: Activar el inquilino de Azure Information Protection
 Para realizar este paso necesita activar el servicio Azure Rights Management. Las instrucciones se describen por completo en el artículo [Activar Azure Rights Management](../deploy-use/activate-service.md).
 
 
 > [!TIP]
 > Si tiene una suscripción a Office 365, puede activar el servicio Azure Rights Management desde el Centro de administración de Office 365 o el Portal de Azure clásico. Se recomienda usar el Portal de Azure clásico, ya que usará este portal de administración para completar el paso siguiente.
 
-**¿Y si el inquilino de Azure Information Protection ya está activado?** Si el servicio Azure Rights Management ya está activado en su organización, es posible que los usuarios ya hayan usado Azure Information Protection para proteger el contenido con una clave de inquilino generada automáticamente (y las plantillas predeterminadas) en lugar de las claves (y plantillas) existentes de AD RMS. Esto es improbable que ocurra en equipos que estén bien administrados en la intranet, ya que se configuran automáticamente para su infraestructura de AD RMS. Pero esto puede suceder en equipos de grupo de trabajo o equipos que se conectan con poca frecuencia a la intranet. Desafortunadamente, también es difícil identificar estos equipos, motivo por el que se recomienda no activar el servicio antes de importar los datos de configuración de AD RMS.
+**¿Qué ocurre si el inquilino de Azure Information Protection ya está activado?** Si el servicio Azure Rights Management ya está activado en su organización, es posible que los usuarios ya hayan usado Azure Information Protection para proteger el contenido con una clave de inquilino generada automáticamente (y las plantillas predeterminadas) en lugar de las claves (y plantillas) existentes de AD RMS. Esto es improbable que ocurra en equipos que estén bien administrados en la intranet, ya que se configuran automáticamente para su infraestructura de AD RMS. Pero esto puede suceder en equipos de grupo de trabajo o equipos que se conectan con poca frecuencia a la intranet. Desafortunadamente, también es difícil identificar estos equipos, motivo por el que se recomienda no activar el servicio antes de importar los datos de configuración de AD RMS.
 
 Si ya está activado el inquilino de Azure Information Protection y puede identificar estos equipos, asegúrese de que ejecuta el script CleanUpRMS_RUN_Elevated.cmd en esos equipos, como se describe en el paso 5. La ejecución de este script les obliga a reinicializar el entorno de usuario, así descargan la clave de inquilino y las plantillas importadas actualizadas.
 
 Además, si ha creado plantillas personalizadas que quiera usar después de la migración, debe exportarlas e importarlas. Este procedimiento se explica en el paso siguiente. 
 
-## Paso 4. Configure las plantillas importadas.
+## <a name="step-4-configure-imported-templates"></a>Paso 4. Configure las plantillas importadas.
 Como las plantillas que ha importado tienen el estado predeterminado **Archivada**, necesita cambiar este estado a **Publicada** si quiere que los usuarios puedan usar estas plantillas con el servicio Azure Rights Management.
 
 Las plantillas que se importan de AD RMS tienen el mismo aspecto y comportamiento que las plantillas personalizadas que se pueden crear en el Portal de Azure clásico. Para publicar las plantillas importadas para que los usuarios puedan verlas y seleccionarlas desde las aplicaciones, vea [Configuración de plantillas personalizadas para el servicio Azure Rights Management](../deploy-use/configure-custom-templates.md).
@@ -144,7 +145,7 @@ Los cambios en la plantilla que debe realizar para este paso:
 
 - Si las plantillas de AD RMS usan el grupo **CUALQUIERA**, debe agregar manualmente el grupo y los derechos equivalentes.
 
-## Procedimiento si ha creado plantillas personalizadas antes de la migración
+## <a name="procedure-if-you-created-custom-templates-before-the-migration"></a>Procedimiento si ha creado plantillas personalizadas antes de la migración
 
 Si ha creado plantillas personalizadas antes de la migración (antes o después de activar el servicio Azure Rights Management), las plantillas no estarán disponibles para los usuarios después de la migración, incluso si se habían establecido en **Publicada**. Para que estén disponibles para los usuarios, primero debe hacer lo siguiente: 
 
@@ -157,9 +158,9 @@ Si ha creado plantillas personalizadas antes de la migración (antes o después 
 Después puede publicar o archivar estas plantillas como lo haría con cualquier otra plantilla que cree después de la migración.
 
 
-## Procedimiento si las plantillas de AD RMS usan el grupo **CUALQUIERA**
+## <a name="procedure-if-your-templates-in-ad-rms-used-the-anyone-group"></a>Procedimiento si las plantillas de AD RMS usan el grupo **CUALQUIERA**
 
-Si las plantillas de AD RMS estaban asignadas al grupo **CUALQUIERA**, este grupo se quitará automáticamente al importar las plantillas en Azure Information Protection. Necesita agregar de forma manual el grupo o usuarios equivalentes y los mismos derechos a las plantillas importadas. El grupo equivalente de Azure Information Protection se denomina **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@<nombre_de_inquilino>.onmicrosoft.com**. Por ejemplo, este grupo podría tener un aspecto similar al siguiente grupo de Contoso: **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**.
+Si las plantillas de AD RMS estaban asignadas al grupo **CUALQUIERA**, este grupo se quitará automáticamente al importar las plantillas en Azure Information Protection. Necesita agregar de forma manual el grupo o usuarios equivalentes y los mismos derechos a las plantillas importadas. El grupo equivalente de Azure Information Protection se denomina **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@<tenant_name>.onmicrosoft.com**. Por ejemplo, este grupo puede tener un aspecto similar al siguiente para Contoso: **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**.
 
 Si no está seguro de si las plantillas de AD RMS incluyen el grupo CUALQUIERA, puede usar el siguiente script de Windows PowerShell de ejemplo para identificar estas plantillas. Para más información sobre el uso de Windows PowerShell con AD RMS, vea [Using Windows PowerShell to Administer AD RMS](https://technet.microsoft.com/library/ee221079%28v=ws.10%29.aspx) (Uso de Windows PowerShell para administrar AD RMS).
 
@@ -175,7 +176,7 @@ Puede ver el grupo de su organización creado automáticamente si copia una de l
 > Debido a esta diferencia entre los dos grupos, puede que tenga que agregar también usuarios externos además del grupo "AllStaff". Actualmente no se admiten direcciones de correo electrónico externas para grupos.
 
 
-### Script de ejemplo de Windows PowerShell para identificar plantillas de AD RMS que incluyen el grupo CUALQUIERA
+### <a name="sample-windows-powershell-script-to-identify-ad-rms-templates-that-include-the-anyone-group"></a>Script de ejemplo de Windows PowerShell para identificar plantillas de AD RMS que incluyen el grupo CUALQUIERA
 Esta sección contiene el script de ejemplo que le ayuda a identificar plantillas de AD RMS que tienen definido el grupo CUALQUIERA, tal como se ha descrito en la sección anterior.
 
 **Aviso de declinación de responsabilidades:** este script de ejemplo no es compatible con ningún servicio o programa de soporte técnico Standard de Microsoft. Este script de ejemplo se proporciona TAL CUAL sin garantía de ningún tipo.
@@ -213,12 +214,12 @@ Remove-PSDrive MyRmsAdmin -force
 ```
 
 
-## Pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 Vaya a [Fase 2: Configuración del lado cliente](migrate-from-ad-rms-phase2.md).
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

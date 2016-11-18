@@ -2,6 +2,7 @@
 title: El cliente| Azure Information Protection
 description: "Microsoft Azure Information Protection proporciona una solución cliente/servidor que ayuda a proteger los datos de la organización. El cliente (el cliente de Azure Information Protection o el cliente de Rights Management) se integra con aplicaciones que ejecuta en equipos y dispositivos móviles."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -13,13 +14,13 @@ ROBOTS: noindex,nofollow
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7c7945e9587990e2f2893ffb47bc2f2534d41a8f
-ms.openlocfilehash: 5685134a6da93e193a2f7dc67cba5f3dea7da6a9
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 70f10569884811b0b8dfab9b138399720ff48267
 
 
 ---
 
-# El lado cliente de Azure Information Protection
+# <a name="the-client-side-of-azure-information-protection"></a>El lado cliente de Azure Information Protection
 
 >*Se aplica a: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 con SP1, Windows 8, Windows 8.1*
 
@@ -37,18 +38,18 @@ Use la siguiente documentación si necesita obtener más información sobre la i
 
 - [Instalación del cliente de Azure Information Protection](info-protect-client.md)
 
-- [Notas de la implementación del cliente de RMS](client-deployment-notes.md)
+- [Notas de la implementación del cliente RMS](client-deployment-notes.md)
 
 - [Protección de RMS con la infraestructura de clasificación de archivos (FCI) de Windows Server](configure-fci.md)
 
-- [Aplicación de uso compartido Rights Management para Windows](sharing-app-windows.md)
+- [Aplicación Rights Management sharing para Windows](sharing-app-windows.md)
 
 
-## Consulte también
+## <a name="see-also"></a>Consulte también
 [Comparación de Azure Information Protection y AD RMS](../understand-explore/compare-azure-rms-ad-rms.md)
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

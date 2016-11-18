@@ -3,6 +3,7 @@ title: Formatos de archivo compatibles | Azure RMS
 description: "La versión actual de la API de archivo admite protección nativa para archivos de MS Office, PDF y protección PFile para los demás formatos de archivo."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,17 +15,17 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 0baa6a5ceeba8ae2e276ffe09edb54060671d8be
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: f5fa3082e407e207f33f041d22661888a13566b2
 
 
 ---
 
-# Formatos de archivo compatibles
+# <a name="supported-file-formats"></a>Formatos de archivo compatibles
 
 La API de archivo admite formatos nativo y Pfile.
 
-## Formatos de archivo compatibles
+## <a name="supported-file-formats"></a>Formatos de archivo compatibles
 
 La versión actual de la API de archivo admite protección nativa para archivos de Microsoft Office, archivos PDF (Portable Document Format) y protección PFile para los demás formatos de archivo. Los archivos PDF pueden tener opcionalmente aplicada protección PFile.
 
@@ -33,16 +34,16 @@ La versión actual de la API de archivo admite protección nativa para archivos 
 
 Los administradores pueden establecer claves del Registro para configurar si los archivos deben protegerse y cómo en función de su extensión de nombre de archivo. Para más información sobre cómo configurar la protección de archivos cuando se utiliza la API de archivos, consulte [File API configuration](file-api-configuration.md) (Configuración de la API de archivo).
 
-## Temas relacionados
+## <a name="related-topics"></a>Temas relacionados
 
 * [Notas para el desarrollador](developer-notes.md)
-* [Configuración de la API de archivo](file-api-configuration.md)
+* [File API configuration](file-api-configuration.md) (Configuración de la API de archivo)
  
 
  
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

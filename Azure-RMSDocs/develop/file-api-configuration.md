@@ -3,6 +3,7 @@ title: "Configuración de la API de archivo | Azure RMS"
 description: "El comportamiento de la API de archivo puede configurarse a través de los valores del Registro."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 734ff9735adbf5aac5824b5c823a1fdcaf245d4e
-ms.openlocfilehash: 92df5a261565b83e71a6bfd1a2d432072815bd27
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 02ba5c914553e8ade9b6cf43e1e2349b91fdaa1b
 
 
 ---
 
-# Configuración de la API de archivo
+# <a name="file-api-configuration"></a>Configuración de la API de archivo
 
 
 El comportamiento de la API de archivo puede configurarse a través de los valores del Registro.
@@ -32,17 +33,17 @@ La API de archivo proporciona dos tipos de protección: protección nativa y pro
 
 Para obtener más información sobre los formatos de archivo compatibles, consulte **API de archivo: detalles sobre la compatibilidad de archivos** en este tema.
 
-## Tipos y descripciones de las claves y los valores de clave
+## <a name="keykey-value-types-and-descriptions"></a>Tipos y descripciones de las claves y los valores de clave
 
 En las secciones siguientes se describen las claves y los valores de clave que controlan el cifrado.
 
-### HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection
+### <a name="hkeylocalmachinesoftwaremicrosoftmsipcfileprotection"></a>HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection
 
 **Tipo**: clave
 
 **Descripción**: contiene la configuración general de la API de archivo.
 
-### HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\&lt;EXT&gt;
+### <a name="hkeylocalmachinesoftwaremicrosoftmsipcfileprotectionltextgt"></a>HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\&lt;EXT&gt;
 
 **Tipo**: clave
 
@@ -55,7 +56,7 @@ En las secciones siguientes se describen las claves y los valores de clave que c
 Establezca el valor **Encryption** en la clave para especificar el comportamiento de protección. Si no se establece el valor **Encryption**, se observa el comportamiento predeterminado del tipo de archivo.
 
 
-### HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\&lt;EXT&gt;\Encryption*
+### <a name="hkeylocalmachinesoftwaremicrosoftmsipcfileprotectionltextgtencryption"></a>HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\&lt;EXT&gt;\Encryption*
 
 **Tipo**: REG_SZ
 
@@ -76,7 +77,7 @@ Establezca el valor **Encryption** en la clave para especificar el comportamient
 
 Si se establece otro valor o si no se establece ningún valor, el resultado será el comportamiento predeterminado.
 
-## Comportamiento predeterminado de los diferentes formatos de archivo
+## <a name="default-behavior-for-different-file-formats"></a>Comportamiento predeterminado de los diferentes formatos de archivo
 
 -   **Archivos de Office** Está habilitado el cifrado nativo.
 -   **Archivos txt, xml, jpg, jpeg, pdf, png, tiff, bmp, gif, giff, jpe, jfif, jif** Está habilitado el cifrado nativo (xxx se convierte en pxxx).
@@ -84,7 +85,7 @@ Si se establece otro valor o si no se establece ningún valor, el resultado ser�
 
 Si se intenta cifrar un tipo de archivo que está bloqueado, se produce el error [IPCERROR\_FILE\_ENCRYPT\_BLOCKED](https://msdn.microsoft.com/library/hh535248.aspx).
 
-### API de archivo: detalles sobre la compatibilidad de archivos
+### <a name="file-api-file-support-details"></a>API de archivo: detalles sobre la compatibilidad de archivos
 
 Puede agregarse compatibilidad nativa para cualquier tipo de archivo (extensión). Por ejemplo, en el caso de cualquier extensión &lt;ext&gt; (que no es de Office), se usará \*.p&lt;ext&gt; si la configuración de administración de esa extensión es "NATIVE".
 
@@ -106,7 +107,7 @@ Puede agregarse compatibilidad nativa para cualquier tipo de archivo (extensión
 -   Tipo de protección = PFile: sample.*zzz* se cifra y se denomina sample.*zzz*.pfile, donde *zzz* es la extensión de archivo original.
 -   Off: deshabilita el cifrado.
 
-### Ejemplos
+### <a name="examples"></a>Ejemplos
 
 Las opciones siguientes permiten el cifrado PFile de archivos txt. A los archivos de Office se les aplicará la protección nativa (de forma predeterminada), a los archivos txt se les aplicará la protección PFile y a los demás archivos se les bloqueará la protección (de forma predeterminada).
 
@@ -146,7 +147,7 @@ HKEY_LOCAL_MACHINE
                   Encryption = Off
 ```
 
-## Temas relacionados
+## <a name="related-topics"></a>Temas relacionados
 
 - [Notas para el desarrollador](developer-notes.md)
 - [IPCERROR\_FILE\_ENCRYPT\_BLOCKED](https://msdn.microsoft.com/library/hh535248.aspx)
@@ -156,6 +157,6 @@ HKEY_LOCAL_MACHINE
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

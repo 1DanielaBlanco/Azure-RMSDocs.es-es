@@ -2,6 +2,7 @@
 title: "Mapa de ruta de implementación de Azure Information Protection | Azure Information Protection"
 description: "Siga estos pasos para preparar, implementar y administrar Azure Information Protection en su organización."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/05/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4a6d07e9a24293f054915b5598c63e118c9c1430
-ms.openlocfilehash: ff205efebf9b02ed0bfb1c7e275d34981870c26a
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 884a4528da6fa79d92f39fa08860773bcc5552d3
 
 
 ---
 
-# Mapa de ruta de implementación de Azure Information Protection
+# <a name="azure-information-protection-deployment-roadmap"></a>Mapa de ruta de implementación de Azure Information Protection
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
@@ -36,20 +37,20 @@ Elija el mapa de ruta de implementación que sea adecuado para su organización 
 - [Usar solo la protección de datos](#deployment-roadmap-for-data-protection-only)
 
 
-## Mapa de ruta de implementación para clasificación, etiquetado y protección
+## <a name="deployment-roadmap-for-classification-labeling-and-protection"></a>Mapa de ruta de implementación para clasificación, etiquetado y protección
 
 > [!NOTE]
 > ¿Ya usa el servicio Azure Rights Management para la protección de datos? Puede omitir muchos de estos pasos y centrarse en los pasos 3 y 5.1.
 
-### Paso 1: Confirmar la suscripción y asignar licencias de usuario
+### <a name="step-1-confirm-your-subscription-and-assign-user-licenses"></a>Paso 1: Confirmar la suscripción y asignar licencias de usuario
 Revise la [información de la suscripción](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing) y la [lista de características](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features) en el sitio de Azure Information Protection para confirmar que la organización tiene una suscripción en la que se incluyen las funciones y las características que necesita. Después, asigne una licencia de esta suscripción a todos los usuarios de la organización que vayan a clasificar, etiquetar y proteger documentos y correos electrónicos.
 
-### Paso 2: Preparar la cuenta del inquilino para usar Azure Information Protection
+### <a name="step-2-prepare-your-tenant-account-to-use-azure-information-protection"></a>Paso 2: Preparar la cuenta del inquilino para usar Azure Information Protection
 Antes de empezar a usar Azure Information Protection, siga este procedimiento de preparación:
 
 - Asegúrese de que tiene cuentas de usuario y grupos en Office 365 o Azure Active Directory que Azure Information Protection usará para autenticar a los usuarios de la organización. Si es necesario, cree estas cuentas y grupos, o sincronícelos desde el directorio local. Para más información, vea [Preparación de Azure Information Protection](prepare.md).
 
-### Paso 3: Configurar e implementar la clasificación y el etiquetado
+### <a name="step-3-configure-and-deploy-classification-and-labeling"></a>Paso 3: Configurar e implementar la clasificación y el etiquetado
 
 Si aún no tiene una estrategia de clasificación, revise la [directiva predeterminada de Azure Information Protection](../deploy-use/configure-policy-default.md) y úsela como base para determinar las etiquetas de clasificación que se asignarán a los datos de la organización. Puede personalizarlas para adaptarlas a sus requisitos empresariales. 
 
@@ -71,7 +72,7 @@ Después de un período de tiempo, cuando los usuarios estén acostumbrados a et
 
 En este momento, no seleccione la opción para proteger documentos y correos electrónicos.
 
-### Paso 4: Preparación para la protección de datos de Rights Management
+### <a name="step-4-prepare-for-rights-management-data-protection"></a>Paso 4: Preparación para la protección de datos de Rights Management
 
 Cuando los usuarios estén acostumbrados a etiquetar documentos y correos electrónicos, podrá empezar a introducir la protección de datos para la información más confidencial. En esta fase es necesario realizar la preparación siguiente para el servicio Azure Rights Management:
 
@@ -89,7 +90,7 @@ De forma opcional, considera configurar lo siguiente:
 
 -   Registro de uso para que puedas controlar cómo se usa Rights Management en tu organización. Este paso puedes hacerlo ahora o más tarde. Para obtener más información, consulte [Registro y análisis del uso del servicio Azure Rights Management](../deploy-use/log-analyze-usage.md).
 
-### Paso 5: Configurar la directiva de Azure Information Protection, las aplicaciones y los servicios para la protección de datos de Rights Management
+### <a name="step-5-configure-your-azure-information-protection-policy-applications-and-services-for-rights-management-data-protection"></a>Paso 5: Configurar la directiva de Azure Information Protection, las aplicaciones y los servicios para la protección de datos de Rights Management
 
 1. Actualizar la directiva de Azure Information Protection para aplicar la protección de datos
     
@@ -115,21 +116,21 @@ De forma opcional, considera configurar lo siguiente:
     
     Si tiene servicios locales que quiere usar con el servicio Azure Rights Management, instale y configure el conector de Rights Management. Para más información, consulte [Implementación del conector de Azure Rights Management](../deploy-use/deploy-rms-connector.md).
 
-### Paso 4: Usar y supervisar las soluciones de protección de datos
+### <a name="step-4-use-and-monitor-your-data-protection-solutions"></a>Paso 4: Usar y supervisar las soluciones de protección de datos
 Ahora está preparado para proteger los datos y registrar la forma en que su compañía usa Rights Management. Para obtener más información sobre cómo contribuir en esta fase de implementación, vea [Ayuda a los usuarios para proteger archivos mediante Azure Rights Management](../deploy-use/help-users.md) y [Registro y análisis del uso del servicio Azure Rights Management](../deploy-use/log-analyze-usage.md).
 
 Si le interesa proteger automáticamente los archivos mediante la infraestructura de clasificación de archivos en un servidor de archivos basado en Windows, consulte [Protección de RMS con la infraestructura de clasificación de archivos (FCI) de Windows Server](../rms-client/configure-fci.md).
 
-### Paso 5: Administrar el servicio Rights Management para la cuenta de inquilino según sea necesario
+### <a name="step-5-administer-the-rights-management-service-for-your-tenant-account-as-needed"></a>Paso 5: Administrar el servicio Rights Management para la cuenta de inquilino según sea necesario
 Cuando empiece a usar el servicio Azure Rights Management, es posible que le resulte útil usar Windows PowerShell para procesar con scripts o automatizar cambios administrativos. Para más información, vea [Administración del servicio Azure Rights Management mediante Windows PowerShell](../deploy-use/administer-powershell.md).
 
 
-## Mapa de ruta de implementación para solo la protección de datos
+## <a name="deployment-roadmap-for-data-protection-only"></a>Mapa de ruta de implementación para solo la protección de datos
 
-### Paso 1: Confirme que tiene una suscripción que incluye Azure Rights Management.
+### <a name="step-1-confirm-that-you-have-a-subscription-that-includes-azure-rights-management"></a>Paso 1: Confirme que tiene una suscripción que incluye Azure Rights Management.
 Revise la [información de la suscripción](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing) y la [lista de características](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features) en el sitio de Azure Information Protection para confirmar que la organización tiene una suscripción en la que se incluyen las funciones y las características que necesita. Después, asigne una licencia de esta suscripción a todos los usuarios de la organización que vayan a proteger documentos y correos electrónicos con el servicio Azure Rights Management.
 
-### Paso 2: Preparar la cuenta de inquilino para usar el servicio Azure Rights Management
+### <a name="step-2-prepare-your-tenant-account-to-use-the-azure-rights-management-service"></a>Paso 2: Preparar la cuenta de inquilino para usar el servicio Azure Rights Management
 Antes de empezar a usar [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)], tenga en cuenta los siguientes pasos previos:
 
 1.  Asegúrese de que el inquilino de Office 365 tenga las cuentas de usuario y los grupos que usará Azure Information Protection para autenticar a los usuarios de su organización. Si es necesario, cree estas cuentas y grupos, o sincronícelos desde el directorio local. Para más información, consulte [Preparing for Azure Rights Management](prepare.md) (Preparación para Azure Rights Management).
@@ -148,7 +149,7 @@ De forma opcional, considera configurar lo siguiente:
 
 -   Registro de uso para que puedas controlar cómo se usa Rights Management en tu organización. Este paso puedes hacerlo ahora o más tarde. Para obtener más información, consulte [Registro y análisis del uso del servicio Azure Rights Management](../deploy-use/log-analyze-usage.md).
 
-### Paso 3: Configure las aplicaciones y servicios para Rights Management.
+### <a name="step-3-configure-your-applications-and-services-for-rights-management"></a>Paso 3: Configure las aplicaciones y servicios para Rights Management.
 
 1. Implementar la aplicación Rights Management sharing
     
@@ -171,18 +172,18 @@ De forma opcional, considera configurar lo siguiente:
     Si tiene servicios locales que quiere usar con el servicio Azure Rights Management, instale y configure el conector de Rights Management. Para más información, consulte [Implementación del conector de Azure Rights Management](../deploy-use/deploy-rms-connector.md).
 
 
-### Paso 4: Usar y supervisar las soluciones de protección de datos
+### <a name="step-4-use-and-monitor-your-data-protection-solutions"></a>Paso 4: Usar y supervisar las soluciones de protección de datos
 Ahora está preparado para proteger los datos y registrar la forma en que su compañía usa Rights Management. Para obtener más información sobre cómo contribuir en esta fase de implementación, vea [Ayuda a los usuarios para proteger archivos mediante Azure Rights Management](../deploy-use/help-users.md) y [Registro y análisis del uso del servicio Azure Rights Management](../deploy-use/log-analyze-usage.md).
 
 Si le interesa proteger automáticamente los archivos mediante la infraestructura de clasificación de archivos en un servidor de archivos basado en Windows, consulte [Protección de RMS con la infraestructura de clasificación de archivos (FCI) de Windows Server](../rms-client/configure-fci.md).
 
-### Paso 5: Administrar el servicio Rights Management para la cuenta de inquilino según sea necesario
+### <a name="step-5-administer-the-rights-management-service-for-your-tenant-account-as-needed"></a>Paso 5: Administrar el servicio Rights Management para la cuenta de inquilino según sea necesario
 Cuando empiece a usar el servicio Azure Rights Management, es posible que le resulte útil usar Windows PowerShell para procesar con scripts o automatizar cambios administrativos. Para más información, vea [Administración del servicio Azure Rights Management mediante Windows PowerShell](../deploy-use/administer-powershell.md).
 
 
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

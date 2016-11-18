@@ -3,6 +3,7 @@ title: "Paso 5 del tutorial de inicio rápido | Azure Information Protection"
 description: "Paso 5 del tutorial introductorio para probar rápidamente Microsoft Azure Information Protection para su organización, que debería tardar unos 30 minutos."
 keywords: 
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: get-started-article
@@ -13,14 +14,14 @@ ms.assetid: 4e59a3b3-f0f4-4535-8b96-cac68303d855
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1af9f3b3451bf8ceafbaf3cddd2b26c37fe9d597
-ms.openlocfilehash: d607c19d37da6b6fb23513067e9e30f33f0260de
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 5844ddd3f675cdc5a88de3abc3170d7e8a89aee9
 
 
 ---
 
 
-# Paso 5: ver el funcionamiento del uso compartido de archivos protegidos y realizar un seguimiento del documento 
+# <a name="step-5-see-sharing-of-protected-files-in-action-and-track-your-document"></a>Paso 5: ver el funcionamiento del uso compartido de archivos protegidos y realizar un seguimiento del documento 
 
 >*Se aplica a: Azure Information Protection*
 
@@ -28,7 +29,7 @@ Para este paso final del tutorial, busque un documento de Word que ya haya cread
 
 A continuación, estará listo para compartir de forma segura este documento por correo electrónico. 
 
-## Para compartir de forma segura el documento por correo electrónico
+## <a name="to-safely-share-your-document-by-email"></a>Para compartir de forma segura el documento por correo electrónico
 
 1.  En Word, abra el documento. Verá que la etiqueta predeterminada de **Interno** se aplica de nuevo automáticamente. 
 
@@ -68,13 +69,13 @@ A continuación, estará listo para compartir de forma segura este documento por
 
 Ahora que ha enviado el documento protegido, está listo para pedir a los destinatarios que esperen a que llegue para luego abrirlo. Pero no debe cerrar Word porque lo volveremos a usar en el último procedimiento para realizar un seguimiento del documento compartido.
 
-## Pedir a los destinatarios que abran el documento por correo electrónico
+## <a name="ask-your-recipients-to-open-the-emailed-document"></a>Pedir a los destinatarios que abran el documento por correo electrónico
 
 Los destinatarios pueden usar muchos dispositivos para leer el documento protegido que envía como datos adjuntos por correo electrónico. Entre los dispositivos, se encuentran el iPad, el iPhone, tabletas y teléfonos Android, y equipos Mac, así como los equipos Windows.
 
 Pídales que lean el mensaje de correo electrónico que ha enviado. Teniendo en cuenta que esta es la primera vez que han recibido datos adjuntos que están protegidos por Rights Management, solicíteles que hagan clic en el vínculo de las instrucciones. Después, verán la página [Bienvenido a Microsoft RMS](https://portal.azurerms.com/#/rmshelp) con instrucciones para instalar la aplicación RMS sharing y, si es necesario, suscribirse a una cuenta gratuita. Después, están listos para leer el documento adjunto protegido.
 
-### Instrucciones para los destinatarios: para ver los datos adjuntos del documento protegido
+### <a name="instructions-for-recipient-to-view-the-protected-document-attachment"></a>Instrucciones para los destinatarios: para ver los datos adjuntos del documento protegido
 
 1. Abra uno de los documentos adjuntos para leer el documento:
     
@@ -94,7 +95,7 @@ Como paso opcional, el destinatario puede reenviar el correo electrónico a otra
 
 Ahora que el destinatario ha abierto el archivo adjunto y lo ha enviado de forma opcional a alguien más, espere la notificación por correo electrónico que informa de esta actividad. En cambio, los mensajes de correo electrónico son fáciles de perder con el tiempo, así que una mejor manera de realizar un seguimiento de quién tuvo acceso al documento es usar el sitio de seguimiento de documentos, que se explica en el procedimiento final.
 
-## Para hacer un seguimiento de un documento protegido
+## <a name="to-track-your-protected-document"></a>Para hacer un seguimiento de un documento protegido
 
 1.  De nuevo en Word, en la pestaña **Inicio** del grupo **RMS**, haga clic en **Uso compartido protegido** y luego haga clic en **Hacer seguimiento de uso** del menú:
 
@@ -119,12 +120,12 @@ Puede volver a este sitio para realizar un seguimiento de más actividad relacio
 |Si desea obtener más información|Información adicional|
 |--------------------------------|--------------------------|
 |Todas las instrucciones y los métodos alternativos para proteger los archivos que comparte por correo electrónico|[Protección de un archivo que comparte por correo electrónico con la aplicación Rights Management sharing](../rms-client/sharing-app-protect-by-email.md)|
-|Acerca de las opciones del cuadro de diálogo **Uso compartido seguro**|[Opciones del cuadro de diálogo para la aplicación de uso compartido Rights Management](../rms-client/sharing-app-dialog-box.md)|
+|Acerca de las opciones del cuadro de diálogo **Uso compartido seguro**|[Opciones del cuadro de diálogo para la aplicación Rights Management sharing](../rms-client/sharing-app-dialog-box.md)|
 |Sobre la cuenta gratuita para que se registren otros usuarios|[RMS para individuos y Azure Rights Management](../understand-explore/rms-for-individuals.md)|
-|Sobre usar el sitio de seguimiento de documentos|[Realizar el seguimiento y revocar los documentos](../rms-client/sharing-app-track-revoke.md)
+|Sobre usar el sitio de seguimiento de documentos|[Realizar un seguimiento de los documentos y revocarlos](../rms-client/sharing-app-track-revoke.md)
 
 
-## Pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 
 Ahora que ha visto la directiva predeterminada de Azure Information Protection, cómo personalizarla y cómo funciona el etiquetado en un documento de Word, pruebe algunas de las otras opciones y vea cómo funcionan en otras aplicaciones de Office que son compatibles con Azure Information Protection: Excel, PowerPoint u Outlook. Si estas aplicaciones estaban abiertas al instalar el cliente de Azure Information Protection, ciérrelas y vuelva a abrirlas antes de intentar usarlas con Azure Information Protection.
 
@@ -133,6 +134,6 @@ Intente compartir más documentos y realice un seguimiento de cómo se usan y co
 Después, puede encontrar útil leer algunas de las [preguntas más frecuentes](faqs.md) de Azure Information Protection, y explorar algunos de los demás artículos de documentación. Pero si no está listo para empezar a implementar Azure Information Protection en su organización, el siguiente paso será el [mapa de ruta de implementación de Azure Information Protection](../plan-design/deployment-roadmap.md). 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

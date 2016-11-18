@@ -3,6 +3,7 @@ title: "Referencia de restricción de uso | Azure RMS"
 description: Las restricciones de uso se definen mediante las constantes indicadas en este tema.
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 10/19/2016
 ms.topic: article
@@ -14,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 37d9906b5df00b6ec6eeb6739766c00bd5cef37b
-ms.openlocfilehash: e9cc23d220408faf0e010debb1b6cab0c9dc58ba
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: f4767c81c246ec6ba53992b9b8e3375e8e02723d
 
 
 ---
 
-# Usage restriction reference (Referencia de restricción de uso).
+# <a name="usage-restriction-reference"></a>Usage restriction reference (Referencia de restricción de uso).
 
 Las restricciones de uso se definen mediante las constantes indicadas en este tema.
 
@@ -49,6 +50,6 @@ Cada derecho de usuario, que aparece en la columna de derechos de AD RMS, tiene 
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

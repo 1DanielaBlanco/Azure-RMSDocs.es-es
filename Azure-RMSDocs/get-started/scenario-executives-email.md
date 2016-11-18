@@ -2,6 +2,7 @@
 title: "Escenario: Los ejecutivos intercambian información confidencial de forma segura | Azure Information Protection"
 description: "En este escenario y en la documentación de usuario correspondiente se usa la protección de Azure Rights Management para que los ejecutivos puedan intercambiar entre ellos mensajes de correo y datos adjuntos por correo electrónico de forma segura, y para que las directivas restrinjan automáticamente el acceso a los ejecutivos sin que tengan que realizar ninguna acción especial."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/05/2016
 ms.topic: get-started-article
@@ -12,13 +13,13 @@ ms.assetid: e18cf5df-859e-4028-8d19-39b0842df33d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f17cf257607b0f74ca8bdaef13130da2f62dd587
-ms.openlocfilehash: 8481c275609e74ff5e09a0397e0e3a0346aa4430
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: c8c460549df34a746b21f57aa890a52571bf2061
 
 
 ---
 
-# Escenario: Los ejecutivos intercambian información confidencial de forma segura
+# <a name="scenario-executives-securely-exchange-privileged-information"></a>Escenario: Los ejecutivos intercambian información confidencial de forma segura
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
@@ -34,12 +35,12 @@ Las instrucciones son adecuadas para el conjunto de circunstancias siguiente:
 
 -   Los ejecutivos tienen una manera de invalidar la regla por sí mismos en caso de que alguna vez necesiten enviar un mensaje de correo no protegido a otros ejecutivos.
 
-## Instrucciones de implementación
+## <a name="deployment-instructions"></a>Instrucciones de implementación
 ![Instrucciones para el administrador para la implementación rápida de Azure RMS](../media/AzRMS_AdminBanner.png)
 
 Asegúrese de que se cumplen los siguientes requisitos y, luego, siga las instrucciones de los procedimientos correspondientes antes de pasar a la documentación del usuario.
 
-## Requisitos para este escenario
+## <a name="requirements-for-this-scenario"></a>Requisitos para este escenario
 Para que las instrucciones de este escenario funcionen, debe cumplir lo siguiente:
 
 |Requisito|Si necesita más información|
@@ -51,7 +52,7 @@ Para que las instrucciones de este escenario funcionen, debe cumplir lo siguient
 |Configuró una plantilla personalizada tal y como se describe a continuación|[Configuración de plantillas personalizadas para el servicio Azure Rights Management](../deploy-use/configure-custom-templates.md)|
 |Ha configurado una regla de protección de transporte para IRM, tal y como se describe luego en este artículo|Para Exchange Online: [Reglas de transporte o de flujo de correo](https://technet.microsoft.com/library/jj919238(v=exchg.150).aspx)<br /><br />Para Exchange 2013: [Crear una regla de protección de transporte](https://technet.microsoft.com/en-us/library/dd302432(v=exchg.150))<br /><br />Para Exchange 2010: [Crear una regla de protección de transporte](https://technet.microsoft.com/library/dd302432(v=exchg.141))|
 
-### Para configurar la plantilla personalizada para ejecutivos
+### <a name="to-configure-the-custom-template-for-executives"></a>Para configurar la plantilla personalizada para ejecutivos
 
 1.  En el Portal de Azure clásico, cree una plantilla personalizada para Azure Rights Management que contenga estos valores y configuraciones:
 
@@ -69,7 +70,7 @@ Para que las instrucciones de este escenario funcionen, debe cumplir lo siguient
     Import-RMSTrustedPublishingDomain -Name "RMS Online -1" -RefreshTemplates -RMSOnline
     ```
 
-### Para configurar la regla de transporte para IRM
+### <a name="to-configure-the-transport-rule-for-irm"></a>Para configurar la regla de transporte para IRM
 
 -   Consulte la documentación de Exchange a la que remite la tabla para conocer los procedimientos para crear la regla de transporte con la siguiente configuración:
 
@@ -83,7 +84,7 @@ Para que las instrucciones de este escenario funcionen, debe cumplir lo siguient
 
     -   Asegúrese de que la regla está establecida en **Exigir**.
 
-## Instrucciones de la documentación del usuario
+## <a name="user-documentation-instructions"></a>Instrucciones de la documentación del usuario
 A menos que quiera proporcionar instrucciones sobre cómo especificar **NP** (o la expresión que prefiera) en el asunto del correo electrónico, no hay ninguna instrucción de procedimiento que pueda proporcionarse a los usuarios en este escenario, ya que la protección del correo que los ejecutivos envían y reciben no requiere ninguna acción especial por su parte. Los mensajes de correo electrónico y los datos adjuntos se protegen automáticamente para que solo los miembros del grupo Ejecutivos puedan acceder a ellos.
 
 Con todo, deberá informar de ello a los ejecutivos y al departamento de soporte técnico y avisarles de cómo esto puede restringir el uso de estos correos electrónicos. Por ejemplo, otras personas no podrán leerlos correctamente si más adelante se reenvían los mensajes de correo electrónico o datos adjuntos a otros usuarios. Si configuró la excepción NP (o equivalente), asegúrese de que el departamento de soporte está al tanto de esta configuración para que los ejecutivos puedan invalidar la regla por sí mismos, sin necesidad de acudir a un administrador de Exchange.
@@ -104,7 +105,7 @@ En la documentación de ejemplo se muestra cómo ven los usuarios este anuncio t
 
 ![Documentación de usuario de la plantilla para la implementación rápida de Azure RMS](../media/AzRMS_UsersBanner.png)
 
-### Anuncio de TI: Ahora los correos electrónicos de &lt;nombre de la organización&gt; se protegerán automáticamente
+### <a name="it-announcement-ltorganization-namegt-executive-emails-are-now-automatically-protected"></a>Anuncio de TI: Ahora los correos electrónicos de &lt;nombre de la organización&gt; se protegerán automáticamente
 De ahora en adelante, siempre que se envíen correos electrónicos a otro ejecutivo de &lt;nombre de la organización&gt;, el contenido de los correos y los datos adjuntos se protegerán automáticamente, de modo que solo otro ejecutivo de la empresa pueda tener acceso a ellos para leer la información, imprimirlos, copiarlos, etc. Esta restricción se aplica incluso si se reenvía el mensaje de correo electrónico a otros usuarios o si se guardan los datos adjuntos. Con esta protección, es más fácil evitar la pérdida de datos confidenciales o importantes.
 
 No olvide que, si quiere que otros usuarios que no sean ejecutivos de &lt;nombre de la organización&gt; puedan leer y editar la información de estos correos, deberá enviarla por separado. O bien, para invalidar la protección automática, escriba **NP** (abreviatura de "No proteger") en cualquier parte del asunto del mensaje de correo.
@@ -115,15 +116,15 @@ Al enviar información confidencial de la empresa a otro ejecutivo de &lt;nombre
 
 -   Póngase en contacto con el departamento de soporte técnico: &lt;detalles de contacto&gt;
 
-### Documentación de usuario de ejemplo
+### <a name="example-user-documentation"></a>Documentación de usuario de ejemplo
 ![Documentación de usuario de ejemplo para la implementación rápida de Azure RMS](../media/AzRMS_ExampleBanner.png)
 
-#### Anuncio de TI: Ahora los correos electrónicos de VanArsdel se protegerán automáticamente
+#### <a name="it-announcement-vanarsdel-executive-emails-are-now-automatically-protected"></a>Anuncio de TI: Ahora los correos electrónicos de VanArsdel se protegerán automáticamente
 De ahora en adelante, siempre que se envíen correos electrónicos a otro ejecutivo de VanArsdel, el contenido de los correos electrónicos y los datos adjuntos se protegerán automáticamente de modo que solo otro ejecutivo de la empresa pueda tener acceso a ellos para leer la información, imprimirlos, copiarlos, etc. Esta restricción se aplica incluso si se reenvía el mensaje de correo electrónico a otros usuarios o si se guardan los datos adjuntos. Con esta protección, es más fácil evitar la pérdida de datos confidenciales o importantes.
 
 No olvide que, si quiere que otros usuarios que no sean ejecutivos de VanArsdel puedan leer y editar la información de estos correos, deberá enviarla por separado. O bien, para invalidar la protección automática, escriba **NP** (abreviatura de "No proteger") en cualquier parte del asunto del mensaje de correo.
 
-Al enviar información confidencial de la empresa a otro ejecutivo de VanArsdel, recuerde que debe enviarlo a su dirección de correo electrónico de trabajo (*name*@vanarsdelltd.com) y no a una dirección de correo electrónico personal.
+Al enviar información confidencial de la empresa a otro ejecutivo de VanArsdel, recuerde que debe enviarla a su dirección de correo electrónico de trabajo (*nombre*@vanarsdelltd.com) y no a una dirección de correo electrónico personal.
 
 **¿Necesita ayuda?**
 
@@ -132,6 +133,6 @@ Al enviar información confidencial de la empresa a otro ejecutivo de VanArsdel,
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

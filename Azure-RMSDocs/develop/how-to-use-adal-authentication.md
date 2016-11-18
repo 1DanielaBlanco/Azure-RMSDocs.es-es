@@ -3,6 +3,7 @@ title: "Autenticación de ADAL de la aplicación habilitada para RMS | Azure RMS
 description: "Describe el proceso para la autenticación con AAL"
 keywords: "autenticación, RMS, ADAL"
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 3ed49cf7dddb72783ecd3bf1e89454d805552743
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 25b9f1c7ee6ad2eb1d642a72713e0dd24703c2bc
 
 
 ---
 
-# Uso de la autenticación ADAL
+# <a name="howto-use-adal-authentication"></a>Uso de la autenticación ADAL
 
 Autenticación con Azure RMS para una aplicación que use la biblioteca de autenticación de Azure Active Directory (ADAL).
 
@@ -30,7 +31,7 @@ Si actualiza la aplicación para que use la autenticación de ADAL en lugar del 
 - Instalar el cliente de RMS 2.1 sin necesidad de tener privilegios administrativos en el equipo.
 - Certificar la aplicación para Windows 10
 
-## Dos enfoques para la autenticación
+## <a name="two-approaches-to-authentication"></a>Dos enfoques para la autenticación
 
 En este tema se describen dos métodos de autenticación con sus ejemplos de código correspondientes.
 
@@ -38,22 +39,22 @@ En este tema se describen dos métodos de autenticación con sus ejemplos de có
 
   Use este método si quiere que el cliente de RMS muestre un mensaje de autenticación de ADAL cuando sea necesaria la autenticación. Para obtener más información sobre cómo configurar la aplicación, consulte la sección "Autenticación interna".
 
-  > [!Note] 
+  > [!Note]
   > Si la aplicación usa actualmente AD RMS SDK 2.1 con el Ayudante para el inicio de sesión, se recomienda que use el método de autenticación interna como ruta de acceso de la migración de la aplicación.
 
 - **Autenticación externa**: autenticación de OAuth administrada por la aplicación.
 
   Use este método si quiere que la aplicación administre su propia autenticación de OAuth. Con este método, el cliente de RMS realizará una devolución de llamada definida por la aplicación cuando sea necesaria la autenticación. Para obtener un ejemplo detallado, consulte "Autenticación externa" al final de este tema.
 
-  > [!Note] 
+  > [!Note]
   > La autenticación externa no permite cambiar los usuarios; el cliente de RMS usa siempre el usuario predeterminado para un inquilino de RMS determinado.
 
-## Autenticación interna
+## <a name="internal-authentication"></a>Autenticación interna
 
 1. Siga los pasos de configuración de Azure indicados en [Configuración de Azure RMS para la autenticación ADAL](adal-auth.md) y después vaya al paso siguiente para la inicialización de aplicaciones.
 2. Ahora ya puede configurar la aplicación para que use la autenticación de ADAL interna proporcionada por RMS SDK 2.1.
 
-Para configurar el cliente de RMS, agregue una llamada a [IpcSetGlobalProperty](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty) justo después de llamar a [IpcInitialize](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize) para configurar el cliente de RMS. Use como ejemplo el fragmento de código siguiente.
+Para configurar el cliente de RMS, agregue una llamada a [IpcSetGlobalProperty](https://msdn.microsoft.com/library/hh535270.aspx) justo después de llamar a [IpcInitialize](https://msdn.microsoft.com/library/jj127295.aspx) para configurar el cliente de RMS. Use como ejemplo el fragmento de código siguiente.
 
       C++
       IpcInitialize();
@@ -67,7 +68,7 @@ Para configurar el cliente de RMS, agregue una llamada a [IpcSetGlobalProperty](
         //Handle the error
       }
 
-## Autenticación externa
+## <a name="external-authentication"></a>Autenticación externa
 
 Use este código como ejemplo sobre cómo administrar sus propios tokens de autenticación.
 C++ extern HRESULT GetADALToken(LPVOID pContext, const IPC_NAME_VALUE_LIST& Parameters, __out wstring wstrToken) throw();
@@ -109,21 +110,21 @@ C++ extern HRESULT GetADALToken(LPVOID pContext, const IPC_NAME_VALUE_LIST& Para
           return IpcGetKey(pvLicense, 0, &promptContext, NULL, &hKey);
       }
 
-## Temas relacionados
+## <a name="related-topics"></a>Temas relacionados
 
-* [Tipos de datos](/information-protection/sdk/2.1/api/win/data%20types)
-* [Propiedades del entorno](/information-protection/sdk/2.1/api/win/environment%20properties#msipc_environment_properties)
-* [IpcCreateOAuth2Token](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreateoauth2token)
-* [IpcGetKey](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgetkey)
-* [IpcInitialize](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize)
-* [IPC_CREDENTIAL](/information-protection/sdk/2.1/api/win/IPC_CREDENTIAL)
-* [IPC_NAME_VALUE_LIST](/information-protection/sdk/2.1/api/win/IPC_NAME_VALUE_LIST)
-* [IPC_OAUTH2_CALLBACK_INFO](/information-protection/sdk/2.1/api/win/ipc_oauth2_callback_info#msipc_ipc_oath2_callback_info)
-* [IPC_PROMPT_CTX](/information-protection/sdk/2.1/api/win/IPC_PROMPT_CTX)
-* [IPC_AAD_APPLICATION_ID](/information-protection/sdk/2.1/api/win/ipc_aad_application_id#msipc_ipc_aad_application_id)
+- [Tipos de datos](https://msdn.microsoft.com/library/hh535288.aspx)
+- [Propiedades del entorno](https://msdn.microsoft.com/library/hh535247.aspx)
+- [IpcCreateOAuth2Token](https://msdn.microsoft.com/library/mt661866.aspx)
+- [IpcGetKey](https://msdn.microsoft.com/library/hh535263.aspx)
+- [IpcInitialize](https://msdn.microsoft.com/library/jj127295.aspx)
+- [IPC_CREDENTIAL](https://msdn.microsoft.com/library/hh535275.aspx)
+- [IPC_NAME_VALUE_LIST](https://msdn.microsoft.com/library/hh535277.aspx)
+- [IPC_OAUTH2_CALLBACK_INFO](https://msdn.microsoft.com/library/mt661868.aspx)
+- [IPC_PROMPT_CTX](https://msdn.microsoft.com/library/hh535278.aspx)
+- [IPC_AAD_APPLICATION_ID](https://msdn.microsoft.com/library/mt661867.aspx)
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 
