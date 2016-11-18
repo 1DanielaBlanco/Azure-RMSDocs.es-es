@@ -2,6 +2,7 @@
 title: "Tutorial de inicio rápido | Azure Information Protection"
 description: "Un tutorial introductorio para probar rápidamente Microsoft Azure Information Protection para su organización, que debería tardar unos 30 minutos."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/04/2016
 ms.topic: article
@@ -10,13 +11,13 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
 translationtype: Human Translation
-ms.sourcegitcommit: 4f5f7670ce1897a6436e511057fc714c839a8f00
-ms.openlocfilehash: a8c4003d8dbae5d33712860cd1f665de234db5a0
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 9f475892d7999fc3ff10a27d11986dec9cfa94cd
 
 
 ---
 
-# Tutorial de inicio rápido de Azure Information Protection 
+# <a name="quick-start-tutorial-for-azure-information-protection"></a>Tutorial de inicio rápido de Azure Information Protection 
 
 >*Se aplica a: Azure Information Protection*
 
@@ -26,7 +27,7 @@ Este tutorial está destinado a los administradores y consultores de TI a fin de
 
 Si tiene algún problema para seguir este tutorial, para usar Azure Information Protection o si quiere ver lo que comentan otros usuarios, diríjase al [sitio de Yammer de Azure Information Protection](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all).
 
-## Requisitos previos 
+## <a name="prerequisites"></a>Requisitos previos 
 Para completar este tutorial, necesitará lo siguiente:
 
 - Una suscripción que incluye Azure Information Protection para la clasificación, el etiquetado y la protección. En este tutorial se incluyen algunas características avanzadas, como la clasificación de datos automatizada con recomendaciones de usuarios, y el sitio de seguimiento de documentos. Asegúrese de que su suscripción admite estas características. Para obtener más detalles, consulte la [información sobre la suscripción](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing) y la [lista de características](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features) en el sitio de Azure Information Protection.
@@ -51,6 +52,6 @@ Comencemos.
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

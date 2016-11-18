@@ -2,6 +2,7 @@
 title: 'Escenario: Proteger archivos en un recurso compartido de servidor de archivos | Azure Information Protection'
 description: "En este escenario y en la documentación de usuario correspondiente se usa la protección de Azure Rights Management para proteger de forma masiva todos los archivos que quiera proteger en un servidor de archivos con el fin de garantizar que solo los empleados de la organización puedan acceder a ellos, incluso si se copian y se guardan en un almacenamiento que está fuera del control del departamento de TI o se envían por correo electrónico a otros usuarios."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/05/2016
 ms.topic: get-started-article
@@ -12,13 +13,13 @@ ms.assetid: 283c7db3-5730-439e-a215-40a1088ed506
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f17cf257607b0f74ca8bdaef13130da2f62dd587
-ms.openlocfilehash: 136cabfad5914fadf183e308c51b77e20f98ca4f
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 31957f12d363746a7a48580e043b477ab09cb823
 
 
 ---
 
-# Escenario: Proteger archivos en un recurso compartido de servidor de archivos
+# <a name="scenario-protect-files-on-a-file-server-share"></a>Escenario: Proteger archivos en un recurso compartido de servidor de archivos
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
@@ -34,12 +35,12 @@ Las instrucciones son adecuadas para el conjunto de circunstancias siguiente:
 
 -   La protección se vuelve a aplicar en todos los archivos de forma programada; así, se asegura que los cambios realizados en las plantillas de directiva de permisos surten efecto en esos archivos protegidos.
 
-## Instrucciones de implementación
+## <a name="deployment-instructions"></a>Instrucciones de implementación
 ![Instrucciones para el administrador para la implementación rápida de Azure RMS](../media/AzRMS_AdminBanner.png)
 
 Asegúrese de que se cumplen los siguientes requisitos y, luego, siga las instrucciones de los procedimientos correspondientes antes de pasar a la documentación del usuario.
 
-## Requisitos para este escenario
+## <a name="requirements-for-this-scenario"></a>Requisitos para este escenario
 Para que las instrucciones de este escenario funcionen, debe cumplir lo siguiente:
 
 |Requisito|Si necesita más información|
@@ -50,7 +51,7 @@ Para que las instrucciones de este escenario funcionen, debe cumplir lo siguient
 |La aplicación Rights Management sharing se implementa en los equipos de los usuarios que ejecutan Windows|[Implementación automática de la aplicación Microsoft Rights Management sharing](../rms-client/sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)|
 |Ha descargado la herramienta de protección de RMS y ha configurado los requisitos previos de Azure RMS.|Para obtener instrucciones para descargar la herramienta y los requisitos previos: [RMS Protection Cmdlets](https://msdn.microsoft.com/library/mt433195.aspx) (Cmdlets de protección de RMS).<br /><br />Para configurar más requisitos previos para Azure RMS, como la cuenta de entidad de servicio: [about_RMSProtection_AzureRMS](https://msdn.microsoft.com/library/mt433202.aspx).|
 
-### Configuración de un servidor de archivos para proteger todos los archivos mediante Azure RMS y el Administrador de recursos del servidor de archivos con la infraestructura de clasificación de archivos
+### <a name="configuring-a-file-server-to-protect-all-files-by-using-azure-rms-and-file-server-resource-manager-with-file-classification-infrastructure"></a>Configuración de un servidor de archivos para proteger todos los archivos mediante Azure RMS y el Administrador de recursos del servidor de archivos con la infraestructura de clasificación de archivos
 
 1.  Inicie una sesión de WindowsPowerShell. No es necesario hacerlo como administrador.
 
@@ -72,7 +73,7 @@ Para que las instrucciones de este escenario funcionen, debe cumplir lo siguient
 
     Estas instrucciones incluyen un script de Windows PowerShell que hay que especificar para ejecutarse como un archivo ejecutable personalizado en el Administrador de recursos del servidor de archivos. También incluyen cómo comprobar que los archivos están protegidos con Azure Rights Management.
 
-## Instrucciones de la documentación del usuario
+## <a name="user-documentation-instructions"></a>Instrucciones de la documentación del usuario
 Si los archivos que quiere proteger son solo archivos de Office, puede que no tenga que proporcionar instrucciones a los usuarios sobre los archivos protegidos. Cuando los usuarios autorizados abran estos documentos, se abrirán como de costumbre en Office, con la única diferencia de que puede que se les pida que se autentiquen y que verán una barra de información en la parte superior del documento que les informa de que el documento está protegido.
 
 Si los archivos protegidos tienen una extensión de nombre de archivo **.ppdf** o son archivos de texto o de imagen protegidos (por ejemplo, tienen una extensión de nombre de archivo **.ptxt** o **.pjpg**), estos archivos son ahora de solo lectura y no se pueden editar. Los usuarios pueden verlos con el visor de la aplicación RMS sharing, que se carga automáticamente para estos tipos de archivo. Estos archivos están protegidos de forma nativa con Azure RMS y se aplica toda la configuración de directiva de la plantilla que haya usado, con la excepción de los derechos de uso, porque el archivo es de solo lectura. A menos que sepa que va a proteger estos tipos de archivo, es bastante improbable que vaya a necesitar instrucciones de usuario para este escenario. De todas formas, avise al departamento de soporte técnico de que es posible que deba explicar a los usuarios por qué estos archivos no se pueden editar.
@@ -97,7 +98,7 @@ En la documentación de ejemplo se muestra el aspecto de estas instrucciones par
 
 ![Documentación de usuario de la plantilla para la implementación rápida de Azure RMS](../media/AzRMS_UsersBanner.png)
 
-### Procedimiento para editar &lt;tipo de archivo&gt; desde el &lt;recurso compartido de servidor de archivos&gt;
+### <a name="how-to-edit-lttype-of-filegt-from-the-ltfile-server-sharegt"></a>Procedimiento para editar &lt;tipo de archivo&gt; desde el &lt;recurso compartido de servidor de archivos&gt;
 
 1.  Haga doble clic en el archivo para abrirlo. Puede que se le pidan las credenciales.
 
@@ -123,10 +124,10 @@ Cada cierto tiempo, el archivo se volverá a proteger, lo que hace que se agregu
 
     -   *&lt;detalles de contacto&gt;*
 
-### Documentación de usuario personalizada de ejemplo
+### <a name="example-customized-user-documentation"></a>Documentación de usuario personalizada de ejemplo
 ![Documentación de usuario de ejemplo para la implementación rápida de Azure RMS](../media/AzRMS_ExampleBanner.png)
 
-#### Procedimiento para editar dibujos de CAD desde el recurso compartido ProjectNextGen
+#### <a name="how-to-edit-cad-drawings-from-the-projectnextgen-share"></a>Procedimiento para editar dibujos de CAD desde el recurso compartido ProjectNextGen
 
 1.  Haga doble clic en el archivo para abrirlo. Puede que se le pidan las credenciales.
 
@@ -155,6 +156,6 @@ Cada cierto tiempo, el archivo se volverá a proteger, lo que hace que se agregu
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

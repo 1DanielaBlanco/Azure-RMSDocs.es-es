@@ -3,6 +3,7 @@ title: "Introducción | Azure RMS"
 description: "Una guía de inicio rápido para una primera aplicación se realiza a través de las guías de configuración del entorno de desarrollo para cada uno de los sistemas operativos y plataformas."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: d4373ed4a0909c5c0c4dceb51f98ace1977cb6f7
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 6e05b2c7444b5440d80bf5c4764b5ada554bbdc7
 
 
 ---
 
-# Introducción
+# <a name="get-started"></a>Introducción
 
 Para esta versión de Microsoft Rights Management SDK 4.2, el enfoque del inicio rápido para una aplicación es a través de guías de configuración del entorno de desarrollo para cada uno de los sistemas operativos y plataformas. Comience a crear la aplicación con derechos habilitados haciendo lo siguiente:
 
@@ -38,8 +39,8 @@ Para esta versión de Microsoft Rights Management SDK 4.2, el enfoque del inicio
 2. **Continúe con la guía de instalación** para su sistema operativo.
 
   Las guías de instalación le llevarán por la configuración del entorno de desarrollo para crear sus propias aplicaciones.
-  - [Programa de instalación de Android](android-sdk.md)
-  - [Programa de instalación de iOS y OS X](ios-sdk.md)          
+  - [Configuración de Android](android-sdk.md)
+  - [Configuración de iOS y OS X](ios-sdk.md)          
   - [Instalación de Linux](linux-setup.md)              
   - [Windows Phone](windows-phone-apps.md)     
   - [Aplicaciones de la Tienda Windows](winrt-sdk.md)
@@ -56,6 +57,6 @@ Para esta versión de Microsoft Rights Management SDK 4.2, el enfoque del inicio
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 
