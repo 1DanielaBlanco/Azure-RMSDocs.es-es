@@ -4,7 +4,7 @@ description: "Información para ayudarle a planear y a administrar su clave de i
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/09/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 84072c64f83ec97ac41d6ec030be5eabff263b4b
-ms.openlocfilehash: afcef2843336e022e63e7895ac3c0488d0aa0e2a
+ms.sourcegitcommit: 5f75e36e5939b23a9d077a6fcd659c59d0f71a68
+ms.openlocfilehash: 1e25f9007004d27fd8f52f77a1663e42f751334e
 
 
 ---
@@ -97,9 +97,9 @@ Para generar y transferir su propia clave de inquilino al Almacén de claves de 
 
 Cuando la clave se transfiere a Key Vault, se le asigna un identificador de clave en Key Vault, que es una URL que contiene el nombre del almacén de claves, el contenedor de claves, el nombre de la clave y la versión de la clave. Por ejemplo: **https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333**. Deberá indicar al servicio Azure Rights Management de Azure Information Protection que use esta clave mediante la especificación de esta URL.
 
-Pero para que Azure Information Protection pueda usar la clave, deberá autorizar al servicio Azure Rights Management para que use la clave en el almacén de claves de su organización. Para llevar a cabo esta acción, el administrador de Azure Key Vault usa el cmdlet de PowerShell para Azure Key Vault [Set-AzureRmKeyVaultAccessPolicy](https://msdn.microsoft.com/es-es/library/mt603625(v=azure.300\).aspx) y concede permisos a la entidad de servicio de Azure Rights Management, **Microsoft.Azure.RMS**. Por ejemplo:
+Pero para que Azure Information Protection pueda usar la clave, deberá autorizar al servicio Azure Rights Management para que use la clave en el almacén de claves de su organización. Para llevar a cabo esta acción, el administrador de Azure Key Vault usa el cmdlet de PowerShell para Azure Key Vault [Set-AzureRmKeyVaultAccessPolicy](https://msdn.microsoft.com/es-es/library/mt603625(v=azure.300\).aspx) y concede permisos a la entidad de servicio de Azure Rights Management, utilizando el GUID 00000012-0000-0000-c000-000000000000. Por ejemplo:
 
-    Set-AzureRmKeyVaultAccessPolicy -VaultName 'ContosoRMS-kv' -ResourceGroupName 'ContosoRMS-byok-rg' -ServicePrincipalName Microsoft.Azure.RMS -PermissionsToKeys decrypt,encrypt,unwrapkey,wrapkey,verify,sign,get
+    Set-AzureRmKeyVaultAccessPolicy -VaultName 'ContosoRMS-kv' -ResourceGroupName 'ContosoRMS-byok-rg' -ServicePrincipalName 00000012-0000-0000-c000-000000000000 -PermissionsToKeys decrypt,encrypt,unwrapkey,wrapkey,verify,sign,get
 
 Ahora lo tiene todo preparado para configurar Azure Information Protection y usar esta clave como la clave de inquilino de Azure Information Protection de la organización. Al usar cmdlets de Azure RMS, primero conéctese al servicio Azure Rights Management e inicie sesión:
 

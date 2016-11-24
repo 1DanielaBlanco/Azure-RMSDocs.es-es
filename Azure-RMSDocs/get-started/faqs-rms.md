@@ -4,7 +4,7 @@ description: "Algunas de las preguntas más frecuentes sobre el servicio de prot
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/24/2016
+ms.date: 11/16/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: e24c2fdb5c99fa1799abc936c0734098b31c93d9
+ms.sourcegitcommit: eb9b9c1308abe6b1b5803cba7ba254d54cbac812
+ms.openlocfilehash: d3d11dba936ca8901b701008e55df8d73be8bded
 
 
 ---
@@ -30,7 +30,13 @@ No, se trata de una idea equivocada frecuente. El servicio de Rights Management 
 
 Para obtener más información, consulte [How does Azure RMS work? En segundo plano](../understand-explore/how-does-it-work.md) para entender cómo una fórmula de la cola secreta que se crea y almacena localmente tiene la protección del servicio Azure Rights Management sin dejar de ser local.
 
-## <a name="can-i-integrate-the-azure-rights-management-service-with-my-onpremises-servers"></a>¿Puedo integrar el servicio Azure Rights Management con mis servidores locales?
+## <a name="whats-the-difference-between-azure-rights-management-encryption-and-encryption-in-other-microsoft-cloud-services"></a>¿Cuál es la diferencia entre el cifrado de Azure Rights Management y el de otros servicios de la nube de Microsoft?
+
+Microsoft proporciona varias tecnologías de cifrado que le permiten proteger los datos en situaciones diferentes y, a menudo, complementarias. Por ejemplo, mientras que Office 365 ofrece cifrado en reposo para datos almacenados en Office 365, el servicio de Azure Rights Management de Azure Information Protection cifra de modo independiente los datos, de tal forma que quedan protegidos independientemente de dónde se encuentren o cómo se transmitan.
+
+Estas tecnologías de cifrado son complementarias y su uso requiere la habilitación y configuración de forma independiente. En dicho caso, para el cifrado podrá crear su propia clave (acción denominada como "BYOK"). La habilitación de BYOK para una de estas tecnologías no afecta a las demás. Por ejemplo, puede usar BYOK para Azure Information Protection y no usar BYOK para otras tecnologías de cifrado, y viceversa. Las claves utilizadas por estas tecnologías distintas pueden ser las mismas o diferentes, dependiendo de cómo configure las opciones de cifrado para cada servicio.
+
+## <a name="can-i-integrate-the-azure-rights-management-service-with-my-on-premises-servers"></a>¿Puedo integrar el servicio Azure Rights Management con mis servidores locales?
 Sí. Azure Rights Management se puede integrar con sus servidores locales, como servidores de archivos de Exchange Server, SharePoint y Windows. Para hacerlo, use el [conector de Rights Management](../deploy-use/deploy-rms-connector.md). O bien, si solo le interesa usar la infraestructura de clasificación de archivos (FCI) con Windows Server, puede usar los [cmdlets de protección de RMS](https://technet.microsoft.com/library/mt601315%28v=ws.10%29.aspx). También puede sincronizar y federar los controladores de dominio de Active Directory con Azure AD para ofrecer una experiencia de autenticación más sencilla a los usuarios, por ejemplo, mediante el uso de [Azure AD Connect](http://azure.microsoft.com/documentation/articles/active-directory-aadconnect/).
 
 Azure Rights Management genera automáticamente y administra los certificados XrML según sea necesario, por lo que no usa una PKI local. Para obtener más información sobre la forma en que Azure Rights Management usa los certificados, vea la sección [Tutorial de cómo funciona Azure RMS: Primer uso, protección de contenido, consumo de contenido](../understand-explore/how-does-it-work.md#walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption) del artículo [¿Cómo funciona Azure RMS?](../understand-explore/how-does-it-work.md)
@@ -101,7 +107,7 @@ El servicio Azure Rights Management puede admitir todos los tipos de archivo. Pa
 
 Para obtener una lista de extensiones de nombre de archivo que se admiten de forma nativa en Azure Rights Management, vea la sección [Tipos de archivo y extensiones de nombre de archivo compatibles](../rms-client/sharing-app-admin-guide-technical.md#supported-file-types-and-file-name-extensions) en [Guía del administrador de la aplicación de Rights Management sharing](../rms-client/sharing-app-admin-guide.md). Se admiten las extensiones de nombre de archivo que no están enumeradas si se usa la aplicación para uso compartido de RMS, que aplica automáticamente la protección genérica a estos archivos.
 
-## <a name="when-i-open-an-rmsprotected-office-document-does-the-associated-temporary-file-become-rmsprotected-as-well"></a>Al abrir un documento de Office protegido con RMS, ¿también se protege con RMS el archivo temporal asociado?
+## <a name="when-i-open-an-rms-protected-office-document-does-the-associated-temporary-file-become-rms-protected-as-well"></a>Al abrir un documento de Office protegido con RMS, ¿también se protege con RMS el archivo temporal asociado?
 
 No. En este caso, el archivo temporal asociado no contiene los datos del documento original, sino solo lo que escribe el usuario mientras el archivo está abierto. A diferencia del archivo original, el archivo temporal obviamente no está diseñado para el uso compartido y se conservará en el dispositivo, protegido mediante controles de seguridad local, como BitLocker y EFS.
 
@@ -158,6 +164,6 @@ A pesar de su nombre y su apariencia, **No reenviar** no es el contrario del der
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

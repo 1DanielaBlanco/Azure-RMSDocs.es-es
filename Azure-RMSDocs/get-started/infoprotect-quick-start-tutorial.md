@@ -11,8 +11,8 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 9f475892d7999fc3ff10a27d11986dec9cfa94cd
+ms.sourcegitcommit: d300f3c130476974e39689edf9e1f0eabbc35da1
+ms.openlocfilehash: de3435767d161567003369fc55dd476283b64f41
 
 
 ---
@@ -41,7 +41,7 @@ Para completar este tutorial, necesitará lo siguiente:
 
 - Una cuenta de administrador global para iniciar sesión en Azure Portal para configurar la directiva de Azure Information Protection. Esta cuenta también debe tener una dirección de correo electrónico y un servicio de correo electrónico de trabajo (por ejemplo, Exchange Online o Exchange Server).
 
-- Un equipo con Windows (como mínimo Windows 7 con Service Pack 1) que tenga instalado Office Professional Plus 2016, Office Professional Plus 2013 con Service Pack 1, u Office Professional Plus 2010. 
+- Un equipo con Windows (como mínimo Windows 7 con Service Pack 1) que tenga instalado Office 365 ProPlus con aplicaciones de 2016 o 2013, Office Professional Plus 2016, Office Professional Plus 2013 con Service Pack 1 u Office Professional Plus 2010. 
 
 Comencemos.
 
