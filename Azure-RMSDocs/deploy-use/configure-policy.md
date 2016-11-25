@@ -2,6 +2,7 @@
 title: "Configuración de la directiva | Azure Information Protection"
 description: "Para configurar la protección, la clasificación y el etiquetado, debe configurar la directiva de Azure Information Protection."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ebb11148718f22c79bb49c82b9855f5e6f2a5b18
-ms.openlocfilehash: 472541f32c429eea34ea0afb76905bee8abf9747
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 055470948a1bf21d4ee1ee83f345f49a98c1bf31
 
 
 ---
 
-# Configuración de la directiva de Azure Information Protection
+# <a name="configuring-azure-information-protection-policy"></a>Configuración de la directiva de Azure Information Protection
 
 >*Se aplica a: Azure Information Protection*
 
@@ -51,33 +52,33 @@ Cuando haya terminado de realizar los cambios que desee, haga clic en **Publicar
 
 El cliente de Azure Information Protection busca cambios cada vez que se inicia una aplicación de Office compatible y descarga los cambios en su directiva de Azure Information Protection.
 
-## Configuración de la directiva de la organización
+## <a name="configuring-your-organizations-policy"></a>Configuración de la directiva de la organización
 
 Use la siguiente información como ayuda para configurar la directiva de Azure Information Protection:
 
-- [La directiva de Azure Information Protection](configure-policy-default.md)
+- [Directiva predeterminada de Azure Information Protection](configure-policy-default.md)
 
-- [Configuración de la directiva global](configure-policy-settings.md)
+- [Configuración global de directivas](configure-policy-settings.md)
 
 - [Creación de una nueva etiqueta](configure-policy-new-label.md)
 
 - [Eliminación o cambio de orden de una etiqueta](configure-policy-delete-reorder.md)
 
-- [Cambio o personalización de una etiqueta existente para Azure Information Protection](configure-policy-change-label.md)
+- [Cambio o personalización de una etiqueta existente](configure-policy-change-label.md)
 
 - [Configuración de una etiqueta para aplicar protección](configure-policy-protection.md)
 
-- [Configuración de una etiqueta para aplicar marcas visuales](configure-policy-markings.md)
+- [Configuración de una etiqueta para marcas visuales](configure-policy-markings.md)
 
 - [Configuración de las condiciones para la clasificación automática y recomendada](configure-policy-classification.md)
 
-## Pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 
 Para ver un ejemplo de cómo personalizar la directiva predeterminada y ver el comportamiento resultante en una aplicación de Office, pruebe el [tutorial de inicio rápido de Azure Information Protection](../get-started/infoprotect-quick-start-tutorial.md).
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

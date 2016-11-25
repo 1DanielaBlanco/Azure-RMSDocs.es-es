@@ -3,6 +3,7 @@ title: "Cómo establecer el modo de seguridad de API | Azure RMS"
 description: "Elija el modo de seguridad que ejecuta la aplicación de la API de archivo."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 77e2dfe7f2afb1e70de658850f83f86e9224aea6
-ms.openlocfilehash: 9235fa1c194162689b854493ea31e76c08c40ce7
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: f7acef7fa69c836c5d57d8c1705007f919a9dbf2
 
 
 ---
 
-# Establecimiento del modo de seguridad de API
+# <a name="howto-set-the-api-security-mode"></a>Establecimiento del modo de seguridad de API
 
 Puede elegir el modo de seguridad en que se ejecuta la aplicación de la API de archivo con la función [IpcSetGlobalProperty](https://msdn.microsoft.com/library/hh535270.aspx).
 
@@ -30,7 +31,7 @@ Para más información sobre el *modo servidor*, consulte [Tipos de aplicación]
 
 **Importante**  El modo de seguridad debe establecerse antes de que se llame a cualquier otra función de Rights Management Services SDK 2.1. Una vez establecido el modo de seguridad, no podrá cambiarse para el proceso en vigor.
 
-## Temas relacionados
+## <a name="related-topics"></a>Temas relacionados
 
 * [Tipos de aplicación](application-types.md)
 * [Valores del modo de API](https://msdn.microsoft.com/library/hh535236.aspx)
@@ -41,6 +42,6 @@ Para más información sobre el *modo servidor*, consulte [Tipos de aplicación]
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

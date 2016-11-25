@@ -2,6 +2,7 @@
 title: "Configuración de los derechos de uso de Azure Rights Management | Azure Information Protection"
 description: "Conozca e identifique los derechos específicos que se usan al proteger archivos o correos electrónicos con el servicio Azure Rights Management de Azure Information Protection."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/05/2016
 ms.topic: article
@@ -12,21 +13,21 @@ ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f17cf257607b0f74ca8bdaef13130da2f62dd587
-ms.openlocfilehash: 0b160fff849b9f8bda71fd6ccf07d8fb07487b13
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 16dbee4b90f7c1e5b5c64c751d0c38e6cbccc036
 
 
 ---
 
-# Configuración de los derechos de uso para Azure Rights Management
+# <a name="configuring-usage-rights-for-azure-rights-management"></a>Configuración de los derechos de uso para Azure Rights Management
 
->*Se aplica a: Azure Information Protection y Office 365*
+>*Se aplica a: Azure Information Protection, Office 365*
 
 Cuando establezca protección en archivos o correos electrónicos con el servicio Azure Rights Management de Azure Information Protection y no use ninguna plantilla, deberá configurar los derechos de uso por su cuenta. Además, al configurar plantillas personalizadas para Azure Rights Management, se seleccionan los derechos de uso que se aplicarán automáticamente cuando los usuarios, los administradores o los servicios configurados seleccionen la plantilla. Por ejemplo, en el Portal de Azure clásico, puede seleccionar los roles que configuran una agrupación lógica de derechos de uso o puede configurar los derechos individuales.
 
 Use este artículo como ayuda para configurar los derechos de uso que quiere para la aplicación que esté usando y para entender cómo las aplicaciones interpretan estos derechos.
 
-## Derechos de uso y descripciones
+## <a name="usage-rights-and-descriptions"></a>Derechos de uso y descripciones
 En la tabla siguiente se enumeran y se describen los derechos de uso que admite Rights Management y cómo se usan y se interpretan. Se enumeran por su **Nombre común**, que es normalmente cómo se muestra o se referencia el derecho de uso, como una versión más descriptiva del valor de una sola palabra que se usa en el código (el valor **Codificación en la directiva**). **Constante o valor de API** es el nombre de SDK para una llamada de API de MSIPC, que se usa al escribir una aplicación habilitada para RMS que comprueba un derecho de uso o agrega un derecho de uso a una directiva.
 
 
@@ -47,7 +48,7 @@ En la tabla siguiente se enumeran y se describen los derechos de uso que admite 
 
 
 
-## Derechos incluidos en los niveles de permisos
+## <a name="rights-included-in-permissions-levels"></a>Derechos incluidos en los niveles de permisos
 
 Algunas aplicaciones agrupan derechos de uso en niveles de permisos para facilitar la selección de derechos de uso que suelen utilizarse de forma conjunta. Estos niveles de permisos ayudan a resumir un nivel de complejidad de los usuarios para que puedan elegir opciones basadas en roles.  Por ejemplo, **Revisor** y **Coautor**. Aunque estas opciones suelen mostrar a los usuarios un resumen de los derechos, puede que no incluyan todos los derechos enumerados en la tabla anterior.
 
@@ -62,10 +63,10 @@ Utilice la tabla siguiente para ver una lista de estos niveles de permisos y una
 
 ----
 
-###### Nota al pie 1
+###### <a name="footnote-1"></a>Nota al pie 1
 No aplicable a la aplicación Rights Management sharing para Windows.
 
-## Derechos incluidos en las plantillas predeterminadas
+## <a name="rights-included-in-the-default-templates"></a>Derechos incluidos en las plantillas predeterminadas
 Los derechos que se incluyen con las plantillas predeterminadas son los siguientes:
 
 |Nombre para mostrar|Derechos incluidos (nombre común)|
@@ -73,7 +74,7 @@ Los derechos que se incluyen con las plantillas predeterminadas son los siguient
 |&lt;*nombre de organización*&gt; *- Solo vista confidencial*|Ver, Abrir, Leer|
 |&lt;*nombre de organización*&gt; *- Confidencial*|Ver, Abrir, Leer; Guardar; Editar contenido, Editar; Ver derechos; Permitir macros; Reenviar; Responder; Responder a todos|
 
-## Opción No reenviar para correos electrónicos
+## <a name="do-not-forward-option-for-emails"></a>Opción No reenviar para correos electrónicos
 
 Los clientes y servicios de Exchange (por ejemplo, el cliente de Outlook, la aplicación Outlook Web Access y las reglas de transporte de Exchange) tienen una opción adicional de protección de derechos de información para correos electrónicos: **No reenviar**. 
 
@@ -95,12 +96,12 @@ Un usuario quiere enviar información por correo electrónico a personas concret
 
 
 
-## Consulte también
+## <a name="see-also"></a>Consulte también
 [Configuración de plantillas personalizadas para el servicio Azure Rights Management](configure-custom-templates.md)
 
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

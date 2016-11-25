@@ -3,6 +3,7 @@ title: "Configuración del entorno del desarrollador | Azure RMS"
 description: "Se muestra cómo se va a configurar su entorno de desarrollo a fin de trabajar con las API del SDK de AD RMS para su sistema operativo particular."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 185b67b50b7ded0ff28998f5a59be6b216abd0f9
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: b369c480cc9841a7c8d92f95af3319e0e49f43d0
 
 
 ---
 
-# Configuración del entorno del desarrollador
+# <a name="setup-developer-environment"></a>Configuración del entorno del desarrollador
 
 En los temas siguientes se muestra cómo se va a configurar su entorno de desarrollo a fin de trabajar con las API del SDK de AD RMS para su sistema operativo particular.
 
@@ -40,6 +41,6 @@ En los temas siguientes se muestra cómo se va a configurar su entorno de desarr
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

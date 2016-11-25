@@ -3,6 +3,7 @@ title: "Notas de la versión | Azure RMS"
 description: 
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 10/20/2016
 ms.topic: article
@@ -14,17 +15,17 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f65f42b54fbca1a0436a0f1f6cc9be60a5e3c68
-ms.openlocfilehash: 31670bda73bdf0ddcb0167c40cdf32b11fd7af3c
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: d481ee096213af79a7852f1afa6d075d389a4212
 
 
 ---
 
-# Notas de la versión
+# <a name="release-notes"></a>Notas de la versión
 
 Este tema contiene información importante sobre esta versión y versiones anteriores de RMS SDK 2.1.
 
-## Novedades de la actualización de documentación del SDK de febrero de 2016
+## <a name="new-for-the-february-2016-sdk-documentation-update"></a>Novedades de la actualización de documentación del SDK de febrero de 2016
 
 >[!Note]
 > Las actualizaciones de la documentación de características de esta sección se aplican a la descarga del SDK con fecha de 11/12/2015.
@@ -40,7 +41,7 @@ Este tema contiene información importante sobre esta versión y versiones anter
 - **Compatibilidad con el Ayudante para el inicio de sesión (SIA) de Microsoft Online mientras se quita RMS SDK.** Seguiremos admitiendo el uso del SIA durante 6 meses, después de lo cual dejará de ser compatible.
 
 
-## Actualización de diciembre de 2015
+## <a name="december-2015-update"></a>Actualización de diciembre de 2015
 
 - Se han implementado mejoras de rendimiento en varias áreas como:
     - Publicar desde el servidor de licencias principal cuando se usan servidores de solo licencia.
@@ -50,11 +51,11 @@ Este tema contiene información importante sobre esta versión y versiones anter
 - Observe que también se ha actualizado la lista de [plataformas compatibles](supported-platforms.md).
 - Se ha eliminado de RMS SDK 2.1 la necesidad del entorno de preproducción y el uso de manifiestos de aplicación. Se han quitado estas secciones de este conjunto de documentación para desarrolladores y se ha simplificado y reorganizado la documentación en general.
 
-## Actualización de mayo de 2015
+## <a name="may-2015-update"></a>Actualización de mayo de 2015
 
 -   **RMS basado en la nube y aplicaciones de servicio** - [IPC\_CREDENTIAL\_SYMMETRIC\_KEY](https://msdn.microsoft.com/library/dn133062.aspx) necesita tres datos: clave simétrica, **AppPrincipalId** y **TenantBposId**. Hemos actualizado este tema para incluir instrucciones de procesamiento de esta información. Para consultar esta actualización, vea la versión revisada de [Habilitación de la aplicación de servicio para que funcione con RMS basado en la nube](how-to-use-file-api-with-aadrm-cloud.md).
 
-## Actualización de abril de 2015
+## <a name="april-2015-update"></a>Actualización de abril de 2015
 
 -   Ya es posible realizar el **seguimiento de documentos** gracias a un conjunto de nuevas API. Para más información, vea [Tracking Content](tracking-content.md) (Seguimiento de contenido).
 -   **Tipo de cifrado**: ahora se admite control de nivel de API para la selección del paquete de cifrado. Para más información, vea [Working with encryption](working-with-encryption.md) (Uso de cifrado).
@@ -65,7 +66,7 @@ Este tema contiene información importante sobre esta versión y versiones anter
 -   El **registro** ahora se implementa a través de archivo y de métodos de seguimiento de eventos para Windows.
 -   Si está usando una **máquina con Windows 7 SP1 o Windows Server 2008 R2**, vea la nota que sigue a "Notas importantes para desarrolladores".
 
-## Actualización de enero de 2015
+## <a name="january-2015-update"></a>Actualización de enero de 2015
 
 -   **Aumento del tamaño de los archivos protegidos compatibles (pfile)**: ahora se admiten tamaños de archivo pfile superiores a un giga (1 GB). Para obtener más información sobre los archivos pfile, vea [Supported File Formats](supported-file-formats.md) (Formatos de archivo compatibles).
 -   **Registro mejorado para un mejor diagnóstico**: los niveles de registro mostrarán **ERROR** o **WARNING** en los mensajes que deban revisarse. El resto de los mensajes, incluidas las excepciones que se siguen mostrando, se registrarán como **INFO**.
@@ -75,12 +76,12 @@ Este tema contiene información importante sobre esta versión y versiones anter
 -   **Adquisición de plantillas de empresa**: correcciones importantes en el código de adquisición de plantillas, basadas en los informes y los comentarios de los clientes.
 -   Coherencia mejorada para la localización
 
-## Actualizaciones de octubre de 2014
+## <a name="october-2014-update"></a>Actualizaciones de octubre de 2014
 
 -   Se han actualizado los comportamientos predeterminados del componente de API de archivo del SDK. Para más información, vea [File API configuration](file-api-configuration.md) (Configuración de API de archivo).
 -   La nueva característica de notificaciones por correo electrónico se describe en el tema de notas de desarrollador, [Enabling email notification](how-to-enable-email-notification.md) (Habilitación de notificación por correo electrónico).
 
-## Actualización de julio de 2014
+## <a name="july-2014-update"></a>Actualización de julio de 2014
 
 Los componentes de la API de archivo del SDK se han ampliado y ofrecen las siguientes características:
 
@@ -99,7 +100,7 @@ Los componentes de la API de archivo del SDK se han ampliado y ofrecen las sigui
     -   [IpcfSetEndOfFile](https://msdn.microsoft.com/library/dn771754.aspx)
     -   [IpcfWriteFile](https://msdn.microsoft.com/library/dn771756.aspx)
 
-## Actualización de abril de 2014
+## <a name="april-2014-update"></a>Actualización de abril de 2014
 
 -   El **uso de memoria de la API de archivo**, especialmente para archivos PFile grandes, se ha mejorado considerablemente.
 -   El **identificador de contenido** se puede escribir ahora mediante la propiedad **IPC\_LI\_CONTENT\_ID**. Para obtener más información, vea [License property types](https://msdn.microsoft.com/library/hh535287.aspx) (Tipos de propiedades de licencias).
@@ -108,7 +109,7 @@ Los componentes de la API de archivo del SDK se han ampliado y ofrecen las sigui
 
     **Práctica recomendada de pruebas**: guía agregada para el uso de un servidor local antes de las pruebas con Azure RMS. Para más información, vea [Enable your service application to work with cloud based RMS](how-to-use-file-api-with-aadrm-cloud.md) (Habilitar la aplicación de servicio para que funcione con RMS basado en la nube).
 
-## Notas importantes para desarrolladores
+## <a name="important-developer-notes"></a>Notas importantes para desarrolladores
 
 -   **Compatibilidad nativa para todos los tipos de archivo**
 
@@ -148,7 +149,7 @@ Los componentes de la API de archivo del SDK se han ampliado y ofrecen las sigui
 
     **Solución**: si quiere usar Ipcsecproc\*isv.dll con una arquitectura diferente (por ejemplo, si tiene instalado el SDK de 64 bits en un equipo de 64 bits, pero ahora quiere implementarlo en un equipo de 32 bits que necesita Ipcsecproc\*isv.dll), deberá instalar el SDK de 32 bits en un equipo distinto y copiar ahí los archivos Ipcsecproc\*isv.dll desde la carpeta "%PROGRAMFILES%\\Microsoft Information Protection And Control" (la ubicación predeterminada o la que eligió al instalar el SDK).
 
-## Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 **P**: ¿Cuál es el comportamiento predeterminado del idioma con las funciones que toman un parámetro LCID?
 
@@ -167,6 +168,6 @@ Si no se puede recuperar ningún nombre ni ninguna descripción, se devuelve un 
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

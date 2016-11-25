@@ -2,6 +2,7 @@
 title: "Supervisión del conector de Azure Rights Management | Azure Information Protection"
 description: "Información para ayudarle a supervisar el conector y el uso de la organización del servicio Azure Rights Management de Azure Information Protection."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/05/2016
 ms.topic: article
@@ -12,19 +13,19 @@ ms.assetid: 8a1b3e54-f788-4f84-b9d7-5d5079e50b4e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 78b975c2babad347fc5be7956d504c7283508962
-ms.openlocfilehash: af75705e8c256811d1816c2ad52e42e98b4db503
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 65d9e0bb46238d9fda31b8fb47e8e4368d96e1b2
 
 
 ---
 
-# Supervisión del conector de Azure Rights Management
+# <a name="monitor-the-azure-rights-management-connector"></a>Supervisión del conector de Azure Rights Management
 
 >*Se aplica a: Azure Information Protection, Windows Server 2012, Windows Server 2012 R2*
 
 Después de instalar y configurar el conector RMS, puede usar los siguientes métodos e información para que le resulte más fácil supervisar el conector y el uso que realiza la organización del servicio Azure Rights Management de Azure Information Protection.
 
-## Entradas del registro de eventos de aplicación
+## <a name="application-event-log-entries"></a>Entradas del registro de eventos de aplicación
 
 El conector de RMS usa el registro de eventos de la aplicación para registrar las entradas del **conector de Microsoft RMS**. 
 
@@ -41,7 +42,7 @@ Al igual que con todas las entradas de registro de eventos, explore el mensaje p
 
 Además de comprobar el registro de eventos cuando implemente por primera vez el conector, compruebe si hay advertencias y errores de forma regular. Por ejemplo, el conector puede estar funcionando como se esperaba inicialmente pero otros administradores pueden cambiar las configuraciones dependientes. Por ejemplo, otro administrador cambia la configuración del servidor de proxy web de forma que los servidores del conector de RMS ya no tengan acceso a Internet (Error 3001) o quita una cuenta de equipo de un grupo que ha especificado como autorizado para usar el conector (Advertencia 2001).
 
-### Id. de registro de eventos y descripciones
+### <a name="event-log-ids-and-descriptions"></a>Id. de registro de eventos y descripciones
 
 Use las siguientes secciones para identificar los id. de eventos posibles, descripciones y cualquier información adicional.
 
@@ -153,13 +154,13 @@ Este evento se registra si el conector RMS no puede descargar la lista más reci
 
 ----
 
-## Contadores de rendimiento
+## <a name="performance-counters"></a>Contadores de rendimiento
 
 Al instalar el conector RMS, este crea automáticamente contadores de rendimiento del **conector Microsoft Rights Management**, que pueden resultar útiles para supervisar el rendimiento de uso del servicio Azure Rights Management a través del conector. Por ejemplo, si suelen producirse retrasos al proteger documentos o correos electrónicos, o al abrir documentos o correos electrónicos protegidos, los contadores de rendimiento pueden ayudarle a determinar si el retraso se debe al tiempo de procesamiento del conector, al tiempo de procesamiento del servicio Azure Rights Management o a retrasos en la red. Para ayudarle a identificar dónde se produce el retraso, busque contadores que incluyan recuentos promedio para el **tiempo de procesamiento del conector**, el **tiempo de respuesta del servicio** y el **tiempo de respuesta del conector**. Por ejemplo: **Tiempo de respuesta medio del conector de procesamiento de solicitudes por lotes correctas de licencias**.
 
 Si ha agregado recientemente nuevas cuentas de servidor para usar el conector, un buen contador para comprobar es **Tiempo desde la última actualización de la directiva de autorización** para confirmar que el conector ha descargado la lista desde que la ha actualizado o si necesita esperar un poco más (hasta 15 minutos).
 
-## RMS Analyzer
+## <a name="rms-analyzer"></a>RMS Analyzer
 
 Puede usar la herramienta Rights Management Services Analyzer para ayudarle a supervisar el estado del conector y a identificar cualquier problema de configuración.
 
@@ -167,7 +168,7 @@ Si todavía no ha descargado esta herramienta, puede hacerlo desde el [Centro de
 
 Para obtener información e instrucciones adicionales, vea los **Detalles** y las **Instrucciones de instalación** en la página de descarga.
 
-## Registro
+## <a name="logging"></a>Registro
 
 El registro de uso le ayuda a identificar cuándo los correos electrónicos y los documentos están protegidos y consumidos. Cuando esto se realiza mediante el conector RMS, el campo Identificador de usuario de los registros contiene el nombre de la entidad de servicio de **Aadrm_S-1-7-0** que se crea automáticamente para el conector RMS.
 
@@ -192,6 +193,6 @@ Si necesita un registro más detallado para fines de diagnóstico, puede usar [D
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

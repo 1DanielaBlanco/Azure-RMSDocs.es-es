@@ -2,6 +2,7 @@
 title: "Guía de implementación rápida para Azure Information Protection | Azure Information Protection"
 description: "Una guía para que le resulte más fácil implementar y usar rápidamente Azure Information Protection para proteger los datos de la organización. Empiece por elegir una de las opciones de una lista de escenarios de implementación específicos."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: get-started-article
@@ -12,13 +13,13 @@ ms.assetid: c994d616-cff6-4930-9228-a7f7d198a160
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2c0f3b58a2f1b5233c262bb67cc4a485557ba997
-ms.openlocfilehash: 914362cbabe2e929b988e0f922c3848e8ca7771f
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: d1415913f4a76331088140555b0cfeaa88200871
 
 
 ---
 
-# Guía de implementación rápida de Azure Rights Management
+# <a name="rapid-deployment-guide-for-azure-rights-management"></a>Guía de implementación rápida de Azure Rights Management
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
@@ -35,12 +36,12 @@ Antes de implementar estas soluciones, puede enviar un anuncio general a los usu
 > [!NOTE]
 > Si tiene preguntas y comentarios sobre esta guía, use los mecanismos de comentarios de esta página o envíe un correo a [AskIPTeam@Microsoft.com](mailto:%20askipteam@microsoft.com?subject=Rapid%20Deployment%20Guide%20feedback).
 
-## Escenarios de Azure Information Protection
+## <a name="scenarios-for-azure-information-protection"></a>Escenarios de Azure Information Protection
 Para que pueda implementar Azure Information Protection con mayor rapidez para solucionar problemas empresariales específicos, elija los escenarios que se acerquen más a sus objetivos empresariales y adáptelos según sea necesario.
 
 
 
-**Enviar por correo electrónico de manera segura un archivo de Office a los usuarios de otra organización con la capacidad de realizar un seguimiento de cómo se accede a él (colaboración de negocio a negocio)**
+**Enviar por correo electrónico de manera segura un archivo de Office a los usuarios de otra organización con la capacidad de realizar un seguimiento de cómo se obtiene acceso a él (colaboración de negocio a negocio)**
 
 Ejemplos:
 
@@ -123,12 +124,12 @@ Vea [Escenario: Configurar carpetas de trabajo para protección persistente](sce
 
 
 
-## Anuncio para los usuarios antes de la implementación
+## <a name="announcement-for-users-before-rollout"></a>Anuncio para los usuarios antes de la implementación
 Puede usar el siguiente mensaje de comunicación de ejemplo para informar a los usuarios de que la implementación de Azure Information Protection supone algunos cambios futuros. Copie y pegue el texto siguiente para que alguien del equipo directivo de su empresa (preferiblemente el director ejecutivo) lo envíe por correo electrónico a todos los usuarios. Puede modificar el texto del mensaje para que sea más relevante para los usuarios y la organización.
 
 ![Banner de documentación de usuario de ejemplo para la implementación rápida de Azure RMS](../media/AzRMS_ExampleBanner.png)
 
-### Cambios en la protección de nuestros datos
+### <a name="changes-were-making-to-safeguard-our-data"></a>Cambios en la protección de nuestros datos
 ¿Alguna vez ha querido bloquear el acceso a un documento que envió a sus socios por error? ¿Le gustaría saber si los clientes han leído la información que les ha remitido sobre algún producto? ¿Necesita compartir información confidencial sobre un producto sin preocuparse de que se envíe a gente que no debería verla?
 
 Pronto podrá hacer todo esto, ya que el departamento de TI está realizando algunos cambios para implementar Microsoft Azure Information Protection como solución para la protección de datos empresariales. La protección que necesitamos se aplicará en muchas de estas soluciones sin necesidad de que usted intervenga. Pero puede que tenga que tomar medidas en algunos cambios. De ser así, el departamento de TI le enviará la información y las instrucciones pertinentes. Si tiene alguna duda o problema, cuenta con el apoyo del departamento de soporte técnico.
@@ -146,6 +147,6 @@ Las soluciones que estamos implementando nos ayudarán a proteger nuestra valios
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

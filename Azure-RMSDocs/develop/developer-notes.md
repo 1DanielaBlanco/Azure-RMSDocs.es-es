@@ -3,6 +3,7 @@ title: "Instrucciones e información para desarrolladores | Azure RMS"
 description: "En este tema se incluyen instrucciones específicas para varios escenarios de desarrollo importantes."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 10/18/2016
 ms.topic: article
@@ -14,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 593b8b505b8bd241c301c95ee6280f93f14901b9
-ms.openlocfilehash: 54ce450600b2a10e6889d2684ce26c9da9f9167e
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 93ed9760d79f2f38d4bee302ebb5c7c6368b1bbe
 
 
 ---
 
-# Instrucciones e información para desarrolladores
+# <a name="developer-guidance-and-information"></a>Instrucciones e información para desarrolladores
 
 En esta sección se incluyen instrucciones específicas para varios escenarios de desarrollo importantes, así como información general sobre el desarrollo con este SDK. Los escenarios de esta sección son específicos de esta versión de Rights Management Services SDK 2.1 y podrían modificarse en versiones posteriores.
 - [Uso de la autenticación ADAL](how-to-use-adal-authentication.md): autenticación con Azure RMS para una aplicación que use la biblioteca de autenticación de Azure Active Directory (ADAL).
@@ -40,14 +41,14 @@ En esta sección se incluyen instrucciones específicas para varios escenarios d
 - [Referencia de restricción de uso](usage-restriction-reference.md): las restricciones de uso se definen mediante las constantes indicadas en este tema.
 
  
-## Temas relacionados
-* [Introducción](ad-rms-overview.md)
+## <a name="related-topics"></a>Temas relacionados
+* [Información general](ad-rms-overview.md)
  
 
  
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -2,6 +2,7 @@
 title: Ayuda a los usuarios para proteger archivos mediante Azure Rights Management | Azure Information Protection
 description: "Información para ayudarle a ofrecer instrucciones a los usuarios, administradores y al servicio de asistencia después de implementar y configurar el servicio Azure Rights Management de Azure Information Protection."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 55fd22b60ad87dadce0ffb89bb658e949670f728
-ms.openlocfilehash: 56bb2e90f9d1ecb7c925ab22cf1dba16246876f7
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: df9da739717465a905c9e6da281df652de63f8bd
 
 
 ---
 
-# Ayuda a los usuarios para proteger archivos mediante Azure Rights Management
+# <a name="helping-users-to-protect-files-by-using-the-azure-rights-management-service"></a>Ayuda a los usuarios para proteger archivos mediante el servicio Azure Rights Management
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
@@ -31,14 +32,14 @@ Después de implementar y configurar Azure Information Protection para su organi
     > [!TIP]
     > Vídeos de ejemplo para usuarios finales:
     >
-    > -   [Experiencia del usuario con Azure RMS](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-user-experience)
-    > -   [Revocación y seguimiento de documentos de Azure RMS](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation)
+    > -   [Azure RMS user experience](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-user-experience) (Experiencia del usuario con Azure RMS)
+    > -   [Azure RMS Document Tracking and Revocation](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation) (Revocación y seguimiento de documentos de Azure RMS)
 
 -   **Información del administrador:**
 
     Algunas aplicaciones aplican automáticamente protección de la información, mediante directivas y configuración que los administradores establecen. Para estas aplicaciones, puede que tenga que proporcionar instrucciones para otros administradores que administran estas aplicaciones y servicios. Para más información, vea [Compatibilidad de aplicaciones con el servicio Azure Rights Management](../understand-explore/applications-support.md) y [Configuración de aplicaciones para el servicio Azure Rights Management](configure-applications.md).
 
--   **Información del servicio de asistencia**
+-   **Información del departamento de soporte técnico:**
 
     Una de las herramientas más útiles para el servicio de asistencia es [RMSAnalyzer](https://www.microsoft.com/en-us/download/details.aspx?id=46437). Los operadores del servicio de asistencia pueden ejecutarlo con la opción de administrador de Azure RMS, y pueden pedir a los usuarios que lo ejecuten con la opción de usuario de Azure RMS. Esta herramienta no solo puede ayudar a identificar problemas, sino también a corregir los problemas que encuentre y, si todavía no se han solucionado, anotar los registros de seguimiento.
 
@@ -60,7 +61,7 @@ Después de implementar y configurar Azure Information Protection para su organi
 
 Use las secciones siguientes para información específica de aplicación a fin de ayudar a los usuarios a proteger documentos y mensajes de correo electrónico confidenciales.
 
-## Usar la protección de información con la aplicación de uso compartido de Rights Management
+## <a name="using-information-protection-with-the-rights-management-sharing-application"></a>Usar la protección de información con la aplicación de uso compartido de Rights Management
 La aplicación Rights Management (RMS) sharing se necesita para que los usuarios protejan y usen contenido protegido si usan Office 2010, pero también se recomienda para todos los equipos y dispositivos móviles compatibles con el servicio Azure Rights Management.
 
 Además de facilitar a los usuarios la protección de documentos importantes, la aplicación de uso compartido de RMS permite a los usuarios realizar el seguimiento de los documentos que han protegido y, si es necesario, revocar el acceso a ellos.
@@ -72,13 +73,13 @@ Para dispositivos móviles, consulte las [preguntas más frecuentes sobre la apl
 > [!TIP]
 > Para ver un escenario de ejemplo de alto nivel con capturas de pantalla, consulte [Uso compartido seguro de datos adjuntos con los usuarios móviles](../understand-explore/what-admins-users-see.md#users-safely-share-attachments-with-mobile-users).
 
-## Uso de protección de la información con Office 365, Office 2016 u Office 2013
+## <a name="using-information-protection-with-office-365-office-2016-or-office-2013"></a>Uso de protección de la información con Office 365, Office 2016 u Office 2013
 Si usa el servicio Azure Rights Management y no ha instalado la aplicación Rights Management sharing, los usuarios no verán el botón **Uso compartido protegido** en la cinta ni verán **Protección local** en el Explorador de archivos, lo que les facilita la protección de archivos. Para estos usuarios, debe seguir instrucciones similares a las siguientes.
 
 > [!TIP]
 > Para buscar ayuda específica de la aplicación e instrucciones para usar protección de la información con estas aplicaciones, busque **IRM** y el nombre y la versión de la aplicación.
 
-#### Para proteger un documento en Word 2013
+#### <a name="to-protect-a-document-in-word-2013"></a>Para proteger un documento en Word 2013
 
 1.  Dentro de Microsoft Word, cree un nuevo documento.
 
@@ -91,7 +92,7 @@ Si usa el servicio Azure Rights Management y no ha instalado la aplicación Righ
 
 Cuando otros usuarios abran el documento, se les autenticará primero. Si no está autenticados para abrir el documento, el documento no se abrirá. Si están autorizados para abrir el documento, se abrirá con los derechos de uso restringidos que se especificaron para ese usuario. Por ejemplo, un derecho de uso de Solo vista no permite al usuario editar o guardar el documento, aunque se copie primero a otra ubicación. Los derechos de uso se muestran en la parte superior del documento mediante una pancarta de restricción. La pancarta puede mostrar los permisos que se aplican al documento o puede proporcionar un vínculo para mostrarlos.
 
-#### Para proteger un mensaje de correo electrónico con Outlook 2013 y Exchange Online
+#### <a name="to-protect-an-email-message-using-outlook-2013-and-exchange-online"></a>Para proteger un mensaje de correo electrónico con Outlook 2013 y Exchange Online
 
 1.  Dentro de Outlook, cree un nuevo mensaje de correo electrónico para un destinatario dentro de la organización.
 
@@ -101,7 +102,7 @@ Cuando otros usuarios abran el documento, se les autenticará primero. Si no est
 
 De manera similar a la visualización de un documento protegido, cuando los destinatarios reciben el mensaje de correo electrónico, se autentican en primer lugar. Si están autorizados para ver el mensaje de correo electrónico, se abrirá con los derechos de uso restringidos que se especificaron para ese usuario. Por ejemplo, si seleccionó **No reenviar**, el botón Reenviar no está disponible en la cinta de opciones.
 
-#### Para proteger un mensaje de correo electrónico con Outlook Web App
+#### <a name="to-protect-an-email-message-using-the-outlook-web-app"></a>Para proteger un mensaje de correo electrónico con Outlook Web App
 
 1.  Dentro de Outlook Web Ap, cree un nuevo mensaje de correo electrónico para un destinatario dentro de la organización.
 
@@ -115,6 +116,6 @@ De manera similar a la visualización de un documento protegido, cuando los dest
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

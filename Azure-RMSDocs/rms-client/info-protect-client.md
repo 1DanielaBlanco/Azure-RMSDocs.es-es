@@ -4,15 +4,15 @@ description: "Instrucciones para instalar el cliente que agrega una barra de Inf
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/01/2016
+ms.date: 11/16/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4445adff-4c5a-450f-aff8-88bf5bd4ca78
 translationtype: Human Translation
-ms.sourcegitcommit: 2f1930f4657278d25ef6dd369866f16e4ba71644
-ms.openlocfilehash: 5e36d046d53b0fdfb6796f2a00e8d0d1325f30c3
+ms.sourcegitcommit: db05149a25b6535d568338140daa2474e48b6711
+ms.openlocfilehash: 984d764d0c1ac41e6baec0b7978f501d7494773d
 
 
 ---
@@ -69,7 +69,9 @@ Puede usar una de estas opciones:
     
         También puede ver el nombre de usuario mostrado que identifica la cuenta que se usa para autenticarlo en Azure Information Protection. Este nombre de usuario debe coincidir con una cuenta que se usa para Office 365 o Azure Active Directory.
 
-    - En la sección **Ayuda y comentarios**: use el vínculo **Enviar comentarios** para adjuntar automáticamente los registros de cliente a un mensaje de correo electrónico que se puede enviar al equipo de Information Protection para que investiguen si hay algún problema. 
+    - En la sección **Ayuda y comentarios**: el vínculo **Más información** dirige, de forma predeterminada, al sitio web de [Azure Information Protection](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection), pero se puede configurar para una dirección URL personalizada como una de las opciones de [configuración global](../deploy-use/configure-policy-settings.md) en la directiva de Azure Information Protection.
+        
+        Utilice el vínculo **Enviar comentarios** para adjuntar automáticamente los registros de cliente a un mensaje de correo electrónico que se puede enviar al equipo de Information Protection para investigar un problema. 
     
         Para obtener información de diagnóstico y restablecer el cliente, haga clic en **Ejecutar diagnósticos**. Al finalizar las pruebas de los diagnósticos, haga clic en **Copiar resultados** para pegar la información en un correo electrónico que puede enviar a su departamento de soporte técnico o al soporte técnico de Microsoft. Cuando finalicen las pruebas, también puede restablecer al cliente.
         
@@ -115,6 +117,6 @@ Para comprobar la información de versión de lanzamiento para el cliente, consu
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

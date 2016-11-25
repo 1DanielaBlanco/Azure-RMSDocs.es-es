@@ -3,6 +3,7 @@ title: "Cómo depurar una aplicación con derechos habilitados | Azure RMS"
 description: "En el siguiente tema se muestra cómo depurar la aplicación y utilizar el registro de eventos de Windows."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,17 +15,17 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: cab6839a1911bb61185f2ef361b2040ac0d38a6e
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 789c93b6d7ac72ebe1df04300f2885ca2aa23a06
 
 
 ---
 
-# Depuración de una aplicación con derechos habilitados
+# <a name="howto-debug-a-rightsenabled-application"></a>Depuración de una aplicación con derechos habilitados
 
 En el siguiente tema se muestra cómo depurar la aplicación y utilizar el registro de eventos de Windows.
 
-## Depuración de la aplicación
+## <a name="debugging-your-application"></a>Depuración de la aplicación
 
 En Rights Management Services SDK 2.1, las comprobaciones contra la depuración en la versión de desarrollador de nuestro tiempo de ejecución están deshabilitadas.
 
@@ -41,7 +42,7 @@ HKEY_LOCAL_MACHINE
             dword
 ```
 
-### Registro de aplicaciones mediante el registro de eventos de Windows
+### <a name="application-logging-by-using-the-windows-event-log"></a>Registro de aplicaciones mediante el registro de eventos de Windows
 
 El nombre del registro de eventos es "Microsoft-RMS-MSIPC/Debug". Esto significa que, en el Visor de eventos de Windows, el registro aparece como "Registros de aplicaciones y servicios\\Microsoft\\RMS\\MSIPC\\Debug".
 
@@ -67,7 +68,7 @@ Por ejemplo, el siguiente comando habilitará el registro de eventos de MSIPC y 
 
  
 
-## Temas relacionados
+## <a name="related-topics"></a>Temas relacionados
 
  
 
@@ -75,6 +76,6 @@ Por ejemplo, el siguiente comando habilitará el registro de eventos de MSIPC y 
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 
