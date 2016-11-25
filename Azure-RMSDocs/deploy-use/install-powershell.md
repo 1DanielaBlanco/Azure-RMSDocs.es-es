@@ -2,6 +2,7 @@
 title: "Instalación de Windows PowerShell para Azure Rights Management | Azure Information Protection"
 description: "Instrucciones para instalar Windows PowerShell para el servicio Azure Rights Management de Azure Information Protection. El nombre de este módulo es AADRM."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: 0d665ed6-b1de-4d63-854a-bc57c1c49844
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: 97c53d92755ebcadee7de2e32750c00b285224dd
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: c114059e99f3caed4fa5e2c48fe0428cb5847f68
 
 
 ---
 
-# Instalación de Windows PowerShell para Azure Rights Management
+# <a name="installing-windows-powershell-for-azure-rights-management"></a>Instalación de Windows PowerShell para Azure Rights Management
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
@@ -26,7 +27,7 @@ Use la información siguiente para que el resulte más fácil instalar el módul
 
 Puede usar este módulo de PowerShell para administrar el servicio Azure Rights Management desde la línea de comandos con cualquier equipo que tenga una conexión a Internet y que cumpla los requisitos previos indicados en la sección siguiente. Windows PowerShell para [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] admite el uso de scripting para la automatización o puede que sea necesario para escenarios de configuración avanzada. Para más información acerca de las tareas de administración y las configuraciones que admite el módulo, consulte [Administración de Azure Rights Management mediante el uso de Windows PowerShell](administer-powershell.md).
 
-## Requisitos previos
+## <a name="prerequisites"></a>Requisitos previos
 Esta tabla enumera los requisitos previos para instalar Windows PowerShell para [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)].
 
 |Requisito|Más información|
@@ -41,7 +42,7 @@ Esta tabla enumera los requisitos previos para instalar Windows PowerShell para 
 > Si tenía instalada una versión anterior del módulo de administración de Rights Management, use **Programas y características** para desinstalar **Administración de Windows Azure AD Rights Management** antes de instalar la versión más reciente.
 
 
-## Cómo instalar el módulo de administración Rights Management
+## <a name="how-to-install-the-rights-management-administration-module"></a>Cómo instalar el módulo de administración Rights Management
 
 1.  Vaya al Centro de descarga de Microsoft y [descargue la herramienta de administración de Azure Rights Management](https://go.microsoft.com/fwlink/?LinkId=257721), que contiene el módulo de administración de [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] para Windows PowerShell.
 
@@ -51,7 +52,7 @@ Esta tabla enumera los requisitos previos para instalar Windows PowerShell para 
 
 Ahora ya se ha instalado Windows PowerShell para [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] .
 
-## Pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 Para consultar los cmdlets disponibles, inicie Windows PowerShell con la opción **Ejecutar como administrador** y escriba lo que se indica a continuación:
 
 ```
@@ -70,11 +71,11 @@ Para poder ejecutar cualquier comando que configure el servicio de [!INCLUDE[aad
 > [!NOTE]
 > Si el servicio Azure Rights Management aún no está activado, puede activarlo después de haberse conectado al servicio con el cmdlet [Enable-Aadrm](https://msdn.microsoft.com/library/windowsazure/dn629412.aspx).
 
-## Véase también
+## <a name="see-also"></a>Consulte también
 [Administración de Azure Rights Management mediante Windows PowerShell](administer-powershell.md)
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

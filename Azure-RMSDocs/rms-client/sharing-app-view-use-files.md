@@ -2,6 +2,7 @@
 title: Ver y usar los archivos protegidos por Rights Management | Azure Information Protection
 description: "Instrucciones para ver y usar un archivo protegido, que requiere que tenga la aplicación Rights Management (RMS) sharing instalada."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/25/2016
 ms.topic: article
@@ -12,15 +13,15 @@ ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 94a8729e7c7e5bb438ac2bd48789a522c8de8cc4
-ms.openlocfilehash: db8d6a9c5959139ee76f022a5cee997bab24e6c9
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 1f248150a3f65fe5ffda1d20f51eee6bb834dd60
 
 
 ---
 
-# Ver y usar los archivos protegidos por Rights Management
+# <a name="view-and-use-files-that-have-been-protected-by-rights-management"></a>Ver y usar los archivos protegidos por Rights Management
 
->*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 con SP1, Windows 8, Windows 8.1*
+>*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 con SP1, Windows 8 y Windows 8.1*
 
 Cuando la [aplicación Rights Management sharing (RMS) está instalada en el equipo](install-sharing-app.md), puede ver un archivo protegido simplemente haciendo doble clic en él. El archivo puede ser un archivo adjunto en un mensaje de correo electrónico, o podría verlo al usar el Explorador de archivos.
 
@@ -34,7 +35,7 @@ Cuando la [aplicación Rights Management sharing (RMS) está instalada en el equ
 >     Al suscribirse, use la dirección de correo electrónico de su empresa en lugar de una dirección de correo electrónico personal. Si va a suscribirse porque le enviaron un archivo adjunto protegido por correo electrónico, use la misma dirección de correo electrónico que se usó para enviarle el mensaje de correo electrónico.
 > -   Para obtener más información, consulte [RMS for individuals and Azure Rights Management](../understand-explore/rms-for-individuals.md) (RMS para usuarios y Azure Rights Management).
 
-## Para ver un archivo protegido
+## <a name="to-view-a-protected-file"></a>Para ver un archivo protegido
 Usando el Explorador de archivos o el mensaje de correo electrónico que contiene el archivo adjunto, haga doble clic en el archivo protegido y escriba sus credenciales si se le solicita que lo haga.
 
 Si ve dos versiones del archivo pero con extensiones de nombre de archivo diferentes, abra el archivo que tiene una extensión de archivo .ppdf únicamente si el otro archivo no se abre. Si tampoco puede abrir la versión .ppdf, instale primero la [aplicación RMS sharing](install-sharing-app.md), que sabe cómo abrir los archivos que tienen una extensión de nombre de archivo .ppdf.
@@ -73,7 +74,7 @@ Para obtener la lista completa de extensiones de nombres de archivo que admiten 
 > [!NOTE]
 > Si después de confirmar que el archivo está protegido por Rights Management este no se abre, descargue y use la [herramienta RMS Analyzer](https://www.microsoft.com/en-us/download/details.aspx?id=46437). Siga las instrucciones de la herramienta para detectar problemas en su equipo que puedan impedir que se abra un documento protegido.
 
-## Para usar archivos que están protegidos (por ejemplo, editar e imprimir el archivo)
+## <a name="to-use-files-that-have-been-protected-for-example-edit-and-print-the-file"></a>Para usar archivos que están protegidos (por ejemplo, editar e imprimir el archivo)
 Si, tras abrir el archivo protegido, desea hacer algo más que simplemente leerlo (como editarlo, copiarlo e imprimirlo), siga las instrucciones correspondientes a la extensión de nombre de archivo :
 
 - **El archivo tiene una extensión de nombre de archivo *.pfile*.**
@@ -95,18 +96,18 @@ Si, tras abrir el archivo protegido, desea hacer algo más que simplemente leerl
     Las aplicaciones que están habilitadas para Rights Management saben cómo abrir los archivos que se protegieron mediante otras aplicaciones habilitadas para Rights Management. Además, conservan la protección que tenían aplicada, aun cuando modifique el archivo o lo guarde con otro nombre de archivo o en otra ubicación. Estas aplicaciones permiten usar el archivo según los permisos que tenga aplicados actualmente, por lo que si tiene permisos para usar el archivo, puede hacerlo. Por ejemplo, es posible que pueda editar el archivo pero no imprimirlo.
 
 
-## Ejemplos y otras instrucciones
+## <a name="examples-and-other-instructions"></a>Ejemplos y otras instrucciones
 Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de Rights Management e instrucciones de procedimientos, consulte las siguientes secciones de la guía de usuario de la aplicación para uso compartido de Rights Management:
 
 -   [Ejemplos de uso de la aplicación RMS sharing](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [¿Qué desea hacer?](sharing-app-user-guide.md#what-do-you-want-to-do)
+-   [¿Qué quiere hacer?](sharing-app-user-guide.md#what-do-you-want-to-do)
 
-## Véase también
-[Guía de usuario de la aplicación de uso compartido Rights Management](sharing-app-user-guide.md)
+## <a name="see-also"></a>Véase también
+[Guía de usuario de la aplicación Rights Management sharing](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

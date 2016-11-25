@@ -3,6 +3,7 @@ title: Servidor de AD RMS | Azure RMS
 description: El componente de servidor de Rights Management Services (RMS) se implementa mediante un conjunto de servicios web que se ejecutan en Microsoft Internet Information Services.
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 3e2dee5511bc86e44e2e10ff9fc981aa36ccee38
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 498a06a65d61417600cd5501a0d04935cb733c37
 
 
 ---
 
-# Servidor de
+# <a name="server"></a>Servidor de
 
 En este tema se describe el propósito y las funciones del servidor RMS para Azure y Windows Server.
 
@@ -42,9 +43,9 @@ De los muchos servicios web instalados, los siguientes son importantes para el d
 |Certificación previa | Permite a un servidor solicitar un *certificado de cuenta de derechos* en nombre de un usuario. El servicio se ejecuta en servidores de certificación raíz y en servidores de licencias.|
 |Localizador de servicios | Proporciona la dirección URL de los servicios de publicación, licencias y certificación de cuenta a Active Directory para que los clientes de RMS los puedan detectar. El servicio se ejecuta en servidores de certificación raíz y en servidores de licencias.|
 
-## Temas relacionados ##
+## <a name="related-topics"></a>Temas relacionados ##
 * [Información general](ad-rms-overview.md)
-* [Servicios de Microsoft Internet Information Server](http://www.iis.net/overview)
+* [Microsoft Internet Information Services](http://www.iis.net/overview)
 * [Habilitación de la aplicación de servicio para que funcione con RMS basado en la nube](how-to-use-file-api-with-aadrm-cloud.md)
 * [Microsoft Windows Rights Management Services con Service Pack 2](http://www.microsoft.com/download/en/details.aspx?id=4909)
 * [API de scripting de Active Directory Rights Management Services](https://msdn.microsoft.com/library/Bb968797)
@@ -58,6 +59,6 @@ De los muchos servicios web instalados, los siguientes son importantes para el d
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

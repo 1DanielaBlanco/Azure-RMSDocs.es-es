@@ -2,6 +2,7 @@
 title: "¿Qué ven los administradores y los usuarios? | Azure Information Protection"
 description: "Vea algunos ejemplos típicos de cómo los administradores y los usuarios ven y pueden usar la tecnología Azure Rights Management (Azure RMS) para proteger información confidencial o importante."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/05/2016
 ms.topic: article
@@ -12,14 +13,14 @@ ms.assetid: 013e0eb4-49a7-4e81-9e4d-f56c0ceb017f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4a6d07e9a24293f054915b5598c63e118c9c1430
-ms.openlocfilehash: 4cc2522a03d1d6003d60e9c87fb8bab3c1454df4
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 5708529be090dc2d2dcd58b728e046eceff26865
 
 
 ---
 
 
-# Azure RMS en acción: Qué ven los administradores y los usuarios
+# <a name="azure-rms-in-action-what-administrators-and-users-see"></a>Azure RMS en acción: Qué ven los administradores y los usuarios
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
@@ -32,7 +33,7 @@ En este artículo se muestran algunos ejemplos típicos de cómo los administrad
 
 Para otras capturas de pantalla y vídeos que muestran RMS en acción, consulte el [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services) (Blog de seguridad y movilidad empresarial).
 
-## Activación y configuración de Rights Management
+## <a name="activating-and-configuring-rights-management"></a>Activación y configuración de Rights Management
 Aunque puede usar Windows PowerShell para activar y configurar Azure RMS, es más fácil hacerlo desde el portal de administración. Al activar el servicio, tendrá dos plantillas predeterminadas que los administradores y los usuarios pueden seleccionar para aplicar la protección de la información a los archivos de forma rápida y fácil. También puede crear sus propias plantillas personalizadas para contar con opciones adicionales.
 
 ![QUÉ VEN LOS ADMINISTRADORES EN EL PASO 1](../media/AzRMS_StoryboardActivate_small1.png)
@@ -79,7 +80,7 @@ Si no quiere que los usuarios vean estas plantillas o bien quiere crear las suya
 
 A continuación se muestran algunos ejemplos de cómo los administradores pueden aplicar las plantillas para configurar automáticamente la protección de la información para archivos y correos electrónicos.
 
-## Protección automática de archivos en los servidores de archivos con Windows Server y la infraestructura de clasificación de archivos
+## <a name="automatically-protecting-files-on-file-servers-running-windows-server-and-file-classification-infrastructure"></a>Protección automática de archivos en los servidores de archivos con Windows Server y la infraestructura de clasificación de archivos
 
 En este ejemplo se muestra cómo usar Azure RMS para proteger archivos automáticamente en los servidores de archivos que ejecutan como mínimo Windows Server 2012 y están configurados para usar la infraestructura de clasificación de archivos.
 
@@ -114,7 +115,7 @@ El destinatario no puede leer el informe confidencial porque no es miembro del g
 
 - Para obtener instrucciones detalladas, consulte [Deploying the Azure Rights Management Connector](../deploy-use/deploy-rms-connector.md) (Implementar el conector de Azure Rights Management).
 
-## Proteger automáticamente los correos electrónicos con Exchange Online y directivas de prevención de pérdida de datos
+## <a name="automatically-protecting-emails-with-exchange-online-and-data-loss-prevention-policies"></a>Proteger automáticamente los correos electrónicos con Exchange Online y directivas de prevención de pérdida de datos
 
 En el ejemplo anterior se mostraba cómo pueden protegerse automáticamente los archivos que contienen información importante o confidencial, pero ¿qué ocurre si la información no está en un archivo, sino en un mensaje de correo electrónico? Aquí es donde entran en juego las directivas de prevención de pérdida de datos (DLP) de Exchange Online, ya sea solicitando a los usuarios que apliquen la protección de la información (mediante las sugerencias de directiva) o aplicándola automáticamente (mediante reglas de transporte).
 
@@ -153,7 +154,7 @@ El mensaje de correo electrónico se cifra al salir de la infraestructura de la 
 
 -   Para obtener instrucciones detalladas sobre cómo configurar Exchange Online para Azure RMS, vea [Exchange Online: IRM Configuration](../deploy-use/configure-office365.md#exchange-online-irm-configuration) (Exchange Online: Configuración de IRM) de [Configuring Applications for Azure Rights Management](../deploy-use/configure-applications.md) (Configuración de aplicaciones para Azure Rights Management).
 
-## Protección automática de archivos con SharePoint Online y las bibliotecas protegidas
+## <a name="automatically-protecting-files-with-sharepoint-online-and-protected-libraries"></a>Protección automática de archivos con SharePoint Online y las bibliotecas protegidas
 
 Aquí se muestra cómo proteger los documentos fácilmente al usar SharePoint Online y las bibliotecas protegidas.
 
@@ -187,7 +188,7 @@ El documento permanece protegido aunque el usuario cambie el nombre, lo guarde e
 
 -   Para obtener instrucciones detalladas sobre cómo configurar SharePoint para Azure RMS, vea [SharePoint Online and OneDrive for Business: IRM Configuration (SharePoint Online y OneDrive para la Empresa: Configuración de IRM)](../deploy-use/configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration) de [Configuring Applications for Azure Rights Management](../deploy-use/configure-applications.md) (Configuración de aplicaciones para Azure Rights Management).
 
-## Uso compartido seguro de datos adjuntos con los usuarios móviles
+## <a name="users-safely-share-attachments-with-mobile-users"></a>Uso compartido seguro de datos adjuntos con los usuarios móviles
 
 En los ejemplos anteriores se ha mostrado cómo los administradores pueden aplicar automáticamente la protección de la información a los datos importantes y confidenciales. Sin embargo, es posible que en algunas ocasiones los usuarios tengan que aplicar esta protección por sí mismos. Por ejemplo, cuando colaboren con asociados de otra organización y necesiten valores o permisos personalizados no definidos en las plantillas para situaciones ad hoc no cubiertas por los ejemplos anteriores. En estos casos, los usuarios pueden aplicar las plantillas de RMS por sí mismos o configurar permisos personalizados.
 
@@ -235,12 +236,12 @@ Aunque este reenvíe el correo electrónico con los datos adjuntos, lo guarde en
 
 - En [Quick start tutorial for Azure Rights Management](../get-started/quick-start-tutorial.md) (Tutorial de inicio rápido de Azure Rights Management) se incluyen instrucciones detalladas para este escenario.
 
-## Pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 
 Ahora que ha visto algunos ejemplos de lo que Azure RMS puede hacer, es posible que le interese cómo lo hace. Para obtener información técnica sobre cómo funciona Azure RMS, consulte [How does Azure RMS work?](how-does-it-work.md) (¿Cómo funciona Azure RMS?).
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

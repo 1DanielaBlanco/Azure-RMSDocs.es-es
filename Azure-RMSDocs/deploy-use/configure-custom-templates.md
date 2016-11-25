@@ -2,6 +2,7 @@
 title: "Configuración de plantillas personalizadas para el servicio Azure Rights Management | Azure Information Protection"
 description: "Información e instrucciones para que los administradores configuren y administren plantillas de derechos de uso. Las plantillas facilitan a los usuarios y otros administradores aplicar directivas a archivos confidenciales que restringen el acceso a usuarios autorizados."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: 1775d8d0-9a59-42c8-914f-ce285b71ac1c
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: d8db7f0346fad1b9c46423875d1e559d41987686
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: ea64bd17994a9ce38ed0d758ec63156a7f64c732
 
 
 ---
 
-# Configuración de plantillas personalizadas para el servicio Azure Rights Management
+# <a name="configuring-custom-templates-for-the-azure-rights-management-service"></a>Configuración de plantillas personalizadas para el servicio Azure Rights Management
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
@@ -58,14 +59,14 @@ Use la información siguiente para tratar de configurar y usar plantillas person
 
 -   [Cómo quitar (archivar) plantillas](remove-template.md)
 
--   [How to refresh templates for users (Actualización de plantillas para usuarios)](refresh-templates.md)
+-   [Actualización de plantillas para usuarios](refresh-templates.md)
 
--   [Use PowerShell to manage templates (Usar PowerShell para administrar plantillas)](configure-templates-with-powershell.md)
-
-
+-   [Referencia de PowerShell para plantillas personalizadas](configure-templates-with-powershell.md)
 
 
 
-<!--HONumber=Sep16_HO4-->
+
+
+<!--HONumber=Nov16_HO2-->
 
 

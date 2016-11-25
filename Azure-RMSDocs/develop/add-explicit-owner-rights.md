@@ -3,6 +3,7 @@ title: "Cómo incorporar derechos de propiedad explícitos | Azure RMS"
 description: Your application should explicitly add "Owner" rights when creating a license from scratch.
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,17 +15,17 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8be965d76578c28457eee207b56e5da83f7eb468
-ms.openlocfilehash: 36c0bece4fb99e4d92fcda0c57da1b3cee11e37a
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 2fa260480eaa26a529a058b597657216572b4cb8
 
 
 ---
 
-# Incorporación de derechos de propiedad explícitos
+# <a name="howto-add-explicit-owner-rights"></a>Incorporación de derechos de propiedad explícitos
 
 La aplicación debe agregar explícitamente derechos "Owner" al crear una licencia desde cero mediante [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx).
 
-## Requisitos previos
+## <a name="prerequisites"></a>Requisitos previos
 
 Cuando la aplicación está creando un controlador de licencia utilizando [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx), debe conceder al propietario todos los derechos explícitamente.
 
@@ -33,9 +34,9 @@ Cuando la aplicación está creando un controlador de licencia utilizando [IpcCr
 
 En el ejemplo de código siguiente solo se muestran los pasos necesarios para crear y agregar derechos específicos a una licencia determinada.
 
-## Instrucciones
+## <a name="instructions"></a>Instrucciones
  
-## Paso 1: escenario de ejemplo
+## <a name="step-1-example-scenario"></a>Paso 1: escenario de ejemplo
 
 En este ejemplo, se agregan los derechos necesarios a una licencia creada con [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx). El ejemplo muestra la creación y asignación de los derechos de la licencia a través de una lista de derechos.
 
@@ -105,7 +106,7 @@ Estos usuarios se agregan los dos derechos siguientes:
 
 
 
-## Temas relacionados
+## <a name="related-topics"></a>Temas relacionados
 
 - [Notas para el desarrollador](developer-notes.md)
 - [IpcSetLicenseProperty](https://msdn.microsoft.com/library/hh535271.aspx)
@@ -116,6 +117,6 @@ Estos usuarios se agregan los dos derechos siguientes:
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

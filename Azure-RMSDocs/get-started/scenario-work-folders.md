@@ -2,6 +2,7 @@
 title: "Escenario: Configurar carpetas de trabajo para la protección persistente | Azure Information Protection"
 description: "En este escenario y en la documentación de usuario correspondiente se usa protección de Azure Rights Management para aplicar protección persistente a documentos de Office en Carpetas de trabajo."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: get-started-article
@@ -12,13 +13,13 @@ ms.assetid: 1f189345-a69e-4bf5-8a45-eb0fe5bb542b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ea299f402e5e188b498bf6e3cacf9d4dc7e0f6e8
-ms.openlocfilehash: 966c1b109a02f8193de16eae6f2eacec757f533b
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 0d4b1cdc2620a1f8cf9ddced24a898a38d8e9b57
 
 
 ---
 
-# Escenario: Configurar carpetas de trabajo para la protección persistente
+# <a name="scenario-configure-work-folders-for-persistent-protection"></a>Escenario: Configurar carpetas de trabajo para la protección persistente
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
@@ -41,12 +42,12 @@ Las instrucciones son adecuadas para el conjunto de circunstancias siguiente:
 
 -   En cuanto a los archivos que se deben compartir con personas no especificadas en la plantilla de directiva de permisos (por ejemplo, los usuarios de otra organización), habrá que aplicar una nueva directiva de permisos que reemplace la protección de la directiva de permisos original.
 
-## Instrucciones de implementación
+## <a name="deployment-instructions"></a>Instrucciones de implementación
 ![Instrucciones para el administrador para la implementación rápida de Azure RMS](../media/AzRMS_AdminBanner.png)
 
 Asegúrese de que se cumplen los siguientes requisitos y, luego, siga las instrucciones de los procedimientos correspondientes antes de pasar a la documentación del usuario.
 
-## Requisitos para este escenario
+## <a name="requirements-for-this-scenario"></a>Requisitos para este escenario
 Para que las instrucciones de este escenario funcionen, debe cumplir lo siguiente:
 
 |Requisito|Si necesita más información|
@@ -57,7 +58,7 @@ Para que las instrucciones de este escenario funcionen, debe cumplir lo siguient
 |El conector de Rights Management está instalado, autorizado para el equipo de Windows Server y configurado para el rol de **servidor FCI**.|[Implementación del conector de Azure Rights Management](../deploy-use/deploy-rms-connector.md)|
 |La aplicación Rights Management sharing se implementa en los equipos de los usuarios que ejecutan Windows|[Implementación automática de la aplicación Microsoft Rights Management sharing](../rms-client/sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)|
 
-### Configuración de la plantilla de directiva de permisos personalizada para que los usuarios puedan compartir archivos de Carpetas de trabajo fuera de la organización
+### <a name="configuring-the-custom-rights-policy-template-so-that-users-can-share-work-folders-files-outside-the-organization"></a>Configuración de la plantilla de directiva de permisos personalizada para que los usuarios puedan compartir archivos de Carpetas de trabajo fuera de la organización
 
 1.  Inicie sesión en el Portal de Azure clásico y vaya a las plantillas de Azure Rights Management.
 
@@ -79,7 +80,7 @@ Para que las instrucciones de este escenario funcionen, debe cumplir lo siguient
 
 5.  Guarde la plantilla.
 
-### Configuración de Carpetas de trabajo para aplicar protección persistente a un archivo de Office
+### <a name="configuring-work-folders-to-apply-persistent-protection-to-office-file"></a>Configuración de Carpetas de trabajo para aplicar protección persistente a un archivo de Office
 
 1.  Implemente Carpetas de trabajo para sus usuarios, de forma que los archivos guardados localmente se sincronicen en una carpeta del servidor de archivos, conocida como *recurso compartido de sincronización*. El recurso compartido de sincronización en el servidor de archivos no debe estar en el mismo servidor que ejecuta el conector de Rights Management.
 
@@ -109,7 +110,7 @@ Para que las instrucciones de este escenario funcionen, debe cumplir lo siguient
 
 4.  Si decide proteger solo determinados archivos con la infraestructura de clasificación de archivos, configure la regla y la programación de clasificación y, después, modifique la tarea de administración de archivos de forma que incluya esta propiedad de clasificación como una condición.
 
-## Instrucciones de la documentación del usuario
+## <a name="user-documentation-instructions"></a>Instrucciones de la documentación del usuario
 Si los archivos que protege con Azure Rights Management no tienen que compartirse con personas fuera de la organización, no tendrá que proporcionar a los usuarios más instrucciones aparte de las correspondientes al uso de Carpetas de trabajo. Cuando los usuarios abran los archivos protegidos por Azure Rights Management y la plantilla predeterminada, se abrirán como de costumbre en Office, con la única diferencia de que puede que se les pida que se autentiquen y que verán una barra de información en la parte superior del documento que les informa de que el contenido incluye información de propiedad dirigida solo a usuarios internos.
 
 Si ha configurado la plantilla personalizada según lo descrito en este escenario, los usuarios verán la descripción de la plantilla en la barra de información: **Este contenido está protegido por Carpetas de trabajo y está restringido a únicamente los empleados de la empresa. Para compartir este contenido con personas fuera de la organización, adjunte el documento a un mensaje de correo y use la función de uso compartido protegido.** Aunque esta descripción resume cómo compartir el archivo fuera de la organización, probablemente los usuarios necesitarán instrucciones detalladas para llevar esto a cabo, especialmente las primeras veces. Para dar cabida a este escenario de seguimiento, use las instrucciones de administrador y usuario final del [escenario para compartir un archivo de Office con usuarios de otra organización](scenario-share-office-file-externally.md).
@@ -122,6 +123,6 @@ Si ha configurado la plantilla personalizada según lo descrito en este escenari
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

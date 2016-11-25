@@ -3,6 +3,7 @@ title: "Información general - RMS SDK 2.1 | Azure RMS"
 description: "Rights Management Services (RMS) es una tecnología de protección de la información que ayuda a proteger la información digital frente al uso no autorizado."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 82441858230e179a08bfa74e0f6aaf9ed17a62fb
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 816d665314fb77931433e36420b54c3ab6f689b9
 
 
 ---
 
-# Información general
+# <a name="overview"></a>Información general
 
 Rights Management Services SDK 2.1 es una tecnología de protección de la información que ayuda a proteger la información digital frente al uso no autorizado. Con aplicaciones habilitadas para derechos, los propietarios de contenido tendrán la capacidad de definir quién puede abrir, modificar, imprimir, reenviar o realizar otras acciones con su contenido.
 
@@ -42,15 +43,15 @@ Para más información sobre el servidor de AD RMS, el cliente de AD RMS y su fu
 
 Los demás temas de esta sección tratan sobre la arquitectura de RMS y sus implementaciones.
 
-## En esta sección
+## <a name="in-this-section"></a>En esta sección
 
 | Tema | Descripción |
 |-------|-------------|
 |[Cliente](ad-rms-client.md) |En este tema se describe el propósito y la función del cliente de Rights Management Services 2.1. |
-|[Servidor de](ad-rms-server.md) | En este tema se describe el propósito y las funciones del servidor RMS para Azure y Windows Server.|
+|[Servidor](ad-rms-server.md) | En este tema se describe el propósito y las funciones del servidor RMS para Azure y Windows Server.|
 
 
-## Temas relacionados
+## <a name="related-topics"></a>Temas relacionados
 
 * [Conceptos de RMS](application-types.md)
 * [Introducción](getting-started-with-ad-rms-2-0.md)
@@ -61,6 +62,6 @@ Los demás temas de esta sección tratan sobre la arquitectura de RMS y sus impl
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

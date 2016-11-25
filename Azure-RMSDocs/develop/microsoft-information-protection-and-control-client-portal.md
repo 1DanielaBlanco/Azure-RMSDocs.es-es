@@ -3,6 +3,7 @@ title: Rights Management Services SDK 2.1 | Azure RMS
 description: "La plataforma RMS SDK 2.1 permite a los desarrolladores crear aplicaciones que aprovechan RMS o Azure RMS para proporcionar protección de la información."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,19 +15,19 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 5972599c568091d39e8a6974648022c4835af1bb
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 20699fe6a0f5d1e989ee767a5710a3272718f064
 
 
 ---
 
-# Rights Management Services SDK 2.1
+# <a name="rights-management-services-sdk-21"></a>Rights Management Services SDK 2.1
 
-## Finalidad
+## <a name="purpose"></a>Finalidad
 
 La plataforma de Rights Management Services SDK 2.1 permite a los desarrolladores crear aplicaciones que aprovechan Rights Management Services (RMS) o Azure Rights Management para proporcionar protección de la información. RMS SDK 2.1 controla prácticas de seguridad complejas como la administración de claves, el procesamiento de cifrado y descifrado, y ofrece una API simplificada para el desarrollo sencillo de aplicaciones.
 
-### Audiencia de desarrolladores
+### <a name="developer-audience"></a>Audiencia de desarrolladores
 
 RMS SDK 2.1, disponible desde la [página de descarga de RMS SDK 2.1](http://www.microsoft.com/en-us/download/details.aspx?id=38397) en el Centro de descargas de Microsoft, se utiliza para crear aplicaciones personalizadas que habilitan la administración de derechos en los activos digitales y aplican los términos de uso de esos recursos. Se requieren conocimientos del lenguaje de programación C++.
 
@@ -34,7 +35,7 @@ Para más información acerca de esta tecnología, consulte nuestra [esquina del
 
 Para obtener respuestas a las preguntas más frecuentes, consulte la sección de los desarrolladores de nuestras [preguntas más frecuentes de RMS](http://aka.ms/adrmsfaq )
 
-### Requisitos de tiempo de ejecución
+### <a name="runtime-requirements"></a>Requisitos de tiempo de ejecución
 
 Para más información sobre los requisitos de tiempo de ejecución para un elemento de programación determinado, consulte la sección Requisitos del tema de referencia para ese elemento.
 
@@ -48,7 +49,7 @@ Para más información sobre los requisitos de tiempo de ejecución para un elem
 
  
 
-## Temas relacionados
+## <a name="related-topics"></a>Temas relacionados
 
 * [Página de descarga de RMS SDK 2.1](http://www.microsoft.com/en-us/download/details.aspx?id=38397)
 * [Rincón del desarrollador de RMS](http://blogs.msdn.com/b/rms/archive/2012/05/31/official-release-of-ad-rms-sdk-2-0-and-ad-rms-client-2-0.aspx)
@@ -59,6 +60,6 @@ Para más información sobre los requisitos de tiempo de ejecución para un elem
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

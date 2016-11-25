@@ -2,6 +2,7 @@
 title: Referencia de PowerShell para plantillas personalizadas | Azure Information Protection
 description: "Todo lo que puede hacer en el Portal de Azure clásico para crear y administrar plantillas de administración de derechos también puede hacerlo desde la línea de comandos con PowerShell. Además, puede exportar e importar plantillas, de manera que pueda copiar plantillas entre inquilinos o llevar a cabo ediciones en masa de propiedades complejas en plantillas, como descripciones y nombres multilingües."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,15 +13,15 @@ ms.assetid: 30ee2f77-ce16-4113-bcda-6089131849ec
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: 3a213388584424871304778f3df36f7d49b370bd
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: aad5bc49b15b32c74352d5c9d6d48cd4f1f3cf9c
 
 
 ---
 
 
 
-# Referencia de PowerShell para plantillas personalizadas
+# <a name="powershell-reference-for-custom-templates"></a>Referencia de PowerShell para plantillas personalizadas
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
@@ -31,7 +32,7 @@ También puede utilizar la exportación e importación para restaurar y hacer un
 > [!IMPORTANT]
 > Para usar Windows PowerShell para crear y administrar plantillas de Azure Rights Management se necesita como mínimo la versión 2.0.0.0 del [módulo de Windows PowerShell para Azure RMS](http://go.microsoft.com/fwlink/?LinkId=257721).
 > 
-> Si ya instaló este módulo de PowerShell, ejecute el comando siguiente en una ventana de PowerShell para comprobar el número de versión: `(Get-Module aadrm -ListAvailable).Version`
+> Si ya ha instalado este módulo de PowerShell, ejecute el comando siguiente en una ventana de PowerShell para comprobar el número de versión: `(Get-Module aadrm -ListAvailable).Version`
 
 Para obtener instrucciones de instalación, consulte [Instalación de Windows PowerShell para Azure Rights Management](install-powershell.md).
 
@@ -39,13 +40,13 @@ Los cmdlets que admite la creación y administración de plantillas:
 
 -   [Add-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727075.aspx)
 
--   [Expot-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727078.aspx)
+-   [Export-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727078.aspx)
 
 -   [Get-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727079.aspx)
 
 -   [Get-AadrmTemplateProperty](https://msdn.microsoft.com/library/azure/dn727081.aspx)
 
--   [Impot-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727077.aspx)
+-   [Import-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727077.aspx)
 
 -   [New-AadrmRightsDefinition](https://msdn.microsoft.com/library/azure/dn727080.aspx)
 
@@ -55,10 +56,10 @@ Los cmdlets que admite la creación y administración de plantillas:
 
 
 
-## Véase también
+## <a name="see-also"></a>Véase también
 [Configuración de plantillas personalizadas para Azure Rights Management](configure-custom-templates.md)
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

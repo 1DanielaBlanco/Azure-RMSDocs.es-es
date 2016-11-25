@@ -2,6 +2,7 @@
 title: "Escenario: Enviar un correo electrónico confidencial de la empresa | Azure Information Protection"
 description: "En este escenario y en la documentación de usuario correspondiente se usa la protección de Azure Rights Management para que cualquier usuario de la organización pueda enviar de forma segura comunicaciones por correo electrónico que no se puedan leer fuera de la organización."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/10/2016
 ms.topic: get-started-article
@@ -12,13 +13,13 @@ ms.assetid: 950799e9-2289-48c7-b95a-f54a8ead520a
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3b5f82e495291bd48d488f44bc72c1d478a879e0
-ms.openlocfilehash: 6ad18ba1035438af88f814689884f9873d75eea0
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: f886b72ba18f0f13ac60e08d000b231cd36d1d5f
 
 
 ---
 
-# Escenario: Enviar un correo electrónico confidencial de la empresa
+# <a name="scenario-send-a-companyconfidential-email"></a>Escenario: Enviar un correo electrónico confidencial de la empresa
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
@@ -39,12 +40,12 @@ Las instrucciones son adecuadas para el conjunto de circunstancias siguiente:
 
 -   Los usuarios deben seleccionar manualmente la plantilla desde sus clientes de correo electrónico.
 
-## Instrucciones de implementación
+## <a name="deployment-instructions"></a>Instrucciones de implementación
 ![Instrucciones para el administrador para la implementación rápida de Azure RMS](../media/AzRMS_AdminBanner.png)
 
 Asegúrese de que se cumplen los siguientes requisitos antes de pasar a la documentación del usuario.
 
-## Requisitos para este escenario
+## <a name="requirements-for-this-scenario"></a>Requisitos para este escenario
 Para que las instrucciones de este escenario funcionen, debe cumplir lo siguiente:
 
 |Requisito|Si necesita más información|
@@ -56,7 +57,7 @@ Para que las instrucciones de este escenario funcionen, debe cumplir lo siguient
 |No ha archivado la plantilla predeterminada de Azure Rights Management **&lt;organización&gt; - Confidencial**. O bien, ha configurado una plantilla personalizada para este propósito, porque necesita una configuración más restrictiva o que solo un subconjunto de usuarios de la organización pueda leer los mensajes de correo electrónico protegidos.|[Configuración de plantillas personalizadas para el servicio Azure Rights Management](../deploy-use/configure-custom-templates.md)<br /><br />Sugerencia: si necesita una configuración de directiva de uso más restrictiva para todos los usuarios de la organización, copie y modifique una de las plantillas predeterminadas, en lugar de crear una plantilla desde cero.<br /><br />Las plantillas actualizadas no se actualizan inmediatamente para los clientes de correo electrónico en este escenario. Para más información, vea el artículo [Actualizar plantillas para los usuarios](../deploy-use/refresh-templates.md).|
 |Los usuarios que envían el correo electrónico protegido tienen Outlook 2013, Outlook 2016 u Outlook Web Access.<br /><br />Los usuarios que reciben el correo electrónico tienen un cliente de correo electrónico que admite Azure Rights Management.|Puede usar Outlook 2010, pero deberá [instalar la aplicación Rights Management sharing para Windows](../rms-client/sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application) y ajustar las instrucciones de usuario según corresponda.<br /><br />Para ver una lista de clientes de correo electrónico que admiten Azure Rights Management, vea la columna de **correo electrónico** de la tabla de [Aplicaciones compatibles con la protección de datos de Azure Rights Management](../get-started/requirements-applications.md).|
 
-## Instrucciones de la documentación del usuario
+## <a name="user-documentation-instructions"></a>Instrucciones de la documentación del usuario
 Con la siguiente plantilla, copie y pegue las instrucciones de usuario en una comunicación dirigida a sus usuarios finales y realice estas modificaciones para reflejar su entorno:
 
 1.  Reemplace todas las instancias de *&lt;nombre de la organización&gt;* por el nombre de su organización.
@@ -91,7 +92,7 @@ En la documentación de ejemplo se muestra el aspecto de estas instrucciones par
 
 ![Documentación de usuario de la plantilla para la implementación rápida de Azure RMS](../media/AzRMS_UsersBanner.png)
 
-### Procedimiento para enviar correos electrónicos que contienen información confidencial de la empresa mediante Outlook
+### <a name="how-to-send-emails-that-contain-companyconfidential-information-using-outlook"></a>Procedimiento para enviar correos electrónicos que contienen información confidencial de la empresa mediante Outlook
 
 1.  En Outlook, cree un mensaje de correo, agregue los datos adjuntos que quiera incluir y, después, seleccione usuarios o grupos de *&lt;nombre de la organización&gt;*.
 
@@ -101,7 +102,7 @@ En la documentación de ejemplo se muestra el aspecto de estas instrucciones par
 
 3.  Envíe el mensaje.
 
-### Procedimiento para enviar correos electrónicos que contienen información confidencial de la empresa mediante Outlook Web App
+### <a name="how-to-send-emails-that-contain-companyconfidential-information-using-outlook-web-app"></a>Procedimiento para enviar correos electrónicos que contienen información confidencial de la empresa mediante Outlook Web App
 
 1.  En Outlook Web App, cree un mensaje de correo, agregue los datos adjuntos que quiera incluir y, después, seleccione usuarios o grupos de *&lt;nombre de la organización&gt;* en la libreta de direcciones.
 
@@ -121,10 +122,10 @@ Los destinatarios a los que envíe el correo electrónico podrán reenviarlo a o
 
     -   *&lt;detalles de contacto&gt;*
 
-### Documentación de usuario personalizada de ejemplo
+### <a name="example-customized-user-documentation"></a>Documentación de usuario personalizada de ejemplo
 ![Documentación de usuario de ejemplo para la implementación rápida de Azure RMS](../media/AzRMS_ExampleBanner.png)
 
-#### Procedimiento para enviar correos electrónicos que contienen información confidencial de la empresa mediante Outlook
+#### <a name="how-to-send-emails-that-contain-companyconfidential-information-using-outlook"></a>Procedimiento para enviar correos electrónicos que contienen información confidencial de la empresa mediante Outlook
 
 1.  En Outlook, cree un mensaje de correo, agregue los datos adjuntos que quiera incluir y, después, seleccione usuarios o grupos de VanArsdel de la libreta de direcciones.
 
@@ -134,7 +135,7 @@ Los destinatarios a los que envíe el correo electrónico podrán reenviarlo a o
 
 3.  Envíe el mensaje.
 
-#### Procedimiento para enviar correos electrónicos que contienen información confidencial de la empresa mediante Outlook Web App
+#### <a name="how-to-send-emails-that-contain-companyconfidential-information-using-outlook-web-app"></a>Procedimiento para enviar correos electrónicos que contienen información confidencial de la empresa mediante Outlook Web App
 
 1.  En Outlook Web App, cree un mensaje de correo, agregue los datos adjuntos que quiera incluir y, después, seleccione usuarios o grupos de VanArsdel de la libreta de direcciones.
 
@@ -157,6 +158,6 @@ Los destinatarios a los que envíe el correo electrónico podrán reenviarlo a o
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 

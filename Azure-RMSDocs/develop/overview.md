@@ -3,6 +3,7 @@ title: "Información general - RMS SDK 4.2 | Azure RMS"
 description: "AD RMS y Azure RMS son tecnologías de protección de la información con la que es más fácil proteger la información digital frente al uso no autorizado."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 390281fbc0a68346ec1cb4b943ddc5919a53fea0
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 65113e57c57621faf9e4625bf224a3f70e9b2e1d
 
 
 ---
 
-# Información general
+# <a name="overview"></a>Información general
 
 Microsoft Rights Management SDK 4.2 es una tecnología de protección de la información disponible para varias plataformas.  Se trata de un marco de trabajo o kit de desarrollo de software (SDK) que está diseñado para equipos cliente y dispositivos con el objetivo de ayudar a proteger el acceso a la información que circula por aplicaciones con “derechos habilitados”, así como el uso de esa información. Los SDK de esas plataformas proporcionan una API sencilla con la que el desarrollador de una aplicación puede proteger o consumir contenido digital, recuperar plantillas y adquirir directivas de un servidor, además de otras tareas relacionadas con la administración de derechos.
 
@@ -36,7 +37,7 @@ Estos son algunos de los posibles escenarios:
 
 MS RMS SDK 4.2 se puede descargar, con la confirmación y la aceptación de su contrato de licencia, y se puede distribuir libremente con el software de terceros para habilitar el acceso de cliente a contenidos que se han protegido con derechos mediante el uso y la implementación de servidores de AD RMS en su entorno o servicios de Azure RMS. Para más información, vea [Get started](get-started.md) (Introducción).
 
-## Información destacada del SDK
+## <a name="sdk-highlights"></a>Información destacada del SDK
 
 
 Entre las interesantes características de MS RMS SDK 4.2, se incluyen las siguientes:
@@ -49,7 +50,7 @@ Entre las interesantes características de MS RMS SDK 4.2, se incluyen las sigui
 
 Use la guía de [Introducción](get-started.md) para empezar un proyecto de aplicación para dispositivos con información protegida.
 
-## Temas relacionados
+## <a name="related-topics"></a>Temas relacionados
 
 * [Microsoft Rights Management SDK](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md)
 * [Introducción](get-started.md)
@@ -64,6 +65,6 @@ Use la guía de [Introducción](get-started.md) para empezar un proyecto de apli
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

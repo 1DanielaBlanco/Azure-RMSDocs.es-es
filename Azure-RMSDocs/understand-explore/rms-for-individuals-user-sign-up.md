@@ -2,6 +2,7 @@
 title: "Cómo se registran los usuarios a RMS para individuos | Azure Information Protection"
 description: "Suscríbase para recibir las instrucciones de esta cuenta gratuita e información técnica sobre cómo funciona este proceso."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/25/2016
 ms.topic: article
@@ -12,23 +13,23 @@ ms.assetid: a60731bd-f78d-4f00-bb3e-354637b312ab
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8306d70937aeaf665617d84b4e7ad2c8944e3c79
-ms.openlocfilehash: e3fc6390b3a5b1b6a7b321999a94d4c2226e93ad
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 82f59842420667c5ad28a6704c9df0d26043d50c
 
 
 ---
 
-# Cómo se registran los usuarios a RMS para individuos
+# <a name="how-users-sign-up-for-rms-for-individuals"></a>Cómo se registran los usuarios a RMS para individuos
 
 >*Se aplica a: Azure Information Protection*
 
 Para registrarse en esta cuenta gratuita, debe solicitarla en la [página de Microsoft Azure Information Protection](https://portal.office.com/signup?sku=rms&ru=https%3A%2F%2Fportal.azurerms.com%2F%23%2Fdownload) y proporcionar su dirección de correo electrónico profesional. La forma más habitual de redirigirle a esta página de suscripción es mediante un mensaje de correo electrónico con un archivo adjunto protegido, que contiene instrucciones sobre cómo suscribirse. Recibirá un correo electrónico de respuesta de Microsoft, tras lo cual podrá completar el proceso de suscripción introduciendo los detalles para crear la cuenta. Cuando se complete, verá una página donde puede descargar la aplicación de uso compartido entre distintos dispositivos, un vínculo a la Guía del usuario y un vínculo para obtener una lista de aplicaciones que admiten de forma nativa la protección de Rights Management. 
 
-## Para registrarse en RMS como usuarios
+## <a name="to-sign-up-for-rms-for-individuals"></a>Para registrarse en RMS como usuarios
 
 1.  Si usa un equipo Windows o Mac, o un dispositivo móvil, vaya a la [página de Microsoft Azure Information Protection](https://portal.office.com/signup?sku=rms&ru=https%3A%2F%2Fportal.azurerms.com%2F%23%2Fdownload).
 
-2.  Escriba la dirección de correo electrónico que usa para la empresa, como **janetm@contoso.com** o **p.dover@fabrikam.com**.
+2.  Escriba la dirección de correo electrónico que usa para la organización, **janetm@contoso.com** o **p.dover@fabrikam.com**.
 
     > [!IMPORTANT]
     > No se admiten cuentas de correo electrónico personales, de modo que no se puede introducir una cuenta Microsoft (conocida anteriormente como Microsoft Live ID) u otra cuenta personal que pueda usar en casa perteneciente a tu proveedor de Internet.
@@ -47,7 +48,7 @@ Para registrarse en esta cuenta gratuita, debe solicitarla en la [página de Mic
 
 Una vez se ha creado la cuenta, ya puede empezar el proceso de protección de archivos y de lectura de archivos protegidos por otros usuarios. Si se le pide que inicie sesión para proteger o leer archivos protegidos, escriba la misma dirección de correo electrónico y la contraseña que ha usado para crear la cuenta para RMS para usuarios.
 
-## Información técnica del proceso de registro
+## <a name="technical-overview-of-the-signup-process"></a>Información técnica del proceso de registro
 RMS para usuarios usa un proceso de suscripción de autoservicio empleado también por otros servicios que usan la tecnología basada en la nube de Microsoft para autenticar a los usuarios.
 
 Esto es lo que sucede en segundo plano cuando un usuario se suscribe a RMS para usuarios y su organización no tiene una suscripción a Office 365 o a Azure y, por lo tanto, tampoco tiene ningún directorio de Azure para autenticar a los usuarios:
@@ -90,13 +91,13 @@ A lo largo de este proceso, no hay cargos adicionales para la organización y no
     -   Implemente una solución "Traiga su propia clave" (BYOK) para que la clave de inquilino para Azure Rights Management se genere de forma local, de acuerdo con las políticas de TI y se transfiera de modo seguro a Microsoft mediante un módulo de seguridad de hardware (HSM). Para más información, vea [Planeamiento e implementación de su clave de inquilino de Azure Information Protection](../plan-design/plan-implement-tenant-key.md).
 
 
-## Pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 Consulte [Cómo pueden los administradores controlar las cuentas creadas para RMS para usuarios](rms-for-individuals-take-control.md).
 
 
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

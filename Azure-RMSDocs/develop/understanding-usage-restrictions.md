@@ -3,6 +3,7 @@ title: "Descripción de las restricciones de uso | Azure RMS"
 description: Todas las aplicaciones habilitadas para RMS deben aplicar restricciones de uso.
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,19 +15,19 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cb33a6c784a9b7efca0780771e764b984b51fedd
-ms.openlocfilehash: 3141c4131d83e043e987546900d433e43ee4c946
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: cc383728d487cac45e59ef34ca43ba47c4db237b
 
 
 ---
 
-# Descripción de las restricciones de uso
+# <a name="understanding-usage-restrictions"></a>Descripción de las restricciones de uso
 
 Todas las aplicaciones habilitadas para RMS deben aplicar restricciones de uso. Una restricción de uso es una condición que se produce cuando un usuario intenta realizar una acción (p. ej. imprimir un documento), pero la directiva de RMS para ese documento no le concede el permiso o el derecho a realizar esa acción (p. ej. el derecho PRINT).
 
 Los permisos de un usuario en relación con un documento se pueden consultar mediante la función [IpcAccessCheck](https://msdn.microsoft.com/library/hh535253.aspx).
 
-## Descripción de las restricciones de uso
+## <a name="understanding-usage-restrictions"></a>Descripción de las restricciones de uso
 
 -   Familiarícese con derechos estándar de RMS
 
@@ -46,16 +47,16 @@ Los permisos de un usuario en relación con un documento se pueden consultar med
 
     Para obtener instrucciones acerca de cómo aplicar derechos específicos, consulte [Usage restriction reference](usage-restriction-reference.md) (Referencia de restricción de uso).
 
-## Temas relacionados
+## <a name="related-topics"></a>Temas relacionados
 
 * [IpcAccessCheck](https://msdn.microsoft.com/library/hh535253.aspx)
-* [Usage restriction reference (Referencia de restricción de uso).](usage-restriction-reference.md)
+* [Referencia de restricción de uso](usage-restriction-reference.md)
  
 
  
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

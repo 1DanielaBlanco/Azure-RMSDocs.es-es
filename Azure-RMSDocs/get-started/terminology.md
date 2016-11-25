@@ -2,6 +2,7 @@
 title: "Terminología de Azure Information Protection | Azure Information Protection"
 description: "¿No entiende el significado de una palabra, una frase o un acrónimo relacionados con Microsoft Azure Information Protection? Busque aquí la definición de los términos y las abreviaturas que son específicos de Azure Information Protection o que tienen un significado específico cuando se usan en el contexto de este servicio."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: get-started-article
@@ -12,15 +13,15 @@ ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2c0f3b58a2f1b5233c262bb67cc4a485557ba997
-ms.openlocfilehash: 2ff8c6587d5e6136053cedb77005b4212606a85c
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 8d2fc307bb531ab434e0bc43a22f7403555ef03f
 
 
 ---
 
-# Terminología de Azure Information Protection
+# <a name="terminology-for-azure-information-protection"></a>Terminología de Azure Information Protection
 
->*Se aplica a: Azure Information Protection y Office 365*
+>*Se aplica a: Azure Information Protection, Office 365*
 
 ¿No entiende el significado de una palabra, una frase o un acrónimo relacionados con Microsoft Azure Information Protection? Busque aquí la definición de los términos y las abreviaturas que son específicos de Azure Information Protection o que tienen un significado específico cuando se usan en el contexto de este servicio.
 
@@ -31,7 +32,7 @@ ms.openlocfilehash: 2ff8c6587d5e6136053cedb77005b4212606a85c
 |Active Directory Rights Management Services|En ocasiones se abrevia como *AD RMS*.<br /><br />Un rol de Windows Server que brinda protección de administración de derechos mediante cifrado y directivas para ayudar a proteger los documentos, los archivos y el correo electrónico.|
 |AD RMS|Consulte *Active Directory Rights Management Services*|
 |Azure Information Protection|Un servicio basado en la nube que usa la clasificación, el etiquetado y la protección para ayudar a que los documentos y los correos electrónicos estén seguros. Azure Rights Management proporciona la protección mediante el cifrado, la identidad y las directivas de autorización.|
-|Azure Rights Management|En ocasiones, se abrevia como *Azure RMS*.<br /><br />Un servicio de Azure usado por Azure Information Protection que, mediante cifrado y directivas, ayuda a proteger los documentos, los archivos y el correo electrónico.  También se conoce como *servicio de Azure Rights Management*. Entre los nombres anteriores se incluyen:<br /><br />- *Windows Azure Active Directory Rights Management*: Con frecuencia abreviado como servicio Windows Azure AD Rights Management.<br /><br />- *RMS Online*: Nombre que se propuso originalmente, que a veces puede ver en los mensajes de error y las entradas de archivos de registro.|
+|Azure Rights Management|En ocasiones, se abrevia como *Azure RMS*.<br /><br />Un servicio de Azure usado por Azure Information Protection que, mediante cifrado y directivas, ayuda a proteger los documentos, los archivos y el correo electrónico.  También se conoce como *servicio de Azure Rights Management*. Entre los nombres anteriores se incluyen:<br /><br />- *Windows Azure Active Directory Rights Management*: Con frecuencia abreviado como servicio Windows Azure AD Rights Management.<br /><br />- *RMS Online*: Nombre que se propuso originalmente, que a veces puede ver en los mensajes de error y en las entradas de archivos de registro.|
 |Azure RMS|Consulte *Azure Rights Management*.|
 |BYOK|Consulte *Traiga su propia clave*.|
 |Traiga su propia clave|Con frecuencia abreviado como *BYOK*.<br /><br />Una opción de configuración y topología que eligen las organizaciones que quieren generar y administrar su propia clave de inquilino de Azure Information Protection.|
@@ -73,6 +74,6 @@ ms.openlocfilehash: 2ff8c6587d5e6136053cedb77005b4212606a85c
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 
