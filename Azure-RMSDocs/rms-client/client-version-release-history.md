@@ -4,7 +4,7 @@ description: "Consulte las novedades o los cambios en una publicación del clien
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/27/2016
+ms.date: 11/23/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b3beeaffd5cf5f0e0a629dd6130d780cec3e05d6
-ms.openlocfilehash: ff6573042941640d1cca82d68e85f09c82e3c77b
+ms.sourcegitcommit: 45ca64c8338de3f4b192c61eb437b4acdbb8d799
+ms.openlocfilehash: cdd987bf0670f9e5ef7519119aa886573cf14924
 
 
 ---
@@ -37,8 +37,6 @@ Use la información siguiente para ver las novedades o los cambios de una versi�
 **Lanzamiento**: 27/10/2016
 
 **Correcciones**:
-
-- Puede aplicar correctamente una etiqueta que proteja el contenido cuando utiliza Office 2010 y no se ha inicializado el entorno para el servicio de Azure Rights Management (también conocido como "arranque").
 
 - La instalación del cliente se completa cuando el servicio Windows Update está deshabilitado.
 
@@ -64,6 +62,6 @@ Para más información sobre cómo instalar el cliente, vea [Instalación del cl
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO4-->
 
 
