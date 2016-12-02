@@ -4,7 +4,7 @@ description: "Estas instrucciones forman parte de la ruta de migración de AD RM
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/03/2016
+ms.date: 11/23/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,14 +13,14 @@ ms.assetid: 81a5cf4f-c1f3-44a9-ad42-66e95f33ed27
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1fcebaaa2fbe1479e83c232d51013341977796fc
-ms.openlocfilehash: 4a5e45bfef8e39d147410330b0d6b658c8d52474
+ms.sourcegitcommit: 5aac7b9fae12642c9846a70c5d271c7600af4096
+ms.openlocfilehash: 07b2a94625f006c07f72c543488f69d4cae3a9ec
 
 
 ---
 
 
-# <a name="step-2-softwareprotected-key-to-softwareprotected-key-migration"></a>Paso 2: Migración entre claves protegidas por software
+# <a name="step-2-software-protected-key-to-software-protected-key-migration"></a>Paso 2: Migración entre claves protegidas por software
 
 >*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Office 365*
 
@@ -56,7 +56,7 @@ Siga el procedimiento siguiente para importar la configuración de AD RMS en Azu
     
     Por ejemplo: ejecute primero **$TPD_Password = Read-Host -AsSecureString** y escriba la contraseña que especificó anteriormente. Después, ejecute **Import-AadrmTpd -TpdFile E:\contosokey1.xml -ProtectionPassword $TPD_Password -Active $true -Verbose**. Cuando se le pida, confirme que desea realizar esta acción.
     
-4.  Cuando se complete el comando, repita el paso 3 por cada archivo .xml restante que haya creado al exportar los dominios de publicación de confianza. Sin embargo, en el caso de estos archivos, establezca **-Active** en **false** al ejecutar el comando Import. Por ejemplo: **Import-AadrmTpd -TpdFile E:\contosokey2.xml -ProtectionPassword $TPD_Password -Active $false -Verbose**
+4.  Cuando se complete el comando, repita el paso 3 por cada archivo .xml restante que haya creado al exportar los dominios de publicación de confianza. Por ejemplo, debe tener al menos un archivo adicional para importar si actualizó su clúster de AD RMS para el modo criptográfico 2. Sin embargo, en el caso de estos archivos, establezca **-Active** en **false** al ejecutar el comando Import. Por ejemplo: **Import-AadrmTpd -TpdFile E:\contosokey2.xml -ProtectionPassword $TPD_Password -Active $false -Verbose**
 
 5.  Use el cmdlet [Disconnect-AadrmService](http://msdn.microsoft.com/library/azure/dn629416.aspx) para desconectarse del servicio Azure Rights Management:
 
@@ -71,6 +71,6 @@ Ahora puede ir al [paso 3. Active el inquilino de Azure Information Protection](
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO4-->
 
 

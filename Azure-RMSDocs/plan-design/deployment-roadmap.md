@@ -4,7 +4,7 @@ description: "Siga estos pasos para preparar, implementar y administrar Azure In
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/14/2016
+ms.date: 11/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1551b5dc3c5c9740721e3de01d086185966b6016
-ms.openlocfilehash: ce1ed30122b3bff5b045dfbec65c257d348f0122
+ms.sourcegitcommit: 1fb57d2317cc632a44a87f3ce7140ce737c240e0
+ms.openlocfilehash: 9cc05664480ba0e5fa090db96afbcef73c318e07
 
 
 ---
@@ -98,6 +98,8 @@ De forma opcional, considera configurar lo siguiente:
 1. Actualizar la directiva de Azure Information Protection para aplicar la protección de datos
     
     Modifique la directiva de Azure Information Protection para que una o más etiquetas apliquen la protección de Rights Management. Para más información, consulte [Configuración de una etiqueta para aplicar protección de Rights Management](../deploy-use/configure-policy-protection.md).
+    
+    Tenga en cuenta que los usuarios pueden aplicar etiquetas en Outlook que a su vez aplicarán la protección de Rights Management incluso si Exchange no está configurado para Information Rights Management (IRM). Sin embargo, hasta que no se configure Exchange para IRM, su organización no disfrutará de toda la funcionalidad derivada del uso de la protección de Azure Rights Management con Exchange. Esta configuración adicional se incluye en el paso 3 para Exchange Online y el paso 6 para Exchange local. 
 
 2. Implementar la aplicación Rights Management sharing
     
@@ -190,6 +192,6 @@ Cuando empiece a usar el servicio Azure Rights Management, es posible que le res
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

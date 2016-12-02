@@ -4,15 +4,15 @@ description: "Instrucciones para instalar el cliente que agrega una barra de Inf
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/16/2016
+ms.date: 11/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4445adff-4c5a-450f-aff8-88bf5bd4ca78
 translationtype: Human Translation
-ms.sourcegitcommit: db05149a25b6535d568338140daa2474e48b6711
-ms.openlocfilehash: 984d764d0c1ac41e6baec0b7978f501d7494773d
+ms.sourcegitcommit: 0b9d796b8908a42a7aceb95f3c3319028e9a9dbe
+ms.openlocfilehash: d12916a0b60e27592c3917ab5421196392156506
 
 
 ---
@@ -67,7 +67,7 @@ Puede usar una de estas opciones:
 
     - En la sección del **estado de cliente**: use el valor de la **versión** para comprobar que la instalación se realizó correctamente. Además, puede ver cuándo el cliente se ha conectado por última vez al servicio de Azure Information Protection de su organización y cuándo la directiva de dicho servicio se ha instalado o actualizado por última vez. Cuando el cliente se conecta al servicio, se descarga automáticamente la directiva más reciente si encuentra cambios con respecto a su directiva actual. Si ha realizado cambios en la directiva con posterioridad al tiempo mostrado, cierre y vuelva a abrir la aplicación de Office.
     
-        También puede ver el nombre de usuario mostrado que identifica la cuenta que se usa para autenticarlo en Azure Information Protection. Este nombre de usuario debe coincidir con una cuenta que se usa para Office 365 o Azure Active Directory.
+        También puede ver el nombre de usuario mostrado que identifica la cuenta que se usa para autenticarlo en Azure Information Protection. Este nombre de usuario debe coincidir con una cuenta que utilice para Office 365 o Azure Active Directory y que pertenezca a un inquilino que esté configurado para Azure Information Protection.
 
     - En la sección **Ayuda y comentarios**: el vínculo **Más información** dirige, de forma predeterminada, al sitio web de [Azure Information Protection](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection), pero se puede configurar para una dirección URL personalizada como una de las opciones de [configuración global](../deploy-use/configure-policy-settings.md) en la directiva de Azure Information Protection.
         
@@ -117,6 +117,6 @@ Para comprobar la información de versión de lanzamiento para el cliente, consu
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 
