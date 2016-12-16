@@ -4,15 +4,15 @@ description: "Al configurar las condiciones de una etiqueta, puede asignar autom
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/04/2016
+ms.date: 11/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
 translationtype: Human Translation
-ms.sourcegitcommit: d5b3f3fc473661022a4f17b6587d58a252d07d1a
-ms.openlocfilehash: bd6adab05c4f087f5441d168c3385057ce5b6355
+ms.sourcegitcommit: 4fcfcebc7da5a22a91911d70d4d787dc525d3485
+ms.openlocfilehash: 4211adef1696a1b615bd3f25df568f4b5149c186
 
 
 ---
@@ -52,7 +52,9 @@ En este ejemplo, el usuario puede hacer clic en **Cambiar ahora** para aplicar l
     
     Por ejemplo, en el menú del centro, haga clic en **Más servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
-2. En la hoja **Azure Information Protection**, seleccione la etiqueta que quiere configurar para clasificación automática o recomendada.
+2. Si la etiqueta que quiere configurar para la clasificación automática o recomendada se va a aplicar a todos los usuarios, seleccione la etiqueta que se modificará en la hoja **Policy:Global** (Directiva:Global) y luego realice los cambios en la hoja **Etiqueta** y en cualquiera de las hojas posteriores si es necesario. 
+
+     Si la etiqueta que quiere configurar está en una [directiva de ámbito](configure-policy-scope.md) de modo que se aplica solo a los usuarios seleccionados, seleccione primero esa directiva de ámbito en la hoja inicial de **Azure Information Protection**.  
 
 3. En la hoja **Etiqueta**, en la sección **Configure conditions for automatically applying this label** (Configurar condiciones para aplicar esta etiqueta automáticamente), haga clic en **Agregar una nueva condición**(Add a new condition).
 
@@ -74,7 +76,7 @@ En este ejemplo, el usuario puede hacer clic en **Cambiar ahora** para aplicar l
 
 6. Para que los cambios estén disponibles para los usuarios, en la hoja **Azure Information Protection**, haga clic en **Publicar**.
 
-## <a name="information-about-the-builtin-conditions"></a>Información sobre las condiciones integradas
+## <a name="information-about-the-built-in-conditions"></a>Información sobre las condiciones integradas
 
 Durante el período de versión preliminar, puede seleccionar las siguientes condiciones:
 
@@ -224,6 +226,6 @@ Para más información sobre cómo configurar la directiva de Azure Information 
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 

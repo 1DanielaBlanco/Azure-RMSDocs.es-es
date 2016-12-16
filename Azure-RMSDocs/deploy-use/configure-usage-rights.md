@@ -4,7 +4,7 @@ description: "Conozca e identifique los derechos específicos que se usan al pro
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 16dbee4b90f7c1e5b5c64c751d0c38e6cbccc036
+ms.sourcegitcommit: 1107f484f204e64d76c389daef4d9decbfbb20e8
+ms.openlocfilehash: 46c15d7594110d48f34b1648b2afb17738712720
 
 
 ---
@@ -36,7 +36,7 @@ En la tabla siguiente se enumeran y se describen los derechos de uso que admite 
 |Nombre común: **Editar contenido, Editar** <br /><br />Codificación en la directiva: **DOCEDIT**|Permite al usuario modificar, reorganizar, formatear o filtrar el contenido dentro de la aplicación. No concede el derecho a guardar la copia modificada.|Derechos personalizados de Office: como parte de las opciones **Cambiar** y **Control total**. <br /><br />Nombre en el Portal de Azure clásico: **Editar contenido**<br /><br />Nombre en las plantillas de AD RMS: **Editar** <br /><br />Constante o valor de API: no aplicable.|
 |Nombre común: **Guardar** <br /><br />Codificación en la directiva: **EDIT**|Permite al usuario guardar el documento en su ubicación actual.<br /><br />En las aplicaciones de Office, este derecho también permite al usuario modificar el documento.|Derechos personalizados de Office: como parte de las opciones **Cambiar** y **Control total**. <br /><br />Nombre en el Portal de Azure clásico: **Guardar archivo**<br /><br />Nombre en las plantillas de AD RMS: **Guardar** <br /><br />Constante o valor de API: `IPC_GENERIC_WRITE L"EDIT"`|
 |Nombre común: **Comentario** <br /><br />Codificación en la directiva: **COMMENT**|Habilita la opción para agregar anotaciones o comentarios al contenido.<br /><br />Este derecho está disponible en el SDK como directiva ad hoc en el módulo de protección de RMS para Windows PowerShell y se implementó en algunas aplicaciones de proveedores de software. Sin embargo, no se usa extensamente y no es compatible actualmente con las aplicaciones de Office.|Derechos personalizados de Office: no implementados. <br /><br />Nombre en el Portal de Azure clásico: no implementado.<br /><br />Nombre en las plantillas de AD RMS: no implementado. <br /><br />Constante o valor de API: `IPC_GENERIC_COMMENT L"COMMENT`|
-|Nombre común: **Guardar como, Exportar** <br /><br />Codificación en la directiva: **EXPORT**|Habilita la opción para guardar el contenido con un nombre de archivo diferente (Guardar como). En el caso de los documentos de Office, el archivo puede guardarse sin protección.<br /><br />Este derecho también permite al usuario realizar otras opciones de exportación en las aplicaciones, como **Enviar a OneNote**.|Derechos personalizados de Office: como parte de las opciones **Cambiar** y **Control total**. <br /><br />Nombre en el Portal de Azure clásico: **Exportar contenido (Guardar como)**<br /><br />Nombre en las plantillas de AD RMS: **Exportar (Guardar como)** <br /><br />Constante o valor de API: `IPC_GENERIC_EXPORT L"EXPORT"`|
+|Nombre común: **Guardar como, Exportar** <br /><br />Codificación en la directiva: **EXPORT**|Habilita la opción para guardar el contenido con un nombre de archivo diferente (Guardar como). En los documentos de Office y el cliente de Azure Information Protection, el archivo se puede guardar sin protección.<br /><br />Este derecho también permite al usuario realizar otras opciones de exportación en las aplicaciones, como **Enviar a OneNote**.|Derechos personalizados de Office: como parte de las opciones **Cambiar** y **Control total**. <br /><br />Nombre en el Portal de Azure clásico: **Exportar contenido (Guardar como)**<br /><br />Nombre en las plantillas de AD RMS: **Exportar (Guardar como)** <br /><br />Constante o valor de API: `IPC_GENERIC_EXPORT L"EXPORT"`|
 |Nombre común: **Reenviar** <br /><br />Codificación en la directiva: **FORWARD**|Habilita la opción para reenviar un mensaje de correo electrónico y agregar destinatarios a las líneas **Para** y **CO** . Este derecho no se aplica a documentos, solo a mensajes de correo electrónico.<br /><br />No permite que el reenviador conceda derechos a otros usuarios como parte de la acción de reenvío.|Derechos personalizados de Office: se deniega al usar la directiva estándar **No reenviar**.<br /><br />Nombre en el Portal de Azure clásico: **Reenviar**<br /><br />Nombre en las plantillas de AD RMS: **Reenviar** <br /><br />Constante o valor de API: `IPC_EMAIL_FORWARD L"FORWARD"`|
 |Nombre común: **Control total** <br /><br />Codificación en la directiva: **OWNER**|Concede todos los derechos para el documento; se pueden realizar todas las acciones disponibles.<br /><br />Incluye la capacidad de quitar la protección de un documento y volver a protegerlo.|Derechos personalizados de Office: como parte de la opción personalizada **Control total**.<br /><br />Nombre en el Portal de Azure clásico: **Control total**<br /><br />Nombre en las plantillas de AD RMS: **Control total** <br /><br />Constante o valor de API: `IPC_GENERIC_ALL L"OWNER"`|
 |Nombre común: **Imprimir** <br /><br />Codificación en la directiva: **PRINT**|Habilita las opciones para imprimir el contenido.|Derechos personalizados de Office: como la opción **Imprimir contenido** de los permisos personalizados. No se trata de un valor por destinatario.<br /><br />Nombre en el Portal de Azure clásico: **Imprimir**<br /><br />Nombre en las plantillas de AD RMS: **Imprimir** <br /><br />Constante o valor de API: `IPC_GENERIC_PRINT L"PRINT"`|
@@ -56,15 +56,19 @@ Utilice la tabla siguiente para ver una lista de estos niveles de permisos y una
 
 |Nivel de permisos|Aplicaciones|Derechos incluidos (nombre común)|
 |---------------------|----------------|---------------------------------|
-|Visor|Portal de Azure clásico<br /><br />Aplicación de uso compartido Rights Management para Windows|Ver, Abrir, Leer; Responder; Responder a todos|
-|Revisor|Portal de Azure clásico<br /><br />Aplicación de uso compartido Rights Management para Windows|Ver, Abrir, Leer; Guardar; Editar contenido, Editar; Responder [[1]](#footnote-1); Responder a todos [[1]](#footnote-1); Reenviar [[1]](#footnote-1)|
-|Coautor|Portal de Azure clásico<br /><br />Aplicación de uso compartido Rights Management para Windows|Ver, Abrir, Leer; Guardar; Editar contenido, Editar; Copiar; Ver derechos; Permitir macros; Guardar como, Exportar; Imprimir; Responder [[1]](#footnote-1); Responder a todos [[1]](#footnote-1); Reenviar [[1]](#footnote-1)|
-|Copropietario|Portal de Azure clásico<br /><br />Aplicación de uso compartido Rights Management para Windows|Ver, Abrir, Leer; Guardar; Editar contenido, Editar; Copiar; Ver derechos; Permitir macros; Guardar como, Exportar; Imprimir; Responder [[1]](#footnote-1); Responder a todos [[1]](#footnote-1); Reenviar [[1]](#footnote-1); Control total|
+|Visor|Portal de Azure clásico<br /><br />Aplicación de uso compartido Rights Management para Windows<br /><br />Cliente de Azure Information Protection para Windows (versión preliminar)|Ver, Abrir, Leer; Responder; Responder a todos|
+|Revisor|Portal de Azure clásico<br /><br />Aplicación de uso compartido Rights Management para Windows<br /><br />Cliente de Azure Information Protection para Windows (versión preliminar)|Ver, Abrir, Leer; Guardar; Editar contenido, Editar; Responder [[1]](#footnote-1); Responder a todos [[1]](#footnote-1); Reenviar [[1]](#footnote-1)|
+|Coautor|Portal de Azure clásico<br /><br />Aplicación de uso compartido Rights Management para Windows<br /><br />Cliente de Azure Information Protection para Windows (versión preliminar)|Ver, Abrir, Leer; Guardar; Editar contenido, Editar; Copiar; Ver derechos; Permitir macros; Guardar como, Exportar [[2]](#footnote-2); Imprimir; Responder [[1]](#footnote-1); Responder a todos [[1]](#footnote-1); Reenviar [[1]](#footnote-1)|
+|Copropietario|Portal de Azure clásico<br /><br />Aplicación de uso compartido Rights Management para Windows<br /><br />Cliente de Azure Information Protection para Windows (versión preliminar)|Ver, Abrir, Leer; Guardar; Editar contenido, Editar; Copiar; Ver derechos; Permitir macros; Guardar como, Exportar; Imprimir; Responder [[1]](#footnote-1); Responder a todos [[1]](#footnote-1); Reenviar [[1]](#footnote-1); Control total|
 
 ----
 
 ###### <a name="footnote-1"></a>Nota al pie 1
-No aplicable a la aplicación Rights Management sharing para Windows.
+No es aplicable a la aplicación Rights Management sharing para Windows o el cliente de Azure Information Protection para Windows (versión preliminar).
+
+###### <a name="footnote-2"></a>Nota al pie 2
+No se incluye en el cliente de Azure Information Protection para Windows (versión preliminar). En este cliente, el derecho de uso de exportación incluye la posibilidad de quitar la protección.
+
 
 ## <a name="rights-included-in-the-default-templates"></a>Derechos incluidos en las plantillas predeterminadas
 Los derechos que se incluyen con las plantillas predeterminadas son los siguientes:
@@ -102,6 +106,6 @@ Un usuario quiere enviar información por correo electrónico a personas concret
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO1-->
 
 
