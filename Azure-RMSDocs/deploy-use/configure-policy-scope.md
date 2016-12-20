@@ -4,7 +4,7 @@ description: "Para configurar valores y etiquetas diferentes para usuarios espec
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 12/09/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 4b134785-0353-4109-8fa7-096d1caa2242
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5d1a5e3b85d5450bcb2064a6c3b95e6ad802eea3
-ms.openlocfilehash: 99d7a2a9580466492edc313329cada315a9966d6
+ms.sourcegitcommit: b0600db864f834e9eb84700eb1a36d3e6a6fbde1
+ms.openlocfilehash: ba4567753fbc6320ea6f9170e4bf46857ab999b4
 
 
 ---
@@ -33,7 +33,7 @@ Las directivas de ámbito, al igual que las etiquetas, se ordenan en el portal d
 
 Dado que una directiva de ámbito siempre hereda la configuración y las etiquetas de la directiva global, al crear o editar una directiva de ámbito se muestran las etiquetas de la directiva global. Sin embargo, no puede editar las etiquetas de la directiva global cuando edita una directiva de ámbito. No obstante, puede agregar subetiquetas a esas etiquetas heredadas.
 
-Por ejemplo, si tiene una etiqueta denominada Confidencial en la directiva global, todos los usuarios ven esta etiqueta. No puede quitarla ni cambiar su orden con una directiva de ámbito. Sin embargo, puede que quiera crear una directiva de ámbito para el departamento de Marketing que agrega una nueva subetiqueta a Confidencial, por lo que estos usuarios verían Confidencial\Promociones. Luego crea otra directiva de ámbito para el departamento de Ventas que agrega una nueva subetiqueta a Confidencial, de modo que estos usuarios ven Confidencial/Asociados. Cada subetiqueta se puede configurar luego para distintas configuraciones y esta es solo visible para los usuarios de los departamentos respectivos.
+Por ejemplo, si tiene una etiqueta denominada **Confidencial** en la directiva global, todos los usuarios ven esta etiqueta. No puede quitarla ni cambiar su orden con una directiva de ámbito. Sin embargo, puede que quiera crear una directiva de ámbito para el departamento de Marketing que agrega una nueva subetiqueta a Confidencial, por lo que estos usuarios verían **Confidencial\Promociones**. Luego crea otra directiva de ámbito para el departamento de Ventas que agrega una nueva subetiqueta a Confidencial, de modo que estos usuarios ven **Confidencial/Asociados**. Cada subetiqueta se puede configurar luego para distintas configuraciones y esta es solo visible para los usuarios de los departamentos respectivos.
 
 
 Para configurar una directiva de ámbito de Azure Information Protection:
@@ -63,6 +63,6 @@ Para ver un ejemplo de cómo personalizar la directiva predeterminada y ver el c
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

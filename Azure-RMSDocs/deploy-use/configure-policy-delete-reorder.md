@@ -4,15 +4,15 @@ description: "Puede eliminar o cambiar el orden de las etiquetas que ven los usu
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 12/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ae0f603f-a632-4ac5-a3f7-6358d4255eff
 translationtype: Human Translation
-ms.sourcegitcommit: 4fcfcebc7da5a22a91911d70d4d787dc525d3485
-ms.openlocfilehash: 743741fc63adfd959074986aab5c697d817f69c7
+ms.sourcegitcommit: 55895dd6fd0e106c33914a232e2d00d98e8a154a
+ms.openlocfilehash: 195a4ff44d0edc9d35ee30786bdddbcc821fc106
 
 
 ---
@@ -25,7 +25,9 @@ Puede eliminar o cambiar el orden de las etiquetas que ven los usuarios en la ba
 
 ![Eliminación o cambio de orden de las etiquetas en la directiva de Azure Information Protection](../media/info-protect-contextmenu.png)
 
-En lugar de eliminar una etiqueta, puede que simplemente quiera deshabilitarla para mantener su configuración pero impedir que se muestre en la barra de Information Protection.
+Si elimina una etiqueta que se ha aplicado a los documentos y mensajes de correo electrónico y, posteriormente, publica la directiva de Azure Information Protection, esa etiqueta se quitará automáticamente de esos documentos o mensajes de correo electrónico la próxima vez que el cliente de Azure Information Protection los abra.
+
+En lugar de eliminar una etiqueta, puede deshabilitarla para así mantenerla e impedir al mismo tiempo que se muestre en la barra de Information Protection.
 
 Ordene las etiquetas para que los usuarios las vean en una progresión lógica en la barra de Information Protection. Por ejemplo, puede ordenarlas en sentido de confidencialidad ascendente para que los usuarios vean al principio la etiqueta menos confidencial y al final la más confidencial. La [directiva predeterminada](configure-policy-default.md) emplea esta configuración.
 
@@ -59,6 +61,6 @@ Para más información sobre cómo configurar la directiva de Azure Information 
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 
