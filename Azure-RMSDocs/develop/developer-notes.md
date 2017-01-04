@@ -43,10 +43,8 @@ En esta sección se incluyen instrucciones específicas para varios escenarios d
  
 ## <a name="related-topics"></a>Temas relacionados
 * [Información general](ad-rms-overview.md)
- 
 
- 
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 <!--HONumber=Nov16_HO4-->

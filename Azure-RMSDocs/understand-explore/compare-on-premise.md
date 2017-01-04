@@ -74,6 +74,7 @@ Azure Information Protection cumple con FIPS 140-2 cuando la clave de inquilino 
 ## <a name="next-steps"></a>Pasos siguientes
 Si está buscando migrar desde AD RMS a Azure Information Protection, vea [Migración desde AD RMS a Azure Information Protection](../plan-design/migrate-from-ad-rms-to-azure-rms.md).
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 

@@ -73,10 +73,7 @@ Cada derecho de usuario, que aparece en la columna de derechos de AD RMS, tiene 
 
 * [IpcAccessCheck](https://msdn.microsoft.com/library/hh535253.aspx)
 
- 
-
- 
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 <!--HONumber=Nov16_HO4-->
