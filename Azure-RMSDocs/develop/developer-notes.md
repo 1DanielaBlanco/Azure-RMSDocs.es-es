@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 93ed9760d79f2f38d4bee302ebb5c7c6368b1bbe
+ms.sourcegitcommit: a3d58cc4c430fe2335ff8fbb7e23c77915e6b8ab
+ms.openlocfilehash: c09eebc8a950894038a758d8f968c5e3e5ae2a53
 
 
 ---
@@ -35,20 +35,18 @@ En esta sección se incluyen instrucciones específicas para varios escenarios d
 - [Trabajo con la configuración de cifrado](working-with-encryption.md): en este tema se le orienta sobre nuestros paquetes de cifrado y se muestra el uso de algunos fragmentos de código.
 - [Tipos de aplicación](application-types.md): en este tema se cubren los tipos de aplicaciones que puede elegir crear como aplicaciones con derechos habilitados.
 - [Configuración de la API de archivos](file-api-configuration.md): el comportamiento de la API de archivos se puede configurar mediante el Registro.
+- [Directrices de seguridad](security-guidelines.md): proporciona orientación y directrices a los desarrolladores de aplicaciones para que trabajen de manera fluida con el ecosistema AIP.
 - [Formatos de archivo compatibles](supported-file-formats.md): la API de archivo admite formato Pfile y nativo.
 - [Plataformas compatibles](supported-platforms.md): en este tema se identifican las plataformas de cliente y servidor compatibles con RMS SDK 2.1.
-- [Descripción de las restricciones de uso](understanding-usage-restrictions.md): todas las aplicaciones habilitadas para RMS deben aplicar restricciones de uso.
-- [Referencia de restricción de uso](usage-restriction-reference.md): las restricciones de uso se definen mediante las constantes indicadas en este tema.
+- [Descripción de las restricciones de uso](understanding-usage-restrictions.md): todas las aplicaciones habilitadas para RMS deben aplicar restricciones de uso que se definen por medio de las constantes enumeradas en este tema.
 
  
 ## <a name="related-topics"></a>Temas relacionados
 * [Información general](ad-rms-overview.md)
- 
 
- 
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

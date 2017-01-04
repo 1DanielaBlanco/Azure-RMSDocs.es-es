@@ -4,7 +4,7 @@ description: "Estas instrucciones forman parte de la ruta de migración de AD RM
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/03/2016
+ms.date: 11/23/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,13 +13,13 @@ ms.assetid: c5f4c6ea-fd2a-423a-9fcb-07671b3c2f4f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1fcebaaa2fbe1479e83c232d51013341977796fc
-ms.openlocfilehash: 54e759108ecca7a049190823c3874451d7104fc4
+ms.sourcegitcommit: 5aac7b9fae12642c9846a70c5d271c7600af4096
+ms.openlocfilehash: 7a10b0f1fceca58a80145962dfaedddeea64dd64
 
 
 ---
 
-# <a name="step-2-softwareprotected-key-to-hsmprotected-key-migration"></a>Paso 2: Migración de clave protegida por software a clave protegida por HSM
+# <a name="step-2-software-protected-key-to-hsm-protected-key-migration"></a>Paso 2: Migración de clave protegida por software a clave protegida por HSM
 
 >*Se aplica a: Active Directory Rights Management Services, Azure Information Protection*
 
@@ -41,7 +41,7 @@ Antes de empezar, asegúrese de que la organización tenga un almacén de claves
 > Si va a realizar los pasos de configuración para el Almacén de claves de Azure y no está familiarizado con este servicio de Azure, puede que le resulte útil ver primero [Introducción al Almacén de claves de Azure](https://azure.microsoft.com/documentation/articles/key-vault-get-started/). 
 
 
-## <a name="part-1-extract-your-slc-key-from-the-configuration-data-and-import-the-key-to-your-onpremises-hsm"></a>Parte 1: Extraer la clave de SLC de los datos de configuración e importar la clave en el HSM local
+## <a name="part-1-extract-your-slc-key-from-the-configuration-data-and-import-the-key-to-your-on-premises-hsm"></a>Parte 1: Extraer la clave de SLC de los datos de configuración e importar la clave en el HSM local
 
 1.  Administrador del Almacén de claves de Azure: siga este procedimiento de la sección [Implementación del método Aportar tu propia clave (BYOK) en el Almacén de claves de Azure](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#implementing-bring-your-own-key-byok-for-azure-key-vault) en la documentación del Almacén de claves de Azure:
 
@@ -143,7 +143,7 @@ Después de extraer la clave de SLC e importarla en el HSM local, puede crear un
 
     Cuando se le pida, escriba la contraseña que haya especificado anteriormente para el archivo de datos de configuración y confirme que quiere realizar esta acción.
 
-    Si tiene más de un archivo de datos de configuración, repita este comando para el resto de los archivos. Sin embargo, en el caso de estos archivos, establezca **-Active** en **false** al ejecutar el comando Import.
+    Si tiene más de un archivo de datos de configuración, repita este comando para el resto de los archivos. Por ejemplo, debe tener al menos un archivo adicional para importar si actualizó su clúster de AD RMS para el modo criptográfico 2. Sin embargo, en el caso de estos archivos, establezca **-Active** en **false** al ejecutar el comando Import.
 
 
 
@@ -164,6 +164,6 @@ Ahora puede ir al [paso 3. Active el inquilino de Azure Information Protection](
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO4-->
 
 

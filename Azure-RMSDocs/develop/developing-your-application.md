@@ -1,200 +1,238 @@
 ---
-title: "Desarrollo de la aplicación | Azure RMS"
-description: "Instrucciones sobre cómo desarrollar una aplicación mediante RMS SDK 2.1."
+title: "Desarrollo de la aplicación | Azure Information Protection"
+description: "Una guía que le lleva por la implementación básica de consola de la protección de documentos con AIP."
 keywords: 
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 11/01/2016
+ms.date: 12/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 396A2C19-3A00-4E9A-9088-198A48B15289
 audience: developer
-ms.reviewer: shubhamp
+ms.reviewer: kartikk
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4560a1cf3424ae4dddd3a0675b62e9c5e55de9fa
-ms.openlocfilehash: 1f46d93a47fae3b7e7de334db73b7e7b65ea6eea
+ms.sourcegitcommit: 7e2f4cfead53bd34673c1ebb85b9d966b8f6f848
+ms.openlocfilehash: 90b6ecd2860214c9b1f26ab9aad421390de8d6ff
 
 
 ---
 
 # <a name="developing-your-application"></a>Desarrollo de la aplicación
 
-Este tema contiene instrucciones esenciales sobre los principales aspectos de una aplicación habilitada para RMS y puede servir como base para el desarrollo de su propia aplicación.
+En este ejemplo, va a crear una aplicación de consola sencilla que interactúa con el servicio Azure Information Protection (AIP).  Se tomará como entrada la ruta de acceso del documento que se va a proteger y luego se protegerá con una directiva ad-hoc o una plantilla de Azure. A continuación, la aplicación aplicará las directivas correctas de acuerdo con las entradas y se creará un documento con información protegida. El código de ejemplo que se usará es la [aplicación Azure IP Test](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/AzureIP_Test), que se encuentra en Github.
 
-## <a name="introduction"></a>Introducción
+## <a name="sample-app-prerequisites"></a>Requisitos previos de la aplicación de ejemplo
+- **Sistema operativo**: Windows 10, Windows 8, Windows 7, Windows Server 2008, Windows Server 2008 R2 o Windows Server 2012.
+- **Lenguaje de programación**: C# (.NET Framework 3.0 y versiones posteriores).
+- **Entorno de desarrollo**: Visual Studio 2015 (y versiones posteriores).
 
-Las instrucciones de este tema se basan en la aplicación de ejemplo, *IPCHelloWorld*, que le servirá para conocer los conceptos básicos y el código de una aplicación con derechos habilitados. El proyecto *IPCHelloWorld* ya está configurado para Rights Management Services SDK 2.1.
+## <a name="setting-up-your-azure-configuration"></a>Establecimiento de la configuración de Azure
 
-### <a name="download-sample"></a>Descargar ejemplo
-- Compruebe que se ha registrado en el sitio de Connect:
-  - Para registrarse, vaya a [Connect](http://connect.microsoft.com)
-  - Inicie sesión con su cuenta de Microsoft
-  - Vaya al [Sitio de Rights Management Connect](https://connect.microsoft.com/site1170)
-  - Combinación 
-- Puede descargar la aplicación de ejemplo *IPCHellowWorld* completa, como [Webinar_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440)
+Para configurar Azure para esta aplicación, es necesario crear un identificador del inquilino, una clave simétrica y un id. de entidad de aplicación.
 
-Si quiere información sobre cómo configurar un proyecto nuevo para usar RMS SDK 2.1, vea [Configure Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md) (Configurar Visual Studio).
+### <a name="azure-ad-tenant-configuration"></a>Configuración del inquilino de Azure AD
 
+Para configurar el entorno de Azure AD para Azure Information Protection, siga las instrucciones que se indican en [Activar Azure Rights Management](https://docs.microsoft.com/en-us/information-protection/deploy-use/activate-service).
 
+Una vez activado el servicio, necesitará componentes de PowerShell para los siguientes pasos. Para ello, siga los pasos que se describen en [Administración del servicio Azure Rights Management mediante Windows PowerShell](https://docs.microsoft.com/en-us/information-protection/deploy-use/administer-powershell).
 
-## <a name="loading-msipcdll"></a>Carga de MSIPC.dll
+### <a name="getting-your-tenant-id"></a>Obtención del identificador de inquilino
 
-Antes de que se puedan llamar a las funciones de RMS SDK 2.1, primero debe llamarse a la función [IpcInitialize](https://msdn.microsoft.com/library/jj127295.aspx) para cargar el archivo MSIPC.dll.
+- Abra PowerShell como administrador.
+- Importe el módulo de RMS: `Import-Module AADRM`
+- Conéctese al servicio con las credenciales de usuario asignadas: `Connect-AadrmService –Verbose`
+- Asegúrese de que RMS está habilitado: `Enable-AADRM`
+- Para obtener su identificador de inquilino, ejecute: `Get-AadrmConfiguration`
 
-        C++
-        hr = IpcInitialize();
-        if (FAILED(hr)) {
-          wprintf(L"Failed to initialize MSIPC. Are you sure the runtime is installed?\n");
-          goto exit;
-        }
+>Registre el valor de BPOSId (identificador de inquilino). Lo necesitará en próximos pasos.
 
-## <a name="enumerating-templates"></a>Enumeración de plantillas
+*Salida de ejemplo*
+![salida de cmdlet](../media/develop/output-of-Get-AadrmConfiguration.png)
 
-Una plantilla de RMS define la directiva usada para proteger los datos, es decir, define los usuarios que tienen acceso a los datos y sus derechos. Las plantillas de RMS se instalan en el servidor RMS.
+- Desconéctese del servicio: `Disconnect-AadrmService`
 
-El fragmento de código siguiente enumera las plantillas de RMS disponibles en el servidor RMS predeterminado.
+### <a name="create-a-service-principal"></a>Creación de una entidad de servicio
+Siga estos pasos para crear a una entidad de servicio:
+> Una entidad de servicio son credenciales configuradas globalmente para el control de acceso que permiten a los servicios autenticarse en Microsoft Azure AD y proteger la información mediante Microsoft Azure AD Rights Management.
 
-      C++
-      hr = IpcGetTemplateList(NULL, 0, 0, NULL, NULL, &pcTil);
+- Abra PowerShell como administrador.
+- Importe el módulo Microsoft Azure AD mediante: `Import-Module MSOnline`
+- Conéctese al servicio en línea con las credenciales de usuario asignadas: `Connect-MsolService`
+- Cree a una nueva entidad de servicio mediante la ejecución de: `New-MsolServicePrincipal`
+- Proporcione un nombre para la entidad de servicio
+> Registre la clave simétrica y el id. de entidad de la aplicación para usarlos más adelante.
 
-      if (FAILED(hr)) {
-        DisplayError(L"IpcGetTemplateList failed", hr);
-        goto exit;
-      }
+*Salida de ejemplo*
+![salida de cmdlet](../media/develop/output-of-NewMsolServicePrincipal.png)
 
-Mediante esta llamada se recuperan las plantillas de RMS que están instaladas en el servidor predeterminado, se cargan los resultados en la estructura [IPC_TIL](https://msdn.microsoft.com/library/hh535283.aspx), a la que apunta la variable *pcTil*, y luego se muestran las plantillas.
+- Agregue el id. de entidad de la aplicación, la clave simétrica y el identificador de inquilino al archivo App.config de la aplicación.
 
-      C++
-      if (0 == pcTil->cTi) {
-        wprintf(L"*** No templates configured for your RMS server ***\n\n");
-        wprintf(L"\\------------------------------------------------------\n\n");
-        goto exit;
-      }
+*Archivo App.config de ejemplo*
+![salida de cmdlet](../media/develop/example-App.config-file.png)
 
-      for (DWORD dw = 0; dw < pcTil->cTi; dw++) {
-        wprintf(L"Template #%d:\n", dw);
-        wprintf(L"    Name:         %s\n", pcTil->aTi[dw].wszName);
-        wprintf(L"    Description:  %s\n", pcTil->aTi[dw].wszDescription);
-        wprintf(L"    Issued by:    %s\n", pcTil->aTi[dw].wszIssuerDisplayName);
-        wprintf(L"\n");
-      }
-
-## <a name="serializing-a-license"></a>Serialización de una licencia
-
-Para poder proteger los datos, es necesario serializar una licencia y obtener una clave de contenido. La clave de contenido se usa para cifrar los datos confidenciales. Por lo general, la licencia serializada va adjunta a los datos cifrados y es usada por el consumidor de los datos protegidos. El consumidor deberá llamar a la función [IpcGetKey](https://msdn.microsoft.com/library/hh535263.aspx) con la licencia serializada para obtener la clave de contenido que le permita descifrar el contenido y obtener la directiva asociada con el contenido.
-
-Por simplicidad, use la primera plantilla de RMS devuelta por [IpcGetTemplateList](https://msdn.microsoft.com/library/hh535267.aspx) para serializar una licencia.
-
-Normalmente, se usaría un cuadro de diálogo de la interfaz de usuario para permitir al usuario seleccionar la plantilla que quiera.
-
-      C++
-      hr = IpcSerializeLicense((LPCVOID)pcTil->aTi[0].wszID, IPC_SL_TEMPLATE_ID,
-        0, NULL, &hContentKey, &pSerializedLicense);
-
-      if (FAILED(hr)) {
-        DisplayError(L"IpcSerializeLicense failed", hr);
-        goto exit;
-      }
-
-Una vez hecho esto, ya tiene la clave de contenido *hContentKey*, y la licencia serializada, *pSerializedLicense*, que debe asociar a los datos protegidos.
+- Los valores de *ClientID* y *RedirectUri* estarán disponibles desde el momento en que registre su aplicación en Azure. Para más información sobre cómo registrar su aplicación en Azure y adquirir los elementos *ClientID* y *RedirectUri*, consulte [Configuración de Azure RMS para la autenticación de ADAL authentication](adal-auth.md).
 
 
-## <a name="protecting-data"></a>Protección de datos
+## <a name="design-summary"></a>Resumen de diseño
+El siguiente diagrama muestra un flujo de proceso y arquitectura de la aplicación que se va a crear. Los pasos se describen a continuación.
+![resumen de diseño](../media/develop/design-summary.png)
 
-Ahora está listo para cifrar los datos confidenciales mediante la función [IpcEncrypt](https://msdn.microsoft.com/library/hh535259.aspx). En primer lugar, debe preguntar a la función **IpcEncrypt** cuál será el tamaño de los datos cifrados.
+1. El usuario:
+  - Especifica la ruta de acceso del archivo que se va a proteger.
+  - Selecciona una plantilla o crea una directiva ad-hoc.
+2. La aplicación solicita la autenticación con AIP.
+3. AIP confirma la autenticación.
+4. La aplicación solicita plantillas a AIP.
+5. AIP devuelve plantillas predefinidas.
+6. La aplicación busca el archivo especificado con la ubicación indicada.
+7. La aplicación aplica la directiva de protección de AIP al archivo.
 
-      C++
-      cbText = (DWORD)(sizeof(WCHAR)*(wcslen(wszText)+1));
-      hr = IpcEncrypt(hContentKey, 0, TRUE, (PBYTE)wszText, cbText,
-        NULL, 0, &cbEncrypted);
+## <a name="how-the-code-works"></a>Funcionamiento del código
 
-      if (FAILED(hr)) {
-        DisplayError(L"IpcEncrypt failed", hr);
-        goto exit;
-      }
+En el ejemplo, Azure IP Test, la solución comienza con el archivo Iprotect.cs. Se trata de una aplicación de consola en C# y, al igual que con cualquier otra aplicación habilitada para AIP, se carga *MSIPC.dll* para comenzar, como se muestra en el método `main()`.
 
-Aquí, *wszText* contiene el texto sin formato que se va a proteger. La función [IpcEncrypt](https://msdn.microsoft.com/library/hh535259.aspx) devuelve el tamaño de los datos cifrados en el parámetro *cbEncrypted*.
+    //Loads MSIPC.dll
+    SafeNativeMethods.IpcInitialize();
+    SafeNativeMethods.IpcSetAPIMode(APIMode.Server);
 
-Ahora asigne la memoria para los datos cifrados.
+Cargue los parámetros necesarios para conectarse a Azure:
 
-      C++
-      pbEncrypted = (PBYTE)LocalAlloc(LPTR, cbEncrypted);
+    //Loads credentials for the service principal from App.Config
+    SymmetricKeyCredential symmetricKeyCred = new SymmetricKeyCredential();
+    symmetricKeyCred.AppPrincipalId = ConfigurationManager.AppSettings["AppPrincipalId"];
+    symmetricKeyCred.Base64Key = ConfigurationManager.AppSettings["Base64Key"];
+    symmetricKeyCred.BposTenantId = ConfigurationManager.AppSettings["BposTenantId"];
 
-      if (NULL == pbEncrypted) {
-        wprintf(L"Out of memory\n");
-        goto exit;
-      }
+Cuando proporcione la ruta de acceso del archivo en la aplicación de consola, la aplicación comprueba si el documento ya está cifrado. El método es de la clase **SafeFileApiNativeMethods**.
 
-Por último, puede realizar el cifrado en sí.
+    var checkEncryptionStatus = SafeFileApiNativeMethods.IpcfIsFileEncrypted(filePath);
 
-      C++
-      hr = IpcEncrypt(hContentKey, 0, TRUE, (PBYTE)wszText, cbText,
-        pbEncrypted, cbEncrypted, &cbEncrypted);
+Si el documento no está cifrado, se procede a cifrar el documento con la selección proporcionada en el símbolo del sistema.
 
-      if (FAILED(hr)) {
-        DisplayError(L"IpcEncrypt failed", hr);
-        goto exit;
-      }
-
-Completado este paso, ya tiene los datos cifrados, *pbEncrypted*, y la licencia serializada, *pSerializedLicense*, que los consumidores usarán para descifrar los datos.
-
-## <a name="error-handling"></a>Control de errores
-
-En esta aplicación de ejemplo, la función *DisplayError* se usa para controlar los errores.
-
-      C++
-      void DisplayError(LPCWSTR wszErrorInfo, HRESULT hrError)
+    if (!checkEncryptionStatus.ToString().ToLower().Contains(alreadyEncrypted))
+    {
+      if (method == EncryptionMethod1)
       {
-        LPCWSTR wszErrorMessageText = NULL;
+        //Encrypt a file via AIP template
+        ProtectWithTemplate(symmetricKeyCred, filePath);
 
-        if (SUCCEEDED(IpcGetErrorMessageText(hrError, 0, &wszErrorMessageText))) {
-          wprintf(L"%s: 0x%08X (%s)\n", wszErrorInfo, hrError, wszErrorMessageText);
+      }
+      else if (method == EncryptionMethod2)
+      {
+        //Encrypt a file using ad-hoc policy
+        ProtectWithAdHocPolicy(symmetricKeyCred, filePath);
+      }
+
+La opción de protección con plantilla pasa a obtener la lista de plantillas del servidor y proporciona al usuario la opción que se seleccionará.
+>Si no modifica las plantillas obtendrá plantillas predeterminadas de AIP.
+
+     public static void ProtectWithTemplate(SymmetricKeyCredential symmetricKeyCredential, string filePath)
+     {
+       // Gets the available templates for this tenant             
+       Collection<TemplateInfo> templates = SafeNativeMethods.IpcGetTemplateList(null, false, true,
+           false, true, null, null, symmetricKeyCredential);
+
+       //Requests tenant template to use for encryption
+       Console.WriteLine("Please select the template you would like to use to encrypt the file.");
+
+       //Outputs templates available for selection
+       int counter = 0;
+       for (int i = 0; i < templates.Count; i++)
+       {
+         counter++;
+         Console.WriteLine(counter + ". " + templates.ElementAt(i).Name + "\n" +
+             templates.ElementAt(i).Description);
+       }
+
+       //Parses template selection
+       string input = Console.ReadLine();
+       int templateSelection;
+       bool parseResult = Int32.TryParse(input, out templateSelection);
+
+       //Returns error if no template selection is entered
+       if (parseResult)
+       {
+         //Ensures template value entered is valid
+         if (0 < templateSelection && templateSelection <= counter)
+         {
+           templateSelection -= templateSelection;
+
+           // Encrypts the file using the selected template             
+           TemplateInfo selectedTemplateInfo = templates.ElementAt(templateSelection);
+
+           string encryptedFilePath = SafeFileApiNativeMethods.IpcfEncryptFile(filePath,
+               selectedTemplateInfo.TemplateId,
+               SafeFileApiNativeMethods.EncryptFlags.IPCF_EF_FLAG_KEY_NO_PERSIST, true, false, true, null,
+               symmetricKeyCredential);
+          }
         }
-        else {
-          wprintf(L"%s: 0x%08X\n", wszErrorInfo, hrError);
-        }
       }
 
-La función *DisplayError* usa la función [IpcGetErrorMessageText](https://msdn.microsoft.com/library/hh535261.aspx) para obtener el mensaje de error del código de error correspondiente e imprimirlo en la salida estándar.
+Si selecciona la directiva ad-hoc, el usuario de la aplicación tiene que proporcionar las direcciones de correo electrónico de las personas que tendrán derechos. En esta sección, la licencia se crea mediante el método **IpcCreateLicenseFromScratch()** y con la aplicación de la nueva directiva en la plantilla.
 
-## <a name="cleaning-up"></a>Limpieza
+    if (issuerDisplayName.Trim() != "")
+    {
+      // Gets the available issuers of rights policy templates.              
+      // The available issuers is a list of RMS servers that this user has already contacted.
+      try
+      {
+        Collection<TemplateIssuer> templateIssuers = SafeNativeMethods.IpcGetTemplateIssuerList(
+                                                        null,
+                                                        true,
+                                                        false,
+                                                        false, true, null, symmetricKeyCredential);
 
-Antes de acabar, hay que liberar todos los recursos asignados.
+        // Creates the policy and associates the chosen user rights with it             
+        SafeInformationProtectionLicenseHandle handle = SafeNativeMethods.IpcCreateLicenseFromScratch(
+                                                            templateIssuers.ElementAt(0));
+        SafeNativeMethods.IpcSetLicenseOwner(handle, owner);
+        SafeNativeMethods.IpcSetLicenseUserRightsList(handle, userRights);
+        SafeNativeMethods.IpcSetLicenseDescriptor(handle, new TemplateInfo(null, CultureInfo.CurrentCulture,
+                                                                policyName,
+                                                                policyDescription,
+                                                                issuerDisplayName,
+                                                                false));
 
-      C++
-      if (NULL != pbEncrypted) {
-        LocalFree((HLOCAL)pbEncrypted);
-      }
+        //Encrypts the file using the ad hoc policy             
+        string encryptedFilePath = SafeFileApiNativeMethods.IpcfEncryptFile(
+                                       filePath,
+                                       handle,
+                                       SafeFileApiNativeMethods.EncryptFlags.IPCF_EF_FLAG_KEY_NO_PERSIST,
+                                       true,
+                                       false,
+                                       true,
+                                       null,
+                                       symmetricKeyCredential);
+       }
+    }
 
-      if (NULL != pSerializedLicense) {
-        IpcFreeMemory((LPVOID)pSerializedLicense);
-      }
+## <a name="user-interaction-example"></a>Ejemplo de interacción del usuario
 
-      if (NULL != hContentKey) {
-        IpcCloseHandle((IPC_HANDLE)hContentKey);
-      }
+Después de que todo se ha creado y está en ejecución, las salidas de la aplicación se parecerán a estas:
 
-      if (NULL != pcTil) {
-        IpcFreeMemory((LPVOID)pcTil);
-      }
+1. Se le pide que seleccione un método de cifrado.
+![aplicación de salida - paso 1](../media/develop/app-output-1.png)
 
-## <a name="related-topics"></a>Temas relacionados
+2. Se le pide que proporcione la ruta de acceso al archivo que se va a proteger.
+![salida de aplicación - paso 2](../media/develop/app-output-2.png)
 
-- [Instrucciones e información para desarrolladores](developer-notes.md)
-- [IpcEncrypt](https://msdn.microsoft.com/library/hh535259.aspx)
-- [IpcGetErrorMessageText](https://msdn.microsoft.com/library/hh535261.aspx)
-- [IpcGetKey](https://msdn.microsoft.com/library/hh535263.aspx)
-- [IpcGetTemplateList](https://msdn.microsoft.com/library/hh535267.aspx)
-- [IpcInitialize](https://msdn.microsoft.com/library/jj127295.aspx)
-- [IPC_TIL](https://msdn.microsoft.com/library/hh535283.aspx)
-- [Webinar_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440)
+3. Se le pide que escriba la dirección de correo electrónico del propietario de la licencia (dicho propietario debe tener privilegios de administrador global en el inquilino de Azure AD).
+![![salida de aplicación - paso 3](../media/develop/app-output-3.png)
+
+4. Escriba las direcciones de correo electrónico de los usuarios que tendrán derechos de acceso al archivo (deben ir separadas por un espacio).
+![salida de aplicación - paso 4](../media/develop/app-output-4.png)
+
+5. En la lista, seleccione los derechos que se concederán a los usuarios autorizados.
+![salida de aplicación - paso 5](../media/develop/app-output-5.png)
+
+6. Por último, especifique algunos metadatos de directiva: nombre de la directiva, descripción y nombre para mostrar del emisor (identificador de inquilino de Azure AD). ![salida de aplicación - paso 6](../media/develop/app-output-6.png)
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 

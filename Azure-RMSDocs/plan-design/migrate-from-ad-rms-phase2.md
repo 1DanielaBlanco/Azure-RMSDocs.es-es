@@ -18,7 +18,7 @@ ms.openlocfilehash: ca8d2ccb68b96095fccf9d55b9cb9392d3a455ec
 
 
 ---
-# <a name="migration-phase-2-clientside-configuration"></a>Fase 2 de migración: Configuración del lado cliente
+# <a name="migration-phase-2---client-side-configuration"></a>Fase 2 de migración: Configuración del lado cliente
 
 >*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Office 365*
 
@@ -41,7 +41,7 @@ Para los clientes de Windows:
     > [!IMPORTANT]
     > Las instrucciones incluyen reemplazar las direcciones de ejemplo de **adrms** y **adrms.contoso.com** con las direcciones de sus propios servidores de AD RMS. Al hacerlo, asegúrese de que no haya ningún espacio adicional antes o después de las direcciones, ya que interrumpirá el script de migración y es muy difícil de identificar como la causa principal del problema. Algunas herramientas de edición agregan automáticamente un espacio después de pegar texto.
     >
-    > Además, si los servidores de AD RMS usan certificados de servidor SSL/TLS, compruebe si los valores de la dirección URL de administración de licencias incluyen el número de puerto **443** en la cadena. Por ejemplo: https://rms.treyresearch.net:443/_wmcs/licensing. Para encontrar esta información en la consola de Active Directory Rights Management Services, haga clic en el nombre del clúster y vea la información de **Detalles del clúster**. Si ve el número de puerto 443 incluido en la dirección URL, incluya este valor cuando modifique el script. Por ejemplo, https://rms.treyresearch.net**:443**.
+    > Además, si los servidores de AD RMS usan certificados de servidor SSL/TLS, compruebe si los valores de la dirección URL de administración de licencias incluyen el número de puerto **443** en la cadena. Por ejemplo: https:// rms.treyresearch.net:443/_wmcs/licensing. Para encontrar esta información en la consola de Active Directory Rights Management Services, haga clic en el nombre del clúster y vea la información de **Detalles del clúster**. Si ve el número de puerto 443 incluido en la dirección URL, incluya este valor cuando modifique el script. Por ejemplo, https://rms.treyresearch.net**:443**.
 
 3. Si los usuarios tienen Office 2016: aún no se han actualizado los scripts para incluir la configuración de Office 2016, por lo que, si los usuarios tienen esta versión de Office, debe actualizar manualmente los scripts:
 

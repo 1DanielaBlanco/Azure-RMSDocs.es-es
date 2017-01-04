@@ -4,7 +4,7 @@ description: "Información complementaria para Azure Information Protection, que
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: b3a7127b-6d24-4439-bc4e-2a0a325e8ea3
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 784e8a1f53df10ee66595b1268a4d9a1f0cdc9b0
-ms.openlocfilehash: 5fbc0af13f1acdbd6b7a1a267c9d2be2b90b8a1b
+ms.sourcegitcommit: 291198ed501854de1aa7ddbfc80cd7a7f1b4849c
+ms.openlocfilehash: a853aaa993bbb5e15e6c4b80d4c6f0581b6e9090
 
 
 ---
@@ -33,11 +33,13 @@ Azure Information Protection admite otros servicios y también se basa en otros 
 
 ## <a name="security-compliance-and-auditing"></a>Seguridad, cumplimiento y auditoría
 
-Consulte la sección [Security, compliance, and regulatory requirements](../understand-explore/azure-rms-problems-it-solves.md#security-compliance-and-regulatory-requirements) (Requisitos de seguridad, normativos y regulatorios) del artículo [What problems does Azure RMS solve?](../understand-explore/azure-rms-problems-it-solves.md) (¿Qué problemas resuelve Azure RMS?). Además:
+Consulte la sección [Security, compliance, and regulatory requirements](../understand-explore/azure-rms-problems-it-solves.md#security-compliance-and-regulatory-requirements) (Requisitos de seguridad, normativos y regulatorios) del artículo [What problems does Azure RMS solve?](../understand-explore/azure-rms-problems-it-solves.md) (¿Qué problemas resuelve Azure RMS?) para obtener información sobre las certificaciones específicas del servicio de Azure Rights Management. Además:
 
 - Para certificaciones externas de Azure Information Protection: [Centro de confianza de Microsoft Azure](http://azure.microsoft.com/support/trust-center/)
 
 - Para obtener información sobre FIPS 140: [Validación conforme a FIPS 140](https://technet.microsoft.com/library/security/cc750357.aspx)
+
+Para obtener información técnica detallada acerca de cómo funciona la tecnología de protección, consulte ¿[Cómo funciona Azure RMS?](../understand-explore/how-does-it-work.md) 
 
 ## <a name="service-level-agreements"></a>Contratos de nivel de servicio
 
@@ -56,6 +58,6 @@ Consulte la sección [Security, compliance, and regulatory requirements](../unde
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

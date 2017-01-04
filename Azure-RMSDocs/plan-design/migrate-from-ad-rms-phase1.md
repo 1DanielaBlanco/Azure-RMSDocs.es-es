@@ -4,7 +4,7 @@ description: "La fase 1 de la migración desde AD RMS a Azure Information Protec
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/23/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,13 +13,13 @@ ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 2db4041d7839d32a4d8f0bd468aa114d45665c27
+ms.sourcegitcommit: 750919e3d8be88a1a1028d83c89ece55ea4e8690
+ms.openlocfilehash: 65ab175da5c5ab74090bf6bdb88af766dc55e334
 
 
 ---
 
-# <a name="migration-phase-1-serverside-configuration-for-ad-rms"></a>Fase 1 de migración: configuración del lado servidor para AD RMS
+# <a name="migration-phase-1---server-side-configuration-for-ad-rms"></a>Fase 1 de migración: configuración del lado servidor para AD RMS
 
 >*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Office 365*
 
@@ -29,7 +29,7 @@ Use la información siguiente para la fase 1 de la migración desde AD RMS a Azu
 ## <a name="step-1-download-the-azure-rights-management-administration-tool"></a>Paso 1: descargue la herramienta de administración de Azure Rights Management
 Vaya al Centro de descarga de Microsoft y descargue [Azure Rights Management Administration Tool](https://go.microsoft.com/fwlink/?LinkId=257721), que contiene el módulo de administración de Azure Rights Management para Windows PowerShell. Azure Rights Management (Azure RMS) es el servicio que ofrece la protección de datos para Azure Information Protection.
 
-Instale la herramienta. Para obtener instrucciones, vea [Instalación de Windows PowerShell para Azure Rights Management](../deploy-use/install-powershell.md).
+Instale la herramienta. Para obtener instrucciones, vea [Instalación de Windows PowerShell para Azure Rights Management](../deploy-use/install-powershell.md).
 
 > [!NOTE]
 > Si anteriormente ya ha descargado este módulo de Windows PowerShell, ejecute el comando siguiente para comprobar que su número de versión sea como mínimo 2.5.0.0: `(Get-Module aadrm -ListAvailable).Version`
@@ -74,6 +74,11 @@ Siga este procedimiento en todos los clústeres de AD RMS, para todos los domini
     -   No seleccione la casilla para guardar el archivo de dominio de confianza en RMS 1.0.
 
 Cuando haya exportado todos los dominios de publicación de confianza, estará preparado para empezar el procedimiento para importar estos datos en Azure Information Protection.
+
+Tenga en cuenta que los dominios de publicación de confianza incluyen las claves para descifrar los archivos protegidos con anterioridad, por lo que es importante que exporte (y después importe en Azure) todos los dominios de publicación de confianza y no solo el que está actualmente activo.
+
+Por ejemplo, tendrá varios dominios de publicación de confianza si ha actualizado sus servidores de AD RMS desde el modo criptográfico 1 al modo criptográfico 2. Si no exporta e importa el dominio de publicación de confianza que contiene la clave archivada que utilizó el modo criptográfico 1, al final de la migración, los usuarios no podrán abrir el contenido protegido con la clave del modo criptográfico 1.
+
 
 ### <a name="import-the-configuration-data-to-azure-information-protection"></a>Importar los datos de configuración en Azure Information Protection
 Los procedimientos exactos para este paso dependen de la configuración actual de la implementación de AD RMS y de la topología preferida para su clave de inquilino de Azure Information Protection.
@@ -220,6 +225,6 @@ Vaya a [Fase 2: Configuración del lado cliente](migrate-from-ad-rms-phase2.md).
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

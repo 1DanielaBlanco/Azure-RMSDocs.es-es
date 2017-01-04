@@ -4,15 +4,15 @@ description: "Puede cambiar o mejorar cualquiera de las etiquetas que ven los us
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/03/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e3b6d95f-334b-4d17-80a9-7d5487ab5d32
 translationtype: Human Translation
-ms.sourcegitcommit: 0046023125fe339ed408edf47c59e36708b01783
-ms.openlocfilehash: 1d92c127581d68bb52979d65ddb8704cad7c8039
+ms.sourcegitcommit: 4fcfcebc7da5a22a91911d70d4d787dc525d3485
+ms.openlocfilehash: f7b5e9e0bb32e4a04dfb407f11e361d959ebb807
 
 
 ---
@@ -32,9 +32,9 @@ Para cambiar una etiqueta, utilice las instrucciones siguientes.
     
     Por ejemplo, en el menú del centro, haga clic en **Más servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
-2. En la hoja **Azure Information Protection**, seleccione la etiqueta que quiere cambiar, realice los cambios en la hoja **Etiqueta** y en otras hojas, si es necesario.
+2. Para cambiar una etiqueta de la directiva global de modo que se aplique a todos los usuarios, seleccione la etiqueta que quiere cambiar en la hoja **Policy:Global** (Directiva: Global) y luego realice los cambios en la hoja **Etiqueta** y en cualquiera de las hojas posteriores si es necesario. Para cambiar una etiqueta de una [directiva de ámbito](configure-policy-scope.md) de modo que se aplique a los usuarios seleccionados, seleccione primero esa directiva en la hoja inicial de **Azure Information Protection**.
 
-    La excepción es si quiere cambiar el orden de una etiqueta. Esto lo puede hacer en la misma hoja **Azure Information Protection**; para ello, haga clic con el botón derecho en la etiqueta o seleccione el menú contextual de la etiqueta y haga clic en las opciones **Subir** o **Bajar**.
+    La excepción es si quiere cambiar el orden de una etiqueta, que puede hacerlo en la hoja de la directiva global o en la directiva de ámbito seleccionada: haga clic con el botón derecho en la etiqueta o seleccione el menú contextual de la etiqueta y luego las opciones **Subir** o **Bajar**.
 
 3. Siempre que realice cambios en una hoja, haga clic en **Guardar** en esa hoja si desea conservar los cambios.
 
@@ -52,6 +52,6 @@ Para más información sobre las opciones que puede cambiar para una etiqueta, a
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 
