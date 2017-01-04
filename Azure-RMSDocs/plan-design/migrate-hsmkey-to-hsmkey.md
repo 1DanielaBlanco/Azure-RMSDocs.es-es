@@ -4,7 +4,7 @@ description: "Instrucciones que forman parte de la ruta de migración de AD RMS 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/14/2016
+ms.date: 11/23/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: c5bbf37e-f1bf-4010-a60f-37177c9e9b39
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5f75e36e5939b23a9d077a6fcd659c59d0f71a68
-ms.openlocfilehash: 9db60e1e841cd1f821501d402986dbd05a577f6f
+ms.sourcegitcommit: 5aac7b9fae12642c9846a70c5d271c7600af4096
+ms.openlocfilehash: 5def3aa722afd29b99ef18c100d71a447c22554f
 
 
 ---
@@ -79,7 +79,7 @@ El administrador necesita realizar estos procedimientos para Azure Information P
     
     Cuando se le pida, escriba la contraseña que especificó anteriormente y confirme que desea realizar esta acción.
 
-2.  Cuando se haya completado el comando, repita el paso 1 en cada archivo .xml restante que se creó mediante la exportación de los dominios de publicación de confianza. Sin embargo, en el caso de estos archivos, establezca **-Active** en **false** al ejecutar el comando Import.  
+2.  Cuando se haya completado el comando, repita el paso 1 en cada archivo .xml restante que se creó mediante la exportación de los dominios de publicación de confianza. Por ejemplo, debe tener al menos un archivo adicional para importar si actualizó su clúster de AD RMS para el modo criptográfico 2. Sin embargo, en el caso de estos archivos, establezca **-Active** en **false** al ejecutar el comando Import.  
 
 3.  Use el cmdlet [Disconnect-AadrmService](https://msdn.microsoft.com/library/azure/dn629416.aspx) para desconectarse del servicio Azure Rights Management:
 
@@ -95,6 +95,6 @@ Ahora puede ir al [paso 3. Active el inquilino de Azure Information Protection](
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

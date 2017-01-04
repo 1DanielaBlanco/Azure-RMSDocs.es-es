@@ -85,7 +85,7 @@ Si se establece otro valor o si no se establece ningún valor, el resultado ser�
 
 Si se intenta cifrar un tipo de archivo que está bloqueado, se produce el error [IPCERROR\_FILE\_ENCRYPT\_BLOCKED](https://msdn.microsoft.com/library/hh535248.aspx).
 
-### <a name="file-api-file-support-details"></a>API de archivo: detalles sobre la compatibilidad de archivos
+### <a name="file-api---file-support-details"></a>API de archivo: detalles sobre la compatibilidad de archivos
 
 Puede agregarse compatibilidad nativa para cualquier tipo de archivo (extensión). Por ejemplo, en el caso de cualquier extensión &lt;ext&gt; (que no es de Office), se usará \*.p&lt;ext&gt; si la configuración de administración de esa extensión es "NATIVE".
 
@@ -151,10 +151,8 @@ HKEY_LOCAL_MACHINE
 
 - [Notas para el desarrollador](developer-notes.md)
 - [IPCERROR\_FILE\_ENCRYPT\_BLOCKED](https://msdn.microsoft.com/library/hh535248.aspx)
- 
 
- 
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 <!--HONumber=Nov16_HO3-->

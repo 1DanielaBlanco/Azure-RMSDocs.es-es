@@ -4,7 +4,7 @@ description: Identifique los requisitos de Azure AD para usar Azure Information 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/29/2016
+ms.date: 12/07/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 667e1e533df6d26c9aae0aba1f889b0e6470b059
+ms.sourcegitcommit: a38b4f201a05ece08f06b18797a146adecf59053
+ms.openlocfilehash: 1246bfcf3a389e2dcd7a9ef922c3f40150611640
 
 
 ---
@@ -25,7 +25,7 @@ ms.openlocfilehash: 667e1e533df6d26c9aae0aba1f889b0e6470b059
 
 Para poder usar Azure Information Protection se necesita un directorio de Azure AD. Use la cuenta de la organización para este directorio para poder iniciar sesión en el Portal de Azure clásico, en donde, por ejemplo, podrá configurar y administrar las plantillas de Rights Management.
 
-Si no dispone aún de suscripción de Azure para su organización, puede obtener una si se registra para una prueba gratuita: vaya a la página [Introducción a Azure](https://account.windowsazure.com/organization) y siga las instrucciones.
+Si no dispone aún de suscripción de Azure para su organización, puede obtener una si se registra para una evaluación gratuita: Vaya a la página de [Introducción a Azure](https://account.windowsazure.com/organization) y siga las instrucciones.
 
 Para más información, consulte los recursos siguientes en la documentación de Azure Active Directory:
 
@@ -35,12 +35,17 @@ Para más información, consulte los recursos siguientes en la documentación de
 
 Si desea integrar el directorio de Azure AD con los bosques de AD locales, consulte [Integración de las identidades locales con Azure Active Directory](/active-directory/active-directory-aadconnect).
 
-> [!NOTE]
-> Si tiene dispositivos móviles o equipos que realizan la autenticación localmente utilizando AD FS o un proveedor de autenticación equivalente:
-> 
-> -   Debe usar AD FS en la versión mínima de servidor de **Windows Server 2012 R2** o un proveedor de autenticación alternativo que admita el protocolo OAuth 2.0.
+### <a name="scenarios-that-have-specific-requirements"></a>Escenarios que tienen requisitos específicos 
 
-## <a name="multifactor-authentication-mfa-and-azure-information-protection"></a>Multi-Factor Authentication (MFA) y Azure Information Protection
+Equipos que ejecutan Office 2010: 
+
+- Si las cuentas de usuario están federadas (por ejemplo, usa AD FS), deben usar la autenticación integrada de Windows. En este escenario la autenticación basada en formularios no podrá autenticar a los usuarios en Azure Information Protection.
+
+Dispositivos móviles o equipos Mac que se autentican localmente mediante AD FS o un proveedor de autenticación equivalente:
+
+- Debe usar AD FS en la versión mínima de servidor de **Windows Server 2012 R2** o un proveedor de autenticación alternativo que admita el protocolo OAuth 2.0.
+
+## <a name="multi-factor-authentication-mfa-and-azure-information-protection"></a>Multi-Factor Authentication (MFA) y Azure Information Protection
 Para usar Multi-Factor Authentication (MFA) con Azure Information Protection se necesita como mínimo uno de los dos requisitos siguientes:
 
 -   Office 2013 (versión mínima):
@@ -75,6 +80,6 @@ Para comprobar otros requisitos, vea [Requisitos para Azure Information Protecti
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

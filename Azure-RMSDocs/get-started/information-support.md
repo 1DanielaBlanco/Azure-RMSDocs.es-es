@@ -4,7 +4,7 @@ description: "Recursos para administradores con información sobre nuevas versio
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/11/2016
+ms.date: 11/29/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 757b0e1a65d54f81b00c6513ee85ded4fe753684
-ms.openlocfilehash: 37f42c4b9f4e4b41e96b3e1e6a74a6c3d7deb254
+ms.sourcegitcommit: 4fcfcebc7da5a22a91911d70d4d787dc525d3485
+ms.openlocfilehash: 0a9f88f179e5ac936211e61f8bf6dae9ec83506f
 
 
 ---
@@ -93,6 +93,6 @@ Solución de problemas:
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO1-->
 
 

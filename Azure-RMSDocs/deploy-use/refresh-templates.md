@@ -13,8 +13,8 @@ ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 67c2f47e1cc8e02c2bb4430421952a146e583e87
-ms.openlocfilehash: a823d79a9305569962ee165b6eadf1d5384c0c0b
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 2cfe5fd787811cae71bb08c458bd6767e4bc35e4
 
 
 ---
@@ -95,7 +95,7 @@ Para que los usuarios ya no vean estas plantillas, conéctese al servicio median
 Set-RMSTemplate -Identity "<name or GUID of the template>" -Type Archived
 ```
 
-## <a name="office-2016-office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template"></a>Office 2016, Office 2013 y la aplicación RMS sharing para Windows: Cómo forzar una actualización de una plantilla personalizada que se ha cambiado
+## <a name="office-2016--office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template"></a>Office 2016, Office 2013 y la aplicación RMS sharing para Windows: Cómo forzar una actualización de una plantilla personalizada que se ha cambiado
 Si modifica el Registro de los equipos que ejecutan Office 2016, Office 2013 o la aplicación Rights Management (RMS) sharing, puede cambiar la programación automática para que las plantillas cambiadas se actualicen en los equipos con más frecuencia que la indicada en sus valores predeterminados. También puede forzar una actualización inmediata eliminando los datos existentes en un valor del Registro.
 
 > [!WARNING]
@@ -187,6 +187,6 @@ Si modifica el Registro de los equipos que ejecutan Office 2010, puede establece
 [Configuración de plantillas personalizadas para Azure Rights Management](configure-custom-templates.md)
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 

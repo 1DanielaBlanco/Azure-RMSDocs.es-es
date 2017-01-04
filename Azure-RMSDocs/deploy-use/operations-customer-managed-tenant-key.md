@@ -20,7 +20,7 @@ ms.openlocfilehash: 03c2e885bfb997fda2a2f675be3dee6bc8ea8138
 ---
 
 
-# <a name="customermanaged-tenant-key-lifecycle-operations"></a>Administración de cliente: Operaciones de ciclo de vida de clave de inquilino
+# <a name="customer-managed-tenant-key-lifecycle-operations"></a>Administración de cliente: Operaciones de ciclo de vida de clave de inquilino
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
@@ -32,7 +32,7 @@ En Azure Key Vault puede cambiar los permisos en el almacén de claves que conti
 Al cancelar la suscripción a Azure Information Protection, la solución deja de usar la clave de inquilino y no es necesario realizar ninguna otra acción.
 
 
-## <a name="rekey-your-tenant-key"></a>Vuelva a introducir su clave de inquilino
+## <a name="re-key-your-tenant-key"></a>Vuelva a introducir su clave de inquilino
 La acción de volver a introducir la clave también se le conoce como revertir su clave. No vuelva a introducir su clave de inquilino a menos que sea necesario. Otros clientes, como Office 2010, no se diseñaron para tratar cambios de clave correctamente. En este escenario, necesita desactivar el estado de Rights Management en los equipos con una directiva de grupo o un mecanismo equivalente. Sin embargo, hay algunos eventos legítimos que pueden forzarle a volver a introducir la clave de inquilino. Por ejemplo:
 
 -   La compañía se ha dividido en una o dos compañías. Cuando vuelve a introducir la clave de inquilino, la nueva compañía no tendrá acceso al nuevo contenido que publiquen sus empleados. Pueden acceder al antiguo contenido si tienen una copia de la antigua clave de inquilino.

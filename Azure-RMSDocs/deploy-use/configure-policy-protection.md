@@ -4,15 +4,15 @@ description: "Puede proteger sus documentos y correos electrónicos más confide
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/04/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
 translationtype: Human Translation
-ms.sourcegitcommit: addc24fed28cee52b57c7e3bde926d6324478e7b
-ms.openlocfilehash: 4f3c77df23207c3a76a768a1fe428484339de18f
+ms.sourcegitcommit: 5d1a5e3b85d5450bcb2064a6c3b95e6ad802eea3
+ms.openlocfilehash: 31ef3e41e84515c02ebe97f01025331578273c71
 
 
 ---
@@ -44,6 +44,12 @@ Para más información sobre Azure Rights Management y cómo funciona, consulte 
 > [!IMPORTANT]
 > Para configurar una etiqueta para aplicar la protección de Azure Rights Management, se debe activar el servicio Azure Rights Management para la organización. Si aún no lo ha hecho, consulte [Activación de Azure Rights Management](../deploy-use/activate-service.md).
 
+No es necesario que Exchange esté configurado para Information Rights Management (IRM) para que los usuarios puedan aplicar las etiquetas en Outlook para proteger sus mensajes de correo electrónico. Sin embargo, hasta que no se configure Exchange para IRM, no disfrutará de toda la funcionalidad derivada del uso de la protección de Azure Rights Management con Exchange. Por ejemplo, los usuarios no podrán ver los correos electrónicos protegidos en teléfonos móviles o con Outlook Web Access, los correos electrónicos protegidos no se podrán indexar para la búsqueda, y no podrá configurar Exchange Online DLP para la protección de Rights Management. A fin de configurar Exchange para admitir estos escenarios adicionales, consulte los siguientes recursos:
+
+- Para Exchange Online, consulte las instrucciones de [Exchange Online: Configuración de IRM](../deploy-use/configure-office365.md#exchange-online-irm-configuration).
+
+- Para Exchange local, debe implementar el [conector RMS y configurar los servidores de Exchange](../deploy-use/deploy-rms-connector.md). 
+
 
 ## <a name="to-configure-a-label-to-apply-rights-management-protection"></a>Para configurar una etiqueta para aplicar la protección de Rights Management
 
@@ -51,9 +57,11 @@ Para más información sobre Azure Rights Management y cómo funciona, consulte 
 
     Por ejemplo, en el menú del centro, haga clic en **Más servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
-2. En la hoja **Azure Information Protection**, seleccione la etiqueta que quiere configurar para aplicar la protección de Rights Management.
+2. Si la etiqueta que quiere configurar se va a aplicar a todos los usuarios, seleccione la etiqueta que se modificará en la hoja **Policy:Global** (Directiva:Global). 
 
-3. En la hoja **Etiqueta**, en la sección **Set RMS template for protecting documents and emails containing this label** (Configuración de la plantilla de RMS para proteger documentos y correos electrónicos que contienen esta etiqueta), en **Seleccionar plantilla RMS de**, seleccione **Azure RMS** o **AD RMS (VERSIÓN PRELIMINAR)**.
+     Si la etiqueta que quiere configurar está en una [directiva de ámbito](configure-policy-scope.md) de modo que se aplica solo a los usuarios seleccionados, seleccione primero esa directiva de ámbito en la hoja inicial de **Azure Information Protection**.
+
+3. En la hoja **Etiqueta**, en la sección **Establecer la plantilla de RMS para proteger documentos y correos electrónicos que contengan esta etiqueta**, en **Seleccionar plantilla RMS de**, seleccione **Azure RMS** o **AD RMS**.
     
     En la mayoría de los casos, seleccionará **Azure RMS**. No seleccione AD RMS a menos que haya leído y comprendido los requisitos previos y restricciones que acompañan a esta configuración, que a veces se conoce como "*mantenga su propia clave*" (HYOK). Para obtener más información, consulte [Requisitos y restricciones de Mantenga su propia clave (HYOK) para la protección de AD RMS](configure-adrms-restrictions.md).
     
@@ -67,6 +75,8 @@ Para más información sobre Azure Rights Management y cómo funciona, consulte 
     
         - Los usuarios que estén fuera del ámbito configurado de la plantilla o que se excluyan al aplicar la protección de Azure Rights Management seguirán viendo la etiqueta, pero no podrán aplicarla. Si seleccionan la etiqueta, verán el mensaje siguiente: **Azure Information Protection no puede aplicar esta etiqueta. Si el problema persiste, póngase en contacto con el administrador.**
         
+            Observe que siempre se muestran todas las plantillas, a pesar de vaya a configurar una directiva de ámbito. Por ejemplo, va a configurar una directiva de ámbito para el grupo Marketing. Las plantillas de Azure RMS que puede seleccionar no se limitarán a las plantillas cuyo ámbito sea el grupo Marketing, y es posible seleccionar una plantilla de departamento que los usuarios seleccionados no pueden usar. Para facilitar la configuración y reducir la solución de problemas, puede nombrar la plantilla de departamento de forma que coincida con la etiqueta de la directiva de ámbito. 
+            
     - Si selecciona **Quitar protección**:
         
         - Los usuarios deben tener permisos para quitar la protección de Rights Management para aplicar una etiqueta con esta opción. Esta opción requiere que tengan el **derecho de uso** **Exportar** (para documentos de Office) o [Control total](../deploy-use/configure-usage-rights.md), o que sean el propietario de Rights Management (concede automáticamente el derecho de uso Control total) o un [superusuario para Azure Rights Management](../deploy-use/configure-super-users.md). Las plantillas de Rights Management predeterminadas no incluyen los derechos de uso que permite a los usuarios quitar la protección. 
@@ -85,6 +95,6 @@ Para más información sobre cómo configurar la directiva de Azure Information 
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 

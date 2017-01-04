@@ -4,7 +4,7 @@ description: "Para configurar la protección, la clasificación y el etiquetado,
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 055470948a1bf21d4ee1ee83f345f49a98c1bf31
+ms.sourcegitcommit: 5d1a5e3b85d5450bcb2064a6c3b95e6ad802eea3
+ms.openlocfilehash: 808f72be7c5b6a1f18a06ecefdfdf7fbf6febff6
 
 
 ---
@@ -31,11 +31,11 @@ Para configurar la directiva de Azure Information Protection:
 
 2. Vaya a la hoja **Azure Information Protection**: por ejemplo, en el menú del centro, haga clic en **Más servicios** y comience a escribir **Information Protection** en el cuadro Filtro. De los resultados, seleccione **Azure Information Protection**. 
 
-    A continuación, verá la hoja **Azure Information Protection** donde puede configurar la directiva de Azure Information Protection que contiene los siguientes elementos:
-
-    - Título e información sobre herramientas de la barra de Information Protection que ven los usuarios en sus aplicaciones de Office.
+    Luego verá la hoja **Azure Information Protection**, que abre automáticamente la hoja de la directiva global de Information Protection que obtienen todos los usuarios. Contiene los siguientes elementos que puede configurar:
 
     - Etiquetas que permiten a los usuarios clasificar documentos y correos electrónicos.
+
+    - Título e información sobre herramientas de la barra de Information Protection que ven los usuarios en sus aplicaciones de Office.
 
     - La opción para exigir clasificación cuando los usuarios guarden documentos y envíen correos electrónicos.
 
@@ -43,6 +43,7 @@ Para configurar la directiva de Azure Information Protection:
 
     - La opción para pedir a los usuarios que proporcionen un motivo cuando seleccionen una etiqueta con un nivel de confidencialidad inferior al original.
 
+    - La opción para proporcionar un vínculo de ayuda personalizado para los usuarios.
 
 Azure Information Protection viene con una [directiva predeterminada](configure-policy-default.md), que contiene las etiquetas **Personal**, **Público**, **Interno**, **Confidencial** y **Secreto**. Puede utilizar las etiquetas predeterminadas sin cambios, o puede personalizarlas. También puede eliminarlas y crear otras nuevas.
 
@@ -58,7 +59,7 @@ Use la siguiente información como ayuda para configurar la directiva de Azure I
 
 - [Directiva predeterminada de Azure Information Protection](configure-policy-default.md)
 
-- [Configuración global de directivas](configure-policy-settings.md)
+- [Configuración de directivas](configure-policy-settings.md)
 
 - [Creación de una nueva etiqueta](configure-policy-new-label.md)
 
@@ -72,6 +73,8 @@ Use la siguiente información como ayuda para configurar la directiva de Azure I
 
 - [Configuración de las condiciones para la clasificación automática y recomendada](configure-policy-classification.md)
 
+- [Configuración de la directiva para usuarios específicos mediante directivas de ámbito](configure-policy-scope.md)
+
 ## <a name="next-steps"></a>Pasos siguientes
 
 Para ver un ejemplo de cómo personalizar la directiva predeterminada y ver el comportamiento resultante en una aplicación de Office, pruebe el [tutorial de inicio rápido de Azure Information Protection](../get-started/infoprotect-quick-start-tutorial.md).
@@ -79,6 +82,6 @@ Para ver un ejemplo de cómo personalizar la directiva predeterminada y ver el c
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO1-->
 
 
