@@ -11,11 +11,11 @@ Este paso es opcional, pero a la mayoría de las personas les gusta saber si se 
 
 ![Capturas de pantalla del tutorial de Azure RMS](../media/AzRMS_Tutorial_5_Screenshots.png)
 
-#### Para hacer un seguimiento de un documento protegido
+#### <a name="to-track-your-protected-document"></a>Para hacer un seguimiento de un documento protegido
 
 1.  En Outlook, en la pestaña **Inicio** del grupo **RMS** , haga clic en **Hacer seguimiento de uso**.
 
-2.  Si ve la página **Proteger y compartir en sus términos** , haga clic en **Iniciar sesión** y proporcione su nombre de usuario y contraseña de nuevamente.
+2.  Si ve la página **Proteger y compartir en sus términos**, haga clic en **Iniciar sesión** y proporcione su nombre de usuario y contraseña nuevamente.
 
 3.  En la página **Sus documentos compartidos**, verá el documento que adjuntó al correo electrónico, **Confidential.docx**. En este punto, es el único archivo que aparece, pero a medida que comparta más documentos protegidos, la lista aumentará.
 
@@ -29,17 +29,17 @@ Puede volver a este sitio para realizar un seguimiento de más actividad relacio
 
 |Si desea obtener más información|Información adicional|
 |--------------------------------|--------------------------|
-|Todas las instrucciones para realizar el seguimiento de los documentos   →|[Realizar un seguimiento de los documentos o revocarlos con la aplicación de uso compartido RMS](../rms-client/sharing-app-track-revoke.md)|
-|Vídeo de dos minutos en el que se explica y muestra el seguimiento de documentos   →|[Revocación y seguimiento de documentos de Azure RMS](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation)|
-|Para la solución de problemas y las preguntas de los clientes   →|[Preguntas más frecuentes sobre seguimiento de documentos](https://technet.microsoft.com/dn947488)|
+|Todas las instrucciones para realizar el seguimiento de los documentos   →|[Seguimiento y revocación de documentos cuando se utiliza la aplicación RMS sharing](../rms-client/sharing-app-track-revoke.md)|
+|Vídeo de dos minutos en el que se explica y muestra el seguimiento de documentos   →|[Azure RMS Document Tracking and Revocation](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation) (Revocación y seguimiento de documentos de Azure RMS)|
+|Para la solución de problemas y las preguntas de los clientes   →|[FAQ for Document Tracking](https://technet.microsoft.com/dn947488) (Preguntas más frecuentes sobre seguimiento de documentos)|
 
-## Pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 En este tutorial se repasó un caso de cómo Azure RMS puede ayudar a proteger los datos. Para ver otros usos comunes, consulte [Azure RMS en acción](../understand-explore/what-admins-users-see.md). Hay otras secciones en este artículo que también pueden ser útiles, por ejemplo, la que explica cómo funciona Azure RMS y qué problemas empresariales puede resolver.
 
 Si está listo para comenzar a implementar Azure RMS, consulte [Plan para la implementación de Azure Rights Management](../plan-design/deployment-roadmap.md) para ver los pasos de implementación y los vínculos con instrucciones de procedimiento.
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

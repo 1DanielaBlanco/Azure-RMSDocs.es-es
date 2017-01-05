@@ -11,7 +11,7 @@ Cuando hacen clic en el vínculo, este los lleva a las instrucciones para instal
 
 ![Capturas de pantalla del tutorial de RM](../media/AzRMS_Tutorial_4_Screenshots.png)
 
-#### Para ver los datos adjuntos del documento protegido
+#### <a name="to-view-the-protected-document-attachment"></a>Para ver los datos adjuntos del documento protegido
 
 1.  Debido a que Azure Rights Management protegió un documento de Word, hay dos elementos adjuntos en el mensaje de correo electrónico. Estos son en realidad dos versiones del mismo archivo, pero con extensiones de nombre de archivo diferentes. Abra la versión que tiene la extensión de nombre de archivo **.ppdf** (**Confidential.ppdf**).
 
@@ -27,12 +27,12 @@ Ahora que el destinatario ha abierto el archivo adjunto y lo ha enviado de forma
 
 |Si desea obtener más información|Información adicional|
 |--------------------------------|--------------------------|
-|Instrucciones completas para ver archivos protegidos con Azure Rights Management   →|[Ver y usar archivos que han sido protegidos con Rights Management](../rms-client/sharing-app-view-use-files.md)|
-|Acerca de la suscripción gratuita, RMS para usuarios   →|[RMS para usuarios y Azure Rights Management](../understand-explore/rms-for-individuals.md)|
-|Acerca de las dos versiones del archivo que ve adjunto al mensaje de correo electrónico   →|[¿Qué es el archivo .ppdf que se crea automáticamente?](../rms-client/sharing-app-dialog-box.md)|
+|Instrucciones completas para ver archivos protegidos con Azure Rights Management   →|[Ver y usar los archivos protegidos por Rights Management](../rms-client/sharing-app-view-use-files.md)|
+|Acerca de la suscripción gratuita, RMS para usuarios   →|[RMS para individuos y Azure Rights Management](../understand-explore/rms-for-individuals.md)|
+|Acerca de las dos versiones del archivo que ve adjunto al mensaje de correo electrónico   →|[¿Qué es ese archivo .ppdf que se crea automáticamente?](../rms-client/sharing-app-dialog-box.md)|
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 
