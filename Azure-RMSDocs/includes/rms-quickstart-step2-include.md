@@ -6,7 +6,7 @@ Esta aplicación se descarga de forma gratuita y ofrece una instalación con scr
 
 ![Capturas de pantalla de instalación de RMS](../media/AzRMS_Tutorial_2_Screenshots.png)
 
-#### Para descargar e instalar la aplicación Rights Management sharing
+#### <a name="to-download-and-install-the-rights-management-sharing-application"></a>Para descargar e instalar la aplicación Rights Management sharing
 
 1.  Vaya a la página de [Microsoft Rights Management](http://go.microsoft.com/fwlink/?LinkId=303970) en el sitio web de Microsoft.
 
@@ -22,11 +22,11 @@ Ya está listo para empezar a proteger los archivos que contienen la informació
 
 |Si desea obtener más información|Información adicional|
 |--------------------------------|--------------------------|
-|Acerca de una instalación local de la aplicación de uso compartido Rights Management para Windows y las instrucciones de usuario   →|[Guía de usuario de la aplicación de uso compartido Rights Management](../rms-client/sharing-app-user-guide.md)|
-|Acerca de la instalación con scripts de la aplicación de uso compartido Rights Management para Windows y más información técnica   →|[Guía de administrador de la aplicación de uso compartido Rights Management](../rms-client/sharing-app-admin-guide.md)|
+|Acerca de una instalación local de la aplicación de uso compartido Rights Management para Windows y las instrucciones de usuario   →|[Guía de usuario de la aplicación Rights Management sharing](../rms-client/sharing-app-user-guide.md)|
+|Acerca de la instalación con scripts de la aplicación de uso compartido Rights Management para Windows y más información técnica   →|[Guía del administrador de la aplicación Rights Management sharing](../rms-client/sharing-app-admin-guide.md)|
 |Para comprender la diferencia entre la protección nativa y la protección genérica   →|[¿Cuál es la diferencia entre la protección genérica y la protección incorporada (nativa)?](../rms-client/sharing-app-dialog-box.md)|
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 
