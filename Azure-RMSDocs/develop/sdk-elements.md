@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4e96ba043584c5d8c140d6804c72cf63362f58c5
-ms.openlocfilehash: a251723b6c42058091d57067724e89a1816bcaa1
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 6443c1955db5ab25caea349575cb376a6ce8dac2
 
 
 ---
@@ -48,14 +48,10 @@ Rights Management Services SDK 2.1 incluye los siguientes archivos, instalados e
 |Msipc.lib|\lib\x64|Biblioteca con la que vincular cuando se usa RMS SDK 2.1 para crear aplicaciones x64.|
 |Msipc_s.lib|\lib\x64|Proporciona el punto de entrada para [IpcInitialize](https://msdn.microsoft.com/library/jj127295.aspx) para las aplicaciones x64.|
 |Genmanifest.exe|\tools|Genera un manifiesto para su uso durante el desarrollo de una aplicación habilitada para RMS.|
- 
 
- 
-
- 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

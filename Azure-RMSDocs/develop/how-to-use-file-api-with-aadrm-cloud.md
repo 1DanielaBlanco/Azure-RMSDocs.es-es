@@ -15,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7df62371ba4a2eea0227c731cf90b3454993f533
-ms.openlocfilehash: 28b85313e278455391040797ea2886bd9247abe2
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 9431ae301ea91b71287c6a8462cf5fee42b5b71a
 
 
 ---
 
-# <a name="howto-enable-your-service-application-to-work-with-cloud-based-rms"></a>Habilitación de la aplicación de servicio para que funcione con RMS basado en la nube
+# <a name="how-to-enable-your-service-application-to-work-with-cloud-based-rms"></a>Habilitación de la aplicación de servicio para que funcione con RMS basado en la nube
 
 En este tema se describe cómo configurar la aplicación de servicio para que use Azure Rights Management. Para más información, consulte [Introducción a Azure Rights Management](https://technet.microsoft.com/library/jj585016.aspx).
 
@@ -179,12 +179,10 @@ Ha completado todos los pasos necesarios para que la aplicación pueda usar Azur
 * [IpcfEncrcyptFile](https://msdn.microsoft.com/library/dn133059.aspx)
 * [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx)
 * [IpcCreateLicenseFromTemplateID](https://msdn.microsoft.com/library/hh535257.aspx)
- 
 
- 
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 

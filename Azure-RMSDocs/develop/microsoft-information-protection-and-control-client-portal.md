@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 20699fe6a0f5d1e989ee767a5710a3272718f064
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: d06c0e4c6c6fbde103752d45958181754de2f8a6
 
 
 ---
@@ -35,7 +35,7 @@ Para más información acerca de esta tecnología, consulte nuestra [esquina del
 
 Para obtener respuestas a las preguntas más frecuentes, consulte la sección de los desarrolladores de nuestras [preguntas más frecuentes de RMS](http://aka.ms/adrmsfaq )
 
-### <a name="runtime-requirements"></a>Requisitos de tiempo de ejecución
+### <a name="run-time-requirements"></a>Requisitos de tiempo de ejecución
 
 Para más información sobre los requisitos de tiempo de ejecución para un elemento de programación determinado, consulte la sección Requisitos del tema de referencia para ese elemento.
 
@@ -54,12 +54,10 @@ Para más información sobre los requisitos de tiempo de ejecución para un elem
 * [Página de descarga de RMS SDK 2.1](http://www.microsoft.com/en-us/download/details.aspx?id=38397)
 * [Rincón del desarrollador de RMS](http://blogs.msdn.com/b/rms/archive/2012/05/31/official-release-of-ad-rms-sdk-2-0-and-ad-rms-client-2-0.aspx)
 * [Preguntas más frecuentes sobre RMS](http://aka.ms/adrmsfaq )
- 
 
- 
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

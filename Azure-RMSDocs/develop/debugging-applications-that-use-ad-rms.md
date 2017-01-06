@@ -15,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 789c93b6d7ac72ebe1df04300f2885ca2aa23a06
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: da5a9fa1a2c2eaccb6768914a0c425983b14fdbe
 
 
 ---
 
-# <a name="howto-debug-a-rightsenabled-application"></a>Depuración de una aplicación con derechos habilitados
+# <a name="how-to-debug-a-rights-enabled-application"></a>Depuración de una aplicación con derechos habilitados
 
 En el siguiente tema se muestra cómo depurar la aplicación y utilizar el registro de eventos de Windows.
 
@@ -66,16 +66,9 @@ Por ejemplo, el siguiente comando habilitará el registro de eventos de MSIPC y 
 
 **Nota:** En el Visor de eventos de Windows Event Viewer, en el menú **Ver**, seleccione **Mostrar registros analíticos y de depuración** para que se muestre el registro MSIPC Debug.
 
- 
-
-## <a name="related-topics"></a>Temas relacionados
-
- 
-
- 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

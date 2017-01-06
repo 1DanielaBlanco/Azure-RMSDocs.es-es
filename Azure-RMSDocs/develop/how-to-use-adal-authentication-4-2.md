@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 0bea42f0de08dc521828ccfe3cbff85e32c74aca
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 9a777b9a13c5ecff3083f4552a8c81f4e42c5cb2
 
 
 ---
@@ -61,8 +61,9 @@ Aquí se muestra un recorte de código del ejemplo más grande del código de cl
 - [MSIPCSampleApp](https://github.com/AzureAD/rms-sdk-ui-for-android/tree/master/samples/MsipcSampleApp)
 - [Configuración de Azure RMS para la autenticación ADAL](adal-auth.md)
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

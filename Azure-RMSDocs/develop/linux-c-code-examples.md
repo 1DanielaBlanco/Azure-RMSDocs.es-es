@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: cb0ce6cc8f4740ffc04b36b02392bed2c5f5490c
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: ca3ec0fdde3b8aa2eeebf056c5e155daf79573b0
 
 
 ---
@@ -404,7 +404,7 @@ Los siguientes fragmentos de código pertenecen a las aplicaciones de ejemplo *r
     ConvertToPFileUsingPolicy(policy, inStream, fileExt, outStream);
     
 
-## <a name="workerthread-a-supporting-method"></a>WorkerThread - un método auxiliar
+## <a name="workerthread---a-supporting-method"></a>WorkerThread - un método auxiliar
 
 
 El método *WorkerThread()* se invoca en dos de los escenarios de ejemplo anteriores (**Crear un flujo de archivos protegidos** y **Protege un archivo con una directiva determinada**) de la siguiente manera:
@@ -591,9 +591,9 @@ Descripción: se puede establecer la ruta de acceso de caché o usar el valor pr
 
 **Nota**  Cualquiera de los métodos de la biblioteca de autenticación puede generar **rmsauth::Exception**.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

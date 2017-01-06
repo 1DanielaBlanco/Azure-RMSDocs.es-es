@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: b369c480cc9841a7c8d92f95af3319e0e49f43d0
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: bde72c5da6ae30a78221d226f650285a9c4fc83e
 
 
 ---
@@ -33,14 +33,10 @@ En los temas siguientes se muestra cómo se va a configurar su entorno de desarr
 |[Windows Phone](windows-phone-apps.md)|Las aplicaciones de Windows Phone pueden usar MS RMS SDK 4.2 para habilitar la protección de información integrada en su aplicación mediante Azure Active Directory Rights Management (AAD RM).|
 |[Tienda Windows](winrt-sdk.md)|Las aplicaciones de la Tienda Windows pueden usar MS RMS SDK 4.2 para habilitar la protección de información integrada en su aplicación mediante Azure Active Directory Rights Management (AAD RM).|
 
- 
 
- 
-
- 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 
