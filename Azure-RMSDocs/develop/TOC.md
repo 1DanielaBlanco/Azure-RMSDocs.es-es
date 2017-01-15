@@ -67,6 +67,6 @@
 #### [Códigos de error](https://msdn.microsoft.com/library/hh535248.aspx)
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 
