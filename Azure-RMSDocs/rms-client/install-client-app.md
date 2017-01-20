@@ -4,7 +4,7 @@ description: "Instrucciones para que los usuarios instalen el cliente de Azure I
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 01/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1107f484f204e64d76c389daef4d9decbfbb20e8
-ms.openlocfilehash: f4f2af8e11250c23cb30f60d2cb9f3fe60df316b
+ms.sourcegitcommit: 22af60687ad030e686ba843ced6d450487353a0e
+ms.openlocfilehash: 72266181c5334ed7e03b2022df61c4065f1c3ac7
 
 
 ---
@@ -25,7 +25,13 @@ ms.openlocfilehash: f4f2af8e11250c23cb30f60d2cb9f3fe60df316b
 
 **[Esta versión del cliente está en versión preliminar y sujeta a cambios.]**
 
-Si el administrador no instala el cliente de Azure Information Protection para los usuarios, estos pueden hacerlo por su cuenta si son administradores locales del equipo.
+Si el administrador no instala el cliente de Azure Information Protection para los usuarios, estos pueden hacerlo por su cuenta. Debe ser administrador local del equipo para instalar este cliente. 
+
+### <a name="office-2010-only"></a>Solo para Office 2010
+
+Cuando se utiliza esta versión de Office, el cliente de Azure Information Protection debe establecer las claves del Registro que requieren permisos de administrador: 
+
+Siga las instrucciones para descargar e instalar el cliente y, a continuación, siga las instrucciones de la siguiente sección para Office 2010.
 
 ## <a name="to-download-and-install-the-azure-information-protection-client"></a>Para descargar e instalar el cliente de Azure Information Protection
 
@@ -41,14 +47,26 @@ Si el administrador no instala el cliente de Azure Information Protection para l
 
 4. Si se le pregunta si desea continuar, haga clic en **Sí** y espere a que finalice la instalación.
 
-3. Haga clic en **Cerrar** y antes de empezar a usar el cliente de Azure Information Protection, siga estas recomendaciones:
+3. Haga clic en **Cerrar**. Antes de empezar a usar el cliente de Azure Information Protection, siga estas recomendaciones:
 
-    - Si su equipo ejecuta Office 2010, reinicie el equipo.
+    - Si su equipo ejecuta Office 2010, reinicie el equipo y, a continuación, vaya a la sección siguiente para proceder con el paso final.
     
-    - Para otras versiones de Office, reinicie todas las aplicaciones de Office y todas las instancias del Explorador de archivos.
+    - Para otras versiones de Office, reinicie todas las aplicaciones de Office y todas las instancias del Explorador de archivos. La instalación está completa y ahora puede usar el cliente para etiquetar y proteger sus documentos y correos electrónicos.
 
 > [!NOTE]
 > Si tiene Windows 7 SP1, el cliente de Azure Information Protection necesita una actualización específica: [KB 2533623](https://support.microsoft.com/en-us/kb/2533623). Si su equipo necesita esta actualización pero no está instalada, al intentar usar el cliente verá un mensaje que dice que antes de poder usar todas las características del cliente de Azure Information Protection es necesario instalar esta actualización.
+
+### <a name="installing-the-azure-information-protection-client-with-office-2010"></a>Instalación del cliente de Azure Information Protection con Office 2010
+
+Una vez instalado el cliente de Azure Information Protection siguiendo las instrucciones anteriores:
+
+1. Abra Microsoft Word. Si es la primera vez que ejecuta una aplicación de Office 2010 después de haber instalado el cliente de Azure Information Protection, verá un cuadro de diálogo de **Microsoft Azure Information Protection**. En este cuadro de diálogo se indica que se necesitan las credenciales de administrador para completar el proceso de inicio de sesión.
+
+2. En el cuadro de diálogo **Microsoft Azure Information Protection**, haga clic en **Aceptar**.
+
+2. Si ve un cuadro de diálogo **Control de acceso de usuarios**, haga clic en **Sí** para que el cliente de Azure Information Protection pueda actualizar el Registro.
+
+La instalación está completa y puede utilizar Azure Information Protection para etiquetar y proteger sus documentos y correos electrónicos.
 
 ## <a name="other-instructions"></a>Otras instrucciones
 Para obtener instrucciones sobre procedimientos, consulte las siguientes secciones de la guía de usuario de Azure Information Protection:
@@ -58,9 +76,10 @@ Para obtener instrucciones sobre procedimientos, consulte las siguientes seccion
 ## <a name="additional-information-for-administrators"></a>Información adicional para los administradores
 [Instalación del cliente de Azure Information Protection](info-protect-client.md)
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 
