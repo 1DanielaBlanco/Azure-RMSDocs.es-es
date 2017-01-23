@@ -15,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 47f9cf725b864ee22afc7605702992b08cb686dc
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: a0192d8210c8163a298cb7da8eff62e4eb9a87ad
 
 
 ---
 
-# <a name="howto-install-configure-and-test-with-an-rms-server"></a>Instalación, configuración y prueba con un servidor RMS
+# <a name="how-to-install-configure-and-test-with-an-rms-server"></a>Instalación, configuración y prueba con un servidor RMS
 
 En este tema se explica cómo conectar con un servidor RMS o Azure RMS para probar la aplicación con derechos habilitados.
  
@@ -105,12 +105,9 @@ Los siguientes pasos le guiarán en la configuración del servidor de RMS e incl
           MSIPC
             ```
 
- 
-
- 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

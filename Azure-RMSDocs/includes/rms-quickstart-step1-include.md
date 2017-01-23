@@ -8,7 +8,7 @@ Aunque es posible que tenga una suscripción que admita la Azure Rights Manageme
 
 ![Portal de Azure clásico](../media/AzRMS_Tutorial_1_Screenshots.png)
 
-#### Para activar Rights Management desde el centro de administración de Office 365
+#### <a name="to-activate-rights-management-from-the-office-365-admin-center"></a>Para activar Rights Management desde el centro de administración de Office 365
 
 1.  Vaya al [portal de Office 365](https://portal.office.com/) e inicie sesión con su cuenta profesional o educativa.
 
@@ -31,7 +31,7 @@ Ahora debería ver el texto **Rights Management está activada** y la opción pa
 
 Por el momento, no haga clic en **Características avanzadas**. Esto le llevará al Portal de Azure clásico, donde podrá configurar las plantillas, que no son necesarias en este tutorial. En su lugar, puede cerrar el centro de administración de Office 365.
 
-#### Para activar Rights Management desde el portal de Azure
+#### <a name="to-activate-rights-management-from-the-azure-portal"></a>Para activar Rights Management desde el portal de Azure
 
 1.  Vaya al [Portal de Azure clásico](http://go.microsoft.com/fwlink/p/?LinkID=275081) e inicie sesión.
 
@@ -55,6 +55,6 @@ Aunque las plantillas personalizadas no se incluyen aquí, probablemente desee c
 |Acerca de las plantillas predeterminadas y del modo de crear nuevas plantillas personalizadas   →|[Configuración de plantillas personalizadas para Azure Rights Management](../deploy-use/create-template.md)|
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

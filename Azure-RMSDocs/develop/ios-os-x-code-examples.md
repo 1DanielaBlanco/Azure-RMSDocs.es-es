@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: faa1f33d1151a2d4700cc64556510994c708a414
-ms.openlocfilehash: ef311877b1deb71a62d3554e513ef6fdab443c28
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: cd2436b20a489835aec650c2c5a19d0b0cc50eff
 
 
 ---
@@ -29,7 +29,7 @@ Este tema le presentará los elementos de código importantes para la versión d
 
 
 
-## <a name="using-the-microsoft-rights-management-sdk-42-key-scenarios"></a>Uso de Microsoft Rights Management SDK 4.2: escenarios clave
+## <a name="using-the-microsoft-rights-management-sdk-42---key-scenarios"></a>Uso de Microsoft Rights Management SDK 4.2: escenarios clave
 
 
 A continuación se muestran ejemplos de código **Objective C** desde una aplicación de ejemplo más grande que representa los escenarios de desarrollo importantes para la orientación de este SDK. Estos muestran; uso del formato de archivo protegido de Microsoft que se reconoce como archivo protegido, el uso de formatos de archivo protegido personalizados y el uso de controles de interfaz de usuario personalizados.
@@ -213,7 +213,7 @@ Este escenario comienza con la obtención de una lista de plantillas, [MSTemplat
             }];
          }
 
-### <a name="scenario-create-a-custom-protected-file-using-a-custom-adhoc-policy"></a>Escenario: Creación de un archivo protegido personalizado mediante una directiva personalizada (ad hoc)
+### <a name="scenario-create-a-custom-protected-file-using-a-custom-ad-hoc-policy"></a>Escenario: Creación de un archivo protegido personalizado mediante una directiva personalizada (ad hoc)
 
 
 -   **Paso 1**: con una dirección de correo electrónico proporcionada por el usuario, creación de un descriptor de la directiva
@@ -280,8 +280,9 @@ Este escenario comienza con la obtención de una lista de plantillas, [MSTemplat
             }];
           }
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

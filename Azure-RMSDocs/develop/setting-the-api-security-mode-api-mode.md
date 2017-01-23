@@ -15,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: f7acef7fa69c836c5d57d8c1705007f919a9dbf2
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 49e87a8bf7ec5e628cf76c6ec82df2bb1b0835a3
 
 
 ---
 
-# <a name="howto-set-the-api-security-mode"></a>Establecimiento del modo de seguridad de API
+# <a name="how-to-set-the-api-security-mode"></a>Establecimiento del modo de seguridad de API
 
 Puede elegir el modo de seguridad en que se ejecuta la aplicación de la API de archivo con la función [IpcSetGlobalProperty](https://msdn.microsoft.com/library/hh535270.aspx).
 
@@ -36,12 +36,10 @@ Para más información sobre el *modo servidor*, consulte [Tipos de aplicación]
 * [Tipos de aplicación](application-types.md)
 * [Valores del modo de API](https://msdn.microsoft.com/library/hh535236.aspx)
 * [IpcSetGlobalProperty](https://msdn.microsoft.com/library/hh535270.aspx)
- 
 
- 
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

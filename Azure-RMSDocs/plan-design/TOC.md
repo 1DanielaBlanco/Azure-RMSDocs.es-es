@@ -15,9 +15,9 @@
 ## [Preparación de Azure Information Protection](prepare.md)
 # [Implementación y uso del servicio](/information-protection/deploy-use/activate-service)
 # [Implementación y uso del cliente](/information-protection/rms-client/use-client)
-# [Desarrollo y personalización de aplicaciones](/information-protection/develop/developers-guide)
+# [Desarrollar y personalizar aplicaciones](/information-protection/develop/developers-guide)
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Jan17_HO2-->
 
 

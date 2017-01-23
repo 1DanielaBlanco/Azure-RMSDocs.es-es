@@ -15,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 37d9906b5df00b6ec6eeb6739766c00bd5cef37b
-ms.openlocfilehash: 0ad53fa82f288153f259870b0022378815f097a8
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: ca54dd3ceece96c03de140fcfc3202afdd94796a
 
 
 ---
 
-# <a name="howto-work-with-encryption-settings"></a>Trabajo con la configuración de cifrado
+# <a name="how-to-work-with-encryption-settings"></a>Trabajo con la configuración de cifrado
 
 En este tema se le brinda información relacionada con los paquetes de cifrado y se muestran algunos recortes de código para su uso.
 
@@ -63,7 +63,7 @@ No se requieren cambios en el código, *AES 256* CBC4K es el valor predeterminad
                                     &amp;pLicenseHandle);
 
 
-## <a name="protect-files-with-aes128-cbc4k"></a>Protección de archivos con AES-128 CBC4K
+## <a name="protect-files-with-aes-128-cbc4k"></a>Protección de archivos con AES-128 CBC4K
 
     C++
 
@@ -80,7 +80,7 @@ No se requieren cambios en el código, *AES 256* CBC4K es el valor predeterminad
                            &amp;dwEncryptionMode);
 
 
-## <a name="protect-files-with-aes128-ecb-deprecated-algorithms"></a>Protección de archivos con AES-128 ECB (algoritmos desusados)
+## <a name="protect-files-with-aes-128-ecb-deprecated-algorithms"></a>Protección de archivos con AES-128 ECB (algoritmos desusados)
 
 Este ejemplo también muestra la nueva forma de admitir *algoritmos desusados*.
 
@@ -98,12 +98,10 @@ Este ejemplo también muestra la nueva forma de admitir *algoritmos desusados*.
                            IPC_LI_PREFERRED_ENCRYPTION_PACKAGE,
                            &amp;dwEncryptionMode);
 
- 
 
- 
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 
