@@ -4,15 +4,15 @@ description: Identify the limitations, prerequisites, and recommendations if you
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 01/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
 translationtype: Human Translation
-ms.sourcegitcommit: 4fcfcebc7da5a22a91911d70d4d787dc525d3485
-ms.openlocfilehash: e4ed4513728180179876ff49797f96e9f0f785b3
+ms.sourcegitcommit: 22af60687ad030e686ba843ced6d450487353a0e
+ms.openlocfilehash: 66c19b296ce170d0f7f5317c87bee532edd9bb78
 
 
 ---
@@ -66,6 +66,8 @@ Compruebe que la implementación de AD RMS cumple los siguientes requisitos para
     
     - [Modo criptográfico 2](https://technet.microsoft.com/library/hh867439.aspx): puede confirmar la versión del modo criptográfico del clúster de AD RMS y su estado general con la [herramienta RMS Analyzer](https://www.microsoft.com/en-us/download/details.aspx?id=46437).   
     
+    - Un punto de conexión de servicio (SCP) no registrado en Active Directory: no se utiliza ningún SCP cuando se usa la protección de AD RMS con Azure Information Protection. Si tiene un registrado un SCP para la implementación de AD RMS, debe quitarlo para que la [detección de servicios](../rms-client/client-deployment-notes.md#rms-service-discovery) se realice correctamente para la protección de Azure Rights Management.
+    
     - Los servidores de AD RMS están configurados para usar SSL/TLS con un certificado X.509 válido que sea de confianza para los clientes que se conecten a este: es necesario para entornos de producción, pero no es obligatorio para fines de pruebas o evaluación.
     
     - Plantillas de permisos configuradas.
@@ -100,8 +102,9 @@ Para obtener más información sobre esta característica en vista previa, consu
 
 Para configurar una etiqueta para la protección de AD RMS, consulte [Configuración de una etiqueta para aplicar protección de Rights Management](../deploy-use/configure-policy-protection.md). 
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 

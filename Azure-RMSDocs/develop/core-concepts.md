@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 2ac4ca3e505d78758a01516f66f1e5f4ff4b17b6
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 7adaf60ffc79edffc38a070d451c1f65c8a41300
 
 
 ---
@@ -32,14 +32,9 @@ Los temas siguientes tienen como fin ayudarle en el proceso de diseño en el des
 - [How to use document tracking (Procedimiento para usar el seguimiento de documentos)](how-to-use-document-tracking.md): el uso de la característica de seguimiento de documentos requiere algunos conocimientos sencillos sobre la administración de los metadatos asociados y el registro en el servicio.
 - [Condiciones](terms.md): colección de definiciones de terminología específicas de Rights Management Services.
 
- 
-
- 
-
- 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Jan17_HO1-->
 
 

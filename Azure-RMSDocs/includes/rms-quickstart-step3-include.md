@@ -6,11 +6,11 @@ A continuación, estará listo para compartir de forma segura este documento por
 
 ![Recurso compartido de Azure RMS por capturas de pantalla de correo electrónico](../media/AzRMS_Tutorial_3_Screenshots.png)
 
-#### Para compartir de forma segura el documento por correo electrónico
+#### <a name="to-safely-share-your-document-by-email"></a>Para compartir de forma segura el documento por correo electrónico
 
 1.  En Outlook, cree un mensaje nuevo y adjunte el archivo que acaba de crear.
 
-2.  En el cuadro **Para** , escriba una o más direcciones de correo electrónico empresarial. Asegúrese de especificar una dirección de correo electrónico empresarial, como **janetm@contoso.com** o **p.dover@fabrikam.com** porque, actualmente, Azure Rights Management no es compatible con las direcciones de correo electrónico personales que se usan en casa con el proveedor de Internet. No se preocupe por saber si la persona a la que envía el archivo también tiene Azure Rights Management o no.
+2.  En el cuadro **Para**, escriba una o más direcciones de correo electrónico empresariales. Asegúrese de especificar una dirección de correo electrónico empresarial, como **janetm@contoso.com** o **p.dover@fabrikam.com**, porque, actualmente, Azure Rights Management no es compatible con las direcciones de correo electrónico personales que se usan en casa con el proveedor de Internet. No se preocupe por saber si la persona a la que envía el archivo también tiene Azure Rights Management o no.
 
 3.  Escriba un asunto, como  **Documento confidencial** y, a continuación, escriba un mensaje breve para el correo electrónico, como **Lea este documento confidencial y no lo comparta con otros.**
 
@@ -38,10 +38,10 @@ Ahora que ha enviado el documento protegido, está listo para pedir a los destin
 
 |Si desea obtener más información|Información adicional|
 |--------------------------------|--------------------------|
-|Todas las instrucciones y los métodos alternativos para proteger los archivos que comparte por correo electrónico   →|[Proteger un archivo que comparte por correo electrónico mediante la aplicación de uso compartido Rights Management.](../rms-client/sharing-app-protect-by-email.md)|
-|Acerca de las opciones del cuadro de diálogo **Uso compartido seguro** →|[Opciones del cuadro de diálogo para la aplicación de uso compartido Rights Management](../rms-client/sharing-app-dialog-box.md)|
+|Todas las instrucciones y los métodos alternativos para proteger los archivos que comparte por correo electrónico   →|[Protección de un archivo que comparte por correo electrónico con la aplicación Rights Management sharing](../rms-client/sharing-app-protect-by-email.md)|
+|Acerca de las opciones del cuadro de diálogo **Uso compartido seguro** →|[Opciones del cuadro de diálogo para la aplicación Rights Management sharing](../rms-client/sharing-app-dialog-box.md)|
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jan17_HO1-->
 
 
