@@ -13,8 +13,8 @@ ms.assetid: 03cc8c6f-3b63-4794-8d92-a5df4cdf598f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6b1b134aa8a0c7ef7cded627a7d25df4a90e9faa
-ms.openlocfilehash: 811622757a4e44afb84ec2df84341ecbcd2e7a8f
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: d40a8b2062b0b8ccb2dd6115d179e45e64181798
 
 
 ---
@@ -63,15 +63,15 @@ El cliente RMS es compatible con los siguientes sistemas operativos:
 |Windows Server 2012 R2|Windows 8.1|
 |Windows Server 2012|Windows 8|
 |Windows Server 2008 R2|Windows 7 con SP1 como mínimo|
-|Windows Server 2008 (solo AD RMS)|Windows Vista con SP 2 como mínimo (solo AD RMS)|
+|Windows Server 2008 (solo AD RMS)|Windows Vista con SP&2; como mínimo (solo AD RMS)|
 
-### <a name="which-processors-or-platforms-support-the-rms-client"></a>¿Qué procesadores o plataformas son compatibles con el cliente RMS?
+### <a name="which-processors-or-platforms-support-the--rms-client"></a>¿Qué procesadores o plataformas son compatibles con el cliente RMS?
 El cliente RMS es compatible con plataformas informáticas x86 y x64.
 
-### <a name="where-is-the-rms-client-installed"></a>¿Donde está instalado el cliente RMS?
+### <a name="where-is-the--rms-client-installed"></a>¿Donde está instalado el cliente RMS?
 De forma predeterminada, el cliente RMS se instala en %ProgramFiles%\Active Directory Rights Management Services Client 2.<minor version number>.
 
-### <a name="what-files-are-associated-with-the-rms-client-software"></a>¿Qué archivos están asociados con el software cliente de RMS?
+### <a name="what-files--are-associated-with-the-rms-client-software"></a>¿Qué archivos están asociados con el software cliente de RMS?
 Los siguientes archivos se instalan como parte del software cliente de RMS:
 
 -   Msipc.dll
@@ -177,7 +177,7 @@ Para realizar la detección de servicios, el cliente RMS comprueba lo siguiente:
 
 > - Cuando un usuario inicia sesión desde una aplicación de Office, el nombre de usuario (y el dominio) de la autenticación se usan para identificar al inquilino de Azure Information Protection que se debe usar. En este caso, la configuración del registro no es necesaria y el SCP no se comprueba.
 
-### <a name="ad-rms-only-enabling-serverside-service-discovery-by-using-active-directory"></a>Solo AD RMS: habilitación de la detección de servicios de servidor mediante Active Directory
+### <a name="ad-rms-only-enabling-server-side-service-discovery-by-using-active-directory"></a>Solo AD RMS: habilitación de la detección de servicios de servidor mediante Active Directory
 Si la cuenta tiene privilegios suficientes (administradores de empresa y administrador local para el servidor de AD RMS), puede registrar automáticamente un punto de conexión de servicio (SCP) al instalar el servidor de clúster raíz de AD RMS. Si ya existe un SCP en el bosque, debe eliminarlo primero antes de registrar uno nuevo.
 
 Puede registrar y eliminar un SCP después de instalar AD RMS mediante el procedimiento siguiente. Antes de comenzar, asegúrese de que su cuenta disponga de los privilegios necesarios (administrador de empresa y administrador local para el servidor de AD RMS).
@@ -198,10 +198,10 @@ Puede registrar y eliminar un SCP después de instalar AD RMS mediante el proced
 
 5.  Seleccione la opción **Establecer SCP en el clúster de certificación actual** y,luego, haga clic en **Aceptar**.
 
-### <a name="enabling-clientside-service-discovery-by-using-the-windows-registry"></a>Habilitación de la detección de servicios del cliente con el Registro de Windows
+### <a name="enabling-client-side-service-discovery-by-using-the-windows-registry"></a>Habilitación de la detección de servicios del cliente con el Registro de Windows
 Como alternativa al uso de un SCP o en aquellos casos en los que no exista uno, puede configurar el Registro en el equipo cliente para que el cliente RMS pueda encontrar su servidor de AD RMS.
 
-#### <a name="to-enable-clientside-ad-rms-service-discovery-by-using-the-windows-registry"></a>Para habilitar la detección de servicios de AD RMS en el cliente mediante el Registro de Windows
+#### <a name="to-enable-client-side-ad-rms-service-discovery-by-using-the-windows-registry"></a>Para habilitar la detección de servicios de AD RMS en el cliente mediante el Registro de Windows
 
 1.  Abra el Editor del Registro de Windows, Regedit.exe:
 
@@ -258,9 +258,9 @@ En algunos casos, deberá redirigir el tráfico durante la detección de servici
 
 6.  Cierre el Editor del Registro.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Jan17_HO4-->
 
 

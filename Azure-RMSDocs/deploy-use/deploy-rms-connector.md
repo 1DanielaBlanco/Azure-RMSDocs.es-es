@@ -13,8 +13,8 @@ ms.assetid: 90e7e33f-9ecc-497b-89c5-09205ffc5066
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 386453578a5ea8eeb874d7f27badb8f041dda659
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: eaa1d7a0a74fa68f9bf1d15f348dbb45d14cee9a
 
 
 ---
@@ -36,7 +36,7 @@ El conector de RMS es un servicio de tamaño reducido que se instala en servidor
 ![Introducción a la arquitectura de conector RMS](../media/RMS_connector.png)
 
 
-### <a name="onpremises-servers-supported"></a>Servidores locales admitidos
+### <a name="on-premises-servers-supported"></a>Servidores locales admitidos
 
 El conector de RMS admite los siguientes servidores locales: Exchange Server, SharePoint Server y servidores de archivos que ejecutan Windows Server y usan la infraestructura de clasificación de archivos para clasificar y aplicar directivas en documentos de Office de una carpeta. 
 
@@ -50,7 +50,7 @@ Para obtener más información acerca de las versiones de estos servidores local
 
 Puede usar el conector RMS incluso si algunos de los usuarios se conectan a servicios en línea, en un escenario híbrido. Por ejemplo, los buzones de algunos usuarios usan Exchange Online y los buzones de otros usuarios usan Exchange Server. Después de instalar el conector RMS, todos los usuarios pueden proteger y consumir mensajes de correo electrónico y archivos adjuntos con Azure RMS, y la protección de la información funciona sin problemas entre las dos configuraciones de implementación.
 
-### <a name="support-for-customermanaged-keys-byok"></a>Compatibilidad con las claves administradas por los clientes (BYOK)
+### <a name="support-for-customer-managed-keys-byok"></a>Compatibilidad con las claves administradas por los clientes (BYOK)
 
 Si administra su propia clave de inquilino para Azure RMS, con el escenario Bring your own key (BYOK, Traiga su propia clave), el conector RMS y los servidores locales que la usan no tienen acceso al módulo de seguridad de hardware (HSM) que contiene la clave de inquilino. Esto se debe a que todas las operaciones criptográficas que utilizan la clave de inquilino se ejecutan en Azure RMS y no a nivel local.
 
@@ -97,7 +97,9 @@ El conector no comprueba automáticamente todos los [requisitos previos](deploy-
 
 Vaya al paso 1: [Instalación y configuración del conector de Azure Rights Management](install-configure-rms-connector.md).
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
-<!--HONumber=Nov16_HO1-->
+
+<!--HONumber=Jan17_HO4-->
 
 

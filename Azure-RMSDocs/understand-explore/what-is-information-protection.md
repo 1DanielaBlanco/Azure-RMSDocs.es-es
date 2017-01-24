@@ -11,8 +11,8 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
 translationtype: Human Translation
-ms.sourcegitcommit: dfcaa9a1fef0a4a2011f1385d849c4c2887a022e
-ms.openlocfilehash: ab8aa40f0ed3947264de9d07cd6fa7a7030a6964
+ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
+ms.openlocfilehash: c0ea97dc29855ad46271dac251c804ca602cee69
 
 
 ---
@@ -108,11 +108,9 @@ Configure y vea Azure Information Protection con nuestro [Tutorial de inicio rá
 
 ¿Conoce Azure Information Protection o Azure Rights Management por otro nombre? Consulte [nuestra lista de términos alternativos para el servicio](azure-rms-aka.md).
 
-## <a name="comments"></a>Comentarios
-
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

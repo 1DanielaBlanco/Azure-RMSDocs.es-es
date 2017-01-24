@@ -13,8 +13,8 @@ ms.assetid: 8a1b3e54-f788-4f84-b9d7-5d5079e50b4e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e5939bb469af198a74d81724c5417eb63db7732b
-ms.openlocfilehash: bf73a79218fa8dba2b90115d0c1573a29f791023
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 0af2ad5107cfa958e3309352304f6bdbee4f7316
 
 
 ---
@@ -192,9 +192,10 @@ Si necesita un registro más detallado para fines de diagnóstico, puede usar [D
 
 5.  Cuando haya capturado los seguimientos que necesita, revierta la línea en el paso 3 y detenga e inicie IIS de nuevo.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Jan17_HO4-->
 
 

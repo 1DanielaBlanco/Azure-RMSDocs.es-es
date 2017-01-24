@@ -13,8 +13,8 @@ ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 8d2fc307bb531ab434e0bc43a22f7403555ef03f
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: a5706c9cf8b81ec761865a800761c69584659578
 
 
 ---
@@ -69,11 +69,10 @@ ms.openlocfilehash: 8d2fc307bb531ab434e0bc43a22f7403555ef03f
 |desproteger|Quitar controles de administración de derechos de los archivos o mensajes de correo electrónico que usaban directivas de cifrado, identidad y control de acceso para ayudar a proteger los datos.|
 |licencia de uso|Certificado de cada documento que se concede a un usuario que abre un archivo o un mensaje de correo electrónico protegido mediante un servicio de administración de derechos. Este certificado contiene los derechos del usuario relativos al archivo o mensaje de correo electrónico y la clave de cifrado que se usó para cifrar el contenido, así como las restricciones de acceso adicionales definidas en la directiva del documento.|
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-
-
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

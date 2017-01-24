@@ -13,8 +13,8 @@ ms.assetid: 6751bd90-959f-4eba-91ed-6588ac983762
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f1fff17f76361f8236974c6aeb21ed317c7d9883
-ms.openlocfilehash: 08ca0de6802aa001e5e2bcf7637592c2ad68864d
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: aded487e9d7f7bc8341c7f6e1d6ac4e673b55c56
 
 
 ---
@@ -129,9 +129,10 @@ No se enumeran las versiones anteriores al 1 de enero de 2015.
 
 -   **Compatibilidad con varios dominios de correo electrónico dentro de su organización**: Si usa AD RMS y los usuarios de su organización tienen varios dominios de correo electrónico, esta actualización permite que los usuarios consuman contenido que protegieron los usuarios de la organización en otros dominios. Para más información, consulte la sección [Solo AD RMS: Compatibilidad con varios dominios de correo electrónico dentro de su organización](sharing-app-admin-guide.md#ad-rms-only-support-for-multiple-email-domains-within-your-organization) de la [Guía del administrador de la aplicación Microsoft Rights Management sharing](sharing-app-admin-guide.md).
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: b551c62d-5ac6-4359-85b3-90693e77b37f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0a8332cf2402139046ba4f1ca13c4b2bb9a333a1
-ms.openlocfilehash: 6f29595f87b3cb7aa57d7037bad96ddca5fc7ea0
+ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
+ms.openlocfilehash: d7b97a810e113cfeed1c115b8a75dba36f06745c
 
 
 ---
@@ -72,9 +72,11 @@ Para obtener más información sobre estas certificaciones externas, consulte el
 
 Para ver el aspecto de Azure RMS para los administradores y usuarios, consulte [Azure RMS en acción](what-admins-users-see.md).
 
-Si le interesa información más técnica sobre el funcionamiento de Azure RMS, consulte [¿Cómo funciona Azure RMS?](how-does-it-work.md) 
+Si le interesa información más técnica sobre el funcionamiento de Azure RMS, consulte [¿Cómo funciona Azure RMS?](how-does-it-work.md)
+
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

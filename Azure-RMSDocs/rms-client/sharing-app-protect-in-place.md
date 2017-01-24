@@ -13,13 +13,13 @@ ms.assetid: 33920329-5247-4f6c-8651-6227afb4a1fa
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 1b95c1bf1c747808c7baed97daa449f5c8bb234d
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 9ae44cf7beba0f4af3078eedeac352e9792d497c
 
 
 ---
 
-# <a name="protect-a-file-on-a-device-protect-inplace-by-using-the-rights-management-sharing-application"></a>Proteger un archivo en un dispositivo (proteger en contexto) mediante la aplicación para uso compartido de Rights Management.
+# <a name="protect-a-file-on-a-device-protect-in-place-by-using-the-rights-management-sharing-application"></a>Proteger un archivo en un dispositivo (proteger en contexto) mediante la aplicación para uso compartido de Rights Management.
 
 >*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 con SP1, Windows 8 y Windows 8.1*
 
@@ -28,7 +28,7 @@ Cuando se protege un archivo en contexto, se reemplaza el archivo sin protecció
 > [!TIP]
 > Si ve errores al intentar proteger archivos, consulte las [Preguntas más frecuentes sobre la aplicación para uso compartido de Microsoft Rights Management para Windows](http://go.microsoft.com/fwlink/?LinkId=303971).
 
-## <a name="to-protect-a-file-on-a-device-protect-inplace"></a>Para proteger un archivo en un dispositivo (proteger en contexto)
+## <a name="to-protect-a-file-on-a-device-protect-in-place"></a>Para proteger un archivo en un dispositivo (proteger en contexto)
 
 1.  En el Explorador de archivos, seleccione el archivo que desea proteger. Haga clic con el botón derecho, seleccione **Proteger con RMS** y luego **Proteger en contexto**. Por ejemplo:
 
@@ -60,13 +60,14 @@ Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de 
 
 -   [Ejemplos de uso de la aplicación RMS sharing](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [¿Qué quiere hacer?](sharing-app-user-guide.md#what-do-you-want-to-do)
+-   [¿Qué desea hacer?](sharing-app-user-guide.md#what-do-you-want-to-do)
 
 ## <a name="see-also"></a>Véase también
-[Guía de usuario de la aplicación Rights Management sharing](sharing-app-user-guide.md)
+[Guía de usuario de la aplicación de uso compartido Rights Management](sharing-app-user-guide.md)
+
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

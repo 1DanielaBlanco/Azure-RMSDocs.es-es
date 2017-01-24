@@ -4,7 +4,7 @@ description: "Cuando usa el servicio Azure Rights Management, se descargan de fo
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/12/2016
+ms.date: 01/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 2cfe5fd787811cae71bb08c458bd6767e4bc35e4
+ms.sourcegitcommit: 15bd23bb727937193cb51e732586d4c334357c04
+ms.openlocfilehash: 325c64b211ed52bdb11685af00507aef2aa85312
 
 
 ---
@@ -49,13 +49,13 @@ Debes efectuar este procedimiento cada vez que cambies una plantilla.
     1.  Especifique el nombre de usuario y la contraseña de Office 365:
 
         ```
-        $Cred = Get-Credential
+        $UserCredential = Get-Credential
         ```
 
     2.  Conecte con el servicio Exchange Online mediante la ejecución de los dos comandos siguientes:
 
         ```
-        $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell/ -Credential $Cred -Authentication Basic –AllowRedirection
+        $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
         ```
 
         ```
@@ -186,7 +186,9 @@ Si modifica el Registro de los equipos que ejecutan Office 2010, puede establece
 ## <a name="see-also"></a>Consulte también
 [Configuración de plantillas personalizadas para Azure Rights Management](configure-custom-templates.md)
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
-<!--HONumber=Dec16_HO1-->
+
+<!--HONumber=Jan17_HO4-->
 
 

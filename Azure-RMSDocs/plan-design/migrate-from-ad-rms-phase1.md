@@ -13,8 +13,8 @@ ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 750919e3d8be88a1a1028d83c89ece55ea4e8690
-ms.openlocfilehash: 65ab175da5c5ab74090bf6bdb88af766dc55e334
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 774ea4fe8bb5e0ae7335bb3c106b57393167ee39
 
 
 ---
@@ -29,7 +29,7 @@ Use la información siguiente para la fase 1 de la migración desde AD RMS a Azu
 ## <a name="step-1-download-the-azure-rights-management-administration-tool"></a>Paso 1: descargue la herramienta de administración de Azure Rights Management
 Vaya al Centro de descarga de Microsoft y descargue [Azure Rights Management Administration Tool](https://go.microsoft.com/fwlink/?LinkId=257721), que contiene el módulo de administración de Azure Rights Management para Windows PowerShell. Azure Rights Management (Azure RMS) es el servicio que ofrece la protección de datos para Azure Information Protection.
 
-Instale la herramienta. Para obtener instrucciones, vea [Instalación de Windows PowerShell para Azure Rights Management](../deploy-use/install-powershell.md).
+Instale la herramienta. Para obtener instrucciones, vea [Instalación de Windows PowerShell para Azure Rights Management](../deploy-use/install-powershell.md).
 
 > [!NOTE]
 > Si anteriormente ya ha descargado este módulo de Windows PowerShell, ejecute el comando siguiente para comprobar que su número de versión sea como mínimo 2.5.0.0: `(Get-Module aadrm -ListAvailable).Version`
@@ -222,9 +222,10 @@ Remove-PSDrive MyRmsAdmin -force
 ## <a name="next-steps"></a>Pasos siguientes
 Vaya a [Fase 2: Configuración del lado cliente](migrate-from-ad-rms-phase2.md).
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Jan17_HO4-->
 
 

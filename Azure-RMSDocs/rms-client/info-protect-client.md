@@ -223,6 +223,6 @@ Para comprobar la información de versión de lanzamiento para el cliente, consu
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

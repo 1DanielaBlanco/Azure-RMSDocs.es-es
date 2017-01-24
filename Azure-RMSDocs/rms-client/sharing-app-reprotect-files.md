@@ -14,8 +14,8 @@ ms.assetid: 5ac121b3-d7a0-40e4-8fe7-90bf4cf796f1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 531c75846fb88e6f1d9d802df19b275e12e0fdae
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: c0bfd99229e4d93c91fe8f9efafd887aa7562328
 
 
 ---
@@ -39,7 +39,7 @@ Por ejemplo, si otro usuario protegió el archivo mediante la aplicación Rights
 
 Si quiere quitar todos los permisos para que el archivo ya no está protegido, vea [Quitar la protección de un archivo](sharing-app-remove-protection.md).
 
-## <a name="to-reprotect-a-file-inplace"></a>Para volver a proteger un archivo local
+## <a name="to-re-protect-a-file-in-place"></a>Para volver a proteger un archivo local
 
 1.  En el Explorador de archivos, seleccione el archivo que desea proteger. Haga clic con el botón derecho, seleccione **Proteger con RMS** y luego **Proteger en contexto**. Por ejemplo:
 
@@ -72,7 +72,7 @@ Si quiere quitar todos los permisos para que el archivo ya no está protegido, v
 >     Al suscribirse, use la dirección de correo electrónico de su empresa en lugar de una dirección de correo electrónico personal. Si va a suscribirse porque le enviaron un archivo adjunto protegido por correo electrónico, use la misma dirección de correo electrónico que se usó para enviarle el mensaje de correo electrónico.
 > -   Para obtener más información, consulte [RMS for individuals and Azure Rights Management](../understand-explore/rms-for-individuals.md) (RMS para usuarios y Azure Rights Management).
 
-## <a name="to-reprotect-a-file-that-you-have-emailed"></a>Para volver a proteger un archivo que ha enviado por correo electrónico
+## <a name="to-re-protect-a-file-that-you-have-emailed"></a>Para volver a proteger un archivo que ha enviado por correo electrónico
 
 Si quiere cambiar los permisos de un archivo que ha enviado por correo electrónico:
 
@@ -90,13 +90,14 @@ Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de 
 
 -   [Ejemplos de uso de la aplicación RMS sharing](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [¿Qué quiere hacer?](sharing-app-user-guide.md#what-do-you-want-to-do)
+-   [¿Qué desea hacer?](sharing-app-user-guide.md#what-do-you-want-to-do)
 
 ## <a name="see-also"></a>Véase también
-[Guía de usuario de la aplicación Rights Management sharing](sharing-app-user-guide.md)
+[Guía de usuario de la aplicación de uso compartido Rights Management](sharing-app-user-guide.md)
+
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 
