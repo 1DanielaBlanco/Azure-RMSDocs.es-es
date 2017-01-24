@@ -13,8 +13,8 @@ ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: f89374ec327f51f3e8354aec57f0c0da9ddac585
+ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
+ms.openlocfilehash: 6bf3aa5e12da7faa8c1b7c0461e652693111c59a
 
 
 ---
@@ -39,9 +39,10 @@ RMS para usuarios es un ejemplo de una suscripción de autoservicio que es compa
 ## <a name="next-steps"></a>Pasos siguientes
 Vea [Cómo se registran los usuarios a RMS para individuos](rms-for-individuals-user-sign-up.md) para obtener instrucciones paso a paso y una introducción técnica de lo que sucede en segundo plano. 
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 
