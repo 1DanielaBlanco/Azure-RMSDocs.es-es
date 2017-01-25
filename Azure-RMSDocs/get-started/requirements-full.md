@@ -13,8 +13,8 @@ ms.assetid: 10cf9371-a61b-495f-9d42-898448806994
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 68b3d74d32b98f44cfdf9cf78b7a9151f16124ce
-ms.openlocfilehash: b4afd639439f0549ce38de1e63a1798d30680066
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: a71123cd055052e6e4a372a945727063b7c2d666
 
 
 ---
@@ -71,7 +71,7 @@ Si desea integrar el directorio de Azure AD con los bosques de AD locales, consu
 > 
 > -   Debe usar AD FS en la versión mínima de servidor de **Windows Server 2012 R2** o un proveedor de autenticación alternativo que admita el protocolo OAuth 2.0.
 
-### <a name="multifactor-authentication-mfa-and-azure-information-protection"></a>Multi-Factor Authentication (MFA) y Azure Information Protection
+### <a name="multi-factor-authentication-mfa-and-azure-information-protection"></a>Multi-Factor Authentication (MFA) y Azure Information Protection
 Para usar Multi-Factor Authentication (MFA) con Azure Information Protection se necesita como mínimo uno de los dos requisitos siguientes:
 
 -   Office 2013 (versión mínima):
@@ -248,7 +248,7 @@ Además, la aplicación de uso compartido de RMS presenta la restricciones sigui
 
 -   En equipos con Windows: se necesita una versión mínima de Windows 7 Service Pack 1
 
-## <a name="onpremises-servers-that-support-azure-rights-management-data-protection"></a>Servidores locales compatibles con la protección de datos de Azure Rights Management
+## <a name="on-premises-servers-that-support-azure-rights-management-data-protection"></a>Servidores locales compatibles con la protección de datos de Azure Rights Management
 
 Los siguientes productos de servidor local son compatibles con Azure Information Protection al usar el conector de Azure Rights Management. Este conector actúa como una interfaz de comunicaciones (una retransmisión) entre los servidores locales y el servicio Azure Rights Management usado por Azure Information Protection para proteger los documentos y los correos electrónicos de Office. 
 
@@ -285,9 +285,10 @@ El conector de Rights Management es compatible con Windows Server 2012 R2, Windo
 
 Para más información sobre cómo configurar el conector de Rights Management para estos servidores locales, vea [Implementación del conector de Azure Rights Management](../deploy-use/deploy-rms-connector.md).
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 
