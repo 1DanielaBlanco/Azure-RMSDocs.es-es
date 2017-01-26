@@ -13,8 +13,8 @@ ms.assetid: b9af5dc3-73d4-4147-b7ef-f6803b0d5216
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: f96641355da46eee85a828a6e5e417282883bac7
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 0d15a232bc1f0b1bce94e48c7e9c6f6b9419b5dd
 
 
 ---
@@ -39,11 +39,12 @@ Para instalar la aplicación de uso compartido de RMS en plataformas móviles, d
 
 **Si tiene Microsoft Intune**: como la aplicación Azure Information Protection incluye el Kit de desarrollo de software de aplicaciones de Microsoft Intune, cuando los dispositivos iOS y Android están inscritos mediante Intune, puede implementar y administrar la aplicación de Azure Information Protection para estos dispositivos. Para más información, consulte [Configure and deploy mobile application management policies in the Microsoft Intune console](/intune/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console) (Configuración e implementación de directivas de administración de aplicaciones móviles en la consola de Microsoft Intune). Para el paso 2, siga las instrucciones para publicar una aplicación administrada por directivas.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

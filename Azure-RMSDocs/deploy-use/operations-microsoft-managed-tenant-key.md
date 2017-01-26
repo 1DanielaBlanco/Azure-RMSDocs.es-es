@@ -13,14 +13,14 @@ ms.assetid: 3c48cda6-e004-4bbd-adcf-589815c56c55
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 49df2de156d5859d9192d8b179e4ba7ef2d653ea
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 0aad5eeb88dd471ece1bf6425a4efe8050bbdf2c
 
 
 ---
 
 
-# <a name="microsoftmanaged-tenant-key-lifecycle-operations"></a>Administración de Microsoft: Operaciones de ciclo de vida de clave de inquilino
+# <a name="microsoft-managed-tenant-key-lifecycle-operations"></a>Administración de Microsoft: Operaciones de ciclo de vida de clave de inquilino
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
@@ -29,7 +29,7 @@ Si Microsoft administra su clave de inquilino para Azure Information Protection 
 ## <a name="revoke-your-tenant-key"></a>Revocar su clave de inquilino
 Al cancelar la suscripción a Azure Information Protection, la solución deja de usar la clave de inquilino y no es necesario realizar ninguna otra acción.
 
-## <a name="rekey-your-tenant-key"></a>Vuelva a introducir su clave de inquilino
+## <a name="re-key-your-tenant-key"></a>Vuelva a introducir su clave de inquilino
 La acción de volver a introducir la clave también se le conoce como revertir su clave. No vuelva a introducir su clave de inquilino a menos que sea necesario. Otros clientes, como Office 2010, no se diseñaron para tratar cambios de clave correctamente. En este escenario, necesita desactivar el estado de Rights Management en los equipos con una directiva de grupo o un mecanismo equivalente. Sin embargo, hay algunos eventos legítimos que pueden forzarle a volver a introducir la clave de inquilino. Por ejemplo:
 
 -   La compañía se ha dividido en una o dos compañías. Cuando vuelve a introducir la clave de inquilino, la nueva compañía no tendrá acceso al nuevo contenido que publiquen sus empleados. Pueden acceder al antiguo contenido si tienen una copia de la antigua clave de inquilino.
@@ -95,10 +95,11 @@ Si tiene una infracción, la mejor acción que usted o Microsoft puede llevar a 
 |Un individuo no autorizado o malware han tenido derechos de uso de su clave de inquilino, pero la clave en sí no se ha filtrado.|La nueva introducción de la clave de inquilino no resulta útil aquí y requiere el análisis de la causa principal. Si un error de software o de proceso ha sido el responsable de que un individuo no autorizado obtuviera acceso, dicha situación se debe resolver.|
 |Vulnerabilidad descubierta en el algoritmo de RSA, o longitud de clave, o ataques por fuerza bruta se hacen factibles computacionalmente.|Microsoft necesita actualizar Azure Information Protection para que admita nuevos algoritmos y claves más largas que sean resistentes, así como indicar a todos los clientes que renueven sus claves de inquilino.|
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

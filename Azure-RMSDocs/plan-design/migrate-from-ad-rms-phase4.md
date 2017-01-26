@@ -13,13 +13,13 @@ ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3786fa2529b442f7d31603be09f9b80f1a46d171
-ms.openlocfilehash: 238cc238e62db4a74ce2b10e0e68803cc66b718f
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 9c78ac81a90d46ab8d56cd205474fdf85f486c3d
 
 
 ---
 
-# <a name="migration-phase-4-post-migration-tasks"></a>Fase de migración 4: Tareas posteriores a la migración
+# <a name="migration-phase-4---post-migration-tasks"></a>Fase de migración 4: Tareas posteriores a la migración
 
 >*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Office 365*
 
@@ -35,7 +35,7 @@ Supervise la actividad de los servidores de AD RMS. Para ello, por ejemplo, comp
 
 Después de retirar los servidores de AD RMS, seguramente le interese revisar las plantillas en el Portal de Azure clásico y consolidarlas para que los usuarios tengan menos opciones entre las que elegir, volver a configurarlas o incluso agregar plantillas nuevas. También sería una buena oportunidad para publicar las plantillas predeterminadas. Para más información, vea [Configuración de plantillas personalizadas para el servicio Azure Rights Management](../deploy-use/configure-custom-templates.md).
 
-## <a name="step-9-rekey-your-azure-information-protection-tenant-key"></a>Step 9. Volver a generar la clave de inquilino de Azure Information Protection
+## <a name="step-9-re-key-your-azure-information-protection-tenant-key"></a>Step 9. Volver a generar la clave de inquilino de Azure Information Protection
 Este paso solo es válido si la topología de claves de inquilino que ha elegido es administrada por Microsoft, en lugar de ser administrada por el cliente (BYOK con el Almacén de claves de Azure).
 
 Aunque este paso es opcional, se recomienda completarlo cuando la clave de inquilino de Azure Information Protection es administrada por Microsoft y se ha migrado desde AD RMS. Si vuelve a generar la clave en este escenario, protegerá su clave de inquilino de Azure Information Protection ante posibles infracciones de seguridad en la clave de AD RMS.
@@ -51,9 +51,10 @@ Para más información sobre cómo administrar la clave de inquilino de Azure In
 
 Ahora que ha completado la migración, revise el [mapa de ruta de implementación](deployment-roadmap.md) para identificar las tareas de implementación que necesite realizar.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Jan17_HO4-->
 
 

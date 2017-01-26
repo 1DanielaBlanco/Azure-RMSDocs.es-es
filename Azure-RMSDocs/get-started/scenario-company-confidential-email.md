@@ -13,13 +13,13 @@ ms.assetid: 950799e9-2289-48c7-b95a-f54a8ead520a
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: f886b72ba18f0f13ac60e08d000b231cd36d1d5f
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 3c5576936c07d3921ef8fd70f9542e62383d0751
 
 
 ---
 
-# <a name="scenario-send-a-companyconfidential-email"></a>Escenario: Enviar un correo electrónico confidencial de la empresa
+# <a name="scenario---send-a-company-confidential-email"></a>Escenario: Enviar un correo electrónico confidencial de la empresa
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
@@ -92,7 +92,7 @@ En la documentación de ejemplo se muestra el aspecto de estas instrucciones par
 
 ![Documentación de usuario de la plantilla para la implementación rápida de Azure RMS](../media/AzRMS_UsersBanner.png)
 
-### <a name="how-to-send-emails-that-contain-companyconfidential-information-using-outlook"></a>Procedimiento para enviar correos electrónicos que contienen información confidencial de la empresa mediante Outlook
+### <a name="how-to-send-emails-that-contain-company-confidential-information-using-outlook"></a>Procedimiento para enviar correos electrónicos que contienen información confidencial de la empresa mediante Outlook
 
 1.  En Outlook, cree un mensaje de correo, agregue los datos adjuntos que quiera incluir y, después, seleccione usuarios o grupos de *&lt;nombre de la organización&gt;*.
 
@@ -102,7 +102,7 @@ En la documentación de ejemplo se muestra el aspecto de estas instrucciones par
 
 3.  Envíe el mensaje.
 
-### <a name="how-to-send-emails-that-contain-companyconfidential-information-using-outlook-web-app"></a>Procedimiento para enviar correos electrónicos que contienen información confidencial de la empresa mediante Outlook Web App
+### <a name="how-to-send-emails-that-contain-company-confidential-information-using-outlook-web-app"></a>Procedimiento para enviar correos electrónicos que contienen información confidencial de la empresa mediante Outlook Web App
 
 1.  En Outlook Web App, cree un mensaje de correo, agregue los datos adjuntos que quiera incluir y, después, seleccione usuarios o grupos de *&lt;nombre de la organización&gt;* en la libreta de direcciones.
 
@@ -125,7 +125,7 @@ Los destinatarios a los que envíe el correo electrónico podrán reenviarlo a o
 ### <a name="example-customized-user-documentation"></a>Documentación de usuario personalizada de ejemplo
 ![Documentación de usuario de ejemplo para la implementación rápida de Azure RMS](../media/AzRMS_ExampleBanner.png)
 
-#### <a name="how-to-send-emails-that-contain-companyconfidential-information-using-outlook"></a>Procedimiento para enviar correos electrónicos que contienen información confidencial de la empresa mediante Outlook
+#### <a name="how-to-send-emails-that-contain-company-confidential-information-using-outlook"></a>Procedimiento para enviar correos electrónicos que contienen información confidencial de la empresa mediante Outlook
 
 1.  En Outlook, cree un mensaje de correo, agregue los datos adjuntos que quiera incluir y, después, seleccione usuarios o grupos de VanArsdel de la libreta de direcciones.
 
@@ -135,7 +135,7 @@ Los destinatarios a los que envíe el correo electrónico podrán reenviarlo a o
 
 3.  Envíe el mensaje.
 
-#### <a name="how-to-send-emails-that-contain-companyconfidential-information-using-outlook-web-app"></a>Procedimiento para enviar correos electrónicos que contienen información confidencial de la empresa mediante Outlook Web App
+#### <a name="how-to-send-emails-that-contain-company-confidential-information-using-outlook-web-app"></a>Procedimiento para enviar correos electrónicos que contienen información confidencial de la empresa mediante Outlook Web App
 
 1.  En Outlook Web App, cree un mensaje de correo, agregue los datos adjuntos que quiera incluir y, después, seleccione usuarios o grupos de VanArsdel de la libreta de direcciones.
 
@@ -155,9 +155,10 @@ Los destinatarios a los que envíe el correo electrónico podrán reenviarlo a o
 
     -   Correo electrónico: helpdesk@vanarsdelltd.com
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

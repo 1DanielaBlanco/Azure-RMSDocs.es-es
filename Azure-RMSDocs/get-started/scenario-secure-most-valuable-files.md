@@ -13,13 +13,13 @@ ms.assetid: 95f1844a-612c-4e67-bbe6-4b6b92295221
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: ad75734c28c51ac68697f96e0e50a5d90314b76e
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 0f2fb608be647e967d8e5857414f25ebba1d4d29
 
 
 ---
 
-# <a name="scenario-secure-your-most-few-valuable-files"></a>Escenario: Proteger (algunos) archivos de gran valor
+# <a name="scenario---secure-your-most-few-valuable-files"></a>Escenario: Proteger (algunos) archivos de gran valor
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
@@ -70,7 +70,7 @@ Para que este escenario funcione, debe disponer de lo siguiente:
 
 2.  Publique la nueva plantilla.
 
-### <a name="to-protect-the-files-inplace"></a>Para proteger los archivos localmente
+### <a name="to-protect-the-files-in-place"></a>Para proteger los archivos localmente
 
 1.  En el Explorador de archivos, vaya a la primera carpeta que contenga archivos que quiere proteger:
 
@@ -145,9 +145,9 @@ Ahora los siguientes archivos tienen aplicado un nivel muy alto de protección, 
 
 -   Si no puede tener acceso a estos archivos o si nota cambios sospechosos en ellos, llame a la línea de asignación de nivel de soporte (disponible ininterrumpidamente), que encontrará en un mensaje de correo protegido enviado por el departamento de TI.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0e66bfa436bf811b34cf3cfe1b2d68a6a4e137c2
-ms.openlocfilehash: dd6c9250102e104ba49b0c08f14d9959cd1228cb
+ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
+ms.openlocfilehash: 91a5485b2860edf6f2095027e1c0d69ec96141d7
 
 
 ---
@@ -52,7 +52,7 @@ Aunque no tenga que saber usted mismo cómo funciona RMS, puede que se le pregun
 
 ###### <a name="footnote-1"></a>Nota al pie 1 
 
-La aplicación de uso compartido Rights Management usa 256 bits para la protección genérica y la protección nativa cuando el archivo tiene una extensión de nombre de archivo .ppdf o es un archivo de imagen o texto protegido (como .ptxt o .pjpg).
+La aplicación de uso compartido Rights Management usa&256; bits para la protección genérica y la protección nativa cuando el archivo tiene una extensión de nombre de archivo .ppdf o es un archivo de imagen o texto protegido (como .ptxt o .pjpg).
 
 Almacenamiento y protección de las claves criptográficas:
 
@@ -149,8 +149,9 @@ Si está preparado para empezar a implementar la protección de datos en su orga
 > [!TIP]
 > Para obtener más información y ayuda, use los recursos y vínculos que aparecen en [Información y soporte técnico para Azure Information Protection](../get-started/information-support.md).
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

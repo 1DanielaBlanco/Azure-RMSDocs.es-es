@@ -4,7 +4,7 @@ description: "Recursos para administradores con información sobre nuevas versio
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/29/2016
+ms.date: 02/01/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4fcfcebc7da5a22a91911d70d4d787dc525d3485
-ms.openlocfilehash: 0a9f88f179e5ac936211e61f8bf6dae9ec83506f
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 1f7647fd41ba71b4cda4c942d86b6dbfe9c870f8
 
 
 ---
@@ -29,7 +29,7 @@ Use los siguientes recursos para ayudarle a obtener información sobre implement
 |----------------|---------------|
 |Ver la documentación recomendada para el servicio →|Use la página de inicio [documentación de Azure Information Protection](https://docs.microsoft.com/information-protection/).|
 |Proporcionar comentarios sobre la documentación o hacer una pregunta →|Enviar un correo electrónico a [askipteam](mailto:%20askipteam@microsoft.com?subject=Documentation%20feedback)|
-|Recibir tweets sobre Information Protection y anuncios sobre actualizaciones de documentación del grupo del producto →|Sigue a Dan Plastina, quien ayuda a liderar el equipo de Microsoft Information Protection. Consulte [Dan Plastina @TheRMSGuy](https://twitter.com/TheRMSGuy)|
+|Recibir tweets sobre Information Protection y anuncios sobre actualizaciones de documentación del grupo del producto →|Sigue a Dan Plastina, quien ayuda a liderar el equipo de Microsoft Information Protection. Consulte [Dan Plastina @DanPlastina](https://twitter.com/DanPlastina)|
 |Comprobar la información de suscripción y qué características se admiten →|Use la [información sobre la suscripción](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing) y la [lista de características](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features) del sitio de Azure Information Protection.|
 
 
@@ -90,9 +90,10 @@ Solución de problemas:
 
 -   [Foro: RMS para usuarios (aplicaciones)](https://social.technet.microsoft.com/Forums/en-US/home?forum=rmsapps)
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

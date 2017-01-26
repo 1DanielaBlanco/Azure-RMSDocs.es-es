@@ -13,8 +13,8 @@ ms.assetid: 8fdad425-5daf-4ce1-822f-9d2fb0b87df1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 1d9213aa6be382510558020411d1667fd2866ca7
+ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
+ms.openlocfilehash: 589f0ff68e1e58c0903eb40dcfd0697a500c8491
 
 
 ---
@@ -33,17 +33,18 @@ Las directivas de clasificación se pueden configurar completamente y son enorme
 
 Para obtener instrucciones sobre cómo implementar y configurar el conector de RMS para archivos de Office, consulte [Implementación del conector de Azure Rights Management](../deploy-use/deploy-rms-connector.md).
 
-Para obtener instrucciones sobre cómo usar el script de Windows PowerShell para todos los tipos de archivos, consulte [Protección de RMS con la infraestructura de clasificación de archivos de Windows Server &#40; FCI &#41;](../rms-client/configure-fci.md).
+Para obtener instrucciones sobre cómo usar el script de Windows PowerShell para todos los tipos de archivos, consulte [Protección de RMS con la infraestructura de clasificación de archivos de Windows Server&#40; FCI&#41;](../rms-client/configure-fci.md).
 
 
 
 ## <a name="next-steps"></a>Pasos siguientes
 Ahora que comprende cómo las aplicaciones y los servicios admiten Azure RMS, puede que le interese comparar Azure RMS con la versión local de Rights Management, Active Directory Rights Management Services (AD RMS). Para ver una comparación de características, requisitos y controles de seguridad, consulte [Comparing Azure Rights Management and AD RMS](compare-azure-rms-ad-rms.md) (Comparación de Azure Rights Management y AD RMS).
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

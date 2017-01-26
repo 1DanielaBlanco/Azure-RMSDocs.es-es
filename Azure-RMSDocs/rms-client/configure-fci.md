@@ -13,8 +13,8 @@ ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 88b6c5fffb1be59563c2b93c8db244edc3201f3c
-ms.openlocfilehash: e14526494d0068e56a5b103467ac4ec8a75db46d
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 9185b1e28638c8885f4130dfe969c3bdf39d07f5
 
 
 ---
@@ -300,9 +300,10 @@ Para ello, utilice una de las propiedades de clasificación integradas (por ejem
 
 Ahora todo lo que debe hacer es crear una nueva tarea de administración de archivos que utilice el mismo script, aunque quizás con una plantilla diferente, así como configurar la condición para la propiedad de clasificación que acaba de configurar. Por ejemplo, en lugar de la condición que hemos configurado previamente (propiedad**RMS** , **Igual**, **Sí**), seleccione la propiedad **Información de identificación personal** con el valor **Operador** establecido en **Igual** y el **Valor** de **Alto**.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

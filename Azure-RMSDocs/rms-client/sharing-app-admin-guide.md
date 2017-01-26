@@ -13,8 +13,8 @@ ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c9a5bcf46597ee65e2e0f36199f19935f8997048
-ms.openlocfilehash: adab568d173845f411fe5913786b137508485ef6
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 53bd4b52b73c4a487f7d5aa655fd9b372bb7ada3
 
 
 ---
@@ -169,7 +169,7 @@ Para comprobar que la instalación se realizó correctamente, consulte la secci�
 
 Para comprobar que la instalación se realizó correctamente, consulte la sección [Comprobación de que la instalación se ha realizado correctamente](#verifying-installation-success) de este artículo.
 
-### <a name="to-install-the-rms-sharing-application-and-office-addin-only"></a>Para instalar la aplicación RMS sharing y solo el complemento de Office
+### <a name="to-install-the-rms-sharing-application-and-office-add-in-only"></a>Para instalar la aplicación RMS sharing y solo el complemento de Office
 
 1.  Instale el cliente de AD RMS y la aplicación RMS sharing mediante el siguiente comando, especificando una carpeta existente para crear el archivo de registro:
 
@@ -273,7 +273,7 @@ Puede usar los archivos de registro de instalación para comprobar si la instala
 
         DefaultUser="&lt;default_user&gt;"
 
-### <a name="to-verify-installation-success-for-the-rms-sharing-application-and-office-addin-only"></a>Para comprobar que la instalación de la aplicación RMS sharing y solo el complemento de Office se ha realizado correctamente
+### <a name="to-verify-installation-success-for-the-rms-sharing-application-and-office-add-in-only"></a>Para comprobar que la instalación de la aplicación RMS sharing y solo el complemento de Office se ha realizado correctamente
 
 1.  Para comprobar que el comando Setup_ipviewer.exe se ha ejecutado correctamente, busque el siguiente texto en el archivo de registro de instalación: **Resultado de la instalación: 0**
 
@@ -310,7 +310,7 @@ No todos los comandos de instalación necesarios para estas implementaciones adm
         x86\setup_ipviewer.exe /uninstall /quiet
         ```
 
-### <a name="to-uninstall-the-office-addin"></a>Para desinstalar el complemento de Office
+### <a name="to-uninstall-the-office-add-in"></a>Para desinstalar el complemento de Office
 
 -   Use los comandos siguientes:
 
@@ -404,9 +404,10 @@ Si no realiza este cambio en el Registro, los usuarios no podrán consumir conte
 ## <a name="next-steps"></a>Pasos siguientes
 Para obtener información técnica adicional que incluye la explicación de la diferencia entre los niveles de protección (nativa y genérica), los tipos de archivo y las extensiones de nombre de archivo, y cómo cambiar el nivel de protección predeterminado, consulte [Technical overview for the Rights Management sharing application](sharing-app-admin-guide-technical.md) (Introducción técnica a la aplicación Rights Management sharing).
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 
