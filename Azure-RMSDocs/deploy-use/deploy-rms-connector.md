@@ -4,7 +4,7 @@ description: "Instrucciones para implementar el conector de RMS, que ofrece prot
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,15 +13,15 @@ ms.assetid: 90e7e33f-9ecc-497b-89c5-09205ffc5066
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: eaa1d7a0a74fa68f9bf1d15f348dbb45d14cee9a
+ms.sourcegitcommit: a8fec1336c9280bdffb05dff583dfa2ba21940bc
+ms.openlocfilehash: 768c0c8a215e71c382f01fecc80ea7dc6aa88a08
 
 
 ---
 
 # <a name="deploying-the-azure-rights-management-connector"></a>Implementación del conector de Azure Rights Management
 
->*Se aplica a: Azure Information Protection, Windows Server 2012, Windows Server 2012 R2*
+>*Se aplica a: Azure Information Protection, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012 y Windows Server 2008 R2*
 
 Utilice esta información para obtener información sobre el conector de Azure Rights Management y, a continuación, cómo implementarlo correctamente para su organización. Este conector ofrece protección de datos para las implementaciones locales existentes que usan Microsoft **Exchange Server**, **SharePoint Server** o servidores de archivo que ejecutan Windows Server y la **Infraestructura de clasificación de archivos** (FCI).
 
@@ -31,7 +31,7 @@ Utilice esta información para obtener información sobre el conector de Azure R
 ## <a name="overview-of-the-microsoft-rights-management-connector"></a>Visión general del conector Rights Management de Microsoft
 El conector Rights Management (RMS) de Microsoft le permite habilitar rápidamente servidores locales existentes para usar su funcionalidad de Information Rights Management (IRM) con el servicio Rights Management de Microsoft basado en la nube (Azure RMS). Con esta funcionalidad, los TI y los usuarios pueden proteger fácilmente documentos e imágenes tanto dentro como fuera de la organización, sin tener que instalar más infraestructuras o establecer relaciones de confianza con otras organizaciones. 
 
-El conector de RMS es un servicio de tamaño reducido que se instala en servidores locales que ejecutan Windows Server 2012 R2, Windows Server 2012 o Windows Server 2008 R2. Además de ejecutar el conector en equipos físicos, también puede ejecutarlo en máquinas virtuales, incluidas las máquinas virtuales de IaaS de Azure. Después de instalar y configurar el conector, actúa como una interfaz de comunicaciones (una retransmisión) entre servidores locales y el servicio en la nube, tal como se muestra en la imagen siguiente. Las flechas indican la dirección en la que se inician las conexiones de red.
+El conector de RMS es un servicio de tamaño reducido que se instala en servidores locales que ejecutan Windows Server 2016, Windows Server 2012 R2, Windows Server 2012 o Windows Server 2008 R2. Además de ejecutar el conector en equipos físicos, también puede ejecutarlo en máquinas virtuales, incluidas las máquinas virtuales de IaaS de Azure. Después de instalar y configurar el conector, actúa como una interfaz de comunicaciones (una retransmisión) entre servidores locales y el servicio en la nube, tal como se muestra en la imagen siguiente. Las flechas indican la dirección en la que se inician las conexiones de red.
 
 ![Introducción a la arquitectura de conector RMS](../media/RMS_connector.png)
 
