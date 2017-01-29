@@ -20,7 +20,7 @@ ms.openlocfilehash: 1b5268a13538df1537dbf3ea6f66eeda2b5e2292
 ---
 
 
-# <a name="azure-information-protection-also-known-as-"></a>Azure Information Protection también se conoce como…
+# <a name="azure-information-protection---also-known-as-"></a>Azure Information Protection también se conoce como…
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
@@ -47,6 +47,6 @@ Para más información sobre cómo puede comprar o evaluar Azure Information Pro
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 
