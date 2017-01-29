@@ -65,6 +65,6 @@ Para buscar otros requisitos, consulte [Requisitos de Azure Rights Management](r
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Jan17_HO5-->
 
 
