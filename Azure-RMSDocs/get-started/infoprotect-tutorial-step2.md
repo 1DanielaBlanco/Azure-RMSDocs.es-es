@@ -1,5 +1,5 @@
 ---
-title: "Paso 1 del tutorial de inicio rápido | Azure Information Protection"
+title: "Paso 2 del tutorial de inicio rápido | Azure Information Protection"
 description: "Paso 2 del tutorial introductorio para probar rápidamente Microsoft Azure Information Protection para su organización, que debería tardar unos 30 minutos."
 author: cabailey
 ms.author: cabailey
@@ -11,8 +11,8 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 00d78bf12a7f400b3dfa7e35ada25177170e2d23
+ms.sourcegitcommit: a8bfb3be9b19718cc8a94755e19b8d2521dde323
+ms.openlocfilehash: 4ad51bef524fd408881c4c3195a34f730c810b5a
 
 
 ---

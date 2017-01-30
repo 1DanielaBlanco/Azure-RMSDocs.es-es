@@ -1,6 +1,6 @@
 ---
 title: "Paso 4 del tutorial de inicio rápido | Azure Rights Management"
-description: "Paso 3 del tutorial introductorio para probar rápidamente Microsoft Azure Information Protection para su organización, que debería tardar unos 30 minutos."
+description: "Paso 4 del tutorial introductorio para probar rápidamente Microsoft Azure Information Protection para su organización, que debería tardar unos 30 minutos."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
@@ -11,8 +11,8 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: bcf1e9ee7a2d6cf8fb264533f150b350ce0a9e56
+ms.sourcegitcommit: a8bfb3be9b19718cc8a94755e19b8d2521dde323
+ms.openlocfilehash: 59639e9c90c5a55d8eda44bbcc2f9efbc5b9ffb5
 
 
 ---
