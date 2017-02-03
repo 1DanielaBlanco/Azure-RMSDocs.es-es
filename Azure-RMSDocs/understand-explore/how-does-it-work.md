@@ -4,7 +4,7 @@ description: "Analice cómo funciona Azure RMS, los controles criptográficos qu
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 01/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
-ms.openlocfilehash: 91a5485b2860edf6f2095027e1c0d69ec96141d7
+ms.sourcegitcommit: d47648a1e03a4da5eb6088932544d9e34ca4ae7a
+ms.openlocfilehash: 42583d3ed7fb0fd5df85699c56fe7abe41093546
 
 
 ---
@@ -77,13 +77,13 @@ Una vez se inicializa el entorno del usuario, dicho usuario puede proteger enton
 ### <a name="initializing-the-user-environment"></a>Inicialización del entorno de usuario
 Para que un usuario pueda proteger contenido o consumir contenido protegido en un equipo Windows, el entorno del usuario debe estar preparado en el dispositivo. Este es un proceso único y ocurre de manera automática sin intervención del usuario cuando un usuario trata de proteger o de consumir contenido protegido:
 
-![Activación del cliente RMS: paso 1](../media/AzRMS.png)
+![Flujo de activación del cliente de RMS, paso 1: autenticación del cliente](../media/AzRMS.png)
 
 **Qué ocurre en el paso 1**: el cliente RMS del equipo conecta primero con el servicio Azure Rights Management y autentica al usuario mediante su cuenta de Azure Active Directory.
 
 Cuando la cuenta del usuario está federada con Azure Active Directory, esta autenticación es automática y al usuario no se le solicitan credenciales.
 
-![Activación del cliente RMS: paso 2](../media/AzRMS_useractivation2.png)
+![Activación del cliente de RMS, paso 2: los certificados se descargan en el cliente](../media/AzRMS_useractivation2.png)
 
 **Qué ocurre en el paso 2**: cuando se autentica el usuario, la conexión se redirige automáticamente al inquilino de Azure Information Protection de la organización, que emite certificados que permiten al usuario autenticarse en el servicio Azure Rights Management para consumir contenido protegido y para proteger contenido sin conexión.
 
@@ -92,17 +92,17 @@ Se almacena una copia del certificado del usuario en Azure, de manera que si el 
 ### <a name="content-protection"></a>Protección de contenido
 Cuando un usuario protege un documento, el cliente de RMS lleva a cabo las siguientes acciones en un documento desprotegido:
 
-![Protección de documento RMS - paso 1](../media/AzRMS_documentprotection1.png)
+![Protección del documento de RMS, paso 1: se cifra el documento](../media/AzRMS_documentprotection1.png)
 
 **Qué ocurre en el paso 1**: El cliente de RMS crea una clave aleatoria (la clave de contenido) y descifra el documento usando esta clave con el algoritmo de cifrado simétrico de AES.
 
-![Protección de documentos con RMS: paso 2](../media/AzRMS_documentprotection2.png)
+![Protección del documento de RMS, paso 2: se crea una directiva](../media/AzRMS_documentprotection2.png)
 
 **Qué ocurre en el paso 2**: El cliente de RMS crea después un certificado que incluye una directiva para el documento, basándose en una plantilla o especificando derechos concretos para el documento. Esta directiva incluye los derechos para diferentes usuarios o grupos y otras restricciones, como una fecha de expiración.
 
 El cliente de RMS usa a continuación la clave de la organización que se obtuvo cuando se inicializó el entorno del usuario y usa esta clave para cifrar la directiva y la clave de contenido simétrico. El cliente de RMS también firma la directiva con el certificado del usuario que se obtuvo cuando se inicializó el entorno del usuario.
 
-![Protección de documentos con RMS: paso 3](../media/AzRMS_documentprotection3.png)
+![Protección del documento de RMS, paso 3: la directiva se inserta en el documento](../media/AzRMS_documentprotection3.png)
 
 **Qué ocurre en el paso 3**: Por último, el cliente de RMS inserta la directiva en un archivo con el cuerpo del documento cifrado anteriormente y, en conjunto, constituyen un documento protegido.
 
@@ -111,21 +111,25 @@ Este documento se puede almacenar en cualquier lugar o compartir mediante cualqu
 ### <a name="content-consumption"></a>Consumo de contenido
 Cuando un usuario quiere consumir un documento protegido, el cliente de RMS se inicia solicitando acceso al servicio Azure Rights Management:
 
-![Consumo de documento RMS: paso 1](../media/AzRMS_documentconsumption1.png)
+![Consumo de documento de RMS, paso 1: el usuario se autentica y obtiene la lista de derechos](../media/AzRMS_documentconsumption1.png)
 
 **Qué ocurre en el paso 1**: el usuario autenticado envía la directiva del documento y los certificados del usuario al servicio Azure Rights Management. El servicio descifra y evalúa la directiva y crea una lista de derechos (de haberlos) que el usuario tiene para el documento.
 
-![Consumo de documento RMS - paso 2](../media/AzRMS_documentconsumption2.png)
+![Consumo de documento de RMS, paso 2: la licencia de uso se devuelve al cliente](../media/AzRMS_documentconsumption2.png)
 
 **Qué ocurre en el paso 2**: El servicio extrae después la clave de contenido de AES desde la directiva descifrada. Esta clave se cifra a continuación con la clave de RSA pública del usuario que se obtuvo con la solicitud.
 
 La clave de contenido que se ha vuelto a cifrar se incrusta a continuación en una licencia de uso cifrada con la lista de derechos de usuario, que se devuelve a continuación al cliente de RMS.
 
-![Consumo de documentos de RMS: paso 3](../media/AzRMS_documentconsumption3.png)
+![Consumo de documento de RMS, paso 3: el documento se descifra y se aplican los derechos](../media/AzRMS_documentconsumption3.png)
 
 **Qué ocurre en el paso 3**: Por último, el cliente de RMS toma la licencia de uso cifrada y la descifra con su propia clave privada de usuario. Esto permite al cliente de RMS descifrar el cuerpo del documento cuando se necesita y representarlo en la pantalla.
 
 El cliente también descifra la lista de derechos y los pasa a la aplicación, que aplica dichos derechos en la interfaz del usuario de la aplicación.
+
+> [!NOTE]
+> Cuando los usuarios externos a su organización consumen contenido que ha protegido, el flujo de consumo es el mismo. Lo que cambia en este escenario es cómo se autentica el usuario. Para obtener más información, consulte [Cuando comparto un documento protegido con una persona ajena a mi organización, ¿cómo se autentica ese usuario?](../get-started/faqs-rms.md#when-i-share-a-protected-document-with-somebody-outside-my-company-how-does-that-user-get-authenticated)
+
 
 ### <a name="variations"></a>Variaciones
 Los tutoriales anteriores cubren los escenarios estándar pero hay algunas variaciones:
@@ -152,6 +156,6 @@ Si está preparado para empezar a implementar la protección de datos en su orga
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Jan17_HO5-->
 
 

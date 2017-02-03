@@ -4,7 +4,7 @@ description: Los desarrolladores pueden usar Azure Information Protection para p
 author: BrucePerlerMS
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 01/23/2017
+ms.date: 01/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: a53c2df2-a0a2-4f1f-995b-75ba55e4489b
 ms.suite: ems
 ms.reviewer: kartikk
 translationtype: Human Translation
-ms.sourcegitcommit: a8cb4f9bf0c38e25045fcd1a01deaa993bc862c8
-ms.openlocfilehash: 7f3c9f95ea86655d04e385eee7fd9c8cc0096ce9
+ms.sourcegitcommit: d00a735328bf04aad365a7577ef33ea24706ffc7
+ms.openlocfilehash: 9a3e0f1ba6c563d6129ef824f565138b68b439b1
 
 ---
 # <a name="azure-information-protection-developers-guide"></a>Guía del desarrollador de Azure Information Protection
@@ -65,7 +65,12 @@ La versión 4.2 es un cliente de REST basado en API específicas del sistema ope
 
 Las guías siguientes le llevan por los pasos de configuración específicos del sistema operativo en un entorno de desarrollo de aplicaciones mediante herramientas comunes.
 
-|[![Configuración de iOS/OSX](../media/develop/ios-icon.png)](ios-sdk.md) | [![Configuración de Android](../media/develop/android-icon.png)](android-sdk.md) | [![Configuración de Windows Phone](../media/develop/windows-phone-icon.png)](windows-phone-apps.md) | [![Configuración de servicios de Windows](../media/develop/windows-icon.png)](install-the-rms-sdk.md) | [![Configuración de Linux](../media/develop/linux-icon.png)](linux-setup.md) |
+[![Configuración de iOS/OSX](../media/develop/ios-icon.png)](ios-sdk.md)
+[![Configuración de Android](../media/develop/android-icon.png)](android-sdk.md)
+[![Configuración de Windows Phone](../media/develop/windows-phone-icon.png)](windows-phone-apps.md)
+[![Configuración del servicio de Windows](../media/develop/windows-icon.png)](install-the-rms-sdk.md)
+[![Configuración de Linux](../media/develop/linux-icon.png)](linux-setup.md)
+
 
 ## <a name="how-tos"></a>Procedimientos
 
@@ -74,8 +79,10 @@ Cada uno de los siguientes temas presenta instrucciones específicas sobre un as
 ### <a name="general"></a>General
 
 - [Habilitación de la revocación y el seguimiento de documentos (servicio)](tracking-content.md)
+- [Implementación de un cliente](../rms-client/client-deployment-notes.md)
 - [Instalación y configuración de un servidor RMS (servicio)](how-to-install-and-configure-an-rms-server.md)
 - [Uso del seguimiento de documentos (usuario)](how-to-use-document-tracking.md)
+
 
 ### <a name="security-and-authentication"></a>Seguridad y autenticación
 
