@@ -4,15 +4,15 @@ description: "Instrucciones para instalar el cliente que agrega una barra de Inf
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/13/2017
+ms.date: 01/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4445adff-4c5a-450f-aff8-88bf5bd4ca78
 translationtype: Human Translation
-ms.sourcegitcommit: bd3cbea29183c39abaa66aa5dcec8a14ad0b0757
-ms.openlocfilehash: bccddf228b33bcd8d36ef6af55dea9015cad34d0
+ms.sourcegitcommit: 6012049162d0ac9ee53476640ab3a4bcac18287f
+ms.openlocfilehash: 92d6b6f13d124c8c7ab7735fa170890263c9011b
 
 
 ---
@@ -70,7 +70,7 @@ Ejemplo para instalar el módulo de PowerShell, con el cliente de versión preli
 
 Si va a instalar la versión preliminar del cliente en equipos que ejecutan Office 2010, especifique el parámetro **ServiceLocation** si los usuarios no son administradores locales en sus equipos. Para obtener más información, consulte la sección siguiente.
 
-La versión de disponibilidad general del cliente de Azure Information Protection también se incluye en el catálogo de Microsoft Update para que pueda instalar y actualizar al cliente mediante cualquier servicio de actualización de software que use el catálogo. Las versiones preliminares del cliente no se incluyen en el catálogo de Microsoft Update.
+El cliente de Azure Information Protection también se incluye en el catálogo de Microsoft Update, para que pueda instalar y actualizar al cliente mediante el uso de cualquier servicio de actualización de software que use el catálogo. 
 
 ### <a name="preview-version-and-office-2010-only"></a>Solo versión preliminar y Office 2010
 
@@ -223,6 +223,6 @@ Para comprobar la información de versión de lanzamiento para el cliente, consu
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Jan17_HO5-->
 
 
