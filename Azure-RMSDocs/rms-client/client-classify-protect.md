@@ -4,7 +4,7 @@ description: "Instrucciones de cómo clasificar y proteger sus documentos y corr
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 01/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e6d4cc50259b9d9bb73a75c648f9e6915562accf
-ms.openlocfilehash: e1d61fbe1d74a4a57d9a1fdf518aeb0242d0f7ad
+ms.sourcegitcommit: 171a47f9c22dec24f72f8f21392d6577efd807a5
+ms.openlocfilehash: d050629999c3a886eb8d422f4f38c22d586e0824
 
 
 ---
@@ -53,17 +53,17 @@ Para ver una lista de tipos de archivo admitidos por el Explorador de archivos, 
 
 2. En el cuadro de diálogo **Classify and protect - Azure Information Protection** (Clasificar y proteger: Azure Information Protection), use las etiquetas del mismo modo que en una aplicación de Office, que establece la clasificación y protección definidas por el administrador. Si no se puede seleccionar una etiqueta (no se encuentra disponible), el archivo seleccionado no admite la clasificación, pero puede protegerlo.
 
-3. Para proteger el archivo, elija entre la configuración de protección que el administrador haya definido para la etiqueta seleccionada (**Automática, según la etiqueta de clasificación seleccionada**), o especifique su propia configuración (**Override with custom permissions** [Reemplazar por permisos personalizados]).
+3. Si desea especificar su propia configuración de protección en lugar de usar la configuración de protección que el administrador podría haber incluido con la etiqueta seleccionada, seleccione **Protect with custom permissions** (Proteger con permisos personalizados).
     
-    La opción de reemplazo no usa ninguna configuración de protección que el administrador pueda haber definido para la etiqueta elegida. En su lugar, especifique su propia configuración de protección. 
+    Cualquier permiso personalizado que especifique reemplaza, en lugar de complementar, la configuración de protección que el administrador podría haber definido para la etiqueta elegida.  
 
-4. Si ha seleccionado la opción de reemplazo, especifique ahora lo siguiente:
+4. Si ha seleccionado la opción de permisos personalizados, especifique ahora lo siguiente:
 
     - **Seleccionar permisos**: seleccione el nivel de acceso que quiere que tengan las personas al proteger los archivos seleccionados.
     
     - **Seleccionar usuarios**: especifique las personas que deben tener los permisos seleccionados para los archivos. En el caso de personas y grupos de su organización, puede usar la libreta de direcciones para buscarlos y seleccionarlos. Cuando las personas proceden de otra organización, debe especificar su dirección de correo electrónico completa. Asegúrese de usar una dirección de correo de empresa ya que las direcciones de correo electrónico personales no se admiten actualmente.
         
-    - **Expire access** (Caducar acceso): seleccione esta opción solo para archivos dependientes del tiempo, de modo que las personas que ha especificado no puedan abrir los archivos seleccionados después de una fecha especificada. Aún podrá abrir el archivo original, pero después de medianoche (su zona horaria actual), el día seleccionado, las personas que haya especificado no podrán abrir el archivo.
+    - **Expire access on** (Fecha de expiración de acceso): seleccione esta opción solo para archivos dependientes del tiempo, de modo que las personas que ha especificado no puedan abrir los archivos seleccionados después de una fecha especificada. Aún podrá abrir el archivo original, pero después de medianoche (su zona horaria actual), el día seleccionado, las personas que haya especificado no podrán abrir el archivo.
 
 5. Haga clic en **Aplicar** y luego en **Cerrar**.
 
@@ -108,9 +108,10 @@ Para obtener instrucciones sobre procedimientos, consulte las siguientes seccion
 
 -   [¿Qué desea hacer?](client-user-guide.md#what-do-you-want-to-do)
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

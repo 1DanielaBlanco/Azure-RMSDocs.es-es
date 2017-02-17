@@ -4,7 +4,7 @@ description: "Para configurar valores y etiquetas diferentes para usuarios espec
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/09/2016
+ms.date: 12/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 4b134785-0353-4109-8fa7-096d1caa2242
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b0600db864f834e9eb84700eb1a36d3e6a6fbde1
-ms.openlocfilehash: ba4567753fbc6320ea6f9170e4bf46857ab999b4
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: ba201561345d5e6b9f22a65ca1785553fed58e08
 
 
 ---
@@ -54,15 +54,19 @@ Para configurar una directiva de ámbito de Azure Information Protection:
 
 6. Cuando haya terminado de realizar los cambios deseados para esta directiva de ámbito, en la hoja inicial de **Azure Information Protection**, asegúrese de que esta directiva de ámbito esté en el orden en que quiere que se aplique. Esto es importante cuando ha seleccionado el mismo usuario para varias directivas de ámbito. A continuación, haga clic en **Publicar**. 
 
-El cliente de Azure Information Protection comprueba si hay cambios cada vez que se inicia una aplicación de Office compatible, y descarga los cambios en la directiva global o las directivas de ámbito que se apliquen a ese usuario.
+El cliente de Azure Information Protection comprueba si hay cambios cada vez que se inicia una aplicación de Office compatible o se abre el Explorador de archivos. El cliente descarga los cambios en la directiva global o las directivas de ámbito que se apliquen a ese usuario.
+
+> [!TIP]
+> Después de guardar la directiva de ámbito, puede utilizar el **Editor de directivas cruzadas** de la hoja **Azure Information Protection** inicial, para ver y volver a configurar todas las etiquetas de la directiva de Azure Information Protection. Este método proporciona una manera fácil de comparar etiquetas de varias directivas (su directiva global y todas las directivas de ámbito). Sin embargo, este editor no permite agregar o reordenar etiquetas, o ver o definir la configuración de directivas.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
 Para ver un ejemplo de cómo personalizar la directiva predeterminada y ver el comportamiento resultante en una aplicación de Office, pruebe el [tutorial de inicio rápido de Azure Information Protection](../get-started/infoprotect-quick-start-tutorial.md).
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

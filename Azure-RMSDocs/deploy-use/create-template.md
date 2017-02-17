@@ -4,7 +4,7 @@ description: "Instrucciones para crear y administrar plantillas personalizadas e
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/03/2016
+ms.date: 01/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0046023125fe339ed408edf47c59e36708b01783
-ms.openlocfilehash: 00661951513647add0c638e0eeb9e9fe38fa2d8d
+ms.sourcegitcommit: 5b7a73c153edfdc7db3a55ee714b05f65d5090f4
+ms.openlocfilehash: 41a4406803cb0de4af607c7494258fc57d5217f7
 
 
 ---
@@ -35,15 +35,9 @@ Usa los procedimientos siguientes para crear, configurar y publicar plantillas p
 
 1.  En función de que inicie sesión en el Centro de administración de Office 365 o en el Portal de Azure clásico, emplee uno de los siguientes procedimientos:
 
-    -   En el [Centro de administración de Office 365](https://portal.office.com/):
+    -   Desde el **centro de administración de Office 365**, la navegación depende de si está utilizando la versión preliminar del centro de administración de Office 365 (y qué versión) o el centro de administración clásico de Office 365. Sin embargo, para todas las versiones, puede ir directamente a la página [administración de derechos](https://account.activedirectory.windowsazure.com/RmsOnline/Manage.aspx): 
 
-        1.  En el panel izquierdo, haga clic en **Configuración del servicio**.
-
-        2.  En la página **Configuración del servicio** , haga clic en **Rights Management**.
-
-        3.  En la sección **Proteja su información** , haga clic en **Administrar**.
-
-        4.  En la sección **Rights Management** , haga clic en **Características avanzadas**.
+        1.  En la sección **configuración adicional**, haga clic en **características avanzadas**.
 
             > [!NOTE]
             > Si no ha activado todavía el servicio de Rights Management, haga clic primero en **Activar** y confirme la acción. Para más información, consulte [Activación de Azure Rights Management](activate-service.md).
@@ -98,7 +92,7 @@ Usa los procedimientos siguientes para crear, configurar y publicar plantillas p
 
 3.  Haz clic en el botón Siguiente y, a continuación, asigna uno de los derechos enumerados a tus usuarios y grupos seleccionados.
 
-    Use la descripción mostrada para obtener más información acerca de cada derecho (y para derechos personalizados). También hay información más detallada disponible en [Configuración de los derechos de uso para Azure Rights Management](configure-usage-rights.md). Sin embargo, las aplicaciones que son compatibles con RMS pueden variar en la forma de aplicar estos derechos. Consulte su documentación y realice sus propias pruebas con las aplicaciones que usan los usuarios para comprobar el comportamiento antes de implementar la plantilla para los usuarios. Para hacer que esta plantilla solo puedan verla los administradores para la realización de las pruebas, defínala como una plantilla de departamento (paso 6).
+    Use la descripción mostrada para obtener más información acerca de cada derecho (y para derechos personalizados). También hay información más detallada disponible en [Configuración de los derechos de uso para Azure Rights Management](configure-usage-rights.md). Sin embargo, las aplicaciones que son compatibles con Rights Management pueden variar en la forma de aplicar estos derechos. Consulte su documentación y realice sus propias pruebas con las aplicaciones que usan los usuarios para comprobar el comportamiento antes de implementar la plantilla para los usuarios. Para hacer que esta plantilla solo puedan verla los administradores para la realización de las pruebas, defínala como una plantilla de departamento (paso 6).
 
 4.  Si seleccionó **Personalizar**, haga clic en el botón Siguiente y seleccione permisos personalizados.
 
@@ -141,10 +135,10 @@ Usa los procedimientos siguientes para crear, configurar y publicar plantillas p
 
     Después, comprueba si quieres hacer algún cambio en las configuraciones siguientes:
 
-    |Setting|Más información|
-    |-----------|--------------------|
-    |**expiración del contenido**|Define una fecha o un número de días para esta plantilla cuando los archivos que están protegidos por dicha plantilla no deben abrirse. Puedes especificar una fecha o un número de días a partir del momento en que se aplica la protección al archivo.<br /><br />Cuando se especifica una fecha, entra en vigor a medianoche en su zona horaria actual.|
-    |**acceso sin conexión**|Use esta configuración para equilibrar los requisitos de seguridad que tenga frente al requisito de que los usuarios deben poder abrir archivos protegidos cuando no disponen de conexión a Internet.<br /><br />Si especificas que el contenido no está disponible sin conexión a Internet o que el contenido está disponible solamente durante un número concreto de días, cuando se supere ese umbral, los usuarios deberán volver a autenticarse y se registrará su acceso. Cuando esto sucede, si sus credenciales no se han almacenado en la memoria caché, se pedirá a los usuarios que inicien sesión antes de que puedan abrir el archivo.<br /><br />Además de la reautenticación, también se vuelve a evaluar la directiva y la pertenencia al grupos de usuarios. De modo que los usuarios podrían experimentar diferentes resultados de acceso para el mismo archivo si se producen cambios en la directiva o la pertenencia al grupo desde la última vez que se accedió al archivo.|
+    |Setting|Más información| Configuración recomendada
+    |-----------|--------------------|--------------------|
+    |**expiración del contenido**|Define una fecha o un número de días para esta plantilla cuando los archivos que están protegidos por dicha plantilla no deben abrirse. Puedes especificar una fecha o un número de días a partir del momento en que se aplica la protección al archivo.<br /><br />Cuando se especifica una fecha, entra en vigor a medianoche en su zona horaria actual.|**El contenido nunca expira** a menos que el contenido tenga un requisito de límite de tiempo específico.|
+    |**acceso sin conexión**|Use esta configuración para equilibrar los requisitos de seguridad que tenga frente al requisito de que los usuarios deben poder abrir archivos protegidos cuando no disponen de conexión a Internet.<br /><br />Si especificas que el contenido no está disponible sin conexión a Internet o que el contenido está disponible solamente durante un número concreto de días, cuando se supere ese umbral, los usuarios deberán volver a autenticarse y se registrará su acceso. Cuando esto sucede, si sus credenciales no se han almacenado en la memoria caché, se pedirá a los usuarios que inicien sesión antes de que puedan abrir el archivo.<br /><br />Además de la reautenticación, también se vuelve a evaluar la directiva y la pertenencia al grupos de usuarios. De modo que los usuarios podrían experimentar diferentes resultados de acceso para el mismo archivo si se producen cambios en la directiva o la pertenencia al grupo desde la última vez que se accedió al archivo.|Según el grado de confidencialidad del contenido:<br /><br />- **Número de días durante los cuales el contenido está disponible sin conexión a Internet** = **7** para datos empresariales confidenciales que podrían causar daños a la empresa si se comparten con personas no autorizadas. Esta recomendación ofrece un compromiso equilibrado entre flexibilidad y seguridad. Ejemplos: contratos, informes de seguridad, resúmenes de previsiones y datos de cuentas de ventas.<br /><br />- **El contenido está disponible solo con conexión a Internet** para datos empresariales superconfidenciales que causarían daños a la empresa si se compartieran con personas no autorizadas. Esta recomendación da prioridad a la seguridad sobre la flexibilidad. Ejemplos: información sobre empleados y clientes, contraseñas, código fuente e informes financieros previamente anunciados.|
 
 10. Cuando esté seguro de que la plantilla está configurada correctamente para los usuarios, haga clic en **PUBLICAR** para que la plantilla esté visible para los usuarios y elija **GUARDAR**.
 
@@ -168,7 +162,9 @@ Para realizar cualquier cambio en tu plantilla, selecciónala y, a continuación
 ## <a name="see-also"></a>Véase también
 [Configuración de plantillas personalizadas para Azure Rights Management](configure-custom-templates.md)
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
-<!--HONumber=Nov16_HO1-->
+
+<!--HONumber=Jan17_HO4-->
 
 
