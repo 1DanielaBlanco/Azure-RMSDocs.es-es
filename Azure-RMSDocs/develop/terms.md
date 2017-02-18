@@ -1,11 +1,11 @@
 ---
-title: "Términos | Azure RMS"
-description: "Colección de definiciones de terminología específicas de Rights Management Services."
+title: "Terminología de desarrollador AIP | Microsoft Docs"
+description: "Colección de definiciones de terminología de desarrollador específicas de Rights Management Services."
 keywords: 
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -15,15 +15,15 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 38ed5a7128813f52cb62b906b0a5cef4e6d990be
+ms.sourcegitcommit: 9c0977c57ea8e85b6750fe1f5a063059ee343db9
+ms.openlocfilehash: 4ecf686d8e7e26909c8bda4a2d0df7fc61f413bb
 
 
 ---
 
 # <a name="terms"></a>Términos
 
-Colección de definiciones de terminología específicas de Rights Management Services.
+Colección de definiciones de terminología de desarrollador específicas de Azure Information Protection.
 
 **Algoritmo en desuso**  
 Ajuste modal que implementa un esquema de protección de contenido anterior, haciendo referencia específicamente al modo de cifrado de la guía electrónica (ECB). En este SDK, la configuración le permite generar licencias compatibles con la biblioteca MSDRM que se usa en el [AD Rights Management Services SDK](https://msdn.microsoft.com/library/windows/desktop/cc530379.aspx).
@@ -42,6 +42,6 @@ El formato PFile es transparente para el desarrollador de la aplicación ya que 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 
