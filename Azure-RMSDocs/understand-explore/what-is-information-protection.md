@@ -4,15 +4,15 @@ description: "Información general del servicio Azure Information Protection."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/23/2017
+ms.date: 02/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
 translationtype: Human Translation
-ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
-ms.openlocfilehash: c0ea97dc29855ad46271dac251c804ca602cee69
+ms.sourcegitcommit: 4d20462f190042e1ac8d674123296f65c66d9921
+ms.openlocfilehash: 50b83f165dfbcf9b5f66ae8bfc596d1aa910f10d
 
 
 ---
@@ -54,7 +54,7 @@ Estas plantillas pueden ser parte de una configuración de etiqueta, de forma qu
 
 En este ejemplo se muestra cómo puede seleccionar una plantilla para una etiqueta cuando configura la directiva de Azure Information Protection desde Azure Portal:
 
-![Ejemplo de seleccionar plantillas en Azure Portal](../media/templates-infoprotection-callouts.png)
+![Ejemplo de seleccionar plantillas en Azure Portal](../media/info-protect-template-callout.png)
 
 Las mismas plantillas pueden seleccionarse desde el Centro de administración de Exchange para configurar reglas de flujo del correo de Exchange Online, que admiten la tecnología de Azure Rights Management:
 
@@ -66,11 +66,21 @@ Para más información sobre la protección de Azure Rights Management, vea [¿Q
 
 Azure Information Protection se integra con los flujos de trabajo existentes de usuarios finales cuando se instala el cliente de Azure Information Protection. Este cliente instala la barra de Information Protection en aplicaciones de Office, que hemos visto en la primera imagen. Se agrega la misma barra en Excel, PowerPoint y Outlook. Por ejemplo:
 
-![Ejemplo de la barra de Azure Information Protection en Excel](../media/excel2013-infoprotect-bar2.png)
+![Ejemplo de la barra de Azure Information Protection en Excel](../media/excel2016-infoprotect-bar.png)
 
 Esta barra de Information Protection facilita a los usuarios finales la selección de etiquetas para la correcta clasificación, y donde se necesite, estas etiquetas también pueden proteger automáticamente sus documentos y correos electrónicos.
 
-Cuando los usuarios comparten sus documentos protegidos por correo electrónico, pueden usar un sitio de seguimiento de documentos para supervisar quién está teniendo acceso a estos documentos y cuándo. Si se sospecha de uso indebido, también pueden revocar el acceso a estos documentos.
+Para clasificar y proteger otros tipos de archivo y para admitir varios archivos a la vez, los usuarios pueden hacer clic con el botón derecho en los archivos o en una carpeta en el Explorador de archivos de Windows:
+
+![Explorador de archivos Menú contextual Clasificar y proteger con Azure Information Protection](../media/right-click-classify-protect-folder.png)
+
+Cuando los usuarios seleccionan la opción de menú **Clasificar y proteger** en el Explorador de archivos, pueden seleccionar una etiqueta de forma similar a como usan la barra de Information Protection en las aplicaciones de escritorio de Office. También pueden establecer permisos personalizados, si es necesario.
+
+A los usuarios de PowerShell (y administradores) les puede resultar más eficaz utilizar los comandos de PowerShell para administrar y configurar la clasificación y protección de varios archivos. Para que los comandos de PowerShell permitan hacer esto, se incluyen automáticamente con el cliente, aunque también puede instalar el módulo de PowerShell por separado.
+
+Después de haber protegido un documento, los usuarios y administradores pueden usar un sitio de Seguimiento de documentos para supervisar quién accede a los documentos y cuándo. Si se sospecha de uso indebido, también pueden revocar el acceso a estos documentos:
+
+![Icono de revocación de acceso en el sitio de Seguimiento de documentos](../media/tracking-site-revoke-access-icon.png)
 
 
 ## <a name="resources-for-azure-information-protection"></a>Recursos de Azure Information Protection
@@ -111,6 +121,6 @@ Configure y vea Azure Information Protection con nuestro [Tutorial de inicio rá
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

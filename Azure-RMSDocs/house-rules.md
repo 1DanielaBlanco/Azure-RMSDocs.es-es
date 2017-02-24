@@ -1,10 +1,10 @@
 ---
-title: "Condiciones para los comentarios de clientes en el sitio de documentación de Microsoft para Azure Information Protection| Azure Information Protection"
+title: Condiciones para los comentarios de clientes | Azure Information Protection
 description: "Ámbito y propósito de los comentarios y las notas al margen de Livefyre para la documentación de Azure Information Protection."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/23/2016
+ms.date: 02/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,13 +13,13 @@ ms.assetid: 4eafbe72-f537-4e66-80ae-d11894d373f7
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4347e1759c1690436eb37482831c97b93ac8fd5a
-ms.openlocfilehash: 958135678a9b48ca59b3d377439f5cf4b3d1efd7
+ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
+ms.openlocfilehash: 95e1b3502d06c96f666da665739f4f97050c0b67
 
 
 ---
 
-# <a name="house-rules-for-customer-comments-on-the-documentation-site-for-azure-information-protection"></a>Condiciones para los comentarios de clientes en el sitio de documentación para Azure Information Protection
+# <a name="house-rules-for-comments-on-the-azure-information-protection-documentation"></a>Condiciones para los comentarios sobre la documentación de Azure Information Protection
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
@@ -44,6 +44,6 @@ Nota: Los empleados de Microsoft deben utilizar canales de comunicación interno
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

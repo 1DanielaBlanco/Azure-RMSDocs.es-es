@@ -1,5 +1,5 @@
 ---
-title: "Guía de usuario de Azure Information Protection | Azure Information Protection"
+title: "Guía del usuario de Azure Information Protection"
 description: "El cliente de Azure Information Protection para Windows le ayuda a proteger documentos y correos electrónicos importantes frente a personas que no deben verlos, aunque se reenvíe su correo electrónico o se guarde su documento en otra ubicación."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,8 @@ ms.assetid: 2cf46bf9-7d23-4f49-b5c1-7ed7b71c858f
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f8d41ff31b4512ea4c9335ce1ca243095526db84
-ms.openlocfilehash: 1303546ebc5073c0370c1da685cb4f1a74e3e7e1
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 3facc7898e048af6f715410c73c43309419bf957
 
 
 ---
@@ -50,6 +50,6 @@ Lo único que necesita es un equipo que ejecute al menos Windows 7 con Service 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Feb17_HO2-->
+<!--HONumber=Feb17_HO4-->
 
 

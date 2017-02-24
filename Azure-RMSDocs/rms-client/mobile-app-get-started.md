@@ -5,7 +5,7 @@ keywords: "Cómo ver correos electrónicos o archivos con la aplicación de Azur
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/07/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: azure
 ms.service: information-protection
@@ -14,8 +14,8 @@ ms.assetid: 3d5d18d8-7b2e-456c-bb45-48da4eb55544
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: b2fb20fb4613c688a8ab956fbe91d62041801959
+ms.sourcegitcommit: 47de236f07996eed3f1ceb51309c6315d4625128
+ms.openlocfilehash: 32e0315a8a4e6515b0b89b85afefa1bb17591e0b
 
 
 ---
@@ -32,9 +32,9 @@ Debe acceder desde su dispositivo móvil a uno de los archivos que admite la apl
     
     Use otro dispositivo para enviarse a usted mismo un mensaje de correo electrónico protegido por derechos al que pueda acceder desde su dispositivo móvil. Por ejemplo, use Outlook en un equipo Windows. Para ver una lista de clientes de correo electrónico que admiten de forma nativa Rights Management, vea la columna CORREO ELECTRÓNICO de la página [Aplicaciones compatibles con la protección de datos de Azure Rights Management](../get-started/requirements-applications.md).
 
-- **Un archivo PDF protegido por derechos**: use la aplicación para uso compartido de Rights Management en un equipo Windows o una aplicación de PDF que admita de forma nativa Rights Management para enviarse a usted mismo un archivo PDF protegido por derechos como un archivo adjunto en un correo electrónico. También puede cargar un archivo PDF en una biblioteca protegida de SharePoint y, después, compartirlo mediante su dirección de correo electrónico.
+- **Un archivo PDF protegido por derechos**: desde un equipo con Windows, utilice el cliente de Azure Information Protection para [proteger un archivo PDF](client-classify-protect.md) y, después, envíe manualmente este archivo PDF protegido por derechos como datos adjuntos de correo electrónico. También puede cargar un archivo PDF en una biblioteca protegida de SharePoint y, después, compartirlo mediante su dirección de correo electrónico.
 
-- **Un archivo .ptxt, .pjpg o .ppng**: use la aplicación para uso compartido de Rights Management en un equipo Windows y la opción [Uso compartido seguro](sharing-app-protect-by-email.md) para enviarse a usted mismo un archivo protegido como un archivo adjunto de correo electrónico. Para ver la lista completa de tipos de archivo que puede usar para realizar pruebas, consulte la primera tabla de la sección [Tipos de archivo y extensiones de nombre de archivo admitidos](sharing-app-admin-guide-technical.md#supported-file-types-and-file-name-extensions) de la guía del administrador de la aplicación para uso compartido de Rights Management. 
+- **Un .ptxt, .pjpg o .ppng**: desde un equipo con Windows, use el cliente de Azure Information Protection para proteger un archivo de texto o imagen y envíe manualmente este archivo protegido como datos adjuntos de correo electrónico. Para obtener la lista completa de tipos de archivo que puede utilizar para realizar pruebas, vea la sección [Tipos de archivos compatibles para protección y sus extensiones de nombre de archivo](client-admin-guide-file-types.md#supported-file-types-for-protection-and-their-file-name-extensions) de la Guía para administradores del cliente Azure Information Protection. 
 
 Para ver estos archivos en la aplicación de visor de Azure Information Protection, pulse el vínculo o el archivo adjunto del correo electrónico. Cuando se le pida que seleccione una aplicación para abrirlo, seleccione la aplicación **Visor AIP**. Se le pedirá que inicie sesión en su cuenta profesional o educativa. Una vez que se haya autenticado correctamente, la aplicación Azure Information Protection le muestra el correo electrónico o el archivo para que lo lea.
 
@@ -47,6 +47,6 @@ Si tiene otras preguntas, visite nuestro [sitio de Yammer](https://www.yammer.co
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

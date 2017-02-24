@@ -4,7 +4,7 @@ description: "La aplicación de uso compartido de Microsoft Rights Management (R
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/23/2017
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: eaf6d02c-aa36-4915-856e-49bb71ab1484
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 8acc80758eb27cfbe537b705342220418c22fa96
+ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
+ms.openlocfilehash: 1acc6563f8b5da498cb58db46a93160a1fa94022
 
 
 ---
@@ -22,6 +22,9 @@ ms.openlocfilehash: 8acc80758eb27cfbe537b705342220418c22fa96
 # <a name="rights-management-sharing-application-user-guide"></a>Guía de usuario de la aplicación de uso compartido Rights Management
 
 >*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 con SP1, Windows 8 y Windows 8.1*
+
+> [!IMPORTANT]
+> **Finalización de notificación de compatibilidad**: la aplicación Rights Management sharing para Windows se va a sustituir por el [cliente de Azure Information Protection](aip-client.md). La aplicación anterior dejará de ser compatible el 31 de enero de 2018. 
 
 La aplicación de uso compartido de Microsoft Rights Management (RMS) para Windows ayuda a mantener documentos e imágenes importantes a salvo de quienes no deberían verlos, incluso si se envían por correo electrónico o se guardan en otro dispositivo. También puede usar esta aplicación para abrir y usar los archivos que otros usuarios han protegido con la misma tecnología de protección de Rights Management.
 
@@ -69,6 +72,6 @@ Estos son solo algunos ejemplos de cómo puede usar la aplicación RMS sharing p
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

@@ -5,7 +5,7 @@ keywords: "Algunas preguntas frecuentes para ayudarle a usar la aplicación de A
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/06/2017
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: azure
 ms.service: information-protection
@@ -14,8 +14,8 @@ ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f478f65eecb47b6d0f41ece413ce576b6935b916
-ms.openlocfilehash: 9a03ccf3326b51f5c9c19102a1e9d003562cead6
+ms.sourcegitcommit: 0dc8e4d772ef65e3425203e78c5e569f4e107b8e
+ms.openlocfilehash: a6900a6dadd0c323958f42ff441cbcf936a0f582
 
 
 ---
@@ -33,6 +33,8 @@ Esta aplicación le permite ver mensajes de correo electrónico protegidos por d
 ## <a name="can-i-open-pdf-files-that-are-in-sharepoint-protected-libraries-and-onedrive-for-business"></a>¿Puedo abrir archivos PDF que están en bibliotecas protegidas de SharePoint y en OneDrive para la Empresa?
 
 Sí, puede abrir archivos PDF protegidos que otros usuarios han compartido con usted mediante SharePoint y OneDrive para la Empresa. Pulse el vínculo y elija esta aplicación para abrir el archivo automáticamente. 
+
+Esta aplicación también puede abrir archivos PDF protegidos fuera de SharePoint y de OneDrive para la Empresa (archivos PDF y .ppdf protegidos).
 
 ## <a name="can-my-mobile-device-run-the-azure-information-protection-app"></a>¿Puede mi dispositivo móvil ejecutar la aplicación de Azure Information Protection?
 
@@ -73,6 +75,6 @@ Publique su pregunta en nuestro [sitio de Yammer](https://www.yammer.com/AskIPTe
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 
