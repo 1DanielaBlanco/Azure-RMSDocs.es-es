@@ -4,7 +4,7 @@ description: "Se describen las características y los  cambios importantes de es
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 10/31/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
