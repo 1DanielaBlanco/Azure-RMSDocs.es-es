@@ -4,7 +4,7 @@ description: "Para configurar la protección, la clasificación y el etiquetado,
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 01/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 10c7d307cceb1ca5f1b9bf857fdbe9aea0dc321d
+ms.sourcegitcommit: 8ad1ff05f642571bfe7f4170cb88e29d05515e59
+ms.openlocfilehash: 2ad10e378c14dbaef09ccd321379a0dbd7c0d23d
 
 
 ---
@@ -31,7 +31,7 @@ Para configurar la directiva de Azure Information Protection:
 
 2. Vaya a la hoja **Azure Information Protection**: por ejemplo, en el menú del centro, haga clic en **Más servicios** y comience a escribir **Information Protection** en el cuadro Filtro. De los resultados, seleccione **Azure Information Protection**. 
 
-    Luego verá la hoja **Azure Information Protection**, que abre automáticamente la hoja de la directiva global de Information Protection que obtienen todos los usuarios. Contiene los siguientes elementos que puede configurar:
+    A continuación, verá la hoja **Azure Information Protection**, donde puede abrir la directiva **Global** que todos los usuarios obtienen. Opcionalmente, también puede agregar y editar las directivas de ámbito. La directiva **Global** de Azure Information Protection contiene los siguientes elementos que puede configurar:
 
     - Etiquetas que permiten a los usuarios clasificar documentos y correos electrónicos.
 
@@ -83,6 +83,6 @@ Para ver un ejemplo de cómo personalizar la directiva predeterminada y ver el c
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

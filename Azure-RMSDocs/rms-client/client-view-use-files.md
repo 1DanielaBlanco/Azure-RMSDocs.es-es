@@ -1,10 +1,10 @@
 ---
-title: Ver y usar los archivos protegidos por Rights Management | Azure Information Protection
+title: "Visualización y uso de archivos protegidos | Azure Information Protection"
 description: Instrucciones para ver y usar un archivo protegido que requiere tener instalado el cliente de Azure Information Protection.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 02/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: ce1c7d4c-b5ff-4672-8b9a-a72129bac992
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 364891123720daaacacbea1b382b7d101d75cd1a
+ms.sourcegitcommit: 5fcd31a570fbd22a488d0a016dd3d3887918f755
+ms.openlocfilehash: 123fc7078e29ca59174d349efb2366df2f39e023
 
 
 ---
@@ -23,27 +23,40 @@ ms.openlocfilehash: 364891123720daaacacbea1b382b7d101d75cd1a
 
 >*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 8.1, Windows 8 y Windows 7 con SP1*
 
-**[Esta versión del cliente está en versión preliminar y sujeta a cambios.]**
+A menudo, puede ver un archivo protegido con tan solo abrirlo. Por ejemplo, podría hacer doble clic en los datos adjuntos de un mensaje de correo electrónico o en un archivo del Explorador de archivos, o podría hacer clic en un vínculo a un archivo.
 
-Cuando el [cliente de Azure Information Protection está instalado en su equipo](install-client-app.md), puede ver un archivo protegido con solo abrirlo. Por ejemplo, podría hacer doble clic en los datos adjuntos de un mensaje de correo electrónico o en un archivo del Explorador de archivos, o podría hacer clic en un vínculo a un archivo.
+Si no se abre el archivo, puede usar el **visor de Azure Information Protection** para abrirlo. Este visor se instala automáticamente como parte del cliente de Azure Information Protection, o puede instalarlo por separado. Puede instalar el cliente y el visor desde la página [Microsoft Azure Information Protection](https://go.microsoft.com/fwlink/?LinkId=303970) en el sitio web de Microsoft. Para más información sobre cómo instalar el cliente, vea [Descarga e instalación del cliente de Azure Information Protection](install-client-app.md).
 
 > [!NOTE]
-> Para ver el archivo protegido, el servicio Rights Management necesita confirmar primero que está autorizado para ver el archivo (para hacerlo, comprobará su nombre de usuario y contraseña). En algunos casos, esto se puede almacenar en caché y no verá un mensaje que le solicite sus credenciales. En otros casos, se le pedirá que proporcione sus credenciales.
->
-> Si su organización no tiene una cuenta basada en la nube para que la utilice (para Office 365 o Azure) y no usa AD RMS, puede solicitar una cuenta gratuita que acepte sus credenciales para que pueda abrir archivos protegidos por Rights Management:
->
-> -   Para solicitar esta cuenta, haga clic en el vínculo para solicitar [RMS para usuarios](http://go.microsoft.com/fwlink/?LinkId=309469).
->
->     Al suscribirse, use la dirección de correo electrónico de su empresa en lugar de una dirección de correo electrónico personal. Si va a suscribirse porque le enviaron un archivo adjunto protegido por correo electrónico, use la misma dirección de correo electrónico que se usó para enviarle el mensaje de correo electrónico.
-> -   Para obtener más información, consulte [RMS for individuals and Azure Rights Management](../understand-explore/rms-for-individuals.md) (RMS para usuarios y Azure Rights Management).
+> Aunque la instalación del cliente proporciona más funcionalidad, requiere permisos de administrador local y la funcionalidad completa requiere un servicio correspondiente para la organización:
+> 
+> - Azure Information Protection
+> 
+> - Azure Rights Management
+> 
+> - Active Directory Rights Management Services 
+> 
+> Instale el visor si alguien de otra organización le ha enviado un documento protegido o si no tiene permisos de administrador local para el equipo.
+
+## <a name="prompts-for-authentication"></a>Solicitudes de autenticación
+
+Para poder ver el archivo protegido, el servicio Rights Management utilizado para proteger el archivo primero debe confirmar que está autorizado para ver el archivo. Para ello, el servicio comprueba el nombre de usuario y la contraseña. En algunos casos, esto se puede almacenar en caché y no verá un mensaje que le solicite sus credenciales. En otros casos, se le pedirá que proporcione sus credenciales.
+
+Si su organización no tiene una cuenta basada en la nube para que la utilice (para Office 365 o Azure) y no usa una versión local equivalente (AD RMS), puede solicitar una cuenta gratuita que acepte sus credenciales para que pueda abrir archivos protegidos por Rights Management:
+
+-   Para solicitar esta cuenta, haga clic en el vínculo para solicitar [RMS para usuarios](http://go.microsoft.com/fwlink/?LinkId=309469).
+    
+    Al suscribirse, use la dirección de correo electrónico de su empresa en lugar de una dirección de correo electrónico personal. Si va a suscribirse porque le enviaron un archivo adjunto protegido por correo electrónico, use la misma dirección de correo electrónico que se usó para enviarle el mensaje de correo electrónico.
+    
+-   Para obtener más información, consulte [RMS for individuals and Azure Rights Management](../understand-explore/rms-for-individuals.md) (RMS para usuarios y Azure Rights Management).
 
 ## <a name="to-view-and-use-a-protected-file"></a>Para ver y usar un archivo protegido
 
-1. Abra el archivo protegido (por ejemplo, al haciendo doble clic en el archivo o los datos adjuntos o haciendo clic en el vínculo al archivo). Si se le pide que seleccione una aplicación, seleccione **Azure Information Protection Viewer (versión preliminar)**. 
+1. Abra el archivo protegido (por ejemplo, al haciendo doble clic en el archivo o los datos adjuntos o haciendo clic en el vínculo al archivo). Si se le pide que seleccione una aplicación, seleccione **Visor de Azure Information Protection**. 
 
 2. Si ve una página para **iniciar sesión** o **registrarse**: haga clic en **Iniciar sesión** y escriba sus credenciales. Si el archivo protegido se le envió como datos adjuntos, asegúrese de especificar la misma dirección de correo electrónico que la usada para enviar el archivo.
     
-    Si no tiene una cuenta que se acepte, consulte la nota en la parte superior de esta página. Suscríbase a una cuenta gratuita y vuelva a estas instrucciones.
+    Si no tiene una cuenta aceptable, vea la sección [Solicitudes de autenticación](#prompts-for-authentication) de esta página. Suscríbase a una cuenta gratuita y vuelva a estas instrucciones.
 
 3. Se abre una versión de solo lectura del archivo en **Azure Information Protection Viewer**. Si tiene permisos suficientes, puede imprimir el archivo y modificarlo. 
 
@@ -60,13 +73,14 @@ Cuando el [cliente de Azure Information Protection está instalado en su equipo]
 
 
 ## <a name="other-instructions"></a>Otras instrucciones
-Para obtener instrucciones sobre procedimientos, consulte las siguientes secciones de la guía de usuario de Azure Information Protection:
+Puede encontrar más instrucciones sobre procedimientos en la guía del usuario de Azure Information Protection:
 
 -   [¿Qué desea hacer?](client-user-guide.md#what-do-you-want-to-do)
+
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

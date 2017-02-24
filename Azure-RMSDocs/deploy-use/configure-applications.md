@@ -4,7 +4,7 @@ description: "Instrucciones para administradores para configurar aplicaciones y 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: ea09cbc5-b98b-444e-8b60-5bc3cb199c36
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 3c54f0c2f3fcbd312bb3ade521e5dd7f4a12eb85
+ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
+ms.openlocfilehash: e3c8356b2780bae81e69b1d6e258323e194e5bab
 
 
 ---
@@ -26,9 +26,9 @@ ms.openlocfilehash: 3c54f0c2f3fcbd312bb3ade521e5dd7f4a12eb85
 > [!NOTE]
 > Esta información está destinada a los asesores y administradores de TI que han implementado Azure Information Protection. Si busca ayuda e información sobre cómo usar la funcionalidad de Rights Management con una aplicación específica o cómo abrir un archivo protegido por derechos, use la ayuda y las instrucciones que se incluyen con la aplicación.
 >
-> Por ejemplo, para las aplicaciones de Office, haga clic en el icono de Ayuda y escriba términos de búsqueda como **Rights Management** o **IRM**. Para la aplicación RMS sharing para Windows, consulte la [guía de usuario de la aplicación Rights Management sharing](../rms-client/sharing-app-user-guide.md).
+> Por ejemplo, para las aplicaciones de Office, haga clic en el icono de Ayuda y escriba términos de búsqueda como **Rights Management** o **IRM**. Para el cliente de Azure Information Protection para Windows, vea la [Guía del usuario de Azure Information Protection](../rms-client/client-user-guide.md).
 
-Después de haber implementado Azure Information Protection para su organización, use la siguiente información para configurar aplicaciones y servicios compatibles con el servicio Azure Rights Management de Azure Information Protection. Aquí se incluyen aplicaciones de Office, como Word 2013 y Word 2010, y servicios, como Exchange Online (reglas de transporte, prevención de pérdida de datos, no reenviar y cifrado de mensajes) y SharePoint Online (bibliotecas protegidas). Para obtener más información sobre la compatibilidad de estas aplicaciones y servicios con Rights Management, vea [Cómo son compatibles las aplicaciones con Azure Rights Management](../understand-explore/applications-support.md).
+Después de haber implementado Azure Information Protection para su organización, use la siguiente información para configurar aplicaciones, el cliente de Azure Information Protection y los servicios. Por ejemplo, aplicaciones de Office como Word 2016, Word 2013 y Word 2010. Los servicios como Exchange Online (reglas de transporte, prevención de pérdida de datos, no reenviar y cifrado de mensajes) y SharePoint Online (bibliotecas protegidas). Para obtener información sobre cómo estas aplicaciones y estos servicios admiten el servicio de protección de datos de Azure Information Protection, vea [Cómo admiten las aplicaciones el servicio Azure Rights Management](../understand-explore/applications-support.md).
 
 > [!IMPORTANT]
 > Para más información sobre versiones compatibles y otros requisitos, consulte [Requirements for Azure Rights Management](../get-started/requirements-azure-rms.md) (Requisitos para Azure Rights Management).
@@ -45,11 +45,9 @@ Después de haber implementado Azure Information Protection para su organizació
 
     -   [Office 2010](configure-office-apps.md#office-2010)
 
+-   [Cliente de Azure Information Protection: instalación y configuración de clientes](configure-sharing-app.md)
+
 -   [Aplicación Rights Management sharing: Instalación y configuración para clientes](configure-sharing-app.md)
-
-    -   [La aplicación RMS sharing para Windows: Instalación y configuración](configure-sharing-app.md#the-rms-sharing-application-for-windows-installation-and-configuration)
-
-    -   [La aplicación RMS sharing para plataformas móviles: instalación y administración](configure-sharing-app.md#the-rms-sharing-application-for-mobile-platforms-installation-and-management)
 
 
 Para configurar servidores locales como Exchange Server y SharePoint Server, consulte [Deploying the Azure Rights Management connector](deploy-rms-connector.md) (Implementación del conector de Azure Rights Management).
@@ -76,6 +74,6 @@ Después de configurar las aplicaciones para que sean compatibles con el servici
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

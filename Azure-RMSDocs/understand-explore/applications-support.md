@@ -4,7 +4,7 @@ description: "Conozca cómo la mayoría de las aplicaciones de usuario final (co
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/23/2017
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 2cdc7bde-4044-4021-b887-11476f99afd9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
-ms.openlocfilehash: f3e0be224f2a9e587f5be1bbdbbdb3e81b7a4bca
+ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
+ms.openlocfilehash: 53a77c0e312f44fe2210ed19ead6dedeb36a5a78
 
 
 ---
@@ -27,7 +27,7 @@ Use la información siguiente para conocer cómo la mayoría de las aplicaciones
 > [!NOTE]
 > Para comprobar las aplicaciones y versiones que son compatibles con el servicio Azure Rights Management, vea [Aplicaciones compatibles con la protección de datos de Azure Rights Management](../get-started/requirements-applications.md).
 
-En algunos casos, el servicio Azure Rights Management aplica la protección automáticamente, según las directivas que configuren los administradores. Por ejemplo, este es el caso con bibliotecas de SharePoint, archivos clasificados y reglas de transporte de Exchange. En otros casos, los usuarios finales necesitan aplicar por su cuenta la protección de la información desde sus aplicaciones, ya sea seleccionando una plantilla u opciones específicas. Por ejemplo, este es el caso cuando los usuarios comparten un archivo por correo electrónico, o protegen un archivo in situ restringiendo el acceso o el uso a usuarios seleccionados o a usuarios externos a la organización.
+En algunos casos, el servicio Azure Rights Management aplica la protección automáticamente, según las directivas que configuren los administradores. Por ejemplo, este es el caso de las bibliotecas de SharePoint y las reglas de transporte de Exchange. En otros casos, los usuarios finales deben aplicar protección propia de la información desde sus aplicaciones, por ejemplo, mediante la selección de una etiqueta de clasificación configurada para aplicar una plantilla, la selección de una plantilla directamente o la selección de opciones específicas. Los usuarios aplican protección cuando quieren proteger un archivo para uso compartido y restringir su acceso o uso a determinados usuarios o a usuarios ajenos a la organización.
 
 Las plantillas facilitan a los usuarios (y a los administradores que configuran las directivas) la aplicación del nivel de protección adecuado y restringen el acceso a personas de dentro de la organización. Aunque en el servicio Azure Rights Management se incluyen dos plantillas predeterminadas, es probable que quiera crear plantillas personalizadas para reducir las ocasiones en las que es necesario especificar opciones individuales. Para más información, vea [Configuración de plantillas personalizadas para el servicio Azure Rights Management](../deploy-use/configure-custom-templates.md).
 
@@ -64,6 +64,6 @@ Obtenga más información sobre la compatibilidad de los elementos siguientes co
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

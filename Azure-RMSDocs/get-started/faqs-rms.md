@@ -4,7 +4,7 @@ description: "Algunas de las preguntas más frecuentes sobre el servicio de prot
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/16/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 181357691df02c8532a6f28eef689dcacdfd937f
+ms.sourcegitcommit: 4d9cf4f9ab3f73d2b1ba06eb74541f2982d24677
+ms.openlocfilehash: f0fb23195983771fb7e19a626adc78ca28faa1a7
 
 
 ---
@@ -86,9 +86,9 @@ El servicio Azure Rights Management siempre usa una cuenta de Azure Active Direc
 El método de autenticación de estas cuentas puede variar, en función de cómo configurase el administrador de la otra organización las cuentas de Azure Active Directory. Por ejemplo, podrían usar contraseñas creadas para estas cuentas, Multi-Factor Authentication (MFA), federación o contraseñas creadas en Servicios de dominio de Active Directory y después sincronizadas con Active Directory de Azure.
 
 ## <a name="can-i-add-external-users-people-from-outside-my-company-to-custom-templates"></a>¿Puedo agregar usuarios externos (personas ajenas a mi empresa) a plantillas personalizadas?
-Sí. Si crea plantillas personalizadas que los usuarios finales (y los administradores) puedan seleccionar desde las aplicaciones, hará que les resulte más rápido y sencillo aplicar la protección de la información mediante las directivas predefinidas que especifique. Uno de los valores de la plantilla define quién puede acceder al contenido, y puede especificar usuarios y grupos de su organización y usuarios ajenos a su organización.
+Sí. Si crea plantillas personalizadas que los usuarios finales (y los administradores) puedan seleccionar desde las aplicaciones, hará que les resulte más rápido y sencillo aplicar la protección de la información mediante las directivas predefinidas que especifique. Uno de los valores de la plantilla define quién puede acceder al contenido, y puede especificar usuarios y grupos de su organización y usuarios y grupos ajenos a su organización. 
 
-Para especificar usuarios de fuera de su organización, agréguelos como contactos a un grupo que seleccione en el Portal de Azure clásico al configurar las plantillas. O bien, use el [módulo de Windows PowerShell para Azure Rights Management](../deploy-use/install-powershell.md):
+Para especificar usuarios de fuera de su organización, agréguelos como contactos a un grupo que seleccione en el Portal de Azure clásico al configurar las plantillas. Para especificar grupos ajenos a su organización, debe usar el [módulo de Windows PowerShell para Azure Rights Management](../deploy-use/install-powershell.md), que también se puede utilizar para especificar los usuarios externos individuales e incluso todos los usuarios de otra organización:
 
 -   **Use un objeto de Rights Definition para crear o actualizar una plantilla**.    especifique las direcciones de correo electrónico externas y sus derechos en un objeto de Rights Definition, que después usará para crear o actualizar una plantilla. Especifique el objeto de Rights Definition mediante el cmdlet [New-AadrmRightsDefinition](https://msdn.microsoft.com/library/azure/dn727080.aspx) para crear una variable y después suministrar esta variable al parámetro -RightsDefinition con el cmdlet [Add-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727075.aspx) (para una nueva plantilla) o [Set-AadrmTemplateProperty](https://msdn.microsoft.com/library/azure/dn727076.aspx) (si modifica una plantilla existente). Sin embargo, si agrega estos usuarios a una plantilla existente, tendrá que definir objetos de Rights Definition para los grupos existentes en las plantillas y no solo los usuarios externos.
 
@@ -97,15 +97,12 @@ Para obtener más información sobre las plantillas personalizadas, consulte [Co
 ## <a name="does-azure-rms-work-with-dynamic-groups-in-azure-ad"></a>¿Funciona Azure RMS con grupos dinámicos en Azure AD?
 Una característica de Azure AD Premium le permite configurar la pertenencia dinámica para grupos mediante [reglas basadas en atributos](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/). Cuando se crea un grupo de seguridad en Azure AD, este tipo de grupo admite la pertenencia dinámica pero no es compatible con una dirección de correo electrónico, por lo que no se puede usar con el servicio Azure Rights Management. Sin embargo, ahora puede crear un nuevo tipo de grupo en Azure AD que admita la pertenencia dinámica y que esté habilitado para correo. Cuando agrega un nuevo grupo en el Portal de Azure clásico, puede elegir **Office 365 Preview** como **TIPO DE GRUPO**. Dado que este grupo está habilitado para correo, puede usarlo con la protección de Azure Rights Management.
 
-Como indica el nombre de la opción, este nuevo tipo de grupo todavía está en vista previa, pero se espera que próximamente tenga funcionalidades adicionales y documentación nueva. Hasta entonces, nos interesa confirmar que puede usar este nuevo tipo de grupo con la protección de Azure Rights Management.
-
-
 ## <a name="what-devices-and-which-file-types-are-supported-by-azure-rms"></a>¿Qué dispositivos y tipos de archivo admite Azure RMS?
 Para ver la lista de los dispositivos que admiten el servicio Azure Rights Management, consulte [Dispositivos cliente que son compatibles con la protección de datos de Azure Rights Management](../get-started/requirements-client-devices.md). Dado que, actualmente, no todos los dispositivos compatibles admiten todas las funcionalidades de Rights Management, consulte también la tabla incluida en [Aplicaciones compatibles con la protección de datos de Azure Rights Management](../get-started/requirements-applications.md).
 
 El servicio Azure Rights Management puede admitir todos los tipos de archivo. Para archivos de texto, imagen, Microsoft Office (Word, Excel, PowerPoint), archivos .pdf y otros tipos de archivo de aplicaciones, Azure Rights Management proporciona protección nativa que incluye cifrado y cumplimiento de derechos (permisos). Para las demás aplicaciones y tipos de archivo, la protección genérica proporciona encapsulación de archivos y autenticación para comprobar si un usuario está autorizado para abrir el archivo.
 
-Para obtener una lista de extensiones de nombre de archivo que se admiten de forma nativa en Azure Rights Management, vea la sección [Tipos de archivo y extensiones de nombre de archivo compatibles](../rms-client/sharing-app-admin-guide-technical.md#supported-file-types-and-file-name-extensions) en [Guía del administrador de la aplicación de Rights Management sharing](../rms-client/sharing-app-admin-guide.md). Se admiten las extensiones de nombre de archivo que no están enumeradas si se usa la aplicación para uso compartido de RMS, que aplica automáticamente la protección genérica a estos archivos.
+Para obtener una lista de extensiones de nombre de archivo que se admiten de forma nativa en Azure Rights Management, vea [Tipos de archivos compatibles con el cliente de Azure Information Protection](../rms-client/client-admin-guide-file-types.md). Se admiten las extensiones de nombre de archivo que no están enumeradas si se usa el cliente de Azure Information Protection que aplica automáticamente la protección genérica a estos archivos.
 
 ## <a name="when-i-open-an-rms-protected-office-document-does-the-associated-temporary-file-become-rms-protected-as-well"></a>Al abrir un documento de Office protegido con RMS, ¿también se protege con RMS el archivo temporal asociado?
 
@@ -144,8 +141,6 @@ Si revoca un archivo, dicha acción solo se puede aplicar cuando el usuario se a
 
 El valor predeterminado para el período de validez de la licencia de uso para un inquilino es de 30 días. Este valor se puede configurar con el cmdlet de PowerShell [Set-AadrmMaxUseLicenseValidityTime](https://msdn.microsoft.com/library/azure/dn932063.aspx). Este valor se puede reemplazar por una configuración más restrictiva en una plantilla personalizada. 
 
-Los usuarios pueden reemplazar las opciones de configuración del inquilino y de la plantilla cuando usan la aplicación de RMS sharing y seleccionan la opción **Permítame revocar el acceso a estos documentos de forma instantánea**. Esta configuración establece de forma eficaz el período de validez de la licencia de uso en 0. 
-
 Para obtener más información y ejemplos de cómo funciona la licencia de uso, consulte la descripción detallada de [Set-AadrmMaxUseLicenseValidityTime](https://msdn.microsoft.com/library/azure/dn932063.aspx).
 
 ## <a name="can-rights-management-prevent-screen-captures"></a>¿Puede impedir Rights Management las capturas de pantalla?
@@ -165,6 +160,6 @@ A pesar de su nombre y su apariencia, **No reenviar** no es el contrario del der
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

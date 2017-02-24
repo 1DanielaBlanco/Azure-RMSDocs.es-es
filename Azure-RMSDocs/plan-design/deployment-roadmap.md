@@ -4,7 +4,7 @@ description: "Siga estos pasos para preparar, implementar y administrar Azure In
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/21/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed836a1f64ccb3f7e176ad19d27af1021c423cd9
-ms.openlocfilehash: 75f8eb2843005f23fd359d6a4fce073abecbfe0a
+ms.sourcegitcommit: 617ce3204296a4f9a7affc2750684871d60be65e
+ms.openlocfilehash: d2888a1612e1c3521773deae7b49049c702137b4
 
 
 ---
@@ -59,7 +59,7 @@ Si aún no tiene una estrategia de clasificación, revise la [directiva predeter
 
 Vuelva a configurar las etiquetas predeterminadas de Azure Information Protection para realizar los cambios que necesite a fin de adaptarlas a sus decisiones de clasificación. Configure la directiva para el etiquetado manual por parte de los usuarios y escriba directrices para explicar a los usuarios qué etiquetas es necesario aplicar y cuándo. Para más información sobre cómo configurar la directiva de Azure Information Protection, vea [Configuración de la directiva de Azure Information Protection](../deploy-use/configure-policy.md).
 
-Después, implemente el cliente de Azure Information Protection para los usuarios y, como ayuda, ofrezca a los usuarios aprendizaje e instrucciones específicas para saber cuándo tienen que seleccionar las etiquetas. Para más información sobre cómo instalar el cliente, vea [Instalación del cliente de Azure Information Protection](../rms-client/info-protect-client.md).
+Después, implemente el cliente de Azure Information Protection para los usuarios y, como ayuda, ofrezca a los usuarios aprendizaje e instrucciones específicas para saber cuándo tienen que seleccionar las etiquetas. Para más información sobre la instalación y compatibilidad del cliente, vea [Guía para administradores del cliente de Azure Information Protection](../rms-client/client-admin-guide.md).
 
 Después de un período de tiempo, cuando los usuarios estén acostumbrados a etiquetar sus documentos y correos electrónicos, introduzca otras configuraciones más avanzadas. Estos podrían ser algunos ejemplos:
 
@@ -101,28 +101,30 @@ De forma opcional, considera configurar lo siguiente:
     
     Tenga en cuenta que los usuarios pueden aplicar etiquetas en Outlook que a su vez aplicarán la protección de Rights Management incluso si Exchange no está configurado para Information Rights Management (IRM). Sin embargo, hasta que no se configure Exchange para IRM, su organización no disfrutará de toda la funcionalidad derivada del uso de la protección de Azure Rights Management con Exchange. Esta configuración adicional se incluye en el paso 3 para Exchange Online y el paso 6 para Exchange local. 
 
-2. Implementar la aplicación Rights Management sharing
-    
-    Instale la aplicación Rights Management sharing para los usuarios, para que puedan compartir de forma segura documentos por correo electrónico, proteger archivos de forma local y realizar un seguimiento de los documentos compartidos que hayan protegido. Ofrezca a los usuarios aprendizaje para esta aplicación. Para más información, vea [Aplicación Rights Management sharing para Windows](../rms-client/sharing-app-windows.md).
-
-3. Configurar las aplicaciones y los servicios de Office para IRM
+2. Configurar las aplicaciones y los servicios de Office para IRM
     
     Configure las aplicaciones de Office y los servicios para las características de Information Rights Management (IRM) en SharePoint Online o en Exchange Online. Para más información, consulte [Configuración de plantillas personalizadas para Azure Rights Management](../deploy-use/configure-applications.md).
 
-4. Configurar la característica de superusuario para la recuperación de datos
+3. Configurar la característica de superusuario para la recuperación de datos
     
     Si tiene servicios de TI existentes que necesita para inspeccionar los archivos que se protegerán con Azure Rights Management (como soluciones de prevención de pérdida de datos [DLP], puertas de enlace de cifrado de contenido [CEG] y productos antimalware), configure las cuentas de servicio como superusuarios para Azure Rights Management. Para obtener más información, consulte [Configuring super users for Azure Rights Management and discovery services or data recovery](../deploy-use/configure-super-users.md) (Configuración de superusuarios para Azure Rights Management y los servicios de detección o la recuperación de datos).
 
-5. Proteger archivos en masa 
+4. Clasificar y proteger los archivos de forma masiva, según proceda
     
-    Para proteger o desproteger en masa todos los tipos de archivo, instale la herramienta de protección de RMS, que usa el módulo de PowerShell de protección de RMS. Para obtener más información, consulte [Cmdlets de protección de RMS](https://msdn.microsoft.com/library/mt433195.aspx).
+    Los cmdlets de PowerShell que permiten clasificar y proteger archivos, así como quitar la clasificación y la protección, se instalan automáticamente con el cliente de Azure Information Protection. Para más información, vea [Uso de PowerShell con el cliente de Azure Information Protection](..\rms-client\client-admin-guide-powershell.md) en la guía del administrador.
 
 6. Implementar el conector para servidores locales
     
     Si tiene servicios locales que quiere usar con el servicio Azure Rights Management, instale y configure el conector de Rights Management. Para más información, consulte [Implementación del conector de Azure Rights Management](../deploy-use/deploy-rms-connector.md).
 
 ### <a name="step-4-use-and-monitor-your-data-protection-solutions"></a>Paso 4: Usar y supervisar las soluciones de protección de datos
-Ahora está preparado para proteger los datos y registrar la forma en que su compañía usa Rights Management. Para obtener más información sobre cómo contribuir en esta fase de implementación, vea [Ayuda a los usuarios para proteger archivos mediante Azure Rights Management](../deploy-use/help-users.md) y [Registro y análisis del uso del servicio Azure Rights Management](../deploy-use/log-analyze-usage.md).
+Ahora ya está listo para proteger los datos y registrar cómo la empresa usa las etiquetas que se han configurado y la protección de datos de Rights Management. Para obtener información adicional sobre la compatibilidad de esta fase de implementación, vea lo siguiente:
+
+- [Ayuda a los usuarios para proteger archivos mediante el servicio Azure Rights Management](../deploy-use/help-users.md)
+
+-  [Registro y análisis del uso del servicio Azure Rights Management](../deploy-use/log-analyze-usage.md)
+
+- [Archivos de cliente y registro de uso](../rms-client/client-admin-guide-files-and-logging.md)
 
 Si le interesa proteger automáticamente los archivos mediante la infraestructura de clasificación de archivos en un servidor de archivos basado en Windows, consulte [Protección de RMS con la infraestructura de clasificación de archivos (FCI) de Windows Server](../rms-client/configure-fci.md).
 
@@ -157,11 +159,11 @@ De forma opcional, considera configurar lo siguiente:
 
 -   Registro de uso para que puedas controlar cómo se usa Rights Management en tu organización. Este paso puedes hacerlo ahora o más tarde. Para obtener más información, consulte [Registro y análisis del uso del servicio Azure Rights Management](../deploy-use/log-analyze-usage.md).
 
-### <a name="step-3-configure-your-applications-and-services-for-rights-management"></a>Paso 3: Configure las aplicaciones y servicios para Rights Management.
+### <a name="step-3-install-the-client-and-configure-applications-and-services-for-rights-management"></a>Paso 3: Instalar el cliente y configurar aplicaciones y servicios para Rights Management
 
-1. Implementar la aplicación Rights Management sharing
+1. Implementar el cliente de Azure Information Protection
     
-    Instale la aplicación Rights Management sharing para los usuarios con el fin de que puedan compartir de forma segura documentos por correo electrónico, proteger archivos de forma local y realizar un seguimiento de los documentos compartidos que hayan protegido. Ofrezca a los usuarios aprendizaje para esta aplicación. Para más información, vea [Aplicación Rights Management sharing para Windows](../rms-client/sharing-app-windows.md).
+    Instale Azure Information Protection para usuarios, para admitir Office 2010, para proteger correos electrónicos y archivos que no sean documentos de Office y realizar un seguimiento de los documentos protegidos. Ofrezca a los usuarios aprendizaje para este cliente. Para más información, vea [Cliente de Azure Information Protection para Windows](../rms-client/aip-client.md).
 
 2. Configurar las aplicaciones y los servicios de Office para IRM
     
@@ -171,9 +173,9 @@ De forma opcional, considera configurar lo siguiente:
     
     Si tiene servicios de TI existentes que necesita para inspeccionar los archivos que se protegerán con Azure Rights Management (como soluciones de prevención de pérdida de datos [DLP], puertas de enlace de cifrado de contenido [CEG] y productos antimalware), configure las cuentas de servicio como superusuarios para Azure Rights Management. Para obtener más información, consulte [Configuring super users for Azure Rights Management and discovery services or data recovery](../deploy-use/configure-super-users.md) (Configuración de superusuarios para Azure Rights Management y los servicios de detección o la recuperación de datos).
 
-4. Proteger archivos en masa 
+4. Proteger archivos de forma masiva, según proceda 
     
-    Para proteger o desproteger en masa todos los tipos de archivo, instale la herramienta de protección de RMS, que usa el módulo de PowerShell de protección de RMS. Para obtener más información, consulte [Cmdlets de protección de RMS](https://msdn.microsoft.com/library/mt433195.aspx).
+    Los cmdlets de PowerShell que permiten proteger o desproteger varios tipos de archivos de forma masiva se instalan automáticamente con el cliente de Azure Information Protection. Para más información, vea [Uso de PowerShell con el cliente de Azure Information Protection](..\rms-client\client-admin-guide-powershell.md) en la guía del administrador.
 
 5. Implementar el conector para servidores locales
     
@@ -192,6 +194,6 @@ Cuando empiece a usar el servicio Azure Rights Management, es posible que le res
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

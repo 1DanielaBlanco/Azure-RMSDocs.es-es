@@ -4,7 +4,7 @@ description: "Algunas de las preguntas más frecuentes sobre Azure Information P
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/26/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: d55c21efebc0a3053c7b54b363a0085838a245b8
+ms.sourcegitcommit: d704751bcc7a968c204d0bab0dc55776411d9593
+ms.openlocfilehash: c62a8c087907914e249e119b288b9e3c557d04ea
 
 
 ---
@@ -56,19 +56,18 @@ Si no encuentra una respuesta a su pregunta, use los vínculos y los recursos qu
 
 Además, hay preguntas frecuentes diseñadas para usuarios finales:
 
--   [FAQ for Rights Management Sharing Application for Windows](https://technet.microsoft.com/dn467883) (Preguntas más frecuentes sobre la aplicación Rights Management sharing para Windows)
-
--   [FAQ for Rights Management Sharing Application for Mobile and Mac Platforms](https://technet.microsoft.com/dn451248) (Preguntas más frecuentes sobre la aplicación Rights Management sharing para plataformas Mac y móviles)
-
 - [Preguntas más frecuentes sobre la aplicación de Microsoft Azure Information Protection para iOS y Android](../rms-client/mobile-app-faq.md)
 
--   [FAQ for Document Tracking](http://go.microsoft.com/fwlink/?LinkId=523977) (Preguntas más frecuentes sobre seguimiento de documentos)
+- [FAQ for RMS sharing app for Mac computers and Windows Phone](https://technet.microsoft.com/dn451248) (Preguntas más frecuentes sobre la aplicación RMS sharing para equipos Mac y Windows Phone)
+
+- [FAQ for Rights Management Sharing Application for Windows](https://technet.microsoft.com/dn467883) (Preguntas más frecuentes sobre la aplicación Rights Management sharing para Windows)
+
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 
