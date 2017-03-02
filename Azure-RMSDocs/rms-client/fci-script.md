@@ -1,5 +1,5 @@
 ---
-title: "Script de Windows PowerShell para la protección de Azure RMS con FCI del Administrador de recursos del servidor de archivos | Azure Information Protection"
+title: Script de PowerShell para Azure RMS y FCI - AIP
 description: "Script de ejemplo para copiar y editar, como se describe en las instrucciones para la protección de RMS con la infraestructura de protección de archivos de Windows Server."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: ae6d8d0f-4ebc-43fe-a1f6-26b690fd83d0
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 06419438281e0d5a0b976e506d45be2b4eaaef70
-ms.openlocfilehash: 6bccd512c22055e59896e120d9638955ae609393
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 31dc851eeb8e5e20ccc71cf9477a9192ae55deba
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -174,8 +175,3 @@ if (!$Script:isScriptProcess) { exit(-1) } else {exit(0)}
 Volver a [RMS protection with Windows Server File Classification Infrastructure](configure-fci.md) (Protección de RMS con la infraestructura de clasificación de archivos de Windows Server).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO2-->
-
-

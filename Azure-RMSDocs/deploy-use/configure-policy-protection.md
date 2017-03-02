@@ -1,29 +1,30 @@
 ---
-title: "Configuración de una etiqueta para aplicar la protección de Rights Management | Azure Information Protection"
-description: "Puede proteger sus documentos y correos electrónicos más confidenciales mediante el servicio Rights Management, que usa directivas de autorización, identidad y cifrado para ayudar a evitar la pérdida de datos. Esta protección se aplica al configurar una etiqueta para usar una plantilla de Rights Management."
+title: "Configuración de una etiqueta de Azure Information Protection para protección"
+description: "Puede proteger sus documentos y mensajes de correo electrónico más confidenciales mediante la configuración de una etiqueta para utilizar la protección de Rights Management."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/16/2017
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
 translationtype: Human Translation
-ms.sourcegitcommit: f71b5d98d03453ee49ea177fcb894c28f0f2688f
-ms.openlocfilehash: 9224cdbd5c7e1aa1453328150b903db386af2322
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: cd0fa432bbec97b39e7c32f0b40594840d57fb04
+ms.lasthandoff: 02/24/2017
 
 
 ---
 
-# <a name="how-to-configure-a-label-to-apply-rights-management-protection"></a>Configuración de una etiqueta para aplicar protección de Rights Management
+# <a name="how-to-configure-a-label-for-rights-management-protection"></a>Configuración de una etiqueta para la protección de Rights Management
 
 >*Se aplica a: Azure Information Protection*
 
-Puede proteger sus documentos y correos electrónicos más confidenciales mediante el servicio Rights Management, que usa directivas de autorización, identidad y cifrado para ayudar a evitar la pérdida de datos. Esta protección se aplica al configurar una etiqueta para usar una plantilla de Rights Management. 
+Puede proteger sus documentos y correos electrónicos más confidenciales mediante el servicio Rights Management, que usa directivas de autorización, identidad y cifrado para ayudar a evitar la pérdida de datos. Esta protección se aplica al configurar una etiqueta para usar una plantilla de Rights Management para documentos y correos electrónicos, o la opción **No reenviar** para los mensajes de correo electrónico de Outlook. 
 
-Esta plantilla puede ser una de las plantillas predeterminadas que se crean automáticamente al activar Azure Rights Management o una plantilla personalizada. Las plantillas departamentales de Azure Rights Management se admiten pero solo aplican la protección cuando el autor del documento o del correo electrónico está dentro del ámbito configurado de la plantilla. Si el usuario no está dentro del ámbito, verá un mensaje para indicar que Azure Information Protection no puede aplicar la etiqueta.
+La plantilla puede ser una de las plantillas predeterminadas que se crean automáticamente al activar Azure Rights Management o una plantilla personalizada. Las plantillas departamentales de Azure Rights Management se admiten pero solo aplican la protección cuando el autor del documento o del correo electrónico está dentro del ámbito configurado de la plantilla. Si el usuario no está dentro del ámbito, verá un mensaje para indicar que Azure Information Protection no puede aplicar la etiqueta.
 
 ## <a name="how-the-protection-works"></a>Funcionamiento de la protección
 
@@ -61,20 +62,25 @@ No es necesario que Exchange esté configurado para Information Rights Managemen
 
 3. En la hoja **Directiva**, seleccione la etiqueta que desea configurar, que abre la hoja **Etiqueta**. 
 
-4. En la hoja **Etiqueta**, busque **Set permissions for documents and emails containing this label** (Establecer permisos para documentos y correos electrónicos que contengan esta etiqueta). 
+4. En la hoja **Etiqueta**, busque **Set permissions for documents and emails containing this label** (Establecer permisos para documentos y correos electrónicos que contengan esta etiqueta) y seleccione una de las opciones siguientes.
     
-    Seleccione **Proteger** para aplicar la protección o seleccione **Quitar protección** para quitar la protección que puede aplicarse a un correo electrónico o documento:
+    - **No configurado**: seleccione esta opción si la etiqueta está configurada actualmente para aplicar la protección y ya no desea que la etiqueta seleccionada aplique la protección. Ahora, vaya al paso 10.
+    
+    - **Proteger**: seleccione esta opción para aplicar la protección y, a continuación, vaya al paso 5.
+    
+    - **Quitar la protección**: seleccione esta opción para quitar la protección si está configurada para un documento o correo electrónico. Ahora, vaya al paso 10.
+        
+        Tenga en cuenta que los usuarios deben tener permisos para quitar la protección de Rights Management para aplicar una etiqueta con esta opción. Esta opción requiere que los usuarios tengan el [derecho de uso](../deploy-use/configure-usage-rights.md) **Exportar** o **Control total**, o que sean propietarios de Rights Management (lo que concede automáticamente el derecho de uso Control total) o [superusuarios para Azure Rights Management](../deploy-use/configure-super-users.md). Las plantillas de Azure Rights Management predeterminadas no incluyen los derechos de uso que permiten a los usuarios quitar la protección. 
+        
+        Si los usuarios no tienen permisos para quitar la protección de Rights Management y seleccionan una etiqueta configurada con la opción **Quitar protección**, se muestra el mensaje indicando que **Azure Information Protection no puede aplicar esta etiqueta. Si el problema persiste, póngase en contacto con el administrador.**
 
-    - Si seleccionó **Proteger**, vaya al paso 5.
-    - Si seleccionó **Quitar protección**, vaya al paso 11.
-
-5. Si selecciona **Proteger**, haga clic ahora en la barra **Protección** para abrir la hoja **Permisos**:
+5. Si seleccionó **Proteger**, seleccione ahora **Protección** para abrir la hoja **Permisos**:
     
     ![Configurar la protección para una etiqueta de Azure Information Protection](../media/info-protect-protection-bar.png)
 
 6. En la hoja **Permisos**, seleccione **Azure RMS** o **HYOK (AD RMS)**. 
     
-    En la mayoría de los casos, seleccionará **Azure RMS** para la configuración de permisos. No seleccione **HYOK (AD RMS)** a menos que haya leído y comprendido los requisitos previos y restricciones que acompañan a esta configuración "*mantenga su propia clave*" (HYOK). Para obtener más información, consulte [Requisitos y restricciones de Mantenga su propia clave (HYOK) para la protección de AD RMS](configure-adrms-restrictions.md).
+    En la mayoría de los casos, seleccionará **Azure RMS** para la configuración de permisos. No seleccione **HYOK (AD RMS)** a menos que haya leído y comprendido los requisitos previos y restricciones que acompañan a esta configuración "*mantenga su propia clave*" (HYOK). Para obtener más información, consulte [Requisitos y restricciones de Mantenga su propia clave (HYOK) para la protección de AD RMS](configure-adrms-restrictions.md). Para continuar con la configuración de Hold your own key (HYOK, Mantenga su propia clave) (AD RMS), vaya al paso 9.
     
 7. Seleccione **No reenviar** si quiere establecer esta opción de Outlook para correos electrónicos, o bien **Seleccionar plantilla**. 
     
@@ -86,27 +92,16 @@ No es necesario que Exchange esté configurado para Information Rights Managemen
     
         Observe que siempre se muestran todas las plantillas, a pesar de vaya a configurar una directiva de ámbito. Por ejemplo, va a configurar una directiva de ámbito para el grupo Marketing. Las plantillas de Azure RMS que puede seleccionar no se limitarán a las plantillas cuyo ámbito sea el grupo Marketing, y es posible seleccionar una plantilla de departamento que los usuarios seleccionados no pueden usar. Para facilitar la configuración y reducir la solución de problemas, puede nombrar la plantilla de departamento de forma que coincida con la etiqueta de la directiva de ámbito. 
             
-9. Si ha seleccionado **Seleccionar plantilla** para **HYOK (AD RMS)**: proporcione el GUID de la plantilla y la dirección URL de administración de licencias del clúster de AD RMS. [Más información](configure-adrms-restrictions.md#locating-the-information-to-specify-ad-rms-protection-with-an-azure-information-protection-label)
+9. Si ha seleccionado **Seleccionar plantilla** para **HYOK (AD RMS)**: proporcione el GUID de la plantilla y la dirección URL de administración de licencias del clúster de AD RMS. [Más información](configure-adrms-restrictions.md#locating-the-information-to-specify-ad-rms-protection-with-an-azure-information-protection-label).
 
-10. Haga clic en **Listo** para cerrar la hoja **Permisos** y ver la opción de **No reenviar** o la pantalla de la plantilla elegida en la barra **Protección** de la hoja **Etiqueta**.
+10. Haga clic en **Listo** para cerrar la hoja **Permisos** y ver la opción de **No reenviar** o la pantalla de la plantilla elegida para la opción **Protección** de la hoja **Etiqueta**.
 
-11. Si selecciona **Quitar protección**:
-    
-    Los usuarios deben tener permisos para quitar la protección de Rights Management para aplicar una etiqueta con esta opción. Esta opción requiere que tengan el **derecho de uso** **Exportar** (para documentos de Office) o [Control total](../deploy-use/configure-usage-rights.md), o que sean el propietario de Rights Management (concede automáticamente el derecho de uso Control total) o un [superusuario para Azure Rights Management](../deploy-use/configure-super-users.md). Las plantillas de Rights Management predeterminadas no incluyen los derechos de uso que permite a los usuarios quitar la protección. 
-    
-    Si los usuarios no tienen permisos para quitar la protección de Rights Management y seleccionar esta etiqueta con la opción **Quitar protección**, se muestra el mensaje indicando que **Azure Information Protection no puede aplicar esta etiqueta. Si el problema persiste, póngase en contacto con el administrador.**
+10. En la hoja **Etiqueta**, haga clic en **Guardar**.
 
-6. En la hoja **Etiqueta**, haga clic en **Guardar**.
-
-7. Para que los cambios estén disponibles para los usuarios, en la hoja **Azure Information Protection**, haga clic en **Publicar**.
+11. Para que los cambios estén disponibles para los usuarios, en la hoja **Azure Information Protection**, haga clic en **Publicar**.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
 Para más información sobre cómo configurar la directiva de Azure Information Protection, use los vínculos de la sección [Configuring your organization's policy](configure-policy.md#configuring-your-organizations-policy) (Configuración de la directiva de la organización).  
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO3-->
-
-

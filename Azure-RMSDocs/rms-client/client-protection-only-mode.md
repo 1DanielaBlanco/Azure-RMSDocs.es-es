@@ -1,5 +1,5 @@
 ---
-title: "Modo de solo protección para el cliente de Azure Information Protection"
+title: "Modo de solo protección para Azure Information Protection"
 description: "Información para los usuarios que ejecutan el cliente de Azure Information Protection en modo de solo protección."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 16042717-0d7a-41f5-87e3-12826fda35df
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
-ms.openlocfilehash: bc81b8587e999e6cbb036942e1c5d37e1e2b319b
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 55254496b23e49fe7e2dbd19721a824739004b21
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -50,9 +51,4 @@ Cuando se ejecuta el cliente de Azure Information Protection sin una directiva d
 - Acceder al sitio de Seguimiento de documentos desde las aplicaciones de Office. Sin embargo, debe tener una suscripción válida para realizar un seguimiento de los documentos y revocarlos desde este sitio.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]  
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

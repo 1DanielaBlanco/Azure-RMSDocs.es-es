@@ -1,10 +1,10 @@
 ---
-title: "Configuración de la directiva | Azure Information Protection"
+title: "Configuración de la directiva de Azure Information Protection"
 description: "Para configurar la protección, la clasificación y el etiquetado, debe configurar la directiva de Azure Information Protection."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/13/2016
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8ad1ff05f642571bfe7f4170cb88e29d05515e59
-ms.openlocfilehash: 2ad10e378c14dbaef09ccd321379a0dbd7c0d23d
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 2510c14fc10411783838516f45fdfd06fd73350d
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -67,7 +68,7 @@ Use la siguiente información como ayuda para configurar la directiva de Azure I
 
 - [Cambio o personalización de una etiqueta existente](configure-policy-change-label.md)
 
-- [Configuración de una etiqueta para aplicar protección](configure-policy-protection.md)
+- [Configuración de una etiqueta para la protección](configure-policy-protection.md)
 
 - [Configuración de una etiqueta para marcas visuales](configure-policy-markings.md)
 
@@ -80,9 +81,4 @@ Use la siguiente información como ayuda para configurar la directiva de Azure I
 Para ver un ejemplo de cómo personalizar la directiva predeterminada y ver el comportamiento resultante en una aplicación de Office, pruebe el [tutorial de inicio rápido de Azure Information Protection](../get-started/infoprotect-quick-start-tutorial.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

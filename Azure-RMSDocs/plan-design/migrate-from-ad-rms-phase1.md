@@ -1,10 +1,10 @@
 ---
-title: "Migración desde AD RMS a Azure Information Protection: Fase 1 | Azure Information Protection"
+title: "Migración de AD RMS-Azure Information Protection: fase 1"
 description: "La fase 1 de la migración desde AD RMS a Azure Information Protection, donde se describen los pasos 1 a 4 de la migración de AD RMS a Azure Information Protection."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/23/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 774ea4fe8bb5e0ae7335bb3c106b57393167ee39
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: d38d7f89ba780b519ebe4a182161deb5bc9331b5
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -165,7 +166,7 @@ Después puede publicar o archivar estas plantillas como lo haría con cualquier
 
 ## <a name="procedure-if-your-templates-in-ad-rms-used-the-anyone-group"></a>Procedimiento si las plantillas de AD RMS usan el grupo **CUALQUIERA**
 
-Si las plantillas de AD RMS estaban asignadas al grupo **CUALQUIERA**, este grupo se quitará automáticamente al importar las plantillas en Azure Information Protection. Necesita agregar de forma manual el grupo o usuarios equivalentes y los mismos derechos a las plantillas importadas. El grupo equivalente de Azure Information Protection se denomina **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@<tenant_name>.onmicrosoft.com**. Por ejemplo, este grupo puede tener un aspecto similar al siguiente para Contoso: **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**.
+Si las plantillas de AD RMS estaban asignadas al grupo **CUALQUIERA**, este grupo se quitará automáticamente al importar las plantillas en Azure Information Protection. Necesita agregar de forma manual el grupo o usuarios equivalentes y los mismos derechos a las plantillas importadas. El grupo equivalente de Azure Information Protection se denomina **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@<nombre_de_inquilino>.onmicrosoft.com**. Por ejemplo, este grupo puede tener un aspecto similar al siguiente para Contoso: **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**.
 
 Si no está seguro de si las plantillas de AD RMS incluyen el grupo CUALQUIERA, puede usar el siguiente script de Windows PowerShell de ejemplo para identificar estas plantillas. Para más información sobre el uso de Windows PowerShell con AD RMS, vea [Using Windows PowerShell to Administer AD RMS](https://technet.microsoft.com/library/ee221079%28v=ws.10%29.aspx) (Uso de Windows PowerShell para administrar AD RMS).
 
@@ -223,9 +224,4 @@ Remove-PSDrive MyRmsAdmin -force
 Vaya a [Fase 2: Configuración del lado cliente](migrate-from-ad-rms-phase2.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

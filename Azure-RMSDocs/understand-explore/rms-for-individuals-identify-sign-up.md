@@ -1,5 +1,5 @@
 ---
-title: "Cómo averiguar si los usuarios se han suscrito para obtener RMS para usuarios | Azure Information Protection"
+title: "¿Los usuarios se suscribieron para obtener RMS para individuos? - AIP"
 description: "Como administrador, ¿cómo sabes si tus usuarios se han registrado para RMS para usuarios? Puede usar cualquiera de los métodos descritos en este artículo, o bien una combinación de ellos."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: a36c3d99-a794-4f7a-aafb-64a950f1fcf9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
-ms.openlocfilehash: 5dae8412277be37cd3ff8cfe76c71a8109277146
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: e696bf596255b5e28aa5589cfc18715f100c5b07
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -35,8 +36,3 @@ Como administrador, ¿cómo sabes si tus usuarios se han registrado para RMS par
 -   Manténgase atento a las extensiones de nombre de archivos creadas por el cliente de Azure Information Protection o por la aplicación Rights Management sharing. Las extensiones de nombre de archivo .pfile y .ppdf son el ejemplo más notorio, pero hay otros archivos que cambian su extensión de nombre de archivo cuando están protegidos de forma nativa por el servicio Rights Management. Para más información, vea [Tipos de archivo compatibles para protección](../rms-client/client-admin-guide-file-types.md#file-types-supported-for-protection) en la guía para administradores del cliente de Azure Information Protection.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO2-->
-
-

@@ -1,5 +1,5 @@
 ---
-title: "Mapa de ruta de implementación de Azure Information Protection | Azure Information Protection"
+title: "Mapa de ruta de implementación de Azure Information Protection"
 description: "Siga estos pasos para preparar, implementar y administrar Azure Information Protection en su organización."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 617ce3204296a4f9a7affc2750684871d60be65e
-ms.openlocfilehash: d2888a1612e1c3521773deae7b49049c702137b4
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 4128188d0fba56a5b61fe16a6f0128ec2dc24c4a
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -97,7 +98,7 @@ De forma opcional, considera configurar lo siguiente:
 
 1. Actualizar la directiva de Azure Information Protection para aplicar la protección de datos
     
-    Modifique la directiva de Azure Information Protection para que una o más etiquetas apliquen la protección de Rights Management. Para más información, consulte [Configuración de una etiqueta para aplicar protección de Rights Management](../deploy-use/configure-policy-protection.md).
+    Modifique la directiva de Azure Information Protection para que una o más etiquetas apliquen la protección de Rights Management. Para obtener más información, consulte [Configuración de una etiqueta para aplicar protección de Rights Management](../deploy-use/configure-policy-protection.md).
     
     Tenga en cuenta que los usuarios pueden aplicar etiquetas en Outlook que a su vez aplicarán la protección de Rights Management incluso si Exchange no está configurado para Information Rights Management (IRM). Sin embargo, hasta que no se configure Exchange para IRM, su organización no disfrutará de toda la funcionalidad derivada del uso de la protección de Azure Rights Management con Exchange. Esta configuración adicional se incluye en el paso 3 para Exchange Online y el paso 6 para Exchange local. 
 
@@ -191,9 +192,4 @@ Si le interesa proteger automáticamente los archivos mediante la infraestructur
 Cuando empiece a usar el servicio Azure Rights Management, es posible que le resulte útil usar Windows PowerShell para procesar con scripts o automatizar cambios administrativos. Para más información, vea [Administración del servicio Azure Rights Management mediante Windows PowerShell](../deploy-use/administer-powershell.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

@@ -1,18 +1,19 @@
 ---
-title: "Paso 2 del tutorial de inicio rápido | Azure Information Protection"
+title: "Paso 2 del tutorial de inicio rápido - AIP"
 description: "Paso 2 del tutorial introductorio para probar rápidamente Microsoft Azure Information Protection para su organización, que debería durar unos 20 minutos."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/13/2017
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: 8ad1ff05f642571bfe7f4170cb88e29d05515e59
-ms.openlocfilehash: f3ec39af7bdbc63169c09eefa54c29cfc4cee40b
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 39dfa8a1c4dabf32f8b62f08a674152f41a5b96a
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -60,9 +61,15 @@ Ahora cambiaremos la configuración de una de las etiquetas, **Confidencial**:
     
     En la nueva hoja **Etiqueta: Confidencial**, verá la configuración disponible para cada etiqueta. 
 
-2. En la hoja **Etiqueta: Confidencial**, ubique la sección **Configuración de la plantilla de RMS para proteger documentos y correos electrónicos que contienen esta etiqueta**:
+2. En la hoja **Etiqueta: Confidencial**, ubique la sección **Set permissions for documents and emails containing this label** (Configuración de permisos para documentos y correos electrónicos que contienen esta etiqueta).
+
+    Seleccione la opción **Protección**:
     
-    Para la opción **Seleccionar plantilla RMS**, mantenga la opción predeterminada de **Azure RMS**. A continuación, en **Select RMS template** (Seleccionar plantilla de RMS), haga clic en el cuadro desplegable y seleccione la plantilla predeterminada **\<nombre de su organización > - Confidencial**. 
+    ![Configurar la protección para una etiqueta de Azure Information Protection](../media/info-protect-protection-bar.png) 
+    
+    Con esta acción se abre la hoja **Permisos**.
+    
+3. En la hoja **Permisos**, asegúrese de que están activadas las opciones **Azure RMS** y **Seleccionar plantilla**; luego haga clic en el cuadro desplegable y seleccione la plantilla predeterminada **\<nombre de su organización > - Confidencial**.     
     
     Por ejemplo, si el nombre de la organización es VanArsdel, Ltd, verá y seleccionará **VanArsdel, Ltd - Confidencial**: 
     
@@ -70,7 +77,9 @@ Ahora cambiaremos la configuración de una de las etiquetas, **Confidencial**:
     
     Si ha desactivado esta plantilla predeterminada de Azure Rights Management, seleccione una plantilla alternativa. Pero si selecciona una plantilla de departamento, asegúrese de que su cuenta esté incluida en el ámbito.
     
-3. Busque la sección **Establecer distintivo visual**:
+4. Haga clic en **Listo** para guardar los cambios y cerrar la hoja **Permisos**.
+
+5. De nuevo en la hoja **Etiqueta: Confidencial**, busque la sección **Establecer un distintivo visual**:
     
     Para la opción **Los documentos que tienen esta etiqueta tienen una marca de agua**, haga clic en **Activado** y, en el cuadro **Texto**, escriba el nombre de la organización. Por ejemplo, **VanArsdel, Ltd**: 
     
@@ -78,7 +87,7 @@ Ahora cambiaremos la configuración de una de las etiquetas, **Confidencial**:
     
     Aunque puede cambiar el tamaño, el color y el diseño de las marcas de agua, dejaremos estas opciones como predeterminadas por ahora.
     
-4. Busque la sección **Configurar condiciones para aplicar automáticamente esta etiqueta**:
+6. Busque la sección **Configurar condiciones para aplicar automáticamente esta etiqueta**:
     
     Haga clic en **Agregar una nueva condición** y, después, en la hoja **Condición**, seleccione lo siguiente:
     
@@ -94,23 +103,23 @@ Ahora cambiaremos la configuración de una de las etiquetas, **Confidencial**:
     
     Haga clic en **Guardar** para volver a la hoja **Etiqueta: Confidencial**.
 
-5. En la hoja **Etiqueta: Confidencial**, verá que aparece **Número de tarjeta de crédito** como **NOMBRE DE CONDICIÓN** con **1** **REPETICIONES**:
+7. En la hoja **Etiqueta: Confidencial**, verá que aparece **Número de tarjeta de crédito** como **NOMBRE DE CONDICIÓN** con **1** **REPETICIONES**:
     
     ![Paso 3 del tutorial de inicio rápido de Azure Information Protection: configurar la condición de la tarjeta de crédito](../media/step2-see-condition.png)
 
-6. Para **Seleccionar cómo se aplica esta etiqueta**: mantenga el valor predeterminado de **Recomendado** y no cambie la sugerencia de la directiva predeterminada:
+8. Para **Seleccionar cómo se aplica esta etiqueta**: mantenga el valor predeterminado de **Recomendado** y no cambie la sugerencia de la directiva predeterminada:
     
     ![Paso 3 del tutorial de inicio rápido de Azure Information Protection: clasificación recomendada](../media/step2-keep-recommended.png)
 
-7. En el cuadro **Escribir notas para mantenimiento interno**, escriba **Solo con fines de prueba**:
+9. En el cuadro **Escribir notas para mantenimiento interno**, escriba **Solo con fines de prueba**:
     
     ![Paso 3 del tutorial de inicio rápido de Azure Information Protection: escribir notas](../media/step2-type-notes.png)
 
-8. Haga clic en **Guardar** en esta hoja **Etiqueta: confidencial**. A continuación, en la hoja **Policy: Global** (Directiva:Global), haga clic de nuevo en **Guardar**.
+10. Haga clic en **Guardar** en esta hoja **Etiqueta: confidencial**. A continuación, en la hoja **Policy: Global** (Directiva:Global), haga clic de nuevo en **Guardar**.
 
     ![Paso 3 del tutorial de inicio rápido de Azure Information Protection - Directiva predeterminada configurada](../media/info-protect-policy-configured.png)
 
-9. Ahora que hemos realizado nuestros cambios y los hemos guardado, queremos que estén disponibles para los usuarios, así que en la hoja inicial de **Azure Information Protection**, haga clic en **Publicar** y luego en **Sí** para confirmar.
+11. Ahora que hemos realizado nuestros cambios y los hemos guardado, queremos que estén disponibles para los usuarios, así que en la hoja inicial de **Azure Information Protection**, haga clic en **Publicar** y luego en **Sí** para confirmar.
 
 Puede cerrar el portal de Azure o dejarlo abierto para probar opciones de configuración adicionales cuando haya terminado este tutorial.
 
@@ -126,8 +135,3 @@ Ahora que ya ha dado un vistazo a la directiva predeterminada y ha hecho algunos
 [Paso 3 &#187;](infoprotect-tutorial-step3.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO2-->
-
-

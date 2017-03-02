@@ -1,5 +1,5 @@
 ---
-title: "Compatibilidad de servidor local con la protección de datos | Azure Information Protection"
+title: "Compatibilidad de servidor para la protección de datos de Azure RMS - AIP"
 description: Identifique los productos del servidor local que pueden usar el servicio Azure Rights Management de Azure Information Protection con el conector de Rights Management.
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: e7d91f2d-d6a7-4c7e-821f-c94e4be9967d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
-ms.openlocfilehash: 815f543c3dc296c508523fe9e09cb80e41d4f85b
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 22beea6ab33d6f3fc0c36ff136dd1bc44714a997
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -63,8 +64,3 @@ Para más información sobre cómo configurar el conector de Rights Management p
 Para buscar otros requisitos, consulte [Requisitos de Azure Rights Management](requirements-azure-rms.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO2-->
-
-

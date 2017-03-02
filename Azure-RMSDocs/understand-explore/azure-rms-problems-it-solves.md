@@ -1,5 +1,5 @@
 ---
-title: "Qué problemas resuelve Azure RMS | Azure Information Protection"
+title: Problemas resueltos por Azure Rights Management - AIP
 description: "Identifique problemas o requisitos que puede tener su organización y obtenga información sobre cómo la tecnología de Azure RMS puede abordarlos."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: b551c62d-5ac6-4359-85b3-90693e77b37f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 949cbe07234f78ca046aec1fc2590adf86f00a06
-ms.openlocfilehash: 40f242c31553545651794e6e5a8f744963bb541b
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 5051ed614d8611c89e037ea633f15b7f0f344020
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -75,8 +76,3 @@ Para ver el aspecto del servicio Azure Rights Management, para los administrador
 Si le interesa información más técnica sobre el funcionamiento de Azure Rights Management, vea [¿Cómo funciona Azure RMS?](how-does-it-work.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO2-->
-
-

@@ -1,5 +1,5 @@
 ---
-title: Compatibilidad de aplicaciones con el servicio Azure Rights Management | Azure Information Protection
+title: Compatibilidad de las aplicaciones con Azure Rights Management - AIP
 description: "Conozca cómo la mayoría de las aplicaciones de usuario final (como las aplicaciones de Office, Word, Excel, PowerPoint y Outlook) y los servicios (como Exchange y SharePoint) más usados pueden utilizar el servicio Azure Rights Management de Azure Information Protection para ayudar a proteger los documentos y correos electrónicos de su organización."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 2cdc7bde-4044-4021-b887-11476f99afd9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
-ms.openlocfilehash: 53a77c0e312f44fe2210ed19ead6dedeb36a5a78
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 7553e2719195448c71653ead9950f92bac3928c5
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -61,9 +62,4 @@ Obtenga más información sobre la compatibilidad de los elementos siguientes co
 -   [Otras aplicaciones compatibles con las API de RMS](api-support.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

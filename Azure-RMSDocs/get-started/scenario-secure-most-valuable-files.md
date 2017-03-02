@@ -1,10 +1,10 @@
 ---
-title: 'Escenario: Proteger (algunos) archivos de gran valor | Azure Information Protection'
+title: 'Escenario de API: proteger (algunos) archivos de gran valor'
 description: "En este escenario y en la documentación de usuario correspondiente se usa Azure Rights Management para proteger manualmente y de forma personalizada unos pocos archivos que se han identificado como los más valiosos, lo que garantiza el máximo nivel de protección frente a accesos no autorizados."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 02/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 95f1844a-612c-4e67-bbe6-4b6b92295221
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 0f2fb608be647e967d8e5857414f25ebba1d4d29
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: f096a4ad7333d24c7bce0dd729b40ebb203726c5
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -146,8 +147,3 @@ Ahora los siguientes archivos tienen aplicado un nivel muy alto de protección, 
 -   Si no puede tener acceso a estos archivos o si nota cambios sospechosos en ellos, llame a la línea de asignación de nivel de soporte (disponible ininterrumpidamente), que encontrará en un mensaje de correo protegido enviado por el departamento de TI.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO4-->
-
-

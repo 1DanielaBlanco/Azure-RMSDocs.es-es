@@ -1,10 +1,10 @@
 ---
-title: "Cómo pueden los administradores controlar las cuentas que se han creado para RMS para usuarios | Azure Information Protection"
+title: Control de las cuentas creadas para RMS para individuos - AIP
 description: "Cómo puede controlar las cuentas de usuario de Azure Active Directory si no desea convertir la suscripción a RMS para usuarios de la organización en una suscripción de pago."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: a83880d0-f0f9-4a32-9e00-2f6635d7cc8d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
-ms.openlocfilehash: 19b71ee6016971e1d989db8961b8b77a50fd0124
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: ff8cd150ce438a7b9ad5203dfb6d9d01c1a0d85a
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -46,8 +47,3 @@ Para controlar las cuentas de usuario en el directorio de Azure, o para impedir 
 Si los usuarios en lugar de los administradores pueden crear sus cuentas en Azure Active Directory para RMS para personas, ¿cómo puede saber si lo han realizado?  Consulte [Cómo averiguar si los usuarios se suscribieron para obtener RMS para usuarios](rms-for-individuals-identify-sign-up.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO4-->
-
-

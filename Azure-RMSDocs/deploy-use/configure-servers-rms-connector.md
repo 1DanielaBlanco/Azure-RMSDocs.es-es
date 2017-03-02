@@ -1,5 +1,5 @@
 ---
-title: "Configuración de servidores para el conector de Azure Rights Management | Azure Information Protection"
+title: "Configuración de servidores para el conector de Rights Management - AIP"
 description: "Información para ayudarlo a configurar los servidores locales que utilizarán el conector Azure Rights Management (RMS). Estos procedimientos incluyen el paso 5 de la implementación del conector de Azure Rights Management."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 47de236f07996eed3f1ceb51309c6315d4625128
-ms.openlocfilehash: faff30ed2115307ff51afc24db8d08233eee9d14
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 8837b6187aee8bc041df7185527470297e913f49
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -257,8 +258,3 @@ Puede usar el [Mapa de ruta de implementación de Azure Information Protection](
 Para supervisar el conector de RMS, vea [Monitor the Azure Rights Management connector (Supervisión del conector de Azure Rights Management)](monitor-rms-connector.md). 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO2-->
-
-

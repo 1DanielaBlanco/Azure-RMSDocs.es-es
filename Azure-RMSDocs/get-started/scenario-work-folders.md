@@ -1,10 +1,10 @@
 ---
-title: "Escenario: Configurar carpetas de trabajo para la protección persistente | Azure Information Protection"
+title: "Escenario de AIP: configuración de carpetas de trabajo para la protección de RMS"
 description: "En este escenario y en la documentación de usuario correspondiente se usa protección de Azure Rights Management para aplicar protección persistente a documentos de Office en Carpetas de trabajo."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 1f189345-a69e-4bf5-8a45-eb0fe5bb542b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 942b9bfffbd4a43c922ada87220f4eecb78f1d11
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 1fa655cd91746d8e5c19f6a9eca0d93a3be8fb23
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -121,8 +122,3 @@ Si ha configurado la plantilla personalizada según lo descrito en este escenari
 > Transcurrido un período de tiempo, si observa que hay muchas solicitudes de este tipo, podría decidir finalmente definir su propia plantilla personalizada para este escenario que conceda a usuarios específicos (como administradores o el departamento de soporte técnico) el permiso de copropietario, mientras que los usuarios estándar tienen el permiso de coautor o los [permisos](../deploy-use/configure-usage-rights.md) que se consideren adecuados.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO4-->
-
-

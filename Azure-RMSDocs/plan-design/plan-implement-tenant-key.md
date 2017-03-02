@@ -1,10 +1,10 @@
 ---
-title: "Planeamiento e implementación de la clave de inquilino de Azure Rights Management | Azure Information Protection"
+title: Clave de inquilino de Azure Information Protection
 description: "Información para ayudarle a planear y a administrar su clave de inquilino de Azure Information Protection. En lugar de que Microsoft administre su clave de inquilino (opción predeterminada), podría administrarla por su cuenta para cumplir con las normas específicas que se aplican a su organización. La administración de su propia clave de inquilino también se conoce aportar su propia clave, o BYOK, por sus siglas del inglés."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/12/2016
+ms.date: 02/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 433a655870556ed045273713f6773f36c3d86fc1
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 3d2e667f78eeccecb0bd837a9020ff188f67fb50
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -85,8 +86,8 @@ Consulte la tabla siguiente para consultar una lista de requisitos previos para 
 |Requisito|Más información|
 |---------------|--------------------|
 |Una suscripción que admita Azure Information Protection.|Para obtener más información acerca de las suscripciones disponibles, consulte la [página de precios](https://go.microsoft.com/fwlink/?LinkId=827589) de Azure Information Protection.|
-|No use RMS para individuos o Exchange Online. O bien, si usa Exchange Online, comprenda y acepte las limitaciones de uso de BYOK con esta configuración.|Para más información sobre las restricciones y limitaciones actuales para BYOK, vea [Precio y restricciones de BYOK](byok-price-restrictions.md).<br /><br />**Importante**: actualmente, BYOK no es compatible con Exchange Online.|
-|Todos los requisitos previos para BYOK de Key Vault, que incluye una suscripción a Azure de pago o de prueba. |Vea los [Requisitos previos de BYOK](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#prerequisites-for-byok) en la documentación de Azure Key Vault. <br /><br /> La suscripción a Azure gratuita que proporciona acceso para configurar Azure Active Directory y la configuración de las plantillas personalizadas de Azure Rights Management (**acceso a Azure Active Directory**) no es suficiente para usar Azure Key Vault. Para confirmar que tiene una suscripción de Azure que puede usar para BYOK, use los cmdlets de PowerShell de [Azure Resource Manager](https://msdn.microsoft.com/library/azure/mt786812\(v=azure.300\).aspx): <br /><br /> 1. Empiece una sesión de Azure PowerShell e inicie sesión en su cuenta de Azure mediante el comando siguiente: `Login-AzureRmAccount`<br /><br />2. Escriba lo siguiente y confirme que ve los valores mostrados para su nombre e ID de suscripción, así como su ID de inquilino, y que el estado está habilitado: `Get-AzureRmSubscription`<br /><br />Si no se muestra ningún valor y es redireccionado al símbolo del sistema, no tiene una suscripción de Azure que pueda utilizarse para BYOK. <br /><br />**Nota**: Además de los requisitos previos de BYOK, si migra de AD RMS a Azure Information Protection y cambia una clave de software por una clave de hardware, debe tener como mínimo la versión 11.62 del firmware de Thales.|
+|No use RMS para individuos o Exchange Online.<br /><br /> O bien, si usa Exchange Online, comprenda y acepte las limitaciones de uso de BYOK con esta configuración.|Para más información sobre las restricciones y limitaciones actuales para BYOK, vea [Precio y restricciones de BYOK](byok-price-restrictions.md).<br /><br />**Importante**: actualmente, BYOK no es compatible con Exchange Online.|
+|Todos los requisitos previos para Bring your own key (BYOK, Traiga su propia clave) de Key Vault, que incluyen una suscripción a Azure de pago o de prueba para su inquilino actual de Azure Information Protection. |Vea los [Requisitos previos de BYOK](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#prerequisites-for-byok) en la documentación de Azure Key Vault. <br /><br /> La suscripción a Azure gratuita que proporciona acceso para configurar Azure Active Directory y la configuración de las plantillas personalizadas de Azure Rights Management (**acceso a Azure Active Directory**) no es suficiente para usar Azure Key Vault. Para confirmar que tiene una suscripción de Azure que puede usar para BYOK, use los cmdlets de PowerShell de [Azure Resource Manager](https://msdn.microsoft.com/library/azure/mt786812\(v=azure.300\).aspx): <br /><br /> 1. Inicie una sesión de Azure PowerShell con la opción **Ejecutar como administrador** e inicie sesión como administrador global para el inquilino de Azure Information Protection con el siguiente comando:`Login-AzureRmAccount`<br /><br />2. Escriba lo siguiente y confirme que ve los valores mostrados para su nombre e identificador de suscripción, así como su identificador de inquilino de Azure Information Protection, y que el estado está habilitado: `Get-AzureRmSubscription`<br /><br />Si no se muestra ningún valor y es redireccionado al símbolo del sistema, no tiene una suscripción de Azure que pueda utilizarse para BYOK. <br /><br />**Nota**: Además de los requisitos previos de BYOK, si migra de AD RMS a Azure Information Protection y cambia una clave de software por una clave de hardware, debe tener como mínimo la versión 11.62 del firmware de Thales.|
 |Módulo de administración de Azure Rights Management para Windows PowerShell.|Para obtener instrucciones de instalación, consulte [Instalación de Windows PowerShell para Azure Rights Management](../deploy-use/install-powershell.md). <br /><br />Si ya ha instalado este módulo de Windows PowerShell anteriormente, ejecute el comando siguiente para comprobar que el número de versión sea como mínimo **2.5.0.0**: `(Get-Module aadrm -ListAvailable).Version`|
 
 Para obtener más información sobre los HSM de Thales y sobre su uso con el Almacén de claves de Azure, consulte el [sitio web de Thales](https://www.thales-esecurity.com/msrms/cloud).
@@ -142,9 +143,4 @@ Ahora que ha realizado la planeación, y si es necesario, ha generado su clave d
     Para más información, consulte [Operaciones para la clave de inquilino de Azure Rights Management](../deploy-use/operations-tenant-key.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

@@ -1,5 +1,5 @@
 ---
-title: "Instalación del cliente de Azure Information Protection&colon; Historial de publicación de versiones | Azure Information Protection"
+title: "Cliente de Azure Information Protection&colon; historial de publicación de versiones"
 description: "Consulte las novedades o los cambios en una publicación del cliente de Azure Information Protection para Windows."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a55a35ae0f0a3e0c60e6a0289a23888b2eda7fb5
-ms.openlocfilehash: 1f021eee1535abb09d4a4715c819935e21eb89dd
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: fec4ca2541b28fd9d91286fceaee0466fc445364
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -94,8 +95,3 @@ Para más información sobre la instalación del cliente:
 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO2-->
-
-

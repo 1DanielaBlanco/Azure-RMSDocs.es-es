@@ -1,10 +1,10 @@
 ---
-title: Operaciones de ciclo de vida de clave de inquilino administradas por Microsoft | Azure Information Protection
+title: "Administración de Microsoft: operaciones de ciclo de vida de clave de inquilino de AIP"
 description: "Información sobre las operaciones del ciclo de vida que son relevantes si Microsoft administra la clave de inquilino para Azure Information Protection (la predeterminada)."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 3c48cda6-e004-4bbd-adcf-589815c56c55
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 0aad5eeb88dd471ece1bf6425a4efe8050bbdf2c
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: caacc4174ddb63e9c9091c0df294b93cf947a7c4
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -96,10 +97,5 @@ Si tiene una infracción, la mejor acción que usted o Microsoft puede llevar a 
 |Vulnerabilidad descubierta en el algoritmo de RSA, o longitud de clave, o ataques por fuerza bruta se hacen factibles computacionalmente.|Microsoft necesita actualizar Azure Information Protection para que admita nuevos algoritmos y claves más largas que sean resistentes, así como indicar a todos los clientes que renueven sus claves de inquilino.|
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-
-<!--HONumber=Jan17_HO4-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Migración desde AD RMS a Azure Information Protection: Fase 4 | Azure Information Protection"
+title: "Migración de AD RMS-Azure Information Protection: fase 4"
 description: "La fase 4 de la migración desde AD RMS a Azure Information Protection, donde se describen los pasos 8 al 9 de la migración de AD RMS a Azure Information Protection."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e45bbfe0fc2b064d987016cac8af8c4f57d465c9
-ms.openlocfilehash: e10b271872935b7903a3e1bcfe2e8287e693c613
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: fc45ae10101460ea46bf2aa599b213a772eb5626
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -62,9 +63,4 @@ Para más información sobre cómo administrar la clave de inquilino de Azure In
 Ahora que ha completado la migración, revise el [mapa de ruta de implementación](deployment-roadmap.md) para identificar las tareas de implementación que necesite realizar.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

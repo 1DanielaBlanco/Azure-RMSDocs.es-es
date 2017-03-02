@@ -1,5 +1,5 @@
 ---
-title: "Preguntas más frecuentes sobre la clasificación y el etiquetado | Azure Information Protection"
+title: "Preguntas más frecuentes sobre la clasificación y el etiquetado - AIP"
 description: "¿Tiene alguna pregunta sobre la versión actual de Azure Information Protection? Vea si se ha resuelto aquí."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fb68fc152e7f1d323cce71e3873475c78f7bbc15
-ms.openlocfilehash: ad94507f4aea48172ed3c3f74f6d12e3c67cc18e
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: dfa89dc4c216807fdebd57dce202a7983a18d9fb
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -118,7 +119,7 @@ Sí. Para asegurarse de que los usuarios justifiquen su cambio de clasificación
 
 En Azure Portal, puede seleccionar una plantilla de Rights Management para proteger automáticamente el contenido, según el nivel de clasificación que especifique.
 
-Verá un ejemplo de esto en el [Tutorial de inicio rápido de Azure Information Protection](infoprotect-quick-start-tutorial.md). Para más información, consulte [Configuración de una etiqueta para aplicar protección de Rights Management](../deploy-use/configure-policy-protection.md).
+Verá un ejemplo de esto en el [Tutorial de inicio rápido de Azure Information Protection](infoprotect-quick-start-tutorial.md). Para obtener más información, consulte [Configuración de una etiqueta para aplicar protección de Rights Management](../deploy-use/configure-policy-protection.md).
 
 ## <a name="can-a-file-have-more-than-one-classification"></a>¿Puede un archivo tener más de una clasificación?
 
@@ -206,8 +207,3 @@ Para obtener comentarios como sugerencias de mejoras o nuevas características: 
 También lo invitamos a participar en el equipo de ingeniería, en su [sitio de Yammer sobre Azure Information Protection](https://www.yammer.com/askipteam/). 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO2-->
-
-

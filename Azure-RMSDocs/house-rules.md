@@ -1,10 +1,10 @@
 ---
-title: Condiciones para los comentarios de clientes | Azure Information Protection
+title: Condiciones para comentarios del cliente - AIP
 description: "Ámbito y propósito de los comentarios y las notas al margen de Livefyre para la documentación de Azure Information Protection."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 4eafbe72-f537-4e66-80ae-d11894d373f7
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
-ms.openlocfilehash: 95e1b3502d06c96f666da665739f4f97050c0b67
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 587c4f188603f49605191a15d71180441f16e3c9
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -40,10 +41,5 @@ Los comentarios y notas al margen de Livefyre no deben utilizarse para lo siguie
 Encontrará recursos adicionales en [Información y soporte técnico para Azure Information Protection](./get-started/information-support.md). 
 
 Nota: Los empleados de Microsoft deben utilizar canales de comunicación internos.
-
-
-
-
-<!--HONumber=Feb17_HO2-->
 
 

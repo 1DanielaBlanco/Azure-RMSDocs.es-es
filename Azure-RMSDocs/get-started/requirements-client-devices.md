@@ -1,5 +1,5 @@
 ---
-title: "Compatibilidad de dispositivos cliente para la protección de datos | Azure Information Protection"
+title: "Compatibilidad con dispositivos de cliente para la protección de datos - AIP"
 description: Identifique los dispositivos que son compatibles con el servicio Azure Rights Management de Azure Information Protection.
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 93f8021d-43c5-47fe-ad63-8a1bacff9971
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f478f65eecb47b6d0f41ece413ce576b6935b916
-ms.openlocfilehash: b765161c593e37ed4cae2fb42f87d882d6ad429c
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: f560ce654c611a885b54d9609405fb4b1bf7af1d
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -57,9 +58,4 @@ Los siguientes sistemas operativos de dispositivos móviles son compatibles con 
 Para comprobar otros requisitos, vea [Requisitos para Azure Information Protection](requirements-azure-rms.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
