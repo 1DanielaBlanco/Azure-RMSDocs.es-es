@@ -17,6 +17,7 @@ ms.suite: ems
 translationtype: Human Translation
 ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
 ms.openlocfilehash: 0c16b7c6bd494a0350a511a3b415f781aecf613d
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -125,8 +126,3 @@ Para obtener más información sobre cómo habilitar la aplicación para que use
 * [Habilitación de la aplicación de servicio para que funcione con RMS basado en la nube](how-to-use-file-api-with-aadrm-cloud.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO4-->
-
-

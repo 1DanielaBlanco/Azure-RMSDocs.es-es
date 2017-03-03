@@ -15,6 +15,7 @@ ms.suite: ems
 translationtype: Human Translation
 ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
 ms.openlocfilehash: b864f8223865661184ce5742e23313e88cae1db5
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -40,9 +41,4 @@ RMS para usuarios es un ejemplo de una suscripción de autoservicio que es compa
 Vea [Cómo se registran los usuarios a RMS para individuos](rms-for-individuals-user-sign-up.md) para obtener instrucciones paso a paso y una introducción técnica de lo que sucede en segundo plano. 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Feb17_HO4-->
-
 
