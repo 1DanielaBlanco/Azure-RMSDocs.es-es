@@ -37,8 +37,3 @@
 ##### [Usar métodos abreviados de teclado](sharing-app-keyboard-shortcuts.md)
 ##### [Opciones del cuadro de diálogo](sharing-app-dialog-box.md)
 # [Desarrollar y personalizar aplicaciones](/information-protection/develop/developers-guide)
-
-
-<!--HONumber=Feb17_HO2-->
-
-
