@@ -4,7 +4,7 @@ description: "Aunque Azure Information Protection incluye etiquetas predetermina
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -37,8 +37,7 @@ Utilice las instrucciones siguientes para agregar una nueva etiqueta a la direct
     - Para crear una nueva etiqueta: haga clic en **Add a new label** (Agregar una nueva etiqueta).
 
     - Para crear una nueva etiqueta secundaria: haga clic con el botón derecho o seleccione el menú contextual (**...**) correspondiente a la etiqueta para la que quiere crear una etiqueta secundaria y luego haga clic en **Add a sub-label** (Agregar una etiqueta secundaria).
-
-
+    
      Si la nueva etiqueta que quiere agregar va a estar en una [directiva de ámbito](configure-policy-scope.md) de modo que se aplica solo a los usuarios seleccionados, seleccione primero esa directiva de ámbito en la hoja inicial de **Azure Information Protection**.
 
 3. En la hoja **Etiqueta** o **Sub-label** (Etiqueta secundaria), seleccione las opciones que quiere para esta etiqueta y luego haga clic en **Guardar**.
