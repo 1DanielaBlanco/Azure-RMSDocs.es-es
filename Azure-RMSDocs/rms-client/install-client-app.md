@@ -4,7 +4,7 @@ description: "Instrucciones para que los usuarios instalen el cliente de Azure I
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/17/2017
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 37bddeed5b81ce1cd6b881db0b71345bcf4cad49
+ms.sourcegitcommit: 92ad7198aad17664062b8d007fa95524fe535443
+ms.openlocfilehash: d4820070aff013b42ee49f4c7b81e78ffbc7a049
 ms.lasthandoff: 02/24/2017
 
 
@@ -22,7 +22,7 @@ ms.lasthandoff: 02/24/2017
 
 # <a name="download-and-install-the-azure-information-protection-client"></a>Descarga e instalación del cliente de Azure Information Protection
 
-Si el administrador no instala el cliente de Azure Information Protection para los usuarios, estos pueden hacerlo por su cuenta. Debe ser administrador local del equipo para instalar este cliente. 
+Si el administrador no instala el cliente de Azure Information Protection para los usuarios, estos pueden hacerlo por su cuenta. Debe ser un administrador local para que el equipo instale este cliente para que pueda etiquetar y proteger sus documentos y correos electrónicos.
 
 Además:
 
@@ -34,7 +34,7 @@ Además:
 
 1.  Vaya a la página [Microsoft Azure Information Protection](https://go.microsoft.com/fwlink/?LinkId=303970) en el sitio web de Microsoft.
 
-    Esta página tiene vínculos para todos los dispositivos conocidos que puede utilizar, por lo que puede descargar fácilmente una aplicación de visor si fuera necesaria para abrir archivos protegidos. No obstante, vamos a instalar el cliente completo, lo que permite etiquetar y proteger los archivos. 
+    Esta página tiene vínculos para todos los dispositivos conocidos que puede utilizar, por lo que puede descargar fácilmente una aplicación de visor si fuera necesaria para abrir archivos protegidos. Si no es un administrador local de su PC, puede instalar la aplicación del visor para Windows. No obstante, estas instrucciones van a instalar el cliente completo, lo que permite etiquetar y proteger los archivos. 
 
 2. Busque la sección **Cliente de Azure Information Protection** y haga clic en el icono de Windows. Haga clic en **Descargar** y guarde el archivo **AzInfoProtection.exe**.     
 

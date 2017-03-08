@@ -15,9 +15,9 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5df7da98abf4e7c8e39b610fe374d67cf2954338
-ms.openlocfilehash: 1c10eb8f7a68138761931d1c8a1715a03b7ff0a9
-ms.lasthandoff: 01/24/2017
+ms.sourcegitcommit: 3b56c14d4ec1faf940e8b7d350d2680625cac795
+ms.openlocfilehash: 268d474e11f70961263b1cbbcc5eca926e880416
+ms.lasthandoff: 02/28/2017
 
 
 ---
@@ -28,6 +28,7 @@ En esta sección se incluyen instrucciones específicas para varios escenarios d
 - [Uso de la autenticación ADAL](how-to-use-adal-authentication.md): autenticación con Azure RMS para una aplicación que use la biblioteca de autenticación de Azure Active Directory (ADAL).
 - [Incorporación de derechos de propiedad explícitos](add-explicit-owner-rights.md): la aplicación debe agregar explícitamente derechos "Owner" al crear una licencia desde el principio ([IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx)).
 - [Depuración de una aplicación con derechos habilitados](debugging-applications-that-use-ad-rms.md): en este tema se muestra cómo depurar la aplicación y usar el registro de eventos de Windows.
+- [Procedimiento para implementar una aplicación en el inquilino de un cliente](how-to-deploy-app.md): describe los pasos para implementar una aplicación de su inquilino de Azure AD de desarrollo a un inquilino de Azure AD de producción.
 - [Habilitación de la revocación y el seguimiento de documentos](tracking-content.md): en este tema se abordan las instrucciones básicas para implementar el seguimiento de documentos, así como código de ejemplo para las actualizaciones de metadatos y para la creación de un botón **Hacer seguimiento de uso** para la aplicación.
 - [Habilitación de la notificación por correo electrónico](how-to-enable-email-notification.md): las notificaciones por correo electrónico permiten que el propietario de contenido protegido reciba una notificación cuando se acceda a su contenido.
 - [Habilitación de la aplicación de servicio para que funcione con RMS basado en la nube](how-to-use-file-api-with-aadrm-cloud.md): en este tema se describe cómo configurar la aplicación de servicio para que use Azure Rights Management.

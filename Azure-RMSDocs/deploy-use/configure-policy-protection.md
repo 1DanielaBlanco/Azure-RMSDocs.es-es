@@ -4,16 +4,16 @@ description: "Puede proteger sus documentos y mensajes de correo electrónico m�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/21/2017
+ms.date: 02/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
 translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: cd0fa432bbec97b39e7c32f0b40594840d57fb04
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: 5bc117cbff3226a2ee0ff375f0aa02fc3232a183
+ms.openlocfilehash: ed6bd63a945b73b792bcafcdc0d07e08e83fc344
+ms.lasthandoff: 02/27/2017
 
 
 ---
@@ -74,11 +74,11 @@ No es necesario que Exchange esté configurado para Information Rights Managemen
         
         Si los usuarios no tienen permisos para quitar la protección de Rights Management y seleccionan una etiqueta configurada con la opción **Quitar protección**, se muestra el mensaje indicando que **Azure Information Protection no puede aplicar esta etiqueta. Si el problema persiste, póngase en contacto con el administrador.**
 
-5. Si seleccionó **Proteger**, seleccione ahora **Protección** para abrir la hoja **Permisos**:
+5. Si seleccionó **Proteger**, seleccione ahora **Protección** para abrir la hoja **Protección**:
     
     ![Configurar la protección para una etiqueta de Azure Information Protection](../media/info-protect-protection-bar.png)
 
-6. En la hoja **Permisos**, seleccione **Azure RMS** o **HYOK (AD RMS)**. 
+6. En la hoja **Protección**, seleccione **Azure RMS** o **HYOK (AD RMS)**. 
     
     En la mayoría de los casos, seleccionará **Azure RMS** para la configuración de permisos. No seleccione **HYOK (AD RMS)** a menos que haya leído y comprendido los requisitos previos y restricciones que acompañan a esta configuración "*mantenga su propia clave*" (HYOK). Para obtener más información, consulte [Requisitos y restricciones de Mantenga su propia clave (HYOK) para la protección de AD RMS](configure-adrms-restrictions.md). Para continuar con la configuración de Hold your own key (HYOK, Mantenga su propia clave) (AD RMS), vaya al paso 9.
     
@@ -94,7 +94,7 @@ No es necesario que Exchange esté configurado para Information Rights Managemen
             
 9. Si ha seleccionado **Seleccionar plantilla** para **HYOK (AD RMS)**: proporcione el GUID de la plantilla y la dirección URL de administración de licencias del clúster de AD RMS. [Más información](configure-adrms-restrictions.md#locating-the-information-to-specify-ad-rms-protection-with-an-azure-information-protection-label).
 
-10. Haga clic en **Listo** para cerrar la hoja **Permisos** y ver la opción de **No reenviar** o la pantalla de la plantilla elegida para la opción **Protección** de la hoja **Etiqueta**.
+10. Haga clic en **Aceptar** para cerrar la hoja **Protección** y ver la opción de **No reenviar** o la pantalla de la plantilla elegida para la opción **Protección** de la hoja **Etiqueta**.
 
 10. En la hoja **Etiqueta**, haga clic en **Guardar**.
 

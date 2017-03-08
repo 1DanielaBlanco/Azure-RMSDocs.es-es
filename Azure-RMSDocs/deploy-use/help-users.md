@@ -4,7 +4,7 @@ description: "Información para ayudarle a ofrecer instrucciones a los usuarios,
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 03/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,9 +13,9 @@ ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 61f7a7208b13a28f2e8cfb85489cceb2a2caf077
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: 1300b0abb3cb59ad09075418ab8c911466740a2c
+ms.openlocfilehash: f1d2db08951c1d017ea4f011855d99423fa9d577
+ms.lasthandoff: 03/03/2017
 
 
 ---
@@ -43,6 +43,8 @@ Después de implementar y configurar Azure Information Protection para su organi
 -   **Información del departamento de soporte técnico:**
 
     Una de las herramientas más útiles para el servicio de asistencia es [RMSAnalyzer](https://www.microsoft.com/en-us/download/details.aspx?id=46437). Los operadores del servicio de asistencia pueden ejecutarlo con la opción de administrador de Azure RMS, y pueden pedir a los usuarios que lo ejecuten con la opción de usuario de Azure RMS. Esta herramienta no solo puede ayudar a identificar problemas, sino también a corregir los problemas que encuentre y, si todavía no se han solucionado, anotar los registros de seguimiento.
+    
+    Si los usuarios ejecutan el cliente de Azure Information Protection, los operadores del help desk pueden pedirles que utilicen l**Ayuda y comentarios**, opción **Ejecutar diagnósticos** y, a continuación, restablezca el cliente. Sin embargo, a diferencia del analizador de RMS, el restablecimiento no cierra la sesión del usuario ni reinicia el cliente y no hay ninguna corrección automática.
 
     Si hay solicitudes legítimas para tener derechos completos de acceso a documentos protegidos (por ejemplo, una solicitud del departamento jurídico o de un administrador después de que un empleado ha dejado la organización), asegúrese de que el servicio de asistencia tenga procesos para solicitar esto con la [característica de superusuario](configure-super-users.md) de Azure Rights Management.
 

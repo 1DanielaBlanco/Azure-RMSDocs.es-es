@@ -1,19 +1,19 @@
 ---
 title: "Paso 4 del tutorial de inicio rápido - AIP"
-description: "Paso 3 del tutorial introductorio para probar rápidamente Microsoft Azure Information Protection para su organización, que debería durar unos 20 minutos."
+description: "Paso 4 de un tutorial de introducción para probar rápidamente Azure Information Protection: consulte el etiquetado y la protección en acción."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/02/2017
+ms.date: 02/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
 translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 57a46c7afe34717dd4335b0f9a19bd539821fc72
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: 611b65589bdd8aa495fbfbd4a67c30a5fb9c387a
+ms.openlocfilehash: 8260da1905c6701675b5490e3919ae708f46a5a9
+ms.lasthandoff: 03/01/2017
 
 
 ---
@@ -28,15 +28,33 @@ La clasificación y la protección tienen lugar cuando guarda el documento, pero
 
 ## <a name="to-manually-change-our-default-label"></a>Para cambiar de manera manual nuestra etiqueta predeterminada
 
-En la barra Information Protection, seleccione la etiqueta **Personal** y se le pedirá que justifique por qué está reduciendo el nivel de clasificación:
+En la barra Information Protection, seleccione la etiqueta **Secreto** y verá cómo se muestran las subetiquetas:
+
+![Paso 4 del tutorial de inicio rápido de Azure Information Protection: elección de una subetiqueta](../media/info-protect-sub-labels.png)
+
+Seleccione **Toda la compañía**, y verá cómo las otras etiquetas ya no aparezca en la barra ahora que ha seleccionado una etiqueta para este documento. El valor **Sensibilidad** cambia a **Secreto\Toda la compañía** con un cambio de color de la etiqueta correspondiente:
+
+![Paso 4 del tutorial de inicio rápido de Azure Information Protection: subetiqueta seleccionada](../media/info-protect-sub-label-selected.png)
+
+En la barra de Information Protection, haga clic en el icono **Editar etiqueta** junto a **Secreto\Toda la compañía**.
+
+![Paso 4 del tutorial de inicio rápido de Azure Information Protection: icono Editar etiqueta](../media/info-protect-edit-label-selected.png)
+
+Esto vuelva a mostrar las etiquetas disponibles.
+
+Ahora seleccione la etiqueta **Personal**. Puesto que ha seleccionado una etiqueta de una clasificación inferior a la etiqueta seleccionada anteriormente en este documento, deberá justificar por qué se reduce el nivel de clasificación:
 
 ![Paso 4 del tutorial de inicio rápido de Azure Information Protection: aviso para confirmar la reducción](../media/info-protect-lower-justification.png)
 
-Seleccione **Ya no se aplica la etiqueta anterior** y haga clic en **Confirmar**. Verá que el valor **Confidencialidad** cambia a **Personal**.
+Seleccione **Ya no se aplica la etiqueta anterior** y haga clic en **Confirmar**. El valor **Sensibilidad** cambia a **Personal** y las demás etiquetas se vuelven a ocultar.
 
 ## <a name="to-remove-the-classification-completely"></a>Para quitar la clasificación completamente
 
-En la barra de Information Protection, haga clic en el icono **Editar etiqueta** junto a **Personal**. Esto muestra las etiquetas disponibles. En lugar de elegir una de las etiquetas, esta vez, haga clic en el icono **Eliminar etiqueta**. Esta vez, escriba "Este documento no necesita clasificación" y haga clic en **Confirmar**.  
+En la barra de Information Protection, haga clic en el icono **Editar etiqueta**. En lugar de elegir una de las etiquetas, haga clic en el icono **Eliminar etiqueta**:
+
+![Paso 4 del tutorial de inicio rápido de Azure Information Protection: icono Eliminar](../media/delete-icon-from-personal.png)
+
+Esta vez, cuando se le solicite, escriba "Este documento no necesita clasificación" y haga clic en **Confirmar**.  
 
 Verá que el valor **Confidencialidad** muestra **No establecido**, que es lo que los usuarios ven inicialmente si no establece una etiqueta predeterminada:
 

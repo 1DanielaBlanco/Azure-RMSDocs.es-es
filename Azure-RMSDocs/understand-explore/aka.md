@@ -4,7 +4,7 @@ description: Azure Information Protection ha cambiado de nombre varias veces y e
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 02/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,9 +13,9 @@ ms.assetid: 0af1b2ff-46a7-4a38-803c-5a730e4ff56d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 179a145e1b7079b2c5cec7317f6af3e93ee6cd3f
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: 047578ea1fb89532f35c066d02ced3da58979938
+ms.openlocfilehash: ca8a196f3c9f31d2fee7493d0aa4112b5be8c26f
+ms.lasthandoff: 03/01/2017
 
 
 ---
@@ -25,24 +25,57 @@ ms.lasthandoff: 02/24/2017
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
-Azure Information Protection es el nuevo nombre de la solución basada en la nube de Azure Rights Management, también conocida como *servicio Azure Rights Management*. Como RMS es una abreviatura muy usada para sus predecesores, Azure Rights Management suele abreviarse como ***Azure RMS***.
+Azure Information Protection (en ocasiones abreviado como AIP) ha evolucionado a partir de una larga historia de tecnologías establecidas de Microsoft que implementan la protección de la administración de derechos. Debido a esta evolución, quizá conozca esta solución por uno de sus nombres anteriores. O bien, puede ver referencias a estos nombres en la documentación, la interfaz de usuario y los archivos de registro. 
 
-Tal como se ha anunciado, Azure Information Protection estará disponible de forma general en octubre de 2016. Esta solución ofrece funciones de clasificación y etiquetado, además de la protección de administración de derechos, para los documentos y correos electrónicos de una organización. La protección se realiza mediante el servicio Azure Rights Management. Si el porcentaje de documentos y correos electrónicos que deben protegerse con una clave local es muy pequeño, la protección puede hacerse con la versión local de la tecnología de administración de derechos:*Active Directory Rights Management Services* (AD RMS). Este producto local se publicó por primera vez como *Windows Rights Management Services* (Windows RMS).
-
-Otros nombres de Azure Rights Management: este servicio se llamaba originalmente *Windows Azure Active Directory Rights Management* (a menudo abreviado como Windows Azure AD Rights Management), después pasó a conocerse como Windows Azure Rights Management y ahora se denomina Azure Rights Management.
-
-También puede ver referencias ocasionales a *Microsoft Rights Management*o *servicios de Microsoft Rights Management*, que es un término colectivo que puede incluir Azure RMS y AD RMS.  El "*Nuevo Microsoft RMS*" fue una etiqueta popular que se usaba en ocasiones cuando Azure Rights Management se lanzó oficialmente para destacar la nueva facilidad de implementación en comparación con sus predecesores locales.
-
-¿Ha oído hablar de *Information Rights Management* (a menudo abreviado como *IRM*)? Se trata de la implementación de Office de Rights Management, que admite Azure RMS y AD RMS. Cuando Azure RMS se lanzó por primera vez, solo se podía usar con Office 365 (por ejemplo, con una suscripción a Office 365 E3). Después, la tecnología de Azure RMS se extendió a otras suscripciones como Enterprise Mobility Suite (EMS), que admitía seguimiento y revocación de documentos además de protección. Con la publicación de un nuevo SDK y de las aplicaciones que lo usaban (como la aplicación Rights Management sharing), Azure RMS y AD RMS ya podían proteger cualquier tipo de archivo, no solo archivos de Office. 
+Las siguientes secciones enumeran algunos de estos nombres.
 
 > [!TIP]
-> Encontrará muchos de estos nombres de servicios y productos, así como sus términos relacionados, en [Terminología para Azure Rights Management](../get-started/terminology.md).
+> Encontrará muchos de estos nombres de servicios y productos, así como sus términos relacionados, en [Terminología para Azure Information Protection](../get-started/terminology.md).
 
-Ahora, la protección de Azure RMS se incluye en Azure Information Protection, que puede comprar como un servicio independiente o como parte de uno de los conjuntos de aplicaciones de seguridad, Enterprise Mobility + Security suite (EMS) o Secure Productive Enterprise (SPE). La tecnología de Azure RMS también está presente en los productos y servicios de Office.
+## <a name="cloud-based-solutions"></a>Soluciones basadas en la nube
+
+- **Azure Rights Management** o **servicio Azure Rights Management**, con frecuencia abreviado como *Azure RMS*
+
+- **Azure Active Directory Rights Management**, en ocasiones abreviado como *AADRM*
+
+- **Windows Azure Active Directory Rights Management**, con frecuencia abreviado como *Windows Azure AD Rights Management*
+
+## <a name="on-premises-solutions"></a>Soluciones locales
+
+- **Azure Active Directory Rights Management**, con frecuencia abreviado como *AD RMS*
+
+- **Windows Rights Management Services**, con frecuencia abreviado como *Windows RMS*
+
+## <a name="other-names"></a>Otros nombres
+
+- **Microsoft Rights Management** o **Microsoft Rights Management Services**
+    
+    Nombre colectivo que incluye la versión local actual (AD RMS) y la versión basada en la nube (Azure RMS).
+
+- "**Nuevo Microsoft RMS**"
+    
+    fue una etiqueta popular que se usaba en ocasiones cuando una versión basada en la nube se lanzaba oficialmente para destacar la nueva facilidad de implementación en comparación con sus predecesores locales.
+
+- **Information Rights Management**, a menudo abreviado como *IRM*
+    
+    Implementación de Office de la tecnología que admite la versión local actual (AD RMS) y la versión basada en la nube (Azure RMS). 
+
+- **Rights Management Online** o **RMS Online**
+    
+    Fue uno nombre propuesto en fecha temprana para la versión basada en la nube de AD RMS y se incluye aquí porque puede ver este nombre en los archivos de registro y mensajes de error.
+
+Tenga en cuenta que puede ver o escuchar referencias a esta tecnología como **DRM**, que es una abreviatura conocida de la administración de derechos digitales. Las soluciones DRM protegen normalmente la distribución ilegal del software digital, que es muy diferente de esta solución de protección de información empresarial. 
+
+## <a name="does-azure-information-protection-now-replace-all-these-names"></a>¿Reemplaza ahora "Azure Information Protection" ahora estos nombres?
+
+Como solución basada en la nube que ha comprado, sí. Azure Information Protection ofrece nuevas funcionalidades de clasificación y etiquetado de documentos y correos electrónicos de la organización, que a su vez pueden aplicar la protección de Rights Management. 
+
+Sin embargo, Azure Rights Management todavía se usa como la tecnología de protección para Azure Information Protection y servicios de Office 365 que usan esta protección de Rights Management en la nube. Por lo tanto, en el contexto de la tecnología de protección que utiliza Azure Information Protection, "Azure Rights Management" (Azure RMS) sigue siendo un nombre actual.
+
+De forma similar, "Active Directory Rights Management Services" (AD RMS) sigue siendo un nombre actual para el rol de servidor de Windows Server, que proporciona protección de Rights Management local. Esta tecnología de protección se puede utilizar con Azure Information Protection y puede ser adecuada para un porcentaje muy pequeño de documentos y correos electrónicos que deben estar protegidos por una clave local. En este escenario, AD RMS se suelen referir como solución "conserve su propia clave" o HYOK.
+
+## <a name="how-to-evaluate-or-purchase-the-latest-version"></a>Cómo evaluar o adquirir la versión más reciente
 
 Para más información sobre cómo puede comprar o evaluar Azure Information Protection, así como las diferentes características que están disponibles para los planes de suscripción, vea el sitio de [Azure Information Protection](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection).
-
-> [!NOTE]
-> Como solución para la protección de la información empresarial, Azure Information Protection y los servicios de Microsoft Rights Management no ofrecen las soluciones de administración de derechos digitales (DRM) que suelen proteger contra la distribución ilegal de software digital. 
 
 

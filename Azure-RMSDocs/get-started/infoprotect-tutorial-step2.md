@@ -1,19 +1,19 @@
 ---
 title: "Paso 2 del tutorial de inicio rápido - AIP"
-description: "Paso 2 del tutorial introductorio para probar rápidamente Microsoft Azure Information Protection para su organización, que debería durar unos 20 minutos."
+description: "Paso 2 de un tutorial de introducción para probar rápidamente Azure Information Protection: configuración de la directiva."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/21/2017
+ms.date: 02/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 39dfa8a1c4dabf32f8b62f08a674152f41a5b96a
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: 611b65589bdd8aa495fbfbd4a67c30a5fb9c387a
+ms.openlocfilehash: cecf91a6e8bea14002f6760ddbde15e934cb7ef7
+ms.lasthandoff: 03/01/2017
 
 
 ---
@@ -63,13 +63,13 @@ Ahora cambiaremos la configuración de una de las etiquetas, **Confidencial**:
 
 2. En la hoja **Etiqueta: Confidencial**, ubique la sección **Set permissions for documents and emails containing this label** (Configuración de permisos para documentos y correos electrónicos que contienen esta etiqueta).
 
-    Seleccione la opción **Protección**:
+    Seleccione **Proteger** y, después, la opción **Protección**:
     
     ![Configurar la protección para una etiqueta de Azure Information Protection](../media/info-protect-protection-bar.png) 
     
-    Con esta acción se abre la hoja **Permisos**.
+    Con esta acción se abre la hoja **Protección**.
     
-3. En la hoja **Permisos**, asegúrese de que están activadas las opciones **Azure RMS** y **Seleccionar plantilla**; luego haga clic en el cuadro desplegable y seleccione la plantilla predeterminada **\<nombre de su organización > - Confidencial**.     
+3. En la hoja **Protección**, asegúrese de que están activadas las opciones **Azure RMS** y **Seleccionar plantilla**; luego haga clic en el cuadro desplegable y seleccione la plantilla predeterminada **\<nombre de su organización > - Confidencial**.     
     
     Por ejemplo, si el nombre de la organización es VanArsdel, Ltd, verá y seleccionará **VanArsdel, Ltd - Confidencial**: 
     
@@ -77,7 +77,7 @@ Ahora cambiaremos la configuración de una de las etiquetas, **Confidencial**:
     
     Si ha desactivado esta plantilla predeterminada de Azure Rights Management, seleccione una plantilla alternativa. Pero si selecciona una plantilla de departamento, asegúrese de que su cuenta esté incluida en el ámbito.
     
-4. Haga clic en **Listo** para guardar los cambios y cerrar la hoja **Permisos**.
+4. Haga clic en **Aceptar** para guardar los cambios y cerrar la hoja **Protección**.
 
 5. De nuevo en la hoja **Etiqueta: Confidencial**, busque la sección **Establecer un distintivo visual**:
     

@@ -4,7 +4,7 @@ description: "Instrucciones para crear y administrar plantillas personalizadas e
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: ebc0ad13952f2036f997fc5ba9207f02d1571021
+ms.sourcegitcommit: 11971a176b9c5f413bbe6daa208c062a131343be
+ms.openlocfilehash: 5ab725294d93540f35c395eca08f5f3fbc6ae392
 ms.lasthandoff: 02/24/2017
 
 
@@ -81,7 +81,9 @@ Usa los procedimientos siguientes para crear, configurar y publicar plantillas p
     > [!NOTE]
     > Los usuarios o grupos que selecciones deben disponer de una dirección de correo electrónico. En un entorno productivo, no será un problema, pero en un entorno de pruebas simple, es posible que tengas que agregar direcciones de correo electrónico para cuentas de usuario o grupos.
 
-    Se recomienda usar grupos más que usuarios, lo cual simplifica la administración de las plantillas. Si tiene Active Directory localmente y está sincronizando con Azure AD, puede usar grupos habilitados para correo electrónico que sean grupos de seguridad o grupos de distribución. Sin embargo, si desea conceder derechos a todos los usuarios de la organización, resultará más eficiente copiar una de las plantillas predeterminadas en lugar de especificar varios grupos. Para obtener más información, consulte el [procedimiento para copiar una plantilla](copy-template.md).
+    Se recomienda usar grupos más que usuarios, lo cual simplifica la administración de las plantillas. Sin embargo, si realiza cambios en el grupo, recuerde que por motivos de rendimiento, Azure Rights Management [almacena en caché la pertenencia al grupo](../plan-design/prepare.md#group-membership-caching). 
+    
+    Si tiene Active Directory localmente y está sincronizando con Azure AD, puede usar grupos habilitados para correo electrónico que sean grupos de seguridad o grupos de distribución. Para conceder derechos a todos los usuarios de la organización, resultará más eficiente copiar una de las plantillas predeterminadas en lugar de especificar varios grupos. Para obtener más información, consulte el [procedimiento para copiar una plantilla](copy-template.md).
 
     > [!TIP]
     > Puede agregar usuarios de fuera de la organización ("usuarios externos") a la plantilla si selecciona un grupo habilitado para correo que contenga contactos de Office 365 o Exchange Online. Esto le permite asignar derechos a estos usuarios de la misma manera en que los asigna a los usuarios de la organización. Por ejemplo, puede evitar que los clientes editen una lista de precios que les envía. No use esta configuración de plantilla para la protección de mensajes de correo electrónico si los usuarios de fuera de la organización van a leer los mensajes protegidos con Outlook Web App.

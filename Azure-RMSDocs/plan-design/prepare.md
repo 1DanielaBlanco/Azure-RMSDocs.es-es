@@ -4,7 +4,7 @@ description: "Compruebe que tiene todo preparado para empezar a usar el servicio
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,9 +13,9 @@ ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 909becbdf902d552a967506b80f173e59cf756c7
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: 11ebd66a1ae05535814af159523bd49b7921d46d
+ms.openlocfilehash: fc80a4a65bd5fae1b8604c316a4e2354bbe8c8be
+ms.lasthandoff: 02/25/2017
 
 
 ---
@@ -33,6 +33,10 @@ Antes de implementar Azure Information Protection para su organización, asegúr
 -   Grupos habilitados para correo en la nube que usará con Azure Information Protection. Pueden ser grupos integrados o grupos creados de forma manual que contengan usuarios que usarán documentos y correos electrónicos protegidos.
 
     Si tiene Exchange Online, puede crear y usar grupos habilitados para correo mediante el centro de administración de Exchange. Si tiene AD DS y va a sincronizar con Azure AD, puede crear y usar grupos habilitados para correo que sean grupos de seguridad o grupos de distribución.
+
+### <a name="group-membership-caching"></a>Caché de pertenencia al grupo
+
+Por motivos de rendimiento, el servicio Azure Rights Management almacena en caché la pertenencia al grupo. Esto significa que cualquier cambio realizado en la pertenencia al grupo puede tardar hasta tres horas en aplicarse y este período está sujeto a cambios. No olvide incluir este retraso en los cambios o pruebas que realice cuando use grupos en la configuración del servicio Azure Rights Management, como la configuración de [plantillas personalizadas](../deploy-use/configure-custom-templates.md) o al usar un grupo para la [característica de superusuario](../deploy-use/configure-super-users.md). 
 
 ## <a name="activate-the-rights-management-service-for-data-protection"></a>Activar el servicio Rights Management para la protección de datos
 Cuando esté preparado para empezar a proteger documentos y correos electrónicos, active el servicio Rights Management para habilitar esta tecnología. Para más información, consulte [Activación de Azure Rights Management](../deploy-use/activate-service.md).
