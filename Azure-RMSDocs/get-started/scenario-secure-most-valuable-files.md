@@ -1,10 +1,10 @@
 ---
-title: 'Escenario: Proteger (algunos) archivos de gran valor | Azure Information Protection'
+title: 'Escenario de API: proteger (algunos) archivos de gran valor'
 description: "En este escenario y en la documentación de usuario correspondiente se usa Azure Rights Management para proteger manualmente y de forma personalizada unos pocos archivos que se han identificado como los más valiosos, lo que garantiza el máximo nivel de protección frente a accesos no autorizados."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 02/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,13 +13,14 @@ ms.assetid: 95f1844a-612c-4e67-bbe6-4b6b92295221
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: ad75734c28c51ac68697f96e0e50a5d90314b76e
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: f096a4ad7333d24c7bce0dd729b40ebb203726c5
+ms.lasthandoff: 02/24/2017
 
 
 ---
 
-# <a name="scenario-secure-your-most-few-valuable-files"></a>Escenario: Proteger (algunos) archivos de gran valor
+# <a name="scenario---secure-your-most-few-valuable-files"></a>Escenario: Proteger (algunos) archivos de gran valor
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
@@ -70,7 +71,7 @@ Para que este escenario funcione, debe disponer de lo siguiente:
 
 2.  Publique la nueva plantilla.
 
-### <a name="to-protect-the-files-inplace"></a>Para proteger los archivos localmente
+### <a name="to-protect-the-files-in-place"></a>Para proteger los archivos localmente
 
 1.  En el Explorador de archivos, vaya a la primera carpeta que contenga archivos que quiere proteger:
 
@@ -145,9 +146,4 @@ Ahora los siguientes archivos tienen aplicado un nivel muy alto de protección, 
 
 -   Si no puede tener acceso a estos archivos o si nota cambios sospechosos en ellos, llame a la línea de asignación de nivel de soporte (disponible ininterrumpidamente), que encontrará en un mensaje de correo protegido enviado por el departamento de TI.
 
-
-
-
-<!--HONumber=Nov16_HO2-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

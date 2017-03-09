@@ -1,10 +1,10 @@
 ---
-title: "Guía de implementación rápida para Azure Information Protection | Azure Information Protection"
-description: "Una guía para que le resulte más fácil implementar y usar rápidamente Azure Information Protection para proteger los datos de la organización. Empiece por elegir una de las opciones de una lista de escenarios de implementación específicos."
+title: "Guía de implementación rápida de Azure RMS - AIP"
+description: "Una guía para ayudarlo a implementar y usar el servicio Azure Rights Management con más rapidez para proteger los datos de su organización. Empiece por elegir una de las opciones de una lista de escenarios de implementación específicos."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/08/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: c994d616-cff6-4930-9228-a7f7d198a160
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: d1415913f4a76331088140555b0cfeaa88200871
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 2e50dc9d53550f35f5c589cdb1b384e0abf585e0
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -23,7 +24,10 @@ ms.openlocfilehash: d1415913f4a76331088140555b0cfeaa88200871
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
-Use esta guía, además de la información sobre la configuración en la sección **Implementación y uso**, como ayuda para implementar y usar rápidamente Azure Information Protection, ya que le permite elegir entre una lista de escenarios específicos de implementación.
+Use esta guía, además de la información sobre la configuración en la sección **Implementación y uso**, como ayuda para implementar y usar rápidamente una solución de solo protección que usa el servicio Azure Rights Management de Azure Information Protection. Elija una opción en la lista de escenarios específicos para implementarla.
+
+> [!NOTE]
+> En este momento, la guía contiene escenarios de solo protección y no contiene escenarios para clasificación y protección o el cliente Azure Information Protection. 
 
 Los escenarios contienen instrucciones para el administrador y documentación complementaria para el usuario final. Antes de proporcionarles la documentación (instrucciones o anuncios) a los usuarios finales, tendrá primero que personalizarla en función de sus necesidades empresariales y su flujo de trabajo. Un conjunto de instrucciones o un anuncio de ejemplo muestran el aspecto definitivo de la documentación para el usuario final.
 
@@ -33,8 +37,7 @@ Los escenarios aquí mencionados son una muestra de los más comunes. Como Azure
 
 Antes de implementar estas soluciones, puede enviar un anuncio general a los usuarios finales informándoles de los cambios que se producirán en materia de protección de los datos de la empresa, así como de las posibles modificaciones que deban realizar por su parte. Después de la tabla siguiente encontrará un ejemplo de este tipo de comunicación.
 
-> [!NOTE]
-> Si tiene preguntas y comentarios sobre esta guía, use los mecanismos de comentarios de esta página o envíe un correo a [AskIPTeam@Microsoft.com](mailto:%20askipteam@microsoft.com?subject=Rapid%20Deployment%20Guide%20feedback).
+Si tiene preguntas y comentarios sobre esta guía, use los mecanismos de comentarios de esta página o envíe un correo a [AskIPTeam@Microsoft.com](mailto:%20askipteam@microsoft.com?subject=Rapid%20Deployment%20Guide%20feedback).
 
 ## <a name="scenarios-for-azure-information-protection"></a>Escenarios de Azure Information Protection
 Para que pueda implementar Azure Information Protection con mayor rapidez para solucionar problemas empresariales específicos, elija los escenarios que se acerquen más a sus objetivos empresariales y adáptelos según sea necesario.
@@ -144,9 +147,5 @@ Uno de los activos más valiosos de esta organización son los datos que generam
 
 Las soluciones que estamos implementando nos ayudarán a proteger nuestra valiosa información y nos proporcionarán las herramientas para mantener el control de los datos. Gracias por su colaboración durante la implementación de estos cambios.
 
-
-
-
-<!--HONumber=Nov16_HO2-->
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

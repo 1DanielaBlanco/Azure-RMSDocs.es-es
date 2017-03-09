@@ -1,6 +1,6 @@
 # [Conceptos básicos y exploración](/information-protection/understand-explore/what-is-information-protection)
 # [Introducción](requirements-azure-rms.md)
-## [Requirements](requirements.md)
+## [Requisitos](requirements.md)
 ### [Requisitos de Azure Active Directory](requirements-azure-ad.md)
 ### [Compatibilidad con dispositivos de cliente para la protección de datos](requirements-client-devices.md)
 ### [Compatibilidad con aplicaciones para la protección de datos](requirements-applications.md)
@@ -13,7 +13,7 @@
 ## [Tutorial de inicio rápido](infoprotect-quick-start-tutorial.md)
 ### [Paso 1: activar el servicio](infoprotect-tutorial-step1.md)
 ### [Paso 2: configurar y publicar la directiva](infoprotect-tutorial-step2.md)
-### [Paso 3: instalar el cliente y la aplicación](infoprotect-tutorial-step3.md)
+### [Paso 3: instalar el cliente](infoprotect-tutorial-step3.md)
 ### [Paso 4: ver la clasificación, el etiquetado y la protección en funcionamiento](infoprotect-tutorial-step4.md)
 ### [Paso 5: ver el seguimiento y el uso compartido protegido en funcionamiento](infoprotect-tutorial-step5.md)
 ## [Guía de implementación rápida](rapid-deployment-guide.md)
@@ -28,9 +28,4 @@
 # [Implementación y uso del servicio](/information-protection/deploy-use/activate-service)
 # [Implementación y uso del cliente](/information-protection/rms-client/use-client)
 # [Desarrollar y personalizar aplicaciones](/information-protection/develop/developers-guide)
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

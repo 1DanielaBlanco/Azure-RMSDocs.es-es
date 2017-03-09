@@ -1,10 +1,10 @@
 ---
-title: 'Escenario: Proteger archivos en un recurso compartido de servidor de archivos | Azure Information Protection'
+title: 'Escenario de AIP: proteger archivos en un recurso compartido de servidor de archivos'
 description: "En este escenario y en la documentación de usuario correspondiente se usa la protección de Azure Rights Management para proteger de forma masiva todos los archivos que quiera proteger en un servidor de archivos con el fin de garantizar que solo los empleados de la organización puedan acceder a ellos, incluso si se copian y se guardan en un almacenamiento que está fuera del control del departamento de TI o se envían por correo electrónico a otros usuarios."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 02/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,13 +13,14 @@ ms.assetid: 283c7db3-5730-439e-a215-40a1088ed506
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 31957f12d363746a7a48580e043b477ab09cb823
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: e9cd548d2f2335753349d6a0248c81c0d76c6c97
+ms.lasthandoff: 02/24/2017
 
 
 ---
 
-# <a name="scenario-protect-files-on-a-file-server-share"></a>Escenario: Proteger archivos en un recurso compartido de servidor de archivos
+# <a name="scenario---protect-files-on-a-file-server-share"></a>Escenario: Proteger archivos en un recurso compartido de servidor de archivos
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
@@ -153,9 +154,5 @@ Cada cierto tiempo, el archivo se volverá a proteger, lo que hace que se agregu
 
 -   Póngase en contacto con el departamento de soporte técnico: helpdesk@vanarsdelltd.com
 
-
-
-
-<!--HONumber=Nov16_HO2-->
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

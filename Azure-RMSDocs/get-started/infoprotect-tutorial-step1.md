@@ -1,18 +1,19 @@
 ---
-title: "Paso 1 del tutorial de inicio rápido | Azure Information Protection"
-description: "Paso 1 del tutorial introductorio para probar rápidamente Microsoft Azure Information Protection para su organización, que debería tardar unos 30 minutos."
+title: "Paso 1 del tutorial de inicio rápido - AIP"
+description: "Paso 1 de un tutorial de introducción para probar rápidamente Azure Information Protection: activación del servicio Azure Rights Management."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f6dbb143-96f7-4a9c-8208-be9280d69de9
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: edb98a61d247b51319a1eb172f9978e3d64d0e1b
+ms.sourcegitcommit: 611b65589bdd8aa495fbfbd4a67c30a5fb9c387a
+ms.openlocfilehash: aa1808503e92d0afeb7c0f3f7f9da446d2f13b51
+ms.lasthandoff: 03/01/2017
 
 
 ---
@@ -24,7 +25,7 @@ ms.openlocfilehash: edb98a61d247b51319a1eb172f9978e3d64d0e1b
 > [!NOTE]
 >Si ya ha activado el servicio Azure Rights Management para su inquilino, vaya directamente al [siguiente paso](infoprotect-tutorial-step2.md). 
 
-Cuando se activa el servicio Azure Rights Management, puede proteger los documentos y correos electrónicos más confidenciales de la organización y realizar un seguimiento de cómo se usan cuando los comparte con otros usuarios. Existen diferentes maneras de activar este servicio, como usar Windows PowerShell y navegar por los portales de administración.
+Cuando se activa el servicio Azure Rights Management, puede proteger los documentos y correos electrónicos más confidenciales de la organización y realizar un seguimiento de cómo se usan los documentos protegidos cuando los comparte con otros usuarios. Existen diferentes maneras de activar este servicio, como usar Windows PowerShell y navegar por los portales de administración.
 
 Para este tutorial, iremos directamente a la página de activación para administradores de Office 365, que es la misma página para el portal clásico de Office 365 y la versión preliminar del Centro de administración de Office 365. 
 
@@ -55,8 +56,5 @@ Eso es todo lo que tiene que hacer en este primer paso para completar el tutoria
 [&#171; Introducción](infoprotect-quick-start-tutorial.md)
 [Paso 2 &#187;](infoprotect-tutorial-step2.md)
 
-
-
-<!--HONumber=Nov16_HO2-->
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

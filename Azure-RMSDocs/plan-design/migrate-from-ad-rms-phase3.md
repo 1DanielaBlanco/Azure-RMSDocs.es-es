@@ -1,10 +1,10 @@
 ---
-title: "Migración desde AD RMS a Azure Information Protection: Fase 3 | Azure Information Protection"
+title: "Migración de AD RMS-Azure Information Protection: fase 3"
 description: "La fase 3 de la migración desde AD RMS a Azure Information Protection, donde se describen los pasos 6 al 7 de la migración de AD RMS a Azure Information Protection."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,13 +13,14 @@ ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f1bf7377e5e8079025dff638a185c825256a5cc7
-ms.openlocfilehash: fba8e46993e414fe63414f7240779f5939166c4a
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: d5de26f757803f5c354814b9cbcc965de382192c
+ms.lasthandoff: 02/24/2017
 
 
 ---
 
-# <a name="migration-phase-3-supporting-services-configuration"></a>Fase de migración 3: Configuración de servicios auxiliares
+# <a name="migration-phase-3---supporting-services-configuration"></a>Fase de migración 3: Configuración de servicios auxiliares
 
 >*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Office 365*
 
@@ -116,15 +117,15 @@ Reg_SZ
 
 **Valor:**
 
-https://<AD RMS Intranet Licensing URL>/_wmcs/licensing
+https://\<AD RMS Intranet Licensing URL\>/_wmcs/licensing
 
 **Datos:**
 
 Una de las siguientes, en función de si usas HTTP o HTTPS desde tu servidor Exchange al conector RMS:
 
-- http://<connectorFQDN>/_wmcs/licensing
+- http://\<connectorFQDN\>/_wmcs/licensing
 
-- https://<connectorName>/_wmcs/licensing
+- https://\<connectorName\>/_wmcs/licensing
 
 
 ---
@@ -142,16 +143,16 @@ Reg_SZ
 
 **Valor:**
 
-https://<AD RMS Extranet Licensing URL>/_wmcs/licensing
+https://\<AD RMS Extranet Licensing URL\>/_wmcs/licensing
 
 
 **Datos:**
 
 Una de las siguientes, en función de si usas HTTP o HTTPS desde tu servidor Exchange al conector RMS:
 
-- http://<connectorFQDN>/_wmcs/licensing
+- http://\<connectorFQDN\>/_wmcs/licensing
 
-- https://<connectorFQDN>/_wmcs/licensing
+- https://\<connectorFQDN\>/_wmcs/licensing
 
 ---
 
@@ -169,15 +170,15 @@ Reg_SZ
 
 **Valor:**
 
-https://<AD RMS Intranet Licensing URL>/_wmcs/licensing
+https://\<AD RMS Intranet Licensing URL\>/_wmcs/licensing
 
 **Datos:**
 
 Una de las siguientes, en función de si usas HTTP o HTTPS desde tu servidor Exchange al conector RMS:
 
-- http://<connectorFQDN>/_wmcs/licensing
+- http://\<connectorFQDN\>/_wmcs/licensing
 
-- https://<connectorName>/_wmcs/licensing
+- https://\<connectorName\>/_wmcs/licensing
 
 
 ---
@@ -196,16 +197,16 @@ Reg_SZ
 
 **Valor:**
 
-https://<AD RMS Extranet Licensing URL>/_wmcs/licensing
+https://\<AD RMS Extranet Licensing URL\>/_wmcs/licensing
 
 
 **Datos:**
 
 Una de las siguientes, en función de si usas HTTP o HTTPS desde tu servidor Exchange al conector RMS:
 
-- http://<connectorFQDN>/_wmcs/licensing
+- http://\<connectorFQDN\>/_wmcs/licensing
 
-- https://<connectorFQDN>/_wmcs/licensing
+- https://\<connectorFQDN\>/_wmcs/licensing
 
 ---
 
@@ -214,7 +215,4 @@ Después de completar estos procedimientos, asegúrese de leer la sección **Pas
 ## <a name="next-steps"></a>Pasos siguientes
 Para continuar con la migración, vaya a [Fase 4: Tareas posteriores a la migración](migrate-from-ad-rms-phase4.md).
 
-
-<!--HONumber=Nov16_HO2-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

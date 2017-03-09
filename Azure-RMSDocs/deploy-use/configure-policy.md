@@ -1,10 +1,10 @@
 ---
-title: "Configuración de la directiva | Azure Information Protection"
+title: "Configuración de la directiva de Azure Information Protection"
 description: "Para configurar la protección, la clasificación y el etiquetado, debe configurar la directiva de Azure Information Protection."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5d1a5e3b85d5450bcb2064a6c3b95e6ad802eea3
-ms.openlocfilehash: 808f72be7c5b6a1f18a06ecefdfdf7fbf6febff6
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 2510c14fc10411783838516f45fdfd06fd73350d
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -31,7 +32,7 @@ Para configurar la directiva de Azure Information Protection:
 
 2. Vaya a la hoja **Azure Information Protection**: por ejemplo, en el menú del centro, haga clic en **Más servicios** y comience a escribir **Information Protection** en el cuadro Filtro. De los resultados, seleccione **Azure Information Protection**. 
 
-    Luego verá la hoja **Azure Information Protection**, que abre automáticamente la hoja de la directiva global de Information Protection que obtienen todos los usuarios. Contiene los siguientes elementos que puede configurar:
+    A continuación, verá la hoja **Azure Information Protection**, donde puede abrir la directiva **Global** que todos los usuarios obtienen. Opcionalmente, también puede agregar y editar las directivas de ámbito. La directiva **Global** de Azure Information Protection contiene los siguientes elementos que puede configurar:
 
     - Etiquetas que permiten a los usuarios clasificar documentos y correos electrónicos.
 
@@ -67,7 +68,7 @@ Use la siguiente información como ayuda para configurar la directiva de Azure I
 
 - [Cambio o personalización de una etiqueta existente](configure-policy-change-label.md)
 
-- [Configuración de una etiqueta para aplicar protección](configure-policy-protection.md)
+- [Configuración de una etiqueta para la protección](configure-policy-protection.md)
 
 - [Configuración de una etiqueta para marcas visuales](configure-policy-markings.md)
 
@@ -79,9 +80,5 @@ Use la siguiente información como ayuda para configurar la directiva de Azure I
 
 Para ver un ejemplo de cómo personalizar la directiva predeterminada y ver el comportamiento resultante en una aplicación de Office, pruebe el [tutorial de inicio rápido de Azure Information Protection](../get-started/infoprotect-quick-start-tutorial.md).
 
-
-
-
-<!--HONumber=Dec16_HO1-->
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

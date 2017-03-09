@@ -1,10 +1,10 @@
 ---
-title: "Terminología de Azure Information Protection | Azure Information Protection"
+title: "Terminología de Azure Information Protection"
 description: "¿No entiende el significado de una palabra, una frase o un acrónimo relacionados con Microsoft Azure Information Protection? Busque aquí la definición de los términos y las abreviaturas que son específicos de Azure Information Protection o que tienen un significado específico cuando se usan en el contexto de este servicio."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/08/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 8d2fc307bb531ab434e0bc43a22f7403555ef03f
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: a5cfa773d440e92fe9d3e88e242dfb25f7174400
 
 
 ---
@@ -50,7 +50,7 @@ ms.openlocfilehash: 8d2fc307bb531ab434e0bc43a22f7403555ef03f
 |Information Rights Management|Con frecuencia abreviado como *IRM*.<br /><br />Término usado en conjunto con los servicios de Office, como Exchange Server, Word y SharePoint Online, para describir la posibilidad de admitir los servicios de Microsoft Rights Management.|
 |IRM|Consulte *Information Rights Management*|
 |MSDRM|A veces, se considera una referencia del cliente de RMS 1.0, que se sustituyó por el nuevo cliente, MSIPC. Este cliente anterior admite aplicaciones que se desarrollan con el SDK de RMS 1.0 y admite Office 2010 y Office 2007, Exchange 2010 y Exchange 2013, y SharePoint 2010 y SharePoint 2007.|
-|MSPIC|A veces considerada como referencia para el cliente RMS 2.0, que sustituye al antiguo cliente RMS, MSDRM. Este cliente más reciente admite aplicaciones que se desarrollan con el SDK 2.0 de RMS y es compatible con Office 2016 y Office 2013, SharePoint 2013 y la aplicación RMS sharing.|
+|MSPIC|A veces considerada como referencia para el cliente RMS 2.0, que sustituye al antiguo cliente RMS, MSDRM. Este último cliente admite aplicaciones que se desarrollan con RMS SDK 2.0 y es compatible con Office 2016 y Office 2013, SharePoint 2013, la aplicación RMS sharing y el cliente de Azure Information Protection.|
 |protección nativa|Un nivel de protección disponible en todas las aplicaciones habilitadas que evita que gente no autorizada abra un archivo y que, además, aplica directivas más estrictas, como solo lectura y la imposibilidad de imprimir. Además, esta protección permanece con el archivo, incluso cuando el archivo se reenvía a otras personas o se guarda en una ubicación pública a la que otros puedan acceder.|
 |.pfile|Extensión del nombre de archivo que se anexa a todos los archivos que un servicio de administración de derechos protege de manera genérica.|
 |.ppdf|Extensión del nombre de archivo que un servicio de administración de derechos crea al generar automáticamente una copia en PDF de un archivo (de Word, Excel, PowerPoint o PDF) que comparte por correo electrónico, de modo que el archivo pueda leerse (pero no editarse) en todos los dispositivos.|
@@ -59,7 +59,7 @@ ms.openlocfilehash: 8d2fc307bb531ab434e0bc43a22f7403555ef03f
 |publish|Proteger un archivo a fin de evitar el acceso y el uso no autorizados.|
 |conector de Rights Management|Retransmisión de proxy de salida que se puede implementar para los servicios locales, como Exchange Server y SharePoint, a fin de proteger los datos mediante el servicio Azure Rights Management.|
 |servicios de Rights Management|Término genérico que se aplica a la versión en la nube de [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] ([!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]) y a la versión local de [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] (AD RMS).|
-|Aplicación de uso compartido Rights Management|Una aplicación descargable opcional para dispositivos Windows y la mayoría de los dispositivos móviles más conocidos, que admite el uso compartido seguro de archivos de forma local y por correo electrónico.|
+|Aplicación de uso compartido Rights Management|Ahora se ha reemplazado por el cliente de Azure Information Protection, una aplicación opcional para dispositivos con Windows y la mayoría de los dispositivos móviles más conocidos, que admite el uso compartido seguro de archivos de forma local y por correo electrónico.|
 |RMS|Consulte *servicios de Rights Management*|
 |conector RMS|Consulte *conector de Rights Management*|
 |RMS para usuarios|Suscripción gratuita para que un usuario utilice [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] cuando la organización no tenga una suscripción a Office 365 o Azure Active Directory.|
@@ -69,11 +69,10 @@ ms.openlocfilehash: 8d2fc307bb531ab434e0bc43a22f7403555ef03f
 |desproteger|Quitar controles de administración de derechos de los archivos o mensajes de correo electrónico que usaban directivas de cifrado, identidad y control de acceso para ayudar a proteger los datos.|
 |licencia de uso|Certificado de cada documento que se concede a un usuario que abre un archivo o un mensaje de correo electrónico protegido mediante un servicio de administración de derechos. Este certificado contiene los derechos del usuario relativos al archivo o mensaje de correo electrónico y la clave de cifrado que se usó para cifrar el contenido, así como las restricciones de acceso adicionales definidas en la directiva del documento.|
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-
-
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Feb17_HO4-->
 
 

@@ -1,10 +1,10 @@
 ---
-title: "Cómo se registran los usuarios a RMS para individuos | Azure Information Protection"
+title: Registro de usuarios en RMS para individuos - AIP
 description: "Suscríbase para recibir las instrucciones de esta cuenta gratuita e información técnica sobre cómo funciona este proceso."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/25/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: a60731bd-f78d-4f00-bb3e-354637b312ab
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 82f59842420667c5ad28a6704c9df0d26043d50c
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 1134bff1935b3fada661865f31104e0316e8fecd
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -23,7 +24,7 @@ ms.openlocfilehash: 82f59842420667c5ad28a6704c9df0d26043d50c
 
 >*Se aplica a: Azure Information Protection*
 
-Para registrarse en esta cuenta gratuita, debe solicitarla en la [página de Microsoft Azure Information Protection](https://portal.office.com/signup?sku=rms&ru=https%3A%2F%2Fportal.azurerms.com%2F%23%2Fdownload) y proporcionar su dirección de correo electrónico profesional. La forma más habitual de redirigirle a esta página de suscripción es mediante un mensaje de correo electrónico con un archivo adjunto protegido, que contiene instrucciones sobre cómo suscribirse. Recibirá un correo electrónico de respuesta de Microsoft, tras lo cual podrá completar el proceso de suscripción introduciendo los detalles para crear la cuenta. Cuando se complete, verá una página donde puede descargar la aplicación de uso compartido entre distintos dispositivos, un vínculo a la Guía del usuario y un vínculo para obtener una lista de aplicaciones que admiten de forma nativa la protección de Rights Management. 
+Para registrarse en esta cuenta gratuita, debe solicitarla en la [página de Microsoft Azure Information Protection](https://portal.office.com/signup?sku=rms&ru=https%3A%2F%2Fportal.azurerms.com%2F%23%2Fdownload) y proporcionar su dirección de correo electrónico profesional. La forma más habitual de redirigirle a esta página de suscripción es mediante un mensaje de correo electrónico con un archivo adjunto protegido, que contiene instrucciones sobre cómo suscribirse. Recibirá un correo electrónico de respuesta de Microsoft, tras lo cual podrá completar el proceso de suscripción introduciendo los detalles para crear la cuenta. Cuando se complete, verá una página donde puede descargar Azure Information Protection para distintos dispositivos, un vínculo a la guía del usuario y un vínculo para obtener una lista actualizada de aplicaciones que admiten de forma nativa la protección de Rights Management. 
 
 ## <a name="to-sign-up-for-rms-for-individuals"></a>Para registrarse en RMS como usuarios
 
@@ -44,11 +45,11 @@ Para registrarse en esta cuenta gratuita, debe solicitarla en la [página de Mic
 
 6.  Ahora verá una página **Una última cosa...** para proporcionar detalles de su cuenta. Escriba su nombre y su apellido, escriba y confirme una contraseña de su elección, y después haga clic en **Iniciar**.
 
-7. Cuando se crea la cuenta, verá una nueva página de Microsoft Rights Management donde que puede descargar e instalar la aplicación de uso compartido o haga clic en el vínculo [Más información](../rms-client/sharing-app-user-guide.md) para leer la Guía de usuario de la aplicación de uso compartido.
+7. Cuando se crea la cuenta, verá una nueva página de Microsoft Azure Information Protection donde puede descargar e instalar el cliente de Azure Information Protection o haga clic en el vínculo de la [guía del usuario](../rms-client/client-user-guide.md) para obtener instrucciones de procedimientos para equipos con Windows.
 
 Una vez se ha creado la cuenta, ya puede empezar el proceso de protección de archivos y de lectura de archivos protegidos por otros usuarios. Si se le pide que inicie sesión para proteger o leer archivos protegidos, escriba la misma dirección de correo electrónico y la contraseña que ha usado para crear la cuenta para RMS para usuarios.
 
-## <a name="technical-overview-of-the-signup-process"></a>Información técnica del proceso de registro
+## <a name="technical-overview-of-the-sign-up-process"></a>Información técnica del proceso de registro
 RMS para usuarios usa un proceso de suscripción de autoservicio empleado también por otros servicios que usan la tecnología basada en la nube de Microsoft para autenticar a los usuarios.
 
 Esto es lo que sucede en segundo plano cuando un usuario se suscribe a RMS para usuarios y su organización no tiene una suscripción a Office 365 o a Azure y, por lo tanto, tampoco tiene ningún directorio de Azure para autenticar a los usuarios:
@@ -60,7 +61,7 @@ Esto es lo que sucede en segundo plano cuando un usuario se suscribe a RMS para 
 
     Si se encuentra un inquilino, se comprueba si ya tiene una suscripción para Azure RMS. Si no se encuentra ninguna suscripción, puede agregarse la suscripción a RMS para usuarios gratuita.
 
-2.  A la organización se le concede una suscripción a RMS para individuos. Ahora, este usuario puede ser autenticado por Azure, por lo que ya puede proteger archivos y leer los que otros usuarios protegiesen mediante Azure Rights Management. Para proteger archivos y leer los protegidos, el usuario debe tener una aplicación habilitada para RMS, como la [aplicación para uso compartido de Rights Management](../rms-client/sharing-app-windows.md) gratuita.
+2.  A la organización se le concede una suscripción a RMS para individuos. Ahora, este usuario puede ser autenticado por Azure, por lo que ya puede proteger archivos y leer los que otros usuarios protegiesen mediante Azure Rights Management. Para proteger archivos y leer los que están protegidos, el usuario debe tener una aplicación habilitada para RMS, como el [cliente de Azure Information Protection](../rms-client/aip-client.md) gratuito.
 
 3.  Cuando un segundo usuario de la misma organización solicita una suscripción a RMS para usuarios, se agregará una nueva cuenta de usuario al directorio de Azure creado anteriormente, mediante la suscripción a RMS para usuarios de la organización. Este segundo usuario podrá hacer lo mismo que puede hacer el primer usuario (proteger archivos y leer los protegidos), pero, además, estos dos usuarios podrán colaborar desde este momento con más facilidad y seguridad, ya que podrán aplicar plantillas predeterminadas de forma muy rápida a archivos que limitan el acceso a cuentas del directorio de Azure de su organización.
 
@@ -94,10 +95,4 @@ A lo largo de este proceso, no hay cargos adicionales para la organización y no
 ## <a name="next-steps"></a>Pasos siguientes
 Consulte [Cómo pueden los administradores controlar las cuentas creadas para RMS para usuarios](rms-for-individuals-take-control.md).
 
-
-
-
-
-<!--HONumber=Nov16_HO2-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

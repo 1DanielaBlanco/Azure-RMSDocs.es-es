@@ -1,18 +1,19 @@
 ---
-title: "Tutorial de inicio rápido | Azure Information Protection"
-description: "Un tutorial introductorio para probar rápidamente Microsoft Azure Information Protection para su organización, que debería tardar unos 30 minutos."
+title: "Tutorial de inicio rápido de Azure Information Protection"
+description: "Un tutorial introductorio para probar rápidamente Microsoft Azure Information Protection para su organización, que debería durar unos 20 minutos."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/04/2016
+ms.date: 02/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
 translationtype: Human Translation
-ms.sourcegitcommit: d300f3c130476974e39689edf9e1f0eabbc35da1
-ms.openlocfilehash: de3435767d161567003369fc55dd476283b64f41
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 78d019adfeed4f2bc9cb0924fa8f9b932862819a
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -21,9 +22,9 @@ ms.openlocfilehash: de3435767d161567003369fc55dd476283b64f41
 
 >*Se aplica a: Azure Information Protection*
 
-Use este tutorial rápido para probar Azure Information Protection con solo 5 pasos que deberían tardar menos de 30 minutos. Este tutorial está diseñado para ser una demostración autoguiada para mostrar rápidamente algunas de las características y funcionalidades que ofrece Azure Information Protection. No incluye todas las características disponibles y no está destinado a ser una guía de implementación para su organización. Si está buscando implementar Azure Information Protection en su organización, vea la [documentación del mapa de ruta de implementación](../plan-design/deployment-roadmap.md). 
+Use este tutorial para probar rápidamente Azure Information Protection con solo 5 pasos que deberían tardar menos de 20 minutos. Este tutorial está diseñado para ser una demostración autoguiada para mostrar rápidamente algunas de las características y funcionalidades que ofrece Azure Information Protection. No incluye todas las características disponibles y no está destinado a ser una guía de implementación para su organización. Si está buscando implementar Azure Information Protection en su organización, vea la [documentación del mapa de ruta de implementación](../plan-design/deployment-roadmap.md). 
 
-Este tutorial está destinado a los administradores y consultores de TI a fin de ayudarles a evaluar Azure Information Protection como una solución de protección de la información para una organización. En un entorno de producción, los pasos para configurar la directiva de Information Protection e instalar el cliente y la aplicación para los usuarios se realizan por el administrador. Los pasos para etiquetar el documento y compartir de manera segura un documento por correo electrónico y realizar un seguimiento de este se realiza por los usuarios finales. En este tutorial se incluyen todos estos pasos para mostrar el escenario típico de extremo a extremo consistente en clasificar, etiquetar y proteger los datos de su organización. 
+Este tutorial está destinado a los administradores y consultores de TI a fin de ayudarles a evaluar Azure Information Protection como una solución de protección de la información para una organización. En un entorno de producción, los pasos para configurar la directiva de Information Protection e instalar el cliente para los usuarios los realiza el administrador. Los pasos para etiquetar el documento y compartir de manera segura un documento por correo electrónico y realizar un seguimiento de este se realiza por los usuarios finales. En este tutorial se incluyen todos estos pasos para mostrar el escenario típico de extremo a extremo consistente en clasificar, etiquetar y proteger los datos de su organización. 
 
 Si tiene algún problema para seguir este tutorial, para usar Azure Information Protection o si quiere ver lo que comentan otros usuarios, diríjase al [sitio de Yammer de Azure Information Protection](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all).
 
@@ -48,10 +49,6 @@ Comencemos.
 >[!div class="step-by-step"]
 [&#187; Paso 1](infoprotect-tutorial-step1.md)
 
-
-
-
-
-<!--HONumber=Nov16_HO2-->
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 

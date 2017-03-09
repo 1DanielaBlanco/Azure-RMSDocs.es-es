@@ -1,10 +1,10 @@
 ---
-title: "Activación de Azure Rights Management desde el Centro de administración clásico de Office 365 | Azure Information Protection"
+title: "Activate Azure RMS with Office 365 classic admin center - AIP (Activación de Azure Rights Management desde la versión clásica del Centro de administración de Office 365 - AIP)"
 description: "Instrucciones de activación para el servicio Azure Rights Management cuando tiene acceso a la versión clásica (original) del Centro de administración de Office 365."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/04/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: b6c42663-af01-49d5-94bc-98963c383379
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 0a0741e01b6ff446b16383dbaa26b31327427237
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: caafaa9e4c38a3e4b605e582db44c6c6b0b810d4
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -53,7 +54,4 @@ Ahora debería ver **Rights Management está activada** y la opción para desact
 ## <a name="next-steps"></a>Pasos siguientes
 Vuelva a [Activación de Rights Management de Azure](activate-service.md).
 
-
-<!--HONumber=Nov16_HO2-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

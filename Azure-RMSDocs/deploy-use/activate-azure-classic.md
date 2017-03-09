@@ -1,10 +1,10 @@
 ---
-title: "Cómo activar Azure Rights Management desde el Portal de Azure clásico | Azure Information Protection"
+title: "Activación de Azure RMS con el Portal de Azure clásico - AIP"
 description: "Instrucciones de activación del servicio Azure Rights Management cuando tiene acceso a Azure Portal. Por ejemplo, tiene una suscripción para Enterprise Mobility Suite o tiene la suscripción de Azure Information Protection Premium."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 9b0a0227-88ce-44b8-ba3f-31eeaab27ff7
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: fe806c1c2b3f3284b905602a3a10deb79d91425e
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 444d74c957ec6e243858fcddfaac36951c257a9d
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -58,7 +59,4 @@ Además del estado **Activo** , que indica que el servicio de Rights Management 
 ## <a name="next-steps"></a>Pasos siguientes
 Vuelva a [Activación de Rights Management de Azure](activate-service.md).
 
-
-<!--HONumber=Nov16_HO2-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -1,18 +1,19 @@
 ---
-title: "Configuración de las condiciones para la clasificación automática y recomendada | Azure Information Protection"
+title: "Configuración de condiciones para una etiqueta de Azure Information Protection"
 description: "Al configurar las condiciones de una etiqueta, puede asignar automáticamente la etiqueta a un documento o a un correo electrónico. También puede indicar a los usuarios que seleccionen la etiqueta que usted recomienda."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/07/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
 translationtype: Human Translation
-ms.sourcegitcommit: 4fcfcebc7da5a22a91911d70d4d787dc525d3485
-ms.openlocfilehash: 4211adef1696a1b615bd3f25df568f4b5149c186
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: fd410002d2841c834f40a98c77534169ca09aa70
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -78,7 +79,7 @@ En este ejemplo, el usuario puede hacer clic en **Cambiar ahora** para aplicar l
 
 ## <a name="information-about-the-built-in-conditions"></a>Información sobre las condiciones integradas
 
-Durante el período de versión preliminar, puede seleccionar las siguientes condiciones:
+Puede seleccionar las condiciones siguientes:
 
 - [Código SWIFT](#swift-code )
 
@@ -221,11 +222,7 @@ Ejemplos para prueba:
 
 Para más información sobre cómo configurar la directiva de Azure Information Protection, use los vínculos de la sección [Configuring your organization's policy](configure-policy.md#configuring-your-organizations-policy) (Configuración de la directiva de la organización).  
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
-
-
-
-
-<!--HONumber=Dec16_HO1-->
 
 
