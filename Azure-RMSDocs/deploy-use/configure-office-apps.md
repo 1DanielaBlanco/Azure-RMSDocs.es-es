@@ -1,10 +1,10 @@
 ---
-title: "Aplicaciones de Office: Configuración para clientes | Azure Information Protection"
+title: "Aplicaciones de Office: configuración para clientes - AIP"
 description: "Información e instrucciones para que los administradores puedan configurar las aplicaciones de Office para que funcionen con el servicio Azure Rights Management de Azure Information Protection."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: ec269afe-4e87-4cc1-9144-5fbb594b412e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 199f9233cf9e9e0738c164e537a98189d7a0744e
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 430f390bef496b5e297ae25a03531da42954121d
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -29,16 +30,12 @@ Use esta información para determinar lo que necesita hacer para que las aplicac
 ## <a name="office-2016-and-office-2013"></a>Office 2016 y Office 2013
 Dado que estas últimas versiones de Office son compatibles de forma nativa con el servicio Azure Rights Management, no es necesario configurar el equipo cliente para que admita las características de Information Rights Management (IRM) en aplicaciones como Word, Excel, PowerPoint, Outlook y Outlook Web App. Todo lo que tienen que hacer los usuarios es iniciar sesión en sus aplicaciones Office con sus credenciales de [!INCLUDE[o365_1](../includes/o365_1_md.md)] y pueden proteger archivos y correos electrónicos, así como usar los que hayan sido protegidos por otros usuarios.
 
-Sin embargo, se recomienda que complemente estas aplicaciones con la aplicación de uso compartido Rights Management, para que los usuarios obtengan los beneficios del complemento de Office. Para más información, consulte la sección [Aplicación de uso compartido Rights Management: Instalación y configuración para clientes](configure-sharing-app.md) de este tema.
+No obstante, se recomienda complementar estas aplicaciones con el cliente de Azure Information Protection, para que los usuarios se beneficien del complemento de Office y de la compatibilidad con tipos de archivos adicionales. Para más información, vea [Cliente de Azure Information Protection: instalación y configuración de clientes](configure-client.md).
 
 ## <a name="office-2010"></a>Office 2010
-Para que los equipos cliente puedan usar el servicio Azure Rights Management con Office 2010, es necesario instalar la aplicación Rights Management sharing para Windows. No es preciso implementar ninguna otra configuración, los usuarios deben iniciar sesión con sus credenciales de [!INCLUDE[o365_1](../includes/o365_1_md.md)] y pueden proteger los archivos, así como usar los que hayan sido protegidos por otros usuarios.
+Para que los equipos cliente puedan usar el servicio Azure Rights Management con Office 2010, deben tener instalado el cliente de Azure Information Protection o la aplicación Rights Management sharing para Windows. No es preciso implementar ninguna otra configuración, los usuarios deben iniciar sesión con sus credenciales de [!INCLUDE[o365_1](../includes/o365_1_md.md)] y pueden proteger los archivos, así como usar los que hayan sido protegidos por otros usuarios.
 
-Para más información acerca de la aplicación de Rights Management sharing, consulte la sección [Aplicación de uso compartido Rights Management Instalación y configuración para clientes](configure-sharing-app.md).
+Para más información sobre el cliente de Azure Information Protection, vea [Cliente de Azure Information Protection: instalación y configuración de clientes](configure-client.md).
 
-
-
-
-<!--HONumber=Nov16_HO2-->
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

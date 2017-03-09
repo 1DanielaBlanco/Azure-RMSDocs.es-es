@@ -1,10 +1,10 @@
 ---
-title: "Cómo averiguar si los usuarios se han suscrito para obtener RMS para usuarios | Azure Information Protection"
+title: "¿Los usuarios se suscribieron para obtener RMS para individuos? - AIP"
 description: "Como administrador, ¿cómo sabes si tus usuarios se han registrado para RMS para usuarios? Puede usar cualquiera de los métodos descritos en este artículo, o bien una combinación de ellos."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/24/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: a36c3d99-a794-4f7a-aafb-64a950f1fcf9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: b9979d48af7146f8021de840248f71cb1399b777
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: e696bf596255b5e28aa5589cfc18715f100c5b07
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -28,15 +29,10 @@ Como administrador, ¿cómo sabes si tus usuarios se han registrado para RMS par
 
 -   Pregunte a los usuarios cómo protegen archivos muy confidenciales, especialmente cuando colaboran con otras personas de fuera de la organización.
 
--   Si tiene una suscripción de Azure para su organización, use el cmdlet [Get-MsolAccountSku](https://msdn.microsoft.com/library/azure/dn194118.aspx) para ver si **RIGHTSMANAGEMENT_ADHOC** se devuelve como una de las suscripciones. Si es así, se trata de la suscripción RMS para usuarios que se concedió a la organización, con un conjunto de unidades activas disponibles para los usuarios que utilicen el proceso de suscripción de autoservicio.
+-   Si tiene una suscripción de Azure para su organización, use el cmdlet [Get-MsolAccountSku](https://msdn.microsoft.com/library/azure/dn194118.aspx) para ver si algunos usuarios tienen asignada la licencia **RIGHTSMANAGEMENT_ADHOC**. Esta licencia procede de la suscripción a RMS para usuarios que se concedió a la organización, con un conjunto de unidades activas disponibles para que los usuarios utilicen el proceso de registro de autoservicio.
 
--   Use una solución de administración de sistemas, como System Center Configuration Manager, para inventariar el software instalado y el software en uso. La aplicación de Rights Management sharing se ejecuta mediante el programa **ipviewer.exe** y se puede [descargar e instalar la aplicación](http://go.microsoft.com/fwlink/?LinkId=303970) gratis para identificar otras características sobre esta aplicación que luego usará para el inventario de software.
+-   Use una solución de administración de sistemas, como System Center Configuration Manager, para inventariar el software instalado y el software en uso. Por ejemplo, busque **MSIP.App.exe**, que utiliza el cliente de Azure Information Protection, y **ipviewer.exe** para la aplicación Rights Management sharing. Puede descargar e instalar este cliente y esta aplicación de forma gratuita para identificar otras características que posteriormente puede usar para el inventario de software.
 
--   Manténgase atento a las extensiones de nombre de archivos creadas por la aplicación de uso compartido Rights Management. Las extensiones de nombre de archivo .pfile y .ppdf son el ejemplo más notorio, pero hay otros archivos que cambian su extensión de nombre de archivo cuando están protegidos de forma nativa por el servicio Rights Management. Para más información, consulte la sección [Tipos de archivo y extensiones de nombre de archivo compatibles](../rms-client/sharing-app-admin-guide-technical.md#supported-file-types-and-file-name-extensions) en la [Guía del administrador de la aplicación de Rights Management sharing](http://technet.microsoft.com/library/dn339003.aspx).
+-   Manténgase atento a las extensiones de nombre de archivos creadas por el cliente de Azure Information Protection o por la aplicación Rights Management sharing. Las extensiones de nombre de archivo .pfile y .ppdf son el ejemplo más notorio, pero hay otros archivos que cambian su extensión de nombre de archivo cuando están protegidos de forma nativa por el servicio Rights Management. Para más información, vea [Tipos de archivo compatibles para protección](../rms-client/client-admin-guide-file-types.md#file-types-supported-for-protection) en la guía para administradores del cliente de Azure Information Protection.
 
-
-
-
-<!--HONumber=Nov16_HO2-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

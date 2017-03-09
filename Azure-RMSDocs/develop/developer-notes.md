@@ -1,11 +1,11 @@
 ---
-title: "Instrucciones e información para desarrolladores | Azure RMS"
-description: "En este tema se incluyen instrucciones específicas para varios escenarios de desarrollo importantes."
+title: Instrucciones para desarrolladores de Azure Information Protection SDK 2.1 | Microsoft Docs
+description: "Colección de temas de procedimientos para desarrollar con AIP SDK 2.1"
 keywords: 
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 10/18/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -15,18 +15,20 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a3d58cc4c430fe2335ff8fbb7e23c77915e6b8ab
-ms.openlocfilehash: c09eebc8a950894038a758d8f968c5e3e5ae2a53
+ms.sourcegitcommit: 3b56c14d4ec1faf940e8b7d350d2680625cac795
+ms.openlocfilehash: 268d474e11f70961263b1cbbcc5eca926e880416
+ms.lasthandoff: 02/28/2017
 
 
 ---
 
-# <a name="developer-guidance-and-information"></a>Instrucciones e información para desarrolladores
+# <a name="developer-guidance"></a>Instrucciones para desarrolladores
 
 En esta sección se incluyen instrucciones específicas para varios escenarios de desarrollo importantes, así como información general sobre el desarrollo con este SDK. Los escenarios de esta sección son específicos de esta versión de Rights Management Services SDK 2.1 y podrían modificarse en versiones posteriores.
 - [Uso de la autenticación ADAL](how-to-use-adal-authentication.md): autenticación con Azure RMS para una aplicación que use la biblioteca de autenticación de Azure Active Directory (ADAL).
 - [Incorporación de derechos de propiedad explícitos](add-explicit-owner-rights.md): la aplicación debe agregar explícitamente derechos "Owner" al crear una licencia desde el principio ([IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx)).
 - [Depuración de una aplicación con derechos habilitados](debugging-applications-that-use-ad-rms.md): en este tema se muestra cómo depurar la aplicación y usar el registro de eventos de Windows.
+- [Procedimiento para implementar una aplicación en el inquilino de un cliente](how-to-deploy-app.md): describe los pasos para implementar una aplicación de su inquilino de Azure AD de desarrollo a un inquilino de Azure AD de producción.
 - [Habilitación de la revocación y el seguimiento de documentos](tracking-content.md): en este tema se abordan las instrucciones básicas para implementar el seguimiento de documentos, así como código de ejemplo para las actualizaciones de metadatos y para la creación de un botón **Hacer seguimiento de uso** para la aplicación.
 - [Habilitación de la notificación por correo electrónico](how-to-enable-email-notification.md): las notificaciones por correo electrónico permiten que el propietario de contenido protegido reciba una notificación cuando se acceda a su contenido.
 - [Habilitación de la aplicación de servicio para que funcione con RMS basado en la nube](how-to-use-file-api-with-aadrm-cloud.md): en este tema se describe cómo configurar la aplicación de servicio para que use Azure Rights Management.
@@ -45,8 +47,3 @@ En esta sección se incluyen instrucciones específicas para varios escenarios d
 * [Información general](ad-rms-overview.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Nov16_HO4-->
-
-

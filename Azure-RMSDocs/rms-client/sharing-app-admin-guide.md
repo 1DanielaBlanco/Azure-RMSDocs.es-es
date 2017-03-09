@@ -1,10 +1,10 @@
 ---
-title: "Guía del administrador de la aplicación Rights Management sharing | Azure Information Protection"
+title: "Guía de administrador de la aplicación RMS sharing - AIP"
 description: "Instrucciones e información para administradores de una red empresarial que son responsables de implementar la aplicación Microsoft Rights Management sharing para Windows."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/11/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c9a5bcf46597ee65e2e0f36199f19935f8997048
-ms.openlocfilehash: adab568d173845f411fe5913786b137508485ef6
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: ee9d92752bb2839df859d01e80d3b0ecaeb678f9
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -24,6 +25,8 @@ ms.openlocfilehash: adab568d173845f411fe5913786b137508485ef6
 
 >*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 con SP1, Windows 8 y Windows 8.1*
 
+> [!IMPORTANT]
+> **Finalización de notificación de compatibilidad**: la aplicación Rights Management sharing para Windows se va a sustituir por el [cliente de Azure Information Protection](aip-client.md). La aplicación anterior dejará de ser compatible el 31 de enero de 2018. 
 
 Use la siguiente información si es responsable de la aplicación Microsoft Rights Management sharing en una red de empresa, o si desea más información técnica que la que aparece en [Manual del usuario de la aplicación Rights Management sharing](sharing-app-user-guide.md) o en [FAQ for Microsoft Rights Management Sharing Application for Windows](http://go.microsoft.com/fwlink/?LinkId=303971) (Preguntas más frecuentes sobre la aplicación Microsoft Rights Management sharing para Windows):
 
@@ -169,7 +172,7 @@ Para comprobar que la instalación se realizó correctamente, consulte la secci�
 
 Para comprobar que la instalación se realizó correctamente, consulte la sección [Comprobación de que la instalación se ha realizado correctamente](#verifying-installation-success) de este artículo.
 
-### <a name="to-install-the-rms-sharing-application-and-office-addin-only"></a>Para instalar la aplicación RMS sharing y solo el complemento de Office
+### <a name="to-install-the-rms-sharing-application-and-office-add-in-only"></a>Para instalar la aplicación RMS sharing y solo el complemento de Office
 
 1.  Instale el cliente de AD RMS y la aplicación RMS sharing mediante el siguiente comando, especificando una carpeta existente para crear el archivo de registro:
 
@@ -267,13 +270,13 @@ Puede usar los archivos de registro de instalación para comprobar si la instala
 
     -   [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSDRM\ServiceLocation\Activation]
 
-        @="&lt;dirección URL de certificación&gt;"
+        @="&lt;certification url&gt;"
 
     -   [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\14.0\Common\DRM]
 
         DefaultUser="&lt;default_user&gt;"
 
-### <a name="to-verify-installation-success-for-the-rms-sharing-application-and-office-addin-only"></a>Para comprobar que la instalación de la aplicación RMS sharing y solo el complemento de Office se ha realizado correctamente
+### <a name="to-verify-installation-success-for-the-rms-sharing-application-and-office-add-in-only"></a>Para comprobar que la instalación de la aplicación RMS sharing y solo el complemento de Office se ha realizado correctamente
 
 1.  Para comprobar que el comando Setup_ipviewer.exe se ha ejecutado correctamente, busque el siguiente texto en el archivo de registro de instalación: **Resultado de la instalación: 0**
 
@@ -310,7 +313,7 @@ No todos los comandos de instalación necesarios para estas implementaciones adm
         x86\setup_ipviewer.exe /uninstall /quiet
         ```
 
-### <a name="to-uninstall-the-office-addin"></a>Para desinstalar el complemento de Office
+### <a name="to-uninstall-the-office-add-in"></a>Para desinstalar el complemento de Office
 
 -   Use los comandos siguientes:
 
@@ -404,9 +407,5 @@ Si no realiza este cambio en el Registro, los usuarios no podrán consumir conte
 ## <a name="next-steps"></a>Pasos siguientes
 Para obtener información técnica adicional que incluye la explicación de la diferencia entre los niveles de protección (nativa y genérica), los tipos de archivo y las extensiones de nombre de archivo, y cómo cambiar el nivel de protección predeterminado, consulte [Technical overview for the Rights Management sharing application](sharing-app-admin-guide-technical.md) (Introducción técnica a la aplicación Rights Management sharing).
 
-
-
-
-<!--HONumber=Nov16_HO2-->
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

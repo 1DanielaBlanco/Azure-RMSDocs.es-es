@@ -1,11 +1,11 @@
 ---
-title: Cambiar los permisos de archivos protegidos por Rights Management | Azure Information Protection
+title: Cambio de los permisos en archivos protegidos por RMS - AIP
 description: "Cuando un archivo está protegido por Rights Management, puede cambiar los permisos protegiéndolo de nuevo y especificando todos los usuarios que deben tener acceso a él y los permisos que quiere otorgarles."
 keywords: 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -14,8 +14,9 @@ ms.assetid: 5ac121b3-d7a0-40e4-8fe7-90bf4cf796f1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 531c75846fb88e6f1d9d802df19b275e12e0fdae
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 3290b9436f75c2d0d37c401dd2e0be11bcf2d554
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -39,7 +40,7 @@ Por ejemplo, si otro usuario protegió el archivo mediante la aplicación Rights
 
 Si quiere quitar todos los permisos para que el archivo ya no está protegido, vea [Quitar la protección de un archivo](sharing-app-remove-protection.md).
 
-## <a name="to-reprotect-a-file-inplace"></a>Para volver a proteger un archivo local
+## <a name="to-re-protect-a-file-in-place"></a>Para volver a proteger un archivo local
 
 1.  En el Explorador de archivos, seleccione el archivo que desea proteger. Haga clic con el botón derecho, seleccione **Proteger con RMS** y luego **Proteger en contexto**. Por ejemplo:
 
@@ -72,7 +73,7 @@ Si quiere quitar todos los permisos para que el archivo ya no está protegido, v
 >     Al suscribirse, use la dirección de correo electrónico de su empresa en lugar de una dirección de correo electrónico personal. Si va a suscribirse porque le enviaron un archivo adjunto protegido por correo electrónico, use la misma dirección de correo electrónico que se usó para enviarle el mensaje de correo electrónico.
 > -   Para obtener más información, consulte [RMS for individuals and Azure Rights Management](../understand-explore/rms-for-individuals.md) (RMS para usuarios y Azure Rights Management).
 
-## <a name="to-reprotect-a-file-that-you-have-emailed"></a>Para volver a proteger un archivo que ha enviado por correo electrónico
+## <a name="to-re-protect-a-file-that-you-have-emailed"></a>Para volver a proteger un archivo que ha enviado por correo electrónico
 
 Si quiere cambiar los permisos de un archivo que ha enviado por correo electrónico:
 
@@ -90,13 +91,9 @@ Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de 
 
 -   [Ejemplos de uso de la aplicación RMS sharing](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [¿Qué quiere hacer?](sharing-app-user-guide.md#what-do-you-want-to-do)
+-   [¿Qué desea hacer?](sharing-app-user-guide.md#what-do-you-want-to-do)
 
 ## <a name="see-also"></a>Véase también
-[Guía de usuario de la aplicación Rights Management sharing](sharing-app-user-guide.md)
+[Guía de usuario de la aplicación de uso compartido Rights Management](sharing-app-user-guide.md)
 
-
-
-<!--HONumber=Nov16_HO2-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

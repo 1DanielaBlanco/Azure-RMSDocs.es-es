@@ -1,10 +1,10 @@
 ---
-title: Quitar plantillas | Azure Information Protection
+title: "Eliminación de plantillas de Azure RMS - AIP"
 description: Las plantillas predeterminadas no se pueden eliminar, pero se pueden archivar para que los usuarios no las vean.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 42935ce2-879c-4168-aef9-9a88f72b15b2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: e9af6dcf237ec0136101835ceff56e79e01f3b3c
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 8b581f1de58c7a76a9395c51a62aef7ce3271e2f
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -41,7 +42,4 @@ El estado cambia de **Publicada** a **Archivada**. Si cambia de opinión, selecc
 ## <a name="see-also"></a>Véase también
 [Configuración de plantillas personalizadas para Azure Rights Management](configure-custom-templates.md)
 
-
-<!--HONumber=Nov16_HO2-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

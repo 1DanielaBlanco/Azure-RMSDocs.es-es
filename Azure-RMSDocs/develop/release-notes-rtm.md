@@ -5,18 +5,19 @@ keywords:
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 10/20/2016
+ms.date: 02/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: CE379738-4E1D-42AD-83F4-F89B70456EBB
 audience: developer
-ms.reviewer: shubhamp
+ms.reviewer: kartikk
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: ff150ef29d7ad90e1c53894175a27cfe1f1a4d8e
+ms.sourcegitcommit: 8af3161946b2dfc6ea58d0565491d8e59736d565
+ms.openlocfilehash: 2f4c11f7661a814849ccea41c60edfc2ad2287e8
+ms.lasthandoff: 02/28/2017
 
 
 ---
@@ -25,7 +26,13 @@ ms.openlocfilehash: ff150ef29d7ad90e1c53894175a27cfe1f1a4d8e
 
 Este tema contiene información importante sobre esta versión y versiones anteriores de RMS SDK 2.1.
 
-## <a name="new-for-the-february-2016---sdk-documentation-update"></a>Novedades de la actualización de documentación del SDK de febrero de 2016
+## <a name="new-for-the-february-2017---sdk-documentation-update"></a>Novedades de la actualización de documentación del SDK de febrero de 2017
+>[!Note]  
+> Las actualizaciones de la documentación de esta sección se aplican a la versión de descarga del SDK 1.03102.0221.
+ 
+- **Recopilación de datos**: la recopilación de información y de errores de aplicación ya está disponible. Esta característica se controla a través de una nueva propiedad, *IPC_EI_DATA_COLLECTION_ENABLED* una de las [propiedades de entorno](https://msdn.microsoft.com/en-us/library/hh535247.aspx) y se puede reemplazar de forma administrativa. 
+
+## <a name="february-2016---sdk-documentation-update"></a>Actualización de documentación del SDK de febrero de 2016
 
 >[!Note]
 > Las actualizaciones de la documentación de características de esta sección se aplican a la descarga del SDK con fecha de 11/12/2015.
@@ -162,8 +169,3 @@ Los componentes de la API de archivo del SDK se han ampliado y ofrecen las sigui
 Si no se puede recuperar ningún nombre ni ninguna descripción, se devuelve un error. Solo puede haber un nombre y una descripción para un LCID específico.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO1-->
-
-

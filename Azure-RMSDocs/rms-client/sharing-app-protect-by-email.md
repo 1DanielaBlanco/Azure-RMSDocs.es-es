@@ -1,10 +1,10 @@
 ---
-title: "Protección de un archivo que comparte por correo electrónico con la aplicación Rights Management sharing | Azure Information Protection"
+title: "Uso compartido de documento protegido con la aplicación RMS sharing - AIP"
 description: "Instrucciones sobre cómo compartir de forma segura un documento por correo electrónico."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/04/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 4c1cd1d3-78dd-4f90-8b37-dcc9205a6736
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: addc24fed28cee52b57c7e3bde926d6324478e7b
-ms.openlocfilehash: 1eed5f339ede2d96b1de7e486a04416d1a22c871
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 4110050a0e45fd75633bc27dd220f71855d50672
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -86,13 +87,9 @@ Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de 
 
 -   [Ejemplos de uso de la aplicación RMS sharing](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [¿Qué quiere hacer?](sharing-app-user-guide.md#what-do-you-want-to-do)
+-   [¿Qué desea hacer?](sharing-app-user-guide.md#what-do-you-want-to-do)
 
 ## <a name="see-also"></a>Véase también
-[Guía de usuario de la aplicación Rights Management sharing](sharing-app-user-guide.md)
+[Guía de usuario de la aplicación de uso compartido Rights Management](sharing-app-user-guide.md)
 
-
-
-<!--HONumber=Nov16_HO1-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

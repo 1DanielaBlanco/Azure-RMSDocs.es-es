@@ -1,11 +1,11 @@
 ---
-title: "Introducción a la aplicación de Azure Information Protection para iOS y Android | Azure Information Protection"
+title: "Introducción: aplicación AIP para iOS y Android"
 description: 
 keywords: "Cómo ver correos electrónicos o archivos con la aplicación de Azure Information Protection para iOS y Android"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/07/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: azure
 ms.service: information-protection
@@ -14,8 +14,9 @@ ms.assetid: 3d5d18d8-7b2e-456c-bb45-48da4eb55544
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 0a0c6e5f68f016ec6f921b16ff3063599b45f465
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 14f0d3ba1c01f0fd1b68d2b793e2bb5c8ee9906e
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -32,9 +33,9 @@ Debe acceder desde su dispositivo móvil a uno de los archivos que admite la apl
     
     Use otro dispositivo para enviarse a usted mismo un mensaje de correo electrónico protegido por derechos al que pueda acceder desde su dispositivo móvil. Por ejemplo, use Outlook en un equipo Windows. Para ver una lista de clientes de correo electrónico que admiten de forma nativa Rights Management, vea la columna CORREO ELECTRÓNICO de la página [Aplicaciones compatibles con la protección de datos de Azure Rights Management](../get-started/requirements-applications.md).
 
-- **Un archivo PDF protegido por derechos**: use la aplicación para uso compartido de Rights Management en un equipo Windows o una aplicación de PDF que admita de forma nativa Rights Management para enviarse a usted mismo un archivo PDF protegido por derechos como un archivo adjunto en un correo electrónico. También puede cargar un archivo PDF en una biblioteca protegida de SharePoint y, después, compartirlo mediante su dirección de correo electrónico.
+- **Un archivo PDF protegido por derechos**: desde un equipo con Windows, utilice el cliente de Azure Information Protection para [proteger un archivo PDF](client-classify-protect.md) y, después, envíe manualmente este archivo PDF protegido por derechos como datos adjuntos de correo electrónico. También puede cargar un archivo PDF en una biblioteca protegida de SharePoint y, después, compartirlo mediante su dirección de correo electrónico.
 
-- **Un archivo .ptxt, .pjpg o .ppng**: use la aplicación para uso compartido de Rights Management en un equipo Windows y la opción [Uso compartido seguro](sharing-app-protect-by-email.md) para enviarse a usted mismo un archivo protegido como un archivo adjunto de correo electrónico. Para ver la lista completa de tipos de archivo que puede usar para realizar pruebas, consulte la primera tabla de la sección [Tipos de archivo y extensiones de nombre de archivo admitidos](sharing-app-admin-guide-technical.md#supported-file-types-and-file-name-extensions) de la guía del administrador de la aplicación para uso compartido de Rights Management. 
+- **Un .ptxt, .pjpg o .ppng**: desde un equipo con Windows, use el cliente de Azure Information Protection para proteger un archivo de texto o imagen y envíe manualmente este archivo protegido como datos adjuntos de correo electrónico. Para obtener la lista completa de tipos de archivo que puede utilizar para realizar pruebas, vea la sección [Tipos de archivos compatibles para protección y sus extensiones de nombre de archivo](client-admin-guide-file-types.md#supported-file-types-for-protection-and-their-file-name-extensions) de la Guía para administradores del cliente Azure Information Protection. 
 
 Para ver estos archivos en la aplicación de visor de Azure Information Protection, pulse el vínculo o el archivo adjunto del correo electrónico. Cuando se le pida que seleccione una aplicación para abrirlo, seleccione la aplicación **Visor AIP**. Se le pedirá que inicie sesión en su cuenta profesional o educativa. Una vez que se haya autenticado correctamente, la aplicación Azure Information Protection le muestra el correo electrónico o el archivo para que lo lea.
 
@@ -44,8 +45,4 @@ Si tiene más preguntas sobre esta aplicación, compruebe si están respondidas 
 
 Si tiene otras preguntas, visite nuestro [sitio de Yammer](https://www.yammer.com/AskIPTeam) o [envíe un correo electrónico al equipo de Information Protection](mailto:askIPteam@microsoft.com?subject=Question%20about%20Azure%20Information%20Protection%20app).
 
-
-
-<!--HONumber=Nov16_HO2-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

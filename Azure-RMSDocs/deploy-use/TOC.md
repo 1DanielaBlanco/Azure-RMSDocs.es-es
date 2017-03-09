@@ -15,6 +15,7 @@
 ## [Configuración de aplicaciones](configure-applications.md)
 ### [Office 365](configure-office365.md)
 ### [Aplicaciones de Office](configure-office-apps.md)
+### [Cliente de Azure Information Protection](configure-client.md)
 ### [Aplicación RMS sharing](configure-sharing-app.md)
 ## [Configuración de derechos de uso](configure-usage-rights.md)
 ## [Configuración de superusuarios para los servicios de detección o la recuperación de datos](configure-super-users.md)
@@ -24,7 +25,7 @@
 ### [Creación de una nueva etiqueta](configure-policy-new-label.md)
 ### [Eliminación o cambio de orden de una etiqueta](configure-policy-delete-reorder.md)
 ### [Cambio de una etiqueta](configure-policy-change-label.md)
-### [Aplicación de protección](configure-policy-protection.md)
+### [Configuración de la protección](configure-policy-protection.md)
 #### [Restricciones de HYOK](configure-adrms-restrictions.md)
 ### [Configuración de distintivos visuales](configure-policy-markings.md)
 ### [Configuración de condiciones](configure-policy-classification.md)
@@ -48,6 +49,6 @@
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

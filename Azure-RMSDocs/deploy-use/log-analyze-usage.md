@@ -1,10 +1,10 @@
 ---
-title: "Registro y análisis del servicio Azure Rights Management | Azure Information Protection"
+title: "Registro y análisis del uso del servicio Azure RMS - AIP"
 description: "Información e instrucciones sobre cómo usar el registro de uso con Azure Rights Management (Azure RMS)."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 9dea728836d52249471d3dde69b63a9a2cd1467c
+ms.sourcegitcommit: 17824b007444e9539ffc0374bf39f0984efa494c
+ms.openlocfilehash: 5deea0dce593aae09c498e8b6696205890e9f232
+ms.lasthandoff: 02/28/2017
 
 
 ---
@@ -67,7 +68,7 @@ Para descargar sus registros de uso, deberá usar el módulo de administración 
 
 ### <a name="to-download-your-usage-logs-by-using-powershell"></a>Descargar sus registros de uso mediante PowerShell
 
-1.  Inicie Windows PowerShell con la opción **Ejecutar como administrador** y use el cmdlet [Connect-AadrmService](https://msdn.microsoft.com/library/azure/dn629415.aspx) para conectarse al servicio de Azure Rights Management:
+1.  Inicie Windows PowerShell con la opción **Ejecutar como administrador** y use el cmdlet [Connect-AadrmService](/powershell/aadrm/vlatest/connect-aadrmservice) para conectarse al servicio de Azure Rights Management:
 
     ```
     Connect-AadrmService
@@ -100,7 +101,7 @@ De forma predeterminada, este cmdlet usa tres subprocesos para descargar los reg
 #### <a name="if-you-manually-enabled-azure-rights-management-usage-logging-before-the-logging-change-february-22-2016"></a>Si habilitó manualmente el registro de uso de Azure Rights Management antes del cambio de registro (22 de febrero de 2016).
 
 
-Si ha usado el registro de uso antes del cambio de registro, tendrá registros de uso en su cuenta de almacenamiento de Azure configurada. Microsoft no copiará estos registros de su cuenta de almacenamiento a la nueva cuenta de almacenamiento administrada de Azure Rights Management como parte de este cambio de registro. Es responsable de administrar el ciclo de vida de los registros generados anteriormente y puede usar el cmdlet [Get-AadrmUsageLog](https://msdn.microsoft.com/library/dn629401.aspx) para descargar sus registros antiguos. Por ejemplo:
+Si ha usado el registro de uso antes del cambio de registro, tendrá registros de uso en su cuenta de almacenamiento de Azure configurada. Microsoft no copiará estos registros de su cuenta de almacenamiento a la nueva cuenta de almacenamiento administrada de Azure Rights Management como parte de este cambio de registro. Es responsable de administrar el ciclo de vida de los registros generados anteriormente y puede usar el cmdlet [Get-AadrmUsageLog](/powershell/aadrm/vlatest/get-aadrmusagelog) para descargar sus registros antiguos. Por ejemplo:
 
 - Para descargar todos los registros disponibles en su carpeta E:\logs: `Get-AadrmUsageLog -Path "E:\Logs"`
     
@@ -141,20 +142,22 @@ Cada una de las líneas posteriores es un registro. Los valores de los campos se
 |time|Hora|Hora UTC en formato de 24 hora cuando se realizó el servicio de la solicitud.<br /><br />El origen es el reloj local del servidor que realizó el servicio de la solicitud.|21:59:28|
 |row-id|Texto|GUID único para este registro. Si un valor no está presente, use el valor del identificador de correlación para identificar la entrada.<br /><br />Este valor es útil cuando agrega registros o copia registros en otro formato.|1c3fe7a9-d9e0-4654-97b7-14fafa72ea63|
 |request-type|Nombre|Nombre de la API de RMS que se solicitó.|AcquireLicense|
-|user-id|Cadena|El usuario que realizó la solicitud.<br /><br />El valor se incluye entre comillas únicas. Las llamadas de una clave de inquilino administrada por usted (BYOK) tienen un valor de **"**, que también se aplica cuando los tipos de solicitud son anónimos.|‘joe@contoso.com’|
+|user-id|Cadena|El usuario que realizó la solicitud.<br /><br />El valor se incluye entre comillas únicas. Las llamadas de una clave de inquilino administrada por usted (BYOK) tienen un valor de **"**, que también se aplica cuando los tipos de solicitud son anónimos.|"joe@contoso.com"|
 |result|String|'Success' si se ha proporcionado la solicitud correctamente.<br /><br />El tipo de error entre comillas si se produjo un error de la solicitud.|'Success'|
 |correlation-id|Texto|GUID que es común entre el registro del cliente de RMS y el registro del servidor para una solicitud proporcionada.<br /><br />Este valor puede ser útil para ayudar a solucionar problemas del cliente.|cab52088-8925-4371-be34-4b71a3112356|
 |content-id|Texto|GUID, entre llaves, que identifica el contenido protegido (por ejemplo, un documento).<br /><br />Este campo tiene un valor solo si request-type es AcquireLicense y está en blanco para todos los demás tipos de solicitudes.|{bb4af47b-cfed-4719-831d-71b98191a4f2}|
-|owner-email|Cadena|Dirección de correo electrónico del propietario del documento.|alice@contoso.com|
-|issuer|Cadena|Dirección de correo electrónico del emisor del documento.|alice@contoso.com (o) FederatedEmail.4c1f4d-93bf-00a95fa1e042@contoso.onmicrosoft.com'|
-|template-id|String|Identificador de la plantilla que se usa para proteger el documento.|{6d9371a6-4e2d-4e97-9a38-202233fed26e}|
-|file-name|String|Nombre de archivo del documento que se ha protegido. <br /><br />Actualmente, algunos archivos (como documentos de Office) se muestran como GUID en lugar del nombre de archivo real.|TopSecretDocument.docx|
-|date-published|Fecha|Fecha en la que se ha protegido el documento.|2015-10-15T21:37:00|
+|owner-email|Cadena|Dirección de correo electrónico del propietario del documento.<br /><br /> Este campo está en blanco si el tipo de solicitud es RevokeAccess.|alice@contoso.com|
+|issuer|Cadena|Dirección de correo electrónico del emisor del documento. <br /><br /> Este campo está en blanco si el tipo de solicitud es RevokeAccess.|alice@contoso.com (o) FederatedEmail.4c1f4d-93bf-00a95fa1e042@contoso.onmicrosoft.com|
+|template-id|String|Identificador de la plantilla que se usa para proteger el documento. <br /><br /> Este campo está en blanco si el tipo de solicitud es RevokeAccess.|{6d9371a6-4e2d-4e97-9a38-202233fed26e}|
+|file-name|String|Nombre de archivo del documento que se ha protegido. <br /><br />Actualmente, algunos archivos (como documentos de Office) se muestran como GUID en lugar del nombre de archivo real.<br /><br /> Este campo está en blanco si el tipo de solicitud es RevokeAccess.|TopSecretDocument.docx|
+|date-published|Fecha|Fecha en la que se ha protegido el documento.<br /><br /> Este campo está en blanco si el tipo de solicitud es RevokeAccess.|2015-10-15T21:37:00|
 |c-info|Cadena|Información acerca de la plataforma del cliente que está realizando la solicitud.<br /><br />La cadena específica varía, en función de la aplicación (por ejemplo, el sistema operativo o el explorador).|'MSIPC;version=1.0.623.47;AppName=WINWORD.EXE;AppVersion=15.0.4753.1000;AppArch=x86;OSName=Windows;OSVersion=6.1.7601;OSArch=amd64'|
 |c-ip|Address|Dirección IP del cliente que realiza la solicitud.|64.51.202.144|
+|admin-action|Bool|Si un administrador ha accedido al sitio de seguimiento de documentos en modo de administrador.|True|
+|acting-as-user|Cadena|La dirección de correo electrónico del usuario para el que un administrador accede al sitio de seguimiento de documentos. |'joe@contoso.com'|
 
 
-#### <a name="exceptions-for-the-userid-field"></a>Excepciones para el campo user-id
+#### <a name="exceptions-for-the-user-id-field"></a>Excepciones para el campo user-id
 Aunque el campo user-id suele indicar el usuario que hay realizado la solicitud, hay dos excepciones en las que el valor no se asigna a un usuario real:
 
 -   El valor **'microsoftrmsonline@&lt;YourTenantID&gt;.rms.&lt;region&gt;.aadrm.com'**.
@@ -236,11 +239,7 @@ Si tiene registros en su propio almacenamiento de Azure desde antes del cambio d
 
 Para obtener más información acerca de cómo usar Windows PowerShell para el servicio Azure Rights Management, consulte [Administración del servicio Azure Rights Management mediante Windows PowerShell](administer-powershell.md).
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
-
-
-
-
-<!--HONumber=Nov16_HO1-->
 
 

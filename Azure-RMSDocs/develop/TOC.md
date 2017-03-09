@@ -20,12 +20,11 @@
 #### [Código de ejemplo de Linux](linux-c-code-examples.md)
 #### [Código de ejemplo de iOS/OS X](ios-os-x-code-examples.md)
 #### [Recursos de la Comunidad](community-resources.md)
-### [Instrucciones para desarrolladores y condiciones](core-concepts.md)
+### [Instrucciones para desarrolladores](core-concepts.md)
 #### [Registro y habilitación para RMS de la aplicación con Azure AD](authentication-integration.md)
 #### [Procedimiento para habilitar el registro de rendimiento y errores](enabling-logging.md)
 #### [Uso de los derechos integrados](built-in-rights-usage-restriction-reference.md)
 #### [Uso del seguimiento de documentos](how-to-use-document-tracking.md)
-#### [Términos](terms.md)
 ### [Referencia de API](api-reference-4-2.md)
 #### [Referencia de API de Android](https://msdn.microsoft.com/library/dn758245.aspx)
 #### [Referencia de la API de Linux](linux-c-api-reference.md)
@@ -42,11 +41,12 @@
 #### [Desarrollo de la aplicación](developing-your-application.md)
 #### [Prueba de la aplicación](how-to-set-up-your-test-environment.md)
 #### [Implementación en el entorno de producción](deploying-your-application.md)
-### [Instrucciones e información para desarrolladores](Developer-notes.md)
+### [Instrucciones para desarrolladores](Developer-notes.md)
 #### [Uso de la autenticación ADAL](how-to-use-adal-authentication.md)
 ##### [Configuración de Azure RMS para la autenticación ADAL](adal-auth.md)
 #### [Incorporación de derechos de propiedad explícitos](add-explicit-owner-rights.md)
 #### [Depuración de una aplicación con derechos habilitados](debugging-applications-that-use-ad-rms.md)
+#### [Implementación de una aplicación](how-to-deploy-app.md)
 #### [Habilitación de la revocación y el seguimiento de documentos](tracking-content.md)
 #### [Habilitación de la notificación por correo electrónico](how-to-enable-email-notification.md)
 #### [Habilitación de la aplicación de servicio para que funcione con RMS basado en la nube](how-to-use-file-api-with-aadrm-cloud.md)
@@ -65,8 +65,4 @@
 #### [Funciones](https://msdn.microsoft.com/library/hh535289.aspx)
 #### [Estructuras](https://msdn.microsoft.com/library/hh535294.aspx)
 #### [Códigos de error](https://msdn.microsoft.com/library/hh535248.aspx)
-
-
-<!--HONumber=Jan17_HO2-->
-
-
+## [Términos](terms.md) 
