@@ -47,8 +47,3 @@
 # [Implementación y uso del cliente](/information-protection/rms-client/use-client)
 # [Desarrollar y personalizar aplicaciones](/information-protection/develop/developers-guide)
 
-
-
-<!--HONumber=Feb17_HO3-->
-
-
