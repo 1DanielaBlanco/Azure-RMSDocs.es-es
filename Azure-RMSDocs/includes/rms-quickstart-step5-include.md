@@ -38,8 +38,3 @@ En este tutorial se repasó un caso de cómo Azure RMS puede ayudar a proteger l
 
 Si está listo para comenzar a implementar Azure RMS, consulte [Plan para la implementación de Azure Rights Management](../plan-design/deployment-roadmap.md) para ver los pasos de implementación y los vínculos con instrucciones de procedimiento.
 
-
-
-<!--HONumber=Jan17_HO1-->
-
-

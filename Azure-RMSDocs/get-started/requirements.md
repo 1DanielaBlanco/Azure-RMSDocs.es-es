@@ -12,13 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: c0cbd02cf69ca8039af8f6b397cb71f140eaab50
-
-
+ms.openlocfilehash: 8f249994c2ac1cf02c4572d3f7cb8ba6566cb142
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="requirements-for-azure-information-protection"></a>Requirements for Azure Information Protection (Requisitos de Azure Information Protection)
 
 >*Se aplica a: Azure Information Protection, Office 365*
@@ -51,11 +48,5 @@ Para más información sobre los requisitos adicionales para este escenario, vea
 > Existe una ruta de acceso de migración que se admite [desde AD RMS a Azure Information Protection](http://technet.microsoft.com/library/Dn858447.aspx) y desde [Azure Information Protection a AD RMS](http://msdn.microsoft.com/library/azure/dn629429.aspx). Si implementa Azure Information Protection y después decide que ya no quiere usar este servicio en la nube, vea [Retirada y desactivación de Azure Information Protection](../deploy-use/decommission-deactivate.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-
-
-<!--HONumber=Feb17_HO4-->
 
 
