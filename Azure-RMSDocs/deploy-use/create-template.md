@@ -4,7 +4,7 @@ description: "Instrucciones para crear y administrar plantillas personalizadas e
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 03/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,15 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 11971a176b9c5f413bbe6daa208c062a131343be
-ms.openlocfilehash: 5ab725294d93540f35c395eca08f5f3fbc6ae392
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 9d0b71db6245e49765a0f79aaa901141a155372d
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-
 # <a name="create-configure-and-publish-a-custom-template"></a>Creación, configuración y publicación de una plantilla personalizada
 
 >*Se aplica a: Azure Information Protection, Office 365*
@@ -49,16 +44,16 @@ Usa los procedimientos siguientes para crear, configurar y publicar plantillas p
 
     -   Desde el [Portal de Azure clásico](http://go.microsoft.com/fwlink/p/?LinkID=275081):
 
-        1.  En el panel izquierdo, haga clic en **ACTIVE DIRECTORY**.
+        1. En el panel izquierdo, haga clic en **ACTIVE DIRECTORY**.
 
-        2.  En la página **Active Directory** , haga clic en **RIGHTS MANAGEMENT**.
+        2. En la página **Active Directory** , haga clic en **RIGHTS MANAGEMENT**.
 
-        3.  Selecciona el directorio que administrarás para Rights Management.
-
-        4.  Si no ha activado todavía Rights Management, haga clic en **ACTIVAR** y confirme la acción.
+        3. Si **RIGHTS MANAGEMENT STATUS** aparece **inactivo**, haga clic en **ACTIVATE** y confirme la acción.
 
             > [!NOTE]
-            > Para más información, consulte [Activación de Azure Rights Management](activate-service.md).
+            > Para obtener más información, consulte [Activating Azure Rights Management](activate-service.md) (Activar Azure Rights Management).
+            >
+        4. Cuando **RIGHTS MANAGEMENT STATUS** aparezca **activo**, seleccione el nombre del inquilino de Active Directory.
 
 2.  Crea una plantilla nueva:
 

@@ -4,27 +4,25 @@ description: "Cuando se asigna una etiqueta a un documento o a un mensaje de cor
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 03/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 4ddacf2be34cb7921dfbe282a0476a8cd47de2cf
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: f1ac1ed3aada5d332764db962794d8d6b5428bd7
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Configuración de una etiqueta para marcas visuales de Azure Information Protection
 
 >*Se aplica a: Azure Information Protection*
 
 Cuando se asigna una etiqueta a un documento o a un mensaje de correo electrónico, puede seleccionar varias opciones para hacer visible la clasificación elegida. Estos marcadores visuales son un encabezado, un pie de página y una marca de agua:
 
-Las marcas visuales se aplican a documentos de Word, Excel y PowerPoint cuando se aplica la etiqueta y cuando se guarda el documento. En los mensajes de correo electrónico, las marcas visuales se aplican cuando se envía el mensaje de correo electrónico.
+Los distintivos visuales se aplican a documentos de Word, Excel y PowerPoint cuando se aplica la etiqueta y cuando el documento se guarda en estas aplicaciones de Office. En los mensajes de correo electrónico, los distintivos visuales se aplican cuando el mensaje de correo electrónico se envía desde Outlook.
+
+Los distintivos visuales no se aplican a los documentos cuando la etiqueta se aplica con el Explorador de archivos y la acción que se realiza cuando se hace clic con el botón derecho. O bien, cuando se clasifica un documento con PowerShell.
 
 Más información sobre estos marcadores visuales:
 
@@ -81,5 +79,4 @@ Ejemplo: si especifica la cadena `Document: ${item.name}  Classification: ${item
 Para más información sobre cómo configurar la directiva de Azure Information Protection, use los vínculos de la sección [Configuring your organization's policy](configure-policy.md#configuring-your-organizations-policy) (Configuración de la directiva de la organización).  
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 

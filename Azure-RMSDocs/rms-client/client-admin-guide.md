@@ -4,7 +4,7 @@ description: "Instrucciones e información para administradores de una red empre
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/24/2017
+ms.date: 03/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,15 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: eymanor
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 611b65589bdd8aa495fbfbd4a67c30a5fb9c387a
-ms.openlocfilehash: b0ddf66acf0db37d0396647a5518ccf48195019c
-ms.lasthandoff: 03/01/2017
-
-
+ms.openlocfilehash: adb444f7777304ed40b5b5f988e4efb73268ae14
+ms.sourcegitcommit: cbdbabd626fa5b91c418d84cd6228c9ca94a2525
+translationtype: HT
 ---
-
-
 # <a name="azure-information-protection-client-administrator-guide"></a>Guía para administradores del cliente de Azure Information Protection
 
 >*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 8.1, Windows 8 y Windows 7 con SP1*
@@ -81,7 +76,9 @@ Además:
 
 - El módulo de PowerShell requiere Windows PowerShell versión 4.0, que quizá deba instalarse en sistemas operativos anteriores. Para obtener más información consulte [How to Install Windows PowerShell 4.0](http://social.technet.microsoft.com/wiki/contents/articles/21016.how-to-install-windows-powershell-4-0.aspx) (Instalación de Windows PowerShell 4.0). El instalador no comprueba ni instala este requisito previo para usted. Para confirmar la versión de Windows PowerShell que ejecuta, escriba **$PSVersionTable** en una sesión de PowerShell.
 
-- Los equipos que ejecutan Windows 7 Service Pack 1 requieren [KB 2533623](https://support.microsoft.com/en-us/kb/2533623), que se puede instalar después de instalar el cliente. Si esta actualización es necesaria y no se ha instalado, se le pide que lo haga.
+- Los equipos que ejecutan Windows 7 Service Pack 1 requieren KB 2533623. Para más información sobre esta actualización, consulte [Aviso de seguridad de Microsoft: la carga de una biblioteca no segura podría permitir la ejecución remota de código](https://support.microsoft.com/en-us/kb/2533623). Es posible que tenga que instalar directamente esta actualización o podría reemplazarla otra actualización que la instale por usted.
+    
+    Si la actualización es necesaria y no está instalada, la instalación del cliente mostrará una advertencia que lo señale. Esta actualización se puede instalar después de instalar el cliente, pero algunas acciones estarán bloqueadas y se volverá a mostrar el mensaje.  
 
 > [!NOTE]
 > La instalación requiere permisos administrativos locales.
@@ -89,8 +86,10 @@ Además:
 Además de usar las siguientes instrucciones, el cliente de Azure Information Protection también se incluye en el catálogo de Microsoft Update para que pueda instalar y actualizar al cliente mediante cualquier servicio de actualización de software que use el catálogo. 
 
 1. Descargue el cliente de Azure Information Protection del [Centro de descarga de Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=53018). 
+    
+    Si hay una versión preliminar disponible, manténgala solo para pruebas. No está diseñada para usuarios finales en un entorno de producción. 
 
-2. En una instalación predeterminada, simplemente ejecute el archivo ejecutable, **AzInfoProtection.exe**. No obstante, para ver las opciones de instalación, primero ejecute el archivo ejecutable con **/help**: `AzInfoProtection.exe /help`
+2. En una instalación predeterminada, simplemente ejecute el archivo ejecutable, por ejemplo, **AzInfoProtection.exe**. No obstante, para ver las opciones de instalación, primero ejecute el archivo ejecutable con **/help**: `AzInfoProtection.exe /help`
 
    Ejemplo para instalar el cliente de forma silenciosa: `AzInfoProtection.exe /quiet`
    
@@ -196,4 +195,3 @@ Ahora que ha instalado el cliente de Azure Information Protection, vea la siguie
 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

@@ -4,7 +4,7 @@ description: "Consulte las novedades o los cambios en una publicación del clien
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/01/2017
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,24 +12,22 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 343ac5f79902379e45efcb6979a115ba4c00d1c5
-ms.openlocfilehash: 503cb76825d0092e8562d39281b1d702edaf6438
-ms.lasthandoff: 03/02/2017
-
-
+ms.openlocfilehash: cfd5eae4191cb0b09d8d43f9f708c80ff724d136
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="azure-information-protection-client-version-release-history"></a>Cliente de Azure Information Protection: historial de publicación de versiones
 
 >*Se aplica a: Azure Information Protection*
 
-El equipo de Azure Information Protection actualiza de forma periódica el cliente de Azure Information Protection para implementar correcciones y agregar nuevas funciones. El cliente se incluye en el catálogo de Microsoft Update (categoría: **Azure Information Protection**), y siempre puede descargar la versión más reciente desde el [Centro de descarga de Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=53018).
+El equipo de Azure Information Protection actualiza de forma periódica el cliente de Azure Information Protection para implementar correcciones y agregar nuevas funciones. El cliente se incluye en el Catálogo de Microsoft Update (categoría: **Azure Information Protection**) y siempre puede descargar la versión más reciente de disponibilidad general (GA) y la próxima versión (la versión preliminar) desde el [Centro de descarga de Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=53018).
 
-Use la información siguiente para ver las novedades o los cambios de una versión. La versión más reciente aparece en primer lugar. No se muestran las versiones anteriores de la Disponibilidad general.
+Las versiones preliminares no se deben implementar para los usuarios finales en las redes de producción. En su lugar, use las versiones preliminares para ver y probar nuevas funcionalidades o correcciones que se incluyen en la próxima versión de GA. 
+
+Use la información siguiente para ver las novedades o los cambios de una versión de GA. La versión más reciente aparece en primer lugar. Para información sobre la versión preliminar actual, consulte la información que aparece en la página de descarga.
 
 > [!NOTE]
-> Las revisiones secundarias no se enumeran. Por tanto, si tiene algún problema con el cliente de Azure Information Protection, compruebe primero que no se trate de un problema con la versión más reciente.
+> Las revisiones secundarias no se enumeran. Por tanto, si tiene algún problema con el cliente de Azure Information Protection, compruebe primero que no se trate de un problema con la versión de GA más reciente. Si es así, compruebe la versión preliminar actual.
 >  
 > Si el problema persiste, vea la información de [Opciones de soporte técnico y recursos de la comunidad](../get-started/information-support.md#support-options-and-community-resources). También lo invitamos a participar en el equipo de Azure Information Protection, en su [sitio de Yammer](https://www.yammer.com/askipteam/).
 

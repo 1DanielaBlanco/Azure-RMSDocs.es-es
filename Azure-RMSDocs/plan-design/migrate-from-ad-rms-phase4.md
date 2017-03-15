@@ -4,7 +4,7 @@ description: "La fase 4 de la migración desde AD RMS a Azure Information Protec
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 03/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: fc45ae10101460ea46bf2aa599b213a772eb5626
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: d36f47e586ac1295dcc79e43a9e061b4c7c7fe1e
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="migration-phase-4---post-migration-tasks"></a>Fase de migración 4: Tareas posteriores a la migración
 
 >*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Office 365*
@@ -47,14 +43,17 @@ Supervise la actividad de los servidores de AD RMS. Para ello, por ejemplo, comp
 Después de retirar los servidores de AD RMS, seguramente le interese revisar las plantillas en el Portal de Azure clásico y consolidarlas para que los usuarios tengan menos opciones entre las que elegir, volver a configurarlas o incluso agregar plantillas nuevas. También sería una buena oportunidad para publicar las plantillas predeterminadas. Para más información, vea [Configuración de plantillas personalizadas para el servicio Azure Rights Management](../deploy-use/configure-custom-templates.md).
 
 ## <a name="step-9-re-key-your-azure-information-protection-tenant-key"></a>Step 9. Volver a generar la clave de inquilino de Azure Information Protection
-Este paso solo es válido si la topología de claves de inquilino que ha elegido es administrada por Microsoft, en lugar de ser administrada por el cliente (BYOK con el Almacén de claves de Azure).
+Este paso es necesario cuando la migración está completa si la implementación de AD RMS usaba el modo criptográfico 1 de RMS, porque al volver a generar la clave se crea una nueva clave de inquilino que usa el modo criptográfico 2 de RMS. Se admite el uso de Azure RMS con el modo criptográfico 1 únicamente durante el proceso de migración.
 
-Aunque este paso es opcional, se recomienda completarlo cuando la clave de inquilino de Azure Information Protection es administrada por Microsoft y se ha migrado desde AD RMS. Si vuelve a generar la clave en este escenario, protegerá su clave de inquilino de Azure Information Protection ante posibles infracciones de seguridad en la clave de AD RMS.
+Este paso es opcional pero recomendado cuando se completa la migración, incluso si se estaba ejecutando en el modo criptográfico 2 de RMS. Si vuelve a generar la clave en este escenario, protegerá su clave de inquilino de Azure Information Protection ante posibles infracciones de seguridad en la clave de AD RMS.
 
 Si vuelve a generar la clave de inquilino de Azure Information Protection (que también se conoce como “revertir la clave”), se creará una clave y se archivará la clave original. Pero, como el cambio de una clave a otra no es inmediato, sino que se necesitan varias semanas, vuelva a generar la clave de inquilino de Azure Information Protection en cuanto se complete la migración, sin esperar hasta sospechar de una infracción de la clave original.
 
-Para volver a generar la clave de inquilino de Azure Information Protection administrada por Microsoft, [póngase en contacto con el soporte técnico de Microsoft](../get-started/information-support.md#to-contact-microsoft-support) y abra una **incidencia de soporte técnico de Azure Information Protection con una solicitud para volver a generar la clave de Azure Information Protection después de la migración desde AD RMS**. Necesita demostrar que es un administrador del inquilino de Azure Information Protection y que comprende que este proceso tarda varios días en confirmarse. Se aplican cargos de soporte técnico Standard; la acción de volver a escribir la clave de inquilino no es un servicio de soporte técnico gratuito.
+Para volver a generar la clave de inquilino de Azure Information Protection:
 
+- Si Microsoft administra la clave de inquilino, póngase en contacto con el [soporte técnico de Microsoft](../get-started/information-support.md#to-contact-microsoft-support) y abra una incidencia de soporte técnico de **Azure Information Protection con una solicitud para volver a generar la clave de Azure Information Protection después de la migración desde AD RMS**. Necesita demostrar que es un administrador del inquilino de Azure Information Protection y que comprende que este proceso tarda varios días en confirmarse. Se aplican cargos de soporte técnico Standard; la acción de volver a escribir la clave de inquilino no es un servicio de soporte técnico gratuito.
+
+- Si usted administra la clave de inquilino (BYOK), en Azure Key Vault debe volver a generar la clave que usa para el inquilino de Azure Information Protection y, luego, ejecutar nuevamente el cmdlet [Use-AadrmKeyVaultKey](/powershell/aadrm/vlatest/use-aadrmkeyvaultkey) para especificar la nueva dirección URL de la clave. 
 
 ## <a name="next-steps"></a>Pasos siguientes
 
@@ -63,4 +62,3 @@ Para más información sobre cómo administrar la clave de inquilino de Azure In
 Ahora que ha completado la migración, revise el [mapa de ruta de implementación](deployment-roadmap.md) para identificar las tareas de implementación que necesite realizar.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

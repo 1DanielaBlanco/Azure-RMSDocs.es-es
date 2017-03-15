@@ -4,7 +4,7 @@ description: "¿No entiende el significado de una palabra, una frase o un acrón
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 03/08/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,13 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: a5cfa773d440e92fe9d3e88e242dfb25f7174400
-
-
+ms.openlocfilehash: 5fecc61fb77625047a5ebedad4ff906fe8c27bbe
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="terminology-for-azure-information-protection"></a>Terminología de Azure Information Protection
 
 >*Se aplica a: Azure Information Protection, Office 365*
@@ -64,15 +61,10 @@ ms.openlocfilehash: a5cfa773d440e92fe9d3e88e242dfb25f7174400
 |conector RMS|Consulte *conector de Rights Management*|
 |RMS para usuarios|Suscripción gratuita para que un usuario utilice [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] cuando la organización no tenga una suscripción a Office 365 o Azure Active Directory.|
 |Aplicación RMS sharing|Consulte *Rights Management sharing*.|
+|modo de solo protección|Un modo de funcionamiento para el cliente de Azure Information Protection cuando no hay ninguna directiva de Azure Information Protection para aplicar las etiquetas. En este modo, no se muestran las etiquetas de clasificación, pero los usuarios de todos modos pueden aplicar la protección de Rights Management.|
 |superusuario|Grupo de administradores de gran confianza que pueden descifrar y obtener acceso a los archivos que la organización ha protegido mediante un servicio de administración de derechos. Normalmente, se necesita este nivel de acceso para la exhibición de documentos electrónicos legales y para los equipos de auditoría.|
 |clave de inquilino|También se conoce como la clave del Certificado emisor de licencias de servidor (SLC).<br /><br />La clave que es exclusiva de una organización y que, en definitiva, asegura todas las funciones criptográficas de [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] que se relacionan con esta clave de inquilino.|
 |desproteger|Quitar controles de administración de derechos de los archivos o mensajes de correo electrónico que usaban directivas de cifrado, identidad y control de acceso para ayudar a proteger los datos.|
 |licencia de uso|Certificado de cada documento que se concede a un usuario que abre un archivo o un mensaje de correo electrónico protegido mediante un servicio de administración de derechos. Este certificado contiene los derechos del usuario relativos al archivo o mensaje de correo electrónico y la clave de cifrado que se usó para cifrar el contenido, así como las restricciones de acceso adicionales definidas en la directiva del documento.|
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Feb17_HO4-->
-
-

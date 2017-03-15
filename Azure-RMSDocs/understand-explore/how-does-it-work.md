@@ -4,7 +4,7 @@ description: "Analice cómo funciona Azure RMS, los controles criptográficos qu
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,15 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 3140f678c29771fc3328e312bc7e55d309554e66
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 1dcdb7017be2e2bdfbefcfaa348be977ed67f8c0
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-
 # <a name="how-does-azure-rms-work-under-the-hood"></a>¿Cómo funciona Azure RMS? En segundo plano
 
 >*Se aplica a: Azure Information Protection, Office 365*
@@ -48,23 +43,32 @@ Aunque no tenga que saber usted mismo cómo funciona RMS, puede que se le pregun
 |Controles criptográficos|Uso en Azure RMS|
 |-|-|
 |Algoritmo: AES<br /><br />Longitud de clave: 128 bits y 256 bits [[1]](#footnote-1)|Protección de documentación|
-|Algoritmo: RSA<br /><br />Longitud de clave: 2048 bits|Protección de claves|
+|Algoritmo: RSA<br /><br />Longitud de la clave: 2048 bits [[2]](#footnote-2)|Protección de claves|
 |SHA-256|Firma de certificados|
 
 ###### <a name="footnote-1"></a>Nota al pie 1 
 
 El cliente de Azure Information Protection y la aplicación Rights Management sharing usan&256; bits para la protección genérica y la protección nativa cuando el archivo tiene una extensión de nombre de archivo .ppdf o es un archivo de imagen o texto protegido (como .ptxt o .pjpg).
 
-Almacenamiento y protección de las claves criptográficas:
+###### <a name="footnote-2"></a>Nota al pie 2
 
-- Azure RMS crea una sola clave AES ("clave de contenido") para cada documento o correo electrónico que protege. Esta clave se inserta en el documento y se mantiene aunque se edite el documento. 
+La longitud de la clave es de&2048; bits cuando el servicio Azure Rights Management está activado. Una longitud de clave de&1024; bits es compatible con los siguientes escenarios opcionales:
 
-- La clave de contenido tiene la protección de la clave RSA de la organización (la "clave de inquilino de Azure Information Protection") como parte de la directiva del documento, que también firma el autor de este. Esta clave de inquilino es común para todos los documentos y correos electrónicos de la organización protegidos por Azure RMS. La clave solo se puede cambiar con la intervención de un administrador de Azure Information Protection si la organización usa una clave de inquilino administrada por el cliente (lo que se conoce como "traiga su propia clave" o BYOK). 
+- Durante una migración desde el entorno local si el clúster de AD RMS se ejecuta en el modo criptográfico 1 y no se puede actualizar al modo criptográfico 2.
 
-    Esta clave de inquilino tiene la protección de los servicios en línea de Microsoft, en un entorno muy controlado y bajo una estrecha supervisión. Al usar una clave de inquilino administrada por el cliente (BYOK), esta seguridad mejora gracias al uso de una matriz de módulos de seguridad de hardware (HSM) punteros en cada región de Azure, sin posibilidad de extraerse ni compartirse las claves bajo ninguna circunstancia. Para obtener más información sobre la clave de inquilino y BYOK, vea [Planeamiento e implementación de su clave de inquilino de Azure Information Protection](../plan-design/plan-implement-tenant-key.md).
+- Para claves archivadas que se crearon en el entorno local antes de la migración para que el contenido protegido por AD RMS pueda seguir abierto después de migrar a Azure Rights Management.
 
-- Las licencias y los certificados que se envían a un dispositivo Windows están protegidos con la clave privada de dispositivo del cliente, que se crea la primera vez que un usuario del dispositivo usa Azure RMS. Esta clave privada, a su vez, está protegida con DPAPI en el cliente, que protege estos secretos con una clave derivada de la contraseña del usuario. En dispositivos móviles, las claves se usan solo una vez, de modo que, como no se almacenan en los clientes, no es necesario proteger estas claves en el dispositivo. 
+- Si los clientes eligen traer su propia clave (BYOK) mediante Azure Key Vault. Se recomienda, aunque no es obligatorio, un tamaño de clave mínimo de 2048 bits.
 
+### <a name="how-the-azure-rms-cryptographic-keys-are-stored-and-secured"></a>Almacenamiento y protección de las claves criptográficas de Azure RMS
+
+Azure RMS crea una sola clave AES ("clave de contenido") para cada documento o correo electrónico que protege. Esta clave se inserta en el documento y se mantiene aunque se edite el documento. 
+
+La clave de contenido tiene la protección de la clave RSA de la organización (la "clave de inquilino de Azure Information Protection") como parte de la directiva del documento, que también firma el autor de este. Esta clave de inquilino es común para todos los documentos y correos electrónicos de la organización protegidos por el servicio Azure Rights Management. La clave solo se puede cambiar con la intervención de un administrador de Azure Information Protection si la organización usa una clave de inquilino administrada por el cliente (lo que se conoce como "traiga su propia clave" o BYOK). 
+
+Esta clave de inquilino tiene la protección de los servicios en línea de Microsoft, en un entorno muy controlado y bajo una estrecha supervisión. Al usar una clave de inquilino administrada por el cliente (BYOK), esta seguridad mejora gracias al uso de una matriz de módulos de seguridad de hardware (HSM) punteros en cada región de Azure, sin posibilidad de extraerse ni compartirse las claves bajo ninguna circunstancia. Para obtener más información sobre la clave de inquilino y BYOK, vea [Planeamiento e implementación de su clave de inquilino de Azure Information Protection](../plan-design/plan-implement-tenant-key.md).
+
+Las licencias y los certificados que se envían a un dispositivo Windows están protegidos con la clave privada de dispositivo del cliente, que se crea la primera vez que un usuario del dispositivo usa Azure RMS. Esta clave privada, a su vez, está protegida con DPAPI en el cliente, que protege estos secretos con una clave derivada de la contraseña del usuario. En dispositivos móviles, las claves se usan solo una vez, de modo que, como no se almacenan en los clientes, no es necesario proteger estas claves en el dispositivo. 
 
 
 ## <a name="walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption"></a>Tutorial de cómo funciona Azure RMS: Primer uso, protección de contenido, consumo de contenido
