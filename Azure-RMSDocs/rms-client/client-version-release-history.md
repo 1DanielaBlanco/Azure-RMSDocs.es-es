@@ -4,7 +4,7 @@ description: "Consulte las novedades o los cambios en una publicación del clien
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/06/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: cfd5eae4191cb0b09d8d43f9f708c80ff724d136
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 70c358954a39b02610a77ec81074379dc574158b
+ms.sourcegitcommit: d5ce1bce5e63b3e510033ff9d4d246dd3511ed7c
 translationtype: HT
 ---
 # <a name="azure-information-protection-client-version-release-history"></a>Cliente de Azure Information Protection: historial de publicación de versiones
@@ -30,6 +30,33 @@ Use la información siguiente para ver las novedades o los cambios de una versi�
 > Las revisiones secundarias no se enumeran. Por tanto, si tiene algún problema con el cliente de Azure Information Protection, compruebe primero que no se trate de un problema con la versión de GA más reciente. Si es así, compruebe la versión preliminar actual.
 >  
 > Si el problema persiste, vea la información de [Opciones de soporte técnico y recursos de la comunidad](../get-started/information-support.md#support-options-and-community-resources). También lo invitamos a participar en el equipo de Azure Information Protection, en su [sitio de Yammer](https://www.yammer.com/askipteam/).
+
+## <a name="version-14210"></a>Versión 1.4.21.0
+
+**Lanzamiento**: 15/03/2017
+
+**Nuevos requisitos:**
+
+La versión anterior introdujo el nuevo requisito previo de Microsoft .NET Framework 4.6.2 para todo el cliente. Aunque no se recomienda, puede omitir este requisito previo con un parámetro de instalación personalizada: **DowngradeDotNetRequirement**. Para más información, consulte el [sección de instalación del cliente](client-admin-guide.md#how-to-install-the-azure-information-protection-client-for-users) de la guía del administrador.
+
+
+**Correcciones**:
+
+- Compatibilidad para unidades asignadas para clasificar y proteger archivos.
+
+- Compatibilidad para archivos de gran tamaño (>&250; MB) en el visor. 
+
+- Cuando se configura HYOK, Outlook puede aplicar etiquetas que están configuradas para utilizar plantillas de Azure Rights Management o AD RMS.
+
+
+**Nuevas características**:
+
+- Capacidad de establecer permisos personalizados desde su aplicación de Office, lo que le permite establecer protección únicamente para usted, para grupos externos o parta todos los usuarios de otra organización. Para obtener más información, consulte [Establecimiento de permisos personalizados para un documento](client-classify-protect.md#set-custom-permissions-for-a-document) en la guía del usuario.
+    
+- Los archivos PDF ahora admiten etiquetas que solo se aplican para clasificación.
+
+- Para archivos PDF, el visor ahora admite opciones, como búsqueda, zoom y giro. Para usar estas opciones, haga clic con el botón derecho en el archivo cuando se muestra en el visor.
+
 
 ## <a name="version-131552"></a>Versión 1.3.155.2
 
@@ -75,7 +102,7 @@ Esta versión del cliente es la [versión de disponibilidad general](https://blo
 
 - pruebas de diagnóstico y una opción de restablecimiento que un usuario puede ejecutar desde la aplicación de Office cuando se instala el cliente de Azure Information Protection: en la pestaña **Inicio**, en el grupo **Protección**, haga clic primero en **Proteger**, después en **Ayuda y comentarios** y, por último, en **Ejecutar diagnósticos**. 
 
-    Para obtener más información sobre esta opción, vea la sección [Para verificar la instalación, el estado de la conexión o enviar comentarios](client-admin-guide.md#additional-checks-to-verify-installation-connection-status-or-send-feedback) de la documentación de instalación del cliente.
+    Para más información sobre esta opción, consulte la sección [Additional checks and troubleshooting](client-admin-guide.md#additional-checks-and-troubleshooting) (Comprobaciones adicionales y solución de problemas) en la guía del administrador.
 
 ## <a name="version-11230"></a>Versión 1.1.23.0
 

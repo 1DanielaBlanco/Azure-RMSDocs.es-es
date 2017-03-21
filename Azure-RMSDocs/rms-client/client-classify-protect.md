@@ -4,7 +4,7 @@ description: "Instrucciones de cómo clasificar y proteger sus documentos y corr
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 6d727cdbfba193a80742441ae1a372d2e8fbd699
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: edc8c7227a0f2b493a64f25a26a64aef3a314e39
+ms.sourcegitcommit: df8492aa3687974dc6105dc415c2d959f32e6630
 translationtype: HT
 ---
 # <a name="classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Clasificación y protección de archivos o correos electrónicos mediante Azure Information Protection
@@ -28,9 +28,9 @@ Sin embargo, también puede clasificar y proteger archivos mediante el **Explora
 
 Los archivos protegidos se pueden compartir con otros de forma segura. Por ejemplo, puede adjuntar el archivo a un correo electrónico o enviar una invitación desde el sitio de SharePoint.
 
-Si regularmente comparte archivos con personas ajenas a la organización, puede que el administrador haya configurado una etiqueta que establece la protección de tal forma que dichas personas puedan leerla. Como alternativa, puede usar el [Explorador de archivos para establecer permisos personalizados](#using-file-explorer-to-classify-and-protect-files) de un archivo antes de compartirlo. 
+Si regularmente comparte archivos con personas ajenas a la organización, puede que el administrador haya configurado una etiqueta que establece la protección de tal forma que dichas personas puedan leerla. Como alternativa, puede usar la [aplicación de Office](#set-custom-permissions-for-a-document) o el [Explorador de archivos](#using-file-explorer-to-classify-and-protect-files) para establecer permisos personalizados para un archivo antes de compartirlo. 
 
-Si establece permisos personalizados, y el archivo ya está protegido para uso interno, primero haga una copia. Utilice esta copia para establecer los permisos personalizados.  
+Si establece sus propios permisos personalizados y el archivo ya está protegido para uso interno, primero haga una copia de dicho archivo para conservar los permisos originales. Después, utilice la copia para establecer los permisos personalizados.  
 
 Si el archivo está protegido con los permisos personalizados, use el mecanismo de uso compartido estándar para compartir el archivo. Si es la primera vez que estas personas con las que comparte el archivo han recibido un archivo protegido, es posible que necesiten instrucciones para verlo. Para estas personas, puede copiar y pegar el siguiente mensaje: **Este archivo está protegido con Microsoft Azure Information Protection. Para el primer uso, vea estas [instrucciones](https://aka.ms/rms-signup).**
 
@@ -61,9 +61,32 @@ Además de seleccionar manualmente las etiquetas, estas también pueden aplicars
 
 - Si el administrador ha configurado recientemente una etiqueta nueva, intente cerrar todas las instancias de la aplicación de Office y vuelva a abrirla. Esta acción comprueba si las etiquetas han experimentado algún cambio.
 
-- Si la etiqueta que falta aplica protección, es posible que tenga una edición de Office que no admite la aplicación de protección de Rights Management. Para verificarlo, haga clic en **Proteger** > **Ayuda y comentarios** y compruebe si en la sección **Estado del cliente** aparece el mensaje **This client is not licensed for Office Professional Plus** (Este cliente no tiene licencia para Office Professional Plus). 
+- Si la etiqueta que falta aplica protección, es posible que tenga una edición de Office que no admite la aplicación de protección de Rights Management. Para verificarlo, haga clic en **Proteger** > **Ayuda y comentarios** y compruebe si en la sección **Estado del cliente** aparece el mensaje **Este cliente no tiene licencia de Office Professional Plus**. 
 
 - La etiqueta debe estar en una directiva de ámbito que no incluye su cuenta. Póngase en contacto con el Servicio de asistencia o con el administrador.
+
+### <a name="set-custom-permissions-for-a-document"></a>Establecimiento de permisos personalizados para un documento
+
+Puede especificar su propia configuración de protección para documentos en lugar de usar la configuración de protección que el administrador podría haber incluido con la etiqueta seleccionada.
+
+1. En la pestaña **Inicio**, en el grupo **Protección**, haga clic en **Proteger** > **Permisos personalizados**:
+
+    ![Opción Permisisons personalizados](../media/custom-permissions-callout.png)
+    
+    Tenga en cuenta que cualquier permiso personalizado que especifique reemplaza, en lugar de complementar, la configuración de protección que el administrador podría haber definido para la etiqueta elegida.  
+
+2. En el cuadro de diálogo **Microsoft Azure Information Protection**, especifique lo siguiente:
+
+    - **Proteger con permisos personalizados**: Asegúrese de que esta opción está seleccionada para que pueda especificar y aplicar los permisos personalizados. Desactive esta opción para quitar todos los permisos personalizados.
+    
+    - **Seleccionar permisos**: Si desea proteger el archivo para que solo usted pueda acceder a él, seleccione **Solo para mí**. De lo contrario, elija Seleccionar el nivel de acceso para establecer el nivel de acceso que desee que tengan las personas que especifique.
+
+    - **Seleccionar usuarios, grupos u organizaciones**: Especifique las personas que deben tener los permisos seleccionados para los archivos. Escriba sus direcciones de correo electrónico completas, una dirección de correo electrónico de grupo o un nombre de dominio de la organización para todos los usuarios de esa organización. Tenga en cuenta que actualmente no se admiten direcciones de correo electrónico personales.
+        
+    - **Expire access** (Caducar acceso): seleccione esta opción solo para archivos dependientes del tiempo, de modo que las personas que ha especificado no puedan abrir los archivos seleccionados después de una fecha especificada. Aún podrá abrir el archivo original, pero después de medianoche (su zona horaria actual), el día seleccionado, las personas que haya especificado no podrán abrir el archivo.
+
+5. Haga clic en **Aplicar** y espere a que aparezca el mensaje **Se han aplicado permisos personalizados**. A continuación, haga clic en **Cerrar**.
+
 
 ### <a name="keyboard-shortcuts-for-the-azure-information-protection-bar"></a>Métodos abreviados de teclado para la barra Azure Information Protection
 

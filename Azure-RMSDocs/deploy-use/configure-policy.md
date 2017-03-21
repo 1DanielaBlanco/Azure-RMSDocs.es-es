@@ -4,7 +4,7 @@ description: "Para configurar la protección, la clasificación y el etiquetado,
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/21/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 64a3daa57d71087d11098a1e71465f17b6b8f3b7
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: faf296a92abb6636bd516e41a6e44d4580984146
+ms.sourcegitcommit: 117e4016794d0cb9b7bd95603fb6c79114d65360
 translationtype: HT
 ---
 # <a name="configuring-azure-information-protection-policy"></a>Configuración de la directiva de Azure Information Protection
@@ -48,7 +48,14 @@ Cuando realice cambios en una hoja de Azure Information Protection, haga clic en
 
 Cuando haya terminado de realizar los cambios que desee, haga clic en **Publicar**. 
 
-El cliente de Azure Information Protection busca cambios cada vez que se inicia una aplicación de Office compatible y descarga los cambios en su directiva de Azure Information Protection.
+El cliente de Azure Information Protection busca cambios cada vez que se inicia una aplicación de Office compatible y descarga los cambios en su directiva de Azure Information Protection más reciente. Desencadenadores adicionales que actualizan la directiva en el cliente:
+
+- Haga clic con el botón derecho para clasificar y proteger un archivo o carpeta.
+
+- Ejecución de cmdlets de PowerShell para etiquetado y protección (Get-AIPFileStatus y Set-AIPFileLabel).
+
+- Cada 24 horas.
+
 
 ## <a name="configuring-your-organizations-policy"></a>Configuración de la directiva de la organización
 
