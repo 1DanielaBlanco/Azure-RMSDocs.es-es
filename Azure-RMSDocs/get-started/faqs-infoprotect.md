@@ -4,7 +4,7 @@ description: "¿Tiene alguna pregunta que trate específicamente sobre clasifica
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/15/2017
+ms.date: 03/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-ms.openlocfilehash: 854de3beea1f4b6e05461dee58cec6ca91f79034
-ms.sourcegitcommit: 117e4016794d0cb9b7bd95603fb6c79114d65360
+ms.openlocfilehash: 6af0a81b31fb0a2e5437428dc8373dd997b18406
+ms.sourcegitcommit: f0402cf14506b4c61a156a2baf7e69b7b16883a1
 translationtype: HT
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>Preguntas más frecuentes sobre la clasificación y el etiquetado en Azure Information Protection
@@ -46,7 +46,7 @@ La versión de febrero quita muchas de las limitaciones anteriores. Para más in
 
 Para configurar la directiva de Azure Information Protection, debe iniciar sesión en Azure Portal como administrador global de Azure Active Directory.
 
-Si selecciona la opción para instalar la directiva de demostración cuando instale el [cliente de Azure Information Protection](https://www.microsoft.com/en-us/download/details.aspx?id=53018), no necesita iniciar sesión en el portal para ver y probar la funcionalidad de etiquetado. La directiva de demostración instala localmente la directiva predeterminada para Azure Information Protection, de forma que pueda probar el etiquetado de documentos y correos electrónicos, pero no podrá cambiar ni agregar etiquetas nuevas sin iniciar sesión en el Portal de Azure. 
+Si selecciona la opción para instalar la directiva de demostración cuando instale el [cliente de Azure Information Protection](https://www.microsoft.com/en-us/download/details.aspx?id=53018), no necesita iniciar sesión en el portal para ver y probar la funcionalidad de etiquetado. La directiva de demostración instala localmente una directiva predeterminada para Azure Information Protection, de forma que pueda probar el etiquetado de documentos y correos electrónicos, pero no podrá cambiar ni agregar etiquetas nuevas sin iniciar sesión en Azure Portal. 
 
 ## <a name="which-options-in-the-azure-portal-are-p1-or-p2"></a>¿Qué opciones en Azure Portal son P1 o P2?
 
@@ -56,7 +56,7 @@ Para comprobar qué características se incluyen en la suscripción **Azure Info
 
 Los usuarios pueden seleccionar una sola etiqueta a la vez para cada documento o correo electrónico, lo que a menudo resulta en una sola clasificación. Sin embargo, si los usuarios seleccionan una subetiqueta, en realidad se aplican dos etiquetas a la vez: una principal y una secundaria. Con las subetiquetas, un archivo puede tener dos clasificaciones que denotan una relación entre elementos principal y secundario para así obtener un nivel adicional de control.
 
-Por ejemplo, la etiqueta **Secreto** podría contener subetiquetas como **Legal** y **Financiero**. Se pueden aplicar diferentes marcas visuales de clasificación y diferentes plantillas de Rights Management a estas subetiquetas. Un usuario no puede seleccionar la etiqueta **Secreto** por sí misma; debe seleccionar una de sus etiquetas secundarias, como **Legal**. Como resultado, la etiqueta que ven es **Secreto\Legal**. Los metadatos de ese archivo incluyen una propiedad de texto personalizado para **Secreto**, una propiedad de texto personalizado para **Legal** y otra que contiene los dos valores (**Secreto Legal**). 
+Por ejemplo, la etiqueta **Confidencial** podría contener subetiquetas como **Legal** y **Financiero**. Se pueden aplicar diferentes marcas visuales de clasificación y diferentes plantillas de Rights Management a estas subetiquetas. Un usuario no puede seleccionar la etiqueta **Confidencial** por sí misma, solo una de sus subetiquetas, como **Legal**. Como resultado, la etiqueta que ven es **Confidencial \ Legal**. Los metadatos de ese archivo incluyen una propiedad de texto personalizado para **Confidencial**, una propiedad de texto personalizado para **Legal** y otra que contiene los dos valores (**Confidencial Legal**). 
 
 Cuando use subetiquetas, no configure marcas visuales, protección o condiciones en la etiqueta principal. Si utiliza subniveles, configure estos valores únicamente en la subetiqueta. Si configura estas opciones en la etiqueta principal y en su subetiqueta, la configuración de la subetiqueta tiene prioridad.
 
@@ -76,7 +76,7 @@ Para lograr esta solución:
 
 2. Cree una regla de transporte de Exchange para cada etiqueta. Aplique la regla cuando las propiedades del mensaje incluyan la clasificación que ha configurado, y modifique las propiedades del mensaje para establecer un encabezado de mensaje. 
 
-    Para el encabezado del mensaje, encontrará la información que quiere especificar si inspecciona las propiedades de un archivo de Office que haya clasificado mediante una etiqueta de Azure Information Protection. Identifique la propiedad de archivo con el formato **MSIP_Label_<GUID>_Enabled** y especifique esta cadena para el encabezado del mensaje; a continuación, especifique **True** como valor del encabezado. Por ejemplo, el encabezado del mensaje podría parecerse a esta cadena: **MSIP_Label_132616b8 f72d&5;d1e aec1 dfd89eb8c5b2_Enabled**.
+    Para el encabezado del mensaje, encontrará la información que quiere especificar si inspecciona las propiedades de un archivo de Office que haya clasificado mediante una etiqueta de Azure Information Protection. Identifique la propiedad de archivo con el formato **MSIP_Label_<GUID>_Enabled** y especifique esta cadena para el encabezado del mensaje; a continuación, especifique **True** como valor del encabezado. Por ejemplo, el encabezado del mensaje podría parecerse a esta cadena: **MSIP_Label_132616b8 f72d 5d1e aec1 dfd89eb8c5b2_Enabled**.
 
 
 Ahora cuando los usuarios usan la aplicación web de Outlook o un cliente de dispositivo móvil que admite la protección de administración de derechos, ocurre los siguiente: 

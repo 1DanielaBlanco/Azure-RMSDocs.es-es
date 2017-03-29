@@ -4,54 +4,107 @@ description: "Obtenga información sobre cómo está configurada la directiva pr
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/15/2017
+ms.date: 03/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 671281c8-f0d1-42b6-aae3-681d1821e2cf
-ms.openlocfilehash: 3a2c5af41023021893f0eb751321e798ea523e8c
-ms.sourcegitcommit: d5ce1bce5e63b3e510033ff9d4d246dd3511ed7c
+ms.openlocfilehash: 40a6c3eed95ef30b7540e31478257b1c851ae9b6
+ms.sourcegitcommit: f0402cf14506b4c61a156a2baf7e69b7b16883a1
 translationtype: HT
 ---
 # <a name="the-default-azure-information-protection-policy"></a>Directiva predeterminada de Azure Information Protection
 
 >*Se aplica a: Azure Information Protection*
 
-Utilice la siguiente información para comprender cómo está configurada la directiva predeterminada de Azure Information Protection. Si modifica la directiva predeterminada, puede tomar estos valores como referencia para devolver la directiva a la configuración predeterminada.
+Utilice la siguiente información para comprender cómo está configurada la directiva predeterminada de Azure Information Protection.
+
+Cuando un administrador se conecta por primera vez al servicio Azure Information Protection mediante Azure Portal, se crea la directiva predeterminada para ese inquilino. En ocasiones, es posible que Microsoft realice cambios en la directiva predeterminada, pero si ya estaba usando el servicio antes de que se revisara la directiva predeterminada, no se actualiza la versión anterior de la directiva predeterminada porque podría haberla configurado e implementado en producción.
+
+Puede hacer referencia a los siguientes valores para devolver la directiva a los valores predeterminados o actualizar la directiva con los valores más recientes.
+
+## <a name="current-default-policy"></a>Directiva predeterminada actual
+
+Esta versión de la directiva predeterminada es del 21 de marzo de 2017.
+
+Tenga en cuenta que las descripciones de esta directiva hacen referencia a datos que necesitan protección y también al seguimiento y la revocación de datos. La directiva no configura esta protección para estas etiquetas, por lo que tendrá que realizar pasos adicionales para completar esta descripción. Por ejemplo, configure la etiqueta para aplicar la protección de Azure RMS o use una solución de prevención de pérdida de datos (DLP). Antes de poder realizar el seguimiento de un documento y revocarlo mediante el sitio de seguimiento de documentos, el documento debe protegerse con Azure RMS. 
 
 
-## <a name="information-protection-bar"></a>Barra de Information Protection
+### <a name="labels"></a>Etiquetas
+
+|Etiqueta|Información sobre herramientas|Configuración|
+|-------------------------------|---------------------------|-----------------|
+|Personal|Datos no comerciales de uso exclusivamente personal.|**Habilitada**: activada <br /><br />**Color**: verde claro<br /><br />**Marcas visuales**: desactivadas <br /><br />**Condiciones**: ninguna<br /><br />**Protección**: ninguna|
+|Público|Datos comerciales específicamente elaborados y aprobados para un uso público.|**Habilitada**: activada <br /><br />**Color**: verde<br /><br />**Marcas visuales**: desactivadas<br /><br />**Condiciones**: ninguna<br /><br />**Protección**: ninguna|
+|General|Datos comerciales que no deben ser de dominio público. Pero, si fuera necesario, podrían compartirse con asociados externos. Por ejemplo, el directorio telefónico interno de la empresa, los organigramas, las normativas internas y la mayoría de las comunicaciones internas.|**Habilitada**: activada <br /><br />**Color**: azul <br /><br />**Marcas visuales**: desactivadas<br /><br />**Condiciones**: ninguna<br /><br />**Protección**: ninguna|
+|Confidencial|Datos comerciales confidenciales que podrían ocasionar daños a la empresa si se compartieran con personas no autorizadas. Ejemplos: contratos, informes de seguridad, resúmenes de previsiones y datos de cuentas de ventas.|**Habilitada**: activada <br /><br />**Color**: naranja<br /><br />**Marcas visuales**: desactivadas<br /><br />**Condiciones**: ninguna<br /><br />**Protección**: ninguna|
+|Extremadamente confidencial|Datos comerciales extremadamente confidenciales que podrían ocasionar daños a la empresa si se compartieran con personas no autorizadas. Ejemplos: información sobre empleados y clientes, contraseñas, código fuente e informes financieros previamente anunciados.|**Habilitada**: activada <br /><br />**Color**: rojo<br /><br />**Marcas visuales**: desactivadas<br /><br />**Condiciones**: ninguna<br /><br />**Protección**: ninguna|
+
+
+### <a name="sub-labels"></a>Etiquetas secundarias
+
+|Etiqueta|Información sobre herramientas|Configuración|
+|-------------------------------|---------------------------|-----------------|
+|Confidencial \ Todos los empleados|Datos confidenciales que requieren protección pero conceden todos los permisos a todos los empleados. Los propietarios de los datos pueden hacer un seguimiento del contenido y revocarlo.|**Habilitada**: activada <br /><br />**Marcas visuales**: pie de página (documentos y correo electrónico)<br /><br />Clasificado como confidencial<br /><br />**Condiciones**: ninguna<br /><br />**Protección**: ninguna|
+|Confidencial \ Cualquiera (sin protección)|Datos que no requieren protección. Use esta opción con precaución y con la debida justificación comercial.|**Habilitada**: activada <br /><br />**Marcas visuales**: pie de página (documentos y correo electrónico)<br /><br />Clasificado como confidencial <br /><br />**Condiciones**: ninguna<br /><br />**Protección**: ninguna|
+|Extremadamente confidencial \ Todos los empleados|Datos extremadamente confidenciales que conceden a los empleados los permisos de visualización, edición y respuesta en relación con el contenido. Los propietarios de los datos pueden hacer un seguimiento del contenido y revocarlo.|**Habilitada**: activada <br /><br />**Marcas visuales**: pie de página (documentos y correo electrónico)<br /><br />Clasificado como extremadamente confidencial<br /><br />**Condiciones**: ninguna<br /><br />**Protección**: ninguna|
+|Extremadamente confidencial \ Cualquiera (sin protección)|Datos que no requieren protección. Use esta opción con precaución y con la debida justificación comercial.|**Habilitada**: activada <br /><br />**Marcas visuales**: pie de página (documentos y correo electrónico)<br /><br />Clasificado como extremadamente confidencial<br /><br />**Condiciones**: ninguna<br /><br />**Protección**: ninguna|
+
+### <a name="information-protection-bar"></a>Barra de Information Protection
 
 |Configuración|Valor|
 |-------------------------------|---------------------------|
 |Título|Sensibilidad|
-|Información sobre herramientas|Information Sensitivity consta de cuatro niveles distintos (Público, Interno, Confidencial y Secreto), que permiten al usuario identificar el riesgo de exposición de la información a usuarios no autorizados dentro o fuera de la empresa.|
+|Información sobre herramientas|Etiqueta actual de este contenido. Este valor identifica el riesgo que supondría a la empresa el hecho de que este contenido se compartiera con personas no autorizadas de dentro o fuera de la organización.|
 
-## <a name="labels"></a>Etiquetas
 
-|Etiqueta|Información sobre herramientas|Configuración|
-|-------------------------------|---------------------------|-----------------|
-|Personal|Solo para uso personal. Estos datos no se supervisan en la organización. La información personal no debe incluir datos relacionados con el negocio.|**Habilitada**: activada <br /><br />**Color**: verde claro<br /><br />**Marcas visuales**: desactivadas <br /><br />**Condiciones**: ninguna<br /><br />**Protección**: ninguna|
-|Público|Esta información es interna y todo el mundo puede usarla, tanto dentro como fuera de la empresa.|**Habilitada**: activada <br /><br />**Color**: verde<br /><br />**Marcas visuales**: desactivadas<br /><br />**Condiciones**: ninguna<br /><br />**Protección**: ninguna|
-|Interno|Esta información incluye una amplia variedad de datos empresariales internos que todos los empleados pueden usar y que se pueden compartir con clientes y asociados comerciales autorizados. Ejemplos de información interna son las directivas de empresa y la mayoría de las comunicaciones internas.|**Habilitada**: activada <br /><br />**Color**: azul <br /><br />**Marcas visuales**: pie de página (documentos y correo electrónico)<br /><br />**Condiciones**: ninguna<br /><br />**Protección**: ninguna|
-|Confidencial|Estos datos incluyen información empresarial confidencial. Exponer estos datos a usuarios no autorizados puede provocar daños para la organización. Ejemplos de información confidencial son información de los empleados, proyectos o contratos de clientes individuales y datos de cuentas de ventas.|**Habilitada**: activada <br /><br />**Color**: naranja<br /><br />**Marcas visuales**: pie de página (documentos y correo electrónico)<br /><br />**Condiciones**: ninguna<br /><br />**Protección**: ninguna|
-|Secreto|Estos datos incluyen información confidencial de la empresa que se debe proteger. Exponer datos secretos a usuarios no autorizados puede provocar daños graves para la organización. Ejemplos de información secreta son información de identificación personal, registros de cliente, código fuente e informes financieros previamente anunciados.|**Habilitada**: activada <br /><br />**Color**: rojo<br /><br />**Marcas visuales**: pie de página (documentos y correo electrónico)<br /><br />**Condiciones**: ninguna<br /><br />**Protección**: ninguna|
-
-## <a name="sub-labels"></a>Etiquetas secundarias
-
-|Etiqueta|Información sobre herramientas|Configuración|
-|-------------------------------|---------------------------|-----------------|
-|Secreto \ All Company (Toda la compañía)|Estos datos incluyen información empresarial confidencial, permitida para todos los empleados de la empresa.|**Habilitada**: activada <br /><br />**Marcas visuales**: desactivadas<br /><br />**Condiciones**: ninguna<br /><br />**Protección**: ninguna|
-|Secreto \ My Group (Mi grupo)|Estos datos incluyen información empresarial confidencial, permitida solo para grupos de empleados.|**Habilitada**: activada <br /><br />**Marcas visuales**: desactivadas<br /><br />**Condiciones**: ninguna<br /><br />**Protección**: ninguna|
-
-## <a name="global-settings"></a>Configuración global
+### <a name="settings"></a>Configuración
 
 |Configuración|Valor|
 |-------------------------------|---------------------------|
 |All documents and emails must have a label (applied automatically or by users) [Todos los documentos y correos electrónicos deben tener una etiqueta (aplicada automáticamente o por los usuarios)]|Desactivado|
 |Select the default label (Seleccionar la etiqueta predeterminada)|Ninguno|
 |Users must provide justification to set a lower classification label, remove a label, or remove protection (Los usuarios deben proporcionar una justificación para establecer una etiqueta de clasificación inferior, quitar una etiqueta o quitar la protección)|Desactivado|
+|Para los mensajes de correo electrónico con datos adjuntos, aplicar una etiqueta que coincida con la clasificación más alta de los datos adjuntos|Desactivado|
+|Proporcionar una dirección URL personalizada para la página web "Más información" del cliente de Azure Information Protection|En blanco|
+
+## <a name="default-policy-before-march-21-2017"></a>Directiva predeterminada antes del 21 de marzo de 2017
+
+### <a name="labels"></a>Etiquetas
+
+|Etiqueta|Información sobre herramientas|Configuración|
+|-------------------------------|---------------------------|-----------------|
+|Personal|Solo para uso personal. Estos datos no se supervisan en la organización. La información personal no debe incluir datos relacionados con el negocio.|**Habilitada**: activada <br /><br />**Color**: verde claro<br /><br />**Marcas visuales**: desactivadas <br /><br />**Condiciones**: ninguna<br /><br />**Protección**: ninguna|
+|Público|Esta información es interna y todo el mundo puede usarla, tanto dentro como fuera de la empresa.|**Habilitada**: activada <br /><br />**Color**: verde<br /><br />**Marcas visuales**: desactivadas<br /><br />**Condiciones**: ninguna<br /><br />**Protección**: ninguna|
+|Interno|Esta información incluye una amplia variedad de datos empresariales internos que todos los empleados pueden usar y que se pueden compartir con clientes y asociados comerciales autorizados. Ejemplos de información interna son las directivas de empresa y la mayoría de las comunicaciones internas.|**Habilitada**: activada <br /><br />**Color**: azul <br /><br />**Marcas visuales**: pie de página (documentos y correo electrónico): <br /><br />Sensibilidad: Interno<br /><br />**Condiciones**: ninguna<br /><br />**Protección**: ninguna|
+|Confidencial|Estos datos incluyen información empresarial confidencial. Exponer estos datos a usuarios no autorizados puede provocar daños para la organización. Ejemplos de información confidencial son información de los empleados, proyectos o contratos de clientes individuales y datos de cuentas de ventas.|**Habilitada**: activada <br /><br />**Color**: naranja<br /><br />**Marcas visuales**: pie de página (documentos y correo electrónico):<br /><br /> Sensibilidad: Confidencial<br /><br />**Condiciones**: ninguna<br /><br />**Protección**: ninguna|
+|Secreto|Estos datos incluyen información confidencial de la empresa que se debe proteger. Exponer datos secretos a usuarios no autorizados puede provocar daños graves para la organización. Ejemplos de información secreta son información de identificación personal, registros de cliente, código fuente e informes financieros previamente anunciados.|**Habilitada**: activada <br /><br />**Color**: rojo<br /><br />**Marcas visuales**: pie de página (documentos y correo electrónico):<br /><br /> Sensibilidad: Secreto<br /><br />**Condiciones**: ninguna<br /><br />**Protección**: ninguna|
+
+
+### <a name="sub-labels"></a>Etiquetas secundarias
+
+|Etiqueta|Información sobre herramientas|Configuración|
+|-------------------------------|---------------------------|-----------------|
+|Secreto \ All Company (Toda la compañía)|Estos datos incluyen información empresarial confidencial, permitida para todos los empleados de la empresa.|**Habilitada**: activada <br /><br />**Marcas visuales**: desactivadas<br /><br />**Condiciones**: ninguna<br /><br />**Protección**: ninguna|
+|Secreto \ My Group (Mi grupo)|Estos datos incluyen información empresarial confidencial, permitida solo para grupos de empleados.|**Habilitada**: activada <br /><br />**Marcas visuales**: desactivadas<br /><br />**Condiciones**: ninguna<br /><br />**Protección**: ninguna|
+
+### <a name="information-protection-bar"></a>Barra de Information Protection
+
+|Configuración|Valor|
+|-------------------------------|---------------------------|
+|Título|Sensibilidad|
+|Información sobre herramientas|Information Sensitivity consta de cuatro niveles distintos (Público, Interno, Confidencial y Secreto), que permiten al usuario identificar el riesgo de exposición de la información a usuarios no autorizados dentro o fuera de la empresa.|
+
+
+### <a name="settings"></a>Configuración
+
+|Configuración|Valor|
+|-------------------------------|---------------------------|
+|All documents and emails must have a label (applied automatically or by users) [Todos los documentos y correos electrónicos deben tener una etiqueta (aplicada automáticamente o por los usuarios)]|Desactivado|
+|Select the default label (Seleccionar la etiqueta predeterminada)|Ninguno|
+|Users must provide justification to set a lower classification label, remove a label, or remove protection (Los usuarios deben proporcionar una justificación para establecer una etiqueta de clasificación inferior, quitar una etiqueta o quitar la protección)|Desactivado|
+|Proporcionar una dirección URL personalizada para la página web "Más información" del cliente de Azure Information Protection|En blanco|
 
 
 ## <a name="next-steps"></a>Pasos siguientes
