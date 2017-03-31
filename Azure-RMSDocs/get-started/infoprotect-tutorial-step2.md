@@ -4,14 +4,14 @@ description: "Paso 2 de un tutorial de introducción para probar rápidamente Az
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/21/2017
+ms.date: 03/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: 7db581d07698edf50fda8379d622e35414ad3671
-ms.sourcegitcommit: f0402cf14506b4c61a156a2baf7e69b7b16883a1
+ms.openlocfilehash: 98e65768651c77b4cc0616142e6b7515d275b7a9
+ms.sourcegitcommit: 8ae83a9fc03bf2ee39ea758835ef52156f19784d
 translationtype: HT
 ---
 # <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>Paso 2: configurar y publicar la directiva de Azure Information Protection
@@ -29,11 +29,9 @@ Aunque Azure Information Protection incluye una directiva predeterminada que se 
     > [!TIP] 
     > Seleccione **Anclar al panel** para crear un icono de **Azure Information Protection** en el panel, de modo que pueda omitir el examen del servicio la próxima vez que inicie sesión en el portal.
 
-3.  En la hoja Azure Information Protection, haga clic en **Global** y explore la hoja **Policy: Global** (Directiva: Global) en la que se muestra la directiva predeterminada de Information Protection que se ha creado automáticamente para el inquilino.
+3.  Explore la hoja **Policy: Global** (Directiva:Global) que abre y muestra automáticamente la directiva predeterminada de Information Protection que se crea automáticamente:
     
-    En la hoja **Policy: Global** (Directiva: Global), verá lo siguiente:
-    
-    - Etiquetas de clasificación: **Personal**, **Público**, **General**, **Confidencial** y **Extremadamente confidencial**. Tenga en cuenta que las dos últimas etiquetas se expanden para mostrar las subetiquetas: **Todos los empleados** y **Cualquiera (sin protección)**, para proporcionar ejemplos de cómo una clasificación puede tener subcategorías.
+    - Etiquetas de clasificación: **Personal**, **Público**, **General**, **Confidencial** y **Extremadamente confidencial**. Las dos últimas etiquetas se expanden para mostrar las subetiquetas: **Todos los empleados** y **Cualquiera (sin protección)**, para proporcionar ejemplos de cómo una clasificación puede tener subcategorías.
     
        > [!NOTE]
        > Es posible que su directiva predeterminada sea ligeramente diferente a la de este tutorial. Por ejemplo, tiene una etiqueta denominada **Interno** en lugar de **General**, y **Secreto** en lugar de **Extremadamente confidencial**. Si es así, probablemente está usando una versión anterior de la directiva predeterminada. O bien, es posible que la haya editado manualmente antes de iniciar el tutorial.

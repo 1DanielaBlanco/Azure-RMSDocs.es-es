@@ -4,7 +4,7 @@ description: "Instrucciones para crear y administrar plantillas personalizadas e
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/08/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9d0b71db6245e49765a0f79aaa901141a155372d
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: cf11e0ac3bb13dcb31d14bad5f97ad117bd09953
+ms.sourcegitcommit: 16fec44713c7064959ebb520b9f0857744fecce9
 translationtype: HT
 ---
 # <a name="create-configure-and-publish-a-custom-template"></a>Creación, configuración y publicación de una plantilla personalizada
@@ -75,6 +75,8 @@ Usa los procedimientos siguientes para crear, configurar y publicar plantillas p
 
     > [!NOTE]
     > Los usuarios o grupos que selecciones deben disponer de una dirección de correo electrónico. En un entorno productivo, no será un problema, pero en un entorno de pruebas simple, es posible que tengas que agregar direcciones de correo electrónico para cuentas de usuario o grupos.
+    > 
+    > Si una dirección de correo electrónico cambia después de seleccionar el usuario o grupo y guarda la plantilla, consulte la sección [Consideraciones si las direcciones de correo electrónico cambian](../plan-design/prepare.md#considerations-if-email-addresses-change) de la documentación de planeación. 
 
     Se recomienda usar grupos más que usuarios, lo cual simplifica la administración de las plantillas. Sin embargo, si realiza cambios en el grupo, recuerde que por motivos de rendimiento, Azure Rights Management [almacena en caché la pertenencia al grupo](../plan-design/prepare.md#group-membership-caching). 
     

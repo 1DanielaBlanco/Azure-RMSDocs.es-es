@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: b946dff4782d1b5571aa0438d1681030f0de092f
-ms.sourcegitcommit: f0402cf14506b4c61a156a2baf7e69b7b16883a1
+ms.openlocfilehash: ec57bae71b11b6505ccb94fcdf692f215862191d
+ms.sourcegitcommit: 8ae83a9fc03bf2ee39ea758835ef52156f19784d
 translationtype: HT
 ---
 # <a name="configuring-azure-information-protection-policy"></a>Configuración de la directiva de Azure Information Protection
@@ -28,7 +28,7 @@ Para configurar la directiva de Azure Information Protection:
 
 2. Vaya a la hoja **Azure Information Protection**: por ejemplo, en el menú del centro, haga clic en **Más servicios** y comience a escribir **Information Protection** en el cuadro Filtro. De los resultados, seleccione **Azure Information Protection**. 
 
-    A continuación, verá la hoja **Azure Information Protection**, donde puede abrir la directiva **Global** que todos los usuarios obtienen. Opcionalmente, también puede agregar y editar las directivas de ámbito. La directiva **Global** de Azure Information Protection contiene los siguientes elementos que puede configurar:
+    Cuando la hoja **Azure Information Protection** se carga, se abre automáticamente la hoja **Policy: Global** (Directiva: Global), para ver y editar la directiva global que obtienen todos los usuarios. Sin embargo, también puede agregar y editar las directivas de ámbito. La directivas de Azure Information Protection contienen los siguientes elementos que puede configurar:
 
     - Etiquetas que permiten a los usuarios clasificar documentos y correos electrónicos.
 
