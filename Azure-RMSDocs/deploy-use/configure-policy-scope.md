@@ -4,7 +4,7 @@ description: "Para configurar valores y etiquetas diferentes para usuarios espec
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 4b134785-0353-4109-8fa7-096d1caa2242
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 4f64a0f29beb11e132dbabde099902e296f2e513
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 2fc0059f0cc2d7c1a0eb08d6f8ee89ea2bf4bfbd
+ms.sourcegitcommit: 16fec44713c7064959ebb520b9f0857744fecce9
 translationtype: HT
 ---
 # <a name="how-to-configure-the-azure-information-protection-policy-for-specific-users-by-using-scoped-policies"></a>Configuración de la directiva de Azure Information Protection para usuarios específicos mediante directivas de ámbito
@@ -39,7 +39,7 @@ Para configurar una directiva de ámbito de Azure Information Protection:
 
     En la hoja inicial de **Azure Information Protection**, seleccione **Agregar una directiva**. Verá entonces la segunda hoja que se usa para mostrar la actualización de la directiva global, por lo que ahora puede configurar la nueva directiva de ámbito.
 
-3. Especifique un nombre de directiva y una descripción que solo los administradores vean en el portal de Azure. El nombre debe ser único en el inquilino. A continuación, haga clic en **Specify which users/groups get this policy** (Especificar qué usuarios o grupos obtienen esta directiva) y, en las siguientes hojas, busque y seleccione los usuarios y grupos a los que se aplica esta directiva. Las etiquetas y valores de configuración que defina en esta directiva de ámbito se aplican solo a estos usuarios. 
+3. Especifique un nombre de directiva y una descripción que solo los administradores vean en el portal de Azure. El nombre debe ser único en el inquilino. A continuación, haga clic en **Specify which users/groups get this policy** (Especificar qué usuarios o grupos obtienen esta directiva) y, en las siguientes hojas, busque y seleccione los usuarios y grupos a los que se aplica esta directiva. Las etiquetas y valores de configuración que defina en esta directiva de ámbito se aplican solo a estos usuarios.
 
 4. Ahora cree nuevas etiquetas o configure los valores de la directiva de ámbito. La directiva global siempre se aplica primero, así que puede complementarla con nuevas etiquetas e invalidar los valores de configuración globales. Por ejemplo, si la directiva global no tiene especificada una etiqueta predeterminada, podría configurar una etiqueta predeterminada diferente en diferentes directivas de ámbito para departamentos específicos.
 

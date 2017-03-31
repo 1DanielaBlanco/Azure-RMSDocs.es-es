@@ -4,7 +4,7 @@ description: "Cuando usa el servicio Azure Rights Management, se descargan de fo
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/15/2017
+ms.date: 03/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b1ff1345dd2b3cff8ccb5ff7b454e209403b1190
-ms.sourcegitcommit: df8492aa3687974dc6105dc415c2d959f32e6630
+ms.openlocfilehash: 77bd9e7bedf4a319f8f911782c995066a26a7055
+ms.sourcegitcommit: 8ae83a9fc03bf2ee39ea758835ef52156f19784d
 translationtype: HT
 ---
 # <a name="refreshing-templates-for-users"></a>Actualización de plantillas para usuarios
@@ -25,7 +25,6 @@ Cuando usa el servicio Azure Rights Management de Azure Information Protection, 
 |Aplicación o servicio|Cómo se actualizan las plantillas tras los cambios|
 |--------------------------|---------------------------------------------|
 |Exchange Online|Configuración manual precisa para actualizar plantillas.<br /><br />En los pasos de configuración, consulte la sección siguiente, [Solamente Exchange Online: Cómo configurar Exchange para descargar las plantillas personalizadas que se han cambiado](#exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates).|
-|Office 365|Actualización automática: no se requieren pasos adicionales.|
 |Cliente de Azure Information Protection|Se actualiza automáticamente cada vez que la directiva de Azure Information Protection se actualiza en el cliente:<br /><br /> - Cuando se abre una aplicación de Office que admite la barra de Azure Information Protection. <br /><br /> - Cuando hace clic con el botón derecho para clasificar y proteger un archivo o carpeta. <br /><br /> - Cuando ejecuta cmdlets de PowerShell para etiquetado y protección (Get-AIPFileStatus y Set-AIPFileLabel).<br /><br /> - Cada 24 horas.<br /><br /> Además, dado que el cliente de Azure Information Protection está estrechamente integrado con Office, cualquier plantillas actualizada para Office 2016 u Office 2013 también se actualizará para el cliente de Azure Information Protection.|
 |Office 2016 y Office 2013<br /><br />Aplicaciones de uso compartido de RMS para Windows|Actualización automática: programada:<br /><br />- Para estas versiones posteriores de Office: el intervalo de actualización predeterminado es cada 7 días.<br /><br />- Para la aplicación RMS sharing para Windows: a partir de la versión 1.0.1784.0, el intervalo de actualización predeterminado es cada día. Las versiones anteriores tienen un intervalo de actualización predeterminado de 7 días.<br /><br />Para exigir una actualización antes de esta programación, consulte la sección [Office 2016, Office 2013 y la aplicación RMS sharing para Windows: Cómo forzar una actualización de una plantilla personalizada que se ha cambiado](#office-2016--office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template).|
 |Office 2010|Se actualiza automáticamente cuando los usuarios cierran la sesión de Windows, vuelven a iniciarla y esperan hasta 1 hora.|
