@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 61f349ce-bdd2-45c1-acc5-bc83937fb187
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 36a25c44105d4fa0e8820f99b0b1c7c1568062ec
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: b56bebbdebc79cfd0d53b4e83714f8a04dfb5a25
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="track-and-revoke-your-documents-when-you-use-the-rms-sharing-application"></a>Seguimiento y revocación de documentos cuando se utiliza la aplicación RMS sharing
 
 >*Se aplica a: Azure Information Protection, Windows 10, Windows 7 con SP1, Windows 8 y Windows 8.1*
@@ -104,6 +100,6 @@ Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de 
 -   [¿Qué desea hacer?](sharing-app-user-guide.md#what-do-you-want-to-do)
 
 ## <a name="see-also"></a>Véase también
-[Guía de usuario de la aplicación de uso compartido Rights Management](sharing-app-user-guide.md)
+[Guía de usuario de la aplicación Rights Management sharing](sharing-app-user-guide.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

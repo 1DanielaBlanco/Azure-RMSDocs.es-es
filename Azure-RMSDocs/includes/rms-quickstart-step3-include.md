@@ -40,8 +40,3 @@ Ahora que ha enviado el documento protegido, está listo para pedir a los destin
 |--------------------------------|--------------------------|
 |Todas las instrucciones y los métodos alternativos para proteger los archivos que comparte por correo electrónico   →|[Protección de un archivo que comparte por correo electrónico con la aplicación Rights Management sharing](../rms-client/sharing-app-protect-by-email.md)|
 |Acerca de las opciones del cuadro de diálogo **Uso compartido seguro** →|[Opciones del cuadro de diálogo para la aplicación Rights Management sharing](../rms-client/sharing-app-dialog-box.md)|
-
-
-<!--HONumber=Jan17_HO1-->
-
-

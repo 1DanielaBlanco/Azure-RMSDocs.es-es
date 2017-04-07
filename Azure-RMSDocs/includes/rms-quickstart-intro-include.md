@@ -15,8 +15,3 @@ Para completar este tutorial, necesitará lo siguiente:
 -   Un equipo que ejecute Windows (a partir de Windows 7 SP1) y que tenga instalado Office 2016, Office 2013 u Office 2010.
 
 Comencemos.
-
-
-<!--HONumber=Jul16_HO3-->
-
-

@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 72760134-94e0-4699-b20c-07b96aa061f1
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: ebb40568e63cf51a8b6473ca872f1e0ed9ec30ea
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 92fb948782423f91dd5057ee1dc9a89165a102af
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="use-keyboard-shortcuts-in-the-rights-management-sharing-application"></a>Usar métodos abreviados de teclado en la aplicación Rights Management sharing
 
 >*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 con SP1, Windows 8 y Windows 8.1*
@@ -38,6 +34,6 @@ Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de 
 -   [¿Qué desea hacer?](sharing-app-user-guide.md#what-do-you-want-to-do)
 
 ## <a name="see-also"></a>Véase también
-[Guía de usuario de la aplicación de uso compartido Rights Management](sharing-app-user-guide.md)
+[Guía de usuario de la aplicación Rights Management sharing](sharing-app-user-guide.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

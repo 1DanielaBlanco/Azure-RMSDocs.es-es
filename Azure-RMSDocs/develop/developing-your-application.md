@@ -1,11 +1,11 @@
 ---
-title: "Desarrollo de la aplicación"
+title: "Desarrollo de la aplicación - AIP"
 description: "Una guía que le lleva por la implementación básica de consola de la protección de documentos con AIP."
 keywords: 
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -14,13 +14,10 @@ ms.assetid: 396A2C19-3A00-4E9A-9088-198A48B15289
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: b5f1d44d950cd020c4b15d5f9505752bc960fa88
-
-
+ms.openlocfilehash: 24689c3337361fb5e59420684ec8f5e9c723e448
+ms.sourcegitcommit: 262f88c4f46e29f3747271276c62913b4cefe4f7
+translationtype: HT
 ---
-
 # <a name="developing-your-application"></a>Desarrollo de la aplicación
 
 En este ejemplo, va a crear una aplicación de consola sencilla que interactúa con el servicio Azure Information Protection (AIP).  Se tomará como entrada la ruta de acceso del documento que se va a proteger y luego se protegerá con una directiva ad-hoc o una plantilla de Azure. A continuación, la aplicación aplicará las directivas correctas de acuerdo con las entradas y se creará un documento con información protegida. El código de ejemplo que se usará es la [aplicación Azure IP Test](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/AzureIP_Test), que se encuentra en Github.
@@ -221,7 +218,7 @@ Después de que todo se ha creado y está en ejecución, las salidas de la aplic
 ![salida de aplicación - paso 2](../media/develop/app-output-2.png)
 
 3. Se le pide que escriba la dirección de correo electrónico del propietario de la licencia (dicho propietario debe tener privilegios de administrador global en el inquilino de Azure AD).
-![![salida de aplicación - paso 3](../media/develop/app-output-3.png)
+![salida de aplicación - paso 3](../media/develop/app-output-3.png)
 
 4. Escriba las direcciones de correo electrónico de los usuarios que tendrán derechos de acceso al archivo (deben ir separadas por un espacio).
 ![salida de aplicación - paso 4](../media/develop/app-output-4.png)
@@ -232,8 +229,3 @@ Después de que todo se ha creado y está en ejecución, las salidas de la aplic
 6. Por último, especifique algunos metadatos de directiva: nombre de la directiva, descripción y nombre para mostrar del emisor (identificador de inquilino de Azure AD). ![salida de aplicación - paso 6](../media/develop/app-output-6.png)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO4-->
-
-

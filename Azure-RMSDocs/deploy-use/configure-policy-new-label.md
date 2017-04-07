@@ -4,27 +4,23 @@ description: "Aunque Azure Information Protection incluye etiquetas predetermina
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/06/2017
+ms.date: 03/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1b45faa5-0c9c-40d6-910a-f117e7b6e8a3
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 602fef628f882eb79fe78b5acf89bde1721aa0ec
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: ff0a5af172fa7ae20406ab4362a02a9de3fff5c0
+ms.sourcegitcommit: f0402cf14506b4c61a156a2baf7e69b7b16883a1
+translationtype: HT
 ---
-
 # <a name="how-to-create-a-new-label-for-azure-information-protection"></a>Creación de una nueva etiqueta para Azure Information Protection
 
 >*Se aplica a: Azure Information Protection*
 
 Aunque Azure Information Protection incluye etiquetas predeterminadas que se pueden personalizar, también puede crear sus propias etiquetas que los usuarios verán en la barra de Information Protection.
 
-Cuando necesite un nivel de clasificación adicional, puede agregar nuevas etiquetas o etiquetas secundarias a una etiqueta existente. Por ejemplo, la etiqueta **Secreto**, que se encuentra en la [directiva predeterminada](configure-policy-default.md), contiene etiquetas secundarias.
+Cuando necesite un nivel de clasificación adicional, puede agregar nuevas etiquetas o etiquetas secundarias a una etiqueta existente. Por ejemplo, la última etiqueta en la [directiva predeterminada](configure-policy-default.md) contiene subetiquetas.
 
 Utilice las instrucciones siguientes para agregar una nueva etiqueta a la directiva de Azure Information Protection.
 
@@ -32,7 +28,7 @@ Utilice las instrucciones siguientes para agregar una nueva etiqueta a la direct
     
     Por ejemplo, en el menú del centro, haga clic en **Más servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
-2. Si la nueva etiqueta que quiere agregar se va a aplicar a todos los usuarios, haga lo siguiente desde la hoja **Policy:Global** (Directiva:Global). 
+2. Si la nueva etiqueta que quiere agregar se va a aplicar a todos los usuarios, haga lo siguiente desde la hoja **Policy: Global** (Directiva: Global). 
 
     - Para crear una nueva etiqueta: haga clic en **Add a new label** (Agregar una nueva etiqueta).
 
@@ -52,5 +48,4 @@ Utilice las instrucciones siguientes para agregar una nueva etiqueta a la direct
 Para más información sobre cómo configurar la directiva de Azure Information Protection, use los vínculos de la sección [Configuring your organization's policy](configure-policy.md#configuring-your-organizations-policy) (Configuración de la directiva de la organización).  
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 

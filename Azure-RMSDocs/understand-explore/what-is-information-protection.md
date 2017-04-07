@@ -4,20 +4,16 @@ description: "Información general del servicio Azure Information Protection."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/27/2017
+ms.date: 03/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-translationtype: Human Translation
-ms.sourcegitcommit: 1085966a885d1cd8223e277be632ce6dae5de294
-ms.openlocfilehash: 61dfc23fa16b12688b79f2b7ffac645c9cc93584
-ms.lasthandoff: 02/27/2017
-
-
+ms.openlocfilehash: fc25cd11d950199f7ccd8e4e86e4d915c7fb6a95
+ms.sourcegitcommit: f0402cf14506b4c61a156a2baf7e69b7b16883a1
+translationtype: HT
 ---
-
 # <a name="what-is-azure-information-protection"></a>¿Qué es Azure Information Protection?
 
 >*Se aplica a: Azure Information Protection*
@@ -26,7 +22,7 @@ Azure Information Protection es una solución basada en la nube que ayuda a una 
 
 La siguiente imagen muestra un ejemplo de Azure Information Protection en funcionamiento. El administrador ha configurado reglas para detectar datos confidenciales (en este caso, información de tarjeta de crédito). Cuando un usuario guarda un documento de Word que contiene información de tarjeta de crédito, ve una información sobre herramientas personalizada que recomienda que aplique una etiqueta específica que el administrador ha configurado. Esta clasifica y, opcionalmente, protege el documento. 
 
-![Ejemplo de clasificación recomendada para Azure Information Protection](../media/info-protect-recommend-callouts.png)
+![Ejemplo de clasificación recomendada para Azure Information Protection](../media/info-protect-recommend-calloutsv2.png)
 
 Después de que su contenido se clasifique (y se proteja opcionalmente), puede realizar un seguimiento posterior y controlar cómo se usa. Puede analizar los flujos de datos para obtener información sobre su negocio, detectar comportamientos de riesgo y tomar medidas correctivas, realizar un seguimiento del acceso a los documentos y evitar la pérdida o el uso indebido de datos entre otros.
 
@@ -36,7 +32,7 @@ Use las etiquetas de Azure Information Protection para aplicar la clasificación
 
 Por ejemplo, el siguiente mensaje de correo electrónico se ha clasificado como "Interno". Esta etiqueta se agrega como un pie de página al mensaje de correo electrónico, como un indicador visual para todos los destinatarios de que está destinado a un uso interno y no debe enviarse fuera de la organización. Esta etiqueta también se inserta en los encabezados de correo electrónico de forma que los servicios de correo electrónico puedan inspeccionar este valor y puedan crear una entrada de auditoría o evitar que se envíen fuera de la organización.
 
-![Encabezados y pie de página de correo electrónico de ejemplo que muestran la clasificación de Azure Information Protection](../media/example-email-footer-header.png)
+![Encabezados y pie de página de correo electrónico de ejemplo que muestran la clasificación de Azure Information Protection](../media/example-email-footerv2.png)
 
 
 ## <a name="how-data-is-protected"></a>Cómo se protegen los datos
@@ -67,7 +63,7 @@ Para más información sobre la protección de Azure Rights Management, vea [¿Q
 
 Azure Information Protection se integra con los flujos de trabajo existentes de usuarios finales cuando se instala el cliente de Azure Information Protection. Este cliente instala la barra de Information Protection en aplicaciones de Office, que hemos visto en la primera imagen. Se agrega la misma barra en Excel, PowerPoint y Outlook. Por ejemplo:
 
-![Ejemplo de la barra de Azure Information Protection en Excel](../media/excel2016-infoprotect-bar.png)
+![Ejemplo de la barra de Azure Information Protection en Excel](../media/excel2016-infoprotect-barv2.png)
 
 Esta barra de Information Protection facilita a los usuarios finales la selección de etiquetas para la correcta clasificación, y donde se necesite, estas etiquetas también pueden proteger automáticamente sus documentos y correos electrónicos.
 

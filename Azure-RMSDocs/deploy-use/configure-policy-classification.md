@@ -10,14 +10,10 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: fd410002d2841c834f40a98c77534169ca09aa70
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: c4a0aab69ac8a01175528531fe11f17e86da9a6b
+ms.sourcegitcommit: f0402cf14506b4c61a156a2baf7e69b7b16883a1
+translationtype: HT
 ---
-
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Configuración de las condiciones para la clasificación automática y recomendada en Azure Information Protection
 
 >*Se aplica a: Azure Information Protection*
@@ -53,7 +49,7 @@ En este ejemplo, el usuario puede hacer clic en **Cambiar ahora** para aplicar l
     
     Por ejemplo, en el menú del centro, haga clic en **Más servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
-2. Si la etiqueta que quiere configurar para la clasificación automática o recomendada se va a aplicar a todos los usuarios, seleccione la etiqueta que se modificará en la hoja **Policy:Global** (Directiva:Global) y luego realice los cambios en la hoja **Etiqueta** y en cualquiera de las hojas posteriores si es necesario. 
+2. Si la etiqueta que quiere configurar para la clasificación automática o recomendada se va a aplicar a todos los usuarios, seleccione la etiqueta en la hoja **Policy: Global** (Directiva: Global) y luego realice los cambios en la hoja **Etiqueta** y en cualquiera de las hojas posteriores si es necesario. 
 
      Si la etiqueta que quiere configurar está en una [directiva de ámbito](configure-policy-scope.md) de modo que se aplica solo a los usuarios seleccionados, seleccione primero esa directiva de ámbito en la hoja inicial de **Azure Information Protection**.  
 
@@ -223,6 +219,5 @@ Ejemplos para prueba:
 Para más información sobre cómo configurar la directiva de Azure Information Protection, use los vínculos de la sección [Configuring your organization's policy](configure-policy.md#configuring-your-organizations-policy) (Configuración de la directiva de la organización).  
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 
 

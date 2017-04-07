@@ -4,7 +4,7 @@ description: "Algunas de las preguntas más frecuentes sobre Azure Information P
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/24/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 37ce3f1596878e28962119faef22bc1c61a067f8
-ms.openlocfilehash: 0bb42f7ec5f2c1768c9eaaa7890b8b46853abd99
-ms.lasthandoff: 02/25/2017
-
-
+ms.openlocfilehash: 987936c79325c33a8c553dea1a6594933df5f7d8
+ms.sourcegitcommit: d959f0a9ba347a5dde77aac45a5d9f88d7cfdfb2
+translationtype: HT
 ---
-
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Preguntas más frecuentes sobre Azure Information Protection
 
 >*Se aplica a: Azure Information Protection, Office 365*
@@ -36,6 +32,14 @@ Azure Information Protection ofrece funciones de clasificación, etiquetado y pr
 Consulte la [información sobre la suscripción](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing) y la [lista de características](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features) en el sitio de Azure Information Protection. 
 
 Si tiene una suscripción a Office 365 que incluye Rights Management, descargue la [hoja de datos de licencias de Azure Information Protection](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf) en la página **Características**.
+
+## <a name="is-the-azure-information-protection-client-only-for-subscriptions-that-include-classification-and-labeling"></a>¿Es el cliente de Azure Information Protection únicamente para las suscripciones que incluyen la clasificación y el etiquetado?
+
+No. Aunque la mayoría de las presentaciones y demostraciones que ha visto del cliente de Azure Information Protection muestran cómo este admite la clasificación y el etiquetado, también se puede utilizar con suscripciones que incluyen solo el servicio de Azure Rights Management para proteger los datos.
+
+Cuando se instala el cliente de Azure Information Protection para Windows y no tiene una directiva de Azure Information Protection, el cliente funciona automáticamente en el [modo de solo protección](../rms-client/client-protection-only-mode.md). En este modo, los usuarios pueden aplicar fácilmente las plantillas de Rights Management y permisos personalizados. Si más adelante adquiere una suscripción que incluye la clasificación y el etiquetado, el cliente cambia automáticamente al modo estándar cuando descarga la directiva de Azure Information Protection.
+
+Si realmente utiliza la aplicación Rights Management sharing para Windows, le recomendamos que reemplace esto por el cliente de Azure Information Protection. La compatibilidad con la aplicación para uso compartido finalizará el 31 de enero de 2018. Para ayudarle con la transición, consulte [Tareas que solía hacer con la aplicación RMS sharing](../rms-client/upgrade-client-app.md).
 
 ## <a name="does-azure-information-protection-support-on-premises-and-hybrid-scenarios"></a>¿Azure Information Protection admite los escenarios híbridos y locales?
 
@@ -57,9 +61,7 @@ Vea [Cumplimiento e información complementaria para Azure Information Protectio
 
 Para soporte técnico, utilice los canales de soporte estándar o [póngase en contacto con el soporte técnico de Microsoft](information-support.md#to-contact-microsoft-support).
 
-Para obtener comentarios como sugerencias de mejoras o nuevas características: en su aplicación de Office, en la pestaña **Inicio**, en el grupo **Protección**, haga clic en **Proteger** y, después, haga clic en **Ayuda y comentarios**. En el cuadro de diálogo **Microsoft Azure Information Protection**, haga clic en **Enviar comentarios**. Esto se envía por correo electrónico al equipo de Information Protection y, automáticamente, adjunta los archivos de registro de su equipo. 
-
-También lo invitamos a participar en el equipo de ingeniería, en su [sitio de Yammer sobre Azure Information Protection](https://www.yammer.com/askipteam/). 
+Para obtener comentarios como sugerencias de mejoras o nuevas características: en la aplicación de Office, en la pestaña **Inicio**, en el grupo **Protección**, haga clic en **Proteger** y, después, haga clic en **Ayuda y comentarios**. En el cuadro de diálogo **Microsoft Azure Information Protection**, haga clic en **Enviar comentarios**. Se abre un mensaje de correo electrónico para enviar al equipo de Information Protection. También lo invitamos a participar en el equipo de ingeniería, en su [sitio de Yammer sobre Azure Information Protection](https://www.yammer.com/askipteam/). 
 
 ## <a name="what-do-i-do-if-my-question-isnt-here"></a>¿Qué debo hacer si mi pregunta no aparece aquí?
 
@@ -81,5 +83,4 @@ Además, hay preguntas frecuentes diseñadas para usuarios finales:
 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 

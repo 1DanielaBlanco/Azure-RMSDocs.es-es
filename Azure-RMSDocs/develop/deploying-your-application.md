@@ -1,25 +1,22 @@
 ---
-title: "Deploying your application (Implementación de la aplicación)"
+title: "Implementación de una aplicación - AIP"
 description: "Este tema describe la implementación de la aplicación y le guía a través de dicha implementación"
 keywords: implementar, RMS, AIP
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4B785564-6839-49ED-A243-E2A6DFF88B2E
 audience: developer
-ms.reviewer: shubhamp
+ms.reviewer: kartikk
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 0c16b7c6bd494a0350a511a3b415f781aecf613d
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 67ec662fb54ab9fdcd06bebd01df1a228afe5fb1
+ms.sourcegitcommit: 164c9ac31beb4811bbcd4527613a5d3b57b8ac6c
+translationtype: HT
 ---
 # <a name="deploy-into-production"></a>Implementación en el entorno de producción
 
@@ -82,7 +79,7 @@ El cliente de RMS 2.1 no es un componente del sistema operativo Windows. El clie
 
 ### <a name="creating-your-deployment-package"></a>Creación del paquete de implementación
 
-Le recomendamos que incluya el paquete de instalador del cliente de RMS con la aplicación o la solución mediante su tecnología de instalación preferida. El cliente de RMS se puede redistribuir libremente a otras aplicaciones y soluciones.
+Le recomendamos que incluya el paquete de instalador del cliente de RMS con la aplicación o la solución mediante su tecnología de instalación preferida. El cliente de RMS se puede redistribuir libremente con otras aplicaciones y soluciones.
 
 Puede instalar el cliente de RMS 2.1 de forma interactiva mediante el instalador del cliente de RMS 2.1 o bien instalarlo de forma silenciosa. Los pasos de integración son los siguientes:
 
@@ -99,14 +96,13 @@ Si el cliente no está presente, proporcione un mensaje de error que informe al 
 
 Si el cliente está presente, continúe con la instalación de la aplicación.
 
-## <a name="enabling-azure-information-protection--rights-management-services-with-your-application"></a>Habilitación de Azure Information Protection y Rights Management Services con la aplicación
+## <a name="enabling-azure-information-protection-services-with-your-application"></a>Habilitación de los servicios de Azure Information Protection con la aplicación
 
 > [!NOTE]
 > Si ha migrado al nuevo modelo de ADAL para la autenticación, no hace falta que instale **SIA**. Para obtener más información, vea [ADAL authentication for your RMS enabled application](adal-auth.md) (Autenticación de ADAL de la aplicación habilitada para RMS).
 > También puede **certificar la aplicación para Windows 10**. Si actualiza la aplicación para que use la autenticación ADAL en lugar del Ayudante para el inicio de sesión de Microsoft Online, usted y sus clientes podrán: Usar Multi-Factor Authentication. Instalar el cliente de RMS 2.1 sin necesidad de tener privilegios administrativos en el equipo.
 
-
-Para que el usuario final aproveche Information Protection y Rights Management Services, debe implementar *Microsoft Online Services - Ayudante para el inicio de sesión (SIA)*. Como desarrollador de la aplicación, no sabe si el usuario final utilizará Information Protection a través de RMS (de forma local) o a través de Azure Information Protection.
+Para que el usuario final aproveche los servicios de Information Protection, debe implementar *Microsoft Online Services - Ayudante para el inicio de sesión (SIA)*. Como desarrollador de la aplicación, no sabe si el usuario final utilizará Information Protection a través de RMS (de forma local) o a través de Azure Information Protection.
 
 
 > [!IMPORTANT]
@@ -116,6 +112,8 @@ Para que el usuario final aproveche Information Protection y Rights Management S
 -   Descargue el [Asistente para el inicio de sesión de Microsoft Online Services](http://www.microsoft.com/en-us/download/details.aspx?id=28177), que podrá conseguir en el Centro de descarga de Microsoft.
 -   Asegúrese de que la implementación de una aplicación con derechos habilitados incluye una comprobación de los requisitos previos para la selección de este servicio.
 -   Para realizar sus propias pruebas y para que los usuarios finales usen el servicio en línea, vea el tema de TechNet [Configuring Rights Management](https://TechNet.Microsoft.Com/en-us/library/jj585002.aspx) (Configuración de Rights Management).
+
+También necesitará utilizar esta guía para configurar su aplicación: [Configuración de la aplicación de App Service para usar el inicio de sesión de Azure Active Directory](https://docs.microsoft.com/en-us/azure/app-service-mobile/app-service-mobile-how-to-configure-active-directory-authentication).
 
 Para obtener más información sobre cómo habilitar la aplicación para que use RMS para Azure Rights Management Services, vea [Enable your application to work with cloud based RMS](how-to-use-file-api-with-aadrm-cloud.md) (Habilitar la aplicación para que funcione con RMS basado en la nube).
 

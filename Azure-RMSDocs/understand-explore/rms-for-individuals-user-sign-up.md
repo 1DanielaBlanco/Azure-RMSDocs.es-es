@@ -4,7 +4,7 @@ description: "Suscríbase para recibir las instrucciones de esta cuenta gratuita
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: a60731bd-f78d-4f00-bb3e-354637b312ab
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 1134bff1935b3fada661865f31104e0316e8fecd
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 12f681ccfbcd7da2192df2be057f92d31a856bda
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="how-users-sign-up-for-rms-for-individuals"></a>Cómo se registran los usuarios a RMS para individuos
 
 >*Se aplica a: Azure Information Protection*
@@ -87,7 +83,7 @@ A lo largo de este proceso, no hay cargos adicionales para la organización y no
 
     -   Registrar toda la actividad de cómo se ha usado Rights Management en su organización. Esta es una acción muy potente, ya que no solo puede supervisar qué archivos están protegidos y quién está accediendo a esos archivos protegidos, sino que también puede identificar comportamientos sospechosos potenciales procedentes de personas no autorizadas, que estén intentando acceder a los archivos protegidos. Para obtener más información, consulte [Registro y análisis del uso del servicio Azure Rights Management](../deploy-use/log-analyze-usage.md).
 
-    -   Proporcionar a los usuarios la capacidad de realizar un seguimiento de sus documentos protegidos y revocarlos, si estas características son compatibles con su [suscripción a Azure RMS](https://technet.microsoft.com/dn858608). Para más información, consulte [Realizar un seguimiento de los archivos y revocarlos](../rms-client/sharing-app-track-revoke.md) en la [guía de usuario de la aplicación RMS sharing](../rms-client/sharing-app-user-guide.md).
+    -   Proporcione a los usuarios la capacidad de realizar un seguimiento de sus documentos protegidos y revocarlos, si estas características son compatibles con su [suscripción](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features). Para más información, consulte [Realizar el seguimiento y revocar los documentos](../rms-client/client-track-revoke.md) en la [Guía del usuario de Azure Information Protection](../rms-client/client-user-guide.md).
 
     -   Implemente una solución "Traiga su propia clave" (BYOK) para que la clave de inquilino para Azure Rights Management se genere de forma local, de acuerdo con las políticas de TI y se transfiera de modo seguro a Microsoft mediante un módulo de seguridad de hardware (HSM). Para más información, vea [Planeamiento e implementación de su clave de inquilino de Azure Information Protection](../plan-design/plan-implement-tenant-key.md).
 

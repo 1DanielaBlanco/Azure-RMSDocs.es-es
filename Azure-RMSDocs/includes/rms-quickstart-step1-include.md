@@ -53,8 +53,3 @@ Aunque las plantillas personalizadas no se incluyen aquí, probablemente desee c
 |--------------------------------|--------------------------|
 |Acerca de la activación de Rights Management y el control de quién puede proteger archivos y correo electrónico cuando el servicio está activado   →|[Activar Rights Management de Azure](../deploy-use/activate-azure-classic.md)|
 |Acerca de las plantillas predeterminadas y del modo de crear nuevas plantillas personalizadas   →|[Configuración de plantillas personalizadas para Azure Rights Management](../deploy-use/create-template.md)|
-
-
-<!--HONumber=Jan17_HO1-->
-
-

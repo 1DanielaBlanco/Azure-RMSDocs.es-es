@@ -4,7 +4,7 @@ description: "Instrucciones para los usuarios que han actualizado de la aplicaci
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: d7bc2478-c22f-4e19-9992-012658362b25
 ms.reviewer: eymanor
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: d435c583075e2a76ad657cb442630771beb1c68f
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 9d955866337fc050cd6025a9c7cdb3384f598976
+ms.sourcegitcommit: 02e860196efca306ef9d1e61c1d89c4d8593c912
+translationtype: HT
 ---
-
 # <a name="tasks-that-you-used-to-do-with-the-rms-sharing-application"></a>Tareas que solía hacer con la aplicación RMS sharing
 
 ¿Recientemente ha hecho la actualización de la aplicación Rights Management sharing (conocida también como "aplicación RMS sharing") al cliente de Azure Information Protection? 
@@ -28,8 +24,8 @@ Use la siguiente información para ayudarlo a trabajar con rapidez.
 
 |La aplicación RMS sharing|Cómo hacerlo con el cliente de Azure Information Protection
 |-----------|--------------------|
-|Protección de un archivo en un dispositivo <br /><br />También se conoce como "protección local".|Para aplicaciones de Office que muestran la barra de Azure Information Protection: seleccione una etiqueta que aplica la protección necesaria.<br /><br />Para otros archivos, y si el cliente de Azure Information Protection se encuentra en [modo de solo protección](client-protection-only-mode.md): use la opción de menú del Explorador de archivos, **Clasificar y proteger**, para abrir el cuadro de diálogo **Clasificar y proteger: Azure Information Protection**. A continuación, seleccione una etiqueta que aplique la protección requerida o especifique permisos personalizados propios. <br /><br />Para más información, vea [Clasificación y protección de un archivo o una dirección de correo electrónico](client-classify-protect.md).
-|Proteger un archivo que comparte por correo electrónico <br /><br />También se conoce como "uso compartido seguro".|Si se comparte internamente: aplique una etiqueta con la protección requerida al documento o al mensaje de correo electrónico, o bien seleccione la opción de Outlook **No reenviar**. <br /><br /> Si se comparte externamente: con una copia del archivo, use el Explorador de archivos para proteger el archivo con permisos personalizados. Después, comparta el archivo con el mecanismo estándar de uso compartido, como un archivo adjunto a un correo electrónico o una invitación a un documento de SharePoint Online. Considere incluir el vínculo https://aka.ms/rms-signup como instrucciones para el primer uso. <br /><br />Para más información sobre el uso compartido externo, vea la sección [Uso compartido de un archivo de manera segura con personas ajenas a la organización](client-classify-protect.md#safely-share-a-file-with-people-outside-your-organization) de la guía del usuario.
+|Protección de un archivo en un dispositivo <br /><br />También se conoce como "protección local".|Para aplicaciones de Office: seleccione una etiqueta que aplique la protección requerida o establezca permisos personalizados.<br /><br />Para otros archivos: utilice la opción de menú del Explorador de archivos, **Clasificar y proteger**, para abrir el cuadro de diálogo **Clasificar y proteger: Azure Information Protection**. A continuación, seleccione una etiqueta que aplique la protección requerida o especifique permisos personalizados propios. <br /><br />Para más información, vea [Clasificación y protección de un archivo o una dirección de correo electrónico](client-classify-protect.md).
+|Proteger un archivo que comparte por correo electrónico <br /><br />También se conoce como "uso compartido seguro".|Si se comparte internamente: aplique una etiqueta con la protección requerida al documento o al mensaje de correo electrónico, o bien seleccione la opción de Outlook **No reenviar**. <br /><br /> Si se comparte externamente: con una copia del archivo, use permisos personalizados para proteger el archivo desde dentro de la aplicaicón de Office o mediante el Explorador de archivos. Después, comparta el archivo con el mecanismo estándar de uso compartido, como un archivo adjunto a un correo electrónico o una invitación a un documento de SharePoint Online. Considere incluir el vínculo https://aka.ms/rms-signup como instrucciones para el primer uso. <br /><br />Para más información sobre el uso compartido externo, vea la sección [Uso compartido de un archivo de manera segura con personas ajenas a la organización](client-classify-protect.md#safely-share-a-file-with-people-outside-your-organization) de la guía del usuario.
 |Cambiar los permisos en archivos protegidos <br /><br />También se conoce como "Reproteger".|Para aplicaciones de Office que muestran la barra de Azure Information Protection: seleccione una etiqueta que aplica la protección necesaria.<br /><br />Para otros archivos, y si el cliente de Azure Information Protection se encuentra en [modo de solo protección](client-protection-only-mode.md): use la opción de menú del Explorador de archivos, **Clasificar y proteger**, para abrir el cuadro de diálogo **Clasificar y proteger: Azure Information Protection**. A continuación, seleccione una etiqueta que aplique la protección requerida o especifique permisos personalizados propios.<br /><br />Para más información, vea [Clasificación y protección de un archivo o una dirección de correo electrónico](client-classify-protect.md).
 |Seguimiento y revocación de documentos|Para aplicaciones de Office: abra el documento y, después, en la pestaña **Inicio** > **Grupo de protección** > **Proteger** > **Realizar un seguimiento y revocar**.<br /><br />En el Explorador de archivos: haga clic con el botón derecho en un archivo o carpeta > **Clasificar y proteger**. Después, en el cuadro de diálogo **Clasificar y proteger: Azure Information Protection**, seleccione **Realizar un seguimiento y revocar**. <br /><br />Para obtener más información, vea [Realizar un seguimiento de los documentos y revocarlos](client-track-revoke.md).
 |Ver y usar archivos protegidos|El visor de Azure Information Protection puede abrir archivos protegidos, para que pueda leerlos, así como imprimir y guardar estos archivos si tiene permisos para realizar estas acciones. Este visor se instala automáticamente con el cliente, o puede instalarlo por separado.<br /><br />Para más información, vea [Apertura de archivos que se han protegido](client-view-use-files.md).
@@ -52,4 +48,3 @@ Si busca una opción específica que suele seleccionar con la aplicación RMS sh
 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]  
-

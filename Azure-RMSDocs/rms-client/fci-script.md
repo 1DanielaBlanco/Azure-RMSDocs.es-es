@@ -4,7 +4,7 @@ description: "Script de ejemplo para copiar y editar, como se describe en las in
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/07/2017
+ms.date: 03/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,17 +12,13 @@ ms.technology: techgroup-identity
 ms.assetid: ae6d8d0f-4ebc-43fe-a1f6-26b690fd83d0
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 31dc851eeb8e5e20ccc71cf9477a9192ae55deba
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 51d8002dc4dc2a59c38f7eff3cba51fd6b2ddf7d
+ms.sourcegitcommit: 047e6dfe8f44fd13585e902df5ea871b5d0adccb
+translationtype: HT
 ---
-
 # <a name="windows-powershell-script-for-azure-rms-protection-by-using-file-server-resource-manager-fci"></a>Script de Windows PowerShell para la protección de Azure RMS con FCI del Administrador de recursos del servidor de archivos
 
->*Se aplica a: Azure Information Protection, Windows Server 2012, Windows Server 2012 R2*
+>*Se aplica a: Azure Information Protection, Windows Server 2016, Windows Server 2012, Windows Server 2012 R2*
 
 Esta página contiene el script de ejemplo para copiar y editar, como se describe en [RMS protection with Windows Server File Classification Infrastructure](configure-fci.md) (Protección de RMS con la infraestructura de clasificación de archivos de Windows Server).
 

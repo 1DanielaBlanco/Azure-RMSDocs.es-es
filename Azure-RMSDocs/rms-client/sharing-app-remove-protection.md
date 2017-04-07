@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: da95b938-eaad-4c83-a21e-ff1d4872aae4
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 370b19894efb53604c798b38be02dda3f8804b8b
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 2c21715f85ea5d1d10bd74effdb5a022f1435b21
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="remove-protection-from-a-file-by-using-the-rights-management-sharing-application"></a>Quitar la protección de un archivo mediante la aplicación Rights Management sharing
 
 >*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 con SP1, Windows 8 y Windows 8.1*
@@ -49,6 +45,6 @@ Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de 
 -   [¿Qué desea hacer?](sharing-app-user-guide.md#what-do-you-want-to-do)
 
 ## <a name="see-also"></a>Véase también
-[Guía de usuario de la aplicación de uso compartido Rights Management](sharing-app-user-guide.md)
+[Guía de usuario de la aplicación Rights Management sharing](sharing-app-user-guide.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

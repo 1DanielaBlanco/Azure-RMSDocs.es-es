@@ -31,8 +31,3 @@ Ahora que el destinatario ha abierto el archivo adjunto y lo ha enviado de forma
 |Acerca de la suscripción gratuita, RMS para usuarios   →|[RMS para individuos y Azure Rights Management](../understand-explore/rms-for-individuals.md)|
 |Acerca de las dos versiones del archivo que ve adjunto al mensaje de correo electrónico   →|[¿Qué es ese archivo .ppdf que se crea automáticamente?](../rms-client/sharing-app-dialog-box.md)|
 
-
-
-<!--HONumber=Jan17_HO1-->
-
-

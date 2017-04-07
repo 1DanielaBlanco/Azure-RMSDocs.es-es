@@ -21,8 +21,3 @@
 # [Implementación y uso del servicio](/information-protection/deploy-use/activate-service)
 # [Implementación y uso del cliente](/information-protection/rms-client/use-client)
 # [Desarrollo y personalización de aplicaciones](/information-protection/develop/developers-guide)
-
-
-<!--HONumber=Feb17_HO2-->
-
-

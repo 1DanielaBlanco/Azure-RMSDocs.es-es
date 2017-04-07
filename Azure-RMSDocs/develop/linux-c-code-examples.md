@@ -14,13 +14,10 @@ ms.assetid: 0F7714CA-1D3E-4846-B187-739825B7DE26
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: ca3ec0fdde3b8aa2eeebf056c5e155daf79573b0
-
-
+ms.openlocfilehash: 7dfa61380067bcd2b1886c1e9a2674a4c1150bc9
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="linux-code-examples"></a>Ejemplos de código de Linux
 
 En este tema se presentan escenarios importantes y elementos de código para la versión Linux de RMS SDK.
@@ -592,8 +589,3 @@ Descripción: se puede establecer la ruta de acceso de caché o usar el valor pr
 **Nota**  Cualquiera de los métodos de la biblioteca de autenticación puede generar **rmsauth::Exception**.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO1-->
-
-
