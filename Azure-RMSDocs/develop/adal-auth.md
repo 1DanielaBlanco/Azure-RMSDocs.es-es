@@ -1,11 +1,11 @@
 ---
-title: "Configuración de la aplicación para autenticación ADAL | Microsoft Docs"
+title: "Configuración de la aplicación para autenticación ADAL - AIP"
 description: "Pasos para configurar la aplicación Azure Information Protection para usar la autenticación basada en Azure ADAL"
 keywords: "autenticación, RMS, ADAL, Information Protection,"
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 01/23/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -14,13 +14,10 @@ ms.assetid: f89f59b7-33d1-4ab3-bb64-1e9bda269935
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b7415265d0e27896df2bdf6a62e7c875ba681345
-ms.openlocfilehash: d51730af8a1f410ad890087200f64864eceb2268
-
-
+ms.openlocfilehash: 27674aac7962c7a2f79fda8ccd6f90c366574b9b
+ms.sourcegitcommit: 262f88c4f46e29f3747271276c62913b4cefe4f7
+translationtype: HT
 ---
-
 # <a name="configure-your-app-for-adal-authentication"></a>Configuración de la aplicación para autenticación ADAL
 
 En este tema se describen los pasos para configurar la aplicación para autenticación basada en la Biblioteca de autenticación de Azure Active Directory (ADAL).
@@ -70,7 +67,7 @@ Después de suscribirse a Microsoft Azure:
 ![Asígnele un nombre a la aplicación](../media/TellUsInput.png)
 
 - Agregue un identificador URI de redireccionamiento y elija Siguiente.
-  El identificador URI de redireccionamiento debe ser un identificador URI válido y único para su directorio. Por ejemplo, podría usar algo parecido a `com.mycompany.myapplication://authorize`.
+  El identificador URI de redireccionamiento debe ser un identificador URI válido y único para su directorio. Por ejemplo, podría usar algo parecido a `https://contoso.azurewebsites.net/.auth/login/done`.
 
 ![Agregue un identificador URI de redireccionamiento](../media/RedirectURI.png)
 
@@ -105,8 +102,3 @@ Después de suscribirse a Microsoft Azure:
 ![Seleccione GUARDAR](../media/SaveApplication.png)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO4-->
-
-

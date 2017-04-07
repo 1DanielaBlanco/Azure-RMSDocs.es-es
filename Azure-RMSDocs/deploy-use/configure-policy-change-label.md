@@ -10,14 +10,10 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e3b6d95f-334b-4d17-80a9-7d5487ab5d32
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 332160a0b2403313acc66f9b196ac068e370fb5c
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 4111fbaf678509cfb5b961f19dcc4b62f77c7a4a
+ms.sourcegitcommit: f0402cf14506b4c61a156a2baf7e69b7b16883a1
+translationtype: HT
 ---
-
 # <a name="how-to-change-or-customize-an-existing-label-for-azure-information-protection"></a>Cambio o personalización de una etiqueta existente para Azure Information Protection
 
 >*Se aplica a: Azure Information Protection*
@@ -33,7 +29,7 @@ Para cambiar una etiqueta, utilice las instrucciones siguientes.
     
     Por ejemplo, en el menú del centro, haga clic en **Más servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
-2. Para cambiar una etiqueta de la directiva global de modo que se aplique a todos los usuarios, seleccione la etiqueta que quiere cambiar en la hoja **Policy:Global** (Directiva: Global) y luego realice los cambios en la hoja **Etiqueta** y en cualquiera de las hojas posteriores si es necesario. Para cambiar una etiqueta de una [directiva de ámbito](configure-policy-scope.md) de modo que se aplique a los usuarios seleccionados, seleccione primero esa directiva en la hoja inicial de **Azure Information Protection**.
+2. Para cambiar una etiqueta de la directiva global de modo que se aplique a todos los usuarios, seleccione la etiqueta que quiere cambiar en la hoja **Policy: Global** (Directiva: Global) y luego realice los cambios en la hoja **Etiqueta** y en cualquiera de las hojas posteriores si es necesario. Para cambiar una etiqueta de una [directiva de ámbito](configure-policy-scope.md) de modo que se aplique a los usuarios seleccionados, seleccione primero esa directiva en la hoja inicial de **Azure Information Protection**.
 
     La excepción es si quiere cambiar el orden de una etiqueta, que puede hacerlo en la hoja de la directiva global o en la directiva de ámbito seleccionada: haga clic con el botón derecho en la etiqueta o seleccione el menú contextual de la etiqueta y luego las opciones **Subir** o **Bajar**.
 
@@ -49,6 +45,5 @@ Para cambiar una etiqueta, utilice las instrucciones siguientes.
 Para más información sobre las opciones que puede cambiar para una etiqueta, así como otra configuración de la directiva de Azure Information Protection, use los vínculos de la sección [Configuring your organization's policy](configure-policy.md#configuring-your-organizations-policy) (Configuración de la directiva de la organización).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 
 

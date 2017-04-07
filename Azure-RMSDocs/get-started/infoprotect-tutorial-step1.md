@@ -4,30 +4,28 @@ description: "Paso 1 de un tutorial de introducción para probar rápidamente Az
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/28/2017
+ms.date: 03/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f6dbb143-96f7-4a9c-8208-be9280d69de9
-translationtype: Human Translation
-ms.sourcegitcommit: 611b65589bdd8aa495fbfbd4a67c30a5fb9c387a
-ms.openlocfilehash: aa1808503e92d0afeb7c0f3f7f9da446d2f13b51
-ms.lasthandoff: 03/01/2017
-
-
+ms.openlocfilehash: 8ccf0ea41e9465e10408595a3b875704baca93d2
+ms.sourcegitcommit: f0402cf14506b4c61a156a2baf7e69b7b16883a1
+translationtype: HT
 ---
-
 # <a name="step-1-activate-the-rights-management-service"></a>Paso 1: Activación del servicio Rights Management
  
 >*Se aplica a: Azure Information Protection*
 
 > [!NOTE]
->Si ya ha activado el servicio Azure Rights Management para su inquilino, vaya directamente al [siguiente paso](infoprotect-tutorial-step2.md). 
+>Si sabe que el servicio Azure Rights Management ya está activado para el inquilino, vaya directamente al [siguiente paso](infoprotect-tutorial-step2.md). 
+>
+>Si no está seguro de si este servicio está o no activado, siga las instrucciones de este paso para comprobarlo.
 
-Cuando se activa el servicio Azure Rights Management, puede proteger los documentos y correos electrónicos más confidenciales de la organización y realizar un seguimiento de cómo se usan los documentos protegidos cuando los comparte con otros usuarios. Existen diferentes maneras de activar este servicio, como usar Windows PowerShell y navegar por los portales de administración.
+Cuando se activa el servicio Azure Rights Management, puede proteger los documentos y correos electrónicos más confidenciales de la organización y realizar un seguimiento de cómo se usan los documentos protegidos cuando los comparte con otros usuarios. Existen diferentes maneras de activar este servicio, como usar Windows PowerShell y los portales de administración.
 
-Para este tutorial, iremos directamente a la página de activación para administradores de Office 365, que es la misma página para el portal clásico de Office 365 y la versión preliminar del Centro de administración de Office 365. 
+Para este tutorial, vaya directamente a la página de activación en el portal de administración para administradores de Office 365. Se trata de la misma página que para el portal clásico de Office 365 y la versión preliminar del centro de administración de Office 365. 
 
 Si prefiere navegar por esta página del Portal de administración de Office 365 en lugar de ir directamente a la página, vea las instrucciones completas de [Activar Azure Rights Management](../deploy-use/activate-service.md). Asimismo, use estas instrucciones completas si tiene acceso a Azure Portal pero no al Portal de administración de Office 365.
 
@@ -37,9 +35,11 @@ Si prefiere navegar por esta página del Portal de administración de Office 365
     
     Si se le solicita que inicie sesión, use una cuenta de administrador global de Office 365.
 
-2. En la página **Rights Management** , haga clic en **Activar**.
+2. En la página **Rights Management** , haga clic en **Activar**. Si este botón muestra **desactivar**, el servicio ya está activado, y puede ir directamente al [siguiente paso](infoprotect-tutorial-step2.md). 
 
-3. Cuando el sistema le pregunte **¿Desea activar Rights Management?**, haga clic en **Activar**.
+    ![Paso 1 del tutorial de inicio rápido de Azure Information Protection: activar el servicio](../media/info-protect-activate.png)
+
+3. Cuando se le pregunte **¿Desea activar Rights Management?**, haga clic en **activar** para confirmar.
 
     Ahora debería ver el texto **Rights Management está activada** y la opción para desactivarla (es posible que deba actualizar la página manualmente).
 
@@ -57,4 +57,3 @@ Eso es todo lo que tiene que hacer en este primer paso para completar el tutoria
 [Paso 2 &#187;](infoprotect-tutorial-step2.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

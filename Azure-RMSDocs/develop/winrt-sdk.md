@@ -14,13 +14,10 @@ ms.assetid: 2720aa0e-0d37-469f-be99-678bf95a9c51
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 862ac33db89752cd25859c6fd3491959efda5107
-
-
+ms.openlocfilehash: e10588c166beb48d98aba619d9e2269d5f808f3a
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="windows-store-setup"></a>Programa de instalación de la Tienda Windows
 
 Las aplicaciones de la Tienda Windows pueden usar Microsoft Rights Management SDK 4.2 para habilitar la protección de información integrada en sus aplicaciones mediante Azure Active Directory Rights Management (AAD RM).
@@ -86,8 +83,3 @@ Ya está listo para crear sus propias aplicaciones nuevas de la Tienda Windows.
 [Referencia de la API de Windows](https://msdn.microsoft.com/library/dn891914.aspx)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO1-->
-
-

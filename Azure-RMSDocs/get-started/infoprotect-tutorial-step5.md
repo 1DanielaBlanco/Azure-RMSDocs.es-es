@@ -5,7 +5,7 @@ keywords:
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/28/2017
+ms.date: 03/21/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,15 +13,10 @@ ms.technology: techgroup-identity
 ms.assetid: 4e59a3b3-f0f4-4535-8b96-cac68303d855
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 611b65589bdd8aa495fbfbd4a67c30a5fb9c387a
-ms.openlocfilehash: ea34b900855d43cb1458438b1d15a16fd7cf01bf
-ms.lasthandoff: 03/01/2017
-
-
+ms.openlocfilehash: 2b59cbd99430b5474280acc02b1a2c4a2738c793
+ms.sourcegitcommit: f0402cf14506b4c61a156a2baf7e69b7b16883a1
+translationtype: HT
 ---
-
-
 # <a name="step-5-see-sharing-of-protected-files-in-action-and-track-your-document"></a>Paso 5: ver el funcionamiento del uso compartido de archivos protegidos y realizar un seguimiento del documento 
 
 >*Se aplica a: Azure Information Protection*
@@ -62,7 +57,7 @@ A continuación, estará listo para compartir de forma segura este documento por
 
     **He protegido este archivo con Microsoft Azure Information Protection. Para el primer uso, vea estas instrucciones: https://aka.ms/rms-signup.** 
 
-    ![Paso 5 del tutorial de inicio rápido de Azure Information Protection: compartir documento protegido por correo electrónico](../media/share-protected-email.png)
+    ![Paso 5 del tutorial de inicio rápido de Azure Information Protection: compartir documento protegido por correo electrónico](../media/share-protected-emailv2.png)
 
     Haga clic en **Enviar**.
 
@@ -96,7 +91,7 @@ Ahora que el destinatario ha abierto el archivo adjunto y lo ha reenviado de for
 
 2.  En la pestaña **Inicio**, haga clic en **Proteger** > **Realizar un seguimiento y revocar**:
 
-    ![Opción realizar seguimiento](../media/track-usage-callout.png)
+    ![Opción realizar seguimiento](../media/track-usage-calloutv2.png)
 
     Esto le lleva al sitio de seguimiento de documentos.
 

@@ -4,7 +4,7 @@ description: "Instrucciones para utilizar el cliente Rights Management (RMS) con
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 03/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,17 +12,13 @@ ms.technology: techgroup-identity
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 58a0f117100ff5d19dfd6fee2ac4dd61c6bea36b
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 5e1a193ab54e5d0d85e4f7a22f53ac0b9b39036c
+ms.sourcegitcommit: 047e6dfe8f44fd13585e902df5ea871b5d0adccb
+translationtype: HT
 ---
-
 # <a name="rms-protection-with-windows-server-file-classification-infrastructure-fci"></a>Protección de RMS con la infraestructura de clasificación de archivos (FCI) de Windows Server
 
->*Se aplica a: Azure Information Protection, Windows Server 2012, Windows Server 2012 R2*
+>*Se aplica a: Azure Information Protection, Windows Server 2016, Windows Server 2012, Windows Server 2012 R2*
 
 Use este artículo para obtener instrucciones y un script para utilizar el cliente de Azure Information Protection y PowerShell para configurar el Administrador de recursos del servidor de archivos y la infraestructura de clasificación de archivos (FCI).
 
@@ -44,7 +40,7 @@ Requisitos previos de estas instrucciones:
 
     -   Ha identificado una carpeta local que contiene archivos para proteger con Rights Management. Por ejemplo, C:\FileShare.
 
-    -   Ha instalado el módulo AzureInformationProtection y ha configurado los requisitos previos para Azure Rights Management. Para más información, vea [Uso de PowerShell con el cliente de Azure Information Protection](client-admin-guide-powershell.md). En concreto, tiene los siguientes valores para conectarse al servicio Azure Rights Management mediante el uso de una entidad de servicio: **BposTenantId**, **AppPrincipalId** y la **clave simétrica**.
+    -   Ha instalado el módulo AzureInformationProtection y ha configurado los requisitos previos para Azure Rights Management. Para más información, vea [Uso de PowerShell con el cliente de Azure Information Protection](client-admin-guide-powershell.md). En concreto, tiene los siguientes valores para conectarse al servicio Azure Rights Management mediante el uso de una entidad de servicio: **BposTenantId**, **AppPrincipalId** y la **clave simétrica**. 
 
     -   Si desea cambiar el nivel predeterminado de protección (nativo o genérico) para las extensiones de nombre de archivo específicas, ha editado el registro como se describe en la sección [Cambio del nivel de protección predeterminado de los archivos](client-admin-guide-file-types.md#changing-the-default-protection-level-of-files) de la guía para administradores.
 
@@ -52,7 +48,7 @@ Requisitos previos de estas instrucciones:
 
 -   Ha sincronizado sus cuentas de usuario de Active Directory locales con Azure Active Directory u Office 365, incluyendo su dirección de correo electrónico. Esto es necesario para todos los usuarios que necesiten tener acceso a los archivos después de que se hayan protegido mediante FCI y el servicio Azure Rights Management. Si no realiza este paso (por ejemplo, en un entorno de prueba), existe la posibilidad de que se bloquee el acceso de los usuarios a estos archivos. Si necesita más información sobre la configuración de esta cuenta, vea [Preparación de Azure Rights Management](../plan-design/prepare.md).
 
--   Ha identificado la plantilla Rights Management para su utilización, que protegerá los archivos. Asegúrese de que conoce el identificador de esta plantilla usando el cmdlet [Get-RMSTemplate](/powershell/azureinformationprotection/vlatest/get-rmstemplate) .
+-   Descargó las plantillas de Rights Management en el servidor de archivos e identificó el id. de la plantilla que protegerá los archivos. Para hacerlo, use el cmdlet [Get-RMSTemplate](/powershell/azureinformationprotection/vlatest/get-rmstemplate). Este escenario no admite las plantillas de departamento, por lo que debe usar una plantilla no configurada para un ámbito, o bien la configuración del ámbito debe incluir la opción de compatibilidad de aplicaciones, de forma que la casilla **Mostrar esta plantilla a todos los usuarios cuando las aplicaciones no admiten la identidad de usuario** esté activada.
 
 ## <a name="instructions-to-configure-file-server-resource-manager-fci-for-azure-rights-management-protection"></a>Instrucciones para configurar la infraestructura de clasificación de archivos del Administrador de recursos del servidor de archivos para la protección con Azure Rights Management
 Siga estas instrucciones para proteger automáticamente todos los archivos en una carpeta mediante un script de PowerShell como una tarea personalizada. Lleve a cabo estos procedimientos en este orden:
@@ -70,6 +66,8 @@ Siga estas instrucciones para proteger automáticamente todos los archivos en un
 6.  Probar la configuración ejecutando manualmente la regla y la tarea
 
 Al final de estas instrucciones, todos los archivos de su carpeta seleccionada se clasificarán con la propiedad personalizada de RMS y, a continuación, Rights Management protegerá estos archivos. Para una configuración más compleja que protege de forma selectiva algunos archivos y no otros, puede crear o usar una regla y una propiedad de clasificación diferentes con una tarea de administración de archivos que protege solo esos archivos.
+
+Tenga en cuenta que si hace cambios en la plantilla de Rights Management que usa para FCI, debe ejecutar `Get-RMSTemplate -Force` en el equipo del servidor de archivos para obtener la plantilla actualizada. De ese modo, la plantilla actualizada se usará para proteger los archivos nuevos. Si los cambios que se hacen en la plantilla son suficientemente importantes como para volver a proteger los archivos en el servidor de archivos, puede ejecutar el cmdlet Protect-RMSFile de manera interactiva con una cuenta que posee los derechos de uso de exportación o control completo de los archivos. También debe ejecutar `Get-RMSTemplate -Force` en este equipo de servidor de archivos si publica una plantilla nueva que desea usar para FCI.
 
 ### <a name="save-the-windows-powershell-script"></a>Guardar el script de Windows PowerShell
 
@@ -288,4 +286,3 @@ Para ello, utilice una de las propiedades de clasificación integradas (por ejem
 Ahora todo lo que debe hacer es crear una nueva tarea de administración de archivos que utilice el mismo script, aunque quizás con una plantilla diferente, así como configurar la condición para la propiedad de clasificación que acaba de configurar. Por ejemplo, en lugar de la condición que hemos configurado previamente (propiedad**RMS** , **Igual**, **Sí**), seleccione la propiedad **Información de identificación personal** con el valor **Operador** establecido en **Igual** y el **Valor** de **Alto**.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

@@ -12,15 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 8fdad425-5daf-4ce1-822f-9d2fb0b87df1
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 909ff4f7c96af65172604bb903173dd38d95dcf9
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 6fc25683bde3bc640f1575d700ac2f9378cbe478
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-
 # <a name="file-servers-that-run-windows-server-and-use-file-classification-infrastructure-fci"></a>Servidores de archivos que ejecutan Windows Server y usan Infraestructura de clasificación de archivos (FCI)
 
 >*Se aplica a: Azure Information Protection, Office 365*
@@ -42,5 +37,4 @@ Para obtener instrucciones sobre cómo usar el script de Windows PowerShell para
 Ahora que comprende cómo las aplicaciones y los servicios admiten Azure RMS, puede que le interese comparar Azure RMS con la versión local de Rights Management, Active Directory Rights Management Services (AD RMS). Para ver una comparación de características, requisitos y controles de seguridad, consulte [Comparing Azure Rights Management and AD RMS](compare-azure-rms-ad-rms.md) (Comparación de Azure Rights Management y AD RMS).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 

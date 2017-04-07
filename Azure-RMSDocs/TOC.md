@@ -5,8 +5,3 @@
 # [Implementación y uso del cliente](/information-protection/rms-client/use-client)
 # [Desarrollo y personalización de aplicaciones](/information-protection/develop/developers-guide)
 
-
-
-<!--HONumber=Jan17_HO4-->
-
-
