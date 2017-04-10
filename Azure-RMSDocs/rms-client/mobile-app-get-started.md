@@ -5,7 +5,7 @@ keywords: "Cómo ver correos electrónicos o archivos con la aplicación de Azur
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 04/06/2017
 ms.topic: article
 ms.prod: azure
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.technology: techgroup-identity
 ms.assetid: 3d5d18d8-7b2e-456c-bb45-48da4eb55544
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 24e1b9df2284abde20d5308a313019d666afed5d
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 96ab267f22abf31d39a77dcc5450b28a583096e8
+ms.sourcegitcommit: 81b5c111627246a4094ef87da17d260f66ae985c
 translationtype: HT
 ---
 # <a name="get-started-with-the-microsoft-azure-information-protection-app-for-ios-and-android"></a>Introducción a la aplicación de Microsoft Azure Information Protection para iOS y Android
@@ -31,9 +31,9 @@ Debe acceder desde su dispositivo móvil a uno de los archivos que admite la apl
 
 - **Un archivo PDF protegido por derechos**: desde un equipo con Windows, utilice el cliente de Azure Information Protection para [proteger un archivo PDF](client-classify-protect.md) y, después, envíe manualmente este archivo PDF protegido por derechos como datos adjuntos de correo electrónico. También puede cargar un archivo PDF en una biblioteca protegida de SharePoint y, después, compartirlo mediante su dirección de correo electrónico.
 
-- **Un .ptxt, .pjpg o .ppng**: desde un equipo con Windows, use el cliente de Azure Information Protection para proteger un archivo de texto o imagen y envíe manualmente este archivo protegido como datos adjuntos de correo electrónico. Para obtener la lista completa de tipos de archivo que puede utilizar para realizar pruebas, vea la sección [Tipos de archivos compatibles para protección y sus extensiones de nombre de archivo](client-admin-guide-file-types.md#supported-file-types-for-protection-and-their-file-name-extensions) de la Guía para administradores del cliente Azure Information Protection. 
+- **Un .ptxt, .pjpg o .ppng**: desde un equipo con Windows, use el cliente de Azure Information Protection para proteger un archivo de texto o imagen y envíe manualmente este archivo protegido como datos adjuntos de correo electrónico. Para obtener la lista completa de tipos de archivo que puede utilizar para realizar pruebas, consulte la primera tabla de la sección [Tipos de archivos compatibles para protección y clasificación](client-admin-guide-file-types.md#supported-file-types-for-classification-and-protection) de la Guía para administradores del cliente de Azure Information Protection. 
 
-Para ver estos archivos en la aplicación de visor de Azure Information Protection, pulse el vínculo o el archivo adjunto del correo electrónico. Cuando se le pida que seleccione una aplicación para abrirlo, seleccione la aplicación **Visor AIP**. Se le pedirá que inicie sesión en su cuenta profesional o educativa. Una vez que se haya autenticado correctamente, la aplicación Azure Information Protection le muestra el correo electrónico o el archivo para que lo lea.
+Para ver estos archivos en la aplicación de visor de Azure Information Protection, pulse el vínculo o el archivo adjunto del correo electrónico. Cuando se le pida que seleccione una aplicación para abrirlo, seleccione la aplicación **Visor AIP**. A continuación se le solicitará que inicie sesión con su cuenta profesional o educativa, o que seleccione un certificado. Una vez que las credenciales se hayan autenticado, la aplicación de Azure Information Protection mostrará el correo electrónico o el archivo para que lo lea.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

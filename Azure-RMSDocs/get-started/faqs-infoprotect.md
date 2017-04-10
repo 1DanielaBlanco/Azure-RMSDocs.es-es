@@ -4,7 +4,7 @@ description: "¿Tiene alguna pregunta que trate específicamente sobre clasifica
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/29/2017
+ms.date: 03/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-ms.openlocfilehash: 7f2bd30603f88ec72ee51f980c40903362cfdeba
-ms.sourcegitcommit: 8733730882bea6f505f4c6d53d4bdf08c3106f40
+ms.openlocfilehash: b6980bdcecb02471159f7873e80a05d234726d0e
+ms.sourcegitcommit: 85aaded97659bbc0a3932569aab29b1bf472fea4
 translationtype: HT
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>Preguntas más frecuentes sobre la clasificación y el etiquetado en Azure Information Protection
@@ -64,6 +64,10 @@ Cuando use subetiquetas, no configure marcas visuales, protección o condiciones
 
 No. Al etiquetar un mensaje de correo electrónico que tiene datos adjuntos, dichos datos adjuntos no heredan la misma etiqueta. Los datos adjuntos siguen sin etiqueta o conservarán una etiqueta aplicada por separado. Sin embargo, si la etiqueta para el correo electrónico aplica protección, dicha protección se aplica a los datos adjuntos.
 
+## <a name="how-can-dlp-solutions-and-other-applications-integrate-with-azure-information-protection"></a>¿Cómo pueden las soluciones DLP y otras aplicaciones integrarse con Azure Information Protection?
+
+Como Azure Information Protection usa metadatos persistentes para la clasificación, que incluyen una etiqueta no cifrada, esta información puede leerse mediante soluciones DLP y otras aplicaciones. En los archivos, estos metadatos se almacenan en propiedades personalizadas; en los correos electrónicos, esta información se encuentra en los encabezados del correo.
+
 ## <a name="how-is-azure-information-protection-classification-for-emails-different-from-exchange-message-classification"></a>¿En qué se diferencia la clasificación de los correos electrónicos de Azure Information Protection de la clasificación de mensajes de Exchange?
 
 La clasificación de mensajes de Exchange es una característica antigua que puede clasificar los correos electrónicos y que se implementa con independencia de la clasificación de Azure Information Protection. Sin embargo, puede integrar las dos soluciones de modo que cuando los usuarios clasifiquen un correo electrónico mediante la aplicación web de Outlook en algunas aplicaciones de correo móviles, se agregue automáticamente la clasificación y las correspondientes marcas de etiqueta de Azure Information Protection. Exchange agrega la clasificación y el cliente de Azure Information Protection aplica la configuración de etiquetas correspondiente para esa clasificación.
@@ -76,10 +80,15 @@ Para lograr esta solución:
 
 2. Cree una regla de transporte de Exchange para cada etiqueta. Aplique la regla cuando las propiedades del mensaje incluyan la clasificación que ha configurado, y modifique las propiedades del mensaje para establecer un encabezado de mensaje. 
 
-    Para el encabezado del mensaje, encontrará la información que quiere especificar si inspecciona las propiedades de un archivo de Office que haya clasificado mediante una etiqueta de Azure Information Protection. Identifique la propiedad de archivo con el formato **MSIP_Label_<GUID>_Enabled** y especifique esta cadena para el encabezado del mensaje; a continuación, especifique **True** como valor del encabezado. Por ejemplo, el encabezado del mensaje podría parecerse a esta cadena: **MSIP_Label_132616b8 f72d 5d1e aec1 dfd89eb8c5b2_Enabled**.
+    En el caso del encabezado del mensaje, encontrará la información que es necesario especificar inspeccionando los encabezados de Internet de un correo electrónico que haya enviado y clasificado con una etiqueta de Azure Information Protection. Busque el encabezado **msip_labels** y la cadena inmediatamente posterior, hasta e incluido el punto y coma. En el ejemplo anterior:
+    
+    **msip_labels: MSIP_Label_0e421e6d-ea17-4fdb-8f01-93a3e71333b8_Enabled=True;**
+    
+    Luego, para el encabezado del mensaje en la regla, especifique **msip_labels** para el encabezado y el resto de la cadena para el valor del encabezado. Por ejemplo:
+    
+    ![Ejemplo de regla de transporte de Exchange Online que establece el encabezado del mensaje para una etiqueta de Azure Information Protection](../media/exchange-rule-for-message-header.png)
 
-
-Ahora cuando los usuarios usan la aplicación web de Outlook o un cliente de dispositivo móvil que admite la protección de administración de derechos, ocurre los siguiente: 
+Antes de probar esto, recuerde que, al crear o editar reglas de transporte, normalmente se produce un retraso (espere una hora, por ejemplo). Sin embargo, cuando la regla está aplicada y los usuarios usan la aplicación web de Outlook o un cliente de dispositivo móvil que admite la protección de Rights Management, ocurre lo siguiente: 
 
 - Los usuarios seleccionan la clasificación de mensajes de Exchange y envían el correo electrónico.
 
@@ -91,11 +100,7 @@ Si las etiquetas de Azure Information Protection aplican protección de administ
 
 También puede configurar reglas de transporte para realizar la asignación inversa: al detectar una etiqueta de Information Protection, establezca una clasificación de mensajes de Exchange correspondiente. Para ello:
 
-- Para cada etiqueta de Azure Information Protection, cree una regla de transporte que se aplica cuando el encabezado **msip_labels** incluye el nombre de la etiqueta (por ejemplo, **Confidencial**) y aplique una clasificación de mensajes que se asigne a esta etiqueta.
-
-## <a name="how-can-dlp-solutions-and-other-applications-integrate-with-azure-information-protection"></a>¿Cómo pueden las soluciones DLP y otras aplicaciones integrarse con Azure Information Protection?
-
-Como Azure Information Protection usa metadatos persistentes para la clasificación, que incluyen una etiqueta no cifrada, esta información puede leerse mediante soluciones DLP y otras aplicaciones. En los archivos, estos metadatos se almacenan en propiedades personalizadas; en los correos electrónicos, esta información se encuentra en los encabezados del correo.
+- Para cada etiqueta de Azure Information Protection, cree una regla de transporte que se aplique cuando el encabezado **msip_labels** incluya el nombre de la etiqueta (por ejemplo, **General**) y aplique una clasificación de mensajes que se asigne a ella.
 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

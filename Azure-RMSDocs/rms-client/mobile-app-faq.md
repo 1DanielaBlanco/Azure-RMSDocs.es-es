@@ -5,7 +5,7 @@ keywords: "Algunas preguntas frecuentes para ayudarle a usar la aplicación de A
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 04/05/2017
 ms.topic: article
 ms.prod: azure
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.technology: techgroup-identity
 ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: bc3d92cb0dc23ddd2d1f81daf2fc589ad4862977
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: d797dd31c44d985becc92ec81266afbe23cd970c
+ms.sourcegitcommit: 1671466a42e7e00e1cc2702b1f609fb112aac7db
 translationtype: HT
 ---
 # <a name="faqs-for-microsoft-azure-information-protection-app-for-ios-and-android"></a>Preguntas más frecuentes sobre la aplicación de Microsoft Azure Information Protection para iOS y Android
@@ -45,7 +45,7 @@ Si tiene estas versiones o versiones posteriores, puede instalar la aplicación 
 
 ## <a name="how-do-i-get-started-with-the-viewer-app"></a>¿Cómo puedo empezar a usar la aplicación de visor?
 
-Después de instalar la aplicación, no tiene que hacer nada más en ese momento. Espere hasta que reciba un correo electrónico o archivo protegido que quiera ver y después elija **AIP Viewer** para abrirlo. Se le pedirá que inicie sesión con su cuenta profesional o educativa. Después de que se autentiquen las credenciales, podrá leer el contenido.
+Después de instalar la aplicación, no tiene que hacer nada más en ese momento. Espere hasta que reciba un correo electrónico o archivo protegido que quiera ver y después elija **AIP Viewer** para abrirlo. A continuación se le solicitará que inicie sesión con su cuenta profesional o educativa, o que seleccione un certificado. Tras autenticar las credenciales, podrá leer el contenido.
 
 En cambio, si no quiere esperar, puede usar las siguientes instrucciones para enviarse un correo electrónico o archivo protegido que quiera ver: [Introducción a la aplicación de Microsoft Azure Information Protection para iOS y Android](mobile-app-get-started.md) 
 ## <a name="what-credentials-should-i-use-to-sign-in-to-this-app"></a>¿Qué credenciales debo usar para iniciar sesión en esta aplicación?

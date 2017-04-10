@@ -4,7 +4,7 @@ description: "Recursos para administradores con información sobre nuevas versio
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/30/2017
+ms.date: 04/04/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5e836d99c59cbd055b219aab6499a67fb62bd1a5
-ms.sourcegitcommit: 8733730882bea6f505f4c6d53d4bdf08c3106f40
+ms.openlocfilehash: c3838c29d26c8c1bed196ad0a86c63f5f78ad9cc
+ms.sourcegitcommit: d2bd2ddc68d9b5a095b57235b28a3b7e9307bd9b
 translationtype: HT
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Información y soporte técnico para Azure Information Protection
@@ -22,7 +22,7 @@ translationtype: HT
 
 Use los siguientes recursos para ayudarle a obtener información sobre implementación y soporte técnico de Azure Information Protection para su organización.
 
-|Para hacer esto...|.. haga esto:|
+|Para hacer esto...|. haga esto:|
 |----------------|---------------|
 |Ver la documentación recomendada para el servicio →|Use la página de inicio [documentación de Azure Information Protection](https://docs.microsoft.com/information-protection/).|
 |Proporcionar comentarios sobre la documentación o hacer una pregunta →|Enviar un correo electrónico a [askipteam](mailto:%20askipteam@microsoft.com?subject=Documentation%20feedback)|
@@ -49,13 +49,17 @@ Puede ser apto para **FastTrack**: puede usar el Beneficio del centro de FastTra
 
 Para otros clientes, use los siguientes canales de soporte técnico, dependiendo de la forma en la que ha obtenido Azure Information Protection:
 
-- **Azure Information Protection Premium** (independiente): abra una [solicitud de soporte técnico en Azure Portal](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade). Cuando se le solicite, en la hoja **Básico**, elija **Técnico** para **Tipo de problema**, y **Suscripción con soporte técnico incluido** para la opción **Suscripción**.
-
-- **Azure Information Protection con una suscripción de Office 365**: vea [Póngase en contacto con el soporte de Office 365 para empresas- Ayuda para administradores](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) para obtener números de teléfono y la forma de ponerse en contacto con el soporte técnico mediante el Portal de administración de Office 365. 
-
-- **Azure Information Protection con Enterprise Mobility + Security (EMS)**: si también tiene Office 365, puede usar los [canales de soporte técnico de Office 365](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b). Para obtener más información, vea [Enterprise Mobility Suite: Support FAQ (Enterprise Mobility Suite: Preguntas más frecuentes de soporte técnico)](https://technet.microsoft.com/dn932057.aspx).
-
-- **Azure Information Protection con Secure Productive Enterprise (SPE)**: use los [canales de soporte técnico de Office 365](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
+- **Azure Information Protection** (versión independiente): 
+    - Cree una **nueva solicitud de soporte técnico** en [Ayuda y soporte técnico](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade), en Azure Portal. Cuando se le solicite, en la hoja **Básico**, elija **Técnico** para **Tipo de problema**, y **Suscripción con soporte técnico incluido** para la opción **Suscripción**.
+    
+- **Azure Information Protection con una suscripción a Office 365**: 
+    - Consulte [Póngase en contacto con el soporte de Office 365 para empresas: ayuda para administradores](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) para obtener los números de teléfono y ver cómo ponerse en contacto con el soporte técnico mediante el Portal de administración de Office 365. 
+    
+- **Azure Information Protection con Enterprise Mobility + Security (EMS)**: 
+    - Cree una **nueva solicitud de soporte técnico** en [Ayuda y soporte técnico](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade), en Azure Portal. Cuando se le solicite, en la hoja **Básico**, elija **Técnico** para **Tipo de problema**, y **Suscripción con soporte técnico incluido** para la opción **Suscripción**.
+    
+- **Azure Information Protection con Secure Productive Enterprise (SPE)**: 
+    - Utilice los [canales de soporte técnico de Office 365](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
 
 Para obtener opciones de soporte técnico adicionales, pregunte a su contacto de Microsoft. 
 
