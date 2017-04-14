@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 61f349ce-bdd2-45c1-acc5-bc83937fb187
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b56bebbdebc79cfd0d53b4e83714f8a04dfb5a25
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 2889d0b44231969b6ea190b8d3dec0c9753b2688
+ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
 translationtype: HT
 ---
 # <a name="track-and-revoke-your-documents-when-you-use-the-rms-sharing-application"></a>Seguimiento y revocación de documentos cuando se utiliza la aplicación RMS sharing
@@ -26,7 +26,7 @@ Una vez que haya protegido sus documentos mediante la aplicación RMS sharing, s
 <iframe style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;" width="100%" height="100%" src="https://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation/player" frameborder="0" allowfullscreen></iframe>
 </div>
 
-Cuando tenga acceso a este sitio, inicie sesión para hacer un seguimiento de sus documentos. Siempre que la organización tenga una [suscripción que admite el seguimiento y la revocación de documentos](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features) y usted tenga asignada una licencia para esta suscripción, puede ver quién intentó abrir los documentos que protegió y si lo lograron (se autenticaron correctamente) o no. las veces que intentaron acceder al documento y su ubicación en el tiempo. Además:
+Cuando tenga acceso a este sitio, inicie sesión para hacer un seguimiento de sus documentos. Siempre que la organización tenga una [suscripción que admite el seguimiento y la revocación de documentos](https://www.microsoft.com/cloud-platform/azure-information-protection-features) y usted tenga asignada una licencia para esta suscripción, puede ver quién intentó abrir los documentos que protegió y si lo lograron (se autenticaron correctamente) o no. las veces que intentaron acceder al documento y su ubicación en el tiempo. Además:
 
 -   Si quiere dejar de compartir un documento: Haga clic en **Revocar el acceso**, anote el período de tiempo que el documento seguirá estando disponible y decida si va a dejar que la gente sepa que va a revocar el acceso al documento anteriormente compartido. También, proporcione un mensaje personalizado. Al revocar un documento, no elimina el documento que ha compartido, pero los usuarios autorizados ya no podrán abrirlo.
 

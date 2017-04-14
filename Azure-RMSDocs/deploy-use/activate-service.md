@@ -4,7 +4,7 @@ description: "El servicio Azure Rights Management debe activarse antes de que la
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/30/2017
+ms.date: 04/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0e7feff31adb118439dfce082a831bdc51bc4a87
-ms.sourcegitcommit: 58d1f87763f8756621a6cba6dfe51e26ec38cd48
+ms.openlocfilehash: a11add0b0c712dd52f7ac560748f7986c915d0d1
+ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
 translationtype: HT
 ---
 # <a name="activating-azure-rights-management"></a>Activar Rights Management de Azure
@@ -27,7 +27,7 @@ Si quiere obtener más información sobre el servicio Azure Rights Management an
 > [!IMPORTANT]
 > Antes de activar [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)], asegúrese de que la organización tenga un plan de servicios que incluya la protección de datos de Azure Rights Management. De lo contrario, no podrá activar Azure Rights Management.
 >
-> Debe disponer de un [plan Premium de Azure Information Protection](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing) o de un [plan de Office 365 que incluya Rights Management](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf).
+> Debe disponer de un [plan Premium de Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) o de un [plan de Office 365 que incluya Rights Management](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf).
 
 Una vez activado el servicio Azure Rights Management, todos los usuarios de la organización podrán aplicar la protección de la información a los archivos, y todos los usuarios podrán abrir (consumir) los archivos que se hayan protegido con el servicio Azure Rights Management. Sin embargo, si lo prefiere, puede usar controles de incorporación para restringir quién puede aplicar la protección de la información, a fin de realizar una implementación por fases. Para más información, consulte la sección [Configuración de controles de incorporación para una implementación por fases](#configuring-onboarding-controls-for-a-phased-deployment) de este artículo.
 

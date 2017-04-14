@@ -4,7 +4,7 @@ description: Identifique los requisitos de Azure AD para usar Azure Information 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/05/2017
+ms.date: 04/12/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 729d66e8d55d045b74ac5c794cf83ddcc2848d35
-ms.sourcegitcommit: 1671466a42e7e00e1cc2702b1f609fb112aac7db
+ms.openlocfilehash: 29bc3b414a1fde17aec03702a87f4364b565b848
+ms.sourcegitcommit: 65e2d607954dfb6c7529ff200602887b71c39312
 translationtype: HT
 ---
 # <a name="azure-active-directory-requirements-for-azure-information-protection"></a>Requisitos de Azure Active Directory para Azure Information Protection
@@ -42,7 +42,7 @@ Equipos que ejecutan Office 2010:
 
 Compatibilidad con la autenticación basada en certificados (CBA):
 
-- En el caso de la versión 5.0 de Android y posteriores, la aplicación Azure Information Protection para Android admite la autenticación basada en certificados. Para consultar las instrucciones sobre la configuración de la autenticación basada en certificados, consulte [Introducción a la autenticación basada en certificados de Azure Active Directory](/active-directory/active-directory-certificate-based-authentication-get-started).
+- En el caso de la versión 5.0 de Android y posteriores, la aplicación Azure Information Protection para Android admite la autenticación basada en certificados. Para consultar las instrucciones sobre la configuración de la autenticación basada en certificados, consulte [Introducción a la autenticación basada en certificados de Azure Active Directory](/azure/active-directory/active-directory-certificate-based-authentication-get-started).
 
 Dispositivos móviles o equipos Mac que se autentican localmente mediante AD FS o un proveedor de autenticación equivalente:
 

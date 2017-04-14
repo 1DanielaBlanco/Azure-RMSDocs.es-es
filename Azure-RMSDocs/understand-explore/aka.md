@@ -4,7 +4,7 @@ description: Azure Information Protection ha cambiado de nombre varias veces y e
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/28/2017
+ms.date: 04/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 0af1b2ff-46a7-4a38-803c-5a730e4ff56d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b6c6dfec138c3be41dcbb8609660a1fd3bcff376
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 73af5d2f3f6bfc601f6c2bf97584f0c41ff9ccaa
+ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
 translationtype: HT
 ---
 # <a name="azure-information-protection---also-known-as-"></a>Azure Information Protection también se conoce como…
@@ -71,6 +71,6 @@ De forma similar, "Active Directory Rights Management Services" (AD RMS) sigue s
 
 ## <a name="how-to-evaluate-or-purchase-the-latest-version"></a>Cómo evaluar o adquirir la versión más reciente
 
-Para más información sobre cómo puede comprar o evaluar Azure Information Protection, así como las diferentes características que están disponibles para los planes de suscripción, vea el sitio de [Azure Information Protection](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection).
+Para más información sobre cómo puede comprar o evaluar Azure Information Protection, así como las diferentes características que están disponibles para los planes de suscripción, vea el sitio de [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
