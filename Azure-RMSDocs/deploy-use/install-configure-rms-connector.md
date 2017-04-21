@@ -4,7 +4,7 @@ description: "Información para facilitar la instalación y configuración del c
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 04/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 100ac0f42d82eb02635187dbb0c91422d3097872
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 21eab2a693147b4e6562a8bcdff8cece7d706432
+ms.sourcegitcommit: 9c033b7f5a6cbb20275aeecd48ff5071964eb587
 translationtype: HT
 ---
 # <a name="installing-and-configuring-the-azure-rights-management-connector"></a>Instalación y configuración del conector de Azure Rights Management
@@ -53,7 +53,7 @@ Para continuar, escriba una cuenta y una contraseña para configurar el conector
 ## <a name="entering-credentials"></a>Introducción de credenciales
 Para poder configurar el conector RMS, debe introducir las credenciales para una cuenta en que tenga suficientes privilegios para configurar el conector RMS. Por ejemplo, puede escribir **admin@contoso.com** y luego especificar la contraseña para esta cuenta.
 
-Hay algunas restricciones de caracteres para esta contraseña. La contraseña no puede tener los siguientes caracteres: símbolo de Y comercial (**&**); corchete angular de apertura (**[**); corchete angular de cierre (**]**); comillas rectas (**"**); y apóstrofo (**'**). Si su contraseña tiene alguno de estos caracteres, se producirá un error en la autenticación para el conector RMS y verá el mensaje de error “Esa combinación de nombre de usuario y contraseña no es correcta”. (Esto no afecta a otros escenarios, en los que podrá iniciar sesión correctamente usando esta cuenta y contraseña). Si se aplica esto a su contraseña, use otra cuenta con una contraseña que no tenga ninguno de estos caracteres especiales o restablezca su contraseña para que no los tenga.
+Hay algunas restricciones de caracteres para esta contraseña. La contraseña no puede tener los siguientes caracteres: símbolo de Y comercial (**&**); corchete angular de apertura (**[**); corchete angular de cierre (**]**); comillas rectas (**"**); y apóstrofo (**'**). Si su contraseña tiene alguno de estos caracteres, se producirá un error en la autenticación para el conector RMS y verá el mensaje de error **Esa combinación de nombre de usuario y contraseña no es correcta**. Esto no afecta a otros escenarios, en los que podrá iniciar sesión correctamente con esta cuenta y contraseña. Si se aplica esto a su contraseña, use otra cuenta con una contraseña que no tenga ninguno de estos caracteres especiales o restablezca su contraseña para que no los tenga.
 
 Además, si implementó [controles de incorporación](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment), asegúrese de que la cuenta especificada es capaz de proteger el contenido. Por ejemplo, si restringió la capacidad de proteger el contenido al grupo “Departamento de TI”, la cuenta que especifique aquí debe pertenecer a ese grupo. Si no, verá el error siguiente: **Error al intentar detectar la ubicación de la organización y el servicio de administración. Asegúrese de que el servicio Microsoft Rights Management está habilitado para su organización.**
 

@@ -4,7 +4,7 @@ description: "Instrucciones e información para administradores de una red empre
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/30/2017
+ms.date: 04/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 63843acfe9f7b4ded77ccbdcaaab8cb98598dd9f
-ms.sourcegitcommit: 8733730882bea6f505f4c6d53d4bdf08c3106f40
+ms.openlocfilehash: d442a9540243cd020b885f7dc2c13d999bbad868
+ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
 translationtype: HT
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Guía para administradores del cliente de Azure Information Protection
@@ -174,7 +174,7 @@ Utilice la opción **Ayuda y comentarios** para abrir el cuadro de diálogo **Mi
 
 ### <a name="help-and-feedback-section"></a>Sección **Ayuda y comentarios**
 
-El vínculo **Más información** dirige, de forma predeterminada, al sitio web de [Azure Information Protection](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection), pero se puede configurar con una dirección URL personalizada como uno de los valores de [configuración de directivas](../deploy-use/configure-policy-settings.md) en la directiva de Azure Information Protection.
+El vínculo **Más información** dirige, de forma predeterminada, al sitio web de [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection), pero se puede configurar con una dirección URL personalizada como uno de los valores de [configuración de directivas](../deploy-use/configure-policy-settings.md) en la directiva de Azure Information Protection.
 
 Use el vínculo **Envíenos sus comentarios** para enviar sugerencias o solicitudes al equipo de Information Protection. No utilice esta opción para obtener soporte técnico, pero, en su lugar, vea [Opciones de soporte y recursos de la comunidad](../get-started/information-support.md#support-options-and-community-resources). 
 

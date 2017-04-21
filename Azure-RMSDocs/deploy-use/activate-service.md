@@ -4,7 +4,7 @@ description: "El servicio Azure Rights Management debe activarse antes de que la
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 04/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5f03b34b825b9fc693741336c54ee4049f636741
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: a11add0b0c712dd52f7ac560748f7986c915d0d1
+ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
 translationtype: HT
 ---
 # <a name="activating-azure-rights-management"></a>Activar Rights Management de Azure
@@ -27,7 +27,7 @@ Si quiere obtener más información sobre el servicio Azure Rights Management an
 > [!IMPORTANT]
 > Antes de activar [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)], asegúrese de que la organización tenga un plan de servicios que incluya la protección de datos de Azure Rights Management. De lo contrario, no podrá activar Azure Rights Management.
 >
-> Debe disponer de un [plan Premium de Azure Information Protection](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing) o de un [plan de Office 365 que incluya Rights Management](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf).
+> Debe disponer de un [plan Premium de Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) o de un [plan de Office 365 que incluya Rights Management](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf).
 
 Una vez activado el servicio Azure Rights Management, todos los usuarios de la organización podrán aplicar la protección de la información a los archivos, y todos los usuarios podrán abrir (consumir) los archivos que se hayan protegido con el servicio Azure Rights Management. Sin embargo, si lo prefiere, puede usar controles de incorporación para restringir quién puede aplicar la protección de la información, a fin de realizar una implementación por fases. Para más información, consulte la sección [Configuración de controles de incorporación para una implementación por fases](#configuring-onboarding-controls-for-a-phased-deployment) de este artículo.
 
@@ -57,17 +57,25 @@ Si no quiere que todos los usuarios puedan proteger los archivos de forma inmedi
 Por ejemplo, si en principio desea que solo los administradores del grupo "Departamento de TI" (con un identificador de objeto de fbb99ded-32a0-45f1-b038-38b519009503) puedan proteger el contenido con fines de prueba, use el comando siguiente:
 
 ```
-Set-AadrmOnboardingControlPolicy – SecurityGroupObjectId fbb99ded-32a0-45f1-b038-38b519009503
+Set-AadrmOnboardingControlPolicy -UseRmsUserLicense $False -SecurityGroupObjectId "fbb99ded-32a0-45f1-b038-38b519009503"
 ```
-Tenga en cuenta que para esta opción de configuración, debe especificar un grupo; no puede especificar usuarios individuales. Para obtener el identificador de objeto del grupo, use Azure AD PowerShell (por ejemplo, para la [versión 1.0](https://msdn.microsoft.com/library/azure/jj151815\(v=azure.98\).aspx) del módulo, use el comando [Get-MsolGroup](https://msdn.microsoft.com/library/azure/dn194130\(v=azure.98\).aspx)).
+
+Tenga en cuenta que para esta opción de configuración, debe especificar un grupo; no puede especificar usuarios individuales. Para obtener el id. de objeto del grupo, puede usar Azure AD PowerShell. Por ejemplo, para la versión 1.0 del módulo, use el comando [Get-MsolGroup](/powershell/msonline/v1/get-msolgroup). También puede copiar el valor **Id. de objeto** del grupo de Azure Portal.
 
 O bien, si quiere asegurarse de que solo los usuarios con licencias adecuadas para usar Azure Information Protection puedan proteger el contenido:
 
 ```
-Set-AadrmOnboardingControlPolicy -UseRmsUserLicense $true
+Set-AadrmOnboardingControlPolicy -UseRmsUserLicense $True
 ```
 
-Para obtener más información sobre este cmdlet y ejemplos adicionales, consulte la ayuda de [Set-AadrmOnboardingControlPolicy](https://msdn.microsoft.com/library/dn857521.aspx).
+Cuando ya no necesite usar los controles de incorporación, tanto si ha usado la opción de licencias o de grupo, ejecute:
+
+```
+Set-AadrmOnboardingControlPolicy -UseRmsUserLicense $False
+```
+
+
+Para obtener más información sobre este cmdlet y ejemplos adicionales, consulte la ayuda de [Set-AadrmOnboardingControlPolicy](/powershell/aadrm/vlatest/set-aadrmonboardingcontrolpolicy).
 
 Al usar estos controles de incorporación, todos los usuarios de la organización podrán consumir siempre el contenido protegido por el subconjunto de usuarios, pero no podrán aplicar la protección de la información ellos mismos desde aplicaciones cliente. Por ejemplo, no verán en sus clientes de Office las plantillas predeterminadas publicadas automáticamente al activar el servicio Azure Rights Management ni las plantillas personalizadas que se puedan configurar.  Las aplicaciones de lado del servidor, como Exchange, pueden implementar sus propios controles por usuario para que la integración de Rights Management logre el mismo resultado.
 

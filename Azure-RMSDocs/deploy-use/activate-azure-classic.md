@@ -4,7 +4,7 @@ description: "Instrucciones de activación del servicio Azure Rights Management 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 04/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 9b0a0227-88ce-44b8-ba3f-31eeaab27ff7
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 10ef44bfe62ed9504522a868b96c5a18cf0c611b
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 7400cb489d3930ef1436bb3b08def5bf673c2bbf
+ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
 translationtype: HT
 ---
 # <a name="how-to-activate-azure-rights-management-from-the-azure-classic-portal"></a>Activación de Azure Rights Management desde el Portal de Azure clásico
@@ -37,7 +37,7 @@ Si tiene acceso al Portal de Azure, siga estas instrucciones. Por ejemplo, tiene
     > [!NOTE]
     >Si ve un error de activación, quizá sea porque su plan de servicio o la versión del producto no incluyen el servicio Azure Rights Management para Azure Information Protection.
     >
-    >Para activar el servicio Azure Rights Management, debe disponer de un [plan Premium de Azure Information Protection](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing) o de un [plan de Office 365 que incluya Rights Management](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf). Para obtener ayuda con este problema, envíe un mensaje de correo electrónico a [askipteam](mailto:askipteam?subject=I%20cannot%20activate%20RMS).
+    >Para activar el servicio Azure Rights Management, debe disponer de un [plan Premium de Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) o de un [plan de Office 365 que incluya Rights Management](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf). Para obtener ayuda con este problema, envíe un mensaje de correo electrónico a [askipteam](mailto:askipteam?subject=I%20cannot%20activate%20RMS).
 
 
 El **ESTADO DE RIGHTS MANAGEMENT** debe indicar ahora **Activo** y la opción **ACTIVAR** debe aparecer reemplazada por **DESACTIVAR**.

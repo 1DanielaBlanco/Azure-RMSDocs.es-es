@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 95f1844a-612c-4e67-bbe6-4b6b92295221
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f509efb599bd17d5a76c08e24a7d503394415785
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 8a0ca5fa2d7aa6f1f8f8b5ccab0a3a3bd122b50c
+ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
 translationtype: HT
 ---
 # <a name="scenario---secure-your-most-few-valuable-files"></a>Escenario: Proteger (algunos) archivos de gran valor
@@ -51,7 +51,7 @@ Para que este escenario funcione, debe disponer de lo siguiente:
 |Configuró una plantilla personalizada tal y como se describe a continuación|[Configuración de plantillas personalizadas para el servicio Azure Rights Management](../deploy-use/configure-custom-templates.md)|
 |La aplicación Rights Management sharing se implementa en el equipo de Windows para que estos archivos se puedan proteger de forma local, como se describe en la siguiente sección.|[Descargar e instalar la aplicación Rights Management sharing](../rms-client/install-sharing-app.md)|
 |Los usuarios autorizados tienen una versión mínima de Office 2013.|Si tienen Office 2010, también deben instalar la aplicación Rights Management sharing.|
-|En la suscripción a Azure Information Protection se incluye el seguimiento de documentos|Si la suscripción no incluye la revocación y el seguimiento de documentos, no podrá usar el sitio de seguimiento de documentos para ver quién accede a ellos y revocar el acceso en caso necesario. En tal caso, adquiera una suscripción que admita el seguimiento de documentos o asuma esta limitación. Conviene considerar también el uso de las funciones de [registro de uso](../deploy-use/log-analyze-usage.md) del servicio Azure Rights Management (que proporcionan información sobre quién ha accedido a cada archivo y cuándo, por ejemplo) con el objeto de poder detectar posibles comportamientos sospechosos.<br /><br />Consulte la [lista de características](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features) en el sitio de Azure Information Protection.|
+|En la suscripción a Azure Information Protection se incluye el seguimiento de documentos|Si la suscripción no incluye la revocación y el seguimiento de documentos, no podrá usar el sitio de seguimiento de documentos para ver quién accede a ellos y revocar el acceso en caso necesario. En tal caso, adquiera una suscripción que admita el seguimiento de documentos o asuma esta limitación. Conviene considerar también el uso de las funciones de [registro de uso](../deploy-use/log-analyze-usage.md) del servicio Azure Rights Management (que proporcionan información sobre quién ha accedido a cada archivo y cuándo, por ejemplo) con el objeto de poder detectar posibles comportamientos sospechosos.<br /><br />Consulte la [lista de características](https://www.microsoft.com/cloud-platform/azure-information-protection-features) en el sitio de Azure Information Protection.|
 
 ### <a name="to-configure-the-custom-template"></a>Para configurar la plantilla personalizada
 
