@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: a60731bd-f78d-4f00-bb3e-354637b312ab
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 12f681ccfbcd7da2192df2be057f92d31a856bda
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 859ec4aa127b995ca9acb6409b8644a0c87d7ffd
+ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
 translationtype: HT
 ---
 # <a name="how-users-sign-up-for-rms-for-individuals"></a>Cómo se registran los usuarios a RMS para individuos
@@ -33,7 +33,7 @@ Para registrarse en esta cuenta gratuita, debe solicitarla en la [página de Mic
 
 3.  Haz clic en **Iniciar sesión**.
 
-    Microsoft usa su dirección de correo electrónico para comprobar si su organización ya tiene una [suscripción de pago a Azure Information Protection](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing) o una [suscripción a Office 365 que incluya protección de datos mediante Azure Rights Management](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf). Si ese es el caso, no necesita RMS para usuarios, por lo que iniciará sesión inmediatamente y se cancelará la suscripción de autoservicio de RMS para usuarios. Si no se encuentra una suscripción de pago, continuará con el paso siguiente.
+    Microsoft usa su dirección de correo electrónico para comprobar si su organización ya tiene una [suscripción de pago a Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) o una [suscripción a Office 365 que incluya protección de datos mediante Azure Rights Management](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf). Si ese es el caso, no necesita RMS para usuarios, por lo que iniciará sesión inmediatamente y se cancelará la suscripción de autoservicio de RMS para usuarios. Si no se encuentra una suscripción de pago, continuará con el paso siguiente.
 
 4.  Espere un mensaje de correo electrónico de confirmación, que se enviará a la dirección que haya suministrado. Lo enviará el equipo de Office 365 (support@email.microsoftonline.com), con el asunto **Finalizar la suscripción a Microsoft Azure Information Protection**.
 
@@ -83,7 +83,7 @@ A lo largo de este proceso, no hay cargos adicionales para la organización y no
 
     -   Registrar toda la actividad de cómo se ha usado Rights Management en su organización. Esta es una acción muy potente, ya que no solo puede supervisar qué archivos están protegidos y quién está accediendo a esos archivos protegidos, sino que también puede identificar comportamientos sospechosos potenciales procedentes de personas no autorizadas, que estén intentando acceder a los archivos protegidos. Para obtener más información, consulte [Registro y análisis del uso del servicio Azure Rights Management](../deploy-use/log-analyze-usage.md).
 
-    -   Proporcione a los usuarios la capacidad de realizar un seguimiento de sus documentos protegidos y revocarlos, si estas características son compatibles con su [suscripción](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features). Para más información, consulte [Realizar el seguimiento y revocar los documentos](../rms-client/client-track-revoke.md) en la [Guía del usuario de Azure Information Protection](../rms-client/client-user-guide.md).
+    -   Proporcione a los usuarios la capacidad de realizar un seguimiento de sus documentos protegidos y revocarlos, si estas características son compatibles con su [suscripción](https://www.microsoft.com/cloud-platform/azure-information-protection-features). Para más información, consulte [Realizar el seguimiento y revocar los documentos](../rms-client/client-track-revoke.md) en la [Guía del usuario de Azure Information Protection](../rms-client/client-user-guide.md).
 
     -   Implemente una solución "Traiga su propia clave" (BYOK) para que la clave de inquilino para Azure Rights Management se genere de forma local, de acuerdo con las políticas de TI y se transfiera de modo seguro a Microsoft mediante un módulo de seguridad de hardware (HSM). Para más información, vea [Planeamiento e implementación de su clave de inquilino de Azure Information Protection](../plan-design/plan-implement-tenant-key.md).
 

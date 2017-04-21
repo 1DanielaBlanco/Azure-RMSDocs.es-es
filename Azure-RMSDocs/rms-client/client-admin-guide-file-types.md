@@ -4,7 +4,7 @@ description: "Detalles técnicos sobre tipos de archivos, extensiones de nombres
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/15/2017
+ms.date: 04/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: fe75945793d28ed78b46f6b9a421bd7aa9ae3dfd
-ms.sourcegitcommit: d5ce1bce5e63b3e510033ff9d4d246dd3511ed7c
+ms.openlocfilehash: 84a0d335d0be97180c904182c98f6fa9ad46a0de
+ms.sourcegitcommit: 81b5c111627246a4094ef87da17d260f66ae985c
 translationtype: HT
 ---
 # <a name="file-types-supported-by-the-azure-information-protection-client"></a>Tipos de archivos compatibles con el cliente de Azure Information Protection
@@ -32,7 +32,7 @@ Utilice la siguiente información para comprobar los tipos de archivos compatibl
 
 ## <a name="file-types-supported-for-classification-only"></a>Tipos de archivos compatibles solo para clasificación
 
-Solo se admite la clasificación para los siguientes tipos de archivo. Otros tipos de archivo admiten la clasificación cuando también están protegidos.
+Solo se admite la clasificación para los siguientes tipos de archivo. Hay otros tipos de archivo que admiten la clasificación cuando también están protegidos. Para obtener más información, consulte la sección [Tipos de archivos compatibles para protección y clasificación](#supported-file-types-for-classification-and-protection).
 
 - **Formato de documento portátil de Adobe**: .pdf
 
@@ -62,17 +62,18 @@ El cliente de Azure Information Protection admite la protección en dos niveles 
 |Tipo de protección|Nativa|Genérico|
 |----------------------|----------|-----------|
 |Descripción|Para archivos de texto, imagen, Microsoft Office (Word, Excel, PowerPoint), archivos .pdf y otros tipos de archivo de aplicaciones compatibles con el servicio de Rights Management, la protección nativa ofrece un fuerte nivel de protección que incluye tanto cifrado como aplicación de derechos (permisos).|Para todas las demás aplicaciones y tipos de archivo, la protección genérica proporciona un nivel de protección que incluye encapsulación de archivos mediante el tipo de archivo .pfile, y autenticación para comprobar si un usuario está autorizado para abrir el archivo.|
-|Protección|Los archivos están completamente cifrados y la protección se aplica de las siguientes maneras:<br /><br />- Antes de presentar el contenido protegido, se debe autenticar correctamente a aquellas personas que reciben el archivo por correo electrónico o a las que se les concede acceso a él mediante permisos de archivo o recurso compartido.<br /><br />- Además, cuando el contenido se presenta en el visor de Azure Information Protection (en el caso de archivos de texto e imagen protegidos) o en la aplicación asociada (en el caso de todos los demás tipos de archivos admitidos), se aplican completamente los derechos de uso y la directiva definida por el propietario del contenido cuando se protegen los archivos.|La protección de los archivos se aplica de las siguientes formas:<br /><br />- Antes de presentar el contenido protegido, se debe autenticar correctamente a aquellas personas que están autorizadas para abrir el archivo o a las que se les proporciona acceso a él. Si la autorización da error, el archivo no se abre.<br /><br />- Se muestran los derechos de uso y la directiva establecida por el propietario del contenido para informar a los usuarios autorizados de la directiva de uso previsto.<br /><br />- Se produce el registro de auditoría de los usuarios autorizados a abrir y obtener acceso a los archivos, pero no se aplican derechos de uso por parte de las aplicaciones no admitidas.|
-|Valor predeterminado para tipos de archivo|Es el nivel predeterminado de protección para los siguientes tipos de archivo:<br /><br />- Archivos de texto e imagen<br /><br />- Archivos de Microsoft Office (Word, Excel, PowerPoint)<br /><br />- Formato de documento portátil (.pdf)<br /><br />Para más información, consulte la sección siguiente, [Tipos de archivo y extensiones de nombre de archivo admitidos](#supported-file-types-for-protection-and-their-file-name-extensions).|Se trata de la protección predeterminada para todos los demás tipos de archivo (por ejemplo, .vsdx, .rtf, etc.) que no son compatibles con la protección completa.|
+|Protección|La protección de los archivos se aplica de las siguientes formas:<br /><br />- Antes de presentar el contenido protegido, se debe autenticar correctamente a aquellas personas que reciben el archivo por correo electrónico o a las que se les concede acceso a él mediante permisos de archivo o recurso compartido.<br /><br />- Además, cuando el contenido se presenta en el visor de Azure Information Protection (en el caso de archivos de texto e imagen protegidos) o en la aplicación asociada (en el caso de todos los demás tipos de archivos admitidos), se aplican completamente los derechos de uso y la directiva definida por el propietario del contenido cuando se protegen los archivos.|La protección de los archivos se aplica de las siguientes formas:<br /><br />- Antes de presentar el contenido protegido, se debe autenticar correctamente a aquellas personas que están autorizadas para abrir el archivo o a las que se les proporciona acceso a él. Si la autorización da error, el archivo no se abre.<br /><br />- Se muestran los derechos de uso y la directiva establecida por el propietario del contenido para informar a los usuarios autorizados de la directiva de uso previsto.<br /><br />- Se genera el registro de auditoría de los usuarios autorizados que abren los archivos y acceden a ellos. Sin embargo, no se aplican derechos de uso.|
+|Valor predeterminado para tipos de archivo|Es el nivel predeterminado de protección para los siguientes tipos de archivo:<br /><br />- Archivos de texto e imagen<br /><br />- Archivos de Microsoft Office (Word, Excel, PowerPoint)<br /><br />- Formato de documento portátil (.pdf)<br /><br />Para obtener más información, consulte la sección siguiente, [Tipos de archivos compatibles para protección y clasificación](#supported-file-types-for-classification-and-protection).|Se trata de la protección predeterminada para todos los demás tipos de archivo (por ejemplo, .vsdx, .rtf, etc.) que no son compatibles con la protección nativa.|
 
 Puede cambiar el nivel de protección predeterminado que el cliente de Azure Information Protection aplica. Puede cambiar el nivel predeterminado de nativo a genérico, de genérico a nativo, e incluso impedir que el cliente de Azure Information Protection aplique protección. Para más información, consulte la sección [Cambio del nivel de protección predeterminado de los archivos](#changing-the-default-protection-level-of-files) de este artículo.
 
 La protección de los datos se puede aplicar automáticamente cuando un usuario selecciona una etiqueta que el administrador ha configurado, o los usuarios pueden especificar su propia configuración personalizada de protección mediante [niveles de permiso](../deploy-use/configure-usage-rights.md#rights-included-in-permissions-levels). 
 
-### <a name="supported-file-types-for-protection-and-their-file-name-extensions"></a>Tipos de archivos compatibles para protección y sus extensiones de nombre de archivo
-En la tabla siguiente se enumeran los tipos de archivos que el cliente de Azure Information Protection admite de forma nativa. En estos tipos de archivo, la extensión de nombre de archivo original se cambia cuando se aplica el archivo nativo protegido, y estos archivos se vuelven de solo lectura.
+### <a name="supported-file-types-for-classification-and-protection"></a>Tipos de archivos compatibles para protección y clasificación
 
-En el caso de los archivos que están protegidos de manera genérica, la extensión del nombre de archivo original siempre se cambia a .pfile.
+En la tabla siguiente se enumera un subconjunto de tipos de archivos que el cliente de Azure Information Protection admite de forma nativa y que se pueden clasificar. 
+
+Estos tipos de archivo se identifican por separado porque, cuando se protegen de forma nativa, se cambia la extensión del nombre del archivo original y pasan a ser de solo lectura. Tenga en cuenta que, cuando los archivos se protegen de manera genérica, la extensión del nombre de archivo original siempre se cambia a .pfile.
 
 > [!WARNING]
 > Si dispone de firewalls, servidores proxy web o software de seguridad que inspeccionan o realizan acciones en función de las extensiones de nombre de archivo, puede que tenga que volver a configurar estos para admitir las nuevas extensiones de nombre de archivo.
@@ -94,7 +95,9 @@ En el caso de los archivos que están protegidos de manera genérica, la extensi
 |.jt|.pjt|
 
 
-En la tabla siguiente se enumeran los tipos de archivos que el cliente de Azure Information Protection admite de forma nativa para aplicaciones de Microsoft Office. En estos archivos, la extensión de nombre de archivo permanece igual después de que el archivo se ha protegido con el servicio de Rights Management.
+En la tabla siguiente se enumeran los tipos de archivos restantes que el cliente de Azure Information Protection admite de forma nativa y que se pueden clasificar. Los reconocerá, ya que se trata de tipos de archivos de las aplicaciones de Microsoft Office. 
+
+En estos archivos, la extensión de nombre de archivo permanece igual después de que el archivo se ha protegido con el servicio de Rights Management.
 
 |Tipos de archivo admitidos por Office|Tipos de archivo admitidos por Office|
 |----------------------------------|----------------------------------|
@@ -105,9 +108,9 @@ Puede cambiar la manera en que el cliente de Azure Information Protection proteg
 
 Puede que quiera hacer esto por los siguientes motivos:
 
--   Para asegurarse de que todos los usuarios pueden abrir el archivo si no tienen una aplicación que admite la protección nativa.
+- Para asegurarse de que todos los usuarios pueden abrir el archivo si no tienen una aplicación que admite la protección nativa.
 
--   Para tener en cuenta sistemas de seguridad que realizan acciones sobre los archivos por su extensión de nombre de archivo y que se pueden reconfigurar para que tengan en cuenta la extensión de nombre de archivo .pfile pero no para admitir varias extensiones de nombre de archivo para la protección nativa.
+- Para tener en cuenta sistemas de seguridad que realizan acciones sobre los archivos por su extensión de nombre de archivo y que se pueden reconfigurar para que tengan en cuenta la extensión de nombre de archivo .pfile pero no para admitir varias extensiones de nombre de archivo para la protección nativa.
 
 De modo similar, puede forzar que el cliente de Azure Information Protection aplique protección nativa a archivos a los que, de forma predeterminada, se les aplicaría protección genérica. Esto podría resultar adecuados si tiene una aplicación que admite las API de RMS, por ejemplo, una aplicación de línea de negocio que han escrito sus desarrolladores internos o una aplicación adquirida a un fabricante de software independiente (ISV).
 
@@ -115,23 +118,23 @@ También puede forzar a que el cliente de Azure Information Protection boquee la
 
 Para configurar el cliente de Azure Information Protection para aplicar protección genérica a todos los archivos a los que, de forma predeterminada, se les aplicaría protección nativa, realice las siguientes modificaciones en el Registro. Tenga en cuenta que si la clave FileProtection no existe, debe crearla manualmente.
 
-1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection**: cree una nueva clave denominada *.
+1. **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection**: cree una nueva clave denominada *.
 
     Este valor indica archivos con cualquier extensión de nombre de archivo.
 
-2.  En la clave recién agregada de HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\\\*, cree un nuevo valor de cadena (REG_SZ) denominado **Encryption** que tenga el valor de datos de **Pfile**.
+2. En la clave recién agregada de HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\\\*, cree un nuevo valor de cadena (REG_SZ) denominado **Encryption** que tenga el valor de datos de **Pfile**.
 
     Esta configuración permite que el cliente de Azure Information Protection aplique protección genérica.
 
 Estas dos configuraciones permiten que el cliente de Azure Information Protection aplique protección genérica a todos los archivos que tiene una extensión de nombre de archivo. Si éste es su objetivo, no es necesario configurar nada más. Sin embargo, puede definir excepciones para tipos de archivo específicos para que sigan estando protegidos de forma nativa. Para ello, debe realizar tres modificaciones adicionales en el Registro para cada tipo de archivo:
 
-1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection**: agregue una nueva clave con el nombre de la extensión de nombre de archivo (sin el punto anterior).
+1. **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection**: agregue una nueva clave con el nombre de la extensión de nombre de archivo (sin el punto anterior).
 
     Por ejemplo, para los archivos que tienen una extensión .docx, cree una clave denominada **DOCX**.
 
-2.  En la clave de tipo de archivo recién creada (por ejemplo, **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\DOCX**), cree un nuevo valor DWORD denominado **AllowPFILEEncryption** que tenga un valor de **0**.
+2. En la clave de tipo de archivo recién creada (por ejemplo, **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\DOCX**), cree un nuevo valor DWORD denominado **AllowPFILEEncryption** que tenga un valor de **0**.
 
-3.  En la clave de tipo de archivo recién agregada (por ejemplo, **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\DOCX**), cree un nuevo valor de cadena denominado **Encryption** que tenga un valor de **Native**.
+3. En la clave de tipo de archivo recién agregada (por ejemplo, **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\DOCX**), cree un nuevo valor de cadena denominado **Encryption** que tenga un valor de **Native**.
 
 Como resultado de esta configuración, todos los archivos están protegidos genéricamente, excepto los archivos que tienen una extensión de nombre de archivo .docx, que están protegidos de forma nativa por el cliente de Azure Information Protection.
 
@@ -139,11 +142,11 @@ Repita estos tres pasos con otros tipos de archivos que quiera definir como exce
 
 Puede realizar modificaciones parecidas en el Registro para otras situaciones cambiando el valor de la cadena **Encryption** que admite los siguientes valores:
 
--   **Pfile**: Protección genérica
+- **Pfile**: Protección genérica
 
--   **Native**: Protección nativa
+- **Native**: Protección nativa
 
--   **Off**: Bloquear protección
+- **Off**: Bloquear protección
 
 Para más información, vea [Configuración de la API de archivo](../develop/file-api-configuration.md) en la guía del desarrollador. En esta documentación para desarrolladores, se hace referencia a la protección genérica como "PFile". 
 
@@ -158,8 +161,6 @@ Para ayudar a impedir que los usuarios modifiquen los archivos que son fundament
     - Archivos de programa (\Archivos de programa y \Archivos de programa (x86))
     - \ProgramData 
     - \AppData (de todos los usuarios)
-
-
 
 
 ## <a name="next-steps"></a>Pasos siguientes

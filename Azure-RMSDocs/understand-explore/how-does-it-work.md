@@ -4,7 +4,7 @@ description: "Analice cómo funciona Azure RMS, los controles criptográficos qu
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/06/2017
+ms.date: 04/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,19 +12,19 @@ ms.technology: techgroup-identity
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 1dcdb7017be2e2bdfbefcfaa348be977ed67f8c0
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: a5f189ab5ad1df43b14fa0b6d23bf4f0eef88142
+ms.sourcegitcommit: d44105d4d45fabf0f1d90765304e4b43dd97c0fc
 translationtype: HT
 ---
 # <a name="how-does-azure-rms-work-under-the-hood"></a>¿Cómo funciona Azure RMS? En segundo plano
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
-Una cuestión importante que hay que comprender acerca de cómo funciona Azure RMS es que el servicio de Rights Management (y Microsoft) no ve ni almacena sus datos como parte del proceso de protección de la información. La información que protege nunca se envía a Azure, ni se almacena allí, a menos que la almacene de manera explícita en Azure o use otro servicio en la nube que la almacene en Azure. Azure RMS simplemente hace que los datos de un documento sean ilegibles para cualquiera que no sea un usuario y servicio autorizado:
+Una cuestión importante que hay que comprender sobre el funcionamiento de Azure RMS es que el servicio de Rights Management (y Microsoft) no ve ni almacena sus datos como parte del proceso de protección de la información. La información que protege nunca se envía a Azure, ni se almacena allí, a menos que la almacene de manera explícita en Azure o use otro servicio en la nube que la almacene en Azure. Azure RMS simplemente hace que los datos de un documento sean ilegibles para cualquiera que no sea un usuario y servicio autorizado:
 
--   Los datos se cifran en el nivel de aplicación e incluyen una directiva que define el uso autorizado para ese documento.
+- Los datos se cifran en el nivel de aplicación e incluyen una directiva que define el uso autorizado para ese documento.
 
--   Cuando se usa un documento protegido por un usuario legítimo o se procesa por un servicio autorizado, se descifran los datos del documento y se aplican derechos definidos en la directiva.
+- Cuando se usa un documento protegido por un usuario legítimo o se procesa por un servicio autorizado, se descifran los datos del documento y se aplican derechos definidos en la directiva.
 
 En un nivel alto, puede ver la manera en que funciona este proceso en la imagen siguiente. Se protege un documento que contiene la fórmula secreta y luego lo abre correctamente un usuario o servicio autorizado. El documento se protege con una clave de contenido (la clave verde de esta imagen). Es única para cada documento y se coloca en el encabezado de archivo donde se protege mediante la clave raíz de inquilino de Azure Information Protection (la clave roja de esta imagen). Su clave de inquilino se puede generar y administrar por Microsoft o bien, puede generar y administrar su propia clave de inquilino.
 
@@ -48,11 +48,11 @@ Aunque no tenga que saber usted mismo cómo funciona RMS, puede que se le pregun
 
 ###### <a name="footnote-1"></a>Nota al pie 1 
 
-El cliente de Azure Information Protection y la aplicación Rights Management sharing usan&256; bits para la protección genérica y la protección nativa cuando el archivo tiene una extensión de nombre de archivo .ppdf o es un archivo de imagen o texto protegido (como .ptxt o .pjpg).
+El cliente de Azure Information Protection y la aplicación Rights Management sharing usan 256 bits para la protección genérica y la protección nativa cuando el archivo tiene una extensión de nombre de archivo .ppdf o es un archivo de imagen o texto protegido (como .ptxt o .pjpg).
 
 ###### <a name="footnote-2"></a>Nota al pie 2
 
-La longitud de la clave es de&2048; bits cuando el servicio Azure Rights Management está activado. Una longitud de clave de&1024; bits es compatible con los siguientes escenarios opcionales:
+La longitud de la clave es de 2048 bits cuando el servicio Azure Rights Management está activado. Una longitud de clave de 1024 bits es compatible con los siguientes escenarios opcionales:
 
 - Durante una migración desde el entorno local si el clúster de AD RMS se ejecuta en el modo criptográfico 1 y no se puede actualizar al modo criptográfico 2.
 
@@ -68,7 +68,7 @@ La clave de contenido tiene la protección de la clave RSA de la organización (
 
 Esta clave de inquilino tiene la protección de los servicios en línea de Microsoft, en un entorno muy controlado y bajo una estrecha supervisión. Al usar una clave de inquilino administrada por el cliente (BYOK), esta seguridad mejora gracias al uso de una matriz de módulos de seguridad de hardware (HSM) punteros en cada región de Azure, sin posibilidad de extraerse ni compartirse las claves bajo ninguna circunstancia. Para obtener más información sobre la clave de inquilino y BYOK, vea [Planeamiento e implementación de su clave de inquilino de Azure Information Protection](../plan-design/plan-implement-tenant-key.md).
 
-Las licencias y los certificados que se envían a un dispositivo Windows están protegidos con la clave privada de dispositivo del cliente, que se crea la primera vez que un usuario del dispositivo usa Azure RMS. Esta clave privada, a su vez, está protegida con DPAPI en el cliente, que protege estos secretos con una clave derivada de la contraseña del usuario. En dispositivos móviles, las claves se usan solo una vez, de modo que, como no se almacenan en los clientes, no es necesario proteger estas claves en el dispositivo. 
+Las licencias y los certificados que se envían a un dispositivo Windows están protegidos con la clave privada de dispositivo del cliente, que se crea la primera vez que un usuario del dispositivo usa Azure RMS. Esta clave privada, a su vez, está protegida con DPAPI en el cliente, lo cual protege estos secretos con una clave derivada de la contraseña del usuario. En dispositivos móviles, las claves se usan solo una vez, de modo que, como no se almacenan en los clientes, no es necesario proteger estas claves en el dispositivo. 
 
 
 ## <a name="walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption"></a>Tutorial de cómo funciona Azure RMS: Primer uso, protección de contenido, consumo de contenido
@@ -103,7 +103,9 @@ Cuando un usuario protege un documento, el cliente de RMS lleva a cabo las sigui
 
 ![Protección del documento de RMS, paso 2: se crea una directiva](../media/AzRMS_documentprotection2.png)
 
-**Qué ocurre en el paso 2**: El cliente de RMS crea después un certificado que incluye una directiva para el documento, basándose en una plantilla o especificando derechos concretos para el documento. Esta directiva incluye los derechos para diferentes usuarios o grupos y otras restricciones, como una fecha de expiración.
+**Qué ocurre en el paso 2**: El cliente de RMS crea a continuación un certificado que incluye una directiva para el documento que contiene a su vez los [derechos de uso](../deploy-use/configure-usage-rights.md) para usuarios o grupos y otras restricciones, como una fecha de expiración. Estas opciones se pueden definir en una plantilla que un administrador haya configurado anteriormente, o bien especificarse al proteger el contenido (a veces se denomina “directiva ad-hoc”).   
+
+El atributo que se usa para identificar los usuarios y grupos seleccionados es el atributo proxyAddress de Azure AD, que almacena todas las direcciones de correo electrónico de un usuario o grupo.
 
 El cliente de RMS usa a continuación la clave de la organización que se obtuvo cuando se inicializó el entorno del usuario y usa esta clave para cifrar la directiva y la clave de contenido simétrico. El cliente de RMS también firma la directiva con el certificado del usuario que se obtuvo cuando se inicializó el entorno del usuario.
 
@@ -118,7 +120,7 @@ Cuando un usuario quiere consumir un documento protegido, el cliente de RMS se i
 
 ![Consumo de documento de RMS, paso 1: el usuario se autentica y obtiene la lista de derechos](../media/AzRMS_documentconsumption1.png)
 
-**Qué ocurre en el paso 1**: el usuario autenticado envía la directiva del documento y los certificados del usuario al servicio Azure Rights Management. El servicio descifra y evalúa la directiva y crea una lista de derechos (de haberlos) que el usuario tiene para el documento.
+**Qué ocurre en el paso 1**: el usuario autenticado envía la directiva del documento y los certificados del usuario al servicio Azure Rights Management. El servicio descifra y evalúa la directiva y crea una lista de derechos (de haberlos) que el usuario tiene para el documento. Para identificar al usuario, se usa el atributo proxyAttribute de Azure AD correspondiente la cuenta del usuario y a los grupos a los que pertenece. Por motivos de rendimiento, la pertenencia a grupos se almacena [en caché](../plan-design/prepare.md#group-membership-caching).
 
 ![Consumo de documento de RMS, paso 2: la licencia de uso se devuelve al cliente](../media/AzRMS_documentconsumption2.png)
 

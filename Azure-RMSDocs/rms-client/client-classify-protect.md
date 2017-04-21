@@ -4,7 +4,7 @@ description: "Instrucciones de cómo clasificar y proteger sus documentos y corr
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/16/2017
+ms.date: 04/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: edc8c7227a0f2b493a64f25a26a64aef3a314e39
-ms.sourcegitcommit: df8492aa3687974dc6105dc415c2d959f32e6630
+ms.openlocfilehash: f461b349440043bcf5d8624731eda86968194462
+ms.sourcegitcommit: 52b7502e7049358f9fc0a418625bb460bb81479f
 translationtype: HT
 ---
 # <a name="classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Clasificación y protección de archivos o correos electrónicos mediante Azure Information Protection
@@ -133,7 +133,7 @@ La guía para administradores contiene una lista completa de los tipos de archiv
 
     - **Seleccionar permisos**: seleccione el nivel de acceso que quiere que tengan las personas al proteger los archivos seleccionados.
     
-    - **Seleccionar usuarios**: especifique las personas que deben tener los permisos seleccionados para los archivos. En el caso de personas y grupos de su organización, puede usar la libreta de direcciones para buscarlos y seleccionarlos. Cuando las personas proceden de otra organización, debe especificar su dirección de correo electrónico completa. Asegúrese de usar una dirección de correo de empresa ya que las direcciones de correo electrónico personales no se admiten actualmente.
+    - **Seleccionar usuarios**: especifique las personas que deben tener los permisos seleccionados para los archivos. Escriba sus direcciones de correo electrónico completas, una dirección de correo electrónico de grupo o un nombre de dominio de la organización para todos los usuarios de esa organización. Tenga en cuenta que actualmente no se admiten direcciones de correo electrónico personales.
         
     - **Expire access** (Caducar acceso): seleccione esta opción solo para archivos dependientes del tiempo, de modo que las personas que ha especificado no puedan abrir los archivos seleccionados después de una fecha especificada. Aún podrá abrir el archivo original, pero después de medianoche (su zona horaria actual), el día seleccionado, las personas que haya especificado no podrán abrir el archivo.
 
