@@ -4,7 +4,7 @@ description: "Instrucciones para migrar la implementación de Active Directory R
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/06/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 89ccb599fe21c409d36b9d0ab28e274e6aedaf1e
-ms.sourcegitcommit: 384461f0e3fccd73cd7eda3229b02e51099538d4
+ms.openlocfilehash: b1d643cdb28f46c03e9c0c2707d44f9ff9eedcb3
+ms.sourcegitcommit: 237ce3a0cc4921da5a08ed5753e6491403298194
 translationtype: HT
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>Migración desde AD RMS a Azure Information Protection
@@ -119,10 +119,6 @@ Para confirmar el modo criptográfico de AD RMS:
 
 -   Si tiene software y clientes que no son compatibles con el servicio Rights Management usado por Azure Information Protection, no podrán proteger o usar contenido protegido por Azure Rights Management. Asegúrese de consultar las secciones de clientes y aplicaciones compatibles de [Requisitos para Azure Rights Management](../get-started/requirements-azure-rms.md).
 
--   Si importa la clave de local en Azure Information Protection como archivada (sin establecer el TPD como activo durante el proceso de importación) y migra los usuarios en lotes en una migración por fases, el nuevo contenido protegido por los usuarios migrados no será accesible para los usuarios que permanecen en AD RMS. En este escenario, siempre que sea posible, mantenga un tiempo de migración corto y migre los usuarios en lotes lógicos, de forma que si colaboran entre sí se miren juntos.
-
-    Esta limitación no se aplica cuando se establece el TPD como activo durante el proceso de importación, porque todos los usuarios protegerán el contenido con la misma clave. Se recomienda esta configuración, ya que le permite migrar todos los usuarios de forma independiente y a su propio ritmo.
-
 -   Si su implementación de AD RMS está configurada para colaborar con asociados externos (por ejemplo, con federación o dominios de usuario de confianza), estos también necesitarán realizar la migración a Azure Information Protection al mismo tiempo o lo antes posible después de completar la migración. Para seguir teniendo acceso al contenido protegido anteriormente por su organización con Azure Information Protection, necesitarán realizar cambios en la configuración del cliente similares a los que realice el usuario y que se incluyen en este documento.
 
     Debido a las posibles variaciones de configuración de los asociados, las instrucciones exactas para este cambio de configuración están fuera del ámbito de este documento. En cambio, vea la siguiente sección para obtener una guía de planeación y, para obtener ayuda adicional, [póngase en contacto con el soporte técnico de Microsoft](../get-started/information-support.md#support-options-and-community-resources).
@@ -165,7 +161,7 @@ Los pasos de migración se pueden dividir en 5 fases que se pueden realizar en m
 
 - **Paso 4. Exportar los datos de configuración de AD RMS e importarlos en Azure Information Protection**
 
-    Exporte los datos de configuración (claves, plantillas y direcciones URL) de AD RMS a un archivo XML y, después, suba ese archivo al servicio Azure Rights Management de Azure Information Protection con el cmdlet Import-AadrmTpd de PowerShell. Podrían ser necesarios pasos adicionales, dependiendo de la configuración de claves de AD RMS:
+    Exporte los datos de configuración (claves, plantillas y direcciones URL) de AD RMS a un archivo XML y, después, suba ese archivo al servicio Azure Rights Management de Azure Information Protection con el cmdlet Import-AadrmTpd de PowerShell. A continuación, identifique qué clave de certificado de emisor de licencias de servidor (SLC) importada desea utilizar como la clave de inquilino para el servicio Azure Rights Management. Podrían ser necesarios pasos adicionales, dependiendo de la configuración de claves de AD RMS:
 
     - **Migración entre claves protegidas por software**:
 
@@ -181,7 +177,7 @@ Los pasos de migración se pueden dividir en 5 fases que se pueden realizar en m
 
 - **Paso 5. Activación del servicio de Azure Rights Management**
 
-    Si es posible, realice este paso después del proceso de importación y no antes.
+    Si es posible, realice este paso después del proceso de importación y no antes. Si el servicio se activó antes de la importación, se requieren pasos adicionales.
 
 - **Paso 6. Configurar las plantillas importadas**
 

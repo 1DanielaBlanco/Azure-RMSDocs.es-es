@@ -4,7 +4,7 @@ description: "Fase 2 de la migración desde AD RMS a Azure Information Protectio
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/06/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a2ef28f2db2a22a766d658294a7d68b0dc6eebb2
-ms.sourcegitcommit: 89e13f6be15a96293e0af0b2529a2e39563a63b6
+ms.openlocfilehash: f93458b5b2788aa2c7d780a9d0d2939e16221559
+ms.sourcegitcommit: 237ce3a0cc4921da5a08ed5753e6491403298194
 translationtype: HT
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>Fase 2 de la migración: configuración del lado servidor para AD RMS
@@ -52,7 +52,7 @@ Siga este procedimiento en todos los clústeres de AD RMS, para todos los domini
 
 Cuando haya exportado todos los dominios de publicación de confianza, estará preparado para empezar el procedimiento para importar estos datos en Azure Information Protection.
 
-Tenga en cuenta que los dominios de publicación de confianza incluyen las claves para descifrar los archivos protegidos con anterioridad, por lo que es importante que exporte (y después importe en Azure) todos los dominios de publicación de confianza y no solo el que está actualmente activo.
+Tenga en cuenta que los dominios de publicación de confianza incluyen las claves del certificado emisor de licencias de servidor (SLC) para descifrar los archivos protegidos con anterioridad, por lo que es importante que exporte (y después importe en Azure) todos los dominios de publicación de confianza y no solo el que está actualmente activo.
 
 Por ejemplo, tendrá varios dominios de publicación de confianza si ha actualizado sus servidores de AD RMS desde el modo criptográfico 1 al modo criptográfico 2. Si no exporta e importa el dominio de publicación de confianza que contiene la clave archivada que utilizó el modo criptográfico 1, al final de la migración, los usuarios no podrán abrir el contenido protegido con la clave del modo criptográfico 1.
 

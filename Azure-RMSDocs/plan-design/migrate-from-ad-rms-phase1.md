@@ -4,7 +4,7 @@ description: "Fase 1 de la migración desde AD RMS a Azure Information Protectio
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/06/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: d954d3ee-3c48-4241-aecf-01f4c75fa62c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 42cdcb888656df1b623c34775bd3bfe20daee952
-ms.sourcegitcommit: 89e13f6be15a96293e0af0b2529a2e39563a63b6
+ms.openlocfilehash: adb5ad1f599c5996044ad2fce0e1e5889d81c81b
+ms.sourcegitcommit: 237ce3a0cc4921da5a08ed5753e6491403298194
 translationtype: HT
 ---
 # <a name="migration-phase-1---preparation"></a>Fase 1 de la migración: preparación
@@ -30,7 +30,7 @@ Vaya al Centro de descarga de Microsoft y descargue [Azure Rights Management Adm
 Instale la herramienta. Para obtener instrucciones, vea [Instalación de Windows PowerShell para Azure Rights Management](../deploy-use/install-powershell.md).
 
 > [!NOTE]
-> Si anteriormente ya ha descargado este módulo de Windows PowerShell, ejecute el comando siguiente para comprobar que su número de versión sea como mínimo 2.5.0.0: `(Get-Module aadrm -ListAvailable).Version`
+> Si anteriormente ya ha descargado este módulo de Windows PowerShell, ejecute el comando siguiente para comprobar que su número de versión sea como mínimo **2.9.0.0**: `(Get-Module aadrm -ListAvailable).Version`
 
 Para completar algunas de las instrucciones de migración, deberá conocer la dirección URL de servicio de Azure Rights Management de su inquilino, de modo que la pueda sustituir cuando vea referencias a la *\<dirección URL del inquilino\>*. La dirección URL de servicio de Azure Rights Management tiene el formato siguiente: **{GUID}.rms.[Región].aadrm.com**.
 
