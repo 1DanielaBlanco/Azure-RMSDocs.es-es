@@ -4,7 +4,7 @@ description: "Instrucciones para implementar el conector de RMS, que ofrece prot
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 90e7e33f-9ecc-497b-89c5-09205ffc5066
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d6fad45bb6a138fee439019b4ae454feb3fe752f
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 04073023841e95abacc0258e061f4742069fbfb0
+ms.sourcegitcommit: 3ff6c072a228994308402778c493727cc682c6b7
 translationtype: HT
 ---
 # <a name="deploying-the-azure-rights-management-connector"></a>Implementación del conector de Azure Rights Management
@@ -22,8 +22,6 @@ translationtype: HT
 
 Utilice esta información para obtener información sobre el conector de Azure Rights Management y, a continuación, cómo implementarlo correctamente para su organización. Este conector ofrece protección de datos para las implementaciones locales existentes que usan Microsoft **Exchange Server**, **SharePoint Server** o servidores de archivo que ejecutan Windows Server y la **Infraestructura de clasificación de archivos** (FCI).
 
-> [!TIP]
-> Para ver un escenario de ejemplo de alto nivel con capturas de pantalla, consulte la sección [Automatically protecting files on file servers running Windows Server and File Classification Infrastructure](../understand-explore/what-admins-users-see.md#automatically-protecting-files-on-file-servers-running-windows-server-and-file-classification-infrastructure) (Protección de archivos automática en servidores de archivos que ejecutan Windows Server y la infraestructura de clasificación de archivos) del artículo [Azure RMS in action](../understand-explore/what-admins-users-see.md) (Azure RMS en acción).
 
 ## <a name="overview-of-the-microsoft-rights-management-connector"></a>Visión general del conector Rights Management de Microsoft
 El conector Rights Management (RMS) de Microsoft le permite habilitar rápidamente servidores locales existentes para usar su funcionalidad de Information Rights Management (IRM) con el servicio Rights Management de Microsoft basado en la nube (Azure RMS). Con esta funcionalidad, los TI y los usuarios pueden proteger fácilmente documentos e imágenes tanto dentro como fuera de la organización, sin tener que instalar más infraestructuras o establecer relaciones de confianza con otras organizaciones. 

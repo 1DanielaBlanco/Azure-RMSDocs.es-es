@@ -4,7 +4,7 @@ description: "Azure Rights Management (Azure RMS) es la tecnología de protecci�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/07/2017
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: aeeebcd7-6646-4405-addf-ee1cc74df5df
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 53712ee69ac7ab54feb3036ada4eb81383caf786
-ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
+ms.openlocfilehash: 61b549c38e3e86bc686747adb5f9ebfd1851f446
+ms.sourcegitcommit: 3ff6c072a228994308402778c493727cc682c6b7
 translationtype: HT
 ---
 # <a name="what-is-azure-rights-management"></a>¿Qué es Azure Rights Management?
@@ -42,11 +42,7 @@ Para obtener más información acerca de este servicio de protección de datos d
 
 -   [¿Qué problemas resuelve Azure RMS?](azure-rms-problems-it-solves.md)
 
--   [Azure RMS en acción: qué ven los administradores y los usuarios](what-admins-users-see.md)
-
 -   [¿Cómo funciona Azure RMS? En segundo plano](how-does-it-work.md)
-
-
 
 Si quiere profundizar e intentar proteger los documentos usted mismo, consulte el [Tutorial de inicio rápido de Azure Information Protection](../get-started/infoprotect-quick-start-tutorial.md). En este tutorial también se le solicita que proteja un documento cuando se detecta información confidencial. También incluye la protección de un documento que comparte por correo electrónico, del cual, a continuación, puede realizar un seguimiento para ver cómo se usa y, si fuera necesario, revocar el acceso al mismo.
 
