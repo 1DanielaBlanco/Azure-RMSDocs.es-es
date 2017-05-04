@@ -4,14 +4,14 @@ description: "Puede proteger sus documentos y mensajes de correo electrónico m�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/27/2017
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: 696d744ae21d8957225a24d39547493515b63d76
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 608fa9fe48667c1419736243e5c069b48828ff1b
+ms.sourcegitcommit: 2358f76f9a039daff7d70ea68967a45362d3da35
 translationtype: HT
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Configuración de una etiqueta para la protección de Rights Management
@@ -50,7 +50,7 @@ No es necesario que Exchange esté configurado para Information Rights Managemen
 
 ## <a name="to-configure-a-label-for-rights-management-protection"></a>Para configurar una etiqueta para la protección de Rights Management
 
-1. Si aún no lo ha hecho, abra una nueva ventana del explorador e inicie sesión en [Azure Portal](https://portal.azure.com)como administrador global y, después, navegue hasta la hoja **Azure Information Protection**. 
+1. Si aún no lo ha hecho, abra una nueva ventana del explorador e inicie sesión en [Azure Portal](https://portal.azure.com) como administrador de seguridad o administrador global y, después, navegue hasta la hoja **Azure Information Protection**. 
 
     Por ejemplo, en el menú del centro, haga clic en **Más servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
@@ -78,9 +78,13 @@ No es necesario que Exchange esté configurado para Information Rights Managemen
     
     En la mayoría de los casos, seleccionará **Azure RMS** para la configuración de permisos. No seleccione **HYOK (AD RMS)** a menos que haya leído y comprendido los requisitos previos y restricciones que acompañan a esta configuración "*mantenga su propia clave*" (HYOK). Para obtener más información, consulte [Requisitos y restricciones de Mantenga su propia clave (HYOK) para la protección de AD RMS](configure-adrms-restrictions.md). Para continuar con la configuración de Hold your own key (HYOK, Mantenga su propia clave) (AD RMS), vaya al paso 9.
     
-7. Seleccione **No reenviar** si quiere establecer esta opción de Outlook para correos electrónicos, o bien **Seleccionar plantilla**. 
+7. Seleccione **No reenviar** si quiere establecer esta opción de Outlook para los mensajes de correo, **Seleccionar una plantilla predefinida** para usar una de las plantillas predeterminadas o una plantilla personalizada que haya configurado, o elija **Permisos personalizados (versión preliminar)** para definir la nueva configuración de protección en este portal. 
     
-8. Si ha seleccionado **Seleccionar plantilla** para **Azure RMS**, haga clic en el cuadro desplegable y seleccione la [plantilla](../deploy-use/configure-custom-templates.md) que quiere usar para proteger documentos y correos electrónicos con esta etiqueta.
+    Tenga en cuenta que la opción **Permisos personalizados (versión preliminar)** contiene la mayoría de las opciones de configuración que actualmente están en el Portal de Azure clásico. Además, se pueden agregar fácilmente todos los usuarios de la organización y especificar direcciones de correo externas para grupos o usuarios individuales, o para todos los usuarios de otra organización cuando se especifica un nombre de dominio. 
+    
+    Para más información sobre esta configuración de versión preliminar, vea la entrada de blog [Azure Information Protection unified administration now in Preview](https://blogs.technet.microsoft.com/enterprisemobility/2017/04/26/azure-information-protection-unified-administration-now-in-preview/) (Administración unificada de Azure Information Protection ahora en versión preliminar). Para más información sobre los permisos que se pueden seleccionar, vea [Configuración de los derechos de uso para Azure Rights Management](configure-usage-rights.md).
+    
+8. Si ha seleccionado **Seleccionar una plantilla predefinida** para **Azure RMS**, haga clic en el cuadro desplegable y seleccione la [plantilla](../deploy-use/configure-custom-templates.md) que quiere usar para proteger documentos y mensajes de correo con esta etiqueta.
     
     Si selecciona una **plantilla de departamento** o si configura los [controles de incorporación](../deploy-use/activate-service.md#configuring-onboarding-controls-for-a-phased-deployment):
     

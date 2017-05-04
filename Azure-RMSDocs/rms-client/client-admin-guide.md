@@ -4,7 +4,7 @@ description: "Instrucciones e información para administradores de una red empre
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/07/2017
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: d442a9540243cd020b885f7dc2c13d999bbad868
-ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
+ms.openlocfilehash: 74abbe0db07a155afe500388810945a3ff5a35a5
+ms.sourcegitcommit: 3ff6c072a228994308402778c493727cc682c6b7
 translationtype: HT
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Guía para administradores del cliente de Azure Information Protection
@@ -199,7 +199,7 @@ Utilice el valor **Conectado como** para confirmar que el nombre de usuario most
 
 Si necesita iniciar sesión como un usuario diferente al que se muestra, consulte la sección [Inicio de sesión como un usuario diferente](#sign-in-as-a-different-user) en esta página.
 
-**Última conexión** muestra cuándo el cliente se conectó por última vez al servicio de Azure Information Protection de su organización y se puede utilizar con la fecha y hora de la opción **La directiva de Information Protection se instaló el día** para confirmar cuándo se instaló o actualizó por última vez la directiva de Azure Information Protection. Cuando el cliente se conecta al servicio, se descarga automáticamente la directiva más reciente si encuentra cambios con respecto a su directiva actual, y también cada 24 horas. Si ha realizado cambios en la directiva con posterioridad al tiempo mostrado, cierre y vuelva a abrir la aplicación de Office.
+**Última conexión** muestra cuándo el cliente se conectó por última vez al servicio de Azure Information Protection de su organización y se puede utilizar con la fecha y hora de la opción **La directiva de Information Protection se instaló el día**  para confirmar cuándo se instaló o actualizó por última vez la directiva de Azure Information Protection. Cuando el cliente se conecta al servicio, se descarga automáticamente la directiva más reciente si encuentra cambios con respecto a su directiva actual, y también cada 24 horas. Si ha realizado cambios en la directiva con posterioridad al tiempo mostrado, cierre y vuelva a abrir la aplicación de Office.
 
 Si ve **Este cliente no tiene licencia de Office Professional Plus**, significa que el cliente de Azure Information Protection ha detectado que la edición instalada de Office no admite la aplicación de la protección de Rights Management. Cuando se realiza esta detección, las etiquetas que aplican protección no se muestran en la barra de Azure Information Protection.
 
@@ -208,6 +208,16 @@ Utilice la información de **Versión** para confirmar qué versión del cliente
 ## <a name="custom-configurations"></a>Configuraciones personalizadas
 
 Utilice la siguiente información para configuraciones avanzadas que podría necesitar para escenarios específicos o un subconjunto de usuarios. 
+
+### <a name="prevent-sign-in-prompts-for-ad-rms-only-computers"></a>Evitar solicitudes de inicio de sesión solo para equipos AD RMS
+
+De forma predeterminada, el cliente de Azure Information Protection intenta conectarse automáticamente al servicio Azure Information Protection. Para equipos que solo se comunican con AD RMS, esto puede producir una solicitud de inicio de sesión para los usuarios que no es necesaria. Se puede evitar esta solicitud de inicio de sesión modificando el registro:
+
+Busque el siguiente nombre de valor y después establezca los datos del valor en **0**:
+
+**HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnablePolicyDownload** 
+
+Independientemente de esta configuración, el cliente de Azure Information Protection sigue el [proceso de detección del servicio de RMS](../rms-client/client-deployment-notes.md#rms-service-discovery) estándar para buscar su clúster de AD RMS.
 
 ### <a name="sign-in-as-a-different-user"></a>Inicio de sesión como un usuario diferente
 
@@ -241,9 +251,7 @@ Cree el siguiente nombre de valor DWORD (con cualquier datos de valor):
 
 ### <a name="support-for-disconnected-computers"></a>Soporte técnico para equipos desconectados
 
-De forma predeterminada, el cliente de Azure Information Protection intenta conectarse automáticamente al servicio Azure Information Protection para descargar la directiva más reciente de Azure Information Protection. Si tiene un equipo que sabe que no se podrá conectar a Internet durante un período de tiempo, puede impedir que el cliente intente conectarse al servicio editando el Registro. 
-
-Busque el siguiente nombre de valor y establezca los datos del valor en **0**:
+De forma predeterminada, el cliente de Azure Information Protection intenta conectarse automáticamente al servicio Azure Information Protection para descargar la directiva más reciente de Azure Information Protection. Si tiene un equipo que sabe que no se podrá conectar a Internet durante un período de tiempo, puede impedir que el cliente intente conectarse al servicio editando el Registro. Busque el siguiente nombre de valor y establezca los datos del valor en **0**:
 
 **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnablePolicyDownload** 
 
