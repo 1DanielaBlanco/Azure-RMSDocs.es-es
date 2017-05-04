@@ -4,14 +4,14 @@ description: "Cuando se asigna una etiqueta a un documento o a un mensaje de cor
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/21/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: aacdeeb9185755af90f4aa6144c47e3a9771b4e2
-ms.sourcegitcommit: f0402cf14506b4c61a156a2baf7e69b7b16883a1
+ms.openlocfilehash: 1caa89df8adccff37b46e3af71186286069fabe1
+ms.sourcegitcommit: d814d2876cf56e8fff0b107a5e3ec6df2aeda9ae
 translationtype: HT
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Configuración de una etiqueta para marcas visuales de Azure Information Protection
@@ -38,7 +38,7 @@ Más información sobre estos marcadores visuales:
 
 Utilice las siguientes instrucciones para configurar las marcas visuales para una etiqueta.
 
-1. Si aún no lo ha hecho, abra una nueva ventana del explorador, inicie sesión en [Azure Portal](https://portal.azure.com) como administrador global y, después, navegue hasta la hoja **Azure Information Protection**.
+1. Si aún no lo ha hecho, abra una nueva ventana del explorador, inicie sesión en [Azure Portal](https://portal.azure.com) como administrador de seguridad o administrador global y, después, navegue hasta la hoja **Azure Information Protection**.
 
     Por ejemplo, en el menú del centro, haga clic en **Más servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 

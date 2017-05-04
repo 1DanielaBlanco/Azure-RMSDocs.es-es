@@ -4,7 +4,7 @@ description: "Analice cómo funciona Azure RMS, los controles criptográficos qu
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/03/2017
+ms.date: 04/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a5f189ab5ad1df43b14fa0b6d23bf4f0eef88142
-ms.sourcegitcommit: d44105d4d45fabf0f1d90765304e4b43dd97c0fc
+ms.openlocfilehash: d3d174fabb4189d2f4ca7755b6355293261318d4
+ms.sourcegitcommit: 55d8a769084c6422f80aefc5f7c6594ea6855bfa
 translationtype: HT
 ---
 # <a name="how-does-azure-rms-work-under-the-hood"></a>¿Cómo funciona Azure RMS? En segundo plano
@@ -120,7 +120,7 @@ Cuando un usuario quiere consumir un documento protegido, el cliente de RMS se i
 
 ![Consumo de documento de RMS, paso 1: el usuario se autentica y obtiene la lista de derechos](../media/AzRMS_documentconsumption1.png)
 
-**Qué ocurre en el paso 1**: el usuario autenticado envía la directiva del documento y los certificados del usuario al servicio Azure Rights Management. El servicio descifra y evalúa la directiva y crea una lista de derechos (de haberlos) que el usuario tiene para el documento. Para identificar al usuario, se usa el atributo proxyAttribute de Azure AD correspondiente la cuenta del usuario y a los grupos a los que pertenece. Por motivos de rendimiento, la pertenencia a grupos se almacena [en caché](../plan-design/prepare.md#group-membership-caching).
+**Qué ocurre en el paso 1**: el usuario autenticado envía la directiva del documento y los certificados del usuario al servicio Azure Rights Management. El servicio descifra y evalúa la directiva y crea una lista de derechos (de haberlos) que el usuario tiene para el documento. Para identificar al usuario, se usa el atributo proxyAddress de Azure AD correspondiente a la cuenta del usuario y a los grupos a los que pertenece. Por motivos de rendimiento, la pertenencia a grupos se almacena [en caché](../plan-design/prepare.md#group-membership-caching).
 
 ![Consumo de documento de RMS, paso 2: la licencia de uso se devuelve al cliente](../media/AzRMS_documentconsumption2.png)
 

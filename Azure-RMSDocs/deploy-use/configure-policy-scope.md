@@ -4,7 +4,7 @@ description: "Para configurar valores y etiquetas diferentes para usuarios espec
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/28/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 4b134785-0353-4109-8fa7-096d1caa2242
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 2fc0059f0cc2d7c1a0eb08d6f8ee89ea2bf4bfbd
-ms.sourcegitcommit: 16fec44713c7064959ebb520b9f0857744fecce9
+ms.openlocfilehash: 253a08736352b04b4f730b250b888102836f7e6d
+ms.sourcegitcommit: d814d2876cf56e8fff0b107a5e3ec6df2aeda9ae
 translationtype: HT
 ---
 # <a name="how-to-configure-the-azure-information-protection-policy-for-specific-users-by-using-scoped-policies"></a>Configuración de la directiva de Azure Information Protection para usuarios específicos mediante directivas de ámbito
@@ -33,7 +33,7 @@ Por ejemplo, si tiene una etiqueta denominada **Confidencial** en la directiva g
 
 Para configurar una directiva de ámbito de Azure Information Protection:
 
-1. En una nueva ventana del explorador, inicie sesión en [Azure Portal](https://portal.azure.com) como administrador global.
+1. En una nueva ventana del explorador, inicie sesión en [Azure Portal](https://portal.azure.com) como administrador de seguridad o administrador global.
 
 2. Vaya a la hoja **Azure Information Protection**: por ejemplo, en el menú del centro, haga clic en **Más servicios** y comience a escribir **Information Protection** en el cuadro Filtro. De los resultados, seleccione **Azure Information Protection**. 
 
