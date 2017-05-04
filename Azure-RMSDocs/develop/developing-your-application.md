@@ -211,14 +211,14 @@ Si selecciona la directiva ad-hoc, el usuario de la aplicación tiene que propor
 
 Después de que todo se ha creado y está en ejecución, las salidas de la aplicación se parecerán a estas:
 
-1. Se le pide que seleccione un método de cifrado.
+1.Se le pide que seleccione un método de cifrado.
 ![aplicación de salida - paso 1](../media/develop/app-output-1.png)
 
 2. Se le pide que proporcione la ruta de acceso al archivo que se va a proteger.
 ![salida de aplicación - paso 2](../media/develop/app-output-2.png)
 
 3. Se le pide que escriba la dirección de correo electrónico del propietario de la licencia (dicho propietario debe tener privilegios de administrador global en el inquilino de Azure AD).
-![salida de aplicación - paso 3](../media/develop/app-output-3.png)
+![![salida de aplicación - paso 3](../media/develop/app-output-3.png)
 
 4. Escriba las direcciones de correo electrónico de los usuarios que tendrán derechos de acceso al archivo (deben ir separadas por un espacio).
 ![salida de aplicación - paso 4](../media/develop/app-output-4.png)
