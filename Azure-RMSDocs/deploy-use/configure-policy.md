@@ -4,7 +4,7 @@ description: "Para configurar la protección, la clasificación y el etiquetado,
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/25/2017
+ms.date: 05/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,9 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 8b6bd6e44fb39c3787e2fe63577c7e7fd9948025
-ms.sourcegitcommit: d814d2876cf56e8fff0b107a5e3ec6df2aeda9ae
-translationtype: HT
+ms.openlocfilehash: f412d36e8c58d874360c55c5c90416c2629ed69e
+ms.sourcegitcommit: e3974cc1490581414084669632cad54b12b05d5a
+ms.translationtype: HT
+ms.contentlocale: es-ES
 ---
 # <a name="configuring-azure-information-protection-policy"></a>Configuración de la directiva de Azure Information Protection
 
@@ -58,6 +59,8 @@ El cliente de Azure Information Protection busca cambios cada vez que se inicia 
 
 - Cada 24 horas.
 
+>[!NOTE]
+>Cuando el cliente descargue la directiva, tenga en cuenta que deberá esperar unos minutos antes de que esté totalmente operativa. El tiempo real dependerá de factores como el tamaño y la complejidad de la configuración de la directiva y la conectividad de red. Si la acción resultante de las etiquetas no coincide con los cambios más recientes, deje pasar hasta 15 minutos y vuelva a intentarlo.
 
 ## <a name="configuring-your-organizations-policy"></a>Configuración de la directiva de la organización
 
