@@ -4,7 +4,7 @@ description: "Instrucciones e información para que los administradores administ
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/28/2017
+ms.date: 05/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,9 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 90b26239979b42eadb008b11a963e35a74698910
-ms.sourcegitcommit: 16fec44713c7064959ebb520b9f0857744fecce9
-translationtype: HT
+ms.openlocfilehash: 04e04f6e3243283b98df94143773e4aa81351f48
+ms.sourcegitcommit: b471c20eda011a7b75ee801c34081fb4773b64dc
+ms.translationtype: HT
+ms.contentlocale: es-ES
 ---
 # <a name="using-powershell-with-the-azure-information-protection-client"></a>Uso de PowerShell con el cliente de Azure Information Protection
 
@@ -58,21 +59,27 @@ Antes de empezar a usar estos cmdlets, vea los requisitos previos adicionales y 
 Lea esta sección antes de empezar a usar los comandos de PowerShell si su organización usa Azure Information Protection y el servicio de protección de datos Azure Rights Management, o solo el servicio Azure Rights Management.
 
 
-### <a name="prerequisites-for-aip-and-azure-rms"></a>Requisitos previos para AIP y Azure RMS
+### <a name="prerequisites"></a>Requisitos previos
 
 Además de los requisitos previos para instalar el módulo AzureInformationProtection, existen requisitos previos adicionales para el servicio Azure Information Protection y el servicio de protección de datos Azure Rights Management:
 
 1. El servicio Azure Rights Management debe estar activado.
 
-2. Para quitar la protección de los archivos para otros usuarios con su propia cuenta: la característica de superusuario debe habilitarse para su organización y su cuenta debe estar configurada para interactuar como superusuario en Azure Rights Management.
+2. Para quitar la protección de los archivos para otros usuarios con su propia cuenta: 
+    
+    - La característica de superusuario debe habilitarse para su organización y su cuenta debe estar configurada para interactuar como superusuario en Azure Rights Management.
 
-3. Para proteger o desproteger archivos directamente sin interacción del usuario: cree una cuenta de entidad de servicio, ejecute RMSServerAuthentication y considere la posibilidad establecer dicha entidad de servicio como un superusuario para Azure Rights Management.
+3. Para proteger o desproteger archivos directamente sin interacción del usuario: 
+    
+    - Cree una cuenta de entidad de servicio, ejecute RMSServerAuthentication y considere la posibilidad establecer dicha entidad de servicio como un superusuario para Azure Rights Management.
 
-4. Para regiones fuera de Estados Unidos: edite el registro para la autenticación en el servidor.
+4. Para las regiones fuera de Estados Unidos: 
+    
+    - Edite el registro para la autenticación en el servidor.
 
 #### <a name="prerequisite-1-the-azure-rights-management-service-must-be-activated"></a>Requisito previo 1: el servicio Azure Rights Management debe estar activado
 
-Este requisito previo se aplica si utiliza la protección de datos mediante etiquetas o con una conexión directa al servicio Azure Rights Management configurado para aplicar la protección de datos.
+Este requisito previo se aplica si utiliza la protección de datos mediante etiquetas o con una conexión directa al servicio Azure Rights Management para aplicar la protección de datos.
 
 Si no está activado el inquilino de Azure Information Protection, vea las instrucciones en [Activar Azure Rights Management](../deploy-use/activate-service.md).
 
@@ -80,7 +87,7 @@ Si no está activado el inquilino de Azure Information Protection, vea las instr
 
 Los escenarios típicos para quitar la protección de archivos para otros usuarios incluyen la detección de datos o la recuperación de datos. Si usa etiquetas para aplicar la protección, puede quitar la protección estableciendo una nueva etiqueta que no aplica protección o quitando la etiqueta. Pero lo mejor es que se conecte directamente al servicio Azure Rights Management para quitar la protección.
 
-Debe tener permisos de Rights Management para quitar la protección de archivos, o bien ser un superusuario. Para la detección o recuperación de datos, suele usarse la característica de superusuario. Para habilitar esta característica y configurar su cuenta como un superusuario, vea [Configuración de superusuarios para Azure Rights Management y los servicios de detección o la recuperación de datos](../deploy-use/configure-super-users.md).
+Debe tener permisos de uso de Rights Management para quitar la protección de archivos, o bien ser un superusuario. Para la detección o recuperación de datos, suele usarse la característica de superusuario. Para habilitar esta característica y configurar su cuenta como un superusuario, vea [Configuración de superusuarios para Azure Rights Management y los servicios de detección o la recuperación de datos](../deploy-use/configure-super-users.md).
 
 #### <a name="prerequisite-3-to-protect-or-unprotect-files-without-user-interaction"></a>Requisito previo 3: proteger o desproteger archivos sin interacción del usuario
 
@@ -132,9 +139,12 @@ Ejecute el cmdlet Get-AadrmConfiguration desde el módulo de Windows PowerShell 
 
 ##### <a name="to-get-the-appprincipalid-and-symmetric-key"></a>Para obtener AppPrincipalId y la clave simétrica
 
-Cree una entidad de servicio nueva mediante la ejecución del cmdlet `New-MsolServicePrincipal` desde el módulo MSOnline de PowerShell para Azure Active Directory: 
+Cree una entidad de servicio nueva mediante la ejecución del cmdlet `New-MsolServicePrincipal` desde el módulo MSOnline de PowerShell para Azure Active Directory y utilice las instrucciones siguientes. 
 
-1. Si este módulo aún no está instalado en el equipo, vea [Install the Azure AD Module](/powershell/azuread/#install-the-azure-ad-module) (Instalación del módulo para Azure AD).
+> [!IMPORTANT]
+> No utilice el cmdlet de PowerShell de Azure AD más reciente, New-AzureADServicePrincipal, para crear esta entidad de servicio. Los servicios Azure Rights Management no admiten New-AzureADServicePrincipal. 
+
+1. Si el módulo MSOnline no está ya instalado en el equipo, ejecute `Install-Module MSOnline`.
 
 2. Inicie Windows PowerShell con la opción **Ejecutar como administrador**.
 
@@ -187,7 +197,7 @@ El comando de ejemplo presentará el siguiente aspecto:
 
     Set-RMSServerAuthentication -Key zIeMu8zNJ6U377CLtppkhkbl4gjodmYSXUVwAO5ycgA=-AppPrincipalId b5e3f76a-b5c2-4c96-a594-a0807f65bba4-BposTenantId 23976bc6-dcd4-4173-9d96-dad1f48efd42
 
-Tal como se muestra en el comando anterior, puede proporcionar los valores con un solo comando, o simplemente escribir Set-RMSServerAuthentication y proporcionar los valores uno a uno cuando se le solicite. Cuando el comando finaliza, aparece el mensaje "**The RmsServerAuthentication is set to ON**" (RmsServerAuthentication está activado), lo que significa que ahora puede proteger y desproteger archivos con la entidad de servicio.
+Tal como se muestra en el comando anterior, puede proporcionar los valores con un solo comando, o simplemente escribir Set-RMSServerAuthentication y proporcionar los valores uno a uno cuando se le solicite. Cuando finalice el comando, verá "**RmsServerAuthentication se establece en ON**", lo que significa que el cliente ahora funciona en "modo servidor". Este mensaje no confirma que la autenticación se ha realizado correctamente utilizando los valores proporcionados, sino que el cambio al modo servidor se realizó correctamente.
 
 Considere la posibilidad de establecer la entidad de servicio como superusuario: para asegurarse de que esta entidad de servicio siempre pueda desproteger los archivos para otros usuarios, se puede configurar como superusuario. Del mismo modo que configura una cuenta de usuario estándar como superusuario, utilice el mismo cmdlet de Azure RMS, [Add-AadrmSuperUser](/powershell/aadrm/vlatest/Add-AadrmSuperUser.md), pero especifique el parámetro **-ServicePrincipalId** con el valor de AppPrincipalId.
 
@@ -301,7 +311,7 @@ Tenga en cuenta que si las plantillas de Rights Management cambian, debe volver 
 Lea esta sección antes de empezar a utilizar los comandos de PowerShell para proteger o desproteger archivos si su organización usa simplemente Active Directory Rights Management Services.
 
 
-### <a name="prerequisites-for-ad-rms"></a>Requisitos previos para AD RMS
+### <a name="prerequisites"></a>Requisitos previos
 
 Además de los requisitos previos para instalar el módulo AzureInformationProtection, su cuenta debe tener permisos de lectura y ejecución para acceder a ServerCertification.asmx:
 
