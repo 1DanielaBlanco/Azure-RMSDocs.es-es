@@ -4,7 +4,7 @@ description: "Siga estos pasos para preparar, implementar y administrar Azure In
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/07/2017
+ms.date: 05/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,9 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ec5e257152cf64c6a52dbb8d94f1baab7a5ea0a4
-ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
-translationtype: HT
+ms.openlocfilehash: dcee393a46830b293bde84bc019655ff95d098ad
+ms.sourcegitcommit: b471c20eda011a7b75ee801c34081fb4773b64dc
+ms.translationtype: HT
+ms.contentlocale: es-ES
 ---
 # <a name="azure-information-protection-deployment-roadmap"></a>Mapa de ruta de implementación de Azure Information Protection
 
@@ -45,10 +46,10 @@ Revise la [información de la suscripción](https://www.microsoft.com/cloud-plat
 Nota: No asigne manualmente licencias de usuario desde la suscripción gratuita de RMS para individuos y no utilice esta licencia para administrar el servicio de Azure Rights Management para su organización. Estas licencias se muestran como **Rights Management Adhoc** en el centro de administración de Office 365 y como **RIGHTSMANAGEMENT_ADHOC** al ejecutar el cmdlet de Azure AD PowerShell, [Get-MsolAccountSku](https://msdn.microsoft.com/library/azure/dn194118.aspx). Para obtener más información acerca de cómo se otorga automáticamente la suscripción RMS para individuos y se asigna a los usuarios, consulte [RMS para individuos y Azure Information Protection](../understand-explore/rms-for-individuals.md).
 
 
-### <a name="step-2-prepare-your-tenant-account-to-use-azure-information-protection"></a>Paso 2: Preparar la cuenta del inquilino para usar Azure Information Protection
+### <a name="step-2-prepare-your-tenant-to-use-azure-information-protection"></a>Paso 2: Preparar el inquilino para usar Azure Information Protection
 Antes de empezar a usar Azure Information Protection, siga este procedimiento de preparación:
 
-- Asegúrese de que tiene cuentas de usuario y grupos en Office 365 o Azure Active Directory que Azure Information Protection usará para autenticar a los usuarios de la organización. Si es necesario, cree estas cuentas y grupos, o sincronícelos desde el directorio local. Para más información, vea [Preparación de Azure Information Protection](prepare.md).
+- Asegúrese de que tiene cuentas de usuario y grupos en Office 365 o Azure Active Directory que Azure Information Protection usará para autenticar y autorizar a los usuarios de la organización. Si es necesario, cree estas cuentas y grupos, o sincronícelos desde el directorio local. Para más información, consulte [Preparación de usuarios y grupos para Azure Information Protection](prepare.md).
 
 ### <a name="step-3-configure-and-deploy-classification-and-labeling"></a>Paso 3: Configurar e implementar la clasificación y el etiquetado
 
@@ -137,10 +138,10 @@ Revise la [información de la suscripción](https://www.microsoft.com/cloud-plat
 Nota: No asigne manualmente licencias de usuario desde la suscripción gratuita de RMS para individuos y no utilice esta licencia para administrar el servicio de Azure Rights Management para su organización. Estas licencias se muestran como **Rights Management Adhoc** en el centro de administración de Office 365 y como **RIGHTSMANAGEMENT_ADHOC** al ejecutar el cmdlet de Azure AD PowerShell, [Get-MsolAccountSku](https://msdn.microsoft.com/library/azure/dn194118.aspx). Para obtener más información acerca de cómo se otorga automáticamente la suscripción RMS para individuos y se asigna a los usuarios, consulte [RMS para individuos y Azure Information Protection](../understand-explore/rms-for-individuals.md).
 
 
-### <a name="step-2-prepare-your-tenant-account-to-use-the-azure-rights-management-service"></a>Paso 2: Preparar la cuenta de inquilino para usar el servicio Azure Rights Management
+### <a name="step-2-prepare-your-tenant-to-use-the-azure-rights-management-service"></a>Paso 2: Preparar la cuenta de inquilino para usar el servicio Azure Rights Management
 Antes de empezar a usar [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)], tenga en cuenta los siguientes pasos previos:
 
-1.  Asegúrese de que el inquilino de Office 365 tenga las cuentas de usuario y los grupos que usará Azure Information Protection para autenticar a los usuarios de su organización. Si es necesario, cree estas cuentas y grupos, o sincronícelos desde el directorio local. Para más información, consulte [Preparing for Azure Rights Management](prepare.md) (Preparación para Azure Rights Management).
+1.  Asegúrese de que el inquilino de Office 365 tenga las cuentas de usuario y los grupos que usará Azure Information Protection para autenticar y autorizar a los usuarios de su organización. Si es necesario, cree estas cuentas y grupos, o sincronícelos desde el directorio local. Para más información, consulte [Preparación de usuarios y grupos para Azure Information Protection](prepare.md).
 
 2. Decide si quieres que Microsoft administre tu clave de inquilino (la predeterminada) o generarla y administrarla tú mismo (conocido como Aportar tu propia clave, o BYOK). Tenga en cuenta que actualmente, no se puede usar BYOK si se usa Exchange Online. Para más información, vea [Planeamiento e implementación de su clave de inquilino de Azure Information Protection](plan-implement-tenant-key.md).
 
