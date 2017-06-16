@@ -151,7 +151,7 @@ En este ejemplo:
 
 - La cuenta de usuario para Jagannath Reddy la autorizará  **jagannathreddy@contoso.com** .
 
--  La cuenta de usuario de Ankur Roy se puede autorizar mediante el uso de  **ankur.roy@contoso.com**  y  **ankur.roy@onmicrosoft.contoso.com** , pero no de ** ankurroy@contoso.com **.
+-  La cuenta de usuario de Ankur Roy se puede autorizar mediante el uso de **ankur.roy@contoso.com** y **ankur.roy@onmicrosoft.contoso.com**, pero no de **ankurroy@contoso.com**.
 
 En la mayoría de los casos, el valor del atributo UserPrincipalName coincidirá con uno de los valores del campo ProxyAddresses. Esta es la configuración recomendada, pero si no se puede cambiar el valor de UPN para que coincida con la dirección de correo electrónico, debe realizar los pasos siguientes:
 
