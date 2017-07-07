@@ -14,9 +14,11 @@ ms.assetid: 97169FC3-1395-4433-A632-7B0F020FABFE
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: f93df5f204350a56f8280f299c04478cc1b5dfba
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: f7ebcb3a432a4521a71e3cc80c20b1af64e051c7
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="application-types"></a>Tipos de aplicación
 
@@ -31,7 +33,7 @@ Una aplicación sencilla podría ser una herramienta de línea de comandos cread
 
 ### <a name="server-mode-applications"></a>Aplicaciones en modo servidor
 
-El *modo servidor* está pensado para aplicaciones no interactivas que consumen, protegen o procesan contenido con protección de RMS. Un ejemplo sería una aplicación de *prevención de pérdida de datos* que se ejecute como servicio en un servidor de archivos y proteja documentos confidenciales. Consulte [IpcDlp sample](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d) (ejemplo IpcDlp) para ver un ejemplo de este tipo de aplicación.
+El *modo servidor* está pensado para aplicaciones no interactivas que consumen, protegen o procesan contenido con protección de RMS. Un ejemplo sería una aplicación de *prevención de pérdida de datos* que se ejecute como servicio en un servidor de archivos y proteja documentos confidenciales. Consulte [IpcDlp sample](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/IpcDlpApp) (ejemplo IpcDlp) para ver un ejemplo de este tipo de aplicación.
 
 Si su aplicación usa el *modo servidor*, debe autenticarse en el servidor RMS de forma silenciosa. A diferencia del *modo cliente*, RMS SDK 2.1 no abrirá una petición de credenciales si no se autentica de forma silenciosa. Además, al ejecutarse en *modo servidor*, no es necesario ningún manifiesto de aplicación.
 
