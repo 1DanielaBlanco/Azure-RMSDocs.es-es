@@ -14,9 +14,11 @@ ms.assetid: 396A2C19-3A00-4E9A-9088-198A48B15289
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 24689c3337361fb5e59420684ec8f5e9c723e448
-ms.sourcegitcommit: 262f88c4f46e29f3747271276c62913b4cefe4f7
-translationtype: HT
+ms.openlocfilehash: c4334bad5a7ca6650c087425e4794c348b73501b
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="developing-your-application"></a>Desarrollo de la aplicación
 
@@ -218,7 +220,7 @@ Después de que todo se ha creado y está en ejecución, las salidas de la aplic
 ![salida de aplicación - paso 2](../media/develop/app-output-2.png)
 
 3. Se le pide que escriba la dirección de correo electrónico del propietario de la licencia (dicho propietario debe tener privilegios de administrador global en el inquilino de Azure AD).
-![![salida de aplicación - paso 3](../media/develop/app-output-3.png)
+![salida de aplicación - paso 3](../media/develop/app-output-3.png)
 
 4. Escriba las direcciones de correo electrónico de los usuarios que tendrán derechos de acceso al archivo (deben ir separadas por un espacio).
 ![salida de aplicación - paso 4](../media/develop/app-output-4.png)
