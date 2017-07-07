@@ -12,9 +12,11 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: e940dfd1d3a053c14ea1adb6e72f4cde7d26bba0
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: 37b91a1b3e0a25f6014198998609d33dcc0979ae
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="security-best-practices-for-azure-information-protection"></a>Procedimientos recomendados de seguridad para Azure Information Protection
 
@@ -51,8 +53,8 @@ Microsoft no prueba ni revisa resultados de pruebas relacionados con el cumplimi
 
 |Nivel estándar|    Descripción|
 |---|---|
-|Estándar mínimo|    Debe determinarse una aplicación que controle la información protegida de AIP para cumplir con el estándar mínimo a fin de que esta pueda firmarse con el certificado de producción recibido de Microsoft. Los asociados por lo general utilizan el certificado de la jerarquía de producción solo en el momento del lanzamiento final del software, cuando las pruebas internas de los propios asociados han verificado que la aplicación cumple con este estándar mínimo. El hecho de cumplir con el estándar mínimo no es una garantía de seguridad por parte de Microsoft, ni debe interpretarse como ello. Microsoft no prueba ni revisa resultados de pruebas relacionados con el cumplimiento del estándar mínimo; es responsabilidad total del asociado asegurarse de que se cumple el mínimo.|
-|Estándar recomendado|    Las directrices recomendadas trazan una ruta hacia la mejora de la seguridad de la aplicación y proporcionan una indicación de cómo puede evolucionar API a medida que se implementen más criterios de seguridad. Los proveedores pueden intentar diferenciar sus aplicaciones ascendiendo a este nivel superior de directrices de seguridad.|
+|Estándar mínimo|  Debe determinarse una aplicación que controle la información protegida de AIP para cumplir con el estándar mínimo a fin de que esta pueda firmarse con el certificado de producción recibido de Microsoft. Los asociados por lo general utilizan el certificado de la jerarquía de producción solo en el momento del lanzamiento final del software, cuando las pruebas internas de los propios asociados han verificado que la aplicación cumple con este estándar mínimo. El hecho de cumplir con el estándar mínimo no es una garantía de seguridad por parte de Microsoft, ni debe interpretarse como ello. Microsoft no prueba ni revisa resultados de pruebas relacionados con el cumplimiento del estándar mínimo; es responsabilidad total del asociado asegurarse de que se cumple el mínimo.|
+|Estándar recomendado|  Las directrices recomendadas trazan una ruta hacia la mejora de la seguridad de la aplicación y proporcionan una indicación de cómo puede evolucionar API a medida que se implementen más criterios de seguridad. Los proveedores pueden intentar diferenciar sus aplicaciones ascendiendo a este nivel superior de directrices de seguridad.|
 |Estándar preferido|    Se trata de la categoría más alta de seguridad definida actualmente. Los proveedores que desarrollen aplicaciones comercializadas bajo la etiqueta de "alta seguridad" deben tratar de alcanzar este estándar. Las aplicaciones que se adhieren este estándar suelen ser menos vulnerable a los ataques.|
 
 
