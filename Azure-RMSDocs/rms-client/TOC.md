@@ -8,6 +8,7 @@
 ### [cliente de Azure Information Protection](aip-client.md)
 #### [Cliente de Azure Information Protection: historial de publicación de versiones](client-version-release-history.md)
 #### [Guía de administrador de cliente de Azure Information Protection](client-admin-guide.md)
+##### [Customizations](client-admin-guide-customizations.md) (Personalizaciones)
 ##### [Archivos de cliente y registro de uso](client-admin-guide-files-and-logging.md)
 ##### [Seguimiento de documentos](client-admin-guide-document-tracking.md)
 ##### [Tipos de archivos admitidos](client-admin-guide-file-types.md)
