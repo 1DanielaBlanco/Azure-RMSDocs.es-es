@@ -4,7 +4,7 @@ description: "Información para facilitar la instalación y configuración del c
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/19/2017
+ms.date: 05/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,9 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 21eab2a693147b4e6562a8bcdff8cece7d706432
-ms.sourcegitcommit: 9c033b7f5a6cbb20275aeecd48ff5071964eb587
-translationtype: HT
+ms.openlocfilehash: d03cb1ff146839e4de805b66f5b2e6a3df851430
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="installing-and-configuring-the-azure-rights-management-connector"></a>Instalación y configuración del conector de Azure Rights Management
 
@@ -66,18 +68,18 @@ Puede usar una cuenta que tenga solo uno de los privilegios siguientes:
 -   **Administrador de conector de Azure Rights Management**: una cuenta de Azure Active Directory que tenga otorgados los derechos para instalar y administrar el conector RMS en la organización.
 
     > [!NOTE]
-    > El rol de administrador global de Azure Rights Management y el rol de administrador del conector de Azure Rights Management se asignan a las cuentas mediante el cmdlet de Azure RMS [Add-AadrmRoleBasedAdministrator](https://msdn.microsoft.com/library/dn629417.aspx).
+    > El rol de administrador global de Azure Rights Management y el rol de administrador del conector de Azure Rights Management se asignan a las cuentas mediante el cmdlet de Azure RMS [Add-AadrmRoleBasedAdministrator](/powershell/module/aadrm/add-aadrmrolebasedadministrator).
     > 
     > Para ejecutar el conector RMS con los privilegios mínimos, cree una cuenta dedicada para este propósito y después asigne el rol de administrador del conector de Azure RMS de la siguiente forma:
     >
     > 1.  Si no lo ha hecho ya, descargue e instale Windows PowerShell para Rights Management. Para más información, vea [Instalación de Windows PowerShell para Azure Rights Management](install-powershell.md).
     >
-    >     Inicie Windows PowerShell con el comando **Ejecutar como administrador** y establezca conexión con el servicio Azure RMS mediante el comando [Connect-AadrmService](https://msdn.microsoft.com/library/azure/dn629415.aspx):
+    >     Inicie Windows PowerShell con el comando **Ejecutar como administrador** y establezca conexión con el servicio Azure RMS mediante el comando [Connect-AadrmService](/powershell/module/aadrm/connect-aadrmservice):
     >
     >     ```
     >     Connect-AadrmService                   //provide Office 365 tenant administrator or Azure RMS global administrator credentials
     >     ```
-    > 2.  Luego ejecute el comando [Add-AadrmRoleBasedAdministrator](https://msdn.microsoft.com/library/azure/dn629417.aspx) mediante solo uno de los parámetros siguientes:
+    > 2.  Luego ejecute el comando [Add-AadrmRoleBasedAdministrator](/powershell/module/aadrm/add-aadrmrolebasedadministrator) mediante solo uno de los parámetros siguientes:
     >
     >     ```
     >     Add-AadrmRoleBasedAdministrator -EmailAddress <email address> -Role "ConnectorAdministrator"
