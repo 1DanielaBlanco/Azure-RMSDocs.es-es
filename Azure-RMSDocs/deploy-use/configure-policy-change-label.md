@@ -4,17 +4,21 @@ description: "Puede cambiar o mejorar cualquiera de las etiquetas que ven los us
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/25/2017
+ms.date: 05/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e3b6d95f-334b-4d17-80a9-7d5487ab5d32
-ms.openlocfilehash: 48faf9703176ba8f67f57582ea584733fe3e9b01
-ms.sourcegitcommit: d814d2876cf56e8fff0b107a5e3ec6df2aeda9ae
-translationtype: HT
+ms.openlocfilehash: ff32ea4759b46683398a86c0a549d50710f9a943
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="how-to-change-or-customize-an-existing-label-for-azure-information-protection"></a>Cambio o personalización de una etiqueta existente para Azure Information Protection
+<a id="how-to-change-or-customize-an-existing-label-for-azure-information-protection" class="xliff"></a>
+
+# Cambio o personalización de una etiqueta existente para Azure Information Protection
 
 >*Se aplica a: Azure Information Protection*
 
@@ -37,10 +41,14 @@ Para cambiar una etiqueta, utilice las instrucciones siguientes.
 
 4. Para que los cambios estén disponibles para los usuarios, en la hoja **Azure Information Protection**, haga clic en **Publicar**.
 
+5. Si cambió el nombre o la descripción de una etiqueta y los configuró para idiomas adicionales, debe volver a exportar la directiva de Azure Information Protection, proporcionar traducciones nuevas e importar los cambios. Para más información, consulte [Configuración de etiquetas para distintos idiomas](configure-policy-languages.md).
+
 > [!TIP]
 >Si quiere que alguna de las etiquetas vuelva a su valores predeterminados, use la información de [La directiva de Information Protection](configure-policy-default.md).
 
-## <a name="next-steps"></a>Pasos siguientes
+<a id="next-steps" class="xliff"></a>
+
+## Pasos siguientes
 
 Para más información sobre las opciones que puede cambiar para una etiqueta, así como otra configuración de la directiva de Azure Information Protection, use los vínculos de la sección [Configuring your organization's policy](configure-policy.md#configuring-your-organizations-policy) (Configuración de la directiva de la organización).
 

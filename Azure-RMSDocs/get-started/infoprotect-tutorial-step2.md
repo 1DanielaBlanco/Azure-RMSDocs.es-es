@@ -4,17 +4,21 @@ description: "Paso 2 de un tutorial de introducción para probar rápidamente Az
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/25/2017
+ms.date: 05/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: 9a2392df400356e7937db49cec3e0fe1e3d0f228
-ms.sourcegitcommit: d814d2876cf56e8fff0b107a5e3ec6df2aeda9ae
-translationtype: HT
+ms.openlocfilehash: b91bfea99170b747bb199b3c966ae8c89fae5359
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>Paso 2: configurar y publicar la directiva de Azure Information Protection
+<a id="step-2-configure-and-publish-the-azure-information-protection-policy" class="xliff"></a>
+
+# Paso 2: configurar y publicar la directiva de Azure Information Protection
 
 >*Se aplica a: Azure Information Protection*
 
@@ -29,7 +33,7 @@ Aunque Azure Information Protection incluye una directiva predeterminada que se 
     > [!TIP] 
     > Seleccione **Anclar al panel** para crear un icono de **Azure Information Protection** en el panel, de modo que pueda omitir el examen del servicio la próxima vez que inicie sesión en el portal.
 
-3.  Explore la hoja **Policy: Global** (Directiva:Global) que abre y muestra automáticamente la directiva predeterminada de Information Protection que se crea automáticamente:
+3. Observe la información que aparece en la página **Inicio rápido** que se abre automáticamente la primera vez que se conecta al servicio. Puede volver a esta información más adelante. Para este tutorial, haga clic en **Directiva global** para abrir la hoja **Policy: Global** (Directiva: Global). Esta hoja se abre automáticamente para las conexiones subsiguientes con el servicio y muestra la directiva de Information Protection predeterminada que se crea automáticamente para el inquilino:
     
     - Etiquetas de clasificación: **Personal**, **Público**, **General**, **Confidencial** y **Extremadamente confidencial**. Las dos últimas etiquetas se expanden para mostrar las subetiquetas: **Todos los empleados** y **Cualquiera (sin protección)**, para proporcionar ejemplos de cómo una clasificación puede tener subcategorías.
     
@@ -46,7 +50,9 @@ Aunque Azure Information Protection incluye una directiva predeterminada que se 
     
     ![Paso 3 del tutorial de inicio rápido de Azure Information Protection - Directiva predeterminada](../media/info-protect-policy-default-settings.png)
 
-## <a name="changing-the-settings-for-a-default-label-and-prompt-for-justification"></a>Cambiar la configuración de una etiqueta predeterminada y solicitar la justificación
+<a id="changing-the-settings-for-a-default-label-and-prompt-for-justification" class="xliff"></a>
+
+## Cambiar la configuración de una etiqueta predeterminada y solicitar la justificación
 
 En este tutorial, se cambiarán algunas de esas configuraciones de directiva para que pueda ver cómo funcionan:
 
@@ -56,7 +62,9 @@ En este tutorial, se cambiarán algunas de esas configuraciones de directiva par
 
 2. En **Los usuarios deben proporcionar una justificación para establecer una etiqueta de clasificación inferior, quitar una etiqueta o quitar la protección**, establezca esta opción en **Activado**.
 
-## <a name="configuring-a-label-for-protection-a-watermark-and-a-condition-to-prompt-for-classification"></a>Configurar una etiqueta para protección, una marca de agua y una condición para solicitar la clasificación
+<a id="configuring-a-label-for-protection-a-watermark-and-a-condition-to-prompt-for-classification" class="xliff"></a>
+
+## Configurar una etiqueta para protección, una marca de agua y una condición para solicitar la clasificación
 
 Ahora cambiaremos la configuración de una de las subetiquetas, **Todos los empleados**, desde la etiqueta principal **Confidencial**. 
 

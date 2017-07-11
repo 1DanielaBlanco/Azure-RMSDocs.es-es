@@ -12,11 +12,15 @@ ms.technology: techgroup-identity
 ms.assetid: 1775d8d0-9a59-42c8-914f-ce285b71ac1c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 27ffbc6eb9e88840f1b33c59b76bdaa5d028cc36
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: d141589c9dc9d90cf3a507db77f624c849f955b5
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="configuring-custom-templates-for-the-azure-rights-management-service"></a>Configuración de plantillas personalizadas para el servicio Azure Rights Management
+<a id="configuring-custom-templates-for-the-azure-rights-management-service" class="xliff"></a>
+
+# Configuración de plantillas personalizadas para el servicio Azure Rights Management
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
@@ -59,6 +63,10 @@ Use la información siguiente para tratar de configurar y usar plantillas person
 -   [Actualización de plantillas para usuarios](refresh-templates.md)
 
 -   [Referencia de PowerShell para plantillas personalizadas](configure-templates-with-powershell.md)
+
+> [!TIP]
+> Las plantillas y nuevas opciones para configurar la protección de Azure Rights Management se están migrando a Azure Portal. Esta funcionalidad está actualmente en versión preliminar. Para más información, consulte el anuncio de la entrada de blog: [Azure Information Protection unified administration now in Preview](https://blogs.technet.microsoft.com/enterprisemobility/2017/04/26/azure-information-protection-unified-administration-now-in-preview/) (Administración unificada de Azure Information Protection ahora en versión preliminar) 
+
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

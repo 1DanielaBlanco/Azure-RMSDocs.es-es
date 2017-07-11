@@ -4,17 +4,21 @@ description: "Un tutorial introductorio para probar rápidamente Microsoft Azure
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/07/2017
+ms.date: 05/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
-ms.openlocfilehash: 13dbb47088c33f72bdb0acdbb7cba1245df14f7f
-ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
-translationtype: HT
+ms.openlocfilehash: 023330bbd3909290e098bd7379d8cc2a24d36672
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="quick-start-tutorial-for-azure-information-protection"></a>Tutorial de inicio rápido de Azure Information Protection 
+<a id="quick-start-tutorial-for-azure-information-protection" class="xliff"></a>
+
+# Tutorial de inicio rápido de Azure Information Protection 
 
 >*Se aplica a: Azure Information Protection*
 
@@ -24,17 +28,17 @@ Este tutorial está destinado a los administradores y consultores de TI a fin de
 
 Si tiene algún problema para seguir este tutorial, para usar Azure Information Protection o si quiere ver lo que comentan otros usuarios, diríjase al [sitio de Yammer de Azure Information Protection](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all).
 
-## <a name="prerequisites"></a>Requisitos previos 
+<a id="prerequisites" class="xliff"></a>
+
+## Requisitos previos 
 Para completar este tutorial, necesitará lo siguiente:
 
-- Una suscripción que incluye Azure Information Protection para la clasificación, el etiquetado y la protección. En este tutorial se incluyen algunas características avanzadas, como la clasificación de datos automatizada con recomendaciones de usuarios, y el sitio de seguimiento de documentos. Asegúrese de que su suscripción admite estas características. Para obtener más detalles, consulte la [información sobre la suscripción](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) y la [lista de características](https://www.microsoft.com/cloud-platform/azure-information-protection-features) en el sitio de Azure Information Protection.
+- Una suscripción que incluye Azure Information Protection para la clasificación, el etiquetado y la protección. En este tutorial se incluyen algunas características avanzadas, como la clasificación de datos automatizada con recomendaciones de usuarios, y el sitio de seguimiento de documentos. Asegúrese de tener una suscripción para admitir estas características para este tutorial. Para obtener más detalles, consulte la [información sobre la suscripción](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) y la [lista de características](https://www.microsoft.com/cloud-platform/azure-information-protection-features) en el sitio de Azure Information Protection.
     
     Si no tiene una suscripción para estas características, puede registrarse para obtener una prueba gratuita de [Enterprise Mobility + Security E5](https://portal.office.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7).
     
-- Una suscripción a Azure, para que pueda obtener acceso al portal de Azure para configurar la directiva de Azure Information Protection. Si todavía no dispone de una suscripción a Azure para su organización, puede obtener una registrándose a una prueba gratuita: vaya a la página [Introducción a Azure](https://account.windowsazure.com/organization) y siga las instrucciones.
-
   > [!TIP] 
-  > Si necesita obtener una o más suscripciones, hágalo con anticipación porque el proceso puede durar varios minutos.
+  > Si necesita solicitar una suscripción, hágalo con anticipación porque el proceso puede tardar varios minutos en completarse.
 
 - Una cuenta de administrador global para iniciar sesión en Azure Portal para configurar la directiva de Azure Information Protection. Esta cuenta también debe tener una dirección de correo electrónico y un servicio de correo electrónico de trabajo (por ejemplo, Exchange Online o Exchange Server).
 

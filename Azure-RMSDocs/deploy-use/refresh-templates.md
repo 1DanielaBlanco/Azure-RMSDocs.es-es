@@ -4,7 +4,7 @@ description: "Cuando usa el servicio Azure Rights Management, se descargan de fo
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/25/2017
+ms.date: 05/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,15 @@ ms.technology: techgroup-identity
 ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6f02bffa99719d5cd987bc0fa9c84baabe191ec5
-ms.sourcegitcommit: 2358f76f9a039daff7d70ea68967a45362d3da35
-translationtype: HT
+ms.openlocfilehash: 374c807862d4922679e8622ee0d0d5a16a156bb0
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="refreshing-templates-for-users"></a>Actualización de plantillas para usuarios
+<a id="refreshing-templates-for-users-and-services" class="xliff"></a>
+
+# Actualización de plantillas para usuarios y servicios
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
@@ -32,8 +36,11 @@ Cuando usa el servicio Azure Rights Management de Azure Information Protection, 
 |Office 2016 para Mac|Actualización automática: no se requieren pasos adicionales.|
 |Aplicación RMS sharing para equipos Mac|Actualización automática: no se requieren pasos adicionales.|
 
+Cuando las aplicaciones cliente deben descargar plantillas (inicialmente o con actualización para los cambios), prepárese para esperar hasta 15 minutos antes de que se complete la descarga y que las plantillas nuevas o actualizadas estén completamente operativas. El tiempo real dependerá de factores como el tamaño y la complejidad de la configuración de la plantilla y la conectividad de red. 
 
-## <a name="exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates"></a>Solamente Exchange Online: Cómo configurar Exchange para descargar las plantillas personalizadas que se han cambiado
+<a id="exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates" class="xliff"></a>
+
+## Solamente Exchange Online: Cómo configurar Exchange para descargar las plantillas personalizadas que se han cambiado
 Si ya has configurado Information Rights Management (IRM) para Exchange Online, no se descargarán plantillas personalizadas para usuarios hasta que realices los cambios siguientes mediante Windows PowerShell en Exchange Online.
 
 > [!NOTE]
@@ -41,7 +48,9 @@ Si ya has configurado Information Rights Management (IRM) para Exchange Online, 
 
 Debes efectuar este procedimiento cada vez que cambies una plantilla.
 
-### <a name="to-update-templates-for-exchange-online"></a>Para actualizar plantillas para Exchange Online
+<a id="to-update-templates-for-exchange-online" class="xliff"></a>
+
+### Para actualizar plantillas para Exchange Online
 
 1.  Conéctese al servicio mediante Windows PowerShell en Exchange Online:
 
@@ -94,13 +103,17 @@ Para que los usuarios ya no vean estas plantillas, conéctese al servicio median
 Set-RMSTemplate -Identity "<name or GUID of the template>" -Type Archived
 ```
 
-## <a name="office-2016--office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template"></a>Office 2016, Office 2013 y la aplicación RMS sharing para Windows: Cómo forzar una actualización de una plantilla personalizada que se ha cambiado
+<a id="office-2016--office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template" class="xliff"></a>
+
+## Office 2016, Office 2013 y la aplicación RMS sharing para Windows: Cómo forzar una actualización de una plantilla personalizada que se ha cambiado
 Si modifica el Registro de los equipos que ejecutan Office 2016, Office 2013 o la aplicación Rights Management (RMS) sharing, puede cambiar la programación automática para que las plantillas cambiadas se actualicen en los equipos con más frecuencia que la indicada en sus valores predeterminados. También puede forzar una actualización inmediata eliminando los datos existentes en un valor del Registro.
 
 > [!WARNING]
 > Si usas el Editor del Registro de forma incorrecta, es posible que ocasiones problemas serios que puedan hacer preciso que reinstales el sistema operativo. Microsoft no puede garantizar que pueda resolver problemas ocasionados por un uso incorrecto del Editor del Registro. Usa el Editor del Registro bajo tu propia responsabilidad.
 
-### <a name="to-change-the-automatic-schedule"></a>Para cambiar la programación automática
+<a id="to-change-the-automatic-schedule" class="xliff"></a>
+
+### Para cambiar la programación automática
 
 1.  Con un editor del Registro, cree y establezca uno de los valores del Registro siguientes:
 
@@ -124,7 +137,9 @@ Si modifica el Registro de los equipos que ejecutan Office 2016, Office 2013 o l
 
 2.  Si desea forzar una actualización inmediata de las plantillas, vaya al procedimiento siguiente. En caso contrario, reinicie ahora las aplicaciones de Office y las instancias del Explorador de archivos.
 
-### <a name="to-force-an-immediate-refresh"></a>Para forzar una actualización inmediata
+<a id="to-force-an-immediate-refresh" class="xliff"></a>
+
+### Para forzar una actualización inmediata
 
 1.  Con un editor del Registro, elimine los datos del valor **LastUpdatedTime** . Por ejemplo, en los datos puede aparecer **2015-04-20T15:52**. Elimine 2015-04-20T15:52 para que no se muestre ningún dato. Use la información siguiente para localizar la ruta de acceso del Registro y eliminar estos datos del valor del Registro.
 
@@ -150,7 +165,9 @@ Si modifica el Registro de los equipos que ejecutan Office 2016, Office 2013 o l
 3.  Reinicie las aplicaciones de Office y las instancias del Explorador de archivos.
 
 
-## <a name="see-also"></a>Véase también
+<a id="see-also" class="xliff"></a>
+
+## Véase también
 [Configuración de plantillas personalizadas para Azure Rights Management](configure-custom-templates.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -4,7 +4,7 @@ description: "Conozca las restricciones de uso de claves administradas por el cl
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 06/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,15 @@ ms.technology: techgroup-identity
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ab3b25ebd04565f8cd0e9236c1241f38d4a2e8b2
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: cfc4243d15112545219f82964d09ce9ce238355d
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="byok-pricing-and-restrictions"></a>Precio y restricciones de BYOK
+<a id="byok-pricing-and-restrictions" class="xliff"></a>
+
+# Precio y restricciones de BYOK
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
@@ -27,7 +31,9 @@ La clave debe almacenarse en Azure Key Vault, que requiere una suscripción de A
 
 Si usa Azure Key Vault para la clave de inquilino de Azure Information Protection, se recomienda que use un almacén de claves dedicado para esta clave con una suscripción dedicada, para asegurarse de que solo la use el servicio Azure Rights Management. 
 
-## <a name="benefits-of-using-azure-key-vault"></a>Ventajas de usar Azure Key Vault
+<a id="benefits-of-using-azure-key-vault" class="xliff"></a>
+
+## Ventajas de usar Azure Key Vault
 
 Además de emplear el registro de uso de Azure Information Protection, para una mayor seguridad, puede hacer referencias cruzadas con el [registro de Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-logging/) para supervisar de manera independiente que solo el servicio Azure Rights Management use esta clave. Si es necesario, puede revocar de inmediato el acceso a la clave eliminando los permisos en el almacén de claves.
 
@@ -46,19 +52,17 @@ Además de la administración de claves, Azure Key Vault ofrece a los administra
 Para obtener más información sobre Azure Key Vault, consulte [¿Qué es el Almacén de claves de Azure?](https://azure.microsoft.com/documentation/articles/key-vault-whatis/) y visite el [blog del equipo de Azure Key Vault](https://blogs.technet.microsoft.com/kv/) para obtener la información más reciente y documentarse sobre cómo usan esta tecnología otros servicios.
 
 
-## <a name="restrictions-when-using-byok"></a>Restricciones en el uso de BYOK
+<a id="restrictions-when-using-byok" class="xliff"></a>
 
-Si tiene usuarios que se han registrado para obtener una cuenta gratuita de RMS para usuarios, no podrá usar BYOK ni los registros de uso, ya que esta configuración no tiene un administrador de inquilinos para configurar estas características.
-
-
-> [!NOTE]
-> Para más información sobre RMS para usuarios, consulte [RMS para usuarios y Azure Rights Management](../understand-explore/rms-for-individuals.md).
-
-![BYOK no es compatible con Exchange Online.](../media/RMS_BYOK_noExchange.png)
+## Restricciones en el uso de BYOK
 
 BYOK y el registro de uso funcionan perfectamente con todas las aplicaciones que se integran con el servicio Azure Rights Management (Azure RMS) usado por Azure Information Protection. Aquí se incluyen servicios en la nube, como SharePoint Online, servidores locales que ejecutan Exchange y SharePoint y que funcionan con Azure RMS a través del conector RMS y de aplicaciones cliente como Office 2013 y Office 2016. Obtendrá los registros de uso de claves independientemente de la aplicación que realiza solicitudes de Azure RMS.
 
-Existe una sola excepción: Actualmente, **BYOK de Azure RMS no es compatible con Exchange Online**. Si usa Exchange Online, se recomienda implementar ahora Azure RMS en el modo de administración de claves predeterminado, donde Microsoft genera y administra su clave. Tiene la opción de pasar a BYOK más adelante, por ejemplo, cuando Exchange Online no sea compatible con BYOK de Azure RMS. Sin embargo, si no puede esperar, otra opción es implementar Azure RMS con BYOK ahora, con funcionalidad reducida de RMS para Exchange Online (los correos electrónicos y datos adjuntos desprotegidos permanecen completamente funcionales):
+Existe una sola excepción: actualmente, **BYOK de Azure RMS no es compatible con Exchange Online**:
+
+![BYOK no es compatible con Exchange Online.](../media/RMS_BYOK_noExchange.png)
+
+Si usa Exchange Online, se recomienda implementar ahora Azure RMS en el modo de administración de claves predeterminado, donde Microsoft genera y administra su clave. Tiene la opción de pasar a BYOK más adelante, por ejemplo, cuando Exchange Online no sea compatible con BYOK de Azure RMS. Sin embargo, si no puede esperar, otra opción es implementar Azure RMS con BYOK ahora, con funcionalidad reducida de RMS para Exchange Online (los correos electrónicos y datos adjuntos desprotegidos permanecen completamente funcionales):
 
 -   No se pueden mostrar los mensajes de correo electrónico o los datos adjuntos protegidos en Outlook Web Access.
 
@@ -76,7 +80,9 @@ Si realiza la migración a Azure RMS desde AD RMS, puede que haya importado la c
 
 A veces, la excepción de BYOK de Azure RMS para Exchange Online no es un problema en la práctica. Por ejemplo, las organizaciones que necesitan que BYOK y el registro ejecuten sus aplicaciones de datos (Exchange, SharePoint, Office) localmente y usan Azure RMS para funcionalidades que no son compatibles fácilmente con AD RMS local (por ejemplo, colaboración con otras compañías y acceso desde clientes móviles). BYOK y el registro funcionan bien en este escenario y permiten a la organización tomar el control completo sobre su suscripción de Azure RMS.
 
-## <a name="next-steps"></a>Pasos siguientes
+<a id="next-steps" class="xliff"></a>
+
+## Pasos siguientes
 
 Si ha tomado la decisión de administrar su propia clave, vaya a [Implementing your Azure Rights Management tenant key](plan-implement-tenant-key.md#implementing-your-azure-information-protection-tenant-key) (Implementación de su clave de inquilino de Azure Rights Management).
 
