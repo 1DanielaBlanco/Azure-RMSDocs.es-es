@@ -4,14 +4,15 @@ Los destinatarios pueden usar muchos dispositivos para leer el documento protegi
 
 Pídales que lean el mensaje de correo electrónico que ha enviado. Verán el mensaje de correo electrónico con el siguiente texto delante:
 
-**El remitente ha protegido los datos adjuntos con Microsoft RMS. Debe** [iniciar sesión](http://aka.ms/rms)
-      **para abrirlos.**
+**El remitente ha protegido los datos adjuntos con Microsoft RMS. Debe** [iniciar sesión](http://aka.ms/rms) **para abrirlos.**
 
 Cuando hacen clic en el vínculo, este los lleva a las instrucciones para instalar la aplicación de uso compartido RMS y, si es necesario, suscribirse a una cuenta gratuita. La cuenta gratuita les concede una suscripción de RMS para individuos, que garantiza que los usuarios autorizados siempre puedan leer un documento protegido, incluso si su organización no dispone de Azure RMS. A continuación, están preparados para leer los datos adjuntos protegidos siguiendo las instrucciones a continuación.
 
 ![Capturas de pantalla del tutorial de RM](../media/AzRMS_Tutorial_4_Screenshots.png)
 
-#### <a name="to-view-the-protected-document-attachment"></a>Para ver los datos adjuntos del documento protegido
+<a id="to-view-the-protected-document-attachment" class="xliff"></a>
+
+#### Para ver los datos adjuntos del documento protegido
 
 1.  Debido a que Azure Rights Management protegió un documento de Word, hay dos elementos adjuntos en el mensaje de correo electrónico. Estos son en realidad dos versiones del mismo archivo, pero con extensiones de nombre de archivo diferentes. Abra la versión que tiene la extensión de nombre de archivo **.ppdf** (**Confidential.ppdf**).
 

@@ -12,12 +12,15 @@ ms.technology: techgroup-identity
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2022f86a32725ef9dfcf5692b1194348f6c39f3b
-ms.sourcegitcommit: b471c20eda011a7b75ee801c34081fb4773b64dc
+ms.openlocfilehash: 27ce787cbf5370634f6b1e15903cc981f08656a2
+ms.sourcegitcommit: 505a2c182bcd5a87a7dcb43b9aa1e43244f4c537
 ms.translationtype: HT
 ms.contentlocale: es-ES
+ms.lasthandoff: 07/03/2017
 ---
-# <a name="azure-active-directory-requirements-for-azure-information-protection"></a>Requisitos de Azure Active Directory para Azure Information Protection
+<a id="azure-active-directory-requirements-for-azure-information-protection" class="xliff"></a>
+
+# Requisitos de Azure Active Directory para Azure Information Protection
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
@@ -33,7 +36,9 @@ Para más información, consulte los recursos siguientes en la documentación de
 
 Si desea integrar el directorio de Azure AD con los bosques de AD locales, consulte [Integración de las identidades locales con Azure Active Directory](/active-directory/active-directory-aadconnect).
 
-### <a name="scenarios-that-have-specific-requirements"></a>Escenarios que tienen requisitos específicos 
+<a id="scenarios-that-have-specific-requirements" class="xliff"></a>
+
+### Escenarios que tienen requisitos específicos 
 
 Equipos que ejecutan Office 2010: 
 
@@ -43,7 +48,7 @@ Equipos que ejecutan Office 2010:
 
 Compatibilidad con la autenticación basada en certificados (CBA):
 
-- En el caso de la versión 5.0 de Android y posteriores, la aplicación Azure Information Protection para Android admite la autenticación basada en certificados. Para consultar las instrucciones sobre la configuración de la autenticación basada en certificados, consulte [Introducción a la autenticación basada en certificados de Azure Active Directory](/azure/active-directory/active-directory-certificate-based-authentication-get-started).
+- Las aplicaciones de Azure Information Protection para iOS y Android admiten la autenticación basada en certificados. Para consultar las instrucciones sobre la configuración de la autenticación basada en certificados, consulte [Introducción a la autenticación basada en certificados de Azure Active Directory](/azure/active-directory/active-directory-certificate-based-authentication-get-started).
 
 El valor de UPN de los usuarios no coincide con su dirección de correo electrónico:
 
@@ -55,7 +60,9 @@ Dispositivos móviles o equipos Mac que se autentican localmente mediante AD FS
 
 - Debe usar AD FS en la versión mínima de servidor de **Windows Server 2012 R2** o un proveedor de autenticación alternativo que admita el protocolo OAuth 2.0.
 
-## <a name="multi-factor-authentication-mfa-and-azure-information-protection"></a>Multi-Factor Authentication (MFA) y Azure Information Protection
+<a id="multi-factor-authentication-mfa-and-azure-information-protection" class="xliff"></a>
+
+## Multi-Factor Authentication (MFA) y Azure Information Protection
 Para usar Multi-Factor Authentication (MFA) con Azure Information Protection se necesita como mínimo uno de los dos requisitos siguientes:
 
 -   Office 2013 (versión mínima):
@@ -88,7 +95,9 @@ A continuación, configure la solución MFA:
 
         Para más información sobre este escenario, consulte [Programa Works with Office 365 – Identity ahora simplificado](https://blogs.office.com/2014/01/30/the-works-with-office-365-identity-program-now-streamlined/) en el blog de Office.
 
-## <a name="next-steps"></a>Pasos siguientes
+<a id="next-steps" class="xliff"></a>
+
+## Pasos siguientes
 Para comprobar otros requisitos, vea [Requisitos para Azure Information Protection](requirements-azure-rms.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

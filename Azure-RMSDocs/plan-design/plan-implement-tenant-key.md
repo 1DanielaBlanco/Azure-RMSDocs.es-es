@@ -4,7 +4,7 @@ description: "Información para ayudarle a planear y a administrar su clave de i
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/18/2017
+ms.date: 06/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,15 @@ ms.technology: techgroup-identity
 ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 860834fdfa666ab6919962a06417a6ed0088dd3d
-ms.sourcegitcommit: 237ce3a0cc4921da5a08ed5753e6491403298194
-translationtype: HT
+ms.openlocfilehash: e14a57a8bd8343113e2bfc3f71835f55f0ee2dee
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="planning-and-implementing-your-azure-information-protection-tenant-key"></a>Planeamiento e implementación de su clave de inquilino de Azure Information Protection
+<a id="planning-and-implementing-your-azure-information-protection-tenant-key" class="xliff"></a>
+
+# Planeamiento e implementación de su clave de inquilino de Azure Information Protection
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
@@ -36,7 +40,9 @@ Use la información de este artículo como ayuda para planear y administrar su c
 Si es necesario, puede cambiar la topología de clave de inquilino tras realizar la implementación con el cmdlet [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties).
 
 
-## <a name="choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok"></a>Elija su topología de clave de inquilino: Administrada por Microsoft (opción predeterminada) o por usted (BYOK)
+<a id="choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok" class="xliff"></a>
+
+## Elija su topología de clave de inquilino: Administrada por Microsoft (opción predeterminada) o por usted (BYOK)
 Decide qué topología de clave de inquilino es la mejor para su organización. De forma predeterminada, Azure Information Protection genera su clave de inquilino y administra la mayoría de los aspectos del ciclo de vida de la clave de inquilino. Esta es la opción más simple con las mínimas sobrecargas administrativas. En la mayoría de casos, no es necesario ni tan siquiera que sepa que tiene una clave de inquilino. Simplemente, regístrese en Azure Information Protection y Microsoft se encargará del resto del proceso de administración de la clave.
 
 Como alternativa, puede tener un control total sobre la clave de inquilino con el [Almacén de claves de Azure](https://azure.microsoft.com/services/key-vault/). Para este escenario es necesario crear una clave de inquilino y mantener la copia maestra de forma local. Con frecuencia este escenario también se conoce como Aportar tu propia clave (BYOK). Con esta opción, el proceso es:
@@ -52,7 +58,9 @@ Aunque es opcional, es probable que quiera usar los registros de uso en tiempo c
 > [!NOTE]
 > Como medida de protección adicional, el Almacén de claves de Azure usa dominios de seguridad independientes para sus centros de datos en regiones como Norteamérica, EMEA (Europa, Oriente Medio y África) y Asia. También para diferentes instancias de Azure, como Microsoft Azure Alemania y Azure Government. Si administra su propia clave de inquilino, estará vinculada al dominio de seguridad de la región o instancia donde se haya registrado el inquilino de Azure Information Protection. Por ejemplo, una clave de inquilino de un cliente europeo no puede usarse en centros de datos de América del Norte o Asia.
 
-## <a name="the-tenant-key-lifecycle"></a>El ciclo de vida de la clave de inquilino
+<a id="the-tenant-key-lifecycle" class="xliff"></a>
+
+## El ciclo de vida de la clave de inquilino
 Si decide que Microsoft debe encargarse de administrar su clave de inquilino, se hará cargo de la mayoría de operaciones del ciclo de vida de la clave. Sin embargo, si decide administrar por su cuenta la clave de inquilino, será responsable de muchas de las operaciones del ciclo de vida de la clave y de algunos procedimientos adicionales en el Almacén de claves de Azure.
 
 Los diagramas siguientes muestran y comparan estas dos opciones. El primer diagrama muestra las pocas sobrecargas de administrador que se dan en la configuración predeterminada cuando Microsoft administra la clave de inquilino.
@@ -67,7 +75,9 @@ Si decide dejar que Microsoft administre su clave de inquilino, no se necesita h
 
 Si decide administrar usted mismo la clave de inquilino, lea las secciones siguientes para obtener más información.
 
-## <a name="implementing-your-azure-information-protection-tenant-key"></a>Implementación de su clave de inquilino de Azure Information Protection
+<a id="implementing-your-azure-information-protection-tenant-key" class="xliff"></a>
+
+## Implementación de su clave de inquilino de Azure Information Protection
 
 Usa la información y los procedimientos de esta sección si ha decidido generar y administrar su clave de inquilino; el escenario Aportar tu propia clave (BYOK):
 
@@ -77,19 +87,23 @@ Usa la información y los procedimientos de esta sección si ha decidido generar
 > 
 > [Póngase en contacto con el soporte técnico de Microsoft](../get-started/information-support.md#to-contact-microsoft-support) también si su organización tiene directivas específicas para el manejo de claves.
 
-### <a name="prerequisites-for-byok"></a>Requisitos previos para BYOK
+<a id="prerequisites-for-byok" class="xliff"></a>
+
+### Requisitos previos para BYOK
 Consulte la tabla siguiente para consultar una lista de requisitos previos para Aportar tu propia clave (BYOK).
 
 |Requisito|Más información|
 |---------------|--------------------|
 |Una suscripción que admita Azure Information Protection.|Para obtener más información acerca de las suscripciones disponibles, consulte la [página de precios](https://go.microsoft.com/fwlink/?LinkId=827589) de Azure Information Protection.|
-|No use RMS para individuos o Exchange Online.<br /><br /> O bien, si usa Exchange Online, comprenda y acepte las limitaciones de uso de BYOK con esta configuración.|Para más información sobre las restricciones y limitaciones actuales para BYOK, vea [Precio y restricciones de BYOK](byok-price-restrictions.md).<br /><br />**Importante**: actualmente, BYOK no es compatible con Exchange Online.|
+|No use Exchange Online.<br /><br /> O bien, si usa Exchange Online, comprenda y acepte las limitaciones de uso de BYOK con esta configuración.|Para más información sobre las restricciones y limitaciones actuales para BYOK, vea [Precio y restricciones de BYOK](byok-price-restrictions.md).<br /><br />**Importante**: actualmente, BYOK no es compatible con Exchange Online.|
 |Todos los requisitos previos para Bring your own key (BYOK, Traiga su propia clave) de Key Vault, que incluyen una suscripción a Azure de pago o de prueba para su inquilino actual de Azure Information Protection. |Vea los [Requisitos previos de BYOK](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#prerequisites-for-byok) en la documentación de Azure Key Vault. <br /><br /> La suscripción a Azure gratuita que proporciona acceso para configurar Azure Active Directory y la configuración de las plantillas personalizadas de Azure Rights Management (**acceso a Azure Active Directory**) no es suficiente para usar Azure Key Vault. Para confirmar que tiene una suscripción de Azure que puede usar para BYOK, use los cmdlets de PowerShell de [Azure Resource Manager](https://msdn.microsoft.com/library/azure/mt786812\(v=azure.300\).aspx): <br /><br /> 1. Inicie una sesión de Azure PowerShell con la opción **Ejecutar como administrador** e inicie sesión como administrador global para el inquilino de Azure Information Protection con el siguiente comando:`Login-AzureRmAccount`<br /><br />2. Escriba lo siguiente y confirme que ve los valores mostrados para su nombre e identificador de suscripción, así como su identificador de inquilino de Azure Information Protection, y que el estado está habilitado: `Get-AzureRmSubscription`<br /><br />Si no se muestra ningún valor y es redireccionado al símbolo del sistema, no tiene una suscripción de Azure que pueda utilizarse para BYOK. <br /><br />**Nota**: Además de los requisitos previos de BYOK, si migra de AD RMS a Azure Information Protection y cambia una clave de software por una clave de hardware, debe tener como mínimo la versión 11.62 del firmware de Thales.|
 |Módulo de administración de Azure Rights Management para Windows PowerShell.|Para obtener instrucciones de instalación, consulte [Instalación de Windows PowerShell para Azure Rights Management](../deploy-use/install-powershell.md). <br /><br />Si ya ha instalado este módulo de Windows PowerShell anteriormente, ejecute el comando siguiente para comprobar que el número de versión sea como mínimo **2.9.0.0**: `(Get-Module aadrm -ListAvailable).Version`|
 
 Para obtener más información sobre los HSM de Thales y sobre su uso con el Almacén de claves de Azure, consulte el [sitio web de Thales](https://www.thales-esecurity.com/msrms/cloud).
 
-### <a name="instructions-for-byok"></a>Instrucciones de BYOK
+<a id="instructions-for-byok" class="xliff"></a>
+
+### Instrucciones de BYOK
 
 Para generar y transferir su propia clave de inquilino al Almacén de claves de Azure, siga los procedimientos que se indican en [Generación y transferencia de claves protegidas con HSM para el Almacén de claves de Azure](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/) en la documentación del Almacén de claves de Azure.
 
@@ -117,7 +131,9 @@ Si necesita confirmar que la URL de clave se ha configurado correctamente en el 
 Por último, si el servicio de Azure Rights Management ya está activado, ejecute [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties) para que Azure Rights Management use esta clave como clave del inquilino activo del servicio de Azure Rights Management. Si no completa este paso, Azure Rights Management seguirá usando la clave predeterminada administrada por Microsoft que se creó automáticamente al activar el servicio.
 
 
-## <a name="next-steps"></a>Pasos siguientes
+<a id="next-steps" class="xliff"></a>
+
+## Pasos siguientes
 
 Ahora que ha realizado la planeación, y si es necesario, ha generado su clave de inquilino, haga lo siguiente:
 

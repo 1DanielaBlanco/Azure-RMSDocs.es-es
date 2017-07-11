@@ -4,7 +4,7 @@ description: "Detalles técnicos sobre tipos de archivos, extensiones de nombres
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/08/2017
+ms.date: 06/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,15 +12,17 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ffd2ed8aa59c3d9eb1ab6d36a9ccac71d449d978
-ms.sourcegitcommit: dabea768a37aa56635b9123f628c1c2b2d6a0f55
+ms.openlocfilehash: 4f187b3fa991fb4ed3a11ded34fa663dc6b4bafc
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/08/2017
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="file-types-supported-by-the-azure-information-protection-client"></a>Tipos de archivos compatibles con el cliente de Azure Information Protection
+<a id="file-types-supported-by-the-azure-information-protection-client" class="xliff"></a>
 
->*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 8.1, Windows 8 y Windows 7 con SP1*
+# Tipos de archivos compatibles con el cliente de Azure Information Protection
+
+>*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 con SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012*
 
 El cliente de protección de Azure Information Protection puede aplicar los siguientes documentos y correos electrónicos:
 
@@ -32,7 +34,9 @@ El cliente de protección de Azure Information Protection puede aplicar los sigu
 
 Utilice la siguiente información para comprobar los tipos de archivos compatibles, los diferentes niveles de protección y cómo cambiar el nivel de protección predeterminado y qué archivos se excluyen automáticamente (omiten) de la clasificación y la protección.
 
-## <a name="file-types-supported-for-classification-only"></a>Tipos de archivos compatibles solo para clasificación
+<a id="file-types-supported-for-classification-only" class="xliff"></a>
+
+## Tipos de archivos compatibles solo para clasificación
 
 Solo se admite la clasificación para los siguientes tipos de archivo. Hay otros tipos de archivo que admiten la clasificación cuando también están protegidos. Para obtener más información, consulte la sección [Tipos de archivos compatibles para protección y clasificación](#supported-file-types-for-classification-and-protection).
 
@@ -57,7 +61,9 @@ Solo se admite la clasificación para los siguientes tipos de archivo. Hay otros
 
 - **Digital Negative**: .dng
 
-## <a name="file-types-supported-for-protection"></a>Tipos de archivo compatibles para protección
+<a id="file-types-supported-for-protection" class="xliff"></a>
+
+## Tipos de archivo compatibles para protección
 
 El cliente de Azure Information Protection admite la protección en dos niveles distintos, como se describe en la tabla siguiente.
 
@@ -71,7 +77,25 @@ Puede cambiar el nivel de protección predeterminado que el cliente de Azure Inf
 
 La protección de los datos se puede aplicar automáticamente cuando un usuario selecciona una etiqueta que el administrador ha configurado, o los usuarios pueden especificar su propia configuración personalizada de protección mediante [niveles de permiso](../deploy-use/configure-usage-rights.md#rights-included-in-permissions-levels). 
 
-### <a name="supported-file-types-for-classification-and-protection"></a>Tipos de archivos compatibles para protección y clasificación
+<a id="file-sizes-supported-for-protection" class="xliff"></a>
+
+### Tamaños de archivo compatibles para protección
+
+Hay tamaños de archivo máximos que el cliente de Azure Information Protection admite para protección.
+
+- **Para archivos de Office:**
+    
+    |Aplicación de Office|Tamaño de archivo máximo admitido|
+    |--------------------------------|-------------------------------------|
+    |Word 2007 (solo compatible con AD RMS)<br /><br />Word 2010<br /><br />Word 2013<br /><br />Word 2016|32 bits: 512 MB<br /><br />64 bits: 512 MB
+    |Excel 2007 (solo compatible con AD RMS)<br /><br />Excel 2010<br /><br />Excel 2013<br /><br />Excel 2016|32 bits: 2 GB<br /><br />64 bits: solo limitado por el espacio disponible en disco y la memoria|
+    |PowerPoint 2007 (solo compatible con AD RMS)<br /><br />PowerPoint 2010<br /><br />PowerPoint 2013<br /><br />PowerPoint 2016|32 bits: solo limitado por el espacio disponible en disco y la memoria<br /><br />64 bits: solo limitado por el espacio disponible en disco y la memoria
+
+- **Para todos los demás archivos**: 1 GB
+
+<a id="supported-file-types-for-classification-and-protection" class="xliff"></a>
+
+### Tipos de archivos compatibles para protección y clasificación
 
 En la tabla siguiente se enumera un subconjunto de tipos de archivos que el cliente de Azure Information Protection admite de forma nativa y que se pueden clasificar. 
 
@@ -85,7 +109,7 @@ Estos tipos de archivo se identifican por separado porque, cuando se protegen de
 |.txt|.ptxt|
 |.xml|.pxml|
 |.jpg|.pjpg|
-|.jpeg|.ppng|
+|.jpeg|.pjpeg|
 |.pdf|.ppdf|
 |.png|.ppng|
 |.tif|.ptif|
@@ -104,7 +128,9 @@ En estos archivos, la extensión de nombre de archivo permanece igual después d
 |----------------------------------|----------------------------------|
 |.doc<br /><br />.docm<br /><br />.docx<br /><br />.dot<br /><br />.dotm<br /><br />.dotx<br /><br />.potm<br /><br />.potx<br /><br />.pps<br /><br />.ppsm<br /><br />.ppsx<br /><br />.ppt<br /><br />.pptm|.pptx<br /><br />.thmx<br /><br />.xla<br /><br />.xlam<br /><br />.xls<br /><br />.xlsb<br /><br />.xlt<br /><br />.xlsm<br /><br />.xlsx<br /><br />.xltm<br /><br />.xltx<br /><br />.xps|
 
-### <a name="changing-the-default-protection-level-of-files"></a>Cambio del nivel de protección predeterminado de los archivos
+<a id="changing-the-default-protection-level-of-files" class="xliff"></a>
+
+### Cambio del nivel de protección predeterminado de los archivos
 Puede cambiar la manera en que el cliente de Azure Information Protection protege los archivos mediante la modificación del Registro. Por ejemplo, puede forzar que los archivos que admiten la protección nativa estén protegidos de forma genérica por el cliente de Azure Information Protection.
 
 Puede que quiera hacer esto por los siguientes motivos:
@@ -153,7 +179,9 @@ Puede realizar modificaciones parecidas en el Registro para otras situaciones ca
 
 Para más información, vea [Configuración de la API de archivo](../develop/file-api-configuration.md) en la guía del desarrollador. En esta documentación para desarrolladores, se hace referencia a la protección genérica como "PFile". 
 
-## <a name="file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-client"></a>Tipos de archivos que están excluidos de la clasificación y la protección con el cliente de Azure Information Protection
+<a id="file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-client" class="xliff"></a>
+
+## Tipos de archivos que están excluidos de la clasificación y la protección con el cliente de Azure Information Protection
 
 Para ayudar a impedir que los usuarios modifiquen los archivos que son fundamentales para las operaciones del equipo, se excluyen automáticamente algunos tipos de archivos y carpetas de la clasificación y la protección. Si los usuarios intentan clasificar o proteger estos archivos, aparecerá un mensaje para indicar que están excluidos.
 
@@ -166,8 +194,12 @@ Para ayudar a impedir que los usuarios modifiquen los archivos que son fundament
     - \AppData (de todos los usuarios)
 
 
-## <a name="next-steps"></a>Pasos siguientes
+<a id="next-steps" class="xliff"></a>
+
+## Pasos siguientes
 Ahora que ha identificado los tipos de archivos compatibles con el cliente de Azure Information Protection, vea la siguiente información adicional que puede necesitar para la compatibilidad con este cliente:
+
+- [Customizations](client-admin-guide-customizations.md) (Personalizaciones)
 
 - [Archivos de cliente y registro de uso](client-admin-guide-files-and-logging.md)
 

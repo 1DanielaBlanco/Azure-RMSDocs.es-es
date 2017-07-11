@@ -4,7 +4,7 @@ description: "Instrucciones para crear y administrar plantillas personalizadas e
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/28/2017
+ms.date: 05/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,26 +12,35 @@ ms.technology: techgroup-identity
 ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: fe569124494f837e770e5f1f8c6de0c2188a6e40
-ms.sourcegitcommit: ed954c84c9009d205638f0ad54fdbfc02ef5b92c
-translationtype: HT
+ms.openlocfilehash: 56a17c745ba55c2c7b97bd444be42e3554e795b9
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="create-configure-and-publish-a-custom-template"></a>Creación, configuración y publicación de una plantilla personalizada
+<a id="create-configure-and-publish-a-custom-template" class="xliff"></a>
+
+# Creación, configuración y publicación de una plantilla personalizada
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
 
 En el Portal de Azure clásico puede crear y administrar plantillas personalizada. Puede hacerlo directamente desde el Portal de Azure clásico o puede iniciar sesión en el Centro de administración de Office 365 y elegir **Características avanzadas** para Rights Management, lo que le redirigirá al Portal de Azure clásico.
 
+> [!TIP]
+> Las plantillas y nuevas opciones para configurar la protección de Azure Rights Management se están migrando a Azure Portal. Esta funcionalidad está actualmente en versión preliminar. Para más información, consulte el anuncio de la entrada de blog: [Azure Information Protection unified administration now in Preview](https://blogs.technet.microsoft.com/enterprisemobility/2017/04/26/azure-information-protection-unified-administration-now-in-preview/) (Administración unificada de Azure Information Protection ahora en versión preliminar) 
+
 Debe ser administrador global para crear y administrar plantillas en el Portal de Azure clásico. Si ha asignado el rol de administrador global del servicio Azure Rights Management a otros usuarios, también podrán crear y administrar plantillas, aunque deberán usar [PowerShell](configure-templates-with-powershell.md). Para obtener más información, vea [¿Debe ser un administrador global para configurar Azure RMS o puedo delegar a otros administradores?](../get-started/faqs-rms.md#do-you-need-to-be-a-global-admin-to-configure-azure-rms-or-can-i-delegate-to-other-administrators) 
 
 Usa los procedimientos siguientes para crear, configurar y publicar plantillas personalizadas para Rights Management.
 
-## <a name="to-create-a-custom-template"></a>Para crear una plantilla personalizada
+<a id="to-create-a-custom-template" class="xliff"></a>
+
+## Para crear una plantilla personalizada
 
 1.  En función de que inicie sesión en el Centro de administración de Office 365 o en el Portal de Azure clásico, emplee uno de los siguientes procedimientos:
 
-    -   Desde el **centro de administración de Office 365**, la navegación depende de si está utilizando la versión preliminar del centro de administración de Office 365 (y qué versión) o el centro de administración clásico de Office 365. Sin embargo, para todas las versiones, puede ir directamente a la página [administración de derechos](https://account.activedirectory.windowsazure.com/RmsOnline/Manage.aspx): 
+    -   En el **Centro de administración de Office 365**, puede ir directamente a la página de [Rights Management](https://account.activedirectory.windowsazure.com/RmsOnline/Manage.aspx): 
 
         1.  En la sección **configuración adicional**, haga clic en **características avanzadas**.
 
@@ -67,7 +76,9 @@ Usa los procedimientos siguientes para crear, configurar y publicar plantillas p
 
 4. En la página de inicio rápido **Empiece a trabajar con Rights Management** , haga clic en **Administrar sus plantillas de directivas de permisos**. Verá la plantilla recién creada agregada a la lista de plantillas, con el estado **Archivada**. En esta fase, la plantilla se ha creado pero no se ha configurado, y no es visible para los usuarios.
 
-## <a name="to-configure-and-publish-a-custom-template"></a>Para configurar y publicar una plantilla personalizada
+<a id="to-configure-and-publish-a-custom-template" class="xliff"></a>
+
+## Para configurar y publicar una plantilla personalizada
 
 1.  Seleccione la plantilla recién creada en la página **PLANTILLAS** del Portal de Azure clásico.
 
@@ -159,7 +170,9 @@ Para realizar cualquier cambio en tu plantilla, selecciónala y, a continuación
 > [!WARNING]
 > Cuando realices cambios en una plantilla que has guardado antes, los clientes no verán dichos cambios en la plantilla hasta que se actualicen en sus equipos. Para más información, consulte [Actualización de plantillas para usuarios](refresh-templates.md).
 
-## <a name="see-also"></a>Véase también
+<a id="see-also" class="xliff"></a>
+
+## Véase también
 [Configuración de plantillas personalizadas para Azure Rights Management](configure-custom-templates.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -4,7 +4,7 @@ description: "Detalles técnicos para administradores en redes empresariales que
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 06/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,15 @@ ms.technology: techgroup-identity
 ms.assetid: f7b13fa4-4f8e-489a-ba46-713d7a79f901
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e168c68cfeb14b40c0922426e2d226c28dac26ff
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: b1bb3308dc6e0561109602411fea3e63252fb9d4
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="technical-overview-and-protection-details-for-the-microsoft-rights-management-sharing-application"></a>Información general técnica de la aplicación Microsoft Rights Management sharing
+<a id="technical-overview-and-protection-details-for-the-microsoft-rights-management-sharing-application" class="xliff"></a>
+
+# Información general técnica de la aplicación Microsoft Rights Management sharing
 
 >*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 con SP1, Windows 8 y Windows 8.1*
 
@@ -39,7 +43,9 @@ Con la versión de RMS de octubre de 2013, puede proteger documentos de forma na
 
 Para obtener información de implementación, consulte [Implementación automática de la aplicación Microsoft Rights Management sharing](sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)
 
-## <a name="levels-of-protection--native-and-generic"></a>Niveles de protección: nativo y genérico
+<a id="levels-of-protection--native-and-generic" class="xliff"></a>
+
+## Niveles de protección: nativo y genérico
 La aplicación Microsoft Rights Management sharing admite la protección en dos niveles distintos, como se describe en la tabla siguiente.
 
 |Tipo de protección|Nativa|Genérico|
@@ -49,7 +55,9 @@ La aplicación Microsoft Rights Management sharing admite la protección en dos 
 |Valor predeterminado para tipos de archivo|Es el nivel predeterminado de protección para los siguientes tipos de archivo:<br /><br />- Archivos de texto e imagen<br /><br />- Archivos de Microsoft Office (Word, Excel, PowerPoint)<br /><br />- Formato de documento portátil (.pdf)<br /><br />Para más información, consulte la sección siguiente, [Tipos de archivo y extensiones de nombre de archivo admitidos](#supported-file-types-and-file-name-extensions).|Se trata de la protección predeterminada para todos los demás tipos de archivo (por ejemplo, .vsdx, .rtf, etc.) que no son compatibles con la protección completa.|
 Puede cambiar el nivel de protección predeterminado que aplica la aplicación RMS sharing. Puede cambiar el nivel predeterminado de nativo a genérico, de genérico a nativo, e incluso impedir que la aplicación RMS sharing aplique protección. Para más información, consulte la sección [Cambio del nivel de protección predeterminado de los archivos](#changing-the-default-protection-level-of-files) de este artículo.
 
-## <a name="supported-file-types-and-file-name-extensions"></a>Tipos de archivo y extensiones de nombre de archivo admitidos
+<a id="supported-file-types-and-file-name-extensions" class="xliff"></a>
+
+## Tipos de archivo y extensiones de nombre de archivo admitidos
 En la tabla siguiente se enumeran los tipos de archivo que admite de forma nativa la aplicación Microsoft Rights Management sharing. En estos tipos de archivo, la extensión de nombre de archivo original se cambia cuando se aplica el archivo nativo protegido, y estos archivos se vuelven de solo lectura.
 
 Además, cuando la aplicación RMS sharing protege de forma nativa un archivo de Word, Excel o PowerPoint que protegen los usuarios mediante uso compartido, esta acción crea automáticamente un segundo archivo que es una copia del original con el mismo nombre pero con una extensión **.ppdf** ¹. Esta versión del archivo garantiza que los destinatarios que instalan la aplicación RMS sharing siempre pueden abrir el archivo al que se le ha aplicado protección nativa.
@@ -64,7 +72,7 @@ En el caso de los archivos que están protegidos de manera genérica, la extensi
 |.txt|.ptxt|
 |.xml|.pxml|
 |.jpg|.pjpg|
-|.jpeg|.ppng|
+|.jpeg|.pjeg|
 |.pdf|.ppdf|
 |.png|.ppng|
 |.tif|.ptif|
@@ -82,7 +90,9 @@ En la tabla siguiente se enumeran los tipos de archivo que admite de forma nativ
 |----------------------------------|----------------------------------|
 |.doc<br /><br />.docm<br /><br />.docx<br /><br />.dot<br /><br />.dotm<br /><br />.dotx<br /><br />.potm<br /><br />.potx<br /><br />.pps<br /><br />.ppsm<br /><br />.ppsx<br /><br />.ppt<br /><br />.pptm|.pptx<br /><br />.thmx<br /><br />.xla<br /><br />.xlam<br /><br />.xls<br /><br />.xlsb<br /><br />.xlt<br /><br />.xlsm<br /><br />.xlsx<br /><br />.xltm<br /><br />.xltx<br /><br />.xps|
 
-### <a name="changing-the-default-protection-level-of-files"></a>Cambio del nivel de protección predeterminado de los archivos
+<a id="changing-the-default-protection-level-of-files" class="xliff"></a>
+
+### Cambio del nivel de protección predeterminado de los archivos
 Puede cambiar la manera en que la aplicación RMS sharing protege los archivos mediante la modificación del Registro. Por ejemplo, puede forzar que los archivos que admiten la protección nativa estén protegidos de forma genérica por la aplicación RMS sharing.
 
 Puede que quiera hacer esto por los siguientes motivos:
@@ -129,7 +139,9 @@ Puede realizar modificaciones parecidas en el Registro para otras situaciones ca
 
 -   **Off**: Bloquear protección
 
-## <a name="see-also"></a>Véase también
+<a id="see-also" class="xliff"></a>
+
+## Véase también
 [Guía de usuario de la aplicación Rights Management sharing](sharing-app-user-guide.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

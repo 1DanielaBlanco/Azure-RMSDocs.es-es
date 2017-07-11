@@ -4,7 +4,7 @@ description: "Consulte las novedades o los cambios en una publicación del clien
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/15/2017
+ms.date: 06/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,12 +12,15 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 70c358954a39b02610a77ec81074379dc574158b
-ms.sourcegitcommit: d5ce1bce5e63b3e510033ff9d4d246dd3511ed7c
+ms.openlocfilehash: 9ee487f65f417c9faaf71f3c50b5d4e35659c55f
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
 ms.translationtype: HT
 ms.contentlocale: es-ES
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="azure-information-protection-client-version-release-history"></a>Cliente de Azure Information Protection: historial de publicación de versiones
+<a id="azure-information-protection-client-version-release-history" class="xliff"></a>
+
+# Cliente de Azure Information Protection: historial de publicación de versiones
 
 >*Se aplica a: Azure Information Protection*
 
@@ -32,7 +35,37 @@ Use la información siguiente para ver las novedades o los cambios de una versi�
 >  
 > Si el problema persiste, vea la información de [Opciones de soporte técnico y recursos de la comunidad](../get-started/information-support.md#support-options-and-community-resources). También lo invitamos a participar en el equipo de Azure Information Protection, en su [sitio de Yammer](https://www.yammer.com/askipteam/).
 
-## <a name="version-14210"></a>Versión 1.4.21.0
+
+<a id="version-172100" class="xliff"></a>
+
+## Versión 1.7.210.0
+
+**Lanzamiento**: 06/06/2017
+
+Esta versión incluye la versión MSIPC 1.0.2217.1 del cliente RMS.
+
+**Correcciones**:
+
+- Todos los cmdlets de etiquetado y clasificación ahora se admiten en equipos no conectados a Internet pero que tienen una directiva de Azure Information Protection válida.
+
+- Para mantener la coherencia, un parámetro de salida del cmdlet [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) se cambia de inglés británico (**IsLabelled**) a inglés de Estados Unidos (**IsLabeled**). Si tiene scripts o procesos automatizados que buscan este parámetro, actualice la ortografía de este parámetro.
+
+- Correcciones generales para mantener la estabilidad que incluyen:
+
+    - En Outlook: correcciones de bloqueos, alto consumo de memoria y problemas de visualización de los menús.
+    
+    - En Word, Excel y PowerPoint: correcciones para un alto uso de CPU, problemas de visualización cuando se guardan archivos Excel de gran tamaño o la aplicación deja de responder. 
+    
+    Además en estas aplicaciones, para mejorar el rendimiento de Office 2016 con SharePoint Online y OneDrive para la empresa, el etiquetado automático y recomendado se aplica cuando se cierra el archivo en lugar de hacerlo cuando se guarda (ya sea que se guarde automáticamente o el usuario elija guardarlo). Del mismo modo, si la configuración **All documents and email must have a label** (Todos los documentos y correos electrónicos deben tener una etiqueta) está habilitada, los usuarios no deberán seleccionar una etiqueta hasta que se cierre el archivo. La excepción es para Word 2016 y Excel 2016 y el usuario selecciona la opción **Guardar como**. Luego, esta acción desencadena estos comportamientos de etiquetado si están configurados. 
+
+**Nuevas características**:
+
+- Nuevo cmdlet de PowerShell, [Set-AIPFileClassification](/powershell/module/azureinformationprotection/Set-AIPFileClassification). Cuando ejecuta este cmdlet, revisa el contenido del archivo y aplica automáticamente etiquetas a los archivos no etiquetados, según las condiciones que especifica en la directiva de Azure Information Protection.
+
+
+<a id="version-14210" class="xliff"></a>
+
+## Versión 1.4.21.0
 
 **Lanzamiento**: 15/03/2017
 
@@ -45,7 +78,7 @@ La versión anterior introdujo el nuevo requisito previo de Microsoft .NET Frame
 
 - Compatibilidad para unidades asignadas para clasificar y proteger archivos.
 
-- Compatibilidad para archivos de gran tamaño (>&250; MB) en el visor. 
+- Compatibilidad para archivos de gran tamaño (> 250 MB) en el visor. 
 
 - Cuando se configura HYOK, Outlook puede aplicar etiquetas que están configuradas para utilizar plantillas de Azure Rights Management o AD RMS.
 
@@ -59,7 +92,9 @@ La versión anterior introdujo el nuevo requisito previo de Microsoft .NET Frame
 - Para archivos PDF, el visor ahora admite opciones, como búsqueda, zoom y giro. Para usar estas opciones, haga clic con el botón derecho en el archivo cuando se muestra en el visor.
 
 
-## <a name="version-131552"></a>Versión 1.3.155.2
+<a id="version-131552" class="xliff"></a>
+
+## Versión 1.3.155.2
 
 **Lanzamiento**: 02/08/2017
 
@@ -87,7 +122,9 @@ Esta versión del cliente es la [versión de disponibilidad general](https://blo
 - [Guía del usuario de Azure Information Protection](client-user-guide.md)
 
 
-## <a name="version-1240"></a>Versión 1.2.4.0
+<a id="version-1240" class="xliff"></a>
+
+## Versión 1.2.4.0
 
 **Lanzamiento**: 27/10/2016
 
@@ -105,13 +142,17 @@ Esta versión del cliente es la [versión de disponibilidad general](https://blo
 
     Para más información sobre esta opción, consulte la sección [Additional checks and troubleshooting](client-admin-guide.md#additional-checks-and-troubleshooting) (Comprobaciones adicionales y solución de problemas) en la guía del administrador.
 
-## <a name="version-11230"></a>Versión 1.1.23.0
+<a id="version-11230" class="xliff"></a>
+
+## Versión 1.1.23.0
 
 **Lanzamiento**: 1/10/2016
 
 Disponibilidad general.
 
-## <a name="next-steps"></a>Pasos siguientes
+<a id="next-steps" class="xliff"></a>
+
+## Pasos siguientes
 
 Para más información sobre la instalación del cliente:
 
