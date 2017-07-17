@@ -4,21 +4,20 @@ description: "Paso 2 de un tutorial de introducción para probar rápidamente Az
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/23/2017
+ms.date: 07/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: b91bfea99170b747bb199b3c966ae8c89fae5359
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: f6cd01357db99ee9d299606172aa85f7e2f44ba0
+ms.sourcegitcommit: 1dee39e5e3b222b4aab2b6c4284b82927148407e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/13/2017
 ---
-<a id="step-2-configure-and-publish-the-azure-information-protection-policy" class="xliff"></a>
-
 # Paso 2: configurar y publicar la directiva de Azure Information Protection
+<a id="step-2-configure-and-publish-the-azure-information-protection-policy" class="xliff"></a>
 
 >*Se aplica a: Azure Information Protection*
 
@@ -46,13 +45,12 @@ Aunque Azure Information Protection incluye una directiva predeterminada que se 
     
     ![Paso 3 del tutorial de inicio rápido de Azure Information Protection - Directiva predeterminada](../media/info-protect-policy-default-labelsv2.png)
     
-    Además, hay algunas configuraciones de directiva que no están definidas de forma que, por ejemplo, no todos los documentos y correos electrónicos deban tener una etiqueta, no haya ninguna etiqueta predeterminada y los usuarios no tengan que dar ninguna justificación cuando cambian etiquetas:
+    Además, hay algunas configuraciones de directiva que no están definidas. Por ejemplo, no todos los documentos y correos electrónicos deben tener una etiqueta, no hay ninguna etiqueta predeterminada y los usuarios no tienen que dar ninguna justificación cuando cambian etiquetas:
     
     ![Paso 3 del tutorial de inicio rápido de Azure Information Protection - Directiva predeterminada](../media/info-protect-policy-default-settings.png)
 
-<a id="changing-the-settings-for-a-default-label-and-prompt-for-justification" class="xliff"></a>
-
 ## Cambiar la configuración de una etiqueta predeterminada y solicitar la justificación
+<a id="changing-the-settings-for-a-default-label-and-prompt-for-justification" class="xliff"></a>
 
 En este tutorial, se cambiarán algunas de esas configuraciones de directiva para que pueda ver cómo funcionan:
 
@@ -62,13 +60,12 @@ En este tutorial, se cambiarán algunas de esas configuraciones de directiva par
 
 2. En **Los usuarios deben proporcionar una justificación para establecer una etiqueta de clasificación inferior, quitar una etiqueta o quitar la protección**, establezca esta opción en **Activado**.
 
-<a id="configuring-a-label-for-protection-a-watermark-and-a-condition-to-prompt-for-classification" class="xliff"></a>
-
 ## Configurar una etiqueta para protección, una marca de agua y una condición para solicitar la clasificación
+<a id="configuring-a-label-for-protection-a-watermark-and-a-condition-to-prompt-for-classification" class="xliff"></a>
 
 Ahora cambiaremos la configuración de una de las subetiquetas, **Todos los empleados**, desde la etiqueta principal **Confidencial**. 
 
-Si la etiqueta **Confidencial** no tiene subetiquetas porque tiene una versión anterior de la directiva, puede usar la etiqueta **Confidencial** en su lugar. Los pasos de configuración serán los mismos, pero el nombre de la hoja de la etiqueta será **Confidencial** en lugar de **Todos los empleados**.
+Si la etiqueta **Confidencial** no tiene subetiquetas porque tiene una versión anterior de la directiva, puede usar la etiqueta **Confidencial** en su lugar. Los pasos de configuración son los mismos, pero el nombre de la hoja de la etiqueta será **Confidencial** en lugar de **Todos los empleados**.
 
 1. Asegúrese de que la etiqueta **Confidencial** está expandida y, después, en esa etiqueta, seleccione **Todos los empleados**.
     
@@ -82,9 +79,11 @@ Si la etiqueta **Confidencial** no tiene subetiquetas porque tiene una versión 
     
     Con esta acción se abre la hoja **Protección**.
     
-3. En la hoja **Protección**, asegúrese de que están activadas las opciones **Azure RMS** y **Seleccionar una plantilla predefinida**, y luego haga clic en el cuadro desplegable y seleccione la plantilla predeterminada **\<nombre de su organización> - Confidencial**.     
+3. En la hoja **Protección**, las opciones **Azure RMS** y **Seleccionar una plantilla predefinida** deben estar seleccionadas. A continuación, haga clic en el cuadro desplegable y elija la plantilla predeterminada que permite a todos los usuarios de su organización ver y editar contenido protegido. 
     
-    Por ejemplo, si el nombre de la organización es VanArsdel, Ltd, verá y seleccionará **VanArsdel, Ltd - Confidencial**: 
+    Si hace poco que ha activado el servicio Azure Rights Management, esta plantilla se llama **Confidencial\Todos los empleados**. 
+    
+    Si el servicio Azure Rights Management ya estaba activado antes de que empezara este tutorial, la plantilla predeterminada puede tener el nombre siguiente: **\<Nombre de su organización > - Confidencial**. Por ejemplo, si el nombre de la organización es VanArsdel, Ltd, verá y seleccionará **VanArsdel, Ltd - Confidencial**: 
     
     ![Paso 3 del tutorial de inicio rápido de Azure Information Protection: establecer protección Azure RMS](../media/step2-select-rms-template.png)
     
@@ -108,7 +107,7 @@ Si la etiqueta **Confidencial** no tiene subetiquetas porque tiene una versión 
     
     a. **Elegir el tipo de condición**: mantener el valor predeterminado de **Integrado**.
     
-    b. **Seleccionar estilo integrado**: desde el menú desplegable, seleccione **Número de tarjeta de crédito**.
+    b. **Seleccionar estilo integrado**: en el menú desplegable, seleccione **Número de tarjeta de crédito**.
     
     c. **Número mínimo de repeticiones**: mantenga el valor predeterminado de **1**.
     
@@ -118,7 +117,7 @@ Si la etiqueta **Confidencial** no tiene subetiquetas porque tiene una versión 
     
     Haga clic en **Guardar** para volver a la hoja **Etiqueta: Todos los empleados**.
 
-7. En la hoja **Etiqueta: Todos los empleados**, verá que aparece **Número de tarjeta de crédito** como **NOMBRE DE CONDICIÓN** con **1** **REPETICIONES**:
+7. En la hoja **Etiqueta: Todos los empleados**, puede ver que aparece **Número de tarjeta de crédito** como **NOMBRE DE CONDICIÓN** con **1** **REPETICIONES**:
     
     ![Paso 3 del tutorial de inicio rápido de Azure Information Protection: configurar la condición de la tarjeta de crédito](../media/step2-see-condition.png)
 

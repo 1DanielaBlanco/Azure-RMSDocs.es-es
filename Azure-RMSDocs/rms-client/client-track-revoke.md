@@ -4,7 +4,7 @@ description: "Una vez protegidos los documentos, puede realizar un seguimiento d
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/08/2017
+ms.date: 07/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,25 +12,24 @@ ms.technology: techgroup-identity
 ms.assetid: 643c762e-23ca-4b02-bc39-4e3eeb657a1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 79c02795ca10ff875744f3b6c90cebd582cb8c3e
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 8a908097e4207889b6441e3224e7e4110fa2f9ae
+ms.sourcegitcommit: ea03477312b64c0a846701e46d991fe2c85b3a1f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/10/2017
 ---
-<a id="track-and-revoke-your-documents-when-you-use-azure-information-protection" class="xliff"></a>
-
 # Seguimiento y revocación de documentos cuando se usa Azure Information Protection
+<a id="track-and-revoke-your-documents-when-you-use-azure-information-protection" class="xliff"></a>
 
 >*Se aplica a: Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 con SP1*
 
-Una vez protegidos los documentos mediante Azure Information Protection, puede realizar el seguimiento de cómo los usan las personas. Si es necesario, también puede revocar el acceso a ellos si las personas ya no pueden leerlos. Para ello, use el **sitio de seguimiento de documentos**, al que puede tener acceso desde equipos Windows, equipos Mac e incluso tabletas y teléfonos.
+Una vez protegidos los documentos mediante Azure Information Protection, puede realizar el seguimiento de cómo los usan las personas. Si es necesario, también puede revocar el acceso a ellos si las personas ya no pueden leerlos. Para ello, utilice el **sitio de seguimiento de documentos**. Puede obtener acceso a este sitio desde equipos Windows y Mac e incluso tabletas y teléfonos.
 
-Cuando tenga acceso a este sitio, inicie sesión para hacer un seguimiento de sus documentos. Siempre que la organización tenga una [suscripción que admite el seguimiento y la revocación de documentos](https://www.microsoft.com/cloud-platform/azure-information-protection-features) y usted tenga asignada una licencia para esta suscripción, puede ver quién intentó abrir los documentos que protegió y si lo lograron (se autenticaron correctamente) o no. También verá cada intento de acceso al documento y su ubicación en ese momento. Además:
+Cuando tenga acceso a este sitio, inicie sesión para hacer un seguimiento de sus documentos. Si la organización tiene una [suscripción que admite el seguimiento y la revocación de documentos](https://www.microsoft.com/cloud-platform/azure-information-protection-features) y usted tiene asignada una licencia para esta suscripción, puede ver quién intentó abrir los documentos que protegió y si lo lograron (se autenticaron correctamente) o no. También verá cada intento de acceso al documento y su ubicación en ese momento. Además:
 
 - Si necesita dejar de compartir un documento: 
     
-    - Haga clic en **Revocar acceso**, fíjese en el período de tiempo que el documento seguirá estando disponible y decida si quiere informar de que está revocando el acceso al documento previamente compartido y escribir un mensaje personalizado. Al revocar un documento, no se elimina el documento que se ha compartido, pero los usuarios autorizados ya no podrán abrirlo:
+    - Haga clic en **Revocar acceso**. Fíjese en el período de tiempo en el que el documento sigue disponible. Decida si quiere permitir a los usuarios saber que revocará el acceso al documento que ha compartido anteriormente mediante un mensaje personalizado. Al revocar un documento, no se elimina el documento que se ha compartido, pero los usuarios autorizados ya no pueden abrirlo:
         
         ![Icono de revocación de acceso en el sitio de Seguimiento de documentos](../media/tracking-site-revoke-access-icon.png)
         
@@ -48,7 +47,7 @@ Cuando tenga acceso a este sitio, inicie sesión para hacer un seguimiento de su
 
 - Si desea hacer seguimiento de los documentos compartidos y revocarlos para otros usuarios:
     
-    - Los administradores de Azure Information Protection pueden realizar un seguimiento y revocar los documentos protegidos para otros haciendo clic en el icono Administrador. Solo los administradores ven este icono:
+    - Los administradores de Azure Information Protection pueden hacer clic en el icono Administrador para hacer un seguimiento de los documentos protegidos y revocarlos para otros usuarios cuando estos hayan registrado sus documentos en el sitio de seguimiento de documentos. Solo los administradores ven este icono:
         
         ![Icono Administrador en el sitio de Seguimiento de documentos](../media/tracking-site-admin-icon.png)
 
@@ -59,9 +58,8 @@ A menos que sea administrador, solo puede hacer seguimiento y revocar los docume
 
 Para hacer seguimiento de un documento que protegió, debe usar el equipo Windows para registrarlo con el sitio de seguimiento de documentos. Para ello, utilice el Explorador de archivos o las aplicaciones de Office.
 
-<a id="using-office-to-track-or-revoke-the-document" class="xliff"></a>
-
 ## Uso de Office para realizar un seguimiento del documento o revocarlo
+<a id="using-office-to-track-or-revoke-the-document" class="xliff"></a>
 
 Para las aplicaciones de Office, Word, Excel y PowerPoint: 
 
@@ -70,12 +68,19 @@ Para las aplicaciones de Office, Word, Excel y PowerPoint:
 2. En la pestaña **Inicio**, en el grupo **Protección**, haga clic en **Proteger** > **Realizar un seguimiento y revocar**:
 
     ![Opción realizar seguimiento](../media/track-usage-callout.png)
-
-Si estas opciones no aparecen en sus aplicaciones de Office, es probable que el cliente de Azure Information Protection no esté instalado en su equipo, que deba reiniciar dichas aplicaciones o que deba reiniciar el equipo para finalizar la instalación. Para más información sobre cómo instalar el cliente de Azure Information Protection, consulte [Descarga e instalación del cliente de Azure Information Protection](install-client-app.md).
-
-<a id="using-file-explorer-to-track-or-revoke-the-document" class="xliff"></a>
+    
+    Si no ve estas opciones en las aplicaciones de Office, es posible que sea debido a una de estas razones:
+    
+    - El cliente de Azure Information Protection no está instalado en su equipo.
+    
+    - Hay que reiniciar las aplicaciones de Office.
+    
+    - El equipo debe reiniciarse para finalizar la instalación.
+    
+Para más información sobre cómo instalar el cliente de Azure Information Protection, consulte [Descarga e instalación del cliente de Azure Information Protection](install-client-app.md).
 
 ## Uso del Explorador de archivos para realizar un seguimiento del documento o revocarlo
+<a id="using-file-explorer-to-track-or-revoke-the-document" class="xliff"></a>
 
 1. Haga clic con el botón derecho en el archivo protegido y seleccione **Clasificar y proteger**.
 
@@ -84,9 +89,8 @@ Si estas opciones no aparecen en sus aplicaciones de Office, es probable que el 
     ![Icono de Realizar un seguimiento y revocar en el cuadro de diálogo Clasificar y proteger: Azure Information Protection](../media/track-and-revoke.png)
 
 
-<a id="using-a-web-browser-to-track-and-revoke-documents-that-you-have-registered" class="xliff"></a>
-
 ### Uso de un explorador web para realizar un seguimiento de documentos que ha registrado y revocarlos
+<a id="using-a-web-browser-to-track-and-revoke-documents-that-you-have-registered" class="xliff"></a>
 
 Después de haber registrado el documento protegido mediante el uso de las aplicaciones de Office o del Explorador de archivos, puede realizar un seguimiento de ellos y revocarlos mediante un explorador web compatible:
 
@@ -94,20 +98,19 @@ Después de haber registrado el documento protegido mediante el uso de las aplic
 
     **Exploradores admitidos**: se recomienda usar por lo menos la versión 10 de Internet Explorer, pero puede usar cualquiera de los siguientes exploradores para el sitio de Seguimiento de documentos:
 
-    -   Internet Explorer: La versión 10 como mínimo
+    - Internet Explorer: La versión 10 como mínimo
 
-    -   Internet Explorer 9 con al menos MS12-037: Actualización de seguridad acumulativa para Internet Explorer:: June 12, 2012
+    - Internet Explorer 9 con al menos MS12-037: Actualización de seguridad acumulativa para Internet Explorer:: June 12, 2012
 
-    -   Mozilla Firefox: La versión 12 como mínimo
+    - Mozilla Firefox: La versión 12 como mínimo
 
-    -   Apple Safari 5: La versión 5 como mínimo
+    - Apple Safari 5: La versión 5 como mínimo
 
-    -   Google Chrome: La versión 18 como mínimo
+    - Google Chrome: La versión 18 como mínimo
 
-
-<a id="other-instructions" class="xliff"></a>
 
 ## Otras instrucciones
+<a id="other-instructions" class="xliff"></a>
 Puede encontrar más instrucciones sobre procedimientos en la guía del usuario de Azure Information Protection:
 
 - [¿Qué desea hacer?](client-user-guide.md#what-do-you-want-to-do)
