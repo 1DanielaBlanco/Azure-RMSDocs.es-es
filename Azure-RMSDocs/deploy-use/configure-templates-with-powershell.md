@@ -18,9 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/30/2017
 ---
-<a id="powershell-reference-for-custom-templates" class="xliff"></a>
-
-# Referencia de PowerShell para plantillas personalizadas
+# <a name="powershell-reference-for-custom-templates"></a>Referencia de PowerShell para plantillas personalizadas
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
@@ -55,9 +53,7 @@ Los cmdlets que admite la creación y administración de plantillas:
 
 
 
-<a id="see-also" class="xliff"></a>
-
-## Véase también
+## <a name="see-also"></a>Véase también
 [Configuración de plantillas personalizadas para Azure Rights Management](configure-custom-templates.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

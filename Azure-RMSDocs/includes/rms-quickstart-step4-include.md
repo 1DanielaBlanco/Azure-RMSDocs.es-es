@@ -10,9 +10,7 @@ Cuando hacen clic en el vínculo, este los lleva a las instrucciones para instal
 
 ![Capturas de pantalla del tutorial de RM](../media/AzRMS_Tutorial_4_Screenshots.png)
 
-<a id="to-view-the-protected-document-attachment" class="xliff"></a>
-
-#### Para ver los datos adjuntos del documento protegido
+#### <a name="to-view-the-protected-document-attachment"></a>Para ver los datos adjuntos del documento protegido
 
 1.  Debido a que Azure Rights Management protegió un documento de Word, hay dos elementos adjuntos en el mensaje de correo electrónico. Estos son en realidad dos versiones del mismo archivo, pero con extensiones de nombre de archivo diferentes. Abra la versión que tiene la extensión de nombre de archivo **.ppdf** (**Confidential.ppdf**).
 

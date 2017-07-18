@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/10/2017
 ---
-# Seguimiento y revocación de documentos cuando se usa Azure Information Protection
-<a id="track-and-revoke-your-documents-when-you-use-azure-information-protection" class="xliff"></a>
+# <a name="track-and-revoke-your-documents-when-you-use-azure-information-protection"></a>Seguimiento y revocación de documentos cuando se usa Azure Information Protection
 
 >*Se aplica a: Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 con SP1*
 
@@ -58,8 +57,7 @@ A menos que sea administrador, solo puede hacer seguimiento y revocar los docume
 
 Para hacer seguimiento de un documento que protegió, debe usar el equipo Windows para registrarlo con el sitio de seguimiento de documentos. Para ello, utilice el Explorador de archivos o las aplicaciones de Office.
 
-## Uso de Office para realizar un seguimiento del documento o revocarlo
-<a id="using-office-to-track-or-revoke-the-document" class="xliff"></a>
+## <a name="using-office-to-track-or-revoke-the-document"></a>Uso de Office para realizar un seguimiento del documento o revocarlo
 
 Para las aplicaciones de Office, Word, Excel y PowerPoint: 
 
@@ -79,8 +77,7 @@ Para las aplicaciones de Office, Word, Excel y PowerPoint:
     
 Para más información sobre cómo instalar el cliente de Azure Information Protection, consulte [Descarga e instalación del cliente de Azure Information Protection](install-client-app.md).
 
-## Uso del Explorador de archivos para realizar un seguimiento del documento o revocarlo
-<a id="using-file-explorer-to-track-or-revoke-the-document" class="xliff"></a>
+## <a name="using-file-explorer-to-track-or-revoke-the-document"></a>Uso del Explorador de archivos para realizar un seguimiento del documento o revocarlo
 
 1. Haga clic con el botón derecho en el archivo protegido y seleccione **Clasificar y proteger**.
 
@@ -89,8 +86,7 @@ Para más información sobre cómo instalar el cliente de Azure Information Prot
     ![Icono de Realizar un seguimiento y revocar en el cuadro de diálogo Clasificar y proteger: Azure Information Protection](../media/track-and-revoke.png)
 
 
-### Uso de un explorador web para realizar un seguimiento de documentos que ha registrado y revocarlos
-<a id="using-a-web-browser-to-track-and-revoke-documents-that-you-have-registered" class="xliff"></a>
+### <a name="using-a-web-browser-to-track-and-revoke-documents-that-you-have-registered"></a>Uso de un explorador web para realizar un seguimiento de documentos que ha registrado y revocarlos
 
 Después de haber registrado el documento protegido mediante el uso de las aplicaciones de Office o del Explorador de archivos, puede realizar un seguimiento de ellos y revocarlos mediante un explorador web compatible:
 
@@ -109,8 +105,7 @@ Después de haber registrado el documento protegido mediante el uso de las aplic
     - Google Chrome: La versión 18 como mínimo
 
 
-## Otras instrucciones
-<a id="other-instructions" class="xliff"></a>
+## <a name="other-instructions"></a>Otras instrucciones
 Puede encontrar más instrucciones sobre procedimientos en la guía del usuario de Azure Information Protection:
 
 - [¿Qué desea hacer?](client-user-guide.md#what-do-you-want-to-do)

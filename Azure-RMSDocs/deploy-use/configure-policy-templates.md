@@ -18,9 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/30/2017
 ---
-<a id="configuring-and-managing-templates-in-the-azure-information-protection-policy" class="xliff"></a>
-
-# Configuración y administración de plantillas en la directiva de Azure Information Protection
+# <a name="configuring-and-managing-templates-in-the-azure-information-protection-policy"></a>Configuración y administración de plantillas en la directiva de Azure Information Protection
 
 >*Se aplica a: Azure Information Protection*
 
@@ -43,9 +41,7 @@ Las plantillas de administración de derechos ahora están integradas con la dir
 - Las plantillas de administración de derechos del inquilino se muestran como etiquetas y actualmente también están disponibles las opciones de configuración específicas para la clasificación y el etiquetado. 
 
 
-<a id="considerations-for-templates-in-the-azure-portal" class="xliff"></a>
-
-## Consideraciones para las plantillas en Azure Portal
+## <a name="considerations-for-templates-in-the-azure-portal"></a>Consideraciones para las plantillas en Azure Portal
 
 Antes de editar estas plantillas o convertirlas en etiquetas en Azure Portal, tenga en cuenta los cambios siguientes en la implementación de la administración de plantillas en el Portal de Azure clásico. Se espera abordar algunas de las limitaciones durante la versión preliminar:
 
@@ -69,9 +65,7 @@ Antes de editar estas plantillas o convertirlas en etiquetas en Azure Portal, te
 
 - No cree una plantilla nueva desde el contenedor **Plantillas**; en lugar de eso, cree una etiqueta con el valor **Proteger** y configure los derechos de uso y los valores en la hoja **Protección**. Para instrucciones completas, consulte [Para crear una nueva plantilla](#to-create-a-new-template).
 
-<a id="to-configure-the-templates-in-the-azure-information-protection-policy" class="xliff"></a>
-
-## Para configurar las plantillas en la directiva de Azure Information Protection
+## <a name="to-configure-the-templates-in-the-azure-information-protection-policy"></a>Para configurar las plantillas en la directiva de Azure Information Protection
 
 1. En una nueva ventana del explorador, inicie sesión en [Azure Portal](https://portal.azure.com) como administrador de seguridad o administrador global.
 
@@ -93,9 +87,7 @@ Antes de editar estas plantillas o convertirlas en etiquetas en Azure Portal, te
 
 6. Para que los cambios estén disponibles para las aplicaciones y servicios de usuario, en la hoja **Azure Information Protection**, haga clic en **Publicar**.
 
-<a id="to-convert-templates-to-labels" class="xliff"></a>
-
-## Para convertir plantillas en etiquetas
+## <a name="to-convert-templates-to-labels"></a>Para convertir plantillas en etiquetas
 
 Cuando tiene una suscripción que incluye clasificación, etiquetado y protección, puede convertir una plantilla en una etiqueta. Cuando lo hace, se conserva la plantilla original pero en Azure Portal y ahora se muestra como incluida en una etiqueta nueva.
 
@@ -115,9 +107,7 @@ Cuando se convierte una plantilla en etiqueta:
 
 - La plantilla original ya no aparece en **Plantillas** y para editarla en Azure Portal, ahora se edita la etiqueta que se creó. La plantilla sigue disponible para el servicio Azure Rights Management y todavía se pueden usar los [comandos de PowerShell](administer-powershell.md) para administrarla.  
 
-<a id="to-create-a-new-template" class="xliff"></a>
-
-## Para crear una nueva plantilla
+## <a name="to-create-a-new-template"></a>Para crear una nueva plantilla
 
 Cuando crea una etiqueta nueva con la configuración de protección de **Azure RMS**, de forma encubierta, se crea una plantilla personalizada nueva a la que pueden acceder los servicios y las aplicaciones que se integran con las plantillas de Rights Management.
 
@@ -138,9 +128,7 @@ Cuando crea una etiqueta nueva con la configuración de protección de **Azure R
 5. Para que estas plantillas estén disponibles para las aplicaciones y servicios de usuario, en la hoja **Azure Information Protection**, haga clic en **Publicar**.
 
 
-<a id="next-steps" class="xliff"></a>
-
-## Pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 
 Como ocurre con todos los cambios de la directiva de Azure Information Protection, un equipo que ejecuta el cliente de Azure Information Protection puede tardar hasta 15 minutos en completar la descarga de estas plantillas. Para información sobre cómo los equipos y servicios descargan y actualizan plantillas, consulte [Refreshing templates for users and services](refresh-templates.md) (Actualización de plantillas para usuarios y servicios).
 

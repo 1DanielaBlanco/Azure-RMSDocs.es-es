@@ -18,17 +18,13 @@ ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/30/2017
 ---
-<a id="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection" class="xliff"></a>
-
-# Preguntas más frecuentes sobre la clasificación y el etiquetado en Azure Information Protection
+# <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>Preguntas más frecuentes sobre la clasificación y el etiquetado en Azure Information Protection
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
 ¿Tiene alguna pregunta sobre Azure Information Protection que trate específicamente sobre clasificación y etiquetado?  Vea si se ha resuelto aquí. 
 
-<a id="what-can-i-do-with-the-classification-capabilities-in-azure-information-protection" class="xliff"></a>
-
-## ¿Qué puedo hacer con las funcionalidades de clasificación en Azure Information Protection?
+## <a name="what-can-i-do-with-the-classification-capabilities-in-azure-information-protection"></a>¿Qué puedo hacer con las funcionalidades de clasificación en Azure Information Protection?
 
 Pruebe nuestro tutorial de inicio rápido para ver esto en funcionamiento en unos minutos: [Tutorial de inicio rápido de Azure Information Protection](infoprotect-quick-start-tutorial.md).
 
@@ -48,23 +44,17 @@ Busque anuncios en el [Enterprise Mobility and Security Blog](https://blogs.tech
 
 La versión de febrero quita muchas de las limitaciones anteriores. Para más información, vea el [anuncio de la entrada de blog](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/08/azure-information-protection-december-update-moves-to-general-availability/).
 
-<a id="do-i-need-to-be-a-global-admin-to-configure-classification-and-labels" class="xliff"></a>
-
-## ¿Es necesario ser un administrador global para configurar la clasificación y las etiquetas?
+## <a name="do-i-need-to-be-a-global-admin-to-configure-classification-and-labels"></a>¿Es necesario ser un administrador global para configurar la clasificación y las etiquetas?
 
 Para configurar la directiva de Azure Information Protection, ya no es necesario iniciar sesión en Azure Portal como administrador global de Azure Active Directory. Ahora también se puede usar una cuenta que tenga un rol de administrador de seguridad.
 
 Si selecciona la opción para instalar la directiva de demostración cuando instale el [cliente de Azure Information Protection](https://www.microsoft.com/en-us/download/details.aspx?id=53018), no necesita iniciar sesión en el portal para ver y probar la funcionalidad de etiquetado. La directiva de demostración instala localmente una directiva predeterminada para Azure Information Protection, de forma que pueda probar el etiquetado de documentos y correos electrónicos, pero no podrá cambiar ni agregar etiquetas nuevas sin iniciar sesión en Azure Portal. 
 
-<a id="which-options-in-the-azure-portal-are-p2" class="xliff"></a>
-
-## ¿Qué opciones en Azure Portal son P2?
+## <a name="which-options-in-the-azure-portal-are-p2"></a>¿Qué opciones en Azure Portal son P2?
 
 Las opciones de Azure Portal que requieren una suscripción de **Azure Information Protection Premium 2** (P2) tienen ahora un mensaje emergente de información para identificarlas. Para obtener más información sobre qué características se incluyen en las suscripciones de P1 y P1, consulte la [lista de características](https://www.microsoft.com/cloud-platform/azure-information-protection-features) del sitio de Azure Information Protection.
 
-<a id="can-a-file-have-more-than-one-classification" class="xliff"></a>
-
-## ¿Puede un archivo tener más de una clasificación?
+## <a name="can-a-file-have-more-than-one-classification"></a>¿Puede un archivo tener más de una clasificación?
 
 Los usuarios pueden seleccionar una sola etiqueta a la vez para cada documento o correo electrónico, lo que a menudo resulta en una sola clasificación. Sin embargo, si los usuarios seleccionan una subetiqueta, en realidad se aplican dos etiquetas a la vez: una principal y una secundaria. Con las subetiquetas, un archivo puede tener dos clasificaciones que denotan una relación entre elementos principal y secundario para así obtener un nivel adicional de control.
 
@@ -72,21 +62,15 @@ Por ejemplo, la etiqueta **Confidencial** podría contener subetiquetas como **L
 
 Cuando use subetiquetas, no configure marcas visuales, protección o condiciones en la etiqueta principal. Si utiliza subniveles, configure estos valores únicamente en la subetiqueta. Si configura estas opciones en la etiqueta principal y en su subetiqueta, la configuración de la subetiqueta tiene prioridad.
 
-<a id="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling" class="xliff"></a>
-
-## Cuando se etiqueta un correo electrónico, ¿los datos adjuntos reciben automáticamente el mismo etiquetado?
+## <a name="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling"></a>Cuando se etiqueta un correo electrónico, ¿los datos adjuntos reciben automáticamente el mismo etiquetado?
 
 No. Al etiquetar un mensaje de correo electrónico que tiene datos adjuntos, dichos datos adjuntos no heredan la misma etiqueta. Los datos adjuntos siguen sin etiqueta o conservan una etiqueta aplicada por separado. Sin embargo, si la etiqueta para el correo electrónico aplica protección, dicha protección se aplica a los datos adjuntos.
 
-<a id="how-can-dlp-solutions-and-other-applications-integrate-with-azure-information-protection" class="xliff"></a>
-
-## ¿Cómo pueden las soluciones DLP y otras aplicaciones integrarse con Azure Information Protection?
+## <a name="how-can-dlp-solutions-and-other-applications-integrate-with-azure-information-protection"></a>¿Cómo pueden las soluciones DLP y otras aplicaciones integrarse con Azure Information Protection?
 
 Como Azure Information Protection usa metadatos persistentes para la clasificación, que incluyen una etiqueta no cifrada, esta información puede leerse mediante soluciones DLP y otras aplicaciones. En los archivos, estos metadatos se almacenan en las propiedades personalizadas. En los correos electrónicos, esta información se encuentra en los encabezados del correo electrónico.
 
-<a id="how-is-azure-information-protection-classification-for-emails-different-from-exchange-message-classification" class="xliff"></a>
-
-## ¿En qué se diferencia la clasificación de los correos electrónicos de Azure Information Protection de la clasificación de mensajes de Exchange?
+## <a name="how-is-azure-information-protection-classification-for-emails-different-from-exchange-message-classification"></a>¿En qué se diferencia la clasificación de los correos electrónicos de Azure Information Protection de la clasificación de mensajes de Exchange?
 
 La clasificación de mensajes de Exchange es una característica antigua que puede clasificar los correos electrónicos y que se implementa con independencia de la clasificación de Azure Information Protection. 
 

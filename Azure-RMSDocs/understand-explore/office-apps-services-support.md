@@ -18,17 +18,13 @@ ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/30/2017
 ---
-<a id="office-applications-and-services" class="xliff"></a>
-
-# Aplicaciones y servicios de Office
+# <a name="office-applications-and-services"></a>Aplicaciones y servicios de Office
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
 Las aplicaciones de Office de usuario final (como Word, Excel, PowerPoint y Outlook) y los servicios de Office (como Exchange y SharePoint) pueden usar el servicio Azure Rights Management de Azure Information Protection con la idea de proteger los datos de su organización.
 
-<a id="office-applications-word-excel-powerpoint-outlook" class="xliff"></a>
-
-## Aplicaciones de Office: Word, Excel, PowerPoint, Outlook
+## <a name="office-applications-word-excel-powerpoint-outlook"></a>Aplicaciones de Office: Word, Excel, PowerPoint, Outlook
 Estas aplicaciones admiten de forma nativa Rights Management mediante Information Rights Management (IRM) y permiten a los usuarios aplicar protección a un documento guardado o a un mensaje de correo electrónico que se enviará. Los usuarios pueden aplicar plantillas o, para Word, Excel y PowerPoint, pueden elegir configuraciones muy personalizadas para restricciones de acceso, derechos y uso. 
 
 Por ejemplo, los usuarios pueden configurar un documento de Word para que solamente pueda acceder a él gente de la organización, o controlar si se puede editar una hoja de cálculo de Excel, si se restringe a solo lectura o si se impide que se pueda imprimir. Para archivos sujetos a limitación temporal, se puede configurar una fecha de caducidad (directamente por parte de los usuarios o aplicando una plantilla) en la que ya no se podrá acceder al archivo. Para Outlook, los usuarios pueden elegir la opción **No reenviar** con el fin de evitar la fuga de datos, además de elegir una plantilla.
@@ -41,9 +37,7 @@ Si está listo para configurar aplicaciones de Office y el cliente de Azure Info
 
 - Para instalar y configurar el cliente de Azure Information Protection, vea [Cliente de Azure Information Protection: instalación y configuración de clientes](../deploy-use/configure-client.md).
 
-<a id="exchange-online-and-exchange-server" class="xliff"></a>
-
-## Exchange Online y Exchange Server
+## <a name="exchange-online-and-exchange-server"></a>Exchange Online y Exchange Server
 Cuando usas Exchange Online o Exchange Server, puedes utilizar la integración de Information Rights Management (IRM), que proporciona más soluciones de protección de la información:
 
 -   **Exchange ActiveSync IRM** para que los dispositivos móviles puedan proteger y consumir mensajes de correo electrónico protegidos.
@@ -67,9 +61,7 @@ Si está listo para configurar Exchange para IRM:
 - Para Exchange local: [Implementación del conector de Azure Rights Management](../deploy-use/deploy-rms-connector.md).
 
 
-<a id="sharepoint-online-and-sharepoint-server" class="xliff"></a>
-
-## SharePoint Online y SharePoint Server
+## <a name="sharepoint-online-and-sharepoint-server"></a>SharePoint Online y SharePoint Server
 
 Cuando se usa SharePoint Online o SharePoint Server, se pueden proteger los documentos mediante Information Rights Management (IRM). Esta configuración permite a los administradores proteger listas o bibliotecas para que cuando un usuario consulte un documento, el archivo descargado esté protegido para que solo personas autorizadas puedan verlo y usarlo según las directivas de protección de la información que se hayan especificado. Por ejemplo, el archivo podría ser de solo lectura, deshabilitar el copiado del texto, evitar que se guarde una copia local e impedir que se pueda imprimir.
 
@@ -102,9 +94,7 @@ Si está listo para configurar SharePoint para IRM:
 - Para Sharepoint Server, vea [Implementación del conector de Azure Rights Management](../deploy-use/deploy-rms-connector.md).
 
 
-<a id="next-steps" class="xliff"></a>
-
-## Pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 
 Para conocer otras aplicaciones y servicios compatibles con el servicio Azure Rights Management de Azure Information Protection, vea [Compatibilidad de aplicaciones con el servicio Azure Rights Management](applications-support.md).
 
