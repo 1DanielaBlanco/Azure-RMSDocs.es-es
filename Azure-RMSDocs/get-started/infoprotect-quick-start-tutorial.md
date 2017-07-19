@@ -16,8 +16,7 @@ ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/10/2017
 ---
-# Tutorial de inicio rápido de Azure Information Protection
-<a id="quick-start-tutorial-for-azure-information-protection" class="xliff"></a> 
+# <a name="quick-start-tutorial-for-azure-information-protection"></a>Tutorial de inicio rápido de Azure Information Protection 
 
 >*Se aplica a: Azure Information Protection*
 
@@ -27,8 +26,7 @@ Este tutorial está destinado a los administradores y consultores de TI a fin de
 
 Si tiene algún problema para seguir este tutorial, para usar Azure Information Protection o si quiere ver lo que comentan otros usuarios, diríjase al [sitio de Yammer de Azure Information Protection](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all).
 
-## Requisitos previos
-<a id="prerequisites" class="xliff"></a> 
+## <a name="prerequisites"></a>Requisitos previos 
 Para completar este tutorial, necesita lo siguiente:
 
 - Una suscripción que incluye Azure Information Protection para la clasificación, el etiquetado y la protección. En este tutorial se incluyen algunas características avanzadas, como la clasificación de datos automatizada con recomendaciones de usuarios, y el sitio de seguimiento de documentos. Asegúrese de tener una suscripción para admitir estas características para este tutorial. Para obtener más detalles, consulte la [información sobre la suscripción](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) y la [lista de características](https://www.microsoft.com/cloud-platform/azure-information-protection-features) en el sitio de Azure Information Protection.

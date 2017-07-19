@@ -18,9 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/30/2017
 ---
-<a id="rms-protection-with-windows-server-file-classification-infrastructure-fci" class="xliff"></a>
-
-# Protección de RMS con la infraestructura de clasificación de archivos (FCI) de Windows Server
+# <a name="rms-protection-with-windows-server-file-classification-infrastructure-fci"></a>Protección de RMS con la infraestructura de clasificación de archivos (FCI) de Windows Server
 
 >*Se aplica a: Azure Information Protection, Windows Server 2016, Windows Server 2012, Windows Server 2012 R2*
 
@@ -35,9 +33,7 @@ Esta solución le permite proteger automáticamente todos los archivos en una ca
 
 Las instrucciones siguientes sirven para Windows Server 2012 R2 o Windows Server 2012. Si ejecuta otras versiones compatibles de Windows, es posible que tenga que adaptar algunos de los pasos por las diferencias entre la versión de su sistema operativo y la descrita en este artículo.
 
-<a id="prerequisites-for-azure-rights-management-protection-with-windows-server-fci" class="xliff"></a>
-
-## Requisitos previos de la protección de Azure Rights Management con FCI de Windows Server
+## <a name="prerequisites-for-azure-rights-management-protection-with-windows-server-fci"></a>Requisitos previos de la protección de Azure Rights Management con FCI de Windows Server
 Requisitos previos de estas instrucciones:
 
 -  En cada servidor de archivos donde ejecutará el Administrador de recursos de archivos con la infraestructura de clasificación de archivos:
@@ -60,9 +56,7 @@ Requisitos previos de estas instrucciones:
     
 - Descargó las plantillas de Rights Management en el servidor de archivos e identificó el id. de la plantilla que protegerá los archivos. Para hacerlo, use el cmdlet [Get-RMSTemplate](/powershell/azureinformationprotection/vlatest/get-rmstemplate). Este escenario no admite las plantillas de departamento, por lo que debe usar una plantilla no configurada para un ámbito, o bien la configuración del ámbito debe incluir la opción de compatibilidad de aplicaciones, de forma que la casilla **Mostrar esta plantilla a todos los usuarios cuando las aplicaciones no admiten la identidad de usuario** esté activada.
 
-<a id="instructions-to-configure-file-server-resource-manager-fci-for-azure-rights-management-protection" class="xliff"></a>
-
-## Instrucciones para configurar la infraestructura de clasificación de archivos del Administrador de recursos del servidor de archivos para la protección con Azure Rights Management
+## <a name="instructions-to-configure-file-server-resource-manager-fci-for-azure-rights-management-protection"></a>Instrucciones para configurar la infraestructura de clasificación de archivos del Administrador de recursos del servidor de archivos para la protección con Azure Rights Management
 Siga estas instrucciones para proteger automáticamente todos los archivos en una carpeta mediante un script de PowerShell como una tarea personalizada. Lleve a cabo estos procedimientos en este orden:
 
 1. Guardar el script de PowerShell
@@ -81,9 +75,7 @@ Al final de estas instrucciones, todos los archivos de su carpeta seleccionada s
 
 Tenga en cuenta que si hace cambios en la plantilla de Rights Management que usa para FCI, debe ejecutar `Get-RMSTemplate -Force` en el equipo del servidor de archivos para obtener la plantilla actualizada. De ese modo, la plantilla actualizada se usará para proteger los archivos nuevos. Si los cambios que se hacen en la plantilla son suficientemente importantes como para volver a proteger los archivos en el servidor de archivos, puede ejecutar el cmdlet Protect-RMSFile de manera interactiva con una cuenta que posee los derechos de uso de exportación o control completo de los archivos. También debe ejecutar `Get-RMSTemplate -Force` en este equipo de servidor de archivos si publica una plantilla nueva que desea usar para FCI.
 
-<a id="save-the-windows-powershell-script" class="xliff"></a>
-
-### Guardar el script de Windows PowerShell
+### <a name="save-the-windows-powershell-script"></a>Guardar el script de Windows PowerShell
 
 1.  Copie el contenido del [script de Windows PowerShell](fci-script.md) para la protección de Azure RMS con FCI del Administrador de recursos del servidor de archivos. Pegue el contenido del script y ponga al archivo el nombre **RMS-Protect-FCI.ps1** en su propio equipo.
 
@@ -130,9 +122,7 @@ Tenga en cuenta que si hace cambios en la plantilla de Rights Management que usa
 
 Ahora está listo para empezar a configurar el Administrador de recursos del servidor de archivos.
 
-<a id="create-a-classification-property-for-rights-management-rms" class="xliff"></a>
-
-### Crear una propiedad de clasificación para Rights Management (RMS)
+### <a name="create-a-classification-property-for-rights-management-rms"></a>Crear una propiedad de clasificación para Rights Management (RMS)
 
 -   En el Administrador de recursos del servidor de archivos, en Administración de clasificaciones, cree una nueva propiedad local:
 
@@ -146,9 +136,7 @@ Ahora está listo para empezar a configurar el Administrador de recursos del ser
 
 Ahora podemos crear una regla de clasificación que usa esta propiedad.
 
-<a id="create-a-classification-rule-classify-for-rms" class="xliff"></a>
-
-### Crear una regla de clasificación (clasificar para RMS)
+### <a name="create-a-classification-rule-classify-for-rms"></a>Crear una regla de clasificación (clasificar para RMS)
 
 -   Cree una nueva regla de clasificación:
 
@@ -176,9 +164,7 @@ Ahora podemos crear una regla de clasificación que usa esta propiedad.
 
 Aunque puede ejecutar las reglas de clasificación manualmente, para las operaciones en curso, deseará que esta regla se ejecute en una programación de modo que los nuevos archivos se clasifiquen con la propiedad RMS.
 
-<a id="configure-the-classification-schedule" class="xliff"></a>
-
-### Configurar la programación de clasificación
+### <a name="configure-the-classification-schedule"></a>Configurar la programación de clasificación
 
 -   En la pestaña **Clasificación automática** :
 
@@ -192,9 +178,7 @@ Aunque puede ejecutar las reglas de clasificación manualmente, para las operaci
 
 Ahora que ha completado la configuración de clasificación, está listo para configurar una tarea de administración para aplicar la protección de RMS a los archivos.
 
-<a id="create-a-custom-file-management-task-protect-files-with-rms" class="xliff"></a>
-
-### Crear una tarea de administración de archivos personalizada (proteger los archivos con RMS)
+### <a name="create-a-custom-file-management-task-protect-files-with-rms"></a>Crear una tarea de administración de archivos personalizada (proteger los archivos con RMS)
 
 -   En **Tareas de administración de archivos**, cree una nueva tarea de administración de archivos:
 
@@ -259,9 +243,7 @@ Ahora que ha completado la configuración de clasificación, está listo para co
 
         -   **Ejecutarse continuamente en nuevos archivos**: Seleccione esta casilla de verificación.
 
-<a id="test-the-configuration-by-manually-running-the-rule-and-task" class="xliff"></a>
-
-### Probar la configuración ejecutando manualmente la regla y la tarea
+### <a name="test-the-configuration-by-manually-running-the-rule-and-task"></a>Probar la configuración ejecutando manualmente la regla y la tarea
 
 1.  Ejecute la regla de clasificación:
 
@@ -301,9 +283,7 @@ Ahora que ha completado la configuración de clasificación, está listo para co
 
 Cuando haya confirmado que estas tareas se ejecutan satisfactoriamente, puede cerrar el Administrador de recursos de archivo. Los nuevos archivos se clasificarán y se protegerán automáticamente al ejecutar las tareas programadas. 
 
-<a id="modifying-the-instructions-to-selectively-protect-files" class="xliff"></a>
-
-## Modificar las instrucciones para proteger archivos de forma selectiva
+## <a name="modifying-the-instructions-to-selectively-protect-files"></a>Modificar las instrucciones para proteger archivos de forma selectiva
 Cuando tenga las instrucciones anteriores funcionando, será muy fácil modificarlas para obtener una configuración más sofisticada. Por ejemplo, proteja archivos mediante el uso del mismo script, pero solo para los archivos que contienen información de identificación personal y seleccione quizás una plantilla con permisos más restrictivos.
 
 Para ello, utilice una de las propiedades de clasificación integradas (por ejemplo, **Información de identificación personal**) o cree su propia nueva propiedad. A continuación, cree una nueva regla que utilice esta propiedad. Por ejemplo, puede seleccionar **Clasificador de contenido**, elija la propiedad **Información de identificación personal** con un valor de **Alto**y configure el modelo de expresiones o cadenas que identifica el archivo que se va a configurar para esta propiedad (como la cadena "**Fecha de nacimiento**").

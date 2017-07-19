@@ -16,8 +16,7 @@ ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/12/2017
 ---
-# ¿Qué es Azure Information Protection?
-<a id="what-is-azure-information-protection" class="xliff"></a>
+# <a name="what-is-azure-information-protection"></a>¿Qué es Azure Information Protection?
 
 >*Se aplica a: Azure Information Protection*
 
@@ -29,8 +28,7 @@ La siguiente imagen muestra un ejemplo de Azure Information Protection en funcio
 
 Después de que su contenido se clasifique (y se proteja opcionalmente), puede realizar un seguimiento posterior y controlar cómo se usa. Puede analizar los flujos de datos para obtener información sobre su negocio, detectar comportamientos de riesgo y tomar medidas correctivas, realizar un seguimiento del acceso a los documentos y evitar la pérdida o el uso indebido de datos entre otros.
 
-## Cómo aplican la clasificación las etiquetas
-<a id="how-labels-apply-classification" class="xliff"></a>
+## <a name="how-labels-apply-classification"></a>Cómo aplican la clasificación las etiquetas
 
 Use las etiquetas de Azure Information Protection para aplicar la clasificación a los documentos y correos electrónicos. Al hacer esto, la clasificación se puede identificar en cualquier momento, independientemente de dónde se almacenen los datos o con quién se compartan. Las etiquetas incluyen distintivos visuales, como encabezados, pies de página o marcas de agua. Se agregan metadatos a los archivos y encabezados de correo electrónico en texto no cifrado. El texto no cifrado garantiza que otros servicios, como las soluciones de prevención de pérdida de datos, puedan identificar la clasificación y tomar las medidas oportunas. 
 
@@ -39,8 +37,7 @@ Por ejemplo, el siguiente mensaje de correo electrónico se ha clasificado como 
 ![Encabezados y pie de página de correo electrónico de ejemplo que muestran la clasificación de Azure Information Protection](../media/example-email-footerv2.png)
 
 
-## Cómo se protegen los datos
-<a id="how-data-is-protected" class="xliff"></a>
+## <a name="how-data-is-protected"></a>Cómo se protegen los datos
 
 La tecnología de protección usa *Azure Rights Management* (a menudo abreviado como Azure RMS). Esta tecnología se integra en otros servicios en la nube de Microsoft y en las aplicaciones tales como Office 365 y Azure Active Directory. También lo puede usar con sus propias aplicaciones de línea de negocio y soluciones de protección de información de proveedores de software, tanto si estas aplicaciones y soluciones son locales como en la nube.
 
@@ -48,8 +45,7 @@ Esta tecnología de protección usa directivas de autorización, identidad y cif
 
 Por ejemplo, puede configurar un informe o una hoja de cálculo de previsión de ventas para que solamente pueda tener acceso gente de la organización, y controlar si se puede editar un documento, si se restringe a solo lectura o si se impide que se pueda imprimir. Puede configurar los correos electrónicos de forma similar y, además, evitar que se puedan reenviar o que se use la opción Responder a todos. Estas tareas de protección se pueden simplificar mediante el uso de *plantillas de administración de derechos*.
 
-### Plantillas de administración de derechos
-<a id="rights-management-templates" class="xliff"></a>
+### <a name="rights-management-templates"></a>Plantillas de administración de derechos
 
 Tan pronto como active el servicio Azure Rights Management, se crean dos plantillas predeterminadas que restringen el acceso a los datos de los usuarios de su organización. Puede usar estas plantillas para ayudar a evitar inmediatamente la pérdida de datos de su organización. También puede complementar estas plantillas determinadas al configurar sus propias plantillas personalizadas que aplican controles más restrictivos.
 
@@ -65,8 +61,7 @@ Se pueden seleccionar las mismas plantillas en el centro de administración de E
 
 Para más información sobre la protección de Azure Rights Management, vea [¿Qué es Azure Rights Management?](what-is-azure-rms.md).
 
-## Integración con flujos de trabajo del usuario final
-<a id="integration-with-end-user-workflows" class="xliff"></a>
+## <a name="integration-with-end-user-workflows"></a>Integración con flujos de trabajo del usuario final
 
 Azure Information Protection se integra con los flujos de trabajo existentes de usuarios finales cuando se instala el cliente de Azure Information Protection. Este cliente instala la barra de Information Protection en aplicaciones de Office, como ya hemos visto en la primera imagen, en la que se mostraba dicha barra en Word. Se agrega la misma barra de Information Protection a Excel, PowerPoint y Outlook. Por ejemplo:
 
@@ -87,8 +82,7 @@ Después de haber protegido un documento, los usuarios y administradores pueden 
 ![Icono de revocación de acceso en el sitio de Seguimiento de documentos](../media/tracking-site-revoke-access-icon.png)
 
 
-## Recursos de Azure Information Protection
-<a id="resources-for-azure-information-protection" class="xliff"></a>
+## <a name="resources-for-azure-information-protection"></a>Recursos de Azure Information Protection
 
 - Anuncio: [Azure Information Protection is now Generally Available](https://blogs.technet.microsoft.com/enterprisemobility/2016/10/04/azure-information-protection-is-now-generally-available/) (Azure Information Protection ya está disponible con carácter general)
 
@@ -117,8 +111,7 @@ Después de haber protegido un documento, los usuarios y administradores pueden 
     - [BRK2128: Send secure email to anyone with the power of Microsoft Office 365 and Azure Information Protection](https://myignite.microsoft.com/videos?q=BRK2128) (Enviar correo electrónico seguro a cualquier persona con la eficacia de Microsoft Office 365 y Azure Information Protection)
 
 
-## Pasos siguientes
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Pasos siguientes
 
 Lea la entrada del blob, [Azure Information Protection: Ready, set, protect!](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/21/azure-information-protection-ready-set-protect/) (Azure Information Protection: preparado, listo, protege)
 

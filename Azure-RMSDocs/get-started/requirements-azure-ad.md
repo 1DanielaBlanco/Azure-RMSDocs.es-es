@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/12/2017
 ---
-# Requisitos de Azure Active Directory para Azure Information Protection
-<a id="azure-active-directory-requirements-for-azure-information-protection" class="xliff"></a>
+# <a name="azure-active-directory-requirements-for-azure-information-protection"></a>Requisitos de Azure Active Directory para Azure Information Protection
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
@@ -35,8 +34,7 @@ Para más información, consulte los recursos siguientes en la documentación de
 
 Si desea integrar el directorio de Azure AD con los bosques de AD locales, consulte [Integración de las identidades locales con Azure Active Directory](/active-directory/active-directory-aadconnect).
 
-### Escenarios que tienen requisitos específicos
-<a id="scenarios-that-have-specific-requirements" class="xliff"></a> 
+### <a name="scenarios-that-have-specific-requirements"></a>Escenarios que tienen requisitos específicos 
 
 Equipos que ejecutan Office 2010: 
 
@@ -58,8 +56,7 @@ Dispositivos móviles o equipos Mac que se autentican localmente mediante AD FS
 
 - Debe usar AD FS en la versión mínima de servidor de **Windows Server 2012 R2** o un proveedor de autenticación alternativo que admita el protocolo OAuth 2.0.
 
-## Multi-Factor Authentication (MFA) y Azure Information Protection
-<a id="multi-factor-authentication-mfa-and-azure-information-protection" class="xliff"></a>
+## <a name="multi-factor-authentication-mfa-and-azure-information-protection"></a>Multi-Factor Authentication (MFA) y Azure Information Protection
 Para usar Multi-Factor Authentication (MFA) con Azure Information Protection se necesita como mínimo uno de los dos requisitos siguientes:
 
 -   Office 2013 (versión mínima):
@@ -94,8 +91,7 @@ A continuación, configure la solución MFA:
 
 El conector de Rights Management no es compatible con MFA. Si implementa este conector para los servidores locales, para el conector deberá usar una cuenta que no requiera MFA.
 
-## Pasos siguientes
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Pasos siguientes
 Para comprobar otros requisitos, vea [Requisitos para Azure Information Protection](requirements-azure-rms.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

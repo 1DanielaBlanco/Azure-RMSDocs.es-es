@@ -18,9 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/30/2017
 ---
-<a id="planning-and-implementing-your-azure-information-protection-tenant-key" class="xliff"></a>
-
-# Planeamiento e implementación de su clave de inquilino de Azure Information Protection
+# <a name="planning-and-implementing-your-azure-information-protection-tenant-key"></a>Planeamiento e implementación de su clave de inquilino de Azure Information Protection
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
@@ -40,9 +38,7 @@ Use la información de este artículo como ayuda para planear y administrar su c
 Si es necesario, puede cambiar la topología de clave de inquilino tras realizar la implementación con el cmdlet [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties).
 
 
-<a id="choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok" class="xliff"></a>
-
-## Elija su topología de clave de inquilino: Administrada por Microsoft (opción predeterminada) o por usted (BYOK)
+## <a name="choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok"></a>Elija su topología de clave de inquilino: Administrada por Microsoft (opción predeterminada) o por usted (BYOK)
 Decide qué topología de clave de inquilino es la mejor para su organización. De forma predeterminada, Azure Information Protection genera su clave de inquilino y administra la mayoría de los aspectos del ciclo de vida de la clave de inquilino. Esta es la opción más simple con las mínimas sobrecargas administrativas. En la mayoría de casos, no es necesario ni tan siquiera que sepa que tiene una clave de inquilino. Simplemente, regístrese en Azure Information Protection y Microsoft se encargará del resto del proceso de administración de la clave.
 
 Como alternativa, puede tener un control total sobre la clave de inquilino con el [Almacén de claves de Azure](https://azure.microsoft.com/services/key-vault/). Para este escenario es necesario crear una clave de inquilino y mantener la copia maestra de forma local. Con frecuencia este escenario también se conoce como Aportar tu propia clave (BYOK). Con esta opción, el proceso es:
@@ -58,9 +54,7 @@ Aunque es opcional, es probable que quiera usar los registros de uso en tiempo c
 > [!NOTE]
 > Como medida de protección adicional, el Almacén de claves de Azure usa dominios de seguridad independientes para sus centros de datos en regiones como Norteamérica, EMEA (Europa, Oriente Medio y África) y Asia. También para diferentes instancias de Azure, como Microsoft Azure Alemania y Azure Government. Si administra su propia clave de inquilino, estará vinculada al dominio de seguridad de la región o instancia donde se haya registrado el inquilino de Azure Information Protection. Por ejemplo, una clave de inquilino de un cliente europeo no puede usarse en centros de datos de América del Norte o Asia.
 
-<a id="the-tenant-key-lifecycle" class="xliff"></a>
-
-## El ciclo de vida de la clave de inquilino
+## <a name="the-tenant-key-lifecycle"></a>El ciclo de vida de la clave de inquilino
 Si decide que Microsoft debe encargarse de administrar su clave de inquilino, se hará cargo de la mayoría de operaciones del ciclo de vida de la clave. Sin embargo, si decide administrar por su cuenta la clave de inquilino, será responsable de muchas de las operaciones del ciclo de vida de la clave y de algunos procedimientos adicionales en el Almacén de claves de Azure.
 
 Los diagramas siguientes muestran y comparan estas dos opciones. El primer diagrama muestra las pocas sobrecargas de administrador que se dan en la configuración predeterminada cuando Microsoft administra la clave de inquilino.
@@ -75,9 +69,7 @@ Si decide dejar que Microsoft administre su clave de inquilino, no se necesita h
 
 Si decide administrar usted mismo la clave de inquilino, lea las secciones siguientes para obtener más información.
 
-<a id="implementing-your-azure-information-protection-tenant-key" class="xliff"></a>
-
-## Implementación de su clave de inquilino de Azure Information Protection
+## <a name="implementing-your-azure-information-protection-tenant-key"></a>Implementación de su clave de inquilino de Azure Information Protection
 
 Usa la información y los procedimientos de esta sección si ha decidido generar y administrar su clave de inquilino; el escenario Aportar tu propia clave (BYOK):
 
@@ -87,9 +79,7 @@ Usa la información y los procedimientos de esta sección si ha decidido generar
 > 
 > [Póngase en contacto con el soporte técnico de Microsoft](../get-started/information-support.md#to-contact-microsoft-support) también si su organización tiene directivas específicas para el manejo de claves.
 
-<a id="prerequisites-for-byok" class="xliff"></a>
-
-### Requisitos previos para BYOK
+### <a name="prerequisites-for-byok"></a>Requisitos previos para BYOK
 Consulte la tabla siguiente para consultar una lista de requisitos previos para Aportar tu propia clave (BYOK).
 
 |Requisito|Más información|
@@ -101,9 +91,7 @@ Consulte la tabla siguiente para consultar una lista de requisitos previos para 
 
 Para obtener más información sobre los HSM de Thales y sobre su uso con el Almacén de claves de Azure, consulte el [sitio web de Thales](https://www.thales-esecurity.com/msrms/cloud).
 
-<a id="instructions-for-byok" class="xliff"></a>
-
-### Instrucciones de BYOK
+### <a name="instructions-for-byok"></a>Instrucciones de BYOK
 
 Para generar y transferir su propia clave de inquilino al Almacén de claves de Azure, siga los procedimientos que se indican en [Generación y transferencia de claves protegidas con HSM para el Almacén de claves de Azure](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/) en la documentación del Almacén de claves de Azure.
 
@@ -131,9 +119,7 @@ Si necesita confirmar que la URL de clave se ha configurado correctamente en el 
 Por último, si el servicio de Azure Rights Management ya está activado, ejecute [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties) para que Azure Rights Management use esta clave como clave del inquilino activo del servicio de Azure Rights Management. Si no completa este paso, Azure Rights Management seguirá usando la clave predeterminada administrada por Microsoft que se creó automáticamente al activar el servicio.
 
 
-<a id="next-steps" class="xliff"></a>
-
-## Pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 
 Ahora que ha realizado la planeación, y si es necesario, ha generado su clave de inquilino, haga lo siguiente:
 
