@@ -18,9 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/30/2017
 ---
-<a id="create-configure-and-publish-a-custom-template" class="xliff"></a>
-
-# Creación, configuración y publicación de una plantilla personalizada
+# <a name="create-configure-and-publish-a-custom-template"></a>Creación, configuración y publicación de una plantilla personalizada
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
@@ -34,9 +32,7 @@ Debe ser administrador global para crear y administrar plantillas en el Portal d
 
 Usa los procedimientos siguientes para crear, configurar y publicar plantillas personalizadas para Rights Management.
 
-<a id="to-create-a-custom-template" class="xliff"></a>
-
-## Para crear una plantilla personalizada
+## <a name="to-create-a-custom-template"></a>Para crear una plantilla personalizada
 
 1.  En función de que inicie sesión en el Centro de administración de Office 365 o en el Portal de Azure clásico, emplee uno de los siguientes procedimientos:
 
@@ -76,9 +72,7 @@ Usa los procedimientos siguientes para crear, configurar y publicar plantillas p
 
 4. En la página de inicio rápido **Empiece a trabajar con Rights Management** , haga clic en **Administrar sus plantillas de directivas de permisos**. Verá la plantilla recién creada agregada a la lista de plantillas, con el estado **Archivada**. En esta fase, la plantilla se ha creado pero no se ha configurado, y no es visible para los usuarios.
 
-<a id="to-configure-and-publish-a-custom-template" class="xliff"></a>
-
-## Para configurar y publicar una plantilla personalizada
+## <a name="to-configure-and-publish-a-custom-template"></a>Para configurar y publicar una plantilla personalizada
 
 1.  Seleccione la plantilla recién creada en la página **PLANTILLAS** del Portal de Azure clásico.
 
@@ -170,9 +164,7 @@ Para realizar cualquier cambio en tu plantilla, selecciónala y, a continuación
 > [!WARNING]
 > Cuando realices cambios en una plantilla que has guardado antes, los clientes no verán dichos cambios en la plantilla hasta que se actualicen en sus equipos. Para más información, consulte [Actualización de plantillas para usuarios](refresh-templates.md).
 
-<a id="see-also" class="xliff"></a>
-
-## Véase también
+## <a name="see-also"></a>Véase también
 [Configuración de plantillas personalizadas para Azure Rights Management](configure-custom-templates.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

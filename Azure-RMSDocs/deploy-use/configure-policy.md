@@ -18,17 +18,13 @@ ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/30/2017
 ---
-<a id="configuring-azure-information-protection-policy" class="xliff"></a>
-
-# Configuración de la directiva de Azure Information Protection
+# <a name="configuring-azure-information-protection-policy"></a>Configuración de la directiva de Azure Information Protection
 
 >*Se aplica a: Azure Information Protection*
 
 Para configurar la protección, la clasificación y el etiquetado, debe configurar la directiva de Azure Information Protection. Esta directiva se descarga luego en los equipos que tienen instalado el [cliente de Azure Information Protection](https://www.microsoft.com/en-us/download/details.aspx?id=53018).
 
-<a id="subscription-support" class="xliff"></a>
-
-## Compatibilidad con la suscripción
+## <a name="subscription-support"></a>Compatibilidad con la suscripción
 
 La directiva de Azure Information Protection admite distintos niveles de suscripciones:
 
@@ -46,9 +42,7 @@ Para más información sobre las suscripciones, consulte [¿Qué suscripción ne
 
 Para más información sobre cómo configurar las directivas con ámbito, consulte [Configuración de la directiva para usuarios específicos mediante directivas de ámbito](configure-policy-scope.md).
 
-<a id="how-to-configure-the-azure-information-protection-policy" class="xliff"></a>
-
-## Para configurar la directiva de Azure Information Protection
+## <a name="how-to-configure-the-azure-information-protection-policy"></a>Para configurar la directiva de Azure Information Protection
 
 1. En una nueva ventana del explorador, inicie sesión en [Azure Portal](https://portal.azure.com) como administrador de seguridad o administrador global.
 
@@ -91,9 +85,7 @@ El cliente de Azure Information Protection busca cambios cada vez que se inicia 
 >[!NOTE]
 >Cuando el cliente descargue la directiva, tenga en cuenta que deberá esperar unos minutos antes de que esté totalmente operativa. El tiempo real varía según factores como el tamaño y la complejidad de la configuración de la directiva y la conectividad de red. Si la acción resultante de las etiquetas no coincide con los cambios más recientes, deje pasar hasta 15 minutos y vuelva a intentarlo.
 
-<a id="configuring-your-organizations-policy" class="xliff"></a>
-
-### Configuración de la directiva de la organización
+### <a name="configuring-your-organizations-policy"></a>Configuración de la directiva de la organización
 
 Use la siguiente información como ayuda para configurar la directiva de Azure Information Protection:
 
@@ -119,9 +111,7 @@ Use la siguiente información como ayuda para configurar la directiva de Azure I
 
 - [Configuración de etiquetas para distintos idiomas](configure-policy-languages.md)
 
-<a id="next-steps" class="xliff"></a>
-
-## Pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 
 Para ver un ejemplo de cómo personalizar la directiva predeterminada y ver el comportamiento resultante en una aplicación de Office, pruebe el [tutorial de inicio rápido de Azure Information Protection](../get-started/infoprotect-quick-start-tutorial.md).
 
