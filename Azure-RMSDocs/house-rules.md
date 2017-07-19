@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/07/2017
 ---
-# Condiciones para los comentarios sobre la documentación de Azure Information Protection
-<a id="house-rules-for-comments-on-the-azure-information-protection-documentation" class="xliff"></a>
+# <a name="house-rules-for-comments-on-the-azure-information-protection-documentation"></a>Condiciones para los comentarios sobre la documentación de Azure Information Protection
 
 >*Se aplica a: Azure Information Protection, Office 365*
 

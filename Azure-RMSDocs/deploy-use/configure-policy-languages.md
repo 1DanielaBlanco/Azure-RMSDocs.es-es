@@ -16,9 +16,7 @@ ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/05/2017
 ---
-<a id="how-to-configure-labels-for-different-languages-in-azure-information-protection" class="xliff"></a>
-
-# Configuración de etiquetas para distintos idiomas en Azure Information Protection
+# <a name="how-to-configure-labels-for-different-languages-in-azure-information-protection"></a>Configuración de etiquetas para distintos idiomas en Azure Information Protection
 
 >*Se aplica a: Azure Information Protection*
 
@@ -29,9 +27,7 @@ De manera predeterminada, los nombres y las descripciones de las etiquetas admit
 
 Seleccione los idiomas que coinciden con la configuración de idioma de los usuarios para Office y Windows. Estos nombres y descripciones de etiquetas se muestran entonces en la barra de Azure Information Protection en aplicaciones de Office y en el cuadro de diálogo **Classify and protection - Azure Information Protection** (Clasificación y protección: Azure Information Protection), respectivamente. Para más información sobre el idioma elegido, consulte la sección [Cómo el cliente de Azure Information Protection determina el idioma que se mostrará](#how-the-azure-information-protection-client-determines-the-language-to- display) que aparece en esta página. 
 
-<a id="to-configure-labels-to-display-in-different-languages" class="xliff"></a>
-
-## Para configurar etiquetas para mostrarlas en distintos idiomas
+## <a name="to-configure-labels-to-display-in-different-languages"></a>Para configurar etiquetas para mostrarlas en distintos idiomas
 
 1. Si aún no lo ha hecho, abra una nueva ventana del explorador, inicie sesión en [Azure Portal](https://portal.azure.com) como administrador de seguridad o administrador global y, después, navegue hasta la hoja **Azure Information Protection**. 
     
@@ -66,9 +62,7 @@ Seleccione los idiomas que coinciden con la configuración de idioma de los usua
     
     Cuando se completa la importación, los nombres y descripciones de etiquetas localizados se descargarán a los usuarios la próxima vez que publique la directiva de Azure Information Protection. Puede hacer clic en **Publicar** en la hoja **Directiva global** o **Directivas con ámbito**.
 
-<a id="how-the-azure-information-protection-client-determines-the-language-to-display" class="xliff"></a>
-
-## Cómo el cliente de Azure Information Protection determina el idioma que se mostrará
+## <a name="how-the-azure-information-protection-client-determines-the-language-to-display"></a>Cómo el cliente de Azure Information Protection determina el idioma que se mostrará
 
 Cuando los usuarios descarga una directiva de Azure Information Protection que admite distintos idiomas, el idioma que ven los usuarios en los nombres e informaciones sobre herramientas de sus etiquetas lo determina la siguiente lógica:
 
@@ -84,9 +78,7 @@ Cuando los usuarios descarga una directiva de Azure Information Protection que a
 
 - Cuando no existe coincidencia con el idioma del sistema operativo, los nombres y descripciones de etiquetas aparecen en el idioma que especificó de manera predeterminada para todos los usuarios. Normalmente este idioma es el inglés, el idioma que se usa en la directiva predeterminada.
 
-<a id="when-localized-label-names-are-not-used" class="xliff"></a>
-
-## Cuándo no se usan los nombres de etiquetas localizados
+## <a name="when-localized-label-names-are-not-used"></a>Cuándo no se usan los nombres de etiquetas localizados
 
 Los nombres de etiquetas (y subetiquetas) localizados no se usan en los escenarios siguientes. Para mantener la coherencia entre su inquilino, el idioma predeterminado siempre se usa para lo siguiente:
 
@@ -97,9 +89,7 @@ Los nombres de etiquetas (y subetiquetas) localizados no se usan en los escenari
 - Metadatos de documentos y encabezados de correo electrónico
 
 
-<a id="next-steps" class="xliff"></a>
-
-## Pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 
 Para más información sobre las opciones que puede cambiar para una etiqueta, así como otra configuración de la directiva de Azure Information Protection, use los vínculos de la sección [Configuring your organization's policy](configure-policy.md#configuring-your-organizations-policy) (Configuración de la directiva de la organización).
 

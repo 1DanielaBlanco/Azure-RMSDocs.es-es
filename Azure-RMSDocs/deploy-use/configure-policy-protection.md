@@ -16,9 +16,7 @@ ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/05/2017
 ---
-<a id="how-to-configure-a-label-for-rights-management-protection" class="xliff"></a>
-
-# Configuración de una etiqueta para la protección de Rights Management
+# <a name="how-to-configure-a-label-for-rights-management-protection"></a>Configuración de una etiqueta para la protección de Rights Management
 
 >*Se aplica a: Azure Information Protection*
 
@@ -26,9 +24,7 @@ Puede proteger sus documentos y correos electrónicos más confidenciales median
 
 La plantilla puede ser una de las plantillas predeterminadas que se crean automáticamente al activar Azure Rights Management o una plantilla personalizada. Las plantillas departamentales de Azure Rights Management se admiten pero solo aplican la protección cuando el autor del documento o del correo electrónico está dentro del ámbito configurado de la plantilla. Si el usuario no está dentro del ámbito, verá un mensaje para indicar que Azure Information Protection no puede aplicar la etiqueta.
 
-<a id="how-the-protection-works" class="xliff"></a>
-
-## Funcionamiento de la protección
+## <a name="how-the-protection-works"></a>Funcionamiento de la protección
 
 Cuando un documento o un correo electrónico están protegidos con Rights Management, se cifran en reposo y en tránsito y solo los usuarios autorizados pueden descifrarlos. Este cifrado permanece con el documento o el correo electrónico, incluso si se cambia de nombre. Además, puede configurar derechos y restricciones de uso, como en los ejemplos siguientes:
 
@@ -54,9 +50,7 @@ No es necesario que Exchange esté configurado para Information Rights Managemen
 - Para Exchange local, debe implementar el [conector RMS y configurar los servidores de Exchange](../deploy-use/deploy-rms-connector.md). 
 
 
-<a id="to-configure-a-label-for-rights-management-protection" class="xliff"></a>
-
-## Para configurar una etiqueta para la protección de Rights Management
+## <a name="to-configure-a-label-for-rights-management-protection"></a>Para configurar una etiqueta para la protección de Rights Management
 
 1. Si aún no lo ha hecho, abra una nueva ventana del explorador e inicie sesión en [Azure Portal](https://portal.azure.com) como administrador de seguridad o administrador global y, después, navegue hasta la hoja **Azure Information Protection**. 
 
@@ -125,9 +119,7 @@ No es necesario que Exchange esté configurado para Information Rights Managemen
 
 13. Para que los cambios estén disponibles para los usuarios, en la hoja **Azure Information Protection**, haga clic en **Publicar**.
 
-<a id="next-steps" class="xliff"></a>
-
-## Pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 
 Para más información sobre cómo configurar la directiva de Azure Information Protection, use los vínculos de la sección [Configuring your organization's policy](configure-policy.md#configuring-your-organizations-policy) (Configuración de la directiva de la organización).  
 

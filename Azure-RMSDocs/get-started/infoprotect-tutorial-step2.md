@@ -16,8 +16,7 @@ ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/13/2017
 ---
-# Paso 2: configurar y publicar la directiva de Azure Information Protection
-<a id="step-2-configure-and-publish-the-azure-information-protection-policy" class="xliff"></a>
+# <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>Paso 2: configurar y publicar la directiva de Azure Information Protection
 
 >*Se aplica a: Azure Information Protection*
 
@@ -49,8 +48,7 @@ Aunque Azure Information Protection incluye una directiva predeterminada que se 
     
     ![Paso 3 del tutorial de inicio rápido de Azure Information Protection - Directiva predeterminada](../media/info-protect-policy-default-settings.png)
 
-## Cambiar la configuración de una etiqueta predeterminada y solicitar la justificación
-<a id="changing-the-settings-for-a-default-label-and-prompt-for-justification" class="xliff"></a>
+## <a name="changing-the-settings-for-a-default-label-and-prompt-for-justification"></a>Cambiar la configuración de una etiqueta predeterminada y solicitar la justificación
 
 En este tutorial, se cambiarán algunas de esas configuraciones de directiva para que pueda ver cómo funcionan:
 
@@ -60,8 +58,7 @@ En este tutorial, se cambiarán algunas de esas configuraciones de directiva par
 
 2. En **Los usuarios deben proporcionar una justificación para establecer una etiqueta de clasificación inferior, quitar una etiqueta o quitar la protección**, establezca esta opción en **Activado**.
 
-## Configurar una etiqueta para protección, una marca de agua y una condición para solicitar la clasificación
-<a id="configuring-a-label-for-protection-a-watermark-and-a-condition-to-prompt-for-classification" class="xliff"></a>
+## <a name="configuring-a-label-for-protection-a-watermark-and-a-condition-to-prompt-for-classification"></a>Configurar una etiqueta para protección, una marca de agua y una condición para solicitar la clasificación
 
 Ahora cambiaremos la configuración de una de las subetiquetas, **Todos los empleados**, desde la etiqueta principal **Confidencial**. 
 
