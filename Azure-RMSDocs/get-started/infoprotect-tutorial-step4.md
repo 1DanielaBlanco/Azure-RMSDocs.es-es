@@ -4,17 +4,17 @@ description: "Paso 4 de un tutorial de introducción para probar rápidamente Az
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/21/2017
+ms.date: 07/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
-ms.openlocfilehash: 9a21c10404582000a55ee0cea554aad9b5a552b3
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: d397ed8290d8b792b55ee78865cdbd41e330f8a9
+ms.sourcegitcommit: d42c6bb914563ae798d4171bb017c85b7077abfb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/14/2017
 ---
 # <a name="step-4-see-classification-labeling-and-protection-in-action"></a>Paso 4: ver la clasificación, el etiquetado y la protección en funcionamiento 
 
@@ -54,7 +54,7 @@ En la barra de Information Protection, haga clic en el icono **Editar etiqueta**
 
 Esta vez, cuando se le solicite, escriba "Este documento no necesita clasificación" y haga clic en **Confirmar**.  
 
-Verá que el valor **Confidencialidad** muestra **No establecido**, que es lo que los usuarios ven inicialmente si no establece una etiqueta predeterminada:
+Ve que el valor **Confidencialidad** muestra **No establecido**, que es lo que los usuarios ven inicialmente si no establece una etiqueta predeterminada:
 
 ![Paso 4 del tutorial de inicio rápido de Azure Information Protection: quitar clasificación](../media/sensitivity-not-setv2.png)
 
@@ -69,7 +69,7 @@ Verá que el valor **Confidencialidad** muestra **No establecido**, que es lo qu
 
     ![Paso 4 del tutorial de inicio rápido de Azure Information Protection: recomendar aviso](../media/change-nowv2.png)
 
-    Además del documento que ahora muestra que se aplica nuestra etiqueta configurada (por ejemplo, **Confidencial \ Todos los empleados**), verá inmediatamente la marca de agua del nombre de su organización en la página, y también se aplica el pie de página **Clasificado como confidencial**. 
+    Además del documento que ahora muestra que se aplica nuestra etiqueta configurada (por ejemplo, **Confidencial \ Todos los empleados**), ve inmediatamente la marca de agua del nombre de su organización en la página, y también se aplica el pie de página **Clasificado como confidencial**. 
 
     El documento también está protegido con la plantilla de Azure Rights Management que ha especificado, que puede confirmar cuando haga clic en la pestaña **Archivo** y vea la información de **Proteger documento**. Si ha usado la plantilla Confidencial predeterminada, verá la información de que el documento está restringido a los usuarios internos (los usuarios externos a la organización no podrán abrir el documento) y su contenido no puede copiarse ni imprimirse. Como propietario del documento, puede copiar de este e imprimirlo, pero si lo envía por correo electrónico a otro usuario de su organización, no podrán realizar estas acciones.
 

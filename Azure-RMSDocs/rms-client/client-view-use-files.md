@@ -12,15 +12,13 @@ ms.technology: techgroup-identity
 ms.assetid: ce1c7d4c-b5ff-4672-8b9a-a72129bac992
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6d73a8651b3bea3b8773b4aba49c7d2e85873a80
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: d8fd80d6ff97118cd37dd62e293768b145c98595
+ms.sourcegitcommit: 1c3ebf4ad64b55db4fec3ad007fca71ab7d38c02
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/18/2017
 ---
-<a id="view-and-use-files-that-have-been-protected-by-rights-management" class="xliff"></a>
-
-# Ver y usar los archivos protegidos por Rights Management
+# <a name="view-and-use-files-that-have-been-protected-by-rights-management"></a>Ver y usar los archivos protegidos por Rights Management
 
 >*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 8.1, Windows 8 y Windows 7 con SP1*
 
@@ -42,17 +40,13 @@ El visor se instala automáticamente como parte del cliente de Azure Information
 > Instale el visor si alguien de otra organización le ha enviado un documento protegido o si no tiene permisos de administrador local para el equipo.
 
 Para poder abrir un documento protegido, la aplicación debe estar "habilitada para RMS". Las aplicaciones de Office y el visor de Azure Information Protection son ejemplos de aplicaciones habilitadas para RMS. Para ver una lista de aplicaciones por tipo y dispositivos compatibles, consulte la tabla de [aplicaciones habilitadas para RMS](../get-started/requirements-applications.md#rms-enlightened-applications).  
-<a id="messagerpmsg-as-an-email-attachment" class="xliff"></a>
-
-## Message.rpmsg como datos adjuntos de correo electrónico
+## <a name="messagerpmsg-as-an-email-attachment"></a>Message.rpmsg como datos adjuntos de correo electrónico
 
 Si ve **message.rpmsg** como un archivo adjunto en un correo electrónico, no se trata de un documento protegido sino un mensaje de correo electrónico protegido que se muestra como archivo adjunto. No puede usar el visor de Azure Information Protection para Windows para ver este mensaje de correo electrónico protegido en el equipo Windows. En su lugar, necesitará una aplicación de correo electrónico para Windows compatible con la protección de Rights Management, como Office Outlook. También puede usar Outlook en la Web.
 
 Sin embargo, si tiene un dispositivo iOS o Android, puede usar la aplicación Azure Information Protection para abrir estos mensajes de correo electrónico protegidos. Puede descargar esta aplicación para estos dispositivos móviles desde la página [Microsoft Azure Information Protection](https://go.microsoft.com/fwlink/?LinkId=303970) en el sitio web de Microsoft.
 
-<a id="prompts-for-authentication" class="xliff"></a>
-
-## Solicitudes de autenticación
+## <a name="prompts-for-authentication"></a>Solicitudes de autenticación
 
 Para poder ver el archivo protegido, el servicio Rights Management utilizado para proteger el archivo primero debe confirmar que está autorizado para ver el archivo. Para ello, el servicio comprueba el nombre de usuario y la contraseña. En algunos casos, esto se puede almacenar en caché y no verá un mensaje que le solicite sus credenciales. En otros casos, se le pedirá que proporcione sus credenciales.
 
@@ -64,9 +58,7 @@ Si su organización no tiene una cuenta basada en la nube para que la utilice (p
     
 -   Para obtener más información, consulte [RMS for individuals and Azure Rights Management](../understand-explore/rms-for-individuals.md) (RMS para usuarios y Azure Rights Management).
 
-<a id="to-view-and-use-a-protected-document" class="xliff"></a>
-
-## Para ver y usar un documento protegido
+## <a name="to-view-and-use-a-protected-document"></a>Para ver y usar un documento protegido
 
 1. Abra el archivo protegido (por ejemplo, al haciendo doble clic en el archivo o los datos adjuntos o haciendo clic en el vínculo al archivo). Si se le pide que seleccione una aplicación, seleccione **Visor de Azure Information Protection**. 
 
@@ -85,12 +77,10 @@ Si su organización no tiene una cuenta basada en la nube para que la utilice (p
 5. Si tiene archivos protegidos adicionales para abrir, puede ir directamente a ellos desde el visor, mediante la opción **Abrir**. El archivo seleccionado reemplaza al archivo original en el visor. 
 
 > [!TIP]
-> Si el archivo protegido no se abre, descargue y use la [herramienta RMS Analyzer](https://www.microsoft.com/en-us/download/details.aspx?id=46437). Siga las instrucciones de la herramienta para detectar problemas en su equipo que puedan impedir que se abra un documento protegido.
+> Si no se abre el archivo protegido, utilice la opción **Ayuda y comentarios** de Azure Information Protection y seleccione **Ejecutar diagnósticos**. Una vez finalizadas las pruebas, restablezca al cliente, lo que puede resolver el problema.
 
 
-<a id="other-instructions" class="xliff"></a>
-
-## Otras instrucciones
+## <a name="other-instructions"></a>Otras instrucciones
 Puede encontrar más instrucciones sobre procedimientos en la guía del usuario de Azure Information Protection:
 
 -   [¿Qué desea hacer?](client-user-guide.md#what-do-you-want-to-do)

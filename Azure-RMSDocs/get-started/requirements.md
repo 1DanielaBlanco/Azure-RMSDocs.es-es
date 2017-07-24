@@ -4,7 +4,7 @@ description: "Identifique los requisitos previos para implementar Azure Informat
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/10/2017
+ms.date: 07/17/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,21 +12,19 @@ ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 74c0725857148fe12943bd9368173124cb059dcf
-ms.sourcegitcommit: 1128ccda089727ac4a638e99532516474cef0ef4
+ms.openlocfilehash: 2a41876a8c307b0736901de895e10cf3d3201809
+ms.sourcegitcommit: 12c9a4e3fe8e92d816f0a13003062f20dd2716df
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 07/17/2017
 ---
-# Requirements for Azure Information Protection (Requisitos de Azure Information Protection)
-<a id="requirements-for-azure-information-protection" class="xliff"></a>
+# <a name="requirements-for-azure-information-protection"></a>Requirements for Azure Information Protection (Requisitos de Azure Information Protection)
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
 Antes de implementar Azure Information Protection para su organización, asegúrese de que tiene los siguientes requisitos previos. 
 
-## Suscripción a Azure Information Protection
-<a id="subscription-for-azure-information-protection" class="xliff"></a>
+## <a name="subscription-for-azure-information-protection"></a>Suscripción a Azure Information Protection
 
 Para clasificación, etiquetado y protección, debe tener un [plan de Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing). 
 
@@ -37,8 +35,7 @@ Para asegurarse de que la suscripción de la organización incluya las caracter�
 > [!NOTE]
 > Si tiene alguna pregunta sobre las suscripciones o licencias, no las publique en esta página. En su lugar, póngase en contacto con el administrador de cuentas de Microsoft o con [Soporte técnico de Microsoft](information-support.md#to-contact-microsoft-support).
 
-## Azure Active Directory
-<a id="azure-active-directory" class="xliff"></a>
+## <a name="azure-active-directory"></a>Azure Active Directory
 
 Su organización debe tener un directorio de Azure Active Directory (Azure AD) para admitir la autenticación y autorización de usuario para Azure Information Protection. Además, si desea usar sus cuentas de usuario desde su directorio local (AD DS), también deberá configurar la integración de directorios.
 
@@ -48,8 +45,7 @@ Para obtener más información sobre los requisitos de autenticación, consulte 
 
 Para más información acerca de los requisitos de usuario y cuentas de grupo para la autorización, consulte [Preparación de usuarios y grupos para Azure Information Protection](../plan-design/prepare.md).
 
-## Dispositivos cliente
-<a id="client-devices" class="xliff"></a>
+## <a name="client-devices"></a>Dispositivos cliente
 
 Los usuarios deben tener dispositivos cliente (equipo o dispositivo móvil) que ejecuten un sistema operativo compatible con Azure Information Protection.
 
@@ -69,12 +65,11 @@ Los siguientes dispositivos admiten el cliente de Azure Information Protection, 
 
 - Windows Server 2008 R2 
 
-En estas versiones de servidor, el cliente de Azure Information Protection es compatible con los Servicios de Escritorio remoto. Si elimina perfiles de usuario al utilizar el cliente de Azure Information Protection con los Servicios de Escritorio remoto, no elimine la carpeta **%LocalAppData%\Roaming\Microsoft\Protect**.
+En estas versiones de servidor, el cliente de Azure Information Protection es compatible con los Servicios de Escritorio remoto. Si elimina perfiles de usuario al utilizar el cliente de Azure Information Protection con los Servicios de Escritorio remoto, no elimine la carpeta **%Appdata%\Microsoft\Protect**.
 
 Cuando el cliente de Azure Information Protection protege los datos mediante el servicio Azure Rights Management, pueden consumirlos los [mismos dispositivos](requirements-client-devices.md) que son compatibles con el servicio Azure Rights Management.
 
-## Aplicaciones
-<a id="applications" class="xliff"></a>
+## <a name="applications"></a>Aplicaciones
 
 El cliente de Azure Information Protection puede etiquetar y proteger documentos y correos electrónicos mediante las aplicaciones de Office **Word**, **Excel**, **PowerPoint** y **Outlook** de cualquiera de las siguientes ediciones de Office:
 
@@ -90,8 +85,7 @@ Las demás ediciones de Office no pueden proteger los documentos y correos elect
 
 Para obtener información sobre las ediciones de Office que son compatibles con el servicio de protección de datos, vea [Aplicaciones compatibles con la protección de datos de Azure Rights Management](requirements-applications.md).
 
-## Firewalls e infraestructura de red
-<a id="firewalls-and-network-infrastructure" class="xliff"></a>
+## <a name="firewalls-and-network-infrastructure"></a>Firewalls e infraestructura de red
 
 Si tiene un firewall o dispositivos de red de intervención similares que estén configurados para permitir conexiones específicas, vea la información de **Azure Rights Management (RMS)** en la sección [Portal de Office 365 e infraestructura compartida](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US#bkmk_portal-identity) del siguiente artículo de Office: [URL de Office 365 e intervalos de direcciones IP](https://support.office.com/en-US/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2).
 
@@ -106,8 +100,7 @@ Además de la información del artículo de Office específica de Azure Informat
 - Si usa un proxy web que precisa de autenticación, debe configurarlo para usar la autenticación integrada de Windows con las credenciales de inicio de sesión de Active Directory del usuario.
 
 
-### Servidores locales
-<a id="on-premises-servers" class="xliff"></a>
+### <a name="on-premises-servers"></a>Servidores locales
 
 Si quiere usar el servicio Azure Rights Management de Azure Information Protection con servidores locales, los siguientes productos son compatibles:
 
@@ -119,8 +112,7 @@ Si quiere usar el servicio Azure Rights Management de Azure Information Protecti
 
 Para más información sobre los requisitos adicionales para este escenario, vea [Requisitos de Azure RMS: Servidores locales que son compatibles con Azure RMS](requirements-servers.md).
 
-### Coexistencia de AD RMS y Azure RMS
-<a id="coexistence-of-ad-rms-with-azure-rms" class="xliff"></a>
+### <a name="coexistence-of-ad-rms-with-azure-rms"></a>Coexistencia de AD RMS y Azure RMS
 
 El siguiente escenario de implementación no se admite a no ser que esté usando la protección de AD RMS con Azure Information Protection (la configuración “conserve su propia clave” o HYOK):
 
