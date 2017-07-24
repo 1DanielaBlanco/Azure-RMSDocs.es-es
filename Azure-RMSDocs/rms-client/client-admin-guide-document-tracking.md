@@ -12,21 +12,19 @@ ms.technology: techgroup-identity
 ms.assetid: 983ecdc9-5631-48b8-8777-f4cbbb4934e8
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 2f8e3310eee90f3e81da4f513d795af478015222
-ms.sourcegitcommit: ea03477312b64c0a846701e46d991fe2c85b3a1f
+ms.openlocfilehash: f815fb9f9f1092ce83e9edc72f91381d3e8b46f3
+ms.sourcegitcommit: 12c9a4e3fe8e92d816f0a13003062f20dd2716df
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2017
+ms.lasthandoff: 07/17/2017
 ---
-# Configuración y uso de Seguimiento de documentos para Azure Information Protection
-<a id="configuring-and-using-document-tracking-for-azure-information-protection" class="xliff"></a>
+# <a name="configuring-and-using-document-tracking-for-azure-information-protection"></a>Configuración y uso de Seguimiento de documentos para Azure Information Protection
 
->*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 con SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012*
+>*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 con SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
 
 Si tiene una [suscripción que admite el seguimiento de documentos](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features), el sitio de seguimiento de documentos está habilitado de manera predeterminada para todos los usuarios de su organización. El seguimiento de documentos proporciona información para usuarios y administradores sobre cuándo se accedió a un documento protegido y, en caso de ser necesario, se puede revocar un documento al que se hizo seguimiento.
 
-## Controles de privacidad para el sitio de seguimiento de documentos
-<a id="privacy-controls-for-your-document-tracking-site" class="xliff"></a>
+## <a name="privacy-controls-for-your-document-tracking-site"></a>Controles de privacidad para el sitio de seguimiento de documentos
 
 Si mostrar toda esta información de seguimiento de documentos está prohibido en su organización debido a los requisitos de privacidad, puede deshabilitar el seguimiento de documentos mediante el cmdlet [Disable-AadrmDocumentTrackingFeature](/powershell/module/aadrm/disable-aadrmdocumenttrackingfeature). 
 
@@ -45,8 +43,7 @@ Puede usar el cmdlet [Clear-AadrmDoNotTrackUserGroup](/powershell/module/aadrm/C
 Para más información sobre cada uno de estos cmdlets, use los vínculos que se proporcionan. Para instrucciones de instalación del módulo de PowerShell, consulte [Instalación de Windows PowerShell para Azure Rights Management](../deploy-use/install-powershell.md). Si ya descargó e instaló el módulo, compruebe el número de versión. Para ello, ejecute: `(Get-Module aadrm –ListAvailable).Version`
 
 
-## Direcciones URL de destino que usa el sitio de seguimiento de documentos
-<a id="destination-urls-used-by-the-document-tracking-site" class="xliff"></a>
+## <a name="destination-urls-used-by-the-document-tracking-site"></a>Direcciones URL de destino que usa el sitio de seguimiento de documentos
 
 Las siguientes direcciones URL se usan para seguimiento de documentos y se deben permitir en todos los dispositivos y servicios entre los clientes que ejecutan el cliente de Azure Information Protection e Internet. Por ejemplo, agregue estas direcciones URL a los firewalls o a los sitios de confianza si usa Internet Explorer con seguridad mejorada.
 
@@ -60,8 +57,7 @@ Las siguientes direcciones URL se usan para seguimiento de documentos y se deben
 
 Estas direcciones URL son estándar para el servicio de Azure Rights Management, a excepción de la dirección URL virtualearth.net que se usa para que los mapas de Bing muestren la ubicación del usuario.
 
-## Realizar un seguimiento y revocar documentos para usuarios
-<a id="tracking-and-revoking-documents-for-users" class="xliff"></a>
+## <a name="tracking-and-revoking-documents-for-users"></a>Realizar un seguimiento y revocar documentos para usuarios
 
 Cuando los usuarios inician sesión en el sitio de Seguimiento de documentos, pueden realizar un seguimiento de documentos que han protegido con el cliente de Azure Information Protection o que han compartido con la aplicación Rights Management sharing o también revocarlos. Si inicia sesión como administrador de Azure Information Protection (administrador global), puede hacer clic en el icono Administrador, lo que permite utilizar el modo Administrador. Este modo permite ver los documentos que han seleccionado los usuarios de su organización para su seguimiento mediante el cliente de Azure Information Protection, o bien que han compartido usando la aplicación para uso compartido de Rights Management:
 
@@ -79,8 +75,7 @@ Para salir del modo de administrador, haga clic en la **X** junto a **Salir del 
 
 Para obtener instrucciones sobre cómo usar el sitio de seguimiento de documentos, consulte [Seguimiento y revocación de documentos](client-track-revoke.md) en el manual del usuario.
 
-## Registro de uso del sitio de seguimiento de documentos
-<a id="usage-logging-for-the-document-tracking-site" class="xliff"></a>
+## <a name="usage-logging-for-the-document-tracking-site"></a>Registro de uso del sitio de seguimiento de documentos
 
 Dos campos de los archivos de registro de uso se aplican al seguimiento de documentos: **AdminAction** y **ActingAsUser**.
 
@@ -95,8 +90,7 @@ Para obtener más información sobre el registro de uso, consulte [Registro y an
 
 
 
-## Pasos siguientes
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Pasos siguientes
 Ahora que ha configurado el sitio de Seguimiento de documentos para el cliente de Azure Information Protection, vea la siguiente información adicional que puede necesitar para la compatibilidad con este cliente:
 
 - [Customizations](client-admin-guide-customizations.md) (Personalizaciones)

@@ -4,20 +4,19 @@ description: "Identifique las limitaciones, los requisitos previos y las recomen
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/07/2017
+ms.date: 07/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: f1ae8d75b3fd3900b7c863be332656b71c647e1f
-ms.sourcegitcommit: 834b6bcab70a185018b4876b2d24b145e5089ac4
+ms.openlocfilehash: ac4068885df92c58ecba2a90e7aa0aeaaa34e8e9
+ms.sourcegitcommit: 12c9a4e3fe8e92d816f0a13003062f20dd2716df
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2017
+ms.lasthandoff: 07/17/2017
 ---
-# Requisitos y restricciones de Mantenga su propia clave (HYOK) para la protección de AD RMS
-<a id="hold-your-own-key-hyok-requirements-and-restrictions-for-ad-rms-protection" class="xliff"></a>
+# <a name="hold-your-own-key-hyok-requirements-and-restrictions-for-ad-rms-protection"></a>Requisitos y restricciones de Mantenga su propia clave (HYOK) para la protección de AD RMS
 
 >*Se aplica a: Azure Information Protection*
 
@@ -56,8 +55,7 @@ Los usuarios no saben si una etiqueta usa la protección de AD RMS en lugar de l
 
 [Las directivas de ámbito](configure-policy-scope.md) son muy útiles para asegurarse de que los usuarios que tienen que aplicar la protección de AD RMS sean los únicos que ven las etiquetas configuradas para la protección de AD RMS. 
 
-## Limitaciones adicionales de uso de Hold your own key (HYOK, Mantenga su propia clave)
-<a id="additional-limitations-when-using-hyok" class="xliff"></a>
+## <a name="additional-limitations-when-using-hyok"></a>Limitaciones adicionales de uso de Hold your own key (HYOK, Mantenga su propia clave)
 
 Además de no poder gozar de los beneficios que se obtienen al utilizar la protección de Azure RMS, el uso de la protección de AD RMS con Azure Information Protection tiene las limitaciones siguientes:
 
@@ -66,6 +64,8 @@ Además de no poder gozar de los beneficios que se obtienen al utilizar la prote
 - No use la opción **No reenviar** al configurar una etiqueta para la protección de Azure RMS. También debe indicar a los usuarios que no seleccionen manualmente esta opción en Outlook. 
 
     Si una etiqueta aplica la opción No reenviar (o bien si la aplican manualmente los usuarios), es posible que la opción se aplique a través de la implementación de AD RMS, y no a través del servicio deseado de Azure Rights Management. En este caso, las personas con las que comparta contenido de forma externa no pueden abrir los mensajes de correo electrónico a los que se haya aplicado esta opción No reenviar.
+    
+    Desde la versión 1.9.58.0 del cliente de Azure Information Protection (actualmente en versión preliminar), el botón **No reenviar** de Outlook siempre usa Azure RMS. Esta configuración no afecta a la opción de menú **No reenviar** de Outlook o la opción **No reenviar** cuando configura una etiqueta para protección. Si no desea este comportamiento, puede ocultar el botón **No reenviar** en Outlook mediante la configuración de una [configuración de cliente avanzada](../rms-client/client-admin-guide-customizations.md#hide-the-do-not-forward-button-in-outlook).
 
 - Si los usuarios configuran permisos personalizados al utilizar la protección de AD RMS (HYOK) y la protección de Azure RMS, el documento o el correo electrónico siempre estará protegido por Azure Rights Management.
 
@@ -73,8 +73,7 @@ Además de no poder gozar de los beneficios que se obtienen al utilizar la prote
     
     La única solución es cerrar el mensaje de correo electrónico y volver a iniciarlo. Existe la misma limitación si, de forma similar, los usuarios primero eligen una etiqueta que aplica la protección de Azure RMS y, a continuación, cambian la etiqueta a otra que aplica la protección de AD RMS.
 
-## Requisitos para HYOK
-<a id="requirements-for-hyok" class="xliff"></a>
+## <a name="requirements-for-hyok"></a>Requisitos para HYOK
 
 Compruebe que la implementación de AD RMS cumple los siguientes requisitos para proporcionar protección de AD RMS para Azure Information Protection.
 
@@ -106,8 +105,7 @@ Compruebe que la implementación de AD RMS cumple los siguientes requisitos para
 Para obtener información e instrucciones sobre la implementación de AD RMS, consulte [Active Directory Rights Management Services](https://technet.microsoft.com/library/hh831364.aspx) en la biblioteca de Windows Server. 
 
 
-## Buscar la información para especificar la protección de AD RMS con una etiqueta de Azure Information Protection
-<a id="locating-the-information-to-specify-ad-rms-protection-with-an-azure-information-protection-label" class="xliff"></a>
+## <a name="locating-the-information-to-specify-ad-rms-protection-with-an-azure-information-protection-label"></a>Buscar la información para especificar la protección de AD RMS con una etiqueta de Azure Information Protection
 
 Al configurar una etiqueta para la protección de **HYOK (AD RMS)**, debe especificar el GUID de la plantilla y la dirección URL de administración de licencias del clúster de AD RMS. Puede encontrar estos valores en la consola de Active Directory Rights Management Services:
 
@@ -117,8 +115,7 @@ Al configurar una etiqueta para la protección de **HYOK (AD RMS)**, debe especi
     
     Si tiene un valor de administración de licencias de extranet, así como un valor de administración de licencias de intranet, y estas son diferentes, especifique el valor de extranet solo si va a compartir documentos o correos electrónicos protegidos con asociados que haya definido con confianzas explícitas punto a punto. De lo contrario, use el valor de intranet y asegúrese de que todos los equipos cliente que usan la protección de AD RMS con Azure Information Protection se conectan mediante una conexión de intranet (por ejemplo, los equipos remotos usan una conexión VPN).
 
-## Pasos siguientes
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Pasos siguientes
 
 Para obtener más información sobre esta característica y orientaciones para cuándo usarla, vea el anuncio de entrada de blog [Azure Information Protection with HYOK (Hold Your Own Key)](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azure-information-protection-with-hyok-hold-your-own-key/) (Azure Information Protection con HYOK [Mantenga su propia clave]).
 
