@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 5b5f8b336e1946bc4c394b9154eed50844b6b72b
-ms.sourcegitcommit: 1c3ebf4ad64b55db4fec3ad007fca71ab7d38c02
+ms.openlocfilehash: 41e9e8aff35727a40413e0bf18e46f1ad14e9222
+ms.sourcegitcommit: 724b0b5d7a3ab694643988148ca68c0eac769f1e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 07/21/2017
 ---
 # <a name="custom-configurations-for-the-azure-information-protection-client"></a>Configuraciones personalizadas del cliente de Azure Information Protection
 
@@ -56,25 +56,33 @@ Independientemente de esta configuración, el cliente de Azure Information Prote
 
 ## <a name="sign-in-as-a-different-user"></a>Inicio de sesión como un usuario diferente
 
-En un entorno de producción, los usuarios normalmente no necesitarán iniciar sesión como un usuario diferente cuando estén utilizando el cliente de Azure Information Protection. Sin embargo, como administrador, deberá iniciar sesión como un usuario diferente. Por ejemplo, cuando tenga un inquilino de prueba además del inquilino de Office 365 o Azure que usa la organización en producción.
+En un entorno de producción, los usuarios normalmente no necesitarán iniciar sesión como un usuario diferente cuando estén utilizando el cliente de Azure Information Protection. No obstante, como administrador, es posible que tenga que iniciar sesión como un usuario diferente durante la fase de pruebas. 
 
 Puede comprobar con qué cuenta ha iniciado sesión en el cuadro de diálogo **Microsoft Azure Information Protection**: abra una aplicación de Office y, en la pestaña **Inicio** del grupo **Protección**, haga clic en **Proteger** y finalmente en **Ayuda y comentarios**. El nombre de cuenta se muestra en la sección **Estado del cliente**.
 
-Especialmente si está usando una cuenta de administrador, asegúrese de comprobar el nombre de dominio de la cuenta con la sesión iniciada que aparece. Por ejemplo, si tiene una cuenta de "administrador" en dos inquilinos diferentes, puede ser fácil pasar por alto que se ha iniciado sesión con el nombre de cuenta correcto pero con el dominio incorrecto. Un síntoma de usar una cuenta incorrecta podría ser no poder descargar la directiva de Azure Information Protection o no verse las etiquetas de comportamiento esperadas.
+Asegúrese de comprobar el nombre de dominio de la cuenta de inicio de sesión que se muestra. Puede ser fácil no darse cuenta de que inició sesión con el nombre de cuenta correcto, pero con un dominio incorrecto. Un síntoma de usar una cuenta incorrecta podría ser no poder descargar la directiva de Azure Information Protection o no verse las etiquetas de comportamiento esperadas.
 
 Para iniciar sesión como un usuario diferente:
 
-1. Mediante un editor del Registro, vaya a **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP** y elimine el valor **TokenCache** (y sus datos de valores asociados).
+1. En función de la versión del cliente de Azure Information Protection: 
+    
+    - Para la versión de disponibilidad general del cliente de Azure Information Protection: mediante un editor del Registro, vaya a **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP** y elimine el valor **TokenCache** (y sus datos de valores asociados).
+    
+    - Para la versión preliminar actual del cliente de Azure Information Protection: vaya a **%localappdata%\Microsoft\MSIP** y elimine el archivo **TokenCache**.
 
 2. Reinicie todas las aplicaciones de Office abiertas e inicie sesión con su cuenta de usuario diferente. Si no ve un mensaje en la aplicación de Office para iniciar sesión en el servicio Azure Information Protection, vuelva al cuadro de diálogo **Microsoft Azure Information Protection** y haga clic en **Iniciar sesión** desde la sección **Estado del cliente** actualizada.
 
 Además:
+
+- Esta solución se admite para iniciar sesión como otro usuario desde el mismo inquilino. No se admite para iniciar sesión como otro usuario desde un inquilino diferente. Para probar Azure Information Protection con varios inquilinos, use equipos diferentes.
 
 - Si utiliza el inicio de sesión único, debe cerrar la sesión de Windows e iniciar sesión con su cuenta de usuario diferente después de editar el registro. El cliente Azure Information Protection se autentica entonces automáticamente mediante la cuenta de usuario que tiene iniciada sesión actualmente.
 
 - Si desea restablecer la configuración de usuario para el servicio Azure Rights Management, puede hacerlo mediante el uso de la opción **Ayuda y comentarios**.
 
 - Si desea eliminar la directiva actualmente descargada de Azure Information Protection, elimine el archivo **Policy.msip** de la carpeta **%localappdata%\Microsoft\MSIP**.
+
+- Si tiene la versión preliminar actual del cliente de Azure Information Protection, puede usar la opción **Restablecer configuración** de **Ayuda y comentarios** para cerrar sesión y eliminar la directiva de Azure Information Protection descargada actualmente.
 
 ## <a name="hide-the-classify-and-protect-menu-option-in-windows-file-explorer"></a>Ocultación de la opción de menú Clasificar y Proteger en el Explorador de archivos de Windows
 
