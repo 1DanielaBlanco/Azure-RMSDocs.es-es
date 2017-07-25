@@ -4,7 +4,7 @@ description: "Información sobre las operaciones del ciclo de vida que son relev
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2017
+ms.date: 07/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: c5b19c59-812d-420c-9c54-d9776309636c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 781e534566fe01bca4583d2fb5a1a430db77429b
-ms.sourcegitcommit: 1dee39e5e3b222b4aab2b6c4284b82927148407e
+ms.openlocfilehash: 1f96c6be6b1b6b52450351ce0ec8994aac6f026e
+ms.sourcegitcommit: 64ba794e7844a74b1e25db0d44b90060e3ae1468
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 07/19/2017
 ---
 # <a name="customer-managed-tenant-key-lifecycle-operations"></a>Administración de cliente: Operaciones de ciclo de vida de clave de inquilino
 
@@ -29,17 +29,16 @@ En Azure Key Vault puede cambiar los permisos en el almacén de claves que conti
 
 Al cancelar la suscripción a Azure Information Protection, la solución deja de usar la clave de inquilino y no es necesario realizar ninguna otra acción.
 
+## <a name="rekey-your-tenant-key"></a>Regenerar su clave de inquilino
+La acción de regenerar la clave también se conoce como revertir la clave. No regenere su clave de inquilino a menos que sea realmente necesario. Otros clientes, como Office 2010, no se diseñaron para tratar cambios de clave correctamente. En este escenario, necesita desactivar el estado de Rights Management en los equipos con una directiva de grupo o un mecanismo equivalente. Sin embargo, hay algunos eventos legítimos que pueden forzarle a regenerar la clave de inquilino. Por ejemplo:
 
-## <a name="re-key-your-tenant-key"></a>Vuelva a introducir su clave de inquilino
-La acción de volver a introducir la clave también se le conoce como revertir su clave. No vuelva a introducir su clave de inquilino a menos que sea necesario. Otros clientes, como Office 2010, no se diseñaron para tratar cambios de clave correctamente. En este escenario, necesita desactivar el estado de Rights Management en los equipos con una directiva de grupo o un mecanismo equivalente. Sin embargo, hay algunos eventos legítimos que pueden forzarle a volver a introducir la clave de inquilino. Por ejemplo:
-
--   La compañía se ha dividido en una o dos compañías. Cuando vuelve a introducir la clave de inquilino, la nueva compañía no tendrá acceso al nuevo contenido que publiquen sus empleados. Pueden acceder al antiguo contenido si tienen una copia de la antigua clave de inquilino.
+-   La compañía se ha dividido en una o dos compañías. Cuando regenera la clave de inquilino, la nueva empresa no tendrá acceso al nuevo contenido que publiquen sus empleados. Pueden acceder al antiguo contenido si tienen una copia de la antigua clave de inquilino.
 
 -   Cree que la copia maestra de su clave de inquilino (la copia en su posesión) se ha puesto en peligro.
 
-Cuando vuelve a introducir su clave de inquilino, el nuevo contenido está protegido usando la nueva clave de inquilino. Esto sucede en fases, por lo que para un período de tiempo, algún contenido nuevo continuará siendo protegido por la antigua clave de inquilino. El contenido protegido anteriormente permanece protegido para su antigua clave de inquilino. Para admitir este escenario, Azure Information Protection conserva su clave de inquilino anterior para que pueda emitir licencias para contenido antiguo.
+Cuando regenera su clave de inquilino, el nuevo contenido está protegido usando la nueva clave de inquilino. Esto sucede en fases, por lo que para un período de tiempo, algún contenido nuevo continuará siendo protegido por la antigua clave de inquilino. El contenido protegido anteriormente permanece protegido para su antigua clave de inquilino. Para admitir este escenario, Azure Information Protection conserva su clave de inquilino anterior para que pueda emitir licencias para contenido antiguo.
 
-Para volver a generar la clave de inquilino, primero vuelva a generar la clave de inquilino de Azure Information Protection en Azure Key Vault. Luego, vuelva a ejecutar el cmdlet [Use-AadrmKeyVaultKey](/powershell/module/aadrm/use-aadrmkeyvaultkey) y especifique la nueva dirección URL de la clave.
+Para regenerar la clave de inquilino, primero regenere la clave de inquilino de Azure Information Protection en Azure Key Vault. Luego, vuelva a ejecutar el cmdlet [Use-AadrmKeyVaultKey](/powershell/module/aadrm/use-aadrmkeyvaultkey) y especifique la nueva dirección URL de la clave.
 
 ## <a name="backup-and-recover-your-tenant-key"></a>Realizar una copia de seguridad y recuperar la clave de inquilino
 Es responsable de realizar copias de seguridad de su clave de inquilino. Si ha generado su clave de inquilino en un HSM de Thales, para realizar una copia de seguridad de la clave acortada, el archivo de Word y las tarjetas de administrador.
@@ -58,8 +57,8 @@ Si tiene una infracción, la mejor acción que usted o Microsoft puede llevar a 
 
 |Descripción del incidente|Respuesta probable|
 |------------------------|-------------------|
-|Se ha filtrado su clave de inquilino.|Vuelva a introducir su clave de inquilino. Vea [Regeneración de la clave de inquilino](#re-key-your-tenant-key).|
-|Un individuo no autorizado o malware han tenido derechos de uso de su clave de inquilino, pero la clave en sí no se ha filtrado.|La nueva introducción de la clave de inquilino no resulta útil aquí y requiere el análisis de la causa principal. Si un error de software o de proceso ha sido el responsable de que un individuo no autorizado obtuviera acceso, dicha situación se debe resolver.|
+|Se ha filtrado su clave de inquilino.|Regenere su clave de inquilino. Consulte [Regenerar su clave de inquilino](#rkey-your-tenant-key).|
+|Un individuo no autorizado o malware han tenido derechos de uso de su clave de inquilino, pero la clave en sí no se ha filtrado.|Regenerar la clave de inquilino no resulta útil aquí y requiere el análisis de la causa principal. Si un error de software o de proceso ha sido el responsable de que un individuo no autorizado obtuviera acceso, dicha situación se debe resolver.|
 |Vulnerabilidad descubierta en la tecnología HSM de generación actual.|Microsoft debe actualizar los HSM. Si no hay motivos para creer que la vulnerabilidad afectó a las claves, Microsoft indicará a todos los clientes que renueven sus claves de inquilino.|
 |Vulnerabilidad descubierta en el algoritmo de RSA, o longitud de clave, o ataques por fuerza bruta se hacen factibles computacionalmente.|Microsoft necesita actualizar Azure Key Vault o Azure Information Protection para que admitan nuevos algoritmos y claves más largas que sean resistentes, así como indicar a todos los clientes que renueven sus claves de inquilino.|
 

@@ -4,7 +4,7 @@ description: "Cómo las aplicaciones de Office de usuario final (como Word, Exce
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/11/2017
+ms.date: 07/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7fe044ab9b8e253e3095af5828a33926271bc42b
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: d812476d882525b1fd5686418151188e57afa80d
+ms.sourcegitcommit: 724b0b5d7a3ab694643988148ca68c0eac769f1e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/21/2017
 ---
 # <a name="office-applications-and-services"></a>Aplicaciones y servicios de Office
 
@@ -25,7 +25,7 @@ ms.lasthandoff: 06/30/2017
 Las aplicaciones de Office de usuario final (como Word, Excel, PowerPoint y Outlook) y los servicios de Office (como Exchange y SharePoint) pueden usar el servicio Azure Rights Management de Azure Information Protection con la idea de proteger los datos de su organización.
 
 ## <a name="office-applications-word-excel-powerpoint-outlook"></a>Aplicaciones de Office: Word, Excel, PowerPoint, Outlook
-Estas aplicaciones admiten de forma nativa Rights Management mediante Information Rights Management (IRM) y permiten a los usuarios aplicar protección a un documento guardado o a un mensaje de correo electrónico que se enviará. Los usuarios pueden aplicar plantillas o, para Word, Excel y PowerPoint, pueden elegir configuraciones muy personalizadas para restricciones de acceso, derechos y uso. 
+Estas aplicaciones admiten de forma nativa Rights Management mediante Information Rights Management (IRM) y permiten a los usuarios aplicar protección a un documento guardado o a un mensaje de correo electrónico que se enviará. Los usuarios pueden aplicar plantillas o, para Word, Excel y PowerPoint, pueden elegir configuraciones personalizadas para restricciones de uso, derechos y acceso. 
 
 Por ejemplo, los usuarios pueden configurar un documento de Word para que solamente pueda acceder a él gente de la organización, o controlar si se puede editar una hoja de cálculo de Excel, si se restringe a solo lectura o si se impide que se pueda imprimir. Para archivos sujetos a limitación temporal, se puede configurar una fecha de caducidad (directamente por parte de los usuarios o aplicando una plantilla) en la que ya no se podrá acceder al archivo. Para Outlook, los usuarios pueden elegir la opción **No reenviar** con el fin de evitar la fuga de datos, además de elegir una plantilla.
 
@@ -48,7 +48,7 @@ Cuando usas Exchange Online o Exchange Server, puedes utilizar la integración d
 
 -   **Reglas de transporte** que un administrador configura para aplicar automáticamente plantillas de Rights Management a mensajes de correo electrónico en función de propiedades como el remitente, el destinatario, el asunto del mensaje y el contenido. Dichas reglas son similares en concepto a las reglas de protección, pero no permiten a los usuarios quitar la protección. Se pueden aplicar a Outlook Web Access y a correos electrónicos enviados mediante dispositivos móviles, y no cifra mensajes de correo electrónico antes de que el cliente los envíe. Para más información, consulte [Creación de una regla de protección de transporte](https://technet.microsoft.com/library/dd302432.aspx) en la biblioteca de Exchange.
 
--   **Directivas de prevención de la pérdida de datos (DLP)** que contienen conjuntos de condiciones para filtrar mensajes de correo electrónico y tomar medidas para tratar de evitar la pérdida de contenido confidencial (por ejemplo, información personal o de tarjetas de crédito). Las sugerencias de las directivas se pueden usar cuando se detectan datos sensibles, para alertar a los usuarios de que es posible que sea necesario aplicar protección de la información, en función de la información del mensaje de correo electrónico. Para más información, consulte [Prevención de pérdida de datos](https://technet.microsoft.com/library/jj150527%28v=exchg.150%29.aspx) en la biblioteca de Exchange.
+-   **Directivas de prevención de la pérdida de datos (DLP)** que contienen conjuntos de condiciones para filtrar mensajes de correo electrónico y tomar medidas para tratar de evitar la pérdida de contenido confidencial (por ejemplo, información personal o de tarjetas de crédito). Las sugerencias de las directivas se pueden usar cuando se detectan datos sensibles, para alertar a los usuarios de que es posible que sea necesario aplicar protección de la información, en función de la información del mensaje de correo electrónico. Para más información, consulte [Prevención de pérdida de datos](https://technet.microsoft.com/library/jj150527(v=exchg.160).aspx) en la biblioteca de Exchange.
 
 -   **Cifrado de mensajes de Office 365** que usa reglas de transporte para enviar correos electrónicos cifrados a personas que están fuera de su compañía y que leen el correo en un explorador con una interfaz similar a la de Outlook Web App. Puedes personalizar el texto de aviso y el texto de cabecera en los correos electrónicos cifrados de tu compañía e, incluso, agregar el logotipo de la compañía. Para más información, consulte [Cifrado de mensajes de Office 365](https://office.microsoft.com/o365-message-encryption-FX104179182.aspx) en el sitio web de Office.
 
@@ -96,8 +96,10 @@ Si está listo para configurar SharePoint para IRM:
 
 ## <a name="next-steps"></a>Pasos siguientes
 
+Si tiene Office 365, es posible que le interese revisar [Soluciones de protección de archivos en Office 365](https://technet.microsoft.com/library/dn919927.aspx#BKMK_O365fileprotect), que ofrece funcionalidades recomendadas para proteger archivos en Office 365.
+
 Para conocer otras aplicaciones y servicios compatibles con el servicio Azure Rights Management de Azure Information Protection, vea [Compatibilidad de aplicaciones con el servicio Azure Rights Management](applications-support.md).
 
-Si está listo para comenzar la implementación, que incluye la configuración de estas aplicaciones y servicios, vea el [Mapa de ruta de implementación de Azure Information Protection](/plan-design/deployment-roadmap.md).
+Si está listo para comenzar la implementación, que incluye la configuración de estas aplicaciones y servicios, vea el [Mapa de ruta de implementación de Azure Information Protection](../plan-design/deployment-roadmap.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
