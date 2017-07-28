@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6d62bb6c3ed6738a3c4f32a506342c7137b9b35e
-ms.sourcegitcommit: 1dee39e5e3b222b4aab2b6c4284b82927148407e
+ms.openlocfilehash: a73dcc5e2a38c5874361f0fc2845229f505b2d3e
+ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 07/27/2017
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Preguntas más frecuentes sobre la protección de datos en Azure Information Protection
 
@@ -143,7 +143,7 @@ Abra Outlook y cree un perfil con su cuenta profesional o educativa de Office 36
 
 Para proteger un mensaje de correo electrónico o un documento: en la pestaña **Opciones**, haga clic en **Permisos** y elija una opción o plantilla que proteja el correo electrónico o el documento.
 
-Para hacer seguimiento de un documento después de protegerlo: en un equipo Windows que tenga instalado el cliente de Azure Information Protection, registre el documento con el sitio de seguimiento de documentos con una aplicación de Office o el Explorador de archivos. Para instrucciones, consulte [Realizar el seguimiento y revocar los documentos](../rms-client/client-track-revoke.md). En el equipo Mac, ahora puede usar el explorador para ir al sitio de seguimiento de documentos (https://track.azurerms.com) para realizar el seguimiento de este documento y revocarlo.
+Para hacer seguimiento de un documento después de protegerlo: en un equipo Windows que tenga instalado el cliente de Azure Information Protection, registre el documento con el sitio de seguimiento de documentos con una aplicación de Office o el Explorador de archivos. Para instrucciones, consulte [Realizar el seguimiento y revocar los documentos](../rms-client/client-track-revoke.md). En el equipo Mac, ahora puede usar el explorador web para ir al sitio de seguimiento de documentos (https://track.azurerms.com) para realizar el seguimiento de este documento y revocarlo.
 
 ## <a name="when-i-open-an-rms-protected-office-document-does-the-associated-temporary-file-become-rms-protected-as-well"></a>Al abrir un documento de Office protegido con RMS, ¿también se protege con RMS el archivo temporal asociado?
 No. En este caso, el archivo temporal asociado no contiene los datos del documento original, sino solo lo que escribe el usuario mientras el archivo está abierto. A diferencia del archivo original, el archivo temporal obviamente no está diseñado para el uso compartido y se conservará en el dispositivo, protegido mediante controles de seguridad local, como BitLocker y EFS.

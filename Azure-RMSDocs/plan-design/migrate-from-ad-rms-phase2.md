@@ -4,7 +4,7 @@ description: "Fase 2 de la migración desde AD RMS a Azure Information Protectio
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/18/2017
+ms.date: 07/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7fb7beccf2f9fdf788f13e76796702ff64bffbbc
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 24e832c63ce7ff4f774bbc2ec10a7b35f72e050a
+ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/27/2017
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>Fase 2 de la migración: configuración del lado servidor para AD RMS
 
@@ -34,7 +34,7 @@ Este paso es un proceso de dos fases:
 
 ### <a name="export-the-configuration-data-from-ad-rms"></a>Exportar los datos de configuración de AD RMS
 
-Siga este procedimiento en todos los clústeres de AD RMS, para todos los dominios de publicación confianza que tienen contenido protegido de su organización. No es necesario ejecutar esto en clústeres solo para licencias.
+Siga este procedimiento en todos los clústeres de AD RMS, para todos los dominios de publicación confianza que tienen contenido protegido de su organización. No es necesario ejecutar este procedimiento en clústeres solo para licencias.
 
 #### <a name="to-export-the-configuration-data-trusted-publishing-domain-information"></a>Para exportar los datos de configuración (información del dominio de publicación de confianza)
 
@@ -62,7 +62,7 @@ Por ejemplo, tendrá varios dominios de publicación de confianza si ha actualiz
 ### <a name="import-the-configuration-data-to-azure-information-protection"></a>Importar los datos de configuración en Azure Information Protection
 Los procedimientos exactos para este paso dependen de la configuración actual de la implementación de AD RMS y de la topología preferida para su clave de inquilino de Azure Information Protection.
 
-La implementación de AD RMS actual usará una de las siguientes configuraciones con la clave del certificado emisor de licencias de servidor (SLC):
+La implementación de AD RMS actual usa una de las siguientes configuraciones con la clave del certificado emisor de licencias de servidor (SLC):
 
 - Protección con contraseña de la base de datos de AD RMS. Se trata de la configuración predeterminada.
 
@@ -80,16 +80,19 @@ Estas son las dos opciones de topología de claves de inquilino de Azure Informa
 > [!IMPORTANT]
 > Exchange Online no es compatible actualmente con BYOK en Azure Information Protection. Si desea usar BYOK después de la migración y planea usar Exchange Online, asegúrese de que comprende de qué forma esta configuración reduce la funcionalidad IRM para Exchange Online. Revise la información de la sección [Precio y restricciones de BYOK](byok-price-restrictions.md) para que le resulte más fácil elegir la topología de claves de inquilino de Azure Information Protection más adecuada para la migración.
 
-Utilice la tabla siguiente para identificar qué procedimiento se utilizará para la migración. No se admiten las combinaciones que no aparecen.
+Utilice la tabla siguiente para identificar qué procedimiento se utilizará para la migración. 
 
 |Implementación de AD RMS actual|Topología de claves de inquilino de Azure Information Protection elegida|Instrucciones de migración|
 |-----------------------------|----------------------------------------|--------------------------|
 |Protección con contraseña de la base de datos de AD RMS|Administrada por Microsoft:|Vea el procedimiento **Migración entre claves protegidas por software** después de esta tabla.<br /><br />Esta es la ruta de migración más sencilla y solo necesita transferir los datos de configuración a Azure Information Protection.|
-|Protección de HSM mediante el uso de un módulo de seguridad de hardware (HSM) de Thales nShield|Administrada por el cliente (BYOK)|Vea el procedimiento **Migración entre claves protegidas por HSM** después de esta tabla.<br /><br />Para este procedimiento se necesita el conjunto de herramientas de BYOK de Azure Key Vault y tres conjuntos de pasos para primero transferir la clave desde el HSM local a los HSM de Azure Key Vault, después autorizar el servicio Azure Rights Management de Azure Information Protection a usar la clave de inquilino y, por último, transferir los datos de configuración a Azure Information Protection.|
+|Protección de HSM mediante el uso de un módulo de seguridad de hardware (HSM) de Thales nShield |Administrada por el cliente (BYOK)|Vea el procedimiento **Migración entre claves protegidas por HSM** después de esta tabla.<br /><br />Para este procedimiento se necesita el conjunto de herramientas BYOK de Azure Key Vault y tres conjuntos de pasos para, en primer lugar, transferir la clave del HSM local a los HSM de Azure Key Vault. Seguidamente, se autoriza al servicio Azure Rights Management de Azure Information Protection a usar la clave de inquilino y, por último, transferir los datos de configuración a Azure Information Protection.|
 |Protección con contraseña de la base de datos de AD RMS|Administrada por el cliente (BYOK)|Vea el procedimiento **Migración de clave protegida por software a clave protegida por HSM** después de esta tabla.<br /><br />Para este procedimiento se necesita el conjunto de herramientas de BYOK de Azure Key Vault y cuatro conjuntos de pasos para primero extraer la clave de software e importarla en un HSM local, después transferir la clave desde el HSM local a los HSM de Azure Information Protection, luego transferir los datos del almacén de claves a Azure Information Protection y, por último, transferir los datos de configuración a Azure Information Protection.|
-|Protección de HSM mediante un módulo de seguridad de hardware (HSM) desde un proveedor distinto de Thales.|Administrada por el cliente (BYOK)|Póngase en contacto con el proveedor de HSM para obtener instrucciones sobre cómo transferir la clave de este HSM a un módulo de seguridad de hardware (HSM) de Thales nShield. Después, siga las instrucciones del procedimiento **Migración entre claves protegidas por HSM** después de esta tabla.|
+|Protección de HSM mediante un módulo de seguridad de hardware (HSM) desde un proveedor distinto de Thales. |Administrada por el cliente (BYOK)|Póngase en contacto con el proveedor de HSM para obtener instrucciones sobre cómo transferir la clave de este HSM a un módulo de seguridad de hardware (HSM) de Thales nShield. Después, siga las instrucciones del procedimiento **Migración entre claves protegidas por HSM** después de esta tabla.|
 |Contraseña protegida mediante un proveedor criptográfico externo.|Administrada por el cliente (BYOK)|Póngase en contacto con el proveedor criptográfico para obtener instrucciones sobre cómo transferir su clave a un módulo de seguridad de hardware (HSM) de Thales nShield. Después, siga las instrucciones del procedimiento **Migración entre claves protegidas por HSM** después de esta tabla.|
-Antes de iniciar estos procedimientos, asegúrese de que puede tener acceso a los archivos .xml que creó anteriormente cuando exportó los dominios de publicación de confianza. Por ejemplo, estos podrían estar guardados en una unidad USB que se transfiere desde el servidor de AD RMS a la estación de trabajo conectada a Internet.
+
+Si tiene una clave protegida de HSM que no puede exportar y quiere realizar la migración a Azure Information Protection, puede configurar el modo de solo lectura de su clúster de AD RMS. En este modo, se puede abrir el contenido protegido anteriormente, pero el que haya protegido más recientemente usará una nueva clave de inquilino que administrarán usted (BYOK) o Microsoft. Para obtener más información, consulte [An update is available for Office to support migrations from AD RMS to Azure RMS](https://support.microsoft.com/help/4023955/an-update-is-available-for-office-to-support-migrations-from-ad-rms-to) (Actualización para Office disponible para permitir las migraciones de AD RMS a Azure RMS).
+
+Antes de iniciar estos procedimientos de migración de claves, asegúrese de tener acceso a los archivos .xml que creó anteriormente cuando exportó los dominios de publicación de confianza. Por ejemplo, estos podrían estar guardados en una unidad USB que se transfiere desde el servidor de AD RMS a la estación de trabajo conectada a Internet.
 
 > [!NOTE]
 > Independientemente de cómo almacene estos datos, aplique las prácticas de seguridad recomendadas para protegerlos, ya que estos incluyen la clave privada.
@@ -112,7 +115,7 @@ Abra una sesión de PowerShell y ejecute los comandos siguientes:
     
         Enable-Aadrmservice
 
-**¿Qué ocurre si el inquilino de Azure Information Protection ya está activado?** Si el servicio Azure Rights Management ya está activado en su organización, es posible que los usuarios ya hayan usado Azure Information Protection para proteger el contenido con una clave de inquilino generada automáticamente (y las plantillas predeterminadas) en lugar de las claves (y plantillas) existentes de AD RMS. Esto es improbable que ocurra en equipos que estén bien administrados en la intranet, ya que se configuran automáticamente para su infraestructura de AD RMS. Pero esto puede suceder en equipos de grupo de trabajo o equipos que se conectan con poca frecuencia a la intranet. Desafortunadamente, también es difícil identificar estos equipos, motivo por el que se recomienda no activar el servicio antes de importar los datos de configuración de AD RMS.
+**¿Qué ocurre si el inquilino de Azure Information Protection ya está activado?** Si el servicio Azure Rights Management ya está activado en su organización, es posible que los usuarios ya hayan usado Azure Information Protection para proteger el contenido con una clave de inquilino generada automáticamente (y las plantillas predeterminadas) en lugar de las claves (y plantillas) existentes de AD RMS. Es poco probable que ocurra en equipos que estén bien administrados en la intranet, ya que se configuran automáticamente para su infraestructura de AD RMS. Pero esto puede suceder en equipos de grupo de trabajo o equipos que se conectan con poca frecuencia a la intranet. Desafortunadamente, también es difícil identificar estos equipos, motivo por el que se recomienda no activar el servicio antes de importar los datos de configuración de AD RMS.
 
 Si el inquilino de Azure Information Protection ya está activado y puede identificar estos equipos, asegúrese de que ejecuta el script CleanUpRMS.cmd en estos equipos, como se describe en el [paso 7](migrate-from-ad-rms-phase3.md#step-7-reconfigure-clients-to-use-azure-information-protection). La ejecución de este script les obliga a reinicializar el entorno de usuario, así descargan la clave de inquilino y las plantillas importadas actualizadas.
 

@@ -10,11 +10,11 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: f6cd01357db99ee9d299606172aa85f7e2f44ba0
-ms.sourcegitcommit: 1dee39e5e3b222b4aab2b6c4284b82927148407e
+ms.openlocfilehash: db87ffaa15802f081439f7983ef1060a60c0b24c
+ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 07/27/2017
 ---
 # <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>Paso 2: configurar y publicar la directiva de Azure Information Protection
 
@@ -78,9 +78,9 @@ Si la etiqueta **Confidencial** no tiene subetiquetas porque tiene una versión 
     
 3. En la hoja **Protección**, las opciones **Azure RMS** y **Seleccionar una plantilla predefinida** deben estar seleccionadas. A continuación, haga clic en el cuadro desplegable y elija la plantilla predeterminada que permite a todos los usuarios de su organización ver y editar contenido protegido. 
     
-    Si hace poco que ha activado el servicio Azure Rights Management, esta plantilla se llama **Confidencial\Todos los empleados**. 
+    Si hace poco que ha obtenido su suscripción, esta plantilla se denomina **Confidencial\Todos los empleados**. 
     
-    Si el servicio Azure Rights Management ya estaba activado antes de que empezara este tutorial, la plantilla predeterminada puede tener el nombre siguiente: **\<Nombre de su organización > - Confidencial**. Por ejemplo, si el nombre de la organización es VanArsdel, Ltd, verá y seleccionará **VanArsdel, Ltd - Confidencial**: 
+    Si ya hace tiempo que la tiene, la plantilla predeterminada puede denominarse **\<nombre de su organización> - Confidencial**. Por ejemplo, si el nombre de la organización es VanArsdel, Ltd, verá y seleccionará **VanArsdel, Ltd - Confidencial**: 
     
     ![Paso 3 del tutorial de inicio rápido de Azure Information Protection: establecer protección Azure RMS](../media/step2-select-rms-template.png)
     
