@@ -4,7 +4,7 @@ description: "Información sobre cómo personalizar el cliente de Azure Informat
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/18/2017
+ms.date: 07/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 41e9e8aff35727a40413e0bf18e46f1ad14e9222
-ms.sourcegitcommit: 724b0b5d7a3ab694643988148ca68c0eac769f1e
+ms.openlocfilehash: 32226274c8b50b02e453f1c1b6655fb01b4ec942
+ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2017
+ms.lasthandoff: 07/27/2017
 ---
 # <a name="custom-configurations-for-the-azure-information-protection-client"></a>Configuraciones personalizadas del cliente de Azure Information Protection
 
@@ -24,11 +24,11 @@ ms.lasthandoff: 07/21/2017
 
 Use la siguiente información para configuraciones avanzadas que podría necesitar para escenarios específicos o un subconjunto de usuarios cuando administre el cliente de Azure Information Protection.
 
-Algunas de estas opciones requieren la modificación del Registro y otras usan la configuración avanzada que debe configurar en Azure Portal y, después, publicarlas para que los clientes las descarguen. 
-
-Además, es posible que algunas configuraciones solo estén en una versión preliminar del cliente de Azure Information Protection. Para esta configuración, se documenta una versión mínima de cliente. En el caso de las configuraciones que se admiten en la versión de disponibilidad general del cliente, no se documenta ningún número de versión mínimo de cliente.
+Algunas de estas opciones requieren la modificación del Registro y otras usan la configuración avanzada que debe configurar en Azure Portal y, después, publicarlas para que los clientes las descarguen. Además, es posible que algunas configuraciones solo estén en una versión preliminar del cliente de Azure Information Protection. Para esta configuración, se documenta una versión mínima de cliente. En el caso de las configuraciones que se admiten en la versión de disponibilidad general del cliente, no se documenta ningún número de versión mínimo de cliente.
 
 ### <a name="how-to-configure-advanced-client-configuration-settings-in-the-portal"></a>Cómo establecer opciones de configuración de cliente avanzadas en el portal
+
+Esta configuración está actualmente en versión preliminar.
 
 1. Si aún no lo ha hecho, abra una nueva ventana del explorador, inicie sesión en [Azure Portal](https://portal.azure.com) como administrador de seguridad o administrador global y, después, navegue hasta la hoja **Azure Information Protection**.
 
@@ -86,6 +86,8 @@ Además:
 
 ## <a name="hide-the-classify-and-protect-menu-option-in-windows-file-explorer"></a>Ocultación de la opción de menú Clasificar y Proteger en el Explorador de archivos de Windows
 
+Esta opción de configuración está actualmente en versión preliminar.
+
 Puede definir esta configuración avanzada editando el Registro cuando tenga la versión 1.3.0.0 del cliente de Azure Information Protection o una versión superior. 
 
 Cree el siguiente nombre de valor DWORD (con cualquier datos de valor):
@@ -104,6 +106,8 @@ Asegúrese de que el cliente tiene un archivo de directiva válido denominado **
 
 ## <a name="hide-the-do-not-forward-button-in-outlook"></a>Ocultación del botón No reenviar en Outlook
 
+Esta opción de configuración está actualmente en versión preliminar.
+
 Esta opción utiliza una [configuración de cliente avanzada](#how-to-configure-advanced-client-configuration-settings-in-the-portal) que se debe definir en Azure Portal. Esta configuración también requiere una versión preliminar del cliente de Azure Information Protection con una versión mínima de **1.8.41.0**.
 
 Al establecer esta configuración, se oculta el botón **No reenviar** en la cinta de Outlook. No se oculta esta opción en los menús de Office.
@@ -115,6 +119,8 @@ Para establecer esta configuración avanzada, especifique las cadenas siguientes
 - Valor: **True**
 
 ## <a name="make-the-custom-permissions-options-unavailable-to-users"></a>Configuración de opciones de permisos personalizados para que no estén disponibles a los usuarios
+
+Esta opción de configuración está actualmente en versión preliminar.
 
 Esta opción utiliza una [configuración de cliente avanzada](#how-to-configure-advanced-client-configuration-settings-in-the-portal) que se debe definir en Azure Portal. 
 

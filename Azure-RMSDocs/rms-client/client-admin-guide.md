@@ -4,7 +4,7 @@ description: "Instrucciones e información para administradores de una red empre
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/20/2017
+ms.date: 07/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 036fae62087bf71e0f3bf5ef2859acac701c5e62
-ms.sourcegitcommit: 724b0b5d7a3ab694643988148ca68c0eac769f1e
+ms.openlocfilehash: 9359d83ec2ee85edeef6a3d2680f95633d22546e
+ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2017
+ms.lasthandoff: 07/27/2017
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Guía para administradores del cliente de Azure Information Protection
 
@@ -115,8 +115,25 @@ Luego, compruebe los requisitos previos adicionales que puede necesitar el clien
     
     Si la actualización es necesaria y no está instalada, la instalación del cliente mostrará una advertencia que lo señale. Esta actualización se puede instalar después de instalar el cliente, pero algunas acciones estarán bloqueadas y se volverá a mostrar el mensaje.  
 
+- No deshabilite el complemento **Microsoft Azure Information Protection** para las aplicaciones de Office.
+    
+    Si ha configurado la opción de directivas de grupo **Lista de complementos administrados**, agregue el complemento Microsoft Azure Information Protection para aplicaciones de Office especificando los siguientes identificadores programáticos (ProgID) para Azure Information Protection y establezca la opción en **1: El complemento siempre está habilitado**.
+    
+    - Para Outlook: `MSIP.OutlookAddin`
+    
+    - Para Word: `MSIP.WordAddin`
+    
+    - Para Excel:`MSIP.ExcelAddin`
+    
+    - Para PowerPoint: `MSIP.PowerPointAddin`
+    
+    Incluso si no ha configurado esta opción de directiva de grupo **Lista de complementos administrados**, puede que necesite configurarla si recibe algún informe en el que se indique que el complemento de Microsoft Azure Information Protection se va a deshabilitar. Al deshabilitar este complemento, los usuarios no verán la barra de Azure Information Protection en la aplicación de Office.
+    
+    Para obtener más información sobre esta configuración de directiva de grupo, consulte [No Add-ins loaded due to group policy settings for Office 2013 and Office 2016 programs](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off) (No se ha cargado ningún complemento debido a la configuración de directivas de grupo para Office 2013 y Office 2016).
+
 > [!IMPORTANT]
 > La instalación del cliente de Azure Information Protection requiere permisos administrativos locales.
+
 
 ### <a name="options-to-install-the-azure-information-protection-client-for-users"></a>Opciones para instalar el cliente de Azure Information Protection para los usuarios
 
@@ -305,6 +322,11 @@ Si ve **Este cliente no tiene licencia de Office Professional Plus**, significa 
 
 Utilice la información de **Versión** para confirmar qué versión del cliente está instalada. Puede comprobar si se trata de versión más reciente, así como las correcciones correspondientes y las nuevas características haciendo clic en el vínculo **Novedades** para leer el [historial de versiones](client-version-release-history.md) del cliente.
 
+## <a name="support-for-multiple-languages"></a>Compatibilidad con varios idiomas
+
+El cliente de Azure Information Protection admite todos los idiomas que incluye Office. Por ejemplo, las opciones del menú, los cuadros de diálogo y los mensajes se muestran en el idioma del usuario. Hay un instalador único que detecta el idioma, por lo que no necesita realizar ninguna configuración adicional para instalar el cliente en distintos idiomas. 
+
+Sin embargo, los nombres de las etiquetas que ven los usuarios no se traducen automáticamente, ni en el caso de la [directiva predeterminada](../deploy-use/configure-policy-default.md) ni en el de los nombres de etiquetas que especifique. Para que los usuarios puedan ver las etiquetas en varios idiomas, debe proporcionar sus propias traducciones y configurar la directiva de Azure Information Protection para que use dichas traducciones. Para obtener más información, consulte [Configuración de etiquetas para distintos idiomas en Azure Information Protection](../deploy-use/configure-policy-languages.md).
 
 ## <a name="to-uninstall-the-azure-information-protection-client"></a>Para desinstalar el cliente de Azure Information Protection
 
