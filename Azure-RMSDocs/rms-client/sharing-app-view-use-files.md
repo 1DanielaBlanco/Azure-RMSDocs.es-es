@@ -44,7 +44,7 @@ Si ve dos versiones del archivo pero con extensiones de nombre de archivo difere
 
 La manera en que se abre el archivo depende de cómo se protegió, lo que se puede saber por la extensión de nombre de archivo. En cualquier caso, el proceso de abrir el archivo podría auditarse, y sigue auditándose mientras esté protegido. Además, si el archivo se envió como un archivo adjunto por correo electrónico, es posible que el remitente reciba una notificación por correo electrónico cada vez que abra el archivo.
 
-- **El archivo tiene una extensión de nombre de archivo *.pfile***
+- **El archivo tiene una** extensión de nombre de archivo** .pfile
 
     El archivo se protegió de forma genérica.
 
@@ -73,7 +73,7 @@ Para obtener la lista completa de extensiones de nombres de archivo que admiten 
 ## <a name="to-use-files-that-have-been-protected-for-example-edit-and-print-the-file"></a>Para usar archivos que están protegidos (por ejemplo, editar e imprimir el archivo)
 Si, tras abrir el archivo protegido, desea hacer algo más que simplemente leerlo (como editarlo, copiarlo e imprimirlo), siga las instrucciones correspondientes a la extensión de nombre de archivo :
 
-- **El archivo tiene una extensión de nombre de archivo *.pfile***
+- **El archivo tiene una** extensión de nombre de archivo** .pfile
 
     Guarde el archivo abierto y asígnele una nueva extensión de nombre de archivo que esté asociada a la aplicación que desea usar.
 
