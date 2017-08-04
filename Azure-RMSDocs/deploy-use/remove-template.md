@@ -1,42 +1,8 @@
 ---
-title: "Eliminación de plantillas de Azure RMS - AIP"
-description: Las plantillas predeterminadas no se pueden eliminar, pero se pueden archivar para que los usuarios no las vean.
-author: cabailey
-ms.author: cabailey
-manager: mbaldwin
-ms.date: 02/23/2017
-ms.topic: article
-ms.prod: 
-ms.service: information-protection
-ms.technology: techgroup-identity
-ms.assetid: 42935ce2-879c-4168-aef9-9a88f72b15b2
-ms.reviewer: esaggese
-ms.suite: ems
-ms.openlocfilehash: 8b581f1de58c7a76a9395c51a62aef7ce3271e2f
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+redirect_url: /information-protection//deploy-use/configure-policy-templates
+ms.openlocfilehash: 0f22231538049044724ac403944745c1ca3259aa
+ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/31/2017
 ---
-# <a name="remove-archive-templates"></a>Eliminación (archivado) de plantillas
-
->*Se aplica a: Azure Information Protection, Office 365*
-
-Las plantillas predeterminadas no se pueden eliminar, pero se pueden archivar para que los usuarios no las vean.
-
-De forma similar, si ha publicado una plantilla personalizada y ya no desea que los usuarios puedan verla, edite la plantilla y elija **ARCHIVAR** , **GUARDAR** en la página **CONFIGURAR** . O bien seleccione la plantilla en la página **PLANTILLAS** y seleccione **ARCHIVAR**.
-
-Dado que no puede editar las plantillas predeterminadas, para archivar estas plantillas, debe utilizar la opción **ARCHIVAR** en la página **PLANTILLAS** . No se puede archivar la opción de Outlook **No reenviar** .
-
-## <a name="to-remove-a-default-template"></a>Para quitar una plantilla predeterminada
-
--   En la página **PLANTILLAS** , seleccione la plantilla predeterminada y haga clic en **ARCHIVAR**.
-
-El estado cambia de **Publicada** a **Archivada**. Si cambia de opinión, seleccione la plantilla y haga clic en **PUBLICAR**.
-
-
-
-## <a name="see-also"></a>Véase también
-[Configuración de plantillas personalizadas para Azure Rights Management](configure-custom-templates.md)
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
