@@ -4,7 +4,7 @@ description: "Cuando usa el servicio Azure Rights Management, se descargan de fo
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/30/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 374c807862d4922679e8622ee0d0d5a16a156bb0
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: a9a4e01bd23f7f6107b4021cc792839cf38ee3b5
+ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/31/2017
 ---
 # <a name="refreshing-templates-for-users-and-services"></a>Actualización de plantillas para usuarios y servicios
 
@@ -107,7 +107,7 @@ Si modifica el Registro de los equipos que ejecutan Office 2016, Office 2013 o l
 
 1.  Con un editor del Registro, cree y establezca uno de los valores del Registro siguientes:
 
-    - Para establecer una frecuencia de actualización en días (mínimo de 1 día):  cree un nuevo valor del Registro denominado **TemplateUpdateFrequency** y defina un valor entero para los datos, que especifique la frecuencia en días para descargar los cambios en una plantilla descargada. Use la información siguiente para localizar la ruta de acceso del Registro y crear este nuevo valor del Registro.
+    - Para establecer una frecuencia de actualización en días (mínimo de 1 día): cree un nuevo valor del Registro denominado **TemplateUpdateFrequency** y defina un valor entero para los datos, que especifique la frecuencia en días para descargar los cambios en una plantilla descargada. Use la información siguiente para localizar la ruta de acceso del Registro y crear este nuevo valor del Registro.
 
         **Ruta de acceso del Registro:** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC
 
@@ -115,7 +115,7 @@ Si modifica el Registro de los equipos que ejecutan Office 2016, Office 2013 o l
 
         **Valor:** TemplateUpdateFrequency
 
-    - Para establecer una frecuencia de actualización en segundos (mínimo de 1 segundo):  cree un nuevo valor del Registro denominado **TemplateUpdateFrequencyInSeconds** y defina un valor entero para los datos, que especifique la frecuencia en segundos para descargar los cambios en una plantilla descargada. Use la información siguiente para localizar la ruta de acceso del Registro y crear este nuevo valor del Registro.
+    - Para establecer una frecuencia de actualización en segundos (mínimo de 1 segundo): cree un nuevo valor del Registro denominado **TemplateUpdateFrequencyInSeconds** y defina un valor entero para los datos, que especifique la frecuencia en segundos para descargar los cambios en una plantilla descargada. Use la información siguiente para localizar la ruta de acceso del Registro y crear este nuevo valor del Registro.
 
         **Ruta de acceso del Registro:** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC
 
@@ -154,6 +154,6 @@ Si modifica el Registro de los equipos que ejecutan Office 2016, Office 2013 o l
 
 
 ## <a name="see-also"></a>Véase también
-[Configuración de plantillas personalizadas para Azure Rights Management](configure-custom-templates.md)
+[Configuración y administración de plantillas en la directiva de Azure Information Protection](../deploy-use/configure-policy-templates.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

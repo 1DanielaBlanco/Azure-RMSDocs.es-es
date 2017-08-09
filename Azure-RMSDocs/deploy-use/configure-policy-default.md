@@ -4,17 +4,17 @@ description: "Obtenga información sobre cómo está configurada la directiva pr
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/25/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 671281c8-f0d1-42b6-aae3-681d1821e2cf
-ms.openlocfilehash: decc5e3462a80e307201933e634c3ecfa03ee074
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 51b5f7d332a86c16ceb6928ea99039812dd54802
+ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/31/2017
 ---
 # <a name="the-default-azure-information-protection-policy"></a>Directiva predeterminada de Azure Information Protection
 
@@ -28,9 +28,80 @@ Puede hacer referencia a los siguientes valores para devolver la directiva a los
 
 ## <a name="current-default-policy"></a>Directiva predeterminada actual
 
-Esta versión de la directiva predeterminada es del 21 de marzo de 2017.
+Esta versión de la directiva predeterminada es del 31 de julio de 2017.
 
-Tenga en cuenta que las descripciones de esta directiva hacen referencia a datos que necesitan protección y también al seguimiento y la revocación de datos. La directiva no configura esta protección para estas etiquetas, por lo que tendrá que realizar pasos adicionales para completar esta descripción. Por ejemplo, configure la etiqueta para aplicar la protección de Azure RMS o use una solución de prevención de pérdida de datos (DLP). Antes de poder realizar el seguimiento de un documento y revocarlo mediante el sitio de seguimiento de documentos, el documento debe protegerse con Azure RMS. 
+Esta directiva predeterminada solo se crea si el servicio Azure Rights Management se ha activado al crear la directiva. Si este servicio no se ha activado, la directiva predeterminada no configura la protección para las siguientes subetiquetas:
+
+- **Confidencial\Todos los empleados**
+
+- **Confidencial \ Solo destinatarios**
+
+- **Extremadamente confidencial\Todos los empleados** 
+
+- **Extremadamente confidencial \ Solo destinatarios** 
+
+Cuando estas subetiquetas no se configuran automáticamente para la protección, la directiva predeterminada es igual a la [anterior directiva predeterminada](#default-policy-before-july-31-2017).
+
+Cuando se aplica la protección a las subetiquetas **Todos los empleados**, la protección se configura mediante las plantillas predeterminadas que se convierten automáticamente en etiquetas en Azure Portal. Para obtener más información sobre estas plantillas, vea [Configuración y administración de plantillas para Azure Information Protection](configure-policy-templates.md).
+
+#### <a name="more-information-about-the-recipients-only-sub-label"></a>Más información sobre la subetiqueta Solo destinatarios
+
+Los usuarios ven esta etiqueta solo en Outlook. No la ven en Word, Excel, PowerPoint o el Explorador de archivos. 
+
+Cuando los usuarios seleccionan esta etiqueta, la opción No reenviar de Outlook se aplica automáticamente al correo electrónico. Los destinatarios que especifiquen los usuarios no podrán reenviar el correo electrónico y no podrán copiar o imprimir el contenido ni guardar los datos adjuntos.
+
+
+### <a name="labels"></a>Etiquetas
+
+|Etiqueta|Información sobre herramientas|Configuración|
+|-------------------------------|---------------------------|-----------------|
+|Personal|Datos no comerciales de uso exclusivamente personal.|**Habilitada**: activada <br /><br />**Color**: verde claro<br /><br />**Marcas visuales**: desactivadas <br /><br />**Condiciones**: ninguna<br /><br />**Protección**: ninguna|
+|Público|Datos comerciales específicamente elaborados y aprobados para un uso público.|**Habilitada**: activada <br /><br />**Color**: verde<br /><br />**Marcas visuales**: desactivadas<br /><br />**Condiciones**: ninguna<br /><br />**Protección**: ninguna|
+|General|Datos comerciales que no deben ser de dominio público. Pero, si fuera necesario, podrían compartirse con asociados externos. Por ejemplo, el directorio telefónico interno de la empresa, los organigramas, las normativas internas y la mayoría de las comunicaciones internas.|**Habilitada**: activada <br /><br />**Color**: azul <br /><br />**Marcas visuales**: desactivadas<br /><br />**Condiciones**: ninguna<br /><br />**Protección**: ninguna|
+|Confidencial|Datos comerciales confidenciales que podrían ocasionar daños a la empresa si se compartieran con personas no autorizadas. Ejemplos: contratos, informes de seguridad, resúmenes de previsiones y datos de cuentas de ventas.|**Habilitada**: activada <br /><br />**Color**: naranja<br /><br />**Marcas visuales**: desactivadas<br /><br />**Condiciones**: ninguna<br /><br />**Protección**: ninguna|
+|Extremadamente confidencial|Datos comerciales extremadamente confidenciales que podrían ocasionar daños a la empresa si se compartieran con personas no autorizadas. Ejemplos: información sobre empleados y clientes, contraseñas, código fuente e informes financieros previamente anunciados.|**Habilitada**: activada <br /><br />**Color**: rojo<br /><br />**Marcas visuales**: desactivadas<br /><br />**Condiciones**: ninguna<br /><br />**Protección**: ninguna|
+
+
+### <a name="sub-labels"></a>Etiquetas secundarias
+
+|Etiqueta|Información sobre herramientas|Configuración|
+|-------------------------------|---------------------------|-----------------|
+|Confidencial \ Todos los empleados|Datos confidenciales que requieren protección pero conceden todos los permisos a todos los empleados. Los propietarios de los datos pueden hacer un seguimiento del contenido y revocarlo.|**Habilitada**: activada <br /><br />**Marcas visuales**: pie de página (documentos y correo electrónico)<br /><br />Clasificado como confidencial<br /><br />**Condiciones**: ninguna<br /><br />**Protección**: Azure RMS [[1]](#footnote-1)|
+|Confidencial \ Cualquiera (sin protección)|Datos que no requieren protección. Use esta opción con precaución y con la debida justificación comercial.|**Habilitada**: activada <br /><br />**Marcas visuales**: pie de página (documentos y correo electrónico)<br /><br />Clasificado como confidencial <br /><br />**Condiciones**: ninguna<br /><br />**Protección**: ninguna|
+|Confidencial \ Solo destinatarios|Datos confidenciales que requieren protección y que solo pueden ver los destinatarios.|**Habilitada**: activada <br /><br />**Distintivos visuales**: pie de página (correo electrónico)<br /><br />Clasificado como confidencial <br /><br />**Condiciones**: ninguna<br /><br />**Protección**: no reenviar|
+|Extremadamente confidencial \ Todos los empleados|Datos extremadamente confidenciales que conceden a los empleados los permisos de visualización, edición y respuesta en relación con el contenido. Los propietarios de los datos pueden hacer un seguimiento del contenido y revocarlo.|**Habilitada**: activada <br /><br />**Marcas visuales**: pie de página (documentos y correo electrónico)<br /><br />Clasificado como extremadamente confidencial<br /><br />**Condiciones**: ninguna<br /><br />**Protección**: Azure RMS [[2]](#footnote-2)|
+|Extremadamente confidencial \ Cualquiera (sin protección)|Datos que no requieren protección. Use esta opción con precaución y con la debida justificación comercial.|**Habilitada**: activada <br /><br />**Marcas visuales**: pie de página (documentos y correo electrónico)<br /><br />Clasificado como extremadamente confidencial<br /><br />**Condiciones**: ninguna<br /><br />**Protección**: ninguna|
+|Extremadamente confidencial \ Solo destinatarios|Datos extremadamente confidenciales que requieren protección y que solo pueden ver los destinatarios.|**Habilitada**: activada <br /><br />**Distintivos visuales**: pie de página (correo electrónico)<br /><br />Clasificado como extremadamente confidencial <br /><br />**Condiciones**: ninguna<br /><br />**Protección**: no reenviar|
+
+###### <a name="footnote-1"></a>Nota al pie 1
+La configuración de protección usa la plantilla predeterminada, **Confidencial\Todos los empleados**.
+
+###### <a name="footnote-2"></a>Nota al pie 2 
+La configuración de protección usa la plantilla predeterminada, **Extremadamente confidencial\Todos los empleados**.
+
+
+### <a name="information-protection-bar"></a>Barra de Information Protection
+
+|Configuración|Valor|
+|-------------------------------|---------------------------|
+|Título|Sensibilidad|
+|Información sobre herramientas|Etiqueta actual de este contenido. Este valor identifica el riesgo que supondría a la empresa el hecho de que este contenido se compartiera con personas no autorizadas de dentro o fuera de la organización.|
+
+
+### <a name="settings"></a>Configuración
+
+|Configuración|Valor|
+|-------------------------------|---------------------------|
+|All documents and emails must have a label (applied automatically or by users) [Todos los documentos y correos electrónicos deben tener una etiqueta (aplicada automáticamente o por los usuarios)]|Desactivado|
+|Select the default label (Seleccionar la etiqueta predeterminada)|Ninguno|
+|Users must provide justification to set a lower classification label, remove a label, or remove protection (Los usuarios deben proporcionar una justificación para establecer una etiqueta de clasificación inferior, quitar una etiqueta o quitar la protección)|Desactivado|
+|Para los mensajes de correo electrónico con datos adjuntos, aplicar una etiqueta que coincida con la clasificación más alta de los datos adjuntos|Desactivado|
+|Proporcionar una dirección URL personalizada para la página web "Más información" del cliente de Azure Information Protection|En blanco|
+
+
+## <a name="default-policy-before-july-31-2017"></a>Directiva predeterminada antes del 31 de julio de 2017
+
+Tenga en cuenta que las descripciones de esta directiva hacen referencia a datos que necesitan protección y también al seguimiento y la revocación de datos. La directiva no configura esta protección para estas etiquetas, por lo que tendrá que realizar pasos adicionales para completar esta descripción. Por ejemplo, configure la etiqueta para aplicar la protección de Azure RMS o use una solución de prevención de pérdida de datos (DLP). Antes de realizar el seguimiento de un documento y revocarlo mediante el sitio de seguimiento de documentos, el documento debe protegerse con Azure RMS y la persona que lo ha protegido debe seguirlo. 
 
 
 ### <a name="labels"></a>Etiquetas

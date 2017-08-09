@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: d954d3ee-3c48-4241-aecf-01f4c75fa62c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 587d24a005452874ca06b8fc179b25e91a7f0130
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: a1f448a51ee4bfecfd0d680b842eed44aa816ed1
+ms.sourcegitcommit: e4199d243d9f6c80efccc0f0d5574d069d69f46d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 08/02/2017
 ---
 # <a name="migration-phase-1---preparation"></a>Fase 1 de la migración: preparación
 
@@ -50,7 +50,11 @@ Por ejemplo: **5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**.
     
 3. Copie el valor mostrado para **LicensingIntranetDistributionPointUrl** y, de esta cadena, quite `/_wmcs\licensing`. 
     
-    Lo que queda es la dirección URL de su servicio de Azure Rights Management para el inquilino de Azure Information Protection, que a menudo se acorta en la *dirección URL del inquilino* en las siguientes instrucciones de migración.
+    Lo que queda es la dirección URL del servicio Azure Rights Management para su inquilino de Azure Information Protection. Este valor se suele abreviar como *URL de inquilino* en las siguientes instrucciones de migración.
+    
+    Para comprobar que tiene el valor correcto, ejecute el siguiente comando de PowerShell:
+    
+            (Get-AadrmConfiguration).LicensingIntranetDistributionPointUrl -match "https:\/\/[0-9A-Za-z\.-]*" | Out-Null; $matches[0]
 
 ## <a name="step-2-prepare-for-client-migration"></a>Paso 2. Preparación para la migración de clientes
 
