@@ -4,17 +4,17 @@ description: "Paso 1 de un tutorial de introducción para probar rápidamente Az
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/25/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f6dbb143-96f7-4a9c-8208-be9280d69de9
-ms.openlocfilehash: adc2baa875595d5044b47a9f014cc1381ba85dc2
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 1779eb6f2bcf31ce3515b58b6ed955208fafb237
+ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/31/2017
 ---
 # <a name="step-1-activate-the-rights-management-service"></a>Paso 1: Activación del servicio Rights Management
  
@@ -43,14 +43,14 @@ Para este tutorial, vaya directamente a la página de activación en el portal d
 
     Ahora debería ver el texto **Rights Management está activada** y la opción para desactivarla (es posible que deba actualizar la página manualmente).
 
-    Por el momento, no haga clic en **Características avanzadas**. Esto le llevará al Portal de Azure clásico, donde podrá configurar plantillas personalizadas, que no son necesarias en este tutorial. En su lugar, puede cerrar esta página.
+    Por el momento, no haga clic en **Características avanzadas**. En su lugar, puede cerrar esta página.
 
-Eso es todo lo que tiene que hacer en este primer paso para completar el tutorial. En el caso de una implementación de producción, probablemente quiera configurar plantillas personalizadas además de (o en lugar de) las dos plantillas predeterminadas de Azure Rights Management. Pero las plantillas personalizadas no son necesarias para este tutorial, por lo que puede ir al paso 2.
+Eso es todo lo que tiene que hacer en este primer paso para completar el tutorial. Ahora puede ir al paso 2.
 
 |Si desea obtener más información|Información adicional|
 |--------------------------------|--------------------------|
 |Sobre la activación de Rights Management|[Activar Rights Management de Azure](../deploy-use/activate-service.md)|
-|Acerca de las plantillas predeterminadas y del modo de crear nuevas plantillas personalizadas|[Configuración de plantillas personalizadas para el servicio Azure Rights Management](../deploy-use/configure-custom-templates.md)|
+
 
 >[!div class="step-by-step"]
 [&#171; Introducción](infoprotect-quick-start-tutorial.md)

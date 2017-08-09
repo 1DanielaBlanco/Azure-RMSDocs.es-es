@@ -4,7 +4,7 @@ description: "Información sobre cómo personalizar el cliente de Azure Informat
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/25/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 32226274c8b50b02e453f1c1b6655fb01b4ec942
-ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
+ms.openlocfilehash: 28b4e89cd6300c9b206abdf45f5d580b4474eaa5
+ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 07/31/2017
 ---
 # <a name="custom-configurations-for-the-azure-information-protection-client"></a>Configuraciones personalizadas del cliente de Azure Information Protection
 
@@ -102,7 +102,20 @@ Busque el siguiente nombre de valor y establezca los datos del valor en **0**:
 
 **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnablePolicyDownload** 
 
-Asegúrese de que el cliente tiene un archivo de directiva válido denominado **Policy.msip**, en la carpeta **%localappdata%\Microsoft\MSIP**. Si es necesario, puede exportar la directiva desde Azure Portal y copiar el archivo exportado en el equipo cliente. También puede utilizar este método para reemplazar un archivo de directiva no actualizado con la directiva publicada más reciente.
+Asegúrese de que el cliente tenga un archivo de directiva válido denominado **Policy.msip** en la carpeta **%LocalAppData%\Microsoft\MSIP**. Si es necesario, puede exportar la directiva desde Azure Portal y copiar el archivo exportado en el equipo cliente. También puede utilizar este método para reemplazar un archivo de directiva no actualizado con la directiva publicada más reciente.
+
+Al exportar la directiva, esta acción descarga un archivo comprimido con varias versiones de la directiva que se corresponden a las distintas versiones del cliente de Azure Information Protection:
+
+1. Descomprima el archivo y use la tabla siguiente para identificar qué archivo de directiva necesita. 
+    
+    |Nombre de archivo|Versión de cliente correspondiente|
+    |--------------------------|---------------------------------------------|
+    |Policy1.1.msip |Versión 1.2|
+    |Policy1.2.msip |Versión 1.3 - 1.7|
+    |Policy1.3.msip |Versión 1.8 y posteriores|
+    
+2. Cambie el nombre del archivo identificado a **Policy.msip** y, después, cópielo en la carpeta **%LocalAppData%\Microsoft\MSIP** en equipos que tengan instalado el cliente de Azure Information Protection. 
+
 
 ## <a name="hide-the-do-not-forward-button-in-outlook"></a>Ocultación del botón No reenviar en Outlook
 

@@ -4,17 +4,17 @@ description: "Paso 2 de un tutorial de introducción para probar rápidamente Az
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: db87ffaa15802f081439f7983ef1060a60c0b24c
-ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
+ms.openlocfilehash: 86857d9fe744ee8b8949bdf247a360492ceb8165
+ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 07/31/2017
 ---
 # <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>Paso 2: configurar y publicar la directiva de Azure Information Protection
 
@@ -33,18 +33,18 @@ Aunque Azure Information Protection incluye una directiva predeterminada que se 
 
 3. Observe la información que aparece en la página **Inicio rápido** que se abre automáticamente la primera vez que se conecta al servicio. Puede volver a esta información más adelante. Para este tutorial, haga clic en **Directiva global** para abrir la hoja **Policy: Global** (Directiva: Global). Esta hoja se abre automáticamente para las conexiones subsiguientes con el servicio y muestra la directiva de Information Protection predeterminada que se crea automáticamente para el inquilino:
     
-    - Etiquetas de clasificación: **Personal**, **Público**, **General**, **Confidencial** y **Extremadamente confidencial**. Las dos últimas etiquetas se expanden para mostrar las subetiquetas: **Todos los empleados** y **Cualquiera (sin protección)**, para proporcionar ejemplos de cómo una clasificación puede tener subcategorías.
+    - Etiquetas de clasificación: **Personal**, **Público**, **General**, **Confidencial** y **Extremadamente confidencial**. Las dos últimas etiquetas se expanden para mostrar subetiquetas que incluyen **Todos los empleados** y **Cualquiera (sin protección)**, para proporcionar ejemplos de cómo una clasificación puede tener subcategorías.
     
        > [!NOTE]
-       > Es posible que su directiva predeterminada sea ligeramente diferente a la de este tutorial. Por ejemplo, tiene una etiqueta denominada **Interno** en lugar de **General**, y **Secreto** en lugar de **Extremadamente confidencial**. Si es así, probablemente está usando una versión anterior de la directiva predeterminada. O bien, es posible que la haya editado manualmente antes de iniciar el tutorial.
+       > Es posible que su directiva predeterminada sea ligeramente diferente a la de este tutorial. Por ejemplo, tiene una etiqueta denominada **Interno** en lugar de **General**, y **Secreto** en lugar de **Extremadamente confidencial**. O bien, tiene una subetiqueta adicional denominada **Solo destinatarios**. Esto se debe a que hay diferentes versiones de la directiva predeterminada, en función de cuándo se ha creado para el inquilino. O bien, es posible que la haya editado manualmente antes de iniciar el tutorial.
        > 
        > Si la directiva predeterminada tiene un aspecto diferente, puede seguir usando este tutorial, pero sea consciente de estos cambios al usar las instrucciones y las imágenes siguientes. Si quiere modificar la directiva predeterminada para que coincida con la directiva predeterminada actual, vea [Directiva predeterminada de Azure Information Protection](../deploy-use/configure-policy-default.md).
 
-    - Con la configuración predeterminada, algunas etiquetas no tienen distintivos visuales configurados (por ejemplo, pie de página, encabezado, marca de agua) y ninguna etiqueta tiene establecida la protección: 
+    - Con la configuración predeterminada, algunas etiquetas no tienen distintivos visuales configurados (por ejemplo, pie de página, encabezado, marca de agua). En función de la directiva predeterminada, algunas etiquetas podrían tener protección establecida o no. A continuación, se indica un ejemplo:
     
     ![Paso 3 del tutorial de inicio rápido de Azure Information Protection - Directiva predeterminada](../media/info-protect-policy-default-labelsv2.png)
     
-    Además, hay algunas configuraciones de directiva que no están definidas. Por ejemplo, no todos los documentos y correos electrónicos deben tener una etiqueta, no hay ninguna etiqueta predeterminada y los usuarios no tienen que dar ninguna justificación cuando cambian etiquetas:
+    Además, hay algunas configuraciones de directiva que no están definidas. No todos los documentos y correos electrónicos deben tener una etiqueta, no hay ninguna etiqueta predeterminada y los usuarios no tienen que dar ninguna justificación cuando cambian etiquetas:
     
     ![Paso 3 del tutorial de inicio rápido de Azure Information Protection - Directiva predeterminada](../media/info-protect-policy-default-settings.png)
 
@@ -62,21 +62,21 @@ En este tutorial, se cambiarán algunas de esas configuraciones de directiva par
 
 Ahora cambiaremos la configuración de una de las subetiquetas, **Todos los empleados**, desde la etiqueta principal **Confidencial**. 
 
-Si la etiqueta **Confidencial** no tiene subetiquetas porque tiene una versión anterior de la directiva, puede usar la etiqueta **Confidencial** en su lugar. Los pasos de configuración son los mismos, pero el nombre de la hoja de la etiqueta será **Confidencial** en lugar de **Todos los empleados**.
+Si la etiqueta **Confidencial** no tiene subetiquetas porque tiene una versión anterior de la directiva, puede usar la etiqueta **Confidencial** en su lugar. Los pasos de configuración son los mismos, pero el nombre de la hoja de la etiqueta es **Confidencial** en lugar de **Todos los empleados**.
 
-1. Asegúrese de que la etiqueta **Confidencial** está expandida y, después, en esa etiqueta, seleccione **Todos los empleados**.
-    
-    En la nueva hoja **Etiqueta: Todos los empleados**, verá la configuración disponible para cada etiqueta. 
+1. Asegúrese de que la etiqueta **Confidencial** está expandida para mostrar las subetiquetas y, en la etiqueta **Todos los empleados**, observe si se muestra **Azure RMS** para la columna **PROTECCIÓN**. Si es así, tiene la directiva predeterminada más reciente y la protección de esta etiqueta está configurada automáticamente. Si esta columna está en blanco, deberá configurar la protección en un paso posterior.
+
+    Seleccione la subetiqueta **Todos los empleados** y, en la nueva hoja **Etiqueta: Todos los empleados**, verá la configuración disponible para cada etiqueta. 
 
 2. Lea el texto **Descripción** de esta etiqueta. Describe cómo se piensa usar la etiqueta seleccionada y es visible para los usuarios como una información sobre herramientas, para ayudarles a decidir la etiqueta que se va a seleccionar.
 
-3. Localice la sección **Establecer permisos para documentos y correos electrónicos que contengan esta etiqueta** y haga clic en **Proteger**:
+3. Si la protección ya está configurada para la etiqueta, vaya al paso 5.
     
-    ![Configurar la protección para una etiqueta de Azure Information Protection](../media/info-protect-protection-barv2.png) 
+    Si la protección no está configurada para la etiqueta, localice la sección **Establecer permisos para documentos y correos electrónicos que contengan esta etiqueta**. Seleccione **Proteger** y, después, la barra **Protección**:
     
-    Con esta acción se abre la hoja **Protección**.
+    ![Protección configurada para una etiqueta de Azure Information Protection](../media/info-protect-protection-bar-configured.png) 
     
-3. En la hoja **Protección**, las opciones **Azure RMS** y **Seleccionar una plantilla predefinida** deben estar seleccionadas. A continuación, haga clic en el cuadro desplegable y elija la plantilla predeterminada que permite a todos los usuarios de su organización ver y editar contenido protegido. 
+4. En la hoja **Protección**, asegúrese de que **Azure RMS** está seleccionado y elija **Seleccionar una plantilla predefinida**. Haga clic en el cuadro desplegable y elija la plantilla predeterminada que permite a todos los usuarios de la organización ver y editar contenido protegido. 
     
     Si hace poco que ha obtenido su suscripción, esta plantilla se denomina **Confidencial\Todos los empleados**. 
     
@@ -86,7 +86,7 @@ Si la etiqueta **Confidencial** no tiene subetiquetas porque tiene una versión 
     
     Si ha desactivado esta plantilla predeterminada de Azure Rights Management, seleccione una plantilla alternativa. Pero si selecciona una plantilla de departamento, asegúrese de que su cuenta esté incluida en el ámbito.
     
-4. Haga clic en **Aceptar** para guardar los cambios y cerrar la hoja **Protección**. Verá la configuración reflejada en la hoja **Etiqueta: Todos los empleados**:
+4. Haga clic en **Aceptar** para guardar los cambios y cerrar la hoja **Protección**. Verá que la barra Protección se actualiza en la hoja **Etiqueta: Todos los empleados**. Por ejemplo:
     
     ![Paso 3 del tutorial de inicio rápido de Azure Information Protection: protección de Azure RMS configurada](../media/protection-bar-configured.png)
     
@@ -96,7 +96,7 @@ Si la etiqueta **Confidencial** no tiene subetiquetas porque tiene una versión 
     
     ![Paso 3 del tutorial de inicio rápido de Azure Information Protection: establecer protección Azure RMS](../media/step2-configure-watermark.png)
     
-    Aunque puede cambiar el tamaño, el color y el diseño de las marcas de agua, dejaremos estas opciones como predeterminadas por ahora.
+    Aunque puede cambiar el tamaño, el color y el diseño de las marcas de agua, dejaremos estas opciones en sus valores predeterminados por ahora.
     
 6. Busque la sección **Configurar condiciones para aplicar automáticamente esta etiqueta**:
     
@@ -126,13 +126,13 @@ Si la etiqueta **Confidencial** no tiene subetiquetas porque tiene una versión 
     
     ![Paso 3 del tutorial de inicio rápido de Azure Information Protection: escribir notas](../media/step2-type-notes.png)
 
-10. Haga clic en **Guardar** en esta hoja **Etiqueta: Todos los empleados**. A continuación, en la hoja **Policy: Global** (Directiva:Global), haga clic de nuevo en **Guardar**.
+10. Haga clic en **Guardar** en la hoja **Etiqueta: Todos los empleados**. A continuación, en la hoja **Policy: Global** (Directiva:Global), haga clic de nuevo en **Guardar**.
     
-    En este momento, las etiquetas ahora muestran la protección de Azure RMS para la etiqueta que se acaba de configurar:
+    Si ha configurado la etiqueta para la protección, se actualiza ahora para mostrar la protección de Azure RMS:
 
     ![Paso 3 del tutorial de inicio rápido de Azure Information Protection - Directiva predeterminada configurada](../media/info-protect-policy-configuredv2.png)
     
-    Y los valores se configuran con los cambios correspondientes a la etiqueta y la justificación predeterminadas:
+    También verá que los valores se configuran con los cambios correspondientes a la etiqueta y la justificación predeterminadas:
     
     ![Paso 3 del tutorial de inicio rápido de Azure Information Protection: valores configurados](../media/info-protect-settings-configuredv2.png)
     
@@ -147,6 +147,7 @@ Ahora que ya ha dado un vistazo a la directiva predeterminada y ha hecho algunos
 |Si desea obtener más información|Información adicional|
 |--------------------------------|--------------------------|
 |Acerca de las opciones de configuración de la directiva|[Configuración de la directiva de Azure Information Protection](../deploy-use/configure-policy.md)|
+|Opciones de configuración de la directiva predeterminada|[Directiva predeterminada de Azure Information Protection](../deploy-use/configure-policy-default.md)|
 
 
 >[!div class="step-by-step"]

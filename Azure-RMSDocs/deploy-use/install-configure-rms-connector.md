@@ -4,7 +4,7 @@ description: "Información para facilitar la instalación y configuración del c
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/17/2017
+ms.date: 08/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: be09e2c974d9d542b94bc16f140e764858cc9282
-ms.sourcegitcommit: 12c9a4e3fe8e92d816f0a13003062f20dd2716df
+ms.openlocfilehash: a8cfa6a5baf1661495fc8b485ac0a6535c22233d
+ms.sourcegitcommit: 2a1c690ca84611e5774ac8fac0fb4caba09fef2e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="installing-and-configuring-the-azure-rights-management-connector"></a>Instalación y configuración del conector de Azure Rights Management
 
@@ -59,7 +59,7 @@ Esta cuenta no requiere la autenticación multifactor (MFA) porque la herramient
 
 El conector también tiene algunas restricciones de caracteres para esta contraseña. La contraseña no puede tener los siguientes caracteres: símbolo de Y comercial (**&**); corchete angular de apertura (**[**); corchete angular de cierre (**]**); comillas rectas (**"**); y apóstrofo (**'**). Si su contraseña tiene alguno de estos caracteres, se producirá un error en la autenticación para el conector RMS y verá el mensaje de error **Esa combinación de nombre de usuario y contraseña no es correcta**. Esto no afecta a otros escenarios, en los que podrá iniciar sesión correctamente con esta cuenta y contraseña. Si este escenario se aplica a su contraseña, use otra cuenta con una contraseña que no tenga ninguno de estos caracteres especiales o restablézcala y asegúrese de que no los incluya.
 
-Además, si implementó [controles de incorporación](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment), asegúrese de que la cuenta especificada es capaz de proteger el contenido. Por ejemplo, si restringió la capacidad de proteger el contenido al grupo “Departamento de TI”, la cuenta que especifique aquí debe pertenecer a ese grupo. Si no, verá el error siguiente: **Error al intentar detectar la ubicación de la organización y el servicio de administración. Asegúrese de que el servicio Microsoft Rights Management está habilitado para su organización.**
+Además, si implementó [controles de incorporación](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment), asegúrese de que la cuenta especificada es capaz de proteger el contenido. Por ejemplo, si restringió la capacidad de proteger el contenido al grupo “Departamento de TI”, la cuenta que especifique aquí debe pertenecer a ese grupo. Si no, verá el mensaje de error siguiente: **Error al intentar detectar la ubicación de la organización y el servicio de administración. Asegúrese de que el servicio Microsoft Rights Management está habilitado para su organización.**
 
 Puede usar una cuenta que tenga solo uno de los privilegios siguientes:
 
@@ -116,6 +116,10 @@ En la página final del asistente, haga lo que se indica y, a continuación, hag
 > -   En un explorador web, conéctese a **http://&lt;connectoraddress&gt;/_wmcs/certification/servercertification.asmx** y reemplace *&lt;connectoraddress&gt;* por la dirección o el nombre del servidor que tenga instalado el conector RMS. Si la conexión es correcta aparecerá una página **ServerCertificationWebService** .
 
 Si necesita desinstalar el conector RMS, ejecute el asistente de nuevo y seleccione la opción desinstalar.
+
+Si experimenta problemas durante la instalación, compruebe el registro de instalación: **%LocalAppData%\Temp\Microsoft Rights Management connector_\<fecha y hora>.log** 
+
+Por ejemplo, el registro de instalación puede ser similar a C:\Users\Administrator\AppData\Local\Temp\Microsoft Rights Management connector_20170803110352.log
 
 ## <a name="authorizing-servers-to-use-the-rms-connector"></a>Autorización para que los servidores usen el conector RMS
 Cuando haya instalado el conector RMS en dos equipo al menos, estará preparado para autorizar a los servidores y servicios en que quiera usar el conector RMS. Por ejemplo, sus servidores que ejecutan Exchange Server 2013 o SharePoint Server 2013.

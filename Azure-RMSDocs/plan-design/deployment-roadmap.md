@@ -4,7 +4,7 @@ description: "Siga estos pasos para preparar, implementar y administrar Azure In
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/14/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 54f72dad3f7dbc259df602f0f613124c46ce5846
-ms.sourcegitcommit: d42c6bb914563ae798d4171bb017c85b7077abfb
+ms.openlocfilehash: fabb31e2945b47cda688129d7ecd7cc3c26fd802
+ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2017
+ms.lasthandoff: 07/31/2017
 ---
 # <a name="azure-information-protection-deployment-roadmap"></a>Mapa de ruta de implementación de Azure Information Protection
 
@@ -88,7 +88,7 @@ Cuando los usuarios estén acostumbrados a etiquetar documentos y correos electr
 
 De forma opcional, considera configurar lo siguiente:
 
--   Plantillas personalizadas si las plantillas de directiva de derechos predeterminadas no son suficientes para tu organización. Este paso puedes hacerlo ahora o más tarde. Para más información, vea [Configuración de plantillas personalizadas para el servicio Azure Rights Management](../deploy-use/configure-custom-templates.md).
+-   Plantillas personalizadas si las plantillas de directiva de derechos predeterminadas no son suficientes para tu organización. Este paso puedes hacerlo ahora o más tarde. Para obtener más información, vea [Configuración y administración de plantillas para Azure Information Protection](../deploy-use/configure-policy-templates.md).
 
 -   Registro de uso para que puedas controlar cómo se usa Rights Management en tu organización. Este paso puedes hacerlo ahora o más tarde. Para obtener más información, consulte [Registro y análisis del uso del servicio Azure Rights Management](../deploy-use/log-analyze-usage.md).
 
@@ -154,7 +154,7 @@ Antes de empezar a usar [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rights
 
 De forma opcional, considera configurar lo siguiente:
 
--   Plantillas personalizadas si las plantillas de directiva de derechos predeterminadas no son suficientes para tu organización. Este paso puedes hacerlo ahora o más tarde. Para más información, vea [Configuración de plantillas personalizadas para el servicio Azure Rights Management](../deploy-use/configure-custom-templates.md).
+-   Plantillas personalizadas si las predeterminadas no son suficientes para la organización. Este paso puedes hacerlo ahora o más tarde. Para obtener más información, vea [Configuración y administración de plantillas para Azure Information Protection](../deploy-use/configure-policy-templates.md).
 
 -   Registro de uso para que puedas controlar cómo se usa Rights Management en tu organización. Este paso puedes hacerlo ahora o más tarde. Para obtener más información, consulte [Registro y análisis del uso del servicio Azure Rights Management](../deploy-use/log-analyze-usage.md).
 
