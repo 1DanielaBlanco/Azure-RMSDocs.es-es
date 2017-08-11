@@ -4,7 +4,7 @@ description: "Instrucciones de cómo clasificar y proteger sus documentos y corr
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/02/2017
+ms.date: 08/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: c7678be03106719af4679ae06e2aaa84aff8ca3e
-ms.sourcegitcommit: 87f0c7a8f9f1fdf7eece0f9d0c114ecf91f57683
+ms.openlocfilehash: 954b69213c055c4b94981fabef40df29aa0e19ba
+ms.sourcegitcommit: 5a087ff509162a98f3d09fda4ef5a114028e5664
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Clasificación y protección de archivos o correos electrónicos mediante Azure Information Protection
 
@@ -91,15 +91,6 @@ Puede especificar su propia configuración de protección para documentos en lug
     - **Expire access** (Acceso con expiración): seleccione esta opción solo para archivos sujetos a limitación temporal, de modo que las personas que ha especificado no puedan abrir los archivos seleccionados después de una fecha especificada. Aún podrá abrir el archivo original, pero el día seleccionado después de medianoche (su zona horaria actual), las personas que haya especificado no podrán abrir el archivo.
 
 5. Haga clic en **Aplicar** y espere a que aparezca el mensaje **Se han aplicado permisos personalizados**. A continuación, haga clic en **Cerrar**.
-
-
-### <a name="keyboard-shortcuts-for-the-azure-information-protection-bar"></a>Métodos abreviados de teclado para la barra Azure Information Protection
-
-Para acceder a la barra Azure Information Protection mediante el uso de métodos abreviados de teclado, utilice la combinación de teclas siguiente:
-
-- Presione **Ctrl** + **Mayús** + **~** 
-
-A continuación, utilice la tecla de tabulación para seleccionar las etiquetas y otros controles en la barra (el icono **Ocultar etiquetas** y el icono **Eliminar etiqueta**) y la tecla ENTRAR para seleccionarlos.
 
 ## <a name="using-file-explorer-to-classify-and-protect-files"></a>Uso del Explorador de archivos para clasificar y proteger archivos
 
