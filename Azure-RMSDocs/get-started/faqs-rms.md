@@ -4,7 +4,7 @@ description: "Algunas de las preguntas más frecuentes sobre el servicio de prot
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 08/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5a9f592584c090d8b0bb62acabd5775238b5e411
-ms.sourcegitcommit: 7cd6ff39731c7abe990a72a49bc10d104f47764d
+ms.openlocfilehash: a2c0a8ef4534f8d5149178986688c4d00b4cee9f
+ms.sourcegitcommit: 5ea919b1b2bcb9c4b3e5dd1939ff8d0d937e1168
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2017
+ms.lasthandoff: 08/11/2017
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Preguntas más frecuentes sobre la protección de datos en Azure Information Protection
 
@@ -101,14 +101,11 @@ El servicio Azure Rights Management siempre usa una cuenta de Azure Active Direc
 
 El método de autenticación de estas cuentas puede variar, en función de cómo configurase el administrador de la otra organización las cuentas de Azure Active Directory. Por ejemplo, podrían usar contraseñas creadas para estas cuentas, Multi-Factor Authentication (MFA), federación o contraseñas creadas en Servicios de dominio de Active Directory y después sincronizadas con Active Directory de Azure.
 
-## <a name="can-i-add-external-users-people-from-outside-my-company-to-templates"></a>¿Puedo agregar usuarios externos (personas ajenas a mi empresa) a plantillas?
-Sí. Si crea plantillas que los usuarios finales (y los administradores) puedan seleccionar desde las aplicaciones, hará que les resulte más rápido y sencillo aplicar la protección de la información mediante las directivas predefinidas que especifique. Uno de los valores de la plantilla define quién puede acceder al contenido, y puede especificar usuarios y grupos de su organización y usuarios y grupos ajenos a su organización. Incluso puede especificar todos los usuarios de otra organización.
+## <a name="can-i-add-external-users-people-from-outside-my-company-to-custom-templates"></a>¿Puedo agregar usuarios externos (personas ajenas a mi empresa) a plantillas personalizadas?
 
-Para establecer esta configuración, use Azure Portal cuando establezca la [configuración de protección](../deploy-use/configure-policy-protection.md). También puede establecer esta configuración mediante PowerShell. Para usar PowerShell:
+Sí. Al convertir una plantilla en una etiqueta en Azure Portal, puede establecer la [configuración de protección](../deploy-use/configure-policy-protection.md) para agregar permisos a usuarios y grupos de fuera de la organización, e incluso a todos los usuarios de otra organización. También puede establecer esta configuración mediante PowerShell.
 
--   **Use un objeto de Rights Definition para crear o actualizar una plantilla**.  especifique las direcciones de correo electrónico externas y sus derechos en un objeto de Rights Definition, que después usará para crear o actualizar una plantilla. Especifique el objeto de Rights Definition mediante el cmdlet [New-AadrmRightsDefinition](/powershell/module/aadrm/new-aadrmrightsdefinition) para crear una variable y, después, suministre esta variable al parámetro RightsDefinition con el cmdlet [Add-AadrmTemplate](/powershell/module/aadrm/add-aadrmtemplate) (para una nueva plantilla) o [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) (si modifica una plantilla existente). Sin embargo, si agrega estos usuarios a una plantilla existente, tiene que definir objetos de Rights Definition para los grupos existentes en las plantillas y no solo los usuarios externos.
-
-Para obtener más información sobre las plantillas, vea [Configuración y administración de plantillas para Azure Information Protection](../deploy-use/configure-policy-templates.md).
+Para obtener más información sobre cómo convertir plantillas personalizadas en etiquetas para poder agregar fácilmente usuarios externos, vea [Configuración y administración de plantillas para Azure Information Protection](../deploy-use/configure-policy-templates.md).
 
 ## <a name="does-azure-rms-work-with-dynamic-groups-in-azure-ad"></a>¿Funciona Azure RMS con grupos dinámicos en Azure AD?
 Una característica de Azure AD Premium le permite configurar la pertenencia dinámica para grupos de seguridad mediante [reglas basadas en atributos](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/). Este tipo de grupo no admite una dirección de correo electrónico, por lo que no se puede usar con el servicio Azure Rights Management. Sin embargo, los grupos de Office 365 admiten la pertenencia a grupos dinámicos y están habilitados para correo. Dado que este grupo está habilitado para correo, puede usarlo con la protección de Azure Rights Management.

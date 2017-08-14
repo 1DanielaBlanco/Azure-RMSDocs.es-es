@@ -4,7 +4,7 @@ description: "Actualmente en versión preliminar, ahora puede configurar y admin
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 08/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: b9c6b808de6c5967885f4937965b4e0e759668f3
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: dc39a52ca09ec7818b70a5bac320024bdc4de657
+ms.sourcegitcommit: 4186c8fadea7bcd32cce7d468916374a9cdf151b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>Configuración y administración de plantillas para Azure Information Protection
 
@@ -32,7 +32,7 @@ Las plantillas de Rights Management ahora están integradas con la directiva de 
 
 **Cuando tiene una suscripción que incluye clasificación, etiquetado y protección (Azure Information Protection P1 o P2):**
 
-- Las plantillas de Rights Management que no están integradas con las etiquetas para el inquilino se muestran en la sección **Plantillas** después de las etiquetas en la hoja **Azure Information Protection - Global policy** (Azure Information Protection: directiva global). Puede convertir estas plantillas en etiquetas o puede seguir administrándolas como plantillas independientes y crear un vínculo a ellas cuando configure la protección de sus etiquetas. 
+- Las plantillas de Rights Management que no están integradas con las etiquetas para el inquilino se muestran en la sección **Plantillas** después de las etiquetas en la hoja **Azure Information Protection - Global policy** (Azure Information Protection: directiva global). Puede convertir estas plantillas en etiquetas o puede crear un vínculo a ellas cuando configure la protección de sus etiquetas. 
 
 **Cuando tiene una suscripción que solo incluye protección (una suscripción a Office 365 que incluye el servicio Azure Rights Management):**
 
@@ -69,7 +69,7 @@ Si ha adquirido la suscripción a Azure Information Protection hace algún tiemp
 - **\<nombre de la organización> - Confidencial. Ver solo** para la visualización de solo lectura de contenido protegido. 
 
 >[!NOTE]
->Si no ve las plantillas predeterminadas en la hoja **Azure Information Protection - Global policy** (Azure Information Protection: directiva global), significa que se han convertido en etiquetas. Siguen existiendo como plantillas, pero en el Azure Portal las verá como parte de una configuración de etiqueta que incluye la protección de Azure RMS. Siempre puede confirmar qué plantillas tiene su inquilino. Para ello, ejecute [Get-AadrmTemplate](/powershell/module/aadrm/get-aadrmtemplate) desde el [módulo de AADRM de PowerShell](administer-powershell.md).
+>Si no ve las plantillas predeterminadas en la hoja **Azure Information Protection - Global policy** (Azure Information Protection: directiva global), significa que se han convertido en etiquetas o se han vinculado a una etiqueta. Siguen existiendo como plantillas, pero en el Azure Portal las verá como parte de una configuración de etiqueta que incluye la protección de Azure RMS. Siempre puede confirmar qué plantillas tiene su inquilino. Para ello, ejecute [Get-AadrmTemplate](/powershell/module/aadrm/get-aadrmtemplate) desde el [módulo de AADRM de PowerShell](administer-powershell.md).
 >
 >Puede convertir manualmente las plantillas, como se explica más adelante en la sección [Para convertir plantillas en etiquetas](#to-convert-templates-to-labels), y después cambiarles el nombre, si le interesa. O bien, se convertirán automáticamente si la directiva predeterminada de Azure Information Protection se ha creado recientemente y se ha activado en ese momento el servicio de Azure Rights Management para el inquilino.
 
