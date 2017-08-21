@@ -4,17 +4,17 @@ description: "Al configurar las condiciones de una etiqueta, puede asignar autom
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/23/2017
+ms.date: 08/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: 510375dec4fc4e28197270e62655375698580b95
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 3aad6eb4956b6565e44c4b1019c984a28cb41fdc
+ms.sourcegitcommit: 17f593b099dddcbb1cf0422353d594ab964b2736
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 08/11/2017
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Configuración de las condiciones para la clasificación automática y recomendada en Azure Information Protection
 
@@ -37,13 +37,13 @@ Modo de evaluar varias condiciones cuando se aplican a más de una etiqueta:
 3. Se aplica la última etiqueta secundaria.
 
 > [!TIP]
->Para conseguir la mejor experiencia de usuario y garantizar la continuidad empresarial, conviene comenzar con la clasificación recomendada al usuario, en lugar de la clasificación automática. Esta configuración ofrece a los usuarios la posibilidad de aceptar la acción de etiquetado o protección, o de reemplazar estas sugerencias si no resultan adecuadas para su documento o mensaje de correo electrónico.
+>Para conseguir la mejor experiencia de usuario y garantizar la continuidad empresarial, conviene comenzar con la clasificación recomendada al usuario, en lugar de la clasificación automática. Esta configuración permite a los usuarios aceptar la acción de etiquetado o protección, o de reemplazar estas sugerencias si no resultan adecuadas para su documento o mensaje de correo electrónico.
 
 Mensaje de ejemplo cuando se configura una condición para aplicar una etiqueta como acción recomendada, con una sugerencia de directiva personalizada:
 
-![Detección y recomendación de Azure Information Protection](../media/info-protect-recommend-callouts.png)
+![Detección y recomendación de Azure Information Protection](../media/info-protect-recommend-calloutsv2.png)
 
-En este ejemplo, el usuario puede hacer clic en **Cambiar ahora** para aplicar la etiqueta recomendada, o bien reemplazar la recomendación, cerrando la barra.
+En este ejemplo, el usuario puede hacer clic en **Cambiar ahora** para aplicar la etiqueta recomendada, o bien invalidar la recomendación seleccionando **Descartar**.
 
 ## <a name="to-configure-recommended-or-automatic-classification-for-a-label"></a>Para configurar la clasificación automática o recomendada para una etiqueta
 
