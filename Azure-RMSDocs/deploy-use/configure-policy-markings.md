@@ -4,27 +4,23 @@ description: "Cuando se asigna una etiqueta a un documento o a un mensaje de cor
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/23/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: efc60ee6126a6a0b2798f66c46c2242942878829
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: a65299651abd97adb0fc7641be2f2f3c6f1d8d2f
+ms.sourcegitcommit: adb38b008656ac706920a8488fd2beafedadbc97
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 08/16/2017
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Configuración de una etiqueta para marcas visuales de Azure Information Protection
 
 >*Se aplica a: Azure Information Protection*
 
-Cuando se asigna una etiqueta a un documento o a un mensaje de correo electrónico, puede seleccionar varias opciones para hacer visible la clasificación elegida. Estos marcadores visuales son un encabezado, un pie de página y una marca de agua:
-
-Los distintivos visuales se aplican a documentos de Word, Excel y PowerPoint cuando se aplica la etiqueta y cuando el documento se guarda en estas aplicaciones de Office. En los mensajes de correo electrónico, los distintivos visuales se aplican cuando el mensaje de correo electrónico se envía desde Outlook.
-
-Los distintivos visuales no se aplican a los documentos cuando la etiqueta se aplica con el Explorador de archivos y la acción que se realiza cuando se hace clic con el botón derecho. O bien, cuando se clasifica un documento con PowerShell.
+Cuando se asigna una etiqueta a un documento o a un mensaje de correo electrónico, puede seleccionar varias opciones para hacer visible la clasificación elegida. Estos marcadores visuales son un encabezado, un pie de página y una marca de agua.
 
 Más información sobre estos marcadores visuales:
 
@@ -33,10 +29,32 @@ Más información sobre estos marcadores visuales:
 - Las marcas de agua se aplican a Word, Excel y PowerPoint:
 
     - Excel: las marcas de agua son solo visibles en los modos Diseño de página y Vista previa de impresión y cuando se imprimen.
-
+    
     - PowerPoint: las marcas de agua se aplican a la diapositiva patrón, como una imagen de fondo.
+    
+    - Se admiten varias líneas de texto cuando se usa la versión de vista previa actual del cliente de Azure Information Protection.
 
 - Puede especificar solo una cadena de texto o usar [variables](#using-variables-in-the-text-string) para crear dinámicamente la cadena de texto cuando se aplica el encabezado, el pie de página o la marca de agua.
+
+## <a name="when-visual-markings-are-applied"></a>Cuando se aplican distintivos visuales
+
+En los mensajes de correo electrónico, los distintivos visuales se aplican cuando el mensaje de correo electrónico se envía desde Outlook.
+
+Para los documentos, los distintivos visuales se aplican de la siguiente manera:
+
+- **Para la versión de disponibilidad general** del cliente de Azure Information Protection: 
+    
+    - En una aplicación de Office, los distintivos visuales de una etiqueta se aplican cuando la etiqueta se aplica y siempre que se guarda el documento. 
+    
+    - Cuando un documento se etiqueta mediante el Explorador de archivos o PowerShell, los distintivos visuales no se aplican inmediatamente, sino cuando ese documento se abre en una aplicación de Office y cada vez que se guarda el documento.
+
+- **Para la versión de vista previa actual** del cliente de Azure Information Protection: 
+    
+    - En una aplicación de Office, los distintivos visuales de una etiqueta se aplican cuando la etiqueta se aplica. Los distintivos visuales también se aplican cuando se abre un documento etiquetado y el documento se guardó por primera vez.  
+    
+    - Cuando un documento se etiqueta mediante el Explorador de archivos o PowerShell, los distintivos visuales no se aplican inmediatamente, sino cuando ese documento se abre en una aplicación de Office y el documento se guardó por primera vez.
+
+## <a name="to-configure-visual-markings-for-a-label"></a>Para configurar distintivos visuales para una etiqueta
 
 Utilice las siguientes instrucciones para configurar las marcas visuales para una etiqueta.
 
