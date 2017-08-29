@@ -1,10 +1,10 @@
 ---
 title: "Administración de Microsoft: operaciones de ciclo de vida de clave de inquilino de AIP"
-description: "Información sobre las operaciones del ciclo de vida que son relevantes si Microsoft administra la clave de inquilino para Azure Information Protection (la predeterminada)."
+description: "Información sobre las operaciones del ciclo de vida que son pertinentes si Microsoft administra la clave de inquilino para Azure Information Protection (la predeterminada)."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/19/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 3c48cda6-e004-4bbd-adcf-589815c56c55
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: cacaa10d1a5cbf3a2de903cd4e9f893b546e5609
-ms.sourcegitcommit: 52ad844cd42479a56b1ae0e56ba0614f088d8a1a
+ms.openlocfilehash: e4a484660aaf5a1820b04892ff006c08cceb5080
+ms.sourcegitcommit: 0fa5dd38c9d66ee2ecb47dfdc9f2add12731485e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2017
+ms.lasthandoff: 08/24/2017
 ---
 # <a name="microsoft-managed-tenant-key-lifecycle-operations"></a>Administración de Microsoft: Operaciones de ciclo de vida de clave de inquilino
 
@@ -28,15 +28,27 @@ Si Microsoft administra su clave de inquilino para Azure Information Protection 
 Al cancelar la suscripción a Azure Information Protection, la solución deja de usar la clave de inquilino y no es necesario realizar ninguna otra acción.
 
 ## <a name="rekey-your-tenant-key"></a>Regenerar su clave de inquilino
-La acción de regenerar la clave también se conoce como revertir la clave. No regenere su clave de inquilino a menos que sea realmente necesario. Otros clientes, como Office 2010, no se diseñaron para tratar cambios de clave correctamente. En este escenario, necesita desactivar el estado de Rights Management en los equipos con una directiva de grupo o un mecanismo equivalente. Sin embargo, hay algunos eventos legítimos que pueden forzarle a regenerar la clave de inquilino. Por ejemplo:
+La acción de regenerar la clave también se conoce como revertir la clave. Al realizar esta operación, Azure Information Protection deja de usar la clave de inquilino existente para proteger documentos y correos electrónicos, y comienza a usar otra clave. Las directivas y las plantillas se retiran inmediatamente, pero el cambio es gradual para los clientes y los servicios existentes que usen Azure Information Protection. De este modo, durante cierto tiempo, parte del contenido nuevo sigue protegido por la clave de inquilino anterior.
 
--   La compañía se ha dividido en una o dos compañías. Cuando regenera la clave de inquilino, la nueva empresa no tendrá acceso al nuevo contenido que publiquen sus empleados. Pueden acceder al antiguo contenido si tienen una copia de la antigua clave de inquilino.
+Para regenerar la clave, debe configurar el objeto de clave de inquilino y especificar la clave alternativa que se usará. A continuación, se marcará automáticamente la clave usada anteriormente como archivada para Azure Information Protection. Esta configuración garantiza que el contenido que se haya protegido con esta clave seguirá estando disponible.
 
--   Cree que la copia maestra de su clave de inquilino (la copia en su posesión) se ha puesto en peligro.
+Ejemplos de cuándo tendrá que regenerar la clave de Azure Information Protection:
 
-Para regenerar la clave de inquilino, [póngase en contacto con Soporte técnico de Microsoft](../get-started/information-support.md#to-contact-microsoft-support) para abrir una **incidencia de soporte técnico de Azure Information Protection con una solicitud para regenerar la clave de inquilino de Azure Information Protection**. Necesita demostrar que es un administrador del inquilino de Azure Information Protection y que comprende que este proceso tarda varios días en confirmarse. Se aplican cargos de soporte técnico Estándar; la acción de regenerar la clave de inquilino no es un servicio de soporte técnico gratuito.
+- Ha realizado la migración de Active Directory Rights Management Services (AD RMS) mediante una clave de modo criptográfico 1. Ha finalizado la migración y quiere cambiar a una clave que use el modo criptográfico 2.
 
-Cuando regenera su clave de inquilino, el nuevo contenido está protegido usando la nueva clave de inquilino. Esto sucede en fases, por lo que para un período de tiempo, parte del contenido nuevo sigue protegido por la antigua clave de inquilino. El contenido protegido anteriormente permanece protegido para su antigua clave de inquilino. Para admitir este escenario, Azure Information Protection conserva su clave de inquilino anterior para que pueda emitir licencias para contenido antiguo.
+- La compañía se ha dividido en una o dos compañías. Cuando regenera la clave de inquilino, la nueva empresa no tendrá acceso al nuevo contenido que publiquen sus empleados. Pueden acceder al antiguo contenido si tienen una copia de la antigua clave de inquilino.
+
+- Cree que la copia maestra de su clave de inquilino está en peligro.
+
+Para regenerar la clave, puede seleccionar una clave administrada por Microsoft diferente para que pase a ser su clave de inquilino, pero no puede crear una clave administrada por Microsoft. Para crear una clave, debe cambiar la topología de clave para que la administre el cliente (BYOK).
+
+Si ha realizado la migración desde Active Directory Rights Management Services (AD RMS) y elige la topología de clave administrada por Microsoft para Azure Information Protection, tendrá más de una clave administrada por Microsoft. En este escenario, tendrá al menos dos claves administrada por Microsoft para su inquilino. Al menos una de ellas será la clave que haya importado desde AD RMS. También tendrá la clave predeterminada que se creó automáticamente para su inquilino de Azure Information Protection.
+
+Para seleccionar una clave diferente a su clave de inquilino activa de Azure Information Protection, use el cmdlet [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties) del módulo AADRM. Para ayudarle a identificar qué clave se usará, use el cmdlet [Get-AadrmKeys](/powershell/module/aadrm/get-aadrmkeys). Puede identificar la clave predeterminada que se ha creado automáticamente para su inquilino de Azure Information Protection ejecutado el comando siguiente:
+
+    (Get-AadrmKeys) | Sort-Object CreationTime | Select-Object -First 1
+
+Para cambiar la topología de clave para la administre el cliente (BYOK), consulte [Implementación de su clave de inquilino de Azure Information Protection](../plan-design/plan-implement-tenant-key.md#implementing-your-azure-information-protection-tenant-key).
 
 ## <a name="backup-and-recover-your-tenant-key"></a>Realizar una copia de seguridad y recuperar la clave de inquilino
 Microsoft es responsable de realizar la copia de seguridad de su clave de inquilino y no se requiere que realice ninguna acción.
@@ -46,7 +58,7 @@ Para exportar la configuración de Azure Information Protection y su clave de in
 
 ### <a name="step-1-initiate-export"></a>Paso 1: Iniciar exportación
 
--   Para hacerlo, [póngase en contacto con el soporte técnico de Microsoft](../get-started/information-support.md#to-contact-microsoft-support) para abrir una **incidencia de soporte técnico de Azure Information Protection con una solicitud para una exportación de clave de Azure Information Protection**. Necesita demostrar que es un administrador del inquilino de Azure Information Protection y que comprende que este proceso tarda varios días en confirmarse. Se aplican cargos de soporte técnico estándar; la exportación de la clave de inquilino no es un servicio de soporte técnico gratuito.
+- [Póngase en contacto con Soporte técnico de Microsoft](../get-started/information-support.md#to-contact-microsoft-support) para abrir una **incidencia de soporte técnico de Azure Information Protection en la que solicite exportar una clave de Azure Information Protection**. Necesita demostrar que es un administrador del inquilino de Azure Information Protection y que comprende que este proceso tarda varios días en confirmarse. Se aplican cargos de soporte técnico estándar; la exportación de la clave de inquilino no es un servicio de soporte técnico gratuito.
 
 ### <a name="step-2-wait-for-verification"></a>Paso 2: Esperar comprobación
 
@@ -76,12 +88,12 @@ Para exportar la configuración de Azure Information Protection y su clave de in
 
 ### <a name="step-4-ongoing-protect-your-tenant-key"></a>Paso 4: En curso: Proteger su clave de inquilino
 
--   Cuando haya recibido su clave de inquilino, manténgala a buen recaudo, ya que si alguien consigue acceso a ella, podrá descifrar todos los documentos que se hayan protegido con esa clave.
+Cuando haya recibido su clave de inquilino, manténgala a buen recaudo, ya que si alguien consigue acceso a ella, podrá descifrar todos los documentos que se hayan protegido con esa clave.
 
-    Si el motivo para exportar la clave de inquilino es que ya no quiere usar Azure Information Protection, le recomendamos que desactive ahora el servicio Azure Rights Management del inquilino de Azure Information Protection. No se demore en hacerlo después de recibir su clave de inquilino, ya que esta precaución le ayuda a minimizar las consecuencias si alguien que no debería tener su clave de inquilino consigue acceso a ella. Para obtener más instrucciones, consulte [Retirada y desactivación de Azure Rights Management](decommission-deactivate.md).
+Si el motivo para exportar la clave de inquilino es que ya no quiere usar Azure Information Protection, le recomendamos que desactive ahora el servicio Azure Rights Management del inquilino de Azure Information Protection. No se demore en hacerlo después de recibir su clave de inquilino, ya que esta precaución le ayuda a minimizar las consecuencias si alguien que no debería tener su clave de inquilino consigue acceso a ella. Para obtener más instrucciones, consulte [Retirada y desactivación de Azure Rights Management](decommission-deactivate.md).
 
 ## <a name="respond-to-a-breach"></a>Responder a una infracción
-Ningún sistema de seguridad, por seguro que sea, está completo sin un proceso de respuesta a infracción. Puede que se haya robado o puesto en peligro su clave de inquilino. Aunque esté bien protegido, se pueden encontrar vulnerabilidades en la tecnología HSM de la generación actual o algoritmos y longitudes de clave actuales.
+Ningún sistema de seguridad, por seguro que sea, está completo sin un proceso de respuesta a infracción. Puede que se haya robado o puesto en peligro su clave de inquilino. Aunque esté bien protegida, pueden encontrarse vulnerabilidades en la tecnología de generación de claves actual, así como en las longitudes y los algoritmos actuales.
 
 Microsoft tiene un equipo dedicado a responder a incidentes de seguridad en sus productos y servicios. Tan pronto como aparece un informe fiable de un incidente, este equipo se pone a investigar el alcance, la causa del origen del mismo y cómo mitigarlo. Si este incidente afecta a sus activos, Microsoft enviará una notificación por correo electrónico a sus administradores de inquilino de Azure Information Protection, usando para ello la dirección que haya especificado al suscribirse.
 

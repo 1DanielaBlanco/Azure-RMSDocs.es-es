@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 8f81eee3c15b771e60c24a83f66d13a4a654a7e3
-ms.sourcegitcommit: 17f593b099dddcbb1cf0422353d594ab964b2736
+ms.openlocfilehash: a4337d197e08cd75b974594fdd797c9bb383c1f9
+ms.sourcegitcommit: 0fa5dd38c9d66ee2ecb47dfdc9f2add12731485e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 08/24/2017
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>Migración desde AD RMS a Azure Information Protection
 
@@ -102,9 +102,7 @@ Antes de iniciar la migración a Azure Information Protection, asegúrese de que
 
 ### <a name="cryptographic-mode-considerations"></a>Consideraciones del modo criptográfico
 
-Si el clúster de AD RMS está actualmente en el modo criptográfico 1, no lo actualice al modo criptográfico 2 antes de iniciar la migración. En su lugar, realice la migración con el modo criptográfico 1 y regenere la clave de inquilino al final de la migración, como una de las tareas posteriores a la migración.
-
-El modo criptográfico 1 solo se admite durante el proceso de migración.
+Si el clúster de AD RMS está actualmente en el modo criptográfico 1, no lo actualice al modo criptográfico 2 antes de iniciar la migración. En su lugar, realice la migración con el modo criptográfico 1. Podrá regenerar la clave de inquilino al final de la migración como una de las tareas posteriores a esta.
 
 Para confirmar el modo criptográfico de AD RMS:
  
@@ -215,7 +213,7 @@ Los pasos de migración se pueden dividir en cinco fases que se pueden realizar 
 
 - **Paso 12: regenerar la clave de inquilino de Azure Information Protection**
 
-    Este paso es necesario si no estaba realizando la ejecución en modo criptográfico 2 antes de la migración y es opcional pero recomendado para que todas las migraciones ayuden a proteger la seguridad de la clave de inquilino de Azure Information Protection.
+    Le recomendamos este paso si no estaba ejecutando en el modo criptográfico 2 antes de la migración.
 
 
 ## <a name="next-steps"></a>Pasos siguientes
