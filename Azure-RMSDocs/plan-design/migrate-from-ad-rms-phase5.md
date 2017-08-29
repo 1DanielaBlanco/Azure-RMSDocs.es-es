@@ -4,7 +4,7 @@ description: "Fase 5 de la migración desde AD RMS a Azure Information Protectio
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/07/2017
+ms.date: 08/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: aeffd9780001f4c91ea8600f11d8fc3b36abce73
-ms.sourcegitcommit: 238657f9450f18213c2b9fb453174df0ce1f1aef
+ms.openlocfilehash: 11775c64cbd5abd7c10a145a2d48f335db2d5b69
+ms.sourcegitcommit: 8251e4db274519a2eb8033d3135a22c27130bd30
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="migration-phase-5---post-migration-tasks"></a>Fase 5 de la migración: tareas posteriores a la migración
 
@@ -71,19 +71,27 @@ Para quitar los controles de incorporación:
     En la salida, en **Licencia** debería aparecer **False**, tampoco debería mostrarse ningún GUID para **SecurityGroupOjbectId**.
 
 ## <a name="step-12-rekey-your-azure-information-protection-tenant-key"></a>Paso 12. Regenerar su clave de inquilino de Azure Information Protection
-Este paso es necesario al finalizar la migración si la implementación de AD RMS usaba el modo criptográfico 1 de RMS. Al regenerar las claves, se crea una clave de inquilino que usa el modo criptográfico 2 de RMS. Se admite el modo criptográfico 1 con Azure Information Protection únicamente durante el proceso de migración.
 
-Si regenera la clave al finalizar la migración, también ayudará a proteger su clave de inquilino de Azure Information Protection ante posibles infracciones de seguridad en la clave de AD RMS.
+Este paso está recomendado al finalizar la migración si la implementación de AD RMS usaba el modo criptográfico 1 de RMS. Con la regeneración de la clave, la protección pasa a usar el modo criptográfico 2 de RMS. 
 
-Si regenera la clave de inquilino de Azure Information Protection (que también se conoce como "revertir la clave"), se creará una clave y se archivará la clave original. Pero el paso de una clave a otra no es inmediato, sino que requiere unas cuantas semanas. Por este motivo, no espere hasta sospechar que se ha producido una infracción en la clave original y vuelva a generar la clave de inquilino de Azure Information Protection en cuanto finalice la migración.
+Aunque la implementación de AD RMS usase el modo criptográfico 2, le recomendamos que realice este paso, ya que una clave nueva le ayuda a proteger su inquilino de posibles infracciones de seguridad en la clave de AD RMS.
+
+Sin embargo, no regenere la clave si estaba usando Exchange Online con AD RMS. Exchange Online no admite el cambio de modos criptográficos. 
+
+Al regenerar la clave de inquilino de Azure Information Protection, se archivará la clave activa, y Azure Information Protection empezará a usar la clave que especifique. Esta clave podría ser una clave que cree en Azure Key Vault, o bien la clave predeterminada que se creó automáticamente para su inquilino.
+
+El paso de una clave a otra no es inmediato, sino que requiere unas cuantas semanas. Por este motivo, no espere hasta sospechar que se ha producido una infracción en la clave original e inicie este proceso en cuanto finalice la migración.
 
 Para regenerar su clave de inquilino de Azure Information Protection:
 
-- Si Microsoft administra la clave de inquilino, póngase en contacto con [Soporte técnico de Microsoft](../get-started/information-support.md#to-contact-microsoft-support) y abra una incidencia de soporte técnico de **Azure Information Protection con una solicitud para regenerar la clave de Azure Information Protection después de la migración desde AD RMS**. Necesita demostrar que es un administrador del inquilino de Azure Information Protection y que comprende que este proceso tarda varios días en confirmarse. Se aplican cargos de soporte técnico Estándar; la acción de regenerar la clave de inquilino no es un servicio de soporte técnico gratuito.
+- **Si Microsoft administra su clave de inquilino**: ejecute el cmdlet de PowerShell [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties) y especifique el identificador de la clave que se creó automáticamente para su inquilino. Puede identificar el valor que debe especificar mediante el cmdlet [Get-AadrmKeys](/powershell/module/aadrm/get-aadrmkeys). La clave que se creó automáticamente para el inquilino tiene la fecha de creación más antigua, por lo que se puede identificar mediante el comando siguiente:
+    
+        (Get-AadrmKeys) | Sort-Object CreationTime | Select-Object -First 1
 
-- Si usted administra la clave de inquilino (BYOK), en Azure Key Vault debe regenerar la clave que usa para el inquilino de Azure Information Protection y, luego, ejecutar nuevamente el cmdlet [Use-AadrmKeyVaultKey](/powershell/aadrm/vlatest/use-aadrmkeyvaultkey) para especificar la nueva dirección URL de la clave. 
+- [Si usted administra la clave de inquilino (BYOK)](/powershell/aadrm/vlatest/use-aadrmkeyvaultkey): debe repetir el proceso de creación de una clave en Azure Key Vault para el inquilino de Azure Information Protection y, luego, ejecutar nuevamente el cmdlet **Use-AadrmKeyVaultKey** para especificar el URI de esta clave nueva. 
 
 Para más información sobre cómo administrar la clave de inquilino de Azure Information Protection, vea [Operaciones para la clave de inquilino de Azure Rights Management](../deploy-use/operations-tenant-key.md).
+
 
 ## <a name="next-steps"></a>Pasos siguientes
 

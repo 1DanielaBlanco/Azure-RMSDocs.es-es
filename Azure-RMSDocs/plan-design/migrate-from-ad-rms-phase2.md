@@ -4,7 +4,7 @@ description: "Fase 2 de la migración desde AD RMS a Azure Information Protectio
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9f04698064037343719d274e793eb560b703b031
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: 22b43c2b149c7a7fd5ce79ca3ceef8100b9d5e7b
+ms.sourcegitcommit: 0fa5dd38c9d66ee2ecb47dfdc9f2add12731485e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 08/24/2017
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>Fase 2 de la migración: configuración del lado servidor para AD RMS
 
@@ -133,7 +133,9 @@ Los cambios en la plantilla que debe realizar para este paso:
 
 - Si ha creado plantillas personalizadas de Azure Information Protection antes de la migración, tendrá que exportarlas e importarlas de forma manual.
 
-- Si las plantillas de AD RMS usan el grupo **CUALQUIERA**, debe agregar manualmente el grupo y los derechos equivalentes.
+- Si sus plantillas de AD RMS usaban el grupo **CUALQUIERA**, es posible que deba agregar usuarios o grupos de fuera de su organización. 
+    
+    En AD RMS, el grupo CUALQUIERA concedía derechos a toso los usuarios autenticados. Este grupo se convierte automáticamente en todos los usuarios de su inquilino de Azure AD. Si no tiene que conceder derechos a más usuarios, no es necesario realizar ninguna otra acción. Sin embargo, si usaba el grupo CUALQUIERA para incluir a usuarios externos, deberá agregarlos manualmente, así como los derechos que quiera concederles.
 
 ### <a name="procedure-if-you-created-custom-templates-before-the-migration"></a>Procedimiento si ha creado plantillas personalizadas antes de la migración
 
@@ -149,24 +151,18 @@ Después puede publicar o archivar estas plantillas como lo haría con cualquier
 
 ### <a name="procedure-if-your-templates-in-ad-rms-used-the-anyone-group"></a>Procedimiento si las plantillas de AD RMS usan el grupo **CUALQUIERA**
 
-Si las plantillas de AD RMS estaban asignadas al grupo **CUALQUIERA**, este grupo se quitará automáticamente al importar las plantillas en Azure Information Protection. Necesita agregar de forma manual el grupo o usuarios equivalentes y los mismos derechos a las plantillas importadas. El grupo equivalente de Azure Information Protection se denomina **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@\<nombre_inquilino>.onmicrosoft.com**. Por ejemplo, este grupo puede tener un aspecto similar al siguiente para Contoso: **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**.
+Si sus plantillas de AD RMS usaban el grupo **CUALQUIERA**, este grupo se convertirá automáticamente para que use el grupo **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@\<tenant_name>.onmicrosoft.com**. Por ejemplo, este grupo puede tener un aspecto similar al siguiente para Contoso: **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**. Este grupo incluye a todos los usuarios del inquilino de Azure AD.
+
+Al administrar plantillas y etiquetas en Azure Portal, este grupo se muestra como el nombre de dominio de su inquilino en Azure AD. Por ejemplo, este grupo puede tener un aspecto similar al siguiente para Contoso: **contoso.onmicrosoft.com**. Para agregar este grupo, la opción muestra **Agregar \<nombre de la organización> Todos los miembros**.
 
 Si no está seguro de si las plantillas de AD RMS incluyen el grupo CUALQUIERA, puede usar el siguiente script de Windows PowerShell de ejemplo para identificar estas plantillas. Para más información sobre el uso de Windows PowerShell con AD RMS, vea [Using Windows PowerShell to Administer AD RMS](https://technet.microsoft.com/library/ee221079%28v=ws.10%29.aspx) (Uso de Windows PowerShell para administrar AD RMS).
 
-Puede ver el grupo de su organización creado automáticamente si copia una de las plantillas predeterminadas de directiva de permisos en el Portal de Azure clásico e identifica el **NOMBRE DE USUARIO** en la página **PERMISOS**. Sin embargo, no puede usar el portal clásico para agregar este grupo a una plantilla que se creó o importó manualmente; en su lugar, debe usar una de las siguientes opciones de Azure RMS PowerShell:
+Puede agregar fácilmente los usuarios externos a las plantillas al convertirlas en etiquetas en Azure Portal. A continuación, en la hoja **Agregar permisos**, elija **Escriba los detalles** para especificar manualmente las direcciones de correo electrónico de estos usuarios. 
 
-- Use el cmdlet [New-AadrmRightsDefinition](/powershell/aadrm/vlatest/new-aadrmrightsdefinition) de PowerShell para definir el grupo "AllStaff" y los derechos como un objeto de definición de derechos, y vuelva a ejecutar este comando para cada uno de los demás grupos o usuarios a los que ya se les ha concedido derechos en la plantilla original, además de asignar el grupo CUALQUIERA. Después, agregue estos objetos de definición de derechos a las plantillas mediante el cmdlet [Set-AadrmTemplateProperty](/powershell/aadrm/vlatest/set-aadrmtemplateproperty).
-
-- Use el cmdlet [Export-AadrmTemplate](/powershell/aadrm/vlatest/export-aadrmtemplate) para exportar la plantilla a un archivo .XML que pueda editar para agregar el grupo "AllStaff" y los derechos a los grupos y derechos existentes y, después, use el cmdlet [Import-AadrmTemplate](/powershell/aadrm/vlatest/import-aadrmtemplate) para volver a importar este cambio en Azure Information Protection.
-
-> [!NOTE]
-> Este grupo equivalente "AllStaff" no es exactamente igual que el grupo ANYONE de AD RMS: el grupo "AllStaff" incluye a todos los usuarios de su inquilino de Azure, mientras que el grupo CUALQUIERA incluye a todos los usuarios autenticados, que podrían estar fuera de su organización.
-> 
-> Debido a esta diferencia entre los dos grupos, puede que tenga que agregar también usuarios externos además del grupo "AllStaff". Actualmente no se admiten direcciones de correo electrónico externas para grupos.
-
+Para obtener más información sobre esta configuración, consulte [Configuración de una etiqueta para la protección de Rights Management](../deploy-use/configure-policy-protection.md).
 
 #### <a name="sample-windows-powershell-script-to-identify-ad-rms-templates-that-include-the-anyone-group"></a>Script de ejemplo de Windows PowerShell para identificar plantillas de AD RMS que incluyen el grupo CUALQUIERA
-Esta sección contiene el script de ejemplo que le ayuda a identificar plantillas de AD RMS que tienen definido el grupo CUALQUIERA, tal como se ha descrito en la sección anterior.
+Esta sección contiene el script de ejemplo que le ayuda a identificar cualquier plantilla de AD RMS que tenga definido el grupo CUALQUIERA, tal como se ha descrito en la sección anterior.
 
 **Aviso de declinación de responsabilidades:** este script de ejemplo no es compatible con ningún servicio o programa de soporte técnico Standard de Microsoft. Este script de ejemplo se proporciona TAL CUAL sin garantía de ningún tipo.
 

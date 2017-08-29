@@ -4,7 +4,7 @@ description: "Instrucciones e información para que los administradores administ
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/01/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 618e8b6a160ccc699658bf8c317c40ed2ded3bee
-ms.sourcegitcommit: 87f0c7a8f9f1fdf7eece0f9d0c114ecf91f57683
+ms.openlocfilehash: 6077b9eba8ee04bf22c17612183f3d41b6b71e35
+ms.sourcegitcommit: 0fa5dd38c9d66ee2ecb47dfdc9f2add12731485e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/24/2017
 ---
 # <a name="using-powershell-with-the-azure-information-protection-client"></a>Uso de PowerShell con el cliente de Azure Information Protection
 
@@ -77,7 +77,7 @@ Además de los requisitos previos para instalar el módulo AzureInformationProte
 
 4. Para las regiones fuera de Estados Unidos: 
     
-    - Edite el registro para la autenticación en el servidor.
+    - Edite el Registro para la detección de servicios.
 
 #### <a name="prerequisite-1-the-azure-rights-management-service-must-be-activated"></a>Requisito previo 1: el servicio Azure Rights Management debe estar activado
 
@@ -229,12 +229,9 @@ Para más información, vea [Configuración de superusuarios para Azure Rights M
 > [!NOTE]
 > Para utilizar su propia cuenta para autenticarse en el servicio Azure Rights Management, no hay necesidad de ejecutar Set-RMSServerAuthentication antes de proteger o desproteger archivos u obtener plantillas.
 
-
-
-
 #### <a name="prerequisite-4-for-regions-outside-north-america"></a>Requisito previo 4: Para las regiones fuera de Estados Unidos
 
-Para la autenticación fuera de la región de Estados Unidos de Azure, debe modificar el registro de la siguiente manera. Si el inquilino de Azure Information Protection está en Estados Unidos, no siga este paso:
+Si usa una cuenta de entidad de servicio para proteger archivos y descargar plantillas fuera de la región de Norteamérica de Azure, debe modificar el Registro: 
 
 1. Vuelva a ejecutar el cmdlet Get-AadrmConfiguration y anote los valores de **CertificationExtranetDistributionPointUrl** y **LicensingExtranetDistributionPointUrl**.
 
