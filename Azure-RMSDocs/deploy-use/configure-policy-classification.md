@@ -4,17 +4,17 @@ description: "Al configurar las condiciones de una etiqueta, puede asignar autom
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/11/2017
+ms.date: 08/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: 3aad6eb4956b6565e44c4b1019c984a28cb41fdc
-ms.sourcegitcommit: 17f593b099dddcbb1cf0422353d594ab964b2736
+ms.openlocfilehash: ef84f3ceb8f732dd475b4db8eae489e715d4b7da
+ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Configuración de las condiciones para la clasificación automática y recomendada en Azure Information Protection
 
@@ -26,7 +26,7 @@ Al configurar las condiciones de una etiqueta, puede asignar automáticamente la
  
 - La clasificación recomendada se aplica a Word, Excel y PowerPoint cuando se guardan archivos.
 
-Al configurar condiciones, puede usar patrones predefinidos, como "Números de tarjeta de crédito" o "Número de la Seguridad Social de EE. UU.". O puede definir un patrón o una cadena personalizada como condición de una clasificación automática. Estas condiciones se aplican al texto del cuerpo en documentos y correos electrónicos, así como a encabezados y pies de página. Para más información sobre las condiciones, consulte la sección [Información sobre las condiciones integradas](#information-about-the-built-in-conditions).
+Al configurar condiciones, puede usar patrones predefinidos, como **Número de la tarjeta de crédito** o **Número de la Seguridad Social (SSN) de EE. UU.**. O puede definir un patrón o una cadena personalizada como condición de una clasificación automática. Estas condiciones se aplican al texto del cuerpo en documentos y correos electrónicos, así como a encabezados y pies de página. Para obtener más información sobre las condiciones, vea la sección [Detalles sobre los tipos de información](#details-about-the-information-types).
 
 Modo de evaluar varias condiciones cuando se aplican a más de una etiqueta:
 
@@ -47,37 +47,42 @@ En este ejemplo, el usuario puede hacer clic en **Cambiar ahora** para aplicar l
 
 ## <a name="to-configure-recommended-or-automatic-classification-for-a-label"></a>Para configurar la clasificación automática o recomendada para una etiqueta
 
-1. Si aún no lo ha hecho, abra una nueva ventana del explorador, inicie sesión en [Azure Portal](https://portal.azure.com) como administrador de seguridad o administrador global y, después, navegue hasta la hoja **Azure Information Protection**. 
+1. Si aún no lo ha hecho, abra una nueva ventana del explorador e inicie sesión en [Azure Portal](https://portal.azure.com) como administrador de seguridad o administrador global. Después, vaya a la hoja **Azure Information Protection**. 
     
     Por ejemplo, en el menú del centro, haga clic en **Más servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
-2. Si la etiqueta que quiere configurar para la clasificación automática o recomendada se va a aplicar a todos los usuarios, seleccione la etiqueta en la hoja **Policy: Global** (Directiva: Global) y luego realice los cambios en la hoja **Etiqueta** y en cualquiera de las hojas posteriores si es necesario. 
+2. Si la etiqueta que quiere configurar se va a aplicar a todos los usuarios, quédese en la hoja **Azure Information Protection - Global policy** (Azure Information Protection: directiva global).
+    
+    Si la etiqueta que quiere configurar se encuentra en una [directiva con ámbito](configure-policy-scope.md) para que se aplique únicamente a los usuarios seleccionados, en la selección del menú **DIRECTIVAS**, seleccione **Directivas con ámbito**. Después, seleccione la directiva con ámbito en la hoja **Azure Information Protection - Scoped policies** (Azure Information Protection: directivas con ámbito).
 
-     Si la etiqueta que quiere configurar está en una [directiva de ámbito](configure-policy-scope.md) de modo que se aplica solo a los usuarios seleccionados, seleccione primero esa directiva de ámbito en la hoja inicial de **Azure Information Protection**.  
+3. En la hoja **Azure Information Protection - Global policy** (Azure Information Protection: directiva global) o la hoja **Directiva:\<nombre>**, seleccione la etiqueta que quiere configurar. 
 
-3. En la hoja **Etiqueta**, en la sección **Configure conditions for automatically applying this label** (Configurar condiciones para aplicar esta etiqueta automáticamente), haga clic en **Agregar una nueva condición**(Add a new condition).
+4. En la hoja **Etiqueta**, en la sección **Configure conditions for automatically applying this label** (Configurar condiciones para aplicar esta etiqueta automáticamente), haga clic en **Agregar una nueva condición**(Add a new condition).
 
-4. En la hoja **Condición**, seleccione **Built-in** (Integrada) si quiere usar una condición predefinida, o **Personalizada** si quiere especificar la suya propia, y luego haga clic en **Guardar**:
-
-    - En **Built-in** (Integrada): seleccione entre las condiciones disponibles de la lista y luego elija el número mínimo de repeticiones y si la repetición debe tener un valor único para ser incluida en el recuento de repeticiones.
+5. En la hoja **Condición**, seleccione **Tipos de información** si quiere usar una condición predefinida, o **Personalizada** si quiere especificar la suya propia, y luego haga clic en **Guardar**:
+    - En **Tipos de información**: seleccione entre las condiciones disponibles de la lista y luego elija el número mínimo de repeticiones y si la repetición debe tener un valor único para ser incluida en el recuento de repeticiones.
         
-        Para más información sobre las reglas de detección de estas condiciones y algunos ejemplos, consulte la sección [Información sobre las condiciones integradas](#information-about-the-built-in-conditions).
-
+        Para usar la lista completa de condiciones, debe usar la versión preliminar actual del cliente de Azure Information Protection. Si tiene la versión de disponibilidad general actual del cliente, solo se admiten las cinco condiciones siguientes: **Código SWIFT**, **Número de la tarjeta de crédito**, **Número de enrutamiento ABA**, **Número de la Seguridad Social (SSN) de EE. UU.** y **Número de cuenta bancaria internacional (IBAN)**. [Más información](#details-about-the-information-types).
+    
     - En **Personalizada**: especifique un nombre y una frase para buscar coincidencia, sin comillas ni caracteres especiales. A continuación, especifique si la coincidencia será una expresión regular, si se usará distinción entre mayúsculas y minúsculas y el número mínimo de repeticiones, y si la repetición deberá tener un valor único para incluirse en el recuento de repeticiones.
         
-    **Ejemplo de opciones de repeticiones**: seleccionará la opción integrada de número de la seguridad social y establecerá el número mínimo de repeticiones en 2. En un documento se muestra el mismo número de la seguridad social dos veces: si establece **Count occurrences with unique values only** (Contar solo las repeticiones con valores únicos) en **On** (Activado), la condición no se cumpliría; si establece esta opción en **Off** (Desactivado), la condición se cumpliría.
+        Si tiene la versión preliminar actual del cliente de Azure Information Protection, las expresiones regulares usan los patrones de expresiones regulares de Office 365. Para obtener más información, vea [Definición de expresiones regulares basadas en coincidencias](https://technet.microsoft.com/library/jj674702(v=exchg.150).aspx#Anchor_2) en la documentación de Office. 
+        
+    **Ejemplo de opciones de repeticiones**: supongamos que selecciona la opción integrada de número de la Seguridad Social y establece el número mínimo de repeticiones en 2. En un documento en el que se muestra el mismo número de la Seguridad Social dos veces, si establece **Contar solo las repeticiones con valores únicos** en **Activado**, la condición no se cumpliría. Si establece esta opción en **Desactivado**, la condición se cumple.
 
-5. En la hoja **Etiqueta**, configure lo siguiente y luego haga clic en **Guardar**:
-
+6. En la hoja **Etiqueta**, configure lo siguiente y luego haga clic en **Guardar**:
+    
     - Elija clasificación automática o recomendada: en **Select how this label is applied: automatically or recommended to user** (Seleccionar cómo se aplica esta etiqueta: automáticamente o recomendado al usuario), seleccione **Automática** o **Recomendada**.
-
+    
     - Especifique el texto del mensaje de usuario o de la sugerencia de directiva: mantenga el texto predeterminado o especifique su propia cadena.
 
-6. Para que los cambios estén disponibles para los usuarios, en la hoja **Azure Information Protection**, haga clic en **Publicar**.
+7. Para que los cambios estén disponibles para los usuarios, en la hoja inicial de **Azure Information Protection**, haga clic en **Publicar**.
 
-## <a name="information-about-the-built-in-conditions"></a>Información sobre las condiciones integradas
+## <a name="details-about-the-information-types"></a>Detalles sobre los tipos de información
 
-Puede seleccionar las condiciones siguientes:
+Si tiene la versión preliminar actual del cliente de Azure Information Protection, se admite la lista completa de tipos de información y se usan los tipos de información confidencial de prevención de pérdida de datos (DLP) y la detección de patrones de Office 365. Puede elegir entre numerosos tipos comunes de información confidencial, algunos de los cuales son específicos de regiones determinadas. Para obtener más información, vea [Qué buscan los tipos de información confidencial](https://support.office.com/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b) en la documentación de Office. Cuando Azure Information Protection evalúa estos tipos de información, no usa la configuración del nivel de confianza de DLP de Office, sino que encuentra coincidencias en función de la confianza más baja.  
+
+Si tiene la versión de disponibilidad general actual del cliente, solo se admiten los siguientes tipos de información:
 
 - [Código SWIFT](#swift-code )
 
@@ -89,6 +94,7 @@ Puede seleccionar las condiciones siguientes:
 
 - [Número de cuenta bancaria internacional (IBAN)](#international-banking-account-number-iban)
 
+Vea las secciones siguientes para obtener más información sobre cada uno de estos tipos de información de la versión de disponibilidad general del cliente.
 
 ### <a name="swift-code"></a>Código SWIFT
 

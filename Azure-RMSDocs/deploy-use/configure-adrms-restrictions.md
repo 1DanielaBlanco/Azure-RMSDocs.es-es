@@ -4,17 +4,17 @@ description: "Identifique las limitaciones, los requisitos previos y las recomen
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/11/2017
+ms.date: 08/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: 4730c2e27a78ec8bf106f43b3ac7097a40e0555d
-ms.sourcegitcommit: 17f593b099dddcbb1cf0422353d594ab964b2736
+ms.openlocfilehash: 80e7cb411132fa3c3fdff7f8c80febde68b071fa
+ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="hold-your-own-key-hyok-requirements-and-restrictions-for-ad-rms-protection"></a>Requisitos y restricciones de Mantenga su propia clave (HYOK) para la protección de AD RMS
 
@@ -61,13 +61,17 @@ Además de no poder gozar de los beneficios que se obtienen al utilizar la prote
 
 - No es compatible con Office 2010 ni Office 2007.
 
-- No use la opción **No reenviar** al configurar una etiqueta para la protección de Azure RMS. También debe indicar a los usuarios que no seleccionen manualmente esta opción en Outlook. 
+- Indique a los usuarios que no seleccionen **No reenviar** en Outlook, o proporcióneles instrucciones específicas. 
 
-    Si una etiqueta aplica la opción No reenviar (o bien si la aplican manualmente los usuarios), es posible que la opción se aplique a través de la implementación de AD RMS, y no a través del servicio deseado de Azure Rights Management. En este caso, las personas con las que comparta contenido de forma externa no pueden abrir los mensajes de correo electrónico a los que se haya aplicado esta opción No reenviar.
+    Aunque puede configurar una etiqueta para **No reenviar** para usar HYOK o el servicio Azure Rights Management, los usuarios también pueden seleccionar por sí mismos No reenviar. Pueden seleccionar esta opción mediante el botón **No reenviar** situado en la pestaña **Mensaje** de la cinta de opciones de Office, o mediante las opciones de menú de Outlook. Las opciones de menú **No reenviar** se encuentran en **Archivo** > **Permisos**, y en el botón **Permisos** en la pestaña **Opciones** de la cinta de opciones. 
     
-    Desde la versión 1.9.58.0 del cliente de Azure Information Protection (actualmente en versión preliminar), el botón **No reenviar** de Outlook siempre usa Azure RMS. Esta configuración no afecta a la opción de menú **No reenviar** de Outlook o la opción **No reenviar** cuando configura una etiqueta para protección. Si no desea este comportamiento, puede ocultar el botón **No reenviar** en Outlook mediante la configuración de una [configuración de cliente avanzada](../rms-client/client-admin-guide-customizations.md#hide-the-do-not-forward-button-in-outlook).
+    Cuando los usuarios seleccionan el botón No reenviar, se puede usar Azure RMS o AD RMS y la opción no es determinista. Cuando los usuarios seleccionan **No reenviar** desde una opción de menú de Outlook, pueden elegir Azure RMS o AD RMS, pero es posible que no sepan qué opción deben seleccionar para el mensaje de correo electrónico. En ambos casos, si se usa AD RMS cuando se debería usar Azure RMS, las personas con las que se comparta contenido de forma externa no podrán abrir estos mensajes de correo electrónico.
+    
+    La versión preliminar actual del cliente de Azure Information Protection siempre usa Azure RMS cuando los usuarios seleccionan el botón **No reenviar** de Outlook. Si no desea este comportamiento, puede ocultar el botón **No reenviar** en Outlook mediante la configuración de una [configuración de cliente avanzada](../rms-client/client-admin-guide-customizations.md#hide-the-do-not-forward-button-in-outlook). 
 
-- Si los usuarios configuran permisos personalizados al utilizar la protección de AD RMS (HYOK) y la protección de Azure RMS, el documento o el correo electrónico siempre estará protegido por Azure Rights Management.
+- Para la versión de disponibilidad general actual del cliente de Azure Information Protection: si los usuarios configuran permisos personalizados al usar la protección de AD RMS (HYOK) y la protección de Azure RMS, el documento o el correo electrónico siempre estará protegido por Azure Rights Management. Esta limitación no se aplica a la versión preliminar actual del cliente.
+
+- Si configura permisos definidos por el usuario para Word, Excel, PowerPoint y el Explorador de archivos (lo que se admite con la versión preliminar actual del cliente de Azure Information Protection): en el Explorador de archivos, la protección siempre se aplica mediante Azure RMS, en lugar de la protección de HYOK (AD RMS). 
 
 - Si los usuarios eligen una etiqueta en Outlook que aplica la protección de AD RMS y, antes de enviar el correo electrónico, cambian de opinión y seleccionan una etiqueta que aplica la protección de Azure RMS, no se podrá aplicar la etiqueta recién seleccionada. Aparece el siguiente mensaje de error: **Azure Information Protection no puede aplicar esta etiqueta. No tiene permiso para realizar esta acción.**
     
@@ -107,9 +111,11 @@ Para obtener información e instrucciones sobre la implementación de AD RMS, co
 
 ## <a name="locating-the-information-to-specify-ad-rms-protection-with-an-azure-information-protection-label"></a>Buscar la información para especificar la protección de AD RMS con una etiqueta de Azure Information Protection
 
-Al configurar una etiqueta para la protección de **HYOK (AD RMS)**, debe especificar el GUID de la plantilla y la dirección URL de administración de licencias del clúster de AD RMS. Puede encontrar estos valores en la consola de Active Directory Rights Management Services:
+Al configurar una etiqueta para la protección de **HYOK (AD RMS)**, debe especificar la dirección URL de administración de licencias del clúster de AD RMS. Además, debe especificar una plantilla que haya configurado para los permisos que se conceden a los usuarios, o bien dejar que los usuarios definan los permisos y los usuarios. 
 
-- Para buscar el GUID de la plantilla: expanda el clúster y haga clic en **Plantillas de directiva de permisos**. En la información **Plantillas de directiva de permisos distribuidas**, puede copiar el GUID de la plantilla que quiera usar. Por ejemplo: 82bf3474-6efe-4fa1-8827-d1bd93339119
+Encontrará los valores del GUID de plantilla y de la dirección URL de administración de licencias en la consola de Active Directory Rights Management Services:
+
+- Para buscar un GUID de plantilla: expanda el clúster y haga clic en **Plantillas de directiva de derechos**. En la información **Plantillas de directiva de permisos distribuidas**, puede copiar el GUID de la plantilla que quiera usar. Por ejemplo: 82bf3474-6efe-4fa1-8827-d1bd93339119
 
 - Para buscar la URL de administración de licencias: haga clic en el nombre del clúster. En la información **Detalles del clúster**, copie el valor **Licencias** menos la cadena **/_wmcs/licensing**. Por ejemplo: https://rmscluster.contoso.com 
     

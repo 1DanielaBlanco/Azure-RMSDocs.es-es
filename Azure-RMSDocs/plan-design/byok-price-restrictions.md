@@ -1,6 +1,6 @@
 ---
 title: Precio y restricciones de Bring your own key (BYOK, Traiga su propia clave) - Azure Information Protection
-description: "Conozca las restricciones de uso de claves administradas por el cliente, conocidas como “Bring your own key” (BYOK, Traiga su propia clave) con Azure RMS."
+description: Conozca las restricciones de uso de claves administradas por el cliente, conocidas como "Bring Your Own Key" (BYOK) con Azure Information Protection.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: cfc4243d15112545219f82964d09ce9ce238355d
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 3c8fb56d33c1aa745975254dc9a2134db857b352
+ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="byok-pricing-and-restrictions"></a>Precio y restricciones de BYOK
 

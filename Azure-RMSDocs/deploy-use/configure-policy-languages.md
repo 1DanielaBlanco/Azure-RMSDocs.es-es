@@ -1,66 +1,78 @@
 ---
-title: "Configuración de etiquetas para distintos idiomas en Azure Information Protection"
-description: Para agregar compatibilidad con distintos idiomas a las etiquetas que los usuarios ven en la barra de Information Protection, especifique los idiomas en la directiva de Azure Information Protection e importe las traducciones.
+title: Configurar etiquetas y plantillas para distintos idiomas en Azure Information Protection
+description: Para agregar compatibilidad con distintos idiomas a las etiquetas que los usuarios ven en la barra de Information Protection y a todas las plantillas que ven, especifique los idiomas en la directiva de Azure Information Protection e importe las traducciones.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/05/2017
+ms.date: 08/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a0e89fd0-795b-4e7a-aea9-ff6fc9163bde
-ms.openlocfilehash: ec99bf36e8904a7304a9d33c32d17ba92e2e22d2
-ms.sourcegitcommit: 8b768e7e249e124f24acdf630d165eaf743f9c21
+ms.openlocfilehash: 33666be46b9b2fc022e541ec710a0be596f4ede0
+ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/05/2017
+ms.lasthandoff: 08/30/2017
 ---
-# <a name="how-to-configure-labels-for-different-languages-in-azure-information-protection"></a>Configuración de etiquetas para distintos idiomas en Azure Information Protection
+# <a name="how-to-configure-labels-and-templates-for-different-languages-in-azure-information-protection"></a>Cómo configurar etiquetas y plantillas para distintos idiomas en Azure Information Protection
 
 >*Se aplica a: Azure Information Protection*
 
 >[!NOTE]
->Esta característica se encuentra actualmente en versión preliminar para usarla en conjunto con la versión **preliminar** del cliente de Azure Information Protection que puede descargar en el [Centro de descarga de Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=53018).
+>Esta característica se encuentra actualmente en versión preliminar para usarla en conjunto con la versión **preliminar** actual del cliente de Azure Information Protection que puede descargar en el [Centro de descarga de Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=53018).
 
-De manera predeterminada, los nombres y las descripciones de las etiquetas admiten que se muestre solo un idioma que se muestra a todos los usuarios de la organización. Para agregar compatibilidad con distintos idiomas, seleccione los idiomas que necesita, exporte los nombres y descripciones de etiquetas actuales a un archivo, edite el archivo para proporcionar las traducciones y, luego, importe el archivo de vuelta a la directiva de Azure Information Protection.
+Aunque las etiquetas predeterminadas de Azure Information Protection admiten varios idiomas, debe configurar la compatibilidad con los nombres y descripciones de etiqueta que especifique. Para llevar a cabo esta configuración, debe hacer lo siguiente:
+
+1. Seleccione los idiomas que usan los usuarios. 
+
+2. Exporte los nombres y descripciones de etiqueta actuales a un archivo.
+
+3. Edite el archivo para proporcionar las traducciones.
+
+4. Importe el archivo a la directiva de Azure Information Protection.
+
+También puede configurar plantillas para los distintos idiomas si se cumple alguna de las condiciones siguientes. Esta configuración es adecuada si los usuarios o los administradores necesitan ver el nombre y descripción de la plantilla actual en su idioma localizado.
+
+- La plantilla se ha creado en el Portal de Azure clásico o con PowerShell y no está vinculada a una etiqueta mediante la configuración de protección **Seleccionar una plantilla predefinida**.
+
+- No tiene una suscripción que admite etiquetas, por lo que solo puede crear y administrar plantillas en Azure Portal.
 
 Seleccione los idiomas que coinciden con la configuración de idioma de los usuarios para Office y Windows. Estos nombres y descripciones de etiquetas se muestran entonces en la barra de Azure Information Protection en aplicaciones de Office y en el cuadro de diálogo **Classify and protection - Azure Information Protection** (Clasificación y protección: Azure Information Protection), respectivamente. Para más información sobre el idioma elegido, consulte la sección [Cómo el cliente de Azure Information Protection determina el idioma que se mostrará](#how-the-azure-information-protection-client-determines-the-language-to- display) que aparece en esta página. 
 
-## <a name="to-configure-labels-to-display-in-different-languages"></a>Para configurar etiquetas para mostrarlas en distintos idiomas
+## <a name="to-configure-labels-and-templates-for-different-languages"></a>Para configurar etiquetas y plantillas para distintos idiomas
 
-1. Si aún no lo ha hecho, abra una nueva ventana del explorador, inicie sesión en [Azure Portal](https://portal.azure.com) como administrador de seguridad o administrador global y, después, navegue hasta la hoja **Azure Information Protection**. 
+1. Si aún no lo ha hecho, inicie sesión en [Azure Portal](https://portal.azure.com) como administrador de seguridad o administrador global y, después, navegue hasta la hoja **Azure Information Protection**. 
     
     Por ejemplo, en el menú del centro, haga clic en **Más servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
-2. En la hoja **Azure Information Protection** inicial, ubique **ADMINISTRAR** y, luego, seleccione **Languages (Preview)** (Idiomas [versión preliminar]).
+2. Desde la selección del menú **ADMINISTRAR**, seleccione **Idiomas (versión preliminar)**.
 
-3. En la hoja **Azure Information Protection - Languages (Preview)** (Azure Information Protection - Idiomas [versión preliminar]), para colocar el primer idioma que desea agregar, escriba el nombre en el cuadro de búsqueda o desplácese en la lista de idiomas disponibles. 
+3. En la hoja **Azure Information Protection - Languages (Preview)** (Azure Information Protection: idiomas (versión preliminar)), seleccione **Agregar un idioma nuevo para la traducción**. Seleccione los idiomas que quiera agregar y, después, seleccione **Aceptar**. Puede escribir el nombre del idioma en el cuadro de búsqueda o desplazarse por la lista de idiomas disponibles.
 
-4. Seleccione el idioma y, luego, seleccione **Aceptar**.
-
-5. En la hoja siguiente, verá que el idioma seleccionado se agregó a una lista:
+4. Los idiomas seleccionados se muestran ahora en la hoja **Azure Information Protection - Languages (Preview)** (Azure Information Protection: idiomas (versión preliminar)):
     
-    - Para agregar otro idioma, seleccione **Add a new language for translation** (Agregar un idioma nuevo para la traducción) y repita los pasos 3 y 4. 
+    - Para agregar otro idioma, seleccione **Agregar un idioma nuevo para la traducción** y repita el paso anterior. 
         
         > [!NOTE]
         > Asegúrese de seleccionar los idiomas que los usuarios tienen para Office y Windows. En algunos casos, esto podría requerir dos selecciones distintas por equipo.
         
     - Si cambia de opinión sobre algún idioma que haya agregado, seleccione esa entrada en la lista y haga clic en **Quitar**.
 
-6. Cuando aparezcan todos los idiomas que desea admitir, active la casilla junto a **LANGUAGE NAME** (Nombre del idioma) para seleccionar todas las entradas (también puede seleccionar entradas individuales) y, luego, haga clic en **Exportar** para guardar una copia local de los nombres y descripciones de las etiquetas existentes en un archivo. 
+5. Cuando aparezcan todos los idiomas que desea admitir, active la casilla junto a **LANGUAGE NAME** (Nombre del idioma) para seleccionar todas las entradas (también puede seleccionar entradas individuales) y, luego, haga clic en **Exportar** para guardar una copia local de los nombres y descripciones de las etiquetas existentes en un archivo. 
     
     El archivo descargado se llama **exported localization.zip** y se guarda en la carpeta de descargas local. Para acceder a él, también puede seleccionar este nombre de archivo en la barra de estado de Azure Portal.
 
-7. Extraiga los archivos de **exported localization.zip** para así tener archivos .xml de cada idioma que seleccionó para descarga. 
+6. Extraiga los archivos de **exported localization.zip** para así tener archivos .xml de cada idioma que seleccionó para descarga. 
 
-8. Edite cada archivo .xml. En cada cadena, dentro de las etiquetas `<LocalizedText>`, proporcione las traducciones que desea para cada idioma elegido. 
+7. Edite cada archivo .xml. En cada cadena, dentro de las etiquetas `<LocalizedText>`, proporcione las traducciones que desea para cada idioma elegido. 
 
-9. Cuando haya editado cada archivo .xml, cree una nueva carpeta comprimida que contenga estos archivos. La carpeta comprimida puede tener cualquier nombre, pero debe tener la extensión .zip.
+8. Cuando haya editado cada archivo .xml, cree una nueva carpeta comprimida que contenga estos archivos. La carpeta comprimida puede tener cualquier nombre, pero debe tener la extensión .zip.
 
-10. Vuelva a la hoja de Azure Portal y seleccione **Importar**. Observe que si esta opción está deshabilitada, primero debe desactivar la casilla de **LANGUAGE NAME** o las casillas de los idiomas seleccionados de manera individual.
+9. Vuelva a la hoja **Azure Information Protection - Languages (Preview)** (Azure Information Protection: idiomas (versión preliminar)) y seleccione **Importar**. Observe que si esta opción está deshabilitada, primero debe desactivar la casilla de **LANGUAGE NAME** o las casillas de los idiomas seleccionados de manera individual.
     
-    Cuando se completa la importación, los nombres y descripciones de etiquetas localizados se descargarán a los usuarios la próxima vez que publique la directiva de Azure Information Protection. Puede hacer clic en **Publicar** en la hoja **Directiva global** o **Directivas con ámbito**.
+    Cuando finalice la importación, los nombres y descripciones localizados se descargarán a los usuarios la próxima vez que publique la directiva de Azure Information Protection. Puede hacer clic en **Publicar** en la hoja **Directiva global** o **Directivas con ámbito**.
 
 ## <a name="how-the-azure-information-protection-client-determines-the-language-to-display"></a>Cómo el cliente de Azure Information Protection determina el idioma que se mostrará
 
