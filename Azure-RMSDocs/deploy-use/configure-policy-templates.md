@@ -1,10 +1,10 @@
 ---
-title: "Configuración y administración de plantillas en la directiva de Azure Information Protection"
-description: "Actualmente en versión preliminar, ahora puede configurar y administrar plantillas de administración de derechos desde la directiva de Azure Information Protection."
+title: Configurar y administrar plantillas para Azure Information Protection
+description: "Configure y administre plantillas de administración de derechos desde Azure Portal."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/09/2017
+ms.date: 08/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: dc39a52ca09ec7818b70a5bac320024bdc4de657
-ms.sourcegitcommit: 4186c8fadea7bcd32cce7d468916374a9cdf151b
+ms.openlocfilehash: 5075c8cbab441a376595baabd7863005b15b84e3
+ms.sourcegitcommit: 5bcb916106021f624a69d620bbcc2c4a51398771
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>Configuración y administración de plantillas para Azure Information Protection
 
@@ -40,33 +40,40 @@ Las plantillas de Rights Management ahora están integradas con la directiva de 
 
 ## <a name="default-templates"></a>Plantillas predeterminadas
 
-Cuando obtenga una suscripción a Azure Information Protection o a Office 365 que incluya el servicio Azure Rights Management, se crearán automáticamente dos plantillas predeterminadas para el inquilino que restringen el acceso a los usuarios autorizados de la organización. Estas dos plantillas presentan las restricciones siguientes: 
+Cuando obtenga una suscripción a Azure Information Protection o a Office 365 que incluya el servicio Azure Rights Management, se crearán automáticamente dos plantillas predeterminadas para el inquilino que restringen el acceso a los usuarios autorizados de la organización. Cuando se crean estas dos plantillas, presentan las restricciones siguientes: 
 
 - Lectura o modificación de permisos de contenido protegido
     
-    Permisos específicos: Ver contenido, Guardar archivo, Editar contenido, Ver derechos asignados, Permitir macros, Reenviar, Responder y Responder a todos
+    - **Permisos específicos**: Ver contenido, Guardar archivo, Editar contenido, Ver derechos asignados, Permitir macros, Reenviar, Responder y Responder a todos
 
 - Visualización de solo lectura para el contenido protegido
     
-    - Permiso específico: Ver contenido
+    - **Permiso específico**: Ver contenido
 
-Estas plantillas facilitan a los usuarios el proceso de empezar a proteger de inmediato la información confidencial de la organización. Estas plantillas pueden usarse con etiquetas de Azure Information Protection o de manera independiente con [aplicaciones y servicios](../understand-explore/applications-support.md) que puedan usar plantillas de Rights Management.
+Además, las plantillas están configuradas para permitir el acceso sin conexión durante siete días y no tienen fecha de expiración.
+
+>[!NOTE]
+> Puede cambiar esta configuración, así como los nombres y descripciones de las plantillas predeterminadas. Esto no era posible con el Portal de Azure clásico y sigue sin permitirse en PowerShell.
+
+Estas plantillas predeterminadas facilitan a los usuarios el proceso de empezar a proteger de inmediato la información confidencial de la organización. Estas plantillas pueden usarse con etiquetas de Azure Information Protection o de manera independiente con [aplicaciones y servicios](../understand-explore/applications-support.md) que puedan usar plantillas de Rights Management.
 
 También puedes crear tus propias plantillas personalizadas. Aunque probablemente necesite solo unas pocas plantillas, puede tener un máximo de 500 plantillas personalizadas guardadas en Azure.
 
 ### <a name="default-template-names"></a>Nombres de plantillas predeterminadas
 
-Si hace poco ha adquirido una suscripción a Azure Information Protection, los nombres de las plantillas predeterminadas serán los siguientes:
+Si ha adquirido hace poco una suscripción a Azure Information Protection, las plantillas predeterminadas se crean con los nombres siguientes:
 
 - **Confidencial \ Todos los empleados** para los permisos de lectura o modificación de contenido protegido.
 
 - **Extremadamente confidencial \ Todos los empleados** para la visualización de solo lectura de contenido protegido.
 
-Si ha adquirido la suscripción a Azure Information Protection hace algún tiempo, o si no tiene ninguna suscripción a Azure Information Protection pero tiene una a Office 365 que incluye Azure Rights Management, los nombres de las plantillas predeterminadas serán los siguientes:
+Si ha adquirido la suscripción a Azure Information Protection hace algún tiempo, o si no tiene ninguna suscripción a Azure Information Protection pero tiene una a Office 365 que incluye Azure Rights Management, las plantillas predeterminadas se crean con los nombres siguientes:
 
 - **\<nombre de la organización> - Confidencial** para los permisos de lectura o modificación de contenido protegido.
 
 - **\<nombre de la organización> - Confidencial. Ver solo** para la visualización de solo lectura de contenido protegido. 
+
+Puede cambiar el nombre de estas plantillas predeterminadas (y volver a configurarlas) al usar Azure Portal.
 
 >[!NOTE]
 >Si no ve las plantillas predeterminadas en la hoja **Azure Information Protection - Global policy** (Azure Information Protection: directiva global), significa que se han convertido en etiquetas o se han vinculado a una etiqueta. Siguen existiendo como plantillas, pero en el Azure Portal las verá como parte de una configuración de etiqueta que incluye la protección de Azure RMS. Siempre puede confirmar qué plantillas tiene su inquilino. Para ello, ejecute [Get-AadrmTemplate](/powershell/module/aadrm/get-aadrmtemplate) desde el [módulo de AADRM de PowerShell](administer-powershell.md).
@@ -96,21 +103,21 @@ Antes de editar estas plantillas o convertirlas en etiquetas, asegúrese de que 
     
     Además, actualmente no puede establecer la configuración de compatibilidad de aplicaciones para una plantilla de departamento. Si es necesario, puede usar el cmdlet [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) de PowerShell para establecer este valor.
 
-- Actualmente, las plantillas que se han configurado para varios idiomas con el Portal de Azure clásico o PowerShell no muestran estos idiomas en el nombre y las descripciones, pero sí se conservan.
-
-- Al convertir una plantilla en etiqueta o vincular una plantilla a una etiqueta, ya no la pueden usar otras etiquetas.
+- Al convertir una plantilla en etiqueta o vincular una plantilla a una etiqueta, ya no la pueden usar otras etiquetas. Además, esta plantilla ya no se muestra en la sección **Plantillas**.
 
 - No cree una plantilla desde el contenedor **Plantillas**. En lugar de eso, cree una etiqueta con el valor **Proteger** y configure los derechos de uso y los valores en la hoja **Protección**. Para instrucciones completas, consulte [Para crear una nueva plantilla](#to-create-a-new-template).
 
 ## <a name="to-configure-the-templates-in-the-azure-information-protection-policy"></a>Para configurar las plantillas en la directiva de Azure Information Protection
 
-1. En una nueva ventana del explorador, inicie sesión en [Azure Portal](https://portal.azure.com) como administrador de seguridad o administrador global.
+1. Si aún no lo ha hecho, abra una nueva ventana del explorador e inicie sesión en [Azure Portal](https://portal.azure.com) como administrador de seguridad o administrador global. Después, vaya a la hoja **Azure Information Protection**. 
+    
+    Por ejemplo, en el menú del centro, haga clic en **Más servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
-2. Vaya a la hoja **Azure Information Protection**: por ejemplo, en el menú del centro, haga clic en **Más servicios** y comience a escribir **Information Protection** en el cuadro Filtro. De los resultados, seleccione **Azure Information Protection**. 
+2. Si la plantilla que quiere configurar es para todos los usuarios, quédese en la hoja **Azure Information Protection - Global policy** (Azure Information Protection: directiva global).
+    
+    Si la plantilla que quiere configurar se encuentra en una [directiva con ámbito](configure-policy-scope.md) para que se aplique únicamente a los usuarios seleccionados, en la selección del menú **DIRECTIVAS**, seleccione **Directivas con ámbito**. Después, seleccione la directiva con ámbito en la hoja **Azure Information Protection - Scoped policies** (Azure Information Protection: directivas con ámbito).
 
-2. Si la plantilla que quiere configurar se va a aplicar a todos los usuarios, seleccione **Global** en la hoja **Azure Information Protection**. Sin embargo, si la plantilla que quiere configurar está en una [directiva con ámbito](configure-policy-scope.md) de modo que se aplica solo a los usuarios seleccionados, seleccione esa directiva de ámbito en su lugar.
-
-3. En la hoja de la directiva, ubique la plantilla que desea configurar:
+3. En la hoja **Azure Information Protection - Global policy** (Azure Information Protection: directiva global) o la hoja **Directiva:\<nombre>**, busque la plantilla que quiere configurar:
     
     - Cuando tiene una suscripción que incluye clasificación, etiquetado y protección: expanda **Plantillas** después de las etiquetas.
     
@@ -122,7 +129,10 @@ Antes de editar estas plantillas o convertirlas en etiquetas, asegúrese de que 
     
     Haga clic en **Aceptar** para conservar los cambios y, en la hoja **Etiqueta**, haga clic en **Guardar**.
 
-6. Para que los cambios estén disponibles para las aplicaciones y servicios de usuario, en la hoja **Azure Information Protection**, haga clic en **Publicar**.
+6. Para que los cambios estén disponibles para las aplicaciones y servicios de usuario, en la hoja inicial **Azure Information Protection**, haga clic en **Publicar**.
+
+> [!NOTE]
+> También puede editar una plantilla mediante el botón **Editar plantilla** situado en la hoja **Protección** si ha configurado una etiqueta para usar una plantilla predefinida. Siempre y cuando ninguna otra etiqueta use la plantilla seleccionada, este botón convierte la plantilla en una etiqueta y le lleva al paso 5. Para obtener más información sobre lo que ocurre cuando se convierten plantillas en etiquetas, vea la sección siguiente.
 
 ## <a name="to-convert-templates-to-labels"></a>Para convertir plantillas en etiquetas
 
@@ -132,7 +142,9 @@ Por ejemplo, si convierte una etiqueta llamada **Marketing** que concede derecho
 
 No es necesario convertir todas las plantillas en etiquetas pero, cuando lo hace, la configuración de protección se integra completamente con la funcionalidad total de las etiquetas para que no sea necesario mantener separadas las configuraciones.
 
-Para convertir una plantilla en etiqueta, haga clic con el botón derecho en la plantilla y seleccione **Convertir en etiqueta**. También puede usar el menú contextual para seleccionar esta opción.
+Para convertir una plantilla en etiqueta, haga clic con el botón derecho en la plantilla y seleccione **Convertir en etiqueta**. También puede usar el menú contextual para seleccionar esta opción. 
+
+También puede convertir una plantilla en una etiqueta al configurar una etiqueta para la protección y una plantilla predefinida, mediante el botón **Editar plantilla**. 
 
 Cuando se convierte una plantilla en etiqueta:
 
@@ -148,21 +160,23 @@ Cuando se convierte una plantilla en etiqueta:
 
 Cuando crea una etiqueta nueva con la configuración de protección de **Azure RMS**, de forma encubierta, se crea una plantilla personalizada nueva a la que pueden acceder los servicios y las aplicaciones que se integran con las plantillas de Rights Management.
 
-1. Si la nueva etiqueta que quiere crear se aplicará a todos los usuarios, en la hoja **Policy: Global** (Directiva: Global), haga clic en **Add a new label** (Agregar una nueva etiqueta).
+1. Si la nueva plantilla es para todos los usuarios, quédese en la hoja **Azure Information Protection - Global policy** (Azure Information Protection: directiva global).
     
-     Si la nueva plantilla que quiere crear será una plantilla de departamento de modo que se aplique solo a usuarios seleccionados, primero seleccione o cree una directiva con ámbito en la hoja **Azure Information Protection** inicial.
+     Si la nueva plantilla es una plantilla de departamento que se aplicará únicamente a los usuarios seleccionados, en la selección del menú **DIRECTIVAS**, seleccione **Directivas con ámbito**. Después, cree o seleccione la [directiva con ámbito](configure-policy-scope.md) en la hoja **Azure Information Protection - Scoped policies** (Azure Information Protection: directivas con ámbito).
 
-2. En la hoja **Etiqueta**, mantenga el valor predeterminado de **Enabled**: **On** (Habilitada: Activada) para publicar esta plantilla nueva o cambie esta configuración a **Off** (Desactivada) para crear la plantilla como archivada. Luego, escriba un nombre de etiqueta y una descripción para el nombre de la plantilla y la descripción.
+2. En la hoja **Azure Information Protection - Global policy** (Azure Information Protection: directiva global) o la hoja **Directiva:\<nombre>**, haga clic en **Agregar una nueva etiqueta**.
 
-3. En **Establecer permisos para documentos y correos electrónicos que contengan esta etiqueta**, seleccione **Proteger** y, luego, **Protección**:
+3. En la hoja **Etiqueta**, mantenga el valor predeterminado de **Enabled**: **On** (Habilitada: Activada) para publicar esta plantilla nueva o cambie esta configuración a **Off** (Desactivada) para crear la plantilla como archivada. Luego, escriba un nombre de etiqueta y una descripción para el nombre de la plantilla y la descripción.
+
+4. En **Establecer permisos para documentos y correos electrónicos que contengan esta etiqueta**, seleccione **Proteger** y, luego, **Protección**:
     
-     ![Configurar la protección para una etiqueta de Azure Information Protection](../media/info-protect-protection-bar.png)
+     ![Configurar la protección para una etiqueta de Azure Information Protection](../media/info-protect-protection-bar-configured.png)
 
-4. En la hoja **Protección**, puede cambiar los permisos, la expiración del contenido y la configuración de acceso sin conexión. Para más información sobre cómo establecer esta configuración de protección, consulte [Configuración de una etiqueta para la protección de Rights Management](configure-policy-protection.md)
+5. En la hoja **Protección**, puede cambiar los permisos, la expiración del contenido y la configuración de acceso sin conexión. Para más información sobre cómo establecer esta configuración de protección, consulte [Configuración de una etiqueta para la protección de Rights Management](configure-policy-protection.md)
     
     Haga clic en **Aceptar** para conservar los cambios y, en la hoja **Etiqueta**, haga clic en **Guardar**.
 
-5. Para que estas plantillas estén disponibles para las aplicaciones y servicios de usuario, en la hoja **Azure Information Protection**, haga clic en **Publicar**.
+6. Para que estas plantillas estén disponibles para las aplicaciones y servicios de usuario, en la hoja inicial **Azure Information Protection**, haga clic en **Publicar**.
 
 
 ## <a name="next-steps"></a>Pasos siguientes

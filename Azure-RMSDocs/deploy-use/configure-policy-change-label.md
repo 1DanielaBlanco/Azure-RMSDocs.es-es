@@ -10,11 +10,11 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e3b6d95f-334b-4d17-80a9-7d5487ab5d32
-ms.openlocfilehash: ff32ea4759b46683398a86c0a549d50710f9a943
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 343b38caa14d3f67a932eedae37ed10c55f371ff
+ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="how-to-change-or-customize-an-existing-label-for-azure-information-protection"></a>Cambio o personalización de una etiqueta existente para Azure Information Protection
 
@@ -26,12 +26,11 @@ Por ejemplo, puede cambiar el nombre de una etiqueta principal o secundaria, la 
 
 Para cambiar una etiqueta, utilice las instrucciones siguientes.
 
-
-1. Si aún no lo ha hecho, abra una nueva ventana del explorador, inicie sesión en [Azure Portal](https://portal.azure.com) como administrador de seguridad o administrador global y, después, navegue hasta la hoja **Azure Information Protection**. 
+1. Si aún no lo ha hecho, abra una nueva ventana del explorador e inicie sesión en [Azure Portal](https://portal.azure.com) como administrador de seguridad o administrador global. Después, vaya a la hoja **Azure Information Protection**. 
     
     Por ejemplo, en el menú del centro, haga clic en **Más servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
-2. Para cambiar una etiqueta de la directiva global de modo que se aplique a todos los usuarios, seleccione la etiqueta que quiere cambiar en la hoja **Policy: Global** (Directiva: Global) y luego realice los cambios en la hoja **Etiqueta** y en cualquiera de las hojas posteriores si es necesario. Para cambiar una etiqueta de una [directiva de ámbito](configure-policy-scope.md) de modo que se aplique a los usuarios seleccionados, seleccione primero esa directiva en la hoja inicial de **Azure Information Protection**.
+2. Para cambiar una etiqueta de la directiva global de modo que se aplique a todos los usuarios, seleccione la etiqueta que quiere cambiar en la hoja **Azure Information Protection - Global policy** (Azure Information Protection: directiva global) y en las hojas posteriores si es necesario. Para cambiar una etiqueta de una [directiva con ámbito](configure-policy-scope.md) para que se aplique únicamente a los usuarios seleccionados, primero seleccione **Directivas con ámbito** en la selección del menú **DIRECTIVAS**. Después, seleccione la directiva con ámbito en la hoja **Azure Information Protection - Scoped policies** (Azure Information Protection: directivas con ámbito).
 
     La excepción es si quiere cambiar el orden de una etiqueta, que puede hacerlo en la hoja de la directiva global o en la directiva de ámbito seleccionada: haga clic con el botón derecho en la etiqueta o seleccione el menú contextual de la etiqueta y luego las opciones **Subir** o **Bajar**.
 

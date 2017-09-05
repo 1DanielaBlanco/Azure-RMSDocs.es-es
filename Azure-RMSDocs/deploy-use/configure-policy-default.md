@@ -4,17 +4,17 @@ description: "Obtenga información sobre cómo está configurada la directiva pr
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 08/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 671281c8-f0d1-42b6-aae3-681d1821e2cf
-ms.openlocfilehash: 51b5f7d332a86c16ceb6928ea99039812dd54802
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: 712d273e735d2c9fc791a1f15c3f8dc9e917a1c3
+ms.sourcegitcommit: 5bcb916106021f624a69d620bbcc2c4a51398771
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="the-default-azure-information-protection-policy"></a>Directiva predeterminada de Azure Information Protection
 
@@ -44,6 +44,8 @@ Cuando estas subetiquetas no se configuran automáticamente para la protección,
 
 Cuando se aplica la protección a las subetiquetas **Todos los empleados**, la protección se configura mediante las plantillas predeterminadas que se convierten automáticamente en etiquetas en Azure Portal. Para obtener más información sobre estas plantillas, vea [Configuración y administración de plantillas para Azure Information Protection](configure-policy-templates.md).
 
+A partir del 30 de agosto de 2017, esta versión de la directiva predeterminada incluye las versiones traducidas de los nombres y descripciones de etiqueta. 
+
 #### <a name="more-information-about-the-recipients-only-sub-label"></a>Más información sobre la subetiqueta Solo destinatarios
 
 Los usuarios ven esta etiqueta solo en Outlook. No la ven en Word, Excel, PowerPoint o el Explorador de archivos. 
@@ -68,16 +70,16 @@ Cuando los usuarios seleccionan esta etiqueta, la opción No reenviar de Outlook
 |-------------------------------|---------------------------|-----------------|
 |Confidencial \ Todos los empleados|Datos confidenciales que requieren protección pero conceden todos los permisos a todos los empleados. Los propietarios de los datos pueden hacer un seguimiento del contenido y revocarlo.|**Habilitada**: activada <br /><br />**Marcas visuales**: pie de página (documentos y correo electrónico)<br /><br />Clasificado como confidencial<br /><br />**Condiciones**: ninguna<br /><br />**Protección**: Azure RMS [[1]](#footnote-1)|
 |Confidencial \ Cualquiera (sin protección)|Datos que no requieren protección. Use esta opción con precaución y con la debida justificación comercial.|**Habilitada**: activada <br /><br />**Marcas visuales**: pie de página (documentos y correo electrónico)<br /><br />Clasificado como confidencial <br /><br />**Condiciones**: ninguna<br /><br />**Protección**: ninguna|
-|Confidencial \ Solo destinatarios|Datos confidenciales que requieren protección y que solo pueden ver los destinatarios.|**Habilitada**: activada <br /><br />**Distintivos visuales**: pie de página (correo electrónico)<br /><br />Clasificado como confidencial <br /><br />**Condiciones**: ninguna<br /><br />**Protección**: no reenviar|
+|Confidencial \ Solo destinatarios|Datos confidenciales que requieren protección y que solo pueden ver los destinatarios.|**Habilitada**: activada <br /><br />**Distintivos visuales**: pie de página (correo electrónico)<br /><br />Clasificado como confidencial <br /><br />**Condiciones**: ninguna<br /><br />**Protección**: Establecer permisos definidos por el usuario (versión preliminar). En Outlook, seleccione No reenviar.|
 |Extremadamente confidencial \ Todos los empleados|Datos extremadamente confidenciales que conceden a los empleados los permisos de visualización, edición y respuesta en relación con el contenido. Los propietarios de los datos pueden hacer un seguimiento del contenido y revocarlo.|**Habilitada**: activada <br /><br />**Marcas visuales**: pie de página (documentos y correo electrónico)<br /><br />Clasificado como extremadamente confidencial<br /><br />**Condiciones**: ninguna<br /><br />**Protección**: Azure RMS [[2]](#footnote-2)|
 |Extremadamente confidencial \ Cualquiera (sin protección)|Datos que no requieren protección. Use esta opción con precaución y con la debida justificación comercial.|**Habilitada**: activada <br /><br />**Marcas visuales**: pie de página (documentos y correo electrónico)<br /><br />Clasificado como extremadamente confidencial<br /><br />**Condiciones**: ninguna<br /><br />**Protección**: ninguna|
-|Extremadamente confidencial \ Solo destinatarios|Datos extremadamente confidenciales que requieren protección y que solo pueden ver los destinatarios.|**Habilitada**: activada <br /><br />**Distintivos visuales**: pie de página (correo electrónico)<br /><br />Clasificado como extremadamente confidencial <br /><br />**Condiciones**: ninguna<br /><br />**Protección**: no reenviar|
+|Extremadamente confidencial \ Solo destinatarios|Datos extremadamente confidenciales que requieren protección y que solo pueden ver los destinatarios.|**Habilitada**: activada <br /><br />**Distintivos visuales**: pie de página (correo electrónico)<br /><br />Clasificado como extremadamente confidencial <br /><br />**Condiciones**: ninguna<br /><br />**Protección**: Establecer permisos definidos por el usuario (versión preliminar). En Outlook, seleccione No reenviar.|
 
 ###### <a name="footnote-1"></a>Nota al pie 1
-La configuración de protección usa la plantilla predeterminada, **Confidencial\Todos los empleados**.
+Los permisos de protección coinciden con los de la [plantilla predeterminada](configure-policy-templates.md#default-templates), **Confidencial\Todos los empleados**.
 
 ###### <a name="footnote-2"></a>Nota al pie 2 
-La configuración de protección usa la plantilla predeterminada, **Extremadamente confidencial\Todos los empleados**.
+Los permisos de protección coinciden con los de la [plantilla predeterminada](configure-policy-templates.md#default-templates), **Extremadamente confidencial\Todos los empleados**.
 
 
 ### <a name="information-protection-bar"></a>Barra de Information Protection

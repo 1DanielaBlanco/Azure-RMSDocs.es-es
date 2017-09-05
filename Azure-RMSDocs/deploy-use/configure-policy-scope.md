@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4b134785-0353-4109-8fa7-096d1caa2242
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: d3138cd16e1bd86d63243feea30d23db9aa45bdb
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: e790b669298bb40b3397150d1b2c3ed7e26c10ab
+ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="how-to-configure-the-azure-information-protection-policy-for-specific-users-by-using-scoped-policies"></a>Configuración de la directiva de Azure Information Protection para usuarios específicos mediante directivas de ámbito
 
@@ -35,26 +35,30 @@ Por ejemplo, si tiene una etiqueta denominada **Confidencial** en la directiva g
 
 Para configurar una directiva de ámbito de Azure Information Protection:
 
-1. En una nueva ventana del explorador, inicie sesión en [Azure Portal](https://portal.azure.com) como administrador de seguridad o administrador global.
+1. Si aún no lo ha hecho, abra una nueva ventana del explorador e inicie sesión en [Azure Portal](https://portal.azure.com) como administrador de seguridad o administrador global. Después, vaya a la hoja **Azure Information Protection**. 
 
-2. Vaya a la hoja **Azure Information Protection**: por ejemplo, en el menú del centro, haga clic en **Más servicios** y comience a escribir **Information Protection** en el cuadro Filtro. De los resultados, seleccione **Azure Information Protection**. 
+    Por ejemplo, en el menú del centro, haga clic en **Más servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
-    En la hoja inicial de **Azure Information Protection**, seleccione **Agregar una directiva**. Verá entonces la segunda hoja que se usa para mostrar la actualización de la directiva global, por lo que ahora puede configurar la nueva directiva de ámbito.
+2. En la selección del menú **DIRECTIVAS**, seleccione **Directivas con ámbito**.
 
-3. Especifique un nombre de directiva y una descripción que solo los administradores vean en el portal de Azure. El nombre debe ser único en el inquilino. A continuación, haga clic en **Specify which users/groups get this policy** (Especificar qué usuarios o grupos obtienen esta directiva) y, en las siguientes hojas, busque y seleccione los usuarios y grupos a los que se aplica esta directiva. Las etiquetas y valores de configuración que defina en esta directiva de ámbito se aplican solo a estos usuarios.
+3. En la hoja **Azure Information Protection - Scoped policies** (Azure Information Protection: directivas con ámbito), seleccione **Agregar una directiva**. Verá la hoja **Directiva** en la que se muestra la directiva global existente, donde puede configurar la nueva directiva con ámbito.
 
-4. Ahora cree nuevas etiquetas o configure los valores de la directiva de ámbito. La directiva global siempre se aplica primero, así que puede complementarla con nuevas etiquetas e invalidar los valores de configuración globales. Por ejemplo, si la directiva global no tiene especificada una etiqueta predeterminada, podría configurar una etiqueta predeterminada diferente en diferentes directivas de ámbito para departamentos específicos.
+4. Especifique un nombre de directiva y una descripción que solo los administradores vean en el portal de Azure. El nombre debe ser único en el inquilino. Después, seleccione **Specify which users/groups get this policy** (Especificar qué usuarios o grupos obtienen esta directiva) y, en las hojas siguientes, busque y seleccione los usuarios y los grupos a los que se aplica esta directiva. Las etiquetas y valores de configuración que defina en esta directiva de ámbito se aplican solo a estos usuarios.
+
+5. Ahora cree nuevas etiquetas o configure los valores de la directiva de ámbito. La directiva global siempre se aplica primero, así que puede complementarla con nuevas etiquetas e invalidar los valores de configuración globales. Por ejemplo, si la directiva global no tiene especificada una etiqueta predeterminada, podría configurar una etiqueta predeterminada diferente en diferentes directivas de ámbito para departamentos específicos.
 
     Si necesita ayuda para configurar las etiquetas o los valores, use el vínculo de la sección [Configuración de la directiva de la organización](configure-policy.md#configuring-your-organizations-policy).
 
-5. Lo mismo que cuando edita la directiva global, cuando realiza cambios en una hoja de Azure Information Protection, haga clic en **Guardar** para guardar los cambios o en **Descartar** para volver a la última configuración guardada. 
+6. Lo mismo que cuando edita la directiva global, cuando realiza cambios en una hoja de Azure Information Protection, haga clic en **Guardar** para guardar los cambios o en **Descartar** para volver a la última configuración guardada. 
 
-6. Cuando haya terminado de realizar los cambios deseados para esta directiva de ámbito, en la hoja inicial de **Azure Information Protection**, asegúrese de que esta directiva de ámbito esté en el orden en que quiere que se aplique. Esto es importante cuando ha seleccionado el mismo usuario para varias directivas de ámbito. A continuación, haga clic en **Publicar**. 
+7. Cuando haya terminado de realizar los cambios deseados para esta directiva de ámbito, en la hoja inicial **Azure Information Protection - Scoped policies** (Azure Information Protection: directivas con ámbito), asegúrese de que esta directiva con ámbito esté en el orden en que quiere que se aplique. Esto es importante cuando ha seleccionado el mismo usuario para varias directivas de ámbito. Para cambiar el orden, seleccione el menú contextual (**…**) y **Subir** o **Bajar**. 
+
+8. Para implementar los cambios, haga clic en **Publicar**. 
 
 El cliente de Azure Information Protection comprueba si hay cambios cada vez que se inicia una aplicación de Office compatible o se abre el Explorador de archivos. El cliente descarga los cambios en la directiva global o las directivas de ámbito que se apliquen a ese usuario.
 
 > [!TIP]
-> Después de guardar la directiva de ámbito, puede utilizar el **Editor de directivas cruzadas** de la hoja **Azure Information Protection** inicial, para ver y volver a configurar todas las etiquetas de la directiva de Azure Information Protection. Este método proporciona una manera fácil de comparar etiquetas de varias directivas (su directiva global y todas las directivas de ámbito). Sin embargo, este editor no permite agregar o reordenar etiquetas, o ver o definir la configuración de directivas.
+> Después de guardar la directiva con ámbito, en la sección **DIRECTIVAS**, puede usar la opción **Todo: vista de directivas cruzadas** para ver y volver a configurar todas las etiquetas de la directiva de Azure Information Protection. Este método proporciona una manera fácil de comparar etiquetas de su directiva global y de todas las directivas con ámbito. 
 
 ## <a name="next-steps"></a>Pasos siguientes
 

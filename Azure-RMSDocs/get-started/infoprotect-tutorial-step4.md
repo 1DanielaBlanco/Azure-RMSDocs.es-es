@@ -4,17 +4,17 @@ description: "Paso 4 de un tutorial de introducción para probar rápidamente Az
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/19/2017
+ms.date: 08/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
-ms.openlocfilehash: 5ceb351e72ec30015697d2b27111ae76fb3b2b58
-ms.sourcegitcommit: 64ba794e7844a74b1e25db0d44b90060e3ae1468
+ms.openlocfilehash: 3a5e3fc018bb19480a52729345ad2ac6d4c851be
+ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="step-4-see-classification-labeling-and-protection-in-action"></a>Paso 4: ver la clasificación, el etiquetado y la protección en funcionamiento 
 
@@ -54,24 +54,23 @@ En la barra de Information Protection, haga clic en el icono **Editar etiqueta**
 
 Esta vez, cuando se le solicite, escriba "Este documento no necesita clasificación" y haga clic en **Confirmar**.  
 
-Ve que el valor **Confidencialidad** muestra **No establecido**, que es lo que los usuarios ven inicialmente si no establece una etiqueta predeterminada:
-
-![Paso 4 del tutorial de inicio rápido de Azure Information Protection: quitar clasificación](../media/sensitivity-not-setv2.png)
-
+Ve que el valor **Confidencialidad** muestra **No establecido**, que es lo que los usuarios ven inicialmente si no establece una etiqueta predeterminada.
 
 ## <a name="to-see-a-recommendation-prompt-for-labeling-and-automatic-protection"></a>Para ver un aviso de recomendación para el etiquetado y la protección automática
 
 1. En el documento de Word, escriba un número de tarjeta de crédito válido, por ejemplo: **4242-4242-4242-4242**. 
 
-2. Guarde el documento (use cualquier nombre de archivo, cualquier ubicación). 
+2. Guarde el documento de forma local, con cualquier nombre de archivo. 
 
 3. Ahora verá un aviso para aplicar la etiqueta que ha configurado para la protección cuando se detectan los números de tarjeta de crédito. Si no estamos de acuerdo con la recomendación, nuestra configuración de directiva nos permite rechazarla, seleccionando **Descartar**. Proporcionar una recomendación pero permitir que un usuario la invalide facilita reducir los falsos positivos cuando se usa la clasificación automática. Para este tutorial, haga clic en **Cambiar ahora**.
 
     ![Paso 4 del tutorial de inicio rápido de Azure Information Protection: recomendar aviso](../media/change-nowv2.png)
 
-    Además del documento que ahora muestra que se aplica nuestra etiqueta configurada (por ejemplo, **Confidencial \ Todos los empleados**), ve inmediatamente la marca de agua del nombre de su organización en la página, y también se aplica el pie de página **Clasificado como confidencial**. 
+    Además del documento que ahora muestra que se aplica nuestra etiqueta configurada (por ejemplo, **Confidencial \ Finanzas**), ve inmediatamente la marca de agua del nombre de su organización en la página, y también se aplica el pie de página **Clasificado como confidencial**. 
 
-    El documento también está protegido con la plantilla de Azure Rights Management que ha especificado, que puede confirmar cuando haga clic en la pestaña **Archivo** y vea la información de **Proteger documento**. Si ha usado la plantilla Confidencial predeterminada, verá la información de que el documento está restringido a los usuarios internos (los usuarios externos a la organización no podrán abrir el documento) y su contenido no puede copiarse ni imprimirse. Como propietario del documento, puede copiar de este e imprimirlo, pero si lo envía por correo electrónico a otro usuario de su organización, no podrán realizar estas acciones.
+    El documento también está protegido con los permisos que ha especificado para esta etiqueta. Para confirmar que el documento está protegido, haga clic en la pestaña **Archivo** y vea la información de **Proteger documento**. Verá que el documento está protegido como **Confidencial \ Finanzas** y la descripción de la etiqueta. 
+    
+    Debido a la configuración de protección de la etiqueta, solo los empleados pueden abrir el documento y algunas acciones están restringidas para ellos. Por ejemplo, como no tienen permisos para imprimir, copiar y extraer contenido, no pueden imprimir el documento ni copiar datos de él. Estas restricciones ayudan a evitar la pérdida de datos. Como propietario del documento, puede imprimirlo y copiar datos de él, pero si lo envía por correo electrónico a otros usuarios de la organización, no podrán realizar estas acciones.
 
 4. Ya puede cerrar este documento.
 

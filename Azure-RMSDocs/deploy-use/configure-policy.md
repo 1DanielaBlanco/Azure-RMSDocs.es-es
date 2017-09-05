@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 88843833b87eb054f534a7c85e6a7c2e52797e9b
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: 7f3b64e5e4b0dfbccf694a986a85f1c207580915
+ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="configuring-azure-information-protection-policy"></a>Configuración de la directiva de Azure Information Protection
 
@@ -48,7 +48,7 @@ Para más información sobre cómo configurar las directivas con ámbito, consul
 
 2. Vaya a la hoja **Azure Information Protection**: por ejemplo, en el menú del centro, haga clic en **Más servicios** y comience a escribir **Information Protection** en el cuadro Filtro. De los resultados, seleccione **Azure Information Protection**. 
     
-    La primera vez que se conecte al servicio, la página **Inicio rápido** se abrirá automáticamente. Para configurar la directiva que reciben todos los usuarios, haga clic en **Directiva global** para abrir la hoja **Policy: Global** (Directiva: Global). Esta hoja se abre automáticamente para las conexiones subsiguientes al servicio a fin de ver y editar la directiva global que reciben todos los usuarios. 
+    La primera vez que se conecte al servicio, se abrirá automáticamente la hoja **Azure Information Protection - Quick start** (Azure Information Protection: inicio rápido). Para configurar la directiva que obtienen todos los usuarios, en la selección del menú **DIRECTIVAS**, seleccione **Directiva global** para abrir la hoja **Azure Information Protection - Global policy** (Azure Information Protection: directiva global). Esta hoja se abre automáticamente para las conexiones subsiguientes al servicio a fin de ver y editar la directiva global que reciben todos los usuarios. 
     
     La directiva de Azure Information Protection contiene los siguientes elementos que puede configurar:
     
@@ -70,7 +70,7 @@ Azure Information Protection incluye una [directiva predeterminada](configure-po
 
 Puede utilizar las etiquetas predeterminadas sin cambios, o puede personalizarlas. También puede eliminarlas y crear otras nuevas. Para más información, use los vínculos que aparecen en la siguiente sección para ubicar las opciones pertinentes y cómo configurarlas. 
 
-Cuando realice cambios en una hoja de Azure Information Protection, haga clic en **Guardar** para guardar los cambios o en **Descartar** para volver a la última configuración guardada. 
+Cuando realice cambios en una hoja de Azure Information Protection, haga clic en **Guardar** para guardar los cambios o en **Descartar** para volver a la última configuración guardada.
 
 Cuando haya terminado de realizar los cambios que desee, haga clic en **Publicar**. 
 
