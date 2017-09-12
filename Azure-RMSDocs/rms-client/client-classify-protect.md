@@ -4,7 +4,7 @@ description: "Instrucciones de cómo clasificar y proteger sus documentos y corr
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/08/2017
+ms.date: 08/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 954b69213c055c4b94981fabef40df29aa0e19ba
-ms.sourcegitcommit: 5a087ff509162a98f3d09fda4ef5a114028e5664
+ms.openlocfilehash: 5e8329a441dcc871a155ef1b1484544732bec212
+ms.sourcegitcommit: 23aeb2bcce05968b850313333e359c99dd99a56f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 09/05/2017
 ---
 # <a name="classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Clasificación y protección de archivos o correos electrónicos mediante Azure Information Protection
 
@@ -85,8 +85,6 @@ Puede especificar su propia configuración de protección para documentos en lug
     - **Seleccionar permisos**: Si desea proteger el archivo para que solo usted pueda acceder a él, seleccione **Solo para mí**. De lo contrario, seleccione el nivel de acceso que desea que tengan las personas.
 
     - **Seleccionar usuarios, grupos u organizaciones**: Especifique las personas que deben tener los permisos seleccionados para los archivos. Escriba sus direcciones de correo electrónico completas, una dirección de correo electrónico de grupo o un nombre de dominio de la organización para todos los usuarios de esa organización. Tenga en cuenta que actualmente no se admiten direcciones de correo electrónico personales.
-    
-    Si tiene la versión preliminar actual del cliente de Azure Information Protection, puede usar como alternativa el botón **Seleccionar usuarios, grupos u organizaciones**. Este botón muestra el cuadro de diálogo **Seleccionar usuarios o grupos** de Active Directory local. Si los usuarios o grupos que quiere especificar se encuentran en Active Directory, puede buscarlos y seleccionarlos en este cuadro de diálogo. Para usar esta opción, el equipo debe estar conectado a la red interna, debe estar unido al dominio y debe tener una instancia local de Active Directory. Si no se cumple alguna de estas condiciones, aparecerá el mensaje siguiente: **El programa no puede abrir el cuadro de diálogo requerido porque no se pueden encontrar las ubicaciones**.
         
     - **Expire access** (Acceso con expiración): seleccione esta opción solo para archivos sujetos a limitación temporal, de modo que las personas que ha especificado no puedan abrir los archivos seleccionados después de una fecha especificada. Aún podrá abrir el archivo original, pero el día seleccionado después de medianoche (su zona horaria actual), las personas que haya especificado no podrán abrir el archivo.
 
@@ -131,7 +129,7 @@ La guía para administradores contiene una lista completa de los tipos de archiv
     
     - **Seleccionar usuarios, grupos u organizaciones**: Especifique las personas que deben tener los permisos seleccionados para los archivos. Escriba sus direcciones de correo electrónico completas, una dirección de correo electrónico de grupo o un nombre de dominio de la organización para todos los usuarios de esa organización. Tenga en cuenta que actualmente no se admiten direcciones de correo electrónico personales.
     
-    Como alternativa, puede usar el botón **Seleccionar usuarios, grupos u organizaciones** para elegir usuarios o grupos de la libreta de direcciones de Outlook. Si tiene la versión preliminar actual del cliente de Azure Information Protection, este botón muestra el cuadro de diálogo **Seleccionar usuarios o grupos** de Active Directory local. Si los usuarios o grupos que quiere especificar se encuentran en Active Directory, puede buscarlos y seleccionarlos en este cuadro de diálogo. Para usar esta opción, el equipo debe estar conectado a la red interna, debe estar unido al dominio y debe tener una instancia local de Active Directory. Si no se cumple alguna de estas condiciones, aparecerá el mensaje siguiente: **El programa no puede abrir el cuadro de diálogo requerido porque no se pueden encontrar las ubicaciones**.
+    Como alternativa, puede usar el icono de la libreta de direcciones para seleccionar usuarios o grupos de la libreta de direcciones de Outlook.
         
     - **Expire access** (Expirar acceso): seleccione esta opción solo para archivos dependientes del tiempo, de modo que las personas que ha especificado no puedan abrir los archivos seleccionados después de una fecha determinada. Usted todavía podrá abrir el archivo original, pero después de la medianoche (de su zona horaria actual) del día que establezca. Las personas que especifique no podrán abrir el archivo.
     

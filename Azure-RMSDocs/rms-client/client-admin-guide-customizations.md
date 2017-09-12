@@ -4,7 +4,7 @@ description: "Información sobre cómo personalizar el cliente de Azure Informat
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 08/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 9e7e5e67b664d177f60a445aa54df3f6072ff9c7
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: e590bd7983b0f3e4e4d1348fbe120452e9ceb79b
+ms.sourcegitcommit: 6000258a9f973a3ab8e608eda57b88a469e7b754
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="custom-configurations-for-the-azure-information-protection-client"></a>Configuraciones personalizadas del cliente de Azure Information Protection
 
@@ -83,6 +83,20 @@ Además:
 - Si desea eliminar la directiva actualmente descargada de Azure Information Protection, elimine el archivo **Policy.msip** de la carpeta **%localappdata%\Microsoft\MSIP**.
 
 - Si tiene la versión preliminar actual del cliente de Azure Information Protection, puede usar la opción **Restablecer configuración** de **Ayuda y comentarios** para cerrar sesión y eliminar la directiva de Azure Information Protection descargada actualmente.
+
+## <a name="enforce-protection-only-mode-when-your-organization-has-a-mix-of-licenses"></a>Exigencia del modo de solo protección cuando la organización tiene una combinación de licencias
+
+Si la organización no tiene ninguna licencia de Azure Information Protection, pero tiene licencias de Office 365 que incluyen el servicio de Azure Rights Management para la protección de datos, el cliente de Azure Information Protection para Windows se ejecuta automáticamente en [el modo de solo protección](../rms-client/client-protection-only-mode.md).
+
+Sin embargo, si la organización tiene una suscripción para Azure Information Protection, de forma predeterminada todos los equipos Windows pueden descargar la directiva de Azure Information Protection. El cliente de Azure Information Protection no lleva a cabo la comprobación de licencias ni el cumplimiento. 
+
+Si tiene algunos usuarios que no tiene una licencia de Azure Information Protection, pero sí una licencia de Office 365 que incluye el servicio de Azure Rights Management, edite el Registro en los equipos de estos usuarios para impedir que dichos usuarios ejecuten las características de clasificación y etiquetado sin licencia de Azure Information Protection.
+
+Busque el siguiente nombre de valor y establezca los datos del valor en **0**:
+
+**HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnablePolicyDownload** 
+
+Además, compruebe que estos equipos no tienen un archivo denominado **Policy.msip** en la carpeta **%LocalAppData%\Microsoft\MSIP**. Si el archivo existe, elimínelo. Este archivo contiene la directiva de Azure Information Protection y podría haberse descargado antes de que editara el Registro, o si el cliente de Azure Information Protection se instaló con la opción de demostración.
 
 ## <a name="hide-the-classify-and-protect-menu-option-in-windows-file-explorer"></a>Ocultación de la opción de menú Clasificar y Proteger en el Explorador de archivos de Windows
 

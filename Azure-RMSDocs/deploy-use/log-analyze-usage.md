@@ -4,7 +4,7 @@ description: "Información e instrucciones sobre cómo usar el registro de uso c
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 09/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,17 +12,17 @@ ms.technology: techgroup-identity
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 032fb5525d1bd4f32419358cdeae5efe1be30f56
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: ebfd7ce4266061cef3099fb8fb096c95b01e6fb4
+ms.sourcegitcommit: 6000258a9f973a3ab8e608eda57b88a469e7b754
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>Registro y análisis del uso del servicio Azure Rights Management
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
-Use esta información como ayuda para comprender cómo puede usar el registro de uso del servicio Azure Rights Management de Azure Information Protection. Este servicio proporciona protección para los datos de los documentos y mensajes de correo electrónico de su organización y puede registrar todas las solicitudes para obtener acceso a ellos. Entre ellas, se incluyen las solicitudes de los usuarios, las acciones que realicen los administradores de este servicio y las que realicen los operadores de Microsoft para admitir su implementación Azure Information Protection.
+Use esta información como ayuda para comprender cómo puede usar el registro de uso del servicio Azure Rights Management de Azure Information Protection. Este servicio proporciona la protección de datos para documentos y correos electrónicos de la organización y puede registrar todas las solicitudes que recibe. Estas solicitudes incluyen cuando los usuarios protegen documentos y correos electrónicos y también consumen este contenido, las acciones realizadas por los administradores para este servicio y las acciones llevadas a cabo por operadores de Microsoft para admitir la implementación de Azure Information Protection. 
 
 A continuación, puede usar estos registros del servicio Azure Rights Management para admitir los siguientes escenarios empresariales:
 
@@ -40,12 +40,18 @@ A continuación, puede usar estos registros del servicio Azure Rights Management
 
     Si tiene una pérdida de información, es probable que se le pregunte quién accedió recientemente a documentos específicos y a qué información accedió la persona sospechosa. Puede responder a este tipo de preguntas cuando use este registro, ya que los usuarios que usan contenido protegido siempre deben obtener una licencia de Rights Management para abrir documentos e imágenes que estén protegidos mediante el servicio Azure Rights Management, incluso en el caso de que esos archivos se muevan por correo electrónico o se copien en unidades USB u otras unidades de almacenamiento. Esto significa que podrá usar los registros como origen fundamental de la información para realizar el análisis forense cuando proteja sus datos con el servicio Azure Rights Management.
 
-> [!NOTE]
-> Si solo está interesado en el registro de las tareas administrativas del servicio Azure Rights Management y no quiere realizar un seguimiento del modo en que los usuarios usan el servicio Rights Management, puede usar el cmdlet [Get-AadrmAdminLog](/powershell/module/aadrm/get-aadrmadminlog) de Windows PowerShell de Azure Rights Management.
-> 
-> También puede usar el Portal de Azure clásico para ver informes de uso de alto nivel que incluyen **Resumen de RMS**, **Usuarios activos de RMS**, **Plataformas de dispositivos RMS** y **Uso de aplicaciones de RMS**. Para tener acceso a estos informes desde el Portal de Azure clásico, haga clic en **Active Directory**, seleccione un directorio y ábralo y, luego, haga clic en **INFORMES**.
+Además de este registro de uso, también tiene las siguientes opciones de registro:
 
-Use las secciones siguientes para más información sobre el registro de uso de Azure Rights Management.
+|Opción de registro|Descripción|
+|----------------|---------------|
+|Registro de administración|Registra las tareas administrativas para el servicio de Azure Rights Management. Por ejemplo, si el servicio está desactivado, cuando la característica de superusuario está habilitada y cuando los usuarios tienen permisos de administración delegados para el servicio. <br /><br />Para más información, vea el cmdlet de PowerShell [Get-AadrmAdminLog](/powershell/module/aadrm/get-aadrmadminlog).|
+|Informes web|Informes de uso de alto nivel del Portal de Azure clásico: **Resumen de RMS**, **Usuarios activos de RMS**, **Plataformas de dispositivos RMS** y **Uso de aplicaciones de RMS**. <br /><br />Para acceder a estos informes desde el Portal de Azure clásico, haga clic en **Active Directory**, seleccione un directorio y ábralo y, luego, haga clic en **INFORMES**.|
+|Seguimiento de documentos|Permite a los usuarios seguir y revocar los documentos que han seguido con el cliente de Azure Information Protection o la aplicación RMS sharing. Los administradores globales también pueden realizar un seguimiento de estos documentos en nombre de los usuarios. <br /><br />Para más información, consulte [Configuración y uso de seguimiento de documentos para Azure Information Protection](../rms-client/client-admin-guide-document-tracking.md).|
+|Registros de eventos de cliente|Actividad de uso para el cliente de Azure Information Protection, registrada en el registro de eventos local de Windows **Aplicaciones y servicios**, **Azure Information Protection**. <br /><br />Para más información, consulte [Registro de uso del cliente de Azure Information Protection](../rms-client/client-admin-guide-files-and-logging.md#usage-logging-for-the-azure-information-protection-client).|
+|Archivos de registro de cliente|Registros de solución de problemas para el cliente de Azure Information Protection, ubicados en **%localappdata%\Microsoft\MSIP**. <br /><br />Estos archivos están diseñados para Microsoft Support.|
+
+
+Use las secciones siguientes para más información sobre el registro de uso del servicio Azure Rights Management. 
 
 ## <a name="how-to-enable-azure-rights-management-usage-logging"></a>Habilitación del registro de uso de Azure Rights Management
 A partir de febrero de 2016, el registro de uso de Azure Rights Management se habilita de forma predeterminada para todos los clientes. Esto se aplica a los clientes que activaron su servicio de Azure Rights Management antes de febrero de 2016 y a los clientes que activaron el servicio después de febrero de 2016. 

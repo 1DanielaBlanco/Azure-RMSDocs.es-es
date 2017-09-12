@@ -4,7 +4,7 @@ description: "Información para los usuarios que ejecutan el cliente de Azure In
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 09/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,24 +12,30 @@ ms.technology: techgroup-identity
 ms.assetid: 16042717-0d7a-41f5-87e3-12826fda35df
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 55254496b23e49fe7e2dbd19721a824739004b21
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 84644f717a6005245847c9e9598b87c5af885aa7
+ms.sourcegitcommit: 6000258a9f973a3ab8e608eda57b88a469e7b754
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="protection-only-mode-for-the-azure-information-protection-client"></a>Modo de solo protección para el cliente de Azure Information Protection
 
-Cuando se ejecuta el cliente de Azure Information Protection sin una directiva de Azure Information Protection, se muestra en modo de **solo protección**. Por ejemplo, si utiliza el Explorador de archivos de Windows, haga clic con el botón derecho en **Clasificar y proteger**:
+Cuando el cliente de Azure Information Protection no tiene etiquetas para clasificar los documentos y correos electrónicos, se ejecuta en modo **solo protección**. Por ejemplo, en este modo, podría ver lo siguiente si utiliza el Explorador de archivos de Windows y hace clic con el botón derecho en **Clasificar y proteger**:
 
 ![Modo de solo protección](../media/protection-only-mode.png)
 
- Este modo se ejecuta en los siguientes escenarios:
+El modo de solo protección se ejecuta en los siguientes escenarios:
 
-- La organización no tiene una suscripción para Azure Information Protection (para clasificación y protección de datos), pero tiene una suscripción para el servicio Azure Rights Management (para protección de datos con Office 365). 
-    - Este es un escenario admitido y puede usar el cliente de Azure Information Protection para proteger archivos y ver los archivos protegidos.
+- La organización no tiene una suscripción para Azure Information Protection que incluya características de clasificación y etiquetado, pero tiene una suscripción para Office 365 que incluye protección de datos mediante el uso del servicio Azure Rights Management. 
+    
+    - Puede utilizar el cliente de Azure Information Protection para proteger archivos y ver archivos protegidos. No se pueden clasificar o etiquetar documentos ni correos electrónicos.
+
+- Su organización tiene una suscripción para Azure Information Protection para solo un subconjunto de usuarios:
+    
+    - Para esta combinación de suscripciones, el administrador es el responsable de asegurarse de que solo el subconjunto de usuarios puede utilizar las características de clasificación y etiquetado. El resto de usuarios debe ejecutar el cliente de Azure Information Protection en modo de solo protección. 
 
 - La organización tiene una suscripción para Azure Information Protection, pero no puede descargar la directiva de Azure Information Protection. 
+    
     - Esto puede suceder debido a una configuración incorrecta o porque el inicio de sesión no es correcto. Póngase en contacto con el Servicio de asistencia o el administrador, pero, mientras tanto, puede usar el cliente de Azure Information Protection para proteger archivos y ver los archivos protegidos.
 
 ## <a name="limitations-for-protection-only-mode"></a>Limitaciones para el modo de solo protección
