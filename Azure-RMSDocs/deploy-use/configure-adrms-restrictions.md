@@ -4,17 +4,17 @@ description: "Identifique las limitaciones, los requisitos previos y las recomen
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 09/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: 80e7cb411132fa3c3fdff7f8c80febde68b071fa
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: ef39c5489e63a67e0880e4faab4d9675a49f5f90
+ms.sourcegitcommit: 4e31a4797eb8df64af3ae8932d2b49839e7a4524
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="hold-your-own-key-hyok-requirements-and-restrictions-for-ad-rms-protection"></a>Requisitos y restricciones de Mantenga su propia clave (HYOK) para la protección de AD RMS
 
@@ -85,7 +85,15 @@ Compruebe que la implementación de AD RMS cumple los siguientes requisitos para
     
     - Versión mínima de Windows Server 2012 R2: necesaria para entornos de producción, pero para fines de pruebas o evaluación se puede usar una versión mínima de Windows Server 2008 R2 con Service Pack 1.
     
-    - Un único clúster raíz de AD RMS.
+    - Una de las topologías siguientes:
+        
+        - Un bosque individual con un clúster raíz de AD RMS único. 
+        
+        - Varios bosques con clústeres de raíz de AD RMS independientes y usuarios sin acceso al contenido protegido por los usuarios en los otros bosques.
+        
+        - Varios bosques con clústeres de AD RMS en cada uno. Cada clúster de AD RMS comparte una dirección URL de licencia que apunta al mismo clúster de AD RMS. En este clúster de AD RMS, debe importar todos los certificados de dominio de usuario de confianza (TUD) de todos los otros clústeres de AD RMS. Para obtener más información sobre esta topología, consulte [Dominio de usuario de confianza] (https://technet.microsoft.com/library/dd983944(v=ws.10\).aspx).
+        
+    Cuando haya varios clústeres de AD RMS en bosques diferentes, elimine las etiquetas en la directiva global que aplica la protección de HYOK (AD RMS) y configure una [directiva con ámbito](configure-policy-scope.md) para cada clúster. A continuación, asigne los usuarios de cada clúster a su directiva con ámbito, asegurándose de que no se usen grupos que puedan causar que un usuario quede asignado a más de una directiva con ámbito. El resultado debería ser que cada usuario tenga etiquetas para un único clúster de AD RMS. 
     
     - [Modo criptográfico 2](https://technet.microsoft.com/library/hh867439.aspx): puede confirmar el modo comprobando las propiedades de clúster de AD RMS en la pestaña **General**.
     

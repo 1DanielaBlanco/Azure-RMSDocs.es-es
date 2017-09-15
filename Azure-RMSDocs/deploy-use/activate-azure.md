@@ -1,10 +1,10 @@
 ---
 title: "Activación de Azure RMS con Azure Portal: AIP"
-description: "Instrucciones de activación del servicio Azure Rights Management para empezar a proteger documentos y correos electrónicos."
+description: "Instrucciones para la activación de la protección en Azure Portal para que su organización pueda empezar a proteger documentos y correos electrónicos"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 09/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4e886f5a-f535-4207-b8c4-8e0376c0758e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 12df794b35b5a5c979709cee61cd61e11b2fb5d4
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: 56c75286280905065539b2d865aa0886edfd226f
+ms.sourcegitcommit: 94a9b6714c555b95f6064088e77ed94f08224a15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="how-to-activate-azure-rights-management-from-the-azure-portal"></a>Cómo activar Azure Rights Management desde Azure Portal
 
@@ -30,7 +30,7 @@ Siga estas instrucciones si quiere activar el servicio Azure Rights Management (
     
     Para abrir la hoja de Azure Information Protection, debe disponer de un [plan Premium de Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) o de un [plan de Office 365 que incluya Rights Management](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf). Si tiene una de estas suscripciones pero ve un mensaje que le indica que no se encuentra una suscripción válida, envíe un mensaje de correo electrónico a [askipteam](mailto:askipteam@microsoft.com?subject=I%20cannot%20activate%20RMS).
 
-2. Busque las opciones del menú **ADMINISTRAR** y seleccione **Configuración de RMS**.  
+2. Busque las opciones del menú **ADMINISTRAR** y seleccione **Configuración de RMS** o **Activación de la protección**. Esta opción cambiará de nombre próximamente.
     
     Haga clic en **Activar** y, después, confirme la acción. 
 
