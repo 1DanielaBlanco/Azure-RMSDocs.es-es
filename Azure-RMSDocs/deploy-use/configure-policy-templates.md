@@ -4,7 +4,7 @@ description: "Configure y administre plantillas de administración de derechos d
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 09/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 5075c8cbab441a376595baabd7863005b15b84e3
-ms.sourcegitcommit: 5bcb916106021f624a69d620bbcc2c4a51398771
+ms.openlocfilehash: 1094c0a711b3691b8186baafc06d1fb72daf5613
+ms.sourcegitcommit: 94a9b6714c555b95f6064088e77ed94f08224a15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>Configuración y administración de plantillas para Azure Information Protection
 
@@ -103,9 +103,9 @@ Antes de editar estas plantillas o convertirlas en etiquetas, asegúrese de que 
     
     Además, actualmente no puede establecer la configuración de compatibilidad de aplicaciones para una plantilla de departamento. Si es necesario, puede usar el cmdlet [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) de PowerShell para establecer este valor.
 
-- Al convertir una plantilla en etiqueta o vincular una plantilla a una etiqueta, ya no la pueden usar otras etiquetas. Además, esta plantilla ya no se muestra en la sección **Plantillas**.
+- Al convertir una plantilla en etiqueta o vincular una plantilla a una etiqueta, ya no la pueden usar otras etiquetas. Además, esta plantilla ya no se muestra en la sección **Plantillas** o **Plantillas de protección**. Esta sección cambiará de nombre próximamente.
 
-- No cree una plantilla desde el contenedor **Plantillas**. En lugar de eso, cree una etiqueta con el valor **Proteger** y configure los derechos de uso y los valores en la hoja **Protección**. Para instrucciones completas, consulte [Para crear una nueva plantilla](#to-create-a-new-template).
+- No puede crear una plantilla desde la sección **Plantillas** o **Plantillas de protección**. En lugar de eso, cree una etiqueta con el valor **Proteger** y configure los derechos de uso y los valores en la hoja **Protección**. Para instrucciones completas, consulte [Para crear una nueva plantilla](#to-create-a-new-template).
 
 ## <a name="to-configure-the-templates-in-the-azure-information-protection-policy"></a>Para configurar las plantillas en la directiva de Azure Information Protection
 
@@ -119,11 +119,11 @@ Antes de editar estas plantillas o convertirlas en etiquetas, asegúrese de que 
 
 3. En la hoja **Azure Information Protection - Global policy** (Azure Information Protection: directiva global) o la hoja **Directiva:\<nombre>**, busque la plantilla que quiere configurar:
     
-    - Cuando tiene una suscripción que incluye clasificación, etiquetado y protección: expanda **Plantillas** después de las etiquetas.
+    - Cuando tenga una suscripción que incluya clasificación, etiquetado y protección: expanda **Plantillas** o **Plantillas de protección** después de las etiquetas.
     
     - Cuando tiene una suscripción que incluye solo protección: las plantillas se muestran como etiquetas.
 
-4. Seleccione la plantilla y, en la hoja **Etiqueta**, puede cambiar el nombre y la descripción de la plantilla si es necesario. Para ello, edite el **nombre de la etiqueta** y la **descripción**. Luego, seleccione la **protección** con un valor de **Azure RMS** para abrir la hoja **Protección**.
+4. Seleccione la plantilla y, en la hoja **Etiqueta**, puede cambiar el nombre y la descripción de la plantilla si es necesario. Para ello, edite el **nombre de la etiqueta** y la **descripción**. Luego, seleccione la **protección** con un valor de **Azure RMS** o **Azure (clave en la nube)** para abrir la hoja **Protección**.
 
 5. En la hoja **Protección**, puede cambiar los permisos, la expiración del contenido y la configuración de acceso sin conexión. Para más información sobre cómo configurar los valores de protección, consulte [Configuración de una etiqueta para la protección de Rights Management](configure-policy-protection.md)
     
@@ -154,11 +154,11 @@ Cuando se convierte una plantilla en etiqueta:
 
 - La configuración de protección se conserva y puede editarla si es necesario. Además, puede agregar otros valores de etiqueta como marcadores visuales y condiciones.
 
-- La plantilla original ya no aparece en **Plantillas** y no se puede seleccionar como predefinida al configurar la protección de una etiqueta. Para editar esta plantilla en Azure Portal, ahora debe editar la etiqueta que se ha creado al convertir la plantilla. La plantilla sigue disponible para el servicio Azure Rights Management y todavía se pueden usar los [comandos de PowerShell](administer-powershell.md) para administrarla.  
+- La plantilla original ya no se muestra en **Plantillas** o **Plantillas de protección** y no se puede seleccionar como predefinida al configurar la protección de una etiqueta. Para editar esta plantilla en Azure Portal, ahora debe editar la etiqueta que se ha creado al convertir la plantilla. La plantilla sigue disponible para el servicio Azure Rights Management y todavía se pueden usar los [comandos de PowerShell](administer-powershell.md) para administrarla.  
 
 ## <a name="to-create-a-new-template"></a>Para crear una nueva plantilla
 
-Cuando crea una etiqueta nueva con la configuración de protección de **Azure RMS**, de forma encubierta, se crea una plantilla personalizada nueva a la que pueden acceder los servicios y las aplicaciones que se integran con las plantillas de Rights Management.
+Cuando crea una etiqueta nueva con la configuración de protección de **Azure RMS** o **Azure (clave en la nube)**, de forma encubierta, se crea una plantilla personalizada nueva a la que pueden acceder los servicios y las aplicaciones que se integran con las plantillas de Rights Management.
 
 1. Si la nueva plantilla es para todos los usuarios, quédese en la hoja **Azure Information Protection - Global policy** (Azure Information Protection: directiva global).
     

@@ -4,17 +4,17 @@ description: "Paso 2 de un tutorial de introducción para probar rápidamente Az
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 09/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: dbe198f84ed092f815e2c419d039d4f926fb5892
-ms.sourcegitcommit: 6000258a9f973a3ab8e608eda57b88a469e7b754
+ms.openlocfilehash: cf84cef5d6bc4d3df32a4e3c8bc3a6ac7380655c
+ms.sourcegitcommit: 94a9b6714c555b95f6064088e77ed94f08224a15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>Paso 2: configurar y publicar la directiva de Azure Information Protection
 
@@ -67,7 +67,7 @@ Ahora vamos a crear una subetiqueta para **Confidencial**.
     
     ![Protección configurada para una etiqueta de Azure Information Protection](../media/info-protect-protection-bar-configured.png) 
     
-4. En la hoja **Protección**, asegúrese de que están seleccionados **Azure RMS** y **Establecer permisos**. Después, seleccione **Agregar permisos**.
+4. En la hoja **Protección**, asegúrese de la opción **Azure RMS** o **Azure (clave en la nube)** esté seleccionada. Esta opción cambiará de nombre próximamente. Asegúrese de que la opción **Establecer permisos** también está seleccionada. Después, seleccione **Agregar permisos**.
 
 5. En la hoja **Agregar permisos**, seleccione **Agregar \<nombre de organización> -Todos los miembros**. Por ejemplo, si el nombre de la organización es VanArsdel Ltd, verá la siguiente opción:
     
@@ -123,7 +123,7 @@ Ahora vamos a crear una subetiqueta para **Confidencial**.
 
 13. Haga clic en **Guardar** en la hoja **Subetiqueta**. A continuación, en la hoja **Policy: Global** (Directiva:Global), haga clic de nuevo en **Guardar**.
     
-    Ahora verá la nueva subetiqueta, que está configurada para los distintivos visuales y la protección de Azure RMS:
+    Ahora verá la nueva subetiqueta, que está configurada para los distintivos visuales y la protección. Por ejemplo:
 
     ![Paso 3 del tutorial de inicio rápido de Azure Information Protection - Directiva predeterminada configurada](../media/info-protect-policy-configuredv2.png)
     
