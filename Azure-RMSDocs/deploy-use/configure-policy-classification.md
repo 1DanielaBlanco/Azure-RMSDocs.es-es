@@ -4,17 +4,17 @@ description: "Al configurar las condiciones de una etiqueta, puede asignar autom
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 09/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: ef84f3ceb8f732dd475b4db8eae489e715d4b7da
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: 09ee8587e6b254584f70dbe2475063831fd5b845
+ms.sourcegitcommit: 6636defa6eca24360f15fb9ef93c2b82dc36cf76
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Configuración de las condiciones para la clasificación automática y recomendada en Azure Information Protection
 
@@ -80,7 +80,13 @@ En este ejemplo, el usuario puede hacer clic en **Cambiar ahora** para aplicar l
 
 ## <a name="details-about-the-information-types"></a>Detalles sobre los tipos de información
 
-Si tiene la versión preliminar actual del cliente de Azure Information Protection, se admite la lista completa de tipos de información y se usan los tipos de información confidencial de prevención de pérdida de datos (DLP) y la detección de patrones de Office 365. Puede elegir entre numerosos tipos comunes de información confidencial, algunos de los cuales son específicos de regiones determinadas. Para obtener más información, vea [Qué buscan los tipos de información confidencial](https://support.office.com/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b) en la documentación de Office. Cuando Azure Information Protection evalúa estos tipos de información, no usa la configuración del nivel de confianza de DLP de Office, sino que encuentra coincidencias en función de la confianza más baja.  
+Si tiene la versión preliminar actual del cliente de Azure Information Protection, se admiten todos los tipos de información que se muestran en el portal:
+
+- Los tipos de información usan los tipos de información confidencial de la prevención de pérdida de datos (DLP) y la detección de patrones integradas en Office 365. Puede elegir entre numerosos tipos comunes de información confidencial, algunos de los cuales son específicos de regiones determinadas. Para obtener más información sobre los tipos de información que puede seleccionar, consulte [Qué buscan los tipos de información confidencial](https://support.office.com/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b) en la documentación de Office. 
+
+- La lista de tipos de información que se pueden seleccionar desde Azure Portal se actualiza periódicamente para incluir cualquier dato que se agregue a la prevención de pérdida de datos de Office. Sin embargo, la lista excluye los tipos de información confidencial personalizados que haya definido y cargado como un paquete de reglas para el Centro de seguridad y cumplimiento de Office 365. 
+
+- Cuando Azure Information Protection evalúa los tipos de información que selecciona, no usa la configuración del nivel de confianza de DLP de Office, sino que encuentra coincidencias en función de la confianza más baja.
 
 Si tiene la versión de disponibilidad general actual del cliente, solo se admiten los siguientes tipos de información:
 
