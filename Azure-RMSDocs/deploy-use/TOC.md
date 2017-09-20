@@ -26,6 +26,7 @@
 ### [Configuración y administración de plantillas](configure-policy-templates.md)
 #### [Actualización de plantillas para usuarios](refresh-templates.md)
 #### [Referencia de PowerShell](configure-templates-with-powershell.md)
+#### [Migración desde el Portal de Azure clásico](migrate-portal.md)
 ### [Configuración de idiomas](configure-policy-languages.md)
 ## [Implementación del conector RMS](deploy-rms-connector.md)
 ### [Instalación y configuración del conector RMS](install-configure-rms-connector.md)
