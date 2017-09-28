@@ -1,10 +1,10 @@
 ---
 title: "Retirada y desactivación de Azure RMS"
-description: "Información e instrucciones si decide que ya no quiere usar este servicio de protección de la información de Azure Information Protection."
+description: "Información e instrucciones en caso de que ya no quiera usar el servicio de protección basado en la nube de Azure Information Protection."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/12/2017
+ms.date: 09/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,13 +12,13 @@ ms.technology: techgroup-identity
 ms.assetid: 0b1c2064-0d01-45ae-a541-cebd7fd762ad
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 1f8d7a56cec4df8f0ef50f4f83ef662ad8923f17
-ms.sourcegitcommit: 94a9b6714c555b95f6064088e77ed94f08224a15
+ms.openlocfilehash: a4ed44939e9853373f272d916e0765572dc0590a
+ms.sourcegitcommit: 76bf1f93b02fd75bead8ccdaaf34da1a6aad571f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 09/22/2017
 ---
-# <a name="decommissioning-and-deactivating-azure-rights-management"></a>Retirada y desactivación de Azure Rights Management
+# <a name="decommissioning-and-deactivating-protection-for-azure-information-protection"></a>Retirada y desactivación de la protección de Azure Information Protection
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
@@ -75,9 +75,9 @@ Ahora debería ver **Rights Management no está activado** y la opción para act
     
     Por ejemplo, en el menú del centro, haga clic en **Más servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
-2. En la hoja inicial de **Azure Information Protection**, seleccione **Configuración de RMS** o **Protección de la activación**. Esta opción cambiará de nombre próximamente. 
+2. En la hoja inicial de **Azure Information Protection**, seleccione **Protección de la activación**. 
 
-3.  En la hoja **Azure Information Protection - Configuración de RMS** o **Azure Information Protection - Activación de la protección**, seleccione **Desactivar**. Seleccione **Sí** para confirmar su elección.
+3.  En la hoja **Azure Information Protection - Protección de la activación**, seleccione **Desactivar**. Seleccione **Sí** para confirmar su elección.
 
 En la barra de información se muestra **Deactivation finished successfully** (La desactivación ha finalizado correctamente) y **Activar** reemplaza a **Desactivar**. 
 

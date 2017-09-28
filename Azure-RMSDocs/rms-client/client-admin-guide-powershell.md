@@ -4,7 +4,7 @@ description: "Instrucciones e información para que los administradores administ
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/28/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 3a4a84356d59692dd3693b4bbaa00a3e39c95597
-ms.sourcegitcommit: adeab31c7aa99eab115dd12035fc5d9dffec4e9c
+ms.openlocfilehash: 99cb5d1ca256977cb07c41bbe153e5ca248b9efd
+ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2017
+ms.lasthandoff: 09/18/2017
 ---
 # <a name="using-powershell-with-the-azure-information-protection-client"></a>Uso de PowerShell con el cliente de Azure Information Protection
 
@@ -26,13 +26,15 @@ Cuando se instala el cliente de Azure Information Protection, los comandos de Po
 
 Los cmdlets se instalan con el módulo de PowerShell **AzureInformationProtection**. El módulo reemplaza al módulo de RMSProtection que se instala con la herramienta de protección de RMS. Si tiene instalada la herramienta RMSProtection al instalar el cliente de Azure Information Protection, el módulo RMSProtection se desinstala automáticamente.
 
-El módulo AzureInformationProtection incluye todos los cmdlets de Rights Management de la herramienta de protección de RMS y tres nuevos cmdlets que usan el servicio Azure Information Protection (AIP) para etiquetado:
+El módulo AzureInformationProtection incluye todos los cmdlets de Rights Management de la herramienta de protección de RMS. También hay nuevos cmdlets que usan el servicio Azure Information Protection (AIP) para etiquetar. Por ejemplo:
 
 |Cmdlet de etiquetado|Ejemplo de uso|
 |----------------|---------------|
 |[Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus)|Para una carpeta compartida, identifique todos los archivos con una etiqueta específica.|
 |[Set-AIPFileClassification](/powershell/module/azureinformationprotection/set-aipfileclassification)|Para una carpeta compartida, revise el contenido del archivo y, luego, etiquete automáticamente los archivos no etiquetados, según las condiciones que especificó.|
 |[Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel)|Para una carpeta compartida, aplique una etiqueta específica a todos los archivos que no tienen ninguna etiqueta.|
+|[Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipsuthentication)|Etiqueta archivos de forma no interactiva, por ejemplo mediante un script que se ejecuta según una programación.|
+
 
 Para obtener una lista de todos los cmdlets y su ayuda correspondiente, consulte [Módulo AzureInformationProtection](/powershell/module/azureinformationprotection). En una sesión de PowerShell, escriba `Get-Help <cmdlet name> -online` para ver la ayuda más reciente y los idiomas compatibles, además del inglés.  
 
@@ -95,7 +97,7 @@ Debe tener permisos de uso de Rights Management para quitar la protección de ar
 
 Puede conectarse directamente al servicio Azure Rights Management de forma no interactiva para proteger o desproteger archivos.
 
-Debe utilizar una entidad de servicio para conectarse al servicio Azure Rights Management de forma no interactiva, para lo que debe usar el cmdlet `Set-RMSServerAuthentication`. Debe hacerlo para cada sesión de Windows PowerShell que ejecuta cmdlets que se conectan directamente al servicio Azure Rights Management. Antes de ejecutar este cmdlet, debe disponer de estos tres identificadores:
+Debe usar una cuenta de entidad de servicio para conectarse al servicio Azure Rights Management de forma no interactiva, lo que se hace mediante el cmdlet `Set-RMSServerAuthentication`. Debe hacerlo para cada sesión de Windows PowerShell que ejecuta cmdlets que se conectan directamente al servicio Azure Rights Management. Antes de ejecutar este cmdlet, debe disponer de estos tres identificadores:
 
 - BposTenantId
 
@@ -222,7 +224,7 @@ El comando de ejemplo presentará el siguiente aspecto:
 
 Como se muestra en el comando anterior, puede proporcionar los valores con un solo comando, lo que haría en un script para que se ejecute de manera no interactiva. Pero para realizar una prueba, puede escribir Set-RMSServerAuthentication y proporcionar los valores uno a uno cuando se le pida. Cuando finalice la ejecución del comando, el cliente funcionará en "modo de servidor", lo que es adecuado para el uso no interactivo, como los scripts y la infraestructura de clasificación de archivos de Windows Server.
 
-Considere la posibilidad de establecer la entidad de servicio como superusuario: para asegurarse de que esta entidad de servicio siempre pueda desproteger los archivos para otros usuarios, se puede configurar como superusuario. Del mismo modo que configura una cuenta de usuario estándar como superusuario, use el mismo cmdlet de Azure RMS, [Add-AadrmSuperUser](/powershell/aadrm/vlatest/Add-AadrmSuperUser.md), pero especifique el parámetro **ServicePrincipalId** con el valor de AppPrincipalId.
+Considere la posibilidad de convertir esta cuenta de entidad de servicio en un superusuario: para asegurarse de que esta cuenta de entidad de servicio siempre pueda desproteger los archivos de otros usuarios, se puede configurar como superusuario. Del mismo modo que configura una cuenta de usuario estándar como superusuario, use el mismo cmdlet de Azure RMS, [Add-AadrmSuperUser](/powershell/aadrm/vlatest/Add-AadrmSuperUser.md), pero especifique el parámetro **ServicePrincipalId** con el valor de AppPrincipalId.
 
 Para más información, vea [Configuración de superusuarios para Azure Rights Management y los servicios de detección o la recuperación de datos](../deploy-use/configure-super-users.md).
 
@@ -259,7 +261,7 @@ Resulta más eficaz utilizar etiquetas para clasificar y proteger archivos, porq
 
 Sin embargo, para proteger o desproteger archivos conectándose directamente al servicio Azure Rights Management, normalmente debe ejecutar una serie de cmdlets como se describe a continuación.
 
-En primer lugar, si necesita autenticarse en el servicio Azure Rights Management con una entidad de servicio en lugar de utilizar su propia cuenta, en una sesión de PowerShell, escriba:
+En primer lugar, si necesita autenticarse en el servicio Azure Rights Management con una cuenta de entidad de servicio en lugar de usar su propia cuenta, en una sesión de PowerShell, escriba:
 
     Set-RMSServerAuthentication
 
@@ -340,7 +342,7 @@ Lea esta sección antes de empezar a utilizar los comandos de PowerShell para pr
 
 ### <a name="prerequisites"></a>Requisitos previos
 
-Además de los requisitos previos para instalar el módulo AzureInformationProtection, su cuenta debe tener permisos de lectura y ejecución para acceder a ServerCertification.asmx:
+Además de los requisitos previos para instalar el módulo AzureInformationProtection, la cuenta usada para proteger o desproteger archivos debe tener permisos de lectura y ejecución para acceder a ServerCertification.asmx:
 
 1. Inicie sesión en un servidor de AD RMS.
 
@@ -356,7 +358,9 @@ Además de los requisitos previos para instalar el módulo AzureInformationProte
 
 7. En el cuadro de diálogo **Permissions for ServerCertification.asmx** (Permisos para ServerCertification.asmx), haga clic en **Agregar**. 
 
-8. Agregue el nombre de cuenta. Si otros administradores de AD RMS también van a usar estos cmdlets para proteger y desproteger archivos, agregue también sus nombres.
+8. Agregue el nombre de cuenta. Si otras cuentas de administradores de AD RMS o de servicio también van a usar estos cmdlets para proteger y desproteger archivos, agregue también esas cuentas. 
+    
+    Para proteger o desproteger archivos de forma no interactiva, agregue las cuentas de equipo pertinentes. Por ejemplo, agregue la cuenta de equipo del equipo de Windows Server que esté configurado para la infraestructura de clasificación de archivos y vaya a usar un script de PowerShell para proteger archivos. Este escenario necesita la versión preliminar actual del cliente de Azure Information Protection.
 
 9. En la columna **Permitir**, asegúrese de que las casillas **Leer y ejecutar** y **Leer** estén activadas.
 
@@ -435,7 +439,7 @@ La salida puede ser parecida a la siguiente:
     --------                              ------
     \\Server1\Documents\Test1.docx        Protected
 
-Para desproteger un archivo, debe tener derechos de propietario o de extracción desde el momento en que se protegió el archivo, o bien debe estar configurado como superusuario para AD RMS. A continuación, use el cmdlet Unprotect. Por ejemplo:
+Para desproteger un archivo, debe tener derechos de uso de propietario o de extracción desde el momento en que se haya protegido el archivo, o bien debe ser superusuario para AD RMS. A continuación, use el cmdlet Unprotect. Por ejemplo:
 
     Unprotect-RMSFile C:\test.docx -InPlace
 
@@ -447,7 +451,7 @@ La salida puede ser parecida a la siguiente:
 
 ## <a name="how-to-label-files-non-interactively-for-azure-information-protection"></a>Cómo etiquetar archivos de manera no interactiva para Azure Information Protection
 
-A partir de la versión 1.8.41.0 del cliente de Azure Information Protection (actualmente en versión preliminar), puede ejecutar los cmdlets de etiquetado de manera no interactiva mediante el cmdlet **Set-AIPAuthentication**.
+Puede ejecutar los cmdlets de etiquetado de forma no interactiva mediante el cmdlet **Set-AIPAuthentication**.
 
 De forma predeterminada, al ejecutar los cmdlets para etiquetado, los comandos se ejecutan en su propio contexto de usuario en una sesión interactiva de PowerShell. Para ejecutarlos de manera desatendida, cree una nueva cuenta de usuario de Azure AD con este fin. Después, en el contexto de ese usuario, ejecute el cmdlet Set-AIPAuthentication para establecer y almacenar las credenciales mediante el uso de un token de acceso de Azure AD. Esta cuenta de usuario se autentica y se arranca después para el servicio Azure Rights Management. La cuenta descarga la directiva de Azure Information Protection, así como las plantillas de Rights Management que utilizan las etiquetas.
 

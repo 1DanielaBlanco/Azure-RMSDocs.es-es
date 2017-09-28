@@ -4,17 +4,17 @@ description: "Cuando se asigna una etiqueta a un documento o a un mensaje de cor
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 09/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: 09e8bfdc9bae9979db6e6bc39457bdcdcf6dabca
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: 0da5df139d98f0468f49e7e3f17cd1cd2358a015
+ms.sourcegitcommit: 76bf1f93b02fd75bead8ccdaaf34da1a6aad571f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/22/2017
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Configuración de una etiqueta para marcas visuales de Azure Information Protection
 
@@ -32,7 +32,7 @@ Más información sobre estos marcadores visuales:
     
     - PowerPoint: las marcas de agua se aplican a la diapositiva patrón, como una imagen de fondo.
     
-    - Se admiten varias líneas de texto cuando se usa la versión de vista previa actual del cliente de Azure Information Protection.
+    - Se admiten varias líneas de texto.
 
 - Puede especificar solo una cadena de texto o usar [variables](#using-variables-in-the-text-string) para crear dinámicamente la cadena de texto cuando se aplica el encabezado, el pie de página o la marca de agua.
 
@@ -44,17 +44,9 @@ En los mensajes de correo electrónico, los distintivos visuales se aplican cuan
 
 Para los documentos, los distintivos visuales se aplican de la siguiente manera:
 
-- **Para la versión de disponibilidad general** del cliente de Azure Information Protection: 
-    
-    - En una aplicación de Office, los distintivos visuales de una etiqueta se aplican cuando la etiqueta se aplica y siempre que se guarda el documento. 
-    
-    - Cuando un documento se etiqueta mediante el Explorador de archivos o PowerShell, los distintivos visuales no se aplican inmediatamente, sino cuando ese documento se abre en una aplicación de Office y cada vez que se guarda el documento.
+- En una aplicación de Office, los distintivos visuales de una etiqueta se aplican cuando la etiqueta se aplica. Los distintivos visuales también se aplican cuando se abre un documento etiquetado y el documento se guardó por primera vez.  
 
-- **Para la versión de vista previa actual** del cliente de Azure Information Protection: 
-    
-    - En una aplicación de Office, los distintivos visuales de una etiqueta se aplican cuando la etiqueta se aplica. Los distintivos visuales también se aplican cuando se abre un documento etiquetado y el documento se guardó por primera vez.  
-    
-    - Cuando un documento se etiqueta mediante el Explorador de archivos o PowerShell, los distintivos visuales no se aplican inmediatamente, sino cuando ese documento se abre en una aplicación de Office y el documento se guardó por primera vez.
+- Cuando un documento se etiqueta mediante el Explorador de archivos o PowerShell, los distintivos visuales no se aplican inmediatamente, sino cuando ese documento se abre en una aplicación de Office y el documento se guardó por primera vez.
 
 ## <a name="to-configure-visual-markings-for-a-label"></a>Para configurar distintivos visuales para una etiqueta
 
@@ -69,12 +61,12 @@ Utilice las siguientes instrucciones para configurar las marcas visuales para un
     Si la etiqueta que quiere configurar se encuentra en una [directiva con ámbito](configure-policy-scope.md) para que se aplique únicamente a los usuarios seleccionados, en la selección del menú **DIRECTIVAS**, seleccione **Directivas con ámbito**. Después, seleccione la directiva con ámbito en la hoja **Azure Information Protection - Scoped policies** (Azure Information Protection: directivas con ámbito).
 
 3. En la hoja **Etiqueta**, en la sección **Set visual marking (such as header or footer)** (Establecer marcas visuales [como encabezado y pie de página]), configure los marcadores visuales que quiera y luego haga clic en **Guardar**:
-
-    - Para configurar un encabezado: en **Documents with this label have a header** (Los documentos con esta etiqueta tienen un encabezado), seleccione **On** (Activado) si quiere un encabezado y **Off** (Desactivado) si no. Si selecciona **On** (Desactivado), especifique el texto, el tamaño, el color y la alineación del encabezado.
-
-    - Para configurar un pie de página: en **Documents with this label have a footer** (Los documentos con esta etiqueta tienen un pie de página), seleccione **On** (Activado) si quiere un pie de página y **Off** (Desactivado) si no. Si selecciona **On** (Activado), especifique el texto, el tamaño, el color y la alineación del pie de página del encabezado.
-
-    - Para configurar una marca de agua: en **Documents with this label have a watermark** (Los documentos con esta etiqueta tienen una marca de agua), seleccione **On** (Activado) si quiere una marca de agua y **Off** (Desactivado) si no. Si selecciona **On** (Activado), especifique el texto, el tamaño, el color y el diseño de la marca de agua del encabezado.
+    
+    - Para configurar un encabezado: en **Documents with this label have a header** (Los documentos con esta etiqueta tienen un encabezado), seleccione **On** (Activado) si quiere un encabezado y **Off** (Desactivado) si no. Si selecciona **Activado**, especifique el texto, el tamaño, la [fuente](#setting-the-font-name), el [color](#setting-the-font-color) y la alineación del encabezado.
+    
+    - Para configurar un pie de página: en **Documents with this label have a footer** (Los documentos con esta etiqueta tienen un pie de página), seleccione **On** (Activado) si quiere un pie de página y **Off** (Desactivado) si no. Si selecciona **Activado**, especifique el texto, el tamaño, la [fuente](#setting-the-font-name), el [color](#setting-the-font-color) y la alineación del pie de página.
+    
+    - Para configurar una marca de agua: en **Documents with this label have a watermark** (Los documentos con esta etiqueta tienen una marca de agua), seleccione **On** (Activado) si quiere una marca de agua y **Off** (Desactivado) si no. Si selecciona **Activado**, especifique el texto, el tamaño, la [fuente](#setting-the-font-name), el [color](#setting-the-font-color) y la alineación de la marca de agua.
 
 4. Para que los cambios estén disponibles para los usuarios, en la hoja **Azure Information Protection**, haga clic en **Publicar**.
 
@@ -95,6 +87,18 @@ Puede usar las siguientes variables en la cadena de texto del encabezado, del pi
 - `${Event.DateTime}` para la fecha y hora en que se haya configurado la etiqueta seleccionada. Por ejemplo: 16/08/2016 13:30
 
 Ejemplo: Si especifica la cadena `Document: ${item.name}  Classification: ${item.label}` en el pie de página de la etiqueta **General**, el texto de pie de página aplicado a un documento denominado proyecto.docx será **Documento: proyecto.docx Clasificación: general**.
+
+### <a name="setting-the-font-name"></a>Establecimiento del nombre de fuente
+
+Este valor está actualmente en versión preliminar.
+
+Calibri es la fuente predeterminada para el texto de encabezados, pies de página y marcas de agua. Si especifica un nombre de fuente alternativo, asegúrese de que esté disponible en los dispositivos cliente que vayan a aplicar los marcadores visuales. En caso contrario, la fuente que se use será no determinista. 
+
+### <a name="setting-the-font-color"></a>Establecimiento del color de fuente
+
+Puede elegir en la lista de colores disponibles o especificar un color personalizado al escribir un código hexadecimal triple para los componentes rojo, verde y azul (RGB) del color. Por ejemplo, **#DAA520**. 
+
+Si necesita una referencia para estos códigos, [Colors by Name](https://msdn.microsoft.com/library/aa358802\(v=vs.85) (Colores por nombre), en la documentación de MSDN, es un punto de partida útil. También encontrará estos códigos en muchas aplicaciones que permiten editar imágenes. Por ejemplo, Microsoft Paint permite elegir un color personalizado de una paleta y los valores RGB se muestran automáticamente, lo que permite copiarlos.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

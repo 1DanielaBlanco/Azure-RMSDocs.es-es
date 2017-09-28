@@ -4,7 +4,7 @@ description: "Información para ayudarle a ofrecer instrucciones a los usuarios,
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/02/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 192f4ade987e9f9f88f5f30bb17c70e113569002
-ms.sourcegitcommit: 8b6fc2201d99d72ee9bb43bb73356040893eceeb
+ms.openlocfilehash: d4ce0ea6a3c04c5ca52dae1750e48d5618eeef76
+ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2017
+ms.lasthandoff: 09/18/2017
 ---
 # <a name="helping-users-to-protect-files-by-using-the-azure-rights-management-service"></a>Ayuda a los usuarios para proteger archivos mediante el servicio Azure Rights Management
 
@@ -41,9 +41,9 @@ Después de implementar y configurar Azure Information Protection para su organi
     
 -   **Información del departamento de soporte técnico**
     
-    Si los usuarios tienen el cliente de Azure Information Protection, los operadores del departamento de soporte técnico pueden pedirles que usen la opción **Ejecutar diagnósticos** de **Ayuda y comentarios** y que restablezcan el cliente. Sin embargo, el restablecimiento no cierra la sesión del usuario ni reinicia el cliente y no hay ninguna corrección automática.
+    Si los usuarios tienen el cliente de Azure Information Protection, los operadores del departamento de soporte técnico pueden pedirles que usen la opción **Ayuda y comentarios** para obtener información como, por ejemplo, si la edición de Office no puede admitir la protección, y la cuenta de usuario que tiene iniciada la sesión en ese momento. También puede usar esta opción para recopilar archivos de registro y restablecer el cliente. Para más información, vea la guía para administradores: [Comprobaciones adicionales y solución de problemas](../rms-client/client-admin-guide.md#additional-checks-and-troubleshooting).
     
-    Si hay solicitudes legítimas para tener derechos completos de acceso a documentos protegidos, asegúrese de que el servicio de asistencia tenga procesos para solicitar este acceso con la [característica de superusuario](configure-super-users.md) de Azure Rights Management. Por ejemplo, estas solicitudes podrían provenir del departamento legal o de un administrador después de que un empleado haya dejado la organización. 
+    Si hay solicitudes legítimas para tener derechos completos de acceso a documentos protegidos, asegúrese de que el servicio de asistencia tenga procesos para solicitar este acceso con la [característica de superusuario](configure-super-users.md) de Azure Rights Management. Por ejemplo, estas solicitudes podrían provenir del departamento legal o de un administrador después de que un empleado haya dejado la organización.
     
     Además, algunos de los problemas típicos que podrían notificar los usuarios incluyen las categorías siguientes:
     
