@@ -5,7 +5,7 @@ keywords:
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/23/2017
+ms.date: 09/18/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,11 +13,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4e59a3b3-f0f4-4535-8b96-cac68303d855
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c9964e013d24bb1f42acb5f1e7a180d2a85a8576
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 6d62b6dd588b035ded582a87f5faf04a04df6ab6
+ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 09/18/2017
 ---
 # <a name="step-5-see-sharing-of-protected-files-in-action-and-track-your-document"></a>Paso 5: ver el funcionamiento del uso compartido de archivos protegidos y realizar un seguimiento del documento 
 
@@ -39,9 +39,11 @@ A continuación, estará listo para compartir de forma segura este documento por
 
     Con esta configuración, los destinatarios podrán ver el documento pero no editarlo ni imprimirlo.
 
-4. Para **Seleccionar usuarios**, escriba una o varias direcciones de correo electrónico empresarial, como lo haría cuando envía un documento a alguien con el que su organización trabaja. Asegúrese de especificar una dirección de correo electrónico empresarial, como **janetm@contoso.com** o **p.dover@fabrikam.com** porque, actualmente, Azure Information Protection no es compatible con las direcciones de correo electrónico personales. 
+4. Para **Seleccionar usuarios**, escriba una o varias direcciones de correo electrónico empresarial, como lo haría cuando envía un documento a alguien con el que su organización trabaja. Para especificar más de una dirección, use un punto y coma o presione Entrar. 
 
-    Como alternativa, haga clic en la libreta de direcciones para seleccionar la dirección de correo electrónico de un compañero de trabajo:
+    Asegúrese de especificar una dirección de correo electrónico empresarial, como **janetm@contoso.com** o **p.dover@fabrikam.com**, ya que de momento Azure Information Protection no admite direcciones de correo electrónico personales para este escenario. 
+
+    También puede hacer clic en el icono **Seleccionar usuarios, grupos u organización** para seleccionar la dirección de correo electrónico de un compañero de trabajo:
 
     ![Paso 5 del tutorial de inicio rápido de Azure Information Protection: protección con permisos personalizados](../media/protect-custom-permissions.png)  
     
@@ -93,7 +95,7 @@ Ahora que el destinatario ha abierto el archivo adjunto y lo ha reenviado de for
 
 2.  En la pestaña **Inicio**, haga clic en **Proteger** > **Realizar un seguimiento y revocar**:
 
-    ![Opción realizar seguimiento](../media/track-usage-calloutv2.png)
+    ![Opción realizar seguimiento](../media/track-usage-calloutv3.png)
 
     Esto le lleva al sitio de seguimiento de documentos.
 

@@ -4,7 +4,7 @@ description: "Instrucciones e información para administradores de una red empre
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: f07d39e5110ae9bfb58a81585a042e8afdbbc639
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: 6786ffde8d9903ee5c9d553159710052a6d5e7a2
+ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/18/2017
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Guía para administradores del cliente de Azure Information Protection
 
@@ -269,22 +269,9 @@ Use el vínculo **Envíenos sus comentarios** para enviar sugerencias o solicitu
 
 La opción **Exportar registros** se utiliza para recopilar y adjuntar archivos de registro para el cliente de Azure Information Protection si se le ha pedido que los envíe al soporte técnico de Microsoft. Los usuarios finales también puede utilizar esta opción para enviar estos archivos de registro a su departamento de soporte técnico.
 
-Para información de diagnóstico y restablecer el cliente, seleccione **Ejecutar diagnósticos**. Al finalizar las pruebas de los diagnósticos, haga clic en **Copiar resultados** para pegar la información en un correo electrónico que puede enviar al soporte técnico de Microsoft; asimismo, los usuarios finales pueden enviarla a su departamento de soporte técnico. Cuando finalicen las pruebas, también puede restablecer al cliente.
+La opción **Restablecer configuración** cierra la sesión del usuario, elimina la directiva de Azure Information Protection descargada y restablece la configuración del usuario para el servicio Azure Rights Management.
 
-> [!NOTE]
-> En la versión preliminar del cliente, se quitó la opción **Ejecutar diagnóstico** y se reemplazó por **Restablecer configuración**. Además, el comportamiento de esta opción ha [cambiado](#more-information-about-the-reset-option-for-the-current-preview-version-of-the-azure-information-protection-client).
-
-#### <a name="more-information-about-the-reset-option-for-the-general-availability-ga-version-of-the-azure-information-protection-client"></a>Más información acerca de la opción de restablecimiento de la versión de disponibilidad general (GA) del cliente de Azure Information Protection
-
-- No tiene que ser un administrador local para usar esta opción, y esta acción no se registra en el Visor de eventos. 
-
-- A menos que los archivos estén bloqueados, esta acción elimina todos los archivos de **%LocalAppData%\Microsoft\MSIPC**, que es donde se almacenan los certificados de cliente y las plantillas de Rights Management. No se elimina la directiva de Azure Information Protection, ni los archivos de registro de cliente, ni se cierra la sesión del usuario.
-
-- La clave de registro y las configuraciones siguientes se eliminan: **HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC**. Si ha establecido la configuración de esta clave del Registro, tiene que volver a configurarla después de restablecer el cliente. Por ejemplo, ha establecido la configuración de redireccionamiento para el inquilino de Azure Information Protection porque ya está migrando de AD RMS y aún tiene un punto de conexión de servicio en la red.
-
-- Después de restablecer el cliente, debe volver a inicializar el entorno de usuario, con lo cual se descargarán los certificados para el cliente y las plantillas más recientes. Para ello, cierre todas las instancias de Office y, después, reinicie una aplicación de Office. Esta acción también comprueba que haya descargado la directiva de Azure Information Protection más reciente. No vuelva a ejecutar las pruebas de diagnóstico hasta que haya realizado esta acción.
-
-#### <a name="more-information-about-the-reset-option-for-the-current-preview-version-of-the-azure-information-protection-client"></a>Más información acerca de la opción de restablecimiento de la versión preliminar actual del cliente de Azure Information Protection
+#### <a name="more-information-about-the-reset-settings-option"></a>Más información sobre la opción Restablecer configuración
 
 - No tiene que ser un administrador local para usar esta opción, y esta acción no se registra en el Visor de eventos. 
 

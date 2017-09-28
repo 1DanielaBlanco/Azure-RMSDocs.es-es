@@ -4,7 +4,7 @@ description: "Instrucciones de cómo clasificar y proteger sus documentos y corr
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/04/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 5e8329a441dcc871a155ef1b1484544732bec212
-ms.sourcegitcommit: 23aeb2bcce05968b850313333e359c99dd99a56f
+ms.openlocfilehash: b82904da81b73f0ae7ab5ab758a4cf3a982eb6ee
+ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2017
+ms.lasthandoff: 09/18/2017
 ---
 # <a name="classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Clasificación y protección de archivos o correos electrónicos mediante Azure Information Protection
 
@@ -42,11 +42,14 @@ Si el archivo está protegido con los permisos personalizados, use el mecanismo 
 
 Use la barra de Azure Information Protection y seleccione una de las etiquetas configuradas para usted. 
 
-Por ejemplo, en la siguiente imagen se muestra que el documento aún no se ha etiquetado, porque en **Confidencialidad** aparece **Sin establecer**. Para establecer una etiqueta, como "Interna", haga clic en **Interno**. Si no está seguro de qué etiqueta aplicar en el documento o correo electrónico actual, utilice la información sobre herramientas de etiquetas para obtener más detalles sobre cada etiqueta y cuándo aplicarla.
+Por ejemplo, en la siguiente imagen se muestra que el documento aún no se ha etiquetado, porque en **Confidencialidad** aparece **Sin establecer**. Para establecer una etiqueta, como "General", haga clic en **General**. Si no está seguro de qué etiqueta aplicar en el documento o correo electrónico actual, utilice la información sobre herramientas de etiquetas para obtener más detalles sobre cada etiqueta y cuándo aplicarla. 
 
 ![Ejemplo de barra de Azure Information Protection](../media/info-protect-bar-not-set-callout.png)
 
 Si ya se ha aplicado la etiqueta al documento y desea cambiarla, puede seleccionar una etiqueta diferente. Si las etiquetas no se muestran en la barra, primero haga clic en el icono **Editar etiqueta**, junto al valor de la etiqueta actual.
+
+> [!TIP]
+> También puede seleccionar etiquetas desde el botón **Proteger**, en la pestaña **Archivo**.
 
 Además de seleccionar manualmente las etiquetas, estas también pueden aplicarse como sigue:
 
@@ -83,9 +86,11 @@ Puede especificar su propia configuración de protección para documentos en lug
     - **Proteger con permisos personalizados**: Asegúrese de que esta opción está seleccionada para que pueda especificar y aplicar los permisos personalizados. Desactive esta opción para quitar todos los permisos personalizados.
     
     - **Seleccionar permisos**: Si desea proteger el archivo para que solo usted pueda acceder a él, seleccione **Solo para mí**. De lo contrario, seleccione el nivel de acceso que desea que tengan las personas.
-
+    
     - **Seleccionar usuarios, grupos u organizaciones**: Especifique las personas que deben tener los permisos seleccionados para los archivos. Escriba sus direcciones de correo electrónico completas, una dirección de correo electrónico de grupo o un nombre de dominio de la organización para todos los usuarios de esa organización. Tenga en cuenta que actualmente no se admiten direcciones de correo electrónico personales.
         
+        Si tiene la versión preliminar actual del cliente, también puede usar el icono de la libreta de direcciones para seleccionar usuarios o grupos de la libreta de direcciones de Outlook.
+    
     - **Expire access** (Acceso con expiración): seleccione esta opción solo para archivos sujetos a limitación temporal, de modo que las personas que ha especificado no puedan abrir los archivos seleccionados después de una fecha especificada. Aún podrá abrir el archivo original, pero el día seleccionado después de medianoche (su zona horaria actual), las personas que haya especificado no podrán abrir el archivo.
 
 5. Haga clic en **Aplicar** y espere a que aparezca el mensaje **Se han aplicado permisos personalizados**. A continuación, haga clic en **Cerrar**.

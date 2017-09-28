@@ -4,17 +4,17 @@ description: "Identifique las limitaciones, los requisitos previos y las recomen
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/13/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: ef39c5489e63a67e0880e4faab4d9675a49f5f90
-ms.sourcegitcommit: 4e31a4797eb8df64af3ae8932d2b49839e7a4524
+ms.openlocfilehash: cceacbe94983e66bdde6de0947ae59b44e29a54e
+ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 09/18/2017
 ---
 # <a name="hold-your-own-key-hyok-requirements-and-restrictions-for-ad-rms-protection"></a>Requisitos y restricciones de Mantenga su propia clave (HYOK) para la protección de AD RMS
 
@@ -65,13 +65,11 @@ Además de no poder gozar de los beneficios que se obtienen al utilizar la prote
 
     Aunque puede configurar una etiqueta para **No reenviar** para usar HYOK o el servicio Azure Rights Management, los usuarios también pueden seleccionar por sí mismos No reenviar. Pueden seleccionar esta opción mediante el botón **No reenviar** situado en la pestaña **Mensaje** de la cinta de opciones de Office, o mediante las opciones de menú de Outlook. Las opciones de menú **No reenviar** se encuentran en **Archivo** > **Permisos**, y en el botón **Permisos** en la pestaña **Opciones** de la cinta de opciones. 
     
-    Cuando los usuarios seleccionan el botón No reenviar, se puede usar Azure RMS o AD RMS y la opción no es determinista. Cuando los usuarios seleccionan **No reenviar** desde una opción de menú de Outlook, pueden elegir Azure RMS o AD RMS, pero es posible que no sepan qué opción deben seleccionar para el mensaje de correo electrónico. En ambos casos, si se usa AD RMS cuando se debería usar Azure RMS, las personas con las que se comparta contenido de forma externa no podrán abrir estos mensajes de correo electrónico.
+    El cliente de Azure Information Protection siempre usa Azure RMS cuando los usuarios seleccionan el botón **No reenviar** de Outlook. Si no desea este comportamiento, puede ocultar el botón **No reenviar** en Outlook mediante la configuración de una [configuración de cliente avanzada](../rms-client/client-admin-guide-customizations.md#hide-the-do-not-forward-button-in-outlook). 
     
-    La versión preliminar actual del cliente de Azure Information Protection siempre usa Azure RMS cuando los usuarios seleccionan el botón **No reenviar** de Outlook. Si no desea este comportamiento, puede ocultar el botón **No reenviar** en Outlook mediante la configuración de una [configuración de cliente avanzada](../rms-client/client-admin-guide-customizations.md#hide-the-do-not-forward-button-in-outlook). 
+    Cuando los usuarios seleccionan **No reenviar** desde una opción de menú de Outlook, pueden elegir Azure RMS o AD RMS, pero es posible que no sepan qué opción deben seleccionar para el mensaje de correo electrónico. Si se usa AD RMS cuando se debería usar Azure RMS, los usuarios con los que se comparta de forma externa no podrán abrir estos mensajes de correo electrónico.
 
-- Para la versión de disponibilidad general actual del cliente de Azure Information Protection: si los usuarios configuran permisos personalizados al usar la protección de AD RMS (HYOK) y la protección de Azure RMS, el documento o el correo electrónico siempre estará protegido por Azure Rights Management. Esta limitación no se aplica a la versión preliminar actual del cliente.
-
-- Si configura permisos definidos por el usuario para Word, Excel, PowerPoint y el Explorador de archivos (lo que se admite con la versión preliminar actual del cliente de Azure Information Protection): en el Explorador de archivos, la protección siempre se aplica mediante Azure RMS, en lugar de la protección de HYOK (AD RMS). 
+- Si configura permisos definidos por el usuario para Word, Excel, PowerPoint y el Explorador de archivos: en el Explorador de archivos, la protección siempre se aplica mediante Azure RMS en lugar de la protección de HYOK (AD RMS). Esta limitación no se aplica a la versión preliminar actual del cliente.
 
 - Si los usuarios eligen una etiqueta en Outlook que aplica la protección de AD RMS y, antes de enviar el correo electrónico, cambian de opinión y seleccionan una etiqueta que aplica la protección de Azure RMS, no se podrá aplicar la etiqueta recién seleccionada. Aparece el siguiente mensaje de error: **Azure Information Protection no puede aplicar esta etiqueta. No tiene permiso para realizar esta acción.**
     

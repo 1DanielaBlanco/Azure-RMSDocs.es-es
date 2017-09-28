@@ -4,7 +4,7 @@ description: "Detalles técnicos sobre tipos de archivos, extensiones de nombres
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/19/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 219f39913261d22709238ee5393e8cc8080070f5
-ms.sourcegitcommit: 52ad844cd42479a56b1ae0e56ba0614f088d8a1a
+ms.openlocfilehash: 9db73573eb6ccb6ab5f09d926e395a31f94404ea
+ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2017
+ms.lasthandoff: 09/18/2017
 ---
 # <a name="file-types-supported-by-the-azure-information-protection-client"></a>Tipos de archivos compatibles con el cliente de Azure Information Protection
 
@@ -81,11 +81,7 @@ Hay tamaños de archivo máximos que el cliente de Azure Information Protection 
     |Excel 2007 (solo compatible con AD RMS)<br /><br />Excel 2010<br /><br />Excel 2013<br /><br />Excel 2016|32 bits: 2 GB<br /><br />64 bits: solo limitado por el espacio disponible en disco y la memoria|
     |PowerPoint 2007 (solo compatible con AD RMS)<br /><br />PowerPoint 2010<br /><br />PowerPoint 2013<br /><br />PowerPoint 2016|32 bits: solo limitado por el espacio disponible en disco y la memoria<br /><br />64 bits: solo limitado por el espacio disponible en disco y la memoria
 
-- **Para todos los demás archivos**:
-    
-    - Para la versión de disponibilidad general del cliente: 1 GB
-    
-    - Para el cliente de versión preliminar (versión mínima de **1.8.41.0**): limitado únicamente por la memoria y el espacio en disco disponible
+- **Para todos los demás archivos**: solo limitado por el espacio disponible en disco y la memoria.
 
 ### <a name="supported-file-types-for-classification-and-protection"></a>Tipos de archivos compatibles para protección y clasificación
 

@@ -4,7 +4,7 @@ description: "Configure y administre plantillas de administración de derechos d
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/12/2017
+ms.date: 09/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,18 +12,18 @@ ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 1094c0a711b3691b8186baafc06d1fb72daf5613
-ms.sourcegitcommit: 94a9b6714c555b95f6064088e77ed94f08224a15
+ms.openlocfilehash: c27f239467bf546479827c7ca215a8892553e9c0
+ms.sourcegitcommit: 76bf1f93b02fd75bead8ccdaaf34da1a6aad571f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 09/22/2017
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>Configuración y administración de plantillas para Azure Information Protection
 
 >*Se aplica a: Azure Information Protection*
 
 >[!NOTE]
->Esta funcionalidad reemplaza la configuración de plantillas personalizadas en el Portal de Azure clásico.
+>Esta funcionalidad reemplaza la configuración de plantillas personalizadas en el Portal de Azure clásico. Para una asignación de procedimientos rápida, vea [Tareas que solía realizar con el Portal de Azure clásico](migrate-portal.md).
 >
 >Aunque todavía se pueden crear y administrar plantillas en el Portal de Azure clásico, no se recomienda administrar las mismas plantillas desde el Portal de Azure clásico y Azure Portal. La implementación para configurar plantillas en estos portales ha cambiado, por lo que si configura la misma plantilla en portales diferentes puede producirse una configuración no confiable.
 
@@ -109,8 +109,7 @@ Antes de editar estas plantillas o convertirlas en etiquetas, asegúrese de que 
 
 ## <a name="to-configure-the-templates-in-the-azure-information-protection-policy"></a>Para configurar las plantillas en la directiva de Azure Information Protection
 
-1. Si aún no lo ha hecho, abra una nueva ventana del explorador e inicie sesión en [Azure Portal](https://portal.azure.com) como administrador de seguridad o administrador global. Después, vaya a la hoja **Azure Information Protection**. 
-    
+1. Si aún no lo ha hecho, abra una nueva ventana del explorador e inicie sesión en [Azure Portal](https://portal.azure.com) como administrador de seguridad o administrador global. Después, vaya a la hoja **Azure Information Protection**.     
     Por ejemplo, en el menú del centro, haga clic en **Más servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
 2. Si la plantilla que quiere configurar es para todos los usuarios, quédese en la hoja **Azure Information Protection - Global policy** (Azure Information Protection: directiva global).
@@ -119,11 +118,11 @@ Antes de editar estas plantillas o convertirlas en etiquetas, asegúrese de que 
 
 3. En la hoja **Azure Information Protection - Global policy** (Azure Information Protection: directiva global) o la hoja **Directiva:\<nombre>**, busque la plantilla que quiere configurar:
     
-    - Cuando tenga una suscripción que incluya clasificación, etiquetado y protección: expanda **Plantillas** o **Plantillas de protección** después de las etiquetas.
+    - Si tiene una suscripción que incluye clasificación, etiquetado y protección: expanda **Plantillas de protección** después de las etiquetas.
     
     - Cuando tiene una suscripción que incluye solo protección: las plantillas se muestran como etiquetas.
 
-4. Seleccione la plantilla y, en la hoja **Etiqueta**, puede cambiar el nombre y la descripción de la plantilla si es necesario. Para ello, edite el **nombre de la etiqueta** y la **descripción**. Luego, seleccione la **protección** con un valor de **Azure RMS** o **Azure (clave en la nube)** para abrir la hoja **Protección**.
+4. Seleccione la plantilla y, en la hoja **Etiqueta**, puede cambiar el nombre y la descripción de la plantilla si es necesario. Para ello, edite el **nombre de la etiqueta** y la **descripción**. Luego, seleccione la **protección** con un valor de **Azure (clave en la nube)** para abrir la hoja **Protección**.
 
 5. En la hoja **Protección**, puede cambiar los permisos, la expiración del contenido y la configuración de acceso sin conexión. Para más información sobre cómo configurar los valores de protección, consulte [Configuración de una etiqueta para la protección de Rights Management](configure-policy-protection.md)
     
