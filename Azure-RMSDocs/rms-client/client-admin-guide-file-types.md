@@ -4,7 +4,7 @@ description: "Detalles técnicos sobre tipos de archivos, extensiones de nombres
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/18/2017
+ms.date: 10/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9db73573eb6ccb6ab5f09d926e395a31f94404ea
-ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
+ms.openlocfilehash: 5a3d13861e3eff0cfaf4a92eb005b8192f2b447c
+ms.sourcegitcommit: 4d730631ea8c16c7150b794722bb23921f1b2008
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="file-types-supported-by-the-azure-information-protection-client"></a>Tipos de archivos compatibles con el cliente de Azure Information Protection
 
@@ -176,6 +176,22 @@ Para ayudar a impedir que los usuarios modifiquen los archivos que son fundament
     - Archivos de programa (\Archivos de programa y \Archivos de programa (x86))
     - \ProgramData 
     - \AppData (de todos los usuarios)
+
+### <a name="files-that-cannot-be-protected-by-default"></a>Archivos que no se puede proteger de forma predeterminada
+
+El cliente de Azure Information Protection no puede proteger de forma nativa los archivos que estén protegidos por contraseña. Los archivos protegidos con contraseña más frecuentes son PDF, pero hay otras aplicaciones, como las de Office, que también ofrecen esta funcionalidad.
+
+Además, el cliente de Azure Information Protection para Windows no puede proteger de forma nativa (ni desproteger) archivos PDF en ninguna de estas circunstancias:
+
+- Un archivo PDF basado en formulario.
+
+- Un archivo PDF protegido con una extensión de nombre de archivo .pdf. 
+    
+    El cliente de Azure Information Protection puede proteger un archivo PDF no protegido y volver a proteger un archivo PDF protegido que tenga la extensión de nombre de archivo .ppdf.
+
+Como solución alternativa para estos archivos, puede protegerlos de forma genérica si sigue las instrucciones de la sección [Cambio del nivel de protección predeterminado de los archivos](#changing-the-default-protection-level-of-files). Con todo, este método cambia el nivel de protección de todos los archivos con una extensión de nombre de archivo .pdf en el nivel del equipo. No puede definir una protección genérica únicamente para los archivos que coincidan con los criterios mostrados.
+
+Si la protección de estos archivos es importante, podría copiarlos temporalmente en otro equipo para protegerlos de forma genérica y, después, copiarlos de nuevo.
 
 
 ## <a name="next-steps"></a>Pasos siguientes
