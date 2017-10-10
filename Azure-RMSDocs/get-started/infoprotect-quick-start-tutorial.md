@@ -10,11 +10,11 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
-ms.openlocfilehash: 34a20c3e83b2d3d6fde15d1226535ccb90431126
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: c851eb1ecf1551caee1ab2a6aac6f05c550cb96b
+ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="quick-start-tutorial-for-azure-information-protection"></a>Tutorial de inicio rápido de Azure Information Protection 
 
@@ -36,7 +36,7 @@ Para completar este tutorial, necesita lo siguiente:
   > [!TIP] 
   > Si necesita solicitar una suscripción, hágalo con anticipación porque el proceso puede tardar varios minutos en completarse.
 
-- Una cuenta de administrador global o una cuenta de administrador de seguridad para iniciar sesión en Azure Portal para configurar la directiva de Azure Information Protection. Esta cuenta también debe tener una dirección de correo electrónico y un servicio de correo electrónico de trabajo (como Exchange Online).
+- Una cuenta de administrador global o una cuenta de administrador de seguridad para iniciar sesión en Azure Portal para activar la protección y configurar la directiva de Azure Information Protection. Esta cuenta también debe tener una dirección de correo electrónico y un servicio de correo electrónico de trabajo (como Exchange Online).
 
 - Equipo con Windows (como mínimo Windows 7 con Service Pack 1) que tenga instalado Office 365 ProPlus con aplicaciones de 2016 o 2013, Office Professional Plus 2016, Office Professional Plus 2013 con Service Pack 1 u Office Professional Plus 2010 con Service Pack 2. 
     

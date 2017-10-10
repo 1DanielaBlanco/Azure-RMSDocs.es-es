@@ -4,7 +4,7 @@ description: "Cuando usa el servicio Azure Rights Management, se descargan de fo
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 09/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a9a4e01bd23f7f6107b4021cc792839cf38ee3b5
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: 9a5feea87df01507520da6a118372de0f6364452
+ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="refreshing-templates-for-users-and-services"></a>Actualización de plantillas para usuarios y servicios
 
@@ -26,7 +26,7 @@ Cuando usa el servicio Azure Rights Management de Azure Information Protection, 
 
 |Aplicación o servicio|Cómo se actualizan las plantillas tras los cambios|
 |--------------------------|---------------------------------------------|
-|Exchange Online<br /><br />Se aplica a reglas de transporte, reglas DLP y Outlook Web App|Configuración manual precisa para actualizar plantillas.<br /><br />En los pasos de configuración, consulte la sección siguiente, [Solamente Exchange Online: Cómo configurar Exchange para descargar las plantillas personalizadas que se han cambiado](#exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates).|
+|Exchange Online<br /><br />Se aplica a reglas de transporte y Outlook Web App |Se actualiza automáticamente en una hora, no hay que seguir más pasos.<br /><br />Este es el caso si usa el [cifrado de mensajes de Office 365 con nuevas capacidades](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e). Si previamente ha configurado Exchange Online para que use el servicio Azure Rights Management y, para ello, ha importado su dominio de publicación de confianza (TPD), use el mismo conjunto de instrucciones para habilitar las nuevas capacidades en Exchange Online.|
 |Cliente de Azure Information Protection|Se actualiza automáticamente cada vez que la directiva de Azure Information Protection se actualiza en el cliente:<br /><br /> - Cuando se abre una aplicación de Office que admite la barra de Azure Information Protection. <br /><br /> - Cuando hace clic con el botón derecho para clasificar y proteger un archivo o carpeta. <br /><br /> - Cuando ejecuta cmdlets de PowerShell para etiquetado y protección (Get-AIPFileStatus y Set-AIPFileLabel).<br /><br /> - Cada 24 horas.<br /><br /> Además, dado que el cliente de Azure Information Protection está estrechamente integrado con Office, cualquier plantillas actualizada para Office 2016 u Office 2013 también se actualizará para el cliente de Azure Information Protection.|
 |Office 2016 y Office 2013<br /><br />Aplicaciones de uso compartido de RMS para Windows|Actualización automática: programada:<br /><br />- Para estas versiones posteriores de Office: el intervalo de actualización predeterminado es cada 7 días.<br /><br />- Para la aplicación RMS sharing para Windows: a partir de la versión 1.0.1784.0, el intervalo de actualización predeterminado es cada día. Las versiones anteriores tienen un intervalo de actualización predeterminado de 7 días.<br /><br />Para exigir una actualización antes de esta programación, consulte la sección [Office 2016, Office 2013 y la aplicación RMS sharing para Windows: Cómo forzar una actualización de una plantilla personalizada que se ha cambiado](#office-2016--office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template).|
 |Office 2010|Se actualiza automáticamente cuando los usuarios cierran la sesión de Windows, vuelven a iniciarla y esperan hasta 1 hora.|
@@ -35,67 +35,6 @@ Cuando usa el servicio Azure Rights Management de Azure Information Protection, 
 |Aplicación RMS sharing para equipos Mac|Actualización automática: no se requieren pasos adicionales.|
 
 Cuando las aplicaciones cliente deben descargar plantillas (inicialmente o con actualización para los cambios), prepárese para esperar hasta 15 minutos antes de que se complete la descarga y que las plantillas nuevas o actualizadas estén completamente operativas. El tiempo real dependerá de factores como el tamaño y la complejidad de la configuración de la plantilla y la conectividad de red. 
-
-## <a name="exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates"></a>Solamente Exchange Online: Cómo configurar Exchange para descargar las plantillas personalizadas que se han cambiado
-Si ya has configurado Information Rights Management (IRM) para Exchange Online, no se descargarán plantillas personalizadas para usuarios hasta que realices los cambios siguientes mediante Windows PowerShell en Exchange Online.
-
-> [!NOTE]
-> Para más información sobre cómo usar Windows PowerShell en Exchange Online, consulte [Usar PowerShell con Exchange Online](https://technet.microsoft.com/library/jj200677%28v=exchg.160%29.aspx).
-
-Debes efectuar este procedimiento cada vez que cambies una plantilla.
-
-### <a name="to-update-templates-for-exchange-online"></a>Para actualizar plantillas para Exchange Online
-
-1.  Conéctese al servicio mediante Windows PowerShell en Exchange Online:
-
-    1.  Especifique el nombre de usuario y la contraseña de Office 365:
-
-        ```
-        $UserCredential = Get-Credential
-        ```
-
-    2.  Conecte con el servicio Exchange Online mediante la ejecución de los dos comandos siguientes:
-
-        ```
-        $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-        ```
-
-        ```
-        Import-PSSession $Session
-        ```
-
-2.  Use el cmdlet [Import-RMSTrustedPublishingDomain](http://technet.microsoft.com/library/jj200724%28v=exchg.160%29.aspx) para volver a importar el Dominio de publicación de confianza (TPD) desde Azure RMS:
-
-    ```
-    Import-RMSTrustedPublishingDomain -Name "<TPD name>" -RefreshTemplates -RMSOnline
-    ```
-    Por ejemplo, si el nombre del TPD es **RMS Online - 1** (un nombre habitual en muchas organizaciones), escriba: **Import-RMSTrustedPublishingDomain -Name "RMS Online - 1" -RefreshTemplates -RMSOnline**
-
-    > [!NOTE]
-    > Para comprobar el nombre del TPD, puede usar el cmdlet [Get-RMSTrustedPublishingDomain](http://technet.microsoft.com/library/jj200707%28v=exchg.160%29.aspx).
-
-3.  Para confirmar que se han importado correctamente las plantillas, espere unos minutos y después ejecute el cmdlet [Get-RMSTemplate](http://technet.microsoft.com/library/dd297960%28v=exchg.160%29.aspx) y establezca Tipo en Todas. Por ejemplo:
-
-    ```
-    Get-RMSTemplate -TrustedPublishingDomain "RMS Online - 1" -Type All
-    ```
-    > [!TIP]
-    > Es útil conservar una copia de la salida, con el fin de poder copiar fácilmente los nombres de plantilla o los GUID si posteriormente se archiva una plantilla.
-
-4.  Por cada plantilla importada que desea que esté disponible en Outlook Web App, debe usar el cmdlet [Set-RMSTemplate](http://technet.microsoft.com/library/hh529923%28v=exchg.160%29.aspx) y establecer Tipo en Distribuido:
-
-    ```
-    Set-RMSTemplate -Identity "<name  or GUID of the template>" -Type Distributed
-    ```
-    Dado que Outlook Web Access almacena en caché la interfaz de usuario durante las 24 horas, es posible que los usuarios no puedan ver la plantilla nueva hasta un día después.
-
-Además, si archivas una plantilla (personalizada o predeterminada) y usas Exchange Online con Office 365, los usuarios continuarán viendo las plantillas archivadas si usan la aplicación web de Outlook o dispositivos móviles que usen el protocolo Exchange ActiveSync.
-
-Para que los usuarios ya no vean estas plantillas, conéctese al servicio mediante Windows PowerShell en Exchange Online y después use el cmdlet [Set-RMSTemplate](http://technet.microsoft.com/library/hh529923%28v=exchg.160%29.aspx) ejecutando el comando siguiente:
-
-```
-Set-RMSTemplate -Identity "<name or GUID of the template>" -Type Archived
-```
 
 ## <a name="office-2016--office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template"></a>Office 2016, Office 2013 y la aplicación RMS sharing para Windows: Cómo forzar una actualización de una plantilla personalizada que se ha cambiado
 Si modifica el Registro de los equipos que ejecutan Office 2016, Office 2013 o la aplicación Rights Management (RMS) sharing, puede cambiar la programación automática para que las plantillas cambiadas se actualicen en los equipos con más frecuencia que la indicada en sus valores predeterminados. También puede forzar una actualización inmediata eliminando los datos existentes en un valor del Registro.
@@ -142,10 +81,10 @@ Si modifica el Registro de los equipos que ejecutan Office 2016, Office 2013 o l
 
     > 1.  Ejecute el cmdlet [Get-AadrmConfiguration](https://msdn.microsoft.com/library/windowsazure/dn629410.aspx) para Azure RMS. Si aún no ha instalado el módulo de Windows PowerShell para Azure RMS, consulte [Instalación de Windows PowerShell para Azure Rights Management](install-powershell.md).
     > 2.  En la salida, identifique el valor **LicensingIntranetDistributionPointUrl** .
-    > 
+    >
     >     Por ejemplo: **LicensingIntranetDistributionPointUrl   : https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing**
     > 3.  En el valor, quite **https://** y **/_wmcs/licensing** de esta cadena. El valor restante es el FQDN de servicio de Microsoft RMS. En nuestro ejemplo, el FQDN de servicio de Microsoft RMS sería el valor siguiente:
-    > 
+    >
     >     **5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
 
 2.  Elimine la carpeta siguiente y todos los archivos que contenga: **%localappdata%\Microsoft\MSIPC\Templates**

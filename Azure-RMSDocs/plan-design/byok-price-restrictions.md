@@ -4,7 +4,7 @@ description: Conozca las restricciones de uso de claves administradas por el cli
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/07/2017
+ms.date: 09/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 3c8fb56d33c1aa745975254dc9a2134db857b352
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: afc25e638cff4bddc342ed29dee7fab304d67bd7
+ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="byok-pricing-and-restrictions"></a>Precio y restricciones de BYOK
 
@@ -25,9 +25,9 @@ ms.lasthandoff: 08/30/2017
 
 Las organizaciones que tienen una suscripción con Azure Information Protection pueden configurar su inquilino de Azure Information Protection para usar una clave administrada por el cliente (BYOK) y [registrar su uso](../deploy-use/log-analyze-usage.md) sin costo adicional. 
 
-La clave debe almacenarse en Azure Key Vault, que requiere una suscripción de Azure de pago (o de prueba), y debe usar el nivel de servicio Premium de Azure Key Vault para admitir claves protegidas con HSM. El uso de las claves protegidas con HSM en Azure Key Vault conlleva un cargo mensual. Para obtener más información, consulte la [página de precios del Almacén de claves de Azure](https://azure.microsoft.com/en-us/pricing/details/key-vault/).
+La clave debe almacenarse en Azure Key Vault, lo que requiere una suscripción de Azure. Para usar una clave protegida por HSM, debe tener el nivel de servicio Premium de Azure Key Vault. El uso de las claves en el Almacén de claves de Azure conlleva un cargo mensual. Para obtener más información, consulte la [página de precios del Almacén de claves de Azure](https://azure.microsoft.com/en-us/pricing/details/key-vault/).
 
-Si usa Azure Key Vault para la clave de inquilino de Azure Information Protection, se recomienda que use un almacén de claves dedicado para esta clave con una suscripción dedicada, para asegurarse de que solo la use el servicio Azure Rights Management. 
+Si usa Azure Key Vault para la clave de inquilino de Azure Information Protection, se recomienda que use un almacén de claves dedicado para esta clave con una suscripción dedicada. De esta forma se asegura de que solo la usará el servicio Azure Rights Management. 
 
 ## <a name="benefits-of-using-azure-key-vault"></a>Ventajas de usar Azure Key Vault
 
@@ -45,38 +45,17 @@ Otras ventajas de usar Azure Key Vault para la clave de inquilino de Azure Infor
 
 Además de la administración de claves, Azure Key Vault ofrece a los administradores de seguridad la misma experiencia de administración para el almacenamiento, el acceso y la administración de certificados y secretos (por ejemplo, contraseñas) para otros servicios y aplicaciones que usan cifrado. 
 
-Para obtener más información sobre Azure Key Vault, consulte [¿Qué es el Almacén de claves de Azure?](https://azure.microsoft.com/documentation/articles/key-vault-whatis/) y visite el [blog del equipo de Azure Key Vault](https://blogs.technet.microsoft.com/kv/) para obtener la información más reciente y documentarse sobre cómo usan esta tecnología otros servicios.
-
+Para obtener más información sobre Azure Key Vault, consulte [¿Qué es el Almacén de claves de Azure?](/azure/key-vault/key-vault-whatis) y visite el [blog del equipo de Azure Key Vault](https://blogs.technet.microsoft.com/kv/) para obtener la información más reciente y documentarse sobre cómo usan esta tecnología otros servicios.
 
 ## <a name="restrictions-when-using-byok"></a>Restricciones en el uso de BYOK
 
-BYOK y el registro de uso funcionan perfectamente con todas las aplicaciones que se integran con el servicio Azure Rights Management (Azure RMS) usado por Azure Information Protection. Aquí se incluyen servicios en la nube, como SharePoint Online, servidores locales que ejecutan Exchange y SharePoint y que funcionan con Azure RMS a través del conector RMS y de aplicaciones cliente como Office 2013 y Office 2016. Obtendrá los registros de uso de claves independientemente de la aplicación que realiza solicitudes de Azure RMS.
+BYOK y el registro de uso funcionan perfectamente con todas las aplicaciones que se integran con el servicio Azure Rights Management usado por Azure Information Protection. Aquí se incluyen servicios en la nube, como SharePoint Online, servidores locales que ejecutan Exchange y SharePoint y que usan el servicio Azure Rights Management a través del conector RMS, y aplicaciones cliente como Office 2013 y Office 2016. Obtendrá los registros de uso de claves independientemente de la aplicación que realiza solicitudes al servicio Azure Rigths Management.
 
-Existe una sola excepción: actualmente, **BYOK de Azure RMS no es compatible con Exchange Online**:
-
-![BYOK no es compatible con Exchange Online.](../media/RMS_BYOK_noExchange.png)
-
-Si usa Exchange Online, se recomienda implementar ahora Azure RMS en el modo de administración de claves predeterminado, donde Microsoft genera y administra su clave. Tiene la opción de pasar a BYOK más adelante, por ejemplo, cuando Exchange Online no sea compatible con BYOK de Azure RMS. Sin embargo, si no puede esperar, otra opción es implementar Azure RMS con BYOK ahora, con funcionalidad reducida de RMS para Exchange Online (los correos electrónicos y datos adjuntos desprotegidos permanecen completamente funcionales):
-
--   No se pueden mostrar los mensajes de correo electrónico o los datos adjuntos protegidos en Outlook Web Access.
-
--   No se pueden mostrar los mensajes de correo electrónico en dispositivos móviles que usan Exchange ActiveSync IRM.
-
--   El descifrado de transporte (por ejemplo, para explorar el malware) y el descifrado de diario no son posibles, de modo que los mensajes de correo electrónico y los datos adjuntos protegidos se omitirán.
-
--   Las reglas de protección de transporte y la prevención de pérdida de datos (DLP) que aplican directivas de IRM no son posibles, de modo que no se puede aplicar protección de RMS mediante estos métodos.
-
--   La búsqueda basada en servidor para los mensajes de correo electrónico protegidos no es posible, de modo que estos se omitirán.
-
-Cuando usa BYOK de Azure RMS con funcionalidad reducida de RMS para Exchange Online, RMS funcionará con los clientes de correo electrónico de Outlook en Windows y Mac y en otros clientes de correo electrónico que no usan Exchange ActiveSync IRM.
-
-Si realiza la migración a Azure RMS desde AD RMS, puede que haya importado la clave como un dominio de publicación de confianza (TPD) en Exchange Online (también denominado BYOK en la terminología de Exchange, que es independiente de BYOK del Almacén de claves de Azure). En este escenario, debe quitar el TDP de Exchange Online para evitar conflictos de plantillas y directivas. Para más información, consulte [Remove-RMSTrustedPublishingDomain](https://technet.microsoft.com/library/jj200720%28v=exchg.150%29.aspx) en la biblioteca de cmdlets de Exchange Online.
-
-A veces, la excepción de BYOK de Azure RMS para Exchange Online no es un problema en la práctica. Por ejemplo, las organizaciones que necesitan que BYOK y el registro ejecuten sus aplicaciones de datos (Exchange, SharePoint, Office) localmente y usan Azure RMS para funcionalidades que no son compatibles fácilmente con AD RMS local (por ejemplo, colaboración con otras compañías y acceso desde clientes móviles). BYOK y el registro funcionan bien en este escenario y permiten a la organización tomar el control completo sobre su suscripción de Azure RMS.
+Si ya ha habilitado IRM de Exchange Online importando el dominio de publicación de confianza (TPD) de Azure RMS, siga las instrucciones de [Configuración de nuevas capacidades del cifrado de mensajes de Office 365 sobre Azure Information Protection](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e) (Set up new Office 365 Message Encryption capabilities built on top of Azure Information Protection) para habilitar las nuevas capacidades en Exchange Online que admiten el uso de BYOK para Azure Information Protection.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Si ha tomado la decisión de administrar su propia clave, vaya a [Implementing your Azure Rights Management tenant key](plan-implement-tenant-key.md#implementing-your-azure-information-protection-tenant-key) (Implementación de su clave de inquilino de Azure Rights Management).
+Si ha tomado la decisión de administrar su propia clave, vaya a [Implementing your Azure Rights Management tenant key](plan-implement-tenant-key.md#implementing-byok-for-your-azure-information-protection-tenant-key) (Implementación de su clave de inquilino de Azure Rights Management).
 
 Si ha decidido permanecer con la configuración predeterminada con la que Microsoft administra su clave, consulte la sección [Pasos siguientes](plan-implement-tenant-key.md#next-steps) del artículo Planeamiento e implementación de la clave de inquilino de Azure Rights Management
 

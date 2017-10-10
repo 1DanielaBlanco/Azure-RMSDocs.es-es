@@ -4,7 +4,7 @@ description: "Información para ayudarle a planear y a administrar su clave de i
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/07/2017
+ms.date: 09/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e14a57a8bd8343113e2bfc3f71835f55f0ee2dee
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 9e8b7f3bbebe50fb6f219142a17961dc8b565f6c
+ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="planning-and-implementing-your-azure-information-protection-tenant-key"></a>Planeamiento e implementación de su clave de inquilino de Azure Information Protection
 
@@ -24,16 +24,19 @@ ms.lasthandoff: 06/30/2017
 
 Use la información de este artículo como ayuda para planear y administrar su clave de inquilino de Azure Information Protection. Por ejemplo, en lugar de que Microsoft administre su clave de inquilino (valor predeterminado), podría administrar su propia clave de inquilino para cumplir con las normas específicas que se aplican a su organización. La administración de su propia clave de inquilino también se conoce aportar su propia clave, o BYOK, por sus siglas del inglés.
 
-> [!NOTE]
-> El equivalente local de la clave de inquilino de Azure Information Protection se conoce como la clave del Certificado emisor de licencias de servidor (SLC). Azure Information Protection conserva una o varias claves para cada organización que tenga una suscripción a Azure Information Protection. Siempre que se usan claves para Azure Information Protection en una organización (como por ejemplo claves de usuario, claves de equipo o claves de cifrado de documentos), se encadenan criptográficamente a su clave de inquilino de Azure Information Protection.
+¿Qué es la clave de inquilino de Azure Information Protection?
+
+- La clave de inquilino de Azure Information Protection es una clave raíz para la organización. Se pueden derivar otras claves de esta clave raíz, como claves de usuario, claves de equipo y claves de cifrado de documentos. Cada vez que Azure Information Protection usa estas claves para la organización, se encadenan criptográficamente a la clave de inquilino de Azure Information Protection.
+
+- La clave de inquilino de Azure Information Protection es el equivalente en línea de la clave de certificado emisor de licencias de servidor (SLC) de Active Directory Rights Management Services (AD RMS). 
 
 **En resumen:** Use la tabla siguiente como guía rápida de la topología de clave de inquilino recomendada. A continuación, use documentación adicional para más información.
 
 |Requisito empresarial|Topología de clave de inquilino recomendada|
 |------------------------|-----------------------------------|
-|Implementar Azure Information Protection rápidamente y sin necesidad de hardware especial|Administrada por Microsoft|
-|Necesidad de funcionalidad completa en Exchange Online con el servicio Azure Rights Management|Administrada por Microsoft|
-|Las claves las crea el usuario y están protegidas en un módulo de seguridad de hardware (HSM).|BYOK<br /><br />Actualmente, esta configuración dará lugar a funcionalidad reducida de IRM en Exchange Online. Para más información, consulte [Precio y restricciones de BYOK](byok-price-restrictions.md).|
+|Implementar Azure Information Protection rápidamente y sin hardware especial, software adicional o una suscripción de Azure.<br /><br />Por ejemplo: en entornos de prueba y cuando la organización no tiene requisitos normativos para la administración de claves.|Administrada por Microsoft|
+|Normas de cumplimiento, seguridad adicional y control sobre todas las operaciones del ciclo de vida. <br /><br />Por ejemplo: la clave debe estar protegida por un módulo de seguridad de hardware (HSM).|BYOK [[1]](#footnote-1)|
+
 
 Si es necesario, puede cambiar la topología de clave de inquilino tras realizar la implementación con el cmdlet [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties).
 
@@ -41,65 +44,116 @@ Si es necesario, puede cambiar la topología de clave de inquilino tras realizar
 ## <a name="choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok"></a>Elija su topología de clave de inquilino: Administrada por Microsoft (opción predeterminada) o por usted (BYOK)
 Decide qué topología de clave de inquilino es la mejor para su organización. De forma predeterminada, Azure Information Protection genera su clave de inquilino y administra la mayoría de los aspectos del ciclo de vida de la clave de inquilino. Esta es la opción más simple con las mínimas sobrecargas administrativas. En la mayoría de casos, no es necesario ni tan siquiera que sepa que tiene una clave de inquilino. Simplemente, regístrese en Azure Information Protection y Microsoft se encargará del resto del proceso de administración de la clave.
 
-Como alternativa, puede tener un control total sobre la clave de inquilino con el [Almacén de claves de Azure](https://azure.microsoft.com/services/key-vault/). Para este escenario es necesario crear una clave de inquilino y mantener la copia maestra de forma local. Con frecuencia este escenario también se conoce como Aportar tu propia clave (BYOK). Con esta opción, el proceso es:
+Decide qué topología de clave de inquilino es la mejor para la organización:
 
-1.  Genere la clave de inquilino de forma local según sus directivas de seguridad y de TI.
+- **Administrada por Microsoft**: Azure Information Protection genera automáticamente una clave de inquilino para la organización. De manera predeterminada, Microsoft usa esta clave para el inquilino y administra la mayoría de los aspectos del ciclo de vida de la clave de inquilino. 
+    
+    Esta es la opción más simple con las mínimas sobrecargas administrativas. En la mayoría de casos, no es necesario ni tan siquiera que sepa que tiene una clave de inquilino. Simplemente, regístrese en Azure Information Protection y Microsoft se encargará del resto del proceso de administración de la clave.
 
-2.  Transfiera de forma segura la clave de inquilino desde un módulo de seguridad de hardware (HSM) de su propiedad a los HSM que administra y son propiedad de Microsoft con el Almacén de claves de Azure. A lo largo de este proceso, su clave de inquilino nunca traspasa la frontera de la protección del hardware.
+- **Administrada por el usuario (BYOK)**: para un control completo sobre su clave de inquilino, use [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) con Azure Information Protection. Para esta topología de clave de inquilino, cree la clave, ya sea directamente en Key Vault, o cree una local. Si la crea de forma local, después tiene que transferirla o importarla a Key Vault. Después, configure Azure Information Protection para que use esta clave y adminístrela en Azure Key Vault.
+    
 
-3.  Al transferir su clave de inquilino a Microsoft, esta continúa protegida con el Almacén de claves de Azure.
+### <a name="more-information-about-byok"></a>Más información sobre BYOK
+Tiene estas opciones para crear su propia clave:
+
+- **Creación de una clave localmente y transferencia o importación a Key Vault**:
+    
+    - Una clave protegida por HSM que crea de forma local y después transfiere a Key Vault como una clave protegida por HSM.
+    
+    - Una clave protegida por software que crea de forma local, después la convierte y la transfiere a Key Vault como una clave protegida por HSM. Esta opción se admite solo cuando [migra desde Active Directory Rights Management Services (AD RMS)](migrate-from-ad-rms-to-azure-rms.md).
+    
+    - Una clave protegida por software que crea de forma local y después la importa a Key Vault como una clave protegida por software. Esta opción requiere un archivo de certificado .PFX.
+    
+- **Creación de una clave en Key Vault**:
+    
+    - Una clave protegida por HSM que se crea en Key Vault.
+    
+    - Una clave protegida por software que se crea en Key Vault.
+
+De estas opciones de BYOK, la más habitual es la clave protegida por HSM que se crea de forma local y después se transfiere a Key Vault como una clave protegida por HSM. Aunque esta opción es la que tiene más sobrecarga administrativa, puede que la organización la exija para cumplir determinadas normas. Los HSM que usa Azure Key Vault son FIPS 140-2 nivel 2 validado.
+
+Con esta opción, el proceso es:
+
+1. Genere la clave de inquilino de forma local según sus directivas de seguridad y de TI. Esta clave es la copia maestra. Permanece almacenada de forma local y el usuario es el encargado de realizar copias de seguridad.
+
+2. Cree una copia de esta clave y transfiérala de forma segura del HSM a Azure Key Vault. A lo largo de este proceso, la copia maestra de esta clave nunca traspasa la frontera de protección de hardware.
+
+3. La copia de la clave está protegida por Azure Key Vault.
+
+> [!NOTE]
+
+> Como medida de protección adicional, el Almacén de claves de Azure usa dominios de seguridad independientes para sus centros de datos en regiones como Norteamérica, EMEA (Europa, Oriente Medio y África) y Asia. Azure Key Vault también usa distintas instancias de Azure, como Microsoft Azure Alemania y Azure Government. 
 
 Aunque es opcional, es probable que quiera usar los registros de uso en tiempo casi real de Azure Information Protection para consultar exactamente cómo y cuándo se usa su clave de inquilino.
 
-> [!NOTE]
-> Como medida de protección adicional, el Almacén de claves de Azure usa dominios de seguridad independientes para sus centros de datos en regiones como Norteamérica, EMEA (Europa, Oriente Medio y África) y Asia. También para diferentes instancias de Azure, como Microsoft Azure Alemania y Azure Government. Si administra su propia clave de inquilino, estará vinculada al dominio de seguridad de la región o instancia donde se haya registrado el inquilino de Azure Information Protection. Por ejemplo, una clave de inquilino de un cliente europeo no puede usarse en centros de datos de América del Norte o Asia.
+### <a name="when-you-have-decided-your-tenant-key-topology"></a>Cuando ha decidido la topología de clave de inquilino
 
-## <a name="the-tenant-key-lifecycle"></a>El ciclo de vida de la clave de inquilino
-Si decide que Microsoft debe encargarse de administrar su clave de inquilino, se hará cargo de la mayoría de operaciones del ciclo de vida de la clave. Sin embargo, si decide administrar por su cuenta la clave de inquilino, será responsable de muchas de las operaciones del ciclo de vida de la clave y de algunos procedimientos adicionales en el Almacén de claves de Azure.
+Si decide dejar que Microsoft administre su clave de inquilino: 
 
-Los diagramas siguientes muestran y comparan estas dos opciones. El primer diagrama muestra las pocas sobrecargas de administrador que se dan en la configuración predeterminada cuando Microsoft administra la clave de inquilino.
+- A menos que vaya a migrar desde AD RMS, no se necesita hacer nada más para generar la clave de inquilino y puede ir directamente a [Pasos siguientes](plan-implement-tenant-key.md#next-steps).
 
-![Ciclo de vida de la clave de inquilino de Azure Information Protection (la opción predeterminada que administra Microsoft)](../media/RMS_BYOK_cloud.png)
-
-El segundo diagrama muestra los pasos adicionales necesarios cuando eres tú el que administra su propia clave de inquilino.
-
-![Ciclo de vida de la clave de inquilino de Azure Information Protection (la que administra su usuario, BYOK)](../media/RMS_BYOK_onprem4.png)
-
-Si decide dejar que Microsoft administre su clave de inquilino, no se necesita hacer nada más para generar la clave y puede ir directamente a [Pasos siguientes](plan-implement-tenant-key.md#next-steps).  
+- Si ahora tiene AD RMS y quiere migrar a Azure Information Protection, use las instrucciones de migración de Migración desde AD RMS a Azure Information Protection. 
 
 Si decide administrar usted mismo la clave de inquilino, lea las secciones siguientes para obtener más información.
 
-## <a name="implementing-your-azure-information-protection-tenant-key"></a>Implementación de su clave de inquilino de Azure Information Protection
+## <a name="implementing-byok-for-your-azure-information-protection-tenant-key"></a>Implementación de BYOK para la clave de inquilino de Azure Information Protection
 
 Usa la información y los procedimientos de esta sección si ha decidido generar y administrar su clave de inquilino; el escenario Aportar tu propia clave (BYOK):
 
-
-> [!IMPORTANT]
-> Si se ha empezado a usar Azure Information Protection con una clave de inquilino que administra Microsoft y ahora quiere administrar su clave de inquilino (migrar a BYOK), los correos electrónicos y documentos protegidos con anterioridad seguirán estando accesibles mediante el uso de una clave archivada. Sin embargo, si tiene usuarios que ejecutan Office 2010, [póngase en contacto con el soporte técnico de Microsoft](../get-started/information-support.md#to-contact-microsoft-support) antes de ejecutar estos procedimientos. Estos equipos necesitan algunos pasos de configuración adicionales.
-> 
-> [Póngase en contacto con el soporte técnico de Microsoft](../get-started/information-support.md#to-contact-microsoft-support) también si su organización tiene directivas específicas para el manejo de claves.
+> [!NOTE]
+> Si se ha empezado a usar Azure Information Protection con una clave de inquilino que administra Microsoft y ahora quiere administrar su clave de inquilino (migrar a BYOK), los correos electrónicos y documentos protegidos con anterioridad seguirán estando accesibles mediante el uso de una clave archivada. 
 
 ### <a name="prerequisites-for-byok"></a>Requisitos previos para BYOK
 Consulte la tabla siguiente para consultar una lista de requisitos previos para Aportar tu propia clave (BYOK).
 
 |Requisito|Más información|
 |---------------|--------------------|
-|Una suscripción que admita Azure Information Protection.|Para obtener más información acerca de las suscripciones disponibles, consulte la [página de precios](https://go.microsoft.com/fwlink/?LinkId=827589) de Azure Information Protection.|
-|No use Exchange Online.<br /><br /> O bien, si usa Exchange Online, comprenda y acepte las limitaciones de uso de BYOK con esta configuración.|Para más información sobre las restricciones y limitaciones actuales para BYOK, vea [Precio y restricciones de BYOK](byok-price-restrictions.md).<br /><br />**Importante**: actualmente, BYOK no es compatible con Exchange Online.|
-|Todos los requisitos previos para Bring your own key (BYOK, Traiga su propia clave) de Key Vault, que incluyen una suscripción a Azure de pago o de prueba para su inquilino actual de Azure Information Protection. |Vea los [Requisitos previos de BYOK](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#prerequisites-for-byok) en la documentación de Azure Key Vault. <br /><br /> La suscripción a Azure gratuita que proporciona acceso para configurar Azure Active Directory y la configuración de las plantillas personalizadas de Azure Rights Management (**acceso a Azure Active Directory**) no es suficiente para usar Azure Key Vault. Para confirmar que tiene una suscripción de Azure que puede usar para BYOK, use los cmdlets de PowerShell de [Azure Resource Manager](https://msdn.microsoft.com/library/azure/mt786812\(v=azure.300\).aspx): <br /><br /> 1. Inicie una sesión de Azure PowerShell con la opción **Ejecutar como administrador** e inicie sesión como administrador global para el inquilino de Azure Information Protection con el siguiente comando:`Login-AzureRmAccount`<br /><br />2. Escriba lo siguiente y confirme que ve los valores mostrados para su nombre e identificador de suscripción, así como su identificador de inquilino de Azure Information Protection, y que el estado está habilitado: `Get-AzureRmSubscription`<br /><br />Si no se muestra ningún valor y es redireccionado al símbolo del sistema, no tiene una suscripción de Azure que pueda utilizarse para BYOK. <br /><br />**Nota**: Además de los requisitos previos de BYOK, si migra de AD RMS a Azure Information Protection y cambia una clave de software por una clave de hardware, debe tener como mínimo la versión 11.62 del firmware de Thales.|
+|El inquilino de Azure Information Protection debe tener una suscripción de Azure. Si aún no tiene una, puede solicitar una [cuenta gratuita](https://azure.microsoft.com/pricing/free-trial/). <br /><br /> Para usar una clave protegida por HSM, debe tener el nivel de servicio Premium de Azure Key Vault.|La suscripción a Azure gratuita que proporciona acceso para configurar Azure Active Directory y la configuración de las plantillas personalizadas de Azure Rights Management (**acceso a Azure Active Directory**) no es suficiente para usar Azure Key Vault. Para confirmar que tiene una suscripción de Azure que puede usar para BYOK, use los cmdlets de PowerShell de [Azure Resource Manager](https://msdn.microsoft.com/library/azure/mt786812\(v=azure.300\).aspx): <br /><br /> 1. Inicie una sesión de Azure PowerShell con la opción **Ejecutar como administrador** e inicie sesión como administrador global para el inquilino de Azure Information Protection con el siguiente comando:`Login-AzureRmAccount`<br /><br />2. Escriba lo siguiente y confirme que ve los valores mostrados para su nombre e identificador de suscripción, así como su identificador de inquilino de Azure Information Protection, y que el estado está habilitado: `Get-AzureRmSubscription`<br /><br />Si no se muestra ningún valor y es redireccionado al símbolo del sistema, no tiene una suscripción de Azure que pueda utilizarse para BYOK. <br /><br />**Nota**: Además de los requisitos previos de BYOK, si migra de AD RMS a Azure Information Protection y cambia una clave de software por una clave de hardware, debe tener como mínimo la versión 11.62 del firmware de Thales.|
+|Para usar una clave protegida por HSM creada localmente: todos los requisitos previos enumerados para BYOK de Key Vault. |Vea los [Requisitos previos de BYOK](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#prerequisites-for-byok) en la documentación de Azure Key Vault. <br /><br /> **Nota**: Además de los requisitos previos de BYOK, si migra de AD RMS a Azure Information Protection y cambia una clave de software por una clave de hardware, debe tener como mínimo la versión 11.62 del firmware de Thales.|
 |Módulo de administración de Azure Rights Management para Windows PowerShell.|Para obtener instrucciones de instalación, consulte [Instalación de Windows PowerShell para Azure Rights Management](../deploy-use/install-powershell.md). <br /><br />Si ya ha instalado este módulo de Windows PowerShell anteriormente, ejecute el comando siguiente para comprobar que el número de versión sea como mínimo **2.9.0.0**: `(Get-Module aadrm -ListAvailable).Version`|
 
 Para obtener más información sobre los HSM de Thales y sobre su uso con el Almacén de claves de Azure, consulte el [sitio web de Thales](https://www.thales-esecurity.com/msrms/cloud).
 
+### <a name="choosing-your-key-vault-location"></a>Elegir la ubicación del almacén de claves
+
+Cuando crea un almacén de claves para almacenar la clave que usará como clave de inquilino para Azure Information Protection, debe especificar una ubicación. Esta ubicación es una región de Azure o una instancia de Azure.
+
+Realice su elección primero por cumplimiento y luego para minimizar la latencia de red:
+
+- Si ha elegido la topología de claves BYOK por motivos de cumplimiento, es posible que esos requisitos de cumplimiento exijan a la región de Azure o a la instancia de Azure que almacene la clave de inquilino de Azure Information Protection.
+
+- Debido a todas las llamadas cifradas para la cadena de protección que se realizan a la clave de inquilino de Azure Information Protection, es preferible minimizar la latencia de red generada por estas llamadas. Para ello, cree el almacén de claves en la misma región o instancia de Azure que el inquilino de Azure Information Protection.
+
+Para identificar la ubicación del inquilino de Azure Information Protection, use el cmdlet [Get-AadrmConfiguration](/powershell/module/aadrm/get-aadrmconfiguration) de PowerShell e identifique la región de las direcciones URL. Por ejemplo:
+
+    LicensingIntranetDistributionPointUrl : https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing
+
+La región se puede identificar a partir de **rms.na.aadrm.com** y, en este ejemplo, se encuentra en Norteamérica.
+
+En la tabla de abajo podrá identificar qué región o instancia de Azure se recomienda para reducir al mínimo la latencia de red.
+
+|Región o instancia de Azure|Ubicación recomendada para el almacén de claves|
+|---------------|--------------------|
+|rms.**na**.aadrm.com|**Centro y norte de EE. UU.** o **Este de EE. UU.**|
+|rms.**eu**.aadrm.com|**Europa del Norte** o **Europa Occidental**|
+|rms.**ap**.aadrm.com|**Asia Oriental** o **Sudeste Asiático**|
+|rms.**sa**.aadrm.com|**Oeste de EE. UU.** o **Este de EE. UU.**|
+|rms.**govus**.aadrm.com|**Centro de EE. UU.** o **Este de EE. UU. 2**|
+
+
 ### <a name="instructions-for-byok"></a>Instrucciones de BYOK
 
-Para generar y transferir su propia clave de inquilino al Almacén de claves de Azure, siga los procedimientos que se indican en [Generación y transferencia de claves protegidas con HSM para el Almacén de claves de Azure](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/) en la documentación del Almacén de claves de Azure.
+Use la documentación de Azure Key Vault para crear un almacén de claves y la clave que quiere usar para Azure Information Protection. Por ejemplo, vea [Introducción a Azure Key Vault](/azure/key-vault/key-vault-get-started).
 
-Cuando la clave se transfiere a Key Vault, se le asigna un identificador de clave en Key Vault, que es una URL que contiene el nombre del almacén de claves, el contenedor de claves, el nombre de la clave y la versión de la clave. Por ejemplo: **https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333**. Deberá indicar al servicio Azure Rights Management de Azure Information Protection que use esta clave mediante la especificación de esta URL.
+Asegúrese de que la longitud de clave es de 2048 bits (recomendada) o 1024 bits. Azure Information Protection no admite otras longitudes de clave.
 
-Pero para que Azure Information Protection pueda usar la clave, deberá autorizar al servicio Azure Rights Management para que use la clave en el almacén de claves de su organización. Para hacerlo, el administrador de Azure Key Vault usa el cmdlet de PowerShell [Set-AzureRmKeyVaultAccessPolicy](/powershell/module/azurerm.keyvault/set-azurermkeyvaultaccesspolicy) y concede permisos a la entidad de servicio de Azure Rights Management mediante el uso de GUID 00000012-0000-0000-c000-000000000000. Por ejemplo:
+Para crear una clave protegida por HSM de manera local y transferirla al almacén de claves como una clave protegida por HSM, siga los procedimientos de [Generación y transferencia de claves protegidas con HSM para el Almacén de claves de Azure](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/).
 
-    Set-AzureRmKeyVaultAccessPolicy -VaultName 'ContosoRMS-kv' -ResourceGroupName 'ContosoRMS-byok-rg' -ServicePrincipalName 00000012-0000-0000-c000-000000000000 -PermissionsToKeys decrypt,encrypt,unwrapkey,wrapkey,verify,sign,get
+Una clave que se almacena en Key Vault como un identificador de clave. Este identificador de clave es una URL que contiene el nombre del almacén de claves, el contenedor de claves, el nombre de la clave y la versión de la clave. Por ejemplo: **https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333**. Debe especificar la URL del almacén de claves en Azure Information Protection para configurarlo para que use esta clave.
+
+Para que Azure Information Protection pueda usar la clave, deberá autorizar al servicio Azure Rights Management para que use la clave en el almacén de claves de su organización. Para hacerlo, el administrador de Azure Key Vault usa el cmdlet de PowerShell [Set-AzureRmKeyVaultAccessPolicy](/powershell/module/azurerm.keyvault/set-azurermkeyvaultaccesspolicy) y concede permisos a la entidad de servicio de Azure Rights Management mediante el uso de GUID 00000012-0000-0000-c000-000000000000. Por ejemplo:
+
+    Set-AzureRmKeyVaultAccessPolicy -VaultName 'ContosoRMS-kv' -ResourceGroupName 'ContosoRMS-byok-rg' -ServicePrincipalName 00000012-0000-0000-c000-000000000000 -PermissionsToKeys decrypt,sign,get
 
 Ahora lo tiene todo preparado para configurar Azure Information Protection y usar esta clave como la clave de inquilino de Azure Information Protection de la organización. Al usar cmdlets de Azure RMS, primero conéctese al servicio Azure Rights Management e inicie sesión:
 
@@ -112,20 +166,20 @@ Después, ejecute el [cmdlet Use-AadrmKeyVaultKey](/powershell/module/aadrm/use-
 > [!IMPORTANT]
 > En este ejemplo, "aaaabbbbcccc111122223333" es la versión de la clave que se va a usar. Si no se especifica la versión, se usa la versión actual de la clave sin avisar y el comando parece funcionar. En cambio, si la clave en Key Vault se actualiza posteriormente (se renueva), el servicio de Azure Rights Management dejará de funcionar para el inquilino, aunque vuelva a ejecutar el comando Use-AadrmKeyVaultKey.
 >
->Asegúrese de que especifica la versión de la clave, además del nombre de clave al ejecutar este comando. Puede usar el cmd de Azure Key Vault, [Get-AzureKeyVaultKey](/powershell/resourcemanager/azurerm.keyvault\get-azurekeyvaultkey), para obtener el número de versión de la clave actual. Por ejemplo: `Get-AzureKeyVaultKey -VaultName 'contosorms-kv' -KeyName 'contosorms-byok'`
+>Asegúrese de que especifica la versión de la clave, además del nombre de clave al ejecutar este comando. Puede usar el cmd de Azure Key Vault, [Get-AzureKeyVaultKey](/powershell/module/azurerm.keyvault\get-azurekeyvaultkey), para obtener el número de versión de la clave actual. Por ejemplo: `Get-AzureKeyVaultKey -VaultName 'contosorms-kv' -KeyName 'contosorms-byok'`
 
-Si necesita confirmar que la URL de clave se ha configurado correctamente en el servicio Azure RMS, ejecute [Get-AzureKeyVaultKey](/powershell/resourcemanager/azurerm.keyvault\get-azurekeyvaultkey) en Azure Key Vault para verla.
+Si necesita confirmar que la URL de la clave se ha configurado correctamente en Azure Information Protection: ejecute [Get-AzureKeyVaultKey](/powershell/module/azurerm.keyvault\get-azurekeyvaultkey) en Azure Key Vault para verla.
 
-Por último, si el servicio de Azure Rights Management ya está activado, ejecute [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties) para que Azure Rights Management use esta clave como clave del inquilino activo del servicio de Azure Rights Management. Si no completa este paso, Azure Rights Management seguirá usando la clave predeterminada administrada por Microsoft que se creó automáticamente al activar el servicio.
+Por último, si el servicio Azure Rights Management ya está activado, ejecute [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties) para indicar a Azure Information Protection que use esta clave como la clave de inquilino activa para el servicio Azure Rights Management. Si no completa este paso, Azure Information Protection seguirá usando la clave predeterminada administrada por Microsoft que creó automáticamente para el inquilino.
 
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Ahora que ha realizado la planeación, y si es necesario, ha generado su clave de inquilino, haga lo siguiente:
+Después de planear y, si es necesario, crear y configurar la clave de inquilino, siga estos pasos:
 
 1.  Empiece a usar su clave de inquilino:
     
-    - Si no lo ha hecho todavía, deberá activar el servicio Rights Management para que su organización pueda empezar a usar Azure Information Protection. Los usuarios empiezan inmediatamente a usar su clave de inquilino (administrada por Microsoft o por su usuario en el Almacén de claves de Azure).
+    - Si no lo ha hecho todavía, deberá activar el servicio Rights Management para que su organización pueda empezar a usar Azure Information Protection. Los usuarios empiezan a usar inmediatamente la clave de inquilino (administrada por Microsoft o por usted en Azure Key Vault).
     
         Para más información sobre la activación, consulte [Activación de Azure Rights Management](../deploy-use/activate-service.md).
         
@@ -139,8 +193,8 @@ Ahora que ha realizado la planeación, y si es necesario, ha generado su clave d
     
     Para obtener más información sobre el registro de uso, consulte [Registro y análisis del uso del servicio Azure Rights Management](../deploy-use/log-analyze-usage.md).
     
-3.  Mantenga su clave de inquilino.
+3.  Administre la clave de inquilino.
     
-    Para más información, consulte [Operaciones para la clave de inquilino de Azure Rights Management](../deploy-use/operations-tenant-key.md).
+    Para más información sobre las operaciones del ciclo de vida de la clave de inquilino, vea [Operaciones para la clave de inquilino de Azure Information Protection](../deploy-use/operations-tenant-key.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

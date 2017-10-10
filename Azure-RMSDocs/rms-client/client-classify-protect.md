@@ -4,7 +4,7 @@ description: "Instrucciones de cómo clasificar y proteger sus documentos y corr
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/18/2017
+ms.date: 09/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: b82904da81b73f0ae7ab5ab758a4cf3a982eb6ee
-ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
+ms.openlocfilehash: 996835254652a307f66c472fdc74707a59041fe0
+ms.sourcegitcommit: cd3320fa34acb90f05d5d3e0e83604cdd46bd9a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2017
+ms.lasthandoff: 09/23/2017
 ---
 # <a name="classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Clasificación y protección de archivos o correos electrónicos mediante Azure Information Protection
 
@@ -32,9 +32,7 @@ Si la etiqueta aplica protección a un documento, no es adecuado guardar el docu
 
 Los archivos protegidos se pueden compartir con otros de forma segura. Por ejemplo, adjunta un archivo a un correo electrónico.
 
-Si regularmente comparte archivos con personas ajenas a la organización, puede que el administrador haya configurado una etiqueta que establece la protección de tal forma que dichas personas puedan leerla. Como alternativa, puede usar la [aplicación de Office](#set-custom-permissions-for-a-document) o el [Explorador de archivos](#using-file-explorer-to-classify-and-protect-files) para establecer permisos personalizados para un archivo antes de compartirlo. 
-
-Si establece sus propios permisos personalizados y el archivo ya está protegido para uso interno, primero haga una copia de dicho archivo para conservar los permisos originales. Después, utilice la copia para establecer los permisos personalizados.  
+Si regularmente comparte archivos con personas ajenas a la organización, puede que el administrador haya configurado una etiqueta que establece la protección de tal forma que dichas personas puedan leerla. Como alternativa, puede usar la [aplicación de Office](#set-custom-permissions-for-a-document) o el [Explorador de archivos](#using-file-explorer-to-classify-and-protect-files) para establecer permisos personalizados para un archivo antes de compartirlo. Si establece sus propios permisos personalizados y el archivo ya está protegido para uso interno, primero haga una copia de dicho archivo para conservar los permisos originales. Después, utilice la copia para establecer los permisos personalizados.  
 
 Si el archivo está protegido con los permisos personalizados, use el mecanismo de uso compartido estándar para compartir el archivo. Si es la primera vez que estas personas con las que comparte el archivo han recibido un archivo protegido, es posible que necesiten instrucciones para verlo. Para estas personas, puede copiar y pegar el siguiente mensaje: **Este archivo está protegido con Microsoft Azure Information Protection. Para el primer uso, vea estas [instrucciones](https://aka.ms/rms-signup).**
 
@@ -94,6 +92,16 @@ Puede especificar su propia configuración de protección para documentos en lug
     - **Expire access** (Acceso con expiración): seleccione esta opción solo para archivos sujetos a limitación temporal, de modo que las personas que ha especificado no puedan abrir los archivos seleccionados después de una fecha especificada. Aún podrá abrir el archivo original, pero el día seleccionado después de medianoche (su zona horaria actual), las personas que haya especificado no podrán abrir el archivo.
 
 5. Haga clic en **Aplicar** y espere a que aparezca el mensaje **Se han aplicado permisos personalizados**. A continuación, haga clic en **Cerrar**.
+
+### <a name="safely-sharing-by-email"></a>Uso compartido seguro por correo electrónico
+
+Cuando comparte documentos de Office por correo electrónico, puede adjuntar el documento a un correo protegido, de modo que el documento queda protegido automáticamente con las mismas restricciones que se aplican al correo. 
+
+Para hacerlo, le recomendamos que proteja primero el documento y luego lo adjunte al correo. Proteja también el correo si el mensaje de correo contiene información confidencial. Dos ventajas de proteger el documento antes de adjuntarlo a un correo:
+
+- Puede realizar un seguimiento y, si es necesario, revocar el documento después de haberlo enviado por correo.
+
+- Puede aplicar permisos diferentes al documento y al mensaje de correo.
 
 ## <a name="using-file-explorer-to-classify-and-protect-files"></a>Uso del Explorador de archivos para clasificar y proteger archivos
 
