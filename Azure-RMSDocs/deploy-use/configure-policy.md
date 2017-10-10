@@ -4,7 +4,7 @@ description: "Para configurar la protección, la clasificación y el etiquetado,
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/07/2017
+ms.date: 09/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 4c656ed4e7fdb7945b6ccf466a1138cdb68a2189
-ms.sourcegitcommit: f7ef0f040ae4af4bf1283ebcb0750b65b6939313
+ms.openlocfilehash: 660f29506e22feb742edf4041d7baed0cf749b8c
+ms.sourcegitcommit: cd3320fa34acb90f05d5d3e0e83604cdd46bd9a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 09/23/2017
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>Configuración de la directiva de Azure Information Protection
 
@@ -71,7 +71,9 @@ Para más información sobre las suscripciones, consulte [¿Qué suscripción ne
 
 Azure Information Protection incluye una [directiva predeterminada](configure-policy-default.md), que contiene cinco etiquetas principales. Estas etiquetas se pueden usar con la gama completa de los datos que una organización normalmente crea y almacena, desde la clasificación más baja de datos personales, a la clasificación más alta de información extremadamente confidencial. 
 
-Puede utilizar las etiquetas predeterminadas sin cambios, o puede personalizarlas. También puede eliminarlas y crear otras nuevas. Para más información, use los vínculos que aparecen en la siguiente sección para ubicar las opciones pertinentes y cómo configurarlas. 
+Puede utilizar las etiquetas predeterminadas sin cambios, o puede personalizarlas. También puede eliminarlas y crear otras nuevas. Para más información, use los vínculos que aparecen en la siguiente sección para ubicar las opciones pertinentes y cómo configurarlas.
+
+Puede crear tantas etiquetas como quiera. Sin embargo, cuando empiezan a ser demasiadas como para que los usuarios puedan verlas fácilmente y seleccionar la etiqueta correcta, puede crear directivas con ámbito para que los usuarios vean solo las etiquetas pertinentes. Hay un límite superior para las etiquetas que aplican protección: 500.
 
 Cuando realice cambios en una hoja de Azure Information Protection, haga clic en **Guardar** para guardar los cambios o en **Descartar** para volver a la última configuración guardada.
 

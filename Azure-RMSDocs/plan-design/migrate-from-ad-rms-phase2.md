@@ -4,7 +4,7 @@ description: "Fase 2 de la migración desde AD RMS a Azure Information Protectio
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/19/2017
+ms.date: 09/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 3274cb1ddd457647159034b955c47e9ab775f00c
-ms.sourcegitcommit: f7ef0f040ae4af4bf1283ebcb0750b65b6939313
+ms.openlocfilehash: db8f8de9cdda00f5983ff448aa895a5767d953b1
+ms.sourcegitcommit: dd567f8395bb55e4ca174ef1d72b1a14cf7735e1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 09/29/2017
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>Fase 2 de la migración: configuración del lado servidor para AD RMS
 
@@ -75,10 +75,7 @@ La implementación de AD RMS actual usa una de las siguientes configuraciones co
 > [!NOTE]
 > Para obtener más información acerca del uso de módulos de seguridad de hardware con AD RMS, consulte [Uso de AD RMS con módulos de seguridad de hardware](http://technet.microsoft.com/library/jj651024.aspx).
 
-Estas son las dos opciones de topología de claves de inquilino de Azure Information Protection: Microsoft administra su clave de inquilino (**administrada por Microsoft**) o la administra el usuario (**administrada por el cliente**) en Azure Key Vault. Cuando administra su propia clave de inquilino de Azure Information Protection, esto a veces se conoce como “aportar tu propia clave” (BYOK) y necesita un módulo de seguridad de hardware (HSM) de Thales. Para más información, vea el artículo [Planeamiento e implementación de su clave de inquilino de Azure Information Protection](plan-implement-tenant-key.md).
-
-> [!IMPORTANT]
-> Exchange Online no es compatible actualmente con BYOK en Azure Information Protection. Si desea usar BYOK después de la migración y planea usar Exchange Online, asegúrese de que comprende de qué forma esta configuración reduce la funcionalidad IRM para Exchange Online. Revise la información de la sección [Precio y restricciones de BYOK](byok-price-restrictions.md) para que le resulte más fácil elegir la topología de claves de inquilino de Azure Information Protection más adecuada para la migración.
+Estas son las dos opciones de topología de claves de inquilino de Azure Information Protection: Microsoft administra su clave de inquilino (**administrada por Microsoft**) o la administra el usuario (**administrada por el cliente**) en Azure Key Vault. Cuando administra su propia clave de inquilino de Azure Information Protection, a veces se denomina “Bring Your Own Key” (BYOK). Para más información, vea el artículo [Planeamiento e implementación de su clave de inquilino de Azure Information Protection](plan-implement-tenant-key.md).
 
 Utilice la tabla siguiente para identificar qué procedimiento se utilizará para la migración. 
 

@@ -4,7 +4,7 @@ description: "Información sobre las operaciones del ciclo de vida que son perti
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/23/2017
+ms.date: 09/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,17 +12,17 @@ ms.technology: techgroup-identity
 ms.assetid: 3c48cda6-e004-4bbd-adcf-589815c56c55
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e4a484660aaf5a1820b04892ff006c08cceb5080
-ms.sourcegitcommit: 0fa5dd38c9d66ee2ecb47dfdc9f2add12731485e
+ms.openlocfilehash: 5aaf4393e39412a8c8b18678f4edea7a61c148dc
+ms.sourcegitcommit: cd3320fa34acb90f05d5d3e0e83604cdd46bd9a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 09/23/2017
 ---
-# <a name="microsoft-managed-tenant-key-lifecycle-operations"></a>Administración de Microsoft: Operaciones de ciclo de vida de clave de inquilino
+# <a name="microsoft-managed-tenant-key-life-cycle-operations"></a>Administración de Microsoft: Operaciones del ciclo de vida de claves de inquilino
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
-Si Microsoft administra su clave de inquilino para Azure Information Protection (la predeterminada), use las secciones siguientes para obtener más información sobre las operaciones del ciclo de vida que son relevantes para esta topología.
+Si Microsoft administra su clave de inquilino para Azure Information Protection (la predeterminada), lea las secciones siguientes para saber profundizar en las operaciones del ciclo de vida que son relevantes para esta topología.
 
 ## <a name="revoke-your-tenant-key"></a>Revocar su clave de inquilino
 Al cancelar la suscripción a Azure Information Protection, la solución deja de usar la clave de inquilino y no es necesario realizar ninguna otra acción.
@@ -38,6 +38,8 @@ Ejemplos de cuándo tendrá que regenerar la clave de Azure Information Protecti
 
 - La compañía se ha dividido en una o dos compañías. Cuando regenera la clave de inquilino, la nueva empresa no tendrá acceso al nuevo contenido que publiquen sus empleados. Pueden acceder al antiguo contenido si tienen una copia de la antigua clave de inquilino.
 
+- Quiere cambiar de una topología de administración de claves a otra.
+
 - Cree que la copia maestra de su clave de inquilino está en peligro.
 
 Para regenerar la clave, puede seleccionar una clave administrada por Microsoft diferente para que pase a ser su clave de inquilino, pero no puede crear una clave administrada por Microsoft. Para crear una clave, debe cambiar la topología de clave para que la administre el cliente (BYOK).
@@ -48,7 +50,7 @@ Para seleccionar una clave diferente a su clave de inquilino activa de Azure Inf
 
     (Get-AadrmKeys) | Sort-Object CreationTime | Select-Object -First 1
 
-Para cambiar la topología de clave para la administre el cliente (BYOK), consulte [Implementación de su clave de inquilino de Azure Information Protection](../plan-design/plan-implement-tenant-key.md#implementing-your-azure-information-protection-tenant-key).
+Para cambiar la topología de claves para que la administre el cliente (BYOK), vea [Implementación de BYOK para la clave de inquilino de Azure Information Protection](../plan-design/plan-implement-tenant-key.md#implementing-byok-for-your-azure-information-protection-tenant-key).
 
 ## <a name="backup-and-recover-your-tenant-key"></a>Realizar una copia de seguridad y recuperar la clave de inquilino
 Microsoft es responsable de realizar la copia de seguridad de su clave de inquilino y no se requiere que realice ninguna acción.
@@ -62,11 +64,11 @@ Para exportar la configuración de Azure Information Protection y su clave de in
 
 ### <a name="step-2-wait-for-verification"></a>Paso 2: Esperar comprobación
 
--   Microsoft comprobará que la solicitud para liberar su clave de inquilino de Azure Information Protection es legítima. Este proceso puede tardar hasta tres semanas.
+- Microsoft comprobará que la solicitud para liberar su clave de inquilino de Azure Information Protection es legítima. Este proceso puede tardar hasta tres semanas.
 
 ### <a name="step-3-receive-key-instructions-from-css"></a>Paso 3: Recibir instrucciones de clave de CSS
 
--   Los Servicios de soporte técnico de Microsoft (CSS) le envían la configuración de Azure Information Protection y la clave de inquilino cifrada en un archivo protegido por contraseña. Este archivo tiene una extensión de nombre de archivo **.tpd**. Para ello, CSS le envía (como la persona que inició el informe) una herramienta por correo electrónico. Debe ejecutar la herramienta desde un símbolo del sistema de la siguiente manera:
+- Los Servicios de soporte técnico de Microsoft (CSS) le envían la configuración de Azure Information Protection y la clave de inquilino cifrada en un archivo protegido por contraseña. Este archivo tiene una extensión de nombre de archivo **.tpd**. Para ello, CSS le envía (como la persona que inició el informe) una herramienta por correo electrónico. Debe ejecutar la herramienta desde un símbolo del sistema de la siguiente manera:
 
     ```
     AadrmTpd.exe -createkey
@@ -95,7 +97,7 @@ Si el motivo para exportar la clave de inquilino es que ya no quiere usar Azure 
 ## <a name="respond-to-a-breach"></a>Responder a una infracción
 Ningún sistema de seguridad, por seguro que sea, está completo sin un proceso de respuesta a infracción. Puede que se haya robado o puesto en peligro su clave de inquilino. Aunque esté bien protegida, pueden encontrarse vulnerabilidades en la tecnología de generación de claves actual, así como en las longitudes y los algoritmos actuales.
 
-Microsoft tiene un equipo dedicado a responder a incidentes de seguridad en sus productos y servicios. Tan pronto como aparece un informe fiable de un incidente, este equipo se pone a investigar el alcance, la causa del origen del mismo y cómo mitigarlo. Si este incidente afecta a sus activos, Microsoft enviará una notificación por correo electrónico a sus administradores de inquilino de Azure Information Protection, usando para ello la dirección que haya especificado al suscribirse.
+Microsoft tiene un equipo dedicado a responder a incidentes de seguridad en sus productos y servicios. Tan pronto como aparece un informe fiable de un incidente, este equipo se pone a investigar el alcance, la causa del origen del mismo y cómo mitigarlo. Si este incidente afecta a sus activos, Microsoft enviará una notificación por correo electrónico a sus administradores de inquilino de Azure Information Protection, usando para ello la dirección de correo que haya especificado al suscribirse.
 
 Si tiene una infracción, la mejor acción que usted o Microsoft puede llevar a cabo dependerá del alcance de la infracción. Microsoft trabajará con usted en este proceso. La tabla siguiente muestra algunas situaciones típicas y la respuesta probable, aunque la respuesta exacta depende de toda la información que se revele durante la investigación.
 

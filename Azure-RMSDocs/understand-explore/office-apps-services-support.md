@@ -4,7 +4,7 @@ description: "Cómo las aplicaciones de Office de usuario final (como Word y Out
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/07/2017
+ms.date: 09/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ede24547a01bc38e528ce02dac9abe0ade396c2d
-ms.sourcegitcommit: 6636defa6eca24360f15fb9ef93c2b82dc36cf76
+ms.openlocfilehash: eb40f6d2b43f175af71fd58b3bef4eb3d992152b
+ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-office-applications-and-services-support-azure-rights-management"></a>Cómo las aplicaciones y los servicios de Office admiten Azure Rights Management 
 
@@ -50,7 +50,7 @@ Cuando se usa Exchange Online o Exchange Server, es posible configurar opciones 
 
 -   **Directivas de prevención de pérdida de datos (DLP)** que contienen conjuntos de condiciones para filtrar mensajes de correo electrónico y tomar medidas para tratar de evitar la pérdida de contenido confidencial, por ejemplo, información personal o de tarjetas de crédito. Las sugerencias de las directivas se pueden usar cuando se detecta información confidencial, para alertar a los usuarios de que es posible que sea necesario aplicar protección. Para obtener más información, consulte [Prevención de pérdida de datos](https://technet.microsoft.com/library/jj150527(v=exchg.160\).aspx) en la biblioteca de Exchange.
 
--   **Cifrado de mensajes de Office 365** que usa reglas de transporte para enviar correos electrónicos cifrados a personas que están fuera de la empresa y que leen el correo en un explorador con una interfaz similar a la de Outlook en la Web. Puedes personalizar el texto de aviso y el texto de cabecera en los correos electrónicos cifrados de tu compañía e, incluso, agregar el logotipo de la compañía. Para más información, consulte [Cifrado de mensajes de Office 365](https://office.microsoft.com/o365-message-encryption-FX104179182.aspx) en el sitio web de Office.
+-   **Cifrado de mensajes de Office 365**, que admite enviar un mensaje de correo protegido y documentos de Office protegidos como datos adjuntos a cualquier dirección en cualquier dispositivo. Las cuentas de usuario que no usan Azure AD pueden usar la experiencia web, compatible con el uso de proveedores de identidades sociales o de un código de acceso de un solo uso. Para más información, vea [Set up new Office 365 Message Encryption capabilities built on top of Azure Information Protection](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e) (Configuración de nuevas capacidades del cifrado de mensajes de Office 365 sobre Azure Information Protection) desde el sitio web de Office.
 
 Si usa Exchange local, puede usar las características de IRM con el servicio Azure Rights Management. Para ello, implemente el conector de Azure Rights Management. Este conector actúa como un punto de retransmisión entre los servidores locales y el servicio Azure Rights Management.
 

@@ -4,7 +4,7 @@ description: "Información sobre las operaciones del ciclo de vida que son relev
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/23/2017
+ms.date: 09/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: c5b19c59-812d-420c-9c54-d9776309636c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 3220b1cbe93b110c838a4e85cc143b44de0d2d14
-ms.sourcegitcommit: 0fa5dd38c9d66ee2ecb47dfdc9f2add12731485e
+ms.openlocfilehash: 2f3ae7a0558cf209f3ec710a5114dbbc9a0dda9d
+ms.sourcegitcommit: cd3320fa34acb90f05d5d3e0e83604cdd46bd9a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 09/23/2017
 ---
 # <a name="customer-managed-tenant-key-life-cycle-operations"></a>Administración de cliente: operaciones de ciclo de vida de clave de inquilino
 
@@ -38,22 +38,28 @@ Ejemplos de cuándo tendrá que regenerar la clave de Azure Information Protecti
 
 - La compañía se ha dividido en una o dos compañías. Cuando regenera la clave de inquilino, la nueva empresa no tendrá acceso al nuevo contenido que publiquen sus empleados. Pueden acceder al antiguo contenido si tienen una copia de la antigua clave de inquilino.
 
+- Quiere cambiar de una topología de administración de claves a otra. 
+
 - Cree que la copia maestra de su clave de inquilino (la copia en su posesión) está en peligro.
 
-Para regenerar la clave, puede crear una clave en Azure Key Vault o usar otra clave que ya esté en esa herramienta. A continuación, siga los mismos procedimientos que usó para implementar BYOK para Azure Information Protection:
+Para regenerar la clave en otra clave que administre, puede crear una clave nueva en Azure Key Vault o usar una distinta que ya esté en Azure Key Vault. Después, siga el mismo procedimiento que usó para implementar BYOK para Azure Information Protection.
 
 1. Solo si la nueva clave está en un almacén de claves diferente al que ya está usando para Azure Information Protection: permita que Azure Information Protection use el almacén de claves mediante el cmdlet [Set-AzureRmKeyVaultAccessPolicy](/powershell/module/azurerm.keyvault/set-azurermkeyvaultaccesspolicy).
 
-2. Configure Azure Information Protection para usar la clave nueva mediante el cmdlet [Use-AadrmKeyVaultKey](/powershell/module/aadrm/use-aadrmkeyvaultkey).
+2. Si Azure Information Protection aún no conoce la clave que quiere usar, ejecute el cmdlet [Use-AadrmKeyVaultKey](/powershell/module/aadrm/use-aadrmkeyvaultkey).
 
 3. Configure el objeto de clave de inquilino mediante el cmdlet [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties).
 
-Para obtener más información sobre estos pasos, consulte [Implementación de su clave de inquilino de Azure Information Protection](../plan-design/plan-implement-tenant-key.md#implementing-your-azure-information-protection-tenant-key).
+Para más información sobre cada uno de estos pasos:
+
+- Para regenerar la clave a otra clave que administra, vea [Implementación de BYOK para la clave de inquilino de Azure Information Protection](../plan-design/plan-implement-tenant-key.md#implementing-byok-for-your-azure-information-protection-tenant-key).
+
+- Para regenerar la clave y cambiar a una clave administrada por Microsoft, vea la sección [Regenerar su clave de inquilino](operations-microsoft-managed-tenant-key.md#rekey-your-tenant-key) para operaciones administradas por Microsoft.
 
 ## <a name="backup-and-recover-your-tenant-key"></a>Realizar una copia de seguridad y recuperar la clave de inquilino
 Es responsable de realizar copias de seguridad de su clave de inquilino. Si ha generado su clave de inquilino en un HSM de Thales, para realizar una copia de seguridad de la clave acortada, el archivo de Word y las tarjetas de administrador.
 
-Si ha transferido la clave según los procedimientos de [Implementación del método Bring Your Own Key (BYOK)](../plan-design/plan-implement-tenant-key.md#implementing-your-azure-information-protection-tenant-key), el almacén de claves conservará el archivo de clave acortada como medida de protección en caso de que se produzcan errores en algún nodo de servicio. Este archivo está vinculado al mundo de la seguridad para la región o instancia específica de Azure. Sin embargo, no considere esto una copia de seguridad completa. Por ejemplo, si alguna vez necesita una copia de texto sin formato de la clave para usarla fuera de un HSM de Thales, Azure Key Vault no podrá recuperarla, ya que solo tiene una copia no recuperable.
+Como ha transferido la clave según el procedimiento de [Implementación de BYOK para la clave de inquilino de Azure Information Protection](../plan-design/plan-implement-tenant-key.md#implementing-byok-for-your-azure-information-protection-tenant-key), Key Vault conservará el archivo de clave acortada como medida de protección en caso de que se produzcan errores en algún nodo de servicio. Este archivo está vinculado al mundo de la seguridad para la región o instancia específica de Azure. Sin embargo, no considere esto una copia de seguridad completa. Por ejemplo, si alguna vez necesita una copia de texto sin formato de la clave para usarla fuera de un HSM de Thales, Azure Key Vault no podrá recuperarla, ya que solo tiene una copia no recuperable.
 
 ## <a name="export-your-tenant-key"></a>Exportar su clave de inquilino
 Si usa BYOK, no podrá exportar su clave de inquilino desde Azure Key Vault o desde Azure Information Protection. La copia del Almacén de claves de Azure no se puede recuperar. 

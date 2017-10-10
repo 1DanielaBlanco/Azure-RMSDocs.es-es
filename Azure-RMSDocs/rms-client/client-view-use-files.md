@@ -4,7 +4,7 @@ description: Instrucciones para ver y usar un documento protegido que requiere t
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/30/2017
+ms.date: 09/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ce1c7d4c-b5ff-4672-8b9a-a72129bac992
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d8fd80d6ff97118cd37dd62e293768b145c98595
-ms.sourcegitcommit: 1c3ebf4ad64b55db4fec3ad007fca71ab7d38c02
+ms.openlocfilehash: 8ed2480892d5a48075d986ee64733b0144bbc5b4
+ms.sourcegitcommit: cd3320fa34acb90f05d5d3e0e83604cdd46bd9a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 09/23/2017
 ---
 # <a name="view-and-use-files-that-have-been-protected-by-rights-management"></a>Ver y usar los archivos protegidos por Rights Management
 
@@ -50,13 +50,11 @@ Sin embargo, si tiene un dispositivo iOS o Android, puede usar la aplicación Az
 
 Para poder ver el archivo protegido, el servicio Rights Management utilizado para proteger el archivo primero debe confirmar que está autorizado para ver el archivo. Para ello, el servicio comprueba el nombre de usuario y la contraseña. En algunos casos, esto se puede almacenar en caché y no verá un mensaje que le solicite sus credenciales. En otros casos, se le pedirá que proporcione sus credenciales.
 
-Si su organización no tiene una cuenta basada en la nube para que la utilice (para Office 365 o Azure) y no usa una versión local equivalente (AD RMS), puede solicitar una cuenta gratuita que acepte sus credenciales para que pueda abrir archivos protegidos por Rights Management:
+Si la organización no tiene una cuenta en la nube para que pueda usarla (para Office 365 o Azure) y no usa una versión local equivalente (AD RMS), tiene dos opciones:
 
--   Para solicitar esta cuenta, haga clic en el vínculo para solicitar [RMS para usuarios](http://go.microsoft.com/fwlink/?LinkId=309469).
-    
-    Al suscribirse, use la dirección de correo electrónico de su empresa en lugar de una dirección de correo electrónico personal. Si va a suscribirse porque le enviaron un archivo adjunto protegido por correo electrónico, use la misma dirección de correo electrónico que se usó para enviarle el mensaje de correo electrónico.
-    
--   Para obtener más información, consulte [RMS for individuals and Azure Rights Management](../understand-explore/rms-for-individuals.md) (RMS para usuarios y Azure Rights Management).
+- Si recibe un correo protegido, siga las instrucciones para iniciar sesión con su proveedor de identidades sociales (como Google para una cuenta de Gmail) o solicitar un código de acceso de un solo uso.
+
+- Puede solicitar una cuenta gratuita que aceptará las credenciales para que pueda abrir documentos que estén protegidos por Rights Management. Para solicitar esta cuenta, haga clic en el vínculo para solicitar [RMS para usuarios](http://go.microsoft.com/fwlink/?LinkId=309469) y use la dirección de correo de su empresa en lugar de una dirección de correo personal. 
 
 ## <a name="to-view-and-use-a-protected-document"></a>Para ver y usar un documento protegido
 
@@ -64,7 +62,7 @@ Si su organización no tiene una cuenta basada en la nube para que la utilice (p
 
 2. Si ve una página para **iniciar sesión** o **registrarse**: haga clic en **Iniciar sesión** y escriba sus credenciales. Si el archivo protegido se le envió como datos adjuntos, asegúrese de especificar la misma dirección de correo electrónico que la usada para enviar el archivo.
     
-    Si no tiene una cuenta aceptable, vea la sección [Solicitudes de autenticación](#prompts-for-authentication) de esta página. Suscríbase a una cuenta gratuita y vuelva a estas instrucciones.
+    Si no tiene una cuenta aceptable, vea la sección [Solicitudes de autenticación](#prompts-for-authentication) de esta página.
 
 3. Se abre una versión de solo lectura del archivo en **Azure Information Protection Viewer**. Si tiene permisos suficientes, puede imprimir el archivo y modificarlo. 
 
@@ -77,8 +75,7 @@ Si su organización no tiene una cuenta basada en la nube para que la utilice (p
 5. Si tiene archivos protegidos adicionales para abrir, puede ir directamente a ellos desde el visor, mediante la opción **Abrir**. El archivo seleccionado reemplaza al archivo original en el visor. 
 
 > [!TIP]
-> Si no se abre el archivo protegido, utilice la opción **Ayuda y comentarios** de Azure Information Protection y seleccione **Ejecutar diagnósticos**. Una vez finalizadas las pruebas, restablezca al cliente, lo que puede resolver el problema.
-
+> Si el archivo protegido no se abre, puede usar la opción **Ejecutar diagnósticos** desde **Proteger** > **Ayuda y comentarios** para comprobar si en el cliente de Azure Information Protection hay problemas que impidan abrir un documento protegido.
 
 ## <a name="other-instructions"></a>Otras instrucciones
 Puede encontrar más instrucciones sobre procedimientos en la guía del usuario de Azure Information Protection:

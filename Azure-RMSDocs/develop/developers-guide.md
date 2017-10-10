@@ -1,22 +1,21 @@
 ---
-title: "Guía del desarrollador - AIP"
+title: "Guía del desarrollador de Azure Information Protection"
 description: Los desarrolladores pueden usar Azure Information Protection para proteger y administrar todo tipo de archivos
 author: BrucePerlerMS
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 03/13/2017
+ms.date: 09/25/2017
 ms.topic: article
-ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a53c2df2-a0a2-4f1f-995b-75ba55e4489b
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: 3268b175b2e029c55ec5488a8c4ace8ad92fcb18
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: ea13c3dbf37dd22a6e93786390bd6be4da7a6959
+ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="azure-information-protection-developers-guide"></a>Guía del desarrollador de Azure Information Protection
 
@@ -104,7 +103,7 @@ Cada uno de los siguientes temas presenta instrucciones específicas sobre un as
 
 ## <a name="videos"></a>Vídeos
 
-Dan Plastina de Microsoft proporciona esta [introducción a Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection)
+[Introducción a Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection)
 
 Estos vídeos son de la conferencia de Microsoft Ignite 2016
 

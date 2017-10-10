@@ -4,7 +4,7 @@ description: Identifique los diferentes niveles de control y responsabilidad que
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/19/2017
+ms.date: 09/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,19 +12,19 @@ ms.technology: techgroup-identity
 ms.assetid: 1284d0ee-0a72-45ba-a64c-3dcb25846c3d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 75225e3a49b671449ee0f1d5fafd47de08660c41
-ms.sourcegitcommit: 0fa5dd38c9d66ee2ecb47dfdc9f2add12731485e
+ms.openlocfilehash: afe33bcee3516589bd87642b0f15206b90a4bb41
+ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="operations-for-your-azure-information-protection-tenant-key"></a>Operaciones para la clave de inquilino de Azure Information Protection
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
-Según la topología de claves de inquilino (administrada por Microsoft o administrada por el cliente), puede usar diferentes niveles de control y responsabilidad para su clave de inquilino de Azure Information Protection después de su implementación.
+Según la topología de claves de inquilino para Azure Information Protection, tiene distintos niveles de control y responsabilidad para la clave de inquilino de Azure Information Protection. Las dos topologías de claves son **administrada por Microsoft** y **administrada por el cliente**.
 
-La administración de su propia clave de inquilino en el Almacén de claves de Azure se conoce como BYOK, o "aportar su propia clave". Para más información sobre este escenario y acerca de cómo elegir entre las dos topologías clave, vea [Planeamiento e implementación de la clave de inquilino de Azure Rights Management](../plan-design/plan-implement-tenant-key.md).
+La administración de su propia clave de inquilino en el Almacén de claves de Azure se conoce como BYOK, o "aportar su propia clave". Para más información sobre este escenario y cómo elegir entre las dos topologías clave, vea [Planeamiento e implementación de su clave de inquilino de Azure Information Protection](../plan-design/plan-implement-tenant-key.md).
 
 En la tabla siguiente se identifican las operaciones que puede realizar según la topología que haya elegido para su clave de inquilino de Azure Information Protection.
 
@@ -36,7 +36,7 @@ En la tabla siguiente se identifican las operaciones que puede realizar según l
 |Exportar su clave de inquilino|Sí|No|
 |Responder a una infracción|Sí|Sí|
 
-Después de identificar la topología que ha implementado, seleccione una de las secciones siguientes para obtener más información sobre estas operaciones de su clave de inquilino de Azure Information Protection:
+Después de identificar la topología que ha implementado, seleccione uno de los vínculos siguientes para saber más sobre estas operaciones de su clave de inquilino de Azure Information Protection:
 
 - [Clave de inquilino administrada por Microsoft](operations-microsoft-managed-tenant-key.md)
 - [Clave de inquilino administrada por el cliente](operations-customer-managed-tenant-key.md)
