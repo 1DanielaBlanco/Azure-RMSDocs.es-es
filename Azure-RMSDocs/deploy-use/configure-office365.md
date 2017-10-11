@@ -4,7 +4,7 @@ description: "Información e instrucciones para que los administradores configur
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/27/2017
+ms.date: 09/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 53d93a36d4b18c93f54349633046e5fc242e7c2b
-ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
+ms.openlocfilehash: 5d652f938ac7a9008e36ee75b52f2b4b7b6612d1
+ms.sourcegitcommit: 9ed2c454a7aaf965ff1cceda0447928111001488
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 09/29/2017
 ---
 # <a name="office-365-configuration-for-clients-and-online-services-to-use-the-azure-rights-management-service"></a>Office 365: configuración para clientes y servicios en línea que usan el servicio Azure Rights Management
 
@@ -31,7 +31,7 @@ Para más información sobre cómo funciona IRM de Exchange Online con el servic
 
 Para configurar Exchange Online para usar el servicio Azure Rights Management, vea [Set up new Office 365 Message Encryption capabilities built on top of Azure Information Protection](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e) (Configuración de nuevas capacidades del cifrado de mensajes de Office 365 sobre Azure Information Protection).
 
-Si previamente ha configurado Exchange Online para que use el servicio Azure Rights Management y, para ello, ha importado su dominio de publicación de confianza (TPD), use el mismo conjunto de instrucciones para habilitar las nuevas capacidades de Exchange Online.
+Si anteriormente ha configurado Exchange Online para IRM y, para ello, ha importado su dominio de publicación de confianza (TPD) desde Azure Rights Management Service, use el mismo conjunto de instrucciones para habilitar las nuevas funcionalidades de Exchange Online.
 
 Después de configurar Exchange Online para que use el servicio Azure Rights Management, puede configurar las características que aplican automáticamente protección de la información, como [reglas de transporte](https://technet.microsoft.com/library/dd302432.aspx), [directivas de prevención de pérdida de datos (DLP)](https://technet.microsoft.com/library/jj150527%28v=exchg.150%29.aspx) y [correo de voz protegido](https://technet.microsoft.com/library/dn198211%28v=exchg.150%29.aspx) (mensajería unificada).
 

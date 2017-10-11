@@ -4,7 +4,7 @@ description: "Si conoce o ha implementado con anterioridad Active Directory Righ
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/22/2017
+ms.date: 10/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8123bd62-1814-4d79-b306-e20c1a00e264
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4e9aa6a3e1742fc88f3c1e8e297f1391e2e89b75
-ms.sourcegitcommit: cd3320fa34acb90f05d5d3e0e83604cdd46bd9a9
+ms.openlocfilehash: 60765865a0c422f4baac72ed88a6bca9b96ed66f
+ms.sourcegitcommit: 4d730631ea8c16c7150b794722bb23921f1b2008
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="comparing-azure-information-protection-and-ad-rms"></a>Comparación de Azure Information Protection y AD RMS
 
@@ -51,8 +51,8 @@ Para obtener más información y conocer otras diferencias, vea en la tabla sigu
 |Azure Information Protection|AD RMS|
 |-----------------------------------------------------------------------------------------|--------------------------------------------------------|
 |Admite capacidades de Information Rights Management (IRM) en servicios de Microsoft Online, como Exchange Online y SharePoint Online, así como Office 365.<br /><br />También admite productos de servidor de Microsoft locales, como Exchange Server, SharePoint Server y servidores de archivos que ejecutan Windows Server e Infraestructura de clasificación de archivos (FCI).|Admite productos de servidor de Microsoft locales, como Exchange Server, SharePoint Server y servidores de archivos que ejecutan Windows Server e Infraestructura de clasificación de archivos (FCI).|
-|Habilita la confianza implícita entre organizaciones y usuarios de cualquier organización. De este modo, el contenido protegido puede compartirse entre usuarios dentro de la misma organización o entre organizaciones cuando se dispone de [!INCLUDE[o365_1](../includes/o365_1_md.md)] o [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)], o si los usuarios se registran en RMS para usuarios.|La confianza debe definirse explícitamente en una relación directa de punto a punto entre dos organizaciones mediante el uso de dominios de usuario de confianza (TUD) o confianzas federadas que creas mediante Active Directory Federation Services (AD FS).|
-|Envía un correo electrónico protegido (con adjuntos de documento de Office que se protegen automáticamente) a los usuarios cuando no existe ninguna relación de confianza. Para visualizarlo se usa la federación con proveedores de redes sociales o un código de acceso de un solo uso y el explorador web.|No admite enviar un correo protegido cuando no existe ninguna relación de confianza.|
+|Permite colaborar automáticamente de forma segura en los documentos con cualquier organización que también use Azure AD para la autenticación. Esto significa que las organizaciones pueden proteger los documentos que comparten internamente o con otras organizaciones.|Colaborar de forma segura en documentos de fuera de la organización requiere la definición explícita de confianzas de autenticación en una relación directa de punto a punto entre dos organizaciones. Debe configurar dominios de usuario de confianza (TUD) o confianzas federadas que cree mediante Servicios de federación de Active Directory (AD FS).|
+|Envíe un correo electrónico protegido (opcionalmente, con datos adjuntos a documentos de Office que estén protegidos automáticamente) a los usuarios cuando no exista ninguna relación de confianza de autenticación. Este escenario se consigue mediante el uso de la federación con proveedores de redes sociales o un código de acceso de un solo uso y un explorador web para la visualización.|No admite el envío de correo electrónico protegido cuando no existe ninguna relación de confianza de autenticación.|
 |Proporciona dos plantillas de directivas de derechos predeterminadas que restringen el acceso al contenido a tu propia organización; una que proporciona vista de solo lectura de contenido protegido, y la otra que permite escribir o modificar permisos para el contenido protegido.<br /><br />También puede crear sus propias plantillas personalizadas, incluidas plantillas de departamentos, visibles tan solo para un subconjunto de usuarios. Para obtener más información, vea [Configuración y administración de plantillas para Azure Information Protection](../deploy-use/configure-policy-templates.md).<br /><br />Además, los usuarios pueden definir su propio conjunto de permisos si las plantillas no son suficientes.|No hay plantillas predeterminadas, por lo que deberá crearlas y distribuirlas. Para obtener más información, consulte [Consideraciones de la plantilla de directivas para AD RMS](http://go.microsoft.com/fwlink/?LinkId=154765).<br /><br />Además, los usuarios pueden definir su propio conjunto de permisos si las plantillas no son suficientes.|
 |La versión mínima compatible de Microsoft Office es Office 2010, que requiere el [cliente de Azure Information Protection](../rms-client/aip-client.md) o la aplicación RMS sharing.<br /><br />Microsoft Office para Mac:<br /><br />- Microsoft Office para Mac 2016: compatible<br /><br />- Microsoft Office para Mac 2011: no compatible|La versión mínima compatible de Microsoft Office es Office 2007.<br /><br />Microsoft Office para Mac:<br /><br />- Microsoft Office para Mac 2016: compatible<br /><br />- Microsoft Office para Mac 2011: compatible|
 |Admite el [cliente de Azure Information Protection](../rms-client/aip-client.md) para Windows, iOS y Android. La aplicación RMS sharing continúa admitiendo equipos Mac y Windows Phone.<br /><br />Además, el cliente de Azure Information Protection admite lo siguiente:<br /><br />- Uso compartido con personas de otra organización.<br /><br />- Un sitio de seguimiento de documentos para los usuarios, que incluye la capacidad de revocar un documento.|Admite el [cliente de Azure Information Protection](../rms-client/aip-client.md) para Windows, iOS y Android. La aplicación RMS sharing continúa admitiendo equipos Mac y Windows Phone. Sin embargo, el uso compartido no es compatible con compartir con personas de otra organización o el sitio de Seguimiento de documentos y la capacidad de los usuarios de revocar documentos.|
