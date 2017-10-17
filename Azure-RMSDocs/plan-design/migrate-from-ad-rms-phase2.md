@@ -4,7 +4,7 @@ description: "Fase 2 de la migración desde AD RMS a Azure Information Protectio
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/22/2017
+ms.date: 10/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: db8f8de9cdda00f5983ff448aa895a5767d953b1
-ms.sourcegitcommit: dd567f8395bb55e4ca174ef1d72b1a14cf7735e1
+ms.openlocfilehash: c81d7131bfb2a5f1e0742cd8dd55d52e3a65984a
+ms.sourcegitcommit: 45c23b3b353ad0e438292cb1cd8d1b13061620e1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>Fase 2 de la migración: configuración del lado servidor para AD RMS
 
@@ -112,11 +112,7 @@ Abra una sesión de PowerShell y ejecute los comandos siguientes:
     
         Enable-Aadrm
 
-**¿Qué ocurre si el inquilino de Azure Information Protection ya está activado?** Si el servicio Azure Rights Management ya está activado en su organización, es posible que los usuarios ya hayan usado Azure Information Protection para proteger el contenido con una clave de inquilino generada automáticamente (y las plantillas predeterminadas) en lugar de las claves (y plantillas) existentes de AD RMS. Es poco probable que ocurra en equipos que estén bien administrados en la intranet, ya que se configuran automáticamente para su infraestructura de AD RMS. Pero esto puede suceder en equipos de grupo de trabajo o equipos que se conectan con poca frecuencia a la intranet. Desafortunadamente, también es difícil identificar estos equipos, motivo por el que se recomienda no activar el servicio antes de importar los datos de configuración de AD RMS.
-
-Si el inquilino de Azure Information Protection ya está activado y puede identificar estos equipos, asegúrese de que ejecuta el script CleanUpRMS.cmd en estos equipos, como se describe en el [paso 7](migrate-from-ad-rms-phase3.md#step-7-reconfigure-clients-to-use-azure-information-protection). La ejecución de este script les obliga a reinicializar el entorno de usuario, así descargan la clave de inquilino y las plantillas importadas actualizadas.
-
-Además, si ha creado plantillas personalizadas que quiera usar después de la migración, debe exportarlas e importarlas. Este procedimiento se explica en el paso siguiente. 
+**¿Qué ocurre si el inquilino de Azure Information Protection ya está activado?** Si el servicio Azure Rights Management ya está activado para la organización y ha creado plantillas personalizadas que quiere usar después de la migración, debe exportar e importar estas plantillas. Este procedimiento se explica en el paso siguiente. 
 
 ## <a name="step-6-configure-imported-templates"></a>Paso 6. Configure las plantillas importadas.
 

@@ -4,7 +4,7 @@ description: "Fase 1 de la migración desde AD RMS a Azure Information Protectio
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/27/2017
+ms.date: 10/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: d954d3ee-3c48-4241-aecf-01f4c75fa62c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a1f448a51ee4bfecfd0d680b842eed44aa816ed1
-ms.sourcegitcommit: e4199d243d9f6c80efccc0f0d5574d069d69f46d
+ms.openlocfilehash: 198698bbef8fbb778545c2599798afd1255a01bc
+ms.sourcegitcommit: 45c23b3b353ad0e438292cb1cd8d1b13061620e1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="migration-phase-1---preparation"></a>Fase 1 de la migración: preparación
 
@@ -70,13 +70,13 @@ En el caso de la mayoría de las migraciones, no resulta práctico migrar todos 
 
     Después, configure este grupo para controles de incorporación. Para ello, sustituya el identificador de objeto de grupo por el que se muestra en este ejemplo y escriba **Y** para confirmar cuando se le pida:
 
-        Set-AadrmOnboardingControlPolicy -UseRmsUserLicense $False -SecurityGroupObjectId "fba99fed-32a0-44e0-b032-37b419009501"
+        Set-AadrmOnboardingControlPolicy -UseRmsUserLicense $False -SecurityGroupObjectId "fba99fed-32a0-44e0-b032-37b419009501" -Scope WindowsApp
 
 3. [Descargue el siguiente archivo](https://go.microsoft.com/fwlink/?LinkId=524619) que contiene scripts de migración de cliente:
     
-    **ClientMigration.zip**
+    **Migration-Scripts.zip**
     
-4. Extraiga los archivos y siga las instrucciones de **PrepareClient.cmd** de modo que contenga el nombre del servidor de la dirección URL de licencias de extranet del clúster de AD RMS. 
+4. Extraiga los archivos y siga las instrucciones de **Prepare-Client.cmd** de modo que contenga el nombre del servidor de la dirección URL de licencias de extranet del clúster de AD RMS. 
     
     Para buscar este nombre, en la consola de Active Directory Rights Management Services, haga clic en el nombre del clúster. En la información **Detalles del clúster**, copie el nombre del servidor del valor **Licencias** de la sección de direcciones URL de clúster de extranet. Por ejemplo: **rmscluster.contoso.com**.
 

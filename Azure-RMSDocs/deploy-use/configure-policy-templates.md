@@ -4,7 +4,7 @@ description: "Configure y administre plantillas de administración de derechos d
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/21/2017
+ms.date: 10/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: c27f239467bf546479827c7ca215a8892553e9c0
-ms.sourcegitcommit: 76bf1f93b02fd75bead8ccdaaf34da1a6aad571f
+ms.openlocfilehash: 5afd71e059ef22eed61347e6916b9cbb6c2dc7f0
+ms.sourcegitcommit: 326930de25b259c18469f4100ec5774a04bedc7b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 10/08/2017
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>Configuración y administración de plantillas para Azure Information Protection
 
@@ -40,15 +40,7 @@ Las plantillas de Rights Management ahora están integradas con la directiva de 
 
 ## <a name="default-templates"></a>Plantillas predeterminadas
 
-Cuando obtenga una suscripción a Azure Information Protection o a Office 365 que incluya el servicio Azure Rights Management, se crearán automáticamente dos plantillas predeterminadas para el inquilino que restringen el acceso a los usuarios autorizados de la organización. Cuando se crean estas dos plantillas, presentan las restricciones siguientes: 
-
-- Lectura o modificación de permisos de contenido protegido
-    
-    - **Permisos específicos**: Ver contenido, Guardar archivo, Editar contenido, Ver derechos asignados, Permitir macros, Reenviar, Responder y Responder a todos
-
-- Visualización de solo lectura para el contenido protegido
-    
-    - **Permiso específico**: Ver contenido
+Cuando obtenga una suscripción a Azure Information Protection o a Office 365 que incluya el servicio Azure Rights Management, se crearán automáticamente dos plantillas predeterminadas para el inquilino que restringen el acceso a los usuarios autorizados de la organización. Al crear estas dos plantillas, tienen los permisos que aparecen en la documentación [Configuración de los derechos de uso para Azure Rights Management](configure-usage-rights.md#rights-included-in-the-default-templates).
 
 Además, las plantillas están configuradas para permitir el acceso sin conexión durante siete días y no tienen fecha de expiración.
 
@@ -63,22 +55,22 @@ También puedes crear tus propias plantillas personalizadas. Aunque probablement
 
 Si ha adquirido hace poco una suscripción a Azure Information Protection, las plantillas predeterminadas se crean con los nombres siguientes:
 
-- **Confidencial \ Todos los empleados** para los permisos de lectura o modificación de contenido protegido.
+- **Confidencial\Todos los empleados**, que concede permisos de lectura y modificación para el contenido protegido.
 
-- **Extremadamente confidencial \ Todos los empleados** para la visualización de solo lectura de contenido protegido.
+- **Extremadamente confidencial\Todos los empleados**, que concede permiso de solo lectura para el contenido protegido.
 
 Si ha adquirido la suscripción a Azure Information Protection hace algún tiempo, o si no tiene ninguna suscripción a Azure Information Protection pero tiene una a Office 365 que incluye Azure Rights Management, las plantillas predeterminadas se crean con los nombres siguientes:
 
-- **\<nombre de la organización> - Confidencial** para los permisos de lectura o modificación de contenido protegido.
+- **\<nombre de la organización> - Confidencial**, que concede permisos de lectura y modificación para el contenido protegido.
 
-- **\<nombre de la organización> - Confidencial. Ver solo** para la visualización de solo lectura de contenido protegido. 
+- **\<nombre de la organización> - Solo vista confidencial**, que concede permiso de solo lectura para el contenido protegido. 
 
 Puede cambiar el nombre de estas plantillas predeterminadas (y volver a configurarlas) al usar Azure Portal.
 
 >[!NOTE]
 >Si no ve las plantillas predeterminadas en la hoja **Azure Information Protection - Global policy** (Azure Information Protection: directiva global), significa que se han convertido en etiquetas o se han vinculado a una etiqueta. Siguen existiendo como plantillas, pero en el Azure Portal las verá como parte de una configuración de etiqueta que incluye la protección de Azure RMS. Siempre puede confirmar qué plantillas tiene su inquilino. Para ello, ejecute [Get-AadrmTemplate](/powershell/module/aadrm/get-aadrmtemplate) desde el [módulo de AADRM de PowerShell](administer-powershell.md).
 >
->Puede convertir manualmente las plantillas, como se explica más adelante en la sección [Para convertir plantillas en etiquetas](#to-convert-templates-to-labels), y después cambiarles el nombre, si le interesa. O bien, se convertirán automáticamente si la directiva predeterminada de Azure Information Protection se ha creado recientemente y se ha activado en ese momento el servicio de Azure Rights Management para el inquilino.
+>Puede convertir manualmente las plantillas, como se explica más adelante en la sección [Para convertir plantillas en etiquetas](#to-convert-templates-to-labels), y después cambiarles el nombre, si le interesa. O bien, se convierten automáticamente si la directiva predeterminada de Azure Information Protection se ha creado recientemente y se ha activado en ese momento el servicio Azure Rights Management para el inquilino.
 
 Las plantillas archivadas se muestran como no disponibles en la hoja **Azure Information Protection - Global policy** (Azure Information Protection: directiva global). Estas plantillas no se puede seleccionar para etiquetas, pero se pueden convertir en etiquetas.
 
@@ -101,7 +93,7 @@ Antes de editar estas plantillas o convertirlas en etiquetas, asegúrese de que 
 
 - Las plantillas de departamento (plantillas configuradas para un ámbito) se muestran en la directiva Global. Actualmente, si edita y guarda una plantilla de departamento, se quita la configuración del ámbito. El equivalente de una plantilla con ámbito en la directiva de Azure Information Protection es una [directiva con ámbito](configure-policy-scope.md). Si convierte la plantilla en una etiqueta, puede seleccionar un ámbito existente.
     
-    Además, actualmente no puede establecer la configuración de compatibilidad de aplicaciones para una plantilla de departamento. Si es necesario, puede usar el cmdlet [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) de PowerShell para establecer este valor.
+    Además, actualmente no puede establecer la configuración de compatibilidad de aplicaciones para una plantilla de departamento. Si es necesario, puede establecer la configuración de compatibilidad de aplicaciones mediante PowerShell y el cmdlet [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty).
 
 - Al convertir una plantilla en etiqueta o vincular una plantilla a una etiqueta, ya no la pueden usar otras etiquetas. Además, esta plantilla ya no se muestra en la sección **Plantillas** o **Plantillas de protección**. Esta sección cambiará de nombre próximamente.
 
@@ -149,7 +141,7 @@ Cuando se convierte una plantilla en etiqueta:
 
 - El nombre de la plantilla se convierte en un nombre de etiqueta nuevo y la descripción de la plantilla, en la información sobre herramientas de la etiqueta. 
 
-- Si se publicó el estado de la plantilla, esta configuración se asigna a **Enabled**: **On** (Habilitada: Activada) para la etiqueta, que ahora se muestra como esta etiqueta a los usuarios cuando publique a continuación la directiva de Azure Information Protection. Si se archivó el estado de la plantilla, esta configuración se asigna a **Enabled**: **Off** (Habilitada: Desactivada) para la etiqueta y no se muestra como una etiqueta disponible para los usuarios.
+- Si se publicó el estado de la plantilla, esta configuración se asigna a **Enabled**: **On** (Habilitada: Activada) para la etiqueta, que ahora se muestra como esta etiqueta a los usuarios cuando publique a continuación la directiva de Azure Information Protection. Si se ha archivado el estado de la plantilla, esta configuración se asigna a **Enabled**: **Off** (Habilitada: Desactivada) para la etiqueta y no se muestra como una etiqueta disponible para los usuarios.
 
 - La configuración de protección se conserva y puede editarla si es necesario. Además, puede agregar otros valores de etiqueta como marcadores visuales y condiciones.
 

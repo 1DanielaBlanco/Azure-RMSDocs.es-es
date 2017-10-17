@@ -4,7 +4,7 @@ description: "Fase 5 de la migración desde AD RMS a Azure Information Protectio
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2017
+ms.date: 10/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 11775c64cbd5abd7c10a145a2d48f335db2d5b69
-ms.sourcegitcommit: 8251e4db274519a2eb8033d3135a22c27130bd30
+ms.openlocfilehash: db6cb1c6327808616ee98b9e5b14f2a92a590bff
+ms.sourcegitcommit: 45c23b3b353ad0e438292cb1cd8d1b13061620e1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="migration-phase-5---post-migration-tasks"></a>Fase 5 de la migración: tareas posteriores a la migración
 
@@ -48,11 +48,35 @@ Después de desaprovisionar los servidores de AD RMS, seguramente le interese re
 >[!IMPORTANT]
 > Al final de esta migración, no se puede usar el clúster de AD RMS con Azure Information Protection y la opción Hold your own key (HYOK). Si decide usar HYOK para una etiqueta de Azure Information Protection, debido a los redireccionamientos que hay ahora, el clúster de AD RMS que use debe tener direcciones URL de licencias diferentes de las de los clústeres que ha migrado.
 
-## <a name="step-11-remove-onboarding-controls"></a>Paso 11. Quitar controles de incorporación
+## <a name="step-11-reconfigure-mobile-device-clients-and-mac-computers-and-remove-onboarding-controls"></a>Paso 11. Reconfiguración de los clientes de dispositivos móviles y los equipos Mac y quitar controles de incorporación
 
-Una vez que se han migrado todos los clientes existentes a Azure Information Protection, no hay ninguna razón para seguir usando los controles de incorporación y mantener el grupo **AIPMigrated** que ha creado para el proceso de migración. 
+En los clientes de dispositivos móviles y los equipos Mac, quite los registros de DNS SRV que creó al implementar la [extensión de AD RMS para dispositivos móviles](http://technet.microsoft.com/library/dn673574.aspx).
 
-Quite primero los controles de incorporación y, después, podrá eliminar el grupo **AIPMigrated** y cualquier tarea de implementación de software que haya creado para implementar los redireccionamientos.
+Cuando estos cambios de DNS se hayan propagado, dichos clientes detectarán y empezarán a usar automáticamente el servicio Azure Rights Management. Sin embargo, los equipos Mac que ejecutan Office Mac almacenan en caché la información de AD RMS. En el caso de estos equipos, este proceso puede tardar hasta 30 días. 
+
+Para obligar a los equipos Mac a ejecutar el proceso de detección inmediatamente, en la cadena de claves, busque "adal" y elimine todas las entradas ADAL. Luego, ejecute los siguientes comandos en estos equipos:
+
+````
+
+rm -r ~/Library/Cache/MSRightsManagement
+
+rm -r ~/Library/Caches/com.microsoft.RMS-XPCService
+
+rm -r ~/Library/Caches/Microsoft\ Rights\ Management\ Services
+
+rm -r ~/Library/Containers/com.microsoft.RMS-XPCService
+
+rm -r ~/Library/Containers/com.microsoft.RMSTestApp
+
+rm ~/Library/Group\ Containers/UBF8T346G9.Office/DRM.plist
+
+killall cfprefsd
+
+````
+
+Una vez que se han migrado todos los equipos Windows existentes a Azure Information Protection, no hay ninguna razón para seguir usando los controles de incorporación y mantener el grupo **AIPMigrated** que ha creado para el proceso de migración. 
+
+Quite primero los controles de incorporación y, después, puede eliminar el grupo **AIPMigrated** y cualquier método de implementación de software que haya creado para implementar los scripts de migración.
 
 Para quitar los controles de incorporación:
 
@@ -63,6 +87,8 @@ Para quitar los controles de incorporación:
 2. Ejecute el siguiente comando y escriba **Y** para confirmar:
 
         Set-AadrmOnboardingControlPolicy -UseRmsUserLicense $False
+    
+    Tenga en cuenta que este comando quita cualquier obligatoriedad de licencia del servicio de protección Azure Rights Management, de modo que todos los equipos pueden proteger documentos y correos electrónicos.
 
 3. Confirme que ya no están establecidos los controles de incorporación:
 

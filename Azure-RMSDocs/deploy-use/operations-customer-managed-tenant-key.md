@@ -4,7 +4,7 @@ description: "Información sobre las operaciones del ciclo de vida que son relev
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/22/2017
+ms.date: 10/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: c5b19c59-812d-420c-9c54-d9776309636c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2f3ae7a0558cf209f3ec710a5114dbbc9a0dda9d
-ms.sourcegitcommit: cd3320fa34acb90f05d5d3e0e83604cdd46bd9a9
+ms.openlocfilehash: 47f2e19e7eed107a44ac1bed744015c878876e9f
+ms.sourcegitcommit: db0c5185aab9ba4f71b9d2aa1dd87681dfe7c1b5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="customer-managed-tenant-key-life-cycle-operations"></a>Administración de cliente: operaciones de ciclo de vida de clave de inquilino
 
@@ -57,9 +57,11 @@ Para más información sobre cada uno de estos pasos:
 - Para regenerar la clave y cambiar a una clave administrada por Microsoft, vea la sección [Regenerar su clave de inquilino](operations-microsoft-managed-tenant-key.md#rekey-your-tenant-key) para operaciones administradas por Microsoft.
 
 ## <a name="backup-and-recover-your-tenant-key"></a>Realizar una copia de seguridad y recuperar la clave de inquilino
-Es responsable de realizar copias de seguridad de su clave de inquilino. Si ha generado su clave de inquilino en un HSM de Thales, para realizar una copia de seguridad de la clave acortada, el archivo de Word y las tarjetas de administrador.
+Puesto que está administrando la clave de inquilino, usted es el responsable de realizar una copia de seguridad de la clave que usa Azure Information Protection. 
 
-Como ha transferido la clave según el procedimiento de [Implementación de BYOK para la clave de inquilino de Azure Information Protection](../plan-design/plan-implement-tenant-key.md#implementing-byok-for-your-azure-information-protection-tenant-key), Key Vault conservará el archivo de clave acortada como medida de protección en caso de que se produzcan errores en algún nodo de servicio. Este archivo está vinculado al mundo de la seguridad para la región o instancia específica de Azure. Sin embargo, no considere esto una copia de seguridad completa. Por ejemplo, si alguna vez necesita una copia de texto sin formato de la clave para usarla fuera de un HSM de Thales, Azure Key Vault no podrá recuperarla, ya que solo tiene una copia no recuperable.
+Si ha generado la clave de inquilino en local, en un HSM de Thales, para realizar una copia de seguridad de la clave, haga una copia de seguridad del archivo de clave acortada, el archivo de Word y las tarjetas de administrador. Al transferir la clave a Azure Key Vault, el servicio guarda el archivo de clave acortada para protegerse frente a errores de cualquier nodo del servicio. Este archivo está vinculado al mundo de la seguridad para la región o instancia específica de Azure. Sin embargo, no considere esto una copia de seguridad completa. Por ejemplo, si alguna vez necesita una copia de texto sin formato de la clave para usarla fuera de un HSM de Thales, Azure Key Vault no podrá recuperarla, ya que solo tiene una copia no recuperable.
+
+Azure Key Vault tiene un [cmdlet de copia de seguridad](/powershell/module/azurerm.keyvault/Backup-AzureKeyVaultKey) que puede descargar y almacenar en un archivo y usar para hacer una copia de seguridad de una clave. Dado que el contenido descargado se cifra, no se puede usar fuera de Azure Key Vault. 
 
 ## <a name="export-your-tenant-key"></a>Exportar su clave de inquilino
 Si usa BYOK, no podrá exportar su clave de inquilino desde Azure Key Vault o desde Azure Information Protection. La copia del Almacén de claves de Azure no se puede recuperar. 
