@@ -4,7 +4,7 @@ description: "Algunas de las preguntas más frecuentes sobre el servicio de prot
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/27/2017
+ms.date: 10/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 381eaee2aa33a2a6a715c31616ad92a0f957e8b0
-ms.sourcegitcommit: dd567f8395bb55e4ca174ef1d72b1a14cf7735e1
+ms.openlocfilehash: 9983b088b5856f8c2223d05624c3bee21b80fd15
+ms.sourcegitcommit: db0c5185aab9ba4f71b9d2aa1dd87681dfe7c1b5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Preguntas más frecuentes sobre la protección de datos en Azure Information Protection
 
@@ -86,6 +86,18 @@ Las plantillas personalizadas se han migrado a Azure Portal, donde se puede segu
 
 Para obtener más información sobre las plantillas en Azure Portal, vea [Configuración y administración de plantillas para Azure Information Protection](../deploy-use/configure-policy-templates.md).
 
+## <a name="ive-protected-a-document-and-now-want-to-change-the-usage-rights-or-add-usersdo-i-need-to-reprotect-the-document"></a>He protegido un documento y ahora quiero cambiar los derechos de uso o agregar usuarios. ¿Tengo que volver a proteger el documento?
+
+Si el documento se ha protegido mediante una etiqueta o una plantilla, no hay necesidad de protegerlo de nuevo. Realice los cambios en los derechos de uso o agregue nuevos grupos (o usuarios) para modificar la etiqueta o la plantilla y, luego, guarde y publique los cambios:
+
+- Si un usuario no ha accedido al documento antes de que haya realizado los cambios, estos se aplican en cuanto el usuario abre el documento. 
+
+- Si un usuario ya ha accedido al contenido, los cambios se aplican después de que expire la [licencia de uso](../deploy-use/configure-usage-rights.md#rights-management-use-license). Vuelva a proteger el documento únicamente si no puede esperar a que expire la licencia de uso. Al volver a proteger el contenido, se crea una nueva versión del documento y, por lo tanto, una nueva licencia de uso para el usuario, lo cual resulta muy eficaz.
+
+O bien, si ya ha configurado un grupo para los permisos necesarios, puede cambiar la pertenencia al grupo para incluir o excluir usuarios sin necesidad de cambiar la etiqueta o la plantilla. Puede haber un pequeño retraso en la aplicación de los cambios porque la pertenencia a grupos se [almacena en caché](../plan-design/prepare.md#group-membership-caching-by-azure-rights-management) mediante el servicio Azure Rights Management.
+
+Si el documento se ha protegido mediante permisos personalizados, no es posible cambiar los del documento existente. Debe proteger el documento de nuevo y especificar todos los usuarios y todos los derechos de uso que son necesarios para esta nueva versión del documento. Para volver a proteger un documento protegido, debe tener el derecho de uso Control total. 
+
 ## <a name="i-have-a-hybrid-deployment-of-exchange-with-some-users-on-exchange-online-and-others-on-exchange-serveris-this-supported-by-azure-rms"></a>Tengo una implementación híbrida de Exchange con algunos usuarios de Exchange Online y otros de Exchange Server. ¿Es compatible con Azure RMS?
 Desde luego, y lo mejor es que los usuarios podrán proteger sin problemas y consumir correos electrónicos y archivos adjuntos protegidos en las dos implementaciones de Exchange. Para esta configuración, [active Azure RMS](../deploy-use/activate-service.md) y [habilite IRM para Exchange Online](https://technet.microsoft.com/library/dn151475%28v=exchg.150%29.aspx). A continuación, [implemente y configure el conector RMS](../deploy-use/deploy-rms-connector.md) para Exchange Server.
 
@@ -116,8 +128,6 @@ Sí. Al convertir una plantilla en una etiqueta en Azure Portal, puede establece
 
 Para obtener más información sobre cómo convertir plantillas personalizadas en etiquetas para poder agregar fácilmente usuarios externos, vea [Configuración y administración de plantillas para Azure Information Protection](../deploy-use/configure-policy-templates.md).
 
-Para más información sobre la conversión de plantillas personalizadas, vea [Configuración y administración de plantillas para Azure Information Protection](../deploy-use/configure-policy-templates.md).
-
 ## <a name="what-type-of-groups-can-i-use-with-azure-rms"></a>¿Qué tipo de grupos puedo usar con Azure RMS?
 Para la mayoría de los escenarios, puede usar cualquier tipo de grupo en Azure AD que tenga una dirección de correo. Esta regla general siempre se aplica al asignar derechos de uso, pero existen algunas excepciones para administrar el servicio Azure Rights Management. Para saber más, vea [Requisitos de Azure Information Protection para cuentas de grupo](../plan-design/prepare.md#azure-information-protection-requirements-for-group-accounts).
 
@@ -129,7 +139,7 @@ El destinatario verá una opción para iniciar sesión en su cuenta de Gmail, Ya
 
 Para admitir este escenario, Exchange Online debe habilitarse para el servicio Azure Rights Management y las nuevas capacidades de cifrado de mensajes de Office 365. Para más información sobre esta configuración, vea [Exchange Online: Configuración de IRM](../deploy-use/configure-office365.md#exchange-online-irm-configuration).
 
-Si quiere saber más sobre las nuevas capacidades que admiten todas las cuentas de correo en todos los dispositivos, lea esta entrada de blog: [Announcing new capabilities available in Office 365 Message Encryption](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801) (Anuncio de nuevas capacidades disponibles en el cifrado de mensajes de Office 365).
+Para obtener más información sobre las nuevas capacidades que incluyen la compatibilidad con todas las cuentas de correo de todos los dispositivos, vea la entrada del blog [Announcing new capabilities available in Office 365 Message Encryption (Anuncio de nuevas capacidades disponibles en el cifrado de mensajes de Office 365)](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801).
 
 ## <a name="what-devices-and-which-file-types-are-supported-by-azure-rms"></a>¿Qué dispositivos y tipos de archivo admite Azure RMS?
 Para ver la lista de los dispositivos que admiten el servicio Azure Rights Management, consulte [Dispositivos cliente que son compatibles con la protección de datos de Azure Rights Management](../get-started/requirements-client-devices.md). Dado que, actualmente, no todos los dispositivos compatibles admiten todas las funcionalidades de Rights Management, vea también la tabla de [aplicaciones habilitadas para RMS](../get-started/requirements-applications.md#rms-enlightened-applications).
@@ -178,15 +188,13 @@ Use la [característica de superusuario](../deploy-use/configure-super-users.md)
 
 ## <a name="when-i-test-revocation-in-the-document-tracking-site-i-see-a-message-that-says-people-can-still-access-the-document-for-up-to-30-daysis-this-time-period-configurable"></a>Cuando pruebo la revocación en el sitio de seguimiento de documentos, aparece un mensaje que indica que los usuarios pueden seguir accediendo al documento durante un máximo de 30 días. ¿Se puede configurar este período?
 
-Sí. Este mensaje refleja la licencia de uso de ese archivo en concreto. Una licencia de uso es un certificado de cada documento que se concede a un usuario que abre un archivo protegido o un mensaje de correo electrónico. Este certificado contiene los derechos del usuario relativos al archivo o mensaje de correo electrónico y la clave de cifrado que se usó para cifrar el contenido, así como las restricciones de acceso adicionales definidas en la directiva del documento. Cuando expira el período de validez de la licencia de uso y un usuario intenta abrir el archivo o el mensaje de correo electrónico, las credenciales de usuario deben enviarse de nuevo al servicio de Azure Rights Management. 
+Sí. Este mensaje refleja la [licencia de uso](../deploy-use/configure-usage-rights.md#rights-management-use-license) de ese archivo en concreto. 
 
 Si revoca un archivo, dicha acción solo se puede aplicar cuando el usuario se autentica en el servicio de Azure Rights Management. Así, si un archivo tiene un período de validez de licencia de uso de 30 días y el usuario ya ha abierto el documento, puede seguir accediendo al documento durante dicho período. Cuando la licencia de uso expire, el usuario deberá volver a autenticarse; en ese momento, se le denegará el acceso porque el documento ya se ha revocado.
 
 El usuario que ha protegido el documento, el [emisor de Rights Management](../deploy-use/configure-usage-rights.md#rights-management-issuer-and-rights-management-owner), está exento de esta revocación y puede acceder siempre a sus documentos. 
 
-El valor predeterminado para el período de validez de la licencia de uso para un inquilino es de 30 días. Este valor se puede configurar con el cmdlet de PowerShell **Set-AadrmMaxUseLicenseValidityTime**. Este valor se puede reemplazar por una configuración más restrictiva en una plantilla. 
-
-Para obtener más información y ejemplos de cómo funciona la licencia de uso, consulte la descripción detallada de [Set-AadrmMaxUseLicenseValidityTime](/powershell/module/aadrm/set-aadrmmaxuselicensevaliditytime).
+El valor predeterminado para el período de validez de la licencia de uso de un inquilino es de 30 días. Este valor puede reemplazarse por uno más restrictivo en una etiqueta o una plantilla. Para obtener más información sobre la licencia de uso y cómo configurarla, vea la documentación [Licencia de uso de Rights Management](../deploy-use/configure-usage-rights.md#rights-management-use-license).
 
 ## <a name="can-rights-management-prevent-screen-captures"></a>¿Puede impedir Rights Management las capturas de pantalla?
 Si no se concede el [derecho de uso](../deploy-use/configure-usage-rights.md) **Copiar**, Rights Management puede impedir las capturas de pantalla de muchas de las herramientas de captura de pantalla que se usan habitualmente en las plataformas Windows (Windows 7, Windows 8.1, Windows 10, Windows Phone) y Android. Sin embargo, los dispositivos iOS y Mac no permiten a ninguna aplicación impedir las capturas de pantalla y los navegadores (por ejemplo, cuando se usan con Outlook Web App y Office Online) tampoco pueden evitar las capturas de pantalla.
