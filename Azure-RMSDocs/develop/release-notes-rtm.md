@@ -1,11 +1,11 @@
 ---
-title: "Notas de la versión | Azure RMS"
-description: 
+title: "Notas de la versión"
+description: "Actualizaciones del SDK por revisión y otra información para desarrolladores."
 keywords: 
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 02/27/2017
+ms.date: 10/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -14,15 +14,20 @@ ms.assetid: CE379738-4E1D-42AD-83F4-F89B70456EBB
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 875584683bcf1d35037691f21ac7d78d17806a07
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 52733dd7cac356879408e774c79331d705a71ea0
+ms.sourcegitcommit: 02e48f0e5137ba777ec9a2bccde08130e6075c20
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 10/19/2017
 ---
 # <a name="release-notes"></a>Notas de la versión
 
-Este tema contiene información importante sobre esta versión y versiones anteriores de RMS SDK 2.1.
+Este artículo contiene información importante sobre esta versión y versiones anteriores de RMS SDK 2.1.
+
+## <a name="october-2017---update"></a>Actualización de octubre de 2017
+
+- Adición de dos nuevas API para la inicialización y desinicialización del entorno. Para obtener información, consulte [IpcInitializeEnvironment](https://msdn.microsoft.com/library/hh535289.aspx) y [IpcUninitializeEnvironment](https://msdn.microsoft.com/library/hh535289.aspx).
+- Ahora se admiten los tipos de archivo de Visio. Para más información, vea [File API configuration](file-api-configuration.md) (Configuración de API de archivo).
 
 ## <a name="february-2016---sdk-documentation-update"></a>Actualización de documentación del SDK de febrero de 2016
 
@@ -37,7 +42,7 @@ Este tema contiene información importante sobre esta versión y versiones anter
  - Instalar el cliente de RMS 2.1 sin necesidad de tener privilegios administrativos en el equipo.
  - Certificar la aplicación para Windows 10
 
-- **Compatibilidad con el Ayudante para el inicio de sesión (SIA) de Microsoft Online mientras se quita RMS SDK.** Seguiremos admitiendo el uso del SIA durante 6 meses, después de lo cual dejará de ser compatible.
+- **Compatibilidad con el Ayudante para el inicio de sesión (SIA) de Microsoft Online mientras se quita RMS SDK.** Seguiremos admitiendo el uso del SIA durante seis meses, después de lo cual dejará de ser compatible.
 
 
 ## <a name="december-2015-update"></a>Actualización de diciembre de 2015
@@ -48,11 +53,11 @@ Este tema contiene información importante sobre esta versión y versiones anter
 
 - Actualizaciones para mejorar la experiencia de mensajería de errores y solución de problemas.
 - Observe que también se ha actualizado la lista de [plataformas compatibles](supported-platforms.md).
-- Se ha eliminado de RMS SDK 2.1 la necesidad del entorno de preproducción y el uso de manifiestos de aplicación. Se han quitado estas secciones de este conjunto de documentación para desarrolladores y se ha simplificado y reorganizado la documentación en general.
+- Se ha eliminado de RMS SDK 2.1 la necesidad del entorno de preproducción y el uso de un manifiesto de aplicación. Se han quitado estas secciones de este conjunto de documentación para desarrolladores y se ha simplificado y reorganizado la documentación en general.
 
 ## <a name="may-2015-update"></a>Actualización de mayo de 2015
 
--   **RMS basado en la nube y aplicaciones de servicio** - [IPC\_CREDENTIAL\_SYMMETRIC\_KEY](https://msdn.microsoft.com/library/dn133062.aspx) necesita tres datos: clave simétrica, **AppPrincipalId** y **TenantBposId**. Hemos actualizado este tema para incluir instrucciones de procesamiento de esta información. Para consultar esta actualización, vea la versión revisada de [Habilitación de la aplicación de servicio para que funcione con RMS basado en la nube](how-to-use-file-api-with-aadrm-cloud.md).
+-   **RMS basado en la nube y aplicaciones de servicio** - [IPC\_CREDENTIAL\_SYMMETRIC\_KEY](https://msdn.microsoft.com/library/dn133062.aspx) necesita tres datos: clave simétrica, **AppPrincipalId** y **TenantBposId**. Hemos actualizado este artículo para incluir instrucciones de procesamiento de esta información. Para consultar esta actualización, vea la versión revisada de [Habilitación de la aplicación de servicio para que funcione con RMS basado en la nube](how-to-use-file-api-with-aadrm-cloud.md).
 
 ## <a name="april-2015-update"></a>Actualización de abril de 2015
 
@@ -78,18 +83,18 @@ Este tema contiene información importante sobre esta versión y versiones anter
 ## <a name="october-2014-update"></a>Actualizaciones de octubre de 2014
 
 -   Se han actualizado los comportamientos predeterminados del componente de API de archivo del SDK. Para más información, vea [File API configuration](file-api-configuration.md) (Configuración de API de archivo).
--   La nueva característica de notificaciones por correo electrónico se describe en el tema de notas de desarrollador, [Enabling email notification](how-to-enable-email-notification.md) (Habilitación de notificación por correo electrónico).
+-   La nueva característica de notificaciones por correo electrónico se describe en el artículo de notas de desarrollador, [Habilitación de la notificación por correo electrónico](how-to-enable-email-notification.md).
 
 ## <a name="july-2014-update"></a>Actualización de julio de 2014
 
-Los componentes de la API de archivo del SDK se han ampliado y ofrecen las siguientes características:
+El componente de la API de archivo del SDK se ha ampliado y ofrece las siguientes características:
 
 -   Identifican qué protector se va a usar.
 -   Proporcionan protección por RMS y el nivel de granularidad de un archivo.
 
     Funciones agregadas en esta versión:
 
-    **Nota**: Para las extensiones de API de archivo, se han agregado más tipos y estructuras de datos compatibles aparte de los aquí mencionados. Todos los temas que se han actualizado para esta versión está marcados como **preliminar y sujeto a cambios**.
+    **Nota**: Para las extensiones de API de archivo, se han agregado más tipos y estructuras de datos compatibles aparte de los aquí mencionados. Todos los artículos que se han actualizado para esta versión están marcados como **preliminar y sujeto a cambios**.
 
     -   [IpcfOpenFileOnHandle](https://msdn.microsoft.com/library/dn771751.aspx)
     -   [IpcfOpenFileOnILockBytes](https://msdn.microsoft.com/library/dn771752.aspx)

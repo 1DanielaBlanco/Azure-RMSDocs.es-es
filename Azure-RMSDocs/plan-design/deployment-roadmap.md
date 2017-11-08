@@ -4,7 +4,7 @@ description: "Siga estos pasos para preparar, implementar y administrar Azure In
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/22/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,17 +12,17 @@ ms.technology: techgroup-identity
 ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2a3e9eec089999d6ef2ab6fbb738260be23f6bb8
-ms.sourcegitcommit: cd3320fa34acb90f05d5d3e0e83604cdd46bd9a9
+ms.openlocfilehash: 71565ddaeccda9171a6cd8775c93e2ac0785ba59
+ms.sourcegitcommit: 92bbef77091c66300e0d2acce60c064ffe314752
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="azure-information-protection-deployment-roadmap"></a>Mapa de ruta de implementación de Azure Information Protection
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
-Siga este procedimiento para preparar, implementar y administrar Azure Information Protection en su organización.
+Utilice los pasos siguientes como recomendaciones para ayudarlo a preparar, implementar y administrar Azure Information Protection en su organización.
 
 Si lo que quiere es probar rápidamente Azure Information Protection en lugar de implementarlo en un entorno de producción, vea [Tutorial de inicio rápido para Azure Information Protection](../get-started/infoprotect-quick-start-tutorial.md).
 

@@ -4,7 +4,7 @@ description: "Detalles técnicos sobre tipos de archivos, extensiones de nombres
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/09/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,13 +12,13 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0bd9bbdc6b29e8cd9497712dddb7205f3d8372b1
-ms.sourcegitcommit: bcc2f69475f811245d2beaf79c67a3d8569c4821
+ms.openlocfilehash: a6a1c477a06c695a2183ad379c22492ea59d4bee
+ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 10/24/2017
 ---
-# <a name="file-types-supported-by-the-azure-information-protection-client"></a>Tipos de archivos compatibles con el cliente de Azure Information Protection
+# <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>Guía del administrador: Tipos de archivos compatibles con el cliente de Azure Information Protection
 
 >*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 con SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
 
@@ -88,7 +88,11 @@ Hay tamaños de archivo máximos que el cliente de Azure Information Protection 
     |Excel 2007 (solo compatible con AD RMS)<br /><br />Excel 2010<br /><br />Excel 2013<br /><br />Excel 2016|32 bits: 2 GB<br /><br />64 bits: solo limitado por el espacio disponible en disco y la memoria|
     |PowerPoint 2007 (solo compatible con AD RMS)<br /><br />PowerPoint 2010<br /><br />PowerPoint 2013<br /><br />PowerPoint 2016|32 bits: solo limitado por el espacio disponible en disco y la memoria<br /><br />64 bits: solo limitado por el espacio disponible en disco y la memoria
 
-- **Para todos los demás archivos**: solo limitado por el espacio disponible en disco y la memoria.
+- **Para todos los demás archivos**: 
+    
+    - Para proteger estos archivos, el tamaño de archivo está limitado solo por el espacio en disco y la memoria disponibles.
+    
+    - Para abrir estos archivos en el Visor de Azure Information Protection, el tamaño de archivo máximo admitido para archivos de texto (.ptxt y .pxml) es de 20 MB. Para archivos de imagen y archivos PDF, el tamaño de archivo máximo está limitado únicamente por la memoria.
 
 ### <a name="supported-file-types-for-classification-and-protection"></a>Tipos de archivos compatibles para protección y clasificación
 
@@ -134,7 +138,7 @@ Puede que quiera hacer esto por los siguientes motivos:
 
 - Para tener en cuenta sistemas de seguridad que realizan acciones sobre los archivos por su extensión de nombre de archivo y que se pueden reconfigurar para que tengan en cuenta la extensión de nombre de archivo .pfile pero no para admitir varias extensiones de nombre de archivo para la protección nativa.
 
-De modo similar, puede forzar que el cliente de Azure Information Protection aplique protección nativa a archivos a los que, de forma predeterminada, se les aplicaría protección genérica. Esto podría resultar adecuados si tiene una aplicación que admite las API de RMS, por ejemplo, una aplicación de línea de negocio que han escrito sus desarrolladores internos o una aplicación adquirida a un fabricante de software independiente (ISV).
+De modo similar, puede forzar que el cliente de Azure Information Protection aplique protección nativa a archivos a los que, de forma predeterminada, se les aplicaría protección genérica. Esto podría resultar adecuado si tiene una aplicación que admite las API de RMS, por ejemplo, una aplicación de línea de negocio que han escrito sus desarrolladores internos o una aplicación adquirida a un fabricante de software independiente (ISV).
 
 También puede forzar a que el cliente de Azure Information Protection boquee la protección de los archivos, es decir, que no aplique protección nativa ni protección genérica. Por ejemplo, esto podría ser necesario si tiene una aplicación o un servicio automatizados que deben poder abrir un archivo específico para procesar su contenido. Cuando se bloquea la protección para un tipo de archivo, los usuarios no pueden usar el cliente de Azure Information Protection para proteger un archivo con ese tipo de archivo. Cuando lo intentan, verán un mensaje que dice que el administrador ha impedido la protección y deben cancelar su acción para proteger el archivo.
 
@@ -202,6 +206,13 @@ Como solución alternativa para proteger estos archivos, puede protegerlos de fo
 
 Si la protección de estos archivos es importante, podría copiarlos temporalmente en otro equipo para protegerlos de forma genérica y, después, copiarlos de nuevo.
 
+### <a name="limitations-for-container-files-such-as-zip-files"></a>Limitaciones en los archivos de contenedor, como los archivos .zip
+
+Los archivos de contenedor son archivos que incluyen otros archivos, y un ejemplo típico son los archivos .zip que contienen archivos comprimidos. Otros ejemplos son los archivos .rar, .7z y .msg.
+
+Puede clasificar y proteger estos archivos de contenedor, pero la clasificación y la protección no se aplican a los archivos incluidos dentro del contenedor.
+
+Si tiene un archivo de contenedor que incluye archivos clasificados y protegidos, primero debe extraer los archivos para cambiar su configuración de clasificación o protección. Sin embargo, puede quitar la protección de todos los archivos incluidos en archivos de contenedor compatibles mediante el cmdlet [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile).
 
 ## <a name="next-steps"></a>Pasos siguientes
 Ahora que ha identificado los tipos de archivos compatibles con el cliente de Azure Information Protection, vea la siguiente información adicional que puede necesitar para la compatibilidad con este cliente:

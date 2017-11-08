@@ -4,7 +4,7 @@ description: "Información sobre el registro de uso y los archivos de cliente de
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/18/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,13 +12,13 @@ ms.technology: techgroup-identity
 ms.assetid: 5a34ab85-773f-4782-ba09-c321cddf5bc0
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: d1802fbd3c659b154d585224a3f7b412b8995e5b
-ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
+ms.openlocfilehash: 64e6e17beb134fca1e51b35b39ff9f130c88ecbb
+ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2017
+ms.lasthandoff: 10/24/2017
 ---
-# <a name="azure-information-protection-client-files-and-client-usage-logging"></a>Registro de uso de cliente y archivos de cliente de Azure Information Protection
+# <a name="admin-guide-azure-information-protection-client-files-and-client-usage-logging"></a>Guía del administrador: Registro de uso de cliente y archivos de cliente de Azure Information Protection
 
 >*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 con SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
 
@@ -32,7 +32,7 @@ Archivos de cliente:
 
 - Para los sistemas operativos de 32 bits: **\Archivos de programa\Microsoft Azure Information Protection**
 
-Archivos de registros de cliente y archivos de directiva actualmente instalado:
+Archivos de registros de cliente y archivos de directiva actualmente instalados:
 
 - Para los sistemas operativos de 32 y 64 bits: **%localappdata%\Microsoft\MSIP**
 
@@ -76,9 +76,9 @@ El cliente registra la actividad del usuario en el registro de eventos local de 
     
     - Sistema (para iniciar sesión y descargar la directiva)
     
-    - DefaultAutomatic
+    - Default
         
-        Esta acción de origen **DefaultAutomatic** es solo para el cliente de versión preliminar y hace referencia a la etiqueta que se establece mediante **Seleccione la etiqueta predeterminada** en la directiva de Azure Information Protection.
+        Esta acción de origen **Default** es solo para el cliente de versión preliminar y hace referencia a la etiqueta que se establece mediante **Seleccione la etiqueta predeterminada** en la directiva de Azure Information Protection.
 
     
 - Etiqueta antes y después de la acción 

@@ -4,17 +4,17 @@ description: "Puede proteger sus documentos y mensajes de correo electrónico m�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/21/2017
+ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: dccd5f86dd75cf053336426df161e927b4cd9e5b
-ms.sourcegitcommit: 76bf1f93b02fd75bead8ccdaaf34da1a6aad571f
+ms.openlocfilehash: f6661668a73b708f292261dde70181bd22bdf332
+ms.sourcegitcommit: 8c02aa2c6abc301a52a7f8ad9ee9d0ecd0b810f7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 10/30/2017
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Configuración de una etiqueta para la protección de Rights Management
 
@@ -79,27 +79,19 @@ No es necesario que Exchange esté configurado para Information Rights Managemen
     
 7. Seleccione una de las siguientes opciones:
     
-    - **Select a predefined template** (Seleccionar una plantilla predefinida): para usar una de las plantillas predeterminadas o una plantilla personalizada que configuró. Esta plantilla debe estar publicada (no archivada) y no debe estar vinculada a otra etiqueta. Cuando seleccione esta opción, puede usar el botón **Editar plantilla** para [convertir la plantilla en una etiqueta](configure-policy-templates.md#to-convert-templates-to-labels).
-    
-    Sugerencia: Si usa el botón **Editar plantilla**, puede resultarle útil ver [Tareas que solía realizar con el Portal de Azure clásico](migrate-portal.md).
-    
     - **Establecer permisos**: para definir una nueva configuración de protección en este portal.
     
-    - **Establecer permisos definidos por el usuario (versión preliminar)**: para permitir que los usuarios especifiquen a quién se le debe conceder permisos y cuáles. Después, puede refinar esta opción y elegir solo Outlook (valor predeterminado), o Word, Excel, PowerPoint y el Explorador de archivos. 
+    - **Establecer permisos definidos por el usuario (versión preliminar)**: para permitir que los usuarios especifiquen a quién se le debe conceder permisos y cuáles. Después, puede ajustar esta opción y elegir solo Outlook, o Word, Excel, PowerPoint y el Explorador de archivos. Esta opción no se admite, de modo que no funcionará al configurar una etiqueta para la [clasificación automática](configure-policy-classification.md).
         
         Si elige la opción para Outlook: la etiqueta se muestra en Outlook y el comportamiento resultante cuando los usuarios aplican la etiqueta es el mismo que el de la opción No reenviar.
         
         Si elige la opción para Word, Excel, PowerPoint y el Explorador de archivos: si esta opción está establecida, la etiqueta se muestra en estas aplicaciones. El comportamiento resultante cuando los usuarios aplican la etiqueta consiste en mostrar el cuadro de diálogo para que los usuarios seleccionen permisos personalizados. En este cuadro de diálogo, los usuarios deben especificar los permisos, los usuarios o los grupos y las fechas de expiración. Asegúrese de que los usuarios tengan instrucciones e indicaciones sobre cómo proporcionar estos valores.
+    
+    - **Select a predefined template** (Seleccionar una plantilla predefinida): para usar una de las plantillas predeterminadas o una plantilla personalizada que configuró. Esta plantilla debe estar publicada (no archivada) y no debe estar vinculada a otra etiqueta. Cuando seleccione esta opción, puede usar el botón **Editar plantilla** para [convertir la plantilla en una etiqueta](configure-policy-templates.md#to-convert-templates-to-labels).
+    
+    Sugerencia: Si usa el botón **Editar plantilla**, puede resultarle útil ver [Tareas que solía realizar con el Portal de Azure clásico](migrate-portal.md).
 
-8. Si ha seleccionado **Seleccionar una plantilla predefinida** para **Azure (clave en la nube)**, haga clic en el cuadro desplegable y seleccione la [plantilla](../deploy-use/configure-policy-templates.md) que quiera usar para proteger documentos y correos electrónicos con esta etiqueta. No verá las plantillas archivadas o las plantillas que ya estén seleccionadas para otra etiqueta.
-    
-    Si selecciona una **plantilla de departamento** o si ha configurado los [controles de incorporación](../deploy-use/activate-service.md#configuring-onboarding-controls-for-a-phased-deployment):
-    
-    - Los usuarios que estén fuera del ámbito configurado de la plantilla o que se excluyan al aplicar la protección de Azure Rights Management seguirán viendo la etiqueta, pero no podrán aplicarla. Si seleccionan la etiqueta, verán el mensaje siguiente: **Azure Information Protection no puede aplicar esta etiqueta. Si el problema persiste, póngase en contacto con el administrador.**
-        
-        Observe que siempre se muestran todas las plantillas publicadas, aunque vaya a configurar una directiva de ámbito. Por ejemplo, va a configurar una directiva de ámbito para el grupo Marketing. Las plantillas que puede seleccionar no se limitan a las plantillas cuyo ámbito sea el grupo Marketing, y es posible seleccionar una plantilla de departamento que los usuarios seleccionados no pueden usar. Para facilitar la configuración y reducir la solución de problemas, puede nombrar la plantilla de departamento de forma que coincida con la etiqueta de la directiva de ámbito. 
-            
-9. Si ha seleccionado **Establecer permisos** para **Azure (clave en la nube)**, esta opción le permite configurar los mismos valores que puede configurar en una plantilla. 
+8. Si ha seleccionado **Establecer permisos** para **Azure (clave en la nube)**, esta opción le permite configurar los mismos valores que puede configurar en una plantilla. 
     
     Seleccione **Agregar permisos** y, en la hoja **Agregar permisos**, seleccione el primer conjunto de usuarios y grupos que tendrán permisos para usar el contenido que se protegerá mediante la etiqueta seleccionada:
     
@@ -126,17 +118,25 @@ No es necesario que Exchange esté configurado para Information Rights Managemen
     |Configuración|Más información|Configuración recomendada
     |-----------|--------------------|--------------------|
     |**expiración del contenido**|Defina una fecha o un número de días para esta plantilla cuando los documentos o correos electrónicos que están protegidos por dicha plantilla no deben abrirse para los usuarios seleccionados. Puede especificar una fecha o un número de días a partir del momento en que se aplicación la protección al contenido.<br /><br />Cuando se especifica una fecha, entra en vigor a medianoche en su zona horaria actual.|**El contenido nunca expira** a menos que el contenido tenga un requisito de límite de tiempo específico.|
-    |**Permitir acceso sin conexión**|Use esta configuración para equilibrar los requisitos de seguridad que tiene (incluye el acceso después de la revocación) con la capacidad para que los usuarios seleccionados abran el contenido protegido cuando no tengan una conexión a Internet.<br /><br />Si especifica que el contenido no está disponible sin conexión a Internet o que el contenido está disponible solamente durante un número concreto de días, cuando se supere ese umbral, estos usuarios deberán volver a autenticarse y se registrará su acceso. Cuando esto sucede, si sus credenciales no se han almacenado en la memoria caché, se pedirá a los usuarios que inicien sesión antes de que puedan abrir el documento o correo electrónico.<br /><br />Además de la reautenticación, también se vuelve a evaluar la directiva y la pertenencia al grupos de usuarios. Esto significa que los usuarios podrían experimentar diferentes resultados de acceso para el mismo documento o correo electrónico si se producen cambios en la directiva o la pertenencia al grupo desde la última vez que se accedió al contenido. No podría incluir acceso si se [revocó](../rms-client/client-track-revoke.md) el documento.|Según el grado de confidencialidad del contenido:<br /><br />- **Número de días durante los cuales el contenido está disponible sin conexión a Internet** = **7** para datos empresariales confidenciales que podrían causar daños a la empresa si se comparten con personas no autorizadas. Esta recomendación ofrece un compromiso equilibrado entre flexibilidad y seguridad. Ejemplos: contratos, informes de seguridad, resúmenes de previsiones y datos de cuentas de ventas.<br /><br />- **Nunca** para datos comerciales extremadamente confidenciales que podrían ocasionar daños a la empresa si se compartieran con personas no autorizadas. Esta documentación da propiedad a la seguridad por sobre la flexibilidad y garantiza que si se revoca el documento, inmediatamente se impedirá que los usuarios autorizados abran el documento. Ejemplos: información sobre empleados y clientes, contraseñas, código fuente e informes financieros previamente anunciados.|
+    |**Permitir acceso sin conexión**|Use esta configuración para equilibrar los requisitos de seguridad que tiene (incluye el acceso después de la revocación) con la capacidad para que los usuarios seleccionados abran el contenido protegido cuando no tengan una conexión a Internet.<br /><br />Si especifica que el contenido no está disponible sin conexión a Internet o que el contenido está disponible solamente durante un número concreto de días, cuando se supere ese umbral, estos usuarios deberán volver a autenticarse y se registrará su acceso. Cuando esto sucede, si sus credenciales no se han almacenado en la memoria caché, se pedirá a los usuarios que inicien sesión antes de que puedan abrir el documento o correo electrónico.<br /><br />Además de la reautenticación, también se vuelve a evaluar la directiva y la pertenencia al grupo de usuarios. Esto significa que los usuarios podrían experimentar diferentes resultados de acceso para el mismo documento o correo electrónico si se producen cambios en la directiva o la pertenencia al grupo desde la última vez que se accedió al contenido. No podría incluir acceso si se [revocó](../rms-client/client-track-revoke.md) el documento.|Según el grado de confidencialidad del contenido:<br /><br />- **Número de días durante los cuales el contenido está disponible sin conexión a Internet** = **7** para datos empresariales confidenciales que podrían causar daños a la empresa si se comparten con personas no autorizadas. Esta recomendación ofrece un compromiso equilibrado entre flexibilidad y seguridad. Ejemplos: contratos, informes de seguridad, resúmenes de previsiones y datos de cuentas de ventas.<br /><br />- **Nunca** para datos comerciales extremadamente confidenciales que podrían ocasionar daños a la empresa si se compartieran con personas no autorizadas. Esta documentación da propiedad a la seguridad por sobre la flexibilidad y garantiza que si se revoca el documento, inmediatamente se impedirá que los usuarios autorizados abran el documento. Ejemplos: información sobre empleados y clientes, contraseñas, código fuente e informes financieros previamente anunciados.|
     
     Cuando haya terminado de configurar los permisos, haga clic en **Aceptar**. 
     
     Esta agrupación de configuraciones crea una plantilla personalizada para el servicio Azure Rights Management. Estas plantillas se pueden usar con aplicaciones y servicios que se integran con Azure Rights Management. Para información sobre cómo los equipos y servicios descargan y actualizan estas plantillas, consulte [Refreshing templates for users and services](refresh-templates.md) (Actualización de plantillas para usuarios y servicios).
 
+9. Si ha seleccionado **Seleccionar una plantilla predefinida** para **Azure (clave en la nube)**, haga clic en el cuadro desplegable y seleccione la [plantilla](../deploy-use/configure-policy-templates.md) que quiera usar para proteger documentos y correos electrónicos con esta etiqueta. No verá las plantillas archivadas o las plantillas que ya estén seleccionadas para otra etiqueta.
+    
+    Si selecciona una **plantilla de departamento** o si ha configurado los [controles de incorporación](../deploy-use/activate-service.md#configuring-onboarding-controls-for-a-phased-deployment):
+    
+    - Los usuarios que estén fuera del ámbito configurado de la plantilla o que se excluyan al aplicar la protección de Azure Rights Management seguirán viendo la etiqueta, pero no podrán aplicarla. Si seleccionan la etiqueta, verán el mensaje siguiente: **Azure Information Protection no puede aplicar esta etiqueta. Si el problema persiste, póngase en contacto con el administrador.**
+        
+        Observe que siempre se muestran todas las plantillas publicadas, aunque vaya a configurar una directiva de ámbito. Por ejemplo, va a configurar una directiva de ámbito para el grupo Marketing. Las plantillas que puede seleccionar no se limitan a las plantillas cuyo ámbito sea el grupo Marketing, y es posible seleccionar una plantilla de departamento que los usuarios seleccionados no pueden usar. Para facilitar la configuración y reducir la solución de problemas, puede nombrar la plantilla de departamento de forma que coincida con la etiqueta de la directiva de ámbito. 
+
 10. Si ha seleccionado **HYOK (AD RMS)**, elija **Set AD RMS templates details** (Establecer detalles de plantillas de AD RMS) o **Establecer permisos definidos por el usuario (versión preliminar)** y, después, especifique la dirección URL de administración de licencias del clúster de AD RMS.
     
     Para obtener instrucciones sobre cómo especificar un GUID de plantilla y la dirección URL de administración de licencias, vea [Buscar la información para especificar la protección de AD RMS con una etiqueta de Azure Information Protection](configure-adrms-restrictions.md#locating-the-information-to-specify-ad-rms-protection-with-an-azure-information-protection-label).
     
-    La opción de permisos definidos por el usuario permite a los usuarios especificar a quién se le deben conceder permisos y cuáles. Después, puede refinar esta opción y elegir solo Outlook (valor predeterminado), o Word, Excel, PowerPoint y el Explorador de archivos. 
+    La opción de permisos definidos por el usuario permite a los usuarios especificar a quién se le deben conceder permisos y cuáles. Después, puede refinar esta opción y elegir solo Outlook (valor predeterminado), o Word, Excel, PowerPoint y el Explorador de archivos. Esta opción no se admite, de modo que no funcionará al configurar una etiqueta para la [clasificación automática](configure-policy-classification.md).
     
     Si elige la opción para Outlook: la etiqueta se muestra en Outlook y el comportamiento resultante cuando los usuarios aplican la etiqueta es el mismo que el de la opción No reenviar.
     
@@ -155,6 +155,92 @@ No es necesario que Exchange esté configurado para Information Rights Managemen
     - Un campo en blanco cuando no se haya establecido la protección. 
 
 13. Para que los cambios estén disponibles para los usuarios, haga clic en **Publicar**.
+
+## <a name="example-configurations"></a>Configuraciones de ejemplo
+
+Las etiquetas secundarias **Todos los empleados** y **Solo destinatarios** de las etiquetas **Confidencial** y **Extremadamente confidencial** de la [directiva predeterminada](configure-policy-default.md) proporcionan ejemplos de cómo puede configurar las etiquetas que aplican la protección. También puede usar los ejemplos siguientes para configurar la protección para diferentes escenarios. 
+
+En cada uno de los ejemplos siguientes, en la hoja de su \<*nombre de etiqueta*>, seleccione **Proteger** y, a continuación, seleccione **Protección** para abrir la hoja  **Protección**.
+
+### <a name="example-1-label-that-applies-do-not-forward-to-send-a-protected-email-to-a-gmail-account"></a>Ejemplo 1: Etiqueta que aplica No reenviar para enviar un correo electrónico protegido a una cuenta de Gmail
+
+Esta etiqueta solo está disponible en Outlook y es adecuada cuando Exchange Online está configurado para las [nuevas capacidades de cifrado de mensajes de Office 365](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e). Indique a los usuarios que seleccionen esta etiqueta cuando deban enviar un correo electrónico protegido a personas con una cuenta de Gmail (o cualquier otra cuenta de correo electrónico ajena a su organización). 
+
+Los usuarios deben escribir la dirección de correo electrónico de Gmail en el cuadro **Para**.  A continuación, deben seleccionar la etiqueta y la opción No reenviar se agrega automáticamente al correo electrónico, de modo que los destinatarios no pueden reenviarlo, imprimirlo, copiar contenido, guardar datos adjuntos ni guardarlo con un nombre diferente. 
+
+1. En la hoja **Protección**, asegúrese de que **Azure (clave en la nube)** esté seleccionado.
+    
+2. Seleccione **Establecer permisos definidos por el usuario (versión preliminar)**.
+
+3. Asegúrese de seleccionar la opción **En Outlook, seleccione No reenviar**.
+
+4. Si se selecciona, desactive la opción **En Word, Excel, PowerPoint y el Explorador de archivos, solicite al usuario permisos personalizados**.
+
+5. Haga clic en **Aceptar** en la hoja **Protección** y, a continuación, publique los cambios.
+
+
+### <a name="example-2-label-that-restricts-read-only-permission-to-all-users-in-another-organization-and-that-supports-immediate-revocation"></a>Ejemplo 2: Etiqueta que restringe el permiso de solo lectura a todos los usuarios de otra organización y que admite la revocación inmediata
+
+Esta etiqueta es adecuada para compartir documentos altamente confidenciales (solo lectura) que siempre requieren una conexión a Internet para verlos. Si se revoca, los usuarios no podrán ver el documento la próxima vez que intenten abrirlo.
+
+Esta etiqueta no es adecuada para los correos electrónicos.
+
+1. En la hoja **Protección**, asegúrese de que **Azure (clave en la nube)** esté seleccionado.
+    
+2. Asegúrese de que **Establecer permisos** esté seleccionado y, a continuación, seleccione **Agregar permisos**.
+
+3. En la hoja **Agregar permisos** hoja, seleccione **Escribir detalles**.
+
+4. Escriba el nombre de un dominio de la otra organización, por ejemplo, **fabrikam.com**. Después, seleccione **Agregar**.
+
+5. En **Elección de permisos a partir de valores predeterminados**, seleccione **Visor** y, a continuación, seleccione **Aceptar**.
+
+6. De nuevo en la hoja **Protección**, para la opción **Permitir el acceso sin conexión**, seleccione **Nunca**.
+
+7. Haga clic en **Aceptar** en la hoja **Protección** y, a continuación, publique los cambios.
+
+
+### <a name="example-3-add-external-users-to-an-existing-label"></a>Ejemplo 3: Agregar usuarios externos a una etiqueta existente
+
+Los nuevos usuarios que agregue podrán abrir documentos y mensajes de correo electrónico que ya se hayan protegido con esta etiqueta. Los permisos que conceda a estos usuarios pueden ser diferentes de los permisos que tengan los usuarios existentes.
+
+1. En la hoja **Protección**, asegúrese de que **Azure (clave de nube)** esté seleccionado.
+    
+2. Asegúrese de que **Establecer permisos** esté seleccionado y, a continuación, seleccione **Agregar permisos**.
+
+3. En la hoja **Agregar permisos** hoja, seleccione **Escribir detalles**.
+
+4. Escriba la dirección de correo electrónico del primer usuario (o grupo) para agregar y, a continuación, seleccione **Agregar**.
+
+5. Seleccione los permisos para este usuario (o grupo).
+
+6. Repita los pasos 4 y 5 para cada usuario (o grupo) que quiera agregar a esta etiqueta. A continuación, haga clic en **Aceptar**.
+
+7. Haga clic en **Aceptar** en la hoja **Protección** y, a continuación, publique los cambios.
+
+### <a name="example-4-label-for-protected-email-that-supports-less-restrictive-permissions-than-do-not-forward"></a>Ejemplo 4: Etiqueta para correo electrónico protegido que admite permisos menos restrictivos que No reenviar
+
+Esta etiqueta no se puede restringir a Outlook, pero proporciona controles menos restrictivos que utilizar No reenviar. Por ejemplo, en el caso de que los destinatarios puedan copiar desde el correo electrónico o un archivo adjunto, o imprimir y guardar un archivo adjunto. Si especifica usuarios externos que no tengan una cuenta de Azure AD, asegúrese de indicar a los usuarios que esta etiqueta no debe usarse para documentos, solo para el correo electrónico. Además, para admitir estos usuarios externos, Exchange Online deben configurarse para las [nuevas capacidades de cifrado de mensajes de Office 365](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e).  
+
+Cuando los usuarios especifican las direcciones de correo electrónico en el cuadro **Para**, las direcciones deben ser de los mismos usuarios que especifique para la configuración de esta etiqueta. Dado que los usuarios pueden pertenecer a grupos y tener más de una dirección de correo electrónico, la que indiquen no tiene que coincidir exactamente con la que usted especifique para los permisos, aunque se trata de la manera más sencilla de asegurarse de que se autorizará correctamente al destinatario. Para obtener más información sobre cómo se autorizan los permisos para los usuarios, consulte [Preparación de usuarios y grupos para Azure Information Protection](../plan-design/prepare.md). 
+
+1. En la hoja **Protección**, asegúrese de que **Azure (clave en la nube)** esté seleccionado.
+    
+2. Asegúrese de que **Establecer permisos** esté seleccionado y seleccione **Agregar permisos**.
+
+3. En la hoja **Agregar permisos**, para conceder permisos a los usuarios de su organización, seleccione **Agregar \<nombre de la organización > - Todos los miembros** para seleccionar a todos los usuarios de su inquilino o seleccione  **Examinar el directorio** para seleccionar un grupo específico. Para conceder permisos a usuarios externos, seleccione **Escribir detalles** y escriba la dirección de correo electrónico del usuario o grupo de Azure AD.
+    
+    Repita este paso para especificar usuarios adicionales que deban tener los mismos permisos.
+
+4. Para **Elección de permisos a partir de valores predeterminados**, seleccione **Copropietario**, **Coautor**, **Revisor** o **Personalizado** para seleccionar los permisos que quiera conceder. 
+    
+    Nota: No seleccione **Visor** para mensajes de correo electrónico y, si selecciona **Personalizado**, asegúrese de incluir **Editar y guardar**. 
+
+5. Para especificar usuarios adicionales que deban tener permisos diferentes, repita los pasos 3 y 4.
+
+6. Haga clic en **Aceptar** en la hoja **Agregar permisos**. 
+
+7. Haga clic en **Aceptar** en la hoja **Protección** y, a continuación, publique los cambios.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

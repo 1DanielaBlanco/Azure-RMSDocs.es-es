@@ -1,10 +1,10 @@
 ---
-title: "Clasificación y protección mediante Azure Information Protection"
+title: "Clasificación y protección de archivos y correos electrónicos mediante Azure Information Protection"
 description: "Instrucciones de cómo clasificar y proteger sus documentos y correos electrónicos."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/22/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,15 +12,18 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 996835254652a307f66c472fdc74707a59041fe0
-ms.sourcegitcommit: cd3320fa34acb90f05d5d3e0e83604cdd46bd9a9
+ms.openlocfilehash: bbd2d81149dd860d7707b6eee83dacce9c13dd54
+ms.sourcegitcommit: 92bbef77091c66300e0d2acce60c064ffe314752
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2017
+ms.lasthandoff: 11/03/2017
 ---
-# <a name="classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Clasificación y protección de archivos o correos electrónicos mediante Azure Information Protection
+# <a name="user-guide-classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Guía del usuario: Clasificación y protección de archivos y correos electrónicos mediante Azure Information Protection
 
 >*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 8.1, Windows 8 y Windows 7 con SP1*
+
+> [!NOTE]
+> Siga estas instrucciones para clasificar y proteger los documentos y correos electrónicos. Si solo necesita clasificar y no proteger los documentos y correos electrónicos, consulte las [instrucciones sobre solo clasificación](client-classify-protect.md). Si no está seguro de qué conjunto de instrucciones debe usar, póngase en contacto con el administrador o el departamento de soporte técnico.
 
 La manera más fácil de clasificar y proteger sus documentos y correos electrónicos es crearlos y editarlos con las aplicaciones de escritorio de Office: **Word**, **Excel**, **PowerPoint**, **Outlook**. 
 
@@ -163,5 +166,8 @@ La clasificación y la protección que especificó permanece con el archivo, inc
 Puede encontrar más instrucciones sobre procedimientos en la guía del usuario de Azure Information Protection:
 
 -   [¿Qué desea hacer?](client-user-guide.md#what-do-you-want-to-do)
+
+## <a name="additional-information-for-administrators"></a>Información adicional para los administradores    
+Consulte [Configuración de la directiva de Azure Information Protection](../deploy-use/configure-policy.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -4,7 +4,7 @@ description: "Información para ayudarle a ofrecer instrucciones a los usuarios,
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/18/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d4ce0ea6a3c04c5ca52dae1750e48d5618eeef76
-ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
+ms.openlocfilehash: 29a85bf1bf216c785a1b9cd6511069fe688327db
+ms.sourcegitcommit: 73973986ae7086e6f30cab579187241fd98bef61
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2017
+ms.lasthandoff: 10/21/2017
 ---
 # <a name="helping-users-to-protect-files-by-using-the-azure-rights-management-service"></a>Ayuda a los usuarios para proteger archivos mediante el servicio Azure Rights Management
 
@@ -30,7 +30,7 @@ Después de implementar y configurar Azure Information Protection para su organi
     
     > [!TIP]
     > Vídeos de ejemplo para usuarios finales:
-    > -   [Azure RMS user experience](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-user-experience) (Experiencia del usuario con Azure RMS)
+    > -   [Microsoft Azure Information Protection](https://youtu.be/ToShAUdlrPo?list=PL8nfc9haGeb6qSm1kLU8n3Zqg398764h5)
     > -   [Azure RMS Document Tracking and Revocation](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation) (Revocación y seguimiento de documentos de Azure RMS)
 
 -   **Información del administrador**
@@ -41,7 +41,7 @@ Después de implementar y configurar Azure Information Protection para su organi
     
 -   **Información del departamento de soporte técnico**
     
-    Si los usuarios tienen el cliente de Azure Information Protection, los operadores del departamento de soporte técnico pueden pedirles que usen la opción **Ayuda y comentarios** para obtener información como, por ejemplo, si la edición de Office no puede admitir la protección, y la cuenta de usuario que tiene iniciada la sesión en ese momento. También puede usar esta opción para recopilar archivos de registro y restablecer el cliente. Para más información, vea la guía para administradores: [Comprobaciones adicionales y solución de problemas](../rms-client/client-admin-guide.md#additional-checks-and-troubleshooting).
+    Si los usuarios tienen el cliente de Azure Information Protection, los operadores del departamento de soporte técnico pueden pedirles que usen la opción **Ayuda y comentarios** para obtener información como, por ejemplo, si la edición de Office no puede admitir la protección, y la cuenta de usuario que tiene iniciada la sesión en ese momento. También puede usar esta opción para recopilar archivos de registro y restablecer el cliente. Para obtener más información, consulte la guía para administradores sobre [comprobaciones de instalación y solución de problemas](../rms-client/client-admin-guide.md#installation-checks-and-troubleshooting).
     
     Si hay solicitudes legítimas para tener derechos completos de acceso a documentos protegidos, asegúrese de que el servicio de asistencia tenga procesos para solicitar este acceso con la [característica de superusuario](configure-super-users.md) de Azure Rights Management. Por ejemplo, estas solicitudes podrían provenir del departamento legal o de un administrador después de que un empleado haya dejado la organización.
     
@@ -93,7 +93,7 @@ Si usa el servicio Azure Rights Management y no ha instalado el cliente de Azure
 
 3.  Guarde el documento.
 
-Cuando otros usuarios abran el documento, se les autenticará primero. Si no está autenticados para abrir el documento, el documento no se abrirá. Si están autorizados para abrir el documento, se abre con los [derechos de uso](../deploy-use/configure-usage-rights.md) restringidos que se especificaron para ese usuario. 
+Cuando otros usuarios abran el documento, se les autenticará primero. Si no está autenticado para abrir el documento, el documento no se abrirá. Si están autorizados para abrir el documento, se abre con los [derechos de uso](../deploy-use/configure-usage-rights.md) restringidos que se especificaron para ese usuario. 
 
 Por ejemplo, un derecho de uso de Solo vista no permite al usuario editar o guardar el documento, aunque se copie primero a otra ubicación. 
 

@@ -4,7 +4,7 @@ description: "Consulte las novedades o los cambios en una publicación del clien
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/09/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,26 +12,32 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ccd6d0cec6a71527fad0303369baad90dd733958
-ms.sourcegitcommit: bcc2f69475f811245d2beaf79c67a3d8569c4821
+ms.openlocfilehash: ec73c1e0c0c2d5ef959f15975b2a972086a3bcff
+ms.sourcegitcommit: 91585427fe62956fd78d4e7897ec8abe55b3c11d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="azure-information-protection-client-version-release-history"></a>Cliente de Azure Information Protection: historial de publicación de versiones
 
 >*Se aplica a: Azure Information Protection*
 
-El equipo de Azure Information Protection actualiza de forma periódica el cliente de Azure Information Protection para implementar correcciones y agregar nuevas funciones. El cliente se incluye en el Catálogo de Microsoft Update (categoría: **Azure Information Protection**) y siempre se puede descargar la versión más reciente de disponibilidad general (GA) y la próxima versión (la versión preliminar) desde el [Centro de descarga de Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=53018).
+El equipo de Azure Information Protection actualiza de forma periódica el cliente de Azure Information Protection para implementar correcciones y agregar nuevas funciones. El cliente se incluye en el Catálogo de Microsoft Update (categoría: **Azure Information Protection**) y siempre se puede descargar la versión más reciente de disponibilidad general (GA) y la versión preliminar actual desde el [Centro de descarga de Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=53018). 
 
 Las versiones preliminares no se deben implementar para los usuarios finales en las redes de producción. En su lugar, use las versiones preliminares para ver y probar nuevas funcionalidades o correcciones que se incluyen en la próxima versión de GA. 
 
-Use la información siguiente para ver las novedades o los cambios de una versión de GA. La versión más reciente aparece en primer lugar. Para ver los cambios de la versión preliminar actual, vea la información de la página de descarga.
+Use la información siguiente para ver las novedades o los cambios de una versión de GA. La versión más reciente aparece en primer lugar. 
 
 > [!NOTE]
 > Las revisiones secundarias no se enumeran. Por tanto, si tiene algún problema con el cliente de Azure Information Protection, compruebe primero que no se trate de un problema con la versión de GA más reciente. Si es así, compruebe la versión preliminar actual.
 >  
-> Si el problema persiste, vea la información de [Opciones de soporte técnico y recursos de la comunidad](../get-started/information-support.md#support-options-and-community-resources). También lo invitamos a participar en el equipo de Azure Information Protection, en su [sitio de Yammer](https://www.yammer.com/askipteam/).
+> Para obtener soporte técnico, consulte la información sobre [Opciones de soporte y recursos de la comunidad](../get-started/information-support.md#support-options-and-community-resources). También lo invitamos a participar en el equipo de Azure Information Protection, en su [sitio de Yammer](https://www.yammer.com/askipteam/).
+
+## <a name="versions-later-than-110560"></a>Versiones posteriores a la 1.10.56.0
+
+Si tiene una versión del cliente posterior a la 1.10.56.0, se trata de una compilación preliminar para fines de prueba y evaluación. 
+
+Para conocer las novedades o los cambios en la versión preliminar actual con respecto a la última versión de disponibilidad general del cliente, consulte la sección **Detalles** en la [página de descarga](https://www.microsoft.com/en-us/download/details.aspx?id=53018). 
 
 ## <a name="version-110560"></a>Versión 1.10.56.0
 
@@ -41,9 +47,9 @@ Esta versión incluye la versión MSIPC 1.0.3219.0619 del cliente RMS.
 
 **Nuevas características**:
 
-- Compatibilidad con las etiquetas configuradas para acciones definidas por el usuario. En Outlook, esta etiqueta se aplica automáticamente a la opción No reenviar. En Word, Excel, PowerPoint y el Explorador de archivos, esta etiqueta pide al usuario que especifique permisos personalizados. Para más información, vea [Configuración de una etiqueta de Azure Information Protection para protección](../deploy-use/configure-policy-protection.md).
-
 - Compatibilidad con las nuevas condiciones de DLP de Office 365 que puede configurar para una etiqueta. Para más información, vea [Configuración de condiciones para una etiqueta de Azure Information Protection](../deploy-use/configure-policy-classification.md).
+
+- Compatibilidad con las etiquetas configuradas para acciones definidas por el usuario. En Outlook, esta etiqueta se aplica automáticamente a la opción No reenviar. En Word, Excel, PowerPoint y el Explorador de archivos, esta etiqueta pide al usuario que especifique permisos personalizados. Para más información, vea [Configuración de una etiqueta de Azure Information Protection para protección](../deploy-use/configure-policy-protection.md).
 
 - Las etiquetas se muestran desde el botón **Proteger** de la cinta de Office, además de mostrarse en la barra de Information Protection. 
 
@@ -115,11 +121,11 @@ Esta versión incluye la versión MSIPC 1.0.2217.1 del cliente RMS.
 
 **Nuevos requisitos:**
 
-La versión anterior introdujo el nuevo requisito previo de Microsoft .NET Framework 4.6.2 para todo el cliente. Aunque no se recomienda, puede omitir este requisito previo con un parámetro de instalación personalizada: **DowngradeDotNetRequirement**. Para más información, consulte el [sección de instalación del cliente](client-admin-guide.md#how-to-install-the-azure-information-protection-client-for-users) de la guía del administrador.
+La versión anterior introdujo el nuevo requisito previo de Microsoft .NET Framework 4.6.2 para todo el cliente. Aunque no se recomienda, puede omitir este requisito previo con un parámetro de instalación personalizada: **DowngradeDotNetRequirement**. Para obtener más información, consulte [Instalación del cliente de Azure Information Protection para los usuarios](client-admin-guide-install.md) en la guía del administrador.
 
 **Nuevas características**:
 
-- Capacidad de establecer permisos personalizados desde su aplicación de Office, lo que le permite establecer protección únicamente para usted, para grupos externos o parta todos los usuarios de otra organización. Para obtener más información, consulte [Establecimiento de permisos personalizados para un documento](client-classify-protect.md#set-custom-permissions-for-a-document) en la guía del usuario.
+- Capacidad de establecer permisos personalizados desde su aplicación de Office, lo que le permite establecer protección únicamente para usted, para grupos externos o para todos los usuarios de otra organización. Para obtener más información, consulte [Establecimiento de permisos personalizados para un documento](client-classify-protect.md#set-custom-permissions-for-a-document) en la guía del usuario.
     
 - Los archivos PDF ahora admiten etiquetas que solo se aplican para clasificación.
 
@@ -169,7 +175,7 @@ Esta versión del cliente es la [versión de disponibilidad general](https://blo
 
 - pruebas de diagnóstico y una opción de restablecimiento que un usuario puede ejecutar desde la aplicación de Office cuando se instala el cliente de Azure Information Protection: en la pestaña **Inicio**, en el grupo **Protección**, haga clic primero en **Proteger**, después en **Ayuda y comentarios** y, por último, en **Ejecutar diagnósticos**. 
 
-    Para más información sobre esta opción, consulte la sección [Additional checks and troubleshooting](client-admin-guide.md#additional-checks-and-troubleshooting) (Comprobaciones adicionales y solución de problemas) en la guía del administrador.
+    Para más información sobre esta opción, consulte la sección [Additional checks and troubleshooting](client-admin-guide.md#installation-checks-and-troubleshooting) (Comprobaciones adicionales y solución de problemas) en la guía del administrador.
 
 **Correcciones**:
 

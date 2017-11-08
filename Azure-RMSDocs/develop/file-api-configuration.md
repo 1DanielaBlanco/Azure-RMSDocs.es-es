@@ -5,20 +5,20 @@ keywords:
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 10/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 930878C2-D2B4-45F1-885F-64927CEBAC1D
 audience: developer
-ms.reviewer: shubhamp
+ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 42c772b870c700da84d5dfaf04c1ac5c2cd51f96
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 252300e1d370a0c9b8260fb93315782dd01787c7
+ms.sourcegitcommit: 965108d50739148864b2ae7dcc661ae65f1b154c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="file-api-configuration"></a>Configuración de la API de archivo
 
@@ -30,7 +30,7 @@ La API de archivo proporciona dos tipos de protección: protección nativa y pro
 -   **Protección nativa**: el archivo está protegido en un formato de AD RMS según su tipo MIME (extensión de nombre de archivo).
 -   **Protección PFile**: el archivo está protegido en el formato de archivo protegido (PFile) de AD RMS.
 
-Para obtener más información sobre los formatos de archivo compatibles, consulte **API de archivo: detalles sobre la compatibilidad de archivos** en este tema.
+Para obtener más información sobre los formatos de archivo compatibles, consulte **API de archivo: detalles sobre la compatibilidad de archivos** en este artículo.
 
 ## <a name="keykey-value-types-and-descriptions"></a>Tipos y descripciones de las claves y los valores de clave
 
@@ -52,7 +52,7 @@ En las secciones siguientes se describen las claves y los valores de clave que c
 - Para especificar archivos que no tienen extensión, use ".".
 - No especifique el carácter "." al especificar la clave de una extensión de archivo concreta. Por ejemplo, use `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\TXT` para especificar la configuración de los archivos .txt. (No use `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\.TXT`).
 
-Establezca el valor **Encryption** en la clave para especificar el comportamiento de protección. Si no se establece el valor **Encryption**, se observa el comportamiento predeterminado del tipo de archivo.
+Para especificar el comportamiento de protección, establezca el valor **Encryption** en la clave. Si no se establece el valor **Encryption**, se observa el comportamiento predeterminado del tipo de archivo.
 
 
 ### `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\<EXT>\Encryption*`
@@ -90,9 +90,9 @@ Puede agregarse compatibilidad nativa para cualquier tipo de archivo (extensión
 
 **Archivos de Office**
 
--   Extensiones de archivo: doc, dot, xla, xls, xlt, pps, ppt, docm, docx, dotm, dotx, xlam, xlsb, xlsm, xlsx, xltm, xltx, xps, potm, potx, ppsx, ppsm, pptm, pptx, thmx.
+-   Extensiones de archivo: doc, dot, xla, xls, xlt, pps, ppt, docm, docx, dotm, dotx, xlam, xlsb, xlsm, xlsx, xltm, xltx, xps, potm, potx, ppsx, ppsm, pptm, pptx, thmx, vsdx, vsdm, vssx, vssm, vstx y vstm. 
 -   Tipo de protección = nativa (valor predeterminado): sample.docx se cifra en sample.docx.
--   Tipo de protección = PFile: en el caso de los archivos de Office tiene el mismo efecto que la protección nativa.
+-   Tipo de protección = PFile: en el caso de los archivos de Office, tiene el mismo efecto que la protección nativa.
 -   Off: deshabilita el cifrado.
 
 **Archivos PDF**
@@ -146,7 +146,7 @@ HKEY_LOCAL_MACHINE
                   Encryption = Off
 ```
 
-## <a name="related-topics"></a>Temas relacionados
+## <a name="related-articles"></a>Artículos relacionados
 
 - [Notas para el desarrollador](developer-notes.md)
 - [IPCERROR\_FILE\_ENCRYPT\_BLOCKED](https://msdn.microsoft.com/library/hh535248.aspx)
