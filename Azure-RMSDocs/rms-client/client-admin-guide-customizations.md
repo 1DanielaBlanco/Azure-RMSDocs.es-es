@@ -4,7 +4,7 @@ description: "Información sobre cómo personalizar el cliente de Azure Informat
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/18/2017
+ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,13 +12,13 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: d5345f794fb69ddbfb4d6ffcddfcffd41ecacff5
-ms.sourcegitcommit: ff2fadacf9ef4c6ee27d9d08c4c455ffd48f21f8
+ms.openlocfilehash: 304425a2c64fb306615bbd5c6edf5e78e10b8e80
+ms.sourcegitcommit: 8c02aa2c6abc301a52a7f8ad9ee9d0ecd0b810f7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 10/30/2017
 ---
-# <a name="custom-configurations-for-the-azure-information-protection-client"></a>Configuraciones personalizadas del cliente de Azure Information Protection
+# <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Guía del administrador: Configuraciones personalizadas del cliente de Azure Information Protection
 
 >*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 con SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
 
@@ -32,7 +32,7 @@ Algunas de estas opciones requieren la modificación del Registro y otras usan l
 
 2. En la hoja inicial de Azure Information Protection, seleccione **Directivas con ámbito**.
 
-3. En la hoja **Azure Information Protection - Directivas con ámbito**, seleccione el menú contextual (**... **) junto a la directiva para que contenga la configuración avanzada. Después, seleccione **Configuración avanzada**.
+3. En la hoja **Azure Information Protection - Directivas con ámbito**, seleccione el menú contextual (**...** ) junto a la directiva para que contenga la configuración avanzada. Después, seleccione **Configuración avanzada**.
     
     Puede establecer la configuración avanzada para la directiva global, así como para las directivas con ámbito.
 
@@ -40,7 +40,7 @@ Algunas de estas opciones requieren la modificación del Registro y otras usan l
 
 5. Haga clic en **Publicar** y asegúrese de que los usuarios de esta directiva reinician las aplicaciones de Office que hubieran abierto.
 
-6. Si ya no necesita la configuración y desea revertir al comportamiento predeterminado: en la hoja **Configuración avanzada**, seleccione el menú contextual (**... **) situado junto a la configuración que ya no necesita y, después, seleccione **Eliminar**. Ahora, haga clic en **Guardar y cerrar** y vuelva a publicar la directiva modificada.
+6. Si ya no necesita la configuración y desea revertir al comportamiento predeterminado: en la hoja **Configuración avanzada**, seleccione el menú contextual (**...** ) situado junto a la configuración que ya no necesita y, después, seleccione **Eliminar**. Ahora, haga clic en **Guardar y cerrar** y vuelva a publicar la directiva modificada.
 
 ## <a name="prevent-sign-in-prompts-for-ad-rms-only-computers"></a>Evitar solicitudes de inicio de sesión solo para equipos AD RMS
 
@@ -90,7 +90,7 @@ Además, compruebe que estos equipos no tienen un archivo denominado **Policy.ms
 
 ## <a name="hide-the-classify-and-protect-menu-option-in-windows-file-explorer"></a>Ocultación de la opción de menú Clasificar y Proteger en el Explorador de archivos de Windows
 
-Cree el siguiente nombre de valor DWORD (con cualquier datos de valor):
+Cree el siguiente nombre de valor DWORD (con cualquier dato de valor):
 
 **HKEY_CLASSES_ROOT\AllFilesystemObjects\shell\Microsoft.Azip.RightClick\LegacyDisable**
 
@@ -154,7 +154,7 @@ Para establecer esta configuración avanzada, especifique las cadenas siguientes
 
 Esta opción utiliza una [configuración de cliente avanzada](#how-to-configure-advanced-client-configuration-settings-in-the-portal) que se debe definir en Azure Portal. 
 
-Cuando se establece esta configuración y se publica la directiva para los usuarios, y un usuario decide no mostrar la barra de Azure Information Protection en sus aplicaciones de Office, la barra permanece oculta. Esto ocurre cuando el usuario desactiva la opción **Mostrar barra** en la pestaña **Inicio**, grupo **Protección **, botón **Proteger**. Esta configuración no tiene ningún efecto si el usuario cierra la barra utilizando el icono **Cerrar esta barra**.
+Cuando se establece esta configuración y se publica la directiva para los usuarios, y un usuario decide no mostrar la barra de Azure Information Protection en sus aplicaciones de Office, la barra permanece oculta. Esto ocurre cuando el usuario desactiva la opción **Mostrar barra** en la pestaña **Inicio**, grupo **Protección** , botón **Proteger**. Esta configuración no tiene ningún efecto si el usuario cierra la barra utilizando el icono **Cerrar esta barra**.
 
 Aunque la barra de Azure Information Protection permanece oculta, los usuarios todavía pueden seleccionar una etiqueta de la barra mostrada de manera temporal si se ha configurado la clasificación recomendada, o si el documento o correo electrónico debe tener una etiqueta. La configuración tampoco tiene ningún efecto en las etiquetas que usted u otros usuarios configuren, por ejemplo, la clasificación automática o manual, o la configuración de una etiqueta predeterminada.
 
@@ -166,6 +166,8 @@ Para establecer esta configuración avanzada, especifique las cadenas siguientes
 
 
 ## <a name="enable-recommended-classification-in-outlook"></a>Habilitación de la clasificación recomendada en Outlook
+
+Esta opción de configuración está actualmente en versión preliminar y sujeta a cambios.
 
 Esta opción utiliza una [configuración de cliente avanzada](#how-to-configure-advanced-client-configuration-settings-in-the-portal) que se debe definir en Azure Portal.
 
@@ -180,11 +182,11 @@ Para establecer esta configuración avanzada, especifique las cadenas siguientes
 
 ## <a name="set-a-different-default-label-for-outlook"></a>Establecimiento de otra etiqueta predeterminada para Outlook
 
-Esta opción de configuración está actualmente en versión preliminar y necesita la versión preliminar del cliente.
+Esta opción de configuración está actualmente en versión preliminar y sujeta a cambios. Además, esta opción de configuración necesita la versión preliminar del cliente.
 
 Esta opción utiliza una [configuración de cliente avanzada](#how-to-configure-advanced-client-configuration-settings-in-the-portal) que se debe definir en Azure Portal. 
 
-Al configurar esta opción, Outlook no aplica la etiqueta predeterminada configurada en la directiva de Azure Information Protection para la opción **Seleccione la etiqueta predeterminada**. Por el contrario, Outlook puede aplicar otra etiqueta o ninguna.
+Al configurar esta opción, Outlook no aplica la etiqueta predeterminada configurada en la directiva de Azure Information Protection para la opción **Seleccione la etiqueta predeterminada**. Por el contrario, Outlook puede aplicar otra etiqueta predeterminada o ninguna.
 
 Para aplicar otra etiqueta, debe especificar el identificador de etiqueta. El valor de identificador de etiqueta se muestra en la hoja **Etiqueta**, al ver o configurar la directiva de Azure Information Protection en Azure Portal. En el caso de los archivos que tienen etiquetas aplicadas, también puede ejecutar el cmdlet de PowerShell [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) para reconocer el identificador de etiqueta (MainLabelId o SubLabelId). Si una etiqueta tiene etiquetas secundarias, especifique únicamente el identificador de una etiqueta secundaria y no el de la etiqueta principal.
 

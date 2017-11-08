@@ -4,7 +4,7 @@ description: "Una vez protegidos los documentos, puede realizar un seguimiento d
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/10/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,13 +12,13 @@ ms.technology: techgroup-identity
 ms.assetid: 643c762e-23ca-4b02-bc39-4e3eeb657a1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 8a908097e4207889b6441e3224e7e4110fa2f9ae
-ms.sourcegitcommit: ea03477312b64c0a846701e46d991fe2c85b3a1f
+ms.openlocfilehash: d5c8d326b68b5f60e8223112d2d5bd28ed3925bc
+ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2017
+ms.lasthandoff: 10/24/2017
 ---
-# <a name="track-and-revoke-your-documents-when-you-use-azure-information-protection"></a>Seguimiento y revocación de documentos cuando se usa Azure Information Protection
+# <a name="user-guide-track-and-revoke-your-documents-when-you-use-azure-information-protection"></a>Guía del usuario: Seguimiento y revocación de documentos cuando se usa Azure Information Protection
 
 >*Se aplica a: Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 con SP1*
 
@@ -49,6 +49,8 @@ Cuando tenga acceso a este sitio, inicie sesión para hacer un seguimiento de su
     - Los administradores de Azure Information Protection pueden hacer clic en el icono Administrador para hacer un seguimiento de los documentos protegidos y revocarlos para otros usuarios cuando estos hayan registrado sus documentos en el sitio de seguimiento de documentos. Solo los administradores ven este icono:
         
         ![Icono Administrador en el sitio de Seguimiento de documentos](../media/tracking-site-admin-icon.png)
+        
+        Si no ve este icono, a pesar de ser un administrador global, es porque aún no ha compartido ningún documento. En este caso, utilice la siguiente dirección URL para acceder al sitio de seguimiento de documentos: https://portal.azurerms.com/#/admin
 
 A menos que sea administrador, solo puede hacer seguimiento y revocar los documentos que protegió. No puede hacer seguimiento de los correos electrónicos que protegió mediante el sitio de seguimiento de documentos.
 
@@ -109,5 +111,8 @@ Después de haber registrado el documento protegido mediante el uso de las aplic
 Puede encontrar más instrucciones sobre procedimientos en la guía del usuario de Azure Information Protection:
 
 - [¿Qué desea hacer?](client-user-guide.md#what-do-you-want-to-do)
+
+## <a name="additional-information-for-administrators"></a>Información adicional para los administradores    
+Consulte [Configuración y uso de Seguimiento de documentos para Azure Information Protection](client-admin-guide-document-tracking.md) en la [guía del administrador](client-admin-guide.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

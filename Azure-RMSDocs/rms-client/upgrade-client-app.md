@@ -4,7 +4,7 @@ description: "Instrucciones para los usuarios que han actualizado de la aplicaci
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/23/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,13 +12,13 @@ ms.technology: techgroup-identity
 ms.assetid: d7bc2478-c22f-4e19-9992-012658362b25
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 417294ff0890f2371909915a867fbdf56669e972
-ms.sourcegitcommit: 2bca892231ca8393b88bd5da7d0890a573770a09
+ms.openlocfilehash: dc0345ed289ecc95643c08ad86c1757848026826
+ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/03/2017
+ms.lasthandoff: 10/24/2017
 ---
-# <a name="tasks-that-you-used-to-do-with-the-rms-sharing-application"></a>Tareas que solía hacer con la aplicación RMS sharing
+# <a name="user-guide-tasks-that-you-used-to-do-with-the-rms-sharing-application"></a>Guía del usuario: Tareas que solía hacer con la aplicación RMS sharing
 
 ¿Recientemente ha hecho la actualización de la aplicación Rights Management sharing (conocida también como "aplicación RMS sharing") al cliente de Azure Information Protection? 
 
@@ -41,7 +41,7 @@ Si busca una opción específica que suele seleccionar con la aplicación RMS sh
 |-----------|--------------------|
 |**Uso compartido protegido**|Esta opción no está disponible en la cinta de Office. En lugar de compartir directamente desde la aplicación de Office, use la opción contextual del Explorador de archivos, **Clasificar y proteger**, para proteger una copia del documento con permisos personalizados y, luego, comparta el archivo con el cliente de correo electrónico de su elección o con el uso compartido de la ubicación. <br /><br /> También puede adjuntar un documento desprotegido a un correo electrónico que vaya a proteger y el documento se protegerá automáticamente con las mismas restricciones. Sin embargo, no se puede realizar un seguimiento de este documento y revocarlo.
 |**Enviarme un correo electrónico cuando alguien trate de abrir estos documentos**|Use el sitio de Seguimiento de documentos para configurar los valores preferidos de notificaciones por correo electrónico: localice el documento protegido que ha compartido > **Configuración** > **Notificaciones por correo electrónico**.
-|**Permitirme revocar el acceso a estos documentos de forma instantánea**|Este opción ya no está disponible. Configure plantillas que no permiten el acceso sin conexión. Además, considere si se debe reducir el período de validez de la licencia de uso para el inquilino; para ello, ejecute [Set-AadrmMaxUseLicenseValidityTime](/powershell/aadrm/vlatest/set-aadrmmaxuselicensevaliditytime).
+|**Permitirme revocar el acceso a estos documentos de forma instantánea**|Esta opción ya no está disponible. Configure plantillas que no permiten el acceso sin conexión. Además, considere si se debe reducir el período de validez de la licencia de uso para el inquilino; para ello, ejecute [Set-AadrmMaxUseLicenseValidityTime](/powershell/aadrm/vlatest/set-aadrmmaxuselicensevaliditytime).
 
 
 

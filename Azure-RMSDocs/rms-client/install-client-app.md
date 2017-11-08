@@ -4,7 +4,7 @@ description: "Instrucciones para que los usuarios instalen el cliente de Azure I
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/09/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,13 +12,13 @@ ms.technology: techgroup-identity
 ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 792bb4b2554851eb4a9531e7ed9333c8bebc709a
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 406ca5f8a1bdfec87dbec7743145ddfb2c4d18fb
+ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 10/24/2017
 ---
-# <a name="download-and-install-the-azure-information-protection-client"></a>Descarga e instalación del cliente de Azure Information Protection
+# <a name="user-guide-download-and-install-the-azure-information-protection-client"></a>Guía del administrador: Descarga e instalación del cliente de Azure Information Protection
 
 Si el administrador no instala el cliente de Azure Information Protection para los usuarios, estos pueden hacerlo por su cuenta. Debe ser un administrador local para que el equipo instale este cliente para que pueda etiquetar y proteger sus documentos y correos electrónicos.
 
@@ -67,7 +67,7 @@ Puede encontrar más instrucciones sobre procedimientos en la guía del usuario 
 - [¿Qué desea hacer?](client-user-guide.md#what-do-you-want-to-do)
 
 ## <a name="additional-information-for-administrators"></a>Información adicional para los administradores    
-Vea [Instalación del cliente de Azure Information Protection para los usuarios](client-admin-guide.md#how-to-install-the-azure-information-protection-client-for-users) en la guía del administrador.
+Consulte [Instalación del cliente de Azure Information Protection para los usuarios](client-admin-guide-install.md) en la [guía del administrador](client-admin-guide.md).
  
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]  

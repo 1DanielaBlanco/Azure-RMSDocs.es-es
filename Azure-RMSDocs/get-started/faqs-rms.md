@@ -4,7 +4,7 @@ description: "Algunas de las preguntas más frecuentes sobre el servicio de prot
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/09/2017
+ms.date: 11/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9983b088b5856f8c2223d05624c3bee21b80fd15
-ms.sourcegitcommit: db0c5185aab9ba4f71b9d2aa1dd87681dfe7c1b5
+ms.openlocfilehash: 038cb3a81bac9f16055038f33d825daed6642479
+ms.sourcegitcommit: 91585427fe62956fd78d4e7897ec8abe55b3c11d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Preguntas más frecuentes sobre la protección de datos en Azure Information Protection
 
@@ -124,16 +124,24 @@ Si protege un correo electrónico con un archivo de Office adjunto para un usuar
 
 ## <a name="can-i-add-external-users-people-from-outside-my-company-to-custom-templates"></a>¿Puedo agregar usuarios externos (personas ajenas a mi empresa) a plantillas personalizadas?
 
-Sí. Al convertir una plantilla en una etiqueta en Azure Portal, puede establecer la [configuración de protección](../deploy-use/configure-policy-protection.md) para agregar permisos a usuarios y grupos de fuera de la organización, e incluso a todos los usuarios de otra organización. También puede establecer esta configuración mediante PowerShell.
+Sí. La [configuración de protección](../deploy-use/configure-policy-protection.md) que puede configurar en Azure Portal le permite agregar permisos a usuarios y grupos ajenos a la organización, e incluso a todos los usuarios de otra organización. A menos que la plantilla se utilice exclusivamente para enviar correo electrónico mediante las [nuevas capacidades de cifrado de mensajes de Office 365](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e), no agregue cuentas de identidades sociales (como Gmail y Microsoft) ni otras cuentas que no estén en Azure AD.
 
-Para obtener más información sobre cómo convertir plantillas personalizadas en etiquetas para poder agregar fácilmente usuarios externos, vea [Configuración y administración de plantillas para Azure Information Protection](../deploy-use/configure-policy-templates.md).
+Tenga en cuenta que, si tiene etiquetas de Azure Information Protection, primero debe convertir la plantilla personalizada a una etiqueta antes de poder configurar estas opciones de protección en Azure Portal. Para obtener más información, vea [Configuración y administración de plantillas para Azure Information Protection](../deploy-use/configure-policy-templates.md).
+
+Como alternativa, puede agregar usuarios externos a plantillas personalizadas (y a etiquetas) mediante el uso de PowerShell. Esta configuración requiere que utilice un objeto de definición de derechos que usará para actualizar la plantilla:
+
+1. Especifique las direcciones de correo electrónico externas y sus derechos en un objeto de definición de derechos mediante el cmdlet [New-AadrmRightsDefinition](/powershell/module/aadrm/new-aadrmrightsdefinition) para crear una variable.
+
+2. Proporcione esta variable al parámetro RightsDefinition con el cmdlet [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty).
+    
+    Al agregar usuarios a una plantilla existente, debe definir los objetos de definición de derechos para los usuarios existentes en las plantillas, además de los nuevos. En este escenario, puede resultarle útil **Ejemplo 3: Agregar nuevos usuarios y derechos a una plantilla personalizada** de la sección [Ejemplos](/powershell/module/aadrm/set-aadrmtemplateproperty#examples) del cmdlet. 
 
 ## <a name="what-type-of-groups-can-i-use-with-azure-rms"></a>¿Qué tipo de grupos puedo usar con Azure RMS?
 Para la mayoría de los escenarios, puede usar cualquier tipo de grupo en Azure AD que tenga una dirección de correo. Esta regla general siempre se aplica al asignar derechos de uso, pero existen algunas excepciones para administrar el servicio Azure Rights Management. Para saber más, vea [Requisitos de Azure Information Protection para cuentas de grupo](../plan-design/prepare.md#azure-information-protection-requirements-for-group-accounts).
 
 ## <a name="how-do-i-send-a-protected-email-to-a-gmail-or-hotmail-account"></a>¿Cómo envío un correo electrónico protegido a una cuenta de Gmail o Hotmail?
 
-Cuando usa Exchange Online y el servicio Azure Rights Management, solo envía el correo electrónico como un mensaje protegido. Por ejemplo, puede seleccionar el nuevo botón **Proteger** en la barra de comandos de Outlook en la web, usar la opción No reenviar de Outlook, seleccionar una etiqueta de Azure Information Protection que aplica la protección de Azure Rights Management, o la protección se puede aplicar mediante reglas de transporte de Exchange Online.
+Cuando usa Exchange Online y el servicio Azure Rights Management, solo envía el correo electrónico al usuario como un mensaje protegido. Por ejemplo, puede seleccionar el nuevo botón **Proteger** que encontrará en la barra de comandos de Outlook en la Web o usar el botón o la opción de menú **No reenviar** de Outlook. Otra opción es seleccionar una etiqueta de Azure Information Protection que aplica automáticamente No reenviar y clasifica el correo electrónico. 
 
 El destinatario verá una opción para iniciar sesión en su cuenta de Gmail, Yahoo o Microsoft y, después, poder leer el correo protegido. O bien, el usuario puede elegir recibir un código de acceso de un solo uso para leer el correo en un explorador.
 
@@ -201,7 +209,7 @@ Si no se concede el [derecho de uso](../deploy-use/configure-usage-rights.md) **
 
 Impedir las capturas de pantalla puede ayudar a evitar la divulgación accidental o por negligencia de información confidencial. Sin embargo, existen muchas formas en que un usuario puede compartir datos que se muestran en una pantalla y hacer una captura de pantalla es solo un método. Por ejemplo, un usuario decidido a compartir la información mostrada puede tomar una foto de ella con su teléfono con cámara, volver a escribir los datos o simplemente transmitírsela verbalmente a alguien.
 
-Como demuestran estos ejemplos, aunque todas las plataformas y todo el software admitieran las API de Rights Management para bloquear las capturas de pantalla, la tecnología por si sola no siempre puede impedir que los usuarios compartan datos que no deberían. Rights Management puede ayudar a proteger sus datos importantes mediante directivas de autorización y uso, pero esta solución de administración de derechos empresariales debe utilizarse con otros controles. Por ejemplo, implemente seguridad física, preste especial atención a aquellas personas con acceso autorizado a los datos de su organización e invierta en la educación de los usuarios para que sepan qué datos no deben compartir.
+Como demuestran estos ejemplos, aunque todas las plataformas y todo el software admitieran las API de Rights Management para bloquear las capturas de pantalla, la tecnología por sí sola no siempre puede impedir que los usuarios compartan datos que no deberían. Rights Management puede ayudar a proteger sus datos importantes mediante directivas de autorización y uso, pero esta solución de administración de derechos empresariales debe utilizarse con otros controles. Por ejemplo, implemente seguridad física, preste especial atención a aquellas personas con acceso autorizado a los datos de su organización e invierta en la educación de los usuarios para que sepan qué datos no deben compartir.
 
 ## <a name="whats-the-difference-between-a-user-protecting-an-email-with-do-not-forward-and-a-template-that-doesnt-include-the-forward-right"></a>¿Cuál es la diferencia entre un usuario que protege un correo electrónico con No reenviar y una plantilla que no incluye el derecho Reenviar?
 

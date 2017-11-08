@@ -4,7 +4,7 @@ description: "Para configurar la protección, la clasificación y el etiquetado,
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/21/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 660f29506e22feb742edf4041d7baed0cf749b8c
-ms.sourcegitcommit: cd3320fa34acb90f05d5d3e0e83604cdd46bd9a9
+ms.openlocfilehash: b04c7881f982b33094107b6de33920a83b17b960
+ms.sourcegitcommit: a7cdf911088fdf663e43894484530ea15150284f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2017
+ms.lasthandoff: 10/25/2017
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>Configuración de la directiva de Azure Information Protection
 
@@ -44,14 +44,30 @@ Si la organización tiene una combinación de suscripciones, usted es el respons
 
 Para más información sobre las suscripciones, consulte [¿Qué suscripción necesito para Azure Information Protection y qué características se incluyen?](../get-started/faqs.md#what-subscription-do-i-need-for-azure-information-protection-and-what-features-are-included)
 
+## <a name="to-access-the-azure-information-protection-blade-for-the-first-time"></a>Para acceder a la hoja de Azure Information Protection por primera vez
+
+1. Inicie sesión en [Azure Portal](https://portal.azure.com) como administrador global o administrador de seguridad para su inquilino.
+
+2. En el menú del concentrador, haga clic en **Nuevo** y, después, desde la lista **MARKETPLACE**, seleccione **Seguridad e identidad**. 
+    
+3. En la hoja **Seguridad e identidad**, en la lista **APLICACIONES DESTACADAS**, seleccione **Azure Information Protection**. Después, en la hoja **Azure Information Protection**, haga clic en **Crear**.
+    
+    Mediante esta acción se crea la hoja **Azure Information Protection** para su inquilino, de modo que la próxima vez que inicie sesión en el portal pueda seleccionar el servicio desde la lista **Más servicios** del centro. 
+    
+    > [!TIP] 
+    > Seleccione **Anclar al panel** para crear un icono de **Azure Information Protection** en el panel, de modo que pueda omitir el examen del servicio la próxima vez que inicie sesión en el portal.
+
+4. Verá la página **Inicio rápido** que se abre automáticamente la primera vez que se conecta al servicio. Examine los recursos sugeridos o utilice las otras opciones de menú. Utilice el procedimiento siguiente para configurar las etiquetas que los usuarios pueden seleccionar.
+
+La próxima vez que acceda a la hoja de **Azure Information Protection**, se selecciona automáticamente la opción **DIRECTIVAS** > **Directiva global** para que pueda configurar las etiquetas para todos los usuarios. Puede volver a la página **Inicio rápido** seleccionándola en el menú **GENERAL**.
 
 ## <a name="how-to-configure-the-azure-information-protection-policy"></a>Para configurar la directiva de Azure Information Protection
 
-1. En una nueva ventana del explorador, inicie sesión en [Azure Portal](https://portal.azure.com) como administrador de seguridad o administrador global.
+1. Asegúrese de haber iniciado sesión en [Azure Portal](https://portal.azure.com) como administrador de seguridad o administrador global.
 
-2. Vaya a la hoja **Azure Information Protection**: por ejemplo, en el menú del centro, haga clic en **Más servicios** y comience a escribir **Information Protection** en el cuadro Filtro. De los resultados, seleccione **Azure Information Protection**. 
+2. Si fuera necesario, vaya a la hoja **Azure Information Protection**: por ejemplo, en el menú del centro, haga clic en **Más servicios** y comience a escribir **Information Protection** en el cuadro Filtro. De los resultados, seleccione **Azure Information Protection**. 
     
-    La primera vez que se conecte al servicio, se abrirá automáticamente la hoja **Azure Information Protection - Quick start** (Azure Information Protection: inicio rápido). Para configurar la directiva que obtienen todos los usuarios, en la selección del menú **DIRECTIVAS**, seleccione **Directiva global** para abrir la hoja **Azure Information Protection - Global policy** (Azure Information Protection: directiva global). Esta hoja se abre automáticamente para las conexiones subsiguientes al servicio a fin de ver y editar la directiva global que reciben todos los usuarios. 
+    La hoja **Azure Information Protection: directiva global** se abre automáticamente para ver y editar la directiva global que obtienen todos los usuarios. 
     
     La directiva de Azure Information Protection contiene los siguientes elementos que puede configurar:
     
@@ -69,7 +85,9 @@ Para más información sobre las suscripciones, consulte [¿Qué suscripción ne
     
     - La opción para proporcionar un vínculo de ayuda personalizado para los usuarios.
 
-Azure Information Protection incluye una [directiva predeterminada](configure-policy-default.md), que contiene cinco etiquetas principales. Estas etiquetas se pueden usar con la gama completa de los datos que una organización normalmente crea y almacena, desde la clasificación más baja de datos personales, a la clasificación más alta de información extremadamente confidencial. 
+Azure Information Protection incluye una [directiva predeterminada](configure-policy-default.md), que contiene cinco etiquetas principales. Dos de estas etiquetas contienen etiquetas secundarias para proporcionar subcategorías, cuando sea necesario. Cuando se configura una etiqueta para etiquetas secundarias, los usuarios no pueden seleccionar la principal, sino que deben seleccionar una de las secundarias.
+
+Las etiquetas de Azure Information Protection se pueden usar con la gama completa de los datos que una organización normalmente crea y almacena, desde la clasificación más baja de datos personales, a la clasificación más alta de información extremadamente confidencial. 
 
 Puede utilizar las etiquetas predeterminadas sin cambios, o puede personalizarlas. También puede eliminarlas y crear otras nuevas. Para más información, use los vínculos que aparecen en la siguiente sección para ubicar las opciones pertinentes y cómo configurarlas.
 
@@ -86,6 +104,9 @@ El cliente de Azure Information Protection busca cambios cada vez que se inicia 
 - Ejecución de los [cmdlets de PowerShell](../rms-client/client-admin-guide-powershell.md) para etiquetado y protección (Get-AIPFileStatus, Set-AIPFileClassification, and Set-AIPFileLabel).
 
 - Cada 24 horas.
+
+- Para el [analizador de Azure Information Protection](deploy-aip-scanner.md): cuando se inicia el servicio y cada hora.
+
 
 >[!NOTE]
 >Cuando el cliente descargue la directiva, tenga en cuenta que deberá esperar unos minutos antes de que esté totalmente operativa. El tiempo real varía según factores como el tamaño y la complejidad de la configuración de la directiva y la conectividad de red. Si la acción resultante de las etiquetas no coincide con los cambios más recientes, deje pasar hasta 15 minutos y vuelva a intentarlo.
