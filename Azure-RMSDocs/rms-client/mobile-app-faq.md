@@ -5,19 +5,20 @@ keywords: "Algunas preguntas frecuentes para ayudarle a usar la aplicación de A
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/08/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: azure
 ms.service: information-protection
 ms.technology: techgroup-identity
+ms.custom: askipteam
 ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: dc6b9ee8c557ce04019534c4713c526265c207e0
-ms.sourcegitcommit: 0b097f0817fee0fb025caef3c46fdd887c782a43
+ms.openlocfilehash: a12fce4f7e235ee67cc9f202c38f52f01204078b
+ms.sourcegitcommit: 79aa9838956f755994efcb97cef6dd5d1892f06f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="faqs-for-microsoft-azure-information-protection-app-for-ios-and-android"></a>Preguntas más frecuentes sobre la aplicación de Microsoft Azure Information Protection para iOS y Android
 
@@ -71,6 +72,6 @@ En la aplicación, vaya a **Configuración** > **Enviar comentarios**.
 
 ## <a name="my-question-has-not-been-answeredwhat-should-i-do"></a>Mi pregunta no se ha resuelto: ¿qué debo hacer?
 
-Publique su pregunta en nuestro [sitio de Yammer](https://www.yammer.com/AskIPTeam) o [envíe un correo electrónico al equipo de Information Protection](mailto:askIPteam@microsoft.com?subject=Question%20about%20Azure%20Information%20Protection%20app).
+Publique su pregunta en el [sitio de Yammer](https://www.yammer.com/AskIPTeam).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

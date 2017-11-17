@@ -4,7 +4,7 @@ description: "Instrucciones de cómo clasificar y proteger sus documentos y corr
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/23/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,18 +12,18 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: bbd2d81149dd860d7707b6eee83dacce9c13dd54
-ms.sourcegitcommit: 92bbef77091c66300e0d2acce60c064ffe314752
+ms.openlocfilehash: 13d751bf9754ba3645cb7bb7417e7f5be394eb27
+ms.sourcegitcommit: 769057f5ffb366fc645bff542a32b2eab4f20c70
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 11/06/2017
 ---
 # <a name="user-guide-classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Guía del usuario: Clasificación y protección de archivos y correos electrónicos mediante Azure Information Protection
 
 >*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 8.1, Windows 8 y Windows 7 con SP1*
 
 > [!NOTE]
-> Siga estas instrucciones para clasificar y proteger los documentos y correos electrónicos. Si solo necesita clasificar y no proteger los documentos y correos electrónicos, consulte las [instrucciones sobre solo clasificación](client-classify-protect.md). Si no está seguro de qué conjunto de instrucciones debe usar, póngase en contacto con el administrador o el departamento de soporte técnico.
+> Siga estas instrucciones para clasificar y proteger los documentos y correos electrónicos. Si solo necesita clasificar y no proteger los documentos y correos electrónicos, consulte las [instrucciones sobre solo clasificación](client-classify.md). Si no está seguro de qué conjunto de instrucciones debe usar, póngase en contacto con el administrador o el departamento de soporte técnico.
 
 La manera más fácil de clasificar y proteger sus documentos y correos electrónicos es crearlos y editarlos con las aplicaciones de escritorio de Office: **Word**, **Excel**, **PowerPoint**, **Outlook**. 
 
