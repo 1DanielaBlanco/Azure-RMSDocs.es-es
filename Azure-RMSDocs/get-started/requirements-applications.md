@@ -4,7 +4,7 @@ description: "Identifique las aplicaciones que usarán las API de RMS para que s
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/26/2017
+ms.date: 11/10/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6dd3345d2064b87c307583b63d36b5263318bd53
-ms.sourcegitcommit: 8c02aa2c6abc301a52a7f8ad9ee9d0ecd0b810f7
+ms.openlocfilehash: 9e8e9bd9e8c8c15d11661202cfa11abeec76376f
+ms.sourcegitcommit: e9a24fc5303b21f5eeebf16afed44db0d163ac77
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2017
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="applications-that-support-azure-rights-management-data-protection"></a>Aplicaciones compatibles con la protección de datos de Azure Rights Management
 
@@ -55,7 +55,7 @@ Información acerca de las columnas de la tabla:
 
 
 ###### <a name="footnote-1"></a>Nota al pie 1
-Para ver documentos almacenados en SharePoint Online y OneDrive para la Empresa, los documentos deben estar desprotegidos antes de cargarse en una biblioteca protegida.
+Solo se admite con SharePoint Online y OneDrive para la Empresa, y los documentos se desprotegen antes de cargarse en una biblioteca protegida.
 
 ###### <a name="footnote-2"></a>Nota al pie 2
 Para [datos adjuntos de Office](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM) que están protegidos mediante los pasos de [Announcing new capabilities available in Office 365 Message Encryption](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801) (Anuncio de nuevas capacidades disponibles en el cifrado de mensajes de Office 365).

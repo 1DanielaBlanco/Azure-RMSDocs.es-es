@@ -4,7 +4,7 @@ description: "Use esta guía si tiene Azure Rights Management con AD RMS impleme
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 11ffa730-c5dc-4b6b-9c1e-c58eff8aafc2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2e8f6596216e06e2af773c0a19a2c5eaafd096b8
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: b20bbc1fe0de90b9b0151098e1b77d3c7a98c431
+ms.sourcegitcommit: e9a24fc5303b21f5eeebf16afed44db0d163ac77
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="preparing-the-environment-for-azure-rights-management-when-you-also-have-active-directory-rights-management-services-ad-rms"></a>Preparación del entorno para Azure Rights Management con Active Directory Rights Management Services (AD RMS)
 
@@ -24,9 +24,9 @@ ms.lasthandoff: 08/30/2017
 
 Instrucciones importantes si ya usa Active Directory Rights Management Services (AD RMS) y se aplica el siguiente contexto:
 
-## <a name="you-see-an-option-to-activate-azure-rms-when-you-configure-azure-information-protection"></a>Al configurar Azure Information Protection, verá una opción para activar Azure RMS.
+## <a name="you-see-an-option-to-activate-protection-when-you-configure-azure-information-protection"></a>Al configurar Azure Information Protection, verá una opción para activar la protección.
 
-La hoja **Azure Information Protection - RMS Settings** (Azure Information Protection: configuración de RMS) tiene una opción para activar el servicio Azure Rights Management (Azure RMS). 
+La hoja **Azure Information Protection: Activación de la protección** tiene una opción para activar el servicio Azure Rights Management (Azure RMS). 
 
 Si también usa Active Directory Rights Management Services (AD RMS), no seleccione la opción **Activar**. Esto se debe a que, si también tiene AD RS, no es posible activar Azure Rights Management. Esta combinación no es compatible, ya que ofrece resultados que no son de confianza, de modo que es importante que no active Azure Rights Management en este momento. 
 

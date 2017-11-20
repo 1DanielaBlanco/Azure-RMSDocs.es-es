@@ -4,7 +4,7 @@ description: "Instrucciones e información para que los administradores administ
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/23/2017
+ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 197e3c8e908849665231040fd86cd79bd47cd1eb
-ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
+ms.openlocfilehash: dc3545c8212907786aa2fcf11e819b4cbdcf1ab5
+ms.sourcegitcommit: 4c6d9c55ff5dc5dbb10dc8a5abed9319fd3efb98
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>Guía del administrador: Uso de PowerShell con el cliente de Azure Information Protection
 
@@ -454,9 +454,12 @@ La salida puede ser parecida a la siguiente:
 
 ## <a name="how-to-label-files-non-interactively-for-azure-information-protection"></a>Cómo etiquetar archivos de manera no interactiva para Azure Information Protection
 
-Puede ejecutar los cmdlets de etiquetado de forma no interactiva mediante el cmdlet **Set-AIPAuthentication**.
+Puede ejecutar los cmdlets de etiquetado de forma no interactiva mediante el cmdlet **Set-AIPAuthentication**. También se requiere el funcionamiento no interactivo para el analizador de Azure Information Protection, actualmente en versión preliminar.
 
 De forma predeterminada, al ejecutar los cmdlets para etiquetado, los comandos se ejecutan en su propio contexto de usuario en una sesión interactiva de PowerShell. Para ejecutarlos de manera desatendida, cree una nueva cuenta de usuario de Azure AD con este fin. Después, en el contexto de ese usuario, ejecute el cmdlet Set-AIPAuthentication para establecer y almacenar las credenciales mediante el uso de un token de acceso de Azure AD. Esta cuenta de usuario se autentica y se arranca después para el servicio Azure Rights Management. La cuenta descarga la directiva de Azure Information Protection, así como las plantillas de Rights Management que utilizan las etiquetas.
+
+> [!NOTE]
+> Si usa [directivas con ámbito](../deploy-use/configure-policy-scope.md), recuerde que es posible que deba agregar esta cuenta a dichas directivas.
 
 La primera vez que ejecute este cmdlet, deberá iniciar sesión en Azure Information Protection. Especifique el nombre de la cuenta de usuario y la contraseña que ha creado para el usuario desatendido. Después de eso, esta cuenta podrá ejecutar los cmdlets de etiquetado de manera no interactiva hasta que expire el token de autenticación. Cuando expira el token, vuelva a ejecutar el cmdlet para adquirir un nuevo token:
 
@@ -512,6 +515,13 @@ Después de ejecutar este cmdlet, puede ejecutar los cmdlets de etiquetado en el
     
     Ha completado la configuración de las dos aplicaciones y tiene los valores que necesita para ejecutar [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication) con parámetros.
 
+
+> [!TIP]
+> Si Set-AIPAuthentication no se ejecuta correctamente y ha usado las aplicaciones existentes en lugar de crear aplicaciones mediante las instrucciones anteriores, es posible que deba restablecer los permisos necesarios para las aplicaciones. Esto también puede suceder si ha seguido las instrucciones para crear aplicaciones para Set-AIPAuthentication, pero después ha modificado la configuración de la aplicación.
+> 
+> Para restablecer los permisos necesarios, siga estos pasos de configuración en ambas aplicaciones: seleccione **Toda la configuración** > **Permisos necesarios** > **Conceder permisos** y haga clic en **Sí** para confirmar.
+> 
+> También puede crear aplicaciones mediante las instrucciones anteriores.
 
 ## <a name="next-steps"></a>Pasos siguientes
 Para obtener ayuda sobre los cmdlets cuando esté en una sesión de PowerShell, escriba `Get-Help <cmdlet name> cmdlet` y utilice el parámetro -online para leer la información más actualizada. Por ejemplo: 

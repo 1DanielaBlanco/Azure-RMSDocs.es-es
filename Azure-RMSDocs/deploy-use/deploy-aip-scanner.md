@@ -4,7 +4,7 @@ description: Instrucciones para instalar, configurar y ejecutar el analizador de
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/07/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 5df68e177d9e3d77a4fd9441e07f1779fa714b23
-ms.sourcegitcommit: a63b3ac3949e66cc38e20d7f14ac129b8e3224c3
+ms.openlocfilehash: 89772a9239308fbd60c34ec9a3e122061bbf9dbe
+ms.sourcegitcommit: 63a8186d727bec185903a5201f3b1efc9b4fa8b5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Implementación del analizador de Azure Information Protection para clasificar y proteger automáticamente los archivos
 
@@ -53,10 +53,10 @@ Antes de instalar el analizador de Azure Information Protection, asegúrese de q
 |Requisito|Más información|
 |---------------|--------------------|
 |Equipo con Windows Server en el que se ejecutará el servicio del analizador:<br /><br />- 4 procesos<br /><br />- 4 GB de RAM|Windows Server 2016 o Windows Server 2012 R2. <br /><br />Nota: Para llevar a cabo pruebas o evaluaciones en un entorno que no sea de producción, puede usar un sistema operativo cliente de Windows que sea [compatible con el cliente de Azure Information Protection](../get-started/requirements.md#client-devices).<br /><br />Este equipo puede ser un equipo físico o virtual que tenga una conexión de red rápida y confiable a los almacenes de datos que deban analizarse. <br /><br />Asegúrese de que este equipo tenga la [conectividad a Internet](../get-started/requirements.md#firewalls-and-network-infrastructure) necesaria para Azure Information Protection. De lo contrario, debe configurarlo como un [equipo desconectado](../rms-client/client-admin-guide-customizations.md#support-for-disconnected-computers). |
-|SQL Server para almacenar la configuración del analizador:<br /><br />- Instancia local o remota|SQL Server 2012 R2 es la versión mínima para las siguientes ediciones:<br /><br />- SQL Server Enterprise<br /><br />- SQL Server Standard<br /><br />- SQL Server Express|
+|SQL Server para almacenar la configuración del analizador:<br /><br />- Instancia local o remota|SQL Server 2012 es la versión mínima para las siguientes ediciones:<br /><br />- SQL Server Enterprise<br /><br />- SQL Server Standard<br /><br />- SQL Server Express|
 |Cuenta de servicio en la que se ejecutará el servicio del analizador|Esta cuenta debe ser de Active Directory y estar sincronizada con Azure AD, con los siguientes requisitos adicionales:<br /><br />- **Derecho de iniciar sesión localmente**. Este derecho es necesario para la instalación y configuración del analizador, pero no para la operación. Debe conceder este derecho a la cuenta de servicio, pero puede quitarlo después de haber confirmado que el analizador puede detectar, clasificar y proteger los archivos.<br /><br />- **Derecho de iniciar sesión como servicio**. Este derecho se concede automáticamente a la cuenta de servicio durante la instalación del analizador y es necesario para la instalación, la configuración y el funcionamiento del analizador. <br /><br />- Permisos a los repositorios de datos: debe conceder permisos de **lectura** y **escritura** para analizar los archivos y, a continuación, aplicar la clasificación y la protección a los archivos que cumplan las condiciones establecidas en la directiva de Azure Information Protection. Para ejecutar el analizador solo en modo de detección, el permiso de **lectura** es suficiente.<br /><br />- Para las etiquetas que ofrecen una segunda protección o quitan la protección: para asegurarse de que el analizador siempre tenga acceso a los archivos protegidos, convierta esta cuenta en un [superusuario](configure-super-users.md) para el servicio de Azure Rights Management y asegúrese de que la característica de superusuario esté habilitada. Para obtener más información sobre los requisitos de la cuenta para aplicar la protección, consulte [Preparación de usuarios y grupos para Azure Information Protection](../plan-design/prepare.md).|
 |Cliente de Azure Information Protection instalado en el equipo con Windows Server|Actualmente, el analizador de Azure Information Protection requiere la versión preliminar del cliente de Azure Information Protection.<br /><br />Si lo prefiere, puede instalar el cliente solo con el módulo de PowerShell (AzureInformationProtection) que se usa para instalar y configurar el analizador.<br /><br />Para obtener instrucciones de instalación del cliente, consulte la [guía del administrador](../rms-client/client-admin-guide.md).|
-|Etiquetas configuradas que aplican la clasificación automática y, opcionalmente, la protección|Para obtener más información sobre cómo configurar las condiciones, consulte [Configuración de las condiciones para la clasificación automática y recomendada en Azure Information Protection](/deploy-use/configure-policy-classification.md).<br /><br />Para obtener más información sobre cómo configurar las etiquetas para aplicar la protección a los archivos, consulte [Configuración de una etiqueta para la protección de Rights Management](../deploy-use/configure-policy-protection.md). |
+|Etiquetas configuradas que aplican la clasificación automática y, opcionalmente, la protección|Para obtener más información sobre cómo configurar las condiciones, consulte [Configuración de las condiciones para la clasificación automática y recomendada en Azure Information Protection](configure-policy-classification.md).<br /><br />Para obtener más información sobre cómo configurar las etiquetas para aplicar la protección a los archivos, consulte [Configuración de una etiqueta para la protección de Rights Management](configure-policy-protection.md).<br /><br />Estas etiquetas pueden estar en la directiva global, o en una o varias [directivas con ámbito](configure-policy-scope.md).|
 
 
 ## <a name="install-the-azure-information-protection-scanner"></a>Instalación del analizador de Azure Information Protection
@@ -154,6 +154,14 @@ En su configuración predeterminada, el analizador se ejecuta una vez y en el mo
 3. Al igual que antes, supervise el registro de eventos y los informes para ver qué archivos se han etiquetado, qué clasificación se ha aplicado y si se ha aplicado la protección.
 
 Dado que hemos configurado la programación para que se ejecute continuamente, cuando el analizador haya completado el examen de todos los archivos, iniciará un nuevo ciclo para detectar archivos nuevos y modificados.
+
+## <a name="when-files-are-rescanned-by-the-azure-information-protection-scanner"></a>Cuando el analizador de Azure Information Protection vuelve a examinar los archivos
+
+En el primer ciclo de examen, el analizador inspecciona todos los archivos de los almacenes de datos configurados y, después, en los exámenes posteriores, solo inspecciona los archivos nuevos o modificados. 
+
+Puede forzar a que el analizador inspeccione todos los archivos de nuevo mediante la ejecución de [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) con el parámetro `-Type` establecido en **Completo**. Esta configuración es útil si quiere que los informes incluyan todos los archivos y suele usarse cuando el analizador se ejecuta en modo de detección. Cuando finaliza el examen completo, el tipo de examen cambia automáticamente a incremental para que en los análisis posteriores solo se examinen los archivos nuevos o modificados.
+
+Además, se inspeccionan todos los archivos cuando el analizador descarga una directiva de Azure Information Protection con condiciones nuevas o modificadas. El escáner actualiza la directiva cada hora y cuando se inicia el servicio.
 
 ## <a name="list-of-cmdlets-for-the-azure-information-protection-scanner"></a>Lista de cmdlets del analizador de Azure Information Protection 
 
