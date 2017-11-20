@@ -4,7 +4,7 @@ description: "Información sobre cómo personalizar el cliente de Azure Informat
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/30/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 304425a2c64fb306615bbd5c6edf5e78e10b8e80
-ms.sourcegitcommit: 8c02aa2c6abc301a52a7f8ad9ee9d0ecd0b810f7
+ms.openlocfilehash: 67ef633fe429eef208f1f24e71a274959ad7077b
+ms.sourcegitcommit: 8810f9d68489a89601c43ce0aacff737728b1d02
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Guía del administrador: Configuraciones personalizadas del cliente de Azure Information Protection
 
@@ -90,7 +90,7 @@ Además, compruebe que estos equipos no tienen un archivo denominado **Policy.ms
 
 ## <a name="hide-the-classify-and-protect-menu-option-in-windows-file-explorer"></a>Ocultación de la opción de menú Clasificar y Proteger en el Explorador de archivos de Windows
 
-Cree el siguiente nombre de valor DWORD (con cualquier dato de valor):
+Cree el siguiente nombre de valor DWORD (con cualquier datos de valor):
 
 **HKEY_CLASSES_ROOT\AllFilesystemObjects\shell\Microsoft.Azip.RightClick\LegacyDisable**
 
@@ -198,6 +198,33 @@ Para establecer esta configuración avanzada, especifique las cadenas siguientes
 
 - Valor: \<**Identificador de etiqueta**> o **Ninguna**
 
+## <a name="label-an-office-document-by-using-an-existing-custom-property"></a>Etiquetado de un documento de Office mediante el uso de una propiedad personalizada existente
+
+Esta opción de configuración está actualmente en versión preliminar y sujeta a cambios. 
+
+Esta opción utiliza una [configuración de cliente avanzada](#how-to-configure-advanced-client-configuration-settings-in-the-portal) que se debe definir en Azure Portal. 
+
+Al configurar esta opción, puede clasificar (y, opcionalmente, proteger) un documento de Office cuando tiene una propiedad personalizada existente con un valor que coincide con uno de los nombres de etiqueta. Esta propiedad personalizada se puede establecer desde otra solución de clasificación, o bien se puede establecer como una propiedad mediante SharePoint.
+
+Como resultado de esta configuración, cuando un usuario abre y guarda en una aplicación de Office un documento sin una etiqueta de Azure Information Protection, el documento se etiqueta para que coincida con el valor de propiedad correspondiente. 
+
+Esta configuración requiere la especificación de dos ajustes avanzados que funcionan conjuntamente. El primero se denomina **SyncPropertyName**, y es el nombre de propiedad personalizada que se ha establecido desde la otra solución de clasificación, o una propiedad establecida mediante SharePoint. El segundo se denomina **SyncPropertyState** y debe establecerse en OneWay.
+
+Para establecer esta configuración avanzada, especifique las cadenas siguientes:
+
+- Clave 1: **SyncPropertyName**
+
+- Valor de la clave 1: \<**nombre de propiedad**> 
+
+- Clave 2: **SyncPropertyState**
+
+- Valor de la clave 2: **OneWay**
+
+Por ejemplo, tiene una columna de SharePoint denominada **Clasificación** con los valores posibles de **Público**, **General** y **Confidencial**. Los documentos se almacenan en SharePoint y tienen uno de estos valores establecidos para la propiedad de clasificación.
+
+Para etiquetar un documento de Office con uno de estos valores de clasificación, establezca **SyncPropertyName** en **Clasificación** y **SyncPropertyState** en **OneWay**. 
+
+Ahora, cuando un usuario abra y guarde uno de estos documentos de Office, se denominará **Público**, **General** o **Confidencial** si tiene etiquetas con estos nombres en la directiva de Azure Information Protection. Si no tienen etiquetas con estos nombres, el documento permanecerá sin etiquetar.
 
 ## <a name="integration-with-exchange-message-classification-for-a-mobile-device-labeling-solution"></a>Integración con la clasificación de mensajes de Exchange para una solución de etiquetado de dispositivo móvil
 

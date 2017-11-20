@@ -4,7 +4,7 @@ description: "El servicio Azure Rights Management debe activarse antes de que la
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 11/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6aa009795e45281df1c9406357f810b8d25302bc
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: 75c0bf83c84cb8b5d2116b05dbf2def790562b4e
+ms.sourcegitcommit: fd3932ab19a00229b56efc3e301abaf9cff3f70b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="activating-azure-rights-management"></a>Activar Rights Management de Azure
 
@@ -26,7 +26,9 @@ ms.lasthandoff: 08/30/2017
 > Esta información de configuración es para los administradores responsables de un servicio que se aplica a todos los usuarios de una organización. Si busca ayuda e información para usar la funcionalidad de Rights Management con una aplicación específica o cómo abrir un archivo o un correo electrónico protegido por derechos, use la ayuda y las instrucciones que se incluyen con la aplicación.
 >
 > Por ejemplo, para las aplicaciones de Office, haga clic en el icono de Ayuda y escriba términos de búsqueda como **Rights Management** o **IRM**. Para el cliente de Azure Information Protection para Windows, vea la [Guía del usuario de Azure Information Protection](../rms-client/client-user-guide.md).
- 
+>
+> Para obtener soporte técnico y consultar otras cuestiones sobre el servicio, vea la información sobre [Opciones de soporte y recursos de la comunidad](../get-started/information-support.md#support-options-and-community-resources).
+
 Cuando el servicio Azure Rights Management para Azure Information Protection se activa para el inquilino, la organización puede empezar a proteger datos importantes con aplicaciones y servicios que admiten esta solución de protección de información. Los administradores también pueden administrar y supervisar los correos electrónicos y archivos protegidos que posee su organización. Este servicio debe habilitarse antes de poder empezar a usar las características de Information Rights Management (IRM) en Office, SharePoint y Exchange, y de proteger los archivos confidenciales o con información importante.
 
 Si quiere obtener más información sobre el servicio Azure Rights Management antes de activarlo (por ejemplo, qué problemas empresariales soluciona, algunos casos de uso habitual y su funcionamiento), vea [¿Qué es Azure Rights Management?](../understand-explore/what-is-azure-rms.md)
