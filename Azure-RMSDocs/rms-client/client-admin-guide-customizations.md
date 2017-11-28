@@ -4,7 +4,7 @@ description: "Información sobre cómo personalizar el cliente de Azure Informat
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/13/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 67ef633fe429eef208f1f24e71a274959ad7077b
-ms.sourcegitcommit: 8810f9d68489a89601c43ce0aacff737728b1d02
+ms.openlocfilehash: 0bd05c0553cdcab792c674c6945d7dfea5f02eaf
+ms.sourcegitcommit: f1d0b899e6d79ebef3829f24711f947316bca8ef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 11/20/2017
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Guía del administrador: Configuraciones personalizadas del cliente de Azure Information Protection
 
@@ -117,46 +117,40 @@ Al exportar la directiva, esta acción descarga un archivo comprimido con varias
 2. Cambie el nombre del archivo identificado a **Policy.msip** y, después, cópielo en la carpeta **%LocalAppData%\Microsoft\MSIP** en equipos que tengan instalado el cliente de Azure Information Protection. 
 
 
-## <a name="hide-the-do-not-forward-button-in-outlook"></a>Ocultación del botón No reenviar en Outlook
+## <a name="hide-or-show-the-do-not-forward-button-in-outlook"></a>Mostrar u ocultar el botón No reenviar en Outlook
 
-Esta opción utiliza una [configuración de cliente avanzada](#how-to-configure-advanced-client-configuration-settings-in-the-portal) que se debe definir en Azure Portal.
+El método recomendado para configurar esta opción es mediante la [configuración de directiva](../deploy-use/configure-policy-settings.md) **Agregar el botón No reenviar a la cinta de Outlook**. Sin embargo, también puede configurar esta opción mediante una [configuración de cliente avanzada](#how-to-configure-advanced-client-configuration-settings-in-the-portal) que se establece en Azure Portal.
 
-Al establecer esta configuración, se oculta el botón **No reenviar** en la cinta de Outlook. No se oculta esta opción en los menús de Office.
+Al establecer esta configuración, se oculta o se muestra el botón **No reenviar** en la cinta de Outlook. Esta configuración no tiene ningún efecto en la opción No reenviar en los menús de Office.
 
 Para establecer esta configuración avanzada, especifique las cadenas siguientes:
 
 - Clave: **DisableDNF**
 
-- Valor: **True**
+- Valor: **True** para ocultar el botón o **False** para mostrarlo.
 
-## <a name="make-the-custom-permissions-options-unavailable-to-users"></a>Configuración de opciones de permisos personalizados para que no estén disponibles a los usuarios
+## <a name="make-the-custom-permissions-options-available-or-unavailable-to-users"></a>Configuración de las opciones de permisos personalizados para que estén disponibles o no disponibles para los usuarios
 
-> [!IMPORTANT]
-> A menos que use la versión preliminar actual del cliente, no emplee esta opción si tiene etiquetas configuradas para permisos definidos por el usuario para Word, Excel, PowerPoint y el Explorador de archivos. Si lo hace, cuando se aplique la etiqueta, no se les pedirá a los usuarios que configuren los permisos personalizados. Como resultado, el documento se etiquetará, pero no se protegerá como estaba previsto.
+El método recomendado para configurar esta opción es mediante la [configuración de directiva](../deploy-use/configure-policy-settings.md) **Configuración de la opción de permisos personalizados para que esté disponible para los usuarios**. Sin embargo, también puede configurar esta opción mediante una [configuración de cliente avanzada](#how-to-configure-advanced-client-configuration-settings-in-the-portal) que se establece en Azure Portal. 
 
-Esta opción utiliza una [configuración de cliente avanzada](#how-to-configure-advanced-client-configuration-settings-in-the-portal) que se debe definir en Azure Portal. 
-
-Cuando establece esta configuración y publica la directiva para los usuarios, las opciones de permisos personalizados de las ubicaciones siguientes dejarán de estar disponibles para su selección por los usuarios:
-
-- En las aplicaciones Office: pestaña **Inicio** > grupo **Protección** > **Proteger** > **Permisos personalizados**
-
-- En el Explorador de archivos: haga clic con el botón derecho > **Clasificar y proteger** > **Permisos personalizados**
-
-Esta configuración no tiene ningún efecto en los permisos personalizados que se pueden configurar en las opciones de menú de Office. 
+Cuando establece esta configuración y publica la directiva para los usuarios, las opciones de permisos personalizados están disponibles para que los usuarios seleccionen su propia configuración de protección o dejan de estar disponibles para que los usuarios no puedan seleccionar su propia configuración de protección a menos que se les solicite.
 
 Para establecer esta configuración avanzada, especifique las cadenas siguientes:
 
 - Clave: **EnableCustomPermissions**
 
-- Valor: **False**
+- Valor: **True** para hacer que la opción de permisos personalizados esté disponible, o bien **False** para que esta opción no esté disponible
+
+> [!IMPORTANT]
+> A menos que use la versión preliminar actual del cliente, no establezca esta opción en **False** si tiene etiquetas configuradas para permisos definidos por el usuario para Word, Excel, PowerPoint y el Explorador de archivos. Si lo hace, cuando se aplique la etiqueta, no se les pedirá a los usuarios que configuren los permisos personalizados. Como resultado, el documento se etiquetará, pero no se protegerá como estaba previsto.
 
 ## <a name="permanently-hide-the-azure-information-protection-bar"></a>Ocultación de manera permanente de la barra de Azure Information Protection
 
-Esta opción utiliza una [configuración de cliente avanzada](#how-to-configure-advanced-client-configuration-settings-in-the-portal) que se debe definir en Azure Portal. 
+Esta opción utiliza una [configuración de cliente avanzada](#how-to-configure-advanced-client-configuration-settings-in-the-portal) que se debe definir en Azure Portal. Úsela solo cuando la [configuración de directiva](../deploy-use/configure-policy-settings.md) **Mostrar la barra de Information Protection en las aplicaciones de Office** está establecida en **Activado**.
 
 Cuando se establece esta configuración y se publica la directiva para los usuarios, y un usuario decide no mostrar la barra de Azure Information Protection en sus aplicaciones de Office, la barra permanece oculta. Esto ocurre cuando el usuario desactiva la opción **Mostrar barra** en la pestaña **Inicio**, grupo **Protección** , botón **Proteger**. Esta configuración no tiene ningún efecto si el usuario cierra la barra utilizando el icono **Cerrar esta barra**.
 
-Aunque la barra de Azure Information Protection permanece oculta, los usuarios todavía pueden seleccionar una etiqueta de la barra mostrada de manera temporal si se ha configurado la clasificación recomendada, o si el documento o correo electrónico debe tener una etiqueta. La configuración tampoco tiene ningún efecto en las etiquetas que usted u otros usuarios configuren, por ejemplo, la clasificación automática o manual, o la configuración de una etiqueta predeterminada.
+Aunque la barra de Azure Information Protection permanece oculta, los usuarios todavía pueden seleccionar una etiqueta de la barra mostrada de manera temporal si se ha configurado la clasificación recomendada, o si el documento o correo electrónico debe tener una etiqueta. 
 
 Para establecer esta configuración avanzada, especifique las cadenas siguientes:
 
@@ -219,6 +213,8 @@ Para establecer esta configuración avanzada, especifique las cadenas siguientes
 - Clave 2: **SyncPropertyState**
 
 - Valor de la clave 2: **OneWay**
+
+Use estas claves y los valores correspondientes solo para una propiedad personalizada.
 
 Por ejemplo, tiene una columna de SharePoint denominada **Clasificación** con los valores posibles de **Público**, **General** y **Confidencial**. Los documentos se almacenan en SharePoint y tienen uno de estos valores establecidos para la propiedad de clasificación.
 

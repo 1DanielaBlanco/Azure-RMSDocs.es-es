@@ -4,17 +4,17 @@ description: "Identifique las limitaciones, los requisitos previos y las recomen
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/18/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: cceacbe94983e66bdde6de0947ae59b44e29a54e
-ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
+ms.openlocfilehash: 8684188a4c01f9e90ee073d1d378e55dba1fc1eb
+ms.sourcegitcommit: f1d0b899e6d79ebef3829f24711f947316bca8ef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2017
+ms.lasthandoff: 11/20/2017
 ---
 # <a name="hold-your-own-key-hyok-requirements-and-restrictions-for-ad-rms-protection"></a>Requisitos y restricciones de Mantenga su propia clave (HYOK) para la protección de AD RMS
 
@@ -65,7 +65,7 @@ Además de no poder gozar de los beneficios que se obtienen al utilizar la prote
 
     Aunque puede configurar una etiqueta para **No reenviar** para usar HYOK o el servicio Azure Rights Management, los usuarios también pueden seleccionar por sí mismos No reenviar. Pueden seleccionar esta opción mediante el botón **No reenviar** situado en la pestaña **Mensaje** de la cinta de opciones de Office, o mediante las opciones de menú de Outlook. Las opciones de menú **No reenviar** se encuentran en **Archivo** > **Permisos**, y en el botón **Permisos** en la pestaña **Opciones** de la cinta de opciones. 
     
-    El cliente de Azure Information Protection siempre usa Azure RMS cuando los usuarios seleccionan el botón **No reenviar** de Outlook. Si no desea este comportamiento, puede ocultar el botón **No reenviar** en Outlook mediante la configuración de una [configuración de cliente avanzada](../rms-client/client-admin-guide-customizations.md#hide-the-do-not-forward-button-in-outlook). 
+    El cliente de Azure Information Protection siempre usa Azure RMS cuando los usuarios seleccionan el botón **No reenviar** de Outlook. Si no quiere este comportamiento, puede ocultar este botón estableciendo la [configuración de directiva](../deploy-use/configure-policy-settings.md) **Agregar el botón No reenviar a la cinta de Outlook** en **Desactivado**. 
     
     Cuando los usuarios seleccionan **No reenviar** desde una opción de menú de Outlook, pueden elegir Azure RMS o AD RMS, pero es posible que no sepan qué opción deben seleccionar para el mensaje de correo electrónico. Si se usa AD RMS cuando se debería usar Azure RMS, los usuarios con los que se comparta de forma externa no podrán abrir estos mensajes de correo electrónico.
 

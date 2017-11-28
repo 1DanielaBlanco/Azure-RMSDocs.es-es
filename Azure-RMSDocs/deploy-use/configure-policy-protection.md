@@ -4,17 +4,17 @@ description: "Puede proteger sus documentos y mensajes de correo electrónico m�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/30/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: f6661668a73b708f292261dde70181bd22bdf332
-ms.sourcegitcommit: 8c02aa2c6abc301a52a7f8ad9ee9d0ecd0b810f7
+ms.openlocfilehash: 17f95d9875320c64d2983fcd176e371ee45d2f48
+ms.sourcegitcommit: 9de66368b75ffd003289f998c7b1e78736736524
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Configuración de una etiqueta para la protección de Rights Management
 
@@ -87,9 +87,11 @@ No es necesario que Exchange esté configurado para Information Rights Managemen
         
         Si elige la opción para Word, Excel, PowerPoint y el Explorador de archivos: si esta opción está establecida, la etiqueta se muestra en estas aplicaciones. El comportamiento resultante cuando los usuarios aplican la etiqueta consiste en mostrar el cuadro de diálogo para que los usuarios seleccionen permisos personalizados. En este cuadro de diálogo, los usuarios deben especificar los permisos, los usuarios o los grupos y las fechas de expiración. Asegúrese de que los usuarios tengan instrucciones e indicaciones sobre cómo proporcionar estos valores.
     
-    - **Select a predefined template** (Seleccionar una plantilla predefinida): para usar una de las plantillas predeterminadas o una plantilla personalizada que configuró. Esta plantilla debe estar publicada (no archivada) y no debe estar vinculada a otra etiqueta. Cuando seleccione esta opción, puede usar el botón **Editar plantilla** para [convertir la plantilla en una etiqueta](configure-policy-templates.md#to-convert-templates-to-labels).
+    - **Select a predefined template** (Seleccionar una plantilla predefinida): para usar una de las plantillas predeterminadas o una plantilla personalizada que configuró. Tenga en cuenta que esta opción no se muestra si está modificando una etiqueta en la que antes se usó la opción **Establecer permisos**.
     
-    Sugerencia: Si usa el botón **Editar plantilla**, puede resultarle útil ver [Tareas que solía realizar con el Portal de Azure clásico](migrate-portal.md).
+    Para seleccionar una plantilla predefinida, la plantilla debe estar publicada (no archivada) y no debe estar vinculada a otra etiqueta. Cuando seleccione esta opción, puede usar el botón **Editar plantilla** para [convertir la plantilla en una etiqueta](configure-policy-templates.md#to-convert-templates-to-labels).
+    
+    Sugerencia: Si acostumbra a crear y modificar plantillas personalizadas, puede resultarle útil consultar [Tareas que solía realizar con el Portal de Azure clásico](migrate-portal.md).
 
 8. Si ha seleccionado **Establecer permisos** para **Azure (clave en la nube)**, esta opción le permite configurar los mismos valores que puede configurar en una plantilla. 
     
@@ -118,7 +120,7 @@ No es necesario que Exchange esté configurado para Information Rights Managemen
     |Configuración|Más información|Configuración recomendada
     |-----------|--------------------|--------------------|
     |**expiración del contenido**|Defina una fecha o un número de días para esta plantilla cuando los documentos o correos electrónicos que están protegidos por dicha plantilla no deben abrirse para los usuarios seleccionados. Puede especificar una fecha o un número de días a partir del momento en que se aplicación la protección al contenido.<br /><br />Cuando se especifica una fecha, entra en vigor a medianoche en su zona horaria actual.|**El contenido nunca expira** a menos que el contenido tenga un requisito de límite de tiempo específico.|
-    |**Permitir acceso sin conexión**|Use esta configuración para equilibrar los requisitos de seguridad que tiene (incluye el acceso después de la revocación) con la capacidad para que los usuarios seleccionados abran el contenido protegido cuando no tengan una conexión a Internet.<br /><br />Si especifica que el contenido no está disponible sin conexión a Internet o que el contenido está disponible solamente durante un número concreto de días, cuando se supere ese umbral, estos usuarios deberán volver a autenticarse y se registrará su acceso. Cuando esto sucede, si sus credenciales no se han almacenado en la memoria caché, se pedirá a los usuarios que inicien sesión antes de que puedan abrir el documento o correo electrónico.<br /><br />Además de la reautenticación, también se vuelve a evaluar la directiva y la pertenencia al grupo de usuarios. Esto significa que los usuarios podrían experimentar diferentes resultados de acceso para el mismo documento o correo electrónico si se producen cambios en la directiva o la pertenencia al grupo desde la última vez que se accedió al contenido. No podría incluir acceso si se [revocó](../rms-client/client-track-revoke.md) el documento.|Según el grado de confidencialidad del contenido:<br /><br />- **Número de días durante los cuales el contenido está disponible sin conexión a Internet** = **7** para datos empresariales confidenciales que podrían causar daños a la empresa si se comparten con personas no autorizadas. Esta recomendación ofrece un compromiso equilibrado entre flexibilidad y seguridad. Ejemplos: contratos, informes de seguridad, resúmenes de previsiones y datos de cuentas de ventas.<br /><br />- **Nunca** para datos comerciales extremadamente confidenciales que podrían ocasionar daños a la empresa si se compartieran con personas no autorizadas. Esta documentación da propiedad a la seguridad por sobre la flexibilidad y garantiza que si se revoca el documento, inmediatamente se impedirá que los usuarios autorizados abran el documento. Ejemplos: información sobre empleados y clientes, contraseñas, código fuente e informes financieros previamente anunciados.|
+    |**Permitir acceso sin conexión**|Use esta configuración para equilibrar los requisitos de seguridad que tiene (incluye el acceso después de la revocación) con la capacidad para que los usuarios seleccionados abran el contenido protegido cuando no tengan una conexión a Internet.<br /><br />Si especifica que el contenido no está disponible sin conexión a Internet o que el contenido está disponible solamente durante un número concreto de días, cuando se supere ese umbral, estos usuarios deberán volver a autenticarse y se registrará su acceso. Cuando esto sucede, si sus credenciales no se han almacenado en la memoria caché, se pedirá a los usuarios que inicien sesión antes de que puedan abrir el documento o correo electrónico.<br /><br />Además de la reautenticación, también se vuelve a evaluar la directiva y la pertenencia al grupos de usuarios. Esto significa que los usuarios podrían experimentar diferentes resultados de acceso para el mismo documento o correo electrónico si se producen cambios en la directiva o la pertenencia al grupo desde la última vez que se accedió al contenido. No podría incluir acceso si se [revocó](../rms-client/client-track-revoke.md) el documento.|Según el grado de confidencialidad del contenido:<br /><br />- **Número de días durante los cuales el contenido está disponible sin conexión a Internet** = **7** para datos empresariales confidenciales que podrían causar daños a la empresa si se comparten con personas no autorizadas. Esta recomendación ofrece un compromiso equilibrado entre flexibilidad y seguridad. Ejemplos: contratos, informes de seguridad, resúmenes de previsiones y datos de cuentas de ventas.<br /><br />- **Nunca** para datos comerciales extremadamente confidenciales que podrían ocasionar daños a la empresa si se compartieran con personas no autorizadas. Esta documentación da propiedad a la seguridad por sobre la flexibilidad y garantiza que si se revoca el documento, inmediatamente se impedirá que los usuarios autorizados abran el documento. Ejemplos: información sobre empleados y clientes, contraseñas, código fuente e informes financieros previamente anunciados.|
     
     Cuando haya terminado de configurar los permisos, haga clic en **Aceptar**. 
     

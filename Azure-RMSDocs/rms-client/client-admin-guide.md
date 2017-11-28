@@ -4,7 +4,7 @@ description: "Instrucciones e información para administradores de una red empre
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/20/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 96eb4a9fde5c5664a41ad7f68c550af697e8216f
-ms.sourcegitcommit: 73973986ae7086e6f30cab579187241fd98bef61
+ms.openlocfilehash: c338fe4258d6d8b20a4d8c285bc821981810b409
+ms.sourcegitcommit: f1d0b899e6d79ebef3829f24711f947316bca8ef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2017
+ms.lasthandoff: 11/20/2017
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Guía para administradores del cliente de Azure Information Protection
 
@@ -46,7 +46,7 @@ Por ejemplo:
 
 El cliente de Azure Information Protection incluye:
 
-- Un complemento de Office, que instala la barra de Azure Information Protection para que los usuarios seleccionen etiquetas de clasificación y un botón **Proteger** en la cinta para ofrecer otras opciones. Para Outlook, también se agrega un botón **No reenviar** a la cinta.
+- Un complemento de Office, que instala la barra de Azure Information Protection para que los usuarios seleccionen etiquetas de clasificación y un botón **Proteger** en la cinta para ofrecer otras opciones. Para Outlook, también está disponible un botón **No reenviar** en la cinta.
 
 - Explorador de archivos de Windows, opciones de menú contextual para que los usuarios apliquen etiquetas de clasificación y la protección de los archivos.
 
@@ -127,7 +127,9 @@ La opción **Restablecer configuración** cierra la sesión del usuario, elimina
     
     - %LocalAppData%\Microsoft\MSIP\TokenCache
 
-- La configuración y las claves del Registro siguientes se eliminan. Si estableció la configuración de alguna de estas claves del Registro, deberá volver a configurarlas después de restablecer el cliente. Por ejemplo, estableció la configuración de redireccionamiento al inquilino de Azure Information Protection porque ya está migrando de AD RMS y aún tiene un punto de conexión de servicio en la red:
+- La configuración y las claves del Registro siguientes se eliminan. Si la configuración de alguna de estas claves del Registro tiene valores personalizados, tendrá que volver a configurarlos después de restablecer el cliente. 
+    
+    Normalmente para las redes empresariales, estas opciones se configuran mediante la directiva de grupo, en cuyo caso se aplican automáticamente cuando se actualiza la directiva de grupo en el equipo. Pero es posible que algunas opciones se configuren una vez con un script o se configuren de forma manual. En estos casos, debe realizar pasos adicionales para volver a configurar estas opciones. Por ejemplo, es posible que los equipos ejecuten un script una vez para configurar opciones de redireccionamiento para Azure Information Protection porque está migrando de AD RMS y aún tiene un punto de conexión de servicio en la red. Después de restablecer al cliente, el equipo debe volver a ejecutar este script.
     
     - HKEY_CURRENT-USER\SOFTWARE\Microsoft\Office\15.0\Common\Identity
     

@@ -4,7 +4,7 @@ description: "Instrucciones para la activación de la protección en Azure Porta
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/03/2017
+ms.date: 11/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,11 +13,11 @@ ms.custom: askipteam
 ms.assetid: 4e886f5a-f535-4207-b8c4-8e0376c0758e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 23133038e2a845aae6a86a014cdef31843668ef8
-ms.sourcegitcommit: 79aa9838956f755994efcb97cef6dd5d1892f06f
+ms.openlocfilehash: 430e84ac0a634052eb48e19347eafca436c47659
+ms.sourcegitcommit: 0ef66a8479b4105c00bf1b1df46d2ddf044b7670
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 11/18/2017
 ---
 # <a name="how-to-activate-azure-rights-management-from-the-azure-portal"></a>Cómo activar Azure Rights Management desde Azure Portal
 
@@ -28,6 +28,8 @@ Siga estas instrucciones si quiere activar el servicio Azure Rights Management (
 1. Si aún no lo ha hecho, abra una nueva ventana del explorador e inicie sesión en [Azure Portal](https://portal.azure.com) como administrador de seguridad o administrador global. Después, vaya a la hoja **Azure Information Protection**.
     
     Por ejemplo, en el menú del centro, haga clic en **Más servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
+    
+    Si no ha tenido acceso antes a la hoja de Azure Information Protection, vea los [pasos adicionales](configure-policy.md#to-access-the-azure-information-protection-blade-for-the-first-time) para agregar esta hoja al portal.
     
     Para abrir la hoja de Azure Information Protection, debe disponer de un [plan Premium de Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) o de un [plan de Office 365 que incluya Rights Management](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf). Si tiene una de estas suscripciones pero ve un mensaje que le indica que no se encuentra una suscripción válida, [póngase en contacto con el soporte técnico de Microsoft](../get-started/information-support.md#to-contact-microsoft-support) o use los canales habituales de soporte técnico.
 

@@ -4,7 +4,7 @@ description: "Consulte las novedades o los cambios en una versión del cliente d
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/16/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e107d796ebda1b1942e19ede8c794f79defbf64e
-ms.sourcegitcommit: fd3932ab19a00229b56efc3e301abaf9cff3f70b
+ms.openlocfilehash: c3c0acad413ddbbcd1caccd4f1a73c7b0884ae7c
+ms.sourcegitcommit: f1d0b899e6d79ebef3829f24711f947316bca8ef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 11/20/2017
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Cliente de Azure Information Protection: historial de publicación de versiones y directiva de soporte técnico
 
@@ -35,7 +35,6 @@ Las versiones preliminares no se deben implementar para los usuarios finales en 
 ### <a name="release-history"></a>Historial de versiones
 
 Use la información siguiente para consultar las novedades o los cambios en una versión compatible del cliente de Azure Information Protection para Windows. La versión más reciente aparece en primer lugar. 
-
 
 > [!NOTE]
 > Las revisiones secundarias no se enumeran. Por tanto, si tiene algún problema con el cliente de Azure Information Protection, se recomienda que compruebe si se ha corregido en la versión de GA más reciente. Si el problema continúa, compruebe la versión preliminar actual.
@@ -60,17 +59,19 @@ Esta versión incluye la versión MSIPC 1.0.3219.0619 del cliente RMS.
 
 - Compatibilidad con las etiquetas configuradas para acciones definidas por el usuario. En Outlook, esta etiqueta se aplica automáticamente a la opción No reenviar. En Word, Excel, PowerPoint y el Explorador de archivos, esta etiqueta pide al usuario que especifique permisos personalizados. Para más información, vea [Configuración de una etiqueta de Azure Information Protection para protección](../deploy-use/configure-policy-protection.md).
 
+- Las etiquetas admiten varios idiomas. A partir del 30 de agosto de 2017, en la [directiva predeterminada](../deploy-use/configure-policy-default.md) se incluye compatibilidad con varios idiomas que se muestra a los usuarios en esta versión del cliente. Para que los usuarios vean las etiquetas de una directiva predeterminada en su idioma preferido antes de esta fecha y para las etiquetas que configure, vea [Cómo configurar etiquetas y plantillas para distintos idiomas en Azure Information Protection](../deploy-use/configure-policy-languages.md).
+
 - Las etiquetas se muestran desde el botón **Proteger** de la cinta de Office, además de mostrarse en la barra de Information Protection. 
 
 - Protección nativa para los siguientes tipos de archivo de Visio: .vsdm, .vsdx, .vssm, .vssx, .vstm y .vstx
 
 - Compatibilidad con configuraciones de cliente avanzadas que se configuran en Azure Portal. Entre ellas, figuran las siguientes:
     
-    - [Ocultación del botón No reenviar en Outlook](../rms-client/client-admin-guide-customizations.md#hide-the-do-not-forward-button-in-outlook)
+    - [Mostrar u ocultar el botón No reenviar en Outlook](../rms-client/client-admin-guide-customizations.md#hide-or-show-the-do-not-forward-button-in-outlook)
     
-    - [Configuración de opciones de permisos personalizados para que no estén disponibles para los usuarios](../rms-client/client-admin-guide-customizations.md#make-the-custom-permissions-options-unavailable-to-users)
+    - [Configuración de las opciones de permisos personalizados para que estén disponibles o no disponibles para los usuarios](../rms-client/client-admin-guide-customizations.md#make-the-custom-permissions-options-available-or-unavailable-to-users)
     
-    - [Ocultación de manera permanente de la barra de Azure Information Protection](../rms-client/client-admin-guide-customizations.md#make-the-custom-permissions-options-unavailable-to-users)
+    - [Ocultación de manera permanente de la barra de Azure Information Protection](../rms-client/client-admin-guide-customizations.md#permanently-hide-the-azure-information-protection-bar)
     
     - [Habilitación de la clasificación recomendada en Outlook](../rms-client/client-admin-guide-customizations.md#enable-recommended-classification-in-outlook)
 

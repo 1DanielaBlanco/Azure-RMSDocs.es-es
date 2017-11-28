@@ -4,7 +4,7 @@ description: "Ámbito y propósito de los comentarios y las notas al margen de L
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/03/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,11 +13,11 @@ ms.custom: askipteam
 ms.assetid: 4eafbe72-f537-4e66-80ae-d11894d373f7
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 64f354ed87fbfaccfcc6a102c6d8c2ea88b75b39
-ms.sourcegitcommit: 79aa9838956f755994efcb97cef6dd5d1892f06f
+ms.openlocfilehash: 4040e67a7bae2ee5a208d61134b842762ef4ace1
+ms.sourcegitcommit: 9de66368b75ffd003289f998c7b1e78736736524
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="house-rules-for-comments-on-the-azure-information-protection-documentation"></a>Condiciones para los comentarios sobre la documentación de Azure Information Protection
 
@@ -29,7 +29,9 @@ Antes de publicar un comentario, asegúrese de que es pertinente para la página
  
 No se deben usar comentarios y notas al margen de Livefyre para lo siguiente:
  
-- **Soporte técnico**. Por ejemplo, una característica no funciona, ha comprobado los requisitos y ha seguido las instrucciones de la documentación, o bien tiene alguna pregunta sobre las licencias. En este caso, [póngase en contacto con el soporte técnico de Microsoft](./get-started/information-support.md#to-contact-microsoft-support) o use los canales habituales de soporte técnico. También puede interactuar con la comunidad en el [sitio de Yammer](https://www.yammer.com/AskIPTeam) de Azure Information Protection.
+- **Preguntas sobre las suscripciones para su organización**. Por ejemplo, si las suscripciones existentes admiten una característica que quiere usar y ha comprobado los [requisitos de suscripción para Azure Information Protection](./get-started/requirements.md#subscription-for-azure-information-protection). En su lugar, póngase en contacto con su gestor de cuentas de Microsoft o el [Soporte técnico de Microsoft](./get-started/information-support.md#to-contact-microsoft-support).
+
+- **Soporte técnico**. Por ejemplo, una característica no funciona, ha comprobado los requisitos y ha seguido las instrucciones de la documentación, También ha comprobado que está usando una [versión compatible](./rms-client/client-version-release-history.md#servicing-information-and-timelines) del cliente de Azure Information Protection. En este caso, póngase en contacto con el [Soporte técnico de Microsoft](./get-started/information-support.md#to-contact-microsoft-support) o use los canales habituales de soporte técnico. También puede interactuar con la comunidad en el [sitio de Yammer](https://www.yammer.com/AskIPTeam) de Azure Information Protection.
 
 - **Información de hoja de ruta**. Por ejemplo, cuándo estará disponible una nueva versión o se planea la incorporación de una funcionalidad adicional. Para obtener esta información, visite el [blog de Enterprise Mobility + Security](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services) o solicítela en el [sitio de Yammer](https://www.yammer.com/AskIPTeam) de Azure Information Protection. También puede consultar el [sitio de UserVoice](https://msip.uservoice.com) de Azure Information Protection y utilizar este recurso para solicitar nuevas características.
 

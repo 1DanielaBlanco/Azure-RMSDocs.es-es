@@ -4,7 +4,7 @@ description: "Información sobre el registro de uso y los archivos de cliente de
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/23/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5a34ab85-773f-4782-ba09-c321cddf5bc0
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 64e6e17beb134fca1e51b35b39ff9f130c88ecbb
-ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
+ms.openlocfilehash: 33047865430004f91eb85ec7e32bbfc3f2f6bbde
+ms.sourcegitcommit: f1d0b899e6d79ebef3829f24711f947316bca8ef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 11/20/2017
 ---
 # <a name="admin-guide-azure-information-protection-client-files-and-client-usage-logging"></a>Guía del administrador: Registro de uso de cliente y archivos de cliente de Azure Information Protection
 
@@ -32,13 +32,13 @@ Archivos de cliente:
 
 - Para los sistemas operativos de 32 bits: **\Archivos de programa\Microsoft Azure Information Protection**
 
-Archivos de registros de cliente y archivos de directiva actualmente instalados:
+Archivos de registros de cliente y archivos de directiva actualmente instalado:
 
 - Para los sistemas operativos de 32 y 64 bits: **%localappdata%\Microsoft\MSIP**
 
 ## <a name="usage-logging-for-the-azure-information-protection-client"></a>Registro de uso del cliente de Azure Information Protection
 
-El cliente registra la actividad del usuario en el registro de eventos local de Windows **Aplicaciones y servicios**, **Azure Information Protection**. Los eventos incluyen la siguiente información:
+El cliente registra la actividad del usuario en el registro de eventos local de Windows **Aplicaciones y servicios** > **Azure Information Protection**. Los eventos incluyen la siguiente información:
 
 - Fecha, versión de cliente, id. de directiva
 

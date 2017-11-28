@@ -4,7 +4,7 @@ description: "Configure y administre plantillas de administración de derechos d
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/06/2017
+ms.date: 11/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 5afd71e059ef22eed61347e6916b9cbb6c2dc7f0
-ms.sourcegitcommit: 326930de25b259c18469f4100ec5774a04bedc7b
+ms.openlocfilehash: 74f3f9e22e5607c8b85b752bcd3881d5b7a092b1
+ms.sourcegitcommit: 0ef66a8479b4105c00bf1b1df46d2ddf044b7670
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2017
+ms.lasthandoff: 11/18/2017
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>Configuración y administración de plantillas para Azure Information Protection
 
@@ -32,11 +32,11 @@ Las plantillas de Rights Management ahora están integradas con la directiva de 
 
 **Cuando tiene una suscripción que incluye clasificación, etiquetado y protección (Azure Information Protection P1 o P2):**
 
-- Las plantillas de Rights Management que no están integradas con las etiquetas para el inquilino se muestran en la sección **Plantillas** después de las etiquetas en la hoja **Azure Information Protection - Global policy** (Azure Information Protection: directiva global). Puede convertir estas plantillas en etiquetas o puede crear un vínculo a ellas cuando configure la protección de sus etiquetas. 
+- Las plantillas de Rights Management que no están integradas con las etiquetas para el inquilino se muestran en la sección **Plantillas de protección** después de las etiquetas en la hoja **Azure Information Protection - Global policy** (Azure Information Protection: directiva global). Puede convertir estas plantillas en etiquetas o puede crear un vínculo a ellas cuando configure la protección de sus etiquetas. 
 
 **Cuando tiene una suscripción que solo incluye protección (una suscripción a Office 365 que incluye el servicio Azure Rights Management):**
 
-- Las plantillas de Rights Management para el inquilino se muestran en la hoja **Azure Information Protection - Global policy** (Azure Information Protection: directiva global), en la sección **Plantillas**. No se muestran etiquetas. También verá valores de configuración específicos de la clasificación y del etiquetado, pero o no tienen ningún efecto en las plantillas o no se pueden configurar. 
+- Las plantillas de Rights Management para el inquilino se muestran en la hoja **Azure Information Protection - Global policy** (Azure Information Protection: directiva global), en la sección **Plantillas de protección**. No se muestran etiquetas. También verá valores de configuración específicos de la clasificación y del etiquetado, pero o no tienen ningún efecto en las plantillas o no se pueden configurar. 
 
 ## <a name="default-templates"></a>Plantillas predeterminadas
 
@@ -95,9 +95,9 @@ Antes de editar estas plantillas o convertirlas en etiquetas, asegúrese de que 
     
     Además, actualmente no puede establecer la configuración de compatibilidad de aplicaciones para una plantilla de departamento. Si es necesario, puede establecer la configuración de compatibilidad de aplicaciones mediante PowerShell y el cmdlet [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty).
 
-- Al convertir una plantilla en etiqueta o vincular una plantilla a una etiqueta, ya no la pueden usar otras etiquetas. Además, esta plantilla ya no se muestra en la sección **Plantillas** o **Plantillas de protección**. Esta sección cambiará de nombre próximamente.
+- Al convertir una plantilla en etiqueta o vincular una plantilla a una etiqueta, ya no la pueden usar otras etiquetas. Además, esta plantilla ya no se muestra en la sección **Plantillas de protección**. 
 
-- No puede crear una plantilla desde la sección **Plantillas** o **Plantillas de protección**. En lugar de eso, cree una etiqueta con el valor **Proteger** y configure los derechos de uso y los valores en la hoja **Protección**. Para instrucciones completas, consulte [Para crear una nueva plantilla](#to-create-a-new-template).
+- No puede crear una plantilla desde la sección **Plantillas de protección**. En lugar de eso, cree una etiqueta con el valor **Proteger** y configure los derechos de uso y los valores en la hoja **Protección**. Para instrucciones completas, consulte [Para crear una nueva plantilla](#to-create-a-new-template).
 
 ## <a name="to-configure-the-templates-in-the-azure-information-protection-policy"></a>Para configurar las plantillas en la directiva de Azure Information Protection
 
@@ -145,7 +145,7 @@ Cuando se convierte una plantilla en etiqueta:
 
 - La configuración de protección se conserva y puede editarla si es necesario. Además, puede agregar otros valores de etiqueta como marcadores visuales y condiciones.
 
-- La plantilla original ya no se muestra en **Plantillas** o **Plantillas de protección** y no se puede seleccionar como predefinida al configurar la protección de una etiqueta. Para editar esta plantilla en Azure Portal, ahora debe editar la etiqueta que se ha creado al convertir la plantilla. La plantilla sigue disponible para el servicio Azure Rights Management y todavía se pueden usar los [comandos de PowerShell](administer-powershell.md) para administrarla.  
+- La plantilla original ya no aparece en **Plantillas de protección** y no se puede seleccionar como predefinida al configurar la protección de una etiqueta. Para editar esta plantilla en Azure Portal, ahora debe editar la etiqueta que se ha creado al convertir la plantilla. La plantilla sigue disponible para el servicio Azure Rights Management y todavía se pueden usar los [comandos de PowerShell](administer-powershell.md) para administrarla.  
 
 ## <a name="to-create-a-new-template"></a>Para crear una nueva plantilla
 

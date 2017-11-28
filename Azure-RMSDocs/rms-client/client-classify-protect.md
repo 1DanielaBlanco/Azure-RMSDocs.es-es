@@ -4,7 +4,7 @@ description: "Instrucciones de cómo clasificar y proteger sus documentos y corr
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/02/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 13d751bf9754ba3645cb7bb7417e7f5be394eb27
-ms.sourcegitcommit: 769057f5ffb366fc645bff542a32b2eab4f20c70
+ms.openlocfilehash: 683764d005e3223f6e5bdaa49b1d4c881a8daed4
+ms.sourcegitcommit: f1d0b899e6d79ebef3829f24711f947316bca8ef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 11/20/2017
 ---
 # <a name="user-guide-classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Guía del usuario: Clasificación y protección de archivos y correos electrónicos mediante Azure Information Protection
 
@@ -41,16 +41,13 @@ Si el archivo está protegido con los permisos personalizados, use el mecanismo 
 
 ## <a name="using-office-apps-to-classify-and-protect-your-documents-and-emails"></a>Uso de aplicaciones de Office para clasificar y proteger los documentos y correos electrónicos
 
-Use la barra de Azure Information Protection y seleccione una de las etiquetas configuradas para usted. 
+Use la barra de Azure Information Protection o el botón **Proteger** de la cinta para seleccionar una de las etiquetas que se han configurado para usted. 
 
-Por ejemplo, en la siguiente imagen se muestra que el documento aún no se ha etiquetado, porque en **Confidencialidad** aparece **Sin establecer**. Para establecer una etiqueta, como "General", haga clic en **General**. Si no está seguro de qué etiqueta aplicar en el documento o correo electrónico actual, utilice la información sobre herramientas de etiquetas para obtener más detalles sobre cada etiqueta y cuándo aplicarla. 
+Por ejemplo, en la imagen siguiente se muestra que el documento aún no se ha etiquetado, porque en **Confidencialidad** aparece **Sin establecer** en la barra de Azure Information Protection. Para establecer una etiqueta, como "General", haga clic en **General**. Si no está seguro de qué etiqueta aplicar en el documento o correo electrónico actual, utilice la información sobre herramientas de etiquetas para obtener más detalles sobre cada etiqueta y cuándo aplicarla. 
 
 ![Ejemplo de barra de Azure Information Protection](../media/info-protect-bar-not-set-callout.png)
 
 Si ya se ha aplicado la etiqueta al documento y desea cambiarla, puede seleccionar una etiqueta diferente. Si las etiquetas no se muestran en la barra, primero haga clic en el icono **Editar etiqueta**, junto al valor de la etiqueta actual.
-
-> [!TIP]
-> También puede seleccionar etiquetas desde el botón **Proteger**, en la pestaña **Archivo**.
 
 Además de seleccionar manualmente las etiquetas, estas también pueden aplicarse como sigue:
 
@@ -62,9 +59,17 @@ Además de seleccionar manualmente las etiquetas, estas también pueden aplicars
 
 ##### <a name="dont-see-this-information-protection-bar-in-your-office-apps"></a>¿No aparece la barra de Information Protection en las aplicaciones de Office?
 
-- Puede que no tenga [instalado](install-client-app.md) el cliente de Azure Information Protection, o que este se encuentre en ejecución en el [modo de solo protección](client-protection-only-mode.md).
+Posibles razones:
+
+- El cliente de Azure Information Protection no está [instalado](install-client-app.md).
+
+- Tiene instalado el cliente, pero el administrador ha establecido una configuración que no muestra la barra. En su lugar, seleccione las etiquetas desde el botón **Proteger**, en la pestaña **Archivo** de la cinta de Office. 
+
+- El cliente se está ejecutando en [modo de solo protección](client-protection-only-mode.md).
  
-##### <a name="is-the-label-that-you-expect-to-see-not-displayed-on-the-bar"></a>¿La etiqueta que esperaba ver no aparece en la barra? 
+##### <a name="is-the-label-that-you-expect-to-see-not-displayed"></a>¿No se muestra la etiqueta que esperaba ver? 
+
+Posibles razones:
 
 - Si el administrador ha configurado recientemente una etiqueta nueva, intente cerrar todas las instancias de la aplicación de Office y vuelva a abrirla. Esta acción comprueba si las etiquetas han experimentado algún cambio.
 
@@ -74,11 +79,13 @@ Además de seleccionar manualmente las etiquetas, estas también pueden aplicars
 
 ### <a name="set-custom-permissions-for-a-document"></a>Establecimiento de permisos personalizados para un documento
 
-Puede especificar su propia configuración de protección para documentos en lugar de usar la configuración de protección que el administrador podría haber incluido con la etiqueta seleccionada.
+Si el administrador lo permite, puede especificar su propia configuración de protección para los documentos en lugar de usar la configuración de protección que es posible que el administrador haya incluido con la etiqueta seleccionada.
 
 1. En la pestaña **Inicio**, en el grupo **Protección**, haga clic en **Proteger** > **Permisos personalizados**:
 
     ![Opción Permisisons personalizados](../media/custom-permissions-callout.png)
+    
+    Si no puede seleccionar **Permisos personalizados**, el administrador no permite usar esta opción.
     
     Tenga en cuenta que cualquier permiso personalizado que especifique reemplaza, en lugar de complementar, la configuración de protección que el administrador podría haber definido para la etiqueta elegida.  
 
@@ -135,7 +142,9 @@ La guía para administradores contiene una lista completa de los tipos de archiv
     
     ![Ninguna etiqueta en el cuadro de diálogo Clasificar y proteger: Azure Information Protection**](../media/info-protect-dialog-labels-protection-only.png)
     
-3. Si desea especificar su propia configuración de protección en lugar de usar la configuración de protección que el administrador podría haber incluido con la etiqueta seleccionada, seleccione **Protect with custom permissions** (Proteger con permisos personalizados).
+3. Si el administrador lo permite, puede especificar su propia configuración de protección en lugar de usar la configuración de protección que es posible que el administrador haya incluido con la etiqueta seleccionada. Para ello, seleccione **Proteger con permisos personalizados**.
+    
+    Si no puede seleccionar **Proteger con permisos personalizados**, el administrador no permite usar esta opción.
     
     Cualquier permiso personalizado que especifique reemplaza, en lugar de complementar, la configuración de protección que el administrador podría haber definido para la etiqueta elegida.  
 
