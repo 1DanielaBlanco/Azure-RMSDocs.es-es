@@ -4,7 +4,7 @@ description: "Instrucciones para utilizar el cliente Rights Management (RMS) con
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/20/2017
+ms.date: 11/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: cd580b14e35697d00a3c42abd51d2afc94d6959d
-ms.sourcegitcommit: 73973986ae7086e6f30cab579187241fd98bef61
+ms.openlocfilehash: dfa751ef7cd4c8405fa02299576cb57083d63495
+ms.sourcegitcommit: 228953e96609b3c5ec8deddaab91be59650d9006
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="rms-protection-with-windows-server-file-classification-infrastructure-fci"></a>Protección de RMS con la infraestructura de clasificación de archivos (FCI) de Windows Server
 
@@ -289,5 +289,9 @@ Cuando tenga las instrucciones anteriores en funcionamiento, será fácil modifi
 Para realizar esta modificación, use una de las propiedades de clasificación integradas (por ejemplo, **Información de identificación personal**) o cree su propia propiedad. A continuación, cree una nueva regla que utilice esta propiedad. Por ejemplo, puede seleccionar **Clasificador de contenido**, elija la propiedad **Información de identificación personal** con un valor de **Alto**y configure el modelo de expresiones o cadenas que identifica el archivo que se va a configurar para esta propiedad (como la cadena "**Fecha de nacimiento**").
 
 Ahora todo lo que debe hacer es crear una nueva tarea de administración de archivos que utilice el mismo script, aunque quizás con una plantilla diferente, así como configurar la condición para la propiedad de clasificación que acaba de configurar. Por ejemplo, en lugar de la condición que hemos configurado previamente (propiedad**RMS** , **Igual**, **Sí**), seleccione la propiedad **Información de identificación personal** con el valor **Operador** establecido en **Igual** y el **Valor** de **Alto**.
+
+## <a name="next-steps"></a>Pasos siguientes
+
+Es posible que se pregunte: [¿Cuál es la diferencia entre FCI de Windows Server y el analizador de Azure Information Protection?](../get-started/faqs.md#whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner) 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

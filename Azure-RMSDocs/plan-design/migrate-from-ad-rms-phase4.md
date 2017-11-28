@@ -4,7 +4,7 @@ description: "Fase 4 de la migración desde AD RMS a Azure Information Protectio
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/18/2017
+ms.date: 11/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6c93f38b0ae725c1bc1d3423baf64931593af3b7
-ms.sourcegitcommit: 64ba794e7844a74b1e25db0d44b90060e3ae1468
+ms.openlocfilehash: beda6273c306a55130223c7b4b9ed9fc4d088fac
+ms.sourcegitcommit: 228953e96609b3c5ec8deddaab91be59650d9006
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="migration-phase-4---supporting-services-configuration"></a>Fase 4 de la migración: configuración de servicios auxiliares
 
@@ -29,11 +29,9 @@ Use la información siguiente para la fase 4 de la migración desde AD RMS a Azu
 
 ## <a name="step-8-configure-irm-integration-for-exchange-online"></a>Paso 8. Configure la integración de IRM en Exchange Online.
 
-Si ha importado anteriormente el TDP desde AD RMS a Exchange Online, necesita quitarlo para evitar conflictos de plantillas y directivas después de realizar la migración a Azure Information Protection. Para ello, use el cmdlet [Remove-RMSTrustedPublishingDomain](https://technet.microsoft.com/library/jj200720%28v=exchg.150%29.aspx) de Exchange Online.
+Independientemente de la topología de claves de inquilino de Azure Information Protection que haya elegido, siga estos pasos:
 
-Si ha elegido una topología de claves de inquilino de Azure Information Protection **administrada por Microsoft**:
-
-1. Siga las instrucciones de la sección [Exchange Online: Configuración de IRM](../deploy-use/configure-office365.md#exchange-online-irm-configuration) en el artículo [Office 365: Configuración para clientes y servicios en línea](../deploy-use/configure-office365.md). En esta sección se incluye la ejecución de comandos típicos que establecen una conexión con el servicio de Exchange Online, importan la clave de inquilino desde Azure Information Protection y habilitan la función de IRM para Exchange Online. Después de completar estos pasos, tendrá la función de protección completa de Azure Rights Management con Exchange Online.
+1. Para configurar Exchange Online para usar el servicio Azure Rights Management, vea [Set up new Office 365 Message Encryption capabilities built on top of Azure Information Protection](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e) (Configuración de nuevas capacidades del cifrado de mensajes de Office 365 sobre Azure Information Protection). 
 
 2. Además de la configuración estándar para habilitar IRM para Exchange Online, ejecute los siguientes comandos de PowerShell para asegurarse de que los usuarios puedan leer correos electrónicos enviados mediante la protección de AD RMS.
 
@@ -45,11 +43,6 @@ Si ha elegido una topología de claves de inquilino de Azure Information Protect
         Set-IRMConfiguration -LicensingLocation $list
         Set-IRMConfiguration -internallicensingenabled $false
         Set-IRMConfiguration -internallicensingenabled $true
-
-
-Si ha elegido una topología de claves de inquilino de Azure Information Protection **administrada por el cliente (BYOK)**:
-
--   Habrá reducido las funciones de protección de Rights Management con Exchange Online, como se describe en el artículo [Precio y restricciones de BYOK](byok-price-restrictions.md).
 
 
 ## <a name="step-9-configure-irm-integration-for-exchange-server-and-sharepoint-server"></a>Step 9. Configuración de la integración de IRM para Exchange Server y SharePoint Server

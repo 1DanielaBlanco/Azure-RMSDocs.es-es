@@ -4,7 +4,7 @@ description: "Instrucciones para migrar la implementación de Active Directory R
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/10/2017
+ms.date: 11/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 1b1c7a084aa5d81a0abfd50021b95ae8af32d034
-ms.sourcegitcommit: e9a24fc5303b21f5eeebf16afed44db0d163ac77
+ms.openlocfilehash: a65e1178594e14c7d8f4faaedee96d827a9412e5
+ms.sourcegitcommit: 9b975e66b12a3836003c6c4de139ded4bbf370bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>Migración desde AD RMS a Azure Information Protection
 
@@ -202,11 +202,13 @@ Los pasos de migración se pueden dividir en cinco fases que se pueden realizar 
 
     Cuando haya confirmado que todos los equipos Windows usen el servicio Azure Rights Management y ya no accedan a los servidores de AD RMS, podrá desaprovisionar la implementación de AD RMS.
 
-- **Paso 11: reconfiguración de los clientes de dispositivos móviles y los equipos Mac y quitar controles de incorporación**
+- **Paso 11: completar tareas de migración de cliente**
 
     Si ha implementado la [extensión de dispositivos móviles](http://technet.microsoft.com/library/dn673574.aspx) para admitir dispositivos móviles como iPads y teléfonos iOS, teléfonos y tabletas Android, Windows Phone y equipos Mac, debe quitar los registros SRV en DNS que redirigen estos clientes para usar AD RMS. 
     
     Ya no son necesarios los controles de incorporación configurados durante la fase de preparación. Pero si no ha usado controles de incorporación porque ha decidido migrarlo todo al mismo tiempo, en lugar de realizar una migración por fases, puede omitir las instrucciones para quitar los controles de incorporación.
+    
+    Si los equipos Windows ejecutan Office 2010, compruebe si es necesario deshabilitar la tarea **Administración de plantillas de directiva de derechos de AD RMS (automatizada)**.
 
 - **Paso 12: regeneración de la clave de inquilino de Azure Information Protection**
 
