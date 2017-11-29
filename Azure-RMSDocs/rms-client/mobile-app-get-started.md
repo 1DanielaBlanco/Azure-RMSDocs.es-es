@@ -25,24 +25,24 @@ ms.lasthandoff: 10/17/2017
 
 Antes de seguir las instrucciones de esta página, asegúrese de que ha leído las [Preguntas más frecuentes sobre la aplicación de Azure Information Protection para iOS y Android](mobile-app-faq.md). En esa página se explica para qué sirve la aplicación, qué dispositivos son compatibles e información básica sobre cómo usar la aplicación.
 
-Normalmente, la mayoría de los usuarios usarán la aplicación de Azure Information Protection cuando tengan que abrir un archivo o correo electrónico protegido. Pero si es administrador y quiere probar la aplicación para los usuarios, o simplemente quiere probarla antes de necesitarla, puede usar las instrucciones siguientes.
+Normalmente, la mayoría de los usuarios usarán la aplicación de Azure Information Protection cuando abran un archivo o un correo electrónico protegido. Sin embargo, si es administrador y quiere evaluar la aplicación para los usuarios, o simplemente quiere probarla antes de necesitarla, siga estas instrucciones.
 
 > [!NOTE]
 > En este caso, no debe abrir primero la aplicación para seleccionar los documentos y correos electrónicos que quiera ver. En su lugar, abra el documento o correo electrónico y, a continuación, seleccione esta aplicación para ver el documento o correo electrónico.
 >
 > De forma similar, no intente iniciar sesión en la aplicación hasta que se le pida.
 
-Para usar las instrucciones siguientes, debe tener acceso desde su dispositivo móvil a uno de los archivos que admite la aplicación. Por ejemplo:
+Para acceder al visor y ver cómo funciona, abra en el dispositivo móvil uno de los archivos compatibles con la aplicación. Por ejemplo:
 
-- **Un archivo .rpmsg**: se trata de un mensaje de correo electrónico protegido por derechos que se muestra como un archivo adjunto en un mensaje de correo electrónico cuando la aplicación de correo electrónico de su dispositivo móvil no admite de forma nativa la protección de datos de Rights Management. 
+- **Archivo .rpmsg**: mensaje de correo electrónico protegido por derechos que se muestra como adjunto de correo electrónico cuando la aplicación de correo del dispositivo móvil no admite la protección de datos de Rights Management de forma nativa.  
     
-    Use otro dispositivo para enviarse a usted mismo un mensaje de correo electrónico protegido por derechos al que pueda acceder desde su dispositivo móvil. Por ejemplo, use Outlook en un equipo Windows. Para ver una lista de clientes de correo electrónico que admiten de forma nativa Rights Management, vea la columna CORREO ELECTRÓNICO de la página [Aplicaciones compatibles con la protección de datos de Azure Rights Management](../get-started/requirements-applications.md).
+    Envíese a usted mismo desde otro dispositivo un mensaje de correo electrónico protegido por derechos al que pueda acceder desde el dispositivo móvil.  Por ejemplo, use Outlook en un equipo Windows. Consulte los clientes de correo electrónico que admiten Rights Management de forma nativa en la columna CORREO ELECTRÓNICO de la página [Aplicaciones compatibles con la protección de datos de Azure Rights Management](../get-started/requirements-applications.md).
 
-- **Un archivo PDF protegido por derechos**: desde un equipo con Windows, utilice el cliente de Azure Information Protection para [proteger un archivo PDF](client-classify-protect.md) y, después, envíe manualmente este archivo PDF protegido por derechos como datos adjuntos de correo electrónico. También puede cargar un archivo PDF en una biblioteca protegida de SharePoint y, después, compartirlo mediante su dirección de correo electrónico.
+- **Archivo PDF protegido por derechos**: desde un equipo con Windows, utilice el cliente de Azure Information Protection para [proteger un archivo PDF](client-classify-protect.md) y, después, envíese manualmente este archivo PDF protegido por derechos como datos adjuntos de correo electrónico. También puede cargar un archivo PDF en una biblioteca protegida de SharePoint y, después, compartirlo mediante su dirección de correo electrónico.
 
-- **Un .ptxt, .pjpg o .ppng**: desde un equipo con Windows, use el cliente de Azure Information Protection para proteger un archivo de texto o imagen y envíe manualmente este archivo protegido como datos adjuntos de correo electrónico. Para obtener la lista completa de tipos de archivo que puede utilizar para realizar pruebas, consulte la primera tabla de la sección [Tipos de archivos compatibles para protección y clasificación](client-admin-guide-file-types.md#supported-file-types-for-classification-and-protection) de la Guía para administradores del cliente de Azure Information Protection. 
+- **Archivo .ptxt, .pjpg o .ppng**: desde un equipo con Windows, use el cliente de Azure Information Protection para proteger un archivo de texto o imagen y envíese este archivo protegido como datos adjuntos de correo electrónico. Para conocer la lista completa de tipos de archivo que puede utilizar para realizar pruebas, consulte la primera tabla de la sección [Tipos de archivos compatibles para protección y clasificación](client-admin-guide-file-types.md#supported-file-types-for-classification-and-protection) de la Guía para administradores del cliente de Azure Information Protection. 
 
-Para ver estos archivos en la aplicación de visor de Azure Information Protection, pulse el vínculo o el archivo adjunto del correo electrónico. Cuando se le pida que seleccione una aplicación para abrirlo, seleccione la aplicación **Visor AIP**. A continuación se le solicitará que inicie sesión con su cuenta profesional o educativa, o que seleccione un certificado. Una vez que las credenciales se hayan autenticado, la aplicación de Azure Information Protection mostrará el correo electrónico o el archivo para que lo lea.
+Para ver estos archivos en la aplicación del visor de Azure Information Protection, pulse en el vínculo o en el adjunto de correo electrónico. Cuando se le pida que seleccione una aplicación para abrirlo, seleccione el **visor de AIP**. A continuación se le solicitará que inicie sesión con su cuenta profesional o educativa, o que seleccione un certificado. Una vez autenticadas las credenciales, la aplicación de Azure Information Protection mostrará el correo electrónico o el archivo para que lo lea.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
