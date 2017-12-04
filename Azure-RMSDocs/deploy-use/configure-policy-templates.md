@@ -4,7 +4,7 @@ description: "Configure y administre plantillas de administración de derechos d
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/17/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 74f3f9e22e5607c8b85b752bcd3881d5b7a092b1
-ms.sourcegitcommit: 0ef66a8479b4105c00bf1b1df46d2ddf044b7670
+ms.openlocfilehash: bb6aeea8f939614b9c1903d8e006815228f99723
+ms.sourcegitcommit: f6ba613445463c3c4c64b1620095d54b48194650
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>Configuración y administración de plantillas para Azure Information Protection
 
@@ -53,13 +53,13 @@ También puedes crear tus propias plantillas personalizadas. Aunque probablement
 
 ### <a name="default-template-names"></a>Nombres de plantillas predeterminadas
 
-Si ha adquirido hace poco una suscripción a Azure Information Protection, las plantillas predeterminadas se crean con los nombres siguientes:
+Si ha adquirido la suscripción hace poco, las plantillas predeterminadas se crearán con los nombres siguientes:
 
 - **Confidencial\Todos los empleados**, que concede permisos de lectura y modificación para el contenido protegido.
 
 - **Extremadamente confidencial\Todos los empleados**, que concede permiso de solo lectura para el contenido protegido.
 
-Si ha adquirido la suscripción a Azure Information Protection hace algún tiempo, o si no tiene ninguna suscripción a Azure Information Protection pero tiene una a Office 365 que incluye Azure Rights Management, las plantillas predeterminadas se crean con los nombres siguientes:
+Si ha adquirido la suscripción hace algún tiempo, las plantillas predeterminadas se crearán con los nombres siguientes:
 
 - **\<nombre de la organización> - Confidencial**, que concede permisos de lectura y modificación para el contenido protegido.
 

@@ -4,7 +4,7 @@ description: Instrucciones para instalar, configurar y ejecutar el analizador de
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/22/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 6dfda21368713c652df6c815dbb3895517182af1
-ms.sourcegitcommit: 228953e96609b3c5ec8deddaab91be59650d9006
+ms.openlocfilehash: 690cbc194be79a4e4fe9d85cda0e731d31d33822
+ms.sourcegitcommit: 8d47080abab0be9b16672fee0d885ebe00f7f5f3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Implementación del analizador de Azure Information Protection para clasificar y proteger automáticamente los archivos
 
@@ -52,7 +52,7 @@ Antes de instalar el analizador de Azure Information Protection, asegúrese de q
 
 |Requisito|Más información|
 |---------------|--------------------|
-|Equipo con Windows Server en el que se ejecutará el servicio del analizador:<br /><br />- 4 procesos<br /><br />- 4 GB de RAM|Windows Server 2016 o Windows Server 2012 R2. <br /><br />Nota: Para llevar a cabo pruebas o evaluaciones en un entorno que no sea de producción, puede usar un sistema operativo cliente de Windows que sea [compatible con el cliente de Azure Information Protection](../get-started/requirements.md#client-devices).<br /><br />Este equipo puede ser un equipo físico o virtual que tenga una conexión de red rápida y confiable a los almacenes de datos que deban analizarse. <br /><br />Asegúrese de que este equipo tenga la [conectividad a Internet](../get-started/requirements.md#firewalls-and-network-infrastructure) necesaria para Azure Information Protection. De lo contrario, debe configurarlo como un [equipo desconectado](../rms-client/client-admin-guide-customizations.md#support-for-disconnected-computers). |
+|Equipo con Windows Server en el que se ejecutará el servicio del analizador:<br /><br />- 4 procesadores<br /><br />- 4 GB de RAM|Windows Server 2016 o Windows Server 2012 R2. <br /><br />Nota: Para llevar a cabo pruebas o evaluaciones en un entorno que no sea de producción, puede usar un sistema operativo cliente de Windows que sea [compatible con el cliente de Azure Information Protection](../get-started/requirements.md#client-devices).<br /><br />Este equipo puede ser un equipo físico o virtual que tenga una conexión de red rápida y confiable a los almacenes de datos que deban analizarse. <br /><br />Asegúrese de que este equipo tenga la [conectividad a Internet](../get-started/requirements.md#firewalls-and-network-infrastructure) necesaria para Azure Information Protection. De lo contrario, debe configurarlo como un [equipo desconectado](../rms-client/client-admin-guide-customizations.md#support-for-disconnected-computers). |
 |SQL Server para almacenar la configuración del analizador:<br /><br />- Instancia local o remota|SQL Server 2012 es la versión mínima para las siguientes ediciones:<br /><br />- SQL Server Enterprise<br /><br />- SQL Server Standard<br /><br />- SQL Server Express|
 |Cuenta de servicio en la que se ejecutará el servicio del analizador|Esta cuenta debe ser de Active Directory y estar sincronizada con Azure AD, con los siguientes requisitos adicionales:<br /><br />- **Derecho de iniciar sesión localmente**. Este derecho es necesario para la instalación y configuración del analizador, pero no para la operación. Debe conceder este derecho a la cuenta de servicio, pero puede quitarlo después de haber confirmado que el analizador puede detectar, clasificar y proteger los archivos.<br /><br />- **Derecho de iniciar sesión como servicio**. Este derecho se concede automáticamente a la cuenta de servicio durante la instalación del analizador y es necesario para la instalación, la configuración y el funcionamiento del analizador. <br /><br />- Permisos a los repositorios de datos: debe conceder permisos de **lectura** y **escritura** para analizar los archivos y, a continuación, aplicar la clasificación y la protección a los archivos que cumplan las condiciones establecidas en la directiva de Azure Information Protection. Para ejecutar el analizador solo en modo de detección, el permiso de **lectura** es suficiente.<br /><br />- Para las etiquetas que ofrecen una segunda protección o quitan la protección: para asegurarse de que el analizador siempre tenga acceso a los archivos protegidos, convierta esta cuenta en un [superusuario](configure-super-users.md) para el servicio de Azure Rights Management y asegúrese de que la característica de superusuario esté habilitada. Para obtener más información sobre los requisitos de la cuenta para aplicar la protección, consulte [Preparación de usuarios y grupos para Azure Information Protection](../plan-design/prepare.md).|
 |Cliente de Azure Information Protection instalado en el equipo con Windows Server|Actualmente, el analizador de Azure Information Protection requiere la versión preliminar del cliente de Azure Information Protection.<br /><br />Si lo prefiere, puede instalar el cliente solo con el módulo de PowerShell (AzureInformationProtection) que se usa para instalar y configurar el analizador.<br /><br />Para obtener instrucciones de instalación del cliente, consulte la [guía del administrador](../rms-client/client-admin-guide.md).|
@@ -78,6 +78,8 @@ Antes de instalar el analizador de Azure Information Protection, asegúrese de q
     - Para una instancia con nombre: `Install-AIPScanner -SqlServerInstance SQLSERVER1\AIPSCANNER`
     
     - Para SQL Server Express: `Install-AIPScanner -SqlServerInstance SQLSERVER1\SQLEXPRESS`
+    
+    Si necesita más [ejemplos detallados](/powershell/module/azureinformationprotection/set-aipscannerconfiguration#examples), use la ayuda en línea sobre este cmdlet.
 
 4. Compruebe que el servicio esté ahora instalado mediante **Herramientas administrativas** > **Servicios**. 
     
@@ -162,6 +164,48 @@ En el primer ciclo de examen, el analizador inspecciona todos los archivos de lo
 Puede forzar a que el analizador inspeccione todos los archivos de nuevo mediante la ejecución de [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) con el parámetro `-Type` establecido en **Completo**. Esta configuración es útil si quiere que los informes incluyan todos los archivos y suele usarse cuando el analizador se ejecuta en modo de detección. Cuando finaliza el examen completo, el tipo de examen cambia automáticamente a incremental para que en los análisis posteriores solo se examinen los archivos nuevos o modificados.
 
 Además, se inspeccionan todos los archivos cuando el analizador descarga una directiva de Azure Information Protection con condiciones nuevas o modificadas. El escáner actualiza la directiva cada hora y cuando se inicia el servicio.
+
+## <a name="optimizing-the-performance-of-the-azure-information-protection-scanner"></a>Optimización del rendimiento del analizador de Azure Information Protection
+
+Para maximizar el rendimiento del analizador:
+
+- **Use una conexión de red de alta velocidad y estable entre el equipo que actúa como analizador y el almacén para los datos examinados**.
+    
+    Por ejemplo, conecte el equipo que actúa como analizador a la misma red LAN o al mismo segmento de red que el almacén de datos examinados (se prefiere la segunda opción).
+    
+    La calidad de la conexión de red afecta al rendimiento del analizador, ya que, al inspeccionar archivos, el analizador transfiere el contenido de los archivos al equipo que ejecuta el servicio de examen. Al reducir (o eliminar) el número de saltos de red que los datos deben realizar, también se reduce la carga de la red. 
+
+- **Asegúrese de que el equipo que actúa como analizador tenga recursos del procesador disponibles**.
+    
+    Inspeccione el contenido de los archivos para obtener una coincidencia según las condiciones que haya configurado. Las acciones de cifrado y descifrado de archivos suponen una carga elevada para el procesador. Supervise los ciclos de examen típicos de los almacenes de datos que haya especificado para identificar si la falta de recursos del procesador afecta negativamente al rendimiento del analizador.
+    
+- **No examine carpetas locales del equipo que ejecute el servicio de analizador**.
+    
+    Si tiene carpetas para examinar en un servidor Windows, instale el analizador en otro equipo y configure las carpetas como recursos compartidos de red para realizar el examen. Al separar ambas funciones de los archivos de hospedaje y de examen, los recursos de cálculo de esos servicios no interferirán entre sí.
+
+Otros factores que influyen en el rendimiento del analizador:
+
+- La carga actual y los tiempos de respuesta de los almacenes de datos que contienen los archivos para examinar.
+
+- Ejecución del analizador en modo de detección o aplicación
+    
+    El modo de detección suele tener un ritmo de examen superior en comparación con el modo de aplicación, ya que la detección requiere una única acción de lectura de archivo, mientras que el modo de aplicación requiere acciones de lectura y escritura.
+
+- Cambio de las condiciones de Azure Information Protection
+    
+    Obviamente, el primer ciclo de examen, que se produce cuando el analizador inspecciona todos los archivos, requerirá más tiempo que los siguientes ciclos de examen, ya que, de forma predeterminada, solo se examinan los archivos nuevos o modificados. Sin embargo, si cambia las condiciones de la directiva de Azure Information Protection, todos los archivos se examinarán una vez más, tal como se describe en la [sección anterior](#when-files-are-rescanned-by-the-azure-information-protection-scanner).
+
+- Elección del nivel de registro
+    
+    Puede elegir entre **Depurar**, **Información**, **Error** y **Desactivado** para los informes del analizador. **Desactivado** da como resultado un rendimiento óptimo; **Depurar** ralentiza considerablemente el analizador y debe usarse solo para solucionar problemas. Para obtener más información, consulte el parámetro *ReportLevel* del cmdlet [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration).
+
+- En cuanto a los archivos:
+    
+    - Los archivos de Office se examinan más rápido que los archivos PDF.
+    
+    - Los desprotegidos se examinan más rápido que los protegidos.
+    
+    - Obviamente, los archivos de gran tamaño se examinan más lentamente que aquellos más pequeños.
 
 ## <a name="list-of-cmdlets-for-the-azure-information-protection-scanner"></a>Lista de cmdlets del analizador de Azure Information Protection 
 

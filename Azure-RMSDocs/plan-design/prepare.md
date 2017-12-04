@@ -4,7 +4,7 @@ description: "Compruebe que tiene las cuentas de usuario y grupo que necesita pa
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/22/2017
+ms.date: 09/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 41269f709df4b00a6f127e81aa060a062ab1005f
-ms.sourcegitcommit: cd3320fa34acb90f05d5d3e0e83604cdd46bd9a9
+ms.openlocfilehash: 8f29aec107c344489ae38afabfa79129fd3fa000
+ms.sourcegitcommit: 8d47080abab0be9b16672fee0d885ebe00f7f5f3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="preparing-users-and-groups-for-azure-information-protection"></a>Preparación de usuarios y grupos para Azure Information Protection
 
@@ -207,7 +207,7 @@ Para los dos escenarios de la configuración del servicio Azure Rights Managemen
 
 Si cambia la dirección de correo electrónico de un usuario o grupo, se recomienda agregar la dirección de correo electrónico anterior como una segunda dirección de correo electrónico (también conocida como dirección de proxy, alias o dirección de correo electrónico alternativa) para el usuario o grupo. De esta forma, se agrega la dirección de correo electrónico anterior al atributo proxyAddresses de Azure AD. Esta administración de cuentas garantiza la continuidad del negocio para los derechos de uso u otras configuraciones que se hayan guardado allí cuando se utilizaba la dirección de correo electrónico anterior. 
 
-Si no puede hacerlo, el usuario o grupo con la nueva dirección de correo electrónico se arriesga a que se le deniegue el acceso a los documentos y a correos electrónicos que anteriormente estaban protegidos, y a cualquier otra configuración errónea que usaba el valor anterior. En este caso, debe repetir la configuración para guardar la nueva dirección de correo electrónico.
+Si no puede hacerlo, el usuario o grupo con la nueva dirección de correo electrónico se arriesga a que se le deniegue el acceso a los documentos y correos electrónicos que anteriormente estaban protegidos con la dirección de correo electrónico antigua. En este caso, debe repetir la configuración de protección para guardar la nueva dirección de correo electrónico. Por ejemplo, si se conceden derechos de uso en plantillas o etiquetas al usuario o grupo, edite las plantillas o etiquetas y especifique una nueva dirección de correo electrónico con los mismos derechos de uso que tenía la antigua.
 
 Tenga en cuenta que es raro que un grupo cambie su dirección de correo electrónico y si asigna derechos de uso a un grupo en lugar de a usuarios individuales, no importa si cambia la dirección de correo electrónico del usuario. En este escenario, los derechos de uso se asignan a la dirección de correo electrónico del grupo y no a las direcciones de correo electrónico de usuarios individuales. Este es el método más adecuado (y recomendado) para que un administrador configure los derechos de uso que protegen documentos y correos electrónicos. Sin embargo, los usuarios normalmente pueden asignar permisos personalizados a usuarios individuales. Dado que no siempre se puede saber si una cuenta de usuario o grupo se ha utilizado para conceder acceso, resulta más seguro agregar siempre la dirección de correo electrónico anterior como una segunda dirección.
 
