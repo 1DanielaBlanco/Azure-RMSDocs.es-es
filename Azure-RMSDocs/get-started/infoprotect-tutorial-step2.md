@@ -4,17 +4,17 @@ description: "Paso 2 de un tutorial de introducción para probar rápidamente Az
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/17/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: 0e10a1809aaf792ac8c5960e30917aabd5c44548
-ms.sourcegitcommit: 0ef66a8479b4105c00bf1b1df46d2ddf044b7670
+ms.openlocfilehash: 3dd58454709dd5a73edc23578f12e79d85a9b9c9
+ms.sourcegitcommit: 8d47080abab0be9b16672fee0d885ebe00f7f5f3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>Paso 2: configurar y publicar la directiva de Azure Information Protection
 
@@ -50,6 +50,10 @@ En este tutorial, se cambiarán algunas de esas configuraciones de directiva par
     Si no tiene esta etiqueta porque tiene una versión anterior de la directiva, elija **Interno** como etiqueta equivalente.
 
 2. En **Para establecer una etiqueta de clasificación menor, eliminar una etiqueta o quitar la protección, los usuarios deben dar una justificación al respecto**, establezca esta opción en **Activado**.
+
+3. Busque también la opción **Configuración de la opción de permisos personalizados para que esté disponible para los usuarios**. Si está establecida en **Desactivado**, cámbiela a **Activado**.
+    
+    Es posible que no tenga que cambiarla, ya que el valor predeterminado depende del momento en el que obtuvo la suscripción. Usaremos permisos personalizados más adelante en el tutorial para compartir un documento protegido con el usuario que especifique. Para ello, debe hacer clic con el botón derecho en el archivo en el Explorador de archivos.
 
 ## <a name="creating-a-new-label-for-protection-visual-markers-and-a-condition-to-prompt-for-classification"></a>Crear una etiqueta para protección, marcadores visuales y una condición para solicitar la clasificación
 
@@ -142,7 +146,7 @@ Ahora que ya ha dado un vistazo a la directiva predeterminada y ha hecho algunos
 |Si desea obtener más información|Información adicional|
 |--------------------------------|--------------------------|
 |Acerca de la directiva predeterminada y las diferentes versiones|[Directiva predeterminada de Azure Information Protection](../deploy-use/configure-policy-default.md)|
-|Acerca de las opciones de configuración de la directiva|[Configuración de la directiva de Azure Information Protection](../deploy-use/configure-policy.md)|
+|Configuración de la directiva|[Configuración de la directiva de Azure Information Protection](../deploy-use/configure-policy.md)|
 |Instrucciones detalladas para configurar una etiqueta para la protección|[Cómo configurar una etiqueta para la protección de Rights Management](../deploy-use/configure-policy-protection.md)|
 |Información detallada sobre los permisos|[Configurar los derechos de uso para Azure Rights Management](../deploy-use/configure-usage-rights.md)|
 
