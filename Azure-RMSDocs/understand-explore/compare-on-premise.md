@@ -4,7 +4,7 @@ description: "Si conoce o ha implementado con anterioridad Active Directory Righ
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/03/2017
+ms.date: 12/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8123bd62-1814-4d79-b306-e20c1a00e264
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 60765865a0c422f4baac72ed88a6bca9b96ed66f
-ms.sourcegitcommit: 4d730631ea8c16c7150b794722bb23921f1b2008
+ms.openlocfilehash: 124bef6f9c54fc154bdf95322ca418d01f5b5636
+ms.sourcegitcommit: 3cbea6b4191b97c69d06d04cbbd852aacacdd9c7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 12/05/2017
 ---
 # <a name="comparing-azure-information-protection-and-ad-rms"></a>Comparación de Azure Information Protection y AD RMS
 
@@ -57,7 +57,7 @@ Para obtener más información y conocer otras diferencias, vea en la tabla sigu
 |La versión mínima compatible de Microsoft Office es Office 2010, que requiere el [cliente de Azure Information Protection](../rms-client/aip-client.md) o la aplicación RMS sharing.<br /><br />Microsoft Office para Mac:<br /><br />- Microsoft Office para Mac 2016: compatible<br /><br />- Microsoft Office para Mac 2011: no compatible|La versión mínima compatible de Microsoft Office es Office 2007.<br /><br />Microsoft Office para Mac:<br /><br />- Microsoft Office para Mac 2016: compatible<br /><br />- Microsoft Office para Mac 2011: compatible|
 |Admite el [cliente de Azure Information Protection](../rms-client/aip-client.md) para Windows, iOS y Android. La aplicación RMS sharing continúa admitiendo equipos Mac y Windows Phone.<br /><br />Además, el cliente de Azure Information Protection admite lo siguiente:<br /><br />- Uso compartido con personas de otra organización.<br /><br />- Un sitio de seguimiento de documentos para los usuarios, que incluye la capacidad de revocar un documento.|Admite el [cliente de Azure Information Protection](../rms-client/aip-client.md) para Windows, iOS y Android. La aplicación RMS sharing continúa admitiendo equipos Mac y Windows Phone. Sin embargo, el uso compartido no es compatible con compartir con personas de otra organización o el sitio de Seguimiento de documentos y la capacidad de los usuarios de revocar documentos.|
 |La mayoría de los [tipos de archivo](../rms-client/client-admin-guide-file-types.md) se pueden clasificar y proteger con el cliente de Azure Information Protection.<br /><br />Para otras aplicaciones, compruebe la tabla de [Requisitos de Azure RMS: aplicaciones](../get-started/requirements-applications.md).|La mayoría de los [tipos de archivo](../rms-client/client-admin-guide-file-types.md) se pueden proteger con el cliente de Azure Information Protection.<br /><br />Para otras aplicaciones, compruebe la tabla de [Requisitos de Azure RMS: aplicaciones](../get-started/requirements-applications.md).|
-|La versión mínima compatible del cliente Windows es Windows 7 SP1.|La versión mínima compatible del cliente Windows es Windows Vista Service Pack 2.|
+|La versión mínima compatible del cliente Windows es Windows 7 SP1.|La versión mínima compatible del cliente Windows es Windows 7 SP1.|
 |El dispositivo móvil es compatible, entre otros, con Windows Phone, Android, iOS y Windows RT.<br /><br />El soporte del correo electrónico mediante Exchange ActiveSync IRM también es compatible en todas las plataformas de dispositivos móviles que admiten este protocolo.|La compatibilidad de dispositivos móviles incluye Windows Phone, Android, iOS y Windows RT, y requiere la [Extensión de Active Directory Rights Management Services para dispositivos móviles](http://technet.microsoft.com/library/dn673574.aspx).<br /><br />El soporte del correo electrónico mediante Exchange ActiveSync IRM es compatible en todas las plataformas de dispositivos móviles que admiten este protocolo.|
 |Admite Multi-Factor Authentication (MFA) para equipos y dispositivos móviles.<br /><br />Para más información, vea [Multi-Factor Authentication (MFA) y Azure Information Protection](../get-started/requirements-azure-ad.md#multi-factor-authentication-mfa-and-azure-information-protection).|Admite la autenticación de tarjeta inteligente si IIS está configurado para solicitar certificados.|
 |Es compatible con el Modo criptográfico 2 sin otra configuración adicional, lo que proporciona una mayor seguridad para longitudes de clave y algoritmos de cifrado.<br /><br />Para más información, consulte la sección [Controles criptográficos para firmas y cifrado](#cryptographic-controls-for-signing-and-encryption) de este artículo y [Modos criptográficos de AD RMS](http://go.microsoft.com/fwlink/?LinkId=266659).|Es compatible con el Modo criptográfico 1 de forma predeterminada y precisa configuración adicional para admitir el Modo criptográfico 2 para obtener una mayor seguridad.<br /><br />Para más información, consulte la sección [Controles criptográficos para firmas y cifrado](#cryptographic-controls-for-signing-and-encryption) de este artículo y [Modos criptográficos de AD RMS](http://go.microsoft.com/fwlink/?LinkId=266659).|
