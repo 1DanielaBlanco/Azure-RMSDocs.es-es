@@ -4,7 +4,7 @@ description: "Analice cómo funciona Azure RMS, los controles criptográficos qu
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/23/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,17 +12,17 @@ ms.technology: techgroup-identity
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 26c82884c706c8397eae63197ed0307faa3562d3
-ms.sourcegitcommit: 0fa5dd38c9d66ee2ecb47dfdc9f2add12731485e
+ms.openlocfilehash: 1a7075287eebe2c68534de95d01cef455ebe63b5
+ms.sourcegitcommit: f185b1d742c345a465927f88e606413421fe1150
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="how-does-azure-rms-work-under-the-hood"></a>¿Cómo funciona Azure RMS? En segundo plano
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
-Una cuestión importante que hay que comprender sobre el funcionamiento de Azure RMS es que el servicio de Rights Management (y Microsoft) no ve ni almacena sus datos como parte del proceso de protección de la información. La información que protege nunca se envía a Azure, ni se almacena allí, a menos que la almacene de manera explícita en Azure o use otro servicio en la nube que la almacene en Azure. Azure RMS simplemente hace que los datos de un documento sean ilegibles para cualquiera que no sea un usuario y servicio autorizado:
+Una cuestión importante que hay que comprender sobre el funcionamiento de Azure RMS es que el servicio de protección de datos de Azure Information Protection no ve ni almacena sus datos como parte del proceso de protección. La información que protege nunca se envía a Azure, ni se almacena allí, a menos que la almacene de manera explícita en Azure o use otro servicio en la nube que la almacene en Azure. Azure RMS simplemente hace que los datos de un documento sean ilegibles para cualquiera que no sea un usuario y servicio autorizado:
 
 - Los datos se cifran en el nivel de aplicación e incluyen una directiva que define el uso autorizado para ese documento.
 
@@ -39,7 +39,7 @@ Para obtener una descripción detallada de lo que está sucediendo, vea la secci
 Para consultar detalles técnicos acerca de las longitudes de claves y algoritmos que usa Azure RMS, vea la siguiente sección.
 
 ## <a name="cryptographic-controls-used-by-azure-rms-algorithms-and-key-lengths"></a>Controles criptográficos usados por Azure RMS: Longitudes de clave y algoritmos
-Aunque no tenga que saber usted mismo cómo funciona RMS, puede que se le pregunte acerca de los controles criptográficos que usa, para asegurarse de que la protección de seguridad es estándar en el sector.
+Aunque no necesite saber en detalle cómo funciona esta tecnología, es posible que se le pregunte acerca de los controles criptográficos que utiliza. Por ejemplo, para confirmar que la protección de seguridad es un estándar industrial.
 
 
 |Controles criptográficos|Uso en Azure RMS|
@@ -60,7 +60,7 @@ La longitud de la clave es de 2048 bits cuando el servicio Azure Rights Manageme
 
 - Después de una migración desde el entorno local si el clúster de AD RMS usaba Exchange Online.
 
-- Para claves archivadas que se crearon en el entorno local antes de la migración para que el contenido protegido por AD RMS pueda seguir abierto después de migrar a Azure Rights Management.
+- Para claves archivadas que se crearon en el entorno local antes de la migración para que el contenido anteriormente protegido por AD RMS pueda seguir abierto después de migrar al servicio Azure Rights Management.
 
 - Si los clientes eligen traer su propia clave (BYOK) mediante Azure Key Vault. Azure Information Protection admite longitudes de clave de 1024 bits y 2048 bits. Para una mayor seguridad, le recomendamos una longitud de clave de 2048 bits.
 

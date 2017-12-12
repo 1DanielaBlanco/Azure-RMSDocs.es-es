@@ -4,7 +4,7 @@ description: "Tareas de administración resumidas de Azure Portal que solía rea
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/19/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 57a1073c-02e0-441b-bf49-c6b72fdba24f
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 8462a0c351ef8a75a7cd31bae923fd5ec3b8999f
-ms.sourcegitcommit: f7ef0f040ae4af4bf1283ebcb0750b65b6939313
+ms.openlocfilehash: 3beb637b4a9ffe662455f32281e24ecfeb230bca
+ms.sourcegitcommit: 43d77093d97509170bbdfa72bc28e1c2100228ee
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 12/02/2017
 ---
 # <a name="tasks-that-you-used-to-do-with-the-azure-classic-portal"></a>Tareas que solía realizar con el Portal de Azure clásico
 
@@ -25,7 +25,9 @@ ms.lasthandoff: 09/20/2017
 ¿Está acostumbrado al Portal de Azure clásico para administrar el servicio Azure Rights Management y necesita algo de ayuda para migrar a Azure Portal? 
 
 > [!NOTE]
-> El Portal de Azure clásico se retira el **30 de noviembre de 2017**. Para más información, vea el anuncio de la entrada de blog [Marching into the future of the Azure AD admin experience: retiring the Azure classic portal](https://blogs.technet.microsoft.com/enterprisemobility/2017/09/18/marching-into-the-future-of-the-azure-ad-admin-experience-retiring-the-azure-classic-portal/) (El futuro de la experiencia de administración de Azure AD: retirada del Portal de Azure clásico).
+> El Portal de Azure clásico se retirará el **8 de enero de 2018**. Después de esta fecha, si intenta utilizar este portal, se le redirigirá automáticamente al nuevo Azure Portal. 
+> 
+> Para más información, vea el anuncio de la entrada de blog [Marching into the future of the Azure AD admin experience: retiring the Azure classic portal](https://blogs.technet.microsoft.com/enterprisemobility/2017/09/18/marching-into-the-future-of-the-azure-ad-admin-experience-retiring-the-azure-classic-portal/) (El futuro de la experiencia de administración de Azure AD: retirada del Portal de Azure clásico). Para la extensión temporal de la fecha de retirada, consulte [Update on retirement of Azure AD classic portal experience and migration of conditional access policies](https://cloudblogs.microsoft.com/enterprisemobility/2017/11/29/update-on-retirement-of-azure-ad-classic-portal-experience-and-migration-of-conditional-access-policies/) (Actualización sobre la retirada de la experiencia del portal clásico de Azure AD y migración de las directivas de acceso condicional).
 
 ## <a name="how-to-do-your-familiar-admin-tasks"></a>Cómo realizar tareas de administración familiares
 
