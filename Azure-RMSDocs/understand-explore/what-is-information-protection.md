@@ -4,17 +4,17 @@ description: "Información general del servicio Azure Information Protection."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/03/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: c17453cddec7d570901ccf18287e8d1db2fd3f01
-ms.sourcegitcommit: 8c02aa2c6abc301a52a7f8ad9ee9d0ecd0b810f7
+ms.openlocfilehash: 7e16be928a12142b695f2eac60bdbd3e353c3119
+ms.sourcegitcommit: 43d77093d97509170bbdfa72bc28e1c2100228ee
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2017
+ms.lasthandoff: 12/02/2017
 ---
 # <a name="what-is-azure-information-protection"></a>¿Qué es Azure Information Protection?
 
@@ -43,19 +43,17 @@ La tecnología de protección usa *Azure Rights Management* (a menudo abreviado 
 
 Esta tecnología de protección usa directivas de autorización, identidad y cifrado. De manera similar a las etiquetas que se aplican, la protección que se aplica mediante Rights Management permanece con los documentos y los correos electrónicos, independientemente de la ubicación, ya sea dentro o fuera de la organización, las redes, los servidores de archivos y las aplicaciones. Esta solución de protección de información le permite seguir controlando sus datos, incluso cuando estos se comparten con otros usuarios.
 
-Por ejemplo, puede configurar un informe o una hoja de cálculo de previsión de ventas para que solamente pueda tener acceso gente de la organización, y controlar si se puede editar un documento, si se restringe a solo lectura o si se impide que se pueda imprimir. Puede configurar los correos electrónicos de forma similar y, además, evitar que se puedan reenviar o que se use la opción Responder a todos. Estas tareas de protección se pueden simplificar mediante el uso de *plantillas de Microsoft Azure AD Rights Management*.
+Por ejemplo, puede configurar un informe o una hoja de cálculo de previsión de ventas para que solamente pueda tener acceso gente de la organización, y controlar si se puede editar un documento, si se restringe a solo lectura o si se impide que se pueda imprimir. Puede configurar los correos electrónicos de forma similar y, además, evitar que se puedan reenviar o que se use la opción Responder a todos. 
+
+Esta configuración de protección puede formar parte de la configuración de la etiqueta, de modo que los usuarios pueden clasificar y proteger documentos y correos electrónicos simplemente aplicando una etiqueta. Sin embargo, la misma configuración de protección también la pueden utilizar aplicaciones y servicios que admiten la protección, pero no el etiquetado. Para estas aplicaciones y servicios, la configuración de protección aparece como *plantillas de Rights Management*.
 
 ### <a name="rights-management-templates"></a>Plantillas de Microsoft Azure AD Rights Management
 
 Tan pronto como active el servicio Azure Rights Management, tendrá disponibles dos plantillas predeterminadas que restringen el acceso a los datos de los usuarios de su organización. Puede usar estas plantillas para ayudar a evitar inmediatamente la pérdida de datos de su organización. También puede complementar estas plantillas predeterminadas con plantillas de protección personalizadas que aplican controles más restrictivos.
 
-Las plantillas pueden formar parte de la configuración de una etiqueta. Cuando esa etiqueta se aplica a un mensaje de correo electrónico o documento, los datos se clasifican y se protegen automáticamente. Las plantillas también pueden seleccionarse por usuarios o administradores en productos y servicios que admiten la tecnología de Azure Rights Management.
+Cuando crea una etiqueta para Azure Information Protection que incluye opciones de protección, esta acción crea entre bastidores una plantilla de Rights Management correspondiente. A continuación, puede utilizar esa plantilla con aplicaciones y servicios que admiten Azure Rights Management.
 
-En este ejemplo se muestra cómo puede seleccionar una plantilla para una etiqueta cuando configura la directiva de Azure Information Protection desde Azure Portal:
-
-![Ejemplo de seleccionar plantillas en Azure Portal](../media/info-protect-template-callout.png)
-
-Se pueden seleccionar las mismas plantillas en el centro de administración de Exchange. Por ejemplo, puede configurar reglas de flujo de correo electrónico de Exchange Online para utilizar estas plantillas, ya que Exchange es compatible con la tecnología de Azure Rights Management:
+Por ejemplo, desde el centro de administración de Exchange, puede configurar las reglas de flujo de correo de Exchange Online para utilizar estas plantillas:
 
 ![Ejemplo de seleccionar plantillas para Exchange Online](../media/templates-exchangeonline-callouts.png)
 

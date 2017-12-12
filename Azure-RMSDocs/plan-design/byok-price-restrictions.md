@@ -4,7 +4,7 @@ description: Conozca las restricciones de uso de claves administradas por el cli
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/27/2017
+ms.date: 12/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: afc25e638cff4bddc342ed29dee7fab304d67bd7
-ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
+ms.openlocfilehash: 981f7349c9ae279d48f5cb4795ffc2087f5ae4d8
+ms.sourcegitcommit: 850869505942f9d1b74720085d253de4b54b19c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="byok-pricing-and-restrictions"></a>Precio y restricciones de BYOK
 
@@ -27,7 +27,11 @@ Las organizaciones que tienen una suscripción con Azure Information Protection 
 
 La clave debe almacenarse en Azure Key Vault, lo que requiere una suscripción de Azure. Para usar una clave protegida por HSM, debe tener el nivel de servicio Premium de Azure Key Vault. El uso de las claves en el Almacén de claves de Azure conlleva un cargo mensual. Para obtener más información, consulte la [página de precios del Almacén de claves de Azure](https://azure.microsoft.com/en-us/pricing/details/key-vault/).
 
-Si usa Azure Key Vault para la clave de inquilino de Azure Information Protection, se recomienda que use un almacén de claves dedicado para esta clave con una suscripción dedicada. De esta forma se asegura de que solo la usará el servicio Azure Rights Management. 
+Si usa Azure Key Vault para la clave de inquilino de Azure Information Protection, se recomienda que use un almacén de claves dedicado para esta clave para asegurarse de que solo la use el servicio Azure Rights Management. Esta configuración garantiza que las llamadas de otros servicios no superen los [límites de servicio](/azure/key-vault/key-vault-service-limits) para el almacén de claves, lo que podría limitar los tiempos de respuesta del servicio Azure Rights Management.  
+
+Además, debido a que cada servicio que utiliza Azure Key Vault normalmente tiene diferentes requisitos de administración de claves, se recomienda una suscripción de Azure independiente para este almacén de claves, lo que ayuda a protegerse contra los errores de configuración. 
+
+Sin embargo, si desea compartir una suscripción de Azure con otros servicios que utilizan Azure Key Vault, asegúrese de que la suscripción comparte un conjunto común de administradores. Esta precaución significa que los administradores que utilizan esa suscripción tienen un buen conocimiento de todas las claves a las que tienen acceso, por lo que es menos probable que las configuren incorrectamente. Por ejemplo, una suscripción compartida de Azure si los administradores de la clave de inquilino de Azure Information Protection son los mismos que administran las claves de la clave de cliente de Office 365 y CRM Online. Pero si los administradores que administran las claves de la clave de cliente o CRM Online no son las mismas personas que administran su clave de inquilino de Azure Information Protection, le recomendamos que no comparta su suscripción de Azure para Azure Information Protection.
 
 ## <a name="benefits-of-using-azure-key-vault"></a>Ventajas de usar Azure Key Vault
 
@@ -49,7 +53,7 @@ Para obtener más información sobre Azure Key Vault, consulte [¿Qué es el Alm
 
 ## <a name="restrictions-when-using-byok"></a>Restricciones en el uso de BYOK
 
-BYOK y el registro de uso funcionan perfectamente con todas las aplicaciones que se integran con el servicio Azure Rights Management usado por Azure Information Protection. Aquí se incluyen servicios en la nube, como SharePoint Online, servidores locales que ejecutan Exchange y SharePoint y que usan el servicio Azure Rights Management a través del conector RMS, y aplicaciones cliente como Office 2013 y Office 2016. Obtendrá los registros de uso de claves independientemente de la aplicación que realiza solicitudes al servicio Azure Rigths Management.
+BYOK y el registro de uso funcionan perfectamente con todas las aplicaciones que se integran con el servicio Azure Rights Management usado por Azure Information Protection. Aquí se incluyen servicios en la nube, como SharePoint Online, servidores locales que ejecutan Exchange y SharePoint y que usan el servicio Azure Rights Management a través del conector RMS, y aplicaciones cliente como Office 2013 y Office 2016. Obtiene los registros de uso de claves con independencia de la aplicación que realiza solicitudes al servicio Azure Rigths Management.
 
 Si ya ha habilitado IRM de Exchange Online importando el dominio de publicación de confianza (TPD) de Azure RMS, siga las instrucciones de [Configuración de nuevas capacidades del cifrado de mensajes de Office 365 sobre Azure Information Protection](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e) (Set up new Office 365 Message Encryption capabilities built on top of Azure Information Protection) para habilitar las nuevas capacidades en Exchange Online que admiten el uso de BYOK para Azure Information Protection.
 
