@@ -4,17 +4,17 @@ description: "Información general del servicio Azure Information Protection."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/01/2017
+ms.date: 12/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: 7e16be928a12142b695f2eac60bdbd3e353c3119
-ms.sourcegitcommit: 43d77093d97509170bbdfa72bc28e1c2100228ee
+ms.openlocfilehash: 18ec6241d09eb8de2417dd939237de0544a401e8
+ms.sourcegitcommit: 9b229852c59441f9387bab1d5f28a3c5d9017696
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2017
+ms.lasthandoff: 12/11/2017
 ---
 # <a name="what-is-azure-information-protection"></a>¿Qué es Azure Information Protection?
 
@@ -45,13 +45,13 @@ Esta tecnología de protección usa directivas de autorización, identidad y cif
 
 Por ejemplo, puede configurar un informe o una hoja de cálculo de previsión de ventas para que solamente pueda tener acceso gente de la organización, y controlar si se puede editar un documento, si se restringe a solo lectura o si se impide que se pueda imprimir. Puede configurar los correos electrónicos de forma similar y, además, evitar que se puedan reenviar o que se use la opción Responder a todos. 
 
-Esta configuración de protección puede formar parte de la configuración de la etiqueta, de modo que los usuarios pueden clasificar y proteger documentos y correos electrónicos simplemente aplicando una etiqueta. Sin embargo, la misma configuración de protección también la pueden utilizar aplicaciones y servicios que admiten la protección, pero no el etiquetado. Para estas aplicaciones y servicios, la configuración de protección aparece como *plantillas de Rights Management*.
+Esta configuración de protección puede formar parte de la configuración de la etiqueta, de modo que los usuarios pueden clasificar y proteger documentos y correos electrónicos simplemente aplicando una etiqueta. Sin embargo, la misma configuración de protección también la pueden utilizar aplicaciones y servicios que admiten la protección, pero no el etiquetado. En estas aplicaciones y servicios, la configuración de protección aparece disponible como *plantillas de Rights Management*.
 
 ### <a name="rights-management-templates"></a>Plantillas de Microsoft Azure AD Rights Management
 
 Tan pronto como active el servicio Azure Rights Management, tendrá disponibles dos plantillas predeterminadas que restringen el acceso a los datos de los usuarios de su organización. Puede usar estas plantillas para ayudar a evitar inmediatamente la pérdida de datos de su organización. También puede complementar estas plantillas predeterminadas con plantillas de protección personalizadas que aplican controles más restrictivos.
 
-Cuando crea una etiqueta para Azure Information Protection que incluye opciones de protección, esta acción crea entre bastidores una plantilla de Rights Management correspondiente. A continuación, puede utilizar esa plantilla con aplicaciones y servicios que admiten Azure Rights Management.
+Cuando crea una etiqueta para Azure Information Protection que incluye opciones de protección, esta acción crea entre bastidores una plantilla de Rights Management correspondiente. Luego, puede usar esa plantilla con aplicaciones y servicios que admiten Azure Rights Management.
 
 Por ejemplo, desde el centro de administración de Exchange, puede configurar las reglas de flujo de correo de Exchange Online para utilizar estas plantillas:
 
@@ -59,7 +59,7 @@ Por ejemplo, desde el centro de administración de Exchange, puede configurar la
 
 Para más información sobre la protección de Azure Rights Management, vea [¿Qué es Azure Rights Management?](what-is-azure-rms.md).
 
-## <a name="integration-with-end-user-workflows"></a>Integración con flujos de trabajo del usuario final
+## <a name="integration-with-end-user-workflows-for-documents-and-emails"></a>Integración con los flujos de trabajo del usuario final de documentos y correos electrónicos
 
 Azure Information Protection se integra con los flujos de trabajo existentes de usuarios finales cuando se instala el cliente de Azure Information Protection. Este cliente instala la barra de Information Protection en aplicaciones de Office, como ya hemos visto en la primera imagen, en la que se mostraba dicha barra en Word. Se agrega la misma barra de Information Protection a Excel, PowerPoint y Outlook. Por ejemplo:
 
@@ -79,6 +79,25 @@ Después de haber protegido un documento, los usuarios y administradores pueden 
 
 ![Icono de revocación de acceso en el sitio de Seguimiento de documentos](../media/tracking-site-revoke-access-icon.png)
 
+### <a name="additional-integration-for-email"></a>Integración adicional con el correo electrónico
+
+Si usa Azure Information Protection con Exchange Online, disfrutará de una ventaja extra: la posibilidad de enviar correos electrónicos protegidos a cualquier usuario con la garantía de que va a poder leerlo en cualquier dispositivo.
+
+Sería el caso, por ejemplo, de usuarios que necesitan enviar información confidencial a cuentas de correo electrónico personales de **Gmail** o **Hotmail** o a una cuenta **Microsoft**. O a usuarios que no tienen una cuenta de Office 365 o en Azure AD. Estos mensajes de correo electrónico deben estar cifrados tanto cuando se almacenan como en tránsito, y solo deben poder leerlos los destinatarios originales.
+
+En este escenario son necesarias las [nuevas capacidades de cifrado de mensajes de Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801). Si los destinatarios no pueden abrir el correo electrónico protegido en su cliente de correo electrónico nativo, pueden emplear un código de acceso de un solo uso para leer la información confidencial en un explorador.
+
+Por ejemplo, un usuario de Gmail ve lo siguiente en un mensaje de correo electrónico:
+
+![Experiencia de destinatario de Gmail en OME y AIP](../media/ome-message.png)
+
+El flujo de trabajo de los usuarios que envían el correo electrónico no es distinto del envío de un correo electrónico protegido a un usuario en su propia organización. Así, por ejemplo, pueden seleccionar el botón **No reenviar**, que el cliente de Azure Information Protection puede agregar a la cinta de opciones de Outlook. Esta función No reenviar también se puede integrar en una etiqueta que los usuarios seleccionan, de modo que el correo electrónico se clasifica también como protegido:
+
+![Selección de una etiqueta configurada de No reenviar](../media/recipients-only-label.png)
+
+Como alternativa, puede proporcionar protección a los usuarios automáticamente por medio de reglas de flujo de correo electrónico que aplican la protección de derechos. 
+
+Cuando se adjunten documentos de Office a estos correos electrónicos, dichos documentos también se protegen automáticamente.
 
 ## <a name="resources-for-azure-information-protection"></a>Recursos de Azure Information Protection
 

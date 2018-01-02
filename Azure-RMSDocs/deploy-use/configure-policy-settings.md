@@ -4,17 +4,17 @@ description: Configure las directivas de Azure Information Protection que se apl
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/20/2017
+ms.date: 12/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
-ms.openlocfilehash: f651a621b961bfba63ad43e5372eec9a68c170d4
-ms.sourcegitcommit: f1d0b899e6d79ebef3829f24711f947316bca8ef
+ms.openlocfilehash: 49eb10a999f541cb9979576faac55ca28ff35a0b
+ms.sourcegitcommit: e089661f23f199b122b0ca9ba4748792b349bc27
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 12/13/2017
 ---
 # <a name="how-to-configure-the-policy-settings-for-azure-information-protection"></a>Configuración directivas para Azure Information Protection
 
@@ -39,7 +39,7 @@ Para establecer la configuración:
 3. En la hoja **Azure Information Protection - Global policy** (Azure Information Protection: directiva global) o la hoja **Directiva:\<nombre>**, configure los valores:
     
     - **Select the default label** (Seleccionar la etiqueta predeterminada): cuando configure esta opción, seleccione la etiqueta que se asignará a documentos y correos electrónicos que no tienen una. No se puede configurar una etiqueta como predeterminada si tiene etiquetas secundarias. 
-        
+    
     - **All documents and emails must have a label** (Todos los documentos y correos electrónicos deben tener una etiqueta): cuando establece esta opción en **On** (Activado), todos los documentos guardados y correos electrónicos enviados deben tener aplicada una etiqueta. El etiquetado puede asignarlo manualmente un usuario, se puede asignar automáticamente como resultado de una [condición](configure-policy-classification.md) o asignarse de forma predeterminada (configurando la opción **Select the default label** [Seleccionar la etiqueta predeterminada]).
         
         Si no se asigna ninguna etiqueta cuando los usuarios guardan un documento o envían un correo electrónico, se les pide que seleccionen una. Por ejemplo:
@@ -55,12 +55,15 @@ Para establecer la configuración:
     - **Para los mensajes de correo electrónico con datos adjuntos, aplicar una etiqueta que coincida con la clasificación más alta de los archivos adjuntos**: cuando se establece esta opción en **Recomendado**, se pide a los usuarios que apliquen una etiqueta a su mensaje de correo electrónico. La etiqueta se elige de manera dinámica, basándose en las etiquetas de clasificación que se han aplicado a los archivos adjuntos, y se selecciona la etiqueta de clasificación más alta. Los datos adjuntos deben ser un archivo físico y no pueden ser un vínculo a un archivo (por ejemplo, un vínculo a un archivo en SharePoint o OneDrive para la Empresa). Los usuarios pueden aceptar la recomendación o descartarla. Cuando se **activa** esta opción, la etiqueta se aplica automáticamente pero los usuarios pueden quitar la etiqueta o seleccionar una etiqueta distinta antes de enviar el mensaje de correo.  
     
     - **Mostrar la barra de Information Protection en las aplicaciones de Office**: cuando esta opción está desactivada, los usuarios no pueden seleccionar las etiquetas de una barra de Word, Excel, PowerPoint y Outlook. En su lugar, deben seleccionarlas desde el botón **Proteger** de la cinta. Cuando esta opción está activada, los usuarios pueden seleccionar las etiquetas desde la barra o el botón.
-    
-    Cuando esta opción está activada, se puede usar junto con una configuración de cliente avanzada para que los usuarios puedan [ocultar la barra de Azure Information Protection de forma permanente](../rms-client/client-admin-guide-customizations.md#permanently-hide-the-azure-information-protection-bar) si deciden no mostrarla. Pueden hacerlo si desactivan la opción **Mostrar barra** del botón **Proteger**.
+        
+        > [!IMPORTANT]
+        > Esta opción está en fase de versión preliminar y necesita la versión preliminar actual del cliente de Azure Information Protection.
+        
+        Cuando esta opción está activada, se puede usar junto con una configuración de cliente avanzada para que los usuarios puedan [ocultar la barra de Azure Information Protection de forma permanente](../rms-client/client-admin-guide-customizations.md#permanently-hide-the-azure-information-protection-bar) si deciden no mostrarla. Pueden hacerlo si desactiva la opción **Mostrar barra** del botón **Proteger**.
     
     - **Agregar el botón No reenviar a la cinta de Outlook**: cuando esta opción está activada, los usuarios pueden hacer clic en este botón del grupo **Protección** de la cinta de Outlook además de seleccionar la opción **No reenviar** en los menús de Outlook. Para garantizar que los usuarios puedan clasificar los mensajes de correo, además de protegerlos, es posible que prefiera no agregar este botón, sino [configurar una etiqueta para la protección](configure-policy-protection.md) y un permiso definido por el usuario para Outlook. Esta configuración de protección equivale funcionalmente a hacer clic en el botón **No reenviar**, pero cuando se incluye está funcionalidad con una etiqueta, los mensajes de correo se clasifican y también se protegen.
     
-    Esta configuración de directiva también se puede establecer con una configuración de cliente avanzada como una [personalización de cliente](../rms-client/client-admin-guide-customizations.md#hide-or-show-the-do-not-forward-button-in-outlook).
+        Esta configuración de directiva también se puede establecer con una configuración de cliente avanzada como una [personalización de cliente](../rms-client/client-admin-guide-customizations.md#hide-or-show-the-do-not-forward-button-in-outlook).
     
     - **Configuración de la opción de permisos personalizados para que esté disponible para los usuarios**: cuando esta opción está activada, los usuarios pueden establecer su propia configuración de protección e invalidar cualquier configuración de protección que es posible que se haya incluido con una configuración de etiqueta. Cuando esta opción está desactivada, las opciones de permisos personalizados no están disponibles para que los usuarios las seleccionen.
         
