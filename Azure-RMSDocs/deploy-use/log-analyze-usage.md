@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ebfd7ce4266061cef3099fb8fb096c95b01e6fb4
-ms.sourcegitcommit: 6000258a9f973a3ab8e608eda57b88a469e7b754
+ms.openlocfilehash: a7a983ed075e41ee6f3328634b451107e579134d
+ms.sourcegitcommit: e089661f23f199b122b0ca9ba4748792b349bc27
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 12/13/2017
 ---
 # <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>Registro y análisis del uso del servicio Azure Rights Management
 
@@ -44,7 +44,7 @@ Además de este registro de uso, también tiene las siguientes opciones de regis
 
 |Opción de registro|Descripción|
 |----------------|---------------|
-|Registro de administración|Registra las tareas administrativas para el servicio de Azure Rights Management. Por ejemplo, si el servicio está desactivado, cuando la característica de superusuario está habilitada y cuando los usuarios tienen permisos de administración delegados para el servicio. <br /><br />Para más información, vea el cmdlet de PowerShell [Get-AadrmAdminLog](/powershell/module/aadrm/get-aadrmadminlog).|
+|Registro de administración|Registra las tareas administrativas del servicio de Azure Rights Management. Por ejemplo, si el servicio está desactivado, cuando la característica de superusuario está habilitada y cuando los usuarios tienen permisos de administración delegados para el servicio. <br /><br />Para más información, vea el cmdlet de PowerShell [Get-AadrmAdminLog](/powershell/module/aadrm/get-aadrmadminlog).|
 |Informes web|Informes de uso de alto nivel del Portal de Azure clásico: **Resumen de RMS**, **Usuarios activos de RMS**, **Plataformas de dispositivos RMS** y **Uso de aplicaciones de RMS**. <br /><br />Para acceder a estos informes desde el Portal de Azure clásico, haga clic en **Active Directory**, seleccione un directorio y ábralo y, luego, haga clic en **INFORMES**.|
 |Seguimiento de documentos|Permite a los usuarios seguir y revocar los documentos que han seguido con el cliente de Azure Information Protection o la aplicación RMS sharing. Los administradores globales también pueden realizar un seguimiento de estos documentos en nombre de los usuarios. <br /><br />Para más información, consulte [Configuración y uso de seguimiento de documentos para Azure Information Protection](../rms-client/client-admin-guide-document-tracking.md).|
 |Registros de eventos de cliente|Actividad de uso para el cliente de Azure Information Protection, registrada en el registro de eventos local de Windows **Aplicaciones y servicios**, **Azure Information Protection**. <br /><br />Para más información, consulte [Registro de uso del cliente de Azure Information Protection](../rms-client/client-admin-guide-files-and-logging.md#usage-logging-for-the-azure-information-protection-client).|
