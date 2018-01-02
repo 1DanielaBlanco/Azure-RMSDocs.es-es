@@ -10,11 +10,11 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: ff444afb1912239ec817882c76fc735f6d35ed1e
-ms.sourcegitcommit: 965108d50739148864b2ae7dcc661ae65f1b154c
+ms.openlocfilehash: 99aba6560f9dcdbd564f317e8d9e0ce89845f4a9
+ms.sourcegitcommit: f78f5209f0e19c6edfd1815d76e0e9750b4ce71d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Configuración de una etiqueta para marcas visuales de Azure Information Protection
 
@@ -100,7 +100,7 @@ Si tiene la versión preliminar del cliente de Azure Information Protection y la
 
 Puede elegir en la lista de colores disponibles o especificar un color personalizado al escribir un código hexadecimal triple para los componentes rojo, verde y azul (RGB) del color. Por ejemplo, **#DAA520**. 
 
-Si necesita una referencia para estos códigos, [Colors by Name](https://msdn.microsoft.com/library/aa358802\(v=vs.85) (Colores por nombre), en la documentación de MSDN, es un punto de partida útil. También encontrará estos códigos en muchas aplicaciones que permiten editar imágenes. Por ejemplo, Microsoft Paint permite elegir un color personalizado de una paleta y los valores RGB se muestran automáticamente, lo que permite copiarlos.
+Si necesita una referencia para estos códigos, [Colors by Name](https://msdn.microsoft.com/library/aa358802\(v=vs.85\).aspx) (Colores por nombre), en la documentación de MSDN, es un punto de partida útil. También encontrará estos códigos en muchas aplicaciones que permiten editar imágenes. Por ejemplo, Microsoft Paint permite elegir un color personalizado de una paleta y los valores RGB se muestran automáticamente, lo que permite copiarlos.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
