@@ -100,7 +100,7 @@ El cliente RMS almacena las licencias en el disco local y también almacena en c
 
 |Descripción|Rutas de acceso de modo cliente|Rutas de acceso de modo servidor|
 |---------------|---------------------|---------------------|
-|Ubicación del almacén de licencias|%localappdata%\Microsoft\MSIPC|%allusersprofile%\Microsoft\MSIPC\Server\*<SID>*\|
+|Ubicación del almacén de licencias|%localappdata%\Microsoft\MSIPC|%allusersprofile%\Microsoft\MSIPC\Server\*<SID>\*\|
 |Ubicación del almacén de plantillas|%localappdata%\Microsoft\MSIPC\Templates|%allusersprofile%\Microsoft\MSIPC\Server\Templates\*<SID>*\|
 |Ubicación del Registro|HKEY_CURRENT_USER<br /> \Software<br /> \Classes<br /> \Local Settings<br /> \Software<br /> \Microsoft<br /> \MSIPC|HKEY_CURRENT_USER<br /> \Software<br /> \Microsoft<br /> \MSIPC<br /> \Server<br /> \*<SID>*|
 > [!NOTE]
