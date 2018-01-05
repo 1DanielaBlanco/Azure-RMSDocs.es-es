@@ -4,7 +4,7 @@ description: "¿Tiene alguna pregunta que trate específicamente sobre clasifica
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/16/2017
+ms.date: 12/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-ms.openlocfilehash: 4332b37a3c89cb68d8e090e44666f2620d5b0064
-ms.sourcegitcommit: fd3932ab19a00229b56efc3e301abaf9cff3f70b
+ms.openlocfilehash: 7bc1e4021eeb2620857577f3970d1da9db21b6e8
+ms.sourcegitcommit: 51b93125988e6e63077b1df721985b89059f425e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>Preguntas más frecuentes sobre la clasificación y el etiquetado en Azure Information Protection
 
@@ -29,8 +29,6 @@ ms.lasthandoff: 11/17/2017
 Pruebe nuestro tutorial de inicio rápido para ver esto en funcionamiento en unos minutos: [Tutorial de inicio rápido de Azure Information Protection](infoprotect-quick-start-tutorial.md).
 
 Busque anuncios en el [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection) (Blog de seguridad y movilidad empresarial) y en nuestro [sitio de Yammer](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all) para saber cuándo estarán disponibles las funcionalidades y características de clasificación adicionales. Existen algunas limitaciones con la versión actual, que incluyen las siguientes:
-
-- Los nombres de las etiquetas y la información sobre herramientas solo se admiten en un idioma. Sin embargo, la compatibilidad con varios idiomas ahora está en versión preliminar. Para obtener más información, vea [Configuración de etiquetas y plantillas para distintos idiomas](../deploy-use/configure-policy-languages.md).
 
 - No existe un registro centralizado para la clasificación y el etiquetado.
 
