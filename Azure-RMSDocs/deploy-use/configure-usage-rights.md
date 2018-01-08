@@ -4,7 +4,7 @@ description: "Conozca e identifique los derechos específicos que se usan al pro
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/06/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f82eb8bc415b064793c1efd9b7b88795b1ec6ff2
-ms.sourcegitcommit: db0c5185aab9ba4f71b9d2aa1dd87681dfe7c1b5
+ms.openlocfilehash: 5d57f1cc7728fef1b877fc25fce01bbc9c768b3c
+ms.sourcegitcommit: 24b35e27b3aa861ae8ba6bacab571b0071b058d7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>Configuración de los derechos de uso para Azure Rights Management
 
@@ -57,8 +57,8 @@ Use la tabla siguiente para ver una lista de estos niveles de permisos y una lis
 |---------------------|----------------|---------------------------------|
 |Visor|Portal de Azure clásico <br /><br />Portal de Azure<br /><br /> Aplicación de uso compartido Rights Management para Windows<br /><br />Cliente de Azure Information Protection para Windows|Ver, Abrir, Leer; Responder; Responder a todos; Permitir macros [[1]](#footnote-1)<br /><br />Nota: Para los mensajes de correo, use Revisor en lugar de este nivel de permiso para asegurarse de que se recibe una respuesta de correo electrónico como un mensaje de correo en lugar de un archivo adjunto. Revisor también es obligatorio cuando se envía un correo a otra organización que usa el cliente de Outlook u Outlook Web App. O bien, los usuarios de su organización que no pueden usar el servicio Azure Rights Management porque se han implementado [controles de incorporación](/powershell/module/aadrm/set-aadrmonboardingcontrolpolicy).|
 |Revisor|Portal de Azure clásico <br /><br />Portal de Azure<br /><br />Aplicación de uso compartido Rights Management para Windows<br /><br />Cliente de Azure Information Protection para Windows|Ver, Abrir, Leer; Guardar; Editar contenido, Editar; Responder: Responder a todos [[2]](#footnote-2); Reenviar [[2]](#footnote-2); Permitir macros [[1]](#footnote-1)|
-|Coautor|Portal de Azure clásico <br /><br />Portal de Azure<br /><br />Aplicación de uso compartido Rights Management para Windows<br /><br />Cliente de Azure Information Protection para Windows|Ver, Abrir, Leer; Guardar; Editar contenido, Editar; Copiar; Ver derechos; Permitir macros; Guardar como, Exportar [[3]](#footnote-3); Imprimir; Responder [[2]](#footnote-2); Responder a todos [[2]](#footnote-2); Reenviar [[2]](#footnote-2)|
-|Copropietario|Portal de Azure clásico <br /><br />Portal de Azure<br /><br />Aplicación de uso compartido Rights Management para Windows<br /><br />Cliente de Azure Information Protection para Windows|Ver, Abrir, Leer; Guardar; Editar contenido, Editar; Copiar; Ver derechos; Permitir macros; Guardar como, Exportar; Imprimir; Responder [[2]](#footnote-2); Responder a todos [[2]](#footnote-2); Reenviar [[2]](#footnote-2); Control total|
+|Coautor|Portal de Azure clásico <br /><br />Portal de Azure<br /><br />Aplicación de uso compartido Rights Management para Windows<br /><br />Cliente de Azure Information Protection para Windows|Ver, Abrir, Leer; Guardar; Editar contenido, Editar; Copiar; Permitir macros; Guardar como, Exportar [[3]](#footnote-3); Imprimir; Responder [[2]](#footnote-2); Responder a todos [[2]](#footnote-2); Reenviar [[2]](#footnote-2)|
+|Copropietario|Portal de Azure clásico <br /><br />Portal de Azure<br /><br />Aplicación de uso compartido Rights Management para Windows<br /><br />Cliente de Azure Information Protection para Windows|Ver, Abrir, Leer; Guardar; Editar contenido, Editar; Copiar; Permitir macros; Guardar como, Exportar; Imprimir; Responder [[2]](#footnote-2); Responder a todos [[2]](#footnote-2); Reenviar [[2]](#footnote-2); Control total|
 
 ----
 
@@ -70,8 +70,7 @@ Para el cliente de Azure Information Protection para Windows, este derecho es ac
 No es aplicable al cliente de Azure Information Protection para Windows ni a la aplicación Rights Management sharing para Windows.
 
 ###### <a name="footnote-3"></a>Nota al pie 3
-No se incluye en el cliente de Azure Information Protection para Windows. En este cliente, el derecho de uso de exportación incluye la posibilidad de quitar la protección.
-
+No se incluye en Azure Portal ni en el cliente de Azure Information Protection para Windows.
 
 ## <a name="rights-included-in-the-default-templates"></a>Derechos incluidos en las plantillas predeterminadas
 En la tabla siguiente se enumeran los derechos de uso incluidos al crear las plantillas predeterminadas. Los derechos de uso se enumeran por su [nombre común](#usage-rights-and-descriptions).
@@ -149,7 +148,7 @@ El valor predeterminado del período de validez de la licencia de uso de un inqu
     Para obtener más información e instrucciones para configurar este valor mediante PowerShell, vea la ayuda de cada cmdlet.
 
 
-## <a name="see-also"></a>Véase también
+## <a name="see-also"></a>Consulte también
 [Configuración y administración de plantillas para Azure Information Protection](configure-policy-templates.md)
 
 [Configuración de superusuarios para Azure Rights Management y los servicios de detección o la recuperación de datos](configure-super-users.md)

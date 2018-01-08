@@ -4,7 +4,7 @@ description: "¿No entiende el significado de una palabra, una frase o un acrón
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/18/2017
+ms.date: 12/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f2c0053a8f1f4cde5193b65e5b8e521a2b6934c1
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: da20ac2ea327b5b97f021c85f62d97b9aa1b9824
+ms.sourcegitcommit: fc205eae0c0b378d41da5f1eceb0c699e60ad66f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="terminology-for-azure-information-protection"></a>Terminología de Azure Information Protection
 
@@ -26,8 +26,8 @@ ms.lasthandoff: 06/30/2017
 
 |Término|Definición|
 |--------|--------------|
-|AADRM|Nombre del módulo de Windows PowerShell para el servicio Azure Rights Management, que se derivó de la abreviatura no oficial de [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] cuando se llamaba (Windows) Azure Active Directory Rights Management.|
-|activar|Habilitar el servicio [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] para que una organización pueda proteger sus documentos y correos electrónicos. Esta acción también habilita las características de Rights Management en Exchange Online y SharePoint Online.|
+|AADRM|Nombre del módulo de Windows PowerShell para el servicio Azure Rights Management, derivado de la abreviatura no oficial de Azure Rights Management cuando se llamaba (Windows) Azure Active Directory Rights Management.|
+|activar|Habilite el servicio Azure Rights Management para que una organización pueda proteger sus documentos y correos electrónicos. Esta acción también habilita las características de Rights Management en Exchange Online y SharePoint Online.|
 |Active Directory Rights Management Services|En ocasiones se abrevia como *AD RMS*.<br /><br />Un rol de Windows Server que brinda protección de administración de derechos mediante cifrado y directivas para ayudar a proteger los documentos, los archivos y el correo electrónico.|
 |AD RMS|Consulte *Active Directory Rights Management Services*|
 |Azure Information Protection|Un servicio basado en la nube que usa la clasificación, el etiquetado y la protección para ayudar a que los documentos y los correos electrónicos estén seguros. Azure Rights Management proporciona la protección mediante el cifrado, la identidad y las directivas de autorización.|
@@ -58,6 +58,8 @@ ms.lasthandoff: 06/30/2017
 |proteger|Aplicar controles de administración de derechos a archivos o a mensajes de correo electrónico mediante directivas de cifrado, identidad y control de acceso para ayudar a proteger los datos.|
 |publish|Proteger un archivo a fin de evitar el acceso y el uso no autorizados.|
 |conector de Rights Management|Retransmisión de proxy de salida que se puede implementar para los servicios locales, como Exchange Server y SharePoint, a fin de proteger los datos mediante el servicio Azure Rights Management.|
+|Emisor de Rights Management|Cuenta que se ha usado para proteger un documento o correo electrónico.|
+|Propietario de Rights Management|Cuenta que conserva el control total de un documento o correo electrónico protegidos mediante la concesión automática del derecho de uso Control total de Rights Management. No cuenta con fecha de expiración ni opciones sin conexión.|
 |servicios de Rights Management|Término genérico que se aplica a la versión en la nube de [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] ([!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]) y a la versión local de [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] (AD RMS).|
 |Aplicación de uso compartido Rights Management|Ahora se ha reemplazado por el cliente de Azure Information Protection, una aplicación opcional para dispositivos con Windows y la mayoría de los dispositivos móviles más conocidos, que admite el uso compartido seguro de archivos de forma local y por correo electrónico.|
 |RMS|Consulte *servicios de Rights Management*|

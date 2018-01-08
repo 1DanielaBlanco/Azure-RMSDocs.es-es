@@ -4,7 +4,7 @@ description: "Instrucciones e información para administradores para implementar
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/23/2017
+ms.date: 01/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 675afc962da542a03b90bea2dcb5d004829e361a
-ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
+ms.openlocfilehash: d4ad7c3419d3ad83389baece95c1e30c32f06da6
+ms.sourcegitcommit: 7b90b3692bbef6fafab41c0f8c56bd4350985f37
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>Guía del administrador: Instalación del cliente de Azure Information Protection para los usuarios
 
@@ -42,13 +42,19 @@ Luego, compruebe los requisitos previos adicionales que puede necesitar el clien
 
 - Microsoft Online Services - Ayudante para el inicio de sesión 7.250.4303.0
     
-    Los equipos que ejecutan Office 2010 requieren Microsoft Online Services - Ayudante para el inicio de sesión versión 7.250.4303.0. Esta versión está incluida en la instalación del cliente. Si tiene una versión posterior del Asistente para el inicio de sesión, desinstálela antes de instalar el cliente de Azure Information Protection. Por ejemplo, compruebe la versión y desinstale el Asistente para el inicio de sesión en **Panel de control** > **Programas y características** > **Desinstalar o cambiar un programa**.
+    Los equipos que ejecutan Office 2010 requiere Microsoft Online Services - Ayudante para el inicio de sesión versión 7.250.4303.0. Esta versión está incluida en la instalación del cliente. Si tiene una versión posterior del Asistente para el inicio de sesión, desinstálela antes de instalar el cliente de Azure Information Protection. Por ejemplo, compruebe la versión y desinstale el Asistente para el inicio de sesión en **Panel de control** > **Programas y características** > **Desinstalar o cambiar un programa**.
 
 - KB 2533623
     
     Los equipos que ejecutan Windows 7 Service Pack 1 requieren KB 2533623. Para más información sobre esta actualización, consulte [Aviso de seguridad de Microsoft: la carga de una biblioteca no segura podría permitir la ejecución remota de código](https://support.microsoft.com/en-us/kb/2533623). Es posible que tenga que instalar directamente esta actualización o podría reemplazarla otra actualización que la instale por usted.
     
     Si la actualización es necesaria y no está instalada, la instalación del cliente mostrará una advertencia que lo señale. Esta actualización se puede instalar después de instalar el cliente, pero algunas acciones estarán bloqueadas y se volverá a mostrar el mensaje.  
+
+- Visual C++ Redistributable para Visual Studio 2015 (versión de 32 bits)
+    
+    En el caso de los equipos que ejecuten Windows 7 Service Pack 1, instale **vc_redist.x86.exe** desde la siguiente página de descarga: [Visual C++ Redistributable para Visual Studio 2015](https://www.microsoft.com/en-us/download/details.aspx?id=48145).
+    
+    La instalación del cliente no comprueba este requisito previo, pero es necesario para que el cliente de Azure Information Protection pueda clasificar y proteger los archivos PDF.
 
 - No deshabilite el complemento **Microsoft Azure Information Protection** para las aplicaciones de Office.
     
@@ -65,6 +71,14 @@ Luego, compruebe los requisitos previos adicionales que puede necesitar el clien
     Incluso si no ha configurado esta opción de directiva de grupo **Lista de complementos administrados**, puede que necesite configurarla si recibe algún informe en el que se indique que el complemento de Microsoft Azure Information Protection se va a deshabilitar. Al deshabilitar este complemento, los usuarios no verán la barra de Azure Information Protection en la aplicación de Office.
     
     Para obtener más información sobre esta configuración de directiva de grupo, consulte [No Add-ins loaded due to group policy settings for Office 2013 and Office 2016 programs](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off) (No se ha cargado ningún complemento debido a la configuración de directivas de grupo para Office 2013 y Office 2016).
+
+- Para Office 16.0.8628.2010 y versiones posteriores (Hacer clic y ejecutar): habilitar la compatibilidad con monitores heredada
+    
+    Para evitar que la barra de Azure Information Protection se muestre fuera de las aplicaciones de Office de estas versiones de Office, habilite la compatibilidad con monitores heredada. Para configurar las aplicaciones de Office: **Archivo** > **General** > **Opciones de interfaz de usuario**:
+    
+    - Si ve la opción **When using multiple displays** (Al usar varias pantallas) establecida en **Optimize for best appearance** (Optimizar para obtener la mejor apariencia), seleccione **Optimize for compatibility (application restart required)** (Optimizar para compatibilidad (se requiere reiniciar aplicación)) en su lugar. 
+        
+    - Si ve que la opción **Use best settings for my display** (Usar la configuración recomendada para la pantalla) está seleccionada, quite esta selección.
 
 > [!IMPORTANT]
 > La instalación del cliente de Azure Information Protection requiere permisos administrativos locales.
@@ -96,9 +110,9 @@ Use las instrucciones siguientes para instalar el cliente cuando no usa el catá
     
     Parámetros adicionales que no aparecen en la pantalla de ayuda:
     
-    - **ServiceLocation**: Utilice este parámetro si va a instalar el cliente en equipos que ejecutan Office 2010 y los usuarios no son administradores locales en sus equipos o no quiere que se les pregunte. [Más información](#more-information-about-the-servicelocation-installation-parameter). 
+    - **ServiceLocation**: Utilice este parámetro si va a instalar el cliente en equipos que ejecutan Office 2010 y los usuarios no son administradores locales en sus equipos o no quiere que se les pregunte. [Más información](#more-information-about-the-servicelocation-installation-parameter) 
     
-    - **DowngradeDotNetRequirement**: Utilice este parámetro para omitir el requisito de .NET Framework de Microsoft versión 4.6.2. [Más información](#more-information-about-the-downgradedotnetrequirement-installation-parameter).
+    - **DowngradeDotNetRequirement**: Utilice este parámetro para omitir el requisito de .NET Framework de Microsoft versión 4.6.2. [Más información](#more-information-about-the-downgradedotnetrequirement-installation-parameter)
     
     - **AllowTelemetry=0**: utilice este parámetro para deshabilitar la opción de instalación **Enviar estadísticas de uso a Microsoft para ayudar a mejorar Azure Information Protection**. 
     
@@ -183,8 +197,8 @@ Si usa Intune como el método de implementación de software, use estas instrucc
     |Office 2010|Windows 8.1 y Windows Server 2012 R2|[KB2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41708)<br /><br /> Número de versión incluido en el nombre de archivo: v3|Instalar si KB2843630 o KB2919355 no está instalado|
     |Office 2010|Windows 8 y Windows Server 2012|[KB2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41708)<br /><br /> Número de versión incluido en el nombre de archivo: v3|Instalar|
     |Office 2010|Windows 7|[KB2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41709)<br /><br /> Número de versión incluido en el nombre de archivo: v3|Se debe instalar si no está instalado KB3125574|
-    |No aplicable|Windows 7|KB2627273 <br /><br /> Número de versión incluido en el nombre de archivo: v4|Desinstalar|
-    
+    |No disponible|Windows 7|[vc_redist.x86.exe](https://www.microsoft.com/en-us/download/details.aspx?id=48145)|Instalar|
+    |No disponible|Windows 7|KB2627273 <br /><br /> Número de versión incluido en el nombre de archivo: v4|Desinstalar|
 
 3. Para una instalación predeterminada, ejecute .msi con **/quiet**, por ejemplo, `AzInfoProtection.msi /quiet`. Sin embargo, es posible que tenga que especificar parámetros de instalación adicionales que están documentados en las [instrucciones del instalador ejecutable](#to-install-the-azure-information-protection-client-by-using-the-executable-installer).  
 

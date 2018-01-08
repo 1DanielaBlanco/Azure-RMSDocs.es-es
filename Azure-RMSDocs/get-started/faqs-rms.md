@@ -4,7 +4,7 @@ description: "Algunas de las preguntas más frecuentes sobre el servicio de prot
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/03/2017
+ms.date: 01/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,11 +13,11 @@ ms.custom: askipteam
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: fb2af56222f686149e40afcd54b20c04114c2a1f
-ms.sourcegitcommit: 79aa9838956f755994efcb97cef6dd5d1892f06f
+ms.openlocfilehash: b23fe95721c442529237ea72d30b3df490ad02dc
+ms.sourcegitcommit: 6c7874f54b8b983d3ac547bb23a51e02c68ee67b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Preguntas más frecuentes sobre la protección de datos en Azure Information Protection
 
@@ -97,7 +97,9 @@ Si el documento se ha protegido mediante una etiqueta o una plantilla, no hay ne
 
 O bien, si ya ha configurado un grupo para los permisos necesarios, puede cambiar la pertenencia al grupo para incluir o excluir usuarios sin necesidad de cambiar la etiqueta o la plantilla. Puede haber un pequeño retraso en la aplicación de los cambios porque la pertenencia a grupos se [almacena en caché](../plan-design/prepare.md#group-membership-caching-by-azure-rights-management) mediante el servicio Azure Rights Management.
 
-Si el documento se ha protegido mediante permisos personalizados, no es posible cambiar los del documento existente. Debe proteger el documento de nuevo y especificar todos los usuarios y todos los derechos de uso que son necesarios para esta nueva versión del documento. Para volver a proteger un documento protegido, debe tener el derecho de uso Control total. 
+Si el documento se ha protegido mediante permisos personalizados, no es posible cambiar los del documento existente. Debe proteger el documento de nuevo y especificar todos los usuarios y todos los derechos de uso que son necesarios para esta nueva versión del documento. Para volver a proteger un documento protegido, debe tener el derecho de uso Control total.
+
+Sugerencia: Para comprobar si un documento se ha protegido mediante una plantilla o usando un permiso personalizando, use el cmdlet de PowerShell [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus). Siempre se muestra una descripción de plantilla de **Acceso restringido** para permisos personalizados, con un id. de plantilla único que no se muestra al ejecutar [Get-RMSTemplate](/powershell/module/azureinformationprotection/get-rmstemplate).
 
 ## <a name="i-have-a-hybrid-deployment-of-exchange-with-some-users-on-exchange-online-and-others-on-exchange-serveris-this-supported-by-azure-rms"></a>Tengo una implementación híbrida de Exchange con algunos usuarios de Exchange Online y otros de Exchange Server. ¿Es compatible con Azure RMS?
 Desde luego, y lo mejor es que los usuarios podrán proteger sin problemas y consumir correos electrónicos y archivos adjuntos protegidos en las dos implementaciones de Exchange. Para esta configuración, [active Azure RMS](../deploy-use/activate-service.md) y [habilite IRM para Exchange Online](https://technet.microsoft.com/library/dn151475%28v=exchg.150%29.aspx). A continuación, [implemente y configure el conector RMS](../deploy-use/deploy-rms-connector.md) para Exchange Server.
