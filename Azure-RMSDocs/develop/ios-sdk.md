@@ -2,8 +2,8 @@
 title: "Configuración de iOS y OS X | Azure RMS"
 description: "Las aplicaciones de iOS y OS X pueden usar RMS SDK 4.2 para habilitar la protección de información integrada en sus aplicaciones mediante el AAD RM."
 keywords: 
-author: bruceperlerms
-ms.author: bruceper
+author: lleonard-msft
+ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
@@ -14,13 +14,13 @@ ms.assetid: b31e5b72-e65e-450a-b1b8-d46e81e9fb34
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: ed077a6d908ae5d9b6b3b187cee9c63f47dc826d
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: f2cb573f8c347215f130fd76321886ade2877a16
+ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 01/11/2018
 ---
-# <a name="ios-and-os-x-setup"></a>Configuración de iOS y OS X
+# <a name="ios-and-os-x-setup"></a>Programa de instalación de iOS y OS X
 
 Las aplicaciones de iOS y OS X pueden usar Microsoft Rights Management SDK 4.2 para habilitar la protección de información integrada en aplicaciones con Azure Rights Management (Azure RMS).
 
@@ -57,7 +57,7 @@ Lea el tema de [novedades](release-notes.md) para más información sobre actual
 
 Nuestra biblioteca de interfaz de usuario proporciona una interfaz de usuario reutilizable para operaciones de consumo y protección, dirigida a desarrolladores que no quieren crear su propia interfaz de usuario personalizada: [UI Library and Sample app for iOS](https://github.com/AzureAD/rms-sdk-ui-for-ios) (Biblioteca de interfaz de usuario y aplicación de ejemplo para iOS).
 
-## <a name="configuring-your-development-environment"></a>Configuración del entorno de desarrollo
+## <a name="configuring-your-development-environment"></a>Configurar el entorno de desarrollo
 
 -   Para crear un proyecto nuevo, abra el menú **Archivo** y haga clic en **Nuevo** y luego en **Proyecto**.
 -   Seleccione **Single View Application** (Aplicación de vista única).
@@ -100,7 +100,7 @@ Nuestra biblioteca de interfaz de usuario proporciona una interfaz de usuario re
 
 -   Ya está listo para crear sus propias aplicaciones iOS/OS X.
 
-### <a name="see-also"></a>Véase también
+### <a name="see-also"></a>Consulte también
 
 * [Introducción](get-started.md)
 

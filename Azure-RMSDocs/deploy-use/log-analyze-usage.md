@@ -4,7 +4,7 @@ description: "Información e instrucciones sobre cómo usar el registro de uso c
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/07/2017
+ms.date: 01/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a7a983ed075e41ee6f3328634b451107e579134d
-ms.sourcegitcommit: e089661f23f199b122b0ca9ba4748792b349bc27
+ms.openlocfilehash: cf919749b74727412ab6fa76cc52a5c71b69efcd
+ms.sourcegitcommit: fc789ce08821e031d3a2b22d850b4318302d3585
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>Registro y análisis del uso del servicio Azure Rights Management
 
@@ -45,7 +45,6 @@ Además de este registro de uso, también tiene las siguientes opciones de regis
 |Opción de registro|Descripción|
 |----------------|---------------|
 |Registro de administración|Registra las tareas administrativas del servicio de Azure Rights Management. Por ejemplo, si el servicio está desactivado, cuando la característica de superusuario está habilitada y cuando los usuarios tienen permisos de administración delegados para el servicio. <br /><br />Para más información, vea el cmdlet de PowerShell [Get-AadrmAdminLog](/powershell/module/aadrm/get-aadrmadminlog).|
-|Informes web|Informes de uso de alto nivel del Portal de Azure clásico: **Resumen de RMS**, **Usuarios activos de RMS**, **Plataformas de dispositivos RMS** y **Uso de aplicaciones de RMS**. <br /><br />Para acceder a estos informes desde el Portal de Azure clásico, haga clic en **Active Directory**, seleccione un directorio y ábralo y, luego, haga clic en **INFORMES**.|
 |Seguimiento de documentos|Permite a los usuarios seguir y revocar los documentos que han seguido con el cliente de Azure Information Protection o la aplicación RMS sharing. Los administradores globales también pueden realizar un seguimiento de estos documentos en nombre de los usuarios. <br /><br />Para más información, consulte [Configuración y uso de seguimiento de documentos para Azure Information Protection](../rms-client/client-admin-guide-document-tracking.md).|
 |Registros de eventos de cliente|Actividad de uso para el cliente de Azure Information Protection, registrada en el registro de eventos local de Windows **Aplicaciones y servicios**, **Azure Information Protection**. <br /><br />Para más información, consulte [Registro de uso del cliente de Azure Information Protection](../rms-client/client-admin-guide-files-and-logging.md#usage-logging-for-the-azure-information-protection-client).|
 |Archivos de registro de cliente|Registros de solución de problemas para el cliente de Azure Information Protection, ubicados en **%localappdata%\Microsoft\MSIP**. <br /><br />Estos archivos están diseñados para Microsoft Support.|
@@ -146,19 +145,19 @@ Cada una de las líneas posteriores es un registro. Los valores de los campos se
 |time|Hora|Hora UTC en formato de 24 hora cuando se realizó el servicio de la solicitud.<br /><br />El origen es el reloj local del servidor que realizó el servicio de la solicitud.|21:59:28|
 |row-id|Texto|GUID único para este registro. Si un valor no está presente, use el valor del identificador de correlación para identificar la entrada.<br /><br />Este valor es útil cuando agrega registros o copia registros en otro formato.|1c3fe7a9-d9e0-4654-97b7-14fafa72ea63|
 |request-type|Nombre|Nombre de la API de RMS que se solicitó.|AcquireLicense|
-|user-id|Cadena|El usuario que realizó la solicitud.<br /><br />El valor se incluye entre comillas únicas. Las llamadas de una clave de inquilino administrada por usted (BYOK) tienen un valor de **"**, que también se aplica cuando los tipos de solicitud son anónimos.|"joe@contoso.com"|
+|user-id|String|El usuario que realizó la solicitud.<br /><br />El valor se incluye entre comillas únicas. Las llamadas de una clave de inquilino administrada por usted (BYOK) tienen un valor de **"**, que también se aplica cuando los tipos de solicitud son anónimos.|"joe@contoso.com"|
 |result|String|'Success' si se ha proporcionado la solicitud correctamente.<br /><br />El tipo de error entre comillas si se produjo un error de la solicitud.|'Success'|
 |correlation-id|Texto|GUID que es común entre el registro del cliente de RMS y el registro del servidor para una solicitud proporcionada.<br /><br />Este valor puede ser útil para ayudar a solucionar problemas del cliente.|cab52088-8925-4371-be34-4b71a3112356|
 |content-id|Texto|GUID, entre llaves, que identifica el contenido protegido (por ejemplo, un documento).<br /><br />Este campo tiene un valor solo si request-type es AcquireLicense y está en blanco para todos los demás tipos de solicitudes.|{bb4af47b-cfed-4719-831d-71b98191a4f2}|
-|owner-email|Cadena|Dirección de correo electrónico del propietario del documento.<br /><br /> Este campo está en blanco si el tipo de solicitud es RevokeAccess.|alice@contoso.com|
-|issuer|Cadena|Dirección de correo electrónico del emisor del documento. <br /><br /> Este campo está en blanco si el tipo de solicitud es RevokeAccess.|alice@contoso.com (o) FederatedEmail.4c1f4d-93bf-00a95fa1e042@contoso.onmicrosoft.com|
+|owner-email|String|Dirección de correo electrónico del propietario del documento.<br /><br /> Este campo está en blanco si el tipo de solicitud es RevokeAccess.|alice@contoso.com|
+|issuer|String|Dirección de correo electrónico del emisor del documento. <br /><br /> Este campo está en blanco si el tipo de solicitud es RevokeAccess.|alice@contoso.com (o) FederatedEmail.4c1f4d-93bf-00a95fa1e042@contoso.onmicrosoft.com|
 |template-id|String|Identificador de la plantilla que se usa para proteger el documento. <br /><br /> Este campo está en blanco si el tipo de solicitud es RevokeAccess.|{6d9371a6-4e2d-4e97-9a38-202233fed26e}|
 |file-name|String|Nombre de archivo de un documento protegido al que el cliente de Azure Information Protection para Windows o la aplicación Rights Management sharing para Windows realiza un seguimiento. <br /><br />Actualmente, algunos archivos (como documentos de Office) se muestran como GUID en lugar del nombre de archivo real.<br /><br /> Este campo está en blanco si el tipo de solicitud es RevokeAccess.|TopSecretDocument.docx|
 |date-published|Fecha|Fecha en la que se ha protegido el documento.<br /><br /> Este campo está en blanco si el tipo de solicitud es RevokeAccess.|2015-10-15T21:37:00|
-|c-info|Cadena|Información acerca de la plataforma del cliente que está realizando la solicitud.<br /><br />La cadena específica varía, en función de la aplicación (por ejemplo, el sistema operativo o el explorador).|'MSIPC;version=1.0.623.47;AppName=WINWORD.EXE;AppVersion=15.0.4753.1000;AppArch=x86;OSName=Windows;OSVersion=6.1.7601;OSArch=amd64'|
+|c-info|String|Información acerca de la plataforma del cliente que está realizando la solicitud.<br /><br />La cadena específica varía, en función de la aplicación (por ejemplo, el sistema operativo o el explorador).|'MSIPC;version=1.0.623.47;AppName=WINWORD.EXE;AppVersion=15.0.4753.1000;AppArch=x86;OSName=Windows;OSVersion=6.1.7601;OSArch=amd64'|
 |c-ip|Address|Dirección IP del cliente que realiza la solicitud.|64.51.202.144|
 |admin-action|Bool|Si un administrador ha accedido al sitio de seguimiento de documentos en modo de administrador.|True|
-|acting-as-user|Cadena|La dirección de correo electrónico del usuario para el que un administrador accede al sitio de seguimiento de documentos. |'joe@contoso.com'|
+|acting-as-user|String|La dirección de correo electrónico del usuario para el que un administrador accede al sitio de seguimiento de documentos. |'joe@contoso.com'|
 
 
 #### <a name="exceptions-for-the-user-id-field"></a>Excepciones para el campo user-id

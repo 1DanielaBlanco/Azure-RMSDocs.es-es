@@ -2,8 +2,8 @@
 title: "Información general - RMS SDK 4.2 | Azure RMS"
 description: "AD RMS y Azure RMS son tecnologías de protección de la información con la que es más fácil proteger la información digital frente al uso no autorizado."
 keywords: 
-author: bruceperlerms
-ms.author: bruceper
+author: lleonard-msft
+ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
@@ -14,13 +14,13 @@ ms.assetid: 8A13494E-C1D7-407D-BCD1-A406915EA578
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 72272a3c2e72d9aabe75f2a4b0814c8100a11419
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: b5d0bd9972776319a73a049e3400b394614e8f0e
+ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 01/11/2018
 ---
-# <a name="overview"></a>Información general
+# <a name="overview"></a>Introducción
 
 Microsoft Rights Management SDK 4.2 es una tecnología de protección de la información disponible para varias plataformas.  Se trata de un marco de trabajo o kit de desarrollo de software (SDK) que está diseñado para equipos cliente y dispositivos con el objetivo de ayudar a proteger el acceso a la información que circula por aplicaciones con “derechos habilitados”, así como el uso de esa información. Los SDK de esas plataformas proporcionan una API sencilla con la que el desarrollador de una aplicación puede proteger o consumir contenido digital, recuperar plantillas y adquirir directivas de un servidor, además de otras tareas relacionadas con la administración de derechos.
 
