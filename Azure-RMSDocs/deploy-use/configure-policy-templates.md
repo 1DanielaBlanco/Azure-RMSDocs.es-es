@@ -4,7 +4,7 @@ description: "Configure y administre plantillas de administración de derechos d
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/29/2017
+ms.date: 01/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,20 +12,18 @@ ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: bb6aeea8f939614b9c1903d8e006815228f99723
-ms.sourcegitcommit: f6ba613445463c3c4c64b1620095d54b48194650
+ms.openlocfilehash: f69a163566a9654ee6286c4bf9ca4d018e8f8db5
+ms.sourcegitcommit: fc789ce08821e031d3a2b22d850b4318302d3585
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>Configuración y administración de plantillas para Azure Information Protection
 
 >*Se aplica a: Azure Information Protection*
 
 >[!NOTE]
->Esta funcionalidad reemplaza la configuración de plantillas personalizadas en el Portal de Azure clásico. Para una asignación de procedimientos rápida, vea [Tareas que solía realizar con el Portal de Azure clásico](migrate-portal.md).
->
->Aunque todavía se pueden crear y administrar plantillas en el Portal de Azure clásico, no se recomienda administrar las mismas plantillas desde el Portal de Azure clásico y Azure Portal. La implementación para configurar plantillas en estos portales ha cambiado, por lo que si configura la misma plantilla en portales diferentes puede producirse una configuración no confiable.
+>Esta funcionalidad reemplaza la configuración de plantillas personalizadas en el Portal de Azure clásico. El portal clásico ya no está disponible, por lo que debe usar Azure Portal. Para una asignación de procedimientos rápida, vea [Tareas que solía realizar con el Portal de Azure clásico](migrate-portal.md).
 
 
 Las plantillas de Rights Management ahora están integradas con la directiva de Azure Information Protection. 
@@ -40,7 +38,7 @@ Las plantillas de Rights Management ahora están integradas con la directiva de 
 
 ## <a name="default-templates"></a>Plantillas predeterminadas
 
-Cuando obtenga una suscripción a Azure Information Protection o a Office 365 que incluya el servicio Azure Rights Management, se crearán automáticamente dos plantillas predeterminadas para el inquilino que restringen el acceso a los usuarios autorizados de la organización. Al crear estas dos plantillas, tienen los permisos que aparecen en la documentación [Configuración de los derechos de uso para Azure Rights Management](configure-usage-rights.md#rights-included-in-the-default-templates).
+Al obtener una suscripción a Azure Information Protection o a Office 365 que incluya el servicio Azure Rights Management, se crean automáticamente dos plantillas predeterminadas para el inquilino. Estas plantillas restringen el acceso a los usuarios autorizados de la organización. Al crear estas plantillas, tienen los permisos que aparecen en la documentación [Configuración de los derechos de uso para Azure Rights Management](configure-usage-rights.md#rights-included-in-the-default-templates).
 
 Además, las plantillas están configuradas para permitir el acceso sin conexión durante siete días y no tienen fecha de expiración.
 
@@ -85,7 +83,7 @@ Antes de editar estas plantillas o convertirlas en etiquetas, asegúrese de que 
     - **Permitir macros** (nombre común) se agrega automáticamente. Se requiere este derecho de uso para la barra Azure Information en aplicaciones de Office.
     
 
-- Los valores **Publicada** y **Archivada** se muestran como **Enabled**: **On** (Habilitada: Activada) y **Enabled**: **Off** (Habilitada: Desactivada) respectivamente en la hoja **Etiqueta**. En el caso de que quiera conservar plantillas que no son visibles para los usuarios o los servicios, establézcalas como **Habilitada**: **Desactivada**.
+- Los valores **Publicada** y **Archivada** se muestran como **Enabled**: **On** (Habilitada: Activada) y **Enabled**: **Off** (Habilitada: Desactivada) respectivamente en la hoja **Etiqueta**. En el caso de que quiera conservar plantillas que no son visibles para los usuarios o los servicios, establézcalas en **Habilitada**: **Desactivada**.
 
 - No es posible copiar ni eliminar una plantilla en Azure Portal. Cuando la plantilla se convierte en una etiqueta, puede configurar la etiqueta para que deje de usar la plantilla. Para ello, seleccione **No configurado** en la opción **Establecer permisos para documentos y correos electrónicos que contengan esta etiqueta**. También puede eliminar la etiqueta. Aun así, en ambos casos, la plantilla no se elimina y permanece en estado archivado.
     
@@ -102,6 +100,7 @@ Antes de editar estas plantillas o convertirlas en etiquetas, asegúrese de que 
 ## <a name="to-configure-the-templates-in-the-azure-information-protection-policy"></a>Para configurar las plantillas en la directiva de Azure Information Protection
 
 1. Si aún no lo ha hecho, abra una nueva ventana del explorador e inicie sesión en [Azure Portal](https://portal.azure.com) como administrador de seguridad o administrador global. Después, vaya a la hoja **Azure Information Protection**.     
+    
     Por ejemplo, en el menú del centro, haga clic en **Más servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
 2. Si la plantilla que quiere configurar es para todos los usuarios, quédese en la hoja **Azure Information Protection - Global policy** (Azure Information Protection: directiva global).
@@ -127,7 +126,7 @@ Antes de editar estas plantillas o convertirlas en etiquetas, asegúrese de que 
 
 ## <a name="to-convert-templates-to-labels"></a>Para convertir plantillas en etiquetas
 
-Cuando tiene una suscripción que incluye clasificación, etiquetado y protección, puede convertir una plantilla en una etiqueta. Cuando lo hace, se conserva la plantilla original pero en Azure Portal y ahora se muestra como incluida en una etiqueta nueva.
+Cuando tiene una suscripción que incluye clasificación, etiquetado y protección, puede convertir una plantilla en una etiqueta. Al convertir una plantilla, se conserva la plantilla original pero en Azure Portal ahora se muestra como incluida en una etiqueta nueva.
 
 Por ejemplo, si convierte una etiqueta llamada **Marketing** que concede derechos de uso al grupo de marketing, en Azure Portal ahora se muestra como una etiqueta llamada **Marketing** con la misma configuración de protección. Si cambia la configuración de protección en esta etiqueta recién creada, la cambia en la plantilla y cualquier usuario o servicio que usa esta plantilla recibirá la nueva configuración de protección en la siguiente actualización de plantilla. 
 
@@ -149,7 +148,7 @@ Cuando se convierte una plantilla en etiqueta:
 
 ## <a name="to-create-a-new-template"></a>Para crear una nueva plantilla
 
-Cuando crea una etiqueta nueva con la configuración de protección de **Azure RMS** o **Azure (clave en la nube)**, de forma encubierta, se crea una plantilla personalizada nueva a la que pueden acceder los servicios y las aplicaciones que se integran con las plantillas de Rights Management.
+Cuando crea una etiqueta nueva con la configuración de protección de **Azure RMS** o **Azure (clave en la nube)**, en segundo plano esta acción crea una plantilla personalizada nueva a la que pueden acceder los servicios y las aplicaciones que se integran con las plantillas de Rights Management.
 
 1. Si la nueva plantilla es para todos los usuarios, quédese en la hoja **Azure Information Protection - Global policy** (Azure Information Protection: directiva global).
     

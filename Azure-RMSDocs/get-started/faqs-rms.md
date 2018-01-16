@@ -4,7 +4,7 @@ description: "Algunas de las preguntas más frecuentes sobre el servicio de prot
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/03/2018
+ms.date: 01/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,11 +13,11 @@ ms.custom: askipteam
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b23fe95721c442529237ea72d30b3df490ad02dc
-ms.sourcegitcommit: 6c7874f54b8b983d3ac547bb23a51e02c68ee67b
+ms.openlocfilehash: d2f88d35550b47a4f73e87eeca9ecd6309a3c73e
+ms.sourcegitcommit: fc789ce08821e031d3a2b22d850b4318302d3585
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Preguntas más frecuentes sobre la protección de datos en Azure Information Protection
 
@@ -70,7 +70,7 @@ Como estos nombres de rol sugieren, el primer rol concede permisos para ejecutar
 
 Algunos puntos que tener en cuenta:
 
-- Solo los administradores globales de Office 365 y los administradores globales de Azure AD pueden usar el Centro de administración de Office 365 o el Portal de Azure clásico para configurar Azure RMS. Si usa Azure Portal para Azure Information Protection, también puede iniciar sesión como un administrador de seguridad.
+- Solo los administradores globales de Office 365 y Azure AD pueden usar el Centro de administración de Office 365 para configurar Azure RMS. Si usa Azure Portal para Azure Information Protection, puede iniciar sesión como un administrador global o un administrador de seguridad.
 
 - Los usuarios a los que asigne el rol de administrador global de Azure RMS deben usar comandos de PowerShell de Azure RMS para configurar Azure RMS. Para ayudarle a encontrar los cmdlets adecuados para tareas específicas, consulte [Administración de Azure Rights Management mediante Windows PowerShell](../deploy-use/administer-powershell.md).
 

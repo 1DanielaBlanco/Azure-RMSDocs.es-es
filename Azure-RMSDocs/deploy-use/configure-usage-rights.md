@@ -4,7 +4,7 @@ description: "Conozca e identifique los derechos específicos que se usan al pro
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/02/2018
+ms.date: 01/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5d57f1cc7728fef1b877fc25fce01bbc9c768b3c
-ms.sourcegitcommit: 24b35e27b3aa861ae8ba6bacab571b0071b058d7
+ms.openlocfilehash: 9c10c7c4afdc6269b3bab23b3aba4da76e383e8b
+ms.sourcegitcommit: fc789ce08821e031d3a2b22d850b4318302d3585
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>Configuración de los derechos de uso para Azure Rights Management
 
@@ -25,6 +25,11 @@ ms.lasthandoff: 01/03/2018
 Cuando establezca protección en archivos o correos electrónicos con el servicio Azure Rights Management de Azure Information Protection y no use ninguna plantilla, deberá configurar los derechos de uso por su cuenta. Además, al configurar plantillas o etiquetas para la protección de Azure Rights Management, se seleccionan los derechos de uso que se aplicarán automáticamente cuando los usuarios, los administradores o los servicios configurados seleccionen la plantilla o etiqueta. Por ejemplo, en Azure Portal, puede seleccionar los roles que configuran una agrupación lógica de derechos de uso o puede configurar los derechos individuales.
 
 Use este artículo como ayuda para configurar los derechos de uso que quiere para la aplicación que esté usando y para entender cómo las aplicaciones interpretan estos derechos.
+
+> [!NOTE] 
+> Para más detalles, en este artículo se incluyen valores del portal clásico de Azure, que dejó de estar disponible el 8 de enero de 2018. Después de esta fecha, si intenta utilizar este portal, se le redirigirá automáticamente al nuevo Azure Portal.
+>
+> Para ayudarle a migrar al portal nuevo, vea [Tareas que solía realizar con el portal clásico de Azure](migrate-portal.md).
 
 ## <a name="usage-rights-and-descriptions"></a>Derechos de uso y descripciones
 En la tabla siguiente se enumeran y se describen los derechos de uso que admite Rights Management y cómo se usan y se interpretan. Se enumeran por su **nombre común**, que es normalmente cómo se muestra o se referencia el derecho de uso, como una versión más descriptiva del valor de una sola palabra que se usa en el código (el valor **Codificación en la directiva**). 
