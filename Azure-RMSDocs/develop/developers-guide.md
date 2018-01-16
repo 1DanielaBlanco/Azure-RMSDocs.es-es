@@ -1,8 +1,8 @@
 ---
 title: "Guía del desarrollador de Azure Information Protection"
 description: Los desarrolladores pueden usar Azure Information Protection para proteger y administrar todo tipo de archivos
-author: BrucePerlerMS
-ms.author: bruceper
+author: lleonard-msft
+ms.author: alleonar
 manager: mbaldwin
 ms.date: 10/11/2017
 ms.topic: article
@@ -11,11 +11,11 @@ ms.technology: techgroup-identity
 ms.assetid: a53c2df2-a0a2-4f1f-995b-75ba55e4489b
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: 2aba222457dfb56cca29e1a2948cc08041552d9f
-ms.sourcegitcommit: f3d5a1de317b9bd114d802b3965bf6b679d7ccf2
+ms.openlocfilehash: a32f4d774b67007ccc6638e3151bd6038e3f274c
+ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="azure-information-protection-developers-guide"></a>Guía del desarrollador de Azure Information Protection
 
@@ -98,15 +98,9 @@ Cada uno de los siguientes temas presenta instrucciones específicas sobre un as
 - [Cómo usar los derechos integrados (usuario)](built-in-rights-usage-restriction-reference.md)
 - [Procedimiento para habilitar el registro de rendimiento y errores (usuario)](enabling-logging.md)
 
-## <a name="videos"></a>Vídeos
+## <a name="introduction-and-datasheets"></a>Introducción y hojas de datos
 
 [Introducción a Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection)
-
-Vídeos de la conferencia de Microsoft Ignite 2016
-
-- [Seguridad del correo electrónico dentro de su organización](https://myignite.microsoft.com/videos/2787)
-- [Adopción de una solución completa basada en identidad para proteger y compartir los datos de forma segura](https://myignite.microsoft.com/videos/2784)
-- [Protección continua de los datos mediante la clasificación, el etiquetado y la protección](https://myignite.microsoft.com/videos/2786)
 
 ## <a name="other-resources"></a>Otros recursos
 
@@ -145,7 +139,7 @@ Vídeos de la conferencia de Microsoft Ignite 2016
 - El [SDK de AD RMS](https://msdn.microsoft.com/library/cc530379.aspx) es la primera versión del SDK de RMS.
 - La [herramienta de scripting de AD RMS](https://msdn.microsoft.com/library/bb968797.aspx) es una herramienta administrativa para una instalación de AD RMS.
 
-### <a name="see-also"></a>Consulte también
+### <a name="see-also"></a>Vea también
 
 - [Terminología de desarrollador](terms.md)
 - [Terminología de Azure Information Protection: profesionales de TI](../get-started/terminology.md)
