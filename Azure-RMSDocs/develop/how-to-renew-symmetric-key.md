@@ -2,20 +2,20 @@
 title: "Renovación de la clave simétrica de Azure Information Protection"
 description: "En este artículo se describe el proceso de renovación de una clave simétrica en Azure Information Protection."
 keywords: 
-author: kkanakas
+author: lleonard-msft
 manager: mbaldwin
-ms.author: kartikk
+ms.author: alleonar
 ms.date: 03/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a0b8c8f0-6ed5-48bb-8155-ac4f319ec178
-ms.openlocfilehash: 6153067c308206cb93ad99de1075913c68d1fa3b
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 159e5b58883490e4417ecbdb9815340c9ccaa66d
+ms.sourcegitcommit: dca4534a0aa7f63c0c525c9a3ce445088d1362bb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="how-to-renew-the-symmetric-key-in-azure-information-protection"></a>Renovación de la clave simétrica de Azure Information Protection
 
@@ -23,7 +23,7 @@ Una **clave simétrica** es un secreto que cifra y descifra un mensaje en cripto
 
 En Azure Active Directory (Azure AD), al crear un objeto de entidad de servicio para representar una aplicación, el proceso genera también una clave simétrica de 256 bits para comprobar la aplicación. Esta clave simétrica es válida durante un año de forma predeterminada. 
 
-En los siguientes pasos se describe cómo renovar la clave simétrica. 
+En los pasos siguientes se muestra cómo renovar la clave simétrica. 
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -60,7 +60,7 @@ EndDate : 3/22/2018 3:27:53 PM
 Usage : Verify
 ```
 
-La clave simétrica creada en el ejemplo anterior expira el 22/03/2018 a las 15:27:53. Para poder seguir usando la entidad de servicio después de este momento, tendría que renovar la clave simétrica. Puede hacerlo con el comando [`New-MsolServicePrincipalCredential`](https://docs.microsoft.com/powershell/msonline/v1/new-msolserviceprincipalcredential). 
+Esta clave simétrica expira el 22/3/2018 a las 3:27:53 p. m. Para usar la entidad de servicio después de este momento, debe renovar la clave simétrica. Para ello, use el comando [`New-MsolServicePrincipalCredential`](https://docs.microsoft.com/powershell/msonline/v1/new-msolserviceprincipalcredential). 
 
 ```
 New-MsolServicePrincipalCredential -AppPrincipalId 7d9c1f38-600c-4b4d-8249-22427f016963
@@ -74,7 +74,7 @@ The following symmetric key was created as one was not supplied ON8YYaMYNmwSfMX6
 Puede usar el comando [`GetMsolServicePrincipalCredential`](https://docs.microsoft.com/powershell/msonline/v1/get-msolserviceprincipalcredential) para comprobar que la nueva clave simétrica esté asociada a la entidad de servicio correcta tal y como se muestra. Tenga en cuenta que el comando muestra todas las claves que están asociadas actualmente a la entidad de servicio.
 
 ```
-Get-MsolServicePrincipalCredential -AppPrincipalId 7d9c1f38-600c-4b4d-8249-22427f016963 -ReturnKeyValues true
+Get-MsolServicePrincipalCredential -AppPrincipalId 7d9c1f38-600c-4b4d-8249-22427f016963 -ReturnKeyValues $true
 
 Type : Symmetric
 Value :

@@ -4,7 +4,7 @@ description: "Instrucciones e información para administradores para implementar
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/04/2018
+ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: d4ad7c3419d3ad83389baece95c1e30c32f06da6
-ms.sourcegitcommit: 7b90b3692bbef6fafab41c0f8c56bd4350985f37
+ms.openlocfilehash: 3ff9a63f5b8565cac131e7b69a674fc8be902d0f
+ms.sourcegitcommit: dca4534a0aa7f63c0c525c9a3ce445088d1362bb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>Guía del administrador: Instalación del cliente de Azure Information Protection para los usuarios
 
@@ -74,7 +74,7 @@ Luego, compruebe los requisitos previos adicionales que puede necesitar el clien
 
 - Para Office 16.0.8628.2010 y versiones posteriores (Hacer clic y ejecutar): habilitar la compatibilidad con monitores heredada
     
-    Para evitar que la barra de Azure Information Protection se muestre fuera de las aplicaciones de Office de estas versiones de Office, habilite la compatibilidad con monitores heredada. Para configurar las aplicaciones de Office: **Archivo** > **General** > **Opciones de interfaz de usuario**:
+    Para evitar que la barra de Azure Information Protection se muestre fuera de las aplicaciones de Office de estas versiones de Office, habilite la compatibilidad con monitores heredada. Para configurar las aplicaciones de Office: **Archivo** > **Opciones** > **General** > **Opciones de la interfaz del usuario**:
     
     - Si ve la opción **When using multiple displays** (Al usar varias pantallas) establecida en **Optimize for best appearance** (Optimizar para obtener la mejor apariencia), seleccione **Optimize for compatibility (application restart required)** (Optimizar para compatibilidad (se requiere reiniciar aplicación)) en su lugar. 
         
@@ -191,7 +191,7 @@ Si usa Intune como el método de implementación de software, use estas instrucc
     
     |Versión de Office|Sistema operativo|Software|Acción|
     |--------------------|--------------|----------------|---------------------|
-    |Office 2016|Todas las versiones compatibles|64 bits: [KB317866](https://www.microsoft.com/en-us/download/details.aspx?id=55073)<br /><br />32 bits: [KB317866](https://www.microsoft.com/en-us/download/details.aspx?id=55058)<br /><br /> Versión: 1.0|Instalar|
+    |Office 2016|Todas las versiones compatibles|64 bits: [KB3178666](https://www.microsoft.com/en-us/download/details.aspx?id=55007)<br /><br />32 bits: [KB3178666](https://www.microsoft.com/en-us/download/details.aspx?id=54999)<br /><br /> Versión: 1.0|Instalar|
     |Office 2013|Todas las versiones compatibles|64 bits: [KB3172523](https://www.microsoft.com/en-us/download/details.aspx?id=54992)<br /><br /> 32 bits: [KB3172523](https://www.microsoft.com/en-us/download/details.aspx?id=54979) <br /><br />Versión: 1.0|Instalar|
     |Office 2010|Todas las versiones compatibles|[Microsoft Online Services - Ayudante para el inicio de sesión](https://www.microsoft.com/en-us/download/details.aspx?id=28177)<br /><br /> Versión: 2.1|Instalar|
     |Office 2010|Windows 8.1 y Windows Server 2012 R2|[KB2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41708)<br /><br /> Número de versión incluido en el nombre de archivo: v3|Instalar si KB2843630 o KB2919355 no está instalado|

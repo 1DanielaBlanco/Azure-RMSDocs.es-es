@@ -4,7 +4,7 @@ description: "Identifique los requisitos previos para implementar Azure Informat
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/29/2017
+ms.date: 01/18/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e6fa7c2912f2598f8eb2ad31d237caab80fd0273
-ms.sourcegitcommit: 8d47080abab0be9b16672fee0d885ebe00f7f5f3
+ms.openlocfilehash: 21faf358d5e0aa137e615dab9b411ecdcd5a7a73
+ms.sourcegitcommit: dca4534a0aa7f63c0c525c9a3ce445088d1362bb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="requirements-for-azure-information-protection"></a>Requirements for Azure Information Protection (Requisitos de Azure Information Protection)
 
@@ -65,7 +65,7 @@ Los siguientes dispositivos admiten el cliente de Azure Information Protection, 
 
 - Windows Server 2012 R2 y Windows Server 2012
 
-- Windows Server 2008 R2 
+- Windows Server 2008 R2 
 
 En estas versiones de servidor, el cliente de Azure Information Protection es compatible con los Servicios de Escritorio remoto. Si elimina perfiles de usuario al utilizar el cliente de Azure Information Protection con los Servicios de Escritorio remoto, no elimine la carpeta **%Appdata%\Microsoft\Protect**.
 
@@ -97,10 +97,15 @@ Además de la información del artículo de Office específica de Azure Informat
 
 - Permita tráfico HTTPS en TCP 443 a **api.informationprotection.azure.com**.
 
-- No termine la conexión TLS de cliente a servicio (por ejemplo, para realizar una inspección de los paquetes). Al hacerlo, se interrumpe la asignación de certificados que los clientes de RMS utilizan con las entidades de certificación administradas por Microsoft para ayudar a proteger su comunicación con Azure RMS.
-
 - Si usa un proxy web que precisa de autenticación, debe configurarlo para usar la autenticación integrada de Windows con las credenciales de inicio de sesión de Active Directory del usuario.
 
+- No termine la conexión TLS de cliente a servicio (por ejemplo, para realizar una inspección de los paquetes). Al hacerlo, se interrumpe la asignación de certificados que los clientes de RMS utilizan con las entidades de certificación administradas por Microsoft para ayudar a proteger su comunicación con el servicio Azure Rights Management.
+    
+    - Sugerencia: Debido a cómo Chrome muestra las conexiones seguras en la barra de direcciones, puede utilizar este explorador para comprobar rápidamente si la conexión de cliente se ha cancelado antes de que llegue al servicio Azure Rights Management. Escriba la dirección URL siguiente en la barra de direcciones del explorador: `https://admin.na.aadrm.com/admin/admin.svc` 
+    
+        No se preocupe por lo que muestra la ventana del explorador. En su lugar, haga clic en el candado de la barra de direcciones para ver la información del sitio. La información del sitio le permite ver la entidad de certificación emisora. Si el certificado no lo emite una entidad de certificación de Microsoft, es muy probable que la conexión de cliente a servicio finalice y tenga que volver a configurarla en el firewall. La imagen siguiente muestra un ejemplo de una entidad de certificación emisora de Microsoft. Si ve que una entidad de certificación interna ha emitido el certificado, esta configuración no es compatible con Azure Information Protection.
+        
+        ![Comprobación del certificado emitido para las conexiones de Azure Information Protection](../media/certificate-checking.png)
 
 ### <a name="on-premises-servers"></a>Servidores locales
 
