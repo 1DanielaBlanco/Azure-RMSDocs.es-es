@@ -4,17 +4,17 @@ description: "Información general del servicio Azure Information Protection."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/08/2017
+ms.date: 01/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: 18ec6241d09eb8de2417dd939237de0544a401e8
-ms.sourcegitcommit: 9b229852c59441f9387bab1d5f28a3c5d9017696
+ms.openlocfilehash: 0eeb9a6cf8eb819c19a32dbcf76e4d0104c18b99
+ms.sourcegitcommit: ae4cdee7211796182c47a11c1853232464673834
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 01/26/2018
 ---
 # <a name="what-is-azure-information-protection"></a>¿Qué es Azure Information Protection?
 
@@ -73,7 +73,7 @@ Para clasificar y proteger otros tipos de archivo y para admitir varios archivos
 
 Cuando los usuarios seleccionan la opción de menú **Clasificar y proteger** en el Explorador de archivos, pueden seleccionar una etiqueta de forma similar a como usan la barra de Information Protection en las aplicaciones de escritorio de Office. También pueden establecer permisos personalizados, si es necesario.
 
-A los usuarios de PowerShell (y administradores) les puede resultar más eficaz utilizar los comandos de PowerShell para administrar y configurar la clasificación y protección de varios archivos. Para que los comandos de PowerShell permitan hacer esto, se incluyen automáticamente con el cliente, aunque también puede instalar el módulo de PowerShell por separado.
+A los usuarios de PowerShell (y administradores) les puede resultar más eficaz utilizar los comandos de PowerShell para administrar y configurar la clasificación y protección de varios archivos. Los comandos de PowerShell que permiten hacerlo se incluyen automáticamente con el cliente, aunque también puede instalar el módulo de PowerShell por separado.
 
 Después de haber protegido un documento, los usuarios y administradores pueden usar un sitio de Seguimiento de documentos para supervisar quién accede a los documentos y cuándo. Si se sospecha de uso indebido, también pueden revocar el acceso a estos documentos:
 
@@ -131,8 +131,8 @@ También puede [buscar y encontrar](https://myignite.microsoft.com/videos?q=%252
 
 Lea la entrada del blob, [Azure Information Protection: Ready, set, protect!](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/21/azure-information-protection-ready-set-protect/) (Azure Information Protection: preparado, listo, protege)
 
-Configure y vea Azure Information Protection con nuestro [Tutorial de inicio rápido de Azure Information Protection](../get-started/infoprotect-quick-start-tutorial.md) en cinco pasos.
+Configure Azure Information Protection y véalo usted mismo con nuestro [Tutorial de inicio rápido](../get-started/infoprotect-quick-start-tutorial.md) en cinco pasos. O bien, si ya lo tiene todo a punto para implementar este servicio en su organización, consulte el [mapa de ruta de implementación de Azure Information Protection](../plan-design/deployment-roadmap.md).
 
-¿Quizá conoce Azure Information Protection o Azure Rights Management por otro nombre? Consulte [nuestra lista de términos alternativos para el servicio](azure-rms-aka.md).
+¿Quizá conoce Azure Information Protection por otro nombre? Consulte nuestra [lista de términos alternativos para el servicio](azure-rms-aka.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

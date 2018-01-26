@@ -4,7 +4,7 @@ description: "Instrucciones e información para administradores para implementar
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/18/2018
+ms.date: 01/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 3ff9a63f5b8565cac131e7b69a674fc8be902d0f
-ms.sourcegitcommit: dca4534a0aa7f63c0c525c9a3ce445088d1362bb
+ms.openlocfilehash: 0af9b6847c920d486d727cb6748b84aa581012d1
+ms.sourcegitcommit: d3b82dd8dbafb86ddbe698cdcd0edee445fff416
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>Guía del administrador: Instalación del cliente de Azure Information Protection para los usuarios
 
@@ -74,11 +74,15 @@ Luego, compruebe los requisitos previos adicionales que puede necesitar el clien
 
 - Para Office 16.0.8628.2010 y versiones posteriores (Hacer clic y ejecutar): habilitar la compatibilidad con monitores heredada
     
-    Para evitar que la barra de Azure Information Protection se muestre fuera de las aplicaciones de Office de estas versiones de Office, habilite la compatibilidad con monitores heredada. Para configurar las aplicaciones de Office: **Archivo** > **Opciones** > **General** > **Opciones de la interfaz del usuario**:
+    Para evitar que la barra de Azure Information Protection se muestre fuera de las aplicaciones de Office de estas versiones de Office, es posible que tenga que habilitar la compatibilidad con monitores heredada. Si en este caso la barra no se muestra correctamente, es posible que la vea como **AdxTaskPane**. 
+    
+    Para configurar las aplicaciones de Office de acuerdo con este requisito, vaya a **Archivo** > **Opciones** > **General** > **Opciones de la interfaz del usuario**:
     
     - Si ve la opción **When using multiple displays** (Al usar varias pantallas) establecida en **Optimize for best appearance** (Optimizar para obtener la mejor apariencia), seleccione **Optimize for compatibility (application restart required)** (Optimizar para compatibilidad (se requiere reiniciar aplicación)) en su lugar. 
         
     - Si ve que la opción **Use best settings for my display** (Usar la configuración recomendada para la pantalla) está seleccionada, quite esta selección.
+    
+    - Si no ve ninguna de estas opciones, no se requiere ninguna configuración adicional.
 
 > [!IMPORTANT]
 > La instalación del cliente de Azure Information Protection requiere permisos administrativos locales.
