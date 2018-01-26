@@ -26,7 +26,7 @@ En este tema se describen las características y los cambios importantes de esta
 
 La actualización para la versión de julio incluía aumentar la revisión del SDK, ahora 4.2.5.
 
-- SDK de Android: La aplicación ahora puede **establecer el nivel de registro sobre la marcha** con Android SDK. Para más información, vea [How to: Enable error and performance logging](https://docs.microsoft.com/en-us/information-protection/develop/enabling-logging) (Procedimiento para habilitar el registro de rendimiento y errores).
+- SDK de Android: La aplicación ahora puede **establecer el nivel de registro sobre la marcha** con Android SDK. Para más información, vea [How to: Enable error and performance logging](https://docs.microsoft.com/information-protection/develop/enabling-logging) (Procedimiento para habilitar el registro de rendimiento y errores).
 - El SDK de iOS no es compatible con el nivel de registro. 
 - El SDK ahora devuelve un error para un token de acceso NULL.
 
