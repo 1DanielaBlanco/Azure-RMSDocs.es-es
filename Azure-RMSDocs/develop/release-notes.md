@@ -66,7 +66,7 @@ Con esta versión, RMS SDK para dispositivos pasa a la versión 4.2 y agrega lo 
 
     [Método sincrónico UserPolicy.acquire](https://msdn.microsoft.com/library/mt631384.aspx)
 
-    [Método sincrónico UserPolicy.create (PolicyDescriptor…)**](https://msdn.microsoft.com/library/mt631385.aspx)
+    [Método sincrónico UserPolicy.create (PolicyDescriptor…)** ](https://msdn.microsoft.com/library/mt631385.aspx)
 
     [Método sincrónico UserPolicy.create (TempalteDescriptor…)](https://msdn.microsoft.com/library/mt631386.aspx)
 
