@@ -1,10 +1,10 @@
 ---
-title: "Configuración de superusuarios para Azure Rights Management - AIP"
-description: "Obtenga información sobre la característica de superusuario del servicio Azure Rights Management de Azure Information Protection e impleméntela para que los usuarios y servicios autorizados siempre puedan leer e inspeccionar los datos que Azure Rights Management protege para la organización. Esta capacidad se denomina a menudo \"razonamiento encima de los datos\" y es un elemento crucial en el mantenimiento del control de los datos de su organización."
+title: "Configuración de los superusuarios para Azure Rights Management: AIP"
+description: "Comprenda e implemente la característica de superusuario de Azure Rights Management Service de Azure Information Protection, de modo que los servicios y las personas autorizados siempre puedan leer e inspeccionar los datos que protege Azure Rights Management para la organización. Esta capacidad se conoce a veces como \"razonamiento sobre datos\" y es un elemento crucial en el mantenimiento del control de los datos de la organización."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/26/2017
+ms.date: 01/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,48 +12,48 @@ ms.technology: techgroup-identity
 ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 70c7bbd1f6244c3624cd4b1e32a98e71b5779004
-ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
+ms.openlocfilehash: a134d6619f67bfc3d26cb1726fe07e8ffca403cd
+ms.sourcegitcommit: 972acdb468ac32a28e3e24c90694aff4b75206fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery"></a>Configuración de superusuarios para Azure Rights Management y los servicios de detección o la recuperación de datos
 
->*Se aplica a: Azure Information Protection, Office 365*
+>*Válido para: Azure Information Protection, Office 365*
 
-La característica de superusuario del servicio Azure Rights Management de Azure Information Protection garantiza que los usuarios y servicios autorizados siempre puedan leer e inspeccionar los datos que Azure Rights Management protege para la organización. Y, si es necesario, quitar la protección o cambiar la protección que se aplicó anteriormente. 
+La característica de superusuario de Azure Rights Management Service de Azure Information Protection garantiza que los servicios y las personas autorizados siempre puedan leer e inspeccionar los datos que protege Azure Rights Management para la organización. Y, si es necesario, quita la protección o cambiar la que se aplicó anteriormente. 
 
-Un superusuario siempre tiene el [derecho de uso](configure-usage-rights.md) de control total de Rights Management para documentos y correos electrónicos que se han protegido mediante el inquilino de Azure Information Protection de su organización. Esta capacidad se denomina a menudo “razonamiento encima de los datos” y es un elemento crucial en el mantenimiento del control de los datos de su organización. Por ejemplo, podría usar esta característica en cualquiera de las siguientes situaciones:
+Un superusuario siempre tiene el [derecho de uso](configure-usage-rights.md) Control total de Rights Management para documentos y correos electrónicos que haya protegido el inquilino de Azure Information Protection de la organización. Esta capacidad se conoce a veces como "razonamiento sobre datos" y es un elemento crucial en el mantenimiento del control de los datos de la organización. Por ejemplo, podría usar esta característica en cualquiera de los siguientes escenarios:
 
-- Un empleado deja la organización y usted necesita leer los archivos que dicho empleado protegió.
+- Un empleado deja la organización y usted necesita leer los archivos que ha protegido.
 
-- Un administrador de TI necesita quitar la directiva de protección actual que se configuró para los archivos y aplicar una nueva.
+- Un administrador de TI necesita quitar la directiva de protección actual que se configuró para los archivos y aplicar una nueva directiva de protección.
 
 - Exchange Server necesita indexar los buzones para las operaciones de búsqueda.
 
-- Tiene servicios de TI existentes para soluciones de prevención de pérdida de datos (DLP), puertas de enlace de cifrado de contenido (CEG) y productos antimalware que deben inspeccionar los archivos que ya están protegidos.
+- Tiene servicios de TI existentes para soluciones de prevención de pérdida de datos (DLP), puertas de enlace de cifrado de contenido (CEG) y productos antimalware que necesitan inspeccionar los archivos que ya están protegidos.
 
-- Tiene que descifrar archivos de forma masiva con fines de auditoría, legales y otros motivos de cumplimiento.
+- Debe descifrar archivos en bloque para auditoría, por temas legales y otros motivos de cumplimiento.
 
-De forma predeterminada, la característica de superusuario no está habilitada, y no hay ningún usuario asignado a este rol. Se habilita automáticamente si configura el conector de Rights Management para Exchange, y no es necesaria para los servicios estándar que ejecutan Exchange Online, SharePoint Online o SharePoint Server.
+De forma predeterminada, la característica de superusuario no está habilitada y ningún usuario está asignado a este rol. Se habilita automáticamente al configurar el conector de Rights Management para Exchange y no es necesaria para los servicios estándar que ejecutan Exchange Online, SharePoint Online o SharePoint Server.
 
-Si necesita habilitar manualmente la característica de superusuario, use el cmdlet de PowerShell [Enable-AadrmSuperUserFeature](/powershell/aadrm/vlatest/enable-aadrmsuperuserfeature) y, luego, asigne los usuarios (o cuentas de servicio), según sea necesario, mediante el cmdlet [Add-AadrmSuperUser](/powershell/aadrm/vlatest/add-aadrmsuperuser) o el cmdlet [Set-AadrmSuperUserGroup](/powershell/aadrm/vlatest/set-aadrmsuperusergroup) y agregue usuarios (u otros grupos), según sea necesario para este grupo. 
+Si tiene que habilitar manualmente la característica de superusuario, use el cmdlet de PowerShell [Enable-AadrmSuperUserFeature](/powershell/aadrm/vlatest/enable-aadrmsuperuserfeature) y asigne los usuarios (o cuentas de servicio) según sea necesario mediante el cmdlet [Add-AadrmSuperUser](/powershell/aadrm/vlatest/add-aadrmsuperuser) o [Set-AadrmSuperUserGroup](/powershell/aadrm/vlatest/set-aadrmsuperusergroup); finalmente, agregue usuarios (u otros grupos) según sea necesario para este grupo. 
 
-Aunque el uso de un grupo para los superusuarios es más fácil de administrar, tenga en cuenta que, por motivos de rendimiento, Azure Rights Management [almacena en caché la pertenencia al grupo](../plan-design/prepare.md#group-membership-caching-by-azure-rights-management). Por tanto, si necesita asignar un nuevo usuario como superusuario para descifrar contenido inmediatamente, agregue ese usuario mediante Add-AadrmSuperUser, en lugar de agregar el usuario a un grupo existente que ha configurado mediante Set-AadrmSuperUserGroup.
+Aunque el uso de un grupo para los superusuarios es más fácil de administrar, tenga en cuenta que, por motivos de rendimiento, Azure Rights Management [almacena en caché la pertenencia al grupo](../plan-design/prepare.md#group-membership-caching-by-azure-information-protection). Por lo que si necesita asignar un nuevo usuario como superusuario para descifrar contenido inmediatamente, debe agregarlo mediante Add-AadrmSuperUser, en lugar de agregarlo a un grupo existente configurado mediante Set-AadrmSuperUserGroup.
 
 > [!NOTE]
-> Si aún no ha instalado el módulo de Windows PowerShell para [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)], consulte [Instalación de Windows PowerShell para Azure Rights Management](install-powershell.md).
+> Si aún no tiene instalado el módulo de Windows PowerShell para [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)], consulte [Instalación de Windows PowerShell para Azure Rights Management](install-powershell.md).
 
-Prácticas de seguridad recomendadas para la característica de superusuario:
+Procedimientos recomendados de seguridad para la característica de superusuario:
 
-- Use el cmdlet [Add-AadrmRoleBasedAdministrator](/powershell/module/aadrm/add-aadrmrolebasedadministrator) para restringir y supervisar los administradores que tienen asignado el rol Administrador global para el inquilino de Office 365 o Azure Information Protection, o bien para conocer los usuarios que tienen asignado el rol Administrador global. Estos usuarios pueden habilitar la característica de superusuario y asignar usuarios (y a ellos mismos) como superusuarios y posiblemente descifrar todos los archivos que protege su organización.
+- Restrinja y supervise los administradores que se asignan como administrador global para el inquilino de Office 365 o Azure Information Protection, o quién está asignado al rol GlobalAdministrator mediante el cmdlet [Add-AadrmRoleBasedAdministrator](/powershell/module/aadrm/add-aadrmrolebasedadministrator). Estos usuarios pueden habilitar la característica de superusuario y asignar usuarios (y asignarse ellos mismos) como superusuarios para poder descifrar todos los archivos que protege la organización.
 
-- Para ver qué usuarios y cuentas de servicio están asignados individualmente como superusuarios, use el cmdlet [Get-AadrmSuperUser](/powershell/module/aadrm/get-aadrmsuperuser). Para ver si se ha configurado un grupo de superusuarios, use el cmdlet [Get-AadrmSuperUser](/powershell/module/aadrm/get-aadrmsuperusergroup) y sus herramientas de administración de usuarios estándar para comprobar qué usuarios forman parte de este grupo. Al igual que todas las acciones de administración, habilitar o deshabilitar la característica de superusuarios y agregar o quitar superusuarios se registran y se pueden auditar mediante el comando [Get-AadrmAdminLog](/powershell/module/aadrm/get-aadrmadminlog) . Cuando los superusuarios descifrar archivos, esta acción se registra y se puede auditar con el [registro de uso](log-analyze-usage.md).
+- Para ver qué usuarios y cuentas de servicio se asignan individualmente como superusuarios, use el [cmdlet Get-AadrmSuperUser](/powershell/module/aadrm/get-aadrmsuperuser). Para ver si se ha configurado un grupo de superusuarios, use el cmdlet [Get-AadrmSuperUser](/powershell/module/aadrm/get-aadrmsuperusergroup) y sus herramientas de administración de usuarios estándar para comprobar qué usuarios pertenecen a este grupo. Al igual que todas las acciones de administración, la habilitación o la deshabilitación de la característica de superusuarios y la incorporación o la eliminación de superusuarios se registra y se puede auditar mediante el comando [Get-AadrmAdminLog](/powershell/module/aadrm/get-aadrmadminlog). Cuando los superusuarios descifran archivos, esta acción se registra y se puede auditar con el [registro de uso](log-analyze-usage.md).
 
-- Si no necesita la característica de superusuario para los servicios diarios, habilítela solo cuando lo necesite y deshabilítela de nuevo con el cmdlet [Disable-AadrmSuperUserFeature](/powershell/module/aadrm/disable-aadrmsuperuserfeature) .
+- Si no necesita la característica de superusuario para los servicios diarios, habilítela solo cuando lo necesite y deshabilítela de nuevo mediante el cmdlet [Disable-AadrmSuperUserFeature](/powershell/module/aadrm/disable-aadrmsuperuserfeature).
 
-El siguiente extracto del registro muestra algunas entradas de ejemplo de uso del cmdlet Get-AadrmAdminLog. En este ejemplo, el administrador de Contoso Ltd confirma que la característica de superusuario está deshabilitada, agrega a Richard Simone como un superusuario, comprueba que Richard es el único superusuario configurado para el servicio Azure Rights Management y, después, habilita la característica de superusuario para que Richard pueda descifrar archivos que había protegido un empleado que ahora ha dejado la compañía.
+El siguiente extracto del registro muestra algunas entradas de ejemplo de uso del cmdlet Get-AadrmAdminLog. En este ejemplo, el administrador de Contoso Ltd confirma que la característica de superusuario está deshabilitada, agrega a Richard Simone como superusuario, comprueba que Richard es el único superusuario configurado para Azure Rights Management Service y habilita la característica de superusuario para que Richard pueda descifrar archivos que estaban protegidos por un empleado que ha dejado la empresa.
 
 `2015-08-01T18:58:20    admin@contoso.com   GetSuperUserFeatureState    Passed  Disabled`
 
@@ -63,15 +63,15 @@ El siguiente extracto del registro muestra algunas entradas de ejemplo de uso de
 
 `2015-08-01T19:01:45    admin@contoso.com   SetSuperUserFeatureState -state Enabled Passed  True`
 
-## <a name="scripting-options-for-super-users"></a>Opciones de script para superusuarios
-Con frecuencia, alguien asignado como superusuario para [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] deberá quitar la protección de varios archivos, en varias ubicaciones. Aunque es posible hacerlo manualmente, resulta más eficaz (y a menudo más fiable) mediante scripts. Para ello, use el cmdlet [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile) y el cmdlet [Protect-RMSFile](/powershell/module/azureinformationprotection/protect-rmsfile), según sea necesario. 
+## <a name="scripting-options-for-super-users"></a>Opciones de scripting para superusuarios
+Con frecuencia, alguien asignado como superusuario para [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] tendrá que quitar la protección de varios archivos, en varias ubicaciones. Aunque es posible hacerlo manualmente, resulta más eficaz (y a menudo más confiable) hacerlo mediante scripts. Para ello, puede usar los cmdlets [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile) y [Protect-RMSFile](/powershell/module/azureinformationprotection/protect-rmsfile), según sea necesario. 
 
-Si usa la clasificación y la protección, también puede utilizar [Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel) para aplicar una etiqueta nueva que no aplica protección, o quitar la etiqueta que ha aplicado la protección. 
+Si utiliza clasificación y protección, también puede usar [Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel) para aplicar una etiqueta nueva que no aplica protección, o bien quitar la etiqueta que aplica la protección. 
 
-Para más información sobre estos cmdlets, vea [Uso de PowerShell con el cliente de Azure Information Protection ](../rms-client/client-admin-guide-powershell.md) en la guía para administradores del cliente de Azure Information Protection.
+Para más información sobre estos cmdlets, consulte [Uso de PowerShell con el cliente de Azure Information Protection](../rms-client/client-admin-guide-powershell.md) de la guía del administrador del cliente de Azure Information Protection.
 
 > [!NOTE]
-> El módulo AzureInformationProtection reemplaza al módulo de PowerShell RMS Protection que se instala con la herramienta de protección de RMS. Ambos módulos son diferentes entre sí y complementan el [módulo principal de Windows PowerShell para Azure Rights Management](administer-powershell.md). El módulo AzureInformationProtection es compatible con Azure Information Protection, el servicio Azure Rights Management (Azure RMS) para Azure Information Protection y Active Directory Rights Management Services (AD RMS).
+> El módulo AzureInformationProtection reemplaza el módulo RMS Protection de PowerShell que se instala con la herramienta de protección de RMS. Estos dos módulos son diferentes del [módulo Windows PowerShell para Azure Rights Management](administer-powershell.md) y lo complementan. El módulo AzureInformationProtection es compatible con Azure Information Protection, Azure Rights Management Service (Azure RMS) de Azure Information Protection y Active Directory Rights Management Services (AD RMS).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

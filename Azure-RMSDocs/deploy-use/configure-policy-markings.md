@@ -4,17 +4,17 @@ description: "Cuando se asigna una etiqueta a un documento o a un mensaje de cor
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/17/2017
+ms.date: 02/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: 99aba6560f9dcdbd564f317e8d9e0ce89845f4a9
-ms.sourcegitcommit: f78f5209f0e19c6edfd1815d76e0e9750b4ce71d
+ms.openlocfilehash: 01208dda12b5989e546c1042b48c17e166d48687
+ms.sourcegitcommit: d32d1f5afa5ee9501615a6ecc4af8a4cd4901eae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Configuración de una etiqueta para marcas visuales de Azure Information Protection
 
@@ -87,6 +87,38 @@ Puede usar las siguientes variables en la cadena de texto del encabezado, del pi
 - `${Event.DateTime}` para la fecha y hora en que se haya configurado la etiqueta seleccionada. Por ejemplo: 16/08/2016 13:30
 
 Ejemplo: Si especifica la cadena `Document: ${item.name}  Classification: ${item.label}` en el pie de página de la etiqueta **General**, el texto de pie de página aplicado a un documento denominado proyecto.docx será **Documento: proyecto.docx Clasificación: general**.
+
+## <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>Establecimiento de distintivos visuales diferentes para Word, Excel, PowerPoint y Outlook
+
+Esta opción está actualmente en fase de versión preliminar y requiere la versión preliminar del cliente de Azure Information Protection.
+
+De forma predeterminada, las marcas visuales que se especifican se aplican en Word, Excel, PowerPoint y Outlook. Sin embargo, es posible especificar marcas visuales por tipo de aplicación de Office si se usa una instrucción variable "If.App" en la cadena de texto y se identifica el tipo de aplicación mediante el uso de los valores **Word**, **Excel**, **PowerPoint** o **Outlook**. Estos valores también se pueden abreviar, algo que es necesario si se desea especificar más de uno en la misma instrucción If.App.
+
+Use la siguiente sintaxis:
+
+    ${If.App.<application type>}<your visual markings text> ${If.End}
+
+En esta instrucción, esta sintaxis distingue mayúsculas de minúsculas.
+
+Ejemplos:
+
+- **Establecer el texto del encabezado solo para documentos de Word:**
+    
+    `${If.App.Word}This Word document is sensitive ${If.End}`
+    
+    Solo en los encabezados de los documentos de Word, la etiqueta aplica el texto del encabezado "This Word document is sensitive". En las restantes aplicaciones de Office no se aplica texto de encabezado.
+
+- **Establecer el texto del pie de página para Word, Excel y Outlook y un texto de pie de página diferente para PowerPoint:**
+    
+    `${If.App.WXO}This content is confidential. ${If.End}${If.App.PowerPoint}This presentation is confidential. ${If.End}`
+    
+    En Word, Excel y Outlook, la etiqueta aplica el texto de pie de página "This content is confidential." En PowerPoint, la etiqueta aplica el texto de pie de página "This presentation is confidential."
+
+- **Establecer el texto específico de marca de agua para Word y PowerPoint y, después, texto de marca de agua texto para Word, Excel y PowerPoint:**
+    
+    `${If.App.WP}This content is ${If.End}Confidential`
+    
+    En Word y PowerPoint, la etiqueta aplica el texto de marca de agua "This content is Confidential". En Excel, la etiqueta aplica el texto de marca de agua "Confidential". En Outlook, la etiqueta no aplica texto de marca de agua porque no se admiten distintivos visuales en Outlook.
 
 ### <a name="setting-the-font-name"></a>Establecimiento del nombre de fuente
 
