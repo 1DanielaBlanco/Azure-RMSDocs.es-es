@@ -4,7 +4,7 @@ description: "Instrucciones e información para que los administradores administ
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/03/2018
+ms.date: 02/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: aee9a9f665d3aa0a0e8a8c568f3abbd044469fc7
-ms.sourcegitcommit: 6c7874f54b8b983d3ac547bb23a51e02c68ee67b
+ms.openlocfilehash: 27799ff64e8c224c64b0ffc858b79818650d74af
+ms.sourcegitcommit: d32d1f5afa5ee9501615a6ecc4af8a4cd4901eae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>Guía del administrador: Uso de PowerShell con el cliente de Azure Information Protection
 
@@ -461,7 +461,11 @@ De forma predeterminada, al ejecutar los cmdlets para etiquetado, los comandos s
 > [!NOTE]
 > Si usa [directivas con ámbito](../deploy-use/configure-policy-scope.md), recuerde que es posible que deba agregar esta cuenta a dichas directivas.
 
-La primera vez que ejecute este cmdlet, deberá iniciar sesión en Azure Information Protection. Especifique el nombre de la cuenta de usuario y la contraseña que ha creado para el usuario desatendido. Después de eso, esta cuenta podrá ejecutar los cmdlets de etiquetado de manera no interactiva hasta que expire el token de autenticación. Cuando expira el token, vuelva a ejecutar el cmdlet para adquirir un nuevo token:
+La primera vez que ejecute este cmdlet, deberá iniciar sesión en Azure Information Protection. Especifique el nombre de la cuenta de usuario y la contraseña que ha creado para el usuario desatendido. Después de eso, esta cuenta podrá ejecutar los cmdlets de etiquetado de manera no interactiva hasta que expire el token de autenticación. 
+
+Para que la cuenta de usuario pueda iniciar sesión de forma interactiva la primera vez, debe tener el derecho de **inicio de sesión local**. Este derecho es estándar para las cuentas de usuario, pero las directivas de la empresa pueden impedir esta configuración para las cuentas de servicio. En ese caso, puede ejecutar Set-AIPAuthentication con el parámetro *Token*, con el fin de que la autenticación se complete sin el aviso de inicio de sesión. Puede ejecutar este comando como si fuera una tarea programada y otorgar a la cuenta el derecho menor de **inicio de sesión con un trabajo de Batch**. Para más información, consulte las secciones siguientes. 
+
+Cuando el token expire, vuelva a ejecutar el cmdlet para adquirir uno nuevo.
 
 Si ejecuta este cmdlet sin parámetros, la cuenta adquiere un token de acceso que es válido durante 90 días o hasta que expire la contraseña.  
 
@@ -517,7 +521,85 @@ Después de ejecutar este cmdlet, puede ejecutar los cmdlets de etiquetado en el
 
 12. En la hoja **Permisos necesarios**, seleccione **Conceder permisos**, haga clic en **Sí** para confirmar y cierre la hoja.
     
-Ha completado la configuración de las dos aplicaciones y tiene los valores que necesita para ejecutar [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication) con parámetros.
+Ya ha completado la configuración de las dos aplicaciones y tiene los valores que necesita para ejecutar [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication) con parámetros *WebAppId*, *WebAppKey* y *NativeAppId*. Por ejemplo:
+
+`Set-AIPAuthentication -WebAppId "57c3c1c3-abf9-404e-8b2b-4652836c8c66" -WebAppKey "sc9qxh4lmv31GbIBCy36TxEEuM1VmKex5sAdBzABH+M=" -NativeAppId "8ef1c873-9869-4bb1-9c11-8313f9d7f76f"`
+
+Ejecute este comando en el contexto de la cuenta que etiquetará y protegerá los documentos de una manera no interactiva. Por ejemplo, una cuenta de usuario para los scripts de PowerShell o la cuenta de servicio para ejecutar el analizador de Azure Information Protection.  
+
+La primera vez que se ejecuta este comando se le pide que inicie sesión, que crea y almacena de forma segura el token de acceso de su cuenta en % localappdata%\Microsoft\MSIP. Después de este inicio de sesión inicial, puede etiquetar y proteger los archivos de manera no interactiva en el equipo. Sin embargo, si usa una cuenta de servicio para etiquetar y proteger los archivos, y la cuenta no puede iniciar sesión de forma interactiva, siga las instrucciones de la siguiente sección para que la cuenta se pueda autenticar mediante un token.
+
+### <a name="specify-and-use-the-token-parameter-for-set-aipauthentication"></a>Especificación y uso del parámetro Token en Set-AIPAuthentication
+
+> [!NOTE]
+> Esta opción está en fase de versión preliminar y necesita la versión preliminar actual del cliente de Azure Information Protection.
+
+Use los siguientes pasos adicionales e instrucciones para evitar el inicio de sesión interactivo inicio de sesión de una cuenta que etiqueta y protege los archivos. Normalmente, estos pasos adicionales solo son necesarios si a esta cuenta no se le puede otorgar el derecho **inicio de sesión local** derecha, pero se le otorga el derecho **iniciar sesión como trabajo de Batch**. Por ejemplo, esto puede suceder en la cuenta de servicio que ejecuta el detector de Azure Information Protection.
+
+1. Cree un script de PowerShell en el equipo local.
+
+2. Ejecute Set-AIPAuthentication para obtener un token de acceso y cópielo en el Portapapeles.
+
+2. Modifique el script de PowerShell para incluir el token.
+
+3. Cree una tarea que ejecute el script de PowerShell en el contexto de la cuenta de servicio que etiquetará y protegerá los archivos.
+
+4. Confirme que el token se guarda para la cuenta de servicio y elimine el script de PowerShell.
+
+
+#### <a name="step-1-create-a-powershell-script-on-your-local-computer"></a>Paso 1: Cree un script de PowerShell en el equipo local
+
+1. En el equipo, cree un nuevo script de PowerShell llamado Aipauthentication.ps1.
+
+2. Copie y pegue el siguiente comando en este script:
+    
+         Set-AIPAuthentication -WebAppId <ID of the "Web app / API" application>  -WebAppKey <key value generated in the "Web app / API" application> -NativeAppId <ID of the "Native" application > -Token <token value>
+
+3. Con las instrucciones de la sección anterior, modifique este comando mediante la especificación de sus propios valores para los parámetros **WebAppId**, **WebAppkey** y **NativeAppId**. En este momento, no tiene el valor del parámetro **Token**, así que lo especificará más adelante. 
+    
+    Por ejemplo: `Set-AIPAuthentication -WebAppId "57c3c1c3-abf9-404e-8b2b-4652836c8c66" -WebAppKey "sc9qxh4lmv31GbIBCy36TxEEuM1VmKex5sAdBzABH+M=" -NativeAppId "8ef1c873-9869-4bb1-9c11-8313f9d7f76f -Token <token value>`
+    
+#### <a name="step-2-run-set-aipauthentication-to-get-an-access-token-and-copy-it-to-the-clipboard"></a>Paso 2: Ejecute Set-AIPAuthentication para obtener un token de acceso y cópielo en el Portapapeles
+
+1. Abra una sesión de Windows PowerShell.
+
+2. Con los mismos valores que ha especificado en el script, ejecute el siguiente comando:
+    
+        (Set-AIPAuthentication -WebAppId <ID of the "Web app / API" application>  -WebAppKey <key value generated in the "Web app / API" application> -NativeAppId <ID of the "Native" application >).token | clip
+    
+    Por ejemplo: `(Set-AIPAuthentication -WebAppId "57c3c1c3-abf9-404e-8b2b-4652836c8c66" -WebAppKey "sc9qxh4lmv31GbIBCy36TxEEuM1VmKex5sAdBzABH+M=" -NativeAppId "8ef1c873-9869-4bb1-9c11-8313f9d7f76f").token | clip`
+
+#### <a name="step-3-modify-the-powershell-script-to-supply-the-token"></a>Paso 3: Modifique el script de PowerShell para suministrar el token
+
+1. En el script de PowerShell, especifique el valor del token (para lo que debe pegar la cadena desde el Portapapeles) y guarde el archivo.
+
+2. Firme el script. Si no firma el script (más seguro), debe configurar Windows PowerShell en el equipo que ejecutará los comandos de etiquetado. Por ejemplo, ejecute una sesión de Windows PowerShell con la opción **Ejecutar como administrador** y escriba: `Set-ExecutionPolicy RemoteSigned`. Sin embargo, esta configuración permite la ejecución de todos los scripts sin firmar cuando se almacenan en este equipo (menos seguro).
+    
+    Para más información acerca de la firma de scripts de Windows PowerShell, consulte [about_Signing](/powershell/module/microsoft.powershell.core/about/about_signing) en la biblioteca de documentación de PowerShell.
+
+3. Copie este script de PowerShell en el equipo que etiquetará y protegerá los archivos, y elimine el de su equipo. Por ejemplo, copie el script de PowerShell en C:\Scripts\Aipauthentication.ps1 en un equipo con Windows Server.
+
+#### <a name="step-4-create-a-task-that-runs-the-powershell-script"></a>Paso 4: Cree una tarea que ejecute el script de PowerShell
+
+1. Asegúrese de que la cuenta de servicio que etiquetará y protegerá los archivos tiene el derecho de **inicio de sesión como trabajo de Batch**.
+
+2. En el equipo que etiquetará y protegerá los archivos, abra el Programador de tareas y cree una nueva tarea. Configure esta tarea para que se ejecute como la cuenta de servicio que etiquetará y protegerá los archivos y, después, configure los siguientes valores para las **acciones**:
+    
+    - **Acción**: `Start a program`
+    - **Programa o script**: `Powershell.exe`
+    - **Agregar argumentos (opcional)**: `-NoProfile -WindowStyle Hidden -command "&{C:\Scripts\Aipauthentication.ps1}"` 
+    
+    Para la línea de argumento, especifique sus propios nombre de archivo y ruta de acceso, en caso de que sean diferentes de los del ejemplo.
+
+3. Ejecute manualmente esta tarea.
+
+#### <a name="step-4-confirm-that-the-token-is-saved-and-delete-the-powershell-script"></a>Paso 4: Confirme que el token se guarda y elimine el script de PowerShell
+
+1. Confirme que el token se ha almacenado en la carpeta %localappdata%\Microsoft\MSIP del perfil de la cuenta de servicio. Este valor lo protege la cuenta de servicio.
+
+2. Elimine el script de PowerShell que contiene el valor del token (por ejemplo, Aipauthentication.ps1).
+    
+    Opcionalmente, elimine la tarea. Si el token expira, debe repetir este proceso, en cuyo caso puede ser más cómodo dejar la tarea configurada para que esté lista para volver a ejecutarse cuando copie el nuevo script PowerShell con el nuevo valor del token.
 
 ## <a name="next-steps"></a>Pasos siguientes
 Para obtener ayuda sobre los cmdlets cuando esté en una sesión de PowerShell, escriba `Get-Help <cmdlet name> cmdlet` y utilice el parámetro -online para leer la información más actualizada. Por ejemplo: 
