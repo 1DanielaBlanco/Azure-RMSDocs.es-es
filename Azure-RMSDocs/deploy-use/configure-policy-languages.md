@@ -4,17 +4,17 @@ description: Para agregar compatibilidad con distintos idiomas a las etiquetas q
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/26/2017
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a0e89fd0-795b-4e7a-aea9-ff6fc9163bde
-ms.openlocfilehash: 7a77b517531d5b4586871abbcb22d2158673d56c
-ms.sourcegitcommit: 222318da363a45c3a533f7b77b02f4e31a258979
+ms.openlocfilehash: f57b3802386aced71967a5ab619cdabf2fd67a37
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="how-to-configure-labels-and-templates-for-different-languages-in-azure-information-protection"></a>Cómo configurar etiquetas y plantillas para distintos idiomas en Azure Information Protection
 
@@ -40,7 +40,7 @@ Seleccione los idiomas que coinciden con la configuración de idioma de los usua
 
 ## <a name="to-configure-labels-and-templates-for-different-languages"></a>Para configurar etiquetas y plantillas para distintos idiomas
 
-1. Si aún no lo ha hecho, inicie sesión en [Azure Portal](https://portal.azure.com) como administrador de seguridad o administrador global y, después, navegue hasta la hoja **Azure Information Protection**. 
+1. Si aún no lo ha hecho, abra una nueva ventana del explorador e [inicie sesión en Azure Portal](configure-policy.md#signing-in-to-the-azure-portal). Después, vaya a la hoja **Azure Information Protection**.
     
     Por ejemplo, en el menú del centro, haga clic en **Más servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
@@ -73,7 +73,7 @@ Seleccione los idiomas que coinciden con la configuración de idioma de los usua
 
 ## <a name="how-the-azure-information-protection-client-determines-the-language-to-display"></a>Cómo el cliente de Azure Information Protection determina el idioma que se mostrará
 
-Cuando los usuarios descargan una directiva de Azure Information Protection que admite distintos idiomas, el idioma que ven los usuarios en los nombres e informaciones sobre herramientas de sus etiquetas lo determina la siguiente lógica:
+Cuando los usuarios descarga una directiva de Azure Information Protection que admite distintos idiomas, el idioma que ven los usuarios en los nombres e informaciones sobre herramientas de sus etiquetas lo determina la siguiente lógica:
 
 **En el caso de las etiquetas e informaciones sobre herramientas que ven los usuarios en la barra de Azure Information Protection en las aplicaciones de Office:**
 
@@ -89,7 +89,7 @@ Cuando los usuarios descargan una directiva de Azure Information Protection que 
 
 ## <a name="when-localized-label-names-are-not-used"></a>Cuándo no se usan los nombres de etiquetas localizados
 
-Los nombres de etiquetas (y subetiquetas) localizados no se usan en los escenarios siguientes. Para mantener la coherencia entre su inquilino, el idioma predeterminado siempre se usa para lo siguiente:
+Los nombres de etiquetas (y subetiquetas) localizados no se usan en los siguientes escenarios. Para mantener la coherencia entre su inquilino, el idioma predeterminado siempre se usa para lo siguiente:
 
 - Registros de uso de cliente
 

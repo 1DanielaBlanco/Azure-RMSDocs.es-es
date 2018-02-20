@@ -1,10 +1,10 @@
 ---
 title: "Protección de Azure RMS con FCI de Windows Server - AIP"
-description: "Instrucciones para utilizar el cliente Rights Management (RMS) con la herramienta de protección de RMS para configurar el Administrador de recursos del servidor de archivos y la infraestructura de clasificación de archivos (FCI)."
+description: "Instrucciones para usar el cliente de Rights Management (RMS) con el cliente de Azure Information Protection para configurar el Administrador de recursos del servidor de archivos y la infraestructura de clasificación de archivos (FCI)."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/22/2017
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: dfa751ef7cd4c8405fa02299576cb57083d63495
-ms.sourcegitcommit: 228953e96609b3c5ec8deddaab91be59650d9006
+ms.openlocfilehash: 49133bec323b00541c92ac3739fafab266cc92cf
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="rms-protection-with-windows-server-file-classification-infrastructure-fci"></a>Protección de RMS con la infraestructura de clasificación de archivos (FCI) de Windows Server
 

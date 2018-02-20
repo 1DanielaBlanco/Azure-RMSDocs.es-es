@@ -4,7 +4,7 @@ description: "Información para los usuarios que ejecutan el cliente de Azure In
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/02/2018
+ms.date: 02/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 16042717-0d7a-41f5-87e3-12826fda35df
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: ea865f91751ed171779c587d1af4cb0f4226a59e
-ms.sourcegitcommit: bc47834ae7180491ed1d9bc9f69eab398bcdc0a8
+ms.openlocfilehash: 201415526b57d691d999ddba6af2451df4d36de4
+ms.sourcegitcommit: 2733b1df2ebdda02b60d9471db29e545552f99ff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="user-guide-protection-only-mode-for-the-azure-information-protection-client"></a>Guía del usuario: Modo de solo protección para el cliente de Azure Information Protection
 
@@ -33,6 +33,10 @@ El modo de solo protección se ejecuta en los siguientes escenarios:
 - Su organización tiene una suscripción para Azure Information Protection para solo un subconjunto de usuarios:
     
     - Para esta combinación de suscripciones, el administrador es el responsable de asegurarse de que solo el subconjunto de usuarios puede utilizar las características de clasificación y etiquetado. El resto de usuarios debe ejecutar el cliente de Azure Information Protection en modo de solo protección. 
+
+- Su organización tiene una suscripción de Azure Information Protection pero no tiene ninguna etiqueta configurada para usted.
+    
+    - Esto puede ocurrir cuando todas las etiquetas en la directiva global están deshabilitadas y su cuenta no está incluida en una directiva con ámbito. Esto podría deberse a que el departamento de TI ha comenzado a implementar Azure Information Protection, pero aún no se le han suministrado etiquetas para clasificar los documentos y correos electrónicos. Entretanto, puede usar el cliente de Azure Information Protection para proteger archivos y ver los archivos protegidos.
 
 - La organización tiene una suscripción para Azure Information Protection, pero no puede descargar la directiva de Azure Information Protection. 
     

@@ -4,7 +4,7 @@ description: "Instrucciones para instalar Windows PowerShell para el servicio Az
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/17/2018
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 0d665ed6-b1de-4d63-854a-bc57c1c49844
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0deb1b47036a4439f393bf7351c5d149a8e85559
-ms.sourcegitcommit: 152b4855e23f443c04ac27fedfdc1dcc9fda8949
+ms.openlocfilehash: 5946ab7315b646abf119cb32cd66ac62535253c9
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="installing-windows-powershell-for-azure-rights-management"></a>Instalación de Windows PowerShell para Azure Rights Management
 
@@ -32,7 +32,7 @@ Esta tabla enumera los requisitos previos para instalar Windows PowerShell para 
 |Requisito|Más información|
 |---------------|--------------------|
 |Una versión de Windows que admita el módulo de administración [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]|Revise la lista de sistemas operativos compatibles en la sección **Requisitos del sistema** de la [página de descargas de la herramienta de administración de Azure Rights Management](http://go.microsoft.com/fwlink/?LinkId=257721).|
-|Versión mínima de Windows PowerShell: 2.0<br /><br /> |De forma predeterminada, la mayoría de sistemas operativos de Windows se instalan con una versión 2.0 de Windows PowerShell, como mínimo. Si necesita instalar esta versión mínima admitida, consulte [Instalación de Windows PowerShell 2.0](https://msdn.microsoft.com/library/ff637750.aspx).<br /><br />Sugerencia: Para confirmar la versión de Windows PowerShell que ejecuta, escriba `$PSVersionTable` en una sesión de PowerShell. <br /><br /> Si tiene esta versión mínima, necesita cargar manualmente el módulo en la sesión de PowerShell ejecutando `Import-Module AADRM` antes de poder usar cualquier cmdlet del módulo de administración de Rights Management. Si tiene Windows PowerShell v3 y versiones posteriores, el módulo se carga automáticamente y no es necesario este comando adicional.|
+|Versión mínima de Windows PowerShell: 3.0|Para confirmar la versión de Windows PowerShell que ejecuta, escriba `$PSVersionTable` en una sesión de PowerShell. <br /><br /> Si necesita instalar una versión posterior de Windows PowerShell, vea [Actualización de Windows PowerShell existente](/powershell/scripting/setup/installing-windows-powershell#upgrading-existing-windows-powershell).|
 |Versión mínima de Microsoft .NET Framework: 4.5<br /><br />Nota: Esta versión de Microsoft .NET Framework está incluida con los últimos sistemas operativos, por lo que solo tendrá que instalarla manualmente en el caso de que el sistema operativo del cliente sea anterior a Windows 8.0 o de que el sistema operativo del servidor sea anterior a Windows Server 2012.|Si la versión mínima de Microsoft .NET Framework todavía no está instalada, puede descargar [Microsoft .NET Framework 4.5](http://www.microsoft.com/download/details.aspx?id=30653).<br /><br />Esta versión mínima de Microsoft .NET Framework es necesaria para algunas de las clases que usa el módulo de administración de [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)].|
 
 > [!NOTE]

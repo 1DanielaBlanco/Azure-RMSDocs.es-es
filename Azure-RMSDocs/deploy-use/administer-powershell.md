@@ -4,7 +4,7 @@ description: "Obtenga información sobre cómo usar el módulo de PowerShell del
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,19 +12,17 @@ ms.technology: techgroup-identity
 ms.assetid: a890e04a-4b70-41b5-8d5f-3c210a669faa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 94ec0107930e64d42ed55bce407c4b8c92f1df32
-ms.sourcegitcommit: 0fa5dd38c9d66ee2ecb47dfdc9f2add12731485e
+ms.openlocfilehash: 597590dbf33dd43329d27ccadf081e5e8d9fd0b6
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="administering-the-azure-rights-management-service-by-using-windows-powershell"></a>Administración del servicio Azure Rights Management mediante Windows PowerShell
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
-¿Necesita usar PowerShell para administrar el servicio Azure Rights Management para Azure Information Protection? No es necesario si es un administrador global o un [administrador de seguridad](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) y la única configuración necesaria para este servicio es activarlo (o desactivarlo) y configurar las plantillas de Rights Management.
-
-Aun así, necesita usar PowerShell para configuraciones más avanzadas y también si no es un administrador global o un administrador de seguridad, pero un administrador global le ha concedido permisos para administrar el servicio. También es preferible usar PowerShell para el scripting y un control más eficaz de la línea de comandos.
+¿Necesita usar PowerShell para administrar el servicio Azure Rights Management para Azure Information Protection? Probablemente pueda prescindir de ello si toda su configuración se puede realizar en Azure Portal o en el Portal de Office 365. A pesar de ello, PowerShell es necesario para algunas configuraciones avanzadas y también es preferible usar PowerShell para el scripting y un control más eficaz de la línea de comandos.
 
 En la tabla de la siguiente sección se incluyen algunos de los escenarios de configuración avanzada que usan PowerShell. Esta información también se incluye en la tabla aunque la configuración se pueda realizar también sin usar PowerShell.
 
