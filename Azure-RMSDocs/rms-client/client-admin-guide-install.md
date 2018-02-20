@@ -4,7 +4,7 @@ description: "Instrucciones e información para administradores para implementar
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/06/2018
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: d91c52ac5ae1f70ed664e54a549c906d934fdb16
-ms.sourcegitcommit: d32d1f5afa5ee9501615a6ecc4af8a4cd4901eae
+ms.openlocfilehash: 92e4f6c05378b36165db0628f14941b0ccd26cb7
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>Guía del administrador: Instalación del cliente de Azure Information Protection para los usuarios
 
@@ -211,7 +211,11 @@ Si usa Intune como el método de implementación de software, use estas instrucc
 
 ## <a name="how-to-install-the-azure-information-protection-scanner"></a>Cómo instalar el analizador de Azure Information Protection
 
-La versión preliminar actual del cliente de Azure Information Protection incluye el analizador de Azure Information Protection. El módulo de PowerShell incluido con el cliente tiene cmdlets para instalar y configurar el analizador.
+Actualmente, la versión de disponibilidad general (GA) del analizador de Azure Information Protection es una descarga independiente denominada **AzInfoProtectionScanner.exe** en el [Centro de descarga de Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=53018). Las versiones posteriores del analizador se incluirán en el cliente de Azure Information Protection.
+
+La versión preliminar actual del cliente de Azure Information Protection incluye también el analizador de Azure Information Protection. 
+
+El módulo de PowerShell incluido con el analizador y el cliente preliminar tiene cmdlets para instalar y configurar el analizador.
 
 Para instalar al cliente para el analizador, siga las mismas instrucciones que en las secciones anteriores. Tenga en cuenta que si no necesita todos los componentes del cliente, como el complemento y el visor de Office, puede instalar solo el módulo de PowerShell. Por ejemplo, puede ejecutar el archivo ejecutable con `PowerShellOnly=true /quiet`.
 

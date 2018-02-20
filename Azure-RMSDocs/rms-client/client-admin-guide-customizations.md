@@ -4,7 +4,7 @@ description: "Información sobre cómo personalizar el cliente de Azure Informat
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/02/2018
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 3ee5bd789b62261867d6de4f56efaa3890dc1a57
-ms.sourcegitcommit: bc47834ae7180491ed1d9bc9f69eab398bcdc0a8
+ms.openlocfilehash: 662ed627fc6138e1ff16efb731b209964784432f
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Guía del administrador: Configuraciones personalizadas del cliente de Azure Information Protection
 
@@ -28,7 +28,7 @@ Algunas de estas opciones requieren la modificación del Registro y otras usan l
 
 ### <a name="how-to-configure-advanced-client-configuration-settings-in-the-portal"></a>Cómo establecer opciones de configuración de cliente avanzadas en el portal
 
-1. Si aún no lo ha hecho, abra una nueva ventana del explorador, inicie sesión en [Azure Portal](https://portal.azure.com) como administrador de seguridad o administrador global y, después, navegue hasta la hoja **Azure Information Protection**.
+1. Si aún no lo ha hecho, en una nueva ventana del explorador, [inicie sesión en Azure Portal](../deploy-use/configure-policy.md#signing-in-to-the-azure-portal) y, después, vaya hasta la hoja **Azure Information Protection**.
 
 2. En la hoja inicial de Azure Information Protection, seleccione **Directivas con ámbito**.
 
@@ -192,7 +192,7 @@ Esta opción utiliza una [configuración de cliente avanzada](#how-to-configure-
 
 Al configurar esta opción, Outlook no aplica la etiqueta predeterminada configurada en la directiva de Azure Information Protection para la opción **Seleccione la etiqueta predeterminada**. Por el contrario, Outlook puede aplicar otra etiqueta predeterminada o ninguna.
 
-Para aplicar otra etiqueta, debe especificar el identificador de etiqueta. El valor de identificador de etiqueta se muestra en la hoja **Etiqueta**, al ver o configurar la directiva de Azure Information Protection en Azure Portal. En el caso de los archivos que tienen etiquetas aplicadas, también puede ejecutar el cmdlet de PowerShell [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) para reconocer el identificador de etiqueta (MainLabelId o SubLabelId). Si una etiqueta tiene etiquetas secundarias, especifique únicamente el identificador de una etiqueta secundaria y no el de la etiqueta principal.
+Para aplicar otra etiqueta, debe especificar el identificador de etiqueta. El valor de identificador de etiqueta se muestra en la hoja **Etiqueta**, al ver o configurar la directiva de Azure Information Protection en Azure Portal. En el caso de los archivos que tienen etiquetas aplicadas, también puede ejecutar el cmdlet de PowerShell [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) para reconocer el identificador de etiqueta (MainLabelId o SubLabelId). Si una etiqueta tiene subetiquetas, especifique únicamente el identificador de una subetiqueta, no el de la etiqueta principal.
 
 Para que Outlook no aplique la etiqueta predeterminada, especifique **Ninguna**.
 
@@ -230,7 +230,7 @@ Por ejemplo, tiene una columna de SharePoint denominada **Clasificación** con l
 
 Para etiquetar un documento de Office con uno de estos valores de clasificación, establezca **SyncPropertyName** en **Clasificación** y **SyncPropertyState** en **OneWay**. 
 
-Ahora, cuando un usuario abra y guarde uno de estos documentos de Office, se denominará **Público**, **General** o **Confidencial** si tiene etiquetas con estos nombres en la directiva de Azure Information Protection. Si no tienen etiquetas con estos nombres, el documento permanecerá sin etiquetar.
+Ahora, cuando un usuario abra y guarde uno de estos documentos de Office, se denomina **Público**, **General** o **Confidencial** si tiene etiquetas con estos nombres en la directiva de Azure Information Protection. Si no tienen etiquetas con estos nombres, el documento permanecerá sin etiquetar.
 
 ## <a name="integration-with-exchange-message-classification-for-a-mobile-device-labeling-solution"></a>Integración con la clasificación de mensajes de Exchange para una solución de etiquetado de dispositivo móvil
 

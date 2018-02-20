@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-ms.openlocfilehash: 7bc1e4021eeb2620857577f3970d1da9db21b6e8
-ms.sourcegitcommit: 51b93125988e6e63077b1df721985b89059f425e
+ms.openlocfilehash: b9885f020f78bd20bec39c8c1ede2018d6254a7b
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>Preguntas más frecuentes sobre la clasificación y el etiquetado en Azure Information Protection
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 12/22/2017
 
 Pruebe nuestro tutorial de inicio rápido para ver esto en funcionamiento en unos minutos: [Tutorial de inicio rápido de Azure Information Protection](infoprotect-quick-start-tutorial.md).
 
-Busque anuncios en el [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection) (Blog de seguridad y movilidad empresarial) y en nuestro [sitio de Yammer](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all) para saber cuándo estarán disponibles las funcionalidades y características de clasificación adicionales. Existen algunas limitaciones con la versión actual, que incluyen las siguientes:
+Busque anuncios en el [Enterprise Mobility and Security Blog](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-information-protection) (Blog de seguridad y movilidad empresarial) y en nuestro [sitio de Yammer](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all) para saber cuándo estarán disponibles las funcionalidades y características de clasificación adicionales. Existen algunas limitaciones con la versión actual, que incluyen las siguientes:
 
 - No existe un registro centralizado para la clasificación y el etiquetado.
 
@@ -40,9 +40,9 @@ Solicite características nuevas y vote las solicitudes existentes en el [sitio 
 
 ## <a name="do-i-need-to-be-a-global-admin-to-configure-classification-and-labels"></a>¿Es necesario ser un administrador global para configurar la clasificación y las etiquetas?
 
-Para configurar la directiva de Azure Information Protection, ya no es necesario iniciar sesión en Azure Portal como administrador global de Azure Active Directory. Ahora también se puede usar una cuenta que tenga un rol de administrador de seguridad.
+Gracias al nuevo rol de administrador de Information Protection recientemente incorporado, esta pregunta ya está solucionada en la página principal de preguntas frecuentes: [¿Hay ser un administrador global para configurar Azure Information Protection o puedo delegar a otros administradores?](faqs.md#do-you-need-to-be-a-global-admin-to-configure-azure-information-protection-or-can-i-delegate-to-other-administrators)
 
-Si selecciona la opción para instalar la directiva de demostración cuando instale el [cliente de Azure Information Protection](https://www.microsoft.com/en-us/download/details.aspx?id=53018), no necesita iniciar sesión en el portal para ver y probar la funcionalidad de etiquetado. La directiva de demostración instala localmente una directiva predeterminada para Azure Information Protection, de forma que pueda probar el etiquetado de documentos y correos electrónicos, pero no podrá cambiar ni agregar etiquetas nuevas sin iniciar sesión en Azure Portal. 
+Si selecciona la opción para instalar la directiva de demostración cuando instale el [cliente de Azure Information Protection](https://www.microsoft.com/en-us/download/details.aspx?id=53018), no necesita iniciar sesión en el portal para ver y probar la funcionalidad de etiquetado. La directiva de demostración instala localmente una directiva predeterminada de Azure Information Protection, de forma que podrá probar el etiquetado de documentos y correos electrónicos, pero no cambiar ni agregar etiquetas nuevas sin iniciar sesión en Azure Portal. 
 
 ## <a name="which-options-in-the-azure-portal-are-p2"></a>¿Qué opciones en Azure Portal son P2?
 
@@ -50,11 +50,11 @@ Las opciones de Azure Portal que requieren una suscripción de **Azure Informati
 
 ## <a name="can-a-file-have-more-than-one-classification"></a>¿Puede un archivo tener más de una clasificación?
 
-Los usuarios pueden seleccionar una sola etiqueta a la vez para cada documento o correo electrónico, lo que a menudo resulta en una sola clasificación. Sin embargo, si los usuarios seleccionan una subetiqueta, en realidad se aplican dos etiquetas a la vez: una principal y una secundaria. Con las subetiquetas, un archivo puede tener dos clasificaciones que denotan una relación entre elementos principal y secundario para así obtener un nivel adicional de control.
+Los usuarios pueden seleccionar una sola etiqueta a la vez para cada documento o correo electrónico, lo que a menudo resulta en una sola clasificación. Sin embargo, si los usuarios seleccionan una subetiqueta, en realidad se aplican dos etiquetas a la vez: una principal y una secundaria. Con las subetiquetas, un archivo puede tener dos clasificaciones que denotan una relación entre elementos principal y secundario para, así, obtener un nivel extra de control.
 
-Por ejemplo, la etiqueta **Confidencial** podría contener subetiquetas como **Legal** y **Financiero**. Se pueden aplicar diferentes marcas visuales de clasificación y diferentes plantillas de Rights Management a estas subetiquetas. Un usuario no puede seleccionar la etiqueta **Confidencial** por sí misma, solo una de sus subetiquetas, como **Legal**. Como resultado, la etiqueta que ven es **Confidencial \ Legal**. Los metadatos de ese archivo incluyen una propiedad de texto personalizado para **Confidencial**, una propiedad de texto personalizado para **Legal** y otra que contiene los dos valores (**Confidential Legal**). 
+Por ejemplo, la etiqueta **Confidencial** podría contener subetiquetas como **Legal** y **Financiero**. Se pueden aplicar diferentes marcas visuales de clasificación y diferentes plantillas de Rights Management a estas subetiquetas. Un usuario no puede seleccionar la etiqueta **Confidencial** por sí misma, sino solo una de sus subetiquetas, como **Legal**. Como resultado, la etiqueta que ven es **Confidencial \ Legal**. Los metadatos de ese archivo incluyen una propiedad de texto personalizado para **Confidencial**, una propiedad de texto personalizado para **Legal** y otra que contiene los dos valores (**Confidential Legal**). 
 
-Cuando use subetiquetas, no configure marcas visuales, protección o condiciones en la etiqueta principal. Si utiliza subniveles, configure estos valores únicamente en la subetiqueta. Si configura estas opciones en la etiqueta principal y en su subetiqueta, la configuración de la subetiqueta tiene prioridad.
+Cuando use subetiquetas, no configure distintivos visuales, protección o condiciones en la etiqueta principal. Si usa subniveles, configure estos valores únicamente en la subetiqueta. Si configura estas opciones en la etiqueta principal y en su subetiqueta, la configuración de la subetiqueta tendrá prioridad.
 
 ## <a name="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling"></a>Cuando se etiqueta un correo electrónico, ¿los datos adjuntos reciben automáticamente el mismo etiquetado?
 
@@ -68,7 +68,7 @@ Como Azure Information Protection usa metadatos persistentes para la clasificaci
 
 - En los correos electrónicos, esta información se almacena en el encabezado X: **msip_labels: MSIP_Label_\<GUID>_Enabled=True;**  
 
-Para identificar el GUID de una etiqueta, busque el valor de identificador de etiqueta en la hoja Etiqueta, al ver o configurar la directiva de Azure Information Protection en Azure Portal. En el caso de los archivos que tienen etiquetas aplicadas, también puede ejecutar el cmdlet de PowerShell [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) para identificar el GUID (MainLabelId o SubLabelId). Si una etiqueta tiene etiquetas secundarias, especifique únicamente el GUID de una etiqueta secundaria y no el de la etiqueta principal.
+Para identificar el GUID de una etiqueta, busque el valor de identificador de etiqueta en la hoja Etiqueta, al ver o configurar la directiva de Azure Information Protection en Azure Portal. En el caso de los archivos que tienen etiquetas aplicadas, también puede ejecutar el cmdlet de PowerShell [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) para identificar el GUID (MainLabelId o SubLabelId). Si una etiqueta tiene subetiquetas, especifique únicamente el GUID de una subetiqueta, no el de la etiqueta principal.
 
 ## <a name="how-is-azure-information-protection-classification-for-emails-different-from-exchange-message-classification"></a>¿En qué se diferencia la clasificación de los correos electrónicos de Azure Information Protection de la clasificación de mensajes de Exchange?
 

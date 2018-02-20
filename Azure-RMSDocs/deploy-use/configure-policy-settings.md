@@ -4,17 +4,17 @@ description: Configure las directivas de Azure Information Protection que se apl
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/13/2017
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
-ms.openlocfilehash: 49eb10a999f541cb9979576faac55ca28ff35a0b
-ms.sourcegitcommit: e089661f23f199b122b0ca9ba4748792b349bc27
+ms.openlocfilehash: be050f7307a83dcb229cf7a71fcf7bb5d2ec1380
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="how-to-configure-the-policy-settings-for-azure-information-protection"></a>Configuración directivas para Azure Information Protection
 
@@ -28,7 +28,7 @@ Tenga en cuenta que es posible que la configuración de directiva tenga valores 
 
 Para establecer la configuración:
 
-1. Si aún no lo ha hecho, abra una nueva ventana del explorador e inicie sesión en [Azure Portal](https://portal.azure.com) como administrador de seguridad o administrador global. Después, vaya a la hoja **Azure Information Protection**. 
+1. Si aún no lo ha hecho, abra una nueva ventana del explorador e [inicie sesión en Azure Portal](configure-policy.md#signing-in-to-the-azure-portal). Después, vaya a la hoja **Azure Information Protection**.
     
     Por ejemplo, en el menú del centro, haga clic en **Más servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
@@ -46,7 +46,7 @@ Para establecer la configuración:
         
         ![Aviso de Azure Information Protection si se aplica el etiquetado](../media/info-protect-enforce-labelv2.png)
         
-    - **Para establecer una etiqueta de clasificación menor, eliminar una etiqueta o quitar la protección, los usuarios deben proporcionar una justificación al respecto**: cuando se **activa** esta opción y un usuario realiza una de estas acciones (por ejemplo, si cambia la etiqueta **Público** por **Personal**), se le pide al usuario que indique el motivo de esta acción. Por ejemplo, el usuario podría explicar que el documento ya no contiene información confidencial. La acción y el motivo de justificación se registran en el registro de eventos local de Windows: **Registros de aplicaciones y servicios** > **Azure Information Protection**.  
+    - **Para establecer una etiqueta de clasificación menor, eliminar una etiqueta o quitar la protección, los usuarios deben proporcionar una justificación al respecto**: cuando se **activa** esta opción y un usuario realiza una de estas acciones (por ejemplo, si cambia la etiqueta **Público** por **Personal**), se le pide al usuario que indique el motivo de esta acción. Por ejemplo, el usuario podría explicar que el documento ya no contiene información confidencial. La acción y el motivo de justificación se incluyen en el registro de eventos local de Windows: **Registros de aplicaciones y servicios** > **Azure Information Protection**.  
         
         ![Mensaje de Azure Information Protection si la nueva clasificación es más baja](../media/info-protect-lower-justification.png)
         

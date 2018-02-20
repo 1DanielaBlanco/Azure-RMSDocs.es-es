@@ -4,17 +4,17 @@ description: "Al configurar las condiciones de una etiqueta, puede asignar autom
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/23/2017
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: 1c37f1b05126b8e8d9a5e64f033c503f27a8a1fc
-ms.sourcegitcommit: a8140a7215c8704f34c247f602e1f12eb7b49aa2
+ms.openlocfilehash: 94d7f3a743597ef61472c5b03b5b931a0c1eecd8
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Configuración de las condiciones para la clasificación automática y recomendada en Azure Information Protection
 
@@ -74,12 +74,13 @@ Para la versión de disponibilidad general del cliente de Azure Information Prot
 
 2. Se aplica la etiqueta más sensible.
  
-3. Se aplica la última etiqueta secundaria.
+3. Se aplica la última subetiqueta.
 
 
 ## <a name="to-configure-recommended-or-automatic-classification-for-a-label"></a>Para configurar la clasificación automática o recomendada para una etiqueta
 
-1. Si aún no lo ha hecho, abra una nueva ventana del explorador e inicie sesión en [Azure Portal](https://portal.azure.com) como administrador de seguridad o administrador global. Después, vaya a la hoja **Azure Information Protection**.     
+1. Si aún no lo ha hecho, abra una nueva ventana del explorador e [inicie sesión en Azure Portal](configure-policy.md#signing-in-to-the-azure-portal). Después, vaya a la hoja **Azure Information Protection**. 
+    
     Por ejemplo, en el menú del centro, haga clic en **Más servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
 2. Si la etiqueta que quiere configurar se va a aplicar a todos los usuarios, quédese en la hoja **Azure Information Protection - Global policy** (Azure Information Protection: directiva global).

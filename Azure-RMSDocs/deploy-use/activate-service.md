@@ -4,7 +4,7 @@ description: "El servicio Azure Rights Management debe activarse antes de que la
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/15/2017
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e8fede85cddc44318ce93497a9ac454c689673d3
-ms.sourcegitcommit: c3d57b175a4e7b5e136f7183c837fa08e7ac982e
+ms.openlocfilehash: 0696f6562cd39542c2447b8b9e897c05e8571525
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="activating-azure-rights-management"></a>Activar Rights Management de Azure
 
@@ -44,17 +44,19 @@ Antes de activar [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagem
 
 Una vez activado el servicio Azure Rights Management, todos los usuarios de la organización podrán aplicar la protección de la información a los archivos, y todos los usuarios podrán abrir (consumir) los archivos que se hayan protegido con el servicio Azure Rights Management. Sin embargo, si lo prefiere, puede usar controles de incorporación para restringir quién puede aplicar la protección de la información, a fin de realizar una implementación por fases. Para más información, consulte la sección [Configuración de controles de incorporación para una implementación por fases](#configuring-onboarding-controls-for-a-phased-deployment) de este artículo.
 
+## <a name="choosing-your-activation-method"></a>Elección del método de activación
+
 Para obtener instrucciones sobre cómo activar el servicio de Rights Management desde su portal de administración, seleccione si va a usar el Centro de administración de Office 365 o Azure Portal:
 
-- [**Centro de administración de Office 365**](activate-office365.md): requiere una cuenta de administrador global.
+- [Centro de administración de Office 365](activate-office365.md): requiere una cuenta de administrador global.
 
-- [**Azure Portal**](activate-azure.md): requiere una cuenta de administrador global o una [cuenta de administrador de seguridad](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
+- [Azure Portal](activate-azure.md): requiere una cuenta de administrador global.
 
 O bien, puede usar PowerShell para activar [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]:
 
 1. Instale la herramienta de administración de Azure Rights Management, que instala el módulo de administración de Azure Rights Management. Para obtener instrucciones, vea [Instalación de Windows PowerShell para Azure Rights Management](../deploy-use/install-powershell.md).
 
-2. Desde una sesión de PowerShell, ejecute [Connect-AadrmService](/powershell/module/aadrm/connect-aadrmservice) y, cuando se le pida, proporcione los detalles de la cuenta de administrador global para el inquilino de Azure Information Protection.
+2. En una sesión de PowerShell, ejecute [Connect-AadrmService](/powershell/module/aadrm/connect-aadrmservice) y, cuando se le pida, proporcione los detalles de la cuenta de administrador global del inquilino de Azure Information Protection.
 
 3. Ejecute [Enable-Aadrm](/powershell/module/aadrm/enable-aadrm), con el que se activará el servicio Azure Rights Management.
 

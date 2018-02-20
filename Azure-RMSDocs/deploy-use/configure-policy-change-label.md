@@ -1,51 +1,51 @@
 ---
-title: Cambio de una etiqueta de Microsoft Azure Information Protection
-description: Para cambiar o mejorar cualquiera de las etiquetas que los usuarios ven en la barra de Information Protection, puede configurarlas en la directiva de Azure Information Protection.
+title: Cambio de una etiqueta de Azure Information Protection
+description: "Puede cambiar o mejorar cualquiera de las etiquetas que ven los usuarios en la barra de Information Protection; para ello, configúrelas en la directiva de Azure Information Protection."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/29/2018
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e3b6d95f-334b-4d17-80a9-7d5487ab5d32
-ms.openlocfilehash: f1ffd4c459f2fa194372450f5713c920422f744d
-ms.sourcegitcommit: 972acdb468ac32a28e3e24c90694aff4b75206fc
+ms.openlocfilehash: e289bf3f36bda1728b89c756db5afbcac126f3f1
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/14/2018
 ---
-# <a name="how-to-change-or-customize-an-existing-label-for-azure-information-protection"></a>Procedimiento para cambiar o personalizar una etiqueta existente para Azure Information Protection
+# <a name="how-to-change-or-customize-an-existing-label-for-azure-information-protection"></a>Cambio o personalización de una etiqueta existente para Azure Information Protection
 
->*Válido para: Azure Information Protection*
+>*Se aplica a: Azure Information Protection*
 
-Para cambiar o mejorar cualquiera de las etiquetas que los usuarios ven en la barra de Information Protection, puede configurarlas en la directiva de Azure Information Protection.
+Puede cambiar o mejorar cualquiera de las etiquetas que ven los usuarios en la barra de Information Protection; para ello, configúrelas en la directiva de Azure Information Protection.
 
-Por ejemplo, puede cambiar el nombre de una etiqueta principal o secundaria, la información sobre herramientas, el color y el orden. Puede cambiar si la etiqueta aplica marcas visuales, como una marca de agua o un pie de página. También puede cambiar si aplica protección y la clasificación automática o recomendada.
+Por ejemplo, puede cambiar el nombre de una etiqueta o subetiqueta, la información sobre herramientas, el color y el orden. Puede modificar si la etiqueta va a aplicar distintivos visuales como una marca de agua o un pie de página. También puede cambiar si la etiqueta va a agregar protección y la clasificación automática o recomendada.
 
-Para cambiar una etiqueta, siga estas instrucciones:
+Haga lo siguiente para cambiar una etiqueta:
 
-1. Si aún no lo ha hecho, abra una nueva ventana del explorador e inicie sesión en [Azure Portal](https://portal.azure.com) como administrador de seguridad o administrador global. Después, vaya a la hoja **Azure Information Protection**. 
+1. Si aún no lo ha hecho, abra una nueva ventana del explorador e [inicie sesión en Azure Portal](configure-policy.md#signing-in-to-the-azure-portal). Después, vaya a la hoja **Azure Information Protection**. 
     
-    Por ejemplo, en el menú del concentrador, haga clic en **Más servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
+    Por ejemplo, en el menú del centro, haga clic en **Más servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
-2. Para cambiar una etiqueta de la directiva global de modo que se aplique a todos los usuarios, seleccione la etiqueta que quiere cambiar en la hoja **Azure Information Protection: Directiva Global** y en las hojas posteriores, si es necesario. Para cambiar una etiqueta de una [directiva con ámbito](configure-policy-scope.md) de forma que se aplique solo a los usuarios seleccionados, primero seleccione **Directivas con ámbito** en la selección del menú **DIRECTIVAS**. Después, seleccione la directiva con ámbito en la hoja **Azure Information Protection: Directivas con ámbito**.
+2. Para cambiar una etiqueta de la directiva global de modo que se aplique a todos los usuarios, seleccione la etiqueta que quiere cambiar en la hoja **Azure Information Protection - Global policy** (Azure Information Protection: directiva global) y en las hojas posteriores si es necesario. Para cambiar una etiqueta de una [directiva con ámbito](configure-policy-scope.md) para que se aplique únicamente a los usuarios seleccionados, primero seleccione **Directivas con ámbito** en la selección del menú **DIRECTIVAS**. Después, seleccione la directiva con ámbito en la hoja **Azure Information Protection - Scoped policies** (Azure Information Protection: directivas con ámbito).
 
-    Hay una excepción si desea cambiar el orden de una etiqueta. En la hoja de la directiva en la directiva global o en la directiva con ámbito seleccionada, haga clic con el botón derecho en la etiqueta o seleccione el menú contextual de la etiqueta. A continuación, seleccione las opciones **Subir** o **Bajar**.
+    La excepción es si quiere cambiar el orden de una etiqueta, lo que puede hacer en la hoja de la directiva global o en la directiva con ámbito seleccionada: haga clic con el botón derecho en la etiqueta o seleccione el menú contextual de la etiqueta. Luego, seleccione las opciones **Subir** o **Bajar**.
 
-3. Siempre que realice cambios en una hoja, haga clic en **Guardar** en esa hoja, si desea conservar los cambios.
+3. Siempre que realice cambios en una hoja, haga clic en **Guardar** en esa hoja si desea conservar los cambios.
 
 4. Para que los cambios estén disponibles para los usuarios, en la hoja **Azure Information Protection**, haga clic en **Publicar**.
 
-5. Si cambió el nombre para mostrar o la descripción de una etiqueta, y los ha configurado para idiomas adicionales, exporte de nuevo la directiva de Azure Information Protection, proporcione nuevas traducciones e importe los cambios. Para más información, consulte [Cómo configurar etiquetas y plantillas para distintos idiomas en Azure Information Protection](configure-policy-languages.md).
+5. Si cambió el nombre para mostrar o la descripción de la etiqueta y los configuró para más idiomas: vuelva a exportar la directiva de Azure Information Protection, proporcione traducciones nuevas e importe los cambios. Para más información, consulte [Configuración de etiquetas para distintos idiomas](configure-policy-languages.md).
 
 > [!TIP]
->Si desea que alguna de las etiquetas predeterminadas vuelva a su valor predeterminado, use la información de [Directiva predeterminada de Azure Information Protection](configure-policy-default.md).
+>Si quiere que alguna de las etiquetas vuelva a su valores predeterminados, use la información de [La directiva de Information Protection](configure-policy-default.md).
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Para más información acerca de cómo configurar las opciones disponibles para una etiqueta y otras opciones de la directiva de Azure Information Protection, use los vínculos de la sección [Configuración de la directiva de la organización](configure-policy.md#configuring-your-organizations-policy).
+Para más información sobre las opciones que puede cambiar para una etiqueta, así como otra configuración de la directiva de Azure Information Protection, use los vínculos de la sección [Configuring your organization's policy](configure-policy.md#configuring-your-organizations-policy) (Configuración de la directiva de la organización).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

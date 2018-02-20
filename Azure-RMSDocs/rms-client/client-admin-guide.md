@@ -4,7 +4,7 @@ description: "Instrucciones e información para administradores de una red empre
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/20/2017
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: c338fe4258d6d8b20a4d8c285bc821981810b409
-ms.sourcegitcommit: f1d0b899e6d79ebef3829f24711f947316bca8ef
+ms.openlocfilehash: a7412378655ea75500bd1339c0ba41f677fe4d9a
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Guía para administradores del cliente de Azure Information Protection
 
@@ -54,7 +54,7 @@ El cliente de Azure Information Protection incluye:
 
 - Un módulo de PowerShell para aplicar y quitar etiquetas de clasificación y protección en los archivos. 
     
-    Este módulo incluye cmdlets para instalar y configurar el [analizador de Azure Information Protection](../deploy-use/deploy-aip-scanner.md) (actualmente en versión preliminar) que se ejecuta como un servicio en Windows Server. Este servicio le permite detectar, clasificar y proteger archivos en almacenes de datos como recursos compartidos de red y bibliotecas de SharePoint Server.
+    Este módulo incluye cmdlets para instalar y configurar el [analizador de Azure Information Protection](../deploy-use/deploy-aip-scanner.md) que se ejecuta como un servicio en Windows Server. Este servicio le permite detectar, clasificar y proteger archivos en almacenes de datos como recursos compartidos de red y bibliotecas de SharePoint Server.
 
 - El cliente de Rights Management que se comunica con Azure Rights Management (Azure RMS) o Active Directory Rights Management Services (AD RMS).
 
@@ -73,7 +73,7 @@ Implemente el cliente de Azure Information Protection si se aplica alguna de las
 
 - Desea ejecutar scripts que clasifican (y, opcionalmente, protegen) documentos mediante los comandos de PowerShell.
 
-- Desea ejecutar un servicio que detecta, clasifica (y, opcionalmente, protege) archivos almacenados localmente. Este servicio de analizador está actualmente en vista preliminar.
+- Desea ejecutar un servicio que detecta, clasifica (y, opcionalmente, protege) archivos almacenados localmente.
 
 - Desea ver documentos protegidos cuando una aplicación nativa para mostrar el archivo no está instalada o no puede abrir estos documentos.
 
