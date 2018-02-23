@@ -101,7 +101,7 @@ También puede forzar que la aplicación RMS sharing boquee la protección de lo
 
 Para configurar la aplicación RMS sharing para aplicar protección genérica a todos los archivos a los que, de forma predeterminada, se les aplicaría protección nativa, realice las siguientes modificaciones en el Registro. Tenga en cuenta que si las claves RmsSharingApp o FileProtection no existen, debe crearlas manualmente.
 
-1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RmsSharingApp\FileProtection**: cree una nueva clave denominada *.
+1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RmsSharingApp\FileProtection**: cree una nueva clave denominada \*.
 
     Este valor indica archivos con cualquier extensión de nombre de archivo.
 
