@@ -4,17 +4,17 @@ description: "Puede cambiar o mejorar cualquiera de las etiquetas que ven los us
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/13/2018
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e3b6d95f-334b-4d17-80a9-7d5487ab5d32
-ms.openlocfilehash: e289bf3f36bda1728b89c756db5afbcac126f3f1
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: da89ea5986ac78cdf79e97336d74c54e9db2a825
+ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="how-to-change-or-customize-an-existing-label-for-azure-information-protection"></a>Cambio o personalización de una etiqueta existente para Azure Information Protection
 
@@ -28,7 +28,7 @@ Haga lo siguiente para cambiar una etiqueta:
 
 1. Si aún no lo ha hecho, abra una nueva ventana del explorador e [inicie sesión en Azure Portal](configure-policy.md#signing-in-to-the-azure-portal). Después, vaya a la hoja **Azure Information Protection**. 
     
-    Por ejemplo, en el menú del centro, haga clic en **Más servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
+    Por ejemplo, en el menú del concentrador, haga clic en **Todos los servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
 2. Para cambiar una etiqueta de la directiva global de modo que se aplique a todos los usuarios, seleccione la etiqueta que quiere cambiar en la hoja **Azure Information Protection - Global policy** (Azure Information Protection: directiva global) y en las hojas posteriores si es necesario. Para cambiar una etiqueta de una [directiva con ámbito](configure-policy-scope.md) para que se aplique únicamente a los usuarios seleccionados, primero seleccione **Directivas con ámbito** en la selección del menú **DIRECTIVAS**. Después, seleccione la directiva con ámbito en la hoja **Azure Information Protection - Scoped policies** (Azure Information Protection: directivas con ámbito).
 

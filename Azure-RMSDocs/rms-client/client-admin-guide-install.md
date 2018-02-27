@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 92e4f6c05378b36165db0628f14941b0ccd26cb7
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: a62c8c1c27855b25e5de69bd162d524bf1851890
+ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>Guía del administrador: Instalación del cliente de Azure Information Protection para los usuarios
 
@@ -158,7 +158,7 @@ Utilice el procedimiento siguiente para identificar el valor que se especificar�
 
 1. Desde una sesión de PowerShell, ejecute [Connect-AadrmService](https://docs.microsoft.com/powershell/aadrm/vlatest/connect-aadrmservice) y especifique sus credenciales de administrador para conectarse al servicio de Azure Rights Management. Ejecute a continuación [Get-AadrmConfiguration](https://docs.microsoft.com/powershell/aadrm/vlatest/get-aadrmconfiguration). 
  
-    Si aún no ha instalado el módulo de PowerShell para el servicio Azure Rights Management, consulte [Instalación de Windows PowerShell para Azure Rights Management](../deploy-use/install-powershell.md).
+    Si aún no ha instalado el módulo de PowerShell para el servicio de Azure Rights Management, vea [Instalación del módulo de PowerShell para AADRM](../deploy-use/install-powershell.md).
 
 2. En la salida, identifique el valor **LicensingIntranetDistributionPointUrl** .
 
@@ -225,7 +225,7 @@ Después de haber instalado el cliente, ya está listo para instalar el analizad
 ## <a name="next-steps"></a>Pasos siguientes
 Ahora que ha instalado el cliente de Azure Information Protection, vea la siguiente información adicional que puede necesitar para la compatibilidad con este cliente:
 
-- [Customizations](client-admin-guide-customizations.md) (Personalizaciones)
+- [Personalizaciones](client-admin-guide-customizations.md)
 
 - [Archivos de cliente y registro de uso](client-admin-guide-files-and-logging.md)
 

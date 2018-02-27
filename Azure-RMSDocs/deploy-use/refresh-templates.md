@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 23a7a835c4df149453303cbe1bcc3a34b6597842
-ms.sourcegitcommit: 965108d50739148864b2ae7dcc661ae65f1b154c
+ms.openlocfilehash: e8d7f34d020157ed38bb8458c4d5f4ddb6986f75
+ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="refreshing-templates-for-users-and-services"></a>Actualización de plantillas para usuarios y servicios
 
@@ -27,7 +27,7 @@ Cuando usa el servicio Azure Rights Management de Azure Information Protection, 
 |Aplicación o servicio|Cómo se actualizan las plantillas tras los cambios|
 |--------------------------|---------------------------------------------|
 |Exchange Online<br /><br />Se aplica a reglas de transporte y Outlook Web App |Se actualiza automáticamente en una hora, no hay que seguir más pasos.<br /><br />Este es el caso si usa el [cifrado de mensajes de Office 365 con nuevas capacidades](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e). Si previamente ha configurado Exchange Online para que use el servicio Azure Rights Management y, para ello, ha importado su dominio de publicación de confianza (TPD), use el mismo conjunto de instrucciones para habilitar las nuevas capacidades de Exchange Online.|
-|Cliente de Azure Information Protection|Se actualiza automáticamente cada vez que la directiva de Azure Information Protection se actualiza en el cliente:<br /><br /> - Cuando se abre una aplicación de Office que admite la barra de Azure Information Protection. <br /><br /> - Cuando hace clic con el botón derecho para clasificar y proteger un archivo o carpeta. <br /><br /> - Cuando ejecuta cmdlets de PowerShell para etiquetado y protección (Get-AIPFileStatus y Set-AIPFileLabel).<br /><br /> - Cuando se inicia el servicio del analizador de Azure Information Protection. Además, el servicio del analizador comprueba los cambios cada hora y los utiliza para el próximo ciclo de examen.<br /><br /> - Cada 24 horas.<br /><br /> Además, dado que el cliente de Azure Information Protection está estrechamente integrado con Office, cualquier plantilla actualizada para Office 2016 u Office 2013 también se actualizará para el cliente de Azure Information Protection.|
+|Cliente de Azure Information Protection|Se actualiza automáticamente cada vez que la directiva de Azure Information Protection se actualiza en el cliente:<br /><br /> - Cuando se abre una aplicación de Office que admite la barra de Azure Information Protection. <br /><br /> - Cuando hace clic con el botón derecho para clasificar y proteger un archivo o carpeta. <br /><br /> - Cuando ejecuta cmdlets de PowerShell para etiquetado y protección (Get-AIPFileStatus y Set-AIPFileLabel).<br /><br /> - Cuando se inicia el servicio del analizador de Azure Information Protection. Además, el servicio del analizador comprueba los cambios cada hora y los utiliza para el próximo ciclo de examen.<br /><br /> - Cada 24 horas.<br /><br /> Además, dado que el cliente de Azure Information Protection está estrechamente integrado con Office, cualquier plantillas actualizada para Office 2016 u Office 2013 también se actualizará para el cliente de Azure Information Protection.|
 |Office 2016 y Office 2013<br /><br />Aplicaciones de uso compartido de RMS para Windows|Actualización automática: programada:<br /><br />- Para estas versiones posteriores de Office: el intervalo de actualización predeterminado es cada 7 días.<br /><br />- Para la aplicación RMS sharing para Windows: a partir de la versión 1.0.1784.0, el intervalo de actualización predeterminado es cada día. Las versiones anteriores tienen un intervalo de actualización predeterminado de 7 días.<br /><br />Para exigir una actualización antes de esta programación, consulte la sección [Office 2016, Office 2013 y la aplicación RMS sharing para Windows: Cómo forzar una actualización de una plantilla personalizada que se ha cambiado](#office-2016--office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template).|
 |Office 2010|Se actualiza automáticamente cuando los usuarios cierran la sesión de Windows, vuelven a iniciarla y esperan hasta 1 hora.|
 |Exchange local con el conector Rights Management<br /><br />Se aplica a reglas de transporte y Outlook Web App|Actualización automática: no se requieren pasos adicionales. Pero Outlook Web App almacena en caché la interfaz de usuario durante un día.|
@@ -79,7 +79,7 @@ Si modifica el Registro de los equipos que ejecutan Office 2016, Office 2013 o l
     > [!TIP]
         > En la ruta de acceso del Registro, <*MicrosoftRMS_FQDN*> hace referencia al FQDN de servicio de Microsoft RMS. Si desea comprobar este valor:
 
-    > 1.  Ejecute el cmdlet [Get-AadrmConfiguration](https://msdn.microsoft.com/library/windowsazure/dn629410.aspx) para Azure RMS. Si aún no ha instalado el módulo de Windows PowerShell para Azure RMS, consulte [Instalación de Windows PowerShell para Azure Rights Management](install-powershell.md).
+    > 1.  Ejecute el cmdlet [Get-AadrmConfiguration](https://msdn.microsoft.com/library/windowsazure/dn629410.aspx) para Azure RMS. Si aún no ha instalado el módulo de Windows PowerShell para Azure RMS, vea [Instalación del módulo de PowerShell para AADRM](install-powershell.md).
     > 2.  En la salida, identifique el valor **LicensingIntranetDistributionPointUrl** .
     >
     >     Por ejemplo: **LicensingIntranetDistributionPointUrl   : https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing**
@@ -92,7 +92,7 @@ Si modifica el Registro de los equipos que ejecutan Office 2016, Office 2013 o l
 3.  Reinicie las aplicaciones de Office y las instancias del Explorador de archivos.
 
 
-## <a name="see-also"></a>Véase también
+## <a name="see-also"></a>Consulte también
 [Configuración y administración de plantillas en la directiva de Azure Information Protection](../deploy-use/configure-policy-templates.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

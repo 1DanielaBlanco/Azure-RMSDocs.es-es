@@ -4,7 +4,7 @@ description: "Instrucciones para la activación de la protección en Azure Porta
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/13/2018
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,11 +13,11 @@ ms.custom: askipteam
 ms.assetid: 4e886f5a-f535-4207-b8c4-8e0376c0758e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4c492f3a9075d5c560c2ec83b1371dc374b77bba
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: 709af7b7484c39fc52ec60394641656761ad5c5d
+ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="how-to-activate-azure-rights-management-from-the-azure-portal"></a>Cómo activar Azure Rights Management desde Azure Portal
 
@@ -27,7 +27,7 @@ Siga estas instrucciones si quiere activar el servicio Azure Rights Management (
 
 1. Si aún no lo ha hecho, abra una nueva ventana del explorador e [inicie sesión en Azure Portal](configure-policy.md#signing-in-to-the-azure-portal). Después, vaya a la hoja **Azure Information Protection**.
     
-    Por ejemplo, en el menú del centro, haga clic en **Más servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
+    Por ejemplo, en el menú del concentrador, haga clic en **Todos los servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
     
     Si no ha tenido acceso antes a la hoja de Azure Information Protection, vea los [pasos adicionales](configure-policy.md#to-access-the-azure-information-protection-blade-for-the-first-time) para agregar esta hoja al portal.
     

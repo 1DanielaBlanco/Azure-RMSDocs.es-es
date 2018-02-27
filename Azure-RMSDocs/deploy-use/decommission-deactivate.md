@@ -4,7 +4,7 @@ description: "Información e instrucciones en caso de que ya no quiera usar el s
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/13/2018
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 0b1c2064-0d01-45ae-a541-cebd7fd762ad
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 14887bb14599b24d95a19ee111ec3ab30ea95612
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: 18eff00f6b316c48dbca5a9a8ec2c2ab4e58f76c
+ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="decommissioning-and-deactivating-protection-for-azure-information-protection"></a>Retirada y desactivación de la protección de Azure Information Protection
 
@@ -45,7 +45,7 @@ Para más información sobre los procedimientos descritos en esta tabla, consult
 
 - Para obtener instrucciones sobre cómo importar la clave de inquilino de Azure Information Protection como archivo TPD, vea [Adición de un dominio de publicación de confianza](https://technet.microsoft.com/library/cc771460.aspx).
 
-- Para instalar el módulo de Windows PowerShell para Azure Rights Management para establecer la URL de migración, vea [Instalación de Windows PowerShell para Azure Rights Management](install-powershell.md).
+- Para instalar el módulo de Windows PowerShell para Azure Rights Management para establecer la dirección URL de migración, vea [Instalación del módulo de PowerShell para AADRM](install-powershell.md).
 
 - Para usar PowerShell con el cliente de Azure Information Protection, consulte [Uso de PowerShell con el cliente de Azure Information Protection](../rms-client/client-admin-guide-powershell.md).
 
@@ -73,7 +73,7 @@ Ahora debería ver **Rights Management no está activado** y la opción para act
 
 1. Si aún no lo ha hecho, abra una nueva ventana del explorador e [inicie sesión en Azure Portal](configure-policy.md#signing-in-to-the-azure-portal). Después, vaya a la hoja **Azure Information Protection**.
     
-    Por ejemplo, en el menú del centro, haga clic en **Más servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
+    Por ejemplo, en el menú del concentrador, haga clic en **Todos los servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
 2. En la hoja inicial de **Azure Information Protection**, seleccione **Protección de la activación**. 
 

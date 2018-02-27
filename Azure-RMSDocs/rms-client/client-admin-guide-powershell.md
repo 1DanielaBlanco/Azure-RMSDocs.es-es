@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: a6ca8145768559a556b051974f59620a0750c660
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: 714afa8c839d91ba61043a643433c5045a4aad7d
+ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>Guía del administrador: Uso de PowerShell con el cliente de Azure Information Protection
 
@@ -133,7 +133,7 @@ En las secciones siguientes se explica cómo obtener manualmente y especificar e
 
 Ejecute el cmdlet Get-AadrmConfiguration desde el módulo de Windows PowerShell para Azure RMS:
 
-1. Si este módulo aún no está instalado en el equipo, vea [Instalación de Windows PowerShell para Azure Rights Management](../deploy-use/install-powershell.md).
+1. Si este módulo aún no está instalado en el equipo, vea [Instalación del módulo de PowerShell para AADRM](../deploy-use/install-powershell.md).
 
 2. Inicie Windows PowerShell con la opción **Ejecutar como administrador**.
 
@@ -606,7 +606,7 @@ Para obtener ayuda sobre los cmdlets cuando esté en una sesión de PowerShell, 
 
 Vea la información adicional siguiente que puede necesitar para la compatibilidad con el cliente de Azure Information Protection:
 
-- [Customizations](client-admin-guide-customizations.md) (Personalizaciones)
+- [Personalizaciones](client-admin-guide-customizations.md)
 
 - [Archivos de cliente y registro de uso](client-admin-guide-files-and-logging.md)
 

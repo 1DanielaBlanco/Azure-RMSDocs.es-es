@@ -4,7 +4,7 @@ description: "El servicio Azure Rights Management debe activarse antes de que la
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/13/2018
+ms.date: 02/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0696f6562cd39542c2447b8b9e897c05e8571525
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: 4817736329fe78084d66467f68ea2f5392ec95e2
+ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="activating-azure-rights-management"></a>Activar Rights Management de Azure
 
@@ -29,14 +29,25 @@ ms.lasthandoff: 02/14/2018
 >
 > Para obtener soporte técnico y consultar otras cuestiones sobre el servicio, vea la información sobre [Opciones de soporte y recursos de la comunidad](../get-started/information-support.md#support-options-and-community-resources).
 
-Cuando el servicio Azure Rights Management para Azure Information Protection se activa para el inquilino, la organización puede empezar a proteger datos importantes con aplicaciones y servicios que admiten esta solución de protección de información. Los administradores también pueden administrar y supervisar los correos electrónicos y archivos protegidos que posee su organización. Este servicio debe habilitarse antes de poder empezar a usar las características de Information Rights Management (IRM) en Office, SharePoint y Exchange, y de proteger los archivos confidenciales o con información importante.
+Cuando el servicio de Azure Rights Management para Azure Information Protection se activa para su organización, los administradores y los usuarios pueden empezar a proteger datos importantes con aplicaciones y servicios que admiten esta solución de protección de información. Los administradores también pueden administrar y supervisar los correos electrónicos y documentos protegidos que tiene su organización. 
 
-Si quiere obtener más información sobre el servicio Azure Rights Management antes de activarlo, por ejemplo, qué problemas empresariales soluciona, algunos casos de uso habitual y su funcionamiento, vea [¿Qué es Azure Rights Management?](../understand-explore/what-is-azure-rms.md)
+
+## <a name="do-you-need-to-activate-azure-rights-management"></a>¿Es necesario activar Azure Rights Management?
+
+Si dispone de un plan de servicio que incluye Azure Rights Management, puede que no tenga que activar el servicio:
+
+- Si su suscripción que incluye Azure Rights Management o Azure Information Protection se ha obtenido en **febrero de 2018** o después, el servicio se activa automáticamente. No es necesario activar el servicio a menos que usted u otro administrador global de su organización haya desactivado Azure Rights Management.
+
+- Si su suscripción se obtuvo antes de este mes, deberá activar el servicio. 
+
+Una vez activado el servicio Azure Rights Management, todos los usuarios de la organización podrán aplicar la protección de la información a los archivos, y todos los usuarios podrán abrir (consumir) los archivos que se hayan protegido con el servicio Azure Rights Management. Sin embargo, si lo prefiere, puede usar controles de incorporación para restringir quién puede aplicar la protección de la información, a fin de realizar una implementación por fases. Para más información, consulte la sección [Configuración de controles de incorporación para una implementación por fases](#configuring-onboarding-controls-for-a-phased-deployment) de este artículo.
+
+## <a name="how-to-activate-or-confirm-the-status-of-the-azure-rights-management-service"></a>Cómo activar o confirmar el estado del servicio de Azure Rights Management 
 
 > [!IMPORTANT]
 > No active el servicio Azure Rights Management si tiene Active Directory Rights Management Services (AD RMS) implementado en la organización. [Más información](prepare-environment-adrms.md)
 
-Antes de activar [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)], asegúrese de que la organización tenga un plan de servicios que incluya la protección de datos de Azure Rights Management. De lo contrario, no podrá activar Azure Rights Management. Debe tener uno de los siguientes elementos:
+Para usar esta solución de protección de datos, su organización debe disponer de un plan de servicio que incluya el servicio de Azure Rights Management de Azure Information Protection. Sin este, no se puede activar el servicio de Azure Rights Management. Debe tener uno de los siguientes elementos:
 
 - Un [plan de Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing). 
 
@@ -52,13 +63,15 @@ Para obtener instrucciones sobre cómo activar el servicio de Rights Management 
 
 - [Azure Portal](activate-azure.md): requiere una cuenta de administrador global.
 
-O bien, puede usar PowerShell para activar [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]:
+Como alternativa, puede usar los siguientes comandos de PowerShell:
 
-1. Instale la herramienta de administración de Azure Rights Management, que instala el módulo de administración de Azure Rights Management. Para obtener instrucciones, vea [Instalación de Windows PowerShell para Azure Rights Management](../deploy-use/install-powershell.md).
+1. Instale el módulo de AADRM para configurar y administrar el servicio de protección. Para obtener instrucciones, vea [Instalación del módulo de PowerShell para AADRM](../deploy-use/install-powershell.md).
 
 2. En una sesión de PowerShell, ejecute [Connect-AadrmService](/powershell/module/aadrm/connect-aadrmservice) y, cuando se le pida, proporcione los detalles de la cuenta de administrador global del inquilino de Azure Information Protection.
 
-3. Ejecute [Enable-Aadrm](/powershell/module/aadrm/enable-aadrm), con el que se activará el servicio Azure Rights Management.
+3. Ejecute [Get-Aadrm](/powershell/aadrm/vlatest/get-aadrm) para confirmar si el servicio de Azure Rights Management está activado. El estado **Habilitado** confirma la activación, mientras que **Deshabilitado** indica que el servicio está desactivado.
+
+4. Para activar el servicio, ejecute [Enable-Aadrm](/powershell/aadrm/vlatest/enable-aadrm).
 
 ## <a name="configuring-onboarding-controls-for-a-phased-deployment"></a>Configuración de controles de incorporación para una implementación por fases
 Si no quiere que todos los usuarios puedan proteger los archivos de forma inmediata con Azure Rights Management, puede configurar controles de incorporación de usuarios mediante el comando [Set-AadrmOnboardingControlPolicy](/powershell/module/aadrm/set-aadrmonboardingcontrolpolicy) de PowerShell. Puede ejecutar este comando antes o después de activar el servicio Azure Rights Management.
@@ -88,14 +101,13 @@ Cuando ya no necesite usar los controles de incorporación, tanto si ha usado la
 Set-AadrmOnboardingControlPolicy -UseRmsUserLicense $False
 ```
 
-
 Para obtener más información sobre este cmdlet y ejemplos adicionales, consulte la ayuda de [Set-AadrmOnboardingControlPolicy](/powershell/aadrm/vlatest/set-aadrmonboardingcontrolpolicy).
 
 Al usar estos controles de incorporación, todos los usuarios de la organización podrán consumir siempre el contenido protegido por el subconjunto de usuarios, pero no podrán aplicar la protección de la información ellos mismos desde aplicaciones cliente. Por ejemplo, no verán en sus clientes de Office las plantillas predeterminadas publicadas automáticamente al activar el servicio Azure Rights Management ni las plantillas personalizadas que se puedan configurar.  Las aplicaciones de lado del servidor, como Exchange, pueden implementar sus propios controles por usuario para que la integración de Rights Management logre el mismo resultado.
 
 
 ## <a name="next-steps"></a>Pasos siguientes
-Ahora que ha activado [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] para su organización, siga el [Mapa de ruta de implementación de Azure Information Protection](../plan-design/deployment-roadmap.md) y compruebe si hay otros pasos de configuración que puedan ser necesarios antes de desplegar Azure Information Protection en usuarios y administradores. 
+Una vez que el servicio de Azure Rights Management esté activado para su organización, siga el [mapa de ruta de implementación de Azure Information Protection](../plan-design/deployment-roadmap.md) y compruebe si hay otros pasos de configuración que puedan ser necesarios antes de desplegar Azure Information Protection en usuarios y administradores. 
 
 Por ejemplo, es posible que quiera usar [plantillas](configure-policy-templates.md) para facilitar a los usuarios la aplicación de la protección de la información a los archivos, la conexión a los servidores locales para usar [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] instalando el [conector Rights Management](deploy-rms-connector.md) y la implementación del [cliente de Azure Information Protection](../rms-client/aip-client.md), que es compatible con la protección de todos los tipos de archivo en todos los dispositivos. 
 
