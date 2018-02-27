@@ -4,7 +4,7 @@ description: "Para configurar la protección, la clasificación y el etiquetado,
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/13/2017
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 6b0556755597fe20755e7b798a24498a780b87b5
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: 67d38d19408c67c5da8db188395e00a7d3f9d999
+ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>Configuración de la directiva de Azure Information Protection
 
@@ -63,11 +63,11 @@ Para iniciar sesión en Azure Portal con objeto de configurar y administrar Azur
 
 1. Inicie sesión en Azure Portal.
 
-2. En el menú del concentrador, haga clic en **Nuevo** y, después, desde la lista **MARKETPLACE**, seleccione **Seguridad e identidad**. 
+2. En el menú del concentrador, haga clic en **Crear un recurso** y, después, en la lista **MARKETPLACE**, seleccione **Seguridad e identidad**. 
     
 3. En la hoja **Seguridad e identidad**, en la lista **APLICACIONES DESTACADAS**, seleccione **Azure Information Protection**. Después, en la hoja **Azure Information Protection**, haga clic en **Crear**.
     
-    Mediante esta acción se crea la hoja **Azure Information Protection** para su inquilino, de modo que la próxima vez que inicie sesión en el portal pueda seleccionar el servicio desde la lista **Más servicios** del centro. 
+    Con esta acción se crea la hoja **Azure Information Protection** para su inquilino, de modo que la próxima vez que inicie sesión en el portal podrá seleccionar el servicio en la lista **Todos los servicios** del concentrador. 
     
     > [!TIP] 
     > Seleccione **Anclar al panel** para crear un icono de **Azure Information Protection** en el panel, de modo que pueda omitir el examen del servicio la próxima vez que inicie sesión en el portal.
@@ -80,7 +80,7 @@ La próxima vez que acceda a la hoja de **Azure Information Protection**, se sel
 
 1. Asegúrese de que ha iniciado sesión en Azure Portal con uno de estos roles administrativos: administrador de Information Protection, administrador de seguridad o administrador global. Vaya a la [sección anterior](#signing-in-to-the-azure-portal) para obtener más información sobre estos roles administrativos.
 
-2. Si fuera necesario, vaya a la hoja **Azure Information Protection**: por ejemplo, en el menú del centro, haga clic en **Más servicios** y comience a escribir **Information Protection** en el cuadro Filtro. De los resultados, seleccione **Azure Information Protection**. 
+2. Si es necesario, vaya a la hoja **Azure Information Protection**. Por ejemplo, en el menú del concentrador, haga clic en **Todos los servicios** y comience a escribir **Information Protection** en el cuadro Filtro. De los resultados, seleccione **Azure Information Protection**. 
     
     La hoja **Azure Information Protection: directiva global** se abre automáticamente para ver y editar la directiva global que obtienen todos los usuarios. 
     

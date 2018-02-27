@@ -4,7 +4,7 @@ description: "Instrucciones para migrar la implementación de Active Directory R
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/16/2017
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a65e1178594e14c7d8f4faaedee96d827a9412e5
-ms.sourcegitcommit: 9b975e66b12a3836003c6c4de139ded4bbf370bf
+ms.openlocfilehash: 2ba3ae79308ddee15dc77700b7b660fd4bd91b49
+ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>Migración desde AD RMS a Azure Information Protection
 
@@ -140,9 +140,9 @@ Los pasos de migración se pueden dividir en cinco fases que se pueden realizar 
 
 [**FASE 1: PREPARACIÓN DE LA MIGRACIÓN**](migrate-from-ad-rms-phase1.md)
 
-- **Paso 1: descarga de la herramienta de administración de Azure RMS e identificar la dirección URL del inquilino**
+- **Paso 1: Instalar el módulo de PowerShell para AADRM e identificar la dirección URL del inquilino**
 
-    El proceso de migración requiere que ejecute uno o varios de los cmdlets de PowerShell desde el módulo de Azure RMS que se instala con la herramienta de administración de Azure RMS Management. También necesita saber la dirección URL de servicio de Azure Rights Management de su inquilino para completar muchos de los pasos de la migración. Puede identificar este valor mediante PowerShell.
+    El proceso de migración requiere que ejecute uno o varios de los cmdlets de PowerShell desde el módulo de AADRM. Necesitará saber la dirección URL de servicio de Azure Rights Management de su inquilino para efectuar muchos de los pasos de la migración. Puede identificar este valor mediante PowerShell.
 
 - **Paso 2. Preparación para la migración de clientes**
 

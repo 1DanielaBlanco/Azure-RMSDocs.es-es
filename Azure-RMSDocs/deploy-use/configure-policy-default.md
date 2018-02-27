@@ -4,17 +4,17 @@ description: "Obtenga información sobre cómo está configurada la directiva pr
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/23/2017
+ms.date: 02/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 671281c8-f0d1-42b6-aae3-681d1821e2cf
-ms.openlocfilehash: 86b04d47797f7e3201dd4fd7b7e5a9c662254d12
-ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
+ms.openlocfilehash: da8557be0a70cee0e7a207a8ed285f6e843ac626
+ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="the-default-azure-information-protection-policy"></a>Directiva predeterminada de Azure Information Protection
 
@@ -30,7 +30,7 @@ Puede hacer referencia a los siguientes valores para devolver la directiva a los
 
 Esta versión de la directiva predeterminada es del 31 de julio de 2017.
 
-Esta directiva predeterminada solo se crea si el servicio Azure Rights Management se ha activado al crear la directiva. Si este servicio no se ha activado, la directiva predeterminada no configura la protección para las siguientes subetiquetas:
+Esta directiva predeterminada solo se crea si el servicio de Azure Rights Management se ha [activado](activate-service.md) al crear la directiva. Si este servicio no se ha activado, la directiva predeterminada no configurará la protección para las siguientes subetiquetas:
 
 - **Confidencial\Todos los empleados**
 
@@ -46,7 +46,7 @@ Cuando se aplica la protección a las subetiquetas **Todos los empleados**, la p
 
 A partir del 30 de agosto de 2017, esta versión de la directiva predeterminada incluye versiones en diversos idiomas de los nombres y las descripciones de las etiquetas. 
 
-#### <a name="more-information-about-the-recipients-only-sub-label"></a>Más información sobre la subetiqueta Solo destinatarios
+#### <a name="more-information-about-the-recipients-only-sublabel"></a>Más información sobre la subetiqueta Solo destinatarios
 
 Los usuarios ven esta etiqueta solo en Outlook. No la ven en Word, Excel, PowerPoint o el Explorador de archivos. 
 
@@ -64,7 +64,7 @@ Cuando los usuarios seleccionan esta etiqueta, la opción No reenviar de Outlook
 |Extremadamente confidencial|Datos comerciales extremadamente confidenciales que podrían ocasionar daños a la empresa si se compartieran con personas no autorizadas. Ejemplos: información sobre empleados y clientes, contraseñas, código fuente e informes financieros previamente anunciados.|**Habilitada**: activada <br /><br />**Color**: rojo<br /><br />**Marcas visuales**: desactivadas<br /><br />**Condiciones**: ninguna<br /><br />**Protección**: ninguna|
 
 
-### <a name="sub-labels"></a>Etiquetas secundarias
+### <a name="sublabels"></a>Subetiquetas
 
 |Etiqueta|Información sobre herramientas|Configuración|
 |-------------------------------|---------------------------|-----------------|
@@ -84,7 +84,7 @@ Los permisos de protección coinciden con los de la [plantilla predeterminada](c
 
 ### <a name="information-protection-bar"></a>Barra de Information Protection
 
-|Configuración|Valor|
+|Setting|Valor|
 |-------------------------------|---------------------------|
 |Título|Sensibilidad|
 |Información sobre herramientas|Etiqueta actual de este contenido. Este valor identifica el riesgo que supondría a la empresa el hecho de que este contenido se compartiera con personas no autorizadas de dentro o fuera de la organización.|
@@ -92,7 +92,7 @@ Los permisos de protección coinciden con los de la [plantilla predeterminada](c
 
 ### <a name="settings"></a>Configuración
 
-|Configuración|Valor|
+|Setting|Valor|
 |-------------------------------|---------------------------|
 |All documents and emails must have a label (applied automatically or by users) [Todos los documentos y correos electrónicos deben tener una etiqueta (aplicada automáticamente o por los usuarios)]|Desactivado|
 |Select the default label (Seleccionar la etiqueta predeterminada)|Ninguno|
@@ -117,7 +117,7 @@ Tenga en cuenta que las descripciones de esta directiva hacen referencia a datos
 |Extremadamente confidencial|Datos comerciales extremadamente confidenciales que podrían ocasionar daños a la empresa si se compartieran con personas no autorizadas. Ejemplos: información sobre empleados y clientes, contraseñas, código fuente e informes financieros previamente anunciados.|**Habilitada**: activada <br /><br />**Color**: rojo<br /><br />**Marcas visuales**: desactivadas<br /><br />**Condiciones**: ninguna<br /><br />**Protección**: ninguna|
 
 
-### <a name="sub-labels"></a>Etiquetas secundarias
+### <a name="sublabels"></a>Subetiquetas
 
 |Etiqueta|Información sobre herramientas|Configuración|
 |-------------------------------|---------------------------|-----------------|
@@ -128,7 +128,7 @@ Tenga en cuenta que las descripciones de esta directiva hacen referencia a datos
 
 ### <a name="information-protection-bar"></a>Barra de Information Protection
 
-|Configuración|Valor|
+|Setting|Valor|
 |-------------------------------|---------------------------|
 |Título|Sensibilidad|
 |Información sobre herramientas|Etiqueta actual de este contenido. Este valor identifica el riesgo que supondría a la empresa el hecho de que este contenido se compartiera con personas no autorizadas de dentro o fuera de la organización.|
@@ -136,7 +136,7 @@ Tenga en cuenta que las descripciones de esta directiva hacen referencia a datos
 
 ### <a name="settings"></a>Configuración
 
-|Configuración|Valor|
+|Setting|Valor|
 |-------------------------------|---------------------------|
 |All documents and emails must have a label (applied automatically or by users) [Todos los documentos y correos electrónicos deben tener una etiqueta (aplicada automáticamente o por los usuarios)]|Desactivado|
 |Select the default label (Seleccionar la etiqueta predeterminada)|Ninguno|
@@ -157,7 +157,7 @@ Tenga en cuenta que las descripciones de esta directiva hacen referencia a datos
 |Secreto|Estos datos incluyen información confidencial de la empresa que se debe proteger. Exponer datos secretos a usuarios no autorizados puede provocar daños graves para la organización. Ejemplos de información secreta son información de identificación personal, registros de cliente, código fuente e informes financieros previamente anunciados.|**Habilitada**: activada <br /><br />**Color**: rojo<br /><br />**Marcas visuales**: pie de página (documentos y correo electrónico):<br /><br /> Sensibilidad: Secreto<br /><br />**Condiciones**: ninguna<br /><br />**Protección**: ninguna|
 
 
-### <a name="sub-labels"></a>Etiquetas secundarias
+### <a name="sublabels"></a>Subetiquetas
 
 |Etiqueta|Información sobre herramientas|Configuración|
 |-------------------------------|---------------------------|-----------------|
@@ -166,7 +166,7 @@ Tenga en cuenta que las descripciones de esta directiva hacen referencia a datos
 
 ### <a name="information-protection-bar"></a>Barra de Information Protection
 
-|Configuración|Valor|
+|Setting|Valor|
 |-------------------------------|---------------------------|
 |Título|Sensibilidad|
 |Información sobre herramientas|Information Sensitivity consta de cuatro niveles distintos (Público, Interno, Confidencial y Secreto), que permiten al usuario identificar el riesgo de exposición de la información a usuarios no autorizados dentro o fuera de la empresa.|
@@ -174,7 +174,7 @@ Tenga en cuenta que las descripciones de esta directiva hacen referencia a datos
 
 ### <a name="settings"></a>Configuración
 
-|Configuración|Valor|
+|Setting|Valor|
 |-------------------------------|---------------------------|
 |All documents and emails must have a label (applied automatically or by users) [Todos los documentos y correos electrónicos deben tener una etiqueta (aplicada automáticamente o por los usuarios)]|Desactivado|
 |Select the default label (Seleccionar la etiqueta predeterminada)|Ninguno|

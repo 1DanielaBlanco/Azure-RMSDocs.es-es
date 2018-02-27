@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: cf919749b74727412ab6fa76cc52a5c71b69efcd
-ms.sourcegitcommit: fc789ce08821e031d3a2b22d850b4318302d3585
+ms.openlocfilehash: 09d076299f70718b65bb3746486f559a880a2660
+ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>Registro y análisis del uso del servicio Azure Rights Management
 
@@ -67,7 +67,7 @@ El servicio Azure Rights Management escribe los registros en su cuenta de almace
 
 Puede que los registros tarden en aparecer en su cuenta de almacenamiento después de realizar alguna acción de Azure Rights Management. La mayoría de los registros aparecen en 15 minutos. Recomendamos que descargue los registros en el almacenamiento local, como una carpeta local, una base de datos o un repositorio de asignar-reducir.
 
-Para descargar sus registros de uso, deberá usar el módulo de administración de Azure Rights Management para Windows PowerShell. Para obtener instrucciones de instalación, consulte [Instalación de Windows PowerShell para Azure Rights Management](install-powershell.md). Si anteriormente ya ha descargado este módulo de Windows PowerShell, ejecute el comando siguiente para comprobar que su número de versión sea como mínimo **2.4.0.0**: `(Get-Module aadrm -ListAvailable).Version` 
+Para descargar sus registros de uso, deberá usar el módulo de administración de Azure Rights Management para Windows PowerShell. Para obtener instrucciones de instalación, vea [Instalación del módulo de PowerShell para AADRM](install-powershell.md). Si anteriormente ya ha descargado este módulo de Windows PowerShell, ejecute el comando siguiente para comprobar que su número de versión sea como mínimo **2.4.0.0**: `(Get-Module aadrm -ListAvailable).Version` 
 
 ### <a name="to-download-your-usage-logs-by-using-powershell"></a>Descargar sus registros de uso mediante PowerShell
 

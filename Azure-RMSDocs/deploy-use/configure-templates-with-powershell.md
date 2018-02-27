@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 30ee2f77-ce16-4113-bcda-6089131849ec
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c3b1662275b051ea75dcc104c4f09b5db53dbe3e
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: d8e31eb4f573a149ae39c32c89607775de61bfce
+ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="powershell-reference-for-custom-templates"></a>Referencia de PowerShell para plantillas personalizadas
 
@@ -31,7 +31,7 @@ También puede utilizar la exportación e importación para restaurar y hacer un
 > 
 > Si ya ha instalado este módulo de PowerShell, ejecute el comando siguiente en una ventana de PowerShell para comprobar el número de versión: `(Get-Module aadrm -ListAvailable).Version`
 
-Para obtener instrucciones de instalación, consulte [Instalación de Windows PowerShell para Azure Rights Management](install-powershell.md).
+Para obtener instrucciones de instalación, vea [Instalación del módulo de PowerShell para AADRM](install-powershell.md).
 
 Los cmdlets que admite la creación y administración de plantillas:
 
@@ -53,7 +53,7 @@ Los cmdlets que admite la creación y administración de plantillas:
 
 
 
-## <a name="see-also"></a>Véase también
+## <a name="see-also"></a>Consulte también
 [Configuración y administración de plantillas para Azure Information Protection](configure-policy-templates.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
