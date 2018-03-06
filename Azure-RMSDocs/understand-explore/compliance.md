@@ -4,7 +4,7 @@ description: "Información complementaria para Azure Information Protection, que
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/10/2017
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,15 +12,31 @@ ms.technology: techgroup-identity
 ms.assetid: b3a7127b-6d24-4439-bc4e-2a0a325e8ea3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b1157eaff62100d4c47dd00c1ef1d99ea50c064c
-ms.sourcegitcommit: e9a24fc5303b21f5eeebf16afed44db0d163ac77
+ms.openlocfilehash: ef0b40db5dbbb66d7cbf45028862576a58886051
+ms.sourcegitcommit: 240378d216e386ad760460c50b7a664099c669e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="compliance-and-supporting-information-for-azure-information-protection"></a>Información complementaria y de cumplimiento para Azure Information Protection
 
 Azure Information Protection admite otros servicios y también se basa en otros servicios. Si está buscando información relacionada con Azure Information Protection pero no sobre cómo usar el servicio, compruebe los recursos siguientes:
+
+## <a name="suitability-for-different-countries"></a>Idoneidad para distintos países
+
+Dada la variabilidad entre las leyes y las regulaciones de los países, los distintos escenarios y casos de uso, así como las diferentes necesidades de cada sector empresarial, deberá consultar con un asesor jurídico para saber si Azure Information Protection es apto para su país.
+
+Aquí tiene alguna información pertinente que puede ayudar a su asesor jurídico a tomar una determinación:
+
+- Azure Information Protection usa AES 256 y AES 128 para cifrar los documentos. [Más información](../understand-explore/how-does-it-work.md#cryptographic-controls-used-by-azure-rms-algorithms-and-key-lengths)
+
+- Todas las claves de cifrado utilizadas con Azure Information Protection están protegidas con una clave raíz específica del cliente que usa RSA 2048 bits. No obstante, RSA 1024 también se admite para versiones anteriores. [Más información](../understand-explore/how-does-it-work.md#cryptographic-controls-used-by-azure-rms-algorithms-and-key-lengths)
+
+- Las claves raíz específicas del cliente son administradas por Microsoft o aprovisionadas por el cliente en un HSM de Thales mediante "[Bring Your Own Key](../plan-design/plan-implement-tenant-key.md)" (BYOK). En caso de que el contenido se vea afectado por requisitos que indican que no debe protegerse con un clave en la nube, Azure Information Protection admite también funcionalidad limitada con una clave local mediante "[Hold Your Own Key](../deploy-use/configure-adrms-restrictions.md)" (HYOK).
+
+- El servicio Azure Information Protection se hospeda en centros de datos regionales repartidos por todo el mundo. Las claves y las directivas de Azure Information Protection siempre permanecen dentro de la región en la que se implementó originalmente.
+ 
+- Azure Information Protection no transmite el contenido de los documentos de los clientes al servicio Azure Information Protection. Las operaciones de cifrado y descifrado de contenido se realizan localmente en el dispositivo cliente. O bien, para la representación basada en servicios, estas operaciones se ejecutan dentro del servicio que procesa el contenido. [Más información](../understand-explore/how-does-it-work.md)
 
 ## <a name="legal-and-privacy"></a>Información legal y privacidad
 

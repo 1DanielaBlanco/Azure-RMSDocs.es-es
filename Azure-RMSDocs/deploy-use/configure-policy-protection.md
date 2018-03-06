@@ -4,17 +4,17 @@ description: "Puede proteger sus documentos y mensajes de correo electrónico m�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/20/2018
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: e4f4ced3495af71cd36caf8fc54258cd77befd99
-ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
+ms.openlocfilehash: a00c6e669f01a8166b53ae1ae0a5a63737253d61
+ms.sourcegitcommit: 23d98a405057d61a737313c8dfef042996131d3e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Configuración de una etiqueta para la protección de Rights Management
 
@@ -60,10 +60,14 @@ No es necesario que Exchange esté configurado para Information Rights Managemen
 4. En la hoja **Etiqueta**, busque **Establecer permisos para documentos y correos electrónicos que contengan esta etiqueta** y seleccione una de las opciones siguientes.
     
     - **No configurado**: seleccione esta opción si la etiqueta está configurada actualmente para aplicar la protección y ya no desea que la etiqueta seleccionada aplique la protección. Ahora, vaya al paso 11.
+        
+        La protección configurada previamente se conserva como una plantilla de protección archivada y se volverá a mostrar si se cambia la opción de nuevo a **Proteger**. No verá esta plantilla en Azure Portal pero, si es necesario, puede administrarla con [PowerShell](configure-templates-with-powershell.md). Este comportamiento significa que el contenido sigue estando disponible si tiene esta etiqueta con la configuración de protección aplicada anteriormente.
     
     - **Proteger**: seleccione esta opción para aplicar la protección y, a continuación, vaya al paso 5.
     
     - **Quitar protección**: seleccione esta opción para quitar la protección si un documento o correo electrónico está protegido. Ahora, vaya al paso 11.
+        
+        La protección configurada previamente se conserva como una plantilla de protección archivada y se volverá a mostrar si se cambia la opción de nuevo a **Proteger**. No verá esta plantilla en Azure Portal pero, si es necesario, puede administrarla con [PowerShell](configure-templates-with-powershell.md). Este comportamiento significa que el contenido sigue estando disponible si tiene esta etiqueta con la configuración de protección aplicada anteriormente.
         
         Tenga en cuenta que para que los usuarios puedan aplicar una etiqueta con esta opción, deben tener permisos para quitar la protección de Rights Management. Este requisito implica que los usuarios deben tener el [derecho de uso](../deploy-use/configure-usage-rights.md) **Exportar** o **Control total**. o bien que sean propietarios de Rights Management (lo que concede automáticamente el derecho de uso Control total) o [superusuarios para Azure Rights Management](../deploy-use/configure-super-users.md). Las plantillas predeterminadas de Azure Rights Management no incluyen los derechos de uso que permiten a los usuarios quitar la protección. 
         
@@ -113,7 +117,7 @@ No es necesario que Exchange esté configurado para Information Rights Managemen
     Si es necesario, ahora puede agregar un segundo conjunto de usuarios y grupos con derechos de uso. Repita el proceso hasta que haya especificado todos los usuarios y grupos y sus permisos correspondientes.
 
     >[!TIP]
-    >Considere la posibilidad de agregar el permiso personalizado **Copiar y extraer contenido** y concedérselo a administradores de recuperación de datos o a personal de otros roles responsable de la recuperación de información. Si es necesario, estos usuarios pueden quitar la protección de archivos y correos electrónicos que se protegerán con esta etiqueta o plantilla. Esta capacidad de quitar la protección en el nivel de permiso para un documento o correo electrónico proporciona un control más minucioso que la [característica de superusuario](configure-super-users.md).
+    >Considere la posibilidad de agregar el permiso personalizado **Guardar como, exportar (EXPORT)** y concedérselo a administradores de recuperación de datos o a personal con otro rol responsable de la recuperación de información. Si es necesario, estos usuarios pueden quitar la protección de archivos y correos electrónicos que se protegerán con esta etiqueta o plantilla. Esta capacidad de quitar la protección en el nivel de permiso para un documento o correo electrónico proporciona un control más minucioso que la [característica de superusuario](configure-super-users.md).
     
     Para todos los usuarios y grupos que ha especificado, en la hoja **Protección**, compruebe si quiere realizar cambios en las opciones siguientes. Tenga en cuenta que esta configuración, al igual que los permisos, no se aplica al [emisor de Rights Management ni al propietario de Rights Management](configure-usage-rights.md#rights-management-issuer-and-rights-management-owner) ni a ningún [superusuario](configure-super-users.md) que haya asignado.
     
@@ -225,6 +229,8 @@ Los nuevos usuarios que agregue podrán abrir documentos y mensajes de correo el
 Esta etiqueta no se puede restringir a Outlook, pero proporciona controles menos restrictivos que utilizar No reenviar. Por ejemplo, en el caso de que los destinatarios puedan copiar desde el correo electrónico o un archivo adjunto, o imprimir y guardar un archivo adjunto.
 
 Si especifica usuarios externos que no tengan ninguna cuenta de Azure AD, asegúrese de indicarles que esta etiqueta no debe usarse para documentos, solo para el correo electrónico. Además, para admitir estos usuarios externos, Exchange Online deben configurarse para las [nuevas capacidades de cifrado de mensajes de Office 365](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e).  
+> [!NOTE]
+> Exchange Online está desplegando una nueva opción, [Solo cifrar](configure-usage-rights.md#encrypt-only-option-for-emails). Esta opción no está disponible para la configuración de etiquetas.
 
 Cuando los usuarios especifican las direcciones de correo electrónico en el cuadro **Para**, las direcciones deben ser de los mismos usuarios que especifique para la configuración de esta etiqueta. Dado que los usuarios pueden pertenecer a grupos y tener más de una dirección de correo electrónico, no es necesario que la que indiquen coincida con la que usted especifique para los permisos. Sin embargo, se trata de la manera más sencilla de asegurarse de que el destinatario quede correctamente autorizado. Para obtener más información sobre cómo se autorizan los permisos para los usuarios, consulte [Preparación de usuarios y grupos para Azure Information Protection](../plan-design/prepare.md). 
 
