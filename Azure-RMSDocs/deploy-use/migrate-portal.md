@@ -4,7 +4,7 @@ description: "Tareas de administración resumidas de Azure Portal que solía rea
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/20/2018
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 57a1073c-02e0-441b-bf49-c6b72fdba24f
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 25604d8537aedb4421b460850ce34723c8047964
-ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
+ms.openlocfilehash: 066e6e028012aa47953f0fe9ce80556f0f0ac6d4
+ms.sourcegitcommit: bb6be1812beb6adf73203c352f73ef3006416848
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="tasks-that-you-used-to-do-with-the-azure-classic-portal"></a>Tareas que solía realizar con el Portal de Azure clásico
 
@@ -46,7 +46,7 @@ Sin embargo, los clientes con una suscripción a Office 365 US Government (Gover
 |Eliminar una plantilla|La eliminación de plantillas puede dar lugar a la inaccesibilidad de los datos, por lo que Azure Portal no admite esta acción. Pero puede eliminar la etiqueta y luego usar el cmdlet de PowerShell [Remove-AadrmTemplate](/powershell/module/aadrm/remove-aadrmtemplate) para quitar la plantilla. <br /><br />Para más información, vea [Eliminación o cambio de orden de una etiqueta en Azure Information Protection](configure-policy-delete-reorder.md).
 |Compatibilidad con varios idiomas|En la selección del menú **ADMINISTRAR**, seleccione **Idiomas** para exportar los campos personalizables que incluyen el nombre y la descripción de la plantilla. Traduzca las cadenas y luego impórtelas al portal. <br /><br />Para más información, vea [Cómo configurar etiquetas y plantillas para distintos idiomas en Azure Information Protection](configure-policy-languages.md).
 |Informes web de Rights Management|Use el cmdlet de PowerShell [Get-AadrmUsageLog](/powershell/module/aadrm/Get-AadrmUsageLog) para descargar registros de uso del servicio Azure Rights Management. Luego puede usar estos datos para crear informes personalizados. <br /><br />Para obtener más información, consulte [Registro y análisis del uso del servicio Azure Rights Management](log-analyze-usage.md).<br /><br />Sugerencia: Busque anuncios de una nueva solución de informes centralizada de Azure Information Protection en el [Blog de Enterprise Mobility + Security](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-information-protection).
-|Activación y desactivación del servicio Rights Management|En las opciones del menú **ADMINISTRAR**, seleccione **Configuración de RMS** o **Activación de la protección**. Esta opción cambiará de nombre próximamente.<br /><br />Para obtener más información, vea [Cómo activar Azure Rights Management desde Azure Portal](activate-azure.md).
+|Activación y desactivación del servicio Rights Management|En las opciones del menú **ADMINISTRAR**, seleccione **Activación de la protección**.<br /><br />Para obtener más información, vea [Cómo activar Azure Rights Management desde Azure Portal](activate-azure.md).
 
 Antes de editar las plantillas o de convertirlas en etiquetas en Azure Portal, vea [Consideraciones para las plantillas en Azure Portal](configure-policy-templates.md#considerations-for-templates-in-the-azure-portal).
 
@@ -59,7 +59,7 @@ Nueva funcionalidad en Azure Portal:
 
 - Puede convertir plantillas en etiquetas, con lo que se administra un único objeto en lugar de una plantilla y una etiqueta de forma independiente. Para obtener instrucciones, vea [Para convertir plantillas en etiquetas](configure-policy-templates.md#to-convert-templates-to-labels).
 
-- Compatibilidad con otros roles de administrador: mientras que en el portal de Azure clásico anterior había que iniciar sesión como administrador global para configurar Azure Rights Management, en Azure Portal puede iniciar sesión para configurar Azure Information Protection con una cuenta que tenga cualquiera de los siguientes roles administrativos: administrador global, administrador de seguridad o administrador de Information Protection. Para más información sobre cada uno de estos roles, vea la sección [Roles disponibles](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#available-roles) de la documentación de Azure Active Directory.
+- Compatibilidad con otros roles de administrador: mientras que en el portal de Azure clásico anterior había que iniciar sesión como administrador global para configurar Azure Rights Management, en Azure Portal puede iniciar sesión para configurar Azure Information Protection con una cuenta que tenga cualquiera de los siguientes roles administrativos: **administrador global**, **administrador de seguridad** o **administrador de Information Protection**. Para más información sobre cada uno de estos roles, vea la sección [Roles disponibles](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#available-roles) de la documentación de Azure Active Directory.
 
 Los cmdlets de PowerShell para crear y administrar plantillas y para activar o desactivar el servicio siguen admitiéndose sin cambios.
 

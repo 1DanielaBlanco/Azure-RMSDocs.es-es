@@ -4,7 +4,7 @@ description: "¿Tiene alguna pregunta que trate específicamente sobre clasifica
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/21/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-ms.openlocfilehash: b9885f020f78bd20bec39c8c1ede2018d6254a7b
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: d3f82cde42985bb837fe47f7d01d7180462bccd3
+ms.sourcegitcommit: 23d98a405057d61a737313c8dfef042996131d3e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>Preguntas más frecuentes sobre la clasificación y el etiquetado en Azure Information Protection
 
@@ -56,7 +56,11 @@ Por ejemplo, la etiqueta **Confidencial** podría contener subetiquetas como **L
 
 Cuando use subetiquetas, no configure distintivos visuales, protección o condiciones en la etiqueta principal. Si usa subniveles, configure estos valores únicamente en la subetiqueta. Si configura estas opciones en la etiqueta principal y en su subetiqueta, la configuración de la subetiqueta tendrá prioridad.
 
-## <a name="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling"></a>Cuando se etiqueta un correo electrónico, ¿los datos adjuntos reciben automáticamente el mismo etiquetado?
+## <a name="how-do-i-prevent-somebody-from-removing-or-changing-a-label"></a>¿Cómo se evita que alguien quite o cambie una etiqueta?
+
+Aunque hay una [configuración de directiva](../deploy-use/configure-policy-settings.md) que requiere que los usuarios indiquen el motivo por el que reducen una etiqueta de clasificación, quitan una etiqueta o quitan la protección, esta opción no impide realizar estas acciones. Para impedir que los usuarios quiten o cambien una etiqueta, el contenido debe estar protegido y los permisos de protección no deben conceder al usuario el [derecho de uso](../deploy-use/configure-usage-rights.md) Exportar o Control total. 
+
+# <a name="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling"></a>Cuando se etiqueta un correo electrónico, ¿los datos adjuntos reciben automáticamente el mismo etiquetado?
 
 No. Al etiquetar un mensaje de correo electrónico que tiene datos adjuntos, dichos datos adjuntos no heredan la misma etiqueta. Los datos adjuntos siguen sin etiqueta o conservan una etiqueta aplicada por separado. Sin embargo, si la etiqueta para el correo electrónico aplica protección, dicha protección se aplica a los datos adjuntos.
 

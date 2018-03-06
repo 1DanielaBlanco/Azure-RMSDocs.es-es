@@ -1,10 +1,10 @@
 ---
-title: PowerShell para plantillas personalizadas de Azure RMS - AIP
-description: "Todo lo que puede hacer en Azure Portal para crear y administrar plantillas de administración de derechos puede hacerlo también desde la línea de comandos mediante PowerShell. Además, puede exportar e importar plantillas, de manera que pueda copiar plantillas entre inquilinos o llevar a cabo ediciones en masa de propiedades complejas en plantillas, como descripciones y nombres multilingües."
+title: "PowerShell para plantillas de protección - Azure Information Protection"
+description: "Todo lo que puede hacer en Azure Portal para crear y administrar plantillas de protección puede hacerlo desde la línea de comandos mediante PowerShell. Además, puede exportar e importar plantillas, de manera que pueda copiar plantillas entre inquilinos o llevar a cabo ediciones en masa de propiedades complejas en plantillas, como descripciones y nombres multilingües."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,28 +12,25 @@ ms.technology: techgroup-identity
 ms.assetid: 30ee2f77-ce16-4113-bcda-6089131849ec
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d8e31eb4f573a149ae39c32c89607775de61bfce
-ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
+ms.openlocfilehash: 051144562b1c26a22953f6e83a41b4902404fd2f
+ms.sourcegitcommit: 85250f5ea80c2ee22197058ff2f65a79503b0f0c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 02/24/2018
 ---
-# <a name="powershell-reference-for-custom-templates"></a>Referencia de PowerShell para plantillas personalizadas
+# <a name="powershell-reference-for-protection-templates"></a>Referencia de PowerShell para plantillas de protección
 
 >*Se aplica a: Azure Information Protection, Office 365*
 
-Todo lo que puede hacer en Azure Portal para crear y administrar plantillas puede hacerlo desde la línea de comandos mediante PowerShell. Además, puede exportar e importar plantillas, de manera que pueda copiar plantillas entre inquilinos o llevar a cabo ediciones en masa de propiedades complejas en plantillas, como descripciones y nombres multilingües.
+La configuración de la protección de Azure Information Protection se guarda en plantillas de protección. Todo lo que puede hacer en Azure Portal para crear y administrar la configuración de protección puede hacerlo desde la línea de comandos mediante PowerShell. 
 
-También puede utilizar la exportación e importación para restaurar y hacer una copia de seguridad de sus plantillas personalizadas. Como práctica recomendada, haga una copia de seguridad de sus plantillas personalizadas periódicamente, de modo que si realiza un cambio que no pretendía, pueda revertir fácilmente a una versión anterior.
+Además, puede exportar e importar plantillas de protección. Estas dos acciones permiten copiar plantillas de protección entre inquilinos o realizar ediciones en masa de propiedades complejas, como descripciones y nombres multilingües.
 
-> [!IMPORTANT]
-> Para usar PowerShell para crear y administrar plantillas de Azure Rights Management se necesita como mínimo la versión 2.0.0.0 del [módulo de Windows PowerShell para Azure RMS](https://go.microsoft.com/fwlink/?LinkId=257721).
-> 
-> Si ya ha instalado este módulo de PowerShell, ejecute el comando siguiente en una ventana de PowerShell para comprobar el número de versión: `(Get-Module aadrm -ListAvailable).Version`
+También puede utilizar la exportación y la importación para efectuar una copia de seguridad de las plantillas de protección y restaurarlas. Como procedimiento recomendado, realice copias de seguridad de las plantillas con regularidad. Después, si hace algún cambio no deliberado en la configuración de protección, puede revertir fácilmente a una versión anterior.
 
 Para obtener instrucciones de instalación, vea [Instalación del módulo de PowerShell para AADRM](install-powershell.md).
 
-Los cmdlets que admite la creación y administración de plantillas:
+Los cmdlets que admiten la creación y la administración de plantillas de protección:
 
 - [Add-AadrmTemplate](/powershell/module/aadrm/add-aadrmtemplate)
 
