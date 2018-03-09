@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 614adfa0aca5b65750704d45f52355780c19c137
-ms.sourcegitcommit: 6bfbf08b935a7a60e437af44aab72db13f87eff1
+ms.openlocfilehash: 6e0f63857e3b11af82dae18c23080aa849a9d03b
+ms.sourcegitcommit: 25146c649d5f4c95debebdf3823785139f2d9ea1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="byok-pricing-and-restrictions"></a>Precio y restricciones de BYOK
 
@@ -25,7 +25,7 @@ ms.lasthandoff: 02/12/2018
 
 Las organizaciones que tienen una suscripción con Azure Information Protection pueden configurar su inquilino de Azure Information Protection para usar una clave administrada por el cliente (BYOK) y [registrar su uso](../deploy-use/log-analyze-usage.md) sin costo adicional. 
 
-La clave debe almacenarse en Azure Key Vault, lo que requiere una suscripción de Azure. Para usar una clave protegida por HSM, debe tener el nivel de servicio Premium de Azure Key Vault. El uso de las claves en el Almacén de claves de Azure conlleva un cargo mensual. Para obtener más información, consulte la [página de precios del Almacén de claves de Azure](https://azure.microsoft.com/en-us/pricing/details/key-vault/).
+La clave debe almacenarse en Azure Key Vault, lo que requiere una suscripción de Azure. Para usar una clave protegida por HSM, debe tener el nivel de servicio Premium de Azure Key Vault. El uso de las claves en el Almacén de claves de Azure conlleva un cargo mensual. Para obtener más información, consulte la [página de precios del Almacén de claves de Azure](https://azure.microsoft.com/pricing/details/key-vault/).
 
 Si usa Azure Key Vault para la clave de inquilino de Azure Information Protection, se recomienda que use un almacén de claves dedicado para esta clave para asegurarse de que solo la use el servicio Azure Rights Management. Esta configuración garantiza que las llamadas de otros servicios no superen los [límites de servicio](/azure/key-vault/key-vault-service-limits) para el almacén de claves, lo que podría limitar los tiempos de respuesta del servicio Azure Rights Management.  
 
