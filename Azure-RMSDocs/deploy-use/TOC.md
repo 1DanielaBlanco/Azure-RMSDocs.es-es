@@ -19,7 +19,7 @@
 ### [Eliminación o cambio de orden de una etiqueta](configure-policy-delete-reorder.md)
 ### [Cambio de una etiqueta](configure-policy-change-label.md)
 ### [Configuración de la protección](configure-policy-protection.md)
-#### [Restricciones de HYOK](configure-adrms-restrictions.md)
+#### [HYOK](configure-adrms-restrictions.md)
 ### [Configuración de distintivos visuales](configure-policy-markings.md)
 ### [Configuración de condiciones](configure-policy-classification.md)
 ### [Configuración de directivas de ámbito](configure-policy-scope.md)
