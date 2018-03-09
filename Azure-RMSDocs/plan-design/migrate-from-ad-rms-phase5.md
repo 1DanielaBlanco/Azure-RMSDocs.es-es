@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2cf486a5319d6addcd150351054d44db62c250b0
-ms.sourcegitcommit: 9b975e66b12a3836003c6c4de139ded4bbf370bf
+ms.openlocfilehash: 0c15bcca607992a2782611286205509377f9fd4d
+ms.sourcegitcommit: c2aecb470d0aab89baae237b892dcd82b3ad223e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="migration-phase-5---post-migration-tasks"></a>Fase 5 de la migración: tareas posteriores a la migración
 
@@ -103,8 +103,6 @@ Por último, si usa Office 2010 y ha habilitado la tarea **Administración de pl
 Este paso está recomendado al finalizar la migración si la implementación de AD RMS usaba el modo criptográfico 1 de RMS. Con la regeneración de la clave, la protección pasa a usar el modo criptográfico 2 de RMS. 
 
 Aunque la implementación de AD RMS usase el modo criptográfico 2, le recomendamos que realice este paso, ya que una clave nueva le ayuda a proteger su inquilino de posibles infracciones de seguridad en la clave de AD RMS.
-
-Sin embargo, no regenere la clave si estaba usando Exchange Online con AD RMS. Exchange Online no admite el cambio de modos criptográficos. 
 
 Al regenerar la clave de inquilino de Azure Information Protection, se archivará la clave activa, y Azure Information Protection empezará a usar la clave que especifique. Esta clave podría ser una clave que cree en Azure Key Vault, o bien la clave predeterminada que se creó automáticamente para su inquilino.
 
