@@ -4,7 +4,7 @@ description: "Fase 4 de la migración desde AD RMS a Azure Information Protectio
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/27/2018
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d516d9c82ce0c7bfd35dbb839cd861a301c3443f
-ms.sourcegitcommit: bb6be1812beb6adf73203c352f73ef3006416848
+ms.openlocfilehash: c4279991a91dee1f4645209eda937ca288716761
+ms.sourcegitcommit: c2aecb470d0aab89baae237b892dcd82b3ad223e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="migration-phase-4---supporting-services-configuration"></a>Fase 4 de la migración: configuración de servicios auxiliares
 
@@ -29,27 +29,20 @@ Use la información siguiente para la fase 4 de la migración desde AD RMS a Azu
 
 ## <a name="step-8-configure-irm-integration-for-exchange-online"></a>Paso 8. Configure la integración de IRM en Exchange Online.
 
+> [!IMPORTANT]
+> Ya que no se puede controlar qué destinatarios eligen los usuarios migrados para los correos electrónicos protegidos, debe asegurarse de que todos los usuarios y grupos habilitados para el correo electrónico de su organización tengan una cuenta en Azure AD que se pueda usar para Azure Information Protection. [Más información](prepare.md)
+
 Independientemente de la topología de claves de inquilino de Azure Information Protection que haya elegido, siga estos pasos:
 
-1. Ejecute el comando [Get-IRMConfiguration](https://technet.microsoft.com/library/dd776120(v=exchg.160\).aspx). Si necesita ayuda para ejecutar este comando, consulte las instrucciones detalladas de [Exchange Online: Configuración de IRM](/..deploy-use/configure-office365.md#exchange-online-irm-configuration).
+1. Para asegurarse de que los usuarios puedan leer mensajes de correo electrónico enviados mediante la protección de AD RMS, asegúrese de disponer de un registro SRV de DNS para su clúster de AD RMS. Si no ha creado el registro SRV de DNS para volver a configurar el cliente en el paso 7, créelo ahora para que se admita en Exchange Online. [Instrucciones](migrate-from-ad-rms-phase3.md#client-reconfiguration-by-using-dns-redirection)
+
+2. Ejecute el comando [Get-IRMConfiguration](https://technet.microsoft.com/library/dd776120(v=exchg.160\).aspx). Si necesita ayuda para ejecutar este comando, consulte las instrucciones detalladas de [Exchange Online: Configuración de IRM](/..deploy-use/configure-office365.md#exchange-online-irm-configuration).
     
     En la salida, compruebe si **AzureRMSLicensingEnabled** está establecido en **True**:
     
     - Si AzureRMSLicensingEnabled está establecido en **True**, no es necesario configurar nada más en este paso. 
     
     - Si AzureRMSLicensingEnabled está establecido en **False**, ejecute los comandos de [Set up new Office 365 Message Encryption capabilities built on top of Azure Information Protection](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e) (Configuración de nuevas funcionalidades del cifrado de mensajes de Office 365 basadas en Azure Information Protection). 
-
-2. Ejecute los siguientes comandos de PowerShell para asegurarse de que los usuarios puedan leer correos electrónicos enviados mediante la protección de AD RMS.
-
-    Sustituya su nombre de dominio de organización por *\<suempresa.dominio>*.
-
-        $irmConfig = Get-IRMConfiguration
-        $list = $irmConfig.LicensingLocation
-        $list += "https://adrms.<yourcompany.domain>/_wmcs/licensing"
-        Set-IRMConfiguration -LicensingLocation $list
-        Set-IRMConfiguration -internallicensingenabled $false
-        Set-IRMConfiguration -internallicensingenabled $true
-
 
 ## <a name="step-9-configure-irm-integration-for-exchange-server-and-sharepoint-server"></a>Step 9. Configuración de la integración de IRM para Exchange Server y SharePoint Server
 

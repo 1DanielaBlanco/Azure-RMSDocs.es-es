@@ -4,7 +4,7 @@ description: "Información para ayudarle a planear y a administrar su clave de i
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2017
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7a3ed134c84c5293ecc2391fdaec32ccfc425910
-ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
+ms.openlocfilehash: 05b6a4facc4158cc7e2cb7ab4067c6b19566ef69
+ms.sourcegitcommit: dd53f3dc2ea2456ab512e3a541d251924018444e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="planning-and-implementing-your-azure-information-protection-tenant-key"></a>Planeamiento e implementación de su clave de inquilino de Azure Information Protection
 
@@ -46,7 +46,7 @@ Decide qué topología de clave de inquilino es la mejor para su organización. 
 
 Decide qué topología de clave de inquilino es la mejor para la organización:
 
-- **Administrada por Microsoft**: Azure Information Protection genera automáticamente una clave de inquilino para la organización. De manera predeterminada, Microsoft usa esta clave para el inquilino y administra la mayoría de los aspectos del ciclo de vida de la clave de inquilino. 
+- **Administrada por Microsoft**: Microsoft genera automáticamente una clave de inquilino para su organización que se usa exclusivamente para Azure Information Protection. De manera predeterminada, Microsoft usa esta clave para el inquilino y administra la mayoría de los aspectos del ciclo de vida de la clave de inquilino. 
     
     Esta es la opción más simple con las mínimas sobrecargas administrativas. En la mayoría de casos, no es necesario ni tan siquiera que sepa que tiene una clave de inquilino. Simplemente, regístrese en Azure Information Protection y Microsoft se encargará del resto del proceso de administración de la clave.
 

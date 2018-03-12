@@ -4,7 +4,7 @@ description: Instrucciones para instalar, configurar y ejecutar el analizador de
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/22/2018
+ms.date: 03/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: badc9ea2db84e0537ab394ccb616c0d172469e35
-ms.sourcegitcommit: 240378d216e386ad760460c50b7a664099c669e9
+ms.openlocfilehash: 3c15fe1e43f5a9d93ad70e6ac401592bbd41754b
+ms.sourcegitcommit: c2aecb470d0aab89baae237b892dcd82b3ad223e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Implementación del analizador de Azure Information Protection para clasificar y proteger automáticamente los archivos
 
@@ -202,10 +202,14 @@ En el primer ciclo de examen, el analizador inspecciona todos los archivos de lo
 
 Puede forzar a que el analizador inspeccione todos los archivos de nuevo mediante la ejecución de [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) con el parámetro `-Type` establecido en **Completo**. Esta configuración es útil si quiere que los informes incluyan todos los archivos y suele usarse cuando el analizador se ejecuta en modo de detección. Cuando finaliza el examen completo, el tipo de examen cambia automáticamente a incremental para que en los análisis posteriores solo se examinen los archivos nuevos o modificados.
 
-Además, se inspeccionan todos los archivos cuando el analizador descarga una directiva de Azure Information Protection con condiciones nuevas o modificadas. El analizador actualiza la directiva cada hora y cuando se inicia el servicio y la directiva es anterior a una hora.
+Además, se inspeccionan todos los archivos cuando el analizador descarga una directiva de Azure Information Protection con condiciones nuevas o modificadas. El analizador actualiza la directiva cada hora y cuando se inicia el servicio y la directiva es anterior a una hora.  
 
 > [!TIP]
-> Si necesita actualizar la directiva antes de este intervalo de una hora, por ejemplo, durante un período de prueba: elimine manualmente el archivo de directiva, **%LocalAppData%\Microsoft\MSIP\Policy.msip** y reinicie el servicio del analizador de Azure Information.
+> Si necesita actualizar la directiva antes de este intervalo de una hora, por ejemplo, durante un período de prueba, elimine manualmente el archivo de directiva, **Policy.msip**, tanto en **%LocalAppData%\Microsoft\MSIP\Policy.msip** como en **%LocalAppData%\Microsoft\MSIP\Scanner**. Después, reinicie el servicio Analizador de Azure Information Protection.
+> 
+> Si ha cambiado la configuración de protección de la directiva, también deberá esperar 15 minutos desde el guardado de la configuración de protección para reiniciar el servicio.
+
+Si el analizador ha descargado una directiva sin ninguna condición automática configurada, la copia del archivo de la directiva que esté en la carpeta del analizador no se actualizará. En tal caso, deberá eliminar el archivo **%LocalAppData%\Microsoft\MSIP\Scanner\Policy.msip** para que el analizador pueda usar un archivo de directiva recientemente descargado que contenga etiquetas configuradas correctamente para las condiciones automáticas.
 
 ## <a name="optimizing-the-performance-of-the-azure-information-protection-scanner"></a>Optimización del rendimiento del analizador de Azure Information Protection
 

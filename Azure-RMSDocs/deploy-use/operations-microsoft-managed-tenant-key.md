@@ -4,7 +4,7 @@ description: "Información sobre las operaciones del ciclo de vida que son perti
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/22/2017
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 3c48cda6-e004-4bbd-adcf-589815c56c55
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5aaf4393e39412a8c8b18678f4edea7a61c148dc
-ms.sourcegitcommit: cd3320fa34acb90f05d5d3e0e83604cdd46bd9a9
+ms.openlocfilehash: dea6fffc32876b548e5daa33a76e7891088f1e9b
+ms.sourcegitcommit: dd53f3dc2ea2456ab512e3a541d251924018444e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="microsoft-managed-tenant-key-life-cycle-operations"></a>Administración de Microsoft: Operaciones del ciclo de vida de claves de inquilino
 
@@ -103,7 +103,7 @@ Si tiene una infracción, la mejor acción que usted o Microsoft puede llevar a 
 
 |Descripción del incidente|Respuesta probable|
 |------------------------|-------------------|
-|Se ha filtrado su clave de inquilino.|Regenere su clave de inquilino. Consulte la sección [Regenerar su clave de inquilino](operations-microsoft-managed-tenant-key.md#rekey-your-tenant-key) de este artículo.|
+|Se ha filtrado su clave de inquilino.|Regenere su clave de inquilino. Consulte la sección [Regenerar su clave de inquilino](#rekey-your-tenant-key) de este artículo.|
 |Un individuo no autorizado o malware han tenido derechos de uso de su clave de inquilino, pero la clave en sí no se ha filtrado.|Regenerar la clave de inquilino no resulta útil aquí y requiere el análisis de la causa principal. Si un error de software o de proceso ha sido el responsable de que un individuo no autorizado obtuviera acceso, dicha situación se debe resolver.|
 |Vulnerabilidad descubierta en el algoritmo de RSA, o longitud de clave, o ataques por fuerza bruta se hacen factibles computacionalmente.|Microsoft necesita actualizar Azure Information Protection para que admita nuevos algoritmos y claves más largas que sean resistentes, así como indicar a todos los clientes que renueven sus claves de inquilino.|
 
