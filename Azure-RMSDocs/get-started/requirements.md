@@ -4,7 +4,7 @@ description: "Identifique los requisitos previos para implementar Azure Informat
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/26/2018
+ms.date: 03/07/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f256d8d972c8f74152f40b92bc5adb8bbc340fc7
-ms.sourcegitcommit: 23d98a405057d61a737313c8dfef042996131d3e
+ms.openlocfilehash: 20726f99a10328fac777dc22cb59372db0ab384d
+ms.sourcegitcommit: c2aecb470d0aab89baae237b892dcd82b3ad223e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="requirements-for-azure-information-protection"></a>Requirements for Azure Information Protection (Requisitos de Azure Information Protection)
 
@@ -26,11 +26,11 @@ Antes de implementar Azure Information Protection para su organización, asegúr
 
 ## <a name="subscription-for-azure-information-protection"></a>Suscripción a Azure Information Protection
 
-**Para clasificación, etiquetado y protección**: debe tener un [plan de Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing). 
+**Para clasificación, etiquetado y protección**: debe tener un [plan de Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection/). 
 
-**Si solo quiere protección**: debe tener un [plan de Office 365 que incluya Rights Management](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf).
+**Solo para protección**: debe tener un [plan de Office 365 que incluya Azure Information Protection](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf).
 
-Para asegurarse de que la suscripción de la organización incluya las características de Azure Information Protection que quiere usar, consulte la [información de suscripción](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) y la [lista de características](https://www.microsoft.com/cloud-platform/azure-information-protection-features) del sitio de Azure Information Protection.
+Para asegurarse de que la suscripción de la organización incluya las características de Azure Information Protection que quiera usar, revise la lista de características en la página [Precios de Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection).
 
 > [!TIP]
 > ¿Quiere saber si su plan de Office 365 o su plan independiente de Exchange Online son compatibles con las [nuevas funcionalidades del cifrado de mensajes de Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801) que permiten enviar correos electrónicos protegidos a direcciones de correo electrónico personales? Por ejemplo, Gmail, Yahoo y Microsoft. Consulte los siguientes recursos:
