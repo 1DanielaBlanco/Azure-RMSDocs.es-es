@@ -4,17 +4,17 @@ description: "Obtenga información sobre cómo está configurada la directiva pr
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/21/2018
+ms.date: 03/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 671281c8-f0d1-42b6-aae3-681d1821e2cf
-ms.openlocfilehash: da8557be0a70cee0e7a207a8ed285f6e843ac626
-ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
+ms.openlocfilehash: d89acde3a2d9e4db529c429fdedf2f3ed05e2fe5
+ms.sourcegitcommit: 335c854eb5c6f387a9369d4b6f1e22160517e6ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="the-default-azure-information-protection-policy"></a>Directiva predeterminada de Azure Information Protection
 
@@ -30,7 +30,11 @@ Puede hacer referencia a los siguientes valores para devolver la directiva a los
 
 Esta versión de la directiva predeterminada es del 31 de julio de 2017.
 
-Esta directiva predeterminada solo se crea si el servicio de Azure Rights Management se ha [activado](activate-service.md) al crear la directiva. Si este servicio no se ha activado, la directiva predeterminada no configurará la protección para las siguientes subetiquetas:
+Esta directiva predeterminada se crea cuando se activa el servicio de Azure Rights Management, que es el caso de nuevos inquilinos a partir de febrero de 2018. Para más información, consulte el anuncio de la entrada de blog [Improvements to the protection stack in Azure Information Protection](https://cloudblogs.microsoft.com/enterprisemobility/2018/03/08/improvements-to-the-protection-stack-in-azure-information-protection) (Mejoras para la pila de protección en Azure Information Protection).
+
+Esta directiva predeterminada también se crea si ha [activado el servicio](activate-service.md) manualmente antes de que se creara la directiva. 
+
+Si este servicio no se ha activado, la directiva predeterminada no configurará la protección para las siguientes subetiquetas:
 
 - **Confidencial\Todos los empleados**
 

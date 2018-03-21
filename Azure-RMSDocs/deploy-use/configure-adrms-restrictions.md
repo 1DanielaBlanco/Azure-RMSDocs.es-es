@@ -4,17 +4,17 @@ description: "Identifique las limitaciones, los requisitos previos y las recomen
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/08/2017
+ms.date: 03/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: 6167b99593bacdf9e717c3b57839440bac39ecec
-ms.sourcegitcommit: dd53f3dc2ea2456ab512e3a541d251924018444e
+ms.openlocfilehash: a0329d66ee71ee815c0700a63172617d1fddf30a
+ms.sourcegitcommit: 29d3d4760131eb2642e17b0732f852b6d8cfe314
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="hold-your-own-key-hyok-requirements-and-restrictions-for-ad-rms-protection"></a>Requisitos y restricciones de Mantenga su propia clave (HYOK) para la protección de AD RMS
 
@@ -89,13 +89,19 @@ Compruebe que la implementación de AD RMS cumple los siguientes requisitos para
         
         - Varios bosques con clústeres de raíz de AD RMS independientes y usuarios sin acceso al contenido protegido por los usuarios en los otros bosques.
         
-        - Varios bosques con clústeres de AD RMS en cada uno. Cada clúster de AD RMS comparte una dirección URL de licencia que apunta al mismo clúster de AD RMS. En este clúster de AD RMS, debe importar todos los certificados de dominio de usuario de confianza (TUD) de todos los otros clústeres de AD RMS. Para obtener más información sobre esta topología, consulte [Dominio de usuario de confianza] (https://technet.microsoft.com/library/dd983944(v=ws.10\).aspx).
+        - Varios bosques con clústeres de AD RMS en cada uno. Cada clúster de AD RMS comparte una dirección URL de licencia que apunta al mismo clúster de AD RMS. En este clúster de AD RMS, debe importar todos los certificados de dominio de usuario de confianza (TUD) de todos los otros clústeres de AD RMS. Para obtener más información acerca de esta topología, consulte [Dominio de usuario de confianza] (https://technet.microsoft.com/library/dd983944(v=ws.10\).aspx).
         
     Cuando haya varios clústeres de AD RMS en bosques diferentes, elimine las etiquetas en la directiva global que aplica la protección de HYOK (AD RMS) y configure una [directiva con ámbito](configure-policy-scope.md) para cada clúster. A continuación, asigne los usuarios de cada clúster a su directiva con ámbito, asegurándose de que no se usen grupos que puedan causar que un usuario quede asignado a más de una directiva con ámbito. El resultado debería ser que cada usuario tenga etiquetas para un único clúster de AD RMS. 
     
     - [Modo criptográfico 2](https://technet.microsoft.com/library/hh867439.aspx): puede confirmar el modo comprobando las propiedades de clúster de AD RMS en la pestaña **General**.
     
-    - Punto de conexión de servicio (SCP) no registrado en Active Directory: cuando se usa la protección de AD RMS con Azure Information Protection, no se utiliza ningún SCP. Si tiene registrado un SCP para la implementación de AD RMS, debe quitarlo para que la [detección de servicios](../rms-client/client-deployment-notes.md#rms-service-discovery) se realice correctamente para la protección de Azure Rights Management.
+    - Cada servidor de AD RMS está configurado para la dirección URL de certificación. [Instrucciones](#configuring-ad-rms-servers-to-locate-the-certification-url) 
+    
+    - Punto de conexión de servicio (SCP) no registrado en Active Directory: cuando se usa la protección de AD RMS con Azure Information Protection, no se utiliza ningún SCP. 
+    
+        - Si tiene registrado un SCP para la implementación de AD RMS, debe quitarlo para que la [detección de servicios](../rms-client/client-deployment-notes.md#rms-service-discovery) se realice correctamente para la protección de Azure Rights Management. 
+        
+        - Si está instalando un nuevo clúster de AD RMS para HYOK, omita el paso para registrar el SCP durante la configuración del primer nodo. Para cada nodo adicional, asegúrese de que el servidor está configurado para la dirección URL de certificación antes de agregar el rol de AD RMS y unirse al clúster existente.
     
     - Los servidores de AD RMS están configurados para usar SSL/TLS con un certificado X.509 válido que sea de confianza para los clientes que se conecten a este: es necesario para entornos de producción, pero no es obligatorio para fines de pruebas o evaluación.
     
@@ -114,6 +120,24 @@ Compruebe que la implementación de AD RMS cumple los siguientes requisitos para
 
 Para obtener información e instrucciones sobre la implementación de AD RMS, consulte [Active Directory Rights Management Services](https://technet.microsoft.com/library/hh831364.aspx) en la biblioteca de Windows Server. 
 
+
+## <a name="configuring-ad-rms-servers-to-locate-the-certification-url"></a>Configuración de servidores de AD RMS para buscar la dirección URL de certificación
+
+1. En cada servidor de AD RMS del clúster, cree la entrada del Registro siguiente:
+
+    `Computer\HKEY_LOCAL_MACHINE\Software\Microsoft\DRMS\GICURL = "<string>"`
+    
+    Para el \<valor de cadena>, especifique uno de los siguientes:
+    
+    - Para clústeres de AD RMS que usan SSL/TLS:
+
+            https://<cluster_name>/_wmcs/certification/certification.asmx
+    
+    - Para clústeres de AD RMS que no usan SSL/TLS (solo redes de prueba):
+        
+            http://<cluster_name>/_wmcs/certification/certification.asmx
+
+2. Reinicie IIS.
 
 ## <a name="locating-the-information-to-specify-ad-rms-protection-with-an-azure-information-protection-label"></a>Buscar la información para especificar la protección de AD RMS con una etiqueta de Azure Information Protection
 

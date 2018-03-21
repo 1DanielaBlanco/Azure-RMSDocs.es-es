@@ -4,7 +4,7 @@ description: "Conozca e identifique los derechos específicos que se usan al pro
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/27/2018
+ms.date: 03/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: faa00eee76e6c084db1a4dfb1d477e491fae5fee
-ms.sourcegitcommit: 3e9b3c2206807e82cc4721a50862b74152906f63
+ms.openlocfilehash: 8411fd46305da69e8fe06ae3851d5066695cdc24
+ms.sourcegitcommit: 29d3d4760131eb2642e17b0732f852b6d8cfe314
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>Configuración de los derechos de uso para Azure Rights Management
 
@@ -95,7 +95,7 @@ Estas plantillas predeterminadas se crean al adquirir la suscripción. Los nombr
 
 ## <a name="do-not-forward-option-for-emails"></a>Opción No reenviar para correos electrónicos
 
-Los clientes y servicios de Exchange (por ejemplo, el cliente de Outlook, la aplicación Outlook Web Access y las reglas de transporte de Exchange) tienen una opción adicional de protección de derechos de información para correos electrónicos: **No reenviar**. 
+Los clientes y servicios de Exchange (por ejemplo, el cliente de Outlook, la aplicación Outlook Web Access y las reglas de flujo de correo de Exchange) tienen una opción adicional de protección de derechos de información para correos electrónicos: **No reenviar**. 
 
 Aunque esta opción aparece para los usuarios (y los administradores de Exchange) como si fuera una plantilla predeterminada de Rights Management que se puede seleccionar, **No reenviar** no es una plantilla. Esto explica por qué no se ve en Azure Portal cuando se visualizan y se administran las plantillas de Azure Rights Management. En realidad, la opción **No reenviar** es un conjunto de derechos que los usuarios aplican dinámicamente a los destinatarios de correo electrónico.
 
@@ -116,7 +116,7 @@ Un usuario quiere enviar información por correo electrónico a personas concret
 
 Cuando Exchange Online usa las nuevas capacidades para el cifrado de mensajes de Office 365, está disponible una nueva opción de correo electrónico: **Solo cifrar**.
 
-Esta opción se está implementando en los inquilinos que usan Exchange Online, inicialmente solo para Outlook en la Web y como otra opción de protección de derechos para una regla de transporte. Para obtener más información, consulte la entrada de blog siguiente del equipo de Office: [Encrypt only rolling out in Office 365 Message Encryption](https://aka.ms/omefeb2018) (Despliegue de la directiva Cifrar solo del cifrado de mensajes de Office 365).
+Esta opción se está implementando en los inquilinos que usan Exchange Online, inicialmente solo para Outlook en la Web y como otra opción de protección de derechos para una regla de flujo de correo. Para obtener más información, consulte la entrada de blog siguiente del equipo de Office: [Encrypt only rolling out in Office 365 Message Encryption](https://aka.ms/omefeb2018) (Despliegue de la directiva Cifrar solo del cifrado de mensajes de Office 365).
 
 Cuando se selecciona esta opción, se cifra el correo electrónico y los destinatarios deben autenticarse. Así, los destinatarios tienen todos los derechos de uso excepto Control total. Esta combinación de derechos de uso implica que los destinatarios no tienen restricciones, excepto que no pueden eliminar la protección. Por ejemplo, un destinatario puede copiar, imprimir y reenviar el correo electrónico. De igual forma, los documentos de Office que se adjunta y se protegen automáticamente se pueden guardar, copiar e imprimir.
 
@@ -165,7 +165,6 @@ El valor predeterminado del período de validez de la licencia de uso de un inqu
 - Al configurar una plantilla mediante PowerShell, el período de validez de la licencia de uso toma su valor del parámetro *LicenseValidityDuration* de los cmdlets [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) y [Add-AadrmTemplate](/powershell/module/aadrm/add-aadrmtemplate).
     
     Para obtener más información e instrucciones para configurar este valor mediante PowerShell, vea la ayuda de cada cmdlet.
-
 
 ## <a name="see-also"></a>Consulte también
 [Configuración y administración de plantillas para Azure Information Protection](configure-policy-templates.md)
