@@ -4,7 +4,7 @@ description: "Instrucciones e información para que los administradores administ
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/13/2018
+ms.date: 03/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 714afa8c839d91ba61043a643433c5045a4aad7d
-ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
+ms.openlocfilehash: 5bd2af4da402c0096cb58bba1d44684ad73656d6
+ms.sourcegitcommit: 335c854eb5c6f387a9369d4b6f1e22160517e6ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>Guía del administrador: Uso de PowerShell con el cliente de Azure Information Protection
 
@@ -535,6 +535,8 @@ La primera vez que se ejecuta este comando se le pide que inicie sesión, que cr
 
 Use los siguientes pasos adicionales e instrucciones para evitar el inicio de sesión interactivo inicio de sesión de una cuenta que etiqueta y protege los archivos. Normalmente, estos pasos adicionales solo son necesarios si a esta cuenta no se le puede otorgar el derecho **inicio de sesión local** derecha, pero se le otorga el derecho **iniciar sesión como trabajo de Batch**. Por ejemplo, esto puede suceder en la cuenta de servicio que ejecuta el detector de Azure Information Protection.
 
+Pasos detallados:
+
 1. Cree un script de PowerShell en el equipo local.
 
 2. Ejecute Set-AIPAuthentication para obtener un token de acceso y cópielo en el Portapapeles.
@@ -543,7 +545,7 @@ Use los siguientes pasos adicionales e instrucciones para evitar el inicio de se
 
 4. Cree una tarea que ejecute el script de PowerShell en el contexto de la cuenta de servicio que etiquetará y protegerá los archivos.
 
-5. Confirme que el token de la cuenta de servicio se guarda y elimine el script de PowerShell.
+5. Confirme que el token se guarda para la cuenta de servicio y elimine el script de PowerShell.
 
 #### <a name="step-1-create-a-powershell-script-on-your-local-computer"></a>Paso 1: Cree un script de PowerShell en el equipo local
 

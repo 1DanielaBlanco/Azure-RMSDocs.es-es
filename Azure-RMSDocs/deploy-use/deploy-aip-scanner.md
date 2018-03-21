@@ -4,7 +4,7 @@ description: Instrucciones para instalar, configurar y ejecutar el analizador de
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/08/2018
+ms.date: 03/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 3c15fe1e43f5a9d93ad70e6ac401592bbd41754b
-ms.sourcegitcommit: c2aecb470d0aab89baae237b892dcd82b3ad223e
+ms.openlocfilehash: f3c302b2379262a6dac87873cb607cf3cd408bcd
+ms.sourcegitcommit: 335c854eb5c6f387a9369d4b6f1e22160517e6ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Implementación del analizador de Azure Information Protection para clasificar y proteger automáticamente los archivos
 
@@ -58,7 +58,7 @@ Antes de instalar el analizador de Azure Information Protection, asegúrese de q
 
 ## <a name="install-the-azure-information-protection-scanner"></a>Instalación del analizador de Azure Information Protection
 
-1. Mediante la cuenta de servicio que ha creado para ejecutar el analizador, inicie sesión en el equipo con Windows Server que ejecutará el analizador.
+1. Inicie sesión en el equipo de Windows Server en el que se ejecutará el analizador. Use una cuenta que tenga derechos de administrador local y que tenga permisos para escribir en la base de datos maestra de SQL Server.
 
 2. Inicie una sesión de Windows PowerShell con la opción **Ejecutar como administrador**.
 
@@ -92,15 +92,17 @@ Ahora que ha instalado el analizador, debe obtener un token de Azure AD para que
     
     Para crear estas aplicaciones, siga las instrucciones de [Cómo etiquetar archivos de manera no interactiva para Azure Information Protection](../rms-client/client-admin-guide-powershell.md#how-to-label-files-non-interactively-for-azure-information-protection) de la guía del administrador.
 
-2. Desde el equipo con Windows Server, todavía con la sesión iniciada con la cuenta de servicio del analizador, ejecute [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication) y especifique los valores que ha copiado en el paso anterior:
+2. En el equipo de Windows Server, si se ha concedido el **derecho de iniciar sesión localmente** al la cuenta del servicio de analizador: inicie sesión con esta cuenta e inicie una sesión de PowerShell. Ejecute [AIPAuthentication conjunto](/powershell/module/azureinformationprotection/set-aipauthentication), especificando los valores que ha copiado en el paso anterior:
     
     ```
     Set-AIPAuthentication -webAppId <ID of the "Web app / API" application>  -webAppKey <key value generated in the "Web app / API" application> -nativeAppId <ID of the "Native" application >
     ```
+    
+    Cuando se le solicite, especifique la contraseña de las credenciales de la cuenta de servicio para Azure AD y, a continuación, haga clic en **Aceptar**.
+    
+    Si se ha concedido el **derecho de iniciar sesión localmente** a la cuenta del servicio de analizador: siga las instrucciones de la sección [Especificación y uso del parámetro Token en Set-AIPAuthentication](../rms-client/client-admin-guide-powershell.md#specify-and-use-the-token-parameter-for-set-aipauthentication) de la guía de administración. 
 
-3. Cuando se le solicite, especifique la contraseña de las credenciales de la cuenta de servicio para Azure AD y, a continuación, haga clic en **Aceptar**.
-
-El analizador tiene ahora un token para autenticarse en Azure AD, que es válido durante un año, dos años, o nunca expira, según la configuración de la **aplicación web/API** en Azure AD. Cuando expire el token, deberá repetir los pasos del 1 al 3.
+El analizador tiene ahora un token para autenticarse en Azure AD, que es válido durante un año, dos años, o nunca expira, según la configuración de la **aplicación web/API** en Azure AD. Cuando expire el token, deberá repetir los pasos 1 y 2.
 
 Ahora está listo para especificar los almacenes de datos que se deben analizar. 
 
@@ -209,7 +211,7 @@ Además, se inspeccionan todos los archivos cuando el analizador descarga una di
 > 
 > Si ha cambiado la configuración de protección de la directiva, también deberá esperar 15 minutos desde el guardado de la configuración de protección para reiniciar el servicio.
 
-Si el analizador ha descargado una directiva sin ninguna condición automática configurada, la copia del archivo de la directiva que esté en la carpeta del analizador no se actualizará. En tal caso, deberá eliminar el archivo **%LocalAppData%\Microsoft\MSIP\Scanner\Policy.msip** para que el analizador pueda usar un archivo de directiva recientemente descargado que contenga etiquetas configuradas correctamente para las condiciones automáticas.
+Si el analizador ha descargado una directiva sin ninguna condición automática configurada, la copia del archivo de la directiva que esté en la carpeta del analizador no se actualizará. En tal caso, deberá eliminar el archivo de directiva, **Policy.msip**, de **%LocalAppData%\Microsoft\MSIP\Policy.msip** y **%LocalAppData%\Microsoft\MSIP\Scanner** para que el analizador pueda usar un archivo de directiva recientemente descargado que contenga etiquetas configuradas correctamente para las condiciones automáticas.
 
 ## <a name="optimizing-the-performance-of-the-azure-information-protection-scanner"></a>Optimización del rendimiento del analizador de Azure Information Protection
 
