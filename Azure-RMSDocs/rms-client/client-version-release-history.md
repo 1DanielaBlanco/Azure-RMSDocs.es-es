@@ -1,22 +1,22 @@
 ---
-title: "Cliente de Azure Information Protection&colon; historial de publicación de versiones y directiva de soporte técnico"
-description: "Consulte las novedades o los cambios en una versión del cliente de Azure Information Protection para Windows y conozca la directiva de ciclo de vida de soporte técnico."
+title: Cliente de Azure Information Protection&colon; historial de publicación de versiones y directiva de soporte técnico
+description: Consulte las novedades o los cambios en una versión del cliente de Azure Information Protection para Windows y conozca la directiva de ciclo de vida de soporte técnico.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/06/2018
+ms.date: 03/19/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 19390c05719ebfee7e3442437d3f5bdfd303c652
-ms.sourcegitcommit: d32d1f5afa5ee9501615a6ecc4af8a4cd4901eae
+ms.openlocfilehash: 10fe839ff24994af0c50fff6aeac303d57a19ea6
+ms.sourcegitcommit: 65d6b0ecfbca5071afe29e63aea6226ad7a911b8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Cliente de Azure Information Protection: historial de publicación de versiones y directiva de soporte técnico
 
@@ -154,30 +154,6 @@ Correcciones para una mejor experiencia del usuario:
 - Validación de correo electrónico cuando los usuarios especifican permisos personalizados. Además, ahora pueden especificarse varias direcciones de correo electrónico al presionar Entrar.
 
 - La etiqueta principal no se muestra cuando todas sus etiquetas secundarias están configuradas para la protección y el cliente no tiene una edición de Office que admita la protección. 
-
-## <a name="version-172100"></a>Versión 1.7.210.0
-
-**Lanzamiento**: 06/06/2017
-
-Esta versión incluye la versión MSIPC 1.0.2217.1 del cliente RMS.
-
-**Nuevas características**:
-
-- Nuevo cmdlet de PowerShell, [Set-AIPFileClassification](/powershell/module/azureinformationprotection/Set-AIPFileClassification). Cuando ejecuta este cmdlet, revisa el contenido del archivo y aplica automáticamente etiquetas a los archivos no etiquetados, según las condiciones que especifica en la directiva de Azure Information Protection.
-
-**Correcciones**:
-
-- Todos los cmdlets de etiquetado y clasificación ahora se admiten en equipos no conectados a Internet pero que tienen una directiva de Azure Information Protection válida.
-
-- Para mantener la coherencia, un parámetro de salida del cmdlet [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) se cambia de inglés británico (**IsLabelled**) a inglés de Estados Unidos (**IsLabeled**). Si tiene scripts o procesos automatizados que buscan este parámetro, actualice la ortografía de este parámetro.
-
-- Correcciones generales para mantener la estabilidad que incluyen:
-
-    - En Outlook: correcciones de bloqueos, alto consumo de memoria y problemas de visualización de los menús.
-    
-    - En Word, Excel y PowerPoint: correcciones para un alto uso de CPU, problemas de visualización cuando se guardan archivos Excel de gran tamaño o la aplicación deja de responder. 
-    
-    Además en estas aplicaciones, para mejorar el rendimiento de Office 2016 con SharePoint Online y OneDrive para la empresa, el etiquetado automático y recomendado se aplica cuando se cierra el archivo en lugar de hacerlo cuando se guarda (ya sea que se guarde automáticamente o el usuario elija guardarlo). Del mismo modo, si la opción **All documents and email must have a label** (Todos los documentos y correos electrónicos deben tener una etiqueta) está habilitada, no se pide a los usuarios que seleccionen una etiqueta hasta que se cierra el archivo. La excepción es para Word 2016 y Excel 2016 y el usuario selecciona la opción **Guardar como**. Luego, esta acción desencadena estos comportamientos de etiquetado si están configurados. 
 
 ## <a name="next-steps"></a>Pasos siguientes
 
