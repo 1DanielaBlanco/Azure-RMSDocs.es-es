@@ -1,22 +1,22 @@
 ---
-title: "Retirada y desactivación de Azure RMS"
-description: "Información e instrucciones en caso de que ya no quiera usar el servicio de protección basado en la nube de Azure Information Protection."
+title: Retirada y desactivación de Azure RMS
+description: Información e instrucciones en caso de que ya no quiera usar el servicio de protección basado en la nube de Azure Information Protection.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 0b1c2064-0d01-45ae-a541-cebd7fd762ad
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 18eff00f6b316c48dbca5a9a8ec2c2ab4e58f76c
-ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
+ms.openlocfilehash: fc2fd8d043c04c3820de30d2087ff498b4ea4e90
+ms.sourcegitcommit: 758e0cfeb6c05f4c6f5310dc36fbf0c02c256eed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="decommissioning-and-deactivating-protection-for-azure-information-protection"></a>Retirada y desactivación de la protección de Azure Information Protection
 
@@ -26,7 +26,7 @@ Usted siempre tiene el control sobre si su organización protege contenido media
 
 Si ya no necesita acceso continuo al contenido protegido anteriormente, desactive el servicio y deje que expire su suscripción a Azure Information Protection. Por ejemplo, esto sería adecuado si ha completado la prueba de Azure Information Protection antes de implementarlo en un entorno de producción.
 
-Pero si ha implementado Azure Information Protection en producción y ha protegido documentos y correos electrónicos, debe asegurarse de que tiene una copia de la clave de inquilino de Azure Information Protection antes de desactivar el servicio Azure Rights Management. Asegúrese de que cuenta con una copia de la clave antes de que expire la suscripción, para estar seguro de que sigue teniendo acceso al contenido protegido con Azure Rights Management después de que se haya desactivado el servicio. Si ha usado la solución “Bring Your Own Key” (BYOK) para generar y administrar su propia clave en un HSM, ya dispondrá de una clave de inquilino de Azure Information Protection. Pero si fue Microsoft quien se encargó de administrarla (valor predeterminado), consulte las instrucciones para exportar su clave de inquilino en el artículo [Operaciones para la clave de inquilino de Azure Rights Management](operations-tenant-key.md).
+Pero si ha implementado Azure Information Protection en producción y ha protegido documentos y correos electrónicos, debe asegurarse de que tiene una copia de la clave de inquilino de Azure Information Protection antes de desactivar el servicio Azure Rights Management. Asegúrese de que cuenta con una copia de la clave antes de que expire la suscripción, para estar seguro de que sigue teniendo acceso al contenido protegido con Azure Rights Management después de que se haya desactivado el servicio. Si ha usado la solución “Bring Your Own Key” (BYOK) para generar y administrar su propia clave en un HSM, ya dispondrá de una clave de inquilino de Azure Information Protection. Pero si fue Microsoft quien se encargó de administrarla (valor predeterminado), consulte las instrucciones para exportar su clave de inquilino en el artículo [Operaciones para la clave de inquilino de Azure Information Protection](operations-tenant-key.md).
 
 > [!TIP]
 > Incluso después de que expire la suscripción, el inquilino de Azure Information Protection seguirá estando disponible para el uso de contenido durante un período adicional. Sin embargo, ya no podrá exportar su clave de inquilino.

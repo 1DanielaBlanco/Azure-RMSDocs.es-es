@@ -1,22 +1,22 @@
 ---
-title: "Actualización de plantillas de Azure RMS - AIP"
-description: "Cuando usa el servicio Azure Rights Management, se descargan de forma automática plantillas a los ordenadores cliente para que los usuarios puedan seleccionarlas desde sus aplicaciones. Sin embargo, es posible que tengas que tomar medidas adicionales si quieres efectuar cambios en las plantillas."
+title: Actualización de plantillas de Azure RMS - AIP
+description: Cuando usa el servicio Azure Rights Management, se descargan de forma automática plantillas a los ordenadores cliente para que los usuarios puedan seleccionarlas desde sus aplicaciones. Sin embargo, es posible que tengas que tomar medidas adicionales si quieres efectuar cambios en las plantillas.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/22/2018
+ms.date: 03/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 73ba65e3c453b1e06e02925a0b3ecc09a0bca1f0
-ms.sourcegitcommit: 240378d216e386ad760460c50b7a664099c669e9
+ms.openlocfilehash: 0f3c7f45789339aca0186ad2855c2e25f931182f
+ms.sourcegitcommit: 758e0cfeb6c05f4c6f5310dc36fbf0c02c256eed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="refreshing-templates-for-users-and-services"></a>Actualización de plantillas para usuarios y servicios
 
@@ -70,22 +70,24 @@ Si modifica el Registro de los equipos que ejecutan Office 2016, Office 2013 o l
 
 1.  Con un editor del Registro, elimine los datos del valor **LastUpdatedTime** . Por ejemplo, en los datos puede aparecer **2015-04-20T15:52**. Elimine 2015-04-20T15:52 para que no se muestre ningún dato. Use la información siguiente para localizar la ruta de acceso del Registro y eliminar estos datos del valor del Registro.
 
-    **Ruta de acceso del registro:** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC\<*MicrosoftRMS_FQDN*>\Template
+    **Ruta de acceso del registro:** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC\\<*MicrosoftRMS_FQDN*>\Template\\<*user_alias*>
 
     **Tipo:** REG_SZ
 
     **Valor:** LastUpdatedTime
 
     > [!TIP]
-        > En la ruta de acceso del Registro, <*MicrosoftRMS_FQDN*> hace referencia al FQDN de servicio de Microsoft RMS. Si desea comprobar este valor:
+    > En la ruta de acceso del Registro, <*MicrosoftRMS_FQDN*> hace referencia al FQDN de servicio de Microsoft RMS. Si desea comprobar este valor:
 
-    > 1.  Ejecute el cmdlet [Get-AadrmConfiguration](https://msdn.microsoft.com/library/windowsazure/dn629410.aspx) para Azure RMS. Si aún no ha instalado el módulo de Windows PowerShell para Azure RMS, vea [Instalación del módulo de PowerShell para AADRM](install-powershell.md).
-    > 2.  En la salida, identifique el valor **LicensingIntranetDistributionPointUrl** .
+    > Ejecute el cmdlet [Get-AadrmConfiguration](https://msdn.microsoft.com/library/windowsazure/dn629410.aspx) para Azure RMS. Si aún no ha instalado el módulo de Windows PowerShell para Azure RMS, vea [Instalación del módulo de PowerShell para AADRM](install-powershell.md).
     >
-    >     Por ejemplo: **LicensingIntranetDistributionPointUrl   : https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing**
-    > 3.  En el valor, quite **https://** y **/_wmcs/licensing** de esta cadena. El valor restante es el FQDN de servicio de Microsoft RMS. En nuestro ejemplo, el FQDN de servicio de Microsoft RMS sería el valor siguiente:
+    > En la salida, identifique el valor **LicensingIntranetDistributionPointUrl** .
     >
-    >     **5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
+    > Por ejemplo: **LicensingIntranetDistributionPointUrl   : https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing**
+    > 
+    > En el valor, quite **https://** y **/_wmcs/licensing** de esta cadena. El valor restante es el FQDN de servicio de Microsoft RMS. En nuestro ejemplo, el FQDN de servicio de Microsoft RMS sería el valor siguiente:
+    >
+    >**5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
 
 2.  Elimine la carpeta siguiente y todos los archivos que contenga: **%localappdata%\Microsoft\MSIPC\Templates**
 
