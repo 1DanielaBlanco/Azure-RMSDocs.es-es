@@ -6,17 +6,17 @@ ms.author: cabailey
 manager: mbaldwin
 ms.date: 12/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6e0f63857e3b11af82dae18c23080aa849a9d03b
-ms.sourcegitcommit: 25146c649d5f4c95debebdf3823785139f2d9ea1
+ms.openlocfilehash: ac9324a0418a557682714b6f2b5621a2d9f7530e
+ms.sourcegitcommit: 758e0cfeb6c05f4c6f5310dc36fbf0c02c256eed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="byok-pricing-and-restrictions"></a>Precio y restricciones de BYOK
 
@@ -45,7 +45,7 @@ Otras ventajas de usar Azure Key Vault para la clave de inquilino de Azure Infor
 
 - Azure Key Vault proporciona la separación del rol como práctica recomendada de seguridad reconocida. Los administradores de Azure Information Protection pueden centrarse en administrar la protección y la clasificación de datos, mientras que los administradores de Azure Key Vault pueden centrarse en administrar claves de cifrado y las directivas especiales que requieran para la seguridad o el cumplimiento.
 
-- Algunas organizaciones tienen restricciones en lo que respecta al lugar en el que debe residir la clave maestra. Azure Key Vault proporciona un alto nivel de control sobre el lugar en el que se almacenará la clave maestra, ya que el servicio está disponible en muchas regiones de Azure. Actualmente puede elegir entre 28 regiones de Azure, aunque esta cifra probablemente aumente. Para obtener más información, consulte la página [Productos disponibles por región] (https://azure.microsoft.com/regions/services/) en el sitio de Azure.
+- Algunas organizaciones tienen restricciones en lo que respecta al lugar en el que debe residir la clave maestra. Azure Key Vault proporciona un alto nivel de control sobre el lugar en el que se almacenará la clave maestra, ya que el servicio está disponible en muchas regiones de Azure. Actualmente puede elegir entre 28 regiones de Azure, aunque esta cifra probablemente aumente. Para obtener más información, consulte la página [Productos disponibles por región] (https://azure.microsoft.com/regions/services/)) en el sitio de Azure.
 
 Además de la administración de claves, Azure Key Vault ofrece a los administradores de seguridad la misma experiencia de administración para el almacenamiento, el acceso y la administración de certificados y secretos (por ejemplo, contraseñas) para otros servicios y aplicaciones que usan cifrado. 
 
@@ -59,8 +59,8 @@ Si ya ha habilitado IRM de Exchange Online importando el dominio de publicación
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Si ha tomado la decisión de administrar su propia clave, vaya a [Implementing your Azure Rights Management tenant key](plan-implement-tenant-key.md#implementing-byok-for-your-azure-information-protection-tenant-key) (Implementación de su clave de inquilino de Azure Rights Management).
+Si ha tomado la decisión de administrar su propia clave, vaya a [Implementación de BYOK para la clave de inquilino de Azure Information Protection](plan-implement-tenant-key.md#implementing-byok-for-your-azure-information-protection-tenant-key).
 
-Si ha decidido permanecer con la configuración predeterminada con la que Microsoft administra su clave, consulte la sección [Pasos siguientes](plan-implement-tenant-key.md#next-steps) del artículo Planeamiento e implementación de la clave de inquilino de Azure Rights Management
+Si ha decidido permanecer con la configuración predeterminada con la que Microsoft administra su clave, consulte la sección [Pasos siguientes](plan-implement-tenant-key.md#next-steps) del artículo Planeamiento e implementación de su clave de inquilino de Azure Information Protection.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

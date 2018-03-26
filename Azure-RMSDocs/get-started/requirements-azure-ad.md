@@ -4,19 +4,19 @@ description: Identifique los requisitos de Azure AD para usar Azure Information 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/11/2017
+ms.date: 03/19/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2a079dbc1df01c8c9402d7d79e3f587f13b44654
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: 62c9bba17c561fda86393ed4e76c00895613d0e3
+ms.sourcegitcommit: 1b44f6bd25b756fa85fa5f47aa4c0486f9486832
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="azure-active-directory-requirements-for-azure-information-protection"></a>Requisitos de Azure Active Directory para Azure Information Protection
 
@@ -89,7 +89,13 @@ A continuación, configure la solución MFA:
 
         Para más información sobre este escenario, consulte [Programa Works with Office 365 – Identity ahora simplificado](https://blogs.office.com/2014/01/30/the-works-with-office-365-identity-program-now-streamlined/) en el blog de Office.
 
-El conector de Rights Management no es compatible con MFA. Si implementa este conector para los servidores locales, para el conector deberá usar una cuenta que no requiera MFA.
+El conector de Rights Management y el analizador de Azure Information Protection no son compatibles con MFA. Si implementa el conector o un analizador, las cuentas siguientes no deben requerir MFA:
+
+- La cuenta que instala y configura el conector.
+
+- La cuenta de entidad de servicio en Azure AD, **Aadrm_S-1-7-0**, que crea el conector.
+ 
+- La cuenta de servicio que ejecuta el analizador.
 
 ## <a name="next-steps"></a>Pasos siguientes
 Para comprobar otros requisitos, vea [Requisitos para Azure Information Protection](requirements-azure-rms.md).

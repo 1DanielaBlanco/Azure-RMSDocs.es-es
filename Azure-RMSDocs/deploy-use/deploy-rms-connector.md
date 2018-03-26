@@ -1,22 +1,22 @@
 ---
-title: "Implementación del conector de Rights Management - AIP"
-description: "Instrucciones para implementar el conector de RMS, que ofrece protección de datos para las implementaciones locales existentes que usan Exchange Server, SharePoint Server o Windows Server y la Infraestructura de clasificación de archivos (FCI)."
+title: Implementación del conector de Rights Management - AIP
+description: Instrucciones para implementar el conector de RMS, que ofrece protección de datos para las implementaciones locales existentes que usan Exchange Server, SharePoint Server o Windows Server y la Infraestructura de clasificación de archivos (FCI).
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 90e7e33f-9ecc-497b-89c5-09205ffc5066
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6560381eb07d582d817d00cc76be880998f676f2
-ms.sourcegitcommit: 6000258a9f973a3ab8e608eda57b88a469e7b754
+ms.openlocfilehash: 87746ad526f191907ad2670604c357e5e926b84e
+ms.sourcegitcommit: 758e0cfeb6c05f4c6f5310dc36fbf0c02c256eed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="deploying-the-azure-rights-management-connector"></a>Implementación del conector de Azure Rights Management
 
@@ -51,7 +51,7 @@ Puede usar el conector RMS incluso si algunos de los usuarios se conectan a serv
 
 Si administra su propia clave de inquilino para Azure RMS, con el escenario Bring your own key (BYOK, Traiga su propia clave), el conector RMS y los servidores locales que la usan no tienen acceso al módulo de seguridad de hardware (HSM) que contiene la clave de inquilino. Esto se debe a que todas las operaciones criptográficas que utilizan la clave de inquilino se ejecutan en Azure RMS y no a nivel local.
 
-Para obtener más información sobre la administración de la clave de inquilino, consulte [Planeamiento e implementación de la clave de inquilino de Azure Rights Management](../plan-design\plan-implement-tenant-key.md).
+Para obtener más información sobre la administración de la clave de inquilino, consulte [Planeamiento e implementación de la clave de inquilino de Azure Information Protection](../plan-design\plan-implement-tenant-key.md).
 
 ## <a name="prerequisites-for-the-rms-connector"></a>Requisitos previos para el conector RMS
 Antes de instalar el conector RMS, asegúrese de que se cumplen los requisitos siguientes.
