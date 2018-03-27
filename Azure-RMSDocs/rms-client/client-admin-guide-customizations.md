@@ -4,7 +4,7 @@ description: Información sobre cómo personalizar el cliente de Azure Informati
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/20/2018
+ms.date: 03/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: e5c71068f979c13b2d8c9ee7c9c5c43e2ad3a7ad
-ms.sourcegitcommit: 32b233bc1f8cef0885d9f4782874f1781170b83d
+ms.openlocfilehash: bb478a91a0af035bc07a77e4aae8c2f6c19eab4a
+ms.sourcegitcommit: c66da7a66f25a3c080e43c548e7945fec35ed751
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Guía del administrador: Configuraciones personalizadas del cliente de Azure Information Protection
 
@@ -204,7 +204,7 @@ Para establecer esta configuración avanzada, especifique las cadenas siguientes
 
 ## <a name="migrate-labels-from-secure-islands-and-other-labeling-solutions"></a>Migración de las etiquetas de Secure Islands y otras soluciones de etiquetado
 
-Esta opción de configuración está actualmente en versión preliminar y sujeta a cambios. Además, esta opción de configuración necesita la versión preliminar del cliente.
+Esta opción de configuración está actualmente en versión preliminar y sujeta a cambios. Además, esta opción de configuración necesita la versión preliminar del cliente o el analizador de Azure Information Protection.
 
 Esta opción utiliza una [configuración de cliente avanzada](#how-to-configure-advanced-client-configuration-settings-in-the-portal) que se debe definir en Azure Portal. 
 
@@ -316,13 +316,13 @@ Ahora, cuando un usuario abra y guarde uno de estos documentos de Office, se den
 
 ## <a name="integration-with-exchange-message-classification-for-a-mobile-device-labeling-solution"></a>Integración con la clasificación de mensajes de Exchange para una solución de etiquetado de dispositivo móvil
 
-A pesar de que Outlook en la Web todavía no es compatible de forma nativa con la clasificación y la protección de Azure Information Protection, puede usar la clasificación de mensajes de Exchange para extender las etiquetas de Azure Information Protection a los usuarios móviles.
+A pesar de que Outlook en la Web todavía no es compatible de forma nativa con la clasificación y la protección de Azure Information Protection, puede usar la clasificación de mensajes de Exchange para extender las etiquetas de Azure Information Protection a los usuarios móviles cuando usan Outlook en la Web. Outlook Mobile no admite la clasificación de mensajes de Exchange.
 
 Para lograr esta solución: 
 
 1. Use el cmdlet [New-MessageClassification](https://technet.microsoft.com/library/bb124400) de Exchange PowerShell para crear clasificaciones de mensajes con la propiedad Name que se asigna a los nombres de sus etiquetas en la directiva de Azure Information Protection. 
 
-2. Cree una regla de transporte de Exchange para cada etiqueta. Aplique la regla cuando las propiedades del mensaje incluyan la clasificación que ha configurado, y modifique las propiedades del mensaje para establecer un encabezado de mensaje. 
+2. Cree una regla de flujo de correo de Exchange para cada etiqueta. Aplique la regla cuando las propiedades del mensaje incluyan la clasificación que ha configurado, y modifique las propiedades del mensaje para establecer un encabezado de mensaje. 
 
     En el caso del encabezado del mensaje, encontrará la información que es necesario especificar al inspeccionar los encabezados de Internet de un correo electrónico que haya enviado y clasificado con una etiqueta de Azure Information Protection. Busque el encabezado **msip_labels** y la cadena inmediatamente posterior, hasta e incluido el punto y coma. En el ejemplo anterior:
     
@@ -330,9 +330,9 @@ Para lograr esta solución:
     
     Luego, para el encabezado del mensaje en la regla, especifique **msip_labels** para el encabezado y el resto de la cadena para el valor del encabezado. Por ejemplo:
     
-    ![Ejemplo de regla de transporte de Exchange Online que establece el encabezado del mensaje para una etiqueta de Azure Information Protection](../media/exchange-rule-for-message-header.png)
+    ![Ejemplo de regla de flujo de correo de Exchange Online que establece el encabezado del mensaje para una etiqueta de Azure Information Protection](../media/exchange-rule-for-message-header.png)
 
-Antes de probar esta configuración, recuerde que, al crear o editar reglas de transporte, normalmente se produce un retraso (espere una hora, por ejemplo). Cuando se aplica la regla y los usuarios usan Outlook en la web o un cliente de dispositivo móvil que admite la protección de Rights Management, tienen lugar los siguientes eventos: 
+Antes de probar esta configuración, recuerde que, al crear o editar reglas de flujo de correo, normalmente se produce un retraso (espere una hora, por ejemplo). Cuando se aplica la regla y los usuarios usan Outlook en la Web o un cliente de dispositivo móvil que admite IRM de Exchange ActiveSync: 
 
 - Los usuarios seleccionan la clasificación de mensajes de Exchange y envían el correo electrónico.
 
@@ -340,11 +340,11 @@ Antes de probar esta configuración, recuerde que, al crear o editar reglas de t
 
 - Cuando los destinatarios ven el correo electrónico en Outlook y tienen instalado el cliente de Azure Information Protection, verán asignada la etiqueta de Azure Information Protection, así como los correspondientes encabezado, pie de página o marca de agua del correo electrónico. 
 
-Si las etiquetas de Azure Information Protection aplican la protección de administración de derechos, agregue dicha protección a la configuración de reglas: seleccione la opción para modificar la seguridad de los mensajes, aplique la protección de derechos y luego seleccione la plantilla de RMS o la opción No reenviar.
+Si las etiquetas de Azure Information Protection aplican protección, agregue dicha protección a la configuración de reglas: seleccione la opción para modificar la seguridad de los mensajes, aplique la protección de derechos y luego seleccione la plantilla de RMS o la opción No reenviar.
 
-También puede configurar reglas de transporte para realizar la asignación inversa. Cuando se detecta una etiqueta de Azure Information Protection, se establece una clasificación de mensajes de Exchange correspondiente.
+También puede configurar reglas de flujo de correo para realizar la asignación inversa. Cuando se detecta una etiqueta de Azure Information Protection, se establece una clasificación de mensajes de Exchange correspondiente.
 
-- Para cada etiqueta de Azure Information Protection, cree una regla de transporte que se aplique cuando el encabezado **msip_labels** incluya el nombre de la etiqueta (por ejemplo, **General**) y aplique una clasificación de mensajes que se asigne a ella.
+- Para cada etiqueta de Azure Information Protection, cree una regla de flujo de correo que se aplique cuando el encabezado **msip_labels** incluya el nombre de la etiqueta (por ejemplo, **General**) y aplique una clasificación de mensajes que se asigne a ella.
 
 
 ## <a name="next-steps"></a>Pasos siguientes
