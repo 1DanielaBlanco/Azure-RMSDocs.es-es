@@ -1,26 +1,26 @@
 ---
-title: "Configuración del Registro para el conector de Rights Management - AIP"
-description: "Información sobre la configuración del registro de servidores mediante el conector RMS. El método recomendado para configurar estos servidores es utilizar la herramienta de configuración del servidor del conector Microsoft RMS."
+title: Configuración del Registro para el conector de Rights Management - AIP
+description: Información sobre la configuración del registro de servidores mediante el conector RMS. El método recomendado para configurar estos servidores es utilizar la herramienta de configuración del servidor del conector Microsoft RMS.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ed3e9a3d-0f7c-4abc-9d0b-aa3b18403d39
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 976493cd23c7690420094f80cade32179c3f7998
-ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
+ms.openlocfilehash: bc0cb2a7349bf19ee19a42bdb283cd86297748bc
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="registry-setting-for-the-rights-management-connector"></a>Configuración del Registro para el conector de Rights Management
 
->*Se aplica a: Azure Information Protection, Office 365*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 
 Use las tablas de las secciones siguientes solamente si quiere agregar o comprobar de forma manual la configuración del Registro en los servidores que ejecutan Exchange, SharePoint o Windows Server. La configuración del Registro configura los servidores para usar el [conector RMS](deploy-rms-connector.md). El método recomendado para configurar estos servidores es utilizar la herramienta de configuración del servidor del conector RMS de Microsoft.

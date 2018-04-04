@@ -1,26 +1,26 @@
 ---
-title: "Terminología de Azure Information Protection"
-description: "¿No entiende el significado de una palabra, una frase o un acrónimo relacionados con Microsoft Azure Information Protection? Busque aquí la definición de los términos y las abreviaturas que son específicos de Azure Information Protection o que tienen un significado específico cuando se usan en el contexto de este servicio."
+title: Terminología de Azure Information Protection
+description: ¿No entiende el significado de una palabra, una frase o un acrónimo relacionados con Microsoft Azure Information Protection? Busque aquí la definición de los términos y las abreviaturas que son específicos de Azure Information Protection o que tienen un significado específico cuando se usan en el contexto de este servicio.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 12/15/2017
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: da20ac2ea327b5b97f021c85f62d97b9aa1b9824
-ms.sourcegitcommit: fc205eae0c0b378d41da5f1eceb0c699e60ad66f
+ms.openlocfilehash: b3513a4ec00abf8727e2a5e07f9b4a67c96b7574
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="terminology-for-azure-information-protection"></a>Terminología de Azure Information Protection
 
->*Se aplica a: Azure Information Protection, Office 365*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 ¿No entiende el significado de una palabra, una frase o un acrónimo relacionados con Microsoft Azure Information Protection? Busque aquí la definición de los términos y las abreviaturas que son específicos de Azure Information Protection o que tienen un significado específico cuando se usan en el contexto de este servicio.
 

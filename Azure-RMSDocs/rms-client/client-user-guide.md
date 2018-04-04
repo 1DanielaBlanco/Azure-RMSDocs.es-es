@@ -1,26 +1,26 @@
 ---
-title: "Guía del usuario de Azure Information Protection"
-description: "El cliente de Azure Information Protection para Windows le ayuda a proteger documentos y correos electrónicos importantes frente a personas que no deben verlos, aunque se reenvíe su correo electrónico o se guarde su documento en otra ubicación."
+title: Guía del usuario de Azure Information Protection
+description: El cliente de Azure Information Protection para Windows le ayuda a proteger documentos y correos electrónicos importantes frente a personas que no deben verlos, aunque se reenvíe su correo electrónico o se guarde su documento en otra ubicación.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 2cf46bf9-7d23-4f49-b5c1-7ed7b71c858f
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: f1ea192bcacc856b1a4452e2ad3b21f4de45d511
-ms.sourcegitcommit: 92bbef77091c66300e0d2acce60c064ffe314752
+ms.openlocfilehash: 1e6ce5660a0ccc8385c6ab728c4d2c1c202023ed
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="azure-information-protection-user-guide"></a>Guía del usuario de Azure Information Protection
 
->*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 8.1, Windows 8 y Windows 7 con SP1*
+>*Se aplica a: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8 y Windows 7 con SP1*
 
 El cliente de Azure Information Protection para Windows le ayuda a proteger documentos y correos electrónicos importantes frente a personas que no deben verlos, aunque se reenvíe su correo electrónico o se guarde su documento en otra ubicación. También puede usar este cliente para abrir documentos que otras personas hayan protegido mediante la tecnología de protección de Rights Management de Azure Information Protection.
 

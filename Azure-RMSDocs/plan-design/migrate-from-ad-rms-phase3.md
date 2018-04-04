@@ -1,26 +1,26 @@
 ---
-title: "Migración de AD RMS-Azure Information Protection: fase 3"
-description: "Fase 3 de la migración desde AD RMS a Azure Information Protection, donde se describe el paso 7 de la migración de AD RMS a Azure Information Protection."
+title: 'Migración de AD RMS-Azure Information Protection: fase 3'
+description: Fase 3 de la migración desde AD RMS a Azure Information Protection, donde se describe el paso 7 de la migración de AD RMS a Azure Information Protection.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 18ddadd2f46cdf20d437b2f754084bc25f737d8e
-ms.sourcegitcommit: c2aecb470d0aab89baae237b892dcd82b3ad223e
+ms.openlocfilehash: e5e1f0fa043a0a15ef34c9e4d5690e974cf6bddd
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="migration-phase-3---client-side-configuration"></a>Fase 3 de la migración: configuración del lado cliente
 
->*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Office 365*
+>*Se aplica a: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Use la información siguiente para la fase 3 de la migración desde AD RMS a Azure Information Protection. En estos procedimientos se describe el paso 7 de la [Migración desde AD RMS a Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md).
 
@@ -132,7 +132,7 @@ Si no puede realizar la migración de todos los clientes de Windows a la vez, ej
     > [!IMPORTANT]
     > Como antes, tenga cuidado y no incluya espacios adicionales antes ni después de las direcciones.
     > 
-    > Además, si los servidores de AD RMS usan certificados de servidor SSL/TLS, compruebe si los valores de la dirección URL de administración de licencias incluyen el número de puerto **443** en la cadena. Por ejemplo: https:// rms.treyresearch.net:443/_wmcs/licensing. Para encontrar esta información en la consola de Active Directory Rights Management Services, haga clic en el nombre del clúster y vea la información de **Detalles del clúster**. Si ve el número de puerto 443 incluido en la dirección URL, incluya este valor cuando modifique el script. Por ejemplo, https://rms.treyresearch.net:**443**. 
+    > Además, si los servidores de AD RMS usan certificados de servidor SSL/TLS, compruebe si los valores de la dirección URL de administración de licencias incluyen el número de puerto **443** en la cadena. Por ejemplo: https:// rms.treyresearch.net:443/_wmcs/licensing. Para encontrar esta información en la consola de Active Directory Rights Management Services, haga clic en el nombre del clúster y vea la información de **Detalles del clúster**. Si ve el número de puerto 443 incluido en la dirección URL, incluya este valor cuando modifique el script. Por ejemplo: https://rms.treyresearch.net:**443**. 
     
     Si necesita recuperar la dirección URL de servicio de Azure Rights Management para *&lt;YourTenantURL&gt;*, consulte [Para identificar la dirección URL de servicio de Azure Rights Management](migrate-from-ad-rms-phase1.md#to-identify-your-azure-rights-management-service-url).
 

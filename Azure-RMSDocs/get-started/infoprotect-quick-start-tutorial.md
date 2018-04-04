@@ -1,24 +1,24 @@
 ---
-title: "Tutorial de inicio rápido de Azure Information Protection"
-description: "Un tutorial introductorio para probar rápidamente Microsoft Azure Information Protection para su organización, que debería durar unos 20 minutos."
+title: Tutorial de inicio rápido de Azure Information Protection
+description: Un tutorial introductorio para probar rápidamente Microsoft Azure Information Protection para su organización, que debería durar unos 20 minutos.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 03/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
-ms.openlocfilehash: e20b3e4d84b2230cf7bcbc64c31970fd53d5a7ae
-ms.sourcegitcommit: c2aecb470d0aab89baae237b892dcd82b3ad223e
+ms.openlocfilehash: 997c4c873eb7c9340fb765f513c1e06cd3725fdd
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="quick-start-tutorial-for-azure-information-protection"></a>Tutorial de inicio rápido de Azure Information Protection 
 
->*Se aplica a: Azure Information Protection*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 Use este tutorial para probar rápidamente Azure Information Protection con solo 5 pasos que deberían tardar menos de 20 minutos. Este tutorial está diseñado para ser una demostración autoguiada para mostrar rápidamente algunas de las características y funcionalidades que ofrece Azure Information Protection. No incluye todas las características disponibles y no está destinado a ser una guía de implementación para su organización. Si está buscando implementar Azure Information Protection en su organización, vea la [documentación del mapa de ruta de implementación](../plan-design/deployment-roadmap.md). 
 

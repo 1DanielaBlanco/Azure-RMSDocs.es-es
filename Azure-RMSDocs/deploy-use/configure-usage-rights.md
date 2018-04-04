@@ -4,7 +4,7 @@ description: Conozca e identifique los derechos específicos que se usan al prot
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/21/2018
+ms.date: 03/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,15 +12,15 @@ ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d597be35e509fae655ee18fe9fc0344603385382
-ms.sourcegitcommit: 58cd89cc6f6407648854e2e2d28a61325b5c8922
+ms.openlocfilehash: 0ec4710618227573fa7442a8fe1f0bd52b2c8f6f
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>Configuración de los derechos de uso para Azure Rights Management
 
->*Se aplica a: Azure Information Protection, Office 365*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Cuando establezca protección en archivos o correos electrónicos con el servicio Azure Rights Management de Azure Information Protection y no use ninguna plantilla, deberá configurar los derechos de uso por su cuenta. Además, al configurar plantillas o etiquetas para la protección de Azure Rights Management, se seleccionan los derechos de uso que se aplicarán automáticamente cuando los usuarios, los administradores o los servicios configurados seleccionen la plantilla o etiqueta. Por ejemplo, en Azure Portal, puede seleccionar los roles que configuran una agrupación lógica de derechos de uso o puede configurar los derechos individuales.
 
@@ -97,11 +97,15 @@ Estas plantillas predeterminadas se crean al adquirir la suscripción. Los nombr
 
 Los clientes y servicios de Exchange (por ejemplo, el cliente de Outlook, la aplicación Outlook Web Access y las reglas de flujo de correo de Exchange) tienen una opción adicional de protección de derechos de información para correos electrónicos: **No reenviar**. 
 
-Aunque esta opción aparece para los usuarios (y los administradores de Exchange) como si fuera una plantilla predeterminada de Rights Management que se puede seleccionar, **No reenviar** no es una plantilla. Esto explica por qué no se ve en Azure Portal cuando se visualizan y se administran las plantillas de Azure Rights Management. En realidad, la opción **No reenviar** es un conjunto de derechos que los usuarios aplican dinámicamente a los destinatarios de correo electrónico.
+Aunque esta opción aparece para los usuarios (y los administradores de Exchange) como si fuera una plantilla predeterminada de Rights Management que se puede seleccionar, **No reenviar** no es una plantilla. Esto explica por qué no se ve en Azure Portal al visualizar y administrar las plantillas de protección. En realidad, la opción **No reenviar** es un conjunto de derechos de uso que los usuarios aplican dinámicamente a los destinatarios de correo electrónico.
 
 Cuando se aplica la opción **No reenviar** a un correo electrónico, el correo electrónico se cifra y se deben autenticar los destinatarios. Así, los destinatarios no pueden reenviarlo, imprimirlo, copiar contenido, guardar datos adjuntos ni guardarlo con otro nombre. Por ejemplo, en el cliente de Outlook, el botón Reenviar no está disponible, como tampoco lo están las opciones de menú **Guardar como**, **Guardar datos adjuntos** e **Imprimir**, y no se pueden agregar ni cambiar los destinatarios de los cuadros **Para**, **CC** o **CCO**.
 
-Hay una diferencia importante entre aplicar la opción **No reenviar** y aplicar una plantilla que no concede el derecho Reenviar a un correo electrónico: la opción **No reenviar** usa una lista dinámica de usuarios autorizados basada en los destinatarios del mensaje original que elige el usuario, mientras que los derechos de la plantilla tienen una lista estática de usuarios autorizados que el administrador ha especificado anteriormente. ¿Cuál es la diferencia? Veamos un ejemplo: 
+Los [documentos de Office](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM) sin protección que se adjuntan automáticamente al correo electrónico heredan las mismas restricciones. Los derechos de uso que se aplican a estos documentos son los siguientes: **Editar contenido, Editar**; **Guardar**; **Ver, Abrir, Leer**; y **Permitir macros**. Si quiere que cada archivo adjunto tenga derechos de uso diferentes, o en el caso de que el archivo adjunto sea un documento de Office incompatible con esta protección heredada, proteja el archivo antes de adjuntarlo al correo electrónico. Luego, puede asignar los derechos de uso específicos que necesite para el archivo. 
+
+### <a name="difference-between-do-not-forward-and-not-granting-the-forward-usage-right"></a>Diferencia entre la opción No reenviar y no conceder el derecho de uso Reenviar
+
+Hay una diferencia importante entre aplicar la opción **No reenviar** y aplicar una plantilla que no concede el derecho de uso **Reenviar** a un correo electrónico: la opción **No reenviar** usa una lista dinámica de usuarios autorizados basada en los destinatarios del mensaje original que elige el usuario, mientras que los derechos de la plantilla tienen una lista estática de usuarios autorizados que el administrador ha especificado anteriormente. ¿Cuál es la diferencia? Veamos un ejemplo: 
 
 Un usuario quiere enviar información por correo electrónico a personas concretas del departamento de marketing que no debe compartirse con nadie más. ¿Debe proteger el correo electrónico con una plantilla que restringe los derechos (ver, responder y guardar) al departamento de marketing?  ¿O debe elegir la opción **No reenviar**? Ambas opciones harían que los destinatarios no pudieran reenviar el correo electrónico. 
 
@@ -118,7 +122,9 @@ Cuando Exchange Online usa las nuevas capacidades para el cifrado de mensajes de
 
 Esta opción se está implementando en los inquilinos que usan Exchange Online, inicialmente solo para Outlook en la Web y como otra opción de protección de derechos para una regla de flujo de correo. Para obtener más información, consulte la entrada de blog siguiente del equipo de Office: [Encrypt only rolling out in Office 365 Message Encryption](https://aka.ms/omefeb2018) (Despliegue de la directiva Cifrar solo del cifrado de mensajes de Office 365).
 
-Cuando se selecciona esta opción, se cifra el correo electrónico y los destinatarios deben autenticarse. Así, los destinatarios tienen todos los derechos de uso excepto Control total. Esta combinación de derechos de uso implica que los destinatarios no tienen restricciones, excepto que no pueden eliminar la protección. Por ejemplo, un destinatario puede copiar, imprimir y reenviar el correo electrónico. De igual forma, los documentos de Office que se adjunta y se protegen automáticamente se pueden guardar, copiar e imprimir.
+Cuando se selecciona esta opción, se cifra el correo electrónico y los destinatarios deben autenticarse. Así, los destinatarios tienen todos los derechos de uso salvo **Guardar como, Exportar** y **Control total**. Esta combinación de derechos de uso implica que los destinatarios no tienen restricciones, excepto que no pueden eliminar la protección. Por ejemplo, un destinatario puede copiar del correo electrónico, imprimirlo y reenviarlo. 
+
+De forma similar, los [documentos de Office](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM) sin protección que se adjuntan al correo electrónico heredan los mismos permisos. Estos documentos se protegen automáticamente y los destinatarios los pueden guardar, editar, copiar e imprimir. Cuando un destinatario guarda el documento, se puede guardar con un nombre nuevo e incluso con un formato distinto, pero solo están disponibles los formatos de archivo compatibles con la protección para que el documento no se pueda guardar sin la protección original. Si quiere que cada archivo adjunto tenga derechos de uso diferentes, o en el caso de que el archivo adjunto sea un documento de Office incompatible con esta protección heredada, proteja el archivo antes de adjuntarlo al correo electrónico. Luego, puede asignar los derechos de uso específicos que necesite para el archivo.
 
 ## <a name="rights-management-issuer-and-rights-management-owner"></a>Emisor de Rights Management y propietario de Rights Management
 

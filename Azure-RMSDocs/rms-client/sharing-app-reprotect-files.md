@@ -1,27 +1,27 @@
 ---
 title: Cambio de los permisos en archivos protegidos por RMS - AIP
-description: "Cuando un archivo está protegido por Rights Management, puede cambiar los permisos protegiéndolo de nuevo y especificando todos los usuarios que deben tener acceso a él y los permisos que quiere otorgarles."
-keywords: 
+description: Cuando un archivo está protegido por Rights Management, puede cambiar los permisos protegiéndolo de nuevo y especificando todos los usuarios que deben tener acceso a él y los permisos que quiere otorgarles.
+keywords: ''
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 5ac121b3-d7a0-40e4-8fe7-90bf4cf796f1
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 3290b9436f75c2d0d37c401dd2e0be11bcf2d554
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 766acd68d1c5c5f59530b0b61fadee315185ec4a
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="change-permissions-on-files-that-have-been-protected-by-rights-management"></a>Change permissions on files that have been protected by Rights Management (Cambiar permisos de archivos protegidos por Rights Management)
 
->*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 con SP1, Windows 8 y Windows 8.1*
+>*Se aplica a: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 con SP1, Windows 8 y Windows 8.1*
 
 Cuando un archivo está protegido por Rights Management, puede cambiar los permisos protegiéndolo de nuevo y especificando todos los usuarios que deben tener acceso a él y los permisos que quiere otorgarles.
 
@@ -91,7 +91,7 @@ Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de 
 
 -   [¿Qué desea hacer?](sharing-app-user-guide.md#what-do-you-want-to-do)
 
-## <a name="see-also"></a>Véase también
+## <a name="see-also"></a>Consulte también
 [Guía de usuario de la aplicación Rights Management sharing](sharing-app-user-guide.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

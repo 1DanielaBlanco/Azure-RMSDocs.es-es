@@ -1,26 +1,26 @@
 ---
-title: "Cómo los servicios y las aplicaciones de Office son compatibles con Azure RMS desde AIP"
-description: "Cómo las aplicaciones de Office de usuario final (como Word y Outlook) y los servicios de Office (como Exchange y SharePoint) pueden usar el servicio Azure Rights Management desde AIP para ayudar a proteger los datos de una organización."
+title: Cómo los servicios y las aplicaciones de Office son compatibles con Azure RMS desde AIP
+description: Cómo las aplicaciones de Office de usuario final (como Word y Outlook) y los servicios de Office (como Exchange y SharePoint) pueden usar el servicio Azure Rights Management desde AIP para ayudar a proteger los datos de una organización.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: eb40f6d2b43f175af71fd58b3bef4eb3d992152b
-ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
+ms.openlocfilehash: be1c41c2f17720d522770f9e023c7468602ceb67
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-office-applications-and-services-support-azure-rights-management"></a>Cómo las aplicaciones y los servicios de Office admiten Azure Rights Management 
 
->*Se aplica a: Azure Information Protection, Office 365*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Las aplicaciones de Office de usuario final y los servicios de Office pueden usar el servicio Azure Rights Management desde Azure Information Protection con el objetivo de proteger los datos de la organización. Estas aplicaciones de Office son Word, Excel, PowerPoint y Outlook. Los servicios de Office son Exchange y SharePoint. Las configuraciones de Office que admiten el servicio Azure Rights Management suelen usar el término **Information Rights Management (IRM)**.
 
@@ -48,7 +48,7 @@ Cuando se usa Exchange Online o Exchange Server, es posible configurar opciones 
 
 -   **Reglas de transporte** que un administrador configura para aplicar automáticamente plantillas de protección a mensajes de correo electrónico. Estas reglas se basan en propiedades como el remitente, el destinatario, el asunto del mensaje y el contenido. Como concepto, estas reglas son similares a las reglas de protección, pero no permiten que los usuarios quiten la protección. Las reglas pueden aplicarse a Outlook en la Web y a mensajes de correo electrónico enviados desde un dispositivo móvil. Además, estas reglas no cifran los mensajes de correo electrónico antes de enviarlos desde el cliente. Para más información, consulte [Creación de una regla de protección de transporte](https://technet.microsoft.com/library/dd302432.aspx) en la biblioteca de Exchange.
 
--   **Directivas de prevención de pérdida de datos (DLP)** que contienen conjuntos de condiciones para filtrar mensajes de correo electrónico y tomar medidas para tratar de evitar la pérdida de contenido confidencial, por ejemplo, información personal o de tarjetas de crédito. Las sugerencias de las directivas se pueden usar cuando se detecta información confidencial, para alertar a los usuarios de que es posible que sea necesario aplicar protección. Para obtener más información, consulte [Prevención de pérdida de datos](https://technet.microsoft.com/library/jj150527(v=exchg.160\).aspx) en la biblioteca de Exchange.
+-   **Directivas de prevención de pérdida de datos (DLP)** que contienen conjuntos de condiciones para filtrar mensajes de correo electrónico y tomar medidas para tratar de evitar la pérdida de contenido confidencial, por ejemplo, información personal o de tarjetas de crédito. Las sugerencias de las directivas se pueden usar cuando se detecta información confidencial, para alertar a los usuarios de que es posible que sea necesario aplicar protección. Para más información, vea [Prevención de pérdida de datos](https://technet.microsoft.com/library/jj150527(v=exchg.160\).aspx) en la biblioteca de Exchange.
 
 -   **Cifrado de mensajes de Office 365**, que admite enviar un mensaje de correo protegido y documentos de Office protegidos como datos adjuntos a cualquier dirección en cualquier dispositivo. Las cuentas de usuario que no usan Azure AD pueden usar la experiencia web, compatible con el uso de proveedores de identidades sociales o de un código de acceso de un solo uso. Para más información, vea [Set up new Office 365 Message Encryption capabilities built on top of Azure Information Protection](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e) (Configuración de nuevas capacidades del cifrado de mensajes de Office 365 sobre Azure Information Protection) desde el sitio web de Office.
 

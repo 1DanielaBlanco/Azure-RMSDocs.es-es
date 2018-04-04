@@ -1,26 +1,26 @@
 ---
 title: Seguimiento de documentos para Azure Information Protection
-description: "Instrucciones e información para que los administradores configuren y usen Seguimiento de documentos para Azure Information Protection."
+description: Instrucciones e información para que los administradores configuren y usen Seguimiento de documentos para Azure Information Protection.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 01/29/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 983ecdc9-5631-48b8-8777-f4cbbb4934e8
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 727ff705c4a90a9c029820332983b4cf7bec5e05
-ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
+ms.openlocfilehash: 04b6f65495c6b7251d000ff438ecab20c3a44db7
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="admin-guide-configuring-and-using-document-tracking-for-azure-information-protection"></a>Guía del administrador: Configuración y uso de Seguimiento de documentos para Azure Information Protection
 
->*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 con SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 con SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012 y Windows Server 2008 R2*
 
 Si tiene una [suscripción que admite el seguimiento de documentos](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features), el sitio de seguimiento de documentos está habilitado de manera predeterminada para todos los usuarios de su organización. El seguimiento de documentos proporciona información para usuarios y administradores sobre cuándo se accedió a un documento protegido y, en caso de ser necesario, se puede revocar un documento al que se hizo seguimiento.
 
@@ -66,7 +66,7 @@ Cuando los usuarios inician sesión en el sitio de Seguimiento de documentos, pu
 ![Icono Administrador en el sitio de Seguimiento de documentos](../media/tracking-site-admin-icon.png)
 
 > [!NOTE] 
-> Si no ve este icono, a pesar de ser un administrador global, es porque aún no ha compartido ningún documento. En este caso, utilice la siguiente dirección URL para acceder al sitio de seguimiento de documentos: https://portal.azurerms.com/#/admin
+> Si no ve este icono, a pesar de ser un administrador global, es porque aún no ha compartido ningún documento. En este caso, use la siguiente dirección URL para acceder al sitio de seguimiento de documentos: https://portal.azurerms.com/#/admin
 
 Las acciones que realiza en el modo de administrador se auditan y registran en los archivos de registro de uso y debe confirmar para continuar. Para obtener más información sobre este registro, consulte la sección siguiente.
 

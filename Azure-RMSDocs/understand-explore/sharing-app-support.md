@@ -1,26 +1,26 @@
 ---
-title: "Aplicación RMS sharing para Windows y plataformas móviles - AIP"
-description: "Cómo la aplicación RMS sharing admite Azure RMS como una aplicación gratuita y descargable que es necesaria para ofrecer compatibilidad con Office 2010, pero también se recomienda para equipos con Windows, equipos con Mac y dispositivos móviles."
+title: Aplicación RMS sharing para Windows y plataformas móviles - AIP
+description: Cómo la aplicación RMS sharing admite Azure RMS como una aplicación gratuita y descargable que es necesaria para ofrecer compatibilidad con Office 2010, pero también se recomienda para equipos con Windows, equipos con Mac y dispositivos móviles.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 16/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1da6e372-2b3f-4af7-80f7-6b9073dff7f5
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b7c2b05d9bf360b08ea6a35efd959559132df864
-ms.sourcegitcommit: 3a2177df7a23d65f93d3ce2eea3fc3e042ea901c
+ms.openlocfilehash: f0b7204695ade31df0f6132684fd379704a4b338
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="rms-sharing-application-for-windows-and-mobile-platforms"></a>Aplicación de uso compartido RMS para Windows y plataformas móviles
 
->*Se aplica a: Azure Information Protection, Office 365*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 > [!IMPORTANT]
 > **Finalización de notificación de compatibilidad**: la aplicación Rights Management sharing para Windows se va a sustituir por el [cliente de Azure Information Protection](../rms-client/aip-client.md). La aplicación anterior dejará de ser compatible el 31 de enero de 2019. 

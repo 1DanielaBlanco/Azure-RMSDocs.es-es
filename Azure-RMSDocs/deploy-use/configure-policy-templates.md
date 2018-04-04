@@ -1,26 +1,26 @@
 ---
 title: Configurar y administrar plantillas para Azure Information Protection
-description: "Configure y administre plantillas de administración de derechos desde Azure Portal."
+description: Configure y administre plantillas de administración de derechos desde Azure Portal.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: c9c2ef1338f1d5e1c3d360ad261f89f652a804ec
-ms.sourcegitcommit: bb6be1812beb6adf73203c352f73ef3006416848
+ms.openlocfilehash: 4f0cc5be090a425c7be28c81f20b85eef485772d
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>Configuración y administración de plantillas para Azure Information Protection
 
->*Se aplica a: Azure Information Protection*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 >[!NOTE]
 >Esta funcionalidad reemplaza la configuración de plantillas personalizadas en el Portal de Azure clásico. El portal clásico ya no está disponible, por lo que debe usar Azure Portal. Para una asignación de procedimientos rápida, vea [Tareas que solía realizar con el Portal de Azure clásico](migrate-portal.md).

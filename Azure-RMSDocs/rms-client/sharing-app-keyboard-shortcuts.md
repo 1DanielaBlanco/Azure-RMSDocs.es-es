@@ -1,26 +1,26 @@
 ---
-title: "Métodos abreviados de teclado de la aplicación RMS sharing - AIP"
-description: "Instrucciones sobre cómo utilizar métodos abreviados de teclado con la aplicación RMS sharing para Windows."
+title: Métodos abreviados de teclado de la aplicación RMS sharing - AIP
+description: Instrucciones sobre cómo utilizar métodos abreviados de teclado con la aplicación RMS sharing para Windows.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 72760134-94e0-4699-b20c-07b96aa061f1
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ebb40568e63cf51a8b6473ca872f1e0ed9ec30ea
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 39787218e1c9e1d130748aa309ae49790b64275a
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="use-keyboard-shortcuts-in-the-rights-management-sharing-application"></a>Usar métodos abreviados de teclado en la aplicación Rights Management sharing
 
->*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 con SP1, Windows 8 y Windows 8.1*
+>*Se aplica a: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 con SP1, Windows 8 y Windows 8.1*
 
 Cuando use la aplicación RMS sharing, presione la tecla **Alt** para ver las teclas de acceso disponibles y luego presione la tecla **Alt** + la clave de acceso para seleccionar una opción.
 
@@ -35,7 +35,7 @@ Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de 
 
 -   [¿Qué desea hacer?](sharing-app-user-guide.md#what-do-you-want-to-do)
 
-## <a name="see-also"></a>Véase también
+## <a name="see-also"></a>Consulte también
 [Guía de usuario de la aplicación Rights Management sharing](sharing-app-user-guide.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

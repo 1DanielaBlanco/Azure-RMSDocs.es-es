@@ -1,24 +1,24 @@
 ---
-title: "Paso 1 del tutorial de inicio rápido - AIP"
-description: "Paso 1 de un tutorial de introducción para probar rápidamente Azure Information Protection: active el servicio de protección."
+title: Paso 1 del tutorial de inicio rápido - AIP
+description: 'Paso 1 de un tutorial de introducción para probar rápidamente Azure Information Protection: active el servicio de protección.'
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f6dbb143-96f7-4a9c-8208-be9280d69de9
-ms.openlocfilehash: 952431771e89e934be4a725ece4f3d9cd47165fe
-ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
+ms.openlocfilehash: cfeed994bb23469694e906132e175aabf925290e
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="step-1-activate-protection"></a>Paso 1: Activar la protección
  
->*Se aplica a: Azure Information Protection*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 > [!NOTE]
 >Aunque el servicio de Azure Rights Management esté activado para su inquilino, siga este paso para confirmar el estado de activación. Entre las instrucciones se incluye iniciar sesión en Azure Portal y crear la hoja Azure Information Protection, a fin de prepararse para el paso 2.

@@ -1,26 +1,26 @@
 ---
-title: "Azure Information Protection también se conoce como"
+title: Azure Information Protection también se conoce como
 description: Azure Information Protection ha cambiado de nombre varias veces y es posible que lo conozca por su nombre anterior.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 04/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 0af1b2ff-46a7-4a38-803c-5a730e4ff56d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 81e49f6904f43552dc6222f489c3719f02e59928
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: ee5c0406f351c8d46b42c25793a0f94823bf4ef3
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="azure-information-protection---also-known-as-"></a>Azure Information Protection también se conoce como…
 
->*Se aplica a: Azure Information Protection, Office 365*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Azure Information Protection (en ocasiones abreviado como AIP) ha evolucionado a partir de una larga historia de tecnologías establecidas de Microsoft que implementan la protección de la administración de derechos. Debido a esta evolución, quizá conozca esta solución por uno de sus nombres anteriores. O bien, puede ver referencias a estos nombres en la documentación, la interfaz de usuario y los archivos de registro. 
 

@@ -1,26 +1,26 @@
 ---
-title: "Instalación del cliente de Azure Information Protection para los usuarios"
-description: "Instrucciones e información para administradores para implementar el cliente de Azure Information Protection para Windows en redes empresariales."
+title: Instalación del cliente de Azure Information Protection para los usuarios
+description: Instrucciones e información para administradores para implementar el cliente de Azure Information Protection para Windows en redes empresariales.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/13/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: a62c8c1c27855b25e5de69bd162d524bf1851890
-ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
+ms.openlocfilehash: 2a3daec687739956bb0b7bd235b69cea30039171
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>Guía del administrador: Instalación del cliente de Azure Information Protection para los usuarios
 
->*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 con SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
+>*Se aplica a: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 con SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012 y Windows Server 2008 R2*
 
 Antes de instalar el cliente de Azure Information Protection en su red empresarial, compruebe que los equipos tienen las versiones necesarias de sistema operativo y aplicaciones para Azure Information Protection: [Requisitos para Azure Information Protection](../get-started/requirements-azure-rms.md). 
 
@@ -164,7 +164,7 @@ Utilice el procedimiento siguiente para identificar el valor que se especificar�
 
     Por ejemplo: **LicensingIntranetDistributionPointUrl   : https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing**
 
-3. En el valor, quite **/_wmcs/licensing** de esta cadena. Por ejemplo: **https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**.
+3. En el valor, quite **/_wmcs/licensing** de esta cadena. Por ejemplo: **https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
 
     La cadena restante es el valor que se especificará para el parámetro ServiceLocation.
 

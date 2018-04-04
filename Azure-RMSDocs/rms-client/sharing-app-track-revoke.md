@@ -1,26 +1,26 @@
 ---
-title: "Seguimiento y revocación de documentos cuando se utiliza la aplicación RMS sharing - AIP"
-description: "Después de haber protegido los documentos mediante la aplicación RMS sharing, puede realizar el seguimiento de cuántas personas usan tales documentos protegidos. Si es necesario, también puede revocar el acceso a estos documentos cuando ya no desee seguir compartiéndolos."
+title: Seguimiento y revocación de documentos cuando se utiliza la aplicación RMS sharing - AIP
+description: Después de haber protegido los documentos mediante la aplicación RMS sharing, puede realizar el seguimiento de cuántas personas usan tales documentos protegidos. Si es necesario, también puede revocar el acceso a estos documentos cuando ya no desee seguir compartiéndolos.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 61f349ce-bdd2-45c1-acc5-bc83937fb187
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 71f08e7500fbc9326bed3a5b37d694ecc5e37984
-ms.sourcegitcommit: 02e48f0e5137ba777ec9a2bccde08130e6075c20
+ms.openlocfilehash: 86da59d624d197aaad25e3f6fb04cfdd47ad1c3e
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="track-and-revoke-your-documents-when-you-use-the-rms-sharing-application"></a>Seguimiento y revocación de documentos cuando se utiliza la aplicación RMS sharing
 
->*Se aplica a: Azure Information Protection, Windows 10, Windows 7 con SP1, Windows 8 y Windows 8.1*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 con SP1, Windows 8 y Windows 8.1*
 
 Una vez que haya protegido sus documentos mediante la aplicación RMS sharing, si su organización usa Azure Information Protection en lugar de Active Directory Rights Management Services, podrá realizar un seguimiento del uso que se hace de sus documentos protegidos. Si es necesario, también puede revocar el acceso a estos documentos cuando ya no desee seguir compartiéndolos. Para ello, use el **sitio de seguimiento de documentos**, al que puede tener acceso desde equipos Windows, equipos Mac e incluso tabletas y teléfonos.
 
@@ -38,7 +38,7 @@ Cuando tenga acceso a este sitio, inicie sesión para hacer un seguimiento de su
 
 - Si quiere realizar un seguimiento de los documentos compartidos y revocarlos para otros usuarios: los administradores de Azure Information Protection pueden hacer clic en el icono Administrador para realizar estas acciones. Solo los administradores ven este icono.
     
-    Nota: Si no ve este icono, a pesar de ser un administrador global, es porque aún no ha compartido ningún documento. En este caso, utilice la siguiente dirección URL para acceder al sitio de seguimiento de documentos: https://portal.azurerms.com/#/admin
+    Nota: Si no ve este icono, a pesar de ser un administrador global, es porque aún no ha compartido ningún documento. En este caso, use la siguiente dirección URL para acceder al sitio de seguimiento de documentos: https://portal.azurerms.com/#/admin
 
 -   Si tiene alguna pregunta o quiere proporcionar comentarios sobre el sitio de seguimiento de documentos: Haga clic en el icono de ayuda para obtener acceso a [P+F sobre el seguimiento de documentos](http://go.microsoft.com/fwlink/?LinkId=523977).
 
@@ -103,7 +103,7 @@ Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de 
 
 -   [¿Qué desea hacer?](sharing-app-user-guide.md#what-do-you-want-to-do)
 
-## <a name="see-also"></a>Véase también
+## <a name="see-also"></a>Consulte también
 [Guía de usuario de la aplicación Rights Management sharing](sharing-app-user-guide.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

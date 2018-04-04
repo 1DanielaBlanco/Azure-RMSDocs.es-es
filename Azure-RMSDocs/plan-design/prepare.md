@@ -1,26 +1,26 @@
 ---
-title: "Preparación de usuarios y grupos para Azure Information Protection"
-description: "Compruebe que tiene las cuentas de usuario y grupo que necesita para empezar a clasificar, etiquetar y proteger los documentos y correos electrónicos de su organización."
+title: Preparación de usuarios y grupos para Azure Information Protection
+description: Compruebe que tiene las cuentas de usuario y grupo que necesita para empezar a clasificar, etiquetar y proteger los documentos y correos electrónicos de su organización.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 45f75834d687247808107708e082ff61d8510899
-ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
+ms.openlocfilehash: 7d9c58649eb06b614a25e28c909d34318ea80133
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="preparing-users-and-groups-for-azure-information-protection"></a>Preparación de usuarios y grupos para Azure Information Protection
 
->*Se aplica a: Azure Information Protection, Office 365*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Antes de implementar Azure Information Protection para su organización, asegúrese de que tiene cuentas de usuarios y grupos en Azure AD para el inquilino de su organización.
 
@@ -170,7 +170,7 @@ Por ejemplo:
 
 En este ejemplo:
 
-- La cuenta de usuario para Jagannath Reddy la autorizará  **jagannathreddy@contoso.com** .
+- La cuenta de usuario para Jagannath Reddy la autorizará **jagannathreddy@contoso.com**.
 
 -  La cuenta de usuario de Ankur Roy se puede autorizar mediante el uso de **ankur.roy@contoso.com** y **ankur.roy@onmicrosoft.contoso.com**, pero no de **ankurroy@contoso.com**.
 

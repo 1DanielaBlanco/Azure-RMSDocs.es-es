@@ -1,26 +1,26 @@
 ---
-title: "Comparación de Azure Information Protection y AD RMS"
-description: "Si conoce o ha implementado con anterioridad Active Directory Rights Management Services (AD RMS), es posible que se pregunte cuáles son las diferencias de Azure Information Protection en términos de funcionalidad y requisitos."
+title: Comparación de Azure Information Protection y AD RMS
+description: Si conoce o ha implementado con anterioridad Active Directory Rights Management Services (AD RMS), es posible que se pregunte cuáles son las diferencias de Azure Information Protection en términos de funcionalidad y requisitos.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 12/04/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 8123bd62-1814-4d79-b306-e20c1a00e264
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 124bef6f9c54fc154bdf95322ca418d01f5b5636
-ms.sourcegitcommit: 3cbea6b4191b97c69d06d04cbbd852aacacdd9c7
+ms.openlocfilehash: 5c550ae18b8bb72895833f22e3eadab758e26b42
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="comparing-azure-information-protection-and-ad-rms"></a>Comparación de Azure Information Protection y AD RMS
 
->*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Office 365*
+>*Se aplica a: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Si conoce o ha implementado con anterioridad Active Directory Rights Management Services (AD RMS), es posible que se pregunte cuáles son las diferencias de Azure Information Protection en términos de funcionalidad y requisitos como solución de protección de la información.
 

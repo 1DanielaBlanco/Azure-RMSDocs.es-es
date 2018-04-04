@@ -12,15 +12,15 @@ ms.technology: techgroup-identity
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ac9324a0418a557682714b6f2b5621a2d9f7530e
-ms.sourcegitcommit: 758e0cfeb6c05f4c6f5310dc36fbf0c02c256eed
+ms.openlocfilehash: ccbca7f0309e03128ebbe0544e55b341ece47d0f
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="byok-pricing-and-restrictions"></a>Precio y restricciones de BYOK
 
->*Se aplica a: Azure Information Protection, Office 365*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 
 Las organizaciones que tienen una suscripción con Azure Information Protection pueden configurar su inquilino de Azure Information Protection para usar una clave administrada por el cliente (BYOK) y [registrar su uso](../deploy-use/log-analyze-usage.md) sin costo adicional. 

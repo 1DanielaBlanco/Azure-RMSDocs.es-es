@@ -1,26 +1,26 @@
 ---
-title: "Opciones del cuadro de diálogo para la aplicación RMS sharing - AIP"
-description: "Información útil para especificar las opciones en el cuadro de diálogo Agregar protección o en el cuadro de diálogo Uso compartido seguro de la aplicación RMS sharing. Verá este cuadro de diálogo cuando proteja un archivo para compartirlo o cuando proteja un archivo en contexto y elija permisos personalizados."
+title: Opciones del cuadro de diálogo para la aplicación RMS sharing - AIP
+description: Información útil para especificar las opciones en el cuadro de diálogo Agregar protección o en el cuadro de diálogo Uso compartido seguro de la aplicación RMS sharing. Verá este cuadro de diálogo cuando proteja un archivo para compartirlo o cuando proteja un archivo en contexto y elija permisos personalizados.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7b91ab30-6363-4929-bcbd-4dfbd05f644a
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 190d8ac29bec0fc3825eb9fe099e06bd16e2112f
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 429be436bc1a9fec3d31933d9cb6e8f88de7506a
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="dialog-box-options-for-the-rights-management-sharing-application"></a>Opciones del cuadro de diálogo para la aplicación de uso compartido Rights Management
 
->*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 con SP1, Windows 8 y Windows 8.1*
+>*Se aplica a: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 con SP1, Windows 8 y Windows 8.1*
 
 Use esta información para especificar las opciones en el cuadro de diálogo **Agregar protección** o en el cuadro de diálogo **Uso compartido seguro** de la aplicación de uso compartido de RMS. Verá este cuadro de diálogo cuando [proteja un archivo para compartirlo](sharing-app-protect-by-email.md) o cuando [proteja un archivo en contexto](sharing-app-protect-in-place.md) y elija permisos personalizados.
 
@@ -72,7 +72,7 @@ Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de 
 
 -   [¿Qué desea hacer?](sharing-app-user-guide.md#what-do-you-want-to-do)
 
-## <a name="see-also"></a>Véase también
+## <a name="see-also"></a>Consulte también
 [Guía de usuario de la aplicación Rights Management sharing](sharing-app-user-guide.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

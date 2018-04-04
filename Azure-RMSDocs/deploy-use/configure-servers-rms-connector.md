@@ -1,26 +1,26 @@
 ---
-title: "Configuración de servidores para el conector de Rights Management - AIP"
-description: "Información para ayudarlo a configurar los servidores locales que utilizarán el conector Azure Rights Management (RMS). Estos procedimientos incluyen el paso 5 de la implementación del conector de Azure Rights Management."
+title: Configuración de servidores para el conector de Rights Management - AIP
+description: Información para ayudarlo a configurar los servidores locales que utilizarán el conector Azure Rights Management (RMS). Estos procedimientos incluyen el paso 5 de la implementación del conector de Azure Rights Management.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 674acfafb305d8ac6ff530710ba311160c850288
-ms.sourcegitcommit: 8ba50d1fc813214b6e66baea140e626c74c5a518
+ms.openlocfilehash: c15c18f7d0a0f43e4f91193ee4a11b324f0187f2
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="configuring-servers-for-the-azure-rights-management-connector"></a>Configuración de servidores para el conector de Azure Rights Management
 
->*Se aplica a: Azure Information Protection, Windows Server 2012, Windows Server 2012 R2*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows Server 2012 y Windows Server 2012 R2*
 
 
 Utilice la siguiente información para configurar los servidores locales que utilizarán el conector de Azure Rights Management (RMS). Estos procedimientos incluyen el paso 5 de la [implementación del conector de Azure Rights Management](deploy-rms-connector.md).
@@ -224,7 +224,7 @@ Los servidores que ejecutan SharePoint 2010 deben tener instalada una versión d
 ## <a name="configuring-a-file-server-for-file-classification-infrastructure-to-use-the-connector"></a>Configuración de un servidor de archivos para que la Infraestructura de clasificación de archivos use el conector
 Para usar el conector RMS y la Infraestructura de la clasificación de archivos para proteger documentos de Office, el servidor de archivos debe ejecutar uno de los sistemas operativos siguientes:
 
--   Windows Server 2012 R2
+-   Windows Server 2012 R2
 
 -   Windows Server 2012
 

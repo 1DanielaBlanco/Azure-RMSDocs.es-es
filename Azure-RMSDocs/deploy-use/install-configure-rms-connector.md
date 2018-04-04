@@ -1,26 +1,26 @@
 ---
-title: "Instalación y configuración del conector de Rights Management - AIP"
-description: "Información para facilitar la instalación y configuración del conector Azure Rights Management (RMS). Estos procedimientos incluyen los pasos 1 a 4 del tema Implementación del conector de Azure Rights Management."
+title: Instalación y configuración del conector de Rights Management - AIP
+description: Información para facilitar la instalación y configuración del conector Azure Rights Management (RMS). Estos procedimientos incluyen los pasos 1 a 4 del tema Implementación del conector de Azure Rights Management.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 08/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 73cbcc73b2ce96b2e41f6fef90d70cee71ee3dff
-ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
+ms.openlocfilehash: a1526c3efea1a03a82baed526d65b748d2aa7bae
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="installing-and-configuring-the-azure-rights-management-connector"></a>Instalación y configuración del conector de Azure Rights Management
 
->*Se aplica a: Azure Information Protection, Office 365*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Use la siguiente información como ayuda para instalar y configurar el conector de Azure Rights Management (RMS). Estos procedimientos incluyen los pasos 1 a 4 del tema [Implementación del conector de Azure Rights Management](deploy-rms-connector.md).
 
@@ -216,7 +216,7 @@ Si los servidores del conector están instalados en una red que no tiene conexi�
 
 3.  Agregue el valor de cadena de **ProxyAddress** y luego establezca que los datos para este valor sean **http://&lt;MyProxyDomainOrIPaddress&gt;:&lt;MyProxyPort&gt;**.
 
-    Por ejemplo: **http://proxyserver.contoso.com:8080**.
+    Por ejemplo: **http://proxyserver.contoso.com:8080**
 
 4.  Cierre el editor del registro y, a continuación, reinicie el servidor o realice un comando IISReset para reiniciar IIS.
 

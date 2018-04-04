@@ -1,26 +1,26 @@
 ---
-title: "Mapa de ruta de implementación de Azure Information Protection"
-description: "Siga estos pasos para preparar, implementar y administrar Azure Information Protection en su organización."
+title: Mapa de ruta de implementación de Azure Information Protection
+description: Siga estos pasos para preparar, implementar y administrar Azure Information Protection en su organización.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ebfdb466be6dde9b0f1e48865c2af5d61cb038d1
-ms.sourcegitcommit: dd53f3dc2ea2456ab512e3a541d251924018444e
+ms.openlocfilehash: b459babbf16b536b1cd73d0bb0ec2c36a499f9e1
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="azure-information-protection-deployment-roadmap"></a>Mapa de ruta de implementación de Azure Information Protection
 
->*Se aplica a: Azure Information Protection, Office 365*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Utilice los pasos siguientes como recomendaciones para ayudarlo a preparar, implementar y administrar Azure Information Protection en su organización.
 
@@ -86,7 +86,7 @@ Cuando los usuarios estén acostumbrados a etiquetar documentos y correos electr
 
 4. Asegúrese de que el servicio de protección esté activado para poder comenzar a proteger documentos y correos electrónicos. Si se requiere una implementación en fases, configure los controles de incorporación de usuarios para restringir el uso a usuarios específicos. Para más información, consulte [Activación de Azure Rights Management](../deploy-use/activate-service.md).
 
-De forma opcional, considere configurar lo siguiente:
+De forma opcional, considera configurar lo siguiente:
 
 -   Plantillas personalizadas para la configuración de protección si las predeterminadas no son suficientes para la organización. Este paso puedes hacerlo ahora o más tarde. Para obtener más información, vea [Configuración y administración de plantillas para Azure Information Protection](../deploy-use/configure-policy-templates.md).
 

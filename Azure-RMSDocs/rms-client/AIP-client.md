@@ -1,26 +1,26 @@
 ---
 title: Cliente de Azure Information Protection para Windows
-description: "Recursos de información para el cliente de Azure Information Protection para Windows. Este cliente disponible como descarga gratuita está destinado a las organizaciones que desean clasificar y proteger documentos y correos electrónicos."
+description: Recursos de información para el cliente de Azure Information Protection para Windows. Este cliente disponible como descarga gratuita está destinado a las organizaciones que desean clasificar y proteger documentos y correos electrónicos.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/08/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f9b61b6b-05ba-4422-b8b0-cd20af774a2b
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: dca5f00dcad1e6e1db2e8558f7ce214dd81a9064
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 2abc976c1185d7031af383af96f2da8f19b1493f
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="azure-information-protection-client-for-windows"></a>Cliente de Azure Information Protection para Windows
 
->*Se aplica a: Active Directory Rights Management Services, Azure Information Protection*
+>*Se aplica a: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 con SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012 y Windows Server 2008 R2**
 
 El cliente de Azure Information Protection para Windows es un cliente disponible como descarga gratuita destinado a organizaciones que usan [Azure Information Protection](../understand-explore/what-is-information-protection.md) para clasificar y proteger documentos y correos electrónicos ,o que usan un servicio Rights Management para proteger los datos. Este cliente también tiene un visor para las organizaciones que no tienen una infraestructura propia de protección de información, pero que desean consumir contenido protegido por otras organizaciones que usan un servicio Rights Management de Microsoft.
 

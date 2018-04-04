@@ -1,26 +1,26 @@
 ---
-title: "Registro y análisis del uso del servicio Azure RMS - AIP"
-description: "Información e instrucciones sobre cómo usar el registro de uso con Azure Rights Management (Azure RMS)."
+title: Registro y análisis del uso del servicio Azure RMS - AIP
+description: Información e instrucciones sobre cómo usar el registro de uso con Azure Rights Management (Azure RMS).
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 01/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 09d076299f70718b65bb3746486f559a880a2660
-ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
+ms.openlocfilehash: b4a9c6b259e5863bb5be276f89beb0de33002ca4
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>Registro y análisis del uso del servicio Azure Rights Management
 
->*Se aplica a: Azure Information Protection, Office 365*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Use esta información como ayuda para comprender cómo puede usar el registro de uso del servicio Azure Rights Management de Azure Information Protection. Este servicio proporciona la protección de datos para documentos y correos electrónicos de la organización y puede registrar todas las solicitudes que recibe. Estas solicitudes incluyen cuando los usuarios protegen documentos y correos electrónicos y también consumen este contenido, las acciones realizadas por los administradores para este servicio y las acciones llevadas a cabo por operadores de Microsoft para admitir la implementación de Azure Information Protection. 
 

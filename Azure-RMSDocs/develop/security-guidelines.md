@@ -6,25 +6,25 @@ ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.assetid: 4e9f72d5-9e7c-43e1-bb8a-5972dd22dcee
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: 04fc73bac667b461a37e87a1c726c5a645495197
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: 6c3669c1ada24afcf3b9ec48ea5bb9c38939b47e
+ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="security-best-practices-for-azure-information-protection"></a>Procedimientos recomendados de seguridad para Azure Information Protection
 
 El Kit de desarrollo de Software (SDK) de Azure Information Protection (AIP) proporciona un sistema sólido para publicar y consumir información protegida de todo tipo. Para que un sistema AIP sea lo más robusto posible, las aplicaciones habilitadas para AIP deben compilarse siguiendo prácticas recomendadas de AIP. Las aplicaciones habilitadas para AIP comparten la responsabilidad de mantener la seguridad de este ecosistema. La identificación de los riesgos de seguridad y la provisión de mitigaciones para esos riesgos introducidos durante el desarrollo de la aplicación ayudan a reducir la probabilidad de que el software se implemente de una manera menos segura.
 
 Entre los procedimientos recomendados para implementar aplicaciones por medio del Kit de desarrollo de software (SDK) de Azure Information Protection se encuentran las siguientes categorías de sugerencias:
-- [Modelos de amenazas y mitigaciones](https://msdn.microsoft.com/en-us/library/aa362751.aspx)
-- [Ataques de seguridad](https://msdn.microsoft.com/en-us/library/aa362736.aspx)
+- [Modelos de amenazas y mitigaciones](https://msdn.microsoft.com/library/aa362751.aspx)
+- [Ataques de seguridad](https://msdn.microsoft.com/library/aa362736.aspx)
 
 Esta información complementa el acuerdo legal que debe firmarse con el fin de obtener los certificados digitales necesarios para implementar aplicaciones mediante el SDK de AIP.
 

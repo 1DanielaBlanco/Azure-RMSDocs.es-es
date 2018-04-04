@@ -1,26 +1,26 @@
 ---
 title: Configurar IRM de Exchange Online para el servicio Azure Rights Management de Azure Information Protection
-description: "Información e instrucciones para que los administradores configuren Exchange Online para el servicio Azure Rights Management cuando el inquilino de Office 365 no admite las nuevas capacidades de cifrado de mensajes de Office 365."
+description: Información e instrucciones para que los administradores configuren Exchange Online para el servicio Azure Rights Management cuando el inquilino de Office 365 no admite las nuevas capacidades de cifrado de mensajes de Office 365.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
-ms.assetid: 
+ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a0c6fe7f7b6a34eea21b646ce5573ca03b13be3c
-ms.sourcegitcommit: cd3320fa34acb90f05d5d3e0e83604cdd46bd9a9
+ms.openlocfilehash: 022eb960ef58e69c0a4c2d8a76962ed792a9ed38
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="exchange-online-irm-configuration-when-you-have-imported-a-trusted-publishing-domain"></a>Configuración de IRM de Exchange Online cuando se ha importado un dominio de publicación de confianza
 
->*Se aplica a: Azure Information Protection, Office 365*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Siga estas instrucciones solamente si ha configurado previamente IRM de Exchange Online mediante la importación del dominio de publicación de confianza (TPD) y necesita descifrar mensajes de correo electrónico que han sido cifrados previamente.
 
