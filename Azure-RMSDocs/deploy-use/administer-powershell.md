@@ -1,26 +1,26 @@
 ---
-title: "Administración de Azure Rights Management con PowerShell - AIP"
-description: "Obtenga información sobre cómo usar el módulo de PowerShell del servicio Azure Rights Management (AADRM) para Azure Information Protection con el fin de administrar este servicio para la organización."
+title: Administración de Azure Rights Management con PowerShell - AIP
+description: Obtenga información sobre cómo usar el módulo de PowerShell del servicio Azure Rights Management (AADRM) para Azure Information Protection con el fin de administrar este servicio para la organización.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/13/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a890e04a-4b70-41b5-8d5f-3c210a669faa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: cdd35669360b172d456254c1e8e9f1d980117cdb
-ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
+ms.openlocfilehash: 55142c61b5ba7ee8b800bae94231401e74be9a38
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="administering-the-azure-rights-management-service-by-using-windows-powershell"></a>Administración del servicio Azure Rights Management mediante Windows PowerShell
 
->*Se aplica a: Azure Information Protection, Office 365*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 ¿Necesita usar PowerShell para administrar el servicio Azure Rights Management para Azure Information Protection? Probablemente pueda prescindir de ello si toda su configuración se puede realizar en Azure Portal o en el Portal de Office 365. A pesar de ello, PowerShell es necesario para algunas configuraciones avanzadas y también es preferible usar PowerShell para el scripting y un control más eficaz de la línea de comandos.
 

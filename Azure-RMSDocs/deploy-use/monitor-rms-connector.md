@@ -1,26 +1,26 @@
 ---
-title: "Supervisión del conector de Rights Management - AIP"
-description: "Información para ayudarle a supervisar el conector y el uso de la organización del servicio Azure Rights Management de Azure Information Protection."
+title: Supervisión del conector de Rights Management - AIP
+description: Información para ayudarle a supervisar el conector y el uso de la organización del servicio Azure Rights Management de Azure Information Protection.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 08/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 8a1b3e54-f788-4f84-b9d7-5d5079e50b4e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e759d47e45455616cac34d2b5703a567907a826f
-ms.sourcegitcommit: 2a1c690ca84611e5774ac8fac0fb4caba09fef2e
+ms.openlocfilehash: 0c4526cb2a80c0fdbe55a1f90c324282accb7eb0
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="monitor-the-azure-rights-management-connector"></a>Supervisión del conector de Azure Rights Management
 
->*Se aplica a: Azure Information Protection, Windows Server 2012, Windows Server 2012 R2*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows Server 2012 y Windows Server 2012 R2*
 
 Después de instalar y configurar el conector RMS, puede usar los siguientes métodos e información para que le resulte más fácil supervisar el conector y el uso que realiza la organización del servicio Azure Rights Management de Azure Information Protection.
 

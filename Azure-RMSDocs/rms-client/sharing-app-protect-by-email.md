@@ -1,26 +1,26 @@
 ---
-title: "Uso compartido de documento protegido con la aplicación RMS sharing - AIP"
-description: "Instrucciones sobre cómo compartir de forma segura un documento por correo electrónico."
+title: Uso compartido de documento protegido con la aplicación RMS sharing - AIP
+description: Instrucciones sobre cómo compartir de forma segura un documento por correo electrónico.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4c1cd1d3-78dd-4f90-8b37-dcc9205a6736
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4110050a0e45fd75633bc27dd220f71855d50672
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 71bc303aaadf6856cce2f63db0acf5280fbe172b
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="protect-a-file-that-you-share-by-email-by-using-the-rights-management-sharing-application"></a>Protección de un archivo que comparte por correo electrónico con la aplicación Rights Management sharing
 
->*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 con SP1, Windows 8 y Windows 8.1*
+>*Se aplica a: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 con SP1, Windows 8 y Windows 8.1*
 
 Cuando protege un archivo que comparte por correo electrónico, se crea una nueva versión del archivo original. El archivo original permanece sin protección y la nueva versión, que está protegida, se adjunta automáticamente a un correo electrónico que después envía.
 
@@ -30,7 +30,7 @@ Si su organización usa Azure Information Protection, puede realizar un seguimie
 
 -   Seleccione una opción para recibir mensajes de correo electrónico cuando alguien intente abrir estos archivos adjuntos protegidos. Cada vez que se tenga acceso al archivo, se le notificará qué usuarios intentaron abrir el archivo, cuándo y si se autenticaron correctamente o no.
 
--   Utilice el sitio de seguimiento de documentos. Incluso puede dejar de compartir el archivo. Para ello, revoque el acceso a él en el sitio de seguimiento de documentos. Para obtener más información, vea [Seguimiento y revocación de documentos cuando se usa la aplicación RMS sharing](sharing-app-track-revoke.md).
+-   Utilice el sitio de seguimiento de documentos. Incluso puede dejar de compartir el archivo. Para ello, revoque el acceso a él en el sitio de seguimiento de documentos. Para más información, consulte [Seguimiento y revocación de documentos cuando se usa la aplicación RMS sharing](sharing-app-track-revoke.md).
 
 ## <a name="using-outlook-to-protect-a-file-that-you-share-by-email"></a>Con Outlook: Para proteger un archivo que comparte por correo electrónico
 
@@ -87,7 +87,7 @@ Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de 
 
 -   [¿Qué desea hacer?](sharing-app-user-guide.md#what-do-you-want-to-do)
 
-## <a name="see-also"></a>Véase también
+## <a name="see-also"></a>Consulte también
 [Guía de usuario de la aplicación Rights Management sharing](sharing-app-user-guide.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

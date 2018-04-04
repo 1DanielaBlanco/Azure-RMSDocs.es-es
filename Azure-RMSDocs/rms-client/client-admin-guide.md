@@ -1,26 +1,26 @@
 ---
-title: "Guía del administrador de cliente de Azure Information Protection"
-description: "Instrucciones e información para administradores de una red empresarial que son responsables de implementar el cliente de Azure Information Protection para Windows."
+title: Guía del administrador de cliente de Azure Information Protection
+description: Instrucciones e información para administradores de una red empresarial que son responsables de implementar el cliente de Azure Information Protection para Windows.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/13/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: a7412378655ea75500bd1339c0ba41f677fe4d9a
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: adba30ad410d23010d3123777704d3e2caeb05b0
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Guía para administradores del cliente de Azure Information Protection
 
->*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 con SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
+>*Se aplica a: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 con SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012 y Windows Server 2008 R2*
 
 Use la información que aparece en esta guía si es el responsable del cliente de Azure Information Protection en una red empresarial o si desea obtener más información técnica de la contenida en la [Guía del usuario de Azure Information Protection](client-user-guide.md). 
 
@@ -178,7 +178,7 @@ Para instalar el cliente, consulte [Instalación del cliente de Azure Informatio
 
 Si ya ha instalado el cliente, consulte la siguiente información adicional que puede necesitar para la compatibilidad con este cliente:
 
-- [Customizations](client-admin-guide-customizations.md) (Personalizaciones)
+- [Personalizaciones](client-admin-guide-customizations.md)
 
 - [Archivos de cliente y registro de uso](client-admin-guide-files-and-logging.md)
 

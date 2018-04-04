@@ -1,27 +1,27 @@
 ---
 title: Condiciones para comentarios del cliente - AIP
-description: "Ámbito y propósito de los comentarios y las notas al margen de Livefyre para la documentación de Azure Information Protection."
+description: Ámbito y propósito de los comentarios y las notas al margen de Livefyre para la documentación de Azure Information Protection.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.custom: askipteam
 ms.assetid: 4eafbe72-f537-4e66-80ae-d11894d373f7
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 014b4d7100a0be36951a21db9a1dcf35bdbe5dd6
-ms.sourcegitcommit: 6bfbf08b935a7a60e437af44aab72db13f87eff1
+ms.openlocfilehash: b337324d31fa2e12c6cac2d93545498e4f778f4b
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="house-rules-for-comments-on-the-azure-information-protection-documentation"></a>Condiciones para los comentarios sobre la documentación de Azure Information Protection
 
->*Se aplica a: Azure Information Protection, Office 365*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Si tiene comentarios sobre la documentación que acaba de leer sobre Azure Information Protection, nos encantaría recibir sus comentarios. Por ejemplo, si tiene una pregunta esclarecedora sobre la información documentada, quiere notificar una imprecisión en la documentación o no encuentra la información que necesita. 
 

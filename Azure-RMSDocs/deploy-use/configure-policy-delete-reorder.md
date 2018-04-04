@@ -1,24 +1,24 @@
 ---
-title: "Eliminación o reordenación de una etiqueta de Azure Information Protection"
-description: "Puede eliminar las etiquetas que ven los usuarios en la barra de Information Protection y, también, cambiarlas de orden; para ello, configúrelas en la directiva de Azure Information Protection."
+title: Eliminación o reordenación de una etiqueta de Azure Information Protection
+description: Puede eliminar las etiquetas que ven los usuarios en la barra de Information Protection y, también, cambiarlas de orden; para ello, configúrelas en la directiva de Azure Information Protection.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ae0f603f-a632-4ac5-a3f7-6358d4255eff
-ms.openlocfilehash: 85d8e612d95358ce7f5d883450dc207e54549828
-ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
+ms.openlocfilehash: c24cd0bb9aae5b3a6b830151579d70561d56f7e0
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-to-delete-or-reorder-a-label-for-azure-information-protection"></a>Eliminación o cambio de orden de una etiqueta en Azure Information Protection
 
->*Se aplica a: Azure Information Protection*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 Puede eliminar las etiquetas que los usuarios ven en la barra de Information Protection y, también, cambiarlas de orden; para ello, seleccione estas acciones en la directiva de Azure Information Protection.
 

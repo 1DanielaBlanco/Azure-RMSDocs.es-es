@@ -1,26 +1,26 @@
 ---
-title: "Clasificación y protección de archivos y correos electrónicos mediante Azure Information Protection"
-description: "Instrucciones de cómo clasificar y proteger sus documentos y correos electrónicos."
+title: Clasificación y protección de archivos y correos electrónicos mediante Azure Information Protection
+description: Instrucciones de cómo clasificar y proteger sus documentos y correos electrónicos.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 683764d005e3223f6e5bdaa49b1d4c881a8daed4
-ms.sourcegitcommit: f1d0b899e6d79ebef3829f24711f947316bca8ef
+ms.openlocfilehash: 49518c1324ad541c4880c7930b6e661a2aba46d8
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="user-guide-classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Guía del usuario: Clasificación y protección de archivos y correos electrónicos mediante Azure Information Protection
 
->*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 8.1, Windows 8 y Windows 7 con SP1*
+>*Se aplica a: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8 y Windows 7 con SP1*
 
 > [!NOTE]
 > Siga estas instrucciones para clasificar y proteger los documentos y correos electrónicos. Si solo necesita clasificar y no proteger los documentos y correos electrónicos, consulte las [instrucciones sobre solo clasificación](client-classify.md). Si no está seguro de qué conjunto de instrucciones debe usar, póngase en contacto con el administrador o el departamento de soporte técnico.

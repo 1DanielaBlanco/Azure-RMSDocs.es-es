@@ -1,24 +1,24 @@
 ---
-title: "Paso 4 del tutorial de inicio rápido - AIP"
-description: "Paso 4 de un tutorial de introducción para probar rápidamente Azure Information Protection: consulte el etiquetado y la protección en acción."
+title: Paso 4 del tutorial de inicio rápido - AIP
+description: 'Paso 4 de un tutorial de introducción para probar rápidamente Azure Information Protection: consulte el etiquetado y la protección en acción.'
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 08/30/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
-ms.openlocfilehash: 3a5e3fc018bb19480a52729345ad2ac6d4c851be
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: f92953acfe652238ef8a36f67cdd8051324c6f18
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="step-4-see-classification-labeling-and-protection-in-action"></a>Paso 4: ver la clasificación, el etiquetado y la protección en funcionamiento 
 
->*Se aplica a: Azure Information Protection*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 Ahora que tiene un documento de Word abierto con el cliente de Azure Information Protection instalado, está listo para ver lo sencillo que es comenzar el etiquetado y la protección de su documento mediante la directiva que hemos configurado.
 

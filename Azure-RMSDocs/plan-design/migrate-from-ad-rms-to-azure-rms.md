@@ -1,26 +1,26 @@
 ---
-title: "Migración de AD RMS-Azure Information Protection"
-description: "Instrucciones para migrar la implementación de Active Directory Rights Management Services (AD RMS) a Azure Information Protection. Después de la migración, los usuarios seguirán teniendo acceso a los documentos y mensajes de correo electrónico protegidos por su organización con AD RMS, y el nuevo contenido protegido usará Azure Information Protection."
+title: Migración de AD RMS-Azure Information Protection
+description: Instrucciones para migrar la implementación de Active Directory Rights Management Services (AD RMS) a Azure Information Protection. Después de la migración, los usuarios seguirán teniendo acceso a los documentos y mensajes de correo electrónico protegidos por su organización con AD RMS, y el nuevo contenido protegido usará Azure Information Protection.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6ed025029e3d901a4ee2090bbc9334e396da646c
-ms.sourcegitcommit: 25146c649d5f4c95debebdf3823785139f2d9ea1
+ms.openlocfilehash: c99a7a361ad1f22ab0fa819644e7f79fec6c9227
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>Migración desde AD RMS a Azure Information Protection
 
->*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Office 365*
+>*Se aplica a: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Use el siguiente conjunto de instrucciones para migrar su implementación de Active Directory Rights Management Services (AD RMS) a Azure Information Protection. 
 

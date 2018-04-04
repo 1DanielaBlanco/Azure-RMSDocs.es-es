@@ -1,26 +1,26 @@
 ---
-title: "Guía de usuario para la aplicación RMS sharing - AIP"
-description: "La aplicación de uso compartido de Microsoft Rights Management (RMS) para Windows ayuda a mantener documentos e imágenes importantes a salvo de quienes no deberían verlos, incluso si se envían por correo electrónico o se guardan en otro dispositivo."
+title: Guía de usuario para la aplicación RMS sharing - AIP
+description: La aplicación de uso compartido de Microsoft Rights Management (RMS) para Windows ayuda a mantener documentos e imágenes importantes a salvo de quienes no deberían verlos, incluso si se envían por correo electrónico o se guardan en otro dispositivo.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 07/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: eaf6d02c-aa36-4915-856e-49bb71ab1484
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 02eab7970b98cbc0ed27a3928a9a3c68ebd2927a
-ms.sourcegitcommit: d7bdf865a06df2150b261c98b66503c1db7fed11
+ms.openlocfilehash: c361c3fadb1bc4a65d94c79f7a41f8aebb6f247a
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 03/28/2018
 ---
-# <a name="rights-management-sharing-application-user-guide"></a>Guía de usuario de la aplicación de uso compartido Rights Management
+# <a name="rights-management-sharing-application-user-guide"></a>Manual de usuario de la aplicación de uso compartido de Rights Management
 
->*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 con SP1, Windows 8 y Windows 8.1*
+>*Se aplica a: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 con SP1, Windows 8 y Windows 8.1*
 
 > [!IMPORTANT]
 > **Finalización de notificación de compatibilidad**: la aplicación Rights Management sharing para Windows se va a sustituir por el [cliente de Azure Information Protection](aip-client.md). La aplicación anterior dejará de ser compatible el 31 de enero de 2019. 

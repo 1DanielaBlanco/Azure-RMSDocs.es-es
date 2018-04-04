@@ -1,24 +1,24 @@
 ---
-title: "Notas de la versión"
-description: "Actualizaciones del SDK por revisión y otra información para desarrolladores."
-keywords: 
+title: Notas de la versión
+description: Actualizaciones del SDK por revisión y otra información para desarrolladores.
+keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 10/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: CE379738-4E1D-42AD-83F4-F89B70456EBB
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: f05191f2c2700e59bb83a79d025ba181b799ab5a
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: 74f4eacb7601d137e8eb459fad3853ac5ec52e97
+ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="release-notes"></a>Notas de la versión
 
@@ -34,7 +34,7 @@ Este artículo contiene información importante sobre esta versión y versiones 
 >[!Note]
 > Las actualizaciones de la documentación de características de esta sección se aplican a la descarga del SDK con fecha de 11/12/2015.
 
-- **Flujo de autenticación mejorado** gracias a la autenticación de OAuth2 basada en token mediante la [biblioteca de autenticación de Azure Active Directory (ADAL)](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-libraries/). Para obtener más información sobre este proceso y sus extensiones de API, consulte [ADAL authentication for your RMS enabled application](how-to-use-adal-authentication.md) (Autenticación de ADAL de la aplicación habilitada para RMS).
+- **Flujo de autenticación mejorado** gracias a la autenticación de OAuth2 basada en token mediante la [biblioteca de autenticación de Azure Active Directory (ADAL)](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/). Para obtener más información sobre este proceso y sus extensiones de API, consulte [ADAL authentication for your RMS enabled application](how-to-use-adal-authentication.md) (Autenticación de ADAL de la aplicación habilitada para RMS).
 
 - **Actualización de ADAL**. Si actualiza la aplicación para que use la autenticación de ADAL en lugar del Ayudante para el inicio de sesión de Microsoft Online, usted y sus clientes podrán:
 
@@ -121,7 +121,7 @@ El componente de la API de archivo del SDK se ha ampliado y ofrece las siguiente
 
     Para más información sobre los tipos de archivo compatibles, vea [File API configuration](file-api-configuration.md) (Configuración de la API de archivo).
 
--   **Las máquinas con Windows 7 SP1 y Windows Server 2008 R2 SP1** sin la actualización [KB2533623](https://support.microsoft.com/en-us/kb/2533623), pueden generar el siguiente error al proteger un archivo de Office: "El parámetro es incorrecto. Código de error 0x80070057". Si aparece este error, instale la actualización y vuelva a intentarlo. Si todavía aparece el problema, póngase en contacto con el alias RMS SDK Beta Feedback <rmcstbeta@microsoft.com>.
+-   **Las máquinas con Windows 7 SP1 y Windows Server 2008 R2 SP1** sin la actualización [KB2533623](https://support.microsoft.com/kb/2533623), pueden generar el siguiente error al proteger un archivo de Office: "El parámetro es incorrecto. Código de error 0x80070057". Si aparece este error, instale la actualización y vuelva a intentarlo. Si todavía ve errores, póngase en contacto con el alias RMS SDK Beta Feedback <rmcstbeta@microsoft.com>.
 
     **Nota**  A partir de la versión de abril de 2015, se agrega una comprobación al proceso de instalación de este KB.
 
@@ -139,7 +139,7 @@ El componente de la API de archivo del SDK se ha ampliado y ofrece las siguiente
 
     La API de archivo se implementa a través de estas cuatro funciones nuevas: [IpcfDecryptFile](https://msdn.microsoft.com/library/dn133058.aspx), [IpcfEncryptFile](https://msdn.microsoft.com/library/dn133059.aspx), [IpcfGetSerializedLicenseFromFile](https://msdn.microsoft.com/library/dn133060.aspx) y [IpcfIsFileEncrypted](https://msdn.microsoft.com/library/dn133061.aspx).
 
-    La API de archivo requiere que el cliente de Rights Management Services 2.1 esté instalado en el equipo cliente y que el equipo tenga conectividad con un servidor RMS. Para obtener más información sobre el servidor RMS, el cliente de RMS y su funcionalidad, consulte el contenido de TechNet sobre la [documentación para profesionales de TI para RMS](https://technet.microsoft.com/en-us/library/cc771234(v=ws.10).aspx).
+    La API de archivo requiere que el cliente de Rights Management Services 2.1 esté instalado en el equipo cliente y que el equipo tenga conectividad con un servidor RMS. Para obtener más información sobre el servidor RMS, el cliente de RMS y su funcionalidad, consulte el contenido de TechNet sobre la [documentación para profesionales de TI para RMS](https://technet.microsoft.com/library/cc771234(v=ws.10).aspx).
 
 -   **Problema**: al crear una licencia desde cero, se deben conceder explícitamente derechos de propiedad.
 

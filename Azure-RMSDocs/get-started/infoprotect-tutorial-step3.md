@@ -1,24 +1,24 @@
 ---
-title: "Paso 3 del tutorial de inicio rápido - AIP"
-description: "Paso 3 de un tutorial de introducción para probar rápidamente Azure Information Protection: instalación del cliente."
+title: Paso 3 del tutorial de inicio rápido - AIP
+description: 'Paso 3 de un tutorial de introducción para probar rápidamente Azure Information Protection: instalación del cliente.'
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 209815b9-81c9-430c-a82f-32cac991449b
-ms.openlocfilehash: cfe2fdf41174caf6184d3e160ce9f4d439d55566
-ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
+ms.openlocfilehash: 363902fac8036b118ce28c3ea87c812e262c3d47
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="step-3-install-the-client"></a>Paso 3: instalar el cliente
 
->*Se aplica a: Azure Information Protection*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 En este paso, instalará el cliente de Azure Information Protection de forma que la directiva que acaba de configurar se descargará en un equipo PC de Windows y mostrará las etiquetas de las aplicaciones de Office.
 

@@ -1,26 +1,26 @@
 ---
-title: "Ayuda a los usuarios para la protección de archivos con Azure RMS - AIP"
-description: "Información para ayudarle a ofrecer instrucciones a los usuarios, administradores y al servicio de asistencia después de implementar y configurar el servicio Azure Rights Management de Azure Information Protection."
+title: Ayuda a los usuarios para la protección de archivos con Azure RMS - AIP
+description: Información para ayudarle a ofrecer instrucciones a los usuarios, administradores y al servicio de asistencia después de implementar y configurar el servicio Azure Rights Management de Azure Information Protection.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 29a85bf1bf216c785a1b9cd6511069fe688327db
-ms.sourcegitcommit: 73973986ae7086e6f30cab579187241fd98bef61
+ms.openlocfilehash: 468550dd2389407b20d66adb814a7487988180bd
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="helping-users-to-protect-files-by-using-the-azure-rights-management-service"></a>Ayuda a los usuarios para proteger archivos mediante el servicio Azure Rights Management
 
->*Se aplica a: Azure Information Protection, Office 365*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Después de implementar y configurar Azure Information Protection para su organización, ofrezca ayuda e instrucciones a los usuarios, administradores y al servicio de asistencia:
 
@@ -93,7 +93,7 @@ Si usa el servicio Azure Rights Management y no ha instalado el cliente de Azure
 
 3.  Guarde el documento.
 
-Cuando otros usuarios abran el documento, se les autenticará primero. Si no está autenticado para abrir el documento, el documento no se abrirá. Si están autorizados para abrir el documento, se abre con los [derechos de uso](../deploy-use/configure-usage-rights.md) restringidos que se especificaron para ese usuario. 
+Cuando otros usuarios abran el documento, se les autenticará primero. Si no está autenticados para abrir el documento, el documento no se abrirá. Si están autorizados para abrir el documento, se abre con los [derechos de uso](../deploy-use/configure-usage-rights.md) restringidos que se especificaron para ese usuario. 
 
 Por ejemplo, un derecho de uso de Solo vista no permite al usuario editar o guardar el documento, aunque se copie primero a otra ubicación. 
 

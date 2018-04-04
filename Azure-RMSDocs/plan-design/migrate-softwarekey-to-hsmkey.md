@@ -1,26 +1,26 @@
 ---
-title: "Migración de clave protegida por software a clave protegida por HSM - AIP"
-description: "Estas instrucciones forman parte de la ruta de migración de AD RMS a Azure Information Protection y solo son válidas si la clave de AD RMS está protegida por software y quiere migrar a Azure Information Protection con una clave de inquilino protegida por HSM en Azure Key Vault."
+title: Migración de clave protegida por software a clave protegida por HSM - AIP
+description: Estas instrucciones forman parte de la ruta de migración de AD RMS a Azure Information Protection y solo son válidas si la clave de AD RMS está protegida por software y quiere migrar a Azure Information Protection con una clave de inquilino protegida por HSM en Azure Key Vault.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 07/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: c5f4c6ea-fd2a-423a-9fcb-07671b3c2f4f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d942e51994c6db3ee0c3e1127991a7007ed91f92
-ms.sourcegitcommit: 52ad844cd42479a56b1ae0e56ba0614f088d8a1a
+ms.openlocfilehash: 659fbe634326e7571f489b1ae2e1bc4176eadb0a
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="step-2-software-protected-key-to-hsm-protected-key-migration"></a>Paso 2: Migración de clave protegida por software a clave protegida por HSM
 
->*Se aplica a: Active Directory Rights Management Services, Azure Information Protection*
+>*Se aplica a: Active Directory Rights Management Services y [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 
 Estas instrucciones forman parte de la [ruta de migración de AD RMS a Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md) y solo son válidas si la clave de AD RMS está protegida por software y quiere migrar a Azure Information Protection con una clave de inquilino protegida por HSM en Azure Key Vault. 
@@ -33,7 +33,7 @@ Primero, deberá extraer la clave del certificado de emisor de licencias de serv
 
 Como Azure Key Vault almacenará y administrará su clave de inquilino de Azure Information Protection, es necesario que esta parte de la migración se administre en Azure Key Vault, además de Azure Information Protection. Si Azure Key Vault es administrado para la organización por un administrador distinto de su usuario, necesita coordinarse y trabajar con ese administrador para completar estos procedimientos.
 
-Antes de empezar, asegúrese de que la organización tenga un almacén de claves creado en el Almacén de claves de Azure y que sea compatible con claves protegidas por HSM. Aunque no es necesario, le recomendamos que tenga un almacén de claves dedicado a Azure Information Protection. Este almacén de claves se configurará para permitir que el servicio Azure Rights Management de Azure Information Protection tenga acceso a él, por lo que las claves que almacene este almacén de claves deberán limitarse únicamente a las claves de Azure Information Protection.
+Antes de empezar, asegúrese de que la organización tenga un almacén de claves creado en Azure Key Vault y que sea compatible con claves protegidas por HSM. Aunque no es necesario, le recomendamos que tenga un almacén de claves dedicado a Azure Information Protection. Este almacén de claves se configurará para permitir que el servicio Azure Rights Management de Azure Information Protection tenga acceso a él, por lo que las claves que almacene este almacén de claves deberán limitarse únicamente a las claves de Azure Information Protection.
 
 
 > [!TIP]
@@ -122,7 +122,7 @@ Como ya tiene la clave, no siga los pasos para generar el par de claves. En su l
 
 Antes de transferir la clave al Almacén de claves de Azure, asegúrese de que la utilidad KeyTransferRemote.exe devuelva **Result: SUCCESS** al crear una copia de la clave con permisos reducidos (paso 4.1) y al cifrar la clave (paso 4.3).
 
-Cuando se cargue la clave en el Almacén de claves de Azure, se mostrarán las propiedades de la clave, incluido el identificador de clave. Será similar a **https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333**. Anote esta URL porque el administrador de Azure Information Protection necesitará indicar al servicio Azure Rights Management de Azure Information Protection que use esta clave para su clave de inquilino.
+Cuando se cargue la clave en el Almacén de claves de Azure, se mostrarán las propiedades de la clave, incluido el identificador de clave. Tendrá un aspecto similar a **https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333**. Anote esta URL porque el administrador de Azure Information Protection necesitará indicar al servicio Azure Rights Management de Azure Information Protection que use esta clave para su clave de inquilino.
 
 A continuación, utilice el cmdlet [Set-AzureRmKeyVaultAccessPolicy](/powershell/module/azurerm.keyvault/set-azurermkeyvaultaccesspolicy) para autorizar a la entidad del servicio Azure Rights Management a acceder al almacén de claves. Los permisos necesarios son decrypt, encrypt, unwrapkey, wrapkey, verify y sign.
 
@@ -130,7 +130,7 @@ Por ejemplo, si el almacén de claves que ha creado para Azure Information Prote
     
     Set-AzureRmKeyVaultAccessPolicy -VaultName "contosorms-byok-kv" -ResourceGroupName "contosorms-byok-rg" -ServicePrincipalName 00000012-0000-0000-c000-000000000000 -PermissionsToKeys decrypt,encrypt,unwrapkey,wrapkey,verify,sign,get
 
-Después de transferir la clave de HSM al Almacén de claves de Azure, estará preparado para importar los datos de configuración de AD RMS.
+Después de transferir la clave de HSM a Azure Key Vault, estará preparado para importar los datos de configuración de AD RMS.
 
 ## <a name="part-3-import-the-configuration-data-to-azure-information-protection"></a>Parte 3: importación de los datos de configuración a Azure Information Protection
 

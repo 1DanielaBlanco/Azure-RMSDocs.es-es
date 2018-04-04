@@ -1,27 +1,27 @@
 ---
-title: "Activación de Azure RMS desde el Centro de administración de Office 365 - AIP"
-description: "Instrucciones de activación para el servicio Azure Rights Management cuando usa la versión nueva del Centro de administración de Office 365."
+title: Activación de Azure RMS desde el Centro de administración de Office 365 - AIP
+description: Instrucciones de activación para el servicio Azure Rights Management cuando usa la versión nueva del Centro de administración de Office 365.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.custom: askipteam
 ms.assetid: a2b3e1a2-59a0-4191-bf4c-4485ae7a70a9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a614e65e4c8e401c9add41d4594d8261eef69d12
-ms.sourcegitcommit: 79aa9838956f755994efcb97cef6dd5d1892f06f
+ms.openlocfilehash: 77d511cc466441ffc28d813be9a0ec86ff3d8fa7
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-to-activate-azure-rights-management-from-the-office-365-admin-center"></a>Activación de Azure Rights Management desde el Centro de administración de Office 365
 
->*Se aplica a: Azure Information Protection, Office 365*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Use estas instrucciones si tiene acceso al servicio Azure Rights Management desde el Centro de administración de Office 365. Por ejemplo, tiene una suscripción de Office 365 E3 u Office 365 E5.
 

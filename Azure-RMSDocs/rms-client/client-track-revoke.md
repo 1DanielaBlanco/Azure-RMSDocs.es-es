@@ -1,26 +1,26 @@
 ---
-title: "Seguimiento y revocación de documentos - Azure Information Protection"
-description: "Una vez protegidos los documentos, puede realizar un seguimiento de como los usan las personas. Si es necesario, también puede revocar el acceso a estos documentos si las personas ya no pueden leerlos."
+title: Seguimiento y revocación de documentos - Azure Information Protection
+description: Una vez protegidos los documentos, puede realizar un seguimiento de como los usan las personas. Si es necesario, también puede revocar el acceso a estos documentos si las personas ya no pueden leerlos.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 643c762e-23ca-4b02-bc39-4e3eeb657a1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d5c8d326b68b5f60e8223112d2d5bd28ed3925bc
-ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
+ms.openlocfilehash: 84f5f0ed8b98895b8c056ff03295afef379e6b74
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="user-guide-track-and-revoke-your-documents-when-you-use-azure-information-protection"></a>Guía del usuario: Seguimiento y revocación de documentos cuando se usa Azure Information Protection
 
->*Se aplica a: Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 con SP1*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8 y Windows 7 con SP1*
 
 Una vez protegidos los documentos mediante Azure Information Protection, puede realizar el seguimiento de cómo los usan las personas. Si es necesario, también puede revocar el acceso a ellos si las personas ya no pueden leerlos. Para ello, utilice el **sitio de seguimiento de documentos**. Puede obtener acceso a este sitio desde equipos Windows y Mac e incluso tabletas y teléfonos.
 
@@ -50,7 +50,7 @@ Cuando tenga acceso a este sitio, inicie sesión para hacer un seguimiento de su
         
         ![Icono Administrador en el sitio de Seguimiento de documentos](../media/tracking-site-admin-icon.png)
         
-        Si no ve este icono, a pesar de ser un administrador global, es porque aún no ha compartido ningún documento. En este caso, utilice la siguiente dirección URL para acceder al sitio de seguimiento de documentos: https://portal.azurerms.com/#/admin
+        Si no ve este icono, a pesar de ser un administrador global, es porque aún no ha compartido ningún documento. En este caso, use la siguiente dirección URL para acceder al sitio de seguimiento de documentos: https://portal.azurerms.com/#/admin
 
 A menos que sea administrador, solo puede hacer seguimiento y revocar los documentos que protegió. No puede hacer seguimiento de los correos electrónicos que protegió mediante el sitio de seguimiento de documentos.
 

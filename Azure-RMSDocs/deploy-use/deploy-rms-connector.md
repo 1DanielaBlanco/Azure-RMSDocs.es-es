@@ -12,15 +12,15 @@ ms.technology: techgroup-identity
 ms.assetid: 90e7e33f-9ecc-497b-89c5-09205ffc5066
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 87746ad526f191907ad2670604c357e5e926b84e
-ms.sourcegitcommit: 758e0cfeb6c05f4c6f5310dc36fbf0c02c256eed
+ms.openlocfilehash: d389816fbe438cbf13ddbe1302872f81afcb6bf5
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="deploying-the-azure-rights-management-connector"></a>Implementación del conector de Azure Rights Management
 
->*Se aplica a: Azure Information Protection, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012 y Windows Server 2008 R2*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows Server 2016, Windows Server 2012 R2, Windows Server 2012 y Windows Server 2008 R2*
 
 Utilice esta información para obtener información sobre el conector de Azure Rights Management y, a continuación, cómo implementarlo correctamente para su organización. Este conector ofrece protección de datos para las implementaciones locales existentes que usan Microsoft **Exchange Server**, **SharePoint Server** o servidores de archivo que ejecutan Windows Server y la **Infraestructura de clasificación de archivos** (FCI).
 

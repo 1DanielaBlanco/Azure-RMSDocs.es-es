@@ -1,27 +1,27 @@
 ---
-title: "Paso 5 del tutorial de inicio rápido - AIP"
-description: "Paso 5 de un tutorial de introducción para probar rápidamente Azure Information Protection: uso compartido de archivos protegidos y seguimiento."
-keywords: 
+title: Paso 5 del tutorial de inicio rápido - AIP
+description: 'Paso 5 de un tutorial de introducción para probar rápidamente Azure Information Protection: uso compartido de archivos protegidos y seguimiento.'
+keywords: ''
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/18/2017
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4e59a3b3-f0f4-4535-8b96-cac68303d855
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6d62b6dd588b035ded582a87f5faf04a04df6ab6
-ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
+ms.openlocfilehash: 718c15769e5719d5e8dde612cf66e4215f1e235d
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="step-5-see-sharing-of-protected-files-in-action-and-track-your-document"></a>Paso 5: ver el funcionamiento del uso compartido de archivos protegidos y realizar un seguimiento del documento 
 
->*Se aplica a: Azure Information Protection*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 Para este paso final del tutorial, busque un documento de Word o una hoja del cálculo de Excel que ya haya creado y envíelos a un asociado o compañero de trabajo. Para este tutorial, lo que importa no es el texto en concreto, si no el hecho de que haya texto para confirmar más fácilmente si el recipiente autorizado puede leerlo.
 

@@ -1,24 +1,24 @@
 ---
-title: "Paso 2 del tutorial de inicio rápido - AIP"
-description: "Paso 2 de un tutorial de introducción para probar rápidamente Azure Information Protection: configuración de la directiva."
+title: Paso 2 del tutorial de inicio rápido - AIP
+description: 'Paso 2 de un tutorial de introducción para probar rápidamente Azure Information Protection: configuración de la directiva.'
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/29/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: 3dd58454709dd5a73edc23578f12e79d85a9b9c9
-ms.sourcegitcommit: 8d47080abab0be9b16672fee0d885ebe00f7f5f3
+ms.openlocfilehash: fecf9887937d3d17347e85759e2ed10b124ae8a1
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>Paso 2: configurar y publicar la directiva de Azure Information Protection
 
->*Se aplica a: Azure Information Protection*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 Aunque Azure Information Protection incluye una directiva predeterminada que se puede usar sin necesidad de configuración, echaremos un vistazo a esa directiva y haremos algunos cambios.
 

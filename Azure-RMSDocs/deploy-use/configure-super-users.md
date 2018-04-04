@@ -1,26 +1,26 @@
 ---
-title: "Configuración de superusuarios para Azure Rights Management - AIP"
-description: "Obtenga información sobre la característica de superusuario del servicio Azure Rights Management de Azure Information Protection e impleméntela para que los usuarios y servicios autorizados siempre puedan leer e inspeccionar los datos que Azure Rights Management protege para la organización. Esta capacidad se denomina a menudo \"razonamiento encima de los datos\" y es un elemento crucial en el mantenimiento del control de los datos de su organización."
+title: Configuración de superusuarios para Azure Rights Management - AIP
+description: Obtenga información sobre la característica de superusuario del servicio Azure Rights Management de Azure Information Protection e impleméntela para que los usuarios y servicios autorizados siempre puedan leer e inspeccionar los datos que Azure Rights Management protege para la organización. Esta capacidad se denomina a menudo "razonamiento encima de los datos" y es un elemento crucial en el mantenimiento del control de los datos de su organización.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 686b1dc007da43ca5fbd68e510a3bff374867431
-ms.sourcegitcommit: 85250f5ea80c2ee22197058ff2f65a79503b0f0c
+ms.openlocfilehash: 5d35f7faed0e02a253e5ba48cbdb2bca0aa76419
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery"></a>Configuración de superusuarios para Azure Rights Management y los servicios de detección o la recuperación de datos
 
->*Se aplica a: Azure Information Protection, Office 365*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 La característica de superusuario del servicio Azure Rights Management de Azure Information Protection garantiza que los usuarios y servicios autorizados siempre puedan leer e inspeccionar los datos que Azure Rights Management protege para la organización. Y, si es necesario, quitar la protección o cambiar la protección que se aplicó anteriormente. 
 

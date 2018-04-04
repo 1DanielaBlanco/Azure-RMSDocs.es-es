@@ -1,26 +1,26 @@
 ---
 title: Tipos de archivos compatibles con Azure Information Protection
-description: "Detalles técnicos sobre tipos de archivos, extensiones de nombres de archivos y niveles de protección compatibles para administradores responsables del cliente de Azure Information Protection para Windows."
+description: Detalles técnicos sobre tipos de archivos, extensiones de nombres de archivos y niveles de protección compatibles para administradores responsables del cliente de Azure Information Protection para Windows.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/21/2018
+ms.date: 03/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
-ms.assetid: 
+ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e9b281fbce9ad423249137c5dfff5a6f88dd2178
-ms.sourcegitcommit: bf3967c5b74d2bc57b0f93239a297ccd56682178
+ms.openlocfilehash: a8a159813dba899cf79a13f15d10e2ff10c11494
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>Guía del administrador: Tipos de archivos compatibles con el cliente de Azure Information Protection
 
->*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 con SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
+>*Se aplica a: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 con SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012 y Windows Server 2008 R2*
 
 El cliente de protección de Azure Information Protection puede aplicar los siguientes documentos y correos electrónicos:
 
@@ -194,7 +194,7 @@ Para ayudar a impedir que los usuarios modifiquen los archivos que son fundament
 
 ### <a name="files-that-cannot-be-protected-by-default"></a>Archivos que no se puede proteger de forma predeterminada
 
-El cliente de Azure Information Protection no puede proteger de forma nativa los archivos que estén protegidos por contraseña. Los archivos protegidos con contraseña más frecuentes son PDF, pero hay otras aplicaciones, como las de Office, que también ofrecen esta funcionalidad.
+Ningún archivo protegido con contraseña se puede proteger de forma nativa con el cliente de Azure Information Protection a menos que esté abierto en la aplicación que aplica la protección. Los archivos protegidos con contraseña más frecuentes son PDF, pero hay otras aplicaciones, como las de Office, que también ofrecen esta funcionalidad.
 
 Además, el cliente de Azure Information Protection para Windows puede ver los siguientes archivos pero no puede proteger de forma nativa ni desproteger archivos PDF en ninguna de estas circunstancias:
 

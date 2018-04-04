@@ -1,24 +1,24 @@
 ---
-title: "Configuración de una etiqueta de Azure Information Protection para protección"
-description: "Puede proteger sus documentos y mensajes de correo electrónico más confidenciales mediante la configuración de una etiqueta para utilizar la protección de Rights Management."
+title: Configuración de una etiqueta de Azure Information Protection para protección
+description: Puede proteger sus documentos y mensajes de correo electrónico más confidenciales mediante la configuración de una etiqueta para utilizar la protección de Rights Management.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2018
+ms.date: 03/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: a00c6e669f01a8166b53ae1ae0a5a63737253d61
-ms.sourcegitcommit: 23d98a405057d61a737313c8dfef042996131d3e
+ms.openlocfilehash: d27dcff090aa33cb5c7a3bcb6641ac635ed8a104
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Configuración de una etiqueta para la protección de Rights Management
 
->*Se aplica a: Azure Information Protection*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 Puede proteger los documentos y los correos electrónicos más confidenciales mediante un servicio de Rights Management. Este servicio usa directivas de cifrado, identidad y autorización para ayudarle a impedir la pérdida de datos. La protección se aplica con una etiqueta configurada para usar la protección de Rights Management para documentos y mensajes de correo electrónico, y los usuarios además pueden seleccionar el botón **No reenviar** de Outlook. 
 
@@ -63,7 +63,9 @@ No es necesario que Exchange esté configurado para Information Rights Managemen
         
         La protección configurada previamente se conserva como una plantilla de protección archivada y se volverá a mostrar si se cambia la opción de nuevo a **Proteger**. No verá esta plantilla en Azure Portal pero, si es necesario, puede administrarla con [PowerShell](configure-templates-with-powershell.md). Este comportamiento significa que el contenido sigue estando disponible si tiene esta etiqueta con la configuración de protección aplicada anteriormente.
     
-    - **Proteger**: seleccione esta opción para aplicar la protección y, a continuación, vaya al paso 5.
+    - **Proteger**: seleccione esta opción para aplicar la protección y, después, vaya al paso 5 para configurar las opciones de protección.
+    
+    Nota: puede guardar una etiqueta nueva en esta fase sin tener que aplicar ninguna configuración adicional. Si lo hace, se configurará la etiqueta para aplicar la protección de modo que solo la persona que aplique la etiqueta pueda abrir el documento o el mensaje de correo electrónico sin restricciones de uso. En algunos casos este podría ser el resultado requerido, de manera que un usuario pueda guardar un archivo en cualquier ubicación y garantizar que solo él puede abrirlo. Si este resultado se ajusta a sus necesidades y el resto de los usuarios no tienen que colaborar en el contenido protegido, en lugar de ir al paso 5, vaya directamente al paso 12.
     
     - **Quitar protección**: seleccione esta opción para quitar la protección si un documento o correo electrónico está protegido. Ahora, vaya al paso 11.
         
@@ -229,8 +231,9 @@ Los nuevos usuarios que agregue podrán abrir documentos y mensajes de correo el
 Esta etiqueta no se puede restringir a Outlook, pero proporciona controles menos restrictivos que utilizar No reenviar. Por ejemplo, en el caso de que los destinatarios puedan copiar desde el correo electrónico o un archivo adjunto, o imprimir y guardar un archivo adjunto.
 
 Si especifica usuarios externos que no tengan ninguna cuenta de Azure AD, asegúrese de indicarles que esta etiqueta no debe usarse para documentos, solo para el correo electrónico. Además, para admitir estos usuarios externos, Exchange Online deben configurarse para las [nuevas capacidades de cifrado de mensajes de Office 365](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e).  
+
 > [!NOTE]
-> Exchange Online está desplegando una nueva opción, [Solo cifrar](configure-usage-rights.md#encrypt-only-option-for-emails). Esta opción no está disponible para la configuración de etiquetas.
+> Exchange Online está desplegando una nueva opción, [Solo cifrar](configure-usage-rights.md#encrypt-only-option-for-emails). Esta opción no está disponible para la configuración de etiquetas. Pero puede usar este ejemplo para configurar una etiqueta con el mismo conjunto de derechos de uso.
 
 Cuando los usuarios especifican las direcciones de correo electrónico en el cuadro **Para**, las direcciones deben ser de los mismos usuarios que especifique para la configuración de esta etiqueta. Dado que los usuarios pueden pertenecer a grupos y tener más de una dirección de correo electrónico, no es necesario que la que indiquen coincida con la que usted especifique para los permisos. Sin embargo, se trata de la manera más sencilla de asegurarse de que el destinatario quede correctamente autorizado. Para obtener más información sobre cómo se autorizan los permisos para los usuarios, consulte [Preparación de usuarios y grupos para Azure Information Protection](../plan-design/prepare.md). 
 
@@ -242,9 +245,11 @@ Cuando los usuarios especifican las direcciones de correo electrónico en el cua
     
     Repita este paso para especificar usuarios adicionales que deban tener los mismos permisos.
 
-4. Para **Elección de permisos a partir de valores predeterminados**, seleccione **Copropietario**, **Coautor**, **Revisor** o **Personalizado** para seleccionar los permisos que quiera conceder. 
+4. Para **Elección de permisos a partir de valores predeterminados**, seleccione **Copropietario**, **Coautor**, **Revisor** o **Personalizado** para seleccionar los permisos que quiera conceder.
     
-    Nota: No seleccione **Visor** para mensajes de correo electrónico y, si selecciona **Personalizado**, asegúrese de incluir **Editar y guardar**. 
+    Nota: No seleccione **Visor** para mensajes de correo electrónico y, si selecciona **Personalizado**, asegúrese de incluir **Editar y guardar**.
+    
+    Para seleccionar los mismos permisos que coincidan con la nueva opción **Solo cifrar** de Exchange Online, seleccione **Personalizado**. Después, seleccione todos los permisos excepto **Guardar como, exportar (EXPORT)** y **Control total (OWNER)**.
 
 5. Para especificar usuarios adicionales que deban tener permisos diferentes, repita los pasos 3 y 4.
 
