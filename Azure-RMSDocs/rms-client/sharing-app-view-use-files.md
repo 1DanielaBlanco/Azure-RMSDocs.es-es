@@ -1,26 +1,26 @@
 ---
-title: "Apertura de archivos protegidos con RMS con la aplicación RMS sharing - AIP"
-description: "Instrucciones para ver y usar un archivo protegido, que requiere que tenga la aplicación Rights Management (RMS) sharing instalada."
+title: Apertura de archivos protegidos con RMS con la aplicación RMS sharing - AIP
+description: Instrucciones para ver y usar un archivo protegido, que requiere que tenga la aplicación Rights Management (RMS) sharing instalada.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 07/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0a510d559573e942b8a2bf392f36a1300dfbfb7a
-ms.sourcegitcommit: 1c3ebf4ad64b55db4fec3ad007fca71ab7d38c02
+ms.openlocfilehash: 393db5da6f2a563b073b071e873a8c5d555a76e6
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="view-and-use-files-that-have-been-protected-by-rights-management"></a>Ver y usar los archivos protegidos por Rights Management
 
->*Se aplica a: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 con SP1, Windows 8 y Windows 8.1*
+>*Se aplica a: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 con SP1, Windows 8 y Windows 8.1*
 
 Cuando la [aplicación Rights Management sharing (RMS) está instalada en el equipo](install-sharing-app.md), puede ver un archivo protegido simplemente haciendo doble clic en él. El archivo puede ser un archivo adjunto en un mensaje de correo electrónico, o podría verlo al usar el Explorador de archivos.
 
@@ -44,7 +44,7 @@ Si ve dos versiones del archivo pero con extensiones de nombre de archivo difere
 
 La manera en que se abre el archivo depende de cómo se protegió, lo que se puede saber por la extensión de nombre de archivo. En cualquier caso, el proceso de abrir el archivo podría auditarse, y sigue auditándose mientras esté protegido. Además, si el archivo se envió como un archivo adjunto por correo electrónico, es posible que el remitente reciba una notificación por correo electrónico cada vez que abra el archivo.
 
-- **El archivo tiene una*.pfile* extensión de nombre de archivo**
+- **El archivo tiene una** extensión de nombre de archivo** .pfile
 
     El archivo se protegió de forma genérica.
 
@@ -73,7 +73,7 @@ Para obtener la lista completa de extensiones de nombres de archivo que admiten 
 ## <a name="to-use-files-that-have-been-protected-for-example-edit-and-print-the-file"></a>Para usar archivos que están protegidos (por ejemplo, editar e imprimir el archivo)
 Si, tras abrir el archivo protegido, desea hacer algo más que simplemente leerlo (como editarlo, copiarlo e imprimirlo), siga las instrucciones correspondientes a la extensión de nombre de archivo :
 
-- **El archivo tiene una*.pfile* extensión de nombre de archivo**
+- **El archivo tiene una** extensión de nombre de archivo** .pfile
 
     Guarde el archivo abierto y asígnele una nueva extensión de nombre de archivo que esté asociada a la aplicación que desea usar.
 
@@ -99,7 +99,7 @@ Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de 
 
 -   [¿Qué desea hacer?](sharing-app-user-guide.md#what-do-you-want-to-do)
 
-## <a name="see-also"></a>Véase también
+## <a name="see-also"></a>Consulte también
 [Guía de usuario de la aplicación Rights Management sharing](sharing-app-user-guide.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
