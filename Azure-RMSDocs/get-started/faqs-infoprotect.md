@@ -4,7 +4,7 @@ description: ¿Tiene alguna pregunta que trate específicamente sobre clasificac
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/22/2018
+ms.date: 03/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-ms.openlocfilehash: 543abf11ce2d107c3d2a52a24c6c2a474b80cfbd
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 24e99c6645832bcddbbf881a2b5728af3589f1e5
+ms.sourcegitcommit: b17432ed155394111c878eb57b5fa7adf9df9755
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>Preguntas más frecuentes sobre la clasificación y el etiquetado en Azure Information Protection
 
@@ -44,10 +44,6 @@ Gracias al nuevo rol de administrador de Information Protection recientemente in
 
 Si selecciona la opción para instalar la directiva de demostración cuando instale el [cliente de Azure Information Protection](https://www.microsoft.com/en-us/download/details.aspx?id=53018), no necesita iniciar sesión en el portal para ver y probar la funcionalidad de etiquetado. La directiva de demostración instala localmente una directiva predeterminada de Azure Information Protection, de forma que podrá probar el etiquetado de documentos y correos electrónicos, pero no cambiar ni agregar etiquetas nuevas sin iniciar sesión en Azure Portal. 
 
-## <a name="which-options-in-the-azure-portal-are-p2"></a>¿Qué opciones en Azure Portal son P2?
-
-Las opciones de Azure Portal que requieren una suscripción de **Azure Information Protection Premium 2** (P2) tienen ahora un mensaje emergente de información para identificarlas. Para obtener más información sobre qué características se incluyen en las suscripciones de P1 y P1, consulte la [lista de características](https://www.microsoft.com/cloud-platform/azure-information-protection-features) del sitio de Azure Information Protection.
-
 ## <a name="can-a-file-have-more-than-one-classification"></a>¿Puede un archivo tener más de una clasificación?
 
 Los usuarios pueden seleccionar una sola etiqueta a la vez para cada documento o correo electrónico, lo que a menudo resulta en una sola clasificación. Sin embargo, si los usuarios seleccionan una subetiqueta, en realidad se aplican dos etiquetas a la vez: una principal y una secundaria. Con las subetiquetas, un archivo puede tener dos clasificaciones que denotan una relación entre elementos principal y secundario para, así, obtener un nivel extra de control.
@@ -60,7 +56,7 @@ Cuando use subetiquetas, no configure distintivos visuales, protección o condic
 
 Aunque hay una [configuración de directiva](../deploy-use/configure-policy-settings.md) que requiere que los usuarios indiquen el motivo por el que reducen una etiqueta de clasificación, quitan una etiqueta o quitan la protección, esta opción no impide realizar estas acciones. Para impedir que los usuarios quiten o cambien una etiqueta, el contenido debe estar protegido y los permisos de protección no deben conceder al usuario el [derecho de uso](../deploy-use/configure-usage-rights.md) Exportar o Control total. 
 
-# <a name="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling"></a>Cuando se etiqueta un correo electrónico, ¿los datos adjuntos reciben automáticamente el mismo etiquetado?
+## <a name="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling"></a>Cuando se etiqueta un correo electrónico, ¿los datos adjuntos reciben automáticamente el mismo etiquetado?
 
 No. Al etiquetar un mensaje de correo electrónico que tiene datos adjuntos, dichos datos adjuntos no heredan la misma etiqueta. Los datos adjuntos siguen sin etiqueta o conservan una etiqueta aplicada por separado. Sin embargo, si la etiqueta para el correo electrónico aplica protección, dicha protección se aplica a los datos adjuntos.
 
