@@ -4,7 +4,7 @@ description: Información sobre cómo personalizar el cliente de Azure Informati
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/22/2018
+ms.date: 04/02/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 47b7a82ba7dc6ba7dc3fc21ed114452578b62593
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 08412c2c1cf1182b6d8bdae6e68d53d0b46f4b41
+ms.sourcegitcommit: b17432ed155394111c878eb57b5fa7adf9df9755
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Guía del administrador: Configuraciones personalizadas del cliente de Azure Information Protection
 
@@ -201,6 +201,20 @@ Para establecer esta configuración avanzada, especifique las cadenas siguientes
 - Clave: **OutlookDefaultLabel**
 
 - Valor: \<**Identificador de etiqueta**> o **Ninguna**
+
+## <a name="turn-off-classification-running-continuously-in-the-background"></a>Desactivación de la clasificación que se ejecuta continuamente en segundo plano
+
+Esta opción de configuración está actualmente en versión preliminar y sujeta a cambios. Además, esta opción de configuración necesita la versión preliminar del cliente.
+
+Esta opción utiliza una [configuración de cliente avanzada](#how-to-configure-advanced-client-configuration-settings-in-the-portal) que se debe definir en Azure Portal. 
+
+Cuando define esta configuración, la versión preliminar del cliente de Azure Information Protection no comprueba periódicamente los documentos en busca de las reglas de condición que especifique. En su lugar, se aplican las etiquetas automáticas y recomendadas del [mismo modo que la versión de disponibilidad general del cliente de Azure Information Protection](../deploy-use/configure-policy-classification.md#how-automatic-or-recommended-labels-are-applied). Esta configuración podría ser necesaria por motivos de rendimiento.
+
+Para establecer esta configuración avanzada, especifique las cadenas siguientes:
+
+- Clave: **RunPolicyInBackground**
+
+- Valor: **False**
 
 ## <a name="migrate-labels-from-secure-islands-and-other-labeling-solutions"></a>Migración de las etiquetas de Secure Islands y otras soluciones de etiquetado
 

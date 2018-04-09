@@ -4,17 +4,17 @@ description: Al configurar las condiciones de una etiqueta, puede asignar autom�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/20/2018
+ms.date: 04/02/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: 80537b32bee11df72673b869932f2d59cef11469
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: f7242c05d830ecd1b702e4e9bb049e72740843f3
+ms.sourcegitcommit: b17432ed155394111c878eb57b5fa7adf9df9755
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Configuración de las condiciones para la clasificación automática y recomendada en Azure Information Protection
 
@@ -62,9 +62,11 @@ En este ejemplo, el usuario puede hacer clic en **Cambiar ahora** para aplicar l
 
 #### <a name="more-information-about-running-continuously"></a>Más información sobre la ejecución continua
 
-La versión preliminar actual del cliente de Azure Information Protection comprueba periódicamente los documentos en busca de las reglas de condición que especifique. Este comportamiento permite la clasificación automática y recomendada y la protección de los documentos que están almacenados en SharePoint Online. Los archivos de gran tamaño también se guardan más rápidamente porque las reglas de condición ya se han ejecutado. 
+De forma predeterminada, la versión preliminar actual del cliente de Azure Information Protection comprueba periódicamente los documentos en busca de las reglas de condición que especifique. Este comportamiento permite la clasificación automática y recomendada y la protección de los documentos que están almacenados en SharePoint Online. Los archivos de gran tamaño también se guardan más rápidamente porque las reglas de condición ya se han ejecutado. 
 
-Las reglas de condición no se ejecutan en tiempo real mientras el usuario escribe. En su lugar, se ejecutan periódicamente como una tarea en segundo plano si se modifica el documento. 
+Las reglas de condición no se ejecutan en tiempo real mientras el usuario escribe. En su lugar, se ejecutan periódicamente como una tarea en segundo plano si se modifica el documento.
+
+Puede cambiar este comportamiento para que el cliente de Azure Information Protection aplique etiquetas automáticas y recomendadas del mismo modo que la versión de disponibilidad general del cliente. Esta configuración requiere una [configuración avanzada del cliente](../rms-client/client-admin-guide-customizations.md#turn-off-classification-running-continuously-in-the-background).
 
 ### <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>Cómo evaluar varias condiciones cuando se aplican a más de una etiqueta
 
