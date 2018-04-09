@@ -4,7 +4,7 @@ description: ¿No entiende el significado de una palabra, una frase o un acróni
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/15/2017
+ms.date: 03/30/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b3513a4ec00abf8727e2a5e07f9b4a67c96b7574
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 20ec9893bba090b1d17d67b06fb614a2baee3403
+ms.sourcegitcommit: b17432ed155394111c878eb57b5fa7adf9df9755
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="terminology-for-azure-information-protection"></a>Terminología de Azure Information Protection
 
@@ -49,6 +49,7 @@ ms.lasthandoff: 03/28/2018
 |protección de la información|En ocasiones abreviada como *PI*.<br /><br />Un término genérico del sector que hace referencia a la protección de los datos y los archivos frente al acceso no autorizado, incluso después de que los datos y los archivos atraviesan los límites de la organización mediante correo electrónico o uso compartido de documentos. Microsoft Azure Information Protection es un ejemplo de solución de protección de la información (IP).|
 |Information Rights Management|Con frecuencia abreviado como *IRM*.<br /><br />Término usado en conjunto con los servicios de Office, como Exchange Server, Word y SharePoint Online, para describir la posibilidad de admitir los servicios de Microsoft Rights Management.|
 |IRM|Consulte *Information Rights Management*|
+|Cifrado de mensajes de Office|Con frecuencia abreviado como *OME*.<br /><br />Las nuevas funcionalidades de Cifrado de mensajes de Office 365 tienen integración nativa con el servicio Azure Rights Management para proporcionar la misma protección de correo electrónico para usuarios internos y externos, actualización automática de plantillas y compatibilidad con el escenario Aportar su propia clave (BYOK). La implementación de OME anterior se diseñó solo para destinatarios externos, requería una regla de flujo de correo y no era compatible con BYOK.|
 |MSDRM|A veces, se considera una referencia del cliente de RMS 1.0, que se sustituyó por el nuevo cliente, MSIPC. Este cliente anterior admite aplicaciones que se desarrollan con el SDK de RMS 1.0 y admite Office 2010 y Office 2007, Exchange 2010 y Exchange 2013, y SharePoint 2010 y SharePoint 2007.|
 |MSPIC|A veces considerada como referencia para el cliente RMS 2.0, que sustituye al antiguo cliente RMS, MSDRM. Este último cliente admite aplicaciones que se desarrollan con RMS SDK 2.0 y es compatible con Office 2016 y Office 2013, SharePoint 2013, la aplicación RMS sharing y el cliente de Azure Information Protection.|
 |protección nativa|Un nivel de protección disponible en todas las aplicaciones habilitadas que evita que gente no autorizada abra un archivo y que, además, aplica directivas más estrictas, como solo lectura y la imposibilidad de imprimir. Además, esta protección permanece con el archivo, incluso cuando el archivo se reenvía a otras personas o se guarda en una ubicación pública a la que otros puedan acceder.|
