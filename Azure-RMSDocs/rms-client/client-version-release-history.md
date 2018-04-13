@@ -1,5 +1,5 @@
 ---
-title: Cliente de Azure Information Protection&colon; historial de publicación de versiones y directiva de soporte técnico
+title: 'Cliente de Azure Information Protection: historial de publicación de versiones y directiva de soporte técnico'
 description: Consulte las novedades o los cambios en una versión del cliente de Azure Information Protection para Windows y conozca la directiva de ciclo de vida de soporte técnico.
 author: cabailey
 ms.author: cabailey
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 1da6a647715389f912af5192b5b70a80f0bd35e9
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: ff9d6a4ce66deed8add68d7b1efc889ee9448f53
+ms.sourcegitcommit: 5866509c17872e274720d3014fe218ed95e86ee3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Cliente de Azure Information Protection: historial de publicación de versiones y directiva de soporte técnico
 
