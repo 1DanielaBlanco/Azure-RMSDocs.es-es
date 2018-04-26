@@ -4,7 +4,7 @@ description: Información e instrucciones para que los administradores configure
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/27/2018
+ms.date: 04/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ecf30ece9370a732e0bf302be5733273b64eea1a
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 22182613f3bc12e5ed5aec0079c7b3e54ba8f69d
+ms.sourcegitcommit: 5892db302bdf96538ecb3af8e3c2f678f5d1ebe2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="office-365-configuration-for-clients-and-online-services-to-use-the-azure-rights-management-service"></a>Office 365: configuración para clientes y servicios en línea que usan el servicio Azure Rights Management
 
@@ -110,7 +110,7 @@ Proporcione a los usuarios las siguientes instrucciones para que puedan configur
 
 3. Seleccione el icono **Configuración**. En el panel **Configuración**, si la **cinta de opciones** está **desactivada**, seleccione esta opción para activarla.
 
-4. Para configurar la protección de todos los archivos de OneDrive para la Empresa, seleccione la pestaña **BIBLIOTECA** de la cinta de opciones y, después, seleccione **Configuración de la biblioteca**. Para seleccionar todos los archivos de una carpeta específica para protegerlos, seleccione esa carpeta.
+4. Para configurar la protección de todos los archivos de OneDrive para la Empresa, seleccione la pestaña **BIBLIOTECA** de la cinta de opciones y, después, seleccione **Configuración de la biblioteca**.
 
 5. En la página **Documentos > Configuración**, en la sección **Permisos y administración**, seleccione **Information Rights Management**.
 
