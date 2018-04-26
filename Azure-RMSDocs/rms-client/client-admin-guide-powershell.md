@@ -4,7 +4,7 @@ description: Instrucciones e información para que los administradores administr
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/26/2018
+ms.date: 04/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 32ae599bc9251fd1504adc2b7c60190e9d78f5fd
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: c791baa300fff3c251c49ddb92b6bf3765933a99
+ms.sourcegitcommit: 2eb5245b6afb291eae5ba87034e1698f096139dc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>Guía del administrador: Uso de PowerShell con el cliente de Azure Information Protection
 
@@ -363,7 +363,7 @@ Además de los requisitos previos para instalar el módulo AzureInformationProte
 
 8. Agregue el nombre de cuenta. Si otras cuentas de administradores de AD RMS o de servicio también van a usar estos cmdlets para proteger y desproteger archivos, agregue también esas cuentas. 
     
-    Para proteger o desproteger archivos de forma no interactiva, agregue las cuentas de equipo pertinentes. Por ejemplo, agregue la cuenta de equipo del equipo de Windows Server que esté configurado para la infraestructura de clasificación de archivos y vaya a usar un script de PowerShell para proteger archivos. Este escenario necesita la versión preliminar actual del cliente de Azure Information Protection.
+    Para proteger o desproteger archivos de forma no interactiva, agregue las cuentas de equipo pertinentes. Por ejemplo, agregue la cuenta de equipo del equipo de Windows Server que esté configurado para la infraestructura de clasificación de archivos y vaya a usar un script de PowerShell para proteger archivos.
 
 9. En la columna **Permitir**, asegúrese de que las casillas **Leer y ejecutar** y **Leer** estén activadas.
 
@@ -531,9 +531,6 @@ Ejecute este comando en el contexto de la cuenta que etiquetará y protegerá lo
 La primera vez que se ejecuta este comando se le pide que inicie sesión, que crea y almacena de forma segura el token de acceso de su cuenta en % localappdata%\Microsoft\MSIP. Tras este inicio de sesión inicial, puede etiquetar y proteger los archivos de manera no interactiva en el equipo. Sin embargo, si usa una cuenta de servicio para etiquetar y proteger los archivos, y la cuenta no puede iniciar sesión de forma interactiva, siga las instrucciones de la siguiente sección para que la cuenta se pueda autenticar mediante un token.
 
 ### <a name="specify-and-use-the-token-parameter-for-set-aipauthentication"></a>Especificación y uso del parámetro Token en Set-AIPAuthentication
-
-> [!NOTE]
-> Esta opción requiere la versión de disponibilidad general (GA) del analizador de Azure Information Protection o la versión preliminar actual del cliente de Azure Information Protection.
 
 Use los siguientes pasos adicionales e instrucciones para evitar el inicio de sesión interactivo inicio de sesión de una cuenta que etiqueta y protege los archivos. Normalmente, estos pasos adicionales solo son necesarios si a esta cuenta no se le puede otorgar el derecho **inicio de sesión local** derecha, pero se le otorga el derecho **iniciar sesión como trabajo de Batch**. Por ejemplo, esto puede suceder en la cuenta de servicio que ejecuta el detector de Azure Information Protection.
 
