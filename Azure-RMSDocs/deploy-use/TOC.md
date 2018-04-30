@@ -16,6 +16,7 @@
 ### [La directiva predeterminada](configure-policy-default.md)
 ### [Configuración de directivas](configure-policy-settings.md)
 ### [Creación de una nueva etiqueta](configure-policy-new-label.md)
+### [Adición o eliminación de etiquetas](configure-policy-add-remove-label.md)
 ### [Eliminación o cambio de orden de una etiqueta](configure-policy-delete-reorder.md)
 ### [Cambio de una etiqueta](configure-policy-change-label.md)
 ### [Configuración de la protección](configure-policy-protection.md)
