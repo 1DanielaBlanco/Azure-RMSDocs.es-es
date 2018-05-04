@@ -4,7 +4,7 @@ description: Instrucciones e información para que los administradores configure
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/29/2018
+ms.date: 04/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 983ecdc9-5631-48b8-8777-f4cbbb4934e8
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 04b6f65495c6b7251d000ff438ecab20c3a44db7
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: e24d91f04dc3186a9451546c8a962c49129f326b
+ms.sourcegitcommit: affda7572064edaf9e3b63d88f4a18d0d6932b13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="admin-guide-configuring-and-using-document-tracking-for-azure-information-protection"></a>Guía del administrador: Configuración y uso de Seguimiento de documentos para Azure Information Protection
 
@@ -24,11 +24,17 @@ ms.lasthandoff: 03/28/2018
 
 Si tiene una [suscripción que admite el seguimiento de documentos](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features), el sitio de seguimiento de documentos está habilitado de manera predeterminada para todos los usuarios de su organización. El seguimiento de documentos proporciona información para usuarios y administradores sobre cuándo se accedió a un documento protegido y, en caso de ser necesario, se puede revocar un documento al que se hizo seguimiento.
 
-## <a name="privacy-controls-for-your-document-tracking-site"></a>Controles de privacidad para el sitio de seguimiento de documentos
+## <a name="using-powershell-to-manage-the-document-tracking-site"></a>Uso de PowerShell para administrar el sitio de seguimiento de documentos
+
+Las siguientes secciones contienen información sobre cómo puede administrar el sitio de seguimiento de documentos mediante PowerShell. Para obtener instrucciones de instalación del módulo de PowerShell, vea [Instalación del módulo de PowerShell para AADRM](../deploy-use/install-powershell.md). Si ya descargó e instaló el módulo, compruebe el número de versión. Para ello, ejecute: `(Get-Module aadrm –ListAvailable).Version`
+
+Para más información sobre cada uno de estos cmdlets, use los vínculos que se proporcionan.
+
+### <a name="privacy-controls-for-your-document-tracking-site"></a>Controles de privacidad para el sitio de seguimiento de documentos
 
 Si mostrar toda esta información de seguimiento de documentos está prohibido en su organización debido a los requisitos de privacidad, puede deshabilitar el seguimiento de documentos mediante el cmdlet [Disable-AadrmDocumentTrackingFeature](/powershell/module/aadrm/disable-aadrmdocumenttrackingfeature). 
 
-Este cmdlet deshabilita el acceso al sitio de seguimiento de documentos para que ninguno de los usuarios de la organización pueda hacer seguimiento ni revocar el acceso a documentos que se han protegido. Puede volver a habilitar el seguimiento de documentos en cualquier momento con el cmdlet [Enable-AadrmDocumentTrackingFeature](/powershell/module/aadrm/enable-aadrmdocumenttrackingfeature), así como comprobar si el seguimiento de documentos está actualmente habilitado o deshabilitado mediante [Get-AadrmDocumentTrackingFeature](/powershell/module/aadrm/get-aadrmdocumenttrackingfeature). Para ejecutar estos cmdlets, debe tener como mínimo la versión **2.3.0.0** del módulo de Azure Rights Management (AADRM) para PowerShell. 
+Este cmdlet deshabilita el acceso al sitio de seguimiento de documentos para que ninguno de los usuarios de la organización pueda hacer seguimiento ni revocar el acceso a documentos que se han protegido. Puede volver a habilitar el seguimiento de documentos en cualquier momento con el cmdlet [Enable-AadrmDocumentTrackingFeature](/powershell/module/aadrm/enable-aadrmdocumenttrackingfeature), así como comprobar si el seguimiento de documentos está actualmente habilitado o deshabilitado mediante [Get-AadrmDocumentTrackingFeature](/powershell/module/aadrm/get-aadrmdocumenttrackingfeature). Para ejecutar estos cmdlets, debe tener como mínimo la versión **2.3.0.0** del módulo de AADRM para PowerShell. 
 
 Cuando el sitio de seguimiento de documentos está habilitado, de manera predeterminada, muestra información como las direcciones de correo electrónico de las personas que intentaron acceder a los documentos protegidos, cuándo intentaron hacerlo y su ubicación. Este nivel de información puede resultar útil para determinar cómo se usan los documentos compartidos y si se deben revocar en caso de detectar actividad sospechosa. Sin embargo, por motivos de privacidad, es posible que tenga que deshabilitar esta información de usuario para algunos o la totalidad de los usuarios. 
 
@@ -40,11 +46,19 @@ Cuando usa esta configuración, todos los usuarios pueden seguir usando el sitio
 
 Esta configuración solo afecta a los usuarios finales. Los administradores de Azure Information Protection siempre pueden realizar un seguimiento de las actividades de todos los usuarios, incluso cuando aquellos usuarios se especifican mediante Set-AadrmDoNotTrackUserGroup. Para más información sobre cómo los administradores pueden realizar un seguimiento de documentos para usuarios, consulte la sección [Realizar un seguimiento y revocar documentos para usuario](#tracking-and-revoking-documents-for-users).
 
-Puede usar el cmdlet [Clear-AadrmDoNotTrackUserGroup](/powershell/module/aadrm/Clear-AadrmDoNotTrackUserGroup) si ya no necesita esta opción. También puede quitar usuarios de manera selectiva si los quita del grupo, pero tenga en cuenta la [caché de grupo](../plan-design/prepare.md#group-membership-caching-by-azure-information-protection). Puede usar el cmdlet [Get-AadrmDoNotTrackUserGroup](/powershell/module/aadrm/get-AadrmDoNotTrackUserGroup) para comprobar si esta opción está en uso actualmente. Para ejecutar los cmdlets de esta configuración de grupo, debe tener como mínimo la versión **2.10.0.0** del módulo de Azure Rights Management (AADRM) para PowerShell.
 
-Para más información sobre cada uno de estos cmdlets, use los vínculos que se proporcionan. Para obtener instrucciones de instalación del módulo de PowerShell, vea [Instalación del módulo de PowerShell para AADRM](../deploy-use/install-powershell.md). Si ya descargó e instaló el módulo, compruebe el número de versión. Para ello, ejecute: `(Get-Module aadrm –ListAvailable).Version`
+### <a name="logging-information-from-the-document-tracking-site"></a>Información de registro desde el sitio de seguimiento de documentos
 
+Cuando tenga una versión mínima de **2.13.0.0**  para el módulo de AADRM, puede utilizar los siguientes cmdlets para descargar la información de registro desde el sitio de seguimiento de documentos:
 
+- [Get-AadrmTrackingLog](/powershell/module/aadrm/Get-AadrmTrackingLog)
+    
+    Este cmdlet devuelve información de seguimiento sobre documentos protegidos para un usuario específico que protegió los documentos (el emisor de Rights Management) o que accedió a documentos protegidos. Utilice este cmdlet para ayudar a responder a la pregunta "¿Qué documentos protegidos ha realizado el seguimiento o ha accedido un usuario especificado?"
+
+- [Get-AadrmDocumentLog](/powershell/module/aadrm/Get-AadrmDocumentLog)
+    
+    Este cmdlet devuelve información de protección sobre los documentos cuyo seguimiento ha realizado un usuario específico si ese usuario protegía documentos (el emisor de Rights Management) o si era el propietario de Rights Management para los documentos, o si los documentos protegidos estaban configurados para conceder el acceso directo al usuario. Utilice este cmdlet para ayudar a responder a la pregunta "¿Cómo se protegen los documentos para un usuario especificado?"
+ 
 ## <a name="destination-urls-used-by-the-document-tracking-site"></a>Direcciones URL de destino que usa el sitio de seguimiento de documentos
 
 Las siguientes direcciones URL se usan para seguimiento de documentos y se deben permitir en todos los dispositivos y servicios entre los clientes que ejecutan el cliente de Azure Information Protection e Internet. Por ejemplo, agregue estas direcciones URL a los firewalls o a los sitios de confianza si usa Internet Explorer con seguridad mejorada.

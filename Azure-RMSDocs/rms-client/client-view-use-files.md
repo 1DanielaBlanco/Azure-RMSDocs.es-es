@@ -4,7 +4,7 @@ description: Instrucciones para ver y usar un documento protegido que requiere t
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/30/2018
+ms.date: 04/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ce1c7d4c-b5ff-4672-8b9a-a72129bac992
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a81585ae1acb791dcf33f8d047268a9e4e9f2f2e
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: eb631b0153ce047177ef12887c025303acfac1db
+ms.sourcegitcommit: c207a2f592d167a4a0b6c4427259683e2087f143
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="user-guide-view-and-use-files-that-have-been-protected-by-rights-management"></a>Guía del usuario: Visualización y uso de archivos protegidos con Rights Management
 
@@ -70,9 +70,9 @@ Si la organización no tiene una cuenta en la nube para que pueda usarla (para O
     
     Para más información sobre los permisos y los derechos de uso que contiene cada uno, consulte los [derechos incluidos en niveles de permisos](../deploy-use/configure-usage-rights.md#rights-included-in-permissions-levels).
 
-4. Para editar el archivo, haga clic en **Guardar como**, que permite guardar el archivo sin protección con su extensión de nombre de archivo original. Luego puede editar el archivo mediante la aplicación que está asociada a ese tipo de archivo.
+4. Para editar el archivo, haga clic en **Guardar como**, que permite guardar el archivo sin la etiqueta y sin protección con su extensión de nombre de archivo original. Luego puede editar el archivo mediante la aplicación que está asociada a ese tipo de archivo. 
     
-    Si posteriormente desea usar el Explorador de archivos para hacer clic con el botón derecho en este archivo guardado recientemente e intentar protegerlo de nuevo, no podrá hacerlo. Este es un problema conocido para el que ya se ha implementado una solución en la versión preliminar actual del cliente de Azure Information. En la versión preliminar del cliente, si elige **Guardar como** se eliminará la etiqueta además de la protección. Si hace clic con el botón derecho en el archivo, podrá volver a aplicar la etiqueta lo cual, a su vez, volverá a aplicar la protección.
+    Cuando haya terminado de editar el archivo, en el Explorador de archivos, haga clic con el botón derecho en el archivo para volver a aplicar la etiqueta, que a su vez vuelve a aplicar la protección.
 
 5. Si tiene archivos protegidos adicionales para abrir, puede ir directamente a ellos desde el visor, mediante la opción **Abrir**. El archivo seleccionado reemplaza al archivo original en el visor. 
 

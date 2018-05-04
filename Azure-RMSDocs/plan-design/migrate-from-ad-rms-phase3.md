@@ -4,7 +4,7 @@ description: Fase 3 de la migración desde AD RMS a Azure Information Protection
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/07/2018
+ms.date: 04/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e5e1f0fa043a0a15ef34c9e4d5690e974cf6bddd
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 62f854264f48b51e6177c033d95dabaf75e2dc5d
+ms.sourcegitcommit: affda7572064edaf9e3b63d88f4a18d0d6932b13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="migration-phase-3---client-side-configuration"></a>Fase 3 de la migración: configuración del lado cliente
 
@@ -72,17 +72,17 @@ Este método es adecuado solo para los clientes Windows que ejecuten aplicacione
 
     a. En uno de los servidores de AD RMS del clúster, inicie la consola de Internet Information Services (IIS) Manager.
 
-    b. Vaya a **Sitio web predeterminado** > **_wmcs** > **licensing** > **publish.asmx**.
+    b. Vaya a **Sitio web predeterminado** > **_wmcs** > **licensing** > **licensing.asmx**.
 
-    c. Haga clic con el botón derecho en **publish.asmx** > **Propiedades** > **Editar**.
+    c. Haga clic con el botón derecho en **licensing.asmx** > **Propiedades** > **Editar**.
 
-    d. En el cuadro de diálogo **Permisos para publish.asmx**, seleccione **Usuarios** si quiere establecer el redireccionamiento para todos los usuarios, o haga clic en **Agregar** para especificar un grupo que contenga los usuarios a los que quiera aplicar dicho redireccionamiento.
+    d. En el cuadro de diálogo **Permisos para licensing.asmx**, seleccione **Usuarios** si quiere establecer el redireccionamiento para todos los usuarios, o haga clic en **Agregar** para especificar un grupo que contenga los usuarios a los que quiera aplicar dicho redireccionamiento.
     
     Aunque todos los usuarios estén usando Office 2016, es preferible especificar inicialmente un subconjunto de usuarios para una migración por fases.
     
     e. En el grupo seleccionado, seleccione **Denegar** para los permisos **Leer y ejecutar** y **Leer**. Después, haga clic en **Aceptar** dos veces.
 
-    f. Para confirmar que esta configuración funciona según lo esperado, intente conectarse al archivo publish.asmx directamente desde un explorador. Debería ver el siguiente mensaje de error, que provoca que el cliente que ejecuta Office 2016 busque el registro SRV:
+    f. Para confirmar que esta configuración funciona según lo esperado, intente conectarse al archivo licensing.asmx directamente desde un explorador. Debería ver el siguiente mensaje de error, que provoca que el cliente que ejecuta Office 2016 busque el registro SRV:
     
     **Mensaje de error 401.3: no tiene permisos para ver este directorio o esta página con las credenciales que ha suministrado (acceso denegado debido a las listas de control de acceso).**
 
@@ -132,7 +132,7 @@ Si no puede realizar la migración de todos los clientes de Windows a la vez, ej
     > [!IMPORTANT]
     > Como antes, tenga cuidado y no incluya espacios adicionales antes ni después de las direcciones.
     > 
-    > Además, si los servidores de AD RMS usan certificados de servidor SSL/TLS, compruebe si los valores de la dirección URL de administración de licencias incluyen el número de puerto **443** en la cadena. Por ejemplo: https:// rms.treyresearch.net:443/_wmcs/licensing. Para encontrar esta información en la consola de Active Directory Rights Management Services, haga clic en el nombre del clúster y vea la información de **Detalles del clúster**. Si ve el número de puerto 443 incluido en la dirección URL, incluya este valor cuando modifique el script. Por ejemplo: https://rms.treyresearch.net:**443**. 
+    > Además, si los servidores de AD RMS usan certificados de servidor SSL/TLS, compruebe si los valores de la dirección URL de administración de licencias incluyen el número de puerto **443** en la cadena. Por ejemplo: https://rms.treyresearch.net:443/_wmcs/licensing. Para encontrar esta información en la consola de Active Directory Rights Management Services, haga clic en el nombre del clúster y vea la información de **Detalles del clúster**. Si ve el número de puerto 443 incluido en la dirección URL, incluya este valor cuando modifique el script. Por ejemplo: https://rms.treyresearch.net:**443**. 
     
     Si necesita recuperar la dirección URL de servicio de Azure Rights Management para *&lt;YourTenantURL&gt;*, consulte [Para identificar la dirección URL de servicio de Azure Rights Management](migrate-from-ad-rms-phase1.md#to-identify-your-azure-rights-management-service-url).
 

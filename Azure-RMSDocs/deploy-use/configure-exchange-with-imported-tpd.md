@@ -4,7 +4,7 @@ description: Información e instrucciones para que los administradores configure
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/22/2017
+ms.date: 04/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,30 +12,34 @@ ms.technology: techgroup-identity
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 022eb960ef58e69c0a4c2d8a76962ed792a9ed38
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: e452f5ac4e3297106a54a2034d64f57d8f6d5302
+ms.sourcegitcommit: affda7572064edaf9e3b63d88f4a18d0d6932b13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="exchange-online-irm-configuration-when-you-have-imported-a-trusted-publishing-domain"></a>Configuración de IRM de Exchange Online cuando se ha importado un dominio de publicación de confianza
+# <a name="exchange-online-irm-configuration-to-import-a-trusted-publishing-domain"></a>Configuración de IRM de Exchange Online para importar un dominio de publicación de confianza
 
 >*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
-Siga estas instrucciones solamente si ha configurado previamente IRM de Exchange Online mediante la importación del dominio de publicación de confianza (TPD) y necesita descifrar mensajes de correo electrónico que han sido cifrados previamente.
+Utilice estas instrucciones solo si su inquilino no puede utilizar las nuevas funcionalidades del cifrado de mensajes de Office 365. Para confirmar, ejecute el comando de Exchange Online [Get-IRMConfiguration](https://technet.microsoft.com/library/dd776120(v=exchg.160\).aspx) y compruebe si tiene un parámetro **AzureRMSLicensingEnabled**. Si ve este parámetro, el inquilino puede utilizar las nuevas funcionalidades del cifrado de mensajes de Office 365:
 
-Si ninguna de estas condiciones es aplicable, no use estas instrucciones y, en su lugar, use las de [Set up new Office 365 Message Encryption capabilities built on top of Azure Information Protection](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e) (Configuración de nuevas capacidades del cifrado de mensajes de Office 365 sobre Azure Information Protection).
+- Si **AzureRMSLicensingEnabled** se establece en **True**, el inquilino ya utiliza las nuevas funcionalidades de cifrado de mensajes de Office 365 y no debe utilizar las instrucciones que aparecen en la sección siguiente.
 
-## <a name="exchange-online-irm-configuration-if-you-have-an-imported-tpd"></a>Configuración de IRM de Exchange Online si tiene un TPD importado
+- Si **AzureRMSLicensingEnabled** se establece **False**, el inquilino admite las nuevas funcionalidades de cifrado de mensajes de Office 365 pero todavía no se ha configurado para ello. Para configurar al inquilino para esas nuevas funcionalidades del cifrado de mensajes consulte [Set up new Office 365 Message Encryption capabilities built on top of Azure Information Protection](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e) (Configuración de las nuevas funcionalidades del cifrado de mensajes de Office 365 basadas en Azure Information Protection). 
 
-Para configurar Exchange Online para que sea compatible con el servicio Azure Rights Management, debe configurar el servicio Information Rights Management (IRM) para Exchange Online. Para ello, use Windows PowerShell (no es preciso instalar un módulo independiente) y ejecute los [comandos de PowerShell para Exchange Online](https://technet.microsoft.com/library/jj200677.aspx).
+Solo si el inquilino no es compatible con las nuevas funcionalidades del cifrado de mensajes de Office 365, siga las instrucciones que se indican a continuación.
+
+## <a name="exchange-online-irm-configuration"></a>Configuración de IRM de Exchange Online
+
+Para configurar IRM de Exchange Online, use Windows PowerShell (no es preciso instalar un módulo independiente) y ejecute los [comandos de PowerShell para Exchange Online](https://technet.microsoft.com/library/jj200677.aspx).
 
 > [!NOTE]
-> Hasta que Microsoft no migre el inquilino de Office 365, no se puede configurar Exchange Online para que admita el servicio Azure Rights Management si usa una clave de inquilino administrada por el cliente (BYOK) para Azure Information Protection, en lugar de la configuración predeterminada de una clave de inquilino administrada por Microsoft.
+> Hasta que Microsoft migre el inquilino de Office 365 para admitir nuevas funcionalidades, no se puede configurar Exchange Online para que admita el servicio Azure Rights Management si usa una clave de inquilino administrada por el cliente (BYOK) para Azure Information Protection, en lugar de la configuración predeterminada de una clave de inquilino administrada por Microsoft.
 >
 > Si intenta configurar Exchange Online cuando el servicio Azure Rights Management usa BYOK, el comando para importar la clave (paso 5, en el siguiente procedimiento) generará un error con el mensaje **[FailureCategory=Cmdlet-FailedToGetTrustedPublishingDomainFromRmsOnlineException]**.
 
-Los pasos siguientes proporcionan un conjunto típico de comandos que se ejecutarían para permitir que Exchange Online use el servicio Azure Rights Management para este escenario:
+Los pasos siguientes proporcionan un conjunto típico de comandos que se ejecutarían para habilitar IRM de Exchange Online:
 
 1.  Si es la primera vez que ha usado Windows PowerShell para Exchange Online en el equipo, debe configurar Windows PowerShell para ejecutar scripts firmados. Inicie una sesión de Windows PowerShell mediante la opción **Ejecutar como administrador** y, luego, escriba:
 

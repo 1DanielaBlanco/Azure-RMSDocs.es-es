@@ -4,7 +4,7 @@ description: Ámbito y propósito de los comentarios y las notas al margen de Li
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/20/2017
+ms.date: 04/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -13,11 +13,11 @@ ms.custom: askipteam
 ms.assetid: 4eafbe72-f537-4e66-80ae-d11894d373f7
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b337324d31fa2e12c6cac2d93545498e4f778f4b
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 647e68050ebfd5cdb74b495a7823e7eb3a6f9307
+ms.sourcegitcommit: 2eb5245b6afb291eae5ba87034e1698f096139dc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="house-rules-for-comments-on-the-azure-information-protection-documentation"></a>Condiciones para los comentarios sobre la documentación de Azure Information Protection
 
@@ -29,7 +29,9 @@ Antes de publicar un comentario, asegúrese de que es pertinente para la página
  
 No se deben usar comentarios y notas al margen de Livefyre para lo siguiente:
  
-- **Preguntas sobre las suscripciones para su organización**. Por ejemplo, si las suscripciones existentes admiten una característica que quiere usar y ha comprobado los [requisitos de suscripción para Azure Information Protection](./get-started/requirements.md#subscription-for-azure-information-protection). En su lugar, póngase en contacto con su gestor de cuentas de Microsoft o el [Soporte técnico de Microsoft](./get-started/information-support.md#to-contact-microsoft-support).
+- **Preguntas sobre las suscripciones para su organización**. Por ejemplo, si las suscripciones existentes admiten una característica que quiere usar, o tiene preguntas sobre si los usuarios necesitan licencias específicas y ha comprobado los [requisitos de suscripción para Azure Information Protection](./get-started/requirements.md#subscription-for-azure-information-protection). En su lugar, póngase en contacto con su gestor de cuentas de Microsoft o el [Soporte técnico de Microsoft](./get-started/information-support.md#to-contact-microsoft-support).
+    
+    Nota: Actualmente estamos solicitando comentarios sobre la información de suscripción y licencia de Azure Information Protection. Puede enviar comentarios al equipo adecuado mediante la entrada de Yammer siguiente: https://www.yammer.com/askipteam/#/threads/show?threadId=1048644961 
 
 - **Soporte técnico**. Por ejemplo, una característica no funciona, ha comprobado los requisitos y ha seguido las instrucciones de la documentación, También ha comprobado que está usando una [versión compatible](./rms-client/client-version-release-history.md#servicing-information-and-timelines) del cliente de Azure Information Protection. En este caso, póngase en contacto con el [Soporte técnico de Microsoft](./get-started/information-support.md#to-contact-microsoft-support) o use los canales habituales de soporte técnico. También puede interactuar con la comunidad en el [sitio de Yammer](https://www.yammer.com/AskIPTeam) de Azure Information Protection.
 

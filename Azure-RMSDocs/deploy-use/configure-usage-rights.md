@@ -4,7 +4,7 @@ description: Conozca e identifique los derechos específicos que se usan al prot
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/26/2018
+ms.date: 04/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0ec4710618227573fa7442a8fe1f0bd52b2c8f6f
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 297e530406c33ca50d1e8287509e4c3a6f3c7a80
+ms.sourcegitcommit: affda7572064edaf9e3b63d88f4a18d0d6932b13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>Configuración de los derechos de uso para Azure Rights Management
 
@@ -158,7 +158,9 @@ Tenga en cuenta que el propietario de Rights Management es independiente del pro
 
 Cuando un usuario abre un documento o correo electrónico que se ha protegido con Azure Rights Management, se concede al usuario una licencia de uso de Rights Management para ese contenido. Esta licencia de uso es un certificado que contiene los derechos de uso del usuario para el documento o mensaje de correo electrónico y la clave de cifrado que se ha usado para cifrar el contenido. La licencia de uso, además, contiene una fecha de expiración, si se ha establecido, y el período de validez de la licencia de uso.
 
-Mientras la licencia de uso esté en vigor, no es necesario autenticar ni volver a autorizar al usuario. Esto permite al usuario seguir abriendo el documento o el correo electrónico protegido sin conexión a Internet. Una vez que el período de validez de la licencia de uso haya expirado, la siguiente vez que el usuario acceda al documento o correo electrónico protegido, deberá volver a autenticarse y autorizarse. 
+Un usuario debe tener una licencia de uso válida para abrir el contenido además de su certificado de cuenta de derechos (RAC), que es un certificado que se otorga cuando [se inicializa el entorno de usuario](../understand-explore/how-does-it-work.md#initializing-the-user-environment) y se renueva cada 31 días.
+
+Mientras la licencia de uso esté en vigor, no es necesario autenticar ni volver a autorizar al usuario para el contenido. Esto permite al usuario seguir abriendo el documento o el correo electrónico protegido sin conexión a Internet. Una vez que el período de validez de la licencia de uso haya expirado, la siguiente vez que el usuario acceda al documento o correo electrónico protegido, deberá volver a autenticarse y autorizarse. 
 
 Si los documentos y mensajes de correo electrónico se protegen mediante una etiqueta o una plantilla que define la configuración de protección, puede cambiar esta configuración en la plantilla o etiqueta sin tener que volver a proteger el contenido. Si el usuario ya ha accedido al contenido, los cambios se aplican una vez que la licencia de uso haya expirado. Sin embargo, si los usuarios aplican permisos personalizados (también conocidos como directiva de permisos "ad-hoc") y estos permisos deben cambiarse después de haber protegido el documento o correo electrónico, ese contenido se debe volver a proteger con los nuevos permisos. Los permisos personalizados para un mensaje de correo electrónico se implementan con la opción No reenviar.
 

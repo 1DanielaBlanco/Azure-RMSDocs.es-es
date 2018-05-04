@@ -4,7 +4,7 @@ description: Información sobre el registro de uso y los archivos de cliente de 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/20/2017
+ms.date: 04/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5a34ab85-773f-4782-ba09-c321cddf5bc0
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: a60169a2c98a751c787a7ca4a8aee31f99a18590
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 13f82bc12fd77d4f145b059c2962af01094760c3
+ms.sourcegitcommit: 5892db302bdf96538ecb3af8e3c2f678f5d1ebe2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="admin-guide-azure-information-protection-client-files-and-client-usage-logging"></a>Guía del administrador: Registro de uso de cliente y archivos de cliente de Azure Information Protection
 
@@ -40,9 +40,9 @@ Archivos de registros de cliente y archivos de directiva actualmente instalado:
 
 El cliente registra la actividad del usuario en el registro de eventos local de Windows **Aplicaciones y servicios** > **Azure Information Protection**. Los eventos incluyen la siguiente información:
 
-- Fecha, versión de cliente, id. de directiva
+- Versión de cliente, identificador de directiva
 
-- Nombre de usuario de inicio de sesión, nombre de equipo
+- Direcciones IP del usuario con sesión iniciada
 
 - Nombre y ubicación del archivo
 
@@ -77,9 +77,6 @@ El cliente registra la actividad del usuario en el registro de eventos local de 
     - Sistema (para iniciar sesión y descargar la directiva)
     
     - Default
-        
-        Esta acción de origen **Default** es solo para el cliente de versión preliminar y hace referencia a la etiqueta que se establece mediante **Seleccione la etiqueta predeterminada** en la directiva de Azure Information Protection.
-
     
 - Etiqueta antes y después de la acción 
     

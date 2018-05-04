@@ -4,25 +4,28 @@ description: 'Paso 2 de un tutorial de introducción para probar rápidamente Az
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/29/2017
+ms.date: 04/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: fecf9887937d3d17347e85759e2ed10b124ae8a1
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: e2850a0f67f18febdbd98e59d01b2f28b00bff2a
+ms.sourcegitcommit: 94d1c7c795e305444e9fde17ad73e46f242bcfa9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/23/2018
 ---
-# <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>Paso 2: configurar y publicar la directiva de Azure Information Protection
+# <a name="step-2-configure-the-azure-information-protection-policy"></a>Paso 2: Configuración de la directiva de Azure Information Protection
 
 >*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
+>[!NOTE]
+> Este paso del tutorial refleja las actualizaciones más recientes de Azure Portal. Si no ve una opción de menú **CLASIFICACIONES** y sigue viendo una opción **Publicar**, las instrucciones de navegación no coincidirán exactamente con lo que ve. Si ese es el caso, considere volver a este paso del tutorial en un par de días cuando su inquilino esté al tanto de los últimos cambios.
+
 Aunque Azure Information Protection incluye una directiva predeterminada que se puede usar sin necesidad de configuración, echaremos un vistazo a esa directiva y haremos algunos cambios.
 
-1. Continuando desde el [paso 1](infoprotect-tutorial-step1.md) y sin salir de Azure Portal, seleccione **Directiva global** para abrir la hoja **Directiva: global**. Esta hoja se abre automáticamente para las conexiones siguientes con el servicio y muestra la directiva de Information Protection predeterminada que se crea para el inquilino.
+1. Si continúa desde el [paso 1](infoprotect-tutorial-step1.md) y sin salir de Azure Portal, seleccione **CLASIFICACIONES** > **Directivas** > **Global** para abrir la hoja **Directiva: Global**. Esta hoja muestra la directiva de Azure Information Protection predeterminada que se crea para el inquilino.
 
 2. Dedique unos minutos a familiarizarse con las etiquetas que se muestran:
     
@@ -135,10 +138,6 @@ Ahora vamos a crear una subetiqueta para **Confidencial**.
     
     ![Paso 3 del tutorial de inicio rápido de Azure Information Protection: valores configurados](../media/info-protect-settings-configuredv2.png)
     
-14. Ahora que hemos hecho los cambios y los hemos guardado, queremos que estén disponibles para los usuarios. Para ello, haga clic en **Publicar** y en **Sí** para confirmar.
-
-    ![Paso 3 del tutorial de inicio rápido de Azure Information Protection: publicar la directiva configurada](../media/info-protect-publish.png)
-
 Puede cerrar el portal de Azure o dejarlo abierto para probar opciones de configuración adicionales cuando haya terminado este tutorial.
 
 Ahora que ya ha dado un vistazo a la directiva predeterminada y ha hecho algunos cambios, el siguiente paso consiste en instalar el cliente de Azure Information Protection.

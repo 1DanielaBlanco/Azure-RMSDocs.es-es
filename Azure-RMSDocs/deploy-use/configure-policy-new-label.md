@@ -4,39 +4,38 @@ description: Aunque Azure Information Protection incluye etiquetas predeterminad
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/20/2018
+ms.date: 04/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1b45faa5-0c9c-40d6-910a-f117e7b6e8a3
-ms.openlocfilehash: f24b4e8ac44377ab1c0b18244a376971ade87ebb
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: e36daed0dafe970a273d153512387dda9c1dca40
+ms.sourcegitcommit: 94d1c7c795e305444e9fde17ad73e46f242bcfa9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="how-to-create-a-new-label-for-azure-information-protection"></a>Creación de una nueva etiqueta para Azure Information Protection
 
 >*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
-Aunque Azure Information Protection incluye etiquetas predeterminadas que se pueden personalizar, también puede crear sus propias etiquetas que los usuarios verán en la barra de Information Protection.
+>[!NOTE]
+> En este artículo se reflejan las actualizaciones más recientes para Azure Portal, que le permiten crear una etiqueta de forma independiente de la directiva global o de una directiva de ámbito. También se quita la opción para publicar las directivas. Si el inquilino aún no está actualizado para estos cambios, por ejemplo, todavía se ve una opción **Publicar** para Azure Information Protection y no ve la opción de menú **CLASIFICACIONES**, espere unos días y luego vuelva a estas instrucciones.
+
+Aunque Azure Information Protection incluye etiquetas predeterminadas que se pueden personalizar, también puede crear sus propias etiquetas.
 
 Cuando necesite un nivel de clasificación extra, puede agregar nuevas etiquetas o subetiquetas a una etiqueta existente. Por ejemplo, la última etiqueta de la [directiva predeterminada](configure-policy-default.md) contiene subetiquetas.
 
 Al crear la primera subetiqueta de una etiqueta, los usuarios ya no pueden seleccionar la etiqueta original principal. En caso necesario, cree otra subetiqueta para recrear la configuración de la etiqueta principal a fin de que los usuarios puedan aplicar la misma configuración.
 
-Utilice las instrucciones siguientes para agregar una nueva etiqueta a la directiva de Azure Information Protection.
+Utilice las instrucciones siguientes para agregar una nueva etiqueta que después se puede agregar a una directiva de Azure Information Protection.
 
 1. Si aún no lo ha hecho, abra una nueva ventana del explorador e [inicie sesión en Azure Portal](configure-policy.md#signing-in-to-the-azure-portal). Después, vaya a la hoja **Azure Information Protection**.
     
     Por ejemplo, en el menú del concentrador, haga clic en **Todos los servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
-2. Si la nueva etiqueta que quiere agregar es para todos los usuarios, quédese en la hoja **Azure Information Protection - Global policy** (Azure Information Protection: directiva global).
-    
-    Si la nueva etiqueta que quiere agregar es para los usuarios seleccionados en una [directiva con ámbito](configure-policy-scope.md), en la selección del menú **DIRECTIVAS**, seleccione **Directivas con ámbito**. Después, seleccione la directiva con ámbito en la hoja **Azure Information Protection - Scoped policies** (Azure Information Protection: directivas con ámbito).
-
-3. En la hoja **Azure Information Protection - Global policy** (Azure Information Protection: directiva global) o la hoja **Directiva:\<nombre>**, realice una de las acciones siguientes:
+2. En la opción de menú **CLASIFICACIONES** > **Etiquetas**: en la hoja **Azure Information Protection: etiquetas**, realice una de las acciones siguientes:
     
     - Para crear una nueva etiqueta: haga clic en **Add a new label** (Agregar una nueva etiqueta).
     
@@ -48,7 +47,14 @@ Utilice las instrucciones siguientes para agregar una nueva etiqueta a la direct
     
     Tenga en cuenta que a las etiquetas nuevas se les asigna automáticamente el color negro. Elija un color distintivo de la lista de colores, o especifique un código hexadecimal triple para los componentes de rojo, verde y azul (RGB) del color. Por ejemplo, **#DAA520**. Si necesita una referencia de estos códigos, [Colors by Name](https://msdn.microsoft.com/library/aa358802\(v=vs.85).aspx (Colores por nombre), que encontrará en la documentación de MSDN, es un muy buen lugar para empezar. También podrá encontrar estos códigos en muchos programas de edición de imágenes, como Microsoft Paint, que le permite elegir un color personalizado a partir de una paleta y le muestra automáticamente sus valores RGB.
 
-5. Para que los cambios estén disponibles para los usuarios, en la hoja inicial de **Azure Information Protection**, haga clic en **Publicar**.
+5. Para que la nueva etiqueta esté disponible para los usuarios: desde la opción de menú **CLASIFICACIONES** > **Directivas**, seleccione la directiva que contiene la nueva etiqueta, seleccione sucesivamente **Agregar o quitar etiquetas**, la etiqueta desde la hoja **Directiva: Agregar o quitar etiquetas** , **Aceptar** y, finalmente, **Guardar**.
+    
+    >[!TIP]
+    >En el caso de etiquetas nuevas, considere agregarlas primero a una directiva de ámbito que utilice para las pruebas. Cuando esté satisfecho con los resultados, quite la etiqueta de este ámbito de pruebas y, después, agregue la etiqueta a una directiva que se utilice en producción.     
+    
+    Para más información acerca de cómo agregar etiquetas, consulte [Cómo agregar o quitar una etiqueta](configure-policy-add-remove-label.md).
+    
+    Los cambios están disponibles para los usuarios y servicios. Ya no hay una opción de publicación separada.
 
 6. Si desea que el nombre y la descripción de esta nueva etiqueta se muestren en distintos idiomas para los usuarios, siga los procedimientos que se encuentran en [Configuración de etiquetas para distintos idiomas](configure-policy-languages.md). 
 

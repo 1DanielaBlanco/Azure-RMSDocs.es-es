@@ -4,7 +4,7 @@ description: Recursos para administradores con información sobre nuevas version
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/07/2018
+ms.date: 04/23/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 72d1c9872acd603f545f796550d44415dd996ab4
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 9eafa28bb6a259c7f845f54268a30c8cdc6fc988
+ms.sourcegitcommit: 5892db302bdf96538ecb3af8e3c2f678f5d1ebe2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Información y soporte técnico para Azure Information Protection
 
@@ -26,7 +26,7 @@ Use los siguientes recursos para ayudarle a obtener información sobre implement
 
 |Para hacer esto…|…haga lo siguiente:|
 |----------------|---------------|
-|Ver la documentación usada con más frecuencia|Lea las cinco páginas más pertinentes:<br /><br /> - [Introducción a la aplicación de Microsoft Azure Information Protection para iOS y Android](../rms-client/mobile-app-get-started.md)<br /> - [Activar Azure Rights Management](../deploy-use/activate-service.md)<br />- [Requisitos de Azure Information Protection](requirements.md) <br />- [Implementación del analizador de Azure Information Protection](../deploy-use/deploy-aip-scanner.md)<br />- [Activación de Azure Rights Management desde el Centro de administración de Office 365](../deploy-use/activate-office365.md)|
+|Ver la documentación usada con más frecuencia|Lea las cinco páginas más pertinentes:<br /><br /> - [Configurar los derechos de uso para Azure Rights Management](../deploy-use/configure-usage-rights.md)<br /> - [Preguntas más frecuentes sobre Azure Information Protection](../get-started/faqs.md)<br />- [Requisitos de Azure Information Protection](requirements.md) <br />- [Implementación del analizador de Azure Information Protection](../deploy-use/deploy-aip-scanner.md)<br />- [Directiva predeterminada de Azure Information Protection](../deploy-use/configure-policy-default.md)|
 |Contacto con el equipo del producto y sus homólogos|Visite el [sitio de Yammer](https://www.yammer.com/AskIPTeam) sobre Azure Information Protection.|
 |Solicitud de una nueva característica o cambio de funcionalidad|Visite el sitio de [UserVoice](https://msip.uservoice.com) sobre Azure Information Protection.|
 |Recepción de tweets del grupo de producto|Hágase seguidor de [MicrosoftMobility@MSFTMobility](https://twitter.com/MSFTMobility) en Twitter.|

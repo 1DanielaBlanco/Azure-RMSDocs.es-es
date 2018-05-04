@@ -4,7 +4,7 @@ description: Para configurar la protección, la clasificación y el etiquetado, 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/15/2017
+ms.date: 04/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,15 +12,18 @@ ms.technology: techgroup-identity
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: a0194b1cf6b1b134c3fd37ae9f042f117570d9ce
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: e8d641fd3165346ab052daad7ec7040b0d9e543f
+ms.sourcegitcommit: 94d1c7c795e305444e9fde17ad73e46f242bcfa9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>Configuración de la directiva de Azure Information Protection
 
 >*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
+
+>[!NOTE]
+> En este artículo se reflejan las actualizaciones más recientes para Azure Portal, que le permiten crear una etiqueta de forma independiente de la directiva global o de una directiva de ámbito. También se quita la opción para publicar las directivas. Si el inquilino aún no está actualizado para estos cambios, por ejemplo, todavía se ve una opción **Publicar** para Azure Information Protection y no ve la opción de menú **CLASIFICACIONES**, espere unos días y luego vuelva a estas instrucciones.
 
 Para configurar la protección, la clasificación y el etiquetado, debe configurar la directiva de Azure Information Protection. Esta directiva se descarga luego en los equipos que tienen instalado el [cliente de Azure Information Protection](https://www.microsoft.com/en-us/download/details.aspx?id=53018).
 
@@ -74,7 +77,7 @@ Para iniciar sesión en Azure Portal con objeto de configurar y administrar Azur
 
 4. Verá la página **Inicio rápido** que se abre automáticamente la primera vez que se conecta al servicio. Examine los recursos sugeridos o utilice las otras opciones de menú. Utilice el procedimiento siguiente para configurar las etiquetas que los usuarios pueden seleccionar.
 
-La próxima vez que acceda a la hoja de **Azure Information Protection**, se selecciona automáticamente la opción **DIRECTIVAS** > **Directiva global** para que pueda configurar las etiquetas para todos los usuarios. Puede volver a la página **Inicio rápido** seleccionándola en el menú **GENERAL**.
+La próxima vez que acceda a la hoja de **Azure Information Protection**, se selecciona automáticamente la opción **Etiquetas** para que pueda configurar las etiquetas para todos los usuarios. Puede volver a la página **Inicio rápido** seleccionándola en el menú **GENERAL**.
 
 ## <a name="how-to-configure-the-azure-information-protection-policy"></a>Para configurar la directiva de Azure Information Protection
 
@@ -82,21 +85,29 @@ La próxima vez que acceda a la hoja de **Azure Information Protection**, se sel
 
 2. Si es necesario, vaya a la hoja **Azure Information Protection**. Por ejemplo, en el menú del concentrador, haga clic en **Todos los servicios** y comience a escribir **Information Protection** en el cuadro Filtro. De los resultados, seleccione **Azure Information Protection**. 
     
-    La hoja **Azure Information Protection: directiva global** se abre automáticamente para ver y editar la directiva global que obtienen todos los usuarios. 
+    La hoja **Azure Information Protection: etiquetas** se abre automáticamente para que se puedan ver y editar las etiquetas disponibles. Las etiquetas pueden estar disponibles para todos los usuarios, usuarios seleccionados o ningún usuario mediante la adición o eliminación de una directiva.
+
+3. Para ver y editar las directivas, seleccione **Directivas** entre las opciones de menú. Para ver y editar la directiva que obtienen todos los usuarios, seleccione la directiva **Global**. Para crear una directiva personalizada para usuarios seleccionados, seleccione **Agregar una directiva**.
     
-    La directiva de Azure Information Protection contiene los siguientes elementos que puede configurar:
+    Una directiva de Azure Information Protection contiene los siguientes elementos que puede configurar:
     
-    - Etiquetas que permiten a los usuarios clasificar documentos y correos electrónicos.
+    - Qué etiquetas se incluyen que permiten a los administradores y usuarios clasificar documentos y correos electrónicos.
     
     - Título e información sobre herramientas de la barra de Information Protection que ven los usuarios en sus aplicaciones de Office.
     
-    - La opción para exigir clasificación cuando los usuarios guarden documentos y envíen correos electrónicos.
-    
     - La opción para establecer una etiqueta predeterminada como punto de partida para clasificar documentos y correos electrónicos.
+     
+    - La opción para exigir clasificación cuando los usuarios guarden documentos y envíen correos electrónicos.
     
     - La opción para pedir a los usuarios que proporcionen un motivo cuando seleccionen una etiqueta con un nivel de confidencialidad inferior al original.
     
     - La opción para etiquetar automáticamente un mensaje de correo, basándose en sus datos adjuntos.
+
+    - La opción para controlar si la barra de Information Protection se muestra en las aplicaciones de Office.
+
+    - La opción para controlar si se muestra el botón No reenviar en Outlook.
+    
+    - La opción que permite a los usuarios especificar sus propios permisos para documentos.
     
     - La opción para proporcionar un vínculo de ayuda personalizado para los usuarios.
 
@@ -108,9 +119,7 @@ Puede utilizar las etiquetas predeterminadas sin cambios, o puede personalizarla
 
 Puede crear tantas etiquetas como quiera. Sin embargo, cuando empiezan a ser demasiadas como para que los usuarios puedan verlas fácilmente y seleccionar la etiqueta correcta, puede crear directivas con ámbito para que los usuarios vean solo las etiquetas pertinentes. Hay un límite superior para las etiquetas que aplican protección: 500.
 
-Cuando realice cambios en una hoja de Azure Information Protection, haga clic en **Guardar** para guardar los cambios o en **Descartar** para volver a la última configuración guardada.
-
-Cuando haya terminado de realizar los cambios que desee, haga clic en **Publicar**. 
+Cuando realice cambios en una hoja de Azure Information Protection, haga clic en **Guardar** para guardar los cambios o en **Descartar** para volver a la última configuración guardada. Cuando se guardan los cambios de una directiva, o cuando se realizan cambios en las etiquetas que se han agregado a las directivas, estos cambios se publican automáticamente. No hay una opción de publicación separada.
 
 El cliente de Azure Information Protection busca cambios cada vez que se inicia una aplicación de Office compatible y descarga los cambios en su directiva de Azure Information Protection más reciente. Desencadenadores adicionales que actualizan la directiva en el cliente:
 
@@ -136,6 +145,8 @@ Use la siguiente información como ayuda para configurar la directiva de Azure I
 
 - [Creación de una nueva etiqueta](configure-policy-new-label.md)
 
+- [Cómo agregar o quitar una etiqueta](configure-policy-add-remove-label.md)
+ 
 - [Eliminación o cambio de orden de una etiqueta](configure-policy-delete-reorder.md)
 
 - [Cambio o personalización de una etiqueta existente](configure-policy-change-label.md)

@@ -4,7 +4,7 @@ description: Tareas de administración resumidas de Azure Portal que solía real
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/27/2018
+ms.date: 04/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 57a1073c-02e0-441b-bf49-c6b72fdba24f
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: bdf319e29e469ccb420a2979f43f5beb9f194947
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: ff1cae1695ac37c3e884053e6633a631e236efbe
+ms.sourcegitcommit: 94d1c7c795e305444e9fde17ad73e46f242bcfa9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="tasks-that-you-used-to-do-with-the-azure-classic-portal"></a>Tareas que solía realizar con el Portal de Azure clásico
 
@@ -39,10 +39,10 @@ Sin embargo, los clientes con una suscripción a Office 365 US Government (Gover
 |-----------|--------------------|
 |Acceso a los valores de configuración por primera vez|1. Inicie sesión en [Azure Portal](configure-policy.md#signing-in-to-the-azure-portal).<br /><br />2. En el menú del concentrador, haga clic en **Crear un recurso** y, después, en la lista **MARKETPLACE**, seleccione **Seguridad e identidad**.<br /><br />3. En la hoja **Seguridad e identidad**, en la lista **APLICACIONES DESTACADAS**, seleccione **Azure Information Protection**. Después, en la hoja **Azure Information Protection**, haga clic en **Crear**.<br /><br />Con esta acción se crea la hoja **Azure Information Protection**, de modo que la próxima vez que inicie sesión en el portal pueda seleccionar el servicio en la lista **Todos los servicios** del concentrador.
 |Creación de una plantilla nueva|Cree una etiqueta que aplique protección y use **Establecer permisos** para definir los permisos, la expiración y el acceso sin conexión. <br /><br />En segundo plano, esta configuración crea una nueva plantilla personalizada a la que pueden acceder los servicios y las aplicaciones que se integran con las plantillas de Rights Management.<br /><br />Para más información, vea [Para crear una nueva plantilla](configure-policy-templates.md#to-create-a-new-template).
-|Edite las propiedades de la plantilla: <br /><br />- Nombre y descripción de la plantilla<br /><br />- Configuración de derechos de uso, expiración de contenido y acceso sin conexión|Si aún no lo ha hecho, [convierta la plantilla en una etiqueta](configure-policy-templates.md#to-convert-templates-to-labels) y luego haga lo siguiente<br /><br />1. Cambie el nombre y la descripción de la etiqueta<br /><br />2. Cambie la configuración de protección de la etiqueta para actualizar la configuración de permisos, expiración y acceso sin conexión.<br /><br />Para más información, vea [Para configurar una etiqueta para la protección de Rights Management](configure-policy-protection.md#to-configure-a-label-for-rights-management-protection).
+|Edite las propiedades de la plantilla: <br /><br />- Nombre y descripción de la plantilla<br /><br />- Configuración de derechos de uso, expiración de contenido y acceso sin conexión|Si aún no lo ha hecho, [convierta la plantilla en una etiqueta](configure-policy-templates.md#to-convert-templates-to-labels) y luego haga lo siguiente<br /><br />1. Cambie el nombre y la descripción de la etiqueta<br /><br />2. Cambie la configuración de protección de la etiqueta para actualizar la configuración de permisos, expiración y acceso sin conexión.<br /><br />Para más información, consulte [Para configurar una etiqueta para la protección de Rights Management](configure-policy-protection.md#to-configure-a-label-for-protection-settings).
 |Archivo de una plantilla|Establezca el estado de la etiqueta en **Deshabilitado**.
 |Creación de una plantilla con ámbito|Cree una directiva con ámbito y luego cree una etiqueta en este ámbito que aplique la protección. <br /><br />Para más información, vea [Configuración de la directiva de Azure Information Protection para usuarios específicos mediante directivas de ámbito](configure-policy-scope.md).
-|Copia de una plantilla|No es posible copiar una plantilla en Azure Portal. Si quiere que dos etiquetas tengan la misma configuración de protección, debe establecer los permisos en cada etiqueta. <br /><br />Para más información, vea [Para configurar una etiqueta para la protección de Rights Management](configure-policy-protection.md#to-configure-a-label-for-rights-management-protection).
+|Copia de una plantilla|No es posible copiar una plantilla en Azure Portal. Si quiere que dos etiquetas tengan la misma configuración de protección, debe establecer los permisos en cada etiqueta. <br /><br />Para más información, consulte [Para configurar una etiqueta para la protección de Rights Management](configure-policy-protection.md#to-configure-a-label-for-protection-settings).
 |Eliminar una plantilla|La eliminación de plantillas puede dar lugar a la inaccesibilidad de los datos, por lo que Azure Portal no admite esta acción. Pero puede eliminar la etiqueta y luego usar el cmdlet de PowerShell [Remove-AadrmTemplate](/powershell/module/aadrm/remove-aadrmtemplate) para quitar la plantilla. <br /><br />Para más información, vea [Eliminación o cambio de orden de una etiqueta en Azure Information Protection](configure-policy-delete-reorder.md).
 |Compatibilidad con varios idiomas|En la selección del menú **ADMINISTRAR**, seleccione **Idiomas** para exportar los campos personalizables que incluyen el nombre y la descripción de la plantilla. Traduzca las cadenas y luego impórtelas al portal. <br /><br />Para más información, vea [Cómo configurar etiquetas y plantillas para distintos idiomas en Azure Information Protection](configure-policy-languages.md).
 |Informes web de Rights Management|Use el cmdlet de PowerShell [Get-AadrmUsageLog](/powershell/module/aadrm/Get-AadrmUsageLog) para descargar registros de uso del servicio Azure Rights Management. Luego puede usar estos datos para crear informes personalizados. <br /><br />Para obtener más información, consulte [Registro y análisis del uso del servicio Azure Rights Management](log-analyze-usage.md).<br /><br />Sugerencia: Busque anuncios de una nueva solución de informes centralizada de Azure Information Protection en el [Blog de Enterprise Mobility + Security](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-information-protection).

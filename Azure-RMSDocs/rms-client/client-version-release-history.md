@@ -4,7 +4,7 @@ description: Consulte las novedades o los cambios en una versión del cliente de
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/19/2018
+ms.date: 04/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ff9d6a4ce66deed8add68d7b1efc889ee9448f53
-ms.sourcegitcommit: 5866509c17872e274720d3014fe218ed95e86ee3
+ms.openlocfilehash: 02e54d3d1f324aa6d67e9fb81c3f5f83e785fe81
+ms.sourcegitcommit: c207a2f592d167a4a0b6c4427259683e2087f143
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Cliente de Azure Information Protection: historial de publicación de versiones y directiva de soporte técnico
 
@@ -41,11 +41,9 @@ Use la información siguiente para consultar las novedades o los cambios en una 
 >  
 > Para obtener soporte técnico, consulte la información sobre [Opciones de soporte y recursos de la comunidad](../get-started/information-support.md#support-options-and-community-resources). También lo invitamos a participar en el equipo de Azure Information Protection, en su [sitio de Yammer](https://www.yammer.com/askipteam/).
 
-## <a name="versions-later-than-110560"></a>Versiones posteriores a la 1.10.56.0
+## <a name="version-12660"></a>Versión 1.26.6.0
 
-Si tiene una versión del cliente posterior a la 1.10.56.0, se trata de una compilación preliminar para fines de prueba y evaluación.
-
-La versión preliminar actual es la **1.21.203.0** y tiene los siguientes cambios con respecto a la versión de disponibilidad general actual del cliente.
+**Lanzamiento**: 17/04/2018
 
 Esta versión incluye la versión MSIPC 1.0.3403.1224 del cliente de RMS.
 
@@ -53,11 +51,11 @@ Esta versión incluye la versión MSIPC 1.0.3403.1224 del cliente de RMS.
 
 - El analizador de Azure Information Protection: el módulo de PowerShell de la que se incluye con el cliente tiene nuevos cmdlets para instalar y configurar el analizador, con el fin de que pueda detectar, clasificar y proteger los archivos de sus almacenes de datos locales. Para obtener instrucciones, consulte [Implementación del analizador de Azure Information Protection para clasificar y proteger automáticamente los archivos](../deploy-use/deploy-aip-scanner.md). 
 
-- En el caso de las aplicaciones de Office, la clasificación automática y recomendada se ejecuta continuamente en segundo plano, en lugar de ejecutarse cuando se guardan los documentos. Gracias a este cambio de comportamiento ahora se puede aplicar la clasificación automática y recomendada a los documentos almacenados en SharePoint Online. [Más información](../deploy-use/configure-policy-classification.md#how-automatic-or-recommended-labels-are-applied) 
-
 - Ahora puede establecer distintivos visuales diferentes para Word, Excel, PowerPoint y Outlook mediante el uso de la instrucción variable "If.App" en la cadena de texto e identificar el tipo de aplicación. [Más información](../deploy-use/configure-policy-markings.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook)
 
 - Compatibilidad con la [configuración de directivas](../deploy-use/configure-policy-settings.md). **Muestre la barra de Information Protection en las aplicaciones de Office**. Si este valor está desactivado, los usuarios seleccionan las etiquetas en el botón **Proteger** de la cinta.
+
+- Una nueva configuración avanzada de cliente (aún en versión preliminar) para activar la clasificación y ejecutarla continuamente en segundo plano. Cuando esta configuración está habilitada, en el caso de las aplicaciones de Office, la clasificación automática y recomendada se ejecuta continuamente en segundo plano, en lugar de ejecutarse cuando se guardan los documentos. Gracias a este cambio de comportamiento ahora se puede aplicar la clasificación automática y recomendada a los documentos almacenados en SharePoint Online. [Más información](client-admin-guide-customizations.md#turn-on-classification-to-run-continuously-in-the-background)
 
 - Una nueva configuración de cliente avanzada para que Outlook no aplique la etiqueta predeterminada configurada en la directiva de Azure Information Protection. Por el contrario, Outlook puede aplicar otra etiqueta predeterminada o ninguna. [Más información](client-admin-guide-customizations.md#set-a-different-default-label-for-outlook) 
 
@@ -76,14 +74,21 @@ Correcciones de estabilidad y de escenarios concretos:
 
 - Si dos organizaciones que usan Azure Information Protection comparten documentos y correos electrónicos con etiquetas, las etiquetas de cada una de ellas se conservan, no se reemplazan por las de la otra.
 
-- Compatibilidad con celdas de Excel que contienen referencias cruzadas, lo que anteriormente provocaba daños en el texto de la celda.
+- Para Excel:
+        
+    - Compatibilidad con el cambio de temas de Office o de Windows, lo que anteriormente provocaba que Excel no mostrara datos tras dicho cambio.
+        
+    - Compatibilidad con celdas que contienen referencias cruzadas, lo que anteriormente provocaba daños en el texto de la celda.
+    
+    - Compatibilidad para escribir caracteres japoneses, chinos o coreanos, que previamente cerraban una ventana para que estos caracteres no se pudieran seleccionar.
+    
+    - Compatibilidad para comentarios, que previamente cerraban el comentario mientras se escribía.
 
-- Compatibilidad con el cambio de temas de Office o de Windows, lo que anteriormente provocaba que Excel no mostrara datos tras dicho cambio.
+- En PowerPoint: compatibilidad con coautoría, que anteriormente podría provocar la pérdida de datos.
 
 - Ahora, los archivos con la extensión .xml se pueden inspeccionar para realizar la clasificación automática o recomendada.
 
 - Ahora, el visor puede abrir archivos de texto protegidos (.ptxt y .pxml) cuyo tamaño supere los 20 MB. 
-
 - Outlook ya no se bloquea cuando se utilizan los avisos de Outlook.
 
 - Arranque correcto en Office de 64 bits, para que pueda proteger documentos y correos electrónicos.

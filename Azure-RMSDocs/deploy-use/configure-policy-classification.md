@@ -4,21 +4,24 @@ description: Al configurar las condiciones de una etiqueta, puede asignar autom�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/02/2018
+ms.date: 04/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: f7242c05d830ecd1b702e4e9bb049e72740843f3
-ms.sourcegitcommit: b17432ed155394111c878eb57b5fa7adf9df9755
+ms.openlocfilehash: 1019b7d7ea32b26a24aa2417a77345ff87e52e4b
+ms.sourcegitcommit: 94d1c7c795e305444e9fde17ad73e46f242bcfa9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Configuración de las condiciones para la clasificación automática y recomendada en Azure Information Protection
 
 >*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
+
+>[!NOTE]
+> En este artículo se reflejan las actualizaciones más recientes para Azure Portal, que le permiten crear una etiqueta de forma independiente de la directiva global o de una directiva de ámbito. También se quita la opción para publicar las directivas. Si el inquilino aún no está actualizado para estos cambios, por ejemplo, todavía se ve una opción **Publicar** para Azure Information Protection y no ve la opción de menú **CLASIFICACIONES**, espere unos días y luego vuelva a estas instrucciones.
 
 Al configurar las condiciones de una etiqueta, puede asignar automáticamente la etiqueta a un documento o a un correo electrónico. También puede indicar a los usuarios que seleccionen la etiqueta que usted recomienda. 
 
@@ -30,7 +33,7 @@ Mensaje de ejemplo cuando se configura una condición para aplicar una etiqueta 
 
 ![Detección y recomendación de Azure Information Protection](../media/info-protect-recommend-calloutsv2.png)
 
-En este ejemplo, el usuario puede hacer clic en **Cambiar ahora** para aplicar la etiqueta recomendada, o bien invalidar la recomendación seleccionando **Descartar**.
+En este ejemplo, el usuario puede hacer clic en **Cambiar ahora** para aplicar la etiqueta recomendada, o bien invalidar la recomendación seleccionando **Descartar**. Si el usuario decide descartar la recomendación y la condición sigue siendo válida la próxima vez que se abra el documento, se visualizará de nuevo la recomendación de etiquetas. 
 
 > [!IMPORTANT]
 >No configure una etiqueta para la clasificación automática y un permiso definido por el usuario. La opción de permisos definidos por el usuario es una [configuración de protección](configure-policy-protection.md) que permite a los usuarios especificar a quién se le deben conceder permisos.
@@ -38,8 +41,6 @@ En este ejemplo, el usuario puede hacer clic en **Cambiar ahora** para aplicar l
 >Cuando una etiqueta se configura para la clasificación automática y los permisos definidos por el usuario, se comprueba el contenido de las condiciones y no se aplica la configuración de los permisos definidos por el usuario. Puede utilizar la clasificación recomendada y los permisos definidos por el usuario.
 
 ## <a name="how-automatic-or-recommended-labels-are-applied"></a>Cómo se aplican las etiquetas automáticas o recomendadas
-
-**Para la versión de disponibilidad general del cliente de Azure Information Protection:**
 
 - La clasificación automática se aplica a Word, Excel y PowerPoint cuando se guardan documentos, y a Outlook cuando se envían correos electrónicos. 
     
@@ -49,28 +50,9 @@ En este ejemplo, el usuario puede hacer clic en **Cambiar ahora** para aplicar l
     
     Puede utilizar la clasificación recomendada para los documentos etiquetados previamente, con o sin una clasificación más alta. 
 
-
-**Para la versión preliminar actual del cliente de Azure Information Protection:**
-
-- La clasificación automática se aplica a Word, Excel, PowerPoint y Outlook. Para los documentos, la clasificación automática se ejecuta [continuamente en segundo plano](#more-information-about-running-continuously). Para Outlook, la clasificación automática se ejecuta cuando se envían mensajes de correo electrónico. 
-    
-    No se puede utilizar la clasificación automática para documentos etiquetados previamente de manera manual, o etiquetados previamente de manera automática, con una clasificación más alta. La excepción a este comportamiento es el uso del analizador de Azure Information Protection con el parámetro OverrideLabel activado.
-
-- La clasificación recomendada se aplica a Word, Excel y PowerPoint. Para estos documentos, la clasificación recomendada se ejecuta [continuamente en segundo plano](#more-information-about-running-continuously). No se puede utilizar la clasificación recomendada para Outlook.
-    
-    Puede utilizar la clasificación recomendada para los documentos etiquetados previamente, con o sin una clasificación más alta. 
-
-#### <a name="more-information-about-running-continuously"></a>Más información sobre la ejecución continua
-
-De forma predeterminada, la versión preliminar actual del cliente de Azure Information Protection comprueba periódicamente los documentos en busca de las reglas de condición que especifique. Este comportamiento permite la clasificación automática y recomendada y la protección de los documentos que están almacenados en SharePoint Online. Los archivos de gran tamaño también se guardan más rápidamente porque las reglas de condición ya se han ejecutado. 
-
-Las reglas de condición no se ejecutan en tiempo real mientras el usuario escribe. En su lugar, se ejecutan periódicamente como una tarea en segundo plano si se modifica el documento.
-
-Puede cambiar este comportamiento para que el cliente de Azure Information Protection aplique etiquetas automáticas y recomendadas del mismo modo que la versión de disponibilidad general del cliente. Esta configuración requiere una [configuración avanzada del cliente](../rms-client/client-admin-guide-customizations.md#turn-off-classification-running-continuously-in-the-background).
+Puede cambiar este comportamiento para que el cliente de Azure Information Protection compruebe periódicamente los documentos en busca de las reglas de condición que especifique. Esta configuración requiere una [configuración avanzada del cliente](../rms-client/client-admin-guide-customizations.md#turn-on-classification-to-run-continuously-in-the-background), que actualmente está en versión preliminar.
 
 ### <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>Cómo evaluar varias condiciones cuando se aplican a más de una etiqueta
-
-Para la versión de disponibilidad general del cliente de Azure Information Protection y el cliente de la versión preliminar actual:
 
 1. Las etiquetas se ordenan para la evaluación, según la posición que especifique en la directiva: la etiqueta que se coloca al principio tiene la posición más baja (menos sensible) y la etiqueta que se coloca al final la más alta (más sensible).
 
@@ -85,15 +67,11 @@ Para la versión de disponibilidad general del cliente de Azure Information Prot
     
     Por ejemplo, en el menú del concentrador, haga clic en **Todos los servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
-2. Si la etiqueta que quiere configurar se va a aplicar a todos los usuarios, quédese en la hoja **Azure Information Protection - Global policy** (Azure Information Protection: directiva global).
-    
-    Si la etiqueta que quiere configurar se encuentra en una [directiva con ámbito](configure-policy-scope.md) para que se aplique únicamente a los usuarios seleccionados, en la selección del menú **DIRECTIVAS**, seleccione **Directivas con ámbito**. Después, seleccione la directiva con ámbito en la hoja **Azure Information Protection - Scoped policies** (Azure Information Protection: directivas con ámbito).
+2. En la opción de menú **CLASIFICACIONES** > **Etiquetas**: en la hoja **Azure Information Protection: etiquetas**, seleccione la etiqueta que desee configurar.
 
-3. En la hoja **Azure Information Protection - Global policy** (Azure Information Protection: directiva global) o la hoja **Directiva:\<nombre>**, seleccione la etiqueta que quiere configurar. 
+3. En la hoja **Etiqueta**, en la sección **Configure conditions for automatically applying this label** (Configurar condiciones para aplicar esta etiqueta automáticamente), haga clic en **Agregar una nueva condición**(Add a new condition).
 
-4. En la hoja **Etiqueta**, en la sección **Configure conditions for automatically applying this label** (Configurar condiciones para aplicar esta etiqueta automáticamente), haga clic en **Agregar una nueva condición**(Add a new condition).
-
-5. En la hoja **Condición**, seleccione **Tipos de información** si quiere usar una condición predefinida, o **Personalizada** si quiere especificar la suya propia:
+4. En la hoja **Condición**, seleccione **Tipos de información** si quiere usar una condición predefinida, o **Personalizada** si quiere especificar la suya propia:
     - En **Tipos de información**: seleccione entre las condiciones disponibles de la lista y luego elija el número mínimo de repeticiones y si la repetición debe tener un valor único para ser incluida en el recuento de repeticiones.
         
         Los tipos de información usan los tipos de información de confidencialidad de prevención de pérdida de datos (DLP) y la detección de patrones de Office 365. Puede elegir entre numerosos tipos comunes de información confidencial, algunos de los cuales son específicos de regiones determinadas. Para obtener más información, vea [Qué buscan los tipos de información confidencial](https://support.office.com/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b) en la documentación de Office.
@@ -106,17 +84,17 @@ Para la versión de disponibilidad general del cliente de Azure Information Prot
         
         Las expresiones regulares usan los patrones de expresiones regulares de Office 365. Para obtener más información, vea [Definición de expresiones regulares basadas en coincidencias](https://technet.microsoft.com/library/jj674702(v=exchg.150).aspx#Anchor_2) en la documentación de Office. También puede que le resulte útil la referencia a la [sintaxis de expresiones regulares de Perl](http://www.boost.org/doc/libs/1_66_0/libs/regex/doc/html/boost_regex/syntax/perl_syntax.html) de Boost.
         
-6. Decida si tiene que cambiar **Número mínimo de repeticiones** y **Contar solo las repeticiones con valores únicos** y luego seleccione **Guardar**. 
+5. Decida si tiene que cambiar **Número mínimo de repeticiones** y **Contar solo las repeticiones con valores únicos** y luego seleccione **Guardar**. 
     
     Ejemplo de opciones de repeticiones: imagine que selecciona el tipo de información de número de la Seguridad Social, establece el número mínimo de repeticiones en 2 y un documento tiene el mismo número de la Seguridad Social dos veces: si establece **Contar solo las repeticiones con valores únicos** en **Activado**, la condición no se cumple. Si establece esta opción en **Desactivado**, la condición se cumple.
 
-7. De vuelta en la hoja **Etiqueta**, configure lo siguiente y luego haga clic en **Guardar**:
+6. De vuelta en la hoja **Etiqueta**, configure lo siguiente y luego haga clic en **Guardar**:
     
     - Elija clasificación automática o recomendada: en **Select how this label is applied: automatically or recommended to user** (Seleccionar cómo se aplica esta etiqueta: automáticamente o recomendado al usuario), seleccione **Automática** o **Recomendada**.
     
     - Especifique el texto del mensaje de usuario o de la sugerencia de directiva: mantenga el texto predeterminado o especifique su propia cadena.
 
-8. Para que los cambios estén disponibles para los usuarios, en la hoja inicial de **Azure Information Protection**, haga clic en **Publicar**.
+Al hacer clic en **Guardar**, los cambios están disponibles para los usuarios y servicios. Ya no hay una opción de publicación separada.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

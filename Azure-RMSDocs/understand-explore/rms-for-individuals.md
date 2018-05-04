@@ -12,25 +12,25 @@ ms.technology: techgroup-identity
 ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: fadaac4b5ea7828c53544485b1685226176a2a75
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: df2d97fd8abdf7c2f210d857287d3590838222db
+ms.sourcegitcommit: affda7572064edaf9e3b63d88f4a18d0d6932b13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="rms-for-individuals-and-azure-information-protection"></a>RMS para individuos y Azure Information Protection
 
 >*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
-RMS para usuarios es una suscripción gratuita de autoservicio para los usuarios que necesitan abrir archivos que ha protegido Azure Information Protection. Si estos usuarios no se puede autenticar con Azure Active Directory y su organización no tiene Active Directory Rights Management (AD RMS), este servicio de suscripción gratuita puede crear una cuenta en Azure Active Directory para un usuario. El resultado es que estos usuarios podrán autenticarse con su dirección de correo de empresa y abrir los archivos protegidos en sus equipos o dispositivos móviles.
+RMS para usuarios es una suscripción gratuita de autoservicio para los usuarios que necesitan abrir archivos que ha protegido Azure Information Protection. Si estos usuarios no se pueden autenticar con Azure Active Directory, este servicio de suscripción gratuita puede crear una cuenta en Azure Active Directory para un usuario. El resultado es que estos usuarios podrán autenticarse con su dirección de correo de empresa y abrir los archivos protegidos en sus equipos o dispositivos móviles.
 
-RMS para usuarios utiliza la suscripción de autoservicio de Azure Active Directory. Si los usuarios han creado cuentas para su organización, como administrador para su organización, puede reclamar la propiedad y tomar el control de sus cuentas. 
+RMS para usuarios utiliza la suscripción de autoservicio de Azure Active Directory. Si los usuarios han creado cuentas para su organización mediante esta suscripción, como administrador para su organización, puede reclamar la propiedad y [tomar el control de sus cuentas](/active-directory/domains-admin-takeover#external-admin-takeover). 
 
 
 > [!NOTE]
 > Esta suscripción gratuita constituye una opción para ayudar a garantizar que las personas autorizadas ajenas a la organización siempre puedan leer archivos protegidos por la organización. Otra opción sería enviar por correo electrónico los documentos siguiendo los pasos de [Cifrado de mensajes de Office 365 con nuevas capacidades](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e). Esta solución de correo electrónico funciona con todas las direcciones de correo en todos los dispositivos y es la manera recomendada para compartir de forma segura información y ver documentos de Office por correo electrónico con personas ajenas a la organización. 
 
-Para registrarse en esta cuenta gratuita, vaya a la [página de Microsoft Azure Information Protection](https://aka.ms/rms-signup) y proporcione su dirección de correo electrónico del trabajo. Recibirá un correo electrónico de respuesta de Microsoft, tras lo cual podrá completar el proceso de suscripción introduciendo los detalles para crear la cuenta. 
+Para registrarse en esta cuenta gratuita, los usuarios van a la [página de Microsoft Azure Information Protection](https://aka.ms/rms-signup) y proporcionan su dirección de correo electrónico del trabajo. Recibirán un correo electrónico de respuesta de Microsoft. Después de eso podrán completar el proceso de suscripción especificando los detalles para crear la cuenta. 
 
 Cuando se crea la cuenta, en la página final se mostrarán vínculos para descargar el cliente o visor de Azure Information Protection para distintos dispositivos, un vínculo a la guía del usuario y un vínculo para obtener una lista actualizada de las aplicaciones que admiten de forma nativa la protección de Rights Management. 
 
