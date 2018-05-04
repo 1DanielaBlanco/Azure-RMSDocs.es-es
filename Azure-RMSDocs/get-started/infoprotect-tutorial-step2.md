@@ -4,24 +4,21 @@ description: 'Paso 2 de un tutorial de introducción para probar rápidamente Az
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/22/2018
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: e2850a0f67f18febdbd98e59d01b2f28b00bff2a
-ms.sourcegitcommit: 94d1c7c795e305444e9fde17ad73e46f242bcfa9
+ms.openlocfilehash: 3b9dbbc16fe26d7f111d37dbcd28d6477372a5d9
+ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="step-2-configure-the-azure-information-protection-policy"></a>Paso 2: Configuración de la directiva de Azure Information Protection
 
 >*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
-
->[!NOTE]
-> Este paso del tutorial refleja las actualizaciones más recientes de Azure Portal. Si no ve una opción de menú **CLASIFICACIONES** y sigue viendo una opción **Publicar**, las instrucciones de navegación no coincidirán exactamente con lo que ve. Si ese es el caso, considere volver a este paso del tutorial en un par de días cuando su inquilino esté al tanto de los últimos cambios.
 
 Aunque Azure Information Protection incluye una directiva predeterminada que se puede usar sin necesidad de configuración, echaremos un vistazo a esa directiva y haremos algunos cambios.
 

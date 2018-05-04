@@ -4,24 +4,21 @@ description: Cuando se asigna una etiqueta a un documento o a un mensaje de corr
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/22/2018
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: 0b8bef6acd02abb664b274bc04fe77eea06de356
-ms.sourcegitcommit: 94d1c7c795e305444e9fde17ad73e46f242bcfa9
+ms.openlocfilehash: 1fc9e3babd83368f1fa6389da3e2b66e8080d308
+ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Configuración de una etiqueta para marcas visuales de Azure Information Protection
 
 >*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
-
->[!NOTE]
-> En este artículo se reflejan las actualizaciones más recientes para Azure Portal, que le permiten crear una etiqueta de forma independiente de la directiva global o de una directiva de ámbito. También se quita la opción para publicar las directivas. Si el inquilino aún no está actualizado para estos cambios, por ejemplo, todavía se ve una opción **Publicar** para Azure Information Protection y no ve la opción de menú **CLASIFICACIONES**, espere unos días y luego vuelva a estas instrucciones.
 
 Cuando se asigna una etiqueta a un documento o a un mensaje de correo electrónico, puede seleccionar varias opciones para hacer visible la clasificación elegida. Estos marcadores visuales son un encabezado, un pie de página y una marca de agua.
 

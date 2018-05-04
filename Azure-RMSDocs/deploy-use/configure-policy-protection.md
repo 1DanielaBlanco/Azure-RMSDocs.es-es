@@ -4,24 +4,21 @@ description: Puede proteger sus documentos y mensajes de correo electrónico má
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/22/2018
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: b4db47cecb190b47854565beaeac72d768aa8e28
-ms.sourcegitcommit: 5892db302bdf96538ecb3af8e3c2f678f5d1ebe2
+ms.openlocfilehash: bcbc3e79da3c158ca3d6582e5dcd4882c327f7b6
+ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Configuración de una etiqueta para la protección de Rights Management
 
 >*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
-
->[!NOTE]
-> En este artículo se reflejan las actualizaciones más recientes para Azure Portal, que le permiten crear una etiqueta de forma independiente de la directiva global o de una directiva de ámbito. También se quita la opción para publicar las directivas. Si el inquilino aún no está actualizado para estos cambios, por ejemplo, todavía se ve una opción **Publicar** para Azure Information Protection y no ve la opción de menú **CLASIFICACIONES**, espere unos días y luego vuelva a estas instrucciones.
 
 Puede proteger los documentos y los correos electrónicos más confidenciales mediante un servicio de Rights Management. Este servicio usa directivas de cifrado, identidad y autorización para ayudarle a impedir la pérdida de datos. La protección se aplica con una etiqueta configurada para usar la protección de Rights Management para documentos y mensajes de correo electrónico, y los usuarios además pueden seleccionar el botón **No reenviar** de Outlook.
 

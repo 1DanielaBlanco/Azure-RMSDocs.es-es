@@ -4,7 +4,7 @@ description: Información sobre cómo personalizar el cliente de Azure Informati
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/23/2018
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: bb48a3e35d18c111d3df1907b7cc7a2832e0ae13
-ms.sourcegitcommit: 5892db302bdf96538ecb3af8e3c2f678f5d1ebe2
+ms.openlocfilehash: 80f0b29b05f3a63972f7bc45e14ee721cf289a86
+ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Guía del administrador: Configuraciones personalizadas del cliente de Azure Information Protection
 
@@ -27,9 +27,6 @@ Use la siguiente información para configuraciones avanzadas que podría necesit
 Algunas de estas opciones requieren la modificación del Registro y otras usan la configuración avanzada que debe configurar en Azure Portal y, después, publicarlas para que los clientes las descarguen.  
 
 ### <a name="how-to-configure-advanced-client-configuration-settings-in-the-portal"></a>Cómo establecer opciones de configuración de cliente avanzadas en el portal
-
->[!NOTE]
-> Estas instrucciones reflejan las actualizaciones más recientes en Azure Portal. Si no ve una opción de menú **CLASIFICACIONES** y sigue viendo una opción **Publicar**, las instrucciones de navegación no coincidirán exactamente con lo que ve. Si ese es el caso, considere volver a este procedimiento en un par de días cuando su inquilino esté al tanto de los últimos cambios.
 
 1. Si aún no lo ha hecho, en una nueva ventana del explorador, [inicie sesión en Azure Portal](../deploy-use/configure-policy.md#signing-in-to-the-azure-portal) y, después, vaya hasta la hoja **Azure Information Protection**.
 
