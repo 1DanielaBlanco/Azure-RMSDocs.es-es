@@ -1,13 +1,13 @@
 ---
-title: "Instalación de Linux"
+title: Instalación de Linux
 description: Ahora varias versiones de sistemas operativos Linux pueden usar Microsoft Rights Management SDK 4.x.
-keywords: 
+keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: A348541C-17E0-4024-BF97-84B0099B0E69

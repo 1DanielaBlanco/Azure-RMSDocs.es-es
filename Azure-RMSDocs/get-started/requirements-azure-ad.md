@@ -4,7 +4,7 @@ description: Identifique los requisitos de Azure AD para usar Azure Information 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/19/2018
+ms.date: 04/26/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: information-protection
@@ -12,27 +12,23 @@ ms.technology: techgroup-identity
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 82e2fcb1cdbce0476e95b35b0faef7ada7637795
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 53d9d9b25ab71c91275bf770a6038eccbaa2659c
+ms.sourcegitcommit: f4a97427d61e4b539c91c49c952658aa2dc729ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="azure-active-directory-requirements-for-azure-information-protection"></a>Requisitos de Azure Active Directory para Azure Information Protection
 
 >*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
-Para poder usar Azure Information Protection se necesita un directorio de Azure AD. Use la cuenta de la organización para este directorio para poder iniciar sesión en Azure Portal, en donde, por ejemplo, podrá configurar y administrar las plantillas de Rights Management.
+Para poder usar Azure Information Protection se necesita un directorio de Azure AD. Se use una cuenta de este directorio para poder iniciar sesión en Azure Portal, en donde, por ejemplo, se pueden configurar y administrar las etiquetas de Azure Information Protection y las plantillas de Azure Rights Management.
 
-Si no dispone aún de suscripción de Azure para su organización, puede obtener una si se registra para una evaluación gratuita: Vaya a la página de [Introducción a Azure](https://account.windowsazure.com/organization) y siga las instrucciones.
+Si tiene una suscripción que incluye Azure Information Protection o Azure Rights Management, el directorio de Azure AD se crea automáticamente si es necesario.  
 
-Para más información, consulte los recursos siguientes en la documentación de Azure Active Directory:
+Para obtener más información sobre Azure AD, vea [¿Qué es Azure AD Directory?](/active-directory/active-directory-whatis)
 
--   [¿Qué es el directorio de Azure AD?](/active-directory/active-directory-whatis)
-
--   [Asociación de las suscripciones a Azure con Azure Active Directory](/active-directory/active-directory-how-subscriptions-associated-directory)
-
-Si desea integrar el directorio de Azure AD con los bosques de AD locales, consulte [Integración de las identidades locales con Azure Active Directory](/active-directory/active-directory-aadconnect).
+Para integrar el directorio de Azure AD con los bosques de AD locales, vea [Integración de las identidades locales con Azure Active Directory](/active-directory/active-directory-aadconnect).
 
 ### <a name="scenarios-that-have-specific-requirements"></a>Escenarios que tienen requisitos específicos 
 
