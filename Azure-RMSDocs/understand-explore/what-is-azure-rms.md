@@ -4,7 +4,7 @@ description: Azure Rights Management (Azure RMS) es la tecnología de protecció
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/01/2017
+ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,31 +12,31 @@ ms.technology: techgroup-identity
 ms.assetid: aeeebcd7-6646-4405-addf-ee1cc74df5df
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 8072a01b5dbe951a2116ffcfb82ba09ebf6acf3a
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 5908fb636f7f360d3dcd46446e857a069774634f
+ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="what-is-azure-rights-management"></a>¿Qué es Azure Rights Management?
 
 >*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 
-Azure Rights Management (Azure RMS) es la tecnología de protección usada por [Azure Information Protection](what-is-information-protection.md).
+Azure Rights Management (que se suele abreviar como Azure RMS) es la tecnología de protección usada por [Azure Information Protection](what-is-information-protection.md).
 
-Este servicio basado en la nube usa directivas de cifrado, identidad y autorización para proteger sus archivos y correo electrónico, y funciona en varios dispositivos (teléfonos, tabletas y equipos PC). La información se puede proteger tanto dentro como fuera de su organización porque dicha protección permanece con los datos, incluso cuando sale de los límites de su organización.
+Este servicio de protección basado en la nube usa directivas de cifrado, identidad y autorización para proteger los archivos y el correo electrónico, y funciona en varios dispositivos (teléfonos, tabletas y equipos). La información se puede proteger tanto dentro como fuera de su organización porque dicha protección permanece con los datos, incluso cuando sale de los límites de su organización.
 
 Por ejemplo, los empleados podrían enviar un documento por correo electrónico a una empresa asociada o guardar un documento en su unidad en la nube. La protección persistente que ofrece Azure RMS no solo permite proteger los datos de la empresa, sino que también puede ser legalmente obligatoria para requisitos de cumplimiento y descubrimiento legal, o simplemente como buenas prácticas de administración de la información.
 
-Además, es importante destacar que las personas y los servicios autorizados (como la búsqueda y la indexación) pueden seguir leyendo e inspeccionando los datos que protege Azure RMS. Esto no se logra fácilmente con otras soluciones de protección de la información que usan el cifrado punto a punto. Esta función se denomina "razonamiento encima de los datos" y es un elemento crucial en el mantenimiento del control de los datos de la organización.
+Además, es importante destacar que las personas y los servicios autorizados (como la búsqueda y la indización) pueden seguir leyendo e inspeccionando los datos protegidos. Esto no se logra fácilmente con otras soluciones de protección de la información que usan el cifrado punto a punto. Esta función se denomina "razonamiento encima de los datos" y es un elemento crucial en el mantenimiento del control de los datos de la organización.
 
-En la imagen siguiente se muestra cómo funciona Azure RMS como solución de Rights Management para Office 365, así como para servicios y servidores locales. También verá que Azure RMS admite populares dispositivos de usuario final que ejecutan Windows, Mac OS, iOS, Android y Windows Phone.
+En la imagen siguiente se muestra cómo este servicio ofrece una solución de protección para Office 365, así como para servicios y servidores locales. También se ve que la protección es compatible con los dispositivos de usuario final populares que ejecutan Windows, Mac OS, iOS, Android y Windows Phone.
 
 
 ![Cómo funciona Azure RMS](../media/AzRMS_elements.png)
 
-La protección de Azure RMS puede usarse con diferentes suscripciones de la nube y es compatible con varias características. Encontrará más información sobre las suscripciones disponibles y las características que se admiten en el sitio de [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection).
+Puede usar esta protección con las suscripciones de Office 365, así como con las suscripciones de Azure Information Protection. Encontrará más información sobre las suscripciones disponibles y las características que se admiten en el sitio de [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection/).
 
 ## <a name="next-steps"></a>Pasos siguientes
 
@@ -48,7 +48,7 @@ Para obtener más información acerca de este servicio de protección de datos d
 
 - [¿Cómo funciona Azure RMS? En segundo plano](how-does-it-work.md)
 
-Si quiere profundizar e intentar proteger los documentos usted mismo, vea el [Tutorial de inicio rápido de Azure Information Protection](../get-started/infoprotect-quick-start-tutorial.md). En este tutorial también se le solicita que proteja un documento cuando se detecta información confidencial. También incluye la protección de un documento que comparte por correo electrónico, del cual, a continuación, puede realizar un seguimiento para ver cómo se usa y, si fuera necesario, revocar el acceso al mismo.
+Si quiere lanzarse e intentar proteger los documentos por sí mismo mediante etiquetas de Azure Information Protection, vea el [Tutorial de inicio rápido de Azure Information Protection](../get-started/infoprotect-quick-start-tutorial.md). En este tutorial también se le solicita que proteja un documento cuando se detecta información confidencial. También incluye la protección de un documento que comparte por correo electrónico, del cual, a continuación, puede realizar un seguimiento para ver cómo se usa y, si fuera necesario, revocar el acceso al mismo.
 
 De todos modos, si está preparado para empezar a implementar Azure Information Protection en su organización para que los administradores y los usuarios puedan comenzar a proteger documentos y correos electrónicos, consulte los pasos de implementación y los vínculos a instrucciones de procedimientos incluidos en el [Mapa de ruta de implementación de Azure Information Protection](../plan-design/deployment-roadmap.md).
 

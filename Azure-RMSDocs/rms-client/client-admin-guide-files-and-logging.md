@@ -4,7 +4,7 @@ description: Información sobre el registro de uso y los archivos de cliente de 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/25/2018
+ms.date: 04/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5a34ab85-773f-4782-ba09-c321cddf5bc0
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 13f82bc12fd77d4f145b059c2962af01094760c3
-ms.sourcegitcommit: 5892db302bdf96538ecb3af8e3c2f678f5d1ebe2
+ms.openlocfilehash: cb6f68e2d2009a67baadf1146f3c52cf7cf36aa2
+ms.sourcegitcommit: f4a97427d61e4b539c91c49c952658aa2dc729ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="admin-guide-azure-information-protection-client-files-and-client-usage-logging"></a>Guía del administrador: Registro de uso de cliente y archivos de cliente de Azure Information Protection
 
@@ -83,9 +83,10 @@ El cliente registra la actividad del usuario en el registro de eventos local de 
 - Protección antes y después de la acción
     
 - Justificación de usuario (si procede)
-    
 
-Para obtener más información sobre el registro de uso del servicio Azure Rights Management, vea [Registro y análisis del uso del servicio Azure Rights Management](../deploy-use/log-analyze-usage.md)
+- Permisos personalizados (si procede) que incluyen los [derechos de uso por su nombre de codificación](../deploy-use/configure-usage-rights.md#usage-rights-and-descriptions) para los usuarios, grupos u organizaciones especificados
+    
+Para obtener más información sobre el registro de uso del servicio de protección, vea [Registro y análisis del uso del servicio Azure Rights Management](../deploy-use/log-analyze-usage.md)
 
 
 

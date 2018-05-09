@@ -4,7 +4,7 @@ description: Para configurar valores y etiquetas diferentes para usuarios espec�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/22/2018
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,22 +12,21 @@ ms.technology: techgroup-identity
 ms.assetid: 4b134785-0353-4109-8fa7-096d1caa2242
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 78fb739de9af22f2e1ab8414482ac16b68a1893e
-ms.sourcegitcommit: 94d1c7c795e305444e9fde17ad73e46f242bcfa9
+ms.openlocfilehash: b5e7bd86ea2e46939b8c4655287e58e3e270feb4
+ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-configure-the-azure-information-protection-policy-for-specific-users-by-using-scoped-policies"></a>Configuración de la directiva de Azure Information Protection para usuarios específicos mediante directivas de ámbito
 
 >*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
->[!NOTE]
-> En este artículo se reflejan las actualizaciones más recientes para Azure Portal, que le permiten crear una etiqueta de forma independiente de la directiva global o de una directiva de ámbito. También se quita la opción para publicar las directivas. Si el inquilino aún no está actualizado para estos cambios, por ejemplo, todavía se ve una opción **Publicar** para Azure Information Protection y no ve la opción de menú **CLASIFICACIONES**, espere unos días y luego vuelva a estas instrucciones.
-
 Cuando se descarga la directiva de Azure Information Protection en equipos que tienen instalado el [cliente de Azure Information Protection](https://www.microsoft.com/en-us/download/details.aspx?id=53018), todos los usuarios obtienen las configuraciones y las etiquetas de la directiva predeterminada o los cambios que se han configurado para la directiva global. Si quiere complementarlas para usuarios específicos, teniendo configuraciones y etiquetas diferentes, debe crear una **directiva de ámbito** que esté configurada para esos usuarios.
 
-Todos los usuarios reciben la directiva global, que contiene el título y la información sobre herramientas de Information Protection, la configuración global y las etiquetas globales. Si ha configurado directivas de ámbito para usuarios específicos, esos usuarios reciben entonces esas configuraciones y etiquetas adicionales. 
+En las aplicaciones que admiten el cliente de Azure Information Protection, todos los usuarios reciben la directiva global, que contiene el título y la información sobre herramientas de Information Protection, la configuración global y las etiquetas globales. Si ha configurado directivas de ámbito para usuarios específicos, esos usuarios reciben entonces esas configuraciones y etiquetas adicionales. 
+
+Tenga en cuenta que, además de las aplicaciones de escritorio de Office que son compatibles con el cliente de Azure Information Protection, las etiquetas también son compatibles con PowerShell y el analizador de Azure Information Protection. Esto significa que puede crear y configurar directivas con ámbito para las cuentas que ejecutan comandos de Powershell o el analizador. 
 
 Las directivas de ámbito, al igual que las etiquetas, se ordenan en el portal de Azure. Si un usuario está configurado para varios ámbitos, se calcula una directiva efectiva para ese usuario antes de descargarla. Según el orden de las directivas, se aplica la última configuración de directiva. Las etiquetas que ve el usuario son de la directiva global y las etiquetas adicionales de directivas de ámbito a las que pertenece el usuario. 
 

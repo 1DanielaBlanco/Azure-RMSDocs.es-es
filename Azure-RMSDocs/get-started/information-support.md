@@ -4,7 +4,7 @@ description: Recursos para administradores con información sobre nuevas version
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/23/2018
+ms.date: 05/01/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9eafa28bb6a259c7f845f54268a30c8cdc6fc988
-ms.sourcegitcommit: 5892db302bdf96538ecb3af8e3c2f678f5d1ebe2
+ms.openlocfilehash: 3ed8c53c235520d53c3d0a3666aa4aba45c174f5
+ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Información y soporte técnico para Azure Information Protection
 
@@ -26,7 +26,7 @@ Use los siguientes recursos para ayudarle a obtener información sobre implement
 
 |Para hacer esto…|…haga lo siguiente:|
 |----------------|---------------|
-|Ver la documentación usada con más frecuencia|Lea las cinco páginas más pertinentes:<br /><br /> - [Configurar los derechos de uso para Azure Rights Management](../deploy-use/configure-usage-rights.md)<br /> - [Preguntas más frecuentes sobre Azure Information Protection](../get-started/faqs.md)<br />- [Requisitos de Azure Information Protection](requirements.md) <br />- [Implementación del analizador de Azure Information Protection](../deploy-use/deploy-aip-scanner.md)<br />- [Directiva predeterminada de Azure Information Protection](../deploy-use/configure-policy-default.md)|
+|Ver la documentación usada con más frecuencia|Lea las cinco páginas más pertinentes:<br /><br /> - [¿Qué es Azure Information Protection?](../understand-explore/what-is-information-protection.md)<br /> - [Instalación del cliente de Azure Information Protection para los usuarios](../rms-client/client-admin-guide-install.md)<br />- [Requisitos de Azure Information Protection](requirements.md) <br />- [Implementación del analizador de Azure Information Protection](../deploy-use/deploy-aip-scanner.md)<br />- [Directiva predeterminada de Azure Information Protection](../deploy-use/configure-policy-default.md)|
 |Contacto con el equipo del producto y sus homólogos|Visite el [sitio de Yammer](https://www.yammer.com/AskIPTeam) sobre Azure Information Protection.|
 |Solicitud de una nueva característica o cambio de funcionalidad|Visite el sitio de [UserVoice](https://msip.uservoice.com) sobre Azure Information Protection.|
 |Recepción de tweets del grupo de producto|Hágase seguidor de [MicrosoftMobility@MSFTMobility](https://twitter.com/MSFTMobility) en Twitter.|
@@ -37,8 +37,6 @@ Use los siguientes recursos para ayudarle a obtener información sobre implement
 El equipo de productos de Azure Information Protection publica anuncios sobre nuevas versiones y actualizaciones en el [Blog de Enterprise Mobility and Security](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-information-protection). Estas publicaciones del blog complementan la documentación del producto y la información de soporte.
 
 Además, cada mes se publica un resumen de cambios en la documentación, en el [blog técnico de Azure Information Protection](https://aka.ms/AIPblog). En estas actualizaciones de la documentación se incluye información sobre cualquier nueva versión o actualización de las instrucciones de soporte técnico, así como las correcciones y las aclaraciones correspondientes a versiones existentes. Estas entradas se titulan: "**Actualización de documentación de Azure Information Protection: \<mes de año>**".
-
-Los resúmenes anteriores están publicados en el [blog de Enterprise Mobility + Security](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services&content-type=updates). 
 
 ## <a name="support-options-and-community-resources"></a>Opciones de soporte y recursos de la comunidad
 En las secciones siguientes se proporciona información sobre opciones de soporte técnico, solución de problemas y recursos de la comunidad.

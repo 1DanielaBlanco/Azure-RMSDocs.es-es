@@ -4,7 +4,7 @@ description: Instrucciones e información para administradores para implementar 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/13/2018
+ms.date: 04/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 2a3daec687739956bb0b7bd235b69cea30039171
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: d52026fcffd3a3a0b51e361e6671f247eac5296d
+ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>Guía del administrador: Instalación del cliente de Azure Information Protection para los usuarios
 
@@ -71,20 +71,6 @@ Luego, compruebe los requisitos previos adicionales que puede necesitar el clien
     Incluso si no ha configurado esta opción de directiva de grupo **Lista de complementos administrados**, puede que necesite configurarla si recibe algún informe en el que se indique que el complemento de Microsoft Azure Information Protection se va a deshabilitar. Al deshabilitar este complemento, los usuarios no verán la barra de Azure Information Protection en la aplicación de Office.
     
     Para obtener más información sobre esta configuración de directiva de grupo, consulte [No Add-ins loaded due to group policy settings for Office 2013 and Office 2016 programs](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off) (No se ha cargado ningún complemento debido a la configuración de directivas de grupo para Office 2013 y Office 2016).
-
-- Para Office 16.0.8628.2010 y versiones posteriores (Hacer clic y ejecutar): habilitar la compatibilidad con monitores heredada
-    
-    Nota: Este requisito previo no es necesario para la versión preliminar actual del cliente de Azure Information Protection. 
-    
-    Para evitar que la barra de Azure Information Protection se muestre fuera de las aplicaciones de Office de estas versiones de Office, es posible que tenga que habilitar la compatibilidad con monitores heredada. Si en este caso la barra no se muestra correctamente, es posible que la vea como **AdxTaskPane**. 
-    
-    Para configurar las aplicaciones de Office de acuerdo con este requisito, vaya a **Archivo** > **Opciones** > **General** > **Opciones de la interfaz del usuario**:
-    
-    - Si ve la opción **When using multiple displays** (Al usar varias pantallas) establecida en **Optimize for best appearance** (Optimizar para obtener la mejor apariencia), seleccione **Optimize for compatibility (application restart required)** (Optimizar para compatibilidad (se requiere reiniciar aplicación)) en su lugar. 
-        
-    - Si ve que la opción **Use best settings for my display** (Usar la configuración recomendada para la pantalla) está seleccionada, quite esta selección.
-    
-    - Si no ve ninguna de estas opciones, no se requiere ninguna configuración adicional.
 
 > [!IMPORTANT]
 > La instalación del cliente de Azure Information Protection requiere permisos administrativos locales.
@@ -211,16 +197,9 @@ Si usa Intune como el método de implementación de software, use estas instrucc
 
 ## <a name="how-to-install-the-azure-information-protection-scanner"></a>Cómo instalar el analizador de Azure Information Protection
 
-Actualmente, la versión de disponibilidad general (GA) del analizador de Azure Information Protection es una descarga independiente denominada **AzInfoProtectionScanner.exe** en el [Centro de descarga de Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=53018). Las versiones posteriores del analizador se incluirán en el cliente de Azure Information Protection.
+El módulo de PowerShell incluido con el cliente de Azure Information Protection tiene cmdlets para instalar y configurar el analizador. Pero para usar el analizador debe instalar la versión completa del cliente, no basta con instalar simplemente el módulo de PowerShell.
 
-La versión preliminar actual del cliente de Azure Information Protection incluye también el analizador de Azure Information Protection. 
-
-El módulo de PowerShell incluido con el analizador y el cliente preliminar tiene cmdlets para instalar y configurar el analizador.
-
-Para instalar al cliente para el analizador, siga las mismas instrucciones que en las secciones anteriores. Tenga en cuenta que si no necesita todos los componentes del cliente, como el complemento y el visor de Office, puede instalar solo el módulo de PowerShell. Por ejemplo, puede ejecutar el archivo ejecutable con `PowerShellOnly=true /quiet`.
-
-Después de haber instalado el cliente, ya está listo para instalar el analizador. Para obtener instrucciones, consulte [Implementación del analizador de Azure Information Protection para clasificar y proteger automáticamente los archivos](../deploy-use/deploy-aip-scanner.md).
-
+Para instalar al cliente para el analizador, siga las mismas instrucciones que en las secciones anteriores. A continuación, ya lo tendrá todo a punto para instalar el analizador. Para obtener instrucciones, consulte [Implementación del analizador de Azure Information Protection para clasificar y proteger automáticamente los archivos](../deploy-use/deploy-aip-scanner.md).
 
 ## <a name="next-steps"></a>Pasos siguientes
 Ahora que ha instalado el cliente de Azure Information Protection, vea la siguiente información adicional que puede necesitar para la compatibilidad con este cliente:

@@ -4,7 +4,7 @@ description: Identifique las aplicaciones que usarán las API de RMS para que se
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/23/2018
+ms.date: 04/26/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b304f65d70361b3fdb4dbf93291f408be93d363f
-ms.sourcegitcommit: 5892db302bdf96538ecb3af8e3c2f678f5d1ebe2
+ms.openlocfilehash: d044ac76ea910f2874219bd20fe262d8bd5c4c59
+ms.sourcegitcommit: f4a97427d61e4b539c91c49c952658aa2dc729ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="applications-that-support-azure-rights-management-data-protection"></a>Aplicaciones compatibles con la protección de datos de Azure Rights Management
 
@@ -78,6 +78,10 @@ Si la aplicación de correo no puede procesar el mensaje porque Exchange ActiveS
 
 Azure RMS se integra estrechamente en las aplicaciones de Word, Excel, PowerPoint y Outlook, donde esta funcionalidad se conoce a menudo como Information Rights Management (IRM). 
 
+Consulte también: [Office Applications Service Description](https://technet.microsoft.com/library/office-applications-service-description.aspx) (Descripción del servicio de aplicaciones de Office)
+
+#### <a name="windows-computers-for-information-rights-management-irm"></a>Equipos Windows para Information Rights Management (IRM)
+
 Los siguientes conjuntos de aplicaciones cliente de Office admiten la protección de archivos y correos electrónicos en equipos Windows mediante Azure RMS:
 
 - Office 365 ProPlus: Office 2016 y Office 2013
@@ -102,17 +106,19 @@ Azure RMS y Office Professional Plus 2010 con Service Pack 2 u Office Profession
 
 - No se admite anular la protección de plantilla con permisos personalizados que el usuario selecciona con el cliente de Azure Information Protection. En este escenario, debe quitarse primero la protección original para poder aplicar permisos personalizados.
 
+#### <a name="mac-computers-for-information-rights-management-irm"></a>Equipos Mac para Information Rights Management (IRM)
+
 Los siguientes conjuntos de aplicaciones cliente de Office admiten la protección de archivos y correos electrónicos en macOS mediante Azure RMS:
 
 - Office 365 ProPlus: Office 2016
 
 - Office Standard 2016 para Mac
 
-Consulte también: [Office Applications Service Description](https://technet.microsoft.com/library/office-applications-service-description.aspx) (Descripción del servicio de aplicaciones de Office)
+Sugerencia: Para empezar a proteger documentos mediante Office para Mac, puede que la página de preguntas frecuentes [¿Cómo se configura un equipo Mac para proteger documentos y hacer un seguimiento de ellos?](faqs-rms.md#how-do-i-configure-a-mac-computer-to-protect-and-track-documents) le resulte útil.
 
 ### <a name="more-information-about-the-azure-information-protection-app-for-ios-and-android"></a>Más información sobre la aplicación Azure Information Protection para iOS y Android
 
-La aplicación Azure Information Protection para iOS y Android reemplaza a la aplicación RMS sharing para esos dispositivos. Ofrece las mismas funciones y, además, es compatible con mensajes de correo electrónico con protección de derechos y archivos PDF con protección de derechos en SharePoint Online.
+La aplicación visor de Azure Information Protection para iOS y Android reemplaza a la aplicación RMS sharing para esos dispositivos. Ofrece las mismas funciones y, además, es compatible con mensajes de correo electrónico con protección de derechos y archivos PDF con protección de derechos en SharePoint Online.
 
 Si los dispositivos iOS y Android están inscritos en Microsoft Intune, puede implementar y administrar esta aplicación con una aplicación administrada por directivas. Para más información, consulte [Configure and deploy mobile application management policies in the Microsoft Intune console](/intune/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console) (Configuración e implementación de directivas de administración de aplicaciones móviles en la consola de Microsoft Intune). Para completar el paso 2 de esta documentación de Intune, siga las instrucciones para publicar una aplicación administrada por directiva.
 
@@ -135,7 +141,9 @@ Descargue la aplicación correspondiente en los vínculos de la [página de Micr
 
 ### <a name="more-information-about-the-rights-management-sharing-application"></a>Más información sobre la aplicación Rights Management sharing
 
-Esta aplicación se va a reemplazar por el cliente de Azure Information Protection. Aún es necesaria para equipos Mac y dispositivos móviles con Windows Phone.
+Esta aplicación se va a reemplazar por el cliente de Azure Information Protection. Los dispositivos móviles con Windows Phone aún la necesitan para ver archivos protegidos. 
+
+Para equipos Mac, ofrece un visor para archivos PDF protegidos (.ppdf), imágenes de texto protegidas y archivos protegidos genéricamente. La aplicación RMS sharing para Mac también puede proteger archivos de imagen, pero no los demás archivos. Para proteger archivos de Office, use Office para Mac. 
 
 Para obtener más información, vea los recursos siguientes:
 
@@ -145,7 +153,7 @@ Para obtener más información, vea los recursos siguientes:
 
 -   [Preguntas frecuentes para la aplicación Microsoft Rights Management sharing para plataformas móviles](https://technet.microsoft.com/dn451248)
 
-Descargue la aplicación para equipos Mac y para Windows Phone con los vínculos de la [página de Microsoft Azure Information Protection](http://go.microsoft.com/fwlink/?LinkId=303970).
+Descargue el visor para equipos Mac y para Windows Phone con los vínculos de la [página Microsoft Azure Information Protection](http://go.microsoft.com/fwlink/?LinkId=303970).
 
 
 ### <a name="more-information-about-other-applications-that-support-azure-information-protection"></a>Más información sobre otras aplicaciones que admiten Azure Information Protection

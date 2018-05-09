@@ -4,7 +4,7 @@ description: Si conoce o ha implementado con anterioridad Active Directory Right
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/04/2017
+ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8123bd62-1814-4d79-b306-e20c1a00e264
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5c550ae18b8bb72895833f22e3eadab758e26b42
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 8fe6c95c9e141e63aa70d60920fbc127f49996f5
+ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="comparing-azure-information-protection-and-ad-rms"></a>Comparación de Azure Information Protection y AD RMS
 
@@ -26,7 +26,7 @@ Si conoce o ha implementado con anterioridad Active Directory Rights Management 
 
 Estas son algunas de las principales diferencias de Azure Information Protection:
 
-- **No es necesaria una infraestructura de servidor**: Azure Information Protection no requiere los servidores y certificados PKI adicionales que necesita AD RMS, ya que Microsoft Azure se encarga de esto. En consecuencia, esta solución en la nube es más rápida de implementar y fácil de mantener.
+- **No es necesaria una infraestructura de servidor**: Azure Information Protection no necesita los servidores y certificados PKI adicionales que necesita AD RMS, ya que Microsoft Azure se encarga de ellos. En consecuencia, esta solución en la nube es más rápida de implementar y fácil de mantener.
 
 - **Autenticación basada en la nube**: Azure Information Protection usa Azure AD para la autenticación, tanto para los usuarios internos como para los usuarios de otras organizaciones. Esto significa que los usuarios móviles se pueden autenticar incluso cuando no están conectados a la red interna y es más fácil compartir contenido protegido con usuarios de otras organizaciones. Muchas organizaciones ya tienen cuentas de usuario en Azure AD porque ejecutan servicios de Azure o disponen de Office 365. Pero, de no ser así, RMS para usuarios permite a los usuarios crear una cuenta gratuita. Para compartir contenido protegido por AD RMS con otra organización debe configurar relaciones de confianza explícitas con cada organización.
 
@@ -34,7 +34,7 @@ Estas son algunas de las principales diferencias de Azure Information Protection
 
 - **Plantillas predeterminadas**: Azure Information Protection crea dos plantillas predeterminadas en cuanto se activa el servicio de protección, lo que facilita empezar a proteger datos importantes de inmediato. No hay plantillas predeterminadas para AD RMS.
 
-- **Plantillas de departamento**: Azure Information Protection admite plantillas de departamento como valor de configuración para las plantillas adicionales que cree. Este valor de configuración permite especificar qué usuarios ven la plantilla en sus aplicaciones cliente (por ejemplo, en aplicaciones de Office), lo que les permite seleccionar fácilmente la directiva correcta que defina para los diferentes grupos de usuarios. AD RMS no es compatible con las plantillas de departamento.
+- **Plantillas de departamento**: Azure Information Protection admite plantillas de departamento como valor de configuración para las plantillas adicionales que cree. Esta configuración permite especificar un subconjunto de usuarios para que vean plantillas específicas en sus aplicaciones cliente. La limitación del número de plantillas que ven los usuarios les facilita la selección de la directiva correcta definida para los diferentes grupos de usuarios. AD RMS no es compatible con las plantillas de departamento.
 
 - **Seguimiento y revocación de documentos**: Azure Information Protection admite estas características con el cliente de Azure Information Protection, mientras que AD RMS no las admite.
 
@@ -53,7 +53,7 @@ Para obtener más información y conocer otras diferencias, vea en la tabla sigu
 |Admite capacidades de Information Rights Management (IRM) en servicios de Microsoft Online, como Exchange Online y SharePoint Online, así como Office 365.<br /><br />También admite productos de servidor de Microsoft locales, como Exchange Server, SharePoint Server y servidores de archivos que ejecutan Windows Server e Infraestructura de clasificación de archivos (FCI).|Admite productos de servidor de Microsoft locales, como Exchange Server, SharePoint Server y servidores de archivos que ejecutan Windows Server e Infraestructura de clasificación de archivos (FCI).|
 |Permite colaborar automáticamente de forma segura en los documentos con cualquier organización que también use Azure AD para la autenticación. Esto significa que las organizaciones pueden proteger los documentos que comparten internamente o con otras organizaciones.|Colaborar de forma segura en documentos de fuera de la organización requiere la definición explícita de confianzas de autenticación en una relación directa de punto a punto entre dos organizaciones. Debe configurar dominios de usuario de confianza (TUD) o confianzas federadas que cree mediante Servicios de federación de Active Directory (AD FS).|
 |Envíe un correo electrónico protegido (opcionalmente, con datos adjuntos a documentos de Office que estén protegidos automáticamente) a los usuarios cuando no exista ninguna relación de confianza de autenticación. Este escenario se consigue mediante el uso de la federación con proveedores de redes sociales o un código de acceso de un solo uso y un explorador web para la visualización.|No admite el envío de correo electrónico protegido cuando no existe ninguna relación de confianza de autenticación.|
-|Proporciona dos plantillas de directivas de derechos predeterminadas que restringen el acceso al contenido a tu propia organización; una que proporciona vista de solo lectura de contenido protegido, y la otra que permite escribir o modificar permisos para el contenido protegido.<br /><br />También puede crear sus propias plantillas personalizadas, incluidas plantillas de departamentos, visibles tan solo para un subconjunto de usuarios. Para obtener más información, vea [Configuración y administración de plantillas para Azure Information Protection](../deploy-use/configure-policy-templates.md).<br /><br />Además, los usuarios pueden definir su propio conjunto de permisos si las plantillas no son suficientes.|No hay plantillas predeterminadas, por lo que deberá crearlas y distribuirlas. Para obtener más información, consulte [Consideraciones de la plantilla de directivas para AD RMS](http://go.microsoft.com/fwlink/?LinkId=154765).<br /><br />Además, los usuarios pueden definir su propio conjunto de permisos si las plantillas no son suficientes.|
+|Proporciona dos plantillas de directivas de derechos predeterminadas que restringen el acceso al contenido a tu propia organización; una que proporciona vista de solo lectura de contenido protegido, y la otra que permite escribir o modificar permisos para el contenido protegido.<br /><br />También puede crear sus propias plantillas personalizadas, incluidas plantillas de departamento, visibles solo para un subconjunto de usuarios. Para obtener más información, vea [Configuración y administración de plantillas para Azure Information Protection](../deploy-use/configure-policy-templates.md).<br /><br />Además, los usuarios pueden definir su propio conjunto de permisos si las plantillas no son suficientes.|No hay plantillas predeterminadas; debe crearlas y luego distribuirlas. Para obtener más información, consulte [Consideraciones de la plantilla de directivas para AD RMS](http://go.microsoft.com/fwlink/?LinkId=154765).<br /><br />Además, los usuarios pueden definir su propio conjunto de permisos si las plantillas no son suficientes.|
 |La versión mínima compatible de Microsoft Office es Office 2010, que requiere el [cliente de Azure Information Protection](../rms-client/aip-client.md) o la aplicación RMS sharing.<br /><br />Microsoft Office para Mac:<br /><br />- Microsoft Office para Mac 2016: compatible<br /><br />- Microsoft Office para Mac 2011: no compatible|La versión mínima compatible de Microsoft Office es Office 2007.<br /><br />Microsoft Office para Mac:<br /><br />- Microsoft Office para Mac 2016: compatible<br /><br />- Microsoft Office para Mac 2011: compatible|
 |Admite el [cliente de Azure Information Protection](../rms-client/aip-client.md) para Windows, iOS y Android. La aplicación RMS sharing continúa admitiendo equipos Mac y Windows Phone.<br /><br />Además, el cliente de Azure Information Protection admite lo siguiente:<br /><br />- Uso compartido con personas de otra organización.<br /><br />- Un sitio de seguimiento de documentos para los usuarios, que incluye la capacidad de revocar un documento.|Admite el [cliente de Azure Information Protection](../rms-client/aip-client.md) para Windows, iOS y Android. La aplicación RMS sharing continúa admitiendo equipos Mac y Windows Phone. Sin embargo, el uso compartido no es compatible con compartir con personas de otra organización o el sitio de Seguimiento de documentos y la capacidad de los usuarios de revocar documentos.|
 |La mayoría de los [tipos de archivo](../rms-client/client-admin-guide-file-types.md) se pueden clasificar y proteger con el cliente de Azure Information Protection.<br /><br />Para otras aplicaciones, compruebe la tabla de [Requisitos de Azure RMS: aplicaciones](../get-started/requirements-applications.md).|La mayoría de los [tipos de archivo](../rms-client/client-admin-guide-file-types.md) se pueden proteger con el cliente de Azure Information Protection.<br /><br />Para otras aplicaciones, compruebe la tabla de [Requisitos de Azure RMS: aplicaciones](../get-started/requirements-applications.md).|

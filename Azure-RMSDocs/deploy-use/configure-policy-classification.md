@@ -4,24 +4,21 @@ description: Al configurar las condiciones de una etiqueta, puede asignar autom�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/22/2018
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: 1019b7d7ea32b26a24aa2417a77345ff87e52e4b
-ms.sourcegitcommit: 94d1c7c795e305444e9fde17ad73e46f242bcfa9
+ms.openlocfilehash: 053d8dfd51d8c79cdc733f4395226c12ab6e2102
+ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Configuración de las condiciones para la clasificación automática y recomendada en Azure Information Protection
 
 >*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
-
->[!NOTE]
-> En este artículo se reflejan las actualizaciones más recientes para Azure Portal, que le permiten crear una etiqueta de forma independiente de la directiva global o de una directiva de ámbito. También se quita la opción para publicar las directivas. Si el inquilino aún no está actualizado para estos cambios, por ejemplo, todavía se ve una opción **Publicar** para Azure Information Protection y no ve la opción de menú **CLASIFICACIONES**, espere unos días y luego vuelva a estas instrucciones.
 
 Al configurar las condiciones de una etiqueta, puede asignar automáticamente la etiqueta a un documento o a un correo electrónico. También puede indicar a los usuarios que seleccionen la etiqueta que usted recomienda. 
 
@@ -48,7 +45,7 @@ En este ejemplo, el usuario puede hacer clic en **Cambiar ahora** para aplicar l
 
 - La clasificación recomendada se aplica a Word, Excel y PowerPoint cuando se guardan documentos. No se puede utilizar la clasificación recomendada para Outlook.
     
-    Puede utilizar la clasificación recomendada para los documentos etiquetados previamente, con o sin una clasificación más alta. 
+    No puede usar la clasificación recomendada para los documentos etiquetados previamente con una clasificación más alta. 
 
 Puede cambiar este comportamiento para que el cliente de Azure Information Protection compruebe periódicamente los documentos en busca de las reglas de condición que especifique. Esta configuración requiere una [configuración avanzada del cliente](../rms-client/client-admin-guide-customizations.md#turn-on-classification-to-run-continuously-in-the-background), que actualmente está en versión preliminar.
 
