@@ -4,7 +4,7 @@ description: Compruebe que tiene las cuentas de usuario y grupo que necesita par
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/21/2018
+ms.date: 05/07/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7d9c58649eb06b614a25e28c909d34318ea80133
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 760fe51d8c864ff28f599dd3cf1f84ae72c03343
+ms.sourcegitcommit: 2b031166026b4b6dd87e0dbaec44a99204c8691c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="preparing-users-and-groups-for-azure-information-protection"></a>Preparación de usuarios y grupos para Azure Information Protection
 
@@ -41,24 +41,6 @@ Al crear usuarios y grupos mediante uno de los tres métodos de esta lista, se c
 ## <a name="how-users-and-groups-are-used-by-azure-information-protection"></a>Utilización de usuarios y grupos por Azure Information Protection
 
 Hay tres escenarios para utilizar usuarios y grupos con Azure Information Protection:
-
-- **Para asignar etiquetas a los usuarios** cuando usa el etiquetado y la clasificación. Solo los administradores seleccionan estos grupos:
-    
-    - La directiva de Azure Information Protection se asigna automáticamente a todos los usuarios de Azure AD del inquilino. Sin embargo, también puede asignar etiquetas adicionales a usuarios o grupos específicos mediante directivas de ámbito.
-
-- **Para asignar derechos de uso y controles de acceso** cuando se usa el servicio Azure Rights Management para proteger documentos y correos electrónicos. Los administradores y usuarios pueden seleccionar estos usuarios y grupos:
-
-    - Los derechos de uso determinan si un usuario puede abrir un documento o correo electrónico y cómo puede utilizarlo. Por ejemplo, si solo puede leerlo, o leerlo e imprimirlo, o leerlo y editarlo.
-
-    - Los controles de acceso incluyen una fecha de expiración y si es necesaria una conexión a Internet para acceder.
-
-- **Para configurar el servicio Azure Rights Management** para admitir escenarios específicos y, por tanto, solo los administradores pueden seleccionar estos grupos. Entre los ejemplos se incluye la configuración de lo siguiente:
-
-    - Super usuarios, para que los servicios o personas designados puedan abrir contenido cifrado si es necesario para la recuperación de datos o la exhibición de documentos electrónicos.
-
-    - Administración delegada del servicio Azure Rights Management.
-
-    - Controles de incorporación para admitir una implementación por fases.
 
 **Para asignar etiquetas a los usuarios** al configurar la directiva de Azure Information Protection para que las etiquetas se puedan aplicar a los documentos y correos electrónicos. Solo los administradores pueden seleccionar estos usuarios y grupos:
 
