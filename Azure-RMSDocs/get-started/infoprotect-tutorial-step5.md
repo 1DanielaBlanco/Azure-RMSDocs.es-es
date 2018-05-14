@@ -5,7 +5,7 @@ keywords: ''
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/18/2017
+ms.date: 05/09/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: information-protection
@@ -13,11 +13,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4e59a3b3-f0f4-4535-8b96-cac68303d855
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 718c15769e5719d5e8dde612cf66e4215f1e235d
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 7c6acb5a4b5c8f33193cbf5d8833201e0d68287e
+ms.sourcegitcommit: 342b0bd8c57eb621714609ec28234dd07fe95d1e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="step-5-see-sharing-of-protected-files-in-action-and-track-your-document"></a>Paso 5: ver el funcionamiento del uso compartido de archivos protegidos y realizar un seguimiento del documento 
 
@@ -103,7 +103,7 @@ Ahora que el destinatario ha abierto el archivo adjunto y lo ha reenviado de for
 
 3.  En la página **Sus documentos compartidos**, verá el nombre del documento que ha compartido. En este punto, es el único archivo que aparece, pero a medida que comparta más documentos protegidos, la lista aumentará.
 
-    En esta página, verá la fecha en la que compartió el documento (cuándo envió el correo electrónico con el archivo adjunto protegido), la fecha de la última actividad y el nombre del destinatario al que envía el correo electrónico. Haga clic en el nombre del documento para obtener detalles adicionales.
+    En esta página, verá la fecha en la que compartió el documento (cuándo envió el correo electrónico con el archivo adjunto protegido), su estado actual (activo, revocado o expirado) y el nombre del destinatario al que envió el correo electrónico. Haga clic en el nombre del documento para obtener detalles adicionales.
 
 4.  En la página nueva, que tiene el nombre del archivo en el que hizo clic, verá los detalles de resumen solo para ese documento y una lista de otras opciones que están disponibles para el documento (**Lista**, **Escala de tiempo**, **Mapa**, **Configuración**).
 

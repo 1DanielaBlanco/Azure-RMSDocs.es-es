@@ -4,7 +4,7 @@ description: Cómo las aplicaciones de Office de usuario final (como Word y Outl
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/29/2018
+ms.date: 05/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f7ca9a9e85a1d76d2d7bdc505c884ee9f02ddb42
-ms.sourcegitcommit: d1987b1abb65f3466bbbb8f8c28e30668d629e50
+ms.openlocfilehash: caf89d6df51adcd556db319a8140cbe936102ef3
+ms.sourcegitcommit: fa64f9c2a4d367d7586d64def0fd02764ad2e00b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/06/2018
 ---
 # <a name="how-office-applications-and-services-support-azure-rights-management"></a>Cómo las aplicaciones y los servicios de Office admiten Azure Rights Management 
 
@@ -46,7 +46,7 @@ Cuando se usa Exchange Online o Exchange Server, es posible configurar opciones 
 
 -   **Reglas de protección** para clientes de Outlook que un administrador configura para aplicar automáticamente plantillas de protección a mensajes de correo electrónico para destinatarios concretos. Por ejemplo, cuando se envían correos electrónicos internos a tu departamento legal, solo los miembros del departamento legal pueden leerlos y no se pueden reenviar. Los usuarios consultan la protección que se aplicará al mensaje de correo electrónico antes de enviarlo y, de forma predeterminada, pueden quitarla si deciden que no es necesaria. Los correos electrónicos se cifran antes de enviarlos. Para más información, consulte [Reglas de protección de Outlook](https://technet.microsoft.com/library/dd638178%28v=exchg.150%29.aspx) y [Creación de una regla de protección de Outlook](https://technet.microsoft.com/library/dd638196%28v=exchg.150%29.aspx) en la biblioteca de Exchange.
 
--   **Reglas de transporte** que un administrador configura para aplicar automáticamente plantillas de protección a mensajes de correo electrónico. Estas reglas se basan en propiedades como el remitente, el destinatario, el asunto del mensaje y el contenido. Como concepto, estas reglas son similares a las reglas de protección, pero no permiten que los usuarios quiten la protección. Las reglas pueden aplicarse a Outlook en la Web y a mensajes de correo electrónico enviados desde un dispositivo móvil. Además, estas reglas no cifran los mensajes de correo electrónico antes de enviarlos desde el cliente. Para más información, consulte [Creación de una regla de protección de transporte](https://technet.microsoft.com/library/dd302432.aspx) en la biblioteca de Exchange.
+-   **Reglas de flujo de correo** que un administrador configura para aplicar automáticamente plantillas de protección a mensajes de correo electrónico. Estas reglas se basan en propiedades como el remitente, el destinatario, el asunto del mensaje y el contenido. Como concepto, estas reglas son similares a las reglas de protección, pero no permiten que los usuarios quiten la protección. Las reglas pueden aplicarse a Outlook en la Web y a mensajes de correo electrónico enviados desde un dispositivo móvil. Además, estas reglas no cifran los mensajes de correo electrónico antes de enviarlos desde el cliente. Para más información, consulte [Creación de una regla de protección de transporte](https://technet.microsoft.com/library/dd302432.aspx) en la biblioteca de Exchange.
 
 -   **Directivas de prevención de pérdida de datos (DLP)** que contienen conjuntos de condiciones para filtrar mensajes de correo electrónico y tomar medidas para tratar de evitar la pérdida de contenido confidencial, por ejemplo, información personal o de tarjetas de crédito. Las sugerencias de las directivas se pueden usar cuando se detecta información confidencial, para alertar a los usuarios de que es posible que sea necesario aplicar protección. Para más información, vea [Prevención de pérdida de datos](https://technet.microsoft.com/library/jj150527(v=exchg.160\).aspx) en la biblioteca de Exchange.
 
@@ -78,11 +78,11 @@ Si usa SharePoint Server, puede usar la protección IRM implementando el conecto
 > [!NOTE]
 > Actualmente, hay algunas limitaciones al usar IRM de SharePoint:
 > 
-> - No puede utilizar las plantillas predeterminadas o personalizadas que se administran en el portal de Azure. 
+> - No pueden utilizar las plantillas de protección predeterminadas o personalizadas que se administran en Azure Portal. 
 > 
-> - No se admiten los archivos que tienen una extensión de nombre de archivo .ppdf para archivos PDF protegidos. Los archivos que tienen una extensión de nombre de archivo .pdf y que han sido protegidos forma nativa por Rights Management se admiten cuando se usa un lector PDF que admita Rights Management de forma nativa.
+> - No se admiten los archivos que tienen una extensión de nombre de archivo .ppdf para archivos PDF protegidos. Se admiten los archivos que tienen la extensión de nombre de archivo .pdf y, cuando se descargan, se pueden abrir con una aplicación PDF que admita de forma nativa Rights Management. Por ejemplo, el cliente de Azure Information Protection para Windows incluye un visor para estos archivos PDF protegidos. Se recogen otros visores PDF alternativos en la [tabla de aplicaciones habilitadas para RMS](../get-started/requirements-applications.md#rms-enlightened-applications).
 > 
-> - No se admite la coautoría. Dado que debe extraer del repositorio y descargar un documento en una biblioteca protegida mediante IRM, solo una persona podrá editarlo al mismo tiempo.
+> - No se admite la generación conjunta, cuando más de una persona edita un documento al mismo tiempo. Para editar un documento en una biblioteca protegida mediante IRM, debe activar primero el documento y descargarlo y, a continuación, modificarlo en la aplicación de Office. Por lo tanto, solo una persona puede editar el documento a la vez.
 
 En el caso de las bibliotecas que no estén protegidas mediante IRM, al proteger un archivo y cargarlo en SharePoint u OneDrive, las características siguientes no son compatibles con el archivo: coautoría, Office Online, búsqueda, vista previa de documentos, miniaturas, eDiscovery y prevención de pérdida de datos (DLP).
 

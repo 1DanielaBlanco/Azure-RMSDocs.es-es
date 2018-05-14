@@ -4,7 +4,7 @@ description: Una vez protegidos los documentos, puede realizar un seguimiento de
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/23/2017
+ms.date: 05/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 643c762e-23ca-4b02-bc39-4e3eeb657a1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 84f5f0ed8b98895b8c056ff03295afef379e6b74
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: e4e35659ab964a636c6ca0c7066b1c809cc5958b
+ms.sourcegitcommit: 6a67fc50bd8b8a06974de647c15115a673f0217c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="user-guide-track-and-revoke-your-documents-when-you-use-azure-information-protection"></a>Guía del usuario: Seguimiento y revocación de documentos cuando se usa Azure Information Protection
 
@@ -24,7 +24,9 @@ ms.lasthandoff: 03/28/2018
 
 Una vez protegidos los documentos mediante Azure Information Protection, puede realizar el seguimiento de cómo los usan las personas. Si es necesario, también puede revocar el acceso a ellos si las personas ya no pueden leerlos. Para ello, utilice el **sitio de seguimiento de documentos**. Puede obtener acceso a este sitio desde equipos Windows y Mac e incluso tabletas y teléfonos.
 
-Cuando tenga acceso a este sitio, inicie sesión para hacer un seguimiento de sus documentos. Si la organización tiene una [suscripción que admite el seguimiento y la revocación de documentos](https://www.microsoft.com/cloud-platform/azure-information-protection-features) y usted tiene asignada una licencia para esta suscripción, puede ver quién intentó abrir los documentos que protegió y si lo lograron (se autenticaron correctamente) o no. También verá cada intento de acceso al documento y su ubicación en ese momento. Además:
+Cuando tenga acceso a este sitio, inicie sesión para hacer un seguimiento de sus documentos. Si la organización tiene una [suscripción que admite el seguimiento y la revocación de documentos](https://www.microsoft.com/cloud-platform/azure-information-protection-features) y usted tiene asignada una licencia para esta suscripción, puede ver quién intentó abrir los documentos que protegió y si lo lograron (se autenticaron correctamente) o no. También verá cada intento de acceso al documento y su ubicación en ese momento. Sin embargo, en raras ocasiones, la ubicación notificada podría no ser precisa. Por ejemplo, cuando un usuario que abre un documento protegido está usando una conexión VPN o su equipo tiene una dirección IPv6.
+
+Acciones que puede realizar en el sitio de seguimiento de documentos:
 
 - Si necesita dejar de compartir un documento: 
     

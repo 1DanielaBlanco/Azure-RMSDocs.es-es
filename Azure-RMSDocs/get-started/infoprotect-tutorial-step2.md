@@ -4,17 +4,17 @@ description: 'Paso 2 de un tutorial de introducción para probar rápidamente Az
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/30/2018
+ms.date: 05/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: 3b9dbbc16fe26d7f111d37dbcd28d6477372a5d9
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: ffae0c9ef0e9ffd1fc9a4c25ef5c60e8da6de5ca
+ms.sourcegitcommit: 342b0bd8c57eb621714609ec28234dd07fe95d1e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="step-2-configure-the-azure-information-protection-policy"></a>Paso 2: Configuración de la directiva de Azure Information Protection
 
@@ -55,11 +55,13 @@ En este tutorial, se cambiarán algunas de esas configuraciones de directiva par
     
     Es posible que no tenga que cambiarla, ya que el valor predeterminado depende del momento en el que obtuvo la suscripción. Usaremos permisos personalizados más adelante en el tutorial para compartir un documento protegido con el usuario que especifique. Para ello, debe hacer clic con el botón derecho en el archivo en el Explorador de archivos.
 
+4. Seleccione **Guardar** en la hoja **Policy: Global** (Directiva: Global) y, si se le pide que confirme la acción, seleccione **Aceptar**. Cierre esta página.
+
 ## <a name="creating-a-new-label-for-protection-visual-markers-and-a-condition-to-prompt-for-classification"></a>Crear una etiqueta para protección, marcadores visuales y una condición para solicitar la clasificación
 
 Ahora vamos a crear una subetiqueta para **Confidencial**.
 
-1. Haga clic con el botón derecho en la etiqueta **Confidencial** y elija **Agregar una subetiqueta**.
+1. Desde la opción de menú **CLASIFICACIONES** > **Etiquetas**: haga clic en la etiqueta **Confidencial** y elija **Agregar una subetiqueta**.
     
     Si no tiene una etiqueta denominada **Confidencial**, puede seleccionar otra etiqueta o crear una etiqueta y seguir el tutorial con pequeñas diferencias.
 
@@ -125,9 +127,13 @@ Ahora vamos a crear una subetiqueta para **Confidencial**.
 
 12. En el cuadro **Enter notes for internal housekeeping**(Escribir notas para mantenimiento interno), escriba **Solo con fines de prueba**.
 
-13. Haga clic en **Guardar** en la hoja **Subetiqueta**. A continuación, en la hoja **Policy: Global** (Directiva:Global), haga clic de nuevo en **Guardar**.
-    
-    Ahora verá la nueva subetiqueta, que está configurada para los distintivos visuales y la protección. Por ejemplo:
+13. Haga clic en **Guardar** en la hoja **Subetiqueta**. Si se le pide que confirme, haga clic en **Aceptar**. La nueva etiqueta se crea y se guarda, pero no se agrega aún a una directiva.
+
+14. Desde la opción de menú **CLASIFICACIONES** > **Directivas**: seleccione **Global** de nuevo y, a continuación, seleccione el vínculo **Agregar o quitar etiquetas** después de las etiquetas.
+
+15. En la hoja **Directiva: agregar o quitar etiquetas**, seleccione la etiqueta que acaba de crear y la etiqueta denominada **Finanzas** y haga clic en **Aceptar**.
+
+16. En la hoja **Policy: Global** (Directiva:global), ahora verá la nueva subetiqueta en la directiva global, que está configurada para distintivos visuales y protección. Por ejemplo:
 
     ![Paso 3 del tutorial de inicio rápido de Azure Information Protection - Directiva predeterminada configurada](../media/info-protect-policy-configuredv2.png)
     
@@ -135,6 +141,9 @@ Ahora vamos a crear una subetiqueta para **Confidencial**.
     
     ![Paso 3 del tutorial de inicio rápido de Azure Information Protection: valores configurados](../media/info-protect-settings-configuredv2.png)
     
+
+17. Haga clic en **Guardar** en la hoja **Policy: Global** (Directiva:global). Si se le pide que confirme esta acción, haga clic en **Aceptar**.
+
 Puede cerrar el portal de Azure o dejarlo abierto para probar opciones de configuración adicionales cuando haya terminado este tutorial.
 
 Ahora que ya ha dado un vistazo a la directiva predeterminada y ha hecho algunos cambios, el siguiente paso consiste en instalar el cliente de Azure Information Protection.

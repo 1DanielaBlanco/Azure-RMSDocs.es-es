@@ -4,7 +4,7 @@ description: Información sobre cómo personalizar el cliente de Azure Informati
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/30/2018
+ms.date: 05/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 80f0b29b05f3a63972f7bc45e14ee721cf289a86
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: 0b71519002816f5bae272f002bfec123186a65a1
+ms.sourcegitcommit: 22072325721cfd26b6546ef625e8b38f5551d30b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Guía del administrador: Configuraciones personalizadas del cliente de Azure Information Protection
 
@@ -56,10 +56,21 @@ Independientemente de esta configuración, el cliente de Azure Information Prote
 
 Cuando el cliente de Azure Information Protection se instala por primera vez en un equipo y un usuario abre Word, Excel, PowerPoint o Outlook, aparece una página de **Enhorabuena** con instrucciones breves sobre cómo usar la nueva barra de Information Protection para seleccionar las etiquetas. Puede suprimir esta página editando el registro.
 
-Busque el siguiente nombre de valor y establezca los datos del valor en **0**:
+1. Si la siguiente clave del registro no existe, créela:
+    
+    **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP**
 
-**HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnableWelcomeExperience** 
+2. Si no existe un valor DWORD (32 bits) (REG DWORD) denominado **EnableWelcomeExperience**, créelo y establezca el valor de datos en **0**:
 
+## <a name="suppress-the-whats-new-in-azure-information-protection-page"></a>Suprima la página ""What's new in Azure Information Protection?" página
+
+Cuando el cliente de Azure Information Protection se instala o se actualiza en un equipo en primer lugar, y se muestra la barra de Azure Information Protection en Word, Excel, PowerPoint o Outlook, aparece una página **What's new en Azure Information Protection?** para informar a los usuarios acerca de los permisos personalizados y hacer un seguimiento del uso. Puede suprimir esta página editando el registro.
+
+1. Si la siguiente clave del registro no existe, créela:
+    
+    **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP**
+
+2.  Si no existe un valor de cadena (REG-SZ) denominado **WhatsNewVersion**, créelo y establezca el valor de datos en **1.4**.
 
 ## <a name="sign-in-as-a-different-user"></a>Inicio de sesión como un usuario diferente
 

@@ -4,17 +4,17 @@ description: Puede proteger sus documentos y mensajes de correo electrónico má
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/30/2018
+ms.date: 05/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: bcbc3e79da3c158ca3d6582e5dcd4882c327f7b6
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: 8b1024a26e086cb8cbd4696dc37d66350968a0b4
+ms.sourcegitcommit: fbc83d699b9e4e9c8e0e7d36f574630af6a4e3d9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Configuración de una etiqueta para la protección de Rights Management
 
@@ -103,7 +103,7 @@ No es necesario que Exchange esté configurado para Azure Information Protection
     
     Seleccione **Agregar permisos** y, en la hoja **Agregar permisos**, seleccione el primer conjunto de usuarios y grupos que tendrán permisos para usar el contenido que se protegerá mediante la etiqueta seleccionada:
     
-    - Elija **Seleccionar de la lista** para agregar todos los usuarios de la organización o vaya al directorio.
+    - Elija **Seleccione de la lista** para agregar todos los usuarios de su organización mediante la selección de **Agregar \<NombreDeOrganización >-Todos los miembros**. Este parámetro excluye las cuentas de invitado. O bien, busque en el directorio.
         
         Los usuarios o grupos deben disponer de una dirección de correo electrónico. En un entorno de producción, los usuarios y grupos casi siempre tendrán una dirección de correo electrónico, pero en uno simple de pruebas es posible que tenga que agregarlas a las cuentas de usuario o los grupos.
         
@@ -244,7 +244,7 @@ Cuando los usuarios especifican las direcciones de correo electrónico en el cua
     
 2. Asegúrese de que **Establecer permisos** esté seleccionado y seleccione **Agregar permisos**.
 
-3. En la hoja **Agregar permisos**, para conceder permisos a los usuarios de su organización, seleccione **Agregar \<nombre de la organización > - Todos los miembros** para seleccionar a todos los usuarios de su inquilino o seleccione  **Examinar el directorio** para seleccionar un grupo específico. Para conceder permisos a usuarios externos, o bien si prefiere escribir la dirección de correo electrónico, seleccione **Escribir detalles** y escriba la dirección de correo electrónico del usuario, o bien un grupo de Azure AD o un nombre de dominio.
+3. En la hoja **Agregar permisos**: para conceder permisos a los usuarios de su organización, seleccione **Agregar \<nombre de la organización > - Todos los miembros** para seleccionar a todos los usuarios de su inquilino. Este parámetro excluye las cuentas de invitado. O bien, seleccione **Examinar directorio** para seleccionar un grupo específico. Para conceder permisos a usuarios externos, o bien si prefiere escribir la dirección de correo electrónico, seleccione **Escribir detalles** y escriba la dirección de correo electrónico del usuario, o bien un grupo de Azure AD o un nombre de dominio.
     
     Repita este paso para especificar usuarios adicionales que deban tener los mismos permisos.
 
