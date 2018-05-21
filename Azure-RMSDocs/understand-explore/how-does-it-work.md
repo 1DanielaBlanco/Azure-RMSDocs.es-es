@@ -4,7 +4,7 @@ description: Analice cómo funciona Azure RMS, los controles criptográficos que
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/09/2018
+ms.date: 05/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 321b18946c934878a422bd28a115c06d443b8d18
-ms.sourcegitcommit: affda7572064edaf9e3b63d88f4a18d0d6932b13
+ms.openlocfilehash: 9c1fff4d9bcce892b9f671e590d9a670f9a4422a
+ms.sourcegitcommit: 373e05ff0c411d29cc5b61c36edaf5a203becc14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="how-does-azure-rms-work-under-the-hood"></a>¿Cómo funciona Azure RMS? En segundo plano
 
@@ -147,13 +147,15 @@ El cliente también descifra la lista de derechos y los pasa a la aplicación, q
 ### <a name="variations"></a>Variaciones
 Los tutoriales anteriores cubren los escenarios estándar pero hay algunas variaciones:
 
--   **Dispositivos móviles**: cuando los dispositivos móviles protegen o consumen archivos con el servicio Azure Rights Management, los flujos del proceso son mucho más sencillos. Los dispositivos móviles no recorren primero el proceso de inicialización de usuario porque en su lugar, cada transacción (para proteger o consumir contenido) es independiente. Como con equipos de Windows, los dispositivos móviles se conectan al servicio Azure Rights Management y autentican. Para proteger contenido, los dispositivos móviles envían una directiva y el servicio Azure Rights Management les envía una licencia de publicación y una clave simétrica para proteger el documento. Para consumir contenido, cuando los dispositivos móviles se conectan al servicio Azure Rights Management y autentican, envían la directiva del documento al servicio Azure Rights Management y solicitan una licencia de usuario para consumir el documento. En respuesta, el servicio Azure Rights Management envía las restricciones y las claves necesarias a los dispositivos móviles. Ambos procesos usan TLS para proteger el intercambio de claves y otras comunicaciones.
+- **Protección de correo electrónico**: al usarse Exchange Online y Cifrado de mensajes de Office 365 con nuevas funcionalidades para proteger mensajes de correo electrónico, la autenticación para el consumo también puede usar la federación con un proveedor de identidades sociales o con un código de acceso de un solo uso. A continuación, los flujos del proceso son muy similares, solo que el consumo de contenido se produce del lado del servicio en una sesión del explorador web a través de una copia temporalmente en caché del correo electrónico saliente.
 
--   **Conector RMS**: cuando se usa el servicio Azure Rights Management con el conector RMS, los flujos del proceso no cambian. La única diferencia es que el conector actúa como una retransmisión entre los servicios locales (como Exchange Server y SharePoint Server) y el servicio Azure Rights Management. El propio conector no lleva a cabo ninguna operación, como la inicialización del entorno del usuario, o cifrado o descifrado. Retransmite simplemente la comunicación que iría normalmente a un servidor AD RMS, controlando la traducción entre los protocolos que se usan en cada lado. Este escenario permite usar el servicio Azure Rights Management con servicios locales.
+- **Dispositivos móviles**: cuando los dispositivos móviles protegen o consumen archivos con el servicio Azure Rights Management, los flujos del proceso son mucho más sencillos. Los dispositivos móviles no recorren primero el proceso de inicialización de usuario porque en su lugar, cada transacción (para proteger o consumir contenido) es independiente. Como con equipos de Windows, los dispositivos móviles se conectan al servicio Azure Rights Management y autentican. Para proteger contenido, los dispositivos móviles envían una directiva y el servicio Azure Rights Management les envía una licencia de publicación y una clave simétrica para proteger el documento. Para consumir contenido, cuando los dispositivos móviles se conectan al servicio Azure Rights Management y autentican, envían la directiva del documento al servicio Azure Rights Management y solicitan una licencia de usuario para consumir el documento. En respuesta, el servicio Azure Rights Management envía las restricciones y las claves necesarias a los dispositivos móviles. Ambos procesos usan TLS para proteger el intercambio de claves y otras comunicaciones.
 
--   **Protección genérica (.pfile)**: cuando el servicio Azure Rights Management protege un archivo genéricamente, el flujo es básicamente el mismo para la protección de contenido, con la excepción de que el cliente de RMS crea una directiva que concede todos los derechos. Cuando se consume el archivo, se descifra antes de pasarse a la aplicación de destino. Este escenario le permite proteger todos los archivos, aunque no admitan RMS de manera nativa.
+- **Conector RMS**: cuando se usa el servicio Azure Rights Management con el conector RMS, los flujos del proceso no cambian. La única diferencia es que el conector actúa como una retransmisión entre los servicios locales (como Exchange Server y SharePoint Server) y el servicio Azure Rights Management. El propio conector no lleva a cabo ninguna operación, como la inicialización del entorno del usuario, o cifrado o descifrado. Retransmite simplemente la comunicación que iría normalmente a un servidor AD RMS, controlando la traducción entre los protocolos que se usan en cada lado. Este escenario permite usar el servicio Azure Rights Management con servicios locales.
 
--   **PDF protegido (.ppdf)**: cuando el servicio Azure Rights Management protege de manera nativa un archivo de Office, también crea una copia de dicho archivo y lo protege de la misma manera. La única diferencia es que la copia del archivo se encuentra en formato PPDF, que el visor del cliente de Azure Information Protection y la aplicación RMS sharing saben cómo abrir solo para visualización. Este escenario le permite enviar datos adjuntos protegidos mediante correo electrónico, sabiendo que el destinatario de un dispositivo móvil siempre podrá leerlos aunque el dispositivo móvil no tenga una aplicación que admita de manera nativa archivos de Office protegidos.
+- **Protección genérica (.pfile)**: cuando el servicio Azure Rights Management protege un archivo genéricamente, el flujo es básicamente el mismo para la protección de contenido, con la excepción de que el cliente de RMS crea una directiva que concede todos los derechos. Cuando se consume el archivo, se descifra antes de pasarse a la aplicación de destino. Este escenario le permite proteger todos los archivos, aunque no admitan RMS de manera nativa.
+
+- **PDF protegido (.ppdf)**: cuando el servicio Azure Rights Management protege de manera nativa un archivo de Office, también crea una copia de dicho archivo y lo protege de la misma manera. La única diferencia es que la copia del archivo se encuentra en formato PPDF, que el visor del cliente de Azure Information Protection y la aplicación RMS sharing saben cómo abrir solo para visualización. Este escenario le permite enviar datos adjuntos protegidos mediante correo electrónico, sabiendo que el destinatario de un dispositivo móvil siempre podrá leerlos aunque el dispositivo móvil no tenga una aplicación que admita de manera nativa archivos de Office protegidos.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

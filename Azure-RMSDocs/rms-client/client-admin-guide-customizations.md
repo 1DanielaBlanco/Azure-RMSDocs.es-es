@@ -4,7 +4,7 @@ description: Información sobre cómo personalizar el cliente de Azure Informati
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/03/2018
+ms.date: 05/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 0b71519002816f5bae272f002bfec123186a65a1
-ms.sourcegitcommit: 22072325721cfd26b6546ef625e8b38f5551d30b
+ms.openlocfilehash: de7829532139556b6407506d61bc89de936b3739
+ms.sourcegitcommit: 9e2719ab070fa2d1e3ac8f6f11e57640939a1dff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/12/2018
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Guía del administrador: Configuraciones personalizadas del cliente de Azure Information Protection
 
@@ -367,13 +367,15 @@ Para lograr esta solución:
 
 2. Cree una regla de flujo de correo de Exchange para cada etiqueta. Aplique la regla cuando las propiedades del mensaje incluyan la clasificación que ha configurado, y modifique las propiedades del mensaje para establecer un encabezado de mensaje. 
 
-    En el caso del encabezado del mensaje, encontrará la información que es necesario especificar al inspeccionar los encabezados de Internet de un correo electrónico que haya enviado y clasificado con una etiqueta de Azure Information Protection. Busque el encabezado **msip_labels** y la cadena inmediatamente posterior, hasta e incluido el punto y coma. En el ejemplo anterior:
+     En el caso del encabezado del mensaje, encontrará la información que es necesario especificar al inspeccionar los encabezados de Internet de un correo electrónico que haya enviado y clasificado con una etiqueta de Azure Information Protection. Busque el encabezado **msip_labels** y la cadena inmediatamente posterior, hasta e incluido el punto y coma. Por ejemplo:
     
     **msip_labels: MSIP_Label_0e421e6d-ea17-4fdb-8f01-93a3e71333b8_Enabled=True;**
     
     Luego, para el encabezado del mensaje en la regla, especifique **msip_labels** para el encabezado y el resto de la cadena para el valor del encabezado. Por ejemplo:
     
     ![Ejemplo de regla de flujo de correo de Exchange Online que establece el encabezado del mensaje para una etiqueta de Azure Information Protection](../media/exchange-rule-for-message-header.png)
+    
+    Nota: Cuando la etiqueta es una subetiqueta, también debe especificar la etiqueta principal antes de la subetiqueta en el valor de encabezado, con el mismo formato. Por ejemplo, si su subetiqueta tiene un GUID de 27efdf94-80a0-4d02-b88c-b615c12d69a9, su valor podría tener un aspecto similar al siguiente: `MSIP_Label_ab70158b-bdcc-42a3-8493-2a80736e9cbd_Enabled=True;MSIP_Label_27efdf94-80a0-4d02-b88c-b615c12d69a9_Enabled=True;`
 
 Antes de probar esta configuración, recuerde que, al crear o editar reglas de flujo de correo, normalmente se produce un retraso (espere una hora, por ejemplo). Cuando se aplica la regla y los usuarios usan Outlook en la Web o un cliente de dispositivo móvil que admite IRM de Exchange ActiveSync: 
 
