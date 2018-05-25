@@ -41,6 +41,7 @@
 ## [Operaciones para la clave de inquilino](operations-tenant-key.md)
 ### [Administrada por Microsoft](operations-microsoft-managed-tenant-key.md)
 ### [Administrada por el cliente](operations-customer-managed-tenant-key.md)
+## [Administración de datos personales de Azure Information Protection](manage-personal-data.md)
 ## [Retirada y desactivación de Rights Management](decommission-deactivate.md)
 ## [Administración con PowerShell](administer-powershell.md)
 ### [Instalación del módulo de PowerShell para AADRM](install-powershell.md)
