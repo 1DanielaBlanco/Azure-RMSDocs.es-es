@@ -4,17 +4,18 @@ description: Puede proteger sus documentos y mensajes de correo electrónico má
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/10/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: 8b1024a26e086cb8cbd4696dc37d66350968a0b4
-ms.sourcegitcommit: fbc83d699b9e4e9c8e0e7d36f574630af6a4e3d9
+ms.openlocfilehash: 00305b1ba4f9ff750dd0fde9eb6a524cead39094
+ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34444221"
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Configuración de una etiqueta para la protección de Rights Management
 
@@ -231,9 +232,14 @@ Los nuevos usuarios que agregue podrán abrir documentos y mensajes de correo el
 
 ### <a name="example-4-label-for-protected-email-that-supports-less-restrictive-permissions-than-do-not-forward"></a>Ejemplo 4: Etiqueta para correo electrónico protegido que admite permisos menos restrictivos que No reenviar
 
-Esta etiqueta no se puede restringir a Outlook, pero proporciona controles menos restrictivos que utilizar No reenviar. Por ejemplo, en el caso de que los destinatarios puedan copiar desde el correo electrónico o un archivo adjunto, o imprimir y guardar un archivo adjunto.
+Esta etiqueta no se puede restringir a Outlook, pero proporciona controles menos restrictivos que utilizar No reenviar. Por ejemplo, en el caso de que los destinatarios puedan copiar desde el correo electrónico o un archivo adjunto, o guardar y editar un archivo adjunto.
 
-Si especifica usuarios externos que no tengan ninguna cuenta de Azure AD, asegúrese de indicarles que esta etiqueta no debe usarse para documentos, solo para el correo electrónico. Además, para admitir estos usuarios externos, Exchange Online deben configurarse para las [nuevas capacidades de cifrado de mensajes de Office 365](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e).  
+Si especifica usuarios externos que no tienen una cuenta de Azure AD:
+
+- La etiqueta es adecuada para el correo electrónico cuando Exchange Online usa las [nuevas capacidades del Cifrado de mensajes de Office 365](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e). 
+ 
+- En el caso de los datos adjuntos de Office que se protegen automáticamente, están disponibles para verlos en el explorador. Para editar estos documentos, descárguelos y modifíquelos con Hacer clic y ejecutar de Office 2016, y una cuenta Microsoft que utilice la misma dirección de correo electrónico. [Más información](../get-started/secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
+
 
 > [!NOTE]
 > Exchange Online está desplegando una nueva opción, [Solo cifrar](configure-usage-rights.md#encrypt-only-option-for-emails). Esta opción no está disponible para la configuración de etiquetas. Pero puede usar este ejemplo para configurar una etiqueta con el mismo conjunto de derechos de uso.

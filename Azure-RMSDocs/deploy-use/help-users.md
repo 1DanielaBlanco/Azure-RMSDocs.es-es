@@ -4,7 +4,7 @@ description: Información para ayudarle a ofrecer instrucciones a los usuarios, 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/20/2017
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 468550dd2389407b20d66adb814a7487988180bd
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 0243961b4dfdf3bb8c8b04059793098b26880615
+ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34444272"
 ---
 # <a name="helping-users-to-protect-files-by-using-the-azure-rights-management-service"></a>Ayuda a los usuarios para proteger archivos mediante el servicio Azure Rights Management
 
@@ -49,7 +50,7 @@ Después de implementar y configurar Azure Information Protection para su organi
     
     - **Ayuda de inicio de sesión**
         
-        A los usuarios se les pedirán las credenciales cuando el servicio Azure Rights Management necesite autenticar a un usuario y no pueda usar credenciales en caché. Las credenciales necesarias son para la cuenta profesional o educativa del usuario y la contraseña que está asociada a su inquilino de Office 365 o de Azure Active Directory. Las credenciales necesarias no serán para una cuenta Microsoft (anteriormente, Microsoft Live ID) o su cuenta de correo personal, ya que actualmente estas cuentas no son compatibles con el servicio Azure Rights Management. 
+        A los usuarios se les pedirán las credenciales cuando el servicio Azure Rights Management necesite autenticar a un usuario y no pueda usar credenciales en caché. Las credenciales necesarias son normalmente las de la cuenta profesional o educativa del usuario y la contraseña que está asociada a su inquilino de Office 365 o de Azure Active Directory. Aunque el servicio de Azure Rights Management puede autenticar cuentas de Azure AD, algunas aplicaciones también pueden abrir contenido protegido cuando se usa una cuenta Microsoft para la autenticación. [Más información](../get-started/secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents) 
         
         Proporcione a los usuarios y al departamento de soporte técnico instrucciones sobre la cuenta que se usará cuando a los usuarios se les pidan credenciales en caso de que tengan aplicaciones que usan el servicio Azure Rights Management.
         
@@ -57,7 +58,7 @@ Después de implementar y configurar Azure Information Protection para su organi
         
         Asegúrese de que los usuarios tengan las instrucciones apropiadas para las aplicaciones que usan y que usen aplicaciones y dispositivos compatibles con el servicio Azure Rights Management. Para más información sobre dispositivos y aplicaciones compatibles, consulte [Requirements for Azure Rights Management](../get-started/requirements-azure-rms.md) (Requisitos para Azure Rights Management).
         
-        La autenticación y autorización se basan en cuentas y grupos de Azure Active Directory. Para confirmar que un usuario o grupo específico está autorizado para consumir contenido protegido, utilice las comprobaciones indicadas en el artículo [Preparación de usuarios y grupos para Azure Information Protection](../plan-design/prepare.md).
+        Para confirmar que un usuario o grupo específico está autorizado por Azure Active Directory para proteger o consumir contenido protegido, utilice las comprobaciones indicadas en el artículo [Preparación de usuarios y grupos para Azure Information Protection](../plan-design/prepare.md).
         
         Si los usuarios informan de que pueden abrir contenido protegido, pero no tienen los derechos que necesitan, el problema podría ser que el usuario no está en el grupo correcto configurado para una plantilla de Rights Management. O bien, el problema podría ser que [la plantilla debe volver a configurarse ](configure-policy-templates.md) para el usuario o grupo. 
         

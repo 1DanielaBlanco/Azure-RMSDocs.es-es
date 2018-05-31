@@ -4,7 +4,7 @@ description: Consulte las novedades o los cambios en una versión del cliente de
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/17/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 02e54d3d1f324aa6d67e9fb81c3f5f83e785fe81
-ms.sourcegitcommit: c207a2f592d167a4a0b6c4427259683e2087f143
+ms.openlocfilehash: 4ff64b5bb4f73533352aa5497a98263c86842800
+ms.sourcegitcommit: c41490096af48e778947739e320e0dc8511f6c68
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/21/2018
+ms.locfileid: "34423262"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Cliente de Azure Information Protection: historial de publicación de versiones y directiva de soporte técnico
 
@@ -40,6 +41,40 @@ Use la información siguiente para consultar las novedades o los cambios en una 
 > Las revisiones secundarias no se enumeran. Por tanto, si tiene algún problema con el cliente de Azure Information Protection, se recomienda que compruebe si se ha corregido en la versión de GA más reciente. Si el problema continúa, compruebe la versión preliminar actual.
 >  
 > Para obtener soporte técnico, consulte la información sobre [Opciones de soporte y recursos de la comunidad](../get-started/information-support.md#support-options-and-community-resources). También lo invitamos a participar en el equipo de Azure Information Protection, en su [sitio de Yammer](https://www.yammer.com/askipteam/).
+
+## <a name="versions-later-than-12660"></a>Versiones posteriores a 1.26.6.0
+
+Si tiene una versión del cliente posterior a la 1.26.6.0, se trata de una compilación preliminar para fines de prueba y evaluación. 
+ 
+**Lanzamiento**: 21/05/2018 
+
+La versión preliminar actual es la **1.27.48.0** y tiene los siguientes cambios con respecto a la versión de disponibilidad general actual del cliente.  
+
+**Nuevas características**: 
+
+- Para el analizador de Azure Information Protection:
+    
+    - Puede especificar una lista de tipos de archivo para incluir en el examen o excluir de este. Para especificar esta lista, use [Set-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileTypes). Después de haber especificado la lista de tipos de archivo, puede agregar un nuevo tipo de archivo a la lista mediante [Add-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileType), y quitar un tipo de archivo de la lista mediante [Remove-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileType).
+    
+    - Puede etiquetar archivos sin inspeccionar el contenido mediante la aplicación de una etiqueta predeterminada. Utilice el cmdlet [Set-AIPScannerRepository](/powershell/module/azureinformationprotection/Set-AIPScannerRepository) y establezca el parámetro *MatchPolicy* en **Off**. 
+    
+    - Puede detectar archivos con tipos de información confidencial sin configurar etiquetas de clasificación automática. Utilice el cmdlet [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) y establezca el parámetro *DiscoverInformationTypes* en **All**.
+    
+    - De forma predeterminada, solo los tipos de documento de Office están protegidos. Otros tipos de archivo se pueden proteger al definirlos en el registro. Para obtener instrucciones, vea [Configuración de la API de archivo](../develop/file-api-configuration.md) en la guía del desarrollador.
+    
+    - De forma predeterminada, el analizador se ejecuta ahora con un nivel de integridad bajo para una mayor seguridad en caso de que ejecute el analizador con una cuenta que tenga derechos con privilegios. Cuando la cuenta de servicio que ejecuta el analizador tiene únicamente los derechos que se documentan en la sección de [requisitos previos del analizador](../deploy-use/deploy-aip-scanner.md#prerequisites-for-the-azure-information-protection-scanner), el nivel de integridad bajo no es necesario, y no se recomienda porque afecta negativamente al rendimiento. Puede utilizar una configuración de cliente avanzada para deshabilitar el nivel de integridad bajo. [Más información](../rms-client/client-admin-guide-customizations.md#disable-the-low-integrity-level-for-the-scanner) 
+    
+- Para [Get-AIPFileStatus](/powershell/module/azureinformationprotection/Get-AIPFileStatus), el resultado incluye ahora al propietario y al emisor de Rights Management, así como la fecha en que se protegió el contenido.
+ 
+**Cambios adicionales**:
+
+- Para el analizador de Azure Information Protection: 
+    
+    - Se ha cambiado el nombre del parámetro *ScanMode* de [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) a **Enforce**, con valores de Off y On.
+    
+    - Para usar una etiqueta predeterminada, ya no es necesario configurar una etiqueta predeterminada como una valor de directiva. Simplemente especifique esta etiqueta predeterminada con la configuración del repositorio. 
+
+- Se ha quitado la página principal "Enhorabuena" y "Novedades de Azure Information Protection", que se mostraba en el primer uso en las aplicaciones de Office.
 
 ## <a name="version-12660"></a>Versión 1.26.6.0
 

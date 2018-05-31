@@ -4,7 +4,7 @@ description: Conozca las restricciones de uso de claves administradas por el cli
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2017
+ms.date: 05/18/2017
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,18 +12,19 @@ ms.technology: techgroup-identity
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ccbca7f0309e03128ebbe0544e55b341ece47d0f
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: f5380dc364255fd085c82fd9c0a834afea368c97
+ms.sourcegitcommit: 10f530fa1a43928581da4830a32f020c96736bc8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/21/2018
+ms.locfileid: "34402156"
 ---
 # <a name="byok-pricing-and-restrictions"></a>Precio y restricciones de BYOK
 
 >*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 
-Las organizaciones que tienen una suscripción con Azure Information Protection pueden configurar su inquilino de Azure Information Protection para usar una clave administrada por el cliente (BYOK) y [registrar su uso](../deploy-use/log-analyze-usage.md) sin costo adicional. 
+Las organizaciones que tienen una suscripción con Azure Information Protection pueden configurar su inquilino de Azure Information Protection para usar una clave administrada por el cliente (BYOK) y [registrar su uso](../deploy-use/log-analyze-usage.md). 
 
 La clave debe almacenarse en Azure Key Vault, lo que requiere una suscripción de Azure. Para usar una clave protegida por HSM, debe tener el nivel de servicio Premium de Azure Key Vault. El uso de las claves en el Almacén de claves de Azure conlleva un cargo mensual. Para obtener más información, consulte la [página de precios del Almacén de claves de Azure](https://azure.microsoft.com/pricing/details/key-vault/).
 

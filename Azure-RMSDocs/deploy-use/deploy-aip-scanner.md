@@ -4,7 +4,7 @@ description: Instrucciones para instalar, configurar y ejecutar el analizador de
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/18/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: e13dc2a6307dfa11cd812586762ec4c496d33fcf
-ms.sourcegitcommit: 2eb5245b6afb291eae5ba87034e1698f096139dc
+ms.openlocfilehash: 207f3b91e656bb65820a42137ce3bd66109f36e1
+ms.sourcegitcommit: c41490096af48e778947739e320e0dc8511f6c68
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/21/2018
+ms.locfileid: "34423330"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Implementación del analizador de Azure Information Protection para clasificar y proteger automáticamente los archivos
 
@@ -40,21 +41,31 @@ Cuando haya configurado la [directiva de Azure Information Protection](configure
 
 El analizador puede inspeccionar cualquier archivo que Windows pueda indexar mediante los iFilters que están instalados en el equipo. Después, para determinar si los archivos necesitan etiquetas, el analizador usa los tipos de información confidencial de la prevención de pérdida de datos (DLP) y la detección de patrones integrados en Office 365, o bien los patrones de expresión regular de Office 365. Dado que el analizador utiliza el cliente de Azure Information Protection, puede clasificar y proteger los mismos [tipos de archivo](../rms-client/client-admin-guide-file-types.md).
 
-Puede ejecutar el analizador solo en modo de detección en los casos en los que los informes se usen para comprobar qué sucedería si los archivos se etiquetaran. También puede ejecutar el analizador para aplicar automáticamente las etiquetas.
+Puede ejecutar el analizador solo en modo de detección en los casos en los que los informes se usen para comprobar qué sucedería si los archivos se etiquetaran. También puede ejecutar el analizador para aplicar automáticamente las etiquetas. Únicamente en la versión preliminar, también puede ejecutar el analizador para detectar los archivos que contienen tipos de información confidencial, sin configurar las etiquetas para las condiciones que aplican la clasificación automática.
 
 Tenga en cuenta que el analizador no detecta ni etiqueta contenido en tiempo real. En su lugar, lo rastrea sistemáticamente en los archivos de los almacenes de datos que especifique, y se puede configurar este ciclo para que se ejecute una sola vez o de manera repetida.
+
+Específico de la versión preliminar del escáner:
+
+- De forma predeterminada, solo los documentos de Office están protegidos, y no todos los tipos de archivo. La lista completa de tipos de archivo de Office compatibles figura en la [guía del administrador](../rms-client/client-admin-guide-file-types.md#file-types-supported-for-protection), en la tabla **Tipos de archivo admitidos por Office**. 
+    
+    Para cambiar este comportamiento predeterminado para, por ejemplo, proteger otros tipos de archivo de forma genérica, debe editar el registro manualmente y especificar los tipos de archivo adicionales que desea que estén protegidos. Para obtener instrucciones, vea [Configuración de la API de archivo](../develop/file-api-configuration.md) en la guía del desarrollador. En esta documentación para desarrolladores, se hace referencia a la protección genérica como "PFile".
+
+- Puede especificar los tipos de archivo desea examinar, o incluso excluirlos del examen. Para restringir los archivos que inspecciona el analizador, defina una lista de tipos de archivo mediante el uso de [Set-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileType).
+
+- Puede configurar el escáner para inspeccionar todos los tipos de información confidencial en los archivos, o aplicar una etiqueta predeterminada sin ninguna inspección de archivo. [Más información](#using-the-scanner-with-alternative-configurations)
 
 ## <a name="prerequisites-for-the-azure-information-protection-scanner"></a>Requisitos previos del analizador de Azure Information Protection
 Antes de instalar el analizador de Azure Information Protection, asegúrese de que se cumplen los requisitos siguientes.
 
 |Requisito|Más información|
 |---------------|--------------------|
-|Equipo con Windows Server en el que se ejecutará el servicio del analizador:<br /><br />- 4 procesadores<br /><br />- 4 GB de RAM|Windows Server 2016 o Windows Server 2012 R2. <br /><br />Nota: Para llevar a cabo pruebas o evaluaciones en un entorno que no sea de producción, puede usar un sistema operativo cliente de Windows que sea [compatible con el cliente de Azure Information Protection](../get-started/requirements.md#client-devices).<br /><br />Este equipo puede ser un equipo físico o virtual que tenga una conexión de red rápida y confiable a los almacenes de datos que deban analizarse. <br /><br />Asegúrese de que este equipo tenga la [conectividad a Internet](../get-started/requirements.md#firewalls-and-network-infrastructure) necesaria para Azure Information Protection. De lo contrario, debe configurarlo como un [equipo desconectado](../rms-client/client-admin-guide-customizations.md#support-for-disconnected-computers). |
+|Equipo con Windows Server en el que se ejecutará el servicio del analizador:<br /><br />- 4 procesadores<br /><br />- 4 GB de RAM|Windows Server 2016 o Windows Server 2012 R2. <br /><br />Nota: Para llevar a cabo pruebas o evaluaciones en un entorno que no sea de producción, puede usar un sistema operativo cliente de Windows que sea [compatible con el cliente de Azure Information Protection](../get-started/requirements.md#client-devices).<br /><br />Este equipo puede ser un equipo físico o virtual que tenga una conexión de red rápida y confiable a los almacenes de datos que deban analizarse. <br /><br />Asegúrese de que este equipo tenga la [conectividad a Internet](../get-started/requirements.md#firewalls-and-network-infrastructure) necesaria para Azure Information Protection. De lo contrario, debe configurarlo como un [equipo desconectado](../rms-client/client-admin-guide-customizations.md#support-for-disconnected-computers).|
 |SQL Server para almacenar la configuración del analizador:<br /><br />- Instancia local o remota<br /><br />- Rol Sysadmin para instalar el escáner|SQL Server 2012 es la versión mínima para las siguientes ediciones:<br /><br />- SQL Server Enterprise<br /><br />- SQL Server Standard<br /><br />- SQL Server Express<br /><br />La cuenta que instala el escáner necesita permisos para escribir en la base de datos maestra (debe ser miembro del rol db_datawriter). El proceso de instalación concede el rol db-owner a la cuenta de servicio que ejecuta el escáner. Como alternativa, puede crear la base de datos AzInfoProtectionScanner manualmente antes de instalar el escáner y asignar el rol db-owner a la cuenta de servicio del escáner.|
 |Cuenta de servicio en la que se ejecutará el servicio del analizador|Además de ejecutar el servicio de examen, esta cuenta se autentica en Azure AD y descarga la directiva de Azure Information Protection. Esta cuenta debe ser por tanto una cuenta de Active Directory y estar sincronizada con Azure AD, con los siguientes requisitos adicionales:<br /><br />- **Derecho de iniciar sesión localmente**. Este derecho es necesario para la instalación y configuración del analizador, pero no para la operación. Debe conceder este derecho a la cuenta de servicio, pero puede quitarlo después de haber confirmado que el analizador puede detectar, clasificar y proteger los archivos. <br /><br />Nota: Si las directivas internas no permiten que las cuentas de servicio tengan este derecho, pero se les puede otorgar el derecho de **inicio de sesión como trabajo de Batch**, puede cumplir este requisito con una configuración adicional. Para obtener instrucciones, consulte [Especificación y uso del parámetro Token en Set-AIPAuthentication](../rms-client/client-admin-guide-powershell.md#specify-and-use-the-token-parameter-for-set-aipauthentication) en la guía de administración.<br /><br />- **Derecho de iniciar sesión como servicio**. Este derecho se concede automáticamente a la cuenta de servicio durante la instalación del analizador y es necesario para la instalación, la configuración y el funcionamiento del analizador. <br /><br />- Permisos a los repositorios de datos: debe conceder permisos de **lectura** y **escritura** para analizar los archivos y, a continuación, aplicar la clasificación y la protección a los archivos que cumplan las condiciones establecidas en la directiva de Azure Information Protection. Para ejecutar el analizador solo en modo de detección, el permiso de **lectura** es suficiente.<br /><br />- Para las etiquetas que ofrecen una segunda protección o quitan la protección: para asegurarse de que el analizador siempre tenga acceso a los archivos protegidos, convierta esta cuenta en un [superusuario](configure-super-users.md) para el servicio de Azure Rights Management y asegúrese de que la característica de superusuario esté habilitada. Para obtener más información sobre los requisitos de la cuenta para aplicar la protección, consulte [Preparación de usuarios y grupos para Azure Information Protection](../plan-design/prepare.md).|
-|Cliente de Azure Information Protection instalado en el equipo con Windows Server|Debe instalar el cliente completo para el analizador. No instale el cliente solo con el módulo de PowerShell.<br /><br />Para obtener instrucciones de instalación del cliente, consulte la [guía del administrador](../rms-client/client-admin-guide.md).|
-|Etiquetas configuradas que aplican la clasificación automática y, opcionalmente, la protección|Para obtener más información sobre cómo configurar las condiciones en la directiva de Azure Information Protection, consulte [Configuración de las condiciones para la clasificación automática y recomendada en Azure Information Protection](configure-policy-classification.md).<br /><br />Para obtener más información sobre cómo configurar las etiquetas para aplicar la protección a los archivos, consulte [Configuración de una etiqueta para la protección de Rights Management](configure-policy-protection.md).<br /><br />Estas etiquetas pueden estar en la directiva global, o en una o varias [directivas con ámbito](configure-policy-scope.md).|
-|Si todos los archivos de uno o varios repositorios de datos deben tener una etiqueta:<br /><br />- Una etiqueta predeterminada configurada como una configuración de directiva|Para más información sobre cómo establecer la configuración de etiqueta predeterminada, vea [Configuración directivas para Azure Information Protection](configure-policy-settings.md).<br /><br />Esta configuración de etiqueta predeterminada debe estar en la directiva global o en una directiva con ámbito del analizador. Con todo, esta configuración de etiqueta predeterminada se puede reemplazar por otra etiqueta predeterminada que se configure en el nivel de repositorio de datos.| 
+|Cliente de Azure Information Protection instalado en el equipo con Windows Server|Debe instalar el cliente completo para el analizador. No instale el cliente solo con el módulo de PowerShell.<br /><br />Para obtener instrucciones de instalación del cliente, consulte la [guía del administrador](../rms-client/client-admin-guide.md).<br /><br />Nota: Ahora hay una versión preliminar del analizador que puede instalar con fines de prueba. Para instalar esta versión preliminar, descargue e instale una versión preliminar del cliente desde el Centro de descarga de Microsoft.|
+|Etiquetas configuradas que aplican la clasificación automática y, opcionalmente, la protección|Para obtener más información sobre cómo configurar las condiciones en la directiva de Azure Information Protection, consulte [Configuración de las condiciones para la clasificación automática y recomendada en Azure Information Protection](configure-policy-classification.md).<br /><br />Para obtener más información sobre cómo configurar las etiquetas para aplicar la protección a los archivos, consulte [Configuración de una etiqueta para la protección de Rights Management](configure-policy-protection.md).<br /><br />Estas etiquetas pueden estar en la directiva global, o en una o varias [directivas con ámbito](configure-policy-scope.md).<br /><br />Nota: Para la versión preliminar, ahora puede ejecutar el analizador incluso si no ha configurado las etiquetas que aplican la clasificación automática, pero este escenario no se incluye en estas instrucciones. [Más información](#using-the-scanner-without-automatic-classification)|
+|Si todos los archivos de uno o varios repositorios de datos deben tener una etiqueta:<br /><br />- Una etiqueta predeterminada configurada como una configuración de directiva|Para más información sobre cómo establecer la configuración de etiqueta predeterminada, vea [Configuración directivas para Azure Information Protection](configure-policy-settings.md).<br /><br />Esta configuración de etiqueta predeterminada debe estar en la directiva global o en una directiva con ámbito del analizador. Con todo, esta configuración de etiqueta predeterminada se puede reemplazar por otra etiqueta predeterminada que se configure en el nivel de repositorio de datos.<br /><br />Nota: Para la versión preliminar, ya no necesitará configurar una etiqueta predeterminada en la directiva.| 
 
 
 ## <a name="install-the-azure-information-protection-scanner"></a>Instalación del analizador de Azure Information Protection
@@ -149,7 +160,13 @@ En su configuración predeterminada, el analizador se ejecuta una vez y en el mo
 
 1. En el equipo con Windows Server, en la sesión de PowerShell, ejecute el siguiente comando:
     
+    Para la versión de disponibilidad general:
+    
         Set-AIPScannerConfiguration -ScanMode Enforce -Schedule Continuous
+    
+    Para la versión preliminar:
+    
+        Set-AIPScannerConfiguration -Enforce On -Schedule Continuous
     
     Hay otras opciones de configuración que tal vez quiera cambiar. Por ejemplo, si se cambian los atributos de archivo y lo que se registra en los informes. Además, si la directiva de Azure Information Protection incluye la configuración que requiere un mensaje de justificación para bajar el nivel de clasificación o quitar la protección, especifique ese mensaje mediante el uso de este cmdlet. Use la [ayuda en línea](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration#parameters) para obtener más información sobre cada opción de configuración. 
 
@@ -164,6 +181,8 @@ Dado que hemos configurado la programación para que se ejecute continuamente, c
 
 El analizador omite automáticamente los archivos que se [excluyen de la clasificación y la protección](../rms-client/client-admin-guide-file-types.md#file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-client), como los archivos ejecutables y los archivos del sistema.
 
+Para la versión preliminar, puede cambiar este comportamiento mediante la definición de una lista de tipos de archivo para examinar o excluir del análisis. Al especificar esta lista y no especificar un repositorio de datos, la lista se aplica a todos los repositorios de datos que no tienen su propia lista especificada. Para especificar esta lista, use [Set-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileType). Después de haber especificado la lista de tipos de archivo, puede agregar un nuevo tipo de archivo a la lista mediante [Add-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileType), y quitar un tipo de archivo de la lista mediante [Remove-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileType).
+
 Luego, el analizador usa Windows iFilter para analizar los siguientes tipos de archivo. En esos tipos de archivo, el documento se etiquetará mediante las condiciones que ha especificado para las etiquetas.
 
 |Tipo de aplicación|Tipo de archivo|
@@ -176,7 +195,7 @@ Luego, el analizador usa Windows iFilter para analizar los siguientes tipos de a
 |Texto|.txt; .xml; .csv|
 
 
-Por último, para los tipos de archivo restantes, el analizador aplica la etiqueta predeterminada en la directiva de Azure Information Protection.
+Por último, para los tipos de archivo restantes, el analizador aplica la etiqueta predeterminada en la directiva de Azure Information Protection, o la etiqueta predeterminada que configure para el analizador.
 
 |Tipo de aplicación|Tipo de archivo|
 |--------------------------------|-------------------------------------|
@@ -196,7 +215,16 @@ Por último, para los tipos de archivo restantes, el analizador aplica la etique
 
 Tenga en cuenta que, cuando una etiqueta aplica protección genérica a documentos, la extensión de nombre de archivo cambia a .pfile. Además, el archivo pasa a ser de solo lectura hasta que lo abre un usuario autorizado y se guarda en su formato nativo. Los archivos de texto y de imágenes también pueden cambiar su extensión de nombre de archivo y pasar a ser de solo lectura. Si no desea que tengan este comportamiento, puede evitar que se protejan los archivos de un tipo concreto. Por ejemplo, puede evitar que un archivo PDF se convierta en un archivo PDF protegido (.ppdf) o que un archivo .txt se convierta en un archivo de texto protegido (.ptxt).
 
-Para más información acerca de los distintos niveles de protección que existen para los diferentes tipos de archivo y de cómo controlar el comportamiento de la protección, consulte la sección acerca de los [tipos de archivo compatibles con la protección](../rms-client/client-admin-guide-file-types.md#file-types-supported-for-protection) de la guía de administración.
+Para obtener más información acerca de los distintos niveles de protección que existen para los diferentes tipos de archivo y cómo controlar el comportamiento de la protección mediante la edición del registro, consulte la sección [Tipos de archivo compatibles para protección](../rms-client/client-admin-guide-file-types.md#file-types-supported-for-protection) de la guía de administración.
+
+Para la versión de disponibilidad general del analizador:
+
+- De forma predeterminada, todos los tipos de archivo están protegidos.
+
+
+Para la versión preliminar del analizador:
+
+- De forma predeterminada, solo los tipos de archivo de Office están protegidos.
 
 
 ## <a name="when-files-are-rescanned-by-the-azure-information-protection-scanner"></a>Cuando el analizador de Azure Information Protection vuelve a examinar los archivos
@@ -213,6 +241,23 @@ Además, se inspeccionan todos los archivos cuando el analizador descarga una di
 > Si ha cambiado la configuración de protección de la directiva, también deberá esperar 15 minutos desde el guardado de la configuración de protección para reiniciar el servicio.
 
 Si el analizador ha descargado una directiva sin ninguna condición automática configurada, la copia del archivo de la directiva que esté en la carpeta del analizador no se actualizará. En tal caso, deberá eliminar el archivo de directiva, **Policy.msip**, de **%LocalAppData%\Microsoft\MSIP\Policy.msip** y **%LocalAppData%\Microsoft\MSIP\Scanner** para que el analizador pueda usar un archivo de directiva recientemente descargado que contenga etiquetas configuradas correctamente para las condiciones automáticas.
+
+## <a name="using-the-scanner-with-alternative-configurations"></a>Uso del analizador con configuraciones alternativas
+
+Cuando se usa la versión preliminar del analizador, existen dos escenarios alternativos que el escáner admite donde no es necesario que las etiquetas se configuren para ninguna condición: 
+
+- Aplique una etiqueta predeterminada a todos los archivos en un repositorio de datos.
+    
+    Para esta configuración, utilice el cmdlet [Set-AIPScannerRepository](/powershell/module/azureinformationprotection/Set-AIPScannerRepository) y establezca el parámetro *MatchPolicy* en **Off**. 
+    
+    El contenido de los archivos no se inspecciona y todos los archivos del repositorio de datos se etiquetan con arreglo a la etiqueta predeterminada que especifique para el repositorio de datos (con el parámetro *SetDefaultLabel*) o, si esto no se especifica, la etiqueta predeterminada que se determine como valor de directiva para la cuenta del analizador.
+    
+
+- Identifique todas las condiciones personalizadas y los tipos conocidos de información confidencial.
+    
+    Para esta configuración, utilice el cmdlet [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) y establezca el parámetro *DiscoverInformationTypes* en **All**.
+    
+    El analizador utiliza cualquier condición personalizada que haya especificado para las etiquetas en la directiva de Azure Information Protection, y la lista de tipos de información que están disponibles para especificar para las etiquetas en la directiva de Azure Information Protection. 
 
 ## <a name="optimizing-the-performance-of-the-azure-information-protection-scanner"></a>Optimización del rendimiento del analizador de Azure Information Protection
 
@@ -256,6 +301,15 @@ Otros factores que influyen en el rendimiento del analizador:
     
     - Obviamente, los archivos de gran tamaño se examinan más lentamente que aquellos más pequeños.
 
+- Para la versión preliminar del analizador:
+    
+    - Confirme que la cuenta de servicio que ejecuta el analizador tiene únicamente los derechos que se documentan en la sección de [requisitos previos del analizador](#prerequisites-for-the-azure-information-protection-scanner) y, a continuación, configure la [propiedad de cliente avanzada](../rms-client/client-admin-guide-customizations.md#disable-the-low-integrity-level-for-the-scanner) para deshabilitar el nivel de integridad bajo para el analizador.
+    
+    - El analizador se ejecuta más rápidamente cuando se usa la [configuración alternativa](#using-the-scanner-with-alternative-configurations) para aplicar una etiqueta predeterminada a todos los archivos porque el analizador no inspecciona el contenido del archivo.
+    
+    - El analizador se ejecuta más lentamente cuando se usa la [configuración alternativa](#using-the-scanner-with-alternative-configurations) para identificar todas las condiciones personalizadas y los tipos conocidos de información confidencial.
+    
+
 ## <a name="list-of-cmdlets-for-the-azure-information-protection-scanner"></a>Lista de cmdlets del analizador de Azure Information Protection 
 
 Otros cmdlets del analizador le permiten cambiar la cuenta de servicio y la base de datos del analizador, obtener la configuración actual del analizador y desinstalar el servicio del analizador. El analizador utiliza los siguientes cmdlets:
@@ -277,6 +331,14 @@ Otros cmdlets del analizador le permiten cambiar la cuenta de servicio y la base
 - [Set-AIPScannerRepository](/powershell/module/azureinformationprotection/Set-AIPScannerRepository)
 
 - [Uninstall-AIPScanner](/powershell/module/azureinformationprotection/Uninstall-AIPScanner)
+
+Cmdlets adicionales en la versión preliminar del analizador:
+
+- [Add-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileType)
+
+- [Remove-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileType)
+
+- [Set-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileTypes)
 
 
 ## <a name="event-log-ids-and-descriptions"></a>Id. de registro de eventos y descripciones

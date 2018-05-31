@@ -4,7 +4,7 @@ description: Conozca e identifique los derechos específicos que se usan al prot
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/02/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f5006ef3d0401b6a7f018be1f65979c079cf04fc
-ms.sourcegitcommit: fdcfc006108f61fcd380ff6f3c3208c78ecf4056
+ms.openlocfilehash: 697fa4674699fd3b24f7f7353ff9f9d476040bd8
+ms.sourcegitcommit: c41490096af48e778947739e320e0dc8511f6c68
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/21/2018
+ms.locfileid: "34423364"
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>Configuración de los derechos de uso para Azure Rights Management
 
@@ -168,7 +169,7 @@ El valor predeterminado del período de validez de la licencia de uso de un inqu
 
 - Al configurar una etiqueta o una plantilla en Azure Portal, el período de validez de la licencia de uso toma su valor de la opción **Permitir el acceso sin conexión**. 
     
-    Para obtener más información e instrucciones para configurar este valor en Azure Portal, vea la tabla del paso 9 de [Configuración de una etiqueta para la protección de Rights Management](configure-policy-protection.md).
+    Para obtener más información y orientaciones para configurar este valor en Azure Portal, vea la tabla [Información sobre la configuración de protección](../deploy-use/configure-policy-protection.md#information-about-the-protection-settings) a fin de conocer cómo configurar una etiqueta para la protección de Rights Management.
 
 - Al configurar una plantilla mediante PowerShell, el período de validez de la licencia de uso toma su valor del parámetro *LicenseValidityDuration* de los cmdlets [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) y [Add-AadrmTemplate](/powershell/module/aadrm/add-aadrmtemplate).
     

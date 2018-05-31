@@ -4,7 +4,7 @@ description: Instrucciones de cómo clasificar y proteger sus documentos y corre
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/17/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 9462795fb46c6eef857d3fd42bfe873ac869e51c
-ms.sourcegitcommit: c207a2f592d167a4a0b6c4427259683e2087f143
+ms.openlocfilehash: 223dd5681b6b5c6911a90cf6540b2ab4c9d7f54e
+ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34444150"
 ---
 # <a name="user-guide-classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Guía del usuario: Clasificación y protección de archivos y correos electrónicos mediante Azure Information Protection
 
@@ -33,11 +34,14 @@ Si la etiqueta aplica protección a un documento, no es adecuado guardar el docu
 
 ### <a name="safely-share-a-file-with-people-outside-your-organization"></a>Uso compartido de un archivo de manera segura con personas ajenas a la organización
 
-Los archivos protegidos se pueden compartir con otros de forma segura. Por ejemplo, adjunta un archivo a un correo electrónico.
+Los archivos protegidos se pueden compartir con otros de forma segura. Por ejemplo, se adjunta un documento protegido a un correo electrónico.
 
-Si regularmente comparte archivos con personas ajenas a la organización, puede que el administrador haya configurado una etiqueta que establece la protección de tal forma que dichas personas puedan leerla. Como alternativa, puede usar la [aplicación de Office](#set-custom-permissions-for-a-document) o el [Explorador de archivos](#using-file-explorer-to-classify-and-protect-files) para establecer permisos personalizados para un archivo antes de compartirlo. Si establece sus propios permisos personalizados y el archivo ya está protegido para uso interno, primero haga una copia de dicho archivo para conservar los permisos originales. Después, utilice la copia para establecer los permisos personalizados.  
+Antes de compartir archivos con personas fuera de su organización, póngase en contacto con el departamento de soporte técnico o el administrador sobre cómo proteger los archivos para los usuarios externos.
 
-Si el archivo está protegido con los permisos personalizados, use el mecanismo de uso compartido estándar para compartir el archivo. Si es la primera vez que estas personas con las que comparte el archivo han recibido un archivo protegido, es posible que necesiten instrucciones para verlo. Para estas personas, puede copiar y pegar el siguiente mensaje: **Este archivo está protegido con Microsoft Azure Information Protection. Para el primer uso, vea estas [instrucciones](https://aka.ms/rms-signup).**
+Por ejemplo, si su organización se comunica regularmente con personas de otra organización, el administrador podría haber configurado las etiquetas que establecen la protección de modo que estas personas puedan leer y usar documentos protegidos. Luego, seleccione estas etiquetas para clasificar y proteger los documentos que se van a compartir.
+
+O bien, si los usuarios externos tienen [cuentas de negocio a negocio (B2B)](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) creadas para ellos, puede usar la [aplicación de Office para establecer permisos personalizados](#set-custom-permissions-for-a-document) o el [Explorador de archivos para establecer permisos personalizados](#using-file-explorer-to-classify-and-protect-files) para un documento antes de compartirlo. Si establece sus propios permisos personalizados y el documento ya está protegido para uso interno, primero haga una copia de dicho archivo para conservar los permisos originales. Después, utilice la copia para establecer los permisos personalizados.
+
 
 ## <a name="using-office-apps-to-classify-and-protect-your-documents-and-emails"></a>Uso de aplicaciones de Office para clasificar y proteger los documentos y correos electrónicos
 
@@ -95,7 +99,7 @@ Si el administrador lo permite, puede especificar su propia configuración de pr
     
     - **Seleccionar permisos**: Si desea proteger el archivo para que solo usted pueda acceder a él, seleccione **Solo para mí**. De lo contrario, seleccione el nivel de acceso que desea que tengan las personas.
     
-    - **Seleccionar usuarios, grupos u organizaciones**: Especifique las personas que deben tener los permisos seleccionados para los archivos. Escriba sus direcciones de correo electrónico completas, una dirección de correo electrónico de grupo o un nombre de dominio de la organización para todos los usuarios de esa organización. Tenga en cuenta que actualmente no se admiten direcciones de correo electrónico personales.
+    - **Seleccionar usuarios, grupos u organizaciones**: Especifique las personas que deben tener los permisos seleccionados para los archivos. Escriba sus direcciones de correo electrónico completas, una dirección de correo electrónico de grupo o un nombre de dominio de la organización para todos los usuarios de esa organización. 
         
         También puede usar el icono de la libreta de direcciones para seleccionar usuarios o grupos de la libreta de direcciones de Outlook.
     
@@ -152,7 +156,7 @@ La guía para administradores contiene una lista completa de los tipos de archiv
 
     - **Seleccionar permisos**: seleccione el nivel de acceso que quiere que tengan las personas al proteger los archivos seleccionados.
     
-    - **Seleccionar usuarios, grupos u organizaciones**: Especifique las personas que deben tener los permisos seleccionados para los archivos. Escriba sus direcciones de correo electrónico completas, una dirección de correo electrónico de grupo o un nombre de dominio de la organización para todos los usuarios de esa organización. Tenga en cuenta que actualmente no se admiten direcciones de correo electrónico personales.
+    - **Seleccionar usuarios, grupos u organizaciones**: Especifique las personas que deben tener los permisos seleccionados para los archivos. Escriba sus direcciones de correo electrónico completas, una dirección de correo electrónico de grupo o un nombre de dominio de la organización para todos los usuarios de esa organización. 
     
     Como alternativa, puede usar el icono de la libreta de direcciones para seleccionar usuarios o grupos de la libreta de direcciones de Outlook.
         

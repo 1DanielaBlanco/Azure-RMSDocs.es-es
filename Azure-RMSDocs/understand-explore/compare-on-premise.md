@@ -4,7 +4,7 @@ description: Si conoce o ha implementado con anterioridad Active Directory Right
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/01/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 8123bd62-1814-4d79-b306-e20c1a00e264
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 8fe6c95c9e141e63aa70d60920fbc127f49996f5
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: 8c53a88b75c145a743f878c4d4138f179c9dae8c
+ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34444153"
 ---
 # <a name="comparing-azure-information-protection-and-ad-rms"></a>Comparación de Azure Information Protection y AD RMS
 
@@ -28,7 +29,7 @@ Estas son algunas de las principales diferencias de Azure Information Protection
 
 - **No es necesaria una infraestructura de servidor**: Azure Information Protection no necesita los servidores y certificados PKI adicionales que necesita AD RMS, ya que Microsoft Azure se encarga de ellos. En consecuencia, esta solución en la nube es más rápida de implementar y fácil de mantener.
 
-- **Autenticación basada en la nube**: Azure Information Protection usa Azure AD para la autenticación, tanto para los usuarios internos como para los usuarios de otras organizaciones. Esto significa que los usuarios móviles se pueden autenticar incluso cuando no están conectados a la red interna y es más fácil compartir contenido protegido con usuarios de otras organizaciones. Muchas organizaciones ya tienen cuentas de usuario en Azure AD porque ejecutan servicios de Azure o disponen de Office 365. Pero, de no ser así, RMS para usuarios permite a los usuarios crear una cuenta gratuita. Para compartir contenido protegido por AD RMS con otra organización debe configurar relaciones de confianza explícitas con cada organización.
+- **Autenticación basada en la nube**: Azure Information Protection usa Azure AD para la autenticación, tanto para los usuarios internos como para los usuarios de otras organizaciones. Esto significa que los usuarios móviles se pueden autenticar incluso cuando no están conectados a la red interna y es más fácil compartir contenido protegido con usuarios de otras organizaciones. Muchas organizaciones ya tienen cuentas de usuario en Azure AD porque ejecutan servicios de Azure o disponen de Office 365. Pero si no es así, RMS para usuarios permite a los usuarios crear una cuenta gratuita, o puede utilizarse una cuenta Microsoft para [las aplicaciones que admiten la autenticación de Azure Information Protection](../get-started/secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents). Para compartir contenido protegido por AD RMS con otra organización debe configurar relaciones de confianza explícitas con cada organización.
 
 - **Compatibilidad integrada con dispositivos móviles**: no se necesita ningún cambio de implementación para que Azure RMS admita dispositivos móviles y equipos Mac. Para admitir estos dispositivos con AD RMS, debe instalar la extensión para dispositivos móviles, configurar AD FS para la federación y crear registros adicionales para el servicio DNS público.
 
