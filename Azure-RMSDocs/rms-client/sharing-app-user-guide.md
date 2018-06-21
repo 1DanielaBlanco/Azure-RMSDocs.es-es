@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30207376"
 ---
 # <a name="rights-management-sharing-application-user-guide"></a>Manual de usuario de la aplicación de uso compartido de Rights Management
 

@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30208080"
 ---
 # <a name="step-2-software-protected-key-to-hsm-protected-key-migration"></a>Paso 2: Migración de clave protegida por software a clave protegida por HSM
 

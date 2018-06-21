@@ -1,13 +1,13 @@
 ---
-title: "Registro de la aplicación con Azure AD - AIP"
-description: "Se describen los conceptos básicos de la autenticación de usuario de la aplicación habilitada para RMS."
-keywords: 
+title: Registro de la aplicación con Azure AD - AIP
+description: Se describen los conceptos básicos de la autenticación de usuario de la aplicación habilitada para RMS.
+keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 03/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 200D9B23-F35D-4165-9AC4-C482A5CE1D28
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/11/2018
+ms.locfileid: "27765405"
 ---
 # <a name="how-to-register-and-rms-enable-your-app-with-azure-ad"></a>Cómo registrar y habilitar para RMS la aplicación con Azure AD
 
@@ -59,7 +60,7 @@ Los siguientes recursos contienen instrucciones para configurar el entorno y usa
 
 ADAL necesita varias informaciones para autenticar correctamente un usuario en Azure RMS (o AD RMS). Estos son parámetros de OAuth 2.0 estándar que se suelen necesitar de cualquier aplicación de Azure AD. Encontrará las instrucciones actuales de uso de ADAL en el archivo Léame de los repositorios de Github correspondientes mencionados anteriormente.
 
-- **Autoridad:**dirección URL del punto de conexión de autenticación, normalmente AAD o ADFS.
+- **Autoridad:** dirección URL del punto de conexión de autenticación, normalmente AAD o ADFS.
 - **Recurso:** dirección URL o URI de la aplicación de servicio a la que se intenta tener acceso, normalmente Azure RMS o AD RMS.
 - **Identificador de usuario:** UPN (normalmente, la dirección de correo) del usuario que quiere tener acceso a la aplicación. Este parámetro puede estar vacío si aún no se conoce el usuario. También se usa para almacenar en caché el token de usuario o para pedir un token de la memoria caché. Se suele usar también como *pista* para preguntar al usuario.
 - **Identificador de cliente:** identificador de la aplicación cliente. Debe ser un identificador de aplicación de Azure AD válido.

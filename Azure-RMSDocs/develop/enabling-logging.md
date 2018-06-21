@@ -1,13 +1,13 @@
 ---
 title: Procedimiento para&#58; habilitar el registro de rendimiento y errores | Azure RMS
-description: "El SDK 4.2 de Microsoft Rights Management administra la carga de registro de rendimiento y diagnóstico mediante una única propiedad de dispositivo."
-keywords: 
+description: El SDK 4.2 de Microsoft Rights Management administra la carga de registro de rendimiento y diagnóstico mediante una única propiedad de dispositivo.
+keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: F5AD3826-2292-4A25-AF5C-D17D083F5742
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/11/2018
+ms.locfileid: "27764495"
 ---
 # <a name="how-to-enable-error-and-performance-logging"></a>Procedimiento para habilitar el registro de rendimiento y errores
 El SDK 4.2 de Microsoft Rights Management administra la carga de registro de rendimiento y diagnóstico mediante una única propiedad de dispositivo.

@@ -1,13 +1,13 @@
 ---
 title: Formatos de archivo compatibles | Azure RMS
-description: "La versión actual de la API de archivo admite protección nativa para archivos de MS Office, PDF y protección PFile para los demás formatos de archivo."
-keywords: 
+description: La versión actual de la API de archivo admite protección nativa para archivos de MS Office, PDF y protección PFile para los demás formatos de archivo.
+keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: EC831494-7F2C-4C70-9063-B02CDDEA14EE
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/11/2018
+ms.locfileid: "27765093"
 ---
 # <a name="supported-file-formats"></a>Formatos de archivo compatibles
 

@@ -1,13 +1,13 @@
 ---
-title: "Procedimiento para habilitar la revocación y el seguimiento de documentos | Azure RMS"
-description: "Guía básica para implementar el seguimiento de documentos, así como código de ejemplo para las actualizaciones de metadatos y un botón Hacer seguimiento de uso para la aplicación."
-keywords: 
+title: Procedimiento para habilitar la revocación y el seguimiento de documentos | Azure RMS
+description: Guía básica para implementar el seguimiento de documentos, así como código de ejemplo para las actualizaciones de metadatos y un botón Hacer seguimiento de uso para la aplicación.
+keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: F5089765-9D94-452B-85E0-00D22675D847
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/11/2018
+ms.locfileid: "27765432"
 ---
 # <a name="how-to-enable-document-tracking-and-revocation"></a>Habilitación de la revocación y el seguimiento de documentos
 

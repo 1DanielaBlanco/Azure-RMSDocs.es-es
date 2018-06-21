@@ -1,13 +1,13 @@
 ---
 title: Instrucciones para desarrolladores de Azure Information Protection SDK 2.1 | Microsoft Docs
-description: "Colección de temas de procedimientos para desarrollar con AIP SDK 2.1"
-keywords: 
+description: Colección de temas de procedimientos para desarrollar con AIP SDK 2.1
+keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 01/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 5A9F04FD-0FCD-482F-8671-36FE93B783B0
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/11/2018
+ms.locfileid: "27765650"
 ---
 # <a name="developer-guidance"></a>Instrucciones para desarrolladores
 

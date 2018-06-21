@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30208420"
 ---
 # <a name="decommissioning-and-deactivating-protection-for-azure-information-protection"></a>Retirada y desactivación de la protección de Azure Information Protection
 

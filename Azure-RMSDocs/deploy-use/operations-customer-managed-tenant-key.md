@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30208233"
 ---
 # <a name="customer-managed-tenant-key-life-cycle-operations"></a>Administración de cliente: operaciones de ciclo de vida de clave de inquilino
 

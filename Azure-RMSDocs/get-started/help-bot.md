@@ -1,12 +1,12 @@
 ---
 title: Bot de ayuda de Azure Information Protection
-description: "Bot de ayuda de Azure Information Protection para responder sus preguntas, buscar los documentos o abrir una incidencia de soporte técnico si necesita soporte técnico."
+description: Bot de ayuda de Azure Information Protection para responder sus preguntas, buscar los documentos o abrir una incidencia de soporte técnico si necesita soporte técnico.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/21/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 98105d30-ff81-4b9c-9f41-9e9ffd6e7aa6
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/23/2018
+ms.locfileid: "29476259"
 ---
 # <a name="help-bot-for-azure-information-protection"></a>Bot de ayuda de Azure Information Protection
 

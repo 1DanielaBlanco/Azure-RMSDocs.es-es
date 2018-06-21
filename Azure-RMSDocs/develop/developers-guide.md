@@ -1,5 +1,5 @@
 ---
-title: "Guía del desarrollador de Azure Information Protection"
+title: Guía del desarrollador de Azure Information Protection
 description: Los desarrolladores pueden usar Azure Information Protection para proteger y administrar todo tipo de archivos
 author: lleonard-msft
 ms.author: alleonar
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/11/2018
+ms.locfileid: "27765534"
 ---
 # <a name="azure-information-protection-developers-guide"></a>Guía del desarrollador de Azure Information Protection
 

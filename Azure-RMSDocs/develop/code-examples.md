@@ -1,13 +1,13 @@
 ---
-title: "Código de ejemplo | Azure RMS"
-description: "RMS SDK 4.2 incluye código de ejemplo y proyectos de trabajo para algunos sistemas operativos compatibles."
-keywords: 
+title: Código de ejemplo | Azure RMS
+description: RMS SDK 4.2 incluye código de ejemplo y proyectos de trabajo para algunos sistemas operativos compatibles.
+keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 634df601-79d2-4bc2-b845-4df886d7c589
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/11/2018
+ms.locfileid: "27764481"
 ---
 # <a name="code-examples"></a>Código de ejemplo
 

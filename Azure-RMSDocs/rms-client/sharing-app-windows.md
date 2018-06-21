@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30206995"
 ---
 # <a name="rights-management-sharing-application-for-windows"></a>Aplicación de uso compartido de Rights Management para Windows
 

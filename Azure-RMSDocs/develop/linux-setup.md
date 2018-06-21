@@ -19,6 +19,7 @@ ms.sourcegitcommit: 2733b1df2ebdda02b60d9471db29e545552f99ff
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/15/2018
+ms.locfileid: "29349787"
 ---
 # <a name="linux-setup"></a>Instalación de Linux
 
