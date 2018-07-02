@@ -4,7 +4,7 @@ description: Instrucciones e información para administradores para implementar 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/21/2018
+ms.date: 06/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: b8cd6aeb13398bdfd65ba3e743e3e12bf3cc5f53
-ms.sourcegitcommit: c41490096af48e778947739e320e0dc8511f6c68
+ms.openlocfilehash: 511fea3a6176cf047eb4c1568d2efa755c46f39c
+ms.sourcegitcommit: e0a47ccee898b50907374cc74fcfd9abf59cd98d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/21/2018
-ms.locfileid: "34423296"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36949834"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>Guía del administrador: Instalación del cliente de Azure Information Protection para los usuarios
 
@@ -74,14 +74,6 @@ Luego, compruebe los requisitos previos adicionales que puede necesitar el clien
     Incluso si no ha configurado esta opción de directiva de grupo **Lista de complementos administrados**, puede que necesite configurarla si recibe algún informe en el que se indique que el complemento de Microsoft Azure Information Protection se va a deshabilitar. Al deshabilitar este complemento, los usuarios no verán la barra de Azure Information Protection en la aplicación de Office.
     
     Para obtener más información sobre esta configuración de directiva de grupo, consulte [No Add-ins loaded due to group policy settings for Office 2013 and Office 2016 programs](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off) (No se ha cargado ningún complemento debido a la configuración de directivas de grupo para Office 2013 y Office 2016).
-
-- Para las versiones Hacer clic y ejecutar de Outlook 16.0.9324.1000 y posteriores: habilitar la compatibilidad con monitores heredada
-    
-    Para evitar que la barra de Azure Information Protection se muestre fuera de Outlook para las versiones identificadas de Hacer clic y ejecutar, es posible que tenga que habilitar la compatibilidad con monitores heredada. Si en este caso la barra no se muestra correctamente, es posible que la vea como **AdxTaskPane**. 
-    
-    Para configurar Outlook para este requisito: **Archivo** > **Opciones** > **General**:
-    
-    - En la sección **Opciones de la interfaz de usuario**, si ve que está seleccionada la opción **Use best settings for my display** (Usar la configuración recomendada para la pantalla), anule esta selección.
 
 > [!IMPORTANT]
 > La instalación del cliente de Azure Information Protection requiere permisos administrativos locales.
@@ -192,7 +184,7 @@ Si usa Intune como el método de implementación de software, use estas instrucc
 
 2. Para cada equipo que ejecute el archivo .msi, debe asegurarse de que estén implementadas las siguientes dependencias de software. Por ejemplo, empaquételas con la versión .msi del cliente o solo impleméntelas en equipos que cumplan con estas dependencias:
     
-    |Versión de Office|Sistema operativo|Software|Acción|
+    |Versión de Office|Sistema operativo|Software|Action|
     |--------------------|--------------|----------------|---------------------|
     |Office 2016|Todas las versiones compatibles|64 bits: [KB3178666](https://www.microsoft.com/en-us/download/details.aspx?id=55007)<br /><br />32 bits: [KB3178666](https://www.microsoft.com/en-us/download/details.aspx?id=54999)<br /><br /> Versión: 1.0|Instalar|
     |Office 2013|Todas las versiones compatibles|64 bits: [KB3172523](https://www.microsoft.com/en-us/download/details.aspx?id=54992)<br /><br /> 32 bits: [KB3172523](https://www.microsoft.com/en-us/download/details.aspx?id=54979) <br /><br />Versión: 1.0|Instalar|
@@ -200,8 +192,8 @@ Si usa Intune como el método de implementación de software, use estas instrucc
     |Office 2010|Windows 8.1 y Windows Server 2012 R2|[KB2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41708)<br /><br /> Número de versión incluido en el nombre de archivo: v3|Instalar si KB2843630 o KB2919355 no está instalado|
     |Office 2010|Windows 8 y Windows Server 2012|[KB2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41708)<br /><br /> Número de versión incluido en el nombre de archivo: v3|Instalar|
     |Office 2010|Windows 7 y Windows Server 2008 R2|[KB2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41709)<br /><br /> Número de versión incluido en el nombre de archivo: v3|Se debe instalar si no está instalado KB3125574|
-    |No disponible|Windows 7|[vc_redist.x86.exe](https://www.microsoft.com/en-us/download/details.aspx?id=48145)|Instalar|
-    |No disponible|Windows 7|KB2627273 <br /><br /> Número de versión incluido en el nombre de archivo: v4|Desinstalar|
+    |No aplicable|Windows 7|[vc_redist.x86.exe](https://www.microsoft.com/en-us/download/details.aspx?id=48145)|Instalar|
+    |No aplicable|Windows 7|KB2627273 <br /><br /> Número de versión incluido en el nombre de archivo: v4|Desinstalar|
 
 3. Para una instalación predeterminada, ejecute .msi con **/quiet**, por ejemplo, `AzInfoProtection.msi /quiet`. Sin embargo, es posible que tenga que especificar parámetros de instalación adicionales que están documentados en las [instrucciones del instalador ejecutable](#to-install-the-azure-information-protection-client-by-using-the-executable-installer).  
 
