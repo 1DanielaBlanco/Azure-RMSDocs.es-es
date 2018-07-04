@@ -4,7 +4,7 @@ description: Instrucciones e información para que los administradores administr
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/16/2018
+ms.date: 06/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: b4376d9f2b0cde836b37553eb83efd8068e6c2f8
-ms.sourcegitcommit: 373e05ff0c411d29cc5b61c36edaf5a203becc14
+ms.openlocfilehash: a830fa6172df3dab2701109fd30484156c69fc29
+ms.sourcegitcommit: 1bc4c9d6e773809893d02a6abb09aeb4ae28cb03
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "35726924"
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>Guía del administrador: Uso de PowerShell con el cliente de Azure Information Protection
 
@@ -24,7 +25,7 @@ ms.lasthandoff: 05/17/2018
 
 Cuando se instala el cliente de Azure Information Protection, los comandos de PowerShell se instalan automáticamente. Esto le permite administrar el cliente mediante la ejecución de comandos que puede colocar en scripts para la automatización.
 
-Los cmdlets se instalan con el módulo de PowerShell **AzureInformationProtection**. Este módulo incluye todos los cmdlets de Rights Management de la herramienta de protección de RMS (que ha dejado de ser compatible). También hay nuevos cmdlets que usan el servicio Azure Information Protection (AIP) para etiquetar. Por ejemplo:
+Los cmdlets se instalan con el módulo de PowerShell **AzureInformationProtection**. Este módulo incluye todos los cmdlets de Rights Management de la herramienta de protección de RMS (que ha dejado de ser compatible). También hay cmdlets que usan Azure Information Protection para etiquetar. Por ejemplo:
 
 |Cmdlet de etiquetado|Ejemplo de uso|
 |----------------|---------------|
@@ -33,8 +34,12 @@ Los cmdlets se instalan con el módulo de PowerShell **AzureInformationProtectio
 |[Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel)|Para una carpeta compartida, aplique una etiqueta específica a todos los archivos que no tienen ninguna etiqueta.|
 |[Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication)|Etiqueta archivos de forma no interactiva, por ejemplo mediante un script que se ejecuta según una programación.|
 
+> [!TIP]
+> Para usar cmdlets con longitudes de ruta de acceso superiores a 260 caracteres, utilice la siguiente [configuración de directiva de grupo](https://blogs.msdn.microsoft.com/jeremykuhne/2016/07/30/net-4-6-2-and-long-paths-on-windows-10/) que está disponible con Actualización de aniversario de Windows 10:<br /> **Directiva de equipo local** > **Configuración del equipo** > **Plantillas administrativas** > **Todas las configuraciones** > **NTFS** > **Habilitar rutas de acceso Win32 largas** 
+> 
+> Para Windows Server 2016, puede usar la misma configuración de directiva de grupo cuando instale las plantillas administrativas más recientes (.admx) para Windows 10.
 
-Además, el [analizador de Azure Information Protection](../deploy-use/deploy-aip-scanner.md) usa cmdlets para instalar y configurar un servicio en Windows Server. A continuación, este analizador le permite detectar, clasificar y proteger archivos en almacenes de datos.
+El [analizador de Azure Information Protection](../deploy-use/deploy-aip-scanner.md) usa cmdlets para el módulo AzureInformationProtection para instalar y configurar un servicio en Windows Server. A continuación, este analizador le permite detectar, clasificar y proteger archivos en almacenes de datos.
 
 Para obtener una lista de todos los cmdlets y su ayuda correspondiente, consulte [Módulo AzureInformationProtection](/powershell/module/azureinformationprotection). En una sesión de PowerShell, escriba `Get-Help <cmdlet name> -online` para acceder a la ayuda más reciente.  
 
