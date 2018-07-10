@@ -4,18 +4,18 @@ description: Al configurar las condiciones de una etiqueta, puede asignar autom�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/30/2018
+ms.date: 06/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: 053d8dfd51d8c79cdc733f4395226c12ab6e2102
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: c7ef58cd42a793cacb3b64aec33d2cd0a0b105f4
+ms.sourcegitcommit: 3f524c5af39bee39169f86d9c4e72c661c960d83
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32326759"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37068888"
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Configuración de las condiciones para la clasificación automática y recomendada en Azure Information Protection
 
@@ -44,7 +44,7 @@ En este ejemplo, el usuario puede hacer clic en **Cambiar ahora** para aplicar l
     
     No se puede utilizar la clasificación automática para documentos y correos electrónicos etiquetados previamente de manera manual, o etiquetados previamente de manera automática, con una clasificación más alta. 
 
-- La clasificación recomendada se aplica a Word, Excel y PowerPoint cuando se guardan documentos. No se puede utilizar la clasificación recomendada para Outlook.
+- La clasificación recomendada se aplica a Word, Excel y PowerPoint cuando se guardan documentos. No se puede utilizar la clasificación recomendada para Outlook a menos que configure un [parámetro de cliente avanzado](../rms-client/client-admin-guide-customizations.md#enable-recommended-classification-in-outlook) que está actualmente en versión preliminar.
     
     No puede usar la clasificación recomendada para los documentos etiquetados previamente con una clasificación más alta. 
 

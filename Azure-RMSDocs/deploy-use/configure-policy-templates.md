@@ -4,7 +4,7 @@ description: Configure y administre plantillas de administración de derechos de
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/22/2018
+ms.date: 05/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: d26b69bc06a4c0d4f9c097e791b8b10bfc9feb1d
-ms.sourcegitcommit: 94d1c7c795e305444e9fde17ad73e46f242bcfa9
+ms.openlocfilehash: 44c1166ce4205d6e77b4877d6aca0eaf16911530
+ms.sourcegitcommit: 1bc4c9d6e773809893d02a6abb09aeb4ae28cb03
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "34562150"
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>Configuración y administración de plantillas para Azure Information Protection
 
@@ -96,9 +97,6 @@ Antes de editar estas plantillas o convertirlas en etiquetas, asegúrese de que 
 
 ## <a name="to-configure-the-templates-in-the-azure-information-protection-policy"></a>Para configurar las plantillas en la directiva de Azure Information Protection
 
->[!NOTE]
-> Estas instrucciones reflejan las actualizaciones más recientes en Azure Portal. Si no ve una opción de menú **CLASIFICACIONES** y sigue viendo una opción **Publicar**, las instrucciones de navegación no coincidirán exactamente con lo que ve. Si ese es el caso, considere volver a este procedimiento en un par de días cuando su inquilino esté al tanto de los últimos cambios.
-
 1. Si aún no lo ha hecho, abra una nueva ventana del explorador e [inicie sesión en Azure Portal](configure-policy.md#signing-in-to-the-azure-portal). Después, vaya a la hoja **Azure Information Protection: etiquetas**.
     
     Por ejemplo, en el menú del concentrador, haga clic en **Todos los servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
@@ -138,14 +136,11 @@ Cuando se convierte una plantilla en etiqueta:
 
 ## <a name="to-create-a-new-template"></a>Para crear una nueva plantilla
 
->[!NOTE]
-> Estas instrucciones reflejan las actualizaciones más recientes en Azure Portal. Si no ve una opción de menú **CLASIFICACIONES** y sigue viendo una opción **Publicar**, las instrucciones de navegación no coincidirán exactamente con lo que ve. Si ese es el caso, considere volver a este procedimiento en un par de días cuando su inquilino esté al tanto de los últimos cambios.
-
 Cuando crea una etiqueta nueva con la configuración de protección de **Azure (clave de nube)**, en segundo plano esta acción crea una plantilla personalizada nueva a la que pueden acceder los servicios y las aplicaciones que se integran con las plantillas de Rights Management.
 
 1. En la opción de menú **CLASIFICACIONES** > **Etiquetas**: en la hoja **Azure Information Protection: etiquetas**, seleccione **Agregar una nueva etiqueta**.
 
-2. En la hoja **Etiqueta**, mantenga el valor predeterminado de **Enabled**: **On** (Habilitada: Activada) para publicar esta plantilla nueva o cambie esta configuración a **Off** (Desactivada) para crear la plantilla como archivada. Luego, escriba un nombre de etiqueta y una descripción para el nombre de la plantilla y la descripción.
+2. En la hoja **Etiqueta**, mantenga el valor predeterminado de **Habilitado**: **Activado** y luego escriba un nombre de etiqueta y una descripción para el nombre de la plantilla y la descripción.
 
 3. En **Establecer permisos para documentos y correos electrónicos que contengan esta etiqueta**, seleccione **Proteger** y, luego, **Protección**:
     
@@ -156,19 +151,10 @@ Cuando crea una etiqueta nueva con la configuración de protección de **Azure (
     Haga clic en **Aceptar** para conservar los cambios y, en la hoja **Etiqueta**, haga clic en **Guardar**.
     
     En la hoja **Azure Information Protection: etiquetas**, ahora verá su nueva etiqueta mostrada con la columna **PROTECCIÓN** para indicar que contiene la configuración de protección. Esta configuración de protección se muestra como plantillas para aplicaciones y servicios que admiten el servicio Azure Rights Management.
+    
+    Aunque la etiqueta está habilitada de forma predeterminada, la plantilla se archiva. Para que las aplicaciones y los servicios puedan usar la plantilla para proteger documentos y correos electrónicos, complete el paso final para publicar la plantilla.
 
-5. Si la plantilla recién creada no debería estar disponible para todos los usuarios, debe agregar la etiqueta que se acaba de crear a una directiva distinta a la directiva global:
-    
-    a. Desde la opción de menú **CLASIFICACIONES** > **Directivas**: seleccione **Directivas**.
-    
-    b. Seleccione **Agregar una directiva** y, a continuación, en la hoja **Directiva**, especifique un nombre para el ámbito de usuarios y una descripción. A continuación, utilice la siguiente opción para seleccionar el subconjunto de usuarios: **seleccione qué usuarios o grupos obtienen esta directiva. Los grupos deben estar habilitados para correo electrónico.**
-    
-    Alternativamente, si ya existe una directiva para su subconjunto de usuarios, seleccione esa directiva en lugar de la hoja **Directiva**.
-    
-    c. En la hoja **Directiva**, seleccione **Agregar o quitar etiquetas**. A continuación, en la hoja **Directiva: agregar o quitar etiquetas**, seleccione la etiqueta que se acaba de crear que contiene la configuración de protección y haga clic en **Aceptar**.
-    
-    d. De vuelta en la hoja **Directiva**, haga clic en **Guardar**.  
-
+5. En la opción del menú **CLASIFICACIONES** > **Directivas**, seleccione la directiva que contiene la nueva configuración de protección. A continuación, seleccione **Agregar o quitar etiquetas**. En la hoja **Directiva: agregar o quitar etiquetas**, seleccione la etiqueta que se acaba de crear que contiene la configuración de protección, haga clic en **Aceptar** y, luego, en **Guardar**.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

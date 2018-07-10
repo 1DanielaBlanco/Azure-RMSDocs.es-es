@@ -4,7 +4,7 @@ description: Recursos para administradores con información sobre nuevas version
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/01/2018
+ms.date: 05/31/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 3ed8c53c235520d53c3d0a3666aa4aba45c174f5
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: f6b65ef43535152e03d456533b48e2c792cedd48
+ms.sourcegitcommit: 2e85f87f7276b284b4f17de1d4e752c790eff651
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34686683"
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Información y soporte técnico para Azure Information Protection
 
@@ -28,7 +29,7 @@ Use los siguientes recursos para ayudarle a obtener información sobre implement
 |----------------|---------------|
 |Ver la documentación usada con más frecuencia|Lea las cinco páginas más pertinentes:<br /><br /> - [¿Qué es Azure Information Protection?](../understand-explore/what-is-information-protection.md)<br /> - [Instalación del cliente de Azure Information Protection para los usuarios](../rms-client/client-admin-guide-install.md)<br />- [Requisitos de Azure Information Protection](requirements.md) <br />- [Implementación del analizador de Azure Information Protection](../deploy-use/deploy-aip-scanner.md)<br />- [Directiva predeterminada de Azure Information Protection](../deploy-use/configure-policy-default.md)|
 |Contacto con el equipo del producto y sus homólogos|Visite el [sitio de Yammer](https://www.yammer.com/AskIPTeam) sobre Azure Information Protection.|
-|Solicitud de una nueva característica o cambio de funcionalidad|Visite el sitio de [UserVoice](https://msip.uservoice.com) sobre Azure Information Protection.|
+|Solicitud de una nueva característica o cambio de funcionalidad|Visite el sitio [UserVoice](https://msip.uservoice.com) de Azure Information Protection y use su dirección de correo electrónico de empresa para iniciar sesión.|
 |Recepción de tweets del grupo de producto|Hágase seguidor de [MicrosoftMobility@MSFTMobility](https://twitter.com/MSFTMobility) en Twitter.|
 |Comprobar la información de suscripción y qué características se admiten|Use la información sobre la suscripción y la lista de características de la página [Precios de Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection).|
 
@@ -45,7 +46,7 @@ En las secciones siguientes se proporciona información sobre opciones de soport
 
 Si tiene soporte técnico Premier, visite el [Portal para clientes de soporte técnico Premier](https://premier.microsoft.com/) para presentar incidentes, buscar soluciones y obtener ayuda.
 
-Puede ser apto para **FastTrack**: puede usar el Beneficio del centro de FastTrack si adquiere un mínimo de 150 licencias de un plan válido para Azure Information Protection. El Beneficio del centro de FastTrack le permite trabajar con especialistas de Microsoft para evaluar, corregir y habilitar los servicios válidos. Para más información, consulte [Programa FastTrack para Enterprise Mobility Suite](/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-enterprise-mobility-suite-ems).
+Puede ser apto para **FastTrack**: puede usar el Beneficio del centro de FastTrack si adquiere un mínimo de 150 licencias de un plan válido para Azure Information Protection. El beneficio del Centro de FastTrack le permite trabajar con especialistas de Microsoft para evaluar, corregir y habilitar los servicios válidos. Para más información, consulte [Programa FastTrack para Enterprise Mobility Suite](/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-enterprise-mobility-suite-ems).
 
 Para otros clientes, use los canales de soporte técnico que figuran en la siguiente tabla según su suscripción a de Azure Information Protection.
 
@@ -81,7 +82,7 @@ Solución de problemas:
 
 - Para el cliente de Azure Information Protection para Windows, consulte la sección [Comprobaciones de instalación y solución de problemas](../rms-client/client-admin-guide.md#installation-checks-and-troubleshooting) de la guía del administrador y asegúrese de que esté usando una [versión compatible](../rms-client/client-version-release-history.md#servicing-information-and-timelines).
 
-### <a name="community-resources"></a>Recursos de la Comunidad
+### <a name="community-resources"></a>Recursos de la comunidad
 
 Se recomienda el [sitio de Yammer para Azure Information Protection](https://www.yammer.com/AskIPTeam). Este recurso proporciona respuestas directas por parte del equipo de Azure Information Protection y el beneficio de experiencias y conocimientos compartidos de otros administradores y consultores.
 

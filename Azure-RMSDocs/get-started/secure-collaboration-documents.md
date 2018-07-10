@@ -4,7 +4,7 @@ description: Flujo de trabajo integral para colaborar con documentos protegidos 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/21/2018
+ms.date: 06/21/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 4895c429-959f-47c7-9007-b8f032f6df6f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d5c24747bcb05f7004f7d42b0145ce6cc1bbade5
-ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
+ms.openlocfilehash: 4a642960e81a7d1a5cb6f8433e4098bed06a663d
+ms.sourcegitcommit: dc98226f339339c10fd01535a1adf7e30a817a41
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34444357"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36300030"
 ---
 # <a name="secure-document-collaboration-by-using-azure-information-protection"></a>Protección de la colaboración con documentos mediante Azure Information Protection
 
@@ -35,14 +35,18 @@ Al configurar estos permisos, también puede especificar a qué usuarios están 
     
     Para abrir documentos con una cuenta de Microsoft, los usuarios deben usar Hacer clic y ejecutar de Office 2016. Otras ediciones y versiones de Office todavía no admiten la apertura de documentos protegidos de Office con una cuenta Microsoft.
 
+- **Para cualquier usuario autenticado**: esta opción es adecuada para cuando no es necesario controlar quién tiene acceso al documento protegido, siempre que el usuario se pueda autenticar. La autenticación puede completarse mediante Azure AD, una cuenta Microsoft o un proveedor social federado o un código de acceso de un solo uso cuando el contenido está protegido por las nuevas funcionalidades de Office 365 Message Encryption. 
+
 Como administrador, puede configurar una etiqueta de Azure Information Protection para aplicar los permisos y los usuarios autorizados. Esta configuración facilita en gran medida a los usuarios y otros administradores la aplicación de la configuración de protección adecuada, ya que basta con aplicar la etiqueta sin tener que especificar los detalles. En las secciones siguientes se ofrece un tutorial de ejemplo para proteger un documento que admite la colaboración segura con usuarios internos y externos.
 
 
 ## <a name="example-configuration-for-a-label-to-apply-protection-to-support-internal-and-external-collaboration"></a>Ejemplo de configuración para una etiqueta a fin aplicar una protección que admite la colaboración interna y externa
 
-En este ejemplo se explica cómo configurar una etiqueta existente para aplicar la protección a fin de que los usuarios de su organización puedan colaborar en documentos con todos los usuarios de otra organización que tenga Office 365 o Azure AD, un grupo de otra organización que tenga Office 365 o Azure AD y un usuario que no tenga una cuenta de Azure AD y, en su lugar, utilice su dirección de correo electrónico de Gmail. 
+En este ejemplo se explica cómo configurar una etiqueta existente para aplicar la protección a fin de que los usuarios de su organización puedan colaborar en documentos con todos los usuarios de otra organización que tenga Office 365 o Azure AD, un grupo de otra organización que tenga Office 365 o Azure AD y un usuario que no tenga una cuenta de Azure AD y, en su lugar, utilice su dirección de correo electrónico de Gmail.
 
-1. Seleccione una etiqueta que ya esté en la directiva global o una directiva con ámbito. En la hoja **Protección**, asegúrese de que **Azure (clave en la nube)** esté seleccionado.
+Dado que el escenario restringe el acceso a usuarios específicos, no incluye la configuración para todos los usuarios autenticados. Para obtener un ejemplo de cómo configurar una etiqueta con esta configuración, consulte el [Ejemplo 5: Etiqueta que cifra el contenido pero no limita el acceso a este](../deploy-use/configure-policy-protection.md#example-5-label-that-encrypts-content-but-doesnt-restrict-who-can-access-it).  
+
+1. Seleccione una etiqueta que ya esté en la directiva global o una directiva con ámbito. En la hoja **Protección**, asegúrese de que **Azure (clave de nube)** esté seleccionado.
     
 2. Asegúrese de que **Establecer permisos** esté seleccionado y seleccione **Agregar permisos**.
 
@@ -62,11 +66,11 @@ En este ejemplo se explica cómo configurar una etiqueta existente para aplicar 
         
     ![Configuración de permisos para colaborar de forma segura](../media/collaboration-permissions.png)
 
-
-
 5. Haga clic en **Aceptar** en la hoja **Agregar permisos**.
 
-6. En la hoja **Protección**, haga clic en **Aceptar**. 
+6. En la hoja **Protección**, haga clic en **Aceptar**.
+
+7. En la hoja **Etiqueta**, seleccione **Guardar**. 
 
 ## <a name="applying-the-label-that-supports-secure-collaboration"></a>Aplicación de la etiqueta que admite la colaboración segura
 
@@ -98,8 +102,9 @@ Si seleccionan el botón **Ver permiso**, verán los permisos que tienen. En el 
 
 ![Cuadro de diálogo de ejemplo sobre permisos de Azure Information Protection](../media/example-permisisons-popup.png)
 
+Nota: Si el documento se abre por usuarios externos que también usan Azure Information Protection, la aplicación de Office no muestra la etiqueta de clasificación para el documento, aunque permanecen las marcas visuales de la etiqueta. En su lugar, los usuarios externos pueden aplicar su propia etiqueta en consonancia con la taxonomía de clasificación de su organización. Si estos usuarios externos le devuelven a continuación el documento editado, Office muestra la etiqueta de clasificación original cuando vuelva a abrir el documento.
 
-Antes de que el documento se abra, tiene lugar uno de los siguientes flujos de autenticación:
+Antes de que el documento protegido se abra, tiene lugar uno de los siguientes flujos de autenticación:
 
 - En el caso de los usuarios que tienen una cuenta de Azure AD, estos usan sus credenciales de Azure AD para autenticarse mediante Azure AD y el documento se abre. 
 
@@ -118,15 +123,19 @@ Antes de que el documento se abra, tiene lugar uno de los siguientes flujos de a
 
 ### <a name="supported-scenarios-for-opening-protected-documents"></a>Escenarios admitidos para abrir documentos protegidos
 
-En la siguiente tabla se resumen los distintos métodos de autenticación que se admiten para abrir y editar documentos protegidos.
+En la siguiente tabla se resumen los distintos métodos de autenticación que se admiten para ver y editar documentos protegidos.
 
-Además, el visor de Azure Information Protection para iOS y Android puede abrir archivos para su visualización mediante una cuenta Microsoft.
+Además, los siguientes escenarios admiten la visualización de documentos:
 
-|Plataformas para abrir y editar documentos: <br />Word, Excel, PowerPoint|Método de autenticación:<br />Azure AD|Método de autenticación:<br />Cuenta de Microsoft|
+- El visor de Azure Information Protection para Windows, y para iOS y Android, puede abrir archivos mediante una cuenta Microsoft. 
+
+- Un explorador puede abrir archivos adjuntos protegidos cuando se usan proveedores sociales y códigos de acceso de un solo uso para la autenticación con Exchange Online y las nuevas funcionalidades de Office 365 Message Encryption. 
+
+|Plataformas para ver y editar documentos: <br />Word, Excel, PowerPoint|Método de autenticación:<br />Azure AD|Método de autenticación:<br />Cuenta de Microsoft|
 |---------------|----------|-----------|-----------|
 |Windows|Sí [[1]](#footnote-1)|Sí [[2]](#footnote-2)|
 |iOS|Sí [[1]](#footnote-1)|No|
-|Android|Sí [[1]](#footnote-1)|No |
+|Android|Sí [[1]](#footnote-1)|No|
 |MacOS|Sí [[1]](#footnote-1)|No|
 
 ###### <a name="footnote-1"></a>Nota al pie 1
@@ -134,6 +143,8 @@ Admite cuentas de usuario, grupos habilitados para correo electrónico, todos lo
 
 ###### <a name="footnote-2"></a>Nota al pie 2
 Compatible actualmente solo con Hacer clic y ejecutar de Office 2016.
+
+
 
 
 ## <a name="next-steps"></a>Pasos siguientes

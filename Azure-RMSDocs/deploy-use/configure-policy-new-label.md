@@ -10,11 +10,12 @@ ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1b45faa5-0c9c-40d6-910a-f117e7b6e8a3
-ms.openlocfilehash: 221b4228bc06868fb491a1a591939afb5baba8b8
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: 5cfacba692cfd2c0e27981e8c41e45e4d9dcb3a3
+ms.sourcegitcommit: 1bc4c9d6e773809893d02a6abb09aeb4ae28cb03
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "34562592"
 ---
 # <a name="how-to-create-a-new-label-for-azure-information-protection"></a>Creación de una nueva etiqueta para Azure Information Protection
 
@@ -44,7 +45,7 @@ Utilice las instrucciones siguientes para agregar una nueva etiqueta que despué
     
     Tenga en cuenta que a las etiquetas nuevas se les asigna automáticamente el color negro. Elija un color distintivo de la lista de colores, o especifique un código hexadecimal triple para los componentes de rojo, verde y azul (RGB) del color. Por ejemplo, **#DAA520**. Si necesita una referencia de estos códigos, [Colors by Name](https://msdn.microsoft.com/library/aa358802\(v=vs.85).aspx (Colores por nombre), que encontrará en la documentación de MSDN, es un muy buen lugar para empezar. También podrá encontrar estos códigos en muchos programas de edición de imágenes, como Microsoft Paint, que le permite elegir un color personalizado a partir de una paleta y le muestra automáticamente sus valores RGB.
 
-5. Para que la nueva etiqueta esté disponible para los usuarios: desde la opción de menú **CLASIFICACIONES** > **Directivas**, seleccione la directiva que contiene la nueva etiqueta, seleccione sucesivamente **Agregar o quitar etiquetas**, la etiqueta desde la hoja **Directiva: Agregar o quitar etiquetas** , **Aceptar** y, finalmente, **Guardar**.
+5. Para que la etiqueta esté disponible para los usuarios: En la opción del menú **CLASIFICACIONES** > **Directivas**, seleccione la directiva que contiene la nueva etiqueta. Seleccione **Agregar o quitar etiquetas**. Seleccione la etiqueta en la hoja **Directiva: agregar o quitar etiquetas**, seleccione **Aceptar** y, a continuación, seleccione **Guardar**.
     
     >[!TIP]
     >En el caso de etiquetas nuevas, considere agregarlas primero a una directiva de ámbito que utilice para las pruebas. Cuando esté satisfecho con los resultados, quite la etiqueta de este ámbito de pruebas y, después, agregue la etiqueta a una directiva que se utilice en producción.     

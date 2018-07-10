@@ -4,18 +4,18 @@ description: Puede proteger sus documentos y mensajes de correo electrónico má
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/21/2018
+ms.date: 06/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: 00305b1ba4f9ff750dd0fde9eb6a524cead39094
-ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
+ms.openlocfilehash: 0cac50caf3a7ecf9189d7731f1248e543871be9a
+ms.sourcegitcommit: 3f524c5af39bee39169f86d9c4e72c661c960d83
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34444221"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37068950"
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Configuración de una etiqueta para la protección de Rights Management
 
@@ -100,13 +100,26 @@ No es necesario que Exchange esté configurado para Azure Information Protection
     
     Sugerencia: Si acostumbra a crear y modificar plantillas personalizadas, puede resultarle útil consultar [Tareas que solía realizar con el Portal de Azure clásico](migrate-portal.md).
 
+    - **Select a predefined template** (Seleccionar una plantilla predefinida): para usar una de las plantillas predeterminadas o una plantilla personalizada que configuró. Tenga en cuenta que esta opción no se muestra si está modificando una etiqueta en la que antes se usó la opción **Establecer permisos**.
+    
+    Para seleccionar una plantilla predefinida, la plantilla debe estar publicada (no archivada) y no debe estar vinculada a otra etiqueta. Cuando seleccione esta opción, puede usar el botón **Editar plantilla** para [convertir la plantilla en una etiqueta](configure-policy-templates.md#to-convert-templates-to-labels).
+    
+    Sugerencia: Si acostumbra a crear y modificar plantillas personalizadas, puede resultarle útil consultar [Tareas que solía realizar con el Portal de Azure clásico](migrate-portal.md).
+
 7. Si ha seleccionado **Establecer permisos** para **Azure (clave en la nube)**, esta opción le permite configurar los mismos valores que puede configurar en una plantilla. 
     
     Seleccione **Agregar permisos** y, en la hoja **Agregar permisos**, seleccione el primer conjunto de usuarios y grupos que tendrán permisos para usar el contenido que se protegerá mediante la etiqueta seleccionada:
     
-    - Elija **Seleccione de la lista** para agregar todos los usuarios de su organización mediante la selección de **Agregar \<NombreDeOrganización >-Todos los miembros**. Este parámetro excluye las cuentas de invitado. O bien, busque en el directorio.
+    - Elija **Seleccione de la lista**, donde puede agregar todos los usuarios de su organización mediante la selección de **Agregar \<NombreDeOrganización >-Todos los miembros**. Este parámetro excluye las cuentas de invitado. O bien, puede seleccionar **Agregar todos los usuarios autenticados (versión preliminar)** o buscar en el directorio.
         
-        Los usuarios o grupos deben disponer de una dirección de correo electrónico. En un entorno de producción, los usuarios y grupos casi siempre tendrán una dirección de correo electrónico, pero en uno simple de pruebas es posible que tenga que agregarlas a las cuentas de usuario o los grupos.
+        Al elegir a todos los miembros o examinar el directorio, los usuarios o grupos deben tener una dirección de correo electrónico. En un entorno de producción, los usuarios y grupos casi siempre tendrán una dirección de correo electrónico, pero en uno simple de pruebas es posible que tenga que agregarlas a las cuentas de usuario o los grupos.
+        
+        ###### <a name="more-information-about-add-any-authenticated-users"></a>Más información acerca de **Agregar todos los usuarios autenticados**. 
+        Esta configuración no limita quién puede acceder al contenido que protege la etiqueta, aunque sí mantiene cifrado el contenido y le ofrece las opciones para restringir cómo se puede usar el contenido (permisos) y el acceso a este (expiración y acceso sin conexión). Sin embargo, la aplicación que abre el contenido protegido debe ser compatible con la autenticación que se va a usar. Por este motivo, los proveedores sociales federados, como Google, y la autenticación de código de acceso de un solo uso deben utilizarse solo para correo electrónico, y solo cuando utilice Exchange Online y las nuevas capacidades de Office 365 Message Encryption. Las cuentas Microsoft se pueden usar con el visor de Azure Information Protection y Hacer clic y ejecutar de Office 2016. 
+        
+        Algunos casos típicos para cualquier configuración de usuarios autenticados: - No le importa quién ve el contenido, pero desea restringir cómo se usa. Por ejemplo, no desea que el contenido se edite, copie o imprima.
+            - No es necesario restringir quién tiene acceso al contenido, pero desea poder realizar un seguimiento de quién lo abre y, potencialmente, revocarlo.
+            - Tiene un requisito por el cual se debe cifrar el contenido en reposo y en tránsito, pero no requiere controles de acceso.     
         
     - Seleccione **Escribir detalles** para especificar manualmente las direcciones de correo electrónico de usuarios individuales o grupos (internos o externos). O bien, puede usar esta opción para especificar todos los usuarios de otra organización escribiendo el nombre de dominio de dicha organización. También puede usar esta opción para los proveedores sociales escribiendo su nombre de dominio, como **gmail.com**, **hotmail.com** o **outlook.com**.
         
@@ -188,7 +201,7 @@ Los usuarios deben escribir la dirección de correo electrónico de Gmail en el 
 
 4. Si se selecciona, desactive la opción **En Word, Excel, PowerPoint y el Explorador de archivos, solicite al usuario permisos personalizados**.
 
-5. Haga clic en **Aceptar** en hoja **Protección**.
+5. Haga clic en **Aceptar** en la hoja **Protección** y, a continuación, haga clic en **Guardar** en la hoja **Etiqueta**.
 
 
 ### <a name="example-2-label-that-restricts-read-only-permission-to-all-users-in-another-organization-and-that-supports-immediate-revocation"></a>Ejemplo 2: Etiqueta que restringe el permiso de solo lectura a todos los usuarios de otra organización y que admite la revocación inmediata
@@ -209,7 +222,7 @@ Esta etiqueta no es adecuada para los correos electrónicos.
 
 6. De nuevo en la hoja **Protección**, para la opción **Permitir el acceso sin conexión**, seleccione **Nunca**.
 
-7. Haga clic en **Aceptar** en hoja **Protección**.
+7. Haga clic en **Aceptar** en la hoja **Protección** y, a continuación, haga clic en **Guardar** en la hoja **Etiqueta**.
 
 
 ### <a name="example-3-add-external-users-to-an-existing-label"></a>Ejemplo 3: Agregar usuarios externos a una etiqueta existente
@@ -228,7 +241,7 @@ Los nuevos usuarios que agregue podrán abrir documentos y mensajes de correo el
 
 6. Repita los pasos 4 y 5 para cada usuario (o grupo) que quiera agregar a esta etiqueta. A continuación, haga clic en **Aceptar**.
 
-7. En la hoja **Protección**, haga clic en **Aceptar**.
+7. Haga clic en **Aceptar** en la hoja **Protección** y, a continuación, haga clic en **Guardar** en la hoja **Etiqueta**.
 
 ### <a name="example-4-label-for-protected-email-that-supports-less-restrictive-permissions-than-do-not-forward"></a>Ejemplo 4: Etiqueta para correo electrónico protegido que admite permisos menos restrictivos que No reenviar
 
@@ -238,11 +251,11 @@ Si especifica usuarios externos que no tienen una cuenta de Azure AD:
 
 - La etiqueta es adecuada para el correo electrónico cuando Exchange Online usa las [nuevas capacidades del Cifrado de mensajes de Office 365](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e). 
  
-- En el caso de los datos adjuntos de Office que se protegen automáticamente, están disponibles para verlos en el explorador. Para editar estos documentos, descárguelos y modifíquelos con Hacer clic y ejecutar de Office 2016, y una cuenta Microsoft que utilice la misma dirección de correo electrónico. [Más información](../get-started/secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
+- En el caso de los datos adjuntos de Office que se protegen automáticamente, estos documentos están disponibles para verlos en un explorador. Para editar estos documentos, descárguelos y modifíquelos con Hacer clic y ejecutar de Office 2016, y una cuenta Microsoft que utilice la misma dirección de correo electrónico. [Más información](../get-started/secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
 
 
 > [!NOTE]
-> Exchange Online está desplegando una nueva opción, [Solo cifrar](configure-usage-rights.md#encrypt-only-option-for-emails). Esta opción no está disponible para la configuración de etiquetas. Pero puede usar este ejemplo para configurar una etiqueta con el mismo conjunto de derechos de uso.
+> Exchange Online está desplegando una nueva opción, [Solo cifrar](configure-usage-rights.md#encrypt-only-option-for-emails). Esta opción no está disponible para la configuración de etiquetas. Sin embargo, cuando sepa quiénes serán los destinatarios, puede usar este ejemplo para configurar una etiqueta con el mismo conjunto de derechos de uso. 
 
 Cuando los usuarios especifican las direcciones de correo electrónico en el cuadro **Para**, las direcciones deben ser de los mismos usuarios que especifique para la configuración de esta etiqueta. Dado que los usuarios pueden pertenecer a grupos y tener más de una dirección de correo electrónico, no es necesario que la que indiquen coincida con la que usted especifique para los permisos. Sin embargo, se trata de la manera más sencilla de asegurarse de que el destinatario quede correctamente autorizado. Para obtener más información sobre cómo se autorizan los permisos para los usuarios, consulte [Preparación de usuarios y grupos para Azure Information Protection](../plan-design/prepare.md). 
 
@@ -264,10 +277,30 @@ Cuando los usuarios especifican las direcciones de correo electrónico en el cua
 
 6. Haga clic en **Aceptar** en la hoja **Agregar permisos**.
 
-7. En la hoja **Protección**, haga clic en **Aceptar**.
+7. Haga clic en **Aceptar** en la hoja **Protección** y, a continuación, haga clic en **Guardar** en la hoja **Etiqueta**.
+
+
+### <a name="example-5-label-that-encrypts-content-but-doesnt-restrict-who-can-access-it"></a>Ejemplo 5: Etiqueta que cifra el contenido pero no limita el acceso a este
+
+Esta configuración tiene la ventaja de que no es necesario especificar los usuarios, grupos o dominios para proteger un correo electrónico o documento. El contenido seguirá cifrado y puede seguir especificando los derechos de uso, una fecha de expiración y el acceso sin conexión. Use esta configuración solo cuando no tenga que restringir quién puede abrir el documento o correo electrónico protegido. [Más información sobre esta configuración](#more-information-about-add-any-authenticated-users).
+
+1. En la hoja **Protección**, asegúrese de que **Azure (clave de nube)** esté seleccionado.
+    
+2. Asegúrese de que **Establecer permisos** esté seleccionado y, a continuación, seleccione **Agregar permisos**.
+
+3. En la hoja **Agregar permisos**, en la pestaña **Seleccionar de la lista**, seleccione **Agregar todos los usuarios autenticados (versión preliminar)**.
+
+4. Seleccione los permisos que desee y haga clic en **Aceptar**.
+
+5. En la hoja **Protección**, configure las opciones para **Expiración del contenido** y **Permitir acceso sin conexión**, si es necesario, y haga clic en **Aceptar**.
+
+6. En la hoja **Etiqueta**, seleccione **Guardar**.
+
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Para más información sobre cómo configurar la directiva de Azure Information Protection, use los vínculos de la sección [Configuring your organization's policy](configure-policy.md#configuring-your-organizations-policy) (Configuración de la directiva de la organización).  
+Para más información sobre cómo configurar la directiva de Azure Information Protection, use los vínculos de la sección [Configuring your organization's policy](configure-policy.md#configuring-your-organizations-policy) (Configuración de la directiva de la organización). 
+
+Las reglas de flujo de correo de Exchange también pueden aplicar protección, en función de sus etiquetas. Para obtener instrucciones y ejemplos, consulte [Configuración de reglas de flujo de correo de Exchange Online para etiquetas de Azure Information Protection](configure-exo-rules.md).  
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -4,7 +4,7 @@ description: Algunas de las preguntas más frecuentes sobre Azure Information Pr
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/17/2018
+ms.date: 06/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 54106b67888f8c8a669d2c93e60f9967d484ebf3
-ms.sourcegitcommit: c207a2f592d167a4a0b6c4427259683e2087f143
+ms.openlocfilehash: f0ae817fb8b60b0086d2684b620fa17da970f8e8
+ms.sourcegitcommit: 92bb6d3163e455250a84281dac62b5af82f8c4f1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37043357"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Preguntas más frecuentes de Azure Information Protection
 
@@ -59,7 +60,7 @@ Obviamente, los administradores globales de un inquilino de Azure AD u Office 36
     
     Para asignar este rol administrativo a un usuario, vea [Asignación de un usuario a roles de administrador en Azure Active Directory](/azure/active-directory/active-directory-users-assign-role-azure-portal). Para ver qué otros permisos tiene un usuario con este rol, vea la sección [Roles disponibles](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#available-roles) de la documentación de Azure Active Directory.
 
-- **Administrador global** y **administrador de conector** de Azure Rights Management: el primero de estos roles de administrador de Azure Rights Management concede permisos de usuario para ejecutar todos los [cmdlets de PowerShell desde el módulo AADRM](../deploy-use/administer-powershell.md) sin hacerlos un administrador global para otros servicios en la nube, mientras que el segundo concede permisos para ejecutar solo el conector Rights Management (RMS). Ninguno de estos roles administrativos concede permisos relativos a las consolas de administración.
+- **Administrador global** y **administrador de conector** de Azure Rights Management: el primero de estos roles de administrador de Azure Rights Management concede permisos de usuario para ejecutar todos los [cmdlets de PowerShell desde el módulo AADRM](../deploy-use/administer-powershell.md) sin hacerlos un administrador global para otros servicios en la nube, mientras que el segundo concede permisos para ejecutar solo el conector Rights Management (RMS). Ninguno de estos roles administrativos concede permisos a las consolas de administración o para usar el modo de administrador en el sitio de seguimiento de documentos.
 
     Para asignar cualquiera de estos dos roles administrativos, use el cmdlet de PowerShell de AADRM [Add-AadrmRoleBasedAdministrator](/powershell/module/aadrm/add-aadrmrolebasedadministrator).
 
@@ -120,6 +121,7 @@ Principales diferencias entre estas dos soluciones:
 |--------------------------------|-------------------------------------|
 |Almacenes de datos admitidos: <br /><br />- Carpetas locales de Windows Server|Almacenes de datos admitidos: <br /><br />- Carpetas locales de Windows Server<br /><br />- Recursos compartidos de archivos de Windows y almacenamiento conectado a la red<br /><br />- SharePoint Server 2016 y SharePoint Server 2013|
 |Modo operativo: <br /><br />- En tiempo real|Modo operativo: <br /><br />- Rastrea los almacenes de datos de forma sistemática, y este ciclo se puede ejecutar una o varias veces.|
+|Compatibilidad con tipos de archivo: <br /><br />- Todos los tipos de archivo están protegidos de manera predeterminada <br /><br />- Determinados tipos de archivos se pueden excluir de la protección mediante la edición del Registro|Compatibilidad con tipos de archivo: <br /><br />- De forma predeterminada, los tipos de archivo de Office están protegidos. <br /><br />- Determinados tipos de archivos se pueden incluir para la protección mediante la edición del Registro|
 
 En la actualidad, hay diferencias en la configuración del [propietario de Rights Management](../deploy-use/configure-usage-rights.md#rights-management-issuer-and-rights-management-owner) para los archivos que están protegidos en una carpeta local o un recurso compartido de red. De forma predeterminada, para ambas soluciones, el propietario de Rights Management se establece en la cuenta que protege el archivo, pero esta configuración se puede invalidar:
 

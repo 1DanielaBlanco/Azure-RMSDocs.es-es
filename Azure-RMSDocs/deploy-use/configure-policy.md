@@ -4,7 +4,7 @@ description: Para configurar la protección, la clasificación y el etiquetado, 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/30/2018
+ms.date: 05/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 0b95db2e96ca2fc250e7031f394e2e0bd8d4fdef
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: 43fade205d4d518f6fc8f5dd7c7280a80d2c7eae
+ms.sourcegitcommit: 1bc4c9d6e773809893d02a6abb09aeb4ae28cb03
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "34562184"
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>Configuración de la directiva de Azure Information Protection
 
@@ -63,14 +64,14 @@ Para iniciar sesión en Azure Portal con objeto de configurar y administrar Azur
 
 1. Inicie sesión en Azure Portal.
 
-2. En el menú del concentrador, haga clic en **Crear un recurso** y, después, en la lista **MARKETPLACE**, seleccione **Seguridad e identidad**. 
+2. En el menú del concentrador, seleccione **Crear un recurso** y, a continuación, en el cuadro de búsqueda de Marketplace, escriba **Azure Information Protection**. 
     
-3. En la hoja **Seguridad e identidad**, en la lista **APLICACIONES DESTACADAS**, seleccione **Azure Information Protection**. Después, en la hoja **Azure Information Protection**, haga clic en **Crear**.
-    
-    Con esta acción se crea la hoja **Azure Information Protection** para su inquilino, de modo que la próxima vez que inicie sesión en el portal podrá seleccionar el servicio en la lista **Todos los servicios** del concentrador. 
+3. En la lista de resultados, seleccione **Azure Information Protection**. En la hoja **Azure Information Protection**, haga clic en **Crear**.
     
     > [!TIP] 
-    > Seleccione **Anclar al panel** para crear un icono de **Azure Information Protection** en el panel, de modo que pueda omitir el examen del servicio la próxima vez que inicie sesión en el portal.
+    > Opcionalmente, seleccione **Anclar al panel** para crear un icono de **Azure Information Protection** en el panel, de modo que pueda omitir el examen del servicio la próxima vez que inicie sesión en el portal.
+    
+    Haga clic en **Crear** de nuevo.
 
 4. Verá la página **Inicio rápido** que se abre automáticamente la primera vez que se conecta al servicio. Examine los recursos sugeridos o utilice las otras opciones de menú. Utilice el procedimiento siguiente para configurar las etiquetas que los usuarios pueden seleccionar.
 
