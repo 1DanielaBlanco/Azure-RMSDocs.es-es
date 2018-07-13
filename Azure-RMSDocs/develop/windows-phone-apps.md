@@ -14,12 +14,12 @@ ms.assetid: e25a446e-b977-4736-9c65-7711171fb0e1
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: e606703aa764f8e4fea009131f41c9394ebb29fb
-ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
+ms.openlocfilehash: d236eaf4f9027a84a36819b5234a43cfc5674c54
+ms.sourcegitcommit: 55c7461f705a46f385a967753187ba2dda642238
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2018
-ms.locfileid: "30258809"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38229960"
 ---
 # <a name="windows-phone-setup"></a>Programa de instalación de Windows Phone
 
@@ -45,7 +45,7 @@ Debe tener el siguiente software en el sistema de desarrollo:
 
 Lea el tema de [novedades](release-notes.md) para más información sobre actualizaciones, información de dispositivos y entornos, notas de la versión y preguntas más frecuentes de la API.
 
-Revise la información de la guía de [desarrollo de Windows Phone](https://msdn.microsoft.com/en-us/library/windowsphone/develop/ff402535.aspx) en el centro de desarrollo de Windows Phone.
+Revise la información de la guía de [desarrollo de Windows Phone](https://msdn.microsoft.com/library/windowsphone/develop/ff402535.aspx) en el centro de desarrollo de Windows Phone.
 
 ## <a name="configuring-your-development-environment"></a>Configuración del entorno de desarrollo
 
@@ -77,7 +77,7 @@ Ya está listo para crear sus propias aplicaciones nuevas de Windows Phone.
 
 [Conceptos principales](core-concepts.md)
 
-[Desarrollo de Windows Phone](https://msdn.microsoft.com/en-us/library/windowsphone/develop/ff402535.aspx)
+[Desarrollo de Windows Phone](https://msdn.microsoft.com/library/windowsphone/develop/ff402535.aspx)
 
 [Referencia de la API de Windows](https://msdn.microsoft.com/library/dn891914.aspx)
 
