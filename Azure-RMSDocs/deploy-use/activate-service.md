@@ -4,7 +4,7 @@ description: El servicio Azure Rights Management debe activarse antes de que la 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/29/2018
+ms.date: 07/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 8e8a5062efe3b14f1867cf8440dc91c368a810f5
-ms.sourcegitcommit: 6bdc1e5c328ad3b63aeb6f60ba9905551261a7a1
+ms.openlocfilehash: 46c13b70e0b922b9b4d403d9801a192bb649497f
+ms.sourcegitcommit: 4bda470156d18ee8289752d37789feb1ae758a6b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2018
-ms.locfileid: "37137787"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37925031"
 ---
 # <a name="activating-azure-rights-management"></a>Activar Rights Management de Azure
 
@@ -106,7 +106,7 @@ Set-AadrmOnboardingControlPolicy -UseRmsUserLicense $False
 
 Para obtener más información sobre este cmdlet y ejemplos adicionales, consulte la ayuda de [Set-AadrmOnboardingControlPolicy](/powershell/aadrm/vlatest/set-aadrmonboardingcontrolpolicy).
 
-Al usar estos controles de incorporación, todos los usuarios de la organización podrán consumir siempre el contenido protegido por el subconjunto de usuarios, pero no podrán aplicar la protección de la información ellos mismos desde aplicaciones cliente. Por ejemplo, no verán en sus clientes de Office las plantillas predeterminadas publicadas automáticamente al activar el servicio Azure Rights Management ni las plantillas personalizadas que se puedan configurar. Las aplicaciones de lado del servidor, como Exchange, pueden implementar sus propios controles por usuario para que la integración de Rights Management logre el mismo resultado.
+Al usar estos controles de incorporación, todos los usuarios de la organización podrán consumir siempre el contenido protegido por el subconjunto de usuarios, pero no podrán aplicar la protección de la información ellos mismos desde aplicaciones cliente. Por ejemplo, no verán en sus aplicaciones de Office las plantillas predeterminadas publicadas automáticamente al activar el servicio Azure Rights Management ni las plantillas personalizadas que se puedan configurar. Las aplicaciones de lado del servidor, como Exchange, pueden implementar sus propios controles por usuario para que la integración de Rights Management logre el mismo resultado. Por ejemplo, para impedir que los usuarios puedan proteger los correos electrónicos en Outlook en la Web, use [Set-OwaMailboxPolicy](/powershell/module/exchange/client-access/set-owamailboxpolicy?view=exchange-ps) para establecer el parámetro *IRMEnabled* en *$false*.
 
 
 ## <a name="next-steps"></a>Pasos siguientes

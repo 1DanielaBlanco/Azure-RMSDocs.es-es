@@ -4,7 +4,7 @@ description: Detalles técnicos sobre tipos de archivos, extensiones de nombres 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/21/2018
+ms.date: 07/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 88fa2fa62e4090e962f96868b7c1070114d740c1
-ms.sourcegitcommit: 0437ff841f278f5293a74b3ff7d41f81ccfef414
+ms.openlocfilehash: da4e3a5efec9ba7a19131a1b03fc2ddd5a7651ef
+ms.sourcegitcommit: f50b9bc28c6fff372651a3af7a6afc086645ba68
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36310268"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37935722"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>Guía del administrador: Tipos de archivos compatibles con el cliente de Azure Information Protection
 
@@ -181,9 +181,9 @@ Puede realizar modificaciones parecidas en el Registro para otras situaciones ca
 
 Para más información, vea [Configuración de la API de archivo](../develop/file-api-configuration.md) en la guía del desarrollador. En esta documentación para desarrolladores, se hace referencia a la protección genérica como "PFile". 
 
-## <a name="file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-client"></a>Tipos de archivos que están excluidos de la clasificación y la protección con el cliente de Azure Information Protection
+## <a name="file-types-that-are-excluded-from-classification-and-protection"></a>Tipos de archivos excluidos de la clasificación y la protección
 
-Para ayudar a impedir que los usuarios modifiquen los archivos que son fundamentales para las operaciones del equipo, se excluyen automáticamente algunos tipos de archivos y carpetas de la clasificación y la protección. Si los usuarios intentan clasificar o proteger estos archivos, aparecerá un mensaje para indicar que están excluidos.
+Para ayudar a impedir que los usuarios modifiquen los archivos que son fundamentales para las operaciones del equipo, se excluyen automáticamente algunos tipos de archivos y carpetas de la clasificación y la protección. Si los usuarios intentan clasificar o proteger estos archivos mediante el cliente de Azure Information Protection, recibirán un mensaje para indicar que están excluidos.
 
 - **Tipos de archivos excluidos**: .lnk, .exe, .com, .cmd, .bat, .dll, .ini, .pst, .sca, .drm, .sys, .cpl, .inf, .drv, .dat, .tmp, .msp, .msi, .pdb y .jar
 
@@ -192,6 +192,18 @@ Para ayudar a impedir que los usuarios modifiquen los archivos que son fundament
     - Archivos de programa (\Archivos de programa y \Archivos de programa (x86))
     - \ProgramData 
     - \AppData (de todos los usuarios)
+
+### <a name="file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-scanner"></a>Tipos de archivos excluidos de la clasificación y la protección mediante el analizar de Azure Information Protection
+
+De forma predeterminada, el analizador también excluye los mismos tipos de archivos que el cliente de Azure Information Protection. Sin embargo, puede modificar este comportamiento del analizador mediante los siguientes cmdlets de PowerShell:
+
+- [Set-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileTypes)
+
+- [Add-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileTypes)
+
+- [Remove-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileTypes)
+
+De forma predeterminada, el analizador solo protege los tipos de archivos de Office. Para cambiar este comportamiento del analizador, edite el Registro y especifique el resto de tipos de archivo que quiera proteger. Para obtener instrucciones, vea [Configuración de la API de archivo](../develop/file-api-configuration.md) en la guía del desarrollador.
 
 ### <a name="files-that-cannot-be-protected-by-default"></a>Archivos que no se puede proteger de forma predeterminada
 

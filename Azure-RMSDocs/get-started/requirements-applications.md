@@ -4,7 +4,7 @@ description: Identifique las aplicaciones que usarán las API de RMS para que se
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/26/2018
+ms.date: 07/10/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d044ac76ea910f2874219bd20fe262d8bd5c4c59
-ms.sourcegitcommit: f4a97427d61e4b539c91c49c952658aa2dc729ce
+ms.openlocfilehash: 2da56d52fbc2c53d16932ebc774e61e34284b652
+ms.sourcegitcommit: 55c7461f705a46f385a967753187ba2dda642238
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32018542"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38230186"
 ---
 # <a name="applications-that-support-azure-rights-management-data-protection"></a>Aplicaciones compatibles con la protección de datos de Azure Rights Management
 
@@ -38,7 +38,9 @@ Información acerca de las columnas de la tabla:
 
 -   **PDF protegido**: estos archivos pueden tener una extensión de nombre de archivo .pdf o .ppdf.
 
--   **Correo electrónico**: los clientes de correo electrónico enumerados pueden proteger el mensaje de correo en sí, lo que hace que también se protejan automáticamente los archivos adjuntos de Office que no lo están. En este escenario, la característica de vista previa del cliente puede mostrar el contenido protegido (mensaje y datos adjuntos) a destinatarios autorizados. Sin embargo, si un mensaje de correo electrónico no está protegido pero los datos adjuntos si lo están, la característica de vista previa no puede mostrar dichos datos a destinatarios autorizados.
+-   **Correo electrónico**: los clientes de correo electrónico enumerados pueden proteger el mensaje de correo en sí, lo que hace que también se protejan automáticamente los archivos adjuntos de Office que no lo están. En este escenario, la característica de vista previa del cliente puede mostrar el contenido protegido (mensaje y datos adjuntos) a destinatarios autorizados. Sin embargo, si un mensaje de correo electrónico no está protegido pero los datos adjuntos si lo están, la característica de vista previa no puede mostrar dichos datos a destinatarios autorizados. 
+    
+    Sugerencia: En el caso de los clientes de correo electrónico que no permitan proteger los correos electrónicos, le recomendamos que use las [reglas de flujo de correo electrónico de Exchange Online para aplicar dicha protección](https://support.office.com/article/define-mail-flow-rules-to-encrypt-email-messages-in-office-365-9b7daf19-d5f2-415b-bc43-a0f5f4a585e8).
 
 -   **Otros tipos de archivo**: los archivos de texto e imagen incluyen archivos que tienen una extensión de nombre de archivo como .txt, .xml, .jpg y .jpeg. Estos archivos cambian su extensión de nombre de archivo después de protegerlos de forma nativa con Rights Management y se convierten en archivos de solo lectura. Los archivos que no se pueden proteger de forma nativa pasan a tener una extensión de nombre de archivo .pfile después de protegerlos de forma genérica con Rights Management. Para más información, vea [Tipos de archivos admitidos](../rms-client/client-admin-guide-file-types.md) en la guía para administradores del cliente de Azure Information Protection.
 

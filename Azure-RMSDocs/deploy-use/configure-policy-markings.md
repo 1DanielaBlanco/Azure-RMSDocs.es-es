@@ -4,17 +4,18 @@ description: Cuando se asigna una etiqueta a un documento o a un mensaje de corr
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/07/2018
+ms.date: 07/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: 3a732f49a299b4d66af70da3d26df193eaca36ac
-ms.sourcegitcommit: 6a67fc50bd8b8a06974de647c15115a673f0217c
+ms.openlocfilehash: c41dcb0a11e61be4a2dfd974d9bf6803a992b858
+ms.sourcegitcommit: ef3d187da900107095d499de7e7dac5c947e4b13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37947462"
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Configuración de una etiqueta para marcas visuales de Azure Information Protection
 
@@ -22,7 +23,7 @@ ms.lasthandoff: 05/07/2018
 
 Cuando se asigna una etiqueta a un documento o a un mensaje de correo electrónico, puede seleccionar varias opciones para hacer visible la clasificación elegida. Estos marcadores visuales son un encabezado, un pie de página y una marca de agua.
 
-Más información sobre estos marcadores visuales:
+Más información sobre los distintivos visuales:
 
 - Los encabezados y pies de página se aplican a Word, Excel, PowerPoint y Outlook.
 
@@ -30,13 +31,15 @@ Más información sobre estos marcadores visuales:
 
     - Excel: las marcas de agua son solo visibles en los modos Diseño de página y Vista previa de impresión y cuando se imprimen.
     
-    - PowerPoint: las marcas de agua se aplican a la diapositiva patrón, como una imagen de fondo.
+    - PowerPoint: las marcas de agua se aplican a la diapositiva patrón, como una imagen de fondo. En la pestaña **Vista**, **Patrón de diapositivas**, asegúrese de que la casilla **Ocultar gráficos de fondo** no esté seleccionada.
     
     - Se admiten varias líneas de texto.
 
 - Puede especificar solo una cadena de texto o usar [variables](#using-variables-in-the-text-string) para crear dinámicamente la cadena de texto cuando se aplica el encabezado, el pie de página o la marca de agua.
 
-- Los marcadores visuales admiten un solo idioma.
+- Word, PowerPoint y Outlook admiten distintivos visuales de colores distintos. Los distintivos visuales que estén configurados para los colores siempre se muestran en negro en Excel.
+
+- Los distintivos visuales admiten un solo idioma.
 
 ## <a name="when-visual-markings-are-applied"></a>Cuando se aplican distintivos visuales
 
@@ -46,7 +49,7 @@ Para los documentos, los distintivos visuales se aplican de la siguiente manera:
 
 - En una aplicación de Office, los distintivos visuales de una etiqueta se aplican cuando la etiqueta se aplica. Los distintivos visuales también se aplican cuando se abre un documento etiquetado y el documento se guardó por primera vez.  
 
-- Cuando un documento se etiqueta mediante el Explorador de archivos o PowerShell, los distintivos visuales no se aplican inmediatamente, sino cuando ese documento se abre en una aplicación de Office y el documento se guardó por primera vez.
+- Si un documento se ha etiquetado con el Explorador de archivos, PowerShell o el analizador de Azure Information Protection, los distintivos visuales no se aplican inmediatamente, sino que los aplica el cliente de Azure Information Protection al guardar el documento, tras haberlo abierto en una aplicación de Office.
     
     La excepción es cuando se usa [Autoguardado](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) con Office 2016 para los archivos que se guardan en SharePoint Online, OneDrive o OneDrive para la Empresa: cuando está activado el Autoguardado, no se aplican distintivos visuales a menos que configure la [configuración avanzada de cliente](../rms-client/client-admin-guide-customizations.md#turn-on-classification-to-run-continuously-in-the-background) de manera que la clasificación se ejecute continuamente en segundo plano. 
 
@@ -60,7 +63,7 @@ Utilice las siguientes instrucciones para configurar las marcas visuales para un
 
 2. En la opción de menú **CLASIFICACIONES** > **Etiquetas**: en la hoja **Azure Information Protection: etiquetas**, seleccione la etiqueta que contiene los distintivos visuales que desea agregar o cambiar.
 
-3. En la hoja **Etiqueta**, en la sección **Set visual marking (such as header or footer)** (Establecer marcas visuales [como encabezado y pie de página]), configure los marcadores visuales que quiera y luego haga clic en **Guardar**:
+3. En la hoja **Etiqueta** de la sección **Establecer un distintivo visual, como el encabezado o el pie de página**, configure las opciones de los distintivos visuales que quiera y, luego, haga clic en **Guardar**:
     
     - Para configurar un encabezado: en **Documents with this label have a header** (Los documentos con esta etiqueta tienen un encabezado), seleccione **On** (Activado) si quiere un encabezado y **Off** (Desactivado) si no. Si selecciona **Activado**, especifique el texto, el tamaño, la [fuente](#setting-the-font-name), el [color](#setting-the-font-color) y la alineación del encabezado.
     
@@ -121,7 +124,7 @@ Ejemplos:
 
 ### <a name="setting-the-font-name"></a>Establecimiento del nombre de fuente
 
-Calibri es la fuente predeterminada para el texto de encabezados, pies de página y marcas de agua. Si especifica un nombre de fuente alternativo, asegúrese de que esté disponible en los dispositivos cliente que vayan a aplicar los marcadores visuales. 
+Calibri es la fuente predeterminada para el texto de encabezados, pies de página y marcas de agua. Si especifica un nombre de fuente alternativo, asegúrese de que esté disponible en los dispositivos cliente que vayan a aplicar los distintivos visuales. 
 
 Si la fuente especificada no está disponible, el cliente vuelve a utilizar la fuente Calibri.
 

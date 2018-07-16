@@ -4,26 +4,26 @@ description: Información general del servicio Azure Information Protection.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/16/2018
+ms.date: 07/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: 5a9edbb36384af4aee531854b973adfa28362bda
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: c851c2f6af3d355b017c7fbc3de188d15ed16e90
+ms.sourcegitcommit: 7a58d6bec0b504b889980c83e8551301d49e44f4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30208131"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37910098"
 ---
 # <a name="what-is-azure-information-protection"></a>¿Qué es Azure Information Protection?
 
 >*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
-Azure Information Protection (que a veces se conoce como AIP) es una solución basada en la nube que ayuda a una organización a clasificar, etiquetar y proteger sus documentos y correos electrónicos. Esto puede realizarse automáticamente por administradores que definen reglas y condiciones, manualmente por los usuarios o una combinación en la que los usuarios reciben recomendaciones. 
+Azure Information Protection, también conocido como AIP, es una solución basada en la nube que permite a las organizaciones clasificar y, opcionalmente, proteger sus documentos y correos electrónicos mediante la aplicación de etiquetas. Las etiquetas las pueden aplicar automáticamente los administradores, quienes definen reglas y condiciones, los usuarios manualmente, o bien una combinación en la que los usuarios reciben recomendaciones. 
 
-La siguiente imagen muestra un ejemplo de Azure Information Protection en funcionamiento. El administrador ha configurado reglas para detectar datos confidenciales (en este caso, información de tarjeta de crédito). Cuando un usuario guarda un documento de Word que contiene información de tarjeta de crédito, ve una información sobre herramientas personalizada que recomienda que aplique una etiqueta específica que el administrador ha configurado. Esta clasifica y, opcionalmente, protege el documento, en función de la configuración. 
+En la siguiente imagen se muestra un ejemplo de Azure Information Protection en funcionamiento en el equipo de un usuario. El administrador ha configurado una etiqueta con reglas para detectar los datos confidenciales. En nuestro ejemplo, se trata de la información de la tarjeta de crédito. Cuando un usuario guarda un documento de Word que contiene el número de una tarjeta de crédito, puede ver información en pantalla en la que se le recomienda la etiqueta que el administrador ha configurado. Esta etiqueta clasifica el documento y lo protege. 
 
 ![Ejemplo de clasificación recomendada para Azure Information Protection](../media/info-protect-recommend-calloutsv2.png)
 
@@ -31,9 +31,9 @@ Después de que su contenido se clasifique (y se proteja opcionalmente), puede r
 
 ## <a name="how-labels-apply-classification"></a>Cómo aplican la clasificación las etiquetas
 
-Use las etiquetas de Azure Information Protection para aplicar la clasificación a los documentos y correos electrónicos. Al hacer esto, la clasificación se puede identificar en cualquier momento, independientemente de dónde se almacenen los datos o con quién se compartan. Las etiquetas incluyen distintivos visuales, como encabezados, pies de página o marcas de agua. Se agregan metadatos a los archivos y encabezados de correo electrónico en texto no cifrado. El texto no cifrado garantiza que otros servicios, como las soluciones de prevención de pérdida de datos, puedan identificar la clasificación y tomar las medidas oportunas. 
+Use las etiquetas de Azure Information Protection para aplicar la clasificación a los documentos y correos electrónicos. Al hacer esto, la clasificación se puede identificar, independientemente de dónde se almacenen los datos o con quién se compartan. Las etiquetas pueden incluir distintivos visuales, como encabezados, pies de página o marcas de agua. Se agregan metadatos a los archivos y encabezados de correo electrónico en texto no cifrado. El texto no cifrado garantiza que otros servicios, como las soluciones de prevención de pérdida de datos, puedan identificar la clasificación y tomar las medidas oportunas. 
 
-Por ejemplo, el siguiente mensaje de correo electrónico se ha clasificado como "General". Esta etiqueta se agrega como pie de página al mensaje de correo electrónico. Este pie de página es un indicador visual para todos los destinatarios y está diseñado para los datos empresariales generales que no se pueden enviar fuera de la organización. La etiqueta también se inserta en los encabezados de correo electrónico de forma que los servicios de correo electrónico puedan inspeccionar este valor y puedan crear una entrada de auditoría o evitar que se envíen fuera de la organización.
+Por ejemplo, el siguiente mensaje de correo electrónico se ha clasificado como "General". La etiqueta ha agregado un pie de página "Confidencialidad: general" al mensaje de correo electrónico. Este pie de página es un indicador visual para todos los destinatarios y está diseñado para los datos empresariales generales que no se pueden enviar fuera de la organización. La etiqueta se inserta en los encabezados de correo electrónico de forma que los servicios de correo electrónico puedan inspeccionar este valor y puedan crear una entrada de auditoría o evitar que se envíen fuera de la organización.
 
 ![Encabezados y pie de página de correo electrónico de ejemplo que muestran la clasificación de Azure Information Protection](../media/example-email-footerv2.png)
 
@@ -50,7 +50,7 @@ Esta configuración de protección puede formar parte de la configuración de la
 
 ### <a name="rights-management-templates"></a>Plantillas de Microsoft Azure AD Rights Management
 
-Tan pronto como active el servicio Azure Rights Management, tendrá disponibles dos plantillas predeterminadas que restringen el acceso a los datos de los usuarios de su organización. Puede usar estas plantillas para ayudar a evitar inmediatamente la pérdida de datos de su organización. También puede complementar estas plantillas predeterminadas con plantillas de protección personalizadas que aplican controles más restrictivos.
+En cuanto active el servicio Azure Rights Management, tendrá disponibles dos plantillas predeterminadas que permiten restringir el acceso a los datos de los usuarios de su organización. Puede usar estas plantillas para ayudar a evitar inmediatamente la pérdida de datos de su organización. También puede complementar estas plantillas predeterminadas con plantillas de protección personalizadas que aplican controles más restrictivos.
 
 Cuando crea una etiqueta para Azure Information Protection que incluye opciones de protección, esta acción crea entre bastidores una plantilla de Rights Management correspondiente. Luego, puede usar esa plantilla con aplicaciones y servicios que admiten Azure Rights Management.
 
@@ -99,6 +99,17 @@ El flujo de trabajo de los usuarios que envían el correo electrónico no es dis
 Como alternativa, puede proporcionar protección a los usuarios automáticamente por medio de reglas de flujo de correo electrónico que aplican la protección de derechos. 
 
 Cuando se adjunten documentos de Office a estos correos electrónicos, dichos documentos también se protegen automáticamente.
+
+## <a name="classifying-and-protecting-existing-documents"></a>Clasificación y protección de documentos existentes
+
+Lo ideal es etiquetar los documentos y los correos electrónicos al crearlos. Sin embargo, lo más probable es que ya tenga muchos documentos en almacenes de datos y quiera clasificar y proteger también estos. Dichos almacenes de datos pueden ser locales o encontrarse en la nube.
+
+En el caso de los almacenes de datos locales, use el analizador de Azure Information Protection para detectar, clasificar y proteger los documentos de las carpetas locales, los recursos de red compartidos, y los sitios y las bibliotecas de SharePoint Server. El analizador se ejecuta como servicio en Windows Server. Puede usar las mismas reglas de la directiva para detectar información confidencial y aplicar etiquetas específicas a los documentos. Otra opción es aplicar una etiqueta predeterminada a todos los documentos de un repositorio de datos sin inspeccionar el contenido de los archivos. También puede usar el analizador solo en modo de informes para ayudarle a detectar información confidencial que no supiera que tenía. 
+
+Para obtener más información sobre la implementación y el uso del analizador, consulte [Implementación del analizador de Azure Information Protection para clasificar y proteger automáticamente los archivos](../deploy-use/deploy-rms-connector.md).
+
+En el caso de los almacenes de datos en la nube, use Microsoft Cloud App Security para aplicar sus etiquetas a los documentos que tenga en Box, SharePoint Online, y OneDrive para la Empresa. Para obtener más información, consulte [Aplicar automáticamente etiquetas de clasificación de Azure Information Protection](/cloud-app-security/use-case-information-protection) e [Integración de Azure Information Protection](/cloud-app-security/azip-integration).
+
 
 ## <a name="resources-for-azure-information-protection"></a>Recursos de Azure Information Protection
 
