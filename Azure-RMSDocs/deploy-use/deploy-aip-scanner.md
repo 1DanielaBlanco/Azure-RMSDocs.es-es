@@ -4,7 +4,7 @@ description: Instrucciones para instalar, configurar y ejecutar el analizador de
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/26/2018
+ms.date: 07/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 0b663f8f514aadf51b0ad549761d90d30e07811d
-ms.sourcegitcommit: 92bb6d3163e455250a84281dac62b5af82f8c4f1
+ms.openlocfilehash: 3df9e33542d40d00f601ded599b454b2a9f8f045
+ms.sourcegitcommit: 666308d042c079b2d6bedfbe85ab0bf2450f255b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37042888"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433638"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Implementación del analizador de Azure Information Protection para clasificar y proteger automáticamente los archivos
 
@@ -47,7 +47,7 @@ Puede ejecutar el analizador solo en modo de detección en los casos en los que 
 
 Tenga en cuenta que el analizador no detecta ni etiqueta contenido en tiempo real. En su lugar, lo rastrea sistemáticamente en los archivos de los almacenes de datos que especifique, y se puede configurar este ciclo para que se ejecute una sola vez o de manera repetida.
 
-Puede especificar los tipos de archivo desea examinar, o incluso excluirlos del examen. Para restringir los archivos que inspecciona el analizador, defina una lista de tipos de archivo mediante el uso de [Set-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileType).
+Puede especificar los tipos de archivo desea examinar, o incluso excluirlos del examen. Para restringir los archivos que inspecciona el analizador, defina una lista de tipos de archivo mediante el uso de [Set-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileTypes).
 
 
 ## <a name="prerequisites-for-the-azure-information-protection-scanner"></a>Requisitos previos del analizador de Azure Information Protection
@@ -220,7 +220,7 @@ Dado que hemos configurado la programación para que se ejecute continuamente, c
 
 El analizador omite automáticamente los archivos que se [excluyen de la clasificación y la protección](../rms-client/client-admin-guide-file-types.md#file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-client), como los archivos ejecutables y los archivos del sistema.
 
-Puede cambiar este comportamiento mediante la definición de una lista de tipos de archivo para examinar o excluir del análisis. Al especificar esta lista y no especificar un repositorio de datos, la lista se aplica a todos los repositorios de datos que no tienen su propia lista especificada. Para especificar esta lista, use [Set-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileType). Después de haber especificado la lista de tipos de archivo, puede agregar un nuevo tipo de archivo a la lista mediante [Add-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileType), y quitar un tipo de archivo de la lista mediante [Remove-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileType).
+Puede cambiar este comportamiento mediante la definición de una lista de tipos de archivo para examinar o excluir del análisis. Al especificar esta lista y no especificar un repositorio de datos, la lista se aplica a todos los repositorios de datos que no tienen su propia lista especificada. Para especificar esta lista, use [Set-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileTypes). Después de haber especificado la lista de tipos de archivo, puede agregar un nuevo tipo de archivo a la lista mediante [Add-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileTypes), y quitar un tipo de archivo de la lista mediante [Remove-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileTypes).
 
 Luego, el analizador usa Windows iFilter para analizar los siguientes tipos de archivo. En esos tipos de archivo, el documento se etiquetará mediante las condiciones que ha especificado para las etiquetas.
 
