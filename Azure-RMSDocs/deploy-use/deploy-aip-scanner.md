@@ -4,7 +4,7 @@ description: Instrucciones para instalar, configurar y ejecutar el analizador de
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/03/2018
+ms.date: 07/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 3df9e33542d40d00f601ded599b454b2a9f8f045
-ms.sourcegitcommit: 666308d042c079b2d6bedfbe85ab0bf2450f255b
+ms.openlocfilehash: 77204e78a46b536d7a5b42c2765d5eaea8cd745a
+ms.sourcegitcommit: f50b9bc28c6fff372651a3af7a6afc086645ba68
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433638"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37935739"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Implementación del analizador de Azure Information Protection para clasificar y proteger automáticamente los archivos
 
@@ -113,7 +113,7 @@ Puede tener una cuenta para ejecutar el servicio del analizador y usar otra cuen
 - Para la cuenta de Azure Active Directory, siga las instrucciones de [Especificación y uso del parámetro Token en Set-AIPAuthentication](../rms-client/client-admin-guide-powershell.md#specify-and-use-the-token-parameter-for-set-aipauthentication) en la guía del administrador.
 
 
-## <a name="install-the-azure-information-protection-scanner"></a>Instalación del analizador de Azure Information Protection
+## <a name="install-the-scanner"></a>Instalación del escáner
 
 1. Inicie sesión en el equipo de Windows Server en el que se ejecutará el analizador. Use una cuenta que tenga derechos de administrador local y que tenga permisos para escribir en la base de datos maestra de SQL Server.
 
@@ -143,7 +143,9 @@ Puede tener una cuenta para ejecutar el servicio del analizador y usar otra cuen
 
 Ahora que ha instalado el analizador, debe obtener un token de Azure AD para que la cuenta de servicio del analizador se autentique y se pueda ejecutar en modo desatendido. 
 
-## <a name="get-an-azure-ad-token-for-the-scanner-service-account-to-authenticate-to-the-azure-information-protection-service"></a>Obtención de un token de Azure AD para la autenticación de la cuenta de servicio del analizador en el servicio de Azure Information Protection
+## <a name="get-an-azure-ad-token-for-the-scanner"></a>Obtención de un token de Azure AD para el escáner
+
+El token de Azure AD permite la autenticación de la cuenta de servicio del escáner en el servicio Azure Information Protection.
 
 1. Desde el mismo equipo con Windows Server, o desde el escritorio, inicie sesión en Azure Portal para crear dos aplicaciones de Azure AD que son necesarias para especificar un token de acceso para la autenticación. Después de un inicio de sesión interactivo inicial, este token permite que el analizador se ejecute de forma no interactiva.
     
@@ -163,7 +165,7 @@ El analizador tiene ahora un token para autenticarse en Azure AD, que es válido
 
 Ahora está listo para especificar los almacenes de datos que se deben analizar. 
 
-## <a name="specify-data-stores-for-the-azure-information-protection-scanner"></a>Especificación de almacenes de datos para el analizador de Azure Information Protection
+## <a name="specify-data-stores-for-the-scanner"></a>Especificación de los almacenes de datos para el escáner
 
 Use el cmdlet [Add-AIPScannerRepository](/powershell/module/azureinformationprotection/Add-AIPScannerRepository) para especificar los almacenes de datos que el analizador de Azure Information Protection debe analizar. Puede especificar carpetas locales, rutas UNC y direcciones URL de SharePoint Server para los sitios y las bibliotecas de SharePoint. 
 
@@ -185,7 +187,7 @@ Versiones compatibles para SharePoint: SharePoint Server 2016 y SharePoint Serve
 
 Con la configuración predeterminada del analizador, ahora está listo para ejecutar el primer examen en modo de detección.
 
-## <a name="run-a-discovery-cycle-and-view-reports-for-the-azure-information-protection-scanner"></a>Ejecución de un ciclo de detección y consulta de los informes del analizador de Azure Information Protection
+## <a name="run-a-discovery-cycle-and-view-reports-for-the-scanner"></a>Ejecución de un ciclo de detección y visualización de informes del escáner
 
 1. Mediante **Herramientas administrativas** > **Servicios**, inicie el servicio **Analizador de Azure Information Protection**.
 
@@ -199,7 +201,7 @@ Con la configuración predeterminada del analizador, ahora está listo para ejec
 
 Cuando esté listo para etiquetar automáticamente los archivos que el analizador detecta, continúe con el procedimiento siguiente. 
 
-## <a name="configure-the-azure-information-protection-scanner-to-apply-classification-and-protection-to-discovered-files"></a>Configuración del analizador de Azure Information Protection para aplicar la clasificación y la protección a los archivos detectados
+## <a name="configure-the-scanner-to-apply-classification-and-protection"></a>Configuración del escáner para aplicar la clasificación y protección
 
 En su configuración predeterminada, el analizador se ejecuta una vez y en el modo solo informe. Para cambiar esta configuración, ejecute el cmdlet [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration).
 
@@ -216,9 +218,9 @@ En su configuración predeterminada, el analizador se ejecuta una vez y en el mo
 Dado que hemos configurado la programación para que se ejecute continuamente, cuando el analizador haya completado el examen de todos los archivos, iniciará un nuevo ciclo para detectar archivos nuevos y modificados.
 
 
-## <a name="how-files-are-scanned-by-the-azure-information-protection-scanner"></a>Cómo examina los archivos el analizador de Azure Information Protection
+## <a name="how-files-are-scanned"></a>¿Cómo se examinan los archivos?
 
-El analizador omite automáticamente los archivos que se [excluyen de la clasificación y la protección](../rms-client/client-admin-guide-file-types.md#file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-client), como los archivos ejecutables y los archivos del sistema.
+El analizador omite automáticamente los archivos que se [excluyen de la clasificación y la protección](../rms-client/client-admin-guide-file-types.md#file-types-that-are-excluded-from-classification-and-protection), como los archivos ejecutables y los archivos del sistema.
 
 Puede cambiar este comportamiento mediante la definición de una lista de tipos de archivo para examinar o excluir del análisis. Al especificar esta lista y no especificar un repositorio de datos, la lista se aplica a todos los repositorios de datos que no tienen su propia lista especificada. Para especificar esta lista, use [Set-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileTypes). Después de haber especificado la lista de tipos de archivo, puede agregar un nuevo tipo de archivo a la lista mediante [Add-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileTypes), y quitar un tipo de archivo de la lista mediante [Remove-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileTypes).
 
@@ -256,7 +258,7 @@ Cuando el analizador aplica una etiqueta con protección, de forma predeterminad
 
 Para cambiar este comportamiento predeterminado del analizador para, por ejemplo, proteger otros tipos de archivo de forma genérica, debe editar el registro manualmente y especificar los tipos de archivo adicionales que desea que estén protegidos. Para obtener instrucciones, vea [Configuración de la API de archivo](../develop/file-api-configuration.md) en la guía del desarrollador. En esta documentación para desarrolladores, se hace referencia a la protección genérica como "PFile".
 
-## <a name="when-files-are-rescanned-by-the-azure-information-protection-scanner"></a>Cuando el analizador de Azure Information Protection vuelve a examinar los archivos
+## <a name="when-files-are-rescanned"></a>¿Cuándo se vuelven a examinan los archivos?
 
 En el primer ciclo de examen, el analizador inspecciona todos los archivos de los almacenes de datos configurados y, después, en los exámenes posteriores, solo inspecciona los archivos nuevos o modificados. 
 
@@ -273,7 +275,7 @@ Si el analizador ha descargado una directiva sin ninguna condición automática 
 
 ## <a name="using-the-scanner-with-alternative-configurations"></a>Uso del analizador con configuraciones alternativas
 
-Existen dos escenarios alternativos que el analizador admite donde no es necesario que las etiquetas se configuren para ninguna condición: 
+Existen dos escenarios alternativos que el escáner de Azure Information Protection admite donde no es necesario que las etiquetas se configuren para ninguna condición: 
 
 - Aplique una etiqueta predeterminada a todos los archivos en un repositorio de datos.
     
@@ -288,7 +290,7 @@ Existen dos escenarios alternativos que el analizador admite donde no es necesar
     
     El analizador utiliza cualquier condición personalizada que haya especificado para las etiquetas en la directiva de Azure Information Protection, y la lista de tipos de información que están disponibles para especificar para las etiquetas en la directiva de Azure Information Protection. 
 
-## <a name="optimizing-the-performance-of-the-azure-information-protection-scanner"></a>Optimización del rendimiento del analizador de Azure Information Protection
+## <a name="optimizing-the-performance-of-the-scanner"></a>Optimización del rendimiento del escáner
 
 Para maximizar el rendimiento del analizador:
 
@@ -339,7 +341,7 @@ Otros factores que influyen en el rendimiento del analizador:
     - El analizador se ejecuta más lentamente cuando se usa la [configuración alternativa](#using-the-scanner-with-alternative-configurations) para identificar todas las condiciones personalizadas y los tipos conocidos de información confidencial.
     
 
-## <a name="list-of-cmdlets-for-the-azure-information-protection-scanner"></a>Lista de cmdlets del analizador de Azure Information Protection 
+## <a name="list-of-cmdlets-for-the-scanner"></a>Lista de cmdlets para el escáner 
 
 Otros cmdlets del analizador le permiten cambiar la cuenta de servicio y la base de datos del analizador, obtener la configuración actual del analizador y desinstalar el servicio del analizador. El analizador utiliza los siguientes cmdlets:
 
@@ -368,7 +370,7 @@ Otros cmdlets del analizador le permiten cambiar la cuenta de servicio y la base
 - [Uninstall-AIPScanner](/powershell/module/azureinformationprotection/Uninstall-AIPScanner)
 
 
-## <a name="event-log-ids-and-descriptions"></a>Id. de registro de eventos y descripciones
+## <a name="event-log-ids-and-descriptions-for-the-scanner"></a>Identificadores de registro de eventos y descripciones para el escáner
 
 Use las siguientes secciones para identificar los id. de eventos y las descripciones posibles para el analizador. Estos eventos se registran en el servidor que ejecuta el servicio analizador, en el registro de eventos de **aplicaciones y servicios** de Windows, **Azure Information Protection**.
 
