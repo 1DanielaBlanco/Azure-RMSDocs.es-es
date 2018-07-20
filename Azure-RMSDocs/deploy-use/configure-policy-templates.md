@@ -4,7 +4,7 @@ description: Configure y administre plantillas de administración de derechos de
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/28/2018
+ms.date: 07/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 44c1166ce4205d6e77b4877d6aca0eaf16911530
-ms.sourcegitcommit: 1bc4c9d6e773809893d02a6abb09aeb4ae28cb03
+ms.openlocfilehash: ba56e6b165cd378c957b2c54bd41ce54f1830797
+ms.sourcegitcommit: 1b0c387b2848b7dfaee0b0548dde7e41383ffe6e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "34562150"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39138311"
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>Configuración y administración de plantillas para Azure Information Protection
 
@@ -77,7 +77,7 @@ Las plantillas archivadas se muestran como no disponibles en la hoja **Azure Inf
 
 Antes de editar estas plantillas o convertirlas en etiquetas, asegúrese de que está al tanto de los siguientes cambios y consideraciones. Debido a cambios en la implementación, la lista siguiente es especialmente importante si ya ha administrado previamente plantillas en el Portal de Azure clásico.
 
-- Después de editar o convertir una plantilla y guardar la directiva de Azure Information Protection, los [derechos de uso](configure-usage-rights.md) originales se modifican con los siguientes cambios. Si procede, puede agregar o quitar derechos de uso individuales con Azure Portal. También puede usar PowerShell con los cmdlets [New-AadrmRightsDefinition](/powershell/module/aadrm/set-aadrmtemplateproperty) y [Set-AadrmTemplateProperty](/powershell/module/aadrm/new-aadrmrightsdefinition).
+- Después de editar o convertir una plantilla y guardar la directiva de Azure Information Protection, los [derechos de uso](configure-usage-rights.md) originales se modifican con los siguientes cambios. Si procede, puede agregar o quitar derechos de uso individuales con Azure Portal. También puede usar PowerShell con los cmdlets [New-AadrmRightsDefinition](/powershell/module/aadrm/set-aadrmtemplateproperty) y [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty).
     
     - **Permitir macros** (nombre común) se agrega automáticamente. Se requiere este derecho de uso para la barra Azure Information en aplicaciones de Office.
 
