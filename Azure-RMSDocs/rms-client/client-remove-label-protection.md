@@ -4,7 +4,7 @@ description: Instrucciones para quitar etiquetas de clasificación y la protecci
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/01/2018
+ms.date: 07/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ''
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: ce5a6de0c2f0ab1ad374b4a0fbc01e755f28abe3
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: 429af8c070b40f20b67f4e859e0659870dee177c
+ms.sourcegitcommit: 56a49619c0c52fa5296810b27161f23b3380eab9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32327320"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39029889"
 ---
 # <a name="user-guide-remove-labels-and-protection-from-files-and-emails-that-have-been-labeled-by-azure-information-protection-or-protected-by-rights-management"></a>Guía del usuario: Eliminación de etiquetas y protección de archivos y correos electrónicos etiquetados con Azure Information Protection o protegidos con Rights Management
 
@@ -30,7 +30,7 @@ Si la etiqueta eliminada está configurada para aplicar protección, esta acció
 > [!IMPORTANT]
 > Debe ser el propietario del archivo para quitar la protección, o bien que se le deben haber concedido permisos para quitar la protección (el permiso Extraer o Control total de Rights Management).
 
-Si desea elegir una etiqueta diferente o un conjunto diferente de la configuración de protección, no es necesario quitar la etiqueta o la protección. En su lugar, elija una nueva etiqueta y, si es necesario, puede definir permisos personalizados. 
+Si desea elegir una etiqueta diferente o un conjunto diferente de la configuración de protección, no es necesario quitar la etiqueta o la protección. En su lugar, elija una nueva etiqueta y, si es necesario, puede definir permisos personalizados si el administrador permite esa configuración. 
 
 Puede quitar etiquetas y protección de correos electrónicos y documentos de Office cuando los crea o edita desde las aplicaciones de escritorio de Office: **Word**, **Excel**, **PowerPoint** y **Outlook**. 
 
@@ -57,13 +57,17 @@ Si el icono **Eliminar etiqueta** no está disponible inmediatamente, haga clic 
 
 Con el Explorador de archivos, puede quitar rápidamente las etiquetas y la protección de un solo archivo, de varios archivos o de una carpeta. Cuando seleccione una carpeta, todos los archivos que contiene y sus subcarpetas se seleccionan automáticamente. 
 
-1.  En el Explorador de archivos, seleccione un archivo, varios archivos o una carpeta. Haga clic con el botón derecho y seleccione **Clasificar y proteger**.
+1. En el Explorador de archivos, seleccione un archivo, varios archivos o una carpeta. Haga clic con el botón derecho y seleccione **Clasificar y proteger**.
 
 2. Para quitar una etiqueta: en el cuadro de diálogo **Clasificar y proteger: Azure Information Protection**, haga clic en **Eliminar etiqueta**. Si la etiqueta se ha configurado para aplicar protección, dicha protección se quita automáticamente.
 
-3. Para quitar la protección personalizada de un solo archivo: en el cuadro de diálogo **Clasificar y proteger: Azure Information Protection**, desactive la opción **Protect with custom permissions** (Proteger con permisos personalizados).
+3. Para quitar la protección personalizada de un solo archivo: en el cuadro de diálogo **Clasificar y proteger: Azure Information Protection**, desactive la opción **Protect with custom permissions** (Proteger con permisos personalizados). 
+    
+    Si no ve la opción **Proteger con permisos personalizados**, significa que el administrador no permite usar esta opción.
     
 4. Para quitar la protección personalizada de varios archivos: en el cuadro de diálogo **Clasificar y proteger: Azure Information Protection**, haga clic en **Remove custom permissions** (Quitar permisos personalizados).
+    
+    Si no ve la opción **Remove custom permissions** (Quitar permisos personalizados), significa que el administrador no permite usar esta opción.
 
 5. Haga clic en **Aplicar** y espere a que aparezca el mensaje **Trabajo finalizado** para ver los resultados. A continuación, haga clic en **Cerrar**.
 
@@ -72,6 +76,11 @@ Con el Explorador de archivos, puede quitar rápidamente las etiquetas y la prot
 Puede encontrar más instrucciones sobre procedimientos en la guía del usuario de Azure Information Protection:
 
 - [¿Qué desea hacer?](client-user-guide.md#what-do-you-want-to-do)
+
+## <a name="additional-information-for-administrators"></a>Información adicional para los administradores    
+Para obtener instrucciones de configuración para habilitar la configuración de directivas **Configuración de la opción de permisos personalizados para que esté disponible para los usuarios**, vea [Configuración de la directiva de Azure Information Protection](../deploy-use/configure-policy-settings.md).
+
+Otras instrucciones de configuración: [Configuración de la directiva de Azure Information Protection](../deploy-use/configure-policy.md).
 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

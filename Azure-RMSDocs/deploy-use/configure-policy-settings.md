@@ -4,18 +4,18 @@ description: Configure las directivas de Azure Information Protection que se apl
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/30/2018
+ms.date: 07/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
-ms.openlocfilehash: cfdb1537ad5444ef478c18380b535f38b5f7c667
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: c03ec14c8c2fefd72e7972c486120e3a2dd1760d
+ms.sourcegitcommit: 56a49619c0c52fa5296810b27161f23b3380eab9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32326555"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39029923"
 ---
 # <a name="how-to-configure-the-policy-settings-for-azure-information-protection"></a>Configuración directivas para Azure Information Protection
 
@@ -63,7 +63,7 @@ Para establecer la configuración:
     
         Esta configuración de directiva también se puede establecer con una configuración de cliente avanzada como una [personalización de cliente](../rms-client/client-admin-guide-customizations.md#hide-or-show-the-do-not-forward-button-in-outlook).
     
-    - **Configuración de la opción de permisos personalizados para que esté disponible para los usuarios**: cuando esta opción está activada, los usuarios pueden establecer su propia configuración de protección e invalidar cualquier configuración de protección que es posible que se haya incluido con una configuración de etiqueta. Cuando esta opción está desactivada, las opciones de permisos personalizados no están disponibles para que los usuarios las seleccionen.
+    - **Configuración de la opción de permisos personalizados para que esté disponible para los usuarios**: cuando esta opción está activada, los usuarios pueden ver opciones para establecer su propia configuración de protección que puede invalidar cualquier configuración de protección que es posible que se haya incluido con una configuración de etiqueta. Los usuarios también pueden ver una opción para quitar la protección. Cuando esta opción está desactivada, los usuarios no ven estas opciones.
         
         Tenga en cuenta que esta configuración no tiene ningún efecto en los permisos personalizados que los usuarios pueden configurar en las opciones de menú de Office. Pero también se puede establecer con una configuración de cliente avanzada como una [personalización de cliente](../rms-client/client-admin-guide-customizations.md#make-the-custom-permissions-options-available-or-unavailable-to-users).
         

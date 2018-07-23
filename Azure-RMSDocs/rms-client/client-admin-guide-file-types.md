@@ -4,7 +4,7 @@ description: Detalles técnicos sobre tipos de archivos, extensiones de nombres 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/09/2018
+ms.date: 07/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: da4e3a5efec9ba7a19131a1b03fc2ddd5a7651ef
-ms.sourcegitcommit: f50b9bc28c6fff372651a3af7a6afc086645ba68
+ms.openlocfilehash: d8472b8146aa80f00ae8c66f04ee253f7a0777da
+ms.sourcegitcommit: 3276c1f3f32137cb5450f335f4f55e3b5858694d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37935722"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39157789"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>Guía del administrador: Tipos de archivos compatibles con el cliente de Azure Information Protection
 
@@ -53,7 +53,9 @@ Los siguientes tipos de archivo se pueden clasificar aunque no estén protegidos
 
 - **Digital Negative**: .dng
 
-- **Microsoft Office**: tipos de archivo en la tabla siguiente:
+- **Microsoft Office**: tipos de archivo en la tabla siguiente.
+    
+    Formatos de archivo compatibles para estos tipos de archivos: como mínimo, documentos de Office 97-2003 y Open Office XML
     
     |Tipo de archivo de Office|Tipo de archivo de Office|
     |----------------------------------|----------------------------------|
@@ -123,14 +125,13 @@ Estos tipos de archivo se identifican por separado porque, cuando se protegen de
 |.jt|.pjt|
 
 
-En la tabla siguiente se enumeran los tipos de archivos restantes que el cliente de Azure Information Protection admite de forma nativa y que se pueden clasificar. Los reconocerá, ya que se trata de tipos de archivos de las aplicaciones de Microsoft Office. 
+En la tabla siguiente se enumeran los tipos de archivos restantes que el cliente de Azure Information Protection admite de forma nativa y que se pueden clasificar. Los reconocerá, ya que se trata de tipos de archivos de las aplicaciones de Microsoft Office. Los formatos de archivo compatibles son los documentos de, como mínimo, Office 97-2003 y Open Office XML. 
 
 En estos archivos, la extensión de nombre de archivo permanece igual después de que el archivo se ha protegido con el servicio de Rights Management.
 
 |Tipos de archivo admitidos por Office|Tipos de archivo admitidos por Office|
 |----------------------------------|----------------------------------|
 |.doc<br /><br />.docm<br /><br />.docx<br /><br />.dot<br /><br />.dotm<br /><br />.dotx<br /><br />.potm<br /><br />.potx<br /><br />.pps<br /><br />.ppsm<br /><br />.ppsx<br /><br />.ppt<br /><br />.pptm<br /><br />.pptx<br /><br />.vsdm|.vsdx<br /><br />.vssm<br /><br />.vssx<br /><br />.vstm<br /><br />.vstx<br /><br />.xla<br /><br />.xlam<br /><br />.xls<br /><br />.xlsb<br /><br />.xlt<br /><br />.xlsm<br /><br />.xlsx<br /><br />.xltm<br /><br />.xltx<br /><br />.xps|
-
 
 ### <a name="changing-the-default-protection-level-of-files"></a>Cambio del nivel de protección predeterminado de los archivos
 Puede cambiar la manera en que el cliente de Azure Information Protection protege los archivos mediante la modificación del Registro. Por ejemplo, puede forzar que los archivos que admiten la protección nativa estén protegidos de forma genérica por el cliente de Azure Information Protection.

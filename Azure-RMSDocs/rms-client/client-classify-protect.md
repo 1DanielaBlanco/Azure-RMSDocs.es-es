@@ -4,7 +4,7 @@ description: Instrucciones de cómo clasificar y proteger sus documentos y corre
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/21/2018
+ms.date: 07/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 223dd5681b6b5c6911a90cf6540b2ab4c9d7f54e
-ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
+ms.openlocfilehash: 07abfb8da932dea6fe29507cca9f3066eaf546cf
+ms.sourcegitcommit: 56a49619c0c52fa5296810b27161f23b3380eab9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34444150"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39029906"
 ---
 # <a name="user-guide-classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Guía del usuario: Clasificación y protección de archivos y correos electrónicos mediante Azure Information Protection
 
@@ -89,7 +89,7 @@ Si el administrador lo permite, puede especificar su propia configuración de pr
 
     ![Opción Permisisons personalizados](../media/custom-permissions-callout.png)
     
-    Si no puede seleccionar **Permisos personalizados**, el administrador no permite usar esta opción.
+    Si no ve **Permisos personalizados**, significa que el administrador no permite usar esta opción.
     
     Tenga en cuenta que cualquier permiso personalizado que especifique reemplaza, en lugar de complementar, la configuración de protección que el administrador podría haber definido para la etiqueta elegida.  
 
@@ -148,7 +148,7 @@ La guía para administradores contiene una lista completa de los tipos de archiv
     
 3. Si el administrador lo permite, puede especificar su propia configuración de protección en lugar de usar la configuración de protección que es posible que el administrador haya incluido con la etiqueta seleccionada. Para ello, seleccione **Proteger con permisos personalizados**.
     
-    Si no puede seleccionar **Proteger con permisos personalizados**, el administrador no permite usar esta opción.
+    Si no ve **Proteger con permisos personalizados**, significa que el administrador no permite usar esta opción.
     
     Cualquier permiso personalizado que especifique reemplaza, en lugar de complementar, la configuración de protección que el administrador podría haber definido para la etiqueta elegida.  
 
@@ -181,6 +181,8 @@ Puede encontrar más instrucciones sobre procedimientos en la guía del usuario 
 -   [¿Qué desea hacer?](client-user-guide.md#what-do-you-want-to-do)
 
 ## <a name="additional-information-for-administrators"></a>Información adicional para los administradores    
-Consulte [Configuración de la directiva de Azure Information Protection](../deploy-use/configure-policy.md).
+Para obtener instrucciones de configuración para habilitar la configuración de directivas **Configuración de la opción de permisos personalizados para que esté disponible para los usuarios**, vea [Configuración de la directiva de Azure Information Protection](../deploy-use/configure-policy-settings.md).
+
+Otras instrucciones de configuración: [Configuración de la directiva de Azure Information Protection](../deploy-use/configure-policy.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

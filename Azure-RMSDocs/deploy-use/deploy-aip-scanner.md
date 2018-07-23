@@ -4,7 +4,7 @@ description: Instrucciones para instalar, configurar y ejecutar el analizador de
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/09/2018
+ms.date: 07/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 77204e78a46b536d7a5b42c2765d5eaea8cd745a
-ms.sourcegitcommit: f50b9bc28c6fff372651a3af7a6afc086645ba68
+ms.openlocfilehash: 794a8649b803407eff0e651a0b9396d164355380
+ms.sourcegitcommit: 61a4cda950706c823233b19e63951668fdcd5ef3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37935739"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39088639"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Implementación del analizador de Azure Information Protection para clasificar y proteger automáticamente los archivos
 
@@ -256,7 +256,7 @@ Por último, para los tipos de archivo restantes, el analizador aplica la etique
 
 Cuando el analizador aplica una etiqueta con protección, de forma predeterminada solo se protegen los tipos de archivo de Office. Puede cambiar este comportamiento para proteger también otros tipos de archivos. Sin embargo, cuando una etiqueta aplica protección genérica a documentos, la extensión de nombre de archivo cambia a .pfile. Además, el archivo pasa a ser de solo lectura hasta que lo abre un usuario autorizado y se guarda en su formato nativo. Los archivos de texto y de imágenes también pueden cambiar su extensión de nombre de archivo y pasar a ser de solo lectura. 
 
-Para cambiar este comportamiento predeterminado del analizador para, por ejemplo, proteger otros tipos de archivo de forma genérica, debe editar el registro manualmente y especificar los tipos de archivo adicionales que desea que estén protegidos. Para obtener instrucciones, vea [Configuración de la API de archivo](../develop/file-api-configuration.md) en la guía del desarrollador. En esta documentación para desarrolladores, se hace referencia a la protección genérica como "PFile".
+Para cambiar este comportamiento predeterminado del analizador para, por ejemplo, proteger otros tipos de archivo de forma genérica, debe editar el registro manualmente y especificar los tipos de archivo adicionales que desea que estén protegidos. Para obtener instrucciones, vea [Configuración de la API de archivo](../develop/file-api-configuration.md) en la guía del desarrollador. En esta documentación para desarrolladores, se hace referencia a la protección genérica como "PFile". Para el analizador, debe especificar extensiones de nombre de archivo específicas y no puede usar el carácter comodín `*`.
 
 ## <a name="when-files-are-rescanned"></a>¿Cuándo se vuelven a examinan los archivos?
 

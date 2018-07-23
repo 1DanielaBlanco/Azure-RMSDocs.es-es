@@ -4,7 +4,7 @@ description: Información sobre cómo personalizar el cliente de Azure Informati
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/20/2018
+ms.date: 07/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 8cc13eabc504c876c2118a18f1fb7bdb5bb9cfc4
-ms.sourcegitcommit: 0fda9ea4a7b91d4bb3a9e4f9d5cc4106ce1e2d43
+ms.openlocfilehash: 6b5a2856f54ec6d38ae69007e80d9eb22d416799
+ms.sourcegitcommit: 56a49619c0c52fa5296810b27161f23b3380eab9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38973501"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39029940"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Guía del administrador: Configuraciones personalizadas del cliente de Azure Information Protection
 
@@ -135,13 +135,13 @@ Para establecer esta configuración avanzada, especifique las cadenas siguientes
 
 El método recomendado para configurar esta opción es mediante la [configuración de directiva](../deploy-use/configure-policy-settings.md) **Configuración de la opción de permisos personalizados para que esté disponible para los usuarios**. Sin embargo, también puede configurar esta opción mediante una [configuración de cliente avanzada](#how-to-configure-advanced-client-configuration-settings-in-the-portal) que se establece en Azure Portal. 
 
-Cuando establece esta configuración y publica la directiva para los usuarios, las opciones de permisos personalizados están disponibles para que los usuarios seleccionen su propia configuración de protección o dejan de estar disponibles para que los usuarios no puedan seleccionar su propia configuración de protección a menos que se les solicite.
+Cuando establece esta configuración y publica la directiva para los usuarios, las opciones de permisos personalizados están visibles para que los usuarios seleccionen su propia configuración de protección o están ocultas para que los usuarios no puedan seleccionar su propia configuración de protección a menos que se les solicite.
 
 Para establecer esta configuración avanzada, especifique las cadenas siguientes:
 
 - Clave: **EnableCustomPermissions**
 
-- Valor: **True** para hacer que la opción de permisos personalizados esté disponible, o bien **False** para que esta opción no esté disponible
+- Valor: **True** para hacer que la opción de permisos personalizados esté visible, o bien **False** para ocultar esta opción.
 
 
 ## <a name="permanently-hide-the-azure-information-protection-bar"></a>Ocultación de manera permanente de la barra de Azure Information Protection
