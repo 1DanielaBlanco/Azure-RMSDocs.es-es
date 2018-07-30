@@ -4,7 +4,7 @@ description: Información sobre cómo personalizar el cliente de Azure Informati
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/12/2018
+ms.date: 07/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 6b5a2856f54ec6d38ae69007e80d9eb22d416799
-ms.sourcegitcommit: 56a49619c0c52fa5296810b27161f23b3380eab9
+ms.openlocfilehash: fe04cc36f99e641cb11ef832e967699106728749
+ms.sourcegitcommit: dc46351ac5a9646499b90e9565260c3ecd45d305
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39029940"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39217848"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Guía del administrador: Configuraciones personalizadas del cliente de Azure Information Protection
 
@@ -98,13 +98,13 @@ Cree el siguiente nombre de valor DWORD (con cualquier datos de valor):
 
 ## <a name="support-for-disconnected-computers"></a>Soporte técnico para equipos desconectados
 
-De forma predeterminada, el cliente de Azure Information Protection intenta conectarse automáticamente al servicio Azure Information Protection para descargar la directiva más reciente de Azure Information Protection. Si tiene un equipo que sabe que no se podrá conectar a Internet durante un período de tiempo, puede impedir que el cliente intente conectarse al servicio editando el Registro. 
+De forma predeterminada, el cliente de Azure Information Protection intenta conectarse automáticamente al servicio Azure Information Protection para descargar la directiva más reciente de Azure Information Protection. Si tiene equipos que sabe que no se podrán conectar a Internet durante un período de tiempo, puede evitar que el cliente intente conectarse al servicio editando el Registro. 
 
 Busque el siguiente nombre de valor y establezca los datos del valor en **0**:
 
 **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnablePolicyDownload** 
 
-Asegúrese de que el cliente tenga un archivo de directiva válido denominado **Policy.msip** en la carpeta **%LocalAppData%\Microsoft\MSIP**. Si es necesario, puede exportar la directiva desde Azure Portal y copiar el archivo exportado en el equipo cliente. También puede utilizar este método para reemplazar un archivo de directiva no actualizado con la directiva publicada más reciente.
+Asegúrese de que el cliente tenga un archivo de directiva válido denominado **Policy.msip** en la carpeta **%LocalAppData%\Microsoft\MSIP**. Si es necesario, puede exportar la directiva global o una directiva de ámbito desde Azure Portal y copiar el archivo exportado en el equipo cliente. También puede utilizar este método para reemplazar un archivo de directiva no actualizado con la directiva publicada más reciente. Sin embargo, la exportación de la directiva no es compatible con el escenario donde un usuario pertenece a más de una directiva de ámbito.
 
 Al exportar la directiva, esta acción descarga un archivo comprimido con varias versiones de la directiva que se corresponden a las distintas versiones del cliente de Azure Information Protection:
 

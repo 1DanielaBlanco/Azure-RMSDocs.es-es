@@ -4,18 +4,18 @@ description: 'Paso 2 de un tutorial de introducción para probar rápidamente Az
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/09/2018
+ms.date: 07/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: ffae0c9ef0e9ffd1fc9a4c25ef5c60e8da6de5ca
-ms.sourcegitcommit: 342b0bd8c57eb621714609ec28234dd07fe95d1e
+ms.openlocfilehash: 994b9fb3db3c4a1616896ffac7fcd68b0aff7887
+ms.sourcegitcommit: c7e943700189eeaad3f4c919cc0fa3410fd4df5b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33946375"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204465"
 ---
 # <a name="step-2-configure-the-azure-information-protection-policy"></a>Paso 2: Configuración de la directiva de Azure Information Protection
 
@@ -38,7 +38,7 @@ Aunque Azure Information Protection incluye una directiva predeterminada que se 
     
     ![Paso 3 del tutorial de inicio rápido de Azure Information Protection - Directiva predeterminada](../media/info-protect-policy-default-labelsv2.png)
     
-3. También verá que hay algunas configuraciones de directiva. Por ejemplo, no hay ninguna etiqueta predeterminada establecida, no se requiere que los documentos y los correos electrónicos tengan una etiqueta y los usuarios no tienen que dar ninguna justificación cuando cambian etiquetas:
+3. Después de las etiquetas, en la sección **Configure settings to display and apply on Information Protection end users** (Configuración de valores para mostrar y aplicar en los usuarios finales de Information Protection), también verá algunas configuraciones de directiva. Por ejemplo, no hay ninguna etiqueta predeterminada establecida, no se requiere que los documentos y los correos electrónicos tengan una etiqueta y los usuarios no tienen que dar ninguna justificación cuando cambian etiquetas:
     
     ![Paso 3 del tutorial de inicio rápido de Azure Information Protection - Directiva predeterminada](../media/info-protect-policy-default-settings.png)
 
@@ -52,7 +52,7 @@ En este tutorial, se cambiarán algunas de esas configuraciones de directiva par
 
 2. En **Para establecer una etiqueta de clasificación menor, eliminar una etiqueta o quitar la protección, los usuarios deben dar una justificación al respecto**, establezca esta opción en **Activado**.
 
-3. Busque también la opción **Configuración de la opción de permisos personalizados para que esté disponible para los usuarios**. Si está establecida en **Desactivado**, cámbiela a **Activado**.
+3. Busque también la opción **Configuración de la opción de permisos personalizados para que esté disponible para los usuarios**. Si este valor es **Off** (Desactivado), cámbielo a **On** (Activado).
     
     Es posible que no tenga que cambiarla, ya que el valor predeterminado depende del momento en el que obtuvo la suscripción. Usaremos permisos personalizados más adelante en el tutorial para compartir un documento protegido con el usuario que especifique. Para ello, debe hacer clic con el botón derecho en el archivo en el Explorador de archivos.
 
@@ -74,7 +74,7 @@ Ahora vamos a crear una subetiqueta para **Confidencial**.
     
     ![Protección configurada para una etiqueta de Azure Information Protection](../media/info-protect-protection-bar-configured.png) 
     
-4. En la hoja **Protección**, asegúrese de que **Azure (clave en la nube)** esté seleccionado. Esta opción usa el servicio Azure Rights Management para proteger documentos y mensajes de correo electrónico. Asegúrese de que la opción **Establecer permisos** también está seleccionada. Después, seleccione **Agregar permisos**.
+4. En la hoja **Protección**, asegúrese de que **Azure (clave en la nube)** esté seleccionado. Esta opción usa el servicio Azure Rights Management para proteger documentos y mensajes de correo electrónico. Además, asegúrese de que la opción **Establecer permisos** esté seleccionada. Después, seleccione **Agregar permisos**.
 
 5. En la hoja **Agregar permisos**, seleccione **Agregar \<nombre de organización> -Todos los miembros**. Por ejemplo, si el nombre de la organización es VanArsdel Ltd, verá la siguiente opción:
     

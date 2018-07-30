@@ -4,7 +4,7 @@ description: Instrucciones e información para administradores de una red empres
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/19/2018
+ms.date: 07/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 50eefe938a4d37dc63d2209a71b5a06f84a24587
-ms.sourcegitcommit: b5cefaefdd460ed5249db8747f232972b470c619
+ms.openlocfilehash: 45e1f405c751449148b0bfe3a7249640155778c6
+ms.sourcegitcommit: 1f5a5cb650be2b4c302ad4b7a0b109246da3eb80
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36263322"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39295532"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Guía para administradores del cliente de Azure Information Protection
 
@@ -163,6 +163,28 @@ El cliente de Azure Information Protection admite los mismos idiomas que Office 
 Para estos idiomas, las opciones de menú, los cuadros de diálogo y los mensajes del cliente de Azure Information Protection se muestran en el idioma del usuario. Hay un instalador único que detecta el idioma, por lo que no necesita ninguna configuración adicional para instalar el cliente de Azure Information Protection en distintos idiomas. 
 
 Pero los nombres y descripciones de etiqueta que especifique no se traducen automáticamente al configurar las etiquetas en la directiva de Azure Information Protection. A partir del 30 de agosto de 2017, la [directiva predeterminada](../deploy-use/configure-policy-default.md) actual incluye compatibilidad con algunos idiomas. Para que los usuarios puedan ver las etiquetas en su idioma preferido, proporcione sus propias traducciones y configure la directiva de Azure Information Protection para que use dichas traducciones. Para obtener más información, consulte [Configuración de etiquetas para distintos idiomas en Azure Information Protection](../deploy-use/configure-policy-languages.md). Las marcas visuales no se traducen y no admiten más de un idioma.
+
+## <a name="post-installation-tasks"></a>Tareas posteriores a la instalación
+
+Después de instalar el cliente de Azure Information Protection, asegúrese de brindar a los usuarios las instrucciones sobre cómo etiquetar los documentos y correos electrónicos, además de orientación sobre qué etiquetas elegir para escenarios específicos. Por ejemplo:
+
+- Instrucciones en línea para el usuario: [Guía del usuario de Azure Information Protection](client-user-guide.md)
+
+- Descargue una guía del usuario personalizable: [Guía de adopción de Azure Information Protection para el usuario final](https://download.microsoft.com/download/7/1/2/712A280C-1C66-4EF9-8DC3-88EE43BEA3D4/Azure_Information_Protection_End_User_Adoption_Guide_EN_US.pdf)
+
+### <a name="update-macros-in-excel-spreadsheets"></a>Actualización de macros en hojas de cálculo de Excel
+
+Si tiene hojas de cálculo de Excel que contengan macros, edite las macros de la siguiente manera para asegurarse de que sigan funcionando según lo esperado una vez que se instale el cliente de Azure Information Protection:
+
+1. Al inicio de la macro, agregue:
+
+        Application.EnableEvents = False
+
+2. Al final de la macro, agregue:
+
+        Application.EnableEvents = True
+
+Para más información, consulte la [propiedad Application.EnableEvents (Excel)](https://msdn.microsoft.com/vba/excel-vba/articles/application-enableevents-property-excel).
 
 ## <a name="upgrading-and-maintaining-the-azure-information-protection-client"></a>Actualización y mantenimiento del cliente de Azure Information Protection
 

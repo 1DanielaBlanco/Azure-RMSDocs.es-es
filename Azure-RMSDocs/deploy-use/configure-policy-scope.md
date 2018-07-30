@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 4b134785-0353-4109-8fa7-096d1caa2242
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: b5e7bd86ea2e46939b8c4655287e58e3e270feb4
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: 88aa83d5e23da59592b15a4d8fa66735eebcbdb1
+ms.sourcegitcommit: dc46351ac5a9646499b90e9565260c3ecd45d305
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32326572"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39217797"
 ---
 # <a name="how-to-configure-the-azure-information-protection-policy-for-specific-users-by-using-scoped-policies"></a>Configuración de la directiva de Azure Information Protection para usuarios específicos mediante directivas de ámbito
 
@@ -27,9 +27,9 @@ Cuando se descarga la directiva de Azure Information Protection en equipos que t
 
 En las aplicaciones que admiten el cliente de Azure Information Protection, todos los usuarios reciben la directiva global, que contiene el título y la información sobre herramientas de Information Protection, la configuración global y las etiquetas globales. Si ha configurado directivas de ámbito para usuarios específicos, esos usuarios reciben entonces esas configuraciones y etiquetas adicionales. 
 
-Tenga en cuenta que, además de las aplicaciones de escritorio de Office que son compatibles con el cliente de Azure Information Protection, las etiquetas también son compatibles con PowerShell y el analizador de Azure Information Protection. Esto significa que puede crear y configurar directivas con ámbito para las cuentas que ejecutan comandos de Powershell o el analizador. 
+Tenga en cuenta que, además de las aplicaciones de escritorio de Office que son compatibles con el cliente de Azure Information Protection, las etiquetas también son compatibles con PowerShell y el analizador de Azure Information Protection. Esto significa que puede crear y configurar directivas con ámbito para las cuentas que ejecutan comandos de PowerShell o el analizador. 
 
-Las directivas de ámbito, al igual que las etiquetas, se ordenan en el portal de Azure. Si un usuario está configurado para varios ámbitos, se calcula una directiva efectiva para ese usuario antes de descargarla. Según el orden de las directivas, se aplica la última configuración de directiva. Las etiquetas que ve el usuario son de la directiva global y las etiquetas adicionales de directivas de ámbito a las que pertenece el usuario. 
+Las directivas de ámbito, al igual que las etiquetas, se ordenan en el portal de Azure. Si un usuario está configurado para varios ámbitos, se calcula una directiva efectiva para ese usuario antes de descargarla. Según el orden de las directivas, se aplica la última configuración de directiva. Las etiquetas que ve el usuario son de la directiva global y las etiquetas adicionales de directivas de ámbito a las que pertenece el usuario.
 
 Dado que una directiva de ámbito siempre hereda la configuración y las etiquetas de la directiva global, al crear o editar una directiva de ámbito se muestran las etiquetas de la directiva global. Sin embargo, no puede editar las etiquetas de la directiva global cuando edita una directiva de ámbito. No obstante, puede agregar subetiquetas a esas etiquetas heredadas.
 
