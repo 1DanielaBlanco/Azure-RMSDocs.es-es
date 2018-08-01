@@ -83,7 +83,7 @@ RMS SDK para dispositivos está pasa ahora a la versión 4.2 y agrega:
 
     [UserPolicy.create (PolicyDescriptor…) synchronous method**](https://msdn.microsoft.com/library/mt631385.aspx) [Método sincrónico UserPolicy.create (PolicyDescriptor...)**]
 
-    [UserPolicy.create (TemplateDescriptor…) synchronous method**](https://msdn.microsoft.com/library/mt631386.aspx) [Método sincrónico UserPolicy.create (TemplateDescriptor...)**]
+    [UserPolicy.create (TemplateDescriptor…) synchronous method](https://msdn.microsoft.com/library/mt631386.aspx) [Método sincrónico UserPolicy.create (TemplateDescriptor...)]
 
 -   Se ha agregado una clase [ProtectedBuffer](https://msdn.microsoft.com/library/mt631369.aspx) nueva a la API de Android.
 -   Actualizaciones para mejorar la mensajería de error y la experiencia de solución de problemas.
