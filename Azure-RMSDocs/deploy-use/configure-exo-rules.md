@@ -85,7 +85,7 @@ En la directiva de Azure Information Protection, esta etiqueta se ha configurado
     
     c. Seleccione **+** y, a continuación, seleccione **Aceptar**.
 
-5. Para **Haga lo siguiente**: seleccione **Modify the message security** (Modificar la seguridad del mensaje) >  **Apply Office 365 Message Encryption and rights protection** (Aplicar el cifrado de mensajes de Office 365 y protección de derechos) >  **No reenviar** y, a continuación, seleccione **Aceptar**.
+5. Para **Haga lo siguiente**: seleccione **Modify the message security** (Modificar la seguridad del mensaje)  >  **Apply Office 365 Message Encryption and rights protection** (Aplicar el cifrado de mensajes de Office 365 y protección de derechos) >  **No reenviar** y, a continuación, seleccione **Aceptar**.
     
     Ahora, la configuración de la regla debe ser similar a la siguiente: ![Regla de flujo de correo Exchange Online configurada para una etiqueta de Azure Information Protection - ejemplo1](../media/aip-exo-rule-ex1.png)
 
@@ -115,7 +115,7 @@ Esta etiqueta se usa para clasificar y proteger los documentos que usa para la c
     
     d. Seleccione **Gyargar** y, luego, **Aceptar**.
 
-5. Para **Haga lo siguiente**: seleccione **Modify the message security** (Modificar la seguridad del mensaje) > ****Apply Office 365 Message Encryption and rights protection** (Aplicar el cifrado de mensajes de Office 365 y protección de derechos) > **Cifrar** y, a continuación, seleccione **Aceptar**.
+5. Para **Haga lo siguiente**: seleccione **Modify the message security** (Modificar la seguridad del mensaje)  >  **Apply Office 365 Message Encryption and rights protection** (Aplicar el cifrado de mensajes de Office 365 y protección de derechos) > **Cifrar** y, a continuación, seleccione **Aceptar**.
     
     Ahora, la configuración de la regla debe ser similar al siguiente: ![Regla de flujo de correo Exchange Online configurada para una etiqueta de Azure Information Protection - ejemplo1](../media/aip-exo-rule-ex2.png)
 
