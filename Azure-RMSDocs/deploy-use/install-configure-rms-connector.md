@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 099d85a753d81d3d7e8a649f132ee723d9f20006
-ms.sourcegitcommit: 373e05ff0c411d29cc5b61c36edaf5a203becc14
+ms.openlocfilehash: e9de16a5ed4322dc0a35f89d6a43218a8256c154
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34217046"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39371050"
 ---
 # <a name="installing-and-configuring-the-azure-rights-management-connector"></a>Instalación y configuración del conector de Azure Rights Management
 
@@ -246,4 +246,3 @@ Si ya ha descargado estos archivos, puede hacerlo desde el [Centro de descarga d
 ## <a name="next-steps"></a>Pasos siguientes
 Ahora que el conector RMS está instalado y configurado, ya puede configurar los servidores locales para que usen el conector. Vaya a [Configuring servers for the Azure Rights Management connector](configure-servers-rms-connector.md) (Configuración de servidores para el conector de Azure Rights Management).
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

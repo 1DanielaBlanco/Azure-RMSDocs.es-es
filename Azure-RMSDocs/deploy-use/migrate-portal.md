@@ -4,7 +4,7 @@ description: Tareas de administración resumidas de Azure Portal que solía real
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/22/2018
+ms.date: 06/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 57a1073c-02e0-441b-bf49-c6b72fdba24f
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: ff1cae1695ac37c3e884053e6633a631e236efbe
-ms.sourcegitcommit: 94d1c7c795e305444e9fde17ad73e46f242bcfa9
+ms.openlocfilehash: 0eb56adc41c18427a2f5058affc525ecfbbf68ba
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39376529"
 ---
 # <a name="tasks-that-you-used-to-do-with-the-azure-classic-portal"></a>Tareas que solía realizar con el Portal de Azure clásico
 
@@ -31,9 +32,6 @@ Para más información sobre la retirada del portal clásico, vea el anuncio de 
 ## <a name="how-to-do-your-familiar-admin-tasks"></a>Cómo realizar tareas de administración familiares
 
 Use la información siguiente para realizar la transición al portal actual de forma rápida.
-
-Sin embargo, los clientes con una suscripción a Office 365 US Government (Government Community Cloud) actualmente no pueden usar Azure Portal. En su lugar, deberán usar [PowerShell](configure-templates-with-powershell.md) para administrar sus plantillas.
-
 
 |Portal de Azure clásico|Cómo realizar esta tarea en Azure Portal
 |-----------|--------------------|
@@ -66,4 +64,3 @@ Los cmdlets de PowerShell para crear y administrar plantillas y para activar o d
 ## <a name="see-also"></a>Vea también
 Para obtener información detallada, vea [Configuración y administración de plantillas para Azure Information Protection](../deploy-use/configure-policy-templates.md).
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

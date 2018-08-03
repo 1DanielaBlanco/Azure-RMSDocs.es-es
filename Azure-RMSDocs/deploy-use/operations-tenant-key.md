@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 1284d0ee-0a72-45ba-a64c-3dcb25846c3d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f459504f43c8e361e36832b19011f93d1cbaccc4
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: a12d0a885b4ed4762124511929bb9f139e8c02db
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30205802"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39369782"
 ---
 # <a name="operations-for-your-azure-information-protection-tenant-key"></a>Operaciones para la clave de inquilino de Azure Information Protection
 
@@ -44,4 +44,3 @@ Después de identificar la topología que ha implementado, seleccione uno de los
 
 Sin embargo, si desea crear una clave de inquilino de Azure Information Protection a través de la importación de un dominio de publicación de confianza (TPD) desde Active Directory Rights Management Services, esta operación de importación forma parte de la [migración de AD RMS a Azure Information Protection](../plan-design/migrate-from-ad-rms-to-azure-rms.md).  
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
