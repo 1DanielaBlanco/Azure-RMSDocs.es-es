@@ -14,12 +14,12 @@ ms.assetid: 32C7F387-CF7E-4CE0-AFC9-4C63FE1E134A
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 4a3f011ebe8a9b7d25bfd7ca30f75827b3012ab2
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: 3d516cbfe34b3ca985bf12e4226ebe968816e0c9
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2018
-ms.locfileid: "27765178"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39372366"
 ---
 # <a name="how-to-install-configure-and-test-with-an-rms-server"></a>Instalación, configuración y prueba con un servidor RMS
 
@@ -104,5 +104,3 @@ Los siguientes pasos le guiarán en la configuración del servidor de RMS e incl
         Microsoft
           MSIPC
             ```
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

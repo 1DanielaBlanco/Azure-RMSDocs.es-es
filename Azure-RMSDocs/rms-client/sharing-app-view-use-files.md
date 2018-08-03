@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 393db5da6f2a563b073b071e873a8c5d555a76e6
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 4143cd12138e82bcf94331ef0911033acdb1942c
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30208590"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39474382"
 ---
 # <a name="view-and-use-files-that-have-been-protected-by-rights-management"></a>Ver y usar los archivos protegidos por Rights Management
 
@@ -33,7 +33,7 @@ Cuando la [aplicación Rights Management sharing (RMS) está instalada en el equ
 > -   Para solicitar esta cuenta, haga clic en el vínculo para solicitar [RMS para usuarios](http://go.microsoft.com/fwlink/?LinkId=309469).
 >
 >     Al suscribirse, use la dirección de correo electrónico de su empresa en lugar de una dirección de correo electrónico personal. Si va a suscribirse porque le enviaron un archivo adjunto protegido por correo electrónico, use la misma dirección de correo electrónico que se usó para enviarle el mensaje de correo electrónico.
-> -   Para obtener más información, consulte [RMS for individuals and Azure Rights Management](../understand-explore/rms-for-individuals.md) (RMS para usuarios y Azure Rights Management).
+> -   Para obtener más información, consulte [RMS for individuals and Azure Rights Management](../rms-for-individuals.md) (RMS para usuarios y Azure Rights Management).
 
 ## <a name="to-view-a-protected-file"></a>Para ver un archivo protegido
 Usando el Explorador de archivos o el mensaje de correo electrónico que contiene el archivo adjunto, haga doble clic en el archivo protegido y escriba sus credenciales si se le solicita que lo haga.
@@ -45,7 +45,7 @@ Si ve dos versiones del archivo pero con extensiones de nombre de archivo difere
 
 La manera en que se abre el archivo depende de cómo se protegió, lo que se puede saber por la extensión de nombre de archivo. En cualquier caso, el proceso de abrir el archivo podría auditarse, y sigue auditándose mientras esté protegido. Además, si el archivo se envió como un archivo adjunto por correo electrónico, es posible que el remitente reciba una notificación por correo electrónico cada vez que abra el archivo.
 
-- **El archivo tiene una** extensión de nombre de archivo** .pfile
+- **El archivo tiene una extensión de nombre de archivo *.pfile***
 
     El archivo se protegió de forma genérica.
 
@@ -74,7 +74,7 @@ Para obtener la lista completa de extensiones de nombres de archivo que admiten 
 ## <a name="to-use-files-that-have-been-protected-for-example-edit-and-print-the-file"></a>Para usar archivos que están protegidos (por ejemplo, editar e imprimir el archivo)
 Si, tras abrir el archivo protegido, desea hacer algo más que simplemente leerlo (como editarlo, copiarlo e imprimirlo), siga las instrucciones correspondientes a la extensión de nombre de archivo :
 
-- **El archivo tiene una** extensión de nombre de archivo** .pfile
+- **El archivo tiene una extensión de nombre de archivo *.pfile***
 
     Guarde el archivo abierto y asígnele una nueva extensión de nombre de archivo que esté asociada a la aplicación que desea usar.
 
@@ -102,5 +102,3 @@ Para obtener ejemplos de cómo puede usar la aplicación para uso compartido de 
 
 ## <a name="see-also"></a>Consulte también
 [Guía de usuario de la aplicación Rights Management sharing](sharing-app-user-guide.md)
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
