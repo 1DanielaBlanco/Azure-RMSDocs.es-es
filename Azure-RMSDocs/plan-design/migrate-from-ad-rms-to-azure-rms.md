@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 740a97298d27f5abb2cda8e0b6f3ce931c1a6d91
-ms.sourcegitcommit: 0fda9ea4a7b91d4bb3a9e4f9d5cc4106ce1e2d43
+ms.openlocfilehash: 937d9b1e91690ed7633d2112725f49e1325afcbd
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38973467"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473933"
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>Migración desde AD RMS a Azure Information Protection
 
@@ -29,9 +29,9 @@ Después de la migración, los servidores de AD RMS ya no se usarán, pero los u
 
 ¿No está seguro de si esta migración de AD RMS es conveniente para su organización?
 
-- Consulte una introducción a Azure Information Protection en [¿Qué es Azure Information Protection?](../understand-explore/what-is-information-protection.md)
+- Consulte una introducción a Azure Information Protection en [¿Qué es Azure Information Protection?](../what-is-information-protection.md)
 
-- Vea una comparación de Azure Information Protection y AD RMS en [Comparación entre Azure Rights Management y AD RMS](../understand-explore/compare-azure-rms-ad-rms.md).
+- Vea una comparación de Azure Information Protection y AD RMS en [Comparación entre Azure Rights Management y AD RMS](../compare-on-premise.md).
 
 ## <a name="recommended-reading-before-you-migrate-to-azure-information-protection"></a>Se recomienda leer antes de migrar a Azure Information Protection
 
@@ -43,7 +43,7 @@ Aunque no es necesario, podría resultar útil leer la documentación siguiente 
 
 - [Información general sobre el conector Microsoft Rights Management](../deploy-use/deploy-rms-connector.md#overview-of-the-microsoft-rights-management-connector): en esta sección de la documentación del conector RMS se explica cómo los servidores locales se pueden conectar al servicio de Azure Rights Management para proteger documentos y correos electrónicos.
 
-Además, si está familiarizado con el funcionamiento de AD RMS, le resultará útil leer [¿Cómo funciona Azure RMS? En segundo plano](../understand-explore/how-does-it-work.md) para ayudarlo a identificar qué procesos tecnológicos son iguales o diferentes para la versión en la nube.
+Además, si está familiarizado con el funcionamiento de AD RMS, le resultará útil leer [¿Cómo funciona Azure RMS? En segundo plano](../how-does-it-work.md) para ayudarlo a identificar qué procesos tecnológicos son iguales o diferentes para la versión en la nube.
 
 ## <a name="prerequisites-for-migrating-ad-rms-to-azure-information-protection"></a>Requisitos previos para migrar AD RMS a Azure Information Protection
 
@@ -73,7 +73,7 @@ Antes de iniciar la migración a Azure Information Protection, asegúrese de que
 
 - **Todos los requisitos para ejecutar Azure Information Protection, incluida una suscripción para Azure Information Protection (el servicio Azure Rights Management no está activado):**
 
-    Vea [Requisitos de Azure Information Protection](../get-started/requirements-azure-rms.md).
+    Vea [Requisitos de Azure Information Protection](../requirements.md).
 
     Tenga en cuenta que, si tiene equipos que ejecutan Office 2010, debe instalar el cliente de Azure Information Protection, ya que este cliente proporciona la capacidad de autenticar a los usuarios en servicios en la nube. Para las versiones más recientes de Office, el cliente de Azure Information Protection es necesario para la clasificación y el etiquetado. Es opcional, pero se recomienda si se quieren proteger solo los datos. Para obtener más información, vea la [Guía para administradores del cliente de Azure Information Protection](../rms-client/client-admin-guide.md).
 
@@ -113,11 +113,11 @@ Para confirmar el modo criptográfico de AD RMS:
 
 ### <a name="migration-limitations"></a>Limitaciones de la migración
 
-- Si tiene software y clientes que no son compatibles con el servicio Rights Management usado por Azure Information Protection, no podrán proteger o usar contenido protegido por Azure Rights Management. Asegúrese de consultar las secciones de clientes y aplicaciones compatibles de [Requisitos para Azure Rights Management](../get-started/requirements-azure-rms.md).
+- Si tiene software y clientes que no son compatibles con el servicio Rights Management usado por Azure Information Protection, no podrán proteger o usar contenido protegido por Azure Rights Management. Asegúrese de consultar las secciones de clientes y aplicaciones compatibles de [Requisitos para Azure Rights Management](../requirements.md).
 
 - Si su implementación de AD RMS está configurada para colaborar con asociados externos (por ejemplo, con federación o dominios de usuario de confianza), estos también necesitarán realizar la migración a Azure Information Protection al mismo tiempo o lo antes posible después de completar la migración. Para seguir teniendo acceso al contenido protegido anteriormente por su organización con Azure Information Protection, necesitarán realizar cambios en la configuración del cliente similares a los que realice el usuario y que se incluyen en este documento.
     
-    Debido a las posibles variaciones de configuración de los asociados, las instrucciones exactas para este cambio de configuración están fuera del ámbito de este documento. En cambio, vea la siguiente sección para obtener una guía de planeación y, para obtener ayuda adicional, [póngase en contacto con el soporte técnico de Microsoft](../get-started/information-support.md#support-options-and-community-resources).
+    Debido a las posibles variaciones de configuración de los asociados, las instrucciones exactas para este cambio de configuración están fuera del ámbito de este documento. En cambio, vea la siguiente sección para obtener una guía de planeación y, para obtener ayuda adicional, [póngase en contacto con el soporte técnico de Microsoft](../information-support.md#support-options-and-community-resources).
 
 ## <a name="migration-planning-if-you-collaborate-with-external-partners"></a>Planeación de la migración si colabora con asociados externos
 
@@ -219,4 +219,3 @@ Los pasos de migración se pueden dividir en cinco fases que se pueden realizar 
 ## <a name="next-steps"></a>Pasos siguientes
 Para iniciar la migración, vaya a [Fase 1: preparación](migrate-from-ad-rms-phase1.md).
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

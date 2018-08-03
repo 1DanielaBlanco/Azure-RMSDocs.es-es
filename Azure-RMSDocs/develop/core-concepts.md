@@ -14,12 +14,12 @@ ms.assetid: ae67523a-c094-44da-86b8-739bedba7111
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 1cd646a7c4685b2cda270fca23a8201e80c2222e
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: 38eda4cf3f29443deed7887308096d5e4dfff8eb
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2018
-ms.locfileid: "27764593"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39375504"
 ---
 # <a name="developer-guidance"></a>Instrucciones para desarrolladores
 El enfoque de Microsoft Rights Management SDK 4.2 es ayudarle a compilar aplicaciones habilitadas para AD RMS que aprovechan Active Directory Rights Management Services (AD RMS) y simplificarle el proceso lo más posible.
@@ -30,5 +30,3 @@ Los temas siguientes tienen como fin ayudarle en el proceso de diseño en el des
 - [How to enable error and performance logging (Procedimiento para habilitar el registro de rendimiento y errores)](enabling-logging.md): RMS SDK 4.2 administra la carga de registros de diagnóstico y rendimiento mediante una única propiedad de dispositivo.
 - [How to use built-in rights (Procedimiento para usar los derechos integrados)](built-in-rights-usage-restriction-reference.md): describe los derechos integrados que proporciona RMS SDK 4.2 y las restricciones de uso que una aplicación debe exigir para cumplir con esas restricciones.
 - [How to use document tracking (Procedimiento para usar el seguimiento de documentos)](how-to-use-document-tracking.md): el uso de la característica de seguimiento de documentos requiere algunos conocimientos sencillos sobre la administración de los metadatos asociados y el registro en el servicio.
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

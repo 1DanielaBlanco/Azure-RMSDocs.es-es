@@ -14,12 +14,12 @@ ms.assetid: 396A2C19-3A00-4E9A-9088-198A48B15289
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 794e0b89f58944c6734992c57e1ad3a7aa58238a
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: ecbc6ced2b67f3f378a03e98cd6a12b488efbce4
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2018
-ms.locfileid: "27765823"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39373046"
 ---
 # <a name="developing-your-application"></a>Desarrollo de la aplicación
 
@@ -231,4 +231,3 @@ Después de que todo se ha creado y está en ejecución, las salidas de la aplic
 
 6. Por último, especifique algunos metadatos de directiva: nombre de la directiva, descripción y nombre para mostrar del emisor (identificador de inquilino de Azure AD). ![salida de aplicación - paso 6](../media/develop/app-output-6.png)
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

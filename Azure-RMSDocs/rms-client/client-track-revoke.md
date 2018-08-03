@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 643c762e-23ca-4b02-bc39-4e3eeb657a1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 610a1e5f147ab8ce0cca3adb59191d145d01a1ae
-ms.sourcegitcommit: 78d368a4480cc1febedc8535c6c3e184e69caf7f
+ms.openlocfilehash: c62179f67d7b7176886f6bb8c003a1cb58868a58
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37088283"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39372223"
 ---
 # <a name="user-guide-track-and-revoke-your-documents-when-you-use-azure-information-protection"></a>Guía del usuario: Seguimiento y revocación de documentos cuando se usa Azure Information Protection
 
@@ -117,5 +117,3 @@ Puede encontrar más instrucciones sobre procedimientos en la guía del usuario 
 
 ## <a name="additional-information-for-administrators"></a>Información adicional para los administradores    
 Consulte [Configuración y uso de Seguimiento de documentos para Azure Information Protection](client-admin-guide-document-tracking.md) en la [guía del administrador](client-admin-guide.md).
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

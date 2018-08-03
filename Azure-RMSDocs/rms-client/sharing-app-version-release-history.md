@@ -13,12 +13,12 @@ ms.custom: askipteam
 ms.assetid: 6751bd90-959f-4eba-91ed-6588ac983762
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 1e3dc88f69b1fb4ed178f3f2d1268c47fae13621
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 1ebeef2847a8404d5970673acd3163b336cf0406
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30208624"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473362"
 ---
 # <a name="rights-management-sharing-application-version-release-history"></a>Aplicación de uso compartido Rights Management Historial de publicación de versiones
 
@@ -81,7 +81,7 @@ No se enumeran las versiones anteriores al 1 de enero de 2015.
 
 -   Compatibilidad con Multi-Factor Authentication (MFA) para Azure RMS, que también elimina la dependencia del Ayudante para el inicio de sesión de Microsoft en aplicaciones que usan la autenticación moderna.
 
-    Para más información, consulte la sección [Multi-Factor Authentication (MFA) y Azure RMS](../get-started/requirements-azure-ad.md#multi-factor-authentication-mfa-and-azure-information-protection) en [Requisitos de Azure Active Directory para Azure Information Protection](../get-started/requirements-azure-ad.md).
+    Para más información, consulte la sección [Multi-Factor Authentication (MFA) y Azure RMS](../requirements-servers.md) en [Requisitos de Azure Active Directory para Azure Information Protection](../requirements-servers.md).
 
 ## <a name="version-1017840"></a>Versión 1.0.1784.0
 **Lanzamiento**: 30/07/2015
@@ -130,4 +130,3 @@ No se enumeran las versiones anteriores al 1 de enero de 2015.
 
 -   **Compatibilidad con varios dominios de correo electrónico dentro de su organización**: Si usa AD RMS y los usuarios de su organización tienen varios dominios de correo electrónico, esta actualización permite que los usuarios consuman contenido que protegieron los usuarios de la organización en otros dominios. Para más información, consulte la sección [Solo AD RMS: Compatibilidad con varios dominios de correo electrónico dentro de su organización](sharing-app-admin-guide.md#ad-rms-only-support-for-multiple-email-domains-within-your-organization) de la [Guía del administrador de la aplicación Microsoft Rights Management sharing](sharing-app-admin-guide.md).
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: b1a19ae7-db26-40da-9e21-6620af3d0b02
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 54e66d8ffde33e3e73b24e39fa609686fa2601b0
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 6953d72b3114c00a25c135754d9eea0db6563cb1
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30204805"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39372261"
 ---
 # <a name="azure-information-protection-client-installation-and-configuration-for-clients"></a>Cliente de Azure Information Protection: instalación y configuración de clientes
 
@@ -41,6 +41,5 @@ Para instalar el cliente de Azure Information Protection en estas plataformas m�
 
 **Si tiene Microsoft Intune**: como la aplicación Azure Information Protection incluye el Kit de desarrollo de software de aplicaciones de Microsoft Intune, cuando los dispositivos iOS y Android están inscritos mediante Intune, puede implementar y administrar el visor de Azure Information Protection para estos dispositivos. Para más información, consulte [Configure and deploy mobile application management policies in the Microsoft Intune console](/intune/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console) (Configuración e implementación de directivas de administración de aplicaciones móviles en la consola de Microsoft Intune). Para el paso 2, siga las instrucciones para publicar una aplicación administrada por directivas.
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 

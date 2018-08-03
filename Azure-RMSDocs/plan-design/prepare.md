@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: bb38d33972fb99596fcde8bc54e53c38e3817336
-ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
+ms.openlocfilehash: e14844a5bd1b0ace4085eaaa9c15be6b3c814146
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34444119"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473753"
 ---
 # <a name="preparing-users-and-groups-for-azure-information-protection"></a>Preparación de usuarios y grupos para Azure Information Protection
 
@@ -87,7 +87,7 @@ Además de utilizar los atributos proxyAddresses y userPrincipalName de Azure AD
 
 Otros método de autorización:
 
-- En el caso de las direcciones de correo electrónico que no están en Azure AD, Azure Information Protection puede autorizarlas cuando se autentican con una cuenta Microsoft. Sin embargo, no todas las aplicaciones pueden abrir contenido protegido cuando se usa una cuenta Microsoft para la autenticación. [Más información](../get-started/secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
+- En el caso de las direcciones de correo electrónico que no están en Azure AD, Azure Information Protection puede autorizarlas cuando se autentican con una cuenta Microsoft. Sin embargo, no todas las aplicaciones pueden abrir contenido protegido cuando se usa una cuenta Microsoft para la autenticación. [Más información](../secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
 
 - Cuando se envía un correo electrónico mediante cifrado de mensajes de Office 365 con nuevas capacidades para un usuario que no tiene una cuenta de Azure AD, primero se autentica al usuario mediante la federación con un proveedor de identidades sociales o mediante un código de acceso de un solo uso. Después, la dirección de correo especificada en el correo protegido se usa para autorizar al usuario.
 
@@ -215,4 +215,3 @@ Cuando haya confirmado que los usuarios y grupos se pueden usar con Azure Inform
 
 Para obtener más información, incluida la comprobación del estado de activación, vea [Activar Azure Rights Management](../deploy-use/activate-service.md).
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

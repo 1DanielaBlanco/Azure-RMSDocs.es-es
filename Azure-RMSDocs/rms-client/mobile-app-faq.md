@@ -14,12 +14,12 @@ ms.custom: askipteam
 ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 190fce3f1725775ae699dbc523a810dc79b96f88
-ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
+ms.openlocfilehash: 09e75b1d8fd841295924dccfbacf8dcb6d753182
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34444255"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473481"
 ---
 # <a name="faqs-for-microsoft-azure-information-protection-app-for-ios-and-android"></a>Preguntas más frecuentes sobre la aplicación de Microsoft Azure Information Protection para iOS y Android
 
@@ -63,7 +63,7 @@ Si su dirección de correo electrónico personal se utilizó para proteger el ar
 
 Sí, cuando se aplica a una cuenta Microsoft, puede especificar su dirección de correo electrónico de Hotmail o Gmail, o cualquier otra dirección de correo electrónico que tenga. 
 
-Sin embargo, aunque este visor puede abrir archivos protegidos con esta cuenta, no todas las aplicaciones pueden abrir contenido protegido cuando se usa una cuenta Microsoft para la autenticación. [Más información](../get-started/secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
+Sin embargo, aunque este visor puede abrir archivos protegidos con esta cuenta, no todas las aplicaciones pueden abrir contenido protegido cuando se usa una cuenta Microsoft para la autenticación. [Más información](../secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
 
 ## <a name="which-file-extensions-can-i-open-with-this-app"></a>¿Qué extensiones de archivo puedo abrir con esta aplicación?
 
@@ -79,5 +79,3 @@ En la aplicación, vaya a **Configuración** > **Enviar comentarios**.
 ## <a name="my-question-has-not-been-answeredwhat-should-i-do"></a>Mi pregunta no se ha resuelto: ¿qué debo hacer?
 
 Publique su pregunta en el [sitio de Yammer](https://www.yammer.com/AskIPTeam).
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

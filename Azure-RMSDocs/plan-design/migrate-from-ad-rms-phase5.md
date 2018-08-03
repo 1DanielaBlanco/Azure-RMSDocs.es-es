@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0330b8a18c52d76ba3aa926e66085b1f33f4dd0f
-ms.sourcegitcommit: 0fda9ea4a7b91d4bb3a9e4f9d5cc4106ce1e2d43
+ms.openlocfilehash: 39eb09eaf3810ec8cb7152499d704be47e6ad045
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38973484"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39372182"
 ---
 # <a name="migration-phase-5---post-migration-tasks"></a>Fase 5 de la migración: tareas posteriores a la migración
 
@@ -124,4 +124,3 @@ Para más información sobre cómo administrar la clave de inquilino de Azure In
 
 Ahora que ha completado la migración, revise el [mapa de ruta de implementación](deployment-roadmap.md) para identificar las tareas de implementación que necesite realizar.
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

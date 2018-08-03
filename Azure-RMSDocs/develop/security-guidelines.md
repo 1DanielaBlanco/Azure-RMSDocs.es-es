@@ -12,12 +12,12 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: 6c3669c1ada24afcf3b9ec48ea5bb9c38939b47e
-ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
+ms.openlocfilehash: 194e676807145dffdf326fe782f4b4051876552d
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2018
-ms.locfileid: "30258782"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39371856"
 ---
 # <a name="security-best-practices-for-azure-information-protection"></a>Procedimientos recomendados de seguridad para Azure Information Protection
 
@@ -94,5 +94,3 @@ API permite que un usuario descifre información o no; la información no tiene 
 - Los derechos que se abstraen por inclusión en nuevos derechos implementados por una aplicación deben asignarse a la nueva terminología. Por ejemplo, un derecho nuevo llamado DIRECTOR puede incluir como derechos abstraídos IMPRIMIR, COPIAR y EDITAR.
 Estándar recomendado   Ninguno en este momento.
 Estándar preferido   Ninguno en este momento.
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

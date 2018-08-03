@@ -13,12 +13,12 @@ ms.technology: techgroup-identity
 ms.assetid: 3d5d18d8-7b2e-456c-bb45-48da4eb55544
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c3f012c58255e86c3a133348733e31327faa0417
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: 6c8561a54f80ff623881713c8dd05e334ec56ead
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32327388"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39474416"
 ---
 # <a name="get-started-with-the-microsoft-azure-information-protection-app-for-ios-and-android"></a>Introducción a la aplicación de Microsoft Azure Information Protection para iOS y Android
 
@@ -37,7 +37,7 @@ Para acceder al visor y ver cómo funciona, abra en el dispositivo móvil uno de
 
 - **Un archivo .rpmsg**: se trata de un mensaje de correo electrónico protegido por derechos que se muestra como un archivo adjunto en un mensaje de correo electrónico cuando la aplicación de correo electrónico de su dispositivo móvil no admite de forma nativa la protección de datos de Rights Management. 
     
-    Use otro dispositivo para enviarse a usted mismo un mensaje de correo electrónico protegido por derechos al que pueda acceder desde su dispositivo móvil. Por ejemplo, use Outlook en un equipo Windows. Para ver una lista de clientes de correo electrónico que admiten de forma nativa Rights Management, vea la columna CORREO ELECTRÓNICO de la página [Aplicaciones compatibles con la protección de datos de Azure Rights Management](../get-started/requirements-applications.md).
+    Use otro dispositivo para enviarse a usted mismo un mensaje de correo electrónico protegido por derechos al que pueda acceder desde su dispositivo móvil. Por ejemplo, use Outlook en un equipo Windows. Para ver una lista de clientes de correo electrónico que admiten de forma nativa Rights Management, vea la columna CORREO ELECTRÓNICO de la página [Aplicaciones compatibles con la protección de datos de Azure Rights Management](../requirements-applications.md).
 
 - **Un archivo PDF protegido por derechos**: desde un equipo con Windows, utilice el cliente de Azure Information Protection para [proteger un archivo PDF](client-classify-protect.md) y, después, envíe manualmente este archivo PDF protegido por derechos como datos adjuntos de correo electrónico. También puede cargar un archivo PDF en una biblioteca protegida de SharePoint y, después, compartirlo mediante su dirección de correo electrónico.
 
@@ -48,7 +48,3 @@ Para ver estos archivos en la aplicación de visor de Azure Information Protecti
 ## <a name="next-steps"></a>Pasos siguientes
 
 Si tiene preguntas o comentarios sobre esta aplicación que no se tratan en las [Preguntas más frecuentes](mobile-app-faq.md), visite nuestro [sitio de Yammer](https://www.yammer.com/AskIPTeam).
-
-Si la aplicación no funciona como se describe, consulte los recursos enumerados en nuestra página [Reglas internas](../house-rules.md).
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

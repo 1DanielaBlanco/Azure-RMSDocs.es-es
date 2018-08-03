@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ae6d8d0f-4ebc-43fe-a1f6-26b690fd83d0
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d00e0037634601cd92b9f0858c197975ea9f896b
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 984bc1b53b7c4b1ed16183f84853923d7b3f5e79
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30207022"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39373607"
 ---
 # <a name="windows-powershell-script-for-azure-rms-protection-by-using-file-server-resource-manager-fci"></a>Script de Windows PowerShell para la protección de Azure RMS con FCI del Administrador de recursos del servidor de archivos
 
@@ -171,5 +171,3 @@ if (!$Script:isScriptProcess) { exit(-1) } else {exit(0)}
 ---
 
 Volver a [RMS protection with Windows Server File Classification Infrastructure](configure-fci.md) (Protección de RMS con la infraestructura de clasificación de archivos de Windows Server).
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

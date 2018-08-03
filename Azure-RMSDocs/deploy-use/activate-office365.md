@@ -13,12 +13,12 @@ ms.custom: askipteam
 ms.assetid: a2b3e1a2-59a0-4191-bf4c-4485ae7a70a9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 77d511cc466441ffc28d813be9a0ec86ff3d8fa7
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 9cc8d49b62155354b96ad04f76c335be2124f15a
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30205043"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473515"
 ---
 # <a name="how-to-activate-azure-rights-management-from-the-office-365-admin-center"></a>Activación de Azure Rights Management desde el Centro de administración de Office 365
 
@@ -44,7 +44,7 @@ Use estas instrucciones si tiene acceso al servicio Azure Rights Management desd
     >
     >Para activar el servicio Azure Rights Management, debe disponer de un [plan Premium de Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) o de un [plan de Office 365 que incluya Rights Management](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf). 
     
-    Si necesita ayuda para activar el servicio o tiene alguna pregunta relacionada con los requisitos de suscripción, [póngase en contacto con el soporte técnico de Microsoft](../get-started/information-support.md#to-contact-microsoft-support) o use los canales habituales de soporte técnico.
+    Si necesita ayuda para activar el servicio o tiene alguna pregunta relacionada con los requisitos de suscripción, [póngase en contacto con el soporte técnico de Microsoft](../information-support.md#to-contact-microsoft-support) o use los canales habituales de soporte técnico.
 
 4. En la página **Rights Management** , haga clic en **Activar**.
 
@@ -56,4 +56,3 @@ Ahora debería ver **Rights Management está activada** y la opción para desact
 ## <a name="next-steps"></a>Pasos siguientes
 Continúe con la lectura de [Activar Azure Rights Management](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment).
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

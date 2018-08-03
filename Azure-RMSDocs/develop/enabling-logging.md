@@ -14,12 +14,12 @@ ms.assetid: F5AD3826-2292-4A25-AF5C-D17D083F5742
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 906746990fd08a749d2879fbc04b054e49e65f01
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: 68ed6db23caf5cab0a98e4704a36366c721d4194
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2018
-ms.locfileid: "27764495"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39373396"
 ---
 # <a name="how-to-enable-error-and-performance-logging"></a>Procedimiento para habilitar el registro de rendimiento y errores
 El SDK 4.2 de Microsoft Rights Management administra la carga de registro de rendimiento y diagnóstico mediante una única propiedad de dispositivo.
@@ -98,5 +98,3 @@ Obtener el valor de marca de control del registro actual
 **Nota**: Los fragmentos de código de Windows anteriores están en C++. Para C\#, actualice la sintaxis con ‘.’ en lugar de ‘::’.
 
 **Linux/C++**: este SDK tiene algún registro básico que no es tan extensivo como el de otras plataformas. Para más información, consulte la sección de **solución de problemas** del archivo "README.md" en el [SDK de RMS para C++ Portable](https://github.com/AzureAD/rms-sdk-for-cpp#troubleshooting).
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

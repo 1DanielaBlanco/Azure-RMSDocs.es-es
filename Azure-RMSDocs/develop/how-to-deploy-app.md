@@ -14,12 +14,12 @@ ms.assetid: 34dc6d6f-cfe4-4848-9b11-8d90c4b38ef7
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 3b7ff758abeb3f1ddc1ae82349233e437d05dacc
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 3299981f6e45cc8c82da66e2fce07cece552c81f
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2017
-ms.locfileid: "20232843"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39372281"
 ---
 # <a name="deploying-a-service-application-into-a-different-tenant"></a>Implementación de una aplicación de servicio en un inquilino diferente
 
@@ -51,5 +51,3 @@ Si la experiencia deseada no es ofrecer el administrador de TI de *ABC* con un c
 ## <a name="flow-2-abc-it-administrator-provides-the-key-to-the-coolapp-team"></a>Flujo de 2: el administrador de TI de *ABC* proporciona la clave para el equipo de *CoolApp*
 
 Una vez que el administrador de TI de *ABC* crea la entidad de servicio, como se muestra en la **figura 1**, *ABC* proporciona la información al equipo de *CoolApp*. El equipo de *CoolApp* continúa insertando la información en la aplicación de *CoolApp* para su uso en el inquilino de *ABC*.
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

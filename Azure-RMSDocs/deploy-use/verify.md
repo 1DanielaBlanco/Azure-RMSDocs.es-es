@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 08664a01-81a5-4fa5-884c-7306ee55dba0
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 43689f942bae88c9b7099f45a980f0fd96b1bdaf
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 4cdf429527bfc97b4e02438ae45aae80754e5fe1
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30204962"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39474358"
 ---
 # <a name="verifying-the-azure-rights-management-service"></a>Comprobar el servicio Azure Rights Management
 
@@ -32,12 +32,11 @@ Para hacer esta prueba, puede usar las instrucciones que encontrará en [Ayuda a
 Si la prueba no es correcta, revise los pasos de configuración que se indican en [Mapa de ruta de implementación de Azure Information Protection](../plan-design/deployment-roadmap.md).
 
 > [!TIP]
-> Si necesita ayuda adicional, consulte la sección [Opciones de soporte y recursos de la comunidad](../get-started/information-support.md#support-options-and-community-resources) del artículo [Información y soporte técnico para Azure Information Protection](../get-started/information-support.md).
+> Si necesita ayuda adicional, consulte la sección [Opciones de soporte y recursos de la comunidad](../information-support.md#support-options-and-community-resources) del artículo [Información y soporte técnico para Azure Information Protection](../information-support.md).
 
 ## <a name="next-steps"></a>Pasos siguientes
 
 Con el registro de uso, puede supervisar de qué forma se está utilizando el servicio Azure Rights Management en su organización. Para obtener más información, consulte [Registro y análisis del uso del servicio Azure Rights Management](log-analyze-usage.md).
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 

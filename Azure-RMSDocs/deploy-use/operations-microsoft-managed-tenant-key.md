@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 3c48cda6-e004-4bbd-adcf-589815c56c55
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 47653ccfb7ce512f8b9ac2a1a5540a62a7295ec2
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: cac2506f7c98431048c29291ca95f197a02c7fcd
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30208199"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473770"
 ---
 # <a name="microsoft-managed-tenant-key-life-cycle-operations"></a>Administración de Microsoft: Operaciones del ciclo de vida de claves de inquilino
 
@@ -61,7 +61,7 @@ Para exportar la configuración de Azure Information Protection y su clave de in
 
 ### <a name="step-1-initiate-export"></a>Paso 1: Iniciar exportación
 
-- [Póngase en contacto con Soporte técnico de Microsoft](../get-started/information-support.md#to-contact-microsoft-support) para abrir una **incidencia de soporte técnico de Azure Information Protection en la que solicite exportar una clave de Azure Information Protection**. Necesita demostrar que es un administrador del inquilino de Azure Information Protection y que comprende que este proceso tarda varios días en confirmarse. Se aplican cargos de soporte técnico estándar; la exportación de la clave de inquilino no es un servicio de soporte técnico gratuito.
+- [Póngase en contacto con Soporte técnico de Microsoft](../information-support.md#to-contact-microsoft-support) para abrir una **incidencia de soporte técnico de Azure Information Protection en la que solicite exportar una clave de Azure Information Protection**. Necesita demostrar que es un administrador del inquilino de Azure Information Protection y que comprende que este proceso tarda varios días en confirmarse. Se aplican cargos de soporte técnico estándar; la exportación de la clave de inquilino no es un servicio de soporte técnico gratuito.
 
 ### <a name="step-2-wait-for-verification"></a>Paso 2: Esperar comprobación
 
@@ -108,5 +108,4 @@ Si tiene una infracción, la mejor acción que usted o Microsoft puede llevar a 
 |Un individuo no autorizado o malware han tenido derechos de uso de su clave de inquilino, pero la clave en sí no se ha filtrado.|Regenerar la clave de inquilino no resulta útil aquí y requiere el análisis de la causa principal. Si un error de software o de proceso ha sido el responsable de que un individuo no autorizado obtuviera acceso, dicha situación se debe resolver.|
 |Vulnerabilidad descubierta en el algoritmo de RSA, o longitud de clave, o ataques por fuerza bruta se hacen factibles computacionalmente.|Microsoft necesita actualizar Azure Information Protection para que admita nuevos algoritmos y claves más largas que sean resistentes, así como indicar a todos los clientes que renueven sus claves de inquilino.|
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

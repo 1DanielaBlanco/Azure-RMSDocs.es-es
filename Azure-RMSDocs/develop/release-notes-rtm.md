@@ -14,12 +14,12 @@ ms.assetid: CE379738-4E1D-42AD-83F4-F89B70456EBB
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 74f4eacb7601d137e8eb459fad3853ac5ec52e97
-ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
+ms.openlocfilehash: 7f634e554b342e35b359fe870a5b0f033794b9c1
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2018
-ms.locfileid: "30259037"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39373709"
 ---
 # <a name="release-notes"></a>Notas de la versión
 
@@ -165,5 +165,3 @@ El componente de la API de archivo del SDK se ha ampliado y ofrece las siguiente
     3 - The first available language specified in the Rights Management Server (RMS) template.
 
 Si no se puede recuperar ningún nombre ni ninguna descripción, se devuelve un error. Solo puede haber un nombre y una descripción para un LCID específico.
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

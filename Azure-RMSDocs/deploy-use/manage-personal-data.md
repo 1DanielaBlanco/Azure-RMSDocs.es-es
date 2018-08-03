@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 99a51862-83e9-4a1e-873a-a84ae1465f07
 ms.reviewer: aashishr
 ms.suite: ems
-ms.openlocfilehash: f0fc9b01b042c3210abf69804d552607d92c5928
-ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
+ms.openlocfilehash: f42e1318e8be0d805216cffd402a9b87a1259e1e
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34444358"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473855"
 ---
 # <a name="manage-personal-data-for-azure-information-protection"></a>Administración de datos personales de Azure Information Protection
 
@@ -254,7 +254,7 @@ Para eliminar datos personales en los archivos de registro de cliente y los regi
 Siga estos tres pasos para solicitar que Microsoft elimine los datos personales en los registros de seguimiento de documentos, los registros de administración o los registros de uso del servicio Azure Rights Management. 
 
 **Paso 1: Iniciar la solicitud de eliminación**
-[Póngase en contacto con el Soporte técnico de Microsoft](../get-started/information-support.md#to-contact-microsoft-support) para abrir una incidencia de soporte técnico de Azure Information Protection en la que solicite la eliminación de datos de su inquilino. Necesita demostrar que es un administrador del inquilino de Azure Information Protection y entender que este proceso tarda varios días en confirmarse. Al enviar la solicitud, debe proporcionar información adicional, dependiendo de los datos que deban eliminarse.
+[Póngase en contacto con el Soporte técnico de Microsoft](../information-support.md#to-contact-microsoft-support) para abrir una incidencia de soporte técnico de Azure Information Protection en la que solicite la eliminación de datos de su inquilino. Necesita demostrar que es un administrador del inquilino de Azure Information Protection y entender que este proceso tarda varios días en confirmarse. Al enviar la solicitud, debe proporcionar información adicional, dependiendo de los datos que deban eliminarse.
 
 - Para eliminar el registro de administración, proporcione la **fecha de finalización**. Se eliminarán todos los registros de administración hasta esa fecha de finalización.
 - Para eliminar los registros de uso, proporcione la **fecha de finalización**. Se eliminarán todos los registros de uso hasta esa fecha de finalización.
@@ -277,4 +277,3 @@ Solo los usuarios a los que se les hayan asignado [permisos de administrador](#s
 
 Para las acciones de eliminación, la solicitud de soporte técnico actúa como trazo de auditoría y notificación de las acciones realizadas por Microsoft. Una vez completado el proceso, los datos eliminados no estarán disponibles para la búsqueda y exportación; el administrador puede comprobarlo con los cmdlets Get desde el módulo de AADRM.
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

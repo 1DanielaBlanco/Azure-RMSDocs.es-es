@@ -1,6 +1,6 @@
 ---
-title: Implementación de la aplicación (AIP)
-description: En este tema se describe la implementación de la aplicación y los pasos para realizar el proceso.
+title: Implementación de una aplicación - AIP
+description: Este tema describe la implementación de la aplicación y le guía a través de dicha implementación
 keywords: implementar, RMS, AIP
 author: lleonard-msft
 ms.author: alleonar
@@ -14,24 +14,24 @@ ms.assetid: 4B785564-6839-49ED-A243-E2A6DFF88B2E
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 300fb1d14bc4eda93b0e40ffbd9e6c2329c88517
-ms.sourcegitcommit: e21fb3385de6f0e251167e5dc973e90f0e7f2bcf
+ms.openlocfilehash: 365d1bf0e36fda964f185713f5514a91f4c6df53
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2018
-ms.locfileid: "28908092"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473640"
 ---
-# <a name="deploy-into-production"></a>Implementación en producción
+# <a name="deploy-into-production"></a>Implementación en el entorno de producción
 
-Este tema le guía por el proceso de implementación de la aplicación habilitada para Azure Information Protection (AIP)/Rights Management Services (RMS).
+Este tema le guía por el proceso de implementación para la aplicación habilitada para Azure Information Protection (AIP) y Rights Management Services (RMS).
 
-## <a name="request-an-information-protection-integration-agreement-ipia"></a>Solicitud de un contrato de Information Protection Integration (IPIA)
-Para poder lanzar una aplicación desarrollada con AIP/RMS, es necesario solicitar y rellenar un contrato formal con Microsoft.
+## <a name="request-an-information-protection-integration-agreement-ipia"></a>Solicitud de un Contrato de integración de Information Protection (IPIA)
+Para poder lanzar una aplicación desarrollada con AIP y RMS, debe solicitar y completar un contrato formal con Microsoft.
 
-### <a name="begin-the-process"></a>Comenzar el proceso
-Obtenga su IPIA mediante el envío de un correo electrónico a **IPIA@microsoft.com** con la siguiente información:
+### <a name="begin-the-process"></a>Inicio del proceso
+Obtenga su IPIA enviando un correo electrónico a **IPIA@microsoft.com** con la siguiente información:
 
-**Asunto:** Solicitud de IPIA para *nombre de la empresa*
+**Asunto:** Solicitud de IPIA para *nombre de la compañía*
 
 En el cuerpo del correo electrónico, incluya:
 - Nombre de la aplicación y del producto
@@ -46,28 +46,28 @@ Revise los términos y las condiciones del IPIA y devuelva el formulario a **IPI
 - Dirección URL de la empresa
 - Dirección de correo electrónico de la persona de contacto
 - Direcciones adicionales de la empresa (opcional)
-- Nombre de la aplicación de empresa
-- Descripción breve de la aplicación
-- *Id. de inquilino de Azure*
-- *Identificador de la aplicación*
-- Contactos de la empresa, correo electrónico y teléfono para la correspondencia en caso de situaciones críticas
+- Nombre de la aplicación de la empresa
+- Breve descripción de la aplicación
+- *Identificador del inquilino de Azure*
+- *Identificador de aplicación* de la aplicación
+- Contactos de la compañía, correo electrónico y teléfono para la correspondencia en caso de situaciones críticas
 
 ### <a name="completing-the-agreement"></a>Completar el contrato
-Cuando recibamos su formulario, le enviaremos el vínculo IPIA final para firmarlo digitalmente. Después de que lo firme, lo firmará el representante de Microsoft adecuado, con lo que el contrato quedará completado.
+Cuando recibamos su formulario, le enviaremos el vínculo IPIA final para firmar digitalmente. Después de la firma, lo firmará el representante de Microsoft adecuado, con lo que el contrato quedará completado.
 
 ### <a name="already-have-a-signed-ipia"></a>¿Ya tiene un IPIA firmado?
-Si ya tiene un IPIA firmado y desea agregar un nuevo *identificador de aplicación* para una aplicación que va a lanzar, envíe un correo electrónico a **IPIA@microsoft.com** y proporciónenos la siguiente información:
-- Nombre de la aplicación de empresa
-- Descripción breve de la aplicación
-- Identificador de inquilino de Azure (aunque sea el mismo que antes)
-- Identificador de la aplicación
-- Contactos de la empresa, correo electrónico y teléfono para la correspondencia en caso de situaciones críticas
+Si ya tiene un IPIA firmado y desea agregar un nuevo *identificador de aplicación* para una aplicación que se esté lanzando, envíe un correo electrónico a **IPIA@microsoft.com** y proporciónenos la siguiente información:
+- Nombre de la aplicación de la empresa
+- Breve descripción de la aplicación
+- Identificador de inquilino de Azure (incluso si es igual que el anterior)
+- Identificador de aplicación de la aplicación
+- Contactos de la compañía, correo electrónico y teléfono para la correspondencia en caso de situaciones críticas
 
 Tras el envío del correo electrónico, espere hasta 72 horas para el acuse de recibo.
 
-## <a name="deploying-to-the-client-environment"></a>Implementación en el entorno del cliente
+## <a name="deploying-to-the-client-environment"></a>Implementación en el entorno de cliente
 
-Para implementar la aplicación, creada con las herramientas Azure Information Protection (AIP) y Rights Management Services (RMS), necesitará implementar el cliente de RMS 2.1 en la máquina del usuario final.
+Para implementar la aplicación, creada con las herramientas Azure Information Protection (AIP) y Rights Management Services (RMS), necesitará implementar el cliente de RMS 2.1 en el equipo del usuario final.
 
 ### <a name="rms-client-21"></a>Cliente de RMS 2.1
 El cliente de RMS 2.1. está diseñado para proteger el acceso al flujo de información y su uso a través de las aplicaciones habilitadas para AIP y RMS, tanto si están instaladas en su infraestructura local como en un centro de datos de Microsoft.
@@ -82,18 +82,18 @@ El cliente de RMS 2.1 no es un componente del sistema operativo Windows. El clie
 
 ### <a name="creating-your-deployment-package"></a>Creación del paquete de implementación
 
-Le recomendamos que agrupe el paquete de instalador del cliente de RMS con la aplicación o la solución mediante su tecnología de instalación preferida. El cliente de RMS se puede redistribuir libremente con otras aplicaciones y soluciones.
+Le recomendamos que incluya el paquete de instalador del cliente de RMS con la aplicación o la solución mediante su tecnología de instalación preferida. El cliente de RMS se puede redistribuir libremente con otras aplicaciones y soluciones.
 
 Puede instalar el cliente de RMS 2.1 de forma interactiva mediante el instalador del cliente de RMS 2.1 o bien instalarlo de forma silenciosa. Los pasos de integración son los siguientes:
 
--   Descargar el instalador del cliente de RMS 2.1
--   Integrar el instalador del cliente de RMS 2.1 para que se ejecute con el instalador de la aplicación
+-   Descargar el instalador del cliente de RMS 2.1.
+-   Integrar el instalador del cliente de RMS 2.1 para que se ejecute con el instalador de la aplicación.
 
 Un ejemplo de integración del cliente de RMS 2.1 con su aplicación es el paquete [Rights Protected Folder Explorer](https://technet.microsoft.com/library/rights-protected-folder-explorer(v=ws.10).aspx) (Explorador de carpetas protegidas por derechos). Pruebe a instalarlo para entender este enfoque.
 
 ### <a name="make-rms-client-21-a-pre-requisite-for-your-application-install"></a>Hacer que el cliente de RMS 2.1 sea un requisito previo para la instalación de la aplicación
 
-En este caso, creará un requisito previo para que se produzca un error en la instalación de la aplicación si el cliente de RMS 2.1 no está presente en la máquina del usuario final.
+En este caso, creará un requisito previo para que se produzca un error en la instalación de la aplicación si el cliente de RMS 2.1 no está presente en el equipo del usuario final.
 
 Si el cliente no está presente, proporcione un mensaje de error que informe al usuario de dónde puede descargar una copia del cliente de RMS 2.1.
 
@@ -102,28 +102,27 @@ Si el cliente está presente, continúe con la instalación de la aplicación.
 ## <a name="enabling-azure-information-protection-services-with-your-application"></a>Habilitación de los servicios de Azure Information Protection con la aplicación
 
 > [!NOTE]
-> Si ha migrado al nuevo modelo de ADAL para la autenticación, no hace falta que instale **SIA**. Para más información, consulte [Autenticación de ADAL para la aplicación habilitada para RMS](adal-auth.md).
-> También puede **certificar la aplicación para Windows 10**: si actualiza la aplicación para que use la autenticación ADAL en lugar del Ayudante para el inicio de sesión de Microsoft Online, usted y sus clientes podrán: Usar Multi-Factor Authentication. Instalar el cliente de RMS 2.1 sin necesidad de tener privilegios administrativos en la máquina.
+> Si ha migrado al nuevo modelo de ADAL para la autenticación, no hace falta que instale **SIA**. Para obtener más información, vea [ADAL authentication for your RMS enabled application](adal-auth.md) (Autenticación de ADAL de la aplicación habilitada para RMS).
+> También puede **certificar la aplicación para Windows 10**. Si actualiza la aplicación para que use la autenticación ADAL en lugar del Ayudante para el inicio de sesión de Microsoft Online, usted y sus clientes podrán: Usar Multi-Factor Authentication. Instalar el cliente de RMS 2.1 sin necesidad de tener privilegios administrativos en el equipo.
 
-Para que el usuario final aproveche los servicios de Information Protection, debe implementar *Microsoft Online Services - Ayudante para el inicio de sesión (SIA)*. Como desarrollador de la aplicación, no sabe si el usuario final usará Information Protection a través de RMS (de forma local) o a través de Azure Information Protection.
+Para que el usuario final aproveche los servicios de Information Protection, debe implementar *Microsoft Online Services - Ayudante para el inicio de sesión (SIA)*. Como desarrollador de la aplicación, no sabe si el usuario final utilizará Information Protection a través de RMS (de forma local) o a través de Azure Information Protection.
 
 
 > [!IMPORTANT]
-> Si va a ejecutar la aplicación cliente con RMS basado en Azure, deberá crear sus propios inquilinos. Para más información, consulte [Azure RMS requirements: Cloud subscriptions that support Azure RMS](../get-started/requirements-subscriptions.md) (Requisitos de Azure RMS: suscripciones de nube que admiten Azure RMS).
-> Para más información sobre la ejecución con Azure RMS, consulte [Habilitación de la aplicación de servicio para que funcione con RMS basado en la nube](how-to-use-file-api-with-aadrm-cloud.md).
+> Si va a ejecutar la aplicación cliente con RMS basado en Azure, deberá crear sus propios inquilinos. Para obtener más información, vea [Azure RMS requirements: Cloud subscriptions that support Azure RMS](./requirements-subscriptions.md) (Requisitos de Azure RMS: Suscripciones en la nube que son compatibles con Azure RMS).
+> Para más información sobre la ejecución con Azure RMS, vea [Enable your service application to work with cloud based RMS](how-to-use-file-api-with-aadrm-cloud.md) (Habilitar la aplicación de servicio para que funcione con RMS basado en la nube).
 
--   Descargue [Microsoft Online Services - Ayudante para el inicio de sesión](http://www.microsoft.com/download/details.aspx?id=28177) del Centro de descarga de Microsoft.
+-   Descargue el [Asistente para el inicio de sesión de Microsoft Online Services](http://www.microsoft.com/download/details.aspx?id=28177), que podrá conseguir en el Centro de descarga de Microsoft.
 -   Asegúrese de que la implementación de una aplicación con derechos habilitados incluye una comprobación de los requisitos previos para la selección de este servicio.
--   Para realizar sus propias pruebas y para que los usuarios finales usen el servicio en línea, consulte el tema de TechNet [Configuring Rights Management](https://TechNet.Microsoft.Com/library/jj585002.aspx) (Configuración de Rights Management).
+-   Para realizar sus propias pruebas y para que los usuarios finales usen el servicio en línea, vea el tema de TechNet [Configuring Rights Management](https://TechNet.Microsoft.Com/library/jj585002.aspx) (Configuración de Rights Management).
 
-También necesitará utilizar esta guía para configurar su aplicación [Configuración de una aplicación de App Service para usar el inicio de sesión de Azure Active Directory](https://docs.microsoft.com/azure/app-service-mobile/app-service-mobile-how-to-configure-active-directory-authentication).
+También necesitará utilizar esta guía para configurar su aplicación: [Configuración de la aplicación de App Service para usar el inicio de sesión de Azure Active Directory](https://docs.microsoft.com/azure/app-service-mobile/app-service-mobile-how-to-configure-active-directory-authentication).
 
-Para más información sobre cómo permitir que la aplicación use RMS para Azure Rights Management Services, consulte [Habilitación de la aplicación de servicio para que funcione con RMS basado en la nube](how-to-use-file-api-with-aadrm-cloud.md).
+Para obtener más información sobre cómo habilitar la aplicación para que use RMS para Azure Rights Management Services, vea [Enable your application to work with cloud based RMS](how-to-use-file-api-with-aadrm-cloud.md) (Habilitar la aplicación para que funcione con RMS basado en la nube).
 
 ## <a name="related-topics"></a>Temas relacionados
 
-* [Microsoft Online Services - Ayudante para el inicio de sesión](http://www.microsoft.com/download/details.aspx?id=28177)
+* [Ayudante para el inicio de sesión de Microsoft Online Services](http://www.microsoft.com/download/details.aspx?id=28177)
 * [Configuración de Rights Management](https://TechNet.Microsoft.Com/library/jj585002.aspx)
 * [Habilitación de la aplicación de servicio para que funcione con RMS basado en la nube](how-to-use-file-api-with-aadrm-cloud.md)
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

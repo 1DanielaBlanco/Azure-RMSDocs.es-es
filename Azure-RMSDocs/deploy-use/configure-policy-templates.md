@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: ba56e6b165cd378c957b2c54bd41ce54f1830797
-ms.sourcegitcommit: 1b0c387b2848b7dfaee0b0548dde7e41383ffe6e
+ms.openlocfilehash: fed57de220a5448a16a866fae76969eb4f9332de
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39138311"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473872"
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>Configuración y administración de plantillas para Azure Information Protection
 
@@ -46,7 +46,7 @@ Además, las plantillas están configuradas para permitir el acceso sin conexió
 >[!NOTE]
 > Puede cambiar esta configuración, así como los nombres y descripciones de las plantillas predeterminadas. Esto no era posible con el Portal de Azure clásico y sigue sin permitirse en PowerShell.
 
-Estas plantillas predeterminadas facilitan a los usuarios el proceso de empezar a proteger de inmediato la información confidencial de la organización. Estas plantillas pueden usarse con etiquetas de Azure Information Protection o de manera independiente con [aplicaciones y servicios](../understand-explore/applications-support.md) que puedan usar plantillas de Rights Management.
+Estas plantillas predeterminadas facilitan a los usuarios el proceso de empezar a proteger de inmediato la información confidencial de la organización. Estas plantillas pueden usarse con etiquetas de Azure Information Protection o de manera independiente con [aplicaciones y servicios](../applications-support.md) que puedan usar plantillas de Rights Management.
 
 También puedes crear tus propias plantillas personalizadas. Aunque probablemente necesite solo unas pocas plantillas, puede tener un máximo de 500 plantillas personalizadas guardadas en Azure.
 
@@ -164,4 +164,3 @@ Todo lo que se puede hacer en Azure Portal para crear y administrar plantillas s
 
 Para más información sobre cómo configurar la directiva de Azure Information Protection, use los vínculos de la sección [Configuring your organization's policy](configure-policy.md#configuring-your-organizations-policy) (Configuración de la directiva de la organización).  
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

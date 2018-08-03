@@ -14,12 +14,12 @@ ms.assetid: 4ee4fa26-b4f7-478f-b360-be6f421c5718
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: efa05d43cc8541f6781951addc3f6c1ed4268ea5
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: 770bbc39f44d0ee4fe6a2221f9aa6fd336343c77
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2018
-ms.locfileid: "27765652"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39375011"
 ---
 # <a name="rights-management-sdk-42"></a>Rights Management SDK 4.2
 
@@ -50,5 +50,3 @@ Esta versión, RMS SDK 4.2, está disponible para los siguientes sistemas operat
 [Términos y guía del desarrollador](core-concepts.md): el enfoque de RMS SDK 4.2 es ayudarle a compilar aplicaciones habilitadas para AD RMS que aprovechan Right Management Services y simplificarle el proceso lo más posible.
 
 [Referencia de la API](api-reference-4-2.md): RMS SDK 4.2 admite varios sistemas operativos que se indican en la tabla de contenido siguiente.
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

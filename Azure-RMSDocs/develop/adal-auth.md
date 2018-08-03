@@ -14,12 +14,12 @@ ms.assetid: f89f59b7-33d1-4ab3-bb64-1e9bda269935
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 5900a011a4470a46cc86e1bca1ada32b43cb0213
-ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
+ms.openlocfilehash: 01202f34d31569d7835ad57a70e2a2d0d49a9678
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2018
-ms.locfileid: "30258976"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473423"
 ---
 # <a name="configure-your-app-for-adal-authentication"></a>Configuración de la aplicación para autenticación ADAL
 
@@ -29,7 +29,7 @@ En este tema se describen los pasos para configurar la aplicación para autentic
 
 Necesitará lo siguiente:
 
-- Una [suscripción de Microsoft Azure](https://azure.microsoft.com/) (con una evaluación gratuita es suficiente). Para más información, vea [How users sign up for RMS for individuals](../understand-explore/rms-for-individuals-user-sign-up.md) (Cómo se registran los usuarios en RMS para particulares)
+- Una [suscripción de Microsoft Azure](https://azure.microsoft.com/) (con una evaluación gratuita es suficiente). Para más información, vea [How users sign up for RMS for individuals](../rms-for-individuals-user-sign-up.md) (Cómo se registran los usuarios en RMS para particulares)
 - Una suscripción de Microsoft Azure Rights Management (una cuenta gratuita de [RMS para usuarios](https://technet.microsoft.com/library/dn592127.aspx) es suficiente).
 
 > [!NOTE]
@@ -104,4 +104,3 @@ Después de suscribirse a Microsoft Azure:
 
 ![Seleccione GUARDAR](../media/SaveApplication.png)
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

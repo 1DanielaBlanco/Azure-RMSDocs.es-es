@@ -14,12 +14,12 @@ ms.assetid: A348541C-17E0-4024-BF97-84B0099B0E69
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: e6ae24f35aa03996bd26ff891a9cb5a14d751d44
-ms.sourcegitcommit: 2733b1df2ebdda02b60d9471db29e545552f99ff
+ms.openlocfilehash: 0487620c83b5e99b9f54a28c0415afec6ee6ac3f
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2018
-ms.locfileid: "29349787"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39375443"
 ---
 # <a name="linux-setup"></a>Instalación de Linux
 
@@ -47,5 +47,3 @@ También se han compilado correctamente bibliotecas y ejemplos en Windows y OSX,
 - [Introducción](get-started.md)
 - [Novedades](release-notes.md)
 - [Conceptos y términos de desarrollador](core-concepts.md)
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

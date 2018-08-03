@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f5380dc364255fd085c82fd9c0a834afea368c97
-ms.sourcegitcommit: 10f530fa1a43928581da4830a32f020c96736bc8
+ms.openlocfilehash: c40e1b628c4a6160d6ab665293c37b9cefa3fe0c
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/21/2018
-ms.locfileid: "34402156"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39375264"
 ---
 # <a name="byok-pricing-and-restrictions"></a>Precio y restricciones de BYOK
 
@@ -64,4 +64,3 @@ Si ha tomado la decisión de administrar su propia clave, vaya a [Implementació
 
 Si ha decidido permanecer con la configuración predeterminada con la que Microsoft administra su clave, consulte la sección [Pasos siguientes](plan-implement-tenant-key.md#next-steps) del artículo Planeamiento e implementación de su clave de inquilino de Azure Information Protection.
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
