@@ -14,12 +14,12 @@ ms.assetid: e3bdaa6d-e8ca-421a-a429-553bfc54b78b
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: daec2cd2d27245f2eb741eedc1f84ea69c8c0e4f
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: 1ce9cd377484aac8bbb65c7c994b232bd1225a87
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2018
-ms.locfileid: "27764586"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39372155"
 ---
 # <a name="community-resources"></a>Recursos de la Comunidad
 
@@ -40,5 +40,3 @@ La sección de Rights Management Services en el sitio de Connect es donde puede 
 >-   Haga clic en **Directorio** en la barra de comandos
 >-   Busque "Rights Management Services"
 >-   Haga clic en **Unirse** para registrarse
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

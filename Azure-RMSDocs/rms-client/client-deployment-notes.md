@@ -4,7 +4,7 @@ description: Información sobre instalación, sistemas operativos compatibles, c
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/04/2018
+ms.date: 06/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 03cc8c6f-3b63-4794-8d92-a5df4cdf598f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: df86d75cd7337fa4642a9b758312923a3577325f
-ms.sourcegitcommit: 40ac805183589a1c8ef22bc1bd9556bcc92f65e6
+ms.openlocfilehash: 751f1a5bf2728a848bd450ce1081a15ea1e35456
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39376539"
 ---
 # <a name="rms-client-deployment-notes"></a>Notas de la implementación del cliente de RMS
 
@@ -172,13 +173,15 @@ Para realizar la detección de servicios, el cliente RMS comprueba lo siguiente:
     *\<YourTenantURL\>* tiene el formato siguiente: **{GUID}.rms.[Region].aadrm.com**Para encontrar este valor, identifique el valor **RightsManagementServiceId** cuando ejecute el cmdlet [Get-AadrmConfiguration](http://msdn.microsoft.com/library/windowsazure/dn629410.aspx) para Azure RMS.
 
 > [!NOTE]
-> Hay tres excepciones importantes en este flujo de detección de servicios:
+> Hay cuatro excepciones importantes en este flujo de detección de servicios:
 > 
 > - Los dispositivos móviles son más adecuados para usar un servicio en la nube; por tanto, de manera predeterminada, usan la detección de servicios para Azure Rights Management Services (https://discover.aadrm.com). Para reemplazar este valor predeterminado para que los dispositivos móviles usen AD RMS en lugar del servicio Azure Rights Management, especifique los registros SRV en DNS e instale la extensión para dispositivos móviles, como se documenta en [Extensión de Active Directory Rights Management Services para dispositivos móviles](https://technet.microsoft.com/library/dn673574\(v=ws.11\).aspx). 
 >
-> - Cuando Rights Management Service se invoca mediante una etiqueta de Azure Information Protection, la detección de servicios no se realiza. En su lugar, se especifica la dirección URL directamente en la configuración de la etiqueta configurada en la directiva de Azure Information Protection.  
-
+> - Cuando Rights Management Service se invoca mediante una etiqueta de Azure Information Protection, la detección de servicios no se realiza. En su lugar, se especifica la dirección URL directamente en la configuración de la etiqueta configurada en la directiva de Azure Information Protection. 
+>  
 > - Cuando un usuario inicia sesión desde una aplicación de Office, el nombre de usuario (y el dominio) de la autenticación se usan para identificar al inquilino de Azure Information Protection que se debe usar. En este caso, la configuración del registro no es necesaria y el SCP no se comprueba.
+> 
+> - Cuando se ha configurado el [redireccionamiento de DNS](../plan-design/migrate-from-ad-rms-phase3.md#client-reconfiguration-by-using-dns-redirection) para las aplicaciones de escritorio de hacer clic y ejecutar de Office 2016, el cliente RMS busca el servicio Azure Rights Management cuando se le deniega el acceso al clúster de AD RMS que encontró anteriormente. Esta acción de denegación desencadena que el cliente busque el registro SRV, que redirige al cliente al servicio Azure Rights Management de su inquilino. Este registro SRV también permite que Exchange Online descifre mensajes de correo electrónico protegidos por el clúster de AD RMS. 
 
 ### <a name="ad-rms-only-enabling-server-side-service-discovery-by-using-active-directory"></a>Solo AD RMS: habilitación de la detección de servicios de servidor mediante Active Directory
 Si la cuenta tiene privilegios suficientes (administradores de empresa y administrador local para el servidor de AD RMS), puede registrar automáticamente un punto de conexión de servicio (SCP) al instalar el servidor de clúster raíz de AD RMS. Si ya existe un SCP en el bosque, debe eliminarlo primero antes de registrar uno nuevo.
@@ -259,4 +262,3 @@ En algunos casos, deberá redirigir el tráfico durante la detección de servici
 
 6.  Cierre el Editor del Registro.
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

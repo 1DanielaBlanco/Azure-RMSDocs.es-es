@@ -4,7 +4,7 @@ description: Consulte las novedades o los cambios en una versión del cliente de
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/28/2018
+ms.date: 07/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 732eb98b1cbd1af575f15ddc992349d77b436131
-ms.sourcegitcommit: 78d368a4480cc1febedc8535c6c3e184e69caf7f
+ms.openlocfilehash: 61762157ff6419bb325d92470d5264dc9b55f840
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37088266"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39474222"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Cliente de Azure Information Protection: historial de publicación de versiones y directiva de soporte técnico
 
@@ -42,7 +42,62 @@ Use la información siguiente para consultar las novedades o los cambios en una 
 > [!NOTE]
 > Las revisiones secundarias no se enumeran. Por tanto, si tiene algún problema con el cliente de Azure Information Protection, se recomienda que compruebe si se ha corregido en la versión de GA más reciente. Si el problema continúa, compruebe la versión preliminar actual.
 >  
-> Para obtener soporte técnico, consulte la información sobre [Opciones de soporte y recursos de la comunidad](../get-started/information-support.md#support-options-and-community-resources). También lo invitamos a participar en el equipo de Azure Information Protection, en su [sitio de Yammer](https://www.yammer.com/askipteam/).
+> Para obtener soporte técnico, consulte la información sobre [Opciones de soporte y recursos de la comunidad](../information-support.md#support-options-and-community-resources). También lo invitamos a participar en el equipo de Azure Information Protection, en su [sitio de Yammer](https://www.yammer.com/askipteam/).
+
+## <a name="versions-later-than-12950"></a>Versiones posteriores a 1.29.5.0
+
+Si tiene una versión del cliente posterior a la 1.29.5.0, se trata de una compilación preliminar con fines de prueba y evaluación.
+
+Esta versión incluye la versión MSIPC 1.0.3557.524 del cliente RMS.
+
+**Nuevas características**: 
+
+- Compatibilidad con nuevos tipos de información confidencial que le ayudarán a clasificar los documentos que contienen información personal. [Más información](../deploy-use/configure-policy-classification.md#sensitive-information-types-that-require-a-minimum-version-of-the-client) 
+
+- Compatibilidad de etiquetado con el formato **Documento Open XML estricto** en archivos de Word, Excel y PowerPoint. Para más información sobre los formatos Open XML, vea la entrada del blog de Office sobre [nuevas opciones de formato de archivo en el nuevo Office](https://www.microsoft.com/en-us/microsoft-365/blog/2012/08/13/new-file-format-options-in-the-new-office/). 
+
+- Compatibilidad con el estándar ISO de cifrado de archivos PDF cuando se define una nueva [configuración avanzada del cliente](client-admin-guide-customizations.md#protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption). Cuando se configura esta opción, los documentos PDF que se protegen conservar su extensión de nombre de archivo .pdf (en lugar de cambiar a .ppdf) y se pueden abrir con lectores de PDF que admitan este estándar ISO. 
+
+- Compatibilidad con los archivos que se han protegido con Secure Islands cuando esos archivos no sean documentos PDF y de Office. Por ejemplo, proteger archivos de texto e imagen. O archivos que tienen una extensión de nombre de archivo .pfile. Esta compatibilidad habilita nuevos escenarios, como el analizador de Azure Information Protection, que pueden inspeccionar estos archivos para la búsqueda de información confidencial y vuelven a etiquetarlos automáticamente para Azure Information Protection. [Más información](client-admin-guide-customizations.md#support-for-files-protected-by-secure-islands)
+
+- Para el analizador de Azure Information Protection:
+
+    - Nuevo cmdlet, [Update-AIPScanner](/powershell/module/azureinformationprotection/Update-AIPScanner): hay que ejecutarlo después de actualizar desde la versión 1.26.6.0 o una versión anterior.
+    
+    - Nuevo cmdlet, [Get AIPScannerStatus](/powershell/module/azureinformationprotection/Get-AIPScannerStatus): obtiene el estado actual del servicio para el analizador.  
+    
+    - Nuevo cmdlet, [Start-AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan): indica al analizador que inicie un ciclo de exploración única cuando la programación se establece en manual.
+    
+    - SharePoint Server 2010 es compatible con los clientes que tengan [soporte extendido para esta versión de SharePoint](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010).
+    
+**Correcciones**
+
+- Para el analizador de Azure Information Protection:
+    
+    - Para documentos que están protegidos en las bibliotecas de SharePoint, si el parámetro *DefaultOwner* no se usa en el repositorio de datos, el valor de Editor de SharePoint se usa ahora como valor predeterminado en lugar del valor de autor.
+    
+    - Entre los informes del analizador se incluyen "Última modificación por" para documentos de Office. 
+
+- Al clasificar y proteger mediante PowerShell o el analizador, los metadatos de documentos de Office no se quitan ni se cifran.
+
+- La visualización de mensajes de correo electrónico mediante los iconos de flecha Siguiente elemento y Elemento anterior de la barra de herramientas de acceso rápido muestra la etiqueta correcta para cada correo electrónico.
+
+- Permisos personalizados es compatible con las direcciones de correo electrónico del destinatario que contienen un apóstrofo.
+
+- El entorno de equipo se inicializará correctamente (arranque) cuando esta acción se inicie abriendo un documento protegido que se almacena en SharePoint Online. 
+
+**Cambios adicionales**:
+   
+- Para [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration):
+    
+    - Los valores del parámetro *Schedule* ya no son **OneTime**, **Continuous** y **Never**, ahora son **Manual** y **Always**.
+        
+    - El parámetro *Type* se quita, por lo que también se quita de la salida al ejecutar [Get-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Get-AIPScannerConfiguration).
+    
+- En el analizador, la lista de exclusión predeterminada incluye ahora los archivos .rtf. [Más información](client-admin-guide-file-types.md#file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-scanner)
+
+- La versión de directiva ha cambiado a 1.4. La identificación del número de versión es necesaria para [configurar los equipos desconectados](client-admin-guide-customizations.md#support-for-disconnected-computers). 
+
 
 ## <a name="version-12950"></a>Versión 1.29.5.0 
 
@@ -59,7 +114,6 @@ Esta versión incluye la versión MSIPC 1.0.3403.1224 del cliente de RMS.
 - Cuando un archivo de Excel ya tiene la etiqueta y esta aplica marcas visuales, se aplicarán también las marcas visuales de la etiqueta a una nueva hoja.
 
 - Cuando utiliza la configuración avanzada del cliente para [etiquetar un documento de Office utilizando una propiedad personalizada existente](client-admin-guide-customizations.md#label-an-office-document-by-using-an-existing-custom-property), el etiquetado automático no invalida el etiquetado manual.
-
 
 ## <a name="version-127480"></a>Versión 1.27.48.0
 
@@ -226,4 +280,3 @@ Para obtener más información sobre la instalación y el uso del cliente:
 - Para administradores: [Guía para administradores del cliente de Azure Information Protection](client-admin-guide.md)
 
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

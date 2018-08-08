@@ -4,7 +4,7 @@ description: Instrucciones e información para administradores de una red empres
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/26/2018
+ms.date: 07/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 45e1f405c751449148b0bfe3a7249640155778c6
-ms.sourcegitcommit: 1f5a5cb650be2b4c302ad4b7a0b109246da3eb80
+ms.openlocfilehash: 74cb6b6cd03621f52860012331fbf4cf518459dc
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39295532"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473974"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Guía para administradores del cliente de Azure Information Protection
 
@@ -59,7 +59,7 @@ El cliente de Azure Information Protection incluye:
 
 - El cliente de Rights Management que se comunica con Azure Rights Management (Azure RMS) o Active Directory Rights Management Services (AD RMS).
 
-El cliente de Azure Information Protection resulta ideal para trabajar con sus servicios de Azure; Azure Information Protection y su servicio de protección de datos, Azure Rights Management. Sin embargo, con algunas limitaciones, el cliente de Azure Information Protection también funciona con la versión local de Rights Management, AD RMS. Para ver una comparación exhaustiva de las características que admiten Azure Information Protection y AD RMS, consulte [Comparación entre Azure Information Protection y AD RMS](../understand-explore/compare-azure-rms-ad-rms.md). 
+El cliente de Azure Information Protection resulta ideal para trabajar con sus servicios de Azure; Azure Information Protection y su servicio de protección de datos, Azure Rights Management. Sin embargo, con algunas limitaciones, el cliente de Azure Information Protection también funciona con la versión local de Rights Management, AD RMS. Para ver una comparación exhaustiva de las características que admiten Azure Information Protection y AD RMS, consulte [Comparación entre Azure Information Protection y AD RMS](../compare-on-premise.md). 
 
 Si tiene AD RMS y quiere migrar a Azure Information Protection, consulte [Migración desde AD RMS a Azure Information Protection](../plan-design/migrate-from-ad-rms-to-azure-rms.md).
 
@@ -108,7 +108,7 @@ Cuando el cliente esté instalado, utilice la opción **Ayuda y comentarios** pa
 
 El vínculo **Más información** dirige, de forma predeterminada, al sitio web de [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection), pero lo puede configurar con una dirección URL personalizada como uno de los valores de [configuración de directivas](../deploy-use/configure-policy-settings.md) en la directiva de Azure Information Protection.
 
-Use el vínculo **Envíenos sus comentarios** para enviar sugerencias o solicitudes al equipo de Information Protection. No utilice esta opción para obtener soporte técnico, pero, en su lugar, vea [Opciones de soporte y recursos de la comunidad](../get-started/information-support.md#support-options-and-community-resources). 
+Use el vínculo **Envíenos sus comentarios** para enviar sugerencias o solicitudes al equipo de Information Protection. No utilice esta opción para obtener soporte técnico, pero, en su lugar, vea [Opciones de soporte y recursos de la comunidad](../information-support.md#support-options-and-community-resources). 
 
 La opción **Exportar registros** se utiliza para recopilar y adjuntar archivos de registro para el cliente de Azure Information Protection si se le ha pedido que los envíe al soporte técnico de Microsoft. Los usuarios finales también puede utilizar esta opción para enviar estos archivos de registro a su departamento de soporte técnico.
 
@@ -200,9 +200,15 @@ Use el [historial de publicación de versiones y directiva de soporte técnico](
 
 ### <a name="upgrading-the-azure-information-protection-scanner"></a>Actualización del analizador de Azure Information Protection
 
-Para actualizar el analizador de Azure Information Protection, instale la versión más reciente del cliente de Azure Information Protection.
+Para actualizar el analizador de Azure Information Protection, instale la versión más reciente del cliente de Azure Information Protection. Lleve a cabo una de las siguientes acciones únicas:
 
-A continuación, si la versión instalada previamente del cliente era 1.26.6.0 o anterior, vuelva a ejecutar el comando de instalación del analizador con[Install-AIPScanner](/powershell/module/azureinformationprotection/Install-AIPScanner). Se conservarán las opciones de configuración para el analizador y los repositorios. La reinstalación del analizador concede al servicio del analizador permisos de eliminación de cuenta para la base de datos del analizador, que se necesitarán para los informes.
+Para la versión actual de disponibilidad general (GA): 
+
+- Si la versión instalada previamente del cliente era 1.26.6.0 o anterior, vuelva a ejecutar el comando de instalación del analizador con[Install-AIPScanner](/powershell/module/azureinformationprotection/Install-AIPScanner). Se conservarán las opciones de configuración para el analizador y los repositorios. La reinstalación del analizador concede al servicio del analizador permisos de eliminación de cuenta para la base de datos del analizador, que se necesitarán para los informes.
+
+Para la versión preliminar: 
+
+- Si la versión instalada previamente del cliente era 1.26.6.0 o anterior, ejecute [Update-AIPScanner](/powershell/module/azureinformationprotection/Update-AIPScanner) después de instalar el cliente. Se conservarán las opciones de configuración para el analizador y los repositorios. Se requiere la ejecución de este cmdlet para actualizar el esquema de base de datos del analizador y, en caso necesario, también se conceden permisos de eliminación en la base de datos del analizador a la cuenta de servicio del analizador. Hasta que se ejecute este cmdlet de actualización, el analizador no se ejecutará.
 
 ## <a name="uninstalling-the-azure-information-protection-client"></a>Desinstalación del cliente de Azure Information Protection
 
@@ -230,4 +236,3 @@ Si ya ha instalado el cliente, consulte la siguiente información adicional que 
 - [Comandos de PowerShell](client-admin-guide-powershell.md)
 
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
