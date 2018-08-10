@@ -4,7 +4,7 @@ description: Instrucciones de cómo clasificar y proteger sus documentos y corre
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/12/2018
+ms.date: 08/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: baf3edc435672c8339c15ea74f5b5e14d6951f96
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: dbe983b1c777308a01a2c1c9b7a97571cb9a7d08
+ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39371550"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575464"
 ---
 # <a name="user-guide-classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Guía del usuario: Clasificación y protección de archivos y correos electrónicos mediante Azure Information Protection
 
@@ -181,7 +181,7 @@ Puede encontrar más instrucciones sobre procedimientos en la guía del usuario 
 -   [¿Qué desea hacer?](client-user-guide.md#what-do-you-want-to-do)
 
 ## <a name="additional-information-for-administrators"></a>Información adicional para los administradores    
-Para obtener instrucciones de configuración para habilitar la configuración de directivas **Configuración de la opción de permisos personalizados para que esté disponible para los usuarios**, vea [Configuración de la directiva de Azure Information Protection](../deploy-use/configure-policy-settings.md).
+Para obtener instrucciones de configuración para habilitar la configuración de directivas **Configuración de la opción de permisos personalizados para que esté disponible para los usuarios**, vea [Configuración de la directiva de Azure Information Protection](../configure-policy-settings.md).
 
-Otras instrucciones de configuración: [Configuración de la directiva de Azure Information Protection](../deploy-use/configure-policy.md).
+Otras instrucciones de configuración: [Configuración de la directiva de Azure Information Protection](../configure-policy.md).
 

@@ -4,7 +4,7 @@ description: Instrucciones e información para que los administradores configure
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/26/2018
+ms.date: 08/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 983ecdc9-5631-48b8-8777-f4cbbb4934e8
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 8153b189a6e4f77e2a4c1f7d630fbb2f32b667f1
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: 00e044274f27409b39c06b4e6cbd2beaa58eb8f2
+ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39373743"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575437"
 ---
 # <a name="admin-guide-configuring-and-using-document-tracking-for-azure-information-protection"></a>Guía del administrador: Configuración y uso de Seguimiento de documentos para Azure Information Protection
 
@@ -27,7 +27,7 @@ Si tiene una [suscripción que admite el seguimiento de documentos](https://www.
 
 ## <a name="using-powershell-to-manage-the-document-tracking-site"></a>Uso de PowerShell para administrar el sitio de seguimiento de documentos
 
-Las siguientes secciones contienen información sobre cómo puede administrar el sitio de seguimiento de documentos mediante PowerShell. Para obtener instrucciones de instalación del módulo de PowerShell, vea [Instalación del módulo de PowerShell para AADRM](../deploy-use/install-powershell.md). Si ya descargó e instaló el módulo, compruebe el número de versión. Para ello, ejecute: `(Get-Module aadrm –ListAvailable).Version`
+Las siguientes secciones contienen información sobre cómo puede administrar el sitio de seguimiento de documentos mediante PowerShell. Para obtener instrucciones de instalación del módulo de PowerShell, vea [Instalación del módulo de PowerShell para AADRM](../install-powershell.md). Si ya descargó e instaló el módulo, compruebe el número de versión. Para ello, ejecute: `(Get-Module aadrm –ListAvailable).Version`
 
 Para más información sobre cada uno de estos cmdlets, use los vínculos que se proporcionan.
 
@@ -50,7 +50,7 @@ Esta configuración solo afecta a los usuarios finales. Los administradores de A
 
 ### <a name="logging-information-from-the-document-tracking-site"></a>Información de registro desde el sitio de seguimiento de documentos
 
-Cuando tenga una versión mínima de **2.13.0.0**  para el módulo de AADRM, puede utilizar los siguientes cmdlets para descargar la información de registro desde el sitio de seguimiento de documentos:
+Cuando tenga una versión mínima de **2.13.0.0** para el módulo de AADRM, puede utilizar los siguientes cmdlets para descargar la información de registro desde el sitio de seguimiento de documentos:
 
 - [Get-AadrmTrackingLog](/powershell/module/aadrm/Get-AadrmTrackingLog)
     
@@ -108,7 +108,7 @@ Dos campos de los archivos de registro de uso se aplican al seguimiento de docum
 También hay tipos de solicitudes que registran cómo los usuarios y administradores usan el sitio de seguimiento de documentos. Por ejemplo, **RevokeAccess** es el tipo de solicitud cuando un usuario o un administrador en nombre de un usuario ha revocado un documento en el sitio de seguimiento de documentos. Use este tipo de solicitud en combinación con el campo AdminAction para determinar si el usuario ha revocado su propio documento (el campo AdminAction está vacío) o un administrador ha revocado un documento en nombre de un usuario (el campo AdminAction es true).
 
 
-Para obtener más información sobre el registro de uso, consulte [Registro y análisis del uso del servicio Azure Rights Management](../deploy-use/log-analyze-usage.md).
+Para obtener más información sobre el registro de uso, consulte [Registro y análisis del uso del servicio Azure Rights Management](../log-analyze-usage.md).
 
 
 

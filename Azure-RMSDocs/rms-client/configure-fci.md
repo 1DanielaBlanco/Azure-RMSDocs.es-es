@@ -4,7 +4,7 @@ description: Instrucciones para usar el cliente de Rights Management (RMS) con e
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/13/2018
+ms.date: 08/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a9780e355839edaa4b6eccea9692b2a1058affaa
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 850f57534287a7df0a93bfd88399e3417f6aff09
+ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39474195"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575631"
 ---
 # <a name="rms-protection-with-windows-server-file-classification-infrastructure-fci"></a>Protección de RMS con la infraestructura de clasificación de archivos (FCI) de Windows Server
 
@@ -28,7 +28,7 @@ Use este artículo para obtener instrucciones y un script para utilizar el clien
 Esta solución le permite proteger automáticamente todos los archivos en una carpeta de un servidor de archivos que ejecuta Windows Server o bien proteger automáticamente archivos que cumplen criterios específicos. Por ejemplo, los archivos que se han clasificado como poseedores de información confidencial. Esta solución se conecta directamente al servicio Azure Rights Management desde Azure Information Protection para proteger los archivos, por lo que debe tener este servicio implementado en la organización.
 
 > [!NOTE]
-> Aunque Azure Information Protection incluye un [conector](../deploy-use/deploy-rms-connector.md) que admite la infraestructura de clasificación de archivos, dicha solución admite solo la protección nativa (por ejemplo, archivos de Office).
+> Aunque Azure Information Protection incluye un [conector](../deploy-rms-connector.md) que admite la infraestructura de clasificación de archivos, dicha solución admite solo la protección nativa (por ejemplo, archivos de Office).
 > 
 > Para admitir varios tipos de archivo con infraestructura de clasificación de archivos de Windows Server, debe usar el módulo **AzureInformationProtection** de PowerShell, tal como se describe en este artículo. Los cmdlets de Azure Information Protection, como el cliente de Azure Information Protection, admiten la protección genérica, así como la protección nativa, lo que significa que se pueden proteger tipos de archivos que no son documentos de Office. Para más información, vea [Tipos de archivos compatibles con el cliente de Azure Information Protection](client-admin-guide-file-types.md) en la guía para administradores del cliente de Azure Information Protection.
 
@@ -53,7 +53,7 @@ Requisitos previos de estas instrucciones:
     
     - Tiene conexión a Internet y ha configurado los ajustes del equipo si es necesario para un servidor proxy. Por ejemplo: `netsh winhttp import proxy source=ie`
     
-- Ha sincronizado sus cuentas de usuario de Active Directory locales con Azure Active Directory u Office 365, incluidas sus direcciones de correo electrónico. Esto es necesario para todos los usuarios que necesiten tener acceso a los archivos después de que se hayan protegido mediante FCI y el servicio Azure Rights Management. Si no realiza este paso (por ejemplo, en un entorno de prueba), existe la posibilidad de que se bloquee el acceso de los usuarios a estos archivos. Para más información sobre este requisito, consulte [Preparación de usuarios y grupos para Azure Information Protection](../plan-design/prepare.md).
+- Ha sincronizado sus cuentas de usuario de Active Directory locales con Azure Active Directory u Office 365, incluidas sus direcciones de correo electrónico. Esto es necesario para todos los usuarios que necesiten tener acceso a los archivos después de que se hayan protegido mediante FCI y el servicio Azure Rights Management. Si no realiza este paso (por ejemplo, en un entorno de prueba), existe la posibilidad de que se bloquee el acceso de los usuarios a estos archivos. Para más información sobre este requisito, consulte [Preparación de usuarios y grupos para Azure Information Protection](../prepare.md).
     
 - Descargó las plantillas de Rights Management en el servidor de archivos e identificó el id. de la plantilla que protegerá los archivos. Para hacerlo, use el cmdlet [Get-RMSTemplate](/powershell/azureinformationprotection/vlatest/get-rmstemplate). Este escenario no admite las plantillas de departamento, por lo que debe usar una plantilla no configurada para un ámbito, o bien la configuración del ámbito debe incluir la opción de compatibilidad de aplicaciones, de forma que la casilla **Mostrar esta plantilla a todos los usuarios cuando las aplicaciones no admiten la identidad de usuario** esté activada.
 

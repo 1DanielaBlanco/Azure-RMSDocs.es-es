@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d15e4a5e22089fa1ac98303fb00b95d082be872a
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: f6aa26cb64a07e8ccc2415b874e7240897633cd0
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39475002"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489270"
 ---
 # <a name="azure-active-directory-requirements-for-azure-information-protection"></a>Requisitos de Azure Active Directory para Azure Information Protection
 
@@ -47,7 +47,7 @@ El valor de UPN de los usuarios no coincide con su dirección de correo electró
 
 - Esta no es la configuración recomendada. Si no puede cambiar el valor de UPN, configure un identificador de inicio de sesión alternativo para los usuarios e indíqueles cómo usarlo para iniciar sesión en Office. Para más información, consulte [Configuración de identificador de inicio de sesión alternativo](/windows-server/identity/ad-fs/operations/configuring-alternate-login-id) y [Las aplicaciones de Office periódicamente piden credenciales a SharePoint Online, OneDrive y Lync Online](https://support.microsoft.com/help/2913639/office-applications-periodically-prompt-for-credentials-to-sharepoint-online,-onedrive,-and-lync-online).
     
-    Cuando el nombre de dominio del valor de UPN es un dominio que se ha comprobado para el inquilino, agregue el valor de UPN del usuario como otra dirección de correo electrónico al atributo proxyAddresses de Azure AD. Esto permite que el usuario esté autorizado para Azure Rights Management si se especifica su valor de UPN en el momento en que se conceden los derechos de uso. Para más información sobre esto y cómo se autorizan las cuentas de usuario, consulte [Preparación de usuarios y grupos para Azure Information Protection](./plan-design/prepare.md).
+    Cuando el nombre de dominio del valor de UPN es un dominio que se ha comprobado para el inquilino, agregue el valor de UPN del usuario como otra dirección de correo electrónico al atributo proxyAddresses de Azure AD. Esto permite que el usuario esté autorizado para Azure Rights Management si se especifica su valor de UPN en el momento en que se conceden los derechos de uso. Para más información sobre esto y cómo se autorizan las cuentas de usuario, consulte [Preparación de usuarios y grupos para Azure Information Protection](prepare.md).
 
 Dispositivos móviles o equipos Mac que se autentican localmente mediante AD FS o un proveedor de autenticación equivalente:
 

@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 61f349ce-bdd2-45c1-acc5-bc83937fb187
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d6d53635a7f86c9ecc27f654885f9d66569f2b1e
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: 4c515388df31d0541ee88a21fa88da761a5cde30
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39374246"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489059"
 ---
 # <a name="track-and-revoke-your-documents-when-you-use-the-rms-sharing-application"></a>Seguimiento y revocación de documentos cuando se utiliza la aplicación RMS sharing
 
@@ -54,7 +54,7 @@ Acciones que puede realizar en el sitio de seguimiento de documentos:
 Si no ve estas opciones de RMS, es probable que la aplicación RMS sharing no esté instalada en el equipo, que no esté instalada la última versión o que el equipo deba reiniciarse para completar la instalación. Para más información sobre cómo instalar la aplicación de uso compartido, consulte [Descarga e instalación de la aplicación Rights Management sharing](install-sharing-app.md).
 
 > [!NOTE] 
-> Si tiene instalado el [cliente de Azure Information Protection](../rms-client/info-protect-client.md), también puede obtener acceso al sitio de seguimiento de documentos mediante el botón **Proteger**: 
+> Si tiene instalado el [cliente de Azure Information Protection](info-protect-client.md), también puede obtener acceso al sitio de seguimiento de documentos mediante el botón **Proteger**: 
 > 
 > - En una aplicación de Office, en la pestaña **Inicio**, en el grupo **Protección**, haga clic en **Proteger** > **Hacer seguimiento de uso**. 
 

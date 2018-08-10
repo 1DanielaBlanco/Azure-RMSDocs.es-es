@@ -14,19 +14,19 @@ ms.assetid: EA1457D1-282F-4CF3-A23C-46793D2C2F32
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 5f9bd177f3f438e591c9c0974f159c6e85c6f1e9
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 624ea74db4f81b3b8194e97339c69773f6743224
+ms.sourcegitcommit: 7ed2a257f68435fe6807af8975a5477801ec2537
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39473447"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39501258"
 ---
 # <a name="how-to-enable-your-service-application-to-work-with-cloud-based-rms"></a>Habilitación de la aplicación de servicio para que funcione con RMS basado en la nube
 
 En este tema se describe cómo configurar la aplicación de servicio para que use Azure Rights Management. Para más información, consulte [Introducción a Azure Rights Management](https://technet.microsoft.com/library/jj585016.aspx).
 
 **Importante**  
-Para usar la aplicación de servicio de Rights Management Services SDK 2.1 con Azure RMS, debe crear sus propios inquilinos. Para más información, consulte [Requisitos de Azure RMS: Suscripciones en la nube que son compatibles con Azure RMS](./requirements-subscriptions.md)
+Para usar la aplicación de servicio de Rights Management Services SDK 2.1 con Azure RMS, debe crear sus propios inquilinos. Para más información, consulte [Requisitos de Azure RMS: Suscripciones en la nube que son compatibles con Azure RMS](../requirements.md)
 
 ## <a name="prerequisites"></a>Requisitos previos
 

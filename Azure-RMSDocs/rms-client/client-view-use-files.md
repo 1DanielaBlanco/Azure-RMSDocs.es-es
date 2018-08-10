@@ -4,7 +4,7 @@ description: Instrucciones para ver y usar un documento protegido que requiere t
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/17/2018
+ms.date: 08/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ce1c7d4c-b5ff-4672-8b9a-a72129bac992
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a9b09347531bc27c965222e5d8b3c23fe593cd72
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 84a41cb828d2ccd931191f5f0fcf094e3903fb21
+ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39473331"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575505"
 ---
 # <a name="user-guide-view-and-use-files-that-have-been-protected-by-rights-management"></a>Guía del usuario: Visualización y uso de archivos protegidos con Rights Management
 
@@ -69,7 +69,7 @@ Si la organización no tiene una cuenta en la nube para que pueda usarla (para O
 
     Puede comprobar los permisos del archivo haciendo clic en **Permisos**. En el cuadro de diálogo **Permisos**, también puede identificar el propietario del archivo al que acudir si quiere solicitar una nueva versión del archivo con permisos adicionales.
     
-    Para más información sobre los permisos y los derechos de uso que contiene cada uno, consulte los [derechos incluidos en niveles de permisos](../deploy-use/configure-usage-rights.md#rights-included-in-permissions-levels).
+    Para más información sobre los permisos y los derechos de uso que contiene cada uno, consulte los [derechos incluidos en niveles de permisos](../configure-usage-rights.md#rights-included-in-permissions-levels).
 
 4. Para editar el archivo, haga clic en **Guardar como**, que permite guardar el archivo sin la etiqueta y sin protección con su extensión de nombre de archivo original. Luego puede editar el archivo mediante la aplicación que está asociada a ese tipo de archivo. 
     

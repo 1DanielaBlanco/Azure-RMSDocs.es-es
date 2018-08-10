@@ -14,12 +14,12 @@ ms.assetid: 4B785564-6839-49ED-A243-E2A6DFF88B2E
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 365d1bf0e36fda964f185713f5514a91f4c6df53
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 17590360f7e5111678496e2bb386e8a47ae0dd99
+ms.sourcegitcommit: 7ed2a257f68435fe6807af8975a5477801ec2537
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39473640"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39501309"
 ---
 # <a name="deploy-into-production"></a>Implementación en el entorno de producción
 
@@ -109,7 +109,7 @@ Para que el usuario final aproveche los servicios de Information Protection, deb
 
 
 > [!IMPORTANT]
-> Si va a ejecutar la aplicación cliente con RMS basado en Azure, deberá crear sus propios inquilinos. Para obtener más información, vea [Azure RMS requirements: Cloud subscriptions that support Azure RMS](./requirements-subscriptions.md) (Requisitos de Azure RMS: Suscripciones en la nube que son compatibles con Azure RMS).
+> Si va a ejecutar la aplicación cliente con RMS basado en Azure, deberá crear sus propios inquilinos. Para obtener más información, vea [Azure RMS requirements: Cloud subscriptions that support Azure RMS](../requirements.md) (Requisitos de Azure RMS: Suscripciones en la nube que son compatibles con Azure RMS).
 > Para más información sobre la ejecución con Azure RMS, vea [Enable your service application to work with cloud based RMS](how-to-use-file-api-with-aadrm-cloud.md) (Habilitar la aplicación de servicio para que funcione con RMS basado en la nube).
 
 -   Descargue el [Asistente para el inicio de sesión de Microsoft Online Services](http://www.microsoft.com/download/details.aspx?id=28177), que podrá conseguir en el Centro de descarga de Microsoft.

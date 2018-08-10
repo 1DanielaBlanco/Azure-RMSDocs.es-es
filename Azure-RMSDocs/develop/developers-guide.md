@@ -11,12 +11,12 @@ ms.technology: techgroup-identity
 ms.assetid: a53c2df2-a0a2-4f1f-995b-75ba55e4489b
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: cfd090df79e640ef6106f2c72001b2b05969cdf6
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 096f5d02e4bcb39390bcd6f6ed64476f4a74d5eb
+ms.sourcegitcommit: 7ed2a257f68435fe6807af8975a5477801ec2537
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39473906"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39501275"
 ---
 # <a name="azure-information-protection-developers-guide"></a>Guía del desarrollador de Azure Information Protection
 
@@ -40,7 +40,7 @@ Las aplicaciones de servicio proporcionan funcionalidades para proteger la infor
 
 ## <a name="powershell-guides"></a>Guías de PowerShell
 
-Los cdmlets de PowerShell, utilizados por los administradores de Azure Rights Management, también son útiles para desarrollar y probar las aplicaciones de servicio. Para más información, vea [Uso de PowerShell con el cliente de Azure Information Protection](/information-protection/rms-client/client-admin-guide-powershell).
+Los cdmlets de PowerShell, utilizados por los administradores de Azure Rights Management, también son útiles para desarrollar y probar las aplicaciones de servicio. Para más información, vea [Uso de PowerShell con el cliente de Azure Information Protection](/azure/information-protection/rms-client/client-admin-guide-powershell).
 
 ## <a name="user-applications"></a>Aplicaciones de usuario
 
@@ -143,5 +143,5 @@ Cada uno de los siguientes temas presenta instrucciones específicas sobre un as
 ### <a name="see-also"></a>Vea también
 
 - [Terminología de desarrollador](terms.md)
-- [Terminología de Azure Information Protection: profesionales de TI](./terminology.md)
+- [Terminología de Azure Information Protection: profesionales de TI](../terminology.md)
 

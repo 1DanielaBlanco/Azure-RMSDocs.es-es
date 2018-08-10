@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6c500c099a382d4a4a070b05a55043bc66dc9543
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: aa1b24e24d05487014280fd6334d013466b6777f
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39474652"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489134"
 ---
 # <a name="how-office-applications-and-services-support-azure-rights-management"></a>Cómo las aplicaciones y los servicios de Office admiten Azure Rights Management 
 
@@ -34,9 +34,9 @@ Además de la compatibilidad nativa de Office con Azure Rights Management, estas
 
 Si está listo para configurar aplicaciones de Office y el cliente de Azure Information Protection:
 
-- Para configurar aplicaciones de Office, vea [Aplicaciones de Office: configuración para clientes](./deploy-use/configure-office-apps.md).
+- Para configurar aplicaciones de Office, vea [Aplicaciones de Office: configuración para clientes](configure-office-apps.md).
 
-- Para instalar y configurar el cliente de Azure Information Protection, vea [Cliente de Azure Information Protection: instalación y configuración de clientes](./deploy-use/configure-client.md).
+- Para instalar y configurar el cliente de Azure Information Protection, vea [Cliente de Azure Information Protection: instalación y configuración de clientes](configure-client.md).
 
 ## <a name="exchange-online-and-exchange-server"></a>Exchange Online y Exchange Server
 Cuando se usa Exchange Online o Exchange Server, es posible configurar opciones de Information Rights Management (IRM) compatibles con Azure Rights Management. Esta configuración permite a Exchange proporcionar las siguientes soluciones de protección:
@@ -57,9 +57,9 @@ Si usa Exchange local, puede usar las características de IRM con el servicio Az
 
 Si está listo para configurar Exchange para IRM:
 
-- Para Exchange Online, vea [Exchange Online: Configuración de IRM](./deploy-use/configure-office365.md#exchange-online-irm-configuration).
+- Para Exchange Online, vea [Exchange Online: Configuración de IRM](configure-office365.md#exchange-online-irm-configuration).
 
-- Para Exchange local: [Implementación del conector de Azure Rights Management](./deploy-use/deploy-rms-connector.md).
+- Para Exchange local: [Implementación del conector de Azure Rights Management](deploy-rms-connector.md).
 
 
 ## <a name="sharepoint-online-and-sharepoint-server"></a>SharePoint Online y SharePoint Server
@@ -74,7 +74,7 @@ Para un control más específico, puede configurar una lista o biblioteca en el 
 
 En primer lugar, el servicio IRM se debe habilitar para SharePoint. Después, especifique los permisos IRM para una biblioteca. En el caso de SharePoint Online y OneDrive para la Empresa, los usuarios también pueden especificar permisos IRM para su biblioteca de OneDrive para la Empresa. SharePoint no usa plantillas de directiva de derechos, aunque hay valores de configuración de SharePoint que se pueden seleccionar que coinciden con la configuración que se puede especificar en las plantillas.
 
-Si usa SharePoint Server, puede usar la protección IRM implementando el conector Azure Rights Management. Este conector actúa como un relé entre los servidores locales y el servicio en la nube de Rights Management. Para más información, consulte [Implementación del conector de Azure Rights Management](./deploy-use/deploy-rms-connector.md).
+Si usa SharePoint Server, puede usar la protección IRM implementando el conector Azure Rights Management. Este conector actúa como un relé entre los servidores locales y el servicio en la nube de Rights Management. Para más información, consulte [Implementación del conector de Azure Rights Management](deploy-rms-connector.md).
 
 > [!NOTE]
 > Actualmente, hay algunas limitaciones al usar IRM de SharePoint:
@@ -93,9 +93,9 @@ Aunque ya no sea una novedad, la siguiente entrada del blog de Office 365 contie
 
 Si está listo para configurar SharePoint para IRM:
 
-- Para SharePoint Online, vea [SharePoint Online y OneDrive para la Empresa: Configuración de IRM](./deploy-use/configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration).
+- Para SharePoint Online, vea [SharePoint Online y OneDrive para la Empresa: Configuración de IRM](configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration).
 
-- Para Sharepoint Server, vea [Implementación del conector de Azure Rights Management](./deploy-use/deploy-rms-connector.md).
+- Para Sharepoint Server, vea [Implementación del conector de Azure Rights Management](deploy-rms-connector.md).
 
 
 ## <a name="next-steps"></a>Pasos siguientes
@@ -104,4 +104,4 @@ Si tiene Office 365, es posible que le interese revisar [Soluciones de protecci�
 
 Para conocer otras aplicaciones y servicios compatibles con el servicio Azure Rights Management de Azure Information Protection, vea [Compatibilidad de aplicaciones con el servicio Azure Rights Management](applications-support.md).
 
-Si está listo para comenzar la implementación, que incluye la configuración de estas aplicaciones y servicios, vea el [Mapa de ruta de implementación de Azure Information Protection](./plan-design/deployment-roadmap.md).
+Si está listo para comenzar la implementación, que incluye la configuración de estas aplicaciones y servicios, vea el [Mapa de ruta de implementación de Azure Information Protection](deployment-roadmap.md).

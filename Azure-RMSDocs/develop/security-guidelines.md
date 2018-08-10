@@ -12,12 +12,12 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: 194e676807145dffdf326fe782f4b4051876552d
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: cb4195b1b63c39d1d6e47d1c94d2f7e1c2c83e63
+ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39371856"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575852"
 ---
 # <a name="security-best-practices-for-azure-information-protection"></a>Procedimientos recomendados de seguridad para Azure Information Protection
 
@@ -81,7 +81,7 @@ AIP no admite la modificación del código en tiempo de ejecución ni la modific
 
 Si la aplicación no interpreta y aplica correctamente los derechos que se expresan en la licencia de emisión de AIP, puede poner una mayor cantidad de información a disposición de otros de una manera que el propietario de la información no pretendía. Un ejemplo de esto es cuando una aplicación permite que un usuario guarde información sin cifrar en un medio nuevo cuando la licencia de emisión solo confiere derechos para ver la información.
 
-El sistema AIP organiza los derechos en diferentes agrupaciones. Para más información, consulte [Configuración de los derechos de uso para Azure Rights Management](../deploy-use/configure-usage-rights.md).
+El sistema AIP organiza los derechos en diferentes agrupaciones. Para más información, consulte [Configuración de los derechos de uso para Azure Rights Management](../configure-usage-rights.md).
 
 ### <a name="azure-information-protection"></a>Azure Information Protection  
 API permite que un usuario descifre información o no; la información no tiene ninguna protección inherente. Si un usuario tiene el derecho para descifrar la información, la API lo permite, y la aplicación es responsable de administrar o proteger esa información una vez descifrada. Una aplicación es responsable de administrar su entorno e interfaz para impedir el uso no autorizado de información; por ejemplo, deshabilitando los botones **Imprimir** y **Copiar** si una licencia solo concede el derecho REPRODUCIR. El conjunto de pruebas debe comprobar que la aplicación funciona correctamente en todos los derechos de licencia que reconoce.

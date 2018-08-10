@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 65fa46d7a978eb87b455d34075bdb3f939a133f7
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: b535b90afe43cd262cb637606eb6060c7c2ee277
+ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39474045"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575665"
 ---
 # <a name="rights-management-sharing-application-administrator-guide"></a>Guía del administrador de la aplicación Rights Management sharing
 
@@ -28,7 +28,7 @@ ms.locfileid: "39474045"
 
 Use la siguiente información si es responsable de la aplicación Microsoft Rights Management sharing en una red de empresa, o si desea más información técnica que la que aparece en [Manual del usuario de la aplicación Rights Management sharing](sharing-app-user-guide.md) o en [FAQ for Microsoft Rights Management Sharing Application for Windows](http://go.microsoft.com/fwlink/?LinkId=303971) (Preguntas más frecuentes sobre la aplicación Microsoft Rights Management sharing para Windows):
 
-La aplicación RMS sharing resulta más adecuada para trabajar con Azure Information Protection, puesto que esta configuración de implementación admite el envío de datos adjuntos protegidos a los usuarios de otra organización, así como opciones tales como notificaciones por correo electrónico y seguimiento de documentos con revocación. Sin embargo, también funciona con la versión local, AD RMS, pero con algunas limitaciones. Para ver una comparación exhaustiva de las características que admiten Azure Information Protection y AD RMS, consulte [Comparación entre Azure Information Protection y AD RMS](../compare-on-premise.md). Si tiene AD RMS y quiere migrar a Azure Information Protection, consulte [Migración desde AD RMS a Azure Information Protection](../plan-design/migrate-from-ad-rms-to-azure-rms.md).
+La aplicación RMS sharing resulta más adecuada para trabajar con Azure Information Protection, puesto que esta configuración de implementación admite el envío de datos adjuntos protegidos a los usuarios de otra organización, así como opciones tales como notificaciones por correo electrónico y seguimiento de documentos con revocación. Sin embargo, también funciona con la versión local, AD RMS, pero con algunas limitaciones. Para ver una comparación exhaustiva de las características que admiten Azure Information Protection y AD RMS, consulte [Comparación entre Azure Information Protection y AD RMS](../compare-on-premise.md). Si tiene AD RMS y quiere migrar a Azure Information Protection, consulte [Migración desde AD RMS a Azure Information Protection](../migrate-from-ad-rms-to-azure-rms.md).
 
 Para obtener información técnica general sobre la aplicación Rights Management sharing, información sobre la protección nativa y genérica, los tipos de archivo compatibles, las extensiones de nombres de archivo y sobre cómo cambiar el nivel de protección predeterminado, vea [Información general técnica de la aplicación Microsoft Rights Management sharing](sharing-app-admin-guide-technical.md). 
 
@@ -345,7 +345,7 @@ Dado que la aplicación RMS sharing no es compatible con WSUS, puede usar la sig
 ## <a name="azure-information-protection-only-configuring-document-tracking"></a>Solo para Azure Information Protection: configuración del seguimiento de documentos
 Si tiene una [suscripción que admite el seguimiento de documentos](https://www.microsoft.com/cloud-platform/azure-information-protection-features), el sitio de seguimiento de documentos está habilitado de manera predeterminada para todos los usuarios de su organización. El seguimiento de documentos mostrará información, como las direcciones de correo electrónico de las personas que intentaron acceder a documentos protegidos que los usuarios compartieron, cuándo estas personas intentaron obtener acceso a ellos y su ubicación. Si mostrar esta información está prohibido en su organización debido a los requisitos de privacidad, puede deshabilitar el acceso al sitio de seguimiento de documentos mediante el cmdlet [Disable-AadrmDocumentTrackingFeature](/powershell/module/aadrm/disable-aadrmdocumenttrackingfeature). Puede volver a habilitar el acceso al sitio en cualquier momento, mediante [Enable-AadrmDocumentTrackingFeature](/powershell/module/aadrm/enable-aadrmdocumenttrackingfeature), así como comprobar si el acceso está actualmente habilitado o deshabilitado mediante [Get AadrmDocumentTrackingFeature](/powershell/module/aadrm/get-aadrmdocumenttrackingfeature).
 
-Para ejecutar estos cmdlets, debe tener como mínimo la versión **2.3.0.0** del módulo de Azure Rights Management para Windows PowerShell. Para obtener instrucciones de instalación, vea [Instalación del módulo de PowerShell para AADRM](../deploy-use/install-powershell.md).
+Para ejecutar estos cmdlets, debe tener como mínimo la versión **2.3.0.0** del módulo de Azure Rights Management para Windows PowerShell. Para obtener instrucciones de instalación, vea [Instalación del módulo de PowerShell para AADRM](../install-powershell.md).
 
 > [!TIP]
 > Si ya descargó e instaló el módulo, compruebe el número de versión. Para ello, ejecute: `(Get-Module aadrm –ListAvailable).Version`
@@ -388,7 +388,7 @@ Dos campos de los archivos de registro de uso se aplican al seguimiento de docum
 También hay tipos de solicitudes que registran cómo los usuarios y administradores usan el sitio de seguimiento de documentos. Por ejemplo, **RevokeAccess** es el tipo de solicitud cuando un usuario o un administrador en nombre de un usuario ha revocado un documento en el sitio de seguimiento de documentos. Use este tipo de solicitud en combinación con el campo AdminAction para determinar si el usuario ha revocado su propio documento (el campo AdminAction está vacío) o un administrador ha revocado un documento en nombre de un usuario (el campo AdminAction es true).
 
 
-Para obtener más información sobre el registro de uso, consulte [Registro y análisis del uso del servicio Azure Rights Management](../deploy-use/log-analyze-usage.md).
+Para obtener más información sobre el registro de uso, consulte [Registro y análisis del uso del servicio Azure Rights Management](../log-analyze-usage.md).
 
 ## <a name="ad-rms-only-support-for-multiple-email-domains-within-your-organization"></a>Solo AD RMS: Compatibilidad con varios dominios de correo electrónico dentro de su organización
 Si usa AD RMS y los usuarios de su organización tienen varios dominios de correo electrónico, quizás como resultado de una fusión o adquisición, debe realizar la siguiente modificación en el Registro:

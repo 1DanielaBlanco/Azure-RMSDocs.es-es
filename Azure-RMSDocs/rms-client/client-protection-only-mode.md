@@ -4,7 +4,7 @@ description: Información para los usuarios que ejecutan el cliente de Azure Inf
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/14/2018
+ms.date: 08/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 16042717-0d7a-41f5-87e3-12826fda35df
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: d55ef8caa7540cba2cd783613f5ea373ba1d545c
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: ce7d502a4d8f3515be67762cfa39a695a5b562fd
+ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39372400"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575767"
 ---
 # <a name="user-guide-protection-only-mode-for-the-azure-information-protection-client"></a>Guía del usuario: Modo de solo protección para el cliente de Azure Information Protection
 
@@ -57,7 +57,7 @@ El modo de solo protección se ejecuta en los siguientes escenarios:
 
 ## <a name="supported-tasks-for-protection-only-mode"></a>Tareas admitidas para el modo de solo protección
 
-- Proteger (y desproteger) documentos y correos electrónicos desde aplicaciones de Office mediante la característica Information Rights Management (IRM) de Office; por ejemplo: haga clic en **Archivo** > **Información** > **Proteger documento** > **Restringir acceso**. Para más información, vea [Uso de protección de la información con Office 365, Office 2016 u Office 2013](../deploy-use/help-users.md).
+- Proteger (y desproteger) documentos y correos electrónicos desde aplicaciones de Office mediante la característica Information Rights Management (IRM) de Office; por ejemplo: haga clic en **Archivo** > **Información** > **Proteger documento** > **Restringir acceso**. Para más información, vea [Uso de protección de la información con Office 365, Office 2016 u Office 2013](../help-users.md).
 
 - Proteger (y desproteger) archivos con el Explorador de archivos de Windows: haga clic con el botón derecho en el archivo, los archivos o la carpeta > **Clasificar y proteger**. Para aplicar la protección que ha configurado el administrador, en el cuadro de diálogo **Clasificar y proteger: Azure Information Protection**, haga clic en **Seleccionar plantilla** y elija una de las plantillas disponibles.
 

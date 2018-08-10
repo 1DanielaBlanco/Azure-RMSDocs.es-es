@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 2cdc7bde-4044-4021-b887-11476f99afd9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f529b761ef757612b621e948a49805448f9414ba
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: a450aabe8b2e318e4cb7be65f9c4d7d48941dc95
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39474672"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39488767"
 ---
 # <a name="how-applications-support-the-azure-rights-management-service"></a>Cómo admiten las aplicaciones el servicio Azure Rights Management
 
@@ -30,11 +30,11 @@ Use la información siguiente para conocer cómo las aplicaciones y servicios de
 
 En algunos casos, el servicio Azure Rights Management aplica la protección automáticamente, según las directivas que configuren los administradores. Por ejemplo, este es el caso de las bibliotecas de SharePoint y las reglas de transporte de Exchange. En otros casos, los usuarios finales deben aplicar la protección por sí mismos desde sus aplicaciones. Por ejemplo, los usuarios pueden seleccionar una etiqueta de clasificación configurada para aplicar la protección, o bien pueden seleccionar una plantilla u opciones específicas. Los usuarios aplican protección cuando quieren proteger un archivo para compartirlo y, al mismo tiempo, restringir su acceso o uso a determinados usuarios o a usuarios ajenos a la organización.
 
-Las plantillas facilitan a los usuarios (y a los administradores que configuran las directivas) la aplicación del nivel de protección adecuado y restringen el acceso a personas de dentro de la organización. Aunque en el servicio Azure Rights Management se incluyen dos plantillas predeterminadas, es probable que quiera crear plantillas personalizadas para reducir las ocasiones en las que los usuarios y los administradores deben especificar opciones individuales. Para obtener más información sobre las plantillas, vea [Configuración y administración de plantillas para Azure Information Protection](./deploy-use/configure-policy-templates.md).
+Las plantillas facilitan a los usuarios (y a los administradores que configuran las directivas) la aplicación del nivel de protección adecuado y restringen el acceso a personas de dentro de la organización. Aunque en el servicio Azure Rights Management se incluyen dos plantillas predeterminadas, es probable que quiera crear plantillas personalizadas para reducir las ocasiones en las que los usuarios y los administradores deben especificar opciones individuales. Para obtener más información sobre las plantillas, vea [Configuración y administración de plantillas para Azure Information Protection](configure-policy-templates.md).
 
-En los casos en que los usuarios deban aplicar ellos mismos la protección, asegúrese de proporcionarles las instrucciones y las directrices sobre cómo y cuándo deben hacerlo. Las instrucciones deben ser específicas de la aplicación y las versiones que se usan y del uso que se hace de ellas. Proporcione también a los usuarios información sobre cuándo y cómo aplicar la protección adecuada para el negocio. Para más información, vea [Ayuda a los usuarios para proteger archivos mediante Azure Rights Management](./deploy-use/help-users.md).
+En los casos en que los usuarios deban aplicar ellos mismos la protección, asegúrese de proporcionarles las instrucciones y las directrices sobre cómo y cuándo deben hacerlo. Las instrucciones deben ser específicas de la aplicación y las versiones que se usan y del uso que se hace de ellas. Proporcione también a los usuarios información sobre cuándo y cómo aplicar la protección adecuada para el negocio. Para más información, vea [Ayuda a los usuarios para proteger archivos mediante Azure Rights Management](help-users.md).
 
-Para obtener información sobre cómo configurar estas aplicaciones para el servicio Azure Rights Management de Azure Information Protection, vea [Configurar aplicaciones para Azure Rights Management](./deploy-use/configure-applications.md).
+Para obtener información sobre cómo configurar estas aplicaciones para el servicio Azure Rights Management de Azure Information Protection, vea [Configurar aplicaciones para Azure Rights Management](configure-applications.md).
 
 Los servicios de búsqueda se pueden integrar con Rights Management de maneras diferentes. Por ejemplo: 
 

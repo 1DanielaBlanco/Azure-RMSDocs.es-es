@@ -13,12 +13,12 @@ ms.technology: techgroup-identity
 ms.assetid: 5ac121b3-d7a0-40e4-8fe7-90bf4cf796f1
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a503c4232847828bf32d889f4702fbfed39463ad
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 15df93cfe3a88e3aaafefcb0df05579a726e6d84
+ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39473719"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575835"
 ---
 # <a name="change-permissions-on-files-that-have-been-protected-by-rights-management"></a>Change permissions on files that have been protected by Rights Management (Cambiar permisos de archivos protegidos por Rights Management)
 
@@ -33,7 +33,7 @@ Cuando un archivo está protegido por Rights Management, puede cambiar los permi
 >
 > De forma similar, si quiere agregar o quitar un permiso, no puede especificar solo ese permiso para agregarlo o quitarlo, sino que debe especificar todos los permisos que deben tener los usuarios especificados.
 
-Si es el propietario del archivo que quiere volver a proteger (por ejemplo, lo ha protegido con la aplicación RMS sharing), obtendrá permisos de forma automática para volver a proteger el archivo. Si no es el propietario, puede que tenga permisos o no para volver a proteger el archivo, en función de los permisos que tenga actualmente el archivo protegido. Para volver a proteger un archivo, se necesita el [derecho de uso de Control total](../deploy-use/configure-usage-rights.md#usage-rights-and-descriptions) .
+Si es el propietario del archivo que quiere volver a proteger (por ejemplo, lo ha protegido con la aplicación RMS sharing), obtendrá permisos de forma automática para volver a proteger el archivo. Si no es el propietario, puede que tenga permisos o no para volver a proteger el archivo, en función de los permisos que tenga actualmente el archivo protegido. Para volver a proteger un archivo, se necesita el [derecho de uso de Control total](../configure-usage-rights.md#usage-rights-and-descriptions) .
 
 Por ejemplo, si otro usuario protegió el archivo mediante la aplicación Rights Management sharing y especificó un grupo al que usted pertenece y **Copropietario** como permiso personalizado, podrá volver a proteger el archivo. Pero si dicho usuario no especificó su nombre o un grupo al que usted pertenece, o bien si seleccionó **Revisor – Ver y editar** o una plantilla que no le permite quitar los permisos, no podrá volver a proteger el archivo. La manera más sencilla de averiguarlo es intentando proteger el archivo de nuevo.
 

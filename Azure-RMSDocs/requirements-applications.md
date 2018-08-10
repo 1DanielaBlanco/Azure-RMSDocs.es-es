@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 279602d6fd0312134e6eceaecf139da70c9d51e5
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 540d176047e538e0f4137947d6aab136d4b105eb
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39474762"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489906"
 ---
 # <a name="applications-that-support-azure-rights-management-data-protection"></a>Aplicaciones compatibles con la protección de datos de Azure Rights Management
 
@@ -210,5 +210,5 @@ Para comprobar otros requisitos, vea [Requisitos para Azure Information Protecti
 
 Para más información sobre la compatibilidad de Azure RMS con las aplicaciones más usadas, vea [Compatibilidad de aplicaciones con el servicio Azure Rights Management](./applications-support.md).
 
-Para más información sobre cómo configurar las aplicaciones de uso más común para Azure RMS, vea [Configuring applications for Azure Rights Management](./deploy-use/configure-applications.md) (Configuración de aplicaciones para Azure Rights Management).
+Para más información sobre cómo configurar las aplicaciones de uso más común para Azure RMS, vea [Configuring applications for Azure Rights Management](configure-applications.md) (Configuración de aplicaciones para Azure Rights Management).
 

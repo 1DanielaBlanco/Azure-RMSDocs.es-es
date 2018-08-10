@@ -10,12 +10,12 @@ ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: 403d5d2222438136e5d449dbe4b26b693ad566d0
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: eb99fb447702dd2f453c1caacbb8ccd341ed127b
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39474642"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489491"
 ---
 # <a name="step-2-configure-the-azure-information-protection-policy"></a>Paso 2: Configuración de la directiva de Azure Information Protection
 
@@ -32,7 +32,7 @@ Aunque Azure Information Protection incluye una directiva predeterminada que se 
        > [!NOTE]
        > Es posible que su directiva predeterminada sea ligeramente diferente a la de este tutorial. Por ejemplo, tiene una etiqueta denominada **Interno** en lugar de **General**, y **Secreto** en lugar de **Extremadamente confidencial**. Quizá no tenga las subetiquetas denominadas **Solo destinatarios**, o no tenga ninguna etiqueta en absoluto. Estos cambios se deben a que hay diferentes versiones de la directiva predeterminada, en función de cuándo se ha creado para el inquilino. O bien, es posible que la haya editado manualmente antes de iniciar el tutorial.
        > 
-       > Si la directiva predeterminada tiene un aspecto diferente, puede seguir usando este tutorial, pero sea consciente de estos cambios al usar las instrucciones y las imágenes siguientes. Si quiere modificar la directiva predeterminada para que coincida con la directiva predeterminada actual, vea [Directiva predeterminada de Azure Information Protection](./deploy-use/configure-policy-default.md).
+       > Si la directiva predeterminada tiene un aspecto diferente, puede seguir usando este tutorial, pero sea consciente de estos cambios al usar las instrucciones y las imágenes siguientes. Si quiere modificar la directiva predeterminada para que coincida con la directiva predeterminada actual, vea [Directiva predeterminada de Azure Information Protection](configure-policy-default.md).
     
     - Con la configuración predeterminada, algunas etiquetas no tienen distintivos visuales configurados. Los marcadores visuales son pie de página, encabezado y marca de agua. En función de la directiva predeterminada, algunas etiquetas también podrían tener protección establecida. Por ejemplo: 
     
@@ -151,10 +151,10 @@ Ahora que ya ha dado un vistazo a la directiva predeterminada y ha hecho algunos
 
 |Si desea obtener más información|Información adicional|
 |--------------------------------|--------------------------|
-|Acerca de la directiva predeterminada y las diferentes versiones|[Directiva predeterminada de Azure Information Protection](./deploy-use/configure-policy-default.md)|
-|Configuración de la directiva|[Configuración de la directiva de Azure Information Protection](./deploy-use/configure-policy.md)|
-|Instrucciones detalladas para configurar una etiqueta para la protección|[Cómo configurar una etiqueta para la protección de Rights Management](./deploy-use/configure-policy-protection.md)|
-|Información detallada sobre los permisos|[Configurar los derechos de uso para Azure Rights Management](./deploy-use/configure-usage-rights.md)|
+|Acerca de la directiva predeterminada y las diferentes versiones|[Directiva predeterminada de Azure Information Protection](configure-policy-default.md)|
+|Configuración de la directiva|[Configuración de la directiva de Azure Information Protection](configure-policy.md)|
+|Instrucciones detalladas para configurar una etiqueta para la protección|[Cómo configurar una etiqueta para la protección de Rights Management](configure-policy-protection.md)|
+|Información detallada sobre los permisos|[Configurar los derechos de uso para Azure Rights Management](configure-usage-rights.md)|
 
 
 

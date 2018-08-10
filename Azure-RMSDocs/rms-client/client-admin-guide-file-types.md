@@ -4,7 +4,7 @@ description: Detalles técnicos sobre tipos de archivos, extensiones de nombres 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2018
+ms.date: 08/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: cdf710737c4bcf5ffbfdd3ab6476f6b5cd118854
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: fcba3a4bf59c3c18dab53de9e06d5484e092465c
+ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39371288"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575597"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>Guía del administrador: Tipos de archivos compatibles con el cliente de Azure Information Protection
 
@@ -63,7 +63,7 @@ Los siguientes tipos de archivo se pueden clasificar aunque no estén protegidos
 
 Otros tipos de archivo admiten la clasificación cuando también están protegidos. Para conocer estos tipos de archivo, vea la sección [Tipos de archivos compatibles para protección y clasificación](#supported-file-types-for-classification-and-protection).
 
-Por ejemplo, en la actual [directiva predeterminada](../deploy-use/configure-policy-default.md), la etiqueta **General** aplica la clasificación pero no la protección. Podría aplicar la etiqueta **General** a un archivo denominado ventas.pdf, pero no a un archivo denominado ventas.txt. 
+Por ejemplo, en la actual [directiva predeterminada](../configure-policy-default.md), la etiqueta **General** aplica la clasificación pero no la protección. Podría aplicar la etiqueta **General** a un archivo denominado ventas.pdf, pero no a un archivo denominado ventas.txt. 
 
 Además, en la directiva predeterminada actual, **Confidencial\Todos los empleados** aplica la clasificación y la protección. Podría aplicar esta etiqueta a un archivo denominado ventas.pdf y a un archivo denominado ventas.txt. También podría aplicar solamente protección a estos archivos, sin clasificación.
 
@@ -79,7 +79,7 @@ El cliente de Azure Information Protection admite la protección en dos niveles 
 
 Puede cambiar el nivel de protección predeterminado que el cliente de Azure Information Protection aplica. Puede cambiar el nivel predeterminado de nativo a genérico, de genérico a nativo, e incluso impedir que el cliente de Azure Information Protection aplique protección. Para más información, consulte la sección [Cambio del nivel de protección predeterminado de los archivos](#changing-the-default-protection-level-of-files) de este artículo.
 
-La protección de los datos se puede aplicar automáticamente cuando un usuario selecciona una etiqueta que el administrador ha configurado, o los usuarios pueden especificar su propia configuración personalizada de protección mediante [niveles de permiso](../deploy-use/configure-usage-rights.md#rights-included-in-permissions-levels). 
+La protección de los datos se puede aplicar automáticamente cuando un usuario selecciona una etiqueta que el administrador ha configurado, o los usuarios pueden especificar su propia configuración personalizada de protección mediante [niveles de permiso](../configure-usage-rights.md#rights-included-in-permissions-levels). 
 
 ### <a name="file-sizes-supported-for-protection"></a>Tamaños de archivo compatibles para protección
 

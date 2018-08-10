@@ -4,7 +4,7 @@ description: Instrucciones para quitar etiquetas de clasificación y la protecci
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/12/2018
+ms.date: 08/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ''
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 2b7973c2f0a0edeeba262d647243bfce643f7f88
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: f74354ea3c588093b4fefcf98ce0b4cbf807aedb
+ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39373012"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575784"
 ---
 # <a name="user-guide-remove-labels-and-protection-from-files-and-emails-that-have-been-labeled-by-azure-information-protection-or-protected-by-rights-management"></a>Guía del usuario: Eliminación de etiquetas y protección de archivos y correos electrónicos etiquetados con Azure Information Protection o protegidos con Rights Management
 
@@ -78,7 +78,7 @@ Puede encontrar más instrucciones sobre procedimientos en la guía del usuario 
 - [¿Qué desea hacer?](client-user-guide.md#what-do-you-want-to-do)
 
 ## <a name="additional-information-for-administrators"></a>Información adicional para los administradores    
-Para obtener instrucciones de configuración para habilitar la configuración de directivas **Configuración de la opción de permisos personalizados para que esté disponible para los usuarios**, vea [Configuración de la directiva de Azure Information Protection](../deploy-use/configure-policy-settings.md).
+Para obtener instrucciones de configuración para habilitar la configuración de directivas **Configuración de la opción de permisos personalizados para que esté disponible para los usuarios**, vea [Configuración de la directiva de Azure Information Protection](../configure-policy-settings.md).
 
-Otras instrucciones de configuración: [Configuración de la directiva de Azure Information Protection](../deploy-use/configure-policy.md).
+Otras instrucciones de configuración: [Configuración de la directiva de Azure Information Protection](../configure-policy.md).
 

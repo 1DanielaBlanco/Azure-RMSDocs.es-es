@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 8fdad425-5daf-4ce1-822f-9d2fb0b87df1
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 772b6a27dd1e3b9a3f6f36df55793ce105736284
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: d3daeefc4053cbe4cd7740a7cd3ad07c94c63c08
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39475012"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39488733"
 ---
 # <a name="how-file-servers-that-run-windows-server-and-use-file-classification-infrastructure-fci-support-azure-rights-management"></a>Cómo los servidores de archivos que ejecutan Windows Server y usan la infraestructura de clasificación de archivos (FCI) son compatibles con Azure Rights Management
 
@@ -30,7 +30,7 @@ Para proteger todos los tipos de archivo, no use el conector de RMS. En su lugar
 
 Las directivas de clasificación se pueden configurar completamente y son enormemente ampliables para que puedas prevenir la pérdida potencial de datos de usuarios autorizados y no autorizados. Incluso pueden ayudar a reducir el riesgo de que los administradores de la red pierdan datos, ya que se pueden configurar directivas que no requieran que dichos administradores tengan acceso a los archivos.
 
-Para obtener instrucciones sobre cómo implementar y configurar el conector de RMS para archivos de Office, consulte [Implementación del conector de Azure Rights Management](./deploy-use/deploy-rms-connector.md).
+Para obtener instrucciones sobre cómo implementar y configurar el conector de RMS para archivos de Office, consulte [Implementación del conector de Azure Rights Management](deploy-rms-connector.md).
 
 Para obtener instrucciones sobre cómo usar el script de Windows PowerShell para todos los tipos de archivos, consulte [Protección de RMS con la infraestructura de clasificación de archivos de Windows Server & #40; FCI & #41;](./rms-client/configure-fci.md).
 
