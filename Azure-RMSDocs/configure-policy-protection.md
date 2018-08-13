@@ -179,7 +179,7 @@ Al hacer clic en **Guardar**, los cambios están disponibles para los usuarios y
 
 Las etiquetas secundarias **Todos los empleados** y **Solo destinatarios** de las etiquetas **Confidencial** y **Extremadamente confidencial** de la [directiva predeterminada](configure-policy-default.md) proporcionan ejemplos de cómo puede configurar las etiquetas que aplican la protección. También puede usar los ejemplos siguientes para configurar la protección para diferentes escenarios. 
 
-En cada uno de los ejemplos siguientes, en la hoja de su \<*nombre de etiqueta*>, seleccione **Proteger** y, a continuación, seleccione **Protección** para abrir la hoja ** Protección**.
+En cada uno de los ejemplos siguientes, en la hoja de su \<*nombre de etiqueta*>, seleccione **Proteger** y, a continuación, seleccione **Protección** para abrir la hoja  **Protección**.
 
 ### <a name="example-1-label-that-applies-do-not-forward-to-send-a-protected-email-to-a-gmail-account"></a>Ejemplo 1: Etiqueta que aplica No reenviar para enviar un correo electrónico protegido a una cuenta de Gmail
 
