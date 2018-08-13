@@ -4,7 +4,7 @@ description: Información sobre cómo personalizar el cliente de Azure Informati
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2018
+ms.date: 08/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 7bc9e67ae029cedc734f3060fe43f62367a805ba
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: 2008a40e03e502c4dad85826d957434b218b151e
+ms.sourcegitcommit: 1eddd81dc659ffa38872b81a1bf4b5f69f71c30e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39371499"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39631578"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Guía del administrador: Configuraciones personalizadas del cliente de Azure Information Protection
 
@@ -29,11 +29,11 @@ Algunas de estas opciones requieren la modificación del Registro y otras usan l
 
 ### <a name="how-to-configure-advanced-client-configuration-settings-in-the-portal"></a>Cómo establecer opciones de configuración de cliente avanzadas en el portal
 
-1. Si aún no lo ha hecho, en una nueva ventana del explorador, [inicie sesión en Azure Portal](../deploy-use/configure-policy.md#signing-in-to-the-azure-portal) y, después, vaya hasta la hoja **Azure Information Protection**.
+1. Si aún no lo ha hecho, en una nueva ventana del explorador, [inicie sesión en Azure Portal](../configure-policy.md#signing-in-to-the-azure-portal) y, después, vaya hasta la hoja **Azure Information Protection**.
 
 2. Desde la opción de menú **CLASIFICACIONES** > **Etiquetas**: seleccione **Directivas**.
 
-3. En la hoja **Azure Information Protection: Directivas**, seleccione el menú contextual (**...** ) junto a la directiva para que contenga la configuración avanzada. Después, seleccione **Configuración avanzada**.
+3. En la hoja **Azure Information Protection: Directivas**, seleccione el menú contextual (**...**) junto a la directiva para que contenga la configuración avanzada. Después, seleccione **Configuración avanzada**.
     
     Puede establecer la configuración avanzada para la directiva global, así como para las directivas con ámbito.
 
@@ -41,7 +41,7 @@ Algunas de estas opciones requieren la modificación del Registro y otras usan l
 
 5. Asegúrese de que los usuarios de esta directiva reinician las aplicaciones de Office que hubieran abierto.
 
-6. Si ya no necesita la configuración y desea revertir al comportamiento predeterminado: en la hoja **Configuración avanzada**, seleccione el menú contextual (**...** ) situado junto a la configuración que ya no necesita y, después, seleccione **Eliminar**. Después, haga clic en **Guardar y cerrar**.
+6. Si ya no necesita la configuración y desea revertir al comportamiento predeterminado: en la hoja **Configuración avanzada**, seleccione el menú contextual (**...**) situado junto a la configuración que ya no necesita y, después, seleccione **Eliminar**. Después, haga clic en **Guardar y cerrar**.
 
 ## <a name="prevent-sign-in-prompts-for-ad-rms-only-computers"></a>Evitar solicitudes de inicio de sesión solo para equipos AD RMS
 
@@ -51,7 +51,7 @@ Busque el siguiente nombre de valor y después establezca los datos del valor en
 
 **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnablePolicyDownload** 
 
-Independientemente de esta configuración, el cliente de Azure Information Protection sigue el [proceso de detección del servicio de RMS](../rms-client/client-deployment-notes.md#rms-service-discovery) estándar para buscar su clúster de AD RMS.
+Independientemente de esta configuración, el cliente de Azure Information Protection sigue el [proceso de detección del servicio de RMS](client-deployment-notes.md#rms-service-discovery) estándar para buscar su clúster de AD RMS.
 
 ## <a name="sign-in-as-a-different-user"></a>Inicio de sesión como un usuario diferente
 
@@ -78,7 +78,7 @@ Además:
 
 ## <a name="enforce-protection-only-mode-when-your-organization-has-a-mix-of-licenses"></a>Exigencia del modo de solo protección cuando la organización tiene una combinación de licencias
 
-Si la organización no tiene ninguna licencia de Azure Information Protection, pero tiene licencias de Office 365 que incluyen el servicio de Azure Rights Management para la protección de datos, el cliente de Azure Information Protection para Windows se ejecuta automáticamente en [el modo de solo protección](../rms-client/client-protection-only-mode.md).
+Si la organización no tiene ninguna licencia de Azure Information Protection, pero tiene licencias de Office 365 que incluyen el servicio de Azure Rights Management para la protección de datos, el cliente de Azure Information Protection para Windows se ejecuta automáticamente en [el modo de solo protección](client-protection-only-mode.md).
 
 Sin embargo, si la organización tiene una suscripción para Azure Information Protection, de forma predeterminada todos los equipos Windows pueden descargar la directiva de Azure Information Protection. El cliente de Azure Information Protection no lleva a cabo la comprobación de licencias ni el cumplimiento. 
 
@@ -104,9 +104,9 @@ Busque el siguiente nombre de valor y establezca los datos del valor en **0**:
 
 **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnablePolicyDownload** 
 
-Asegúrese de que el cliente tenga un archivo de directiva válido denominado **Policy.msip** en la carpeta **%LocalAppData%\Microsoft\MSIP**. Si es necesario, puede exportar la directiva global o una directiva de ámbito desde Azure Portal y copiar el archivo exportado en el equipo cliente. También puede utilizar este método para reemplazar un archivo de directiva no actualizado con la directiva publicada más reciente. Sin embargo, la exportación de la directiva no es compatible con el escenario donde un usuario pertenece a más de una directiva de ámbito.
+Asegúrese de que el cliente tenga un archivo de directiva válido denominado **Policy.msip** en la carpeta **%LocalAppData%\Microsoft\MSIP**. Si es necesario, puede exportar la directiva global o una directiva de ámbito desde Azure Portal y copiar el archivo exportado en el equipo cliente. También puede utilizar este método para reemplazar un archivo de directiva no actualizado con la directiva publicada más reciente. Sin embargo, la exportación de la directiva no es compatible con el escenario donde un usuario pertenece a más de una directiva de ámbito. También tenga en cuenta que si los usuarios seleccionan la opción **Restablecer configuración** de [Ayuda y comentarios](client-admin-guide.md#help-and-feedback-section), esta acción elimina el archivo de directiva y hace que el cliente no funcione hasta que se reemplace manualmente el archivo de directiva o el cliente se conecte al servicio para descargar la directiva.
 
-Al exportar la directiva, esta acción descarga un archivo comprimido con varias versiones de la directiva que se corresponden a las distintas versiones del cliente de Azure Information Protection:
+Al exportar la directiva desde Azure Portal, se descarga un archivo comprimido que contiene varias versiones de la directiva. Estas versiones de la directiva se corresponden con las distintas versiones del cliente de Azure Information Protection:
 
 1. Descomprima el archivo y use la tabla siguiente para identificar qué archivo de directiva necesita. 
     
@@ -122,7 +122,7 @@ Al exportar la directiva, esta acción descarga un archivo comprimido con varias
 
 ## <a name="hide-or-show-the-do-not-forward-button-in-outlook"></a>Mostrar u ocultar el botón No reenviar en Outlook
 
-El método recomendado para configurar esta opción es mediante la [configuración de directiva](../deploy-use/configure-policy-settings.md) **Agregar el botón No reenviar a la cinta de Outlook**. Sin embargo, también puede configurar esta opción mediante una [configuración de cliente avanzada](#how-to-configure-advanced-client-configuration-settings-in-the-portal) que se establece en Azure Portal.
+El método recomendado para configurar esta opción es mediante la [configuración de directiva](../configure-policy-settings.md) **Agregar el botón No reenviar a la cinta de Outlook**. Sin embargo, también puede configurar esta opción mediante una [configuración de cliente avanzada](#how-to-configure-advanced-client-configuration-settings-in-the-portal) que se establece en Azure Portal.
 
 Al establecer esta configuración, se oculta o se muestra el botón **No reenviar** en la cinta de Outlook. Esta configuración no tiene ningún efecto en la opción No reenviar en los menús de Office.
 
@@ -134,7 +134,7 @@ Para establecer esta configuración avanzada, especifique las cadenas siguientes
 
 ## <a name="make-the-custom-permissions-options-available-or-unavailable-to-users"></a>Configuración de las opciones de permisos personalizados para que estén disponibles o no disponibles para los usuarios
 
-El método recomendado para configurar esta opción es mediante la [configuración de directiva](../deploy-use/configure-policy-settings.md) **Configuración de la opción de permisos personalizados para que esté disponible para los usuarios**. Sin embargo, también puede configurar esta opción mediante una [configuración de cliente avanzada](#how-to-configure-advanced-client-configuration-settings-in-the-portal) que se establece en Azure Portal. 
+El método recomendado para configurar esta opción es mediante la [configuración de directiva](../configure-policy-settings.md) **Configuración de la opción de permisos personalizados para que esté disponible para los usuarios**. Sin embargo, también puede configurar esta opción mediante una [configuración de cliente avanzada](#how-to-configure-advanced-client-configuration-settings-in-the-portal) que se establece en Azure Portal. 
 
 Cuando establece esta configuración y publica la directiva para los usuarios, las opciones de permisos personalizados están visibles para que los usuarios seleccionen su propia configuración de protección o están ocultas para que los usuarios no puedan seleccionar su propia configuración de protección a menos que se les solicite.
 
@@ -147,7 +147,7 @@ Para establecer esta configuración avanzada, especifique las cadenas siguientes
 
 ## <a name="permanently-hide-the-azure-information-protection-bar"></a>Ocultación de manera permanente de la barra de Azure Information Protection
 
-Esta opción utiliza una [configuración de cliente avanzada](#how-to-configure-advanced-client-configuration-settings-in-the-portal) que se debe definir en Azure Portal. Úsela solo cuando la [configuración de directiva](../deploy-use/configure-policy-settings.md) **Mostrar la barra de Information Protection en las aplicaciones de Office** está establecida en **Activado**.
+Esta opción utiliza una [configuración de cliente avanzada](#how-to-configure-advanced-client-configuration-settings-in-the-portal) que se debe definir en Azure Portal. Úsela solo cuando la [configuración de directiva](../configure-policy-settings.md) **Mostrar la barra de Information Protection en las aplicaciones de Office** está establecida en **Activado**.
 
 Cuando se establece esta configuración y se publica la directiva para los usuarios, y un usuario decide no mostrar la barra de Azure Information Protection en sus aplicaciones de Office, la barra permanece oculta. Esto ocurre cuando el usuario desactiva la opción **Mostrar barra** en la pestaña **Inicio**, grupo **Protección** , botón **Proteger**. Esta configuración no tiene ningún efecto si el usuario cierra la barra utilizando el icono **Cerrar esta barra**.
 
@@ -193,7 +193,7 @@ Para establecer esta configuración avanzada, especifique las cadenas siguientes
 
 Esta opción utiliza una [configuración de cliente avanzada](#how-to-configure-advanced-client-configuration-settings-in-the-portal) que se debe definir en Azure Portal. 
 
-Cuando utilice la [configuración de directiva](../deploy-use/configure-policy-settings.md) de **Todos los documentos y mensajes de correo electrónico deben tener una etiqueta** , se pedirá a los usuarios que seleccionen una etiqueta cuando guarden por primera vez un documento de Office y cuando envíen un mensaje de correo electrónico. Para los documentos, los usuarios pueden seleccionar **No ahora**  para descartar temporalmente el aviso para seleccionar una etiqueta y volver al documento. Sin embargo, no pueden cerrar el documento guardado sin etiquetarlo. 
+Cuando utilice la [configuración de directiva](../configure-policy-settings.md) de **Todos los documentos y mensajes de correo electrónico deben tener una etiqueta** , se pedirá a los usuarios que seleccionen una etiqueta cuando guarden por primera vez un documento de Office y cuando envíen un mensaje de correo electrónico. Para los documentos, los usuarios pueden seleccionar **No ahora** para descartar temporalmente el aviso para seleccionar una etiqueta y volver al documento. Sin embargo, no pueden cerrar el documento guardado sin etiquetarlo. 
 
 Al configurar esta opción, se quita la opción **Ahora no** para que los usuarios tengan que seleccionar una etiqueta cuando se guarda el documento por primera vez.
 
@@ -209,15 +209,11 @@ Esta opción de configuración está actualmente en versión preliminar y sujeta
 
 Esta opción utiliza una [configuración de cliente avanzada](#how-to-configure-advanced-client-configuration-settings-in-the-portal) que se debe definir en Azure Portal. 
 
-Al configurar esta opción, cambia el [comportamiento predeterminado](../deploy-use/configure-policy-classification.md#how-automatic-or-recommended-labels-are-applied) de cómo el cliente de Azure Information Protection aplica etiquetas automáticas y recomendadas como sigue:
+Al configurar esta opción, se cambia el [comportamiento predeterminado](../configure-policy-classification.md#how-automatic-or-recommended-labels-are-applied) de cómo el cliente de Azure Information Protection aplica etiquetas automáticas y recomendadas a los documentos: 
 
-- La clasificación automática se aplica a Word, Excel, PowerPoint y Outlook. Para los documentos, la clasificación automática se ejecuta continuamente en segundo plano. Para Outlook, la clasificación automática se ejecuta cuando se envían mensajes de correo electrónico. 
-    
-    No se puede utilizar la clasificación automática para documentos etiquetados previamente de manera manual, o etiquetados previamente de manera automática, con una clasificación más alta. La excepción a este comportamiento es el uso del analizador de Azure Information Protection con el parámetro OverrideLabel activado.
+- Para Word, Excel y PowerPoint, la clasificación automática se ejecuta continuamente en segundo plano.  
 
-- La clasificación recomendada se aplica a Word, Excel y PowerPoint. Para estos documentos, la clasificación recomendada se ejecuta continuamente en segundo plano. No se puede utilizar la clasificación recomendada para Outlook.
-    
-    Puede utilizar la clasificación recomendada para los documentos etiquetados previamente, con o sin una clasificación más alta. 
+El comportamiento no cambia para Outlook.
 
 Cuando el cliente de Azure Information Protection comprueba periódicamente los documentos en busca de las reglas de condición que se han especificado, este comportamiento permite la clasificación y protección automática y recomendada para los documentos que se almacenan en SharePoint Online. Los archivos de gran tamaño también se guardan más rápidamente porque las reglas de condición ya se han ejecutado. 
 
@@ -393,7 +389,7 @@ Esta opción utiliza una [configuración de cliente avanzada](#how-to-configure-
 
 De forma predeterminada, el analizador de Azure Information Protection se ejecuta con un nivel de integridad bajo. Esta configuración proporciona un mayor aislamiento de seguridad, pero a costa del rendimiento. Un nivel de integridad bajo es adecuado si el analizador se ejecuta con una cuenta que tiene derechos con privilegios (por ejemplo, una cuenta de administrador local) debido a que esta configuración ayuda a proteger el equipo que ejecuta el analizador.
 
-Sin embargo, cuando la cuenta de servicio que ejecuta el analizador tiene únicamente los derechos que se documentan en la sección de [requisitos previos del analizador](../deploy-use/deploy-aip-scanner.md#prerequisites-for-the-azure-information-protection-scanner), el nivel de integridad bajo no es necesario, y no se recomienda porque afecta negativamente al rendimiento. 
+Sin embargo, cuando la cuenta de servicio que ejecuta el analizador tiene únicamente los derechos que se documentan en la sección de [requisitos previos del analizador](../deploy-aip-scanner.md#prerequisites-for-the-azure-information-protection-scanner), el nivel de integridad bajo no es necesario, y no se recomienda porque afecta negativamente al rendimiento. 
 
 Para obtener más información acerca de los niveles de integridad de Windows, vea [What is the Windows Integrity Mechanism?](https://msdn.microsoft.com/library/bb625957.aspx) (¿Qué es el mecanismo de integridad de Windows?).
 
