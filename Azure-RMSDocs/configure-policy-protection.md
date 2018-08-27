@@ -4,18 +4,16 @@ description: Puede proteger sus documentos y mensajes de correo electrónico má
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/02/2018
+ms.date: 08/14/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: b41add3430fbf00a372a5ec54d1ecd8c27fa7fa6
-ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
+ms.openlocfilehash: 16cb22a7f16b82056d58d569dc0d65b3b16d0ae1
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39490678"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42807071"
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Configuración de una etiqueta para la protección de Rights Management
 
@@ -90,9 +88,9 @@ No es necesario que Exchange esté configurado para Azure Information Protection
     
     - **Establecer permisos definidos por el usuario (versión preliminar)**: para permitir que los usuarios especifiquen a quién se le debe conceder permisos y cuáles. Después, puede ajustar esta opción y elegir solo Outlook, o Word, Excel, PowerPoint y el Explorador de archivos. Esta opción no se admite, de modo que no funcionará al configurar una etiqueta para la [clasificación automática](configure-policy-classification.md).
         
-        Si elige la opción para Outlook: la etiqueta se muestra en Outlook y el comportamiento resultante cuando los usuarios aplican la etiqueta es el mismo que el de la opción No reenviar.
+        Si elige la opción para Outlook: la etiqueta se muestra en Outlook y el comportamiento resultante cuando los usuarios aplican la etiqueta es el mismo que el de la opción [No reenviar](configure-usage-rights.md#do-not-forward-option-for-emails).
         
-        Si elige la opción para Word, Excel, PowerPoint y el Explorador de archivos: si esta opción está establecida, la etiqueta se muestra en estas aplicaciones. El comportamiento resultante cuando los usuarios aplican la etiqueta consiste en mostrar el cuadro de diálogo para que los usuarios seleccionen permisos personalizados. En este cuadro de diálogo, los usuarios deben especificar los permisos, los usuarios o los grupos y las fechas de expiración. Asegúrese de que los usuarios tengan instrucciones e indicaciones sobre cómo proporcionar estos valores.
+        Si elige la opción para Word, Excel, PowerPoint y el Explorador de archivos: si esta opción está establecida, la etiqueta se muestra en estas aplicaciones. El comportamiento resultante cuando los usuarios aplican la etiqueta consiste en mostrar el cuadro de diálogo para que los usuarios seleccionen permisos personalizados. En este cuadro de diálogo, los usuarios eligen uno de los [niveles de permisos predefinidos](configure-usage-rights.md#rights-included-in-permissions-levels), examinan o especifican los usuarios o grupos y, si lo desean, pueden definir una fecha de expiración. Asegúrese de que los usuarios tengan instrucciones e indicaciones sobre cómo proporcionar estos valores.
     
     - **Select a predefined template** (Seleccionar una plantilla predefinida): para usar una de las plantillas predeterminadas o una plantilla personalizada que configuró. Tenga en cuenta que esta opción no se muestra para las nuevas etiquetas o si se está modificando una etiqueta en la que antes se usó la opción **Establecer permisos**.
     
@@ -110,10 +108,11 @@ No es necesario que Exchange esté configurado para Azure Information Protection
         
         ###### <a name="more-information-about-add-any-authenticated-users"></a>Más información acerca de **Agregar todos los usuarios autenticados**. 
         Esta configuración no limita quién puede acceder al contenido que protege la etiqueta, aunque sí mantiene cifrado el contenido y le ofrece las opciones para restringir cómo se puede usar el contenido (permisos) y el acceso a este (expiración y acceso sin conexión). Sin embargo, la aplicación que abre el contenido protegido debe ser compatible con la autenticación que se va a usar. Por este motivo, los proveedores sociales federados, como Google, y la autenticación de código de acceso de un solo uso deben utilizarse solo para correo electrónico, y solo cuando utilice Exchange Online y las nuevas capacidades de Office 365 Message Encryption. Las cuentas Microsoft se pueden usar con el visor de Azure Information Protection y Hacer clic y ejecutar de Office 2016. 
-        
-        Algunos casos típicos para cualquier configuración de usuarios autenticados: - No le importa quién ve el contenido, pero desea restringir cómo se usa. Por ejemplo, no desea que el contenido se edite, copie o imprima.
-            - No es necesario restringir quién tiene acceso al contenido, pero desea poder realizar un seguimiento de quién lo abre y, potencialmente, revocarlo.
-            - Tiene un requisito por el cual se debe cifrar el contenido en reposo y en tránsito, pero no requiere controles de acceso.     
+          
+        Algunos escenarios típicos para cualquier configuración de usuarios autenticados:  
+                - No le importa quién pueda ver el contenido, pero desea restringir la forma en que se usa. Por ejemplo, no desea que el contenido se edite, copie o imprima.  
+                - No es necesario restringir quién tiene acceso al contenido, pero desea poder realizar un seguimiento de quién lo abre y, potencialmente, revocarlo.  
+                - Tiene un requisito por el cual se debe cifrar el contenido en reposo y en tránsito, pero no requiere controles de acceso.  
         
     - Seleccione **Escribir detalles** para especificar manualmente las direcciones de correo electrónico de usuarios individuales o grupos (internos o externos). O bien, puede usar esta opción para especificar todos los usuarios de otra organización escribiendo el nombre de dominio de dicha organización. También puede usar esta opción para los proveedores sociales escribiendo su nombre de dominio, como **gmail.com**, **hotmail.com** o **outlook.com**.
         
@@ -156,9 +155,9 @@ No es necesario que Exchange esté configurado para Azure Information Protection
     
     La opción de permisos definidos por el usuario permite a los usuarios especificar a quién se le deben conceder permisos y cuáles. Después, puede refinar esta opción y elegir solo Outlook (valor predeterminado), o Word, Excel, PowerPoint y el Explorador de archivos. Esta opción no se admite, de modo que no funcionará al configurar una etiqueta para la [clasificación automática](configure-policy-classification.md).
     
-    Si elige la opción para Outlook: la etiqueta se muestra en Outlook y el comportamiento resultante cuando los usuarios aplican la etiqueta es el mismo que el de la opción No reenviar.
+    Si elige la opción para Outlook: la etiqueta se muestra en Outlook y el comportamiento resultante cuando los usuarios aplican la etiqueta es el mismo que el de la opción [No reenviar](configure-usage-rights.md#do-not-forward-option-for-emails).
     
-    Si elige la opción para Word, Excel, PowerPoint y el Explorador de archivos: la etiqueta se muestra en estas aplicaciones. El comportamiento resultante cuando los usuarios aplican la etiqueta consiste en mostrar el cuadro de diálogo para que los usuarios seleccionen permisos personalizados. En este cuadro de diálogo, los usuarios deben especificar los permisos, los usuarios o los grupos y las fechas de expiración. Asegúrese de que los usuarios tengan instrucciones e indicaciones sobre cómo proporcionar estos valores.
+    Si elige la opción para Word, Excel, PowerPoint y el Explorador de archivos: si esta opción está establecida, la etiqueta se muestra en estas aplicaciones. El comportamiento resultante cuando los usuarios aplican la etiqueta consiste en mostrar el cuadro de diálogo para que los usuarios seleccionen permisos personalizados. En este cuadro de diálogo, los usuarios eligen uno de los [niveles de permisos predefinidos](configure-usage-rights.md#rights-included-in-permissions-levels), examinan o especifican los usuarios o grupos y, si lo desean, pueden definir una fecha de expiración. Asegúrese de que los usuarios tengan instrucciones e indicaciones sobre cómo proporcionar estos valores.
 
 10. Haga clic en **Aceptar** para cerrar la hoja **Protección** y ver la elección de **Definido por el usuario** o la plantilla elegida para la opción **Protección** de la hoja **Etiqueta**.
 

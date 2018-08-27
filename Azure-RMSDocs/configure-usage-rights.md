@@ -4,20 +4,18 @@ description: Conozca e identifique los derechos específicos que se usan al prot
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/30/2018
+ms.date: 08/22/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 48a2cf7c8d827ce5a9be9b35e6f03e5d5479aa71
-ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
+ms.openlocfilehash: 61d57cb33175c3c3e87d615cee65e2b82f21ab74
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39490488"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42808779"
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>Configuración de los derechos de uso para Azure Rights Management
 
@@ -127,7 +125,13 @@ Cuando se selecciona esta opción, se cifra el correo electrónico y los destina
 
 Del mismo modo, de manera predeterminada, los [documentos de Office](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM) sin protección que se adjuntan al correo electrónico heredan los mismos permisos. Estos documentos se protegen de manera automática y cuando los destinatarios los descargan, pueden guardarlos, editarlos, copiarlos e imprimirlos desde las aplicaciones de Office. Cuando un destinatario guarda el documento, se puede guardar con un nombre nuevo e incluso con un formato distinto, pero solo están disponibles los formatos de archivo compatibles con la protección para que el documento no se pueda guardar sin la protección original. Si quiere que cada archivo adjunto tenga derechos de uso diferentes, o en el caso de que el archivo adjunto sea un documento de Office incompatible con esta protección heredada, proteja el archivo antes de adjuntarlo al correo electrónico. Luego, puede asignar los derechos de uso específicos que necesite para el archivo.
 
-También puede cambiar esta herencia de cifrado de los documentos para los destinatarios que ven el documento en su explorador. Considere usar esta configuración cuando no sea necesario conservar la protección original del documento una vez que se autentica el usuario. Para hacer este cambio, use el comando `Set-IRMConfiguration -DecryptAttachmentFromPortal $true` de PowerShell para Exchange Online. Luego, cuando estos destinatarios descarguen el documento, se quitará la protección. Para más información, consulte la entrada [Admin control for attachments now available in Office 365 Message Encryption](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Admin-control-for-attachments-now-available-in-Office-365/ba-p/204007) (El control de administración de los datos adjuntos ahora está disponible en Cifrado de mensajes de Office 365) del blog de Office. Si es necesario que el documento conserve la protección original una vez descargado, consulte [Protección de la colaboración con documentos mediante Azure Information Protection](secure-collaboration-documents.md).      
+Como alternativa, puede cambiar esta herencia de protección de documentos mediante cualquiera de los siguientes parámetros de configuración que especificó con el comando de [PowerShell para Exchange Online](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps), **Set-IRMConfiguration**. Use estas opciones cuando no sea necesario conservar la protección original del documento una vez que se autentica el usuario:
+
+- Para quitar la protección del documento solo para los destinatarios que lo ven en su explorador (normalmente porque se envía a una dirección de proveedor social, como Gmail): `Set-IRMConfiguration -DecryptAttachmentFromPortal $true`. Cuando estos destinatarios descargan el documento, la protección se quita.
+
+- Para quitar siempre la protección del documento para todos los destinatarios: `Set-IRMConfiguration -DecryptAttachmentForEncryptOnly $true`. Si estos destinatarios abren el mensaje de correo electrónico, el documento no está protegido.
+
+Para más información sobre la eliminación de la protección solo para los destinatarios que ven el documento en su explorador, vea la entrada de blog [Admin control for attachments now available in Office 365 Message Encryption](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Admin-control-for-attachments-now-available-in-Office-365/ba-p/204007) (Control de administrador para archivos adjuntos ya disponible en el cifrado de mensajes de Office 365). Si es necesario que el documento adjunto conserve la protección original, consulte [Protección de la colaboración con documentos mediante Azure Information Protection](secure-collaboration-documents.md).
 
 ## <a name="rights-management-issuer-and-rights-management-owner"></a>Emisor de Rights Management y propietario de Rights Management
 

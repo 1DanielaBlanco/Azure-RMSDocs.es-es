@@ -4,38 +4,35 @@ description: Configure y administre plantillas de administración de derechos de
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/17/2018
+ms.date: 08/20/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 9f3dc55f8443b4280cd5e108f1b5c5e3093748d4
-ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
+ms.openlocfilehash: 0ce3fd1da5ee17baf8a778447f9e3aa6188d6eee
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39490068"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42806716"
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>Configuración y administración de plantillas para Azure Information Protection
 
->*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
->[!NOTE]
->Esta funcionalidad reemplaza la configuración de plantillas personalizadas en el Portal de Azure clásico. El portal clásico ya no está disponible, por lo que debe usar Azure Portal. Para una asignación de procedimientos rápida, vea [Tareas que solía realizar con el Portal de Azure clásico](migrate-portal.md).
-
-
-Las plantillas de Rights Management ahora están integradas con la directiva de Azure Information Protection. 
+Las plantillas de protección, también conocidas como plantillas de Rights Management, son una agrupación de las configuraciones de protección definidas por el administrador para Azure Information Protection. Esta configuración incluye los [derechos de uso](configure-usage-rights.md) elegidos para usuarios autorizados y controles de acceso para la expiración y el acceso sin conexión. Estas plantillas están integradas con la directiva de Azure Information Protection: 
 
 **Cuando tiene una suscripción que incluye clasificación, etiquetado y protección (Azure Information Protection P1 o P2):**
 
-- Las plantillas de Rights Management que no están integradas con las etiquetas para el inquilino se muestran en la sección **Plantillas de protección** después de las etiquetas en la hoja **Azure Information Protection: etiquetas**. Para navegar a esta hoja, seleccione la opción de menú **CLASIFICACIONES** > **Etiquetas**. Puede convertir estas plantillas en etiquetas o puede crear un vínculo a ellas cuando configure la protección de sus etiquetas. 
+- Las plantillas que no están integradas con las etiquetas para el inquilino se muestran en la sección **Plantillas de protección** después de las etiquetas en la hoja **Azure Information Protection: etiquetas**. Para navegar a esta hoja, seleccione la opción de menú **CLASIFICACIONES** > **Etiquetas**. Puede convertir estas plantillas en etiquetas o puede crear un vínculo a ellas cuando configure la protección de sus etiquetas. 
 
 **Cuando tiene una suscripción que solo incluye protección (una suscripción a Office 365 que incluye el servicio Azure Rights Management):**
 
-- Las plantillas de Rights Management para el inquilino se muestran en la sección **Plantillas de protección** en la hoja **Azure Information Protection: etiquetas**. Para navegar a esta hoja, seleccione la opción de menú **CLASIFICACIONES** > **Etiquetas**. No se muestran etiquetas. También verá valores de configuración específicos de la clasificación y del etiquetado, pero o no tienen ningún efecto en las plantillas o no se pueden configurar. 
+- Las plantillas para el inquilino se muestran en la sección **Plantillas de protección** en la hoja **Azure Information Protection: etiquetas**. Para navegar a esta hoja, seleccione la opción de menú **CLASIFICACIONES** > **Etiquetas**. No se muestran etiquetas. También verá valores de configuración específicos de la clasificación y del etiquetado, pero o no tienen ningún efecto en las plantillas o no se pueden configurar. 
+
+>[!NOTE]
+>En algunas aplicaciones y servicios, puede que vea que [No reenviar](configure-usage-rights.md#do-not-forward-option-for-emails) y [Solo cifrar](configure-usage-rights.md#encrypt-only-option-for-emails) o **Cifrar** aparecen como una plantilla. No son plantillas que se puedan editar o eliminar, sino opciones integradas de forma predeterminada en el servicio de Exchange.
 
 ## <a name="default-templates"></a>Plantillas predeterminadas
 
@@ -49,6 +46,7 @@ Además, las plantillas están configuradas para permitir el acceso sin conexió
 Estas plantillas predeterminadas facilitan a los usuarios el proceso de empezar a proteger de inmediato la información confidencial de la organización. Estas plantillas pueden usarse con etiquetas de Azure Information Protection o de manera independiente con [aplicaciones y servicios](applications-support.md) que puedan usar plantillas de Rights Management.
 
 También puedes crear tus propias plantillas personalizadas. Aunque probablemente necesite solo unas pocas plantillas, puede tener un máximo de 500 plantillas personalizadas guardadas en Azure.
+
 
 ### <a name="default-template-names"></a>Nombres de plantillas predeterminadas
 

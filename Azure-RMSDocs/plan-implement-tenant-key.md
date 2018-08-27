@@ -4,20 +4,18 @@ description: Información para ayudarle a planear y a administrar su clave de in
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/26/2018
+ms.date: 08/21/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 05aee77b60b5fd5a7239b51665e2afb122704afb
-ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
+ms.openlocfilehash: 65f1b158e9745efa39d4088dcb615016ddecb206
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39490128"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42807276"
 ---
 # <a name="planning-and-implementing-your-azure-information-protection-tenant-key"></a>Planeamiento e implementación de su clave de inquilino de Azure Information Protection
 
@@ -36,14 +34,13 @@ Use la información de este artículo como ayuda para planear y administrar su c
 |Requisito empresarial|Topología de clave de inquilino recomendada|
 |------------------------|-----------------------------------|
 |Implementar Azure Information Protection rápidamente y sin hardware especial, software adicional o una suscripción de Azure.<br /><br />Por ejemplo: en entornos de prueba y cuando la organización no tiene requisitos normativos para la administración de claves.|Administrada por Microsoft|
-|Normas de cumplimiento, seguridad adicional y control sobre todas las operaciones del ciclo de vida. <br /><br />Por ejemplo: la clave debe estar protegida por un módulo de seguridad de hardware (HSM).|BYOK [[1]](#footnote-1)|
+|Normas de cumplimiento, seguridad adicional y control sobre todas las operaciones del ciclo de vida. <br /><br />Por ejemplo: la clave debe estar protegida por un módulo de seguridad de hardware (HSM).|BYOK|
 
 
 Si es necesario, puede cambiar la topología de clave de inquilino tras realizar la implementación con el cmdlet [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties).
 
 
 ## <a name="choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok"></a>Elija su topología de clave de inquilino: Administrada por Microsoft (opción predeterminada) o por usted (BYOK)
-Decide qué topología de clave de inquilino es la mejor para su organización. De forma predeterminada, Azure Information Protection genera su clave de inquilino y administra la mayoría de los aspectos del ciclo de vida de la clave de inquilino. Esta es la opción más simple con las mínimas sobrecargas administrativas. En la mayoría de casos, no es necesario ni tan siquiera que sepa que tiene una clave de inquilino. Simplemente, regístrese en Azure Information Protection y Microsoft se encargará del resto del proceso de administración de la clave.
 
 Decide qué topología de clave de inquilino es la mejor para la organización:
 
@@ -93,7 +90,7 @@ Si decide dejar que Microsoft administre su clave de inquilino:
 
 - A menos que vaya a migrar desde AD RMS, no se necesita hacer nada más para generar la clave de inquilino y puede ir directamente a [Pasos siguientes](plan-implement-tenant-key.md#next-steps).
 
-- Si ahora tiene AD RMS y quiere migrar a Azure Information Protection, use las instrucciones de migración de Migración desde AD RMS a Azure Information Protection. 
+- Si ahora tiene AD RMS y quiere migrar a Azure Information Protection, use las instrucciones de migración de [Migración desde AD RMS a Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md). 
 
 Si decide administrar usted mismo la clave de inquilino, lea las secciones siguientes para obtener más información.
 
@@ -181,11 +178,11 @@ Después de planear y, si es necesario, crear y configurar la clave de inquilino
 
 1.  Empiece a usar su clave de inquilino:
     
-    - Si no lo ha hecho todavía, deberá activar el servicio Rights Management para que su organización pueda empezar a usar Azure Information Protection. Los usuarios empiezan a usar inmediatamente la clave de inquilino (administrada por Microsoft o por usted en Azure Key Vault).
+    - Si el servicio de protección aún no está activado, deberá activar el servicio Rights Management para que su organización pueda empezar a usar Azure Information Protection. Los usuarios empiezan a usar inmediatamente la clave de inquilino (administrada por Microsoft o por usted en Azure Key Vault).
     
         Para más información sobre la activación, consulte [Activación de Azure Rights Management](./activate-service.md).
         
-    - Si ya ha activado el servicio Rights Management y, a continuación, ha decidido administrar su propia clave de inquilino, los usuarios harán la transición gradualmente de la clave de inquilino antigua a la nueva. Esta transición escalonada puede tardar unas semanas en completarse. Documentos y archivos que se protegieron con la clave de inquilino antiguo siguen siendo accesibles a usuarios autorizados.
+    - Si ya ha activado el servicio Rights Management y ha decidido administrar su propia clave de inquilino, los usuarios harán la transición gradualmente de la clave de inquilino antigua a la nueva. Esta transición escalonada puede tardar unas semanas en completarse. Documentos y archivos que se protegieron con la clave de inquilino antiguo siguen siendo accesibles a usuarios autorizados.
         
 2. Considere la posibilidad de usar el registro de uso, que registra todas las transacciones que realiza el servicio Azure Rights Management.
     

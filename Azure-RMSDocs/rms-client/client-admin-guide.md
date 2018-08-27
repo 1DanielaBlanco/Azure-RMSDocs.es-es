@@ -4,20 +4,18 @@ description: Instrucciones e información para administradores de una red empres
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/06/2018
+ms.date: 08/13/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: f9189de08c7089087ba37964a9d7acee3f537d02
-ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
+ms.openlocfilehash: f0f3c6a5f46024083d8e4d105dd535abc1b46552
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39575682"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42805449"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Guía para administradores del cliente de Azure Information Protection
 
@@ -204,11 +202,13 @@ Para actualizar el analizador de Azure Information Protection, instale la versi�
 
 Para la versión actual de disponibilidad general (GA): 
 
-- Si la versión instalada previamente del cliente era 1.26.6.0 o anterior, vuelva a ejecutar el comando de instalación del analizador con[Install-AIPScanner](/powershell/module/azureinformationprotection/Install-AIPScanner). Se conservarán las opciones de configuración para el analizador y los repositorios. La reinstalación del analizador concede al servicio del analizador permisos de eliminación de cuenta para la base de datos del analizador, que se necesitarán para los informes.
+- Vuelva a ejecutar el comando de instalación del analizador con [Install-AIPScanner](/powershell/module/azureinformationprotection/Install-AIPScanner). Se conservarán las opciones de configuración para el analizador y los repositorios. La reinstalación del analizador concede al servicio del analizador permisos de eliminación de cuenta para la base de datos del analizador, que se necesitarán para los informes.
 
 Para la versión preliminar: 
 
-- Si la versión instalada previamente del cliente era 1.26.6.0 o anterior, ejecute [Update-AIPScanner](/powershell/module/azureinformationprotection/Update-AIPScanner) después de instalar el cliente. Se conservarán las opciones de configuración para el analizador y los repositorios. Se requiere la ejecución de este cmdlet para actualizar el esquema de base de datos del analizador y, en caso necesario, también se conceden permisos de eliminación en la base de datos del analizador a la cuenta de servicio del analizador. Hasta que se ejecute este cmdlet de actualización, el analizador no se ejecutará.
+- Ejecute [Update-AIPScanner](/powershell/module/azureinformationprotection/Update-AIPScanner) después de instalar el cliente. Se conservarán las opciones de configuración para el analizador y los repositorios. Se requiere la ejecución de este cmdlet para actualizar el esquema de base de datos del analizador y, en caso necesario, también se conceden permisos de eliminación en la base de datos del analizador a la cuenta de servicio del analizador. 
+    
+    Hasta que se ejecuta este cmdlet de actualización, el analizador no se ejecuta y normalmente verá el identificador de evento **1000** en el registro de eventos de Windows con el siguiente mensaje de error: **Nombre de objeto "ScannerStatus" no válido**.
 
 ## <a name="uninstalling-the-azure-information-protection-client"></a>Desinstalación del cliente de Azure Information Protection
 

@@ -4,20 +4,18 @@ description: Instrucciones para instalar, configurar y ejecutar el analizador de
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2018
+ms.date: 08/21/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 1545c7bd931ab6aa4a76ddfd256a916d31d262bc
-ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
+ms.openlocfilehash: 77d24243d4f6b38338b2a6d709a252cc4859a2b3
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39490568"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42806058"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Implementación del analizador de Azure Information Protection para clasificar y proteger automáticamente los archivos
 
@@ -246,9 +244,14 @@ Luego, el analizador usa Windows iFilter para analizar los siguientes tipos de a
 |Word|.docx; .docm; .dotm; .dotx|
 |Excel|.xls; .xlt; .xlsx; .xltx; .xltm; .xlsm; .xlsb|
 |PowerPoint|.ppt; .pps; .pot; .pptx; .ppsx; .pptm; .ppsm; .potx; .potm|
-|PDF|.pdf|
+|PDF |.pdf|
 |Texto|.txt; .xml; .csv|
 
+De forma predeterminada, el analizador solo protege los tipos de archivo de Office, por lo que los archivos PDF y de texto no están protegidos a menos que [edite el registro](develop/file-api-configuration.md) para especificar los tipos de archivo:
+
+- Si no agrega el tipo de archivo .pdf al registro: los archivos con esta extensión de nombre de archivo se etiquetarán, pero si la etiqueta está configurada para la protección, esta no se aplica.
+
+- Si no agrega los tipos de archivo .txt, .xml o .csv al registro: los archivos con estas extensiones de nombre de archivo no se etiquetarán, porque estos tipos de archivo no admiten solo la clasificación.
 
 Por último, para los tipos de archivo restantes, el analizador aplica la etiqueta predeterminada en la directiva de Azure Information Protection, o la etiqueta predeterminada que configure para el analizador.
 
@@ -270,7 +273,11 @@ Por último, para los tipos de archivo restantes, el analizador aplica la etique
 
 Cuando el analizador aplica una etiqueta con protección, de forma predeterminada solo se protegen los tipos de archivo de Office. Puede cambiar este comportamiento para proteger también otros tipos de archivos. Sin embargo, cuando una etiqueta aplica protección genérica a documentos, la extensión de nombre de archivo cambia a .pfile. Además, el archivo pasa a ser de solo lectura hasta que lo abre un usuario autorizado y se guarda en su formato nativo. Los archivos de texto y de imágenes también pueden cambiar su extensión de nombre de archivo y pasar a ser de solo lectura. 
 
-Para cambiar este comportamiento predeterminado del analizador para, por ejemplo, proteger otros tipos de archivo de forma genérica, debe editar el registro manualmente y especificar los tipos de archivo adicionales que desea que estén protegidos. Para obtener instrucciones, vea [Configuración de la API de archivo](develop/file-api-configuration.md) en la guía del desarrollador. En esta documentación para desarrolladores, se hace referencia a la protección genérica como "PFile". Para el analizador, debe especificar extensiones de nombre de archivo específicas y no puede usar el carácter comodín `*`.
+Para cambiar este comportamiento predeterminado del analizador para, por ejemplo, proteger otros tipos de archivo de forma genérica, debe editar el registro manualmente y especificar los tipos de archivo adicionales que desea que estén protegidos. Para obtener instrucciones, vea [Configuración de la API de archivo](develop/file-api-configuration.md) en la guía del desarrollador. En esta documentación para desarrolladores, se hace referencia a la protección genérica como "PFile". Además, establezca lo siguiente para el analizador:
+
+- Debe especificar extensiones de nombre de archivo específicas y no puede usar el carácter comodín `*`.
+
+- El analizador tiene su propio comportamiento predeterminado: solo los formatos de archivo de Office están protegidos de forma predeterminada. El analizador no protegerá ningún otro formato de archivo que no se haya agregado al registro.
 
 ## <a name="when-files-are-rescanned"></a>¿Cuándo se vuelven a examinan los archivos?
 

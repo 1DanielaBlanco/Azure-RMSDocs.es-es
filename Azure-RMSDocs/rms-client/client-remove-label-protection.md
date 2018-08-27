@@ -4,20 +4,18 @@ description: Instrucciones para quitar etiquetas de clasificación y la protecci
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/06/2018
+ms.date: 08/21/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: ''
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: f74354ea3c588093b4fefcf98ce0b4cbf807aedb
-ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
+ms.openlocfilehash: a18014a210607b2c9a38cc4c68e955e01403c986
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39575784"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42805789"
 ---
 # <a name="user-guide-remove-labels-and-protection-from-files-and-emails-that-have-been-labeled-by-azure-information-protection-or-protected-by-rights-management"></a>Guía del usuario: Eliminación de etiquetas y protección de archivos y correos electrónicos etiquetados con Azure Information Protection o protegidos con Rights Management
 
@@ -28,7 +26,7 @@ Cuando el [cliente de Azure Information Protection está instalado en el equipo]
 Si la etiqueta eliminada está configurada para aplicar protección, esta acción también quita la protección del archivo. Puede que se le solicite que indique por qué va a quitar la etiqueta.
 
 > [!IMPORTANT]
-> Debe ser el propietario del archivo para quitar la protección, o bien que se le deben haber concedido permisos para quitar la protección (el permiso Extraer o Control total de Rights Management).
+> Debe ser el propietario del archivo para quitar la protección, o bien se le deben haber concedido permisos para ello (los permisos **Exportar** o **Control total** de Rights Management).
 
 Si desea elegir una etiqueta diferente o un conjunto diferente de la configuración de protección, no es necesario quitar la etiqueta o la protección. En su lugar, elija una nueva etiqueta y, si es necesario, puede definir permisos personalizados si el administrador permite esa configuración. 
 
