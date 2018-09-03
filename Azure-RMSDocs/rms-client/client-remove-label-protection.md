@@ -4,18 +4,18 @@ description: Instrucciones para quitar etiquetas de clasificación y la protecci
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/21/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: ''
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: a18014a210607b2c9a38cc4c68e955e01403c986
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 4031a332d900e91f66026dd661d83fb07d47e6d7
+ms.sourcegitcommit: 8cde6611ab6d95d816e1c80267cacd32443f31cb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42805789"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43117862"
 ---
 # <a name="user-guide-remove-labels-and-protection-from-files-and-emails-that-have-been-labeled-by-azure-information-protection-or-protected-by-rights-management"></a>Guía del usuario: Eliminación de etiquetas y protección de archivos y correos electrónicos etiquetados con Azure Information Protection o protegidos con Rights Management
 
@@ -43,6 +43,8 @@ En la barra de Information Protection, haga clic en el icono **Editar etiqueta**
 Si el icono **Eliminar etiqueta** no está disponible inmediatamente, haga clic primero en el icono **Editar etiqueta**:
 
 ![Barra de Azure Information Protection - Editar etiqueta](../media/edit-label.png)
+
+Si sigue sin ver el icono **Eliminar etiqueta** es porque el administrador no le permite usar esta opción.
 
 > [!NOTE]
 > Si no ve esta barra de Information Protection en las aplicaciones de Office:

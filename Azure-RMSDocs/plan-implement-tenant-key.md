@@ -4,18 +4,18 @@ description: Información para ayudarle a planear y a administrar su clave de in
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/21/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 65f1b158e9745efa39d4088dcb615016ddecb206
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 9fa90627d3db00efcc577c838e78394d45fff81a
+ms.sourcegitcommit: 2b2cf599b8072cb8fe6a651743e27fbbe1a827c4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42807276"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222326"
 ---
 # <a name="planning-and-implementing-your-azure-information-protection-tenant-key"></a>Planeamiento e implementación de su clave de inquilino de Azure Information Protection
 
@@ -147,6 +147,8 @@ Use la documentación de Azure Key Vault para crear un almacén de claves y la c
 Asegúrese de que la longitud de clave es de 2048 bits (recomendada) o 1024 bits. Azure Information Protection no admite otras longitudes de clave.
 
 Para crear una clave protegida por HSM de manera local y transferirla al almacén de claves como una clave protegida por HSM, siga los procedimientos de [Generación y transferencia de claves protegidas con HSM para el Almacén de claves de Azure](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/).
+
+Para que Azure Information Protection use la clave, se deben permitir todas las operaciones de Key Vault para la clave. Esta es la configuración predeterminada y las operaciones son cifrar, descifrar, encapsular, desencapsular, firmar y comprobar. Para comprobar las operaciones permitidas de una clave, puede usar [Get-AzureKeyVauktKey](/powershell/module/azurerm.keyvault/get-azurekeyvaultkey) y comprobar los valores *key_ops* devueltos en los detalles de la **clave**. Si es necesario, use [Update-AzureKeyVaultKey](/powershell/module/azurerm.keyvault/update-azurekeyvaultkey) y el parámetro *KeyOps* para agregar las operaciones permitidas.
 
 Una clave que se almacena en Key Vault como un identificador de clave. Este identificador de clave es una URL que contiene el nombre del almacén de claves, el contenedor de claves, el nombre de la clave y la versión de la clave. Por ejemplo: **https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333**. Debe especificar la URL del almacén de claves en Azure Information Protection para configurarlo para que use esta clave.
 

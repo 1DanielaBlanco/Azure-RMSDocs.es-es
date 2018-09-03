@@ -4,18 +4,18 @@ description: Instrucciones para instalar, configurar y ejecutar el analizador de
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/21/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 77d24243d4f6b38338b2a6d709a252cc4859a2b3
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: ddf9ebcdce4cf51e35dfc76b099194873796919f
+ms.sourcegitcommit: 8cde6611ab6d95d816e1c80267cacd32443f31cb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42806058"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43117892"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Implementación del analizador de Azure Information Protection para clasificar y proteger automáticamente los archivos
 
@@ -275,9 +275,9 @@ Cuando el analizador aplica una etiqueta con protección, de forma predeterminad
 
 Para cambiar este comportamiento predeterminado del analizador para, por ejemplo, proteger otros tipos de archivo de forma genérica, debe editar el registro manualmente y especificar los tipos de archivo adicionales que desea que estén protegidos. Para obtener instrucciones, vea [Configuración de la API de archivo](develop/file-api-configuration.md) en la guía del desarrollador. En esta documentación para desarrolladores, se hace referencia a la protección genérica como "PFile". Además, establezca lo siguiente para el analizador:
 
-- Debe especificar extensiones de nombre de archivo específicas y no puede usar el carácter comodín `*`.
+- El analizador tiene su propio comportamiento predeterminado: solo los formatos de archivo de Office están protegidos de forma predeterminada. Si no se modifica el registro, el analizador no protegerá ningún otro tipo de archivo.
 
-- El analizador tiene su propio comportamiento predeterminado: solo los formatos de archivo de Office están protegidos de forma predeterminada. El analizador no protegerá ningún otro formato de archivo que no se haya agregado al registro.
+- A menos que use la versión preliminar actual del analizador, debe especificar las extensiones de nombre de archivo específicas y no puede usar el carácter comodín `*`. La versión preliminar del analizador sí admite este carácter comodín.
 
 ## <a name="when-files-are-rescanned"></a>¿Cuándo se vuelven a examinan los archivos?
 

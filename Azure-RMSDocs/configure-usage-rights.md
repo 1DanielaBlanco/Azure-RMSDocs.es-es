@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 61d57cb33175c3c3e87d615cee65e2b82f21ab74
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 9f7c9ef4e6a6eccc1f42fa60a78550f53d4a64b6
+ms.sourcegitcommit: b2d5c77bf8a0271d8d23f170314c0f49c3a328b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42808779"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42920676"
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>Configuración de los derechos de uso para Azure Rights Management
 
@@ -98,7 +98,7 @@ Los clientes y servicios de Exchange (por ejemplo, el cliente de Outlook, la apl
 
 Aunque esta opción aparece para los usuarios (y los administradores de Exchange) como si fuera una plantilla predeterminada de Rights Management que se puede seleccionar, **No reenviar** no es una plantilla. Esto explica por qué no se ve en Azure Portal al visualizar y administrar las plantillas de protección. En realidad, la opción **No reenviar** es un conjunto de derechos de uso que los usuarios aplican dinámicamente a los destinatarios de correo electrónico.
 
-Cuando se aplica la opción **No reenviar** a un correo electrónico, el correo electrónico se cifra y se deben autenticar los destinatarios. Así, los destinatarios no pueden reenviarlo, imprimirlo, copiar contenido, guardar datos adjuntos ni guardarlo con otro nombre. Por ejemplo, en el cliente de Outlook, el botón Reenviar no está disponible, como tampoco lo están las opciones de menú **Guardar como**, **Guardar datos adjuntos** e **Imprimir**, y no se pueden agregar ni cambiar los destinatarios de los cuadros **Para**, **CC** o **CCO**.
+Cuando se aplica la opción **No reenviar** a un correo electrónico, el correo electrónico se cifra y se deben autenticar los destinatarios. Por eso, los destinatarios no pueden reenviarlo, imprimirlo ni copiarlo. Por ejemplo, en el cliente de Outlook, el botón Reenviar no está disponible, como tampoco lo están las opciones de menú **Guardar como** e **Imprimir** y no se pueden agregar ni cambiar los destinatarios de los cuadros **Para**, **CC** o **CCO**.
 
 Los [documentos de Office](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM) sin protección que se adjuntan automáticamente al correo electrónico heredan las mismas restricciones. Los derechos de uso que se aplican a estos documentos son los siguientes: **Editar contenido, Editar**; **Guardar**; **Ver, Abrir, Leer**; y **Permitir macros**. Si quiere que cada archivo adjunto tenga derechos de uso diferentes, o en el caso de que el archivo adjunto sea un documento de Office incompatible con esta protección heredada, proteja el archivo antes de adjuntarlo al correo electrónico. Luego, puede asignar los derechos de uso específicos que necesite para el archivo. 
 
@@ -127,9 +127,9 @@ Del mismo modo, de manera predeterminada, los [documentos de Office](https://sup
 
 Como alternativa, puede cambiar esta herencia de protección de documentos mediante cualquiera de los siguientes parámetros de configuración que especificó con el comando de [PowerShell para Exchange Online](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps), **Set-IRMConfiguration**. Use estas opciones cuando no sea necesario conservar la protección original del documento una vez que se autentica el usuario:
 
-- Para quitar la protección del documento solo para los destinatarios que lo ven en su explorador (normalmente porque se envía a una dirección de proveedor social, como Gmail): `Set-IRMConfiguration -DecryptAttachmentFromPortal $true`. Cuando estos destinatarios descargan el documento, la protección se quita.
+- Para quitar la protección del documento para todos los destinatarios: `Set-IRMConfiguration -DecryptAttachmentForEncryptOnly $true`. Si estos destinatarios abren el mensaje de correo electrónico, el documento no está protegido.
 
-- Para quitar siempre la protección del documento para todos los destinatarios: `Set-IRMConfiguration -DecryptAttachmentForEncryptOnly $true`. Si estos destinatarios abren el mensaje de correo electrónico, el documento no está protegido.
+- Para quitar la protección del documento solo para los destinatarios que lo ven en su explorador (normalmente porque se envía a una dirección de proveedor social, como Gmail): `Set-IRMConfiguration -DecryptAttachmentFromPortal $true`. Cuando estos destinatarios descargan el documento, la protección se quita.
 
 Para más información sobre la eliminación de la protección solo para los destinatarios que ven el documento en su explorador, vea la entrada de blog [Admin control for attachments now available in Office 365 Message Encryption](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Admin-control-for-attachments-now-available-in-Office-365/ba-p/204007) (Control de administrador para archivos adjuntos ya disponible en el cifrado de mensajes de Office 365). Si es necesario que el documento adjunto conserve la protección original, consulte [Protección de la colaboración con documentos mediante Azure Information Protection](secure-collaboration-documents.md).
 

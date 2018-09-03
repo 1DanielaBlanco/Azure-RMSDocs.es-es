@@ -4,19 +4,19 @@ description: Algunas de las preguntas más frecuentes sobre el servicio de prote
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/21/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.service: information-protection
 ms.custom: askipteam
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0964d6de3f06d8620de89d9c4c9cca65a64b71c1
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 67a3720f38faab750f04e91d7a4848cf88ae4eef
+ms.sourcegitcommit: b0c4fe8c522987a7863958ffdc6866a91ebabf86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42805960"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43242221"
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Preguntas más frecuentes sobre la protección de datos en Azure Information Protection
 
@@ -73,7 +73,7 @@ Para obtener más información sobre las plantillas en Azure Portal, vea [Config
 
 ## <a name="ive-protected-a-document-and-now-want-to-change-the-usage-rights-or-add-usersdo-i-need-to-reprotect-the-document"></a>He protegido un documento y ahora quiero cambiar los derechos de uso o agregar usuarios. ¿Tengo que volver a proteger el documento?
 
-Si el documento se ha protegido mediante una etiqueta o una plantilla, no hay necesidad de protegerlo de nuevo. Realice los cambios en los derechos de uso o agregue nuevos grupos (o usuarios) para modificar la etiqueta o la plantilla y, luego, guarde y publique los cambios:
+Si el documento se ha protegido mediante una etiqueta o una plantilla, no hay necesidad de protegerlo de nuevo. Realice los cambios en los derechos de uso o agregue nuevos grupos (o usuarios) para modificar la etiqueta o la plantilla y, luego, guarde estos cambios:
 
 - Si un usuario no ha accedido al documento antes de que haya realizado los cambios, estos se aplican en cuanto el usuario abre el documento.
 

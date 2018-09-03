@@ -4,18 +4,18 @@ description: Información sobre las operaciones del ciclo de vida que son releva
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/07/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: c5b19c59-812d-420c-9c54-d9776309636c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e910ad5226310f0c76de437c30e95fb7f6ba8f87
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 4dd322c95d9aadc6df73e426fb92d2bb77312ed4
+ms.sourcegitcommit: 0bc877840b168d05a16964b4ed0d28a9ed33f871
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42804060"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43298045"
 ---
 # <a name="customer-managed-tenant-key-life-cycle-operations"></a>Administración de cliente: operaciones de ciclo de vida de clave de inquilino
 
@@ -41,7 +41,7 @@ Ejemplos de cuándo tendrá que regenerar la clave de Azure Information Protecti
 
 - Cree que la copia maestra de su clave de inquilino (la copia en su posesión) está en peligro.
 
-Para regenerar la clave en otra clave que administre, puede crear una clave nueva en Azure Key Vault o usar una distinta que ya esté en Azure Key Vault. Después, siga el mismo procedimiento que usó para implementar BYOK para Azure Information Protection.
+Para regenerar la clave en otra clave que administre, puede crear una clave nueva en Azure Key Vault o usar una distinta que ya esté en Azure Key Vault. Después, siga el mismo procedimiento que usó para implementar BYOK para Azure Information Protection. 
 
 1. Solo si la nueva clave está en un almacén de claves diferente al que ya está usando para Azure Information Protection: permita que Azure Information Protection use el almacén de claves mediante el cmdlet [Set-AzureRmKeyVaultAccessPolicy](/powershell/module/azurerm.keyvault/set-azurermkeyvaultaccesspolicy).
 
@@ -52,6 +52,8 @@ Para regenerar la clave en otra clave que administre, puede crear una clave nuev
 Para más información sobre cada uno de estos pasos:
 
 - Para regenerar la clave a otra clave que administra, vea [Implementación de BYOK para la clave de inquilino de Azure Information Protection](plan-implement-tenant-key.md#implementing-byok-for-your-azure-information-protection-tenant-key).
+    
+    Si está regenerando una clave protegida por HSM que crea en el entorno local y transfiere a Key Vault, puede usar la misma palabra de seguridad y las mismas tarjetas de acceso que usó para la clave actual.
 
 - Para regenerar la clave y cambiar a una clave administrada por Microsoft, vea la sección [Regenerar su clave de inquilino](operations-microsoft-managed-tenant-key.md#rekey-your-tenant-key) para operaciones administradas por Microsoft.
 

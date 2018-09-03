@@ -4,16 +4,16 @@ description: Puede proteger sus documentos y mensajes de correo electrónico má
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/14/2018
+ms.date: 08/24/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: 16cb22a7f16b82056d58d569dc0d65b3b16d0ae1
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: bc60f1791cd7c36f179851b1759a46ba3980dd96
+ms.sourcegitcommit: b2d5c77bf8a0271d8d23f170314c0f49c3a328b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42807071"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42920311"
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Configuración de una etiqueta para la protección de Rights Management
 
@@ -62,9 +62,7 @@ No es necesario que Exchange esté configurado para Azure Information Protection
         
         La protección configurada previamente se conserva como una plantilla de protección archivada y se volverá a mostrar si se cambia la opción de nuevo a **Proteger**. No verá esta plantilla en Azure Portal pero, si es necesario, puede administrarla con [PowerShell](configure-templates-with-powershell.md). Este comportamiento significa que el contenido sigue estando disponible si tiene esta etiqueta con la configuración de protección aplicada anteriormente.
     
-    - **Proteger**: seleccione esta opción para aplicar la protección y, después, vaya al paso 5 para configurar las opciones de protección.
-    
-    Nota: puede guardar una etiqueta nueva en esta fase sin tener que aplicar ninguna configuración adicional. Si lo hace, se configurará la etiqueta para aplicar la protección de modo que solo la persona que aplique la etiqueta pueda abrir el documento o el mensaje de correo electrónico sin restricciones de uso. En algunos casos este podría ser el resultado requerido, de manera que un usuario pueda guardar un archivo en cualquier ubicación y garantizar que solo él puede abrirlo. Si este resultado se ajusta a sus necesidades y el resto de los usuarios no tienen que colaborar en el contenido protegido, en lugar de ir al paso 5, vaya directamente al paso 12.
+    - **Proteger**: seleccione esta opción para aplicar la protección y, a continuación, vaya al paso 4.
     
     - **Quitar protección**: seleccione esta opción para quitar la protección si un documento o correo electrónico está protegido. Ahora, vaya al paso 11.
         
