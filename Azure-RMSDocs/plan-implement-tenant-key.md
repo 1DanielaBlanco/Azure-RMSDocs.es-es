@@ -4,18 +4,18 @@ description: Información para ayudarle a planear y a administrar su clave de in
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/29/2018
+ms.date: 08/31/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9fa90627d3db00efcc577c838e78394d45fff81a
-ms.sourcegitcommit: 2b2cf599b8072cb8fe6a651743e27fbbe1a827c4
+ms.openlocfilehash: 5113c53f3dc6700e8cb3bf00f49b0c2d00ebcd7c
+ms.sourcegitcommit: 99b33cee47bc4588174d44e90ade16edba12ee44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43222326"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43380521"
 ---
 # <a name="planning-and-implementing-your-azure-information-protection-tenant-key"></a>Planeamiento e implementación de su clave de inquilino de Azure Information Protection
 
@@ -108,7 +108,7 @@ Consulte la tabla siguiente para consultar una lista de requisitos previos para 
 |---------------|--------------------|
 |El inquilino de Azure Information Protection debe tener una suscripción de Azure. Si aún no tiene una, puede solicitar una [cuenta gratuita](https://azure.microsoft.com/pricing/free-trial/). <br /><br /> Para usar una clave protegida por HSM, debe tener el nivel de servicio Premium de Azure Key Vault.|La suscripción a Azure gratuita que proporciona acceso para configurar Azure Active Directory y la configuración de las plantillas personalizadas de Azure Rights Management (**acceso a Azure Active Directory**) no es suficiente para usar Azure Key Vault. Para confirmar que tiene una suscripción de Azure que puede usar para BYOK, use los cmdlets de PowerShell de [Azure Resource Manager](https://msdn.microsoft.com/library/azure/mt786812\(v=azure.300\).aspx): <br /><br /> 1. Inicie una sesión de Azure PowerShell con la opción **Ejecutar como administrador** e inicie sesión como administrador global para el inquilino de Azure Information Protection con el siguiente comando:`Login-AzureRmAccount`<br /><br />2. Escriba lo siguiente y confirme que ve los valores mostrados para su nombre e identificador de suscripción, así como su identificador de inquilino de Azure Information Protection, y que el estado está habilitado: `Get-AzureRmSubscription`<br /><br />Si no se muestra ningún valor y es redireccionado al símbolo del sistema, no tiene una suscripción de Azure que pueda utilizarse para BYOK. <br /><br />**Nota**: Además de los requisitos previos de BYOK, si migra de AD RMS a Azure Information Protection y cambia una clave de software por una clave de hardware, debe tener como mínimo la versión 11.62 del firmware de Thales.|
 |Para usar una clave protegida por HSM que crea de forma local: <br /><br />- Todos los requisitos previos indicados para el almacén de claves BYOK. |Vea los [Requisitos previos de BYOK](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#prerequisites-for-byok) en la documentación de Azure Key Vault. <br /><br /> **Nota**: Además de los requisitos previos de BYOK, si migra de AD RMS a Azure Information Protection y cambia una clave de software por una clave de hardware, debe tener como mínimo la versión 11.62 del firmware de Thales.|
-|Si el almacén de claves para contener la clave de inquilino usa puntos de conexión de servicio de Virtual Network para Key Vault (actualmente en versión preliminar): <br /><br />- Seleccione la opción para permitir que los servicios de Microsoft de confianza omitan este firewall.|Para obtener más información, consulte [Announcing Virtual Network Service Endpoints for Key Vault (preview)](https://blogs.technet.microsoft.com/kv/2018/06/25/announcing-virtual-network-service-endpoints-for-key-vault-preview/) (Anuncio de puntos de conexión de servicio de Virtual Network para Key Vault).|
+|Si el almacén de claves que va a contener la clave de inquilino usa puntos de conexión de servicio de Virtual Network para Azure Key Vault: <br /><br />- Permita que los servicios de Microsoft de confianza omitan este firewall.|Para más información, vea [Virtual Network Service Endpoints for Azure Key Vault](/azure/key-vault/key-vault-overview-vnet-service-endpoints) (Puntos de conexión de servicio de Virtual Network para Azure Key Vault).|
 |Módulo de administración de Azure Rights Management para Windows PowerShell.|Para obtener instrucciones de instalación, vea [Instalación del módulo de PowerShell para AADRM](./install-powershell.md). <br /><br />Si ya ha instalado este módulo de Windows PowerShell anteriormente, ejecute el comando siguiente para comprobar que el número de versión sea como mínimo **2.9.0.0**: `(Get-Module aadrm -ListAvailable).Version`|
 
 Para obtener más información sobre los HSM de Thales y sobre su uso con el Almacén de claves de Azure, consulte el [sitio web de Thales](https://www.thales-esecurity.com/msrms/cloud).

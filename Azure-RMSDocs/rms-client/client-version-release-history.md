@@ -4,18 +4,18 @@ description: Consulte las novedades o los cambios en una versión del cliente de
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/28/2018
+ms.date: 08/31/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 945b05a99122b7caf1d9a73ea8b75717a5522660
-ms.sourcegitcommit: 8cde6611ab6d95d816e1c80267cacd32443f31cb
+ms.openlocfilehash: 3e067f42b216efda48d46cd95be66c4939bf6240
+ms.sourcegitcommit: ba7ef4fe439bbf00cdad888017cbb8f44c801f77
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43117934"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43348698"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Cliente de Azure Information Protection: historial de publicación de versiones y directiva de soporte técnico
 
@@ -59,6 +59,8 @@ Esta versión incluye la versión MSIPC 1.0.3592.627 del cliente RMS.
 - Compatibilidad con los archivos que se han protegido con Secure Islands cuando esos archivos no sean documentos PDF y de Office. Por ejemplo, proteger archivos de texto e imagen. O archivos que tienen una extensión de nombre de archivo .pfile. Esta compatibilidad habilita nuevos escenarios, como el analizador de Azure Information Protection, que pueden inspeccionar estos archivos para la búsqueda de información confidencial y vuelven a etiquetarlos automáticamente para Azure Information Protection. [Más información](client-admin-guide-customizations.md#support-for-files-protected-by-secure-islands)
 
 - El vínculo **Envíenos sus comentarios** del cuadro de diálogo **Ayuda y comentarios** se reemplaza por **Notificar un problema**, que es una opción que puede personalizar. De manera predeterminada, esta opción envía un correo electrónico a Microsoft. Puede cambiar esta dirección de correo electrónico para que cuando los usuarios seleccionen esta opción, use una cadena HTTP que el usuario especifica. Por ejemplo, una página web personalizada que tiene para que los usuarios notifiquen problemas o una dirección de correo electrónico que vaya a su departamento de soporte técnico. Para modificar esta dirección, use una [configuración de cliente avanzada](client-admin-guide-customizations.md#modify-the-email-address-for-the-report-an-issue-link).
+
+- Nueva configuración de cliente avanzada para quitar los encabezados y los pies de página que se han aplicado a los documentos mediante otras soluciones de etiquetado. [Más información](client-admin-guide-customizations.md#remove-headers-and-footers-from-other-labeling-solutions)
 
 - Para el analizador de Azure Information Protection:
 
@@ -161,7 +163,6 @@ Esta versión incluye la versión MSIPC 1.0.3403.1224 del cliente de RMS.
 **Nuevas características**:
 
 - El analizador de Azure Information Protection: el módulo de PowerShell de la que se incluye con el cliente tiene nuevos cmdlets para instalar y configurar el analizador, con el fin de que pueda detectar, clasificar y proteger los archivos de sus almacenes de datos locales. Para obtener instrucciones, consulte [Implementación del analizador de Azure Information Protection para clasificar y proteger automáticamente los archivos](../deploy-aip-scanner.md). 
-
 - Ahora puede establecer distintivos visuales diferentes para Word, Excel, PowerPoint y Outlook mediante el uso de la instrucción variable "If.App" en la cadena de texto e identificar el tipo de aplicación. [More information]configure-policy-markings.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook)
 
 - Compatibilidad con la [configuración de directivas](../configure-policy-settings.md). **Muestre la barra de Information Protection en las aplicaciones de Office**. Si este valor está desactivado, los usuarios seleccionan las etiquetas en el botón **Proteger** de la cinta.

@@ -4,18 +4,18 @@ description: Información sobre cómo personalizar el cliente de Azure Informati
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/28/2018
+ms.date: 09/04/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 8a91b39b0f503ebb53b8b652de21423ef4cae9c8
-ms.sourcegitcommit: 0bc877840b168d05a16964b4ed0d28a9ed33f871
+ms.openlocfilehash: 3e6d5f30e3db48eced850649976ac4da56271622
+ms.sourcegitcommit: a42bb93adbb5be2cd39606fed3de0785ac52dd65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43298021"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43703937"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Guía del administrador: Configuraciones personalizadas del cliente de Azure Information Protection
 
@@ -76,7 +76,7 @@ Además:
 
 ## <a name="enforce-protection-only-mode-when-your-organization-has-a-mix-of-licenses"></a>Exigencia del modo de solo protección cuando la organización tiene una combinación de licencias
 
-Si la organización no tiene ninguna licencia de Azure Information Protection, pero tiene licencias de Office 365 que incluyen el servicio de Azure Rights Management para la protección de datos, el cliente de Azure Information Protection para Windows se ejecuta automáticamente en [el modo de solo protección](client-protection-only-mode.md).
+Si la organización no tiene ninguna licencia de Azure Information Protection, pero tiene licencias de Office 365 que incluyen el servicio de Azure Rights Management para la protección de datos, el cliente de Azure Information Protection para Windows se ejecuta automáticamente en el [modo de solo protección](client-protection-only-mode.md).
 
 Sin embargo, si la organización tiene una suscripción para Azure Information Protection, de forma predeterminada todos los equipos Windows pueden descargar la directiva de Azure Information Protection. El cliente de Azure Information Protection no lleva a cabo la comprobación de licencias ni el cumplimiento. 
 
@@ -309,6 +309,8 @@ El valor de identificador de etiqueta se muestra en la hoja **Etiqueta**, al ver
 
 Especifique un nombre de regla de migración de su elección. Utilice un nombre descriptivo que le ayude a identificar cómo una o más etiquetas de su solución de etiquetado anterior deben asignarse a una etiqueta de Azure Information Protection. El nombre se muestra en los informes de analizador y en el Visor de eventos. 
 
+Tenga en cuenta que esta configuración no quita los distintivos visuales que haya aplicado la etiqueta anterior. Para quitar los encabezados y los pies de página, vea la sección siguiente, [Quitar encabezados y pies de página de otras soluciones de etiquetado](#remove-headers-and-footers-from-other-labeling-solutions).
+
 ### <a name="example-1-one-to-one-mapping-of-the-same-label-name"></a>Ejemplo 1: Asignación uno a uno del mismo nombre de etiqueta
 
 Los documentos etiquetados como "Confidencial" por Secure Islands deben volver a etiquetarse como "Confidencial" en Azure Information Protection.
@@ -362,10 +364,107 @@ La configuración de cliente avanzada es la siguiente:
 |LabelbyCustomProperty|2beb8fe7-8293-444c-9768-7fdc6f75014d,"La etiqueta de Secure Islands contiene Internal",Classification,.\*Internal.\*|
 
 
+## <a name="remove-headers-and-footers-from-other-labeling-solutions"></a>Quitar encabezados y pies de página de otras soluciones de etiquetado
+
+Esta opción de configuración está actualmente en versión preliminar y sujeta a cambios. También requiere la versión preliminar del cliente de Azure Information Protection.
+
+Esta opción usa diversas [opciones de configuración de cliente avanzadas](#how-to-configure-advanced-client-configuration-settings-in-the-portal) que se deben definir en Azure Portal.
+
+Estas opciones de configuración permiten quitar o reemplazar los encabezados o pies de página de los documentos cuando otra solución de etiquetado haya aplicado estos distintivos visuales. Por ejemplo, el pie de página anterior contiene el nombre de una etiqueta antigua que ahora se ha migrado a Azure Information Protection con un nuevo nombre de etiqueta y su propio pie de página.
+
+Cuando el cliente recibe esta configuración en su directiva, los encabezados y pies de página antiguos se quitan o se reemplazan cuando el documento se abre en la aplicación de Office y se aplican al documento las etiquetas de Azure Information Protection existentes.
+
+Esta configuración no es compatible con Outlook, y es necesario tener precaución al usarla con Word, Excel y PowerPoint, ya que puede afectar negativamente al rendimiento de estas aplicaciones para los usuarios. La configuración permite definir las opciones por aplicación, por ejemplo, buscar texto en los encabezados y los pies de página de documentos de Word, pero no en las hojas de cálculo de Excel ni en las presentaciones de PowerPoint.
+
+Dado que la coincidencia de patrones afecta al rendimiento de los usuarios, se recomienda limitar los tipos de aplicaciones de Office (**W**ord, **E**xcel, **P**PowerPoint) únicamente a aquellas en las que se debe buscar:
+
+- Clave: **RemoveExternalContentMarkingInApp**
+
+- Valor: \<**tipos de aplicaciones de Office WXP**> 
+
+Ejemplos:
+
+- Para buscar solo en documentos de Word, especifique **W**.
+
+- Para buscar en documentos de Word y presentaciones de PowerPoint, especifique **WP**.
+
+Necesita al menos otro ajuste de cliente avanzado, **ExternalContentMarkingToRemove**, para especificar el contenido del encabezado o pie de página y cómo quitarlo o reemplazarlo.
+
+### <a name="how-to-configure-externalcontentmarkingtoremove"></a>Cómo configurar ExternalContentMarkingToRemove
+
+Al especificar el valor de cadena para la clave **ExternalContentMarkingToRemove**, existen tres opciones que usan expresiones regulares:
+
+- Una coincidencia parcial para quitar todo el contenido del encabezado o el pie de página.
+    
+    Ejemplo: los encabezados o los pies de página contienen la cadena **TEXT TO REMOVE**. Quiere quitar por completo estos encabezados o pies de página. Debe especificar el valor `*TEXT*`.
+
+- Una coincidencia completa para quitar solo palabras específicas del encabezado o el pie de página.
+    
+    Ejemplo: los encabezados o los pies de página contienen la cadena **TEXT TO REMOVE**. Solo quiere quitar la palabra **TEXT**, lo que deja la cadena de encabezado o pie de página como **TO REMOVE**. Debe especificar el valor `TEXT `.
+
+- Una coincidencia completa para quitar todo el contenido del encabezado o el pie de página.
+    
+    Ejemplo: los encabezados o los pies de página contienen la cadena **TEXT TO REMOVE**. Quiere quitar los encabezados o los pies de página que contienen exactamente esta cadena. Debe especificar el valor `^TEXT TO REMOVE$`.
+    
+
+La coincidencia de patrones para la cadena que especifique no distingue mayúsculas de minúsculas. La longitud de cadena máxima es de 255 caracteres.
+
+Dado que algunos documentos podrían incluir caracteres invisibles o diferentes tipos de espacios o tabulaciones, la cadena que especifique para una palabra o frase podría no detectarse. Siempre que sea posible, especifique una sola palabra distintiva para el valor y no olvide probar los resultados antes de su implementación en la producción.
+
+- Clave: **ExternalContentMarkingToRemove**
+
+- Valor: \<**cadena que debe coincidir, definida como expresión regular**> 
+
+#### <a name="multiline-headers-or-footers"></a>Encabezados o pies de página multilínea
+
+Si el texto de un encabezado o un pie de página tiene más de una línea, debe crear una clave y un valor para cada línea. Por ejemplo, imagine que tiene el siguiente pie de página con dos líneas:
+
+**El archivo está clasificado como confidencial**
+
+**Etiqueta aplicada manualmente**
+
+Para quitar este pie de página multilínea, debe crear las dos entradas siguientes:
+
+- Clave 1: **ExternalContentMarkingToRemove**
+
+- Valor de clave 1: **\*Confidencial***
+
+- Clave 2: **ExternalContentMarkingToRemove**
+
+- Valor de clave 2: **\*Etiqueta aplicada*** 
+
+#### <a name="optimization-for-powerpoint"></a>Optimización para PowerPoint
+
+Los pies de página de PowerPoint se implementan como formas. Para evitar la eliminación de las formas con el texto especificado que son encabezados ni pies de página, use un ajuste de cliente avanzado adicional denominado **PowerPointShapeNameToRemove**. También se recomienda usar este ajuste para evitar comprobar el texto de todas las formas, ya que es un proceso que hace un uso intensivo de recursos.
+
+Si no especifica este ajuste de cliente avanzado adicional y PowerPoint está incluido en el valor de clave **RemoveExternalContentMarkingInApp**, se comprobarán todas las formas en busca del texto especificado en el valor  **ExternalContentMarkingToRemove**. 
+
+Para buscar el nombre de la forma que se usa como encabezado o pie de página:
+
+1. En PowerPoint, muestre el panel de **selección**: pestaña **Formato** > grupo **Organizar** > **Panel de selección**.
+
+2. Seleccione la forma en la diapositiva que contiene el encabezado o el pie de página. El nombre de la forma seleccionada aparece resaltado en el panel de **selección**.
+
+Use el nombre de la forma de especificar un valor de cadena para la clave **PowerPointShapeNameToRemove**. 
+
+Por ejemplo, el nombre de la forma es **fc**. Para quitar la forma con este nombre, especifique el valor `fc`.
+
+- Clave: **PowerPointShapeNameToRemove**
+
+- Valor: \<**nombre de la forma de PowerPoint**> 
+
+Cuando haya más de una forma de PowerPoint para quitar, cree tantas claves **PowerPointShapeNameToRemove** como formas quiera quitar. Para cada entrada, especifique el nombre de la forma que quiere quitar.
+
+De forma predeterminada, solo se comprueban las diapositivas patrón en busca de encabezados y pies de página. Para ampliar esta búsqueda a todas las diapositivas, lo que es proceso que hace un uso mucho más intensivo de recursos, use un ajuste de cliente avanzado adicional denominada **RemoveExternalContentMarkingInAllSlides**:
+
+- Clave: **RemoveExternalContentMarkingInAllSlides**
+
+- Valor: **True**
+
 ## <a name="label-an-office-document-by-using-an-existing-custom-property"></a>Etiquetado de un documento de Office mediante el uso de una propiedad personalizada existente
 
 > [!NOTE]
-> Si utiliza esta configuración y la configuración de la sección anterior para migrar desde otra solución de etiquetado, la configuración de migración de etiquetado tiene prioridad. 
+> Si usa esta configuración y la configuración para [migrar etiquetas de Secure Islands y otras soluciones de etiquetado](#migrate-labels-from-secure-islands-and-other-labeling-solutions), la configuración de migración de etiquetado tiene prioridad. 
 
 Esta opción utiliza una [configuración de cliente avanzada](#how-to-configure-advanced-client-configuration-settings-in-the-portal) que se debe definir en Azure Portal. 
 

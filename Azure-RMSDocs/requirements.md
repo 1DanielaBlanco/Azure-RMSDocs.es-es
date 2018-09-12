@@ -4,18 +4,18 @@ description: Identifique los requisitos previos para implementar Azure Informati
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/22/2018
+ms.date: 08/31/2018
 ms.topic: get-started-article
 ms.service: information-protection
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 03b97ca4324b9352db7abec37666e7de262e6f39
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 0cfaaa199178b7bede1d5b0d3fe54dd43dcfbf01
+ms.sourcegitcommit: beb4e480e0e821e32c9d35e86f2cf4321005c521
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42808041"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43663406"
 ---
 # <a name="requirements-for-azure-information-protection"></a>Requirements for Azure Information Protection (Requisitos de Azure Information Protection)
 
@@ -90,7 +90,7 @@ El cliente de Azure Information Protection puede etiquetar y proteger documentos
 
 - Office 365 ProPlus con aplicaciones de 2016 o 2013 (hacer clic y ejecutar o instalación basada en Windows Installer)
     
-    Estas ediciones de Office se incluyen con la mayoría (aunque no todas) de las suscripciones de Office 365 que incluyen la protección de datos de Azure Information Protection. Consulte la información de su suscripción para comprobar si se incluye Office 365 ProPlus. También encontrará esta información en la [hoja de datos de Azure Information Protection](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf).
+    Estas ediciones de Office se incluyen con la mayoría de las suscripciones de Office 365 (aunque no todas) que incluyen la protección de datos de Azure Information Protection. Consulte la información de su suscripción para comprobar si se incluye Office 365 ProPlus. También encontrará esta información en la [hoja de datos de Azure Information Protection](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf).
 
 - Office Professional Plus 2016
 
@@ -102,7 +102,7 @@ Las demás ediciones de Office no pueden proteger los documentos y correos elect
 
 El cliente de Azure Information Protection no admite varias versiones de Office en el mismo equipo. Asimismo, el cliente tampoco permite cambiar cuentas de usuario en Office.
 
-Para obtener información sobre las ediciones de Office que son compatibles con el servicio de protección de datos, vea [Aplicaciones compatibles con la protección de datos de Azure Rights Management](requirements-applications.md).
+Para más información sobre las ediciones de Office que son compatibles con el servicio de protección, vea [Aplicaciones compatibles con la protección de datos de Azure Rights Management](requirements-applications.md).
 
 ## <a name="firewalls-and-network-infrastructure"></a>Firewalls e infraestructura de red
 
@@ -110,7 +110,7 @@ Si tiene un firewall o dispositivos de red que intervengan que se deben configur
 
 Además de la información del artículo de Office específica de Azure Information Protection:
 
-- Permita tráfico HTTPS en TCP 443 a **api.informationprotection.azure.com**.
+- Permita tráfico HTTPS en TCP 443 a **informationprotection.hosting.portal.azure.net**.
 
 - Si usa un proxy web que precisa de autenticación, debe configurarlo para usar la autenticación integrada de Windows con las credenciales de inicio de sesión de Active Directory del usuario.
 
