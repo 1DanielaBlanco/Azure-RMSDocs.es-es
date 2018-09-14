@@ -5,15 +5,15 @@ author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 08/16/2018
-ms.topic: article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: 050ffcf6e500316912ac4b0894594b99b441aab5
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: d4d653f5244467b29fc2be7d4554d92d035d0f87
+ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42804313"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44151765"
 ---
 # <a name="hold-your-own-key-hyok-protection-for-azure-information-protection"></a>Protección HYOK (hold your own key) para Azure Information Protection
 
@@ -37,8 +37,7 @@ Una clave basada en la nube protege los documentos y los mensajes de correo elec
 
 Los documentos y los mensajes de correo electrónico que protege se pueden almacenar en la nube o en local. Para obtener más información sobre cómo funciona el proceso de protección de esta clave basada en la nube, vea [¿Qué es Azure Rights Management?](what-is-azure-rms.md )
 
-Los servicios de Office 365 y las aplicaciones basadas en la nube del inquilino se pueden integrar con Azure Information Protection para que las funciones empresariales importantes, como los servicios de búsqueda, indización, archivado y antimalware, continúen funcionando sin problemas para el contenido protegido con Azure Information Protection. Esta capacidad de leer el contenido cifrado de estos escenarios se suele denominar "reasoning over data" (razonamiento a través de datos). Por ejemplo, es la capacidad que permite a Exchange Online descifrar los mensajes de correo electrónico para la exploración de malware y ejecutar reglas de 
-prevención de pérdida de datos (DLP) en mensajes cifrados.
+Los servicios de Office 365 y las aplicaciones basadas en la nube del inquilino se pueden integrar con Azure Information Protection para que las funciones empresariales importantes, como los servicios de búsqueda, indización, archivado y antimalware, continúen funcionando sin problemas para el contenido protegido con Azure Information Protection. Esta capacidad de leer el contenido cifrado de estos escenarios se suele denominar "reasoning over data" (razonamiento a través de datos). Por ejemplo, es la capacidad que permite a Exchange Online descifrar los mensajes de correo electrónico para la exploración de malware y ejecutar reglas de prevención de pérdida de datos (DLP) en mensajes cifrados.
 
 Pero, para los requisitos normativos, algunas organizaciones podrían exigir el cifrado del contenido con una clave aislada de la nube. Este aislamiento significa que solo las aplicaciones locales y los servicios locales pueden leer el contenido cifrado. Esta opción de administración de claves es compatible con Azure Information Protection y se conoce como "hold your own key" o HYOK. Cuando se usa Azure Information Protection con HYOK, el inquilino tiene una clave basada en la nube y una clave local.
 
