@@ -1,3 +1,18 @@
+---
+title: Clase mip ApplyLabelAction
+description: Referencia de la clase mip ApplyLabelAction
+author: BryanLa
+ms.service: information-protection
+ms.topic: reference
+ms.date: 09/27/2018
+ms.author: bryanla
+ms.openlocfilehash: 06a17ef1e60503cfb7d690bea9bb72316544f16d
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47445774"
+---
 # <a name="class-mipapplylabelaction"></a>clase mip::ApplyLabelAction 
 La aplicación de acciones de la etiqueta requiere que la aplicación que realiza la llamada aplique una etiqueta específica.
   

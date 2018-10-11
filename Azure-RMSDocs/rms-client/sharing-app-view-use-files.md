@@ -43,7 +43,7 @@ Si ve dos versiones del archivo pero con extensiones de nombre de archivo difere
 
 La manera en que se abre el archivo depende de cómo se protegió, lo que se puede saber por la extensión de nombre de archivo. En cualquier caso, el proceso de abrir el archivo podría auditarse, y sigue auditándose mientras esté protegido. Además, si el archivo se envió como un archivo adjunto por correo electrónico, es posible que el remitente reciba una notificación por correo electrónico cada vez que abra el archivo.
 
-- **El archivo tiene una extensión de nombre de archivo** *.pfile*
+- **El archivo tiene una extensión de nombre de archivo *.pfile***
 
     El archivo se protegió de forma genérica.
 

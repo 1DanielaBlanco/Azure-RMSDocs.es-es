@@ -4,18 +4,18 @@ description: Instrucciones para instalar, configurar y ejecutar el analizador de
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/28/2018
+ms.date: 09/17/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: c1ad35bde57822460f0f3e7346d05d95647eedd6
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 5a61018b9e93a7a622c288f56110e9d99b30404f
+ms.sourcegitcommit: bf58c5d94eb44a043f53711fbdcf19ce503f8aab
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151867"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47211316"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Implementación del analizador de Azure Information Protection para clasificar y proteger automáticamente los archivos
 
@@ -29,7 +29,7 @@ Este analizador se ejecuta como un servicio en Windows Server y permite detectar
 
 - Rutas de acceso UNC para recursos compartidos de red que usan el protocolo de Bloque de mensajes del servidor (SMB).
 
-- Sitios y bibliotecas de SharePoint Server 2016 y SharePoint Server 2013. SharePoint 2010 también es compatible con los clientes que tengan [soporte extendido para esta versión de SharePoint](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010) y usan la versión preliminar del analizador.
+- Sitios y bibliotecas de SharePoint Server 2016 y SharePoint Server 2013. SharePoint Server 2010 también se admite en clientes que tengan [compatibilidad ampliada para esta versión de SharePoint](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010).
 
 Para analizar y etiquetar los archivos en los repositorios en la nube, use [Cloud App Security](https://docs.microsoft.com/cloud-app-security/).
 
@@ -168,7 +168,7 @@ Ahora está listo para especificar los almacenes de datos que se deben analizar.
 
 Use el cmdlet [Add-AIPScannerRepository](/powershell/module/azureinformationprotection/Add-AIPScannerRepository) para especificar los almacenes de datos que el analizador de Azure Information Protection debe analizar. Puede especificar carpetas locales, rutas UNC y direcciones URL de SharePoint Server para los sitios y las bibliotecas de SharePoint. 
 
-Versiones compatibles para SharePoint: SharePoint Server 2016 y SharePoint Server 2013. SharePoint Server 2010 también es compatible con los clientes que tengan [soporte extendido para esta versión de SharePoint](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010) y usan la versión preliminar del analizador.
+Versiones compatibles para SharePoint: SharePoint Server 2016 y SharePoint Server 2013. SharePoint Server 2010 también se admite en clientes que tengan [compatibilidad ampliada para esta versión de SharePoint](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010).
 
 1. Desde el mismo equipo con Windows Server, en la sesión de PowerShell, ejecute el comando siguiente para agregar el primer almacén de datos:
     
@@ -188,43 +188,34 @@ Con la configuración predeterminada del analizador, ahora está listo para ejec
 
 ## <a name="run-a-discovery-cycle-and-view-reports-for-the-scanner"></a>Ejecución de un ciclo de detección y visualización de informes del escáner
 
-1. Mediante **Herramientas administrativas** > **Servicios**, inicie el servicio **Analizador de Azure Information Protection**.
+1. En la sesión de PowerShell, reinicie el servicio **Analizador de Azure Information Protection** mediante la ejecución del siguiente comando:
     
-    Si tiene la versión preliminar actual del analizador, también puede ejecutar [Start-AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan) en la sesión de PowerShell.
+        Start-AIPScan
 
 2. Espere a que el analizador complete su ciclo. Cuando el analizador haya rastreado todos los archivos de los almacenes de datos que ha especificado, el servicio se detendrá. Puede utilizar el registro de eventos local de **aplicaciones y servicios** de Windows, **Azure Information Protection**, para confirmar cuándo se detiene el servicio. Busque el id. de evento informativo **911**.
 
 3. Revise los informes almacenados en %*localappdata*%\Microsoft\MSIP\Scanner\Reports que tengan un formato de archivo .csv. Con la configuración predeterminada del analizador, solo los archivos que cumplen las condiciones para la clasificación automática se incluyen en estos informes.
     
+    > [!TIP]
+    > Actualmente en versión preliminar, la información de estos informes se envía ahora a Azure Information Protection para que pueda verlos en Azure Portal. Para más información, consulte [Reporting for Azure Information Protection](reports-aip.md) (Informes para Azure Information Protection). 
+        
     Si los resultados no son los esperados, tendrá que ajustar las condiciones que ha especificado en la directiva de Azure Information Protection. Si es así, repita los pasos del 1 al 3 hasta que esté listo para cambiar la configuración para aplicar la clasificación y, opcionalmente, la protección. 
-    
-    En la versión preliminar actual de disponibilidad general (GA): cada vez que repita estos pasos, ejecute primero el siguiente comando de PowerShell en el equipo con Windows Server:
-  
-        Set-AIPScannerConfiguration -Schedule OneTime
-    
-    Si tiene la versión preliminar actual del analizador, no ejecute el comando Set-AIPScannerConfiguration.
-  
+
 Cuando esté listo para etiquetar automáticamente los archivos que el analizador detecta, continúe con el procedimiento siguiente. 
 
 ## <a name="configure-the-scanner-to-apply-classification-and-protection"></a>Configuración del escáner para aplicar la clasificación y protección
 
 En su configuración predeterminada, el analizador se ejecuta una vez y en el modo solo informe. Para cambiar esta configuración, ejecute el cmdlet [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration).
 
-1. En el equipo con Windows Server, en la sesión de PowerShell, ejecute uno de los siguientes comandos:
+1. En el equipo con Windows Server, en la sesión de PowerShell, ejecute el siguiente comando:
     
-    Para la versión actual de disponibilidad general (GA) del analizador:
-       
-        Set-AIPScannerConfiguration -Enforce On -Schedule Continuous
-    
-    Para la versión preliminar del analizador:
-       
         Set-AIPScannerConfiguration -Enforce On -Schedule Always
     
     Hay otras opciones de configuración que tal vez quiera cambiar. Por ejemplo, si se cambian los atributos de archivo y lo que se registra en los informes. Además, si la directiva de Azure Information Protection incluye la configuración que requiere un mensaje de justificación para bajar el nivel de clasificación o quitar la protección, especifique ese mensaje mediante el uso de este cmdlet. Use la [ayuda en línea](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration#parameters) para obtener más información sobre cada opción de configuración. 
 
-2. Mediante **Herramientas administrativas** > **Servicios**, reinicie el servicio **Analizador de Azure Information Protection**.
+2. Reinicie el servicio **Analizador de Azure Information Protection** mediante el siguiente comando:
     
-    Si tiene la versión preliminar actual del analizador, también puede ejecutar [Start-AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan) en la sesión de PowerShell.
+        Start-AIPScan
 
 3. Al igual que antes, supervise el registro de eventos y los informes para ver qué archivos se han etiquetado, qué clasificación se ha aplicado y si se ha aplicado la protección.
 
@@ -273,25 +264,16 @@ Por último, para los tipos de archivo restantes, el analizador aplica la etique
 
 Cuando el analizador aplica una etiqueta con protección, de forma predeterminada solo se protegen los tipos de archivo de Office. Puede cambiar este comportamiento para proteger también otros tipos de archivos. Sin embargo, cuando una etiqueta aplica protección genérica a documentos, la extensión de nombre de archivo cambia a .pfile. Además, el archivo pasa a ser de solo lectura hasta que lo abre un usuario autorizado y se guarda en su formato nativo. Los archivos de texto y de imágenes también pueden cambiar su extensión de nombre de archivo y pasar a ser de solo lectura. 
 
-Para cambiar este comportamiento predeterminado del analizador para, por ejemplo, proteger otros tipos de archivo de forma genérica, debe editar el registro manualmente y especificar los tipos de archivo adicionales que desea que estén protegidos. Para obtener instrucciones, vea [Configuración de la API de archivo](develop/file-api-configuration.md) en la guía del desarrollador. En esta documentación para desarrolladores, se hace referencia a la protección genérica como "PFile". Además, establezca lo siguiente para el analizador:
+Para cambiar este comportamiento predeterminado del analizador para, por ejemplo, proteger otros tipos de archivo de forma genérica, debe editar el registro manualmente y especificar los tipos de archivo adicionales que desea que estén protegidos. Como alternativa, puede proteger todos los tipos de archivo mediante la especificación del carácter comodín `*`. Para obtener instrucciones, vea [Configuración de la API de archivo](develop/file-api-configuration.md) en la guía del desarrollador. En esta documentación para desarrolladores, se hace referencia a la protección genérica como "PFile". Además, establezca lo siguiente para el analizador:
 
 - El analizador tiene su propio comportamiento predeterminado: solo los formatos de archivo de Office están protegidos de forma predeterminada. Si no se modifica el registro, el analizador no protegerá ningún otro tipo de archivo.
 
-- A menos que use la versión preliminar actual del analizador, debe especificar las extensiones de nombre de archivo específicas y no puede usar el carácter comodín `*`. La versión preliminar del analizador sí admite este carácter comodín.
 
 ## <a name="when-files-are-rescanned"></a>¿Cuándo se vuelven a examinan los archivos?
 
 En el primer ciclo de examen, el analizador inspecciona todos los archivos de los almacenes de datos configurados y, después, en los exámenes posteriores, solo inspecciona los archivos nuevos o modificados. 
 
-Puede exigir que el analizador inspeccione de nuevo todos los archivos ejecutando el comando siguiente:
-
-- Para la versión actual de disponibilidad general (GA) del analizador:
-    
-    Ejecute [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) con el parámetro `-Type` establecido en **Full**.
-
-- Para la versión preliminar del analizador:
-    
-    Ejecute [Start-AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan) con el parámetro `-Reset`. El analizador debe configurarse para una programación manual, lo que requiere que el parámetro `-Schedule` se establezca en **Manual** con [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration).
+Puede forzar al analizador a que inspeccione de nuevo todos los archivos mediante la ejecución de [Start-AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan) con el parámetro `-Reset`. El analizador debe configurarse para una programación manual, lo que requiere que el parámetro `-Schedule` se establezca en **Manual** con [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration).
 
 Volver a inspeccionar todos los archivos resulta útil si quiere que los informes incluyan todos los archivos. Esta opción de configuración suele usarse cuando el analizador se ejecuta en modo de detección. Cuando finaliza el examen completo, el tipo de examen cambia automáticamente a incremental para que en los análisis posteriores solo se examinen los archivos nuevos o modificados.
 
@@ -384,6 +366,8 @@ Otros cmdlets del analizador le permiten cambiar la cuenta de servicio y la base
 
 - [Get-AIPScannerRepository](/powershell/module/azureinformationprotection/Get-AIPScannerRepository)
 
+- [Get-AIPScannerStatus](/powershell/module/azureinformationprotection/Get-AIPScannerStatus)
+
 - [Install-AIPScanner](/powershell/module/azureinformationprotection/Install-AIPScanner)
 
 - [Remove-AIPScannerRepository](/powershell/module/azureinformationprotection/Remove-AIPScannerRepository)
@@ -398,14 +382,9 @@ Otros cmdlets del analizador le permiten cambiar la cuenta de servicio y la base
 
 - [Set-AIPScannerRepository](/powershell/module/azureinformationprotection/Set-AIPScannerRepository)
 
+- [Start-AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan)
+
 - [Uninstall-AIPScanner](/powershell/module/azureinformationprotection/Uninstall-AIPScanner)
-
-
-Cmdlets adicionales en la versión preliminar:
-
-- [Get-AIPScannerStatus](/powershell/module/azureinformationprotection/Get-AIPScannerStatus)
-
-- [Start-AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan) 
 
 - [Update-AIPScanner](/powershell/module/azureinformationprotection/Update-AIPScanner)
 

@@ -4,18 +4,18 @@ description: Instrucciones de cómo clasificar y proteger sus documentos y corre
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/06/2018
+ms.date: 09/17/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 01637807680e4172af8938a3c63b092191ef41cd
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 355d71f844d64fb26898c482d2414ca388ac38be
+ms.sourcegitcommit: ea8207da513f61bc0691c952da1f8b61ceb10887
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148689"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45696524"
 ---
 # <a name="user-guide-classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Guía del usuario: Clasificación y protección de archivos y correos electrónicos mediante Azure Information Protection
 
@@ -76,6 +76,8 @@ Posibles razones:
 - Si el administrador ha configurado recientemente una etiqueta nueva, intente cerrar todas las instancias de la aplicación de Office y vuelva a abrirla. Esta acción comprueba si las etiquetas han experimentado algún cambio.
 
 - Si la etiqueta que falta aplica protección, es posible que tenga una edición de Office que no admite la aplicación de protección de Rights Management. Para comprobarlo, haga clic en **Proteger** > **Ayuda y comentarios**. En el cuadro de diálogo, compruebe si en la sección **Estado del cliente** aparece el mensaje **Este cliente no tiene licencia de Office Profesional Plus**. 
+    
+    No es necesario Office Professional Plus si tiene aplicaciones de Office 2016 con una versión mínima 1805, compilación 9330.2078, y su cuenta tiene asignada una licencia para Azure Rights Management (también conocido como Azure Information Protection para Office 365).
 
 - La etiqueta debe estar en una directiva de ámbito que no incluye su cuenta. Póngase en contacto con el Servicio de asistencia o con el administrador.
 

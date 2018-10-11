@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 57c410432377d5a98c132239ac1805293d1a5133
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: e63b98118cda3a927577a90c7c0999d8781f8d93
+ms.sourcegitcommit: bf58c5d94eb44a043f53711fbdcf19ce503f8aab
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151493"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47211299"
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>Configuración de la directiva de Azure Information Protection
 
@@ -168,7 +168,11 @@ Use la siguiente información como ayuda para configurar la directiva de Azure I
 
 - [Configuración de etiquetas para distintos idiomas](configure-policy-languages.md)
 
+- [Cómo migrar etiquetas de Azure Information Protection al Centro de seguridad y cumplimiento de Office 365](configure-policy-migrate-labels.md)
+
 ## <a name="next-steps"></a>Pasos siguientes
 
 Para ver un ejemplo de cómo personalizar la directiva predeterminada y ver el comportamiento resultante en una aplicación de Office, pruebe el [tutorial de inicio rápido de Azure Information Protection](infoprotect-quick-start-tutorial.md).
+
+Para ver cómo está funcionando la directiva, consulte [Reporting de Azure Information Protection](reports-aip.md) (Informes para Azure Information Protection).
 

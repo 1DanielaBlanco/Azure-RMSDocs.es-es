@@ -1,3 +1,18 @@
+---
+title: Clase mip AddContentHeaderAction
+description: Referencia de la clase mip AddContentHeaderAction
+author: BryanLa
+ms.service: information-protection
+ms.topic: reference
+ms.date: 09/27/2018
+ms.author: bryanla
+ms.openlocfilehash: bc60fe32005a0c6bc8088ab7687a3f711ae7a99a
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47445655"
+---
 # <a name="class-mipaddcontentheaderaction"></a>clase mip::AddContentHeaderAction 
 Una clase de acción que especifica agregar un encabezado de contenido.
   

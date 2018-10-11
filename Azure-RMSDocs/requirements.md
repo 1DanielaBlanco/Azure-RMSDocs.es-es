@@ -4,18 +4,18 @@ description: Identifique los requisitos previos para implementar Azure Informati
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/31/2018
+ms.date: 09/19/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e471cd5e4de5c4bd4c24fd5c5627e69f7db1ec90
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 00daf488568fef8569f97db378b771383a221ce3
+ms.sourcegitcommit: 07af86511a394274f10cf1340de4cf4bad6d1675
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148348"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46473824"
 ---
 # <a name="requirements-for-azure-information-protection"></a>Requirements for Azure Information Protection (Requisitos de Azure Information Protection)
 
@@ -78,6 +78,8 @@ Los siguientes dispositivos admiten el cliente de Azure Information Protection, 
 
 - Windows Server 2008 R2 
 
+Además de instalar al cliente de Azure Information Protection en equipos físicos, también puede instalarlo en máquinas virtuales. Compruebe si el proveedor de software de la solución de escritorio virtual tiene una configuración adicional que podría ser necesaria para ejecutar al cliente de Azure Information Protection. Por ejemplo, para las soluciones de Citrix, puede que deba [deshabilitar los enlaces de la interfaz de programación de aplicaciones (API) de Citrix](https://support.citrix.com/article/CTX107825) para Office (winword.exe, excel.exe, outlook.exe, powerpoint.exe) y el cliente de Azure Information Protection ( msip.app.exe, msip.viewer.exe).
+
 En estas versiones de servidor, el cliente de Azure Information Protection es compatible con los Servicios de Escritorio remoto. Si elimina perfiles de usuario al utilizar el cliente de Azure Information Protection con los Servicios de Escritorio remoto, no elimine la carpeta **%Appdata%\Microsoft\Protect**.
 
 Cuando el cliente de Azure Information Protection protege los datos mediante el servicio Azure Rights Management, pueden consumirlos los [mismos dispositivos](requirements-client-devices.md) que son compatibles con el servicio Azure Rights Management.
@@ -88,9 +90,9 @@ El cliente de Azure Information Protection tiene [requisitos previos adicionales
 
 El cliente de Azure Information Protection puede etiquetar y proteger documentos y correos electrónicos mediante las aplicaciones de Office **Word**, **Excel**, **PowerPoint** y **Outlook** de cualquiera de las siguientes ediciones de Office:
 
+- Office 365 con aplicaciones de Office 2016 (versión mínima 1805, compilación 9330.2078) cuando se asigna una licencia a un usuario para Azure Rights Management (también conocido como Azure Information Protection para Office 365)
+
 - Office 365 ProPlus con aplicaciones de 2016 o 2013 (hacer clic y ejecutar o instalación basada en Windows Installer)
-    
-    Estas ediciones de Office se incluyen con la mayoría de las suscripciones de Office 365 (aunque no todas) que incluyen la protección de datos de Azure Information Protection. Consulte la información de su suscripción para comprobar si se incluye Office 365 ProPlus. También encontrará esta información en la [hoja de datos de Azure Information Protection](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf).
 
 - Office Professional Plus 2016
 

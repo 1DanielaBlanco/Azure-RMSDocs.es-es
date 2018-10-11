@@ -1,3 +1,18 @@
+---
+title: Clase mip AddContentFooterAction
+description: Referencia de la clase mip AddContentFooterAction
+author: BryanLa
+ms.service: information-protection
+ms.topic: reference
+ms.date: 09/27/2018
+ms.author: bryanla
+ms.openlocfilehash: 73f641d965c3cf0236919557128af2ed07705672
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47445842"
+---
 # <a name="class-mipaddcontentfooteraction"></a>clase mip::AddContentFooterAction 
 Una clase de acción que especifica agregar un pie de página de contenido al documento.
   

@@ -4,18 +4,18 @@ description: Script de ejemplo para copiar y editar, como se describe en las ins
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/31/2018
+ms.date: 09/26/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ae6d8d0f-4ebc-43fe-a1f6-26b690fd83d0
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e7c10a24db234196ae772fd6406a0dc66555b81d
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: be5b7c658fcdd2c5d4d03de21a89bfda51039539
+ms.sourcegitcommit: 4bc807177cf6c284f673cea667b6086121d69231
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44147282"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47233701"
 ---
 # <a name="windows-powershell-script-for-azure-rms-protection-by-using-file-server-resource-manager-fci"></a>Script de Windows PowerShell para la protección de Azure RMS con FCI del Administrador de recursos del servidor de archivos
 
@@ -25,8 +25,7 @@ Esta página contiene el script de ejemplo para copiar y editar, como se describ
 
 Este script usa la versión mínima **1.3.155.2** para el módulo AzureInformationProtection. Ejecute el siguiente comando para comprobar la versión: `(Get-Module AzureInformationProtection -ListAvailable).Version` 
 
-*&#42;&#42;Aviso de declinación de responsabilidades&#42;&#42;: este script de ejemplo no es compatible con ningún servicio o programa de soporte técnico estándar de Microsoft. Este script*
-*de ejemplo se proporciona TAL CUAL sin garantía de ningún tipo.*
+*&#42;&#42;Aviso de declinación de responsabilidades&#42;&#42;: este script de ejemplo no es compatible con ningún servicio o programa de soporte técnico estándar de Microsoft. Este script de ejemplo se proporciona TAL CUAL sin garantía de ningún tipo.*
 
 ```
 <#
@@ -57,7 +56,7 @@ param(
 ) 
 
 # script information
-[String] $Script:Version = 'version 3.3' 
+[String] $Script:Version = 'version 3.4' 
 [String] $Script:Name = "RMS-Protect-FCI.ps1"
 
 #global working variables
@@ -116,6 +115,7 @@ function Set-RMSConnection ($fappId, $fkey, $fbposId) {
     try {
                Set-RMSServerAuthentication -AppPrincipalId $fappId -Key $fkey -BposTenantId $fbposId
         Write-Host ("Information: " + "Connected to Azure RMS Service with BposTenantId: $fbposId using AppPrincipalId: $fappId")
+#       Get-RMSTemplate -Force
         $returnValue = $true
     } catch {
         Write-Host ("ERROR" + "During connection to Azure RMS Service with BposTenantId: $fbposId using AppPrincipalId: $fappId")

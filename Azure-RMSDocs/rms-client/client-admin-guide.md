@@ -4,18 +4,18 @@ description: Instrucciones e información para administradores de una red empres
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/28/2018
+ms.date: 09/27/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 63e84e8a5d072f0bb57bb72754f97ca8963a2c76
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: c415868045e2064696181217f66262e90887e25a
+ms.sourcegitcommit: 7d477c418f3e5d8950c73af154c1575c84791ccc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149113"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47403019"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Guía para administradores del cliente de Azure Information Protection
 
@@ -106,9 +106,7 @@ Cuando el cliente esté instalado, utilice la opción **Ayuda y comentarios** pa
 
 El vínculo **Más información** dirige, de forma predeterminada, al sitio web de [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection), pero lo puede configurar con una dirección URL personalizada como uno de los valores de [configuración de directivas](../configure-policy-settings.md) en la directiva de Azure Information Protection.
 
-Use el vínculo **Envíenos sus comentarios** (versiones de disponibilidad general) para enviar sugerencias o solicitudes al equipo de Information Protection. No utilice esta opción para obtener soporte técnico, pero, en su lugar, vea [Opciones de soporte y recursos de la comunidad](../information-support.md#support-options-and-community-resources). 
-
-El vínculo **Notificar un problema** reemplaza al vínculo **Envíenos sus comentarios** de la versión preliminar del cliente. De manera predeterminada, esta opción envía un correo electrónico a Microsoft, pero puede configurar la cadena HTTP para los usuarios si especifica una [configuración de cliente avanzada](client-admin-guide-customizations.md#modify-the-email-address-for-the-report-an-issue-link). Por ejemplo, especifique la dirección de correo electrónico del departamento de soporte técnico.
+El vínculo **Report an Issue** (Informar de un problema) se muestra en las versiones preliminares del cliente y no en las versiones de disponibilidad general. De manera predeterminada, esta opción envía un correo electrónico a Microsoft, pero puede configurar la cadena HTTP para los usuarios si especifica una [configuración de cliente avanzada](client-admin-guide-customizations.md#modify-the-email-address-for-the-report-an-issue-link). Por ejemplo, especifique la dirección de correo electrónico del departamento de soporte técnico.
 
 La opción **Exportar registros** se utiliza para recopilar y adjuntar archivos de registro para el cliente de Azure Information Protection si se le ha pedido que los envíe al soporte técnico de Microsoft. Los usuarios finales también puede utilizar esta opción para enviar estos archivos de registro a su departamento de soporte técnico.
 
