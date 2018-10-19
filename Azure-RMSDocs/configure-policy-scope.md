@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 4b134785-0353-4109-8fa7-096d1caa2242
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: fd9cc3782a40997d855576572475d4bfff4b1fe4
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: b40431632d02445d12e1faac012c28c1b1e6f8e2
+ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150745"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49169964"
 ---
 # <a name="how-to-configure-the-azure-information-protection-policy-for-specific-users-by-using-scoped-policies"></a>Configuración de la directiva de Azure Information Protection para usuarios específicos mediante directivas de ámbito
 
@@ -39,7 +39,7 @@ Para configurar una directiva de ámbito de Azure Information Protection:
 
     Por ejemplo, en el menú del concentrador, haga clic en **Todos los servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
-2. En la opción de menú **CLASIFICACIONES** > **Directivas**: en la hoja **Azure Information Protection: directivas**, seleccione **Agregar una directiva**. Verá la hoja **Directiva** en la que se muestra la directiva global existente, donde puede configurar la nueva directiva con ámbito.
+2. En la opción de menú **Clasificaciones** > **Directivas**: en la hoja **Azure Information Protection: directivas**, seleccione **Agregar una directiva**. Verá la hoja **Directiva** en la que se muestra la directiva global existente, donde puede configurar la nueva directiva con ámbito.
 
 3. Especifique un nombre de directiva y una descripción que solo los administradores vean en el portal de Azure. El nombre debe ser único en el inquilino. Después, seleccione **Specify which users/groups get this policy** (Especificar qué usuarios o grupos obtienen esta directiva) y, en las hojas siguientes, busque y seleccione los usuarios y los grupos a los que se aplica esta directiva. Las etiquetas y valores de configuración que defina en esta directiva de ámbito se aplican solo a estos usuarios.
     

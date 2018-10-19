@@ -4,18 +4,18 @@ description: Información sobre cómo personalizar el cliente de Azure Informati
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/27/2018
+ms.date: 10/15/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 40415c25befd3eea8d33a2b8572b0d48f7ee918c
-ms.sourcegitcommit: 7d477c418f3e5d8950c73af154c1575c84791ccc
+ms.openlocfilehash: 7657969916f69424a2823cb8b1dd79f9a50b6011
+ms.sourcegitcommit: 283782ee7e3ec566f479c8914eae7bf84d904392
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47403104"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49382653"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Guía del administrador: Configuraciones personalizadas del cliente de Azure Information Protection
 
@@ -29,7 +29,7 @@ Algunas de estas opciones requieren la modificación del Registro y otras usan l
 
 1. Si aún no lo ha hecho, en una nueva ventana del explorador, [inicie sesión en Azure Portal](../configure-policy.md#signing-in-to-the-azure-portal) y, después, vaya hasta la hoja **Azure Information Protection**.
 
-2. Desde la opción de menú **CLASIFICACIONES** > **Etiquetas**: seleccione **Directivas**.
+2. Desde la opción de menú **Clasificaciones** > **Etiquetas**: seleccione **Directivas**.
 
 3. En la hoja **Azure Information Protection: Directivas**, seleccione el menú contextual (**...**) junto a la directiva para que contenga la configuración avanzada. Después, seleccione **Configuración avanzada**.
     
@@ -251,7 +251,7 @@ Como resultado de esta opción de configuración, cuando el cliente de Azure Inf
 
 Para que el analizador de Azure Information Protection utilice el nuevo valor, haya que reiniciar el servicio del analizador.
 
-Para más información sobre el cifrado de archivos PDF, consulte la entrada de blog [New support for PDF encryption with Microsoft Information Protection](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/New-support-for-PDF-encryption-with-Microsoft-Information/ba-p/2627570) (Nueva compatibilidad con el cifrado de archivos PDF con Microsoft Information Protection).
+Para más información sobre el cifrado de archivos PDF, consulte la entrada de blog [New support for PDF encryption with Microsoft Information Protection](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/New-support-for-PDF-encryption-with-Microsoft-Information/ba-p/262757) (Nueva compatibilidad con el cifrado de archivos PDF con Microsoft Information Protection).
 
 ### <a name="to-convert-existing-ppdf-files-to-protected-pdf-files"></a>Conversión de archivos .ppdf existentes en archivos .pdf protegidos
 
@@ -278,8 +278,6 @@ Para usar comandos de PowerShell para convertir los archivos .ppdf existentes en
 3. Quite la etiqueta mediante [Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel) con el parámetro *RemoveLabel*. Si va a usar la [configuración de directiva](../configure-policy-settings.md) de **Users must provide justification to set a lower classification label, remove a label, or remove protection** (Los usuarios deben proporcionar justificación para establecer una etiqueta de clasificación inferior, quitar una etiqueta o quitar la protección), debe especificar también el parámetro *Justification* con el motivo. Por ejemplo: 
     
         Set-AIPFileLabel \\Finance\Projectx\sales.ppdf -RemoveLabel -JustificationMessage 'Removing .ppdf protection to replace with .pdf ISO standard'
-    
-    Si no puede quitar la etiqueta porque usa etiquetado obligatorio como [configuración de directiva](../configure-policy-settings.md) (**All documents and emails must have a label** [Todos los documentos y correos electrónicos deben tener una etiqueta]), en su lugar, aplique temporalmente una etiqueta diferente.
 
 4. Vuelva a aplicar la etiqueta original mediante la especificación del valor de la etiqueta que identificó en el paso 1. Por ejemplo:
     

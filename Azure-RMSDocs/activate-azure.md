@@ -11,12 +11,12 @@ ms.custom: askipteam
 ms.assetid: 4e886f5a-f535-4207-b8c4-8e0376c0758e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f66a0ef19d6f0e4632cf86f3bfb46fc44b249a31
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 82d1ee4267210b4fef989ab6a20385e24e2a8b35
+ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148994"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49169896"
 ---
 # <a name="how-to-activate-azure-rights-management-from-the-azure-portal"></a>Cómo activar Azure Rights Management desde Azure Portal
 
@@ -32,7 +32,7 @@ Siga estas instrucciones si quiere activar el servicio Azure Rights Management (
     
     Para abrir la hoja de Azure Information Protection, debe disponer de un [plan Premium de Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) o de un [plan de Office 365 que incluya Rights Management](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf). Si tiene una de estas suscripciones pero ve un mensaje que le indica que no se encuentra una suscripción válida, [póngase en contacto con el soporte técnico de Microsoft](information-support.md#to-contact-microsoft-support) o use los canales habituales de soporte técnico.
 
-2. Busque las opciones del menú **ADMINISTRAR** y seleccione **Activación de la protección**. 
+2. Busque las opciones del menú **Administrar** y seleccione **Activación de la protección**. 
     
     Haga clic en **Activar** y, después, confirme la acción. 
 
