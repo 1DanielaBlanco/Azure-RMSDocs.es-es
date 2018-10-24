@@ -4,18 +4,18 @@ description: Conozca e identifique los derechos específicos que se usan al prot
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/18/2018
+ms.date: 10/08/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 698d92cc38081a8b56f27ede4005cf8b514ed212
-ms.sourcegitcommit: a327dc124974c8b489340993d4b2b364ecf5fec5
+ms.openlocfilehash: ab94d732144613d810c959f7fad0f34a842da9c7
+ms.sourcegitcommit: 76e1b7c0255700813590be62d94b19338bf6c201
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46289284"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48866193"
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>Configuración de los derechos de uso para Azure Rights Management
 
@@ -94,7 +94,7 @@ Estas plantillas predeterminadas se crean al adquirir la suscripción. Los nombr
 
 ## <a name="do-not-forward-option-for-emails"></a>Opción No reenviar para correos electrónicos
 
-Los clientes y servicios de Exchange (por ejemplo, el cliente de Outlook, la aplicación Outlook Web Access y las reglas de flujo de correo de Exchange) tienen una opción adicional de protección de derechos de información para correos electrónicos: **No reenviar**. 
+Los clientes y servicios de Exchange (por ejemplo, el cliente de Outlook, Outlook en la web, las reglas de flujo de correo de Exchange y las acciones de DLP para Exchange) tienen una opción adicional de protección de derechos de información para correos electrónicos: **No reenviar**. 
 
 Aunque esta opción aparece para los usuarios (y los administradores de Exchange) como si fuera una plantilla predeterminada de Rights Management que se puede seleccionar, **No reenviar** no es una plantilla. Esto explica por qué no se ve en Azure Portal al visualizar y administrar las plantillas de protección. En realidad, la opción **No reenviar** es un conjunto de derechos de uso que los usuarios aplican dinámicamente a los destinatarios de correo electrónico.
 
@@ -119,7 +119,7 @@ Un usuario quiere enviar información por correo electrónico a personas concret
 
 Cuando Exchange Online usa las nuevas capacidades para el cifrado de mensajes de Office 365, está disponible una nueva opción de correo electrónico: **Solo cifrar**.
 
-Esta opción está disponible para los inquilinos que usan Exchange Online y se puede seleccionar en Outlook en la web, como otra opción de protección de derechos para una regla de flujo de correo, y en Outlook cuando tiene Office 365 ProPlus con una versión mínima de [1804](/officeupdates/monthly-channel-2018#outlook-feature-updates-4). Para obtener más información, consulte la entrada de blog siguiente del equipo de Office: [Encrypt only rolling out in Office 365 Message Encryption](https://aka.ms/omefeb2018) (Despliegue de la directiva Cifrar solo del cifrado de mensajes de Office 365).
+Esta opción está disponible para los inquilinos que usan Exchange Online y se puede seleccionar en Outlook en la web, como otra opción de protección de derechos para una regla de flujo de correo, como una acción de DLP de Office 365, y en Outlook cuando tiene Office 365 ProPlus con una versión mínima de [1804](/officeupdates/monthly-channel-2018#outlook-feature-updates-4). Para obtener más información, consulte la entrada de blog siguiente del equipo de Office: [Encrypt only rolling out in Office 365 Message Encryption](https://aka.ms/omefeb2018) (Despliegue de la directiva Cifrar solo del cifrado de mensajes de Office 365).
 
 Cuando se selecciona esta opción, se cifra el correo electrónico y los destinatarios deben autenticarse. Así, los destinatarios tienen todos los derechos de uso salvo **Guardar como, Exportar** y **Control total**. Esta combinación de derechos de uso implica que los destinatarios no tienen restricciones, excepto que no pueden eliminar la protección. Por ejemplo, un destinatario puede copiar del correo electrónico, imprimirlo y reenviarlo. 
 

@@ -4,18 +4,18 @@ description: Detalles técnicos sobre tipos de archivos, extensiones de nombres 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/24/2018
+ms.date: 10/10/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f9def0ae81a3887f9f6e1c99f7e1f02c54581fdb
-ms.sourcegitcommit: c1274d6d7ab486590dcd2a4e6aca3dcd3d284c1b
+ms.openlocfilehash: 23baab9ba6ab9a7b1d43dd1f5f12947f383d9d28
+ms.sourcegitcommit: d049c23ddd0bb7f4c4d40153c753f178b3a04d43
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47168767"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49072483"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>Guía del administrador: Tipos de archivos compatibles con el cliente de Azure Information Protection
 
@@ -98,6 +98,8 @@ Hay tamaños de archivo máximos que el cliente de Azure Information Protection 
     - Para proteger otros tipos de archivo y abrirlos en el visor de Azure Information Protection, el tamaño de archivo máximo está limitado solo por la memoria y el espacio disponible en disco.
     
     - Para desproteger los archivos con el cmdlet [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile), el tamaño de archivo máximo compatible para los archivos .pst es 5 GB. Los otros tipos de archivo están limitados solo por la memoria y el espacio disponible en disco.
+    
+    Sugerencia: si tiene que buscar o recuperar elementos protegidos en archivos .pst grandes, vea [Guidance for using Unprotect-RMSFile for eDiscovery](../configure-super-users.md#guidance-for-using-unprotect-rmsfile-for-ediscovery) (Instrucciones para usar Unprotect-RMSFile para eDiscovery).
 
 ### <a name="supported-file-types-for-classification-and-protection"></a>Tipos de archivos compatibles para protección y clasificación
 
@@ -214,6 +216,22 @@ Puede cambiar los tipos de archivo incluidos o excluidos de la inspección de ar
 > Si incluye los archivos .rtf en la exploración, debe supervisar atentamente el analizador. Algunos archivos .rtf no se pueden inspeccionar correctamente mediante el analizador. La inspección de estos archivos no se completa y hay que reiniciar el servicio. 
 
 De forma predeterminada, el analizador solo protege los tipos de archivos de Office. Para cambiar este comportamiento del analizador, edite el Registro y especifique el resto de tipos de archivo que quiera proteger. Para obtener instrucciones, vea [Configuración de la API de archivo](../develop/file-api-configuration.md) en la guía del desarrollador.
+
+#### <a name="to-scan-zip-files"></a>Para analizar archivos .zip
+
+El analizador puede inspeccionar archivos .zip si sigue estas instrucciones:
+
+1. Para el equipo de Windows Server que ejecuta el escáner, instale [Office 2010 Filter Pack SP2](https://support.microsoft.com/en-us/help/2687447/description-of-office-2010-filter-pack-sp2).
+
+2. Configure el analizador para incluir los archivos .zip que se van a inspeccionar, como se describe en la sección anterior.
+
+3. Si es necesario clasificar y proteger los archivos .zip, en lugar de simplemente inspeccionarlos para obtener información confidencial, agregue una entrada del registro para los archivos con esta extensión de nombre de archivo para que tengan protección genérica (pfile), como se describe en la sección anterior.
+
+Escenario de ejemplo después de realizar estos pasos: 
+
+Un archivo denominado **accounts.zip** contiene hojas de cálculo de Excel con números de tarjeta de crédito. La directiva de Azure Information Protection tiene una etiqueta denominada **confidencial\Finanzas**, que está configurada para detectar números de tarjeta de crédito y aplicar automáticamente la etiqueta con protección que restringe el acceso al grupo Finanzas. 
+
+Después de inspeccionar el archivo, el analizador clasifica este archivo como **Confidencial\Finanzas**, aplica la protección genérica al archivo para que solo los miembros de los grupos de Finanzas puedan descomprimirlo y cambia el nombre del archivo a  **accounts.zip.pfile**.
 
 ### <a name="files-that-cannot-be-protected-by-default"></a>Archivos que no se puede proteger de forma predeterminada
 

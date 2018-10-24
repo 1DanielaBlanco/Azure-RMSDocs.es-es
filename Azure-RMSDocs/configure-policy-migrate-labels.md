@@ -4,17 +4,17 @@ description: Migración de etiquetas de Azure Information Protection al Centro d
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/28/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.service: information-protection
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 64063af186f01a5829b7aa668260928e3b13656d
-ms.sourcegitcommit: 304702a3f2f2ab2b32493c4aedeb5ee8424b925c
+ms.openlocfilehash: 075330138910da90049cad3c1ccc74a1a360a218
+ms.sourcegitcommit: 39403f0e9fe5912d467b119ed45da94bccd1cc80
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47415016"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49100653"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-the-office-365-security--compliance-center"></a>Cómo migrar etiquetas de Azure Information Protection al Centro de seguridad y cumplimiento de Office 365
 
@@ -93,7 +93,7 @@ Cuando haya confirmado que el inquilino admite etiquetas de confidencialidad en 
 
 2. En la hoja **Azure Information Protection - Etiquetado unificado**, seleccione **Activar** y siga las instrucciones en línea.
 
-Las etiquetas que se hayan migrado correctamente se puede usar ahora con [clientes que admitan etiquetado unificado](#clients-that-support-unified-labeling) cuando estas etiquetas se publiquen en el Centro de seguridad y cumplimiento.
+Los [clientes que admiten el etiquetado unificado](#clients-that-support-unified-labeling) ahora pueden usar las etiquetas migradas correctamente. En cambio, primero debe publicar estas etiquetas en el Centro de seguridad y cumplimiento.
 
 
 ### <a name="clients-that-support-unified-labeling"></a>Clientes que admiten etiquetado unificado
@@ -107,4 +107,4 @@ Los clientes que actualmente admiten el etiquetado unificado son:
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Para más información sobre cómo configurar las etiquetas migradas en el Centro de seguridad y cumplimiento de Office 365, consulte la entrada de blog, [Announcing the availability of unified labeling management in the Security & Compliance Center](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-the-availability-of-unified-labeling-management-in/ba-p/262492) (Anuncio de la disponibilidad de administración de etiquetado unificado en el Centro de seguridad y cumplimiento).
+Para más información sobre cómo configurar y publicar las etiquetas migradas en el Centro de seguridad y cumplimiento de Office 365, consulte la entrada de blog, [Announcing the availability of unified labeling management in the Security & Compliance Center](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-the-availability-of-unified-labeling-management-in/ba-p/262492) (Anuncio de la disponibilidad de administración de etiquetado unificado en el Centro de seguridad y cumplimiento).

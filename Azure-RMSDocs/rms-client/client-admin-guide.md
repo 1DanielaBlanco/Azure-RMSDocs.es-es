@@ -4,18 +4,18 @@ description: Instrucciones e información para administradores de una red empres
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/27/2018
+ms.date: 10/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: c415868045e2064696181217f66262e90887e25a
-ms.sourcegitcommit: 7d477c418f3e5d8950c73af154c1575c84791ccc
+ms.openlocfilehash: b5eccdd62d828bc5104815746458d4c7036594fd
+ms.sourcegitcommit: 39403f0e9fe5912d467b119ed45da94bccd1cc80
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47403019"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49100650"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Guía para administradores del cliente de Azure Information Protection
 
@@ -198,7 +198,7 @@ Use el [historial de publicación de versiones y directiva de soporte técnico](
 
 ### <a name="upgrading-the-azure-information-protection-scanner"></a>Actualización del analizador de Azure Information Protection
 
-Para actualizar el analizador de Azure Information Protection, instale la versión más reciente del cliente de Azure Information Protection. Lleve a cabo una de las siguientes acciones únicas:
+Para actualizar el analizador de Azure Information Protection, instale la versión más reciente del cliente de Azure Information Protection. Realice una de estas acciones únicas: Después de hacerlo, no tendrá que volver a examinar los archivos que ya están analizados.
 
 Para la versión actual de disponibilidad general (GA): 
 

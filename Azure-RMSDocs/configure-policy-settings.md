@@ -4,16 +4,16 @@ description: Configure las directivas de Azure Information Protection que se apl
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/12/2018
+ms.date: 10/01/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
-ms.openlocfilehash: 118b65d1dc76e2df7b1fd639b6ea224cb5e8220c
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: eb2f539486464d93e99f8485fc8d0812f9a7953d
+ms.sourcegitcommit: 4e2493d7856dc35bb3f5869fff1276c98bf88192
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151748"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47864128"
 ---
 # <a name="how-to-configure-the-policy-settings-for-azure-information-protection"></a>Configuración directivas para Azure Information Protection
 
@@ -49,7 +49,7 @@ Para establecer la configuración:
         
         ![Mensaje de Azure Information Protection si la nueva clasificación es más baja](./media/info-protect-lower-justification.png)
         
-        Esta opción no es aplicable a las subetiquetas.
+        Esta opción no es aplicable para reducir la clasificación de las subetiquetas bajo la misma etiqueta principal.
         
     - **Para los mensajes de correo electrónico con datos adjuntos, aplicar una etiqueta que coincida con la clasificación más alta de los archivos adjuntos**: cuando se establece esta opción en **Recomendado**, se pide a los usuarios que apliquen una etiqueta a su mensaje de correo electrónico. La etiqueta se elige de manera dinámica, basándose en las etiquetas de clasificación que se han aplicado a los archivos adjuntos, y se selecciona la etiqueta de clasificación más alta. Los datos adjuntos deben ser un archivo físico y no pueden ser un vínculo a un archivo (por ejemplo, un vínculo a un archivo en SharePoint o OneDrive para la Empresa). Los usuarios pueden aceptar la recomendación o descartarla. Cuando esta opción se establece en **Automático**, la etiqueta se aplica automáticamente, pero los usuarios pueden quitarla o seleccionar una etiqueta distinta antes de enviar el correo electrónico.  
     

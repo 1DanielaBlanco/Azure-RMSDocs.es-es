@@ -4,24 +4,24 @@ description: Obtenga información sobre la característica de superusuario del s
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/31/2018
+ms.date: 10/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 762b46ac33b57bd81b5c1ab36d07f4d33305b4c0
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 07b780721bc0f22de6c36d88d98a2c8360af67b8
+ms.sourcegitcommit: f5395541fa3f74839402805dab68d0c2de395249
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151010"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101841"
 ---
 # <a name="configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery"></a>Configuración de superusuarios para Azure Rights Management y los servicios de detección o la recuperación de datos
 
 >*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
-La característica de superusuario del servicio Azure Rights Management de Azure Information Protection garantiza que los usuarios y servicios autorizados siempre puedan leer e inspeccionar los datos que Azure Rights Management protege para la organización. Y, si es necesario, quitar la protección o cambiar la protección que se aplicó anteriormente. 
+La característica de superusuario del servicio Azure Rights Management de Azure Information Protection garantiza que los usuarios y servicios autorizados siempre puedan leer e inspeccionar los datos que Azure Rights Management protege para la organización. Si es necesario, la protección se puede quitar o modificar.
 
 Un superusuario siempre tiene el [derecho de uso](configure-usage-rights.md) de control total de Rights Management para documentos y correos electrónicos que se han protegido mediante el inquilino de Azure Information Protection de su organización. Esta capacidad se denomina a menudo "razonamiento encima de los datos" y es un elemento crucial en el mantenimiento del control de los datos de su organización. Por ejemplo, podría usar esta característica en cualquiera de las siguientes situaciones:
 
@@ -78,6 +78,23 @@ Si usa la clasificación y la protección, también puede utilizar [Set-AIPFileL
 Para más información sobre estos cmdlets, vea [Uso de PowerShell con el cliente de Azure Information Protection ](./rms-client/client-admin-guide-powershell.md) en la guía para administradores del cliente de Azure Information Protection.
 
 > [!NOTE]
-> El módulo AzureInformationProtection reemplaza al módulo de PowerShell RMS Protection que se instala con la herramienta de protección de RMS. Ambos módulos son diferentes entre sí y complementan el [módulo de PowerShell para Azure Rights Management](administer-powershell.md). El módulo AzureInformationProtection es compatible con Azure Information Protection, el servicio Azure Rights Management (Azure RMS) para Azure Information Protection y Active Directory Rights Management Services (AD RMS).
+> El módulo AzureInformationProtection es diferente y complementa al [módulo AADRM PowerShell](administer-powershell.md) que administra el servicio Azure Rights Management para Azure Information Protection.
 
+### <a name="guidance-for-using-unprotect-rmsfile-for-ediscovery"></a>Instrucciones de uso de Unprotect-RMSFile para eDiscovery
+
+Aunque el cmdlet Unprotect-RMSFile se pueda usar para descifrar contenido protegido en archivos PST, úselo de forma estratégica como parte del proceso de eDiscovery. La ejecución de Unprotect-RMSFile en archivos de gran tamaño en un equipo usa una gran cantidad de recursos (memoria y espacio en disco) y el tamaño de archivo máximo que se admite para este cmdlet es de 5 GB.
+
+Lo ideal es usar [eDiscovery de Office 365](/office365/securitycompliance/ediscovery) para buscar y extraer correos electrónicos protegidos y datos adjuntos protegidos en los mensajes de correo electrónico. La capacidad de superusuario se integra de forma automática en Exchange Online para que eDiscovery en el Centro de seguridad y cumplimiento de Office 365 pueda buscar elementos cifrados antes de la exportación, o bien descifrar el correo electrónico cifrado durante la exportación.
+
+Si no puede usar eDiscovery de Office 365, es posible que tenga otra solución de eDiscovery que se integre con el servicio Azure Rights Management para analizar los datos de forma similar. O bien, si su solución de eDiscovery no puede leer y descifrar de forma automática el contenido cifrado, aún puede usar esta solución en un proceso de varios pasos que le permite ejecutar Unprotect-RMSFile con mayor eficacia:
+
+1. Exporte el correo electrónico a un archivo PST desde Exchange Online o Exchange Server, o bien desde la estación de trabajo en la que lo haya almacenado el usuario.
+
+2. Importe el archivo PST a su herramienta de eDiscovery. Como la herramienta no puede leer el contenido protegido, se espera que estos elementos generen errores.
+
+3. A partir de todos los elementos que la herramienta no ha podido abrir, genere un archivo PST nuevo que, en esta ocasión, contenga solo los elementos protegidos. Probablemente este segundo archivo PST será mucho más pequeño que el original.
+
+4. Ejecute Unprotect-RMSFile en este segundo archivo PST para descifrar el contenido de este archivo mucho más pequeño. Desde la salida, importe el archivo PST descifrado a la herramienta de detección.
+
+Para obtener más información e instrucciones para ejecutar eDiscovery en buzones y archivos PST, vea la entrada de blog siguiente: [Azure Information Process and eDiscovery Processes](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Azure-Information-Protection-and-eDiscovery-Processes/ba-p/270216) (Procesos de Azure Information Process y eDiscovery).
 
