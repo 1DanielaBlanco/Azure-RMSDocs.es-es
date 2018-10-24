@@ -1,0 +1,61 @@
+### YamlMime:YamlDocument
+ms.openlocfilehash: f8fd3bcfdcf627106f00625fad9b7843b0bc619d
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47446624"
+documentType: LandingData
+title: Documentación del SDK Microsoft Information Protection
+metadata:
+  title: 'Documentación del SDK de Microsoft Information Protection: tutoriales, referencia de la API'
+  description: Controle y ayude a asegurar el correo electrónico, los documentos y los datos confidenciales que comparte fuera de su compañía. Desde una clasificación sencilla hasta etiquetas y permisos insertados, mejore la protección de datos en todo momento con Microsoft Information Protection; no importa dónde se almacene el contenido ni con quién se comparta.
+  services: information-protection
+  author: BryanLa
+  manager: mbaldwin
+  layout: LandingPage
+  ms.assetid: 
+  ms.service: information-protection
+  ms.tgt_pltfrm: na
+  ms.devlang: na
+  ms.topic: landing-page
+  ms.date: 09/26/2018
+  ms.author: bryanla
+abstract:
+  description: Controle y ayude a asegurar el correo electrónico, los documentos y los datos confidenciales que comparte fuera de su compañía. Desde una clasificación sencilla hasta etiquetas y permisos insertados, mejore la protección de datos en todo momento con Microsoft Information Protection; no importa dónde se almacene el contenido ni con quién se comparta.
+  aside:
+    image:
+      alt: Vídeo de información general sobre el SDK de MIP
+      height: 112
+      src: media/index/tom-mip-sdk.png
+      width: 250
+    title: Información general sobre el SDK de MIP (15:26)
+    href: https://www.youtube.com/embed/HFXI_pcGGRc
+    width: 250
+sections:
+- title: Guías de inicio rápido de 5 minutos
+  description: Después de completar la <a href="setup-configure-mip">instalación y la configuración</a>, vea las guías de inicio rápido del SDK de MIP.
+  items:
+  - type: table
+    style: dataMatrix
+    columns:
+    - image:
+        src: media/index/logo_Cplusplus.svg
+    rows:
+    - title: Inicialización de aplicaciones
+      values:
+      - href: quick-app-initialization-cpp
+    - title: Usar la API de archivos para mostrar una lista de etiquetas de confidencialidad
+      values:
+      - href: quick-file-list-labels-cpp
+    - title: Usar la API de archivos para establecer u obtener una etiqueta en un archivo
+      values:
+      - href: quick-file-set-get-label-cpp
+- title: Referencia
+  items:
+  - type: list
+    style: cards
+    className: cardsD
+    items:
+    - title: Idiomas
+      html: <p><a href="reference/mip-sdk-reference">C++</a></p>

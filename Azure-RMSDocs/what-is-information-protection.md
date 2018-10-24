@@ -4,16 +4,16 @@ description: Información general del servicio Azure Information Protection.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/03/2018
+ms.date: 09/30/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: 08d77cda9eeedada562ac4610cbc04b5f6f558aa
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 0984cfc7b71c30d4a333b8cc6e24d8c3fbef216b
+ms.sourcegitcommit: 5cda0c64b486280ff0581e7f190d198b013a87d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150082"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47593768"
 ---
 # <a name="what-is-azure-information-protection"></a>¿Qué es Azure Information Protection?
 
@@ -127,19 +127,19 @@ Recursos adicionales: [Información y soporte técnico para Azure Information Pr
 
 ### <a name="microsoft-ignite"></a>Microsoft Ignite
 
-Microsoft Ignite 2017 cuenta con muchas sesiones sobre Azure Information Protection que están disponibles a petición. Para ver un resumen de los anuncios que se realizaron en esta conferencia, consulte [What’s new in Azure Information Protection @ Ignite 2017](https://cloudblogs.microsoft.com/ENTERPRISEMOBILITY/2017/09/27/whats-new-in-azure-information-protection-ignite-2017/) (Novedades de Azure Information Protection @ Ignite 2017). 
+Microsoft Ignite 2018 en Orlando tenía muchas sesiones que se etiquetaron como [Azure Information Protection](https://myignite.techcommunity.microsoft.com/sessions?q=Azure%2520Information%2520Protection). Todas las sesiones se grabaron, por lo que si no pudo participar allí, podrá verlas más adelante. Las cinco sesiones principales que recomendamos:
 
-También puede [buscar y encontrar](https://myignite.microsoft.com/videos?q=%2522azure%2520information%2520protection%2522) las sesiones que están etiquetadas con Azure Information Protection en el sitio web de Ignite. Sin embargo, se recomienda comenzar por las siguientes sesiones:
+- [BRK2006 - Use Microsoft Information Protection (MIP) to help protect your sensitive data everywhere, throughout its lifecycle](https://myignite.techcommunity.microsoft.com/sessions/64297) (Uso de Microsoft Information Protection (MIP) para proteger los datos confidenciales en todas partes, durante su ciclo de vida): vea el [vídeo de YouTube](https://youtu.be/gmHVF-1cLXA)
+ 
+- [BRK3002 - Understanding how Microsoft Information Protection capabilities work together to protect sensitive information across devices, apps, and services](https://myignite.techcommunity.microsoft.com/sessions/64299) (BRK3002: Descripción del funcionamiento conjunto de las funciones de Microsoft Information Protection para proteger la información confidencial entre dispositivos, aplicaciones y servicios): vea el [vídeo de YouTube](https://youtu.be/kL9Y7NGTyQQ)
 
-- [Protecting complete data lifecycle using Microsoft information protection capabilities](https://myignite.microsoft.com/videos/55397) (Protección del ciclo de vida completo de los datos mediante las funcionalidades de Microsoft Information Protection)
+- [BRK3009 - Accelerate deployment and adoption of Microsoft Information Protection solutions](https://myignite.techcommunity.microsoft.com/sessions/64283) (BRK3009: Acelerar la implementación y adopción de soluciones de Microsoft Information Protection): vea el [vídeo de YouTube](https://www.youtube.com/watch?v=JsCyIVyQJmE)
 
-- [Accelerate Azure information protection deployment and adoption](https://myignite.microsoft.com/videos/53454) (Aceleración de la implementación y la adopción de Azure Information Protection)
+- [BRK3397 - Protect and control your sensitive emails with Office 365 Message Encryption](https://myignite.techcommunity.microsoft.com/sessions/64327) (BRK3397: Protección y control de los correos electrónicos confidenciales con Cifrado de mensajes de Office 365): vea el [vídeo de YouTube](https://www.youtube.com/watch?v=Ld4b4pFua0g)
 
-- [Discover what’s new in Azure Information Protection and learn about the roadmap and strategy](https://myignite.microsoft.com/videos/53453) (Descubrimiento de las novedades de Azure Information Protection y conocimiento del mapa de ruta y la estrategia)
+- [THR2003 - Data discovery, Usage reporting and analytics for all your data with Microsoft Information Protection](https://myignite.techcommunity.microsoft.com/sessions/64301) (THR2003: Detección de datos, informes de uso y análisis de todos los datos con Microsoft Information Protection): vea el [vídeo de YouTube](https://www.youtube.com/watch?v=nzDIXd0XaeA)
 
-- [Encryption key management strategies for compliance](https://myignite.microsoft.com/videos/53455) (Estrategias de administración de claves de cifrado para el cumplimiento)
-
-- [Protect and control your sensitive emails with new Office 365 Message Encryption capabilities](https://myignite.microsoft.com/videos/53230) (Protección y control de los correos electrónicos confidenciales con las nuevas funcionalidades de cifrado de mensajes de Office 365)
+Para obtener un paquete acumulativo de los anuncios que se realizaron en esta conferencia de Ignite, vea la entrada de blog [Announcing availability of information protection capabilities to help protect your sensitive data](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Announcing-availability-of-information-protection-capabilities/ba-p/261967) (Anuncio de la disponibilidad de funciones de protección de la información para ayudar a proteger los datos confidenciales).
 
 
 ## <a name="next-steps"></a>Pasos siguientes

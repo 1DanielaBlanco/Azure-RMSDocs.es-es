@@ -4,16 +4,16 @@ description: Puede eliminar o cambiar de orden las etiquetas de Azure Informatio
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/30/2018
+ms.date: 10/04/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ae0f603f-a632-4ac5-a3f7-6358d4255eff
-ms.openlocfilehash: 9589985fa0ab5f80ce78483dedac8c7bc4b9879e
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 0b4631cd5664ba7951db04ce9ba221a19c0674ff
+ms.sourcegitcommit: 1cedaa9cefea49775f574f2ede61539bc6f0b813
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151714"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48794317"
 ---
 # <a name="how-to-delete-or-reorder-a-label-for-azure-information-protection"></a>Eliminación o cambio de orden de una etiqueta en Azure Information Protection
 
@@ -25,7 +25,7 @@ Para eliminar o cambiar de orden las etiquetas de Azure Information Protection q
 
 Cuando elimina una etiqueta que se ha aplicado a documentos y correos electrónicos, los usuarios ven **No establecido** en el estado de la etiqueta cuando estos documentos y correos electrónicos se abren de nuevo por el cliente Azure Information Protection. Sin embargo, la información de la etiqueta permanece en los metadatos y todavía se puede leer por los servicios que buscan esta información de la etiqueta.
 
-Además, si la etiqueta eliminada aplicó la protección, dicha protección no se quita. La configuración de protección de la etiqueta permanece y se muestra en la sección de **plantillas de protección**. Esta plantilla se puede convertir en una nueva etiqueta o vincularla a una etiqueta. Mientras permanezca esta plantilla, no se puede crear una nueva etiqueta con el mismo nombre que la etiqueta que ha eliminado. Si quiere hacerlo, tiene estas opciones:
+Además, si la etiqueta eliminada aplicó la protección, dicha protección no se quita. La configuración de protección de la etiqueta permanece y se muestra en la sección de **plantillas de protección**. Ahora esta plantilla se puede convertir en una etiqueta nueva. Mientras permanezca esta plantilla, no se puede crear una nueva etiqueta con el mismo nombre que la etiqueta que ha eliminado. Si quiere hacerlo, tiene estas opciones:
 
 - Convertir la plantilla en una etiqueta. 
     
