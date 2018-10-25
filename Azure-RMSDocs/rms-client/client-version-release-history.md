@@ -4,18 +4,18 @@ description: Consulte las novedades o los cambios en una versión del cliente de
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/27/2018
+ms.date: 10/07/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 12d5674fdebd3c857e7458b84f430cf3ee6755c2
-ms.sourcegitcommit: 7d477c418f3e5d8950c73af154c1575c84791ccc
+ms.openlocfilehash: b7aed6f8cdf6cf95b6b7af0bfa06554bde79dc02
+ms.sourcegitcommit: e70bb1a02e96d701fd5ae2a25536fa485bbf2e87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47403087"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48862182"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Cliente de Azure Information Protection: historial de publicación de versiones y directiva de soporte técnico
 
@@ -52,6 +52,17 @@ Si tiene una versión del cliente posterior a la 1.37.19.0, se trata de una comp
 
 - Compatibilidad con [informes centrales](../reports-aip.md) para la característica de análisis de Azure Information Protection anunciada en Microsoft Ignite.
 
+**Adicional:**
+
+Solo para esta versión preliminar, debe seguir estos pasos para usar el analizador:
+
+1. Instale la versión de GA (1.37.19.0) actual del cliente.
+2. Instale el analizador y configúrelo.
+3. Inicie el analizador.
+4. Actualice el cliente de Azure Information Protection a esta versión preliminar.
+5. Inicie el analizador.
+
+Si necesita instrucciones para instalar, configurar e iniciar el analizador, vea [Implementación del analizador de Azure Information Protection para clasificar y proteger automáticamente los archivos](../deploy-aip-scanner.md).
 
 ## <a name="version-137190"></a>Versión 1.37.19.0
 
