@@ -4,16 +4,16 @@ description: Configure las directivas de Azure Information Protection que se apl
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/01/2018
+ms.date: 10/16/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
-ms.openlocfilehash: eb2f539486464d93e99f8485fc8d0812f9a7953d
-ms.sourcegitcommit: 4e2493d7856dc35bb3f5869fff1276c98bf88192
+ms.openlocfilehash: 03736896f73fc83f699191677846e757eaf17be7
+ms.sourcegitcommit: d6c29e0d23c079045f9a9a2a270cf3cf22d628d5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47864128"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336466"
 ---
 # <a name="how-to-configure-the-policy-settings-for-azure-information-protection"></a>Configuración directivas para Azure Information Protection
 
@@ -31,7 +31,7 @@ Para establecer la configuración:
     
     Por ejemplo, en el menú del concentrador, haga clic en **Todos los servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
-2. En la opción de menú **CLASIFICACIONES** > **Directivas**: en la hoja **Azure Information Protection: directivas**, seleccione **Global** si la opción que desea configurar se aplica a todos los usuarios.
+2. En la opción de menú **Clasificaciones** > **Directivas**: en la hoja **Azure Information Protection: directivas**, seleccione **Global** si la opción que desea configurar se aplica a todos los usuarios.
     
     Si los valores que quiere configurar se encuentran en una [directiva de ámbito](configure-policy-scope.md) para que se apliquen únicamente a los usuarios seleccionados, seleccione en cambio su directiva de ámbito.
 
@@ -44,6 +44,8 @@ Para establecer la configuración:
         Si no se asigna ninguna etiqueta cuando los usuarios guardan un documento o envían un correo electrónico, se les pide que seleccionen una. Por ejemplo:
         
         ![Aviso de Azure Information Protection si se aplica el etiquetado](./media/info-protect-enforce-labelv2.png)
+        
+        Esta opción no se aplica cuando se quita una etiqueta mediante el cmdlet de PowerShell [Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel) con el parámetro *RemoveLabel*.
         
     - **Para establecer una etiqueta de clasificación menor, eliminar una etiqueta o quitar la protección, los usuarios deben proporcionar una justificación al respecto**: cuando se **activa** esta opción y un usuario realiza una de estas acciones (por ejemplo, si cambia la etiqueta **Público** por **Personal**), se le pide al usuario que indique el motivo de esta acción. Por ejemplo, el usuario podría explicar que el documento ya no contiene información confidencial. La acción y el motivo de justificación se incluyen en el registro de eventos local de Windows: **Registros de aplicaciones y servicios** > **Azure Information Protection**.  
         

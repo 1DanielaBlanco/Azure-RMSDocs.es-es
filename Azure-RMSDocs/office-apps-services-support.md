@@ -4,18 +4,18 @@ description: Cómo las aplicaciones de Office de usuario final (como Word y Outl
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/08/2018
+ms.date: 10/13/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b17e0f850fbd319011e0a50cccc2b661f773adc8
-ms.sourcegitcommit: 76e1b7c0255700813590be62d94b19338bf6c201
+ms.openlocfilehash: 22df24a7af17dd87dd6f3947e39ea72d7b7b1372
+ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48866176"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49169947"
 ---
 # <a name="how-office-applications-and-services-support-azure-rights-management"></a>Cómo las aplicaciones y los servicios de Office admiten Azure Rights Management 
 
@@ -83,7 +83,7 @@ Si usa SharePoint Server, puede usar la protección IRM implementando el conecto
 > 
 > - No pueden utilizar las plantillas de protección predeterminadas o personalizadas que se administran en Azure Portal. 
 > 
-> - No se admiten los archivos que tienen una extensión de nombre de archivo .ppdf para archivos PDF protegidos. Se admiten los archivos que tienen la extensión de nombre de archivo .pdf y, cuando se descargan, se pueden abrir con una aplicación PDF que admita de forma nativa Rights Management. Por ejemplo, el cliente de Azure Information Protection para Windows incluye un visor para estos archivos PDF protegidos. Se recogen otros visores PDF alternativos en la [tabla de aplicaciones habilitadas para RMS](./requirements-applications.md#rms-enlightened-applications).
+> - No se admiten los archivos que tienen una extensión de nombre de archivo .ppdf para archivos PDF protegidos. Para más información sobre la visualización de documentos PDF protegidos, consulte [Lectores PDF protegidos para Microsoft Information Protection](./rms-client/protected-pdf-readers.md).
 > 
 > - Cuando más de un usuario edita un documento al mismo tiempo, la co-autoría no se admite. Para editar un documento en una biblioteca protegida mediante IRM, debe activar primero el documento y descargarlo y, a continuación, modificarlo en la aplicación de Office. Por lo tanto, solo una persona puede editar el documento a la vez.
 

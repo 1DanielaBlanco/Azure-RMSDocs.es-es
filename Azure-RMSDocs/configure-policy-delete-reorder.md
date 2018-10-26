@@ -8,12 +8,12 @@ ms.date: 10/04/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ae0f603f-a632-4ac5-a3f7-6358d4255eff
-ms.openlocfilehash: 0b4631cd5664ba7951db04ce9ba221a19c0674ff
-ms.sourcegitcommit: 1cedaa9cefea49775f574f2ede61539bc6f0b813
+ms.openlocfilehash: cf5d5a97c03bca090b65e43d6db0393909d0572f
+ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48794317"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49170083"
 ---
 # <a name="how-to-delete-or-reorder-a-label-for-azure-information-protection"></a>Eliminación o cambio de orden de una etiqueta en Azure Information Protection
 
@@ -55,7 +55,7 @@ Utilice las instrucciones siguientes para realizar estos cambios.
     
     Por ejemplo, en el menú del concentrador, haga clic en **Todos los servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
-2. En la opción de menú **CLASIFICACIONES** > **Etiquetas**: en la hoja **Azure Information Protection: etiquetas**, realice una o varias de las acciones siguientes: 
+2. En la opción de menú **Clasificaciones** > **Etiquetas**: en la hoja **Azure Information Protection: etiquetas**, realice una o varias de las acciones siguientes: 
 
     - Para eliminar una etiqueta: haga clic con el botón derecho o seleccione el menú contextual (**...**) de la etiqueta que quiere eliminar, haga clic en **Eliminar esta etiqueta** y haga clic en **Aceptar** para confirmar. 
 

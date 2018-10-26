@@ -8,12 +8,12 @@ ms.date: 10/08/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: 3e911d8190e524efe56677d6afaec8f679c773b9
-ms.sourcegitcommit: e70bb1a02e96d701fd5ae2a25536fa485bbf2e87
+ms.openlocfilehash: f47a6ea33c6abbfba6ca95772c7050ad11f76875
+ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48862114"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49170066"
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Configuración de las condiciones para la clasificación automática y recomendada en Azure Information Protection
 
@@ -63,7 +63,7 @@ Puede cambiar este comportamiento para que el cliente de Azure Information Prote
     
     Por ejemplo, en el menú del concentrador, haga clic en **Todos los servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
-2. En la opción de menú **CLASIFICACIONES** > **Etiquetas**: en la hoja **Azure Information Protection: etiquetas**, seleccione la etiqueta que desee configurar.
+2. En la opción de menú **Clasificaciones** > **Etiquetas**: en la hoja **Azure Information Protection: etiquetas**, seleccione la etiqueta que desee configurar.
 
 3. En la hoja **Etiqueta**, en la sección **Configure conditions for automatically applying this label** (Configurar condiciones para aplicar esta etiqueta automáticamente), haga clic en **Agregar una nueva condición**(Add a new condition).
 

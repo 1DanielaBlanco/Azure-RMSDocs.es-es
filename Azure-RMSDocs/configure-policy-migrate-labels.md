@@ -4,17 +4,17 @@ description: Migración de etiquetas de Azure Information Protection al Centro d
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/11/2018
+ms.date: 10/17/2018
 ms.topic: article
 ms.service: information-protection
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 075330138910da90049cad3c1ccc74a1a360a218
-ms.sourcegitcommit: 39403f0e9fe5912d467b119ed45da94bccd1cc80
+ms.openlocfilehash: 2d0ed8103ce4e0b42d67ea87b6b464dfb8f04f36
+ms.sourcegitcommit: 283782ee7e3ec566f479c8914eae7bf84d904392
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49100653"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49382619"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-the-office-365-security--compliance-center"></a>Cómo migrar etiquetas de Azure Information Protection al Centro de seguridad y cumplimiento de Office 365
 
@@ -26,6 +26,15 @@ ms.locfileid: "49100653"
 Migre las etiquetas si quiere poder usarlas en el Centro de seguridad y cumplimiento de Office 365, donde [los clientes que admiten el etiquetado unificado](#clients-that-support-unified-labeling) pueden publicarlas y luego descargarlas. El cliente de Azure Information Protection continúa descargando las etiquetas con su directiva de Azure Information Protection desde Azure Portal. 
 
 Después de haber migrado las etiquetas, puede realizar cambios en ellas en Azure Portal o en el Centro de seguridad y cumplimiento de Office 365, y los clientes respectivos descargarán el mismo cambio.
+
+### <a name="important-information-about-administrative-roles"></a>Información importante acerca de los roles administrativos
+
+Los [roles de Azure AD ](/active-directory/users-groups-roles/directory-assign-admin-roles) de **administrador de seguridad** y **administrador de Information Protection** no son compatibles con la plataforma de etiquetado unificada. Si estos roles administrativos se utilizan en la organización, antes de migrar las etiquetas, agregue los usuarios que tienen estos roles a los grupos de roles **administrador de cumplimiento** o **administración de la organización** para el Centro de seguridad y cumplimiento de Office 365. Como alternativa, puede crear un nuevo grupo de roles para estos usuarios y agregar los roles de **administración de la retención** o **configuración de la organización** a este grupo. Para obtener instrucciones, consulte [Conceder a los usuarios acceso al Centro de seguridad y cumplimiento de Office 365](https://docs.microsoft.com/office365/securitycompliance/grant-access-to-the-security-and-compliance-center).
+
+Si no da acceso a estos usuarios al Centro de seguridad y cumplimiento mediante una de estas configuraciones, perderán el acceso a las etiquetas y directivas de Azure Portal después de la migración de las etiquetas.
+
+Los administradores globales del inquilino pueden continuar administrando etiquetas y directivas tanto en Azure Portal como en el Centro de seguridad y cumplimiento después de la migración de las etiquetas.
+
 
 ## <a name="considerations-for-unified-labels"></a>Consideraciones sobre las etiquetas unificadas
 
@@ -45,7 +54,7 @@ Antes de migrar las etiquetas, asegúrese de estar al tanto de los siguientes ca
     
     - Las plantillas que usan una clave basada en la nube y que forman parte de una configuración de etiquetas también se migran con la etiqueta. Otras plantillas de protección no se migran. 
     
-    - Después de migrar una etiqueta con la configuración de protección basada en la nube, el ámbito resultante de la plantilla de protección es el ámbito que se define en Azure Portal (o por medio del módulo de ADDRM de PowerShell) y el ámbito que se define en el Centro de seguridad y cumplimiento. 
+    - Después de migrar una etiqueta con la configuración de protección basada en la nube, el ámbito resultante de la plantilla de protección es el ámbito que se define en Azure Portal (o por medio del módulo de AADRM de PowerShell) y el ámbito que se define en el Centro de seguridad y cumplimiento. 
 
 - Cuando migre las etiquetas, verá que los resultados de la migración muestran si una etiqueta se **creó**, **actualizó** o **cambió** debido a la duplicación:
 
@@ -89,6 +98,8 @@ Los clientes de Azure Information Protection pueden usar esta configuración de 
 
 Cuando haya confirmado que el inquilino admite etiquetas de confidencialidad en el Centro de seguridad y cumplimiento, use las siguientes instrucciones para migrar su inquilino y las etiquetas de Azure Information Protection.
 
+Debe ser administrador global para migrar las etiquetas.
+
 1. Abra una nueva ventana del explorador e inicie sesión en Azure Portal mediante el siguiente vínculo: https://portal.azure.com/?ActivateMigration=true#blade/Microsoft_Azure_InformationProtection/DataClassGroupEditBlade/migrationActivationBlade. 
 
 2. En la hoja **Azure Information Protection - Etiquetado unificado**, seleccione **Activar** y siga las instrucciones en línea.
@@ -100,6 +111,8 @@ Los [clientes que admiten el etiquetado unificado](#clients-that-support-unified
 
 Los clientes que actualmente admiten el etiquetado unificado son:
 
+- [Cliente de etiquetado unificado de Azure Information Protection](./rms-client/unifiedlabelingclient-version-release-history.md) (en versión preliminar)
+
 - Aplicaciones del programa Office Insider. Para más información, consulte la sección [¿Dónde está la característica disponible actualmente?](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9?ad=US#bkmk_whereavailable) en la documentación de Office.
     
 - Clientes de proveedores y desarrolladores de software que usan el [SDK de MIP](https://docs.microsoft.com/azure/information-protection/develop/mip/mip-sdk-reference).
@@ -107,4 +120,6 @@ Los clientes que actualmente admiten el etiquetado unificado son:
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Para más información sobre cómo configurar y publicar las etiquetas migradas en el Centro de seguridad y cumplimiento de Office 365, consulte la entrada de blog, [Announcing the availability of unified labeling management in the Security & Compliance Center](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-the-availability-of-unified-labeling-management-in/ba-p/262492) (Anuncio de la disponibilidad de administración de etiquetado unificado en el Centro de seguridad y cumplimiento).
+Para más información sobre las etiquetas migradas que ahora pueden configurarse y publicarse en el Centro de seguridad y cumplimiento de Office 365, consulte [Información general de etiquetas de confidencialidad](/Office365/SecurityCompliance/sensitivity-labels).
+
+Para leer la entrada de blog del anuncio: [Announcing the availability of unified labeling management in the Security & Compliance Center](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-the-availability-of-unified-labeling-management-in/ba-p/262492) (Anuncio de la disponibilidad de la administración de etiquetado unificado en el Centro de seguridad y cumplimiento).
