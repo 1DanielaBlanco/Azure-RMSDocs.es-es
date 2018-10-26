@@ -6,32 +6,26 @@ ms.service: information-protection
 ms.topic: quickstart
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: c889c736b6e67ef3c581ee1acaa3c04138773d20
-ms.sourcegitcommit: e70bb1a02e96d701fd5ae2a25536fa485bbf2e87
+ms.openlocfilehash: 430e130a5ba2026c0a3c69a59dddd6f9d6b4e8f0
+ms.sourcegitcommit: cc65c3851d4b8169a1a62c83afaf0f75402f7631
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48862148"
+ms.lasthandoff: 10/20/2018
+ms.locfileid: "49476211"
 ---
 # <a name="microsoft-information-protection-mip-sdk-setup-and-configuration"></a>Instalación y configuración del SDK de Microsoft Information Protection (MIP) 
 
 La Guía de inicio rápido y los artículos del tutorial se centran en torno a la creación de aplicaciones que usan las API y las bibliotecas del SDK de MIP. Este artículo muestra cómo instalar y configurar la suscripción de Office 365 y la estación de trabajo del cliente, como parte de la preparación para usar el SDK.
+
+El SDK de MIP es compatible en las siguientes plataformas:  
+
+[!INCLUDE [MIP SDK platform support](../include/mip-sdk-platform-support.md)]
 
 No olvide revisar los siguientes temas antes de comenzar:
 
 - [¿Qué es el Centro de seguridad y cumplimiento de Office 365?](https://docs.microsoft.com/office365/securitycompliance/security-and-compliance)
 - [¿Qué es Azure Information Protection?](/azure/information-protection/understand-explore/what-is-information-protection)
 - [¿Cómo funciona la protección en Azure Information Protection?](/azure/information-protection/understand-explore/what-is-information-protection#how-data-is-protected)
-
-El SDK de MIP es compatible en las siguientes plataformas:
-
-| Sistema operativo | Versiones |  
-|------------------|----------|
-| Ubuntu  |  16.04 |
-| Red Hat Enterprise Linux | 7 con devtoolset-7 |
-| Debian  | 9 |
-| macOS   | High Sierra y versiones posteriores |
-| Windows | Todas las versiones compatibles, 32 bits y 64 bits |
 
 ## <a name="sign-up-for-an-office-365-subscription"></a>Registrarse para obtener una suscripción de Office 365
 
