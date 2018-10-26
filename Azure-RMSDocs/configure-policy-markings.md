@@ -4,16 +4,16 @@ description: Cuando se asigna una etiqueta a un documento o a un mensaje de corr
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/10/2018
+ms.date: 10/16/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: 2b7b94c7e53cd59a72602a2b3076eaefbc49e2ef
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: dbc63a0ddca9e7583693219103268048b524121c
+ms.sourcegitcommit: 6a732226a3c97fc06fcf815fbbb24a2e2faae209
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148875"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49358982"
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Configuración de una etiqueta para marcas visuales de Azure Information Protection
 
@@ -32,6 +32,12 @@ Más información sobre los distintivos visuales:
     - PowerPoint: las marcas de agua se aplican a la diapositiva patrón, como una imagen de fondo. En la pestaña **Vista**, **Patrón de diapositivas**, asegúrese de que la casilla **Ocultar gráficos de fondo** no esté seleccionada.
     
     - Se admiten varias líneas de texto.
+
+- Longitudes máximas de cadena:
+    
+    - La longitud máxima de cadena que se puede especificar para los encabezados y pies de página es de 1024 caracteres, aunque Excel tiene un límite total de 255 caracteres para los encabezados y pies de página. Al especificar una cadena larga para encabezados y pies de página en Excel, este texto se puede truncar a 255 caracteres o menos.
+    
+    - La longitud máxima de cadena para marcas de agua que se puede especificar es de 255 caracteres.
 
 - Puede especificar solo una cadena de texto o usar [variables](#using-variables-in-the-text-string) para crear dinámicamente la cadena de texto cuando se aplica el encabezado, el pie de página o la marca de agua.
 
@@ -59,7 +65,7 @@ Utilice las siguientes instrucciones para configurar las marcas visuales para un
     
     Por ejemplo, en el menú del concentrador, haga clic en **Todos los servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
-2. En la opción de menú **CLASIFICACIONES** > **Etiquetas**: en la hoja **Azure Information Protection: etiquetas**, seleccione la etiqueta que contiene los distintivos visuales que desea agregar o cambiar.
+2. En la opción de menú **Clasificaciones** > **Etiquetas**: en la hoja **Azure Information Protection: etiquetas**, seleccione la etiqueta que contiene los distintivos visuales que quiere agregar o cambiar.
 
 3. En la hoja **Etiqueta** de la sección **Establecer un distintivo visual, como el encabezado o el pie de página**, configure las opciones de los distintivos visuales que quiera y, luego, haga clic en **Guardar**:
     

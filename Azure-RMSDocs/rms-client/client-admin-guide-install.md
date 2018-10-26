@@ -4,18 +4,18 @@ description: Instrucciones e información para administradores para implementar 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/21/2018
+ms.date: 10/17/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: d8818ff71acbd338ebb4959f9eb3ef617655b25d
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 2b6e3a40f7faab35053c1bd3146bfc08767e0066
+ms.sourcegitcommit: 6d4792755226a61d59e79fd8795a9b0f653770bb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149283"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49367012"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>Guía del administrador: Instalación del cliente de Azure Information Protection para los usuarios
 
@@ -57,9 +57,9 @@ Luego, compruebe los requisitos previos adicionales que puede necesitar el clien
     
     La instalación del cliente no comprueba este requisito previo, pero es necesario para que el cliente de Azure Information Protection pueda clasificar y proteger los archivos PDF.
 
-- No deshabilite el complemento **Microsoft Azure Information Protection** para las aplicaciones de Office.
+- Configuración de directiva de grupo para **Lista de complementos administrados**
     
-    Si ha configurado la opción de directivas de grupo **Lista de complementos administrados**, agregue el complemento Microsoft Azure Information Protection para aplicaciones de Office especificando los siguientes identificadores programáticos (ProgID) para Azure Information Protection y establezca la opción en **1: El complemento siempre está habilitado**.
+    En Office 2013 y versiones posteriores, configure el valor de directiva de grupo **Lista de complementos administrados** y agregue el complemento **Microsoft Azure Information Protection** para las aplicaciones de Office. Especifique los siguientes identificadores programáticos (ProgID) para Azure Information Protection y establezca la opción en **1: El complemento siempre está habilitado**.
     
     - Para Outlook: `MSIP.OutlookAddin`
     
@@ -69,9 +69,9 @@ Luego, compruebe los requisitos previos adicionales que puede necesitar el clien
     
     - Para PowerPoint: `MSIP.PowerPointAddin`
     
-    Incluso si no ha configurado esta opción de directiva de grupo **Lista de complementos administrados**, puede que necesite configurarla si recibe algún informe en el que se indique que el complemento de Microsoft Azure Information Protection se va a deshabilitar. Al deshabilitar este complemento, los usuarios no verán la barra de Azure Information Protection en la aplicación de Office.
+    Si no configura este valor, el complemento Microsoft Azure Information Protection puede deshabilitarse, de modo que los usuarios no podrán etiquetar sus documentos y correos electrónicos en la aplicación de Office.
     
-    Para obtener más información sobre esta configuración de directiva de grupo, consulte [No Add-ins loaded due to group policy settings for Office 2013 and Office 2016 programs](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off) (No se ha cargado ningún complemento debido a la configuración de directivas de grupo para Office 2013 y Office 2016).
+    Para obtener más información sobre la configuración de este valor de directiva de grupo, vea [System Administrator control over add-ins](https://docs.microsoft.com/office/vba/outlook/concepts/getting-started/support-for-keeping-add-ins-enabled#system-administrator-control-over-add-ins) (Control del administrador del sistema sobre los complementos) en la documentación de Office.
 
 > [!IMPORTANT]
 > La instalación del cliente de Azure Information Protection requiere permisos administrativos locales.

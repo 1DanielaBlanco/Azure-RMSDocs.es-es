@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 867fd325b5c41ce500689d92868ca96c88ceb9da
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 71444804ab21dfbe09e0cf13ab1b75425f7a84d0
+ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149300"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49169862"
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>Configuración y administración de plantillas para Azure Information Protection
 
@@ -25,11 +25,11 @@ Las plantillas de protección, también conocidas como plantillas de Rights Mana
 
 **Cuando tiene una suscripción que incluye clasificación, etiquetado y protección (Azure Information Protection P1 o P2):**
 
-- Las plantillas que no están integradas con las etiquetas para el inquilino se muestran en la sección **Plantillas de protección** después de las etiquetas en la hoja **Azure Information Protection: etiquetas**. Para navegar a esta hoja, seleccione la opción de menú **CLASIFICACIONES** > **Etiquetas**. Puede convertir estas plantillas en etiquetas o puede crear un vínculo a ellas cuando configure la protección de sus etiquetas. 
+- Las plantillas que no están integradas con las etiquetas para el inquilino se muestran en la sección **Plantillas de protección** después de las etiquetas en la hoja **Azure Information Protection: etiquetas**. Para ir a esta hoja, seleccione la opción de menú **Clasificaciones** > **Etiquetas**. Puede convertir estas plantillas en etiquetas o puede crear un vínculo a ellas cuando configure la protección de sus etiquetas. 
 
 **Cuando tiene una suscripción que solo incluye protección (una suscripción a Office 365 que incluye el servicio Azure Rights Management):**
 
-- Las plantillas para el inquilino se muestran en la sección **Plantillas de protección** en la hoja **Azure Information Protection: etiquetas**. Para navegar a esta hoja, seleccione la opción de menú **CLASIFICACIONES** > **Etiquetas**. No se muestran etiquetas. También verá valores de configuración específicos de la clasificación y del etiquetado, pero o no tienen ningún efecto en las plantillas o no se pueden configurar. 
+- Las plantillas para el inquilino se muestran en la sección **Plantillas de protección** en la hoja **Azure Information Protection: etiquetas**. Para ir a esta hoja, seleccione la opción de menú **Clasificaciones** > **Etiquetas**. No se muestran etiquetas. También verá valores de configuración específicos de la clasificación y del etiquetado, pero o no tienen ningún efecto en las plantillas o no se pueden configurar. 
 
 >[!NOTE]
 >En algunas aplicaciones y servicios, puede que vea que [No reenviar](configure-usage-rights.md#do-not-forward-option-for-emails) y [Solo cifrar](configure-usage-rights.md#encrypt-only-option-for-emails) o **Cifrar** aparecen como una plantilla. No son plantillas que se puedan editar o eliminar, sino opciones integradas de forma predeterminada en el servicio de Exchange.
@@ -99,7 +99,7 @@ Antes de editar estas plantillas o convertirlas en etiquetas, asegúrese de que 
     
     Por ejemplo, en el menú del concentrador, haga clic en **Todos los servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
-2. Desde la opción de menú **CLASIFICACIONES** > **Etiquetas**: en la hoja **Azure Information Protection: etiquetas**, expanda **Plantillas de protección** y, a continuación, busque la plantilla que desee configurar.
+2. En la opción de menú **Clasificaciones** > **Etiquetas**: en la hoja **Azure Information Protection: etiquetas**, expanda **Plantillas de protección** y busque la plantilla que quiere configurar.
     
 3. Seleccione la plantilla y, en la hoja **Etiqueta**, puede cambiar el nombre y la descripción de la plantilla si es necesario. Para ello, edite el **nombre para mostrar de la etiqueta** y la **descripción**. Luego, seleccione la **protección** con un valor de **Azure (clave en la nube)** para abrir la hoja **Protección**.
 
@@ -136,7 +136,7 @@ Cuando se convierte una plantilla en etiqueta:
 
 Cuando crea una etiqueta nueva con la configuración de protección de **Azure (clave de nube)**, en segundo plano esta acción crea una plantilla personalizada nueva a la que pueden acceder los servicios y las aplicaciones que se integran con las plantillas de Rights Management.
 
-1. En la opción de menú **CLASIFICACIONES** > **Etiquetas**: en la hoja **Azure Information Protection: etiquetas**, seleccione **Agregar una nueva etiqueta**.
+1. En la opción de menú **Clasificaciones** > **Etiquetas**: en la hoja **Azure Information Protection: etiquetas**, seleccione **Agregar una nueva etiqueta**.
 
 2. En la hoja **Etiqueta**, mantenga el valor predeterminado de **Habilitado**: **Activado** y luego escriba un nombre de etiqueta y una descripción para el nombre de la plantilla y la descripción.
 
@@ -152,7 +152,7 @@ Cuando crea una etiqueta nueva con la configuración de protección de **Azure (
     
     Aunque la etiqueta está habilitada de forma predeterminada, la plantilla se archiva. Para que las aplicaciones y los servicios puedan usar la plantilla para proteger documentos y correos electrónicos, complete el paso final para publicar la plantilla.
 
-5. En la opción del menú **CLASIFICACIONES** > **Directivas**, seleccione la directiva que contiene la nueva configuración de protección. A continuación, seleccione **Agregar o quitar etiquetas**. En la hoja **Directiva: agregar o quitar etiquetas**, seleccione la etiqueta que se acaba de crear que contiene la configuración de protección, haga clic en **Aceptar** y, luego, en **Guardar**.
+5. En la opción del menú **Clasificaciones** > **Directivas**, seleccione la directiva que va a incluir la nueva configuración de protección. A continuación, seleccione **Agregar o quitar etiquetas**. En la hoja **Directiva: agregar o quitar etiquetas**, seleccione la etiqueta que se acaba de crear que contiene la configuración de protección, haga clic en **Aceptar** y, luego, en **Guardar**.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

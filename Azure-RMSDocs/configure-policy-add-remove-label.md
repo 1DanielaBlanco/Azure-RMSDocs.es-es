@@ -5,15 +5,15 @@ author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 04/30/2018
-ms.topic: article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 0546cc11-67a5-4194-8c54-f3ac8ce9ebe1
-ms.openlocfilehash: 8ec20dd43e2be245eba01d0f3f93aee062c9e0f6
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: a5e5e50f5271476c3690280cbe026be9ada7ceb2
+ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42806189"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49170279"
 ---
 # <a name="add-or-remove-a-label-to-or-from-an-azure-information-protection-policy"></a>Agregar o quitar una etiqueta a o desde una directiva de Azure Information Protection
 
@@ -33,7 +33,7 @@ Si tiene que crear una directiva de ámbito para que la etiqueta se aplique a un
     
     Por ejemplo, en el menú del concentrador, haga clic en **Todos los servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
-2. En la opción de menú **CLASIFICACIONES** > **Directivas**: en la hoja **Azure Information Protection** - **Directivas**, seleccione **Global** si la etiqueta que desea agregar o quitar se aplica a todos los usuarios.
+2. En la opción de menú **Clasificaciones** > **Directivas**: en la hoja **Azure Information Protection** - **Directivas**, seleccione **Global** si la etiqueta que se va a agregar o quitar se aplica a todos los usuarios.
 
     Si la etiqueta que desea agregar o quitar se aplica a un subconjunto de usuarios, seleccione en su lugar la directiva de ámbito.
 

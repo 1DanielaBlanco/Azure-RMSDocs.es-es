@@ -4,19 +4,19 @@ description: Cómo usar los informes centrales para realizar el seguimiento de l
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/27/2018
+ms.date: 10/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.assetid: b2da2cdc-74fd-4bfb-b3c2-2a3a59a6bf2e
 ms.reviewer: lilukov
 ms.suite: ems
-ms.openlocfilehash: cf951bba3cc74a82e31841986dde9e75ec34a630
-ms.sourcegitcommit: e70bb1a02e96d701fd5ae2a25536fa485bbf2e87
+ms.openlocfilehash: 424be5910d6a4498bc9d2684888cd2bf9af010af
+ms.sourcegitcommit: 26e1ccdd0c4339a51ec7812082b399f13ef73b2b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48862131"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49324901"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Informes centrales para Azure Information Protection
 
@@ -90,7 +90,7 @@ Para ver los informes de Azure Information Protection y crear los suyos propios,
     
     Por ejemplo, en el menú del concentrador, haga clic en **Todos los servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
     
-2. Busque las opciones del menú **MANAGE** (ADMINISTRAR) y seleccione **Configure analytics (Preview)** (Configurar análisis [versión preliminar]).
+2. Busque las opciones de menú **Administrar** y seleccione **Configurar análisis (versión preliminar)**.
 
 3. En la hoja **Azure Information Protection log analytics** (Análisis de registro de Azure Information Protection), verá una lista de áreas de trabajo de Log Analytics que son propiedad de su inquilino. Realice una de las siguientes acciones:
     
@@ -104,11 +104,11 @@ Cuando esté configurada el área de trabajo, estará listo para ver los informe
 
 ## <a name="how-to-view-the-reports"></a>Cómo ver los informes
 
-En la hoja Azure Information Protection, busque las opciones de menú **DASHBOARDS (PREVIEW)** (PANELES [VISTA PREVIA]) y seleccione una de las siguientes opciones:
+En la hoja Azure Information Protection, busque las opciones de menú **Paneles** y seleccione una de las siguientes opciones:
 
-- **Usage report** (Informe de uso): use este informe para ver cómo se usan las etiquetas. 
+- **Informe de uso (versión preliminar)**: use este informe para ver cómo se usan las etiquetas. 
 
-- **Data discovery** (Detección de datos): use este informe para ver información sobre los archivos que encontraron los analizadores.
+- **Detección de datos (versión preliminar)**: use este informe para ver información sobre los archivos encontrados por los detectores.
 
 ## <a name="how-to-modify-the-reports"></a>Modificación de los informes
 
@@ -116,6 +116,8 @@ Seleccione el icono de consulta en el panel para abrir una hoja **Log Search** (
 
 ![Icono de Log Analytics para personalizar los informes de Azure Information Protection](./media/log-analytics-icon.png)
 
+
+Los datos registrados de Azure Information Protection se almacenan en la tabla siguiente: **InformationProtectionLogs_CL**
 
 ## <a name="next-steps"></a>Pasos siguientes
 Después de revisar la información de los informes, podría decidir realizar cambios en la directiva de Azure Information Protection. Para obtener instrucciones, consulte [Configuración de la directiva de Azure Information Protection](configure-policy.md).

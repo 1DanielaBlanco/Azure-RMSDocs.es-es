@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 57a1073c-02e0-441b-bf49-c6b72fdba24f
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 7f82c2fd022db0ef35a58198eb2737e3803e1645
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: fa32a5d00c161d2f6a78acd7cbe45ce00b34660c
+ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149759"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49170151"
 ---
 # <a name="tasks-that-you-used-to-do-with-the-azure-classic-portal"></a>Tareas que solía realizar con el Portal de Azure clásico
 
@@ -40,9 +40,9 @@ Use la información siguiente para realizar la transición al portal actual de f
 |Creación de una plantilla con ámbito|Cree una directiva con ámbito y luego cree una etiqueta en este ámbito que aplique la protección. <br /><br />Para más información, vea [Configuración de la directiva de Azure Information Protection para usuarios específicos mediante directivas de ámbito](configure-policy-scope.md).
 |Copia de una plantilla|No es posible copiar una plantilla en Azure Portal. Si quiere que dos etiquetas tengan la misma configuración de protección, debe establecer los permisos en cada etiqueta. <br /><br />Para más información, consulte [Para configurar una etiqueta para la protección de Rights Management](configure-policy-protection.md#to-configure-a-label-for-protection-settings).
 |Eliminar una plantilla|La eliminación de plantillas puede dar lugar a la inaccesibilidad de los datos, por lo que Azure Portal no admite esta acción. Pero puede eliminar la etiqueta y luego usar el cmdlet de PowerShell [Remove-AadrmTemplate](/powershell/module/aadrm/remove-aadrmtemplate) para quitar la plantilla. <br /><br />Para más información, vea [Eliminación o cambio de orden de una etiqueta en Azure Information Protection](configure-policy-delete-reorder.md).
-|Compatibilidad con varios idiomas|En la selección del menú **ADMINISTRAR**, seleccione **Idiomas** para exportar los campos personalizables que incluyen el nombre y la descripción de la plantilla. Traduzca las cadenas y luego impórtelas al portal. <br /><br />Para más información, vea [Cómo configurar etiquetas y plantillas para distintos idiomas en Azure Information Protection](configure-policy-languages.md).
+|Compatibilidad con varios idiomas|En la opción de menú **Administrar**, seleccione **Idiomas** para exportar los campos personalizables que incluyen el nombre y la descripción de la plantilla. Traduzca las cadenas y luego impórtelas al portal. <br /><br />Para más información, vea [Cómo configurar etiquetas y plantillas para distintos idiomas en Azure Information Protection](configure-policy-languages.md).
 |Informes web de Rights Management|Use el cmdlet de PowerShell [Get-AadrmUsageLog](/powershell/module/aadrm/Get-AadrmUsageLog) para descargar registros de uso del servicio Azure Rights Management. Luego puede usar estos datos para crear informes personalizados. <br /><br />Para obtener más información, consulte [Registro y análisis del uso del servicio Azure Rights Management](log-analyze-usage.md).<br /><br />Sugerencia: Busque anuncios de una nueva solución de informes centralizada de Azure Information Protection en el [Blog de Enterprise Mobility + Security](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-information-protection).
-|Activación y desactivación del servicio Rights Management|En las opciones del menú **ADMINISTRAR**, seleccione **Activación de la protección**.<br /><br />Para obtener más información, vea [Cómo activar Azure Rights Management desde Azure Portal](activate-azure.md).
+|Activación y desactivación del servicio Rights Management|En las opciones de menú **Administrar**, seleccione **Activación de la protección**.<br /><br />Para obtener más información, vea [Cómo activar Azure Rights Management desde Azure Portal](activate-azure.md).
 
 Antes de editar las plantillas o de convertirlas en etiquetas en Azure Portal, vea [Consideraciones para las plantillas en Azure Portal](configure-policy-templates.md#considerations-for-templates-in-the-azure-portal).
 

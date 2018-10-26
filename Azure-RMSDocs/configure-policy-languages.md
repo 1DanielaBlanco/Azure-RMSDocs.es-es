@@ -5,15 +5,15 @@ author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 04/30/2018
-ms.topic: article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: a0e89fd0-795b-4e7a-aea9-ff6fc9163bde
-ms.openlocfilehash: 01ea3e3e1838bf5a6eb16db579e3a7a60a94b430
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: c118abdf0f0b659b9ae330f44617901f8d11c300
+ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42803183"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49170295"
 ---
 # <a name="how-to-configure-labels-and-templates-for-different-languages-in-azure-information-protection"></a>Cómo configurar etiquetas y plantillas para distintos idiomas en Azure Information Protection
 
@@ -43,7 +43,7 @@ Seleccione los idiomas que coinciden con la configuración de idioma de los usua
     
     Por ejemplo, en el menú del concentrador, haga clic en **Todos los servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
-2. En la opción de menú **ADMINISTRAR** > **Idiomas**: en la hoja **Azure Information Protection: idiomas**, seleccione **Agregar un idioma nuevo para la traducción**. Seleccione los idiomas que quiera agregar y, después, seleccione **Aceptar**. Puede escribir el nombre del idioma en el cuadro de búsqueda o desplazarse por la lista de idiomas disponibles.
+2. En la opción de menú **Administrar** > **Idiomas**, en la hoja **Azure Information Protection: idiomas**, seleccione **Agregar un idioma nuevo para la traducción**. Seleccione los idiomas que quiera agregar y, después, seleccione **Aceptar**. Puede escribir el nombre del idioma en el cuadro de búsqueda o desplazarse por la lista de idiomas disponibles.
 
 3. Los idiomas seleccionados se muestran ahora en la hoja **Azure Information Protection: idiomas**:
     

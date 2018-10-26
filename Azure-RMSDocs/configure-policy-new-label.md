@@ -5,15 +5,15 @@ author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 04/30/2018
-ms.topic: article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 1b45faa5-0c9c-40d6-910a-f117e7b6e8a3
-ms.openlocfilehash: 2825a2b794512364fda5cfdea7a0084e99e2db89
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 71baa99f944a8fd6aa1f28bcc6dd935df3e20ac0
+ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42805564"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49170303"
 ---
 # <a name="how-to-create-a-new-label-for-azure-information-protection"></a>Creación de una nueva etiqueta para Azure Information Protection
 
@@ -31,7 +31,7 @@ Utilice las instrucciones siguientes para agregar una nueva etiqueta que despué
     
     Por ejemplo, en el menú del concentrador, haga clic en **Todos los servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
-2. En la opción de menú **CLASIFICACIONES** > **Etiquetas**: en la hoja **Azure Information Protection: etiquetas**, realice una de las acciones siguientes:
+2. En la opción de menú **Clasificaciones** > **Etiquetas**: en la hoja **Azure Information Protection: etiquetas**, realice una de las acciones siguientes:
     
     - Para crear una nueva etiqueta: haga clic en **Add a new label** (Agregar una nueva etiqueta).
     
@@ -43,7 +43,7 @@ Utilice las instrucciones siguientes para agregar una nueva etiqueta que despué
     
     Tenga en cuenta que a las etiquetas nuevas se les asigna automáticamente el color negro. Elija un color distintivo de la lista de colores, o especifique un código hexadecimal triple para los componentes de rojo, verde y azul (RGB) del color. Por ejemplo, **#DAA520**. Si necesita una referencia de estos códigos, [Colors by Name](https://msdn.microsoft.com/library/aa358802\(v=vs.85).aspx) (Colores por nombre), que encontrará en la documentación de MSDN, es un muy buen lugar para empezar. También podrá encontrar estos códigos en muchos programas de edición de imágenes, como Microsoft Paint, que le permite elegir un color personalizado a partir de una paleta y le muestra automáticamente sus valores RGB.
 
-5. Para que la etiqueta esté disponible para los usuarios: En la opción del menú **CLASIFICACIONES** > **Directivas**, seleccione la directiva que contiene la nueva etiqueta. Seleccione **Agregar o quitar etiquetas**. Seleccione la etiqueta en la hoja **Directiva: agregar o quitar etiquetas**, seleccione **Aceptar** y, a continuación, seleccione **Guardar**.
+5. Para que la nueva etiqueta esté disponible para los usuarios: en la opción del menú **Clasificaciones** > **Directivas**, seleccione la directiva que va a incluir la nueva etiqueta. Seleccione **Agregar o quitar etiquetas**. Seleccione la etiqueta en la hoja **Directiva: agregar o quitar etiquetas**, seleccione **Aceptar** y, a continuación, seleccione **Guardar**.
     
     >[!TIP]
     >En el caso de etiquetas nuevas, considere agregarlas primero a una directiva de ámbito que utilice para las pruebas. Cuando esté satisfecho con los resultados, quite la etiqueta de este ámbito de pruebas y, después, agregue la etiqueta a una directiva que se utilice en producción.     

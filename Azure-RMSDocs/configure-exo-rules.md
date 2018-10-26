@@ -4,18 +4,18 @@ description: Instrucciones y ejemplos para configurar reglas de flujo de correo 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/27/2018
+ms.date: 10/17/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ba4e4a4d-5280-4e97-8f5c-303907db1bf5
 ms.reviewer: shakella
 ms.suite: ems
-ms.openlocfilehash: 1f80f939c857c3b36c7999eaaeb2af1ae1680444
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 9d30e7c3e15e9aa6b67c2e1b653d56c1af36ffe0
+ms.sourcegitcommit: 6d4792755226a61d59e79fd8795a9b0f653770bb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148265"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49366995"
 ---
 # <a name="configuring-exchange-online-mail-flow-rules-for-azure-information-protection-labels"></a>Configuración de reglas de flujo de correo de Exchange Online para etiquetas de Azure Information Protection
 
@@ -93,7 +93,7 @@ Para obtener más información acerca de la opción No reenviar, consulte [Opci�
 
 ### <a name="example-2-rule-that-applies-the-encrypt-only-option-to-emails-when-they-have-attachments-that-are-labeled-confidential--partners-and-these-emails-are-sent-outside-the-organization"></a>Ejemplo 2: Regla que aplica la opción Solo cifrar a mensajes de correo electrónico cuando tienen datos adjuntos etiquetados como **Confidencial/Asociados** y estos correos electrónicos se envían fuera de la organización
 
-En este ejemplo, la subetiqueta **Confidencial/Asociados** tiene un GUID de 5ab1c8a1-8241-72bc-3f22-304a0558362a. Sustituya su propio GUID de etiqueta o subetiqueta que desee usar con esta regla. 
+En este ejemplo, la subetiqueta **Confidencial/Asociados** tiene un GUID de 0e421e6d-ea17-4fdb-8f01-93a3e71333b8. Sustituya su propio GUID de etiqueta o subetiqueta que desee usar con esta regla. 
 
 Esta etiqueta se usa para clasificar y proteger los documentos que usa para la colaboración con socios.   
 

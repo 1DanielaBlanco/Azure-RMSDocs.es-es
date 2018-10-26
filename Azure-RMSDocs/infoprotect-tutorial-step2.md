@@ -8,12 +8,12 @@ ms.date: 07/21/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: d399edf1e8b367ad45118447a5d3a88257953f4d
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 8ceda2342638b77de40844a9b5dc00d4f3b1494f
+ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148756"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49170049"
 ---
 # <a name="step-2-configure-the-azure-information-protection-policy"></a>Paso 2: Configuración de la directiva de Azure Information Protection
 
@@ -21,7 +21,7 @@ ms.locfileid: "44148756"
 
 Aunque Azure Information Protection incluye una directiva predeterminada que se puede usar sin necesidad de configuración, echaremos un vistazo a esa directiva y haremos algunos cambios.
 
-1. Si continúa desde el [paso 1](infoprotect-tutorial-step1.md) y sin salir de Azure Portal, seleccione **CLASIFICACIONES** > **Directivas** > **Global** para abrir la hoja **Directiva: Global**. Esta hoja muestra la directiva de Azure Information Protection predeterminada que se crea para el inquilino.
+1. Si continúa desde el [paso 1](infoprotect-tutorial-step1.md) sin salir de Azure Portal, seleccione **Clasificaciones** > **Directivas** > **Global** para abrir la hoja **Directiva: global**. Esta hoja muestra la directiva de Azure Information Protection predeterminada que se crea para el inquilino.
 
 2. Dedique unos minutos a familiarizarse con las etiquetas que se muestran:
     
@@ -60,7 +60,7 @@ En este tutorial, se cambiarán algunas de esas configuraciones de directiva par
 
 Ahora vamos a crear una subetiqueta para **Confidencial**.
 
-1. Desde la opción de menú **CLASIFICACIONES** > **Etiquetas**: haga clic en la etiqueta **Confidencial** y elija **Agregar una subetiqueta**.
+1. En la opción de menú **Clasificaciones** > **Etiquetas**: haga clic con el botón derecho en la etiqueta **Confidencial** y seleccione **Agregar una subetiqueta**.
     
     Si no tiene una etiqueta denominada **Confidencial**, puede seleccionar otra etiqueta o crear una etiqueta y seguir el tutorial con pequeñas diferencias.
 
@@ -128,7 +128,7 @@ Ahora vamos a crear una subetiqueta para **Confidencial**.
 
 13. Haga clic en **Guardar** en la hoja **Subetiqueta**. Si se le pide que confirme, haga clic en **Aceptar**. La nueva etiqueta se crea y se guarda, pero no se agrega aún a una directiva.
 
-14. Desde la opción de menú **CLASIFICACIONES** > **Directivas**: seleccione **Global** de nuevo y, a continuación, seleccione el vínculo **Agregar o quitar etiquetas** después de las etiquetas.
+14. En la opción de menú **Clasificaciones** > **Directivas**: vuelva a seleccionar **Global** y luego seleccione el vínculo **Agregar o quitar etiquetas** después de las etiquetas.
 
 15. En la hoja **Directiva: agregar o quitar etiquetas**, seleccione la etiqueta que acaba de crear y la etiqueta denominada **Finanzas** y haga clic en **Aceptar**.
 
