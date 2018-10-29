@@ -4,18 +4,18 @@ description: Consulte las novedades o los cambios en una versión del cliente de
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/07/2018
+ms.date: 10/18/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b7aed6f8cdf6cf95b6b7af0bfa06554bde79dc02
-ms.sourcegitcommit: e70bb1a02e96d701fd5ae2a25536fa485bbf2e87
+ms.openlocfilehash: 4ccf6468ff1cfb2ee786e1f1bef95c9c07f39afe
+ms.sourcegitcommit: 00e508f97c9191035763384959a8b8fa9f742d4c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48862182"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49399916"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Cliente de Azure Information Protection: historial de publicación de versiones y directiva de soporte técnico
 
@@ -44,7 +44,10 @@ Use la información siguiente para consultar las novedades o los cambios en una 
 
 ## <a name="versions-later-than-137190"></a>Versiones posteriores a 1.37.19.0
 
-Si tiene una versión del cliente posterior a la 1.37.19.0, se trata de una compilación preliminar con fines de prueba y evaluación.
+Si tiene una versión del cliente posterior a la 1.37.19.0, se trata de una compilación preliminar con fines de prueba y evaluación. 
+
+> [!TIP]
+> ¿Está interesado en evaluar el cliente de etiquetado unificado de Azure Information Protection porque sus etiquetas se publican en el Centro de seguridad y cumplimiento de Office 365? Consulte [Cliente de etiquetado unificado de Azure Information Protection: Información de publicación de versión](unifiedlabelingclient-version-release-history.md).
 
 **Lanzamiento**: 20/09/2018
 
@@ -54,13 +57,19 @@ Si tiene una versión del cliente posterior a la 1.37.19.0, se trata de una comp
 
 **Adicional:**
 
-Solo para esta versión preliminar, debe seguir estos pasos para usar el analizador:
+Solo para esta versión preliminar, específico del analizador:
 
-1. Instale la versión de GA (1.37.19.0) actual del cliente.
-2. Instale el analizador y configúrelo.
-3. Inicie el analizador.
-4. Actualice el cliente de Azure Information Protection a esta versión preliminar.
-5. Inicie el analizador.
+- Instale el analizador siguiendo estos pasos:
+    
+    1. Instale la versión de GA (1.37.19.0) actual del cliente.
+    2. Instale el analizador y configúrelo.
+    3. Inicie el analizador.
+    4. Actualice el cliente de Azure Information Protection a esta versión preliminar.
+    5. Inicie el analizador.
+
+- Problema conocido con el análisis de grandes conjuntos de datos:
+    
+    Con esta versión preliminar, aumente gradualmente el número de archivos que se van a analizar y supervise el progreso. Si el estado del analizador indica que se está ejecutando pero no se analizan los archivos nuevos, reduzca el número de archivos que se van a analizar y reinicie el analizador. 
 
 Si necesita instrucciones para instalar, configurar e iniciar el analizador, vea [Implementación del analizador de Azure Information Protection para clasificar y proteger automáticamente los archivos](../deploy-aip-scanner.md).
 
@@ -246,60 +255,6 @@ Correcciones de estabilidad y de escenarios concretos:
 **Cambios adicionales**:
 
 - Para [registro de uso del cliente](client-admin-guide-files-and-logging.md#usage-logging-for-the-azure-information-protection-client ): los identificadores de evento 102 y 103 se reemplazan por el identificador de evento 101.
-
-## <a name="version-110560"></a>Versión 1.10.56.0
-
-**Lanzamiento**: 18/09/2017
-
-Esta versión incluye la versión MSIPC 1.0.3219.0619 del cliente RMS.
-
-**Nuevas características**:
-
-- Compatibilidad con las nuevas condiciones de DLP de Office 365 que puede configurar para una etiqueta. Para más información, vea [Configuración de condiciones para una etiqueta de Azure Information Protection](../configure-policy-classification.md).
-
-- Compatibilidad con las etiquetas configuradas para acciones definidas por el usuario. En Outlook, esta etiqueta se aplica automáticamente a la opción No reenviar. En Word, Excel, PowerPoint y el Explorador de archivos, esta etiqueta pide al usuario que especifique permisos personalizados. Para más información, vea [Configuración de una etiqueta de Azure Information Protection para protección](../configure-policy-protection.md).
-
-- Las etiquetas admiten varios idiomas. A partir del 30 de agosto de 2017, en la [directiva predeterminada](../configure-policy-default.md) se incluye compatibilidad con varios idiomas que se muestra a los usuarios en esta versión del cliente. Para que los usuarios vean las etiquetas de una directiva predeterminada en su idioma preferido antes de esta fecha y para las etiquetas que configure, vea [How to configure labels for different languages in Azure Information Protection](Cómo configurar etiquetas y plantillas para distintos idiomas en Azure Information Protection)configure-policy-languages.md).
-
-- Las etiquetas se muestran desde el botón **Proteger** de la cinta de Office, además de mostrarse en la barra de Information Protection. 
-
-- Protección nativa para los siguientes tipos de archivo de Visio: .vsdm, .vsdx, .vssm, .vssx, .vstm y .vstx
-
-- Compatibilidad con configuraciones de cliente avanzadas que se configuran en Azure Portal. Entre ellas, figuran las siguientes:
-    
-    - [Mostrar u ocultar el botón No reenviar en Outlook](client-admin-guide-customizations.md#hide-or-show-the-do-not-forward-button-in-outlook)
-    
-    - [Configuración de las opciones de permisos personalizados para que estén disponibles o no disponibles para los usuarios](client-admin-guide-customizations.md#make-the-custom-permissions-options-available-or-unavailable-to-users)
-    
-    - [Ocultación de manera permanente de la barra de Azure Information Protection](client-admin-guide-customizations.md#permanently-hide-the-azure-information-protection-bar)
-    
-    - [Habilitación de la clasificación recomendada en Outlook](client-admin-guide-customizations.md#enable-recommended-classification-in-outlook)
-
-- En PowerShell, se admite el etiquetado de archivos de forma no interactiva mediante los nuevos cmdlets de PowerShell, [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication) y [Clear-AIPAuthentication](/powershell/module/azureinformationprotection/clear-aipauthentication). Para más información sobre cómo usar estos cmdlets, vea la [sección de PowerShell](client-admin-guide-powershell.md#how-to-label-files-non-interactively-for-azure-information-protection) de la guía para administradores.
-
-- En el caso de los cmdlets de PowerShell, [Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel) y [Set-AIPFileClassification](/powershell/module/azureinformationprotection/set-aipfileclassification), existen nuevos parámetros: **Owner** y **PreserveFileDetails**. Estos parámetros permiten especificar una dirección de correo electrónico para la propiedad personalizada Owner y dejar la fecha sin modificar para los documentos que etiquete.
-
-**Correcciones**:
-
-Correcciones de estabilidad y de escenarios concretos:
-
-- Compatibilidad con la protección genérica de archivos grandes que anteriormente podían provocar daños si eran mayores de 1 GB. Ahora, el tamaño de archivo está limitado solo por el espacio en disco y la memoria disponibles. Para más información sobre las limitaciones de tamaño de archivo, vea [Tamaños de archivo compatibles para protección](client-admin-guide-file-types.md#file-sizes-supported-for-protection) en la guía para administradores.
-
-- El visor del cliente de Azure Information Protection abre los archivos PDF protegidos (.ppdf) como de solo vista.
-
-- Compatibilidad con el etiquetado y la protección de los archivos almacenados en SharePoint Server.
-
-- Las marcas de agua ahora admiten varias líneas. Además, las marcas visuales ahora se aplican a un documento [solo al guardar por primera vez]configure-policy-markings.md#when-visual-markings-are-applied) en lugar de hacerlo cada vez que se guarda un documento.
-
-- La opción **Ejecutar diagnósticos** del cuadro de diálogo **Ayuda y comentarios** se ha sustituido por **Restablecer configuración**. Ha cambiado el comportamiento de esta acción para incluir el cierre de sesión del usuario y eliminar la directiva de Azure Information Protection. Para más información, vea [Más información sobre la opción Restablecer configuración](..\rms-client\client-admin-guide.md#more-information-about-the-reset-settings-option) de la guía para administradores.
-
-- Compatibilidad con la autenticación de proxy.
-
-Correcciones para una mejor experiencia del usuario:
-
-- Validación de correo electrónico cuando los usuarios especifican permisos personalizados. Además, ahora pueden especificarse varias direcciones de correo electrónico al presionar Entrar.
-
-- La etiqueta principal no se muestra cuando todas sus etiquetas secundarias están configuradas para la protección y el cliente no tiene una edición de Office que admita la protección. 
 
 ## <a name="next-steps"></a>Pasos siguientes
 

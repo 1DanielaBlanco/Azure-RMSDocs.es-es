@@ -5,17 +5,17 @@ author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 08/04/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4ef9a140c351ae2500da320733662025ab735fef
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 01c2e8d4dd476e0910a75fd5949362225743f322
+ms.sourcegitcommit: 4cd90fcf94ac6e2543d8be10e6e29e8218d5fd9d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42808995"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49651968"
 ---
 # <a name="terminology-for-azure-information-protection"></a>Terminología de Azure Information Protection
 
@@ -27,7 +27,7 @@ ms.locfileid: "42808995"
 |--------|--------------|
 |AADRM|Nombre del módulo de PowerShell para el servicio Azure Rights Management, derivado de la abreviatura no oficial de Azure Rights Management cuando se llamaba (Windows) Azure Active Directory Rights Management.|
 |activar|Habilite el servicio Azure Rights Management para que una organización pueda proteger sus documentos y correos electrónicos. Esta acción también habilita las características de IRM en Exchange Online y SharePoint Online.|
-|Active Directory Rights Management Services|En ocasiones se abrevia como *AD RMS*.<br /><br />Un rol de Windows Server que brinda protección de administración de derechos mediante cifrado y directivas para ayudar a proteger los documentos, los archivos y el correo electrónico.|
+|Active Directory Rights Management Services|En ocasiones se abrevia como *AD RMS*.<br /><br />Un rol de Windows Server que ofrece protección de administración de derechos mediante cifrado y directivas para ayudar a proteger los documentos, los archivos y el correo electrónico.|
 |AD RMS|Consulte *Active Directory Rights Management Services*|
 AzureInformationProtection|Nombre del módulo de PowerShell para el cliente de Azure Information Protection.
 |Azure Information Protection|Servicio basado en la nube que usa etiquetas para clasificar y proteger documentos y correos electrónicos. Azure Rights Management proporciona la protección mediante el cifrado, la identidad y las directivas de autorización.|

@@ -4,17 +4,17 @@ description: Vea la información de versión del cliente de etiquetado unificado
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/17/2018
+ms.date: 10/23/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.reviewer: maayan
 ms.suite: ems
-ms.openlocfilehash: f05c1e96222eb70a7257123301d14ef7d885564d
-ms.sourcegitcommit: 283782ee7e3ec566f479c8914eae7bf84d904392
+ms.openlocfilehash: a1544e0fa3c6d09328d1801a75ffbccd496e3482
+ms.sourcegitcommit: b275c1f82bf9176fe3fb36016c6f8692b8418295
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382602"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951846"
 ---
 # <a name="azure-information-protection-unified-labeling-client-version-release-information"></a>Cliente de etiquetado unificado de Azure Information Protection: Información de publicación de versión
 
@@ -50,6 +50,8 @@ Esta versión preliminar del cliente de etiquetado unificado de Azure Informatio
 - Petición de justificación si los usuarios reducen el nivel de confidencialidad
 
 - Cuadro de diálogo Ayuda y comentarios, que incluye restablecimiento de configuración y exportación de registros
+
+- Actualización de directiva desde el Centro de seguridad y cumplimiento cada cuatro horas, por aplicación de Office.
 
 Las siguientes características no funcionan en esta versión preliminar:
 

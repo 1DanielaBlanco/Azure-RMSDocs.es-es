@@ -4,18 +4,18 @@ description: Cuando usa el servicio Azure Rights Management, se descargan de for
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/16/2018
+ms.date: 10/25/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b801266dfb757286599b5bd2fd3b36c9590717f2
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 90c046f0cf2f954e70a17d127bc99b0479115928
+ms.sourcegitcommit: a5fd0afd84b62f84c3b9f0d076fab1b674267bf3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148518"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50083887"
 ---
 # <a name="refreshing-templates-for-users-and-services"></a>Actualización de plantillas para usuarios y servicios
 
@@ -26,12 +26,14 @@ Cuando usa el servicio Azure Rights Management de Azure Information Protection, 
 |Aplicación o servicio|Cómo se actualizan las plantillas tras los cambios|
 |--------------------------|---------------------------------------------|
 |Exchange Online<br /><br />Se aplica a reglas de transporte y Outlook Web App |Se actualiza automáticamente en una hora, no hay que seguir más pasos.<br /><br />Este es el caso si usa el [cifrado de mensajes de Office 365 con nuevas capacidades](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e). Si previamente ha configurado Exchange Online para que use el servicio Azure Rights Management y, para ello, ha importado su dominio de publicación de confianza (TPD), use el mismo conjunto de instrucciones para habilitar las nuevas capacidades de Exchange Online.|
-|Cliente de Azure Information Protection|Se actualiza automáticamente cada vez que la directiva de Azure Information Protection se actualiza en el cliente:<br /><br /> - Cuando se abre una aplicación de Office que admite la barra de Azure Information Protection. <br /><br /> - Cuando hace clic con el botón derecho para clasificar y proteger un archivo o carpeta. <br /><br /> - Cuando ejecuta cmdlets de PowerShell para etiquetado y protección (Get-AIPFileStatus y Set-AIPFileLabel).<br /><br /> - Cuando se inicia el servicio del analizador de Azure Information Protection y la directiva local es anterior a una hora. Además, el servicio del analizador comprueba los cambios cada hora y los utiliza para el próximo ciclo de examen.<br /><br /> - Cada 24 horas.<br /><br /> Además, dado que el cliente de Azure Information Protection está estrechamente integrado con Office, cualquier plantillas actualizada para Office 2016 u Office 2013 también se actualizará para el cliente de Azure Information Protection.|
+|Cliente de Azure Information Protection|Se actualiza automáticamente cada vez que la directiva de Azure Information Protection se actualiza en el cliente:<br /><br /> - Cuando se abre una aplicación de Office que admite la barra de Azure Information Protection. <br /><br /> - Cuando hace clic con el botón derecho para clasificar y proteger un archivo o carpeta. <br /><br /> - Cuando ejecuta cmdlets de PowerShell para etiquetado y protección (Get-AIPFileStatus y Set-AIPFileLabel).<br /><br /> - Cuando se inicia el servicio del analizador de Azure Information Protection y la directiva local es anterior a una hora. Además, el servicio del analizador comprueba los cambios cada hora y los utiliza para el próximo ciclo de examen.<br /><br /> - Cada 24 horas.<br /><br /> Además, dado que este cliente está estrechamente integrado con Office, cualquier plantillas actualizada para Office 2016 u Office 2013 también se actualizará para el cliente de Azure Information Protection.|
+|Cliente de etiquetado unificado de Azure Information Protection (versión preliminar)|Se actualiza automáticamente cada cuatro horas, por aplicación de Office.<br /><br /> Además, dado que el cliente de Azure Information Protection está estrechamente integrado con Office, cualquier plantillas actualizada para Office 2016 u Office 2013 también se actualizará para el cliente de etiquetado unificado de Azure Information Protection.|
 |Office 2016 y Office 2013<br /><br />Aplicaciones de uso compartido de RMS para Windows|Actualización automática: programada:<br /><br />- Para estas versiones posteriores de Office: el intervalo de actualización predeterminado es cada 7 días.<br /><br />- Para la aplicación RMS sharing para Windows: a partir de la versión 1.0.1784.0, el intervalo de actualización predeterminado es cada día. Las versiones anteriores tienen un intervalo de actualización predeterminado de 7 días.<br /><br />Para exigir una actualización antes de esta programación, consulte la sección [Office 2016, Office 2013 y la aplicación RMS sharing para Windows: Cómo forzar una actualización de una plantilla personalizada que se ha cambiado](#office-2016--office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template).|
 |Office 2010|Se actualiza automáticamente cuando los usuarios cierran la sesión de Windows, vuelven a iniciarla y esperan hasta 1 hora.|
 |Exchange local con el conector Rights Management<br /><br />Se aplica a reglas de transporte y Outlook Web App|Actualización automática: no se requieren pasos adicionales. Pero Outlook Web App almacena en caché la interfaz de usuario durante un día.|
 |Office 2016 para Mac|Actualización automática: no se requieren pasos adicionales.|
 |Aplicación RMS sharing para equipos Mac|Actualización automática: no se requieren pasos adicionales.|
+|Aplicaciones de Office que [admiten la característica de sensibilidad](https://support.office.com/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9?ad=US&ui=en-US&rs=en-US#bkmk_whereavailable)|Estos clientes no descargan plantillas, sino que acceden a ellas en línea. No se requieren pasos adicionales.|
 
 Cuando las aplicaciones cliente deben descargar plantillas (inicialmente o con actualización para los cambios), prepárese para esperar hasta 15 minutos antes de que se complete la descarga y que las plantillas nuevas o actualizadas estén completamente operativas. El tiempo real dependerá de factores como el tamaño y la complejidad de la configuración de la plantilla y la conectividad de red. 
 

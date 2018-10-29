@@ -4,18 +4,18 @@ description: Instrucciones para instalar, configurar y ejecutar el analizador de
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/09/2018
+ms.date: 10/24/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: b4306a45f8bfa1f6c865f634e270ba8eafa6e8d8
-ms.sourcegitcommit: aaa3eabffc9cdc2389955de770b43ffa9fa984fd
+ms.openlocfilehash: 315c1e04d6d941643ee6625053b1cae8bd08b292
+ms.sourcegitcommit: 51c99ea4c98b867cde964f51c35450eaa22fac27
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48889468"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49991384"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Implementación del analizador de Azure Information Protection para clasificar y proteger automáticamente los archivos
 
@@ -192,7 +192,7 @@ Con la configuración predeterminada del analizador, ahora está listo para ejec
     
         Start-AIPScan
 
-2. Espere a que el analizador complete su ciclo. Cuando el analizador haya rastreado todos los archivos de los almacenes de datos que ha especificado, el servicio se detendrá. Puede utilizar el registro de eventos local de **aplicaciones y servicios** de Windows, **Azure Information Protection**, para confirmar cuándo se detiene el servicio. Busque el id. de evento informativo **911**.
+2. Espere a que el analizador complete su ciclo. Cuando el analizador haya rastreado todos los archivos de los almacenes de datos que ha especificado, el analizador se detendrá, aunque el servicio del analizador sigue ejecutándose. Puede utilizar el registro de eventos local de **aplicaciones y servicios** de Windows, **Azure Information Protection**, para confirmar cuándo se detiene el analizador. Busque el id. de evento informativo **911**.
 
 3. Revise los informes almacenados en %*localappdata*%\Microsoft\MSIP\Scanner\Reports que tengan un formato de archivo .csv. Con la configuración predeterminada del analizador, solo los archivos que cumplen las condiciones para la clasificación automática se incluyen en estos informes.
     
@@ -238,7 +238,7 @@ Luego, el analizador usa Windows iFilter para analizar los siguientes tipos de a
 |PDF |.pdf|
 |Texto|.txt; .xml; .csv|
 
-De forma predeterminada, el analizador solo protege los tipos de archivo de Office, por lo que los archivos PDF y de texto no están protegidos a menos que [edite el registro](develop/file-api-configuration.md) para especificar los tipos de archivo:
+De forma predeterminada, el analizador solo protege los tipos de archivo de Office, por lo que los archivos PDF y de texto no están protegidos a menos que [edite el registro](#editing-the-registry-for-the-scanner) para especificar los tipos de archivo:
 
 - Si no agrega el tipo de archivo .pdf al registro: los archivos con esta extensión de nombre de archivo se etiquetarán, pero si la etiqueta está configurada para la protección, esta no se aplica.
 
@@ -262,12 +262,21 @@ Por último, para los tipos de archivo restantes, el analizador aplica la etique
 |DigitalNegative|.dng|
 |Pfile|.pfile|
 
-Cuando el analizador aplica una etiqueta con protección, de forma predeterminada solo se protegen los tipos de archivo de Office. Puede cambiar este comportamiento para proteger también otros tipos de archivos. Sin embargo, cuando una etiqueta aplica protección genérica a documentos, la extensión de nombre de archivo cambia a .pfile. Además, el archivo pasa a ser de solo lectura hasta que lo abre un usuario autorizado y se guarda en su formato nativo. Los archivos de texto y de imágenes también pueden cambiar su extensión de nombre de archivo y pasar a ser de solo lectura. 
+Cuando el analizador aplica una etiqueta con protección, de forma predeterminada solo se protegen los tipos de archivo de Office. Puede cambiar este comportamiento para proteger también otros tipos de archivos. Sin embargo, cuando una etiqueta aplica protección genérica a documentos, la extensión de nombre de archivo cambia a .pfile. Otros tipos de archivo pueden cambiar también su extensión de nombre de archivo. Además, estos archivos pasan a ser de solo lectura hasta que los abre un usuario autorizado y se guardan en su formato nativo.
 
-Para cambiar este comportamiento predeterminado del analizador para, por ejemplo, proteger otros tipos de archivo de forma genérica, debe editar el registro manualmente y especificar los tipos de archivo adicionales que desea que estén protegidos. Como alternativa, puede proteger todos los tipos de archivo mediante la especificación del carácter comodín `*`. Para obtener instrucciones, vea [Configuración de la API de archivo](develop/file-api-configuration.md) en la guía del desarrollador. En esta documentación para desarrolladores, se hace referencia a la protección genérica como "PFile". Además, establezca lo siguiente para el analizador:
+### <a name="editing-the-registry-for-the-scanner"></a>Edición del registro para el analizador
+
+Para cambiar este comportamiento predeterminado del analizador para proteger otros tipos de archivo que no sean de Office, debe editar el registro manualmente y especificar los tipos de archivo adicionales que desea que estén protegidos. Para obtener instrucciones, vea [Configuración de la API de archivo](develop/file-api-configuration.md) en la guía del desarrollador. En esta documentación para desarrolladores, se hace referencia a la protección genérica como "PFile". Además, establezca lo siguiente para el analizador:
 
 - El analizador tiene su propio comportamiento predeterminado: solo los formatos de archivo de Office están protegidos de forma predeterminada. Si no se modifica el registro, el analizador no protegerá ningún otro tipo de archivo.
 
+- Si desea el mismo comportamiento de protección predeterminado del cliente de Azure Information Protection, donde todos los archivos se protegen automáticamente con protección nativa o genérica. Especifique el comodín `*` como clave de registro y `Default` como datos de valor.
+
+Cuando edite el registro, cree manualmente la clave **MSIPC** y la clave **FileProtection** si no existen, así como una clave para cada extensión de nombre de archivo.
+
+Por ejemplo, para que el escáner proteja los archivos PDF además de los archivos de Office, el registro después de que se haya editado se verá como la siguiente ilustración:
+
+![Edición del registro para que el analizador aplique la protección](./media/editregistry-scanner.png)
 
 ## <a name="when-files-are-rescanned"></a>¿Cuándo se vuelven a examinan los archivos?
 
@@ -321,7 +330,7 @@ Para maximizar el rendimiento del analizador:
     
     Si tiene carpetas para examinar en un servidor Windows, instale el analizador en otro equipo y configure las carpetas como recursos compartidos de red para realizar el examen. Al separar ambas funciones de los archivos de hospedaje y de examen, los recursos de cálculo de esos servicios no interferirán entre sí.
 
-Si es necesario, instale varias instancias del analizador. Cada instancia del analizador requiere su propia base de datos de configuración.
+Si es necesario, instale varias instancias del analizador. Cada instancia del analizador requiere su propia base de datos de configuración en otra instancia de SQL Server.
 
 Otros factores que influyen en el rendimiento del analizador:
 
