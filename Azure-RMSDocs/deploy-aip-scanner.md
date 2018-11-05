@@ -4,18 +4,18 @@ description: Instrucciones para instalar, configurar y ejecutar el analizador de
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/24/2018
+ms.date: 10/31/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 315c1e04d6d941643ee6625053b1cae8bd08b292
-ms.sourcegitcommit: 51c99ea4c98b867cde964f51c35450eaa22fac27
+ms.openlocfilehash: 47a8633852139bf0a84e6c55321c69b1af2c2892
+ms.sourcegitcommit: b70d49870960a7a3feaf9a97a6e04ad350c4d2c8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49991384"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50751294"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Implementación del analizador de Azure Information Protection para clasificar y proteger automáticamente los archivos
 
@@ -191,13 +191,23 @@ Con la configuración predeterminada del analizador, ahora está listo para ejec
 1. En la sesión de PowerShell, reinicie el servicio **Analizador de Azure Information Protection** mediante la ejecución del siguiente comando:
     
         Start-AIPScan
+    
+    Como alternativa, puede iniciar el escáner en la hoja **Azure Information Protection** de Azure Portal, cuando se usa la opción **Escáner** > **Nodos (versión preliminar)** > \**<* nodo de escáner*>**> **Escanear ahora**.
 
-2. Espere a que el analizador complete su ciclo. Cuando el analizador haya rastreado todos los archivos de los almacenes de datos que ha especificado, el analizador se detendrá, aunque el servicio del analizador sigue ejecutándose. Puede utilizar el registro de eventos local de **aplicaciones y servicios** de Windows, **Azure Information Protection**, para confirmar cuándo se detiene el analizador. Busque el id. de evento informativo **911**.
+2. Espere a que el escáner complete su ciclo y ejecute el comando siguiente:
+    
+    Get-AIPScannerStatus
+    
+    Busque el estado para mostrar **Inactivo** en lugar de **Examinando**. Cuando el analizador haya rastreado todos los archivos de los almacenes de datos que ha especificado, el analizador se detendrá, aunque el servicio del analizador sigue ejecutándose. 
+    
+    Como alternativa, puede ver el estado en la hoja **Azure Information Protection** de Azure Portal, seleccionando **Escáner** > **Nodos (versión preliminar)** > \**<* nodo de escáner*>**> columna **ESTADO**.
+    
+    Compruebe el registro de eventos local de Windows **Aplicaciones y servicios**, **Azure Information Protection**. Este registro también informa cuando el escáner ha terminado de examinar, con un resumen de los resultados. Busque el id. de evento informativo **911**.
 
 3. Revise los informes almacenados en %*localappdata*%\Microsoft\MSIP\Scanner\Reports que tengan un formato de archivo .csv. Con la configuración predeterminada del analizador, solo los archivos que cumplen las condiciones para la clasificación automática se incluyen en estos informes.
     
     > [!TIP]
-    > Actualmente en versión preliminar, la información de estos informes se envía ahora a Azure Information Protection para que pueda verlos en Azure Portal. Para más información, consulte [Reporting for Azure Information Protection](reports-aip.md) (Informes para Azure Information Protection). 
+    > Actualmente en versión preliminar, los escáneres envían esta información a Azure Information Protection cada cinco minutos cuando cuenta con la versión preliminar del escáner, para que pueda ver los resultados casi en tiempo real desde Azure Portal. Para más información, consulte [Reporting for Azure Information Protection](reports-aip.md) (Informes para Azure Information Protection). 
         
     Si los resultados no son los esperados, tendrá que ajustar las condiciones que ha especificado en la directiva de Azure Information Protection. Si es así, repita los pasos del 1 al 3 hasta que esté listo para cambiar la configuración para aplicar la clasificación y, opcionalmente, la protección. 
 
@@ -213,13 +223,17 @@ En su configuración predeterminada, el analizador se ejecuta una vez y en el mo
     
     Hay otras opciones de configuración que tal vez quiera cambiar. Por ejemplo, si se cambian los atributos de archivo y lo que se registra en los informes. Además, si la directiva de Azure Information Protection incluye la configuración que requiere un mensaje de justificación para bajar el nivel de clasificación o quitar la protección, especifique ese mensaje mediante el uso de este cmdlet. Use la [ayuda en línea](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration#parameters) para obtener más información sobre cada opción de configuración. 
 
-2. Reinicie el servicio **Analizador de Azure Information Protection** mediante el siguiente comando:
+2. Tome nota de la hora actual y vuelva a iniciar el escáner mediante la ejecución del comando siguiente:
     
         Start-AIPScan
+    
+    Como alternativa, puede iniciar el escáner en la hoja **Azure Information Protection** de Azure Portal, cuando se usa la opción **Escáner** > **Nodos (versión preliminar)** > \**<* nodo de escáner*>**> **Escanear ahora**.
 
-3. Al igual que antes, supervise el registro de eventos y los informes para ver qué archivos se han etiquetado, qué clasificación se ha aplicado y si se ha aplicado la protección.
+3. Vuelva a supervisar el registro de eventos para el tipo informativo **911**, con una marca de tiempo posterior a cuando se inició el examen en el paso anterior. 
+    
+    Después, compruebe los informes para ver qué archivos se han etiquetado, qué clasificación se ha aplicado a cada archivo y si se les ha aplicado la protección. O bien, utilice Azure Portal para ver más fácilmente esta información.
 
-Dado que hemos configurado la programación para que se ejecute continuamente, cuando el analizador haya completado el examen de todos los archivos, iniciará un nuevo ciclo para detectar archivos nuevos y modificados.
+Dado que hemos configurado la programación para que se ejecute continuamente, cuando el escáner haya completado el examen de todos los archivos, iniciará un nuevo ciclo para detectar cualquier archivo nuevo y modificado.
 
 
 ## <a name="how-files-are-scanned"></a>¿Cómo se examinan los archivos?
@@ -283,6 +297,8 @@ Por ejemplo, para que el escáner proteja los archivos PDF además de los archiv
 En el primer ciclo de examen, el analizador inspecciona todos los archivos de los almacenes de datos configurados y, después, en los exámenes posteriores, solo inspecciona los archivos nuevos o modificados. 
 
 Puede forzar al analizador a que inspeccione de nuevo todos los archivos mediante la ejecución de [Start-AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan) con el parámetro `-Reset`. El analizador debe configurarse para una programación manual, lo que requiere que el parámetro `-Schedule` se establezca en **Manual** con [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration).
+
+Como alternativa, puede forzar al escáner a que vuelva a inspeccionar todos los archivos en la hoja **Azure Information Protection** de Azure Portal, cuando se usa **Escáner** > **Nodos (versión preliminar)** > \**<* nodo de escáner*>**> opción **Rescan all files** (Volver a examinar todos los archivos).
 
 Volver a inspeccionar todos los archivos resulta útil si quiere que los informes incluyan todos los archivos. Esta opción de configuración suele usarse cuando el analizador se ejecuta en modo de detección. Cuando finaliza el examen completo, el tipo de examen cambia automáticamente a incremental para que en los análisis posteriores solo se examinen los archivos nuevos o modificados.
 
@@ -425,6 +441,8 @@ Si el analizador se configuró para ejecutarse una vez en lugar de continuamente
 ----
 
 ## <a name="next-steps"></a>Pasos siguientes
+
+¿Está interesado en cómo el equipo de ingeniería y operaciones de servicios centrales de Microsoft ha implementado este escáner?  Consulte el caso práctico técnico: [Automating data protection with Azure Information Protection scanner](https://www.microsoft.com/itshowcase/Article/Content/1070/Automating-data-protection-with-Azure-Information-Protection-scanner) (Automatización de la protección de datos con el escáner de Azure Information Protection).
 
 Es posible que se pregunte: [¿Cuál es la diferencia entre FCI de Windows Server y el analizador de Azure Information Protection?](faqs.md#whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner)
 

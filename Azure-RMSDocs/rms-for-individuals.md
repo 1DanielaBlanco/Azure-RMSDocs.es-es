@@ -4,18 +4,18 @@ description: Información sobre RMS para individuos, una suscripción gratuita d
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/17/2018
+ms.date: 11/02/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 321464e50a517c17518e35a715e154d0c7c8b07d
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 40cc70864d68b4bdcc1081f908539663ba8366a8
+ms.sourcegitcommit: d969a82dc801f3d653163de2b18a3a772607b74c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44146682"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915570"
 ---
 # <a name="rms-for-individuals-and-azure-information-protection"></a>RMS para individuos y Azure Information Protection
 
@@ -23,7 +23,7 @@ ms.locfileid: "44146682"
 
 RMS para usuarios es una suscripción gratuita de autoservicio para los usuarios que necesitan abrir archivos que ha protegido Azure Information Protection. Si estos usuarios no se pueden autenticar con Azure Active Directory, este servicio de suscripción gratuita puede crear una cuenta en Azure Active Directory para un usuario. El resultado es que estos usuarios podrán autenticarse con su dirección de correo de empresa y abrir los archivos protegidos en sus equipos o dispositivos móviles.
 
-RMS para usuarios utiliza la suscripción de autoservicio de Azure Active Directory. Si los usuarios han creado cuentas para su organización mediante esta suscripción, como administrador para su organización, puede reclamar la propiedad y [tomar el control de sus cuentas](/active-directory/domains-admin-takeover#external-admin-takeover). 
+RMS para usuarios utiliza la suscripción de autoservicio de Azure Active Directory. Si los usuarios han creado cuentas para su organización mediante esta suscripción, como administrador para su organización, puede reclamar la propiedad y [tomar el control de sus cuentas](/azure/active-directory/users-groups-roles/domains-admin-takeover#external-admin-takeover). 
 
 
 > [!NOTE]
@@ -60,5 +60,5 @@ Ahora que ya está creada la cuenta, si se le pide que inicie sesión para prote
 
 
 ## <a name="next-steps"></a>Pasos siguientes
-RMS para usuarios es un ejemplo del uso de una suscripción de autoservicio que es compatible con Azure Active Directory. Para más información sobre cómo funciona, consulte [¿Qué es la suscripción de autoservicio de Azure?](/active-directory/active-directory-self-service-signup) en la documentación de Azure Active Directory.
+RMS para usuarios es un ejemplo del uso de una suscripción de autoservicio que es compatible con Azure Active Directory. Para más información sobre cómo funciona, consulte [¿Qué es la suscripción de autoservicio de Azure Active Directory?](/azure/active-directory/users-groups-roles/directory-self-service-signup) en la documentación de Azure Active Directory.
 

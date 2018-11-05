@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: d7077678ba336b031f7a8f812a3c4e90d8c5b05a
-ms.sourcegitcommit: d677088db8588fb2cc4a5d7dd296e76d0d9a2e9c
+ms.openlocfilehash: 35c0fb8eb358c5872ab378755d303425cc8e80a4
+ms.sourcegitcommit: 2c4e72120213407516a49286368f9b2860505f56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48251716"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236822"
 ---
 # <a name="microsoft-information-protection-sdk---protection-api-observers"></a>SDK de Microsoft Information Protection: observadores de API de protección
 
@@ -25,7 +25,7 @@ Cuando se completa una operación asincrónica, se llama a la función miembro `
 
 En los ejemplos siguientes, se muestra el modelo de patrón de promesa o futuro, que también se usa en los ejemplos del SDK; también se puede ampliar para implementar el comportamiento deseado de la devolución de llamada. 
 
-## <a name="protection-protection-observer-implementation"></a>Implementación del observador de protección
+## <a name="protectionprofile-observer-implementation"></a>Implementación del observador de ProtectionProfile
 
 En el ejemplo siguiente, hemos creado una clase, `ProtectionProfileObserverImpl`, que se deriva de `mip::ProtectionProfile::Observer`. Se han reemplazado las funciones de miembro para usar el patrón de promesa o futuro utilizado a lo largo de los ejemplos.
 

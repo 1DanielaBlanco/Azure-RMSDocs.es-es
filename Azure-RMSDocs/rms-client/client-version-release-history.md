@@ -4,18 +4,18 @@ description: Consulte las novedades o los cambios en una versión del cliente de
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/18/2018
+ms.date: 10/30/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4ccf6468ff1cfb2ee786e1f1bef95c9c07f39afe
-ms.sourcegitcommit: 00e508f97c9191035763384959a8b8fa9f742d4c
+ms.openlocfilehash: b05b41b802b54d874d13dcf13f541374d4150564
+ms.sourcegitcommit: b70d49870960a7a3feaf9a97a6e04ad350c4d2c8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49399916"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50751260"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Cliente de Azure Information Protection: historial de publicación de versiones y directiva de soporte técnico
 
@@ -103,6 +103,8 @@ Esta versión incluye la versión MSIPC 1.0.3592.627 del cliente RMS.
     
     - SharePoint Server 2010 es compatible con los clientes que tengan [soporte extendido para esta versión de SharePoint](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010).
     
+- Compatibilidad con la nueva hoja **Azure Information Protection - Nodos (versión preliminar)** en Azure Portal, que le permite administrar los escáneres desde una ubicación central. La información de los escáneres implementados que tienen conectividad con Azure se actualiza cada cinco minutos. En esta hoja, puede iniciar el escáner para un examen único, volver a examinar todos los archivos, comprobar el estado de un escáner y ver la velocidad del examen.
+
 **Correcciones**
 
 - Para el analizador de Azure Information Protection:
@@ -111,7 +113,7 @@ Esta versión incluye la versión MSIPC 1.0.3592.627 del cliente RMS.
     
     - Entre los informes del analizador se incluyen "Última modificación por" para documentos de Office.
     
-    - Ahora puede proteger todos los tipos de archivo mediante el carácter comodín `*` al editar el Registro como se describe en las instrucciones de [configuración de la API de archivo](../develop/file-api-configuration.md).
+    - Ahora puede proteger todos los tipos de archivo mediante el carácter comodín `*` al editar el Registro, tal como se describe en la sección [Edición del registro para el escáner](../deploy-aip-scanner.md#editing-the-registry-for-the-scanner).
 
 - Al clasificar y proteger mediante PowerShell o el analizador, los metadatos de documentos de Office no se quitan ni se cifran.
 

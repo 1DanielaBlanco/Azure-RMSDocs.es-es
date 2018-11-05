@@ -4,16 +4,16 @@ description: Puede proteger sus documentos y mensajes de correo electrónico má
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2018
+ms.date: 10/31/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: dae8f654fbb6a5603d0324d474bd1f25e7c36118
-ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
+ms.openlocfilehash: 0ee7333baebd0a34f518ff9500df95ed57ed2b01
+ms.sourcegitcommit: b70d49870960a7a3feaf9a97a6e04ad350c4d2c8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49169777"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50751175"
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Configuración de una etiqueta para la protección de Rights Management
 
@@ -100,17 +100,16 @@ No es necesario que Exchange esté configurado para Azure Information Protection
     
     Seleccione **Agregar permisos** y, en la hoja **Agregar permisos**, seleccione el primer conjunto de usuarios y grupos que tendrán permisos para usar el contenido que se protegerá mediante la etiqueta seleccionada:
     
-    - Elija **Seleccione de la lista**, donde puede agregar todos los usuarios de su organización mediante la selección de **Agregar \<NombreDeOrganización >-Todos los miembros**. Este parámetro excluye las cuentas de invitado. O bien, puede seleccionar **Agregar todos los usuarios autenticados (versión preliminar)** o buscar en el directorio.
+    - Elija **Seleccione de la lista**, donde puede agregar todos los usuarios de su organización mediante la selección de **Agregar \<NombreDeOrganización >-Todos los miembros**. Este parámetro excluye las cuentas de invitado. O bien, puede seleccionar **Agregar todos los usuarios autenticados** o buscar en el directorio.
         
         Al elegir a todos los miembros o examinar el directorio, los usuarios o grupos deben tener una dirección de correo electrónico. En un entorno de producción, los usuarios y grupos casi siempre tendrán una dirección de correo electrónico, pero en uno simple de pruebas es posible que tenga que agregarlas a las cuentas de usuario o los grupos.
         
         ###### <a name="more-information-about-add-any-authenticated-users"></a>Más información acerca de **Agregar todos los usuarios autenticados**. 
         Esta configuración no limita quién puede acceder al contenido que protege la etiqueta, aunque sí mantiene cifrado el contenido y le ofrece las opciones para restringir cómo se puede usar el contenido (permisos) y el acceso a este (expiración y acceso sin conexión). Sin embargo, la aplicación que abre el contenido protegido debe ser compatible con la autenticación que se va a usar. Por este motivo, los proveedores sociales federados, como Google, y la autenticación de código de acceso de un solo uso deben utilizarse solo para correo electrónico, y solo cuando utilice Exchange Online y las nuevas capacidades de Office 365 Message Encryption. Las cuentas Microsoft se pueden usar con el visor de Azure Information Protection y Hacer clic y ejecutar de Office 2016. 
           
-        Algunos escenarios típicos para cualquier configuración de usuarios autenticados:  
-                - No le importa quién pueda ver el contenido, pero desea restringir la forma en que se usa. Por ejemplo, no desea que el contenido se edite, copie o imprima.  
-                - No es necesario restringir quién tiene acceso al contenido, pero desea poder realizar un seguimiento de quién lo abre y, potencialmente, revocarlo.  
-                - Tiene un requisito por el cual se debe cifrar el contenido en reposo y en tránsito, pero no requiere controles de acceso.  
+        Algunos casos típicos para cualquier configuración de usuarios autenticados: - No le importa quién ve el contenido, pero desea restringir cómo se usa. Por ejemplo, no desea que el contenido se edite, copie o imprima.  
+            - No es necesario restringir quién tiene acceso al contenido, pero desea poder realizar un seguimiento de quién lo abre y, potencialmente, revocarlo.  
+            - Tiene un requisito por el cual se debe cifrar el contenido en reposo y en tránsito, pero no requiere controles de acceso.
         
     - Seleccione **Escribir detalles** para especificar manualmente las direcciones de correo electrónico de usuarios individuales o grupos (internos o externos). O bien, puede usar esta opción para especificar todos los usuarios de otra organización escribiendo el nombre de dominio de dicha organización. También puede usar esta opción para los proveedores sociales escribiendo su nombre de dominio, como **gmail.com**, **hotmail.com** o **outlook.com**.
         
@@ -216,7 +215,7 @@ Esta etiqueta no es adecuada para los correos electrónicos.
 7. Haga clic en **Aceptar** en la hoja **Protección** y, a continuación, haga clic en **Guardar** en la hoja **Etiqueta**.
 
 
-### <a name="example-3-add-external-users-to-an-existing-label"></a>Ejemplo 3: Agregar usuarios externos a una etiqueta existente
+### <a name="example-3-add-external-users-to-an-existing-label-that-protects-content"></a>Ejemplo 3: Agregar usuarios externos a una etiqueta existente que protege el contenido
 
 Los nuevos usuarios que agregue podrán abrir documentos y mensajes de correo electrónico que ya se hayan protegido con esta etiqueta. Los permisos que conceda a estos usuarios pueden ser diferentes de los permisos que tengan los usuarios existentes.
 
@@ -279,7 +278,7 @@ Esta configuración tiene la ventaja de que no es necesario especificar los usua
     
 2. Asegúrese de que **Establecer permisos** esté seleccionado y, a continuación, seleccione **Agregar permisos**.
 
-3. En la hoja **Agregar permisos**, en la pestaña **Seleccionar de la lista**, seleccione **Agregar todos los usuarios autenticados (versión preliminar)**.
+3. En la hoja **Agregar permisos**, en la pestaña **Seleccionar de la lista**, seleccione **Agregar todos los usuarios autenticados**.
 
 4. Seleccione los permisos que desee y haga clic en **Aceptar**.
 
