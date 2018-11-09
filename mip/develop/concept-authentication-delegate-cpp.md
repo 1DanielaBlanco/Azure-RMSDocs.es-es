@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 9a9256d4c67845f43eeb1598926ea5c02f07f822
-ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.openlocfilehash: f80eb1f7ade5e024bd6d7d68775624b51f3f1809
+ms.sourcegitcommit: fa0be701b85b1fba5e75428714bb4525dd739a93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47445740"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223915"
 ---
 # <a name="microsoft-information-protection-sdk---implementing-an-authentication-delegate-c"></a>SDK de Microsoft Information Protection: implementar un delegado de autenticación (C++)
 
@@ -23,7 +23,7 @@ Para extender la clase base `mip::AuthDelegate`, creamos una clase llamada `samp
 
 ### <a name="authdelegateimplh"></a>auth_delegate_impl.h
 
-Para este ejemplo, el constructor predeterminado solo acepta el nombre de usuario, la contraseña y el [identificador de la aplicación](/azure/active-directory/develop/developer-glossary.md#application-id-client-id). Estos valores se almacenarán en las variables privadas `mUserName`, `mPassword` y `mClientId`.
+Para este ejemplo, el constructor predeterminado solo acepta el nombre de usuario, la contraseña y el [identificador de la aplicación](/azure/active-directory/develop/developer-glossary#application-id-client-id). Estos valores se almacenarán en las variables privadas `mUserName`, `mPassword` y `mClientId`.
 
 Es importante tener en cuenta que la información como el proveedor de identidades o el URI de recursos no es necesaria para la implementación (por lo menos, no son necesarias en el constructor `AuthDelegateImpl`). Esa información se pasa como parte de `AcquireOAuth2Token` en el objeto `OAuth2Challenge`. En su lugar, pasaremos esos detalles a la llamada `AcquireToken` en `AcquireOAuth2Token`.
 
