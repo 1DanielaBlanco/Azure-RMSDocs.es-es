@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: quickstart
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 430e130a5ba2026c0a3c69a59dddd6f9d6b4e8f0
-ms.sourcegitcommit: cc65c3851d4b8169a1a62c83afaf0f75402f7631
-ms.translationtype: HT
+ms.openlocfilehash: 6c0b9a878f98081312a0b81b965e75bcc0ade7e8
+ms.sourcegitcommit: 13b5b8e7457b09e1b828dad3cdfae086fd019819
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2018
-ms.locfileid: "49476211"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51508449"
 ---
 # <a name="microsoft-information-protection-mip-sdk-setup-and-configuration"></a>Instalación y configuración del SDK de Microsoft Information Protection (MIP) 
 
@@ -169,7 +169,49 @@ Cuando termine, el registro de aplicación y los permisos de API deberían ser s
 
 Para obtener más información sobre cómo agregar las API y los permisos a un registro, consulte [Actualizar una aplicación, Configurar una aplicación de cliente para tener acceso a la sección de API web](/azure/active-directory/develop/quickstart-v1-integrate-apps-with-azure-ad#updating-an-application). Aquí encontrará información sobre cómo agregar las API y los permisos necesarios para una aplicación cliente.  
 
+## <a name="request-an-information-protection-integration-agreement-ipia"></a>Solicitud de un Contrato de integración de Information Protection (IPIA)
+
+Antes de publicar una aplicación desarrollada con MIP, debe solicitar y rellenar un contrato formal con Microsoft.
+
+1. Obtenga su IPIA enviando un correo electrónico a [IPIA@microsoft.com](mailto:IPIA@microsoft.com?subject=Requesting%20IPIA%20for%20<company-name>) con la siguiente información:
+
+   **Asunto:** Solicitud de IPIA para *nombre de la compañía*
+
+   En el cuerpo del correo electrónico, incluya:
+   - Nombre de la aplicación y del producto
+   - Nombre y apellidos del solicitante
+   - Dirección de correo electrónico del solicitante
+
+2. Tras la recepción de la solicitud de IPIA, le enviaremos un formulario (como un documento de Word). Revise los términos y las condiciones del IPIA y devuelva el formulario a [IPIA@microsoft.com](mailto:IPIA@microsoft.com?subject=IPIA%20Response%20for%20<company-name>) con la siguiente información:
+
+   - Nombre legal de la empresa
+   - Estado o provincia (Estados Unidos y Canadá) o el país de incorporación
+   - Dirección URL de la empresa
+   - Dirección de correo electrónico de la persona de contacto
+   - Direcciones adicionales de la empresa (opcional)
+   - Nombre de la aplicación de la empresa
+   - Breve descripción de la aplicación
+   - *Identificador del inquilino de Azure*
+   - *Identificador de aplicación* de la aplicación
+   - Contactos de la compañía, correo electrónico y teléfono para la correspondencia en caso de situaciones críticas
+
+3. Cuando recibamos su formulario, le enviaremos el vínculo IPIA final para firmar digitalmente. Después de la firma, lo firmará el representante de Microsoft adecuado, con lo que el contrato quedará completado.
+
+### <a name="already-have-a-signed-ipia"></a>¿Ya tiene un IPIA firmado?
+
+Si ya tiene un IPIA firmado y desea agregar un nuevo *identificador de aplicación* para una aplicación que se esté lanzando, envíe un correo electrónico a [IPIA@microsoft.com](mailto:IPIA@microsoft.com?subject=Updating%20IPIA%20for%20<company-name>) y proporciónenos la siguiente información:
+
+- Nombre de la aplicación de la empresa
+- Breve descripción de la aplicación
+- Identificador de inquilino de Azure (incluso si es igual que el anterior)
+- Identificador de aplicación de la aplicación
+- Contactos de la compañía, correo electrónico y teléfono para la correspondencia en caso de situaciones críticas
+
+Tras el envío del correo electrónico, espere hasta 72 horas para el acuse de recibo.
+
 ## <a name="next-steps"></a>Pasos siguientes
 
 - Antes de comenzar la sección de las guías de inicio rápido, asegúrese de que ha leído acerca de los [observadores en el SDK de MIP](concept-async-observers.md), ya que el SDK de MIP está diseñado para ser casi completamente asincrónico.
 - Si está listo para obtener experiencia práctica con el SDK, comience con la [Guía de inicio rápido: inicialización de la aplicación cliente (C++)](quick-app-initialization-cpp.md).
+
+
