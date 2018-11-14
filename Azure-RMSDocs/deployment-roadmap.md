@@ -4,18 +4,18 @@ description: Siga estos pasos para preparar, implementar y administrar Azure Inf
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2018
+ms.date: 11/05/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4d1a63ac3ea5fae9782588b1779d7c7950738e23
-ms.sourcegitcommit: 3b41a6e730fa40660a2bdf5b1a73d155c87aacc2
+ms.openlocfilehash: 4e2fa20d542a9509476c78ebe21143e49863b788
+ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48834613"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51026832"
 ---
 # <a name="azure-information-protection-deployment-roadmap"></a>Mapa de ruta de implementación de Azure Information Protection
 
@@ -23,7 +23,7 @@ ms.locfileid: "48834613"
 
 Utilice los pasos siguientes como recomendaciones para ayudarlo a preparar, implementar y administrar Azure Information Protection en su organización.
 
-Si lo que quiere es probar rápidamente Azure Information Protection en lugar de implementarlo en un entorno de producción, vea [Tutorial de inicio rápido para Azure Information Protection](./infoprotect-quick-start-tutorial.md).
+Sin embargo, si busca instrucciones basadas en escenarios, consulte [las guías de procedimientos para escenarios comunes que usan Azure Information Protection](how-to-guides.md).
 
 > [!NOTE]
 > Si busca una mapa de ruta de lanzamiento de productos, vea nuestra sección [Información sobre nuevas versiones y actualizaciones](information-support.md#information-about-new-releases-and-updates).
@@ -59,7 +59,7 @@ Para más información, consulte [Preparación de usuarios y grupos para Azure I
 ### <a name="step-3-configure-and-deploy-classification-and-labeling"></a>Paso 3: Configurar e implementar la clasificación y el etiquetado
 
 > [!TIP]
-> **Opcional pero recomendado**: considere la posibilidad de implementar el [analizador de Azure Information Protection](deploy-aip-scanner.md) para detectar qué información confidencial tiene en los almacenes de datos locales. La información que detecta el analizador puede ayudarle con la taxonomía de clasificación, proporcionar información valiosa sobre qué etiquetas necesita y qué archivos se deben proteger.
+> **Opcional pero recomendado**: considere la posibilidad de implementar el analizador de Azure Information Protection para detectar qué información confidencial tiene en los almacenes de datos locales. Tenemos un tutorial de [inicio rápido](quickstart-findsensitiveinfo.md) que describe este escenario. La información que detecta el analizador puede ayudarle con la taxonomía de clasificación, proporcionar información valiosa sobre qué etiquetas necesita y qué archivos se deben proteger.
 > 
 > El analizador se puede configurar para buscar tipos de información confidencial conocidos en los archivos locales de Windows Server, archivos en recursos compartidos de red y archivos en las versiones locales de SharePoint. Como esta configuración no requiere configurar etiquetas o ni siquiera definir la taxonomía de clasificación, la ejecución del analizador de este modo es adecuada para esta fase tan temprana de la implementación. También puede usar esta configuración del analizador en paralelo con los pasos de implementación siguientes, hasta que configure las condiciones para las etiquetas.
 

@@ -4,19 +4,19 @@ description: Cómo usar los informes centrales para realizar el seguimiento de l
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/15/2018
+ms.date: 11/07/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.assetid: b2da2cdc-74fd-4bfb-b3c2-2a3a59a6bf2e
 ms.reviewer: lilukov
 ms.suite: ems
-ms.openlocfilehash: 424be5910d6a4498bc9d2684888cd2bf9af010af
-ms.sourcegitcommit: 26e1ccdd0c4339a51ec7812082b399f13ef73b2b
+ms.openlocfilehash: 4cb496e6cca01d7a4ad6636acc315bd40dc4c58c
+ms.sourcegitcommit: 8e43a41998045fe574710e9da0b7747eaeccdba1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49324901"
+ms.lasthandoff: 11/08/2018
+ms.locfileid: "51273589"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Informes centrales para Azure Information Protection
 
@@ -62,17 +62,25 @@ Para generar estos informes, los puntos de conexión envían los siguientes tipo
 
 - La acción de la etiqueta. Por ejemplo, establecer una etiqueta, cambiar una etiqueta, agregar o quitar la protección, etiquetas automáticas y recomendadas.
 
+- El nombre de etiqueta antes y después de la acción de la etiqueta.
+
 - El identificador del inquilino de la organización.
 
 - El identificador de usuario (dirección de correo electrónico o UPN).
 
-- La ruta de acceso y el nombre de archivo de los documentos etiquetados.
+- El nombre del dispositivo del usuario.
+
+- Para documentos: la ruta de acceso y el nombre de archivo de los documentos etiquetados.
+
+- Para correos electrónicos: el asunto, el remitente y los destinatarios de correo electrónico para los correos electrónicos etiquetados. 
+
+- Los tipos de información confidencial ([predefinidos](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for) y personalizados) que se han detectado en el contenido.
 
 - La versión del cliente de Azure Information Protection.
 
 - La versión del sistema operativo cliente.
 
-Esta información se almacena en un área de trabajo de Azure Log Analytics de su propiedad.
+Esta información se almacena en un área de trabajo de Azure Log Analytics de su propiedad y que pueden ver los usuarios que tienen derechos de acceso a esta área de trabajo. Para obtener información acerca de cómo configurar el acceso al área de trabajo, vea la sección [Administración de cuentas y usuarios](/azure/log-analytics/log-analytics-manage-access?toc=/azure/azure-monitor#manage-accounts-and-users) de la documentación de Azure.
 
 ## <a name="prerequisites-for-azure-information-protection-analytics"></a>Requisitos previos de análisis de Azure Information Protection
 Para ver los informes de Azure Information Protection y crear los suyos propios, asegúrese de que se hayan satisfecho los siguientes requisitos previos.

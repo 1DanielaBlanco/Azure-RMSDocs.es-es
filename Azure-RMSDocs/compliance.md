@@ -10,14 +10,14 @@ ms.service: information-protection
 ms.assetid: b3a7127b-6d24-4439-bc4e-2a0a325e8ea3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e7c6c078d992bc4d3be9480227715be2157178f2
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 0269888af84f4f1b17ce5523bb5bbc8648d0d1a7
+ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150796"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51026713"
 ---
-# <a name="compliance-and-supporting-information-for-azure-information-protection"></a>Información complementaria y de cumplimiento para Azure Information Protection
+# <a name="compliance-and-supporting-information-for-azureinformation-protection"></a>Información complementaria y de cumplimiento para Azure Information Protection
 
 Azure Information Protection admite otros servicios y también se basa en otros servicios. Si está buscando información relacionada con Azure Information Protection pero no sobre cómo usar el servicio, compruebe los recursos siguientes:
 
@@ -45,7 +45,7 @@ Aquí tiene alguna información pertinente que puede ayudar a su asesor jurídic
 
 ## <a name="security-compliance-and-auditing"></a>Seguridad, cumplimiento y auditoría
 
-Consulte la sección [Security, compliance, and regulatory requirements](./azure-rms-problems-it-solves.md#security-compliance-and-regulatory-requirements) (Requisitos de seguridad, normativos y regulatorios) del artículo [What problems does Azure RMS solve?](./azure-rms-problems-it-solves.md) (¿Qué problemas resuelve Azure RMS?) para obtener información sobre las certificaciones específicas del servicio de Azure Rights Management. Además:
+Consulte la sección [Security, compliance, and regulatory requirements](./what-is-azure-rms.md#security-compliance-and-regulatory-requirements) (Requisitos de seguridad, normativos y regulatorios) del artículo [What problems does Azure RMS solve?](./azure-rms-problems-it-solves.md) (¿Qué problemas resuelve Azure RMS?) para obtener información sobre las certificaciones específicas del servicio de Azure Rights Management. Además:
 
 - Para certificaciones externas de Azure Information Protection: [Centro de confianza de Microsoft Azure](http://azure.microsoft.com/support/trust-center/)
 

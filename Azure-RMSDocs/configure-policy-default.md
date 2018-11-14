@@ -4,16 +4,15 @@ description: Obtenga información sobre cómo está configurada la directiva pre
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/09/2018
-ms.topic: article
+ms.date: 11/06/2018
+ms.topic: conceptual
 ms.service: information-protection
-ms.assetid: 671281c8-f0d1-42b6-aae3-681d1821e2cf
-ms.openlocfilehash: ada4e4b2b7f8ef4bcf95307184d9c262a930c9f0
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: d74dfcd35dca2f3ab5e88a66eaaba37b13636e4d
+ms.sourcegitcommit: fa0be701b85b1fba5e75428714bb4525dd739a93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42807329"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223983"
 ---
 # <a name="the-default-azure-information-protection-policy"></a>Directiva predeterminada de Azure Information Protection
 
@@ -21,19 +20,19 @@ ms.locfileid: "42807329"
 
 Utilice la siguiente información para comprender cómo está configurada la directiva predeterminada de Azure Information Protection.
 
-Cuando un administrador se conecta por primera vez al servicio Azure Information Protection mediante Azure Portal, se crea la directiva predeterminada para ese inquilino. En ocasiones, es posible que Microsoft realice cambios en la directiva predeterminada, pero si ya estaba usando el servicio antes de que se revisara la directiva predeterminada, no se actualiza la versión anterior de la directiva predeterminada porque podría haberla configurado e implementado en producción.
+Cuando un administrador se conecta por primera vez al servicio Azure Information Protection mediante Azure Portal, se crea la directiva predeterminada de Azure Information Protection para ese inquilino. En ocasiones, es posible que Microsoft realice cambios en la directiva predeterminada, pero si ya estaba usando el servicio antes de que se revisara la directiva predeterminada, no se actualiza la versión anterior de la directiva predeterminada de Azure Information Protection porque podría haberla configurado e implementado en producción.
 
-Puede hacer referencia a los siguientes valores para devolver la directiva a los valores predeterminados o actualizar la directiva con los valores más recientes.
+Puede hacer referencia a los siguientes valores para devolver la directiva de Azure Information Protection a los valores predeterminados o actualizar la directiva de Azure Information Protection con los valores más recientes.
 
 ## <a name="current-default-policy"></a>Directiva predeterminada actual
 
-Esta versión de la directiva predeterminada es del 31 de julio de 2017.
+Esta versión de la directiva predeterminada de Azure Information Protection es del 31 de julio de 2017.
 
-Esta directiva predeterminada se crea cuando se activa el servicio de Azure Rights Management, que es el caso de nuevos inquilinos a partir de febrero de 2018. Para más información, consulte el anuncio de la entrada de blog [Improvements to the protection stack in Azure Information Protection](https://cloudblogs.microsoft.com/enterprisemobility/2018/03/08/improvements-to-the-protection-stack-in-azure-information-protection) (Mejoras para la pila de protección en Azure Information Protection).
+Esta directiva predeterminada de Azure Information Protection se crea cuando se activa el servicio de Azure Rights Management, que es el caso de los nuevos inquilinos a partir de febrero de 2018. Para más información, consulte el anuncio de la entrada de blog [Improvements to the protection stack in Azure Information Protection](https://cloudblogs.microsoft.com/enterprisemobility/2018/03/08/improvements-to-the-protection-stack-in-azure-information-protection) (Mejoras para la pila de protección en Azure Information Protection).
 
-Esta directiva predeterminada también se crea si ha [activado el servicio](activate-service.md) manualmente antes de que se creara la directiva. 
+Esta directiva predeterminada de Azure Information Protection también se crea si ha [activado el servicio](activate-service.md) manualmente antes de que se creara la directiva de Azure Information Protection. 
 
-Si este servicio no se ha activado, la directiva predeterminada no configurará la protección para las siguientes subetiquetas:
+Si este servicio no se ha activado, la directiva predeterminada de Azure Information Protection no configurará la protección para las siguientes subetiquetas:
 
 - **Confidencial\Todos los empleados**
 
@@ -43,11 +42,11 @@ Si este servicio no se ha activado, la directiva predeterminada no configurará 
 
 - **Extremadamente confidencial \ Solo destinatarios** 
 
-Cuando estas subetiquetas no se configuran automáticamente para la protección, la directiva predeterminada es igual a la [anterior directiva predeterminada](#default-policy-before-july-31-2017).
+Cuando estas subetiquetas no se configuran automáticamente para la protección, la directiva predeterminada de Azure Information Protection es igual a la [anterior directiva predeterminada](#default-policy-before-july-31-2017).
 
 Cuando se aplica la protección a las subetiquetas **Todos los empleados**, la protección se configura mediante las plantillas predeterminadas que se convierten automáticamente en etiquetas en Azure Portal. Para obtener más información sobre estas plantillas, vea [Configuración y administración de plantillas para Azure Information Protection](configure-policy-templates.md).
 
-A partir del 30 de agosto de 2017, esta versión de la directiva predeterminada incluye versiones en diversos idiomas de los nombres y las descripciones de las etiquetas. 
+A partir del 30 de agosto de 2017, esta versión de la directiva predeterminada de Azure Information Protection incluye versiones en diversos idiomas de los nombres y las descripciones de las etiquetas. 
 
 #### <a name="more-information-about-the-recipients-only-sublabel"></a>Más información sobre la subetiqueta Solo destinatarios
 

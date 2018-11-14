@@ -1,21 +1,23 @@
 ---
 title: 'Preguntas frecuentes y problemas conocidos: SDK de Microsoft Information Protection.'
-description: Preguntas frecuentes sobre el SDK de Microsoft Information Protection (MIP) y guía para la solución de problemas conocidos.
+description: Preguntas frecuentes sobre el SDK de Microsoft Information Protection (MIP) y guía para la solución de problemas y errores.
 author: BryanLa
 ms.service: information-protection
 ms.topic: troubleshooting
 ms.date: 10/19/2018
 ms.author: bryanla
-ms.openlocfilehash: cb3bdd6f2d9328a57156580f3d345d25983fccad
-ms.sourcegitcommit: cc65c3851d4b8169a1a62c83afaf0f75402f7631
-ms.translationtype: HT
+ms.openlocfilehash: f213b31d9b0e41ea9c1e076055a90e9f62b31b3a
+ms.sourcegitcommit: fa0be701b85b1fba5e75428714bb4525dd739a93
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2018
-ms.locfileid: "49476425"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223932"
 ---
-# <a name="microsoft-information-protection-mip-sdk-faqs-and-known-issues"></a>Preguntas frecuentes y problemas conocidos del SDK de Microsoft Information Protection (MIP)
+# <a name="microsoft-information-protection-mip-sdk-faqs-and-issues"></a>Preguntas frecuentes y problemas del SDK de Microsoft Information Protection (MIP)
 
-## <a name="frequently-asked-questions-faqs"></a>Preguntas frecuentes
+En este artículo se ofrecen respuestas a las preguntas frecuentes y una guía para la solución de problemas conocidos y errores comunes.
+
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes 
 
 ### <a name="question-which-platforms-are-supported-by-the-mip-sdk"></a>Pregunta: ¿Qué plataformas son compatibles con el SDK de MIP?
 
@@ -33,7 +35,13 @@ El SDK está pensado para un uso multiplataforma y utiliza [UTF-8 (Unicode Trans
 | .NET | Para los clientes del SDK de .NET, todas las cadenas utilizan la codificación UTF-16 predeterminada y no se necesita ninguna conversión especial. La conversión a o desde UTF-16 se administra internamente con el SDK de MIP. |
 | Otras plataformas | Todas las demás plataformas que admite el SDK de MIP tienen compatibilidad nativa para UTF-8. |
 
-## <a name="known-issues"></a>Problemas conocidos
+## <a name="issues-and-errors-reference"></a>Referencia sobre errores y problemas
+
+### <a name="error-file-format-not-supported"></a>Error: "Formato de archivo no admitido"  
+
+| Error | Solución |
+|-|-|
+|*Formato de archivo no admitido*| Esta excepción se produce al intentar proteger o etiquetar un archivo PDF que se ha firmado digitalmente o se ha protegido con contraseña. Consulte [New support for PDF encryption with Microsoft Information Protection](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/New-support-for-PDF-encryption-with-Microsoft-Information/ba-p/262757) (Nueva compatibilidad con el cifrado de archivos PDF con Microsoft Information Protection) para obtener más información sobre el cifrado y el etiquetado de archivos PDF.|
 
 ### <a name="error-failed-to-parse-the-acquired-compliance-policy"></a>Error: "Failed to parse the acquired Compliance Policy" (No se pudo analizar la directiva de cumplimiento adquirida)  
 

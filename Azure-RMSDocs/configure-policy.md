@@ -4,18 +4,18 @@ description: Para configurar la protección, la clasificación y el etiquetado, 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/02/2018
+ms.date: 11/05/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: bc6ec93104f2fc4f037b2410d53d7e3e70874725
-ms.sourcegitcommit: 4cd90fcf94ac6e2543d8be10e6e29e8218d5fd9d
+ms.openlocfilehash: 98c3d09a72a74ce8f2abc679df1e155b3a9ee5d8
+ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49651335"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51026594"
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>Configuración de la directiva de Azure Information Protection
 
@@ -92,35 +92,7 @@ La próxima vez que acceda a la hoja de **Azure Information Protection**, se sel
 3. Para ver y editar las directivas, seleccione **Directivas** entre las opciones de menú. Para ver y editar la directiva que obtienen todos los usuarios, seleccione la directiva **Global**. Para crear una directiva personalizada para usuarios seleccionados, seleccione **Agregar una directiva**.
     
 
-### <a name="overview-of-the-policy"></a>Información general sobre la directiva
-
-Una directiva de Azure Information Protection contiene los siguientes elementos que puede configurar:
-    
-- Qué etiquetas se incluyen que permiten a los administradores y usuarios clasificar (y opcionalmente, proteger) documentos y correos electrónicos.
-
-- Título e información sobre herramientas de la barra de Information Protection que ven los usuarios en sus aplicaciones de Office.
-
-- La opción para establecer una etiqueta predeterminada como punto de partida para clasificar documentos y correos electrónicos.
-
-- La opción para exigir clasificación cuando los usuarios guarden documentos y envíen correos electrónicos.
-
-- La opción para pedir a los usuarios que proporcionen un motivo cuando seleccionen una etiqueta con un nivel de confidencialidad inferior al original.
-
-- La opción para etiquetar automáticamente un mensaje de correo, basándose en sus datos adjuntos.
-
-- La opción para controlar si la barra de Information Protection se muestra en las aplicaciones de Office.
-
-- La opción para controlar si se muestra el botón No reenviar en Outlook.
-
-- La opción que permite a los usuarios especificar sus propios permisos para documentos.
-
-- La opción para proporcionar un vínculo de ayuda personalizado para los usuarios.
-
-Azure Information Protection incluye una [directiva predeterminada](configure-policy-default.md), que contiene cinco etiquetas principales. Dos de estas etiquetas contienen subetiquetas para proporcionar subcategorías, cuando sea necesario. Cuando se configura una etiqueta para subetiquetas, los usuarios no pueden seleccionar la principal, sino que deben seleccionar una de las subetiquetas.
-
-Las etiquetas de Azure Information Protection se pueden usar con la gama completa de los datos que una organización normalmente crea y almacena, desde la clasificación más baja de datos personales, a la clasificación más alta de información extremadamente confidencial. 
-
-Puede utilizar las etiquetas predeterminadas sin cambios, o puede personalizarlas. También puede eliminarlas y crear otras nuevas. Para más información, use los vínculos que aparecen en la siguiente sección para ubicar las opciones pertinentes y cómo configurarlas.
+### <a name="making-changes-to-the-policy"></a>Aplicación de cambios en la directiva
 
 Puede crear tantas etiquetas como quiera. Sin embargo, cuando empiezan a ser demasiadas como para que los usuarios puedan verlas fácilmente y seleccionar la etiqueta correcta, puede crear directivas con ámbito para que los usuarios vean solo las etiquetas pertinentes. Hay un límite superior para las etiquetas que aplican protección: 500.
 
@@ -172,7 +144,11 @@ Use la siguiente información como ayuda para configurar la directiva de Azure I
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Para ver un ejemplo de cómo personalizar la directiva predeterminada y ver el comportamiento resultante en una aplicación de Office, pruebe el [tutorial de inicio rápido de Azure Information Protection](infoprotect-quick-start-tutorial.md).
+Para obtener ejemplos de cómo personalizar la directiva de Azure Information Protection y ver el comportamiento resultante para los usuarios, pruebe los siguientes tutoriales:
+
+- [Edit the Azure Information Protection policy and create a new label and create a new label](infoprotect-quick-start-tutorial.md) (Edición de la directiva de Azure Information Protection y creación de una nueva etiqueta)
+
+- [Configure Azure Information Protection policy settings that work together](infoprotect-settings-tutorial.md) (Configuración de los parámetros de la directiva de Azure Information Protection que funcionan en conjunto)
 
 Para ver cómo está funcionando la directiva, consulte [Reporting de Azure Information Protection](reports-aip.md) (Informes para Azure Information Protection).
 

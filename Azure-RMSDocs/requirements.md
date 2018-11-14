@@ -4,18 +4,18 @@ description: Identifique los requisitos previos para implementar Azure Informati
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/19/2018
+ms.date: 11/05/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 00daf488568fef8569f97db378b771383a221ce3
-ms.sourcegitcommit: 07af86511a394274f10cf1340de4cf4bad6d1675
+ms.openlocfilehash: 92b7ca3feceb70bc9b8b085b58c26231d2ae70ce
+ms.sourcegitcommit: 8a4bab8dc6ee4c322a54d79091af04ec9449e5c2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46473824"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51020061"
 ---
 # <a name="requirements-for-azure-information-protection"></a>Requirements for Azure Information Protection (Requisitos de Azure Information Protection)
 
@@ -44,7 +44,7 @@ Si tiene alguna pregunta sobre las suscripciones o licencias, no las publique en
 
 ## <a name="azure-active-directory"></a>Azure Active Directory
 
-Su organización debe tener un directorio de Azure Active Directory (Azure AD) para admitir la autenticación y autorización de usuario para Azure Information Protection. Además, si desea usar sus cuentas de usuario desde su directorio local (AD DS), también deberá configurar la integración de directorios.
+Su organización debe tener un directorio de Azure Active Directory (Azure AD) para admitir la autenticación y autorización de usuario para Azure Information Protection. Además, si desea usar sus cuentas de usuario desde su directorio local (AD DS), también deberá configurar la integración de directorios.
 
 Como Azure Information Protection admite el inicio de sesión único (SSO), ya no se solicita repetidamente a los usuarios sus credenciales. Si utiliza otra solución de proveedor para la federación, consulte con ese proveedor cómo configurarlo para Azure AD. WS-Trust es un requisito común para que estas soluciones admitan el inicio de sesión único. 
 
@@ -111,8 +111,6 @@ Para más información sobre las ediciones de Office que son compatibles con el 
 Si tiene un firewall o dispositivos de red que intervengan que se deben configurar para permitir conexiones específicas, puede consultar los requisitos de conectividad de red en el artículo de Office [Direcciones URL e intervalos de direcciones IP de Office 365](https://support.office.com/en-US/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2). Vea la sección **Microsoft 365 Common y Office Online**.
 
 Además de la información del artículo de Office específica de Azure Information Protection:
-
-- Permita tráfico HTTPS en TCP 443 a **informationprotection.hosting.portal.azure.net**.
 
 - Si usa un proxy web que precisa de autenticación, debe configurarlo para usar la autenticación integrada de Windows con las credenciales de inicio de sesión de Active Directory del usuario.
 
