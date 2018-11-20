@@ -7,12 +7,12 @@ manager: mbaldwin
 ms.date: 11/05/2018
 ms.topic: quickstart
 ms.service: information-protection
-ms.openlocfilehash: aa541481aa11ad904a486b28d0bf37b85fd72543
-ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
+ms.openlocfilehash: adcaa1e0f15536d83a20c54017813d7e1546d860
+ms.sourcegitcommit: ad37950f6a747c86f6496c6de859e18446f9b03f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51027061"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51644716"
 ---
 # <a name="quickstart-get-started-in-the-azure-portal"></a>Inicio rápido: Introducción a Azure Portal
 
@@ -36,7 +36,7 @@ Azure Information Protection no está automáticamente disponible en Azure Porta
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com) con la cuenta de administrador global del inquilino. 
     
-    Si no es el administrador global, puede usar uno de los siguientes [roles administrativos](/azure/active-directory/active-directory-assign-admin-roles-azure-portal): **administrador de Information Protection** o **administrador de seguridad**.
+    Si no es el administrador global, utilice el siguiente vínculo para roles alternativos: [Inicio de sesión en Azure Portal](configure-policy.md#signing-in-to-the-azure-portal).
 
 2. En el menú del concentrador, seleccione **Crear un recurso** y, a continuación, en el cuadro de búsqueda de Marketplace, escriba **Azure Information Protection**. 
     

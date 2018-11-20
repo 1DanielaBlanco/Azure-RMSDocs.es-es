@@ -4,15 +4,15 @@ description: Configure una etiqueta que protege un correo electrónico para un u
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/05/2018
+ms.date: 11/14/2018
 ms.topic: quickstart
 ms.service: information-protection
-ms.openlocfilehash: 6beb55b6dbcd82582cc24c7beb787bf4b232f518
-ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
+ms.openlocfilehash: 793c3ff3b68de66dce5876c25cb4ba5455d19c33
+ms.sourcegitcommit: ad37950f6a747c86f6496c6de859e18446f9b03f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51027052"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51644699"
 ---
 # <a name="quickstart-configure-a-label-for-users-to-easily-protect-emails-that-contain-sensitive-information"></a>Inicio rápido: Configuración de una etiqueta para usuarios para proteger fácilmente los correos electrónicos que contienen información confidencial
 
@@ -64,9 +64,11 @@ Para ver una lista completa de los requisitos previos para utilizar Azure Inform
 
 ## <a name="configure-an-existing-label-to-apply-the-do-not-forward-protection"></a>Configuración de una etiqueta existente para aplicar la protección No reenviar
 
-1. Abra una nueva ventana del explorador e inicie sesión en [Azure Portal](https://portal.azure.com). Después, vaya a **Azure Information Protection**. 
+1. Abra una nueva ventana del explorador e inicie sesión en [Azure Portal](https://portal.azure.com) como administrador global. Después, vaya a **Azure Information Protection**. 
     
     Por ejemplo, en el menú del concentrador, haga clic en **Todos los servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
+    
+    Si no es el administrador global, utilice el siguiente vínculo para roles alternativos: [Inicio de sesión en Azure Portal](configure-policy.md#signing-in-to-the-azure-portal).
 
 2. En la opción de menú **Clasificaciones** > **Etiquetas** de la hoja **Azure Information Protection: etiquetas**, seleccione la etiqueta que desea configurar para aplicar la protección. 
 

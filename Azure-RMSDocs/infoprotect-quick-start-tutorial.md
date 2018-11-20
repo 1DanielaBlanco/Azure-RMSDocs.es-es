@@ -4,15 +4,15 @@ description: Un tutorial introductorio para probar rápidamente Microsoft Azure 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/07/2018
+ms.date: 11/14/2018
 ms.topic: tutorial
 ms.service: information-protection
-ms.openlocfilehash: 9e5fb752e75a6b6616fa0ef347c6a6102cd859fa
-ms.sourcegitcommit: 8e43a41998045fe574710e9da0b7747eaeccdba1
+ms.openlocfilehash: 7f8fc76b0ad3d90d422cc18229d10b1f1a8d6e8d
+ms.sourcegitcommit: ad37950f6a747c86f6496c6de859e18446f9b03f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2018
-ms.locfileid: "51273606"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51644750"
 ---
 # <a name="tutorial-edit-the-azure-information-protection-policy-and-create-a-new-label"></a>Tutorial: Edición de la directiva de Azure Information Protection y creación de una nueva etiqueta
 
@@ -67,9 +67,11 @@ Mediante Azure Portal, cambiaremos primero un par de configuraciones de la direc
 
 ### <a name="edit-the-policy-settings"></a>Edición de la configuración de directiva
 
-1. Abra una nueva ventana del explorador e inicie sesión en [Azure Portal](https://portal.azure.com). Después, vaya a **Azure Information Protection**. 
+1. Abra una nueva ventana del explorador e inicie sesión en [Azure Portal](https://portal.azure.com) como administrador global. Después, vaya a **Azure Information Protection**. 
     
     Por ejemplo, en el menú del concentrador, haga clic en **Todos los servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
+    
+    Si no es el administrador global, utilice el siguiente vínculo para roles alternativos: [Inicio de sesión en Azure Portal](configure-policy.md#signing-in-to-the-azure-portal).
 
 2. Seleccione **Clasificaciones** > **Directivas** > **Global** para abrir la hoja **Policy: Global** (Directiva:global). 
 

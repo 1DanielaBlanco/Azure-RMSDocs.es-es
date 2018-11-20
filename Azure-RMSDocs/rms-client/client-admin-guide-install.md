@@ -4,18 +4,18 @@ description: Instrucciones e información para administradores para implementar 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/17/2018
+ms.date: 11/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 2b6e3a40f7faab35053c1bd3146bfc08767e0066
-ms.sourcegitcommit: 6d4792755226a61d59e79fd8795a9b0f653770bb
+ms.openlocfilehash: f4067698a97ded8aa4c7fd6144fa7738822f1910
+ms.sourcegitcommit: ad37950f6a747c86f6496c6de859e18446f9b03f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49367012"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51644682"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>Guía del administrador: Instalación del cliente de Azure Information Protection para los usuarios
 
@@ -41,6 +41,11 @@ Luego, compruebe los requisitos previos adicionales que puede necesitar el clien
     
     El módulo de PowerShell para el cliente requiere Windows PowerShell versión 4.0, que quizá deba instalarse en sistemas operativos anteriores. Para obtener más información consulte [How to Install Windows PowerShell 4.0](http://social.technet.microsoft.com/wiki/contents/articles/21016.how-to-install-windows-powershell-4-0.aspx) (Instalación de Windows PowerShell 4.0). El instalador no comprueba ni instala este requisito previo para usted. Para confirmar la versión de Windows PowerShell que ejecuta, escriba `$PSVersionTable` en una sesión de PowerShell.
 
+- Resolución de pantalla superior a 800 x 600
+    
+    Las resoluciones de 800 x 600 y anteriores no pueden mostrar todo el cuadro de diálogo **Clasificar y proteger - Azure Information Protection** cuando hace clic con el botón derecho en un archivo o carpeta en el Explorador de archivos.
+
+
 - Microsoft Online Services - Ayudante para el inicio de sesión 7.250.4303.0
     
     Los equipos que ejecutan Office 2010 requiere Microsoft Online Services - Ayudante para el inicio de sesión versión 7.250.4303.0. Esta versión está incluida en la instalación del cliente. Si tiene una versión posterior del Asistente para el inicio de sesión, desinstálela antes de instalar el cliente de Azure Information Protection. Por ejemplo, compruebe la versión y desinstale el Asistente para el inicio de sesión en **Panel de control** > **Programas y características** > **Desinstalar o cambiar un programa**.
@@ -57,21 +62,21 @@ Luego, compruebe los requisitos previos adicionales que puede necesitar el clien
     
     La instalación del cliente no comprueba este requisito previo, pero es necesario para que el cliente de Azure Information Protection pueda clasificar y proteger los archivos PDF.
 
-- Configuración de directiva de grupo para **Lista de complementos administrados**
+- Configuración de directiva de grupo para evitar que se deshabilite el complemento de Azure Information Protection
     
-    En Office 2013 y versiones posteriores, configure el valor de directiva de grupo **Lista de complementos administrados** y agregue el complemento **Microsoft Azure Information Protection** para las aplicaciones de Office. Especifique los siguientes identificadores programáticos (ProgID) para Azure Information Protection y establezca la opción en **1: El complemento siempre está habilitado**.
+    En Office 2013 y versiones posteriores, configure la directiva de grupo para asegurarse de que el complemento **Microsoft Azure Information Protection** para aplicaciones de Office esté siempre habilitado. Si no configura este valor, el complemento Microsoft Azure Information Protection puede deshabilitarse, de modo que los usuarios no podrán etiquetar sus documentos y correos electrónicos en la aplicación de Office.
     
-    - Para Outlook: `MSIP.OutlookAddin`
+    - Para Outlook: use el valor de directiva de grupo documentado en [Control de administrador del sistema a través de complementos](https://docs.microsoft.com/office/vba/outlook/concepts/getting-started/support-for-keeping-add-ins-enabled#system-administrator-control-over-add-ins) en la documentación de Office.
     
-    - Para Word: `MSIP.WordAddin`
-    
-    - Para Excel:`MSIP.ExcelAddin`
-    
-    - Para PowerPoint: `MSIP.PowerPointAddin`
-    
-    Si no configura este valor, el complemento Microsoft Azure Information Protection puede deshabilitarse, de modo que los usuarios no podrán etiquetar sus documentos y correos electrónicos en la aplicación de Office.
-    
-    Para obtener más información sobre la configuración de este valor de directiva de grupo, vea [System Administrator control over add-ins](https://docs.microsoft.com/office/vba/outlook/concepts/getting-started/support-for-keeping-add-ins-enabled#system-administrator-control-over-add-ins) (Control del administrador del sistema sobre los complementos) en la documentación de Office.
+    - Para Word, Excel y PowerPoint: use el valor de directiva de grupo **Lista de complementos administrados** documentado en el artículo de soporte técnico [No Add-ins loaded due to group policy settings for Office 2013 and Office 2016 programs](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off). (No se cargan complementos debido a la configuración de directiva de grupo para programas de Office 2013 y Office 2016). 
+        
+        Especifique los siguientes identificadores programáticos (ProgID) para Azure Information Protection y establezca la opción en **1: El complemento siempre está habilitado**.
+        
+        Para Word: `MSIP.WordAddin`
+        
+        Para Excel:`MSIP.ExcelAddin`
+        
+        Para PowerPoint: `MSIP.PowerPointAddin`
 
 > [!IMPORTANT]
 > La instalación del cliente de Azure Information Protection requiere permisos administrativos locales.

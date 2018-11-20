@@ -4,18 +4,18 @@ description: ¿Tiene alguna pregunta que trate específicamente sobre clasificac
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/27/2018
+ms.date: 11/14/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-ms.openlocfilehash: f4a5cd07f072f1fa5ea6473cf0f1f75bcb2568f4
-ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
+ms.openlocfilehash: 2c0d391e2d00ec7d0bc09d98de3fe6f502f999a4
+ms.sourcegitcommit: 4c4af9766342272eaa18df720ba3738d44ba99c8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51026645"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51707749"
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>Preguntas más frecuentes sobre la clasificación y el etiquetado en Azure Information Protection
 
@@ -27,7 +27,7 @@ ms.locfileid: "51026645"
 
 Pruebe nuestro tutorial [Edit the policy and create a new label](infoprotect-quick-start-tutorial.md) (Edición de la directiva y creación de una etiqueta nueva) para ver esto en funcionamiento en cuestión de minutos.
 
-Busque anuncios en el [Enterprise Mobility and Security Blog](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-information-protection) (Blog de seguridad y movilidad empresarial) y en nuestro [sitio de Yammer](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all) para saber cuándo estarán disponibles las funcionalidades y características de clasificación adicionales. Existen algunas limitaciones con la versión actual, que incluyen las siguientes:
+Busque anuncios en el [blog de Enterprise Mobility + Security Blog](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/bg-p/enterprisemobilityandsecurity/label-name/Azure%20Information%20Protection) y en nuestro [sitio de Yammer](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all) para saber cuándo estarán disponibles las funcionalidades y características de clasificación adicionales. Existen algunas limitaciones con la versión actual, que incluyen las siguientes:
 
 - No hay posibilidad de etiquetado en las aplicaciones web de Office (Office Online).
 

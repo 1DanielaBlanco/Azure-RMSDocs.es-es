@@ -4,15 +4,15 @@ description: Un tutorial introductorio que le guiará en el proceso de configura
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/05/2018
+ms.date: 11/14/2018
 ms.topic: tutorial
 ms.service: information-protection
-ms.openlocfilehash: ead65d9fef1b6c4f0087757e044caccee14805df
-ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
+ms.openlocfilehash: b9f60d0e8cc61a1d38b2992c0d430507bf494d18
+ms.sourcegitcommit: ad37950f6a747c86f6496c6de859e18446f9b03f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51027077"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51644663"
 ---
 # <a name="tutorial-configure-azure-information-protection-policy-settings-that-work-together"></a>Tutorial: Configuración de los parámetros de la directiva de Azure Information Protection que funcionan en conjunto
 
@@ -69,9 +69,11 @@ En lugar de dejar que sean los usuarios quienes etiqueten manualmente sus docume
 
 Mediante Azure Portal, editaremos la directiva global para cambiar la configuración de directiva para todos los usuarios.
 
-1. Abra una nueva ventana del explorador e inicie sesión en [Azure Portal](https://portal.azure.com). Después, vaya a **Azure Information Protection**. 
+1. En una nueva ventana del explorador, inicie sesión en [Azure Portal](https://portal.azure.com) como administrador global. Después, vaya a **Azure Information Protection**. 
     
     Por ejemplo, en el menú del concentrador, haga clic en **Todos los servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
+    
+    Si no es el administrador global, utilice el siguiente vínculo para roles alternativos: [Inicio de sesión en Azure Portal](configure-policy.md#signing-in-to-the-azure-portal).
 
 2. Seleccione **Clasificaciones** > **Directivas** > **Global** para abrir la hoja **Policy: Global** (Directiva:global). 
 

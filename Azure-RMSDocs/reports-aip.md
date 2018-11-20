@@ -4,19 +4,19 @@ description: Cómo usar los informes centrales para realizar el seguimiento de l
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/07/2018
+ms.date: 11/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.assetid: b2da2cdc-74fd-4bfb-b3c2-2a3a59a6bf2e
 ms.reviewer: lilukov
 ms.suite: ems
-ms.openlocfilehash: 4cb496e6cca01d7a4ad6636acc315bd40dc4c58c
-ms.sourcegitcommit: 8e43a41998045fe574710e9da0b7747eaeccdba1
+ms.openlocfilehash: 85ca097a1808c2940ce534c7ce3d0542aaf3f27a
+ms.sourcegitcommit: 0f9e2ba05b61f8db08387576a697b8deff45fd36
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2018
-ms.locfileid: "51273589"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51611427"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Informes centrales para Azure Information Protection
 
@@ -28,7 +28,7 @@ ms.locfileid: "51273589"
 
 Use el análisis de Azure Information Protection para la generación de informes centrales a fin de realizar el seguimiento de la adopción de las etiquetas de Azure Information Protection, así como para supervisar el acceso del usuario a los documentos y correos electrónicos etiquetados y los cambios en su clasificación. También puede identificar los documentos que contienen información confidencial que debe protegerse.
 
-Los datos que ve se agregan desde los clientes de Azure Information Protection, los escáneres de Azure Information Protection y los [clientes que admiten el etiquetado unificado](configure-policy-migrate-labels.md#clients-that-support-unified-labeling).
+Actualmente, los datos que ve se agregan desde los clientes de Azure Information Protection y los análisis de Azure Information Protection.
 
 Por ejemplo, podrá ver lo siguiente:
 

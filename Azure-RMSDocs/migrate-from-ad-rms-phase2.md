@@ -4,18 +4,18 @@ description: Fase 2 de la migración desde AD RMS a Azure Information Protection
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/11/2018
+ms.date: 11/14/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 04ca9cdfe3f528d71ee45a88a81b59268a6357aa
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: ebc5a9867bad267b71f2f4ae6ebe0e22c9e7a607
+ms.sourcegitcommit: 4c4af9766342272eaa18df720ba3738d44ba99c8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150473"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51707766"
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>Fase 2 de la migración: configuración del lado servidor para AD RMS
 
@@ -125,9 +125,9 @@ Los cambios en la plantilla que debe realizar para este paso:
 
 - Si ha creado plantillas personalizadas de Azure Information Protection antes de la migración, tendrá que exportarlas e importarlas de forma manual.
 
-- Si sus plantillas de AD RMS usaban el grupo **CUALQUIERA**, es posible que deba agregar usuarios o grupos de fuera de su organización. 
+- Si sus plantillas de AD RMS usaban el grupo **CUALQUIERA**, es posible que deba agregar manualmente usuarios o grupos. 
     
-    En AD RMS, el grupo CUALQUIERA concedía derechos a toso los usuarios autenticados. Este grupo se convierte automáticamente en todos los usuarios de su inquilino de Azure AD. Si no tiene que conceder derechos a más usuarios, no es necesario realizar ninguna otra acción. Sin embargo, si usaba el grupo CUALQUIERA para incluir a usuarios externos, deberá agregarlos manualmente, así como los derechos que quiera concederles.
+    En AD RMS, el grupo CUALQUIERA concedía derechos a todos los usuarios autenticados por su instancia de Active Directory local, y este grupo no es compatible con Azure Information Protection. El equivalente más próximo es un grupo que se crea automáticamente para todos los usuarios de su inquilino de Azure AD. Si estaba usando el grupo CUALQUIERA para sus plantillas de AD RMS, tendrá que agregar los usuarios y los derechos que desea concederles.
 
 ### <a name="procedure-if-you-created-custom-templates-before-the-migration"></a>Procedimiento si ha creado plantillas personalizadas antes de la migración
 
@@ -143,7 +143,7 @@ Después puede publicar o archivar estas plantillas como lo haría con cualquier
 
 ### <a name="procedure-if-your-templates-in-ad-rms-used-the-anyone-group"></a>Procedimiento si las plantillas de AD RMS usan el grupo **CUALQUIERA**
 
-Si sus plantillas de AD RMS usaban el grupo **CUALQUIERA**, este grupo se convertirá automáticamente para que use el grupo **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@\<tenant_name>.onmicrosoft.com**. Por ejemplo, este grupo puede tener un aspecto similar al siguiente para Contoso: **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**. Este grupo incluye a todos los usuarios del inquilino de Azure AD.
+Si sus plantillas de AD RMS usaban el grupo **CUALQUIERA**, el grupo equivalente más próximo en Azure Information Protection se denomina **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@\<nombre_inquilino>.onmicrosoft.com**. Por ejemplo, este grupo puede tener un aspecto similar al siguiente para Contoso: **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**. Este grupo incluye a todos los usuarios del inquilino de Azure AD.
 
 Al administrar plantillas y etiquetas en Azure Portal, este grupo se muestra como el nombre de dominio de su inquilino en Azure AD. Por ejemplo, este grupo puede tener un aspecto similar al siguiente para Contoso: **contoso.onmicrosoft.com**. Para agregar este grupo, la opción muestra **Agregar \<nombre de la organización> Todos los miembros**.
 

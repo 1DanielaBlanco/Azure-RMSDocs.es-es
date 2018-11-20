@@ -4,16 +4,16 @@ description: Cuando se asigna una etiqueta a un documento o a un mensaje de corr
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/16/2018
+ms.date: 11/14/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: dbc63a0ddca9e7583693219103268048b524121c
-ms.sourcegitcommit: 6a732226a3c97fc06fcf815fbbb24a2e2faae209
+ms.openlocfilehash: 0e40e0044c38e58690b3e4130a4980042296edf4
+ms.sourcegitcommit: ad37950f6a747c86f6496c6de859e18446f9b03f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358982"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51644733"
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Configuración de una etiqueta para marcas visuales de Azure Information Protection
 
@@ -23,7 +23,7 @@ Cuando se asigna una etiqueta a un documento o a un mensaje de correo electróni
 
 Más información sobre los distintivos visuales:
 
-- Los encabezados y pies de página se aplican a Word, Excel, PowerPoint y Outlook.
+- Los encabezados y pies de página admiten líneas sencillas de texto que se aplican a Word, Excel, PowerPoint y Outlook.
 
 - Las marcas de agua se aplican a Word, Excel y PowerPoint:
 
