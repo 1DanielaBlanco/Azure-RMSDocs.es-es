@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 4b134785-0353-4109-8fa7-096d1caa2242
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: f1623c14377feb545f945a447363e7f3d12e8dd3
-ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
+ms.openlocfilehash: a55a073a0b567e9e92b11fdcb1a5c8032c4e94c7
+ms.sourcegitcommit: 03a9fc3f1b96a4edc0e2a9d538ce04a0579023be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51026577"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52268060"
 ---
 # <a name="how-to-configure-the-azure-information-protection-policy-for-specific-users-by-using-scoped-policies"></a>Configuración de la directiva de Azure Information Protection para usuarios específicos mediante directivas de ámbito
 
@@ -28,6 +28,8 @@ En las aplicaciones que admiten el cliente de Azure Information Protection, todo
 Tenga en cuenta que, además de las aplicaciones de escritorio de Office que son compatibles con el cliente de Azure Information Protection, las etiquetas también son compatibles con PowerShell y el analizador de Azure Information Protection. Esto significa que puede crear y configurar directivas con ámbito para las cuentas que ejecutan comandos de PowerShell o el analizador. 
 
 Las directivas de ámbito, al igual que las etiquetas, se ordenan en el portal de Azure. Si un usuario está configurado para varios ámbitos, se calcula una directiva efectiva para ese usuario antes de descargarla. Según el orden de las directivas, se aplica la última configuración de directiva. Las etiquetas que ve el usuario son de la directiva global y las etiquetas adicionales de directivas de ámbito a las que pertenece el usuario.
+
+La excepción es cuando un usuario del inquilino abre un documento o un correo electrónico etiquetados y ese usuario no está en el ámbito de la etiqueta. En este escenario, el usuario ve el nombre de la etiqueta establecida, pero esta no se muestra como disponible para seleccionarla.  
 
 Dado que una directiva de ámbito siempre hereda la configuración y las etiquetas de la directiva global, al crear o editar una directiva de ámbito se muestran las etiquetas de la directiva global. Sin embargo, no puede editar las etiquetas de la directiva global cuando edita una directiva de ámbito. No obstante, puede agregar subetiquetas a esas etiquetas heredadas.
 
@@ -58,4 +60,3 @@ El cliente de Azure Information Protection comprueba si hay cambios cada vez que
 ## <a name="next-steps"></a>Pasos siguientes
 
 Para ver un ejemplo de cómo personalizar la directiva predeterminada y ver el comportamiento resultante en una aplicación de Office, pruebe el tutorial [Edit the policy and create a new label](infoprotect-quick-start-tutorial.md) (Edición de la directiva y creación de una etiqueta nueva).
-

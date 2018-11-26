@@ -8,30 +8,30 @@ ms.date: 11/14/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: 0e40e0044c38e58690b3e4130a4980042296edf4
-ms.sourcegitcommit: ad37950f6a747c86f6496c6de859e18446f9b03f
+ms.openlocfilehash: 1a2702d1cff5cdf62b8969829f0389c15b5c7fae
+ms.sourcegitcommit: 520c8758c46ab46427fe205234bb221688ec9ec4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51644733"
+ms.lasthandoff: 11/22/2018
+ms.locfileid: "52292616"
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Configuración de una etiqueta para marcas visuales de Azure Information Protection
 
 >*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
-Cuando se asigna una etiqueta a un documento o a un mensaje de correo electrónico, puede seleccionar varias opciones para hacer visible la clasificación elegida. Estos marcadores visuales son un encabezado, un pie de página y una marca de agua.
+Cuando se asigna una etiqueta a un documento o a un mensaje de correo electrónico, puede seleccionar varias opciones para hacer visible la clasificación elegida. Estos marcadores visuales son un encabezado, un pie de página y una marca de agua. 
 
 Más información sobre los distintivos visuales:
 
-- Los encabezados y pies de página admiten líneas sencillas de texto que se aplican a Word, Excel, PowerPoint y Outlook.
+- Se admiten varias líneas de texto para todos los distintivos visuales.
+
+- Los encabezados y pies de página se aplican a Word, Excel, PowerPoint y Outlook.
 
 - Las marcas de agua se aplican a Word, Excel y PowerPoint:
 
     - Excel: las marcas de agua son solo visibles en los modos Diseño de página y Vista previa de impresión y cuando se imprimen.
     
     - PowerPoint: las marcas de agua se aplican a la diapositiva patrón, como una imagen de fondo. En la pestaña **Vista**, **Patrón de diapositivas**, asegúrese de que la casilla **Ocultar gráficos de fondo** no esté seleccionada.
-    
-    - Se admiten varias líneas de texto.
 
 - Longitudes máximas de cadena:
     

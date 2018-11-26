@@ -4,18 +4,18 @@ description: La información que aparece en este artículo se ha retirado porque
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
-ms.topic: article
+ms.date: 11/19/2018
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 8c9d61e5-75da-4785-9942-1c6313879fd5
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c8621c690db38733e57429594d08703c57caadac
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: ac508190d48bc24b4c8ccc366d4136337269d48f
+ms.sourcegitcommit: 03a9fc3f1b96a4edc0e2a9d538ce04a0579023be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42806403"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52268128"
 ---
 # <a name="more-information-about-thales-hsms-and-microsoft-additions-retired-content"></a>Más información sobre los HSM de Thales y adiciones de Microsoft: CONTENIDO RETIRADO
 
@@ -23,3 +23,4 @@ ms.locfileid: "42806403"
 
 La información que aparece en este artículo se ha retirado porque ya no es pertinente, ya que ahora Azure Rights Management usa el Almacén de claves de Azure para las claves de inquilino administradas por el cliente (que también se conoce como BYOK, o "aporte su propia clave"). 
 
+Para más información, consulte [Implementación de BYOK para la clave de inquilino de Azure Information Protection](plan-implement-tenant-key.md#implementing-byok-for-your-azure-information-protection-tenant-key).

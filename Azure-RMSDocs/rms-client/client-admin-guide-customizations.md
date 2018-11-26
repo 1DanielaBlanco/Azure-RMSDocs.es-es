@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 62d53acd482b9efdd0425d5a944d2241f8a33b30
-ms.sourcegitcommit: fa0be701b85b1fba5e75428714bb4525dd739a93
+ms.openlocfilehash: 4d3a44426de151ad9d1f1262cae967fdddf0da6f
+ms.sourcegitcommit: 520c8758c46ab46427fe205234bb221688ec9ec4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51224000"
+ms.lasthandoff: 11/22/2018
+ms.locfileid: "52292599"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Guía del administrador: Configuraciones personalizadas del cliente de Azure Information Protection
 
@@ -86,9 +86,11 @@ Para iniciar sesión como un usuario diferente:
 
 Además:
 
-- Esta solución se admite para iniciar sesión como otro usuario desde el mismo inquilino. No se admite para iniciar sesión como otro usuario desde un inquilino diferente. Para probar Azure Information Protection con varios inquilinos, use equipos diferentes.
+- Si tras completar estos pasos, la sesión del cliente de Azure Information Protection todavía se inicia con la cuenta antigua, elimine todas las cookies de Internet Explorer y, luego, repita los pasos 1 y 2.
 
-- Si utiliza el inicio de sesión único, debe cerrar la sesión de Windows e iniciar sesión con su cuenta de usuario diferente después de editar el registro. El cliente Azure Information Protection se autentica entonces automáticamente mediante la cuenta de usuario que tiene iniciada sesión actualmente.
+- Si usa el inicio de sesión único, debe cerrar la sesión en Windows e iniciarla con la otra cuenta de usuario después de eliminar el archivo de token. El cliente Azure Information Protection se autentica entonces automáticamente mediante la cuenta de usuario que tiene iniciada sesión actualmente.
+
+- Esta solución se admite para iniciar sesión como otro usuario desde el mismo inquilino. No se admite para iniciar sesión como otro usuario desde un inquilino diferente. Para probar Azure Information Protection con varios inquilinos, use equipos diferentes.
 
 - Puede usar la opción **Restablecer configuración** de **Ayuda y comentarios** para cerrar sesión y eliminar la directiva de Azure Information Protection descargada.
 
