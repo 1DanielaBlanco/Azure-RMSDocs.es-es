@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 57914b0268102e8f7f5049ee1c63b58bf54c9a14
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 93e538b882da557715b04e8675b5a3b86de018b0
+ms.sourcegitcommit: bcc9e0f9ae8512bf48d819533cf8ef3b667eb298
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149153"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52330283"
 ---
 # <a name="byok-pricing-and-restrictions"></a>Precio y restricciones de BYOK
 
@@ -34,7 +34,7 @@ Sin embargo, si desea compartir una suscripción de Azure con otros servicios qu
 
 ## <a name="benefits-of-using-azure-key-vault"></a>Ventajas de usar Azure Key Vault
 
-Además de emplear el registro de uso de Azure Information Protection, para una mayor seguridad, puede hacer referencias cruzadas con el [registro de Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-logging/) para supervisar de manera independiente que solo el servicio Azure Rights Management use esta clave. Si es necesario, puede revocar de inmediato el acceso a la clave eliminando los permisos en el almacén de claves.
+Además de emplear el registro de uso de Azure Information Protection, para una mayor seguridad, puede hacer referencias cruzadas con el [registro de Azure Key Vault](/azure/key-vault/key-vault-logging) para supervisar de manera independiente que solo el servicio Azure Rights Management use esta clave. Si es necesario, puede revocar de inmediato el acceso a la clave eliminando los permisos en el almacén de claves.
 
 Otras ventajas de usar Azure Key Vault para la clave de inquilino de Azure Information Protection:
 

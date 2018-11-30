@@ -5,17 +5,17 @@ author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 08/13/2018
-ms.topic: article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: c5bbf37e-f1bf-4010-a60f-37177c9e9b39
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 778d83926e67a3f15fb182de3d2658d9881c29a5
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 7ddaf0a54aa116a317cee8699caf437faae9676f
+ms.sourcegitcommit: bcc9e0f9ae8512bf48d819533cf8ef3b667eb298
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42807089"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52330339"
 ---
 # <a name="step-2-hsm-protected-key-to-hsm-protected-key-migration"></a>Paso 2: Migración entre claves protegidas por HSM
 
@@ -37,14 +37,14 @@ Antes de empezar, asegúrese de que la organización tenga un almacén de claves
 
 
 > [!TIP]
-> Si va a realizar los pasos de configuración para Azure Key Vault y no está familiarizado con este servicio de Azure, es posible que le resulte útil ver primero [Introducción a Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-get-started/). 
+> Si va a realizar los pasos de configuración para Azure Key Vault y no está familiarizado con este servicio de Azure, es posible que le resulte útil ver primero [Introducción a Azure Key Vault](/azure/key-vault/key-vault-get-started). 
 
 
 ## <a name="part-1-transfer-your-hsm-key-to-azure-key-vault"></a>Parte 1: transferencia de la clave de HSM al Almacén de claves de Azure
 
 El administrador del Almacén de claves de Azure realiza estos procedimientos.
 
-1. Para cada clave de SLC exportada que desee almacenar en Azure Key Vault, siga las instrucciones de la documentación de Azure Key Vault, utilizando para ello la sección [Implementación del método Aportar tu propia clave (BYOK) en el Almacén de claves de Azure](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#implementing-bring-your-own-key-byok-for-azurekey-vault) con la siguiente excepción:
+1. Para cada clave de SLC exportada que desee almacenar en Azure Key Vault, siga las instrucciones de la documentación de Azure Key Vault, utilizando para ello la sección [Implementación del método Aportar tu propia clave (BYOK) en el Almacén de claves de Azure](/azure/key-vault/key-vault-hsm-protected-keys#implementing-bring-your-own-key-byok-for-azure-key-vault) con la siguiente excepción:
 
     - Como ya tiene el equivalente de la implementación de AD RMS, no siga los pasos que se indican en **Generar su clave de inquilino**. En su lugar, identifique la clave usada por el servidor de AD RMS de la instalación de Thales y use esa clave durante la migración. Los archivos de claves cifradas de Thales suelen denominarse **key<*nombreDeAplicaciónDeClave*><*identificadorDeClave*>** de forma local en el servidor.
 
