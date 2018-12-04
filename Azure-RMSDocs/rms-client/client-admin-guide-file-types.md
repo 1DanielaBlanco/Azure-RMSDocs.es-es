@@ -4,18 +4,18 @@ description: Detalles técnicos sobre tipos de archivos, extensiones de nombres 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/10/2018
+ms.date: 11/27/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 23baab9ba6ab9a7b1d43dd1f5f12947f383d9d28
-ms.sourcegitcommit: d049c23ddd0bb7f4c4d40153c753f178b3a04d43
+ms.openlocfilehash: 9bc0bbcf6eb74d889e7cd31e6d7ff3f0b6320050
+ms.sourcegitcommit: bdce88088f7a575938db3848dce33e7ae24fdc26
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49072483"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52386753"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>Guía del administrador: Tipos de archivos compatibles con el cliente de Azure Information Protection
 
@@ -192,7 +192,6 @@ Para ayudar a impedir que los usuarios modifiquen los archivos que son fundament
 
 - **Tipos de archivos excluidos**: .lnk, .exe, .com, .cmd, .bat, .dll, .ini, .pst, .sca, .drm, .sys, .cpl, .inf, .drv, .dat, .tmp, .msg,.msp, .msi, .pdb, .jar
     
-    También ahora se excluyen los siguientes tipos de archivo: .zip, .msg y .rar. 
 
 - **Carpetas excluidas**: 
     - Windows
@@ -202,7 +201,9 @@ Para ayudar a impedir que los usuarios modifiquen los archivos que son fundament
 
 ### <a name="file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-scanner"></a>Tipos de archivos excluidos de la clasificación y la protección mediante el analizar de Azure Information Protection
 
-De forma predeterminada, el analizador también excluye los mismos tipos de archivos que el cliente de Azure Information Protection, excepto que los archivos .rtf también se excluyen. 
+De forma predeterminada, el analizador también excluye los mismos tipos de archivos que el cliente de Azure Information Protection, con las siguientes excepciones:
+
+    - .rtf, .rar, y .zip también se excluyen
 
 Puede cambiar los tipos de archivo incluidos o excluidos de la inspección de archivos mediante el analizador con los cmdlets de PowerShell siguientes:
 

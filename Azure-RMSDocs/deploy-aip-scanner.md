@@ -4,18 +4,18 @@ description: Instrucciones para instalar, configurar y ejecutar el analizador de
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/22/2018
+ms.date: 11/27/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 9c5c07d09096d5d0f75c53fd03f85f5e29af1640
-ms.sourcegitcommit: 74d13c7162a0a94cda4762556a975a1d12433a13
+ms.openlocfilehash: 3e331c859c3808ceba2305224a6dd524b1a5ea6c
+ms.sourcegitcommit: bdce88088f7a575938db3848dce33e7ae24fdc26
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281316"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52386804"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Implementación del analizador de Azure Information Protection para clasificar y proteger automáticamente los archivos
 
@@ -192,7 +192,7 @@ Con la configuración predeterminada del analizador, ahora está listo para ejec
     
         Start-AIPScan
     
-    Como alternativa, puede iniciar el escáner en la hoja **Azure Information Protection** de Azure Portal, cuando se usa la opción **Escáner** > **Nodos (versión preliminar)** > \**<* nodo de escáner*>**> **Escanear ahora**.
+    Como alternativa, puede iniciar el escáner en la hoja **Azure Information Protection** de Azure Portal, cuando se usa la opción **Escáner** > **Nodos (versión preliminar)** > \**<* nodo de escáner*>** > **Escanear ahora**.
 
 2. Espere a que el escáner complete su ciclo y ejecute el comando siguiente:
     
@@ -207,7 +207,7 @@ Con la configuración predeterminada del analizador, ahora está listo para ejec
 3. Revise los informes almacenados en %*localappdata*%\Microsoft\MSIP\Scanner\Reports que tengan un formato de archivo .csv. Con la configuración predeterminada del analizador, solo los archivos que cumplen las condiciones para la clasificación automática se incluyen en estos informes.
     
     > [!TIP]
-    > Actualmente en versión preliminar, los escáneres envían esta información a Azure Information Protection cada cinco minutos cuando cuenta con la versión preliminar del escáner, para que pueda ver los resultados casi en tiempo real desde Azure Portal. Para más información, consulte [Reporting for Azure Information Protection](reports-aip.md) (Informes para Azure Information Protection). 
+    > Los escáneres envían esta información a Azure Information Protection cada cinco minutos para que pueda ver los resultados casi en tiempo real desde Azure Portal. Para más información, consulte [Reporting for Azure Information Protection](reports-aip.md) (Informes para Azure Information Protection). 
         
     Si los resultados no son los esperados, tendrá que ajustar las condiciones que ha especificado en la directiva de Azure Information Protection. Si es así, repita los pasos del 1 al 3 hasta que esté listo para cambiar la configuración para aplicar la clasificación y, opcionalmente, la protección. 
 
@@ -252,13 +252,17 @@ Luego, el analizador usa Windows iFilter para analizar los siguientes tipos de a
 |PDF |.pdf|
 |Texto|.txt; .xml; .csv|
 
-De forma predeterminada, el analizador solo protege los tipos de archivo de Office, por lo que los archivos PDF y de texto no están protegidos a menos que [edite el registro](#editing-the-registry-for-the-scanner) para especificar los tipos de archivo:
+Además, el analizador también puede usar el reconocimiento óptico de caracteres (OCR) para inspeccionar las imágenes TIFF con una extensión de nombre de archivo .tiff al configurar las opciones de [Windows TIFF IFilter](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/dd744701%28v%3dws.10%29) en el equipo que ejecuta el analizador.
+
+De forma predeterminada, el analizador solo protege los tipos de archivo de Office, por lo que los documentos PDF y los archivos de texto no están protegidos a menos que [edite el Registro](#editing-the-registry-for-the-scanner) para especificar los tipos de archivo:
 
 - Si no agrega el tipo de archivo .pdf al registro: los archivos con esta extensión de nombre de archivo se etiquetarán, pero si la etiqueta está configurada para la protección, esta no se aplica.
 
 - Si no agrega los tipos de archivo .txt, .xml o .csv al registro: los archivos con estas extensiones de nombre de archivo no se etiquetarán, porque estos tipos de archivo no admiten solo la clasificación.
 
-Por último, para los tipos de archivo restantes, el analizador aplica la etiqueta predeterminada en la directiva de Azure Information Protection, o la etiqueta predeterminada que configure para el analizador.
+- Si no agrega el tipo de archivo .tiff al Registro después de configurar Windows TIFF IFilter: los archivos con esta extensión de nombre de archivo se etiquetarán, pero si la etiqueta está configurada para la protección, esta no se aplica.
+
+Por último, para los tipos de archivo restantes, el analizador no los inspecciona pero aplica la etiqueta predeterminada en la directiva de Azure Information Protection, o la etiqueta predeterminada que configure para el analizador.
 
 |Tipo de aplicación|Tipo de archivo|
 |--------------------------------|-------------------------------------|

@@ -4,16 +4,16 @@ description: Cuando se asigna una etiqueta a un documento o a un mensaje de corr
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/14/2018
+ms.date: 11/28/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: 1a2702d1cff5cdf62b8969829f0389c15b5c7fae
-ms.sourcegitcommit: 520c8758c46ab46427fe205234bb221688ec9ec4
+ms.openlocfilehash: 23185d2d6b5b1bb14633647c345d0e58eeda3bdc
+ms.sourcegitcommit: e72c89e35cae6a19dca060f688838d78dc8f0448
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2018
-ms.locfileid: "52292616"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52585999"
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Configuración de una etiqueta para marcas visuales de Azure Information Protection
 
@@ -23,8 +23,6 @@ Cuando se asigna una etiqueta a un documento o a un mensaje de correo electróni
 
 Más información sobre los distintivos visuales:
 
-- Se admiten varias líneas de texto para todos los distintivos visuales.
-
 - Los encabezados y pies de página se aplican a Word, Excel, PowerPoint y Outlook.
 
 - Las marcas de agua se aplican a Word, Excel y PowerPoint:
@@ -32,6 +30,8 @@ Más información sobre los distintivos visuales:
     - Excel: las marcas de agua son solo visibles en los modos Diseño de página y Vista previa de impresión y cuando se imprimen.
     
     - PowerPoint: las marcas de agua se aplican a la diapositiva patrón, como una imagen de fondo. En la pestaña **Vista**, **Patrón de diapositivas**, asegúrese de que la casilla **Ocultar gráficos de fondo** no esté seleccionada.
+
+- Para las marcas de agua y los encabezados y pies de página en Word, Excel y PowerPoint, se admiten varias líneas. Si especifica varias líneas para el encabezado o el pie de página de una etiqueta que se aplica en Outlook, se concatenan las líneas. En este escenario, considere el uso de la configuración para [establecer distintivos visuales diferentes para Word, Excel, PowerPoint y Outlook](##setting-different-visual-markings-for-word-excel-powerpoint-and-outlook).
 
 - Longitudes máximas de cadena:
     
@@ -41,7 +41,7 @@ Más información sobre los distintivos visuales:
 
 - Puede especificar solo una cadena de texto o usar [variables](#using-variables-in-the-text-string) para crear dinámicamente la cadena de texto cuando se aplica el encabezado, el pie de página o la marca de agua.
 
-- Word, PowerPoint y Outlook admiten distintivos visuales de colores distintos. Los distintivos visuales que estén configurados para los colores siempre se muestran en negro en Excel.
+- Word, PowerPoint, Outlook y ahora Excel admiten distintivos visuales de colores distintos.
 
 - Los distintivos visuales admiten un solo idioma.
 
@@ -82,7 +82,7 @@ Al hacer clic en **Guardar**, los cambios están disponibles para los usuarios y
 
 Puede usar las siguientes variables en la cadena de texto del encabezado, del pie de página o de la marca de agua:
 
-- `${Item.Label}` para la etiqueta seleccionada. Por ejemplo: interno
+- `${Item.Label}` para la etiqueta seleccionada. Por ejemplo: general
 
 - `${Item.Name}` para el nombre de archivo o el asunto de correo electrónico. Por ejemplo: VentasJulio.docx
 
@@ -95,6 +95,9 @@ Puede usar las siguientes variables en la cadena de texto del encabezado, del pi
 - `${Event.DateTime}` para la fecha y hora en que se haya configurado la etiqueta seleccionada. Por ejemplo: 16/08/2016 13:30
 
 Ejemplo: Si especifica la cadena `Document: ${item.name}  Classification: ${item.label}` en el pie de página de la etiqueta **General**, el texto de pie de página aplicado a un documento denominado proyecto.docx será **Documento: proyecto.docx Clasificación: general**.
+
+>[!TIP]
+> También usa un [código de campo para insertar el nombre de etiqueta](faqs-infoprotect.md#can-i-create-a-document-template-that-automatically-includes-the-classification) en un documento o plantilla.
 
 ## <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>Establecimiento de distintivos visuales diferentes para Word, Excel, PowerPoint y Outlook
 
