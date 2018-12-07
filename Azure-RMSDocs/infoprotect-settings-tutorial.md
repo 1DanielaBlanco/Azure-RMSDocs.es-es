@@ -7,12 +7,12 @@ manager: mbaldwin
 ms.date: 11/14/2018
 ms.topic: tutorial
 ms.service: information-protection
-ms.openlocfilehash: b9f60d0e8cc61a1d38b2992c0d430507bf494d18
-ms.sourcegitcommit: ad37950f6a747c86f6496c6de859e18446f9b03f
+ms.openlocfilehash: 75a13413cbbbb1a7ab653522fcec9606c002f7d8
+ms.sourcegitcommit: dce7b4f95c216afc9ec6524a686a02287e6bdcf7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51644663"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "53007505"
 ---
 # <a name="tutorial-configure-azure-information-protection-policy-settings-that-work-together"></a>Tutorial: Configuración de los parámetros de la directiva de Azure Information Protection que funcionan en conjunto
 
@@ -35,7 +35,7 @@ Puede finalizar este tutorial en aproximadamente 15 minutos.
 
 Para completar este tutorial, necesita lo siguiente:
 
-1. Una suscripción que incluya el plan 2 de Azure Information Protection.
+1. Una suscripción que incluya el plan 1 o el plan 2 de Azure Information Protection.
     
     Si no tiene una suscripción que incluya este plan, puede crear una cuenta [gratuita](https://portal.office.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7) para su organización.
 
@@ -69,7 +69,7 @@ En lugar de dejar que sean los usuarios quienes etiqueten manualmente sus docume
 
 Mediante Azure Portal, editaremos la directiva global para cambiar la configuración de directiva para todos los usuarios.
 
-1. En una nueva ventana del explorador, inicie sesión en [Azure Portal](https://portal.azure.com) como administrador global. Después, vaya a **Azure Information Protection**. 
+1. Abra una nueva ventana del explorador e inicie sesión en [Azure Portal](https://portal.azure.com) como administrador global. Después, vaya a **Azure Information Protection**. 
     
     Por ejemplo, en el menú del concentrador, haga clic en **Todos los servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
     
