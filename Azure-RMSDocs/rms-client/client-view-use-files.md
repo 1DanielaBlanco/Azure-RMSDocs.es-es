@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: ce1c7d4c-b5ff-4672-8b9a-a72129bac992
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 3b4dfc62950166ca7221002169005fa3693a5998
-ms.sourcegitcommit: e70bb1a02e96d701fd5ae2a25536fa485bbf2e87
+ms.openlocfilehash: 0bb7a5333124c7581144ec00ac0b758691ff349f
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48862099"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023810"
 ---
 # <a name="user-guide-view-and-use-files-that-have-been-protected-by-rights-management"></a>Guía del usuario: Visualización y uso de archivos protegidos con Rights Management
 
@@ -47,7 +47,7 @@ Si la organización no tiene una cuenta en la nube para que pueda usarla (para O
 
 - Si recibe un correo protegido, siga las instrucciones para iniciar sesión con su proveedor de identidades sociales (como Google para una cuenta de Gmail) o solicitar un código de acceso de un solo uso.
 
-- Puede solicitar una cuenta gratuita que aceptará las credenciales para que pueda abrir documentos que estén protegidos por Rights Management. Para solicitar esta cuenta, haga clic en el vínculo para solicitar [RMS para usuarios](http://go.microsoft.com/fwlink/?LinkId=309469) y use la dirección de correo de su empresa en lugar de una dirección de correo personal. 
+- Puede solicitar una cuenta gratuita que aceptará las credenciales para que pueda abrir documentos que estén protegidos por Rights Management. Para solicitar esta cuenta, haga clic en el vínculo para solicitar [RMS para usuarios](https://go.microsoft.com/fwlink/?LinkId=309469) y use la dirección de correo de su empresa en lugar de una dirección de correo personal. 
 
 ## <a name="to-view-and-use-a-protected-document"></a>Para ver y usar un documento protegido
 

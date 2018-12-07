@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 7b91ab30-6363-4929-bcbd-4dfbd05f644a
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 435432c1c759c040482096393c3a36cdee02691b
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: f6e84919653d68fb4f09671b233ccdc31bf1a82f
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148501"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024287"
 ---
 # <a name="dialog-box-options-for-the-rights-management-sharing-application"></a>Opciones del cuadro de diálogo para la aplicación de uso compartido Rights Management
 
@@ -24,7 +24,7 @@ ms.locfileid: "44148501"
 Use esta información para especificar las opciones en el cuadro de diálogo **Agregar protección** o en el cuadro de diálogo **Uso compartido seguro** de la aplicación de uso compartido de RMS. Verá este cuadro de diálogo cuando [proteja un archivo para compartirlo](sharing-app-protect-by-email.md) o cuando [proteja un archivo en contexto](sharing-app-protect-in-place.md) y elija permisos personalizados.
 
 > [!IMPORTANT]
-> Si las opciones que ve son diferentes de las mostradas aquí, probablemente no tiene instalada la versión más reciente de la aplicación. Puede descargar la versión más reciente en la página [Microsoft Rights Management](http://go.microsoft.com/fwlink/?LinkId=303970) .
+> Si las opciones que ve son diferentes de las mostradas aquí, probablemente no tiene instalada la versión más reciente de la aplicación. Puede descargar la versión más reciente en la página [Microsoft Rights Management](https://go.microsoft.com/fwlink/?LinkId=303970) .
 > 
 > ¿Cómo puede saber si tiene la versión más reciente? Busque **Aplicación para uso compartido de Microsoft Rights Management** en Programas y características y compruebe el número de versión. Para poder ver y usar las opciones de la tabla, la versión debe ser al menos **1.0.1770.0**. Puede comprobar el número de versión más reciente en la página de descarga.
 

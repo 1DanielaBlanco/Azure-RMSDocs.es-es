@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ebc5a9867bad267b71f2f4ae6ebe0e22c9e7a607
-ms.sourcegitcommit: 4c4af9766342272eaa18df720ba3738d44ba99c8
+ms.openlocfilehash: 861d262a04f80a6e1326f15b06942afd27f41990
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51707766"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024304"
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>Fase 2 de la migración: configuración del lado servidor para AD RMS
 
@@ -72,7 +72,7 @@ La implementación de AD RMS actual usa una de las siguientes configuraciones co
 - Contraseña protegida mediante un proveedor criptográfico externo.
 
 > [!NOTE]
-> Para obtener más información acerca del uso de módulos de seguridad de hardware con AD RMS, consulte [Uso de AD RMS con módulos de seguridad de hardware](http://technet.microsoft.com/library/jj651024.aspx).
+> Para obtener más información acerca del uso de módulos de seguridad de hardware con AD RMS, consulte [Uso de AD RMS con módulos de seguridad de hardware](https://technet.microsoft.com/library/jj651024.aspx).
 
 Estas son las dos opciones de topología de claves de inquilino de Azure Information Protection: Microsoft administra su clave de inquilino (**administrada por Microsoft**) o la administra el usuario (**administrada por el cliente**) en Azure Key Vault. Cuando administra su propia clave de inquilino de Azure Information Protection, a veces se denomina “Bring Your Own Key” (BYOK). Para más información, vea el artículo [Planeamiento e implementación de su clave de inquilino de Azure Information Protection](plan-implement-tenant-key.md).
 
@@ -145,7 +145,7 @@ Después puede publicar o archivar estas plantillas como lo haría con cualquier
 
 Si sus plantillas de AD RMS usaban el grupo **CUALQUIERA**, el grupo equivalente más próximo en Azure Information Protection se denomina **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@\<nombre_inquilino>.onmicrosoft.com**. Por ejemplo, este grupo puede tener un aspecto similar al siguiente para Contoso: **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**. Este grupo incluye a todos los usuarios del inquilino de Azure AD.
 
-Al administrar plantillas y etiquetas en Azure Portal, este grupo se muestra como el nombre de dominio de su inquilino en Azure AD. Por ejemplo, este grupo puede tener un aspecto similar al siguiente para Contoso: **contoso.onmicrosoft.com**. Para agregar este grupo, la opción muestra **Agregar \<nombre de la organización> Todos los miembros**.
+Al administrar plantillas y etiquetas en Azure Portal, este grupo se muestra como el nombre de dominio de su inquilino en Azure AD. Por ejemplo, este grupo puede tener un aspecto similar al siguiente para Contoso: **contoso.onmicrosoft.com**. Para agregar este grupo, la opción muestra **Agregar \<nombre de la organización> Todos los miembros.
 
 Si no está seguro de si las plantillas de AD RMS incluyen el grupo CUALQUIERA, puede usar el siguiente script de Windows PowerShell de ejemplo para identificar estas plantillas. Para más información sobre el uso de Windows PowerShell con AD RMS, vea [Using Windows PowerShell to Administer AD RMS](https://technet.microsoft.com/library/ee221079%28v=ws.10%29.aspx) (Uso de Windows PowerShell para administrar AD RMS).
 

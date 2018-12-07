@@ -4,18 +4,18 @@ description: Algunas de las preguntas más frecuentes sobre Azure Information Pr
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/09/2018
+ms.date: 12/06/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5e78630e39c63f69037dd7288f764c435ff5c81e
-ms.sourcegitcommit: ef70dab87478084fca853f389dab2408b95d1df1
+ms.openlocfilehash: fd3c4701abba55bc80117345444781a02cd8f6a2
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304066"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024406"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Preguntas más frecuentes de Azure Information Protection
 
@@ -110,7 +110,7 @@ Información adicional:
 
 - Se recomienda no agregar cuentas de administrador a las directivas de acceso condicional porque estas cuentas no podrán tener acceso a la hoja de Azure Information Protection en Azure Portal.
 
-- Si usa MFA en las directivas de acceso condicional para colaborar con otras organizaciones (B2B), tendrá que usar [colaboración B2B de Azure AD](/active-directory/b2b/what-is-b2b) y crear cuentas de invitado para los usuarios con los que quiera compartir en la otra organización.
+- Si usa MFA en las directivas de acceso condicional para colaborar con otras organizaciones (B2B), tendrá que usar [colaboración B2B de Azure AD](/azure/active-directory/b2b/what-is-b2b) y crear cuentas de invitado para los usuarios con los que quiera compartir en la otra organización.
 
 - Si usa muchas aplicaciones en la nube para el acceso condicional, puede que **Microsoft Azure Information Protection** no se muestre en la lista de selección. En ese caso, utilice el cuadro de búsqueda en la parte superior de la lista. Comience por escribir "Microsoft Azure Information Protection" para filtrar las aplicaciones disponibles. Siempre que tenga una suscripción admitida, verá **Microsoft Azure Information Protection** para su selección. 
 

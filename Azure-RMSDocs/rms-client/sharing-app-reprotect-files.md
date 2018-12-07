@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: 5ac121b3-d7a0-40e4-8fe7-90bf4cf796f1
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 283e3dc21997f455301fcd7a6edb3caf84f82572
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 9ca34cc149f86fa99174ea9792d05d7dfecc35dc
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150830"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023590"
 ---
 # <a name="change-permissions-on-files-that-have-been-protected-by-rights-management"></a>Change permissions on files that have been protected by Rights Management (Cambiar permisos de archivos protegidos por Rights Management)
 
@@ -65,7 +65,7 @@ Si quiere quitar todos los permisos para que el archivo ya no está protegido, v
 >
 > Si su organización no usa Azure Information Protection ni AD RMS, puede solicitar una cuenta gratuita que acepte sus credenciales para que pueda usar los archivos protegidos mediante RMS:
 >
-> -   Para solicitar esta cuenta, haga clic en el vínculo para solicitar [RMS para usuarios](http://go.microsoft.com/fwlink/?LinkId=309469).
+> -   Para solicitar esta cuenta, haga clic en el vínculo para solicitar [RMS para usuarios](https://go.microsoft.com/fwlink/?LinkId=309469).
 >
 >     Al suscribirse, use la dirección de correo electrónico de su empresa en lugar de una dirección de correo electrónico personal. Si va a suscribirse porque le enviaron un archivo adjunto protegido por correo electrónico, use la misma dirección de correo electrónico que se usó para enviarle el mensaje de correo electrónico.
 > -   Para obtener más información, consulte [RMS for individuals and Azure Rights Management](../rms-for-individuals.md) (RMS para usuarios y Azure Rights Management).

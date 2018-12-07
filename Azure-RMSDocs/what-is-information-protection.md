@@ -1,5 +1,5 @@
 ---
-title: ¿Qué es Azure Information Protection?
+title: ¿Qué es Azure Information Protection? - AIP
 description: Información general del servicio Azure Information Protection.
 author: cabailey
 ms.author: cabailey
@@ -8,12 +8,12 @@ ms.date: 11/05/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: 979f0acfc2177ba05e57f7c36d5bf3ca3840a65f
-ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
+ms.openlocfilehash: 9c7fd9070e6cc07a7b16043dd480addd2d0a4313
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51026698"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024352"
 ---
 # <a name="what-is-azure-information-protection"></a>¿Qué es Azure Information Protection?
 
