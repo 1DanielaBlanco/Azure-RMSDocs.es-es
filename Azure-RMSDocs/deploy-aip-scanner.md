@@ -4,18 +4,18 @@ description: Instrucciones para instalar, configurar y ejecutar el analizador de
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/27/2018
+ms.date: 11/30/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 3e331c859c3808ceba2305224a6dd524b1a5ea6c
-ms.sourcegitcommit: bdce88088f7a575938db3848dce33e7ae24fdc26
+ms.openlocfilehash: d29203359bcfdda09d7792f1f65a7c85723ee18f
+ms.sourcegitcommit: c1c34529f10dd7c1545ca37be9629b52be87e33e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52386804"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52731156"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Implementación del analizador de Azure Information Protection para clasificar y proteger automáticamente los archivos
 
@@ -252,7 +252,7 @@ Luego, el analizador usa Windows iFilter para analizar los siguientes tipos de a
 |PDF |.pdf|
 |Texto|.txt; .xml; .csv|
 
-Además, el analizador también puede usar el reconocimiento óptico de caracteres (OCR) para inspeccionar las imágenes TIFF con una extensión de nombre de archivo .tiff al configurar las opciones de [Windows TIFF IFilter](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/dd744701%28v%3dws.10%29) en el equipo que ejecuta el analizador.
+Además, el analizador también puede usar el reconocimiento óptico de caracteres (OCR) para inspeccionar las imágenes TIFF con una extensión de nombre de archivo .tiff cuando instala la característica Windows TIFF IFilter y luego configura las opciones de [Windows TIFF IFilter](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/dd744701%28v%3dws.10%29) en el equipo que ejecuta el analizador.
 
 De forma predeterminada, el analizador solo protege los tipos de archivo de Office, por lo que los documentos PDF y los archivos de texto no están protegidos a menos que [edite el Registro](#editing-the-registry-for-the-scanner) para especificar los tipos de archivo:
 

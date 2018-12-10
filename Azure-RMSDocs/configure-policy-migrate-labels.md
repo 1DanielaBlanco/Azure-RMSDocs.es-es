@@ -4,17 +4,17 @@ description: Migración de etiquetas de Azure Information Protection al Centro d
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/17/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.service: information-protection
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 2d0ed8103ce4e0b42d67ea87b6b464dfb8f04f36
-ms.sourcegitcommit: 283782ee7e3ec566f479c8914eae7bf84d904392
+ms.openlocfilehash: 771cbb26a842cbf19184ace94ae47ba9d549a33f
+ms.sourcegitcommit: b4118cd75db6478f86b9994e8d84d0ada15c7f95
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382619"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52953336"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-the-office-365-security--compliance-center"></a>Cómo migrar etiquetas de Azure Information Protection al Centro de seguridad y cumplimiento de Office 365
 
@@ -48,7 +48,7 @@ Antes de migrar las etiquetas, asegúrese de estar al tanto de los siguientes ca
     
     Para una experiencia de usuario más coherente, se recomienda publicar las mismas etiquetas en los mismos ámbitos en el Centro de seguridad y cumplimiento.
 
-- No todas las configuraciones de una etiqueta migrada se admiten en el Centro de seguridad y cumplimiento. Use la tabla de la sección [Configuración de etiquetas que no se admite en el Centro de seguridad y cumplimiento](#label-settings-that-are-not-supported-in-the-security--compliance-center) para ayudarle a identificar estos valores y considerar si se deben excluir las etiquetas migradas de la publicación en el Centro de seguridad y cumplimiento.
+- No todas las configuraciones de una etiqueta migrada se admiten en el Centro de seguridad y cumplimiento. Use la tabla de la sección [Configuración de etiquetas que no se admiten en el Centro de seguridad y cumplimiento](#label-settings-that-are-not-supported-in-the-security--compliance-center) para ayudarle a identificar los valores no admitidos por el Centro de seguridad y cumplimiento.
 
 - Plantillas de protección:
     
@@ -66,17 +66,15 @@ Antes de migrar las etiquetas, asegúrese de estar al tanto de los siguientes ca
 
 - Las cadenas localizadas de las etiquetas no se migran. Deberá definir nuevas cadenas localizadas para las etiquetas migradas en el Centro de seguridad y cumplimiento.
 
-- Después de la migración, al editar una etiqueta migrada en Azure Portal, el mismo cambio se refleja automáticamente en el Centro de seguridad y cumplimiento. Sin embargo, al editar una etiqueta migrada en el Centro de seguridad y cumplimiento, se debe actualizar la etiqueta en Azure Portal para que refleje el cambio. Por ejemplo, edite el cuadro **Add notes for administrator use** (Agregar notas para uso del administrador) en la hoja **Label** (Etiqueta). 
-
-- El etiquetado unificado está aún en proceso de implementación en los inquilinos. Si todavía no se admite en su inquilino, la migración no se realizará correctamente y se desharán los cambios. Hasta que se admita en todos los inquilinos, debe usar un vínculo especial para acceder a la opción para migrar el inquilino y las etiquetas. El vínculo se proporciona en las instrucciones siguientes.
+- Después de la migración, al editar una etiqueta migrada en Azure Portal, el mismo cambio se refleja automáticamente en el Centro de seguridad y cumplimiento. Sin embargo, al editar una etiqueta migrada en el Centro de seguridad y cumplimiento, debe volver a Azure Portal, a la hoja **Azure Information Protection - Etiquetado unificado**, y seleccionar **Publicar**. Esta acción adicional es necesaria para que los clientes de Azure Information Protection recojan los cambios de la etiqueta.
 
 ### <a name="label-settings-that-are-not-supported-in-the-security--compliance-center"></a>Configuración de etiquetas que no se admite en el Centro de seguridad y cumplimiento
 
-Use la tabla siguiente para identificar qué valores de configuración de una etiqueta migrada no se admiten en clientes que usan estas etiquetas, y si debe editar y publicar la etiqueta migrada en el Centro de seguridad y cumplimiento. Si publica etiquetas identificadas para excluirse de la publicación, no se muestran etiquetas para los clientes que admiten el etiquetado unificado.
+Use la tabla siguiente para identificar qué opciones de configuración de una etiqueta migrada no son compatibles con los clientes de etiquetado unificado, o lo son con limitaciones. Para evitar confusiones, se recomienda que no configure las opciones que no surten ningún efecto en los clientes de etiquetado unificado.
 
 Los clientes de Azure Information Protection pueden usar esta configuración de etiquetas sin problemas, ya que siguen descargando las etiquetas de Azure Portal.
 
-|Configuración de etiquetas|Compatible con el Centro de seguridad y cumplimiento|Excluir de la edición y publicación en el Centro de seguridad y cumplimiento|
+|Configuración de etiquetas|Compatible con los clientes de etiquetado unificado|Excluir de la edición en el Centro de seguridad y cumplimiento|
 |-------------------|---------------------------------------------|-------------------------|
 |Estado de habilitado o deshabilitado<br /><br />Notas: No se sincronizan con el Centro de seguridad y cumplimiento |No disponible|No disponible|
 |Color de etiqueta: selecciónelo de la lista o especifíquelo mediante código RGB<br /><br />Notas: El Centro de seguridad y cumplimiento no admite etiquetas de colores |No disponible|No disponible|
@@ -91,12 +89,7 @@ Los clientes de Azure Information Protection pueden usar esta configuración de 
 
 ## <a name="to-migrate-azure-information-protection-labels"></a>Migración de etiquetas de Azure Information Protection
 
-> [!IMPORTANT]
-> No migre las etiquetas hasta que haya confirmado que puede editar y publicar etiquetas de confidencialidad en el Centro de seguridad y cumplimiento de Office 365. Las etiquetas de confidencialidad están comenzando a implementarse en los inquilinos de Office 365, pero aún no están disponibles para todos los inquilinos.
-> 
-> Para comprobarlo: desde el Centro de seguridad y cumplimiento de Office 365, vaya a **Clasificaciones** > **Etiquetas** y vea si tiene la pestaña **Confidencialidad**. Si no ve esta pestaña, significa que el inquilino aún no está listo para etiquetas de confidencialidad y que en este momento no debe migrar las etiquetas de Azure Information Protection.
-
-Cuando haya confirmado que el inquilino admite etiquetas de confidencialidad en el Centro de seguridad y cumplimiento, use las siguientes instrucciones para migrar su inquilino y las etiquetas de Azure Information Protection.
+Siga estas instrucciones para migrar su inquilino y las etiquetas de Azure Information Protection a fin de utilizar el nuevo almacén de etiquetado unificado.
 
 Debe ser administrador global para migrar las etiquetas.
 
@@ -106,6 +99,8 @@ Debe ser administrador global para migrar las etiquetas.
 
 Los [clientes que admiten el etiquetado unificado](#clients-that-support-unified-labeling) ahora pueden usar las etiquetas migradas correctamente. En cambio, primero debe publicar estas etiquetas en el Centro de seguridad y cumplimiento.
 
+> [!IMPORTANT]
+> Si edita las etiquetas fuera de Azure Portal, para los clientes de Azure Information Protection, vuelva a esta hoja **Azure Information Protection - Etiquetado unificado** y seleccione **Publicar**.
 
 ### <a name="clients-that-support-unified-labeling"></a>Clientes que admiten etiquetado unificado
 

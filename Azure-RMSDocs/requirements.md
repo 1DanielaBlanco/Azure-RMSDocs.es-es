@@ -4,18 +4,18 @@ description: Identifique los requisitos previos para implementar Azure Informati
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/05/2018
+ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 92b7ca3feceb70bc9b8b085b58c26231d2ae70ce
-ms.sourcegitcommit: 8a4bab8dc6ee4c322a54d79091af04ec9449e5c2
+ms.openlocfilehash: 62a291667cf0ae60debbd62047d3a6b09962ac1d
+ms.sourcegitcommit: 4f22874c3c2fb9632d57932148664c40b3907a78
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51020061"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52831245"
 ---
 # <a name="requirements-for-azure-information-protection"></a>Requirements for Azure Information Protection (Requisitos de Azure Information Protection)
 
@@ -64,7 +64,7 @@ Los siguientes dispositivos admiten el cliente de Azure Information Protection, 
 
 - Windows 10 (x86 y x64)
     
-    - No hay compatibilidad para la escritura a mano en la versión de Windows 10 RS4 para Insiders. 
+    - No hay compatibilidad para la escritura a mano en la versión de Windows 10 RS4 y posteriores. 
 
 - Windows 8.1 (x86 y x64)
 

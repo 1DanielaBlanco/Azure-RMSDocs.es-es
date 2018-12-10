@@ -5,19 +5,19 @@ keywords: ''
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/13/2018
+ms.date: 12/04/2018
 ms.topic: article
 ms.prod: azure
 ms.service: information-protection
 ms.assetid: aab59e02-930b-4a17-8442-2d5d081fe1a6
 ms.reviewer: kartikka
 ms.suite: ems
-ms.openlocfilehash: ab3d141394a9a042a8a3e15e35d1daffab20ad98
-ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
+ms.openlocfilehash: d4421caa4ec6846456c12aa831644e957c5b4fd9
+ms.sourcegitcommit: 8e7b135bf48ced7e53d91f45d62b7bbd0f37634e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49170280"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52861207"
 ---
 # <a name="supported-pdf-readers-for-microsoft-information-protection"></a>Lectores PDF compatibles con Microsoft Information Protection
 
@@ -33,7 +33,7 @@ Esta integración nativa tiene las siguientes ventajas:
 
 - Compatibilidad con el estándar ISO para cifrado de archivos PDF.
     
-    Este formato de archivo PDF protegido debe ser [habilitado por un administrador](client-admin-guide-customizations.md#protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption). Cuando se realiza esta configuración, la extensión de nombre de archivo permanece como .pdf y no cambia a .ppdf.
+    A menos que esta funcionalidad se haya [deshabilitado por un administrador](client-admin-guide-customizations.md#dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption), este formato de archivo PDF protegido ahora está habilitado de forma predeterminada en la versión más reciente del cliente de Azure Information Protection.
 
 Para obtener más información, vea la siguiente entrada de blog: [Starting October, use Adobe Acrobat Reader for PDFs protected by Microsoft Information Protection](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Starting-October-use-Adobe-Acrobat-Reader-for-PDFs-protected-by/ba-p/262738) (A partir de octubre, use Adobe Acrobat Reader para los archivos PDF protegidos mediante Microsoft Information Protection)
 
@@ -56,6 +56,6 @@ Actualmente, SharePoint Online y SharePoint local usan un formato más antiguo p
 
 |Sistema operativo|Lectores compatibles|
 |----------------|-----------------------------------|
-|De Windows 10 y versiones anteriores<br />a Windows 7 Service Pack 1|Visor de Azure Information Protection<br /><br />Gaaiho Doc<br /><br />GigaTrust Desktop PDF Client for Adobe<br /><br />Foxit Reader<br /><br />Nitro PDF Reader<br /><br />Aplicación RMS sharing|
+|De Windows 10 y versiones anteriores<br />a Windows 7 Service Pack 1|Visor de Azure Information Protection<br /><br />Gaaiho Doc<br /><br />GigaTrust Desktop PDF Client for Adobe<br /><br />Foxit Reader<br /><br />Nitro PDF Reader<br /><br />Aplicación RMS sharing|
 |Android|Aplicación Azure Information Protection<br /><br />Foxit MobilePDF con RMS<br /><br />GigaTrust App para Android|
 |iOS|Aplicación Azure Information Protection<br /><br />Foxit MobilePDF con RMS<br /><br />Documentos TITUS|
