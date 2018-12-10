@@ -4,18 +4,18 @@ description: Compruebe que tiene las cuentas de usuario y grupo que necesita par
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/21/2018
+ms.date: 12/06/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0277b638f9d069d2cfb1084136068d7ef58b1e2b
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: abbb7e5af52952dc3ed69f2825a8e32d25ab9982
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151629"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024111"
 ---
 # <a name="preparing-users-and-groups-for-azure-information-protection"></a>Preparación de usuarios y grupos para Azure Information Protection
 
@@ -73,9 +73,9 @@ Para asignar derechos de uso y controles de acceso, y configurar el servicio Azu
     
     Azure Information Protection puede usar cualquier valor de este atributo proxyAddresses de Azure AD si se ha agregado el dominio en el inquilino (un "dominio comprobado"). Para más información sobre la comprobación de dominios:
     
-    - Para Azure AD: [Incorporación de su nombre de dominio personalizado a Azure Active Directory](/active-directory/active-directory-add-domain)
+    - Para Azure AD: [Incorporación de su nombre de dominio personalizado a Azure Active Directory](/azure/active-directory/fundamentals/add-custom-domain)
 
-    - Para Office 365: [Add a domain and users to Office 365](https://go.microsoft.com/fwlinkid/?linkid=847121) (Incorporación de un dominio y usuarios a Office 365)
+    - Para Office 365: [Adición de un dominio a Office 365](/office365/admin/setup/add-domain?view=o365-worldwide)
 
 - El atributo **userPrincipalName de Azure AD** solo se utiliza cuando una cuenta del inquilino no tiene valores en el atributo proxyAddresses de Azure AD. Por ejemplo, puede crear un usuario en Azure Portal, o crear un usuario para Office 365 que no tenga un buzón.
 

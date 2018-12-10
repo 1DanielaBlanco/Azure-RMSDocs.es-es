@@ -1,5 +1,5 @@
 ---
-title: Cambio de una etiqueta de Azure Information Protection
+title: 'Cambio de una etiqueta de Azure Information Protection: AIP'
 description: Puede cambiar o mejorar cualquiera de las etiquetas que ven los usuarios en la barra de Information Protection; para ello, configúrelas en la directiva de Azure Information Protection.
 author: cabailey
 ms.author: cabailey
@@ -8,12 +8,12 @@ ms.date: 04/30/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: e3b6d95f-334b-4d17-80a9-7d5487ab5d32
-ms.openlocfilehash: bb6d9e6ea17f91652c04741ae7915a4fe431d695
-ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
+ms.openlocfilehash: b2323e4dc372ee7f1649230d06c7ecb58cd6943b
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49170286"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023487"
 ---
 # <a name="how-to-change-or-customize-an-existing-label-for-azure-information-protection"></a>Cambio o personalización de una etiqueta existente para Azure Information Protection
 
@@ -29,7 +29,7 @@ Haga lo siguiente para cambiar una etiqueta:
     
     Por ejemplo, en el menú del concentrador, haga clic en **Todos los servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
-2. En la opción de menú **Clasificaciones** > **Etiquetas**: en la hoja **Azure Information Protection: etiquetas**, seleccione la etiqueta que desee cambiar.
+2. En la opción **Clasificaciones** > **Etiquetas** de la hoja **Azure Information Protection: etiquetas**, seleccione la etiqueta que quiera cambiar.
 
     La excepción es si quiere volver a ordenar una etiqueta: en lugar de seleccionar la etiqueta, haga clic con el botón derecho en la etiqueta o seleccione el menú contextual de la etiqueta. Luego, seleccione las opciones **Subir** o **Bajar**.
 

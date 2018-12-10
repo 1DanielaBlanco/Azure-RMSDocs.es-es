@@ -12,17 +12,17 @@ ms.assetid: 32C7F387-CF7E-4CE0-AFC9-4C63FE1E134A
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 2a239c802ae818a3b51eb0fb05f98f509f469e3c
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 5a3fabd4d76dc86b52d0d8891b7032d1e017cf28
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44146326"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023316"
 ---
 # <a name="how-to-install-configure-and-test-with-an-rms-server"></a>Instalación, configuración y prueba con un servidor RMS
 
 En este tema se explica cómo conectar con un servidor RMS o Azure RMS para probar la aplicación con derechos habilitados.
- 
+ 
 ## <a name="instructions"></a>Instrucciones
 
 ### <a name="step-1-setup-your-rms-server"></a>Paso 1: Configurar el servidor RMS
@@ -38,7 +38,7 @@ Los siguientes pasos le guiarán en la configuración del servidor de RMS e incl
 
     A partir de Windows Server 2008, el sistema operativo incluye los componentes de cliente y servidor. Puede descargar los componentes de servidor para los sistemas operativos anteriores desde la ubicación siguiente.
 
-    -   [RMS Server v1.0 SP2](http://go.microsoft.com/fwlink/p/?linkid=73722)
+    -   [RMS Server v1.0 SP2](https://go.microsoft.com/fwlink/p/?linkid=73722)
 
     Para configurar el componente de servidor en Windows Server 2008, debe instalar el rol de AD RMS. Si está desarrollando aplicaciones en un sistema operativo del servidor anterior, configure el registro después de instalar RMS Server v1.0 SP2, pero antes de aprovisionar el servicio de RMS.
 

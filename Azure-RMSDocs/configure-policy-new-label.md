@@ -1,5 +1,5 @@
 ---
-title: Nueva etiqueta de Azure Information Protection
+title: 'Nueva etiqueta de Azure Information Protection: AIP'
 description: Aunque Azure Information Protection incluye etiquetas predeterminadas que se pueden personalizar, también puede crear sus propias etiquetas que los usuarios verán en la barra de Information Protection.
 author: cabailey
 ms.author: cabailey
@@ -8,12 +8,12 @@ ms.date: 04/30/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 1b45faa5-0c9c-40d6-910a-f117e7b6e8a3
-ms.openlocfilehash: 71baa99f944a8fd6aa1f28bcc6dd935df3e20ac0
-ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
+ms.openlocfilehash: 963a86e37112fb2c4a2f9ca10162995a131c49ac
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49170303"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023437"
 ---
 # <a name="how-to-create-a-new-label-for-azure-information-protection"></a>Creación de una nueva etiqueta para Azure Information Protection
 

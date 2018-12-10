@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 61f349ce-bdd2-45c1-acc5-bc83937fb187
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c20ead2b01b2a37d63bbf3b2b0295f37c9421fdd
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: d0efb37ee0d424593b9cdb4c2690088e11afc29d
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151697"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024066"
 ---
 # <a name="track-and-revoke-your-documents-when-you-use-the-rms-sharing-application"></a>Seguimiento y revocación de documentos cuando se utiliza la aplicación RMS sharing
 
@@ -37,7 +37,7 @@ Acciones que puede realizar en el sitio de seguimiento de documentos:
     
     Nota: Si no ve este icono, a pesar de ser un administrador global, es porque aún no ha compartido ningún documento. En este caso, use la siguiente dirección URL para acceder al sitio de seguimiento de documentos: https://portal.azurerms.com/#/admin
 
-- Si tiene alguna pregunta o quiere proporcionar comentarios sobre el sitio de seguimiento de documentos: Haga clic en el icono de ayuda para obtener acceso a [P+F sobre el seguimiento de documentos](http://go.microsoft.com/fwlink/?LinkId=523977).
+- Si tiene alguna pregunta o quiere proporcionar comentarios sobre el sitio de seguimiento de documentos: Haga clic en el icono de ayuda para obtener acceso a [P+F sobre el seguimiento de documentos](https://go.microsoft.com/fwlink/?LinkId=523977).
 
 ## <a name="using-office-to-access-the-document-tracking-site"></a>Uso de Office para tener acceso al sitio de seguimiento de documentos
 
@@ -67,19 +67,19 @@ Además de realizar el seguimiento de los documentos en equipos Windows mediante
 
 #### <a name="using-a-web-browser-to-access-the-doc-tracking-site"></a>Uso de un explorador web para obtener acceso al sitio de seguimiento de documentos
 
-- Mediante un explorador compatible, vaya al [sitio de seguimiento de documentos](http://go.microsoft.com/fwlink/?LinkId=529562).
+- Mediante un explorador compatible, vaya al [sitio de seguimiento de documentos](https://go.microsoft.com/fwlink/?LinkId=529562).
 
-    Exploradores admitidos: Se recomienda usar por lo menos la versión 10 de Internet Explorer, pero puede usar cualquiera de los siguientes exploradores para el sitio de seguimiento de documentos:
+    Exploradores admitidos: se recomienda usar por lo menos la versión 10 de Internet Explorer, pero puede usar cualquiera de los siguientes exploradores para el sitio de Seguimiento de documentos:
 
-    -   Internet Explorer: La versión 10 como mínimo
+    -   Internet Explorer: la versión 10 como mínimo
 
     -   Internet Explorer 9 con al menos MS12-037: Actualización de seguridad acumulativa para Internet Explorer:: June 12, 2012
 
-    -   Mozilla Firefox: La versión 12 como mínimo
+    -   Mozilla Firefox: la versión 12 como mínimo
 
-    -   Apple Safari 5: La versión 5 como mínimo
+    -   Apple Safari 5: la versión 5 como mínimo
 
-    -   Google Chrome: La versión 18 como mínimo
+    -   Google Chrome: la versión 18 como mínimo
 
 #### <a name="using-file-explorer-to-access-the-doc-tracking-site"></a>Uso del Explorador de archivos para obtener acceso al sitio de seguimiento de documentos
 

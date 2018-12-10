@@ -12,12 +12,12 @@ ms.assetid: 9f4cbd16-58e5-421f-a472-8d279e952760
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 6234cb19d58bcdad7ea34bad791abbbfa57706ed
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 0503baead6ef46c7b09f4e1d8b055279c795c007
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148008"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023369"
 ---
 # <a name="get-started"></a>Introducción
 
@@ -27,12 +27,12 @@ Para esta versión de Microsoft Rights Management SDK 4.2, el enfoque del inicio
 
   |SDK 4.2 de RMS|
   |---------------|
-  |[SDK de Android](http://Go.Microsoft.Com/FWLink/p/?LinkId=404271)|
-  |[SDK de iOS](http://Go.Microsoft.Com/FWLink/p/?LinkId=404272)|
+  |[SDK de Android](https://go.microsoft.com/fwlink/p/?LinkId=404271)|
+  |[SDK de iOS](https://go.microsoft.com/fwlink/p/?LinkId=404272)|
   |[Linux / SDK C++](https://github.com/AzureAD/rms-sdk-for-cpp), disponible en Github como un proyecto de código abierto|
-  |[SDK de OS X](http://Go.Microsoft.Com/FWLink/p/?LinkId=404273)|
-  |[Windows Phone](http://go.microsoft.com/fwlink/p/?LinkId=524758)|
-  |[Aplicaciones de la Tienda Windows](http://go.microsoft.com/fwlink/p/?LinkID=526163)|
+  |[SDK de OS X](https://go.microsoft.com/fwlink/p/?LinkId=404273)|
+  |[Windows Phone](https://go.microsoft.com/fwlink/p/?LinkId=524758)|
+  |[Aplicaciones de la Tienda Windows](https://go.microsoft.com/fwlink/p/?LinkID=526163)|
 
 2. **Continúe con la guía de instalación** para su sistema operativo.
 

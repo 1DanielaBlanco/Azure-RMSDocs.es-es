@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b632319b595c3745be576fa2d508ebcb089ec8aa
-ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
+ms.openlocfilehash: e3c4e28fc9f67faeefcb1e6c98dda99711f1ef2b
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49170168"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024423"
 ---
 # <a name="applications-that-support-azure-rights-management-data-protection"></a>Aplicaciones compatibles con la protección de datos de Azure Rights Management
 
@@ -45,13 +45,13 @@ Información acerca de las columnas de la tabla:
 
 |**Sistema operativo del dispositivo**|Word, Excel, PowerPoint|Correo electrónico|Otros tipos de archivo|
 |---------------------------|-----------------------|-----------------|---------|
-|**Windows**|Office 2010<br /><br />Office 2013<br /><br />Office 2016 <br /><br />Office Online (visualización de documentos protegidos) [[1]](#footnote-1)<br /><br />Explorador web [[2]](#footnote-2)|Outlook 2010<br /><br />Outlook 2013<br /><br />Office 2016 <br /><br />Explorador web [[3]](#footnote-3)<br /><br />Correo de Windows [[4]](#footnote-4) |Cliente de Azure Information Protection para Windows: texto, imágenes, pfile<br /><br />Aplicación RMS sharing para Windows: texto, imágenes, pfile<br /><br />Complemento SealPath RMS para AutoCAD: .dwg|
+|**Windows**|Office 2010<br /><br />Office 2013<br /><br />Office 2016 <br /><br />Office Online (visualización de documentos protegidos) [[1]](#footnote-1)<br /><br />Explorador web [[2]](#footnote-2)|Outlook 2010<br /><br />Outlook 2013<br /><br />Office 2016 <br /><br />Explorador web [[3]](#footnote-3)<br /><br />Correo de Windows [[4]](#footnote-4) |Cliente de Azure Information Protection para Windows: texto, imágenes, pfile<br /><br />Aplicación RMS sharing para Windows: texto, imágenes, pfile<br /><br />Complemento SealPath RMS para AutoCAD: .dwg|
 |**iOS**|GigaTrust<br /><br /> Office Mobile (visualización y edición de documentos protegidos)<br /><br />Office Online [[1]](#footnote-1)<br /><br />Documentos TITUS<br /><br />Explorador web [[2]](#footnote-2)|Aplicación Azure Information Protection (visualización de correos protegidos)<br /><br />BlackBerry Work<br /><br />Citrix WorxMail <br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Outlook para iPad y iPhone [[4]](#footnote-4)<br /><br />TITUS Mail <br /><br />Explorador web [[3]](#footnote-3)|Aplicación Azure Information Protection (visualización de texto e imágenes protegidos)<br /><br />Documentos TITUS: pfile|
-|**Android**|GigaTrust App para Android<br /><br />Office Online [[1]](#footnote-1)<br /><br />Office Mobile <br /><br />Explorador web [[2]](#footnote-2)|9Folders [[4]](#footnote-4)<br /><br />Aplicación Azure Information Protection (visualización de correos protegidos)<br /><br />BlackBerry Work <br /><br />GigaTrust App para Android [[4]](#footnote-4)<br /><br />Citrix WorxMail <br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Outlook para Android [[4]](#footnote-4)<br /><br />Correo electrónico de Samsung (S3 y versiones posteriores) [[4]](#footnote-4)<br /><br />TITUS Classification for Mobile <br /><br />Explorador web [[3]](#footnote-3)|Aplicación Azure Information Protection (visualización de texto e imágenes protegidos)|
+|**Android**|GigaTrust App para Android<br /><br />Office Online [[1]](#footnote-1)<br /><br />Office Mobile <br /><br />Explorador web [[2]](#footnote-2)|9Folders [[4]](#footnote-4)<br /><br />Aplicación Azure Information Protection (visualización de correos protegidos)<br /><br />BlackBerry Work <br /><br />GigaTrust App para Android [[4]](#footnote-4)<br /><br />Citrix WorxMail <br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Outlook para Android [[4]](#footnote-4)<br /><br />Correo electrónico de Samsung (S3 y versiones posteriores) [[4]](#footnote-4)<br /><br />TITUS Classification for Mobile <br /><br />Explorador web [[3]](#footnote-3)|Aplicación Azure Information Protection (visualización de texto e imágenes protegidos)|
 |**macOS**|Office 2016 para Mac<br /><br />Office Online [[1]](#footnote-1)<br /><br />Explorador web [[2]](#footnote-2)|Outlook 2016 para Mac<br /><br />Explorador web [[3]](#footnote-3)|Aplicación RMS sharing (visualización de texto e imágenes protegidos y archivos protegidos genéricamente)|
 |**Windows 10 Mobile**|Aplicaciones de Office Mobile (visualización de documentos protegidos mediante Azure RMS) <br /><br />Explorador web [[2]](#footnote-2)|Citrix WorxMail <br /><br />Correo de Outlook (visualización de correos electrónicos protegidos) <br /><br />Explorador web [[3]](#footnote-3)|No compatible|
-|**Windows RT**|Office 2013 RT<br /><br />Office Online [[1]](#footnote-1)<br /><br />Explorador web [[2]](#footnote-2)|Outlook 2013 RT<br /><br />Aplicación de correo para Windows<br /><br />Explorador web [[3]](#footnote-3)<br /><br />Correo de Windows [[4]](#footnote-4)|Siemens JT2Go: archivos JT|
-|**Windows Phone 8.1**|Office Mobile (solo AD RMS)<br /><br />Explorador web [[2]](#footnote-2)|Outlook Mobile [[4]](#footnote-4) <br /><br />Explorador web [[3]](#footnote-3)|Aplicación RMS sharing (visualización de texto e imágenes protegidos y archivos protegidos genéricamente)|
+|**Windows RT**|Office 2013 RT<br /><br />Office Online [[1]](#footnote-1)<br /><br />Explorador web [[2]](#footnote-2)|Outlook 2013 RT<br /><br />Aplicación de correo para Windows<br /><br />Explorador web [[3]](#footnote-3)<br /><br />Correo de Windows [[4]](#footnote-4)|Siemens JT2Go: archivos JT|
+|**Windows Phone 8.1**|Office Mobile (solo AD RMS)<br /><br />Explorador web [[2]](#footnote-2)|Outlook Mobile [[4]](#footnote-4) <br /><br />Explorador web [[3]](#footnote-3)|Aplicación RMS sharing (visualización de texto e imágenes protegidos y archivos protegidos genéricamente)|
 |**Blackberry 10**|Explorador web [[2]](#footnote-2)|Correo electrónico de Blackberry [[4]](#footnote-4) <br /><br />Explorador web [[3]](#footnote-3)|No compatible|
 
 ###### <a name="footnote-1"></a>Nota al pie 1
@@ -139,7 +139,7 @@ Para obtener más información, vea los recursos siguientes:
 
 - [Preguntas más frecuentes sobre la aplicación de Microsoft Azure Information Protection para iOS y Android](./rms-client/mobile-app-faq.md)
 
-Descargue la aplicación correspondiente en los vínculos de la [página de Microsoft Azure Information Protection](http://go.microsoft.com/fwlink/?LinkId=303970).
+Descargue la aplicación correspondiente en los vínculos de la [página de Microsoft Azure Information Protection](https://go.microsoft.com/fwlink/?LinkId=303970).
 
 ### <a name="more-information-about-the-rights-management-sharing-application"></a>Más información sobre la aplicación Rights Management sharing
 
@@ -155,7 +155,7 @@ Para obtener más información, vea los recursos siguientes:
 
 -   [Preguntas frecuentes para la aplicación Microsoft Rights Management sharing para plataformas móviles](https://technet.microsoft.com/dn451248)
 
-Descargue el visor para equipos Mac y para Windows Phone con los vínculos de la [página Microsoft Azure Information Protection](http://go.microsoft.com/fwlink/?LinkId=303970).
+Descargue el visor para equipos Mac y para Windows Phone con los vínculos de la [página Microsoft Azure Information Protection](https://go.microsoft.com/fwlink/?LinkId=303970).
 
 
 ### <a name="more-information-about-other-applications-that-support-azure-information-protection"></a>Más información sobre otras aplicaciones que admiten Azure Information Protection

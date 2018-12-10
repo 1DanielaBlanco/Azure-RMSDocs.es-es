@@ -1,5 +1,5 @@
 ---
-title: 'Inicio rápido: Creación de una nueva etiqueta de Azure Information Protection para usuarios específicos'
+title: 'Guía de inicio rápido: Creación de una nueva etiqueta de Azure Information Protection para usuarios específicos (AIP)'
 description: Cree y configure una nueva etiqueta que clasifica los documentos y correos electrónicos para usuarios específicos mediante el uso de una directiva de ámbito.
 author: cabailey
 ms.author: cabailey
@@ -7,12 +7,12 @@ manager: mbaldwin
 ms.date: 11/14/2018
 ms.topic: quickstart
 ms.service: information-protection
-ms.openlocfilehash: dca90c7635702226e7414947aad6f3d89cf91efd
-ms.sourcegitcommit: ad37950f6a747c86f6496c6de859e18446f9b03f
+ms.openlocfilehash: 1a8af09681411e49936c067c6161376c9d4f9f16
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51644662"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023584"
 ---
 # <a name="quickstart-create-a-new-azure-information-protection-label-for-specific-users"></a>Inicio rápido: Creación de una nueva etiqueta de Azure Information Protection para usuarios específicos
 

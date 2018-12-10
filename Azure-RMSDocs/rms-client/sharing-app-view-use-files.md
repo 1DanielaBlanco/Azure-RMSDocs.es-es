@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 27de9df7062f6072e7e15b66759f540d5ce81dba
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 926a6d34b34b486577f6a8481010d058e465b3e8
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148059"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023998"
 ---
 # <a name="view-and-use-files-that-have-been-protected-by-rights-management"></a>Ver y usar los archivos protegidos por Rights Management
 
@@ -28,7 +28,7 @@ Cuando la [aplicación Rights Management sharing (RMS) está instalada en el equ
 >
 > Si su organización no usa Azure Information Protection o AD RMS, puede pedir una cuenta gratuita que acepte sus credenciales para poder abrir los archivos protegidos con RMS:
 >
-> -   Para solicitar esta cuenta, haga clic en el vínculo para solicitar [RMS para usuarios](http://go.microsoft.com/fwlink/?LinkId=309469).
+> -   Para solicitar esta cuenta, haga clic en el vínculo para solicitar [RMS para usuarios](https://go.microsoft.com/fwlink/?LinkId=309469).
 >
 >     Al suscribirse, use la dirección de correo electrónico de su empresa en lugar de una dirección de correo electrónico personal. Si va a suscribirse porque le enviaron un archivo adjunto protegido por correo electrónico, use la misma dirección de correo electrónico que se usó para enviarle el mensaje de correo electrónico.
 > -   Para obtener más información, consulte [RMS for individuals and Azure Rights Management](../rms-for-individuals.md) (RMS para usuarios y Azure Rights Management).
@@ -72,7 +72,7 @@ Para obtener la lista completa de extensiones de nombres de archivo que admiten 
 ## <a name="to-use-files-that-have-been-protected-for-example-edit-and-print-the-file"></a>Para usar archivos que están protegidos (por ejemplo, editar e imprimir el archivo)
 Si, tras abrir el archivo protegido, desea hacer algo más que simplemente leerlo (como editarlo, copiarlo e imprimirlo), siga las instrucciones correspondientes a la extensión de nombre de archivo :
 
-- **El archivo tiene una *.pfile*  extensión de nombre de archivo**
+- **El archivo tiene una extensión de nombre de archivo *.pfile*** 
 
     Guarde el archivo abierto y asígnele una nueva extensión de nombre de archivo que esté asociada a la aplicación que desea usar.
 

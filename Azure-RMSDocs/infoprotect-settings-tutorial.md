@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Configuración de los parámetros de la directiva de Azure Information Protection para ayudar a clasificar documentos y correos electrónicos'
+title: 'Tutorial: Configuración de los parámetros de la directiva de Azure Information Protection para ayudar a clasificar documentos y correos electrónicos (AIP)'
 description: Un tutorial introductorio que le guiará en el proceso de configuración de las directivas de Azure Information Protection para ayudar a clasificar los documentos y los correos electrónicos de su organización.
 author: cabailey
 ms.author: cabailey
@@ -7,12 +7,12 @@ manager: mbaldwin
 ms.date: 11/14/2018
 ms.topic: tutorial
 ms.service: information-protection
-ms.openlocfilehash: 75a13413cbbbb1a7ab653522fcec9606c002f7d8
-ms.sourcegitcommit: dce7b4f95c216afc9ec6524a686a02287e6bdcf7
+ms.openlocfilehash: 0341ba1b232551f89e1ee43f77a3425b8c6e8ffb
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "53007505"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024372"
 ---
 # <a name="tutorial-configure-azure-information-protection-policy-settings-that-work-together"></a>Tutorial: Configuración de los parámetros de la directiva de Azure Information Protection que funcionan en conjunto
 

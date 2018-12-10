@@ -1,5 +1,5 @@
 ---
-title: Configuración de marcas visuales para una etiqueta de Azure Information Protection
+title: 'Configuración de distintivos visuales para una etiqueta de Azure Information Protection: AIP'
 description: Cuando se asigna una etiqueta a un documento o a un mensaje de correo electrónico, puede seleccionar varias opciones para hacer visible la clasificación elegida. Estos marcadores visuales son un encabezado, un pie de página y una marca de agua.
 author: cabailey
 ms.author: cabailey
@@ -8,12 +8,12 @@ ms.date: 11/28/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: 23185d2d6b5b1bb14633647c345d0e58eeda3bdc
-ms.sourcegitcommit: e72c89e35cae6a19dca060f688838d78dc8f0448
+ms.openlocfilehash: 3f94e9b1993573e8fe392dc75bcf999452bab626
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52585999"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023981"
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Configuración de una etiqueta para marcas visuales de Azure Information Protection
 

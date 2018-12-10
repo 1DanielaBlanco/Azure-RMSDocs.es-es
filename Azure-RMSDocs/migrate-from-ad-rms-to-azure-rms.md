@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ff3e9f93de5a46ec12ae001d798ec0292da8526a
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 79dbf817086aa3f4b7919d87136008222a0bb1a6
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149011"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024270"
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>Migración desde AD RMS a Azure Information Protection
 
@@ -51,11 +51,11 @@ Antes de iniciar la migración a Azure Information Protection, asegúrese de que
     
     - Las versiones siguientes de AD RMS admiten una migración a Azure Information Protection:
     
-        - Windows Server 2008 R2 (x64)
+        - Windows Server 2008 R2 (x64)
         
-        - Windows Server 2012 (x64)
+        - Windows Server 2012 (x64)
         
-        - Windows Server 2012 R2 (x64)
+        - Windows Server 2012 R2 (x64)
         
         - Windows Server 2016 (x64)
         
@@ -131,7 +131,7 @@ Incluya los asociados de AD RMS en la fase de planeación de la migración porqu
 
 - Le han proporcionado las direcciones URL de su clúster de AD RMS y su dirección URL de servicio de Azure Rights Management para que pueda configurar los clientes migrados y redirigir las solicitudes de su contenido protegido de AD RMS al servicio de Azure Rights Management de sus inquilinos. Las instrucciones para configurar el redireccionamiento cliente están en el paso 7.
 
-- Importarán sus claves raíz de clúster de AD RMS (SLC) en el inquilino antes de que empiece a migrar los usuarios. De forma similar, debe importar sus claves raíz de clúster de AD RMS antes de empezar a migrar sus usuarios. Las instrucciones para importar la clave se encuentran en este proceso de migración, en el [Paso 4. Exporte los datos de configuración de AD RMS e impórtelos en Azure Information Protection](migrate-from-ad-rms-phase2.md#step-4-export-configuration-data-from-ad-rms-and-import-it-to-azure-information-protection). 
+- Importarán sus claves raíz de clúster de AD RMS (SLC) en el inquilino antes de que empiece a migrar los usuarios. De forma similar, debe importar sus claves raíz de clúster de AD RMS antes de empezar a migrar sus usuarios. Las instrucciones para importar la clave se encuentran en este proceso de migración, en el [Paso 4. Exportación de los datos de configuración de AD RMS e importarlos en Azure Information Protection](migrate-from-ad-rms-phase2.md#step-4-export-configuration-data-from-ad-rms-and-import-it-to-azure-information-protection). 
 
 ## <a name="overview-of-the-steps-for-migrating-ad-rms-to-azure-information-protection"></a>Información general sobre los pasos para migrar AD RMS a Azure Information Protection
 
@@ -203,7 +203,7 @@ Los pasos de migración se pueden dividir en cinco fases que se pueden realizar 
 
 - **Paso 11: completar tareas de migración de cliente**
 
-    Si ha implementado la [extensión de dispositivos móviles](http://technet.microsoft.com/library/dn673574.aspx) para admitir dispositivos móviles como iPads y teléfonos iOS, teléfonos y tabletas Android, Windows Phone y equipos Mac, debe quitar los registros SRV en DNS que redirigen estos clientes para usar AD RMS. 
+    Si ha implementado la [extensión de dispositivos móviles](https://technet.microsoft.com/library/dn673574.aspx) para admitir dispositivos móviles como iPads y teléfonos iOS, teléfonos y tabletas Android, Windows Phone y equipos Mac, debe quitar los registros SRV en DNS que redirigen estos clientes para usar AD RMS. 
     
     Ya no son necesarios los controles de incorporación configurados durante la fase de preparación. Pero si no ha usado controles de incorporación porque ha decidido migrarlo todo al mismo tiempo, en lugar de realizar una migración por fases, puede omitir las instrucciones para quitar los controles de incorporación.
     

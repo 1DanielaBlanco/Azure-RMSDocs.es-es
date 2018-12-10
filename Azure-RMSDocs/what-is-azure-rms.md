@@ -1,21 +1,21 @@
 ---
-title: Información general de la protección de Azure Rights Management de Azure Information Protection
+title: 'Información general de la protección de Azure Rights Management de Azure Information Protection: AIP'
 description: Información acerca de Azure Rights Management (Azure RMS), la tecnología de protección usada por Azure Information Protection.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/01/2018
+ms.date: 12/06/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: aeeebcd7-6646-4405-addf-ee1cc74df5df
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7ad539d2668573cbbea90931dc5e3ade572b64a0
-ms.sourcegitcommit: ef70dab87478084fca853f389dab2408b95d1df1
+ms.openlocfilehash: fa7bf6ae5eb60b6fc6b0310c11e9acfbbd3b240c
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304049"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024168"
 ---
 # <a name="what-is-azure-rights-management"></a>¿Qué es Azure Rights Management?
 
@@ -55,7 +55,7 @@ Use la tabla siguiente para identificar problemas o requisitos empresariales que
 |Capacidad de escalar en la organización, según sea necesario|√ Dado que Azure Rights Management se ejecuta como servicio en la nube con la elasticidad de Azure para escalar verticalmente y horizontalmente, no tiene que aprovisionar o implementar servidores locales adicionales.|
 |Capacidad para crear directivas simples y flexibles|√ Las  [plantillas de protección personalizadas](configure-policy-templates.md) proporcionan una solución rápida y sencilla para que los administradores apliquen las directivas y para que los usuarios apliquen el nivel correcto de protección para cada documento y restrinjan el acceso a las personas dentro de la organización.<br /><br />Por ejemplo, para que se comparta un documento estratégico de toda la compañía con todos los empleados, podría aplicar una directiva de solo lectura a todos los empleados internos. A continuación, para un documento más confidencial, como un informe financiero, podría restringir el acceso solo a ejecutivos.|
 |Amplia compatibilidad de aplicaciones|√ Azure Rights Management tiene una integración estrecha con aplicaciones y servicios de Microsoft Office, y amplía la compatibilidad con otras aplicaciones mediante el [cliente de Azure Information Protection](./rms-client/aip-client.md ).<br /><br />√ Los [SDK de Azure Information Protection](./develop/developers-guide.md) proporcionan a sus desarrolladores internos y proveedores de software API para escribir aplicaciones personalizadas que admiten Azure Information Protection.<br /><br />Para más información, vea [Otras aplicaciones compatibles con las API de Rights Management](api-support.md).|
-|TI debe mantener el control de los datos|√ Las organizaciones pueden elegir administrar su propia clave de inquilino y usar su solución "[Bring Your Own Key](plan-implement-tenant-key.md)" (BYOK) y almacenar su clave de inquilino en los módulos de seguridad de hardware (HSM).<br /><br />√ Compatibilidad con la auditoría y el [registro de uso](log-analyze-usage.md) para que pueda analizar información empresarial, supervisar el abuso y (si tiene una pérdida de información) realizar análisis forenses.<br /><br />√ El acceso delegado mediante la [característica de superusuario](configure-super-users.md) garantiza que TI siempre pueda tener acceso al contenido protegido, aunque un documento estuviera protegido por un empleado que haya dejado la organización. En comparación, las soluciones de cifrado punto a punto se arriesgan a perder acceso a los datos de la compañía.<br /><br />√ Sincronice [solo los atributos de directorio que Azure RMS necesita](/azure/active-directory/hybrid/reference-connect-sync-attributes-synchronized#azure-rms) para admitir una identidad común para sus cuentas de Active Directory locales, mediante una [herramienta de sincronización de directorios](/active-directory/active-directory-hybrid-identity-design-considerations-tools-comparison), como Azure AD Connect.<br /><br />√ Habilite el inicio de sesión único sin replicar contraseñas a la nube, mediante AD FS.<br /><br />√ Las organizaciones siempre tienen la opción de dejar de usar el servicio Azure Rights Management sin perder el acceso a contenido anteriormente protegido por Azure Rights Management. Para obtener información sobre las opciones de retirada, consulte [Retirada y desactivación de Azure Rights Management](decommission-deactivate.md). Además, las organizaciones que hayan implementado Active Directory Rights Management Services (AD RMS) pueden [migrar al servicio Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md) sin perder el acceso a los datos protegidos anteriormente por AD RMS.|
+|TI debe mantener el control de los datos|√ Las organizaciones pueden elegir administrar su propia clave de inquilino y usar su solución "[Bring Your Own Key](plan-implement-tenant-key.md)" (BYOK) y almacenar su clave de inquilino en los módulos de seguridad de hardware (HSM).<br /><br />√ Compatibilidad con la auditoría y el [registro de uso](log-analyze-usage.md) para que pueda analizar información empresarial, supervisar el abuso y (si tiene una pérdida de información) realizar análisis forenses.<br /><br />√ El acceso delegado mediante la [característica de superusuario](configure-super-users.md) garantiza que TI siempre pueda tener acceso al contenido protegido, aunque un documento estuviera protegido por un empleado que haya dejado la organización. En comparación, las soluciones de cifrado punto a punto se arriesgan a perder acceso a los datos de la compañía.<br /><br />√ Sincronice [solo los atributos de directorio que Azure RMS necesita](/azure/active-directory/hybrid/reference-connect-sync-attributes-synchronized#azure-rms) para admitir una identidad común para sus cuentas de Active Directory locales, mediante una [solución de identidad híbrida](/azure/active-directory/hybrid/), como Azure AD Connect.<br /><br />√ Habilite el inicio de sesión único sin replicar contraseñas a la nube, mediante AD FS.<br /><br />√ Las organizaciones siempre tienen la opción de dejar de usar el servicio Azure Rights Management sin perder el acceso a contenido anteriormente protegido por Azure Rights Management. Para obtener información sobre las opciones de retirada, consulte [Retirada y desactivación de Azure Rights Management](decommission-deactivate.md). Además, las organizaciones que hayan implementado Active Directory Rights Management Services (AD RMS) pueden [migrar al servicio Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md) sin perder el acceso a los datos protegidos anteriormente por AD RMS.|
 > [!TIP]
 > Si está familiarizado con la versión local de Rights Management, Active Directory Rights Management Services (AD RMS), puede que esté interesado en la tabla de comparación de [Comparación entre Azure Rights Management y AD RMS](compare-on-premise.md).
 

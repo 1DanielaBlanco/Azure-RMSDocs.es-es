@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Edición de la directiva de Azure Information Protection y creación de una nueva etiqueta'
+title: 'Tutorial: Edición de la directiva de Azure Information Protection y creación de una nueva etiqueta (AIP)'
 description: Un tutorial introductorio para probar rápidamente Microsoft Azure Information Protection para su organización, que debería durar unos 15 minutos.
 author: cabailey
 ms.author: cabailey
@@ -7,12 +7,12 @@ manager: mbaldwin
 ms.date: 11/14/2018
 ms.topic: tutorial
 ms.service: information-protection
-ms.openlocfilehash: 7f8fc76b0ad3d90d422cc18229d10b1f1a8d6e8d
-ms.sourcegitcommit: ad37950f6a747c86f6496c6de859e18446f9b03f
+ms.openlocfilehash: a619a05607f5061f51bae93d97cfd44086cefd55
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51644750"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024185"
 ---
 # <a name="tutorial-edit-the-azure-information-protection-policy-and-create-a-new-label"></a>Tutorial: Edición de la directiva de Azure Information Protection y creación de una nueva etiqueta
 

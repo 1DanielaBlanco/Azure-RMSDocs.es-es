@@ -1,5 +1,5 @@
 ---
-title: 'Inicio rápido: Introducción a Azure Portal'
+title: 'Guía de inicio rápido: Introducción a Azure Information Protection en Azure Portal (AIP)'
 description: Si su organización ha empezado a utilizar recientemente Azure Information Protection, empiece aquí para agregar el servicio a Azure Portal, confirmar que el servicio de protección está activado y ver la directiva.
 author: cabailey
 ms.author: cabailey
@@ -7,14 +7,14 @@ manager: mbaldwin
 ms.date: 11/05/2018
 ms.topic: quickstart
 ms.service: information-protection
-ms.openlocfilehash: 351b026429a803bf1ac74cdddd547c73a29dfa18
-ms.sourcegitcommit: b4118cd75db6478f86b9994e8d84d0ada15c7f95
+ms.openlocfilehash: f5cf70b0827e36ffae6644634ef198385ef6d11a
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52953353"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023522"
 ---
-# <a name="quickstart-get-started-in-the-azure-portal"></a>Inicio rápido: Introducción a Azure Portal
+# <a name="quickstart-get-started-with-azure-information-protection-in-the-azure-portal"></a>Guía de inicio rápido: Introducción a Azure Information Protection en Azure Portal
 
 En este tutorial, podrá agregar Azure Information Protection a Azure Portal, confirmar que el servicio de protección está activado y ver la directiva predeterminada de su organización. 
 
