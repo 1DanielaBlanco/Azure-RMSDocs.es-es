@@ -1,5 +1,5 @@
 ---
-title: Requirements for Azure Information Protection (Requisitos de Azure Information Protection)
+title: Requisitos de Azure Information Protection (AIP)
 description: Identifique los requisitos previos para implementar Azure Information Protection en su organización.
 author: cabailey
 ms.author: cabailey
@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 62a291667cf0ae60debbd62047d3a6b09962ac1d
-ms.sourcegitcommit: 4f22874c3c2fb9632d57932148664c40b3907a78
+ms.openlocfilehash: 43ff5d8fabf8197ba8ea235b01258dff12a5acd4
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52831245"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024155"
 ---
 # <a name="requirements-for-azure-information-protection"></a>Requirements for Azure Information Protection (Requisitos de Azure Information Protection)
 
@@ -140,7 +140,7 @@ El siguiente escenario de implementación no se admite a no ser que esté usando
 
 - Ejecución de AD RMS y Azure RMS en paralelo en la misma organización, salvo durante la migración, tal como se describe en [Migración desde AD RMS a Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md).
 
-Existe una ruta de acceso de migración que se admite [desde AD RMS a Azure Information Protection](http://technet.microsoft.com/library/Dn858447.aspx) y desde [Azure Information Protection a AD RMS](/powershell/module/aadrm/Set-AadrmMigrationUrl). Si implementa Azure Information Protection y después decide que ya no quiere usar este servicio en la nube, vea [Retirada y desactivación de Azure Information Protection](decommission-deactivate.md).
+Existe una ruta de acceso de migración que se admite [desde AD RMS a Azure Information Protection](https://technet.microsoft.com/library/Dn858447.aspx) y desde [Azure Information Protection a AD RMS](/powershell/module/aadrm/Set-AadrmMigrationUrl). Si implementa Azure Information Protection y después decide que ya no quiere usar este servicio en la nube, vea [Retirada y desactivación de Azure Information Protection](decommission-deactivate.md).
 
 
 
