@@ -12,12 +12,12 @@ ms.assetid: E480D8D6-F070-43D1-B2B0-6921459C3437
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 054121899523056e9d61a673c01f70022e77d13c
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 481922859e14009e345a38853c15e51b065d5387
+ms.sourcegitcommit: 1cd4edd4ba1eb5e10cb61628029213eda316783a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149642"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266382"
 ---
 # <a name="testing-your-application"></a>Prueba de la aplicación
 
@@ -32,7 +32,7 @@ Puede hacer la prueba con Azure RMS o con un servidor RMS que se ejecute en Wind
 - Para instalar Developer Runtime:
 
    Debe tener el cliente de Rights Management Services 2.1 instalado en el equipo en el que va a probar la aplicación.
-   - Para probar la aplicación en un equipo que no sea el equipo de desarrollo, instale el cliente de RMS 2.1 en ese equipo desde la [página de descarga del cliente de AD RMS](http://www.microsoft.com/en-us/download/details.aspx?id=38396).
+   - Para probar la aplicación en un equipo que no sea el equipo de desarrollo, instale el cliente de RMS 2.1 en ese equipo desde la [página de descarga del cliente de AD RMS](https://www.microsoft.com/download/details.aspx?id=38396).
    - El equipo de desarrollo debe tener Rights Management Services SDK 2.1, instalado previamente.
 
    Para obtener ayuda sobre cómo instalar RMS SDK 2.1, vea [Instalar el SDK](install-the-rms-sdk.md).
