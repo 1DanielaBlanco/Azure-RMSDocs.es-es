@@ -4,19 +4,19 @@ description: Se describen las características y los cambios importantes de esta
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
-ms.date: 09/25/2017
+ms.date: 12/11/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 4fa1c686-b00b-4734-9abb-141ce582a6af
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: e3b4812f06c7ee86c48c0984e440d34f858bb4e7
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 6433352f05401fcaafc84704a0441941ff87bdf3
+ms.sourcegitcommit: 1cd4edd4ba1eb5e10cb61628029213eda316783a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148790"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266705"
 ---
 # <a name="whats-new-and-release-notes"></a>Novedades y notas de la versión
 
@@ -26,13 +26,13 @@ En este tema se describen las características y los cambios importantes de esta
 
 -   [Novedades de julio de 2017](#new-for-july-2017)
 -   [Actualización de octubre de 2016](#October-2016-update)
--   [Actualización de junio de 2016](#new-for-June-2016)
+-   [Actualización de junio de 2016](#june-2016-update)
 -   [Actualización de diciembre de 2015](#december-2015-update)
--   [Actualización de julio de 2015: se agrega compatibilidad con desarrollo en C++ y Linux](#july-2015-update-adds-support-for-linux-c-developm)
--   [Actualización de mayo de 2015: se agrega control de registro](#may-2015-update-adds-logging-control)
--   [Actualización de febrero de 2015: se agrega compatibilidad con aplicaciones de la Tienda Windows](#february-2015-update-adds-windows-store-application-support)
--   [Actualización de enero de 2015: se agrega compatibilidad con la plataforma WinPhone](#january-2015-update-adds-winphone-platform-support)
--   [Actualización de octubre de 2014: se actualiza a Microsoft RMS SDK 4.1](#october-2014-update-upgrade-to-microsoft-rms-sdk-4-1)
+-   [Actualización de julio de 2015: se agrega compatibilidad con desarrollo en C++ y Linux](#july-2015-update---adds-support-for-linux--c-development)
+-   [Actualización de mayo de 2015: se agrega control de registro](#may-2015-update---adds-logging-control)
+-   [Actualización de febrero de 2015: se agrega compatibilidad con aplicaciones de la Tienda Windows](#february-2015-update---adds-windows-store-application-support)
+-   [Actualización de enero de 2015: se agrega compatibilidad con la plataforma WinPhone](#january-2015-update---adds-winphone-platform-support)
+-   [Actualización de octubre de 2014: se actualiza a Microsoft RMS SDK 4.1](#october-2014-update---upgrade-to-microsoft-rms-sdk-4-1)
 -   [Notas de la versión](#release-notes)
 -   [Preguntas más frecuentes](#frequently-asked-questions)
 
@@ -40,7 +40,7 @@ En este tema se describen las características y los cambios importantes de esta
 
 La actualización para la versión de julio incluía aumentar la revisión del SDK, ahora 4.2.5.
 
-- SDK de Android: La aplicación ahora puede **establecer el nivel de registro sobre la marcha** con Android SDK. Para más información, vea [How to: Enable error and performance logging](https://docs.microsoft.com/information-protection/develop/enabling-logging) (Procedimiento para habilitar el registro de rendimiento y errores).
+- SDK de Android: La aplicación ahora puede **establecer el nivel de registro sobre la marcha** con Android SDK. Para más información, vea [Procedimiento para habilitar el registro de rendimiento y errores](https://docs.microsoft.com/information-protection/develop/enabling-logging)
 - El SDK de iOS no es compatible con el nivel de registro. 
 - El SDK ahora devuelve un error para un token de acceso NULL.
 
@@ -64,7 +64,7 @@ Con esta versión, RMS SDK para dispositivos pasa a la versión 4.2 y agrega lo 
 
     Para más información e instrucciones de uso sobre iOS/OSX, vea la clase [MSLicenseMetadata](https://msdn.microsoft.com/library/mt573683.aspx), que proporciona información de seguimiento y el método de registro de seguimiento de documentos adicional en [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx). Existen adiciones similares para Android a [LicenseMetadata](https://msdn.microsoft.com/library/mt573675.aspx) y [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx).
 
-    Para ver una descripción detallada de la característica de seguimiento de documentos, consulte [Uso del seguimiento de documentos](how-to-use-document-tracking.md).
+    Para obtener una descripción detallada de la característica de seguimiento de documentos, vea [Uso del seguimiento de documentos](how-to-use-document-tracking.md).
 
 -   Un conjunto de métodos sincrónicos equivalentes a las versiones asincrónicas de la API de Android:
 
@@ -108,7 +108,7 @@ Esta versión agrega compatibilidad con las siguientes actualizaciones:
 
     Configuración de control de nivel de registro habilitada.
 
-    Para más información, vea [How to: Enable error and performance logging](enabling-logging.md) (Procedimiento para habilitar el registro de rendimiento y errores).
+    Para más información, vea [Procedimiento para habilitar el registro de rendimiento y errores](enabling-logging.md)
 
     Se agregó compatibilidad de borrado de memoria caché.
 
@@ -193,46 +193,46 @@ En esta sección se detalla información sobre las versiones actuales y anterior
 
 
 
-**Nota:** las aplicaciones MDI no son compatibles con nuestra API de iOS.
+**Nota:**  las aplicaciones MDI no son compatibles con nuestra API de iOS.
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 **Todas las plataformas**
 
-**P:** No veo ninguna interfaz de usuario de selección de **permisos personalizados** en el flujo de trabajo de protección. ¿Por qué?
+**P**: No veo ninguna interfaz de usuario de selección de **permisos personalizados** en el flujo de trabajo de protección. ¿Por qué?
 
-**R:** Este es un problema conocido que se abordará más adelante.
+**R**: Este es un problema conocido que se abordará más adelante.
 
-**P:** ¿Cómo puedo obtener nuevos inquilinos organizativos para probar el SDK y las aplicaciones de ejemplo?
+**P**: ¿Cómo puedo obtener nuevos inquilinos organizativos para probar el SDK y las aplicaciones de ejemplo?
 
 **R**: Para pedir credenciales para las organizaciones de prueba de Azure AD RMS, envíe un correo electrónico a <rmcstbeta@microsoft.com>.
 
-**P:** No veo ninguna explicación de la jerarquía de prueba en la documentación. ¿Por qué?
+**P**: No veo ninguna explicación de la jerarquía de prueba en la documentación. ¿Por qué?
 
-**R:** No hay ningún concepto de jerarquía de prueba en los nuevos AD RMS SDK. Siempre se trabajará con la jerarquía de producción.
+**R**: No hay ningún concepto de jerarquía de prueba en los nuevos AD RMS SDK. Siempre se trabajará con la jerarquía de producción.
 
 **P**: En la versión 2.1 de RMS SDK se necesitaba un manifiesto generado para cada aplicación que implementaba información de protección. ¿Esto sigue siendo así en las versiones 4.0 y posteriores del SDK?
 
-**R:** No. Los manifiestos ya no son necesarios en las versiones 3.0 y posteriores de Rights Management SDK.
+**R**: No. Los manifiestos ya no son necesarios en las versiones 3.0 y posteriores de Rights Management SDK.
 
 **Android**
 
-**P:** ¿Con qué entornos de desarrollo se ha probado el SDK?
+**P**: ¿Con qué entornos de desarrollo se ha probado el SDK?
 
-**R:** Eclipse Juno con Google API 15 y versiones posteriores.
+**R**: Eclipse Juno con Google API 15 y versiones posteriores.
 
-**P:** ¿Puedo llamar al método de cancelación cancel() desde el subproceso de interfaz de usuario?
-**R:** Debe llamar a cancel() desde un subproceso que no sea de interfaz de usuario, dado que puede anular una conexión de red.
+**P**: ¿Puedo llamar al método de cancelación cancel() desde el subproceso de interfaz de usuario?
+**R**: Debe llamar a cancel() desde un subproceso que no sea de interfaz de usuario, dado que puede anular una conexión de red.
 
 **iOS**
 
-**P:** ¿Qué plataformas se han comprobado para el desarrollo del SDK?
+**P**: ¿Qué plataformas se han comprobado para el desarrollo del SDK?
 
-**R:** Xcode 5.0 con iOS 7 y versiones posteriores.
+**R**: Xcode 5.0 con iOS 7 y versiones posteriores.
 
-**P:** He llamado a un método cancel() en una operación, pero sigue apareciendo una notificación de operación completada. ¿Por qué?
+**P**: He llamado a un método cancel() en una operación, pero sigue apareciendo una notificación de operación completada. ¿Por qué?
 
-**R:** No todas las operaciones se pueden cancelar. Una operación de cancelación se ejecuta de la mejor forma posible.
+**R**: No todas las operaciones se pueden cancelar. Una operación de cancelación se ejecuta de la mejor forma posible.
 
 **OS X**
 

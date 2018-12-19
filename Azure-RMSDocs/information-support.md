@@ -4,22 +4,22 @@ description: Recursos para administradores con información sobre nuevas version
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/14/2018
+ms.date: 12/07/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: da86d4dbdc5b5ac98dad8aac21772c43354b4b90
-ms.sourcegitcommit: 4c4af9766342272eaa18df720ba3738d44ba99c8
+ms.openlocfilehash: 2844271ff0318cc6c9e90615000fce1689e8a939
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51707732"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53173764"
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Información y soporte técnico para Azure Information Protection
 
->*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Use los siguientes recursos para ayudarle a obtener información sobre implementación y soporte técnico de Azure Information Protection para su organización.
 
@@ -35,7 +35,7 @@ Use los siguientes recursos para ayudarle a obtener información sobre implement
 ## <a name="information-about-new-releases-and-updates"></a>Información sobre nuevas versiones y actualizaciones
 El equipo de productos de Azure Information Protection publica anuncios sobre nuevas versiones principales en el [blog de Enterprise Mobility + Security](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/bg-p/enterprisemobilityandsecurity/label-name/Azure%20Information%20Protection). Las versiones más pequeñas se anuncian en el [sitio de Yammer](https://www.yammer.com/AskIPTeam) de Azure Information Protection y también resultará útil comprobar el [sitio de UserVoice](https://msip.uservoice.com) para el estado de las características solicitadas.
 
-Encontrará información adicional y más detallada en el [blog técnico de Azure Information Protection](https://aka.ms/AIPblog). Por ejemplo, todos los meses se publica un resumen de los cambios en la documentación para informarle de las versiones nuevas, las actualizaciones para admitir instrucciones, y las correcciones y aclaraciones de las versiones existentes. Las entradas de estas actualizaciones de la documentación se titulan: "**Actualización de documentación de Azure Information Protection: \<mes de año>**".
+Encontrará información adicional y más detallada en el [blog técnico de Azure Information Protection](https://aka.ms/AIPblog). Por ejemplo, todos los meses se publica un resumen de los cambios en la documentación para informarle de las versiones nuevas, las actualizaciones para admitir instrucciones, y las correcciones y aclaraciones de las versiones existentes. Estas entradas de actualizaciones de documentación se titulan: "**Actualización de documentación de Azure Information Protection: \<mes de año>**".
 
 ## <a name="support-options-and-community-resources"></a>Opciones de soporte y recursos de la comunidad
 En las secciones siguientes se proporciona información sobre opciones de soporte técnico, solución de problemas y recursos de la comunidad.
@@ -50,9 +50,9 @@ Para otros clientes, use los canales de soporte técnico que figuran en la sigui
 
 |Suscripción|Instrucciones|
 |----------------|---------------|
-|Azure Information Protection (independiente)|1. Seleccione **Nueva solicitud de soporte técnico** en [Ayuda y soporte técnico](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade), en Azure Portal.<br /><br />2. Cuando se le solicite, en la hoja **Datos básicos**, elija **Técnico** como **Tipo de problema** y **Information Protection** como servicio. <br /><br />3. Además, asegúrese de que una de las siguientes opciones esté activada:<br /><br />- **Suscripción con soporte técnico incluido**: si dispone de una suscripción de pago o de prueba de Azure, verá esta opción.<br /><br /> - **Soporte técnico: incluido**: esta opción aparece si no tiene una suscripción de Azure.|
+|Azure Information Protection (independiente)|1. Seleccione **Nueva solicitud de soporte técnico** en [Ayuda y soporte técnico](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade), en Azure Portal.<br /><br />2. Cuando se le solicite, en la hoja **Datos básicos**, elija **Técnico** como **Tipo de problema** y **Information Protection** como servicio. <br /><br />3. Además, asegúrese de que una de las siguientes opciones esté activada:<br /><br />- **Suscripción con soporte técnico incluido**: Verá esta opción si dispone de una suscripción de pago o de prueba de Azure.<br /><br /> - **Soporte técnico incluido**: Verá esta opción si no tiene una suscripción de Azure.|
 |Azure Information Protection con una suscripción de Office 365<br /><br />Azure Rights Management con una suscripción de Office 365|Vea [Contacto con el equipo de soporte técnico para productos empresariales: ayuda para administradores](https://support.office.com/en-us/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) para obtener más información sobre cómo ponerse en contacto con el equipo de soporte técnico a través del portal de administración de Office 365, así como para obtener números de teléfono del contacto.|
-|Azure Information Protection con Enterprise Mobility + Security (EMS)|1. Seleccione **Nueva solicitud de soporte técnico** en [Ayuda y soporte técnico](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade), en Azure Portal.<br /><br />2. Cuando se le solicite, en la hoja **Datos básicos**, elija **Técnico** como **Tipo de problema** y **Information Protection** como servicio. <br /><br />3. Además, asegúrese de que una de las siguientes opciones esté activada:<br /><br />- **Suscripción con soporte técnico incluido**: si dispone de una suscripción de pago o de prueba de Azure, verá esta opción.<br /><br /> - **Soporte técnico: incluido**: esta opción aparece si no tiene una suscripción de Azure.|
+|Azure Information Protection con Enterprise Mobility + Security (EMS)|1. Seleccione **Nueva solicitud de soporte técnico** en [Ayuda y soporte técnico](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade), en Azure Portal.<br /><br />2. Cuando se le solicite, en la hoja **Datos básicos**, elija **Técnico** como **Tipo de problema** y **Information Protection** como servicio. <br /><br />3. Además, asegúrese de que una de las siguientes opciones esté activada:<br /><br />- **Suscripción con soporte técnico incluido**: Verá esta opción si dispone de una suscripción de pago o de prueba de Azure.<br /><br /> - **Soporte técnico incluido**: Verá esta opción si no tiene una suscripción de Azure.|
 |Azure Information Protection con Microsoft 365 Enterprise|Utilice los [canales de soporte técnico de Office 365](https://support.office.com/en-us/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).|
 
 Para obtener opciones de soporte técnico adicionales, pregunte a su contacto de Microsoft. 
@@ -61,6 +61,8 @@ Para obtener opciones de soporte técnico adicionales, pregunte a su contacto de
 ### <a name="self-help"></a>Autoayuda
 
 Pruebe el [Bot de ayuda de Azure Information Protection](help-bot.md), actualmente en versión beta.
+
+Laboratorios prácticos: Vea [Azure Information Protection Hands On Lab](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Azure-Information-Protection-Hands-On-Lab/ba-p/265433) (Laboratorios prácticos de Azure Information Protection)
 
 Vídeos a petición:
 
@@ -74,13 +76,13 @@ Solución de problemas:
 
 - Si tiene alguna pregunta sobre cómo funciona algo: compruebe si ya se ha respondido su pregunta en la página [Preguntas más frecuentes](faqs.md).
 
-- Si tiene alguna pregunta sobre una instrucción de soporte técnico para Azure Information Protection: vea la información de [Requisitos](requirements.md) que se actualiza periódicamente.
+- Si tiene alguna pregunta sobre una instrucción de soporte técnico para Azure Information Protection: Vea la información de [Requisitos](requirements.md), que se actualiza periódicamente.
 
-- Para más información para ayudar a los usuarios finales, al departamento de soporte técnico y a los administradores que configuran servicios y aplicaciones que usan el servicio de protección de Azure Information Protection, vea [Helping users to protect files](help-users.md) (Ayuda a los usuarios para proteger archivos).
+- Para más información para ayudar a los usuarios finales, al departamento de soporte técnico y a los administradores que configuran servicios y aplicaciones que usan el servicio de protección de Azure Information Protection: vea [Ayuda a los usuarios para proteger archivos mediante el servicio Azure Rights Management](help-users.md).
 
-- Si ha implementado el conector de Rights Management para los servidores locales: vea la información de [supervisión](monitor-rms-connector.md), que incluye detalles sobre las entradas del registro de eventos, contadores de rendimiento y registro.
+- Si ha implementado el conector Rights Management para los servidores locales: vea la información de [supervisión](monitor-rms-connector.md), que incluye detalles sobre las entradas del registro de eventos, contadores de rendimiento y registro.
 
-- Para el cliente de Azure Information Protection para Windows, consulte la sección [Comprobaciones de instalación y solución de problemas](./rms-client/client-admin-guide.md#installation-checks-and-troubleshooting) de la guía del administrador y asegúrese de que esté usando una [versión compatible](./rms-client/client-version-release-history.md#servicing-information-and-timelines).
+- Para el cliente de Azure Information Protection para Windows: vea la sección [Comprobaciones de instalación y solución de problemas](./rms-client/client-admin-guide.md#installation-checks-and-troubleshooting) de la guía del administrador y asegúrese de que esté usando una [versión compatible](./rms-client/client-version-release-history.md#servicing-information-and-timelines).
 
 ### <a name="community-resources"></a>Recursos de la Comunidad
 

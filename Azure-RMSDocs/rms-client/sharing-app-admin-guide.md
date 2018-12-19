@@ -10,19 +10,19 @@ ms.service: information-protection
 ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7be58d201ddd24497ff79935554c2a68efd04a3f
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 84f013014f0256a01c30d9518089f2604ed9a668
+ms.sourcegitcommit: b2414cc00d50ccefe10f8c3719eb3f6c1e78fc65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024440"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53246197"
 ---
 # <a name="rights-management-sharing-application-administrator-guide"></a>Guía del administrador de la aplicación Rights Management sharing
 
->*Se aplica a: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 con SP1, Windows 8 y Windows 8.1*
+>*Se aplica a: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 con SP1, Windows 8, Windows 8.1*
 
 > [!IMPORTANT]
-> **Finalización de notificación de compatibilidad**: la aplicación Rights Management sharing para Windows se va a sustituir por el [cliente de Azure Information Protection](aip-client.md). La aplicación anterior dejará de ser compatible el 31 de enero de 2019. 
+> **Notificación de fin de compatibilidad**: la aplicación Rights Management sharing para Windows se va a sustituir por el [cliente de Azure Information Protection](aip-client.md). La aplicación anterior dejará de ser compatible el 31 de enero de 2019. 
 
 Use la siguiente información si es responsable de la aplicación Microsoft Rights Management sharing en una red de empresa, o si desea más información técnica que la que aparece en [Manual del usuario de la aplicación Rights Management sharing](sharing-app-user-guide.md) o en [FAQ for Microsoft Rights Management Sharing Application for Windows](https://go.microsoft.com/fwlink/?LinkId=303971) (Preguntas más frecuentes sobre la aplicación Microsoft Rights Management sharing para Windows):
 
@@ -33,11 +33,11 @@ Para obtener información técnica general sobre la aplicación Rights Managemen
 ## <a name="automatic-deployment-for-the-microsoft-rights-management-sharing-application"></a>Implementación automática de la aplicación Microsoft Rights Management sharing
 La versión de Windows de la aplicación RMS sharing admite una instalación con scripts, lo que la convierte en adecuada para las implementaciones empresariales.
 
-Los únicos requisitos previos para las instalaciones son que los equipos ejecuten como mínimo Windows 7 Service Pack 1 y que esté instalado Microsoft Framework, versión mínima 4.0. Si necesita instalar Microsoft .NET Framework 4.0, puede [descargarlo para la instalación desde el Centro de descarga de Microsoft](http://www.microsoft.com/download/details.aspx?id=17718).
+Los únicos requisitos previos para las instalaciones son que los equipos ejecuten como mínimo Windows 7 Service Pack 1 y que esté instalado Microsoft Framework, versión mínima 4.0. Si necesita instalar Microsoft .NET Framework 4.0, puede [descargarlo para la instalación desde el Centro de descarga de Microsoft](https://www.microsoft.com/download/details.aspx?id=17718).
 
 ### <a name="to-download-the-rms-sharing-application-for-automatic-deployment"></a>Para descargar la aplicación RMS sharing para la implementación automática
 
-1.  Vaya a la página [Aplicación Microsoft Rights Management sharing para Windows](http://www.microsoft.com/download/details.aspx?id=40857) en el Centro de descarga de Microsoft y haga clic en **Descargar**.
+1.  Vaya a la página [Aplicación Microsoft Rights Management sharing para Windows](https://www.microsoft.com/download/details.aspx?id=40857) en el Centro de descarga de Microsoft y haga clic en **Descargar**.
 
 2.  Seleccione y descargue los archivos que necesita. Hay dos paquetes de instalación del cliente: uno para Windows de 64 bits (Microsoft Rights Management sharing application x64.zip) y otro para Windows de 32 bits (Microsoft Rights Management sharing application x86.zip).
 
@@ -92,7 +92,7 @@ Para comprobar que la instalación se realizó correctamente, consulte la secci�
 
     1.  Inicie sesión un equipo con una cuenta de administrador local.
 
-    2.  En ese equipo, [descargue e instale el Ayudante para el inicio de sesión de Microsoft Online](http://www.microsoft.com/download/details.aspx?id=28177).
+    2.  En ese equipo, [descargue e instale el Ayudante para el inicio de sesión de Microsoft Online](https://www.microsoft.com/download/details.aspx?id=28177).
 
     3.  Ejecute el siguiente comando para mostrar en la pantalla la dirección URL del servicio de certificación, que luego puede copiar y guardar para el siguiente paso:
 
@@ -217,7 +217,7 @@ Puede usar los archivos de registro de instalación para comprobar si la instala
 
     Una instalación correcta tiene un código de salida de 0 y cualquier otro número indica un error en la instalación.
 
-    Nombre de archivo de registro de ejemplo: **C:\temp\RMS_Installer_9352fc91-1982-43bf-958a-2ef1fe9c2ed0\RMInstaller.log**
+    Nombre del archivo de registro de ejemplo: **C:\temp\RMS_Installer_9352fc91-1982-43bf-958a-2ef1fe9c2ed0\RMInstaller.log**
 
 ### <a name="to-verify-installation-success-for-the-rms-sharing-application-for-office2010-and-azure-information-protection"></a>Para comprobar que la instalación de la aplicación RMS sharing para Office 2010 y Azure Information Protection se realizó correctamente
 
@@ -225,7 +225,7 @@ Puede usar los archivos de registro de instalación para comprobar si la instala
 
     Una instalación correcta tiene un código de salida de 0 y cualquier otro número indica un error en la instalación.
 
-    Nombre de archivo de registro de ejemplo: **C:\temp\RMS_Installer_9352fc91-1982-43bf-958a-2ef1fe9c2ed0**
+    Nombre del archivo de registro de ejemplo: **C:\temp\RMS_Installer_9352fc91-1982-43bf-958a-2ef1fe9c2ed0**
 
 2.  Para comprobar que el comando RMSSetup.exe se ha ejecutado correctamente, el usuario debe tener los siguientes archivos creados en su carpeta *%localappdata%\microsoft\drm*:
 
@@ -247,7 +247,7 @@ Puede usar los archivos de registro de instalación para comprobar si la instala
 
     Una instalación correcta tiene un código de salida de 0 y cualquier otro número indica un error en la instalación.
 
-    Nombre de archivo de registro de ejemplo: **C:\temp\RMS_Installer_9352fc91-1982-43bf-958a-2ef1fe9c2ed0**
+    Nombre del archivo de registro de ejemplo: **C:\temp\RMS_Installer_9352fc91-1982-43bf-958a-2ef1fe9c2ed0**
 
 2.  Para comprobar que el comando aadrmprep.exe se ha ejecutado correctamente, busque en cada equipo el siguiente texto en el archivo de registro de instalación: **aadrmprep.exe exited with status SUCCESS**
 
@@ -274,21 +274,21 @@ Puede usar los archivos de registro de instalación para comprobar si la instala
 
 ### <a name="to-verify-installation-success-for-the-rms-sharing-application-and-office-add-in-only"></a>Para comprobar que la instalación de la aplicación RMS sharing y solo el complemento de Office se ha realizado correctamente
 
-1.  Para comprobar que el comando Setup_ipviewer.exe se ha ejecutado correctamente, busque el siguiente texto en el archivo de registro de instalación: **Resultado de la instalación: 0**
+1.  Para comprobar que el comando Setup_ipviewer.exe se ha ejecutado correctamente, busque el texto siguiente en el archivo de registro de instalación: **Resultado de la instalación: 0**
 
     Líneas de ejemplo de una instalación correcta:
 
-    **MSI (s) (F0:B8) [14:19:57:854]: Producto: Cliente de Active Directory Rights Management Services 2.1 -- La instalación se completó correctamente.**
+    **MSI (s) (F0:B8) [14:19:57:854]: Producto: Active Directory Rights Management Services Client 2.1: instalación finalizada correctamente.**
 
-    **MSI (s) (F0:B8) [14:19:57:854]: Windows Installer instaló el producto. Nombre del producto: Cliente de Active Directory Rights Management Services 2.1. Product Version: 1.0.1179.1. Product Language: 1033. Fabricante: Microsoft Corporation Resultado de la instalación: 0.**
+    **MSI (s) (F0:B8) [14:19:57:854]: Windows Installer instaló el producto. Nombre del producto: Active Directory Rights Management Services Client 2.1. Versión del producto: 1.0.1179.1. Product Language: 1033. Fabricante: Microsoft Corporation Resultado de la instalación: 0.**
 
-2.  Para comprobar que el complemento de Office se ha ejecutado correctamente en cada equipo, busque el siguiente texto en el archivo de registro de instalación: **Resultado de la instalación: 0**
+2.  Para comprobar que el complemento de Office se ha instalado correctamente, en cada equipo, busque el texto siguiente en el archivo de registro de instalación: **Resultado de la instalación: 0**
 
     Líneas de ejemplo de una instalación correcta:
 
-    **MSI (s) (9C:88) [18:49:04:007]: Producto: Complementos de Office para Microsoft RMS -- La instalación se completó correctamente.**
+    **MSI (s) (9C:88) [18:49:04:007]: Producto: Complementos de Office para Microsoft RMS: instalación finalizada correctamente.**
 
-    **MSI (s) (9C:88) [18:49:04:007]: Windows Installer instaló el producto. Nombre del producto: Complementos de Office para Microsoft RMS. Product Version: 1.0.7. Product Language: 1033. Fabricante: Microsoft. Resultado de la instalación: 0.**
+    **MSI (s) (9C:88) [18:49:04:007]: Windows Installer instaló el producto. Product Name: Microsoft RMS Office Addins. Product Version: 1.0.7. Idioma del producto: 1033. Fabricante: Microsoft. Resultado de la instalación: 0.**
 
 ## <a name="uninstall-commands"></a>Comandos de desinstalación
 No todos los comandos de instalación necesarios para estas implementaciones admiten un comando de desinstalación. Puede desinstalar el cliente de AD RMS y la aplicación sharing, y también puede desinstalar el complemento de Office. Use los siguientes comandos para desinstalar estos elementos.

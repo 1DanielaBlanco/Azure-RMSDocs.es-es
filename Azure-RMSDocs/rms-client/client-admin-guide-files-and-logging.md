@@ -4,18 +4,18 @@ description: Información sobre el registro de uso y los archivos de cliente de 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/08/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 5a34ab85-773f-4782-ba09-c321cddf5bc0
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: d935d5eafd3d893b67bbdccb1893bf67d418ae79
-ms.sourcegitcommit: 76e1b7c0255700813590be62d94b19338bf6c201
+ms.openlocfilehash: 2aa0e470d9a2801b695c6b2c9d922836c010690c
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48866125"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53304917"
 ---
 # <a name="admin-guide-azure-information-protection-client-files-and-client-usage-logging"></a>Guía del administrador: Registro de uso de cliente y archivos de cliente de Azure Information Protection
 
@@ -47,23 +47,23 @@ El cliente registra la actividad del usuario en el registro de eventos local de 
 
 - Acción:
 
-    - Definir etiqueta: id. de información 101
+    - Definir etiqueta:  Id. de información 101
     
-    - Definir etiqueta (inferior): id. de información 101
+    - Definir etiqueta (inferior):  Id. de información 101
     
-    - Definir etiqueta (superior): id. de información 101
+    - Definir etiqueta (superior): Id. de información 101
     
-    - Quitar etiqueta: id. de información 104
+    - Quitar etiqueta: Id. de información 104
    
-    - Sugerencia recomendada: información 105
+    - Sugerencia recomendada: Información 105
     
-    - Aplicar protección personalizada: id. de información 201
+    - Aplicar protección personalizada: Id. de información 201
     
-    - Quitar protección personalizada: id. de información 202
+    - Quitar protección personalizada: Id. de información 202
     
-    - Inicio de sesión (operativo): id. de información 902
+    - Inicio de sesión (operativo): Id. de información 902
     
-    - Descargar directiva (operativo): id. de información 901
+    - Descargar directiva (operativo): Id. de información 901
     
 - Origen de la acción:
     

@@ -4,16 +4,16 @@ description: Puede eliminar o cambiar de orden las etiquetas de Azure Informatio
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/04/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ae0f603f-a632-4ac5-a3f7-6358d4255eff
-ms.openlocfilehash: ccb5f4ff84e590640ed4e5204d2170384611775f
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 1f957874649fe9e5697c3dd0164b0b0b255d1e6e
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023403"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53304883"
 ---
 # <a name="how-to-delete-or-reorder-a-label-for-azure-information-protection"></a>Eliminación o cambio de orden de una etiqueta en Azure Information Protection
 
@@ -55,13 +55,13 @@ Utilice las instrucciones siguientes para realizar estos cambios.
     
     Por ejemplo, en el menú del concentrador, haga clic en **Todos los servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
-2. En la opción de menú **Clasificaciones** > **Etiquetas**: en la hoja **Azure Information Protection: etiquetas**, realice una o varias de las acciones siguientes: 
+2. Desde la opción de menú **Clasificaciones** > **Etiquetas**: En la hoja **Azure Information Protection: Etiquetas**, realice una o varias de las siguientes acciones: 
 
     - Para eliminar una etiqueta: haga clic con el botón derecho o seleccione el menú contextual (**...**) de la etiqueta que quiere eliminar, haga clic en **Eliminar esta etiqueta** y haga clic en **Aceptar** para confirmar. 
 
-    - Para deshabilitar una etiqueta: seleccione la etiqueta que quiera deshabilitar. En la hoja **Etiqueta**, en **Habilitado**, haga clic en **Desactivado** y luego haga clic en **Guardar**.
+    - Para desactivar una etiqueta: seleccione la etiqueta que quiera desactivar. En la hoja **Etiqueta**, en **Habilitado**, haga clic en **Desactivado** y luego haga clic en **Guardar**.
 
-    - Para cambiar el orden de una etiqueta: seleccione o haga clic con el botón derecho en el menú contextual (**...**) de la etiqueta cuyo orden quiera cambiar y haga clic en **Subir** o **Bajar** hasta que la etiqueta se sitúe en el orden deseado.  
+    - Para cambiar el orden de una etiqueta: seleccione o haga clic con el botón derecho en el menú contextual (**...**) de la etiqueta cuyo orden quiere cambiar y haga clic en **Subir** o **Bajar** hasta que la etiqueta se sitúe en el orden quieredo.  
 
 ## <a name="next-steps"></a>Pasos siguientes
 

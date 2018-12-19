@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: b3a7127b-6d24-4439-bc4e-2a0a325e8ea3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 96746e39d564c87471205fa442976a3904ddf992
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: e6586c60934bf0db48295c3d9a7a40ece84f4ad2
+ms.sourcegitcommit: 4caf3aa13506554928c5fda38994301ddcbdfb41
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023828"
+ms.locfileid: "53068867"
 ---
 # <a name="compliance-and-supporting-information-for-azureinformation-protection"></a>Información complementaria y de cumplimiento para Azure Information Protection
 
@@ -39,15 +39,15 @@ Aquí tiene alguna información pertinente que puede ayudar a su asesor jurídic
 
 ## <a name="legal-and-privacy"></a>Información legal y privacidad
 
-- Para información contractual de Microsoft Azure: [Contrato de Microsoft Azure](http://azure.microsoft.com/support/legal/subscription-agreement/)
+- Para información contractual de Microsoft Azure: [Contrato de Microsoft Azure](https://azure.microsoft.com/support/legal/subscription-agreement/)
 
-- Para información de privacidad de Microsoft Azure: [Declaración de privacidad de Microsoft Azure](http://azure.microsoft.com/support/legal/privacy-statement/)
+- Para información de privacidad de Microsoft Azure: [Declaración de privacidad de Microsoft Azure](https://azure.microsoft.com/support/legal/privacy-statement/)
 
 ## <a name="security-compliance-and-auditing"></a>Seguridad, cumplimiento y auditoría
 
 Consulte la sección [Security, compliance, and regulatory requirements](./what-is-azure-rms.md#security-compliance-and-regulatory-requirements) (Requisitos de seguridad, normativos y regulatorios) del artículo [What problems does Azure RMS solve?](./azure-rms-problems-it-solves.md) (¿Qué problemas resuelve Azure RMS?) para obtener información sobre las certificaciones específicas del servicio de Azure Rights Management. Además:
 
-- Para certificaciones externas de Azure Information Protection: [Centro de confianza de Microsoft Azure](http://azure.microsoft.com/support/trust-center/)
+- Para certificaciones externas de Azure Information Protection: [Centro de confianza de Microsoft Azure](https://azure.microsoft.com/support/trust-center/)
 
 - Para obtener información sobre FIPS 140: [Validación conforme a FIPS 140](https://technet.microsoft.com/library/security/cc750357.aspx)
 

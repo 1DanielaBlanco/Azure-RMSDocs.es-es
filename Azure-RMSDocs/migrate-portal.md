@@ -10,22 +10,22 @@ ms.service: information-protection
 ms.assetid: 57a1073c-02e0-441b-bf49-c6b72fdba24f
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 0f94a36f7653ef4aff590bb6815c75210768f7c5
-ms.sourcegitcommit: 227f54a8e90aa57d778ab60c646179c10e5edb44
+ms.openlocfilehash: 1988552916494ec6673f7439c0b132ccf87786c2
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51272370"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53174087"
 ---
 # <a name="tasks-that-you-used-to-do-with-the-azure-classic-portal"></a>Tareas que solía realizar con el Portal de Azure clásico
 
->*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 ¿Está acostumbrado al Portal de Azure clásico para administrar el servicio Azure Rights Management y necesita algo de ayuda para migrar a Azure Portal?
 
 El portal clásico de Azure dejó de estar disponible el **8 de enero de 2018**. Tras esta fecha, no podrá administrar el servicio Azure Rights Management y las plantillas personalizadas desde el portal clásico. Si intenta obtener acceso al portal clásico, verá un vínculo que le llevará al nuevo Azure Portal.
 
-Para más información sobre la retirada del portal clásico, vea el anuncio de la entrada de blog [Marching into the future of the Azure AD admin experience: retiring the Azure classic portal](https://cloudblogs.microsoft.com/enterprisemobility/2017/09/18/marching-into-the-future-of-the-azure-ad-admin-experience-retiring-the-azure-classic-portal/) (El futuro de la experiencia de administración de Azure AD: retirada del portal clásico de Azure). Para conocer la extensión temporal de la fecha de retirada original, vea [Update on retirement of Azure AD classic portal experience and migration of conditional access policies](https://cloudblogs.microsoft.com/enterprisemobility/2017/11/29/update-on-retirement-of-azure-ad-classic-portal-experience-and-migration-of-conditional-access-policies/) (Actualización sobre la retirada de la experiencia del portal clásico de Azure AD y migración de las directivas de acceso condicional).
+Para más información sobre la retirada del portal clásico, vea la entrada de blog del anuncio: [Marching into the future of the Azure AD admin experience: retiring the Azure classic portal](https://cloudblogs.microsoft.com/enterprisemobility/2017/09/18/marching-into-the-future-of-the-azure-ad-admin-experience-retiring-the-azure-classic-portal/) (El futuro de la experiencia de administración de Azure AD: retirada del Portal de Azure clásico). Para conocer la extensión temporal de la fecha de retirada original, vea [Update on retirement of Azure AD classic portal experience and migration of conditional access policies](https://cloudblogs.microsoft.com/enterprisemobility/2017/11/29/update-on-retirement-of-azure-ad-classic-portal-experience-and-migration-of-conditional-access-policies/) (Actualización sobre la retirada de la experiencia del portal clásico de Azure AD y migración de las directivas de acceso condicional).
 
 ## <a name="how-to-do-your-familiar-admin-tasks"></a>Cómo realizar tareas de administración familiares
 
@@ -55,7 +55,7 @@ Nueva funcionalidad en Azure Portal:
 
 - Puede convertir plantillas en etiquetas, con lo que se administra un único objeto en lugar de una plantilla y una etiqueta de forma independiente. Para obtener instrucciones, vea [Para convertir plantillas en etiquetas](configure-policy-templates.md#to-convert-templates-to-labels).
 
-- Compatibilidad con otros roles de administrador: mientras que en el portal de Azure clásico anterior había que iniciar sesión como administrador global para configurar Azure Rights Management, en Azure Portal puede iniciar sesión para configurar Azure Information Protection con una cuenta que tenga cualquiera de los siguientes roles administrativos: **administrador global**, **administrador de seguridad** o **administrador de Information Protection**. Para más información sobre cada uno de estos roles, vea la sección [Roles disponibles](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#available-roles) de la documentación de Azure Active Directory.
+- Compatibilidad con otros roles de administrador: mientras que en el Portal de Azure clásico había que iniciar sesión como administrador global para configurar Azure Rights Management, en Azure Portal puede iniciar sesión para configurar Azure Information Protection mediante una cuenta que tenga cualquiera de los siguientes roles de administrador: **Administrador global**, **Administrador de seguridad** o **Administrador de Information Protection**. Para más información sobre cada uno de estos roles, vea la sección [Roles disponibles](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#available-roles) de la documentación de Azure Active Directory.
 
 Los cmdlets de PowerShell para crear y administrar plantillas y para activar o desactivar el servicio siguen admitiéndose sin cambios.
 

@@ -4,18 +4,18 @@ description: Información sobre la configuración del registro de servidores med
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/16/2018
-ms.topic: article
+ms.date: 12/06/2018
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ed3e9a3d-0f7c-4abc-9d0b-aa3b18403d39
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9b99f914e78adafbcfd0f01f0937c6d636f43159
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 6af7fe3a7b23f655a79d67421f67292416792792
+ms.sourcegitcommit: 0632c89a316ff31f588e9752dd474445983b1690
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42808703"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53120592"
 ---
 # <a name="registry-setting-for-the-rights-management-connector"></a>Configuración del Registro para el conector de Rights Management
 
@@ -28,7 +28,7 @@ Instrucciones para cuando use esta configuración:
 
 -   *\<YourTenantURL>* es la dirección URL del servicio Azure Rights Management para su inquilino de Azure Information Protection. Para encontrar este valor:
 
-    1.  Ejecute el cmdlet [Get-AadrmConfiguration](http://msdn.microsoft.com/library/windowsazure/dn629410.aspx) para el servicio Azure Rights Management. Si aún no ha instalado el módulo de Windows PowerShell para Azure RMS, vea [Instalación del módulo de PowerShell para AADRM](install-powershell.md).
+    1.  Ejecute el cmdlet [Get-AadrmConfiguration](/powershell/module/aadrm/get-aadrmconfiguration) para el servicio Azure Rights Management. Si aún no ha instalado el módulo de Windows PowerShell para Azure RMS, vea [Instalación del módulo de PowerShell para AADRM](install-powershell.md).
 
     2.  En la salida, identifique el valor **LicensingIntranetDistributionPointUrl** .
 

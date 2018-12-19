@@ -4,20 +4,20 @@ description: Una vez protegidos los documentos, puede realizar un seguimiento de
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/28/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 643c762e-23ca-4b02-bc39-4e3eeb657a1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 485b999ce8b5adcbe284d0ea8286cdf1183ac8da
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 251de2d7e959dc46bcf95c003fd8924cc4c34d13
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151048"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305238"
 ---
-# <a name="user-guide-track-and-revoke-your-documents-when-you-use-azure-information-protection"></a>Guía del usuario: Seguimiento y revocación de documentos cuando se usa Azure Information Protection
+# <a name="user-guide-track-and-revoke-your-documents-when-you-use-azure-information-protection"></a>Manual del usuario: Seguimiento y revocación de documentos cuando se usa Azure Information Protection
 
 >*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8 y Windows 7 con SP1*
 
@@ -95,11 +95,11 @@ Después de haber registrado el documento protegido mediante el uso de las aplic
 
 - Para un equipo con Windows, un equipo Mac o un dispositivo móvil, visite el [sitio de Seguimiento de documentos](https://go.microsoft.com/fwlink/?LinkId=529562).
 
-    **Exploradores admitidos**: se recomienda usar por lo menos la versión 10 de Internet Explorer, pero puede usar cualquiera de los siguientes exploradores para el sitio de Seguimiento de documentos:
+    **Exploradores admitidos**: Se recomienda usar por lo menos la versión 10 de Internet Explorer, pero puede usar cualquiera de los siguientes exploradores para el sitio de seguimiento de documentos:
 
     - Internet Explorer: La versión 10 como mínimo
 
-    - Internet Explorer 9 con al menos MS12-037: Actualización de seguridad acumulativa para Internet Explorer:: June 12, 2012
+    - Internet Explorer 9 con al menos MS12-037: Actualización de seguridad acumulativa para Internet Explorer: 12 de junio de 2012
 
     - Mozilla Firefox: La versión 12 como mínimo
 

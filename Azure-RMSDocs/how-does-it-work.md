@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 19b45c3e24de5eba9f0bd243baf73797b66431f7
-ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
+ms.openlocfilehash: 7c1d488ff738b0eea9042f1580ea74b7099f3ac5
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51026781"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53174121"
 ---
 # <a name="how-does-azure-rms-work-under-the-hood"></a>¿Cómo funciona Azure RMS? En segundo plano
 
->*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Una cuestión importante que hay que comprender sobre el funcionamiento de Azure RMS es que el servicio de protección de datos de Azure Information Protection no ve ni almacena sus datos como parte del proceso de protección. La información que protege nunca se envía a Azure, ni se almacena allí, a menos que la almacene de manera explícita en Azure o use otro servicio en la nube que la almacene en Azure. Azure RMS simplemente hace que los datos de un documento sean ilegibles para cualquiera que no sea un usuario y servicio autorizado:
 
@@ -44,7 +44,7 @@ Aunque no necesite saber en detalle cómo funciona esta tecnología, es posible 
 |Controles criptográficos|Uso en Azure RMS|
 |-|-|
 |Algoritmo: AES<br /><br />Longitud de clave: 128 bits y 256 bits [[1]](#footnote-1)|Protección de documentación|
-|Algoritmo: RSA<br /><br />Longitud de la clave: 2048 bits [[2]](#footnote-2)|Protección de claves|
+|Algoritmo: RSA<br /><br />Longitud de clave: 2048 bits [[2]](#footnote-2)|Protección de claves|
 |SHA-256|Firma de certificados|
 
 ###### <a name="footnote-1"></a>Nota al pie 1 
@@ -104,11 +104,11 @@ Cuando un usuario protege un documento, el cliente de RMS lleva a cabo las sigui
 
 ![Protección del documento de RMS, paso 1: se cifra el documento](./media/AzRMS_documentprotection1.png)
 
-**Qué ocurre en el paso 1**: El cliente de RMS crea una clave aleatoria (la clave de contenido) y descifra el documento usando esta clave con el algoritmo de cifrado simétrico de AES.
+**Qué ocurre en el paso 1**: El cliente de RMS crea una clave aleatoria (la clave de contenido) y descifra el documento con esta clave con el algoritmo de cifrado simétrico de AES.
 
 ![Protección del documento de RMS, paso 2: se crea una directiva](./media/AzRMS_documentprotection2.png)
 
-**Qué ocurre en el paso 2**: El cliente de RMS crea a continuación un certificado que incluye una directiva para el documento que contiene a su vez los [derechos de uso](configure-usage-rights.md) para usuarios o grupos y otras restricciones, como una fecha de expiración. Estas opciones se pueden definir en una plantilla que un administrador haya configurado anteriormente, o bien especificarse al proteger el contenido (a veces se denomina “directiva ad-hoc”).   
+**Qué ocurre en el paso 2**: después el cliente de RMS crea un certificado que incluye una directiva para el documento que contiene a su vez los [derechos de uso](configure-usage-rights.md) para usuarios o grupos y otras restricciones, como una fecha de expiración. Estas opciones se pueden definir en una plantilla que un administrador haya configurado anteriormente, o bien especificarse al proteger el contenido (a veces se denomina “directiva ad-hoc”).   
 
 El atributo de Azure AD principal que se usa para identificar los usuarios y grupos seleccionados es el atributo ProxyAddresses de Azure AD, que almacena todas las direcciones de correo electrónico de un usuario o grupo. Sin embargo, si una cuenta de usuario no tiene ningún valor en el atributo ProxyAddresses de AD, se utiliza el valor de UserPrincipalName del usuario.
 
@@ -116,7 +116,7 @@ El cliente de RMS usa a continuación la clave de la organización que se obtuvo
 
 ![Protección del documento de RMS, paso 3: la directiva se inserta en el documento](./media/AzRMS_documentprotection3.png)
 
-**Qué ocurre en el paso 3**: Por último, el cliente de RMS inserta la directiva en un archivo con el cuerpo del documento cifrado anteriormente y, en conjunto, constituyen un documento protegido.
+**Qué ocurre en el paso 3**: Por último, el cliente de RMS incrusta la directiva en un archivo con el cuerpo del documento cifrado anteriormente, que en conjunto, constituyen un documento protegido.
 
 Este documento se puede almacenar en cualquier lugar o compartir mediante cualquier método y la directiva siempre permanece con el documento cifrado.
 
@@ -129,7 +129,7 @@ Cuando un usuario quiere consumir un documento protegido, el cliente de RMS se i
 
 ![Consumo de documento de RMS, paso 2: la licencia de uso se devuelve al cliente](./media/AzRMS_documentconsumption2.png)
 
-**Qué ocurre en el paso 2**: El servicio extrae después la clave de contenido de AES desde la directiva descifrada. Esta clave se cifra a continuación con la clave de RSA pública del usuario que se obtuvo con la solicitud.
+**Qué ocurre en el paso 2**: El servicio extrae a continuación la clave de contenido de AES desde la directiva descifrada. Esta clave se cifra a continuación con la clave de RSA pública del usuario que se obtuvo con la solicitud.
 
 La clave de contenido que se ha vuelto a cifrar se incrusta a continuación en una licencia de uso cifrada con la lista de derechos de usuario, que se devuelve a continuación al cliente de RMS.
 
@@ -146,7 +146,7 @@ El cliente también descifra la lista de derechos y los pasa a la aplicación, q
 ### <a name="variations"></a>Variaciones
 Los tutoriales anteriores cubren los escenarios estándar pero hay algunas variaciones:
 
-- **Protección de correo electrónico**: al usarse Exchange Online y Cifrado de mensajes de Office 365 con nuevas funcionalidades para proteger mensajes de correo electrónico, la autenticación para el consumo también puede usar la federación con un proveedor de identidades sociales o con un código de acceso de un solo uso. A continuación, los flujos del proceso son muy similares, solo que el consumo de contenido se produce del lado del servicio en una sesión del explorador web a través de una copia temporalmente en caché del correo electrónico saliente.
+- **Protección de correo electrónico**: al usarse Exchange Online y Cifrado de mensajes de Office 365 con nuevas funciones para proteger mensajes de correo electrónico, la autenticación para el consumo también puede usar la federación con un proveedor de identidades sociales o con un código de acceso de un solo uso. A continuación, los flujos del proceso son muy similares, solo que el consumo de contenido se produce del lado del servicio en una sesión del explorador web a través de una copia temporalmente en caché del correo electrónico saliente.
 
 - **Dispositivos móviles**: cuando los dispositivos móviles protegen o consumen archivos con el servicio Azure Rights Management, los flujos del proceso son mucho más sencillos. Los dispositivos móviles no recorren primero el proceso de inicialización de usuario porque en su lugar, cada transacción (para proteger o consumir contenido) es independiente. Como con equipos de Windows, los dispositivos móviles se conectan al servicio Azure Rights Management y autentican. Para proteger contenido, los dispositivos móviles envían una directiva y el servicio Azure Rights Management les envía una licencia de publicación y una clave simétrica para proteger el documento. Para consumir contenido, cuando los dispositivos móviles se conectan al servicio Azure Rights Management y autentican, envían la directiva del documento al servicio Azure Rights Management y solicitan una licencia de usuario para consumir el documento. En respuesta, el servicio Azure Rights Management envía las restricciones y las claves necesarias a los dispositivos móviles. Ambos procesos usan TLS para proteger el intercambio de claves y otras comunicaciones.
 
@@ -156,7 +156,7 @@ Los tutoriales anteriores cubren los escenarios estándar pero hay algunas varia
 
 - **PDF protegido (.ppdf)**: cuando el servicio Azure Rights Management protege de manera nativa un archivo de Office, también crea una copia de dicho archivo y lo protege de la misma manera. La única diferencia es que la copia del archivo se encuentra en formato PPDF, que el visor del cliente de Azure Information Protection y la aplicación RMS sharing saben cómo abrir solo para visualización. Este escenario le permite enviar datos adjuntos protegidos mediante correo electrónico, sabiendo que el destinatario de un dispositivo móvil siempre podrá leerlos aunque el dispositivo móvil no tenga una aplicación que admita de manera nativa archivos de Office protegidos.
 
-- **Cuentas Microsoft** Azure Information Protection puede autorizar las direcciones de correo electrónico para su uso cuando se autentican con una cuenta Microsoft. Sin embargo, no todas las aplicaciones pueden abrir contenido protegido cuando se usa una cuenta Microsoft para la autenticación. [Información adicional](secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents).
+- **Cuentas de Microsoft**: Azure Information Protection puede autorizar las direcciones de correo electrónico para su uso cuando se autentican con una cuenta Microsoft. Sin embargo, no todas las aplicaciones pueden abrir contenido protegido cuando se usa una cuenta Microsoft para la autenticación. [Información adicional](secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents).
 
 ## <a name="next-steps"></a>Pasos siguientes
 

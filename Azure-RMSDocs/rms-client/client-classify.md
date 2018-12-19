@@ -4,27 +4,27 @@ description: Instrucciones sobre cómo clasificar sus documentos y correos elect
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/31/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: d65c7690-fab7-4823-845c-8c73903e9c79
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: e49cd5da0c34c8dd6fa537bca3d90ba56c32e690
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 823f252756e18d5a2ab2239afb85b58fc3aa048e
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150235"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305308"
 ---
-# <a name="user-guide-classify-a-file-or-email-by-using-azure-information-protection"></a>Guía del usuario: Clasificación de un archivo o correo electrónico con Azure Information Protection
+# <a name="user-guide-classify-a-file-or-email-by-using-azure-information-protection"></a>Manual del usuario: Clasificación de un archivo o correo electrónico con Azure Information Protection
 
->*Se aplica a: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8 y Windows 7 con SP1*
+>*Se aplica a: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 con SP1*
 
 > [!NOTE]
 > Siga estas instrucciones para clasificar (pero no proteger) los documentos y correos electrónicos. Si también necesita proteger los documentos y correos electrónicos, consulte las [instrucciones sobre clasificación y protección](client-classify-protect.md). Si no está seguro de qué conjunto de instrucciones debe usar, póngase en contacto con el administrador o el departamento de soporte técnico.
 
-La manera más fácil de clasificar sus documentos y correos electrónicos es crearlos o editarlos con las aplicaciones de escritorio de Office: **Word**, **Excel**, **PowerPoint** y **Outlook**. 
+La manera más fácil de clasificar sus documentos y correos electrónicos es crearlos y editarlos con las aplicaciones de escritorio de Office: **Word**, **Excel**, **PowerPoint** y **Outlook**. 
 
 Aun así, también puede clasificar archivos mediante el **Explorador de archivos**. Este método es compatible con tipos de archivo adicionales y es una manera muy útil de clasificar varios archivos a la vez. 
 
@@ -80,7 +80,7 @@ La Guía de administración contiene una lista completa de los tipos de archivo 
 
 2. En el cuadro de diálogo **Clasificar y proteger: Azure Information Protection**, use las etiquetas del mismo modo que en una aplicación de Office, lo que establece la clasificación definida por el administrador. 
     
-    Si no se puede seleccionar ninguna etiqueta (aparecen atenuadas), significa que el archivo seleccionado no admite la clasificación. Por ejemplo:
+    Si no se puede seleccionar ninguna etiqueta (aparecen atenuadas): El archivo seleccionado no admite la clasificación. Por ejemplo:
     
     ![Ninguna etiqueta disponible en el cuadro de diálogo Clasificar y proteger: Azure Information Protection**](../media/info-protect-dialog-labels-dimmed.png)
 

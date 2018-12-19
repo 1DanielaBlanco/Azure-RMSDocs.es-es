@@ -4,22 +4,22 @@ description: Instrucciones para comprobar que el servicio funciona como se esper
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/31/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 08664a01-81a5-4fa5-884c-7306ee55dba0
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a20718f50dc26d8d0310c40d6a89a48d0054bb66
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: b65cfcfeaca34e175d0ac622133ebcc717d59d0f
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150788"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305049"
 ---
 # <a name="verifying-the-azure-rights-management-service"></a>Comprobar el servicio Azure Rights Management
 
->*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Cuando el servicio Azure Rights Management de Azure Information Protection esté activado y haya completado los pasos de configuración adicionales necesarios para su organización, puede comprobar que el servicio de protección funciona del modo esperado. 
 

@@ -12,12 +12,12 @@ ms.assetid: 200D9B23-F35D-4165-9AC4-C482A5CE1D28
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 1adb21ac41a922ebb3636fcce9e13c9fd785930d
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 42a1944dcb643c1647ee7299456307815f1023b4
+ms.sourcegitcommit: 1cd4edd4ba1eb5e10cb61628029213eda316783a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151663"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266637"
 ---
 # <a name="how-to-register-and-rms-enable-your-app-with-azure-ad"></a>Cómo registrar y habilitar para RMS la aplicación con Azure AD
 
@@ -38,7 +38,7 @@ Cada API de RMS tiene una devolución de llamada que se debe implementar para ha
 - Android: interfaces [AuthenticationRequestCallback](https://msdn.microsoft.com/library/dn758255.aspx) y [AuthenticationCompletionCallback](https://msdn.microsoft.com/library/dn758250.aspx).
 - iOS / OS X: protocolo [MSAuthenticationCallback](https://msdn.microsoft.com/library/dn758312.aspx).
 -  Windows Phone / Window RT: interfaz [IAuthenticationCallback](https://msdn.microsoft.com/library/microsoft.rightsmanagement.iauthenticationcallback.aspx).
-- Linux: interfaz [IAuthenticationCallback](http://azuread.github.io/rms-sdk-for-cpp/classrmscore_1_1modernapi_1_1IAuthenticationCallback.html).
+- Linux: interfaz [IAuthenticationCallback](https://azuread.github.io/rms-sdk-for-cpp/classrmscore_1_1modernapi_1_1IAuthenticationCallback.html).
 
 ### <a name="what-library-to-use-for-authentication"></a>¿Qué biblioteca hay que usar para la autenticación?
 Para implementar la devolución de llamada de autenticación, debe descargar una biblioteca adecuada y configurar el entorno de desarrollo para que la use. Encontrará las bibliotecas de ADAL en GitHub para cada una de las plataformas correspondientes.
@@ -51,8 +51,7 @@ Los siguientes recursos contienen instrucciones para configurar el entorno y usa
 -   [Windows Azure Active Directory Authentication Library (ADAL) for dotnet](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet) (Biblioteca de autenticación de Windows Azure Active Directory (ADAL) para dotnet)
 -   En cuanto al SDK de Linux, la biblioteca de ADAL viene empaquetada con el origen del SDK, disponible en [Github](https://github.com/AzureAD/rms-sdk-for-cpp).
 
->[!NOTE]  
-> Se recomienda usar una de las ADAL, aunque use otras bibliotecas de autenticación.
+>[!NOTE]   Se recomienda usar una de las ADAL, aunque use otras bibliotecas de autenticación.
 
 ### <a name="authentication-parameters"></a>Parámetros de autenticación
 
@@ -72,8 +71,7 @@ y proviene del paso de registro anterior mediante el Portal de Azure.
 
     iOS: `<app-scheme>://<bundle-id>`
 
->[!NOTE] 
-> Si la aplicación no respeta estas instrucciones, probablemente los flujos de trabajo de Azure RMS y Azure AD no funcionen y sean incompatibles con Microsoft.com. Es más, se corre el riesgo de infringir el contrato de licencia de Rights Management si se usa un identificador de cliente no válido en una aplicación de producción.
+>[!NOTE]  Si la aplicación no respeta estas instrucciones, probablemente los flujos de trabajo de Azure RMS y Azure AD no funcionen y sean incompatibles con Microsoft.com. Es más, se corre el riesgo de infringir el contrato de licencia de Rights Management si se usa un identificador de cliente no válido en una aplicación de producción.
 
 ### <a name="what-should-an-authentication-callback-implementation-look-like"></a>¿Qué apariencia debe tener una implementación de devolución de llamada de autenticación?
 **Ejemplos de código de autenticación:** este SDK tiene código de ejemplo que muestra el uso de las devoluciones de llamada de autenticación. Para su comodidad, estos ejemplos de código se muestran aquí, así como en cada uno de los siguientes temas vinculados.

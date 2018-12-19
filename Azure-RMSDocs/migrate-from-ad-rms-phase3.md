@@ -5,21 +5,21 @@ author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 04/11/2018
-ms.topic: article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 86b21f531521a5f56d90dfb2ddb1764d091f898e
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 13729d124ce0e49eddeda6c4c19aeae2c62eb8c6
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42806960"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53174257"
 ---
 # <a name="migration-phase-3---client-side-configuration"></a>Fase 3 de la migración: configuración del lado cliente
 
->*Se aplica a: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Se aplica a: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Use la información siguiente para la fase 3 de la migración desde AD RMS a Azure Information Protection. En estos procedimientos se describe el paso 7 de la [Migración desde AD RMS a Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md).
 
@@ -126,7 +126,7 @@ Si no puede realizar la migración de todos los clientes de Windows a la vez, ej
 
 1. Vuelva a los scripts de migración, **Migrate-Client.cmd** y **Migrate-User.cmd**, que extrajo previamente, cuando los descargó durante la [fase de preparación](migrate-from-ad-rms-phase1.md#step-2-prepare-for-client-migration).
 
-2.  Siga las instrucciones de **Migrate-Client.cmd** para modificar el script de modo que contenga la dirección URL del servicio Azure Rights Management del inquilino y también los nombres de servidor de las direcciones URL de licencias de intranet y extranet del clúster de AD RMS. Luego, incremente la versión del script como se ha explicado anteriormente. Una buena práctica para realizar el seguimiento de las versiones de script es usar la fecha actual en el formato AAAAMMDD.
+2.  Siga las instrucciones de **Migrate-Client.cmd** para modificar el script de modo que contenga la dirección URL del servicio Azure Rights Management del inquilino y también los nombres de servidor de las direcciones URL de licencias de intranet y extranet del clúster de AD RMS. Luego, incremente la versión del script como se ha explicado anteriormente. Una buena práctica para realizar el seguimiento de las versiones de script es usar la fecha actual en el siguiente formato: AAAAMMDD
     
     > [!IMPORTANT]
     > Como antes, tenga cuidado y no incluya espacios adicionales antes ni después de las direcciones.

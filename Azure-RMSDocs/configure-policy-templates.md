@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 1571939554e64459acd7ec0b7c32e9d40f7bd7eb
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 412b84b705d12efd7259066c0fece68e2ab8c099
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024321"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53173951"
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>Configuración y administración de plantillas para Azure Information Protection
 
->*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Las plantillas de protección, también conocidas como plantillas de Rights Management, son una agrupación de las configuraciones de protección definidas por el administrador para Azure Information Protection. Esta configuración incluye los [derechos de uso](configure-usage-rights.md) elegidos para usuarios autorizados y controles de acceso para la expiración y el acceso sin conexión. Estas plantillas están integradas con la directiva de Azure Information Protection: 
 
@@ -79,7 +79,7 @@ Antes de editar estas plantillas o convertirlas en etiquetas, asegúrese de que 
     
     - **Permitir macros** (nombre común) se agrega automáticamente. Se requiere este derecho de uso para la barra Azure Information en aplicaciones de Office.
 
-- Los valores **Publicada** y **Archivada** se muestran como **Enabled**: **On** (Habilitada: Activada) y **Enabled**: **Off** (Habilitada: Desactivada) respectivamente en la hoja **Etiqueta**. En el caso de que quiera conservar plantillas que no son visibles para los usuarios o los servicios, establézcalas en **Habilitada**: **Desactivada**.
+- Las opciones de configuración **Publicado** y **Archivado** se muestran como **Habilitada**: **Activada** y **Habilitada**: **Desactivada** respectivamente en la hoja **Etiqueta**. En el caso de que quiere conservar plantillas que no son visibles para los usuarios o los servicios, establézcalas en **Habilitada**: **Desactivada**.
 
 - No es posible copiar ni eliminar una plantilla en Azure Portal. Cuando la plantilla se convierte en una etiqueta, puede configurar la etiqueta para que deje de usar la plantilla. Para ello, seleccione **No configurado** en la opción **Establecer permisos para documentos y correos electrónicos que contengan esta etiqueta**. También puede eliminar la etiqueta. Aun así, en ambos casos, la plantilla no se elimina y permanece en estado archivado.
     
@@ -99,7 +99,7 @@ Antes de editar estas plantillas o convertirlas en etiquetas, asegúrese de que 
     
     Por ejemplo, en el menú del concentrador, haga clic en **Todos los servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
-2. En la opción de menú **Clasificaciones** > **Etiquetas**: en la hoja **Azure Information Protection: etiquetas**, expanda **Plantillas de protección** y busque la plantilla que quiere configurar.
+2. Desde la opción de menú **Clasificaciones** > **Etiquetas**: en la hoja **Azure Information Protection: etiquetas**, expanda **Plantillas de protección** y busque la plantilla que quiere configurar.
     
 3. Seleccione la plantilla y, en la hoja **Etiqueta**, puede cambiar el nombre y la descripción de la plantilla si es necesario. Para ello, edite el **nombre para mostrar de la etiqueta** y la **descripción**. Luego, seleccione la **protección** con un valor de **Azure (clave en la nube)** para abrir la hoja **Protección**.
 
@@ -126,7 +126,7 @@ Cuando se convierte una plantilla en etiqueta:
 
 - El nombre de la plantilla se convierte en un nombre de etiqueta nuevo y la descripción de la plantilla, en la información sobre herramientas de la etiqueta. 
 
-- Si se publicó el estado de la plantilla, esta configuración se asigna a **Enabled**: **On** (Habilitada: Activada) para la etiqueta, que ahora se muestra como esta etiqueta a los usuarios cuando publique a continuación la directiva de Azure Information Protection. Si se ha archivado el estado de la plantilla, esta configuración se asigna a **Enabled**: **Off** (Habilitada: Desactivada) para la etiqueta y no se muestra como una etiqueta disponible para los usuarios.
+- Si se ha publicado el estado de la plantilla, esta configuración se asigna a **Habilitada**: **Activada** para la etiqueta, que ahora se muestra como esta etiqueta a los usuarios cuando después publique la directiva de Azure Information Protection. Si se ha archivado el estado de la plantilla, esta configuración se asigna a **Habilitada**: **Desactivada** para la etiqueta y no se muestra como una etiqueta disponible para los usuarios.
 
 - La configuración de protección se conserva y puede editarla si es necesario. Además, puede agregar otros valores de etiqueta como marcadores visuales y condiciones.
 
@@ -136,9 +136,9 @@ Cuando se convierte una plantilla en etiqueta:
 
 Cuando crea una etiqueta nueva con la configuración de protección de **Azure (clave de nube)**, en segundo plano esta acción crea una plantilla personalizada nueva a la que pueden acceder los servicios y las aplicaciones que se integran con las plantillas de Rights Management.
 
-1. En la opción de menú **Clasificaciones** > **Etiquetas**: en la hoja **Azure Information Protection: etiquetas**, seleccione **Agregar una nueva etiqueta**.
+1. Desde la opción de menú **Clasificaciones** > **Etiquetas**: En la hoja **Azure Information Protection: etiquetas**, seleccione **Agregar una directiva**.
 
-2. En la hoja **Etiqueta**, mantenga el valor predeterminado de **Habilitado**: **Activado** y luego escriba un nombre de etiqueta y una descripción para el nombre de la plantilla y la descripción.
+2. En la hoja **Etiqueta**, mantenga el valor predeterminado **Habilitada**: **Activada**, luego, escriba un nombre de etiqueta y una descripción para el nombre de la plantilla y la descripción.
 
 3. En **Establecer permisos para documentos y correos electrónicos que contengan esta etiqueta**, seleccione **Proteger** y, luego, **Protección**:
     
@@ -152,7 +152,7 @@ Cuando crea una etiqueta nueva con la configuración de protección de **Azure (
     
     Aunque la etiqueta está habilitada de forma predeterminada, la plantilla se archiva. Para que las aplicaciones y los servicios puedan usar la plantilla para proteger documentos y correos electrónicos, complete el paso final para publicar la plantilla.
 
-5. En la opción del menú **Clasificaciones** > **Directivas**, seleccione la directiva que va a incluir la nueva configuración de protección. A continuación, seleccione **Agregar o quitar etiquetas**. En la hoja **Directiva: agregar o quitar etiquetas**, seleccione la etiqueta que se acaba de crear que contiene la configuración de protección, haga clic en **Aceptar** y, luego, en **Guardar**.
+5. En la opción del menú **Clasificaciones** > **Directivas**, seleccione la directiva que va a incluir la nueva configuración de protección. A continuación, seleccione **Agregar o quitar etiquetas**. En la hoja **Directiva: agregar o quitar etiquetas**, seleccione la etiqueta que se acaba de crear que contiene la configuración de protección, haga clic en **Aceptar** y luego en **Guardar**.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

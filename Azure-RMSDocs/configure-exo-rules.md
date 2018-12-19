@@ -4,22 +4,22 @@ description: Instrucciones y ejemplos para configurar reglas de flujo de correo 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/17/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ba4e4a4d-5280-4e97-8f5c-303907db1bf5
 ms.reviewer: shakella
 ms.suite: ems
-ms.openlocfilehash: 9d30e7c3e15e9aa6b67c2e1b653d56c1af36ffe0
-ms.sourcegitcommit: 6d4792755226a61d59e79fd8795a9b0f653770bb
+ms.openlocfilehash: c6f220e995aa785c44d4227884da2c7379918a8d
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49366995"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305478"
 ---
 # <a name="configuring-exchange-online-mail-flow-rules-for-azure-information-protection-labels"></a>Configuración de reglas de flujo de correo de Exchange Online para etiquetas de Azure Information Protection
 
->*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Consulte la siguiente información como ayuda para configurar las reglas de flujo de correo en Exchange Online para usar etiquetas de Azure Information Protection y para aplicar protección adicional para escenarios específicos. Por ejemplo:
 
@@ -71,11 +71,11 @@ En la directiva de Azure Information Protection, esta etiqueta se ha configurado
 
 1. En **Nombre**, escriba un nombre para la regla, como `Apply Do Not Forward for General emails sent externally`.
  
-2. Para **Aplicar esta regla si**: seleccione **El destinatario se encuentra**, seleccione **Fuera de la organización** y, a continuación, seleccione **Aceptar**.
+2. Para **Aplicar esta regla si**: seleccione **El destinatario se encuentra**, seleccione **Fuera de la organización** y después **Aceptar**.
 
 3. Seleccione **Más opciones** y, a continuación, seleccione **Agregar condición**.
  
-4. Para **y**: seleccione **Un encabezado de mensaje** y, a continuación, seleccione **incluye cualquiera de estas palabras**:
+4. Para **y**: seleccione **Un encabezado de mensaje** y después **incluye cualquiera de estas palabras**:
      
     a. Seleccione **Escriba texto** y escriba `msip_labels`.
      
@@ -83,9 +83,9 @@ En la directiva de Azure Information Protection, esta etiqueta se ha configurado
     
     c. Seleccione **+** y, a continuación, seleccione **Aceptar**.
 
-5. Para **Haga lo siguiente**: seleccione **Modify the message security** (Modificar la seguridad del mensaje)  >  **Apply Office 365 Message Encryption and rights protection** (Aplicar el cifrado de mensajes de Office 365 y protección de derechos) >  **No reenviar** y, a continuación, seleccione **Aceptar**.
+5. Para **Hacer lo siguiente**: seleccione **Modify the message security** (Modificar la seguridad del mensaje)  > **Apply Office 365 Message Encryption and rights protection** (Aplicar el cifrado de mensajes de Office 365 y protección de derechos) > **No reenviar** y después seleccione **Aceptar**.
     
-    Ahora, la configuración de la regla debe ser similar a la siguiente: ![Regla de flujo de correo Exchange Online configurada para una etiqueta de Azure Information Protection - ejemplo1](./media/aip-exo-rule-ex1.png)
+    Ahora la configuración de la regla debería ser similar a esto:  ![Regla de flujo de correo de Exchange Online configurada para etiquetas de Azure Information Protection: ejemplo1](./media/aip-exo-rule-ex1.png)
 
 7. Seleccione **Guardar**. 
 
@@ -99,11 +99,11 @@ Esta etiqueta se usa para clasificar y proteger los documentos que usa para la c
 
 1. En **Nombre**, escriba un nombre para la regla, como `Apply Encrypt to emails sent externally if protected attachments`.
  
-2. Para **Aplicar esta regla si**: seleccione **El destinatario se encuentra**, seleccione **Fuera de la organización** y, a continuación, seleccione **Aceptar**.
+2. Para **Aplicar esta regla si**: seleccione **El destinatario se encuentra**, seleccione **Fuera de la organización** y después **Aceptar**.
 
 3. Seleccione **Más opciones** y, a continuación, seleccione **Agregar condición**.
  
-4. Para **y**: seleccione **Any attachment** (Cualquier archivo adjunto) y, a continuación, seleccione **tiene estas propiedades, incluida cualquiera de estas palabras** :
+4. Para **y**: seleccione **Any attachment** (Cualquier archivo adjunto) y después seleccione **tiene estas propiedades, incluida cualquiera de estas palabras**:
      
     a. Seleccione **+** > **Especificar una propiedad personalizada de datos adjuntos**.
   
@@ -113,9 +113,9 @@ Esta etiqueta se usa para clasificar y proteger los documentos que usa para la c
     
     d. Seleccione **Gyargar** y, luego, **Aceptar**.
 
-5. Para **Haga lo siguiente**: seleccione **Modify the message security** (Modificar la seguridad del mensaje)  >  **Apply Office 365 Message Encryption and rights protection** (Aplicar el cifrado de mensajes de Office 365 y protección de derechos) > **Cifrar** y, a continuación, seleccione **Aceptar**.
+5. Para **Hacer lo siguiente**: seleccione **Modify the message security** (Modificar la seguridad del mensaje)  > **Apply Office 365 Message Encryption and rights protection** (Aplicar el cifrado de mensajes de Office 365 y protección de derechos) > **Cifrar** y después seleccione **Aceptar**.
     
-    Ahora, la configuración de la regla debe ser similar al siguiente: ![Regla de flujo de correo Exchange Online configurada para una etiqueta de Azure Information Protection - ejemplo1](./media/aip-exo-rule-ex2.png)
+    Ahora la configuración de la regla debería ser similar a esto:  ![Regla de flujo de correo de Exchange Online configurada para etiquetas de Azure Information Protection: ejemplo1](./media/aip-exo-rule-ex2.png)
 
 6. Seleccione **Guardar**. 
 
@@ -126,6 +126,6 @@ Para obtener más información acerca de la opción de cifrado, consulte [Opció
 
 Para obtener información sobre cómo crear y configurar las etiquetas que se usan con reglas de flujo de correo de Exchange Online, vea [Configuración de la directiva de Azure Information Protection](configure-policy.md).
 
-Además, para ayudar a clasificar los mensajes de correo electrónico que contienen datos adjuntos, considere el uso de la siguiente [configuración de directiva](configure-policy-settings.md) de Azure Information Protection: **Para los mensajes de correo electrónico con datos adjuntos, aplicar una etiqueta que coincida con la clasificación más alta de los datos adjuntos**.
+Además, para ayudar a clasificar los mensajes de correo electrónico que contienen datos adjuntos, considere el uso de esta [configuración de directiva](configure-policy-settings.md) de Azure Information Protection: **Para los mensajes de correo electrónico con datos adjuntos, aplicar una etiqueta que coincida con la clasificación más alta de los datos adjuntos**.
 
 

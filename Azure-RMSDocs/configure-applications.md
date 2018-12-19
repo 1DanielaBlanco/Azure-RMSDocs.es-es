@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: ea09cbc5-b98b-444e-8b60-5bc3cb199c36
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 04a93c57e2ea940384a171284da57b5d7c1572d9
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: b53bb0a914871ba2a53ad7ff4c3bd6fca0d32dde
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148569"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53173271"
 ---
 # <a name="configuring-applications-for-azure-rights-management"></a>Configuración de aplicaciones para Azure Rights Management
 
->*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 > [!NOTE]
 > Esta información está destinada a los asesores y administradores de TI que han implementado Azure Information Protection. Si busca ayuda e información sobre cómo usar la funcionalidad de Rights Management con una aplicación específica o cómo abrir un archivo protegido por derechos, use la ayuda y las instrucciones que se incluyen con la aplicación.
@@ -31,21 +31,21 @@ Después de haber implementado Azure Information Protection para su organizació
 > [!IMPORTANT]
 > Para más información sobre versiones compatibles y otros requisitos, consulte [Requirements for Azure Rights Management](requirements.md) (Requisitos para Azure Rights Management).
 
--   [Office 365: Configuración para clientes y servicios en línea](configure-office365.md)
+-   [Office 365: configuración para clientes y servicios en línea que usan el servicio Azure Rights Management](configure-office365.md)
 
-    -   [Exchange Online: Configuración de IRM](configure-office365.md#exchange-online-irm-configuration)
+    -   [Configuración de IRM de Exchange Online](configure-office365.md#exchange-online-irm-configuration)
 
     -   [SharePoint Online y OneDrive para la Empresa: Configuración de IRM](configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration)
 
-- [Aplicaciones de Office: configuración para clientes](configure-office-apps.md)
+- [Aplicaciones de Office: configuración para los clientes que usan el servicio Azure Rights Management](configure-office-apps.md)
 
     -   [Office 2016 y Office 2013](configure-office-apps.md#office-2016-and-office-2013)
 
-    -   [Office 2010](configure-office-apps.md#office-2010)
+    -   [Office 2010](configure-office-apps.md#office-2010)
 
--   [Cliente de Azure Information Protection: instalación y configuración de clientes](configure-sharing-app.md)
+-   [Cliente de Azure Information Protection: Instalación y configuración para clientes](configure-sharing-app.md)
 
--   [Aplicación Rights Management sharing: Instalación y configuración para clientes](configure-sharing-app.md)
+-   [Aplicación de uso compartido Rights Management: Instalación y configuración para clientes](configure-sharing-app.md)
 
 
 Para configurar servidores locales como Exchange Server y SharePoint Server, consulte [Deploying the Azure Rights Management connector](deploy-rms-connector.md) (Implementación del conector de Azure Rights Management).

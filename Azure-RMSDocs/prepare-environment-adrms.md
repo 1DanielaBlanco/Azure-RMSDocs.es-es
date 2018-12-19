@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: 11ffa730-c5dc-4b6b-9c1e-c58eff8aafc2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d93e761db545ac9934ca04f7cad148203cdb8c12
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 1a09edc0ed8a9bad27aa599282c9aaaf42ffc07a
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151782"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53173679"
 ---
 # <a name="preparing-the-environment-for-azure-rights-management-when-you-also-have-active-directory-rights-management-services-ad-rms"></a>Preparación del entorno para Azure Rights Management con Active Directory Rights Management Services (AD RMS)
 
->*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 > [!IMPORTANT]
 > Orientaciones para el uso de Active Directory Rights Management Services (AD RMS)
@@ -87,7 +87,7 @@ En la barra de información se muestra **Deactivation finished successfully** (L
 
 ### <a name="step-2-start-planning-for-migration"></a>Paso 2: Inicio del planeamiento de la migración
 
-Consulte la guía [Migración desde AD RMS a Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md).
+Vea las instrucciones para la migración: [Migración desde AD RMS a Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md)
 
 
 ## <a name="your-subscription-was-purchased-before-or-during-february-2018-and-you-have-exchange-online"></a>La suscripción se compró antes de febrero de 2018 o en ese mes y tiene Exchange Online
@@ -104,7 +104,7 @@ Use el siguiente comando [Set-IRMConfiguration](/powershell/module/exchange/encr
 
 ### <a name="step-2-start-planning-for-migration"></a>Paso 2: Inicio del planeamiento de la migración
 
-Consulte la guía [Migración desde AD RMS a Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md).
+Vea las instrucciones para la migración: [Migración desde AD RMS a Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md)
 
 
 ## <a name="you-see-an-option-to-activate-protection-when-you-configure-azure-information-protection"></a>Al configurar Azure Information Protection, verá una opción para activar la protección.
@@ -119,7 +119,7 @@ En la hoja **Azure Information Protection: etiquetas**, vea y configure las etiq
 
 ### <a name="step-2-start-planning-for-migration"></a>Paso 2: Inicio del planeamiento de la migración
 
-Consulte la guía [Migración desde AD RMS a Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md).
+Vea las instrucciones para la migración: [Migración desde AD RMS a Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md)
 
 ### <a name="step-3-configure-labels-for-protection"></a>Paso 3: Configuración de etiquetas para la protección
 

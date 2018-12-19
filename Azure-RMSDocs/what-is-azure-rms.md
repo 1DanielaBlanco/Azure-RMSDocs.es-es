@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: aeeebcd7-6646-4405-addf-ee1cc74df5df
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: fa7bf6ae5eb60b6fc6b0310c11e9acfbbd3b240c
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: ba44c23b56c2832268f0ed6df122a347c9a8fdf3
+ms.sourcegitcommit: 2a1c0882d2b0400f4da6370dbc1830df09867e3d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024168"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53218466"
 ---
 # <a name="what-is-azure-rights-management"></a>¿Qué es Azure Rights Management?
 
->*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 
 Azure Rights Management (que se suele abreviar como Azure RMS) es la tecnología de protección usada por [Azure Information Protection](what-is-information-protection.md).
@@ -62,13 +62,13 @@ Use la tabla siguiente para identificar problemas o requisitos empresariales que
 ## <a name="security-compliance-and-regulatory-requirements"></a>Requisitos de seguridad, normativos y regulatorios
 Azure Rights Management admite los siguientes requisitos de seguridad, reglamentarios y de cumplimiento:
 
-√ Uso de criptografía estándar del sector y admite FIPS 140-2. Para más información, consulte [Controles criptográficos usados por Azure RMS: Longitudes de clave y algoritmos](how-does-it-work.md#cryptographic-controls-used-by-azure-rms-algorithms-and-key-lengths).
+√ Uso de criptografía estándar del sector y admite FIPS 140-2. Para más información, vea la información de [Controles criptográficos usados por Azure RMS: Longitudes de clave y algoritmos](how-does-it-work.md#cryptographic-controls-used-by-azure-rms-algorithms-and-key-lengths).
 
 √ Soporte para que los módulos de seguridad de hardware (HSM) de Thales almacenen su clave de inquilino en centros de datos de Microsoft Azure. Azure Rights Management usa espacios de seguridad independientes para los centros de datos de Estados Unidos, EMEA (Europa, Oriente Medio y África) y Asia, para que las claves solo se puedan usar en su región.
 
 √ Certificado para lo siguiente:
 
--   ISO/IEC 27001:2013 (incluye [ISO/IEC 27018](http://azure.microsoft.com/blog/2015/02/16/azure-first-cloud-computing-platform-to-conform-to-isoiec-27018-only-international-set-of-privacy-controls-in-the-cloud/))
+-   ISO/IEC 27001:2013 (incluye [ISO/IEC 27018](https://azure.microsoft.com/blog/2015/02/16/azure-first-cloud-computing-platform-to-conform-to-isoiec-27018-only-international-set-of-privacy-controls-in-the-cloud/))
 
 -   Atestaciones de SOC 2 SSAE 16/ISAE 3402
 
@@ -80,7 +80,7 @@ Azure Rights Management admite los siguientes requisitos de seguridad, reglament
 
 -   PCI DSS nivel 1
 
-Para obtener más información sobre estas certificaciones externas, consulte el [Centro de confianza de Azure](http://azure.microsoft.com/support/trust-center/compliance/).
+Para obtener más información sobre estas certificaciones externas, consulte el [Centro de confianza de Azure](https://azure.microsoft.com/support/trust-center/compliance/).
 
 ## <a name="next-steps"></a>Pasos siguientes
 

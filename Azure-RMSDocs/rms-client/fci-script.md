@@ -4,18 +4,18 @@ description: Script de ejemplo para copiar y editar, como se describe en las ins
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/26/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ae6d8d0f-4ebc-43fe-a1f6-26b690fd83d0
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: be5b7c658fcdd2c5d4d03de21a89bfda51039539
-ms.sourcegitcommit: 4bc807177cf6c284f673cea667b6086121d69231
+ms.openlocfilehash: 9a59be70117f4ed2dd0a0c3bb14bc9fa6f0c530d
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47233701"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305121"
 ---
 # <a name="windows-powershell-script-for-azure-rms-protection-by-using-file-server-resource-manager-fci"></a>Script de Windows PowerShell para la protección de Azure RMS con FCI del Administrador de recursos del servidor de archivos
 
@@ -25,7 +25,7 @@ Esta página contiene el script de ejemplo para copiar y editar, como se describ
 
 Este script usa la versión mínima **1.3.155.2** para el módulo AzureInformationProtection. Ejecute el siguiente comando para comprobar la versión: `(Get-Module AzureInformationProtection -ListAvailable).Version` 
 
-*&#42;&#42;Aviso de declinación de responsabilidades&#42;&#42;: este script de ejemplo no es compatible con ningún servicio o programa de soporte técnico estándar de Microsoft. Este script de ejemplo se proporciona TAL CUAL sin garantía de ningún tipo.*
+*&#42;&#42;Declinación de responsabilidades&#42;&#42;: Este script de ejemplo no es compatible en ningún servicio o programa de soporte estándar de Microsoft. Este script de ejemplo se proporciona TAL CUAL sin garantía de ningún tipo.*
 
 ```
 <#

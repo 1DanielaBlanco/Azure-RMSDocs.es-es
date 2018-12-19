@@ -4,22 +4,22 @@ description: Estas instrucciones forman parte de la ruta de migración de AD RMS
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/11/2018
+ms.date: 12/11/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: c5f4c6ea-fd2a-423a-9fcb-07671b3c2f4f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7a95da3590a666e1d90452e514e93ab6100b8ad7
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 3e8f0b9e2ca404f1f5a4c37c60d44f4fa95ace1e
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024032"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305434"
 ---
 # <a name="step-2-software-protected-key-to-hsm-protected-key-migration"></a>Paso 2: Migración de clave protegida por software a clave protegida por HSM
 
->*Se aplica a: Active Directory Rights Management Services y [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
+>*Se aplica a: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 
 Estas instrucciones forman parte de la [ruta de migración de AD RMS a Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md) y solo son válidas si la clave de AD RMS está protegida por software y quiere migrar a Azure Information Protection con una clave de inquilino protegida por HSM en Azure Key Vault. 
@@ -39,13 +39,13 @@ Antes de empezar, asegúrese de que la organización tenga un almacén de claves
 > Si va a realizar los pasos de configuración para Azure Key Vault y no está familiarizado con este servicio de Azure, es posible que le resulte útil ver primero [Introducción a Azure Key Vault](/azure/key-vault/key-vault-get-started). 
 
 
-## <a name="part-1-extract-your-slc-key-from-the-configuration-data-and-import-the-key-to-your-on-premises-hsm"></a>Parte 1: extracción de la clave de SLC de los datos de configuración e importar la clave en el HSM local
+## <a name="part-1-extract-your-slc-key-from-the-configuration-data-and-import-the-key-to-your-on-premises-hsm"></a>1ª parte: extracción de la clave de SLC de los datos de configuración e importar la clave en el HSM local
 
-1.  Administrador de Azure Key Vault: para cada clave SLC exportada que desee almacenar en Azure Key Vault, utilice los pasos siguientes de la sección [Implementación del método Aportar tu propia clave (BYOK) en el Almacén de claves de Azure](/azure/key-vault/key-vault-hsm-protected-keys#implementing-bring-your-own-key-byok-for-azurekey-vault) de la documentación de Azure Key Vault:
+1.  Administrador de Azure Key Vault: para cada clave SLC exportada que quiera almacenar en Azure Key Vault, siga los pasos de la sección [Implementación del método Aportar tu propia clave (BYOK) en Azure Key Vault](/azure/key-vault/key-vault-hsm-protected-keys#implementing-bring-your-own-key-byok-for-azure-key-vault) de la documentación de Azure Key Vault:
 
-    -   **Generación y transferencia de una clave a un HSM del Almacén de claves de Azure**: [Paso 1: preparación de la estación de trabajo conectada a Internet](/azure/key-vault/key-vault-hsm-protected-keys#step-1-prepare-your-internet-connected-workstation)
+    -   **Generación y transferencia de una clave a un HSM de Azure Key Vault**: [Paso 1: preparación de la estación de trabajo conectada a Internet](/azure/key-vault/key-vault-hsm-protected-keys#step-1-prepare-your-internet-connected-workstation)
 
-    -   **Generación y transferencia de una clave de inquilino a través de Internet**: [Paso 2: preparación de la estación de trabajo desconectada](/azure/key-vault/key-vault-hsm-protected-keys#step-2-prepare-your-disconnected-workstation)
+    -   **Generar y transferir su clave de inquilino a través de Internet**: [Paso 2: preparación de la estación de trabajo desconectada](/azure/key-vault/key-vault-hsm-protected-keys#step-2-prepare-your-disconnected-workstation)
 
     Debe seguir los pasos para generar la clave de inquilino, puesto que ya tiene el equivalente en el archivo de datos de configuración exportado (.xml). En su lugar, ejecutará una herramienta para extraer la clave del archivo e importarla en el HSM local. Esta herramienta crea dos archivos al ejecutarla:
 
@@ -100,7 +100,7 @@ Antes de empezar, asegúrese de que la organización tenga un almacén de claves
 
     **La clave se ha importado correctamente.**
 
-    **Ruta de la clave: C:\ProgramData\nCipher\Key Management Data\local\key_simple_contosobyok**
+    **Ruta a la clave: C:\ProgramData\nCipher\Key Management Data\local\key_simple_contosobyok**
 
 Este resultado confirma que la clave privada se ha migrado al dispositivo HSM de Thales local con una copia cifrada guardada en una clave (en el ejemplo anterior, "key_simple_contosobyok"). 
 
@@ -109,17 +109,17 @@ Después de extraer la clave de SLC e importarla en el HSM local, puede crear un
 > [!IMPORTANT]
 > Después de completar este paso, borre de forma segura estos archivos PEM de la estación de trabajo desconectada para evitar que usuarios no autorizados puedan obtener acceso a ellos. Por ejemplo, ejecute "cipher /w: E" para eliminar de forma segura todos los archivos de la unidad E.
 
-## <a name="part-2-package-and-transfer-your-hsm-key-to-azure-key-vault"></a>Parte 2: creación del paquete y transferencia de la clave de HSM al Almacén de claves de Azure
+## <a name="part-2-package-and-transfer-your-hsm-key-to-azure-key-vault"></a>2ª parte: creación del paquete y transferencia de la clave de HSM al Almacén de claves de Azure
 
-Administrador de Azure Key Vault: para cada clave SLC exportada que desee almacenar en Azure Key Vault, utilice los pasos siguientes de la sección [Implementación del método Aportar tu propia clave (BYOK) en el Almacén de claves de Azure](/azure/key-vault/key-vault-hsm-protected-keys#implementing-bring-your-own-key-byok-for-azure-key-vault) de la documentación de Azure Key Vault:
+Administrador de Azure Key Vault: para cada clave SLC exportada que quiera almacenar en Azure Key Vault, siga estos pasos de la sección [Implementación del método Aportar tu propia clave (BYOK) en el Almacén de claves de Azure](/azure/key-vault/key-vault-hsm-protected-keys#implementing-bring-your-own-key-byok-for-azure-key-vault) de la documentación de Azure Key Vault:
 
 - [Paso 4: preparación de la clave para la transferencia](/azure/key-vault/key-vault-hsm-protected-keys#step-4-prepare-your-key-for-transfer)
 
-- [Paso 5: transferencia de la clave a Azure Key Vault](/azure/key-vault/key-vault-hsm-protected-keys#step-5-transfer-your-key-to-azure-key-vault)
+- [Paso 5: Transferencia de la clave a Azure Key Vault](/azure/key-vault/key-vault-hsm-protected-keys#step-5-transfer-your-key-to-azure-key-vault)
 
 Como ya tiene la clave, no siga los pasos para generar el par de claves. En su lugar, ejecute un comando para transferir esta clave (en el ejemplo anterior, el parámetro KeyIdentifier usa "contosobyok") del HSM local.
 
-Antes de transferir la clave al Almacén de claves de Azure, asegúrese de que la utilidad KeyTransferRemote.exe devuelva **Result: SUCCESS** al crear una copia de la clave con permisos reducidos (paso 4.1) y al cifrar la clave (paso 4.3).
+Antes de transferir su clave a Azure Key Vault, asegúrese de que la utilidad KeyTransferRemote.exe devuelve **Resultado: CORRECTO** cuando crea una copia de la clave con permisos reducidos (paso 4.1) y al cifrar la clave (paso 4.3).
 
 Cuando se cargue la clave en el Almacén de claves de Azure, se mostrarán las propiedades de la clave, incluido el identificador de clave. Tendrá un aspecto similar a **https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333**. Anote esta URL porque el administrador de Azure Information Protection necesitará indicar al servicio Azure Rights Management de Azure Information Protection que use esta clave para su clave de inquilino.
 
@@ -131,9 +131,9 @@ Por ejemplo, si el almacén de claves que ha creado para Azure Information Prote
 
 Después de transferir la clave de HSM a Azure Key Vault, estará preparado para importar los datos de configuración de AD RMS.
 
-## <a name="part-3-import-the-configuration-data-to-azure-information-protection"></a>Parte 3: importación de los datos de configuración a Azure Information Protection
+## <a name="part-3-import-the-configuration-data-to-azure-information-protection"></a>Part 3: Importar los datos de configuración en Azure Information Protection
 
-1. Administrador de Azure Information Protection: en la estación de trabajo conectada a Internet y en la sesión de PowerShell, copie los nuevos archivos de datos de configuración (.xml) de los que se haya quitado la clave SLC después de ejecutar la herramienta TpdUtil.
+1. Administrador de Azure Information Protection: en la estación de trabajo conectada a Internet y en la sesión de PowerShell, copie los nuevos archivos de datos de configuración (.xml) de los que se haya quitado la clave de SLC después de ejecutar la herramienta TpdUtil.
 
 2. Cargue cada archivo .xml con el cmdlet [Import-AadrmTpd](/powershell/aadrm/vlatest/import-aadrmtpd). Por ejemplo, debe tener al menos un archivo adicional para importar si actualizó su clúster de AD RMS para el modo criptográfico 2.
 

@@ -4,19 +4,19 @@ description: Cómo usar los informes centrales para realizar el seguimiento de l
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/06/2018
+ms.date: 12/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.assetid: b2da2cdc-74fd-4bfb-b3c2-2a3a59a6bf2e
 ms.reviewer: lilukov
 ms.suite: ems
-ms.openlocfilehash: 8dc53c6bad6c8f68ac5786afb0600cafb6398765
-ms.sourcegitcommit: b4118cd75db6478f86b9994e8d84d0ada15c7f95
+ms.openlocfilehash: 58ea955deef9341ec80b516b89feec609389b9ad
+ms.sourcegitcommit: 4caf3aa13506554928c5fda38994301ddcbdfb41
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52953319"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068816"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Informes centrales para Azure Information Protection
 
@@ -69,7 +69,11 @@ Por ejemplo, podrá ver lo siguiente:
     
 Los informes usan [Azure Log Analytics](/azure/log-analytics/log-analytics-overview) para almacenar los datos en un área de trabajo de su organización. Si está familiarizado con el lenguaje de consulta, puede modificar las consultas y crear nuevos informes y paneles de Power BI. Puede que el siguiente tutorial le ayude a comprender el lenguaje de consulta: [Introducción a las consultas en Log Analytics](https://docs.loganalytics.io/docs/Learn/Getting-Started/Getting-started-with-the-Analytics-portal). 
 
-Para más información, lea la entrada de blog: [Data discovery, reporting and analytics for all your data with Microsoft Information Protection](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Data-discovery-reporting-and-analytics-for-all-your-data-with/ba-p/253854) (Detección de datos, informes y análisis de todos los datos con Microsoft Information Protection).
+Para más información, lea las siguientes entradas de blog: 
+
+- [Data discovery, reporting and analytics for all your data with Microsoft Information Protection](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Data-discovery-reporting-and-analytics-for-all-your-data-with/ba-p/253854) (Detección de datos, informes y análisis de todos los datos con Microsoft Information Protection).
+
+- [Discover and protect sensitive data through Azure Information Protection and Windows Defender ATP](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Discover-and-protect-sensitive-data-through-Azure-Information/ba-p/297292) (Detectar y proteger datos confidenciales mediante Azure Information Protection y Windows Defender ATP)
 
 ### <a name="information-collected-and-sent-to-microsoft"></a>Información recopilada y enviada a Microsoft
 
@@ -85,7 +89,7 @@ Para generar estos informes, los puntos de conexión envían los siguientes tipo
 
 - El nombre del dispositivo del usuario.
 
-- Para documentos: la ruta de acceso y el nombre de archivo de los documentos etiquetados.
+- Para documentos: La ruta de acceso y el nombre de archivo de los documentos etiquetados.
 
 - Para correos electrónicos: el asunto, el remitente y los destinatarios de correo electrónico para los correos electrónicos etiquetados. 
 
@@ -116,9 +120,9 @@ Para ver los informes de Azure Information Protection y crear los suyos propios,
 
 3. En la hoja **Azure Information Protection log analytics** (Análisis de registro de Azure Information Protection), verá una lista de áreas de trabajo de Log Analytics que son propiedad de su inquilino. Realice una de las siguientes acciones:
     
-    - Para crear un área de trabajo de Log Analytics, seleccione **Create new workspace** (Crear área de trabajo) y, en la hoja **Log analytics workspace** (Área de trabajo de Log Analytics), proporcione la información solicitada.
+    - Para crear una nueva área de trabajo de Log Analytics: seleccione **Crea nueva área de trabajo** y, en la hoja **Área de trabajo de Log Analytics**, proporcione la información solicitada.
     
-    - Para usar un área de trabajo de Log Analytics existente, selecciónela de la lista.
+    - Para usar un área de trabajo de Log Analytics existente: seleccione el área de trabajo de la lista.
 
 Si necesita ayuda para crear el área de trabajo de Log Analytics, consulte [Creación de un área de trabajo de Log Analytics en Azure Portal](https://docs.microsoft.com/azure/log-analytics/log-analytics-quick-create-workspace).
 
@@ -130,7 +134,7 @@ En la hoja Azure Information Protection, busque las opciones de menú **Paneles*
 
 - **Informe de uso (versión preliminar)**: use este informe para ver cómo se usan las etiquetas. 
 
-- **Registros de actividades (versión preliminar)**: use este informe para ver las acciones de etiquetado de los usuarios, y en dispositivos y rutas de acceso de archivos.
+- **Registros de actividad (versión preliminar)**: use este informe para ver las acciones de etiquetado de los usuarios y en dispositivos y rutas de acceso de archivos.
     
     Este informe está implementando actualmente en los inquilinos, así que si no lo ve, vuelva a intentarlo en unos días.
     
@@ -145,7 +149,7 @@ Seleccione el icono de consulta en el panel para abrir una hoja **Log Search** (
 ![Icono de Log Analytics para personalizar los informes de Azure Information Protection](./media/log-analytics-icon.png)
 
 
-Los datos registrados de Azure Information Protection se almacenan en la tabla siguiente: **InformationProtectionLogs_CL**
+Los datos registrados de Azure Information Protection se almacenan en la siguiente tabla: **InformationProtectionLogs_CL**
 
 ## <a name="next-steps"></a>Pasos siguientes
 Después de revisar la información de los informes, podría decidir realizar cambios en la directiva de Azure Information Protection. Para obtener instrucciones, consulte [Configuración de la directiva de Azure Information Protection](configure-policy.md).

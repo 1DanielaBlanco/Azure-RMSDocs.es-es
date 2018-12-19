@@ -4,18 +4,18 @@ description: Información sobre los datos personales que usa Azure Information P
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/16/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 99a51862-83e9-4a1e-873a-a84ae1465f07
 ms.reviewer: aashishr
 ms.suite: ems
-ms.openlocfilehash: 6904c8c1e879a4d076486fae17a1dbdbd71cb4b4
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 4e44796d3bd2fdf1fd2f0c39cc759f16d87267a1
+ms.sourcegitcommit: db60fe8f74ffaa4f6ffbf5defb22efc476c28312
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150439"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53319421"
 ---
 # <a name="manage-personal-data-for-azure-information-protection"></a>Administración de datos personales de Azure Information Protection
 
@@ -251,7 +251,7 @@ Para eliminar datos personales en los archivos de registro de cliente y los regi
 
 Siga estos tres pasos para solicitar que Microsoft elimine los datos personales en los registros de seguimiento de documentos, los registros de administración o los registros de uso del servicio Azure Rights Management. 
 
-**Paso 1: Iniciar la solicitud de eliminación**
+**Paso 1: iniciar la solicitud de eliminación**
 [Póngase en contacto con el Soporte técnico de Microsoft](information-support.md#to-contact-microsoft-support) para abrir una incidencia de soporte técnico de Azure Information Protection en la que solicite la eliminación de datos de su inquilino. Necesita demostrar que es un administrador del inquilino de Azure Information Protection y entender que este proceso tarda varios días en confirmarse. Al enviar la solicitud, debe proporcionar información adicional, dependiendo de los datos que deban eliminarse.
 
 - Para eliminar el registro de administración, proporcione la **fecha de finalización**. Se eliminarán todos los registros de administración hasta esa fecha de finalización.
@@ -260,9 +260,9 @@ Siga estos tres pasos para solicitar que Microsoft elimine los datos personales 
 
 La eliminación de los datos es una acción permanente. No hay manera de recuperar los datos una vez que se haya procesado una solicitud de eliminación. Se recomienda que los administradores exporten los datos necesarios antes de enviar una solicitud de eliminación.
 
-**Paso 2: Esperar la comprobación** Microsoft comprobará que la solicitud para eliminar uno o más registros es legítima. Este proceso puede tardar hasta cinco días laborables.
+**Paso 2: esperar la comprobación** Microsoft comprobará que la solicitud para eliminar uno o más registros es legítima. Este proceso puede tardar hasta cinco días laborables.
 
-**Paso 3: Obtener la confirmación de la eliminación** Los Servicios de soporte técnico de Microsoft (CSS) le enviarán un correo electrónico para confirmar que se han eliminado los datos. 
+**Paso 3: obtener la confirmación de la eliminación** Los Servicios de soporte técnico de Microsoft (CSS) le enviarán un correo electrónico para confirmar que se han eliminado los datos. 
 
 ## <a name="exporting-personal-data"></a>Exportar datos personales
 Al usar los cmdlets de PowerShell de AADRM, los datos personales estarán disponibles para la búsqueda y exportación como un objeto de PowerShell. El objeto de PowerShell se puede convertir a JSON y guardarlo usando el cmdlet `ConvertTo-Json`.

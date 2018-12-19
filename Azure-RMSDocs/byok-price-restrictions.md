@@ -4,22 +4,22 @@ description: Conozca las restricciones de uso de claves administradas por el cli
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/28/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 93e538b882da557715b04e8675b5a3b86de018b0
-ms.sourcegitcommit: bcc9e0f9ae8512bf48d819533cf8ef3b667eb298
+ms.openlocfilehash: 68e479eb7f19f60d6d68b913eae46dd287b5a04f
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52330283"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305155"
 ---
 # <a name="byok-pricing-and-restrictions"></a>Precio y restricciones de BYOK
 
->*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 
 Las organizaciones que tienen una suscripción con Azure Information Protection pueden configurar su inquilino de Azure Information Protection para usar una clave administrada por el cliente (BYOK) y [registrar su uso](./log-analyze-usage.md). 
@@ -44,11 +44,11 @@ Otras ventajas de usar Azure Key Vault para la clave de inquilino de Azure Infor
 
 - Azure Key Vault proporciona la separación del rol como práctica recomendada de seguridad reconocida. Los administradores de Azure Information Protection pueden centrarse en administrar la protección y la clasificación de datos, mientras que los administradores de Azure Key Vault pueden centrarse en administrar claves de cifrado y las directivas especiales que requieran para la seguridad o el cumplimiento.
 
-- Algunas organizaciones tienen restricciones en lo que respecta al lugar en el que debe residir la clave maestra. Azure Key Vault proporciona un alto nivel de control sobre el lugar en el que se almacenará la clave maestra, ya que el servicio está disponible en muchas regiones de Azure. Actualmente puede elegir entre 28 regiones de Azure, aunque esta cifra probablemente aumente. Para obtener más información, consulte la página [Productos disponibles por región] (https://azure.microsoft.com/regions/services/)) en el sitio de Azure.
+- Algunas organizaciones tienen restricciones en lo que respecta al lugar en el que debe residir la clave maestra. Azure Key Vault proporciona un alto nivel de control sobre el lugar en el que se almacenará la clave maestra, ya que el servicio está disponible en muchas regiones de Azure. Actualmente puede elegir entre 28 regiones de Azure, aunque esta cifra probablemente aumente. Para más información, vea la página [Productos disponibles por región](https://azure.microsoft.com/regions/services/) en el sitio de Azure.
 
 Además de la administración de claves, Azure Key Vault ofrece a los administradores de seguridad la misma experiencia de administración para el almacenamiento, el acceso y la administración de certificados y secretos (por ejemplo, contraseñas) para otros servicios y aplicaciones que usan cifrado. 
 
-Para obtener más información sobre Azure Key Vault, consulte [¿Qué es el Almacén de claves de Azure?](/azure/key-vault/key-vault-whatis) y visite el [blog del equipo de Azure Key Vault](https://cloudblogs.microsoft.com/kv/) para obtener la información más reciente y documentarse sobre cómo usan esta tecnología otros servicios.
+Para obtener más información sobre Azure Key Vault, consulte [¿Qué es el Almacén de claves de Azure?](/azure/key-vault/key-vault-whatis) y visite el [blog del equipo de Azure Key Vault](https://blogs.technet.microsoft.com/kv/) para obtener la información más reciente y documentarse sobre cómo usan esta tecnología otros servicios.
 
 ## <a name="restrictions-when-using-byok"></a>Restricciones en el uso de BYOK
 

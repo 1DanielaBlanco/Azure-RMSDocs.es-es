@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: f7b13fa4-4f8e-489a-ba46-713d7a79f901
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ec0c231e2036dc66b941be7f764bb5e5fd5c518a
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 7104da9852458cbe9100600c3e14b43ee4aa7986
+ms.sourcegitcommit: 2a1c0882d2b0400f4da6370dbc1830df09867e3d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023817"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53218483"
 ---
 # <a name="technical-overview-and-protection-details-for-the-microsoft-rights-management-sharing-application"></a>Información general técnica de la aplicación Microsoft Rights Management sharing
 
->*Se aplica a: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 con SP1, Windows 8 y Windows 8.1*
+>*Se aplica a: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 con SP1, Windows 8, Windows 8.1*
 
 
 La aplicación Microsoft Rights Management sharing es una aplicación opcional descargable para Microsoft Windows y otras plataformas, que ofrece lo siguiente:
@@ -34,7 +34,7 @@ La aplicación Microsoft Rights Management sharing es una aplicación opcional d
 
 -   Interoperabilidad completa con archivos PDF protegidos con la infraestructura de clasificación de archivos (FCI) y herramientas de creación de PDF admitidas.
 
-La aplicación Microsoft Rights Management sharing usa el [tiempo de ejecución del cliente de AD RMS 2.1](http://www.microsoft.com/download/details.aspx?id=38396). Mediante el uso de la funcionalidad de AD RMS 2.1, la aplicación Microsoft Rights Management sharing proporciona a los usuarios finales una experiencia sencilla de protección y el consumo.
+La aplicación Microsoft Rights Management sharing usa el [tiempo de ejecución del cliente de AD RMS 2.1](https://www.microsoft.com/download/details.aspx?id=38396). Mediante el uso de la funcionalidad de AD RMS 2.1, la aplicación Microsoft Rights Management sharing proporciona a los usuarios finales una experiencia sencilla de protección y el consumo.
 
 Con la versión de RMS de octubre de 2013, puede proteger documentos de forma nativa mediante Office 2010 y enviarlos a personas de otra compañía, quienes pueden consumirlos entonces con el servicio Azure Rights Management de Azure Information Protection. Además, con esta versión, si usa AD RMS en modo criptográfico 2, puede usar RMS para individuos y consumir contenido de personas de otra compañía que use el servicio Azure Rights Management. Para obtener más información sobre el Modo criptográfico 2, consulte [Modos criptográficos de AD RMS](https://technet.microsoft.com/library/hh867439%28v=ws.10%29.aspx).
 
@@ -124,11 +124,11 @@ Repita estos tres pasos con otros tipos de archivo que quiera definir como excep
 
 Puede realizar modificaciones parecidas en el Registro para otras situaciones cambiando el valor de la cadena **Encryption** que admite los siguientes valores:
 
--   **Pfile**: Protección genérica
+-   **Pfile**: protección genérica
 
--   **Native**: Protección nativa
+-   **Nativa**: protección nativa
 
--   **Off**: Bloquear protección
+-   **Desactivada**: bloquear la protección
 
 ## <a name="see-also"></a>Consulte también
 [Guía de usuario de la aplicación Rights Management sharing](sharing-app-user-guide.md)

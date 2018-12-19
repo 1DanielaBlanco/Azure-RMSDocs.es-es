@@ -12,12 +12,12 @@ ms.assetid: 44D3EB62-7A60-45D9-BA7E-45A06E7D598F
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 7412a760aab21eb93fc67080f53c0ec83bdfc757
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: a3641f3de547e457445727beb6723d2c7ef8750c
+ms.sourcegitcommit: 1cd4edd4ba1eb5e10cb61628029213eda316783a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44146241"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266518"
 ---
 # <a name="rights-management-services-sdk-21"></a>Rights Management Services SDK 2.1
 
@@ -27,11 +27,9 @@ La plataforma de Rights Management Services SDK 2.1 permite a los desarrolladore
 
 ### <a name="developer-audience"></a>Audiencia de desarrolladores
 
-RMS SDK 2.1, disponible desde la [página de descarga de RMS SDK 2.1](http://www.microsoft.com/en-us/download/details.aspx?id=38397) en el Centro de descargas de Microsoft, se utiliza para crear aplicaciones personalizadas que habilitan la administración de derechos en los activos digitales y aplican los términos de uso de esos recursos. Se requieren conocimientos del lenguaje de programación C++.
+RMS SDK 2.1, disponible desde la [página de descarga de RMS SDK 2.1](https://www.microsoft.com/download/details.aspx?id=38397) en el Centro de descargas de Microsoft, se utiliza para crear aplicaciones personalizadas que habilitan la administración de derechos en los activos digitales y aplican los términos de uso de esos recursos. Se requieren conocimientos del lenguaje de programación C++.
 
-Para más información acerca de esta tecnología, consulte nuestra [esquina del desarrollador de RMS](http://blogs.msdn.com/b/rms/archive/2012/05/31/official-release-of-ad-rms-sdk-2-0-and-ad-rms-client-2-0.aspx), el blog oficial del equipo de producto Rights Management de Microsoft para programadores que trabajan con la protección de la información con AD RMS.
-
-Para obtener respuestas a las preguntas más frecuentes, consulte la sección de los desarrolladores de nuestras [preguntas más frecuentes de RMS](http://aka.ms/adrmsfaq )
+Para obtener respuestas a las preguntas más frecuentes, consulte la sección de los desarrolladores de nuestras [preguntas más frecuentes de RMS](https://aka.ms/adrmsfaq)
 
 ### <a name="run-time-requirements"></a>Requisitos de tiempo de ejecución
 
@@ -45,10 +43,9 @@ Para más información sobre los requisitos de tiempo de ejecución para un elem
 |[Notas para el desarrollador](developer-notes.md)|En esta sección se incluyen instrucciones específicas para varios escenarios de desarrollo importantes.|
 |[Referencia de API](api-reference-2-1.md)|Esta sección contiene temas que describen el material de referencia para todos los elementos de la API.|
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
-* [Página de descarga de RMS SDK 2.1](http://www.microsoft.com/en-us/download/details.aspx?id=38397)
-* [Rincón del desarrollador de RMS](http://blogs.msdn.com/b/rms/archive/2012/05/31/official-release-of-ad-rms-sdk-2-0-and-ad-rms-client-2-0.aspx)
-* [Preguntas más frecuentes sobre RMS](http://aka.ms/adrmsfaq )
+* [Página de descarga de RMS SDK 2.1](https://www.microsoft.com/download/details.aspx?id=38397)
+* [Preguntas más frecuentes sobre RMS](https://aka.ms/adrmsfaq )

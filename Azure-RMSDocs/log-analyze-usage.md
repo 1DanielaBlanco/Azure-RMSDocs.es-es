@@ -4,26 +4,26 @@ description: Información e instrucciones sobre cómo usar el registro de uso co
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/16/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 1deea1b4353e2d48c85ae24625ab29eca96a3968
-ms.sourcegitcommit: bf58c5d94eb44a043f53711fbdcf19ce503f8aab
+ms.openlocfilehash: 3d287df4fbea3f4b040444182aed89da7c470ea1
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47211333"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305648"
 ---
 # <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>Registro y análisis del uso del servicio Azure Rights Management
 
->*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Use esta información como ayuda para comprender cómo puede usar el registro de uso del servicio Azure Rights Management de Azure Information Protection. Este servicio proporciona la protección de datos para documentos y correos electrónicos de la organización y puede registrar todas las solicitudes que recibe. Estas solicitudes incluyen cuando los usuarios protegen documentos y correos electrónicos y también consumen este contenido, las acciones realizadas por los administradores para este servicio y las acciones llevadas a cabo por operadores de Microsoft para admitir la implementación de Azure Information Protection. 
 
-A continuación, puede usar estos registros del servicio Azure Rights Management para admitir los siguientes escenarios empresariales:
+Después puede usar estos registros del servicio Azure Rights Management para admitir los siguientes escenarios empresariales:
 
 -   **Analizar enfoques empresariales**
 
@@ -52,7 +52,7 @@ Además, la información de los registros de uso del cliente y del analizador de
 
 Use las secciones siguientes para más información sobre el registro de uso del servicio Azure Rights Management. 
 
-## <a name="how-to-enable-azure-rights-management-usage-logging"></a>Habilitación del registro de uso de Azure Rights Management
+## <a name="how-to-enable-azure-rightsmanagement-usage-logging"></a>Cómo habilitar el registro de uso de Azure Rights Management
 A partir de febrero de 2016, el registro de uso de Azure Rights Management se habilita de forma predeterminada para todos los clientes. Esto se aplica a los clientes que activaron su servicio de Azure Rights Management antes de febrero de 2016 y a los clientes que activaron el servicio después de febrero de 2016. 
 
 > [!NOTE]
@@ -133,7 +133,7 @@ La primera línea identifica que se trata de registros de Azure Rights Managemen
 
 La tercera enumera una lista de nombres de campos separados por pestañas:
 
-**#Fields: date            time            row-id        request-type           user-id       result          correlation-id          content-id                owner-email           issuer                     template-id             file-name                  date-published      c-info         c-ip            admin-action            acting-as-user**
+**#Fields: date            time            row-id        request-type           user-id       result          correlation-id          content-id                owner-email           issuer                     template-id             file-name                  date-published      c-info         c-ip            admin-action            acting-as-user**
 
 Cada una de las líneas posteriores es un registro. Los valores de los campos se encuentran en el mismo orden que la línea anterior y están separados por pestañas. Use la siguiente tabla para interpretar los campos.
 
@@ -163,7 +163,7 @@ Aunque el campo user-id suele indicar el usuario que hay realizado la solicitud,
 
 -   El valor **'microsoftrmsonline@&lt;YourTenantID&gt;.rms.&lt;region&gt;.aadrm.com'**.
 
-    Esto indica que un servicio de Office 365, como Exchange Online o SharePoint Online, está realizando la solicitud. En la cadena, *&lt;YourTenantID&gt;* es el GUID de su inquilino y *&lt;region&gt;* es la región donde se registra el inquilino. Por ejemplo, **na** representa a Norteamérica, **eu** representa a Europa y **ap** representa a Asia.
+    Esto indica que un servicio de Office 365, como Exchange Online o SharePoint Online, están realizando la solicitud. En la cadena, *&lt;YourTenantID&gt;* es el GUID de su inquilino y *&lt;region&gt;* es la región donde se registra el inquilino. Por ejemplo, **na** representa a Norteamérica, **eu** representa a Europa y **ap** representa a Asia.
 
 -   Si está usando el conector RMS.
 
@@ -190,7 +190,7 @@ Hay muchos tipos de solicitudes del servicio Azure Rights Management, pero en la
 |FECreatePublishingLicenseV1|Lo mismo que Certify y GetClientLicensorCert combinados, desde clientes móviles.|
 |FEGetAllTemplates|Se realiza una llamada desde un dispositivo móvil (front-end) para obtener las plantillas.|
 |FindServiceLocationsForUser|Se realiza una llamada para consultar las direcciones URL, que se usan para llamar a Certify o AcquireLicense.|
-|GetAllDocs|Se realiza una llamada desde el sitio de seguimiento de documentos para cargar la página **Todos los documentos** para un usuario, o buscar todos los documentos del inquilino. Use este valor con los campos admin-action y acting-as-admin:<br /><br />- admin-action está vacío: un usuario ve la página **Todos los documentos** de sus propios documentos.<br /><br />- admin-action es true y acting-as-user está vacío: un administrador ve todos los documentos de su inquilino.<br /><br />- admin-action es true y acting-as-user no está vacío: un administrador ve la página **Todos los documentos** de un usuario.|
+|GetAllDocs|Se realiza una llamada desde el sitio de seguimiento de documentos para cargar la página **Todos los documentos** para un usuario, o buscar todos los documentos del inquilino. Use este valor con los campos admin-action y acting-as-admin:<br /><br />-admin-action está vacío: un usuario ve la página **Todos los documentos** de sus propios documentos.<br /><br />-admin-action es true y acting-as-user está vacío: un administrador ve todos los documentos para su inquilino.<br /><br />-admin-action es true y acting-as-user no está vacío: un administrador ve la página **Todos los documentos** de un usuario.|
 |GetAllTemplates|Se realiza una llamada desde Azure Portal para obtener todas las plantillas.|
 |GetClientLicensorCert|El cliente está solicitando un certificado de publicación (que se utiliza posteriormente para proteger contenido) desde un equipo con Windows.|
 |GetConfiguration|Se llama a un cmdlet de Azure PowerShell para obtener la configuración del inquilino de Azure RMS.|

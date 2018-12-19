@@ -4,34 +4,34 @@ description: Instrucciones para instalar Windows PowerShell para el servicio Azu
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/23/2018
-ms.topic: article
+ms.date: 12/12/2018
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 0d665ed6-b1de-4d63-854a-bc57c1c49844
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5fe03b296020e28234e439f634074746ff1bd677
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 8809524c197321840016e2db4347b0c37154e352
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42808889"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305359"
 ---
 # <a name="installing-the-aadrm-powershell-module"></a>Instalación del módulo de PowerShell para AADRM
 
->*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
-Use la información siguiente para que el resulte más fácil instalar el módulo de Windows PowerShell para el servicio Azure Rights Management de Azure Information Protection. El nombre de este módulo es AADRM.
+Use la siguiente información para que le resulte más fácil instalar el módulo de Windows PowerShell para el servicio Azure Rights Management de Azure Information Protection. El nombre de este módulo es AADRM.
 
-Puede usar este módulo de PowerShell para administrar el servicio Azure Rights Management desde la línea de comandos con cualquier equipo que tenga una conexión a Internet y que cumpla los requisitos previos indicados en la sección siguiente. Windows PowerShell para Rights Management admite el uso de scripting para la automatización o puede que sea necesario para escenarios de configuración avanzada. Para más información acerca de las tareas de administración y las configuraciones que admite el módulo, consulte [Administración de Azure Rights Management mediante el uso de Windows PowerShell](administer-powershell.md).
+Puede usar este módulo de PowerShell para administrar el servicio Azure Rights Management desde la línea de comandos con cualquier equipo que tenga una conexión a Internet y que cumpla los requisitos previos indicados en la sección siguiente. Windows PowerShell para Azure Rights Management admite el uso de scripting para la automatización o puede que sea necesario para escenarios de configuración avanzada. Para más información acerca de las tareas de administración y las configuraciones que admite el módulo, consulte [Administración de Azure Rights Management mediante el uso de Windows PowerShell](administer-powershell.md).
 
 ## <a name="prerequisites"></a>Requisitos previos
 En esta tabla se muestran los requisitos previos para instalar y usar el módulo de PowerShell para AADRM para el servicio de Azure Rights Management de Azure Information Protection.
 
 |Requisito|Más información|
 |---------------|--------------------|
-|Versión mínima de Windows PowerShell: 3.0|Para confirmar la versión de Windows PowerShell que ejecuta, escriba `$PSVersionTable` en una sesión de PowerShell. <br /><br /> Si necesita instalar una versión posterior de Windows PowerShell, vea [Actualización de Windows PowerShell existente](/powershell/scripting/setup/installing-windows-powershell#upgrading-existing-windows-powershell).|
-|Versión mínima de Microsoft .NET Framework: 4.5<br /><br />Nota: Esta versión de Microsoft .NET Framework está incluida con los últimos sistemas operativos, por lo que solo tendrá que instalarla manualmente en el caso de que el sistema operativo del cliente sea anterior a Windows 8.0 o de que el sistema operativo del servidor sea anterior a Windows Server 2012.|Si la versión mínima de Microsoft .NET Framework todavía no está instalada, puede descargar [Microsoft .NET Framework 4.5](http://www.microsoft.com/download/details.aspx?id=30653).<br /><br />Esta versión mínima de Microsoft .NET Framework es necesaria para algunas de las clases que usa el módulo de AADRM.|
+|Versión mínima de Windows PowerShell: 3.0|Para confirmar la versión de Windows PowerShell que ejecuta, escriba `$PSVersionTable` en una sesión de PowerShell. <br /><br /> Si necesita instalar una versión posterior de Windows PowerShell, vea [Actualización de Windows PowerShell existente](/powershell/scripting/setup/installing-windows-powershell#upgrading-existing-windows-powershell).|
+|Versión mínima de Microsoft .NET Framework: 4,5<br /><br />Nota: Esta versión de Microsoft .NET Framework está incluida con los últimos sistemas operativos, por lo que solo tendrá que instalarla manualmente en el caso de que el sistema operativo del cliente sea anterior a Windows 8.0 o de que el sistema operativo del servidor sea anterior a Windows Server 2012.|Si la versión mínima de Microsoft .NET Framework todavía no está instalada, puede descargar [Microsoft .NET Framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653).<br /><br />Esta versión mínima de Microsoft .NET Framework es necesaria para algunas de las clases que usa el módulo de AADRM.|
 
 A partir de la versión 2.5.0.0 del módulo de AADRM, ya no es necesario usar Microsoft Online Services - Ayudante para el inicio de sesión.
 
@@ -84,9 +84,9 @@ Get-Help Connect-AadrmService -online
 
 Para obtener más información:
 
--   Lista completa de cmdlets disponibles: [AADRM Module](/powershell/aadrm/vlatest/rightsmanagement)
+-   Lista completa de cmdlets disponibles: [Módulo de AADRM](/powershell/aadrm/vlatest/rightsmanagement)
 
--   Lista de los principales escenarios de configuración que admiten PowerShell: [administración de Azure Rights Management mediante Windows PowerShell](administer-powershell.md)
+-   Lista de los principales escenarios de configuración que admiten PowerShell: [Administración de Azure Rights Management mediante Windows PowerShell](administer-powershell.md)
 
 Para poder ejecutar los comandos que configuran el servicio Azure Rights Management, tiene que conectarse al servicio con el cmdlet [Connect-AadrmService](/powershell/aadrm/vlatest/connect-aadrmservice). Cuando termine de ejecutar los comandos de configuración, como procedimiento recomendado, desconéctese del servicio con el cmdlet [Disconnect-AadrmService](/powershell/aadrm/vlatest/disconnect-aadrmservice) . Si no se desconecta, la conexión se desconecta automáticamente tras un período de inactividad. Debido al comportamiento de desconexión automática, es posible que deba conectarse de nuevo ocasionalmente en una sesión de PowerShell. 
 

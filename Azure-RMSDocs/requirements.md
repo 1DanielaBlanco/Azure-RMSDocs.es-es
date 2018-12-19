@@ -10,24 +10,24 @@ ms.service: information-protection
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 43ff5d8fabf8197ba8ea235b01258dff12a5acd4
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 4ef35134a8f5d6a3a8a615be6c956ec5e445557d
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024155"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53173747"
 ---
 # <a name="requirements-for-azure-information-protection"></a>Requirements for Azure Information Protection (Requisitos de Azure Information Protection)
 
->*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Antes de implementar Azure Information Protection para su organización, asegúrese de que tiene los siguientes requisitos previos. 
 
 ## <a name="subscription-for-azure-information-protection"></a>Suscripción a Azure Information Protection
 
-**Para clasificación, etiquetado y protección**: debe tener un [plan de Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection/). 
+**Para funciones de clasificación, etiquetado y protección**: Debe tener un [plan de Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection/). 
 
-**Solo para protección**: debe tener un [plan de Office 365 que incluya Azure Information Protection](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf).
+**Solo para protección**: debe tener un [plan de Office 365 que incluya Azure Information Protection](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf).
 
 Para asegurarse de que la suscripción de la organización incluya las características de Azure Information Protection que quiera usar, revise la lista de características en la página [Precios de Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection).
 
@@ -50,7 +50,7 @@ Como Azure Information Protection admite el inicio de sesión único (SSO), ya n
 
 Multi-Factor Authentication (MFA) es compatible con Azure Information Protection si tiene el software cliente necesario y la infraestructura de MFA configurada correctamente.
 
-El acceso condicional es compatible con la vista previa de documentos protegidos con Azure Information Protection. Para obtener más información, consulte este artículo de preguntas más frecuentes: [Veo que Azure Information Protection aparece como una aplicación en la nube disponible para el acceso condicional. ¿Cómo funciona?](faqs.md#i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work).
+El acceso condicional es compatible con la vista previa de documentos protegidos con Azure Information Protection. Para más información, vea las siguientes preguntas frecuentes: [Veo que Azure Information Protection aparece como una aplicación en la nube disponible para el acceso condicional. ¿Cómo funciona?](faqs.md#i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work)
 
 Para obtener más información sobre los requisitos de autenticación, consulte [Requisitos de Azure Active Directory para Azure Information Protection](requirements-azure-ad.md). 
 
@@ -116,7 +116,7 @@ Además de la información del artículo de Office específica de Azure Informat
 
 - No termine la conexión TLS de cliente a servicio (por ejemplo, para realizar una inspección de los paquetes) a la dirección URL **aadrm.com**. Al hacerlo, se interrumpe la asignación de certificados que los clientes de RMS utilizan con las entidades de certificación administradas por Microsoft para ayudar a proteger su comunicación con el servicio Azure Rights Management.
     
-    - Sugerencia: Debido a cómo Chrome muestra las conexiones seguras en la barra de direcciones, puede utilizar este explorador para comprobar rápidamente si la conexión de cliente se ha cancelado antes de que llegue al servicio Azure Rights Management. Escriba la dirección URL siguiente en la barra de direcciones del explorador: `https://admin.na.aadrm.com/admin/admin.svc` 
+    - Sugerencia: debido a cómo Chrome muestra las conexiones seguras en la barra de direcciones, puede usar este explorador para comprobar rápidamente si la conexión de cliente se ha cancelado antes de que llegue al servicio Azure Rights Management. Escriba la dirección URL siguiente en la barra de direcciones del explorador: `https://admin.na.aadrm.com/admin/admin.svc` 
     
         No se preocupe por lo que muestra la ventana del explorador. En su lugar, haga clic en el candado de la barra de direcciones para ver la información del sitio. La información del sitio le permite ver la entidad de certificación emisora. Si el certificado no lo emite una entidad de certificación de Microsoft, es muy probable que la conexión segura de cliente a servicio finalice y tenga que volver a configurarla en el firewall. La imagen siguiente muestra un ejemplo de una entidad de certificación emisora de Microsoft. Si ve que una entidad de certificación interna ha emitido el certificado, esta configuración no es compatible con Azure Information Protection.
         

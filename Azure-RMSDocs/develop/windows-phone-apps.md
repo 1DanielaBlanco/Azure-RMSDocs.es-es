@@ -5,19 +5,19 @@ keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: e25a446e-b977-4736-9c65-7711171fb0e1
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 50480fef2983f715a54b68ae1b21dbcf28e9b554
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 2c85449615fd0db5f88c452031cbc5b837cb0f82
+ms.sourcegitcommit: 1cd4edd4ba1eb5e10cb61628029213eda316783a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151510"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266399"
 ---
 # <a name="windows-phone-setup"></a>Programa de instalación de Windows Phone
 
@@ -35,11 +35,11 @@ Este tema sirve de guía por el proceso de configuración del entorno para crear
 
 Debe tener el siguiente software en el sistema de desarrollo:
 
--   El sistema operativo [Windows 8.1](http://windows.microsoft.com/en-US/windows-8/meet)
--   [Herramientas de desarrollo de Windows Phone 8.1 (SDK)](http://dev.windowsphone.com/en-us/downloadsdk)
--   Microsoft [Visual Studio 2012](http://www.microsoft.com/visualstudio/eng/products/visual-studio-overview) o superior, o Visual Studio Express 2012, que se incluye en el Windows Phone SDK 8.0/8.1
--   El paquete de Microsoft RMS SDK 4.2 para Windows Phone. Para más información, consulte [Get started](get-started.md) (Introducción).
--   Biblioteca de autenticación: se recomienda que utilice la [biblioteca de autenticación de Azure AD](https://msdn.microsoft.com/library/jj573266.aspx), aunque se pueden usar otras bibliotecas de autenticación.
+-   El sistema operativo [Windows 8.1](https://windows.microsoft.com/windows-8/meet)
+-   [Herramientas de desarrollo de Windows Phone 8.1 (SDK)](https://developer.microsoft.com/windows/downloads/sdk-archive)
+-   Microsoft [Visual Studio 2012](https://visualstudio.microsoft.com/vs/older-downloads/) o superior, o Visual Studio Express 2012, que se incluye en el Windows Phone SDK 8.0/8.1
+-   El paquete de Microsoft RMS SDK 4.2 para Windows Phone. Para más información, vea [Get started](get-started.md) (Introducción).
+-   Biblioteca de autenticación: se recomienda que use la [biblioteca de autenticación de Azure AD](https://msdn.microsoft.com/library/jj573266.aspx), aunque se pueden usar otras bibliotecas de autenticación.
 
 Lea el tema de [novedades](release-notes.md) para más información sobre actualizaciones, información de dispositivos y entornos, notas de la versión y preguntas más frecuentes de la API.
 
@@ -79,6 +79,6 @@ Ya está listo para crear sus propias aplicaciones nuevas de Windows Phone.
 
 [Referencia de la API de Windows](https://msdn.microsoft.com/library/dn891914.aspx)
 
-[Visual Studio 2012](http://www.microsoft.com/visualstudio/eng/products/visual-studio-overview)
+[Visual Studio 2012](https://visualstudio.microsoft.com/vs/older-downloads/)
 
-[Windows Phone SDK](http://dev.windowsphone.com/en-us/downloadsdk)
+[Windows Phone SDK](https://developer.microsoft.com/windows/downloads/sdk-archive)

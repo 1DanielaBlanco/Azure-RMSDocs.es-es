@@ -4,27 +4,27 @@ description: Fase 1 de la migración desde AD RMS a Azure Information Protection
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/11/2018
+ms.date: 12/11/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: d954d3ee-3c48-4241-aecf-01f4c75fa62c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 3a695268605a16564573d64c1f48447ea9b8cf45
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 5eec7b06f3e0b649f436f61dc141e53173503774
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151119"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305187"
 ---
 # <a name="migration-phase-1---preparation"></a>Fase 1 de la migración: preparación
 
->*Se aplica a: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Se aplica a: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Use la información siguiente para la fase 1 de la migración desde AD RMS a Azure Information Protection. En estos procedimientos se describen los pasos del 1 al 3 de la [Migración desde AD RMS a Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md) y se prepara el entorno para la migración sin afectar a los usuarios.
 
 
-## <a name="step-1-install-the-aadrm-powershell-module-and-identify-your-tenant-url"></a>Paso 1: Instalar el módulo de PowerShell para AADRM e identificar la dirección URL del inquilino
+## <a name="step-1-install-the-aadrm-powershell-module-and-identify-your-tenant-url"></a>Paso 1: Instalación del módulo de PowerShell para AADRM e identificación de la dirección URL del inquilino
 
 Instale el módulo de AADRM para que pueda configurar y administrar el servicio que proporciona la protección de datos para Azure Information Protection.
 
@@ -35,7 +35,7 @@ Para obtener instrucciones, vea [Instalación del módulo de PowerShell para AAD
 
 Para completar algunas de las instrucciones de migración, deberá conocer la dirección URL de servicio de Azure Rights Management de su inquilino, de modo que la pueda sustituir cuando vea referencias a la *\<dirección URL del inquilino\>*. La dirección URL de servicio de Azure Rights Management tiene el formato siguiente: **{GUID}.rms.[Región].aadrm.com**.
 
-Por ejemplo: **5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**.
+Por ejemplo: **5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
 
 ### <a name="to-identify-your-azure-rights-management-service-url"></a>Para identificar la dirección URL de servicio de Azure Rights Management
 
@@ -77,7 +77,7 @@ En el caso de la mayoría de las migraciones, no resulta práctico migrar todos 
     
 4. Extraiga los archivos y siga las instrucciones de **Prepare-Client.cmd** de modo que contenga el nombre del servidor de la dirección URL de licencias de extranet del clúster de AD RMS. 
     
-    Para buscar este nombre, en la consola de Active Directory Rights Management Services, haga clic en el nombre del clúster. En la información **Detalles del clúster**, copie el nombre del servidor del valor **Licencias** de la sección de direcciones URL de clúster de extranet. Por ejemplo: **rmscluster.contoso.com**.
+    Para buscar este nombre: en la consola de Active Directory Rights Management Services, haga clic en el nombre del clúster. En la información **Detalles del clúster**, copie el nombre del servidor del valor **Licencias** de la sección de direcciones URL de clúster de extranet. Por ejemplo: **rmscluster.contoso.com**.
 
     > [!IMPORTANT]
     > En las instrucciones se incluye cómo reemplazar las direcciones de ejemplo de **adrms.contoso.com** por las direcciones de sus servidores de AD RMS. Al hacerlo, asegúrese de que no haya ningún espacio adicional antes o después de las direcciones, ya que interrumpirá el script de migración y es muy difícil de identificar como la causa principal del problema. Algunas herramientas de edición agregan automáticamente un espacio después de pegar texto.
@@ -102,7 +102,7 @@ Asegúrese de que tiene la [dirección URL de servicio de Azure Rights Managemen
     Set-IRMConfiguration -internallicensingenabled $false
     Set-IRMConfiguration -internallicensingenabled $true 
 
-**Si ha integrado Exchange local con AD RMS**: para cada organización de Exchange, agregue primero los valores del Registro en cada servidor de Exchange Server y, después, ejecute los comandos de PowerShell: 
+**Si ha integrado Exchange local con AD RMS**, para cada organización de Exchange, agregue primero los valores del Registro en cada servidor de Exchange Server y después ejecute los comandos de PowerShell: 
 
 Valores del Registro para Exchange 2013 y Exchange 2016:
 

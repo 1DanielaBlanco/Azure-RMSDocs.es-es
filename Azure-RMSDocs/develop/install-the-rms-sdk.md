@@ -12,12 +12,12 @@ ms.assetid: C827E6B8-8CF2-4C86-AF97-60D66851827E
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 1b801e3928c335846f5f2ec56953ec8bc4998718
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 4a19f6d1bf594d6a181b41685ecc1f1ba82a4408
+ms.sourcegitcommit: 1cd4edd4ba1eb5e10cb61628029213eda316783a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148773"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266416"
 ---
 # <a name="install-the-sdk"></a>Instalar el SDK
 
@@ -27,7 +27,7 @@ Este tema le guiará en el proceso de instalación de las herramientas para desa
 
 ### <a name="install-the-developer-tools"></a>Instalación de las herramientas para desarrolladores
 
-1.  Descargue el [Rights Management Services SDK 2.1](http://www.microsoft.com/en-us/download/details.aspx?id=38397) desde el Centro de descarga de Microsoft, teniendo cuidado de elegir la versión de arquitectura correcta para su equipo.
+1.  Descargue el [Rights Management Services SDK 2.1](https://www.microsoft.com/download/details.aspx?id=38397) desde el Centro de descarga de Microsoft, teniendo cuidado de elegir la versión de arquitectura correcta para su equipo.
 2.  Ejecute el paquete de instalador desde la ubicación de instalación:
 
     **...\\setup\_sdk.exe**

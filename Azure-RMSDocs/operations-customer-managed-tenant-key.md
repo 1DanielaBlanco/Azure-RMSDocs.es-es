@@ -4,22 +4,22 @@ description: Información sobre las operaciones del ciclo de vida que son releva
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/29/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: c5b19c59-812d-420c-9c54-d9776309636c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 098f7834e4765dcb020817014f9357139e42207a
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 92b5b2dad15c2ec33169e72e69f87bddec5e56df
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44147108"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305325"
 ---
-# <a name="customer-managed-tenant-key-life-cycle-operations"></a>Administración de cliente: operaciones de ciclo de vida de clave de inquilino
+# <a name="customer-managed-tenant-key-life-cycle-operations"></a>Administrada por el cliente: Operaciones de ciclo de vida de clave de inquilino
 
->*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Si administra su clave de inquilino para Azure Information Protection (el escenario Bring Your Own Key o BYOK), en las secciones siguientes encontrará más información sobre las operaciones del ciclo de vida relevantes para esta topología.
 
@@ -43,7 +43,7 @@ Ejemplos de cuándo tendrá que regenerar la clave de Azure Information Protecti
 
 Para regenerar la clave en otra clave que administre, puede crear una clave nueva en Azure Key Vault o usar una distinta que ya esté en Azure Key Vault. Después, siga el mismo procedimiento que usó para implementar BYOK para Azure Information Protection. 
 
-1. Solo si la nueva clave está en un almacén de claves diferente al que ya está usando para Azure Information Protection: permita que Azure Information Protection use el almacén de claves mediante el cmdlet [Set-AzureRmKeyVaultAccessPolicy](/powershell/module/azurerm.keyvault/set-azurermkeyvaultaccesspolicy).
+1. Solo si la nueva clave está en un almacén de claves diferente al que ya está usando para Azure Information Protection: Autorizar a Azure Information Protection a que use el almacén de claves mediante el cmdlet [Set-AzureRmKeyVaultAccessPolicy](/powershell/module/azurerm.keyvault/set-azurermkeyvaultaccesspolicy).
 
 2. Si Azure Information Protection aún no conoce la clave que quiere usar, ejecute el cmdlet [Use-AadrmKeyVaultKey](/powershell/module/aadrm/use-aadrmkeyvaultkey).
 
@@ -60,7 +60,7 @@ Para más información sobre cada uno de estos pasos:
 ## <a name="backup-and-recover-your-tenant-key"></a>Realizar una copia de seguridad y recuperar la clave de inquilino
 Puesto que está administrando la clave de inquilino, usted es el responsable de realizar una copia de seguridad de la clave que usa Azure Information Protection. 
 
-Si ha generado la clave de inquilino en local, en un HSM de Thales, para realizar una copia de seguridad de la clave, haga una copia de seguridad del archivo de clave acortada, el archivo de Word y las tarjetas de administrador. Al transferir la clave a Azure Key Vault, el servicio guarda el archivo de clave acortada para protegerse frente a errores de cualquier nodo del servicio. Este archivo está vinculado al mundo de la seguridad para la región o instancia específica de Azure. Sin embargo, este archivo de claves acortadas no es una copia de seguridad completa. Por ejemplo, si alguna vez necesita una copia de texto sin formato de la clave para usarla fuera de un HSM de Thales, Azure Key Vault no podrá recuperarla, ya que solo tiene una copia no recuperable.
+Si ha generado su clave de inquilino en el entorno local, en un HSM de Thales: para realizar una copia de seguridad de la clave, el archivo de clave acortado, el archivo de Word y las tarjetas de administrador. Al transferir la clave a Azure Key Vault, el servicio guarda el archivo de clave acortada para protegerse frente a errores de cualquier nodo del servicio. Este archivo está vinculado al mundo de la seguridad para la región o instancia específica de Azure. Sin embargo, este archivo de claves acortadas no es una copia de seguridad completa. Por ejemplo, si alguna vez necesita una copia de texto sin formato de la clave para usarla fuera de un HSM de Thales, Azure Key Vault no podrá recuperarla, ya que solo tiene una copia no recuperable.
 
 Azure Key Vault tiene un [cmdlet de copia de seguridad](/powershell/module/azurerm.keyvault/Backup-AzureKeyVaultKey) que puede descargar y almacenar en un archivo para hacer una copia de seguridad de una clave. Dado que el contenido descargado se cifra, no se puede usar fuera de Azure Key Vault. 
 

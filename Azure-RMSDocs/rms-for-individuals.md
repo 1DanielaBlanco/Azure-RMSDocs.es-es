@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 40cc70864d68b4bdcc1081f908539663ba8366a8
-ms.sourcegitcommit: d969a82dc801f3d653163de2b18a3a772607b74c
+ms.openlocfilehash: 72735ea07a00f37377bbbab781c03c4516f032de
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50915570"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53173798"
 ---
 # <a name="rms-for-individuals-and-azure-information-protection"></a>RMS para individuos y Azure Information Protection
 
@@ -43,7 +43,7 @@ Cuando se crea la cuenta, en la página final se mostrarán vínculos para desca
 
 3. Haz clic en **Iniciar sesión**.
 
-    Microsoft usa su dirección de correo electrónico para comprobar si su organización ya tiene una [suscripción a Azure Information Protection Premium](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) o una [suscripción a Office 365 que incluya protección de datos mediante Azure Information Protection](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf). Si se encuentra alguna de estas suscripciones, no necesitará RMS para usuarios. Se iniciará sesión de inmediato y se cancelará el registro de autoservicio de RMS para usuarios. Si no se encuentra una de estas suscripciones, continuará con el paso siguiente.
+    Microsoft usa su dirección de correo electrónico para comprobar si su organización ya tiene una [suscripción a Azure Information Protection Premium](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) o una [suscripción a Office 365 que incluya protección de datos mediante Azure Information Protection](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf). Si se encuentra alguna de estas suscripciones, no necesitará RMS para usuarios. Se iniciará sesión de inmediato y se cancelará el registro de autoservicio de RMS para usuarios. Si no se encuentra una de estas suscripciones, continuará con el paso siguiente.
 
 4. Espere un mensaje de correo electrónico de confirmación, que se enviará a la dirección que haya suministrado. Lo enviará el equipo de Office 365 (support@email.microsoftonline.com), con el asunto **Finalizar la suscripción a Microsoft Azure Information Protection**.
 

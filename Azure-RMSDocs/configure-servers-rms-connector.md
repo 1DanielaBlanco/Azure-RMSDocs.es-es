@@ -4,18 +4,18 @@ description: Información para ayudarlo a configurar los servidores locales que 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e66b4941cdfa86fbb1dcfe8593b39b59eb45ed9e
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 606ca10f04ad9fa21d90fdf4bfcbc368db6febb1
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024134"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305631"
 ---
 # <a name="configuring-servers-for-the-azure-rights-management-connector"></a>Configuración de servidores para el conector de Azure Rights Management
 
@@ -30,15 +30,15 @@ Antes de comenzar, asegúrese de que ha instalado y configurado el conector de R
 ## <a name="configuring-servers-to-use-the-rms-connector"></a>Configuración de servidores para que usen el conector RMS
 Después de instalar y configurar el conector RMS, estará preparado para configurar los servidores locales que se conectarán al servicio Azure Rights Management y que usarán esta tecnología de protección con el conector. Esto supone configurar los siguientes servidores:
 
--   **Para Exchange 2016 y Exchange 2013**: servidores de acceso de cliente y servidores de buzones
+-   **Para Exchange 2016 y Exchange 2013**: Servidores de acceso de cliente y servidores de buzones
 
--   **Para Exchange 2010**: servidores de acceso de cliente y servidores de transporte de concentradores
+-   **Para Exchange 2010**: Servidores de acceso de cliente y servidores de transporte de concentradores
 
--   **Para SharePoint**: servidores web front-end de SharePoint, incluidos los que hospedan el servidor de la administración central
+-   **Para SharePoint**: Servidores web front-end de SharePoint, incluidos los que hospedan el servidor de la administración central
 
--   **Para la infraestructura de clasificación de archivos**: equipos con Windows Server que tengan instalado el Administrador de recursos de archivos
+-   **Para la infraestructura de clasificación de archivos**: Equipos con Windows Server que tienen instalado el administrador de recursos de archivos
 
-Esta configuración precisa parámetros de registro. Para ello, tiene dos opciones: automáticamente mediante la herramienta de configuración del servidor para el conector de Microsoft RMS o manualmente mediante la edición del Registro.
+Esta configuración precisa parámetros de registro. Para hacer esto, tiene dos opciones: automáticamente mediante la herramienta de configuración del servidor para el conector de Microsoft RMS o manualmente mediante la edición del Registro.
 
 ---
 
@@ -92,7 +92,7 @@ Después de realizar los cambios de configuración en estos servidores, debe rei
 
     -   **Localmente**: Puede ejecutar la herramienta de forma interactiva, desde el servidor que se va a configurar para comunicarse con el conector RMS. Esta ejecución es útil para una configuración de uso único, como un entorno de evaluación.
 
-    -   **Implementación de software**Puede ejecutar la herramienta para producir archivos de registro que, a continuación, implementará en un servidor pertinente (o más) mediante una aplicación de administración de sistemas que admite la implementación de software, como un administrador de la configuración del centro de sistemas.
+    -   **Implementación de software**: Puede ejecutar la herramienta para producir archivos de registro que después implementará en un servidor pertinente (o más) mediante una aplicación de administración de sistemas que admite la implementación de software, como un administrador de la configuración del centro de sistemas.
 
     -   **Directiva de grupo**: Puede ejecutar la herramienta para producir un script que le proporcione a un administrador que pueda crear objetos de directivas de grupo para los servidores que se van a configurar. Este script crea un objeto de directiva de grupo para cada tipo de servidor que se va a configurar, que el administrador pueda asignar a servidores pertinentes posteriormente.
 
@@ -128,7 +128,7 @@ Use las secciones siguientes para obtener información específica para cada tip
 ## <a name="configuring-an-exchange-server-to-use-the-connector"></a>Configuración de un servidor Exchange para usar el conector
 Los siguientes roles de Exchange se comunican con el conector RMS:
 
--   Para Exchange 2016 y Exchange 2013: servidor de acceso de cliente y servidor de buzones
+-   Para Exchange 2016 y Exchange 2013: Servidor de acceso de cliente y servidor de buzones
 
 -   Para Exchange 2010: Servidor de acceso de cliente y servidor de transporte de concentradores
 

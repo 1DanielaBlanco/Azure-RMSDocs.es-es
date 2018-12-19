@@ -4,22 +4,22 @@ description: Instrucciones para quitar etiquetas de clasificación y la protecci
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/28/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ''
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 31a325e31c8a7829f660080311f60181aa595ee7
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: ab98e211bf0f346359c6f6627a68db3071f7482e
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148042"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305087"
 ---
-# <a name="user-guide-remove-labels-and-protection-from-files-and-emails-that-have-been-labeled-by-azure-information-protection-or-protected-by-rights-management"></a>Guía del usuario: Eliminación de etiquetas y protección de archivos y correos electrónicos etiquetados con Azure Information Protection o protegidos con Rights Management
+# <a name="user-guide-remove-labels-and-protection-from-files-and-emails-that-have-been-labeled-by-azure-information-protection-or-protected-by-rights-management"></a>Manual del usuario: Quitar etiquetas y la protección de archivos y correos electrónicos que se han etiquetado con Azure Information Protection o que se han protegido con Rights Management
 
->*Se aplica a: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8 y Windows 7 con SP1*
+>*Se aplica a: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 con SP1*
 
 Cuando el [cliente de Azure Information Protection está instalado en el equipo](install-client-app.md), puede quitar etiquetas de clasificación y la protección de archivos y correos electrónicos.
 
@@ -49,7 +49,7 @@ Si sigue sin ver el icono **Eliminar etiqueta** es porque el administrador no le
 > [!NOTE]
 > Si no ve esta barra de Information Protection en las aplicaciones de Office:
 >
-> - Si ve un botón **Proteger** en la cinta de opciones: seleccione **Proteger** y luego **Mostrar barra**.
+> - Si ve un botón **Proteger** en la cinta de opciones: Seleccione **Proteger** y después **Mostrar barra**.
 > 
 > - Puede que no tenga [instalado](install-client-app.md) el cliente de Azure Information Protection, o que este se encuentre en ejecución en el [modo de solo protección](client-protection-only-mode.md).
 
@@ -65,7 +65,7 @@ Con el Explorador de archivos, puede quitar rápidamente las etiquetas y la prot
     
     Si no ve la opción **Proteger con permisos personalizados**, significa que el administrador no permite usar esta opción.
     
-4. Para quitar la protección personalizada de varios archivos: en el cuadro de diálogo **Clasificar y proteger: Azure Information Protection**, haga clic en **Remove custom permissions** (Quitar permisos personalizados).
+4. Para quitar la protección personalizada de varios archivos: en el cuadro de diálogo **Clasificar y proteger: Azure Information Protection**, haga clic en **Quitar permisos personalizados**.
     
     Si no ve la opción **Remove custom permissions** (Quitar permisos personalizados), significa que el administrador no permite usar esta opción.
 

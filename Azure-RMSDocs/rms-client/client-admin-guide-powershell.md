@@ -4,18 +4,18 @@ description: Instrucciones e información para que los administradores administr
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/06/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 834c408e87e34415bb76041968f5bdee6db3e848
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: d707f32062df54975237d9ae6f7218d33cfe337a
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151051"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305665"
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>Guía del administrador: Uso de PowerShell con el cliente de Azure Information Protection
 
@@ -53,10 +53,10 @@ La versión actual del módulo AzureInformationProtection tiene las siguientes l
 
 Antes de empezar a usar estos cmdlets, vea los requisitos previos adicionales y las instrucciones aplicables a su implementación:
 
-- [Azure Information Protection y servicio Azure Rights Management](#azure-information-protection-service-and-azure-rights-management-service)
+- [Azure Information Protection y servicio Azure Rights Management](#azure-information-protection-and-azure-rights-management-service)
 
-    - Aplicable si usa solo la clasificación o la clasificación con Rights Management Protection: tiene una suscripción que incluye Azure Information Protection (por ejemplo, Enterprise Mobility + Security).
-    - Aplicable si usa solo la protección con el servicio Azure Rights Management: tiene una suscripción que incluye el servicio Azure Rights Management (por ejemplo, Office 365 E3 y Office 365 E5).
+    - Aplicable si usa solo clasificación o clasificación con protección de Rights Management: tiene una suscripción que incluye Azure Information Protection (por ejemplo, Enterprise Mobility + Security).
+    - Aplicable si usa solo protección con el servicio Azure Rights Management: tiene una suscripción que incluye el servicio Azure Rights Management (por ejemplo, Office 365 E3 y Office 365 E5).
 
 - [Active Directory Rights Management Services](#active-directory-rights-management-services)
 
@@ -92,13 +92,13 @@ Este requisito previo se aplica si utiliza la protección de datos mediante etiq
 
 Si no está activado el inquilino de Azure Information Protection, vea las instrucciones en [Activar Azure Rights Management](../activate-service.md).
 
-#### <a name="prerequisite-2-to-remove-protection-from-files-for-others-using-your-own-account"></a>Requisito previo 2: quitar la protección de archivos para otros usuarios con su propia cuenta
+#### <a name="prerequisite-2-to-remove-protection-from-files-for-others-using-your-own-account"></a>Requisito previo 2: quitar la protección de los archivos para otros usuarios con su propia cuenta
 
 Los escenarios típicos para quitar la protección de archivos para otros usuarios incluyen la detección de datos o la recuperación de datos. Si usa etiquetas para aplicar la protección, puede quitar la protección estableciendo una nueva etiqueta que no aplica protección o quitando la etiqueta. Pero lo mejor es que se conecte directamente al servicio Azure Rights Management para quitar la protección.
 
 Debe tener permisos de uso de Rights Management para quitar la protección de archivos, o bien ser un superusuario. Para la detección o recuperación de datos, suele usarse la característica de superusuario. Para habilitar esta característica y configurar su cuenta como un superusuario, vea [Configuración de superusuarios para Azure Rights Management y los servicios de detección o la recuperación de datos](../configure-super-users.md).
 
-#### <a name="prerequisite-3-to-protect-or-unprotect-files-without-user-interaction"></a>Requisito previo 3: proteger o desproteger archivos sin interacción del usuario
+#### <a name="prerequisite-3-to-protect-or-unprotect-files-without-user-interaction"></a>Requisito previo 3: proteger o desproteger archivos directamente sin interacción del usuario
 
 Puede conectarse directamente al servicio Azure Rights Management de forma no interactiva para proteger o desproteger archivos.
 
@@ -218,7 +218,7 @@ Cree una entidad de servicio nueva mediante la ejecución del cmdlet `New-MsolSe
 
 A partir de estas instrucciones y de los ejemplos expuestos, se dispone de tres identificadores necesarios para ejecutar Set-RMSServerAuthentication:
 
-- Id. de inquilino: **23976bc6-dcd4-4173-9d96-dad1f48efd42**
+- Identificador de inquilino: **23976bc6-dcd4-4173-9d96-dad1f48efd42**
 
 - Clave simétrica: **zIeMu8zNJ6U377CLtppkhkbl4gjodmYSXUVwAO5ycgA=**
 
@@ -230,14 +230,14 @@ El comando de ejemplo presentará el siguiente aspecto:
 
 Como se muestra en el comando anterior, puede proporcionar los valores con un solo comando, lo que haría en un script para que se ejecute de manera no interactiva. Pero para realizar una prueba, puede escribir Set-RMSServerAuthentication y proporcionar los valores uno a uno cuando se le pida. Cuando finalice la ejecución del comando, el cliente funcionará en "modo de servidor", lo que es adecuado para el uso no interactivo, como los scripts y la infraestructura de clasificación de archivos de Windows Server.
 
-Considere la posibilidad de convertir esta cuenta de entidad de servicio en un superusuario: para asegurarse de que esta cuenta de entidad de servicio siempre pueda desproteger los archivos de otros usuarios, se puede configurar como superusuario. Del mismo modo que configura una cuenta de usuario estándar como superusuario, use el mismo cmdlet de Azure RMS, [Add-AadrmSuperUser](/powershell/aadrm/vlatest/Add-AadrmSuperUser.md), pero especifique el parámetro **ServicePrincipalId** con el valor de AppPrincipalId.
+Considere la posibilidad de convertir esta cuenta de entidad de servicio en un superusuario: para asegurarse de que esta cuenta de entidad de servicio siempre pueda desproteger los archivos de otros usuarios, se puede configurar como superusuario. Del mismo modo que configura una cuenta de usuario estándar como superusuario, use el mismo cmdlet de Azure RMS, [Add-AadrmSuperUser](/powershell/module/aadrm/add-aadrmsuperuser), pero especifique el parámetro **ServicePrincipalId** con el valor de AppPrincipalId.
 
 Para más información, vea [Configuración de superusuarios para Azure Rights Management y los servicios de detección o la recuperación de datos](../configure-super-users.md).
 
 > [!NOTE]
 > Para utilizar su propia cuenta para autenticarse en el servicio Azure Rights Management, no hay necesidad de ejecutar Set-RMSServerAuthentication antes de proteger o desproteger archivos u obtener plantillas.
 
-#### <a name="prerequisite-4-for-regions-outside-north-america"></a>Requisito previo 4: Para las regiones fuera de Estados Unidos
+#### <a name="prerequisite-4-for-regions-outside-north-america"></a>Requisito previo 4: para las regiones fuera de Norteamérica
 
 Si usa una cuenta de entidad de servicio para proteger archivos y descargar plantillas fuera de la región de Norteamérica de Azure, debe modificar el Registro: 
 
@@ -265,7 +265,7 @@ Si usa una cuenta de entidad de servicio para proteger archivos y descargar plan
 
 ### <a name="example-scenarios-for-using-the-cmdlets-for-azure-information-protection-and-the-azure-rights-management-service"></a>Escenarios de ejemplo para usar los cmdlets de Azure Information Protection y del servicio Azure Rights Management
 
-Resulta más eficaz utilizar etiquetas para clasificar y proteger archivos, porque solo necesita dos cmdlets, que se pueden ejecutar de forma autónoma o conjunta: [Get-AIPFileStatus](/powershell/azureinformationprotection/get-aipfilestatus) y [Set-AIPFileLabel](/powershell/azureinformationprotection/vlatest/set-aipfilelabel). Recurra a la ayuda de ambos cmdlets para obtener más información y ejemplos.
+Resulta más eficaz usar etiquetas para clasificar y proteger archivos, porque solo necesita dos cmdlets, que se pueden ejecutar de forma autónoma o conjunta: [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) y [Set-AIPFileLabel](/powershell/azureinformationprotection/vlatest/set-aipfilelabel). Recurra a la ayuda de ambos cmdlets para obtener más información y ejemplos.
 
 Sin embargo, para proteger o desproteger archivos conectándose directamente al servicio Azure Rights Management, normalmente debe ejecutar una serie de cmdlets como se describe a continuación.
 
@@ -273,7 +273,7 @@ En primer lugar, si necesita autenticarse en el servicio Azure Rights Management
 
     Set-RMSServerAuthentication
 
-Cuando se le solicite, escriba los tres identificadores como se describe en [Requisito previo 3: proteger o desproteger archivos sin interacción del usuario](client-admin-guide-powershell.md#prerequisite-3-to-protect-or-unprotect-files-without-user-interaction).
+Cuando se le solicite, escriba los tres identificadores como se describe en [Requisito previo 3: proteger o desproteger archivos directamente sin interacción del usuario](client-admin-guide-powershell.md#prerequisite-3-to-protect-or-unprotect-files-without-user-interaction).
 
 Para poder proteger los archivos, debe descargar las plantillas de Rights Management en el equipo e identificar la que se usará y el número de identificador correspondiente. En la salida, puede copiar el identificador de plantilla:
 

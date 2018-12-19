@@ -1,5 +1,5 @@
 ---
-title: Apertura de archivos protegidos con RMS con la aplicación RMS sharing - AIP
+title: Apertura de archivos protegidos con RMS con la aplicación RMS sharing
 description: Instrucciones para ver y usar un archivo protegido, que requiere que tenga la aplicación Rights Management (RMS) sharing instalada.
 author: cabailey
 ms.author: cabailey
@@ -10,28 +10,31 @@ ms.service: information-protection
 ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 926a6d34b34b486577f6a8481010d058e465b3e8
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: f3e3158e8cd5fb054daab65a3b86a0e99074bee3
+ms.sourcegitcommit: db60fe8f74ffaa4f6ffbf5defb22efc476c28312
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023998"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53319472"
 ---
-# <a name="view-and-use-files-that-have-been-protected-by-rights-management"></a>Ver y usar los archivos protegidos por Rights Management
+# <a name="use-the-rights-management-sharing-application-to-view-and-use-protected-files"></a>Uso de la aplicación Rights Management sharing para ver y usar archivos protegidos
 
->*Se aplica a: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 con SP1, Windows 8 y Windows 8.1*
+>*Se aplica a: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 con SP1, Windows 8, Windows 8.1*
+
+> [!IMPORTANT]
+> **Notificación de fin de compatibilidad**: la aplicación Rights Management sharing para Windows se va a sustituir por el [cliente de Azure Information Protection](aip-client.md). La aplicación anterior dejará de ser compatible el 31 de enero de 2019.
 
 Cuando la [aplicación Rights Management sharing (RMS) está instalada en el equipo](install-sharing-app.md), puede ver un archivo protegido simplemente haciendo doble clic en él. El archivo puede ser un archivo adjunto en un mensaje de correo electrónico, o podría verlo al usar el Explorador de archivos.
 
-> [!NOTE]
-> Para ver el archivo protegido, el servicio Rights Management necesita confirmar primero que está autorizado para ver el archivo (para hacerlo, comprobará su nombre de usuario y contraseña). En algunos casos, esto se puede almacenar en caché y no verá un mensaje que le solicite sus credenciales. En otros casos, se le pedirá que proporcione sus credenciales.
->
-> Si su organización no usa Azure Information Protection o AD RMS, puede pedir una cuenta gratuita que acepte sus credenciales para poder abrir los archivos protegidos con RMS:
->
-> -   Para solicitar esta cuenta, haga clic en el vínculo para solicitar [RMS para usuarios](https://go.microsoft.com/fwlink/?LinkId=309469).
->
->     Al suscribirse, use la dirección de correo electrónico de su empresa en lugar de una dirección de correo electrónico personal. Si va a suscribirse porque le enviaron un archivo adjunto protegido por correo electrónico, use la misma dirección de correo electrónico que se usó para enviarle el mensaje de correo electrónico.
-> -   Para obtener más información, consulte [RMS for individuals and Azure Rights Management](../rms-for-individuals.md) (RMS para usuarios y Azure Rights Management).
+Para ver el archivo protegido, el servicio Rights Management necesita confirmar primero que está autorizado para ver el archivo (para hacerlo, comprobará su nombre de usuario y contraseña). En algunos casos, esto se puede almacenar en caché y no verá un mensaje que le solicite sus credenciales. En otros casos, se le pedirá que proporcione sus credenciales.
+
+Si su organización no usa Azure Information Protection o AD RMS, puede pedir una cuenta gratuita que acepte sus credenciales para poder abrir los archivos protegidos con RMS:
+
+- Para solicitar esta cuenta, haga clic en el vínculo para solicitar [RMS para usuarios](https://go.microsoft.com/fwlink/?LinkId=309469). 
+    
+    Al suscribirse, use la dirección de correo electrónico de su empresa en lugar de una dirección de correo electrónico personal. Si va a suscribirse porque le enviaron un archivo adjunto protegido por correo electrónico, use la misma dirección de correo electrónico que se usó para enviarle el mensaje de correo electrónico.
+
+- Para obtener más información, consulte [RMS for individuals and Azure Rights Management](../rms-for-individuals.md) (RMS para usuarios y Azure Rights Management).
 
 ## <a name="to-view-a-protected-file"></a>Para ver un archivo protegido
 Usando el Explorador de archivos o el mensaje de correo electrónico que contiene el archivo adjunto, haga doble clic en el archivo protegido y escriba sus credenciales si se le solicita que lo haga.

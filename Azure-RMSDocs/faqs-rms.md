@@ -11,16 +11,16 @@ ms.custom: askipteam
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 15cf2c9c893adfb6e81e6a0c94001a3a0e120076
-ms.sourcegitcommit: ad37950f6a747c86f6496c6de859e18446f9b03f
+ms.openlocfilehash: f6c4bd30c09ff54eab6da4bb63130a16373faebc
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51644767"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53174019"
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Preguntas más frecuentes sobre la protección de datos en Azure Information Protection
 
->*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 ¿Tiene alguna pregunta sobre el servicio de protección de datos, Azure Rights Management, desde Azure Information Protection? Vea si se ha resuelto aquí.
 
@@ -51,7 +51,7 @@ Para consultar más información acerca de HYOK y revisar sus limitaciones y res
 
 Sí, ya puede usar BYOK con Exchange Online cuando siga las instrucciones de [Set up new Office 365 Message Encryption capabilities built on top of Azure Information Protection](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e) (Configuración de nuevas capacidades del cifrado de mensajes de Office 365 sobre Azure Information Protection). Con estas instrucciones se habilitan las nuevas capacidades de Exchange Online que admiten el uso de BYOK para Azure Information Protection, así como el nuevo cifrado de mensajes de Office 365.
 
-Para más información sobre este cambio, vea la entrada de blog: [Announcing new capabilities available in Office 365 Message Encryption](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801) (Anuncio de nuevas capacidades disponibles en el cifrado de mensajes de Office 365).
+Para más información sobre este cambio, vea el anuncio del blog: [Office 365 Message Encryption with the new capabilities](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801) (Cifrado de mensajes de Office 365 con las nuevas capacidades)
 
 ## <a name="where-can-i-find-information-about-third-party-solutions-that-integrate-with-azure-rms"></a>¿Dónde puedo encontrar información sobre las soluciones de terceros que se integran con Azure RMS?
 
@@ -63,7 +63,7 @@ Aunque el conector Rights Management registra información, advertencia y mensaj
 
 ## <a name="do-you-need-to-be-a-global-admin-to-configure-azure-rms-or-can-i-delegate-to-other-administrators"></a>¿Debe ser un administrador global para configurar Azure RMS o puedo delegar a otros administradores?
 
-Debido al nuevo rol de administrador de Information Protection recientemente incorporado, esta pregunta (y su respuesta) se han trasladado a la página principal de preguntas frecuentes: [¿Hay que ser un administrador global para configurar Azure Information Protection o puedo delegar a otros administradores?](faqs.md#do-you-need-to-be-a-global-admin-to-configure-azure-information-protection-or-can-i-delegate-to-other-administrators)
+Con el rol Administrador de Information Protection que se acaba de incorporar, esta pregunta (y su correspondiente respuesta) se han movido a la página principal de Preguntas más frecuentes: [¿Hay que ser un administrador global para configurar Azure Information Protection o puedo delegar a otros administradores?](faqs.md#do-you-need-to-be-a-global-admin-to-configure-azure-information-protection-or-can-i-delegate-to-other-administrators)
 
 ## <a name="how-do-i-create-a-new-custom-template-in-the-azure-portal"></a>¿Cómo se puede crear una plantilla personalizada nueva en Azure Portal?
 
@@ -83,7 +83,7 @@ O bien, si ya ha configurado un grupo para los permisos necesarios, puede cambia
 
 Si el documento se ha protegido mediante permisos personalizados, no es posible cambiar los del documento existente. Debe proteger el documento de nuevo y especificar todos los usuarios y todos los derechos de uso que son necesarios para esta nueva versión del documento. Para volver a proteger un documento protegido, debe tener el derecho de uso Control total.
 
-Sugerencia: Para comprobar si un documento se ha protegido mediante una plantilla o usando un permiso personalizando, use el cmdlet de PowerShell [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus). Siempre se muestra una descripción de plantilla de **Acceso restringido** para permisos personalizados, con un id. de plantilla único que no se muestra al ejecutar [Get-RMSTemplate](/powershell/module/azureinformationprotection/get-rmstemplate).
+Sugerencia: para comprobar si un documento se ha protegido mediante una plantilla o usando un permiso personalizando, use el cmdlet de PowerShell [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus). Siempre se muestra una descripción de plantilla de **Acceso restringido** para permisos personalizados, con un id. de plantilla único que no se muestra al ejecutar [Get-RMSTemplate](/powershell/module/azureinformationprotection/get-rmstemplate).
 
 ## <a name="i-have-a-hybrid-deployment-of-exchange-with-some-users-on-exchange-online-and-others-on-exchange-serveris-this-supported-by-azure-rms"></a>Tengo una implementación híbrida de Exchange con algunos usuarios de Exchange Online y otros de Exchange Server. ¿Es compatible con Azure RMS?
 Desde luego, y lo mejor es que los usuarios pueden proteger sin problemas y usar correos electrónicos y archivos adjuntos protegidos en las dos implementaciones de Exchange. Para esta configuración, [active Azure RMS](activate-service.md) y [habilite IRM para Exchange Online](https://technet.microsoft.com/library/dn151475%28v=exchg.150%29.aspx). A continuación, [implemente y configure el conector RMS](deploy-rms-connector.md) para Exchange Server.
@@ -123,7 +123,7 @@ Como alternativa, puede agregar usuarios externos a plantillas personalizadas (y
 
 2. Proporcione esta variable al parámetro RightsDefinition con el cmdlet [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty).
 
-    Al agregar usuarios a una plantilla existente, debe definir los objetos de definición de derechos para los usuarios existentes en las plantillas, además de los nuevos. En este escenario, puede resultarle útil **Ejemplo 3: Agregar nuevos usuarios y derechos a una plantilla personalizada** de la sección [Ejemplos](/powershell/module/aadrm/set-aadrmtemplateproperty#examples) del cmdlet.
+    Al agregar usuarios a una plantilla existente, debe definir los objetos de definición de derechos para los usuarios existentes en las plantillas, además de los nuevos. En este escenario, puede resultarle útil el **Ejemplo 3: Agregar nuevos usuarios y derechos a una plantilla personalizada** de la sección [Ejemplos](/powershell/module/aadrm/set-aadrmtemplateproperty#examples) del cmdlet.
 
 ## <a name="what-type-of-groups-can-i-use-with-azure-rms"></a>¿Qué tipo de grupos puedo usar con Azure RMS?
 Para la mayoría de los escenarios, puede usar cualquier tipo de grupo en Azure AD que tenga una dirección de correo. Esta regla general siempre se aplica al asignar derechos de uso, pero existen algunas excepciones para administrar el servicio Azure Rights Management. Para saber más, vea [Requisitos de Azure Information Protection para cuentas de grupo](prepare.md#azure-information-protection-requirements-for-group-accounts).
@@ -134,9 +134,9 @@ Cuando usa Exchange Online y el servicio Azure Rights Management, solo envía el
 
 El destinatario ve una opción para iniciar sesión en su cuenta de Gmail, Yahoo o Microsoft, desde donde puede leer el correo protegido. O bien, el usuario puede elegir recibir un código de acceso de un solo uso para leer el correo en un explorador.
 
-Para admitir este escenario, Exchange Online debe habilitarse para el servicio Azure Rights Management y las nuevas capacidades de cifrado de mensajes de Office 365. Para más información sobre esta configuración, vea [Exchange Online: Configuración de IRM](configure-office365.md#exchange-online-irm-configuration).
+Para admitir este escenario, Exchange Online debe habilitarse para el servicio Azure Rights Management y las nuevas capacidades de cifrado de mensajes de Office 365. Para más información sobre esta configuración, vea [Configuración de IRM de Exchange Online](configure-office365.md#exchange-online-irm-configuration).
 
-Para obtener más información sobre las nuevas capacidades que incluyen la compatibilidad con todas las cuentas de correo de todos los dispositivos, vea la entrada del blog [Announcing new capabilities available in Office 365 Message Encryption (Anuncio de nuevas capacidades disponibles en el cifrado de mensajes de Office 365)](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801).
+Para más información sobre las nuevas capacidades que incluyen la compatibilidad con todas las cuentas de correo de todos los dispositivos, vea la siguiente entrada de blog: [Announcing new capabilities available in Office 365 Message Encryption](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801) (Anuncio de nuevas capacidades disponibles en el cifrado de mensajes de Office 365).
 
 ## <a name="what-devices-and-which-file-types-are-supported-by-azure-rms"></a>¿Qué dispositivos y tipos de archivo admite Azure RMS?
 Para ver la lista de los dispositivos que admiten el servicio Azure Rights Management, consulte [Dispositivos cliente que son compatibles con la protección de datos de Azure Rights Management](./requirements-client-devices.md). Dado que, actualmente, no todos los dispositivos compatibles admiten todas las funcionalidades de Rights Management, vea también la tabla de [aplicaciones habilitadas para RMS](./requirements-applications.md#rms-enlightened-applications).
@@ -157,7 +157,7 @@ Abra Outlook y cree un perfil con su cuenta profesional o educativa de Office 36
 
     Con esto se descargan las plantillas de Azure Rights Management y **Verify Credentials** ahora se reemplaza por otras opciones que incluyen **No Restrictions** (Sin restricciones), **Do Not Forward** (No reenviar) y cualquier plantilla de Azure Rights Management que se publiquen para su inquilino. Ahora puede cancelar el mensaje nuevo.
 
-Para proteger un mensaje de correo electrónico o un documento: en la pestaña **Opciones**, haga clic en **Permisos** y elija una opción o plantilla que proteja el correo electrónico o el documento.
+Para proteger un mensaje de correo o un documento: en la pestaña **Opciones**, haga clic en **Permisos** y elija una opción o plantilla que proteja el correo electrónico o el documento.
 
 Para hacer seguimiento de un documento después de protegerlo: en un equipo Windows que tenga instalado el cliente de Azure Information Protection, registre el documento con el sitio de seguimiento de documentos con una aplicación de Office o el Explorador de archivos. Para instrucciones, consulte [Realizar el seguimiento y revocar los documentos](./rms-client/client-track-revoke.md). En el equipo Mac, ahora puede usar el explorador web para ir al sitio de seguimiento de documentos (https://track.azurerms.com) para realizar el seguimiento de este documento y revocarlo.
 
@@ -172,7 +172,7 @@ Si está interesado en una función específica que todavía no es compatible, n
 ## <a name="how-do-i-configure-one-drive-for-business-in-sharepoint-online-so-that-users-can-safely-share-their-files-with-people-inside-and-outside-the-company"></a>¿Cómo configuro OneDrive para la Empresa en SharePoint Online para que los usuarios puedan compartir con seguridad sus archivos con personas de dentro y fuera de la empresa?
 De forma predeterminada, como administrador de Office 365, no es usted quien lo configura; lo hacen los usuarios.
 
-Del mismo modo que el administrador del sitio de SharePoint habilita y configura IRM para una biblioteca de SharePoint de su propiedad, OneDrive para la Empresa se ha diseñado para que los usuarios habiliten y configuren IRM para su propia biblioteca de OneDrive para la Empresa. Sin embargo, gracias a PowerShell, puede hacerlo por ellos. Para obtener instrucciones, consulte la sección [SharePoint Online y OneDrive para la Empresa: Configuración de IRM](configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration) del artículo [Office 365: configuración para clientes y servicios en línea](configure-office365.md).
+Del mismo modo que el administrador del sitio de SharePoint habilita y configura IRM para una biblioteca de SharePoint de su propiedad, OneDrive para la Empresa se ha diseñado para que los usuarios habiliten y configuren IRM para su propia biblioteca de OneDrive para la Empresa. Sin embargo, gracias a PowerShell, puede hacerlo por ellos. Para obtener instrucciones, vea la sección [SharePoint Online y OneDrive para la Empresa: Configuración de IRM](configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration) del artículo [Office 365: configuración para clientes y servicios en línea que usan el servicio Azure Rights Management](configure-office365.md).
 
 ## <a name="do-you-have-any-tips-or-tricks-for-a-successful-deployment"></a>¿Hay trucos o sugerencias para una correcta implementación?
 

@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4e2fa20d542a9509476c78ebe21143e49863b788
-ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
+ms.openlocfilehash: a74478895c7bdb500b40dc4732c871cbc130fe36
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51026832"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53174053"
 ---
 # <a name="azure-information-protection-deployment-roadmap"></a>Mapa de ruta de implementación de Azure Information Protection
 
->*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Utilice los pasos siguientes como recomendaciones para ayudarlo a preparar, implementar y administrar Azure Information Protection en su organización.
 
@@ -49,7 +49,7 @@ Después, elija el mapa de ruta de implementación que sea adecuado para la orga
 ### <a name="step-1-confirm-your-subscription-and-assign-user-licenses"></a>Paso 1: Confirmar la suscripción y asignar licencias de usuario
 Revise la información de la suscripción y la lista de características en la página [Precios de Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) para confirmar que la organización tenga una suscripción en la que se incluyan las funciones y las características que necesite. Después, asigne licencias de esta suscripción a todos los usuarios de la organización que vayan a clasificar, etiquetar y proteger documentos y correos electrónicos.
 
-Nota: No asigne manualmente licencias de usuario desde la suscripción gratuita de RMS para individuos y no utilice esta licencia para administrar el servicio de Azure Rights Management para su organización. Estas licencias se muestran como **Rights Management Adhoc** en el centro de administración de Office 365 y como **RIGHTSMANAGEMENT_ADHOC** al ejecutar el cmdlet de Azure AD PowerShell, [Get-MsolAccountSku](https://msdn.microsoft.com/library/azure/dn194118.aspx). Para obtener más información acerca de cómo se otorga automáticamente la suscripción RMS para individuos y se asigna a los usuarios, consulte [RMS para individuos y Azure Information Protection](./rms-for-individuals.md).
+Nota: No asigne manualmente licencias de usuario desde la suscripción gratuita de RMS para suscripción individuales y no use esta licencia para administrar el servicio de Azure Rights Management para su organización. Estas licencias se muestran como **Rights Management Adhoc** en el centro de administración de Office 365 y como **RIGHTSMANAGEMENT_ADHOC** al ejecutar el cmdlet de Azure AD PowerShell, [Get-MsolAccountSku](https://msdn.microsoft.com/library/azure/dn194118.aspx). Para obtener más información acerca de cómo se otorga automáticamente la suscripción RMS para individuos y se asigna a los usuarios, consulte [RMS para individuos y Azure Information Protection](./rms-for-individuals.md).
 
 ### <a name="step-2-prepare-your-tenant-to-use-azure-information-protection"></a>Paso 2: Preparar el inquilino para usar Azure Information Protection
 Antes de empezar a usar Azure Information Protection, asegúrese de que tiene cuentas de usuario y grupos en Office 365 o Azure Active Directory. Azure Information Protection usará estas cuentas de usuario y grupos para autenticar y autorizar a los usuarios de la organización. Si es necesario, cree estas cuentas y grupos, o sincronícelos desde el directorio local. 
@@ -59,7 +59,7 @@ Para más información, consulte [Preparación de usuarios y grupos para Azure I
 ### <a name="step-3-configure-and-deploy-classification-and-labeling"></a>Paso 3: Configurar e implementar la clasificación y el etiquetado
 
 > [!TIP]
-> **Opcional pero recomendado**: considere la posibilidad de implementar el analizador de Azure Information Protection para detectar qué información confidencial tiene en los almacenes de datos locales. Tenemos un tutorial de [inicio rápido](quickstart-findsensitiveinfo.md) que describe este escenario. La información que detecta el analizador puede ayudarle con la taxonomía de clasificación, proporcionar información valiosa sobre qué etiquetas necesita y qué archivos se deben proteger.
+> **Opcional pero recomendable**: considere la posibilidad de implementar el analizador de Azure Information Protection para detectar qué información confidencial tiene en los almacenes de datos locales. Tenemos un tutorial de [inicio rápido](quickstart-findsensitiveinfo.md) que describe este escenario. La información que detecta el analizador puede ayudarle con la taxonomía de clasificación, proporcionar información valiosa sobre qué etiquetas necesita y qué archivos se deben proteger.
 > 
 > El analizador se puede configurar para buscar tipos de información confidencial conocidos en los archivos locales de Windows Server, archivos en recursos compartidos de red y archivos en las versiones locales de SharePoint. Como esta configuración no requiere configurar etiquetas o ni siquiera definir la taxonomía de clasificación, la ejecución del analizador de este modo es adecuada para esta fase tan temprana de la implementación. También puede usar esta configuración del analizador en paralelo con los pasos de implementación siguientes, hasta que configure las condiciones para las etiquetas.
 
@@ -91,7 +91,7 @@ Cuando los usuarios estén acostumbrados a etiquetar documentos y correos electr
 
 2. Instale el módulo de PowerShell para AADRM en al menos un equipo que tenga acceso a Internet. Este paso puedes hacerlo ahora o más tarde. Para más información, vea [Instalación del módulo de PowerShell para AADRM](./install-powershell.md).
 
-3. Si actualmente está usando AD RMS, realice una migración para mover las claves, las plantillas y las direcciones URL a la nube. Para más información, vea [Migración desde AD RMS a Information Protection](migrate-from-ad-rms-to-azure-rms.md).
+3. Si actualmente usa AD RMS: Realice una migración para mover las claves, plantillas y direcciones URL a la nube. Para más información, vea [Migración desde AD RMS a Information Protection](migrate-from-ad-rms-to-azure-rms.md).
 
 4. Asegúrese de que el servicio de protección esté activado para poder comenzar a proteger documentos y correos electrónicos. Si se requiere una implementación por fases, configure los controles de incorporación de usuarios para restringir la capacidad de los usuarios de aplicar la protección. Para más información, consulte [Activación de Azure Rights Management](./activate-service.md).
 
@@ -145,7 +145,7 @@ Para más información, vea [Administración del servicio Azure Rights Managemen
 ### <a name="step-1-confirm-that-you-have-a-subscription-that-includes-the-protection-service-from-azure-information-protection"></a>Paso 1: Confirmar que tenga una suscripción que incluya el servicio de protección de Azure Information Protection
 Revise la información de la suscripción y la lista de características en la página [Precios de Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) para confirmar que la organización tenga una suscripción en la que se incluyan las funciones y las características que necesite. Después, asigne una licencia de esta suscripción a todos los usuarios de la organización que vayan a proteger documentos y correos electrónicos.
 
-Nota: No asigne manualmente licencias de usuario desde la suscripción gratuita de RMS para individuos y no utilice esta licencia para administrar el servicio de Azure Rights Management para su organización. Estas licencias se muestran como **Rights Management Adhoc** en el centro de administración de Office 365 y como **RIGHTSMANAGEMENT_ADHOC** al ejecutar el cmdlet de Azure AD PowerShell, [Get-MsolAccountSku](https://msdn.microsoft.com/library/azure/dn194118.aspx). Para obtener más información acerca de cómo se otorga automáticamente la suscripción RMS para individuos y se asigna a los usuarios, consulte [RMS para individuos y Azure Information Protection](./rms-for-individuals.md).
+Nota: No asigne manualmente licencias de usuario desde la suscripción gratuita de RMS para suscripción individuales y no use esta licencia para administrar el servicio de Azure Rights Management para su organización. Estas licencias se muestran como **Rights Management Adhoc** en el centro de administración de Office 365 y como **RIGHTSMANAGEMENT_ADHOC** al ejecutar el cmdlet de Azure AD PowerShell, [Get-MsolAccountSku](https://msdn.microsoft.com/library/azure/dn194118.aspx). Para obtener más información acerca de cómo se otorga automáticamente la suscripción RMS para individuos y se asigna a los usuarios, consulte [RMS para individuos y Azure Information Protection](./rms-for-individuals.md).
 
 
 ### <a name="step-2-prepare-your-tenant-to-use-azure-information-protection"></a>Paso 2: Preparar el inquilino para usar Azure Information Protection
@@ -157,7 +157,7 @@ Antes de empezar a usar el servicio de protección de Azure Information Protecti
 
 3. Instale el módulo de PowerShell para AADRM en al menos un equipo que tenga acceso a Internet. Este paso puedes hacerlo ahora o más tarde. Para más información, vea [Instalación del módulo de PowerShell para AADRM](./install-powershell.md).
 
-4. Si actualmente está usando AD RMS, realice una migración para mover las claves, las plantillas y las direcciones URL a la nube. Para obtener más información, vea [Migración desde AD RMS a Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md).
+4. Si actualmente usa AD RMS: Realice una migración para mover las claves, plantillas y direcciones URL a la nube. Para obtener más información, vea [Migración desde AD RMS a Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md).
 
 5. Asegúrese de que el servicio de protección esté activado para poder comenzar a proteger documentos y correos electrónicos. Si se requiere una implementación por fases, configure los controles de incorporación de usuarios para restringir la capacidad de los usuarios de aplicar la protección. Para más información, consulte [Activación de Azure Rights Management](./activate-service.md).
 

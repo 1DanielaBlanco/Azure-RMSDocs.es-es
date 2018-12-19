@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c4b4df01be10ce033dd7369e71420e949750e667
-ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
+ms.openlocfilehash: 3a4cf3eaaf177a9424a438d0cdbee54b6a0a252e
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49169914"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53173832"
 ---
 # <a name="configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery"></a>Configuración de superusuarios para Azure Rights Management y los servicios de detección o la recuperación de datos
 
->*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 La característica de superusuario del servicio Azure Rights Management de Azure Information Protection garantiza que los usuarios y servicios autorizados siempre puedan leer e inspeccionar los datos que Azure Rights Management protege para la organización. Si es necesario, la protección se puede quitar o modificar.
 
@@ -96,5 +96,5 @@ Si no puede usar eDiscovery de Office 365, es posible que tenga otra solución d
 
 4. Ejecute Unprotect-RMSFile en este segundo archivo PST para descifrar el contenido de este archivo mucho más pequeño. Desde la salida, importe el archivo PST descifrado a la herramienta de detección.
 
-Para obtener más información e instrucciones para ejecutar eDiscovery en buzones y archivos PST, vea la entrada de blog siguiente: [Azure Information Protection and eDiscovery Processes](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Azure-Information-Protection-and-eDiscovery-Processes/ba-p/270216) (Procesos de Azure Information Protection y eDiscovery).
+Para más información e instrucciones para ejecutar eDiscovery en buzones y archivos PST, vea la entrada de blog siguiente: [Azure Information Protection and eDiscovery Processes](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Azure-Information-Protection-and-eDiscovery-Processes/ba-p/270216) (Procesos de Azure InformationProtection y eDiscovery).
 

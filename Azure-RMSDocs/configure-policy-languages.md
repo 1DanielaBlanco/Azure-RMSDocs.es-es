@@ -4,16 +4,16 @@ description: Para agregar compatibilidad con distintos idiomas a las etiquetas q
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/30/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: a0e89fd0-795b-4e7a-aea9-ff6fc9163bde
-ms.openlocfilehash: 489850c6311fae95d92fa4cbf88441f1a57da150
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 4c9bc0f8e09b71637b5b731d8e7236bbd8e1fc27
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023386"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305412"
 ---
 # <a name="how-to-configure-labels-and-templates-for-different-languages-in-azure-information-protection"></a>Cómo configurar etiquetas y plantillas para distintos idiomas en Azure Information Protection
 
@@ -43,7 +43,7 @@ Seleccione los idiomas que coinciden con la configuración de idioma de los usua
     
     Por ejemplo, en el menú del concentrador, haga clic en **Todos los servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
-2. En la opción de menú **Administrar** > **Idiomas**, en la hoja **Azure Information Protection: idiomas**, seleccione **Agregar un idioma nuevo para la traducción**. Seleccione los idiomas que quiera agregar y, después, seleccione **Aceptar**. Puede escribir el nombre del idioma en el cuadro de búsqueda o desplazarse por la lista de idiomas disponibles.
+2. Desde la opción de menú **Administrar** > **Idiomas**: En la hoja **Azure Information Protection: idiomas**, seleccione **Agregar un idioma nuevo para la traducción**. Seleccione los idiomas que quiera agregar y, después, seleccione **Aceptar**. Puede escribir el nombre del idioma en el cuadro de búsqueda o desplazarse por la lista de idiomas disponibles.
 
 3. Los idiomas seleccionados se muestran ahora en la hoja **Azure Information Protection: idiomas**:
     
@@ -60,7 +60,7 @@ Seleccione los idiomas que coinciden con la configuración de idioma de los usua
 
 5. Extraiga los archivos de **exported localization.zip** para así tener archivos .xml de cada idioma que seleccionó para descarga. 
 
-6. Edite cada archivo .xml. En cada cadena, dentro de las etiquetas `<LocalizedText>`, proporcione las traducciones que desea para cada idioma elegido. 
+6. Edite cada archivo .xml: en cada cadena, dentro de las etiquetas `<LocalizedText>`, proporcione las traducciones que quiere para cada idioma elegido. 
 
 7. Cuando haya editado cada archivo .xml, cree una nueva carpeta comprimida que contenga estos archivos. La carpeta comprimida puede tener cualquier nombre, pero debe tener la extensión .zip.
 

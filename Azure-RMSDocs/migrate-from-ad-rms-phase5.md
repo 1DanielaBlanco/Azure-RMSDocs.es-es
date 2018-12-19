@@ -4,22 +4,22 @@ description: Fase 5 de la migración desde AD RMS a Azure Information Protection
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/22/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e535295c4393d2d7267174f587fcbbf34fa986b0
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 49d91c616967e81e306cc296703a5a1bac8fa277
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023879"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305376"
 ---
 # <a name="migration-phase-5---post-migration-tasks"></a>Fase 5 de la migración: tareas posteriores a la migración
 
->*Se aplica a: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Se aplica a: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 
 Use la información siguiente para la fase 5 de la migración desde AD RMS a Azure Information Protection. En estos procedimientos se describen los pasos del 10 al 12 de la [Migración desde AD RMS a Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md).
@@ -38,7 +38,7 @@ Para quitar el SCP, asegúrese de que ha iniciado sesión como administrador emp
 
 4. Seleccione **Quitar SCP actual** y después haga clic en **Aceptar**.
 
-Supervise ahora la actividad de los servidores de AD RMS. Por ejemplo, compruebe las [solicitudes en el informe de mantenimiento del sistema](https://technet.microsoft.com/library/ee221012%28v=ws.10%29.aspx), la [tabla ServiceRequest](https://technet.microsoft.com/library/dd772686%28v=ws.10%29.aspx) o realice una [auditoría del acceso de los usuarios a contenido protegido](http://social.technet.microsoft.com/wiki/contents/articles/3440.ad-rms-frequently-asked-questions-faq.aspx). 
+Supervise ahora la actividad de los servidores de AD RMS. Por ejemplo, compruebe las [solicitudes en el informe de mantenimiento del sistema](https://technet.microsoft.com/library/ee221012%28v=ws.10%29.aspx), la [tabla ServiceRequest](https://technet.microsoft.com/library/dd772686%28v=ws.10%29.aspx) o realice una [auditoría del acceso de los usuarios a contenido protegido](https://social.technet.microsoft.com/wiki/contents/articles/3440.ad-rms-frequently-asked-questions-faq.aspx). 
 
 Cuando haya confirmado que los clientes de RMS ya no se comunican con estos servidores y que los clientes usan Azure Information Protection correctamente, puede quitar el rol de servidor de AD RMS de estos servidores. Si usa servidores dedicados, es preferible aplicar una medida de cautela basada en cerrar primero los servidores durante un período de tiempo. De este modo, tiene tiempo de asegurarse de que no hay ningún problema notificado que requiera reiniciar estos servidores para garantizar la continuidad del servicio mientras investiga por qué los clientes no usan Azure Information Protection.
 
@@ -49,7 +49,7 @@ Después de desaprovisionar los servidores de AD RMS, seguramente le interese re
 
 ## <a name="step-11-complete-client-migration-tasks"></a>Paso 11. Completar tareas de migración de cliente
 
-En los clientes de dispositivos móviles y los equipos Mac, quite los registros de DNS SRV que creó al implementar la [extensión de AD RMS para dispositivos móviles](https://technet.microsoft.com/library/dn673574.aspx).
+Para clientes de dispositivos móviles y equipos Mac: Quite los registros de DNS SRV que creó cuando implementó la [extensión de AD RMS para dispositivos móviles](https://technet.microsoft.com/library/dn673574.aspx).
 
 Cuando estos cambios de DNS se hayan propagado, dichos clientes detectarán y empezarán a usar automáticamente el servicio Azure Rights Management. Sin embargo, los equipos Mac que ejecutan Office Mac almacenan en caché la información de AD RMS. En el caso de estos equipos, este proceso puede tardar hasta 30 días. 
 
@@ -95,7 +95,7 @@ Para quitar los controles de incorporación:
 
     En la salida, en **Licencia** debería aparecer **False**, tampoco debería mostrarse ningún GUID para **SecurityGroupOjbectId**.
 
-Por último, si usa Office 2010 y ha habilitado la tarea **Administración de plantillas de directiva de derechos de AD RMS (automatizada)** en la biblioteca del Programador de tareas de Windows, deshabilítela porque no se usa en el cliente de Azure Information Protection. Esta tarea normalmente se habilita mediante la directiva de grupo y admite una implementación de AD RMS. Puede encontrar esta tarea en la ubicación siguiente: **Microsoft** > **Windows** > **Active Directory Rights Management Services Client**
+Por último, si usa Office 2010 y ha habilitado la tarea **Administración de plantillas de directiva de derechos de AD RMS (automatizada)** en la biblioteca del Programador de tareas de Windows, deshabilítela porque no se usa en el cliente de Azure Information Protection. Esta tarea normalmente se habilita mediante la directiva de grupo y admite una implementación de AD RMS. Puede encontrar esta tarea en la siguiente ubicación: **Microsoft** > **Windows** > **Active Directory Rights Management Services Client**
 
 ## <a name="step-12-rekey-your-azure-information-protection-tenant-key"></a>Paso 12. Regenerar su clave de inquilino de Azure Information Protection
 
@@ -113,7 +113,7 @@ Para regenerar su clave de inquilino de Azure Information Protection:
     
         (Get-AadrmKeys) | Sort-Object CreationTime | Select-Object -First 1
 
-- [Si usted administra la clave de inquilino (BYOK)](/powershell/aadrm/vlatest/use-aadrmkeyvaultkey): debe repetir el proceso de creación de una clave en Azure Key Vault para el inquilino de Azure Information Protection y, luego, ejecutar nuevamente el cmdlet **Use-AadrmKeyVaultKey** para especificar el URI de esta clave nueva. 
+- **Si la clave de inquilino está administrada por el usuario (BYOK)**: debe repetir el proceso de creación de una clave en Azure Key Vault para el inquilino de Azure Information Protection y luego ejecutar nuevamente el cmdlet [Use-AadrmKeyVaultKey](/powershell/aadrm/vlatest/use-aadrmkeyvaultkey) para especificar el URI de esta clave nueva. 
 
 Para más información sobre cómo administrar la clave de inquilino de Azure Information Protection, consulte [Operaciones para la clave de inquilino de Azure Information Protection](./operations-tenant-key.md).
 

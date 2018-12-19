@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: abbb7e5af52952dc3ed69f2825a8e32d25ab9982
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: e5717d83ece5f188476c0f7bca677088aa4373ae
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024111"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53173883"
 ---
 # <a name="preparing-users-and-groups-for-azure-information-protection"></a>Preparación de usuarios y grupos para Azure Information Protection
 
->*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Antes de implementar Azure Information Protection para su organización, asegúrese de que tiene cuentas de usuarios y grupos en Azure AD para el inquilino de su organización.
 
@@ -73,7 +73,7 @@ Para asignar derechos de uso y controles de acceso, y configurar el servicio Azu
     
     Azure Information Protection puede usar cualquier valor de este atributo proxyAddresses de Azure AD si se ha agregado el dominio en el inquilino (un "dominio comprobado"). Para más información sobre la comprobación de dominios:
     
-    - Para Azure AD: [Incorporación de su nombre de dominio personalizado a Azure Active Directory](/azure/active-directory/fundamentals/add-custom-domain)
+    - Para Azure AD: [Incorporación de su nombre de dominio personalizado a Azure Active Directory](/azure/active-directory/fundamentals/add-custom-domain)
 
     - Para Office 365: [Adición de un dominio a Office 365](/office365/admin/setup/add-domain?view=o365-worldwide)
 
@@ -113,7 +113,7 @@ Además de utilizar el atributo proxyAddresses de Azure AD para los grupos de su
 
 ## <a name="using-accounts-from-active-directory-on-premises-for-azure-information-protection"></a>Uso de cuentas de Active Directory local para Azure Information Protection
 
-Si dispone de cuentas que son administradas de forma local y que quiere utilizar con Azure Information Protection, debe sincronizarlas con Azure AD. Para facilitar la implementación, se recomienda que use [Azure AD Connect](/azure/active-directory/connect/active-directory-aadconnect). Sin embargo, puede utilizar cualquier método de sincronización de directorios, que consigue el mismo resultado.
+Si dispone de cuentas que son administradas de forma local y que quiere utilizar con Azure Information Protection, debe sincronizarlas con Azure AD. Para facilitar la implementación, se recomienda que use [Azure AD Connect](/azure/active-directory/hybrid/whatis-azure-ad-connect). Sin embargo, puede utilizar cualquier método de sincronización de directorios, que consigue el mismo resultado.
 
 Al sincronizar las cuentas, no necesita sincronizar todos los atributos. Para consultar una lista de los atributos que deben sincronizarse, consulte la [sección Azure RMS](/azure/active-directory/connect/active-directory-aadconnectsync-attributes-synchronized#azure-rms) en la documentación de Azure Active Directory.
 
@@ -207,9 +207,9 @@ No olvide incluir este retraso en los cambios o pruebas que haga cuando use grup
 
 Cuando haya confirmado que los usuarios y grupos se pueden usar con Azure Information Protection y esté listo para empezar a proteger los documentos y correos electrónicos, compruebe si es necesario activar el servicio de Azure Rights Management. Este servicio debe activarse para poder proteger los documentos y correos electrónicos de su organización: 
 
-- A partir de febrero de 2018, si la suscripción que incluye Azure Rights Management o Azure Information Protection se obtuvo este mes o después, el servicio se activa automáticamente. 
+- A partir de febrero de 2018: si la suscripción que incluye Azure Rights Management o Azure Information Protection se obtuvo este mes o después, el servicio se activa automáticamente. 
 
-- Si su suscripción se obtuvo antes de febrero de 2018, deberá activar el servicio. 
+- Si la suscripción se obtuvo antes de febrero de 2018: Deberá activar el servicio por su cuenta. 
 
 Para obtener más información, incluida la comprobación del estado de activación, vea [Activar Azure Rights Management](./activate-service.md).
 

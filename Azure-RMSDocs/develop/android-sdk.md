@@ -12,12 +12,12 @@ ms.assetid: 986f6932-159b-4791-bd1a-7640a83ee792
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: d6a851cc5568b14b1f18ad71169b2c0e6efc136b
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 242700c089e34bc69eef10a45ea761f9668f4a42
+ms.sourcegitcommit: 1cd4edd4ba1eb5e10cb61628029213eda316783a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44147532"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266654"
 ---
 # <a name="android-setup"></a>Configuración de Android
 
@@ -34,12 +34,12 @@ Este tema sirve de guía por el proceso de configuración del entorno para crear
 
 Se recomienda tener el siguiente software en el sistema de desarrollo:
 
--   Sistema operativo Windows u OS X para ejecutar el entorno de desarrollo [Eclipse](http://www.oracle.com/technetwork/java/javase/downloads/jre7-downloads-1880261.html).
+-   Sistema operativo Windows u OS X para ejecutar el entorno de desarrollo [Eclipse](https://www.oracle.com/technetwork/java/javase/downloads/jre7-downloads-1880261.html).
 -   En esta guía se da por hecho que se está usando un SDK de Eclipse con una versión a partir de Eclipse Juno 4.2 y, además, que se está usando una instalación predeterminada.
 -   Java a partir de Java 1.6.
--   [Complemento Herramientas para desarrolladores de Android (ADT)](http://developer.android.com/sdk/installing/index.html). NOTA: puede que se le pida reiniciar Eclipse para completar la instalación.
+-   [Complemento Herramientas para desarrolladores de Android (ADT)](https://developer.android.com/studio/install). NOTA: puede que se le pida reiniciar Eclipse para completar la instalación.
 
-     
+     
 
 -   El paquete MS RMS SDK 4.2 para Android. Para más información, vea [Get started](get-started.md) (Introducción).
 
@@ -49,9 +49,9 @@ Se recomienda tener el siguiente software en el sistema de desarrollo:
 
     Para más información, vea [ADAL for Android](https://github.com/MSOpenTech/azure-activedirectory-library-for-android) (ADAL para Android).
 
-    **Nota:** si la aplicación no usa la biblioteca ADAL como biblioteca de autenticación OAuth 2.0, conviene revisar estas directrices sobre Android: [Some SecureRandom Thoughts](http://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html) (Algunas consideraciones sobre SecureRandom).
+    **Nota:**  Si la aplicación no usa la biblioteca ADAL como biblioteca de autenticación OAuth 2.0, conviene revisar estas directrices sobre Android: [Some SecureRandom Thoughts](https://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html) (Algunas consideraciones sobre SecureRandom).
 
-     
+     
 
 Lea el tema de [novedades](release-notes.md) para más información sobre actualizaciones, notas de la versión y preguntas más frecuentes de la API.
 
@@ -61,9 +61,9 @@ Nuestra biblioteca de interfaz de usuario proporciona una interfaz de usuario re
 
 ## <a name="configuring-your-development-environment"></a>Configurar el entorno de desarrollo
 
-**Nota sobre la versión preliminar de MS RMS SDK 4.2:** en esta versión preliminar, las capturas de pantalla no se han actualizado para reflejar el cambio en los nombres de las rutas de acceso de com/microsoft a com/microsoft/rightsmanagment. El texto sí se ha actualizado.
+**Nota:**  Versión preliminar de MS RMS SDK 4.2: en esta versión preliminar, las capturas de pantalla no se han actualizado para reflejar el cambio en los nombres de las rutas de acceso de com/microsoft/protection a com/microsoft/rightsmanagment. El texto sí se ha actualizado.
 
- 
+ 
 -   Abra el entorno de desarrollo de Eclipse.
 -   Para crear un proyecto de aplicación de Android, en el menú **File** (Archivo), haga clic en **New** (Nuevo) y en **Project** (Proyecto) y, después, seleccione **Android Application Project** (Proyecto de aplicación de Android).
 
@@ -134,7 +134,7 @@ Nuestra biblioteca de interfaz de usuario proporciona una interfaz de usuario re
     <uses-permission/>
    ```
 
-**Note** The SDK uses the *android.support.v4*
+**Nota**  El SDK usa *android.support.v4*
 
 -   Ya está listo para crear sus propias aplicaciones Android.
 

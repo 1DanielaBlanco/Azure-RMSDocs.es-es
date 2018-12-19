@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: information-protection
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: be48797931dc0e8c76f29094715df37d6488f800
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 84f3aa3cc5dc7955056c98a957fa5d307340da1d
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024015"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53174138"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-the-office-365-security--compliance-center"></a>Cómo migrar etiquetas de Azure Information Protection al Centro de seguridad y cumplimiento de Office 365
 
->*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 > [!IMPORTANT]
 > Esta característica se encuentra en versión preliminar, y lo que hace es migrar el inquilino a una nueva plataforma que también está en versión preliminar. Esta operación no puede revertirse. La nueva plataforma admite el etiquetado unificada de modo que varios clientes y servicios pueden usar las etiquetas creadas y administradas.
@@ -82,7 +82,7 @@ Los clientes de Azure Information Protection pueden usar esta configuración de 
 |Protección basada en la nube mediante permisos definidos por el usuario en Word, Excel y PowerPoint |No|Sí|
 |Protección basada en HYOK mediante permisos definidos por el usuario en Outlook para No reenviar |No|Sí|
 |Eliminación de la protección |No|Sí|
-|Distintivos visuales (encabezado, pie de página, marca de agua): fuente personalizada y color de fuente personalizada por código RGB|No|Recomendado si se usan variables<br /><br />-En los clientes, las variables se muestran como texto en lugar de mostrar los valores dinámicos|
+|Marcas visuales (encabezado, pie de página, marca de agua): Fuente personalizada y color de fuente personalizada mediante código RGB|No|Recomendado si se usan variables<br /><br />-En los clientes, las variables se muestran como texto en lugar de mostrar los valores dinámicos|
 |Distintivos visuales por aplicación|No|Recomendado si se usan variables<br /><br />-En los clientes, las variables se muestran como texto en lugar de mostrar los valores dinámicos|
 |Condiciones y configuración asociada <br /><br />Notas: Incluye etiquetado recomendado y automático, y su información sobre herramientas|No disponible|No|
 

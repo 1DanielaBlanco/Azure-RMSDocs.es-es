@@ -4,16 +4,16 @@ description: Puede cambiar o mejorar cualquiera de las etiquetas que ven los usu
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/30/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: e3b6d95f-334b-4d17-80a9-7d5487ab5d32
-ms.openlocfilehash: b2323e4dc372ee7f1649230d06c7ecb58cd6943b
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: d421f4a4ddd53409695e1a3def925b09bec372d7
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023487"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53304934"
 ---
 # <a name="how-to-change-or-customize-an-existing-label-for-azure-information-protection"></a>Cambio o personalización de una etiqueta existente para Azure Information Protection
 
@@ -29,15 +29,15 @@ Haga lo siguiente para cambiar una etiqueta:
     
     Por ejemplo, en el menú del concentrador, haga clic en **Todos los servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
-2. En la opción **Clasificaciones** > **Etiquetas** de la hoja **Azure Information Protection: etiquetas**, seleccione la etiqueta que quiera cambiar.
+2. Desde la opción de menú **Clasificaciones** > **Etiquetas**: en la hoja **Azure Information Protection: etiquetas**, seleccione la etiqueta que quiera cambiar.
 
-    La excepción es si quiere volver a ordenar una etiqueta: en lugar de seleccionar la etiqueta, haga clic con el botón derecho en la etiqueta o seleccione el menú contextual de la etiqueta. Luego, seleccione las opciones **Subir** o **Bajar**.
+    La excepción es si quiere cambiar el orden de una etiqueta: en lugar de seleccionar la etiqueta, haga clic con el botón derecho en la etiqueta o seleccione el menú contextual de la etiqueta. Luego, seleccione las opciones **Subir** o **Bajar**.
 
 3. Siempre que realice cambios en una nueva hoja, haga clic en **Guardar** en esa hoja si desea conservar los cambios.
     
     Al hacer clic en **Guardar**, los cambios están disponibles para los usuarios y servicios. Ya no hay una opción de publicación separada.
 
-4. Si cambió el nombre para mostrar o la descripción de la etiqueta y los configuró para más idiomas: vuelva a exportar la directiva de Azure Information Protection, proporcione traducciones nuevas e importe los cambios. Para más información, consulte [Configuración de etiquetas para distintos idiomas](configure-policy-languages.md).
+4. Si ha cambiado el nombre para mostrar o la descripción de la etiqueta y configuró estos idiomas adicionales: Vuelva a exportar la directiva de Azure Information Protection, proporcione traducciones nuevas e importe los cambios. Para más información, consulte [Configuración de etiquetas para distintos idiomas](configure-policy-languages.md).
 
 > [!TIP]
 >Si quiere que alguna de las etiquetas vuelva a su valores predeterminados, use la información de [La directiva de Information Protection](configure-policy-default.md).

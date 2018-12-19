@@ -4,22 +4,22 @@ description: Flujo de trabajo integral para colaborar con documentos protegidos 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/21/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 4895c429-959f-47c7-9007-b8f032f6df6f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 1b11f50bcf2090129211f3dd09cff867cfbdcb7b
-ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
+ms.openlocfilehash: eb2e2538246ea5c8ca42f6270e535c73dda71774
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51026662"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305512"
 ---
 # <a name="configuring-secure-document-collaboration-by-using-azure-information-protection"></a>Configuración de la colaboración con documentos segura mediante Azure Information Protection
 
->*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Al utilizar Azure Information Protection, es posible proteger los documentos sin renunciar a la colaboración con usuarios autorizados. La mayoría de los documentos que un usuario crea y, a continuación, comparte con otros usuarios para ver y editar serán documentos de Office de Word, Excel y PowerPoint. Estos documentos admiten la protección nativa, lo que significa que además de las características de autorización y cifrado relativas a la protección, admiten también la restricción de permisos para llevar a cabo un control más minucioso. 
 
@@ -27,9 +27,9 @@ Estos permisos se denominan derechos de uso, e incluyen permisos como ver, edita
 
 Al configurar estos permisos, también puede especificar a qué usuarios están destinados:
 
-- **Para los usuarios de su propia organización o de otra organización que usa Azure Active Directory**: puede especificar cuentas de usuario de Azure AD, grupos de Azure AD o todos los usuarios de esa organización. 
+- **Para los usuarios de su propia organización o de otra organización que usa Azure Active Directory**: puede especificar todos los usuarios, grupos de Azure AD o cuentas de usuario de Azure AD de la organización. 
 
-- **Para los usuarios que no tienen una cuenta de Azure Active Directory**: especifique una dirección de correo electrónico que se usará con una cuenta Microsoft. Esta cuenta puede existir ya o bien los usuarios pueden crearla en el momento en que abran el documento protegido. 
+- **Para los usuarios que no tiene una cuenta de Azure Active Directory**: especifique una dirección de correo electrónico que se usará con una cuenta de Microsoft. Esta cuenta puede existir ya o bien los usuarios pueden crearla en el momento en que abran el documento protegido. 
     
     Para abrir documentos con una cuenta de Microsoft, los usuarios deben usar Hacer clic y ejecutar de Office 2016. Otras ediciones y versiones de Office todavía no admiten la apertura de documentos protegidos de Office con una cuenta Microsoft.
 
@@ -42,7 +42,7 @@ Como administrador, puede configurar una etiqueta de Azure Information Protectio
 
 En este ejemplo se explica cómo configurar una etiqueta existente para aplicar la protección a fin de que los usuarios de su organización puedan colaborar en documentos con todos los usuarios de otra organización que tenga Office 365 o Azure AD, un grupo de otra organización que tenga Office 365 o Azure AD y un usuario que no tenga una cuenta de Azure AD y, en su lugar, utilice su dirección de correo electrónico de Gmail.
 
-Dado que el escenario restringe el acceso a usuarios específicos, no incluye la configuración para todos los usuarios autenticados. Para obtener un ejemplo de cómo configurar una etiqueta con esta configuración, consulte el [Ejemplo 5: Etiqueta que cifra el contenido pero no limita el acceso a este](configure-policy-protection.md#example-5-label-that-encrypts-content-but-doesnt-restrict-who-can-access-it).  
+Dado que el escenario restringe el acceso a usuarios específicos, no incluye la configuración para todos los usuarios autenticados. Para obtener un ejemplo de cómo configurar una etiqueta con esta configuración, vea [Ejemplo 5: Etiqueta que cifra el contenido pero no limita el acceso a este](configure-policy-protection.md#example-5-label-that-encrypts-content-but-doesnt-restrict-who-can-access-it).  
 
 1. Seleccione una etiqueta que ya esté en la directiva global o una directiva con ámbito. En la hoja **Protección**, asegúrese de que **Azure (clave de nube)** esté seleccionado.
     
@@ -52,13 +52,13 @@ Dado que el escenario restringe el acceso a usuarios específicos, no incluye la
     
     - Para el grupo interno: seleccione **Examinar directorio** para seleccionar el grupo, que debe estar habilitado para correo electrónico.
     
-    - Para todos los usuarios de la primera organización : seleccione **Escribir detalles** y escriba el nombre de un dominio en el inquilino de la organización. Por ejemplo, fabrikam.com.
+    - Para todos los usuarios de la primera organización externa: seleccione **Escribir detalles** y escriba el nombre de un dominio en el inquilino de la organización. Por ejemplo, fabrikam.com.
     
     - Para el grupo de la segunda organización externa: aún en la pestaña **Escribir detalles**, escriba la dirección de correo electrónico del grupo en el inquilino de la organización. Por ejemplo, sales@contoso.com.
     
-    - Para el usuario que no tiene una cuenta de Azure AD: aún en la pestaña **Escribir detalles**, escriba la dirección de correo electrónico del usuario. Por ejemplo, bengi.turan@gmail.com. 
+    - Para el usuario que no tienen una cuenta de Azure AD: aún en la pestaña **Escribir detalles**, escriba la dirección de correo electrónico del usuario. Por ejemplo, bengi.turan@gmail.com. 
 
-4. Para conceder los mismos permisos a todos los usuarios: para **Elección de permisos a partir de valores predeterminados**, seleccione **Copropietario**, **Coautor**, **Revisor** o **Personalizado** para seleccionar los permisos que quiera conceder.
+4. Para conceder los mismos permisos a todos estos usuarios: Para **Elección de permisos a partir de valores predeterminados**, seleccione **Copropietario**, **Coautor**, **Revisor** o **Personalizado** para seleccionar los permisos que quiera conceder.
     
     Por ejemplo, los permisos configurados podrían ser similares a lo siguiente:
         
@@ -100,7 +100,7 @@ Si seleccionan el botón **Ver permiso**, verán los permisos que tienen. En el 
 
 ![Cuadro de diálogo de ejemplo sobre permisos de Azure Information Protection](./media/example-permisisons-popup.png)
 
-Nota: Si el documento se abre por usuarios externos que también usan Azure Information Protection, la aplicación de Office no muestra la etiqueta de clasificación para el documento, aunque permanecen las marcas visuales de la etiqueta. En su lugar, los usuarios externos pueden aplicar su propia etiqueta en consonancia con la taxonomía de clasificación de su organización. Si estos usuarios externos le devuelven a continuación el documento editado, Office muestra la etiqueta de clasificación original cuando vuelva a abrir el documento.
+Nota: Si usuarios externos que también usan Azure Information Protection abren el documento, la aplicación de Office no muestra la etiqueta de clasificación para el documento, aunque permanecen las marcas visuales de la etiqueta. En su lugar, los usuarios externos pueden aplicar su propia etiqueta en consonancia con la taxonomía de clasificación de su organización. Si estos usuarios externos le devuelven a continuación el documento editado, Office muestra la etiqueta de clasificación original cuando vuelva a abrir el documento.
 
 Antes de que el documento protegido se abra, tiene lugar uno de los siguientes flujos de autenticación:
 

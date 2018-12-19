@@ -4,16 +4,16 @@ description: Agregar o quitar una etiqueta de Azure Information Protection a o d
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/30/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 0546cc11-67a5-4194-8c54-f3ac8ce9ebe1
-ms.openlocfilehash: f097ec2f0e3db75d679e6c0a6251fb128f583d4b
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 367426324af487cbdf0ddaac53eb86aa89c168b7
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023321"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53304866"
 ---
 # <a name="add-or-remove-a-label-to-or-from-an-azure-information-protection-policy"></a>Agregar o quitar una etiqueta a o desde una directiva de Azure Information Protection
 
@@ -39,7 +39,7 @@ Si tiene que crear una directiva de ámbito para que la etiqueta se aplique a un
 
 3. En la hoja **Directiva**, seleccione **Agregar o quitar etiquetas**.
 
-4. En la hoja **Directiva: Agregar o quitar etiquetas**, verá todas las etiquetas con una casilla activada si ya están en una directiva, y el nombre de la directiva correspondiente en la columna **DIRECTIVA**.
+4. En la hoja **Directiva: Agregar o quitar etiquetas**, verá todas las etiquetas con una casilla activada si ya están en una directiva y el nombre de la directiva correspondiente en la columna **DIRECTIVA**.
      
     Las subetiquetas se muestran con sangría aplicada. En una directiva de ámbito, las etiquetas que se heredan de la directiva global se muestran como no disponibles.
     

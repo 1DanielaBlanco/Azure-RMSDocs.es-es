@@ -4,19 +4,19 @@ description: Consulte las novedades o los cambios en una versión del cliente de
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/05/2018
+ms.date: 12/13/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: bfca9c6aab0625a9d35d7648a53f7cce6b74bce6
-ms.sourcegitcommit: 8e7b135bf48ced7e53d91f45d62b7bbd0f37634e
+ms.openlocfilehash: c6312d3f10a70ffcb3cc48447fcbc751b7072a0d
+ms.sourcegitcommit: db24caa96033fd0c7a0fad4e36518a816a570c94
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52861224"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53335530"
 ---
-# <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Cliente de Azure Information Protection: historial de publicación de versiones y directiva de soporte técnico
+# <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Cliente de Azure Information Protection: Directiva de soporte técnico y de historial de versiones
 
 >*Se aplica a: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 con SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012 y Windows Server 2008 R2*
 
@@ -44,7 +44,7 @@ Use la información siguiente para consultar las novedades o los cambios en una 
 ## <a name="version-141510"></a>Versión 1.41.51.0
 
 > [!TIP]
-> ¿Está interesado en evaluar el cliente de etiquetado unificado de Azure Information Protection porque sus etiquetas se publican en el Centro de seguridad y cumplimiento de Office 365? Consulte [Cliente de etiquetado unificado de Azure Information Protection: Información de publicación de versión](unifiedlabelingclient-version-release-history.md).
+> ¿Está interesado en evaluar el cliente de etiquetado unificado de Azure Information Protection porque sus etiquetas se publican en el Centro de seguridad y cumplimiento de Office 365? Vea [Cliente de etiquetado unificado de Azure Information Protection: Información de publicación de versión](unifiedlabelingclient-version-release-history.md).
 
 **Lanzamiento**: 27/11/2018
 
@@ -108,9 +108,11 @@ Esta versión incluye la versión MSIPC 1.0.3592.627 del cliente RMS.
 
     - Nuevo cmdlet, [Update-AIPScanner](/powershell/module/azureinformationprotection/Update-AIPScanner): se debe ejecutar después de actualizar desde la versión de disponibilidad general actual (1.29.5.0) o una versión anterior.
     
-    - Nuevo cmdlet, [Get AIPScannerStatus](/powershell/module/azureinformationprotection/Get-AIPScannerStatus): obtiene el estado actual del servicio para el analizador.  
+    - Nuevo cmdlet, [Get-AIPScannerStatus](/powershell/module/azureinformationprotection/Get-AIPScannerStatus): obtiene el estado actual del servicio para el analizador.  
     
     - Nuevo cmdlet, [Start-AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan): indica al analizador que inicie un ciclo de exploración única cuando la programación se establece en manual.
+    
+    - Los documentos PDF ahora están protegidos de forma predeterminada cuando se usa el estándar ISO para el cifrado de archivos PDF.
     
     - SharePoint Server 2010 es compatible con los clientes que tengan [soporte extendido para esta versión de SharePoint](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010).
     
@@ -150,7 +152,7 @@ Esta versión incluye la versión MSIPC 1.0.3592.627 del cliente RMS.
 
 - La versión de directiva ha cambiado a 1.4. La identificación del número de versión es necesaria para [configurar los equipos desconectados](client-admin-guide-customizations.md#support-for-disconnected-computers).
 
-- El vínculo **Send Us Feedback** (Envíenos sus comentarios) del cuadro de diálogo **Help and Feedback** (Ayuda y comentarios) se ha eliminado. Se ha reemplazado temporalmente por **Report an Issue** (Informar de un problema), pero este vínculo ahora solo se muestra en versiones preliminares. De forma predeterminada, esta opción envía un correo electrónico a Microsoft, pero puede cambiar esta dirección de correo electrónico por una cadena HTTP que especifique. Por ejemplo, una página web personalizada que tiene para que los usuarios notifiquen problemas o una dirección de correo electrónico que vaya a su departamento de soporte técnico. Para modificar esta dirección, use una [configuración de cliente avanzada](client-admin-guide-customizations.md#modify-the-email-address-for-the-report-an-issue-link).
+- El vínculo **Send Us Feedback** (Envíenos sus comentarios) del cuadro de diálogo **Help and Feedback** (Ayuda y comentarios) se ha eliminado. Se ha reemplazado temporalmente con **Notificar un problema** que, de forma predeterminada, envía un correo electrónico a Microsoft. A partir de diciembre de 2018, la opción **Notificar un problema** no aparece de forma predeterminada, pero se puede agregar con una [configuración de cliente avanzada](client-admin-guide-customizations.md#add-report-an-issue-for-users) en la que se especifica una cadena HTTP para el vínculo. Por ejemplo, una página web personalizada que tiene para que los usuarios notifiquen problemas o una dirección de correo electrónico que vaya a su departamento de soporte técnico. 
 
 ## <a name="version-12950"></a>Versión 1.29.5.0 
 
@@ -208,5 +210,5 @@ Para obtener más información sobre la instalación y el uso del cliente:
 
 - Para usuarios: [Descarga e instalación del cliente](install-client-app.md)
 
-- Para administradores: [Guía para administradores del cliente de Azure Information Protection](client-admin-guide.md)
+- Para administradores: [Guía de administrador de cliente de Azure Information Protection](client-admin-guide.md)
 

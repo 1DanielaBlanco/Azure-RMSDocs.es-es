@@ -4,22 +4,22 @@ description: Información sobre las operaciones del ciclo de vida que son pertin
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/07/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 3c48cda6-e004-4bbd-adcf-589815c56c55
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6fd356e88cbd7581bfafaf9a946eaa8fd9eba15e
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 3cddb4660ddae7bb19ff2ef1994fb4fa3c0bf9a6
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149521"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305393"
 ---
-# <a name="microsoft-managed-tenant-key-life-cycle-operations"></a>Administración de Microsoft: Operaciones del ciclo de vida de claves de inquilino
+# <a name="microsoft-managed-tenant-key-life-cycle-operations"></a>Administradas por Microsoft: Operaciones de ciclo de vida de clave de inquilino
 
->*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Si Microsoft administra su clave de inquilino para Azure Information Protection (la predeterminada), lea las secciones siguientes para saber profundizar en las operaciones del ciclo de vida que son relevantes para esta topología.
 
@@ -79,7 +79,7 @@ Para exportar la configuración de Azure Information Protection y su clave de in
     ```
     AadrmTpd.exe -key PrivateKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt -target TPD-77172C7B-8E21-48B7-9854-7A4CEAC474D0.xml
     ```
-    El resultado de este comando deben ser dos archivos: uno que contiene la contraseña de texto sin formato para el TPD protegido con contraseña y otro que es el propio TPD protegido con contraseña. Los archivos tienen un nuevo GUID, por ejemplo:
+    El resultado de este comando deben ser dos archivos: Uno contiene la contraseña de texto simple para el TPD protegido con contraseña y el otro es el propio TPD protegido con contraseña. Los archivos tienen un nuevo GUID, por ejemplo:
      
     - Password-5E4C2018-8C8C-4548-8705-E3218AA1544E.txt
 

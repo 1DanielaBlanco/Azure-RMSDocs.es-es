@@ -10,19 +10,19 @@ ms.service: information-protection
 ms.assetid: b9af5dc3-73d4-4147-b7ef-f6803b0d5216
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b1e282490138f26acb27bc4d553e6135c03f498c
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: d1e81966f93ec5e2647a1ce828f6bc8ee3f89f3e
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148314"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53173492"
 ---
-# <a name="rights-management-sharing-application-installation-and-configuration-for-clients"></a>Aplicación de uso compartido Rights Management Instalación y configuración para clientes
+# <a name="rights-management-sharing-application-installation-and-configuration-for-clients"></a>Aplicación para uso compartido de Rights Management: Instalación y configuración para clientes
 
->*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 > [!IMPORTANT]
-> **Finalización de notificación de compatibilidad**: la aplicación Rights Management sharing para Windows se va a sustituir por el [cliente de Azure Information Protection](./rms-client/aip-client.md). La aplicación anterior dejará de ser compatible el 31 de enero de 2019. 
+> **Notificación de fin de compatibilidad**: la aplicación Rights Management sharing para Windows se va a sustituir por el [cliente de Azure Information Protection](./rms-client/aip-client.md). La aplicación anterior dejará de ser compatible el 31 de enero de 2019. 
  
 La aplicación RMS sharing ofrece compatibilidad de autenticación para Office 2010 y se integra con aplicaciones de Office mediante la instalación de un complemento Office para que los usuarios puedan proteger fácilmente los archivos y correos electrónicos directamente desde la cinta. Esta aplicación también ofrece protección genérica para tipos de archivo que no son compatibles de forma nativa con el servicio Azure Rights Management, y un sitio de seguimiento de documentos para que los usuarios controlen y revoquen los archivos que hayan protegido.
 
@@ -32,7 +32,7 @@ Para una implementación y configuración empresarial de la aplicación RMS shar
 Ya no se puede descargar esta aplicación desde la página de Microsoft Azure Information Protection; el vínculo para equipos con Windows descarga ahora el cliente de Azure Information Protection. 
 
 
-## <a name="the-rms-sharing-application-for-mobile-platforms-installation-and-management"></a>La aplicación RMS sharing para plataformas móviles: instalación y administración
+## <a name="the-rms-sharing-application-for-mobile-platforms-installation-and-management"></a>La aplicación de uso compartido de RMS para plataformas móviles: Instalación y administración
 Puede descargar e instalar la aplicación RMS sharing para equipos Mac y dispositivos Windows Phone desde la [página de Microsoft Azure Information Protection](https://go.microsoft.com/fwlink/?LinkId=303970). 
 
 Ya no se puede descargar la aplicación RMS sharing para iOS y Android desde esta página; los vínculos para estos dispositivos móviles ahora descargan el cliente de Azure Information Protection. 

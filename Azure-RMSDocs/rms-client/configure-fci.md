@@ -4,18 +4,18 @@ description: Instrucciones para usar el cliente de Rights Management (RMS) con e
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/14/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 099b4985a0e595c22ec29fd2d682d092a5b445b5
-ms.sourcegitcommit: 395918e9e3513e1d791bbfc16c0fc90e4dd605eb
+ms.openlocfilehash: 19a295076ce86da0c93685250cd62b0ca1ca41e6
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45750635"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305714"
 ---
 # <a name="rms-protection-with-windows-server-file-classification-infrastructure-fci"></a>Protección de RMS con la infraestructura de clasificación de archivos (FCI) de Windows Server
 
@@ -113,7 +113,7 @@ Tenga en cuenta que si realiza cambios en la plantilla de Rights Management que 
 
         `[string]$BposTenantId = "23976bc6-dcd4-4173-9d96-dad1f48efd42",`
 
-3.  Firme el script. Si no firma el script (más seguro), debe configurar Windows PowerShell en los servidores que lo ejecutan. Por ejemplo, ejecute una sesión de Windows PowerShell mediante la opción **Ejecutar como administrador** y escriba: **Set-ExecutionPolicy RemoteSigned**. Sin embargo, esta configuración permite la ejecución de todos los scripts sin firmar cuando se almacenan en este servidor (menos seguro).
+3.  Firme el script. Si no firma el script (más seguro), debe configurar Windows PowerShell en los servidores que lo ejecutan. Por ejemplo, ejecute una sesión de Windows PowerShell con la opción **Ejecutar como administrador** y escriba: **Set-ExecutionPolicy RemoteSigned**. Sin embargo, esta configuración permite la ejecución de todos los scripts sin firmar cuando se almacenan en este servidor (menos seguro).
 
     Para obtener más información acerca de la firma de scripts de Windows PowerShell, consulte [about_Signing](https://technet.microsoft.com/library/hh847874.aspx) en la biblioteca de documentación de PowerShell.
 
@@ -125,13 +125,13 @@ Ahora está listo para empezar a configurar el Administrador de recursos del ser
 
 -   En el Administrador de recursos del servidor de archivos, en Administración de clasificaciones, cree una nueva propiedad local:
 
-    -   **Nombre**: Escribir **RMS**
+    -   **Nombre**: escriba **RMS**
 
-    -   **Descripción**:   Escribir **protección de Rights Management**
+    -   **Descripción**:   escriba **protección de Rights Management**
 
     -   **Tipo de propiedad**: seleccione **Sí/No**
 
-    -   **Valor**: Seleccionar **Sí**
+    -   **Valor**: seleccione **Sí**
 
 Ahora podemos crear una regla de clasificación que usa esta propiedad.
 
@@ -141,9 +141,9 @@ Ahora podemos crear una regla de clasificación que usa esta propiedad.
 
     -   En la pestaña **General** :
 
-        -   **Nombre**: Escribir **Clasificar para RMS**
+        -   **Nombre**: escriba **Clasificar para RMS**
 
-        -   **Habilitado**: Mantenga el valor predeterminado, que es por lo que esta casilla de verificación está seleccionada.
+        -   **Habilitada**: Mantenga el valor predeterminado, que es por lo que esta casilla de verificación está seleccionada.
 
         -   **Descripción**: escriba **Clasificar todos los archivos en la carpeta &lt;nombre de carpeta&gt; para Rights Management**.
 
@@ -155,11 +155,11 @@ Ahora podemos crear una regla de clasificación que usa esta propiedad.
 
     -   En la pestaña **Clasificación** :
 
-    -   **Método de clasificación**: Seleccionar **Clasificador de carpetas**
+    -   **Método de clasificación**: seleccione **Clasificador de carpetas**
 
-    -   **propiedad** : Seleccionar **RMS**
+    -   Nombre de la **propiedad**: seleccione **RMS**
 
-    -   **Valor**de la propiedad: Seleccionar **Sí**
+    -   **Valor** de propiedad: seleccione **Sí**
 
 Aunque puede ejecutar las reglas de clasificación manualmente, para las operaciones en curso, le interesará que esta regla se ejecute en una programación de modo que los nuevos archivos se clasifiquen con la propiedad RMS.
 
@@ -171,7 +171,7 @@ Aunque puede ejecutar las reglas de clasificación manualmente, para las operaci
 
     -   Configure la programación para que se ejecuten todas las reglas de clasificación, lo que incluye nuestra nueva regla para clasificar archivos con la propiedad RMS.
 
-    -   **Permitir clasificación continua para archivos nuevos**: seleccione esta casilla de modo que se clasifiquen nuevos archivos.
+    -   **Permitir clasificación continua de nuevos archivos**: Seleccione esta casilla de verificación de modo que se clasifiquen nuevos archivos.
 
     -   Opcional: Realice cualquier otro cambios que desee, como configurar opciones para informes y notificaciones.
 
@@ -183,7 +183,7 @@ Ahora que ha completado la configuración de clasificación, está listo para co
 
     -   En la pestaña **General** :
 
-        -   **Nombre de la tarea**: Escribir **Proteger archivos con RMS**
+        -   **Nombre de la tarea**: escriba **Proteger archivos con RMS**
 
         -   Mantener la casilla de verificación **Habilitar** seleccionada.
 
@@ -197,7 +197,7 @@ Ahora que ha completado la configuración de clasificación, está listo para co
 
     -   En la pestaña **Acción** :
 
-        -   **Tipo**: Seleccionar **Personalizado**
+        -   **Tipo**: seleccione **Personalizado**
 
         -   **Ejecutable**: Especifique lo siguiente:
 
@@ -206,7 +206,7 @@ Ahora que ha completado la configuración de clasificación, está listo para co
             ```
             Si Windows no está en la unidad C:, modifique esta ruta de acceso o vaya a este archivo.
 
-        -   **Argumento**: especifique lo siguiente, proporcionando sus propios valores para &lt;ruta de acceso&gt; e &lt;identificador de plantilla&gt;:
+        -   **Argumento**: Especifique lo siguiente, proporcionando sus propios valores para &lt;ruta de acceso&gt; e &lt;identificador de plantilla&gt;:
 
             ```
             -Noprofile -Command "<path>\RMS-Protect-FCI.ps1 -File '[Source File Path]' -TemplateID <template GUID> -OwnerMail '[Source File Owner Email]'"
@@ -224,15 +224,15 @@ Ahora que ha completado la configuración de clasificación, está listo para co
             > 
             > Para los archivos que no tienen un usuario de dominio como propietario, puede copiar y guardar estos archivos usted mismo como usuario de dominio, de modo que se convierta en el propietario de solo estos archivos. O bien, si dispone de permisos, puede cambiar manualmente el propietario.  Como alternativa, puede especificar una dirección de correo electrónico concreta (como la suya propia o una dirección de grupo del departamento de TI) en lugar de la variable [Source File Owner Email], lo que significa que todos los archivos que proteja mediante este script usarán esta dirección de correo electrónico para definir el nuevo propietario.
 
-    -   **Ejecutar el comando como**: Seleccionar **Sistema local**
+    -   **Ejecutar el comando como**: seleccione **Sistema local**
 
     -   En la pestaña **Condición** :
 
-        -   **propiedad**: Seleccionar **RMS**
+        -   **Propiedad**: seleccione **RMS**
 
-        -   **Operador**: Seleccionar **Igual**
+        -   **Operador**: seleccione **Igual**
 
-        -   **Valor**: Seleccionar **Sí**
+        -   **Valor**: seleccione **Sí**
 
     -   En la pestaña **Programación** :
 
@@ -268,7 +268,7 @@ Ahora que ha completado la configuración de clasificación, está listo para co
     > 
     > -   Si ve **0** en el informe, en lugar del número de archivos de su carpeta, esto indica que el script no se ha ejecutado. En primer lugar, compruebe el propio script cargándolo en Windows PowerShell ISE para validar su contenido e intenta ejecutarlo una vez en la misma sesión de PowerShell para ver si se muestra algún error. Si no se especifica ningún argumento, el script intenta conectarse al servicio Azure Rights Management y autenticarse.
     > 
-    >     -   Si el script informa de que no ha podido conectarse al servicio Azure Rights Management (Azure RMS), compruebe los valores que muestra para la cuenta de entidad de servicio, especificados anteriormente en el script. Para obtener más información sobre cómo crear esta cuenta de entidad de servicio, vea [Requisito previo 3: proteger o desproteger archivos sin interacción del usuario](client-admin-guide-powershell.md#prerequisite-3-to-protect-or-unprotect-files-without-user-interaction) en la guía para administradores del cliente de Azure Information Protection.
+    >     -   Si el script informa de que no ha podido conectarse al servicio Azure Rights Management (Azure RMS), compruebe los valores que muestra para la cuenta de entidad de servicio, especificados anteriormente en el script. Para más información sobre cómo crear esta cuenta de entidad de servicio, vea [Requisito previo 3: proteger o desproteger archivos sin interacción del usuario](client-admin-guide-powershell.md#prerequisite-3-to-protect-or-unprotect-files-without-user-interaction) en la Guía del administrador de cliente de Azure Information Protection.
     >     -   Si el script informa de que se puede conectar a Azure RMS, compruebe que se puede encontrar la plantilla especificada mediante la ejecución de [Get RMSTemplate](/powershell/azureinformationprotection/vlatest/get-rmstemplate) directamente desde Windows PowerShell en el servidor. Debería ver la plantilla especificada que se devuelve en los resultados.
     > -   Si el script por sí solo se ejecuta en ISE de Windows PowerShell sin errores, intente ejecutarlo como se indica a continuación en una sesión de PowerShell, especificando un nombre de archivo para proteger y sin el parámetro - OwnerEmail:
     > 
@@ -299,5 +299,5 @@ Ahora todo lo que debe hacer es crear una nueva tarea de administración de arch
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Es posible que se pregunte: [¿Cuál es la diferencia entre FCI de Windows Server y el analizador de Azure Information Protection?](../faqs.md#whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner) 
+Tal vez se pregunte: [¿Cuál es la diferencia entre FCI de Windows Server y el analizador de Azure Information Protection?](../faqs.md#whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner) 
 

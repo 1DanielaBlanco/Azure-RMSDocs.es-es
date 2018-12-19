@@ -4,19 +4,18 @@ description: Obtenga más información sobre los documentos PDF etiquetados para
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/04/2018
+ms.date: 12/12/2018
 ms.topic: article
-ms.prod: azure
 ms.service: information-protection
 ms.assetid: aab59e02-930b-4a17-8442-2d5d081fe1a6
 ms.reviewer: kartikka
 ms.suite: ems
-ms.openlocfilehash: 4a4d396db6eaac2709577023d873587697327bef
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: fc1a6c136d0b44671cbae0e6eb15202364e356d4
+ms.sourcegitcommit: b2414cc00d50ccefe10f8c3719eb3f6c1e78fc65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023607"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53246129"
 ---
 # <a name="supported-pdf-readers-for-microsoft-information-protection"></a>Lectores PDF compatibles con Microsoft Information Protection
 
@@ -34,7 +33,7 @@ Esta integración nativa tiene las siguientes ventajas:
     
     A menos que esta funcionalidad se haya [deshabilitado por un administrador](client-admin-guide-customizations.md#dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption), este formato de archivo PDF protegido ahora está habilitado de forma predeterminada en la versión más reciente del cliente de Azure Information Protection.
 
-Para obtener más información, vea la siguiente entrada de blog: [Starting October, use Adobe Acrobat Reader for PDFs protected by Microsoft Information Protection](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Starting-October-use-Adobe-Acrobat-Reader-for-PDFs-protected-by/ba-p/262738) (A partir de octubre, use Adobe Acrobat Reader para los archivos PDF protegidos mediante Microsoft Information Protection)
+Para más información, vea la siguiente entrada de blog: [Starting October, use Adobe Acrobat Reader for PDFs protected by Microsoft Information Protection](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Starting-October-use-Adobe-Acrobat-Reader-for-PDFs-protected-by/ba-p/262738) (A partir de octubre, use Adobe Acrobat Reader para los archivos PDF protegidos mediante Microsoft Information Protection)
 
 ## <a name="supported-pdf-readers"></a>Lectores PDF compatibles
 
@@ -42,7 +41,7 @@ Los lectores PDF siguientes pueden abrir archivos PDF protegidos que cumplen el 
 
 |Sistema operativo|Lectores compatibles y vínculo de descarga|
 |----------------|-----------------------------------|
-|De Windows 10 y versiones anteriores<br />a Windows 7 Service Pack 1|Adobe Acrobat Reader (preferido):<br />-  [Leer los términos de uso generales de Adobe](https://www.adobe.com/legal/terms.html) <br />- [Descargar la versión preliminar](https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/misc/MIP_Preview/1900820120/Adobe_MIP_Preview_1900820120.zip) <br /><br /> Visor de Azure Information Protection: [Descargar](https://go.microsoft.com/fwlink/?linkid=838993)<br /><br />Foxit Reader: [Descargar](https://www.foxitsoftware.com/pdf-reader/)|
+|De Windows 10 y versiones anteriores<br />a Windows 7 Service Pack 1|Adobe Acrobat Reader (preferido):<br />-  1. Leer los [Términos de uso generales de Adobe](https://www.adobe.com/legal/terms.html) <br />- 2. Instalar Adobe Reader desde el [sitio de Adobe](https://www.adobe.com/)<br />- 3. Instalar el [complemento Adobe](https://go.microsoft.com/fwlink/?linkid=2050049)<br />- 4. Si se le solicita, pídale al administrador que [autorice el complemento](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/General-Availability-of-Adobe-Acrobat-Reader-integration-with/ba-p/298396) <br /><br /> Visor de Azure Information Protection: [Descargar](https://go.microsoft.com/fwlink/?linkid=838993)<br /><br />Foxit Reader: [Descargar](https://www.foxitsoftware.com/pdf-reader/)|
 |Android|Aplicación Azure Information Protection: [Descargar](https://go.microsoft.com/fwlink/?LinkId=325340)|
 |iOS|Aplicación Azure Information Protection: [Descargar](https://go.microsoft.com/fwlink/?LinkId=325338)|
 

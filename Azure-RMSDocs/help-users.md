@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 43bc10ce43a4ba7a26958e562c4acc6e245ad76a
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 25471f9e047b4b3c1dac94cdf0856d7413de268a
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024083"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53173900"
 ---
 # <a name="helping-users-to-protect-files-by-using-the-azure-rights-management-service"></a>Ayuda a los usuarios para proteger archivos mediante el servicio Azure Rights Management
 
->*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Después de implementar y configurar Azure Information Protection para su organización, ofrezca ayuda e instrucciones a los usuarios, administradores y al servicio de asistencia:
 
@@ -40,7 +40,7 @@ Después de implementar y configurar Azure Information Protection para su organi
     
 -   **Información del departamento de soporte técnico**
     
-    Si los usuarios tienen el cliente de Azure Information Protection, los operadores del departamento de soporte técnico pueden pedirles que usen la opción **Ayuda y comentarios** para obtener información como, por ejemplo, si la edición de Office no puede admitir la protección, y la cuenta de usuario que tiene iniciada la sesión en ese momento. También puede usar esta opción para recopilar archivos de registro y restablecer el cliente. Para obtener más información, consulte la guía para administradores sobre [comprobaciones de instalación y solución de problemas](./rms-client/client-admin-guide.md#installation-checks-and-troubleshooting).
+    Si los usuarios tienen el cliente de Azure Information Protection, los operadores del departamento de soporte técnico pueden pedirles que usen la opción **Ayuda y comentarios** para obtener información como, por ejemplo, si la edición de Office no puede admitir la protección, y la cuenta de usuario que tiene iniciada la sesión en ese momento. También puede usar esta opción para recopilar archivos de registro y restablecer el cliente. Para más información, vea la guía del administrador: [Comprobaciones de instalación y solución de problemas](./rms-client/client-admin-guide.md#installation-checks-and-troubleshooting).
     
     Si hay solicitudes legítimas para tener derechos completos de acceso a documentos protegidos, asegúrese de que el servicio de asistencia tenga procesos para solicitar este acceso con la [característica de superusuario](configure-super-users.md) de Azure Rights Management. Por ejemplo, estas solicitudes podrían provenir del departamento legal o de un administrador después de que un empleado haya dejado la organización.
     
@@ -102,7 +102,7 @@ Los derechos de uso se muestran en la parte superior del documento mediante una 
 
 1.  Dentro de Outlook, cree un mensaje de correo electrónico para un destinatario dentro de la organización.
 
-2.  En la pestaña **OPCIONES** , haga clic en **Permiso**y seleccione una opción. Por ejemplo: **No reenviar**, **\<Nombre de empresa> - Confidencial** o **\<Nombre de empresa> - Confidencial. Ver solo**.
+2.  En la pestaña **OPCIONES** , haga clic en **Permiso**y seleccione una opción. Por ejemplo: **No reenviar**, **\<Nombre de la compañía> - Confidencial** o **\<Nombre de la compañía> - Confidencial. Ver solo**.
 
 3.  Envíe el mensaje.
 

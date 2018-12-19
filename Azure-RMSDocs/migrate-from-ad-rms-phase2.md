@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 861d262a04f80a6e1326f15b06942afd27f41990
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 35b2211b9ca6eb3f8c0f160a80850c3cb899562c
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024304"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53174189"
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>Fase 2 de la migración: configuración del lado servidor para AD RMS
 
->*Se aplica a: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Se aplica a: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Use la información siguiente para la fase 2 de la migración desde AD RMS a Azure Information Protection. En estos procedimientos se describen los pasos del 4 al 6 del tema [Migración desde AD RMS a Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md).
 
@@ -74,7 +74,7 @@ La implementación de AD RMS actual usa una de las siguientes configuraciones co
 > [!NOTE]
 > Para obtener más información acerca del uso de módulos de seguridad de hardware con AD RMS, consulte [Uso de AD RMS con módulos de seguridad de hardware](https://technet.microsoft.com/library/jj651024.aspx).
 
-Estas son las dos opciones de topología de claves de inquilino de Azure Information Protection: Microsoft administra su clave de inquilino (**administrada por Microsoft**) o la administra el usuario (**administrada por el cliente**) en Azure Key Vault. Cuando administra su propia clave de inquilino de Azure Information Protection, a veces se denomina “Bring Your Own Key” (BYOK). Para más información, vea el artículo [Planeamiento e implementación de su clave de inquilino de Azure Information Protection](plan-implement-tenant-key.md).
+Las dos opciones de topología de claves de inquilino de Azure Information Protection son: En Azure Key Vault, Microsoft administra su clave de inquilino (**administrada por Microsoft**), o bien es el usuario quien se encarga de ello (**administrada por el cliente**). Cuando administra su propia clave de inquilino de Azure Information Protection, a veces se denomina “Bring Your Own Key” (BYOK). Para más información, vea el artículo [Planeamiento e implementación de su clave de inquilino de Azure Information Protection](plan-implement-tenant-key.md).
 
 Utilice la tabla siguiente para identificar qué procedimiento se utilizará para la migración. 
 
@@ -145,7 +145,7 @@ Después puede publicar o archivar estas plantillas como lo haría con cualquier
 
 Si sus plantillas de AD RMS usaban el grupo **CUALQUIERA**, el grupo equivalente más próximo en Azure Information Protection se denomina **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@\<nombre_inquilino>.onmicrosoft.com**. Por ejemplo, este grupo puede tener un aspecto similar al siguiente para Contoso: **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**. Este grupo incluye a todos los usuarios del inquilino de Azure AD.
 
-Al administrar plantillas y etiquetas en Azure Portal, este grupo se muestra como el nombre de dominio de su inquilino en Azure AD. Por ejemplo, este grupo puede tener un aspecto similar al siguiente para Contoso: **contoso.onmicrosoft.com**. Para agregar este grupo, la opción muestra **Agregar \<nombre de la organización> Todos los miembros.
+Al administrar plantillas y etiquetas en Azure Portal, este grupo se muestra como el nombre de dominio de su inquilino en Azure AD. Por ejemplo, este grupo puede tener un aspecto similar al siguiente para Contoso: **contoso.onmicrosoft.com**. Para agregar este grupo, la opción muestra **Agregar \<nombre de la organización> Todos los miembros**.
 
 Si no está seguro de si las plantillas de AD RMS incluyen el grupo CUALQUIERA, puede usar el siguiente script de Windows PowerShell de ejemplo para identificar estas plantillas. Para más información sobre el uso de Windows PowerShell con AD RMS, vea [Using Windows PowerShell to Administer AD RMS](https://technet.microsoft.com/library/ee221079%28v=ws.10%29.aspx) (Uso de Windows PowerShell para administrar AD RMS).
 
@@ -156,7 +156,7 @@ Para obtener más información sobre esta configuración, consulte [Configuraci�
 #### <a name="sample-windows-powershell-script-to-identify-ad-rms-templates-that-include-the-anyone-group"></a>Script de ejemplo de Windows PowerShell para identificar plantillas de AD RMS que incluyen el grupo CUALQUIERA
 Esta sección contiene el script de ejemplo que le ayuda a identificar cualquier plantilla de AD RMS que tenga definido el grupo CUALQUIERA, tal como se ha descrito en la sección anterior.
 
-**Aviso de declinación de responsabilidades:** este script de ejemplo no es compatible con ningún servicio o programa de soporte técnico Standard de Microsoft. Este script de ejemplo se proporciona TAL CUAL sin garantía de ningún tipo.
+**Declinación de responsabilidades:** Este script de ejemplo no es compatible en ningún servicio o programa de soporte estándar de Microsoft. Este script de ejemplo se proporciona TAL CUAL sin garantía de ningún tipo.
 
 ```
 import-module adrmsadmin 

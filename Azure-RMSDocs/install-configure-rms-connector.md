@@ -4,18 +4,18 @@ description: Información para facilitar la instalación y configuración del co
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/16/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2e3babe4a402b8f77700e9b9890dc5f826a5850a
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: c0fc5812eedd7cce5c0e17231d9ee19dbf4edd1b
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53026964"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305682"
 ---
 # <a name="installing-and-configuring-the-azure-rights-management-connector"></a>Instalación y configuración del conector de Azure Rights Management
 
@@ -57,17 +57,17 @@ Para poder configurar el conector RMS, debe introducir las credenciales para una
 
 Esta cuenta no requiere la autenticación multifactor (MFA) porque la herramienta de administración de Microsoft Rights Management no admite MFA para esta cuenta. 
 
-El conector también tiene algunas restricciones de caracteres para esta contraseña. La contraseña no puede tener los siguientes caracteres: símbolo de Y comercial (**&**); corchete angular de apertura (**[**); corchete angular de cierre (**]**); comillas rectas (**"**); y apóstrofo (**'**). Si su contraseña tiene alguno de estos caracteres, se producirá un error en la autenticación para el conector RMS y verá el mensaje de error **Esa combinación de nombre de usuario y contraseña no es correcta**. Esto no afecta a otros escenarios, en los que podrá iniciar sesión correctamente con esta cuenta y contraseña. Si este escenario se aplica a su contraseña, use otra cuenta con una contraseña que no tenga ninguno de estos caracteres especiales o restablézcala y asegúrese de que no los incluya.
+El conector también tiene algunas restricciones de caracteres para esta contraseña. No puede usar una contraseña que tenga cualquiera de los siguientes caracteres: Y comercial ( **&** ); corchete angular de apertura ( **[** ); corchete angular de cierre ( **]** ); comilla tipográfica ( **"** ); y apóstrofo ( **'** ). Si su contraseña tiene alguno de estos caracteres, se producirá un error en la autenticación para el conector RMS y verá el mensaje de error **Esa combinación de nombre de usuario y contraseña no es correcta**. Esto no afecta a otros escenarios, en los que podrá iniciar sesión correctamente con esta cuenta y contraseña. Si este escenario se aplica a su contraseña, use otra cuenta con una contraseña que no tenga ninguno de estos caracteres especiales o restablézcala y asegúrese de que no los incluya.
 
-Además, si implementó [controles de incorporación](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment), asegúrese de que la cuenta especificada es capaz de proteger el contenido. Por ejemplo, si restringió la capacidad de proteger el contenido al grupo “Departamento de TI”, la cuenta que especifique aquí debe pertenecer a ese grupo. Si no, verá el mensaje de error siguiente: **Error al intentar detectar la ubicación de la organización y el servicio de administración. Asegúrese de que el servicio Microsoft Rights Management está habilitado para su organización.**
+Además, si implementó [controles de incorporación](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment), asegúrese de que la cuenta especificada es capaz de proteger el contenido. Por ejemplo, si restringió la capacidad de proteger el contenido al grupo “Departamento de TI”, la cuenta que especifique aquí debe pertenecer a ese grupo. En caso contrario, verá el mensaje de error: **Error al intentar detectar la ubicación de la organización y el servicio de administración. Asegúrese de que el servicio Microsoft Rights Management está habilitado para su organización.**
 
 Puede usar una cuenta que tenga solo uno de los privilegios siguientes:
 
--   **Administrador global del inquilino**: una cuenta que es un administrador global del inquilino de Office 365 o inquilino de Azure AD.
+-   **Administrador global para el inquilino**: una cuenta de administrador global para el inquilino de Office 365 de Azure AD.
 
 -   **Administrador global de Azure Rights Management**: una cuenta de Azure Active Directory a la que se le ha asignado el rol de administrador global de Azure RMS.
 
--   **Administrador de conector de Azure Rights Management**: una cuenta de Azure Active Directory que tenga otorgados los derechos para instalar y administrar el conector RMS en la organización.
+-   **Administrador de conector de Azure Rights Management**: Una cuenta de Azure Active Directory que tiene garantizados los permisos para instalar y administrar el conector RMS para la organización.
 
     > [!NOTE]
     > El rol de administrador global de Azure Rights Management y el rol de administrador del conector de Azure Rights Management se asignan a las cuentas mediante el cmdlet de Azure RMS [Add-AadrmRoleBasedAdministrator](/powershell/module/aadrm/add-aadrmrolebasedadministrator).
