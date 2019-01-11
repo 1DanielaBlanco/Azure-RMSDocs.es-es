@@ -4,16 +4,16 @@ description: Guía de inicio rápido donde se muestra cómo escribir la lógica 
 author: BryanLa
 ms.service: information-protection
 ms.topic: quickstart
-ms.date: 09/27/2018
+ms.date: 01/08/2019
 ms.author: bryanla
-ms.openlocfilehash: 578c5aa69faa986663ea6c164d94e5940580167d
-ms.sourcegitcommit: 76e1b7c0255700813590be62d94b19338bf6c201
-ms.translationtype: HT
+ms.openlocfilehash: 686321c4f376679103b92419b5b86abaa74dc394
+ms.sourcegitcommit: adc4621ec4738c0abb6c1fa81a6598a6dfc5ace6
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48866143"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54136246"
 ---
-# <a name="quickstart-client-application-initialization-c"></a>Guía de inicio rápido: inicialización de la aplicación cliente (C++)
+# <a name="quickstart-client-application-initialization-c"></a>Inicio rápido: Inicialización de la aplicación cliente (C++)
 
 En esta guía de inicio rápido, se muestra cómo implementar el patrón de inicialización del cliente usado por el SDK de MIP con C++ en tiempo de ejecución. 
 
@@ -259,8 +259,8 @@ Como se ha indicado anteriormente, los objetos de motor y perfil son necesarios 
    int main()
    {
      // Construct/initialize objects required by the application's profile object
-     ApplicationInfo appInfo{"<application-id>",                    // ApplicationInfo object (App ID, friendly name)
-                 "<friendly-name>" };
+     ApplicationInfo appInfo{"<application-id>",                    // ApplicationInfo object (App ID, app name)
+                 "<application-name>" };
      auto profileObserver = make_shared<ProfileObserver>();         // Observer object                  
      auto authDelegateImpl = make_shared<AuthDelegateImpl>(         // Authentication delegate object (App ID)
                  "<application-id>");
@@ -312,8 +312,8 @@ Como se ha indicado anteriormente, los objetos de motor y perfil son necesarios 
 
    | Marcador | Valor | Ejemplo |
    |:----------- |:----- |:--------|
-   | \<application-id\> | El identificador de aplicación de Azure AD asignado a la aplicación registrada en “Instalación y configuración del SDK de MIP” (dos instancias).  | 0edbblll-8773-44de-b87c-b8c6276d41eb |
-   | \<friendly-name\> | Nombre descriptivo definido por el usuario para la aplicación. | AppInitialization |
+   | \<application-id\> | El Id. de aplicación de AD Azure (GUID) asignado a la aplicación registrada en [paso #2 de la "instalación del SDK de MIP y configuración"](/information-protection/develop/setup-configure-mip#register-a-client-application-with-azure-active-directory) artículo. Reemplace 2 instancias.  | 0edbblll-8773-44de-b87c-b8c6276d41eb |
+   | \<nombre de la aplicación\> | Nombre descriptivo definido por el usuario para la aplicación. Debe contener caracteres ASCII válidos (sin incluir ';') y lo ideal es que coincide con el nombre de la aplicación que utilizó en el registro de Azure AD. | AppInitialization |
    | \<engine-account\> | Cuenta usada para la identidad del motor. Al autenticarse con una cuenta de usuario durante la obtención de tokens, tiene que coincidir con este valor. | user1@tenant.onmicrosoft.com |
    | \<engine-state\> | Estado definido por el usuario que se asociará al motor. | MyAppState |
 
