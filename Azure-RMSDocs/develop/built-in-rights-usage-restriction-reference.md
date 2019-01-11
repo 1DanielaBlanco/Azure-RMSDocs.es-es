@@ -2,8 +2,8 @@
 title: Cómo usar los derechos integrados | Azure RMS
 description: Se describen los derechos integrados que proporciona RMS SDK 4.2 y las restricciones de uso que una aplicación debe exigir para cumplir con esas restricciones.
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -12,14 +12,14 @@ ms.assetid: 9142dd29-f1f4-4c2f-82ac-534f14b8bba1
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 0d93f24f74a385613ebb5f3f44eee1951ea00be9
-ms.sourcegitcommit: 1cd4edd4ba1eb5e10cb61628029213eda316783a
+ms.openlocfilehash: 3fd505e8e692cfacafbfec7b65d6e6ac37d539f5
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53266671"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54071274"
 ---
-# <a name="how-to-use-built-in-rights"></a>Cómo: Usar los derechos integrados
+# <a name="how-to-use-built-in-rights"></a>Procedimiento para: Usar los derechos integrados
 
 En este tema se describen los derechos integrados que proporciona Microsoft Rights Management SDK 4.2 y las restricciones de uso que una aplicación debe exigir para cumplir con esas restricciones. A continuación se muestran los derechos integrados, los derechos comunes, los derechos de documentos editables y los derechos de correo electrónico, seguidos de una descripción y de sus valores por sistema operativo.
 

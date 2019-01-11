@@ -2,8 +2,8 @@
 title: Cómo trabajar con la configuración de cifrado | Azure RMS
 description: Orientación para los paquetes de cifrado de Azure RMS y recortes de código para su uso.
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.assetid: B1D2C227-F43D-4B18-9956-767B35145792
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: d8d5c76c08c7518c8279267a6c1e15f559d6ea54
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 6c46df1ac7aca8d4668ff71bb91195d059f8a3a6
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44147158"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54071731"
 ---
 # <a name="how-to-work-with-encryption-settings"></a>Trabajo con la configuración de cifrado
 
@@ -30,7 +30,7 @@ No se requiere ningún código adicional para usar cifrado basado en *AES 256*, 
 > [!IMPORTANT]
 > La compatibilidad con el uso de los archivos protegidos con *AES 256* existe desde [la versión de octubre de 2014](release-notes-rtm.md). Si ejecuta aplicaciones compiladas con una versión del SDK anterior a octubre de 2014, esta actualización no permitirá seguir usando la aplicación. Asegúrese de que los clientes de las aplicaciones que está compilando ya usen el SDK actualizado o estén dispuestos a actualizar de inmediato a la versión más reciente de la aplicación.
 
- 
+ 
 ## <a name="api-encryption-support"></a>Compatibilidad con el cifrado API
 
 A partir de la [actualización de marzo de 2015](release-notes-rtm.md), hemos incorporado en nuestra API y sus paquetes de cifrado asociado las tres marcas siguientes:

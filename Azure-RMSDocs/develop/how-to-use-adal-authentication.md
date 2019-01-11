@@ -2,8 +2,8 @@
 title: Autenticación de ADAL de la aplicación habilitada para RMS | Azure RMS
 description: Describe el proceso para la autenticación con AAL
 keywords: autenticación, RMS, ADAL
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.assetid: f89f59b7-33d1-4ab3-bb64-1e9bda269935
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 8a1f885be1f11ea7ef82cf96cb57fa9fafe597c4
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: a921d71c7cb54d0db84d30baf5dd723e314405c3
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44146751"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54070356"
 ---
 # <a name="how-to-use-adal-authentication"></a>Uso de la autenticación ADAL
 
