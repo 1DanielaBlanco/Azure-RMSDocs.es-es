@@ -4,16 +4,16 @@ description: Puede eliminar o cambiar de orden las etiquetas de Azure Informatio
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/12/2018
+ms.date: 12/28/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ae0f603f-a632-4ac5-a3f7-6358d4255eff
-ms.openlocfilehash: 1f957874649fe9e5697c3dd0164b0b0b255d1e6e
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: 6e5348eb55451747ff9f10b3bd4f7a2f868b03c5
+ms.sourcegitcommit: 95f16f89a46d9dffa8a114f7683816024d65ff02
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53304883"
+ms.lasthandoff: 01/03/2019
+ms.locfileid: "53996072"
 ---
 # <a name="how-to-delete-or-reorder-a-label-for-azure-information-protection"></a>Eliminación o cambio de orden de una etiqueta en Azure Information Protection
 
@@ -33,7 +33,7 @@ Además, si la etiqueta eliminada aplicó la protección, dicha protección no s
 
 - Usar PowerShell para cambiar el nombre de la plantilla o eliminarla.
     
-    Antes de realizar estas acciones, compruebe si otros administradores o servicios están usando la plantilla y la identifican por su nombre actual. Elimine una plantilla solamente si no es necesario abrir documentos o correos que estaban protegidos por la plantilla.
+    Antes de realizar estas acciones, compruebe si otros administradores o servicios están usando la plantilla o la han usado en el pasado. Puede identificar la plantilla por su identificador de plantilla que no cambia, o su nombre (que se puede cambiar). Como práctica recomendada, elimine una plantilla solamente si tiene la seguridad de que los usuarios no tendrán que abrir documentos o correos que estaban protegidos por la plantilla.
 
 Para más información sobre la administración de plantillas de protección, vea [Configuración y administración de plantillas para Azure Information Protection](configure-policy-templates.md).
 

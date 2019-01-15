@@ -2,8 +2,8 @@
 title: Configuración de la API de archivo | Azure RMS
 description: El comportamiento de la API de archivo puede configurarse a través de los valores del Registro.
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 10/11/2017
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.assetid: 930878C2-D2B4-45F1-885F-64927CEBAC1D
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 1323984258b64e9d28142a0209a89d3791ab03dd
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 0b05498730d064dfa2b7fb2183b1a8694c1fbf63
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148654"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54070628"
 ---
 # <a name="file-api-configuration"></a>Configuración de la API de archivo
 
@@ -37,13 +37,13 @@ En las secciones siguientes se describen las claves y los valores de clave que c
 
 ### `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection`
 
-**Tipo**: clave
+**Tipo**: Key
 
 **Descripción**: contiene la configuración general de la API de archivo.
 
 ### `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\<EXT>`
 
-**Tipo**: clave
+**Tipo**: Key
 
 **Descripción**: especifica la información de configuración de una extensión de archivo específica, como TXT, JPG, etc.
 
@@ -60,14 +60,14 @@ Para especificar el comportamiento de protección, establezca el valor **Encrypt
 
 **Descripción**: contiene uno de estos tres valores:
 
-- **Off**: el cifrado está deshabilitado.
+- **Desactivada**: el cifrado está deshabilitado.
 
 > [!Note]
 > Esta configuración no afecta al descifrado. Es posible descifrar cualquier archivo cifrado con la protección nativa o con la protección PFile, siempre y cuando el usuario tenga el derecho **EXTRACT**.
 
-- **Native**: se usa el cifrado nativo. En el caso de los archivos de Office, el archivo cifrado tendrá la misma extensión que el archivo original. Por ejemplo, un archivo con la extensión .docx se cifrará en un archivo con la extensión .docx. En el caso de otros archivos que puedan tener aplicada la protección nativa, se cifrarán en un archivo con una extensión del formato p*zzz*, donde *zzz* es la extensión de archivo original. Por ejemplo, los archivos .txt se cifrarán en un archivo con una extensión .ptxt. A continuación se incluye una lista de extensiones de archivo que pueden tener aplicada la protección nativa.
+- **Nativa**:  se usa el cifrado nativo. En el caso de los archivos de Office, el archivo cifrado tendrá la misma extensión que el archivo original. Por ejemplo, un archivo con la extensión .docx se cifrará en un archivo con la extensión .docx. En el caso de otros archivos que puedan tener aplicada la protección nativa, se cifrarán en un archivo con una extensión del formato p*zzz*, donde *zzz* es la extensión de archivo original. Por ejemplo, los archivos .txt se cifrarán en un archivo con una extensión .ptxt. A continuación se incluye una lista de extensiones de archivo que pueden tener aplicada la protección nativa.
 
-- **PFile**: se usa el cifrado PFile. El archivo cifrado tendrá anexado .pfile a la extensión original. Por ejemplo, después del cifrado, un archivo .txt tendrá una extensión .txt.pfile.
+- **Pfile**: se usa el cifrado PFile. El archivo cifrado tendrá anexado .pfile a la extensión original. Por ejemplo, después del cifrado, un archivo .txt tendrá una extensión .txt.pfile.
 
 
 > [!Note]
@@ -91,19 +91,19 @@ Puede agregarse compatibilidad nativa para cualquier tipo de archivo (extensión
 
 -   Extensiones de archivo: doc, dot, xla, xls, xlt, pps, ppt, docm, docx, dotm, dotx, xlam, xlsb, xlsm, xlsx, xltm, xltx, xps, potm, potx, ppsx, ppsm, pptm, pptx, thmx, vsdx, vsdm, vssx, vssm, vstx y vstm. 
 -   Tipo de protección = nativa (valor predeterminado): sample.docx se cifra en sample.docx.
--   Tipo de protección = PFile: en el caso de los archivos de Office, tiene el mismo efecto que la protección nativa.
--   Off: deshabilita el cifrado.
+-   Tipo de protección = Pfile: en el caso de los archivos de Office, tiene el mismo efecto que la protección nativa.
+-   Desactivado: deshabilita el cifrado.
 
 **Archivos PDF**
 
 -   Tipo de protección = nativa: sample.pdf se cifra y se denomina sample.ppdf.
 -   Tipo de protección = PFile: sample.pdf se cifra y se denomina sample.pdf.pfile.
--   Off: deshabilita el cifrado.
+-   Desactivado: deshabilita el cifrado.
 
 **Todos los demás formatos de archivo**
 
 -   Tipo de protección = PFile: sample.*zzz* se cifra y se denomina sample.*zzz*.pfile, donde *zzz* es la extensión de archivo original.
--   Off: deshabilita el cifrado.
+-   Desactivado: deshabilita el cifrado.
 
 ### <a name="examples"></a>Ejemplos
 
@@ -111,38 +111,38 @@ Las opciones siguientes permiten el cifrado PFile de archivos txt. A los archivo
 
 ```
 HKEY_LOCAL_MACHINE
-   Software
-      Microsoft
-         MSIPC
-            FileProtection
-               txt
-                  Encryption = Pfile
+   Software
+      Microsoft
+         MSIPC
+            FileProtection
+               txt
+                  Encryption = Pfile
 ```
 
 Las opciones siguientes permiten el cifrado PFile de todos los archivos que no sean de Office, excepto los archivos txt. A los archivos de Office se les aplicará la protección nativa (de forma predeterminada), a los archivos txt se les bloqueará la protección y a los demás archivos se les aplicará la protección PFile.
 
 ```
 HKEY_LOCAL_MACHINE
-   Software
-      Microsoft
-         MSIPC
-            FileProtection
-               *
-                  Encryption = Pfile
-               txt
-                  Encryption = Off
+   Software
+      Microsoft
+         MSIPC
+            FileProtection
+               *
+                  Encryption = Pfile
+               txt
+                  Encryption = Off
 ```
 
 Las opciones siguientes deshabilitan el cifrado nativo de archivos docx. A los archivos de Office, excepto los archivos docx, se les aplicará la protección nativa (de forma predeterminada) y a los demás archivos se les bloqueará la protección (de forma predeterminada).
 
 ```
 HKEY_LOCAL_MACHINE
-   Software
-      Microsoft
-         MSIPC
-            FileProtection
-               docx
-                  Encryption = Off
+   Software
+      Microsoft
+         MSIPC
+            FileProtection
+               docx
+                  Encryption = Off
 ```
 
 ## <a name="related-articles"></a>Artículos relacionados

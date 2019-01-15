@@ -2,8 +2,8 @@
 title: Cómo depurar una aplicación con derechos habilitados | Azure RMS
 description: En el siguiente tema se muestra cómo depurar la aplicación y utilizar el registro de eventos de Windows.
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.assetid: 6F6C7651-6A6E-45DD-A0C5-F036F803249B
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: ed627c98238028fc14f977f2ce7475f356ceb889
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: cb77177ecb0c92f3e991e0f6d06a55fa2c332873
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44147379"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54071561"
 ---
 # <a name="how-to-debug-a-rights-enabled-application"></a>Depuración de una aplicación con derechos habilitados
 
@@ -32,21 +32,21 @@ Puede activar el seguimiento de depuración utilizando la siguiente clave del Re
 
 ```
 HKEY_LOCAL_MACHINE
-   SOFTWARE
-      Microsoft
-         MSIPC
-            "Trace" = 00000001
-            Data type
-            dword
+   SOFTWARE
+      Microsoft
+         MSIPC
+            "Trace" = 00000001
+            Data type
+            dword
 ```
 
 ### <a name="application-logging-by-using-the-windows-event-log"></a>Registro de aplicaciones mediante el registro de eventos de Windows
 
 El nombre del registro de eventos es "Microsoft-RMS-MSIPC/Debug". Esto significa que, en el Visor de eventos de Windows, el registro aparece como "Registros de aplicaciones y servicios\\Microsoft\\RMS\\MSIPC\\Debug".
 
-**Nota:** El registro está habilitado de forma predeterminada y establecido en el nivel de detalle 3.
+**Nota:**  El registro está habilitado de forma predeterminada y establecido en el nivel de detalle 3.
 
- 
+ 
 
 Para cambiar la configuración de la característica de registro, puede utilizar la interfaz de usuario del Visor de eventos de Windows o Wevtutil, una herramienta de línea de comandos integrada en Windows.
 
@@ -62,4 +62,4 @@ Por ejemplo, el siguiente comando habilitará el registro de eventos de MSIPC y 
 
 **wevtutil sl Microsoft-RMS-MSIPC/Debug /e:true /l:4**
 
-**Nota:** En el Visor de eventos de Windows Event Viewer, en el menú **Ver**, seleccione **Mostrar registros analíticos y de depuración** para que se muestre el registro MSIPC Debug.
+**Nota:**  En el Visor de eventos de Windows Event Viewer, en el menú **Ver**, seleccione **Mostrar registros analíticos y de depuración** para que se muestre el registro MSIPC Debug.

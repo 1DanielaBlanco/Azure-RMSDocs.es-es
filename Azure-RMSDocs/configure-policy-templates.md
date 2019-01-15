@@ -4,18 +4,18 @@ description: Configure y administre plantillas de administración de derechos de
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/29/2018
+ms.date: 12/28/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 412b84b705d12efd7259066c0fece68e2ab8c099
-ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
+ms.openlocfilehash: 6147a065f6aff31dd40c339699f0dc35f1ebaa82
+ms.sourcegitcommit: b10df82d9f00b3f826bce38beb7b666ce3f56e84
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53173951"
+ms.lasthandoff: 12/28/2018
+ms.locfileid: "53814244"
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>Configuración y administración de plantillas para Azure Information Protection
 
@@ -83,7 +83,7 @@ Antes de editar estas plantillas o convertirlas en etiquetas, asegúrese de que 
 
 - No es posible copiar ni eliminar una plantilla en Azure Portal. Cuando la plantilla se convierte en una etiqueta, puede configurar la etiqueta para que deje de usar la plantilla. Para ello, seleccione **No configurado** en la opción **Establecer permisos para documentos y correos electrónicos que contengan esta etiqueta**. También puede eliminar la etiqueta. Aun así, en ambos casos, la plantilla no se elimina y permanece en estado archivado.
     
-    Para eliminar la plantilla, ahora puede usar el cmdlet [Remove-AadrmTemplate](/powershell/module/aadrm/remove-aadrmtemplate) de PowerShell. También puede usar este cmdlet de PowerShell para las plantillas que no se han convertido en etiquetas. Pero si elimina una plantilla que se ha usado para proteger contenido, dicho contenido ya no se podrá abrir. Elimine plantillas solo si está seguro de que no se han usado para proteger documentos o correos electrónicos en producción. Como medida de precaución, conviene que considere la posibilidad de exportar primero la plantilla como una copia de seguridad mediante el cmdlet [Export-AadrmTemplate](/powershell/module/aadrm/export-aadrmtemplate). 
+    Para eliminar la plantilla, ahora puede usar el cmdlet [Remove-AadrmTemplate](/powershell/module/aadrm/remove-aadrmtemplate) de PowerShell. También puede usar este cmdlet de PowerShell para las plantillas que no se han convertido en etiquetas. Con todo, para asegurar que se pueda abrir contenido protegido anteriormente y usarse como estaba previsto, solemos aconsejar que no se eliminen las plantillas. Como práctica recomendada, elimine plantillas solo si tiene la seguridad de que no se han usado para proteger documentos o correos electrónicos en producción. Como medida de precaución, conviene que considere la posibilidad de exportar primero la plantilla como una copia de seguridad mediante el cmdlet [Export-AadrmTemplate](/powershell/module/aadrm/export-aadrmtemplate). 
 
 - Actualmente, si edita y guarda una plantilla de departamento, se quita la configuración del ámbito. El equivalente de una plantilla con ámbito en la directiva de Azure Information Protection es una [directiva con ámbito](configure-policy-scope.md). Si convierte la plantilla en una etiqueta, puede seleccionar un ámbito existente.
     

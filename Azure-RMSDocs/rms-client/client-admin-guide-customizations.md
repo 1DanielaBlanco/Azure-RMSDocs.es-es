@@ -4,18 +4,18 @@ description: Información sobre cómo personalizar el cliente de Azure Informati
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/13/2018
+ms.date: 01/04/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 2ecb0376ac7d4d4ddd476e76a60053ff408e2bbd
-ms.sourcegitcommit: db24caa96033fd0c7a0fad4e36518a816a570c94
+ms.openlocfilehash: b16dee0a922ce6f3195d192021edbf4966223e30
+ms.sourcegitcommit: 17d2528e801ebf37f3d6f54db920588ef212d34d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53335547"
+ms.lasthandoff: 01/03/2019
+ms.locfileid: "53996951"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Guía del administrador: Configuraciones personalizadas del cliente de Azure Information Protection
 
@@ -122,6 +122,10 @@ Para establecer esta configuración avanzada, especifique las cadenas siguientes
 - Clave: **ReportAnIssueLink**
 
 - Valor: **\<HTTP string>**
+
+Valor de ejemplo para un sitio web: `https://support.contoso.com`
+
+Valor de ejemplo para una dirección de correo electrónico: `mailto:helpdesk@contoso.com`
 
 ## <a name="hide-the-classify-and-protect-menu-option-in-windows-file-explorer"></a>Ocultación de la opción de menú Clasificar y Proteger en el Explorador de archivos de Windows
 
@@ -353,8 +357,7 @@ Para usar comandos de PowerShell para convertir los archivos .ppdf existentes en
     
     - El valor de **RMSTemplateId**. Si este valor tiene **acceso restringido**, significa que un usuario ha protegido el archivo mediante permisos personalizados en lugar de usar la configuración de protección que está configurada para la etiqueta. Si continúa, la configuración de protección de la etiqueta sobrescribirá esos permisos personalizados. Decida si desea continuar o pida al usuario (valor mostrado para **RMSIssuer**) que quite la etiqueta y vuelva a aplicarla, junto con sus permisos personalizados originales.
 
-3. Quite la etiqueta mediante [Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel) con el parámetro *RemoveLabel*. Si usa la [configuración de directiva](../configure-
-4. settings.md) de **Users must provide justification to set a lower classification label, remove a label, or remove protection** (Los usuarios deben proporcionar justificación para establecer una etiqueta de clasificación inferior, quitar una etiqueta o quitar la protección), debe especificar también el parámetro *Justification* con el motivo. Por ejemplo: 
+3. Quite la etiqueta mediante [Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel) con el parámetro *RemoveLabel*. Si va a usar la [configuración de directiva](../configure-policy-settings.md) de **Users must provide justification to set a lower classification label, remove a label, or remove protection** (Los usuarios deben proporcionar justificación para establecer una etiqueta de clasificación inferior, quitar una etiqueta o quitar la protección), debe especificar también el parámetro *Justification* con el motivo. Por ejemplo: 
     
         Set-AIPFileLabel \\Finance\Projectx\sales.ppdf -RemoveLabel -JustificationMessage 'Removing .ppdf protection to replace with .pdf ISO standard'
 

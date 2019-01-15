@@ -2,8 +2,8 @@
 title: Instalación de Linux
 description: Ahora varias versiones de sistemas operativos Linux pueden usar Microsoft Rights Management SDK 4.x.
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.assetid: A348541C-17E0-4024-BF97-84B0099B0E69
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: c403baa17cb4de9ec7932ca5088bbc5e6033d9f6
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 69fdf8e9405415c196cf439e06abe2983afcbf37
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150388"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54070373"
 ---
 # <a name="linux-setup"></a>Instalación de Linux
 
@@ -34,7 +34,7 @@ Ahora varias versiones de sistemas operativos Linux pueden usar Microsoft Rights
 - CentOS 7
 
 También se han compilado correctamente bibliotecas y ejemplos en Windows y OSX, pero no son totalmente compatibles en este momento.
- 
+ 
 ## <a name="how-to-build-and-use"></a>Procedimiento para la creación y el uso
 
 - [Procedimiento para crear aplicaciones de ejemplo y bibliotecas](https://github.com/AzureAD/rms-sdk-for-cpp/wiki/How-to-Build)

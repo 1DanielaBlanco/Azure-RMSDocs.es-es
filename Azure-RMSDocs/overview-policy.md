@@ -4,17 +4,17 @@ description: Descripción de las etiquetas y la configuración de una directiva 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/12/2018
+ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: e66a2c117523eb01089881b8210f12ed2f657ed4
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: 6483600d8ba74a29a54965010441fe10dc309d8e
+ms.sourcegitcommit: b10df82d9f00b3f826bce38beb7b666ce3f56e84
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53304900"
+ms.lasthandoff: 12/28/2018
+ms.locfileid: "53814193"
 ---
 # <a name="overview-of-the-azure-information-protection-policy"></a>Información general de la directiva de Azure Information Protection
 
@@ -42,7 +42,9 @@ Una directiva de Azure Information Protection contiene los siguientes elementos 
 
 - La opción para proporcionar un vínculo de ayuda personalizado para los usuarios.
 
-Azure Information Protection incluye una [directiva predeterminada](configure-policy-default.md), que contiene cinco etiquetas principales. Dos de estas etiquetas contienen subetiquetas para proporcionar subcategorías, cuando sea necesario. Cuando se configura una etiqueta para subetiquetas, los usuarios no pueden seleccionar la principal, sino que deben seleccionar una de las subetiquetas.
+Azure Information Protection incluye una [directiva predeterminada](configure-policy-default.md), que contiene cinco etiquetas principales. Dos de estas etiquetas contienen subetiquetas para proporcionar subcategorías, cuando sea necesario. 
+
+Cuando se configura una etiqueta para subetiquetas, los usuarios no pueden seleccionar la principal, sino que deben seleccionar una de las subetiquetas. En este escenario se admite la etiqueta principal como un contenedor para mostrar solo para el nombre y el color.
 
 Las etiquetas de Azure Information Protection se pueden usar con la gama completa de los datos que una organización normalmente crea y almacena, desde la clasificación más baja de datos personales, a la clasificación más alta de información extremadamente confidencial. 
 

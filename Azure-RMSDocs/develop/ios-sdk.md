@@ -2,8 +2,8 @@
 title: Configuración de iOS y OS X | Azure RMS
 description: Las aplicaciones de iOS y OS X pueden usar RMS SDK 4.2 para habilitar la protección de información integrada en sus aplicaciones mediante el AAD RM.
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.assetid: b31e5b72-e65e-450a-b1b8-d46e81e9fb34
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 39856dc34396e1aa32a73f436da9744583519c86
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 620412b55ca583d8a84cf8d167ba890cea742b7f
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150371"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54070247"
 ---
 # <a name="ios-and-os-x-setup"></a>Programa de instalación de iOS y OS X
 
@@ -25,7 +25,7 @@ Las aplicaciones de iOS y OS X pueden usar Microsoft Rights Management SDK 4.2 p
 
 Este tema sirve de guía por el proceso de configuración del entorno para crear sus propias aplicaciones.
 
-**Nota**  Este SDK no admite iPod Touch.
+**Nota**  Este SDK no admite iPod Touch.
 
 
 -   [Requisitos previos](#prerequisites)
@@ -42,7 +42,7 @@ Se recomienda tener el siguiente software en el sistema de desarrollo:
 
     Xcode está disponible a través de la [Mac App Store](https://developer.apple.com/technologies/mac/).
 
--   El paquete de Microsoft RMS SDK 4.2 para iOS y OS X. Para más información, vea [Introducción](get-started.md).
+-   El paquete de Microsoft RMS SDK 4.2 para iOS y OS X. Para obtener más información, vea [Introducción](get-started.md).
 
     Este SDK se puede usar para desarrollar aplicaciones para iOS 7.0 y OS X 10.8 y versiones posteriores.
 
@@ -83,7 +83,7 @@ Nuestra biblioteca de interfaz de usuario proporciona una interfaz de usuario re
     ![Agregue la agrupación de recursos](../media/iOS-add-resource-bundle-02a.png)
 
 -   Al igual que hizo cuando copió el marco, seleccione el botón de opción **Create groups for any added folders** (Crear grupos para las carpetas agregadas) y desactive la casilla **Copy items into destination group's folder (if needed)** (Copiar elementos en la carpeta del grupo de destino [si es necesario]).
--   El SDK se basa en otros marcos, como: **CoreData**, **MessageUI**, **SystemConfiguration**, **Libresolv** y **Security**. Para agregar estos marcos, navegue a la sección **Linked Frameworks and Libraries** (Marcos y bibliotecas vinculados) del panel **Summary** (Resumen) del destino y expanda esa sección para agregarlos.
+-   El SDK se basa en otros marcos, incluidos: **CoreData**, **MessageUI**, **SystemConfiguration**, **Libresolv** y **Security**. Para agregar estos marcos, navegue a la sección **Linked Frameworks and Libraries** (Marcos y bibliotecas vinculados) del panel **Summary** (Resumen) del destino y expanda esa sección para agregarlos.
 
     Los marcos **UIKit** y **Foundation** son obligatorios y, por lo general, están presentes de forma predeterminada.
 

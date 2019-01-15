@@ -1,9 +1,9 @@
 ---
-title: Rights Management SDK 4.2 - AIP
+title: 'Rights Management SDK 4.2: AIP'
 description: RMS SDK 4.2 es una API simplificada y de próxima generación que ofrece una experiencia de desarrollo ligero de la actualización de sus aplicaciones para dispositivos con tecnología de Rights Management.
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -12,14 +12,14 @@ ms.assetid: 4ee4fa26-b4f7-478f-b360-be6f421c5718
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 12da69e59b45348a113ec878f77a037eed2a8fdd
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 7780f7d540de4a36a53aa430da6625258234f673
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151612"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54071257"
 ---
-# <a name="rights-management-sdk-42"></a>Rights Management SDK 4.2
+# <a name="rights-management-sdk42"></a>Rights Management SDK 4.2
 
 ## <a name="purpose"></a>Finalidad
 
@@ -45,6 +45,6 @@ Esta versión, RMS SDK 4.2, está disponible para los siguientes sistemas operat
 
 [Introducción](get-started.md): para esta versión de RMS SDK 4.2, el enfoque del inicio rápido para una aplicación es a través de guías de configuración del entorno de desarrollo para cada uno de los sistemas operativos y plataformas.
 
-[Términos y guía del desarrollador](core-concepts.md): el enfoque de RMS SDK 4.2 es ayudarle a compilar aplicaciones habilitadas para AD RMS que aprovechan Right Management Services y simplificarle el proceso lo más posible.
+[Términos y guía del desarrollador](core-concepts.md): el enfoque de RMS SDK 4.2 es ayudarle a compilar aplicaciones habilitadas para AD RMS que aprovechan Right Management Services y simplificarle el proceso lo máximo posible.
 
-[Referencia de la API](api-reference-4-2.md): RMS SDK 4.2 admite varios sistemas operativos que se indican en la tabla de contenido siguiente.
+[Referencia de la API](api-reference-4-2.md): RMS SDK 4.2 admite varios sistemas operativos que se indican en la siguiente tabla de contenido.

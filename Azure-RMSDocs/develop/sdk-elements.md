@@ -2,8 +2,8 @@
 title: Archivos del entorno de desarrollo | Azure RMS
 description: En este tema se muestran los archivos del entorno de desarrollo y sus ubicaciones de instalación relativas en su equipo.
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.assetid: B57AC6F3-733C-42A8-AF83-0E15FBF27C99
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 3dffcdddae1ba7522671694cb909c21b4e096c89
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 80993b63a50e4d180429f841698638219f7725a0
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44147770"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54071444"
 ---
 # <a name="development-environment-files"></a>Archivos del entorno de desarrollo
 
@@ -38,7 +38,7 @@ Rights Management Services SDK 2.1 incluye los siguientes archivos, instalados e
 |Ipcsecproc_ssp_isv.dll|\bin\x64|DLL usada internamente, para las aplicaciones x64, por AD RMS Client 2.1 cuando se trabaja en la jerarquía de ISV.|
 |Msipc.h|\inc|Archivo de inclusión principal para RMS SDK 2.1.|
 |Ipcprot.h|\inc|Contiene la interfaz pública exportada por RMS SDK 2.1.|
-|Ipcbase.h|\inc|Contiene tipos básicos y funciones auxiliares exportados por RMS SDK 2.1.|
+|Ipcbase.h|\inc|Contiene tipos básicos y funciones del asistente exportados por RMS SDK 2.1.|
 |Ipcerror.h|\inc|Contiene códigos de error públicos exportados por RMS SDK 2.1.|
 |Ipcfile.h|\inc|Contiene las interfaces de API de archivo exportadas por RMS SDK 2.1.|
 |Msipc.lib|\lib|Biblioteca con la que vincular cuando se usa RMS SDK 2.1 para crear aplicaciones x86.|

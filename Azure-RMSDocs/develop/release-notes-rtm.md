@@ -2,8 +2,8 @@
 title: Notas de la versión
 description: Actualizaciones del SDK por revisión y otra información para desarrolladores.
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 10/18/2017
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.assetid: CE379738-4E1D-42AD-83F4-F89B70456EBB
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 05ac80a9032467fafe09e39941117c6b4c52d439
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 8132fd2afba45402f8f9c835f2d6db69dd8e81f2
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151357"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54071208"
 ---
 # <a name="release-notes"></a>Notas de la versión
 
@@ -63,7 +63,7 @@ Este artículo contiene información importante sobre esta versión y versiones 
 -   Ya es posible realizar el **seguimiento de documentos** gracias a un conjunto de nuevas API. Para más información, vea [Tracking Content](tracking-content.md) (Seguimiento de contenido).
 -   **Tipo de cifrado**: ahora se admite control de nivel de API para la selección del paquete de cifrado. Para más información, vea [Working with encryption](working-with-encryption.md) (Uso de cifrado).
 
-    **Nota**: La marca **IPC\_LI\_DEPRECATED\_ENCRYPTION\_ALGORITHMS** dejará de exponerse en la API. Esto significa que las aplicaciones futuras ya no se compilarán si hacen referencia a esta marca, pero las ya desarrolladas seguirán funcionando dado que respetaremos la marca de forma privada en el código de la API. Todavía será posible beneficiarse de la antigua marca de algoritmos de cifrado: solo es necesario cambiar una marca. Para más información, vea [Working with encryption](working-with-encryption.md) (Uso de cifrado).
+    **Nota:**  La marca **IPC\_LI\_DEPRECATED\_ENCRYPTION\_ALGORITHMS** dejará de exponerse en la API. Esto significa que las aplicaciones futuras ya no se compilarán si hacen referencia a esta marca, pero las ya desarrolladas seguirán funcionando dado que respetaremos la marca de forma privada en el código de la API. Todavía será posible beneficiarse de la antigua marca de algoritmos de cifrado: solo es necesario cambiar una marca. Para más información, vea [Working with encryption](working-with-encryption.md) (Uso de cifrado).
 
 -   Las **aplicaciones en modo de servidor**, que usan [valores del modo de API](https://msdn.microsoft.com/library/hh535236.aspx) de **IPC\_API\_MODE\_SERVER**, ya no necesitan un manifiesto de aplicación. Podrá probar la aplicación en un servidor RMS de producción y no será necesario obtener una licencia de producción cuando pase al entorno de producción. Para más información sobre las aplicaciones de modo de servidor, vea [Application types](application-types.md) (Tipos de aplicación).
 -   El **registro** ahora se implementa a través de archivo y de métodos de seguimiento de eventos para Windows.
@@ -93,7 +93,7 @@ El componente de la API de archivo del SDK se ha ampliado y ofrece las siguiente
 
     Funciones agregadas en esta versión:
 
-    **Nota**: Para las extensiones de API de archivo, se han agregado más tipos y estructuras de datos compatibles aparte de los aquí mencionados. Todos los artículos que se han actualizado para esta versión están marcados como **preliminar y sujeto a cambios**.
+    **Nota:** Para las extensiones de API de archivo, se han agregado más tipos y estructuras de datos compatibles aparte de los aquí mencionados. Todos los artículos que se han actualizado para esta versión están marcados como **preliminar y sujeto a cambios**.
 
     -   [IpcfOpenFileOnHandle](https://msdn.microsoft.com/library/dn771751.aspx)
     -   [IpcfOpenFileOnILockBytes](https://msdn.microsoft.com/library/dn771752.aspx)
@@ -122,9 +122,9 @@ El componente de la API de archivo del SDK se ha ampliado y ofrece las siguiente
 
 -   **Las máquinas con Windows 7 SP1 y Windows Server 2008 R2 SP1** sin la actualización [KB2533623](https://support.microsoft.com/kb/2533623), pueden generar el siguiente error al proteger un archivo de Office: "El parámetro es incorrecto. Código de error 0x80070057". Si aparece este error, instale la actualización y vuelva a intentarlo. Si todavía ve errores, póngase en contacto con el alias RMS SDK Beta Feedback <rmcstbeta@microsoft.com>.
 
-    **Nota**  A partir de la versión de abril de 2015, se agrega una comprobación al proceso de instalación de este KB.
+    **Nota**  A partir de la versión de abril de 2015, se agrega una comprobación al proceso de instalación de este KB.
 
-     
+     
 
 -   **Integración de la API de archivo**
 
@@ -142,11 +142,11 @@ El componente de la API de archivo del SDK se ha ampliado y ofrece las siguiente
 
 -   **Problema**: al crear una licencia desde cero, se deben conceder explícitamente derechos de propiedad.
 
-    **Solución**: La aplicación debe agregar explícitamente derechos **Owner** al propietario de la licencia cuando se crea una licencia desde cero con [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx). Para más información, vea [Add explicit owner rights](add-explicit-owner-rights.md) (Incorporación de derechos de propiedad explícitos).
+    **Solución**: la aplicación debe agregar explícitamente derechos **Owner** al propietario de la licencia cuando se crea una licencia desde cero con [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx). Para más información, vea [Add explicit owner rights](add-explicit-owner-rights.md) (Incorporación de derechos de propiedad explícitos).
 
--   **Problema**: Si una aplicación llama a [IpcProtectWindow](https://msdn.microsoft.com/library/hh535268.aspx) o [IpcUnprotectWindow](https://msdn.microsoft.com/library/hh535272.aspx) dos veces en la misma ventana y con el mismo identificador, RMS SDK 2.1 devolverá un error en **HRESULT**.
+-   **Problema**: si una aplicación llama a [IpcProtectWindow](https://msdn.microsoft.com/library/hh535268.aspx) o [IpcUnprotectWindow](https://msdn.microsoft.com/library/hh535272.aspx) dos veces en la misma ventana y con el mismo identificador, RMS SDK 2.1 devolverá un error en **HRESULT**.
 
-    **Solución**: Si quiere instrucciones específicas sobre este problema, consulte la sección Comentarios de [IpcProtectWindow](https://msdn.microsoft.com/library/hh535268.aspx) e [IpcUnprotectWindow](https://msdn.microsoft.com/library/hh535272.aspx).
+    **Solución**: si quiere instrucciones específicas sobre este problema, vea la sección Comentarios de [IpcProtectWindow](https://msdn.microsoft.com/library/hh535268.aspx) e [IpcUnprotectWindow](https://msdn.microsoft.com/library/hh535272.aspx).
 
 -   **Problema**: al compilar para varias arquitecturas, debe usar esta guía.
 

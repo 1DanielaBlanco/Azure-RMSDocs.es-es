@@ -2,8 +2,8 @@
 title: Cómo habilitar la aplicación de servicio para que funcione con RMS basado en la nube | Azure RMS
 description: En este tema se describe cómo configurar la aplicación de servicio para que use Azure Rights Management.
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -12,18 +12,18 @@ ms.assetid: EA1457D1-282F-4CF3-A23C-46793D2C2F32
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 7f9965628cce150c8bb53e02b206c4291677f8bc
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: d495abaec5bd32eb7082e8c1774011f9b765448b
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023484"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54070250"
 ---
 # <a name="how-to-enable-your-service-application-to-work-with-cloud-based-rms"></a>Habilitación de la aplicación de servicio para que funcione con RMS basado en la nube
 
 En este tema se describe cómo configurar la aplicación de servicio para que use Azure Rights Management. Para más información, consulte [Introducción a Azure Rights Management](https://technet.microsoft.com/library/jj585016.aspx).
 
-**Importante**   Para usar la aplicación de servicio de Rights Management Services SDK 2.1 con Azure RMS, debe crear sus propios inquilinos. Para más información, consulte [Requisitos de Azure RMS: Suscripciones en la nube que son compatibles con Azure RMS](../requirements.md)
+**Importante**   Para usar la aplicación de servicio de Rights Management Services SDK 2.1 con Azure RMS, debe crear sus propios inquilinos. Para más información, vea [Requirements for Azure Information Protection: Cloud subscriptions that support Azure RMS](../requirements.md) (Requisitos de Azure Information Protection: suscripciones de nube compatibles con Azure RMS)
 
 ## <a name="prerequisites"></a>Requisitos previos
 

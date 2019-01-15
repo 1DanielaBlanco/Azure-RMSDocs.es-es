@@ -2,8 +2,8 @@
 title: Desarrollo de la aplicación - AIP
 description: Una guía que le lleva por la implementación básica de consola de la protección de documentos con AIP.
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 03/13/2017
 ms.topic: conceptual
@@ -12,21 +12,21 @@ ms.assetid: 396A2C19-3A00-4E9A-9088-198A48B15289
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: ef75dcff64d5ad2adaf2ffc9938490a65ac9bee9
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 6f0fdcaf6d21047f28c470dc896a1cd64fee752d
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148741"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54071308"
 ---
 # <a name="developing-your-application"></a>Desarrollo de la aplicación
 
 En este ejemplo, va a crear una aplicación de consola sencilla que interactúa con el servicio Azure Information Protection (AIP).  Se tomará como entrada la ruta de acceso del documento que se va a proteger y luego se protegerá con una directiva ad-hoc o una plantilla de Azure. A continuación, la aplicación aplicará las directivas correctas de acuerdo con las entradas y se creará un documento con información protegida. El código de ejemplo que se usará es la [aplicación Azure IP Test](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/AzureIP_Test), que se encuentra en Github.
 
 ## <a name="sample-app-prerequisites"></a>Requisitos previos de la aplicación de ejemplo
-- **Sistema operativo**: Windows 10, Windows 8, Windows 7, Windows Server 2008, Windows Server 2008 R2 o Windows Server 2012.
-- **Lenguaje de programación**: C# (.NET Framework 3.0 y versiones posteriores).
-- **Entorno de desarrollo**: Visual Studio 2015 (y versiones posteriores).
+- **Sistema operativo**: Windows 10, Windows 8, Windows 7, Windows Server 2008, Windows Server 2008 R2 o Windows Server 2012
+- **Lenguaje de programación**: C# (.NET Framework 3.0 y versiones posteriores)
+- **Entorno de desarrollo**: Visual Studio 2015 (y versiones posterior)
 
 ## <a name="setting-up-your-azure-configuration"></a>Establecimiento de la configuración de Azure
 

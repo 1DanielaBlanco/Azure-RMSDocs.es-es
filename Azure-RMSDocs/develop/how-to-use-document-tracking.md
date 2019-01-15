@@ -2,8 +2,8 @@
 title: Cómo usar el seguimiento de documentos | Azure RMS
 description: El uso de la característica de seguimiento de documentos requiere algunos conocimientos sencillos sobre la administración de los metadatos asociados y el registro en el servicio.
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -12,14 +12,14 @@ ms.assetid: 70E10936-7953-49B0-B0DC-A5E7C4772E60
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 1f9d929cc10f78bbdb98ac47083d8ff9d9d8136c
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 7415e1408c5e3c3c782506a9ce25b4b8d90403f2
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151422"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54071852"
 ---
-# <a name="how-to-use-document-tracking"></a>Uso del seguimiento de documentos
+# <a name="how-to-use-document-tracking"></a>Procedimiento para: Usar el seguimiento de documentos
 
 El uso de la característica de seguimiento de documentos requiere algunos conocimientos sencillos sobre la administración de los metadatos asociados y el registro en el servicio.
 
@@ -44,9 +44,9 @@ Elija el tipo de directiva, que puede ser plantilla o ad hoc:
   - Android:  [PolicyDescriptor.setLicenseMetadata](https://msdn.microsoft.com/library/mt573698.aspx)
   - iOS: [MSPolicyDescriptor.licenseMetadata](https://msdn.microsoft.com/library/mt573693.aspx).
 
-    **Nota**: solo se puede obtener acceso al objeto license metadata directamente durante el proceso de configuración del seguimiento de documentos para la directiva de usuario determinada. Una vez creado el objeto de directiva de usuario, no se puede acceder a los metadatos de la licencia asociados; es decir, el cambio de los valores de los metadatos de licencia no tiene ningún efecto.
+    **Nota:**  solo se puede obtener acceso al objeto license metadata directamente durante el proceso de configuración del seguimiento de documentos para la directiva de usuario determinada. Una vez creado el objeto de directiva de usuario, no se puede acceder a los metadatos de la licencia asociados; es decir, el cambio de los valores de los metadatos de licencia no tiene ningún efecto.
 
-     
+     
 
 -   Por último, llame al método de registro de la plataforma para el seguimiento de documentos.
   - Android: [UserPolicy.registerForDocTracking asynchronous](https://msdn.microsoft.com/library/mt573699.aspx) o [UserPolicy.registerForDocTracking synchronous](https://msdn.microsoft.com/library/mt631387.aspx)

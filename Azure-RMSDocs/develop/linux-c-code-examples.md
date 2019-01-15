@@ -2,8 +2,8 @@
 title: Ejemplos de código de Linux | Azure RMS
 description: En este tema se presentan escenarios importantes y elementos de código para la versión Linux de RMS SDK.
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.assetid: 0F7714CA-1D3E-4846-B187-739825B7DE26
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 6888e6a8b131c116ff4b6f8f2411ad5cb2baaf6f
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 81177bcafa1595f27dd0bb1120c3ddd98b15b36f
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149504"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54071291"
 ---
 # <a name="linux-code-examples"></a>Ejemplos de código de Linux
 
@@ -25,7 +25,7 @@ En este tema se presentan escenarios importantes y elementos de código para la 
 
 Los siguientes fragmentos de código pertenecen a las aplicaciones de ejemplo *rms\_sample* y *rmsauth\_sample*. Para más información, vea [samples](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples) (ejemplos) en el repositorio de GitHub.
 
-## <a name="scenario-access-protection-policy-information-from-a-protected-file"></a>Escenario: Acceder a información de la directiva de protección desde un archivo protegido
+## <a name="scenario-access-protection-policy-information-from-a-protected-file"></a>Escenario: Acceso a información de la directiva de protección desde un archivo protegido
 
 **Abre y lee un archivo protegido por RMS**
 **Origen**: [rms\_sample/mainwindow.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
@@ -98,7 +98,7 @@ Los siguientes fragmentos de código pertenecen a las aplicaciones de ejemplo *r
 **Crear un flujo de archivos protegidos**
 **Origen**: [rms\_sample/pfileconverter.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
 
-**Descripción**: este método crea un flujo de archivos protegidos desde el flujo base pasado a través del método SDK (*ProtectedFileStream::Aquire*) que, después, se devuelve al llamador.
+**Descripción**: este método crea un flujo de archivos protegidos desde el flujo base pasado a través del método SDK (*ProtectedFileStream::Aquire*) que después se devuelve al llamador.
 
 **C++**:
 
@@ -213,7 +213,7 @@ Los siguientes fragmentos de código pertenecen a las aplicaciones de ejemplo *r
 **Protege un archivo con una directiva creada a partir de una plantilla**
 **Origen**: [rms\_sample/pfileconverter.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
 
-**Descripción**: se captura una lista de plantillas asociadas con el usuario y, después, se usa la plantilla seleccionada para crear una directiva que sirve para proteger el archivo.
+**Descripción**: se captura una lista de plantillas asociadas con el usuario y después se usa la plantilla seleccionada para crear una directiva que sirve para proteger el archivo.
 
 **C++**:
 
@@ -246,7 +246,7 @@ Los siguientes fragmentos de código pertenecen a las aplicaciones de ejemplo *r
 **Protege un archivo con una directiva determinada**
 **Origen**: [rms\_sample/pfileconverter.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
 
-**Descripción**: crear un flujo de archivos protegidos mediante la directiva especificada y luego proteger el archivo.
+**Descripción**: crea un flujo de archivos protegidos mediante la directiva especificada y luego protege el archivo.
 
 **C++**:
 
@@ -285,7 +285,7 @@ Los siguientes fragmentos de código pertenecen a las aplicaciones de ejemplo *r
     
 
 
-## <a name="scenario-protect-a-file-using-custom-protection"></a>Escenario: Proteger un archivo con protección personalizada
+## <a name="scenario-protect-a-file-using-custom-protection"></a>Escenario: Protección de un archivo con protección personalizada
 
 **Protege un archivo con protección personalizada**
 **Origen**: [rms\_sample/mainwindow.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
@@ -373,7 +373,7 @@ Los siguientes fragmentos de código pertenecen a las aplicaciones de ejemplo *r
 **Crea una directiva de protección con unos derechos seleccionados por el usuario determinados**
 **Origen**: [rms\_sample/pfileconverter.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
 
-**Descripción**: crear un descriptor de directiva y rellenarlo con la información de derechos del usuario. Después, usar el descriptor de directiva para crear una directiva de usuario. Esta directiva se usa para proteger el archivo seleccionado mediante una llamada a *ConvertToPFileUsingPolicy* (esto se describe en una sección anterior de este tema).
+**Descripción**: crea un descriptor de directiva y lo rellena con la información de derechos del usuario. Después, usa el descriptor de directiva para crear una directiva de usuario. Esta directiva se usa para proteger el archivo seleccionado mediante una llamada a *ConvertToPFileUsingPolicy* (esto se describe en una sección anterior de este tema).
 
 **C++**:
 
@@ -511,7 +511,7 @@ Descripción: se puede establecer la ruta de acceso de caché o usar el valor pr
     auto FileCachePtr = std::make_shared< rmsauth::FileCache>();
 
 
-**Paso 2**: cree el objeto **rmsauth::AuthenticationContext** Descripción: especifique el *URI de autoridad* de Azure y el objeto *FileCache*.
+**Paso 2**: cree el objeto **rmsauth::AuthenticationContext**. Descripción: especifique el *URI de autoridad* de Azure y el objeto *FileCache*.
 
 **C++**:
 
@@ -539,7 +539,7 @@ Descripción: se puede establecer la ruta de acceso de caché o usar el valor pr
                 std::string(“john.smith@msopentechtest01.onmicrosoft.com”));
 
 
-**Paso 4**: obtenga el token de acceso de los resultados Descripción: llamar al método **result-> accessToken()**
+**Paso 4**: obtenga el token de acceso de los resultados. Descripción: llame al método **result -> accessToken()**.
 
 **Nota**  Cualquiera de los métodos de la biblioteca de autenticación puede generar **rmsauth::Exception**.
 
@@ -547,14 +547,14 @@ Descripción: se puede establecer la ruta de acceso de caché o usar el valor pr
 **Adquirir el token de autenticación de oAuth2 sin la interfaz de usuario**
 **Origen**: [rmsauth\_sample/mainwindow.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rmsauth_sample)
 
-**Paso 1**: cree un punto compartido del objeto **rmsauth::FileCache** Descripción: se puede establecer la ruta de acceso de caché o usar el valor predeterminado
+**Paso 1**: cree un punto compartido del objeto **rmsauth::FileCache**. Descripción: se puede establecer la ruta de acceso de caché o usar el valor predeterminado.
 
 **C++**:
 
     auto FileCachePtr = std::make_shared< rmsauth::FileCache>();
 
 
-**Paso 2**: cree el objeto **UserCredential** Descripción: especifique las credenciales de *inicio de sesión de usuario* y *contraseña*
+**Paso 2**: cree el objeto **UserCredential**. Descripción: especifique las credenciales de *inicio de sesión de usuario* y *contraseña*.
 
 **C++**:
 
@@ -562,7 +562,7 @@ Descripción: se puede establecer la ruta de acceso de caché o usar el valor pr
                                                  "SomePass");
 
 
-**Paso 3**: cree el objeto **rmsauth::AuthenticationContext** Descripción: especifique el *URI* de autoridad de Azure y el objeto *FileCache*
+**Paso 3**: cree el objeto **rmsauth::AuthenticationContext**. Descripción: especifique el *URI* de autoridad de Azure y el objeto *FileCache*.
 
 **C++**:
 
@@ -572,7 +572,7 @@ Descripción: se puede establecer la ruta de acceso de caché o usar el valor pr
                         FileCachePtr);
 
 
-**Paso 4**: llame al método **aquireToken** del objeto **authContext** y especifique los parámetros siguientes:
+**Paso 4**: llame al método **aquireToken** del objeto **authContext** y especifique los siguientes parámetros:
 -   *Recurso solicitado*: recurso protegido al que quiere acceder.
 -   *Identificador único del cliente*: usualmente un GUID.
 -   *Credenciales de usuario*: pase el objeto creado.
@@ -585,6 +585,6 @@ Descripción: se puede establecer la ruta de acceso de caché o usar el valor pr
                 userCred);
 
 
-**Paso 5**: obtenga el token de acceso de los resultados Descripción: llamar al método **result-> accessToken()**
+**Paso 5**: obtenga el token de acceso de los resultados. Descripción: llame al método **result -> accessToken()**.
 
 **Nota**  Cualquiera de los métodos de la biblioteca de autenticación puede generar **rmsauth::Exception**.

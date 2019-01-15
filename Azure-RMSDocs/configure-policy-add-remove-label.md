@@ -4,22 +4,24 @@ description: Agregar o quitar una etiqueta de Azure Information Protection a o d
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/12/2018
+ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 0546cc11-67a5-4194-8c54-f3ac8ce9ebe1
-ms.openlocfilehash: 367426324af487cbdf0ddaac53eb86aa89c168b7
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: 154b8d5b61169208cdc01a2445be918ea6e2f77b
+ms.sourcegitcommit: b10df82d9f00b3f826bce38beb7b666ce3f56e84
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53304866"
+ms.lasthandoff: 12/28/2018
+ms.locfileid: "53814210"
 ---
 # <a name="add-or-remove-a-label-to-or-from-an-azure-information-protection-policy"></a>Agregar o quitar una etiqueta a o desde una directiva de Azure Information Protection
 
 >*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
-Después de crear una etiqueta de Azure Information Protection, puede agregarla a una directiva para que esté disponible para los usuarios. Si la etiqueta es para todos los usuarios, agregue la etiqueta a la directiva global. Si la etiqueta es para un subconjunto de usuarios, agregue la etiqueta a una directiva de ámbito. Actualmente, se puede agregar una etiqueta solo con una directiva. Para agregar una subetiqueta, la etiqueta principal debe estar en la misma directiva o en la directiva global.
+Después de crear una etiqueta de Azure Information Protection, puede agregarla a una directiva para que esté disponible para los usuarios. Si la etiqueta es para todos los usuarios, agregue la etiqueta a la directiva global. Si la etiqueta es para un subconjunto de usuarios, agregue la etiqueta a una directiva de ámbito. Se puede agregar una etiqueta solo a una directiva. 
+
+Para agregar una subetiqueta, la etiqueta principal debe estar en la misma directiva o en la directiva global. Al agregar una subetiqueta, no se hereda la configuración de la etiqueta principal. Para los usuarios a los que se les asigna la subetiqueta en su directiva, se admite la etiqueta principal solo como un contenedor para mostrar el nombre y el color. En este escenario, no se admiten otras opciones de configuración en la etiqueta principal para marcas visuales, protección y condiciones. Aunque todavía puede configurarlos, esos valores en la etiqueta principal solo son compatibles con los usuarios que tienen la etiqueta principal en su directiva sin la subetiqueta.
 
 Para las etiquetas que ya están en una directiva, puede quitarlas de la directiva. Esta acción no elimina la etiqueta. Sigue estando disponible para su uso en otra directiva.
 
@@ -56,5 +58,4 @@ Si tiene que crear una directiva de ámbito para que la etiqueta se aplique a un
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Para más información sobre cómo configurar la directiva de Azure Information Protection, use los vínculos de la sección [Configuring your organization's policy](configure-policy.md#configuring-your-organizations-policy) (Configuración de la directiva de la organización).  
-
+Para más información sobre cómo configurar la directiva de Azure Information Protection, use los vínculos de la sección [Configuring your organization's policy](configure-policy.md#configuring-your-organizations-policy) (Configuración de la directiva de la organización).

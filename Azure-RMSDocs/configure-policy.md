@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 6c6c2be34250cca486004a0ed1b1fcd8fddfce35
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 6afbf2e95f6e9d21d1bfa9c4c05df288accf716d
+ms.sourcegitcommit: f13c6db055c1fc69cf92e47609465270a42bbdac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023743"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54085082"
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>Configuración de la directiva de Azure Information Protection
 
@@ -37,15 +37,15 @@ Azure Information Protection admite distintos niveles de suscripciones:
 
 - Azure Information Protection P1: compatibilidad con la mayoría de las características de clasificación, etiquetado y protección, pero no con la clasificación automática o HYOK.
 
-- Office 365 que incluye el servicio de Azure Rights Management: compatibilidad con la protección, pero no con la clasificación ni el etiquetado.
+- Office 365 que incluye el servicio Azure Rights Management: Compatibilidad con protección pero no con clasificación y etiquetado.
 
 Las opciones que requieren una suscripción para Azure Information Protection P2 se identifican en el portal.
 
 Si la organización tiene una combinación de suscripciones, usted es el responsable de asegurarse de que los usuarios no utilicen las características para las que sus cuentas no tienen licencia de uso. El cliente de Azure Information Protection no lleva a cabo la comprobación de licencias ni el cumplimiento. Cuando configure opciones para las que no todos los usuarios tienen una licencia, utilice directivas con ámbito o una configuración del Registro para asegurarse de que la organización cumple con las licencias:
 
-- **Cuando la organización tiene una combinación de licencias de Azure Information Protection P1 y Azure Information Protection P2**: para los usuarios que tienen una licencia P2, cree y use una o varias [directivas con ámbito](configure-policy-scope.md) cuando configure opciones que requieren una licencia de Azure Information Protection P2. Asegúrese de que la directiva global no contiene opciones que requieren una licencia de Azure Information Protection P2.
+- **Cuando su organización tiene una combinación de licencias de Azure Information Protection P1 y Azure Information Protection P2**: Para los usuarios que tienen una licencia P2, cree y use una o varias [directivas con ámbito](configure-policy-scope.md) al configurar las opciones que requieren una licencia de Azure Information Protection P2. Asegúrese de que la directiva global no contiene opciones que requieren una licencia de Azure Information Protection P2.
 
-- **Si la organización tiene una suscripción para Azure Information Protection pero algunos usuarios solo tienen una licencia para Office 365 que incluye el servicio de Azure Rights Management**: para los usuarios que no tiene una licencia de Azure Information Protection, edite el Registro en sus equipos para que no descarguen la directiva de Azure Information Protection. Para obtener instrucciones, consulte la guía de administración para la personalización siguiente: [Enforce protection-only mode when your organization has a mix of licenses](./rms-client/client-admin-guide-customizations.md#enforce-protection-only-mode-when-your-organization-has-a-mix-of-licenses) (Exigencia del modo de solo protección cuando la organización tiene una combinación de licencias).
+- **Cuando su organización tiene una suscripción de Azure Information Protection pero algunos usuarios solo tienen una licencia para Office 365 que incluye el servicio Azure Rights Management**: Para los usuarios que no tienen una licencia para Azure Information Protection, edite el registro en sus equipos para que no descarguen la directiva de Azure Information Protection. Para obtener instrucciones, vea la siguiente personalización en la guía del administrador: [Exigencia del modo de solo protección cuando la organización tiene una combinación de licencias](./rms-client/client-admin-guide-customizations.md#enforce-protection-only-mode-when-your-organization-has-a-mix-of-licenses).
 
 Para más información sobre las suscripciones, consulte [¿Qué suscripción necesito para Azure Information Protection y qué características se incluyen?](faqs.md#what-subscription-do-i-need-for-azure-information-protection-and-what-features-are-included)
 
@@ -85,9 +85,9 @@ La próxima vez que acceda a la hoja de **Azure Information Protection**, se sel
 
 ## <a name="how-to-configure-the-azure-information-protection-policy"></a>Para configurar la directiva de Azure Information Protection
 
-1. Asegúrese de que ha iniciado sesión en Azure Portal con uno de estos roles administrativos: administrador de Information Protection, administrador de seguridad o administrador global. Vaya a la [sección anterior](#signing-in-to-the-azure-portal) para obtener más información sobre estos roles administrativos.
+1. Asegúrese de que ha iniciado sesión en Azure Portal con uno de estos roles administrativos: Administrador Information Protection, Administrador de seguridad o Administrador global. Vaya a la [sección anterior](#signing-in-to-the-azure-portal) para obtener más información sobre estos roles administrativos.
 
-2. Si es necesario, vaya a la hoja **Azure Information Protection**. Por ejemplo, en el menú del concentrador, haga clic en **Todos los servicios** y comience a escribir **Information Protection** en el cuadro Filtro. De los resultados, seleccione **Azure Information Protection**. 
+2. Si es necesario, vaya a la hoja **Azure Information Protection**: Por ejemplo, en el menú del concentrador, haga clic en **Todos los servicios** y comience a escribir **Information Protection** en el cuadro Filtro. De los resultados, seleccione **Azure Information Protection**. 
     
     La hoja **Azure Information Protection: etiquetas** se abre automáticamente para que se puedan ver y editar las etiquetas disponibles. Las etiquetas pueden estar disponibles para todos los usuarios, usuarios seleccionados o ningún usuario mediante la adición o eliminación de una directiva.
 
@@ -148,7 +148,7 @@ Use la siguiente información como ayuda para configurar la directiva de Azure I
 
 Para obtener ejemplos de cómo personalizar la directiva de Azure Information Protection y ver el comportamiento resultante para los usuarios, pruebe los siguientes tutoriales:
 
-- [Edit the Azure Information Protection policy and create a new label and create a new label](infoprotect-quick-start-tutorial.md) (Edición de la directiva de Azure Information Protection y creación de una nueva etiqueta)
+- [Edición de la directiva de Azure Information Protection y creación de una nueva etiqueta](infoprotect-quick-start-tutorial.md)
 
 - [Configure Azure Information Protection policy settings that work together](infoprotect-settings-tutorial.md) (Configuración de los parámetros de la directiva de Azure Information Protection que funcionan en conjunto)
 

@@ -2,21 +2,21 @@
 title: Renovación de la clave simétrica de Azure Information Protection
 description: En este artículo se describe el proceso de renovación de una clave simétrica en Azure Information Protection.
 keywords: ''
-author: lleonard-msft
+author: bryanla
 manager: mbaldwin
-ms.author: alleonar
+ms.author: bryanla
 ms.date: 03/27/2017
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: a0b8c8f0-6ed5-48bb-8155-ac4f319ec178
-ms.openlocfilehash: 3c9af3b0ab1fc810e85a08b62980b8d275a678c1
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 7d0a6bc4c99108bff009846952e2aa569340531b
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44147192"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54071359"
 ---
-# <a name="how-to-renew-the-symmetric-key-in-azure-information-protection"></a>Renovación de la clave simétrica de Azure Information Protection
+# <a name="how-to-renew-the-symmetric-key-in-azure-information-protection"></a>Instrucciones: Renovación de la clave simétrica de Azure Information Protection
 
 Una **clave simétrica** es un secreto que cifra y descifra un mensaje en criptografía de clave simétrica.  
 

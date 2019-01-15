@@ -4,19 +4,19 @@ description: Cómo usar los informes centrales para realizar el seguimiento de l
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/08/2018
+ms.date: 12/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.assetid: b2da2cdc-74fd-4bfb-b3c2-2a3a59a6bf2e
 ms.reviewer: lilukov
 ms.suite: ems
-ms.openlocfilehash: 58ea955deef9341ec80b516b89feec609389b9ad
-ms.sourcegitcommit: 4caf3aa13506554928c5fda38994301ddcbdfb41
+ms.openlocfilehash: 0c2309fb635a05f6b0c836b7d4caf04d1c17a23a
+ms.sourcegitcommit: 6651546fa69538e2099b5c2b92ab0902d568a96a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068816"
+ms.lasthandoff: 12/31/2018
+ms.locfileid: "53815129"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Informes centrales para Azure Information Protection
 
@@ -101,6 +101,11 @@ Para generar estos informes, los puntos de conexión envían los siguientes tipo
 
 Esta información se almacena en un área de trabajo de Azure Log Analytics de su organización y que pueden ver los usuarios que tienen derechos de acceso a esta área de trabajo. Para obtener información acerca de cómo configurar el acceso al área de trabajo, vea la sección [Administración de cuentas y usuarios](/azure/log-analytics/log-analytics-manage-access?toc=/azure/azure-monitor#manage-accounts-and-users) de la documentación de Azure.
 
+> [!NOTE]
+> El área de trabajo de Azure Log Analytics para Azure Information Protection incluye una casilla para las coincidencias de contenido del documento. Cuando se selecciona esta casilla, también se recopilan los datos reales que se identifican mediante los tipos de información confidencial o sus condiciones personalizadas. Por ejemplo, esto puede incluir números de tarjeta de crédito que se encuentran, así como números de la seguridad social, números de pasaportes y números de cuentas bancarias. Si no desea recopilar estos datos, no seleccione esta casilla.
+>
+> Actualmente, esta información no se muestra en los informes pero puede verse y recuperarse con consultas.
+
 ## <a name="prerequisites-for-azure-information-protection-analytics"></a>Requisitos previos de análisis de Azure Information Protection
 Para ver los informes de Azure Information Protection y crear los suyos propios, asegúrese de que se hayan satisfecho los siguientes requisitos previos.
 
@@ -124,7 +129,7 @@ Para ver los informes de Azure Information Protection y crear los suyos propios,
     
     - Para usar un área de trabajo de Log Analytics existente: seleccione el área de trabajo de la lista.
 
-Si necesita ayuda para crear el área de trabajo de Log Analytics, consulte [Creación de un área de trabajo de Log Analytics en Azure Portal](https://docs.microsoft.com/azure/log-analytics/log-analytics-quick-create-workspace).
+Si necesita ayuda para crear el área de trabajo de Log Analytics, vea [Creación de un área de trabajo de Log Analytics en Azure Portal](https://docs.microsoft.com/azure/log-analytics/log-analytics-quick-create-workspace).
 
 Cuando esté configurada el área de trabajo, estará listo para ver los informes.
 
@@ -141,6 +146,9 @@ En la hoja Azure Information Protection, busque las opciones de menú **Paneles*
     Este informe tiene una opción **Columnas**, que le permite mostrar más información de actividad que la visualización predeterminada.
 
 - **Detección de datos (versión preliminar)**: use este informe para ver información sobre los archivos encontrados por los analizadores o ATP de Windows Defender.
+
+> [!NOTE]
+> Actualmente hay un problema conocido que muestra signos de interrogación (**?**) en rutas de acceso y nombres de archivo en lugar de caracteres no ASCII cuando la configuración regional del sistema operativo de envío es inglés.
 
 ## <a name="how-to-modify-the-reports"></a>Modificación de los informes
 

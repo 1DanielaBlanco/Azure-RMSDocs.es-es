@@ -2,8 +2,8 @@
 title: Procedimiento para&#58; habilitar el registro de rendimiento y errores | Azure RMS
 description: El SDK 4.2 de Microsoft Rights Management administra la carga de registro de rendimiento y diagnóstico mediante una única propiedad de dispositivo.
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -12,14 +12,14 @@ ms.assetid: F5AD3826-2292-4A25-AF5C-D17D083F5742
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 4dece185bdbfd83d8ee98d815ead5545ca007754
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 5b454ea2917fc5807326493fdf303e508bda7f0f
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44147362"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54071818"
 ---
-# <a name="how-to-enable-error-and-performance-logging"></a>Procedimiento para habilitar el registro de rendimiento y errores
+# <a name="how-to-enable-error-and-performance-logging"></a>Procedimiento para: Habilitar el registro de rendimiento y errores
 El SDK 4.2 de Microsoft Rights Management administra la carga de registro de rendimiento y diagnóstico mediante una única propiedad de dispositivo.
 
 ## <a name="overview"></a>Introducción ##
@@ -79,7 +79,7 @@ Establecer el control de nivel de registro
 Obtener el valor de control de nivel de registro
 
     [[NSUserDefaults standardUserDefaults] boolForKey:@&quot;IpcLogLevel&quot;];
- 
+ 
 
 ## <a name="windows"></a>Windows ##
 Habilitar el registro automático

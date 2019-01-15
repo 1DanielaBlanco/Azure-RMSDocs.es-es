@@ -2,8 +2,8 @@
 title: Configuración de Visual Studio | Azure RMS
 description: Instrucciones sobre cómo configurar un proyecto de Visual Studio para usar RMS SDK 2.1.
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.assetid: 396A2C19-3A00-4E9A-9088-198A48B15289
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 0713bbc51b90e95d93917f7c43c3401a7cbe8ef2
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: f26400ba1230ef1b274fa04120c22995d2f6620c
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151136"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54071495"
 ---
 # <a name="configure-visual-studio"></a>Configurar Visual Studio
 
@@ -29,7 +29,7 @@ Este tema contiene instrucciones sobre cómo configurar un proyecto de Visual St
 
 **Instrucciones**
 
-### <a name="step-1-configure-a-visual-studio-project-to-use-rms-sdk-21"></a>Paso 1: Configurar un proyecto de Visual Studio para usar RMS SDK 2.1
+### <a name="step-1-configure-a-visual-studio-project-to-use-rmssdk21"></a>Paso 1: configuración un proyecto de Visual Studio para usar RMS SDK 2.1
 
 Estas instrucciones son específicas de Microsoft Visual Studio 2010. Si usa una versión diferente de Microsoft Visual Studio, los cuadros de diálogo de configuración pueden aparecer ligeramente diferentes.
 
@@ -58,7 +58,7 @@ Estas instrucciones se aplican a la creación de una aplicación nativa de 32 bi
 
 4.  Agregue la biblioteca de vínculos dinámicos (DLL) de RMS SDK 2.1 como un archivo DLL de carga retrasada.
 
-    Bajo **Enlazador**, seleccione **Entrada** y agregue el archivo DLL de RMS SDK 2.1, **Msipc.dll**, al campo **Archivos DLL de carga retrasada**.
+    En **Enlazador**, seleccione **Entrada** y agregue el archivo DLL de RMS SDK 2.1, **Msipc.dll**, al campo **Archivos DLL de carga retrasada**.
 
     ![Campo de bibliotecas de carga retrasada del enlazador](../media/delay_loaded.png)
 

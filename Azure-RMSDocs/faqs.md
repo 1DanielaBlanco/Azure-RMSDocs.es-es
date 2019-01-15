@@ -4,18 +4,18 @@ description: Algunas de las preguntas más frecuentes sobre Azure Information Pr
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/06/2018
+ms.date: 01/05/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a513f495b2dd6ef75a3c2f219a207a98f1f6e143
-ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
+ms.openlocfilehash: 393cac6703016235359e0eb2812b31c585d4b524
+ms.sourcegitcommit: b2619c522298eaee3bd0067f2827e80fa9d4bfc2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53174104"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54060321"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Preguntas más frecuentes de Azure Information Protection
 
@@ -96,7 +96,7 @@ Azure Information Protection no clasifica ni protege datos estructurados como lo
 
 ## <a name="i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work"></a>Veo que Azure Information Protection aparece como una aplicación en la nube disponible para el acceso condicional. ¿Cómo funciona?
 
-Sí, como oferta de versión preliminar pública, ahora puede configurar el acceso condicional de Azure AD para Azure Information Protection.
+Sí, como oferta de versión preliminar, ahora puede configurar el acceso condicional de Azure AD para Azure Information Protection.
 
 Cuando un usuario abre un documento que está protegido con Azure Information Protection, los administradores ahora pueden bloquear o conceder acceso a los usuarios de su inquilino, en función de los controles de acceso condicional estándar. Requerir la autenticación multifactor (MFA) es una de las condiciones solicitadas con más frecuencia. Otra es que los dispositivos deben ser [conformes con las directivas de Intune](/intune/conditional-access-intune-common-ways-use) para que, por ejemplo, los dispositivos móviles cumplan los requisitos de contraseña y una versión mínima del sistema operativo, y los equipos deben estar unidos a un dominio.
 
@@ -111,6 +111,8 @@ Información adicional:
 - Se recomienda no agregar cuentas de administrador a las directivas de acceso condicional porque estas cuentas no podrán tener acceso a la hoja de Azure Information Protection en Azure Portal.
 
 - Si usa MFA en las directivas de acceso condicional para colaborar con otras organizaciones (B2B), tendrá que usar [colaboración B2B de Azure AD](/azure/active-directory/b2b/what-is-b2b) y crear cuentas de invitado para los usuarios con los que quiera compartir en la otra organización.
+
+- A partir de la versión preliminar de Azure AD de diciembre de 2018 puede solicitar a los usuarios que acepten los términos de uso antes de abrir un documento protegido por primera vez. Para obtener más información, vea el anuncio de la siguiente entrada de blog: [Updates to Azure AD Terms of Use functionality within conditional access](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Updates-to-Azure-AD-Terms-of-Use-functionality-within/ba-p/294822) (Actualizaciones a la función Términos de uso de Azure AD de acceso condicional)
 
 - Si usa muchas aplicaciones en la nube para el acceso condicional, puede que **Microsoft Azure Information Protection** no se muestre en la lista de selección. En ese caso, utilice el cuadro de búsqueda en la parte superior de la lista. Comience por escribir "Microsoft Azure Information Protection" para filtrar las aplicaciones disponibles. Siempre que tenga una suscripción admitida, verá **Microsoft Azure Information Protection** para su selección. 
 
@@ -146,15 +148,15 @@ Principales diferencias entre estas dos soluciones:
 |--------------------------------|-------------------------------------|
 |Almacenes de datos admitidos: <br /><br />- Carpetas locales de Windows Server|Almacenes de datos admitidos: <br /><br />- Carpetas locales de Windows Server<br /><br />- Recursos compartidos de archivos de Windows y almacenamiento conectado a la red<br /><br />- SharePoint Server 2016 y SharePoint Server 2013. SharePoint Server 2010 también se admite en clientes que tengan [compatibilidad ampliada para esta versión de SharePoint](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010).|
 |Modo operativo: <br /><br />- En tiempo real|Modo operativo: <br /><br />- Rastrea los almacenes de datos de forma sistemática, y este ciclo se puede ejecutar una o varias veces.|
-|Compatibilidad con tipos de archivo: <br /><br />- Todos los tipos de archivo están protegidos de manera predeterminada <br /><br />- Determinados tipos de archivos se pueden excluir de la protección mediante la edición del Registro|Compatibilidad con tipos de archivo: <br /><br />- De forma predeterminada, los tipos de archivo de Office están protegidos. <br /><br />- Determinados tipos de archivos se pueden incluir para la protección mediante la edición del Registro|
+|Compatibilidad con tipos de archivo: <br /><br />- Todos los tipos de archivo están protegidos de manera predeterminada <br /><br />- Determinados tipos de archivos se pueden excluir de la protección mediante la edición del Registro|Compatibilidad con tipos de archivo: <br /><br />- Los tipos de archivo de Office y documentos PDF están protegidos de forma predeterminada <br /><br />- Tipos adicionales de archivos se pueden incluir para la protección mediante la edición del Registro|
 
 En la actualidad, hay diferencias en la configuración del [propietario de Rights Management](configure-usage-rights.md#rights-management-issuer-and-rights-management-owner) para los archivos que están protegidos en una carpeta local o un recurso compartido de red. De forma predeterminada, para ambas soluciones, el propietario de Rights Management se establece en la cuenta que protege el archivo, pero esta configuración se puede invalidar:
 
 - Para FCI de Windows Server: se puede establecer el propietario de Rights Management en una sola cuenta para todos los archivos, o bien establecerlo de forma dinámica para cada archivo. Para establecer de forma dinámica el propietario de Rights Management, use el parámetro y valor **-OwnerMail [Correo electrónico del propietario del archivo de origen]**. Esta configuración recupera de Active Directory la dirección de correo electrónico del usuario utilizando su nombre de cuenta, situado en la propiedad Propietario del archivo.
 
-- Para el analizador de Azure Information Protection: se puede establecer el propietario de Rights Management en una sola cuenta para todos los archivos de un almacén de datos específico, pero no se puede establecer de forma dinámica para cada archivo. Para establecer la cuenta, especifique el parámetro **-DefaultOwner** para el [perfil del repositorio de datos](/powershell/module/azureinformationprotection/Set-AIPScannerRepository?view=azureipps#optional-parameters).
+- Para el analizador de Azure Information Protection: En el caso de archivos protegidos recientemente, se puede establecer el propietario de Rights Management en una sola cuenta para todos los archivos de un almacén de datos específico, pero no se puede establecer de forma dinámica para cada archivo. No se cambia el propietario de Rights Management para archivos protegidos con anterioridad. Para establecer la cuenta, especifique el parámetro **-DefaultOwner** para el [perfil del repositorio de datos](/powershell/module/azureinformationprotection/Set-AIPScannerRepository?view=azureipps#optional-parameters).
 
-Cuando el analizador protege los archivos de bibliotecas y sitios de SharePoint, el propietario de Rights Management se establece de forma dinámica para cada archivo con el valor del autor de SharePoint.
+Cuando el analizador protege los archivos de bibliotecas y sitios de SharePoint, el propietario de Rights Management se establece de forma dinámica para cada archivo con el valor de Editor de SharePoint.
 
 ## <a name="ive-heard-a-new-release-is-going-to-be-available-soon-for-azure-information-protectionwhen-will-it-be-released"></a>He escuchado que pronto estará disponible una nueva versión de Azure Information Protection, ¿cuándo se publicará?
 

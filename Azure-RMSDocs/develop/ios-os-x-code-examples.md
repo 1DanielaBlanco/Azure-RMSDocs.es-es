@@ -2,8 +2,8 @@
 title: Código de ejemplo de iOS/OS X | Azure RMS
 description: Este tema le presentará los elementos de código importantes para la versión de iOS/OS X de RMS SDK.
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.assetid: 7E12EBF2-5A19-4A8D-AA99-531B09DA256A
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: fc918b10dc8924002efd5eb71725b8c157461d7e
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: c71fe41da2eb29645c3c25d0044f969ebdca1c9a
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150915"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54070249"
 ---
 # <a name="iosos-x-code-examples"></a>Código de ejemplo de iOS/OS X
 
@@ -32,10 +32,10 @@ Este tema le presentará los elementos de código importantes para la versión d
 
 A continuación se muestran ejemplos de código **Objective C** desde una aplicación de ejemplo más grande que representa los escenarios de desarrollo importantes para la orientación de este SDK. Estos muestran; uso del formato de archivo protegido de Microsoft que se reconoce como archivo protegido, el uso de formatos de archivo protegido personalizados y el uso de controles de interfaz de usuario personalizados.
 
-### <a name="scenario-consume-an-rms-protected-file"></a>Escenario: consumo de un archivo protegido RMS
+### <a name="scenario-consume-an-rms-protected-file"></a>Escenario: Consumo de un archivo protegido RMS
 
 
-- **Paso 1**: Creación de un objeto [MSProtectedData](https://msdn.microsoft.com/library/dn758348.aspx).
+- **Paso 1**: Creación de un objeto [MSProtectedData](https://msdn.microsoft.com/library/dn758348.aspx)
 
  **Descripción**: Cree una instancia del objeto [MSProtectedData](https://msdn.microsoft.com/library/dn758348.aspx) mediante la creación de un método que implementa la autenticación de servicios con [MSAuthenticationCallback](https://msdn.microsoft.com/library/dn758312.aspx) para obtener un token pasando una instancia de **MSAuthenticationCallback**, como el parámetro *authenticationCallback*, a la API de MSIPC. Consulte la llamada a [MSProtectedData protectedDataWithProtectedFile](https://msdn.microsoft.com/library/dn758351.aspx) en la siguiente sección de código de ejemplo.
 
@@ -112,7 +112,7 @@ A continuación se muestran ejemplos de código **Objective C** desde una aplica
 
 Este escenario comienza con la obtención de una lista de plantillas, [MSTemplateDescriptor](https://msdn.microsoft.com/library/dn790785.aspx), la selección de la primera de ellas para crear una directiva y, después, la creación y escritura en el nuevo archivo protegido.
 
--   **Paso 1**: Obtención de una lista de las plantillas
+-   **Paso 1**: Obtención de una lista de las plantillas.
 
         + (void)templateListUsageWithAuthenticationCallback:(id<MSAuthenticationCallback>)authenticationCallback
         {
@@ -184,7 +184,7 @@ Este escenario comienza con la obtención de una lista de plantillas, [MSTemplat
             }];
          }
 
--   **Paso 2**: Creación de [MSCustomProtectedData](https://msdn.microsoft.com/library/dn758321.aspx) mediante [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx) del **paso 1** y lectura a partir de él.
+-   **Paso 2**: Creación de [MSCustomProtectedData](https://msdn.microsoft.com/library/dn758321.aspx) mediante [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx) del **Paso 1** y lectura a partir de él.
 
         + (void)customProtectedDataWith:(NSData *)protectedData
         {
@@ -214,7 +214,7 @@ Este escenario comienza con la obtención de una lista de plantillas, [MSTemplat
 ### <a name="scenario-create-a-custom-protected-file-using-a-custom-ad-hoc-policy"></a>Escenario: Creación de un archivo protegido personalizado mediante una directiva personalizada (ad hoc)
 
 
--   **Paso 1**: con una dirección de correo electrónico proporcionada por el usuario, creación de un descriptor de la directiva
+-   **Paso 1**: con una dirección de correo electrónico proporcionada por el usuario, cree un descriptor de la directiva.
 
     **Descripción**: En la práctica, los siguientes objetos se crearían con entradas de usuario desde la interfaz de dispositivo: [MSUserRights](https://msdn.microsoft.com/library/dn790811.aspx) y [MSPolicyDescriptor](https://msdn.microsoft.com/library/dn758339.aspx).
 

@@ -4,15 +4,15 @@ description: Si su organización ha empezado a utilizar recientemente Azure Info
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/05/2018
+ms.date: 12/15/2018
 ms.topic: quickstart
 ms.service: information-protection
-ms.openlocfilehash: f5cf70b0827e36ffae6644634ef198385ef6d11a
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: c890d6acf2557093441a175bc8ed8657e8d1d9da
+ms.sourcegitcommit: bc082cffaa698b89b28aef7034290553c26f667b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023522"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53411820"
 ---
 # <a name="quickstart-get-started-with-azure-information-protection-in-the-azure-portal"></a>Guía de inicio rápido: Introducción a Azure Information Protection en Azure Portal
 
@@ -36,7 +36,7 @@ Azure Information Protection no está automáticamente disponible en Azure Porta
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com) con la cuenta de administrador global del inquilino. 
     
-    Si no es el administrador global, utilice el siguiente vínculo para roles alternativos: [Inicio de sesión en Azure Portal](configure-policy.md#signing-in-to-the-azure-portal).
+    Si no es el administrador global, utilice el siguiente vínculo para roles alternativos: [Inicio de sesión en Azure Portal](configure-policy.md#signing-in-to-the-azure-portal)
 
 2. En el menú del concentrador, seleccione **Crear un recurso** y, a continuación, en el cuadro de búsqueda de Marketplace, escriba **Azure Information Protection**. 
     
@@ -83,12 +83,12 @@ La primera vez que se conecta al servicio Azure Information Protection mediante 
     
 3. Después de las etiquetas, en la sección **Configure settings to display and apply on Information Protection end users** (Configuración de valores para mostrar y aplicar en los usuarios finales de Information Protection), también verá algunas configuraciones de directiva. Por ejemplo, no hay ninguna etiqueta predeterminada establecida, no se requiere que los documentos y los correos electrónicos tengan una etiqueta y los usuarios no tienen que dar ninguna justificación cuando cambian etiquetas:
     
-    ![Paso 3 del tutorial de inicio rápido de Azure Information Protection - Directiva predeterminada](./media/info-protect-policy-default-settings.png) 
+    ![Paso 3 del tutorial de inicio rápido de Azure Information Protection - Directiva predeterminada](./media/info-protect-policy-default-settings-quickstart.png) 
 
 4. Dado que solo ve las etiquetas y los valores de configuración, puede cerrar todas las hojas que haya abierto.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Ahora que ha visto las etiquetas y la configuración de directiva en Azure Portal, el siguiente tutorial sobre [edición de la directiva y creación de una nueva etiqueta para Azure Information Protection](infoprotect-quick-start-tutorial.md) puede resultarle útil.
+Ahora que ha visto las etiquetas y la configuración de directiva en Azure Portal, el siguiente tutorial puede resultarle útil: [Edición de la directiva de Azure Information Protection y creación de una nueva etiqueta](infoprotect-quick-start-tutorial.md).
 
 Como alternativa, para obtener instrucciones detalladas para configurar todos los aspectos de la directiva de Azure Information Protection, consulte [Configuración de la directiva de Azure Information Protection](configure-policy.md).
