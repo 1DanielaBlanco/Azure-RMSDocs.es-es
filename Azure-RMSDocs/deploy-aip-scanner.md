@@ -4,18 +4,18 @@ description: Instrucciones para instalar, configurar y ejecutar el analizador de
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/13/2018
+ms.date: 01/08/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: fba2a1a804c085c44efc79d0f0ac69988f681aaa
-ms.sourcegitcommit: c9a0d81c18ea79a2520baa4b3777b06a72f87f60
+ms.openlocfilehash: 87e82a34e38bb66df2ecb10b91ec371f35bd5652
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53382527"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54071325"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Implementación del analizador de Azure Information Protection para clasificar y proteger automáticamente los archivos
 
@@ -53,12 +53,13 @@ Antes de instalar el analizador de Azure Information Protection, asegúrese de q
 
 |Requisito|Más información|
 |---------------|--------------------|
-|Equipo con Windows Server en el que se ejecutará el servicio del analizador:<br /><br />-4 procesadores de núcleo<br /><br />- 4 GB de RAM<br /><br />-10 GB de espacio libre (promedio) para los archivos temporales|Windows Server 2016 o Windows Server 2012 R2. <br /><br />Nota: Para llevar a cabo pruebas o evaluaciones en un entorno que no sea de producción, puede usar un sistema operativo cliente de Windows que sea [compatible con el cliente de Azure Information Protection](requirements.md#client-devices).<br /><br />Este equipo puede ser un equipo físico o virtual que tenga una conexión de red rápida y confiable a los almacenes de datos que deban analizarse.<br /><br /> El analizador requiere suficiente espacio en disco para crear archivos temporales para cada archivo que analiza, cuatro archivos por núcleo. El espacio en disco recomendado de 10 GB permite que 4 procesadores de núcleo examinen 16 archivos, cada uno con un tamaño de 625 MB. <br /><br />Asegúrese de que este equipo tenga la [conectividad a Internet](requirements.md#firewalls-and-network-infrastructure) necesaria para Azure Information Protection. Si no es posible la conectividad a Internet debido a las directivas de la organización, consulte la sección [Implementación del analizador con configuraciones alternativas](#deploying-the-scanner-with-alternative-configurations).|
+|Equipo con Windows Server en el que se ejecutará el servicio del analizador:<br /><br />-4 procesadores de núcleo<br /><br />- 8 GB de RAM<br /><br />-10 GB de espacio libre (promedio) para los archivos temporales|Windows Server 2016 o Windows Server 2012 R2. <br /><br />Nota: Para llevar a cabo pruebas o evaluaciones en un entorno que no sea de producción, puede usar un sistema operativo cliente de Windows que sea [compatible con el cliente de Azure Information Protection](requirements.md#client-devices).<br /><br />Este equipo puede ser un equipo físico o virtual que tenga una conexión de red rápida y confiable a los almacenes de datos que deban analizarse.<br /><br /> El analizador requiere suficiente espacio en disco para crear archivos temporales para cada archivo que analiza, cuatro archivos por núcleo. El espacio en disco recomendado de 10 GB permite que 4 procesadores de núcleo examinen 16 archivos, cada uno con un tamaño de 625 MB. <br /><br />Asegúrese de que este equipo tenga la [conectividad a Internet](requirements.md#firewalls-and-network-infrastructure) necesaria para Azure Information Protection. Si no es posible la conectividad a Internet debido a las directivas de la organización, consulte la sección [Implementación del analizador con configuraciones alternativas](#deploying-the-scanner-with-alternative-configurations).|
 |SQL Server para almacenar la configuración del analizador:<br /><br />- Instancia local o remota<br /><br />- Rol Sysadmin para instalar el escáner|SQL Server 2012 es la versión mínima para las siguientes ediciones:<br /><br />- SQL Server Enterprise<br /><br />- SQL Server Standard<br /><br />- SQL Server Express<br /><br />Si instala más de una instancia del analizador, cada una requerirá su propia base de datos de SQL Server.<br /><br />Cuando instale el analizador y su cuenta tenga el rol de administrador del sistema, el proceso de instalación creará automáticamente la base de datos AzInfoProtectionScanner y concederá el rol db_owner necesario a la cuenta de servicio que ejecuta el analizador. Si no puede conceder el rol de administrador del sistema o las directivas de la organización requieren la creación y la configuración manual de bases de datos, consulte la sección [Implementación del analizador con configuraciones alternativas](#deploying-the-scanner-with-alternative-configurations).<br /><br />El tamaño de la base de datos de configuración varía con cada implementación, pero se recomienda asignar 500 MB por cada 1 000 000 archivos que quiera examinar. |
 |Cuenta de servicio en la que se ejecutará el servicio del analizador|Además de ejecutar el servicio de examen, esta cuenta se autentica en Azure AD y descarga la directiva de Azure Information Protection. Esta cuenta debe ser una cuenta de Active Directory y sincronizarse con Azure AD. Si no puede sincronizar esta cuenta debido a las directivas de la organización, consulte la sección [Implementación del analizador con configuraciones alternativas](#deploying-the-scanner-with-alternative-configurations).<br /><br />Esta cuenta de servicio tiene los siguientes requisitos:<br /><br />- **Derecho de iniciar sesión localmente**. Este derecho es necesario para la instalación y configuración del analizador, pero no para la operación. Debe conceder este derecho a la cuenta de servicio, pero puede quitarlo después de haber confirmado que el analizador puede detectar, clasificar y proteger los archivos. Si no es posible conceder este derecho ni siquiera durante un breve período de tiempo debido a las directivas de la organización, consulte la sección [Implementación del analizador con configuraciones alternativas](#deploying-the-scanner-with-alternative-configurations).<br /><br />- **Derecho de iniciar sesión como servicio**. Este derecho se concede automáticamente a la cuenta de servicio durante la instalación del analizador y es necesario para la instalación, la configuración y el funcionamiento del analizador. <br /><br />- Permisos a los repositorios de datos: debe conceder permisos de **lectura** y **escritura** para analizar los archivos y después aplicar la clasificación y la protección a los archivos que cumplan las condiciones establecidas en la directiva de Azure Information Protection. Para ejecutar el analizador solo en modo de detección, el permiso de **lectura** es suficiente.<br /><br />- Para las etiquetas que ofrecen una segunda protección o quitan la protección: para asegurarse de que el analizador siempre tenga acceso a los archivos protegidos, convierta esta cuenta en un [superusuario](configure-super-users.md) para el servicio de Azure Rights Management y asegúrese de que la característica de superusuario esté habilitada. Para obtener más información sobre los requisitos de la cuenta para aplicar la protección, consulte [Preparación de usuarios y grupos para Azure Information Protection](prepare.md). Además, si ha implementado [controles de incorporación](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment) para una implementación por fases, asegúrese de que esta cuenta se incluye en los controles de incorporación que ha configurado.|
 |Cliente de Azure Information Protection instalado en el equipo con Windows Server|Debe instalar el cliente completo para el analizador. No instale el cliente solo con el módulo de PowerShell.<br /><br />Para obtener instrucciones de instalación del cliente, consulte la [guía del administrador](./rms-client/client-admin-guide.md). Si ha instalado previamente el analizador y ahora debe actualizarlo a una versión posterior, consulte [Upgrading the Azure Information Protection scanner](./rms-client/client-admin-guide.md#upgrading-the-azure-information-protection-scanner) (Actualización del analizador Azure Information Protection).|
 |Etiquetas configuradas que aplican la clasificación automática y, opcionalmente, la protección|Para obtener más información sobre cómo configurar las condiciones en la directiva de Azure Information Protection, consulte [Configuración de las condiciones para la clasificación automática y recomendada en Azure Information Protection](configure-policy-classification.md).<br /><br />Para obtener más información sobre cómo configurar las etiquetas para aplicar la protección a los archivos, consulte [Configuración de una etiqueta para la protección de Rights Management](configure-policy-protection.md).<br /><br />Estas etiquetas pueden estar en la directiva global, o en una o varias [directivas con ámbito](configure-policy-scope.md).<br /><br />Nota: Si bien puede ejecutar el analizador incluso si no ha configurado las etiquetas que aplican la clasificación automática, este escenario no se incluye en estas instrucciones. [Más información](#using-the-scanner-with-alternative-configurations)|
-|Para los documentos de Office que se van a examinar:<br /><br />- Formatos de archivo 97-2003 y formatos Open XML de Office para Word, Excel y PowerPoint|Para más información sobre los tipos de archivo que el analizador admite para estos formatos de archivo, consulte [Tipos de archivos compatibles con el cliente de Azure Information Protection](./rms-client/client-admin-guide-file-types.md). 
+|Para los documentos de Office que se van a examinar:<br /><br />- Formatos de archivo 97-2003 y formatos Open XML de Office para Word, Excel y PowerPoint|Para obtener más información sobre los tipos de archivo que el analizador admite para estos formatos de archivo, vea [Tipos de archivos compatibles con el cliente de Azure Information Protection](./rms-client/client-admin-guide-file-types.md)|
+|Para rutas de acceso largas:<br /><br />- Máximo de 260 caracteres, a menos que el analizador esté instalado en Windows 2016 y el equipo esté configurado para admitir rutas de acceso largas|Windows 10 y Windows Server 2016 admiten longitudes de ruta de acceso de más de 260 caracteres con la siguiente [configuración de directiva de grupo](https://blogs.msdn.microsoft.com/jeremykuhne/2016/07/30/net-4-6-2-and-long-paths-on-windows-10/): **Directiva de equipo local** > **Configuración del equipo** > **Plantillas administrativas** > **Todas las configuraciones** > **NTFS** > **Habilitar rutas de acceso Win32 largas**<br /><br /> Para obtener más información, vea la sección [Maximum Path Length Limitation](https://docs.microsoft.com/windows/desktop/FileIO/naming-a-file#maximum-path-length-limitation) (Limitación de longitud máxima de ruta de acceso) de la documentación para desarrolladores de Windows 10.
 
 Si no se cumplen todos los requisitos de la tabla porque están prohibidos por las directivas de la organización, consulte alternativas en la sección siguiente.
 
@@ -192,7 +193,7 @@ Con la configuración predeterminada del analizador, ahora está listo para ejec
     
         Start-AIPScan
     
-    Como alternativa, puede iniciar el escáner en la hoja **Azure Information Protection** de Azure Portal, cuando se usa la opción **Escáner** > **Nodos (versión preliminar)** > \**<* nodo de escáner*>** > **Escanear ahora**.
+    Como alternativa, puede iniciar el analizador en la hoja **Azure Information Protection** de Azure Portal, cuando se usa la opción **Escáner** > **Nodos (versión preliminar)** > **\<*nodo de escáner*>**> **Escanear ahora**.
 
 2. Espere a que el escáner complete su ciclo y ejecute el comando siguiente:
     
@@ -227,7 +228,7 @@ En su configuración predeterminada, el analizador se ejecuta una vez y en el mo
     
         Start-AIPScan
     
-    Como alternativa, puede iniciar el escáner en la hoja **Azure Information Protection** de Azure Portal, cuando se usa la opción **Escáner** > **Nodos (versión preliminar)** > \**<* nodo de escáner*>**> **Escanear ahora**.
+    Como alternativa, puede iniciar el analizador en la hoja **Azure Information Protection** de Azure Portal, cuando se usa la opción **Escáner** \> **Nodos (versión preliminar)** \> **\<*nodo de escáner*\>**\> **Escanear ahora**.
 
 3. Vuelva a supervisar el registro de eventos para el tipo informativo **911**, con una marca de tiempo posterior a cuando se inició el examen en el paso anterior. 
     
@@ -238,61 +239,72 @@ Dado que hemos configurado la programación para que se ejecute continuamente, c
 
 ## <a name="how-files-are-scanned"></a>¿Cómo se examinan los archivos?
 
+El analizador pasar por los siguientes procesos cuando examina los archivos.
+
+### <a name="1-determine-whether-files-are-included-or-excluded-for-scanning"></a>1. Determinar si los archivos se incluyen o excluyen para el análisis 
 El analizador omite automáticamente los archivos que se [excluyen de la clasificación y la protección](./rms-client/client-admin-guide-file-types.md#file-types-that-are-excluded-from-classification-and-protection), como los archivos ejecutables y los archivos del sistema.
 
-Puede cambiar este comportamiento mediante la definición de una lista de tipos de archivo para examinar o excluir del análisis. Al especificar esta lista y no especificar un repositorio de datos, la lista se aplica a todos los repositorios de datos que no tienen su propia lista especificada. Para especificar esta lista, use [Set-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileTypes). Después de haber especificado la lista de tipos de archivo, puede agregar un nuevo tipo de archivo a la lista mediante [Add-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileTypes), y quitar un tipo de archivo de la lista mediante [Remove-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileTypes).
+Puede cambiar este comportamiento mediante la definición de una lista de tipos de archivo para examinar o excluir del análisis. Al especificar esta lista y no especificar un repositorio de datos, la lista se aplica a todos los repositorios de datos que no tienen su propia lista especificada. Para especificar esta lista, use [Set-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileTypes). 
 
-Luego, el analizador usa Windows iFilter para analizar los siguientes tipos de archivo. En esos tipos de archivo, el documento se etiquetará mediante las condiciones que ha especificado para las etiquetas.
+Después de haber especificado la lista de tipos de archivo, puede agregar un nuevo tipo de archivo a la lista mediante [Add-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileTypes), y quitar un tipo de archivo de la lista mediante [Remove-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileTypes).
 
-|Tipo de aplicación|Tipo de archivo|
-|--------------------------------|-------------------------------------|
-|Word|.docx; .docm; .dotm; .dotx|
-|Excel|.xls; .xlt; .xlsx; .xltx; .xltm; .xlsm; .xlsb|
-|PowerPoint|.ppt; .pps; .pot; .pptx; .ppsx; .pptm; .ppsm; .potx; .potm|
-|PDF |.pdf|
-|Texto|.txt; .xml; .csv|
+### <a name="2-inspect-and-label-files"></a>2. Inspeccionar y etiquetar los archivos
 
-Además, el analizador también puede usar el reconocimiento óptico de caracteres (OCR) para inspeccionar las imágenes TIFF con una extensión de nombre de archivo .tiff cuando instala la característica Windows TIFF IFilter y luego configura las opciones de [Windows TIFF IFilter](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/dd744701%28v%3dws.10%29) en el equipo que ejecuta el analizador.
+Después el analizador usa filtros para buscar tipos de archivo admitidos. El sistema operativo usa estos mismos filtros para Windows Search y la indización. Sin ninguna configuración adicional, se usa Windows IFilter se usa para analizar los tipos de archivo que usan Word, Excel, PowerPoint y para documentos PDF y archivos de texto.
 
-De forma predeterminada, el analizador solo protege los tipos de archivo de Office y los archivos PDF, por lo que los archivos de texto e imagen no están protegidos a menos que [edite el registro](#editing-the-registry-for-the-scanner) para especificar los tipos de archivo:
+Para obtener una lista completa de tipos de archivo que se admiten de forma predeterminada e información adicional sobre cómo configurar los filtros existentes que incluyan archivos .tiff y archivos .zip, vea [Tipos de archivo compatibles para inspección](./rms-client/client-admin-guide-file-types.md#file-types-supported-for-inspection).
 
-- Si no agrega los tipos de archivo .txt, .xml o .csv al Registro: los archivos con estas extensiones de nombre de archivo no se etiquetarán, porque estos tipos de archivo no admiten solo la clasificación.
+Después de la inspección, estos tipos de archivo pueden etiquetarse mediante las condiciones que ha especificado para las etiquetas. O bien, si está utilizando el modo de detección, se pueden notificar que estos archivos contienen las condiciones que ha especificado para las etiquetas, o todos los tipos conocidos de información confidencial. 
 
-- Si no agrega el tipo de archivo .tiff al Registro después de configurar Windows TIFF IFilter: los archivos con esta extensión de nombre de archivo se etiquetarán, pero si la etiqueta está configurada para la protección, esta no se aplica.
+Con todo, el analizador no puede etiquetar los archivos en las siguientes circunstancias:
 
-Por último, para los tipos de archivo restantes, el analizador no los inspecciona pero aplica la etiqueta predeterminada en la directiva de Azure Information Protection, o la etiqueta predeterminada que configure para el analizador.
+- Si la etiqueta aplica clasificación pero no protección, y el tipo de archivo no [admiten la clasificación solo](./rms-client/client-admin-guide-file-types.md#file-types-supported-for-classification-only).
 
-|Tipo de aplicación|Tipo de archivo|
-|--------------------------------|-------------------------------------|
-|Proyecto|.mpp; .mpt|
-|Publicador|.pub|
-|Visio|.vsd; .vdw; .vst; .vss; .vsdx; .vsdm; .vssx; .vssm; .vstx; .vstm|
-|XPS|.xps; .oxps; .dwfx|
-|Solidworks|.sldprt; .slddrw; .sldasm|
-|Jpeg |.jpg; .jpeg; .jpe; .jif; .jfif; .jfi|
-|Png |.png|
-|Gif|.gif|
-|Mapa de bits|.bmp; .giff|
-|Tiff|.tif; .tiff|
-|Photoshop|.psdv|
-|DigitalNegative|.dng|
-|Pfile|.pfile|
+- Si la etiqueta aplica clasificación y protección, pero el analizador no protege el tipo de archivo.
+    
+    De forma predeterminada, el analizador protege solo tipos de archivos de Office y archivos PDF cuando están protegidos mediante el estándar ISO para el cifrado de archivos PDF. Pueden protegerse otros tipos de archivos cuando se [edita el registro](#editing-the-registry-for-the-scanner) tal como se describe en la siguiente sección.
 
-Cuando el analizador aplica una etiqueta con protección, de forma predeterminada solo se protegen los tipos de archivo de Office y los archivos PDF. Puede cambiar este comportamiento para proteger también otros tipos de archivos. Sin embargo, cuando una etiqueta aplica protección genérica a documentos, la extensión de nombre de archivo cambia a .pfile. Otros tipos de archivo pueden cambiar también su extensión de nombre de archivo. Además, estos archivos pasan a ser de solo lectura hasta que los abre un usuario autorizado y se guardan en su formato nativo.
+Por ejemplo, después de inspeccionar los archivos que tienen una extensión .txt, el analizador no puede aplicar una etiqueta que está configurada para la clasificación, pero no la protección, porque el tipo de archivo .txt no admite solo clasificación. Si la etiqueta está configurada para protección y clasificación y se modifica el registro para el tipo de archivo .txt, el analizador puede etiquetar el archivo. 
+
+> [!TIP]
+> Durante este proceso, si el analizador se detiene y no completa el examen de un gran número de los archivos en un repositorio, deberá aumentar el número de puertos dinámicos para el sistema operativo que hospeda los archivos. Refuerzo de los servidores de SharePoint puede ser uno de los motivos por los que el analizador supera el número de conexiones de red permitido y, por tanto, se detiene.
+> 
+> Para comprobar si esta es la causa por la que se detiene el analizador, busque para ver si el siguiente mensaje de error se registra para el analizador en %*localappdata*%\Microsoft\MSIP\Logs\MSIPScanner.iplog (si hay varios registros se comprimen en zip): **No se puede conectar al servidor remoto---> System.Net.Sockets.SocketException: Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto) de IP:port**
+>
+> Para obtener más información sobre cómo ver el intervalo de puerto actual y aumentar el intervalo, vea [Settings that can be Modified to Improve Network Performance](https://docs.microsoft.com/biztalk/technical-guides/settings-that-can-be-modified-to-improve-network-performance) (Configuración que puede modificarse para mejorar el rendimiento de red) 
+
+
+
+### <a name="3-label-files-that-cant-be-inspected"></a>3. Etiquetar los archivos que no se pueden inspeccionar
+Para los tipos de archivo que no se pueden inspeccionar, el analizador aplica la etiqueta predeterminada en la directiva de Azure Information Protection, o la etiqueta predeterminada que configure para el analizador.
+
+Como en el paso anterior, el analizador no puede etiquetar los archivos en las siguientes circunstancias:
+
+- Si la etiqueta aplica clasificación pero no protección, y el tipo de archivo no [admiten la clasificación solo](./rms-client/client-admin-guide-file-types.md#file-types-supported-for-classification-only).
+
+- Si la etiqueta aplica clasificación y protección, pero el analizador no protege el tipo de archivo.
+    
+    De forma predeterminada, el analizador protege solo tipos de archivos de Office y archivos PDF cuando están protegidos mediante el estándar ISO para el cifrado de archivos PDF. Pueden protegerse otros tipos de archivos cuando se [edita el registro](#editing-the-registry-for-the-scanner) tal como se describe a continuación.
+
 
 ### <a name="editing-the-registry-for-the-scanner"></a>Edición del registro para el analizador
 
-Para cambiar este comportamiento predeterminado del analizador para proteger otros tipos de archivo que no sean de Office y PDF, debe editar el registro manualmente y especificar los tipos de archivo adicionales que quiere que estén protegidos. Para obtener instrucciones, vea [Configuración de la API de archivo](develop/file-api-configuration.md) en la guía del desarrollador. En esta documentación para desarrolladores, se hace referencia a la protección genérica como "PFile". Además, establezca lo siguiente para el analizador:
+Para cambiar este comportamiento predeterminado del analizador para proteger otros tipos de archivo que no sean de Office y PDF, debe editar el registro manualmente y especificar los tipos de archivo adicionales que quiere que estén protegidos, y el tipo de protección (nativa o genérica). Para obtener instrucciones, vea [Configuración de la API de archivo](develop/file-api-configuration.md) en la guía del desarrollador. En esta documentación para desarrolladores, se hace referencia a la protección genérica como "PFile". Además, establezca lo siguiente para el analizador:
 
-- El analizador tiene su propio comportamiento predeterminado: Solo los formatos de archivo de Office y documentos PDF están protegidos de forma predeterminada. Si no se modifica el registro, el analizador no protegerá ningún otro tipo de archivo.
+- El analizador tiene su propio comportamiento predeterminado: Solo los formatos de archivo de Office y documentos PDF están protegidos de forma predeterminada. Si no se modifica el registro, el analizador no protegerá ni etiquetará ningún otro tipo de archivo.
 
 - Si quiere el mismo comportamiento de protección predeterminado del cliente de Azure Information Protection, donde todos los archivos se protegen automáticamente con protección nativa o genérica: especifique el comodín `*` como clave del Registro y `Default` como datos de valor.
 
 Cuando edite el registro, cree manualmente la clave **MSIPC** y la clave **FileProtection** si no existen, así como una clave para cada extensión de nombre de archivo.
 
-Por ejemplo, para que el escáner proteja las imágenes TIFF además de los archivos de Office y PDF, el registro después de que se haya editado tendrá un aspecto similar al de la siguiente ilustración:
+Por ejemplo, para que el escáner proteja las imágenes TIFF además de los archivos de Office y PDF, el registro después de que se haya editado tendrá un aspecto similar al de la siguiente ilustración. Como un archivo de imagen, los archivos TIFF admiten la protección nativa y la extensión de nombre de archivo resultante es .ptiff.
 
 ![Edición del registro para que el analizador aplique la protección](./media/editregistry-scanner.png)
+
+Para obtener una lista de tipos de archivo de texto e imágenes que admiten la protección nativa de forma similar pero deben especificarse en el registro, vea [Tipos de archivos compatibles para protección y clasificación](./rms-client/client-admin-guide-file-types.md#file-types-supported-for-protection) en la Guía del administrador.
+
+Para los archivos que no son compatibles con la protección nativa, especifique la extensión de nombre de archivo como una nueva clave y **PFile** para protección genérica. La extensión de nombre de archivo resultante para el archivo protegido es .pfile.
+
 
 ## <a name="when-files-are-rescanned"></a>¿Cuándo se vuelven a examinan los archivos?
 
@@ -300,7 +312,7 @@ En el primer ciclo de examen, el analizador inspecciona todos los archivos de lo
 
 Puede forzar al analizador a que inspeccione de nuevo todos los archivos mediante la ejecución de [Start-AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan) con el parámetro `-Reset`. El analizador debe configurarse para una programación manual, lo que requiere que el parámetro `-Schedule` se establezca en **Manual** con [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration).
 
-Como alternativa, puede forzar al escáner a que vuelva a inspeccionar todos los archivos en la hoja **Azure Information Protection** de Azure Portal, cuando se usa **Escáner** > **Nodos (versión preliminar)** > \**<* nodo de escáner*>**> opción **Rescan all files** (Volver a examinar todos los archivos).
+Como alternativa, puede forzar al escáner a que vuelva a inspeccionar todos los archivos en la hoja **Azure Information Protection** de Azure Portal, cuando se usa **Escáner** \> **Nodos (versión preliminar)** \> **\<*nodo de escáner*\>**\> **opción Rescan all files** (Volver a examinar todos los archivos).
 
 Volver a inspeccionar todos los archivos resulta útil si quiere que los informes incluyan todos los archivos. Esta opción de configuración suele usarse cuando el analizador se ejecuta en modo de detección. Cuando finaliza el examen completo, el tipo de examen cambia automáticamente a incremental para que en los análisis posteriores solo se examinen los archivos nuevos o modificados.
 
@@ -438,9 +450,9 @@ Información **911**
 
 **Ha finalizado el ciclo del analizador.**
 
-Este evento se registra cuando el analizador ha terminado su examen único, ya que el servidor se ha iniciado o el analizador ha terminado un ciclo para una programación continua.
+Este evento se registra cuando el analizador ha terminado un examen manual o el analizador ha terminado un ciclo para una programación continua.
 
-Si el analizador se configuró para ejecutarse una vez en lugar de continuamente, para volver a analizar los archivos, debe establecer la programación en **OneTime** o **Continuous** y, después, reiniciar el servicio manualmente. Para cambiar la programación, use el cmdlet [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) y el parámetro **Schedule**.
+Si el analizador se ha configurado para ejecutarse manualmente en lugar de continuamente, use el cmdlet [Start-AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan) para ejecutar un nuevo examen. Para cambiar la programación, use el cmdlet [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) y el parámetro **Schedule**.
 
 ----
 
