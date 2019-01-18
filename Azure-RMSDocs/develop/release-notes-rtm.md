@@ -12,12 +12,12 @@ ms.assetid: CE379738-4E1D-42AD-83F4-F89B70456EBB
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 8132fd2afba45402f8f9c835f2d6db69dd8e81f2
-ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
+ms.openlocfilehash: 695251277b62d44166e7a4569881b804db34279e
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54071208"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394246"
 ---
 # <a name="release-notes"></a>Notas de la versión
 
@@ -37,9 +37,9 @@ Este artículo contiene información importante sobre esta versión y versiones 
 
 - **Actualización de ADAL**. Si actualiza la aplicación para que use la autenticación de ADAL en lugar del Ayudante para el inicio de sesión de Microsoft Online, usted y sus clientes podrán:
 
- - Usar Multi-Factor Authentication.
- - Instalar el cliente de RMS 2.1 sin necesidad de tener privilegios administrativos en el equipo.
- - Certificar la aplicación para Windows 10
+  - Usar Multi-Factor Authentication.
+  - Instalar el cliente de RMS 2.1 sin necesidad de tener privilegios administrativos en el equipo.
+  - Certificar la aplicación para Windows 10
 
 - **Compatibilidad con el Ayudante para el inicio de sesión (SIA) de Microsoft Online mientras se quita RMS SDK.** Seguiremos admitiendo el uso del SIA durante seis meses, después de lo cual dejará de ser compatible.
 
@@ -124,7 +124,7 @@ El componente de la API de archivo del SDK se ha ampliado y ofrece las siguiente
 
     **Nota**  A partir de la versión de abril de 2015, se agrega una comprobación al proceso de instalación de este KB.
 
-     
+     
 
 -   **Integración de la API de archivo**
 

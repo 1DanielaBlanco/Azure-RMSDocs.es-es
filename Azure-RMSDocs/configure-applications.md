@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: ea09cbc5-b98b-444e-8b60-5bc3cb199c36
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b53bb0a914871ba2a53ad7ff4c3bd6fca0d32dde
-ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
+ms.openlocfilehash: 99c0871d879d7326a4142b99753acfe00cd27cf5
+ms.sourcegitcommit: 73b5884ee9fe8aabb1a9fc9baace64d5fd433f4e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53173271"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54324087"
 ---
 # <a name="configuring-applications-for-azure-rights-management"></a>Configuración de aplicaciones para Azure Rights Management
 
@@ -43,7 +43,7 @@ Después de haber implementado Azure Information Protection para su organizació
 
     -   [Office 2010](configure-office-apps.md#office-2010)
 
--   [Cliente de Azure Information Protection: Instalación y configuración para clientes](configure-sharing-app.md)
+-   [Cliente de Azure Information Protection: Instalación y configuración para clientes](configure-client.md)
 
 -   [Aplicación de uso compartido Rights Management: Instalación y configuración para clientes](configure-sharing-app.md)
 

@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e5717d83ece5f188476c0f7bca677088aa4373ae
-ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
+ms.openlocfilehash: e707e84ccfafc7b3ed161d05cadac9f2314ad3ae
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53173883"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394279"
 ---
 # <a name="preparing-users-and-groups-for-azure-information-protection"></a>Preparación de usuarios y grupos para Azure Information Protection
 
@@ -70,9 +70,9 @@ Para asignar derechos de uso y controles de acceso, y configurar el servicio Azu
 - Para autorizar usuarios, se utilizan dos atributos en Azure AD: **proxyAddresses** y **userPrincipalName**.
 
 - El atributo **proxyAddresses de Azure AD** almacena todas las direcciones de correo electrónico para una cuenta y se puede rellenar de distintas maneras. Por ejemplo, un usuario de Office 365 que tiene un buzón de Exchange Online tiene automáticamente una dirección de correo electrónico almacenada en este atributo. Si asigna una dirección de correo electrónico alternativa a un usuario de Office 365, también se guarda en este atributo. También se puede rellenar con las direcciones de correo electrónico que se sincronizan desde cuentas locales. 
-    
+
     Azure Information Protection puede usar cualquier valor de este atributo proxyAddresses de Azure AD si se ha agregado el dominio en el inquilino (un "dominio comprobado"). Para más información sobre la comprobación de dominios:
-    
+
     - Para Azure AD: [Incorporación de su nombre de dominio personalizado a Azure Active Directory](/azure/active-directory/fundamentals/add-custom-domain)
 
     - Para Office 365: [Adición de un dominio a Office 365](/office365/admin/setup/add-domain?view=o365-worldwide)
@@ -94,7 +94,7 @@ Otros método de autorización:
 Para asignar etiquetas:
 
 - Para configurar directivas de ámbito que asignen etiquetas adicionales a los miembros de un grupo, puede utilizar cualquier tipo de grupo en Azure AD con una dirección de correo electrónico que contenga un dominio comprobado para el inquilino del usuario. Un grupo que tenga una dirección de correo electrónico a menudo se conoce como un grupo habilitado para correo electrónico.
-    
+
     Por ejemplo, puede usar un grupo de seguridad habilitado para correo electrónico, un grupo de distribución (que puede ser estático o dinámico) y un grupo de Office 365. No puede usar un grupo de seguridad (dinámico o estático) porque este tipo de grupo no tiene una dirección de correo electrónico.
 
 Para asignar derechos de uso y controles de acceso a usuarios externos:
@@ -148,16 +148,17 @@ Si la columna **ProxyAddresses** no se rellena, se usa el valor del atributo **U
 
 Por ejemplo:
 
-|Nombre para mostrar|UserPrincipalName|ProxyAddresses
-|-------------------|-----------------|--------------------|
-|Jagannath Reddy |jagannathreddy@contoso.com|{}|
-|Ankur Roy|ankurroy@contoso.com|{SMTP:ankur.roy@contoso.com, smtp: ankur.roy@onmicrosoft.contoso.com}|
+
+|  Nombre para mostrar   |     UserPrincipalName      |                            ProxyAddresses                             |
+|-----------------|----------------------------|-----------------------------------------------------------------------|
+| Jagannath Reddy | jagannathreddy@contoso.com |                                  {}                                   |
+|    Ankur Roy    |    ankurroy@contoso.com    | {SMTP:ankur.roy@contoso.com, smtp: ankur.roy@onmicrosoft.contoso.com} |
 
 En este ejemplo:
 
-- La cuenta de usuario para Jagannath Reddy la autorizará **jagannathreddy@contoso.com**.
+- La cuenta de usuario para Jagannath Reddy la autorizará <strong>jagannathreddy@contoso.com</strong>.
 
--  La cuenta de usuario de Ankur Roy se puede autorizar mediante el uso de **ankur.roy@contoso.com** y **ankur.roy@onmicrosoft.contoso.com**, pero no de **ankurroy@contoso.com**.
+- La cuenta de usuario de Ankur Roy se puede autorizar mediante el uso de <strong>ankur.roy@contoso.com</strong> y <strong>ankur.roy@onmicrosoft.contoso.com</strong>, pero no de <strong>ankurroy@contoso.com</strong>.
 
 En la mayoría de los casos, el valor del atributo UserPrincipalName coincide con uno de los valores del campo ProxyAddresses. Esta es la configuración recomendada, pero si no se puede cambiar el valor de UPN para que coincida con la dirección de correo electrónico, debe realizar los pasos siguientes:
 
@@ -165,7 +166,7 @@ En la mayoría de los casos, el valor del atributo UserPrincipalName coincide co
 
     Si el nombre de dominio en el valor de UPN no es un dominio comprobado para su inquilino, no podrá usarse con Azure Information Protection. Sin embargo, el usuario todavía se puede ser autorizado como miembro de un grupo cuando la dirección de correo electrónico del grupo utiliza un nombre de dominio comprobado.
 
-2. Si el valor de UPN no es enrutable (por ejemplo, **ankurroy@contoso.local**), configure un identificador de inicio de sesión alternativo para los usuarios e indíqueles cómo deben iniciar sesión en Office con este inicio de sesión alternativo. También debe establecer una clave del Registro para Office.
+2. Si el valor de UPN no es enrutable (por ejemplo, <strong>ankurroy@contoso.local</strong>), configure un identificador de inicio de sesión alternativo para los usuarios e indíqueles cómo deben iniciar sesión en Office con este inicio de sesión alternativo. También debe establecer una clave del Registro para Office.
 
     Para más información, consulte [Configuración de identificador de inicio de sesión alternativo](/windows-server/identity/ad-fs/operations/configuring-alternate-login-id) y [Las aplicaciones de Office periódicamente piden credenciales a SharePoint Online, OneDrive y Lync Online](https://support.microsoft.com/help/2913639/office-applications-periodically-prompt-for-credentials-to-sharepoint-online,-onedrive,-and-lync-online).
 

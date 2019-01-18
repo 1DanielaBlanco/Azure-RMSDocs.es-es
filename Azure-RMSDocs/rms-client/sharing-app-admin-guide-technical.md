@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: f7b13fa4-4f8e-489a-ba46-713d7a79f901
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7104da9852458cbe9100600c3e14b43ee4aa7986
-ms.sourcegitcommit: 2a1c0882d2b0400f4da6370dbc1830df09867e3d
+ms.openlocfilehash: 8556bb8e2ba5df713b925cbb05628c73284b3df1
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53218483"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54393868"
 ---
 # <a name="technical-overview-and-protection-details-for-the-microsoft-rights-management-sharing-application"></a>Información general técnica de la aplicación Microsoft Rights Management sharing
 
@@ -43,11 +43,13 @@ Para obtener información de implementación, consulte [Implementación automát
 ## <a name="levels-of-protection--native-and-generic"></a>Niveles de protección: nativo y genérico
 La aplicación Microsoft Rights Management sharing admite la protección en dos niveles distintos, como se describe en la tabla siguiente.
 
-|Tipo de protección|Nativa|Genérico|
-|----------------------|----------|-----------|
-|Descripción|Para archivos de texto, imagen, Microsoft Office (Word, Excel, PowerPoint), archivos .pdf y otros tipos de archivo de aplicaciones compatibles con el servicio de Rights Management, la protección nativa ofrece un fuerte nivel de protección que incluye tanto cifrado como aplicación de derechos (permisos).|Para todas las demás aplicaciones y tipos de archivo, la protección genérica proporciona un nivel de protección que incluye encapsulación de archivos mediante el tipo de archivo .pfile, y autenticación para comprobar si un usuario está autorizado para abrir el archivo.|
-|Protección|Los archivos están completamente cifrados y la protección se aplica de las siguientes maneras:<br /><br />- Antes de presentar el contenido protegido, se debe autenticar correctamente a aquellas personas que reciben el archivo por correo electrónico o a las que se les concede acceso a él mediante permisos de archivo o recurso compartido.<br /><br />- Además, cuando el contenido se presenta en el Visor de IP (en el caso de archivos de texto e imagen protegidos) o en la aplicación asociada (en el caso de todos los demás tipos de archivo admitidos), se aplican completamente los derechos de uso y la directiva definida por el propietario del contenido cuando se protegen los archivos.|La protección de los archivos se aplica de las siguientes formas:<br /><br />- Antes de presentar el contenido protegido, se debe autenticar correctamente a aquellas personas que están autorizadas para abrir el archivo o a las que se les proporciona acceso a él. Si la autorización da error, el archivo no se abre.<br /><br />- Se muestran los derechos de uso y la directiva establecida por el propietario del contenido para informar a los usuarios autorizados de la directiva de uso previsto.<br /><br />- Se produce el registro de auditoría de los usuarios autorizados a abrir y obtener acceso a los archivos, pero no se aplican derechos de uso por parte de las aplicaciones no admitidas.|
-|Valor predeterminado para tipos de archivo|Es el nivel predeterminado de protección para los siguientes tipos de archivo:<br /><br />- Archivos de texto e imagen<br /><br />- Archivos de Microsoft Office (Word, Excel, PowerPoint)<br /><br />- Formato de documento portátil (.pdf)<br /><br />Para más información, consulte la sección siguiente, [Tipos de archivo y extensiones de nombre de archivo admitidos](#supported-file-types-and-file-name-extensions).|Se trata de la protección predeterminada para todos los demás tipos de archivo (por ejemplo, .vsdx, .rtf, etc.) que no son compatibles con la protección completa.|
+
+|   Tipo de protección   |                                                                                                                                                                                                                                                                             Nativa                                                                                                                                                                                                                                                                              |                                                                                                                                                                                                                                                                            Genérico                                                                                                                                                                                                                                                                             |
+|------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|      Descripción       |                                                                                                                                    Para archivos de texto, imagen, Microsoft Office (Word, Excel, PowerPoint), archivos .pdf y otros tipos de archivo de aplicaciones compatibles con el servicio de Rights Management, la protección nativa ofrece un fuerte nivel de protección que incluye tanto cifrado como aplicación de derechos (permisos).                                                                                                                                     |                                                                                                                                                              Para todas las demás aplicaciones y tipos de archivo, la protección genérica proporciona un nivel de protección que incluye encapsulación de archivos mediante el tipo de archivo .pfile, y autenticación para comprobar si un usuario está autorizado para abrir el archivo.                                                                                                                                                              |
+|       Protección       | Los archivos están completamente cifrados y la protección se aplica de las siguientes maneras:<br /><br />- Antes de presentar el contenido protegido, se debe autenticar correctamente a aquellas personas que reciben el archivo por correo electrónico o a las que se les concede acceso a él mediante permisos de archivo o recurso compartido.<br /><br />- Además, cuando el contenido se presenta en el Visor de IP (en el caso de archivos de texto e imagen protegidos) o en la aplicación asociada (en el caso de todos los demás tipos de archivo admitidos), se aplican completamente los derechos de uso y la directiva definida por el propietario del contenido cuando se protegen los archivos. | La protección de los archivos se aplica de las siguientes formas:<br /><br />- Antes de presentar el contenido protegido, se debe autenticar correctamente a aquellas personas que están autorizadas para abrir el archivo o a las que se les proporciona acceso a él. Si la autorización da error, el archivo no se abre.<br /><br />- Se muestran los derechos de uso y la directiva establecida por el propietario del contenido para informar a los usuarios autorizados de la directiva de uso previsto.<br /><br />- Se produce el registro de auditoría de los usuarios autorizados a abrir y obtener acceso a los archivos, pero no se aplican derechos de uso por parte de las aplicaciones no admitidas. |
+| Valor predeterminado para tipos de archivo |                                                                                         Es el nivel predeterminado de protección para los siguientes tipos de archivo:<br /><br />- Archivos de texto e imagen<br /><br />- Archivos de Microsoft Office (Word, Excel, PowerPoint)<br /><br />- Formato de documento portátil (.pdf)<br /><br />Para más información, consulte la sección siguiente, [Tipos de archivo y extensiones de nombre de archivo admitidos](#supported-file-types-and-file-name-extensions).                                                                                         |                                                                                                                                                                                                              Se trata de la protección predeterminada para todos los demás tipos de archivo (por ejemplo, .vsdx, .rtf, etc.) que no son compatibles con la protección completa.                                                                                                                                                                                                               |
+
 Puede cambiar el nivel de protección predeterminado que aplica la aplicación RMS sharing. Puede cambiar el nivel predeterminado de nativo a genérico, de genérico a nativo, e incluso impedir que la aplicación RMS sharing aplique protección. Para más información, consulte la sección [Cambio del nivel de protección predeterminado de los archivos](#changing-the-default-protection-level-of-files) de este artículo.
 
 ## <a name="supported-file-types-and-file-name-extensions"></a>Tipos de archivo y extensiones de nombre de archivo admitidos
@@ -60,22 +62,23 @@ En el caso de los archivos que están protegidos de manera genérica, la extensi
 > [!WARNING]
 > Si dispone de firewalls, servidores proxy web o software de seguridad que inspeccionan o realizan acciones en función de las extensiones de nombre de archivo, puede que tenga que volver a configurar estos para admitir las nuevas extensiones de nombre de archivo.
 
-|Extensión de nombre de archivo original|Extensión de nombre de archivo con protección de RMS|
-|--------------------------------|-------------------------------------|
-|.txt|.ptxt|
-|.xml|.pxml|
-|.jpg|.pjpg|
-|.jpeg|.pjeg|
-|.pdf|.ppdf|
-|.png|.ppng|
-|.tif|.ptif|
-|.tiff|.ptiff|
-|.bmp|.pbmp|
-|.gif|.pgif|
-|.jpe|.pjpe|
-|.jfif|.pjfif|
-|.jt|.pjt|
-¹ Representación de PDF con tecnología Foxit. Copyright © 2003–2014 by Foxit Corporation.
+| Extensión de nombre de archivo original | Extensión de nombre de archivo con protección de RMS |
+|------------------------------|-----------------------------------|
+|             .txt             |               .ptxt               |
+|             .xml             |               .pxml               |
+|             .jpg             |               .pjpg               |
+|            .jpeg             |               .pjeg               |
+|             .pdf             |               .ppdf               |
+|             .png             |               .ppng               |
+|             .tif             |               .ptif               |
+|            .tiff             |              .ptiff               |
+|             .bmp             |               .pbmp               |
+|             .gif             |               .pgif               |
+|             .jpe             |               .pjpe               |
+|            .jfif             |              .pjfif               |
+|             .jt              |               .pjt                |
+
+¹ Representación de PDF con tecnología Foxit. Copyright © 2003–2014 by Foxit Corporation.
 
 En la tabla siguiente se enumeran los tipos de archivo que admite de forma nativa la aplicación Microsoft Rights Management sharing en Microsoft Office 2016, Office 2013 y Office 2010. En estos archivos, la extensión de nombre de archivo permanece igual después de que el archivo se ha protegido con el servicio de Rights Management.
 

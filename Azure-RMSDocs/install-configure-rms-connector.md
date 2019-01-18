@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c0fc5812eedd7cce5c0e17231d9ee19dbf4edd1b
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: 57dd5faad33681bbf87045b61335e11baaa973a2
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305682"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54393967"
 ---
 # <a name="installing-and-configuring-the-azure-rights-management-connector"></a>Instalación y configuración del conector de Azure Rights Management
 
@@ -53,7 +53,7 @@ Antes de empezar, asegúrese de que ha revisado y comprobado los [requisitos pre
 Para continuar, escriba una cuenta y una contraseña para configurar el conector RMS.
 
 ## <a name="entering-credentials"></a>Introducción de credenciales
-Para poder configurar el conector RMS, debe introducir las credenciales para una cuenta en que tenga suficientes privilegios para configurar el conector RMS. Por ejemplo, puede escribir **admin@contoso.com** y luego especificar la contraseña para esta cuenta.
+Para poder configurar el conector RMS, debe introducir las credenciales para una cuenta en que tenga suficientes privilegios para configurar el conector RMS. Por ejemplo, puede escribir <strong>admin@contoso.com</strong> y luego especificar la contraseña para esta cuenta.
 
 Esta cuenta no requiere la autenticación multifactor (MFA) porque la herramienta de administración de Microsoft Rights Management no admite MFA para esta cuenta. 
 
@@ -63,40 +63,40 @@ Además, si implementó [controles de incorporación](activate-service.md#config
 
 Puede usar una cuenta que tenga solo uno de los privilegios siguientes:
 
--   **Administrador global para el inquilino**: una cuenta de administrador global para el inquilino de Office 365 de Azure AD.
+- **Administrador global para el inquilino**: una cuenta de administrador global para el inquilino de Office 365 de Azure AD.
 
--   **Administrador global de Azure Rights Management**: una cuenta de Azure Active Directory a la que se le ha asignado el rol de administrador global de Azure RMS.
+- **Administrador global de Azure Rights Management**: una cuenta de Azure Active Directory a la que se le ha asignado el rol de administrador global de Azure RMS.
 
--   **Administrador de conector de Azure Rights Management**: Una cuenta de Azure Active Directory que tiene garantizados los permisos para instalar y administrar el conector RMS para la organización.
+- **Administrador de conector de Azure Rights Management**: Una cuenta de Azure Active Directory que tiene garantizados los permisos para instalar y administrar el conector RMS para la organización.
 
-    > [!NOTE]
-    > El rol de administrador global de Azure Rights Management y el rol de administrador del conector de Azure Rights Management se asignan a las cuentas mediante el cmdlet de Azure RMS [Add-AadrmRoleBasedAdministrator](/powershell/module/aadrm/add-aadrmrolebasedadministrator).
-    > 
-    > Para ejecutar el conector RMS con los privilegios mínimos, cree una cuenta dedicada para este propósito y después asigne el rol de administrador del conector de Azure RMS de la siguiente forma:
-    >
-    > 1.  Si no lo ha hecho ya, descargue e instale Windows PowerShell para Rights Management. Para más información, vea [Instalación del módulo de PowerShell para AADRM](install-powershell.md).
-    >
-    >     Inicie Windows PowerShell con el comando **Ejecutar como administrador** y establezca conexión con el servicio Azure RMS mediante el comando [Connect-AadrmService](/powershell/module/aadrm/connect-aadrmservice):
-    >
-    >     ```
-    >     Connect-AadrmService                   //provide Office 365 tenant administrator or Azure RMS global administrator credentials
-    >     ```
-    > 2.  Luego ejecute el comando [Add-AadrmRoleBasedAdministrator](/powershell/module/aadrm/add-aadrmrolebasedadministrator) mediante solo uno de los parámetros siguientes:
-    >
-    >     ```
-    >     Add-AadrmRoleBasedAdministrator -EmailAddress <email address> -Role "ConnectorAdministrator"
-    >     ```
-    >
-    >     ```
-    >     Add-AadrmRoleBasedAdministrator -ObjectId <object id> -Role "ConnectorAdministrator"
-    >     ```
-    >
-    >     ```
-    >     Add-AadrmRoleBasedAdministrator -SecurityGroupDisplayName <group Name> -Role "ConnectorAdministrator"
-    >     ```
-    >     Por ejemplo, escriba: **Add-AadrmRoleBasedAdministrator -EmailAddress melisa@contoso.com -Role "ConnectorAdministrator"**
-    >
-    >     Aunque estos comandos asignan el rol de administrador de conector, aquí también puede usar el rol GlobalAdministrator.
+  > [!NOTE]
+  > El rol de administrador global de Azure Rights Management y el rol de administrador del conector de Azure Rights Management se asignan a las cuentas mediante el cmdlet de Azure RMS [Add-AadrmRoleBasedAdministrator](/powershell/module/aadrm/add-aadrmrolebasedadministrator).
+  > 
+  > Para ejecutar el conector RMS con los privilegios mínimos, cree una cuenta dedicada para este propósito y después asigne el rol de administrador del conector de Azure RMS de la siguiente forma:
+  > 
+  > 1. Si no lo ha hecho ya, descargue e instale Windows PowerShell para Rights Management. Para más información, vea [Instalación del módulo de PowerShell para AADRM](install-powershell.md).
+  > 
+  >    Inicie Windows PowerShell con el comando **Ejecutar como administrador** y establezca conexión con el servicio Azure RMS mediante el comando [Connect-AadrmService](/powershell/module/aadrm/connect-aadrmservice):
+  > 
+  >    ```
+  >    Connect-AadrmService                   //provide Office 365 tenant administrator or Azure RMS global administrator credentials
+  >    ```
+  > 2. Luego ejecute el comando [Add-AadrmRoleBasedAdministrator](/powershell/module/aadrm/add-aadrmrolebasedadministrator) mediante solo uno de los parámetros siguientes:
+  > 
+  >    ```
+  >    Add-AadrmRoleBasedAdministrator -EmailAddress <email address> -Role "ConnectorAdministrator"
+  >    ```
+  > 
+  >    ```
+  >    Add-AadrmRoleBasedAdministrator -ObjectId <object id> -Role "ConnectorAdministrator"
+  >    ```
+  > 
+  >    ```
+  >    Add-AadrmRoleBasedAdministrator -SecurityGroupDisplayName <group Name> -Role "ConnectorAdministrator"
+  >    ```
+  >    Por ejemplo, escriba: **Add-AadrmRoleBasedAdministrator -EmailAddress melisa@contoso.com -Role "ConnectorAdministrator"**
+  > 
+  >    Aunque estos comandos asignan el rol de administrador de conector, aquí también puede usar el rol GlobalAdministrator.
 
 Durante el proceso de instalación del conector RMS, se valida e instala todo el software que sea un requisito previo, se instala Internet Information Services (IIS) si ya no lo está, y se instalará y configurará el software del conector. Además, se prepara RMS para su configuración mediante la creación de los siguientes elementos:
 

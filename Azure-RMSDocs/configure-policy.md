@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 6afbf2e95f6e9d21d1bfa9c4c05df288accf716d
-ms.sourcegitcommit: f13c6db055c1fc69cf92e47609465270a42bbdac
+ms.openlocfilehash: 3085799d9cb8da168c68a1a2eea04528daeb7737
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54085082"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394044"
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>Configuración de la directiva de Azure Information Protection
 
@@ -57,11 +57,11 @@ Para iniciar sesión en Azure Portal con objeto de configurar y administrar Azur
 
 - Use una cuenta que tenga uno de los siguientes [roles de administrador](/azure/active-directory/active-directory-assign-admin-roles-azure-portal):
     
-    - **Administrador de Information Protection**
+  - **Administrador de Information Protection**
 
-    - **Administrador de seguridad**
+  - **Administrador de seguridad**
 
-    - **Administrador global/Administrador de empresa**
+  - **Administrador global/Administrador de empresa**
     
     > [!NOTE] 
     > Si su inquilino se ha migrado al almacén de etiquetado unificado, la cuenta también debe tener permisos de acceso al Centro de seguridad y cumplimiento de Office 365 para administrar etiquetas desde Azure Portal. [Más información](configure-policy-migrate-labels.md#important-information-about-administrative-roles)

@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: c5bbf37e-f1bf-4010-a60f-37177c9e9b39
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 77037f5ab82e7b36899c4b1bdb2399d27b662a5d
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: afa69f81341a025037aba63d0d4acb6c404bdc46
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305052"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394028"
 ---
 # <a name="step-2-hsm-protected-key-to-hsm-protected-key-migration"></a>Paso 2: Migración entre claves protegidas por HSM
 
@@ -46,9 +46,9 @@ El administrador del Almacén de claves de Azure realiza estos procedimientos.
 
 1. Para cada clave de SLC exportada que desee almacenar en Azure Key Vault, siga las instrucciones de la documentación de Azure Key Vault, utilizando para ello la sección [Implementación del método Aportar tu propia clave (BYOK) en el Almacén de claves de Azure](/azure/key-vault/key-vault-hsm-protected-keys#implementing-bring-your-own-key-byok-for-azure-key-vault) con la siguiente excepción:
 
-    - Como ya tiene el equivalente de la implementación de AD RMS, no siga los pasos que se indican en **Generar su clave de inquilino**. En su lugar, identifique la clave usada por el servidor de AD RMS de la instalación de Thales y use esa clave durante la migración. Los archivos de claves cifradas de Thales suelen denominarse **key<*nombreDeAplicaciónDeClave*><*identificadorDeClave*>** de forma local en el servidor.
+   - Como ya tiene el equivalente de la implementación de AD RMS, no siga los pasos que se indican en **Generar su clave de inquilino**. En su lugar, identifique la clave usada por el servidor de AD RMS de la instalación de Thales y use esa clave durante la migración. Los archivos de claves cifradas de Thales suelen denominarse **key<*nombreDeAplicaciónDeClave*><*identificadorDeClave*>** de forma local en el servidor.
 
-    Cuando se cargue la clave en el Almacén de claves de Azure, se mostrarán las propiedades de la clave, incluido el identificador de clave. Tendrá un aspecto similar a https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333. Anote esta dirección URL, ya que el administrador de Azure Information Protection necesita indicar al servicio Azure Rights Management que use esta clave para su clave de inquilino.
+     Cuando se cargue la clave en el Almacén de claves de Azure, se mostrarán las propiedades de la clave, incluido el identificador de clave. Tendrá un aspecto similar a https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333. Anote esta dirección URL, ya que el administrador de Azure Information Protection necesita indicar al servicio Azure Rights Management que use esta clave para su clave de inquilino.
 
 2. En la estación de trabajo conectada a Internet, en una sesión de PowerShell, use el cmdlet [Set-AzureRmKeyVaultAccessPolicy](/powershell/module/azurerm.keyvault/set-azurermkeyvaultaccesspolicy) para autorizar a la entidad de servicio de Azure Rights Management para que obtenga acceso al almacén de claves donde se almacenará la clave de inquilino de Azure Information Protection. Los permisos necesarios son decrypt, encrypt, unwrapkey, wrapkey, verify y sign.
     

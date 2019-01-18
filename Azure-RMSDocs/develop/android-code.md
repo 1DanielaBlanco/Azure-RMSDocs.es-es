@@ -12,21 +12,21 @@ ms.assetid: 58CC2E50-1E4D-4621-A947-25312C3FF519
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: a634cea9cf6665b5db08fdb359e6a69cd507a47f
-ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
+ms.openlocfilehash: 5d65ff3a8f6b3356e08ced78100c33c2774568e1
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54070339"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54393610"
 ---
 # <a name="android-code-examples"></a>Código de ejemplo de Android
 
 En este artículo se muestra cómo codificar elementos para la versión Android de RMS SDK.
 
-**Nota:** En este artículo, el término _MSIPC_ (Microsoft Information Protection and Control) se refiere al proceso de cliente.
+**Nota** En este artículo, el término _MSIPC_ (Microsoft Information Protection and Control) se refiere al proceso de cliente.
 
 
-## <a name="using-the-microsoft-rights-management-sdk42---key-scenarios"></a>Uso de Microsoft Rights Management SDK 4.2: escenarios clave
+## <a name="using-the-microsoft-rights-management-sdk-42---key-scenarios"></a>Uso de Microsoft Rights Management SDK 4.2: escenarios clave
 
 Estos ejemplos de código se toman de una aplicación de ejemplo más grande que representa los escenarios de desarrollo importantes para la orientación de este SDK. Muestran cómo utilizar:
 
@@ -111,79 +111,81 @@ La aplicación de ejemplo *MSIPCSampleApp* está disponible para su uso con este
     **Descripción**: en este paso va a usar ADAL para implementar un objeto [AuthenticationRequestCallback](https://msdn.microsoft.com/library/dn758255.aspx) con los parámetros de autenticación de ejemplo. Para más información, consulte [Biblioteca de autenticación de Azure AD (ADAL)](https://msdn.microsoft.com/library/jj573266.aspx).
 
 
-    ``` java
-        class MsipcAuthenticationCallback implements AuthenticationRequestCallback
-        {
+~~~
+``` java
+    class MsipcAuthenticationCallback implements AuthenticationRequestCallback
+    {
 
-        …
+    …
 
-        @Override
-        public void getToken(Map<String, String> authenticationParametersMap,
-                             final AuthenticationCompletionCallback authenticationCompletionCallbackToMsipc)
+    @Override
+    public void getToken(Map<String, String> authenticationParametersMap,
+                         final AuthenticationCompletionCallback authenticationCompletionCallbackToMsipc)
+    {
+        String authority = authenticationParametersMap.get("oauth2.authority");
+        String resource = authenticationParametersMap.get("oauth2.resource");
+        String userId = authenticationParametersMap.get("userId");
+        final String userHint = (userId == null)? "" : userId;
+        AuthenticationContext authenticationContext = App.getInstance().getAuthenticationContext();
+        if (authenticationContext == null || !authenticationContext.getAuthority().equalsIgnoreCase(authority))
         {
-            String authority = authenticationParametersMap.get("oauth2.authority");
-            String resource = authenticationParametersMap.get("oauth2.resource");
-            String userId = authenticationParametersMap.get("userId");
-            final String userHint = (userId == null)? "" : userId;
-            AuthenticationContext authenticationContext = App.getInstance().getAuthenticationContext();
-            if (authenticationContext == null || !authenticationContext.getAuthority().equalsIgnoreCase(authority))
+            try
             {
-                try
-                {
-                    authenticationContext = new AuthenticationContext(App.getInstance().getApplicationContext(), authority, …);
-                    App.getInstance().setAuthenticationContext(authenticationContext);
-                }
-                catch (NoSuchAlgorithmException e)
-                {
-                    …
-                    authenticationCompletionCallbackToMsipc.onFailure();
-                }
-                catch (NoSuchPaddingException e)
-                {
-                    …
-                    authenticationCompletionCallbackToMsipc.onFailure();
-                }
-           }
-            App.getInstance().getAuthenticationContext().acquireToken(mParentActivity, resource, mClientId, mRedirectURI, userId, mPromptBehavior,
-                           "&USERNAME=" + userHint, new AuthenticationCallback<AuthenticationResult>()
+                authenticationContext = new AuthenticationContext(App.getInstance().getApplicationContext(), authority, …);
+                App.getInstance().setAuthenticationContext(authenticationContext);
+            }
+            catch (NoSuchAlgorithmException e)
+            {
+                …
+                authenticationCompletionCallbackToMsipc.onFailure();
+            }
+            catch (NoSuchPaddingException e)
+            {
+                …
+                authenticationCompletionCallbackToMsipc.onFailure();
+            }
+       }
+        App.getInstance().getAuthenticationContext().acquireToken(mParentActivity, resource, mClientId, mRedirectURI, userId, mPromptBehavior,
+                       "&USERNAME=" + userHint, new AuthenticationCallback<AuthenticationResult>()
+                        {
+                            @Override
+                            public void onError(Exception exc)
                             {
-                                @Override
-                                public void onError(Exception exc)
+                                …
+                                if (exc instanceof AuthenticationCancelError)
                                 {
-                                    …
-                                    if (exc instanceof AuthenticationCancelError)
-                                    {
-                                         …
-                                        authenticationCompletionCallbackToMsipc.onCancel();
-                                    }
-                                    else
-                                    {
-                                         …
-                                        authenticationCompletionCallbackToMsipc.onFailure();
-                                    }
+                                     …
+                                    authenticationCompletionCallbackToMsipc.onCancel();
                                 }
-
-                                @Override
-                                public void onSuccess(AuthenticationResult result)
+                                else
                                 {
-                                    …
-                                    if (result == null || result.getAccessToken() == null
-                                            || result.getAccessToken().isEmpty())
-                                    {
-                                         …
-                                    }
-                                    else
-                                    {
-                                        // request is successful
-                                        …
-                                        authenticationCompletionCallbackToMsipc.onSuccess(result.getAccessToken());
-                                    }
+                                     …
+                                    authenticationCompletionCallbackToMsipc.onFailure();
                                 }
                             }
 
-                            );
-                      }
-    ```
+                            @Override
+                            public void onSuccess(AuthenticationResult result)
+                            {
+                                …
+                                if (result == null || result.getAccessToken() == null
+                                        || result.getAccessToken().isEmpty())
+                                {
+                                     …
+                                }
+                                else
+                                {
+                                    // request is successful
+                                    …
+                                    authenticationCompletionCallbackToMsipc.onSuccess(result.getAccessToken());
+                                }
+                            }
+                        }
+
+                        );
+                  }
+```
+~~~
 
 - **Paso 3**: compruebe si existe el derecho de **edición** para este usuario con este contenido a través del método [UserPolicy.accessCheck](https://msdn.microsoft.com/library/dn790885.aspx).
 
@@ -390,36 +392,38 @@ Este escenario comienza con la obtención de una lista de plantillas, la selecci
             };
 
 
-    try
-    {
-      ...
+~~~
+try
+{
+  ...
 
-      // Read the serializedContentPolicyLength from the inputStream.
-      long serializedContentPolicyLength = readUnsignedInt(inputStream);
+  // Read the serializedContentPolicyLength from the inputStream.
+  long serializedContentPolicyLength = readUnsignedInt(inputStream);
 
-      // Read the PL bytes from the input stream using the PL size.
-      byte[] serializedContentPolicy = new byte[(int)serializedContentPolicyLength];
-      inputStream.read(serializedContentPolicy);
+  // Read the PL bytes from the input stream using the PL size.
+  byte[] serializedContentPolicy = new byte[(int)serializedContentPolicyLength];
+  inputStream.read(serializedContentPolicy);
 
-      ...
+  ...
 
-      UserPolicy.acquire(serializedContentPolicy, null, mRmsAuthCallback, PolicyAcquisitionFlags.NONE,
-              userPolicyCreationCallbackFromSerializedContentPolicy);
-    }
-    catch (com.microsoft.rightsmanagement.exceptions.InvalidParameterException e)
-    {
-      ...
-    }
-    catch (IOException e)
-    {
-      ...
-    }
-    ```
+  UserPolicy.acquire(serializedContentPolicy, null, mRmsAuthCallback, PolicyAcquisitionFlags.NONE,
+          userPolicyCreationCallbackFromSerializedContentPolicy);
+}
+catch (com.microsoft.rightsmanagement.exceptions.InvalidParameterException e)
+{
+  ...
+}
+catch (IOException e)
+{
+  ...
+}
+```
+~~~
 
 
-- **Paso 2**: cree un [CustomProtectedInputStream](https://msdn.microsoft.com/library/dn758271.aspx) con [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx) del **Paso 1**.
+- **Step 2**: Create a [CustomProtectedInputStream](https://msdn.microsoft.com/library/dn758271.aspx) using the [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx) from **Step 1**.
 
-    **Origen**: *MsipcTaskFragment.java*
+    **Source**: *MsipcTaskFragment.java*
 
     ``` java
       CreationCallback<CustomProtectedInputStream> customProtectedInputStreamCreationCallback = new CreationCallback<CustomProtectedInputStream>()
@@ -488,9 +492,9 @@ Este escenario comienza con la obtención de una lista de plantillas, la selecci
     }
     ```
 
-- **Paso 3**: lea contenido de [CustomProtectedInputStream](https://msdn.microsoft.com/library/dn758271.aspx) en *mDecryptedContent* y cierre.
+- **Step 3**: Read content from the [CustomProtectedInputStream](https://msdn.microsoft.com/library/dn758271.aspx) into *mDecryptedContent* then close.
 
-    **Origen**: *MsipcTaskFragment.java*
+    **Source**: *MsipcTaskFragment.java*
 
     ``` java
     @Override
@@ -523,13 +527,13 @@ Este escenario comienza con la obtención de una lista de plantillas, la selecci
     }
     ```
 
-### <a name="scenario-create-a-custom-protected-file-using-a-custom-policy"></a>Escenario: Creación de un archivo protegido personalizado mediante una directiva personalizada
+### Scenario: Create a custom protected file using a custom policy
 
-- **Paso 1**: con una dirección de correo electrónico proporcionada por el usuario, cree un descriptor de la directiva.
+- **Step 1**: With an email address provided by the user, create a policy descriptor.
 
-    **Origen**: *MsipcTaskFragment.java*
+    **Source**: *MsipcTaskFragment.java*
 
-    **Descripción**: en la práctica, los siguientes objetos se crearían con entradas de usuario desde la interfaz de dispositivo: [UserRights](https://msdn.microsoft.com/library/dn790911.aspx) y [PolicyDescriptor](https://msdn.microsoft.com/library/dn790843.aspx).
+    **Description**: In practice, the following objects would be created by using user inputs from the device interface; [UserRights](https://msdn.microsoft.com/library/dn790911.aspx) and [PolicyDescriptor](https://msdn.microsoft.com/library/dn790843.aspx).
 
     ``` java
       // create userRights list
@@ -546,9 +550,9 @@ Este escenario comienza con la obtención de una lista de plantillas, la selecci
     ```
 
 
-- **Paso 2**: cree una [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx) personalizada del descriptor de la directiva, *selectedDescriptor*.
+- **Step 2**: Create a custom [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx) from the policy descriptor, *selectedDescriptor*.
 
-    **Origen**: *MsipcTaskFragment.java*
+    **Source**: *MsipcTaskFragment.java*
 
     ``` java
        mIAsyncControl = UserPolicy.create((PolicyDescriptor)selectedDescriptor,
@@ -556,9 +560,9 @@ Este escenario comienza con la obtención de una lista de plantillas, la selecci
     ```
 
 
-- **Paso 3**: cree y escriba contenido en [CustomProtectedOutputStream](https://msdn.microsoft.com/library/dn758274.aspx) y cierre.
+- **Step 3**: Create and write content to the [CustomProtectedOutputStream](https://msdn.microsoft.com/library/dn758274.aspx) and then close.
 
-    **Origen**: *MsipcTaskFragment.java*
+    **Source**: *MsipcTaskFragment.java*
 
     ``` java
     File file = new File(filePath);

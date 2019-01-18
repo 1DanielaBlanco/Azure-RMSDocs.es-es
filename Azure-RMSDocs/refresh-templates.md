@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 10e381e68c75f2f401439ee330bf952b01b22c30
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: 178e191a4099e0e077a45892b3b72310a995a528
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305291"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394004"
 ---
 # <a name="refreshing-templates-for-users-and-services"></a>Actualización de plantillas para usuarios y servicios
 
@@ -69,30 +69,30 @@ Si modifica el Registro de los equipos que ejecutan Office 2016, Office 2013 o l
 
 ### <a name="to-force-an-immediate-refresh"></a>Para forzar una actualización inmediata
 
-1.  Con un editor del Registro, elimine los datos del valor **LastUpdatedTime** . Por ejemplo, en los datos puede aparecer **2015-04-20T15:52**. Elimine 2015-04-20T15:52 para que no se muestre ningún dato. Use la información siguiente para localizar la ruta de acceso del Registro y eliminar estos datos del valor del Registro.
+1. Con un editor del Registro, elimine los datos del valor **LastUpdatedTime** . Por ejemplo, en los datos puede aparecer **2015-04-20T15:52**. Elimine 2015-04-20T15:52 para que no se muestre ningún dato. Use la información siguiente para localizar la ruta de acceso del Registro y eliminar estos datos del valor del Registro.
 
-    **Ruta de acceso del Registro:** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC\\<*MicrosoftRMS_FQDN*>\Template\\<*user_alias*>
+   **Ruta de acceso del Registro:** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC\\<*MicrosoftRMS_FQDN*>\Template\\<*user_alias*>
 
-    **Tipo:** REG_SZ
+   **Tipo:** REG_SZ
 
-    **Valor:** LastUpdatedTime
+   **Valor:** LastUpdatedTime
 
-    > [!TIP]
-    > En la ruta de acceso del Registro, <*MicrosoftRMS_FQDN*> hace referencia al FQDN de servicio de Microsoft RMS. Si desea comprobar este valor:
+   > [!TIP]
+   > En la ruta de acceso del Registro, <*MicrosoftRMS_FQDN*> hace referencia al FQDN de servicio de Microsoft RMS. Si desea comprobar este valor:
+   > 
+   > Ejecute el cmdlet [Get-AadrmConfiguration](/powershell/module/aadrm/get-aadrmconfiguration) para Azure RMS. Si aún no ha instalado el módulo de Windows PowerShell para Azure RMS, vea [Instalación del módulo de PowerShell para AADRM](install-powershell.md).
+   > 
+   > En la salida, identifique el valor **LicensingIntranetDistributionPointUrl** .
+   > 
+   > Por ejemplo: **LicensingIntranetDistributionPointUrl   : https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing**
+   > 
+   > En el valor, quite **https://** y **/_wmcs/licensing** de esta cadena. El valor restante es el FQDN de servicio de Microsoft RMS. En nuestro ejemplo, el FQDN de servicio de Microsoft RMS sería el valor siguiente:
+   > 
+   > **5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
 
-    > Ejecute el cmdlet [Get-AadrmConfiguration](/powershell/module/aadrm/get-aadrmconfiguration) para Azure RMS. Si aún no ha instalado el módulo de Windows PowerShell para Azure RMS, vea [Instalación del módulo de PowerShell para AADRM](install-powershell.md).
-    >
-    > En la salida, identifique el valor **LicensingIntranetDistributionPointUrl** .
-    >
-    > Por ejemplo: **LicensingIntranetDistributionPointUrl   : https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing**
-    > 
-    > En el valor, quite **https://** y **/_wmcs/licensing** de esta cadena. El valor restante es el FQDN de servicio de Microsoft RMS. En nuestro ejemplo, el FQDN de servicio de Microsoft RMS sería el valor siguiente:
-    >
-    >**5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
+2. Elimine la carpeta siguiente y todos los archivos que contenga: **%localappdata%\Microsoft\MSIPC\Templates**
 
-2.  Elimine la carpeta siguiente y todos los archivos que contenga: **%localappdata%\Microsoft\MSIPC\Templates**
-
-3.  Reinicie las aplicaciones de Office y las instancias del Explorador de archivos.
+3. Reinicie las aplicaciones de Office y las instancias del Explorador de archivos.
 
 
 ## <a name="see-also"></a>Consulte también

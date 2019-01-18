@@ -12,12 +12,12 @@ ms.assetid: 200D9B23-F35D-4165-9AC4-C482A5CE1D28
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 3922236e6118045b6f01f55926a9c6de8aa9df72
-ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
+ms.openlocfilehash: 2cdd5f88edd8cad446ebaecbdd4065fdc18de51e
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54071648"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394108"
 ---
 # <a name="how-to-register-and-rms-enable-your-app-with-azure-ad"></a>Cómo registrar y habilitar para RMS la aplicación con Azure AD
 
@@ -51,7 +51,8 @@ Los siguientes recursos contienen instrucciones para configurar el entorno y usa
 -   [Windows Azure Active Directory Authentication Library (ADAL) for dotnet](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet) (Biblioteca de autenticación de Windows Azure Active Directory (ADAL) para dotnet)
 -   En cuanto al SDK de Linux, la biblioteca de ADAL viene empaquetada con el origen del SDK, disponible en [Github](https://github.com/AzureAD/rms-sdk-for-cpp).
 
->[!NOTE]   Se recomienda usar una de las ADAL, aunque use otras bibliotecas de autenticación.
+> [!NOTE]
+> Se recomienda usar una de las ADAL, aunque use otras bibliotecas de autenticación.
 
 ### <a name="authentication-parameters"></a>Parámetros de autenticación
 
@@ -64,14 +65,15 @@ ADAL necesita varias informaciones para autenticar correctamente un usuario en A
 y proviene del paso de registro anterior mediante el Portal de Azure.
 - **URI de redirección:** proporciona la biblioteca de autenticación con un destino de URI para el código de autenticación. Formatos específicos que se necesitan para iOS y Android. Estos se explican en los archivos Léame de los repositorios de GitHub correspondientes de ADAL. Este valor proviene del paso de registro anterior mediante el Portal de Azure.
 
->[!NOTE]
+> [!NOTE]
 > El **ámbito** no se usa actualmente, pero no se descarta, de modo que está reservado para un futuro uso.
 
     Android: `msauth://packagename/Base64UrlencodedSignature`
 
     iOS: `<app-scheme>://<bundle-id>`
 
->[!NOTE]  Si la aplicación no respeta estas instrucciones, probablemente los flujos de trabajo de Azure RMS y Azure AD no funcionen y sean incompatibles con Microsoft.com. Es más, se corre el riesgo de infringir el contrato de licencia de Rights Management si se usa un identificador de cliente no válido en una aplicación de producción.
+> [!NOTE]
+> Si la aplicación no respeta estas instrucciones, probablemente los flujos de trabajo de Azure RMS y Azure AD no funcionen y sean incompatibles con Microsoft.com. Es más, se corre el riesgo de infringir el contrato de licencia de Rights Management si se usa un identificador de cliente no válido en una aplicación de producción.
 
 ### <a name="what-should-an-authentication-callback-implementation-look-like"></a>¿Qué apariencia debe tener una implementación de devolución de llamada de autenticación?
 **Ejemplos de código de autenticación:** este SDK tiene código de ejemplo que muestra el uso de las devoluciones de llamada de autenticación. Para su comodidad, estos ejemplos de código se muestran aquí, así como en cada uno de los siguientes temas vinculados.

@@ -12,12 +12,12 @@ ms.assetid: 396A2C19-3A00-4E9A-9088-198A48B15289
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 6f0fdcaf6d21047f28c470dc896a1cd64fee752d
-ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
+ms.openlocfilehash: 580dc90bae499a5cc64238a6157612bea5eb3282
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54071308"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394190"
 ---
 # <a name="developing-your-application"></a>Desarrollo de la aplicación
 
@@ -62,7 +62,7 @@ Siga estos pasos para crear a una entidad de servicio:
 - Conéctese al servicio en línea con las credenciales de usuario asignadas: `Connect-MsolService`
 - Cree a una nueva entidad de servicio mediante la ejecución de: `New-MsolServicePrincipal`
 - Proporcione un nombre para la entidad de servicio
-> Registre la clave simétrica y el id. de entidad de la aplicación para usarlos más adelante.
+  > Registre la clave simétrica y el id. de entidad de la aplicación para usarlos más adelante.
 
 *Salida de ejemplo*
 ![salida de cmdlet](../media/develop/output-of-NewMsolServicePrincipal.png)
@@ -80,8 +80,8 @@ El siguiente diagrama muestra un flujo de proceso y arquitectura de la aplicaci�
 ![resumen de diseño](../media/develop/design-summary.png)
 
 1. El usuario:
-  - Especifica la ruta de acceso del archivo que se va a proteger.
-  - Selecciona una plantilla o crea una directiva ad-hoc.
+   - Especifica la ruta de acceso del archivo que se va a proteger.
+   - Selecciona una plantilla o crea una directiva ad-hoc.
 2. La aplicación solicita la autenticación con AIP.
 3. AIP confirma la autenticación.
 4. La aplicación solicita plantillas a AIP.
@@ -216,16 +216,16 @@ Después de que todo se ha creado y está en ejecución, las salidas de la aplic
 ![aplicación de salida - paso 1](../media/develop/app-output-1.png)
 
 2. Se le pide que proporcione la ruta de acceso al archivo que se va a proteger.
-![salida de aplicación - paso 2](../media/develop/app-output-2.png)
+   ![salida de aplicación - paso 2](../media/develop/app-output-2.png)
 
 3. Se le pide que escriba la dirección de correo electrónico del propietario de la licencia (dicho propietario debe tener privilegios de administrador global en el inquilino de Azure AD).
-![salida de aplicación - paso 3](../media/develop/app-output-3.png)
+   ![salida de aplicación - paso 3](../media/develop/app-output-3.png)
 
 4. Escriba las direcciones de correo electrónico de los usuarios que tendrán derechos de acceso al archivo (deben ir separadas por un espacio).
-![salida de aplicación - paso 4](../media/develop/app-output-4.png)
+   ![salida de aplicación - paso 4](../media/develop/app-output-4.png)
 
 5. En la lista, seleccione los derechos que se concederán a los usuarios autorizados.
-![salida de aplicación - paso 5](../media/develop/app-output-5.png)
+   ![salida de aplicación - paso 5](../media/develop/app-output-5.png)
 
 6. Por último, especifique algunos metadatos de directiva: nombre de la directiva, descripción y nombre para mostrar del emisor (identificador de inquilino de Azure AD). ![salida de aplicación - paso 6](../media/develop/app-output-6.png)
 

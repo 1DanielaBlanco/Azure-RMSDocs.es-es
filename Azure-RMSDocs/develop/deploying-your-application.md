@@ -12,12 +12,12 @@ ms.assetid: 4B785564-6839-49ED-A243-E2A6DFF88B2E
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: daad2483fb850d06bbd62ff6b9a721160341d8b7
-ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
+ms.openlocfilehash: bc1e1e3dc66b3dee00dbfac7db11a1aaaeeab4e3
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54070322"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394304"
 ---
 # <a name="deploy-into-production"></a>Implementación en el entorno de producción
 
@@ -27,7 +27,7 @@ Este tema le guía por el proceso de implementación para la aplicación habilit
 Para poder lanzar una aplicación desarrollada con AIP y RMS, debe solicitar y completar un contrato formal con Microsoft.
 
 ### <a name="begin-the-process"></a>Inicio del proceso
-Obtenga su IPIA enviando un correo electrónico a **IPIA@microsoft.com** con la siguiente información:
+Obtenga su IPIA enviando un correo electrónico a <strong>IPIA@microsoft.com</strong> con la siguiente información:
 
 **Asunto:** Solicitud de IPIA para *nombre de la compañía*
 
@@ -38,7 +38,7 @@ En el cuerpo del correo electrónico, incluya:
 
 ### <a name="next-steps"></a>Pasos siguientes
 Tras la recepción de la solicitud de IPIA, le enviaremos un formulario (como un documento de Word).
-Revise los términos y las condiciones del IPIA y devuelva el formulario a **IPIA@microsoft.com** con la siguiente información:
+Revise los términos y las condiciones del IPIA y devuelva el formulario a <strong>IPIA@microsoft.com</strong> con la siguiente información:
 - Nombre legal de la empresa
 - Estado o provincia (Estados Unidos y Canadá) o el país de incorporación
 - Dirección URL de la empresa
@@ -54,7 +54,7 @@ Revise los términos y las condiciones del IPIA y devuelva el formulario a **IPI
 Cuando recibamos su formulario, le enviaremos el vínculo IPIA final para firmar digitalmente. Después de la firma, lo firmará el representante de Microsoft adecuado, con lo que el contrato quedará completado.
 
 ### <a name="already-have-a-signed-ipia"></a>¿Ya tiene un IPIA firmado?
-Si ya tiene un IPIA firmado y desea agregar un nuevo *identificador de aplicación* para una aplicación que se esté lanzando, envíe un correo electrónico a **IPIA@microsoft.com** y proporciónenos la siguiente información:
+Si ya tiene un IPIA firmado y desea agregar un nuevo *identificador de aplicación* para una aplicación que se esté lanzando, envíe un correo electrónico a <strong>IPIA@microsoft.com</strong> y proporciónenos la siguiente información:
 - Nombre de la aplicación de la empresa
 - Breve descripción de la aplicación
 - Identificador de inquilino de Azure (incluso si es igual que el anterior)

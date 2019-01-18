@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 29c79d3da5e82b0d5702a1d85a22608f9177d271
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: b1d46cb3c98c520ab6900f910f691af920337334
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305713"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54393469"
 ---
 # <a name="user-guide-classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Manual del usuario: Clasificación y protección de archivos o correos electrónicos mediante Azure Information Protection
 
@@ -138,13 +138,13 @@ La guía para administradores contiene una lista completa de los tipos de archiv
 
 2. En el cuadro de diálogo **Classify and protect - Azure Information Protection** (Clasificar y proteger: Azure Information Protection), use las etiquetas del mismo modo que en una aplicación de Office, que establece la clasificación y protección definidas por el administrador. 
 
-    - Si no se puede seleccionar ninguna etiqueta (aparecen atenuadas): el archivo seleccionado no admite la clasificación, pero puede protegerlo con permisos personalizados (paso 3). Por ejemplo:
+   - Si no se puede seleccionar ninguna etiqueta (aparecen atenuadas): el archivo seleccionado no admite la clasificación, pero puede protegerlo con permisos personalizados (paso 3). Por ejemplo:
 
-    ![Ninguna etiqueta disponible en el cuadro de diálogo Clasificar y proteger: Azure Information Protection**](../media/info-protect-dialog-labels-dimmed.png)
+     ![Ninguna etiqueta disponible en el cuadro de diálogo Clasificar y proteger: Azure Information Protection**](../media/info-protect-dialog-labels-dimmed.png)
     
-    - Si no ve las etiquetas en este cuadro de diálogo, pero sí la opción para la **protección predefinida por la empresa**: el cliente se ejecuta en [modo de solo protección](client-protection-only-mode.md). Seleccione una plantilla para aplicar la protección que el administrador ha configurado, o bien seleccione **Permisos personalizados** para especificar su propia configuración de protección y vaya al paso 4.
+   - Si no ve las etiquetas en este cuadro de diálogo, pero sí la opción para la **protección predefinida por la empresa**: el cliente se ejecuta en [modo de solo protección](client-protection-only-mode.md). Seleccione una plantilla para aplicar la protección que el administrador ha configurado, o bien seleccione **Permisos personalizados** para especificar su propia configuración de protección y vaya al paso 4.
     
-    ![Ninguna etiqueta en el cuadro de diálogo Clasificar y proteger: Azure Information Protection**](../media/info-protect-dialog-labels-protection-only.png)
+     ![Ninguna etiqueta en el cuadro de diálogo Clasificar y proteger: Azure Information Protection**](../media/info-protect-dialog-labels-protection-only.png)
     
 3. Si el administrador lo permite, puede especificar su propia configuración de protección en lugar de usar la configuración de protección que es posible que el administrador haya incluido con la etiqueta seleccionada. Para ello, seleccione **Proteger con permisos personalizados**.
     
@@ -154,15 +154,15 @@ La guía para administradores contiene una lista completa de los tipos de archiv
 
 4. Si ha seleccionado la opción de permisos personalizados, especifique ahora lo siguiente:
 
-    - **Seleccionar permisos**: seleccione el nivel de acceso que quiere que tengan las personas al proteger los archivos seleccionados.
+   - **Seleccionar permisos**: seleccione el nivel de acceso que quiere que tengan las personas al proteger los archivos seleccionados.
     
-    - **Seleccionar usuarios, grupos u organizaciones**: especifique las personas que deben tener los permisos seleccionados para los archivos. Escriba sus direcciones de correo electrónico completas, una dirección de correo electrónico de grupo o un nombre de dominio de la organización para todos los usuarios de esa organización. 
+   - **Seleccionar usuarios, grupos u organizaciones**: especifique las personas que deben tener los permisos seleccionados para los archivos. Escriba sus direcciones de correo electrónico completas, una dirección de correo electrónico de grupo o un nombre de dominio de la organización para todos los usuarios de esa organización. 
     
-    Como alternativa, puede usar el icono de la libreta de direcciones para seleccionar usuarios o grupos de la libreta de direcciones de Outlook.
+     Como alternativa, puede usar el icono de la libreta de direcciones para seleccionar usuarios o grupos de la libreta de direcciones de Outlook.
         
-    - **Expire access** (Expirar acceso): seleccione esta opción solo para archivos dependientes del tiempo, de modo que las personas que ha especificado no puedan abrir los archivos seleccionados después de una fecha determinada. Usted todavía podrá abrir el archivo original, pero después de la medianoche (de su zona horaria actual) del día que establezca, las personas que especifique no podrán abrir el archivo.
+   - **Expire access** (Expirar acceso): seleccione esta opción solo para archivos dependientes del tiempo, de modo que las personas que ha especificado no puedan abrir los archivos seleccionados después de una fecha determinada. Usted todavía podrá abrir el archivo original, pero después de la medianoche (de su zona horaria actual) del día que establezca, las personas que especifique no podrán abrir el archivo.
     
-    Tenga en cuenta que si esta configuración se estableció previamente mediante permisos personalizados desde una aplicación de Office 2010, la fecha de expiración especificada no aparece en este cuadro de diálogo, pero de todos modos está establecida. Este problema de visualización solo se genera cuando la fecha de expiración se configuró en Office 2010.
+     Tenga en cuenta que si esta configuración se estableció previamente mediante permisos personalizados desde una aplicación de Office 2010, la fecha de expiración especificada no aparece en este cuadro de diálogo, pero de todos modos está establecida. Este problema de visualización solo se genera cuando la fecha de expiración se configuró en Office 2010.
 
 5. Haga clic en **Aplicar** y espere a que aparezca el mensaje **Trabajo finalizado** para ver los resultados. A continuación, haga clic en **Cerrar**.
 

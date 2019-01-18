@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 13729d124ce0e49eddeda6c4c19aeae2c62eb8c6
-ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
+ms.openlocfilehash: 5aa86c3806dd23787d2661b4a4ac2e6850d1e907
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53174257"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54393889"
 ---
 # <a name="migration-phase-3---client-side-configuration"></a>Fase 3 de la migración: configuración del lado cliente
 
@@ -126,14 +126,14 @@ Si no puede realizar la migración de todos los clientes de Windows a la vez, ej
 
 1. Vuelva a los scripts de migración, **Migrate-Client.cmd** y **Migrate-User.cmd**, que extrajo previamente, cuando los descargó durante la [fase de preparación](migrate-from-ad-rms-phase1.md#step-2-prepare-for-client-migration).
 
-2.  Siga las instrucciones de **Migrate-Client.cmd** para modificar el script de modo que contenga la dirección URL del servicio Azure Rights Management del inquilino y también los nombres de servidor de las direcciones URL de licencias de intranet y extranet del clúster de AD RMS. Luego, incremente la versión del script como se ha explicado anteriormente. Una buena práctica para realizar el seguimiento de las versiones de script es usar la fecha actual en el siguiente formato: AAAAMMDD
+2. Siga las instrucciones de **Migrate-Client.cmd** para modificar el script de modo que contenga la dirección URL del servicio Azure Rights Management del inquilino y también los nombres de servidor de las direcciones URL de licencias de intranet y extranet del clúster de AD RMS. Luego, incremente la versión del script como se ha explicado anteriormente. Una buena práctica para realizar el seguimiento de las versiones de script es usar la fecha actual en el siguiente formato: AAAAMMDD
     
-    > [!IMPORTANT]
-    > Como antes, tenga cuidado y no incluya espacios adicionales antes ni después de las direcciones.
-    > 
-    > Además, si los servidores de AD RMS usan certificados de servidor SSL/TLS, compruebe si los valores de la dirección URL de administración de licencias incluyen el número de puerto **443** en la cadena. Por ejemplo: https://rms.treyresearch.net:443/_wmcs/licensing. Para encontrar esta información en la consola de Active Directory Rights Management Services, haga clic en el nombre del clúster y vea la información de **Detalles del clúster**. Si ve el número de puerto 443 incluido en la dirección URL, incluya este valor cuando modifique el script. Por ejemplo: https://rms.treyresearch.net:**443**. 
+   > [!IMPORTANT]
+   > Como antes, tenga cuidado y no incluya espacios adicionales antes ni después de las direcciones.
+   > 
+   > Además, si los servidores de AD RMS usan certificados de servidor SSL/TLS, compruebe si los valores de la dirección URL de administración de licencias incluyen el número de puerto **443** en la cadena. Por ejemplo: https://rms.treyresearch.net:443/_wmcs/licensing. Para encontrar esta información en la consola de Active Directory Rights Management Services, haga clic en el nombre del clúster y vea la información de **Detalles del clúster**. Si ve el número de puerto 443 incluido en la dirección URL, incluya este valor cuando modifique el script. Por ejemplo: https://rms.treyresearch.net:<strong>443</strong>. 
     
-    Si necesita recuperar la dirección URL de servicio de Azure Rights Management para *&lt;YourTenantURL&gt;*, consulte [Para identificar la dirección URL de servicio de Azure Rights Management](migrate-from-ad-rms-phase1.md#to-identify-your-azure-rights-management-service-url).
+   Si necesita recuperar la dirección URL de servicio de Azure Rights Management para *&lt;YourTenantURL&gt;*, consulte [Para identificar la dirección URL de servicio de Azure Rights Management](migrate-from-ad-rms-phase1.md#to-identify-your-azure-rights-management-service-url).
 
 3. Siguiendo las instrucciones del principio de este paso, configure los métodos de implementación de script para ejecutar **Migrate-Client.cmd** y **Migrate-User.cmd** en los equipos cliente Windows que usan los miembros del grupo AIPMigrated. 
 
