@@ -4,18 +4,18 @@ description: Instrucciones e información para administradores de una red empres
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/06/2018
+ms.date: 01/18/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: e66ad53b23a76a263d4ec74e184597db12fdaa9d
-ms.sourcegitcommit: 8deca8163a6adea73f28aaf300a958154f842e4a
+ms.openlocfilehash: 1ece9ab39045d1bb6f1388a33784a733618dd0d4
+ms.sourcegitcommit: 24c464bcb80db2d193cfd17ea8c264a327dcf54a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54210505"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54366207"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Guía para administradores del cliente de Azure Information Protection
 
@@ -198,11 +198,69 @@ Use el [historial de publicación de versiones y directiva de soporte técnico](
 
 ### <a name="upgrading-the-azure-information-protection-scanner"></a>Actualización del analizador de Azure Information Protection
 
+La forma de actualizar el analizador depende de si la actualización se realiza a la versión de disponibilidad general actual o a la versión preliminar actual.
+
+#### <a name="to-upgrade-the-scanner-to-the-current-ga-version"></a>Para actualizar el analizador a la versión de disponibilidad general actual
+
 Para actualizar el analizador de Azure Information Protection, instale la versión más reciente del cliente de Azure Information Protection. Luego realice la siguiente acción única. Después de hacerlo, no tendrá que volver a examinar los archivos que ya están analizados.
 
 - Ejecute [Update-AIPScanner](/powershell/module/azureinformationprotection/Update-AIPScanner) una vez que haya actualizado el cliente de Azure Information Protection. Se conservarán las opciones de configuración para el analizador y los repositorios. Se requiere la ejecución de este cmdlet para actualizar el esquema de base de datos del analizador y, en caso necesario, también se conceden permisos de eliminación en la base de datos del analizador a la cuenta de servicio del analizador. 
     
     Hasta que se ejecuta este cmdlet de actualización, el analizador no se ejecuta y normalmente verá el identificador de evento **1000** en el registro de eventos de Windows con el siguiente mensaje de error: **Nombre de objeto "ScannerStatus" no válido**.
+
+#### <a name="to-upgrade-the-scanner-to-the-current-preview-version"></a>Para actualizar el analizador a la versión preliminar actual
+
+> [!IMPORTANT]
+> Para obtener una ruta de actualización sencilla, no instale la versión preliminar del cliente de Azure Information Protection en el equipo que ejecuta el analizador como primer paso para actualizarlo. En su lugar, utilice las siguientes instrucciones de actualización.
+
+Para la versión preliminar actual del analizador, el proceso de actualización es distinto al de las versiones anteriores. La actualización automática del analizador lo cambia para que obtenga sus opciones de configuración de Azure Portal. Además, se actualiza el esquema para la base de datos de configuración del analizador, y también se cambia el nombre de AzInfoProtection de esta base de datos:
+
+- Si no especifica su propio nombre de perfil, se cambia el nombre de la base de datos de configuración por **AIPScanner_\<computer_name>**. 
+
+- Si especifica su propio nombre de perfil, se cambia el nombre de la base de datos de configuración por **AIPScanner_\<profile_name>**.
+
+Aunque es posible actualizar el analizador en un orden diferente, se recomiendan los pasos siguientes:
+
+1. Use Azure Portal para crear un perfil de analizador que incluya la configuración del el analizador y los repositorios de datos con cualquier configuración que necesiten. Para obtener ayuda con este paso, vea la sección [Configuración del analizador en Azure Portal](../deploy-aip-scanner-preview.md#configure-the-scanner-in-the-azure-portal) de las instrucciones de implementación del analizador en versión preliminar.
+    
+    Si el equipo que ejecuta el analizador está desconectado de Internet, aun así deberá realizar este paso. A continuación, en Azure Portal, use la opción **Exportar** para exportar el perfil del analizador a un archivo.
+
+2. En el equipo del analizador, detenga el servicio del analizador, **Analizador de Azure Information Protection**.
+
+3. Actualice el cliente de Azure Information Protection mediante la instalación de la versión preliminar actual desde el [Centro de descarga de Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=53018).
+
+4. En una sesión de PowerShell, ejecute el comando Update-AIPScanner con el mismo nombre de perfil que especificó en el paso 1. Por ejemplo: `Update-AIPScanner –Profile USWest`
+
+5. Solo si el analizador se ejecuta en un equipo sin conexión: Ahora ejecute [Import-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Import-AIPScannerConfiguration) y especifique el archivo que contiene la configuración exportada.
+
+6. Reinicie el servicio Analizador de Azure Information Protection, **Analizador de Azure Information Protection**.
+
+##### <a name="upgrading-in-a-different-order-to-the-recommended-steps"></a>Actualización en un orden diferente a los pasos recomendados
+
+Si no configura el analizador en Azure Portal antes de ejecutar el comando Update-AIPScanner, no tendrá un nombre de perfil para especificar que identifique las opciones de configuración del analizador para el proceso de actualización. 
+
+En este escenario, al configurar el analizador en Azure Portal, debe especificar exactamente el mismo nombre de perfil que usó cuando ejecutó el comando Update-AIPScanner. Si el nombre no coincide, el analizador no se configurará para su perfil. 
+
+> [!TIP]
+> Para identificar los analizadores que tienen este error de configuración, use la hoja **Azure Information Protection: Nodos** en Azure Portal.
+>  
+> Si se trata de analizadores que tienen conectividad a Internet, estos muestran su nombre de equipo con el número de versión preliminar del cliente de Azure Information Protection, pero no aparece ningún nombre de perfil. Solo los analizadores que tienen un número de versión 1.41.51.0 no deberían mostrar ningún nombre de perfil en esta hoja. 
+
+Si no especificó ningún nombre de perfil cuando ejecutó el comando Update-AIPScanner, el nombre de equipo se usa para crear automáticamente el nombre de perfil del analizador.
+
+#### <a name="moving-the-scanner-configuration-database-to-a-different-sql-server-instance"></a>Mover la base de datos de configuración del analizador a otra instancia de SQL Server
+
+En la versión preliminar actual, hay un problema conocido si intenta mover la base de datos de configuración del analizador a una nueva instancia de SQL Server después de ejecutar el comando de actualización.
+
+Si sabe que desea mover la base de datos de configuración del analizador para la versión preliminar, realice lo siguiente:
+
+1. Desinstale el analizador mediante [Uninstall-AIPScanner](/powershell/module/azureinformationprotection/Uninstall-AIPScanner).
+
+2. Si aún no ha actualizado a la versión preliminar del cliente de Azure Information Protection, hágalo ahora.
+
+3. Instale el analizador mediante [Install-AIPScanner](/powershell/module/azureinformationprotection/Install-AIPScanner) y después especifique la nueva instancia de SQL Server y el nombre de perfil.
+
+4. Opcional: Si no desea que el analizador vuelva a examinar todos los archivos, exporte la tabla ScannerFiles e impórtela a la nueva base de datos.
 
 ## <a name="uninstalling-the-azure-information-protection-client"></a>Desinstalación del cliente de Azure Information Protection
 

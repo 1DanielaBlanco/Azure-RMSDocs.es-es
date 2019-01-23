@@ -4,18 +4,18 @@ description: Instrucciones e información para que los administradores configure
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/12/2018
+ms.date: 01/16/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 983ecdc9-5631-48b8-8777-f4cbbb4934e8
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 5add56fb5c033243acccb5308b7b9569b0c72624
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: 108a77f6c78b49bfcd852ff94ef529d3a667a193
+ms.sourcegitcommit: 2c90f5bf11ec34ab94824a39ccab75bde71fc3aa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305206"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54314742"
 ---
 # <a name="admin-guide-configuring-and-using-document-tracking-for-azure-information-protection"></a>Guía del administrador: Configuración y uso de Seguimiento de documentos para Azure Information Protection
 
@@ -95,6 +95,16 @@ Para salir del modo de administrador, haga clic en la **X** junto a **Salir del 
 
 Para obtener instrucciones sobre cómo usar el sitio de seguimiento de documentos, consulte [Seguimiento y revocación de documentos](client-track-revoke.md) en el manual del usuario.
 
+### <a name="using-powershell-to-register-labeled-documents-with-the-document-tracking-site"></a>Uso de PowerShell para registrar documentos etiquetados con el sitio de seguimiento de documentos
+
+Esta opción solo está disponible para la versión preliminar actual del cliente de Azure Information Protection.
+
+Para poder realizar un seguimiento de un documento y revocarlo, primero debe registrarse en el sitio de seguimiento de documentos. Esta acción se ejecuta cuando los usuarios seleccionan la opción **Track and revoke** (Seguimiento y revocación) en el Explorador de archivos o en sus aplicaciones de Office cuando usan el cliente de Azure Information Protection. Para la aplicación Rights Management sharing, esta acción se ejecuta automáticamente cuando los usuarios seleccionan la opción **Uso compartido protegido**.
+
+Si etiqueta y protege archivos para los usuarios mediante el cmdlet [Set-AIPFileLabel](/powershell/azureinformationprotection/vlatest/set-aipfilelabel), puede usar el parámetro *EnableTracking* para registrar el archivo con el sitio de seguimiento de documentos. Por ejemplo:
+
+    Set-AIPFileLabel -Path C:\Projects\ -LabelId ade72bf1-4714-4714-4714-a325f824c55a -EnableTracking
+
 ## <a name="usage-logging-for-the-document-tracking-site"></a>Registro de uso del sitio de seguimiento de documentos
 
 Dos campos de los archivos de registro de uso se aplican al seguimiento de documentos: **AdminAction** y **ActingAsUser**.
@@ -105,9 +115,7 @@ Dos campos de los archivos de registro de uso se aplican al seguimiento de docum
 
 También hay tipos de solicitudes que registran cómo los usuarios y administradores usan el sitio de seguimiento de documentos. Por ejemplo, **RevokeAccess** es el tipo de solicitud cuando un usuario o un administrador en nombre de un usuario ha revocado un documento en el sitio de seguimiento de documentos. Use este tipo de solicitud en combinación con el campo AdminAction para determinar si el usuario ha revocado su propio documento (el campo AdminAction está vacío) o un administrador ha revocado un documento en nombre de un usuario (el campo AdminAction es true).
 
-
 Para obtener más información sobre el registro de uso, consulte [Registro y análisis del uso del servicio Azure Rights Management](../log-analyze-usage.md).
-
 
 
 ## <a name="next-steps"></a>Pasos siguientes

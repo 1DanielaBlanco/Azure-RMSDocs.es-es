@@ -4,18 +4,18 @@ description: Detalles técnicos sobre tipos de archivos, extensiones de nombres 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/04/2019
+ms.date: 01/16/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 444181d82c028feb50df12d55d279ecbeda97560
-ms.sourcegitcommit: 630f03a91f84d79219e04b4085bdfb5bc6478e88
+ms.openlocfilehash: cd0279bb45c04bc6f62c9eb20ffc006c7838b286
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54012014"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54393866"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>Guía del administrador: Tipos de archivos compatibles con el cliente de Azure Information Protection
 
@@ -56,9 +56,9 @@ Los siguientes tipos de archivo se pueden clasificar aunque no estén protegidos
 - **Digital Negative**: .dng
 
 - **Microsoft Office**: tipos de archivo en la siguiente tabla.
-    
+
     Los formatos de archivo compatibles para estos tipos de archivo son los formatos 97-2003 y los formatos Open XML de los siguientes programas de Office: Word, Excel, and PowerPoint.
-    
+
     |Tipo de archivo de Office|Tipo de archivo de Office|
     |----------------------------------|----------------------------------|
     |.doc<br /><br />.docm<br /><br />.docx<br /><br />.dot<br /><br />.dotm<br /><br />.dotx<br /><br />.potm<br /><br />.potx<br /><br />.pps<br /><br />.ppsm<br /><br />.ppsx<br /><br />.ppt<br /><br />.pptm<br /><br />.pptx<br /><br />.vdw<br /><br />.vsd|.vsdm<br /><br /> .vsdx<br /><br />.vss<br /><br />.vssm<br /><br />.vst<br /><br />.vstm<br /><br />.vssx<br /><br />.vstx<br /><br />.xls<br /><br />.xlsb<br /><br />.xlt<br /><br />.xlsm<br /><br />.xlsx<br /><br />.xltm<br /><br />.xltx|
@@ -88,19 +88,21 @@ La protección de los datos se puede aplicar automáticamente cuando un usuario 
 Hay tamaños de archivo máximos que el cliente de Azure Information Protection admite para protección.
 
 - **Para archivos de Office:**
-    
-    |Aplicación de Office|Tamaño de archivo máximo admitido|
-    |--------------------------------|-------------------------------------|
-    |Word 2007 (solo compatible con AD RMS)<br /><br />Word 2010<br /><br />Word 2013<br /><br />Word 2016|32 bits: 512 MB<br /><br />64 bits: 512 MB
-    |Excel 2007 (solo compatible con AD RMS)<br /><br />Excel 2010<br /><br />Excel 2013<br /><br />Excel 2016|32 bits: 2 GB<br /><br />64 bits: solo limitado por el espacio disponible en disco y la memoria|
-    |PowerPoint 2007 (solo compatible con AD RMS)<br /><br />PowerPoint 2010<br /><br />PowerPoint 2013<br /><br />PowerPoint 2016|32 bits: solo limitado por el espacio disponible en disco y la memoria<br /><br />64 bits: solo limitado por el espacio disponible en disco y la memoria
+
+
+  |                                                     Aplicación de Office                                                      |                                                Tamaño de archivo máximo admitido                                                 |
+  |-----------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
+  |             Word 2007 (solo compatible con AD RMS)<br /><br />Word 2010<br /><br />Word 2013<br /><br />Word 2016             |                                          32 bits: 512 MB<br /><br />64 bits: 512 MB                                          |
+  |           Excel 2007 (solo compatible con AD RMS)<br /><br />Excel 2010<br /><br />Excel 2013<br /><br />Excel 2016           |                      32 bits: 2 GB<br /><br />64 bits: solo limitado por el espacio disponible en disco y la memoria                       |
+  | PowerPoint 2007 (solo compatible con AD RMS)<br /><br />PowerPoint 2010<br /><br />PowerPoint 2013<br /><br />PowerPoint 2016 | 32 bits: solo limitado por el espacio disponible en disco y la memoria<br /><br />64 bits: solo limitado por el espacio disponible en disco y la memoria |
+
 
 - **Para todos los demás archivos**: 
-    
-    - Para proteger otros tipos de archivo y abrir estos tipos de archivo en el visor de Azure Information Protection: el tamaño de archivo está limitado solo por el espacio en disco y la memoria disponibles.
-    
-    - Para desproteger archivos mediante el uso del cmdlet [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile): El tamaño de archivo máximo admitido para archivos .pst es 5 GB. Los otros tipos de archivo están limitados solo por la memoria y el espacio disponible en disco.
-    
+
+  - Para proteger otros tipos de archivo y abrir estos tipos de archivo en el visor de Azure Information Protection: el tamaño de archivo está limitado solo por el espacio en disco y la memoria disponibles.
+
+  - Para desproteger archivos mediante el uso del cmdlet [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile): El tamaño de archivo máximo admitido para archivos .pst es 5 GB. Los otros tipos de archivo están limitados solo por la memoria y el espacio disponible en disco.
+
     Sugerencia: si tiene que buscar o recuperar elementos protegidos en archivos .pst grandes, vea [Instrucciones de uso de Unprotect-RMSFile para eDiscovery](../configure-super-users.md#guidance-for-using-unprotect-rmsfile-for-ediscovery).
 
 ### <a name="supported-file-types-for-classification-and-protection"></a>Tipos de archivos compatibles para protección y clasificación
@@ -155,9 +157,9 @@ También puede forzar a que el cliente de Azure Information Protection boquee la
 Para configurar el cliente de Azure Information Protection para aplicar protección genérica a todos los archivos a los que, de forma predeterminada, se les aplicaría protección nativa, realice las siguientes modificaciones en el Registro. Tenga en cuenta que si la clave FileProtection no existe, debe crearla manualmente.
 
 1. Cree una clave con el nombre * para la ruta de registro siguiente, de modo que se muestren archivos con cualquier extensión de nombre de archivo:
-    
+
     - Para una versión de 32 bits de Windows: **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection**
-    
+
     - Para una versión de 64 bits de Windows: **HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\FileProtection**
 
 2. En la clave recién agregada (por ejemplo, HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\\\*), cree un valor de cadena (REG_SZ) con el nombre **Encryption** que tenga el valor de datos de **Pfile**.
@@ -193,7 +195,7 @@ Para más información, vea [Configuración de la API de archivo](../develop/fil
 Para ayudar a impedir que los usuarios modifiquen los archivos que son fundamentales para las operaciones del equipo, se excluyen automáticamente algunos tipos de archivos y carpetas de la clasificación y la protección. Si los usuarios intentan clasificar o proteger estos archivos mediante el cliente de Azure Information Protection, recibirán un mensaje para indicar que están excluidos.
 
 - **Tipos de archivos excluidos**: .lnk, .exe, .com, .cmd, .bat, .dll, .ini, .pst, .sca, .drm, .sys, .cpl, .inf, .drv, .dat, .tmp, .msg,.msp, .msi, .pdb, .jar
-    
+
 
 - **Carpetas excluidas**: 
     - Windows
@@ -205,15 +207,27 @@ Para ayudar a impedir que los usuarios modifiquen los archivos que son fundament
 
 De forma predeterminada, el analizador también excluye los mismos tipos de archivos que el cliente de Azure Information Protection, con las siguientes excepciones:
 
+Para la versión de disponibilidad general:
+
 - .rtf, .rar, y .zip también se excluyen
 
-Puede cambiar los tipos de archivo incluidos o excluidos de la inspección de archivos mediante el analizador con los cmdlets de PowerShell siguientes:
+Para la versión preliminar actual: 
+
+    - .rtf y .rar también se excluyen
+
+Puede cambiar los tipos de archivo incluidos o excluidos de la inspección de archivos mediante el analizador:
+
+Para la versión de disponibilidad general, use los siguientes cmdlets de PowerShell:
 
 - [Set-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileTypes)
 
 - [Add-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileTypes)
 
 - [Remove-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileTypes)
+
+Para la versión preliminar actual:
+
+- Configure **Tipos de archivo que examinar** en el perfil del analizador [en Azure Portal](../deploy-aip-scanner-preview.md#configure-the-scanner-in-the-azure-portal).
 
 > [!NOTE]
 > Si incluye los archivos .rtf en la exploración, debe supervisar atentamente el analizador. Algunos archivos .rtf no se pueden inspeccionar correctamente mediante el analizador. La inspección de estos archivos no se completa y hay que reiniciar el servicio. 
@@ -229,16 +243,18 @@ Si cambia el [comportamiento predeterminado](client-admin-guide-customizations.m
 - Un archivo PDF basado en formulario.
 
 - Un archivo PDF protegido con una extensión de nombre de archivo .pdf.
-    
+
     El cliente de Azure Information Protection puede proteger un archivo PDF desprotegido y puede desproteger y volver a proteger un archivo PDF protegido si tiene la extensión de nombre de archivo .ppdf.
 
 ### <a name="limitations-for-container-files-such-as-zip-files"></a>Limitaciones en los archivos de contenedor, como los archivos .zip
 
-Los archivos de contenedor son archivos que incluyen otros archivos, y un ejemplo típico son los archivos .zip que contienen archivos comprimidos. Otros ejemplos son los archivos .rar, .7z y .msg.
+Los archivos de contenedor son archivos que incluyen otros archivos, y un ejemplo típico son los archivos .zip que contienen archivos comprimidos. Otros ejemplos incluyen archivos .rar, .7z y .msg y documentos PDF que incluyen datos adjuntos.
 
 Puede clasificar y proteger estos archivos de contenedor, pero la clasificación y la protección no se aplican a los archivos incluidos dentro del contenedor.
 
 Si tiene un archivo de contenedor que incluye archivos clasificados y protegidos, primero debe extraer los archivos para cambiar su configuración de clasificación o protección. Sin embargo, puede quitar la protección de todos los archivos incluidos en archivos de contenedor compatibles mediante el cmdlet [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile).
+
+El visor de Azure Information Protection no puede abrir datos adjuntos en un documento PDF protegido.
 
 ## <a name="file-types-supported-for-inspection"></a>Tipos de archivo compatibles para inspección
 
@@ -264,7 +280,7 @@ El analizador de Azure Information Protection y el comando de PowerShell [Set-AI
 
 1. Para el equipo de que ejecuta el analizador o la sesión de PowerShell, instale [Office 2010 Filter Pack SP2](https://support.microsoft.com/en-us/help/2687447/description-of-office-2010-filter-pack-sp2).
 
-2. Para el analizador: incluya los archivos .zip que se van a inspeccionar, como se describe en la sección [Analizador de Azure Information Protection](#file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-scanner).
+2. Para el analizador: A menos que se ejecute la versión preliminar actual del analizador, incluya archivos ZIP para inspeccionarlos, como se describe en la sección [Analizador de Azure Information Protection](#file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-scanner).
 
 3. Para el analizador: después de encontrar la información confidencial, si el archivo .zip se debe clasificar y proteger con una etiqueta, agregue una entrada del registro para esta extensión de nombre de archivo para tener protección genérica (pfile), como se describe en [Edición del registro para el analizador](../deploy-aip-scanner.md#editing-the-registry-for-the-scanner) en las instrucciones de implementación del analizador.
 

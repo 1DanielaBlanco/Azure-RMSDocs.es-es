@@ -4,18 +4,18 @@ description: Algunas de las preguntas más frecuentes sobre Azure Information Pr
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/05/2019
+ms.date: 01/16/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 393cac6703016235359e0eb2812b31c585d4b524
-ms.sourcegitcommit: b2619c522298eaee3bd0067f2827e80fa9d4bfc2
+ms.openlocfilehash: ef9836a6e3b651986642d2c93128ea0f6b1e6112
+ms.sourcegitcommit: 2c90f5bf11ec34ab94824a39ccab75bde71fc3aa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060321"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54314856"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Preguntas más frecuentes de Azure Information Protection
 
@@ -154,7 +154,7 @@ En la actualidad, hay diferencias en la configuración del [propietario de Right
 
 - Para FCI de Windows Server: se puede establecer el propietario de Rights Management en una sola cuenta para todos los archivos, o bien establecerlo de forma dinámica para cada archivo. Para establecer de forma dinámica el propietario de Rights Management, use el parámetro y valor **-OwnerMail [Correo electrónico del propietario del archivo de origen]**. Esta configuración recupera de Active Directory la dirección de correo electrónico del usuario utilizando su nombre de cuenta, situado en la propiedad Propietario del archivo.
 
-- Para el analizador de Azure Information Protection: En el caso de archivos protegidos recientemente, se puede establecer el propietario de Rights Management en una sola cuenta para todos los archivos de un almacén de datos específico, pero no se puede establecer de forma dinámica para cada archivo. No se cambia el propietario de Rights Management para archivos protegidos con anterioridad. Para establecer la cuenta, especifique el parámetro **-DefaultOwner** para el [perfil del repositorio de datos](/powershell/module/azureinformationprotection/Set-AIPScannerRepository?view=azureipps#optional-parameters).
+- Para el analizador de Azure Information Protection: En el caso de archivos protegidos recientemente, se puede establecer el propietario de Rights Management en una sola cuenta para todos los archivos de un almacén de datos específico, pero no se puede establecer de forma dinámica para cada archivo. No se cambia el propietario de Rights Management para archivos protegidos con anterioridad. Para establecer la cuenta para los archivos recién protegidos, especifique la configuración **-Propietario predeterminado** en el perfil del analizador. 
 
 Cuando el analizador protege los archivos de bibliotecas y sitios de SharePoint, el propietario de Rights Management se establece de forma dinámica para cada archivo con el valor de Editor de SharePoint.
 

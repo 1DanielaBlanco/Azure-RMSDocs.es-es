@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: ba4e4a4d-5280-4e97-8f5c-303907db1bf5
 ms.reviewer: shakella
 ms.suite: ems
-ms.openlocfilehash: c6f220e995aa785c44d4227884da2c7379918a8d
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: 39abf4586f00cb40cb096841261993225b8c8387
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305478"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54393357"
 ---
 # <a name="configuring-exchange-online-mail-flow-rules-for-azure-information-protection-labels"></a>Configuración de reglas de flujo de correo de Exchange Online para etiquetas de Azure Information Protection
 
@@ -29,7 +29,7 @@ Consulte la siguiente información como ayuda para configurar las reglas de fluj
 
 Las reglas de flujo de correo que aplican protección como una acción se ignoran si el correo electrónico ya está protegido. Por ejemplo, un mensaje de correo electrónico que se ha protegido con No reenviar no se puede cambiar por una regla de flujo de correo de Exchange para usar la opción Solo cifrar.  
 
-Puede ampliar estos ejemplos, así como modificarlos. Por ejemplo, agregue más condiciones. Para obtener más información acerca de cómo configurar las reglas de flujo de correo electrónico, consulte [Reglas de flujo de correo (reglas de transporte) en Exchange Online] (https://technet.microsoft.com/library/jj919238(v=exchg.150\).aspx) en la documentación de Exchange Online.
+Puede ampliar estos ejemplos, así como modificarlos. Por ejemplo, agregue más condiciones. Para más información sobre cómo configurar las reglas de flujo de correo electrónico, vea [Reglas de flujo de correo (reglas de transporte) en Exchange Online](https://technet.microsoft.com/library/jj919238(v=exchg.150).aspx) en la documentación de Exchange Online.
 
 Para obtener más información acerca de cómo configurar las reglas de flujo de correo electrónico para cifrar los mensajes de correo electrónico, consulte [Definir las reglas de flujo de correo para cifrar mensajes de correo electrónico en Office 365](https://support.office.com/article/define-mail-flow-rules-to-encrypt-email-messages-in-office-365-9b7daf19-d5f2-415b-bc43-a0f5f4a585e8) en la documentación de Office. 
 
@@ -60,7 +60,7 @@ En los ejemplos siguientes, cree una nueva regla de flujo de correo mediante el 
 > [!TIP]
 > Si tiene problemas con la interfaz de usuario al configurar las reglas, pruebe un explorador diferente, como Internet Explorer.
 
-Los ejemplos tienen una única condición que aplica la protección cuando se envía un correo electrónico fuera de la organización. Para obtener más información sobre otras condiciones que se pueden seleccionar, consulte [Excepciones (predicados) y las condiciones de regla de flujo de correo en Exchange Online] (https://technet.microsoft.com/library/jj919235(v=exchg.150\).aspx).
+Los ejemplos tienen una única condición que aplica la protección cuando se envía un correo electrónico fuera de la organización. Para más información sobre otras condiciones que se pueden seleccionar, vea [Excepciones (predicados) y las condiciones de regla de flujo de correo en Exchange Online](https://technet.microsoft.com/library/jj919235(v=exchg.150).aspx).
 
 
 ### <a name="example-1-rule-that-applies-the-do-not-forward-option-to-emails-that-are-labeled-general-when-they-are-sent-outside-the-organization"></a>Ejemplo 1: Regla que aplica la opción No reenviar para correos electrónicos etiquetados como **General** cuando se envían fuera de la organización

@@ -4,16 +4,16 @@ description: Las condiciones de una etiqueta le permiten asignar automáticament
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/05/2018
+ms.date: 01/16/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: adf877a3f5f08d0adefd1cbe8864a0c0c2bb17b1
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: da76767b7538706f596653b77f3f29f8717e1442
+ms.sourcegitcommit: 2c90f5bf11ec34ab94824a39ccab75bde71fc3aa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023862"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54314805"
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Configuración de las condiciones para la clasificación automática y recomendada en Azure Information Protection
 
@@ -50,7 +50,7 @@ Puede cambiar este comportamiento para que el cliente de Azure Information Prote
 
 ### <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>Cómo evaluar varias condiciones cuando se aplican a más de una etiqueta
 
-1. Las etiquetas se ordenan para la evaluación, según la posición que especifique en la directiva: la etiqueta que se coloca al principio tiene la posición más baja (menos sensible) y la etiqueta que se coloca al final la más alta (más sensible).
+1. Las etiquetas se ordenan para su evaluación, según la posición especificada en la directiva: la etiqueta que se coloca en primer lugar tiene la posición más baja (menos sensible) y la etiqueta que se coloca en último lugar tiene la posición más alta (más sensible).
 
 2. Se aplica la etiqueta más sensible.
  
@@ -63,7 +63,7 @@ Puede cambiar este comportamiento para que el cliente de Azure Information Prote
     
     Por ejemplo, en el menú del concentrador, haga clic en **Todos los servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
-2. En la opción de menú **Clasificaciones** > **Etiquetas**: en la hoja **Azure Information Protection: etiquetas**, seleccione la etiqueta que desee configurar.
+2. Desde la opción de menú **Clasificaciones** > **Etiquetas**: en la hoja **Azure Information Protection: Etiquetas**, seleccione la etiqueta que desea configurar.
 
 3. En la hoja **Etiqueta**, en la sección **Configure conditions for automatically applying this label** (Configurar condiciones para aplicar esta etiqueta automáticamente), haga clic en **Agregar una nueva condición**(Add a new condition).
 
@@ -85,13 +85,13 @@ Puede cambiar este comportamiento para que el cliente de Azure Information Prote
         
 5. Decida si tiene que cambiar **Número mínimo de repeticiones** y **Contar solo las repeticiones con valores únicos** y luego seleccione **Guardar**. 
     
-    Ejemplo de opciones de repeticiones: imagine que selecciona el tipo de información de número de la Seguridad Social, establece el número mínimo de repeticiones en 2 y un documento tiene el mismo número de la Seguridad Social dos veces: si establece **Contar solo las repeticiones con valores únicos** en **Activado**, la condición no se cumple. Si establece esta opción en **Desactivado**, la condición se cumple.
+    Ejemplo de las opciones de repeticiones: seleccione el tipo de información para el número del seguro social, establezca el número mínimo de repeticiones en 2, y un documento tendrá el mismo número del seguro social dos veces: si establece **Count occurrences with unique value only** (Contar solo las repeticiones con valores únicos) en **Activado**, la condición no se cumple. Si establece esta opción en **Desactivado**, la condición se cumple.
 
 6. De vuelta en la hoja **Etiqueta**, configure lo siguiente y luego haga clic en **Guardar**:
     
     - Elija clasificación automática o recomendada: en **Select how this label is applied: automatically or recommended to user** (Seleccionar cómo se aplica esta etiqueta: automáticamente o recomendado al usuario), seleccione **Automática** o **Recomendada**.
     
-    - Especifique el texto del mensaje de usuario o de la sugerencia de directiva: mantenga el texto predeterminado o especifique su propia cadena.
+    - Especifique el texto de la sugerencia de directiva o del mensaje de usuario: mantenga el texto predeterminado o especifique su propia cadena.
 
 Al hacer clic en **Guardar**, los cambios están disponibles para los usuarios y servicios. Ya no hay una opción de publicación separada.
 
@@ -99,11 +99,9 @@ Al hacer clic en **Guardar**, los cambios están disponibles para los usuarios y
 
 Los tipos de información confidencial siguientes requieren una versión mínima de 1.37.19.0 para el cliente de Azure Information Protection:
 
-- **Número de teléfono de la UE**
 - **Número de teléfono móvil de la UE**
 - **Número de pasaporte de la UE**
 - **Número de licencia de conductor de la UE**
-- **Coordenadas GPS de la UE**
 - **Número de identificación de la UE**
 - **Número del seguro social (SSN) de la UE o identificación equivalente**
 - **Número de identificación fiscal (NIF) de la UE**
@@ -111,6 +109,24 @@ Los tipos de información confidencial siguientes requieren una versión mínima
 - **Número de identificación nacional turco**
 - **Número de la tarjeta de residencia japonesa**
 
+
+Los siguientes tipos de información confidencial requieren la versión preliminar actual del cliente de Azure Information Protection:
+
+- **Cadena de conexión de Azure Service Bus**
+- **Cadena de conexión de Azure IoT**
+- **Cuenta de almacenamiento de Azure**
+- **Cadena de conexión de base de datos IaaS de Azure y cadena de conexión de SQL Azure**
+- **Cadena de conexión de Azure Redis Cache**
+- **Azure SAS**
+- **Cadena de conexión de SQL Server**
+- **Clave de autenticación de Azure DocumentDB**
+- **Contraseña de configuración de publicación de Azure**
+- **Clave de la cuenta de almacenamiento de Azure (genérica)**
+
+Además, no se admiten los siguientes tipos de información confidencial para la versión preliminar actual del cliente de Azure Information Protection y ya no se muestran en Azure Portal:
+
+- **Número de teléfono de la UE**
+- **Coordenadas GPS de la UE**
 
 ## <a name="next-steps"></a>Pasos siguientes
 

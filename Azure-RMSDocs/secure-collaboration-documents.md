@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 4895c429-959f-47c7-9007-b8f032f6df6f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: eb2e2538246ea5c8ca42f6270e535c73dda71774
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: a5a1c0069a35073d9362e28ef18ad4c09d95df3d
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305512"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54393958"
 ---
 # <a name="configuring-secure-document-collaboration-by-using-azure-information-protection"></a>Configuración de la colaboración con documentos segura mediante Azure Information Protection
 
@@ -50,13 +50,13 @@ Dado que el escenario restringe el acceso a usuarios específicos, no incluye la
 
 3. En la hoja **Agregar permisos**: 
     
-    - Para el grupo interno: seleccione **Examinar directorio** para seleccionar el grupo, que debe estar habilitado para correo electrónico.
+   - Para el grupo interno: seleccione **Examinar directorio** para seleccionar el grupo, que debe estar habilitado para correo electrónico.
     
-    - Para todos los usuarios de la primera organización externa: seleccione **Escribir detalles** y escriba el nombre de un dominio en el inquilino de la organización. Por ejemplo, fabrikam.com.
+   - Para todos los usuarios de la primera organización externa: seleccione **Escribir detalles** y escriba el nombre de un dominio en el inquilino de la organización. Por ejemplo, fabrikam.com.
     
-    - Para el grupo de la segunda organización externa: aún en la pestaña **Escribir detalles**, escriba la dirección de correo electrónico del grupo en el inquilino de la organización. Por ejemplo, sales@contoso.com.
+   - Para el grupo de la segunda organización externa: aún en la pestaña **Escribir detalles**, escriba la dirección de correo electrónico del grupo en el inquilino de la organización. Por ejemplo, sales@contoso.com.
     
-    - Para el usuario que no tienen una cuenta de Azure AD: aún en la pestaña **Escribir detalles**, escriba la dirección de correo electrónico del usuario. Por ejemplo, bengi.turan@gmail.com. 
+   - Para el usuario que no tienen una cuenta de Azure AD: aún en la pestaña **Escribir detalles**, escriba la dirección de correo electrónico del usuario. Por ejemplo, bengi.turan@gmail.com. 
 
 4. Para conceder los mismos permisos a todos estos usuarios: Para **Elección de permisos a partir de valores predeterminados**, seleccione **Copropietario**, **Coautor**, **Revisor** o **Personalizado** para seleccionar los permisos que quiera conceder.
     
@@ -129,7 +129,7 @@ Además, los siguientes escenarios admiten la visualización de documentos:
 
 - Un explorador puede abrir archivos adjuntos protegidos cuando se usan proveedores sociales y códigos de acceso de un solo uso para la autenticación con Exchange Online y las nuevas funcionalidades de Office 365 Message Encryption. 
 
-|Plataformas para ver y editar documentos: <br />Word, Excel, PowerPoint|Método de autenticación:<br />Azure AD|Método de autenticación:<br />Cuenta de Microsoft|
+|Plataformas para ver y editar documentos: <br />Word, Excel, PowerPoint|Método de autenticación:<br />Azure AD|Método de autenticación:<br />Cuenta de Microsoft|
 |---------------|----------|-----------|-----------|
 |Windows|Sí [[1]](#footnote-1)|Sí [[2]](#footnote-2)|
 |iOS|Sí [[1]](#footnote-1)|No|

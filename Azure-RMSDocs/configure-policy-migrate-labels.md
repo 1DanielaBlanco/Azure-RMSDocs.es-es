@@ -4,17 +4,17 @@ description: Migración de etiquetas de Azure Information Protection al Centro d
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/06/2018
+ms.date: 01/17/20198
 ms.topic: article
 ms.service: information-protection
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 84f3aa3cc5dc7955056c98a957fa5d307340da1d
-ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
+ms.openlocfilehash: 221b503fa3621e51c4822a6ad5a6d08fae4f1bad
+ms.sourcegitcommit: 8dec864bf25c7da62b9e0f628f1bf673c81c15ae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53174138"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54356018"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-the-office-365-security--compliance-center"></a>Cómo migrar etiquetas de Azure Information Protection al Centro de seguridad y cumplimiento de Office 365
 
@@ -93,9 +93,13 @@ Siga estas instrucciones para migrar su inquilino y las etiquetas de Azure Infor
 
 Debe ser administrador global para migrar las etiquetas.
 
-1. Abra una nueva ventana del explorador e inicie sesión en Azure Portal mediante el siguiente vínculo: https://portal.azure.com/?ActivateMigration=true#blade/Microsoft_Azure_InformationProtection/DataClassGroupEditBlade/migrationActivationBlade. 
+1. Si aún no lo ha hecho, abra una nueva ventana del explorador e [inicie sesión en Azure Portal](configure-policy.md#signing-in-to-the-azure-portal). Después, vaya a la hoja **Azure Information Protection**.
+    
+    Por ejemplo, en el menú del concentrador, haga clic en **Todos los servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
-2. En la hoja **Azure Information Protection - Etiquetado unificado**, seleccione **Activar** y siga las instrucciones en línea.
+2. En la opción de menú **Administrar**, seleccione **Etiquetado unificado (versión preliminar)**.
+
+3. En la hoja **Azure Information Protection - Etiquetado unificado**, seleccione **Activar** y siga las instrucciones en línea.
 
 Los [clientes que admiten el etiquetado unificado](#clients-that-support-unified-labeling) ahora pueden usar las etiquetas migradas correctamente. En cambio, primero debe publicar estas etiquetas en el Centro de seguridad y cumplimiento.
 

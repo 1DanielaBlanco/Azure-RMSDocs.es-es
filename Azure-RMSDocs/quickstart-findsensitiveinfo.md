@@ -4,19 +4,21 @@ description: Utilice el analizador de Azure Information Protection para buscar l
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/05/2018
+ms.date: 01/16/2019
 ms.topic: quickstart
 ms.service: information-protection
-ms.openlocfilehash: 050c56887b83f0badf692bf2ee3b4616ad5b8bf4
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 12bde16a9b1659d00137720ad7c804db32cb1556
+ms.sourcegitcommit: 2c90f5bf11ec34ab94824a39ccab75bde71fc3aa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024236"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54314839"
 ---
-# <a name="quickstart-find-what-sensitive-information-you-have-in-files-stored-on-premises"></a>Inicio rápido: Búsqueda de la información confidencial de los archivos almacenados en un entorno local
+# <a name="quickstart-find-what-sensitive-information-you-have-in-files-stored-on-premises"></a>Guía de inicio rápido: Búsqueda de la información confidencial de los archivos almacenados en un entorno local
 
-En este tutorial, deberá instalar y configurar el analizador de Azure Information Protection para buscar la información confidencial que tiene en los archivos que se encuentran en un almacén de datos local. Por ejemplo, una carpeta local, un recurso compartido de red o un servidor de SharePoint Server. 
+En este tutorial, deberá instalar y configurar el analizador de Azure Information Protection para buscar la información confidencial que tiene en los archivos que se encuentran en un almacén de datos local. Por ejemplo, una carpeta local, un recurso compartido de red o un servidor de SharePoint Server.
+
+Nota: Este tutorial rápido usa la versión de disponibilidad general actual del analizador y la versión preliminar, donde se utiliza Azure Portal para la configuración.
 
 Puede finalizar esta configuración en menos de 10 minutos.
 

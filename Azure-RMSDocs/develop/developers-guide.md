@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: a53c2df2-a0a2-4f1f-995b-75ba55e4489b
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: f995f0236728850884a2e58d727e0f2f12b3717e
-ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
+ms.openlocfilehash: 7b7bf658fe0766091ddd33aab076c9a721fcc236
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54070849"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54393789"
 ---
 # <a name="azure-information-protection-developers-guide"></a>Guía del desarrollador de Azure Information Protection
 
@@ -77,7 +77,7 @@ Cada uno de los siguientes temas presenta instrucciones específicas sobre un as
 
 - [Habilitación de la revocación y el seguimiento de documentos (servicio)](tracking-content.md)
 - [Implementación de un cliente](../rms-client/client-deployment-notes.md)
-- [Implementación de la aplicación de servicio en otro inquilino] (how-to-deploy-app.md)
+- [Implementación de la aplicación de servicio en otro inquilino](how-to-deploy-app.md)
 - [Instalación y configuración de un servidor RMS (servicio)](how-to-install-and-configure-an-rms-server.md)
 - [Uso del seguimiento de documentos (usuario)](how-to-use-document-tracking.md)
 - [Renovación de una clave simétrica en Azure Information Protection](how-to-renew-symmetric-key.md)
