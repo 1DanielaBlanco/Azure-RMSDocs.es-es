@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: ea09cbc5-b98b-444e-8b60-5bc3cb199c36
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 99c0871d879d7326a4142b99753acfe00cd27cf5
-ms.sourcegitcommit: 73b5884ee9fe8aabb1a9fc9baace64d5fd433f4e
+ms.openlocfilehash: 1b88360b593317f2be93bf1afa3b514a61783896
+ms.sourcegitcommit: 8bda26b8b84cb8b66ae8f927906710d60c4b6a80
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54324087"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54397953"
 ---
 # <a name="configuring-applications-for-azure-rights-management"></a>Configuración de aplicaciones para Azure Rights Management
 
@@ -33,15 +33,15 @@ Después de haber implementado Azure Information Protection para su organizació
 
 -   [Office 365: configuración para clientes y servicios en línea que usan el servicio Azure Rights Management](configure-office365.md)
 
-    -   [Configuración de IRM de Exchange Online](configure-office365.md#exchange-online-irm-configuration)
+    -   [Configuración de IRM de Exchange Online](configure-office365.md#exchangeonline-irm-configuration)
 
-    -   [SharePoint Online y OneDrive para la Empresa: Configuración de IRM](configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration)
+    -   [SharePoint Online y OneDrive para la Empresa: Configuración de IRM](configure-office365.md#sharepointonline-and-onedrive-for-business-irm-configuration)
 
 - [Aplicaciones de Office: configuración para los clientes que usan el servicio Azure Rights Management](configure-office-apps.md)
 
-    -   [Office 2016 y Office 2013](configure-office-apps.md#office-2016-and-office-2013)
+    -   [Office 2016 y Office 2013](configure-office-apps.md#office2016-and-office-2013)
 
-    -   [Office 2010](configure-office-apps.md#office-2010)
+    -   [Office 2010](configure-office-apps.md#office2010)
 
 -   [Cliente de Azure Information Protection: Instalación y configuración para clientes](configure-client.md)
 

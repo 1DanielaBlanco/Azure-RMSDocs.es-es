@@ -11,12 +11,12 @@ ms.custom: askipteam
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f6c4bd30c09ff54eab6da4bb63130a16373faebc
-ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
+ms.openlocfilehash: ac079a7046b6166b89c828054ed5f94e756fa99f
+ms.sourcegitcommit: 8bda26b8b84cb8b66ae8f927906710d60c4b6a80
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53174019"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54397987"
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Preguntas más frecuentes sobre la protección de datos en Azure Information Protection
 
@@ -134,7 +134,7 @@ Cuando usa Exchange Online y el servicio Azure Rights Management, solo envía el
 
 El destinatario ve una opción para iniciar sesión en su cuenta de Gmail, Yahoo o Microsoft, desde donde puede leer el correo protegido. O bien, el usuario puede elegir recibir un código de acceso de un solo uso para leer el correo en un explorador.
 
-Para admitir este escenario, Exchange Online debe habilitarse para el servicio Azure Rights Management y las nuevas capacidades de cifrado de mensajes de Office 365. Para más información sobre esta configuración, vea [Configuración de IRM de Exchange Online](configure-office365.md#exchange-online-irm-configuration).
+Para admitir este escenario, Exchange Online debe habilitarse para el servicio Azure Rights Management y las nuevas capacidades de cifrado de mensajes de Office 365. Para más información sobre esta configuración, vea [Configuración de IRM de Exchange Online](configure-office365.md#exchangeonline-irm-configuration).
 
 Para más información sobre las nuevas capacidades que incluyen la compatibilidad con todas las cuentas de correo de todos los dispositivos, vea la siguiente entrada de blog: [Announcing new capabilities available in Office 365 Message Encryption](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801) (Anuncio de nuevas capacidades disponibles en el cifrado de mensajes de Office 365).
 
@@ -172,7 +172,7 @@ Si está interesado en una función específica que todavía no es compatible, n
 ## <a name="how-do-i-configure-one-drive-for-business-in-sharepoint-online-so-that-users-can-safely-share-their-files-with-people-inside-and-outside-the-company"></a>¿Cómo configuro OneDrive para la Empresa en SharePoint Online para que los usuarios puedan compartir con seguridad sus archivos con personas de dentro y fuera de la empresa?
 De forma predeterminada, como administrador de Office 365, no es usted quien lo configura; lo hacen los usuarios.
 
-Del mismo modo que el administrador del sitio de SharePoint habilita y configura IRM para una biblioteca de SharePoint de su propiedad, OneDrive para la Empresa se ha diseñado para que los usuarios habiliten y configuren IRM para su propia biblioteca de OneDrive para la Empresa. Sin embargo, gracias a PowerShell, puede hacerlo por ellos. Para obtener instrucciones, vea la sección [SharePoint Online y OneDrive para la Empresa: Configuración de IRM](configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration) del artículo [Office 365: configuración para clientes y servicios en línea que usan el servicio Azure Rights Management](configure-office365.md).
+Del mismo modo que el administrador del sitio de SharePoint habilita y configura IRM para una biblioteca de SharePoint de su propiedad, OneDrive para la Empresa se ha diseñado para que los usuarios habiliten y configuren IRM para su propia biblioteca de OneDrive para la Empresa. Sin embargo, gracias a PowerShell, puede hacerlo por ellos. Para obtener instrucciones, vea la sección [SharePoint Online y OneDrive para la Empresa: Configuración de IRM](configure-office365.md#sharepointonline-and-onedrive-for-business-irm-configuration) del artículo [Office 365: configuración para clientes y servicios en línea que usan el servicio Azure Rights Management](configure-office365.md).
 
 ## <a name="do-you-have-any-tips-or-tricks-for-a-successful-deployment"></a>¿Hay trucos o sugerencias para una correcta implementación?
 
