@@ -4,18 +4,18 @@ description: Información sobre los datos personales que usa Azure Information P
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/12/2018
+ms.date: 01/23/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 99a51862-83e9-4a1e-873a-a84ae1465f07
 ms.reviewer: aashishr
 ms.suite: ems
-ms.openlocfilehash: 4e44796d3bd2fdf1fd2f0c39cc759f16d87267a1
-ms.sourcegitcommit: db60fe8f74ffaa4f6ffbf5defb22efc476c28312
+ms.openlocfilehash: 08ae5875437a1e443247a5a57b1bb621b6627ce3
+ms.sourcegitcommit: cf52083dde756ad3620c05fc74f012d8a7abacf3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53319421"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54898790"
 ---
 # <a name="manage-personal-data-for-azure-information-protection"></a>Administración de datos personales de Azure Information Protection
 
@@ -196,6 +196,12 @@ Cuando se aplican etiquetas y protección a documentos y correos electrónicos, 
 Además, el cliente de Azure Information Protection registra estos datos personales en el registro de eventos local de Windows **Aplicaciones y servicios** > **Azure Information Protection**.
 
 Cuando el cliente de Azure Information Protection ejecuta el analizador, los datos personales se guardan en %localappdata%\Microsoft\MSIP\Scanner\Reports en el equipo de Windows Server que ejecuta el analizador.
+
+Puede desactivar la información de registro para el cliente de Azure Information Protection y el analizador mediante el uso de las siguientes configuraciones:
+
+- Para el cliente de Azure Information Protection: Cree una [configuración de cliente avanzada](./rms-client/client-admin-guide-customizations.md#change-the-local-logging-level) que establezca el parámetro **LogLevel** en **Desactivado**.
+
+- Para el analizador de Azure Information Protection: Use el cmdlet [Set-AIPScannerConfiguration](/azureinformationprotection/set-aipscannerconfiguration) para establecer el parámetro *ReportLevel* en **Desactivado**.
 
 [!INCLUDE [GDPR-related guidance](./includes/gdpr-hybrid-note.md)]
 

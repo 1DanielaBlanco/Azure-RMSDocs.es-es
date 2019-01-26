@@ -8,12 +8,12 @@ ms.date: 01/16/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: da76767b7538706f596653b77f3f29f8717e1442
-ms.sourcegitcommit: 2c90f5bf11ec34ab94824a39ccab75bde71fc3aa
+ms.openlocfilehash: b9cc4267ec4dd3ebaa24b23d996fde61f9b09799
+ms.sourcegitcommit: 719e3c758e414c5c95dea03cd78d7427af4ee8e7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54314805"
+ms.lasthandoff: 01/22/2019
+ms.locfileid: "54443848"
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Configuración de las condiciones para la clasificación automática y recomendada en Azure Information Protection
 
@@ -29,7 +29,9 @@ Mensaje de ejemplo cuando se configura una condición para aplicar una etiqueta 
 
 ![Detección y recomendación de Azure Information Protection](./media/info-protect-recommend-calloutsv2.png)
 
-En este ejemplo, el usuario puede hacer clic en **Cambiar ahora** para aplicar la etiqueta recomendada, o bien invalidar la recomendación seleccionando **Descartar**. Si el usuario decide descartar la recomendación y la condición sigue siendo válida la próxima vez que se abra el documento, se visualizará de nuevo la recomendación de etiquetas. 
+En este ejemplo, el usuario puede hacer clic en **Cambiar ahora** para aplicar la etiqueta recomendada, o bien invalidar la recomendación seleccionando **Descartar**. Si el usuario decide descartar la recomendación y la condición sigue siendo válida la próxima vez que se abra el documento, se visualizará de nuevo la recomendación de etiquetas.
+
+Si configura la clasificación automática en lugar de la recomendada, se aplica automáticamente la etiqueta y el usuario seguirá viendo una notificación en sus aplicaciones de Office. Sin embargo, los botones **Cambiar ahora** y **Descartar** se reemplazan por **Aceptar**.
 
 > [!IMPORTANT]
 >No configure una etiqueta para la clasificación automática y un permiso definido por el usuario. La opción de permisos definidos por el usuario es una [configuración de protección](configure-policy-protection.md) que permite a los usuarios especificar a quién se le deben conceder permisos.

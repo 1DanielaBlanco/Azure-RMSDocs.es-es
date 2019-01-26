@@ -4,18 +4,18 @@ description: Identifique los requisitos previos para implementar Azure Informati
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/04/2018
+ms.date: 01/24/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4ef35134a8f5d6a3a8a615be6c956ec5e445557d
-ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
+ms.openlocfilehash: 66ebb49b3b161a63c80968104e681fad74bbef42
+ms.sourcegitcommit: cf52083dde756ad3620c05fc74f012d8a7abacf3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53173747"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54898773"
 ---
 # <a name="requirements-for-azure-information-protection"></a>Requirements for Azure Information Protection (Requisitos de Azure Information Protection)
 
@@ -90,9 +90,9 @@ El cliente de Azure Information Protection tiene [requisitos previos adicionales
 
 El cliente de Azure Information Protection puede etiquetar y proteger documentos y correos electrónicos mediante las aplicaciones de Office **Word**, **Excel**, **PowerPoint** y **Outlook** de cualquiera de las siguientes ediciones de Office:
 
-- Office 365 con aplicaciones de Office 2016 (versión mínima 1805, compilación 9330.2078) cuando se asigna una licencia a un usuario para Azure Rights Management (también conocido como Azure Information Protection para Office 365)
+- Office 365 con aplicaciones de Office de Office 365 Empresa o Microsoft 365 Empresa cuando se asigne al usuario una licencia de Azure Rights Management (también conocido como Azure Information Protection para Office 365)
 
-- Office 365 ProPlus con aplicaciones de 2016 o 2013 (hacer clic y ejecutar o instalación basada en Windows Installer)
+- Office 365 ProPlus
 
 - Office Professional Plus 2016
 

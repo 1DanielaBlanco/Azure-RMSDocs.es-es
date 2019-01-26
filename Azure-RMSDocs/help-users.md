@@ -4,18 +4,18 @@ description: Información para ayudarle a ofrecer instrucciones a los usuarios, 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/06/2018
+ms.date: 01/24/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 25471f9e047b4b3c1dac94cdf0856d7413de268a
-ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
+ms.openlocfilehash: 0f62134663cd7c784a694d25369698b4b7c9538c
+ms.sourcegitcommit: cf52083dde756ad3620c05fc74f012d8a7abacf3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53173900"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54898807"
 ---
 # <a name="helping-users-to-protect-files-by-using-the-azure-rights-management-service"></a>Ayuda a los usuarios para proteger archivos mediante el servicio Azure Rights Management
 
@@ -79,11 +79,11 @@ Si usa el servicio Azure Rights Management y no ha instalado el cliente de Azure
 > [!TIP]
 > Para buscar ayuda específica de la aplicación e instrucciones para usar protección de la información con estas aplicaciones, busque **IRM** y el nombre y la versión de la aplicación.
 
-#### <a name="to-protect-a-document-in-word2013"></a>Para proteger un documento en Word 2013
+#### <a name="to-protect-a-document-in-wordfrom-office-365-proplus"></a>Para proteger un documento de Word de Office 365 ProPlus
 
 1.  En Microsoft Word, cree un documento.
 
-2.  En el menú **Archivo**, haga clic sucesivamente en **Información**, **Proteger documento** y, finalmente, en **Restringir acceso**.
+2.  En el menú **Archivo**: **Información** > **Proteger documento** >  **Restringir acceso**.
 
 3. Después elija una plantilla para aplicar de inmediato los permisos de uso correspondientes o elija **Restringir acceso** y seleccione usted mismo los permisos de uso.
 
@@ -98,11 +98,11 @@ Por ejemplo, un derecho de uso de Solo vista no permite al usuario editar o guar
 
 Los derechos de uso se muestran en la parte superior del documento mediante una pancarta de restricción. La pancarta puede mostrar los permisos que se aplican al documento o puede proporcionar un vínculo para mostrarlos.
 
-#### <a name="to-protect-an-email-message-using-outlook2013-and-exchange-online"></a>Para proteger un mensaje de correo electrónico con Outlook 2013 y Exchange Online
+#### <a name="to-protect-an-email-message-using-outlookfrom-office-365-proplus-connecting-to-exchange-online"></a>Para proteger un mensaje de correo electrónico con Outlook de Office 365 ProPlus conectando a Exchange Online
 
 1.  Dentro de Outlook, cree un mensaje de correo electrónico para un destinatario dentro de la organización.
 
-2.  En la pestaña **OPCIONES** , haga clic en **Permiso**y seleccione una opción. Por ejemplo: **No reenviar**, **\<Nombre de la compañía> - Confidencial** o **\<Nombre de la compañía> - Confidencial. Ver solo**.
+2.  En la pestaña **OPCIONES**: **Permiso** > Seleccione una opción. Por ejemplo: **No reenviar**, **\<Nombre de la compañía> - Confidencial** o **\<Nombre de la compañía> - Confidencial. Ver solo**.
 
 3.  Envíe el mensaje.
 
@@ -114,12 +114,10 @@ Por ejemplo, si el mensaje de correo electrónico está protegido mediante la op
 
 1.  Con Outlook en la Web, cree un mensaje de correo electrónico para un destinatario dentro de la organización.
 
-2.  Haga clic en  **...**, elija **Establecer permisos**y seleccione una opción. Por ejemplo: **No reenviar** o **No responder a todos**. O bien, **\<Nombre de empresa> - Confidencial** o **\<Nombre de empresa> - Confidencial. Ver solo**.
+2.  Seleccione **Proteger**. A menos que un administrador haya cambiado el valor predeterminado, la opción **No reenviar** se selecciona automáticamente. Si desea cambiar el valor predeterminado, seleccione **Cambiar permisos** y, a continuación, seleccione una opción en la lista desplegable. Por ejemplo: **Cifrar** o **\<Nombre de la empresa > - Confidencial**.
 
 3.  Envíe el mensaje.
 
 De manera similar a visualizar un documento protegido, cuando los destinatarios abren el mensaje de correo electrónico, lo primero es autenticarse. Si están autorizados a ver el mensaje de correo electrónico, se abrirá con los [derechos de uso](configure-usage-rights.md) restringidos que se especificaron para ese usuario. 
 
-Por ejemplo, si seleccionó **No responder a todos**, la opción **RESPONDER A TODOS** no está disponible en la ventana del mensaje.
-
-
+Por ejemplo, con la opción predeterminada **No reenviar**, la opción **Reenviar** en la ventana de mensajes no está disponible.
