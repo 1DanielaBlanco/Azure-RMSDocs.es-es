@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: quickstart
 ms.date: 01/08/2019
 ms.author: bryanla
-ms.openlocfilehash: 2f84cfd8a0ae15a66cd624fe591f2891ff549768
-ms.sourcegitcommit: adc4621ec4738c0abb6c1fa81a6598a6dfc5ace6
+ms.openlocfilehash: 21fdf98495fbf64cfae413c70205beaeffa7fe3b
+ms.sourcegitcommit: 0fad4196f397fa32c60e6d24791fcad43689c4ba
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54136245"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55088129"
 ---
 # <a name="microsoft-information-protection-mip-sdk-setup-and-configuration"></a>Instalación y configuración del SDK de Microsoft Information Protection (MIP) 
 
@@ -19,7 +19,7 @@ La Guía de inicio rápido y los artículos del tutorial se centran en torno a l
 
 El SDK de MIP es compatible en las siguientes plataformas:  
 
-[!INCLUDE [MIP SDK platform support](../include/mip-sdk-platform-support.md)]
+[!INCLUDE [MIP SDK platform support](../includes/mip-sdk-platform-support.md)]
 
 ## <a name="prerequisites"></a>Requisitos previos
 

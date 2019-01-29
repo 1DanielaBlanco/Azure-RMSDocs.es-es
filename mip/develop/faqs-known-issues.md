@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: troubleshooting
 ms.date: 10/19/2018
 ms.author: bryanla
-ms.openlocfilehash: f213b31d9b0e41ea9c1e076055a90e9f62b31b3a
-ms.sourcegitcommit: fa0be701b85b1fba5e75428714bb4525dd739a93
+ms.openlocfilehash: 9bffda812448bea4ba6a6c1557042e14b78de1b5
+ms.sourcegitcommit: 0fad4196f397fa32c60e6d24791fcad43689c4ba
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223932"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55088061"
 ---
 # <a name="microsoft-information-protection-mip-sdk-faqs-and-issues"></a>Preguntas frecuentes y problemas del SDK de Microsoft Information Protection (MIP)
 
@@ -23,7 +23,7 @@ En este artículo se ofrecen respuestas a las preguntas frecuentes y una guía p
 
 El SDK de MIP es compatible en las siguientes plataformas:
 
-[!INCLUDE [MIP SDK platform support](../include/mip-sdk-platform-support.md)]
+[!INCLUDE [MIP SDK platform support](../includes/mip-sdk-platform-support.md)]
 
 ### <a name="question-how-does-the-sdk-handle-strings-and-what-string-type-should-i-be-using-in-my-code"></a>Pregunta: ¿Cómo trata el SDK las cadenas y qué tipo de cadena se debe usar en mi código?
 
@@ -37,16 +37,16 @@ El SDK está pensado para un uso multiplataforma y utiliza [UTF-8 (Unicode Trans
 
 ## <a name="issues-and-errors-reference"></a>Referencia sobre errores y problemas
 
-### <a name="error-file-format-not-supported"></a>Error: "Formato de archivo no admitido"  
+### <a name="error-file-format-not-supported"></a>Error: "Formato de archivo no compatible"  
 
 | Error | Solución |
 |-|-|
 |*Formato de archivo no admitido*| Esta excepción se produce al intentar proteger o etiquetar un archivo PDF que se ha firmado digitalmente o se ha protegido con contraseña. Consulte [New support for PDF encryption with Microsoft Information Protection](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/New-support-for-PDF-encryption-with-Microsoft-Information/ba-p/262757) (Nueva compatibilidad con el cifrado de archivos PDF con Microsoft Information Protection) para obtener más información sobre el cifrado y el etiquetado de archivos PDF.|
 
-### <a name="error-failed-to-parse-the-acquired-compliance-policy"></a>Error: "Failed to parse the acquired Compliance Policy" (No se pudo analizar la directiva de cumplimiento adquirida)  
+### <a name="error-failed-to-parse-the-acquired-compliance-policy"></a>Error: "No se pudo analizar la directiva de cumplimiento adquirida"  
 
 Ha descargado el SDK de MIP y ha ejecutado las aplicaciones de ejemplo. Utiliza el ejemplo de archivo para enumerar todas las etiquetas, pero obtiene el siguiente error:
 
 | Error | Solución |
 |-|-|
-|*Something bad happened: Failed to parse the acquired Compliance Policy. Failed with: [class mip::CompliancePolicyParserException] Tag not found: policy, NodeType: 15, Name: No Name Found, Value: , Ancestors: <SyncFile><Content>, correlationId:[34668a40-blll-4ef8-b2af-00005aa674z9]*| Esto indica que no ha migrado la etiquetas de Azure Information Protection a la experiencia de etiquetado unificado. Consulte [Cómo migrar etiquetas de Azure Information Protection al Centro de seguridad y cumplimiento de Office 365](/azure/information-protection/configure-policy-migrate-labels) para migrar las etiquetas, y luego cree una directiva de etiquetas en el Centro de seguridad y cumplimiento de Office 365. Cuando haya terminado, el ejemplo se ejecutará correctamente.|
+|*Ha sucedido algo: No se pudo analizar la directiva de cumplimiento adquirida. Error: [clase mip::CompliancePolicyParserException] no encuentra la etiqueta: directiva, el tipo de nodo: Nombre de 15: No puede encontrar nombre, valor:, antecesores: <SyncFile> <Content>, correlationId: [34668a40-blll-4ef8-b2af-00005aa674z9]*| Esto indica que no ha migrado la etiquetas de Azure Information Protection a la experiencia de etiquetado unificado. Consulte [Cómo migrar etiquetas de Azure Information Protection al Centro de seguridad y cumplimiento de Office 365](/azure/information-protection/configure-policy-migrate-labels) para migrar las etiquetas, y luego cree una directiva de etiquetas en el Centro de seguridad y cumplimiento de Office 365. Cuando haya terminado, el ejemplo se ejecutará correctamente.|
