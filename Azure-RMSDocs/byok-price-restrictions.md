@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 68e479eb7f19f60d6d68b913eae46dd287b5a04f
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: ea82ec3aacb8abbd4b9f15d0150bf7ff535e57db
+ms.sourcegitcommit: 1c1d7067ae7aa8b822bb4ecd23cd7a644989e38c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305155"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55067992"
 ---
 # <a name="byok-pricing-and-restrictions"></a>Precio y restricciones de BYOK
 
@@ -52,7 +52,7 @@ Para obtener más información sobre Azure Key Vault, consulte [¿Qué es el Alm
 
 ## <a name="restrictions-when-using-byok"></a>Restricciones en el uso de BYOK
 
-BYOK y el registro de uso funcionan perfectamente con todas las aplicaciones que se integran con el servicio Azure Rights Management usado por Azure Information Protection. Aquí se incluyen servicios en la nube, como SharePoint Online, servidores locales que ejecutan Exchange y SharePoint y que usan el servicio Azure Rights Management a través del conector RMS, y aplicaciones cliente como Office 2013 y Office 2016. Obtiene los registros de uso de claves con independencia de la aplicación que realiza solicitudes al servicio Azure Rigths Management.
+BYOK y el registro de uso funcionan perfectamente con todas las aplicaciones que se integran con el servicio Azure Rights Management usado por Azure Information Protection. Aquí se incluyen servicios en la nube, como SharePoint Online, servidores locales que ejecutan Exchange y SharePoint y que usan el servicio Azure Rights Management a través del conector RMS, y aplicaciones cliente como Office 2019, Office 2016 y Office 2013. Obtiene los registros de uso de claves con independencia de la aplicación que realiza solicitudes al servicio Azure Rigths Management.
 
 Si ya ha habilitado IRM de Exchange Online importando el dominio de publicación de confianza (TPD) de Azure RMS, siga las instrucciones de [Configuración de nuevas capacidades del cifrado de mensajes de Office 365 sobre Azure Information Protection](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e) (Set up new Office 365 Message Encryption capabilities built on top of Azure Information Protection) para habilitar las nuevas capacidades en Exchange Online que admiten el uso de BYOK para Azure Information Protection.
 

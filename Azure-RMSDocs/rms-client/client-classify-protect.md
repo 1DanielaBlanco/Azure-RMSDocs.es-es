@@ -4,18 +4,18 @@ description: Instrucciones de cómo clasificar y proteger sus documentos y corre
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/12/2018
+ms.date: 01/24/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: b1d46cb3c98c520ab6900f910f691af920337334
-ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
+ms.openlocfilehash: e0404f21ae3fbd5a4e9be86c9372645a4a425b38
+ms.sourcegitcommit: 1c1d7067ae7aa8b822bb4ecd23cd7a644989e38c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54393469"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55067795"
 ---
 # <a name="user-guide-classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Manual del usuario: Clasificación y protección de archivos o correos electrónicos mediante Azure Information Protection
 
@@ -77,7 +77,7 @@ Posibles razones:
 
 - Si la etiqueta que falta aplica protección, es posible que tenga una edición de Office que no admite la aplicación de protección de Rights Management. Para comprobarlo, haga clic en **Proteger** > **Ayuda y comentarios**. En el cuadro de diálogo, compruebe si en la sección **Estado del cliente** aparece el mensaje **Este cliente no tiene licencia de Office Profesional Plus**. 
     
-    No es necesario Office Professional Plus si tiene aplicaciones de Office 2016 con una versión mínima 1805, compilación 9330.2078, y su cuenta tiene asignada una licencia para Azure Rights Management (también conocido como Azure Information Protection para Office 365).
+    No necesita Office Professional Plus si tiene aplicaciones Office de Office 365 Empresa o Microsoft 365 Empresa cuando se asigne al usuario una licencia de Azure Rights Management (también conocido como Azure Information Protection para Office 365).
 
 - La etiqueta debe estar en una directiva de ámbito que no incluye su cuenta. Póngase en contacto con el Servicio de asistencia o con el administrador.
 

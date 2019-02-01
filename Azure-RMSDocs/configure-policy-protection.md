@@ -4,16 +4,16 @@ description: Puede proteger sus documentos y mensajes de correo electrónico má
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/31/2018
+ms.date: 01/24/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: 075441ef848f3ebe5e106f5989a99981037711bd
-ms.sourcegitcommit: 8bda26b8b84cb8b66ae8f927906710d60c4b6a80
+ms.openlocfilehash: eafcbf02ea6585b8a1434e210c274648982c0894
+ms.sourcegitcommit: 1c1d7067ae7aa8b822bb4ecd23cd7a644989e38c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54397851"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55067302"
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Configuración de una etiqueta para la protección de Rights Management
 
@@ -105,7 +105,7 @@ No es necesario que Exchange esté configurado para Azure Information Protection
        Al elegir a todos los miembros o examinar el directorio, los usuarios o grupos deben tener una dirección de correo electrónico. En un entorno de producción, los usuarios y grupos casi siempre tendrán una dirección de correo electrónico, pero en uno simple de pruebas es posible que tenga que agregarlas a las cuentas de usuario o los grupos.
         
        ###### <a name="more-information-about-add-any-authenticated-users"></a>Más información acerca de **Agregar todos los usuarios autenticados**. 
-       Esta configuración no limita quién puede acceder al contenido que protege la etiqueta, aunque sí mantiene cifrado el contenido y le ofrece las opciones para restringir cómo se puede usar el contenido (permisos) y el acceso a este (expiración y acceso sin conexión). Sin embargo, la aplicación que abre el contenido protegido debe ser compatible con la autenticación que se va a usar. Por este motivo, los proveedores sociales federados, como Google, y la autenticación de código de acceso de un solo uso deben utilizarse solo para correo electrónico, y solo cuando utilice Exchange Online y las nuevas capacidades de Office 365 Message Encryption. Las cuentas Microsoft se pueden usar con el visor de Azure Information Protection y Hacer clic y ejecutar de Office 2016. 
+       Esta configuración no limita quién puede acceder al contenido que protege la etiqueta, aunque sí mantiene cifrado el contenido y le ofrece las opciones para restringir cómo se puede usar el contenido (permisos) y el acceso a este (expiración y acceso sin conexión). Sin embargo, la aplicación que abre el contenido protegido debe ser compatible con la autenticación que se va a usar. Por este motivo, los proveedores sociales federados, como Google, y la autenticación de código de acceso de un solo uso deben utilizarse solo para correo electrónico, y solo cuando utilice Exchange Online y las nuevas capacidades de Office 365 Message Encryption. Las cuentas Microsoft se pueden usar con el visor de Azure Information Protection y aplicaciones de Office 365 (Hacer clic y ejecutar). 
           
        Algunos escenarios típicos para cualquier configuración de usuarios autenticados:
        - No le importa quién pueda ver el contenido, pero desea restringir la forma en que se usa. Por ejemplo, no desea que el contenido se edite, copie o imprima.
@@ -242,7 +242,7 @@ Si especifica usuarios externos que no tienen una cuenta de Azure AD:
 
 - La etiqueta es adecuada para el correo electrónico cuando Exchange Online usa las [nuevas capacidades del Cifrado de mensajes de Office 365](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e). 
  
-- En el caso de los datos adjuntos de Office que se protegen automáticamente, estos documentos están disponibles para verlos en un explorador. Para editar estos documentos, descárguelos y modifíquelos con Hacer clic y ejecutar de Office 2016, y una cuenta Microsoft que utilice la misma dirección de correo electrónico. [Más información](secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
+- En el caso de los datos adjuntos de Office que se protegen automáticamente, estos documentos están disponibles para verlos en un explorador. Para editar estos documentos, descárguelos y modifíquelos con aplicaciones de Office 365 (Hacer clic y ejecutar) y una cuenta Microsoft que utilice la misma dirección de correo electrónico. [Más información](secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
 
 
 > [!NOTE]

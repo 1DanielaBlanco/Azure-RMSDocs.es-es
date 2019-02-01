@@ -4,19 +4,19 @@ description: Algunas de las preguntas más frecuentes sobre el servicio de prote
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/14/2018
+ms.date: 01/10/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.custom: askipteam
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ac079a7046b6166b89c828054ed5f94e756fa99f
-ms.sourcegitcommit: 8bda26b8b84cb8b66ae8f927906710d60c4b6a80
+ms.openlocfilehash: 8f0e202b9404b114dd7ae48522a61bc8e524e618
+ms.sourcegitcommit: b1e08bc29d50187532f00dc215ab331e0a7dbebe
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54397987"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55146832"
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Preguntas más frecuentes sobre la protección de datos en Azure Information Protection
 
@@ -147,7 +147,7 @@ Para obtener una lista de extensiones de nombre de archivo que se admiten de for
 
 ## <a name="how-do-i-configure-a-mac-computer-to-protect-and-track-documents"></a>¿Cómo se configura un equipo Mac para proteger documentos y hacer un seguimiento de ellos?
 
-En primer lugar, asegúrese de haber instalado Office para Mac con el vínculo de instalación de software de https://portal.office.com. Para instrucciones completas, consulte el artículo sobre cómo [descargar e instalar o reinstalar Office 365 u Office 2016 en un PC o un equipo Mac](https://support.office.com/en-us/article/Download-and-install-or-reinstall-Office-365-or-Office-2016-on-a-PC-or-Mac-4414EAAF-0478-48BE-9C42-23ADC4716658).
+En primer lugar, asegúrese de haber instalado Office para Mac con el vínculo de instalación de software de https://portal.office.com. Para instrucciones completas, consulte el artículo sobre cómo [descargar e instalar o reinstalar Office 365 u Office 2019 en un PC o un equipo Mac](https://support.office.com/en-us/article/Download-and-install-or-reinstall-Office-365-or-Office-2016-on-a-PC-or-Mac-4414EAAF-0478-48BE-9C42-23ADC4716658).
 
 Abra Outlook y cree un perfil con su cuenta profesional o educativa de Office 365. Luego, cree un mensaje y siga estos pasos para configurar Office de manera que se puedan proteger documentos y correos electrónicos mediante el servicio Azure Rights Management:
 
@@ -194,7 +194,7 @@ El usuario que ha protegido el documento, el [emisor de Rights Management](confi
 El valor predeterminado para el período de validez de la licencia de uso de un inquilino es de 30 días. Este valor puede reemplazarse por uno más restrictivo en una etiqueta o una plantilla. Para obtener más información sobre la licencia de uso y cómo configurarla, vea la documentación [Licencia de uso de Rights Management](configure-usage-rights.md#rights-management-use-license).
 
 ## <a name="can-rights-management-prevent-screen-captures"></a>¿Puede impedir Rights Management las capturas de pantalla?
-Si no se concede el [derecho de uso](configure-usage-rights.md) **Copiar**, Rights Management puede impedir las capturas de pantalla de muchas de las herramientas de captura de pantalla que se usan habitualmente en las plataformas Windows (Windows 7, Windows 8.1, Windows 10, Windows Phone) y Android. Sin embargo, los dispositivos iOS y Mac no permiten a ninguna aplicación impedir las capturas de pantalla y los navegadores (por ejemplo, cuando se usan con Outlook Web App y Office Online) tampoco pueden evitar las capturas de pantalla.
+Si no se concede el [derecho de uso](configure-usage-rights.md) **Copiar**, Rights Management puede impedir las capturas de pantalla de muchas de las herramientas de captura de pantalla que se usan habitualmente en las plataformas Windows (Windows 7, Windows 8.1, Windows 10, Windows 10 Mobile) y Android. Sin embargo, los dispositivos iOS y Mac no permiten a ninguna aplicación impedir las capturas de pantalla y los navegadores (por ejemplo, cuando se usan con Outlook Web App y Office Online) tampoco pueden evitar las capturas de pantalla.
 
 Impedir las capturas de pantalla puede ayudar a evitar la divulgación accidental o por negligencia de información confidencial. Sin embargo, existen muchas formas en que un usuario puede compartir datos que se muestran en una pantalla y hacer una captura de pantalla es solo un método. Por ejemplo, un usuario decidido a compartir la información mostrada puede tomar una foto de ella con su teléfono con cámara, volver a escribir los datos o simplemente transmitírsela verbalmente a alguien.
 

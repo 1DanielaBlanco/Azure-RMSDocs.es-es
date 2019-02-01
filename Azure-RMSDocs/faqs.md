@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ef9836a6e3b651986642d2c93128ea0f6b1e6112
-ms.sourcegitcommit: 2c90f5bf11ec34ab94824a39ccab75bde71fc3aa
+ms.openlocfilehash: 18c5028bf69f756b79328a26ce967f5e73492d2e
+ms.sourcegitcommit: b1e08bc29d50187532f00dc215ab331e0a7dbebe
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54314856"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55146798"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Preguntas más frecuentes de Azure Information Protection
 
@@ -44,7 +44,7 @@ Azure Information Protection ofrece funciones de clasificación, etiquetado y pr
 Un usuario debe tener un nombre de usuario y contraseña válidos para acceder al contenido protegido mediante Azure Information Protection. Para más información sobre cómo Azure Information Protection ayuda a proteger los datos, consulte [Rol de Azure Information Protection en la protección de datos](/enterprise-mobility-security/solutions/azure-information-protection-securing-data). 
 
 ## <a name="what-subscription-do-i-need-for-azure-information-protection-and-what-features-are-included"></a>¿Qué suscripción necesito para Azure Information Protection y qué características se incluyen?
-Puede consultar la información sobre la suscripción y la lista de características en la página [Precios de Azure Information Protection](https://azure.microsoft.com/en-us/pricing/details/information-protection). 
+Puede consultar la información sobre la suscripción y la lista de características en la página [Precios de Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection). 
 
 Si tiene una suscripción a Office 365 que incluye la protección de datos de Azure Rights Management, descargue la [hoja de datos de licencias de Azure Information Protection](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf), en la que también se incluyen algunas preguntas frecuentes sobre las licencias.
 
@@ -122,7 +122,7 @@ Sí, como oferta de versión preliminar pública, ahora puede recibir una alerta
 
 Estas alertas pueden ayudarle a detectar ataques avanzados relacionados con los datos y amenazas internas en el entorno. Estas alertas utilizan aprendizaje automático para trazar un perfil del comportamiento de los usuarios que tienen acceso a los datos protegidos. 
 
-Se puede acceder a las alertas de Azure Information Protection [mediante la API de Microsoft Graph Security](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/security-api-overview), o bien puede [transmitir alertas](https://developer.microsoft.com/en-us/graph/docs/concepts/security_siemintegration) a soluciones SIEM, como Splunk e IBM Qradar, mediante el uso de Azure Monitor.
+Se puede acceder a las alertas de Azure Information Protection [mediante la API de Microsoft Graph Security](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/security-api-overview), o bien puede [transmitir alertas](https://developer.microsoft.com/graph/docs/concepts/security_siemintegration) a soluciones SIEM, como Splunk e IBM Qradar, mediante el uso de Azure Monitor.
 
 Para obtener más información acerca de la API de Microsoft Graph Security, consulte [Microsoft Graph Security API overview](https://developer.microsoft.com/graph/docs/concepts/security-concept-overview) (Información general de la API de Microsoft Graph Security).
 
@@ -195,7 +195,7 @@ Además, hay preguntas más frecuentes diseñadas para usuarios finales:
 
 - [Preguntas más frecuentes sobre la aplicación de Microsoft Azure Information Protection para iOS y Android](./rms-client/mobile-app-faq.md)
 
-- [FAQ for RMS sharing app for Mac computers and Windows Phone](https://technet.microsoft.com/dn451248) (Preguntas más frecuentes sobre la aplicación RMS sharing para equipos Mac y Windows Phone)
+- [Preguntas más frecuentes para la aplicación RMS sharing para equipos Mac](https://technet.microsoft.com/dn451248)
 
 - [FAQ for Rights Management Sharing Application for Windows](https://technet.microsoft.com/dn467883) (Preguntas más frecuentes sobre la aplicación Rights Management sharing para Windows)
 

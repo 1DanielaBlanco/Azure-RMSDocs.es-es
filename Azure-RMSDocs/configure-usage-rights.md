@@ -4,18 +4,18 @@ description: Conozca e identifique los derechos específicos que se usan al prot
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/14/2018
+ms.date: 01/29/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a7bf1e202fdff99375054647e04d44d44eecdb85
-ms.sourcegitcommit: 5b48131ace3bbaf82f22fcb7eedf735c2f73d962
+ms.openlocfilehash: 195700be6b1a2f7aecbdd4de333570669cf6d329
+ms.sourcegitcommit: 4b1f204fd31bb9de05510b85b91304d9964a14c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53429906"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55420799"
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>Configuración de los derechos de uso para Azure Rights Management
 
@@ -119,7 +119,7 @@ Un usuario quiere enviar información por correo electrónico a personas concret
 
 Cuando Exchange Online usa las nuevas capacidades para el cifrado de mensajes de Office 365, está disponible una nueva opción de correo electrónico: **Solo cifrar**.
 
-Esta opción está disponible para los inquilinos que usan Exchange Online y se puede seleccionar en Outlook en la web, como otra opción de protección de derechos para una regla de flujo de correo, como una acción de DLP de Office 365, y en Outlook cuando tiene Office 365 ProPlus con una versión mínima de [1804](/officeupdates/monthly-channel-2018#outlook-feature-updates-4). Para más información, vea esta entrada de blog del equipo de Office: [Encrypt only rolling out in Office 365 Message Encryption](https://aka.ms/omefeb2018) (Despliegue de la directiva Cifrar solo del cifrado de mensajes de Office 365).
+Esta opción está disponible para los inquilinos que usan Exchange Online y se puede seleccionar en Outlook en la web, como otra opción de protección de derechos para una regla de flujo de correo, como una acción de DLP de Office 365, y en Outlook (versión mínima de [1804](/officeupdates/monthly-channel-2018#outlook-feature-updates-4) para Office 365 ProPlus, y una versión mínima de 1805 cuando tiene [aplicaciones de Office 365 que admiten Azure RMS](requirements-applications.md#windows-computers-for-information-rights-management-irm). Para obtener más información sobre la opción Solo cifrar, vea el siguiente anuncio de la entrada de blog del equipo de Office: [Encrypt only rolling out in Office 365 Message Encryption](https://aka.ms/omefeb2018) (Despliegue de la directiva Cifrar solo del cifrado de mensajes de Office 365).
 
 Cuando se selecciona esta opción, se cifra el correo electrónico y los destinatarios deben autenticarse. Así, los destinatarios tienen todos los derechos de uso salvo **Guardar como, Exportar** y **Control total**. Esta combinación de derechos de uso implica que los destinatarios no tienen restricciones, excepto que no pueden eliminar la protección. Por ejemplo, un destinatario puede copiar del correo electrónico, imprimirlo y reenviarlo. 
 

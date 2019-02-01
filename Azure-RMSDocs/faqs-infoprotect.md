@@ -4,18 +4,18 @@ description: ¿Tiene alguna pregunta que trate específicamente sobre clasificac
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/27/2018
+ms.date: 01/25/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-ms.openlocfilehash: ac127067999876d82434f3aab9e744a2eb174641
-ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
+ms.openlocfilehash: 706989f3461e8df540d351aed7e21d331fc8e307
+ms.sourcegitcommit: 0fad4196f397fa32c60e6d24791fcad43689c4ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53173509"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55088095"
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>Preguntas más frecuentes sobre la clasificación y el etiquetado en Azure Information Protection
 
@@ -36,8 +36,9 @@ Busque anuncios en el [blog de Enterprise Mobility + Security Blog](https://tech
 > [!NOTE]
 > **Ahora en versión preliminar**:
 > - Informes centralizados para clasificación y etiquetado. Para más información, consulte [Central reporting for Azure Information Protection](reports-aip.md) (Informes centrales para Azure Information Protection).
-> - Posibilidad de etiquetado en aplicaciones de Office (iOS y Android) y equipos Mac para clientes que participan en el [programa Office Insider](https://support.office.com/article/what-is-office-insider-f4208185-b63a-4b68-9c7a-9a32d2411c16). Para más información, consulte [Aplicar etiquetas de confidencialidad a los documentos y al correo electrónico en Office](https://aka.ms/officemipdocs).
-
+>
+>**Publicado recientemente**:
+> - Capacidad de etiquetado integrada en las aplicaciones de Office para los dispositivos móviles (iOS y Android) y los equipos Mac. Para más información, consulte [Aplicar etiquetas de confidencialidad a los documentos y al correo electrónico en Office](https://aka.ms/officemipdocs).
 
 Solicite nuevas características y vote las solicitudes existentes en el [sitio de UserVoice](https://msip.uservoice.com/) de Azure Information Protection.
 

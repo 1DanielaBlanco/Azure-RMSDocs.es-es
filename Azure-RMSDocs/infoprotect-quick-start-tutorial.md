@@ -4,15 +4,15 @@ description: Un tutorial introductorio para probar rápidamente Microsoft Azure 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/14/2018
+ms.date: 01/29/2019
 ms.topic: tutorial
 ms.service: information-protection
-ms.openlocfilehash: a619a05607f5061f51bae93d97cfd44086cefd55
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 2e08b21deb8d1b7ef99d77f56e1bf149a82df081
+ms.sourcegitcommit: 9a9c55c96a7e99bcca742e759a3f08507e3b9801
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024185"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231062"
 ---
 # <a name="tutorial-edit-the-azure-information-protection-policy-and-create-a-new-label"></a>Tutorial: Edición de la directiva de Azure Information Protection y creación de una nueva etiqueta
 
@@ -39,7 +39,7 @@ Para completar este tutorial, necesita lo siguiente:
 
 2. Ha agregado la hoja Azure Information Protection a Azure Portal y ha confirmado que el servicio de protección está activado.
 
-    Si necesita ayuda con estas acciones, consulte este [Quickstart: Add Azure Information Protection to the Azure portal and view the policy](quickstart-viewpolicy.md) (Inicio rápido: Adición de Azure Information Protection a Azure Portal y visualización de la directiva).
+    Si necesita ayuda con estas acciones, consulte [Quickstart: Add Azure Information Protection to the Azure portal and view the policy](quickstart-viewpolicy.md) (Inicio rápido: Adición de Azure Information Protection a Azure Portal y visualización de la directiva).
 
 3. El cliente de Azure Information Protection está instalado en su equipo. 
     
@@ -47,9 +47,11 @@ Para completar este tutorial, necesita lo siguiente:
 
 4. Un equipo con Windows (como mínimo Windows 7 con Service Pack 1) y, en este equipo, haber iniciado sesión en aplicaciones de Office desde una de las siguientes categorías:
     
-    - Office 365 con aplicaciones de Office 2016 (versión mínima 1805, compilación 9330.2078). Para usar esta opción, la cuenta debe tener asignada una licencia para Azure Rights Management. Esta licencia se incluye con la suscripción de Azure Information Protection.
+    - Aplicaciones de Office, versión mínima 1805, compilación 9330.2078 de Office 365 Empresa o Microsoft 365 Empresa cuando se le asigna una licencia de Azure Rights Management (también conocido como Azure Information Protection para Office 365).
     
-    - Office 365 ProPlus con aplicaciones de 2016 o 2013 (instalación basada en Hacer clic y ejecutar o en Windows Installer).
+    - Office 365 ProPlus.
+    
+    - Office Professional Plus 2019.
     
     - Office Professional Plus 2016.
     
@@ -71,7 +73,7 @@ Mediante Azure Portal, cambiaremos primero un par de configuraciones de la direc
     
     Por ejemplo, en el menú del concentrador, haga clic en **Todos los servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
     
-    Si no es el administrador global, utilice el siguiente vínculo para roles alternativos: [Inicio de sesión en Azure Portal](configure-policy.md#signing-in-to-the-azure-portal).
+    Si no es el administrador global, utilice el siguiente vínculo para roles alternativos: [Inicio de sesión en Azure Portal](configure-policy.md#signing-in-to-the-azure-portal)
 
 2. Seleccione **Clasificaciones** > **Directivas** > **Global** para abrir la hoja **Policy: Global** (Directiva:global). 
 
@@ -91,17 +93,17 @@ Mediante Azure Portal, cambiaremos primero un par de configuraciones de la direc
 
 6. Además, asegúrese de que **Mostrar la barra de Information Protection en las aplicaciones de Office** está establecido en **Activado**.
 
-7. Seleccione **Guardar** en la hoja **Policy: Global** (Directiva: Global) y, si se le pide que confirme la acción, seleccione **Aceptar**. Cierre esta página.
+7. Seleccione **Guardar** en esta hoja **Policy: Global** (Directiva: Global) y, si se le pide que confirme la acción, seleccione **Aceptar**. Cierre esta página.
 
 ### <a name="create-a-new-label-for-protection-visual-markers-and-a-condition-to-prompt-for-classification"></a>Creación de una etiqueta para protección, marcadores visuales y una condición para solicitar la clasificación
 
 Ahora vamos a crear una subetiqueta para **Confidencial**.
 
-1. En la opción de menú **Clasificaciones** > **Etiquetas**: haga clic con el botón derecho en la etiqueta **Confidencial** y seleccione **Agregar una subetiqueta**.
+1. Desde la opción de menú **Clasificaciones** > **Etiquetas**: Haga clic con el botón derecho en la etiqueta **Confidencial** y elija **Agregar una subetiqueta**.
     
     Si no tiene una etiqueta denominada **Confidencial**, puede seleccionar otra etiqueta o crear una etiqueta y seguir el tutorial con pequeñas diferencias.
 
-2. En la hoja **Subetiqueta**, especifique el nombre de etiqueta **Finanzas** y agregue la descripción siguiente: **Datos confidenciales que contienen información financiera restringida únicamente a los empleados**.
+2. En la hoja **Subetiqueta**, especifique el nombre de etiqueta **Finanzas** y agregue la siguiente descripción: **Datos confidenciales que contienen información financiera restringida únicamente a los empleados**.
     
     Este texto describe cómo se piensa usar la etiqueta seleccionada y es visible para los usuarios como una información sobre herramientas, para ayudarles a decidir la etiqueta que se va a seleccionar.
 
@@ -143,7 +145,7 @@ Ahora vamos a crear una subetiqueta para **Confidencial**.
     
     Haga clic en **Agregar una nueva condición** y, después, en la hoja **Condición**, seleccione lo siguiente:
     
-    a. **Elija el tipo de condición**: mantenga el valor predeterminado de **Tipos de información**.
+    a. **Elija el tipo de condición**: Mantenga el valor predeterminado de **Tipos de información**.
     
     b. Para **Elegir un sector**: mantenga el valor predeterminado de **Todo**.
     
@@ -151,7 +153,7 @@ Ahora vamos a crear una subetiqueta para **Confidencial**.
     
     d. **Número mínimo de repeticiones**: mantenga el valor predeterminado de **1**.
     
-    e. **Contar solo las repeticiones con valores únicos**: mantenga el valor predeterminado en **Desactivado**.
+    e. **Contar solo las repeticiones con valores únicos	**: mantenga el valor predeterminado de **Desactivado**.
     
     ![Tutorial de Azure Information Protection: configurar la condición de la tarjeta de crédito](./media/step2-configure-condition.png)
     
@@ -161,7 +163,7 @@ Ahora vamos a crear una subetiqueta para **Confidencial**.
     
     ![Tutorial de Azure Information Protection: configurar la condición de la tarjeta de crédito](./media/step2-see-condition.png)
 
-11. Para **Seleccione el modo de aplicación de esta etiqueta**: mantenga el valor predeterminado de **Recomendado** y no cambie la sugerencia de la directiva predeterminada. 
+11. Para **Select how this label is applied** (Seleccionar cómo se aplica esta etiqueta): mantenga el valor predeterminado de **Recomendado** y no cambie la sugerencia de la directiva predeterminada. 
 
 12. En el cuadro **Agregue notas para el uso del administrador**, escriba **Solo con fines de prueba**.
 
@@ -171,7 +173,7 @@ Ahora vamos a crear una subetiqueta para **Confidencial**.
 
 15. En la hoja **Directiva: agregar o quitar etiquetas**, seleccione la etiqueta que acaba de crear y la etiqueta denominada **Finanzas** y haga clic en **Aceptar**.
 
-16. En la hoja **Policy: Global** (Directiva:global), ahora verá la nueva subetiqueta en la directiva global, que está configurada para distintivos visuales y protección. Por ejemplo:
+16. En la hoja **Directiva: Global** (Directiva:global), ahora verá la nueva subetiqueta en la directiva global, que está configurada para distintivos visuales y protección. Por ejemplo:
 
     ![Tutorial de Azure Information Protection: nueva subetiqueta](./media/info-protect-policy-configuredv2.png)
     
@@ -180,7 +182,7 @@ Ahora vamos a crear una subetiqueta para **Confidencial**.
     ![Tutorial de Azure Information Protection: configuración establecida](./media/info-protect-settings-configuredv2.png)
     
 
-17. Haga clic en **Guardar** en la hoja **Policy: Global** (Directiva:global). Si se le pide que confirme esta acción, haga clic en **Aceptar**.
+17. Seleccione **Guardar** en esta hoja **Policy: Global** (Directiva:global). Si se le pide que confirme esta acción, haga clic en **Aceptar**.
 
 Puede cerrar Azure Portal o dejarlo abierto para probar opciones de configuración adicionales cuando haya terminado este tutorial.
 
@@ -258,7 +260,7 @@ Si no desea conservar los cambios realizados en este tutorial, haga lo siguiente
 
 2. Devuelva las opciones de la configuración de directiva que anotó a sus valores originales y, a continuación, seleccione **Guardar**. 
 
-3. En la opción de menú **Clasificaciones** > **Etiquetas** de la hoja **Azure Information Protection: etiqueta**, seleccione el menú contextual (**...**) para la etiqueta**Finanzas** creada.
+3. Desde la opción de menú **Clasificaciones** > **Etiqueta**: En la hoja **Azure Information Protection: etiqueta**, seleccione el menú contextual (**...**) para la etiqueta**Finanzas** creada.
 
 4. Seleccione **Eliminar esta etiqueta** y, si se le pide que confirme, seleccione **Aceptar**.
 

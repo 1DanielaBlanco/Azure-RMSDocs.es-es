@@ -4,15 +4,15 @@ description: Configure una etiqueta que protege un correo electrónico para un u
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/14/2018
+ms.date: 01/29/2019
 ms.topic: quickstart
 ms.service: information-protection
-ms.openlocfilehash: 217fbdc45967b5677f554410bca2ac1da58552d2
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 6b892b1c845ea7d2e8670f054e0166eb160f3294
+ms.sourcegitcommit: 9a9c55c96a7e99bcca742e759a3f08507e3b9801
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023505"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231011"
 ---
 # <a name="quickstart-configure-a-label-for-users-to-easily-protect-emails-that-contain-sensitive-information"></a>Inicio rápido: Configuración de una etiqueta para usuarios para proteger fácilmente los correos electrónicos que contienen información confidencial
 
@@ -38,21 +38,23 @@ Para completar este tutorial rápido, necesitará:
 
 2. Ha agregado la hoja Azure Information Protection a Azure Portal y ha confirmado que el servicio de protección está activado.
 
-    Si necesita ayuda con estas acciones, consulte [Quickstart: Get started in the Azure portal](quickstart-viewpolicy.md) (Inicio rápido: introducción a Azure Portal).
+    Si necesita ayuda con estas acciones, consulte [Quickstart: Introducción a Azure Portal](quickstart-viewpolicy.md).
 
 3. Una etiqueta existente de Azure Information Protection para configurar. 
     
-    Puede usar una de las etiquetas predeterminadas o bien una etiqueta que haya creado. Si necesita ayuda para crear una nueva etiqueta, consulte [Quickstart: Create a new Azure Information Protection label for specific users](quickstart-label-specificusers.md) (Inicio rápido: Creación de una nueva etiqueta de Azure Information Protection para usuarios específicos).
+    Puede usar una de las etiquetas predeterminadas o bien una etiqueta que haya creado. Si necesita ayuda para crear una nueva etiqueta, consulte [Inicio rápido: Creación de una nueva etiqueta de Azure Information Protection para usuarios específicos](quickstart-label-specificusers.md).
 
 4. Para probar la nueva etiqueta: el cliente de Azure Information Protection debe estar instalado en equipos para los usuarios. 
     
     Para probar la etiqueta por usted mismo, instale el cliente visitando el [Centro de descarga de Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=53018) y descargando **AzInfoProtection.exe** desde la página de Azure Information Protection.
 
-5. Para probar la nueva etiqueta: un equipo con Windows (como mínimo Windows 7 con Service Pack 1) y, en este equipo, haber iniciado sesión en aplicaciones de Office desde una de las siguientes categorías:
+5. Para probar la nueva etiqueta: Un equipo con Windows (como mínimo Windows 7 con Service Pack 1) y, en este equipo, haber iniciado sesión en aplicaciones de Office desde una de las siguientes categorías:
     
-    - Office 365 con aplicaciones de Office 2016 (versión mínima 1805, compilación 9330.2078). Para usar esta opción, la cuenta debe tener asignada una licencia para Azure Rights Management. Esta licencia se incluye con la suscripción de Azure Information Protection.
+    - Aplicaciones de Office, versión mínima 1805, compilación 9330.2078 de Office 365 Empresa o Microsoft 365 Empresa cuando se le asigna una licencia de Azure Rights Management (también conocido como Azure Information Protection para Office 365).
     
-    - Office 365 ProPlus con aplicaciones de 2016 o 2013 (instalación basada en Hacer clic y ejecutar o en Windows Installer).
+    - Office 365 ProPlus.
+    
+    - Office Professional Plus 2019.
     
     - Office Professional Plus 2016.
     
@@ -68,9 +70,9 @@ Para ver una lista completa de los requisitos previos para utilizar Azure Inform
     
     Por ejemplo, en el menú del concentrador, haga clic en **Todos los servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
     
-    Si no es el administrador global, utilice el siguiente vínculo para roles alternativos: [Inicio de sesión en Azure Portal](configure-policy.md#signing-in-to-the-azure-portal).
+    Si no es el administrador global, utilice el siguiente vínculo para roles alternativos: [Inicio de sesión en Azure Portal](configure-policy.md#signing-in-to-the-azure-portal)
 
-2. En la opción de menú **Clasificaciones** > **Etiquetas** de la hoja **Azure Information Protection: etiquetas**, seleccione la etiqueta que desea configurar para aplicar la protección. 
+2. Desde la opción de menú **Clasificaciones** > **Etiquetas**: en la hoja **Azure Information Protection: etiquetas**, seleccione la etiqueta que desea configurar para aplicar la protección. 
 
 3. En la hoja **Etiqueta**, busque **Set permissions for documents and emails containing this label** (Establecer permisos para documentos y correos electrónicos que contengan esta etiqueta). Seleccione **Proteger** y, a continuación, **Protección**:
     
@@ -80,9 +82,9 @@ Para ver una lista completa de los requisitos previos para utilizar Azure Inform
     
 5. Seleccione **Establecer permisos definidos por el usuario (versión preliminar)**.
 
-6. Asegúrese de activar la opción **En Outlook, seleccione No reenviar**.
+6. Asegúrese de que la opción siguiente está seleccionada: **En Outlook, seleccione No reenviar**.
 
-7. Si se selecciona, desactive la opción **En Word, Excel, PowerPoint y el Explorador de archivos, solicite al usuario permisos personalizados**.
+7. Si se selecciona, desactive la opción: **En Word, Excel, PowerPoint y el Explorador de archivos, solicite al usuario permisos personalizados**.
 
 8. Haga clic en **Aceptar** en la hoja **Protección** y, a continuación, haga clic en **Guardar** en la hoja **Etiqueta**.
 
@@ -106,7 +108,7 @@ En este caso, los destinatarios no podrán reenviar el correo electrónico, impr
 
 Si no desea mantener esta configuración y prefiere devolver la etiqueta al estado previo en que no aplica la protección, haga lo siguiente:
 
-1. En la opción de menú **Clasificaciones** > **Etiquetas**: en la hoja **Azure Information Protection: etiquetas**, seleccione la etiqueta que ha configurado. 
+1. Desde la opción de menú **Clasificaciones** > **Etiquetas**: en la hoja **Azure Information Protection: Etiquetas**, seleccione la etiqueta que configuró. 
 
 3. En la hoja **Etiqueta**, busque **Establecer permisos para documentos y correos electrónicos que contengan esta etiqueta**, seleccione **No configurado** y, luego, **Guardar**.
 

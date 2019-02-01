@@ -4,18 +4,18 @@ description: Flujo de trabajo integral para colaborar con documentos protegidos 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/12/2018
+ms.date: 01/24/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 4895c429-959f-47c7-9007-b8f032f6df6f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a5a1c0069a35073d9362e28ef18ad4c09d95df3d
-ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
+ms.openlocfilehash: cc62934195916f5db26e7a328957c7fb09f10a57
+ms.sourcegitcommit: 1c1d7067ae7aa8b822bb4ecd23cd7a644989e38c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54393958"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55067603"
 ---
 # <a name="configuring-secure-document-collaboration-by-using-azure-information-protection"></a>Configuración de la colaboración con documentos segura mediante Azure Information Protection
 
@@ -31,7 +31,7 @@ Al configurar estos permisos, también puede especificar a qué usuarios están 
 
 - **Para los usuarios que no tiene una cuenta de Azure Active Directory**: especifique una dirección de correo electrónico que se usará con una cuenta de Microsoft. Esta cuenta puede existir ya o bien los usuarios pueden crearla en el momento en que abran el documento protegido. 
     
-    Para abrir documentos con una cuenta de Microsoft, los usuarios deben usar Hacer clic y ejecutar de Office 2016. Otras ediciones y versiones de Office todavía no admiten la apertura de documentos protegidos de Office con una cuenta Microsoft.
+    Para abrir documentos con una cuenta de Microsoft, los usuarios deben usar aplicaciones de Office 365 (Hacer clic y ejecutar). Otras ediciones y versiones de Office todavía no admiten la apertura de documentos protegidos de Office con una cuenta Microsoft.
 
 - **Para cualquier usuario autenticado**: esta opción es adecuada para cuando no es necesario controlar quién tiene acceso al documento protegido, siempre que el usuario se pueda autenticar. La autenticación puede completarse mediante Azure AD, una cuenta Microsoft o un proveedor social federado o un código de acceso de un solo uso cuando el contenido está protegido por las nuevas funcionalidades de Office 365 Message Encryption. 
 
@@ -140,7 +140,7 @@ Además, los siguientes escenarios admiten la visualización de documentos:
 Admite cuentas de usuario, grupos habilitados para correo electrónico, todos los miembros. Las cuentas de usuario y los grupos habilitados para correo electrónico pueden incluir las cuentas de invitado. Todos los miembros excluyen las cuentas de invitado.
 
 ###### <a name="footnote-2"></a>Nota al pie 2
-Compatible actualmente solo con Hacer clic y ejecutar de Office 2016.
+Compatible actualmente solo con aplicaciones de Office 365 (Hacer clic y ejecutar).
 
 
 

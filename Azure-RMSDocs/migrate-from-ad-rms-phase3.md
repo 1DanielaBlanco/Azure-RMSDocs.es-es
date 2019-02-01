@@ -4,18 +4,18 @@ description: Fase 3 de la migración desde AD RMS a Azure Information Protection
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/11/2018
+ms.date: 01/24/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5aa86c3806dd23787d2661b4a4ac2e6850d1e907
-ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
+ms.openlocfilehash: 659f42f71ef49cd1e632c0ac46416d51b9c8cfb1
+ms.sourcegitcommit: 1c1d7067ae7aa8b822bb4ecd23cd7a644989e38c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54393889"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55067628"
 ---
 # <a name="migration-phase-3---client-side-configuration"></a>Fase 3 de la migración: configuración del lado cliente
 
@@ -25,15 +25,15 @@ Use la información siguiente para la fase 3 de la migración desde AD RMS a Azu
 
 ## <a name="step-7-reconfigure-windows-computers-to-use-azure-information-protection"></a>Paso 7. Reconfiguración de los equipos Windows para usar Azure Information Protection
 
-Para equipos Windows que usan aplicaciones de escritorio de Office 2016 del tipo Hacer clic y ejecutar:
+Para equipos Windows que usan aplicaciones de Office 365 o aplicaciones de Office 2019 u Office 2016 del tipo Hacer clic y ejecutar:
 
 - Puede volver a configurar estos clientes para que usen Azure Information Protection mediante la redirección de DNS. Este es el método preferido para la migración de clientes porque es el más sencillo. Sin embargo, está restringido a aplicaciones de escritorio de Office 2016 (o versiones posteriores) del tipo Hacer clic y ejecutar en equipos Windows.
     
     El método requiere crear un registro SRV y establecer un permiso de denegación NTFS para los usuarios del punto de conexión de publicación de AD RMS.
 
-- Para equipos Windows que no usan la versión Hacer clic y ejecutar de Office 2016:
+- Para equipos Windows que no usan la versión Hacer clic y ejecutar de Office 2019 u Office 2016:
     
-    No podrá usar la redirección de DNS; deberá usar la edición del registro. Si usa Office 2016 junto a otras versiones de Office, puede usar este único método en todos los equipos Windows, o bien combinar el redireccionamiento DNS con la edición del registro. 
+    No podrá usar la redirección de DNS; deberá usar la edición del registro. Si usa una combinación de versiones de Office que pueden y no pueden usar el redireccionamiento DNS, puede usar este único método en todos los equipos Windows, o bien combinar el redireccionamiento DNS con la edición del Registro. 
     
     La edición del registro es más sencilla al editar e implementar scripts que puede descargar. 
 
@@ -41,7 +41,7 @@ Vea las secciones siguientes para obtener más información sobre cómo volver a
 
 ## <a name="client-reconfiguration-by-using-dns-redirection"></a>Reconfiguración de clientes mediante el redireccionamiento DNS
 
-Este método es adecuado solo para los clientes Windows que ejecuten aplicaciones de escritorio de Office 2016 (o versiones posteriores) del tipo Hacer clic y ejecutar. 
+Este método es adecuado solo para los clientes Windows que ejecuten aplicaciones de escritorio de Office 365 y Office 2016 (o versiones posteriores) del tipo Hacer clic y ejecutar. 
 
 1. Cree un registro SRV de DNS usando el siguiente formato:
     
@@ -67,7 +67,7 @@ Este método es adecuado solo para los clientes Windows que ejecuten aplicacione
     |**Número de puerto**|80|  
     |**Host que ofrece este servicio**|5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com|  
 
-2. Establecer un permiso de denegación para los usuarios de Office 2016 en el punto de conexión de publicación de AD RMS:
+2. Establecer un permiso de denegación en el punto de conexión de publicación de AD RMS para usuarios que ejecutan aplicaciones de Office 365 u Office 2016 (o posteriores):
 
     a. En uno de los servidores de AD RMS del clúster, inicie la consola de Internet Information Services (IIS) Manager.
 
@@ -77,18 +77,18 @@ Este método es adecuado solo para los clientes Windows que ejecuten aplicacione
 
     d. En el cuadro de diálogo **Permisos para licensing.asmx**, seleccione **Usuarios** si quiere establecer el redireccionamiento para todos los usuarios, o haga clic en **Agregar** para especificar un grupo que contenga los usuarios a los que quiera aplicar dicho redireccionamiento.
     
-    Aunque todos los usuarios estén usando Office 2016, es preferible especificar inicialmente un subconjunto de usuarios para una migración por fases.
+    Aunque todos los usuarios estén usando una versión de Office que admite el redireccionamiento DNS, es preferible especificar inicialmente un subconjunto de usuarios para una migración por fases.
     
     e. En el grupo seleccionado, seleccione **Denegar** para los permisos **Leer y ejecutar** y **Leer**. Después, haga clic en **Aceptar** dos veces.
 
-    f. Para confirmar que esta configuración funciona según lo esperado, intente conectarse al archivo licensing.asmx directamente desde un explorador. Debería ver el siguiente mensaje de error, que provoca que el cliente que ejecuta Office 2016 busque el registro SRV:
+    f. Para confirmar que esta configuración funciona según lo esperado, intente conectarse al archivo licensing.asmx directamente desde un explorador. Debería ver el siguiente mensaje de error, que provoca que el cliente que ejecuta aplicaciones de Office 365 u Office 2019 u Office 2016 busque el registro SRV:
     
     **Mensaje de error 401.3: no tiene permisos para ver este directorio o esta página con las credenciales que ha suministrado (acceso denegado debido a las listas de control de acceso).**
 
 
 ## <a name="client-reconfiguration-by-using-registry-edits"></a>Reconfiguración del cliente mediante el uso de modificaciones del Registro
 
-Este método es adecuado para todos los clientes Windows y debe usarse si se ejecuta una versión de Office anterior a 2016. En este método, se usan scripts de migración para volver a configurar los clientes de AD RMS:
+Este método es adecuado para todos los clientes Windows y debe usarse si no ejecutan aplicaciones de Office 365, Office 2019 u Office 2016, sino una versión anterior de Office. En este método, se usan scripts de migración para volver a configurar los clientes de AD RMS:
 
 - Migrate-Client.cmd
 

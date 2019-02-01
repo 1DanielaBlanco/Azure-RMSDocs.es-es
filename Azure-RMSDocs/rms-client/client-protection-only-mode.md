@@ -4,18 +4,18 @@ description: Información para los usuarios que ejecutan el cliente de Azure Inf
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/12/2018
+ms.date: 01/24/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 16042717-0d7a-41f5-87e3-12826fda35df
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 2f73f8bf107aaebe0e87588c410e1e7f66093ef7
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: dedacab4509b88f300739bd92012debedfaacf7d
+ms.sourcegitcommit: 1c1d7067ae7aa8b822bb4ecd23cd7a644989e38c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305104"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55067975"
 ---
 # <a name="user-guide-protection-only-mode-for-the-azure-information-protection-client"></a>Manual del usuario: Modo de solo protección para el cliente de Azure Information Protection
 
@@ -55,7 +55,7 @@ El modo de solo protección se ejecuta en los siguientes escenarios:
 
 ## <a name="supported-tasks-for-protection-only-mode"></a>Tareas admitidas para el modo de solo protección
 
-- Proteger (y desproteger) documentos y correos electrónicos desde aplicaciones de Office mediante la característica Information Rights Management (IRM) de Office. Por ejemplo: haga clic en **Archivo** > **Información** > **Proteger documento** > **Restringir acceso**. Para más información, vea [Uso de protección de la información con Office 365, Office 2016 u Office 2013](../help-users.md).
+- Proteger (y desproteger) documentos y correos electrónicos desde aplicaciones de Office mediante la característica Information Rights Management (IRM) de Office. Por ejemplo: haga clic en **Archivo** > **Información** > **Proteger documento** > **Restringir acceso**. Para más información, vea [Uso de protección de la información con Office 365, Office 2019, Office 2016 u Office 2013](../help-users.md#using-information-protection-with-Office-365-Office 2019-Office-2016-or-Office-2013).
 
 - Proteger (y desproteger) archivos mediante el Explorador de archivos de Windows: Haga clic con el botón derecho en el archivo, los archivos o la carpeta y seleccione **Clasificar y proteger**. Para aplicar la protección que ha configurado el administrador, en el cuadro de diálogo **Clasificar y proteger: Azure Information Protection**, haga clic en **Seleccionar plantilla** y elija una de las plantillas disponibles.
 

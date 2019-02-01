@@ -4,18 +4,18 @@ description: Detalles técnicos sobre tipos de archivos, extensiones de nombres 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/23/2019
+ms.date: 01/29/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 3d4285b77e0ccbfd21b4ed536f8c002ffa8d2a28
-ms.sourcegitcommit: fb0a9593f1e69306040fabda9bc9ad4977b21be8
+ms.openlocfilehash: 9ba401db68ceb3e37db9fc77d5721b9e9a235d23
+ms.sourcegitcommit: 0fad4196f397fa32c60e6d24791fcad43689c4ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54751543"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55088146"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>Guía del administrador: Tipos de archivos compatibles con el cliente de Azure Information Protection
 
@@ -160,15 +160,15 @@ Para configurar el cliente de Azure Information Protection para aplicar protecci
 
     - Para una versión de 32 bits de Windows: **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection**
 
-    - Para una versión de 64 bits de Windows: **HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\FileProtection**
+    - Para una versión de 64 bits de Windows: **HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\FileProtection** y **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection**
 
 2. En la clave recién agregada (por ejemplo, HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\\\*), cree un valor de cadena (REG_SZ) con el nombre **Encryption** que tenga el valor de datos de **Pfile**.
 
     Esta configuración permite que el cliente de Azure Information Protection aplique protección genérica.
 
-Estas dos configuraciones permiten que el cliente de Azure Information Protection aplique protección genérica a todos los archivos que tiene una extensión de nombre de archivo. Si éste es su objetivo, no es necesario configurar nada más. Sin embargo, puede definir excepciones para tipos de archivo específicos para que sigan estando protegidos de forma nativa. Para ello, debe realizar tres modificaciones adicionales en el Registro para cada tipo de archivo:
+Estas dos configuraciones permiten que el cliente de Azure Information Protection aplique protección genérica a todos los archivos que tiene una extensión de nombre de archivo. Si éste es su objetivo, no es necesario configurar nada más. Sin embargo, puede definir excepciones para tipos de archivo específicos para que sigan estando protegidos de forma nativa. Para ello, debe realizar tres (para Windows de 32 bits) o 6 (para Windows de 64 bits) modificaciones adicionales en el Registro para cada tipo de archivo:
 
-1. Para **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection** (versión de 32 bits de Windows) o **HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\FileProtection** (versión de 64 bits de Windows): agregue una nueva clave con el nombre de la extensión de nombre de archivo (sin el punto anterior).
+1. Para **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection** y **HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\FileProtection** (si procede): agregue una nueva clave con el nombre de la extensión de nombre de archivo (sin el punto anterior).
 
     Por ejemplo, para los archivos que tienen una extensión .docx, cree una clave denominada **DOCX**.
 

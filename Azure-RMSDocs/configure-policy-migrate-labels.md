@@ -4,24 +4,24 @@ description: Migración de etiquetas de Azure Information Protection al Centro d
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/17/20198
+ms.date: 01/26/2019
 ms.topic: article
 ms.service: information-protection
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 221b503fa3621e51c4822a6ad5a6d08fae4f1bad
-ms.sourcegitcommit: 8dec864bf25c7da62b9e0f628f1bf673c81c15ae
+ms.openlocfilehash: 58a563e3d1f43dd312c0d4c9d1ffdf612b1c8d12
+ms.sourcegitcommit: 9a9c55c96a7e99bcca742e759a3f08507e3b9801
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54356018"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231045"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-the-office-365-security--compliance-center"></a>Cómo migrar etiquetas de Azure Information Protection al Centro de seguridad y cumplimiento de Office 365
 
 >*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) y [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 > [!IMPORTANT]
-> Esta característica se encuentra en versión preliminar, y lo que hace es migrar el inquilino a una nueva plataforma que también está en versión preliminar. Esta operación no puede revertirse. La nueva plataforma admite el etiquetado unificada de modo que varios clientes y servicios pueden usar las etiquetas creadas y administradas.
+> Esta característica se encuentra en versión preliminar, y lo que hace es migrar el inquilino a una nueva plataforma. Esta operación no puede revertirse. La nueva plataforma admite el etiquetado unificada de modo que varios clientes y servicios pueden usar las etiquetas creadas y administradas.
 
 Migre las etiquetas si quiere poder usarlas en el Centro de seguridad y cumplimiento de Office 365, donde [los clientes que admiten el etiquetado unificado](#clients-that-support-unified-labeling) pueden publicarlas y luego descargarlas. El cliente de Azure Information Protection continúa descargando las etiquetas con su directiva de Azure Information Protection desde Azure Portal. 
 
@@ -112,7 +112,7 @@ Los clientes que actualmente admiten el etiquetado unificado son:
 
 - [Cliente de etiquetado unificado de Azure Information Protection](./rms-client/unifiedlabelingclient-version-release-history.md) (en versión preliminar)
 
-- Aplicaciones del programa Office Insider. Para más información, consulte la sección [¿Dónde está la característica disponible actualmente?](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9?ad=US#bkmk_whereavailable) en la documentación de Office.
+- Aplicaciones de Office que se encuentran en distintas fases de disponibilidad. Para obtener más información, consulte la sección **¿Donde está la característica disponible actualmente?** de [Aplicar etiquetas de confidencialidad a los documentos y al correo electrónico en Office](https://support.office.com/en-us/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9) en la documentación de Office.
     
 - Clientes de proveedores y desarrolladores de software que usan el [SDK de MIP](https://docs.microsoft.com/azure/information-protection/develop/mip/mip-sdk-reference).
 

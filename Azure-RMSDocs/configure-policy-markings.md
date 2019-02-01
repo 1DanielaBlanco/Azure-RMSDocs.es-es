@@ -4,16 +4,16 @@ description: Cuando se asigna una etiqueta a un documento o a un mensaje de corr
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/28/2018
+ms.date: 01/24/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: 3f94e9b1993573e8fe392dc75bcf999452bab626
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 549bf29cc6c4c70dd91d6e36ad3fbe26baa69535
+ms.sourcegitcommit: 1c1d7067ae7aa8b822bb4ecd23cd7a644989e38c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023981"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55067744"
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Configuración de una etiqueta para marcas visuales de Azure Information Protection
 
@@ -27,9 +27,9 @@ Más información sobre los distintivos visuales:
 
 - Las marcas de agua se aplican a Word, Excel y PowerPoint:
 
-    - Excel: las marcas de agua son solo visibles en los modos Diseño de página y Vista previa de impresión y cuando se imprimen.
+    - Excel: Las marcas de agua son solo visibles en los modos Diseño de página y Vista previa de impresión y cuando se imprimen.
     
-    - PowerPoint: las marcas de agua se aplican a la diapositiva patrón, como una imagen de fondo. En la pestaña **Vista**, **Patrón de diapositivas**, asegúrese de que la casilla **Ocultar gráficos de fondo** no esté seleccionada.
+    - PowerPoint: Las marcas de agua se aplican a la diapositiva patrón, como una imagen de fondo. En la pestaña **Vista**, **Patrón de diapositivas**, asegúrese de que la casilla **Ocultar gráficos de fondo** no esté seleccionada.
 
 - Para las marcas de agua y los encabezados y pies de página en Word, Excel y PowerPoint, se admiten varias líneas. Si especifica varias líneas para el encabezado o el pie de página de una etiqueta que se aplica en Outlook, se concatenan las líneas. En este escenario, considere el uso de la configuración para [establecer distintivos visuales diferentes para Word, Excel, PowerPoint y Outlook](##setting-different-visual-markings-for-word-excel-powerpoint-and-outlook).
 
@@ -53,9 +53,9 @@ Para los documentos, los distintivos visuales se aplican de la siguiente manera:
 
 - En una aplicación de Office, los distintivos visuales de una etiqueta se aplican cuando la etiqueta se aplica. Los distintivos visuales también se aplican cuando se abre un documento etiquetado y el documento se guardó por primera vez.  
 
-- Si un documento se ha etiquetado con el Explorador de archivos, PowerShell o el analizador de Azure Information Protection, los distintivos visuales no se aplican inmediatamente, sino que los aplica el cliente de Azure Information Protection al guardar el documento, tras haberlo abierto en una aplicación de Office.
+- Cuando un documento se etiqueta mediante el Explorador de archivos, PowerShell o el analizador de Azure Information Protection: no se aplican inmediatamente distintivos visuales, sino que el cliente de Azure Information Protection los aplica cuando ese documento se abre en una aplicación de Office y se guarda por primera vez.
     
-    La excepción es cuando se usa [Autoguardado](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) con Office 2016 para los archivos que se guardan en SharePoint Online, OneDrive o OneDrive para la Empresa: cuando está activado el Autoguardado, no se aplican distintivos visuales a menos que configure la [configuración avanzada de cliente](./rms-client/client-admin-guide-customizations.md#turn-on-classification-to-run-continuously-in-the-background) de manera que la clasificación se ejecute continuamente en segundo plano. 
+    La excepción es cuando se usa [Autoguardado](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) con aplicaciones de Office para los archivos que se guardan en SharePoint Online, OneDrive o OneDrive para la Empresa: cuando está activado el Autoguardado, no se aplican distintivos visuales a menos que establezca la [configuración avanzada de cliente](./rms-client/client-admin-guide-customizations.md#turn-on-classification-to-run-continuously-in-the-background) de manera que la clasificación se ejecute continuamente en segundo plano. 
 
 ## <a name="to-configure-visual-markings-for-a-label"></a>Para configurar distintivos visuales para una etiqueta
 
@@ -65,7 +65,7 @@ Utilice las siguientes instrucciones para configurar las marcas visuales para un
     
     Por ejemplo, en el menú del concentrador, haga clic en **Todos los servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
-2. En la opción de menú **Clasificaciones** > **Etiquetas**: en la hoja **Azure Information Protection: etiquetas**, seleccione la etiqueta que contiene los distintivos visuales que quiere agregar o cambiar.
+2. Desde la opción de menú **Clasificaciones** > **Etiquetas**: en la hoja **Azure Information Protection: etiquetas**, seleccione la etiqueta que contiene los distintivos visuales que quiere agregar o cambiar.
 
 3. En la hoja **Etiqueta** de la sección **Establecer un distintivo visual, como el encabezado o el pie de página**, configure las opciones de los distintivos visuales que quiera y, luego, haga clic en **Guardar**:
     
@@ -82,9 +82,9 @@ Al hacer clic en **Guardar**, los cambios están disponibles para los usuarios y
 
 Puede usar las siguientes variables en la cadena de texto del encabezado, del pie de página o de la marca de agua:
 
-- `${Item.Label}` para la etiqueta seleccionada. Por ejemplo: general
+- `${Item.Label}` para la etiqueta seleccionada. Por ejemplo: General
 
-- `${Item.Name}` para el nombre de archivo o el asunto de correo electrónico. Por ejemplo: VentasJulio.docx
+- `${Item.Name}` para el nombre de archivo o el asunto de correo electrónico. Por ejemplo: JulySales.docx
 
 - `${Item.Location}` para la ruta de acceso y el nombre de archivo de documentos, así como el asunto de los correos electrónicos. Por ejemplo: \\\Ventas\2016\T3\InformeJulio.docx
 
@@ -92,7 +92,7 @@ Puede usar las siguientes variables en la cadena de texto del encabezado, del pi
 
 - `${User.PrincipalName}` para el propietario del documento o correo electrónico, por la dirección de correo electrónico (UPN) que haya iniciado sesión en el cliente de Azure Information Protection. Por ejemplo: rsimone@vanarsdelltd.com
 
-- `${Event.DateTime}` para la fecha y hora en que se haya configurado la etiqueta seleccionada. Por ejemplo: 16/08/2016 13:30
+- `${Event.DateTime}` para la fecha y hora en que se haya configurado la etiqueta seleccionada. Por ejemplo: 8/16/2016 1:30 PM
 
 Ejemplo: Si especifica la cadena `Document: ${item.name}  Classification: ${item.label}` en el pie de página de la etiqueta **General**, el texto de pie de página aplicado a un documento denominado proyecto.docx será **Documento: proyecto.docx Clasificación: general**.
 

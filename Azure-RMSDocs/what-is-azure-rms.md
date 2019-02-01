@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: aeeebcd7-6646-4405-addf-ee1cc74df5df
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ba44c23b56c2832268f0ed6df122a347c9a8fdf3
-ms.sourcegitcommit: 2a1c0882d2b0400f4da6370dbc1830df09867e3d
+ms.openlocfilehash: 0d1cae062602897fce6d36078cfac3b164c7d614
+ms.sourcegitcommit: b1e08bc29d50187532f00dc215ab331e0a7dbebe
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53218466"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55146730"
 ---
 # <a name="what-is-azure-rights-management"></a>¿Qué es Azure Rights Management?
 
@@ -30,7 +30,7 @@ Por ejemplo, los empleados podrían enviar un documento por correo electrónico 
 
 Además, es importante destacar que las personas y los servicios autorizados (como la búsqueda y la indización) pueden seguir leyendo e inspeccionando los datos protegidos. Esto no se logra fácilmente con otras soluciones de protección de la información que usan el cifrado punto a punto. Esta función se denomina "razonamiento encima de los datos" y es un elemento crucial en el mantenimiento del control de los datos de la organización.
 
-En la imagen siguiente se muestra cómo este servicio ofrece una solución de protección para Office 365, así como para servicios y servidores locales. También se ve que la protección es compatible con los dispositivos de usuario final populares que ejecutan Windows, Mac OS, iOS, Android y Windows Phone.
+En la imagen siguiente se muestra cómo este servicio ofrece una solución de protección para Office 365, así como para servicios y servidores locales. También se ve que la protección es compatible con los dispositivos de usuario final populares que ejecutan Windows, Mac OS, iOS y Android.
 
 
 ![Cómo funciona Azure RMS](./media/AzRMS_elements.png)
