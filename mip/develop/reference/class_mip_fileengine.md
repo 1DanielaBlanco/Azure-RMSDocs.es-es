@@ -1,17 +1,17 @@
 ---
-title: clase mip FileEngine
-description: Referencia de la clase mip FileEngine
+title: clase mip::FileEngine
+description: 'Documenta la clase MIP:: fileengine de Microsoft Information Protection (MIP) SDK.'
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: a7342edf27b19f43881b2e8d378fa243d26f7056
-ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.date: 01/28/2019
+ms.openlocfilehash: 4bcdd08cb7ced9e2eea8fa09d9364064a8d198df
+ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47446080"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55651469"
 ---
 # <a name="class-mipfileengine"></a>clase mip::FileEngine 
 Esta clase proporciona una interfaz para todas las funciones de motor.
@@ -19,76 +19,98 @@ Esta clase proporciona una interfaz para todas las funciones de motor.
 ## <a name="summary"></a>Resumen
  Miembros                        | Descripciones                                
 --------------------------------|---------------------------------------------
- public const Settings& GetSettings() const  |  Devuelve la configuración del motor.
-public const std::vector<std::shared_ptr<Label>>& ListSensitivityLabels()  |  Devuelve una lista de etiquetas de confidencialidad.
- public const std::string& GetMoreInfoUrl() const  |  Proporciona una URL para buscar más información sobre la directiva o las etiquetas.
- public bool IsLabelingRequired() const  |  Comprueba si la directiva impone que un documento debe estar etiquetado.
-public void CreateFileHandlerAsync(const std::string& inputFilePath, const ContentState contentState, const std::shared_ptr<FileHandler::Observer>& fileHandlerObserver, const std::shared_ptr<void>& context)  |  Empieza a crear un controlador de archivos para una ruta de acceso de archivo determinada.
-public void CreateFileHandlerAsync(const std::shared_ptr<Stream>& inputStream, const std::string& inputFilePath, const mip::ContentState contentState, const std::shared_ptr<FileHandler::Observer>& fileHandlerObserver, const std::shared_ptr<void>& context)  |  Empieza a crear un controlador de archivos para una secuencia de archivos determinada.
- public void SendApplicationAuditEvent(const std::string& level, const std::string& eventType, const std::string& eventData)  |  Registra un evento específico de aplicación en la canalización de auditoría.
+public const Settings& GetSettings() const  |  Devuelve la configuración del motor.
+public const std::vector\<std::shared_ptr\<SensitivityTypesRulePackage\>\>& ListSensitivityTypes() const  |  Enumera los tipos de confidencialidad asociados con el motor de directiva.
+public const std::vector\<std::shared_ptr\<Label\>\>& ListSensitivityLabels()  |  Devuelve una lista de etiquetas de confidencialidad.
+public const std::string& GetMoreInfoUrl() const  |  Proporciona una URL para buscar más información sobre la directiva o las etiquetas.
+public bool IsLabelingRequired() const  |  Comprueba si la directiva impone que un documento debe estar etiquetado.
+pública CreateFileHandlerAsync void (const std:: String & inputFilePath, isAuditDiscoveryEnabled de bool const std:: String & contentIdentifier, contentState ContentState const, const std:: shared_ptr\<filehandler::Observer\>& fileHandlerObserver, const std:: shared_ptr\<void\>& contexto, const std:: shared_ptr\<FileExecutionState\>& fileExecutionState)  |  Empieza a crear un controlador de archivos para una ruta de acceso de archivo determinada.
+pública CreateFileHandlerAsync void (const std:: shared_ptr\<Stream\>& inputStream, const std:: String & inputFilePath, const std:: String & contentIdentifier, const contentState mip::ContentState, bool isAuditDiscoveryEnabled, const std:: shared_ptr\<filehandler:: Observer\>& fileHandlerObserver, const std:: shared_ptr\<void\>& contexto, const std:: shared_ptr\< FileExecutionState\>& fileExecutionState)  |  Empieza a crear un controlador de archivos para una secuencia de archivos determinada.
+public void SendApplicationAuditEvent(const std::string& level, const std::string& eventType, const std::string& eventData)  |  Registra un evento específico de aplicación en la canalización de auditoría.
+public const std::vector\<std::pair\<std::string, std::string\>\>& GetCustomSettings() const  |  Obtiene una lista de configuración personalizada.
   
 ## <a name="members"></a>Miembros
   
-### <a name="settings"></a>Configuración
+### <a name="getsettings-function"></a>Función GetSettings
 Devuelve la configuración del motor.
   
-### <a name="label"></a>Etiqueta
+### <a name="listsensitivitytypes-function"></a>Función ListSensitivityTypes
+Enumera los tipos de confidencialidad asociados con el motor de directiva.
+
+  
+**Devuelve**: Una lista de etiquetas de confidencialidad. vacío si LoadSensitivityTypesEnabled era false)
+  
+**Vea también**: [FileEngine::Settings](class_mip_fileengine_settings.md)).
+  
+### <a name="listsensitivitylabels-function"></a>Función ListSensitivityLabels
 Devuelve una lista de etiquetas de confidencialidad.
   
-### <a name="getmoreinfourl"></a>GetMoreInfoUrl
+### <a name="getmoreinfourl-function"></a>Función GetMoreInfoUrl
 Proporciona una URL para buscar más información sobre la directiva o las etiquetas.
 
   
-**Devuelve**: una URL con formato de cadena.
+**Devuelve**: Una dirección url en formato de cadena.
   
-### <a name="islabelingrequired"></a>IsLabelingRequired
+### <a name="islabelingrequired-function"></a>Función IsLabelingRequired
 Comprueba si la directiva impone que un documento debe estar etiquetado.
 
   
-**Devuelve**: “true” si el etiquetado es obligatorio; de lo contrario, devuelve “false”.
+**Devuelve**: True si el etiquetado es obligatoria, de lo contrario, false.
   
-### <a name="createfilehandlerasync"></a>CreateFileHandlerAsync
+### <a name="createfilehandlerasync-function"></a>Función CreateFileHandlerAsync
 Empieza a crear un controlador de archivos para una ruta de acceso de archivo determinada.
 
 Parámetros:  
-* **The**: archivo que se va a abrir. La ruta de acceso debe incluir el nombre de archivo y, si existe, la extensión de nombre de archivo. 
+* **inputFilePath**: El archivo que se va a abrir. La ruta de acceso debe incluir el nombre de archivo y, si existe, la extensión de nombre de archivo. 
 
 
-* **contentState**: estado del contenido mientras la aplicación interactúa con él. 
+* **contentIdentifier**: un identificador legible para el contenido. ejemplo de un archivo: Ejemplo de "C:\mip-sdk-for-cpp\files\audit.docx" [ruta\nombre_archivo] para un correo electrónico: "RE: Auditoría design:user1@contoso.com"[Asunto: remitente] 
 
 
-* **A**: clase que implementa la interfaz [FileHandler::Observer](class_mip_filehandler_observer.md). 
+* **contentState**: El estado del contenido mientras la aplicación está interactuando con ella. 
 
 
-* **context**: contexto de cliente que se pasará de manera opaca hacia el observador.
+* **isAuditDiscoveryEnabled**: que representa si la detección de auditoría está habilitada o no. 
+
+
+* **fileHandlerObserver**: Una clase que implementa la interfaz [FileHandler::Observer](class_mip_filehandler_observer.md). 
+
+
+* **context**: Contexto de cliente que se pasará de manera opaca hacia el observador.
 
 
   
-### <a name="createfilehandlerasync"></a>CreateFileHandlerAsync
+### <a name="createfilehandlerasync-function"></a>Función CreateFileHandlerAsync
 Empieza a crear un controlador de archivos para una secuencia de archivos determinada.
 
 Parámetros:  
-* **inputStream**: una secuencia que contiene los datos del archivo. 
+* **inputStream**: Una secuencia que contiene los datos del archivo. 
 
 
-* **inputFilePath**: ruta de acceso al archivo. La ruta de acceso debe incluir el nombre de archivo y, si existe, la extensión de nombre de archivo. 
+* **inputFilePath**: La ruta de acceso al archivo. La ruta de acceso debe incluir el nombre de archivo y, si existe, la extensión de nombre de archivo. 
 
 
-* **contentState**: estado del contenido mientras la aplicación interactúa con él. 
+* **contentIdentifier**: un identificador legible para el contenido. ejemplo de un archivo: Ejemplo de "C:\mip-sdk-for-cpp\files\audit.docx" [ruta\nombre_archivo] para un correo electrónico: "RE: Auditoría design:user1@contoso.com"[Asunto: remitente] 
 
 
-* **fileHandlerObserver**: una clase que implementa la interfaz [FileHandler::Observer](class_mip_filehandler_observer.md). 
+* **contentState**: El estado del contenido mientras la aplicación está interactuando con ella. 
 
 
-* **context**: contexto de cliente que se pasará de manera opaca hacia el observador.
+* **isAuditDiscoveryEnabled**: que representa si la detección de auditoría está habilitada o no. 
+
+
+* **fileHandlerObserver**: Una clase que implementa la interfaz [FileHandler::Observer](class_mip_filehandler_observer.md). 
+
+
+* **context**: Contexto de cliente que se pasará de manera opaca hacia el observador.
 
 
   
-### <a name="sendapplicationauditevent"></a>SendApplicationAuditEvent
+### <a name="sendapplicationauditevent-function"></a>Función SendApplicationAuditEvent
 Registra un evento específico de aplicación en la canalización de auditoría.
 
 Parámetros:  
-* **level**: una descripción del nivel de registro (información, error o advertencia) 
+* **nivel**: una descripción del nivel de registro: Información de Error/advertencia/información 
 
 
 * **eventType**: descripción del tipo de evento. 
@@ -96,3 +118,10 @@ Parámetros:
 
 * **eventData**: datos asociados al evento.
 
+
+  
+### <a name="getcustomsettings-function"></a>Función GetCustomSettings
+Obtiene una lista de configuración personalizada.
+
+  
+**Devuelve**: Un vector de configuración personalizada

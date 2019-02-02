@@ -1,100 +1,100 @@
 ---
-title: Clase mip::ProtectionDescriptorBuilder
-description: Referencia de la clase mip::ProtectionDescriptorBuilder
+title: clase mip::ProtectionDescriptorBuilder
+description: Documenta la clase mip::protectiondescriptorbuilder de Microsoft Information Protection (MIP) SDK.
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 42e44cfaf269a43d0210c0c040ea70ccc1fb192e
-ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.date: 01/28/2019
+ms.openlocfilehash: b6ac49c7cb4d6f7592abac041365191d90951b7a
+ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47446641"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55651299"
 ---
 # <a name="class-mipprotectiondescriptorbuilder"></a>clase mip::ProtectionDescriptorBuilder 
-Crea una función [ProtectionDescriptor](class_mip_protectiondescriptor.md) que describe la protección asociada con un elemento de contenido.
+Crea un elemento [ProtectionDescriptor](class_mip_protectiondescriptor.md) que describe la protección asociada a un elemento de contenido.
   
 ## <a name="summary"></a>Resumen
  Miembros                        | Descripciones                                
 --------------------------------|---------------------------------------------
-public MIP_API std::shared_ptr<ProtectionDescriptor> Build()  |  Crea un [ProtectionDescriptor](class_mip_protectiondescriptor.md) cuyos permisos de acceso se definen por esta instancia de [ProtectionDescriptorBuilder](class_mip_protectiondescriptorbuilder.md).
- public void SetName(const std::string& value)  |  Establece el nombre de la directiva de protección.
- public void SetDescription(const std::string& value)  |  Establece la descripción de la directiva de protección.
-public void SetContentValidUntil(const std::chrono::time_point<std::chrono::system_clock>& value)  |  Establece la hora de expiración de la directiva de protección.
- public void SetAllowOfflineAccess(bool value)  |  Establece si la directiva de protección permite o no el acceso a contenido sin conexión.
- public void SetReferrer(const std::string& uri)  |  Establece la dirección del sitio de referencia de la directiva de protección.
-public void SetEncryptedAppData(const std::map<std::string, std::string>& value)  |  Establece los datos específicos de la aplicación que fueron cifrados.
-public void SetSignedAppData(const std::map<std::string, std::string>& value)  |  Establece los datos específicos de la aplicación que deben firmarse.
- public virtual ~ProtectionDescriptorBuilder()  | _No se ha documentado todavía._
+Public std:: shared_ptr MIP_API\<ProtectionDescriptor\> Build()  |  Crea un [ProtectionDescriptor](class_mip_protectiondescriptor.md) cuyos permisos de acceso se definen por esta instancia de [ProtectionDescriptorBuilder](class_mip_protectiondescriptorbuilder.md).
+public void SetName(const std::string& value)  |  Establece el nombre de la directiva de protección.
+public void SetDescription(const std::string& value)  |  Establece la descripción de la directiva de protección.
+public void SetContentValidUntil(const std::chrono::time_point\<std::chrono::system_clock\>& value)  |  Establece la hora de expiración de la directiva de protección.
+public void SetAllowOfflineAccess(bool value)  |  Establece si la directiva de protección permite o no el acceso a contenido sin conexión.
+public void SetReferrer(const std::string& uri)  |  Establece la dirección del sitio de referencia de la directiva de protección.
+pública SetEncryptedAppData void (const std:: Map\<std:: String, std:: String\>& valor)  |  Establece los datos específicos de la aplicación que fueron cifrados.
+pública SetSignedAppData void (const std:: Map\<std:: String, std:: String\>& valor)  |  Establece los datos específicos de la aplicación que deben firmarse.
+public virtual ~ProtectionDescriptorBuilder()  | _No se ha documentado todavía._
   
 ## <a name="members"></a>Miembros
   
-### <a name="protectiondescriptor"></a>ProtectionDescriptor
+### <a name="build-function"></a>Crear función
 Crea un [ProtectionDescriptor](class_mip_protectiondescriptor.md) cuyos permisos de acceso se definen por esta instancia de [ProtectionDescriptorBuilder](class_mip_protectiondescriptorbuilder.md).
 
   
-**Devuelve**: nueva instancia de [ProtectionDescriptor](class_mip_protectiondescriptor.md)
+**Devuelve**: Nuevo [ProtectionDescriptor](class_mip_protectiondescriptor.md) instancia
   
-### <a name="setname"></a>SetName
+### <a name="setname-function"></a>Función SetName
 Establece el nombre de la directiva de protección.
 
 Parámetros:  
-* **value**: nombre de la directiva de protección
+* **value**: Nombre de la directiva de protección
 
 
   
-### <a name="setdescription"></a>SetDescription
+### <a name="setdescription-function"></a>Función SetDescription
 Establece la descripción de la directiva de protección.
 
 Parámetros:  
-* **value**: descripción de la directiva
+* **value**: Descripción de la directiva
 
 
   
-### <a name="setcontentvaliduntil"></a>SetContentValidUntil
+### <a name="setcontentvaliduntil-function"></a>Función SetContentValidUntil
 Establece la hora de expiración de la directiva de protección.
 
 Parámetros:  
-* **value**: hora de expiración de la directiva
+* **value**: Hora de expiración de la directiva
 
 
   
-### <a name="setallowofflineaccess"></a>SetAllowOfflineAccess
+### <a name="setallowofflineaccess-function"></a>Función SetAllowOfflineAccess
 Establece si la directiva de protección permite o no el acceso a contenido sin conexión.
 
 Parámetros:  
-* **value**: si la directiva permite o no el acceso a contenido sin conexión.
+* **value**: Si la directiva permite el acceso de contenido sin conexión o no
 
 
   
-### <a name="setreferrer"></a>SetReferrer
+### <a name="setreferrer-function"></a>Función SetReferrer
 Establece la dirección del sitio de referencia de la directiva de protección.
 
 Parámetros:  
-* **uri**: dirección del sitio de referencia de directiva
+* **uri**: Dirección de origen de referencia de directiva
 
 
 El sitio de referencia es un identificador URI que puede mostrarse al usuario cuando la adquisición de la directiva de protección ha producido un error y que contiene información sobre cómo el usuario puede obtener permiso para tener acceso al contenido.
   
-### <a name="setencryptedappdata"></a>SetEncryptedAppData
+### <a name="setencryptedappdata-function"></a>Función SetEncryptedAppData
 Establece los datos específicos de la aplicación que fueron cifrados.
 
 Parámetros:  
-* **value**: datos específicos de la aplicación
+* **value**: Datos específicos de la aplicación
 
 
 Una aplicación puede especificar un diccionario de datos específicos de la aplicación cifrados por el servicio de protección. Estos datos cifrados son independientes del conjunto de datos firmado por SetSignedAppData.
   
-### <a name="setsignedappdata"></a>SetSignedAppData
+### <a name="setsignedappdata-function"></a>Función SetSignedAppData
 Establece los datos específicos de la aplicación que deben firmarse.
 
 Parámetros:  
-* **value**: datos específicos de la aplicación
+* **value**: Datos específicos de la aplicación
 
 
 Una aplicación puede especificar un diccionario de datos específicos de la aplicación que se firmarán por el servicio de protección. Estos datos firmados son independientes del conjunto de datos cifrados por SetEncryptedAppData.
   
-### <a name="protectiondescriptorbuilder"></a>~ProtectionDescriptorBuilder
+### <a name="protectiondescriptorbuilder-function"></a>~ ProtectionDescriptorBuilder (función)
 _No se ha documentado todavía._

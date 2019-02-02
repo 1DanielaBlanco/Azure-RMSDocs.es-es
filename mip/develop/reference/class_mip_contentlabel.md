@@ -1,17 +1,17 @@
 ---
-title: clase mip ContentLabel
-description: Referencia de la clase mip ContentLabel
+title: clase mip::ContentLabel
+description: 'Documenta la clase MIP:: contentlabel de Microsoft Information Protection (MIP) SDK.'
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: c105f620ed2cd3d6f1427f2543784ea66ce2c4d7
-ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.date: 01/28/2019
+ms.openlocfilehash: d608ca9229a9b8c4ef0bec3c0d2fe37b51b71f61
+ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47446029"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55651741"
 ---
 # <a name="class-mipcontentlabel"></a>clase mip::ContentLabel 
 Abstracción para una etiqueta de Microsoft Information Protection que se aplica a un fragmento de contenido, normalmente un documento.
@@ -20,44 +20,44 @@ También contiene propiedades de una instancia de etiqueta aplicada específica.
 ## <a name="summary"></a>Resumen
  Miembros                        | Descripciones                                
 --------------------------------|---------------------------------------------
- public const std::string& GetCreationTime() const  |  Obtiene la hora de creación de la solicitud.
- public AssignmentMethod GetAssignmentMethod() const  |  Obtiene el método de asignación de la etiqueta.
-public const std::vector<std::pair<std::string, std::string>>& GetExtendedProperties() const  |  Obtiene propiedades extendidas.
- public bool IsProtectionAppliedFromLabel() const  |  Obtiene si la etiqueta ha aplicado protección o no.
-public std::shared_ptr<Label> GetLabel() const  |  Obtiene el objeto de la etiqueta real que se aplica en el contenido.
+public const std::string& GetCreationTime() const  |  Obtiene la hora de creación de la solicitud.
+public AssignmentMethod GetAssignmentMethod() const  |  Obtiene el método de asignación de la etiqueta.
+public const std::vector\<std::pair\<std::string, std::string\>\>& GetExtendedProperties() const  |  Obtiene propiedades extendidas.
+public bool IsProtectionAppliedFromLabel() const  |  Obtiene si la etiqueta ha aplicado protección o no.
+Public std:: shared_ptr\<etiqueta\> GetLabel() const  |  Obtiene el objeto de la etiqueta real que se aplica en el contenido.
   
 ## <a name="members"></a>Miembros
   
-### <a name="getcreationtime"></a>GetCreationTime
+### <a name="getcreationtime-function"></a>GetCreationTime (función)
 Obtiene la hora de creación de la solicitud.
 
   
-**Devuelve**: hora de creación como una cadena GMT.
+**Devuelve**: Hora de creación como una cadena GMT.
   
-### <a name="getassignmentmethod"></a>GetAssignmentMethod
+### <a name="getassignmentmethod-function"></a>Función GetAssignmentMethod
 Obtiene el método de asignación de la etiqueta.
 
   
 **Devuelve**: AssignmentMethod STANDARD | PRIVILEGED | AUTO. 
   
-**Consulte también**: mip::AssignmentMethod
+**Vea también**: [MIP:: assignmentmethod](mip-enums-and-structs.md#assignmentmethod-enum)
   
-### <a name="getextendedproperties"></a>GetExtendedProperties
+### <a name="getextendedproperties-function"></a>Función GetExtendedProperties
 Obtiene propiedades extendidas.
 
   
-**Devuelve**: propiedades extendidas.
+**Devuelve**: Propiedades extendidas.
   
-### <a name="isprotectionappliedfromlabel"></a>IsProtectionAppliedFromLabel
+### <a name="isprotectionappliedfromlabel-function"></a>Función IsProtectionAppliedFromLabel
 Obtiene si la etiqueta ha aplicado protección o no.
 
   
-**Devuelve**: “true” si hay una protección de plantilla por esta etiqueta; de lo contrario, “false”.
+**Devuelve**: True si hay protección de la plantilla y estaba por esta etiqueta, de lo contrario, false.
   
-### <a name="label"></a>Etiqueta
+### <a name="getlabel-function"></a>GetLabel (función)
 Obtiene el objeto de la etiqueta real que se aplica en el contenido.
 
   
-**Devuelve**: el objeto de la etiqueta que se aplica en el contenido. 
+**Devuelve**: El objeto de etiqueta que se aplica en el contenido. 
   
 **Consulte también**: [mip::Label](class_mip_label.md)

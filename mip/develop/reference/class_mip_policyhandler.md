@@ -1,17 +1,17 @@
 ---
-title: clase mip PolicyHandler
-description: Referencia de la clase mip PolicyHandler
+title: clase mip::PolicyHandler
+description: Documenta la clase mip::policyhandler de Microsoft Information Protection (MIP) SDK.
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 23de5616558a298189cb885727d69a20373a3609
-ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.date: 01/28/2019
+ms.openlocfilehash: ca644716d730a43d4455919b7555852e770e0cda
+ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47445944"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55651503"
 ---
 # <a name="class-mippolicyhandler"></a>clase mip::PolicyHandler 
 Esta clase proporciona una interfaz para todas las funciones de controlador de directiva de un archivo.
@@ -19,24 +19,24 @@ Esta clase proporciona una interfaz para todas las funciones de controlador de d
 ## <a name="summary"></a>Resumen
  Miembros                        | Descripciones                                
 --------------------------------|---------------------------------------------
-public std::shared_ptr<ContentLabel> GetSensitivityLabel(const ExecutionState& state)  |  Obtiene la etiqueta de confidencialidad del contenido existente.
-public std::vector<std::shared_ptr<Action>> ComputeActions(const ExecutionState& state)  |  Ejecuta las reglas en el controlador según el estado especificado y devuelve la lista de acciones que se van a ejecutar.
- public void NotifyCommittedActions(const ExecutionState& state)  |  Se realiza una llamada a las acciones calculadas que se han aplicado y los datos se confirman en el disco.
+Public std:: shared_ptr\<ContentLabel\> GetSensitivityLabel (ExecutionState const & estado)  |  Obtiene la etiqueta de confidencialidad del contenido existente.
+Public std:: vector\<std:: shared_ptr\<acción\> \> ComputeActions (ExecutionState const & estado)  |  Ejecuta las reglas en el controlador según el estado especificado y devuelve la lista de acciones que se van a ejecutar.
+public void NotifyCommittedActions(const ExecutionState& state)  |  Se realiza una llamada a las acciones calculadas que se han aplicado y los datos se confirman en el disco.
   
 ## <a name="members"></a>Miembros
   
-### <a name="contentlabel"></a>ContentLabel
+### <a name="getsensitivitylabel-function"></a>Función GetSensitivityLabel
 Obtiene la etiqueta de confidencialidad del contenido existente.
 
 Parámetros:  
-* **state**: estado actual del contenido. 
+* **state**: Estado actual del contenido 
 
 
 
   
-**Devuelve**: la etiqueta aplicada actualmente en el contenido. Si no se etiqueta, no se devolverá nada.
+**Devuelve**: La etiqueta que se aplica actualmente al contenido. Si no se etiqueta, no se devolverá nada.
   
-### <a name="action"></a>Acción
+### <a name="computeactions-function"></a>Función ComputeActions
 Ejecuta las reglas en el controlador según el estado especificado y devuelve la lista de acciones que se van a ejecutar.
 
 Parámetros:  
@@ -45,13 +45,13 @@ Parámetros:
 
 
   
-**Devuelve**: la lista de acciones que deben aplicarse en el contenido.
+**Devuelve**: Lista de acciones que deben aplicarse en el contenido.
   
-### <a name="notifycommittedactions"></a>NotifyCommittedActions
+### <a name="notifycommittedactions-function"></a>Función NotifyCommittedActions
 Se realiza una llamada a las acciones calculadas que se han aplicado y los datos se confirman en el disco.
 
 Parámetros:  
 * **state**: el estado de ejecución actual del contenido después de haber confirmado las acciones. 
 
 
-: esta llamada envía un evento de auditoría.
+: Esta llamada envía un evento de auditoría

@@ -1,37 +1,37 @@
 ---
-title: Clase mip RemoveContentFooterAction
-description: Referencia de la clase mip RemoveContentFooterAction
+title: clase mip::RemoveContentFooterAction
+description: 'Documenta la clase MIP:: removecontentfooteraction de Microsoft Information Protection (MIP) SDK.'
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: d275e2256c8a65bf63fd16d5761f42563d7a7f07
-ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.date: 01/28/2019
+ms.openlocfilehash: 1d8d68ff3fb3e041a271469b9ba4d0a18c158544
+ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47445638"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55651316"
 ---
 # <a name="class-mipremovecontentfooteraction"></a>clase mip::RemoveContentFooterAction 
-Una clase de acción que especifica quitar el pie de página de contenido del documento.
+Clase de acción que especifica que se quite el pie de página de contenido del documento.
   
 ## <a name="summary"></a>Resumen
  Miembros                        | Descripciones                                
 --------------------------------|---------------------------------------------
-public const std::vector<std::string>& GetUIElementNames()  |  Obtiene una lista de nombres que se debe usar para buscar los elementos de interfaz de usuario que deben quitarse.
- public ActionType GetType() const  |  Obtiene el tipo de [Acción](class_mip_action.md).
+public const std::vector\<std::string\>& GetUIElementNames()  |  Obtiene una lista de nombres que se debe usar para buscar los elementos de interfaz de usuario que deben quitarse.
+public ActionType GetType() const  |  Obtiene el tipo de [Acción](class_mip_action.md).
   
 ## <a name="members"></a>Miembros
   
-### <a name="getuielementnames"></a>GetUIElementNames
+### <a name="getuielementnames-function"></a>Función GetUIElementNames
 Obtiene una lista de nombres que se debe usar para buscar los elementos de interfaz de usuario que deben quitarse.
 
   
-**Devuelve**: una lista de nombres de elementos de interfaz de usuario.
+**Devuelve**: Una lista de nombres de elemento de interfaz de usuario.
   
-### <a name="actiontype"></a>ActionType
+### <a name="gettype-function"></a>Función GetType
 Obtiene el tipo de [Acción](class_mip_action.md).
 
   
-**Devuelve**: ActionType. El tipo de acción derivada a la que puede convertirse esta clase base.
+**Devuelve**: ActionType El tipo de acción derivada a la que puede convertirse esta clase base.

@@ -1,17 +1,17 @@
 ---
-title: Clase mip HttpDelegate
-description: Referencia de la clase mip HttpDelegate
+title: Clase mip::HttpDelegate
+description: Documenta la clase mip::httpdelegate de Microsoft Information Protection (MIP) SDK.
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 3e55f9aff5a9ebd97731ec21e408a33f22905648
-ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.date: 01/28/2019
+ms.openlocfilehash: 68d26b23c1e3ea2e29c22316f80e18937ab78d5c
+ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47445384"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55651028"
 ---
 # <a name="class-miphttpdelegate"></a>Clase mip::HttpDelegate 
 Interfaz para reemplazar el control de HTTP.
@@ -19,20 +19,24 @@ Interfaz para reemplazar el control de HTTP.
 ## <a name="summary"></a>Resumen
  Miembros                        | Descripciones                                
 --------------------------------|---------------------------------------------
-public std::shared_ptr<HttpResponse> Send(const std::shared_ptr<HttpRequest>& request, const std::shared_ptr<void>& context)  |  Envía una solicitud HTTP.
+Public std:: shared_ptr\<HttpResponse\> enviar (const std:: shared_ptr\<HttpRequest\>& solicitud, const std:: shared_ptr\<void\>& contexto)  |  Envía una solicitud HTTP.
+SendAsync void público (const std:: shared_ptr\<HttpRequest\>& solicitud, const std:: shared_ptr\<void\>& contexto, const std:: Function\<void(std::shared_ptr\<HttpResponse\>)\>& fnCallback)  | _No se ha documentado todavía._
   
 ## <a name="members"></a>Miembros
   
-### <a name="httpresponse"></a>HttpResponse
+### <a name="send-function"></a>Send (función)
 Envía una solicitud HTTP.
 
 Parámetros:  
-* **request**: solicitud HTTP. 
+* **request**: Solicitud HTTP 
 
 
-* **context**: el mismo contexto de cliente opaco que se ha pasado a la API que ha producido esta solicitud HTTP.
+* **context**: El mismo contexto de cliente opaco que se pasó a la API que dieron lugar a esta solicitud HTTP
 
 
 
   
-**Devuelve**: respuesta HTTP.
+**Devuelve**: Respuesta HTTP
+  
+### <a name="sendasync-function"></a>SendAsync (función)
+_No se ha documentado todavía._

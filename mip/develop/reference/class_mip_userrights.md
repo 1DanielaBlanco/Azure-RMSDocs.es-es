@@ -1,49 +1,49 @@
 ---
-title: Clase mip UserRights
-description: Referencia de la clase mip UserRights
+title: clase mip::UserRights
+description: 'Documenta la clase MIP:: userrights de Microsoft Information Protection (MIP) SDK.'
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: c1ef7aaba00bf595d80f07f318aa5808f3a56409
-ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.date: 01/28/2019
+ms.openlocfilehash: 3e3abd2045b0e66ee8c2b307d555bf860e489625
+ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47445128"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55650619"
 ---
 # <a name="class-mipuserrights"></a>clase mip::UserRights 
-Un grupo de usuarios y los derechos asociados con ellos.
+Un grupo de usuarios y los derechos asociados a estos.
   
 ## <a name="summary"></a>Resumen
  Miembros                        | Descripciones                                
 --------------------------------|---------------------------------------------
-public UserRights(const std::vector<std::string>& users, const std::vector<std::string>& rights)  |  Constructor [UserRights](class_mip_userrights.md).
-public const std::vector<std::string>& Users() const  |  Obtiene los usuarios asociados a un conjunto de derechos.
-public const std::vector<std::string>& Rights() const  |  Obtiene los derechos asociados a un grupo de usuarios.
+UserRights públicas (const std:: vector\<std:: String\>& los usuarios, const std:: vector\<std:: String\>& rights)  |  Constructor [UserRights](class_mip_userrights.md).
+Public const std:: vector\<std:: String\>& Users() const  |  Obtiene los usuarios asociados a un conjunto de derechos.
+Public const std:: vector\<std:: String\>& Rights() const  |  Obtiene los derechos asociados a un grupo de usuarios.
   
 ## <a name="members"></a>Miembros
   
-### <a name="userrights"></a>UserRights
+### <a name="userrights-function"></a>Función UserRights
 Constructor [UserRights](class_mip_userrights.md).
 
 Parámetros:  
-* **users**: grupo de usuarios que comparten los mismos derechos 
+* **los usuarios**: Grupo de usuarios que comparten los mismos derechos 
 
 
-* **rights**: derechos compartidos por grupo de usuarios
+* **rights**: Derechos compartidos por grupo de usuarios
 
 
   
-### <a name="users"></a>Usuarios
+### <a name="users-function"></a>Función de los usuarios
 Obtiene los usuarios asociados a un conjunto de derechos.
 
   
-**Devuelve**: usuarios asociados a un conjunto de derechos
+**Devuelve**: Usuarios asociados a un conjunto de derechos
   
-### <a name="rights"></a>Derechos
+### <a name="rights-function"></a>Función de derechos
 Obtiene los derechos asociados a un grupo de usuarios.
 
   
-**Devuelve**: derechos asociados a un grupo de usuarios
+**Devuelve**: Derechos asociados a un grupo de usuarios

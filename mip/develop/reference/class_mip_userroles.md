@@ -1,49 +1,49 @@
 ---
-title: Clase mip UserRoles
-description: Referencia de la clase mip UserRoles
+title: clase mip::UserRoles
+description: 'Documenta la clase MIP:: UserRoles de Microsoft Information Protection (MIP) SDK.'
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 1cc1da6f443fa22095f216bb2ec2f0e51e75bf78
-ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.date: 01/28/2019
+ms.openlocfilehash: 1a060652ea61ed452867bb67d281c9531f4e1b98
+ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47445264"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55651520"
 ---
 # <a name="class-mipuserroles"></a>clase mip::UserRoles 
-Un grupo de usuarios y los roles asociados con ellos.
+Un grupo de usuarios y los roles asociados a estos.
   
 ## <a name="summary"></a>Resumen
  Miembros                        | Descripciones                                
 --------------------------------|---------------------------------------------
-public UserRoles(const std::vector<std::string>& users, const std::vector<std::string>& roles)  |  Constructor [UserRoles](class_mip_userroles.md).
-public const std::vector<std::string>& Users() const  |  Obtiene los usuarios asociados a un conjunto de roles.
-public const std::vector<std::string>& Roles() const  |  Obtiene los roles asociados a un grupo de usuarios.
+roles de usuario público (const std:: vector\<std:: String\>& los usuarios, const std:: vector\<std:: String\>& roles)  |  Constructor [UserRoles](class_mip_userroles.md).
+Public const std:: vector\<std:: String\>& Users() const  |  Obtiene los usuarios asociados a un conjunto de roles.
+Public const std:: vector\<std:: String\>& Roles() const  |  Obtiene los roles asociados a un grupo de usuarios.
   
 ## <a name="members"></a>Miembros
   
-### <a name="userroles"></a>UserRoles
+### <a name="userroles-function"></a>Función UserRoles
 Constructor [UserRoles](class_mip_userroles.md).
 
 Parámetros:  
-* **users**: grupo de usuarios que comparten los mismos roles 
+* **los usuarios**: Grupo de usuarios que comparten los mismos roles 
 
 
-* **roles**: roles compartidos por un grupo de usuarios
+* **roles**: Compartidos por grupo de usuarios de roles
 
 
   
-### <a name="users"></a>Usuarios
+### <a name="users-function"></a>Función de los usuarios
 Obtiene los usuarios asociados a un conjunto de roles.
 
   
-**Devuelve**: usuarios asociados a un conjunto de roles
+**Devuelve**: Usuarios asociados a un conjunto de roles
   
-### <a name="roles"></a>Roles
+### <a name="roles-function"></a>Función de roles
 Obtiene los roles asociados a un grupo de usuarios.
 
   
-**Devuelve**: roles asociados a un grupo de usuarios
+**Devuelve**: Roles asociados a un grupo de usuarios

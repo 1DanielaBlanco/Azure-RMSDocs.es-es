@@ -1,17 +1,17 @@
 ---
-title: clase mipFileHandler
-description: Referencia de la clase mip FileHandler
+title: clase mip::FileHandler
+description: 'Documenta la clase MIP:: filehandler de Microsoft Information Protection (MIP) SDK.'
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: efae18bdc10f8878f255f35c608a50482a29887b
-ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.date: 01/28/2019
+ms.openlocfilehash: 4edd9887313aa61b5be269e6685384928c05bcbc
+ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47446131"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55651112"
 ---
 # <a name="class-mipfilehandler"></a>clase mip::FileHandler 
 Interfaz a todas las funciones de control de archivos.
@@ -19,69 +19,74 @@ Interfaz a todas las funciones de control de archivos.
 ## <a name="summary"></a>Resumen
  Miembros                        | Descripciones                                
 --------------------------------|---------------------------------------------
-public void GetLabelAsync(const std::shared_ptr<void>& context)  |  Inicia la recuperación de la etiqueta de confidencialidad del archivo.
-public void GetProtectionAsync(const std::shared_ptr<void>& context)  |  Inicia la recuperación de la directiva de protección desde el archivo.
- public void SetLabel(const std::string& labelId, const LabelingOptions& labelingOptions)  |  Establece la etiqueta de sensibilidad en el archivo.
- public void DeleteLabel(const LabelingOptions& labelingOptions)  |  Elimina la etiqueta de sensibilidad del archivo.
-public void SetProtection(const std::shared_ptr<ProtectionDescriptor>& protectionDescriptor)  |  Establece los permisos basados en plantilla o personalizados (en función de protectionDescriptor->GetProtectionType) en el archivo.
- public void RemoveProtection()  |  Quita la protección del archivo. Si el archivo está etiquetado, la etiqueta se perderá.
-public void CommitAsync(const std::string& outputFilePath, const std::shared_ptr<void>& context) | Escribe los cambios en el archivo especificado por el parámetro \|outputFilePath\ |  .
-public void CommitAsync(const std::shared_ptr<Stream>& outputStream, const std::shared_ptr<void>& context) | Escribe los cambios en el flujo especificado por el parámetro \|outputStream\ |  .
- public void NotifyCommitSuccessful(const std::string& contentIdentifier)  |  Se llama cuando se confirman los cambios en el disco.
- public std::string GetOutputFileName()  |  Calcula el nombre y la extensión del archivo de salida basándose en el nombre del archivo original y en los cambios acumulados.
+Public std:: shared_ptr\<ContentLabel\> GetLabel()  |  Inicia la recuperación de la etiqueta de confidencialidad del archivo.
+public std::shared_ptr\<ProtectionHandler\> GetProtection()  |  Inicia la recuperación de la directiva de protección desde el archivo.
+pública ClassifyAsync void (const std:: shared_ptr\<void\>& contexto)  |  Ejecuta las reglas en el controlador y devuelve la lista de acciones que se ejecutan.
+public void SetLabel(const std::string& labelId, const LabelingOptions& labelingOptions)  |  Establece la etiqueta de sensibilidad en el archivo.
+public void DeleteLabel(const LabelingOptions& labelingOptions)  |  Elimina la etiqueta de sensibilidad del archivo.
+pública SetProtection void (const std:: shared_ptr\<ProtectionDescriptor\>& protectionDescriptor)  |  Establece los permisos basados en plantilla o personalizados (en función de protectionDescriptor->GetProtectionType) en el archivo.
+pública SetProtection void (const std:: vector\<uint8_t\>& serializedPublishingLicense, const std:: vector\<uint8_t\>& serializedProtectionInfo)  |  Establece permisos personalizados o basados en plantillas (según serializedPublishingLicense y serializedProtectionInfo) en el archivo.
+public void RemoveProtection()  |  Quita la protección del archivo. Si el archivo está etiquetado, la etiqueta se perderá.
+pública CommitAsync void (const std:: String & outputFilePath, const std:: shared_ptr\<void\>& contexto) | Escribe los cambios en el archivo especificado por el parámetro \|outputFilePath\ |  parámetro.
+pública CommitAsync void (const std:: shared_ptr\<Stream\>& outputStream, const std:: shared_ptr\<void\>& contexto) | Escribe los cambios en el flujo especificado por el parámetro \|outputStream\ |  parámetro.
+pública GetDecryptedTemporaryFileAsync void (const std:: shared_ptr\<void\>& contexto)  |  Devuelve una ruta de acceso a un archivo temporal (que se eliminarán si es posible) - que representa el contenido descifrado.
+public void NotifyCommitSuccessful(const std::string& contentIdentifier)  |  Se llama cuando se confirman los cambios en el disco.
+public std::string GetOutputFileName()  |  Calcula el nombre y la extensión del archivo de salida basándose en el nombre del archivo original y en los cambios acumulados.
   
 ## <a name="members"></a>Miembros
   
-### <a name="getlabelasync"></a>GetLabelAsync
+### <a name="getlabel-function"></a>GetLabel (función)
 Inicia la recuperación de la etiqueta de confidencialidad del archivo.
-Se llamará a [FileHandler::Observer](class_mip_filehandler_observer.md) después de la realización correcta o de un error.
-
-Parámetros:  
-* **context**: contexto de cliente que se pasará de manera opaca hacia el observador.
-
-
   
-### <a name="getprotectionasync"></a>GetProtectionAsync
+### <a name="getprotection-function"></a>Función GetProtection
 Inicia la recuperación de la directiva de protección desde el archivo.
-Se llamará a [FileHandler::Observer](class_mip_filehandler_observer.md) después de la realización correcta o de un error.
-
-Parámetros:  
-* **context**: contexto de cliente que se pasará de manera opaca hacia el observador.
-
+  
+### <a name="classifyasync-function"></a>Función ClassifyAsync
+Ejecuta las reglas en el controlador y devuelve la lista de acciones que se ejecutan.
 
   
-### <a name="setlabel"></a>SetLabel
+**Devuelve**: Lista de acciones que deben aplicarse en el contenido.
+  
+### <a name="setlabel-function"></a>Función SetLabel
 Establece la etiqueta de sensibilidad en el archivo.
 Los cambios no se escribirán en el archivo hasta que se realice una llamada a CommitAsync. El método automático y con privilegios permite a la API reemplazar cualquier etiqueta existente y genera [JustificationRequiredError](class_mip_justificationrequirederror.md) al establecer la etiqueta; es necesario justificar la operación (mediante el parámetro labelingOptions).
   
-### <a name="deletelabel"></a>DeleteLabel
+### <a name="deletelabel-function"></a>Función DeleteLabel
 Elimina la etiqueta de sensibilidad del archivo.
 Los cambios no se escribirán en el archivo hasta que se realice una llamada a CommitAsync. El método automático y con privilegios permite a la API reemplazar cualquier etiqueta existente y genera [JustificationRequiredError](class_mip_justificationrequirederror.md) al establecer la etiqueta; es necesario justificar la operación (mediante el parámetro labelingOptions).
   
-### <a name="setprotection"></a>SetProtection
+### <a name="setprotection-function"></a>Función SetProtection
 Establece los permisos basados en plantilla o personalizados (en función de protectionDescriptor->GetProtectionType) en el archivo.
 Los cambios no se escribirán en el archivo hasta que se realice una llamada a CommitAsync.
   
-### <a name="removeprotection"></a>RemoveProtection
+### <a name="setprotection-function"></a>Función SetProtection
+Establece permisos personalizados o basados en plantillas (según serializedPublishingLicense y serializedProtectionInfo) en el archivo.
+Los cambios no se escribirán en el archivo hasta que se realice una llamada a CommitAsync.
+  
+### <a name="removeprotection-function"></a>Función RemoveProtection
 Quita la protección del archivo. Si el archivo está etiquetado, la etiqueta se perderá.
 Los cambios no se escribirán en el archivo hasta que se realice una llamada a CommitAsync.
   
-### <a name="commitasync"></a>CommitAsync
+### <a name="commitasync-function"></a>CommitAsync (función)
 Escribe los cambios en el archivo especificado por el parámetro |outputFilePath|.
 Se llamará a [FileHandler::Observer](class_mip_filehandler_observer.md) después de la realización correcta o de un error.
   
-### <a name="commitasync"></a>CommitAsync
+### <a name="commitasync-function"></a>CommitAsync (función)
 Escribe los cambios en el flujo especificado por el parámetro |outputStream|.
 Se llamará a [FileHandler::Observer](class_mip_filehandler_observer.md) después de la realización correcta o de un error.
   
-### <a name="notifycommitsuccessful"></a>NotifyCommitSuccessful
+### <a name="getdecryptedtemporaryfileasync-function"></a>Función GetDecryptedTemporaryFileAsync
+Devuelve una ruta de acceso a un archivo temporal (que se eliminarán si es posible) - que representa el contenido descifrado.
+Se llamará a [FileHandler::Observer](class_mip_filehandler_observer.md) después de la realización correcta o de un error.
+  
+### <a name="notifycommitsuccessful-function"></a>Función NotifyCommitSuccessful
 Se llama cuando se confirman los cambios en el disco.
 
 Parámetros:  
-* **contentIdentifier**: ejemplo de un archivo: "C:\mip-sdk-for-cpp\files\audit.docx" [ruta] ejemplo de un correo electrónico: "RE: Auditar design:user1@contoso.com" [Asunto:Remitente] 
+* **contentIdentifier**: ejemplo de un archivo: Ejemplo de "C:\mip-sdk-for-cpp\files\audit.docx" [ruta\nombre_archivo] para un correo electrónico: "RE: Auditoría design:user1@contoso.com"[Asunto: remitente] 
 
 
 Desencadena un evento de auditoría.
   
-### <a name="getoutputfilename"></a>GetOutputFileName
+### <a name="getoutputfilename-function"></a>Función GetOutputFileName
 Calcula el nombre y la extensión del archivo de salida basándose en el nombre del archivo original y en los cambios acumulados.

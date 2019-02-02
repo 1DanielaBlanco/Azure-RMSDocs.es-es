@@ -1,17 +1,17 @@
 ---
-title: Clase mip InternalError
-description: Referencia de la clase mip InternalError
+title: clase mip::InternalError
+description: 'Documenta la clase MIP:: internalerror de Microsoft Information Protection (MIP) SDK.'
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: fc0babd7cff6dae6d322ba4f49fe5330a73255e5
-ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.date: 01/28/2019
+ms.openlocfilehash: b856c362706e749c63eebfa4dc3ad11350b53817
+ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47445604"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55650109"
 ---
 # <a name="class-mipinternalerror"></a>clase mip::InternalError 
 Error interno. Este error se produce cuando ocurre algo inesperado durante la ejecución.
@@ -19,46 +19,46 @@ Error interno. Este error se produce cuando ocurre algo inesperado durante la ej
 ## <a name="summary"></a>Resumen
  Miembros                        | Descripciones                                
 --------------------------------|---------------------------------------------
- public char const* what() const  |  Obtiene el mensaje de error.
-public std::shared_ptr<Error> Clone() const  |  Clona el error.
- public virtual ErrorType GetErrorType() const  |  Obtiene el tipo de error.
- public virtual const std::string& GetErrorName() const  |  Obtiene el nombre del error.
- public virtual const std::string& GetMessage() const  |  Obtiene el mensaje de error.
- public virtual void SetMessage(const std::string& msg)  |  Establece el mensaje de error.
+public char const* what() const  |  Obtiene el mensaje de error.
+Public std:: shared_ptr\<Error\> Clone() const  |  Clona el error.
+public virtual ErrorType GetErrorType() const  |  Obtiene el tipo de error.
+public virtual const std::string& GetErrorName() const  |  Obtiene el nombre del error.
+public virtual const std::string& GetMessage() const  |  Obtiene el mensaje de error.
+public virtual void SetMessage(const std::string& msg)  |  Establece el mensaje de error.
   
 ## <a name="members"></a>Miembros
   
-### <a name="what"></a>what
+### <a name="what-function"></a>¿Qué función
 Obtiene el mensaje de error.
 
   
-**Devuelve**: el mensaje de error.
+**Devuelve**: El mensaje de error
   
-### <a name="error"></a>Error
+### <a name="clone-function"></a>Clone (función)
 Clona el error.
 
   
-**Devuelve**: un clon del error.
+**Devuelve**: Un clon del error.
   
-### <a name="errortype"></a>ErrorType
+### <a name="geterrortype-function"></a>Función GetErrorType
 Obtiene el tipo de error.
 
   
-**Devuelve**: el tipo de error.
+**Devuelve**: El tipo de error.
   
-### <a name="geterrorname"></a>GetErrorName
+### <a name="geterrorname-function"></a>Función GetErrorName
 Obtiene el nombre del error.
 
   
-**Devuelve**: el nombre del error.
+**Devuelve**: El nombre del error.
   
-### <a name="getmessage"></a>GetMessage
+### <a name="getmessage-function"></a>Función GetMessage
 Obtiene el mensaje de error.
 
   
-**Devuelve**: el mensaje de error.
+**Devuelve**: El mensaje de error.
   
-### <a name="setmessage"></a>SetMessage
+### <a name="setmessage-function"></a>Función SetMessage
 Establece el mensaje de error.
 
 Parámetros:  

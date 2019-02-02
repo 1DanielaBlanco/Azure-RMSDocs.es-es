@@ -1,17 +1,17 @@
 ---
-title: Clase mip::LabelingOptions
-description: Referencia de la clase mip::LabelingOptions
+title: clase mip::LabelingOptions
+description: 'Documenta la clase MIP:: labelingoptions de Microsoft Information Protection (MIP) SDK.'
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 1f3bdb5084dfa0d9121d1b1f7987161ba6d6ae6f
-ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.date: 01/28/2019
+ms.openlocfilehash: 13e1e7d6d25bda7db90315295f671c4acf794066
+ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47445689"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55650248"
 ---
 # <a name="class-miplabelingoptions"></a>clase mip::LabelingOptions 
 Interfaz para configurar las opciones de etiquetado para los métodos SetLabel y DeleteLabel.
@@ -19,44 +19,44 @@ Interfaz para configurar las opciones de etiquetado para los métodos SetLabel y
 ## <a name="summary"></a>Resumen
  Miembros                        | Descripciones                                
 --------------------------------|---------------------------------------------
- public LabelingOptions(AssignmentMethod method, ActionSource actionSource)  | _No se ha documentado todavía._
- public AssignmentMethod GetAssignmentMethod() const  | _No se ha documentado todavía._
- public ActionSource GetActionSource() const  | _No se ha documentado todavía._
- public bool IsDowngradeJustified() const  | _No se ha documentado todavía._
- public const std::string& GetJustificationMessage() const  | _No se ha documentado todavía._
-public const std::vector<std::pair<std::string, std::string>>& GetExtendedProperties() const  | _No se ha documentado todavía._
- public void SetDowngradeJustification(bool isDowngradeJustified, const std::string& justificationMessage)  | _No se ha documentado todavía._
-public void SetExtendedProperties(const std::vector<std::pair<std::string, std::string>>& extendedProperties)  | _No se ha documentado todavía._
+public LabelingOptions(AssignmentMethod method, ActionSource actionSource)  | _No se ha documentado todavía._
+public AssignmentMethod GetAssignmentMethod() const  | _No se ha documentado todavía._
+public ActionSource GetActionSource() const  | _No se ha documentado todavía._
+public bool IsDowngradeJustified() const  | _No se ha documentado todavía._
+public const std::string& GetJustificationMessage() const  | _No se ha documentado todavía._
+public const std::vector\<std::pair\<std::string, std::string\>\>& GetExtendedProperties() const  | _No se ha documentado todavía._
+public void SetDowngradeJustification(bool isDowngradeJustified, const std::string& justificationMessage)  | _No se ha documentado todavía._
+pública SetExtendedProperties void (const std:: vector\<std:: Pair\<std:: String, std:: String\>\>& extendedProperties)  | _No se ha documentado todavía._
   
 ## <a name="members"></a>Miembros
   
-### <a name="labelingoptions"></a>LabelingOptions
+### <a name="labelingoptions-function"></a>Función LabelingOptions
 _No se ha documentado todavía._
 
   
-### <a name="getassignmentmethod"></a>GetAssignmentMethod
+### <a name="getassignmentmethod-function"></a>Función GetAssignmentMethod
 _No se ha documentado todavía._
 
   
-### <a name="getactionsource"></a>GetActionSource
+### <a name="getactionsource-function"></a>Función GetActionSource
 _No se ha documentado todavía._
 
   
-### <a name="isdowngradejustified"></a>IsDowngradeJustified
+### <a name="isdowngradejustified-function"></a>Función IsDowngradeJustified
 _No se ha documentado todavía._
 
   
-### <a name="getjustificationmessage"></a>GetJustificationMessage
+### <a name="getjustificationmessage-function"></a>Función GetJustificationMessage
 _No se ha documentado todavía._
 
   
-### <a name="getextendedproperties"></a>GetExtendedProperties
+### <a name="getextendedproperties-function"></a>Función GetExtendedProperties
 _No se ha documentado todavía._
 
   
-### <a name="setdowngradejustification"></a>SetDowngradeJustification
+### <a name="setdowngradejustification-function"></a>Función SetDowngradeJustification
 _No se ha documentado todavía._
 
   
-### <a name="setextendedproperties"></a>SetExtendedProperties
+### <a name="setextendedproperties-function"></a>Función SetExtendedProperties
 _No se ha documentado todavía._

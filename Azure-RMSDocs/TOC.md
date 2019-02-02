@@ -23,7 +23,6 @@
 ### [Cómo admiten las aplicaciones la protección de Azure Rights Management](applications-support.md)
 #### [Aplicaciones y servicios de Office](office-apps-services-support.md)
 #### [Servidores de archivos que ejecutan Windows Server y usan Infraestructura de clasificación de archivos (FCI)](file-server-support.md)
-#### [Aplicación RMS sharing para Windows y plataformas móviles](sharing-app-support.md)
 #### [Otras aplicaciones compatibles con las API de RMS](api-support.md)
 ## [RMS para individuos y Azure Information Protection](rms-for-individuals.md)
 ## [También se conoce como...](aka.md)

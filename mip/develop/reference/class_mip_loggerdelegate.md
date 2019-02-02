@@ -1,17 +1,17 @@
 ---
-title: clase mip LoggerDelegate
-description: Referencia de la clase mip LoggerDelegate
+title: clase mip::LoggerDelegate
+description: Documenta la clase mip::loggerdelegate de Microsoft Information Protection (MIP) SDK.
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: b25cdb177735feccfa5c4d344613e4747d18b77f
-ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.date: 01/28/2019
+ms.openlocfilehash: d93bfb863bf97629a8b2361425a0d78187c88cdc
+ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47445859"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55650008"
 ---
 # <a name="class-miploggerdelegate"></a>clase mip::LoggerDelegate 
 Una clase que define la interfaz para el registrador de SDK de MIP.
@@ -19,14 +19,14 @@ Una clase que define la interfaz para el registrador de SDK de MIP.
 ## <a name="summary"></a>Resumen
  Miembros                        | Descripciones                                
 --------------------------------|---------------------------------------------
- public void Init(const std::string& storagePath, LogLevel logLevel)  |  Inicialice el registrador.
- public LogLevel GetLogLevel() const  |  Obtenga el nivel de registro más bajo que pueda desencadenar un evento de registro.
- public void Flush()  |  Vacíe el registrador.
- public void WriteToLog(const LogLevel level, const std::string& message, const std::string& function, const std::string& file, const int32_t line)  |  Escriba una instrucción de registro en el archivo de registro.
+public void Init(const std::string& storagePath, LogLevel logLevel)  |  Inicialice el registrador.
+public LogLevel GetLogLevel() const  |  Obtenga el nivel de registro más bajo que pueda desencadenar un evento de registro.
+public void Flush()  |  Vacíe el registrador.
+public void WriteToLog(const LogLevel level, const std::string& message, const std::string& function, const std::string& file, const int32_t line)  |  Escriba una instrucción de registro en el archivo de registro.
   
 ## <a name="members"></a>Miembros
   
-### <a name="init"></a>Init
+### <a name="init-function"></a>Función Init
 Inicialice el registrador.
 
 Parámetros:  
@@ -37,16 +37,16 @@ Parámetros:
 
 
   
-### <a name="loglevel"></a>LogLevel
+### <a name="getloglevel-function"></a>Función GetLogLevel
 Obtenga el nivel de registro más bajo que pueda desencadenar un evento de registro.
 
   
-**Devuelve**: el nivel de registro más bajo que pueda desencadenar un evento de registro.
+**Devuelve**: El nivel de registro más bajo que desencadene un evento de registro.
   
-### <a name="flush"></a>Vaciar
+### <a name="flush-function"></a>Flush (función)
 Vacíe el registrador.
   
-### <a name="writetolog"></a>WriteToLog
+### <a name="writetolog-function"></a>Función WriteToLog
 Escriba una instrucción de registro en el archivo de registro.
 
 Parámetros:  

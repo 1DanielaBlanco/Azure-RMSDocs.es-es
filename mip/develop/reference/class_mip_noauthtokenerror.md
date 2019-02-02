@@ -1,20 +1,20 @@
 ---
-title: clase mip::NetworkError
-description: 'Documenta la clase MIP:: NetworkError de Microsoft Information Protection (MIP) SDK.'
+title: clase mip::NoAuthTokenError
+description: Documenta la clase mip::noauthtokenerror de Microsoft Information Protection (MIP) SDK.
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
 ms.author: bryanla
 ms.date: 01/28/2019
-ms.openlocfilehash: 3a53683e910a380fed1adc0498ccf170be7087b2
+ms.openlocfilehash: ef2e6a3c4fd8a7f378ff4fc32501c614eeb40f9a
 ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/02/2019
-ms.locfileid: "55651231"
+ms.locfileid: "55651935"
 ---
-# <a name="class-mipnetworkerror"></a>clase mip::NetworkError 
-Error de red. Se produjo por un comportamiento inesperado al realizar llamadas de red a los puntos de conexión de servicio.
+# <a name="class-mipnoauthtokenerror"></a>clase mip::NoAuthTokenError 
+El usuario no pudo obtener acceso al contenido porque falta el token de autenticación.
   
 ## <a name="summary"></a>Resumen
  Miembros                        | Descripciones                                
