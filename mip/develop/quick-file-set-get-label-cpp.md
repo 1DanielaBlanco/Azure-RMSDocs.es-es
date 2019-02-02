@@ -5,16 +5,16 @@ services: information-protection
 author: BryanLa
 ms.service: information-protection
 ms.topic: quickstart
-ms.date: 09/27/2018
+ms.date: 01/18/2019
 ms.author: bryanla
-ms.openlocfilehash: 651fc73c00f18d06ad1a824337a096331bc7e897
-ms.sourcegitcommit: d677088db8588fb2cc4a5d7dd296e76d0d9a2e9c
-ms.translationtype: HT
+ms.openlocfilehash: 4898aefc996c26df5f4831c95be63c9fa1a45dc4
+ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48251750"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55651214"
 ---
-# <a name="quickstart-set-and-get-a-sensitivity-label-c"></a>Inicio rápido: establecer y obtener una etiqueta de confidencialidad (C++)
+# <a name="quickstart-set-and-get-a-sensitivity-label-c"></a>Inicio rápido: Establecer y obtener una etiqueta de confidencialidad (C++)
 
 En esta guía de inicio rápido se muestra cómo usar más de las API de archivo de MIP. Al utilizar una de las etiquetas de confidencialidad que aparece en la guía de inicio rápido anterior, utilice un controlador de archivo para establecer y obtener la etiqueta en un archivo. La clase del controlador de archivos expone varias operaciones de configuración/obtención de etiquetas, o de protección, para los tipos de archivo admitidos.
 
@@ -22,20 +22,20 @@ En esta guía de inicio rápido se muestra cómo usar más de las API de archivo
 
 Si aún no lo ha hecho, asegúrese de completar los siguientes requisitos previos antes de continuar:
 
-- Complete primero la [Quickstart: List sensitivity labels (C++)](quick-file-list-labels-cpp.md) [Guía de inicio rápido: mostrar etiquetas de confidencialidad (C++)], en la que se compila una solución inicial de Visual Studio, con el fin de mostrar las etiquetas de confidencialidad de una organización. Esta guía de inicio rápido "Establecer y obtener una etiqueta de confidencialidad" se basa en la anterior.
-- Si lo desea: revise los conceptos sobre [controladores de archivos en el SDK de MIP](concept-handler-file-cpp.md).
+- Completa [inicio rápido: Lista de las etiquetas de confidencialidad (C++)](quick-file-list-labels-cpp.md) first, que crea un inicio de la solución de Visual Studio, para obtener una lista de las etiquetas de confidencialidad de la organización. Esta guía de inicio rápido "Establecer y obtener una etiqueta de confidencialidad" se basa en la anterior.
+- Opcionalmente: Revisión [controladores de archivos en el SDK de MIP](concept-handler-file-cpp.md) conceptos.
 
 ## <a name="implement-an-observer-class-to-monitor-the-file-handler-object"></a>Implemente una clase de observador para supervisar el objeto de controlador de archivos
 
 De forma similar al observador que ha implementado (para el motor y perfil del archivo) en la guía de inicio rápido de inicialización de la aplicación, implemente ahora una clase de observador para un objeto del controlador de archivos.
 
-Cree una implementación básica para una clase de observador, extendiendo la clase `mip::FileHandler::Observer` del SDK. Se crea una instancia del observador, que se usa más adelante para supervisar las operaciones del controlador de archivos.
+Crear una implementación básica para un observador de controlador de archivo mediante la ampliación del SDK `mip::FileHandler::Observer` clase. Se crea una instancia del observador, que se usa más adelante para supervisar las operaciones del controlador de archivos.
 
-1. Abra la solución de Visual Studio con la que ha trabajado en el artículo anterior "Quickstart: List sensitivity labels (C++)" [Guía de inicio rápido: mostrar etiquetas de confidencialidad (C++)].
+1. Abra la solución de Visual Studio ha trabajado en el anterior "Guía de inicio rápido: Lista de las etiquetas de confidencialidad (C++) "artículo.
 
 2. Agregue una nueva clase al proyecto, que genera automáticamente los archivos de encabezado/.h e implementación/.cpp:
 
-   - En el **Explorador de soluciones**, vuelva a hacer clic con el botón derecho en el nodo del proyecto, seleccione **Agregar** y después **Clase**.
+   - En el **el Explorador de soluciones**, haga clic en el nodo del proyecto nuevo, seleccione **agregar**, a continuación, seleccione **clase**.
    - En el cuadro de diálogo **Agregar clase**:
      - En el campo **Nombre de clase**, escriba "filehandler_observer". Tenga en cuenta que tanto el campo **Archivo .h** como el campo **Archivo .cpp** se rellenan automáticamente, según el nombre especificado.
      - Cuando haya terminado, haga clic en el botón **Aceptar**.
@@ -105,12 +105,19 @@ Agregue lógica para establecer y obtener una etiqueta de confidencialidad en un
    ```cpp
    // Set up async FileHandler for input file operations
    string filePathIn = "<input-file-path>";
+   string contentIdentifier = "<content-identifier>";
    std::shared_ptr<FileHandler> handler;
    try
    {
         auto handlerPromise = std::make_shared<std::promise<std::shared_ptr<FileHandler>>>();
         auto handlerFuture = handlerPromise->get_future();
-        engine->CreateFileHandlerAsync(filePathIn, mip::ContentState::REST, std::make_shared<FileHandlerObserver>(), handlerPromise);
+        engine->CreateFileHandlerAsync(
+             filePathIn, 
+             contentIdentifier,
+             mip::ContentState::REST, 
+             true, 
+             std::make_shared<FileHandlerObserver>(), 
+             handlerPromise);
         handler = handlerFuture.get();
    }
    catch (const std::exception& e)
@@ -160,11 +167,19 @@ Agregue lógica para establecer y obtener una etiqueta de confidencialidad en un
    system("pause");
 
    // Set up async FileHandler for output file operations
+   contentIdentifier = "<content-identifier>";
    try
    {
         auto handlerPromise = std::make_shared<std::promise<std::shared_ptr<FileHandler>>>();
         auto handlerFuture = handlerPromise->get_future();
-        engine->CreateFileHandlerAsync(filePathOut, mip::ContentState::REST, std::make_shared<FileHandlerObserver>(), handlerPromise);
+        engine->CreateFileHandlerAsync(
+             filePathOut, 
+             contentIdentifier,
+             mip::ContentState::REST,
+             true,
+             std::make_shared<FileHandlerObserver>(),
+             handlerPromise);
+
         handler = handlerFuture.get();
    }
    catch (const std::exception& e)
@@ -191,13 +206,14 @@ Agregue lógica para establecer y obtener una etiqueta de confidencialidad en un
    system("pause");
    ```
 
-4. Reemplace los valores de marcador de posición en el código fuente que acaba de pegar con los valores siguientes:
+4. Reemplace los valores de marcador de posición en el código fuente que acaba de pegar en como sigue, con las constantes de cadena:
 
    | Marcador | Valor |
    |:----------- |:----- |
-   | \<input-file-path\> | La ruta de acceso completa a un archivo de entrada de prueba, por ejemplo: `c:\\Test\\Test.docx`. |
-   | \<label-id\> | Un identificador de etiqueta de confidencialidad, que se copia desde la salida de la consola en la guía de inicio rápido anterior, por ejemplo: `f42a3342-8706-4288-bd31-ebb85995028z`. |
-   | \<output-file-path\> | La ruta de acceso completa al archivo de salida, que será una copia con la etiqueta del archivo de entrada, por ejemplo: `c:\\Test\\Test_labeled.docx`. |
+   | \<input-file-path\> | La ruta de acceso completa a un archivo de entrada de prueba, por ejemplo: `"c:\\Test\\Test.docx"`. |
+   | \<content-identifier\> | Un identificador legible para el contenido. Por ejemplo: <ul><li>para un archivo, considere la posibilidad de ruta\nombre_archivo: `"c:\Test\Test.docx"`</li><li>para un correo electrónico, considere la posibilidad de asunto: del remitente: `"RE: Audit design:user1@contoso.com"`</li></ul> |
+   | \<label-id\> | Un identificador de etiqueta de confidencialidad, que se copia desde la salida de la consola en la guía de inicio rápido anterior, por ejemplo: `"f42a3342-8706-4288-bd31-ebb85995028z"`. |
+   | \<output-file-path\> | La ruta de acceso completa al archivo de salida, que será una copia con la etiqueta del archivo de entrada, por ejemplo: `"c:\\Test\\Test_labeled.docx"`. |
 
 ## <a name="build-and-test-the-application"></a>Compilar y probar la aplicación
 
@@ -205,7 +221,7 @@ Compile y pruebe la aplicación cliente.
 
 1. Presione F6 (**Compilar solución**) para compilar la aplicación cliente. Si no aparece ningún error de compilación, presione F5 (**Iniciar depuración**) para ejecutar la aplicación.
 
-2. Si el proyecto se compila y se ejecuta correctamente, la aplicación pedirá un token de acceso cada vez que el SDK llame al método `AcquireOAuth2Token()`. Como ha hecho anteriormente en la guía de inicio rápido "Mostrar etiquetas de confidencialidad", ejecute el script de PowerShell para adquirir el token cada vez, utilizando los valores proporcionados. `AcquireOAuth2Token()` intentará usar un token generado anteriormente, si la autoridad solicitada y el recurso son los mismos:
+2. Si el proyecto se compila y se ejecuta correctamente, la aplicación solicita un token de acceso, cada vez que las llamadas SDK su `AcquireOAuth2Token()` método. Como hizo anteriormente en la "Lista de las etiquetas de confidencialidad" Inicio rápido, ejecute el script de PowerShell para adquirir el token cada vez, utilizando los valores proporcionados para $authority y $resourceUrl. 
 
    ```console
    Run the PowerShell script to generate an access token using the following values, then copy/paste it below:
