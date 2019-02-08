@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9ba401db68ceb3e37db9fc77d5721b9e9a235d23
-ms.sourcegitcommit: 0fad4196f397fa32c60e6d24791fcad43689c4ba
+ms.openlocfilehash: f886a2bbf555d1ed3db9c18d8c86ad1cfc03e3d9
+ms.sourcegitcommit: ebb3a8b64a8e18dee4436442e37b54b65171d087
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55088146"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55567594"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>Guía del administrador: Tipos de archivos compatibles con el cliente de Azure Information Protection
 
@@ -215,7 +215,7 @@ Para la versión de disponibilidad general:
 
 Para la versión preliminar actual: 
 
-    - .rtf y .rar también se excluyen
+- .rtf y .rar también se excluyen
 
 Puede cambiar los tipos de archivo incluidos o excluidos de la inspección de archivos mediante el analizador:
 

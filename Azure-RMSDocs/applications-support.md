@@ -4,18 +4,18 @@ description: Conozca cómo la mayoría de las aplicaciones de usuario final (com
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/12/2018
+ms.date: 01/02/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 2cdc7bde-4044-4021-b887-11476f99afd9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 1b14ef6999f0852474f6f9de5eef2902f8863a8c
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: d8e1164d82304bcf28aa91d2e1708b10fd946ba3
+ms.sourcegitcommit: 8558af7116f62414054feffa346aba197a1250d9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305196"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55559808"
 ---
 # <a name="how-applications-support-the-azure-rights-management-service"></a>Cómo admiten las aplicaciones el servicio Azure Rights Management
 
@@ -45,8 +45,6 @@ Los servicios de búsqueda se pueden integrar con Rights Management de maneras d
 ## <a name="next-steps"></a>Pasos siguientes
 
 Obtenga más información sobre la compatibilidad de las aplicaciones y los servicios siguientes con el servicio Azure Rights Management:
-
--   [Aplicación RMS sharing para Windows y plataformas móviles](sharing-app-support.md)
 
 -   [Aplicaciones y servicios de Office](office-apps-services-support.md)
 

@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: a6fa85be-f92a-4e00-9efc-9dbfd4dfbfcb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9026560849d04939799a013d28d6d6d4d38ae442
-ms.sourcegitcommit: 8d854ee417d9af1a85e7d4ecb3807a69a43b0313
+ms.openlocfilehash: 59f79f7ac24a575665a2d8350f39b87aaedec7e1
+ms.sourcegitcommit: 8558af7116f62414054feffa346aba197a1250d9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52177201"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55559485"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>El lado cliente de Azure Information Protection
 
@@ -39,10 +39,6 @@ Use la siguiente documentación si necesita obtener más información sobre la i
 
 - [Protección de RMS con la infraestructura de clasificación de archivos (FCI) de Windows Server](configure-fci.md)
 
-- [Aplicación Rights Management sharing para Windows](sharing-app-windows.md)
 
-Tenga en cuenta que la aplicación Rights Management sharing para Windows y la herramienta de protección de RMS ahora se reemplaza por el cliente de Azure Information Protection. 
-
-
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 [Comparación de Azure Information Protection y AD RMS](../compare-on-premise.md)

@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 99a51862-83e9-4a1e-873a-a84ae1465f07
 ms.reviewer: aashishr
 ms.suite: ems
-ms.openlocfilehash: 08ae5875437a1e443247a5a57b1bb621b6627ce3
-ms.sourcegitcommit: cf52083dde756ad3620c05fc74f012d8a7abacf3
+ms.openlocfilehash: f030ebaa372d6fa308a51a3d9b34cefa0bc0535b
+ms.sourcegitcommit: d9c8b560fa3d2797ef634d8919af3ed695b16908
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54898790"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55701956"
 ---
 # <a name="manage-personal-data-for-azure-information-protection"></a>Administración de datos personales de Azure Information Protection
 
@@ -201,7 +201,7 @@ Puede desactivar la información de registro para el cliente de Azure Informatio
 
 - Para el cliente de Azure Information Protection: Cree una [configuración de cliente avanzada](./rms-client/client-admin-guide-customizations.md#change-the-local-logging-level) que establezca el parámetro **LogLevel** en **Desactivado**.
 
-- Para el analizador de Azure Information Protection: Use el cmdlet [Set-AIPScannerConfiguration](/azureinformationprotection/set-aipscannerconfiguration) para establecer el parámetro *ReportLevel* en **Desactivado**.
+- Para el analizador de Azure Information Protection: Use el cmdlet [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/set-aipscannerconfiguration) para establecer el parámetro *ReportLevel* en **Desactivado**.
 
 [!INCLUDE [GDPR-related guidance](./includes/gdpr-hybrid-note.md)]
 
