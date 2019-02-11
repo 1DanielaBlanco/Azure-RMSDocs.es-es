@@ -4,18 +4,18 @@ description: ¿No entiende el significado de una palabra, una frase o un acróni
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/24/2019
+ms.date: 02/01/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9d9aad27d0c76552dbf7234bf5849eeb72058cae
-ms.sourcegitcommit: 1c1d7067ae7aa8b822bb4ecd23cd7a644989e38c
+ms.openlocfilehash: 388abeb75a5b80a575990923f37f2bb19a9e5e7f
+ms.sourcegitcommit: 8558af7116f62414054feffa346aba197a1250d9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55067958"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55559706"
 ---
 # <a name="terminology-for-azure-information-protection"></a>Terminología de Azure Information Protection
 
@@ -58,7 +58,7 @@ Cliente de Azure Information Protection|Lado cliente de Azure Information Protec
 |IRM|Consulte *Information Rights Management*|
 |Cifrado de mensajes de Office|Con frecuencia abreviado como *OME*.<br /><br />Las nuevas funcionalidades de Cifrado de mensajes de Office 365 tienen integración nativa con el servicio Azure Rights Management para proporcionar la misma protección de correo electrónico para usuarios internos y externos, actualización automática de plantillas y compatibilidad con el escenario Aportar su propia clave (BYOK). La implementación de OME anterior se diseñó solo para destinatarios externos, requería una regla de flujo de correo y no era compatible con BYOK.|
 |MSDRM|A veces, se considera una referencia del cliente de RMS 1.0, que se sustituyó por el nuevo cliente, MSIPC. Este cliente anterior admite aplicaciones que se desarrollan con el SDK de RMS 1.0 y admite Office 2010 y Office 2007, Exchange 2010 y Exchange 2013, y SharePoint 2010 y SharePoint 2007.|
-|MSIPC|A veces considerada como referencia para el cliente RMS 2.0, que sustituye al antiguo cliente RMS, MSDRM. Este último cliente admite aplicaciones que se desarrollan con RMS SDK 2.0 y es compatible con Office 365 ProPlus, Office 2019, Office 2016, Office 2013, SharePoint 2013, la aplicación RMS sharing y el cliente de Azure Information Protection.|
+|MSIPC|A veces considerada como referencia para el cliente RMS 2.0, que sustituye al antiguo cliente RMS, MSDRM. Este último cliente admite aplicaciones que se desarrollan con RMS SDK 2.0 y es compatible con Office 365 ProPlus, Office 2019, Office 2016, Office 2013, SharePoint 2013 y el cliente de Azure Information Protection.|
 |protección nativa|Un nivel de protección disponible en todas las aplicaciones habilitadas que evita que gente no autorizada abra un archivo y que, además, aplica directivas más estrictas, como solo lectura y la imposibilidad de imprimir. Además, esta protección permanece con el archivo, incluso cuando el archivo se reenvía a otras personas o se guarda en una ubicación pública a la que otros puedan acceder.|
 |.pfile|Extensión del nombre de archivo que se anexa a todos los archivos que un servicio de administración de derechos protege de manera genérica.|
 |nivel de permisos|Una agrupación lógica de derechos de uso que facilitan a los usuarios finales y administradores la elección de opciones de configuración basadas en roles. Por ejemplo, Revisor y Coautor.|
@@ -69,7 +69,7 @@ Cliente de Azure Information Protection|Lado cliente de Azure Information Protec
 |Emisor de Rights Management|Cuenta que se ha usado para proteger un documento o correo electrónico.|
 |Propietario de Rights Management|Cuenta que conserva el control total de un documento o correo electrónico protegidos mediante la concesión automática del derecho de uso Control total de Rights Management. No cuenta con fecha de expiración ni opciones sin conexión.|
 |servicios de Rights Management|Término genérico que se aplica tanto a la versión en la nube de Rights Management (Azure Rights Management) como a la versión local de Rights Management (AD RMS).|
-|Aplicación de uso compartido Rights Management|Ahora se ha reemplazado por el cliente de Azure Information Protection, una aplicación opcional para dispositivos con Windows y dispositivos móviles, que admite el uso compartido seguro de archivos de forma local y por correo electrónico.|
+|Aplicación de uso compartido Rights Management|Ahora se ha sustituido por el cliente de Azure Information Protection.|
 |RMS|Consulte *servicios de Rights Management*|
 |conector RMS|Consulte *conector de Rights Management*|
 |RMS para usuarios|Suscripción gratuita para que un usuario use Rights Management cuando la organización no tenga una suscripción a Office 365 o Azure Active Directory.|

@@ -4,18 +4,18 @@ description: Información e instrucciones sobre cómo usar el registro de uso co
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/15/2019
+ms.date: 02/01/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: bf42c0309af481847e80b12cb161422b7cd18378
-ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
+ms.openlocfilehash: 234980a639ec4456cf85399dffdabe49963eec31
+ms.sourcegitcommit: 8558af7116f62414054feffa346aba197a1250d9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54394333"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55559978"
 ---
 # <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>Registro y análisis del uso del servicio Azure Rights Management
 
@@ -44,7 +44,7 @@ Además de este registro de uso, también tiene las siguientes opciones de regis
 |Opción de registro|Descripción|
 |----------------|---------------|
 |Registro de administración|Registra las tareas administrativas del servicio de Azure Rights Management. Por ejemplo, si el servicio está desactivado, cuando la característica de superusuario está habilitada y cuando los usuarios tienen permisos de administración delegados para el servicio. <br /><br />Para más información, vea el cmdlet de PowerShell [Get-AadrmAdminLog](/powershell/module/aadrm/get-aadrmadminlog).|
-|Seguimiento de documentos|Permite a los usuarios seguir y revocar los documentos que han seguido con el cliente de Azure Information Protection o la aplicación RMS sharing. Los administradores globales también pueden realizar un seguimiento de estos documentos en nombre de los usuarios. <br /><br />Para más información, consulte [Configuración y uso de seguimiento de documentos para Azure Information Protection](./rms-client/client-admin-guide-document-tracking.md).|
+|Seguimiento de documentos|Permite a los usuarios realizar un seguimiento de los documentos y revocar los que han seguido con el cliente de Azure Information Protection. Los administradores globales también pueden realizar un seguimiento de estos documentos en nombre de los usuarios. <br /><br />Para más información, consulte [Configuración y uso de seguimiento de documentos para Azure Information Protection](./rms-client/client-admin-guide-document-tracking.md).|
 |Registros de eventos de cliente|Actividad de uso para el cliente de Azure Information Protection, registrada en el registro de eventos local de Windows **Aplicaciones y servicios**, **Azure Information Protection**. <br /><br />Para más información, consulte [Registro de uso del cliente de Azure Information Protection](./rms-client/client-admin-guide-files-and-logging.md#usage-logging-for-the-azure-information-protection-client).|
 |Archivos de registro de cliente|Registros de solución de problemas para el cliente de Azure Information Protection, ubicados en **%localappdata%\Microsoft\MSIP**. <br /><br />Estos archivos están diseñados para Microsoft Support.|
 
@@ -151,7 +151,7 @@ Cada una de las líneas posteriores es un registro. Los valores de los campos se
 |  owner-email   |    String     |                                                                                                                       Dirección de correo electrónico del propietario del documento.<br /><br /> Este campo está en blanco si el tipo de solicitud es RevokeAccess.                                                                                                                        |                                                          alice@contoso.com                                                          |
 |     issuer     |    String     |                                                                                                                          Dirección de correo electrónico del emisor del documento. <br /><br /> Este campo está en blanco si el tipo de solicitud es RevokeAccess.                                                                                                                          |                       alice@contoso.com (o) FederatedEmail.4c1f4d-93bf-00a95fa1e042@contoso.onmicrosoft.com                       |
 |  template-id   |    String     |                                                                                                                    Identificador de la plantilla que se usa para proteger el documento. <br /><br /> Este campo está en blanco si el tipo de solicitud es RevokeAccess.                                                                                                                     |                                               {6d9371a6-4e2d-4e97-9a38-202233fed26e}                                                |
-|   file-name    |    String     | Nombre de archivo de un documento protegido al que el cliente de Azure Information Protection para Windows o la aplicación Rights Management sharing para Windows realiza un seguimiento. <br /><br />Actualmente, algunos archivos (como documentos de Office) se muestran como GUID en lugar del nombre de archivo real.<br /><br /> Este campo está en blanco si el tipo de solicitud es RevokeAccess. |                                                       TopSecretDocument.docx                                                        |
+|   file-name    |    String     | Nombre de archivo de un documento protegido al que el cliente de Azure Information Protection para Windows realiza un seguimiento. <br /><br />Actualmente, algunos archivos (como documentos de Office) se muestran como GUID en lugar del nombre de archivo real.<br /><br /> Este campo está en blanco si el tipo de solicitud es RevokeAccess. |                                                       TopSecretDocument.docx                                                        |
 | date-published |     Fecha      |                                                                                                                          Fecha en la que se ha protegido el documento.<br /><br /> Este campo está en blanco si el tipo de solicitud es RevokeAccess.                                                                                                                           |                                                         2015-10-15T21:37:00                                                         |
 |     c-info     |    String     |                                                                                   Información acerca de la plataforma del cliente que está realizando la solicitud.<br /><br />La cadena específica varía, en función de la aplicación (por ejemplo, el sistema operativo o el explorador).                                                                                   | 'MSIPC;version=1.0.623.47;AppName=WINWORD.EXE;AppVersion=15.0.4753.1000;AppArch=x86;OSName=Windows;OSVersion=6.1.7601;OSArch=amd64' |
 |      c-ip      |    Address    |                                                                                                                                                       Dirección IP del cliente que realiza la solicitud.                                                                                                                                                        |                                                            64.51.202.144                                                            |

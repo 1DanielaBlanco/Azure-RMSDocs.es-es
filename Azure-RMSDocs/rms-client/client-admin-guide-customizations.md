@@ -4,18 +4,18 @@ description: Información sobre cómo personalizar el cliente de Azure Informati
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/24/2019
+ms.date: 02/02/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 71ef2607355cbe84003aaf9fc77dfa5d9a72beff
-ms.sourcegitcommit: cf52083dde756ad3620c05fc74f012d8a7abacf3
+ms.openlocfilehash: 3612c0848cf77a57636186f5f9683a2ac7f1c5ec
+ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54898858"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55651571"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Guía del administrador: Configuraciones personalizadas del cliente de Azure Information Protection
 
@@ -207,9 +207,11 @@ Para establecer esta configuración avanzada, especifique las cadenas siguientes
 
 Esta opción utiliza una [configuración de cliente avanzada](#how-to-configure-advanced-client-configuration-settings-in-the-portal) que se debe definir en Azure Portal. Úsela solo cuando la [configuración de directiva](../configure-policy-settings.md) **Mostrar la barra de Information Protection en las aplicaciones de Office** está establecida en **Activado**.
 
-Cuando se establece esta configuración y se publica la directiva para los usuarios, y un usuario decide no mostrar la barra de Azure Information Protection en sus aplicaciones de Office, la barra permanece oculta. Esto ocurre cuando el usuario desactiva la opción **Mostrar barra** en la pestaña **Inicio**, grupo **Protección** , botón **Proteger**. Esta configuración no tiene ningún efecto si el usuario cierra la barra utilizando el icono **Cerrar esta barra**.
+De forma predeterminada, si un usuario desmarca la opción **Mostrar barra** situada en la pestaña **Inicio** del grupo **Protección**, en el botón **Proteger**, dejará de mostrarse la barra de Information Protection en la aplicación de Office. Sin embargo, la barra se mostrará automáticamente la próxima vez que se abra una aplicación de Office.
 
-Aunque la barra de Azure Information Protection permanece oculta, los usuarios todavía pueden seleccionar una etiqueta de la barra mostrada de manera temporal si se ha configurado la clasificación recomendada, o si el documento o correo electrónico debe tener una etiqueta. 
+Para evitar esto después de haber seleccionado ocultar la barra, use esta configuración de cliente. Esta configuración no tiene ningún efecto si el usuario cierra la barra utilizando el icono **Cerrar esta barra**.
+
+Aunque la barra de Azure Information Protection permanece oculta, los usuarios todavía pueden seleccionar una etiqueta de una barra mostrada de manera temporal si se ha configurado la clasificación recomendada, o bien si el documento o correo electrónico deben tener una etiqueta. 
 
 Para establecer esta configuración avanzada, especifique las cadenas siguientes:
 
@@ -419,19 +421,17 @@ Esta configuración requiere que especifique una configuración avanzada de clie
 
 El valor de identificador de etiqueta se muestra en la hoja **Etiqueta**, al ver o configurar la directiva de Azure Information Protection en Azure Portal. Para especificar una subetiqueta, la etiqueta principal debe estar en el mismo ámbito o en la directiva global.
 
-Especifique un nombre de regla de migración de su elección. Utilice un nombre descriptivo que le ayude a identificar cómo una o más etiquetas de su solución de etiquetado anterior deben asignarse a una etiqueta de Azure Information Protection. El nombre se muestra en los informes de analizador y en el Visor de eventos. 
-
-Tenga en cuenta que esta configuración no quita los distintivos visuales que haya aplicado la etiqueta anterior. Para quitar los encabezados y los pies de página, vea la sección siguiente, [Quitar encabezados y pies de página de otras soluciones de etiquetado](#remove-headers-and-footers-from-other-labeling-solutions).
+Especifique un nombre de regla de migración de su elección. Utilice un nombre descriptivo que le ayude a identificar cómo una o más etiquetas de su solución de etiquetado anterior deben asignarse a una etiqueta de Azure Information Protection. El nombre se muestra en los informes de analizador y en el Visor de eventos. Tenga en cuenta que esta configuración no quita la etiqueta original ni ningún distintivo visual del documento que pueda haber aplicado la etiqueta original. Para quitar los encabezados y los pies de página, vea la sección siguiente, [Quitar encabezados y pies de página de otras soluciones de etiquetado](#remove-headers-and-footers-from-other-labeling-solutions).
 
 ### <a name="example-1-one-to-one-mapping-of-the-same-label-name"></a>Ejemplo 1: Asignación uno a uno del mismo nombre de etiqueta
 
-Los documentos etiquetados como "Confidencial" por Secure Islands deben volver a etiquetarse como "Confidencial" en Azure Information Protection.
+Requisito: Los documentos etiquetados como "Confidencial" por Secure Islands deben volver a etiquetarse como "Confidencial" en Azure Information Protection.
 
 En este ejemplo:
 
-- La etiqueta de Azure Information Protection de **Confidencial** tiene un identificador de etiqueta de 1ace2cc3 14bc 4142 9125 bf946a70542c. 
+- La etiqueta de Azure Information Protection que quiere usar se denomina **Confidencial** y tiene el identificador **1ace2cc3-14bc-4142-9125-bf946a70542c**. 
 
-- La etiqueta de Secure Islands se almacena en la propiedad personalizada denominada **Classification**.
+- La etiqueta de Secure Islands se denomina **Confidencial** y se almacena en la propiedad personalizada denominada **Clasificación**.
 
 La configuración de cliente avanzada es la siguiente:
 
@@ -442,13 +442,13 @@ La configuración de cliente avanzada es la siguiente:
 
 ### <a name="example-2-one-to-one-mapping-for-a-different-label-name"></a>Ejemplo 2: Asignación uno a uno para un nombre de etiqueta diferente
 
-Los documentos etiquetados como "Confidencial" por Secure Islands se deben volver a etiquetar como "Extremadamente confidencial" en Azure Information Protection.
+Requisito: Los documentos etiquetados como "Confidencial" por Secure Islands se deben volver a etiquetar como "Extremadamente confidencial" en Azure Information Protection.
 
 En este ejemplo:
 
-- La etiqueta de Azure Information Protection **Extremadamente confidencial** tiene un identificador de etiqueta de 3e9df74d 3168 48af 8b11 037e3021813f.
+- La etiqueta de Azure Information Protection que quiere usar se denomina **Extremadamente confidencial** y tiene el identificador **3e9df74d 3168 48af 8b11 037e3021813f**.
 
-- La etiqueta de Secure Islands se almacena en la propiedad personalizada denominada **Classification**.
+- La etiqueta de Secure Islands se denomina **Confidencial** y se almacena en la propiedad personalizada denominada **Clasificación**.
 
 La configuración de cliente avanzada es la siguiente:
 
@@ -460,13 +460,13 @@ La configuración de cliente avanzada es la siguiente:
 
 ### <a name="example-3-many-to-one-mapping-of-label-names"></a>Ejemplo 3: Asignación de varios a uno de nombres de etiqueta
 
-Tiene dos etiquetas de Secure Islands que incluyen la palabra "Internal" y desea que los documentos que tengan cualquiera de estas etiquetas Secure Islands se vuelvan a etiquetar como "General" por Azure Information Protection.
+Requisito: Tiene dos etiquetas de Secure Islands que incluyen la palabra "Internal" y desea que los documentos que tengan cualquiera de estas etiquetas Secure Islands se vuelvan a etiquetar como "General" por Azure Information Protection.
 
 En este ejemplo:
 
-- La etiqueta de Azure Information Protection **General** tiene un identificador de etiqueta de 2beb8fe7 8293 444 c 9768 7fdc6f75014d.
+- La etiqueta de Azure Information Protection que quiere usar se denomina **General** y tiene el identificador **2beb8fe7 8293 444 c 9768 7fdc6f75014d**.
 
-- La etiqueta de Secure Islands se almacena en la propiedad personalizada denominada **Classification**.
+- La etiqueta de Secure Islands incluye la palabra **Interno** y se almacena en la propiedad personalizada denominada **Clasificación**.
 
 La configuración de cliente avanzada es la siguiente:
 

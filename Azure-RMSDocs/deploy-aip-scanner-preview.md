@@ -4,17 +4,17 @@ description: Instrucciones para instalar, configurar y ejecutar la versión prel
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/16/2019
+ms.date: 02/06/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 09cd758d0e35cf3b23291e5995007c3f110480d2
-ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
+ms.openlocfilehash: 72ab18383d55f88bc52872a0dc1f9f6b11eb0e44
+ms.sourcegitcommit: 1cd3a3bc19cd973f81a62419c946bfaf2796dfb2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54394348"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55760861"
 ---
 # <a name="deploying-the-preview-version-of-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Implementación de la versión preliminar del analizador de Azure Information Protection para clasificar y proteger automáticamente los archivos
 
@@ -64,6 +64,7 @@ Antes de instalar el analizador de Azure Information Protection, asegúrese de q
 |Cuenta de servicio en la que se ejecutará el servicio del analizador|Además de ejecutar el servicio de examen, esta cuenta se autentica en Azure AD y descarga la directiva de Azure Information Protection. Esta cuenta debe ser una cuenta de Active Directory y sincronizarse con Azure AD. Si no puede sincronizar esta cuenta debido a las directivas de la organización, consulte la sección [Implementación del analizador con configuraciones alternativas](#deploying-the-scanner-with-alternative-configurations).<br /><br />Esta cuenta de servicio tiene los siguientes requisitos:<br /><br />- **Derecho de iniciar sesión localmente**. Este derecho es necesario para la instalación y configuración del analizador, pero no para la operación. Debe conceder este derecho a la cuenta de servicio, pero puede quitarlo después de haber confirmado que el analizador puede detectar, clasificar y proteger los archivos. Si no es posible conceder este derecho ni siquiera durante un breve período de tiempo debido a las directivas de la organización, consulte la sección [Implementación del analizador con configuraciones alternativas](#deploying-the-scanner-with-alternative-configurations).<br /><br />- **Derecho de iniciar sesión como servicio**. Este derecho se concede automáticamente a la cuenta de servicio durante la instalación del analizador y es necesario para la instalación, la configuración y el funcionamiento del analizador. <br /><br />- Permisos a los repositorios de datos: debe conceder permisos de **lectura** y **escritura** para analizar los archivos y después aplicar la clasificación y la protección a los archivos que cumplan las condiciones establecidas en la directiva de Azure Information Protection. Para ejecutar el analizador solo en modo de detección, el permiso de **lectura** es suficiente.<br /><br />- Para las etiquetas que ofrecen una segunda protección o quitan la protección: para asegurarse de que el analizador siempre tenga acceso a los archivos protegidos, convierta esta cuenta en un [superusuario](configure-super-users.md) para el servicio de Azure Rights Management y asegúrese de que la característica de superusuario esté habilitada. Para obtener más información sobre los requisitos de la cuenta para aplicar la protección, consulte [Preparación de usuarios y grupos para Azure Information Protection](prepare.md). Además, si ha implementado [controles de incorporación](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment) para una implementación por fases, asegúrese de que esta cuenta se incluye en los controles de incorporación que ha configurado.|
 |La versión preliminar del cliente de Azure Information Protection debe estar instalada en el equipo Windows Server|Debe instalar el cliente completo para el analizador. No instale el cliente solo con el módulo de PowerShell.<br /><br />Para obtener instrucciones de instalación del cliente, consulte la [guía del administrador](./rms-client/client-admin-guide.md). Si ha instalado previamente el analizador y ahora debe actualizarlo a una versión posterior, consulte [Upgrading the Azure Information Protection scanner](./rms-client/client-admin-guide.md#upgrading-the-azure-information-protection-scanner) (Actualización del analizador Azure Information Protection).|
 |Etiquetas configuradas que aplican la clasificación automática y, opcionalmente, la protección|Para más información sobre cómo configurar una etiqueta de condiciones y cómo aplicar protección:<br /> - [Configuración de las condiciones para la clasificación automática y recomendada](configure-policy-classification.md)<br /> - [Configuración de una etiqueta para la protección de Rights Management](configure-policy-protection.md) <br /><br />Sugerencia: Puede usar las instrucciones del [tutorial](infoprotect-quick-start-tutorial.md) para probar el analizador con una etiqueta que busca números de tarjeta de crédito en un documento de Word preparado. Sin embargo, deberá cambiar la configuración de etiqueta para que la opción **Select how this label is applied** (Seleccionar cómo se aplica esta etiqueta) se establezca en **Automático** en lugar de en **Recomendado**. A continuación, quite la etiqueta del documento (si está aplicada) y copie el archivo en un repositorio de datos para el analizador. Para pruebas rápidas, podría tratarse de una carpeta local en el equipo del analizador.<br /><br /> Si bien puede ejecutar el analizador incluso si no ha configurado las etiquetas que aplican la clasificación automática, este escenario no se incluye en estas instrucciones. [Más información](#using-the-scanner-with-alternative-configurations)|
+|Para que se examinen los sitios y las bibliotecas de SharePoint:<br /><br />- SharePoint 2016<br /><br />- SharePoint 2012<br /><br />- SharePoint 2010|El analizador no admite otras versiones de SharePoint.<br /><br />Para grandes granjas de servidores de SharePoint, compruebe si necesita aumentar el umbral de vista de lista (de manera predeterminada, 5000) para que el analizador acceda a todos los archivos. Para obtener más información, vea la siguiente documentación de SharePoint: [Administrar listas y bibliotecas grandes en SharePoint](https://support.office.com/article/manage-large-lists-and-libraries-in-sharepoint-b8588dae-9387-48c2-9248-c24122f07c59#__bkmkchangelimit&ID0EAABAAA=Server)|
 |Para los documentos de Office que se van a examinar:<br /><br />- Formatos de archivo 97-2003 y formatos Open XML de Office para Word, Excel y PowerPoint|Para obtener más información sobre los tipos de archivo que el analizador admite para estos formatos de archivo, vea [Tipos de archivos compatibles con el cliente de Azure Information Protection](./rms-client/client-admin-guide-file-types.md)|
 |Para rutas de acceso largas:<br /><br />- Máximo de 260 caracteres, a menos que el analizador esté instalado en Windows 2016 y el equipo esté configurado para admitir rutas de acceso largas|Windows 10 y Windows Server 2016 admiten longitudes de ruta de acceso de más de 260 caracteres con la siguiente [configuración de directiva de grupo](https://blogs.msdn.microsoft.com/jeremykuhne/2016/07/30/net-4-6-2-and-long-paths-on-windows-10/): **Directiva de equipo local** > **Configuración del equipo** > **Plantillas administrativas** > **Todas las configuraciones** > **NTFS** > **Habilitar rutas de acceso Win32 largas**<br /><br /> Para obtener más información, vea la sección [Maximum Path Length Limitation](https://docs.microsoft.com/windows/desktop/FileIO/naming-a-file#maximum-path-length-limitation) (Limitación de longitud máxima de ruta de acceso) de la documentación para desarrolladores de Windows 10.
 
@@ -214,7 +215,7 @@ Ahora está listo para instalar el analizador con el perfil de analizador que ac
 3. Ejecute el cmdlet [Install-AIPScanner](/powershell/module/azureinformationprotection/Install-AIPScanner), para lo que debe especificar la instancia de SQL Server en la que se va a crear una base de datos para el analizador de Azure Information Protection y el nombre de perfil del analizador que especificó en la sección anterior: 
     
     ```
-    Install-AIPScanner -SqlServerInstance <database name> -Profile <profile name>
+    Install-AIPScanner -SqlServerInstance <name> -Profile <profile name>
     ```
     
     Ejemplos con el nombre de perfil **Europa**:
@@ -267,11 +268,11 @@ Ahora está listo para ejecutar el primer examen en modo de detección.
 
 2. Espere a que el analizador complete su ciclo. Cuando el analizador haya rastreado todos los archivos de los almacenes de datos que ha especificado, el analizador se detendrá, aunque el servicio del analizador sigue ejecutándose:
     
-        - From the **Azure Information Protection - Nodes** blade, the value for the **STATUS** column changes from **Scanning** to **Idle**.
-        
-        - Using PowerShell, you can run `Get-AIPScannerStatus` to monitor the status change.
-        
-        - Check the local Windows **Applications and Services** event log, **Azure Information Protection**. This log also reports when the scanner has finished scanning, with a summary of results. Look for the informational event ID **911**.
+    - En la hoja **Azure Information Protection - Nodos**, el valor de la columna **ESTADO** cambia de **Examinando** a **Inactivo**.
+    
+    - Con PowerShell puede ejecutar `Get-AIPScannerStatus` para supervisar el cambio del estado.
+    
+    - Compruebe el registro de eventos local de Windows **Aplicaciones y servicios**, **Azure Information Protection**. Este registro también informa cuando el escáner ha terminado de examinar, con un resumen de los resultados. Busque el id. de evento informativo **911**.
 
 3. Revise los informes almacenados en %*localappdata*%\Microsoft\MSIP\Scanner\Reports. Los archivos .txt de resumen incluyen el tiempo invertido en analizar, el número de archivos examinados y cuántos archivos tenían una coincidencia para los tipos de información. Los archivos .csv contienen más detalles para cada archivo. Esta carpeta contiene hasta 60 informes de cada ciclo de examen y, todos, menos el último, se comprimen para ayudar a minimizar el espacio en disco necesario.
     
@@ -347,11 +348,15 @@ Con todo, el analizador no puede etiquetar los archivos en las siguientes circun
 Por ejemplo, después de inspeccionar los archivos que tienen una extensión .txt, el analizador no puede aplicar una etiqueta que está configurada para la clasificación, pero no la protección, porque el tipo de archivo .txt no admite solo clasificación. Si la etiqueta está configurada para protección y clasificación y se modifica el registro para el tipo de archivo .txt, el analizador puede etiquetar el archivo. 
 
 > [!TIP]
-> Durante este proceso, si el analizador se detiene y no completa el examen de un gran número de los archivos en un repositorio, deberá aumentar el número de puertos dinámicos para el sistema operativo que hospeda los archivos. Refuerzo de los servidores de SharePoint puede ser uno de los motivos por los que el analizador supera el número de conexiones de red permitido y, por tanto, se detiene.
+> Durante este proceso, si el analizador se detiene y no completa el examen de un gran número de archivos en un repositorio:
 > 
-> Para comprobar si esta es la causa por la que se detiene el analizador, busque para ver si el siguiente mensaje de error se registra para el analizador en %*localappdata*%\Microsoft\MSIP\Logs\MSIPScanner.iplog (si hay varios registros se comprimen en zip): **No se puede conectar al servidor remoto---> System.Net.Sockets.SocketException: Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto) de IP:port**
->
-> Para obtener más información sobre cómo ver el intervalo de puerto actual y aumentar el intervalo, vea [Configuración que puede modificarse para mejorar el rendimiento de red](https://docs.microsoft.com/biztalk/technical-guides/settings-that-can-be-modified-to-improve-network-performance).
+> - Es posible que tenga que aumentar el número de puertos dinámicos del sistema operativo que hospeda los archivos. Refuerzo de los servidores de SharePoint puede ser uno de los motivos por los que el analizador supera el número de conexiones de red permitido y, por tanto, se detiene.
+>     
+>     Para comprobar si esta es la causa por la que se detiene el analizador, busque para ver si el siguiente mensaje de error se registra para el analizador en %*localappdata*%\Microsoft\MSIP\Logs\MSIPScanner.iplog (si hay varios registros se comprimen en zip): **No se puede conectar al servidor remoto---> System.Net.Sockets.SocketException: Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto) de IP:port**
+>    
+>     Para obtener más información sobre cómo ver el intervalo de puerto actual y aumentar el intervalo, vea [Configuración que puede modificarse para mejorar el rendimiento de red](https://docs.microsoft.com/biztalk/technical-guides/settings-that-can-be-modified-to-improve-network-performance).
+> 
+> - Para grandes granjas de servidores de SharePoint, es posible que tenga que aumentar el umbral de vista de lista (de manera predeterminada, 5000). Para obtener más información, vea la siguiente documentación de SharePoint: [Administrar listas y bibliotecas grandes en SharePoint](https://support.office.com/article/manage-large-lists-and-libraries-in-sharepoint-b8588dae-9387-48c2-9248-c24122f07c59#__bkmkchangelimit&ID0EAABAAA=Server).
 
 ### <a name="3-label-files-that-cant-be-inspected"></a>3. Etiquetar los archivos que no se pueden inspeccionar
 Para los tipos de archivo que no se pueden inspeccionar, el analizador aplica la etiqueta predeterminada en la directiva de Azure Information Protection, o la etiqueta predeterminada que configure para el analizador.

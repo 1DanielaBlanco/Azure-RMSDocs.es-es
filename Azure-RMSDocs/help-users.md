@@ -4,18 +4,18 @@ description: Información para ayudarle a ofrecer instrucciones a los usuarios, 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/24/2019
+ms.date: 02/01/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b023eaa514fc22dcb3d595495c724d7d19e58c08
-ms.sourcegitcommit: 1c1d7067ae7aa8b822bb4ecd23cd7a644989e38c
+ms.openlocfilehash: f71a539185f60695950c4b2989eb68650f58755b
+ms.sourcegitcommit: 8558af7116f62414054feffa346aba197a1250d9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55067676"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55559944"
 ---
 # <a name="helping-users-to-protect-files-by-using-the-azure-rights-management-service"></a>Ayuda a los usuarios para proteger archivos mediante el servicio Azure Rights Management
 
@@ -66,7 +66,7 @@ Use las secciones siguientes para obtener información específica de la aplicac
 
 ## <a name="using-information-protection-with-the-azure-information-protection-client"></a>Uso de la protección de la información con el cliente de Azure Information Protection
 
-Si los usuarios tienen Office 2010, es necesario el cliente de Azure Information Protection (o la aplicación anterior, la aplicación Microsoft Rights Management sharing) para proteger y consumir mensajes de correo electrónico y documentos protegidos. Aun así, también se recomienda el cliente de Azure Information Protection para todos los equipos y dispositivos móviles compatibles con este servicio.
+Si los usuarios tienen Office 2010, es necesario el cliente de Azure Information Protection para proteger y consumir correos electrónicos y documentos protegidos. Aun así, también se recomienda el cliente de Azure Information Protection para todos los equipos y dispositivos móviles compatibles con este servicio.
 
 Además de facilitar a los usuarios la protección de documentos y correos electrónicos, el cliente de Azure Information Protection permite a los usuarios realizar el seguimiento de los documentos que han protegido. También se pueden revocar los documentos con seguimiento si los usuarios autorizados previamente ya no tienen acceso a ellos.
 

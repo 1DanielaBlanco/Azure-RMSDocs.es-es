@@ -4,18 +4,18 @@ description: Cuando usa el servicio Azure Rights Management, se descargan de for
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/24/2019
+ms.date: 02/01/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: caed7a13a290739065792320525dfa648981aa20
-ms.sourcegitcommit: 1c1d7067ae7aa8b822bb4ecd23cd7a644989e38c
+ms.openlocfilehash: 02858ff5f908cbdee91e8a97d3cbe087e262f54d
+ms.sourcegitcommit: d9c8b560fa3d2797ef634d8919af3ed695b16908
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55067608"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55701922"
 ---
 # <a name="refreshing-templates-for-users-and-services"></a>Actualización de plantillas para usuarios y servicios
 
@@ -28,7 +28,7 @@ Cuando usa el servicio Azure Rights Management de Azure Information Protection, 
 |Exchange Online<br /><br />Se aplica a reglas de transporte y Outlook Web App |Se actualiza automáticamente en una hora, no hay que seguir más pasos.<br /><br />Este es el caso si usa el [cifrado de mensajes de Office 365 con nuevas capacidades](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e). Si previamente ha configurado Exchange Online para que use el servicio Azure Rights Management y, para ello, ha importado su dominio de publicación de confianza (TPD), use el mismo conjunto de instrucciones para habilitar las nuevas capacidades de Exchange Online.|
 |Cliente de Azure Information Protection|Se actualiza automáticamente cada vez que la directiva de Azure Information Protection se actualiza en el cliente:<br /><br /> - Cuando se abre una aplicación de Office que admite la barra de Azure Information Protection. <br /><br /> - Cuando hace clic con el botón derecho para clasificar y proteger un archivo o carpeta. <br /><br /> - Cuando ejecuta cmdlets de PowerShell para etiquetado y protección (Get-AIPFileStatus y Set-AIPFileLabel).<br /><br /> - Cuando se inicia el servicio del analizador de Azure Information Protection y la directiva local es anterior a una hora. Además, el servicio del analizador comprueba los cambios cada hora y los utiliza para el próximo ciclo de examen.<br /><br /> - Cada 24 horas.<br /><br /> Además, dado que este cliente está estrechamente integrado con Office, cualquier plantilla actualizada para aplicaciones de Office 365, Office 2019, Office 2016 u Office 2013 también se actualizará para el cliente de Azure Information Protection.|
 |Cliente de etiquetado unificado de Azure Information Protection (versión preliminar)|Se actualiza automáticamente cada cuatro horas, por aplicación de Office.<br /><br /> Además, dado que este cliente está estrechamente integrado con Office, cualquier plantilla actualizada para aplicaciones de Office 365, Office 2019, Office 2016 u Office 2013 también se actualizará para el cliente de etiquetado unificado de Azure Information Protection.|
-|Aplicaciones de Office 365, Office 2019, Office 2016 y Office 2013<br /><br />Aplicaciones de uso compartido de RMS para Windows|Actualización automática: programada:<br /><br />- Para estas versiones posteriores de Office: el intervalo de actualización predeterminado es cada 7 días.<br /><br />- Para la aplicación de uso compartido de RMS para Windows: a partir de la versión 1.0.1784.0, el intervalo de actualización predeterminado es cada día. Las versiones anteriores tienen un intervalo de actualización predeterminado de 7 días.<br /><br />Para exigir una actualización antes de esta programación, vea la sección [Aplicaciones de Office 365, Office 2019, Office 2016, Office 2013 y la aplicación Microsoft Rights Management sharing para Windows: Cómo forzar una actualización de una plantilla personalizada que se ha cambiado](#office-365-apps--office-2019--office-2016--office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template).|
+|Aplicaciones de Office 365, Office 2019, Office 2016 y Office 2013|Actualización automática: programada:<br /><br />- Para estas versiones posteriores de Office: el intervalo de actualización predeterminado es cada 7 días.<br /><br />Para forzar una actualización antes de esta programación, vea la siguiente sección [aplicaciones de Office 365, Office 2019, Office 2016 y Office 2013: Cómo forzar una actualización de una plantilla personalizada que se ha cambiado](#office-365-apps-office-2019-office-2016-and-office-2013-how-to-force-a-refresh-for-a-changed-custom-template).|
 |Office 2010|Se actualiza automáticamente cuando los usuarios cierran la sesión de Windows, vuelven a iniciarla y esperan hasta 1 hora.|
 |Exchange local con el conector Rights Management<br /><br />Se aplica a reglas de transporte y Outlook Web App|Actualización automática: no se requieren pasos adicionales. Pero Outlook Web App almacena en caché la interfaz de usuario durante un día.|
 |Office 2019 para Mac y Office 2016 para Mac|Actualización automática: no se requieren pasos adicionales.|
@@ -37,8 +37,8 @@ Cuando usa el servicio Azure Rights Management de Azure Information Protection, 
 
 Cuando las aplicaciones cliente deben descargar plantillas (inicialmente o con actualización para los cambios), prepárese para esperar hasta 15 minutos antes de que se complete la descarga y que las plantillas nuevas o actualizadas estén completamente operativas. El tiempo real dependerá de factores como el tamaño y la complejidad de la configuración de la plantilla y la conectividad de red. 
 
-## <a name="office-365-apps-office-2019-office-2016-office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template"></a>Aplicaciones de Office 365, Office 2019, Office 2016, Office 2013 y la aplicación RMS sharing para Windows: Cómo forzar una actualización de una plantilla personalizada que se ha cambiado
-Si modifica el Registro de los equipos que ejecutan aplicaciones de Office 365, Office 2019, Office 2016, Office 2013 o la aplicación RMS sharing, puede cambiar la programación automática para que las plantillas cambiadas se actualicen en los equipos con más frecuencia que la indicada en sus valores predeterminados. También puede forzar una actualización inmediata eliminando los datos existentes en un valor del Registro.
+## <a name="office-365-apps-office-2019-office-2016-and-office-2013-how-to-force-a-refresh-for-a-changed-custom-template"></a>Aplicaciones de Office 365, Office 2019, Office 2016 y Office 2013: Cómo forzar una actualización de una plantilla personalizada que se ha cambiado
+Si modifica el Registro de los equipos que ejecutan aplicaciones de Office 365, Office 2019, Office 2016 u Office 2013, puede cambiar la programación automática para que las plantillas cambiadas se actualicen en los equipos con más frecuencia que la indicada en sus valores predeterminados. También puede forzar una actualización inmediata eliminando los datos existentes en un valor del Registro.
 
 > [!WARNING]
 > Si usas el Editor del Registro de forma incorrecta, es posible que ocasiones problemas serios que puedan hacer preciso que reinstales el sistema operativo. Microsoft no puede garantizar que pueda resolver problemas ocasionados por un uso incorrecto del Editor del Registro. Usa el Editor del Registro bajo tu propia responsabilidad.

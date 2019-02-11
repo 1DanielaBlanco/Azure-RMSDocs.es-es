@@ -4,18 +4,18 @@ description: Conozca e identifique los derechos específicos que se usan al prot
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/29/2019
+ms.date: 02/01/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 195700be6b1a2f7aecbdd4de333570669cf6d329
-ms.sourcegitcommit: 4b1f204fd31bb9de05510b85b91304d9964a14c1
+ms.openlocfilehash: 02bdd294e30f0d773fcc29b4c7a13f9e418af9db
+ms.sourcegitcommit: 8558af7116f62414054feffa346aba197a1250d9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55420799"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55559995"
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>Configuración de los derechos de uso para Azure Rights Management
 
@@ -61,10 +61,10 @@ Use la tabla siguiente para ver una lista de estos niveles de permisos y una lis
 
 |Nivel de permisos|Aplicaciones|Derechos de uso incluidos|
 |---------------------|----------------|---------------------------------|
-|Visor|Portal de Azure clásico <br /><br />Portal de Azure<br /><br /> Aplicación de uso compartido Rights Management para Windows<br /><br />Cliente de Azure Information Protection para Windows|Ver, abrir, Leer; Ver derechos; Responder [[1]](#footnote-1); Responder a todos [[1]](#footnote-1); Permitir macros [[2]](#footnote-2)<br /><br />Nota: Para los mensajes de correo, use Revisor en lugar de este nivel de permiso para asegurarse de que se recibe una respuesta de correo electrónico como un mensaje de correo en lugar de un archivo adjunto. Revisor también es obligatorio cuando se envía un correo a otra organización que usa el cliente de Outlook u Outlook Web App. O bien, los usuarios de su organización que no pueden usar el servicio Azure Rights Management porque se han implementado [controles de incorporación](/powershell/module/aadrm/set-aadrmonboardingcontrolpolicy).|
-|Revisor|Portal de Azure clásico <br /><br />Portal de Azure<br /><br />Aplicación de uso compartido Rights Management para Windows<br /><br />Cliente de Azure Information Protection para Windows|Ver, Abrir, Leer; Guardar; Editar contenido, Editar; Ver derechos; Responder: Responder a todos [[3]](#footnote-3); Reenviar [[3]](#footnote-3); Permitir macros [[2]](#footnote-2)|
-|Coautor|Portal de Azure clásico <br /><br />Portal de Azure<br /><br />Aplicación de uso compartido Rights Management para Windows<br /><br />Cliente de Azure Information Protection para Windows|Ver, Abrir, Leer; Guardar; Editar contenido, Editar; Copiar; Ver derechos; Permitir macros; Guardar como, Exportar [[4]](#footnote-4); Imprimir; Responder [[3]](#footnote-3); Responder a todos [[3]](#footnote-3); Reenviar [[3]](#footnote-3)|
-|Copropietario|Portal de Azure clásico <br /><br />Portal de Azure<br /><br />Aplicación de uso compartido Rights Management para Windows<br /><br />Cliente de Azure Information Protection para Windows|Ver, Abrir, Leer; Guardar; Editar contenido, Editar; Copiar; Ver derechos; Cambiar derechos; Permitir macros; Guardar como, Exportar; Imprimir; Responder [[3]](#footnote-3); Responder a todos [[3]](#footnote-3); Reenviar [[3]](#footnote-3); Control total|
+|Visor|Portal de Azure clásico <br /><br />Portal de Azure<br /><br />Cliente de Azure Information Protection para Windows|Ver, abrir, Leer; Ver derechos; Responder [[1]](#footnote-1); Responder a todos [[1]](#footnote-1); Permitir macros [[2]](#footnote-2)<br /><br />Nota: Para los mensajes de correo, use Revisor en lugar de este nivel de permiso para asegurarse de que se recibe una respuesta de correo electrónico como un mensaje de correo en lugar de un archivo adjunto. Revisor también es obligatorio cuando se envía un correo a otra organización que usa el cliente de Outlook u Outlook Web App. O bien, los usuarios de su organización que no pueden usar el servicio Azure Rights Management porque se han implementado [controles de incorporación](/powershell/module/aadrm/set-aadrmonboardingcontrolpolicy).|
+|Revisor|Portal de Azure clásico <br /><br />Portal de Azure<br /><br />Cliente de Azure Information Protection para Windows|Ver, Abrir, Leer; Guardar; Editar contenido, Editar; Ver derechos; Responder: Responder a todos [[3]](#footnote-3); Reenviar [[3]](#footnote-3); Permitir macros [[2]](#footnote-2)|
+|Coautor|Portal de Azure clásico <br /><br />Portal de Azure<br /><br />Cliente de Azure Information Protection para Windows|Ver, Abrir, Leer; Guardar; Editar contenido, Editar; Copiar; Ver derechos; Permitir macros; Guardar como, Exportar [[4]](#footnote-4); Imprimir; Responder [[3]](#footnote-3); Responder a todos [[3]](#footnote-3); Reenviar [[3]](#footnote-3)|
+|Copropietario|Portal de Azure clásico <br /><br />Portal de Azure<br /><br />Cliente de Azure Information Protection para Windows|Ver, Abrir, Leer; Guardar; Editar contenido, Editar; Copiar; Ver derechos; Cambiar derechos; Permitir macros; Guardar como, Exportar; Imprimir; Responder [[3]](#footnote-3); Responder a todos [[3]](#footnote-3); Reenviar [[3]](#footnote-3); Control total|
 
 ----
 
@@ -77,7 +77,7 @@ No se incluye en Azure Portal.
 Para el cliente de Azure Information Protection para Windows, este derecho es actualmente necesario para la barra de Information Protection en las aplicaciones de Office.
 
 ###### <a name="footnote-3"></a>Nota al pie 3
-No es aplicable al cliente de Azure Information Protection para Windows ni a la aplicación Rights Management sharing para Windows.
+No se aplica al cliente de Azure Information Protection para Windows.
 
 ###### <a name="footnote-4"></a>Nota al pie 4
 No se incluye en Azure Portal ni en el cliente de Azure Information Protection para Windows.

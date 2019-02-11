@@ -4,19 +4,19 @@ description: Cómo usar los informes centrales para realizar el seguimiento de l
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/30/2018
+ms.date: 02/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.assetid: b2da2cdc-74fd-4bfb-b3c2-2a3a59a6bf2e
 ms.reviewer: lilukov
 ms.suite: ems
-ms.openlocfilehash: 0c2309fb635a05f6b0c836b7d4caf04d1c17a23a
-ms.sourcegitcommit: 6651546fa69538e2099b5c2b92ab0902d568a96a
+ms.openlocfilehash: eb9ff9dd73422813a80b41ee516876bfc4c50663
+ms.sourcegitcommit: 1cd3a3bc19cd973f81a62419c946bfaf2796dfb2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/31/2018
-ms.locfileid: "53815129"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55760793"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Informes centrales para Azure Information Protection
 
@@ -112,8 +112,8 @@ Para ver los informes de Azure Information Protection y crear los suyos propios,
 |Requisito|Más información|
 |---------------|--------------------|
 |Una suscripción a Azure que incluya Log Analytics|Consulte la página [Precios de Azure Log Analytics](https://azure.microsoft.com/pricing/details/log-analytics).<br /><br />Si no tiene una suscripción a Azure o actualmente no usa Azure Log Analytics, la página de precios incluye un vínculo a una evaluación gratuita.|
-|La versión actual disponible con carácter general del cliente de Azure Information Protection.|Si aún no ha instalado esta versión del cliente, puede descargarla e instalarla desde el [Centro de descarga de Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=53018).|
-|Para el informe **Discovery and risk** (Detección y riesgo): <br /><br />- Para mostrar datos desde los almacenes de datos locales, ha implementado al menos una instancia del analizador de Azure Information Protection (versión de disponibilidad general actual) <br /><br />-Para mostrar los datos desde equipos con Windows 10, estos deben pertenecer al menos a una compilación 1809, usted debe usar Protección contra amenazas avanzada de Windows Defender (ATP de Windows Defender) y ha habilitado la característica de integración de Azure Information Protection en el Centro de seguridad de Windows Defender|Para obtener instrucciones de instalación del analizador, consulte [Implementación del analizador de Azure Information Protection para clasificar y proteger automáticamente los archivos](deploy-aip-scanner.md). Si va a actualizar desde una versión anterior del analizador, consulte [Actualización del analizador de Azure Information Protection](./rms-client/client-admin-guide.md#upgrading-the-azure-information-protection-scanner).<br /><br />Para obtener información sobre cómo configurar y usar la característica de integración de Azure Information Protection del Centro de seguridad de Windows Defender, consulte [Protección de información de información general de Windows](/windows/security/threat-protection/windows-defender-atp/information-protection-in-windows-overview).|
+|La versión actual disponible con carácter general o la versión preliminar del cliente de Azure Information Protection.|Si aún no ha instalado este cliente, puede descargarlo e instalarlo desde el [Centro de descarga de Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=53018).|
+|Para el informe **Discovery and risk** (Detección y riesgo): <br /><br />- Para mostrar datos desde los almacenes de datos locales, ha implementado al menos una instancia del analizador de Azure Information Protection (versión de disponibilidad general o versión preliminar actual) <br /><br />-Para mostrar los datos desde equipos con Windows 10, estos deben pertenecer al menos a una compilación 1809, usted debe usar Protección contra amenazas avanzada de Windows Defender (ATP de Windows Defender) y ha habilitado la característica de integración de Azure Information Protection en el Centro de seguridad de Windows Defender|Para obtener instrucciones de instalación del analizador, consulte [Implementación del analizador de Azure Information Protection para clasificar y proteger automáticamente los archivos](deploy-aip-scanner.md). Si va a actualizar desde una versión anterior del analizador, consulte [Actualización del analizador de Azure Information Protection](./rms-client/client-admin-guide.md#upgrading-the-azure-information-protection-scanner).<br /><br />Para obtener información sobre cómo configurar y usar la característica de integración de Azure Information Protection del Centro de seguridad de Windows Defender, consulte [Protección de información de información general de Windows](/windows/security/threat-protection/windows-defender-atp/information-protection-in-windows-overview).|
 
 ## <a name="configure-a-log-analytics-workspace-for-the-reports"></a>Configuración de un área de trabajo de Log Analytics para los informes
 

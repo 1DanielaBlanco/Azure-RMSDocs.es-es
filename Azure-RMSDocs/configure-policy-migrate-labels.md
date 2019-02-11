@@ -4,17 +4,17 @@ description: Migración de etiquetas de Azure Information Protection al Centro d
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/26/2019
+ms.date: 02/05/2019
 ms.topic: article
 ms.service: information-protection
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 58a563e3d1f43dd312c0d4c9d1ffdf612b1c8d12
-ms.sourcegitcommit: 9a9c55c96a7e99bcca742e759a3f08507e3b9801
+ms.openlocfilehash: 8525d20d452004b6ba46dd438dd042f98f603d6d
+ms.sourcegitcommit: e8b4a09db9aad7f6540b4c2fd92b1e8008c999b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231045"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55737280"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-the-office-365-security--compliance-center"></a>Cómo migrar etiquetas de Azure Information Protection al Centro de seguridad y cumplimiento de Office 365
 
@@ -26,6 +26,14 @@ ms.locfileid: "55231045"
 Migre las etiquetas si quiere poder usarlas en el Centro de seguridad y cumplimiento de Office 365, donde [los clientes que admiten el etiquetado unificado](#clients-that-support-unified-labeling) pueden publicarlas y luego descargarlas. El cliente de Azure Information Protection continúa descargando las etiquetas con su directiva de Azure Information Protection desde Azure Portal. 
 
 Después de haber migrado las etiquetas, puede realizar cambios en ellas en Azure Portal o en el Centro de seguridad y cumplimiento de Office 365, y los clientes respectivos descargarán el mismo cambio.
+
+Antes de leer las instrucciones detalladas sobre cómo migrar las etiquetas, es posible que encuentre útiles las siguientes preguntas más frecuentes:
+
+- [¿Cuál es la diferencia entre las etiquetas de Azure Information Protection y las de Office 365?](faqs.md#whats-the-difference-between-labels-in-azure-information-protection-and-labels-in-office-365)
+
+- [¿Cuál es el momento adecuado para migrar mis etiquetas a Office 365?](faqs.md#when-is-the-right-time-to-migrate-my-labels-to-office-365)
+
+- [Una vez que he migrado las etiquetas, ¿qué portal de administración debo usar?](faqs.md?#after-ive-migrated-my-labels-which-management-portal-do-i-use )
 
 ### <a name="important-information-about-administrative-roles"></a>Información importante acerca de los roles administrativos
 
