@@ -4,14 +4,15 @@ description: Este artículo le ayudará a comprender los metadatos que se genera
 author: tommoser
 ms.service: information-protection
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.date: 11/08/2018
 ms.author: tommos
-ms.openlocfilehash: 9f9e4768a01d3d82f7b9563cb907533e53c7a228
-ms.sourcegitcommit: 03c9d1131177041e320d1bdbbdd92852a0d1d5cd
+ms.openlocfilehash: 990f729edaa0a2e212812f84fc5a4c63f82e37fb
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52156861"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56253976"
 ---
 # <a name="microsoft-information-protection-sdk---metadata"></a>Microsoft Information Protection SDK - metadatos
 
@@ -35,26 +36,26 @@ El SDK de MIP se aplica el siguiente conjunto de metadatos.
 
 | Atributo | Tipo de valor                 | Descripción                                                                                                                                                                                                                                        | obligatorio |
 |-----------|-------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
-| **Habilitado**   | True o False                 | Este atributo indica si está habilitada la clasificación representada por este conjunto de pares de clave y valor para el elemento de datos. Productos DLP normalmente validan la existencia de esta clave para identificar la etiqueta de clasificación. | Sí       |
-| **Id. del sitio**    | GUID                          | Identificador de inquilino de Azure Active Directory                                                                                                                                                                                                                   | Sí       |
-| **Elemento ActionId**  | GUID                          | ActionID cambia cada vez que se establece una etiqueta. Los registros de auditoría incluirá actionID antiguo y nuevo para permitir el encadenamiento de etiquetado de actividad para el elemento de datos.                                                                                 | Sí       |
+| **Enabled**   | True o False                 | Este atributo indica si está habilitada la clasificación representada por este conjunto de pares de clave y valor para el elemento de datos. Productos DLP normalmente validan la existencia de esta clave para identificar la etiqueta de clasificación. | Sí       |
+| **SiteId**    | GUID                          | Identificador de inquilino de Azure Active Directory                                                                                                                                                                                                                   | Sí       |
+| **ActionId**  | GUID                          | ActionID cambia cada vez que se establece una etiqueta. Los registros de auditoría incluirá actionID antiguo y nuevo para permitir el encadenamiento de etiquetado de actividad para el elemento de datos.                                                                                 | Sí       |
 | **Método**    | Estándar con privilegios o Auto        | Establecer a través de MIP:: assignmentmethod                                                                                                                                                                                                                 | No        |
 | **SetDate**   | Formato de fecha extendido ISO 8601 | La marca de tiempo cuando se estableció la etiqueta.                                                                                                                                                                                                              | No        |
-| **Nombre**      | string                        | Nombre único de etiqueta en el inquilino. No se corresponde necesariamente para mostrar el nombre.                                                                                                                                                              | No      |
-| **ContentBits** | integer | Máscara de bits que describe los tipos de contenido de marcado que se debe aplicar a un archivo. CONTENT_HEADER = 0 X 1, CONTENT_FOOTER = 0 X 2, MARCA DE AGUA = 0 X 4
+| **Name**      | string                        | Nombre único de etiqueta en el inquilino. No se corresponde necesariamente para mostrar el nombre.                                                                                                                                                              | No      |
+| **ContentBits** | integer | Máscara de bits que describe los tipos de contenido de marcado que se debe aplicar a un archivo. CONTENT_HEADER = 0X1, CONTENT_FOOTER = 0X2, WATERMARK = 0X4
  | No |
 
 Cuando se aplica a un archivo, el resultado es similar a la tabla siguiente.
 
 | Key                                                         | Valor                                |
 |-------------------------------------------------------------|--------------------------------------|
-| MSIP_Label_2096f6a2 d2f7 48be b329 b73aaa526e5d_Enabled     | true                                 |
-| MSIP_Label_2096f6a2 d2f7 48be b329 b73aaa526e5d_SetDate     | 2018-11-08T21:13:16-0800             |
-| MSIP_Label_2096f6a2 d2f7 48be b329 b73aaa526e5d_Method      | Con privilegios                           |
-| MSIP_Label_2096f6a2 d2f7 48be b329 b73aaa526e5d_Name        | Confidencial                         |
-| MSIP_Label_2096f6a2 d2f7 48be b329 b73aaa526e5d_SiteId      | cb46c030-1825-4E81-a295-151c039dbf02 |
-| MSIP_Label_2096f6a2 d2f7 48be b329 b73aaa526e5d_ContentBits | 2                                    |
-| MSIP_Label_2096f6a2 d2f7 48be b329 b73aaa526e5d_ActionId    | 88124cf5-1340-457d-90e1-0000a9427c99 |
+| MSIP_Label_2096f6a2-d2f7-48be-b329-b73aaa526e5d_Enabled     | true                                 |
+| MSIP_Label_2096f6a2-d2f7-48be-b329-b73aaa526e5d_SetDate     | 2018-11-08T21:13:16-0800             |
+| MSIP_Label_2096f6a2-d2f7-48be-b329-b73aaa526e5d_Method      | Con privilegios                           |
+| MSIP_Label_2096f6a2-d2f7-48be-b329-b73aaa526e5d_Name        | Confidencial                         |
+| MSIP_Label_2096f6a2-d2f7-48be-b329-b73aaa526e5d_SiteId      | cb46c030-1825-4e81-a295-151c039dbf02 |
+| MSIP_Label_2096f6a2-d2f7-48be-b329-b73aaa526e5d_ContentBits | 2                                    |
+| MSIP_Label_2096f6a2-d2f7-48be-b329-b73aaa526e5d_ActionId    | 88124cf5-1340-457d-90e1-0000a9427c99 |
 
 ## <a name="extending-metadata-with-custom-attributes"></a>Extender metadatos con atributos personalizados
 

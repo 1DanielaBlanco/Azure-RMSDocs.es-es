@@ -4,14 +4,15 @@ description: Documentación de referencia para las enumeraciones y estructuras d
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
+ms.collection: M365-security-compliance
 ms.author: bryanla
 ms.date: 01/28/2019
-ms.openlocfilehash: d3ca101d3141f2a1e36fcfec11e805907c125b8e
-ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.openlocfilehash: 04abc581d94c0b05cf19d01362f7b416155a372c
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55651775"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56256114"
 ---
 # <a name="summary"></a>Resumen
 
@@ -38,7 +39,7 @@ struct PublishingLicenseContext | Contiene los detalles de una licencia de publi
 
 ### <a name="actionsource-enum"></a>Enumeración ActionSource
 
-Define lo que desencadenó el evento SetLabel
+define lo que desencadenó el evento SetLabel
 
  Valores                         | Descripciones                                
 --------------------------------|---------------------------------------------

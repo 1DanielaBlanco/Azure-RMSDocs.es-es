@@ -4,14 +4,15 @@ description: Documenta la clase mip::loggerdelegate de Microsoft Information Pro
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
+ms.collection: M365-security-compliance
 ms.author: bryanla
 ms.date: 01/28/2019
-ms.openlocfilehash: d93bfb863bf97629a8b2361425a0d78187c88cdc
-ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.openlocfilehash: 6751335ab3c74b879af57c362f46eefbb89b8c78
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55650008"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56256862"
 ---
 # <a name="class-miploggerdelegate"></a>clase mip::LoggerDelegate 
 Una clase que define la interfaz para el registrador de SDK de MIP.

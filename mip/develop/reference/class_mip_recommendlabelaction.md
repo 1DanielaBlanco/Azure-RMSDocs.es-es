@@ -4,14 +4,15 @@ description: Documenta la clase mip::recommendlabelaction de Microsoft Informati
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
+ms.collection: M365-security-compliance
 ms.author: bryanla
 ms.date: 01/28/2019
-ms.openlocfilehash: ec1f82ab5951a5b7813fff2ebd5be6650a80203b
-ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.openlocfilehash: 665a244a858ba9924f27df96ca3b6471cb5fc829
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55651350"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56260126"
 ---
 # <a name="class-miprecommendlabelaction"></a>clase mip::RecommendLabelAction 
 Las acciones de recomendación de etiquetas están pensadas para sugerir una etiqueta a los usuarios. La supresión de esta llamada después de que un usuario ignore la etiqueta recomendada debe realizarse a través de las acciones admitidas en el estado de ejecución.

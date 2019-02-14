@@ -4,14 +4,15 @@ description: Este artículo le ayudará a comprender los conceptos básicos sobr
 author: BryanLa
 ms.service: information-protection
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: b229148c3028f4478f83cbbc928e19666c2f44b5
-ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.openlocfilehash: 0eed59e82d32c3461e21cfcfb20514b4d615ea8c
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47445434"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56252272"
 ---
 # <a name="microsoft-information-protection-sdk---policy-api-profile-concepts"></a>SDK de Microsoft Information Protection: conceptos del perfil de la API de directiva
 
@@ -25,10 +26,10 @@ Tenga en cuenta que se definen `ProfileObserver` y `AuthDelegateImpl`, que usare
 
 ### <a name="profilesettings-parameters"></a>Parámetros de Profile::Settings
 
-- `std::string path`: ruta del archivo donde se almacenan los datos de registro, telemetría y otros estados persistentes.
-- `bool useInMemoryStorage`: define si todos los estados se tienen que almacenar o no en memoria (en lugar de almacenarlos en el disco).
-- `std::shared_ptr<mip::AuthDelegate> authDelegate`: un puntero compartido de la clase `mip::AuthDelegate`. 
-- `std::shared_ptr<mip::PolicyProfile::Observer> observer`: un puntero compartido de la implementación de `PolicyProfile::Observer`.
+- `std::string path`: Ruta de acceso de archivo en el registro, telemetría y otras se almacena el estado persistente.
+- `bool useInMemoryStorage`: Define o no todos los Estados deben almacenarse en memoria en lugar del disco.
+- `std::shared_ptr<mip::AuthDelegate> authDelegate`: Un puntero compartido de clase `mip::AuthDelegate` 
+- `std::shared_ptr<mip::PolicyProfile::Observer> observer`: Un puntero compartido a la `PolicyProfile::Observer` implementación.
 - `mip::ApplicationInfo applicationInfo`: objeto. Se usa para definir información relacionada con la aplicación que usa el SDK.
 
 En los dos ejemplos siguientes, se muestra cómo crear el objeto profileSettings con almacenamiento local para el almacenamiento de estados, así como solo en memoria. En ambos ejemplos, se da por hecho que el objeto `authDelegateImpl` ya se ha creado.

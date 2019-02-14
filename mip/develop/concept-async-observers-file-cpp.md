@@ -4,14 +4,15 @@ description: El SDK de MIP está diseñado para ser casi completamente asincrón
 author: BryanLa
 ms.service: information-protection
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: d150e59c98300bfe20ced0b1a453a899558d1f27
-ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.openlocfilehash: aec8fd7df79fe44503887e22dc7e6a110407f98a
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47446267"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56259554"
 ---
 # <a name="microsoft-information-protection-sdk---file-api-observers"></a>SDK de Microsoft Information Protection: observadores de API de archivos
 
@@ -28,7 +29,7 @@ En los ejemplos siguientes, se muestra el modelo de patrón de promesa o futuro,
 
 En el ejemplo siguiente, hemos creado una clase, `ProfileObserver`, que se deriva de `mip::FileProfile::Observer`. Se han reemplazado las funciones miembro para usar el patrón de promesa o futuro usado en los ejemplos.
 
-**Nota**: Los ejemplos siguientes se implementan parcialmente y no incluyen invalidaciones para los observadores relacionados de `mip::FileEngine`.
+**Tenga en cuenta**: Los siguientes ejemplos se implementan parcialmente y no incluyen invalidaciones para el `mip::FileEngine` relacionados con los observadores.
 
 ### <a name="profileobserverh"></a>profile_observer.h
 

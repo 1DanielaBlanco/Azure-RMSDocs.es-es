@@ -4,14 +4,15 @@ description: Documenta la clase mip::protectiondescriptor de Microsoft Informati
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
+ms.collection: M365-security-compliance
 ms.author: bryanla
 ms.date: 01/28/2019
-ms.openlocfilehash: f3bf856982f3e5b4c060a83fe1e822866fb1808b
-ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.openlocfilehash: d04d1fe3c3d59592084a60b68d50d74ae10291c0
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55651724"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56259633"
 ---
 # <a name="class-mipprotectiondescriptor"></a>clase mip::ProtectionDescriptor 
 Descripción de la protección asociada a un contenido.

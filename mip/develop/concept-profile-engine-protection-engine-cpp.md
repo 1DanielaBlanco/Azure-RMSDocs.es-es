@@ -4,24 +4,25 @@ description: Este artículo le ayudará a comprender los conceptos básicos sobr
 author: BryanLa
 ms.service: information-protection
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: da0c50de6a818fcd8beda0483696ba433ce22149
-ms.sourcegitcommit: 823a14784f4b34288f221e3b3cb41bbd1d5ef3a6
-ms.translationtype: HT
+ms.openlocfilehash: 9595d3a3b12af802720363e141e40608c6f5ba93
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2018
-ms.locfileid: "47453323"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56258418"
 ---
 # <a name="microsoft-information-protection-sdk---protection-api-engine-concepts"></a>SDK de Microsoft Information Protection: conceptos del motor de la API de protección
 
-## <a name="implementation-add-a-protection-engine"></a>Implementación: agregar un motor de protección
+## <a name="implementation-add-a-protection-engine"></a>Implementación: Agregar un motor de protección
 
 En la API de archivo, la clase `mip::ProtectionProfile` es la clase raíz de todas las operaciones del SDK. Después de crear el perfil, ya podemos agregar un motor al perfil.
 
 En el ejemplo siguiente, se muestra cómo usar un único motor para un único usuario autenticado.
 
-### <a name="implementation-create-protection-engine-settings"></a>Implementación: crear la configuración del motor de protección
+### <a name="implementation-create-protection-engine-settings"></a>Implementación: Crear la configuración del motor de protección
 
 De forma similar a un perfil, el motor también necesita un objeto de configuración, `mip::ProtectionEngine::Settings`. Este objeto almacena el identificador único del motor, los datos de cliente personalizables que pueden usarse para depurar o para telemetría y, opcionalmente, la configuración regional.
 
@@ -31,7 +32,7 @@ Aquí, creamos un objeto `ProtectionEngine::Settings` llamado *engineSettings*.
 ProtectionEngine::Settings engineSettings("UniqueID", "");
 ```
 
-**Nota**: Si usa este método para crear el objeto de configuración de protección, también tendrá que establecer de forma manual el elemento CloudEndpointBaseUrl en https://api.aadrm.com.
+**Tenga en cuenta**: Si usa este método para crear el objeto de configuración de protección, debe establecer manualmente el CloudEndpointBaseUrl en https://api.aadrm.com
 
 Le recomendamos que el primer parámetro (**id**) sea algo que permita al motor conectarse fácilmente al usuario asociado **o** a un objeto `mip::Identity`. Para inicializar la configuración con `mip::Identity`:
 
@@ -41,7 +42,7 @@ ProtectionEngine::Settings engineSettings(mip::Identity("Bob@Contoso.com", "");
 
 Aunque suele pasarse en una variable para identificarlas, en lugar de codificarlas de forma rígida.
 
-### <a name="implementation-add-the-protection-engine"></a>Implementación: agregar el motor de protección
+### <a name="implementation-add-the-protection-engine"></a>Implementación: Agregar el motor de protección
 
 Para agregar el motor, volveremos al patrón de promesa o futuro usado para cargar el perfil. En lugar de crear la promesa para `mip::ProtectionProfile`, usaremos `mip::ProtectionEngine`.
 
@@ -68,13 +69,13 @@ Para agregar el motor, volveremos al patrón de promesa o futuro usado para carg
 
 El resultado final del código anterior es que hemos agregado correctamente al perfil un motor para el usuario autenticado.
 
-## <a name="implementation-list-templates"></a>Implementación: lista de plantillas
+## <a name="implementation-list-templates"></a>Implementación: Plantillas de lista
 
 Después de agregar el motor, ahora se puede mostrar una lista de todas las plantillas de confidencialidad disponibles para el usuario autenticado mediante una llamada a `engine->GetTemplatesAsync()`. 
 
 `GetTemplatesAsync()` obtendrá la lista de identificadores de plantilla. El resultado se almacena en un vector de `std::shared_ptr<std::string>`.
 
-### <a name="implementation-listsensitivitytemplates"></a>Implementation: ListSensitivityTemplates()
+### <a name="implementation-listsensitivitytemplates"></a>Implementación: ListSensitivityTemplates()
 
 ```cpp
 auto loadPromise = std::make_shared<std::promise<shared_ptr<vector<string>>>>();
@@ -83,7 +84,7 @@ mEngine->GetTemplatesAsync(engineObserver, loadPromise);
 auto templates = loadFuture.get();
 ```
 
-### <a name="implementation-print-the-template-ids"></a>Implementación: imprimir los identificadores de plantilla
+### <a name="implementation-print-the-template-ids"></a>Implementación: Los identificadores de plantilla de impresión
 
 ```cpp
 //Iterate through all template IDs in the vector

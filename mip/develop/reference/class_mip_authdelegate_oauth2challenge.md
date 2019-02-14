@@ -4,14 +4,15 @@ description: Documenta la clase mip::authdelegate de Microsoft Information Prote
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
+ms.collection: M365-security-compliance
 ms.author: bryanla
 ms.date: 01/28/2019
-ms.openlocfilehash: 86834f0236319613df4a9ef3ab64c1ec7dc9b20e
-ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.openlocfilehash: 64a485c30dc6fdb8154c85c3afbd548bbc78ce9a
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55652360"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56259421"
 ---
 # <a name="class-mipauthdelegateoauth2challenge"></a>clase mip::AuthDelegate::OAuth2Challenge 
 una clase que contiene toda la información necesaria de la aplicación que realiza la llamada con el fin de generar un token de oauth2.

@@ -4,14 +4,15 @@ description: 'Documenta la clase MIP:: Action de Microsoft Information Protectio
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
+ms.collection: M365-security-compliance
 ms.author: bryanla
 ms.date: 01/28/2019
-ms.openlocfilehash: 2a3ef2340aacefc9679ddad011be17991929face
-ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.openlocfilehash: 90a4182c10c55518634f0dd0cd84c7ba1c31640e
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55650534"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56256012"
 ---
 # <a name="class-mipaction"></a>clase mip::Action 
 Interfaz para una acción. Cada acción se traduce en una medida que debe adoptar la aplicación para aplicar la etiqueta (como se define en la directiva).

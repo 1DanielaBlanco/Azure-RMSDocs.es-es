@@ -4,24 +4,25 @@ description: Este artículo le ayudará a comprender los conceptos básicos sobr
 author: BryanLa
 ms.service: information-protection
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 9ccea755c83b570aa17ff4d30d98783f4bef79e5
-ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.openlocfilehash: 09b4db10523539f093a54c54d1fc6b7de8f7ddb0
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47446607"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56259293"
 ---
 # <a name="microsoft-information-protection-sdk---file-api-engine-concepts"></a>SDK de Microsoft Information Protection: conceptos del motor de la API de archivo
 
 El elemento `mip::FileEngine` en la API de archivo del SDK de MIP proporciona una interfaz para todas las operaciones que se realizan en nombre de una identidad especificada. Se agregará un motor para cada usuario que inicie sesión en la aplicación; además, todas las operaciones que el motor realiza se llevarán a cabo en el contexto de esa identidad.
 
-El elemento `FileEngine` tiene dos responsabilidades principales: enumerar las etiquetas para un usuario autenticado y crear controladores de archivo para realizar operaciones de archivo en nombre del usuario. 
+El `FileEngine` tiene dos responsabilidades principales: Lista de etiquetas para un usuario autenticado y creación de controladores de archivo para realizar operaciones de archivos en nombre del usuario. 
 
 - [`mip::FileEngine`](reference/class_mip_fileengine.md)
-- `ListSensitivityLabels()`: obtiene la lista de etiquetas para el motor cargado.
-- `CreateFileHandler()`: crea `mip::FileHandler` para una secuencia o un archivo concreto.
+- `ListSensitivityLabels()`: Obtiene la lista de etiquetas para el motor cargado.
+- `CreateFileHandler()`: Crea un `mip::FileHandler` para un archivo o flujo concreto.
 
 ## <a name="add-a-file-engine"></a>Agregar un motor de archivo
 

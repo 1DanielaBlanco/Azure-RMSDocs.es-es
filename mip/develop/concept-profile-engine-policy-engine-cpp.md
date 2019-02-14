@@ -4,22 +4,23 @@ description: Este artículo le ayudará a comprender los conceptos básicos sobr
 author: BryanLa
 ms.service: information-protection
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 07e0fc59e0ed5ec1fc66fe3179fce07dfcb687d1
-ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.openlocfilehash: 9aac5fb0e010c8c73776c3e62ba9e98bdeff77d2
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47445281"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56252782"
 ---
 # <a name="microsoft-information-protection-sdk---policy-api-engine-concepts"></a>SDK de Microsoft Information Protection: conceptos del motor de la API de directiva
 
 `mip::PolicyEngine` implementa todas las operaciones que puede realizar la API de directiva, excepto cargar el perfil. 
 
-## <a name="implementation-add-a-policy-engine"></a>Implementación: agregar un motor de directivas
+## <a name="implementation-add-a-policy-engine"></a>Implementación: Agregar un motor de directiva
 
-### <a name="implementation-create-policy-engine-settings"></a>Implementación: crear la configuración del motor de directivas
+### <a name="implementation-create-policy-engine-settings"></a>Implementación: Crear la configuración del motor de directiva
 
 De forma similar a un perfil, el motor también necesita un objeto de configuración, `mip::PolicyEngine::Settings`. Este objeto almacena el identificador único del motor, los datos de cliente personalizables que pueden usarse para depurar o para telemetría y, opcionalmente, la configuración regional.
 
@@ -31,7 +32,7 @@ PolicyEngine::Settings engineSettings("UniqueID", "");
 
 Le recomendamos que el primer parámetro (**id**) sea algo que permita al motor conectarse fácilmente al usuario asociado (preferiblemente, el nombre principal de usuario).
 
-### <a name="implementation-add-the-policy-engine"></a>Implementación: agregar el motor de directivas
+### <a name="implementation-add-the-policy-engine"></a>Implementación: Agregar el motor de directiva
 
 Para agregar el motor, volveremos al patrón de promesa o futuro usado para cargar el perfil. En lugar de crear la promesa para `mip::Profile`, usaremos `mip::PolicyEngine`.
 
@@ -58,7 +59,7 @@ Para agregar el motor, volveremos al patrón de promesa o futuro usado para carg
 
 El resultado final del código anterior es que hemos agregado correctamente al perfil un motor para el usuario autenticado.
 
-## <a name="implementation-list-sensitivity-labels"></a>Implementación: mostrar etiquetas de confidencialidad
+## <a name="implementation-list-sensitivity-labels"></a>Implementación: Mostrar etiquetas de confidencialidad
 
 Después de agregar el motor, ahora se puede mostrar una lista de todas las etiquetas de confidencialidad disponibles para el usuario autenticado mediante una llamada a `engine->ListSensitivityLabels()`.
 
@@ -70,7 +71,7 @@ Después de agregar el motor, ahora se puede mostrar una lista de todas las etiq
 std::vector<shared_ptr<mip::Label>> labels = engine->ListSensitivityLabels();
 ```
 
-### <a name="implementation-print-the-labels"></a>Implementación: imprimir las etiquetas
+### <a name="implementation-print-the-labels"></a>Implementación: Imprimir las etiquetas
 
 ```cpp
 //Iterate through all labels in the vector

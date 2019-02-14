@@ -4,14 +4,15 @@ description: Este artículo le permitirá comprender cómo el SDK de MIP impleme
 author: BryanLa
 ms.service: information-protection
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 288342c467574cf84c60e1211238b65a9e716b6c
-ms.sourcegitcommit: 860955fb2c292b3ca5910cd41095363f58caf553
-ms.translationtype: HT
+ms.openlocfilehash: dd2e8c5c3344da351715069910741c5651f4e617
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48230529"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56257981"
 ---
 # <a name="microsoft-information-protection-sdk---authentication-concepts"></a>SDK de Microsoft Information Protection: conceptos de autenticación
 
@@ -23,11 +24,11 @@ La autenticación en el SDK de MIP se realiza mediante la extensión de la clase
 
 `mip::AuthDelegate::AcquireOAuth2Token` acepta los parámetros siguientes y devuelve un operador booleano que indica si la adquisición de tokens ha sido correcta o no:
 
-- `mip::Identity`: la identidad del usuario o servicio que se autentica, si se conoce.
-- `mip::AuthDelegate::OAuth2Challenge`: acepta dos parámetros, **authority** y **resource**. **Authority** es el servicio con el que se generará el token. **Resource** es el servicio al que intentamos acceder. El SDK pasará estos parámetros al delegado cuando reciba la llamada.
-- `mip::AuthDelegate::OAuth2Token`: el resultado del token se escribe en este objeto. Lo usará el SDK cuando se cargue el motor. Fuera de nuestra implementación de autenticación, no tendría que ser necesario obtener o establecer este valor.
+- `mip::Identity`: La identidad del usuario o servicio se autentique, si se conoce.
+- `mip::AuthDelegate::OAuth2Challenge`: Acepta dos parámetros, **autoridad** y **recursos**. **Authority** es el servicio con el que se generará el token. **Resource** es el servicio al que intentamos acceder. El SDK pasará estos parámetros al delegado cuando reciba la llamada.
+- `mip::AuthDelegate::OAuth2Token`: El resultado de token se escribe en este objeto. Lo usará el SDK cuando se cargue el motor. Fuera de nuestra implementación de autenticación, no tendría que ser necesario obtener o establecer este valor.
 
-**Importante**: las aplicaciones no llaman directamente a `AcquireOAuth2Token`. El SDK llamará a esta función cuando sea necesario.
+**Importante:** No llame las aplicaciones `AcquireOAuth2Token` directamente. El SDK llamará a esta función cuando sea necesario.
 
 ## <a name="consent"></a>Consentimiento
 
@@ -48,9 +49,9 @@ Cuando un usuario realiza una operación para la que sería necesario el consent
 
 ### <a name="consent-options"></a>Opciones de consentimiento
 
-- **AcceptAlways**: se acepta el consentimiento y se recuerda la decisión.
-- **Accept**: se acepta el consentimiento una vez.
-- **Reject**: no se acepta el consentimiento.
+- **AcceptAlways**: Consentimiento y recordar la decisión.
+- **Aceptar**: Una vez consentimiento.
+- **Reject**: No se acepta.
 
 Cuando el SDK solicita el consentimiento del usuario con este método, la aplicación cliente debe presentar la dirección URL al usuario. Las aplicaciones cliente deben proporcionar algún medio de obtener el consentimiento del usuario y devolver la enumeración de consentimiento adecuada que corresponda a la decisión del usuario.
 

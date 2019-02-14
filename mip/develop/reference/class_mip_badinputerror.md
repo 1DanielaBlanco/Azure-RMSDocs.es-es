@@ -4,14 +4,15 @@ description: 'Documenta la clase MIP:: badinputerror de Microsoft Information Pr
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
+ms.collection: M365-security-compliance
 ms.author: bryanla
 ms.date: 01/28/2019
-ms.openlocfilehash: 48d37a97bafaad3694645977eb3b3a71061d8b47
-ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.openlocfilehash: 03c8aed444cb2859f3f1366cdb52bba3b2b17524
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55650551"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56250766"
 ---
 # <a name="class-mipbadinputerror"></a>clase mip::BadInputError 
 Error de entrada incorrecta; se produce cuando la entrada a una API de SDK no es válida.

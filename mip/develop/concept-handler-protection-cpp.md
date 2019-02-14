@@ -4,14 +4,15 @@ description: Este artículo lo ayudará a comprender cómo se crean y se utiliza
 author: BryanLa
 ms.service: information-protection
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: a087f1bdef5a010718c67fbdca938ecbb62e5faa
-ms.sourcegitcommit: 823a14784f4b34288f221e3b3cb41bbd1d5ef3a6
-ms.translationtype: HT
+ms.openlocfilehash: e345a98e69c0173ccda7b80c21a5c2c7aa9af5a3
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2018
-ms.locfileid: "47453501"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56253037"
 ---
 # <a name="microsoft-information-protection-sdk---protection-handler-concepts"></a>SDK de Microsoft Information Protection: conceptos del controlador de Protection
 
@@ -19,7 +20,7 @@ En la API de Protection del SDK de MIP, `mip::ProtectionHandler` expone las func
 
 ## <a name="requirements"></a>Requisitos
 
-Para crear un objeto `ProtectionHandler` con el fin trabajar con un archivo concreto, se requiere lo siguiente:
+Para crear un elemento `ProtectionHandler` con el fin trabajar con un archivo específico, se necesita lo siguiente:
 
 - Una función `ProtectionProfile`
 - Una función `ProtectionEngine` agregada a `ProtectionProfile`

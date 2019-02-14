@@ -4,14 +4,15 @@ description: 'Documenta la clase MIP:: privilegedrequirederror de Microsoft Info
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
+ms.collection: M365-security-compliance
 ms.author: bryanla
 ms.date: 01/28/2019
-ms.openlocfilehash: 72b13ae82720ba646b0cd27a97ea1086382dd740
-ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.openlocfilehash: 3d4473029011a690ee98dbb77547de77c82b2208
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55651044"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56254431"
 ---
 # <a name="class-mipprivilegedrequirederror"></a>clase mip::PrivilegedRequiredError 
 Se asignó la etiqueta actual como una operación con privilegios (equivalente a una operación de administrador), por lo tanto, no puede reemplazarse.

@@ -4,14 +4,15 @@ description: Este artículo le ayudará a entender cómo se usan las etiquetas e
 author: BryanLa
 ms.service: information-protection
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: a32193194b9806dbab5066db27192265566ca44f
-ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.openlocfilehash: c913eab399eebbdc9af82d7365ea68c9a8430de9
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47446658"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56259344"
 ---
 # <a name="microsoft-information-protection-sdk---classification-label-concepts"></a>SDK de Microsoft Information Protection: conceptos de etiquetas de clasificación
 
@@ -19,24 +20,24 @@ Como parte de una estrategia de protección de datos completa, las organizacione
 
 Los atributos relacionados con la clasificación suelen implicar el **riesgo** para la organización si ese documento o esos datos se pierden o quedan en manos equivocadas. En el conocido sistema de clasificación del gobierno de los Estados Unidos, hay tres niveles de clasificación. Cada una tiene una definición que describe cuándo se debe aplicar esa clasificación:
 
-* **Alto secreto**: se aplicará a la información, la divulgación no autorizada de la cual podría esperarse razonablemente que ocasione daños excepcionalmente graves a la seguridad nacional que la autoridad original de clasificación es capaz de identificar o describir.
-* **Secreto**: se aplicará a la información, la divulgación no autorizada de la cual podría esperarse razonablemente que ocasione daños graves a la seguridad nacional que la entidad original de clasificación es capaz de identificar o describir.
-* **Confidencial**: se aplicará a la información, la divulgación no autorizada de la cual podría esperarse razonablemente que ocasione daños a la seguridad nacional que la entidad original de clasificación es capaz de identificar o describir.
-* **Sin clasificar**: en realidad, esta no es una clasificación, sino la ausencia de una de las tres anteriores.
+* **Alto secreto**: Se aplicará a la información, la divulgación no autorizada de los cuales razonablemente podía ocasionar daños excepcionalmente grave a la seguridad nacional que es capaz de identificar o describir la entidad original de clasificación.
+* **Secret**: Se aplicará a la información, la divulgación no autorizada de los cuales razonablemente podía provocar daños graves para la seguridad nacional que es capaz de identificar o describir la entidad original de clasificación.
+* **Confidencial**: Se aplicará a la información, la divulgación no autorizada de los cuales razonablemente podía ocasionar daños a la seguridad nacional que es capaz de identificar o describir la entidad original de clasificación.
+* **Sin clasificar**: Esto no es realmente una clasificación, pero en su lugar la ausencia de uno de los tres anteriores.
 
 En una aplicación del sector privado o comercial, podemos definir una lista similar a la predeterminada en el servicio Azure Information Protection, con valores monetarios asociados.
 
-* **Extremadamente confidencial**: se aplicará a la información, la divulgación no autorizada de la cual podría esperarse razonablemente que ocasione daños superiores a 1 000 000 $.
-* **Confidencial**: se aplicará a la información, la divulgación no autorizada de la cual podría esperarse razonablemente que ocasione daños superiores a 100 000 $.
-* **General**: se aplicará a la información, la divulgación no autorizada de la cual podría esperarse razonablemente que ocasione pocos daños medibles
-* **Pública**: se aplicará a la información destinada al consumo público y externo. 
-* **No comercial**: se aplicará a la información que no está relacionada con el negocio de la empresa, de forma directa o indirecta.
+* **Extremadamente confidencial**: Se aplicará a la información, la divulgación no autorizada de los cuales razonablemente podía provocar daños mayores millones de USD $1.
+* **Confidencial**: Se aplicará a la información, la divulgación no autorizada de los cuales razonablemente podía ocasionar daños mayores de USD $100K.
+* **General**: Se aplicará a la información, la divulgación no autorizada de los cuales razonablemente podía provocar daños medibles poco.
+* **Public**: Se aplicará a la información destinada para consumo público, externo. 
+* **No sea de empresa**: Se aplicará a la información que no está relacionada con el negocio de empresa, directa o indirecta.
 
 Cada clasificación describe el riesgo para la empresa en caso de divulgación no autorizada de dicha información. Tras identificar esta clasificación y las condiciones, deben identificarse los atributos que ayuden a los propietarios de los datos a comprender qué clasificación deben aplicar.
 
 ## <a name="labeling"></a>Etiquetado
 
-El acto de asociar una clasificación de datos con un conjunto de información se conoce como **etiquetado**. Dado que el SDK de MIP tratar de aplicar las **etiquetas** de clasificación en los documentos, no nos referimos a las clasificaciones, sino a las etiquetas. Un usuario o proceso ya **clasificó** los datos según el conocimiento de la información: el SDK de MIP **etiquetará** la información.
+El acto de asociar una clasificación de datos con un conjunto de información se conoce como **etiquetado**. Dado que el SDK de MIP tratar de aplicar las **etiquetas** de clasificación en los documentos, no nos referimos a las clasificaciones, sino a las etiquetas. Un usuario o proceso ya se ha **clasificado** los datos según el conocimiento de la información: El SDK de MIP, a continuación, le **etiqueta** la información.
 
 ## <a name="labels-in-the-mip-sdk"></a>Etiquetas en el SDK de MIP
 
@@ -53,8 +54,8 @@ La etiqueta aplicará protección y distintivo de contenido en función de la et
 
 Existen dos tipos de etiqueta en el SDK de MIP. `Label` y `ContentLabel`.
 
-* Label: etiqueta que puede aplicar un usuario o proceso, tal como se define en la directiva de la organización.
-* ContentLabel: etiqueta que ya existe en un documento o en la información. Se puede leer, actualizar o quitar. 
+* Etiqueta: Una etiqueta que se puede aplicar a un usuario o proceso tal como se define en la directiva organizativa.
+* ContentLabel: En un documento o la información que ya existe una etiqueta. Se puede leer, actualizar o quitar. 
 
 En otras palabras, `ContentLabel` es un `Label` que se ha aplicado a un fragmento de información.
 

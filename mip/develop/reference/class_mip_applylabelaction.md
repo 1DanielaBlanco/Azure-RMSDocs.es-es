@@ -4,14 +4,15 @@ description: Documenta la clase mip::applylabelaction de Microsoft Information P
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
+ms.collection: M365-security-compliance
 ms.author: bryanla
 ms.date: 01/28/2019
-ms.openlocfilehash: ce813a544504ce18b382cdb86bd31d89b6626fad
-ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.openlocfilehash: 58dfc0716d4c6f590a9b560f737531740fee071d
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55650500"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56258120"
 ---
 # <a name="class-mipapplylabelaction"></a>clase mip::ApplyLabelAction 
 La aplicación de acciones de la etiqueta requiere que la aplicación que realiza la llamada aplique una etiqueta específica.

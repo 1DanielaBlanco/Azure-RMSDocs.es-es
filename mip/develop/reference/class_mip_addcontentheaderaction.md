@@ -4,14 +4,15 @@ description: 'Documenta la clase MIP:: addcontentheaderaction de Microsoft Infor
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
+ms.collection: M365-security-compliance
 ms.author: bryanla
 ms.date: 01/28/2019
-ms.openlocfilehash: 8cd04bc610944bbbdf00873267161b06a9c09038
-ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.openlocfilehash: ab4ce12c9a11c0e2319bcf2b337b6a6f0f7f9f0e
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55650942"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56256777"
 ---
 # <a name="class-mipaddcontentheaderaction"></a>clase mip::AddContentHeaderAction 
 Una clase de acción que especifica agregar un encabezado de contenido.
