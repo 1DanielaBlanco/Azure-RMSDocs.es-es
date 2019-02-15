@@ -3,18 +3,19 @@ title: 'Cliente de Azure Information Protection: historial de publicación de ve
 description: Consulte las novedades o los cambios en una versión del cliente de Azure Information Protection para Windows y conozca la directiva de ciclo de vida de soporte técnico.
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
-ms.date: 01/24/2019
+manager: barbkess
+ms.date: 02/13/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4ef6bd888c46d7882ada03554813a943861fb51d
-ms.sourcegitcommit: cf52083dde756ad3620c05fc74f012d8a7abacf3
+ms.openlocfilehash: a715dbe743ef9b4018865df22ccdea347f888192
+ms.sourcegitcommit: 89d2c2595bc7abda9a8b5e505b7dcf963e18c822
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54898824"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56266104"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Cliente de Azure Information Protection: Directiva de soporte técnico y de historial de versiones
 
@@ -127,9 +128,12 @@ Esta versión incluye la versión MSIPC 1.0.3592.627 del cliente RMS.
 
 - Excel también admite ahora [distintivos visuales](../configure-policy-markings.md) en distintos colores.
 
-- Para implementaciones de S/MIME existentes, un nuevo ajuste de cliente avanzado (en versión preliminar) para configurar una etiqueta para aplicar automáticamente la protección S/MIME en Outlook. [Más información](client-admin-guide-customizations.md#configure-a-label-to-apply-smime-protection-in-outlook)
+- Para implementaciones de S/MIME existentes, una nueva configuración de cliente avanzada para configurar una etiqueta para aplicar automáticamente la protección S/MIME en Outlook. [Más información](client-admin-guide-customizations.md#configure-a-label-to-apply-smime-protection-in-outlook)
 
 - Un nuevo ajuste de cliente avanzado, como alternativa a la modificación del Registro para evitar solicitudes de inicio de sesión para el servicio Azure Information Protection para [equipos desconectados](client-admin-guide-customizations.md#support-for-disconnected-computers).
+
+- Una nueva configuración de cliente avanzada para [admitir el orden de las subetiquetas](client-admin-guide-customizations.md#enable-order-support-for-sublabels-on-attachments) cuando se usa la siguiente configuración de directiva:
+    - **Para los mensajes de correo electrónico con datos adjuntos, aplicar una etiqueta que coincida con la clasificación más alta de los datos adjuntos**
 
 **Correcciones**:
 

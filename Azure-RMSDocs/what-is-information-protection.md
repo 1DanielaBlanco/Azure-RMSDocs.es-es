@@ -3,17 +3,18 @@ title: ¿Qué es Azure Information Protection? - AIP
 description: Información general del servicio Azure Information Protection.
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
-ms.date: 11/05/2018
+manager: barbkess
+ms.date: 02/13/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: 9c7fd9070e6cc07a7b16043dd480addd2d0a4313
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 147982a700f2b2033b77d0b02568990a164cf555
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024352"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56257865"
 ---
 # <a name="what-is-azure-information-protection"></a>¿Qué es Azure Information Protection?
 
@@ -31,7 +32,7 @@ Después de que su contenido se clasifique (y se proteja opcionalmente), puede r
 
 Use las etiquetas de Azure Information Protection para aplicar la clasificación a los documentos y correos electrónicos. Al hacer esto, la clasificación se puede identificar, independientemente de dónde se almacenen los datos o con quién se compartan. Las etiquetas pueden incluir distintivos visuales, como encabezados, pies de página o marcas de agua. Se agregan metadatos a los archivos y encabezados de correo electrónico en texto no cifrado. El texto no cifrado garantiza que otros servicios, como las soluciones de prevención de pérdida de datos, puedan identificar la clasificación y tomar las medidas oportunas. 
 
-Por ejemplo, el siguiente mensaje de correo electrónico se ha clasificado como "General". La etiqueta ha agregado un pie de página "Confidencialidad: general" al mensaje de correo electrónico. Este pie de página es un indicador visual para todos los destinatarios y está diseñado para los datos empresariales generales que no se pueden enviar fuera de la organización. La etiqueta se inserta en los encabezados de correo electrónico de forma que los servicios de correo electrónico puedan inspeccionar este valor y puedan crear una entrada de auditoría o evitar que se envíen fuera de la organización.
+Por ejemplo, el siguiente mensaje de correo electrónico se ha clasificado como "General". La etiqueta ha agregado el pie de página "Confidencialidad: General" al mensaje de correo electrónico. Este pie de página es un indicador visual para todos los destinatarios y está diseñado para los datos empresariales generales que no se pueden enviar fuera de la organización. La etiqueta se inserta en los encabezados de correo electrónico de forma que los servicios de correo electrónico puedan inspeccionar este valor y puedan crear una entrada de auditoría o evitar que se envíen fuera de la organización.
 
 ![Encabezados y pie de página de correo electrónico de ejemplo que muestran la clasificación de Azure Information Protection](./media/example-email-footerv2.png)
 
@@ -80,7 +81,7 @@ Después de haber protegido un documento, los usuarios y administradores pueden 
 
 ### <a name="additional-integration-for-email"></a>Integración adicional con el correo electrónico
 
-Si usa Azure Information Protection con Exchange Online, disfrutará de una ventaja extra: la posibilidad de enviar correos electrónicos protegidos a cualquier usuario con la garantía de que va a poder leerlo en cualquier dispositivo.
+Cuando usa Azure Information Protection con Exchange Online, obtiene una ventaja adicional: la capacidad de enviar correos electrónicos protegidos a cualquier usuario, con la certeza de que puedan leerlos en cualquier dispositivo.
 
 Por ejemplo, usuarios que han de enviar información confidencial a direcciones de correo electrónico personales que usan una cuenta de **Gmail**, **Hotmail** o **Microsoft**. O bien, a usuarios que no tienen una cuenta de Office 365 o de Azure AD. Estos mensajes de correo electrónico deben estar cifrados tanto cuando se almacenan como en tránsito, y solo deben poder leerlos los destinatarios originales.
 
@@ -111,15 +112,17 @@ En el caso de los almacenes de datos en la nube, use Microsoft Cloud App Securit
 
 ## <a name="resources-for-azure-information-protection"></a>Recursos de Azure Information Protection
 
-- Prueba gratuita: [Enterprise Mobility + Security E5](https://portal.office.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7)
+- Evaluación gratuita: [Enterprise Mobility + Security E5](https://portal.office.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7)
 
-- Opciones de suscripción y precios: [Precios de Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)
+- Precios y opciones de suscripción: [precios de Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)
 
-- Descargar el cliente: [cliente de Azure Information Protection](https://www.microsoft.com/en-us/download/details.aspx?id=53018)
+- Descargue el cliente: [Cliente de Azure Information Protection](https://www.microsoft.com/en-us/download/details.aspx?id=53018)
 
-- Descargue una guía del usuario personalizable: [Guía de adopción de Azure Information Protection para el usuario final](https://download.microsoft.com/download/7/1/2/712A280C-1C66-4EF9-8DC3-88EE43BEA3D4/Azure_Information_Protection_End_User_Adoption_Guide_EN_US.pdf)
+- Descargue una guía de implementación para los responsables de toma de decisiones empresariales: [Azure Information Protection Deployment Acceleration Guide](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Azure-Information-Protection-Deployment-Acceleration-Guide/ba-p/334423) (Guía de aceleración de la implementación de Azure Information Protection)
 
-- Preguntas más frecuentes: [Preguntas más frecuentes de Azure Information Protection](faqs.md)
+- Descargue una guía de usuario personalizable: [Guía de adopción del usuario final de Azure Information Protection](https://download.microsoft.com/download/7/1/2/712A280C-1C66-4EF9-8DC3-88EE43BEA3D4/Azure_Information_Protection_End_User_Adoption_Guide_EN_US.pdf)
+
+- Preguntas más frecuentes: [Preguntas más frecuentes sobre Azure Information Protection](faqs.md)
 
 - Yammer: [Azure Information Protection](https://www.yammer.com/AskIPTeam)
 

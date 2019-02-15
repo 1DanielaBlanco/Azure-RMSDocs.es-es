@@ -3,17 +3,18 @@ title: 'Configuración de distintivos visuales para una etiqueta de Azure Inform
 description: Cuando se asigna una etiqueta a un documento o a un mensaje de correo electrónico, puede seleccionar varias opciones para hacer visible la clasificación elegida. Estos marcadores visuales son un encabezado, un pie de página y una marca de agua.
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
-ms.date: 01/24/2019
+manager: barbkess
+ms.date: 02/13/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: 549bf29cc6c4c70dd91d6e36ad3fbe26baa69535
-ms.sourcegitcommit: 1c1d7067ae7aa8b822bb4ecd23cd7a644989e38c
+ms.openlocfilehash: b0ff274917a78fa031dfe3e6f0665cef104111a9
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55067744"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56258970"
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Configuración de una etiqueta para marcas visuales de Azure Information Protection
 
@@ -35,7 +36,7 @@ Más información sobre los distintivos visuales:
 
 - Longitudes máximas de cadena:
     
-    - La longitud máxima de cadena que se puede especificar para los encabezados y pies de página es de 1024 caracteres, aunque Excel tiene un límite total de 255 caracteres para los encabezados y pies de página. Al especificar una cadena larga para encabezados y pies de página en Excel, este texto se puede truncar a 255 caracteres o menos.
+    - La longitud máxima de cadena que se puede especificar para los encabezados y pies de página es de 1024 caracteres, aunque Excel tiene un límite total de 255 caracteres para los encabezados y pies de página. Este límite incluye caracteres que no son visibles en Excel, por ejemplo, códigos de formato. Al especificar una cadena larga para encabezados y pies de página en Excel, este texto se puede truncar a 255 caracteres o menos.
     
     - La longitud máxima de cadena para marcas de agua que se puede especificar es de 255 caracteres.
 
@@ -101,7 +102,7 @@ Ejemplo: Si especifica la cadena `Document: ${item.name}  Classification: ${item
 
 ## <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>Establecimiento de distintivos visuales diferentes para Word, Excel, PowerPoint y Outlook
 
-De forma predeterminada, las marcas visuales que se especifican se aplican en Word, Excel, PowerPoint y Outlook. Sin embargo, es posible especificar marcas visuales por tipo de aplicación de Office si se usa una instrucción variable "If.App" en la cadena de texto y se identifica el tipo de aplicación mediante el uso de los valores **Word**, **Excel**, **PowerPoint** o **Outlook**. Estos valores también se pueden abreviar, algo que es necesario si se quiere especificar más de uno en la misma instrucción If.App.
+De forma predeterminada, las marcas visuales que se especifican se aplican en Word, Excel, PowerPoint y Outlook. Sin embargo, es posible especificar marcas visuales por tipo de aplicación de Office si se usa una instrucción variable "If.App" en la cadena de texto y se identifica el tipo de aplicación mediante el uso de los valores **Word**, **Excel**, **PowerPoint** o **Outlook**. Estos valores también se pueden abreviar, algo que es necesario si se desea especificar más de uno en la misma instrucción If.App.
 
 Use la siguiente sintaxis:
 

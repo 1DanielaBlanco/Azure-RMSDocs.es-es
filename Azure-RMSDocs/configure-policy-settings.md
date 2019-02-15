@@ -3,17 +3,18 @@ title: Configuración de los parámetros de la directiva de Azure Information Pr
 description: Configure las directivas de Azure Information Protection que se aplica a todos los usuarios y todos los dispositivos.
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
-ms.date: 01/16/2018
+manager: barbkess
+ms.date: 02/13/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
-ms.openlocfilehash: c3d95b0dc8328665c921ab4ff6b37e53ec726f03
-ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
+ms.openlocfilehash: 91ab0e30c0fac8f3285983f6c3b06886c0782e7d
+ms.sourcegitcommit: 89d2c2595bc7abda9a8b5e505b7dcf963e18c822
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54393478"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56266070"
 ---
 # <a name="how-to-configure-the-policy-settings-for-azure-information-protection"></a>Configuración directivas para Azure Information Protection
 
@@ -37,7 +38,9 @@ Para establecer la configuración:
 
 3. En la hoja **Directiva**, configure las opciones:
     
-   - **Select the default label** (Seleccionar la etiqueta predeterminada): cuando configure esta opción, seleccione la etiqueta que se asignará a documentos y correos electrónicos que no tienen una. No se puede configurar una etiqueta como predeterminada si tiene etiquetas secundarias. 
+   - **Select the default label** (Seleccionar la etiqueta predeterminada): cuando configure esta opción, seleccione la etiqueta que se asignará a documentos y correos electrónicos que no tienen una. No se puede configurar una etiqueta como predeterminada si tiene etiquetas secundarias.
+        
+        Esta configuración se aplica a las aplicaciones de Office y al analizador. No se aplica al Explorador de archivos ni a PowerShell.
     
    - **All documents and emails must have a label** (Todos los documentos y correos electrónicos deben tener una etiqueta): cuando establece esta opción en **On** (Activado), todos los documentos guardados y correos electrónicos enviados deben tener aplicada una etiqueta. El etiquetado puede asignarlo manualmente un usuario, se puede asignar automáticamente como resultado de una [condición](configure-policy-classification.md) o asignarse de forma predeterminada (configurando la opción **Select the default label** [Seleccionar la etiqueta predeterminada]).
         
@@ -51,11 +54,13 @@ Para establecer la configuración:
         
        ![Mensaje de Azure Information Protection si la nueva clasificación es más baja](./media/info-protect-lower-justification.png)
         
-       Esta opción no es aplicable para reducir la clasificación de las subetiquetas bajo la misma etiqueta principal ni para la versión preliminar del analizador.
+       Esta opción no es aplicable para reducir la clasificación de las subetiquetas bajo la misma etiqueta principal.
         
    - **For email messages with attachments, apply a label that matches the highest classification of those attachments** (Para los mensajes de correo electrónico con datos adjuntos, aplicar una etiqueta que coincida con la clasificación más alta de los datos adjuntos): al establecer esta opción en **Recommended** (Recomendado), se pide a los usuarios que apliquen una etiqueta a su mensaje de correo electrónico. La etiqueta se elige de manera dinámica, basándose en las etiquetas de clasificación que se han aplicado a los archivos adjuntos, y se selecciona la etiqueta de clasificación más alta. Los datos adjuntos deben ser un archivo físico y no pueden ser un vínculo a un archivo (por ejemplo, un vínculo a un archivo en SharePoint o OneDrive para la Empresa). Los usuarios pueden aceptar la recomendación o descartarla. Cuando esta opción se establece en **Automático**, la etiqueta se aplica automáticamente, pero los usuarios pueden quitarla o seleccionar una etiqueta distinta antes de enviar el correo electrónico.
-    
-     Cuando los datos adjuntos con la etiqueta de clasificación más alta se configuran para la protección con la configuración de vista previa de los permisos definidos por el usuario, el mensaje de correo electrónico se etiqueta con la misma clasificación, pero no se aplica la protección.
+        
+        Para tener en cuenta el orden de las subetiquetas cuando usa esta configuración de directiva, debe [definir una configuración de cliente avanzada](./rms-client/client-admin-guide-customizations.md#enable-order-support-for-sublabels-on-attachments).
+        
+        Cuando los datos adjuntos con la etiqueta de clasificación más alta se configuran para la protección con la configuración de vista previa de los permisos definidos por el usuario, el mensaje de correo electrónico se etiqueta con la misma clasificación, pero no se aplica la protección.
     
    - **Display the Information Protection bar in Office apps** (Mostrar la barra de Information Protection en las aplicaciones de Office): cuando esta opción está desactivada, los usuarios no pueden seleccionar las etiquetas de una barra de Word, Excel, PowerPoint y Outlook. En su lugar, deben seleccionarlas desde el botón **Proteger** de la cinta. Cuando esta opción está activada, los usuarios pueden seleccionar las etiquetas desde la barra o el botón.
         

@@ -3,18 +3,19 @@ title: 'Cliente de etiquetado unificado de Azure Information Protection: Informa
 description: Vea la información de versión del cliente de etiquetado unificado de Azure Information Protection para Windows.
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
+manager: barbkess
 ms.date: 10/23/2018
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: maayan
 ms.suite: ems
-ms.openlocfilehash: a1544e0fa3c6d09328d1801a75ffbccd496e3482
-ms.sourcegitcommit: b275c1f82bf9176fe3fb36016c6f8692b8418295
+ms.openlocfilehash: 939ae3e367b14f722c38be023c70d9dcce21004f
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951846"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56254839"
 ---
 # <a name="azure-information-protection-unified-labeling-client-version-release-information"></a>Cliente de etiquetado unificado de Azure Information Protection: Información de publicación de versión
 
@@ -71,7 +72,7 @@ Las siguientes características no funcionan en esta versión preliminar:
 
 ## <a name="instructions"></a>Instrucciones
 
-1. Instale el cliente mediante las siguientes instrucciones: [User Guide: Download and install the Azure Information Protection client (Preview)](install-unifiedlabelingclient-app.md) (Guía del usuario: Descargar e instalar el cliente de Azure Information Protection [Versión preliminar]). 
+1. Instale el cliente utilizando las instrucciones siguientes: [Manual del usuario: Descarga e instalación del cliente de Azure Information Protection (versión preliminar)](install-unifiedlabelingclient-app.md) 
 
 2. Use el cliente en aplicaciones de Office como si fuera el cliente de Azure Information Protection, salvo que el botón de la cinta de Office se denomina **Confidencialidad** en lugar de **Proteger**:
     

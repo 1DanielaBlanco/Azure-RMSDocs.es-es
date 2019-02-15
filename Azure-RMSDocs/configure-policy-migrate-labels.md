@@ -3,18 +3,19 @@ title: Migración de etiquetas de Azure Information Protection al Centro de segu
 description: Migración de etiquetas de Azure Information Protection al Centro de seguridad y cumplimiento de Office 365 para clientes que admiten el etiquetado unificado.
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
-ms.date: 02/05/2019
+manager: barbkess
+ms.date: 02/12/2019
 ms.topic: article
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 8525d20d452004b6ba46dd438dd042f98f603d6d
-ms.sourcegitcommit: e8b4a09db9aad7f6540b4c2fd92b1e8008c999b1
+ms.openlocfilehash: 27fe7dce81856140caf5e30451caabc3df9a2894
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55737280"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56254788"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-the-office-365-security--compliance-center"></a>Cómo migrar etiquetas de Azure Information Protection al Centro de seguridad y cumplimiento de Office 365
 
@@ -24,8 +25,6 @@ ms.locfileid: "55737280"
 > Esta característica se encuentra en versión preliminar, y lo que hace es migrar el inquilino a una nueva plataforma. Esta operación no puede revertirse. La nueva plataforma admite el etiquetado unificada de modo que varios clientes y servicios pueden usar las etiquetas creadas y administradas.
 
 Migre las etiquetas si quiere poder usarlas en el Centro de seguridad y cumplimiento de Office 365, donde [los clientes que admiten el etiquetado unificado](#clients-that-support-unified-labeling) pueden publicarlas y luego descargarlas. El cliente de Azure Information Protection continúa descargando las etiquetas con su directiva de Azure Information Protection desde Azure Portal. 
-
-Después de haber migrado las etiquetas, puede realizar cambios en ellas en Azure Portal o en el Centro de seguridad y cumplimiento de Office 365, y los clientes respectivos descargarán el mismo cambio.
 
 Antes de leer las instrucciones detalladas sobre cómo migrar las etiquetas, es posible que encuentre útiles las siguientes preguntas más frecuentes:
 
@@ -61,6 +60,8 @@ Antes de migrar las etiquetas, asegúrese de estar al tanto de los siguientes ca
 - Plantillas de protección:
     
     - Las plantillas que usan una clave basada en la nube y que forman parte de una configuración de etiquetas también se migran con la etiqueta. Otras plantillas de protección no se migran. 
+    
+    - Si tiene etiquetas configuradas para una plantilla predefinida, [convierta estas plantillas en etiquetas](configure-policy-templates.md#to-convert-templates-to-labels) antes de migrar dichas etiquetas. Esta configuración no bloqueará la migración de etiquetas, pero no se admite en el Centro de seguridad y cumplimiento.
     
     - Después de migrar una etiqueta con la configuración de protección basada en la nube, el ámbito resultante de la plantilla de protección es el ámbito que se define en Azure Portal (o por medio del módulo de AADRM de PowerShell) y el ámbito que se define en el Centro de seguridad y cumplimiento. 
 

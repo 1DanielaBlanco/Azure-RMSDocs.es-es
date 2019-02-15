@@ -3,16 +3,17 @@ title: 'Tutorial: Configuración de los parámetros de la directiva de Azure Inf
 description: Un tutorial introductorio que le guiará en el proceso de configuración de las directivas de Azure Information Protection para ayudar a clasificar los documentos y los correos electrónicos de su organización.
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
-ms.date: 01/24/2019
+manager: barbkess
+ms.date: 02/15/2019
 ms.topic: tutorial
+ms.collection: M365-security-compliance
 ms.service: information-protection
-ms.openlocfilehash: 324f13a61d287fd883e9336c6e17250e9ab9ff9f
-ms.sourcegitcommit: 9a9c55c96a7e99bcca742e759a3f08507e3b9801
+ms.openlocfilehash: f906a5b9fc9f678d1f452e347fb3739b4ff96586
+ms.sourcegitcommit: 89d2c2595bc7abda9a8b5e505b7dcf963e18c822
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231028"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56266087"
 ---
 # <a name="tutorial-configure-azure-information-protection-policy-settings-that-work-together"></a>Tutorial: Configuración de los parámetros de la directiva de Azure Information Protection que funcionan en conjunto
 
@@ -157,7 +158,7 @@ La barra de Information Protection se muestra entonces de nuevo para que los usu
 
 Dado que la etiqueta se activa antes de enviar el correo electrónico, no hay necesidad de enviar realmente el correo electrónico para ver cómo funciona esta configuración de directiva. Puede cerrar el correo electrónico sin enviarlo ni guardarlo.
 
-Sin embargo, puede intentar repetir este ejercicio adjuntando también otro documento que tenga una clasificación más alta (una subetiqueta de grupo **Extremadamente confidencial**). A continuación, podrá ver cómo cambia la solicitud para aplicar la etiqueta de clasificación superior.
+Sin embargo, puede intentar repetir este ejercicio adjuntando también otro documento que tenga una clasificación más alta (una subetiqueta de grupo **Extremadamente confidencial**). A continuación, podrá ver cómo cambia la solicitud para aplicar la etiqueta de clasificación superior. Si prueba varios datos adjuntos con las subetiquetas que tienen la misma etiqueta primaria, debe definir [una configuración de cliente avanzada](./rms-client/client-admin-guide-customizations.md#enable-order-support-for-sublabels-on-attachments) para admitir su ordenación en Azure Portal.
 
 ## <a name="clean-up-resources"></a>Limpieza de recursos
 
@@ -171,6 +172,6 @@ Reinicie las aplicaciones de Word y Outlook para descargar estos cambios.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Para obtener más información sobre la edición de los parámetros de directiva de Azure Information Protection, vea [Configuración directivas para Azure Information Protection](configure-policy-settings.md).
+Para más información sobre la edición de la configuración de directiva de Azure Information Protection, vea [Configuración de directivas para Azure Information Protection](configure-policy-settings.md).
 
 La configuración de directiva que hemos cambiado ha ayudado a garantizar un nivel básico de clasificación, así como a animar a los usuarios a seleccionar una etiqueta adecuada. El siguiente paso es aumentar esta estrategia mediante la inspección del contenido de documentos y correos electrónicos y, a continuación, la recomendación o aplicación automática de una etiqueta adecuada. Para ello, puede configurar condiciones en las etiquetas. Para obtener más información, consulte [Configuración de las condiciones para la clasificación automática y recomendada en Azure Information Protection](configure-policy-classification.md).

@@ -3,18 +3,21 @@ title: 'Guía de inicio rápido: Creación de una nueva etiqueta de Azure Inform
 description: Cree y configure una nueva etiqueta que clasifica los documentos y correos electrónicos para usuarios específicos mediante el uso de una directiva de ámbito.
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
-ms.date: 11/14/2018
+manager: barbkess
+ms.date: 02/15/2019
 ms.topic: quickstart
+ms.collection: M365-security-compliance
 ms.service: information-protection
-ms.openlocfilehash: 1a8af09681411e49936c067c6161376c9d4f9f16
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: a4057396bbe2d642d5f1d155a9e3975d40f02b1e
+ms.sourcegitcommit: 89d2c2595bc7abda9a8b5e505b7dcf963e18c822
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023584"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56265985"
 ---
 # <a name="quickstart-create-a-new-azure-information-protection-label-for-specific-users"></a>Inicio rápido: Creación de una nueva etiqueta de Azure Information Protection para usuarios específicos
+
+>*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 En este tutorial, creará una nueva etiqueta que solo determinados usuarios pueden ver y aplicar para clasificar y proteger sus documentos y correos electrónicos.
 
@@ -32,7 +35,7 @@ Para completar este tutorial rápido, necesitará:
 
 2. Ha agregado la hoja Azure Information Protection a Azure Portal y ha confirmado que el servicio de protección está activado.
 
-    Si necesita ayuda con estas acciones, consulte [Quickstart: Get started in the Azure portal](quickstart-viewpolicy.md) (Inicio rápido: introducción a Azure Portal).
+    Si necesita ayuda con estas acciones, consulte [Quickstart: Introducción a Azure Portal](quickstart-viewpolicy.md).
 
 3. Un grupo habilitado para correo electrónico en Azure AD que contenga los usuarios podrá ver y aplicar la nueva etiqueta.
     
@@ -52,9 +55,9 @@ En primer lugar, cree la nueva etiqueta.
     
     Por ejemplo, en el menú del concentrador, haga clic en **Todos los servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
     
-    Si no es el administrador global, utilice el siguiente vínculo para roles alternativos: [Inicio de sesión en Azure Portal](configure-policy.md#signing-in-to-the-azure-portal).
+    Si no es el administrador global, utilice el siguiente vínculo para roles alternativos: [Inicio de sesión en Azure Portal](configure-policy.md#signing-in-to-the-azure-portal)
 
-2. En la opción de menú **Clasificaciones** > **Etiquetas**: en la hoja **Azure Information Protection: etiquetas**, haga clic en **Agregar una nueva etiqueta**.
+2. Desde la opción de menú **Clasificaciones** > **Etiquetas**: En la hoja **Azure Information Protection: etiquetas**, seleccione **Agregar una nueva etiqueta**.
 
 3. En la hoja **Etiqueta**, especifique al menos lo siguiente:
     
@@ -68,7 +71,7 @@ En primer lugar, cree la nueva etiqueta.
 
 Ahora, agregue la etiqueta recién creada a una nueva directiva de ámbito.
 
-1. En la opción de menú **Clasificaciones** > **Directivas**: en la hoja **Azure Information Protection: directivas**, seleccione **Agregar una directiva**. 
+1. En la opción de menú **Clasificaciones** > **Directivas**: En la hoja **Azure Information Protection - Directivas**, seleccione **Agregar una directiva**. 
 
 2. En la hoja **Directiva**, para el cuadro **Nombre de la directiva**, escriba un nombre que identifique al grupo de usuarios que verá en la etiqueta recién creada. Por ejemplo, `Sales`.
 
@@ -78,7 +81,7 @@ Ahora, agregue la etiqueta recién creada a una nueva directiva de ámbito.
 
 5. De nuevo en la hoja **Directiva**, seleccione **Agregar o quitar etiquetas**.
 
-6. En la hoja **Directiva: agregar o quitar etiquetas**, seleccione la etiqueta que ha creado, por ejemplo, **Ventas - Restringido** y, a continuación, seleccione **Aceptar**.
+6. En la hoja **Directiva: agregar o quitar etiquetas**, seleccione la etiqueta que ha creado, por ejemplo, **Ventas - Restringido** y luego seleccione **Aceptar**.
 
 7. De nuevo en la hoja **Directiva**, seleccione **Guardar**. 
 
@@ -96,11 +99,11 @@ Para probar esta etiqueta, necesita un mínimo de dos equipos porque el cliente 
 
 Si no desea mantener esta etiqueta y la directiva de ámbito, haga lo siguiente:
 
-1. En la opción de menú **Clasificaciones** > **Directivas**: en la hoja **Azure Information Protection: directivas**, seleccione el menú contextual (**...**) para la directiva de ámbito que acaba de crear. Por ejemplo: **Ventas**.
+1. En la opción de menú **Clasificaciones** > **Directivas**: En la hoja **Azure Information Protection: directivas**, seleccione el menú contextual (**...**) para la directiva de ámbito que acaba de crear. Por ejemplo: **Ventas**.
 
 2. Seleccione **Eliminar directiva** y, si se le pide que confirme, seleccione **Aceptar**.
 
-3. En la opción de menú **Clasificaciones** > **Etiquetas** de la hoja **Azure Information Protection: etiqueta**, seleccione el menú contextual (**...**) para la etiqueta que acaba de crear.  Por ejemplo, **Ventas - restringido**.
+3. Desde la opción de menú **Clasificaciones** > **Etiqueta**: En la hoja **Azure Information Protection: etiqueta**, seleccione el menú contextual (**...**) para la etiqueta que acaba de crear.  Por ejemplo, **Ventas - restringido**.
 
 4.  Seleccione **Eliminar esta etiqueta** y, si se le pide que confirme, seleccione **Aceptar**.
 

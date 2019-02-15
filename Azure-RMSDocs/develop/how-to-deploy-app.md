@@ -4,20 +4,21 @@ description: En este artículo se describe el proceso de implementación de una 
 keywords: ''
 author: kkanakas
 ms.author: kartikka
-manager: mbaldwin
+manager: barbkess
 ms.date: 02/27/2017
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 34dc6d6f-cfe4-4848-9b11-8d90c4b38ef7
 audience: developer
 ms.reviewer: kartikka
 ms.suite: ems
-ms.openlocfilehash: a7f31be3e7885e206d24ca4f193270b3ca1aa242
-ms.sourcegitcommit: 07af86511a394274f10cf1340de4cf4bad6d1675
+ms.openlocfilehash: 5be6785c86cfeb104acc7f12d4cb7b830e9c9d36
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46473790"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56251882"
 ---
 # <a name="deploying-a-service-application-into-a-different-tenant"></a>Implementación de una aplicación de servicio en un inquilino diferente
 
@@ -46,6 +47,6 @@ El administrador de TI de *ABC*, después inicia la aplicación de *CoolApp* com
 
 Si la experiencia deseada no es ofrecer el administrador de TI de *ABC* con un cuadro de diálogo de interfaz de usuario para la información de la entidad de servicio, **Flujo 2** es el método que se debe seguir.
 
-## <a name="flow-2-abc-it-administrator-provides-the-key-to-the-coolapp-team"></a>Flujo de 2: el administrador de TI de *ABC* proporciona la clave para el equipo de *CoolApp*
+## <a name="flow-2-abc-it-administrator-provides-the-key-to-the-coolapp-team"></a>Flujo 2: el administrador de TI de *ABC* proporciona la clave para el equipo de *CoolApp*
 
 Una vez que el administrador de TI de *ABC* crea la entidad de servicio, como se muestra en la **figura 1**, *ABC* proporciona la información al equipo de *CoolApp*. El equipo de *CoolApp* continúa insertando la información en la aplicación de *CoolApp* para su uso en el inquilino de *ABC*.

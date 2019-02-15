@@ -3,19 +3,20 @@ title: Configuraciones personalizadas del cliente de Azure Information Protectio
 description: Información sobre cómo personalizar el cliente de Azure Information Protection para Windows.
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
-ms.date: 02/02/2019
+manager: barbkess
+ms.date: 02/14/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 3612c0848cf77a57636186f5f9683a2ac7f1c5ec
-ms.sourcegitcommit: be05adc7750e22c110b261882de0389b9dfb2726
+ms.openlocfilehash: f41dde8fda216084ef9399c0a0e4d7b09c1e79fb
+ms.sourcegitcommit: 89d2c2595bc7abda9a8b5e505b7dcf963e18c822
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55651571"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56266138"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Guía del administrador: Configuraciones personalizadas del cliente de Azure Information Protection
 
@@ -46,6 +47,7 @@ Algunas de estas opciones requieren la modificación del Registro y otras usan l
 |Setting|Escenario e instrucciones|
 |----------------|---------------|
 |DisableDNF|[Mostrar u ocultar el botón No reenviar en Outlook](#hide-or-show-the-do-not-forward-button-in-outlook)|
+|CompareSubLabelsInAttachmentAction|[Habilitación de la compatibilidad con el orden para subetiquetas](#enable-order-support-for-sublabels-on-attachments) 
 |EnableBarHiding|[Ocultación de manera permanente de la barra de Azure Information Protection](#permanently-hide-the-azure-information-protection-bar)|
 |EnableCustomPermissions|[Configuración de las opciones de permisos personalizados para que estén disponibles o no disponibles para los usuarios](#make-the-custom-permissions-options-available-or-unavailable-to-users)|
 |EnablePDFv2Protection|[No proteger archivos PDF con el estándar ISO de cifrado de archivos PDF](#dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)|
@@ -219,6 +221,21 @@ Para establecer esta configuración avanzada, especifique las cadenas siguientes
 
 - Valor: **True**
 
+## <a name="enable-order-support-for-sublabels-on-attachments"></a>Habilitación de la compatibilidad con el orden para subetiquetas en datos adjuntos
+
+Esta opción utiliza una [configuración de cliente avanzada](#how-to-configure-advanced-client-configuration-settings-in-the-portal) que se debe definir en Azure Portal.
+
+Use esta configuración cuando tenga subetiquetas y haya definido la siguiente [configuración de directiva](../configure-policy-settings.md):
+
+- **Para los mensajes de correo electrónico con datos adjuntos, aplicar una etiqueta que coincida con la clasificación más alta de los datos adjuntos**
+
+Configure las siguientes cadenas:
+
+- Clave: **CompareSubLabelsInAttachmentAction**
+
+- Valor: **True**
+
+Sin esta configuración, la primera subetiqueta que se encuentre en la etiqueta primaria más alta se aplica al correo electrónico.
 
 ## <a name="enable-recommended-classification-in-outlook"></a>Habilitación de la clasificación recomendada en Outlook
 
@@ -251,7 +268,7 @@ Para establecer esta configuración avanzada, especifique las cadenas siguientes
 
 ## <a name="configure-a-label-to-apply-smime-protection-in-outlook"></a>Configuración de una etiqueta para aplicar la protección de S/MIME en Outlook
 
-Esta opción utiliza una [configuración de cliente avanzada](#how-to-configure-advanced-client-configuration-settings-in-the-portal) que se debe definir en Azure Portal. Esta configuración está en versión preliminar y puede cambiar.
+Esta opción utiliza una [configuración de cliente avanzada](#how-to-configure-advanced-client-configuration-settings-in-the-portal) que se debe definir en Azure Portal.
 
 Use esta configuración únicamente cuando tenga una [implementación de S/MIME](https://docs.microsoft.com/office365/SecurityCompliance/s-mime-for-message-signing-and-encryption) en funcionamiento y desee que una etiqueta aplique automáticamente este método de protección para los correos electrónicos en lugar de la protección de Rights Management de Azure Information Protection. La protección resultante es la misma que cuando un usuario selecciona manualmente las opciones de S/MIME de Outlook.
 

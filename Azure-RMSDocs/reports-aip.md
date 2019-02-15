@@ -3,27 +3,28 @@ title: Informes centrales para Azure Information Protection
 description: Cómo usar los informes centrales para realizar el seguimiento de la adopción de las etiquetas de Azure Information Protection e identificar los archivos que contienen información confidencial
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
-ms.date: 02/05/2019
+ms.date: 02/15/2019
+manager: barbkess
 ms.topic: article
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: information-protection
 ms.assetid: b2da2cdc-74fd-4bfb-b3c2-2a3a59a6bf2e
 ms.reviewer: lilukov
 ms.suite: ems
-ms.openlocfilehash: eb9ff9dd73422813a80b41ee516876bfc4c50663
-ms.sourcegitcommit: 1cd3a3bc19cd973f81a62419c946bfaf2796dfb2
+ms.openlocfilehash: 2a6602303e51c4bc1cce803ec43841a52992c8b8
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55760793"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56254499"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Informes centrales para Azure Information Protection
 
 >*Se aplica a: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 > [!NOTE]
-> Esta característica se encuentra actualmente en versión preliminar y está sujeta a cambios. Puede que no todos los datos recopilados durante esta versión preliminar se admitan cuando la característica pase a disponibilidad general.
+> Esta característica se encuentra actualmente en versión preliminar y está sujeta a cambios.
 
 Use los análisis de Azure Information Protection para generar informes centrales que le permitan realizar el seguimiento de la adopción de las etiquetas de Azure Information Protection. Además:
 
@@ -67,7 +68,7 @@ Por ejemplo, podrá ver lo siguiente:
     
     - Qué archivos contienen información confidencial para categorías conocidas, como datos financieros e información personal, y la ubicación de los archivos por estas categorías
     
-Los informes usan [Azure Log Analytics](/azure/log-analytics/log-analytics-overview) para almacenar los datos en un área de trabajo de su organización. Si está familiarizado con el lenguaje de consulta, puede modificar las consultas y crear nuevos informes y paneles de Power BI. Puede que el siguiente tutorial le ayude a comprender el lenguaje de consulta: [Introducción a las consultas en Log Analytics](https://docs.loganalytics.io/docs/Learn/Getting-Started/Getting-started-with-the-Analytics-portal). 
+Los informes usan [Azure Monitor](/azure/log-analytics/log-analytics-overview) para almacenar los datos en un área de trabajo de Log Analytics de su organización. Si está familiarizado con el lenguaje de consulta, puede modificar las consultas y crear nuevos informes y paneles de Power BI. Puede que el siguiente tutorial le ayude a comprender el lenguaje de consulta: [Get started with Azure Monitor log queries](/azure/azure-monitor/log-query/get-started-queries) (Empezar a trabajar con consultas de registros de Azure Monitor). 
 
 Para más información, lea las siguientes entradas de blog: 
 
@@ -99,7 +100,7 @@ Para generar estos informes, los puntos de conexión envían los siguientes tipo
 
 - La versión del sistema operativo cliente.
 
-Esta información se almacena en un área de trabajo de Azure Log Analytics de su organización y que pueden ver los usuarios que tienen derechos de acceso a esta área de trabajo. Para obtener información acerca de cómo configurar el acceso al área de trabajo, vea la sección [Administración de cuentas y usuarios](/azure/log-analytics/log-analytics-manage-access?toc=/azure/azure-monitor#manage-accounts-and-users) de la documentación de Azure.
+Esta información se almacena en un área de trabajo de Azure Log Analytics de su organización y que pueden ver los usuarios que tienen derechos de acceso a esta área de trabajo. Para obtener información acerca de cómo configurar el acceso al área de trabajo, vea la sección [Administración de cuentas y usuarios](/azure/azure-monitor/platform/manage-access#manage-accounts-and-users) de la documentación de Azure.
 
 > [!NOTE]
 > El área de trabajo de Azure Log Analytics para Azure Information Protection incluye una casilla para las coincidencias de contenido del documento. Cuando se selecciona esta casilla, también se recopilan los datos reales que se identifican mediante los tipos de información confidencial o sus condiciones personalizadas. Por ejemplo, esto puede incluir números de tarjeta de crédito que se encuentran, así como números de la seguridad social, números de pasaportes y números de cuentas bancarias. Si no desea recopilar estos datos, no seleccione esta casilla.
@@ -111,9 +112,39 @@ Para ver los informes de Azure Information Protection y crear los suyos propios,
 
 |Requisito|Más información|
 |---------------|--------------------|
-|Una suscripción a Azure que incluya Log Analytics|Consulte la página [Precios de Azure Log Analytics](https://azure.microsoft.com/pricing/details/log-analytics).<br /><br />Si no tiene una suscripción a Azure o actualmente no usa Azure Log Analytics, la página de precios incluye un vínculo a una evaluación gratuita.|
+|Una suscripción a Azure que incluya Log Analytics|Consulte la página de [precios de Azure Monitor](https://azure.microsoft.com/pricing/details/log-analytics).<br /><br />Si no tiene una suscripción a Azure o actualmente no usa Azure Log Analytics, la página de precios incluye un vínculo a una evaluación gratuita.|
 |La versión actual disponible con carácter general o la versión preliminar del cliente de Azure Information Protection.|Si aún no ha instalado este cliente, puede descargarlo e instalarlo desde el [Centro de descarga de Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=53018).|
 |Para el informe **Discovery and risk** (Detección y riesgo): <br /><br />- Para mostrar datos desde los almacenes de datos locales, ha implementado al menos una instancia del analizador de Azure Information Protection (versión de disponibilidad general o versión preliminar actual) <br /><br />-Para mostrar los datos desde equipos con Windows 10, estos deben pertenecer al menos a una compilación 1809, usted debe usar Protección contra amenazas avanzada de Windows Defender (ATP de Windows Defender) y ha habilitado la característica de integración de Azure Information Protection en el Centro de seguridad de Windows Defender|Para obtener instrucciones de instalación del analizador, consulte [Implementación del analizador de Azure Information Protection para clasificar y proteger automáticamente los archivos](deploy-aip-scanner.md). Si va a actualizar desde una versión anterior del analizador, consulte [Actualización del analizador de Azure Information Protection](./rms-client/client-admin-guide.md#upgrading-the-azure-information-protection-scanner).<br /><br />Para obtener información sobre cómo configurar y usar la característica de integración de Azure Information Protection del Centro de seguridad de Windows Defender, consulte [Protección de información de información general de Windows](/windows/security/threat-protection/windows-defender-atp/information-protection-in-windows-overview).|
+
+### <a name="permissions-required-for-azure-information-protection-analytics"></a>Permisos requeridos para el análisis de Azure Information Protection
+
+Específico para el análisis de Azure Information Protection, puede usar el rol de administrador de Azure AD de Lector de seguridad como alternativa a los otros roles de Azure AD que admiten la administración de Azure Information Protection.
+
+Dado que esta característica usa Azure Log Analytics, el control de acceso basado en rol (RBAC) para Azure también controla el acceso al área de trabajo. Si está familiarizado con los roles de Azure, le resultará útil leer [Diferencias entre los roles de RBAC de Azure y los roles de administrador de Azure AD](https://docs.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles#differences-between-azure-rbac-roles-and-azure-ad-administrator-roles).
+
+Detalles:
+
+1. Para acceder a la hoja de análisis de Azure Information Protection en Azure Portal, debe tener uno de los siguientes [roles de administrador de Azure AD](/azure/active-directory/active-directory-assign-admin-roles-azure-portal):
+    
+    - **Lector de seguridad**
+    
+    - **Administrador de Information Protection**
+    
+   - **Administrador de seguridad**
+    
+    - **Administrador global**
+
+2. Para usar Azure Log Analytics, debe tener uno de los siguientes [roles de Azure Log Analytics](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access#managing-access-to-log-analytics-using-azure-permissions) o [roles de Azure](https://docs.microsoft.com/azure/role-based-access-control/overview#role-assignments) estándar:
+    
+    - Para crear un área de trabajo de Log Analytics o para crear consultas personalizadas, debe tener uno de los siguientes:
+    
+        - **Colaborador de Log Analytics**
+        - Rol de Azure: **Propietario** o **Colaborador**
+    
+    - Para ver los datos en un área de trabajo de Log Analytics que otro administrador ha creado:
+    
+        - **Lector de Log Analytics**
+        - Rol de Azure: **Lector**
 
 ## <a name="configure-a-log-analytics-workspace-for-the-reports"></a>Configuración de un área de trabajo de Log Analytics para los informes
 

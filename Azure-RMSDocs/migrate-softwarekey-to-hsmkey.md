@@ -3,19 +3,20 @@ title: Migración de clave protegida por software a clave protegida por HSM - AI
 description: Estas instrucciones forman parte de la ruta de migración de AD RMS a Azure Information Protection y solo son válidas si la clave de AD RMS está protegida por software y quiere migrar a Azure Information Protection con una clave de inquilino protegida por HSM en Azure Key Vault.
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
+manager: barbkess
 ms.date: 12/11/2018
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: c5f4c6ea-fd2a-423a-9fcb-07671b3c2f4f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 3e8f0b9e2ca404f1f5a4c37c60d44f4fa95ace1e
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: 47e0b75de5911339d1c584734cf1eba7cda4ee03
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305434"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56257406"
 ---
 # <a name="step-2-software-protected-key-to-hsm-protected-key-migration"></a>Paso 2: Migración de clave protegida por software a clave protegida por HSM
 
@@ -131,7 +132,7 @@ Por ejemplo, si el almacén de claves que ha creado para Azure Information Prote
 
 Después de transferir la clave de HSM a Azure Key Vault, estará preparado para importar los datos de configuración de AD RMS.
 
-## <a name="part-3-import-the-configuration-data-to-azure-information-protection"></a>Part 3: Importar los datos de configuración en Azure Information Protection
+## <a name="part-3-import-the-configuration-data-to-azure-information-protection"></a>3ª parte: Importar los datos de configuración en Azure Information Protection
 
 1. Administrador de Azure Information Protection: en la estación de trabajo conectada a Internet y en la sesión de PowerShell, copie los nuevos archivos de datos de configuración (.xml) de los que se haya quitado la clave de SLC después de ejecutar la herramienta TpdUtil.
 

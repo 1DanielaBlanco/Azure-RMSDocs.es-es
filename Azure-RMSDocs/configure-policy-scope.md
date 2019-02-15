@@ -3,19 +3,20 @@ title: 'Configuración de directivas de ámbito para Azure Information Protectio
 description: Para configurar valores y etiquetas diferentes para usuarios específicos, debe configurar una directiva de ámbito para Azure Information Protection.
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
+manager: barbkess
 ms.date: 11/05/2018
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 4b134785-0353-4109-8fa7-096d1caa2242
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 8d10ddf21842d944773c7d088c4c452bc618c29c
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 505e02c48a0090551cfb57ffb57605af5b27470c
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024353"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56255155"
 ---
 # <a name="how-to-configure-the-azure-information-protection-policy-for-specific-users-by-using-scoped-policies"></a>Configuración de la directiva de Azure Information Protection para usuarios específicos mediante directivas de ámbito
 
@@ -41,7 +42,7 @@ Para configurar una directiva de ámbito de Azure Information Protection:
 
     Por ejemplo, en el menú del concentrador, haga clic en **Todos los servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
 
-2. En la opción de menú **Clasificaciones** > **Directivas**: en la hoja **Azure Information Protection: directivas**, seleccione **Agregar una directiva**. Verá la hoja **Directiva** en la que se muestra la directiva global existente, donde puede configurar la nueva directiva con ámbito.
+2. En la opción de menú **Clasificaciones** > **Directivas**: En la hoja **Azure Information Protection - Directivas**, seleccione **Agregar una directiva**. Verá la hoja **Directiva** en la que se muestra la directiva global existente, donde puede configurar la nueva directiva con ámbito.
 
 3. Especifique un nombre de directiva y una descripción que solo los administradores vean en el portal de Azure. El nombre debe ser único en el inquilino. Después, seleccione **Specify which users/groups get this policy** (Especificar qué usuarios o grupos obtienen esta directiva) y, en las hojas siguientes, busque y seleccione los usuarios y los grupos a los que se aplica esta directiva. Las etiquetas y valores de configuración que defina en esta directiva de ámbito se aplican solo a estos usuarios.
     
