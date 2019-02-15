@@ -3,19 +3,20 @@ title: Tipos de archivos compatibles con Azure Information Protection
 description: Detalles técnicos sobre tipos de archivos, extensiones de nombres de archivos y niveles de protección compatibles para administradores responsables del cliente de Azure Information Protection para Windows.
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
+manager: barbkess
 ms.date: 01/29/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f886a2bbf555d1ed3db9c18d8c86ad1cfc03e3d9
-ms.sourcegitcommit: ebb3a8b64a8e18dee4436442e37b54b65171d087
+ms.openlocfilehash: efa968ab048d0c648d1b0351fa847d2a80a3d11a
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "55567594"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56259575"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>Guía del administrador: Tipos de archivos compatibles con el cliente de Azure Information Protection
 

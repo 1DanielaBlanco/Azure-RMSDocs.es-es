@@ -3,19 +3,20 @@ title: Seguimiento y revocación de documentos - Azure Information Protection
 description: Una vez protegidos los documentos, puede realizar un seguimiento de como los usan las personas. Si es necesario, también puede revocar el acceso a estos documentos si las personas ya no pueden leerlos.
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
+manager: barbkess
 ms.date: 01/16/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 643c762e-23ca-4b02-bc39-4e3eeb657a1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ba53a7f4d3aa96e4e813c602d1d79f014550ea17
-ms.sourcegitcommit: 2c90f5bf11ec34ab94824a39ccab75bde71fc3aa
+ms.openlocfilehash: 66c0f915c2a3575d5f9d45e59f5684d9bdfbf7e7
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54314771"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56252510"
 ---
 # <a name="user-guide-track-and-revoke-your-documents-when-you-use-azure-information-protection"></a>Manual del usuario: Seguimiento y revocación de documentos cuando se usa Azure Information Protection
 

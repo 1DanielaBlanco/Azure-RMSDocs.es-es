@@ -3,17 +3,18 @@ title: 'Configuración de condiciones para una etiqueta de Azure Information Pro
 description: Las condiciones de una etiqueta le permiten asignar automáticamente una etiqueta a un documento o a un correo electrónico. O bien, puede indicar a los usuarios que seleccionen una etiqueta recomendada.
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
+manager: barbkess
 ms.date: 01/16/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: b9cc4267ec4dd3ebaa24b23d996fde61f9b09799
-ms.sourcegitcommit: 719e3c758e414c5c95dea03cd78d7427af4ee8e7
+ms.openlocfilehash: b7d0bf743d23083e2f9c6ca18044e26cb8c2ae6f
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2019
-ms.locfileid: "54443848"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56256573"
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Configuración de las condiciones para la clasificación automática y recomendada en Azure Information Protection
 

@@ -3,19 +3,20 @@ title: 'Administración de Microsoft: operaciones de ciclo de vida de clave de i
 description: Información sobre las operaciones del ciclo de vida que son pertinentes si Microsoft administra la clave de inquilino para Azure Information Protection (la predeterminada).
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
+manager: barbkess
 ms.date: 12/12/2018
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 3c48cda6-e004-4bbd-adcf-589815c56c55
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 8f98750c24fe535a580952fa7ebe76a6833f7dd2
-ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
+ms.openlocfilehash: d9fc409faedf8083dae6730f866c12bdd84255ce
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54394058"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56252578"
 ---
 # <a name="microsoft-managed-tenant-key-life-cycle-operations"></a>Administradas por Microsoft: Operaciones de ciclo de vida de clave de inquilino
 

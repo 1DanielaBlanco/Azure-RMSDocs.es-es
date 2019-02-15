@@ -3,19 +3,20 @@ title: Administración de datos personales de Azure Information Protection
 description: Información sobre los datos personales que usa Azure Information Protection y cómo puede verlos, exportarlos y eliminarlos.
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
+manager: barbkess
 ms.date: 01/23/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 99a51862-83e9-4a1e-873a-a84ae1465f07
 ms.reviewer: aashishr
 ms.suite: ems
-ms.openlocfilehash: f030ebaa372d6fa308a51a3d9b34cefa0bc0535b
-ms.sourcegitcommit: d9c8b560fa3d2797ef634d8919af3ed695b16908
+ms.openlocfilehash: aa8b1da968a0821fd889bbed54e6b7698857bcf2
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55701956"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56259415"
 ---
 # <a name="manage-personal-data-for-azure-information-protection"></a>Administración de datos personales de Azure Information Protection
 

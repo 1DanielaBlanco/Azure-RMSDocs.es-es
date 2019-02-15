@@ -3,17 +3,18 @@ title: Protección HYOK para Azure Information Protection
 description: Información general sobre la protección HYOK (AD RMS) con Azure Information Protection, los escenarios compatibles, las limitaciones, los requisitos previos y las recomendaciones.
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
+manager: barbkess
 ms.date: 01/24/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: 12f199f6bae08a2b57cbdae14b83175679446c1c
-ms.sourcegitcommit: 1c1d7067ae7aa8b822bb4ecd23cd7a644989e38c
+ms.openlocfilehash: fc99910dbc2f6b8666b50c46b64cc1c9c59958a7
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55067727"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56259055"
 ---
 # <a name="hold-your-own-key-hyok-protection-for-azure-information-protection"></a>Protección HYOK (hold your own key) para Azure Information Protection
 

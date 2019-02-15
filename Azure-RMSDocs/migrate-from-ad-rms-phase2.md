@@ -3,19 +3,20 @@ title: 'Migración de AD RMS-Azure Information Protection: fase 2'
 description: Fase 2 de la migración desde AD RMS a Azure Information Protection, donde se describen los pasos del 4 al 6 de la migración de AD RMS a Azure Information Protection.
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
+manager: barbkess
 ms.date: 11/14/2018
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5fb3e3ab5d32bf5e590bec5b0a1380bf13a7d066
-ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
+ms.openlocfilehash: 297608ce7fd64170e9aaa31ab39f0b0e151d7538
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54394196"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56256845"
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>Fase 2 de la migración: configuración del lado servidor para AD RMS
 

@@ -3,19 +3,20 @@ title: Eliminación de etiquetas de Azure Information Protection
 description: Instrucciones para quitar etiquetas de clasificación y la protección de archivos que se han etiquetado con Azure Information Protection o que se han protegido con Rights Management.
 author: cabailey
 ms.author: cabailey
-manager: mbaldwin
+manager: barbkess
 ms.date: 12/12/2018
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: ''
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: ab98e211bf0f346359c6f6627a68db3071f7482e
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: 55f6dd9696dab3cf686443c656a29356907a721c
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305087"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56258681"
 ---
 # <a name="user-guide-remove-labels-and-protection-from-files-and-emails-that-have-been-labeled-by-azure-information-protection-or-protected-by-rights-management"></a>Manual del usuario: Quitar etiquetas y la protección de archivos y correos electrónicos que se han etiquetado con Azure Information Protection o que se han protegido con Rights Management
 

@@ -4,20 +4,21 @@ description: Instrucciones sobre cómo configurar un proyecto de Visual Studio p
 keywords: ''
 author: bryanla
 ms.author: bryanla
-manager: mbaldwin
+manager: barbkess
 ms.date: 02/23/2017
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 396A2C19-3A00-4E9A-9088-198A48B15289
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: f26400ba1230ef1b274fa04120c22995d2f6620c
-ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
+ms.openlocfilehash: 5c335232c691d8bbfa62d70e0781a908be50434b
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54071495"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56259378"
 ---
 # <a name="configure-visual-studio"></a>Configurar Visual Studio
 
