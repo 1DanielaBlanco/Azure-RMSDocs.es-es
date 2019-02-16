@@ -7,24 +7,18 @@ ms.topic: troubleshooting
 ms.collection: M365-security-compliance
 ms.date: 10/19/2018
 ms.author: bryanla
-ms.openlocfilehash: a4e6f4e06e534fd61078da254185503d041d4767
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: f9aed3cab9ba22ba1ac2b41984ce82957278f1e6
+ms.sourcegitcommit: 4ed27f50545aae1a58cc922202959d427bcba7ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56257780"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56323587"
 ---
 # <a name="microsoft-information-protection-mip-sdk-faqs-and-issues"></a>Preguntas frecuentes y problemas del SDK de Microsoft Information Protection (MIP)
 
 En este artículo se ofrecen respuestas a las preguntas frecuentes y una guía para la solución de problemas conocidos y errores comunes.
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes 
-
-### <a name="question-which-platforms-are-supported-by-the-mip-sdk"></a>Pregunta: ¿Qué plataformas son compatibles con el SDK de MIP?
-
-El SDK de MIP es compatible en las siguientes plataformas:
-
-[!INCLUDE [MIP SDK platform support](../includes/mip-sdk-platform-support.md)]
 
 ### <a name="question-how-does-the-sdk-handle-strings-and-what-string-type-should-i-be-using-in-my-code"></a>Pregunta: ¿Cómo trata el SDK las cadenas y qué tipo de cadena se debe usar en mi código?
 
