@@ -4,14 +4,15 @@ description: Este artículo le ayudará a comprender cómo se crean y usan los c
 author: BryanLa
 ms.service: information-protection
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 6b2916a3937892353f4389a59b5e48356deda603
-ms.sourcegitcommit: 823a14784f4b34288f221e3b3cb41bbd1d5ef3a6
-ms.translationtype: HT
+ms.openlocfilehash: b021f5a05ad484b32af3a189c10522564da6d86d
+ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2018
-ms.locfileid: "47453374"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56254856"
 ---
 # <a name="microsoft-information-protection-sdk---file-handler-concepts"></a>SDK de Microsoft Information Protection: conceptos del controlador de archivos
 
@@ -50,9 +51,9 @@ El primer paso necesario para administrar cualquier archivo en la API de archivo
 
 Crear el objeto `FileHandler` es tan fácil como llamar a la función `CreateFileHandlerAsync` de `FileEngine` con el patrón de promesa o futuro.
 
-`CreateFileHandlerAsync` acepta tres parámetros: la ruta al archivo que tiene que leerse o modificarse, el elemento `mip::FileHandler::Observer` para las notificaciones de eventos asincrónicos y la promesa del elemento `FileHandler`.
+`CreateFileHandlerAsync` acepta tres parámetros: La ruta de acceso al archivo que se debe leer o modificar, el `mip::FileHandler::Observer` para notificaciones de eventos asincrónicos y el compromiso para el `FileHandler`.
 
-**Nota:** La clase `mip::FileHandler::Observer` tiene que implementarse en una clase `CreateFileHandler` derivada, ya que necesita el objeto `Observer`. 
+**Nota:** La clase `mip::FileHandler::Observer` tiene que implementarse en una clase derivada, ya que `CreateFileHandler` necesita el objeto `Observer`. 
 
 ```cpp
 auto createFileHandlerPromise = std::make_shared<std::promise<std::shared_ptr<mip::FileHandler>>>();
@@ -132,7 +133,7 @@ El último paso al confirmar cualquier cambio en un archivo en el SDK de MIP es 
 
 Para implementar la función de confirmación, devolvemos la promesa o futuro y creamos una promesa para `bool`. La función `CommitAsync()` devolverá “true” si la operación se ha completado correctamente o “false” si se producen errores por cualquier motivo. 
 
-Después de crear los elementos `promise` y `future`, se realiza una llamada a `CommitAsync()` con dos parámetros: la ruta del archivo de salida (`std::string`) y la promesa. Por último, el resultado se obtiene mediante el valor del objeto `future`.
+Después de crear el `promise` y `future`, `CommitAsync()` se llama y dos parámetros proporcionados: La ruta de acceso del archivo de salida (`std::string`) y la promesa. Por último, el resultado se obtiene mediante el valor del objeto `future`.
 
 ```cpp
 auto commitPromise = std::make_shared<std::promise<bool>>();
@@ -141,7 +142,7 @@ handler->CommitAsync(outputFile, commitPromise);
 auto wasCommitted = commitFuture.get();
 ```
 
-**Importante:** El elemento `FileHandler` no actualizará ni sobrescribirá los archivos existentes. El desarrollador tiene que implementar el **reemplazo** del archivo etiquetado. 
+**Importante:** El `FileHandler` no actualice ni sobrescribir archivos existentes. El desarrollador tiene que implementar el **reemplazo** del archivo etiquetado. 
 
 Si se escribe una etiqueta para el **ArchivoA.docx**, se creará una copia del archivo (**ArchivoB.docx**) con la etiqueta aplicada. Es necesario escribir código para quitar o cambiar el nombre del **ArchivoA.docx** y para cambiar el nombre del **ArchivoB.docx**.
 
