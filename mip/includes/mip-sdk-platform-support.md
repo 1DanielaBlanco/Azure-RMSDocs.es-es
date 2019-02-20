@@ -5,12 +5,12 @@ ms.service: information-protection
 ms.topic: include
 ms.collection: M365-security-compliance
 ms.date: 02/01/2019
-ms.openlocfilehash: 97594e1b85530b65c66474c6012286c93c60b7c6
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 6584c4d27fe195ce5e331093cfb63c8a00965856
+ms.sourcegitcommit: 74adccd801aa3835c5fedbac300937a6e5913bd3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56260194"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56422866"
 ---
 | Sistema operativo | Versiones | Descargas | Notas |
 |------------------|----------|----------|--------|
@@ -19,4 +19,6 @@ ms.locfileid: "56260194"
 | Debian  | 9 | [C++ tar.gz](https://aka.ms/mipsdkbinaries) | |
 | macOS   | High Sierra y versiones posteriores | [C++ .zip](https://aka.ms/mipsdkbinaries) | Desarrollo de Xcode requiere 9.4.1 o superior. |
 | Windows | Todas las versiones compatibles, 32 o 64 bits | [C++ / c++ / .zip de .NET](https://aka.ms/mipsdkbinaries)<br>[C++ / c++ / NuGet de .NET](https://www.nuget.org/packages?q=Microsoft.InformationProtection) | |
+| Android | 7.0 y versiones posteriores | [C++ .zip](https://aka.ms/mipsdkbinaries) | Protección y solo las API de la directiva. |
+| iOS | Todas las versiones compatibles | [C++ .zip](https://aka.ms/mipsdkbinaries) | Directiva de API solo. |
 
