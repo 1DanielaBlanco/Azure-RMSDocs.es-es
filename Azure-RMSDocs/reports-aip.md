@@ -12,12 +12,12 @@ ms.service: information-protection
 ms.assetid: b2da2cdc-74fd-4bfb-b3c2-2a3a59a6bf2e
 ms.reviewer: lilukov
 ms.suite: ems
-ms.openlocfilehash: 2a6602303e51c4bc1cce803ec43841a52992c8b8
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 54a18f52a3b1cd5656d1d2c3cfbd675062b06c47
+ms.sourcegitcommit: 95b7df32ecccdab4b80bc3a9f6433dc1c33dbbc5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56254499"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56407732"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Informes centrales para Azure Information Protection
 
@@ -126,13 +126,16 @@ Detalles:
 
 1. Para acceder a la hoja de análisis de Azure Information Protection en Azure Portal, debe tener uno de los siguientes [roles de administrador de Azure AD](/azure/active-directory/active-directory-assign-admin-roles-azure-portal):
     
-    - **Lector de seguridad**
-    
     - **Administrador de Information Protection**
     
+    - **Lector de seguridad**
+  
    - **Administrador de seguridad**
     
     - **Administrador global**
+    
+    > [!NOTE] 
+    > Si su inquilino se ha migrado al almacén de etiquetado unificado, la cuenta debe ser administrador global o uno de los roles enumerados más permisos de acceso al Centro de seguridad y cumplimiento de Office 365. [Más información](configure-policy-migrate-labels.md#important-information-about-administrative-roles)
 
 2. Para usar Azure Log Analytics, debe tener uno de los siguientes [roles de Azure Log Analytics](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access#managing-access-to-log-analytics-using-azure-permissions) o [roles de Azure](https://docs.microsoft.com/azure/role-based-access-control/overview#role-assignments) estándar:
     
@@ -148,7 +151,7 @@ Detalles:
 
 ## <a name="configure-a-log-analytics-workspace-for-the-reports"></a>Configuración de un área de trabajo de Log Analytics para los informes
 
-1. Si aún no lo ha hecho, abra una nueva ventana del explorador e [inicie sesión en Azure Portal](configure-policy.md#signing-in-to-the-azure-portal). Después, vaya a la hoja **Azure Information Protection**. 
+1. Si aún no lo ha hecho, abra una nueva ventana del explorador e [inicie sesión en Azure Portal](https://portal.azure.com) con una cuenta que tenga los [permisos necesarios para el análisis de Azure Information Protection](#permissions-required-for-azure-information-protection-analytics). Después, vaya a la hoja **Azure Information Protection**. 
     
     Por ejemplo, en el menú del concentrador, haga clic en **Todos los servicios** y comience a escribir **Information** en el cuadro Filtro. Seleccione **Azure Information Protection**.
     
@@ -171,8 +174,6 @@ En la hoja Azure Information Protection, busque las opciones de menú **Paneles*
 - **Informe de uso (versión preliminar)**: use este informe para ver cómo se usan las etiquetas. 
 
 - **Registros de actividad (versión preliminar)**: use este informe para ver las acciones de etiquetado de los usuarios y en dispositivos y rutas de acceso de archivos.
-    
-    Este informe está implementando actualmente en los inquilinos, así que si no lo ve, vuelva a intentarlo en unos días.
     
     Este informe tiene una opción **Columnas**, que le permite mostrar más información de actividad que la visualización predeterminada.
 

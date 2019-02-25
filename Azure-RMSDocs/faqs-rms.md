@@ -4,7 +4,7 @@ description: Algunas de las preguntas más frecuentes sobre el servicio de prote
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 01/10/2019
+ms.date: 02/19/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.custom: askipteam
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 769978bb7cfe5e363b0f73f5564865e67b5aad49
-ms.sourcegitcommit: a78d4236cbeff743703c44b150e69c1625a2e9f4
+ms.openlocfilehash: 3782d2cea93b2128530e66d82e366924e92abbbc
+ms.sourcegitcommit: 95b7df32ecccdab4b80bc3a9f6433dc1c33dbbc5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56259990"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56407766"
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Preguntas más frecuentes sobre la protección de datos en Azure Information Protection
 
@@ -195,7 +195,7 @@ El usuario que ha protegido el documento, el [emisor de Rights Management](confi
 El valor predeterminado para el período de validez de la licencia de uso de un inquilino es de 30 días. Este valor puede reemplazarse por uno más restrictivo en una etiqueta o una plantilla. Para obtener más información sobre la licencia de uso y cómo configurarla, vea la documentación [Licencia de uso de Rights Management](configure-usage-rights.md#rights-management-use-license).
 
 ## <a name="can-rights-management-prevent-screen-captures"></a>¿Puede impedir Rights Management las capturas de pantalla?
-Si no se concede el [derecho de uso](configure-usage-rights.md) **Copiar**, Rights Management puede impedir las capturas de pantalla de muchas de las herramientas de captura de pantalla que se usan habitualmente en las plataformas Windows (Windows 7, Windows 8.1, Windows 10, Windows 10 Mobile) y Android. Sin embargo, los dispositivos iOS y Mac no permiten a ninguna aplicación impedir las capturas de pantalla y los navegadores (por ejemplo, cuando se usan con Outlook Web App y Office Online) tampoco pueden evitar las capturas de pantalla.
+Si no se concede el [derecho de uso](configure-usage-rights.md) **Copiar**, Rights Management puede impedir las capturas de pantalla de muchas de las herramientas de captura de pantalla que se usan habitualmente en las plataformas Windows (Windows 7, Windows 8.1, Windows 10, Windows 10 Mobile) y Android. Sin embargo, los dispositivos iOS y Mac no permiten que ninguna aplicación evite las capturas de pantalla. Además, los exploradores de cualquier dispositivo no pueden evitar las capturas de pantalla. El uso del explorador incluye Outlook en la Web y Office Online.
 
 Impedir las capturas de pantalla puede ayudar a evitar la divulgación accidental o por negligencia de información confidencial. Sin embargo, existen muchas formas en que un usuario puede compartir datos que se muestran en una pantalla y hacer una captura de pantalla es solo un método. Por ejemplo, un usuario decidido a compartir la información mostrada puede tomar una foto de ella con su teléfono con cámara, volver a escribir los datos o simplemente transmitírsela verbalmente a alguien.
 

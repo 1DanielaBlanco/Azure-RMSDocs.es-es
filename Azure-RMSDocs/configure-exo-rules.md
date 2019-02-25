@@ -4,19 +4,19 @@ description: Instrucciones y ejemplos para configurar reglas de flujo de correo 
 author: cabailey
 ms.author: cabailey
 manager: barbkess
-ms.date: 02/15/2019
+ms.date: 02/16/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: ba4e4a4d-5280-4e97-8f5c-303907db1bf5
 ms.reviewer: shakella
 ms.suite: ems
-ms.openlocfilehash: f35ab27167514b9b94a4cb4be2e6196dccd5280d
-ms.sourcegitcommit: 89d2c2595bc7abda9a8b5e505b7dcf963e18c822
+ms.openlocfilehash: f46e919665d110665ed85b5e2e5c6a979a1958e9
+ms.sourcegitcommit: 1fe9720526a2ff814cd5d353249b16497cfcaadc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56266002"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56425970"
 ---
 # <a name="configuring-exchange-online-mail-flow-rules-for-azure-information-protection-labels"></a>Configuración de reglas de flujo de correo de Exchange Online para etiquetas de Azure Information Protection
 
@@ -34,17 +34,13 @@ Puede ampliar estos ejemplos, así como modificarlos. Por ejemplo, agregue más 
 
 Para obtener más información acerca de cómo configurar las reglas de flujo de correo electrónico para cifrar los mensajes de correo electrónico, consulte [Definir las reglas de flujo de correo para cifrar mensajes de correo electrónico en Office 365](https://support.office.com/article/define-mail-flow-rules-to-encrypt-email-messages-in-office-365-9b7daf19-d5f2-415b-bc43-a0f5f4a585e8) en la documentación de Office. 
 
-## <a name="where-labels-are-stored-in-emails-and-documents"></a>Cuando las etiquetas se almacenan en correos electrónicos y documentos
+## <a name="prerequisite-know-your-label-guid"></a>Requisito previo: conocer el GUID de la etiqueta
 
-Dado que una etiqueta de Azure Information Protection se almacena en metadatos, las reglas de flujo de correo de Exchange Online pueden leer esta información para los archivos adjuntos de mensajes y documentos:
+Dado que una etiqueta de Azure Information Protection se almacena en metadatos, las reglas de flujo de correo de Exchange Online pueden leer esta información para los archivos adjuntos de mensajes y documentos de Office. Las reglas de flujo de correo no admiten la inspección de los metadatos para los documentos PDF.
 
-- En los correos electrónicos, esta información se almacena en el encabezado X: **msip_labels: MSIP_Label_\<GUID>_Enabled=True;** 
+Antes de configurar las reglas de flujo de correo para identificar los mensajes y documentos etiquetados, asegúrese de que conoce el GUID de la etiqueta de Azure Information Protection que se va a usar. 
 
-- Para documentos de Word (.doc y .docx), hojas de cálculo de Excel (.xls y .xlsx) y presentaciones de PowerPoint (.ppt y .pptx), estos metadatos se almacenan en la siguiente propiedad personalizada: **MSIP_Label_\<GUID>_Enabled=True**  
-
-Para identificar el GUID de una etiqueta, busque el valor de identificador de etiqueta en la hoja **Etiqueta**, al ver o configurar la directiva de Azure Information Protection en Azure Portal. En el caso de los archivos que tienen etiquetas aplicadas, también puede ejecutar el cmdlet de PowerShell [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) para identificar el GUID (MainLabelId o SubLabelId). Si una etiqueta tiene subetiquetas, especifique únicamente el GUID de una subetiqueta, no el de la etiqueta principal.
-
-Antes de configurar las reglas de flujo de correo electrónico, asegúrese de que conoce el GUID de la etiqueta de Azure Information Protection que se va a usar.
+Para obtener más información sobre los metadatos almacenados por una etiqueta y cómo identificar los GUID de la etiqueta, consulte [Label information stored in emails and documents](configure-policy.md#label-information-stored-in-emails-and-documents) (Información de la etiqueta almacenada en correos electrónicos y documentos).
 
 ## <a name="example-configurations"></a>Configuraciones de ejemplo
 
