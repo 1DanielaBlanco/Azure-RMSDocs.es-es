@@ -27,7 +27,7 @@
 ##### [Modo de solo protección](client-protection-only-mode.md)
 ##### [Tareas que solía hacer con la aplicación de uso compartido de RMS](upgrade-client-app.md)
 ### [Cliente de etiquetado unificado de Azure Information Protection (VERSIÓN PRELIMINAR)](unifiedlabelingclient-version-release-history.md)
-### [Descarga e instalación del cliente de etiquetado unificado de Azure Information Protection (VERSIÓN PRELIMINAR)](install-unifiedlabelingclient-app.md)
+#### [Descarga e instalación del cliente de etiquetado unificado de Azure Information Protection (VERSIÓN PRELIMINAR)](install-unifiedlabelingclient-app.md)
 ### [Lectores de PDF protegidos](protected-pdf-readers.md)
 ### [Notas de la implementación del cliente RMS](client-deployment-notes.md)
 ### [Protección de RMS con FCI de Windows Server](configure-fci.md)
