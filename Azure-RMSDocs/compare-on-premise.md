@@ -34,7 +34,7 @@ Estas son algunas de las principales diferencias de Azure Information Protection
 
 - **Plantillas predeterminadas**: Azure Information Protection crea plantillas predeterminadas en cuanto se activa el servicio de protección, lo que facilita empezar a proteger datos importantes de inmediato. No hay plantillas predeterminadas para AD RMS.
 
-- **Plantillas de departamento**: También se conoce como plantillas con ámbito. Azure Information Protection admite plantillas de departamento para las plantillas adicionales que cree. Esta configuración permite especificar un subconjunto de usuarios para que vean plantillas específicas en sus aplicaciones cliente. La limitación del número de plantillas que ven los usuarios les facilita la selección de la directiva correcta definida para los diferentes grupos de usuarios. AD RMS no es compatible con las plantillas de departamento.
+- **Plantillas de departamento**: También conocido como plantillas de ámbito. Azure Information Protection admite plantillas de departamento para las plantillas adicionales que cree. Esta configuración permite especificar un subconjunto de usuarios para que vean plantillas específicas en sus aplicaciones cliente. La limitación del número de plantillas que ven los usuarios les facilita la selección de la directiva correcta definida para los diferentes grupos de usuarios. AD RMS no es compatible con las plantillas de departamento.
 
 - **Seguimiento y revocación de documentos**: Azure Information Protection admite estas características con el cliente de Azure Information Protection, mientras que AD RMS no las admite.
 
